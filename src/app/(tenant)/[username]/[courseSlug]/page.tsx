@@ -6,6 +6,7 @@ import { lessonAccess, isFreeCourse } from "@/lib/gating";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
 import { getUnmetRequired, listPrerequisites } from "@/db/queries/prerequisites";
 import { CourseActions } from "@/components/course-actions";
+import { TutorChat } from "@/components/tutor-chat";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -195,6 +196,10 @@ export default async function CourseBySlugPage({ params }: Params) {
             })}
           </ol>
         </section>
+      ) : null}
+
+      {view.session && course.isPublished ? (
+        <TutorChat courseId={course.id} courseTitle={course.title} />
       ) : null}
     </main>
   );
