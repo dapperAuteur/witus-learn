@@ -3,6 +3,7 @@ import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
+import { resolveDbUrl } from "./db-url";
 
 // Seeds the launch tenant (Better Vice Club) plus a dummy "Acme Academy" used by
 // the isolation test suite. Idempotent. Run: pnpm seed:tenants
@@ -12,7 +13,7 @@ import * as schema from "../src/db/schema";
 
 neonConfig.webSocketConstructor = ws;
 
-const connectionString = process.env.DATABASE_URL_UNPOOLED ?? process.env.DATABASE_URL;
+const connectionString = resolveDbUrl(true);
 if (!connectionString || connectionString.includes("placeholder")) {
   console.error("DATABASE_URL is not set. Put a real Neon string in .env.local.");
   process.exit(1);

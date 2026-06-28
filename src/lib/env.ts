@@ -58,10 +58,32 @@ const devPlaceholders = {
   BETTER_AUTH_URL: "http://localhost:3040",
 } as const;
 
+// The Vercel–Neon integration provisions the connection string under names that
+// depend on the chosen prefix — e.g. DATABASE_URL, POSTGRES_URL, or the
+// STORAGE_-prefixed STORAGE_DATABASE_URL / STORAGE_POSTGRES_URL. Accept any so a
+// deploy works whether the URL was set by hand or by the integration.
+const firstEnv = (...names: string[]): string | undefined => {
+  for (const n of names) if (process.env[n]) return process.env[n];
+  return undefined;
+};
+const pooledDbUrl = firstEnv(
+  "DATABASE_URL",
+  "STORAGE_DATABASE_URL",
+  "POSTGRES_URL",
+  "STORAGE_POSTGRES_URL",
+);
+const unpooledDbUrl =
+  firstEnv(
+    "DATABASE_URL_UNPOOLED",
+    "STORAGE_DATABASE_URL_UNPOOLED",
+    "POSTGRES_URL_NON_POOLING",
+    "STORAGE_POSTGRES_URL_NON_POOLING",
+  ) ?? pooledDbUrl;
+
 const input = {
   ...process.env,
-  DATABASE_URL:
-    process.env.DATABASE_URL ?? (allowDevDefaults ? devPlaceholders.DATABASE_URL : undefined),
+  DATABASE_URL: pooledDbUrl ?? (allowDevDefaults ? devPlaceholders.DATABASE_URL : undefined),
+  DATABASE_URL_UNPOOLED: unpooledDbUrl,
   BETTER_AUTH_SECRET:
     process.env.BETTER_AUTH_SECRET ??
     (allowDevDefaults ? devPlaceholders.BETTER_AUTH_SECRET : undefined),
@@ -71,8 +93,12 @@ const input = {
 
 const parsed = schema.safeParse(input);
 if (!parsed.success) {
+  const fields = parsed.error.flatten().fieldErrors;
   throw new Error(
-    `Invalid environment variables:\n${JSON.stringify(parsed.error.flatten().fieldErrors, null, 2)}`,
+    `Invalid environment variables:\n${JSON.stringify(fields, null, 2)}\n` +
+      "On Vercel, set these in Project → Settings → Environment Variables for the deployed " +
+      "environment (Production/Preview). DATABASE_URL may instead arrive as POSTGRES_URL from " +
+      "the Neon integration — both are accepted; if neither is present this error is shown.",
   );
 }
 
