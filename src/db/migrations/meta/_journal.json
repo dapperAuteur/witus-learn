@@ -64,6 +64,13 @@
       "when": 1782657655020,
       "tag": "0008_third_goliath",
       "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1782677959086,
+      "tag": "0009_aspiring_preak",
+      "breakpoints": true
     }
   ]
 }
