@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { apiContext, errorJson, isTenantInstructor, json } from "@/lib/api";
-import { createCourse } from "@/db/queries/authoring";
+import { createCourse, ensureUsername } from "@/db/queries/authoring";
 import type { CatalogQuery } from "@/db/queries/catalog";
 
 // GET /api/courses — tenant-scoped catalog list. Public; only published courses.
@@ -47,6 +47,7 @@ export async function POST(req: Request) {
   const parsed = CreateCourseSchema.safeParse(body);
   if (!parsed.success) return errorJson("Invalid input", 400);
 
+  await ensureUsername(session!.user.id, session!.user.email);
   const course = await createCourse(sdb.tenantId, session!.user.id, parsed.data);
   return json({ course }, 201);
 }
