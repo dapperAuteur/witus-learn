@@ -5,6 +5,7 @@ import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, type LessonLockReason } from "@/lib/gating";
 import { LessonPlayer } from "@/components/lesson-player";
 import { MarkCompleteButton } from "@/components/mark-complete-button";
+import { CurriculumFeedback } from "@/components/curriculum-feedback";
 import { buildCrossroads } from "@/lib/crossroads";
 
 type Params = {
@@ -109,6 +110,10 @@ export default async function LessonPage({ params }: Params) {
             ))}
           </div>
         </section>
+      ) : null}
+
+      {access.open && view.session ? (
+        <CurriculumFeedback courseId={view.course.id} lessonId={lesson.id} />
       ) : null}
 
       <nav className="mt-10 flex justify-between text-sm">
