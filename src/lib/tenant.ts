@@ -6,14 +6,10 @@ import { eq } from "drizzle-orm";
 import { db } from "@/db/client";
 import { tenantDomains, tenants } from "@/db/schema";
 import { env, hasDatabase } from "./env";
+import { normalizeHost } from "./tenant-util";
 
 export type TenantRecord = typeof tenants.$inferSelect;
-
-/** Lowercase + strip port/whitespace so "BVC.localhost:3040" → "bvc.localhost". */
-export function normalizeHost(host: string | null | undefined): string {
-  if (!host) return "";
-  return host.trim().toLowerCase().split(":")[0];
-}
+export { normalizeHost };
 
 /**
  * Look up the tenant that owns a host. Plain (un-cached) function safe to call
