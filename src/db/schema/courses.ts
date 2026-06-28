@@ -1,0 +1,171 @@
+import { sql } from "drizzle-orm";
+import {
+  boolean,
+  check,
+  integer,
+  jsonb,
+  numeric,
+  pgTable,
+  smallint,
+  text,
+  timestamp,
+  unique,
+  uniqueIndex,
+  index,
+  uuid,
+} from "drizzle-orm/pg-core";
+import { citext } from "./_types";
+import { users } from "./auth";
+import { tenants } from "./tenancy";
+
+// ── Categories (per-tenant) ──────────────────────────────────────────────────
+export const courseCategories = pgTable(
+  "course_categories",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    name: citext("name").notNull(),
+    sortOrder: integer("sort_order").notNull().default(0),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [unique("course_categories_tenant_name_uq").on(t.tenantId, t.name)],
+);
+
+// ── Courses ──────────────────────────────────────────────────────────────────
+export const courses = pgTable(
+  "courses",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    instructorId: text("instructor_id")
+      .notNull()
+      .references(() => users.id),
+    title: text("title").notNull(),
+    slug: text("slug"),
+    description: text("description"),
+    coverImageUrl: text("cover_image_url"),
+    category: text("category"),
+    tags: text("tags").array(),
+
+    // Pricing / billing (wired in Phase 5)
+    price: numeric("price", { precision: 10, scale: 2 }).notNull().default("0"),
+    priceType: text("price_type").notNull().default("free"),
+    stripeProductId: text("stripe_product_id"),
+    stripePriceId: text("stripe_price_id"),
+
+    // Publishing / visibility
+    isPublished: boolean("is_published").notNull().default(false),
+    visibility: text("visibility").notNull().default("public"),
+    publishedAt: timestamp("published_at", { withTimezone: true }),
+
+    // Learning behaviour
+    navigationMode: text("navigation_mode").notNull().default("linear"),
+    isSequential: boolean("is_sequential").notNull().default(false),
+    allowCrossCourseCyoa: boolean("allow_cross_course_cyoa").notNull().default(false),
+    trialPeriodDays: integer("trial_period_days"),
+    // Per-course age-gate (enables gating e.g. BVC S2/S3 only; see plans/future).
+    requiresAgeGate: boolean("requires_age_gate").notNull().default(false),
+
+    // Social rollups (maintained by triggers in later phases)
+    likeCount: integer("like_count").notNull().default(0),
+    reviewCount: integer("review_count").notNull().default(0),
+    avgRating: numeric("avg_rating", { precision: 3, scale: 2 }),
+
+    // Series / season grouping
+    seasonNumber: smallint("season_number"),
+    seriesSlug: text("series_slug"),
+    seriesTitle: text("series_title"),
+
+    // Featured strip
+    isFeatured: boolean("is_featured").notNull().default(false),
+    featuredOrder: integer("featured_order"),
+
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    // Slug is unique per instructor within a tenant (pretty URLs: /{instructor}/{slug}).
+    uniqueIndex("courses_tenant_instructor_slug_uq")
+      .on(t.tenantId, t.instructorId, t.slug)
+      .where(sql`${t.slug} is not null`),
+    index("courses_tenant_published_idx").on(t.tenantId, t.isPublished),
+    index("courses_tenant_series_idx").on(t.tenantId, t.seriesSlug),
+    check("courses_price_type_chk", sql`${t.priceType} in ('free','one_time','subscription')`),
+    check("courses_visibility_chk", sql`${t.visibility} in ('public','members','scheduled')`),
+    check("courses_navigation_mode_chk", sql`${t.navigationMode} in ('linear','cyoa')`),
+  ],
+);
+
+// ── Modules ──────────────────────────────────────────────────────────────────
+export const courseModules = pgTable("course_modules", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  courseId: uuid("course_id")
+    .notNull()
+    .references(() => courses.id, { onDelete: "cascade" }),
+  title: text("title").notNull(),
+  sortOrder: integer("sort_order").notNull().default(0),
+  isPublished: boolean("is_published").notNull().default(false),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+});
+
+// ── Lessons (tenant_id denormalized for cheap by-id isolation + embeddings join) ─
+export const lessons = pgTable(
+  "lessons",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    courseId: uuid("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    moduleId: uuid("module_id").references(() => courseModules.id, { onDelete: "set null" }),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+
+    title: text("title").notNull(),
+    lessonType: text("lesson_type").notNull().default("text"),
+    contentUrl: text("content_url"),
+    textContent: text("text_content"),
+    contentFormat: text("content_format"),
+    durationSeconds: integer("duration_seconds"),
+    sortOrder: integer("sort_order").notNull().default(0),
+    isFreePreview: boolean("is_free_preview").notNull().default(false),
+    isPublished: boolean("is_published").notNull().default(false),
+    slug: text("slug"),
+
+    // Format-specific payloads (used by the Phase 4 lesson players)
+    quizContent: jsonb("quiz_content"),
+    audioChapters: jsonb("audio_chapters"),
+    transcriptContent: jsonb("transcript_content"),
+    mapContent: jsonb("map_content"),
+    documents: jsonb("documents"),
+    podcastLinks: jsonb("podcast_links"),
+    video360Autoplay: boolean("video_360_autoplay"),
+    video360PosterUrl: text("video_360_poster_url"),
+
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    uniqueIndex("lessons_course_slug_uq")
+      .on(t.courseId, t.slug)
+      .where(sql`${t.slug} is not null`),
+    index("lessons_course_idx").on(t.courseId),
+    check(
+      "lessons_type_chk",
+      sql`${t.lessonType} in ('video','text','audio','slides','quiz','360video','photo_360','virtual_tour','map')`,
+    ),
+    check(
+      "lessons_content_format_chk",
+      sql`${t.contentFormat} is null or ${t.contentFormat} in ('markdown','tiptap')`,
+    ),
+  ],
+);
+
+export type Course = typeof courses.$inferSelect;
+export type CourseModule = typeof courseModules.$inferSelect;
+export type Lesson = typeof lessons.$inferSelect;
+export type CourseCategory = typeof courseCategories.$inferSelect;

@@ -1,6 +1,12 @@
 import "server-only";
 import { notFound } from "next/navigation";
 import { requireTenant, type TenantRecord } from "@/lib/tenant";
+import {
+  getCourseById,
+  listCategories,
+  listCourses,
+  type CatalogQuery,
+} from "@/db/queries/catalog";
 
 /**
  * The mandatory tenant-scoped data-access chokepoint.
@@ -32,6 +38,20 @@ export class ScopedDb {
   ownOrNotFound<T extends { tenantId: string } | undefined | null>(row: T): NonNullable<T> {
     if (!row || row.tenantId !== this.tenantId) notFound();
     return row;
+  }
+
+  // ── Catalog (Phase 3) ──────────────────────────────────────────────────────
+  listCourses(opts: CatalogQuery = {}) {
+    return listCourses(this.tenantId, opts);
+  }
+
+  /** Course by id, scoped to this tenant (null → caller 404s; never cross-tenant). */
+  getCourseById(id: string) {
+    return getCourseById(this.tenantId, id);
+  }
+
+  listCategories() {
+    return listCategories(this.tenantId);
   }
 }
 
