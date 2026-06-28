@@ -16,11 +16,13 @@
     "seed:tenants": "tsx --env-file=.env.local scripts/seed-tenants.ts",
     "seed:bvc": "tsx --env-file=.env.local scripts/seed-bvc.ts",
     "seed:map": "tsx --env-file=.env.local scripts/seed-map.ts",
+    "seed:languages": "tsx --env-file=.env.local scripts/seed-languages.ts",
     "test": "vitest run"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.2",
     "better-auth": "^1.6.2",
+    "csv-parse": "^6.2.1",
     "d3-geo": "^3.1.1",
     "drizzle-orm": "^0.45.2",
     "drizzle-zod": "^0.8.3",
