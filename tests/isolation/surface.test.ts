@@ -6,6 +6,10 @@ describe("normalizeHost", () => {
     expect(normalizeHost("BVC.localhost:3040")).toBe("bvc.localhost");
     expect(normalizeHost("  Acme.Localhost ")).toBe("acme.localhost");
   });
+  it("strips a leading www. so www.X resolves like X", () => {
+    expect(normalizeHost("WWW.BetterVice.Club:443")).toBe("bettervice.club");
+    expect(normalizeHost("www.bettervice.club")).toBe("bettervice.club");
+  });
   it("returns empty for missing host", () => {
     expect(normalizeHost(null)).toBe("");
     expect(normalizeHost(undefined)).toBe("");
