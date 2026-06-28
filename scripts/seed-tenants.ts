@@ -51,6 +51,8 @@ const TENANTS: SeedTenant[] = [
     hosts: [
       { host: "learn.witus.online", isPrimary: true },
       { host: "learn.localhost", isPrimary: false },
+      // Bare localhost maps here so the default `pnpm dev` URL resolves in dev.
+      { host: "localhost", isPrimary: false },
     ],
   },
   {
