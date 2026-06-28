@@ -83,6 +83,70 @@ const TENANTS: SeedTenant[] = [
     flags: { commodityMap: false, paths: true },
     hosts: [{ host: "acme.localhost", isPrimary: true }],
   },
+
+  // Pre-launch schools — resolve to a branded "launching soon" page (flags.comingSoon)
+  // until their content lands. Prod domains are added later via the admin dashboard
+  // (BAM holds the real domains); only dev *.localhost hosts are seeded here.
+  {
+    slug: "trade-school",
+    name: "WitUS Trade School",
+    tagline: "Job-ready vocational training — cyber-security and FAA Part 107 drone licensing.",
+    requiresAgeGate: false,
+    theme: {
+      name: "WitUS Trade School",
+      shortName: "Trade",
+      themeColor: "#0F766E",
+      colors: { accent: "#0F766E", accentFg: "#ffffff" },
+    },
+    legal: { termsUrl: "/terms", privacyUrl: "/privacy" },
+    flags: { comingSoon: true },
+    hosts: [{ host: "trade.localhost", isPrimary: true }],
+  },
+  {
+    slug: "elementary-mba",
+    name: "ElementaryMBA",
+    tagline: "Business fundamentals, taught simply — from the ground up.",
+    requiresAgeGate: false,
+    theme: {
+      name: "ElementaryMBA",
+      shortName: "EMBA",
+      themeColor: "#15803D",
+      colors: { accent: "#15803D", accentFg: "#ffffff" },
+    },
+    legal: { termsUrl: "/terms", privacyUrl: "/privacy" },
+    flags: { comingSoon: true },
+    hosts: [{ host: "emba.localhost", isPrimary: true }],
+  },
+  {
+    slug: "hip-hop-axiom",
+    name: "Hip-Hop Axiom",
+    tagline: "The principles of hip-hop as a framework for learning and life.",
+    requiresAgeGate: false,
+    theme: {
+      name: "Hip-Hop Axiom",
+      shortName: "Axiom",
+      themeColor: "#6D28D9",
+      colors: { accent: "#6D28D9", accentFg: "#ffffff" },
+    },
+    legal: { termsUrl: "/terms", privacyUrl: "/privacy" },
+    flags: { comingSoon: true },
+    hosts: [{ host: "axiom.localhost", isPrimary: true }],
+  },
+  {
+    slug: "sex-with-the-lights-on",
+    name: "Sex With the Lights On",
+    tagline: "Adult intimacy education with Professor girthBrooks — honest, evidence-based.",
+    requiresAgeGate: true,
+    theme: {
+      name: "Sex With the Lights On",
+      shortName: "SWLO",
+      themeColor: "#BE123C",
+      colors: { accent: "#BE123C", accentFg: "#ffffff" },
+    },
+    legal: { termsUrl: "/terms", privacyUrl: "/privacy", safetyUrl: "/safety" },
+    flags: { comingSoon: true },
+    hosts: [{ host: "swlo.localhost", isPrimary: true }],
+  },
 ];
 
 async function main() {

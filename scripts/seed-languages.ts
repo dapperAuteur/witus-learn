@@ -7,7 +7,11 @@ import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
-import { SPANISH_COURSE, type AuthoredCourse } from "./data/spanish-course";
+import type { AuthoredCourse } from "./data/authored-course";
+import { SPANISH_COURSE } from "./data/spanish-course";
+import { FRENCH_COURSE } from "./data/french-course";
+import { PORTUGUESE_COURSE } from "./data/portuguese-course";
+import { ITALIAN_COURSE } from "./data/italian-course";
 
 // Builds language courses on the Learn.WitUS school. Spanish uses an authored,
 // tense-progressive structure (scripts/data/spanish-course.ts); the others fall
@@ -35,8 +39,10 @@ const MAX_GLOSSARY = 120;
 interface Lang {
   name: string;
   slug: string;
-  verbsFile: string;
-  sentencesFile: string;
+  /** Verb list for the glossary (optional — authored courses don't require it). */
+  verbsFile?: string;
+  /** Story sentences for CSV-chunked courses (optional — unused when `authored`). */
+  sentencesFile?: string;
   /** Column index of the target language (the other column is English). The
    *  files differ: Spanish is [target, English]; French is [English, target]. */
   target: 0 | 1;
@@ -44,12 +50,15 @@ interface Lang {
   authored?: AuthoredCourse;
 }
 
-// Add more languages here as their files land (Portuguese/Italian/Ewe/Twi/Igbo).
-// Confirm each file's column order and set `target` accordingly. Author a
-// tense-progressive course (like Spanish) per language to replace CSV chunking.
+// West African languages (Ewe/Twi/Igbo) and remaining content land here next.
+// Author a tense-progressive course (like Spanish) per language. The Romance
+// four are authored; verbsFile (glossary) is optional, sentencesFile only matters
+// for any CSV-chunked language.
 const LANGUAGES: Lang[] = [
   { name: "Spanish", slug: "spanish", verbsFile: "spanishVerbs.csv", sentencesFile: "spanishSentences.csv", target: 0, authored: SPANISH_COURSE },
-  { name: "French", slug: "french", verbsFile: "frenchVerbs.csv", sentencesFile: "frenchSentences.csv", target: 1 },
+  { name: "French", slug: "french", verbsFile: "frenchVerbs.csv", sentencesFile: "frenchSentences.csv", target: 1, authored: FRENCH_COURSE },
+  { name: "Portuguese", slug: "portuguese", target: 1, authored: PORTUGUESE_COURSE },
+  { name: "Italian", slug: "italian", target: 1, authored: ITALIAN_COURSE },
 ];
 
 // Drop the header row(s) — these files have duplicate "Sentence (Spanish)" /
@@ -135,16 +144,22 @@ async function main() {
     // (non-authored) courses; authored courses bring their own lessons.
     let verbs: string[][] = [];
     let sentences: string[][] = [];
-    try {
-      verbs = readCsv(lang.verbsFile);
-    } catch {
-      /* glossary is optional */
+    if (lang.verbsFile) {
+      try {
+        verbs = readCsv(lang.verbsFile);
+      } catch {
+        /* glossary is optional */
+      }
     }
     if (!lang.authored) {
+      if (!lang.sentencesFile) {
+        console.log(`skip ${lang.name} (no authored course and no sentences file)`);
+        continue;
+      }
       try {
         sentences = readCsv(lang.sentencesFile);
       } catch {
-        console.log(`skip ${lang.name} (sentences file not found, no authored course)`);
+        console.log(`skip ${lang.name} (sentences file not found)`);
         continue;
       }
     }
