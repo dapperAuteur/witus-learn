@@ -23,6 +23,7 @@ export const enrollments = pgTable(
     status: text("status").notNull().default("active"),
     attemptNumber: integer("attempt_number").notNull().default(1),
     stripeCheckoutSessionId: text("stripe_checkout_session_id"),
+    stripeSubscriptionId: text("stripe_subscription_id"),
     enrolledAt: timestamp("enrolled_at", { withTimezone: true }).notNull().defaultNow(),
     lastContentSeenAt: timestamp("last_content_seen_at", { withTimezone: true }),
   },

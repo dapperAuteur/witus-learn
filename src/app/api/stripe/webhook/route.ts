@@ -1,7 +1,8 @@
 import type Stripe from "stripe";
 import { env } from "@/lib/env";
 import { getStripe } from "@/lib/stripe";
-import { enrollPaid } from "@/db/queries/enrollment";
+import { cancelEnrollmentBySubscription, enrollPaid } from "@/db/queries/enrollment";
+import { incrementPromoUsage } from "@/db/queries/connect";
 
 // POST /api/stripe/webhook — Stripe calls this directly (no tenant host), so it
 // reads tenant/course/user from the session metadata and verifies the signature
@@ -27,11 +28,19 @@ export async function POST(req: Request) {
     const s = event.data.object as Stripe.Checkout.Session;
     const md = s.metadata ?? {};
     if (md.course_id && md.user_id && md.tenant_id) {
-      await enrollPaid(md.tenant_id, md.user_id, md.course_id, s.id);
+      await enrollPaid(
+        md.tenant_id,
+        md.user_id,
+        md.course_id,
+        s.id,
+        typeof s.subscription === "string" ? s.subscription : null,
+      );
     }
+    if (md.promo_id) await incrementPromoUsage(md.promo_id);
+  } else if (event.type === "customer.subscription.deleted") {
+    const sub = event.data.object as Stripe.Subscription;
+    await cancelEnrollmentBySubscription(sub.id);
   }
-  // customer.subscription.deleted → cancel: handled in 5c (needs subscription id
-  // persisted on the enrollment).
 
   return new Response("ok", { status: 200 });
 }

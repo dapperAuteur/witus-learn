@@ -37,6 +37,10 @@ yarn-error.log*
 /docs/
 /plans/
 
+# Source content for building courses (datasets, sentence sets, story content) —
+# local working material, not committed.
+/content/
+
 # editor / os
 .idea/
 .vscode/
