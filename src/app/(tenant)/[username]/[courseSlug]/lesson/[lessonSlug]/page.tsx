@@ -5,6 +5,7 @@ import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, type LessonLockReason } from "@/lib/gating";
 import { LessonPlayer } from "@/components/lesson-player";
 import { MarkCompleteButton } from "@/components/mark-complete-button";
+import { buildCrossroads } from "@/lib/crossroads";
 
 type Params = {
   params: Promise<{ username: string; courseSlug: string; lessonSlug: string }>;
@@ -43,6 +44,18 @@ export default async function LessonPage({ params }: Params) {
   const base = `/${username}/${courseSlug}`;
   const completed = view.completedLessonIds.has(lesson.id);
 
+  // CYOA crossroads (semantic + cross-course are tenant-scoped inside buildCrossroads).
+  const crossroads =
+    access.open && view.course.navigationMode === "cyoa"
+      ? await buildCrossroads({
+          tenantId: view.tenant.id,
+          course: view.course,
+          lessonId: lesson.id,
+          username,
+          courseSlug,
+        })
+      : [];
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-8">
       <Link href={base} className="text-sm text-neutral-500 hover:underline">
@@ -75,6 +88,28 @@ export default async function LessonPage({ params }: Params) {
           </div>
         )}
       </div>
+
+      {crossroads.length > 0 ? (
+        <section className="mt-10">
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+            Where to next?
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {crossroads.map((c, i) => (
+              <Link
+                key={i}
+                href={c.href}
+                className="rounded-lg border border-neutral-200 p-3 hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800"
+              >
+                <span className="text-xs uppercase tracking-wide" style={{ color: "var(--accent)" }}>
+                  {c.label}
+                </span>
+                <p className="mt-1 font-medium">{c.title}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <nav className="mt-10 flex justify-between text-sm">
         {prev ? (

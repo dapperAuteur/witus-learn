@@ -30,7 +30,7 @@ export async function getProgress(userId: string, lessonId: string): Promise<Les
 export async function upsertProgress(
   userId: string,
   lessonId: string,
-  patch: { completed?: boolean; watchSeconds?: number },
+  patch: { completed?: boolean; watchSeconds?: number; quizScore?: number; quizAnswers?: unknown },
 ): Promise<void> {
   await db
     .insert(lessonProgress)
@@ -39,12 +39,16 @@ export async function upsertProgress(
       lessonId,
       completedAt: patch.completed ? new Date() : null,
       watchSeconds: patch.watchSeconds ?? 0,
+      quizScore: patch.quizScore != null ? String(patch.quizScore) : null,
+      quizAnswers: patch.quizAnswers ?? null,
     })
     .onConflictDoUpdate({
       target: [lessonProgress.userId, lessonProgress.lessonId],
       set: {
         ...(patch.completed !== undefined ? { completedAt: patch.completed ? new Date() : null } : {}),
         ...(patch.watchSeconds !== undefined ? { watchSeconds: patch.watchSeconds } : {}),
+        ...(patch.quizScore !== undefined ? { quizScore: String(patch.quizScore) } : {}),
+        ...(patch.quizAnswers !== undefined ? { quizAnswers: patch.quizAnswers } : {}),
         updatedAt: new Date(),
       },
     });

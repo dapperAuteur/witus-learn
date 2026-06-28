@@ -1,4 +1,5 @@
 import type { Lesson } from "@/db/schema";
+import { QuizPlayer } from "./quiz-player";
 
 // Renders a lesson by type. Text/video/audio are first-class; the richer formats
 // (slides/360/tour/map) get a basic viewer here and are deepened in later passes.
@@ -39,6 +40,20 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
       ) : (
         <Empty />
       );
+
+    case "quiz": {
+      const c = lesson.quizContent as {
+        questions?: { prompt: string; options: string[]; correctIndex: number }[];
+        passingScore?: number;
+      } | null;
+      if (!c?.questions?.length) return <Empty />;
+      // Strip correctIndex before it reaches the client.
+      const safe = {
+        questions: c.questions.map((q) => ({ prompt: q.prompt, options: q.options })),
+        passingScore: c.passingScore,
+      };
+      return <QuizPlayer courseId={lesson.courseId} lessonId={lesson.id} content={safe} />;
+    }
 
     case "photo_360":
       return lesson.contentUrl ? (
