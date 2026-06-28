@@ -1,5 +1,6 @@
-import { Resend } from "resend";
-import { env, hasResend } from "./env";
+import formData from "form-data";
+import Mailgun from "mailgun.js";
+import { env, hasMailgun } from "./env";
 
 interface SendEmailInput {
   to: string;
@@ -11,9 +12,7 @@ interface SendEmailInput {
   replyTo?: string;
 }
 
-let cachedResend: Resend | undefined;
-
-// Sends via Resend when configured. Before Resend is set up (operator task),
+// Sends via Mailgun when configured. Before Mailgun is set up (operator task),
 // it logs to the server console so magic-link sign-in still works in local dev —
 // copy the link from the terminal. The `from` is per-tenant so BVC mail never
 // says Learn.WitUS / CentenarianOS.
@@ -25,20 +24,28 @@ export async function sendEmail({
   from,
   replyTo,
 }: SendEmailInput): Promise<void> {
-  if (!hasResend) {
+  const sender = from ?? env.MAIL_FROM;
+
+  if (!hasMailgun) {
     console.log(
-      `\n[mailer:dev] (Resend not configured — logging instead)\n  From: ${from ?? env.RESEND_FROM_EMAIL}\n  To: ${to}\n  Subject: ${subject}\n  ${text}\n`,
+      `\n[mailer:dev] (Mailgun not configured — logging instead)\n  From: ${sender}\n  To: ${to}\n  Subject: ${subject}\n  ${text}\n`,
     );
     return;
   }
 
-  cachedResend ??= new Resend(env.RESEND_API_KEY);
-  await cachedResend.emails.send({
-    from: from ?? env.RESEND_FROM_EMAIL,
-    to,
+  const mailgun = new Mailgun(formData);
+  const mg = mailgun.client({
+    username: "api",
+    key: env.MAILGUN_API_KEY as string,
+    url: env.MAILGUN_REGION === "eu" ? "https://api.eu.mailgun.net" : "https://api.mailgun.net",
+  });
+
+  await mg.messages.create(env.MAILGUN_DOMAIN as string, {
+    from: sender ?? `Learn.WitUS <no-reply@${env.MAILGUN_DOMAIN}>`,
+    to: [to],
     subject,
     text,
     ...(html ? { html } : {}),
-    ...(replyTo ? { replyTo } : {}),
+    ...(replyTo ? { "h:Reply-To": replyTo } : {}),
   });
 }

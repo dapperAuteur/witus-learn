@@ -18,7 +18,7 @@ migration).
 ## Stack
 
 Next.js 16 (App Router) · TypeScript · Tailwind v4 · Neon Postgres (+ pgvector) · Drizzle ORM ·
-Better Auth (magic-link) · Stripe · Resend · Gemini (embeddings + recommendations) · Cloudinary.
+Better Auth (magic-link) · Stripe · Mailgun · Gemini (embeddings + recommendations) · Cloudinary.
 
 ## Multi-tenancy (the hard requirement)
 

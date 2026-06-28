@@ -14,9 +14,11 @@ const schema = z.object({
   PLATFORM_OWNER_EMAIL: z.string().email().optional(),
   DEV_TENANT_HOST: z.string().optional(),
 
-  // Email (Resend). Per-tenant senders live in the tenants table.
-  RESEND_API_KEY: z.string().optional(),
-  RESEND_FROM_EMAIL: z.string().default("Learn.WitUS <no-reply@witus.online>"),
+  // Email (Mailgun). Per-tenant senders live in the tenants table.
+  MAILGUN_API_KEY: z.string().optional(),
+  MAILGUN_DOMAIN: z.string().optional(),
+  MAILGUN_REGION: z.enum(["us", "eu"]).default("us"),
+  MAIL_FROM: z.string().default("Learn.WitUS <no-reply@witus.online>"),
 
   // Stripe (Phase 5)
   STRIPE_SECRET_KEY: z.string().optional(),
@@ -73,7 +75,7 @@ export const env = parsed.data;
 
 /** True once the DB points at a real Neon instance (not the dev placeholder). */
 export const hasDatabase = !env.DATABASE_URL.includes("placeholder");
-export const hasResend = Boolean(env.RESEND_API_KEY);
+export const hasMailgun = Boolean(env.MAILGUN_API_KEY && env.MAILGUN_DOMAIN);
 export const hasStripe = Boolean(env.STRIPE_SECRET_KEY);
 export const hasGemini = Boolean(env.GOOGLE_GEMINI_API_KEY);
 export const hasCloudinary = Boolean(

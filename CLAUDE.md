@@ -77,6 +77,6 @@ Full rule: `gemini/witus/CLAUDE.md` §"Citation rule".
 
 Next.js 16 App Router (`--webpack`) · TS · Tailwind v4 · `@neondatabase/serverless` + Drizzle ORM +
 drizzle-kit · Better Auth 1.6.2 (magic-link) · Zod 4 · Vitest · `tsx` scripts · pnpm. Plus Stripe,
-Resend, Gemini (pgvector 768d), Cloudinary. `@/*` → `src/*`. Lazy Proxy-wrapped DB client; env
+Mailgun, Gemini (pgvector 768d), Cloudinary. `@/*` → `src/*`. Lazy Proxy-wrapped DB client; env
 validated in `src/lib/env.ts`; schema split under `src/db/schema/`, Drizzle-generated migrations +
 hand-written SQL for the Postgres-specific bits (extensions, ivfflat, triggers).
