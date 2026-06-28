@@ -7,3 +7,4 @@ export * from "./learning";
 export * from "./pedagogy";
 export * from "./billing";
 export * from "./prerequisites";
+export * from "./connect";

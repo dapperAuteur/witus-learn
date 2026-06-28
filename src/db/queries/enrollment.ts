@@ -54,13 +54,28 @@ export async function enrollPaid(
   userId: string,
   courseId: string,
   checkoutSessionId: string,
+  subscriptionId?: string | null,
 ): Promise<void> {
   await db
     .insert(enrollments)
-    .values({ tenantId, userId, courseId, stripeCheckoutSessionId: checkoutSessionId })
+    .values({
+      tenantId,
+      userId,
+      courseId,
+      stripeCheckoutSessionId: checkoutSessionId,
+      stripeSubscriptionId: subscriptionId ?? null,
+    })
     .onConflictDoNothing({
       target: [enrollments.userId, enrollments.courseId, enrollments.attemptNumber],
     });
+}
+
+/** Cancel the enrollment tied to a Stripe subscription (subscription.deleted). */
+export async function cancelEnrollmentBySubscription(subscriptionId: string): Promise<void> {
+  await db
+    .update(enrollments)
+    .set({ status: "cancelled" })
+    .where(eq(enrollments.stripeSubscriptionId, subscriptionId));
 }
 
 /** The current tenant's active enrollments for a user, with their courses. */
