@@ -1,6 +1,7 @@
 "use client";
 
 import { useTransition } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { confirmAge } from "@/app/(tenant)/age-gate-actions";
 
@@ -55,9 +56,9 @@ export function AgeGate({ brand, hasSafety }: { brand: string; hasSafety: boolea
         </a>
       </div>
       {hasSafety ? (
-        <a href="/safety" className="text-sm underline">
+        <Link href="/safety" className="text-sm underline">
           Safety &amp; responsible-use information
-        </a>
+        </Link>
       ) : null}
     </div>
   );

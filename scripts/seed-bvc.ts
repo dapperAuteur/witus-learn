@@ -141,6 +141,60 @@ async function main() {
     publishedAt: new Date(),
   });
 
+  // ── Lessons for Coffee (Phase 4 player content) ──
+  const coffee = await db
+    .select({ id: schema.courses.id })
+    .from(schema.courses)
+    .where(and(eq(schema.courses.tenantId, bvc), eq(schema.courses.slug, "coffee")))
+    .limit(1);
+  if (coffee[0]) {
+    const existing = await db
+      .select({ id: schema.lessons.id })
+      .from(schema.lessons)
+      .where(eq(schema.lessons.courseId, coffee[0].id))
+      .limit(1);
+    if (!existing[0]) {
+      await db.insert(schema.lessons).values([
+        {
+          tenantId: bvc,
+          courseId: coffee[0].id,
+          title: "Origins in the Ethiopian Highlands",
+          slug: "origins",
+          lessonType: "text",
+          contentFormat: "markdown",
+          textContent:
+            "Coffee originated in the volcanic highlands of Ethiopia, where it grew wild long before it was cultivated.\n\nThis lesson is a free preview.",
+          sortOrder: 1,
+          isFreePreview: true,
+          isPublished: true,
+        },
+        {
+          tenantId: bvc,
+          courseId: coffee[0].id,
+          title: "Episode Audio",
+          slug: "audio",
+          lessonType: "audio",
+          contentUrl: "https://example.com/audio/coffee.mp3",
+          durationSeconds: 1800,
+          sortOrder: 2,
+          isPublished: true,
+        },
+        {
+          tenantId: bvc,
+          courseId: coffee[0].id,
+          title: "The Geography of Coffee",
+          slug: "geography",
+          lessonType: "text",
+          contentFormat: "markdown",
+          textContent: "From the highlands of Ethiopia to plantations across the tropics.",
+          sortOrder: 3,
+          isPublished: true,
+        },
+      ]);
+      console.log("  + 3 lessons for coffee");
+    }
+  }
+
   await pool.end();
   console.log("Done.");
 }
