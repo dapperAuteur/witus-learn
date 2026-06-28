@@ -44,6 +44,12 @@ export interface TenantFlags {
   recruiting?: boolean;
   /** Allowed top-level route surface for this brand. */
   surface?: string[];
+  /** Per-tenant AI tutor: disable with false (default on when an AI key is configured). */
+  aiTutor?: boolean;
+  /** Per-tenant primary AI provider override (e.g. "anthropic"); falls back to env default. */
+  aiProvider?: string;
+  /** Render a "launching soon" landing instead of the catalog (for pre-launch schools). */
+  comingSoon?: boolean;
 }
 
 export interface TenantStripeConfig {

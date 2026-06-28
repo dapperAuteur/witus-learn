@@ -17,19 +17,49 @@ export function TutorChat({ courseId, courseTitle }: { courseId: string; courseT
     setPending(true);
     setError(null);
     setAnswer(null);
+    setUsed([]);
+
     const r = await fetch(`/api/courses/${courseId}/tutor`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ question }),
     });
-    setPending(false);
-    const data = await r.json().catch(() => ({}));
-    if (r.ok) {
-      setAnswer(data.answer ?? "");
-      setUsed(Array.isArray(data.usedLessons) ? data.usedLessons : []);
-    } else {
+
+    if (!r.ok || !r.body) {
+      setPending(false);
+      const data = await r.json().catch(() => ({}));
       setError(data.error ?? "The tutor could not answer right now.");
+      return;
     }
+
+    // Consume the NDJSON stream (meta, then token events).
+    const reader = r.body.getReader();
+    const decoder = new TextDecoder();
+    let buf = "";
+    let acc = "";
+    setAnswer("");
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buf += decoder.decode(value, { stream: true });
+      const lines = buf.split("\n");
+      buf = lines.pop() ?? "";
+      for (const line of lines) {
+        if (!line.trim()) continue;
+        let ev: { type?: string; text?: string; usedLessons?: string[]; message?: string };
+        try {
+          ev = JSON.parse(line);
+        } catch {
+          continue;
+        }
+        if (ev.type === "meta") setUsed(ev.usedLessons ?? []);
+        else if (ev.type === "token") {
+          acc += ev.text ?? "";
+          setAnswer(acc);
+        } else if (ev.type === "error") setError(ev.message ?? "The tutor hit an error.");
+      }
+    }
+    setPending(false);
   }
 
   return (
