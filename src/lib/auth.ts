@@ -8,10 +8,45 @@ import { env } from "./env";
 import { sendEmail } from "./mailer";
 import { getTenantByHost } from "./tenant";
 
+/** Rewrite a URL's origin to the request host so magic links land on the tenant
+ *  domain the user signed in from (sessions are per-domain; no cross-brand SSO). */
+function rewriteOrigin(
+  url: string,
+  host: string | null | undefined,
+  proto: string | null | undefined,
+): string {
+  if (!host) return url;
+  try {
+    const parsed = new URL(url);
+    parsed.host = host;
+    parsed.protocol = `${proto ?? (host.includes("localhost") ? "http" : "https")}:`;
+    return parsed.toString();
+  } catch {
+    return url;
+  }
+}
+
+/** Origins allowed to drive auth. Must include every tenant host so magic-link
+ *  verify is accepted on each brand's domain. Static (env-driven) for now. */
+function trustedOrigins(): string[] {
+  const fromEnv = (env.TRUSTED_ORIGINS ?? "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  const devHosts =
+    env.NODE_ENV !== "production"
+      ? ["http://localhost:3040", "http://bvc.localhost:3040", "http://acme.localhost:3040"]
+      : [];
+  return Array.from(
+    new Set([env.BETTER_AUTH_URL, env.NEXT_PUBLIC_APP_URL, ...devHosts, ...fromEnv]),
+  );
+}
+
 export const auth = betterAuth({
   appName: "Learn.WitUS",
   baseURL: env.BETTER_AUTH_URL,
   secret: env.BETTER_AUTH_SECRET,
+  trustedOrigins: trustedOrigins(),
   database: drizzleAdapter(db, {
     provider: "pg",
     schema,
@@ -24,15 +59,18 @@ export const auth = betterAuth({
     magicLink({
       sendMagicLink: async ({ email, url }, request) => {
         // Brand the email per the tenant whose domain the request came from, so
-        // BVC sign-in mail never says Learn.WitUS / CentenarianOS.
+        // BVC sign-in mail never says Learn.WitUS / CentenarianOS. Point the link
+        // at that same host so the session cookie lands on the right brand.
         const host =
           request?.headers?.get("x-forwarded-host") ?? request?.headers?.get("host");
+        const proto = request?.headers?.get("x-forwarded-proto");
+        const link = rewriteOrigin(url, host, proto);
         const tenant = await getTenantByHost(host);
         const brand = tenant?.theme.name ?? tenant?.name ?? "Learn.WitUS";
         await sendEmail({
           to: email,
           subject: `Your ${brand} sign-in link`,
-          text: `Sign in to ${brand}:\n${url}\n\nThis link expires in 10 minutes. If you didn't request it, ignore this email.`,
+          text: `Sign in to ${brand}:\n${link}\n\nThis link expires in 10 minutes. If you didn't request it, ignore this email.`,
           from: tenant?.email.from,
           replyTo: tenant?.email.replyTo,
         });

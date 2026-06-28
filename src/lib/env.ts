@@ -10,7 +10,12 @@ const schema = z.object({
 
   // Better Auth (magic-link)
   BETTER_AUTH_SECRET: z.string().min(32),
+  // Canonical app base. Dev: http://localhost:3040. Prod: https://learn.witus.online.
+  // Magic links are rewritten to the request's tenant host at send time.
   BETTER_AUTH_URL: z.string().url(),
+  // Extra comma-separated origins to trust for auth (every tenant domain), e.g.
+  // "https://learn.witus.online,https://bettervice.club".
+  TRUSTED_ORIGINS: z.string().optional(),
   PLATFORM_OWNER_EMAIL: z.string().email().optional(),
   DEV_TENANT_HOST: z.string().optional(),
 
