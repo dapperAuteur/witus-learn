@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getScopedDb } from "@/db/scoped";
 import { brandName } from "@/lib/branding";
 import { CourseCard } from "@/components/course-card";
+import { ComingSoon } from "@/components/coming-soon";
 
 type SearchParams = Promise<{ q?: string; category?: string; sort?: string }>;
 
@@ -12,6 +13,9 @@ export default async function CatalogHome({ searchParams }: { searchParams: Sear
   const sp = await searchParams;
   const sdb = await getScopedDb();
   const tenant = sdb.tenant;
+
+  // Pre-launch schools show a branded holding page instead of an empty catalog.
+  if (tenant.flags.comingSoon) return <ComingSoon tenant={tenant} />;
 
   const sort =
     sp.sort === "title" || sp.sort === "featured" || sp.sort === "newest" ? sp.sort : undefined;
