@@ -33,8 +33,18 @@ export function SiteHeader({ tenant }: { tenant: TenantRecord }) {
             </li>
           ) : null}
           <li>
+            <Link className="hover:underline" href="/instructors">
+              Instructors
+            </Link>
+          </li>
+          <li>
             <Link className="hover:underline" href="/my-courses">
               My Courses
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:underline" href="/login">
+              Sign in
             </Link>
           </li>
         </ul>
