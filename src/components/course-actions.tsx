@@ -8,12 +8,14 @@ import { useRouter } from "next/navigation";
 export function CourseActions({
   courseId,
   enrolled,
-  canEnroll,
+  isFree,
+  priceLabel,
   allComplete,
 }: {
   courseId: string;
   enrolled: boolean;
-  canEnroll: boolean;
+  isFree: boolean;
+  priceLabel: string;
   allComplete: boolean;
 }) {
   const router = useRouter();
@@ -23,6 +25,12 @@ export function CourseActions({
   async function enroll() {
     setPending(true);
     const r = await fetch(`/api/courses/${courseId}/enroll`, { method: "POST" });
+    const data = await r.json().catch(() => ({}) as { url?: string });
+    if (data.url) {
+      // Paid course → off to Stripe Checkout.
+      window.location.href = data.url;
+      return;
+    }
     setPending(false);
     if (r.ok) router.refresh();
   }
@@ -36,7 +44,7 @@ export function CourseActions({
 
   return (
     <div className="mt-6 flex flex-wrap items-center gap-3">
-      {canEnroll && !enrolled ? (
+      {!enrolled ? (
         <button
           type="button"
           onClick={enroll}
@@ -44,7 +52,7 @@ export function CourseActions({
           className="min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60"
           style={{ backgroundColor: "var(--accent)" }}
         >
-          {pending ? "Enrolling…" : "Enroll for free"}
+          {pending ? "Working…" : isFree ? "Enroll for free" : `Buy — ${priceLabel}`}
         </button>
       ) : null}
       {enrolled ? (

@@ -54,7 +54,8 @@ export default async function CourseBySlugPage({ params }: Params) {
         <CourseActions
           courseId={course.id}
           enrolled={view.isEnrolled}
-          canEnroll={isFreeCourse(course)}
+          isFree={isFreeCourse(course)}
+          priceLabel={isFreeCourse(course) ? "Free" : `$${course.price}`}
           allComplete={
             lessons.length > 0 && lessons.every((l) => completedLessonIds.has(l.id))
           }

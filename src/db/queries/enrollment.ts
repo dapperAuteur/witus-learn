@@ -48,6 +48,21 @@ export async function enrollFree(
   return rows[0];
 }
 
+/** Idempotent enrollment from a paid Stripe checkout (called by the webhook). */
+export async function enrollPaid(
+  tenantId: string,
+  userId: string,
+  courseId: string,
+  checkoutSessionId: string,
+): Promise<void> {
+  await db
+    .insert(enrollments)
+    .values({ tenantId, userId, courseId, stripeCheckoutSessionId: checkoutSessionId })
+    .onConflictDoNothing({
+      target: [enrollments.userId, enrollments.courseId, enrollments.attemptNumber],
+    });
+}
+
 /** The current tenant's active enrollments for a user, with their courses. */
 export async function listMyCourses(
   tenantId: string,
