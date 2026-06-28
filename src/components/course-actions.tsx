@@ -21,18 +21,29 @@ export function CourseActions({
   const router = useRouter();
   const [pending, setPending] = useState(false);
   const [verifyUrl, setVerifyUrl] = useState<string | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   async function enroll() {
+    setError(null);
     setPending(true);
     const r = await fetch(`/api/courses/${courseId}/enroll`, { method: "POST" });
-    const data = await r.json().catch(() => ({}) as { url?: string });
+    const data = await r
+      .json()
+      .catch(() => ({}) as { url?: string; error?: string; unmet?: { title: string }[] });
     if (data.url) {
       // Paid course → off to Stripe Checkout.
       window.location.href = data.url;
       return;
     }
     setPending(false);
-    if (r.ok) router.refresh();
+    if (r.ok) {
+      router.refresh();
+      return;
+    }
+    const unmet = Array.isArray(data.unmet)
+      ? data.unmet.map((u: { title: string }) => u.title).join(", ")
+      : "";
+    setError((data.error ?? "Could not enroll.") + (unmet ? ` (${unmet})` : ""));
   }
 
   async function complete() {
@@ -73,6 +84,11 @@ export function CourseActions({
         <a href={verifyUrl} className="text-sm underline">
           View your certificate →
         </a>
+      ) : null}
+      {error ? (
+        <p role="alert" className="w-full text-sm text-red-600">
+          {error}
+        </p>
       ) : null}
     </div>
   );

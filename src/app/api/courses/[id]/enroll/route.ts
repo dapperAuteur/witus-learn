@@ -1,5 +1,6 @@
 import { apiContext, errorJson, json } from "@/lib/api";
 import { enrollFree, isEnrolled } from "@/db/queries/enrollment";
+import { getUnmetRequired } from "@/db/queries/prerequisites";
 import { isFreeCourse } from "@/lib/gating";
 import { createCourseCheckout, ensureCoursePrice, getStripe } from "@/lib/stripe";
 import { getSiteUrl } from "@/lib/site-url";
@@ -16,6 +17,18 @@ export async function POST(_req: Request, { params }: { params: Promise<{ id: st
 
   if (await isEnrolled(session.user.id, id)) {
     return json({ enrolled: true });
+  }
+
+  // Enforce required prerequisites before any enroll / payment.
+  const unmet = await getUnmetRequired(session.user.id, id);
+  if (unmet.length > 0) {
+    return json(
+      {
+        error: "Complete the required prerequisites first.",
+        unmet: unmet.map((c) => ({ id: c.id, title: c.title })),
+      },
+      403,
+    );
   }
 
   if (isFreeCourse(course)) {
