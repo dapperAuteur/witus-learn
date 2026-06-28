@@ -2,10 +2,14 @@
 // test suite can exercise them directly. Request-bound logic (reading cookies /
 // headers) lives in tenant.ts and age-gate.ts.
 
-/** Lowercase + strip port/whitespace so "BVC.localhost:3040" → "bvc.localhost". */
+/**
+ * Lowercase + strip port/whitespace + a leading "www." so "WWW.BetterVice.Club:443"
+ * → "bettervice.club". `www.X` resolves to the same tenant as `X`.
+ */
 export function normalizeHost(host: string | null | undefined): string {
   if (!host) return "";
-  return host.trim().toLowerCase().split(":")[0];
+  const h = host.trim().toLowerCase().split(":")[0];
+  return h.startsWith("www.") ? h.slice(4) : h;
 }
 
 /** Per-tenant age-gate cookie name, e.g. "better-vice-club_age_ok". */

@@ -7,6 +7,7 @@ import { listGlossary, listSources } from "@/db/queries/pedagogy";
 import { getUnmetRequired, listPrerequisites } from "@/db/queries/prerequisites";
 import { CourseActions } from "@/components/course-actions";
 import { TutorChat } from "@/components/tutor-chat";
+import { CourseAdminTools } from "@/components/course-admin-tools";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -200,6 +201,10 @@ export default async function CourseBySlugPage({ params }: Params) {
 
       {view.session && course.isPublished ? (
         <TutorChat courseId={course.id} courseTitle={course.title} />
+      ) : null}
+
+      {view.isEditor ? (
+        <CourseAdminTools courseId={course.id} navigationMode={course.navigationMode} />
       ) : null}
     </main>
   );
