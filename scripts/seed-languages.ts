@@ -32,18 +32,29 @@ interface Lang {
   slug: string;
   verbsFile: string;
   sentencesFile: string;
+  /** Column index of the target language (the other column is English). The
+   *  files differ: Spanish is [target, English]; French is [English, target]. */
+  target: 0 | 1;
 }
 
 // Add more languages here as their files land (Portuguese/Italian/Ewe/Twi/Igbo).
+// Confirm each file's column order and set `target` accordingly.
 const LANGUAGES: Lang[] = [
-  { name: "Spanish", slug: "spanish", verbsFile: "spanishVerbs.csv", sentencesFile: "spanishSentences.csv" },
-  { name: "French", slug: "french", verbsFile: "frenchVerbs.csv", sentencesFile: "frenchSentences.csv" },
+  { name: "Spanish", slug: "spanish", verbsFile: "spanishVerbs.csv", sentencesFile: "spanishSentences.csv", target: 0 },
+  { name: "French", slug: "french", verbsFile: "frenchVerbs.csv", sentencesFile: "frenchSentences.csv", target: 1 },
 ];
 
+// Drop the header row(s) — these files have duplicate "Sentence (Spanish)" /
+// "... Sentence - ..." headers scattered mid-file — and blank rows.
 function readCsv(file: string): string[][] {
   const raw = readFileSync(join(CONTENT, file), "utf-8");
   const rows = parse(raw, { skip_empty_lines: true, relax_column_count: true }) as string[][];
-  return rows.slice(1).filter((r) => r[0]?.trim()); // drop header + blanks
+  return rows.filter((r) => {
+    const a = (r[0] ?? "").trim();
+    if (!a) return false;
+    if (/sentence\s*[(\-]|translation\s*[-(]/i.test(a)) return false;
+    return true;
+  });
 }
 
 async function ensureInstructor(tenantId: string): Promise<string> {
