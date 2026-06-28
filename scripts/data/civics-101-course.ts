@@ -21,10 +21,12 @@ export const CIVICS_101_COURSE: AuthoredCourse = {
 
 This split is **separation of powers**, reinforced by **checks and balances**: each branch can limit the others (the President can veto a bill; Congress can override a veto and confirms judges; courts can rule laws unconstitutional).
 
+Each branch is laid out in the Constitution: Congress (U.S. Const. art. I), the President (U.S. Const. art. II), and the courts (U.S. Const. art. III).
+
 **Check yourself.** Name the branch that makes laws, the one that enforces them, and the one that interprets them.
 
 ## Sources
-- U.S. Constitution, Articles I-III.`,
+- U.S. Const. arts. I-III. National Archives. https://www.archives.gov/founding-docs/constitution-transcript`,
     },
     {
       slug: "federalism",
@@ -35,12 +37,12 @@ This split is **separation of powers**, reinforced by **checks and balances**: e
 - **State** — elections administration, education, criminal law, licensing, much of daily life.
 - **Local** (county, city, school board) — policing, schools, roads, zoning, public health.
 
-Some powers are shared (taxing), some are exclusive. The **10th Amendment** reserves to the states (and the people) powers not given to the federal government. A practical takeaway: **a lot of what affects your daily life is decided at the state and local level**, not in Washington.
+Some powers are shared (taxing), some are exclusive. The **10th Amendment** reserves to the states (and the people) powers not given to the federal government (U.S. Const. amend. X). A practical takeaway: **a lot of what affects your daily life is decided at the state and local level**, not in Washington.
 
 **Check yourself.** Which level of government runs your local schools and roads?
 
 ## Sources
-- U.S. Constitution, 10th Amendment.`,
+- U.S. Const. amend. X. Constitution Annotated, Congress.gov. https://constitution.congress.gov/constitution/amendment-10/`,
     },
     {
       slug: "how-a-bill-becomes-law",
@@ -54,17 +56,18 @@ Some powers are shared (taxing), some are exclusive. The **10th Amendment** rese
 5. The **President signs** it (it becomes law) or **vetoes** it.
 6. Congress can **override** a veto with a two-thirds vote in both chambers.
 
-Most bills never become law — they die in committee. The same basic path exists in your **state legislature** for state laws.
+Most bills never become law — they die in committee. The same basic path exists in your **state legislature** for state laws. The presentment and veto process is set out in U.S. Const. art. I, § 7.
 
 **Check yourself.** What two things can the President do when a bill reaches their desk, and how can Congress respond to one of them?
 
 ## Sources
-- U.S. Constitution, Article I, Section 7.`,
+- U.S. Const. art. I, § 7. Constitution Annotated, Congress.gov. https://constitution.congress.gov/constitution/article-1/
+- The legislative process. Congress.gov. https://www.congress.gov/legislative-process`,
     },
     {
       slug: "the-courts",
       title: "4 · The courts and judicial review",
-      body: `The judicial branch settles disputes and interprets the law. Its defining power is **judicial review** — the authority to strike down laws or actions that violate the Constitution. The Supreme Court established this in **Marbury v. Madison (1803)**.
+      body: `The judicial branch settles disputes and interprets the law. Its defining power is **judicial review** — the authority to strike down laws or actions that violate the Constitution. The Supreme Court established this in **Marbury v. Madison, 5 U.S. 137 (1803)**.
 
 - Federal courts are tiered: **district courts** (trials), **circuit courts** (appeals), and the **Supreme Court** (final say on federal and constitutional questions).
 - Judges are nominated by the President and confirmed by the Senate; federal judges serve for life, to insulate them from political pressure.
@@ -73,7 +76,8 @@ Most bills never become law — they die in committee. The same basic path exist
 **Check yourself.** What is judicial review, and which 1803 case established it?
 
 ## Sources
-- *Marbury v. Madison*, 5 U.S. 137 (1803); U.S. Constitution, Article III.`,
+- Marbury v. Madison, 5 U.S. 137 (1803). Library of Congress. https://www.loc.gov/item/usrep005137/
+- U.S. Const. art. III. Constitution Annotated, Congress.gov. https://constitution.congress.gov/constitution/article-3/`,
     },
     {
       slug: "elections-and-voting",
@@ -90,7 +94,8 @@ Voting rules (registration, deadlines, ID) are set **by each state**, so they di
 **Check yourself.** Why can a single vote carry more weight in a local election than in a presidential one?
 
 ## Sources
-- U.S. Constitution, Article I (terms) and Article II + 12th Amendment (Electoral College).`,
+- U.S. Const. art. I; art. II; amend. XII. Constitution Annotated, Congress.gov. https://constitution.congress.gov/
+- Register to vote / your state's rules. USA.gov. https://www.usa.gov/voter-registration`,
     },
     {
       slug: "rights-and-participation",
@@ -107,7 +112,8 @@ Participation is not only voting:
 **Check yourself.** What are the first ten amendments collectively called, and name two ways to participate besides voting.
 
 ## Sources
-- U.S. Constitution, Amendments 1-10 (Bill of Rights), and Amendments 15, 19, 24, 26.`,
+- U.S. Const. amends. I-X (Bill of Rights). National Archives. https://www.archives.gov/founding-docs/bill-of-rights-transcript
+- U.S. Const. amends. XV, XIX, XXIV, XXVI. Constitution Annotated, Congress.gov. https://constitution.congress.gov/`,
     },
     {
       slug: "civics-101-quiz",
