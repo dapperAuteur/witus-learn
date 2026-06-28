@@ -34,6 +34,7 @@ yarn-error.log*
 
 # ecosystem convention: plans/ is repo-local working scratch (runbooks,
 # user-tasks, bugs, future notes) — not committed.
+/docs/
 /plans/
 
 # editor / os
