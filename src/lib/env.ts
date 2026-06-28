@@ -30,8 +30,25 @@ const schema = z.object({
   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().optional(),
   STRIPE_WEBHOOK_SECRET: z.string().optional(),
 
-  // Gemini (Phase 6)
+  // Gemini (Phase 6 embeddings + AI tutor)
   GOOGLE_GEMINI_API_KEY: z.string().optional(),
+
+  // Multi-provider AI (the tutor). All optional; the tutor needs at least one key.
+  ANTHROPIC_API_KEY: z.string().optional(),
+  CEREBRAS_API_KEY: z.string().optional(),
+  OPENROUTER_API_KEY: z.string().optional(),
+  MISTRAL_API_KEY: z.string().optional(),
+  TOGETHER_API_KEY: z.string().optional(),
+  OLLAMA_BASE_URL: z.string().optional(),
+  OLLAMA_EMBED_MODEL: z.string().optional(),
+  COACH_EMBED_PROVIDER: z.string().optional(),
+  /** Primary tutor provider: google|anthropic|cerebras|openrouter|mistral|together|ollama. */
+  AI_PROVIDER: z.string().optional(),
+  /** Comma-separated fallback chain, e.g. "cerebras,openrouter,google". */
+  COACH_FALLBACK_PROVIDERS: z.string().optional(),
+  LANGSMITH_API_KEY: z.string().optional(),
+  LANGSMITH_PROJECT: z.string().optional(),
+  LANGSMITH_TRACING: z.string().optional(),
 
   // Cloudinary (Phases 4/8)
   NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: z.string().optional(),
@@ -111,4 +128,14 @@ export const hasStripe = Boolean(env.STRIPE_SECRET_KEY);
 export const hasGemini = Boolean(env.GOOGLE_GEMINI_API_KEY);
 export const hasCloudinary = Boolean(
   env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME && env.CLOUDINARY_UPLOAD_PRESET,
+);
+/** At least one chat-LLM provider is configured (the tutor can run). */
+export const hasAiProvider = Boolean(
+  env.GOOGLE_GEMINI_API_KEY ||
+    env.ANTHROPIC_API_KEY ||
+    env.CEREBRAS_API_KEY ||
+    env.OPENROUTER_API_KEY ||
+    env.MISTRAL_API_KEY ||
+    env.TOGETHER_API_KEY ||
+    env.OLLAMA_BASE_URL,
 );
