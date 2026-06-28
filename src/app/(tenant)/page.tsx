@@ -103,6 +103,16 @@ export default async function CatalogHome({ searchParams }: { searchParams: Sear
         </nav>
       ) : null}
 
+      {categories.some((c) => c.name === "Languages") ? (
+        <Link
+          href="/languages"
+          className="mb-8 flex items-center justify-between gap-3 rounded-lg border border-neutral-200 p-4 hover:border-current dark:border-neutral-800"
+        >
+          <span className="font-medium">🌍 Language Atlas — see where each language comes from and how it spread</span>
+          <span aria-hidden style={{ color: "var(--accent)" }}>→</span>
+        </Link>
+      ) : null}
+
       {featured.length > 0 && !sp.q && !sp.category ? (
         <section className="mb-10">
           <h2 className="mb-3 text-lg font-semibold">Featured</h2>
