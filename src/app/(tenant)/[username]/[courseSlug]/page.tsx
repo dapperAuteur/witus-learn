@@ -2,7 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
-import { lessonAccess } from "@/lib/gating";
+import { lessonAccess, isFreeCourse } from "@/lib/gating";
+import { listGlossary, listSources } from "@/db/queries/pedagogy";
+import { CourseActions } from "@/components/course-actions";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -21,6 +23,10 @@ export default async function CourseBySlugPage({ params }: Params) {
   if (!view) notFound();
 
   const { course, lessons, isEditor, completedLessonIds, orderedLessonIds } = view;
+  const [glossary, sources] = await Promise.all([
+    listGlossary(course.id),
+    listSources(course.id),
+  ]);
   const meta = [course.seriesTitle, course.seasonNumber ? `Season ${course.seasonNumber}` : null]
     .filter(Boolean)
     .join(" · ");
@@ -44,6 +50,25 @@ export default async function CourseBySlugPage({ params }: Params) {
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
       ) : null}
 
+      {view.session && course.isPublished ? (
+        <CourseActions
+          courseId={course.id}
+          enrolled={view.isEnrolled}
+          isFree={isFreeCourse(course)}
+          priceLabel={isFreeCourse(course) ? "Free" : `$${course.price}`}
+          allComplete={
+            lessons.length > 0 && lessons.every((l) => completedLessonIds.has(l.id))
+          }
+        />
+      ) : !view.session && course.isPublished ? (
+        <p className="mt-6 text-sm">
+          <Link href="/login" className="underline">
+            Sign in
+          </Link>{" "}
+          to enroll and track your progress.
+        </p>
+      ) : null}
+
       <h2 className="mt-8 mb-3 text-lg font-semibold">Lessons</h2>
       {lessons.length === 0 ? (
         <p className="text-neutral-500">No lessons yet.</p>
@@ -52,6 +77,7 @@ export default async function CourseBySlugPage({ params }: Params) {
           {lessons.map((lesson, i) => {
             const access = lessonAccess(course, lesson, {
               isEditor,
+              isEnrolled: view.isEnrolled,
               completedLessonIds,
               orderedLessonIds,
             });
@@ -87,6 +113,55 @@ export default async function CourseBySlugPage({ params }: Params) {
           })}
         </ol>
       )}
+
+      {glossary.length > 0 ? (
+        <section className="mt-10">
+          <h2 className="mb-3 text-lg font-semibold">Key terms</h2>
+          <dl className="space-y-3">
+            {glossary.map((g) => (
+              <div key={g.id}>
+                <dt className="font-semibold">
+                  {g.term}
+                  {g.phonetic ? (
+                    <span className="ml-2 font-normal italic text-neutral-500">{g.phonetic}</span>
+                  ) : null}
+                </dt>
+                <dd className="whitespace-pre-wrap text-sm text-neutral-700 dark:text-neutral-300">
+                  {g.definition}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      ) : null}
+
+      {sources.length > 0 ? (
+        <section className="mt-10">
+          <h2 className="mb-3 text-lg font-semibold">Sources</h2>
+          <ol className="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
+            {sources.map((s) => {
+              const href = s.pdfUrl
+                ? `/api/document-proxy?url=${encodeURIComponent(s.pdfUrl)}`
+                : (s.url ?? (s.doi ? `https://doi.org/${s.doi}` : null));
+              return (
+                <li key={s.id} className="flex items-start gap-2">
+                  <span>{s.apa ?? s.inText ?? s.url}</span>
+                  {s.verified ? (
+                    <span className="text-green-700 dark:text-green-400" title="Verified source">
+                      ✓
+                    </span>
+                  ) : null}
+                  {href ? (
+                    <a href={href} target="_blank" rel="noopener noreferrer" className="underline">
+                      link
+                    </a>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      ) : null}
     </main>
   );
 }

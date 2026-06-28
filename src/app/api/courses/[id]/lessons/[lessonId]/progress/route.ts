@@ -2,6 +2,7 @@ import { z } from "zod";
 import { apiContext, canEditCourse, errorJson, json } from "@/lib/api";
 import { getLessonById, listLessons } from "@/db/queries/authoring";
 import { getCompletedLessonIds, upsertProgress } from "@/db/queries/progress";
+import { isEnrolled } from "@/db/queries/enrollment";
 import { lessonAccess } from "@/lib/gating";
 
 const Schema = z.object({
@@ -29,6 +30,7 @@ export async function POST(req: Request, { params }: Params) {
   const completed = new Set(await getCompletedLessonIds(session.user.id, id));
   const access = lessonAccess(course, lesson, {
     isEditor,
+    isEnrolled: await isEnrolled(session.user.id, id),
     completedLessonIds: completed,
     orderedLessonIds: ordered,
   });

@@ -35,6 +35,25 @@ interface SeedTenant {
 
 const TENANTS: SeedTenant[] = [
   {
+    slug: "learn-witus",
+    name: "Learn.WitUS",
+    tagline:
+      "The WitUS learning platform — host your courses under your own brand and domain.",
+    requiresAgeGate: false,
+    theme: {
+      name: "Learn.WitUS",
+      shortName: "WitUS",
+      themeColor: "#0a0a0a",
+      colors: { accent: "#2563eb", accentFg: "#ffffff" },
+    },
+    legal: { termsUrl: "/terms", privacyUrl: "/privacy" },
+    flags: { recruiting: true, paths: false, commodityMap: false },
+    hosts: [
+      { host: "learn.witus.online", isPrimary: true },
+      { host: "learn.localhost", isPrimary: false },
+    ],
+  },
+  {
     slug: "better-vice-club",
     name: "Better Vice Club",
     tagline: "A cited, audio-first history of the world's vices — coffee to khat.",

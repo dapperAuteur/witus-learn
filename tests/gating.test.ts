@@ -11,6 +11,7 @@ const lesson = (over: Partial<{ id: string; isPublished: boolean; isFreePreview:
 });
 const ctx = (over: Partial<Parameters<typeof lessonAccess>[2]> = {}) => ({
   isEditor: false,
+  isEnrolled: false,
   completedLessonIds: new Set<string>(),
   orderedLessonIds: ["L"],
   ...over,
@@ -34,6 +35,10 @@ describe("lessonAccess", () => {
   it("free course is open; paid course locks non-preview lessons", () => {
     expect(lessonAccess(free, lesson(), ctx()).open).toBe(true);
     expect(lessonAccess(paid, lesson(), ctx()).reason).toBe("locked");
+  });
+
+  it("enrollment unlocks a paid course", () => {
+    expect(lessonAccess(paid, lesson(), ctx({ isEnrolled: true })).open).toBe(true);
   });
 
   it("sequential locks a lesson until prior lessons are complete", () => {

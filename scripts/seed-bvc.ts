@@ -193,6 +193,58 @@ async function main() {
       ]);
       console.log("  + 3 lessons for coffee");
     }
+
+    // Glossary + sources (Phase 4b trust layer)
+    const g = await db
+      .select({ id: schema.courseGlossaryTerms.id })
+      .from(schema.courseGlossaryTerms)
+      .where(eq(schema.courseGlossaryTerms.courseId, coffee[0].id))
+      .limit(1);
+    if (!g[0]) {
+      await db.insert(schema.courseGlossaryTerms).values([
+        {
+          courseId: coffee[0].id,
+          term: "Arabica",
+          phonetic: "/əˈrabɪkə/",
+          definition:
+            "Coffea arabica, the species behind most specialty coffee, first cultivated in Ethiopia and Yemen.",
+          sortOrder: 1,
+        },
+        {
+          courseId: coffee[0].id,
+          term: "Terroir",
+          phonetic: "/tɛˈrwɑːr/",
+          definition:
+            "The environmental conditions (soil, altitude, climate) that give a crop its distinctive character.",
+          sortOrder: 2,
+        },
+      ]);
+      console.log("  + glossary for coffee");
+    }
+
+    const s = await db
+      .select({ id: schema.courseSources.id })
+      .from(schema.courseSources)
+      .where(eq(schema.courseSources.courseId, coffee[0].id))
+      .limit(1);
+    if (!s[0]) {
+      await db.insert(schema.courseSources).values([
+        {
+          courseId: coffee[0].id,
+          inText: "(Pendergrast, 2010)",
+          apa: "Pendergrast, M. (2010). Uncommon Grounds: The History of Coffee and How It Transformed Our World. Basic Books.",
+          verified: true,
+        },
+        {
+          courseId: coffee[0].id,
+          inText: "(ICO, 2023)",
+          apa: "International Coffee Organization. (2023). Coffee market report.",
+          url: "https://www.ico.org/",
+          verified: true,
+        },
+      ]);
+      console.log("  + sources for coffee");
+    }
   }
 
   await pool.end();

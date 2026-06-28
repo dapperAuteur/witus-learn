@@ -22,6 +22,20 @@
       "when": 1782646111208,
       "tag": "0002_absent_enchantress",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1782647098777,
+      "tag": "0003_parched_expediter",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1782647443822,
+      "tag": "0004_right_lady_vermin",
+      "breakpoints": true
     }
   ]
 }

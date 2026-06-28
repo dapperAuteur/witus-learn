@@ -32,6 +32,7 @@ export default async function LessonPage({ params }: Params) {
 
   const access = lessonAccess(view.course, lesson, {
     isEditor: view.isEditor,
+    isEnrolled: view.isEnrolled,
     completedLessonIds: view.completedLessonIds,
     orderedLessonIds: view.orderedLessonIds,
   });

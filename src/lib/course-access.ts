@@ -2,6 +2,7 @@ import "server-only";
 import type { Course, Lesson } from "@/db/schema";
 import { getCourseBySlug, listLessons } from "@/db/queries/authoring";
 import { getCompletedLessonIds } from "@/db/queries/progress";
+import { isEnrolled as checkEnrolled } from "@/db/queries/enrollment";
 import { canEditCourse } from "@/lib/api";
 import { getSession } from "@/lib/session";
 import { requireTenant, type TenantRecord } from "@/lib/tenant";
@@ -12,6 +13,7 @@ export interface CourseView {
   course: Course;
   session: Session | null;
   isEditor: boolean;
+  isEnrolled: boolean;
   lessons: Lesson[];
   completedLessonIds: Set<string>;
   orderedLessonIds: string[];
@@ -34,17 +36,21 @@ export async function loadCourseView(
 
   const all = await listLessons(course.id);
   const lessons = isEditor ? all : all.filter((l) => l.isPublished);
-  const completedLessonIds = session
-    ? new Set(await getCompletedLessonIds(session.user.id, course.id))
-    : new Set<string>();
+  const [completed, enrolled] = session
+    ? await Promise.all([
+        getCompletedLessonIds(session.user.id, course.id),
+        checkEnrolled(session.user.id, course.id),
+      ])
+    : [[] as string[], false];
 
   return {
     tenant,
     course,
     session,
     isEditor,
+    isEnrolled: enrolled,
     lessons,
-    completedLessonIds,
+    completedLessonIds: new Set(completed),
     orderedLessonIds: lessons.map((l) => l.id),
   };
 }

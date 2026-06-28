@@ -40,6 +40,8 @@ export interface TenantFlags {
   witusInbox?: boolean;
   marketplace?: boolean;
   commodityMap?: boolean;
+  /** Show the "host your own school" recruitment hero (the default Learn.WitUS school). */
+  recruiting?: boolean;
   /** Allowed top-level route surface for this brand. */
   surface?: string[];
 }
