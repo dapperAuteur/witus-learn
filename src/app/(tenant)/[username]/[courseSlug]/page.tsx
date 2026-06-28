@@ -199,7 +199,7 @@ export default async function CourseBySlugPage({ params }: Params) {
         </section>
       ) : null}
 
-      {view.session && course.isPublished ? (
+      {course.isPublished && (view.isEditor || (view.isEnrolled && !isFreeCourse(course))) ? (
         <TutorChat courseId={course.id} courseTitle={course.title} />
       ) : null}
 
