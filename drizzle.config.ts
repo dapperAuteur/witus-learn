@@ -1,12 +1,10 @@
 import { defineConfig } from "drizzle-kit";
+import { resolveDbUrl } from "./scripts/db-url";
 
 // Migrations run against the UNPOOLED (direct) Neon connection; the pooled URL
-// is for the app runtime. Fall back to the pooled URL, then a placeholder so
-// `drizzle-kit generate` (offline diff) works with no env set.
-const databaseUrl =
-  process.env.DATABASE_URL_UNPOOLED ??
-  process.env.DATABASE_URL ??
-  "postgres://placeholder:placeholder@localhost/witus_learn_dev";
+// is for the app runtime. Falls back to a placeholder so `drizzle-kit generate`
+// (offline diff) works with no env set.
+const databaseUrl = resolveDbUrl(true) ?? "postgres://placeholder:placeholder@localhost/witus_learn_dev";
 
 export default defineConfig({
   schema: "./src/db/schema/index.ts",

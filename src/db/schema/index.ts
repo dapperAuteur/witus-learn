@@ -2,3 +2,4 @@
 // phases add courses/learning/billing/rigor/social/map modules here.
 export * from "./auth";
 export * from "./tenancy";
+export * from "./courses";
