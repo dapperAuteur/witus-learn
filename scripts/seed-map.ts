@@ -107,6 +107,71 @@ async function main() {
     });
     console.log(`+ ${c.name}`);
   }
+  // ── Growing belts (latitude band + production-region ISO numeric codes) ──
+  interface B {
+    commodity: string;
+    latMin: number;
+    latMax: number;
+    codes: number[];
+    description: string;
+  }
+  const BELTS: B[] = [
+    { commodity: "Coffee", latMin: -23, latMax: 23, codes: [76, 704, 170, 231, 360], description: "The 'Bean Belt' between the tropics." },
+    { commodity: "Tea", latMin: 6, latMax: 32, codes: [156, 356, 404, 144], description: "Subtropical highlands." },
+    { commodity: "Chocolate", latMin: -10, latMax: 10, codes: [384, 288, 360, 566, 218], description: "Equatorial cacao belt; 70% now in West Africa." },
+    { commodity: "Sugar", latMin: -30, latMax: 30, codes: [76, 356, 764, 192], description: "Tropical/subtropical cane." },
+    { commodity: "Guayusa", latMin: -5, latMax: 2, codes: [218], description: "Ecuadorian Amazon." },
+    { commodity: "Kola Nut", latMin: 4, latMax: 12, codes: [566, 288], description: "West African rainforest." },
+    { commodity: "Kava", latMin: -20, latMax: -13, codes: [548, 242], description: "Pacific islands." },
+    { commodity: "Wine", latMin: 30, latMax: 50, codes: [250, 380, 268], description: "Temperate wine belt." },
+    { commodity: "Whiskey", latMin: 51, latMax: 59, codes: [826, 372], description: "Scotland & Ireland." },
+    { commodity: "Rum", latMin: -25, latMax: 25, codes: [52, 388, 192], description: "Caribbean sugar zone." },
+    { commodity: "Tequila", latMin: 18, latMax: 24, codes: [484], description: "Agave country, Jalisco region." },
+    { commodity: "Sake", latMin: 30, latMax: 40, codes: [392], description: "Japanese rice growing." },
+    { commodity: "Tobacco", latMin: 25, latMax: 45, codes: [840, 156, 76], description: "Temperate/subtropical." },
+    { commodity: "Cannabis", latMin: 25, latMax: 50, codes: [4, 484], description: "Broad temperate range." },
+    { commodity: "Opioids", latMin: 28, latMax: 38, codes: [4], description: "Golden Crescent poppy." },
+    { commodity: "Coca and Cocaine", latMin: -18, latMax: 10, codes: [170, 604, 68], description: "Andean coca." },
+    { commodity: "Psychedelics", latMin: 15, latMax: 25, codes: [484], description: "Oaxacan/Chihuahuan highlands." },
+    { commodity: "Khat", latMin: 5, latMax: 15, codes: [231, 887], description: "Horn of Africa & Yemen." },
+  ];
+
+  const all = await db
+    .select({ id: schema.mapCommodities.id, name: schema.mapCommodities.name, color: schema.mapCommodities.color, season: schema.mapCommodities.seasonNumber })
+    .from(schema.mapCommodities)
+    .where(eq(schema.mapCommodities.tenantId, tenantId));
+  const byName = new Map(all.map((c) => [c.name, c]));
+
+  console.log("Belts:");
+  for (let i = 0; i < BELTS.length; i++) {
+    const b = BELTS[i];
+    const c = byName.get(b.commodity);
+    if (!c) continue;
+    const beltName = `${b.commodity} belt`;
+    const exists = await db
+      .select({ id: schema.mapBelts.id })
+      .from(schema.mapBelts)
+      .where(and(eq(schema.mapBelts.tenantId, tenantId), eq(schema.mapBelts.name, beltName)))
+      .limit(1);
+    if (exists[0]) {
+      console.log(`  = ${beltName}`);
+      continue;
+    }
+    await db.insert(schema.mapBelts).values({
+      tenantId,
+      commodityId: c.id,
+      name: beltName,
+      seasonNumber: c.season,
+      color: c.color,
+      latMin: b.latMin,
+      latMax: b.latMax,
+      productionCountryCodes: b.codes,
+      description: b.description,
+      sortOrder: i,
+    });
+    console.log(`  + ${beltName}`);
+  }
+
   await pool.end();
   console.log("Done.");
 }
