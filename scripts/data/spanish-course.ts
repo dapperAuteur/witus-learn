@@ -8,18 +8,7 @@
 // by (courseId, slug), so editing a body here and re-running `pnpm seed:languages`
 // updates the lesson in place.
 
-export interface AuthoredLesson {
-  slug: string;
-  title: string;
-  /** Markdown body (tables + story examples + a conversation prompt). */
-  body: string;
-}
-
-export interface AuthoredCourse {
-  title: string;
-  description: string;
-  lessons: AuthoredLesson[];
-}
+import type { AuthoredCourse } from "./authored-course";
 
 export const SPANISH_COURSE: AuthoredCourse = {
   title: "Spanish, Tense by Tense — the Curb Appeall Story",

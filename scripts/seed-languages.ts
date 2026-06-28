@@ -7,7 +7,9 @@ import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
-import { SPANISH_COURSE, type AuthoredCourse } from "./data/spanish-course";
+import type { AuthoredCourse } from "./data/authored-course";
+import { SPANISH_COURSE } from "./data/spanish-course";
+import { FRENCH_COURSE } from "./data/french-course";
 
 // Builds language courses on the Learn.WitUS school. Spanish uses an authored,
 // tense-progressive structure (scripts/data/spanish-course.ts); the others fall
@@ -49,7 +51,7 @@ interface Lang {
 // tense-progressive course (like Spanish) per language to replace CSV chunking.
 const LANGUAGES: Lang[] = [
   { name: "Spanish", slug: "spanish", verbsFile: "spanishVerbs.csv", sentencesFile: "spanishSentences.csv", target: 0, authored: SPANISH_COURSE },
-  { name: "French", slug: "french", verbsFile: "frenchVerbs.csv", sentencesFile: "frenchSentences.csv", target: 1 },
+  { name: "French", slug: "french", verbsFile: "frenchVerbs.csv", sentencesFile: "frenchSentences.csv", target: 1, authored: FRENCH_COURSE },
 ];
 
 // Drop the header row(s) — these files have duplicate "Sentence (Spanish)" /
