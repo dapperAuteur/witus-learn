@@ -7,6 +7,7 @@ import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
+import { CIVICS_101_COURSE } from "./data/civics-101-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -72,6 +73,21 @@ async function main() {
     slug: "harvard-ed-l-d",
     course: EDUCATION_LEADER_COURSE,
     category: "Education Leadership",
+    navigationMode: "linear",
+  });
+
+  // Civics (Learn.WitUS) — general, non-partisan. US Civics 101 is the template;
+  // more general courses + the per-state layer (IN, AZ, AR first) follow.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Civics", sortOrder: 3 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "us-civics-101",
+    course: CIVICS_101_COURSE,
+    category: "Civics",
     navigationMode: "linear",
   });
 
