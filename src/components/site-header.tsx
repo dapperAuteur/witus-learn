@@ -1,12 +1,16 @@
 import Link from "next/link";
 import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
+import { getSession } from "@/lib/session";
+import { SignOutButton } from "./sign-out-button";
 
 // Brand-aware academy header. Nav is driven by the tenant's feature flags — not a
 // fixed CentOS module nav. Accent color comes from the --accent CSS var set by the
-// tenant layout.
-export function SiteHeader({ tenant }: { tenant: TenantRecord }) {
+// tenant layout. Session-aware: Sign in (logged out) ↔ Sign out (logged in).
+export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   const { flags } = tenant;
+  const session = await getSession();
+
   return (
     <header className="border-b border-neutral-200 dark:border-neutral-800">
       <nav className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
@@ -37,16 +41,24 @@ export function SiteHeader({ tenant }: { tenant: TenantRecord }) {
               Instructors
             </Link>
           </li>
-          <li>
-            <Link className="hover:underline" href="/my-courses">
-              My Courses
-            </Link>
-          </li>
-          <li>
-            <Link className="hover:underline" href="/login">
-              Sign in
-            </Link>
-          </li>
+          {session ? (
+            <>
+              <li>
+                <Link className="hover:underline" href="/my-courses">
+                  My Courses
+                </Link>
+              </li>
+              <li>
+                <SignOutButton />
+              </li>
+            </>
+          ) : (
+            <li>
+              <Link className="hover:underline" href="/login">
+                Sign in
+              </Link>
+            </li>
+          )}
         </ul>
       </nav>
     </header>

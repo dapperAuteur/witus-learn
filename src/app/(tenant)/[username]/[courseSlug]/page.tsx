@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, isFreeCourse } from "@/lib/gating";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
+import { getUnmetRequired, listPrerequisites } from "@/db/queries/prerequisites";
 import { CourseActions } from "@/components/course-actions";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
@@ -23,10 +24,14 @@ export default async function CourseBySlugPage({ params }: Params) {
   if (!view) notFound();
 
   const { course, lessons, isEditor, completedLessonIds, orderedLessonIds } = view;
-  const [glossary, sources] = await Promise.all([
+  const [glossary, sources, prerequisites] = await Promise.all([
     listGlossary(course.id),
     listSources(course.id),
+    listPrerequisites(course.id),
   ]);
+  const unmetPrereqIds = view.session
+    ? new Set((await getUnmetRequired(view.session.user.id, course.id)).map((c) => c.id))
+    : new Set<string>();
   const meta = [course.seriesTitle, course.seasonNumber ? `Season ${course.seasonNumber}` : null]
     .filter(Boolean)
     .join(" · ");
@@ -67,6 +72,35 @@ export default async function CourseBySlugPage({ params }: Params) {
           </Link>{" "}
           to enroll and track your progress.
         </p>
+      ) : null}
+
+      {prerequisites.length > 0 ? (
+        <section className="mt-8">
+          <h2 className="mb-3 text-lg font-semibold">Prerequisites</h2>
+          <ul className="space-y-2 text-sm">
+            {prerequisites.map((p) => {
+              const isRequired = p.enforcement === "required";
+              const unmet = isRequired && unmetPrereqIds.has(p.prereq.id);
+              return (
+                <li key={p.prereq.id} className="flex items-center gap-2">
+                  <Link href={`/course/${p.prereq.id}`} className="hover:underline">
+                    {p.prereq.title}
+                  </Link>
+                  <span className="rounded-full bg-neutral-200 px-2 py-0.5 text-xs dark:bg-neutral-700">
+                    {p.enforcement}
+                  </span>
+                  {view.session && isRequired ? (
+                    unmet ? (
+                      <span title="Not yet completed">🔒</span>
+                    ) : (
+                      <span className="text-green-700 dark:text-green-400">✓</span>
+                    )
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
       ) : null}
 
       <h2 className="mt-8 mb-3 text-lg font-semibold">Lessons</h2>

@@ -36,6 +36,13 @@
       "when": 1782647443822,
       "tag": "0004_right_lady_vermin",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1782651798879,
+      "tag": "0005_strange_matthew_murdock",
+      "breakpoints": true
     }
   ]
 }

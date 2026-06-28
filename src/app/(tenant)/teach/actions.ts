@@ -1,7 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { createCourse } from "@/db/queries/authoring";
+import { createCourse, ensureUsername } from "@/db/queries/authoring";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { requireTenant } from "@/lib/tenant";
 
@@ -21,6 +21,7 @@ export async function createCourseAction(formData: FormData) {
   if (!title) redirect("/teach");
   const description = String(formData.get("description") ?? "").trim() || null;
 
+  await ensureUsername(session.user.id, session.user.email);
   const course = await createCourse(tenant.id, session.user.id, { title, description });
   redirect(`/course/${course.id}`);
 }

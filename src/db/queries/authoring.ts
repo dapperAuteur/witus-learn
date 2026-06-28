@@ -305,6 +305,40 @@ export async function getInstructorProfile(
   return { profile: prof[0], courses: list };
 }
 
+/** The instructor's public username (for building pretty URLs). */
+export async function getUsername(userId: string): Promise<string | null> {
+  const rows = await db
+    .select({ username: userProfiles.username })
+    .from(userProfiles)
+    .where(eq(userProfiles.userId, userId))
+    .limit(1);
+  return rows[0]?.username ?? null;
+}
+
+/** Ensure a user has a username (pretty URLs need one). Derives a unique slug
+ *  from their email on first course creation. Idempotent. */
+export async function ensureUsername(userId: string, email: string): Promise<string> {
+  const current = await getUsername(userId);
+  if (current) return current;
+
+  const base = slugify(email.split("@")[0] ?? "user").slice(0, 24) || "user";
+  let candidate = base;
+  for (let i = 2; i < 100; i++) {
+    const taken = await db
+      .select({ id: userProfiles.userId })
+      .from(userProfiles)
+      .where(eq(userProfiles.username, candidate))
+      .limit(1);
+    if (!taken[0]) break;
+    candidate = `${base}-${i}`;
+  }
+  await db
+    .insert(userProfiles)
+    .values({ userId, username: candidate })
+    .onConflictDoUpdate({ target: userProfiles.userId, set: { username: candidate } });
+  return candidate;
+}
+
 /** Courses owned by an instructor on this tenant (published + drafts) for /teach. */
 export async function listOwnCourses(tenantId: string, instructorId: string): Promise<Course[]> {
   const conds: SQL[] = [eq(courses.tenantId, tenantId), eq(courses.instructorId, instructorId)];
