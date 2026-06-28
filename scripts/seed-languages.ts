@@ -2,17 +2,22 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { neonConfig, Pool } from "@neondatabase/serverless";
 import { parse } from "csv-parse/sync";
-import { and, eq } from "drizzle-orm";
+import { and, eq, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
+import { SPANISH_COURSE, type AuthoredCourse } from "./data/spanish-course";
 
-// Builds language courses on the Learn.WitUS school from content/language/ (the
-// gitignored "Curb Appeall" datasets): glossary from the verb list, lessons from
-// the story (chunked). Idempotent. Run: pnpm seed:languages
+// Builds language courses on the Learn.WitUS school. Spanish uses an authored,
+// tense-progressive structure (scripts/data/spanish-course.ts); the others fall
+// back to the gitignored content/language/ "Curb Appeall" datasets (glossary from
+// the verb list, lessons from the story chunked).
 //
-// Conjugation/production drills are intentionally left to the AI tutor (Layer 2).
+// RE-SEEDABLE: lessons + glossary upsert by their unique keys, so editing the
+// authored course and re-running `pnpm seed:languages` updates lessons IN PLACE
+// (lesson IDs are preserved, so embeddings + learner progress survive).
+// Run: pnpm seed:languages
 
 neonConfig.webSocketConstructor = ws;
 const connectionString = resolveDbUrl(true);
@@ -35,12 +40,15 @@ interface Lang {
   /** Column index of the target language (the other column is English). The
    *  files differ: Spanish is [target, English]; French is [English, target]. */
   target: 0 | 1;
+  /** Authored tense-progressive lessons; when set, used instead of CSV chunking. */
+  authored?: AuthoredCourse;
 }
 
 // Add more languages here as their files land (Portuguese/Italian/Ewe/Twi/Igbo).
-// Confirm each file's column order and set `target` accordingly.
+// Confirm each file's column order and set `target` accordingly. Author a
+// tense-progressive course (like Spanish) per language to replace CSV chunking.
 const LANGUAGES: Lang[] = [
-  { name: "Spanish", slug: "spanish", verbsFile: "spanishVerbs.csv", sentencesFile: "spanishSentences.csv", target: 0 },
+  { name: "Spanish", slug: "spanish", verbsFile: "spanishVerbs.csv", sentencesFile: "spanishSentences.csv", target: 0, authored: SPANISH_COURSE },
   { name: "French", slug: "french", verbsFile: "frenchVerbs.csv", sentencesFile: "frenchSentences.csv", target: 1 },
 ];
 
@@ -55,6 +63,37 @@ function readCsv(file: string): string[][] {
     if (/sentence\s*[(\-]|translation\s*[-(]/i.test(a)) return false;
     return true;
   });
+}
+
+// CSV fallback: chunk the story into "Part N" lessons (target-language bold,
+// English below). Respects `target` so non-authored langs render the right column.
+function buildCsvLessons(
+  tenantId: string,
+  courseId: string,
+  sentences: string[][],
+  target: 0 | 1,
+) {
+  const rows = [];
+  for (let i = 0; i < sentences.length; i += SENTENCES_PER_LESSON) {
+    const chunk = sentences.slice(i, i + SENTENCES_PER_LESSON);
+    const part = Math.floor(i / SENTENCES_PER_LESSON) + 1;
+    const body = chunk
+      .map((r) => `**${(r[target] ?? "").trim()}**\n${(r[1 - target] ?? "").trim()}`)
+      .join("\n\n");
+    rows.push({
+      tenantId,
+      courseId,
+      title: `Part ${part}`,
+      slug: `part-${part}`,
+      lessonType: "text" as const,
+      contentFormat: "markdown" as const,
+      textContent: body,
+      sortOrder: part,
+      isFreePreview: part === 1,
+      isPublished: true,
+    });
+  }
+  return rows;
 }
 
 async function ensureInstructor(tenantId: string): Promise<string> {
@@ -92,17 +131,30 @@ async function main() {
     .onConflictDoNothing();
 
   for (const lang of LANGUAGES) {
-    let verbs: string[][];
-    let sentences: string[][];
+    // Verbs feed the glossary (optional). Sentences only matter for CSV-built
+    // (non-authored) courses; authored courses bring their own lessons.
+    let verbs: string[][] = [];
+    let sentences: string[][] = [];
     try {
       verbs = readCsv(lang.verbsFile);
-      sentences = readCsv(lang.sentencesFile);
     } catch {
-      console.log(`skip ${lang.name} (content files not found)`);
-      continue;
+      /* glossary is optional */
+    }
+    if (!lang.authored) {
+      try {
+        sentences = readCsv(lang.sentencesFile);
+      } catch {
+        console.log(`skip ${lang.name} (sentences file not found, no authored course)`);
+        continue;
+      }
     }
 
-    // Course
+    const title = lang.authored?.title ?? `${lang.name} — the Curb Appeall Story`;
+    const description =
+      lang.authored?.description ??
+      `Learn ${lang.name} through one continuous story about Curb Appeall and friends learning healthy-living habits. Communication-first, with the verbs and patterns you need to produce sentences yourself.`;
+
+    // Course — insert, or refresh title/description so authored edits propagate.
     const existing = await db
       .select({ id: schema.courses.id })
       .from(schema.courses)
@@ -115,9 +167,9 @@ async function main() {
         .values({
           tenantId,
           instructorId,
-          title: `${lang.name} — the Curb Appeall Story`,
+          title,
           slug: lang.slug,
-          description: `Learn ${lang.name} through one continuous story about Curb Appeall and friends learning healthy-living habits. Communication-first, with the verbs and patterns you need to produce sentences yourself.`,
+          description,
           category: "Languages",
           isPublished: true,
           publishedAt: new Date(),
@@ -127,57 +179,69 @@ async function main() {
       courseId = row.id;
       console.log(`+ course ${lang.slug}`);
     } else {
-      console.log(`= course ${lang.slug} exists`);
+      await db.update(schema.courses).set({ title, description }).where(eq(schema.courses.id, courseId));
+      console.log(`= course ${lang.slug} (refreshed)`);
     }
 
-    // Glossary (deduped verbs, capped)
+    // Glossary — deduped verbs, capped, upserted (term = the TARGET-language word).
     const seen = new Set<string>();
     const terms = [];
-    for (const [term, def] of verbs) {
-      const key = term.trim().toLowerCase();
+    for (const row of verbs) {
+      const term = (row[lang.target] ?? "").trim();
+      const def = (row[1 - lang.target] ?? "").trim();
+      const key = term.toLowerCase();
       if (!key || seen.has(key)) continue;
       seen.add(key);
-      terms.push({ courseId, term: term.trim(), definition: (def ?? "").trim() || term.trim(), sortOrder: terms.length });
+      terms.push({ courseId, term, definition: def || term, sortOrder: terms.length });
       if (terms.length >= MAX_GLOSSARY) break;
     }
     if (terms.length) {
-      await db.insert(schema.courseGlossaryTerms).values(terms).onConflictDoNothing();
+      await db
+        .insert(schema.courseGlossaryTerms)
+        .values(terms)
+        .onConflictDoUpdate({
+          target: [schema.courseGlossaryTerms.courseId, schema.courseGlossaryTerms.term],
+          set: { definition: sql`excluded.definition`, sortOrder: sql`excluded.sort_order` },
+        });
       console.log(`  glossary: ${terms.length} terms`);
     }
 
-    // Lessons (story chunked), only if none yet
-    const hasLessons = await db
-      .select({ id: schema.lessons.id })
-      .from(schema.lessons)
-      .where(eq(schema.lessons.courseId, courseId))
-      .limit(1);
-    if (!hasLessons[0]) {
-      const lessonRows = [];
-      for (let i = 0; i < sentences.length; i += SENTENCES_PER_LESSON) {
-        const chunk = sentences.slice(i, i + SENTENCES_PER_LESSON);
-        const part = Math.floor(i / SENTENCES_PER_LESSON) + 1;
-        const body = chunk
-          .map(([s, e]) => `**${s.trim()}**\n${(e ?? "").trim()}`)
-          .join("\n\n");
-        lessonRows.push({
+    // Lessons — authored tense units, else CSV chunks. Upserted by (courseId, slug),
+    // so re-running updates lessons in place (IDs preserved → embeddings/progress safe).
+    const lessonRows = lang.authored
+      ? lang.authored.lessons.map((l, i) => ({
           tenantId,
           courseId,
-          title: `Part ${part}`,
-          slug: `part-${part}`,
+          title: l.title,
+          slug: l.slug,
           lessonType: "text" as const,
           contentFormat: "markdown" as const,
-          textContent: body,
-          sortOrder: part,
-          isFreePreview: part === 1,
+          textContent: l.body,
+          sortOrder: i + 1,
+          isFreePreview: i === 0,
           isPublished: true,
+        }))
+      : buildCsvLessons(tenantId, courseId, sentences, lang.target);
+
+    if (lessonRows.length) {
+      await db
+        .insert(schema.lessons)
+        .values(lessonRows)
+        .onConflictDoUpdate({
+          target: [schema.lessons.courseId, schema.lessons.slug],
+          targetWhere: sql`slug is not null`,
+          set: {
+            title: sql`excluded.title`,
+            textContent: sql`excluded.text_content`,
+            sortOrder: sql`excluded.sort_order`,
+            isFreePreview: sql`excluded.is_free_preview`,
+            lessonType: sql`excluded.lesson_type`,
+            contentFormat: sql`excluded.content_format`,
+            isPublished: sql`excluded.is_published`,
+            updatedAt: new Date(),
+          },
         });
-      }
-      if (lessonRows.length) {
-        await db.insert(schema.lessons).values(lessonRows);
-        console.log(`  lessons: ${lessonRows.length} parts`);
-      }
-    } else {
-      console.log(`  lessons exist`);
+      console.log(`  lessons: ${lessonRows.length} (upserted)`);
     }
   }
 
