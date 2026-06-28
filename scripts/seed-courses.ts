@@ -6,6 +6,7 @@ import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
+import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -73,6 +74,33 @@ async function main() {
     category: "Education Leadership",
     navigationMode: "linear",
   });
+
+  // Cybersecurity — on the Trade School (staged; the school stays flags.comingSoon
+  // until launch, so the course is seeded but not yet publicly browsable). Skips if
+  // the Trade School tenant has not been seeded yet.
+  const tradeSchool = await tenantBySlug("trade-school");
+  if (tradeSchool) {
+    const tradeInstructor = await ensureInstructor(tradeSchool, {
+      id: "seed-trade-faculty",
+      email: "faculty@trade.witus.online",
+      username: "trade-faculty",
+      displayName: "WitUS Trade Faculty",
+    });
+    await db
+      .insert(schema.courseCategories)
+      .values({ tenantId: tradeSchool, name: "Cybersecurity", sortOrder: 1 })
+      .onConflictDoNothing();
+    await seedAuthoredCourse(db, {
+      tenantId: tradeSchool,
+      instructorId: tradeInstructor,
+      slug: "cybersecurity-get-the-job",
+      course: CYBER_SECURITY_COURSE,
+      category: "Cybersecurity",
+      navigationMode: "linear",
+    });
+  } else {
+    console.log("skip cybersecurity (trade-school tenant missing — run `pnpm seed:tenants`)");
+  }
 
   await pool.end();
   console.log("Done.");
