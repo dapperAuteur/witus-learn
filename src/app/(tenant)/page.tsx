@@ -33,6 +33,23 @@ export default async function CatalogHome({ searchParams }: { searchParams: Sear
         ) : null}
       </header>
 
+      {tenant.flags.recruiting ? (
+        <section className="mb-8 rounded-lg border border-neutral-200 p-6 dark:border-neutral-800">
+          <h2 className="text-xl font-semibold">Run your own school on WitUS</h2>
+          <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
+            Bring your courses to the WitUS learning platform under your own brand and domain — cited,
+            media-rich courses with progress tracking and built-in certificates. You teach; we host.
+          </p>
+          <Link
+            href="/teach"
+            className="mt-4 inline-block min-h-11 rounded-md px-4 py-2 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2"
+            style={{ backgroundColor: "var(--accent)" }}
+          >
+            Start your school →
+          </Link>
+        </section>
+      ) : null}
+
       <form method="get" className="mb-6 flex flex-wrap items-center gap-3">
         <label className="sr-only" htmlFor="q">
           Search courses
