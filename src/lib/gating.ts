@@ -9,6 +9,7 @@ export type LessonLockReason = "draft" | "locked" | "sequential";
 
 export interface LessonAccessCtx {
   isEditor: boolean;
+  isEnrolled: boolean;
   completedLessonIds: Set<string>;
   /** Lesson ids in display order, for sequential gating. */
   orderedLessonIds: string[];
@@ -26,7 +27,8 @@ export function lessonAccess(
   if (ctx.isEditor) return { open: true };
   if (!course.isPublished || !lesson.isPublished) return { open: false, reason: "draft" };
   if (lesson.isFreePreview) return { open: true };
-  if (!isFreeCourse(course)) return { open: false, reason: "locked" };
+  // Paid course: locked until enrolled (free enroll in Phase 5a, Stripe in 5b).
+  if (!isFreeCourse(course) && !ctx.isEnrolled) return { open: false, reason: "locked" };
 
   if (course.isSequential) {
     const idx = ctx.orderedLessonIds.indexOf(lesson.id);

@@ -2,8 +2,9 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
-import { lessonAccess } from "@/lib/gating";
+import { lessonAccess, isFreeCourse } from "@/lib/gating";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
+import { CourseActions } from "@/components/course-actions";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -49,6 +50,24 @@ export default async function CourseBySlugPage({ params }: Params) {
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
       ) : null}
 
+      {view.session && course.isPublished ? (
+        <CourseActions
+          courseId={course.id}
+          enrolled={view.isEnrolled}
+          canEnroll={isFreeCourse(course)}
+          allComplete={
+            lessons.length > 0 && lessons.every((l) => completedLessonIds.has(l.id))
+          }
+        />
+      ) : !view.session && course.isPublished ? (
+        <p className="mt-6 text-sm">
+          <Link href="/login" className="underline">
+            Sign in
+          </Link>{" "}
+          to enroll and track your progress.
+        </p>
+      ) : null}
+
       <h2 className="mt-8 mb-3 text-lg font-semibold">Lessons</h2>
       {lessons.length === 0 ? (
         <p className="text-neutral-500">No lessons yet.</p>
@@ -57,6 +76,7 @@ export default async function CourseBySlugPage({ params }: Params) {
           {lessons.map((lesson, i) => {
             const access = lessonAccess(course, lesson, {
               isEditor,
+              isEnrolled: view.isEnrolled,
               completedLessonIds,
               orderedLessonIds,
             });
