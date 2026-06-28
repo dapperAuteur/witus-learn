@@ -128,18 +128,14 @@ export function CommodityMap({ commodities }: { commodities: MapPin[] }) {
           {selected.summary ? (
             <p className="mt-2 text-sm text-neutral-700 dark:text-neutral-300">{selected.summary}</p>
           ) : null}
-          {selected.courseId ? (
-            <button
-              type="button"
-              onClick={() => router.push(`/course/${selected.courseId}`)}
-              className="mt-3 min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2"
-              style={{ backgroundColor: selected.color ?? "var(--accent)" }}
-            >
-              Open this episode →
-            </button>
-          ) : (
-            <p className="mt-3 text-sm text-neutral-400">Episode coming soon.</p>
-          )}
+          <button
+            type="button"
+            onClick={() => router.push(`/episode/${selected.id}`)}
+            className="mt-3 min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2"
+            style={{ backgroundColor: selected.color ?? "var(--accent)" }}
+          >
+            See the full episode →
+          </button>
         </aside>
       ) : null}
     </div>

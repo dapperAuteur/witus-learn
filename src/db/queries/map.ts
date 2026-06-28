@@ -13,6 +13,19 @@ export async function listCommodities(tenantId: string, season?: number): Promis
     .orderBy(asc(mapCommodities.sortOrder));
 }
 
+/** A single commodity pin by id, tenant-scoped (foreign id → null/404). */
+export async function getCommodityById(
+  tenantId: string,
+  id: string,
+): Promise<MapCommodity | null> {
+  const rows = await db
+    .select()
+    .from(mapCommodities)
+    .where(and(eq(mapCommodities.tenantId, tenantId), eq(mapCommodities.id, id)))
+    .limit(1);
+  return rows[0] ?? null;
+}
+
 export async function listBelts(tenantId: string): Promise<MapBelt[]> {
   return db
     .select()
