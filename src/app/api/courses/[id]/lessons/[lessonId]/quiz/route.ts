@@ -1,10 +1,10 @@
 import { z } from "zod";
 import { apiContext, canEditCourse, errorJson, json } from "@/lib/api";
-import { getLessonById, listLessons } from "@/db/queries/authoring";
+import { getLessonById, getUsername, listLessons } from "@/db/queries/authoring";
 import { getCompletedLessonIds, upsertProgress } from "@/db/queries/progress";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { lessonAccess } from "@/lib/gating";
-import { scoreQuiz, type QuizContent } from "@/lib/quiz";
+import { scoreQuiz, type QuizContent, type QuizFeedbackItem } from "@/lib/quiz";
 
 const Schema = z.object({ answers: z.array(z.number().int().min(0)) });
 
@@ -48,5 +48,23 @@ export async function POST(req: Request, { params }: Params) {
     quizScore: result.score,
     quizAnswers: parsed.data.answers,
   });
-  return json(result);
+
+  // Per-question feedback (revealed only now, after submission): the correct answer,
+  // the explanation, and a link to the lesson where the answer is taught.
+  const username = await getUsername(course.instructorId);
+  const bySlug = new Map(all.map((l) => [l.slug, l] as const));
+  const feedback: QuizFeedbackItem[] = content.questions.map((q, i) => {
+    const src = q.sourceLessonSlug ? bySlug.get(q.sourceLessonSlug) : undefined;
+    return {
+      correctIndex: q.correctIndex,
+      correct: parsed.data.answers[i] === q.correctIndex,
+      explanation: q.explanation ?? null,
+      source:
+        src?.slug && username && course.slug
+          ? { title: src.title, href: `/${username}/${course.slug}/lesson/${src.slug}` }
+          : null,
+    };
+  });
+
+  return json({ ...result, feedback });
 }

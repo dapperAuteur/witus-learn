@@ -5,11 +5,25 @@ export interface QuizQuestion {
   prompt: string;
   options: string[];
   correctIndex: number;
+  /** Why this is the answer — shown after submission. */
+  explanation?: string;
+  /** Slug of the lesson where the answer is found; becomes a "review" link.
+   *  EVERY authored quiz question should set this (point the learner to the source). */
+  sourceLessonSlug?: string;
 }
 
 export interface QuizContent {
   questions: QuizQuestion[];
   passingScore?: number;
+}
+
+// Per-question feedback returned AFTER submission (so correct answers are never
+// sent before the learner answers). `source` links to the lesson that teaches it.
+export interface QuizFeedbackItem {
+  correctIndex: number;
+  correct: boolean;
+  explanation: string | null;
+  source: { title: string; href: string } | null;
 }
 
 export function scoreQuiz(
