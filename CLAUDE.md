@@ -65,6 +65,17 @@ next number, don't skip). Sub-queues: `./plans/user-tasks/`, `./plans/bugs/`, `.
 `plans/` is gitignored — local working notes. Durable, committed planning lives in `docs/`
 (e.g. `docs/BUILD_PLAN.md`).
 
+## Docs & roadmap maintenance — keep them current as the app grows
+
+As features land, **update the docs in the same change**, not "later":
+- **`docs/ROADMAP.md`** — the internal progress tracker (Shipped / in-branch / backlog). Move items
+  to ✅ when merged; add new backlog as it arrives. BAM uses this to track progress.
+- **`README.md`** — keep the feature list, setup, and the seed/migration commands accurate (it gains
+  `seed:courses`, `seed:faa`, `seed:bvc:real`, etc. as they're added).
+- **Usage / how-to-use docs** — when a user-facing surface ships (instructor dashboard, domains, live,
+  paths, age-gate), add or update a short "how to use it" note (a Teacher/Operator guide under `docs/`).
+- A feature isn't "done" until its roadmap entry, README mention, and usage note are updated.
+
 ## Citation rule
 
 BVC curriculum is cited, audio-first, and fact-checked: every claim ties to a verified source
