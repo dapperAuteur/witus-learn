@@ -53,9 +53,14 @@ export default async function TeachPage() {
         <h1 className="text-2xl font-bold">Your courses</h1>
         <div className="flex items-center gap-4 text-sm">
           {owner ? (
-            <Link href="/admin/domains" className="underline" style={{ color: "var(--accent)" }}>
-              Domains
-            </Link>
+            <>
+              <Link href="/admin/live" className="underline" style={{ color: "var(--accent)" }}>
+                Live
+              </Link>
+              <Link href="/admin/domains" className="underline" style={{ color: "var(--accent)" }}>
+                Domains
+              </Link>
+            </>
           ) : null}
           <Link href="/teach/feedback" className="underline" style={{ color: "var(--accent)" }}>
             Curriculum feedback →

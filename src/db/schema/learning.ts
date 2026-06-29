@@ -1,5 +1,6 @@
 import { sql } from "drizzle-orm";
 import {
+  boolean,
   check,
   index,
   integer,
@@ -112,3 +113,36 @@ export const assignmentSubmissions = pgTable(
 );
 
 export type AssignmentSubmission = typeof assignmentSubmissions.$inferSelect;
+
+// Live class sessions. Tenant-scoped; the embed-URL model (playbackUrl is an
+// embeddable player URL from any RTMP/VOD service) keeps witus-learn provider-
+// agnostic. One stream broadcast to several schools = one row per tenant (fan-out
+// on create), so the viewer query stays a simple per-tenant filter (no leak).
+export const liveSessions = pgTable(
+  "live_sessions",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id").references(() => courses.id, { onDelete: "set null" }),
+    createdBy: text("created_by").references(() => users.id, { onDelete: "set null" }),
+    title: text("title").notNull(),
+    description: text("description"),
+    scheduledAt: timestamp("scheduled_at", { withTimezone: true }),
+    isLive: boolean("is_live").notNull().default(false),
+    /** public | members | enrolled */
+    visibility: text("visibility").notNull().default("members"),
+    /** Embeddable player URL for the live stream (rendered in an iframe). */
+    playbackUrl: text("playback_url"),
+    /** Embeddable URL for the saved recording, set after the stream. */
+    recordingUrl: text("recording_url"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("live_sessions_tenant_idx").on(t.tenantId),
+    check("live_sessions_visibility_chk", sql`${t.visibility} in ('public','members','enrolled')`),
+  ],
+);
+
+export type LiveSession = typeof liveSessions.$inferSelect;
