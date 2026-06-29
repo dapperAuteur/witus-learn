@@ -33,9 +33,14 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
         <Link href="/teach" className="text-sm text-neutral-500 hover:underline">
           ← Your courses
         </Link>
-        <Link href={`/course/${course.id}`} className="text-sm underline" style={{ color: "var(--accent)" }}>
-          View public page →
-        </Link>
+        <div className="flex items-center gap-4 text-sm">
+          <Link href={`/teach/${course.id}/submissions`} className="underline" style={{ color: "var(--accent)" }}>
+            Submissions
+          </Link>
+          <Link href={`/course/${course.id}`} className="underline" style={{ color: "var(--accent)" }}>
+            View public page →
+          </Link>
+        </div>
       </div>
 
       <h1 className="mt-4 text-2xl font-bold">{course.title}</h1>

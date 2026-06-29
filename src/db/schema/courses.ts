@@ -156,7 +156,7 @@ export const lessons = pgTable(
     index("lessons_course_idx").on(t.courseId),
     check(
       "lessons_type_chk",
-      sql`${t.lessonType} in ('video','text','audio','slides','quiz','360video','photo_360','virtual_tour','map')`,
+      sql`${t.lessonType} in ('video','text','audio','slides','quiz','360video','photo_360','virtual_tour','map','assignment')`,
     ),
     check(
       "lessons_content_format_chk",

@@ -74,3 +74,41 @@ export const lessonFeedback = pgTable(
 );
 
 export type LessonFeedback = typeof lessonFeedback.$inferSelect;
+
+// Learner submissions to an assignment lesson (lesson_type = 'assignment', prompt in
+// the lesson body). One submission per (lesson, user); the instructor grades it.
+export const assignmentSubmissions = pgTable(
+  "assignment_submissions",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    lessonId: uuid("lesson_id")
+      .notNull()
+      .references(() => lessons.id, { onDelete: "cascade" }),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    body: text("body").notNull(),
+    /** submitted | graded */
+    status: text("status").notNull().default("submitted"),
+    /** 0-100, set when graded */
+    grade: integer("grade"),
+    feedback: text("feedback"),
+    submittedAt: timestamp("submitted_at", { withTimezone: true }).notNull().defaultNow(),
+    gradedAt: timestamp("graded_at", { withTimezone: true }),
+  },
+  (t) => [
+    primaryKey({ columns: [t.lessonId, t.userId] }),
+    index("assignment_submissions_lesson_idx").on(t.lessonId),
+    index("assignment_submissions_tenant_status_idx").on(t.tenantId, t.status),
+    check("assignment_submissions_status_chk", sql`${t.status} in ('submitted','graded')`),
+    check("assignment_submissions_grade_chk", sql`${t.grade} is null or (${t.grade} >= 0 and ${t.grade} <= 100)`),
+  ],
+);
+
+export type AssignmentSubmission = typeof assignmentSubmissions.$inferSelect;

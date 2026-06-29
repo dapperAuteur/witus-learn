@@ -12,6 +12,7 @@ const LESSON_TYPES = [
   "photo_360",
   "virtual_tour",
   "map",
+  "assignment",
 ] as const;
 
 const Schema = z.object({
