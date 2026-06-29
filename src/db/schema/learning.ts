@@ -146,3 +146,26 @@ export const liveSessions = pgTable(
 );
 
 export type LiveSession = typeof liveSessions.$inferSelect;
+
+// Lead capture (email funnel). Tenant-scoped, one row per (tenant, email). Used by
+// the coming-soon landings and any "notify me" form, gated by flags.leadFunnel.
+export const leads = pgTable(
+  "leads",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    email: text("email").notNull(),
+    name: text("name"),
+    /** where the lead came from, e.g. "coming-soon" or "home". */
+    source: text("source"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    primaryKey({ columns: [t.tenantId, t.email] }),
+    index("leads_tenant_idx").on(t.tenantId),
+  ],
+);
+
+export type Lead = typeof leads.$inferSelect;
