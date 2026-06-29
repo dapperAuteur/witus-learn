@@ -29,9 +29,9 @@ export default async function TeachPage() {
     );
   }
 
+  const owner = await isPlatformOwner(session.user.id);
   const isInstructor =
-    (await isPlatformOwner(session.user.id)) ||
-    ["instructor", "brand_admin"].includes((await getMembership(session.user.id, tenant.id)) ?? "");
+    owner || ["instructor", "brand_admin"].includes((await getMembership(session.user.id, tenant.id)) ?? "");
 
   if (!isInstructor) {
     return (
@@ -51,9 +51,16 @@ export default async function TeachPage() {
     <main className="mx-auto max-w-3xl px-4 py-12">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Your courses</h1>
-        <Link href="/teach/feedback" className="text-sm underline" style={{ color: "var(--accent)" }}>
-          Curriculum feedback →
-        </Link>
+        <div className="flex items-center gap-4 text-sm">
+          {owner ? (
+            <Link href="/admin/domains" className="underline" style={{ color: "var(--accent)" }}>
+              Domains
+            </Link>
+          ) : null}
+          <Link href="/teach/feedback" className="underline" style={{ color: "var(--accent)" }}>
+            Curriculum feedback →
+          </Link>
+        </div>
       </div>
 
       <form action={createCourseAction} className="mt-6 flex flex-col gap-3 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
