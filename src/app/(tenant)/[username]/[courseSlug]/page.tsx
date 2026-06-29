@@ -8,6 +8,9 @@ import { getUnmetRequired, listPrerequisites } from "@/db/queries/prerequisites"
 import { CourseActions } from "@/components/course-actions";
 import { TutorChat } from "@/components/tutor-chat";
 import { CourseAdminTools } from "@/components/course-admin-tools";
+import { hasAgeConsentCookie } from "@/lib/age-gate";
+import { AgeGate } from "@/components/age-gate";
+import { brandName } from "@/lib/branding";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -26,6 +29,13 @@ export default async function CourseBySlugPage({ params }: Params) {
   if (!view) notFound();
 
   const { course, lessons, isEditor, completedLessonIds, orderedLessonIds } = view;
+
+  // Per-course (per-season) age gate: gate a course flagged requiresAgeGate even when
+  // the brand itself is open (BVC S1 open, S2/S3 gated). Editors bypass.
+  if (course.requiresAgeGate && !isEditor && !(await hasAgeConsentCookie(view.tenant.slug))) {
+    return <AgeGate brand={brandName(view.tenant)} hasSafety={Boolean(view.tenant.legal.safetyUrl)} />;
+  }
+
   const [glossary, sources, prerequisites] = await Promise.all([
     listGlossary(course.id),
     listSources(course.id),

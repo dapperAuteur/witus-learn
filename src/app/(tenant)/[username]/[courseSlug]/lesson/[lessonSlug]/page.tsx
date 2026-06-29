@@ -7,6 +7,9 @@ import { LessonPlayer } from "@/components/lesson-player";
 import { MarkCompleteButton } from "@/components/mark-complete-button";
 import { CurriculumFeedback } from "@/components/curriculum-feedback";
 import { buildCrossroads } from "@/lib/crossroads";
+import { hasAgeConsentCookie } from "@/lib/age-gate";
+import { AgeGate } from "@/components/age-gate";
+import { brandName } from "@/lib/branding";
 
 type Params = {
   params: Promise<{ username: string; courseSlug: string; lessonSlug: string }>;
@@ -31,6 +34,11 @@ export default async function LessonPage({ params }: Params) {
 
   const lesson = view.lessons.find((l) => l.slug === lessonSlug);
   if (!lesson) notFound();
+
+  // Per-course (per-season) age gate. Editors bypass.
+  if (view.course.requiresAgeGate && !view.isEditor && !(await hasAgeConsentCookie(view.tenant.slug))) {
+    return <AgeGate brand={brandName(view.tenant)} hasSafety={Boolean(view.tenant.legal.safetyUrl)} />;
+  }
 
   const access = lessonAccess(view.course, lesson, {
     isEditor: view.isEditor,

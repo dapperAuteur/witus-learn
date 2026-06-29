@@ -59,7 +59,9 @@ const TENANTS: SeedTenant[] = [
     slug: "better-vice-club",
     name: "Better Vice Club",
     tagline: "A cited, audio-first history of the world's vices — coffee to khat.",
-    requiresAgeGate: true,
+    // Season 1 is a high-school curriculum and stays OPEN; the age gate is enforced
+    // PER COURSE (S2/S3 courses set requiresAgeGate) rather than across the whole brand.
+    requiresAgeGate: false,
     theme: {
       name: "Better Vice Club",
       shortName: "BVC",
@@ -175,7 +177,20 @@ async function main() {
       tenantId = row.id;
       console.log(`+ tenant ${t.slug} (${tenantId})`);
     } else {
-      console.log(`= tenant ${t.slug} already exists (${tenantId})`);
+      // Refresh the seed-owned config on re-run (e.g. the BVC age-gate flip). Flags
+      // are intentionally NOT overwritten, to preserve admin-set per-tenant flags
+      // (aiTutor, aiProvider, comingSoon, etc.).
+      await db
+        .update(schema.tenants)
+        .set({
+          name: t.name,
+          tagline: t.tagline,
+          requiresAgeGate: t.requiresAgeGate,
+          theme: t.theme,
+          legal: t.legal,
+        })
+        .where(eq(schema.tenants.id, tenantId));
+      console.log(`= tenant ${t.slug} (config refreshed)`);
     }
 
     for (const h of t.hosts) {
