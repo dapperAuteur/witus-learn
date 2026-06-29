@@ -6,7 +6,12 @@ import { lessonAccess, type LessonLockReason } from "@/lib/gating";
 import { LessonPlayer } from "@/components/lesson-player";
 import { MarkCompleteButton } from "@/components/mark-complete-button";
 import { CurriculumFeedback } from "@/components/curriculum-feedback";
+import { AssignmentSubmit } from "@/components/assignment-submit";
+import { getSubmission } from "@/db/queries/assignments";
 import { buildCrossroads } from "@/lib/crossroads";
+import { hasAgeConsentCookie } from "@/lib/age-gate";
+import { AgeGate } from "@/components/age-gate";
+import { brandName } from "@/lib/branding";
 
 type Params = {
   params: Promise<{ username: string; courseSlug: string; lessonSlug: string }>;
@@ -32,6 +37,11 @@ export default async function LessonPage({ params }: Params) {
   const lesson = view.lessons.find((l) => l.slug === lessonSlug);
   if (!lesson) notFound();
 
+  // Per-course (per-season) age gate. Editors bypass.
+  if (view.course.requiresAgeGate && !view.isEditor && !(await hasAgeConsentCookie(view.tenant.slug))) {
+    return <AgeGate brand={brandName(view.tenant)} hasSafety={Boolean(view.tenant.legal.safetyUrl)} />;
+  }
+
   const access = lessonAccess(view.course, lesson, {
     isEditor: view.isEditor,
     isEnrolled: view.isEnrolled,
@@ -44,6 +54,12 @@ export default async function LessonPage({ params }: Params) {
   const next = idx < view.lessons.length - 1 ? view.lessons[idx + 1] : null;
   const base = `/${username}/${courseSlug}`;
   const completed = view.completedLessonIds.has(lesson.id);
+
+  // Assignment lessons: load the learner's own submission for the submit box.
+  const submission =
+    lesson.lessonType === "assignment" && access.open && view.session
+      ? await getSubmission(lesson.id, view.session.user.id)
+      : null;
 
   // CYOA crossroads (semantic + cross-course are tenant-scoped inside buildCrossroads).
   const crossroads =
@@ -77,6 +93,22 @@ export default async function LessonPage({ params }: Params) {
                 </Link>
               )}
             </div>
+            {lesson.lessonType === "assignment" && view.session ? (
+              <AssignmentSubmit
+                courseId={view.course.id}
+                lessonId={lesson.id}
+                initial={
+                  submission
+                    ? {
+                        body: submission.body,
+                        status: submission.status,
+                        grade: submission.grade,
+                        feedback: submission.feedback,
+                      }
+                    : null
+                }
+              />
+            ) : null}
           </>
         ) : (
           <div className="rounded-lg border border-neutral-200 p-6 text-neutral-600 dark:border-neutral-800 dark:text-neutral-400">

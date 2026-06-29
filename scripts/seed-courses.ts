@@ -8,6 +8,7 @@ import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
+import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -88,6 +89,20 @@ async function main() {
     slug: "us-civics-101",
     course: CIVICS_101_COURSE,
     category: "Civics",
+    navigationMode: "linear",
+  });
+
+  // How to Create a Course (the meta-course for teachers) — on Learn.WitUS.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Teaching", sortOrder: 4 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-to-create-a-course",
+    course: COURSE_CREATION_COURSE,
+    category: "Teaching",
     navigationMode: "linear",
   });
 

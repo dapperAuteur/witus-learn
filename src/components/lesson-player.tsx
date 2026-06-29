@@ -33,6 +33,7 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
       );
 
     case "text":
+    case "assignment":
       return lesson.textContent ? (
         <div className="whitespace-pre-wrap leading-relaxed text-neutral-800 dark:text-neutral-200">
           {lesson.textContent}

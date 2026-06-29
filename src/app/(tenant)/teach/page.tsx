@@ -29,9 +29,9 @@ export default async function TeachPage() {
     );
   }
 
+  const owner = await isPlatformOwner(session.user.id);
   const isInstructor =
-    (await isPlatformOwner(session.user.id)) ||
-    ["instructor", "brand_admin"].includes((await getMembership(session.user.id, tenant.id)) ?? "");
+    owner || ["instructor", "brand_admin"].includes((await getMembership(session.user.id, tenant.id)) ?? "");
 
   if (!isInstructor) {
     return (
@@ -49,7 +49,30 @@ export default async function TeachPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-12">
-      <h1 className="text-2xl font-bold">Your courses</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold">Your courses</h1>
+        <div className="flex items-center gap-4 text-sm">
+          {owner ? (
+            <>
+              <Link href="/admin/live" className="underline" style={{ color: "var(--accent)" }}>
+                Live
+              </Link>
+              <Link href="/admin/paths" className="underline" style={{ color: "var(--accent)" }}>
+                Paths
+              </Link>
+              <Link href="/admin/leads" className="underline" style={{ color: "var(--accent)" }}>
+                Leads
+              </Link>
+              <Link href="/admin/domains" className="underline" style={{ color: "var(--accent)" }}>
+                Domains
+              </Link>
+            </>
+          ) : null}
+          <Link href="/teach/feedback" className="underline" style={{ color: "var(--accent)" }}>
+            Curriculum feedback →
+          </Link>
+        </div>
+      </div>
 
       <form action={createCourseAction} className="mt-6 flex flex-col gap-3 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
         <h2 className="font-semibold">New course</h2>
@@ -86,19 +109,24 @@ export default async function TeachPage() {
           <li className="py-3 text-neutral-500">No courses yet.</li>
         ) : (
           courses.map((c) => (
-            <li key={c.id} className="flex items-center justify-between py-3">
-              <Link href={`/course/${c.id}`} className="font-medium hover:underline">
+            <li key={c.id} className="flex items-center justify-between gap-3 py-3">
+              <Link href={`/teach/${c.id}`} className="font-medium hover:underline">
                 {c.title}
               </Link>
-              <span
-                className={`rounded-full px-2 py-0.5 text-xs ${
-                  c.isPublished
-                    ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
-                    : "bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200"
-                }`}
-              >
-                {c.isPublished ? "Published" : "Draft"}
-              </span>
+              <div className="flex items-center gap-3">
+                <span
+                  className={`rounded-full px-2 py-0.5 text-xs ${
+                    c.isPublished
+                      ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+                      : "bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200"
+                  }`}
+                >
+                  {c.isPublished ? "Published" : "Draft"}
+                </span>
+                <Link href={`/teach/${c.id}`} className="text-sm underline" style={{ color: "var(--accent)" }}>
+                  Manage
+                </Link>
+              </div>
             </li>
           ))
         )}
