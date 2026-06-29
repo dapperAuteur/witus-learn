@@ -169,3 +169,36 @@ export const leads = pgTable(
 );
 
 export type Lead = typeof leads.$inferSelect;
+
+// Learning paths: a curated, ordered track of courses (flags.paths). Tenant-scoped.
+export const learningPaths = pgTable(
+  "learning_paths",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    slug: text("slug").notNull(),
+    title: text("title").notNull(),
+    description: text("description"),
+    sortOrder: integer("sort_order").notNull().default(0),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [primaryKey({ columns: [t.tenantId, t.slug] }), index("learning_paths_tenant_idx").on(t.tenantId)],
+);
+
+export const learningPathCourses = pgTable(
+  "learning_path_courses",
+  {
+    pathId: uuid("path_id")
+      .notNull()
+      .references(() => learningPaths.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    sortOrder: integer("sort_order").notNull().default(0),
+  },
+  (t) => [primaryKey({ columns: [t.pathId, t.courseId] })],
+);
+
+export type LearningPath = typeof learningPaths.$inferSelect;

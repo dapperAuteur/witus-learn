@@ -57,6 +57,12 @@ export default async function TeachPage() {
               <Link href="/admin/live" className="underline" style={{ color: "var(--accent)" }}>
                 Live
               </Link>
+              <Link href="/admin/paths" className="underline" style={{ color: "var(--accent)" }}>
+                Paths
+              </Link>
+              <Link href="/admin/leads" className="underline" style={{ color: "var(--accent)" }}>
+                Leads
+              </Link>
               <Link href="/admin/domains" className="underline" style={{ color: "var(--accent)" }}>
                 Domains
               </Link>
