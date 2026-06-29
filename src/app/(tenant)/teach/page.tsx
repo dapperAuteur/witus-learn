@@ -86,19 +86,24 @@ export default async function TeachPage() {
           <li className="py-3 text-neutral-500">No courses yet.</li>
         ) : (
           courses.map((c) => (
-            <li key={c.id} className="flex items-center justify-between py-3">
-              <Link href={`/course/${c.id}`} className="font-medium hover:underline">
+            <li key={c.id} className="flex items-center justify-between gap-3 py-3">
+              <Link href={`/teach/${c.id}`} className="font-medium hover:underline">
                 {c.title}
               </Link>
-              <span
-                className={`rounded-full px-2 py-0.5 text-xs ${
-                  c.isPublished
-                    ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
-                    : "bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200"
-                }`}
-              >
-                {c.isPublished ? "Published" : "Draft"}
-              </span>
+              <div className="flex items-center gap-3">
+                <span
+                  className={`rounded-full px-2 py-0.5 text-xs ${
+                    c.isPublished
+                      ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+                      : "bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200"
+                  }`}
+                >
+                  {c.isPublished ? "Published" : "Draft"}
+                </span>
+                <Link href={`/teach/${c.id}`} className="text-sm underline" style={{ color: "var(--accent)" }}>
+                  Manage
+                </Link>
+              </div>
             </li>
           ))
         )}
