@@ -35,6 +35,33 @@ function slugify(s: string): string {
     .slice(0, 60);
 }
 
+// GUIDE-01 hard rule: NO stage tags in published lesson text. Turn each audio beat
+// marker into a descriptive heading and strip inline cues ([Beat], [Sound: ...]).
+const BEAT_HEADINGS: Record<string, string> = {
+  RECALL: "Quick recall",
+  WELCOME: "Welcome",
+  HOOK: "Why this matters",
+  TEACH: "The idea",
+  PICTURE: "Picture it",
+  "ON THE TEST": "On the test",
+  "WATCH OUT": "Watch out",
+  CHECK: "Quick check",
+};
+function cleanLessonMarkdown(md: string): string {
+  let out = md;
+  for (const [tag, heading] of Object.entries(BEAT_HEADINGS)) {
+    out = out.split(`[${tag}]`).join(`\n## ${heading}\n`);
+  }
+  out = out
+    .replace(/\[Sound:[^\]]*\]/gi, "")
+    .replace(/\[Beat\]/gi, "")
+    .replace(/\[tone\]/gi, "")
+    .replace(/ {2,}/g, " ")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+  return out;
+}
+
 interface ModuleLesson {
   n: number;
   title: string;
@@ -137,7 +164,7 @@ function buildCourse(): AuthoredCourse {
       lessons.push({
         slug: `m${m.moduleOrder}-l${l.n}-${slugify(l.title)}`.slice(0, 100),
         title: l.title,
-        body: l.lessonMarkdown,
+        body: cleanLessonMarkdown(l.lessonMarkdown),
       });
     }
     for (const q of quizzes

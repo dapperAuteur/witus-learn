@@ -44,19 +44,19 @@ Write for the ear:
     {
       slug: "lesson-structure",
       title: "3 · How to structure a lesson",
-      body: `A lesson that teaches has a shape. A reliable one:
+      body: `A lesson that teaches has a shape. Use these beats in order:
 
-- **Recall opener.** Open by recalling the previous lesson: two quick questions, a beat, then the answers. Retrieval is how memory sticks.
-- **Hook.** A concrete, real situation that shows why this matters.
-- **Teach.** The single idea, in plain words.
-- **Picture.** An analogy or mental image so it sticks (a Part 107 certificate is like a driver's license).
-- **Watch out.** The most common mistake people make here.
-- **Check.** One question, a beat, the answer. Active recall again.
-- **Key takeaways.** Three to five plain-language bullets.
+- **Recall.** Open by recalling the previous lesson: two quick questions, a pause, then the answers. Retrieval is how memory sticks.
+- **Hook.** One concrete, surprising, real example that sets up the idea.
+- **Teach.** The single idea in plain words. Translate every term: plain meaning first, the official term once in parentheses, then plain words again.
+- **Picture.** Paint the visual in words (a Part 107 certificate is like a driver's license). Never depend on the screen.
+- **On the test / in practice.** Name how the idea shows up for real, and the common trap.
+- **Check.** One question, a pause, the answer and why. Active recall again.
+- **Key Takeaways.** Three to five plain bullets. These are the exact facts the quiz will test.
 
-**Translate every term:** plain words first, the official term once in parentheses, then plain words again. Define it in the glossary too.
+**The published text is clean.** Audio scripts may carry light stage cues (Beat, Sound, tone) for whoever records the audio, but the **reading version a learner sees has NO stage tags** — no [HOOK], [TEACH], [CHECK], [Beat]. Each beat becomes a short descriptive heading instead. Stage tags in published text are an AI tell.
 
-**End with how the idea shows up in practice** (or "on the test" for exam courses).
+**Keep it short.** One concept, about eight minutes (roughly 1,150 spoken words) or fewer. If a draft needs two unrelated section headers, split it into two lessons. Teach the concrete thing before the abstract rule.
 
 **Try it.** Outline one lesson with these beats. Write the recall opener and the check question first; they keep the lesson honest.`,
     },
@@ -78,10 +78,12 @@ Write for the ear:
       body: `A quiz is a teaching tool, not a gate. Use the real schema and make every question teach.
 
 - **Schema:** \`{ passingScore: 80, questions: [{ prompt, options, correctIndex, explanation, sourceLessonSlug }] }\`. The correct answer is an index into the options.
-- **Explanations say why the right answer is right AND why each wrong answer is wrong.** That is where the learning happens.
+- **Explanations say why the right answer is right AND why each wrong answer is wrong.** The wrong-answer reasons are the most useful study material.
+- **Design believable distractors.** Wrong answers should be the mistake a real student makes, not obviously silly.
+- **Frame for the test.** Where there's an exam, name the trap answer in the lesson ("On the test, this shows up as ...").
 - **Every question links back to the lesson that teaches it** (\`sourceLessonSlug\`). After submitting, the learner sees a "Where to find this →" link. No quiz ships without it.
-- **Independently verify every answer** against the source. A wrong answer key teaches the wrong thing.
-- Aim for at least 80 percent on practice before moving on.
+- **Mix the order** so a quiz forces real recall, not pattern matching. For a large bank, serve a random subset per attempt and shuffle options (spaced recall) so retakes show new questions.
+- **Independently verify every answer** against the source. A wrong answer key teaches the wrong thing. Write original questions; never copy an exam provider's items.
 
 **Try it.** Write one multiple-choice question with three options, mark the correct index, and write an explanation that explains all three options. Then add the slug of the lesson it comes from.`,
     },
@@ -92,13 +94,15 @@ Write for the ear:
 
 **Per module:** a graded assignment plus two self-check prompts (each with a model answer). Self-checks let the learner test understanding honestly; the model answer shows them the standard.
 
+**Per module:** a short **Key Terms** lesson (that chapter's vocabulary, defined at about a sixth-grade level), placed after the content lessons.
+
 **A resources module** at the end:
 - a study plan (how to pace the course),
 - a cheat sheet (the whole course on one page),
-- a glossary reference (every official term, defined plainly),
+- the full glossary (every official term, defined plainly),
 - and lead-magnet PDFs hosted and attached as free downloads.
 
-Free downloads are both a teaching aid and a way for the course to find new learners.
+**Spaced recall with FlashLearn.** Turn the glossary terms and quiz questions into **FlashLearn AI decks** (multiple-choice built from the quiz options, plus classic front/back, capped at about 20 cards per deck) so learners review on a long-horizon spaced schedule. Free downloads are both a teaching aid and a way for the course to find new learners.
 
 **Try it.** For one module, write the graded assignment prompt and one self-check question with its model answer.`,
     },
