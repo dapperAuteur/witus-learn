@@ -44,13 +44,18 @@ export default async function CatalogHome({ searchParams }: { searchParams: Sear
             Bring your courses to the WitUS learning platform under your own brand and domain — cited,
             media-rich courses with progress tracking and built-in certificates. You teach; we host.
           </p>
-          <Link
-            href="/teach"
-            className="mt-4 inline-block min-h-11 rounded-md px-4 py-2 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2"
-            style={{ backgroundColor: "var(--accent)" }}
-          >
-            Start your school →
-          </Link>
+          <div className="mt-4 flex flex-wrap items-center gap-4">
+            <Link
+              href="/teach"
+              className="inline-block min-h-11 rounded-md px-4 py-2 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2"
+              style={{ backgroundColor: "var(--accent)" }}
+            >
+              Start your school →
+            </Link>
+            <Link href="/schools" className="text-sm font-medium underline" style={{ color: "var(--accent)" }}>
+              Explore our schools
+            </Link>
+          </div>
         </section>
       ) : null}
 
