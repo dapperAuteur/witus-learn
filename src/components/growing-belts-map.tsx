@@ -11,6 +11,7 @@ export interface MapBelt {
   id: string;
   name: string;
   color: string | null;
+  seasonNumber: number | null;
   latMin: number | null;
   latMax: number | null;
   productionCountryCodes: number[] | null;
@@ -79,7 +80,7 @@ export function GrowingBeltsMap({ belts }: { belts: MapBelt[] }) {
         aria-label="Growing belts map"
       >
         {land.features.map((f, i) => (
-          <path key={i} d={path(f) ?? undefined} fill="#eef2f7" stroke="#fff" strokeWidth={0.4} />
+          <path key={i} d={path(f) ?? undefined} fill="#dbe3ec" stroke="#a9bacb" strokeWidth={0.5} />
         ))}
         <g style={{ mixBlendMode: "multiply" }}>
           {visible.map((b) => {
@@ -102,23 +103,36 @@ export function GrowingBeltsMap({ belts }: { belts: MapBelt[] }) {
         </g>
       </svg>
 
-      <div className="mt-4 flex flex-wrap gap-2 text-xs">
-        {belts.map((b) => {
-          const on = !hidden.has(b.id);
+      <div className="mt-4 space-y-3">
+        {[1, 2, 3].map((season) => {
+          const group = belts.filter((b) => (b.seasonNumber ?? 0) === season);
+          if (group.length === 0) return null;
           return (
-            <button
-              key={b.id}
-              type="button"
-              onClick={() => toggle(b.id)}
-              aria-pressed={on}
-              title={b.description ?? undefined}
-              className={`flex items-center gap-1.5 rounded-full border px-2 py-1 ${
-                on ? "border-current" : "border-neutral-300 opacity-40 dark:border-neutral-700"
-              }`}
-            >
-              <span className="h-3 w-3 rounded-full" style={{ backgroundColor: b.color ?? "#888" }} />
-              {b.name.replace(/ belt$/, "")}
-            </button>
+            <div key={season}>
+              <p className="mb-1.5 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                Season {season}
+              </p>
+              <div className="flex flex-wrap gap-2 text-xs">
+                {group.map((b) => {
+                  const on = !hidden.has(b.id);
+                  return (
+                    <button
+                      key={b.id}
+                      type="button"
+                      onClick={() => toggle(b.id)}
+                      aria-pressed={on}
+                      title={b.description ?? undefined}
+                      className={`flex items-center gap-1.5 rounded-full border px-2 py-1 ${
+                        on ? "border-current" : "border-neutral-300 opacity-40 dark:border-neutral-700"
+                      }`}
+                    >
+                      <span className="h-3 w-3 rounded-full" style={{ backgroundColor: b.color ?? "#888" }} />
+                      {b.name.replace(/ belt$/, "")}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
           );
         })}
       </div>

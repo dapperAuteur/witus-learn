@@ -40,7 +40,7 @@ export function LanguagesMap({
   }
 
   const sel = selected ? MAP_LANGUAGES.find((l) => l.slug === selected) ?? null : null;
-  const emphasis = (slug: string) => (selected == null ? 1 : slug === selected ? 1 : 0.1);
+  const emphasis = (slug: string) => (selected == null ? 1 : slug === selected ? 1 : 0.25);
 
   return (
     <div>
@@ -51,7 +51,7 @@ export function LanguagesMap({
         aria-label="Map of language origins and their spread"
       >
         {land.features.map((f, i) => (
-          <path key={i} d={path(f) ?? undefined} fill="#eef2f7" stroke="#fff" strokeWidth={0.4} />
+          <path key={i} d={path(f) ?? undefined} fill="#dbe3ec" stroke="#a9bacb" strokeWidth={0.5} />
         ))}
 
         <g style={{ mixBlendMode: "multiply" }}>
@@ -60,7 +60,7 @@ export function LanguagesMap({
               {lang.regionCodes.map((code) => {
                 const f = countryById.get(String(code));
                 if (!f) return null;
-                return <path key={code} d={path(f) ?? undefined} fill={lang.color} fillOpacity={0.5} />;
+                return <path key={code} d={path(f) ?? undefined} fill={lang.color} fillOpacity={0.65} />;
               })}
             </g>
           ))}
