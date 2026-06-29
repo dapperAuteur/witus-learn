@@ -85,6 +85,13 @@
       "when": 1782768463863,
       "tag": "0011_whole_lionheart",
       "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1782770929214,
+      "tag": "0012_spotty_the_phantom",
+      "breakpoints": true
     }
   ]
 }

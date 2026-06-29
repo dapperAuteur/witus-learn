@@ -45,6 +45,45 @@ I learn to cook fresh vegetables every day.
 - Dis trois choses que tu apprends cette semaine. (Say three things you are learning this week.)`,
     },
     {
+      slug: "present-reguliers-exercices",
+      title: "Exercices · présent régulier",
+      exercise: {
+        instructions: "Écris la forme correcte du verbe au présent.",
+        items: [
+          {
+            prompt: "j' ___ (aider) Platypus à préparer un pique-nique",
+            answer: "aide",
+            explanation: "Verbe en -er : à « je/j' » on ajoute -e (aider → aide).",
+          },
+          {
+            prompt: "nous ___ (aider) le quartier",
+            answer: "aidons",
+            explanation: "Verbe en -er : à « nous » on ajoute -ons (aider → aidons).",
+          },
+          {
+            prompt: "tu ___ (choisir) un fruit frais",
+            answer: "choisis",
+            explanation: "Verbe en -ir : « tu » → -is (choisir → choisis).",
+          },
+          {
+            prompt: "ils ___ (choisir) des légumes",
+            answer: "choisissent",
+            explanation: "Verbe en -ir : « ils/elles » → -issent (choisir → choisissent).",
+          },
+          {
+            prompt: "vous ___ (attendre) la loutre",
+            answer: "attendez",
+            explanation: "Verbe en -re : « vous » → -ez (attendre → attendez).",
+          },
+          {
+            prompt: "Traduis : We share the food. → Nous ___ la nourriture.",
+            answer: "partageons",
+            explanation: "« partager » garde le e devant -ons pour le son doux : nous partageons.",
+          },
+        ],
+      },
+    },
+    {
       slug: "present-irreguliers",
       title: "2 · Present tense: the key irregular verbs",
       body: `A few verbs are irregular but essential. **Être** (to be) and **avoir** (to have) are the two most important — you will also use them to build the past tense.
@@ -76,6 +115,45 @@ I have a small garden where I grow herbs.
 - Décris un ami avec être et avoir. (Describe a friend using être and avoir.)`,
     },
     {
+      slug: "present-irreguliers-exercices",
+      title: "Exercices · présent irrégulier",
+      exercise: {
+        instructions: "Complète avec la forme irrégulière correcte au présent.",
+        items: [
+          {
+            prompt: "je ___ (être) en bonne santé",
+            answer: "suis",
+            explanation: "être : je suis, tu es, il est, nous sommes, vous êtes, ils sont.",
+          },
+          {
+            prompt: "j' ___ (avoir) un petit jardin",
+            answer: "ai",
+            explanation: "avoir : j'ai, tu as, il a, nous avons, vous avez, ils ont.",
+          },
+          {
+            prompt: "la loutre ___ (être) très patiente",
+            answer: "est",
+            explanation: "être à « il/elle » → est.",
+          },
+          {
+            prompt: "nous ___ (faire) un smoothie",
+            answer: "faisons",
+            explanation: "faire : nous faisons (le « ai » se prononce comme un e).",
+          },
+          {
+            prompt: "Curb et ses amis ___ (vouloir) apprendre à économiser",
+            answer: "veulent",
+            explanation: "vouloir : ils/elles veulent.",
+          },
+          {
+            prompt: "Traduis : Today we make a smoothie. → Aujourd'hui nous ___ un smoothie.",
+            answer: "faisons",
+            explanation: "« faire » à « nous » → faisons.",
+          },
+        ],
+      },
+    },
+    {
       slug: "futur-proche",
       title: "3 · The near future: aller + infinitive",
       body: `The easiest future is **aller + an infinitive** — just like English "going to". Conjugate only **aller** (vais, vas, va, allons, allez, vont) and keep the second verb in its base form.
@@ -98,6 +176,45 @@ Are you going to study nutrition with us?
 ### À toi de parler
 - Qu'est-ce que tu vas faire ce week-end ? (What are you going to do this weekend?)
 - Dis trois projets avec « aller ». (Say three plans using "aller".)`,
+    },
+    {
+      slug: "futur-proche-exercices",
+      title: "Exercices · futur proche",
+      exercise: {
+        instructions: "Complète avec « aller » conjugué + l'infinitif (ne change que « aller »).",
+        items: [
+          {
+            prompt: "demain, nous ___ cuisiner une soupe",
+            answer: "allons",
+            explanation: "aller à « nous » → allons ; l'autre verbe reste à l'infinitif.",
+          },
+          {
+            prompt: "Curb ___ partager sa recette",
+            answer: "va",
+            explanation: "aller à « il/elle » → va.",
+          },
+          {
+            prompt: "je ___ marcher autour du lac",
+            answer: "vais",
+            explanation: "aller à « je » → vais.",
+          },
+          {
+            prompt: "est-ce que tu ___ étudier la nutrition ?",
+            answer: "vas",
+            explanation: "aller à « tu » → vas.",
+          },
+          {
+            prompt: "ils ___ partager les bénéfices",
+            answer: "vont",
+            explanation: "aller à « ils/elles » → vont.",
+          },
+          {
+            prompt: "Traduis : I am going to cook. → Je ___ cuisiner.",
+            answer: "vais",
+            explanation: "futur proche : vais + infinitif.",
+          },
+        ],
+      },
     },
     {
       slug: "passe-compose",
@@ -132,6 +249,45 @@ After the meal, they took a walk around the neighborhood.
 - Raconte une chose que tu as apprise la semaine dernière. (Tell one thing you learned last week.)`,
     },
     {
+      slug: "passe-compose-exercices",
+      title: "Exercices · passé composé",
+      exercise: {
+        instructions: "Écris le passé composé : auxiliaire (avoir/être) au présent + participe passé.",
+        items: [
+          {
+            prompt: "j' ___ ___ (aider) le quartier",
+            answer: "ai aidé",
+            explanation: "avoir + participe en -é : j'ai aidé.",
+          },
+          {
+            prompt: "ils ___ ___ (faire) une promenade",
+            answer: "ont fait",
+            explanation: "avoir à « ils » → ont ; participe irrégulier faire → fait.",
+          },
+          {
+            prompt: "le kangourou ___ ___ (apprendre) aux autres à préparer un smoothie",
+            answer: "a appris",
+            explanation: "avoir à « il » → a ; participe irrégulier apprendre → appris.",
+          },
+          {
+            prompt: "Curb et ses amis ___ ___ (décider) d'étudier la nutrition",
+            answer: "ont décidé",
+            explanation: "avoir à « ils » → ont ; décider → décidé.",
+          },
+          {
+            prompt: "il ___ ___ (aller) au marché",
+            answer: "est allé",
+            explanation: "aller utilise être : il est allé (accord avec le sujet).",
+          },
+          {
+            prompt: "Traduis : They took a walk. → Ils ___ ___ une promenade.",
+            answer: "ont fait",
+            explanation: "« faire une promenade » au passé composé : ont fait.",
+          },
+        ],
+      },
+    },
+    {
       slug: "imparfait",
       title: "5 · The imperfect: how things used to be",
       body: `The **imparfait** describes the past that was ongoing, habitual, or background — "used to" and "was -ing". Take the **nous** form of the present, drop **-ons**, and add **-ais, -ais, -ait, -ions, -iez, -aient**.
@@ -159,6 +315,45 @@ The garden was always full of fresh fruit.
 - Décris ta routine d'il y a cinq ans. (Describe your routine from five years ago.)`,
     },
     {
+      slug: "imparfait-exercices",
+      title: "Exercices · imparfait",
+      exercise: {
+        instructions: "Mets le verbe à l'imparfait (radical du « nous » + -ais, -ait, -ions, -aient).",
+        items: [
+          {
+            prompt: "je ___ (travailler) au jardin",
+            answer: "travaillais",
+            explanation: "imparfait à « je » → -ais : travaillais.",
+          },
+          {
+            prompt: "nous ___ (travailler) ensemble",
+            answer: "travaillions",
+            explanation: "imparfait à « nous » → -ions : travaillions.",
+          },
+          {
+            prompt: "Curb ___ (marcher) au marché chaque matin",
+            answer: "marchait",
+            explanation: "imparfait à « il » → -ait : marchait.",
+          },
+          {
+            prompt: "les amis ___ (parler) de leurs rêves",
+            answer: "parlaient",
+            explanation: "imparfait à « ils » → -aient : parlaient.",
+          },
+          {
+            prompt: "quand il ___ (être) petit",
+            answer: "était",
+            explanation: "être est irrégulier à l'imparfait : j'étais, il était.",
+          },
+          {
+            prompt: "Traduis : The garden was always full of fruit. → Le jardin ___ toujours plein de fruits.",
+            answer: "était",
+            explanation: "imparfait de être à « il » → était.",
+          },
+        ],
+      },
+    },
+    {
       slug: "passe-compose-vs-imparfait",
       title: "6 · Passé composé vs. imperfect",
       body: `Choosing between the two past tenses is the heart of storytelling. Use the **passé composé** for a single completed event, and the **imparfait** for the ongoing scene around it.
@@ -179,6 +374,45 @@ Everyone was talking about money, but the otter changed the subject.
 ### À toi de parler
 - Raconte une courte histoire de ta journée avec les deux temps. (Tell a short story of your day using both tenses.)
 - Complète : « Je dormais quand… » (Finish: "I was sleeping when…")`,
+    },
+    {
+      slug: "passe-compose-vs-imparfait-exercices",
+      title: "Exercices · passé composé vs. imparfait",
+      exercise: {
+        instructions: "Choisis le bon temps : imparfait pour le décor, passé composé pour l'événement.",
+        items: [
+          {
+            prompt: "Pendant que nous ___ (cuisiner), Platypus est arrivé. (décor)",
+            answer: "cuisinions",
+            explanation: "Le décor en cours → imparfait : nous cuisinions.",
+          },
+          {
+            prompt: "Pendant que nous cuisinions, Platypus ___ ___ (arriver). (événement)",
+            answer: "est arrivé",
+            explanation: "L'événement qui interrompt → passé composé ; arriver utilise être : est arrivé.",
+          },
+          {
+            prompt: "Curb ___ (marcher) dans le parc quand il a vu la loutre. (décor)",
+            answer: "marchait",
+            explanation: "Action en arrière-plan → imparfait : marchait.",
+          },
+          {
+            prompt: "Curb marchait quand il ___ ___ (voir) la loutre. (événement)",
+            answer: "a vu",
+            explanation: "Événement ponctuel → passé composé ; voir → vu : a vu.",
+          },
+          {
+            prompt: "Tout le monde ___ (parler) d'argent. (décor)",
+            answer: "parlait",
+            explanation: "Scène continue → imparfait : parlait.",
+          },
+          {
+            prompt: "…mais la loutre ___ ___ (changer) de sujet. (événement)",
+            answer: "a changé",
+            explanation: "Action qui fait avancer l'histoire → passé composé : a changé.",
+          },
+        ],
+      },
     },
     {
       slug: "futur-simple",
@@ -208,6 +442,45 @@ Will you learn to cook with us?
 - Fais trois prédictions pour l'année prochaine. (Make three predictions for next year.)`,
     },
     {
+      slug: "futur-simple-exercices",
+      title: "Exercices · futur simple",
+      exercise: {
+        instructions: "Mets le verbe au futur simple (infinitif + -ai, -as, -a, -ons, -ez, -ont).",
+        items: [
+          {
+            prompt: "je ___ (travailler) demain",
+            answer: "travaillerai",
+            explanation: "futur à « je » → infinitif + -ai : travaillerai.",
+          },
+          {
+            prompt: "nous ___ (économiser) de l'argent",
+            answer: "économiserons",
+            explanation: "futur à « nous » → infinitif + -ons : économiserons.",
+          },
+          {
+            prompt: "Curb et ses amis ___ (ouvrir) un marché sain",
+            answer: "ouvriront",
+            explanation: "futur à « ils » → infinitif + -ont : ouvriront.",
+          },
+          {
+            prompt: "est-ce que tu ___ (apprendre) à cuisiner ?",
+            answer: "apprendras",
+            explanation: "futur à « tu » → radical apprendr- + -as : apprendras.",
+          },
+          {
+            prompt: "elle ___ (être) prête (radical irrégulier ser-)",
+            answer: "sera",
+            explanation: "être a le radical irrégulier ser- : il/elle sera.",
+          },
+          {
+            prompt: "Traduis : We will share the profits. → Nous ___ les bénéfices.",
+            answer: "partagerons",
+            explanation: "futur de partager à « nous » → partagerons.",
+          },
+        ],
+      },
+    },
+    {
       slug: "conditionnel",
       title: "8 · The conditional: politeness and “would”",
       body: `The **conditionnel** means "would" — for hypotheticals and politeness. Take the **future stem** and add the **imparfait** endings (-ais, -ais, -ait, -ions, -iez, -aient).
@@ -228,6 +501,45 @@ Without a budget, it would be hard to save.
 ### À toi de parler
 - Que ferais-tu avec plus de temps libre ? (What would you do with more free time?)
 - Demande quelque chose poliment avec « Pourrais-tu… ? » (Ask for something politely with "Could you…?")`,
+    },
+    {
+      slug: "conditionnel-exercices",
+      title: "Exercices · conditionnel",
+      exercise: {
+        instructions: "Mets le verbe au conditionnel (radical du futur + terminaisons de l'imparfait -ais, -ait…).",
+        items: [
+          {
+            prompt: "j' ___ (aimer) apprendre plus de recettes saines",
+            answer: "aimerais",
+            explanation: "radical futur aimer- + -ais : j'aimerais.",
+          },
+          {
+            prompt: "Curb ___ (partager) son jardin avec le quartier",
+            answer: "partagerait",
+            explanation: "radical futur partager- + -ait : partagerait.",
+          },
+          {
+            prompt: "___-tu (pouvoir) m'apprendre à faire ce smoothie ?",
+            answer: "pourrais",
+            explanation: "pouvoir a le radical irrégulier pourr- + -ais : pourrais.",
+          },
+          {
+            prompt: "sans budget, ce ___ (être) difficile d'économiser",
+            answer: "serait",
+            explanation: "être a le radical irrégulier ser- + -ait : serait.",
+          },
+          {
+            prompt: "nous ___ (aimer) un quartier en bonne santé",
+            answer: "aimerions",
+            explanation: "radical futur aimer- + -ions (« nous » à l'imparfait) : aimerions.",
+          },
+          {
+            prompt: "Traduis : Could you teach me? → ___-tu m'apprendre ?",
+            answer: "pourrais",
+            explanation: "conditionnel de pouvoir à « tu » → pourrais (politesse).",
+          },
+        ],
+      },
     },
     {
       slug: "subjonctif-present",
@@ -254,6 +566,45 @@ The garden needs to grow quickly.
 ### À toi de parler
 - Donne trois conseils de santé avec « Il est important que… ». (Give three health tips with "It is important that…".)
 - Exprime un souhait avec « Je voudrais que… ». (Express a wish with "I would like that…".)`,
+    },
+    {
+      slug: "subjonctif-present-exercices",
+      title: "Exercices · subjonctif présent",
+      exercise: {
+        instructions: "Mets le verbe au subjonctif après « que » (radical du « ils » + -e, -es, -e, -ions, -ent).",
+        items: [
+          {
+            prompt: "que je ___ (parler) doucement",
+            answer: "parle",
+            explanation: "ils parlent → radical parl- + -e : que je parle.",
+          },
+          {
+            prompt: "il est important que nous ___ (manger) plus de légumes",
+            answer: "mangions",
+            explanation: "subjonctif à « nous » → -ions ; manger garde le e : que nous mangions.",
+          },
+          {
+            prompt: "la loutre recommande que nous ___ (économiser) un peu",
+            answer: "économisions",
+            explanation: "subjonctif à « nous » → radical + -ions : que nous économisions.",
+          },
+          {
+            prompt: "Curb veut que ses amis ___ (apprendre) à cuisiner",
+            answer: "apprennent",
+            explanation: "ils apprennent → subjonctif identique à « ils » : qu'ils apprennent.",
+          },
+          {
+            prompt: "il faut que je ___ (être) prudent (irrégulier)",
+            answer: "sois",
+            explanation: "être est irrégulier au subjonctif : que je sois.",
+          },
+          {
+            prompt: "Traduis : The garden needs to grow quickly. → Il faut que le jardin ___ vite.",
+            answer: "grandisse",
+            explanation: "grandir (-ir) → ils grandissent → que le jardin grandisse.",
+          },
+        ],
+      },
     },
   ],
 };

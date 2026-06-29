@@ -138,6 +138,7 @@ export const lessons = pgTable(
 
     // Format-specific payloads (used by the Phase 4 lesson players)
     quizContent: jsonb("quiz_content"),
+    exerciseContent: jsonb("exercise_content"),
     audioChapters: jsonb("audio_chapters"),
     transcriptContent: jsonb("transcript_content"),
     mapContent: jsonb("map_content"),
@@ -156,7 +157,7 @@ export const lessons = pgTable(
     index("lessons_course_idx").on(t.courseId),
     check(
       "lessons_type_chk",
-      sql`${t.lessonType} in ('video','text','audio','slides','quiz','360video','photo_360','virtual_tour','map','assignment')`,
+      sql`${t.lessonType} in ('video','text','audio','slides','quiz','360video','photo_360','virtual_tour','map','assignment','exercise')`,
     ),
     check(
       "lessons_content_format_chk",

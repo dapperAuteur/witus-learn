@@ -43,6 +43,45 @@ I learn to cook fresh vegetables every day.
 - Di' tre cose che impari questa settimana. (Say three things you are learning this week.)`,
     },
     {
+      slug: "presente-regolari-esercizi",
+      title: "Esercizi · presente regolare",
+      exercise: {
+        instructions: "Scrivi la forma corretta del verbo al presente.",
+        items: [
+          {
+            prompt: "io ___ (aiutare)",
+            answer: "aiuto",
+            explanation: "I verbi in -are: io → -o (aiut-are → aiut-o).",
+          },
+          {
+            prompt: "tu ___ (prendere)",
+            answer: "prendi",
+            explanation: "I verbi in -ere: tu → -i (prend-ere → prend-i).",
+          },
+          {
+            prompt: "lui ___ (partire)",
+            answer: "parte",
+            explanation: "I verbi in -ire: lui/lei → -e (part-ire → part-e).",
+          },
+          {
+            prompt: "noi ___ (aiutare)",
+            answer: "aiutiamo",
+            explanation: "La desinenza noi è -iamo per tutti i gruppi.",
+          },
+          {
+            prompt: "loro ___ (prendere)",
+            answer: "prendono",
+            explanation: "I verbi in -ere: loro → -ono (prend-ere → prend-ono).",
+          },
+          {
+            prompt: "Traduci: We share — noi ___ (condividere)",
+            answer: "condividiamo",
+            explanation: "Dalla storia: 'Noi condividiamo il cibo.' noi → -iamo.",
+          },
+        ],
+      },
+    },
+    {
       slug: "presente-irregolari",
       title: "2 · Present tense: the key irregular verbs",
       body: `A few verbs are irregular but essential. **Essere** (to be) and **avere** (to have) are the two most important — you also use them to build the past tense.
@@ -74,6 +113,45 @@ I have a small garden where I grow herbs.
 - Descrivi un amico usando essere e avere. (Describe a friend using essere and avere.)`,
     },
     {
+      slug: "presente-irregolari-esercizi",
+      title: "Esercizi · presente irregolare",
+      exercise: {
+        instructions: "Scrivi la forma corretta del verbo irregolare al presente.",
+        items: [
+          {
+            prompt: "io ___ (essere)",
+            answer: "sono",
+            explanation: "Essere: io sono, tu sei, lui/lei è.",
+          },
+          {
+            prompt: "lui ___ (avere)",
+            answer: "ha",
+            explanation: "Avere: io ho, tu hai, lui/lei ha.",
+          },
+          {
+            prompt: "noi ___ (fare)",
+            answer: "facciamo",
+            explanation: "Fare: noi facciamo, voi fate, loro fanno.",
+          },
+          {
+            prompt: "loro ___ (volere)",
+            answer: "vogliono",
+            explanation: "Volere: io voglio, noi vogliamo, loro vogliono.",
+          },
+          {
+            prompt: "tu ___ (andare)",
+            answer: "vai",
+            explanation: "Andare: io vado, tu vai, lui/lei va.",
+          },
+          {
+            prompt: "Traduci: they want — loro ___ (volere)",
+            answer: "vogliono",
+            explanation: "Dalla storia: 'Curb e i suoi amici vogliono imparare a risparmiare.'",
+          },
+        ],
+      },
+    },
+    {
       slug: "presente-progressivo",
       title: "3 · The present progressive: stare + gerund",
       body: `To say what is happening **right now**, Italian uses **stare + the gerund** (the "-ing" form). Form the gerund with **-ando** (-are verbs) or **-endo** (-ere / -ire verbs).
@@ -98,6 +176,46 @@ What are you studying right now?
 ### Tocca a te
 - Cosa stai facendo adesso? (What are you doing right now?)
 - Descrivi la scena: tre cose che le persone stanno facendo. (Describe the scene: three things people are doing.)`,
+    },
+    {
+      slug: "presente-progressivo-esercizi",
+      title: "Esercizi · presente progressivo",
+      exercise: {
+        instructions:
+          "Completa con stare + gerundio. Ricorda: -are → -ando, -ere/-ire → -endo.",
+        items: [
+          {
+            prompt: "io ___ (stare) camminando",
+            answer: "sto",
+            explanation: "Stare: sto, stai, sta, stiamo, state, stanno.",
+          },
+          {
+            prompt: "noi stiamo ___ (cucinare)",
+            answer: "cucinando",
+            explanation: "Verbo in -are → gerundio -ando: cucin-are → cucin-ando.",
+          },
+          {
+            prompt: "Curb sta ___ (condividere)",
+            answer: "condividendo",
+            explanation: "Verbo in -ere → gerundio -endo: condivid-ere → condivid-endo.",
+          },
+          {
+            prompt: "tu stai ___ (studiare)",
+            answer: "studiando",
+            explanation: "Verbo in -are → gerundio -ando: studi-are → studi-ando.",
+          },
+          {
+            prompt: "loro ___ (stare) cucinando",
+            answer: "stanno",
+            explanation: "Stare, loro → stanno.",
+          },
+          {
+            prompt: "Traduci: I am walking — io sto ___ (camminare)",
+            answer: "camminando",
+            explanation: "Dalla storia: 'Io sto camminando intorno al lago.'",
+          },
+        ],
+      },
     },
     {
       slug: "passato-prossimo",
@@ -132,6 +250,46 @@ After the meal, they took a walk around the neighborhood.
 - Racconta una cosa che hai imparato la settimana scorsa. (Tell one thing you learned last week.)`,
     },
     {
+      slug: "passato-prossimo-esercizi",
+      title: "Esercizi · passato prossimo",
+      exercise: {
+        instructions:
+          "Completa con il passato prossimo (ausiliare + participio passato).",
+        items: [
+          {
+            prompt: "io ___ aiutato (avere)",
+            answer: "ho",
+            explanation: "Avere come ausiliare: io ho aiutato.",
+          },
+          {
+            prompt: "noi abbiamo ___ (imparare)",
+            answer: "imparato",
+            explanation: "Participio di imparare (-are → -ato): imparato.",
+          },
+          {
+            prompt: "loro ___ aiutato (avere)",
+            answer: "hanno",
+            explanation: "Avere, loro → hanno aiutato.",
+          },
+          {
+            prompt: "loro hanno ___ (fare)",
+            answer: "fatto",
+            explanation: "Participio irregolare: fare → fatto.",
+          },
+          {
+            prompt: "lei è ___ (andare)",
+            answer: "andata",
+            explanation: "Con essere il participio concorda: andare → andato/andata.",
+          },
+          {
+            prompt: "Traduci: we learned — noi abbiamo ___ (imparare)",
+            answer: "imparato",
+            explanation: "Dalla storia: 'Abbiamo imparato a risparmiare acqua.'",
+          },
+        ],
+      },
+    },
+    {
       slug: "imperfetto",
       title: "5 · The imperfect: how things used to be",
       body: `The **imperfetto** describes the past that was ongoing, habitual, or background — "used to" and "was -ing". It is very regular: drop **-re** from the infinitive and add **-vo, -vi, -va, -vamo, -vate, -vano**.
@@ -161,6 +319,45 @@ The garden was always full of fresh fruit.
 - Descrivi la tua routine di cinque anni fa. (Describe your routine from five years ago.)`,
     },
     {
+      slug: "imperfetto-esercizi",
+      title: "Esercizi · imperfetto",
+      exercise: {
+        instructions: "Scrivi la forma corretta del verbo all'imperfetto.",
+        items: [
+          {
+            prompt: "io ___ (lavorare)",
+            answer: "lavoravo",
+            explanation: "Imperfetto: radice + -vo, -vi, -va... (lavora-vo).",
+          },
+          {
+            prompt: "lui ___ (prendere)",
+            answer: "prendeva",
+            explanation: "Lui/lei → -va: prende-va.",
+          },
+          {
+            prompt: "noi ___ (lavorare)",
+            answer: "lavoravamo",
+            explanation: "Noi → -vamo: lavora-vamo.",
+          },
+          {
+            prompt: "loro ___ (partire)",
+            answer: "partivano",
+            explanation: "Loro → -vano: parti-vano.",
+          },
+          {
+            prompt: "lui ___ (essere)",
+            answer: "era",
+            explanation: "Essere è irregolare: ero, eri, era, eravamo, erano.",
+          },
+          {
+            prompt: "Traduci: Curb used to walk — Curb ___ (camminare)",
+            answer: "camminava",
+            explanation: "Dalla storia: 'Curb camminava al mercato ogni mattina.'",
+          },
+        ],
+      },
+    },
+    {
       slug: "passato-prossimo-vs-imperfetto",
       title: "6 · Passato prossimo vs. imperfect",
       body: `Choosing between the two past tenses is the heart of storytelling. Use the **passato prossimo** for a single completed event, and the **imperfetto** for the ongoing scene around it.
@@ -181,6 +378,46 @@ Everyone was talking about money, but the otter changed the subject.
 ### Tocca a te
 - Racconta una breve storia della tua giornata usando i due tempi. (Tell a short story of your day using both tenses.)
 - Completa: "Dormivo quando..." (Finish: "I was sleeping when...")`,
+    },
+    {
+      slug: "passato-prossimo-vs-imperfetto-esercizi",
+      title: "Esercizi · passato prossimo vs. imperfetto",
+      exercise: {
+        instructions:
+          "Scegli il tempo giusto: imperfetto per lo sfondo, passato prossimo per l'evento.",
+        items: [
+          {
+            prompt: "Mentre noi ___ (cucinare, sfondo), Platypus è arrivato.",
+            answer: "cucinavamo",
+            explanation: "Lo sfondo continuo → imperfetto: cucina-vamo.",
+          },
+          {
+            prompt: "Mentre cucinavamo, Platypus ___ (arrivare, evento, con essere).",
+            answer: "è arrivato",
+            explanation: "L'evento che interrompe → passato prossimo: è arrivato.",
+          },
+          {
+            prompt: "Curb ___ (camminare, sfondo) nel parco quando ha visto la lontra.",
+            answer: "camminava",
+            explanation: "Azione in corso → imperfetto: cammina-va.",
+          },
+          {
+            prompt: "Curb camminava quando ___ (vedere, evento, con avere) la lontra.",
+            answer: "ha visto",
+            explanation: "L'evento puntuale → passato prossimo: ha visto.",
+          },
+          {
+            prompt: "Tutti ___ (parlare, sfondo) di soldi, ma la lontra ha cambiato argomento.",
+            answer: "parlavano",
+            explanation: "Sfondo continuo → imperfetto: parla-vano.",
+          },
+          {
+            prompt: "Traduci: the otter changed — la lontra ___ (cambiare, evento, con avere)",
+            answer: "ha cambiato",
+            explanation: "Dalla storia: 'la lontra ha cambiato argomento.'",
+          },
+        ],
+      },
     },
     {
       slug: "futuro-semplice",
@@ -212,6 +449,45 @@ Will you learn to cook with us?
 - Fai tre previsioni per l'anno prossimo. (Make three predictions for next year.)`,
     },
     {
+      slug: "futuro-semplice-esercizi",
+      title: "Esercizi · futuro semplice",
+      exercise: {
+        instructions: "Scrivi la forma corretta del verbo al futuro semplice.",
+        items: [
+          {
+            prompt: "io ___ (lavorare)",
+            answer: "lavorerò",
+            explanation: "-are → la a diventa e, poi -ò: lavorer-ò.",
+          },
+          {
+            prompt: "tu ___ (prendere)",
+            answer: "prenderai",
+            explanation: "Tu → -ai: prender-ai.",
+          },
+          {
+            prompt: "noi ___ (partire)",
+            answer: "partiremo",
+            explanation: "Noi → -emo: partir-emo.",
+          },
+          {
+            prompt: "loro ___ (lavorare)",
+            answer: "lavoreranno",
+            explanation: "Loro → -anno: lavorer-anno.",
+          },
+          {
+            prompt: "io ___ (essere)",
+            answer: "sarò",
+            explanation: "Radice irregolare: essere → sar-, quindi sarò.",
+          },
+          {
+            prompt: "Traduci: we will save — noi ___ (risparmiare)",
+            answer: "risparmieremo",
+            explanation: "Dalla storia: 'Risparmieremo soldi e condivideremo i guadagni.'",
+          },
+        ],
+      },
+    },
+    {
       slug: "condizionale",
       title: "8 · The conditional: politeness and “would”",
       body: `The **condizionale** means "would" — for hypotheticals and politeness. Take the **future stem** and add **-ei, -esti, -ebbe, -emmo, -ebbero** (same irregular stems as the future: sarei, avrei, farei).
@@ -232,6 +508,46 @@ Without a budget, it would be hard to save.
 ### Tocca a te
 - Cosa faresti con più tempo libero? (What would you do with more free time?)
 - Chiedi qualcosa con gentilezza usando "Potresti...?" (Ask for something politely using "Could you...?")`,
+    },
+    {
+      slug: "condizionale-esercizi",
+      title: "Esercizi · condizionale",
+      exercise: {
+        instructions:
+          "Completa con il condizionale: radice del futuro + -ei, -esti, -ebbe, -emmo, -ebbero.",
+        items: [
+          {
+            prompt: "io ___ (essere)",
+            answer: "sarei",
+            explanation: "Radice irregolare sar- + -ei: sarei (come nel testo).",
+          },
+          {
+            prompt: "io ___ (avere)",
+            answer: "avrei",
+            explanation: "Radice irregolare avr- + -ei: avrei.",
+          },
+          {
+            prompt: "io ___ (fare)",
+            answer: "farei",
+            explanation: "Radice irregolare far- + -ei: farei.",
+          },
+          {
+            prompt: "Curb ___ (condividere) il suo orto",
+            answer: "condividerebbe",
+            explanation: "Lui/lei → -ebbe: condivider-ebbe (dalla storia).",
+          },
+          {
+            prompt: "___ (tu, potere) insegnarmi a fare quel frullato?",
+            answer: "potresti",
+            explanation: "Dalla storia: 'Potresti insegnarmi...?' (tu → -esti).",
+          },
+          {
+            prompt: "Traduci: I would like — mi ___ (piacere)",
+            answer: "piacerebbe",
+            explanation: "Dalla storia: 'Mi piacerebbe imparare più ricette sane.'",
+          },
+        ],
+      },
     },
     {
       slug: "congiuntivo-presente",
@@ -258,6 +574,46 @@ Let's hope the garden grows quickly.
 ### Tocca a te
 - Da' tre consigli di salute con "È importante che...". (Give three health tips with "It is important that...".)
 - Esprimi un desiderio con "Spero che...". (Express a wish with "I hope that...".)`,
+    },
+    {
+      slug: "congiuntivo-presente-esercizi",
+      title: "Esercizi · congiuntivo presente",
+      exercise: {
+        instructions:
+          "Completa con il congiuntivo presente (di solito dopo 'che').",
+        items: [
+          {
+            prompt: "che io ___ (parlare)",
+            answer: "parli",
+            explanation: "-are → -i: che io parli, che tu parli, che lui parli.",
+          },
+          {
+            prompt: "che noi ___ (parlare)",
+            answer: "parliamo",
+            explanation: "Noi al congiuntivo è come l'indicativo: parliamo.",
+          },
+          {
+            prompt: "che loro ___ (parlare)",
+            answer: "parlino",
+            explanation: "Loro (-are) → -ino: che loro parlino.",
+          },
+          {
+            prompt: "che io ___ (essere)",
+            answer: "sia",
+            explanation: "Irregolare: essere → che io sia.",
+          },
+          {
+            prompt: "Curb vuole che i suoi amici ___ (imparare) a cucinare",
+            answer: "imparino",
+            explanation: "Dalla storia: 'Curb vuole che i suoi amici imparino...' (-are → -ino).",
+          },
+          {
+            prompt: "Traduci: that we eat — che noi ___ (mangiare)",
+            answer: "mangiamo",
+            explanation: "Dalla storia: 'È importante che mangiamo più verdure.'",
+          },
+        ],
+      },
     },
   ],
 };
