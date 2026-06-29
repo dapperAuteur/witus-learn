@@ -15,9 +15,13 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
 
 ### Platform backlog
-- 🔧 **UI/UX overhaul** — north star chosen: **active-practice / mastery** (Duolingo + Brilliant +
-  Khan). Phase 0 prototypes in \`docs/prototypes/\` (open index.html). Next: Phase 1 (design system +
-  "Continue" home + interactive lesson shell). BAM likes much of the CentOS Academy UI/UX/DX.
+- 🔧 **UI/UX overhaul** — north star **active-practice / mastery** (Duolingo + Brilliant + Khan).
+  Decisions locked: home = **Direction B (mastery dashboard)**; lesson loop = **one idea → drill →
+  coach → next**; gamification = **light layer now** (streaks/goal/mastery), **XP + badges Phase 2**,
+  **leaderboards/leagues = per-tenant toggle**; accent = **per-tenant + disciplined**, feedback
+  colors **constant** (green/amber/red/orange), tone **warm/encouraging, per-tenant dial**.
+  Phase 0 prototypes in \`docs/prototypes/\`. **Phase 1 in branch** (\`feat/learner-home\`): design
+  system + Continue home + interactive lesson shell. BAM likes much of the CentOS Academy UI/UX/DX.
 - ⚪ **Accessibility / WCAG compliant** — the redesign (and existing surfaces) must be a11y compliant:
   semantic markup, labels, focus states, contrast, keyboard nav, reduced-motion. Bake into Phase 1+.
 - ⚪ **Offline support (PWA)** — the app should work offline. Manifest groundwork exists

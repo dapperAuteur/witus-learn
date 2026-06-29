@@ -14,7 +14,8 @@ import { AgeGate } from "@/components/age-gate";
 export default async function TenantLayout({ children }: { children: React.ReactNode }) {
   const tenant = await requireTenant();
   const accent = tenant.theme.colors?.accent ?? tenant.theme.themeColor ?? "#111111";
-  const style = { "--accent": accent } as CSSProperties;
+  const accentFg = tenant.theme.colors?.accentFg ?? "#ffffff";
+  const style = { "--accent": accent, "--accent-fg": accentFg } as CSSProperties;
 
   if (!(await hasAcknowledgedAge(tenant))) {
     return (
