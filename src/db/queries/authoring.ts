@@ -8,6 +8,7 @@ import {
   type Course,
   type CourseModule,
   type Lesson,
+  type ProfileLinks,
 } from "@/db/schema";
 import { slugify } from "@/lib/slug";
 
@@ -254,6 +255,7 @@ export interface InstructorCard {
   displayName: string | null;
   avatarUrl: string | null;
   bio: string | null;
+  links?: ProfileLinks;
 }
 
 /** Instructors with at least one published course in THIS tenant. */
@@ -284,6 +286,7 @@ export async function getInstructorProfile(
       displayName: userProfiles.displayName,
       avatarUrl: userProfiles.avatarUrl,
       bio: userProfiles.bio,
+      links: userProfiles.links,
     })
     .from(userProfiles)
     .where(eq(userProfiles.username, username))

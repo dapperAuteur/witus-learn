@@ -28,11 +28,37 @@ export default async function InstructorProfilePage({ params }: Params) {
       <Link href="/instructors" className="text-sm text-neutral-500 hover:underline">
         ← All instructors
       </Link>
-      <h1 className="mt-4 text-3xl font-bold">{profile.displayName ?? profile.username}</h1>
-      {profile.username ? <p className="text-sm text-neutral-500">@{profile.username}</p> : null}
+      <div className="mt-4 flex items-center gap-4">
+        {profile.avatarUrl ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={profile.avatarUrl} alt={profile.displayName ?? "Instructor"} className="h-16 w-16 rounded-full object-cover" />
+        ) : null}
+        <div>
+          <h1 className="text-3xl font-bold">{profile.displayName ?? profile.username}</h1>
+          {profile.username ? <p className="text-sm text-neutral-500">@{profile.username}</p> : null}
+        </div>
+      </div>
       {profile.bio ? (
         <p className="mt-3 max-w-2xl text-neutral-700 dark:text-neutral-300">{profile.bio}</p>
       ) : null}
+      {(() => {
+        const l = profile.links ?? {};
+        const items = [
+          l.website ? { label: "Website", url: l.website } : null,
+          l.portfolio ? { label: "Portfolio", url: l.portfolio } : null,
+          l.linkedin ? { label: "LinkedIn", url: l.linkedin } : null,
+          ...(l.custom ?? []),
+        ].filter((x): x is { label: string; url: string } => Boolean(x));
+        return items.length ? (
+          <div className="mt-3 flex flex-wrap gap-3 text-sm">
+            {items.map((it) => (
+              <a key={it.url} href={it.url} target="_blank" rel="noreferrer" className="underline" style={{ color: "var(--accent)" }}>
+                {it.label}
+              </a>
+            ))}
+          </div>
+        ) : null;
+      })()}
 
       <h2 className="mt-8 mb-3 text-lg font-semibold">Courses</h2>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
