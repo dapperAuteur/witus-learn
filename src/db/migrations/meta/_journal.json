@@ -78,6 +78,13 @@
       "when": 1782762511958,
       "tag": "0010_lyrical_alice",
       "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1782768463863,
+      "tag": "0011_whole_lionheart",
+      "breakpoints": true
     }
   ]
 }

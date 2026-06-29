@@ -119,6 +119,14 @@ export const tenantMemberships = pgTable(
 export type TenantRole = "learner" | "instructor" | "brand_admin";
 
 /** LMS-owned profile (global identity across tenants). Replaces CentOS `profiles`. */
+/** Instructor profile links: a few named ones + any number of custom links. */
+export interface ProfileLinks {
+  website?: string;
+  linkedin?: string;
+  portfolio?: string;
+  custom?: { label: string; url: string }[];
+}
+
 export const userProfiles = pgTable("user_profiles", {
   userId: text("user_id")
     .primaryKey()
@@ -127,6 +135,7 @@ export const userProfiles = pgTable("user_profiles", {
   displayName: text("display_name"),
   bio: text("bio"),
   avatarUrl: text("avatar_url"),
+  links: jsonb("links").$type<ProfileLinks>().notNull().default({}),
   isPlatformOwner: boolean("is_platform_owner").notNull().default(false),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),

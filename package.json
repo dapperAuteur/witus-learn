@@ -20,6 +20,7 @@
     "seed:courses": "tsx --env-file=.env.local scripts/seed-courses.ts",
     "seed:faa": "tsx --env-file=.env.local scripts/seed-faa.ts",
     "seed:bvc:real": "tsx --env-file=.env.local scripts/seed-bvc-real.ts",
+    "seed:owner": "tsx --env-file=.env.local scripts/seed-owner.ts",
     "test": "vitest run"
   },
   "dependencies": {
