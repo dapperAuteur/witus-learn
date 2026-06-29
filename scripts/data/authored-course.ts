@@ -13,6 +13,8 @@ export interface AuthoredLesson {
   /** When set, this lesson is a QUIZ. Every question must carry `explanation` +
    *  `sourceLessonSlug` (the lesson that teaches the answer) — the standard. */
   quiz?: QuizContent;
+  /** When set, this lesson is a MAP (markers/lines/polygons); body becomes context text. */
+  mapContent?: unknown;
 }
 
 export interface AuthoredCourse {

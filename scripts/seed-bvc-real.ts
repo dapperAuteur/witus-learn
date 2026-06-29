@@ -40,6 +40,7 @@ interface Row {
   text_content: string;
   is_free_preview: string;
   quiz_content: string;
+  map_content: string;
 }
 
 function buildEpisode(file: string, episodeSlug: string): AuthoredCourse | null {
@@ -59,11 +60,21 @@ function buildEpisode(file: string, episodeSlug: string): AuthoredCourse | null 
         quiz: convertCentosQuiz(JSON.parse(r.quiz_content) as CentosQuiz),
       };
     }
-    return {
+    const base: AuthoredLesson = {
       slug: `l${r.lesson_order}-${slugify(r.title)}`.slice(0, 90),
       title: r.title,
       body: cleanLessonMarkdown(r.text_content),
     };
+    // A lesson with map_content becomes a MAP lesson (producer markers + trade-route
+    // lines + production polygons), keeping its script as the context text.
+    if (r.map_content?.trim()) {
+      try {
+        return { ...base, mapContent: JSON.parse(r.map_content) };
+      } catch {
+        return base;
+      }
+    }
+    return base;
   });
 
   // Attach the episode assignment if a {slug}-ASSIGNMENT.md exists.

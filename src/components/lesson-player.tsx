@@ -1,5 +1,6 @@
 import type { Lesson } from "@/db/schema";
 import { QuizPlayer } from "./quiz-player";
+import { MapLessonContent, type MapContent } from "./map-lesson-content";
 
 // Renders a lesson by type. Text/video/audio are first-class; the richer formats
 // (slides/360/tour/map) get a basic viewer here and are deepened in later passes.
@@ -63,6 +64,24 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
       ) : (
         <Empty />
       );
+
+    case "map": {
+      const mc = lesson.mapContent as MapContent | null;
+      return (
+        <div>
+          {mc?.markers?.length || mc?.polygons?.length || mc?.lines?.length ? (
+            <MapLessonContent content={mc} />
+          ) : null}
+          {lesson.textContent ? (
+            <div className="mt-4 whitespace-pre-wrap leading-relaxed text-neutral-800 dark:text-neutral-200">
+              {lesson.textContent}
+            </div>
+          ) : mc ? null : (
+            <Empty />
+          )}
+        </div>
+      );
+    }
 
     default:
       // slides / virtual_tour / map / quiz — basic embed or a note for later phases.
