@@ -81,9 +81,11 @@ Write for the ear:
 - **Explanations say why the right answer is right AND why each wrong answer is wrong.** The wrong-answer reasons are the most useful study material.
 - **Design believable distractors.** Wrong answers should be the mistake a real student makes, not obviously silly.
 - **Frame for the test.** Where there's an exam, name the trap answer in the lesson ("On the test, this shows up as ...").
-- **Every question links back to the lesson that teaches it** (\`sourceLessonSlug\`). After submitting, the learner sees a "Where to find this →" link. No quiz ships without it.
-- **Mix the order** so a quiz forces real recall, not pattern matching. For a large bank, serve a random subset per attempt and shuffle options (spaced recall) so retakes show new questions.
+- **Every question links back to the lesson that teaches it** (\`sourceLessonSlug\`). After submitting, the learner sees a "Where to find this →" link. No quiz ships without it — it is the witus-learn standard.
+- **Mix the order** within a quiz so it forces real recall, not pattern matching. Don't block all of one sub-topic together. (On witus-learn the player shows the whole quiz, so author the mix yourself.)
 - **Independently verify every answer** against the source. A wrong answer key teaches the wrong thing. Write original questions; never copy an exam provider's items.
+
+On witus-learn a quiz lives in a lesson's \`quiz\` field (the schema above). A figure-dependent question should describe the figure in words, since the player shows text, not exam-supplement images.
 
 **Try it.** Write one multiple-choice question with three options, mark the correct index, and write an explanation that explains all three options. Then add the slug of the lesson it comes from.`,
     },
@@ -93,6 +95,8 @@ Write for the ear:
       body: `Lessons and quizzes are the spine. Two more things turn a course into something people finish.
 
 **Per module:** a graded assignment plus two self-check prompts (each with a model answer). Self-checks let the learner test understanding honestly; the model answer shows them the standard.
+
+On witus-learn, add a lesson of type **assignment** (the prompt is the lesson body). Learners write a response; you grade it (0 to 100) with feedback in the course's **Submissions** queue.
 
 **Per module:** a short **Key Terms** lesson (that chapter's vocabulary, defined at about a sixth-grade level), placed after the content lessons.
 
@@ -118,9 +122,9 @@ Write for the ear:
 4. **Add** a graded assignment plus two self-checks per module.
 5. **Build** the resources module with free downloads.
 6. **Verify and download every source;** produce the four source artifacts.
-7. **Load it additively** (create mode, scoped to the course), then verify lessons render, quizzes score, downloads resolve, and modules are in order.
+7. **Load it into witus-learn.** Two ways: author the course as a committed data module (an \`AuthoredCourse\` in \`scripts/data/\`) that the re-seedable seeder upserts by lesson slug, or build and edit it in the instructor dashboard (\`/teach\` → Manage). Either way, verify lessons render, quizzes score and link back, assignments accept a submission, and the order is right.
 
-Hand the AI the full standard (the master prompt in \`CourseCreationWithAI.md\`), not a summary. Then check its output against this course.
+Hand the AI the full standard (the GUIDE bundle in \`content/course-authoring/\`), not a summary. Then check its output against this course.
 
 **Try it.** Draft one lesson with an AI using the rules from Lessons 1 to 5, then run the AI-tell scan yourself.`,
     },

@@ -176,7 +176,7 @@ function buildCourse(): AuthoredCourse {
   return {
     title: "FAA Part 107: Pass the Remote Pilot Exam",
     description:
-      "An audio-first course to earn your commercial drone license. Learn the knowledge behind the FAA Part 107 rules, module by module, then pass the written test. Connects to FlyWitUS for pre-flight checklists and flight records.",
+      "An audio-first course to earn your commercial drone license. Learn the knowledge behind the FAA Part 107 rules, module by module, then pass the written test. Some questions reference the official FAA figure supplement (FAA-CT-8080-2H) the test uses, so keep it handy for those. Connects to FlyWitUS for pre-flight checklists and flight records.",
     lessons,
   };
 }
