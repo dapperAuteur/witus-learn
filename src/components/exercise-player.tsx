@@ -7,6 +7,7 @@ import {
   type ExerciseItem,
   type ExerciseVerdict,
 } from "@/lib/exercise";
+import { AccentBar } from "./accent-bar";
 
 // Formative production drill: type an answer, check it against the key (forgiving on
 // accents/case), reveal the answer + the rule. Self-graded, all client-side — not a
@@ -21,6 +22,7 @@ export function ExercisePlayer({ content }: { content: ExerciseContent }) {
       {content.instructions ? (
         <p className="text-neutral-600 dark:text-neutral-400">{content.instructions}</p>
       ) : null}
+      <AccentBar />
       <ol className="space-y-3">
         {content.items.map((item, i) => (
           <Item key={i} item={item} index={i} onResult={(v) => setResults((r) => ({ ...r, [i]: v }))} />

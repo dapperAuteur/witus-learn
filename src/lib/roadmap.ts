@@ -20,8 +20,10 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   coach → next**; gamification = **light layer now** (streaks/goal/mastery), **XP + badges Phase 2**,
   **leaderboards/leagues = per-tenant toggle**; accent = **per-tenant + disciplined**, feedback
   colors **constant** (green/amber/red/orange), tone **warm/encouraging, per-tenant dial**.
-  Phase 0 prototypes in \`docs/prototypes/\`. **Phase 1 in branch** (\`feat/learner-home\`): design
-  system + Continue home + interactive lesson shell. BAM likes much of the CentOS Academy UI/UX/DX.
+  Phase 0 prototypes in \`docs/prototypes/\`. **Phase 1 done** (mastery dashboard + interactive lesson
+  shell + design-system primitives). **Phase 2 in branch**: XP/levels + badges + per-tenant
+  \`gamification\` flag (off/light/full), accent-key bar, searchable glossary. Phase 3 next =
+  leaderboards surface (when a tenant sets full) + cross-surface polish. BAM likes the CentOS UI/UX.
 - ⚪ **Accessibility / WCAG compliant** — the redesign (and existing surfaces) must be a11y compliant:
   semantic markup, labels, focus states, contrast, keyboard nav, reduced-motion. Bake into Phase 1+.
 - ⚪ **Offline support (PWA)** — the app should work offline. Manifest groundwork exists
@@ -31,7 +33,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ⚪ **Rich lesson media** — first-class video (upload/Cloudinary), YouTube, Google Slides, PDF, PPT.
 - ⚪ **Media chapters + synced transcripts** — chapter markers with jump buttons; transcript that
   follows the audio/video. (\`audio_chapters\` + \`transcript_content\` columns already exist.)
-- 🔧 **Language vocab UX** — glossary was one long scroll; adding collapse + search.
+- ✅ **Language vocab UX** — glossary is now searchable + collapsible (no more long scroll).
 - ⚪ **Login/Mailgun** — root cause CONFIRMED global (fails on BVC too, not tenant-specific): the prod
   Mailgun sending domain (sandbox or from-domain ≠ MAILGUN_DOMAIN). The mailer now logs why + a
   \`[mailer:fallback]\` magic link in the server logs. Fix the Mailgun domain.
@@ -45,8 +47,8 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
   a **sentence-evaluating coach**: the learner writes a sentence and the AI checks grammar/word-order
   grounded only in the course, cites the rule, and gives a next prompt. Next: dialogues; civics depth.
-- ⚪ **Accent/special-character helper** — foreign-language exercises need keys not on a US keyboard
-  (é, ñ, ã, ç, è, ì, ò, ù…). Add a clickable accent bar to the exercise + sentence inputs.
+- ✅ **Accent/special-character helper** — clickable accent bar on the exercise + sentence inputs
+  (inserts é, ñ, ã, ç, è… into the focused field). Follow-up: per-language character sets.
 - ⚪ **BVC Season 2 missing episodes** — beer, mezcal (pairs with tequila), and one other are absent;
   add them to the S2 lineup.
 - 🟡 Remaining civics courses (Constitution, State-vs-Federal, US/state/local civics, How to Run,

@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, isFreeCourse } from "@/lib/gating";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
+import { GlossaryList } from "@/components/glossary-list";
 import { getUnmetRequired, listPrerequisites } from "@/db/queries/prerequisites";
 import { CourseActions } from "@/components/course-actions";
 import { TutorChat } from "@/components/tutor-chat";
@@ -163,21 +164,7 @@ export default async function CourseBySlugPage({ params }: Params) {
       {glossary.length > 0 ? (
         <section className="mt-10">
           <h2 className="mb-3 text-lg font-semibold">Key terms</h2>
-          <dl className="space-y-3">
-            {glossary.map((g) => (
-              <div key={g.id}>
-                <dt className="font-semibold">
-                  {g.term}
-                  {g.phonetic ? (
-                    <span className="ml-2 font-normal italic text-neutral-500">{g.phonetic}</span>
-                  ) : null}
-                </dt>
-                <dd className="whitespace-pre-wrap text-sm text-neutral-700 dark:text-neutral-300">
-                  {g.definition}
-                </dd>
-              </div>
-            ))}
-          </dl>
+          <GlossaryList terms={glossary} />
         </section>
       ) : null}
 

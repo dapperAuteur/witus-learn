@@ -22,11 +22,23 @@ function lessonHref(d: DashboardCourse, l: NextLesson) {
 }
 
 // The learner home (Direction B — mastery dashboard). Resume + Up next + course
-// mastery on the left; streak / weekly activity / milestone on the right.
-export function LearnerDashboardView({ data, name }: { data: LearnerDashboard; name: string }) {
-  const { resume, upNext, courses, streak, bestStreak, week } = data;
+// mastery on the left; streak / weekly activity / milestone on the right. The
+// gamification dose (off / light / full) is per-tenant.
+export function LearnerDashboardView({
+  data,
+  name,
+  gamification = "light",
+}: {
+  data: LearnerDashboard;
+  name: string;
+  gamification?: "off" | "light" | "full";
+}) {
+  const { resume, upNext, courses, streak, bestStreak, week, xp, level, xpIntoLevel, xpForLevel, badges } = data;
   const next = upNext[0] ?? null;
   const remaining = resume ? Math.max(0, resume.total - resume.completed) : 0;
+  const showActivity = gamification !== "off";
+  const full = gamification === "full";
+  const earnedBadges = badges.filter((b) => b.earned);
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-8">
@@ -126,26 +138,65 @@ export function LearnerDashboardView({ data, name }: { data: LearnerDashboard; n
 
         {/* RIGHT RAIL */}
         <aside className="space-y-6">
-          <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
-            <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">This week</div>
-            <div className="mt-3">
-              <WeekBars week={week} />
+          {full ? (
+            <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
+              <div className="flex items-center justify-between">
+                <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Level {level}</div>
+                <div className="text-xs font-medium tabular-nums text-neutral-500">{xp.toLocaleString()} XP</div>
+              </div>
+              <div className="mt-3">
+                <ProgressBar percent={(xpIntoLevel / xpForLevel) * 100} />
+              </div>
+              <p className="mt-2 text-xs text-neutral-500">
+                {xpForLevel - xpIntoLevel} XP to level {level + 1}
+              </p>
             </div>
-            <p className="mt-3 text-sm">
-              <strong className="tabular-nums">{week.reduce((s, d) => s + d.count, 0)}</strong>{" "}
-              <span className="text-neutral-500">lessons completed</span>
-            </p>
-          </div>
+          ) : null}
 
-          <div className="rounded-2xl border border-neutral-200 bg-white p-5 text-center dark:border-neutral-800 dark:bg-neutral-900">
-            <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Streak</div>
-            <div className="mt-2 text-4xl font-extrabold text-orange-500 tabular-nums">
-              {streak} <span aria-hidden>🔥</span>
+          {showActivity ? (
+            <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
+              <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">This week</div>
+              <div className="mt-3">
+                <WeekBars week={week} />
+              </div>
+              <p className="mt-3 text-sm">
+                <strong className="tabular-nums">{week.reduce((s, d) => s + d.count, 0)}</strong>{" "}
+                <span className="text-neutral-500">lessons completed</span>
+              </p>
             </div>
-            <p className="mt-1 text-xs text-neutral-500">
-              {streak === 0 ? "Complete a lesson today to start one." : `Best: ${bestStreak} day${bestStreak === 1 ? "" : "s"}`}
-            </p>
-          </div>
+          ) : null}
+
+          {showActivity ? (
+            <div className="rounded-2xl border border-neutral-200 bg-white p-5 text-center dark:border-neutral-800 dark:bg-neutral-900">
+              <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Streak</div>
+              <div className="mt-2 text-4xl font-extrabold text-orange-500 tabular-nums">
+                {streak} <span aria-hidden>🔥</span>
+              </div>
+              <p className="mt-1 text-xs text-neutral-500">
+                {streak === 0 ? "Complete a lesson today to start one." : `Best: ${bestStreak} day${bestStreak === 1 ? "" : "s"}`}
+              </p>
+            </div>
+          ) : null}
+
+          {full && earnedBadges.length > 0 ? (
+            <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
+              <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Badges</div>
+              <ul className="mt-3 flex flex-wrap gap-3">
+                {badges.map((b) => (
+                  <li
+                    key={b.key}
+                    title={b.label}
+                    className={`flex flex-col items-center gap-1 text-center ${b.earned ? "" : "opacity-30 grayscale"}`}
+                  >
+                    <span className="text-2xl" aria-hidden>
+                      {b.icon}
+                    </span>
+                    <span className="w-14 text-[10px] leading-tight text-neutral-500">{b.label}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
 
           {resume ? (
             <div className="rounded-2xl border border-neutral-200 p-5 dark:border-neutral-800" style={{ background: "color-mix(in srgb, var(--accent) 8%, transparent)" }}>

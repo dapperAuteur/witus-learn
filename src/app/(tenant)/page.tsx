@@ -26,7 +26,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
     const data = await getLearnerDashboard(tenant.id, session.user.id);
     if (data.courses.length > 0) {
       const name = session.user.name?.trim().split(/\s+/)[0] || "there";
-      return <LearnerDashboardView data={data} name={name} />;
+      return <LearnerDashboardView data={data} name={name} gamification={tenant.flags.gamification ?? "light"} />;
     }
   }
 

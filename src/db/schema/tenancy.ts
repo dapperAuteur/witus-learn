@@ -50,6 +50,9 @@ export interface TenantFlags {
   aiProvider?: string;
   /** Render a "launching soon" landing instead of the catalog (for pre-launch schools). */
   comingSoon?: boolean;
+  /** Gamification dose: "off" (none), "light" (streak/mastery — default), "full" (+ XP/levels/badges,
+   *  and leaderboards when that surface ships). Adult brands (e.g. BVC) may prefer "light" or "off". */
+  gamification?: "off" | "light" | "full";
 }
 
 export interface TenantStripeConfig {

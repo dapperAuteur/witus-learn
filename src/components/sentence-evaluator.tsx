@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Markdown } from "./markdown";
+import { AccentBar } from "./accent-bar";
 
 // Open production practice: the learner writes a sentence and the AI coach checks
 // grammar/structure grounded ONLY in this course (paid-gated server-side). Streams
@@ -79,6 +80,7 @@ export function SentenceEvaluator({ courseId }: { courseId: string }) {
         placeholder="Type a sentence in the language you're learning…"
         className="mt-3 w-full rounded-md border border-neutral-300 px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
       />
+      <AccentBar className="mt-2" />
       <button
         type="submit"
         disabled={busy || sentence.trim().length < 2}

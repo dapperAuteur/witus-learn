@@ -20,6 +20,13 @@ export interface DashboardCourse {
   lastActivity: Date | null;
 }
 
+export interface Badge {
+  key: string;
+  label: string;
+  icon: string;
+  earned: boolean;
+}
+
 export interface LearnerDashboard {
   courses: DashboardCourse[];
   /** The course to resume (most recently active and not yet finished), or null. */
@@ -33,6 +40,30 @@ export interface LearnerDashboard {
   /** Last 7 days, oldest → newest. */
   week: { label: string; count: number; active: boolean }[];
   daysActive: number;
+  // Derived gamification (no extra storage). Shown per the tenant's gamification flag.
+  xp: number;
+  level: number;
+  xpIntoLevel: number;
+  xpForLevel: number;
+  badges: Badge[];
+}
+
+const XP_PER_LEVEL = 500;
+
+/** XP + level + badges, all derived from existing progress — no points table to drift. */
+function computeGamification(totalCompleted: number, coursesCompleted: number, bestStreak: number) {
+  const xp = totalCompleted * 10 + coursesCompleted * 100;
+  const level = Math.floor(xp / XP_PER_LEVEL) + 1;
+  const badges: Badge[] = [
+    { key: "first-steps", label: "First steps", icon: "🌱", earned: totalCompleted >= 1 },
+    { key: "streak-3", label: "3-day streak", icon: "⚡", earned: bestStreak >= 3 },
+    { key: "on-fire", label: "7-day streak", icon: "🔥", earned: bestStreak >= 7 },
+    { key: "dedicated", label: "2-week streak", icon: "💎", earned: bestStreak >= 14 },
+    { key: "finisher", label: "Course finisher", icon: "🏅", earned: coursesCompleted >= 1 },
+    { key: "scholar", label: "Scholar · 3 courses", icon: "🎓", earned: coursesCompleted >= 3 },
+    { key: "centurion", label: "100 lessons", icon: "💯", earned: totalCompleted >= 100 },
+  ];
+  return { xp, level, xpIntoLevel: xp % XP_PER_LEVEL, xpForLevel: XP_PER_LEVEL, badges };
 }
 
 const DOW = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
@@ -72,9 +103,19 @@ export async function getLearnerDashboard(tenantId: string, userId: string): Pro
     .groupBy(sql`date_trunc('day', ${lessonProgress.completedAt})`);
   const dayCount = new Map(dayRows.map((r) => [r.day, r.count]));
   const { streak, bestStreak, week, daysActive } = computeStreaks(dayCount);
+  const totalCompleted = [...dayCount.values()].reduce((s, n) => s + n, 0);
 
   if (enrolled.length === 0) {
-    return { courses: [], resume: null, upNext: [], streak, bestStreak, week, daysActive };
+    return {
+      courses: [],
+      resume: null,
+      upNext: [],
+      streak,
+      bestStreak,
+      week,
+      daysActive,
+      ...computeGamification(totalCompleted, 0, bestStreak),
+    };
   }
 
   const courseIds = enrolled.map((e) => e.course.id);
@@ -150,7 +191,17 @@ export async function getLearnerDashboard(tenantId: string, userId: string): Pro
       .map((l) => ({ slug: l.slug as string, title: l.title, lessonType: l.lessonType }));
   }
 
-  return { courses: dashCourses, resume, upNext, streak, bestStreak, week, daysActive };
+  const coursesCompleted = dashCourses.filter((d) => d.percent === 100).length;
+  return {
+    courses: dashCourses,
+    resume,
+    upNext,
+    streak,
+    bestStreak,
+    week,
+    daysActive,
+    ...computeGamification(totalCompleted, coursesCompleted, bestStreak),
+  };
 }
 
 function computeStreaks(dayCount: Map<string, number>) {
