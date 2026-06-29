@@ -49,7 +49,12 @@ export default async function TeachPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-12">
-      <h1 className="text-2xl font-bold">Your courses</h1>
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-bold">Your courses</h1>
+        <Link href="/teach/feedback" className="text-sm underline" style={{ color: "var(--accent)" }}>
+          Curriculum feedback →
+        </Link>
+      </div>
 
       <form action={createCourseAction} className="mt-6 flex flex-col gap-3 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
         <h2 className="font-semibold">New course</h2>
