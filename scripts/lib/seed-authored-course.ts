@@ -16,10 +16,18 @@ export async function seedAuthoredCourse(
     course: AuthoredCourse;
     category?: string;
     navigationMode?: "linear" | "cyoa";
+    seasonNumber?: number;
+    requiresAgeGate?: boolean;
+    /** Delete existing lessons first (clean replacement, e.g. migrating over a sample). */
+    replaceLessons?: boolean;
   },
 ): Promise<string> {
   const { tenantId, instructorId, slug, course, category } = opts;
   const navigationMode = opts.navigationMode ?? "linear";
+  const extra = {
+    ...(opts.seasonNumber != null ? { seasonNumber: opts.seasonNumber } : {}),
+    ...(opts.requiresAgeGate != null ? { requiresAgeGate: opts.requiresAgeGate } : {}),
+  };
 
   const existing = await db
     .select({ id: schema.courses.id })
@@ -41,6 +49,7 @@ export async function seedAuthoredCourse(
         isPublished: true,
         publishedAt: new Date(),
         navigationMode,
+        ...extra,
       })
       .returning({ id: schema.courses.id });
     courseId = row.id;
@@ -48,8 +57,11 @@ export async function seedAuthoredCourse(
   } else {
     await db
       .update(schema.courses)
-      .set({ title: course.title, description: course.description })
+      .set({ title: course.title, description: course.description, ...extra })
       .where(eq(schema.courses.id, courseId));
+    if (opts.replaceLessons) {
+      await db.delete(schema.lessons).where(eq(schema.lessons.courseId, courseId));
+    }
     console.log(`= course ${slug} (refreshed)`);
   }
 
