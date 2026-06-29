@@ -10,6 +10,7 @@ import {
   primaryKey,
   text,
   timestamp,
+  unique,
   uuid,
 } from "drizzle-orm/pg-core";
 import { users } from "./auth";
@@ -104,7 +105,7 @@ export const assignmentSubmissions = pgTable(
     gradedAt: timestamp("graded_at", { withTimezone: true }),
   },
   (t) => [
-    primaryKey({ columns: [t.lessonId, t.userId] }),
+    unique("assignment_submissions_lesson_user_uq").on(t.lessonId, t.userId),
     index("assignment_submissions_lesson_idx").on(t.lessonId),
     index("assignment_submissions_tenant_status_idx").on(t.tenantId, t.status),
     check("assignment_submissions_status_chk", sql`${t.status} in ('submitted','graded')`),
@@ -163,7 +164,7 @@ export const leads = pgTable(
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [
-    primaryKey({ columns: [t.tenantId, t.email] }),
+    unique("leads_tenant_email_uq").on(t.tenantId, t.email),
     index("leads_tenant_idx").on(t.tenantId),
   ],
 );
@@ -184,7 +185,7 @@ export const learningPaths = pgTable(
     sortOrder: integer("sort_order").notNull().default(0),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (t) => [primaryKey({ columns: [t.tenantId, t.slug] }), index("learning_paths_tenant_idx").on(t.tenantId)],
+  (t) => [unique("learning_paths_tenant_slug_uq").on(t.tenantId, t.slug), index("learning_paths_tenant_idx").on(t.tenantId)],
 );
 
 export const learningPathCourses = pgTable(

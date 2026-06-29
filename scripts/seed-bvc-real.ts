@@ -92,9 +92,11 @@ async function main() {
     process.exit(1);
   }
 
-  const instructorId = "seed-bvc-faculty";
-  await db.insert(schema.users).values({ id: instructorId, email: "faculty@bettervice.club", emailVerified: true, name: "Better Vice Club" }).onConflictDoNothing();
-  await db.insert(schema.userProfiles).values({ userId: instructorId, username: "better-vice-club", displayName: "Better Vice Club" }).onConflictDoNothing();
+  // Reuse the BVC instructor the sample seed uses (same id/email/username), so this
+  // is idempotent and never collides on the unique email.
+  const instructorId = "seed-bvc-instructor";
+  await db.insert(schema.users).values({ id: instructorId, email: "faculty@bettervice.club", emailVerified: true, name: "BVC Faculty" }).onConflictDoNothing();
+  await db.insert(schema.userProfiles).values({ userId: instructorId, username: "bvc-faculty", displayName: "BVC Faculty" }).onConflictDoNothing();
   await db.insert(schema.tenantMemberships).values({ tenantId, userId: instructorId, role: "instructor" }).onConflictDoNothing();
 
   const files = readdirSync(CONTENT)
