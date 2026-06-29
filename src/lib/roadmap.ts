@@ -15,8 +15,11 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
 
 ### Platform backlog
-- ❓ **UI/UX overhaul** — research who does LMS UX best; BAM likes much of the CentOS Academy
-  UI/UX/DX. Improve on it.
+- 🔧 **UI/UX overhaul** — north star chosen: **active-practice / mastery** (Duolingo + Brilliant +
+  Khan). Phase 0 prototypes in \`docs/prototypes/\` (open index.html). Next: Phase 1 (design system +
+  "Continue" home + interactive lesson shell). BAM likes much of the CentOS Academy UI/UX/DX.
+- ⚪ **Accessibility / WCAG compliant** — the redesign (and existing surfaces) must be a11y compliant:
+  semantic markup, labels, focus states, contrast, keyboard nav, reduced-motion. Bake into Phase 1+.
 - ⚪ **Offline support (PWA)** — the app should work offline. Manifest groundwork exists
   (\`TenantTheme.manifestUrl\`); needs a service worker + offline shell.
 - ⚪ **Offline video/audio** — media should play offline. CentOS had a solution — review and port it.
