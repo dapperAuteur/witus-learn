@@ -1,5 +1,8 @@
 import type { Lesson } from "@/db/schema";
+import type { ExerciseContent } from "@/lib/exercise";
 import { QuizPlayer } from "./quiz-player";
+import { ExercisePlayer } from "./exercise-player";
+import { SentenceEvaluator } from "./sentence-evaluator";
 import { MapLessonContent, type MapContent } from "./map-lesson-content";
 import { Markdown } from "./markdown";
 
@@ -50,6 +53,18 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
         passingScore: c.passingScore,
       };
       return <QuizPlayer courseId={lesson.courseId} lessonId={lesson.id} content={safe} />;
+    }
+
+    case "exercise": {
+      const ex = lesson.exerciseContent as ExerciseContent | null;
+      if (!ex?.items?.length) return <Empty />;
+      return (
+        <div className="space-y-4">
+          {lesson.textContent ? <Markdown>{lesson.textContent}</Markdown> : null}
+          <ExercisePlayer content={ex} />
+          <SentenceEvaluator courseId={lesson.courseId} />
+        </div>
+      );
     }
 
     case "photo_360":

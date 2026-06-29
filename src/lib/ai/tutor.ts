@@ -201,6 +201,55 @@ export async function askTutor(
   return { answer: asText(res.content), usedLessons: titles, lenses };
 }
 
+/**
+ * Sentence-evaluation coach (for language courses). The student submits a sentence
+ * they wrote; the coach checks grammar/structure GROUNDED ONLY in the course material,
+ * gives a correction + the rule (citing the lesson), and a next practice prompt.
+ * Emits the same NDJSON shape as streamTutor (meta, then token events). Course-scoped.
+ */
+export async function streamSentenceEvaluation(
+  course: Course,
+  sentence: string,
+  opts: TutorOptions = {},
+): Promise<ReadableStream<Uint8Array>> {
+  configureLangSmith();
+  const provider = resolveProvider(opts.provider);
+  const { material, titles } = await retrieveCourseMaterial(course, sentence);
+  const model = withFallback((m) => m, { temperature: 0.2, maxTokens: 700, provider });
+  const system =
+    `You are a warm, patient language coach for the course "${course.title}". A student wrote a ` +
+    `sentence as practice. Evaluate it using ONLY the COURSE MATERIAL below; never invent rules, ` +
+    `vocabulary, or sources. Structure your reply:\n` +
+    `1. A one-line verdict (correct / almost / needs work).\n` +
+    `2. The corrected sentence in the target language (omit if already correct).\n` +
+    `3. A short, friendly explanation of any grammar or word-order issue, naming the lesson that ` +
+    `teaches the rule.\n` +
+    `4. End with ONE short next practice prompt. Keep it encouraging. Do not use em-dashes.`;
+  const messages = [
+    { role: "system" as const, content: system },
+    { role: "user" as const, content: `COURSE MATERIAL:\n${material}\n\nSTUDENT SENTENCE: ${sentence}` },
+  ];
+  const encoder = new TextEncoder();
+
+  return new ReadableStream<Uint8Array>({
+    async start(controller) {
+      const send = (obj: unknown) => controller.enqueue(encoder.encode(`${JSON.stringify(obj)}\n`));
+      send({ type: "meta", usedLessons: titles });
+      try {
+        const stream = await model.stream(messages, runConfig(course, "tutor:evaluate"));
+        for await (const chunk of stream) {
+          const t = asText((chunk as { content?: unknown }).content);
+          if (t) send({ type: "token", text: t });
+        }
+      } catch {
+        send({ type: "error", message: "The coach could not finish the feedback." });
+      }
+      send({ type: "done" });
+      controller.close();
+    },
+  });
+}
+
 /** Streaming variant: emits NDJSON — a meta event, then synthesizer token events. */
 export async function streamTutor(
   course: Course,

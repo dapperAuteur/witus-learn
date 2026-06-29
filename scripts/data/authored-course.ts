@@ -4,6 +4,7 @@
 // upserts lessons by (courseId, slug) so IDs — and thus embeddings/progress — survive.
 
 import type { QuizContent } from "../../src/lib/quiz";
+import type { ExerciseContent } from "../../src/lib/exercise";
 
 export interface AuthoredLesson {
   slug: string;
@@ -13,6 +14,8 @@ export interface AuthoredLesson {
   /** When set, this lesson is a QUIZ. Every question must carry `explanation` +
    *  `sourceLessonSlug` (the lesson that teaches the answer) — the standard. */
   quiz?: QuizContent;
+  /** When set, this lesson is an EXERCISE (fill-in production drill); body is intro context. */
+  exercise?: ExerciseContent;
   /** When set, this lesson is a MAP (markers/lines/polygons); body becomes context text. */
   mapContent?: unknown;
 }

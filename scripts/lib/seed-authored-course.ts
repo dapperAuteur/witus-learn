@@ -70,10 +70,15 @@ export async function seedAuthoredCourse(
     courseId: courseId as string,
     title: l.title,
     slug: l.slug,
-    lessonType: (l.quiz ? "quiz" : l.mapContent ? "map" : "text") as "quiz" | "map" | "text",
+    lessonType: (l.quiz ? "quiz" : l.exercise ? "exercise" : l.mapContent ? "map" : "text") as
+      | "quiz"
+      | "exercise"
+      | "map"
+      | "text",
     contentFormat: "markdown" as const,
     textContent: l.body ?? null,
     quizContent: l.quiz ?? null,
+    exerciseContent: l.exercise ?? null,
     mapContent: l.mapContent ?? null,
     sortOrder: i + 1,
     isFreePreview: i === 0,
