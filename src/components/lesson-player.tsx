@@ -1,6 +1,7 @@
 import type { Lesson } from "@/db/schema";
 import { QuizPlayer } from "./quiz-player";
 import { MapLessonContent, type MapContent } from "./map-lesson-content";
+import { Markdown } from "./markdown";
 
 // Renders a lesson by type. Text/video/audio are first-class; the richer formats
 // (slides/360/tour/map) get a basic viewer here and are deepened in later passes.
@@ -35,13 +36,7 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
 
     case "text":
     case "assignment":
-      return lesson.textContent ? (
-        <div className="whitespace-pre-wrap leading-relaxed text-neutral-800 dark:text-neutral-200">
-          {lesson.textContent}
-        </div>
-      ) : (
-        <Empty />
-      );
+      return lesson.textContent ? <Markdown>{lesson.textContent}</Markdown> : <Empty />;
 
     case "quiz": {
       const c = lesson.quizContent as {
@@ -73,8 +68,8 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
             <MapLessonContent content={mc} />
           ) : null}
           {lesson.textContent ? (
-            <div className="mt-4 whitespace-pre-wrap leading-relaxed text-neutral-800 dark:text-neutral-200">
-              {lesson.textContent}
+            <div className="mt-4">
+              <Markdown>{lesson.textContent}</Markdown>
             </div>
           ) : mc ? null : (
             <Empty />

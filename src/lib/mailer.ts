@@ -40,12 +40,25 @@ export async function sendEmail({
     url: env.MAILGUN_REGION === "eu" ? "https://api.eu.mailgun.net" : "https://api.mailgun.net",
   });
 
-  await mg.messages.create(env.MAILGUN_DOMAIN as string, {
-    from: sender ?? `Learn.WitUS <no-reply@${env.MAILGUN_DOMAIN}>`,
-    to: [to],
-    subject,
-    text,
-    ...(html ? { html } : {}),
-    ...(replyTo ? { "h:Reply-To": replyTo } : {}),
-  });
+  try {
+    await mg.messages.create(env.MAILGUN_DOMAIN as string, {
+      from: sender ?? `Learn.WitUS <no-reply@${env.MAILGUN_DOMAIN}>`,
+      to: [to],
+      subject,
+      text,
+      ...(html ? { html } : {}),
+      ...(replyTo ? { "h:Reply-To": replyTo } : {}),
+    });
+  } catch (err) {
+    // Surface WHY (so the operator can fix the Mailgun config — common causes: a
+    // sandbox domain that only sends to authorized recipients, or a `from` domain
+    // that is not the verified MAILGUN_DOMAIN), and log the content as a stopgap so a
+    // magic link can still be copied from the server logs while the config is fixed.
+    const detail = err instanceof Error ? err.message : String(err);
+    console.error(
+      `[mailer] Mailgun send FAILED (to=${to}, from=${sender ?? `no-reply@${env.MAILGUN_DOMAIN}`}, domain=${env.MAILGUN_DOMAIN}): ${detail}`,
+    );
+    console.log(`\n[mailer:fallback] Email NOT delivered — content (copy any link here to continue):\n  Subject: ${subject}\n  To: ${to}\n  ${text}\n`);
+    throw new Error(`Email send failed: ${detail}`);
+  }
 }

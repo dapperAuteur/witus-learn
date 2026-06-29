@@ -32,6 +32,7 @@ export default async function ExplorePage() {
     id: b.id,
     name: b.name,
     color: b.color,
+    seasonNumber: b.seasonNumber,
     latMin: b.latMin,
     latMax: b.latMax,
     productionCountryCodes: b.productionCountryCodes,

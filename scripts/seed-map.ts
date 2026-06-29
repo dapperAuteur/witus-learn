@@ -60,6 +60,15 @@ const COMMODITIES: C[] = [
   { ep: 21, season: 3, name: "The Full Spectrum", geo: "Indianapolis, Indiana", lat: 39.8, lon: -86.2, isHome: true, summary: "The three-season synthesis: geography, history, and power." },
 ];
 
+// One distinct color per commodity (by episode), for the GROWING-BELTS map so each
+// commodity's band/region is distinguishable. (Episode Origins keeps its season
+// colors.) Grouped into season-ish hue families so a season still reads at a glance.
+const BELT_PALETTE = [
+  "#6F4E37", "#4E7A3A", "#3D2314", "#E0A33E", "#8BC34A", "#D2691E", "#3FA7A7", // S1
+  "#E1A100", "#722F37", "#B8860B", "#9C5A3C", "#A8B820", "#7FA8C9", "#5B5B5B", // S2
+  "#7B5E3B", "#2FA02F", "#9090A0", "#A39A5B", "#C840A0", "#6B8E23", "#C9A227", // S3
+] as const;
+
 async function main() {
   const t = await db
     .select({ id: schema.tenants.id })
@@ -141,6 +150,8 @@ async function main() {
     .from(schema.mapCommodities)
     .where(eq(schema.mapCommodities.tenantId, tenantId));
   const byName = new Map(all.map((c) => [c.name, c]));
+  // Distinct per-commodity belt color (by episode), so belts are distinguishable.
+  const beltColorByName = new Map(COMMODITIES.map((cm) => [cm.name, BELT_PALETTE[cm.ep - 1] ?? "#888888"]));
 
   console.log("Belts:");
   for (let i = 0; i < BELTS.length; i++) {
@@ -148,13 +159,18 @@ async function main() {
     const c = byName.get(b.commodity);
     if (!c) continue;
     const beltName = `${b.commodity} belt`;
+    const beltColor = beltColorByName.get(b.commodity) ?? "#888888";
     const exists = await db
       .select({ id: schema.mapBelts.id })
       .from(schema.mapBelts)
       .where(and(eq(schema.mapBelts.tenantId, tenantId), eq(schema.mapBelts.name, beltName)))
       .limit(1);
     if (exists[0]) {
-      console.log(`  = ${beltName}`);
+      await db
+        .update(schema.mapBelts)
+        .set({ color: beltColor, seasonNumber: c.season })
+        .where(eq(schema.mapBelts.id, exists[0].id));
+      console.log(`  ~ ${beltName} (recolored)`);
       continue;
     }
     await db.insert(schema.mapBelts).values({
@@ -162,7 +178,7 @@ async function main() {
       commodityId: c.id,
       name: beltName,
       seasonNumber: c.season,
-      color: c.color,
+      color: beltColor,
       latMin: b.latMin,
       latMax: b.latMax,
       productionCountryCodes: b.codes,
