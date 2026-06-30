@@ -15,7 +15,11 @@ import { HOW_TO_RUN_COURSE } from "./data/how-to-run-course";
 import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading-marketing-course";
 import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
+import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting-course";
+import { AI_L2_DETECTING_AI_COURSE } from "./data/ai-l2-detecting-ai-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
+import { AI_B1_PROMPT_ENGINEERING_COURSE } from "./data/ai-b1-prompt-engineering-course";
+import { AI_B2_AGENTS_COURSE } from "./data/ai-b2-agents-automations-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 
@@ -219,6 +223,22 @@ async function main() {
     category: "AI & Technology",
     navigationMode: "linear",
   });
+  // L2: Detecting AI — Deepfakes, Synthetic Media & Provenance — the second rung of the
+  // AI literacy mastery ladder, in the same "AI & Technology" category and builds on
+  // AI Literacy (F1). The throughline is the DURABLE skill: provenance + lateral reading
+  // (who made it / where it came from / who corroborates it), since "spot the artifact"
+  // tips age out fast. Honest about limits: no detector is reliable, and the liar's
+  // dividend cuts both ways. Distinct from "Spotting Misleading Marketing" (that course is
+  // ad/marketing deception; this one is AI-generated/synthetic MEDIA). Cited to C2PA,
+  // Google DeepMind SynthID, Partnership on AI, WITNESS, the FBI/IC3, NIST, and Stanford COR.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-l2-detecting-ai",
+    course: AI_L2_DETECTING_AI_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
 
   // Learning How to Learn — the study-skills foundation, on Learn.WitUS
   // (cross-cutting; the meta-skill that makes every other course land). Cited to
@@ -259,6 +279,43 @@ async function main() {
     instructorId,
     slug: "building-with-ai",
     course: AI_BUILDING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+
+  // Advanced Prompting & Reasoning (L1) — first rung of the AI mastery LADDER's LITERACY
+  // track, in the shared "AI & Technology" category. Builds on F1 (the recommended prereq)
+  // and is for EVERYONE, not just developers: deepens prompting + reasoning while staying
+  // tool-agnostic and NOT code-heavy — distinct from the Builder track's B1 (deep-technical).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-l1-advanced-prompting",
+    course: AI_L1_ADVANCED_PROMPTING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // Prompt Engineering in Depth (B1) — the Builder-track mastery rung that builds on F2
+  // (Building with AI). Same "AI & Technology" category. TECHNICAL: assumes the learner
+  // writes code and calls model APIs — deliberately deeper + more system-oriented than L1.
+  // Trust DNA: treat model output as untrusted; evaluate, don't vibe-check.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-b1-prompt-engineering",
+    course: AI_B1_PROMPT_ENGINEERING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // Building AI Agents & Automations (B2) — the technical builder-track step up from F2
+  // (Building with AI, the recommended prerequisite). Same "AI & Technology" category.
+  // Goes deep on agents: the loop, tool calling, workflow-vs-agent, orchestration,
+  // memory/state, multi-step automations, guardrails & least-privilege, eval/debug, ship.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-b2-agents-automations",
+    course: AI_B2_AGENTS_COURSE,
     category: "AI & Technology",
     navigationMode: "linear",
   });
