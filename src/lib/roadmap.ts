@@ -84,9 +84,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **BVC mezcal map point** — mezcal now has its own Commodity Map origin (Oaxaca / Santiago
   Matatlán), distinct from tequila's Jalisco (real CentOS geo data; cited Ep 12 + migration note).
   Beer (ep 8) and the tequila-mezcal course already exist, so **Season 2 (eps 8–14) is complete**.
-- 🟡 Civics — ✅ **US Constitution 101**, ✅ **State vs Federal Power**, ✅ **How to Run for Office**
-  all built (cited; National Archives / Constitution Annotated / FEC / NCSL / Ballotpedia; case quotes
-  verbatim; state-varying rules flagged, not asserted as universal). Remaining: US/state/local civics,
+- 🟡 Civics — ✅ **US Constitution 101**, ✅ **State vs Federal Power**, ✅ **How to Run for Office**,
+  ✅ **US, State & Local Government: Who Does What** (the practical civic-engagement angle — what each
+  LEVEL does day-to-day + how to engage; cited USA.gov / 2022 Census of Governments / NCSL / NLC /
+  NACo / EPA; local structure flagged as state-varying, not asserted as universal). All built (cited;
+  National Archives / Constitution Annotated / FEC / NCSL / Ballotpedia; case quotes verbatim;
+  state-varying rules flagged, not asserted as universal). Remaining:
   Help a Campaign, Spotting Misleading Marketing + per-state template + US map (IN/AZ/AR).
 - ✅ **Learning How to Learn** (cited cog-sci — retrieval/spacing/interleaving/metacognition; points to
   FlashLearn) + ✅ **Intro to Robotics & STEAM** (ElementaryMBA, cited NASA/JPL/micro:bit/Arduino/Code.org).
