@@ -8,6 +8,7 @@ import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
+import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
@@ -103,6 +104,20 @@ async function main() {
     slug: "how-to-create-a-course",
     course: COURSE_CREATION_COURSE,
     category: "Teaching",
+    navigationMode: "linear",
+  });
+
+  // AI Literacy (F1) — the flagship AI foundation, on Learn.WitUS (cross-cutting).
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "AI & Technology", sortOrder: 5 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-literacy",
+    course: AI_LITERACY_COURSE,
+    category: "AI & Technology",
     navigationMode: "linear",
   });
 
