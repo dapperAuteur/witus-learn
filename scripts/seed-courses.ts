@@ -11,6 +11,7 @@ import { CIVICS_101_COURSE } from "./data/civics-101-course";
 import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
 import { STATE_VS_FEDERAL_COURSE } from "./data/state-vs-federal-course";
 import { HOW_TO_RUN_COURSE } from "./data/how-to-run-course";
+import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
@@ -142,6 +143,21 @@ async function main() {
     instructorId,
     slug: "how-to-run-for-office",
     course: HOW_TO_RUN_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // How to Help a Campaign — practical + strictly non-partisan (HOW to help any campaign,
+  // candidate, ballot measure, or cause — never WHO to help). Same Civics category and cited
+  // standard. Authoritative-values rule is load-bearing: volunteer time is generally NOT a
+  // contribution, but in-kind (money/resources) is; federal contribution limits are FEC-set
+  // and inflation-indexed, while state/local limits + disclosure + ballot-measure rules VARY
+  // by state — so the course names the rule + points to the source (FEC, USA.gov, Vote.gov,
+  // NCSL, Ballotpedia) rather than asserting one number as universal.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "help-a-campaign",
+    course: HELP_A_CAMPAIGN_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
