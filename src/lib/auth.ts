@@ -5,26 +5,9 @@ import { magicLink } from "better-auth/plugins/magic-link";
 import { db, schema } from "@/db/client";
 import { userProfiles } from "@/db/schema";
 import { env } from "./env";
+import { rewriteOrigin } from "./auth-url";
 import { sendEmail } from "./mailer";
 import { getTenantByHost } from "./tenant";
-
-/** Rewrite a URL's origin to the request host so magic links land on the tenant
- *  domain the user signed in from (sessions are per-domain; no cross-brand SSO). */
-function rewriteOrigin(
-  url: string,
-  host: string | null | undefined,
-  proto: string | null | undefined,
-): string {
-  if (!host) return url;
-  try {
-    const parsed = new URL(url);
-    parsed.host = host;
-    parsed.protocol = `${proto ?? (host.includes("localhost") ? "http" : "https")}:`;
-    return parsed.toString();
-  } catch {
-    return url;
-  }
-}
 
 /** Static, env-driven base origins (the platform's own URLs + any explicit extras). */
 function staticTrustedOrigins(): string[] {
