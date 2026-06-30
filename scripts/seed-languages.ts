@@ -107,21 +107,31 @@ function buildCsvLessons(
 }
 
 async function ensureInstructor(tenantId: string): Promise<string> {
-  // BAM is the instructor (not a synthetic "WitUS Languages" account).
-  const id = "bam";
-  await db
-    .insert(schema.users)
-    .values({ id, email: "bam@awews.com", emailVerified: true, name: "BAM" })
-    .onConflictDoNothing();
+  // BAM is the instructor. Reuse the real account if bam@awews.com already exists (BAM has
+  // logged in, so an auth id owns it) — inserting the synthetic "bam" id would conflict on
+  // the email and the membership FK would fail. Mirrors seed-courses.ts.
+  const who = { id: "bam", email: "bam@awews.com", username: "bam", displayName: "BAM" };
+  const existing = await db
+    .select({ id: schema.users.id })
+    .from(schema.users)
+    .where(eq(schema.users.email, who.email))
+    .limit(1);
+  const userId = existing[0]?.id ?? who.id;
+  if (!existing[0]) {
+    await db
+      .insert(schema.users)
+      .values({ id: who.id, email: who.email, emailVerified: true, name: who.displayName })
+      .onConflictDoNothing();
+  }
   await db
     .insert(schema.userProfiles)
-    .values({ userId: id, username: "bam", displayName: "BAM" })
+    .values({ userId, username: who.username, displayName: who.displayName })
     .onConflictDoNothing();
   await db
     .insert(schema.tenantMemberships)
-    .values({ tenantId, userId: id, role: "instructor" })
+    .values({ tenantId, userId, role: "instructor" })
     .onConflictDoNothing();
-  return id;
+  return userId;
 }
 
 async function main() {
