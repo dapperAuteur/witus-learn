@@ -44,11 +44,18 @@ const COMMODITIES: C[] = [
   { ep: 5, season: 1, name: "Guayusa", geo: "Ecuadorian Amazon", lat: 0, lon: -77, summary: "Caffeinated holly leaf and Kichwa dream-sharing tradition." },
   { ep: 6, season: 1, name: "Kola Nut", geo: "West Africa (Nigeria, Ghana)", lat: 7, lon: 3, summary: "The original caffeinated ingredient in Coca-Cola." },
   { ep: 7, season: 1, name: "Kava", geo: "Vanuatu, Pacific Islands", lat: -16, lon: 168, summary: "A root drink of Pacific Island governance ceremonies." },
-  { ep: 8, season: 2, name: "Beer", geo: "Mesopotamia (modern Iraq)", lat: 32, lon: 44, summary: "The Hymn to Ninkasi, ~1800 BCE: the world's oldest beer recipe." },
+  { ep: 8, season: 2, name: "Beer", geo: "Mesopotamia (modern Iraq)", lat: 32, lon: 44, slug: "beer", summary: "The Hymn to Ninkasi, ~1800 BCE: the world's oldest beer recipe." },
   { ep: 9, season: 2, name: "Wine", geo: "Caucasus (Georgia and Armenia)", lat: 41, lon: 45, summary: "Oldest confirmed winemaking, ~6000 BCE." },
   { ep: 10, season: 2, name: "Whiskey", geo: "Scotland and Ireland", lat: 56, lon: -4, summary: "One of the most legally protected geographic designations." },
   { ep: 11, season: 2, name: "Rum", geo: "Caribbean (Barbados)", lat: 13.5, lon: -57, summary: "The economic foundation of the triangular trade." },
-  { ep: 12, season: 2, name: "Tequila", geo: "Jalisco, Mexico", lat: 21, lon: -103, summary: "Producible legally in only five Mexican states." },
+  { ep: 12, season: 2, name: "Tequila", geo: "Jalisco, Mexico", lat: 21, lon: -103, slug: "tequila-mezcal", summary: "Tequila DO (1974): blue agave from Jalisco + parts of 4 other states." },
+  // Mezcal shares Episode 12's course ("Tequila & Mezcal — Heart of the Agave") but gets
+  // its OWN map point — a distinct origin (Oaxaca, not Jalisco). Coordinates = Santiago
+  // Matatlán, "world capital of mezcal," inside the Oaxaca-centered Mezcal DO. Geographic
+  // data from the CentOS source `bvc-episode-12-tequila-mezcal-polygons.csv` (oaxaca-mezcal-do).
+  // Source: BVC Season 2, Episode 12 "Tequila & Mezcal." NOTE: this curriculum moved from
+  // CentenarianOS to Learn.WitUS — its in-app location may have changed since recording.
+  { ep: 12, season: 2, name: "Mezcal", geo: "Oaxaca, Mexico (Santiago Matatlán)", lat: 16.9, lon: -96.4, slug: "tequila-mezcal", summary: "Mezcal DO (1994): agave spirit across Oaxaca + 8 states; Zapotec & Mixtec traditional producers. Part of Ep 12 with tequila." },
   { ep: 13, season: 2, name: "Sake", geo: "Japan", lat: 35, lon: 137, summary: "Wabi-sabi aesthetics shape how sake is understood." },
   { ep: 14, season: 2, name: "The Toast (Synthesis)", geo: "Lynchburg, Tennessee", lat: 35.3, lon: -86.4, summary: "Nathan 'Nearest' Green's erased role in Jack Daniel's whiskey." },
   { ep: 15, season: 3, name: "Tobacco", geo: "Virginia and the American South", lat: 37.5, lon: -79, summary: "The first great American colonial commodity." },
