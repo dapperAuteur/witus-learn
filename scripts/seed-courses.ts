@@ -16,6 +16,7 @@ import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading
 import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting-course";
+import { AI_L2_DETECTING_AI_COURSE } from "./data/ai-l2-detecting-ai-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
@@ -217,6 +218,22 @@ async function main() {
     instructorId,
     slug: "ai-literacy",
     course: AI_LITERACY_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // L2: Detecting AI — Deepfakes, Synthetic Media & Provenance — the second rung of the
+  // AI literacy mastery ladder, in the same "AI & Technology" category and builds on
+  // AI Literacy (F1). The throughline is the DURABLE skill: provenance + lateral reading
+  // (who made it / where it came from / who corroborates it), since "spot the artifact"
+  // tips age out fast. Honest about limits: no detector is reliable, and the liar's
+  // dividend cuts both ways. Distinct from "Spotting Misleading Marketing" (that course is
+  // ad/marketing deception; this one is AI-generated/synthetic MEDIA). Cited to C2PA,
+  // Google DeepMind SynthID, Partnership on AI, WITNESS, the FBI/IC3, NIST, and Stanford COR.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-l2-detecting-ai",
+    course: AI_L2_DETECTING_AI_COURSE,
     category: "AI & Technology",
     navigationMode: "linear",
   });
