@@ -15,6 +15,7 @@ import { HOW_TO_RUN_COURSE } from "./data/how-to-run-course";
 import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading-marketing-course";
 import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
+import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
@@ -259,6 +260,22 @@ async function main() {
     instructorId,
     slug: "building-with-ai",
     course: AI_BUILDING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+
+  // Advanced Prompting & Reasoning (L1) — first rung of the AI mastery LADDER's
+  // LITERACY track, in the shared "AI & Technology" category. Builds on F1 (AI
+  // Literacy, the recommended prerequisite) and is for EVERYONE, not just developers:
+  // it deepens prompting + reasoning skill while staying tool-agnostic and NOT
+  // code-heavy. That keeps it distinct from the Builder track's B1, which is the
+  // deep-technical, code-forward sibling (APIs, structured output, evals). Same cited
+  // standard + trust DNA (verify, cite, reasoning ≠ truth) as the other AI courses.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-l1-advanced-prompting",
+    course: AI_L1_ADVANCED_PROMPTING_COURSE,
     category: "AI & Technology",
     navigationMode: "linear",
   });
