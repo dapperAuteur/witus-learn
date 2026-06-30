@@ -17,10 +17,17 @@ export function isApex(host: string): boolean {
   return host.replace(/\.$/, "").split(".").length <= 2;
 }
 
-/** The DNS record the admin must add at their registrar for this host. */
+/** The DNS records that work for this host. Use whatever your DNS host (e.g. Vercel)
+ *  shows for YOUR domain — these are the common Vercel defaults. An apex domain can use
+ *  either the A record or a CNAME (Vercel supports both); a subdomain uses the CNAME. */
 export function dnsRecordsFor(host: string): DnsRecord[] {
   const clean = host.toLowerCase().replace(/\.$/, "");
-  if (isApex(clean)) return [{ type: "A", name: "@", value: APEX_IP }];
+  if (isApex(clean)) {
+    return [
+      { type: "A", name: "@", value: APEX_IP },
+      { type: "CNAME", name: "@", value: CNAME_TARGET },
+    ];
+  }
   const sub = clean.split(".").slice(0, -2).join("."); // the label(s) before the apex
   return [{ type: "CNAME", name: sub || clean, value: CNAME_TARGET }];
 }
@@ -30,24 +37,38 @@ export interface DnsStatus {
   detail: string;
 }
 
-/** Live DNS check: does this host actually point where it should yet? */
+/** Is the domain working? The reliable signal is whether it actually SERVES the site
+ *  (true for an A record OR a CNAME — we don't care which the admin chose). DNS detail
+ *  is a fallback when it isn't reachable yet. */
 export async function checkDomainDns(host: string): Promise<DnsStatus> {
   const clean = host.toLowerCase().replace(/\.$/, "");
+
+  // 1. Reachability: does https://host respond at all? (works for A or CNAME setups.)
   try {
-    if (isApex(clean)) {
-      const a = await dns.resolve4(clean).catch(() => [] as string[]);
-      return a.includes(APEX_IP)
-        ? { ok: true, detail: `A record → ${APEX_IP}` }
-        : { ok: false, detail: a.length ? `points to ${a.join(", ")} (expected ${APEX_IP})` : "no A record found yet" };
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 4000);
+    const res = await fetch(`https://${clean}/`, { method: "HEAD", redirect: "manual", signal: controller.signal }).catch(
+      () => null,
+    );
+    clearTimeout(timer);
+    if (res && res.status < 500) return { ok: true, detail: "domain is live and responding" };
+  } catch {
+    /* fall through to DNS detail */
+  }
+
+  // 2. Not reachable yet — report what DNS currently shows so the admin can debug.
+  try {
+    const [a, cname] = await Promise.all([
+      dns.resolve4(clean).catch(() => [] as string[]),
+      dns.resolveCname(clean).catch(() => [] as string[]),
+    ]);
+    if (a.includes(APEX_IP) || cname.some((c) => /vercel/i.test(c))) {
+      return { ok: true, detail: cname[0] ? `CNAME → ${cname[0]}` : `A → ${a.join(", ")}` };
     }
-    const cname = await dns.resolveCname(clean).catch(() => [] as string[]);
-    if (cname.some((t) => t.replace(/\.$/, "").includes(CNAME_TARGET))) {
-      return { ok: true, detail: `CNAME → ${CNAME_TARGET}` };
+    if (a.length || cname.length) {
+      return { ok: false, detail: `resolves to ${cname[0] ?? a.join(", ")} — not the app yet (DNS may still be propagating)` };
     }
-    // Some providers flatten a CNAME to A records — accept the apex IP too.
-    const a = await dns.resolve4(clean).catch(() => [] as string[]);
-    if (a.includes(APEX_IP)) return { ok: true, detail: `A record → ${APEX_IP}` };
-    return { ok: false, detail: cname.length ? `CNAME → ${cname.join(", ")}` : "no record found yet" };
+    return { ok: false, detail: "no DNS record found yet" };
   } catch {
     return { ok: false, detail: "not resolving yet" };
   }

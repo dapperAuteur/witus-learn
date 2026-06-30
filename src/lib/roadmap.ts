@@ -52,14 +52,16 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ FAA Part 107; ✅ BVC real 21-episode content (lessons + quizzes + maps + Coffee assignment).
-- 🔧 **Health/fitness courses migrated from CentOS** (in branch \`feat/health-courses-migration\`) —
-  NASM CPT/CES/CNC, "Read Your Body's Data" (5-week tracker-data longevity guide), and ECS
-  (Endocannabinoid System) Foundations + Fitness → Learn.WitUS (\`pnpm seed:health\`); the Speedway
-  Indy-500 docuseries (13 episodes) → ElementaryMBA (\`pnpm seed:speedway\`). Stage tags stripped,
-  APA \`## Sources\` kept. **Needs a vetting pass before publish: ECS lectures came from an older
-  video-script format (em-dashes/AI-tell residue), CPT \`## Sources\` is boilerplate not real APA,
-  and 3 ECS sub-courses (Nutrition partial, Neuroscience md-only) + Speedway S2/S3 are not yet
-  imported.** See the branch's operator task for the full list.
+- ✅ **Health/fitness courses migrated from CentOS + sectioned** — NASM CPT/CES/CNC, "Read Your
+  Body's Data", ECS (Foundations/Fitness/Nutrition/Neuroscience) → Learn.WitUS; Speedway → ElementaryMBA.
+  Gen-from-CentOS (\`pnpm gen:health\`), each course now has chapter/module/episode SECTIONS with
+  section-scoped quizzes (≤10 Q). ECS copy-edited (em-dashes/AI-tells removed). \`pnpm seed:health\`/\`seed:speedway\`.
+- 🟡 **Vet before publish:** (1) **Speedway** full copy-edit + best-practices pass (Ep1 em-dashes etc.) —
+  it was only lightly checked; (2) **NASM CPT** real per-lesson APA (currently boilerplate \`## Sources\`);
+  (3) **ECS accuracy flags** — "500M years of evolution" + a CECD sentence. Not-yet-imported: ECS
+  Nutrition/Neuroscience are now in; **Speedway S2/S3** still outline-only.
+- 🟡 **"Read Your Body's Data" needs a metrics tracker** — it logs daily numbers inside CentOS's
+  "metrics page" (which witus lacks). Build a tracker, rewrite to external tools, or keep on CentOS.
 - 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
   a **sentence-evaluating coach**: the learner writes a sentence and the AI checks grammar/word-order
   grounded only in the course, cites the rule, and gives a next prompt. Next: dialogues; civics depth.

@@ -3,6 +3,28 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
+// Click-to-copy chip — minimises transcription errors when entering DNS values.
+function Copyable({ value, className = "" }: { value: string; className?: string }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <button
+      type="button"
+      onClick={() => {
+        navigator.clipboard?.writeText(value);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1200);
+      }}
+      title="Click to copy"
+      className={`group inline-flex items-center gap-1 rounded px-1 hover:bg-neutral-200 dark:hover:bg-neutral-800 ${className}`}
+    >
+      <span className="break-all">{value}</span>
+      <span className="text-[10px] text-neutral-400 group-hover:text-neutral-600 dark:group-hover:text-neutral-300">
+        {copied ? "copied ✓" : "⧉"}
+      </span>
+    </button>
+  );
+}
+
 interface Tenant {
   id: string;
   slug: string;
@@ -109,7 +131,7 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
                   return (
                     <li key={d.id} className="py-2 text-sm">
                       <div className="flex flex-wrap items-center gap-2">
-                        <span className="font-mono">{d.host}</span>
+                        <Copyable value={d.host} className="font-mono" />
                         {d.isPrimary ? (
                           <span className="rounded-full bg-green-100 px-2 py-0.5 text-xs text-green-800 dark:bg-green-900 dark:text-green-200">primary</span>
                         ) : (
@@ -134,14 +156,22 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
                           ) : null}
                           {info.records?.length ? (
                             <div className="mt-2">
-                              <p className="text-xs text-neutral-500">Add this record at your domain/DNS provider:</p>
-                              <table className="mt-1 w-full font-mono text-xs">
+                              <p className="text-xs text-neutral-500">
+                                Add a record at your DNS provider (click a value to copy).{" "}
+                                {info.records.length > 1 ? "An apex domain works with EITHER the A or the CNAME — " : ""}
+                                use whatever your host (e.g. Vercel) shows for this domain.
+                              </p>
+                              <table className="mt-1 w-full text-xs">
                                 <thead className="text-neutral-400">
                                   <tr className="text-left"><th className="pr-3 font-normal">Type</th><th className="pr-3 font-normal">Name</th><th className="font-normal">Value</th></tr>
                                 </thead>
-                                <tbody>
+                                <tbody className="font-mono">
                                   {info.records.map((rec, i) => (
-                                    <tr key={i}><td className="pr-3">{rec.type}</td><td className="pr-3">{rec.name}</td><td className="break-all">{rec.value}</td></tr>
+                                    <tr key={i}>
+                                      <td className="pr-3 align-top">{rec.type}</td>
+                                      <td className="pr-2 align-top"><Copyable value={rec.name} /></td>
+                                      <td className="align-top"><Copyable value={rec.value} /></td>
+                                    </tr>
                                   ))}
                                 </tbody>
                               </table>
