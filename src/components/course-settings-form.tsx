@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { estimatedFee, estimatedNet } from "@/lib/fees";
 
 export interface CourseSettings {
   title: string;
@@ -14,6 +15,8 @@ export interface CourseSettings {
   allowCrossCourseCyoa: boolean;
   isSequential: boolean;
   isFeatured: boolean;
+  priceType: "free" | "one_time" | "subscription";
+  price: number;
 }
 
 // Edit course settings (PATCH /api/courses/[id]). isFeatured is platform-owner only
@@ -84,6 +87,42 @@ export function CourseSettingsForm({
             <option value="scheduled">Scheduled</option>
           </select>
         </div>
+      </div>
+
+      <div className="rounded-md border border-neutral-200 p-3 dark:border-neutral-800">
+        <label className="text-sm font-medium" htmlFor="cs-pricetype">Pricing</label>
+        <div className="mt-1 grid gap-3 sm:grid-cols-2">
+          <select
+            id="cs-pricetype"
+            value={v.priceType}
+            onChange={(e) => set("priceType", e.target.value as CourseSettings["priceType"])}
+            className={field}
+          >
+            <option value="free">Free</option>
+            <option value="one_time">One-time purchase</option>
+            <option value="subscription">Subscription</option>
+          </select>
+          {v.priceType !== "free" ? (
+            <div className="flex items-center gap-2">
+              <span className="text-neutral-500">$</span>
+              <input
+                type="number"
+                min={0}
+                step="0.01"
+                aria-label="Price in dollars"
+                value={v.price}
+                onChange={(e) => set("price", Number(e.target.value) || 0)}
+                className={field}
+              />
+            </div>
+          ) : null}
+        </div>
+        {v.priceType !== "free" && v.price > 0 ? (
+          <p className="mt-2 text-xs text-neutral-500">
+            You keep about <strong>${estimatedNet(v.price).toFixed(2)}</strong> per sale (after an estimated{" "}
+            ${estimatedFee(v.price).toFixed(2)} processor fee — actual varies by card/region).
+          </p>
+        ) : null}
       </div>
 
       <fieldset className="space-y-2 text-sm">
