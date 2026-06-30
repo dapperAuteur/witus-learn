@@ -26,8 +26,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   dashboard restyle). **Phase 3c done** (login card + schools cards + skip-to-content link; lang/alt/
   labels/aria/focus-visible verified). **Only remaining:** final **accent/tone values** (deferred to
   BAM) + any deeper a11y polish. The active-practice redesign is essentially complete. BAM likes CentOS.
-- ⚪ **Accessibility / WCAG compliant** — the redesign (and existing surfaces) must be a11y compliant:
-  semantic markup, labels, focus states, contrast, keyboard nav, reduced-motion. Bake into Phase 1+.
+- 🔧 **Accessibility / WCAG** — global \`:focus-visible\` ring + \`prefers-reduced-motion\` shipped;
+  labeled copy controls; \`role=status\` aria-live form feedback. Remaining: full contrast audit +
+  a comprehensive keyboard/screen-reader sweep across every surface.
 - ⚪ **Offline support (PWA)** — the app should work offline. Manifest groundwork exists
   (\`TenantTheme.manifestUrl\`); needs a service worker + offline shell.
 - ⚪ **Offline video/audio** — media should play offline. CentOS had a solution — review and port it.
