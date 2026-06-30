@@ -19,6 +19,7 @@ import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting
 import { AI_L2_DETECTING_AI_COURSE } from "./data/ai-l2-detecting-ai-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { AI_B1_PROMPT_ENGINEERING_COURSE } from "./data/ai-b1-prompt-engineering-course";
+import { AI_B2_AGENTS_COURSE } from "./data/ai-b2-agents-automations-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 
@@ -282,6 +283,7 @@ async function main() {
     navigationMode: "linear",
   });
 
+<<<<<<< HEAD
   // Advanced Prompting & Reasoning (L1) — first rung of the AI mastery LADDER's LITERACY
   // track, in the shared "AI & Technology" category. Builds on F1 (the recommended prereq)
   // and is for EVERYONE, not just developers: deepens prompting + reasoning while staying
@@ -303,6 +305,18 @@ async function main() {
     instructorId,
     slug: "ai-b1-prompt-engineering",
     course: AI_B1_PROMPT_ENGINEERING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // Building AI Agents & Automations (B2) — the technical builder-track step up from F2
+  // (Building with AI, the recommended prerequisite). Same "AI & Technology" category.
+  // Goes deep on agents: the loop, tool calling, workflow-vs-agent, orchestration,
+  // memory/state, multi-step automations, guardrails & least-privilege, eval/debug, ship.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-b2-agents-automations",
+    course: AI_B2_AGENTS_COURSE,
     category: "AI & Technology",
     navigationMode: "linear",
   });
