@@ -47,7 +47,9 @@ const TENANTS: SeedTenant[] = [
       colors: { accent: "#2563eb", accentFg: "#ffffff" },
     },
     legal: { termsUrl: "/terms", privacyUrl: "/privacy" },
-    flags: { recruiting: true, paths: false, commodityMap: false },
+    // ecosystemSso: show "Sign in with WitUS" on this WitUS-branded base tenant.
+    // White-label tenants (bettervice.club, elementarymba.com) deliberately omit it.
+    flags: { recruiting: true, paths: false, commodityMap: false, ecosystemSso: true },
     hosts: [
       { host: "learn.witus.online", isPrimary: true },
       { host: "learn.localhost", isPrimary: false },
