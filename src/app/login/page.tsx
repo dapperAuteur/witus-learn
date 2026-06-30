@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { resolveTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { MagicLinkForm } from "@/components/magic-link-form";
@@ -15,6 +16,19 @@ export default async function LoginPage() {
   const accentFg = tenant?.theme.colors?.accentFg ?? "#ffffff";
   const style = { "--accent": accent, "--accent-fg": accentFg } as CSSProperties;
 
+  // Show "Sign in with WitUS" on WitUS-branded surfaces (any *.witus.online host
+  // + localhost in dev), or where a tenant explicitly opts in via flags.ecosystemSso.
+  // White-label tenants on their OWN domains (bettervice.club, elementarymba.com)
+  // never match, so they stay isolated — no per-tenant flag needed.
+  const h = await headers();
+  const host = (h.get("x-forwarded-host") ?? h.get("host") ?? "").toLowerCase().split(":")[0];
+  const isWitusHost =
+    host === "witus.online" ||
+    host.endsWith(".witus.online") ||
+    host === "localhost" ||
+    host.endsWith(".localhost");
+  const showWitusSso = isWitusHost || tenant?.flags.ecosystemSso === true;
+
   return (
     <main style={style} className="flex min-h-screen items-center justify-center px-6 py-12">
       <div className="w-full max-w-sm">
@@ -27,7 +41,7 @@ export default async function LoginPage() {
           <div className="mt-6">
             <MagicLinkForm />
           </div>
-          {tenant?.flags.ecosystemSso ? (
+          {showWitusSso ? (
             <div className="mt-4">
               <p className="mb-3 text-center text-xs uppercase tracking-wide text-neutral-400">or</p>
               <WitusSsoButton />
