@@ -81,11 +81,13 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Next: civics depth.
 - ✅ **Accent/special-character helper** — clickable accent bar on the exercise + sentence inputs
   (inserts é, ñ, ã, ç, è… into the focused field). Follow-up: per-language character sets.
-- ⚪ **BVC Season 2 missing episodes** — beer, mezcal (pairs with tequila), and one other are absent;
-  add them to the S2 lineup.
-- 🟡 Civics — ✅ **US Constitution 101** built (cited; National Archives + Constitution Annotated +
-  Marbury v. Madison, all verbatim/verified). Remaining: State-vs-Federal, US/state/local civics, How
-  to Run, Help a Campaign, Spotting Misleading Marketing + per-state template + US map (IN/AZ/AR).
+- ✅ **BVC mezcal map point** — mezcal now has its own Commodity Map origin (Oaxaca / Santiago
+  Matatlán), distinct from tequila's Jalisco (real CentOS geo data; cited Ep 12 + migration note).
+  Beer (ep 8) and the tequila-mezcal course already exist, so **Season 2 (eps 8–14) is complete**.
+- 🟡 Civics — ✅ **US Constitution 101**, ✅ **State vs Federal Power**, ✅ **How to Run for Office**
+  all built (cited; National Archives / Constitution Annotated / FEC / NCSL / Ballotpedia; case quotes
+  verbatim; state-varying rules flagged, not asserted as universal). Remaining: US/state/local civics,
+  Help a Campaign, Spotting Misleading Marketing + per-state template + US map (IN/AZ/AR).
 - ✅ **Learning How to Learn** (cited cog-sci — retrieval/spacing/interleaving/metacognition; points to
   FlashLearn) + ✅ **Intro to Robotics & STEAM** (ElementaryMBA, cited NASA/JPL/micro:bit/Arduino/Code.org).
   Remaining: Ewe/Twi/Igbo (needs native review); per-episode BVC assignments; record audio.
