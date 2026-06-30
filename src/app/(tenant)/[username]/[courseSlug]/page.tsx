@@ -5,6 +5,7 @@ import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, isFreeCourse } from "@/lib/gating";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
 import { GlossaryList } from "@/components/glossary-list";
+import { ProgressBar } from "@/components/progress-bits";
 import { getUnmetRequired, listPrerequisites } from "@/db/queries/prerequisites";
 import { CourseActions } from "@/components/course-actions";
 import { TutorChat } from "@/components/tutor-chat";
@@ -49,6 +50,11 @@ export default async function CourseBySlugPage({ params }: Params) {
     .filter(Boolean)
     .join(" · ");
   const base = `/${username}/${courseSlug}`;
+  const completedCount = lessons.filter((l) => completedLessonIds.has(l.id)).length;
+  const percent = lessons.length > 0 ? Math.round((completedCount / lessons.length) * 100) : 0;
+  const showProgress = (view.isEnrolled || completedCount > 0) && lessons.length > 0;
+  const typeIcon = (t: string) =>
+    ({ text: "📖", exercise: "✍️", quiz: "🧠", map: "🗺️", video: "🎬", "360video": "🎬", audio: "🎧", assignment: "📝" })[t] ?? "📄";
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
@@ -66,6 +72,18 @@ export default async function CourseBySlugPage({ params }: Params) {
       </p>
       {course.description ? (
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
+      ) : null}
+
+      {showProgress ? (
+        <div className="mt-5 rounded-xl border border-neutral-200 p-4 dark:border-neutral-800">
+          <div className="flex items-center justify-between text-sm">
+            <span className="font-medium">{percent === 100 ? "Completed 🎉" : "Your progress"}</span>
+            <span className="tabular-nums text-neutral-500">
+              {completedCount} of {lessons.length} lessons
+            </span>
+          </div>
+          <ProgressBar percent={percent} className="mt-2" />
+        </div>
       ) : null}
 
       {view.session && course.isPublished ? (
@@ -120,7 +138,7 @@ export default async function CourseBySlugPage({ params }: Params) {
       {lessons.length === 0 ? (
         <p className="text-neutral-500">No lessons yet.</p>
       ) : (
-        <ol className="divide-y divide-neutral-200 dark:divide-neutral-800">
+        <ol className="space-y-2">
           {lessons.map((lesson, i) => {
             const access = lessonAccess(course, lesson, {
               isEditor,
@@ -129,32 +147,46 @@ export default async function CourseBySlugPage({ params }: Params) {
               orderedLessonIds,
             });
             const done = completedLessonIds.has(lesson.id);
-            return (
-              <li key={lesson.id} className="flex items-center justify-between gap-3 py-3">
-                <div className="flex items-center gap-3">
-                  <span className="w-6 text-sm text-neutral-400">{i + 1}</span>
-                  {access.open ? (
-                    <Link href={`${base}/lesson/${lesson.slug}`} className="font-medium hover:underline">
-                      {lesson.title}
-                    </Link>
-                  ) : (
-                    <span className="font-medium text-neutral-500">{lesson.title}</span>
-                  )}
+            const inner = (
+              <>
+                <span
+                  aria-hidden
+                  className={`grid h-9 w-9 shrink-0 place-items-center rounded-lg text-lg ${
+                    done ? "bg-green-100 dark:bg-green-900/40" : "bg-neutral-100 dark:bg-neutral-800"
+                  }`}
+                >
+                  {done ? <span className="text-base text-green-600 dark:text-green-400">✓</span> : typeIcon(lesson.lessonType)}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <span className={`block truncate font-medium ${access.open ? "" : "text-neutral-500"}`}>
+                    {i + 1}. {lesson.title}
+                  </span>
+                  <span className="text-xs capitalize text-neutral-400">{lesson.lessonType.replace("_", " ")}</span>
                 </div>
-                <div className="flex items-center gap-2 text-xs">
+                <div className="flex shrink-0 items-center gap-2 text-xs">
                   {lesson.isFreePreview ? (
-                    <span className="rounded-full bg-neutral-200 px-2 py-0.5 dark:bg-neutral-700">
-                      Free preview
-                    </span>
+                    <span className="rounded-full bg-neutral-200 px-2 py-0.5 dark:bg-neutral-700">Free preview</span>
                   ) : null}
-                  {done ? (
-                    <span className="text-green-700 dark:text-green-400">✓</span>
-                  ) : access.open ? null : (
-                    <span aria-label="locked" title="Locked">
-                      🔒
-                    </span>
-                  )}
+                  {!access.open ? (
+                    <span aria-label="Locked" title="Locked">🔒</span>
+                  ) : null}
                 </div>
+              </>
+            );
+            return (
+              <li key={lesson.id}>
+                {access.open ? (
+                  <Link
+                    href={`${base}/lesson/${lesson.slug}`}
+                    className="flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 transition hover:border-neutral-300 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800 dark:hover:border-neutral-700"
+                  >
+                    {inner}
+                  </Link>
+                ) : (
+                  <div className="flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 opacity-70 dark:border-neutral-800">
+                    {inner}
+                  </div>
+                )}
               </li>
             );
           })}
