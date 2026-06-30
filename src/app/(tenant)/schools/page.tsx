@@ -48,9 +48,14 @@ export default async function SchoolsPage() {
               ) : null}
             </>
           );
-          const cls = "rounded-lg border border-neutral-200 p-4 dark:border-neutral-800";
+          const cls =
+            "rounded-2xl border border-neutral-200 bg-white p-5 transition dark:border-neutral-800 dark:bg-neutral-900";
           return s.host ? (
-            <a key={s.slug} href={`https://${s.host}`} className={`${cls} block hover:border-current`}>
+            <a
+              key={s.slug}
+              href={`https://${s.host}`}
+              className={`${cls} block hover:border-neutral-300 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:border-neutral-700`}
+            >
               {inner}
             </a>
           ) : (

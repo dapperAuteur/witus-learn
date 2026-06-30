@@ -23,8 +23,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Phases 0–2 **done** (prototypes; mastery dashboard + lesson shell + primitives; XP/badges +
   gamification flag + accent bar + searchable glossary). **Phase 3a done** (CourseCard w/ progress,
   my-courses grid, weekly leaderboard). **Phase 3b done** (course-page syllabus + instructor
-  dashboard restyle). **Remaining (Phase 3c):** roll the design across the last surfaces (schools,
-  catalog header, auth pages) + a full WCAG a11y audit + final accent/tone values. BAM likes CentOS.
+  dashboard restyle). **Phase 3c done** (login card + schools cards + skip-to-content link; lang/alt/
+  labels/aria/focus-visible verified). **Only remaining:** final **accent/tone values** (deferred to
+  BAM) + any deeper a11y polish. The active-practice redesign is essentially complete. BAM likes CentOS.
 - ⚪ **Accessibility / WCAG compliant** — the redesign (and existing surfaces) must be a11y compliant:
   semantic markup, labels, focus states, contrast, keyboard nav, reduced-motion. Bake into Phase 1+.
 - ⚪ **Offline support (PWA)** — the app should work offline. Manifest groundwork exists

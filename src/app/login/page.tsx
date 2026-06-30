@@ -11,18 +11,23 @@ export const metadata: Metadata = { title: "Sign in" };
 export default async function LoginPage() {
   const tenant = await resolveTenant();
   const accent = tenant?.theme.colors?.accent ?? tenant?.theme.themeColor ?? "#111111";
-  const style = { "--accent": accent } as CSSProperties;
+  const accentFg = tenant?.theme.colors?.accentFg ?? "#ffffff";
+  const style = { "--accent": accent, "--accent-fg": accentFg } as CSSProperties;
 
   return (
-    <main style={style} className="mx-auto flex min-h-screen max-w-sm flex-col justify-center gap-6 px-6">
-      <div>
-        <p className="text-sm uppercase tracking-widest" style={{ color: "var(--accent)" }}>
-          {brandName(tenant)}
-        </p>
-        <h1 className="mt-1 text-2xl font-bold">Sign in</h1>
-        <p className="mt-1 text-sm text-neutral-500">No password — we email you a one-time link.</p>
+    <main style={style} className="flex min-h-screen items-center justify-center px-6 py-12">
+      <div className="w-full max-w-sm">
+        <div className="rounded-2xl border border-neutral-200 bg-white p-7 shadow-sm dark:border-neutral-800 dark:bg-neutral-900">
+          <p className="text-sm font-medium uppercase tracking-widest" style={{ color: "var(--accent)" }}>
+            {brandName(tenant)}
+          </p>
+          <h1 className="mt-1 text-2xl font-bold">Sign in</h1>
+          <p className="mt-1 text-sm text-neutral-500">No password — we email you a one-time link.</p>
+          <div className="mt-6">
+            <MagicLinkForm />
+          </div>
+        </div>
       </div>
-      <MagicLinkForm />
     </main>
   );
 }
