@@ -121,6 +121,7 @@ export async function seedAuthoredCourse(
           title: sql`excluded.title`,
           textContent: sql`excluded.text_content`,
           quizContent: sql`excluded.quiz_content`,
+          exerciseContent: sql`excluded.exercise_content`,
           mapContent: sql`excluded.map_content`,
           sortOrder: sql`excluded.sort_order`,
           moduleId: sql`excluded.module_id`,

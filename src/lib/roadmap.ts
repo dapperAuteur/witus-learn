@@ -69,7 +69,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   "metrics page" (which witus lacks). Build a tracker, rewrite to external tools, or keep on CentOS.
 - 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
   a **sentence-evaluating coach**: the learner writes a sentence and the AI checks grammar/word-order
-  grounded only in the course, cites the rule, and gives a next prompt. Next: dialogues; civics depth.
+  grounded only in the course, cites the rule, and gives a next prompt.
+- ✅ **Language DIALOGUE lessons** (es/fr/pt/it) — a "Dialogues" section per course with 3 realistic
+  scenarios each (café order, asking directions, introductions): speaker-labeled transcript + English
+  gloss + vocab list, a forgiving fill-in exercise, and a section quiz. Reuses only already-taught
+  tenses (present, ser/estar·être/avoir·essere·ser/estar, ir+inf / futur proche, polite conditional).
+  Wiring fix: \`seed:languages\` now routes authored courses through \`seedAuthoredCourse\` so
+  \`section\`/\`exercise\`/\`quiz\` lessons actually persist (the old inline path only seeded text bodies).
+  Next: civics depth.
 - ✅ **Accent/special-character helper** — clickable accent bar on the exercise + sentence inputs
   (inserts é, ñ, ã, ç, è… into the focused field). Follow-up: per-language character sets.
 - ⚪ **BVC Season 2 missing episodes** — beer, mezcal (pairs with tequila), and one other are absent;

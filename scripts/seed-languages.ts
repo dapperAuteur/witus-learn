@@ -7,6 +7,7 @@ import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
+import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import type { AuthoredCourse } from "./data/authored-course";
 import { SPANISH_COURSE } from "./data/spanish-course";
 import { FRENCH_COURSE } from "./data/french-course";
@@ -170,33 +171,48 @@ async function main() {
       lang.authored?.description ??
       `Learn ${lang.name} through one continuous story about Curb Appeall and friends learning healthy-living habits. Communication-first, with the verbs and patterns you need to produce sentences yourself.`;
 
-    // Course — insert, or refresh title/description so authored edits propagate.
-    const existing = await db
-      .select({ id: schema.courses.id })
-      .from(schema.courses)
-      .where(and(eq(schema.courses.tenantId, tenantId), eq(schema.courses.slug, lang.slug)))
-      .limit(1);
-    let courseId = existing[0]?.id;
-    if (!courseId) {
-      const [row] = await db
-        .insert(schema.courses)
-        .values({
-          tenantId,
-          instructorId,
-          title,
-          slug: lang.slug,
-          description,
-          category: "Languages",
-          isPublished: true,
-          publishedAt: new Date(),
-          navigationMode: "linear",
-        })
-        .returning({ id: schema.courses.id });
-      courseId = row.id;
-      console.log(`+ course ${lang.slug}`);
+    // Course + lessons. Authored courses (the Romance four) go through the shared
+    // seedAuthoredCourse upserter so `section` modules, `exercise`, and `quiz` lessons
+    // — like the new Dialogues unit — actually persist. CSV-built languages keep the
+    // inline course insert + chunked text lessons.
+    let courseId: string;
+    if (lang.authored) {
+      courseId = await seedAuthoredCourse(db, {
+        tenantId,
+        instructorId,
+        slug: lang.slug,
+        course: lang.authored,
+        category: "Languages",
+        navigationMode: "linear",
+      });
     } else {
-      await db.update(schema.courses).set({ title, description }).where(eq(schema.courses.id, courseId));
-      console.log(`= course ${lang.slug} (refreshed)`);
+      const existing = await db
+        .select({ id: schema.courses.id })
+        .from(schema.courses)
+        .where(and(eq(schema.courses.tenantId, tenantId), eq(schema.courses.slug, lang.slug)))
+        .limit(1);
+      courseId = existing[0]?.id ?? "";
+      if (!courseId) {
+        const [row] = await db
+          .insert(schema.courses)
+          .values({
+            tenantId,
+            instructorId,
+            title,
+            slug: lang.slug,
+            description,
+            category: "Languages",
+            isPublished: true,
+            publishedAt: new Date(),
+            navigationMode: "linear",
+          })
+          .returning({ id: schema.courses.id });
+        courseId = row.id;
+        console.log(`+ course ${lang.slug}`);
+      } else {
+        await db.update(schema.courses).set({ title, description }).where(eq(schema.courses.id, courseId));
+        console.log(`= course ${lang.slug} (refreshed)`);
+      }
     }
 
     // Glossary — deduped verbs, capped, upserted (term = the TARGET-language word).
@@ -222,42 +238,31 @@ async function main() {
       console.log(`  glossary: ${terms.length} terms`);
     }
 
-    // Lessons — authored tense units, else CSV chunks. Upserted by (courseId, slug),
-    // so re-running updates lessons in place (IDs preserved → embeddings/progress safe).
-    const lessonRows = lang.authored
-      ? lang.authored.lessons.map((l, i) => ({
-          tenantId,
-          courseId,
-          title: l.title,
-          slug: l.slug,
-          lessonType: "text" as const,
-          contentFormat: "markdown" as const,
-          textContent: l.body,
-          sortOrder: i + 1,
-          isFreePreview: i === 0,
-          isPublished: true,
-        }))
-      : buildCsvLessons(tenantId, courseId, sentences, lang.target);
-
-    if (lessonRows.length) {
-      await db
-        .insert(schema.lessons)
-        .values(lessonRows)
-        .onConflictDoUpdate({
-          target: [schema.lessons.courseId, schema.lessons.slug],
-          targetWhere: sql`slug is not null`,
-          set: {
-            title: sql`excluded.title`,
-            textContent: sql`excluded.text_content`,
-            sortOrder: sql`excluded.sort_order`,
-            isFreePreview: sql`excluded.is_free_preview`,
-            lessonType: sql`excluded.lesson_type`,
-            contentFormat: sql`excluded.content_format`,
-            isPublished: sql`excluded.is_published`,
-            updatedAt: new Date(),
-          },
-        });
-      console.log(`  lessons: ${lessonRows.length} (upserted)`);
+    // Lessons — authored tense units are already upserted by seedAuthoredCourse above
+    // (sections + exercise + quiz included). CSV languages chunk the story into text
+    // lessons here, upserted by (courseId, slug) so re-running is idempotent.
+    if (!lang.authored) {
+      const lessonRows = buildCsvLessons(tenantId, courseId, sentences, lang.target);
+      if (lessonRows.length) {
+        await db
+          .insert(schema.lessons)
+          .values(lessonRows)
+          .onConflictDoUpdate({
+            target: [schema.lessons.courseId, schema.lessons.slug],
+            targetWhere: sql`slug is not null`,
+            set: {
+              title: sql`excluded.title`,
+              textContent: sql`excluded.text_content`,
+              sortOrder: sql`excluded.sort_order`,
+              isFreePreview: sql`excluded.is_free_preview`,
+              lessonType: sql`excluded.lesson_type`,
+              contentFormat: sql`excluded.content_format`,
+              isPublished: sql`excluded.is_published`,
+              updatedAt: new Date(),
+            },
+          });
+        console.log(`  lessons: ${lessonRows.length} (upserted)`);
+      }
     }
   }
 
