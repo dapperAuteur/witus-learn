@@ -8,8 +8,11 @@ import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
+import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
+import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
+import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -93,6 +96,17 @@ async function main() {
     category: "Civics",
     navigationMode: "linear",
   });
+  // US Constitution 101 — a deeper, document-driven companion to US Civics 101
+  // (same Civics category, same non-partisan + cited standard). Coming-soon gating
+  // is handled at the school/UI level; the course is seeded published like civics.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "us-constitution-101",
+    course: US_CONSTITUTION_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
 
   // How to Create a Course (the meta-course for teachers) — on Learn.WitUS.
   await db
@@ -122,6 +136,23 @@ async function main() {
     navigationMode: "linear",
   });
 
+  // Learning How to Learn — the study-skills foundation, on Learn.WitUS
+  // (cross-cutting; the meta-skill that makes every other course land). Cited to
+  // primary cognitive-science research; points learners to FlashLearn for spaced
+  // recall.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Study Skills", sortOrder: 6 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "learning-how-to-learn",
+    course: LEARNING_HOW_TO_LEARN_COURSE,
+    category: "Study Skills",
+    navigationMode: "linear",
+  });
+
   // Cybersecurity — on the Trade School (staged; the school stays flags.comingSoon
   // until launch, so the course is seeded but not yet publicly browsable). Skips if
   // the Trade School tenant has not been seeded yet.
@@ -143,6 +174,22 @@ async function main() {
       slug: "cybersecurity-get-the-job",
       course: CYBER_SECURITY_COURSE,
       category: "Cybersecurity",
+      navigationMode: "linear",
+    });
+
+    // Building with AI (F2) — the builder AI foundation on the Trade School. F1
+    // (AI Literacy, on Learn.WitUS) is the recommended prerequisite. Same staging:
+    // seeded under the school's comingSoon flag until launch.
+    await db
+      .insert(schema.courseCategories)
+      .values({ tenantId: tradeSchool, name: "AI & Technology", sortOrder: 2 })
+      .onConflictDoNothing();
+    await seedAuthoredCourse(db, {
+      tenantId: tradeSchool,
+      instructorId: tradeInstructor,
+      slug: "building-with-ai",
+      course: AI_BUILDING_COURSE,
+      category: "AI & Technology",
       navigationMode: "linear",
     });
   } else {

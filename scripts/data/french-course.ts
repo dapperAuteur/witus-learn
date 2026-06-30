@@ -606,5 +606,258 @@ The garden needs to grow quickly.
         ],
       },
     },
+
+    // ── Dialogues ─────────────────────────────────────────────────────────
+    // Short, realistic conversations reinforcing taught tenses (présent, être/avoir,
+    // futur proche, conditionnel de politesse). Transcript + gloss + vocab, then a
+    // fill-in exercise, then a quiz.
+    {
+      slug: "dialogue-cafe",
+      title: "Dialogue · Au café",
+      section: "Dialogues",
+      body: `Curb Appeall orders at a café. This conversation reuses the **present tense**, **avoir**, and the **polite conditional** (_je voudrais_ = "I would like") from the conditional unit.
+
+### La conversation
+**Serveuse :** Bonjour ! Vous désirez ?
+_Server: Hello! What would you like?_
+
+**Curb :** Bonjour. Je voudrais un café au lait, s'il vous plaît.
+_Curb: Hello. I would like a coffee with milk, please._
+
+**Serveuse :** Très bien. Et avec ceci ?
+_Server: Very well. Anything else?_
+
+**Curb :** Quels fruits avez-vous aujourd'hui ?
+_Curb: What fruit do you have today?_
+
+**Serveuse :** Nous avons des pommes et des bananes. Tout est frais.
+_Server: We have apples and bananas. Everything is fresh._
+
+**Curb :** Alors je vais prendre une pomme. C'est combien ?
+_Curb: Then I'm going to have an apple. How much is it?_
+
+**Serveuse :** Ça fait quatre euros en tout.
+_Server: That's four euros in all._
+
+**Curb :** Voilà. Merci beaucoup !
+_Curb: Here you go. Thank you very much!_
+
+### Vocabulaire
+| Français | English |
+|---|---|
+| vous désirez ? | what would you like? |
+| je voudrais | I would like (polite) |
+| un café au lait | a coffee with milk |
+| et avec ceci ? | anything else? |
+| c'est combien ? / ça fait combien ? | how much is it? |
+| voilà | here you go |
+| tout est frais | everything is fresh |
+
+### À toi de parler
+- Commande ta boisson : « Je voudrais ___, s'il vous plaît. » (Order your drink.)
+- Demande le prix : « C'est combien ? » (Ask the price.)`,
+    },
+    {
+      slug: "dialogue-cafe-exercices",
+      title: "Exercices · Au café",
+      section: "Dialogues",
+      exercise: {
+        instructions: "Complète le dialogue du café.",
+        items: [
+          { prompt: "Salutation : « ___ ! Vous désirez ? »", answer: "bonjour", explanation: "« Bonjour » = hello / good day." },
+          { prompt: "Commande polie : « Je ___ un café au lait. » (vouloir, conditionnel de politesse)", answer: "voudrais", explanation: "« Je voudrais » est la forme polie pour commander." },
+          { prompt: "La serveuse répond : « Nous ___ des pommes. » (avoir, nous)", answer: "avons", explanation: "avoir : nous → avons." },
+          { prompt: "Plan immédiat : « Je vais ___ une pomme. » (prendre, futur proche)", answer: "prendre", explanation: "Futur proche : aller conjugué + infinitif." },
+          { prompt: "Demande le prix : « C'est ___ ? »", answer: "combien", explanation: "« C'est combien ? » = how much is it?" },
+        ],
+      },
+    },
+    {
+      slug: "dialogue-directions",
+      title: "Dialogue · Demander son chemin",
+      section: "Dialogues",
+      body: `Platypus is lost and asks the way to the market. This dialogue reuses **être** (location), **aller** (to go), and the **futur proche**.
+
+### La conversation
+**Platypus :** Pardon, où est le marché ?
+_Platypus: Excuse me, where is the market?_
+
+**Voisin :** Il est tout près. Continuez tout droit et tournez à droite.
+_Neighbor: It's very close. Go straight ahead and turn right._
+
+**Platypus :** C'est loin d'ici ?
+_Platypus: Is it far from here?_
+
+**Voisin :** Non, c'est à deux minutes. Vous allez voir une grande fontaine.
+_Neighbor: No, it's two minutes away. You're going to see a big fountain._
+
+**Platypus :** Le marché est à côté de la fontaine ?
+_Platypus: Is the market next to the fountain?_
+
+**Voisin :** Oui, juste en face. Vous ne pouvez pas le manquer.
+_Neighbor: Yes, right across from it. You can't miss it._
+
+**Platypus :** Merci beaucoup pour votre aide !
+_Platypus: Thank you very much for your help!_
+
+### Vocabulaire
+| Français | English |
+|---|---|
+| où est... ? | where is...? |
+| tout droit | straight ahead |
+| tournez à droite / à gauche | turn right / left |
+| près / loin | near / far |
+| à côté de | next to |
+| en face de | across from |
+| vous ne pouvez pas le manquer | you can't miss it |
+
+### À toi de parler
+- Demande où se trouve un lieu : « Où est ___ ? » (Ask where a place is.)
+- Donne une direction : « Continuez tout droit et tournez à ___. » (Give a direction.)`,
+    },
+    {
+      slug: "dialogue-directions-exercices",
+      title: "Exercices · Demander son chemin",
+      section: "Dialogues",
+      exercise: {
+        instructions: "Complète le dialogue pour demander et donner son chemin.",
+        items: [
+          { prompt: "Demande la position : « Où ___ le marché ? » (être)", answer: "est", explanation: "Pour la position on utilise être : il → est." },
+          { prompt: "Donne la direction : « Continuez tout ___. » (straight ahead)", answer: "droit", explanation: "« tout droit » = straight ahead." },
+          { prompt: "Tourne : « Tournez à ___. » (right)", answer: "droite", explanation: "« à droite » = to the right." },
+          { prompt: "Prédiction : « Vous allez ___ une grande fontaine. » (voir, futur proche)", answer: "voir", explanation: "Futur proche : aller + infinitif." },
+          { prompt: "Position relative : « Le marché est à ___ de la fontaine. » (next to)", answer: "côté", explanation: "« à côté de » = next to." },
+        ],
+      },
+    },
+    {
+      slug: "dialogue-presentations",
+      title: "Dialogue · Les présentations",
+      section: "Dialogues",
+      body: `Curb introduces a new friend to the otter who teaches the group. This dialogue reuses **être** and **avoir**, and the **futur proche** for plans.
+
+### La conversation
+**Curb :** Bonjour, je te présente mon amie Loutre. Elle est du Sénégal.
+_Curb: Hello, let me introduce my friend Otter. She's from Senegal._
+
+**Loutre :** Enchantée. Comment tu t'appelles ?
+_Otter: Pleased to meet you. What's your name?_
+
+**Platypus :** Je m'appelle Platypus. Enchanté. Qu'est-ce que tu fais dans la vie ?
+_Platypus: My name is Platypus. Pleased to meet you. What do you do?_
+
+**Loutre :** Je suis professeure. J'enseigne la santé et l'argent.
+_Otter: I'm a teacher. I teach health and money._
+
+**Platypus :** Comme c'est intéressant ! Tu es dans le groupe depuis longtemps ?
+_Platypus: How interesting! Have you been in the group long?_
+
+**Loutre :** Je suis ici depuis mars. Demain, nous allons cuisiner ensemble.
+_Otter: I've been here since March. Tomorrow, we're going to cook together._
+
+**Platypus :** Parfait ! Je suis très content de te rencontrer.
+_Platypus: Perfect! I'm very happy to meet you._
+
+### Vocabulaire
+| Français | English |
+|---|---|
+| je te présente... | let me introduce you to... |
+| enchanté(e) | pleased to meet you |
+| comment tu t'appelles ? | what's your name? |
+| je m'appelle... | my name is... |
+| qu'est-ce que tu fais dans la vie ? | what do you do (for work)? |
+| je suis professeur(e) | I'm a teacher |
+| je suis content(e) | I'm happy |
+
+### À toi de parler
+- Présente-toi : « Je m'appelle ___ et je suis ___. » (Introduce yourself.)
+- Dis un projet : « Demain, je vais ___. » (Say a plan for tomorrow.)`,
+    },
+    {
+      slug: "dialogue-presentations-exercices",
+      title: "Exercices · Les présentations",
+      section: "Dialogues",
+      exercise: {
+        instructions: "Complète le dialogue des présentations.",
+        items: [
+          { prompt: "Origine : « Loutre ___ du Sénégal. » (être)", answer: "est", explanation: "être : elle → est (pour l'origine et l'identité)." },
+          { prompt: "Profession : « Je ___ professeure. » (être, je)", answer: "suis", explanation: "La profession utilise être : je → suis." },
+          { prompt: "Demande le nom : « Comment tu t'___ ? » (s'appeler)", answer: "appelles", explanation: "« Comment tu t'appelles ? » = what's your name?" },
+          { prompt: "Émotion : « Je ___ très content de te rencontrer. » (être, je)", answer: "suis", explanation: "être : je → suis." },
+          { prompt: "Projet : « Demain, nous ___ cuisiner ensemble. » (aller, nous — futur proche)", answer: "allons", explanation: "aller : nous → allons ; futur proche = aller + infinitif." },
+        ],
+      },
+    },
+    {
+      slug: "dialogues-quiz",
+      title: "Dialogues · Vérifie ta compréhension",
+      section: "Dialogues",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "Au café, comment Curb commande-t-il poliment ?",
+            options: ["Donne-moi un café", "Je voudrais un café au lait, s'il vous plaît", "Tu as du café ?", "Café maintenant"],
+            correctIndex: 1,
+            explanation: "« Je voudrais... s'il vous plaît » est la formule polie, au conditionnel.",
+            sourceLessonSlug: "dialogue-cafe",
+          },
+          {
+            prompt: "« Nous avons des pommes » — quel verbe et quelle personne ?",
+            options: ["avoir, je", "avoir, nous", "être, nous", "avoir, ils"],
+            correctIndex: 1,
+            explanation: "« avons » est avoir à la personne « nous ».",
+            sourceLessonSlug: "dialogue-cafe",
+          },
+          {
+            prompt: "« Je vais prendre une pomme » est :",
+            options: ["le passé composé", "le futur proche (aller + infinitif)", "l'imparfait", "le subjonctif"],
+            correctIndex: 1,
+            explanation: "Futur proche : aller conjugué + infinitif.",
+            sourceLessonSlug: "dialogue-cafe",
+          },
+          {
+            prompt: "Pour demander où se trouve le marché, on dit :",
+            options: ["Comment est le marché ?", "Où est le marché ?", "Qui est le marché ?", "Quand est le marché ?"],
+            correctIndex: 1,
+            explanation: "La position se demande avec « Où est... ? » (être).",
+            sourceLessonSlug: "dialogue-directions",
+          },
+          {
+            prompt: "« Tournez à droite » signifie :",
+            options: ["Go straight", "Turn left", "Turn right", "Stop"],
+            correctIndex: 2,
+            explanation: "« à droite » = to the right.",
+            sourceLessonSlug: "dialogue-directions",
+          },
+          {
+            prompt: "Dans « Loutre est du Sénégal », pourquoi « est » (être) ?",
+            options: [
+              "Parce que c'est une position temporaire",
+              "Parce que l'origine et l'identité utilisent être",
+              "Parce qu'on utilise toujours avoir avec les pays",
+              "C'est une faute ; il faut « a »",
+            ],
+            correctIndex: 1,
+            explanation: "L'origine et l'identité s'expriment avec être.",
+            sourceLessonSlug: "dialogue-presentations",
+          },
+          {
+            prompt: "Quelle est une présentation naturelle ?",
+            options: ["Je être Platypus", "Je m'appelle Platypus, enchanté", "Tu t'appelles Platypus", "Platypus a"],
+            correctIndex: 1,
+            explanation: "« Je m'appelle... enchanté » est la présentation naturelle.",
+            sourceLessonSlug: "dialogue-presentations",
+          },
+          {
+            prompt: "« Demain, nous allons cuisiner » exprime :",
+            options: ["une action passée", "un projet (futur proche)", "une habitude au passé", "un doute"],
+            correctIndex: 1,
+            explanation: "« nous allons cuisiner » est un projet au futur proche.",
+            sourceLessonSlug: "dialogue-presentations",
+          },
+        ],
+      },
+    },
   ],
 };

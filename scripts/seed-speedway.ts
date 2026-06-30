@@ -6,11 +6,13 @@ import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { SPEEDWAY_COURSE } from "./data/speedway-course";
+import { ROBOTICS_STEAM_COURSE } from "./data/robotics-steam-course";
 
-// Seeds the "Speedway: The Greatest Spectacle in Learning" docuseries (migrated
-// from CentOS) onto the ElementaryMBA school. The committed data module carries the
-// cleaned, cited content (narration stage tags stripped; APA `## Sources` kept), so
-// this seeder never needs CentOS. Re-seedable (upsert by courseId,slug).
+// Seeds the ElementaryMBA school's authored courses: the "Speedway: The Greatest
+// Spectacle in Learning" docuseries (migrated from CentOS) and the cited, kid-friendly
+// "Intro to Robotics & STEAM" course. Each committed data module carries the cleaned,
+// cited content (narration stage tags stripped; APA `## Sources` kept), so this seeder
+// never needs CentOS. Re-seedable (upsert by courseId,slug).
 // Run: pnpm seed:speedway
 //
 // The ElementaryMBA tenant must already exist (run `pnpm seed:tenants` first) — this
@@ -68,10 +70,29 @@ async function main() {
     replaceLessons: true,
   });
 
-  const quizzes = SPEEDWAY_COURSE.lessons.filter((l) => l.quiz).length;
+  // Intro to Robotics & STEAM — cited, age-appropriate (grades 6-12) STEAM course on
+  // the same ElementaryMBA school. The school stays flags.comingSoon until launch, so
+  // this is seeded-but-gated like the Trade School courses in seed-courses.ts.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId, name: "STEAM", sortOrder: 2 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId,
+    instructorId,
+    slug: "intro-robotics-steam",
+    course: ROBOTICS_STEAM_COURSE,
+    category: "STEAM",
+    navigationMode: "linear",
+    replaceLessons: true,
+  });
+
+  const speedwayQuizzes = SPEEDWAY_COURSE.lessons.filter((l) => l.quiz).length;
+  const roboticsQuizzes = ROBOTICS_STEAM_COURSE.lessons.filter((l) => l.quiz).length;
   await pool.end();
   console.log(
-    `Done. Speedway seeded on "${TARGET_SLUG}": ${SPEEDWAY_COURSE.lessons.length} lessons (${quizzes} quizzes).`,
+    `Done. Seeded on "${TARGET_SLUG}": Speedway (${SPEEDWAY_COURSE.lessons.length} lessons, ${speedwayQuizzes} quizzes); ` +
+      `Intro to Robotics & STEAM (${ROBOTICS_STEAM_COURSE.lessons.length} lessons, ${roboticsQuizzes} quizzes).`,
   );
 }
 

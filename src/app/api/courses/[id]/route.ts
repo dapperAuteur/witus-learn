@@ -28,6 +28,8 @@ const PatchSchema = z.object({
   seasonNumber: z.number().int().min(0).max(99).nullable().optional(),
   seriesSlug: z.string().max(120).nullable().optional(),
   seriesTitle: z.string().max(200).nullable().optional(),
+  priceType: z.enum(["free", "one_time", "subscription"]).optional(),
+  price: z.number().min(0).max(100000).optional(),
   // Admin-only (stripped below for non-admins)
   isFeatured: z.boolean().optional(),
   featuredOrder: z.number().int().nullable().optional(),
@@ -44,6 +46,10 @@ export async function PATCH(req: Request, { params }: Params) {
   const parsed = PatchSchema.safeParse(body);
   if (!parsed.success) return errorJson("Invalid input", 400);
   const patch: Record<string, unknown> = { ...parsed.data };
+
+  // numeric column wants a string; a free course is always $0.
+  if (patch.priceType === "free") patch.price = "0";
+  else if (typeof patch.price === "number") patch.price = String(patch.price);
 
   // Featured flags are admin-only.
   if ("isFeatured" in patch || "featuredOrder" in patch) {

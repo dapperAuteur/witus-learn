@@ -616,5 +616,258 @@ Hopefully the garden grows quickly.
         ],
       },
     },
+
+    // ── Dialogues ─────────────────────────────────────────────────────────
+    // Short, realistic conversations reinforcing taught forms (presente, ser/estar,
+    // ir + infinitivo, condicional de cortesia "gostaria/queria"). Transcript + gloss
+    // + vocab, then a fill-in exercise, then a quiz. Brazilian Portuguese (você).
+    {
+      slug: "dialogo-cafe",
+      title: "Diálogo · Na cafeteria",
+      section: "Dialogues",
+      body: `Curb Appeall orders at a café. This conversation reuses the **present tense**, **ter**, **ir + infinitive**, and the **polite conditional** (_eu queria / gostaria de_ = "I would like").
+
+### A conversa
+**Atendente:** Bom dia! O que você vai querer?
+_Server: Good morning! What would you like?_
+
+**Curb:** Bom dia. Eu queria um café com leite, por favor.
+_Curb: Good morning. I would like a coffee with milk, please._
+
+**Atendente:** Claro. Mais alguma coisa?
+_Server: Of course. Anything else?_
+
+**Curb:** Sim, que fruta vocês têm hoje?
+_Curb: Yes, what fruit do you have today?_
+
+**Atendente:** Temos maçãs e bananas. Está tudo fresco.
+_Server: We have apples and bananas. Everything is fresh._
+
+**Curb:** Então eu vou levar uma maçã. Quanto é?
+_Curb: Then I'm going to take an apple. How much is it?_
+
+**Atendente:** São quatro reais no total.
+_Server: It's four reais total._
+
+**Curb:** Aqui está. Muito obrigado!
+_Curb: Here you go. Thank you very much!_
+
+### Vocabulário
+| Português | English |
+|---|---|
+| a cafeteria | the café |
+| o que você vai querer? | what would you like? |
+| eu queria / gostaria de | I would like (polite) |
+| um café com leite | a coffee with milk |
+| mais alguma coisa? | anything else? |
+| quanto é? | how much is it? |
+| aqui está | here you go |
+
+### Agora é com você
+- Peça sua bebida: "Eu queria ___, por favor." (Order your drink.)
+- Pergunte o preço: "Quanto é?" (Ask the price.)`,
+    },
+    {
+      slug: "dialogo-cafe-pratica",
+      title: "Prática · Na cafeteria",
+      section: "Dialogues",
+      exercise: {
+        instructions: "Complete o diálogo na cafeteria.",
+        items: [
+          { prompt: "Saudação de manhã: \"Bom ___!\"", answer: "dia", explanation: "\"Bom dia\" = good morning." },
+          { prompt: "Pedido cortês: \"Eu ___ um café com leite.\" (querer, forma de cortesia)", answer: "queria", accept: ["gostaria de"], explanation: "\"Eu queria\" ou \"gostaria de\" para pedir com educação." },
+          { prompt: "A atendente responde: \"___ maçãs e bananas.\" (ter, nós)", answer: "temos", explanation: "ter: nós → temos." },
+          { prompt: "Plano imediato: \"Eu vou ___ uma maçã.\" (levar — ir + infinitivo)", answer: "levar", explanation: "ir + infinitivo, sem \"a\" no português." },
+          { prompt: "Pergunte o preço: \"___ é?\"", answer: "quanto", explanation: "\"Quanto é?\" = how much is it?" },
+        ],
+      },
+    },
+    {
+      slug: "dialogo-direcoes",
+      title: "Diálogo · Pedir direções",
+      section: "Dialogues",
+      body: `Platypus is lost and asks the way to the market. This dialogue reuses **estar/ser** (location), **ir**, and the **near future** (ir + infinitive).
+
+### A conversa
+**Platypus:** Com licença, onde fica o mercado?
+_Platypus: Excuse me, where is the market?_
+
+**Vizinho:** Fica bem perto. Siga em frente e vire à direita.
+_Neighbor: It's very close. Go straight ahead and turn right._
+
+**Platypus:** É longe daqui?
+_Platypus: Is it far from here?_
+
+**Vizinho:** Não, fica a dois minutos. Você vai ver uma fonte grande.
+_Neighbor: No, it's two minutes away. You're going to see a big fountain._
+
+**Platypus:** O mercado fica ao lado da fonte?
+_Platypus: Is the market next to the fountain?_
+
+**Vizinho:** Sim, bem em frente. Não tem como errar.
+_Neighbor: Yes, right across from it. You can't miss it._
+
+**Platypus:** Muito obrigado pela sua ajuda!
+_Platypus: Thank you so much for your help!_
+
+### Vocabulário
+| Português | English |
+|---|---|
+| onde fica...? | where is...? |
+| siga em frente | go straight ahead |
+| vire à direita / à esquerda | turn right / left |
+| perto / longe | near / far |
+| ao lado de | next to |
+| em frente a | across from |
+| não tem como errar | you can't miss it |
+
+### Agora é com você
+- Pergunte onde fica um lugar: "Onde fica ___?" (Ask where a place is.)
+- Dê uma direção: "Siga em frente e vire à ___." (Give a direction.)`,
+    },
+    {
+      slug: "dialogo-direcoes-pratica",
+      title: "Prática · Pedir direções",
+      section: "Dialogues",
+      exercise: {
+        instructions: "Complete o diálogo para pedir e dar direções.",
+        items: [
+          { prompt: "Pergunte a localização: \"Onde ___ o mercado?\" (ficar)", answer: "fica", explanation: "\"Onde fica...?\" é a forma natural de perguntar a localização." },
+          { prompt: "Indicação: \"Siga em ___.\" (straight ahead)", answer: "frente", explanation: "\"em frente\" = straight ahead." },
+          { prompt: "Vire: \"Vire à ___.\" (right)", answer: "direita", explanation: "\"à direita\" = to the right." },
+          { prompt: "Previsão: \"Você vai ___ uma fonte grande.\" (ver — ir + infinitivo)", answer: "ver", explanation: "ir + infinitivo: o segundo verbo fica no infinitivo." },
+          { prompt: "Posição relativa: \"O mercado fica ao ___ da fonte.\" (next to)", answer: "lado", explanation: "\"ao lado de\" = next to." },
+        ],
+      },
+    },
+    {
+      slug: "dialogo-apresentacoes",
+      title: "Diálogo · Apresentações",
+      section: "Dialogues",
+      body: `Curb introduces a new friend to the otter who teaches the group. This dialogue reuses **ser** and **estar**, and the **near future** (ir + infinitive) for plans.
+
+### A conversa
+**Curb:** Oi, esta é a minha amiga Lontra. Ela é de Portugal.
+_Curb: Hi, this is my friend Otter. She's from Portugal._
+
+**Lontra:** Muito prazer. Como você se chama?
+_Otter: Nice to meet you. What's your name?_
+
+**Platypus:** Eu me chamo Platypus. Prazer. O que você faz?
+_Platypus: My name is Platypus. Pleased to meet you. What do you do?_
+
+**Lontra:** Sou professora. Ensino sobre saúde e dinheiro.
+_Otter: I'm a teacher. I teach about health and money._
+
+**Platypus:** Que interessante! Você está no grupo há muito tempo?
+_Platypus: How interesting! Have you been in the group long?_
+
+**Lontra:** Estou aqui desde março. Amanhã nós vamos cozinhar juntos.
+_Otter: I've been here since March. Tomorrow we're going to cook together._
+
+**Platypus:** Perfeito! Estou muito feliz em conhecer você.
+_Platypus: Perfect! I'm very happy to meet you._
+
+### Vocabulário
+| Português | English |
+|---|---|
+| esta é... / este é... | this is... |
+| muito prazer | nice to meet you |
+| como você se chama? | what's your name? |
+| eu me chamo... | my name is... |
+| o que você faz? | what do you do (for work)? |
+| sou professor(a) | I'm a teacher |
+| estou feliz | I'm happy |
+
+### Agora é com você
+- Apresente-se: "Eu me chamo ___ e sou ___." (Introduce yourself.)
+- Diga um plano: "Amanhã eu vou ___." (Say a plan for tomorrow.)`,
+    },
+    {
+      slug: "dialogo-apresentacoes-pratica",
+      title: "Prática · Apresentações",
+      section: "Dialogues",
+      exercise: {
+        instructions: "Complete o diálogo das apresentações.",
+        items: [
+          { prompt: "Origem: \"Lontra ___ de Portugal.\" (ser)", answer: "é", explanation: "A origem e a identidade usam ser: ela → é." },
+          { prompt: "Profissão: \"___ professora.\" (ser, eu)", answer: "sou", explanation: "A profissão usa ser: eu → sou." },
+          { prompt: "Estado/emoção: \"___ muito feliz em conhecer você.\" (estar, eu)", answer: "estou", explanation: "O estado/emoção usa estar: eu → estou." },
+          { prompt: "Pergunte o nome: \"Como você se ___?\" (chamar)", answer: "chama", explanation: "\"Como você se chama?\" = what's your name?" },
+          { prompt: "Plano: \"Amanhã nós ___ cozinhar juntos.\" (ir, nós)", answer: "vamos", explanation: "ir: nós → vamos; ir + infinitivo para o plano." },
+        ],
+      },
+    },
+    {
+      slug: "dialogos-quiz",
+      title: "Diálogos · Verifique a compreensão",
+      section: "Dialogues",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "Na cafeteria, como Curb pede com educação?",
+            options: ["Me dá um café", "Eu queria um café com leite, por favor", "Você tem café?", "Café agora"],
+            correctIndex: 1,
+            explanation: "\"Eu queria... por favor\" é a forma educada de pedir (condicional/cortesia).",
+            sourceLessonSlug: "dialogo-cafe",
+          },
+          {
+            prompt: "\"Temos maçãs\" — qual verbo e pessoa?",
+            options: ["ter, eu", "ter, nós", "ser, nós", "ter, eles"],
+            correctIndex: 1,
+            explanation: "\"temos\" é ter na pessoa \"nós\".",
+            sourceLessonSlug: "dialogo-cafe",
+          },
+          {
+            prompt: "\"Eu vou levar uma maçã\" usa que estrutura?",
+            options: ["pretérito", "ir + infinitivo (futuro próximo)", "imperfeito", "subjuntivo"],
+            correctIndex: 1,
+            explanation: "Futuro próximo: ir conjugado + infinitivo, sem \"a\".",
+            sourceLessonSlug: "dialogo-cafe",
+          },
+          {
+            prompt: "Para perguntar onde fica o mercado, diz-se:",
+            options: ["Como é o mercado?", "Onde fica o mercado?", "Quem é o mercado?", "Quando é o mercado?"],
+            correctIndex: 1,
+            explanation: "A localização se pergunta com \"Onde fica...?\".",
+            sourceLessonSlug: "dialogo-direcoes",
+          },
+          {
+            prompt: "\"Vire à direita\" significa:",
+            options: ["Go straight", "Turn left", "Turn right", "Stop"],
+            correctIndex: 2,
+            explanation: "\"à direita\" = to the right.",
+            sourceLessonSlug: "dialogo-direcoes",
+          },
+          {
+            prompt: "Em \"Lontra é de Portugal\", por que \"é\" (ser)?",
+            options: [
+              "Porque é uma localização temporária",
+              "Porque a origem e a identidade usam ser",
+              "Porque com países usa-se sempre estar",
+              "É um erro; deveria ser \"está\"",
+            ],
+            correctIndex: 1,
+            explanation: "A origem e a identidade usam ser; a localização física e o estado usam estar.",
+            sourceLessonSlug: "dialogo-apresentacoes",
+          },
+          {
+            prompt: "\"Estou muito feliz em conhecer você\" usa estar porque expressa:",
+            options: ["identidade", "profissão", "um estado ou emoção", "origem"],
+            correctIndex: 2,
+            explanation: "Estados e emoções (como você se sente agora) usam estar.",
+            sourceLessonSlug: "dialogo-apresentacoes",
+          },
+          {
+            prompt: "Qual é uma apresentação natural?",
+            options: ["Eu ser Platypus", "Eu me chamo Platypus, prazer", "Você se chama Platypus", "Platypus tem"],
+            correctIndex: 1,
+            explanation: "\"Eu me chamo... prazer\" é a apresentação natural.",
+            sourceLessonSlug: "dialogo-apresentacoes",
+          },
+        ],
+      },
+    },
   ],
 };

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { resolveTenant } from "@/lib/tenant";
 import { tenantMetadata, tenantViewport } from "@/lib/branding";
+import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         {children}
+        <ServiceWorkerRegister />
       </body>
     </html>
   );

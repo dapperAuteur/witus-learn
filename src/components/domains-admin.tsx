@@ -14,11 +14,12 @@ function Copyable({ value, className = "" }: { value: string; className?: string
         setCopied(true);
         setTimeout(() => setCopied(false), 1200);
       }}
+      aria-label={copied ? `Copied ${value}` : `Copy ${value}`}
       title="Click to copy"
       className={`group inline-flex items-center gap-1 rounded px-1 hover:bg-neutral-200 dark:hover:bg-neutral-800 ${className}`}
     >
       <span className="break-all">{value}</span>
-      <span className="text-[10px] text-neutral-400 group-hover:text-neutral-600 dark:group-hover:text-neutral-300">
+      <span aria-hidden className="text-[10px] text-neutral-400 group-hover:text-neutral-600 dark:group-hover:text-neutral-300">
         {copied ? "copied ✓" : "⧉"}
       </span>
     </button>

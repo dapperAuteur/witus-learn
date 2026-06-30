@@ -84,6 +84,21 @@ characters, no "AI tells". These content rules are a **product feature** (the so
 UI is a visible trust signal), not just a style guide. Code docs and `plans/*` are out of scope.
 Full rule: `gemini/witus/CLAUDE.md` §"Citation rule".
 
+## Authoritative-values rule — never assert guessed external values
+
+When a value is owned by an external system (DNS/registrar, a host like Vercel, a third-party API,
+another ecosystem app's schema/route), do NOT hardcode a generic default and present it as correct:
+1. **Read it from the authoritative source** — the system's API/config/env, or the actual data.
+2. If you must ship a fallback, **label it as a fallback** and point to the real source (in the UI
+   copy and a code comment), e.g. "use what Vercel shows for your domain".
+3. **Verify by behavior, not by exact-match against the guess** — "does the domain actually serve the
+   site?" (works for an A record OR a CNAME), not "does it equal IP `76.76.21.21`?".
+4. When unsure of an external value, **flag it or ask — don't assert it.**
+
+This exists because a hardcoded "apex → A `76.76.21.21`" check called a *working* Vercel CNAME setup
+"incorrect" (a false negative). Same rule applies to ecosystem cross-app assumptions (another app's
+URLs, routes, IDs, schema): confirm against that app, don't infer. Full rule: `gemini/witus/CLAUDE.md`.
+
 ## Stack & conventions (mirror `shop-witus`)
 
 Next.js 16 App Router (`--webpack`) · TS · Tailwind v4 · `@neondatabase/serverless` + Drizzle ORM +

@@ -117,6 +117,30 @@ const ECS_AI_TELLS: [RegExp, string][] = [
   [/\bthink about it[—,:]?\s*/gi, ""],
 ];
 
+// Fact-accuracy corrections (NOT style). The ECS Foundations script asserts a flat
+// "500 million years" twice for the ECS's evolutionary age. The literature supports
+// only a hedged lower bound (the cannabinoid-receptor lineage is conserved for *at
+// least* ~500–600 million years; e.g. Elphick & Egertová; McPartland et al.), so the
+// false precision is softened to "hundreds of millions of years" — a claim the
+// sources unambiguously support — without inventing a more specific figure. Applies
+// to both occurrences (Foundations L1 and L5).
+const ECS_ACCURACY_FIXES: [RegExp, string][] = [
+  [/\bfor (?:over|more than) 500 million years of evolution\b/gi, "for hundreds of millions of years"],
+  [/\b500 million years of evolution\b/gi, "hundreds of millions of years"],
+  [/\bfor (?:over|more than) 500 million years\b/gi, "for hundreds of millions of years"],
+  [/\b(?:over|more than) 500 million years\b/gi, "hundreds of millions of years"],
+  [/\b500 million years\b/gi, "hundreds of millions of years"],
+  // Neuroscience (~L20–21): the source's clause "not because CECD is proven to
+  // Grade A, but because …" is grammatically broken ("proven to Grade A") and hard
+  // to parse. Rewrite for readability while keeping the source's exact meaning: the
+  // CECD hypothesis is only Grade B, but the lifestyle interventions independently
+  // carry Grade A evidence and the ECS provides the mechanistic bridge.
+  [
+    /\bnot because CECD is proven to Grade A,\s*but because\b/gi,
+    "not because the CECD hypothesis itself has Grade A proof (it is only Grade B), but because",
+  ],
+];
+
 // Pull the bibliography ("## REFERENCES (APA Format)") off the end so the rest of the
 // body can be aggressively trimmed without touching the citations (which use en-dashes
 // in page ranges and must survive verbatim). Returns [bodyWithoutRefs, refs].
@@ -315,6 +339,9 @@ function stripEcsTags(md: string): string {
   // 14. Remove the marketing AI-tell phrasings.
   for (const [re, rep] of ECS_AI_TELLS) out = out.replace(re, rep);
 
+  // 14b. Fact-accuracy corrections (soften the flat "500 million years" age claim).
+  for (const [re, rep] of ECS_ACCURACY_FIXES) out = out.replace(re, rep);
+
   // 15. First-person narrator self-introductions → third-person framing.
   out = out.replace(
     /I'?m Brand Anthony McDonald,?\s*and I'?ve studied (over )?(\d+\+? years of )?research on\s*/gi,
@@ -337,8 +364,16 @@ function stripEcsTags(md: string): string {
 }
 
 // Clean the speedway PART 2 podcast script into a readable lesson body.
+// Speedway is a narrated documentary podcast: alongside the bracketed stage
+// directions it carries broadcast framing (a spoken title card, a host self-
+// intro, and a sign-off teasing the next episode) that is not lesson prose. We
+// strip those the way the ECS converter strips its narrator self-introductions,
+// then de-dash the body so the appositive em-dashes read with commas/periods.
 function stripSpeedwayScript(md: string): string {
   let out = crlf(md);
+  // Production "content integrity" note (a leading blockquote about the script's
+  // sourcing) is an author note, not lesson prose. Drop the whole blockquote line.
+  out = out.replace(/^>\s*(?:\*\*CONTENT INTEGRITY NOTE:\*\*\s*)?This script uses[^\n]*$/gim, "");
   // Remove speaker labels and the *[delivery cue]* that follows them on the line.
   out = out.replace(/\*\*HOST:\*\*\s*\*\[[^\]]*\]\*/g, "");
   out = out.replace(/\*\*HOST:\*\*/g, "");
@@ -348,10 +383,32 @@ function stripSpeedwayScript(md: string): string {
   out = out.replace(/\*\*\[[^\]]*\]\*\*/g, "");
   out = out.replace(/\*\[[^\]]*\]\*/g, "");
   out = out.replace(/\[(Beat|Pause|CUT-[^\]]*|Sound:[^\]]*|Music:[^\]]*|Transition:[^\]]*)\]/gi, "");
+
+  // Broadcast title card spoken at the top of the cold open: "This is Speedway:
+  // The Greatest Spectacle in Learning. Episode N: Title." (or the "I'm Anthony
+  // McDonald. This is *Speedway…*. Episode N. "Title." Let's go." variant). The
+  // lesson carries its own title field; this is podcast framing, so drop the line.
+  out = out.replace(
+    /^[ \t]*(?:I'?m Anthony McDonald\.\s*)?This is \*?Speedway[^\n]*?(?:Let'?s go\.?|Episode\s*\d+[:.][^\n]*)\s*$/gim,
+    "",
+  );
+  // Closing sign-off: "I am your host. … Next episode: …" / "I'm Anthony McDonald.
+  // Thanks for listening. New episodes … Episode N is next." — broadcast outro.
+  out = out.replace(/^[ \t]*(?:I am your host\.|I'?m Anthony McDonald\.)[^\n]*$/gim, "");
+
   // Clean segment headings: '## SEGMENT 1: "Title" — SUBJECT (4 minutes) [CUT-1B]'
   out = out.replace(/^##\s*SEGMENT\s*\d+:\s*"?([^"\n—(]+)"?.*$/gim, "## $1");
-  out = out.replace(/^##\s*COLD OPEN[^\n]*$/gim, "## Cold open");
-  out = out.replace(/^##\s*CLOSING[^\n]*$/gim, "## Closing");
+  // Broadcast structural headings → neutral lesson subheads (matches the ECS
+  // "OPENING HOOK" → "Introduction" rename).
+  out = out.replace(/^##\s*COLD OPEN[^\n]*$/gim, "## Introduction");
+  out = out.replace(/^##\s*CLOSING[^\n]*$/gim, "## Wrap-up");
+  // Drop stray horizontal rules left between segments (as the ECS strip does).
+  out = out.replace(/^\s*---\s*$/gm, "");
+
+  // Em-dash → reader-friendly punctuation. Episode scripts use it for appositive
+  // asides; the bibliography is sliced off before this runs, so page-range
+  // EN-dashes in citations are never touched.
+  out = deDash(out);
   return out;
 }
 
@@ -550,6 +607,34 @@ function buildFromAcademyCsv(opts: {
   return { title: opts.title, description: opts.description, lessons };
 }
 
+// NASM CPT carries a boilerplate `## Sources` line on EVERY lesson:
+//   "- The peer-reviewed science behind leading science-based fitness
+//    certifications. See the course Sources page for the full study list."
+// This is NOT a real citation. Per the CentOS authoring rule
+// (docs/nasm-curriculum/_VOICE-AND-TEMPLATE.md): the CPT build deliberately does
+// NOT cite the NASM textbook, and — unlike the CES/CNC builds, which DO pull real
+// per-lesson APA studies + DOIs from the shared open-access bibliography — the CPT
+// lessons never attached inline study citations to any specific claim. The shared
+// bibliography (docs/CentenarianAcademy/shared-sources/bibliography.json) is tagged
+// only by broad topic ("workout"/"corrective"/...), not mapped to CPT chapters or
+// claims, so attaching studies here would FABRICATE a claim-source link the source
+// never made. We therefore replace the boilerplate with an explicit NEEDS-SOURCE
+// flag (an HTML comment, invisible in rendered markdown) for BAM to resolve, rather
+// than inventing citations. Re-run the generator after real refs are added upstream.
+const CPT_SOURCE_BOILERPLATE =
+  /^##\s*Sources\s*\n+(?:[-*]\s*)?The peer-reviewed science behind leading science-based fitness certifications\. See the course Sources page for the full study list\.\s*$/im;
+function flagCptSources(body: string): string {
+  if (!CPT_SOURCE_BOILERPLATE.test(body)) return body;
+  return body.replace(
+    CPT_SOURCE_BOILERPLATE,
+    "## Sources\n\n<!-- NEEDS SOURCE: CentOS NASM CPT source ships only a boilerplate Sources line " +
+      "(the textbook is deliberately uncited per the CPT authoring rule) and attaches no inline " +
+      "study citation to any claim. Real per-lesson APA references must come from the shared " +
+      "open-access bibliography (docs/CentenarianAcademy/shared-sources/bibliography.json, \"workout\" " +
+      "tag) once a human maps specific claims to specific studies — do not auto-assign. -->",
+  );
+}
+
 // ── 2. NASM CPT — chapter folders with lessons/*.md + _quiz-content.json ───────
 function buildNasmCpt(): AuthoredCourse {
   const root = join(CENTOS, "docs", "nasm-curriculum");
@@ -576,7 +661,7 @@ function buildNasmCpt(): AuthoredCourse {
       if (!l.file) continue;
       const file = join(dir, l.file);
       if (!existsSync(file)) continue;
-      const body = tidy(stripBeats(readFileSync(file, "utf-8")));
+      const body = flagCptSources(tidy(stripBeats(readFileSync(file, "utf-8"))));
       if (!body) continue;
       lessons.push({
         slug: `ch${order}-l${l.order}-${slugify(l.title)}`.slice(0, 90),
