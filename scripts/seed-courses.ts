@@ -9,6 +9,7 @@ import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
 import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
+import { STATE_VS_FEDERAL_COURSE } from "./data/state-vs-federal-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
@@ -116,6 +117,17 @@ async function main() {
     instructorId,
     slug: "us-constitution-101",
     course: US_CONSTITUTION_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // State vs Federal Power — a federalism-focused companion in the Civics category
+  // (same non-partisan + cited standard). Goes deeper than US Civics 101 on how the
+  // Constitution divides power between the national government and the states.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "state-vs-federal",
+    course: STATE_VS_FEDERAL_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
