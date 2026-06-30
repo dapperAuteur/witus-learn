@@ -77,7 +77,7 @@ export default async function TeachPage() {
         </div>
       </div>
 
-      <form action={createCourseAction} className="mt-6 flex flex-col gap-3 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
+      <form action={createCourseAction} className="mt-6 flex flex-col gap-3 rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
         <h2 className="font-semibold">New course</h2>
         <label className="text-sm font-medium" htmlFor="title">
           Title
@@ -107,16 +107,21 @@ export default async function TeachPage() {
         </button>
       </form>
 
-      <ul className="mt-8 divide-y divide-neutral-200 dark:divide-neutral-800">
+      <ul className="mt-8 space-y-2">
         {courses.length === 0 ? (
-          <li className="py-3 text-neutral-500">No courses yet.</li>
+          <li className="rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-500 dark:border-neutral-700">
+            No courses yet.
+          </li>
         ) : (
           courses.map((c) => (
-            <li key={c.id} className="flex items-center justify-between gap-3 py-3">
-              <Link href={`/teach/${c.id}`} className="font-medium hover:underline">
+            <li
+              key={c.id}
+              className="flex items-center justify-between gap-3 rounded-xl border border-neutral-200 px-4 py-3 transition hover:border-neutral-300 hover:shadow-sm dark:border-neutral-800 dark:hover:border-neutral-700"
+            >
+              <Link href={`/teach/${c.id}`} className="min-w-0 flex-1 truncate font-medium hover:underline">
                 {c.title}
               </Link>
-              <div className="flex items-center gap-3">
+              <div className="flex shrink-0 items-center gap-3">
                 <span
                   className={`rounded-full px-2 py-0.5 text-xs ${
                     c.isPublished
