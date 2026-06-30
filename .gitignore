@@ -56,3 +56,4 @@ yarn-error.log*
 /scripts/data/ecs-neuroscience-course.ts
 /scripts/data/read-your-body-course.ts
 /scripts/data/speedway-course.ts
+/.claude/
