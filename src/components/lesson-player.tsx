@@ -5,36 +5,52 @@ import { ExercisePlayer } from "./exercise-player";
 import { SentenceEvaluator } from "./sentence-evaluator";
 import { MapLessonContent, type MapContent } from "./map-lesson-content";
 import { Markdown } from "./markdown";
+import { MediaPlayer } from "./media-player";
+import { isDirectMediaFile, parseChapters, parseTranscript, toEmbed } from "@/lib/media";
 
-// Renders a lesson by type. Text/video/audio are first-class; the richer formats
-// (slides/360/tour/map) get a basic viewer here and are deepened in later passes.
-// Markdown is rendered as preserved-whitespace text (no HTML injection).
+// Renders a lesson by type. Text/audio/video (file or YouTube/Vimeo embed) are first-class
+// with chapter jump-markers + a synced transcript; slides/PDF embed; 360/tour/map have basic
+// viewers. Markdown is rendered as preserved-whitespace text (no HTML injection).
 export function LessonPlayer({ lesson }: { lesson: Lesson }) {
   switch (lesson.lessonType) {
     case "video":
-    case "360video":
-      return lesson.contentUrl ? (
-        <video
-          controls
-          className="w-full rounded-lg"
-          poster={lesson.video360PosterUrl ?? undefined}
-          src={lesson.contentUrl}
-        />
-      ) : (
-        <Empty />
-      );
-
-    case "audio":
+    case "360video": {
+      if (!lesson.contentUrl) return <Empty />;
+      const chapters = parseChapters(lesson.audioChapters);
+      const transcript = parseTranscript(lesson.transcriptContent);
+      // A real media file gets the full player (clickable chapters + synced transcript).
+      if (isDirectMediaFile(lesson.contentUrl)) {
+        return (
+          <MediaPlayer
+            kind="video"
+            src={lesson.contentUrl}
+            poster={lesson.video360PosterUrl ?? undefined}
+            chapters={chapters}
+            transcript={transcript}
+          />
+        );
+      }
+      // YouTube/Vimeo/other → embed; chapters/transcript shown statically alongside.
+      const embed = toEmbed(lesson.contentUrl);
       return (
         <div className="space-y-4">
-          {lesson.contentUrl ? (
-            <audio controls className="w-full" src={lesson.contentUrl} />
-          ) : (
-            <Empty />
-          )}
+          {embed ? <MediaEmbed src={embed.src} title={lesson.title} /> : <Empty />}
           <Chapters value={lesson.audioChapters} />
           <Transcript value={lesson.transcriptContent} />
         </div>
+      );
+    }
+
+    case "audio":
+      return lesson.contentUrl ? (
+        <MediaPlayer
+          kind="audio"
+          src={lesson.contentUrl}
+          chapters={parseChapters(lesson.audioChapters)}
+          transcript={parseTranscript(lesson.transcriptContent)}
+        />
+      ) : (
+        <Empty />
       );
 
     case "text":
@@ -93,20 +109,30 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
       );
     }
 
-    default:
-      // slides / virtual_tour / map / quiz — basic embed or a note for later phases.
-      return lesson.contentUrl ? (
-        <iframe
-          title={lesson.title}
-          src={lesson.contentUrl}
-          className="aspect-video w-full rounded-lg border border-neutral-200 dark:border-neutral-800"
-        />
-      ) : (
-        <p className="text-neutral-500">
-          This lesson type ({lesson.lessonType}) gets its full player in a later phase.
-        </p>
-      );
+    case "slides":
+    default: {
+      // slides / virtual_tour — embed. Google Slides links are normalized to /embed; PDFs
+      // and any other URL render in an iframe.
+      if (!lesson.contentUrl) {
+        return <p className="text-neutral-500">This lesson type ({lesson.lessonType}) has no media yet.</p>;
+      }
+      const embed = toEmbed(lesson.contentUrl);
+      return embed ? <MediaEmbed src={embed.src} title={lesson.title} /> : <Empty />;
+    }
   }
+}
+
+// A sandboxed iframe embed (YouTube/Vimeo/Google Slides/PDF/generic).
+function MediaEmbed({ src, title }: { src: string; title: string }) {
+  return (
+    <iframe
+      title={title}
+      src={src}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowFullScreen
+      className="aspect-video w-full rounded-lg border border-neutral-200 dark:border-neutral-800"
+    />
+  );
 }
 
 function Empty() {

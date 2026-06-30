@@ -34,9 +34,11 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`/manifest.webmanifest\`, and a \`NEXT_PUBLIC_DISABLE_SW=1\` kill-switch. Test on a preview first.
 - 🟡 **Offline video/audio** — media should play offline. CentOS had a solution — review and port it.
 - ⚪ **WYSIWYG + markdown editor** (CentOS) for lesson authoring in the dashboard.
-- ⚪ **Rich lesson media** — first-class video (upload/Cloudinary), YouTube, Google Slides, PDF, PPT.
-- ⚪ **Media chapters + synced transcripts** — chapter markers with jump buttons; transcript that
-  follows the audio/video. (\`audio_chapters\` + \`transcript_content\` columns already exist.)
+- ✅ **Rich lesson media** — native audio/video files get a full player; YouTube/Vimeo/Google
+  Slides/PDF auto-embed (\`toEmbed\`). Cloudinary upload UI is the remaining piece (URLs work today).
+- ✅ **Media chapters + synced transcripts** — clickable chapter jump-markers + a transcript that
+  follows playback (active segment highlighted, click-to-seek). Player ships; **populating** the
+  \`audio_chapters\`/\`transcript_content\` data per lesson is the remaining content task.
 - ✅ **Language vocab UX** — glossary is now searchable + collapsible (no more long scroll).
 - ✅ **Login 403 fixed** — was Better Auth "Invalid origin" on brand domains; trustedOrigins is now
   dynamic per registered tenant. (Not Mailgun — that was a wrong early guess.)
