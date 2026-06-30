@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { requirePlatformOwner } from "@/lib/session";
+import { requireBrandAdmin } from "@/lib/session";
 import { requireTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { listLeads } from "@/db/queries/leads";
 
 export const metadata: Metadata = { title: "Leads" };
 
-// Platform-owner view of captured leads for this school.
+// Captured leads for THIS school. Brand admins (and the owner) only; tenant-scoped.
 export default async function LeadsPage() {
-  await requirePlatformOwner();
   const tenant = await requireTenant();
+  await requireBrandAdmin(tenant.id);
   const rows = await listLeads(tenant.id);
 
   return (

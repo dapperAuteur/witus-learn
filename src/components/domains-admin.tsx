@@ -18,6 +18,21 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
 
+  type DnsRecord = { type: string; name: string; value: string };
+  type DnsInfo = { loading?: boolean; records?: DnsRecord[]; status?: { ok: boolean; detail: string } };
+  const [dns, setDns] = useState<Record<string, DnsInfo>>({});
+
+  async function checkDns(id: string, h: string) {
+    setDns((m) => ({ ...m, [id]: { ...m[id], loading: true } }));
+    const r = await fetch("/api/admin/domains/check", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ host: h }),
+    });
+    const d = r.ok ? await r.json() : { status: { ok: false, detail: "check failed" }, records: [] };
+    setDns((m) => ({ ...m, [id]: { loading: false, records: d.records, status: d.status } }));
+  }
+
   async function add(e: React.FormEvent) {
     e.preventDefault();
     setBusy(true);
@@ -89,21 +104,54 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
               <p className="mt-2 text-sm text-neutral-500">No domains mapped.</p>
             ) : (
               <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
-                {t.domains.map((d) => (
-                  <li key={d.id} className="flex flex-wrap items-center gap-2 py-2 text-sm">
-                    <span className="font-mono">{d.host}</span>
-                    {d.isPrimary ? (
-                      <span className="rounded-full bg-green-100 px-2 py-0.5 text-xs text-green-800 dark:bg-green-900 dark:text-green-200">primary</span>
-                    ) : (
-                      <button type="button" disabled={busy} onClick={() => act(d.id, "PATCH")} className="rounded border border-neutral-300 px-2 py-0.5 text-xs dark:border-neutral-700">
-                        Make primary
-                      </button>
-                    )}
-                    <button type="button" disabled={busy} onClick={() => act(d.id, "DELETE")} className="ml-auto rounded px-2 py-0.5 text-xs text-red-600">
-                      Remove
-                    </button>
-                  </li>
-                ))}
+                {t.domains.map((d) => {
+                  const info = dns[d.id];
+                  return (
+                    <li key={d.id} className="py-2 text-sm">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="font-mono">{d.host}</span>
+                        {d.isPrimary ? (
+                          <span className="rounded-full bg-green-100 px-2 py-0.5 text-xs text-green-800 dark:bg-green-900 dark:text-green-200">primary</span>
+                        ) : (
+                          <button type="button" disabled={busy} onClick={() => act(d.id, "PATCH")} className="rounded border border-neutral-300 px-2 py-0.5 text-xs dark:border-neutral-700">
+                            Make primary
+                          </button>
+                        )}
+                        <button type="button" disabled={info?.loading} onClick={() => checkDns(d.id, d.host)} className="rounded border border-neutral-300 px-2 py-0.5 text-xs dark:border-neutral-700">
+                          {info?.loading ? "Checking…" : "Check DNS"}
+                        </button>
+                        <button type="button" disabled={busy} onClick={() => act(d.id, "DELETE")} className="ml-auto rounded px-2 py-0.5 text-xs text-red-600">
+                          Remove
+                        </button>
+                      </div>
+                      {info && !info.loading ? (
+                        <div className="mt-2 rounded-md bg-neutral-50 p-3 dark:bg-neutral-900/60">
+                          {info.status ? (
+                            <p className={info.status.ok ? "text-green-700 dark:text-green-400" : "text-amber-700 dark:text-amber-400"}>
+                              {info.status.ok ? "✓ Live — " : "⏳ Not set up yet — "}
+                              {info.status.detail}
+                            </p>
+                          ) : null}
+                          {info.records?.length ? (
+                            <div className="mt-2">
+                              <p className="text-xs text-neutral-500">Add this record at your domain/DNS provider:</p>
+                              <table className="mt-1 w-full font-mono text-xs">
+                                <thead className="text-neutral-400">
+                                  <tr className="text-left"><th className="pr-3 font-normal">Type</th><th className="pr-3 font-normal">Name</th><th className="font-normal">Value</th></tr>
+                                </thead>
+                                <tbody>
+                                  {info.records.map((rec, i) => (
+                                    <tr key={i}><td className="pr-3">{rec.type}</td><td className="pr-3">{rec.name}</td><td className="break-all">{rec.value}</td></tr>
+                                  ))}
+                                </tbody>
+                              </table>
+                            </div>
+                          ) : null}
+                        </div>
+                      ) : null}
+                    </li>
+                  );
+                })}
               </ul>
             )}
           </div>
