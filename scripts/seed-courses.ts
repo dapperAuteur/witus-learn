@@ -11,6 +11,7 @@ import { CIVICS_101_COURSE } from "./data/civics-101-course";
 import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
 import { STATE_VS_FEDERAL_COURSE } from "./data/state-vs-federal-course";
 import { HOW_TO_RUN_COURSE } from "./data/how-to-run-course";
+import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading-marketing-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
@@ -142,6 +143,19 @@ async function main() {
     instructorId,
     slug: "how-to-run-for-office",
     course: HOW_TO_RUN_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // Spotting Misleading Marketing — consumer/media-literacy in the Civics category
+  // (civic + consumer literacy; same non-partisan + cited standard). Carries the
+  // platform's "verify, don't trust blindly" trust DNA. Cited to the FTC (deception
+  // standard, endorsement/reviews rules, dark patterns), FDA (supplement claims),
+  // FCC (sponsorship ID), and media-literacy orgs (News Literacy Project, Stanford COR).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "spotting-misleading-marketing",
+    course: SPOTTING_MISLEADING_MARKETING_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
