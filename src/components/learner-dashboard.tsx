@@ -57,7 +57,7 @@ export function LearnerDashboardView({
               : "Ready to start something new?"}
           </p>
         </div>
-        <Link href="/explore" className="shrink-0 text-sm font-medium underline" style={{ color: "var(--accent)" }}>
+        <Link href="/?view=catalog" className="shrink-0 text-sm font-medium underline" style={{ color: "var(--accent)" }}>
           Browse catalog →
         </Link>
       </div>
@@ -91,7 +91,7 @@ export function LearnerDashboardView({
           ) : (
             <section className="rounded-2xl border border-dashed border-neutral-300 p-8 text-center dark:border-neutral-700">
               <p className="font-medium">You&apos;ve finished everything you&apos;re enrolled in. 🎉</p>
-              <Link href="/explore" className="mt-2 inline-block text-sm underline" style={{ color: "var(--accent)" }}>
+              <Link href="/?view=catalog" className="mt-2 inline-block text-sm underline" style={{ color: "var(--accent)" }}>
                 Find your next course →
               </Link>
             </section>
