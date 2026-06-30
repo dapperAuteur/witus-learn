@@ -57,7 +57,7 @@ export async function seedAuthoredCourse(
   } else {
     await db
       .update(schema.courses)
-      .set({ title: course.title, description: course.description, ...extra })
+      .set({ title: course.title, description: course.description, instructorId, ...extra })
       .where(eq(schema.courses.id, courseId));
     if (opts.replaceLessons) {
       await db.delete(schema.lessons).where(eq(schema.lessons.courseId, courseId));

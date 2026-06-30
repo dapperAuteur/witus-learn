@@ -106,14 +106,15 @@ function buildCsvLessons(
 }
 
 async function ensureInstructor(tenantId: string): Promise<string> {
-  const id = "seed-languages-instructor";
+  // BAM is the instructor (not a synthetic "WitUS Languages" account).
+  const id = "bam";
   await db
     .insert(schema.users)
-    .values({ id, email: "faculty@languages.witus.online", emailVerified: true, name: "WitUS Languages" })
+    .values({ id, email: "bam@awews.com", emailVerified: true, name: "BAM" })
     .onConflictDoNothing();
   await db
     .insert(schema.userProfiles)
-    .values({ userId: id, username: "witus-languages", displayName: "WitUS Languages" })
+    .values({ userId: id, username: "bam", displayName: "BAM" })
     .onConflictDoNothing();
   await db
     .insert(schema.tenantMemberships)

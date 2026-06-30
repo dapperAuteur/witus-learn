@@ -46,20 +46,32 @@ export interface CentosQuiz {
   }[];
 }
 
-export function convertCentosQuiz(c: CentosQuiz): QuizContent {
+// House rule (BAM): a REGULAR quiz is 10 questions or fewer; only finals/exams may run
+// longer. Pass an optional `title` — when it marks the quiz as a final/exam (matches
+// /final|exam|comprehensive|midterm/i) the cap is skipped; otherwise the quiz is capped
+// to its first 10 questions. Shared by every course using this converter (FAA/BVC/NASM
+// on their next re-seed).
+const REGULAR_QUIZ_MAX = 10;
+const isExamTitle = (title?: string) => /final|exam|comprehensive|midterm/i.test(title ?? "");
+
+export function convertCentosQuiz(c: CentosQuiz, title?: string): QuizContent {
+  const questions = (c.questions ?? []).map((q) => {
+    const idx = q.options.findIndex((o) => o.id === q.correctOptionId);
+    const explanation = q.citation
+      ? `${q.explanation ?? ""}\n\nReference: ${q.citation}`.trim()
+      : q.explanation;
+    return {
+      prompt: q.questionText,
+      options: q.options.map((o) => o.text),
+      correctIndex: idx < 0 ? 0 : idx,
+      explanation,
+    };
+  });
   return {
     passingScore: c.passingScore ?? 80,
-    questions: (c.questions ?? []).map((q) => {
-      const idx = q.options.findIndex((o) => o.id === q.correctOptionId);
-      const explanation = q.citation
-        ? `${q.explanation ?? ""}\n\nReference: ${q.citation}`.trim()
-        : q.explanation;
-      return {
-        prompt: q.questionText,
-        options: q.options.map((o) => o.text),
-        correctIndex: idx < 0 ? 0 : idx,
-        explanation,
-      };
-    }),
+    questions:
+      isExamTitle(title) || questions.length <= REGULAR_QUIZ_MAX
+        ? questions
+        : questions.slice(0, REGULAR_QUIZ_MAX),
   };
 }
