@@ -16,6 +16,7 @@ import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading
 import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
+import { AI_B1_PROMPT_ENGINEERING_COURSE } from "./data/ai-b1-prompt-engineering-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 
@@ -259,6 +260,20 @@ async function main() {
     instructorId,
     slug: "building-with-ai",
     course: AI_BUILDING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+
+  // Prompt Engineering in Depth (B1) — the Builder-track mastery rung that builds on
+  // F2 (Building with AI). Same "AI & Technology" category. TECHNICAL: assumes the
+  // learner writes code and calls model APIs — deliberately deeper and more
+  // system-oriented than the literacy-track L1 (the plain-language version for
+  // everyone). Trust DNA: treat model output as untrusted; evaluate, don't vibe-check.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-b1-prompt-engineering",
+    course: AI_B1_PROMPT_ENGINEERING_COURSE,
     category: "AI & Technology",
     navigationMode: "linear",
   });
