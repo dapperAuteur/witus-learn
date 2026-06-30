@@ -53,6 +53,11 @@ export interface TenantFlags {
   /** Gamification dose: "off" (none), "light" (streak/mastery — default), "full" (+ XP/levels/badges,
    *  and leaderboards when that surface ships). Adult brands (e.g. BVC) may prefer "light" or "off". */
   gamification?: "off" | "light" | "full";
+  /** Show "Sign in with WitUS" (ecosystem OIDC SSO) on the login page. Only the
+   *  WitUS-branded base tenant (learn.witus.online) sets this; white-label tenants
+   *  (bettervice.club, elementarymba.com) leave it off so they never reveal the
+   *  shared backend by redirecting to accounts.witus.online. */
+  ecosystemSso?: boolean;
 }
 
 export interface TenantStripeConfig {

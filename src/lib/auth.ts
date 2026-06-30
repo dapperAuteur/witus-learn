@@ -2,6 +2,7 @@ import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { nextCookies } from "better-auth/next-js";
 import { magicLink } from "better-auth/plugins/magic-link";
+import { genericOAuth } from "better-auth/plugins";
 import { db, schema } from "@/db/client";
 import { userProfiles } from "@/db/schema";
 import { env } from "./env";
@@ -75,6 +76,29 @@ export const auth = betterAuth({
         });
       },
     }),
+    // "Sign in with WitUS" — the ecosystem IdP as an OIDC provider. Added only
+    // when configured, so a missing env never breaks the build. The login page
+    // only SHOWS the button for tenants whose flags.ecosystemSso is true (the
+    // WitUS-branded base tenant) — white-label tenants stay isolated, so they
+    // never redirect to accounts.witus.online.
+    ...(process.env.WITUS_OIDC_CLIENT_ID
+      ? [
+          genericOAuth({
+            config: [
+              {
+                providerId: "witus",
+                discoveryUrl:
+                  process.env.WITUS_OIDC_DISCOVERY_URL ??
+                  "https://accounts.witus.online/api/idp/.well-known/openid-configuration",
+                clientId: process.env.WITUS_OIDC_CLIENT_ID,
+                clientSecret: process.env.WITUS_OIDC_CLIENT_SECRET ?? "",
+                scopes: ["openid", "email", "profile"],
+                pkce: true,
+              },
+            ],
+          }),
+        ]
+      : []),
     nextCookies(),
   ],
   databaseHooks: {

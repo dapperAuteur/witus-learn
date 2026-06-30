@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { resolveTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { MagicLinkForm } from "@/components/magic-link-form";
+import { WitusSsoButton } from "@/components/witus-sso-button";
 
 export const metadata: Metadata = { title: "Sign in" };
 
@@ -26,6 +27,12 @@ export default async function LoginPage() {
           <div className="mt-6">
             <MagicLinkForm />
           </div>
+          {tenant?.flags.ecosystemSso ? (
+            <div className="mt-4">
+              <p className="mb-3 text-center text-xs uppercase tracking-wide text-neutral-400">or</p>
+              <WitusSsoButton />
+            </div>
+          ) : null}
         </div>
       </div>
     </main>
