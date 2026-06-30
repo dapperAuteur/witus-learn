@@ -85,7 +85,7 @@ export function ProfileEditForm({
           {custom.map((c, i) => (
             <div key={i} className="flex flex-wrap items-center gap-2">
               <input aria-label={`Link ${i + 1} label`} value={c.label} onChange={(e) => setCustomAt(i, "label", e.target.value)} placeholder="Label" maxLength={60} className="min-h-11 flex-1 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900" />
-              <input aria-label={`Link ${i + 1} URL`} type="url" value={c.url} onChange={(e) => setCustomAt(i, "url", e.target.value)} placeholder="https://…" className="min-h-11 flex-[2] rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900" />
+              <input aria-label={`Link ${i + 1} URL`} type="url" value={c.url} onChange={(e) => setCustomAt(i, "url", e.target.value)} placeholder="https://…" className="min-h-11 flex-2 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900" />
               <button type="button" onClick={() => setCustom((p) => p.filter((_, j) => j !== i))} className="rounded px-2 py-1 text-xs text-red-600">Remove</button>
             </div>
           ))}
@@ -101,8 +101,10 @@ export function ProfileEditForm({
         <button type="submit" disabled={state === "saving"} className="min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
           {state === "saving" ? "Saving…" : "Save profile"}
         </button>
-        {state === "saved" ? <span className="text-sm text-green-700 dark:text-green-400">Saved.</span> : null}
-        {state === "error" ? <span className="text-sm text-red-600">Could not save.</span> : null}
+        <span role="status" aria-live="polite" className="text-sm">
+          {state === "saved" ? <span className="text-green-700 dark:text-green-400">Saved.</span> : null}
+          {state === "error" ? <span className="text-red-600">Could not save.</span> : null}
+        </span>
         {publicUrl ? (
           <a href={publicUrl} className="ml-auto text-sm underline" style={{ color: "var(--accent)" }}>View public page →</a>
         ) : null}
