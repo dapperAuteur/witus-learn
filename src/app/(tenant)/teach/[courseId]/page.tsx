@@ -60,6 +60,8 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             allowCrossCourseCyoa: course.allowCrossCourseCyoa,
             isSequential: course.isSequential,
             isFeatured: course.isFeatured,
+            priceType: course.priceType as "free" | "one_time" | "subscription",
+            price: Number(course.price ?? 0),
           }}
         />
 
