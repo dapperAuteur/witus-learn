@@ -116,8 +116,36 @@ Participation is not only voting:
 - U.S. Const. amends. XV, XIX, XXIV, XXVI. Constitution Annotated, Congress.gov. https://constitution.congress.gov/`,
     },
     {
+      slug: "practice-branches-lawmaking",
+      title: "7 · Practice: branches and lawmaking",
+      exercise: {
+        instructions: "Fill in each blank, then check. Spelling and capitalization are forgiving.",
+        items: [
+          { prompt: "The branch that makes laws is the ___ branch.", answer: "legislative", explanation: "Congress (the House + Senate) writes the laws." },
+          { prompt: "The branch that enforces laws is the ___ branch.", answer: "executive", explanation: "The President and federal agencies carry out the laws." },
+          { prompt: "The branch that interprets laws is the ___ branch.", answer: "judicial", explanation: "The courts interpret laws and the Constitution." },
+          { prompt: "When the President rejects a bill, that action is called a ___.", answer: "veto", explanation: "Congress can override a veto with a two-thirds vote in both chambers." },
+          { prompt: "Congress can override a veto with a ___-thirds vote.", answer: "two", accept: ["2"], explanation: "A two-thirds majority in both the House and Senate overrides a veto." },
+        ],
+      },
+    },
+    {
+      slug: "practice-federalism-courts-rights",
+      title: "8 · Practice: federalism, courts, and rights",
+      exercise: {
+        instructions: "Fill in each blank, then check.",
+        items: [
+          { prompt: "Powers not given to the federal government are reserved to the states by the ___ Amendment (number).", answer: "10th", accept: ["tenth", "10", "ten"], explanation: "The 10th Amendment reserves un-delegated powers to the states and the people." },
+          { prompt: "The court power to strike down unconstitutional laws: judicial ___.", answer: "review", explanation: "Judicial review, established in Marbury v. Madison (1803)." },
+          { prompt: "The 1803 case that established judicial review: Marbury v. ___.", answer: "Madison", explanation: "Marbury v. Madison, 5 U.S. 137 (1803)." },
+          { prompt: "The first ten amendments are collectively the Bill of ___.", answer: "Rights", explanation: "The Bill of Rights protects freedoms like speech, religion, and due process." },
+          { prompt: "A U.S. House term lasts how many years?", answer: "2", accept: ["two"], explanation: "House members are elected every 2 years; Senators every 6; the President every 4." },
+        ],
+      },
+    },
+    {
       slug: "civics-101-quiz",
-      title: "7 · Check your understanding",
+      title: "9 · Check your understanding",
       quiz: {
         passingScore: 70,
         questions: [
@@ -164,6 +192,32 @@ Participation is not only voting:
             explanation:
               "The Bill of Rights — the first ten amendments — protects freedoms like speech, religion, and due process.",
             sourceLessonSlug: "rights-and-participation",
+          },
+          {
+            prompt: "Where do most bills end up?",
+            options: [
+              "Signed into law by the President",
+              "They die in committee",
+              "Overturned by the courts",
+              "Decided by the states",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Most bills never become law — they die in committee before ever reaching a full vote.",
+            sourceLessonSlug: "how-a-bill-becomes-law",
+          },
+          {
+            prompt: "Why can a single vote carry more weight in a local election?",
+            options: [
+              "Local votes count twice",
+              "Turnout is usually much lower",
+              "The Electoral College decides them",
+              "Only citizens can vote locally",
+            ],
+            correctIndex: 1,
+            explanation:
+              "State and local elections often have far lower turnout, so each individual vote carries more weight.",
+            sourceLessonSlug: "elections-and-voting",
           },
         ],
       },

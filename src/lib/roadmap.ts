@@ -63,9 +63,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Help a Campaign, Spotting Misleading Marketing) + per-state template + US map (IN/AZ/AR).
 - ⚪ Learning-How-to-Learn (+ FlashLearn spaced recall); ElementaryMBA robotics/electronics/STEAM;
   Ewe/Twi/Igbo; per-episode BVC assignments; record audio.
-- 🟡 **AI courses** — build all 4 foundations (AI Literacy [flagship], Building with AI [Trade School],
-  AI for Young Makers + AI for Entrepreneurs [ElementaryMBA]) then the mastery ladders. Full plan:
-  \`docs/ai-curriculum.md\`. Start with **AI Literacy** (trust DNA: verify, cite, spot fakes, ethics).
+- 🟡 **AI courses** — **F1 "AI Literacy: Use It Well & Wisely" BUILT** (9 lessons, cited, exercises +
+  quiz, on Learn.WitUS). Next: F2 Building with AI [Trade School], F4 AI for Entrepreneurs + F3 Young
+  Makers [ElementaryMBA], then the mastery ladders. Full plan: \`docs/ai-curriculum.md\`.
+- 🟡 **Admin/Operator workstream** (scheduled next) — a consolidated \`/admin\` dashboard unifying the
+  owner links (domains/live/paths/leads/roadmap) + **tenant settings** (flags: gamification dose,
+  AI tutor, age-gate, coming-soon, **accent/branding**) + **marketing** (campaigns/promos). ~2-3 branches.
 - ⚪ **Schools: Trade School + ElementaryMBA stay separate, bridged** — ElementaryMBA's HS end graduates
   into Trade School via a learning path (not merged).
 
