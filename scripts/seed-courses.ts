@@ -11,6 +11,7 @@ import { CIVICS_101_COURSE } from "./data/civics-101-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
+import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -120,6 +121,23 @@ async function main() {
     slug: "ai-literacy",
     course: AI_LITERACY_COURSE,
     category: "AI & Technology",
+    navigationMode: "linear",
+  });
+
+  // Learning How to Learn — the study-skills foundation, on Learn.WitUS
+  // (cross-cutting; the meta-skill that makes every other course land). Cited to
+  // primary cognitive-science research; points learners to FlashLearn for spaced
+  // recall.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Study Skills", sortOrder: 6 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "learning-how-to-learn",
+    course: LEARNING_HOW_TO_LEARN_COURSE,
+    category: "Study Skills",
     navigationMode: "linear",
   });
 
