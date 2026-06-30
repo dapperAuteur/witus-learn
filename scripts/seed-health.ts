@@ -12,6 +12,8 @@ import { NASM_CPT_COURSE } from "./data/nasm-cpt-course";
 import { NASM_CNC_COURSE } from "./data/nasm-cnc-course";
 import { ECS_FOUNDATIONS_COURSE } from "./data/ecs-foundations-course";
 import { ECS_FITNESS_COURSE } from "./data/ecs-fitness-course";
+import { ECS_NUTRITION_COURSE } from "./data/ecs-nutrition-course";
+import { ECS_NEUROSCIENCE_COURSE } from "./data/ecs-neuroscience-course";
 
 // Seeds the HEALTH / FITNESS courses migrated from CentOS into a witus tenant.
 // The committed data modules under scripts/data/ carry the cleaned, cited content
@@ -49,6 +51,8 @@ const COURSES: HealthCourse[] = [
   { slug: "nasm-cnc", course: NASM_CNC_COURSE, category: "Fitness Certification" },
   { slug: "ecs-foundations", course: ECS_FOUNDATIONS_COURSE, category: "Endocannabinoid System" },
   { slug: "ecs-fitness", course: ECS_FITNESS_COURSE, category: "Endocannabinoid System" },
+  { slug: "ecs-nutrition", course: ECS_NUTRITION_COURSE, category: "Endocannabinoid System" },
+  { slug: "ecs-neuroscience", course: ECS_NEUROSCIENCE_COURSE, category: "Endocannabinoid System" },
 ];
 
 async function ensureInstructor(tenantId: string): Promise<string> {

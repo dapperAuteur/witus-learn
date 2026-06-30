@@ -59,11 +59,12 @@ async function main() {
     console.error("Learn.WitUS tenant missing — run `pnpm seed:tenants` first.");
     process.exit(1);
   }
+  // BAM is the instructor on Learn.WitUS courses (not a synthetic faculty account).
   const instructorId = await ensureInstructor(learnWitus, {
-    id: "seed-witus-faculty",
-    email: "faculty@learn.witus.online",
-    username: "witus-faculty",
-    displayName: "Learn.WitUS Faculty",
+    id: "bam",
+    email: "bam@awews.com",
+    username: "bam",
+    displayName: "BAM",
   });
   await db
     .insert(schema.courseCategories)

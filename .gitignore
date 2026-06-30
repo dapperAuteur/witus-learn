@@ -52,5 +52,7 @@ yarn-error.log*
 /scripts/data/nasm-cnc-course.ts
 /scripts/data/ecs-foundations-course.ts
 /scripts/data/ecs-fitness-course.ts
+/scripts/data/ecs-nutrition-course.ts
+/scripts/data/ecs-neuroscience-course.ts
 /scripts/data/read-your-body-course.ts
 /scripts/data/speedway-course.ts
