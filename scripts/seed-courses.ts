@@ -18,6 +18,7 @@ import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting-course";
 import { AI_L2_DETECTING_AI_COURSE } from "./data/ai-l2-detecting-ai-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
+import { AI_B1_PROMPT_ENGINEERING_COURSE } from "./data/ai-b1-prompt-engineering-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 
@@ -281,18 +282,27 @@ async function main() {
     navigationMode: "linear",
   });
 
-  // Advanced Prompting & Reasoning (L1) — first rung of the AI mastery LADDER's
-  // LITERACY track, in the shared "AI & Technology" category. Builds on F1 (AI
-  // Literacy, the recommended prerequisite) and is for EVERYONE, not just developers:
-  // it deepens prompting + reasoning skill while staying tool-agnostic and NOT
-  // code-heavy. That keeps it distinct from the Builder track's B1, which is the
-  // deep-technical, code-forward sibling (APIs, structured output, evals). Same cited
-  // standard + trust DNA (verify, cite, reasoning ≠ truth) as the other AI courses.
+  // Advanced Prompting & Reasoning (L1) — first rung of the AI mastery LADDER's LITERACY
+  // track, in the shared "AI & Technology" category. Builds on F1 (the recommended prereq)
+  // and is for EVERYONE, not just developers: deepens prompting + reasoning while staying
+  // tool-agnostic and NOT code-heavy — distinct from the Builder track's B1 (deep-technical).
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
     slug: "ai-l1-advanced-prompting",
     course: AI_L1_ADVANCED_PROMPTING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // Prompt Engineering in Depth (B1) — the Builder-track mastery rung that builds on F2
+  // (Building with AI). Same "AI & Technology" category. TECHNICAL: assumes the learner
+  // writes code and calls model APIs — deliberately deeper + more system-oriented than L1.
+  // Trust DNA: treat model output as untrusted; evaluate, don't vibe-check.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-b1-prompt-engineering",
+    course: AI_B1_PROMPT_ENGINEERING_COURSE,
     category: "AI & Technology",
     navigationMode: "linear",
   });
