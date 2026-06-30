@@ -20,10 +20,11 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   coach → next**; gamification = **light layer now** (streaks/goal/mastery), **XP + badges Phase 2**,
   **leaderboards/leagues = per-tenant toggle**; accent = **per-tenant + disciplined**, feedback
   colors **constant** (green/amber/red/orange), tone **warm/encouraging, per-tenant dial**.
-  Phase 0 prototypes in \`docs/prototypes/\`. **Phase 1 done** (mastery dashboard + interactive lesson
-  shell + design-system primitives). **Phase 2 in branch**: XP/levels + badges + per-tenant
-  \`gamification\` flag (off/light/full), accent-key bar, searchable glossary. Phase 3 next =
-  leaderboards surface (when a tenant sets full) + cross-surface polish. BAM likes the CentOS UI/UX.
+  Phases 0–2 **done** (prototypes; mastery dashboard + lesson shell + primitives; XP/badges +
+  gamification flag + accent bar + searchable glossary). **Phase 3a done** (CourseCard w/ progress,
+  my-courses grid, weekly leaderboard). **Phase 3b done** (course-page syllabus + instructor
+  dashboard restyle). **Remaining (Phase 3c):** roll the design across the last surfaces (schools,
+  catalog header, auth pages) + a full WCAG a11y audit + final accent/tone values. BAM likes CentOS.
 - ⚪ **Accessibility / WCAG compliant** — the redesign (and existing surfaces) must be a11y compliant:
   semantic markup, labels, focus states, contrast, keyboard nav, reduced-motion. Bake into Phase 1+.
 - ⚪ **Offline support (PWA)** — the app should work offline. Manifest groundwork exists
@@ -34,12 +35,18 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ⚪ **Media chapters + synced transcripts** — chapter markers with jump buttons; transcript that
   follows the audio/video. (\`audio_chapters\` + \`transcript_content\` columns already exist.)
 - ✅ **Language vocab UX** — glossary is now searchable + collapsible (no more long scroll).
-- ⚪ **Login/Mailgun** — root cause CONFIRMED global (fails on BVC too, not tenant-specific): the prod
-  Mailgun sending domain (sandbox or from-domain ≠ MAILGUN_DOMAIN). The mailer now logs why + a
-  \`[mailer:fallback]\` magic link in the server logs. Fix the Mailgun domain.
+- ✅ **Login 403 fixed** — was Better Auth "Invalid origin" on brand domains; trustedOrigins is now
+  dynamic per registered tenant. (Not Mailgun — that was a wrong early guess.)
+- ⚪ **Magic-link lands on wrong tenant** — clicking the BVC sign-in link opens learn.witus.online,
+  not bettervice.club. Diagnosis: link is generated from \`BETTER_AUTH_URL\` (learn.witus.online);
+  \`rewriteOrigin\` swaps the verify host, but the post-verify redirect resolves against the base URL.
+  **Hold** pending BAM's new WitUS-Online auth system (discuss its impact on this app first).
 - ⚪ **Profile edit UI** — let instructors edit displayName/bio/avatar/links from the dashboard.
 - ⚪ Fee-aware pricing (small); lifetime teacher promo + marketing campaigns (\`plans/future/11\`).
 - ⚪ Tenant-settings admin (flags) self-serve.
+- ⚪ **Growing Belts latitude bands** — prepopulate only 3 commodities; let the user toggle the rest
+  on/off, and add a CentOS-style **key** that shows how overlapping band colors blend (so users can
+  read the mixed colors). Refines the per-commodity belt work already shipped.
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
