@@ -44,3 +44,13 @@ yarn-error.log*
 # editor / os
 .idea/
 .vscode/
+
+# Generated health-course data modules (~5.3 MB). Regenerate from CentOS:
+#   pnpm gen:health   (then pnpm seed:health / pnpm seed:speedway)
+/scripts/data/nasm-cpt-course.ts
+/scripts/data/nasm-ces-course.ts
+/scripts/data/nasm-cnc-course.ts
+/scripts/data/ecs-foundations-course.ts
+/scripts/data/ecs-fitness-course.ts
+/scripts/data/read-your-body-course.ts
+/scripts/data/speedway-course.ts

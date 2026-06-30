@@ -20,6 +20,9 @@
     "seed:courses": "tsx --env-file=.env.local scripts/seed-courses.ts",
     "seed:faa": "tsx --env-file=.env.local scripts/seed-faa.ts",
     "seed:bvc:real": "tsx --env-file=.env.local scripts/seed-bvc-real.ts",
+    "gen:health": "tsx scripts/gen-health-data.ts",
+    "seed:health": "tsx --env-file=.env.local scripts/seed-health.ts",
+    "seed:speedway": "tsx --env-file=.env.local scripts/seed-speedway.ts",
     "seed:owner": "tsx --env-file=.env.local scripts/seed-owner.ts",
     "test": "vitest run"
   },
