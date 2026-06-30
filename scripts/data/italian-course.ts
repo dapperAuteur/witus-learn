@@ -615,5 +615,258 @@ Let's hope the garden grows quickly.
         ],
       },
     },
+
+    // ── Dialogues ─────────────────────────────────────────────────────────
+    // Short, realistic conversations reinforcing taught forms (presente, essere/avere,
+    // condizionale di cortesia "vorrei", futuro). Transcript + gloss + vocab, then a
+    // fill-in exercise, then a quiz.
+    {
+      slug: "dialogo-bar",
+      title: "Dialogo · Al bar",
+      section: "Dialogues",
+      body: `Curb Appeall orders at an Italian bar (café). This conversation reuses the **present tense**, **avere**, and the **polite conditional** (_vorrei_ = "I would like") from the conditional unit.
+
+### La conversazione
+**Barista:** Buongiorno! Cosa desidera?
+_Barista: Good morning! What would you like?_
+
+**Curb:** Buongiorno. Vorrei un caffellatte, per favore.
+_Curb: Good morning. I would like a coffee with milk, please._
+
+**Barista:** Benissimo. Qualcosa da mangiare?
+_Barista: Very well. Anything to eat?_
+
+**Curb:** Sì, che frutta avete oggi?
+_Curb: Yes, what fruit do you have today?_
+
+**Barista:** Abbiamo mele e banane. È tutto fresco.
+_Barista: We have apples and bananas. Everything is fresh._
+
+**Curb:** Allora prendo una mela. Quant'è?
+_Curb: Then I'll have an apple. How much is it?_
+
+**Barista:** Sono quattro euro in tutto.
+_Barista: It's four euros in all._
+
+**Curb:** Ecco a Lei. Grazie mille!
+_Curb: Here you go. Thank you very much!_
+
+### Vocabolario
+| Italiano | English |
+|---|---|
+| il bar | the café/bar |
+| cosa desidera? | what would you like? (formal) |
+| vorrei | I would like (polite) |
+| un caffellatte | a coffee with milk |
+| qualcosa da mangiare? | anything to eat? |
+| quant'è? | how much is it? |
+| ecco a Lei | here you go (formal) |
+
+### Tocca a te
+- Ordina la tua bevanda: "Vorrei ___, per favore." (Order your drink.)
+- Chiedi il prezzo: "Quant'è?" (Ask the price.)`,
+    },
+    {
+      slug: "dialogo-bar-esercizi",
+      title: "Esercizi · Al bar",
+      section: "Dialogues",
+      exercise: {
+        instructions: "Completa il dialogo al bar.",
+        items: [
+          { prompt: "Saluto del mattino: \"___! Cosa desidera?\"", answer: "buongiorno", explanation: "\"Buongiorno\" = good morning." },
+          { prompt: "Ordine cortese: \"___ un caffellatte.\" (volere, condizionale di cortesia)", answer: "vorrei", explanation: "\"Vorrei\" è la forma cortese di volere (io)." },
+          { prompt: "Il barista risponde: \"___ mele e banane.\" (avere, noi)", answer: "abbiamo", explanation: "avere: noi → abbiamo." },
+          { prompt: "Azione immediata: \"Allora ___ una mela.\" (prendere, io — presente)", answer: "prendo", explanation: "prendere: io → prendo (il presente esprime anche il futuro immediato)." },
+          { prompt: "Chiedi il prezzo: \"___'è?\"", answer: "quant", explanation: "\"Quant'è?\" = how much is it?" },
+        ],
+      },
+    },
+    {
+      slug: "dialogo-indicazioni",
+      title: "Dialogo · Chiedere indicazioni",
+      section: "Dialogues",
+      body: `Platypus is lost and asks the way to the market. This dialogue reuses **essere** (location), **andare**, and the **future tense**.
+
+### La conversazione
+**Platypus:** Scusi, dov'è il mercato?
+_Platypus: Excuse me, where is the market?_
+
+**Vicino:** È molto vicino. Vada sempre dritto e giri a destra.
+_Neighbor: It's very close. Go straight ahead and turn right._
+
+**Platypus:** È lontano da qui?
+_Platypus: Is it far from here?_
+
+**Vicino:** No, è a due minuti. Vedrà una grande fontana.
+_Neighbor: No, it's two minutes away. You'll see a big fountain._
+
+**Platypus:** Il mercato è accanto alla fontana?
+_Platypus: Is the market next to the fountain?_
+
+**Vicino:** Sì, proprio di fronte. Non può sbagliare.
+_Neighbor: Yes, right across from it. You can't go wrong._
+
+**Platypus:** Grazie mille per il Suo aiuto!
+_Platypus: Thank you very much for your help!_
+
+### Vocabolario
+| Italiano | English |
+|---|---|
+| dov'è...? | where is...? |
+| sempre dritto | straight ahead |
+| giri a destra / a sinistra | turn right / left |
+| vicino / lontano | near / far |
+| accanto a | next to |
+| di fronte a | across from |
+| non può sbagliare | you can't go wrong |
+
+### Tocca a te
+- Chiedi dov'è un luogo: "Dov'è ___?" (Ask where a place is.)
+- Dai un'indicazione: "Vada sempre dritto e giri a ___." (Give a direction.)`,
+    },
+    {
+      slug: "dialogo-indicazioni-esercizi",
+      title: "Esercizi · Chiedere indicazioni",
+      section: "Dialogues",
+      exercise: {
+        instructions: "Completa il dialogo per chiedere e dare indicazioni.",
+        items: [
+          { prompt: "Chiedi la posizione: \"Dov'___ il mercato?\" (essere)", answer: "è", explanation: "Per la posizione si usa essere: lui/lei → è." },
+          { prompt: "Indicazione: \"Vada sempre ___.\" (straight ahead)", answer: "dritto", explanation: "\"sempre dritto\" = straight ahead." },
+          { prompt: "Gira: \"Giri a ___.\" (right)", answer: "destra", explanation: "\"a destra\" = to the right." },
+          { prompt: "Previsione: \"___ una grande fontana.\" (vedere, Lei — futuro)", answer: "vedrà", explanation: "vedere al futuro, forma di cortesia (Lei): vedrà." },
+          { prompt: "Posizione relativa: \"Il mercato è ___ alla fontana.\" (next to)", answer: "accanto", explanation: "\"accanto a\" = next to." },
+        ],
+      },
+    },
+    {
+      slug: "dialogo-presentazioni",
+      title: "Dialogo · Le presentazioni",
+      section: "Dialogues",
+      body: `Curb introduces a new friend to the otter who teaches the group. This dialogue reuses **essere** and **avere**, and the **future tense** for plans.
+
+### La conversazione
+**Curb:** Ciao, ti presento la mia amica Lontra. È del Brasile.
+_Curb: Hi, let me introduce my friend Otter. She's from Brazil._
+
+**Lontra:** Piacere. Come ti chiami?
+_Otter: Nice to meet you. What's your name?_
+
+**Platypus:** Mi chiamo Platypus. Piacere mio. Che lavoro fai?
+_Platypus: My name is Platypus. My pleasure. What do you do?_
+
+**Lontra:** Sono insegnante. Insegno la salute e l'economia.
+_Otter: I'm a teacher. I teach health and finance._
+
+**Platypus:** Che interessante! Sei nel gruppo da molto tempo?
+_Platypus: How interesting! Have you been in the group long?_
+
+**Lontra:** Sono qui da marzo. Domani cucineremo insieme.
+_Otter: I've been here since March. Tomorrow we'll cook together._
+
+**Platypus:** Perfetto! Sono molto contento di conoscerti.
+_Platypus: Perfect! I'm very happy to meet you._
+
+### Vocabolario
+| Italiano | English |
+|---|---|
+| ti presento... | let me introduce you to... |
+| piacere | nice to meet you |
+| come ti chiami? | what's your name? |
+| mi chiamo... | my name is... |
+| che lavoro fai? | what do you do (for work)? |
+| sono insegnante | I'm a teacher |
+| sono contento/a | I'm happy |
+
+### Tocca a te
+- Presentati: "Mi chiamo ___ e sono ___." (Introduce yourself.)
+- Di' un progetto: "Domani ___." (Say a plan for tomorrow, e.g. "domani cucinerò".)`,
+    },
+    {
+      slug: "dialogo-presentazioni-esercizi",
+      title: "Esercizi · Le presentazioni",
+      section: "Dialogues",
+      exercise: {
+        instructions: "Completa il dialogo delle presentazioni.",
+        items: [
+          { prompt: "Origine: \"Lontra ___ del Brasile.\" (essere)", answer: "è", explanation: "L'origine e l'identità usano essere: lui/lei → è." },
+          { prompt: "Professione: \"___ insegnante.\" (essere, io)", answer: "sono", explanation: "La professione usa essere: io → sono." },
+          { prompt: "Chiedi il nome: \"Come ti ___?\" (chiamarsi)", answer: "chiami", explanation: "\"Come ti chiami?\" = what's your name?" },
+          { prompt: "Emozione: \"___ molto contento di conoscerti.\" (essere, io)", answer: "sono", explanation: "essere: io → sono." },
+          { prompt: "Progetto: \"Domani ___ insieme.\" (cucinare, noi — futuro)", answer: "cucineremo", explanation: "cucinare al futuro: noi → cucineremo." },
+        ],
+      },
+    },
+    {
+      slug: "dialoghi-quiz",
+      title: "Dialoghi · Verifica la comprensione",
+      section: "Dialogues",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "Al bar, come ordina Curb con cortesia?",
+            options: ["Dammi un caffè", "Vorrei un caffellatte, per favore", "Hai del caffè?", "Caffè adesso"],
+            correctIndex: 1,
+            explanation: "\"Vorrei... per favore\" è la forma cortese, al condizionale.",
+            sourceLessonSlug: "dialogo-bar",
+          },
+          {
+            prompt: "\"Abbiamo mele\" — quale verbo e persona?",
+            options: ["avere, io", "avere, noi", "essere, noi", "avere, loro"],
+            correctIndex: 1,
+            explanation: "\"abbiamo\" è avere alla persona \"noi\".",
+            sourceLessonSlug: "dialogo-bar",
+          },
+          {
+            prompt: "\"Quant'è?\" si usa per chiedere:",
+            options: ["il nome", "il prezzo", "l'ora", "la strada"],
+            correctIndex: 1,
+            explanation: "\"Quant'è?\" = how much is it? (il prezzo).",
+            sourceLessonSlug: "dialogo-bar",
+          },
+          {
+            prompt: "Per chiedere dove si trova il mercato si dice:",
+            options: ["Com'è il mercato?", "Dov'è il mercato?", "Chi è il mercato?", "Quand'è il mercato?"],
+            correctIndex: 1,
+            explanation: "La posizione si chiede con \"Dov'è...?\" (essere).",
+            sourceLessonSlug: "dialogo-indicazioni",
+          },
+          {
+            prompt: "\"Giri a destra\" significa:",
+            options: ["Go straight", "Turn left", "Turn right", "Stop"],
+            correctIndex: 2,
+            explanation: "\"a destra\" = to the right.",
+            sourceLessonSlug: "dialogo-indicazioni",
+          },
+          {
+            prompt: "In \"Lontra è del Brasile\", perché \"è\" (essere)?",
+            options: [
+              "Perché è una posizione temporanea",
+              "Perché l'origine e l'identità usano essere",
+              "Perché con i paesi si usa sempre avere",
+              "È un errore; ci vuole \"ha\"",
+            ],
+            correctIndex: 1,
+            explanation: "L'origine e l'identità si esprimono con essere.",
+            sourceLessonSlug: "dialogo-presentazioni",
+          },
+          {
+            prompt: "Qual è una presentazione naturale?",
+            options: ["Io essere Platypus", "Mi chiamo Platypus, piacere", "Tu ti chiami Platypus", "Platypus ha"],
+            correctIndex: 1,
+            explanation: "\"Mi chiamo... piacere\" è la presentazione naturale.",
+            sourceLessonSlug: "dialogo-presentazioni",
+          },
+          {
+            prompt: "\"Domani cucineremo insieme\" è:",
+            options: ["un'azione passata", "un progetto al futuro", "un'abitudine passata", "un dubbio"],
+            correctIndex: 1,
+            explanation: "\"cucineremo\" è il futuro semplice (noi).",
+            sourceLessonSlug: "dialogo-presentazioni",
+          },
+        ],
+      },
+    },
   ],
 };
