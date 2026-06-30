@@ -10,6 +10,7 @@ import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
 import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
 import { STATE_VS_FEDERAL_COURSE } from "./data/state-vs-federal-course";
+import { US_STATE_LOCAL_GOV_COURSE } from "./data/us-state-local-gov-course";
 import { HOW_TO_RUN_COURSE } from "./data/how-to-run-course";
 import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading-marketing-course";
 import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
@@ -131,6 +132,21 @@ async function main() {
     instructorId,
     slug: "state-vs-federal",
     course: STATE_VS_FEDERAL_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // US, State & Local Government: Who Does What — the PRACTICAL civic-engagement angle
+  // (same Civics category, same non-partisan + cited standard). Distinct from its three
+  // siblings: it doesn't re-argue the legal division of power (that's state-vs-federal),
+  // re-teach the document (us-constitution-101), or re-do the system overview (us-civics-101).
+  // It stays on "what each LEVEL actually does day-to-day, and how a person engages with it."
+  // The authoritative-values rule is load-bearing: LOCAL structure VARIES by state, so the
+  // course says so and cites the 2022 Census of Governments rather than asserting one model.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "us-state-local-government",
+    course: US_STATE_LOCAL_GOV_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });

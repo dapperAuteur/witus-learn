@@ -85,10 +85,10 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Matatlán), distinct from tequila's Jalisco (real CentOS geo data; cited Ep 12 + migration note).
   Beer (ep 8) and the tequila-mezcal course already exist, so **Season 2 (eps 8–14) is complete**.
 - 🟡 Civics — ✅ **US Constitution 101**, ✅ **State vs Federal Power**, ✅ **How to Run for Office**,
-  ✅ **How to Help a Campaign** all built (cited; National Archives / Constitution Annotated / FEC /
-  USA.gov / Vote.gov / NCSL / Ballotpedia; case quotes verbatim; state-varying rules — contribution
-  limits, disclosure, ballot-measure process — flagged, not asserted as universal). Remaining:
-  US/state/local civics, Spotting Misleading Marketing + per-state template + US map (IN/AZ/AR).
+  ✅ **How to Help a Campaign**, ✅ **Spotting Misleading Marketing**, ✅ **US/State/Local Government**
+  all built (cited; National Archives / Constitution Annotated / FEC / FTC / FDA / NCSL / Census of
+  Governments / Ballotpedia; case quotes verbatim; everything state-varying flagged + sourced, never
+  asserted as universal). **Civics core complete.** Remaining: per-state template + US map (IN/AZ/AR).
 - ✅ **Learning How to Learn** (cited cog-sci — retrieval/spacing/interleaving/metacognition; points to
   FlashLearn) + ✅ **Intro to Robotics & STEAM** (ElementaryMBA, cited NASA/JPL/micro:bit/Arduino/Code.org).
   Remaining: Ewe/Twi/Igbo (needs native review); per-episode BVC assignments; record audio.
