@@ -9,6 +9,10 @@ import { SPEEDWAY_COURSE } from "./data/speedway-course";
 import { ROBOTICS_STEAM_COURSE } from "./data/robotics-steam-course";
 import { AI_YOUNG_MAKERS_COURSE } from "./data/ai-young-makers-course";
 import { AI_ENTREPRENEURS_COURSE } from "./data/ai-entrepreneurs-course";
+import { AI_Y1_TRAIN_YOUR_MODEL_COURSE } from "./data/ai-y1-train-your-model-course";
+import { AI_Y2_ROBOTICS_AI_COURSE } from "./data/ai-y2-robotics-ai-course";
+import { AI_Y3_CREATIVE_AI_COURSE } from "./data/ai-y3-creative-ai-course";
+import { AI_Y4_SCIENCE_FAIR_CAPSTONE_COURSE } from "./data/ai-y4-science-fair-capstone-course";
 
 // Seeds the ElementaryMBA school's authored courses: the "Speedway: The Greatest Spectacle
 // in Learning" docuseries (migrated from CentOS), the cited, kid-friendly "Intro to Robotics
@@ -105,6 +109,26 @@ async function main() {
     navigationMode: "linear",
     replaceLessons: true,
   });
+  // Young-makers AI mastery ladder (builds on F3), same "AI for Kids" category:
+  // Y1 Train Your Own Model, Y2 Robotics + AI, Y3 Creative AI, Y4 Science-Fair (capstone).
+  // Cited to Teachable Machine, MIT RAISE/Day of AI, micro:bit/Arduino/NASA, Code.org,
+  // Common Sense, UNICEF, US Copyright Office, C2PA, Society for Science.
+  for (const { slug, course } of [
+    { slug: "ai-y1-train-your-model", course: AI_Y1_TRAIN_YOUR_MODEL_COURSE },
+    { slug: "ai-y2-robotics-ai", course: AI_Y2_ROBOTICS_AI_COURSE },
+    { slug: "ai-y3-creative-ai", course: AI_Y3_CREATIVE_AI_COURSE },
+    { slug: "ai-y4-science-fair-capstone", course: AI_Y4_SCIENCE_FAIR_CAPSTONE_COURSE },
+  ]) {
+    await seedAuthoredCourse(db, {
+      tenantId,
+      instructorId,
+      slug,
+      course,
+      category: "AI for Kids",
+      navigationMode: "linear",
+      replaceLessons: true,
+    });
+  }
 
   // AI for Entrepreneurs — F4, the entrepreneurship-track AI course (cited, hype-free) for
   // ElementaryMBA's older/teen + young-adult learners. Same gating.
