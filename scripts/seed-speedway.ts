@@ -8,13 +8,14 @@ import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { SPEEDWAY_COURSE } from "./data/speedway-course";
 import { ROBOTICS_STEAM_COURSE } from "./data/robotics-steam-course";
 import { AI_YOUNG_MAKERS_COURSE } from "./data/ai-young-makers-course";
+import { AI_ENTREPRENEURS_COURSE } from "./data/ai-entrepreneurs-course";
 
-// Seeds the ElementaryMBA school's authored courses: the "Speedway: The Greatest
-// Spectacle in Learning" docuseries (migrated from CentOS), the cited, kid-friendly
-// "Intro to Robotics & STEAM" course, and "Young Makers: AI for Kids" (F3, grades
-// 3-8 AI literacy). Each committed data module carries the cleaned,
-// cited content (narration stage tags stripped; APA `## Sources` kept), so this seeder
-// never needs CentOS. Re-seedable (upsert by courseId,slug).
+// Seeds the ElementaryMBA school's authored courses: the "Speedway: The Greatest Spectacle
+// in Learning" docuseries (migrated from CentOS), the cited, kid-friendly "Intro to Robotics
+// & STEAM" course, "Young Makers: AI for Kids" (F3, grades 3-8 AI literacy), and the cited,
+// hype-free "AI for Entrepreneurs" (F4, teen/young-adult track). Each committed data module
+// carries the cleaned, cited content (narration stage tags stripped; APA `## Sources` kept),
+// so this seeder never needs CentOS. Re-seedable (upsert by courseId,slug).
 // Run: pnpm seed:speedway
 //
 // The ElementaryMBA tenant must already exist (run `pnpm seed:tenants` first) — this
@@ -89,9 +90,8 @@ async function main() {
     replaceLessons: true,
   });
 
-  // Young Makers: AI for Kids — F3, cited, kid-level (grades 3-8) AI literacy on the
-  // same ElementaryMBA school. The school stays flags.comingSoon until launch, so this
-  // is seeded-but-gated like Robotics & STEAM above.
+  // Young Makers: AI for Kids — F3, cited, kid-level (grades 3-8) AI literacy on the same
+  // ElementaryMBA school. Seeded-but-gated like Robotics & STEAM above (school comingSoon).
   await db
     .insert(schema.courseCategories)
     .values({ tenantId, name: "AI for Kids", sortOrder: 3 })
@@ -106,14 +106,32 @@ async function main() {
     replaceLessons: true,
   });
 
+  // AI for Entrepreneurs — F4, the entrepreneurship-track AI course (cited, hype-free) for
+  // ElementaryMBA's older/teen + young-adult learners. Same gating.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId, name: "Entrepreneurship", sortOrder: 4 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId,
+    instructorId,
+    slug: "ai-for-entrepreneurs",
+    course: AI_ENTREPRENEURS_COURSE,
+    category: "Entrepreneurship",
+    navigationMode: "linear",
+    replaceLessons: true,
+  });
+
   const speedwayQuizzes = SPEEDWAY_COURSE.lessons.filter((l) => l.quiz).length;
   const roboticsQuizzes = ROBOTICS_STEAM_COURSE.lessons.filter((l) => l.quiz).length;
   const youngMakersQuizzes = AI_YOUNG_MAKERS_COURSE.lessons.filter((l) => l.quiz).length;
+  const entrepreneursQuizzes = AI_ENTREPRENEURS_COURSE.lessons.filter((l) => l.quiz).length;
   await pool.end();
   console.log(
     `Done. Seeded on "${TARGET_SLUG}": Speedway (${SPEEDWAY_COURSE.lessons.length} lessons, ${speedwayQuizzes} quizzes); ` +
       `Intro to Robotics & STEAM (${ROBOTICS_STEAM_COURSE.lessons.length} lessons, ${roboticsQuizzes} quizzes); ` +
-      `Young Makers: AI for Kids (${AI_YOUNG_MAKERS_COURSE.lessons.length} lessons, ${youngMakersQuizzes} quizzes).`,
+      `Young Makers: AI for Kids (${AI_YOUNG_MAKERS_COURSE.lessons.length} lessons, ${youngMakersQuizzes} quizzes); ` +
+      `AI for Entrepreneurs (${AI_ENTREPRENEURS_COURSE.lessons.length} lessons, ${entrepreneursQuizzes} quizzes).`,
   );
 }
 

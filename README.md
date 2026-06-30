@@ -50,8 +50,8 @@ pnpm seed:bvc:real   # real 21-episode BVC content → Better Vice Club
 pnpm seed:languages  # Spanish/French/Portuguese/Italian → Learn.WitUS
 pnpm seed:health     # health/fitness courses (NASM CPT/CES/CNC, Read Your Body's Data,
                      #   ECS Foundations/Fitness) → Learn.WitUS (see scripts/seed-health.ts TARGET_SLUG)
-pnpm seed:speedway   # ElementaryMBA: Speedway docuseries (Indy 500) + Intro to Robotics & STEAM
-                     #   + Young Makers: AI for Kids (F3, grades 3-8 AI literacy)
+pnpm seed:speedway   # ElementaryMBA: Speedway docuseries (Indy 500), Intro to Robotics & STEAM,
+                     #   Young Makers: AI for Kids (F3), and AI for Entrepreneurs (F4)
 ```
 
 `*.localhost` subdomains resolve to 127.0.0.1 in modern browsers; no `/etc/hosts` edit needed.
