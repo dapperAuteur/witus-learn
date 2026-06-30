@@ -34,7 +34,9 @@ export default async function TenantLayout({ children }: { children: React.React
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <SiteHeader tenant={tenant} />
-      <div className="flex-1">{children}</div>
+      <div id="main-content" className="flex-1">
+        {children}
+      </div>
       <SiteFooter tenant={tenant} />
     </div>
   );
