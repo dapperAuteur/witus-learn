@@ -10,7 +10,10 @@ import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
 import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
 import { STATE_VS_FEDERAL_COURSE } from "./data/state-vs-federal-course";
+import { US_STATE_LOCAL_GOV_COURSE } from "./data/us-state-local-gov-course";
 import { HOW_TO_RUN_COURSE } from "./data/how-to-run-course";
+import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading-marketing-course";
+import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
@@ -132,6 +135,21 @@ async function main() {
     category: "Civics",
     navigationMode: "linear",
   });
+  // US, State & Local Government: Who Does What — the PRACTICAL civic-engagement angle
+  // (same Civics category, same non-partisan + cited standard). Distinct from its three
+  // siblings: it doesn't re-argue the legal division of power (that's state-vs-federal),
+  // re-teach the document (us-constitution-101), or re-do the system overview (us-civics-101).
+  // It stays on "what each LEVEL actually does day-to-day, and how a person engages with it."
+  // The authoritative-values rule is load-bearing: LOCAL structure VARIES by state, so the
+  // course says so and cites the 2022 Census of Governments rather than asserting one model.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "us-state-local-government",
+    course: US_STATE_LOCAL_GOV_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
   // How to Run for Office — practical + strictly non-partisan (the *process*, not who
   // should win). Same Civics category and cited standard. The authoritative-values rule
   // is load-bearing: eligibility, ballot-access (signatures/fees), and state/local
@@ -142,6 +160,34 @@ async function main() {
     instructorId,
     slug: "how-to-run-for-office",
     course: HOW_TO_RUN_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // Spotting Misleading Marketing — consumer/media-literacy in the Civics category
+  // (civic + consumer literacy; same non-partisan + cited standard). Carries the
+  // platform's "verify, don't trust blindly" trust DNA. Cited to the FTC (deception
+  // standard, endorsement/reviews rules, dark patterns), FDA (supplement claims),
+  // FCC (sponsorship ID), and media-literacy orgs (News Literacy Project, Stanford COR).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "spotting-misleading-marketing",
+    course: SPOTTING_MISLEADING_MARKETING_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // How to Help a Campaign — practical + strictly non-partisan (HOW to help any campaign,
+  // candidate, ballot measure, or cause — never WHO to help). Same Civics category and cited
+  // standard. Authoritative-values rule is load-bearing: volunteer time is generally NOT a
+  // contribution, but in-kind (money/resources) is; federal contribution limits are FEC-set
+  // and inflation-indexed, while state/local limits + disclosure + ballot-measure rules VARY
+  // by state — so the course names the rule + points to the source (FEC, USA.gov, Vote.gov,
+  // NCSL, Ballotpedia) rather than asserting one number as universal.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "help-a-campaign",
+    course: HELP_A_CAMPAIGN_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
