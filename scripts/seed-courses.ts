@@ -9,6 +9,8 @@ import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
 import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
+import { STATE_VS_FEDERAL_COURSE } from "./data/state-vs-federal-course";
+import { HOW_TO_RUN_COURSE } from "./data/how-to-run-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
@@ -116,6 +118,30 @@ async function main() {
     instructorId,
     slug: "us-constitution-101",
     course: US_CONSTITUTION_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // State vs Federal Power — a federalism-focused companion in the Civics category
+  // (same non-partisan + cited standard). Goes deeper than US Civics 101 on how the
+  // Constitution divides power between the national government and the states.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "state-vs-federal",
+    course: STATE_VS_FEDERAL_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // How to Run for Office — practical + strictly non-partisan (the *process*, not who
+  // should win). Same Civics category and cited standard. The authoritative-values rule
+  // is load-bearing: eligibility, ballot-access (signatures/fees), and state/local
+  // contribution limits VARY by office/state, so the course names the rule + points to the
+  // source (FEC, USA.gov, NCSL, Ballotpedia) rather than asserting one number as universal.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-to-run-for-office",
+    course: HOW_TO_RUN_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
