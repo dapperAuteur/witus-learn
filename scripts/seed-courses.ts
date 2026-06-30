@@ -17,6 +17,9 @@ import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting-course";
 import { AI_L2_DETECTING_AI_COURSE } from "./data/ai-l2-detecting-ai-course";
+import { AI_L3_ETHICS_COURSE } from "./data/ai-l3-ethics-course";
+import { AI_L4_PRIVACY_SECURITY_COURSE } from "./data/ai-l4-privacy-security-course";
+import { AI_L5_RESEARCHING_COURSE } from "./data/ai-l5-researching-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { AI_B1_PROMPT_ENGINEERING_COURSE } from "./data/ai-b1-prompt-engineering-course";
 import { AI_B2_AGENTS_COURSE } from "./data/ai-b2-agents-automations-course";
@@ -236,6 +239,36 @@ async function main() {
     instructorId,
     slug: "ai-l2-detecting-ai",
     course: AI_L2_DETECTING_AI_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // L3 AI Ethics, Bias & Society — literacy ladder (for everyone, not code-heavy). Cited to
+  // NIST AI RMF + SP 1270, UNESCO AI ethics, the EU AI Act, fairmlbook, and the ACM Code.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-l3-ethics",
+    course: AI_L3_ETHICS_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // L4 Data Privacy & Security in the AI Age — literacy ladder. Cited to NIST Privacy/CSF,
+  // FTC, CISA, GDPR/CCPA, and OWASP LLM (sensitive-info disclosure).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-l4-privacy-security",
+    course: AI_L4_PRIVACY_SECURITY_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // L5 Researching with AI (Cited & Verified) — literacy ladder; the anti-hallucinated-
+  // citation course. Cited to NIST AI RMF, Stanford COR (lateral reading), APA Style, CRAAP.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-l5-researching",
+    course: AI_L5_RESEARCHING_COURSE,
     category: "AI & Technology",
     navigationMode: "linear",
   });
