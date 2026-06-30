@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { LearnerDashboard, DashboardCourse, NextLesson } from "@/db/queries/dashboard";
+import type { LearnerDashboard, DashboardCourse, NextLesson, LeaderRow } from "@/db/queries/dashboard";
 import { ProgressBar, MasteryRing, WeekBars } from "@/components/progress-bits";
 
 const TYPE_ICON: Record<string, string> = {
@@ -28,10 +28,14 @@ export function LearnerDashboardView({
   data,
   name,
   gamification = "light",
+  leaderboard = [],
+  userId,
 }: {
   data: LearnerDashboard;
   name: string;
   gamification?: "off" | "light" | "full";
+  leaderboard?: LeaderRow[];
+  userId?: string;
 }) {
   const { resume, upNext, courses, streak, bestStreak, week, xp, level, xpIntoLevel, xpForLevel, badges } = data;
   const next = upNext[0] ?? null;
@@ -195,6 +199,28 @@ export function LearnerDashboardView({
                   </li>
                 ))}
               </ul>
+            </div>
+          ) : null}
+
+          {full && leaderboard.length > 0 ? (
+            <div className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
+              <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">This week&apos;s leaders</div>
+              <ol className="mt-3 space-y-1.5">
+                {leaderboard.map((row, i) => {
+                  const me = row.userId === userId;
+                  return (
+                    <li
+                      key={row.userId}
+                      className={`flex items-center gap-2 rounded-md px-2 py-1 text-sm ${me ? "font-semibold" : ""}`}
+                      style={me ? { backgroundColor: "color-mix(in srgb, var(--accent) 10%, transparent)" } : undefined}
+                    >
+                      <span className="w-5 shrink-0 text-center tabular-nums text-neutral-400">{i + 1}</span>
+                      <span className="flex-1 truncate">{me ? "You" : row.name}</span>
+                      <span className="tabular-nums text-neutral-500">{row.count}</span>
+                    </li>
+                  );
+                })}
+              </ol>
             </div>
           ) : null}
 

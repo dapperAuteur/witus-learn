@@ -1,5 +1,5 @@
 import "server-only";
-import { and, desc, eq, inArray, isNotNull, sql } from "drizzle-orm";
+import { and, desc, eq, gte, inArray, isNotNull, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses, enrollments, lessonProgress, lessons, userProfiles, type Course } from "@/db/schema";
 import { listLessons } from "@/db/queries/authoring";
@@ -46,6 +46,40 @@ export interface LearnerDashboard {
   xpIntoLevel: number;
   xpForLevel: number;
   badges: Badge[];
+}
+
+export interface LeaderRow {
+  userId: string;
+  name: string;
+  count: number;
+}
+
+/** This week's most active learners in a tenant (completed lessons, last 7 days).
+ *  Only shown when a tenant opts into gamification "full". Tenant-scoped via lessons. */
+export async function getWeeklyLeaderboard(tenantId: string, limit = 8): Promise<LeaderRow[]> {
+  const since = new Date();
+  since.setUTCDate(since.getUTCDate() - 7);
+  const rows = await db
+    .select({
+      userId: lessonProgress.userId,
+      count: sql<number>`count(*)::int`,
+      displayName: userProfiles.displayName,
+      username: userProfiles.username,
+    })
+    .from(lessonProgress)
+    .innerJoin(lessons, eq(lessons.id, lessonProgress.lessonId))
+    .leftJoin(userProfiles, eq(userProfiles.userId, lessonProgress.userId))
+    .where(
+      and(
+        eq(lessons.tenantId, tenantId),
+        isNotNull(lessonProgress.completedAt),
+        gte(lessonProgress.completedAt, since),
+      ),
+    )
+    .groupBy(lessonProgress.userId, userProfiles.displayName, userProfiles.username)
+    .orderBy(desc(sql`count(*)`))
+    .limit(limit);
+  return rows.map((r) => ({ userId: r.userId, name: r.displayName ?? r.username ?? "Learner", count: r.count }));
 }
 
 const XP_PER_LEVEL = 500;

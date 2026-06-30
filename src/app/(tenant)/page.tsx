@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getScopedDb } from "@/db/scoped";
 import { getSession } from "@/lib/session";
-import { getLearnerDashboard } from "@/db/queries/dashboard";
+import { getLearnerDashboard, getWeeklyLeaderboard } from "@/db/queries/dashboard";
 import { brandName } from "@/lib/branding";
 import { CourseCard } from "@/components/course-card";
 import { LearnerDashboardView } from "@/components/learner-dashboard";
@@ -23,10 +23,20 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
   // Logged-in learner → mastery dashboard (unless they asked for the catalog).
   const session = await getSession();
   if (session && sp.view !== "catalog") {
+    const gamification = tenant.flags.gamification ?? "light";
     const data = await getLearnerDashboard(tenant.id, session.user.id);
     if (data.courses.length > 0) {
       const name = session.user.name?.trim().split(/\s+/)[0] || "there";
-      return <LearnerDashboardView data={data} name={name} gamification={tenant.flags.gamification ?? "light"} />;
+      const leaderboard = gamification === "full" ? await getWeeklyLeaderboard(tenant.id) : [];
+      return (
+        <LearnerDashboardView
+          data={data}
+          name={name}
+          gamification={gamification}
+          leaderboard={leaderboard}
+          userId={session.user.id}
+        />
+      );
     }
   }
 

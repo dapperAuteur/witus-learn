@@ -2,12 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { requireTenant } from "@/lib/tenant";
 import { getSession } from "@/lib/session";
-import { listMyCourses } from "@/db/queries/enrollment";
+import { getLearnerDashboard } from "@/db/queries/dashboard";
+import { CourseCard } from "@/components/course-card";
 
 export const metadata: Metadata = { title: "My courses" };
 
 export default async function MyCoursesPage() {
-  await requireTenant();
+  const tenant = await requireTenant();
   const session = await getSession();
 
   if (!session) {
@@ -25,33 +26,30 @@ export default async function MyCoursesPage() {
     );
   }
 
-  const tenant = await requireTenant();
-  const courses = await listMyCourses(tenant.id, session.user.id);
+  const { courses } = await getLearnerDashboard(tenant.id, session.user.id);
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-12">
+    <main className="mx-auto max-w-5xl px-4 py-10">
       <h1 className="text-2xl font-bold">My courses</h1>
       {courses.length === 0 ? (
         <p className="mt-3 text-neutral-500">
           You are not enrolled in any courses yet.{" "}
-          <Link href="/" className="underline">
+          <Link href="/?view=catalog" className="underline" style={{ color: "var(--accent)" }}>
             Browse the catalog
           </Link>
           .
         </p>
       ) : (
-        <ul className="mt-6 divide-y divide-neutral-200 dark:divide-neutral-800">
-          {courses.map(({ enrollment, course }) => (
-            <li key={enrollment.id} className="flex items-center justify-between py-3">
-              <Link href={`/course/${course.id}`} className="font-medium hover:underline">
-                {course.title}
-              </Link>
-              <span className="text-xs text-neutral-500">
-                {enrollment.status === "active" ? "Enrolled" : enrollment.status}
-              </span>
-            </li>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {courses.map((d) => (
+            <CourseCard
+              key={d.course.id}
+              course={d.course}
+              progress={d.percent}
+              href={d.username && d.course.slug ? `/${d.username}/${d.course.slug}` : `/course/${d.course.id}`}
+            />
           ))}
-        </ul>
+        </div>
       )}
     </main>
   );
