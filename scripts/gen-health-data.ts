@@ -513,14 +513,22 @@ function buildFromAcademyCsv(opts: {
     }
   }
 
+  // Section title per module (use the CSV's module_title when present).
+  const modTitles = new Map<number, string>();
+  for (const r of rows) {
+    const m = Number(r.module_order);
+    if (!modTitles.has(m)) modTitles.set(m, (r.module_title ?? "").trim() || `Module ${m}`);
+  }
+  const sectionFor = (mod: number) => modTitles.get(mod) ?? `Module ${mod}`;
+
   const lessons: AuthoredLesson[] = [];
   let prevModule: number | null = null;
   const flushModuleQuiz = (mod: number | null) => {
     if (mod == null) return;
     const quiz = quizByModule.get(mod);
     if (quiz && quiz.questions.length) {
-      const title = `Module ${mod} Knowledge Check`;
-      lessons.push({ slug: `m${mod}-quiz`, title, quiz: capQuiz(quiz, title) });
+      const title = `${sectionFor(mod)} — Knowledge Check`;
+      lessons.push({ slug: `m${mod}-quiz`, title, section: sectionFor(mod), quiz: capQuiz(quiz, title) });
     }
   };
 
@@ -533,6 +541,7 @@ function buildFromAcademyCsv(opts: {
     lessons.push({
       slug: `m${mod}-l${r.lesson_order}-${slugify(r.title)}`.slice(0, 90),
       title: r.title,
+      section: sectionFor(mod),
       body,
     });
   }
@@ -560,6 +569,7 @@ function buildNasmCpt(): AuthoredCourse {
       lessons?: { order: number; file: string; title: string; type?: string }[];
     };
     const order = manifest.module?.order ?? (parseInt(ch.replace(/\D+/g, ""), 10) || 0);
+    const section = manifest.module?.title ?? `Chapter ${order}`;
     for (const l of (manifest.lessons ?? []).sort((a, b) => a.order - b.order)) {
       // Skip manifest entries with no markdown file (e.g. the per-chapter quiz row,
       // which is built separately from _quiz-content.json below).
@@ -571,17 +581,18 @@ function buildNasmCpt(): AuthoredCourse {
       lessons.push({
         slug: `ch${order}-l${l.order}-${slugify(l.title)}`.slice(0, 90),
         title: l.title,
+        section,
         body,
       });
     }
-    // One quiz per chapter from _quiz-content.json.
+    // One quiz per chapter from _quiz-content.json — kept inside its chapter's section.
     const quizFile = join(dir, "_quiz-content.json");
     if (existsSync(quizFile)) {
       try {
         const quiz = convertCentosQuiz(JSON.parse(readFileSync(quizFile, "utf-8")) as CentosQuiz);
         if (quiz.questions.length) {
           const title = `${manifest.module?.title ?? `Chapter ${order}`} — Knowledge Check`;
-          lessons.push({ slug: `ch${order}-quiz`, title, quiz: capQuiz(quiz, title) });
+          lessons.push({ slug: `ch${order}-quiz`, title, section, quiz: capQuiz(quiz, title) });
         }
       } catch {
         /* skip */
@@ -610,6 +621,7 @@ function buildNasmCnc(): AuthoredCourse {
       | { module?: { title?: string; order?: number }; lessons?: { n: number; title: string; lessonMarkdown: string }[] }
       | { n: number; title: string; lessonMarkdown: string }[];
     const order = parseInt(f.replace(/\D+/g, ""), 10);
+    const section = (Array.isArray(raw) ? undefined : raw.module?.title) ?? `Chapter ${order}`;
     const chapterLessons = Array.isArray(raw) ? raw : raw.lessons ?? [];
     for (const l of [...chapterLessons].sort((a, b) => a.n - b.n)) {
       const body = tidy(stripBeats(l.lessonMarkdown ?? ""));
@@ -617,6 +629,7 @@ function buildNasmCnc(): AuthoredCourse {
       lessons.push({
         slug: `ch${order}-l${l.n}-${slugify(l.title)}`.slice(0, 90),
         title: l.title,
+        section,
         body,
       });
     }
@@ -740,8 +753,9 @@ function buildEcsModule(opts: {
       try {
         const quiz = convertEcsQuiz(JSON.parse(r.quiz_content) as EcsQuiz);
         if (quiz.questions.length) {
-          const title = `${cleanEcsTitle(r.title)} (Knowledge Check)`;
-          lessons.push({ slug: `l${r.lesson_order}-quiz`, title, quiz: capQuiz(quiz, title) });
+          const section = cleanEcsTitle(r.title);
+          const title = `${section} (Knowledge Check)`;
+          lessons.push({ slug: `l${r.lesson_order}-quiz`, title, section, quiz: capQuiz(quiz, title) });
         }
       } catch {
         /* skip */
@@ -755,13 +769,14 @@ function buildEcsModule(opts: {
     lessons.push({
       slug: `l${r.lesson_order}-${slugify(cleanTitle)}`.slice(0, 90),
       title: cleanTitle,
+      section: cleanTitle,
       body,
     });
     if (opts.embeddedQuizzes) {
       const quiz = extractEmbeddedQuiz(raw);
       if (quiz) {
         const title = `${cleanTitle} (Knowledge Check)`;
-        lessons.push({ slug: `l${r.lesson_order}-quiz`, title, quiz: capQuiz(quiz, title) });
+        lessons.push({ slug: `l${r.lesson_order}-quiz`, title, section: cleanTitle, quiz: capQuiz(quiz, title) });
       }
     }
   }
@@ -791,6 +806,7 @@ function buildSpeedway(): AuthoredCourse {
     // Episode title from the 3rd line: ### "The Race That Started It All (1911)"
     const titleLine = md.split("\n").find((l) => /^###\s+"/.test(l)) ?? "";
     const title = titleLine.replace(/^###\s+"?|"?\s*$/g, "").trim() || `Episode ${epNum}`;
+    const section = `Episode ${epNum}: ${title}`;
 
     // Extract PART 2 (script) and PART 6 (bibliography).
     const part2 = sliceBetween(md, /^#\s*PART 2[^\n]*$/im, /^#\s*PART 3[^\n]*$/im);
@@ -803,6 +819,7 @@ function buildSpeedway(): AuthoredCourse {
     lessons.push({
       slug: `e${epNum}-${slugify(title)}`.slice(0, 90),
       title: `Episode ${epNum}: ${title}`,
+      section,
       body: body.trim(),
     });
 
@@ -813,7 +830,7 @@ function buildSpeedway(): AuthoredCourse {
         const quiz = convertSpeedwayQuiz(readCsvObjects(join(dir, quizFile)));
         if (quiz.questions.length) {
           const title = `Episode ${epNum} — Quiz`;
-          lessons.push({ slug: `e${epNum}-quiz`, title, quiz: capQuiz(quiz, title) });
+          lessons.push({ slug: `e${epNum}-quiz`, title, section, quiz: capQuiz(quiz, title) });
         }
       } catch {
         /* skip */
