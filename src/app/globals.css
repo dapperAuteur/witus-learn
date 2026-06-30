@@ -13,3 +13,25 @@ body {
   font-family:
     ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
+/* a11y: a visible focus ring for EVERY keyboard-focused element — a global fallback so
+   controls without a per-component focus class still show focus (WCAG 2.4.7). Uses the
+   tenant accent when set. :focus-visible means it won't show on mouse clicks. */
+:focus-visible {
+  outline: 2px solid var(--accent, #2563eb);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* a11y: honor the user's reduced-motion preference — near-instant animations/transitions
+   and no smooth-scroll (WCAG 2.3.3 Animation from Interactions). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -139,8 +139,10 @@ export function CourseSettingsForm({
         <button type="submit" disabled={state === "saving"} className="min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
           {state === "saving" ? "Saving…" : "Save settings"}
         </button>
-        {state === "saved" ? <span className="text-sm text-green-700 dark:text-green-400">Saved.</span> : null}
-        {state === "error" ? <span className="text-sm text-red-600">Could not save.</span> : null}
+        <span role="status" aria-live="polite" className="text-sm">
+          {state === "saved" ? <span className="text-green-700 dark:text-green-400">Saved.</span> : null}
+          {state === "error" ? <span className="text-red-600">Could not save.</span> : null}
+        </span>
       </div>
     </form>
   );
