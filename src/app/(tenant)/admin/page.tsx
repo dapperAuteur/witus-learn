@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "Admin" };
 const CARDS: { href: string; title: string; desc: string; soon?: boolean }[] = [
   { href: "/admin/settings", title: "Brand settings", desc: "Accent, branding, gamification, AI tutor, age-gate, coming-soon." },
   { href: "/admin/domains", title: "Domains", desc: "Map custom domains to schools." },
-  { href: "/admin/marketing", title: "Marketing", desc: "Campaigns, broadcasts, and promo codes.", soon: true },
+  { href: "/admin/marketing", title: "Marketing", desc: "Promo codes now; email campaigns soon." },
   { href: "/admin/leads", title: "Leads", desc: "Lead funnel signups." },
   { href: "/admin/paths", title: "Learning paths", desc: "Sequence courses into guided paths." },
   { href: "/admin/live", title: "Live", desc: "Schedule and run live sessions." },

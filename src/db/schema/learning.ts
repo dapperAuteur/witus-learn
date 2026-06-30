@@ -171,6 +171,33 @@ export const leads = pgTable(
 
 export type Lead = typeof leads.$inferSelect;
 
+// Email campaigns (marketing). Drafts are composed + previewed here; SENDING is a
+// separate, explicitly-confirmed step (no send is wired yet). Tenant-scoped.
+export const emailCampaigns = pgTable(
+  "email_campaigns",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    subject: text("subject").notNull(),
+    body: text("body").notNull(),
+    audience: text("audience").notNull().default("leads"),
+    status: text("status").notNull().default("draft"),
+    sentAt: timestamp("sent_at", { withTimezone: true }),
+    createdBy: text("created_by").references(() => users.id, { onDelete: "set null" }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("email_campaigns_tenant_idx").on(t.tenantId),
+    check("email_campaigns_audience_chk", sql`${t.audience} in ('leads','enrolled')`),
+    check("email_campaigns_status_chk", sql`${t.status} in ('draft','sent')`),
+  ],
+);
+
+export type EmailCampaign = typeof emailCampaigns.$inferSelect;
+
 // Learning paths: a curated, ordered track of courses (flags.paths). Tenant-scoped.
 export const learningPaths = pgTable(
   "learning_paths",
