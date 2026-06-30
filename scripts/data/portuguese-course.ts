@@ -40,6 +40,46 @@ I learn to cook fresh vegetables every day.
 - Diga três coisas que você aprende esta semana. (Say three things you are learning this week.)`,
     },
     {
+      slug: "presente-regulares-pratica",
+      title: "Prática · presente regular",
+      exercise: {
+        instructions: "Escreva a forma correta do verbo no presente.",
+        items: [
+          {
+            prompt: "eu ___ (ajudar)",
+            answer: "ajudo",
+            explanation: "Verbos em -ar: a forma de eu termina em -o (ajud-o).",
+          },
+          {
+            prompt: "nós ___ (aprender)",
+            answer: "aprendemos",
+            explanation: "Verbos em -er: a forma de nós termina em -emos (aprend-emos).",
+          },
+          {
+            prompt: "você ___ (dividir)",
+            answer: "divide",
+            explanation: "Verbos em -ir: você/ele/ela termina em -e (divid-e).",
+          },
+          {
+            prompt: "vocês ___ (ajudar)",
+            answer: "ajudam",
+            explanation: "Verbos em -ar: vocês/eles termina em -am (ajud-am).",
+          },
+          {
+            prompt: "eu ___ (aprender)",
+            answer: "aprendo",
+            explanation: "Verbos em -er: a forma de eu termina em -o (aprend-o).",
+          },
+          {
+            prompt: "Traduza: We share the food.",
+            answer: "Nós dividimos a comida.",
+            accept: ["Dividimos a comida.", "Nós dividimos a comida"],
+            explanation: "Da história: \"Nós dividimos a comida com as crianças.\"",
+          },
+        ],
+      },
+    },
+    {
       slug: "presente-irregulares",
       title: "2 · Present tense: the key irregular verbs",
       body: `A few verbs are irregular but essential. **Ser** and **estar** both mean "to be": use **ser** for identity and traits, **estar** for states and how you feel right now.
@@ -69,6 +109,46 @@ I have a small garden where I grow herbs.
 - Descreva um amigo usando ser e estar. (Describe a friend using ser and estar.)`,
     },
     {
+      slug: "presente-irregulares-pratica",
+      title: "Prática · presente irregular",
+      exercise: {
+        instructions: "Complete com a forma irregular correta no presente.",
+        items: [
+          {
+            prompt: "eu ___ (fazer)",
+            answer: "faço",
+            explanation: "Fazer é irregular: eu faço.",
+          },
+          {
+            prompt: "nós ___ (ter)",
+            answer: "temos",
+            explanation: "Ter: eu tenho, você tem, nós temos, vocês têm.",
+          },
+          {
+            prompt: "vocês ___ (ir)",
+            answer: "vão",
+            explanation: "Ir: eu vou, você vai, nós vamos, vocês vão.",
+          },
+          {
+            prompt: "a lontra ___ (estar) pronta para ensinar",
+            answer: "está",
+            explanation: "Estar para estados: você/ele/ela está. Da história.",
+          },
+          {
+            prompt: "eu ___ (querer) aprender a economizar",
+            answer: "quero",
+            explanation: "Querer: eu quero, você quer, nós queremos, vocês querem.",
+          },
+          {
+            prompt: "Traduza: The otter is very patient.",
+            answer: "A lontra é muito paciente.",
+            accept: ["A lontra é muito paciente"],
+            explanation: "Ser para traços: a lontra é. Da história.",
+          },
+        ],
+      },
+    },
+    {
       slug: "futuro-proximo",
       title: "3 · The near future: ir + infinitive",
       body: `The easiest future is **ir + an infinitive** — like English "going to". In Portuguese there is no "a" between them: conjugate **ir** (vou, vai, vamos, vão) and add the base verb.
@@ -91,6 +171,46 @@ Are you going to study nutrition with us?
 ### Agora é com você
 - O que você vai fazer no fim de semana? (What are you going to do this weekend?)
 - Diga três planos com "ir". (Say three plans using "ir".)`,
+    },
+    {
+      slug: "futuro-proximo-pratica",
+      title: "Prática · futuro próximo (ir + infinitivo)",
+      exercise: {
+        instructions: "Forme o futuro próximo: conjugue ir e some o infinitivo (sem \"a\").",
+        items: [
+          {
+            prompt: "eu ___ caminhar (ir) ao redor do lago",
+            answer: "vou",
+            explanation: "Eu vou + infinitivo. Da história.",
+          },
+          {
+            prompt: "nós ___ cozinhar (ir) uma sopa amanhã",
+            answer: "vamos",
+            explanation: "Nós vamos + infinitivo. Da história.",
+          },
+          {
+            prompt: "Curb ___ compartilhar (ir) a receita dele",
+            answer: "vai",
+            explanation: "Você/ele/ela vai + infinitivo. Da história.",
+          },
+          {
+            prompt: "você ___ estudar (ir) nutrição com a gente?",
+            answer: "vai",
+            explanation: "Você vai + infinitivo. Da história.",
+          },
+          {
+            prompt: "Complete o infinitivo: eu vou ___ (to cook)",
+            answer: "cozinhar",
+            explanation: "Depois de ir vem o infinitivo: cozinhar.",
+          },
+          {
+            prompt: "Traduza: Tomorrow we are going to cook.",
+            answer: "Amanhã nós vamos cozinhar.",
+            accept: ["Amanhã vamos cozinhar.", "Amanhã nós vamos cozinhar"],
+            explanation: "Da história: \"Amanhã nós vamos cozinhar uma sopa.\"",
+          },
+        ],
+      },
     },
     {
       slug: "preterito-perfeito",
@@ -124,6 +244,46 @@ After the meal, they took a walk around the neighborhood.
 - Conte uma coisa que você aprendeu na semana passada. (Tell one thing you learned last week.)`,
     },
     {
+      slug: "preterito-perfeito-pratica",
+      title: "Prática · pretérito perfeito",
+      exercise: {
+        instructions: "Escreva o pretérito perfeito (ações terminadas no passado).",
+        items: [
+          {
+            prompt: "eu ___ (ajudar)",
+            answer: "ajudei",
+            explanation: "Verbos em -ar: eu termina em -ei (ajud-ei).",
+          },
+          {
+            prompt: "você ___ (aprender)",
+            answer: "aprendeu",
+            explanation: "Verbos em -er: você/ele/ela termina em -eu (aprend-eu).",
+          },
+          {
+            prompt: "vocês ___ (dividir)",
+            answer: "dividiram",
+            explanation: "Verbos em -ir: vocês/eles termina em -iram (divid-iram).",
+          },
+          {
+            prompt: "eu ___ (fazer)",
+            answer: "fiz",
+            explanation: "Irregular: fazer → eu fiz, ele fez.",
+          },
+          {
+            prompt: "ele ___ (ir/ser)",
+            answer: "foi",
+            explanation: "Irregular: ir e ser compartilham fui, foi.",
+          },
+          {
+            prompt: "Traduza: We learned to save water.",
+            answer: "Nós aprendemos a economizar água.",
+            accept: ["Aprendemos a economizar água.", "Nós aprendemos a economizar água"],
+            explanation: "Da história: \"Nós aprendemos a economizar água.\"",
+          },
+        ],
+      },
+    },
+    {
       slug: "preterito-imperfeito",
       title: "5 · The imperfect: how things used to be",
       body: `The **pretérito imperfeito** describes the past that was ongoing, habitual, or background — "used to" and "was -ing".
@@ -152,6 +312,46 @@ The garden was always full of fresh fruit.
 - Descreva sua rotina de cinco anos atrás. (Describe your routine from five years ago.)`,
     },
     {
+      slug: "preterito-imperfeito-pratica",
+      title: "Prática · pretérito imperfeito",
+      exercise: {
+        instructions: "Escreva o pretérito imperfeito (o passado contínuo ou habitual).",
+        items: [
+          {
+            prompt: "Curb ___ (caminhar) até o mercado toda manhã",
+            answer: "caminhava",
+            explanation: "Verbos em -ar: você/ele/ela termina em -ava. Da história.",
+          },
+          {
+            prompt: "nós ___ (trabalhar)",
+            answer: "trabalhávamos",
+            explanation: "Verbos em -ar: nós termina em -ávamos (trabalh-ávamos).",
+          },
+          {
+            prompt: "eu ___ (aprender)",
+            answer: "aprendia",
+            explanation: "Verbos em -er/-ir: eu termina em -ia (aprend-ia).",
+          },
+          {
+            prompt: "a horta ___ (ser) sempre cheia de frutas",
+            answer: "era",
+            explanation: "Irregular: ser → era. Da cena de fundo.",
+          },
+          {
+            prompt: "os amigos ___ (conversar) sobre seus sonhos",
+            answer: "conversavam",
+            explanation: "Verbos em -ar: vocês/eles termina em -avam. Da história.",
+          },
+          {
+            prompt: "Traduza: I used to have (ter) a garden.",
+            answer: "Eu tinha uma horta.",
+            accept: ["Tinha uma horta.", "Eu tinha uma horta"],
+            explanation: "Irregular: ter → tinha no imperfeito.",
+          },
+        ],
+      },
+    },
+    {
       slug: "perfeito-vs-imperfeito",
       title: "6 · Preterite vs. imperfect",
       body: `Choosing between the two past tenses is the heart of storytelling. Use the **pretérito perfeito** for a single completed event, and the **imperfeito** for the ongoing scene around it.
@@ -172,6 +372,46 @@ Everyone was talking about money, but the otter changed the subject.
 ### Agora é com você
 - Conte uma história curta do seu dia usando os dois tempos. (Tell a short story of your day using both tenses.)
 - Complete: "Eu dormia quando..." (Finish: "I was sleeping when...")`,
+    },
+    {
+      slug: "perfeito-vs-imperfeito-pratica",
+      title: "Prática · perfeito vs. imperfeito",
+      exercise: {
+        instructions: "Escolha o tempo certo: imperfeito para o fundo, perfeito para o evento.",
+        items: [
+          {
+            prompt: "Curb ___ (caminhar — fundo) pelo parque quando viu a lontra",
+            answer: "caminhava",
+            explanation: "Cena de fundo em andamento → imperfeito. Da história.",
+          },
+          {
+            prompt: "Curb caminhava pelo parque quando ___ (ver — evento) a lontra",
+            answer: "viu",
+            explanation: "Evento único que interrompe → pretérito perfeito. Da história.",
+          },
+          {
+            prompt: "Enquanto ___ (cozinhar, nós — fundo), o Platypus chegou",
+            answer: "cozinhávamos",
+            explanation: "Ação em andamento → imperfeito (nós: -ávamos). Da história.",
+          },
+          {
+            prompt: "Enquanto cozinhávamos, o Platypus ___ (chegar — evento)",
+            answer: "chegou",
+            explanation: "Evento que move a história → perfeito. Da história.",
+          },
+          {
+            prompt: "Todos ___ (falar — fundo) sobre dinheiro, mas a lontra mudou de assunto",
+            answer: "falavam",
+            explanation: "Pano de fundo → imperfeito (eles: -avam). Da história.",
+          },
+          {
+            prompt: "Traduza: ...but the otter changed (mudar) the subject.",
+            answer: "...mas a lontra mudou de assunto.",
+            accept: ["mas a lontra mudou de assunto", "a lontra mudou de assunto"],
+            explanation: "Evento que avança a história → perfeito: mudou. Da história.",
+          },
+        ],
+      },
     },
     {
       slug: "futuro",
@@ -202,6 +442,46 @@ Will you learn to cook with us?
 - Faça três previsões para o próximo ano. (Make three predictions for next year.)`,
     },
     {
+      slug: "futuro-pratica",
+      title: "Prática · futuro do presente",
+      exercise: {
+        instructions: "Escreva o futuro do presente (terminações somadas ao infinitivo inteiro).",
+        items: [
+          {
+            prompt: "eu ___ (trabalhar)",
+            answer: "trabalharei",
+            explanation: "Eu: infinitivo + -ei (trabalhar-ei).",
+          },
+          {
+            prompt: "você ___ (aprender)",
+            answer: "aprenderá",
+            explanation: "Você/ele/ela: infinitivo + -á (aprender-á).",
+          },
+          {
+            prompt: "nós ___ (dividir)",
+            answer: "dividiremos",
+            explanation: "Nós: infinitivo + -emos (dividir-emos).",
+          },
+          {
+            prompt: "Curb e os amigos ___ (abrir) um mercado saudável",
+            answer: "abrirão",
+            explanation: "Vocês/eles: infinitivo + -ão (abrir-ão). Da história.",
+          },
+          {
+            prompt: "eu ___ (fazer)",
+            answer: "farei",
+            explanation: "Irregular: fazer → farei.",
+          },
+          {
+            prompt: "Traduza: We will save money.",
+            answer: "Nós economizaremos dinheiro.",
+            accept: ["Economizaremos dinheiro.", "Nós economizaremos dinheiro"],
+            explanation: "Da história: \"Nós economizaremos dinheiro.\"",
+          },
+        ],
+      },
+    },
+    {
       slug: "condicional",
       title: "8 · The conditional: politeness and “would”",
       body: `The **futuro do pretérito** (conditional) means "would" — for hypotheticals and politeness. Add **-ia, -ia, -íamos, -iam** to the infinitive (same irregular stems as the future: faria, diria, traria).
@@ -222,6 +502,49 @@ Without a budget, it would be hard to save.
 ### Agora é com você
 - O que você faria com mais tempo livre? (What would you do with more free time?)
 - Peça algo com educação usando "Você poderia...?" (Ask for something politely using "Could you...?")`,
+    },
+    {
+      slug: "condicional-pratica",
+      title: "Prática · condicional (futuro do pretérito)",
+      exercise: {
+        instructions: "Escreva o condicional: infinitivo + -ia, -ia, -íamos, -iam.",
+        items: [
+          {
+            prompt: "eu ___ (gostar) de aprender mais receitas",
+            answer: "gostaria",
+            explanation: "Eu: infinitivo + -ia (gostar-ia). Da história.",
+          },
+          {
+            prompt: "Curb ___ (compartilhar) a horta dele",
+            answer: "compartilharia",
+            explanation: "Ele: infinitivo + -ia (compartilhar-ia). Da história.",
+          },
+          {
+            prompt: "você ___ (poder) me ensinar?",
+            answer: "poderia",
+            explanation: "Pedido educado: você poderia...? Da história.",
+          },
+          {
+            prompt: "sem um orçamento, ___ (ser) difícil economizar",
+            answer: "seria",
+            explanation: "Ser no condicional → seria. Da história.",
+          },
+          {
+            prompt: "nós ___ (gostar)",
+            answer: "gostaríamos",
+            explanation: "Nós: infinitivo + -íamos (gostar-íamos).",
+          },
+          {
+            prompt: "Traduza: I would like to learn more healthy recipes.",
+            answer: "Eu gostaria de aprender mais receitas saudáveis.",
+            accept: [
+              "Gostaria de aprender mais receitas saudáveis.",
+              "Eu gostaria de aprender mais receitas saudáveis",
+            ],
+            explanation: "Da história: \"Eu gostaria de aprender mais receitas saudáveis.\"",
+          },
+        ],
+      },
     },
     {
       slug: "subjuntivo-presente",
@@ -248,6 +571,50 @@ Hopefully the garden grows quickly.
 ### Agora é com você
 - Dê três conselhos de saúde com "É importante que...". (Give three health tips with "It is important that...".)
 - Expresse um desejo com "Tomara que...". (Express a wish with "Hopefully...".)`,
+    },
+    {
+      slug: "subjuntivo-presente-pratica",
+      title: "Prática · presente do subjuntivo",
+      exercise: {
+        instructions:
+          "Complete com o presente do subjuntivo (-ar → -e; -er/-ir → -a), geralmente depois de que.",
+        items: [
+          {
+            prompt: "É importante que nós ___ (comer) mais legumes",
+            answer: "comamos",
+            explanation: "comer → eu como → que nós comamos (-er toma -a). Da história.",
+          },
+          {
+            prompt: "que eu ___ (comer)",
+            answer: "coma",
+            explanation: "comer → eu como → que eu coma. Da tabela.",
+          },
+          {
+            prompt: "A lontra recomenda que nós ___ (economizar) um pouco",
+            answer: "economizemos",
+            explanation: "Verbo -ar toma -e: economizar → que nós economizemos. Da história.",
+          },
+          {
+            prompt: "Curb quer que seus amigos ___ (aprender) a cozinhar",
+            answer: "aprendam",
+            explanation: "Verbo -er toma -a: que eles aprendam. Da história.",
+          },
+          {
+            prompt: "Tomara que a horta ___ (crescer) rápido",
+            answer: "cresça",
+            explanation: "crescer → eu cresço → que ela cresça (ç antes de a). Da história.",
+          },
+          {
+            prompt: "Traduza: It is important that we eat more vegetables.",
+            answer: "É importante que nós comamos mais legumes.",
+            accept: [
+              "É importante que comamos mais legumes.",
+              "É importante que nós comamos mais legumes",
+            ],
+            explanation: "Da história: \"É importante que nós comamos mais legumes.\"",
+          },
+        ],
+      },
     },
   ],
 };

@@ -1,21 +1,44 @@
 import Link from "next/link";
 import { getScopedDb } from "@/db/scoped";
+import { getSession } from "@/lib/session";
+import { getLearnerDashboard, getWeeklyLeaderboard } from "@/db/queries/dashboard";
 import { brandName } from "@/lib/branding";
 import { CourseCard } from "@/components/course-card";
+import { LearnerDashboardView } from "@/components/learner-dashboard";
 import { ComingSoon } from "@/components/coming-soon";
 
-type SearchParams = Promise<{ q?: string; category?: string; sort?: string }>;
+type SearchParams = Promise<{ q?: string; category?: string; sort?: string; view?: string }>;
 
-// Tenant catalog. All reads go through the scoped DAL, so only THIS tenant's
-// published courses ever appear. Search/category/sort are server-driven via the
-// query string. Pretty per-instructor URLs land in Phase 3b.
-export default async function CatalogHome({ searchParams }: { searchParams: SearchParams }) {
+// Tenant home. Signed-in learners with enrollments get the "Continue / mastery"
+// dashboard; everyone else (and `?view=catalog`) gets the catalog. All reads go
+// through the scoped DAL, so only THIS tenant's content ever appears.
+export default async function TenantHome({ searchParams }: { searchParams: SearchParams }) {
   const sp = await searchParams;
   const sdb = await getScopedDb();
   const tenant = sdb.tenant;
 
   // Pre-launch schools show a branded holding page instead of an empty catalog.
   if (tenant.flags.comingSoon) return <ComingSoon tenant={tenant} />;
+
+  // Logged-in learner → mastery dashboard (unless they asked for the catalog).
+  const session = await getSession();
+  if (session && sp.view !== "catalog") {
+    const gamification = tenant.flags.gamification ?? "light";
+    const data = await getLearnerDashboard(tenant.id, session.user.id);
+    if (data.courses.length > 0) {
+      const name = session.user.name?.trim().split(/\s+/)[0] || "there";
+      const leaderboard = gamification === "full" ? await getWeeklyLeaderboard(tenant.id) : [];
+      return (
+        <LearnerDashboardView
+          data={data}
+          name={name}
+          gamification={gamification}
+          leaderboard={leaderboard}
+          userId={session.user.id}
+        />
+      );
+    }
+  }
 
   const sort =
     sp.sort === "title" || sp.sort === "featured" || sp.sort === "newest" ? sp.sort : undefined;
@@ -34,6 +57,11 @@ export default async function CatalogHome({ searchParams }: { searchParams: Sear
         <h1 className="mt-1 text-3xl font-bold">{tenant.name}</h1>
         {tenant.tagline ? (
           <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">{tenant.tagline}</p>
+        ) : null}
+        {session ? (
+          <Link href="/" className="mt-3 inline-block text-sm font-medium underline" style={{ color: "var(--accent)" }}>
+            ← Your learning
+          </Link>
         ) : null}
       </header>
 

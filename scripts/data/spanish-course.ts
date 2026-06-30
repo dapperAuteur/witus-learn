@@ -49,6 +49,20 @@ I learn to cook fresh vegetables every day.
 - Di tres cosas que aprendes esta semana. (Say three things you are learning this week.)`,
     },
     {
+      slug: "presente-regulares-practica",
+      title: "Práctica · presente regular",
+      exercise: {
+        instructions: "Escribe la forma correcta del verbo en presente.",
+        items: [
+          { prompt: "yo ___ (ayudar)", answer: "ayudo", explanation: "Verbos -ar: yo → -o." },
+          { prompt: "tú ___ (aprender)", answer: "aprendes", explanation: "Verbos -er: tú → -es." },
+          { prompt: "nosotros ___ (compartir)", answer: "compartimos", explanation: "Verbos -ir: nosotros → -imos." },
+          { prompt: "ellos ___ (escuchar)", answer: "escuchan", explanation: "Verbos -ar: ellos → -an." },
+          { prompt: "Traduce: I learn → Yo ___ (aprender)", answer: "aprendo", explanation: "Verbos -er: yo → -o." },
+        ],
+      },
+    },
+    {
       slug: "presente-irregulares",
       title: "2 · Present tense: the key irregular verbs",
       body: `A handful of verbs are irregular but you use them constantly. **Ser** and **estar** both mean "to be": use **ser** for identity and traits, **estar** for location and how you feel right now.
@@ -79,6 +93,21 @@ I have a small garden where I grow herbs.
 - Describe a un amigo usando ser y estar. (Describe a friend using ser and estar.)`,
     },
     {
+      slug: "presente-irregulares-practica",
+      title: "Práctica · presente irregular",
+      exercise: {
+        instructions: "Escribe la forma correcta del verbo irregular en presente.",
+        items: [
+          { prompt: "yo ___ (estar)", answer: "estoy", explanation: "estar: yo → estoy." },
+          { prompt: "yo ___ (tener)", answer: "tengo", explanation: "tener: yo → tengo." },
+          { prompt: "nosotros ___ (hacer)", answer: "hacemos", explanation: "hacer: nosotros → hacemos." },
+          { prompt: "ellos ___ (querer)", answer: "quieren", explanation: "querer: ellos → quieren." },
+          { prompt: "tú ___ (ir)", answer: "vas", explanation: "ir: tú → vas." },
+          { prompt: "Traduce: I am (identity) → Yo ___ (ser)", answer: "soy", explanation: "ser para identidad: yo → soy." },
+        ],
+      },
+    },
+    {
       slug: "futuro-proximo",
       title: "3 · The near future: ir + a + infinitive",
       body: `The easiest way to talk about the future is **ir + a + an infinitive** — exactly like English "going to". Conjugate only **ir** (voy, vas, va, vamos, van) and keep the second verb in its base form.
@@ -101,6 +130,20 @@ Are you going to study nutrition with us?
 ### Ahora te toca
 - ¿Qué vas a hacer este fin de semana? (What are you going to do this weekend?)
 - Di tres planes usando "ir a". (Say three plans using "ir a".)`,
+    },
+    {
+      slug: "futuro-proximo-practica",
+      title: "Práctica · futuro próximo (ir + a)",
+      exercise: {
+        instructions: "Completa con ir + a + infinitivo. Conjuga solo ir.",
+        items: [
+          { prompt: "yo ___ a cocinar (ir)", answer: "voy", explanation: "ir: yo → voy. El segundo verbo queda en infinitivo." },
+          { prompt: "nosotros ___ a cocinar una sopa (ir)", answer: "vamos", explanation: "ir: nosotros → vamos." },
+          { prompt: "Curb ___ a compartir su receta (ir)", answer: "va", explanation: "ir: él → va." },
+          { prompt: "tú ___ a estudiar nutrición (ir)", answer: "vas", explanation: "ir: tú → vas." },
+          { prompt: "Traduce: I am going to walk → Yo ___ a caminar (ir)", answer: "voy", explanation: "voy a + infinitivo = I am going to ..." },
+        ],
+      },
     },
     {
       slug: "preterito",
@@ -135,6 +178,21 @@ After the meal, they took a walk around the neighborhood.
 - Cuenta una cosa que aprendiste la semana pasada. (Tell one thing you learned last week.)`,
     },
     {
+      slug: "preterito-practica",
+      title: "Práctica · pretérito",
+      exercise: {
+        instructions: "Escribe la forma correcta del verbo en pretérito.",
+        items: [
+          { prompt: "yo ___ (ayudar)", answer: "ayudé", explanation: "Verbos -ar: yo → -é." },
+          { prompt: "él ___ (aprender)", answer: "aprendió", explanation: "Verbos -er: él → -ió." },
+          { prompt: "nosotros ___ (aprender)", answer: "aprendimos", explanation: "Verbos -er: nosotros → -imos." },
+          { prompt: "ellos ___ (compartir)", answer: "compartieron", explanation: "Verbos -ir: ellos → -ieron." },
+          { prompt: "yo ___ (hacer)", answer: "hice", explanation: "hacer es irregular: yo → hice." },
+          { prompt: "Traduce: I went → Yo ___ (ir)", answer: "fui", explanation: "ir/ser comparten el pretérito: yo → fui." },
+        ],
+      },
+    },
+    {
       slug: "imperfecto",
       title: "5 · The imperfect: how things used to be",
       body: `The **imperfecto** describes the past that was ongoing, habitual, or background — "used to" and "was -ing". The endings are very regular:
@@ -164,6 +222,21 @@ The garden was always full of fresh fruit.
 - Describe tu rutina de hace cinco años. (Describe your routine from five years ago.)`,
     },
     {
+      slug: "imperfecto-practica",
+      title: "Práctica · imperfecto",
+      exercise: {
+        instructions: "Escribe la forma correcta del verbo en imperfecto.",
+        items: [
+          { prompt: "yo ___ (trabajar)", answer: "trabajaba", explanation: "Verbos -ar: yo → -aba." },
+          { prompt: "nosotros ___ (trabajar)", answer: "trabajábamos", explanation: "Verbos -ar: nosotros → -ábamos." },
+          { prompt: "ellos ___ (aprender)", answer: "aprendían", explanation: "Verbos -er: ellos → -ían." },
+          { prompt: "yo ___ (compartir)", answer: "compartía", explanation: "Verbos -ir: yo → -ía." },
+          { prompt: "él ___ (ser)", answer: "era", explanation: "ser es irregular: él → era." },
+          { prompt: "Traduce: I used to go → Yo ___ (ir)", answer: "iba", explanation: "ir es irregular en imperfecto: yo → iba." },
+        ],
+      },
+    },
+    {
       slug: "preterito-vs-imperfecto",
       title: "6 · Preterite vs. imperfect",
       body: `Spanish has two past tenses and choosing between them is the heart of storytelling. Use the **pretérito** for a single completed event, and the **imperfecto** for the ongoing scene around it.
@@ -184,6 +257,20 @@ Everyone was talking about money, but the otter changed the subject to health.
 ### Ahora te toca
 - Cuenta una historia corta de tu día usando los dos tiempos. (Tell a short story of your day using both tenses.)
 - Completa: "Yo dormía cuando ..." (Finish: "I was sleeping when ...")`,
+    },
+    {
+      slug: "preterito-vs-imperfecto-practica",
+      title: "Práctica · pretérito vs. imperfecto",
+      exercise: {
+        instructions: "Elige el tiempo correcto: imperfecto para el fondo, pretérito para el evento.",
+        items: [
+          { prompt: "Fondo (imperfecto): nosotros ___ cuando Platypus llegó (cocinar)", answer: "cocinábamos", explanation: "El fondo en marcha usa imperfecto: -ar nosotros → -ábamos." },
+          { prompt: "Fondo (imperfecto): Curb ___ por el parque (caminar)", answer: "caminaba", explanation: "Acción en curso = imperfecto: -ar él → -aba." },
+          { prompt: "Fondo (imperfecto): todos ___ de dinero (hablar)", answer: "hablaban", explanation: "Escena continua = imperfecto: -ar ellos → -aban." },
+          { prompt: "Evento (pretérito): yo ___ a Platypus a cocinar (ayudar)", answer: "ayudé", explanation: "Acción terminada = pretérito: -ar yo → -é." },
+          { prompt: "Traduce el evento: We learned → Nosotros ___ (aprender, pretérito)", answer: "aprendimos", explanation: "Evento completo = pretérito: -er nosotros → -imos." },
+        ],
+      },
     },
     {
       slug: "futuro",
@@ -215,6 +302,21 @@ Will you learn to cook with us?
 - Haz tres predicciones para el próximo año. (Make three predictions for next year.)`,
     },
     {
+      slug: "futuro-practica",
+      title: "Práctica · futuro",
+      exercise: {
+        instructions: "Escribe la forma correcta del verbo en futuro. Las terminaciones se añaden al infinitivo.",
+        items: [
+          { prompt: "yo ___ (trabajar)", answer: "trabajaré", explanation: "Futuro: infinitivo + -é para yo." },
+          { prompt: "tú ___ (aprender)", answer: "aprenderás", explanation: "Futuro: infinitivo + -ás para tú." },
+          { prompt: "nosotros ___ (compartir)", answer: "compartiremos", explanation: "Futuro: infinitivo + -emos para nosotros." },
+          { prompt: "ellos ___ (trabajar)", answer: "trabajarán", explanation: "Futuro: infinitivo + -án para ellos." },
+          { prompt: "yo ___ (tener)", answer: "tendré", explanation: "tener tiene raíz irregular: tendr- + -é." },
+          { prompt: "Traduce: I will do → Yo ___ (hacer)", answer: "haré", explanation: "hacer tiene raíz irregular: har- + -é." },
+        ],
+      },
+    },
+    {
       slug: "condicional",
       title: "8 · The conditional: politeness and “would”",
       body: `The **condicional** means "would" — for hypotheticals and for being polite. Take the infinitive and add **-ía, -ías, -ía, -íamos, -ían** (the same irregular stems as the future: tendría, haría, podría).
@@ -235,6 +337,21 @@ Without a budget, it would be hard to save.
 ### Ahora te toca
 - ¿Qué harías con más tiempo libre? (What would you do with more free time?)
 - Pide algo con cortesía usando "¿Podrías...?" (Ask for something politely using "Could you...?")`,
+    },
+    {
+      slug: "condicional-practica",
+      title: "Práctica · condicional",
+      exercise: {
+        instructions: "Escribe la forma correcta del verbo en condicional (would). Se añade -ía al infinitivo.",
+        items: [
+          { prompt: "yo ___ (trabajar)", answer: "trabajaría", explanation: "Condicional: infinitivo + -ía para yo." },
+          { prompt: "nosotros ___ (aprender)", answer: "aprenderíamos", explanation: "Condicional: infinitivo + -íamos para nosotros." },
+          { prompt: "Curb ___ su jardín (compartir)", answer: "compartiría", explanation: "Condicional: infinitivo + -ía para él." },
+          { prompt: "yo ___ (tener)", answer: "tendría", explanation: "tener usa la raíz irregular tendr- + -ía." },
+          { prompt: "¿___ tú enseñarme? (poder)", answer: "podrías", explanation: "poder usa la raíz irregular podr- + -ías." },
+          { prompt: "Traduce: I would like → Me ___ (gustar)", answer: "gustaría", explanation: "gustar en condicional: gustar + -ía → me gustaría." },
+        ],
+      },
     },
     {
       slug: "subjuntivo-presente",
@@ -262,6 +379,21 @@ Hopefully the garden grows quickly.
 ### Ahora te toca
 - Da tres consejos de salud con "Es importante que...". (Give three health tips with "It is important that...".)
 - Expresa un deseo con "Ojalá que...". (Express a wish with "Hopefully...".)`,
+    },
+    {
+      slug: "subjuntivo-presente-practica",
+      title: "Práctica · subjuntivo presente",
+      exercise: {
+        instructions: "Escribe la forma correcta del subjuntivo presente. Recuerda las terminaciones \"opuestas\".",
+        items: [
+          { prompt: "Quiero que tú ___ (hablar)", answer: "hables", explanation: "Verbos -ar toman -e: hablar → que hables." },
+          { prompt: "Es importante que nosotros ___ (hablar)", answer: "hablemos", explanation: "Verbos -ar: nosotros → -emos." },
+          { prompt: "Recomiendo que tú ___ más verduras (comer)", answer: "comas", explanation: "Verbos -er toman -a: comer → que comas." },
+          { prompt: "Es importante que nosotros ___ (comer)", answer: "comamos", explanation: "Verbos -er: nosotros → -amos." },
+          { prompt: "Curb quiere que sus amigos ___ a cocinar (aprender)", answer: "aprendan", explanation: "Verbos -er: ellos → -an en subjuntivo." },
+          { prompt: "Traduce: that we save → que nosotros ___ (ahorrar)", answer: "ahorremos", explanation: "Verbos -ar: nosotros → -emos." },
+        ],
+      },
     },
   ],
 };

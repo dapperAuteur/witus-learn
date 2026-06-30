@@ -5,6 +5,7 @@ import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, type LessonLockReason } from "@/lib/gating";
 import { LessonPlayer } from "@/components/lesson-player";
 import { MarkCompleteButton } from "@/components/mark-complete-button";
+import { ProgressBar } from "@/components/progress-bits";
 import { CurriculumFeedback } from "@/components/curriculum-feedback";
 import { AssignmentSubmit } from "@/components/assignment-submit";
 import { getSubmission } from "@/db/queries/assignments";
@@ -54,6 +55,10 @@ export default async function LessonPage({ params }: Params) {
   const next = idx < view.lessons.length - 1 ? view.lessons[idx + 1] : null;
   const base = `/${username}/${courseSlug}`;
   const completed = view.completedLessonIds.has(lesson.id);
+  const total = view.lessons.length;
+  const position = idx + 1;
+  const coursePercent = total > 0 ? Math.round((view.completedLessonIds.size / total) * 100) : 0;
+  const remaining = Math.max(0, total - view.completedLessonIds.size);
 
   // Assignment lessons: load the learner's own submission for the submit box.
   const submission =
@@ -74,14 +79,67 @@ export default async function LessonPage({ params }: Params) {
       : [];
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-8">
-      <Link href={base} className="text-sm text-neutral-500 hover:underline">
-        ← {view.course.title}
-      </Link>
-      <h1 className="mt-3 text-2xl font-bold">{lesson.title}</h1>
+    <div>
+      {/* Sticky progress header — course context + position always visible. */}
+      <div className="sticky top-0 z-10 border-b border-neutral-200 bg-white/90 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/90">
+        <div className="mx-auto max-w-6xl px-4 py-3">
+          <div className="flex items-center justify-between gap-3 text-sm">
+            <Link href={base} className="flex min-w-0 items-center gap-2 font-medium text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100">
+              <span aria-hidden>←</span> <span className="truncate">{view.course.title}</span>
+            </Link>
+            <span className="shrink-0 font-medium tabular-nums text-neutral-500">
+              Lesson {position} of {total}
+            </span>
+          </div>
+          <div className="mt-2">
+            <ProgressBar percent={coursePercent} />
+          </div>
+        </div>
+      </div>
 
-      <div className="mt-6">
-        {access.open ? (
+      <div className="mx-auto flex max-w-6xl gap-8 px-4 py-8">
+        {/* Contents rail — completion at a glance. */}
+        <nav aria-label="Lessons in this course" className="hidden w-60 shrink-0 lg:block">
+          <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Lessons</div>
+          <ol className="mt-3 space-y-0.5 text-sm">
+            {view.lessons.map((l) => {
+              const done = view.completedLessonIds.has(l.id);
+              const current = l.id === lesson.id;
+              return (
+                <li key={l.id}>
+                  <Link
+                    href={`${base}/lesson/${l.slug}`}
+                    aria-current={current ? "page" : undefined}
+                    className={`flex items-center gap-2 rounded-md px-2 py-1.5 ${
+                      current
+                        ? "font-semibold"
+                        : "text-neutral-600 hover:bg-neutral-50 dark:text-neutral-400 dark:hover:bg-neutral-900"
+                    }`}
+                    style={current ? { backgroundColor: "color-mix(in srgb, var(--accent) 10%, transparent)", color: "var(--accent)" } : undefined}
+                  >
+                    <span aria-hidden className="grid h-4 w-4 shrink-0 place-items-center">
+                      {done ? (
+                        <span className="text-emerald-500">✓</span>
+                      ) : current ? (
+                        <span style={{ color: "var(--accent)" }}>▸</span>
+                      ) : (
+                        <span className="h-1.5 w-1.5 rounded-full bg-neutral-300 dark:bg-neutral-700" />
+                      )}
+                    </span>
+                    <span className="truncate">{l.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ol>
+        </nav>
+
+        {/* Main lesson column. */}
+        <main className="min-w-0 flex-1">
+          <h1 className="text-2xl font-bold tracking-tight">{lesson.title}</h1>
+
+          <div className="mt-6">
+            {access.open ? (
           <>
             <LessonPlayer lesson={lesson} />
             <div className="mt-6">
@@ -148,22 +206,36 @@ export default async function LessonPage({ params }: Params) {
         <CurriculumFeedback courseId={view.course.id} lessonId={lesson.id} />
       ) : null}
 
-      <nav className="mt-10 flex justify-between text-sm">
-        {prev ? (
-          <Link href={`${base}/lesson/${prev.slug}`} className="hover:underline">
-            ← {prev.title}
-          </Link>
-        ) : (
-          <span />
-        )}
-        {next ? (
-          <Link href={`${base}/lesson/${next.slug}`} className="hover:underline">
-            {next.title} →
-          </Link>
-        ) : (
-          <span />
-        )}
-      </nav>
-    </main>
+          <nav className="mt-10 flex items-center justify-between gap-3 border-t border-neutral-200 pt-5 dark:border-neutral-800">
+            {prev ? (
+              <Link
+                href={`${base}/lesson/${prev.slug}`}
+                className="rounded-lg border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-600 hover:border-current dark:border-neutral-700 dark:text-neutral-300"
+              >
+                ← Previous
+              </Link>
+            ) : (
+              <span />
+            )}
+            <span className="hidden text-center text-xs text-neutral-400 sm:block">
+              {coursePercent === 100
+                ? "Course complete 🎉"
+                : `${remaining} lesson${remaining === 1 ? "" : "s"} to finish`}
+            </span>
+            {next ? (
+              <Link
+                href={`${base}/lesson/${next.slug}`}
+                className="rounded-lg px-6 py-2 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2"
+                style={{ backgroundColor: "var(--accent)", color: "var(--accent-fg, #fff)" }}
+              >
+                Next →
+              </Link>
+            ) : (
+              <span />
+            )}
+          </nav>
+        </main>
+      </div>
+    </div>
   );
 }

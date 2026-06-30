@@ -15,15 +15,28 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
 
 ### Platform backlog
-- ❓ **UI/UX overhaul** — research who does LMS UX best; BAM likes much of the CentOS Academy
-  UI/UX/DX. Improve on it.
+- 🔧 **UI/UX overhaul** — north star **active-practice / mastery** (Duolingo + Brilliant + Khan).
+  Decisions locked: home = **Direction B (mastery dashboard)**; lesson loop = **one idea → drill →
+  coach → next**; gamification = **light layer now** (streaks/goal/mastery), **XP + badges Phase 2**,
+  **leaderboards/leagues = per-tenant toggle**; accent = **per-tenant + disciplined**, feedback
+  colors **constant** (green/amber/red/orange), tone **warm/encouraging, per-tenant dial**.
+  Phase 0 prototypes in \`docs/prototypes/\`. **Phase 1 done** (mastery dashboard + interactive lesson
+  shell + design-system primitives). **Phase 2 in branch**: XP/levels + badges + per-tenant
+  \`gamification\` flag (off/light/full), accent-key bar, searchable glossary. Phase 3 next =
+  leaderboards surface (when a tenant sets full) + cross-surface polish. BAM likes the CentOS UI/UX.
+- ⚪ **Accessibility / WCAG compliant** — the redesign (and existing surfaces) must be a11y compliant:
+  semantic markup, labels, focus states, contrast, keyboard nav, reduced-motion. Bake into Phase 1+.
+- ⚪ **Offline support (PWA)** — the app should work offline. Manifest groundwork exists
+  (\`TenantTheme.manifestUrl\`); needs a service worker + offline shell.
+- ⚪ **Offline video/audio** — media should play offline. CentOS had a solution — review and port it.
 - ⚪ **WYSIWYG + markdown editor** (CentOS) for lesson authoring in the dashboard.
 - ⚪ **Rich lesson media** — first-class video (upload/Cloudinary), YouTube, Google Slides, PDF, PPT.
 - ⚪ **Media chapters + synced transcripts** — chapter markers with jump buttons; transcript that
   follows the audio/video. (\`audio_chapters\` + \`transcript_content\` columns already exist.)
-- ⚪ **Language vocab UX** — glossary is one long scroll; paginate / collapse / search.
-- ⚪ **Login/Mailgun** — verify the prod Mailgun sending domain (sandbox or from-domain mismatch).
-  The mailer now logs why + a stopgap link.
+- ✅ **Language vocab UX** — glossary is now searchable + collapsible (no more long scroll).
+- ⚪ **Login/Mailgun** — root cause CONFIRMED global (fails on BVC too, not tenant-specific): the prod
+  Mailgun sending domain (sandbox or from-domain ≠ MAILGUN_DOMAIN). The mailer now logs why + a
+  \`[mailer:fallback]\` magic link in the server logs. Fix the Mailgun domain.
 - ⚪ **Profile edit UI** — let instructors edit displayName/bio/avatar/links from the dashboard.
 - ⚪ Fee-aware pricing (small); lifetime teacher promo + marketing campaigns (\`plans/future/11\`).
 - ⚪ Tenant-settings admin (flags) self-serve.
@@ -31,12 +44,22 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ FAA Part 107; ✅ BVC real 21-episode content (lessons + quizzes + maps + Coffee assignment).
-- 🟡 **Deepen the thin courses** — languages need exercises/quizzes/dialogues + an AI tutor that
-  *evaluates the learner's sentences* (not just explains); civics needs more depth per branch.
+- 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
+  a **sentence-evaluating coach**: the learner writes a sentence and the AI checks grammar/word-order
+  grounded only in the course, cites the rule, and gives a next prompt. Next: dialogues; civics depth.
+- ✅ **Accent/special-character helper** — clickable accent bar on the exercise + sentence inputs
+  (inserts é, ñ, ã, ç, è… into the focused field). Follow-up: per-language character sets.
+- ⚪ **BVC Season 2 missing episodes** — beer, mezcal (pairs with tequila), and one other are absent;
+  add them to the S2 lineup.
 - 🟡 Remaining civics courses (Constitution, State-vs-Federal, US/state/local civics, How to Run,
   Help a Campaign, Spotting Misleading Marketing) + per-state template + US map (IN/AZ/AR).
 - ⚪ Learning-How-to-Learn (+ FlashLearn spaced recall); ElementaryMBA robotics/electronics/STEAM;
   Ewe/Twi/Igbo; per-episode BVC assignments; record audio.
+- 🟡 **AI courses** — build all 4 foundations (AI Literacy [flagship], Building with AI [Trade School],
+  AI for Young Makers + AI for Entrepreneurs [ElementaryMBA]) then the mastery ladders. Full plan:
+  \`docs/ai-curriculum.md\`. Start with **AI Literacy** (trust DNA: verify, cite, spot fakes, ethics).
+- ⚪ **Schools: Trade School + ElementaryMBA stay separate, bridged** — ElementaryMBA's HS end graduates
+  into Trade School via a learning path (not merged).
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
