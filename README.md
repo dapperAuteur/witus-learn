@@ -41,6 +41,18 @@ pnpm seed:tenants                 # creates BVC + a dummy "Acme Academy" test te
 pnpm dev                          # http://bvc.localhost:3040  /  http://acme.localhost:3040
 ```
 
+Optional content seeds (each needs `seed:tenants` first; re-seedable — upsert by
+`(courseId, slug)`):
+
+```bash
+pnpm seed:faa        # FAA Part 107 → Trade School
+pnpm seed:bvc:real   # real 21-episode BVC content → Better Vice Club
+pnpm seed:languages  # Spanish/French/Portuguese/Italian → Learn.WitUS
+pnpm seed:health     # health/fitness courses (NASM CPT/CES/CNC, Read Your Body's Data,
+                     #   ECS Foundations/Fitness) → Learn.WitUS (see scripts/seed-health.ts TARGET_SLUG)
+pnpm seed:speedway   # Speedway docuseries (Indy 500) → ElementaryMBA
+```
+
 `*.localhost` subdomains resolve to 127.0.0.1 in modern browsers; no `/etc/hosts` edit needed.
 
 ```bash

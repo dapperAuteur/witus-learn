@@ -52,6 +52,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ FAA Part 107; ✅ BVC real 21-episode content (lessons + quizzes + maps + Coffee assignment).
+- 🔧 **Health/fitness courses migrated from CentOS** (in branch \`feat/health-courses-migration\`) —
+  NASM CPT/CES/CNC, "Read Your Body's Data" (5-week tracker-data longevity guide), and ECS
+  (Endocannabinoid System) Foundations + Fitness → Learn.WitUS (\`pnpm seed:health\`); the Speedway
+  Indy-500 docuseries (13 episodes) → ElementaryMBA (\`pnpm seed:speedway\`). Stage tags stripped,
+  APA \`## Sources\` kept. **Needs a vetting pass before publish: ECS lectures came from an older
+  video-script format (em-dashes/AI-tell residue), CPT \`## Sources\` is boilerplate not real APA,
+  and 3 ECS sub-courses (Nutrition partial, Neuroscience md-only) + Speedway S2/S3 are not yet
+  imported.** See the branch's operator task for the full list.
 - 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
   a **sentence-evaluating coach**: the learner writes a sentence and the AI checks grammar/word-order
   grounded only in the course, cites the rule, and gives a next prompt. Next: dialogues; civics depth.
