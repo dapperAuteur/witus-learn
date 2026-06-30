@@ -19,7 +19,7 @@ export function tenantMetadata(tenant: TenantRecord | null): Metadata {
     description,
     applicationName: name,
     icons: tenant?.theme.faviconUrl ? { icon: tenant.theme.faviconUrl } : undefined,
-    manifest: tenant?.theme.manifestUrl,
+    manifest: tenant?.theme.manifestUrl ?? "/manifest.webmanifest",
     openGraph: {
       siteName: name,
       title: name,
