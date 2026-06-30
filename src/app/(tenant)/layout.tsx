@@ -1,11 +1,14 @@
 import type { CSSProperties } from "react";
+import { headers } from "next/headers";
 import { requireTenant } from "@/lib/tenant";
 import { hasAcknowledgedAge } from "@/lib/age-gate";
 import { brandName } from "@/lib/branding";
 import { getSiteUrl } from "@/lib/site-url";
+import { isWitusBrandedHost } from "@/lib/witus-host";
 import { organizationJsonLd } from "@/lib/seo/json-ld";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { EcosystemFooter } from "@/components/ecosystem-footer";
 import { AgeGate } from "@/components/age-gate";
 
 // Wraps every tenant-facing surface. Resolves the brand from the host (404 on an
@@ -27,6 +30,14 @@ export default async function TenantLayout({ children }: { children: React.React
 
   const jsonLd = organizationJsonLd(tenant, await getSiteUrl());
 
+  // WitUS-branded surfaces (the apex + *.witus.online, incl. learn.witus.online)
+  // and explicit opt-in tenants get the cross-product ecosystem footer; white-label
+  // tenants on their own domains keep the isolated per-tenant footer.
+  const headerList = await headers();
+  const host = headerList.get("x-forwarded-host") ?? headerList.get("host");
+  const showEcosystemFooter =
+    isWitusBrandedHost(host) || tenant.flags.ecosystemSso === true;
+
   return (
     <div style={style} className="flex min-h-screen flex-col">
       <script
@@ -37,7 +48,11 @@ export default async function TenantLayout({ children }: { children: React.React
       <div id="main-content" className="flex-1">
         {children}
       </div>
-      <SiteFooter tenant={tenant} />
+      {showEcosystemFooter ? (
+        <EcosystemFooter tenant={tenant} />
+      ) : (
+        <SiteFooter tenant={tenant} />
+      )}
     </div>
   );
 }
