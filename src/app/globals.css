@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Manual theme control: `dark:` utilities apply when a `.dark` class is on an ancestor
+   (set by the no-FOUC script in the layout + the theme toggle), instead of following
+   prefers-color-scheme directly. "System" mode adds/removes `.dark` to match the OS. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   color-scheme: light dark;
 }
