@@ -29,9 +29,10 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - 🔧 **Accessibility / WCAG** — global \`:focus-visible\` ring + \`prefers-reduced-motion\` shipped;
   labeled copy controls; \`role=status\` aria-live form feedback. Remaining: full contrast audit +
   a comprehensive keyboard/screen-reader sweep across every surface.
-- ⚪ **Offline support (PWA)** — the app should work offline. Manifest groundwork exists
-  (\`TenantTheme.manifestUrl\`); needs a service worker + offline shell.
-- ⚪ **Offline video/audio** — media should play offline. CentOS had a solution — review and port it.
+- ✅ **Offline support (PWA)** — conservative per-origin service worker (network-first navigation +
+  \`/offline\` fallback; cache-first hashed assets; API/cross-origin never cached), tenant-aware
+  \`/manifest.webmanifest\`, and a \`NEXT_PUBLIC_DISABLE_SW=1\` kill-switch. Test on a preview first.
+- 🟡 **Offline video/audio** — media should play offline. CentOS had a solution — review and port it.
 - ⚪ **WYSIWYG + markdown editor** (CentOS) for lesson authoring in the dashboard.
 - ⚪ **Rich lesson media** — first-class video (upload/Cloudinary), YouTube, Google Slides, PDF, PPT.
 - ⚪ **Media chapters + synced transcripts** — chapter markers with jump buttons; transcript that
