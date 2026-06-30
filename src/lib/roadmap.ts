@@ -81,10 +81,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   (inserts é, ñ, ã, ç, è… into the focused field). Follow-up: per-language character sets.
 - ⚪ **BVC Season 2 missing episodes** — beer, mezcal (pairs with tequila), and one other are absent;
   add them to the S2 lineup.
-- 🟡 Remaining civics courses (Constitution, State-vs-Federal, US/state/local civics, How to Run,
-  Help a Campaign, Spotting Misleading Marketing) + per-state template + US map (IN/AZ/AR).
-- ⚪ Learning-How-to-Learn (+ FlashLearn spaced recall); ElementaryMBA robotics/electronics/STEAM;
-  Ewe/Twi/Igbo; per-episode BVC assignments; record audio.
+- 🟡 Civics — ✅ **US Constitution 101** built (cited; National Archives + Constitution Annotated +
+  Marbury v. Madison, all verbatim/verified). Remaining: State-vs-Federal, US/state/local civics, How
+  to Run, Help a Campaign, Spotting Misleading Marketing + per-state template + US map (IN/AZ/AR).
+- ✅ **Learning How to Learn** (cited cog-sci — retrieval/spacing/interleaving/metacognition; points to
+  FlashLearn) + ✅ **Intro to Robotics & STEAM** (ElementaryMBA, cited NASA/JPL/micro:bit/Arduino/Code.org).
+  Remaining: Ewe/Twi/Igbo (needs native review); per-episode BVC assignments; record audio.
 - 🟡 **AI courses** — **F1 "AI Literacy" + F2 "Building with AI" BUILT** (F2: 12 lessons / 4 sections,
   cited NIST AI RMF / OWASP LLM Top 10 / RAG, on the Trade School, coming-soon-gated). Next: F4 AI for
   Entrepreneurs + F3 Young Makers [ElementaryMBA], then the mastery ladders. Plan: \`docs/ai-curriculum.md\`.
