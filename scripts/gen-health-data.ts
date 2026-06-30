@@ -670,7 +670,7 @@ function extractEmbeddedQuiz(rawMd: string): QuizContent | null {
     if (!prompt) continue;
     const rest = lines.join("\n");
 
-    let options: string[] = [];
+    const options: string[] = [];
     let correctFromMark = -1;
     const pushOpt = (raw: string) => {
       const isCorrect = /✓|✔|\(correct\)|^\*\*[^*]+\*\*$/.test(raw.trim());
