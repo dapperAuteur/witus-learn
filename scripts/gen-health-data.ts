@@ -78,49 +78,261 @@ const ECS_PROD_LINE_LABELS = [
   "SLIDE NOTES",
   "SLIDE",
   "SCRIPT",
+  "NARRATOR",
   "Target Duration",
   "Audience",
+  "Audiences",
   "Reading Level",
   "Duration",
   "Timing",
+  "Prerequisites",
+  "Learning Objectives",
 ];
 
+// Trailing production-scaffolding sections that are NOT lesson prose. Everything from
+// the first such heading to (but not including) the bibliography is dropped; the
+// bibliography is re-attached separately. These are author notes, embedded quizzes
+// (extracted elsewhere), cross-promotion, ASCII pathway diagrams, transitions, etc.
+const ECS_SCAFFOLD_SECTION =
+  /^#{1,4}\s*(?:\*\*)?(?:LECTURE \d+\s+)?(LEARNING OBJECTIVES|CROSS-COURSE (?:PATHWAY DIAGRAM|CONNECTIONS?|INTEGRATION MAP)|[^\n]*(?:SUMMARY|CONNECTIONS?)\s*[&+]\s*CROSS-COURSE [^\n]*|[^\n]*[&+]\s*CROSS-COURSE CONNECTIONS?|AUDIENCE APPLICATION NOTES?|COMPLEXITY ADAPTATION NOTES?|SCIENTIFIC EVIDENCE AND CONTROVERS\w*|CONTROVERSY|EVIDENCE GRADING|(?:EMBEDDED )?KNOWLEDGE CHECKS?\s*\((?:Used|Embedded)[^\n]*|EMBEDDED KNOWLEDGE CHECKS?|POST-?LECTURE (?:QUIZ|MATERIALS?)|QUIZ QUESTIONS?|COMPREHENSIVE FINAL QUIZ|LECTURE TRANSITION|MODULE \d[^\n]*(?:OVERVIEW|COMPLETION|SUMMARY|STATEMENT)|PREVIEW OF|(?:CLOSING|WRAP-?UP|WHAT'?S COMING NEXT|COURSE PREVIEW|NEXT (?:WEEK|LECTURE|STEPS)|COMING UP)[^\n]*|[^\n]*&\s*KNOWLEDGE CHECK[^\n]*|[^\n]*KNOWLEDGE CHECKS?\s*(?:WITH ANSWERS)?[^\n]*\(Used[^\n]*)\b[^\n]*$/im;
+
+// Promotional / hedging "AI-tell" phrasings carried over from the marketing video
+// scripts. We rewrite or delete each so the prose reads like a textbook, not an ad.
+// Each entry is [pattern, replacement]; order matters (most-specific first).
+const ECS_AI_TELLS: [RegExp, string][] = [
+  [/Welcome to the most important discovery in modern medicine that most people have never heard of\.?\s*/gi, "This course introduces a body system most people have never heard of. "],
+  [/the most important discovery in modern medicine that most people have never heard of/gi, "a system most people have never heard of"],
+  [/,?\s*and why this knowledge could change your life/gi, ""],
+  [/but here'?s what blew everyone'?s minds:?\s*/gi, "Notably, "],
+  [/here'?s what blew everyone'?s minds:?\s*/gi, ""],
+  [/but here'?s what(?:'?s)? (revolutionary|exciting|shocking|surprising|fascinating|wild|mind-blowing)[:,]?\s*/gi, ""],
+  [/here'?s what(?:'?s)? (revolutionary|exciting|shocking|surprising|fascinating|wild|mind-blowing)[:,]?\s*/gi, ""],
+  [/you'?ll understand your body better than many doctors\.?/gi, ""],
+  [/\bThis was HUGE\.?\s*/g, ""],
+  [/\b(it'?s|this is) (truly )?(revolutionary|remarkable|incredible|amazing|astonishing|game-changing)\b/gi, "it is significant"],
+  [/\bgame-changing\b/gi, "important"],
+  [/\bmind-?blowing\b/gi, "striking"],
+  [/\blet me tell you\b[:,]?\s*/gi, ""],
+  [/\bbelieve it or not[:,]?\s*/gi, ""],
+  [/\bthink about it[—,:]?\s*/gi, ""],
+];
+
+// Pull the bibliography ("## REFERENCES (APA Format)") off the end so the rest of the
+// body can be aggressively trimmed without touching the citations (which use en-dashes
+// in page ranges and must survive verbatim). Returns [bodyWithoutRefs, refs].
+function splitEcsReferences(md: string): [string, string] {
+  const lines = crlf(md).split("\n");
+  const i = lines.findIndex((l) => /^#{1,4}\s*(REFERENCES|References|Bibliography|Sources)\b/.test(l));
+  if (i < 0) return [md, ""];
+  const after = lines.slice(i + 1);
+  // Stop the bibliography at the next heading (a trailing author-note section).
+  const stop = after.findIndex((l) => /^#{1,4}\s/.test(l));
+  const refs = (stop < 0 ? after : after.slice(0, stop)).join("\n").trim();
+  return [lines.slice(0, i).join("\n"), refs];
+}
+
+// Title-Case-ish ALL-CAPS heading → sentence case, keeping obvious acronyms upper.
+const KEEP_UPPER = new Set([
+  "ECS", "CB1", "CB2", "THC", "CBD", "AEA", "BBB", "HPA", "DNA", "RNA",
+  "BDNF", "GI", "HRV", "LTP", "LTD", "ATP", "FAAH", "MAGL", "PEA", "2-AG",
+]);
+function toSentenceCase(s: string): string {
+  return s
+    .split(/\s+/)
+    .map((w, i) => {
+      const bare = w.replace(/[^A-Za-z0-9-]/g, "");
+      if (KEEP_UPPER.has(bare.toUpperCase())) return w;
+      if (i === 0) return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+      return w.toLowerCase();
+    })
+    .join(" ");
+}
+
+// Convert a video-script em-dash to the punctuation that reads best. The ECS scripts
+// use the em-dash almost exclusively for asides/appositives (" — ") and a few tight
+// noun pairings ("word—word"). A comma reads correctly for both, EXCEPT when the dash
+// sits between a complete clause and a following capitalised independent clause, where
+// a period is cleaner. References are handled separately, so page-range EN-dashes
+// ("381–382") are never touched here.
+function deDash(text: string): string {
+  let out = text;
+  // " — Capital..." that ends one independent clause and starts another → ". "
+  out = out.replace(/([^\s—])\s+—\s+([A-Z][a-z])/g, (_m, before: string, after: string) =>
+    /[a-z0-9'")!?]/.test(before) ? `${before}. ${after}` : `${before}, ${after}`,
+  );
+  // Spaced em-dash mid-sentence → comma.
+  out = out.replace(/\s+—\s+/g, ", ");
+  // Tight em-dash "word—word" → comma+space (appositive).
+  out = out.replace(/([A-Za-z0-9'")])—(?=[A-Za-z0-9'"(])/g, "$1, ");
+  // Any survivors (around punctuation / line edges) → comma.
+  out = out.replace(/\s*—\s*/g, ", ");
+  // Tidy up commas we may have produced next to existing punctuation.
+  out = out.replace(/,\s*([.,;:!?])/g, "$1");
+  out = out.replace(/,\s+,/g, ",");
+  return out;
+}
+
 function stripEcsTags(md: string): string {
-  let out = crlf(md);
-  // Unwrap citations first so we keep the APA reference inline.
+  // 1. Peel off the bibliography so it survives all the aggressive trimming below.
+  const [bodyRaw, refs] = splitEcsReferences(md);
+  let out = crlf(bodyRaw);
+
+  // 2. Unwrap citations first so we keep the APA reference inline: **[Citation: X]** -> (X).
   out = out.replace(/\*\*\[Citation:\s*([^\]]+)\]\*\*/gi, "($1)");
-  // Drop slide headings ("### Slide 3: ...") — production scaffolding.
+
+  // 3. Excise every scaffolding section INDIVIDUALLY (each runs from its heading to the
+  //    next heading of the same-or-higher level). These appear both before the lesson
+  //    body (LEARNING OBJECTIVES, CROSS-COURSE PATHWAY DIAGRAM) and after it (EMBEDDED
+  //    KNOWLEDGE CHECKS, LECTURE TRANSITION, etc.), so a blanket truncate-to-end would
+  //    eat real prose. We drop each block in place and keep iterating.
+  {
+    const headingLevel = (l: string) => {
+      const m = l.match(/^(#{1,4})\s/);
+      return m ? m[1].length : 0;
+    };
+    for (let guard = 0; guard < 50; guard++) {
+      const lines = out.split("\n");
+      const start = lines.findIndex((l) => ECS_SCAFFOLD_SECTION.test(l));
+      if (start < 0) break;
+      const level = headingLevel(lines[start]) || 2;
+      let end = lines.length;
+      for (let i = start + 1; i < lines.length; i++) {
+        const lvl = headingLevel(lines[i]);
+        if (lvl > 0 && lvl <= level) {
+          end = i;
+          break;
+        }
+      }
+      out = [...lines.slice(0, start), ...lines.slice(end)].join("\n");
+    }
+  }
+
+  // 4. Drop fenced ASCII-art / diagram code blocks (CROSS-COURSE pathway boxes).
+  out = out.replace(/```[\s\S]*?```/g, "");
+
+  // 5. Drop slide headings ("### Slide 3: ...") — production scaffolding.
   out = out.replace(/^#{2,4}\s*Slide\s*\d+[^\n]*$/gim, "");
-  // Drop the per-lecture production title/subtitle ("# Module 1, Lecture 1: ..." and
-  // "## Video Lecture Script with Slide Notes & Timing") — the lesson has a title field.
+
+  // 6. Drop the per-lecture production title/subtitle lines. The lesson carries a title
+  //    field, so the leading "# Module 1, Lecture 1: ...", "## Module 1a: ... | Lecture 1",
+  //    "## <Course> Course - Module N, (Mini-)Lecture X", "## Video Lecture Script ...",
+  //    "### \"Quoted subtitle\"", "#### Integrated Discovery Approach" all go.
   out = out.replace(/^#\s*Module\s*\d+,\s*Lecture\s*\d+:[^\n]*$/gim, "");
+  out = out.replace(/^#{1,4}\s*Module\s*\d+[a-z]?:[^\n]*Lecture[^\n]*$/gim, "");
+  out = out.replace(/^#{1,4}\s*[^\n]*Course\s*[-–]\s*Module\s*\d+[^\n]*$/gim, "");
+  // Top-of-file course/section name H1s ("# Neuroscience for ECS Optimization",
+  // "# Nutrition Foundation Course - Module 1, Mini-Lecture 1.1"). The lesson title
+  // already carries this; the H1 is production scaffolding.
+  out = out.replace(/^#\s+(Neuroscience for ECS Optimization|[A-Z][^\n]*(Foundation Course|for ECS Optimization))[^\n]*$/gim, "");
   out = out.replace(/^#{1,3}\s*Video Lecture Script[^\n]*$/gim, "");
-  // Drop whole production-direction lines ("**VISUAL CUE:** ...", "**SCRIPT:** ...",
-  // "**Target Duration:** ...", etc.) AND bare label lines ("**SCRIPT:**" alone).
+  out = out.replace(/^#{3,4}\s*Integrated Discovery Approach\s*$/gim, "");
+  // A heading whose entire content is a quoted string is the script echoing the lesson
+  // title ('## "Micronutrients: ECS Enzyme Helpers ..."'). The lesson has a title field.
+  out = out.replace(/^#{1,4}\s*"[^"\n]+"\s*$/gim, "");
+  // A "**Learning Objectives:**" / "**Prerequisites:**" bold label followed by its bullet
+  // list is front-matter scaffolding (Nutrition uses inline labels, not headings). Drop
+  // the label line AND the contiguous bullet block that follows it.
+  out = out.replace(
+    /^[ \t]*\*\*(Learning Objectives|Prerequisites|Objectives)\s*:?\s*\*\*:?[^\n]*\n(?:[ \t]*[-*][^\n]*\n?)*/gim,
+    "",
+  );
+  // An inline "Cross-course connections for this lecture:" label followed by its arrow
+  // ("**→ ECS Foundations:** ...") block is cross-promotional scaffolding, not lesson
+  // prose. Drop the label line and the contiguous arrow/bullet block beneath it.
+  out = out.replace(
+    /^[ \t]*(?:\*\*)?Cross-course connections[^\n]*:?(?:\*\*)?[^\n]*\n(?:[ \t]*(?:\*\*)?[-*→][^\n]*\n?|[ \t]*\n)*/gim,
+    "",
+  );
+
+  // 7. Drop whole production-direction lines ("**VISUAL CUE:** ...", "**SCRIPT:** ...",
+  //    "**Target Duration:** ...") AND bare label lines ("**SCRIPT:**" alone).
   for (const label of ECS_PROD_LINE_LABELS) {
-    // Match the label line itself, allowing an optional "(timecode)" or other
-    // parenthetical between the label and the colon, e.g. "**SCRIPT (2:00-3:30):**".
-    // No leading \s* — that would swallow the previous line's newline and break the
-    // per-line ^ anchor across consecutive labels.
     const re = new RegExp(`^[ \\t]*\\*\\*${label}\\b[^\\n*]*:\\*\\*[^\\n]*$`, "gim");
     out = out.replace(re, "");
   }
-  // Inline italic recording directions: *Pause here and ask: "..."*, *Beat*, etc.
-  // (single-asterisk emphasis that is a stage cue, not prose). Only strip when the
-  // italic span starts with a known cue verb so we don't eat ordinary emphasis.
+
+  // 8. Inline italic recording directions (*Pause here and ask: "..."*, *Beat*, etc.)
+  //    plus the embedded-knowledge-check Q/A lines (*Question: ...* / *Answer: ...*).
   out = out.replace(
     /\*\s*(Pause|Beat|Transition|Note to narrator|Ask|Emphasize)\b[^*\n]*\*/gi,
     "",
   );
-  // Drop every remaining **[ ... ]** production tag (PAUSE, Knowledge Check,
-  // Evidence Level, Complexity Note, etc.).
-  out = out.replace(/\*\*\[[^\]]*\]\*\*/g, "");
-  // Normalise the bibliography heading to the platform convention.
-  out = out.replace(/^#{1,3}\s*REFERENCES.*$/gim, "## Sources");
-  // Section timing markers like "## OPENING HOOK (0:00-2:00)" -> drop the timecode.
-  out = out.replace(/\s*\(\d{1,2}:\d{2}\s*[–-]\s*\d{1,2}:\d{2}\)/g, "");
-  // A leading horizontal rule left after the metadata block is removed.
-  out = out.replace(/^\s*---\s*$/m, "");
+  out = out.replace(/^[ \t]*\*\s*(Question|Answer)\s*:[^\n]*$/gim, "");
+  // Inline embedded knowledge-check answers "*(Answer: ...)*" and bolded question
+  // prompts "- **Question:** ...?" interleaved with prose (the real quiz is extracted
+  // separately). Remove the whole span / line.
+  // "*(Answer: ...)*" — answer text may itself contain "(...)" so match lazily up to
+  // the closing ")*" rather than the first ")".
+  out = out.replace(/\*\(\s*Answer:[\s\S]*?\)\*/gi, "");
+  out = out.replace(/^[ \t]*[-*]?\s*\*\*Question:?\*\*[^\n]*$/gim, "");
+  out = out.replace(/^[ \t]*\(\s*Answer:[^\n]*\)\s*$/gim, "");
+
+  // 9. Drop remaining bracketed production tags in all the bold shapes the scripts use:
+  //    "**[Knowledge Check]**", "**[Preview Hook]:**" (colon before the closing **), and
+  //    "**[Historical Context]:**". Then drop bare inline tags "[Evidence Grade B]",
+  //    "[Citation: ...]" and standalone "[LABEL]" lines.
+  out = out.replace(/\*\*\[[^\]]*\]\s*:?\s*\*\*\s*:?/g, "");
+  out = out.replace(/\*\*\[[^\]]*\]\*\*\s*:?/g, "");
+  out = out.replace(/\[(?:Evidence Grade[^\]]*|Grade [A-D]|Citation:[^\]]*|Scientific Evidence[^\]]*)\]/gi, "");
+  out = out.replace(/^\s*\[[A-Z][^\]\n]*\]\s*$/gm, "");
+
+  // 10. Remove footnote-superscript citation markers ("endocannabinoids¹") — the APA
+  //     bibliography is the citation of record; the superscripts dangle without it.
+  out = out.replace(/[¹²³⁴⁵⁶⁷⁸⁹⁰]+/g, "");
+
+  // 11. Drop section timing markers ("(0:00-2:00)", "(0:00–2:30)") off heading lines
+  //     FIRST so the ALL-CAPS heading converter below sees a clean heading.
+  out = out.replace(/\s*\(\d{1,2}:\d{2}\s*[–—-]\s*\d{1,2}:\d{2}\)/g, "");
+
+  //     ALL-CAPS script section headings ("## OPENING HOOK", "## SECTION 2: ...") →
+  //     sentence case so they read as lesson subheads; drop "SECTION N:" prefixes and
+  //     production-y suffixes ("& Recap", "& Knowledge Check"); rename script "hooks"
+  //     to a neutral "Introduction".
+  out = out.replace(/^(#{2,4})\s+([A-Z][A-Z0-9 ,&'/.:()–—\-]{4,})\s*$/gm, (_m, hashes: string, text: string) => {
+    let cleaned = text
+      .replace(/^SECTION\s*\d+\s*:?\s*/i, "")
+      .replace(/\s*&\s*(RECAP|KNOWLEDGE CHECK|FOUNDATION SETTING|WRAP-?UP|NEXT STEPS?|HOOK)\b/gi, "")
+      .trim();
+    if (/^OPENING\b/i.test(cleaned)) cleaned = "Introduction";
+    return `${hashes} ${toSentenceCase(cleaned)}`;
+  });
+
+  // 12. Strip the wrapping double-quotes the script puts around every spoken paragraph.
+  //     A line that is entirely "..." is narration, not a real quotation; unwrap it.
+  out = out.replace(/^[ \t]*"([^"\n][^\n]*?)"[ \t]*$/gm, "$1");
+  // Orphan OPEN-quote at the very start of a line when the rest of the line has no
+  // closing quote (script narration that opens a quote and runs into a list/paragraph).
+  out = out.replace(/^[ \t]*"(?=[A-Za-z0-9])([^"\n]*)$/gm, "$1");
+  // Orphan CLOSE-quote at the very end of a line when that line has no opening quote
+  // (the script's multi-paragraph narration leaves a dangling close-quote). A line
+  // with a balanced pair (e.g. a real inline "term") keeps both.
+  out = out.replace(/^([^"\n]*)"[ \t]*$/gm, "$1");
+
+  // 13. Normalise the bibliography heading + drop stray horizontal rules.
+  out = out.replace(/^#{1,4}\s*REFERENCES.*$/gim, "## Sources");
+  out = out.replace(/^\s*---\s*$/gm, "");
+
+  // 14. Remove the marketing AI-tell phrasings.
+  for (const [re, rep] of ECS_AI_TELLS) out = out.replace(re, rep);
+
+  // 15. First-person narrator self-introductions → third-person framing.
+  out = out.replace(
+    /I'?m Brand Anthony McDonald,?\s*and I'?ve studied (over )?(\d+\+? years of )?research on\s*/gi,
+    "Researchers have spent decades studying ",
+  );
+  out = out.replace(/\bI'?m Brand Anthony McDonald[.,]?\s*/gi, "");
+
+  // 16. Em-dash → reader-friendly punctuation (body only; refs untouched).
+  out = deDash(out);
+
+  // 16b. Re-capitalise a sentence start that was lower-cased when an AI-tell clause was
+  //      deleted mid-sentence ("... of the decade. what the study ..." → "... What the
+  //      study ..."). Only fires right after sentence-ending punctuation, so it can't
+  //      touch legitimate lowercase mid-sentence words.
+  out = out.replace(/([.!?]["')]?\s+)([a-z])/g, (_m, sep: string, ch: string) => sep + ch.toUpperCase());
+
+  // 17. Re-attach the (verbatim) bibliography under the platform heading.
+  if (refs) out = `${out.trim()}\n\n## Sources\n\n${refs}`;
   return out;
 }
 
@@ -153,6 +365,17 @@ function tidy(md: string): string {
 }
 
 // ── quiz conversion ───────────────────────────────────────────────────────────
+// House rule (BAM): a REGULAR quiz is 10 questions or fewer; only finals/exams may run
+// longer. We cap any converted quiz to the first 10 questions unless its title marks it
+// as a final/exam/comprehensive/midterm. `capQuiz` is applied to every quiz the
+// generator emits (ECS, NASM, speedway); the title is passed where one is available.
+const REGULAR_QUIZ_MAX = 10;
+const isExamTitle = (title?: string) => /final|exam|comprehensive|midterm/i.test(title ?? "");
+function capQuiz(quiz: QuizContent, title?: string): QuizContent {
+  if (isExamTitle(title) || quiz.questions.length <= REGULAR_QUIZ_MAX) return quiz;
+  return { ...quiz, questions: quiz.questions.slice(0, REGULAR_QUIZ_MAX) };
+}
+
 interface CentosQuiz {
   passingScore?: number;
   questions: {
@@ -296,7 +519,8 @@ function buildFromAcademyCsv(opts: {
     if (mod == null) return;
     const quiz = quizByModule.get(mod);
     if (quiz && quiz.questions.length) {
-      lessons.push({ slug: `m${mod}-quiz`, title: `Module ${mod} Knowledge Check`, quiz });
+      const title = `Module ${mod} Knowledge Check`;
+      lessons.push({ slug: `m${mod}-quiz`, title, quiz: capQuiz(quiz, title) });
     }
   };
 
@@ -356,11 +580,8 @@ function buildNasmCpt(): AuthoredCourse {
       try {
         const quiz = convertCentosQuiz(JSON.parse(readFileSync(quizFile, "utf-8")) as CentosQuiz);
         if (quiz.questions.length) {
-          lessons.push({
-            slug: `ch${order}-quiz`,
-            title: `${manifest.module?.title ?? `Chapter ${order}`} — Knowledge Check`,
-            quiz,
-          });
+          const title = `${manifest.module?.title ?? `Chapter ${order}`} — Knowledge Check`;
+          lessons.push({ slug: `ch${order}-quiz`, title, quiz: capQuiz(quiz, title) });
         }
       } catch {
         /* skip */
@@ -410,14 +631,108 @@ function buildNasmCnc(): AuthoredCourse {
 }
 
 // ── 4. ECS — Endocannabinoid System (Foundations + Fitness from CSV) ───────────
+// Extract the multiple-choice "Post-Lecture Quiz" embedded in the raw lesson markdown
+// of the Nutrition + Neuroscience CSVs (those CSVs leave the quiz_content column empty
+// and ship the quiz inside text_content). Across the 42 lessons the scripts use several
+// shapes, all handled here:
+//   • question marker:  "**Question 1:**"  OR  "**Q1:**"
+//   • options per line:  "- a) text ✓"  or  "- b) **text** ✓"
+//   • options one line:  "a) text  b) **text** ✓  c) text  d) text"
+//   • answer line:       "*Answer: c — ...*"  or  "**Answer:** c) text - ..."
+// The correct option is taken from the ✓/bold marker if present, else from the answer
+// line's letter. Open-ended "comprehensive" questions (no a)/b) options) are skipped.
+// Returns null when no parseable multiple-choice quiz is present.
+function extractEmbeddedQuiz(rawMd: string): QuizContent | null {
+  const md = crlf(rawMd);
+  const start = md.search(/^#{1,4}\s*(POST-?LECTURE QUIZ|QUIZ QUESTIONS?)\b/im);
+  if (start < 0) return null;
+  // Quiz region runs from the heading to the bibliography / next major author section.
+  const tail = md.slice(start);
+  const stopAt = tail.slice(2).search(
+    /^#{1,4}\s*(REFERENCES|References|Bibliography|AUDIENCE APPLICATION|COMPLEXITY|CROSS-COURSE|LECTURE TRANSITION|MODULE \d)/m,
+  );
+  const region = stopAt < 0 ? tail : tail.slice(0, stopAt + 2);
+
+  const letterIdx: Record<string, number> = { a: 0, b: 1, c: 2, d: 3, e: 4 };
+  const stripOpt = (s: string) =>
+    s
+      .replace(/\s*(✓|✔|\(correct\)|←\s*correct)\s*/gi, " ")
+      .replace(/\*\*/g, "")
+      .replace(/\s{2,}/g, " ")
+      .trim();
+
+  const questions: QuizContent["questions"] = [];
+  // Split on each question marker ("**Question 3:**" or "**Q3:**"); keep text after it.
+  const blocks = region.split(/^\*\*(?:Question\s*\d+|Q\d+):?\*\*/im).slice(1);
+  for (const block of blocks) {
+    const lines = block.split("\n");
+    const prompt = (lines.shift() ?? "").replace(/\*\*/g, "").trim();
+    if (!prompt) continue;
+    const rest = lines.join("\n");
+
+    let options: string[] = [];
+    let correctFromMark = -1;
+    const pushOpt = (raw: string) => {
+      const isCorrect = /✓|✔|\(correct\)|^\*\*[^*]+\*\*$/.test(raw.trim());
+      const text = stripOpt(raw);
+      if (!text) return;
+      if (isCorrect && correctFromMark < 0) correctFromMark = options.length;
+      options.push(text);
+    };
+
+    // Per-line options: "- a) text" / "a) text" each on its own line.
+    const perLine = [...rest.matchAll(/^[ \t]*[-*]?\s*([a-e])\)\s*(.+?)\s*$/gim)];
+    if (perLine.length >= 2) {
+      for (const m of perLine) pushOpt(m[2]);
+    } else {
+      // Inline options on a single line: "a) .. b) .. c) .. d) ..". Split on the
+      // " <letter>) " boundaries (letter must be followed by ")" and a space).
+      const inlineLine =
+        lines.find((l) => (l.match(/\b[a-e]\)\s/g) ?? []).length >= 2) ?? "";
+      const parts = inlineLine.split(/(?=(?:^|\s)[a-e]\)\s)/);
+      for (const p of parts) {
+        const m = p.match(/^\s*([a-e])\)\s*([\s\S]+)$/);
+        if (m) pushOpt(m[2]);
+      }
+    }
+    if (options.length < 2) continue;
+
+    // Answer line: letter + explanation.
+    const ans = rest.match(/(?:\*Answer:|\*\*Answer:\*\*)\s*([a-e])\)?\s*[—–-]?\s*([^\n*]*)/i);
+    let correctIndex = correctFromMark;
+    let explanation: string | undefined;
+    if (ans) {
+      if (correctIndex < 0) correctIndex = letterIdx[ans[1].toLowerCase()] ?? -1;
+      explanation = ans[2].trim() || undefined;
+    }
+    if (correctIndex < 0 || correctIndex >= options.length) continue;
+    questions.push({ prompt, options, correctIndex, explanation });
+  }
+  return questions.length ? { passingScore: 80, questions } : null;
+}
+
 function buildEcsModule(opts: {
   csv: string;
   title: string;
   description: string;
+  /** When true, mine each text lesson's body for an embedded Post-Lecture Quiz
+   *  (Nutrition + Neuroscience CSVs ship quizzes inline, not as separate rows). */
+  embeddedQuizzes?: boolean;
 }): AuthoredCourse {
   const rows = readCsvObjects(opts.csv).sort(
     (a, b) => Number(a.lesson_order) - Number(b.lesson_order),
   );
+  // Drop the "Lecture N:" / "Quiz:" prefix and convert the first " — " separator to a
+  // colon so titles read "Topic: Subtitle" instead of the script's em-dash style.
+  const cleanEcsTitle = (t: string): string => {
+    const base = (t ?? "")
+      .replace(/^(Lecture|Mini-Lecture)\s*[\d.]+:\s*/i, "")
+      .replace(/^Quiz:\s*/i, "")
+      .trim();
+    const colonised = base.includes(": ") ? base : base.replace(/\s+—\s+/, ": ");
+    return colonised.replace(/\s+—\s+/g, ", ").trim() || (t ?? "");
+  };
+
   const lessons: AuthoredLesson[] = [];
   for (const r of rows) {
     if (r.lesson_type === "quiz") {
@@ -425,20 +740,30 @@ function buildEcsModule(opts: {
       try {
         const quiz = convertEcsQuiz(JSON.parse(r.quiz_content) as EcsQuiz);
         if (quiz.questions.length) {
-          lessons.push({ slug: `l${r.lesson_order}-quiz`, title: r.title, quiz });
+          const title = `${cleanEcsTitle(r.title)} (Knowledge Check)`;
+          lessons.push({ slug: `l${r.lesson_order}-quiz`, title, quiz: capQuiz(quiz, title) });
         }
       } catch {
         /* skip */
       }
       continue;
     }
-    const body = tidy(stripBeats(stripEcsTags(r.text_content ?? "")));
+    const raw = r.text_content ?? "";
+    const body = tidy(stripBeats(stripEcsTags(raw)));
     if (!body) continue;
+    const cleanTitle = cleanEcsTitle(r.title);
     lessons.push({
-      slug: `l${r.lesson_order}-${slugify(r.title)}`.slice(0, 90),
-      title: r.title.replace(/^Lecture\s*\d+:\s*/i, "").trim() || r.title,
+      slug: `l${r.lesson_order}-${slugify(cleanTitle)}`.slice(0, 90),
+      title: cleanTitle,
       body,
     });
+    if (opts.embeddedQuizzes) {
+      const quiz = extractEmbeddedQuiz(raw);
+      if (quiz) {
+        const title = `${cleanTitle} (Knowledge Check)`;
+        lessons.push({ slug: `l${r.lesson_order}-quiz`, title, quiz: capQuiz(quiz, title) });
+      }
+    }
   }
   return { title: opts.title, description: opts.description, lessons };
 }
@@ -487,7 +812,8 @@ function buildSpeedway(): AuthoredCourse {
       try {
         const quiz = convertSpeedwayQuiz(readCsvObjects(join(dir, quizFile)));
         if (quiz.questions.length) {
-          lessons.push({ slug: `e${epNum}-quiz`, title: `Episode ${epNum} — Quiz`, quiz });
+          const title = `Episode ${epNum} — Quiz`;
+          lessons.push({ slug: `e${epNum}-quiz`, title, quiz: capQuiz(quiz, title) });
         }
       } catch {
         /* skip */
@@ -593,6 +919,45 @@ function main() {
         "How movement tunes your endocannabinoid system (ECS). This audio-first course covers the 'runner's high', finding your intensity sweet spot, cardio and strength effects on ECS chemistry, and building a personal ECS-friendly fitness plan — cited throughout.",
     }),
     "Source: content/tutorials/ecs/fitness-ecs-module1-import.csv",
+  );
+
+  // 5c. ECS Nutrition — 18 mini-lectures, clean CSV, quizzes embedded in the body.
+  const ecsCoursesRoot = join(
+    CENTOS,
+    "docs",
+    "CentOS Courses",
+    "ECS CentOS version",
+    "ECS Courses",
+  );
+  emit(
+    "ecs-nutrition-course",
+    "ECS_NUTRITION_COURSE",
+    buildEcsModule({
+      csv: join(
+        ecsCoursesRoot,
+        "ECS Course 3 Nutrition Documents",
+        "ECS_Nutrition_Course_Import.csv",
+      ),
+      title: "The Endocannabinoid System: Nutrition",
+      embeddedQuizzes: true,
+      description:
+        "How the food you eat builds and tunes your endocannabinoid system (ECS). This audio-first course covers the macronutrients and micronutrients behind endocannabinoid synthesis, the omega-6 to omega-3 balance, cannabimimetic foods like cacao, and how to build anti-inflammatory, ECS-supporting meals. Cited throughout, with a knowledge check per lesson.",
+    }),
+    "Source: docs/CentOS Courses/ECS CentOS version/ECS Courses/ECS Course 3 Nutrition Documents/ECS_Nutrition_Course_Import.csv",
+  );
+
+  // 5d. ECS Neuroscience — 24 lectures (4 modules), clean CSV, quizzes embedded in body.
+  emit(
+    "ecs-neuroscience-course",
+    "ECS_NEUROSCIENCE_COURSE",
+    buildEcsModule({
+      csv: join(ecsCoursesRoot, "files1", "Neuroscience_ECS_Course_Import.csv"),
+      title: "The Endocannabinoid System: Neuroscience",
+      embeddedQuizzes: true,
+      description:
+        "Where the endocannabinoid system (ECS) lives and works in the brain. This audio-first course maps CB1 and CB2 receptors across brain regions, walks through synaptic transmission and neuroplasticity, and connects the ECS to mood, pain, sleep, the gut-brain axis, and healthy aging. Cited throughout, with a knowledge check per lesson.",
+    }),
+    "Source: docs/CentOS Courses/ECS CentOS version/ECS Courses/files1/Neuroscience_ECS_Course_Import.csv",
   );
 
   // 6. speedway (goes to ElementaryMBA, not health — but generated here)
