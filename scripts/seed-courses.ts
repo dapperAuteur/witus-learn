@@ -283,7 +283,6 @@ async function main() {
     navigationMode: "linear",
   });
 
-<<<<<<< HEAD
   // Advanced Prompting & Reasoning (L1) — first rung of the AI mastery LADDER's LITERACY
   // track, in the shared "AI & Technology" category. Builds on F1 (the recommended prereq)
   // and is for EVERYONE, not just developers: deepens prompting + reasoning while staying
