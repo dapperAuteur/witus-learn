@@ -89,9 +89,11 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Learning How to Learn** (cited cog-sci — retrieval/spacing/interleaving/metacognition; points to
   FlashLearn) + ✅ **Intro to Robotics & STEAM** (ElementaryMBA, cited NASA/JPL/micro:bit/Arduino/Code.org).
   Remaining: Ewe/Twi/Igbo (needs native review); per-episode BVC assignments; record audio.
-- 🟡 **AI courses** — **F1 "AI Literacy" + F2 "Building with AI" BUILT** (F2: 12 lessons / 4 sections,
-  cited NIST AI RMF / OWASP LLM Top 10 / RAG, on the Trade School, coming-soon-gated). Next: F4 AI for
-  Entrepreneurs + F3 Young Makers [ElementaryMBA], then the mastery ladders. Plan: \`docs/ai-curriculum.md\`.
+- 🟡 **AI courses** — **F1 "AI Literacy" + F2 "Building with AI" + F3 "Young Makers: AI for Kids" BUILT**
+  (F2: 12 lessons / 4 sections, cited NIST AI RMF / OWASP LLM Top 10 / RAG, Trade School; F3: 11 lessons
+  / 4 parts at a grades 3-8 level, cited UNICEF / Common Sense / MIT Day of AI / Code.org / NIST,
+  ElementaryMBA, coming-soon-gated). Next: F4 AI for Entrepreneurs, then the mastery ladders.
+  Plan: \`docs/ai-curriculum.md\`.
 - 🟡 **Admin/Operator workstream** (scheduled next) — a consolidated \`/admin\` dashboard unifying the
   owner links (domains/live/paths/leads/roadmap) + **tenant settings** (flags: gamification dose,
   AI tutor, age-gate, coming-soon, **accent/branding**) + **marketing** (campaigns/promos). ~2-3 branches.

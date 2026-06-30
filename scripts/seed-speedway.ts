@@ -7,10 +7,12 @@ import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { SPEEDWAY_COURSE } from "./data/speedway-course";
 import { ROBOTICS_STEAM_COURSE } from "./data/robotics-steam-course";
+import { AI_YOUNG_MAKERS_COURSE } from "./data/ai-young-makers-course";
 
 // Seeds the ElementaryMBA school's authored courses: the "Speedway: The Greatest
-// Spectacle in Learning" docuseries (migrated from CentOS) and the cited, kid-friendly
-// "Intro to Robotics & STEAM" course. Each committed data module carries the cleaned,
+// Spectacle in Learning" docuseries (migrated from CentOS), the cited, kid-friendly
+// "Intro to Robotics & STEAM" course, and "Young Makers: AI for Kids" (F3, grades
+// 3-8 AI literacy). Each committed data module carries the cleaned,
 // cited content (narration stage tags stripped; APA `## Sources` kept), so this seeder
 // never needs CentOS. Re-seedable (upsert by courseId,slug).
 // Run: pnpm seed:speedway
@@ -87,12 +89,31 @@ async function main() {
     replaceLessons: true,
   });
 
+  // Young Makers: AI for Kids — F3, cited, kid-level (grades 3-8) AI literacy on the
+  // same ElementaryMBA school. The school stays flags.comingSoon until launch, so this
+  // is seeded-but-gated like Robotics & STEAM above.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId, name: "AI for Kids", sortOrder: 3 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId,
+    instructorId,
+    slug: "young-makers-ai",
+    course: AI_YOUNG_MAKERS_COURSE,
+    category: "AI for Kids",
+    navigationMode: "linear",
+    replaceLessons: true,
+  });
+
   const speedwayQuizzes = SPEEDWAY_COURSE.lessons.filter((l) => l.quiz).length;
   const roboticsQuizzes = ROBOTICS_STEAM_COURSE.lessons.filter((l) => l.quiz).length;
+  const youngMakersQuizzes = AI_YOUNG_MAKERS_COURSE.lessons.filter((l) => l.quiz).length;
   await pool.end();
   console.log(
     `Done. Seeded on "${TARGET_SLUG}": Speedway (${SPEEDWAY_COURSE.lessons.length} lessons, ${speedwayQuizzes} quizzes); ` +
-      `Intro to Robotics & STEAM (${ROBOTICS_STEAM_COURSE.lessons.length} lessons, ${roboticsQuizzes} quizzes).`,
+      `Intro to Robotics & STEAM (${ROBOTICS_STEAM_COURSE.lessons.length} lessons, ${roboticsQuizzes} quizzes); ` +
+      `Young Makers: AI for Kids (${AI_YOUNG_MAKERS_COURSE.lessons.length} lessons, ${youngMakersQuizzes} quizzes).`,
   );
 }
 
