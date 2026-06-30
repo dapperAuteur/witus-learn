@@ -7,12 +7,14 @@ import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { SPEEDWAY_COURSE } from "./data/speedway-course";
 import { ROBOTICS_STEAM_COURSE } from "./data/robotics-steam-course";
+import { AI_ENTREPRENEURS_COURSE } from "./data/ai-entrepreneurs-course";
 
 // Seeds the ElementaryMBA school's authored courses: the "Speedway: The Greatest
-// Spectacle in Learning" docuseries (migrated from CentOS) and the cited, kid-friendly
-// "Intro to Robotics & STEAM" course. Each committed data module carries the cleaned,
-// cited content (narration stage tags stripped; APA `## Sources` kept), so this seeder
-// never needs CentOS. Re-seedable (upsert by courseId,slug).
+// Spectacle in Learning" docuseries (migrated from CentOS), the cited, kid-friendly
+// "Intro to Robotics & STEAM" course, and the cited, hype-free "AI for Entrepreneurs"
+// course (older/teen + young-adult track). Each committed data module carries the
+// cleaned, cited content (narration stage tags stripped; APA `## Sources` kept), so this
+// seeder never needs CentOS. Re-seedable (upsert by courseId,slug).
 // Run: pnpm seed:speedway
 //
 // The ElementaryMBA tenant must already exist (run `pnpm seed:tenants` first) — this
@@ -87,12 +89,31 @@ async function main() {
     replaceLessons: true,
   });
 
+  // AI for Entrepreneurs — F4, the entrepreneurship-track AI course (cited, hype-free)
+  // for ElementaryMBA's older/teen + young-adult learners. Seeded-but-gated like the
+  // other ElementaryMBA courses: the school stays flags.comingSoon until launch.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId, name: "Entrepreneurship", sortOrder: 3 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId,
+    instructorId,
+    slug: "ai-for-entrepreneurs",
+    course: AI_ENTREPRENEURS_COURSE,
+    category: "Entrepreneurship",
+    navigationMode: "linear",
+    replaceLessons: true,
+  });
+
   const speedwayQuizzes = SPEEDWAY_COURSE.lessons.filter((l) => l.quiz).length;
   const roboticsQuizzes = ROBOTICS_STEAM_COURSE.lessons.filter((l) => l.quiz).length;
+  const entrepreneursQuizzes = AI_ENTREPRENEURS_COURSE.lessons.filter((l) => l.quiz).length;
   await pool.end();
   console.log(
     `Done. Seeded on "${TARGET_SLUG}": Speedway (${SPEEDWAY_COURSE.lessons.length} lessons, ${speedwayQuizzes} quizzes); ` +
-      `Intro to Robotics & STEAM (${ROBOTICS_STEAM_COURSE.lessons.length} lessons, ${roboticsQuizzes} quizzes).`,
+      `Intro to Robotics & STEAM (${ROBOTICS_STEAM_COURSE.lessons.length} lessons, ${roboticsQuizzes} quizzes); ` +
+      `AI for Entrepreneurs (${AI_ENTREPRENEURS_COURSE.lessons.length} lessons, ${entrepreneursQuizzes} quizzes).`,
   );
 }
 
