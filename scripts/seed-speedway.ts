@@ -13,6 +13,11 @@ import { AI_Y1_TRAIN_YOUR_MODEL_COURSE } from "./data/ai-y1-train-your-model-cou
 import { AI_Y2_ROBOTICS_AI_COURSE } from "./data/ai-y2-robotics-ai-course";
 import { AI_Y3_CREATIVE_AI_COURSE } from "./data/ai-y3-creative-ai-course";
 import { AI_Y4_SCIENCE_FAIR_CAPSTONE_COURSE } from "./data/ai-y4-science-fair-capstone-course";
+import { AI_E1_MARKETING_COURSE } from "./data/ai-e1-marketing-course";
+import { AI_E2_OPERATIONS_COURSE } from "./data/ai-e2-operations-course";
+import { AI_E3_CUSTOMER_RESEARCH_COURSE } from "./data/ai-e3-customer-research-course";
+import { AI_E4_PRODUCT_SERVICE_COURSE } from "./data/ai-e4-product-service-course";
+import { AI_E5_FINANCE_ANALYTICS_CAPSTONE_COURSE } from "./data/ai-e5-finance-analytics-capstone-course";
 
 // Seeds the ElementaryMBA school's authored courses: the "Speedway: The Greatest Spectacle
 // in Learning" docuseries (migrated from CentOS), the cited, kid-friendly "Intro to Robotics
@@ -145,6 +150,27 @@ async function main() {
     navigationMode: "linear",
     replaceLessons: true,
   });
+  // Entrepreneur AI mastery ladder (builds on F4), same "Entrepreneurship" category:
+  // E1 Marketing & Content, E2 Operations & Automation, E3 Customer Research & Validation,
+  // E4 Building an AI Product/Service, E5 Finance & Analytics (capstone). Cited to FTC,
+  // US Copyright Office, SBA, IRS, NIST, Google PAIR, Steve Blank, CFPB.
+  for (const { slug, course } of [
+    { slug: "ai-e1-marketing", course: AI_E1_MARKETING_COURSE },
+    { slug: "ai-e2-operations", course: AI_E2_OPERATIONS_COURSE },
+    { slug: "ai-e3-customer-research", course: AI_E3_CUSTOMER_RESEARCH_COURSE },
+    { slug: "ai-e4-product-service", course: AI_E4_PRODUCT_SERVICE_COURSE },
+    { slug: "ai-e5-finance-analytics-capstone", course: AI_E5_FINANCE_ANALYTICS_CAPSTONE_COURSE },
+  ]) {
+    await seedAuthoredCourse(db, {
+      tenantId,
+      instructorId,
+      slug,
+      course,
+      category: "Entrepreneurship",
+      navigationMode: "linear",
+      replaceLessons: true,
+    });
+  }
 
   const speedwayQuizzes = SPEEDWAY_COURSE.lessons.filter((l) => l.quiz).length;
   const roboticsQuizzes = ROBOTICS_STEAM_COURSE.lessons.filter((l) => l.quiz).length;
