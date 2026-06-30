@@ -26,9 +26,8 @@ function rewriteOrigin(
   }
 }
 
-/** Origins allowed to drive auth. Must include every tenant host so magic-link
- *  verify is accepted on each brand's domain. Static (env-driven) for now. */
-function trustedOrigins(): string[] {
+/** Static, env-driven base origins (the platform's own URLs + any explicit extras). */
+function staticTrustedOrigins(): string[] {
   const fromEnv = (env.TRUSTED_ORIGINS ?? "")
     .split(",")
     .map((s) => s.trim())
@@ -42,11 +41,28 @@ function trustedOrigins(): string[] {
   );
 }
 
+/** Origins allowed to drive auth. DYNAMIC: every brand has its own domain(s), so we
+ *  trust the request's origin when its host resolves to a registered tenant — that's
+ *  why custom domains like www.bettervice.club work without hardcoding each in env.
+ *  (Previously static + env-only, which 403'd magic-link sign-in on tenant domains.) */
+async function trustedOrigins(request?: Request): Promise<string[]> {
+  const origins = new Set(staticTrustedOrigins());
+  const host = request?.headers.get("x-forwarded-host") ?? request?.headers.get("host");
+  if (host) {
+    const tenant = await getTenantByHost(host);
+    if (tenant) {
+      const proto = request?.headers.get("x-forwarded-proto") ?? (host.includes("localhost") ? "http" : "https");
+      origins.add(`${proto}://${host}`);
+    }
+  }
+  return Array.from(origins);
+}
+
 export const auth = betterAuth({
   appName: "Learn.WitUS",
   baseURL: env.BETTER_AUTH_URL,
   secret: env.BETTER_AUTH_SECRET,
-  trustedOrigins: trustedOrigins(),
+  trustedOrigins,
   database: drizzleAdapter(db, {
     provider: "pg",
     schema,
