@@ -342,6 +342,50 @@ export async function ensureUsername(userId: string, email: string): Promise<str
   return candidate;
 }
 
+export interface EditableProfile {
+  username: string | null;
+  displayName: string | null;
+  bio: string | null;
+  avatarUrl: string | null;
+  links: ProfileLinks;
+}
+
+/** The current user's editable profile fields. Returns empties (not null) when there's
+ *  no row yet — the update upserts one. Profiles are global to the user, not tenant-scoped. */
+export async function getEditableProfile(userId: string): Promise<EditableProfile> {
+  const rows = await db
+    .select({
+      username: userProfiles.username,
+      displayName: userProfiles.displayName,
+      bio: userProfiles.bio,
+      avatarUrl: userProfiles.avatarUrl,
+      links: userProfiles.links,
+    })
+    .from(userProfiles)
+    .where(eq(userProfiles.userId, userId))
+    .limit(1);
+  const r = rows[0];
+  return {
+    username: r?.username ?? null,
+    displayName: r?.displayName ?? null,
+    bio: r?.bio ?? null,
+    avatarUrl: r?.avatarUrl ?? null,
+    links: r?.links ?? {},
+  };
+}
+
+/** Update a user's OWN profile (upsert). Never touches username or isPlatformOwner —
+ *  those are not user-editable here. */
+export async function updateProfile(
+  userId: string,
+  patch: { displayName?: string | null; bio?: string | null; avatarUrl?: string | null; links?: ProfileLinks },
+): Promise<void> {
+  await db
+    .insert(userProfiles)
+    .values({ userId, ...patch })
+    .onConflictDoUpdate({ target: userProfiles.userId, set: { ...patch, updatedAt: new Date() } });
+}
+
 /** Courses owned by an instructor on this tenant (published + drafts) for /teach. */
 export async function listOwnCourses(tenantId: string, instructorId: string): Promise<Course[]> {
   const conds: SQL[] = [eq(courses.tenantId, tenantId), eq(courses.instructorId, instructorId)];
