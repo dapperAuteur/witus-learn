@@ -40,19 +40,31 @@ async function ensureInstructor(
   tenantId: string,
   who: { id: string; email: string; username: string; displayName: string },
 ): Promise<string> {
-  await db
-    .insert(schema.users)
-    .values({ id: who.id, email: who.email, emailVerified: true, name: who.displayName })
-    .onConflictDoNothing();
+  // Reuse the real user when the email is already taken (e.g. BAM has logged in, so an
+  // auth-generated id owns bam@awews.com). Inserting the synthetic id would conflict on
+  // the email, leave no row for that id, and the membership FK would fail. Matching by
+  // email keeps course ownership on the real account and makes this idempotent.
+  const existing = await db
+    .select({ id: schema.users.id })
+    .from(schema.users)
+    .where(eq(schema.users.email, who.email))
+    .limit(1);
+  const userId = existing[0]?.id ?? who.id;
+  if (!existing[0]) {
+    await db
+      .insert(schema.users)
+      .values({ id: who.id, email: who.email, emailVerified: true, name: who.displayName })
+      .onConflictDoNothing();
+  }
   await db
     .insert(schema.userProfiles)
-    .values({ userId: who.id, username: who.username, displayName: who.displayName })
+    .values({ userId, username: who.username, displayName: who.displayName })
     .onConflictDoNothing();
   await db
     .insert(schema.tenantMemberships)
-    .values({ tenantId, userId: who.id, role: "instructor" })
+    .values({ tenantId, userId, role: "instructor" })
     .onConflictDoNothing();
-  return who.id;
+  return userId;
 }
 
 async function main() {
@@ -153,48 +165,31 @@ async function main() {
     navigationMode: "linear",
   });
 
-  // Cybersecurity — on the Trade School (staged; the school stays flags.comingSoon
-  // until launch, so the course is seeded but not yet publicly browsable). Skips if
-  // the Trade School tenant has not been seeded yet.
-  const tradeSchool = await tenantBySlug("trade-school");
-  if (tradeSchool) {
-    const tradeInstructor = await ensureInstructor(tradeSchool, {
-      id: "seed-trade-faculty",
-      email: "faculty@trade.witus.online",
-      username: "trade-faculty",
-      displayName: "WitUS Trade Faculty",
-    });
-    await db
-      .insert(schema.courseCategories)
-      .values({ tenantId: tradeSchool, name: "Cybersecurity", sortOrder: 1 })
-      .onConflictDoNothing();
-    await seedAuthoredCourse(db, {
-      tenantId: tradeSchool,
-      instructorId: tradeInstructor,
-      slug: "cybersecurity-get-the-job",
-      course: CYBER_SECURITY_COURSE,
-      category: "Cybersecurity",
-      navigationMode: "linear",
-    });
+  // Cybersecurity — consolidated onto Learn.WitUS (was on the Trade School). BAM is the
+  // instructor, like the other Learn.WitUS courses.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Cybersecurity", sortOrder: 7 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "cybersecurity-get-the-job",
+    course: CYBER_SECURITY_COURSE,
+    category: "Cybersecurity",
+    navigationMode: "linear",
+  });
 
-    // Building with AI (F2) — the builder AI foundation on the Trade School. F1
-    // (AI Literacy, on Learn.WitUS) is the recommended prerequisite. Same staging:
-    // seeded under the school's comingSoon flag until launch.
-    await db
-      .insert(schema.courseCategories)
-      .values({ tenantId: tradeSchool, name: "AI & Technology", sortOrder: 2 })
-      .onConflictDoNothing();
-    await seedAuthoredCourse(db, {
-      tenantId: tradeSchool,
-      instructorId: tradeInstructor,
-      slug: "building-with-ai",
-      course: AI_BUILDING_COURSE,
-      category: "AI & Technology",
-      navigationMode: "linear",
-    });
-  } else {
-    console.log("skip cybersecurity (trade-school tenant missing — run `pnpm seed:tenants`)");
-  }
+  // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared
+  // "AI & Technology" category alongside AI Literacy (F1, the recommended prerequisite).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "building-with-ai",
+    course: AI_BUILDING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
 
   await pool.end();
   console.log("Done.");
