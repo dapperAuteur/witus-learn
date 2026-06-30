@@ -8,6 +8,7 @@ import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
+import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
@@ -91,6 +92,17 @@ async function main() {
     instructorId,
     slug: "us-civics-101",
     course: CIVICS_101_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // US Constitution 101 — a deeper, document-driven companion to US Civics 101
+  // (same Civics category, same non-partisan + cited standard). Coming-soon gating
+  // is handled at the school/UI level; the course is seeded published like civics.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "us-constitution-101",
+    course: US_CONSTITUTION_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
