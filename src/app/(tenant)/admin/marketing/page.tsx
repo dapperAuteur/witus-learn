@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { requireTenant } from "@/lib/tenant";
-import { requirePlatformOwner, getSession } from "@/lib/session";
+import { requireBrandAdmin, getSession } from "@/lib/session";
 import { listPromos } from "@/db/queries/connect";
 import { getAudienceCounts, listCampaigns } from "@/db/queries/marketing";
 import { MarketingAdmin, type PromoView } from "@/components/marketing-admin";
@@ -11,7 +11,7 @@ export const metadata: Metadata = { title: "Marketing" };
 
 export default async function MarketingPage() {
   const tenant = await requireTenant();
-  await requirePlatformOwner();
+  await requireBrandAdmin(tenant.id);
   const session = await getSession();
   const rows = session ? await listPromos(tenant.id, session.user.id) : [];
   const promos: PromoView[] = rows.map((p) => ({

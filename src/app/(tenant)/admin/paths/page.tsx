@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { requirePlatformOwner } from "@/lib/session";
+import { requireBrandAdmin } from "@/lib/session";
 import { getScopedDb } from "@/db/scoped";
 import { getPathBySlug, listPaths } from "@/db/queries/paths";
 import { PathsAdmin } from "@/components/paths-admin";
 
 export const metadata: Metadata = { title: "Learning paths" };
 
-// Platform-owner learning-path management for the current school.
+// Learning-path management for THIS school. Brand admins (and the owner); tenant-scoped.
 export default async function PathsAdminPage() {
-  await requirePlatformOwner();
   const sdb = await getScopedDb();
+  await requireBrandAdmin(sdb.tenantId);
   const [paths, courses] = await Promise.all([listPaths(sdb.tenantId), sdb.listCourses()]);
 
   // Each path's current course ids (for the checkboxes).

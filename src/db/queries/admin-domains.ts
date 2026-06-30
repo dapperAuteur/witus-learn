@@ -46,6 +46,14 @@ export async function removeDomain(id: string): Promise<void> {
   await db.delete(tenantDomains).where(eq(tenantDomains.id, id));
 }
 
+/** The tenant a domain belongs to (for authorizing a brand admin's edit). */
+export async function getDomainTenantId(id: string): Promise<string | null> {
+  const row = (
+    await db.select({ tenantId: tenantDomains.tenantId }).from(tenantDomains).where(eq(tenantDomains.id, id)).limit(1)
+  )[0];
+  return row?.tenantId ?? null;
+}
+
 export async function setPrimaryDomain(id: string): Promise<void> {
   const row = (await db.select({ tenantId: tenantDomains.tenantId }).from(tenantDomains).where(eq(tenantDomains.id, id)).limit(1))[0];
   if (!row) return;
