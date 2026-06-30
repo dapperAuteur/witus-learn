@@ -34,8 +34,12 @@ function bandPolygon(latMin: number, latMax: number): Polygon {
 // Growing Belts: Equal Earth projection. Per commodity, its latitude band AND its
 // production-region country polygons, layered with mix-blend-mode:multiply so
 // overlaps blend (the equator shows coffee+cacao+tea blending).
+const PREPOPULATE = 3;
+
 export function GrowingBeltsMap({ belts }: { belts: MapBelt[] }) {
-  const [hidden, setHidden] = useState<Set<string>>(new Set());
+  // Start with only the first few commodities shown so the map reads cleanly; the
+  // learner toggles the rest on from the legend below.
+  const [hidden, setHidden] = useState<Set<string>>(() => new Set(belts.slice(PREPOPULATE).map((b) => b.id)));
   const [showBands, setShowBands] = useState(true);
   const [showRegions, setShowRegions] = useState(true);
 
@@ -59,6 +63,9 @@ export function GrowingBeltsMap({ belts }: { belts: MapBelt[] }) {
       return n;
     });
   }
+  const showAll = () => setHidden(new Set());
+  const resetToThree = () => setHidden(new Set(belts.slice(PREPOPULATE).map((b) => b.id)));
+  const allShown = hidden.size === 0;
 
   return (
     <div>
@@ -103,7 +110,31 @@ export function GrowingBeltsMap({ belts }: { belts: MapBelt[] }) {
         </g>
       </svg>
 
-      <div className="mt-4 space-y-3">
+      {/* Overlap key — how blended colors read. */}
+      <div className="mt-3 flex items-center gap-3 rounded-lg border border-neutral-200 bg-white p-3 text-xs text-neutral-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-400">
+        <span className="inline-flex shrink-0" aria-hidden>
+          <span className="h-5 w-5 rounded-full" style={{ backgroundColor: "#6F4E37" }} />
+          <span className="-ml-2 h-5 w-5 rounded-full" style={{ backgroundColor: "#4E7A3A", mixBlendMode: "multiply" }} />
+        </span>
+        <span>
+          Where belts overlap, their colors <strong>blend</strong> — a darker zone means more commodities
+          share that latitude. The map starts with {PREPOPULATE} commodities; toggle the rest below.
+        </span>
+      </div>
+
+      <div className="mt-4 flex items-center justify-between">
+        <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Commodities</p>
+        <button
+          type="button"
+          onClick={allShown ? resetToThree : showAll}
+          className="text-xs font-medium underline"
+          style={{ color: "var(--accent)" }}
+        >
+          {allShown ? `Show only ${PREPOPULATE}` : "Show all"}
+        </button>
+      </div>
+
+      <div className="mt-2 space-y-3">
         {[1, 2, 3].map((season) => {
           const group = belts.filter((b) => (b.seasonNumber ?? 0) === season);
           if (group.length === 0) return null;
