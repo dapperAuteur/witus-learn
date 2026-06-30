@@ -1,5 +1,7 @@
 import "server-only";
-import type { Course, Lesson } from "@/db/schema";
+import { asc, eq } from "drizzle-orm";
+import { db } from "@/db/client";
+import { courseModules, type Course, type CourseModule, type Lesson } from "@/db/schema";
 import { getCourseBySlug, listLessons } from "@/db/queries/authoring";
 import { getCompletedLessonIds } from "@/db/queries/progress";
 import { isEnrolled as checkEnrolled } from "@/db/queries/enrollment";
@@ -15,6 +17,8 @@ export interface CourseView {
   isEditor: boolean;
   isEnrolled: boolean;
   lessons: Lesson[];
+  /** Sections (course modules), ordered. Empty for flat courses. */
+  modules: CourseModule[];
   completedLessonIds: Set<string>;
   orderedLessonIds: string[];
 }
@@ -36,6 +40,11 @@ export async function loadCourseView(
 
   const all = await listLessons(course.id);
   const lessons = isEditor ? all : all.filter((l) => l.isPublished);
+  const modules = await db
+    .select()
+    .from(courseModules)
+    .where(eq(courseModules.courseId, course.id))
+    .orderBy(asc(courseModules.sortOrder));
   const [completed, enrolled] = session
     ? await Promise.all([
         getCompletedLessonIds(session.user.id, course.id),
@@ -50,6 +59,7 @@ export async function loadCourseView(
     isEditor,
     isEnrolled: enrolled,
     lessons,
+    modules,
     completedLessonIds: new Set(completed),
     orderedLessonIds: lessons.map((l) => l.id),
   };

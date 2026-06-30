@@ -56,6 +56,60 @@ export default async function CourseBySlugPage({ params }: Params) {
   const typeIcon = (t: string) =>
     ({ text: "📖", exercise: "✍️", quiz: "🧠", map: "🗺️", video: "🎬", "360video": "🎬", audio: "🎧", assignment: "📝" })[t] ?? "📄";
 
+  const lessonRow = (lesson: (typeof lessons)[number], n: number) => {
+    const access = lessonAccess(course, lesson, {
+      isEditor,
+      isEnrolled: view.isEnrolled,
+      completedLessonIds,
+      orderedLessonIds,
+    });
+    const done = completedLessonIds.has(lesson.id);
+    const inner = (
+      <>
+        <span
+          aria-hidden
+          className={`grid h-9 w-9 shrink-0 place-items-center rounded-lg text-lg ${
+            done ? "bg-green-100 dark:bg-green-900/40" : "bg-neutral-100 dark:bg-neutral-800"
+          }`}
+        >
+          {done ? <span className="text-base text-green-600 dark:text-green-400">✓</span> : typeIcon(lesson.lessonType)}
+        </span>
+        <div className="min-w-0 flex-1">
+          <span className={`block truncate font-medium ${access.open ? "" : "text-neutral-500"}`}>
+            {n}. {lesson.title}
+          </span>
+          <span className="text-xs capitalize text-neutral-400">{lesson.lessonType.replace("_", " ")}</span>
+        </div>
+        <div className="flex shrink-0 items-center gap-2 text-xs">
+          {lesson.isFreePreview ? (
+            <span className="rounded-full bg-neutral-200 px-2 py-0.5 dark:bg-neutral-700">Free preview</span>
+          ) : null}
+          {!access.open ? (
+            <span aria-label="Locked" title="Locked">🔒</span>
+          ) : null}
+        </div>
+      </>
+    );
+    return (
+      <li key={lesson.id}>
+        {access.open ? (
+          <Link
+            href={`${base}/lesson/${lesson.slug}`}
+            className="flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 transition hover:border-neutral-300 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800 dark:hover:border-neutral-700"
+          >
+            {inner}
+          </Link>
+        ) : (
+          <div className="flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 opacity-70 dark:border-neutral-800">
+            {inner}
+          </div>
+        )}
+      </li>
+    );
+  };
+
+  const ungrouped = lessons.filter((l) => !l.moduleId);
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
       <Link href="/" className="text-sm text-neutral-500 hover:underline">
@@ -134,63 +188,41 @@ export default async function CourseBySlugPage({ params }: Params) {
         </section>
       ) : null}
 
-      <h2 className="mt-8 mb-3 text-lg font-semibold">Lessons</h2>
+      <h2 className="mt-8 mb-3 text-lg font-semibold">{view.modules.length > 0 ? "Sections" : "Lessons"}</h2>
       {lessons.length === 0 ? (
         <p className="text-neutral-500">No lessons yet.</p>
-      ) : (
-        <ol className="space-y-2">
-          {lessons.map((lesson, i) => {
-            const access = lessonAccess(course, lesson, {
-              isEditor,
-              isEnrolled: view.isEnrolled,
-              completedLessonIds,
-              orderedLessonIds,
-            });
-            const done = completedLessonIds.has(lesson.id);
-            const inner = (
-              <>
-                <span
-                  aria-hidden
-                  className={`grid h-9 w-9 shrink-0 place-items-center rounded-lg text-lg ${
-                    done ? "bg-green-100 dark:bg-green-900/40" : "bg-neutral-100 dark:bg-neutral-800"
-                  }`}
-                >
-                  {done ? <span className="text-base text-green-600 dark:text-green-400">✓</span> : typeIcon(lesson.lessonType)}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <span className={`block truncate font-medium ${access.open ? "" : "text-neutral-500"}`}>
-                    {i + 1}. {lesson.title}
-                  </span>
-                  <span className="text-xs capitalize text-neutral-400">{lesson.lessonType.replace("_", " ")}</span>
-                </div>
-                <div className="flex shrink-0 items-center gap-2 text-xs">
-                  {lesson.isFreePreview ? (
-                    <span className="rounded-full bg-neutral-200 px-2 py-0.5 dark:bg-neutral-700">Free preview</span>
-                  ) : null}
-                  {!access.open ? (
-                    <span aria-label="Locked" title="Locked">🔒</span>
-                  ) : null}
-                </div>
-              </>
-            );
+      ) : view.modules.length > 0 ? (
+        <div className="space-y-3">
+          {view.modules.map((mod) => {
+            const modLessons = lessons.filter((l) => l.moduleId === mod.id);
+            if (modLessons.length === 0) return null;
+            const doneCount = modLessons.filter((l) => completedLessonIds.has(l.id)).length;
+            const complete = doneCount === modLessons.length;
             return (
-              <li key={lesson.id}>
-                {access.open ? (
-                  <Link
-                    href={`${base}/lesson/${lesson.slug}`}
-                    className="flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 transition hover:border-neutral-300 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800 dark:hover:border-neutral-700"
-                  >
-                    {inner}
-                  </Link>
-                ) : (
-                  <div className="flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 opacity-70 dark:border-neutral-800">
-                    {inner}
-                  </div>
-                )}
-              </li>
+              <details
+                key={mod.id}
+                open={!complete}
+                className="rounded-xl border border-neutral-200 dark:border-neutral-800"
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 font-medium">
+                  <span className="min-w-0 truncate">{mod.title}</span>
+                  <span className="shrink-0 text-xs tabular-nums text-neutral-500">
+                    {complete ? "✓ " : ""}
+                    {doneCount}/{modLessons.length}
+                  </span>
+                </summary>
+                <ol className="space-y-2 px-3 pb-3">
+                  {modLessons.map((lesson) => lessonRow(lesson, lessons.indexOf(lesson) + 1))}
+                </ol>
+              </details>
             );
           })}
-        </ol>
+          {ungrouped.length > 0 ? (
+            <ol className="space-y-2">{ungrouped.map((lesson) => lessonRow(lesson, lessons.indexOf(lesson) + 1))}</ol>
+          ) : null}
+        </div>
+      ) : (
+        <ol className="space-y-2">{lessons.map((lesson, i) => lessonRow(lesson, i + 1))}</ol>
       )}
 
       {glossary.length > 0 ? (

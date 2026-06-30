@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
-import { getSession } from "@/lib/session";
+import { getSession, isPlatformOwner } from "@/lib/session";
 import { SignOutButton } from "./sign-out-button";
 import { ThemeToggle } from "./theme-toggle";
 
@@ -11,6 +11,7 @@ import { ThemeToggle } from "./theme-toggle";
 export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   const { flags } = tenant;
   const session = await getSession();
+  const owner = session ? await isPlatformOwner(session.user.id) : false;
 
   return (
     <header className="border-b border-neutral-200 dark:border-neutral-800">
@@ -47,6 +48,13 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
           </li>
           {session ? (
             <>
+              {owner ? (
+                <li>
+                  <Link className="font-medium hover:underline" style={{ color: "var(--accent)" }} href="/admin">
+                    Admin
+                  </Link>
+                </li>
+              ) : null}
               <li>
                 <Link className="hover:underline" href="/my-courses">
                   My Courses

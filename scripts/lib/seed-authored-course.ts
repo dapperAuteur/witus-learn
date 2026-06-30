@@ -65,9 +65,35 @@ export async function seedAuthoredCourse(
     console.log(`= course ${slug} (refreshed)`);
   }
 
+  // Sections → course modules. Distinct `section` labels (first-seen order) become
+  // modules; each lesson is assigned to its module. Rebuilt on each seed (lessons keep
+  // their stable IDs by slug; only the module grouping is refreshed).
+  const sectionTitles: string[] = [];
+  for (const l of course.lessons) {
+    if (l.section && !sectionTitles.includes(l.section)) sectionTitles.push(l.section);
+  }
+  const moduleBySection = new Map<string, string>();
+  if (sectionTitles.length) {
+    await db.delete(schema.courseModules).where(eq(schema.courseModules.courseId, courseId));
+    const moduleRows = await db
+      .insert(schema.courseModules)
+      .values(
+        sectionTitles.map((title, i) => ({
+          courseId: courseId as string,
+          title,
+          sortOrder: i + 1,
+          isPublished: true,
+        })),
+      )
+      .returning({ id: schema.courseModules.id, title: schema.courseModules.title });
+    for (const m of moduleRows) moduleBySection.set(m.title, m.id);
+    console.log(`  modules: ${moduleRows.length}`);
+  }
+
   const lessonRows = course.lessons.map((l, i) => ({
     tenantId,
     courseId: courseId as string,
+    moduleId: l.section ? moduleBySection.get(l.section) ?? null : null,
     title: l.title,
     slug: l.slug,
     lessonType: (l.quiz ? "quiz" : l.exercise ? "exercise" : l.mapContent ? "map" : "text") as
@@ -97,6 +123,7 @@ export async function seedAuthoredCourse(
           quizContent: sql`excluded.quiz_content`,
           mapContent: sql`excluded.map_content`,
           sortOrder: sql`excluded.sort_order`,
+          moduleId: sql`excluded.module_id`,
           isFreePreview: sql`excluded.is_free_preview`,
           lessonType: sql`excluded.lesson_type`,
           contentFormat: sql`excluded.content_format`,
