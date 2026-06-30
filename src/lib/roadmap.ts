@@ -42,8 +42,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   not bettervice.club. Diagnosis: link is generated from \`BETTER_AUTH_URL\` (learn.witus.online);
   \`rewriteOrigin\` swaps the verify host, but the post-verify redirect resolves against the base URL.
   **Hold** pending BAM's new WitUS-Online auth system (discuss its impact on this app first).
-- ⚪ **Profile edit UI** — let instructors edit displayName/bio/avatar/links from the dashboard.
-- ⚪ Fee-aware pricing (small); lifetime teacher promo + marketing campaigns (\`plans/future/11\`).
+- ✅ **Profile edit UI** — instructors edit displayName/bio/avatar/links at \`/teach/profile\`.
+- ✅ **Fee-aware pricing** — set Free / one-time / subscription + price, with estimated net-after-fees.
+  ⚪ Lifetime teacher promo + marketing campaigns (\`plans/future/11\`).
 - ⚪ Tenant-settings admin (flags) self-serve.
 - ⚪ **Growing Belts latitude bands** — prepopulate only 3 commodities; let the user toggle the rest
   on/off, and add a CentOS-style **key** that shows how overlapping band colors blend (so users can
@@ -56,10 +57,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Body's Data", ECS (Foundations/Fitness/Nutrition/Neuroscience) → Learn.WitUS; Speedway → ElementaryMBA.
   Gen-from-CentOS (\`pnpm gen:health\`), each course now has chapter/module/episode SECTIONS with
   section-scoped quizzes (≤10 Q). ECS copy-edited (em-dashes/AI-tells removed). \`pnpm seed:health\`/\`seed:speedway\`.
-- 🟡 **Vet before publish:** (1) **Speedway** full copy-edit + best-practices pass (Ep1 em-dashes etc.) —
-  it was only lightly checked; (2) **NASM CPT** real per-lesson APA (currently boilerplate \`## Sources\`);
-  (3) **ECS accuracy flags** — "500M years of evolution" + a CECD sentence. Not-yet-imported: ECS
-  Nutrition/Neuroscience are now in; **Speedway S2/S3** still outline-only.
+- ✅ **Speedway copy-edited** (em-dashes→clean, narration/production cues removed; citations preserved)
+  and **ECS accuracy flags fixed** ("hundreds of millions of years"; the CECD sentence rewritten).
+- ❓ **NASM CPT citations** — CentOS has no chapter-mapped sources and its authoring rule forbids citing
+  the textbook, so 170 lessons are flagged \`<!-- NEEDS SOURCE -->\` (NOT fabricated). DECISION needed:
+  map studies upstream in CentOS + re-gen, or ship CPT uncited. (CES/CNC already carry real DOIs.)
+  **Speedway S2/S3** still outline-only.
 - 🟡 **"Read Your Body's Data" needs a metrics tracker** — it logs daily numbers inside CentOS's
   "metrics page" (which witus lacks). Build a tracker, rewrite to external tools, or keep on CentOS.
 - 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
@@ -73,9 +76,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Help a Campaign, Spotting Misleading Marketing) + per-state template + US map (IN/AZ/AR).
 - ⚪ Learning-How-to-Learn (+ FlashLearn spaced recall); ElementaryMBA robotics/electronics/STEAM;
   Ewe/Twi/Igbo; per-episode BVC assignments; record audio.
-- 🟡 **AI courses** — **F1 "AI Literacy: Use It Well & Wisely" BUILT** (9 lessons, cited, exercises +
-  quiz, on Learn.WitUS). Next: F2 Building with AI [Trade School], F4 AI for Entrepreneurs + F3 Young
-  Makers [ElementaryMBA], then the mastery ladders. Full plan: \`docs/ai-curriculum.md\`.
+- 🟡 **AI courses** — **F1 "AI Literacy" + F2 "Building with AI" BUILT** (F2: 12 lessons / 4 sections,
+  cited NIST AI RMF / OWASP LLM Top 10 / RAG, on the Trade School, coming-soon-gated). Next: F4 AI for
+  Entrepreneurs + F3 Young Makers [ElementaryMBA], then the mastery ladders. Plan: \`docs/ai-curriculum.md\`.
 - 🟡 **Admin/Operator workstream** (scheduled next) — a consolidated \`/admin\` dashboard unifying the
   owner links (domains/live/paths/leads/roadmap) + **tenant settings** (flags: gamification dose,
   AI tutor, age-gate, coming-soon, **accent/branding**) + **marketing** (campaigns/promos). ~2-3 branches.
@@ -85,5 +88,8 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
   → regen embeddings. Set \`PLATFORM_OWNER_EMAIL=bam@awews.com\`.
+- ⚪ After merging the health/vetting work: \`pnpm gen:health\` → \`seed:health\` / \`seed:speedway\`.
+- ✅ **Authoritative-values rule** — added to ecosystem + repo CLAUDE.md (never assert guessed external
+  values; born from the DNS A-record false-negative). Still TODO: commit the ecosystem copy in \`gemini/\`.
 - ⚪ Inform CentOS that witus-learn hosts BVC.
 `;
