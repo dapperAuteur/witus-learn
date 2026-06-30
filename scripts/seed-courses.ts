@@ -16,6 +16,7 @@ import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading
 import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
+import { AI_B2_AGENTS_COURSE } from "./data/ai-b2-agents-automations-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 
@@ -259,6 +260,19 @@ async function main() {
     instructorId,
     slug: "building-with-ai",
     course: AI_BUILDING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+
+  // Building AI Agents & Automations (B2) — the technical builder-track step up from F2
+  // (Building with AI, the recommended prerequisite). Same "AI & Technology" category.
+  // Goes deep on agents: the loop, tool calling, workflow-vs-agent, orchestration,
+  // memory/state, multi-step automations, guardrails & least-privilege, eval/debug, ship.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-b2-agents-automations",
+    course: AI_B2_AGENTS_COURSE,
     category: "AI & Technology",
     navigationMode: "linear",
   });
