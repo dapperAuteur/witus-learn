@@ -9,6 +9,7 @@ import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
+import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
@@ -143,6 +144,22 @@ async function main() {
       slug: "cybersecurity-get-the-job",
       course: CYBER_SECURITY_COURSE,
       category: "Cybersecurity",
+      navigationMode: "linear",
+    });
+
+    // Building with AI (F2) — the builder AI foundation on the Trade School. F1
+    // (AI Literacy, on Learn.WitUS) is the recommended prerequisite. Same staging:
+    // seeded under the school's comingSoon flag until launch.
+    await db
+      .insert(schema.courseCategories)
+      .values({ tenantId: tradeSchool, name: "AI & Technology", sortOrder: 2 })
+      .onConflictDoNothing();
+    await seedAuthoredCourse(db, {
+      tenantId: tradeSchool,
+      instructorId: tradeInstructor,
+      slug: "building-with-ai",
+      course: AI_BUILDING_COURSE,
+      category: "AI & Technology",
       navigationMode: "linear",
     });
   } else {
