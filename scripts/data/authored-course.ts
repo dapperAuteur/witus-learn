@@ -9,6 +9,10 @@ import type { ExerciseContent } from "../../src/lib/exercise";
 export interface AuthoredLesson {
   slug: string;
   title: string;
+  /** Section/module this lesson belongs to (e.g. "Chapter 1: …"). Lessons sharing a
+   *  section are grouped into one course module — collapsible on the course page, and
+   *  the section's quiz covers just that section. Lessons with no section stay flat. */
+  section?: string;
   /** Markdown body (tables + examples + a production/conversation challenge). */
   body?: string;
   /** When set, this lesson is a QUIZ. Every question must carry `explanation` +
