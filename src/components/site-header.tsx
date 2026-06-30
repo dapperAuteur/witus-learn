@@ -3,6 +3,7 @@ import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { getSession } from "@/lib/session";
 import { SignOutButton } from "./sign-out-button";
+import { ThemeToggle } from "./theme-toggle";
 
 // Brand-aware academy header. Nav is driven by the tenant's feature flags — not a
 // fixed CentOS module nav. Accent color comes from the --accent CSS var set by the
@@ -22,6 +23,9 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
           {tenant.theme.wordmark ?? brandName(tenant)}
         </Link>
         <ul className="flex items-center gap-4 text-sm">
+          <li>
+            <ThemeToggle />
+          </li>
           {flags.commodityMap ? (
             <li>
               <Link className="hover:underline" href="/explore">
