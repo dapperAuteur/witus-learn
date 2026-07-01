@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { uploadToCloudinary } from "@/lib/cloudinary-upload";
 
-// Direct-to-Cloudinary unsigned upload for lesson media (video/audio/image/PDF). Fetches the
-// auth-gated config, uploads straight to Cloudinary with progress, and hands back the secure URL.
+// Direct-to-Cloudinary unsigned upload for lesson media (video/audio/image/PDF). Uses the shared
+// helper: rejects over-cap files up front, and chunk-uploads large ones for reliability.
 export function CloudinaryUpload({
   onUploaded,
   accept = "video/*,audio/*,image/*,application/pdf",
@@ -20,35 +21,7 @@ export function CloudinaryUpload({
     setBusy(true);
     setProgress(0);
     try {
-      const cfgRes = await fetch("/api/upload/cloudinary");
-      if (!cfgRes.ok) {
-        throw new Error(cfgRes.status === 503 ? "Media uploads aren't configured yet." : "You can't upload here.");
-      }
-      const { cloudName, uploadPreset } = (await cfgRes.json()) as { cloudName: string; uploadPreset: string };
-      const form = new FormData();
-      form.append("file", file);
-      form.append("upload_preset", uploadPreset);
-
-      const url = await new Promise<string>((resolve, reject) => {
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", `https://api.cloudinary.com/v1_1/${cloudName}/auto/upload`);
-        xhr.upload.onprogress = (e) => {
-          if (e.lengthComputable) setProgress(Math.round((e.loaded / e.total) * 100));
-        };
-        xhr.onload = () => {
-          if (xhr.status >= 200 && xhr.status < 300) {
-            try {
-              resolve((JSON.parse(xhr.responseText) as { secure_url: string }).secure_url);
-            } catch {
-              reject(new Error("Unexpected upload response."));
-            }
-          } else {
-            reject(new Error("Upload failed."));
-          }
-        };
-        xhr.onerror = () => reject(new Error("Upload failed — check your connection."));
-        xhr.send(form);
-      });
+      const url = await uploadToCloudinary(file, file.name, setProgress);
       onUploaded(url);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Upload failed.");
