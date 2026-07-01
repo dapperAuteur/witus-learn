@@ -1,0 +1,170 @@
+{
+  "slug": "langgraph-triage-agent",
+  "title": "LangGraph in Production: The WitUS Triage Agent",
+  "category": "AI & Technology",
+  "description": "Build a real production LangGraph agent, one small piece at a time. You start by learning when a linear chain has outgrown itself and you actually need a graph, then design a clean state contract, wire typed tools, and add a durable human-in-the-loop approval gate with interrupt() and a Postgres checkpointer. The second module crashes the process on purpose to prove the gate survives a restart, and shows the two rules that keep your own interrupts correct. Grounded in the open-source WitUS Triage Agent code, TypeScript first with a Python durability track. Written to code along.",
+  "lessons": [
+    { "type": "text", "section": "Module 1 · LangGraph Patterns", "slug": "m1-l1-chain-to-graph", "title": "From a chain to a graph", "file": "01-chain-to-graph.md" },
+    { "type": "text", "section": "Module 1 · LangGraph Patterns", "slug": "m1-l2-agent-state", "title": "Designing agent state", "file": "02-agent-state.md" },
+    { "type": "text", "section": "Module 1 · LangGraph Patterns", "slug": "m1-l3-tools-and-approval", "title": "Tools and the human-in-the-loop interrupt", "file": "03-tools-and-approval.md" },
+    { "type": "text", "section": "Module 1 · LangGraph Patterns", "slug": "m1-l4-observability", "title": "Observability: reading a trace", "file": "04-observability.md" },
+    {
+      "type": "quiz",
+      "section": "Module 1 · LangGraph Patterns",
+      "slug": "m1-quiz",
+      "title": "Module 1 quiz: LangGraph patterns",
+      "quiz": {
+        "passingScore": 80,
+        "questions": [
+          {
+            "prompt": "You are deciding between a chain and a LangGraph graph. Which situation is a genuine sign you have outgrown a chain?",
+            "options": [
+              "A single prompt needs a longer system message",
+              "The program must pause for a human and resume later in a different process",
+              "You want to call a faster model",
+              "The output should be JSON instead of plain text"
+            ],
+            "correctIndex": 1,
+            "explanation": "Pausing and resuming across process boundaries is one of the three signs a chain has outgrown itself, because a chain's invoke() runs start to finish with no seam to stop at. A longer system message, a faster model, and JSON output are all still fine inside a plain chain.",
+            "sourceLessonSlug": "m1-l1-chain-to-graph"
+          },
+          {
+            "prompt": "In the triage graph, what does the interrupt() call in the human_approval node need in order to survive a server restart?",
+            "options": [
+              "A checkpointer that persists the paused state, keyed by thread_id",
+              "An HTTP request held open until the human responds",
+              "A retry loop that re-runs the whole graph",
+              "A longer function timeout"
+            ],
+            "correctIndex": 0,
+            "explanation": "interrupt() only suspends the graph; a checkpointer (here PostgresSaver) writes the paused state to Postgres under a thread_id so a later request can resume it. You cannot hold an HTTP request open for hours or across a deploy, re-running the whole graph would repeat completed work, and a longer timeout does not persist anything.",
+            "sourceLessonSlug": "m1-l3-tools-and-approval"
+          },
+          {
+            "prompt": "What makes a LangGraph state field 'honest' in the sense used in the state-design lesson?",
+            "options": [
+              "It has a default value",
+              "It is stored in the database",
+              "Some node genuinely produces it and some node genuinely consumes it",
+              "It is marked readonly"
+            ],
+            "correctIndex": 2,
+            "explanation": "An honest field is earned: a node writes it and a node reads it. Fields kept 'just in case' turn the state into a junk drawer. A default value, database storage, or a readonly marker say nothing about whether the field is actually load-bearing.",
+            "sourceLessonSlug": "m1-l2-agent-state"
+          },
+          {
+            "prompt": "Why does the project derive the Classification TypeScript type from a Zod schema with z.infer instead of writing the type separately?",
+            "options": [
+              "z.infer makes the model respond faster",
+              "So the compile-time type, the runtime validation, and the model instruction all come from one definition and cannot drift apart",
+              "Because TypeScript cannot express enums",
+              "To avoid importing Zod at runtime"
+            ],
+            "correctIndex": 1,
+            "explanation": "The shape exists as a compile-time type, a runtime validator, and the structured-output instruction to the model. Deriving the type from one Zod schema means all three stay in sync; a hand-written duplicate type can silently drift. z.infer has no effect on model speed, TypeScript handles enums fine, and Zod is still used at runtime for validation.",
+            "sourceLessonSlug": "m1-l2-agent-state"
+          },
+          {
+            "prompt": "A run completes with category 'other' and confidence 0, and the test suite passes, but the classification is clearly wrong. What is the fastest way to find the real cause?",
+            "options": [
+              "Add more assertions to the test",
+              "Open the LangSmith trace and read the classify node's model-call span",
+              "Rerun the graph several times",
+              "Increase the model temperature"
+            ],
+            "correctIndex": 1,
+            "explanation": "The trace shows the model-call span inside the classify node, where a failed call (for example an unfunded API key) was caught by the fail-soft fallback and never reached the logs. Tests that only assert a valid category cannot see a fallback firing, reruns repeat the same hidden failure, and temperature is unrelated.",
+            "sourceLessonSlug": "m1-l4-observability"
+          },
+          {
+            "prompt": "Why must a node that calls interrupt() be idempotent and contain no side effects before the interrupt?",
+            "options": [
+              "Because LangGraph runs every node twice by default",
+              "Because on resume the node re-runs from its first line, so anything before interrupt() fires a second time",
+              "Because interrupts disable the checkpointer",
+              "Because Zod validation runs twice"
+            ],
+            "correctIndex": 1,
+            "explanation": "On resume LangGraph re-enters the interrupt node and runs it from the top, so a database write or notification placed before interrupt() would fire on both passes. Only interrupt nodes re-run this way, not every node; interrupts do not disable the checkpointer; and the doubling is about node re-execution, not Zod.",
+            "sourceLessonSlug": "m1-l3-tools-and-approval"
+          }
+        ]
+      }
+    },
+    { "type": "text", "section": "Module 2 · Durable Human-in-the-Loop", "slug": "m2-l5-crash-test", "title": "The crash test: in-memory state dies on restart", "file": "05-crash-test.md" },
+    { "type": "text", "section": "Module 2 · Durable Human-in-the-Loop", "slug": "m2-l6-postgres-checkpointer", "title": "The ten-line fix: the Postgres checkpointer", "file": "06-postgres-checkpointer.md" },
+    { "type": "text", "section": "Module 2 · Durable Human-in-the-Loop", "slug": "m2-l7-two-rules", "title": "Two rules for durable interrupts", "file": "07-two-rules.md" },
+    { "type": "text", "section": "Module 2 · Durable Human-in-the-Loop", "slug": "m2-l8-verify-langsmith", "title": "Verify durability in LangSmith", "file": "08-verify-langsmith.md" },
+    {
+      "type": "quiz",
+      "section": "Module 2 · Durable Human-in-the-Loop",
+      "slug": "m2-quiz",
+      "title": "Module 2 quiz: durable interrupts",
+      "quiz": {
+        "passingScore": 80,
+        "questions": [
+          {
+            "prompt": "Under the default MemorySaver, a process pauses at interrupt() and then exits. A fresh process tries to resume the same thread and prints 'STATE LOST'. Why?",
+            "options": [
+              "MemorySaver keeps checkpoints in the first process's heap, which is gone after it exits",
+              "The thread_id was mistyped",
+              "interrupt() deletes the checkpoint when it pauses",
+              "Postgres was not running"
+            ],
+            "correctIndex": 0,
+            "explanation": "MemorySaver stores every checkpoint in memory, so exiting the process erases the paused thread. The thread_id matched in the demo, interrupt() saves state rather than deleting it, and Postgres is not involved yet under MemorySaver.",
+            "sourceLessonSlug": "m2-l5-crash-test"
+          },
+          {
+            "prompt": "What actually changes when you switch from MemorySaver to PostgresSaver to make the agent durable?",
+            "options": [
+              "The nodes and edges are rewritten to be stateless",
+              "Only the checkpointer passed at compile time changes; the graph itself is untouched",
+              "The model is swapped for a deterministic one",
+              "Every node must add a database write"
+            ],
+            "correctIndex": 1,
+            "explanation": "Durability is a compile-time swap: build a pool, construct PostgresSaver, call setup() once, and compile the same graph with it. The nodes, edges, and interrupt() are unchanged; no model swap or per-node database writes are required.",
+            "sourceLessonSlug": "m2-l6-postgres-checkpointer"
+          },
+          {
+            "prompt": "You need a value to be available after the interrupt resumes. Where must it live?",
+            "options": [
+              "In a module-level global variable",
+              "In a local variable inside the node",
+              "Returned into graph state before the interrupt",
+              "In an environment variable"
+            ],
+            "correctIndex": 2,
+            "explanation": "Only fields returned into graph state are written to the checkpoint and therefore survive a restart. Local variables and module globals live in the dead process's memory, and environment variables are not per-run state.",
+            "sourceLessonSlug": "m2-l7-two-rules"
+          },
+          {
+            "prompt": "Where should an irreversible side effect like charging a card go in a human-in-the-loop graph?",
+            "options": [
+              "In the interrupt node, before interrupt() is called",
+              "In the interrupt node, after interrupt() returns",
+              "In a node after the approval gate, such as execute",
+              "In the conditional edge function"
+            ],
+            "correctIndex": 2,
+            "explanation": "The interrupt node re-runs from its first line on resume, so any side effect inside it risks firing twice. Irreversible work belongs in a node after the gate (execute or log_rejection), which runs exactly once. Edge functions are pure routers and must not have side effects.",
+            "sourceLessonSlug": "m2-l7-two-rules"
+          },
+          {
+            "prompt": "In LangSmith, what confirms that a resumed run continued correctly rather than replaying from the start?",
+            "options": [
+              "The resumed run enters the graph mid-way, at human_approval, not at intake",
+              "The resumed run has a new thread_id",
+              "The checkpoints table is empty",
+              "The run took longer than the first one"
+            ],
+            "correctIndex": 0,
+            "explanation": "A correct resume loads the saved checkpoint and enters mid-graph at human_approval into finalize, not at intake. A new thread_id would mean it was not the same thread, an empty checkpoints table would mean nothing persisted, and run duration proves nothing about where it resumed.",
+            "sourceLessonSlug": "m2-l8-verify-langsmith"
+          }
+        ]
+      }
+    }
+  ]
+}
