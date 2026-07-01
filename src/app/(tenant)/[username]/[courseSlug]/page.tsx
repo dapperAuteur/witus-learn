@@ -162,7 +162,7 @@ export default async function CourseBySlugPage({ params }: Params) {
       <div className="mt-1 flex items-start justify-between gap-3">
         <h1 className="text-3xl font-bold">{course.title}</h1>
         {course.isPublished && course.visibility !== "private" ? (
-          <ShareButton title={course.title} text={course.description ?? undefined} label="Share course" />
+          <ShareButton title={course.title} text={course.description ?? undefined} label="Share course" courseId={course.id} />
         ) : null}
       </div>
       <p className="mt-1 text-sm text-neutral-500">

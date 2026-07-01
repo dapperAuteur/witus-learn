@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getScopedDb } from "@/db/scoped";
 import { requireBrandAdmin } from "@/lib/session";
 import { getAdminStats, listLearners } from "@/db/queries/admin-dashboard";
+import { getShareStats } from "@/db/queries/social-shares";
 
 export const metadata: Metadata = { title: "Dashboard" };
 
@@ -16,16 +17,22 @@ function fmtDate(d: Date | null): string {
 export default async function AdminDashboardPage() {
   const sdb = await getScopedDb();
   await requireBrandAdmin(sdb.tenantId);
-  const [stats, learners] = await Promise.all([
+  const [stats, learners, shares] = await Promise.all([
     getAdminStats(sdb.tenantId),
     listLearners(sdb.tenantId),
+    getShareStats(sdb.tenantId),
   ]);
 
+  const shareHint = shares.byChannel
+    .slice(0, 3)
+    .map((c) => `${c.channel} ${c.count}`)
+    .join(" · ");
   const tiles = [
     { label: "Learners", value: stats.learners },
     { label: "Active enrollments", value: stats.enrollments },
     { label: "Courses", value: `${stats.publishedCourses}/${stats.courses}`, hint: "published / total" },
     { label: "Completions", value: stats.completions },
+    { label: "Social shares", value: shares.total, hint: shareHint || "by channel" },
   ];
 
   return (
@@ -35,7 +42,7 @@ export default async function AdminDashboardPage() {
       </Link>
       <h1 className="mt-4 text-2xl font-bold">Dashboard</h1>
 
-      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         {tiles.map((t) => (
           <div key={t.label} className="rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
             <div className="text-3xl font-bold" style={{ color: "var(--accent)" }}>{t.value}</div>

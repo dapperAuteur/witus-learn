@@ -35,6 +35,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
     ...(flags.paths ? [{ href: "/paths", label: "Paths" }] : []),
     { href: "/instructors", label: "Instructors" },
     ...(session && canTeach ? [{ href: "/teach", label: "Teach", accent: true }] : []),
+    ...(session && canTeach ? [{ href: "/help", label: "Help" }] : []),
     ...(session && canAdmin ? [{ href: "/admin", label: "Admin", accent: true }] : []),
     ...(session ? [{ href: "/my-courses", label: "My Courses" }] : []),
   ];

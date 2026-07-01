@@ -29,6 +29,7 @@
     "course:script": "tsx --env-file=.env.local scripts/course-to-script.ts",
     "reassign:instructor": "tsx --env-file=.env.local scripts/reassign-instructor.ts",
     "reports:list": "tsx --env-file=.env.local scripts/report-list.ts",
+    "feedback:list": "tsx --env-file=.env.local scripts/feedback-list.ts",
     "test": "vitest run"
   },
   "dependencies": {

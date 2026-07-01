@@ -7,6 +7,7 @@ import { getSession, isPlatformOwner } from "@/lib/session";
 import { hasStripe } from "@/lib/env";
 import { listLessons } from "@/db/queries/authoring";
 import { listLinkUsage } from "@/db/queries/link-clicks";
+import { getCourseRecallStats } from "@/db/queries/recall";
 import { CourseSettingsForm } from "@/components/course-settings-form";
 import { LessonsManager } from "@/components/lessons-manager";
 import { LinkUsagePanel } from "@/components/link-usage-panel";
@@ -25,11 +26,12 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   if (!course) notFound();
   if (!(await canEditCourse(session, sdb.tenantId, course))) notFound();
 
-  const [lessons, owner, categories, linkUsage] = await Promise.all([
+  const [lessons, owner, categories, linkUsage, recallStats] = await Promise.all([
     listLessons(courseId),
     isPlatformOwner(session.user.id),
     sdb.listCategories(),
     listLinkUsage(sdb.tenantId, courseId),
+    getCourseRecallStats(sdb.tenantId, courseId),
   ]);
 
   return (
@@ -92,8 +94,25 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             contentUrl: l.contentUrl,
             audioChapters: l.audioChapters,
             transcriptContent: l.transcriptContent,
+            recallContent: l.recallContent,
           }))}
         />
+
+        <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
+          <h2 className="font-semibold">Recall accuracy</h2>
+          <p className="mt-1 text-sm text-neutral-500">
+            How often learners self-report getting a Quick-recall prompt right, in the lesson —
+            your signal for whether it&apos;s sticking in class vs only at quiz time.
+          </p>
+          {recallStats.accuracy === null ? (
+            <p className="mt-2 text-sm text-neutral-500">No recall attempts yet.</p>
+          ) : (
+            <p className="mt-2 text-sm">
+              <span className="text-2xl font-bold" style={{ color: "var(--accent)" }}>{recallStats.accuracy}%</span>{" "}
+              recalled correctly <span className="text-neutral-500">({recallStats.gotIt}/{recallStats.attempts} attempts)</span>
+            </p>
+          )}
+        </section>
 
         <LinkUsagePanel rows={linkUsage} />
       </div>

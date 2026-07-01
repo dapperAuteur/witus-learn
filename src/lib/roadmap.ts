@@ -13,6 +13,18 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
+- 🔧 **Teacher Help Center** (\`/help\`) — searchable in-app teacher guide (fuzzy search over
+  task-oriented how-tos: courses, lessons, recording, pricing, publishing, live, quick-recall,
+  feedback, sharing). Linked from the menu + Teach page. (help-documention.md)
+- 🔧 **Active recall** (\`feat/active-recall\`, stacks on \`feat/course-experience\`) — per-lesson
+  **Quick-recall** cards: click-to-reveal answer + "I got it / Missed it" **self-grade**
+  (\`lessons.recall_content\` + authoring in the lesson editor). Grades land in \`recall_attempts\`;
+  the teacher course page shows **recall accuracy** (in-lesson signal vs quiz). Migration 0022.
+- 🔧 **Course-experience batch** (\`feat/course-experience\`) — **mark-complete** no longer jumps the
+  page (flips in place + offers "Next lesson" on linear courses); **curriculum feedback** mirrors to
+  the WitUS Inbox for the owner's courses + \`pnpm feedback:list\` CLI + each teacher sees only their
+  own; **Report a problem** gains a **feedback** kind (bug/feedback/idea/other); **social-share
+  tracking** (\`social_shares\` + \`/api/share\` + ShareButton) surfaced on the admin dashboard. Migration 0021.
 - 🔧 **SEO + mobile + admin-polish batch** (\`bundle/seo-mobile-admin-2026-07-01\`) — **per-page
   social previews** (\`/api/og\` content-relevant cards, \`metadataBase\`, Twitter cards, course/lesson
   page OG + description, Course JSON-LD); **cross-promo picker** now lists all ecosystem apps (adds
@@ -94,10 +106,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   section-scoped quizzes (≤10 Q). ECS copy-edited (em-dashes/AI-tells removed). \`pnpm seed:health\`/\`seed:speedway\`.
 - ✅ **Speedway copy-edited** (em-dashes→clean, narration/production cues removed; citations preserved)
   and **ECS accuracy flags fixed** ("hundreds of millions of years"; the CECD sentence rewritten).
-- ❓ **NASM CPT citations** — CentOS has no chapter-mapped sources and its authoring rule forbids citing
-  the textbook, so 170 lessons are flagged \`<!-- NEEDS SOURCE -->\` (NOT fabricated). DECISION needed:
-  map studies upstream in CentOS + re-gen, or ship CPT uncited. (CES/CNC already carry real DOIs.)
-  **Speedway S2/S3** still outline-only.
+- ✅ **NASM CPT citations — resolved: cite the NASM CPT course as the primary source.** Every one of
+  the 170 CPT lessons carries a \`## Sources & Further Reading\` block naming the **NASM Certified
+  Personal Trainer (CPT)** curriculum + the National Academy of Sports Medicine (nasm.org) as its
+  primary source, emitted by \`gen-health-data.ts\` (so a re-gen preserves it). Per-claim study
+  citations remain a planned enhancement. (CES/CNC already carry real DOIs.) Re-run \`seed:health\`
+  if the DB predates this. **Speedway S2/S3** still outline-only.
 - 🟡 **"Read Your Body's Data" needs a metrics tracker** — it logs daily numbers inside CentOS's
   "metrics page" (which witus lacks). Build a tracker, rewrite to external tools, or keep on CentOS.
 - 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +

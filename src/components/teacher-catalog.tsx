@@ -145,6 +145,7 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search your courses…"
+          aria-label="Search your courses"
           className="min-h-9 flex-1 rounded-md border border-neutral-300 px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900"
         />
         {(["all", "published", "draft", "private", "hold"] as Status[]).map((s) => (
@@ -183,6 +184,7 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
               value={priceInput}
               onChange={(e) => setPriceInput(e.target.value)}
               placeholder="9.99"
+              aria-label="Bulk one-time price in dollars"
               className="min-h-9 w-20 rounded-md border border-neutral-300 px-2 text-sm dark:border-neutral-700 dark:bg-neutral-900"
             />
             <button
