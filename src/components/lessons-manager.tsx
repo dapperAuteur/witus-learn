@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { MarkdownEditor } from "./markdown-editor";
+import { CloudinaryUpload } from "./cloudinary-upload";
 
 export interface ManagedLesson {
   id: string;
@@ -12,7 +14,10 @@ export interface ManagedLesson {
   isFreePreview: boolean;
   sortOrder: number;
   textContent: string | null;
+  contentUrl: string | null;
 }
+
+const EDITABLE_TYPES = ["text", "video", "audio", "slides"];
 
 // Instructor lessons manager (CRUD over the lesson APIs): add text lessons, edit
 // title/body/flags, reorder, publish, delete. Quizzes/media are authored via seeds
@@ -98,7 +103,7 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
                 <button type="button" disabled={busy} onClick={() => patch(l.id, { isPublished: !l.isPublished })} className="rounded border border-neutral-300 px-2 py-0.5 dark:border-neutral-700">
                   {l.isPublished ? "Unpublish" : "Publish"}
                 </button>
-                {l.lessonType === "text" ? (
+                {EDITABLE_TYPES.includes(l.lessonType) ? (
                   <button type="button" onClick={() => setEditing(editing === l.id ? null : l.id)} className="rounded border border-neutral-300 px-2 py-0.5 dark:border-neutral-700">
                     {editing === l.id ? "Close" : "Edit"}
                   </button>
@@ -115,7 +120,7 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
       <form onSubmit={add} className="mt-4 space-y-2 rounded-md border border-dashed border-neutral-300 p-3 dark:border-neutral-700">
         <h3 className="text-sm font-medium">Add a lesson</h3>
         <input value={newTitle} onChange={(e) => setNewTitle(e.target.value)} placeholder="Lesson title" maxLength={200} className="min-h-10 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900" />
-        <textarea value={newBody} onChange={(e) => setNewBody(e.target.value)} placeholder="Lesson body (markdown)" rows={4} className="w-full rounded-md border border-neutral-300 px-3 py-2 text-sm dark:border-neutral-700 dark:bg-neutral-900" />
+        <MarkdownEditor value={newBody} onChange={setNewBody} rows={4} placeholder="Lesson body — write or format with the toolbar, then Preview." />
         <button type="submit" disabled={busy || newTitle.trim().length < 1} className="min-h-10 rounded-md px-3 text-sm font-medium text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
           Add lesson
         </button>
@@ -134,17 +139,49 @@ function LessonEditor({
   busy: boolean;
 }) {
   const [title, setTitle] = useState(lesson.title);
+  const [lessonType, setLessonType] = useState(lesson.lessonType);
   const [body, setBody] = useState(lesson.textContent ?? "");
+  const [contentUrl, setContentUrl] = useState(lesson.contentUrl ?? "");
   const [freePreview, setFreePreview] = useState(lesson.isFreePreview);
+  const isMedia = lessonType === "video" || lessonType === "audio" || lessonType === "slides";
+  const accept = lessonType === "video" ? "video/*" : lessonType === "audio" ? "audio/*" : "application/pdf,image/*";
 
   return (
     <div className="mt-3 space-y-2 rounded-md bg-neutral-50 p-3 dark:bg-neutral-900/50">
       <input value={title} onChange={(e) => setTitle(e.target.value)} maxLength={200} className="min-h-10 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900" />
-      <textarea value={body} onChange={(e) => setBody(e.target.value)} rows={8} className="w-full rounded-md border border-neutral-300 px-3 py-2 font-mono text-sm dark:border-neutral-700 dark:bg-neutral-900" />
+
+      <label className="flex items-center gap-2 text-sm">
+        Type
+        <select value={lessonType} onChange={(e) => setLessonType(e.target.value)} className="min-h-9 rounded-md border border-neutral-300 px-2 dark:border-neutral-700 dark:bg-neutral-900">
+          <option value="text">Text</option>
+          <option value="video">Video</option>
+          <option value="audio">Audio</option>
+          <option value="slides">Slides / PDF</option>
+        </select>
+      </label>
+
+      {isMedia ? (
+        <div className="space-y-2 rounded-md border border-neutral-200 p-2 dark:border-neutral-800">
+          <div className="flex flex-wrap items-center gap-2">
+            <CloudinaryUpload onUploaded={setContentUrl} accept={accept} />
+            <span className="text-xs text-neutral-500">or paste a URL (a file, YouTube/Vimeo, Google Slides):</span>
+          </div>
+          <input value={contentUrl} onChange={(e) => setContentUrl(e.target.value)} placeholder="https://…" className="min-h-9 w-full rounded-md border border-neutral-300 px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900" />
+          {contentUrl ? <p className="truncate text-xs text-neutral-500">Media: {contentUrl}</p> : null}
+        </div>
+      ) : null}
+
+      <MarkdownEditor value={body} onChange={setBody} rows={8} placeholder={isMedia ? "Optional notes / transcript shown with the media." : undefined} />
       <label className="flex items-center gap-2 text-sm">
         <input type="checkbox" checked={freePreview} onChange={(e) => setFreePreview(e.target.checked)} /> Free preview
       </label>
-      <button type="button" disabled={busy} onClick={() => onSave({ title, textContent: body, isFreePreview: freePreview })} className="min-h-10 rounded-md px-3 text-sm font-medium text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
+      <button
+        type="button"
+        disabled={busy}
+        onClick={() => onSave({ title, lessonType, textContent: body || null, contentUrl: isMedia ? contentUrl || null : null, isFreePreview: freePreview })}
+        className="min-h-10 rounded-md px-3 text-sm font-medium text-white disabled:opacity-60"
+        style={{ backgroundColor: "var(--accent)" }}
+      >
         Save lesson
       </button>
     </div>
