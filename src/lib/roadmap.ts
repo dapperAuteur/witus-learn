@@ -13,6 +13,11 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
+- 🔧 **Course-admin suite** (\`bundle/course-admin-suite\`) — subscription **billing frequency**
+  (monthly/annual) driving the Stripe interval; **unsaved-changes** guard on course settings;
+  in-app **problem reporter** (site-wide button → \`/admin/reports\` triage + WitUS Inbox mirror +
+  \`reports:list\`); **category management** (\`/admin/categories\` add/rename/delete + settings picker);
+  **admin dashboard** (\`/admin/dashboard\` — learners, enrollments, completions + learner roster).
 
 ### Platform backlog
 - 🔧 **UI/UX overhaul** — north star **active-practice / mastery** (Duolingo + Brilliant + Khan).
