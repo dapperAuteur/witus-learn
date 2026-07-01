@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { MarkdownEditor } from "./markdown-editor";
 
 export interface ManagedLesson {
   id: string;
@@ -115,7 +116,7 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
       <form onSubmit={add} className="mt-4 space-y-2 rounded-md border border-dashed border-neutral-300 p-3 dark:border-neutral-700">
         <h3 className="text-sm font-medium">Add a lesson</h3>
         <input value={newTitle} onChange={(e) => setNewTitle(e.target.value)} placeholder="Lesson title" maxLength={200} className="min-h-10 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900" />
-        <textarea value={newBody} onChange={(e) => setNewBody(e.target.value)} placeholder="Lesson body (markdown)" rows={4} className="w-full rounded-md border border-neutral-300 px-3 py-2 text-sm dark:border-neutral-700 dark:bg-neutral-900" />
+        <MarkdownEditor value={newBody} onChange={setNewBody} rows={4} placeholder="Lesson body — write or format with the toolbar, then Preview." />
         <button type="submit" disabled={busy || newTitle.trim().length < 1} className="min-h-10 rounded-md px-3 text-sm font-medium text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
           Add lesson
         </button>
@@ -140,7 +141,7 @@ function LessonEditor({
   return (
     <div className="mt-3 space-y-2 rounded-md bg-neutral-50 p-3 dark:bg-neutral-900/50">
       <input value={title} onChange={(e) => setTitle(e.target.value)} maxLength={200} className="min-h-10 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900" />
-      <textarea value={body} onChange={(e) => setBody(e.target.value)} rows={8} className="w-full rounded-md border border-neutral-300 px-3 py-2 font-mono text-sm dark:border-neutral-700 dark:bg-neutral-900" />
+      <MarkdownEditor value={body} onChange={setBody} rows={8} />
       <label className="flex items-center gap-2 text-sm">
         <input type="checkbox" checked={freePreview} onChange={(e) => setFreePreview(e.target.checked)} /> Free preview
       </label>
