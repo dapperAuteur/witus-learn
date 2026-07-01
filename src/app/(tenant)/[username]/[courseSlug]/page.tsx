@@ -6,6 +6,7 @@ import { loadCourseView } from "@/lib/course-access";
 import { isWitusBrandedHost } from "@/lib/witus-host";
 import { trackedHref } from "@/lib/tracked-link";
 import { RelatedTools } from "@/components/related-tools";
+import { ShareButton } from "@/components/share-button";
 import { lessonAccess, isFreeCourse } from "@/lib/gating";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
 import { listLiveForCourse } from "@/db/queries/live";
@@ -130,7 +131,12 @@ export default async function CourseBySlugPage({ params }: Params) {
         ← Back to catalog
       </Link>
       {meta ? <p className="mt-6 text-xs uppercase tracking-wide text-neutral-500">{meta}</p> : null}
-      <h1 className="mt-1 text-3xl font-bold">{course.title}</h1>
+      <div className="mt-1 flex items-start justify-between gap-3">
+        <h1 className="text-3xl font-bold">{course.title}</h1>
+        {course.isPublished && course.visibility !== "private" ? (
+          <ShareButton title={course.title} text={course.description ?? undefined} label="Share course" />
+        ) : null}
+      </div>
       <p className="mt-1 text-sm text-neutral-500">
         by{" "}
         <Link href={`/instructors/${username}`} className="hover:underline">

@@ -14,6 +14,7 @@ import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { MetricsTrackerCta } from "@/components/metrics-tracker-cta";
 import { SaveOfflineButton } from "@/components/save-offline-button";
+import { ShareButton } from "@/components/share-button";
 import { isDirectMediaFile } from "@/lib/media";
 import { brandName } from "@/lib/branding";
 
@@ -139,7 +140,12 @@ export default async function LessonPage({ params }: Params) {
 
         {/* Main lesson column. */}
         <main className="min-w-0 flex-1">
-          <h1 className="text-2xl font-bold tracking-tight">{lesson.title}</h1>
+          <div className="flex items-start justify-between gap-3">
+            <h1 className="text-2xl font-bold tracking-tight">{lesson.title}</h1>
+            {view.course.isPublished && view.course.visibility !== "private" ? (
+              <ShareButton title={`${lesson.title} — ${view.course.title}`} label="Share" />
+            ) : null}
+          </div>
 
           <div className="mt-6">
             {access.open ? (

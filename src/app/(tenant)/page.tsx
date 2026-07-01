@@ -4,6 +4,7 @@ import { getSession } from "@/lib/session";
 import { getLearnerDashboard, getWeeklyLeaderboard } from "@/db/queries/dashboard";
 import { brandName } from "@/lib/branding";
 import { CourseCard } from "@/components/course-card";
+import { ShareButton } from "@/components/share-button";
 import { LearnerDashboardView } from "@/components/learner-dashboard";
 import { ComingSoon } from "@/components/coming-soon";
 
@@ -51,7 +52,10 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         <p className="text-sm uppercase tracking-widest" style={{ color: "var(--accent)" }}>
           {brandName(tenant)}
         </p>
-        <h1 className="mt-1 text-3xl font-bold">{tenant.name}</h1>
+        <div className="mt-1 flex items-start justify-between gap-3">
+          <h1 className="text-3xl font-bold">{tenant.name}</h1>
+          <ShareButton title={tenant.name} text={tenant.tagline ?? undefined} label="Share school" />
+        </div>
         {tenant.tagline ? (
           <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">{tenant.tagline}</p>
         ) : null}
