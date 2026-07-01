@@ -47,7 +47,7 @@ export function markdownToNarration(md: string, opts: NarrationOptions = {}): st
       .replace(/(\*|_)(.*?)\1/g, "$2") // italic
       .replace(/~~(.*?)~~/g, "$2") // strikethrough
       .replace(/⚠️\s*/g, "Note: ") // warning glyph → spoken cue
-      .replace(/[►▶→←↔·•]/g, " ") // stray glyphs
+      .replace(/[►▶→←↔•]/g, " ") // stray glyphs (keep · used in titles)
       .replace(/&nbsp;/gi, " ")
       .replace(/&amp;/gi, "&")
       .replace(/\s+/g, " ")

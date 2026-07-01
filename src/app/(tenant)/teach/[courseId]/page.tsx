@@ -34,6 +34,9 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           ← Your courses
         </Link>
         <div className="flex items-center gap-4 text-sm">
+          <Link href={`/teach/${course.id}/script`} className="underline" style={{ color: "var(--accent)" }}>
+            📄 Recording script
+          </Link>
           <Link href={`/teach/${course.id}/submissions`} className="underline" style={{ color: "var(--accent)" }}>
             Submissions
           </Link>
