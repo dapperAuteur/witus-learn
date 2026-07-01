@@ -51,6 +51,7 @@ import { STATE_CIVICS_DE_COURSE } from "./data/state-civics-de-course";
 import { STATE_CIVICS_ND_COURSE } from "./data/state-civics-nd-course";
 import { STATE_CIVICS_NV_COURSE } from "./data/state-civics-nv-course";
 import { STATE_CIVICS_MT_COURSE } from "./data/state-civics-mt-course";
+import { STATE_CIVICS_RI_COURSE } from "./data/state-civics-ri-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting-course";
 import { AI_L2_DETECTING_AI_COURSE } from "./data/ai-l2-detecting-ai-course";
@@ -311,6 +312,7 @@ async function main() {
     { slug: "state-civics-nd", course: STATE_CIVICS_ND_COURSE },
     { slug: "state-civics-nv", course: STATE_CIVICS_NV_COURSE },
     { slug: "state-civics-mt", course: STATE_CIVICS_MT_COURSE },
+    { slug: "state-civics-ri", course: STATE_CIVICS_RI_COURSE },
   ]) {
     await seedAuthoredCourse(db, { tenantId: learnWitus, instructorId, slug, course, category: "Civics", navigationMode: "linear" });
   }
