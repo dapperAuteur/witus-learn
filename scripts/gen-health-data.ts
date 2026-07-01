@@ -546,6 +546,10 @@ function buildFromAcademyCsv(opts: {
   quizzesCsv?: string;
   title: string;
   description: string;
+  // When set, prepend a NASM curriculum source line to each lesson's `## Sources`
+  // (the certification's own curriculum is the primary source). Only NASM exam-prep
+  // courses pass this; general academy courses (e.g. Read Your Body) leave it unset.
+  curriculumSource?: string;
 }): AuthoredCourse {
   const rows = readCsvObjects(opts.courseCsv).filter((r) => (r.lesson_type ?? "text") !== "quiz");
   rows.sort(
@@ -593,8 +597,9 @@ function buildFromAcademyCsv(opts: {
     const mod = Number(r.module_order);
     if (prevModule != null && mod !== prevModule) flushModuleQuiz(prevModule);
     prevModule = mod;
-    const body = tidy(stripBeats(r.text_content ?? ""));
+    let body = tidy(stripBeats(r.text_content ?? ""));
     if (!body) continue;
+    if (opts.curriculumSource) body = addNasmCurriculumSource(body, opts.curriculumSource);
     lessons.push({
       slug: `m${mod}-l${r.lesson_order}-${slugify(r.title)}`.slice(0, 90),
       title: r.title,
@@ -637,6 +642,34 @@ function flagCptSources(body: string): string {
       "compiled for the WitUS health courses — the shared study bibliography that the CES and CNC " +
       "courses cite per lesson. (Per-claim study citations are a planned enhancement.)",
   );
+}
+
+// CES & CNC lessons DO carry real per-lesson APA study citations + DOIs (unlike CPT), but the
+// generated bodies never named the NASM curriculum *itself* as a source. These courses are study
+// companions for the NASM CES / CNC exams, so the certification's own curriculum is the primary
+// source; the peer-reviewed studies already cited per lesson are the corroborating science. We add
+// ONE curriculum-source line at the top of each lesson's existing `## Sources` list — additive, so
+// it preserves every real DOI already present. Honest per the Citation rule: NASM curriculum is the
+// primary source, and the cited open-access research is consistent with it.
+//   cert = the full certification name, e.g. "NASM Certified Corrective Exercise Specialist (CES)"
+function addNasmCurriculumSource(body: string, cert: string): string {
+  const line =
+    `- **${cert}** curriculum — the primary source for this course; see the National Academy of ` +
+    `Sports Medicine (https://www.nasm.org). The studies cited below are peer-reviewed, open-access ` +
+    `research consistent with that curriculum.`;
+  // Insert as the first bullet under the lesson's own `## Sources` (or `## Sources & Further Reading`)
+  // heading, above the existing DOI citations. Only the first Sources heading is touched.
+  const heading = /^(##\s*Sources(?:\s*&\s*Further Reading)?\s*)$/im;
+  if (heading.test(body)) {
+    let done = false;
+    return body.replace(heading, (m) => {
+      if (done) return m;
+      done = true;
+      return `${m.trimEnd()}\n\n${line}\n`;
+    });
+  }
+  // No Sources section at all (rare) — append one so the curriculum is still cited.
+  return `${body.trimEnd()}\n\n## Sources\n\n${line}\n`;
 }
 
 // ── 2. NASM CPT — chapter folders with lessons/*.md + _quiz-content.json ───────
@@ -713,8 +746,9 @@ function buildNasmCnc(): AuthoredCourse {
     const section = (Array.isArray(raw) ? undefined : raw.module?.title) ?? `Chapter ${order}`;
     const chapterLessons = Array.isArray(raw) ? raw : raw.lessons ?? [];
     for (const l of [...chapterLessons].sort((a, b) => a.n - b.n)) {
-      const body = tidy(stripBeats(l.lessonMarkdown ?? ""));
+      let body = tidy(stripBeats(l.lessonMarkdown ?? ""));
       if (!body) continue;
+      body = addNasmCurriculumSource(body, "NASM Certified Nutrition Coach (CNC)");
       lessons.push({
         slug: `ch${order}-l${l.n}-${slugify(l.title)}`.slice(0, 90),
         title: l.title,
@@ -988,6 +1022,7 @@ function main() {
       title: "NASM CES: Corrective Exercise Specialist",
       description:
         "An audio-first study course for the NASM Corrective Exercise Specialist (CES) exam. Learn the Corrective Exercise Continuum — inhibit, lengthen, activate, integrate — plus assessment and joint-by-joint corrective strategies, with a cited knowledge check for each module.",
+      curriculumSource: "NASM Certified Corrective Exercise Specialist (CES)",
     }),
     "Source: docs/ces-curriculum/academy-import",
   );
