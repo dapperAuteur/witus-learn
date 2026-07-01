@@ -30,8 +30,9 @@ export default async function TeachPage() {
   }
 
   const owner = await isPlatformOwner(session.user.id);
-  const isInstructor =
-    owner || ["instructor", "brand_admin"].includes((await getMembership(session.user.id, tenant.id)) ?? "");
+  const membership = (await getMembership(session.user.id, tenant.id)) ?? "";
+  const isInstructor = owner || ["instructor", "brand_admin"].includes(membership);
+  const isAdmin = owner || membership === "brand_admin";
 
   if (!isInstructor) {
     return (
@@ -55,6 +56,11 @@ export default async function TeachPage() {
           {owner ? (
             <Link href="/admin" className="font-medium underline" style={{ color: "var(--accent)" }}>
               Admin →
+            </Link>
+          ) : null}
+          {isAdmin ? (
+            <Link href="/teach/announce" className="font-medium underline" style={{ color: "var(--accent)" }}>
+              Announce →
             </Link>
           ) : null}
           <Link href="/teach/profile" className="underline" style={{ color: "var(--accent)" }}>

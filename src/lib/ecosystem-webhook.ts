@@ -20,6 +20,10 @@ interface Target {
 const INBOX: Target = { url: process.env.INBOX_INGEST_URL, slug: process.env.INBOX_SOURCE_SLUG, secret: process.env.INBOX_INGEST_SECRET };
 const OUTBOX: Target = { url: process.env.OUTBOX_INGEST_URL, slug: process.env.OUTBOX_SOURCE_SLUG, secret: process.env.OUTBOX_INGEST_SECRET };
 
+/** True once the Outbox target is fully configured. Lets a UI refuse to "announce"
+ *  (and avoid falsely marking courses announced) when the send would silently no-op. */
+export const hasOutbox = Boolean(OUTBOX.url && OUTBOX.slug && OUTBOX.secret);
+
 async function post(target: Target, body: unknown, label: string): Promise<void> {
   if (!target.url || !target.slug || !target.secret) return; // not configured → no-op
   const rawBody = JSON.stringify(body);

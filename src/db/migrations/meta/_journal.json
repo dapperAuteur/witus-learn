@@ -99,6 +99,13 @@
       "when": 1782800688434,
       "tag": "0013_windy_luminals",
       "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1782917024620,
+      "tag": "0014_tricky_cyclops",
+      "breakpoints": true
     }
   ]
 }
