@@ -84,6 +84,11 @@ export const courses = pgTable(
     isFeatured: boolean("is_featured").notNull().default(false),
     featuredOrder: integer("featured_order"),
 
+    // Outbox announcements: when this course was last dispatched to the WitUS Outbox
+    // (as a draft social post → Ocoya). NULL = never announced. Lets the batch-announce
+    // UI show what's been announced and stagger the rest over time.
+    announcedAt: timestamp("announced_at", { withTimezone: true }),
+
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },

@@ -40,13 +40,10 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
     }
   }
 
-  const sort =
-    sp.sort === "title" || sp.sort === "featured" || sp.sort === "newest" ? sp.sort : undefined;
-  const [courses, categories] = await Promise.all([
-    sdb.listCourses({ q: sp.q, category: sp.category, sort }),
-    sdb.listCategories(),
-  ]);
+  const [courses, categories] = await Promise.all([sdb.listCourses(), sdb.listCategories()]);
   const featured = courses.filter((c) => c.isFeatured);
+  const countByCategory = new Map<string, number>();
+  for (const c of courses) if (c.category) countByCategory.set(c.category, (countByCategory.get(c.category) ?? 0) + 1);
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
@@ -87,26 +84,14 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         </section>
       ) : null}
 
-      <form method="get" className="mb-6 flex flex-wrap items-center gap-3">
-        <label className="sr-only" htmlFor="q">
-          Search courses
-        </label>
+      <form method="get" action="/courses" className="mb-8 flex flex-wrap items-center gap-3">
+        <label className="sr-only" htmlFor="q">Search courses</label>
         <input
           id="q"
           name="q"
-          defaultValue={sp.q ?? ""}
-          placeholder="Search courses…"
+          placeholder="Search all courses…"
           className="min-h-11 flex-1 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900"
         />
-        <select
-          name="sort"
-          defaultValue={sort ?? "newest"}
-          className="min-h-11 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900"
-        >
-          <option value="newest">Newest</option>
-          <option value="title">A–Z</option>
-          <option value="featured">Featured</option>
-        </select>
         <button
           type="submit"
           className="min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2"
@@ -117,23 +102,31 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
       </form>
 
       {categories.length > 0 ? (
-        <nav className="mb-8 flex flex-wrap gap-2 text-sm" aria-label="Categories">
-          <Link
-            href="/"
-            className="rounded-full border border-neutral-300 px-3 py-1 dark:border-neutral-700"
-          >
-            All
-          </Link>
-          {categories.map((c) => (
-            <Link
-              key={c.id}
-              href={`/?category=${encodeURIComponent(c.name)}`}
-              className="rounded-full border border-neutral-300 px-3 py-1 hover:border-current dark:border-neutral-700"
-            >
-              {c.name}
+        <section className="mb-10">
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-lg font-semibold">Browse by track</h2>
+            <Link href="/courses" className="text-sm font-medium underline" style={{ color: "var(--accent)" }}>
+              All courses →
             </Link>
-          ))}
-        </nav>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {categories.map((c) => {
+              const n = countByCategory.get(c.name) ?? 0;
+              return (
+                <Link
+                  key={c.id}
+                  href={`/courses?category=${encodeURIComponent(c.name)}`}
+                  className="rounded-lg border border-neutral-200 p-5 transition-colors hover:border-current focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800"
+                >
+                  <span className="font-semibold">{c.name}</span>
+                  <p className="mt-1 text-sm text-neutral-500">
+                    {n} course{n === 1 ? "" : "s"} →
+                  </p>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
       ) : null}
 
       {categories.some((c) => c.name === "Languages") ? (
@@ -146,8 +139,8 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         </Link>
       ) : null}
 
-      {featured.length > 0 && !sp.q && !sp.category ? (
-        <section className="mb-10">
+      {featured.length > 0 ? (
+        <section className="mb-6">
           <h2 className="mb-3 text-lg font-semibold">Featured</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {featured.map((c) => (
@@ -157,20 +150,15 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         </section>
       ) : null}
 
-      <section>
-        <h2 className="mb-3 text-lg font-semibold">
-          {sp.q || sp.category ? "Results" : "All courses"}
-        </h2>
-        {courses.length === 0 ? (
-          <p className="text-neutral-500">No courses yet.</p>
-        ) : (
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {courses.map((c) => (
-              <CourseCard key={c.id} course={c} />
-            ))}
-          </div>
-        )}
-      </section>
+      {courses.length === 0 ? (
+        <p className="text-neutral-500">No courses yet.</p>
+      ) : (
+        <p className="text-sm text-neutral-500">
+          <Link href="/courses" className="font-medium underline" style={{ color: "var(--accent)" }}>
+            Browse all {courses.length} course{courses.length === 1 ? "" : "s"} →
+          </Link>
+        </p>
+      )}
     </main>
   );
 }

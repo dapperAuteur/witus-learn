@@ -625,13 +625,17 @@ const CPT_SOURCE_BOILERPLATE =
   /^##\s*Sources\s*\n+(?:[-*]\s*)?The peer-reviewed science behind leading science-based fitness certifications\. See the course Sources page for the full study list\.\s*$/im;
 function flagCptSources(body: string): string {
   if (!CPT_SOURCE_BOILERPLATE.test(body)) return body;
+  // BAM's decision: a course-level Sources note rather than per-claim citations (which we can't
+  // add without fabricating a study→claim link the CentOS source never made). Honest: NASM is
+  // the primary source; the science is consistent with the shared open-access research base.
   return body.replace(
     CPT_SOURCE_BOILERPLATE,
-    "## Sources\n\n<!-- NEEDS SOURCE: CentOS NASM CPT source ships only a boilerplate Sources line " +
-      "(the textbook is deliberately uncited per the CPT authoring rule) and attaches no inline " +
-      "study citation to any claim. Real per-lesson APA references must come from the shared " +
-      "open-access bibliography (docs/CentenarianAcademy/shared-sources/bibliography.json, \"workout\" " +
-      "tag) once a human maps specific claims to specific studies — do not auto-assign. -->",
+    "## Sources & Further Reading\n\n" +
+      "This course follows the **NASM Certified Personal Trainer (CPT)** curriculum, which is its " +
+      "primary source — see the National Academy of Sports Medicine (https://www.nasm.org). The " +
+      "exercise-science principles here are consistent with the peer-reviewed, open-access research " +
+      "compiled for the WitUS health courses — the shared study bibliography that the CES and CNC " +
+      "courses cite per lesson. (Per-claim study citations are a planned enhancement.)",
   );
 }
 

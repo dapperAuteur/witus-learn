@@ -17,6 +17,22 @@ const Schema = z.object({
   sortOrder: z.number().int().optional(),
   isFreePreview: z.boolean().optional(),
   isPublished: z.boolean().optional(),
+  // Follow-along transcript + chapter markers (built from an uploaded .srt, then editable).
+  transcriptContent: z
+    .array(
+      z.object({
+        text: z.string(),
+        start: z.number().optional(),
+        end: z.number().optional(),
+        speaker: z.string().optional(),
+      }),
+    )
+    .nullable()
+    .optional(),
+  audioChapters: z
+    .array(z.object({ title: z.string(), start: z.number().optional() }))
+    .nullable()
+    .optional(),
 });
 
 export async function GET(_req: Request, { params }: Params) {

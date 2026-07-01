@@ -17,6 +17,54 @@ import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { STATE_CIVICS_IN_COURSE } from "./data/state-civics-in-course";
 import { STATE_CIVICS_AZ_COURSE } from "./data/state-civics-az-course";
 import { STATE_CIVICS_AR_COURSE } from "./data/state-civics-ar-course";
+import { STATE_CIVICS_CA_COURSE } from "./data/state-civics-ca-course";
+import { STATE_CIVICS_TX_COURSE } from "./data/state-civics-tx-course";
+import { STATE_CIVICS_FL_COURSE } from "./data/state-civics-fl-course";
+import { STATE_CIVICS_NY_COURSE } from "./data/state-civics-ny-course";
+import { STATE_CIVICS_PA_COURSE } from "./data/state-civics-pa-course";
+import { STATE_CIVICS_OH_COURSE } from "./data/state-civics-oh-course";
+import { STATE_CIVICS_GA_COURSE } from "./data/state-civics-ga-course";
+import { STATE_CIVICS_NC_COURSE } from "./data/state-civics-nc-course";
+import { STATE_CIVICS_MI_COURSE } from "./data/state-civics-mi-course";
+import { STATE_CIVICS_VA_COURSE } from "./data/state-civics-va-course";
+import { STATE_CIVICS_WA_COURSE } from "./data/state-civics-wa-course";
+import { STATE_CIVICS_CO_COURSE } from "./data/state-civics-co-course";
+import { STATE_CIVICS_MA_COURSE } from "./data/state-civics-ma-course";
+import { STATE_CIVICS_NJ_COURSE } from "./data/state-civics-nj-course";
+import { STATE_CIVICS_IL_COURSE } from "./data/state-civics-il-course";
+import { STATE_CIVICS_TN_COURSE } from "./data/state-civics-tn-course";
+import { STATE_CIVICS_LA_COURSE } from "./data/state-civics-la-course";
+import { STATE_CIVICS_NE_COURSE } from "./data/state-civics-ne-course";
+import { STATE_CIVICS_ME_COURSE } from "./data/state-civics-me-course";
+import { STATE_CIVICS_AK_COURSE } from "./data/state-civics-ak-course";
+import { STATE_CIVICS_OR_COURSE } from "./data/state-civics-or-course";
+import { STATE_CIVICS_MO_COURSE } from "./data/state-civics-mo-course";
+import { STATE_CIVICS_NH_COURSE } from "./data/state-civics-nh-course";
+import { STATE_CIVICS_HI_COURSE } from "./data/state-civics-hi-course";
+import { STATE_CIVICS_SC_COURSE } from "./data/state-civics-sc-course";
+import { STATE_CIVICS_MD_COURSE } from "./data/state-civics-md-course";
+import { STATE_CIVICS_WI_COURSE } from "./data/state-civics-wi-course";
+import { STATE_CIVICS_MN_COURSE } from "./data/state-civics-mn-course";
+import { STATE_CIVICS_VT_COURSE } from "./data/state-civics-vt-course";
+import { STATE_CIVICS_CT_COURSE } from "./data/state-civics-ct-course";
+import { STATE_CIVICS_DE_COURSE } from "./data/state-civics-de-course";
+import { STATE_CIVICS_ND_COURSE } from "./data/state-civics-nd-course";
+import { STATE_CIVICS_NV_COURSE } from "./data/state-civics-nv-course";
+import { STATE_CIVICS_MT_COURSE } from "./data/state-civics-mt-course";
+import { STATE_CIVICS_RI_COURSE } from "./data/state-civics-ri-course";
+import { STATE_CIVICS_UT_COURSE } from "./data/state-civics-ut-course";
+import { STATE_CIVICS_AL_COURSE } from "./data/state-civics-al-course";
+import { STATE_CIVICS_SD_COURSE } from "./data/state-civics-sd-course";
+import { STATE_CIVICS_NM_COURSE } from "./data/state-civics-nm-course";
+import { STATE_CIVICS_WY_COURSE } from "./data/state-civics-wy-course";
+import { STATE_CIVICS_IA_COURSE } from "./data/state-civics-ia-course";
+import { STATE_CIVICS_WV_COURSE } from "./data/state-civics-wv-course";
+import { STATE_CIVICS_KY_COURSE } from "./data/state-civics-ky-course";
+import { STATE_CIVICS_OK_COURSE } from "./data/state-civics-ok-course";
+import { STATE_CIVICS_ID_COURSE } from "./data/state-civics-id-course";
+import { STATE_CIVICS_KS_COURSE } from "./data/state-civics-ks-course";
+import { STATE_CIVICS_MS_COURSE } from "./data/state-civics-ms-course";
+import { STATE_CIVICS_DC_COURSE } from "./data/state-civics-dc-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting-course";
 import { AI_L2_DETECTING_AI_COURSE } from "./data/ai-l2-detecting-ai-course";
@@ -239,6 +287,61 @@ async function main() {
     category: "Civics",
     navigationMode: "linear",
   });
+  // More per-state civics (light up the /civics map). Each cites its state's own .gov and flags
+  // time-sensitive facts (e.g. NY's court-name inversion, TX's plural executive, CA direct
+  // democracy, FL's 60% amendment threshold) rather than asserting them as fixed.
+  for (const { slug, course } of [
+    { slug: "state-civics-ca", course: STATE_CIVICS_CA_COURSE },
+    { slug: "state-civics-tx", course: STATE_CIVICS_TX_COURSE },
+    { slug: "state-civics-fl", course: STATE_CIVICS_FL_COURSE },
+    { slug: "state-civics-ny", course: STATE_CIVICS_NY_COURSE },
+    { slug: "state-civics-pa", course: STATE_CIVICS_PA_COURSE },
+    { slug: "state-civics-oh", course: STATE_CIVICS_OH_COURSE },
+    { slug: "state-civics-ga", course: STATE_CIVICS_GA_COURSE },
+    { slug: "state-civics-nc", course: STATE_CIVICS_NC_COURSE },
+    { slug: "state-civics-mi", course: STATE_CIVICS_MI_COURSE },
+    { slug: "state-civics-va", course: STATE_CIVICS_VA_COURSE },
+    { slug: "state-civics-wa", course: STATE_CIVICS_WA_COURSE },
+    { slug: "state-civics-co", course: STATE_CIVICS_CO_COURSE },
+    { slug: "state-civics-ma", course: STATE_CIVICS_MA_COURSE },
+    { slug: "state-civics-nj", course: STATE_CIVICS_NJ_COURSE },
+    { slug: "state-civics-il", course: STATE_CIVICS_IL_COURSE },
+    { slug: "state-civics-tn", course: STATE_CIVICS_TN_COURSE },
+    { slug: "state-civics-la", course: STATE_CIVICS_LA_COURSE },
+    { slug: "state-civics-ne", course: STATE_CIVICS_NE_COURSE },
+    { slug: "state-civics-me", course: STATE_CIVICS_ME_COURSE },
+    { slug: "state-civics-ak", course: STATE_CIVICS_AK_COURSE },
+    { slug: "state-civics-or", course: STATE_CIVICS_OR_COURSE },
+    { slug: "state-civics-mo", course: STATE_CIVICS_MO_COURSE },
+    { slug: "state-civics-nh", course: STATE_CIVICS_NH_COURSE },
+    { slug: "state-civics-hi", course: STATE_CIVICS_HI_COURSE },
+    { slug: "state-civics-sc", course: STATE_CIVICS_SC_COURSE },
+    { slug: "state-civics-md", course: STATE_CIVICS_MD_COURSE },
+    { slug: "state-civics-wi", course: STATE_CIVICS_WI_COURSE },
+    { slug: "state-civics-mn", course: STATE_CIVICS_MN_COURSE },
+    { slug: "state-civics-vt", course: STATE_CIVICS_VT_COURSE },
+    { slug: "state-civics-ct", course: STATE_CIVICS_CT_COURSE },
+    { slug: "state-civics-de", course: STATE_CIVICS_DE_COURSE },
+    { slug: "state-civics-nd", course: STATE_CIVICS_ND_COURSE },
+    { slug: "state-civics-nv", course: STATE_CIVICS_NV_COURSE },
+    { slug: "state-civics-mt", course: STATE_CIVICS_MT_COURSE },
+    { slug: "state-civics-ri", course: STATE_CIVICS_RI_COURSE },
+    { slug: "state-civics-ut", course: STATE_CIVICS_UT_COURSE },
+    { slug: "state-civics-al", course: STATE_CIVICS_AL_COURSE },
+    { slug: "state-civics-sd", course: STATE_CIVICS_SD_COURSE },
+    { slug: "state-civics-nm", course: STATE_CIVICS_NM_COURSE },
+    { slug: "state-civics-wy", course: STATE_CIVICS_WY_COURSE },
+    { slug: "state-civics-ia", course: STATE_CIVICS_IA_COURSE },
+    { slug: "state-civics-wv", course: STATE_CIVICS_WV_COURSE },
+    { slug: "state-civics-ky", course: STATE_CIVICS_KY_COURSE },
+    { slug: "state-civics-ok", course: STATE_CIVICS_OK_COURSE },
+    { slug: "state-civics-id", course: STATE_CIVICS_ID_COURSE },
+    { slug: "state-civics-ks", course: STATE_CIVICS_KS_COURSE },
+    { slug: "state-civics-ms", course: STATE_CIVICS_MS_COURSE },
+    { slug: "state-civics-dc", course: STATE_CIVICS_DC_COURSE },
+  ]) {
+    await seedAuthoredCourse(db, { tenantId: learnWitus, instructorId, slug, course, category: "Civics", navigationMode: "linear" });
+  }
 
   // How to Create a Course (the meta-course for teachers) — on Learn.WitUS.
   await db

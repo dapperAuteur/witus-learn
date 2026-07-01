@@ -7,6 +7,7 @@ import {
   listCourses,
   type CatalogQuery,
 } from "@/db/queries/catalog";
+import { markCoursesAnnounced } from "@/db/queries/announce";
 
 /**
  * The mandatory tenant-scoped data-access chokepoint.
@@ -52,6 +53,11 @@ export class ScopedDb {
 
   listCategories() {
     return listCategories(this.tenantId);
+  }
+
+  /** Stamp `announced_at` on the given courses (tenant-scoped). Returns the ids updated. */
+  markCoursesAnnounced(courseIds: string[], at: Date = new Date()) {
+    return markCoursesAnnounced(this.tenantId, courseIds, at);
   }
 }
 

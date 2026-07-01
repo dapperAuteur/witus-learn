@@ -50,9 +50,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Fee-aware pricing** — set Free / one-time / subscription + price, with estimated net-after-fees.
   ⚪ Lifetime teacher promo + marketing campaigns (\`plans/future/11\`).
 - ⚪ Tenant-settings admin (flags) self-serve.
-- ⚪ **Growing Belts latitude bands** — prepopulate only 3 commodities; let the user toggle the rest
-  on/off, and add a CentOS-style **key** that shows how overlapping band colors blend (so users can
-  read the mixed colors). Refines the per-commodity belt work already shipped.
+- ✅ **Growing Belts latitude bands** — starts with 3 commodities, toggle the rest on/off (show-all /
+  reset-to-3), and overlapping bands **blend** (mix-blend multiply) with a key explaining the mixed
+  colors. (\`GrowingBeltsMap\`.)
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".

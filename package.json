@@ -24,6 +24,7 @@
     "seed:health": "tsx --env-file=.env.local scripts/seed-health.ts",
     "seed:speedway": "tsx --env-file=.env.local scripts/seed-speedway.ts",
     "seed:owner": "tsx --env-file=.env.local scripts/seed-owner.ts",
+    "srt:transcript": "tsx --env-file=.env.local scripts/srt-to-transcript.ts",
     "test": "vitest run"
   },
   "dependencies": {

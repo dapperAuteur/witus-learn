@@ -66,6 +66,10 @@ const schema = z.object({
   INBOX_INGEST_URL: z.string().url().optional(),
   INBOX_SOURCE_SLUG: z.string().optional(),
   INBOX_INGEST_SECRET: z.string().optional(),
+  // Outbox = social publishing (→ Ocoya). Same signed /api/ingest contract as the inbox.
+  OUTBOX_INGEST_URL: z.string().url().optional(),
+  OUTBOX_SOURCE_SLUG: z.string().optional(),
+  OUTBOX_INGEST_SECRET: z.string().optional(),
 });
 
 const isProd = process.env.NODE_ENV === "production";
