@@ -64,6 +64,9 @@ export default async function TeachPage() {
               Announce →
             </Link>
           ) : null}
+          <Link href="/help" className="underline" style={{ color: "var(--accent)" }}>
+            Help →
+          </Link>
           <Link href="/teach/profile" className="underline" style={{ color: "var(--accent)" }}>
             Edit profile →
           </Link>
