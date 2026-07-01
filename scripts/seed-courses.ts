@@ -17,6 +17,10 @@ import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { STATE_CIVICS_IN_COURSE } from "./data/state-civics-in-course";
 import { STATE_CIVICS_AZ_COURSE } from "./data/state-civics-az-course";
 import { STATE_CIVICS_AR_COURSE } from "./data/state-civics-ar-course";
+import { STATE_CIVICS_CA_COURSE } from "./data/state-civics-ca-course";
+import { STATE_CIVICS_TX_COURSE } from "./data/state-civics-tx-course";
+import { STATE_CIVICS_FL_COURSE } from "./data/state-civics-fl-course";
+import { STATE_CIVICS_NY_COURSE } from "./data/state-civics-ny-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting-course";
 import { AI_L2_DETECTING_AI_COURSE } from "./data/ai-l2-detecting-ai-course";
@@ -239,6 +243,17 @@ async function main() {
     category: "Civics",
     navigationMode: "linear",
   });
+  // More per-state civics (light up the /civics map). Each cites its state's own .gov and flags
+  // time-sensitive facts (e.g. NY's court-name inversion, TX's plural executive, CA direct
+  // democracy, FL's 60% amendment threshold) rather than asserting them as fixed.
+  for (const { slug, course } of [
+    { slug: "state-civics-ca", course: STATE_CIVICS_CA_COURSE },
+    { slug: "state-civics-tx", course: STATE_CIVICS_TX_COURSE },
+    { slug: "state-civics-fl", course: STATE_CIVICS_FL_COURSE },
+    { slug: "state-civics-ny", course: STATE_CIVICS_NY_COURSE },
+  ]) {
+    await seedAuthoredCourse(db, { tenantId: learnWitus, instructorId, slug, course, category: "Civics", navigationMode: "linear" });
+  }
 
   // How to Create a Course (the meta-course for teachers) — on Learn.WitUS.
   await db
