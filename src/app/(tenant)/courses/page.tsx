@@ -1,23 +1,34 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
+import { getSession, getMembership, isPlatformOwner } from "@/lib/session";
 import { CourseCard } from "@/components/course-card";
 
 export const metadata: Metadata = { title: "Courses" };
 
 type SearchParams = Promise<{ q?: string; category?: string; sort?: string }>;
 
-// The full, filterable catalog. The home keeps a lean hero + track cards; this is where the
-// complete list, search, category filter, and sort live — so the landing page never has to
-// enumerate every course. Tenant-scoped via the DAL.
+// The full, filterable catalog. Tenant-scoped via the DAL. Editors (owner/instructor/brand_admin)
+// also see their HIDDEN courses here — drafts, held, and their own private ones — badged, so the
+// owner can find them in the catalog while learners never do.
 export default async function CoursesPage({ searchParams }: { searchParams: SearchParams }) {
   const sp = await searchParams;
   const sdb = await getScopedDb();
   const sort = sp.sort === "title" || sp.sort === "featured" || sp.sort === "newest" ? sp.sort : undefined;
-  const [courses, categories] = await Promise.all([
-    sdb.listCourses({ q: sp.q, category: sp.category, sort }),
+
+  const session = await getSession();
+  const owner = session ? await isPlatformOwner(session.user.id) : false;
+  const membership = session ? ((await getMembership(session.user.id, sdb.tenantId)) ?? "") : "";
+  const isEditor = owner || ["instructor", "brand_admin"].includes(membership);
+
+  const [rawCourses, categories] = await Promise.all([
+    sdb.listCourses({ q: sp.q, category: sp.category, sort, includeUnpublished: isEditor }),
     sdb.listCategories(),
   ]);
+  // A private course stays owner-only: keep it only for the platform owner or its own instructor.
+  const courses = rawCourses.filter(
+    (c) => c.visibility !== "private" || owner || (session && c.instructorId === session.user.id),
+  );
 
   const chip = "rounded-full border border-neutral-300 px-3 py-1 hover:border-current dark:border-neutral-700";
   return (
@@ -63,13 +74,35 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
         {sp.category ? ` in ${sp.category}` : ""}
         {sp.q ? ` matching “${sp.q}”` : ""}
       </p>
+      {isEditor && courses.some((c) => !c.isPublished || c.visibility === "private") ? (
+        <p className="mb-3 text-xs text-neutral-500">
+          Courses marked below are hidden from learners — only you (and editors) see them here.
+        </p>
+      ) : null}
       {courses.length === 0 ? (
         <p className="text-neutral-500">No courses found. <Link href="/courses" className="underline">Clear filters</Link>.</p>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {courses.map((c) => (
-            <CourseCard key={c.id} course={c} />
-          ))}
+          {courses.map((c) => {
+            const badge =
+              c.visibility === "private"
+                ? "🔒 Private"
+                : c.publishHoldReason
+                  ? "⚠️ On hold"
+                  : !c.isPublished
+                    ? "Draft"
+                    : null;
+            return (
+              <div key={c.id} className="relative">
+                {badge ? (
+                  <span className="absolute right-2 top-2 z-10 rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-900 shadow dark:bg-amber-900 dark:text-amber-100">
+                    {badge}
+                  </span>
+                ) : null}
+                <CourseCard course={c} />
+              </div>
+            );
+          })}
         </div>
       )}
     </main>

@@ -53,6 +53,10 @@ export async function PATCH(req: Request, { params }: Params) {
   if (patch.priceType === "free") patch.price = "0";
   else if (typeof patch.price === "number") patch.price = String(patch.price);
 
+  // If pricing changed, drop the cached Stripe price id so ensureCoursePrice re-creates it at
+  // the new amount — otherwise checkout keeps charging the OLD (cached) price after an edit.
+  if ("price" in patch || "priceType" in patch) patch.stripePriceId = null;
+
   // Featured flags are admin-only.
   if ("isFeatured" in patch || "featuredOrder" in patch) {
     if (!(await isTenantAdmin(session, sdb.tenantId))) {

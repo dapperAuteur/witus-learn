@@ -1,5 +1,5 @@
 import "server-only";
-import { asc, desc, eq } from "drizzle-orm";
+import { and, asc, desc, eq } from "drizzle-orm";
 import { db } from "@/db/client";
 import { liveSessions, type LiveSession } from "@/db/schema/learning";
 import { tenants } from "@/db/schema/tenancy";
@@ -19,6 +19,15 @@ export async function listLiveForViewer(tenantId: string): Promise<LiveSession[]
     .select()
     .from(liveSessions)
     .where(eq(liveSessions.tenantId, tenantId))
+    .orderBy(desc(liveSessions.isLive), asc(liveSessions.scheduledAt), desc(liveSessions.createdAt));
+}
+
+/** Sessions attached to a specific course (rendered on the course page). Tenant-scoped. */
+export async function listLiveForCourse(tenantId: string, courseId: string): Promise<LiveSession[]> {
+  return db
+    .select()
+    .from(liveSessions)
+    .where(and(eq(liveSessions.tenantId, tenantId), eq(liveSessions.courseId, courseId)))
     .orderBy(desc(liveSessions.isLive), asc(liveSessions.scheduledAt), desc(liveSessions.createdAt));
 }
 
