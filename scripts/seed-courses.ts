@@ -21,6 +21,10 @@ import { STATE_CIVICS_CA_COURSE } from "./data/state-civics-ca-course";
 import { STATE_CIVICS_TX_COURSE } from "./data/state-civics-tx-course";
 import { STATE_CIVICS_FL_COURSE } from "./data/state-civics-fl-course";
 import { STATE_CIVICS_NY_COURSE } from "./data/state-civics-ny-course";
+import { STATE_CIVICS_PA_COURSE } from "./data/state-civics-pa-course";
+import { STATE_CIVICS_OH_COURSE } from "./data/state-civics-oh-course";
+import { STATE_CIVICS_GA_COURSE } from "./data/state-civics-ga-course";
+import { STATE_CIVICS_NC_COURSE } from "./data/state-civics-nc-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting-course";
 import { AI_L2_DETECTING_AI_COURSE } from "./data/ai-l2-detecting-ai-course";
@@ -251,6 +255,10 @@ async function main() {
     { slug: "state-civics-tx", course: STATE_CIVICS_TX_COURSE },
     { slug: "state-civics-fl", course: STATE_CIVICS_FL_COURSE },
     { slug: "state-civics-ny", course: STATE_CIVICS_NY_COURSE },
+    { slug: "state-civics-pa", course: STATE_CIVICS_PA_COURSE },
+    { slug: "state-civics-oh", course: STATE_CIVICS_OH_COURSE },
+    { slug: "state-civics-ga", course: STATE_CIVICS_GA_COURSE },
+    { slug: "state-civics-nc", course: STATE_CIVICS_NC_COURSE },
   ]) {
     await seedAuthoredCourse(db, { tenantId: learnWitus, instructorId, slug, course, category: "Civics", navigationMode: "linear" });
   }
