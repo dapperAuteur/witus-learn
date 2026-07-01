@@ -8,7 +8,7 @@ import { problemReports, type ProblemReport } from "@/db/schema";
 export interface NewProblemReport {
   tenantId: string;
   userId: string | null;
-  kind: "bug" | "idea" | "other";
+  kind: "bug" | "feedback" | "idea" | "other";
   message: string;
   pageUrl: string | null;
   email: string | null;

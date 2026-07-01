@@ -13,6 +13,15 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
+- 🔧 **Active recall** (\`feat/active-recall\`, stacks on \`feat/course-experience\`) — per-lesson
+  **Quick-recall** cards: click-to-reveal answer + "I got it / Missed it" **self-grade**
+  (\`lessons.recall_content\` + authoring in the lesson editor). Grades land in \`recall_attempts\`;
+  the teacher course page shows **recall accuracy** (in-lesson signal vs quiz). Migration 0022.
+- 🔧 **Course-experience batch** (\`feat/course-experience\`) — **mark-complete** no longer jumps the
+  page (flips in place + offers "Next lesson" on linear courses); **curriculum feedback** mirrors to
+  the WitUS Inbox for the owner's courses + \`pnpm feedback:list\` CLI + each teacher sees only their
+  own; **Report a problem** gains a **feedback** kind (bug/feedback/idea/other); **social-share
+  tracking** (\`social_shares\` + \`/api/share\` + ShareButton) surfaced on the admin dashboard. Migration 0021.
 - 🔧 **SEO + mobile + admin-polish batch** (\`bundle/seo-mobile-admin-2026-07-01\`) — **per-page
   social previews** (\`/api/og\` content-relevant cards, \`metadataBase\`, Twitter cards, course/lesson
   page OG + description, Course JSON-LD); **cross-promo picker** now lists all ecosystem apps (adds

@@ -5,6 +5,7 @@ import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, type LessonLockReason } from "@/lib/gating";
 import { LessonPlayer } from "@/components/lesson-player";
 import { MarkCompleteButton } from "@/components/mark-complete-button";
+import { RecallPlayer } from "@/components/recall-player";
 import { ProgressBar } from "@/components/progress-bits";
 import { CurriculumFeedback } from "@/components/curriculum-feedback";
 import { AssignmentSubmit } from "@/components/assignment-submit";
@@ -153,7 +154,7 @@ export default async function LessonPage({ params }: Params) {
           <div className="flex items-start justify-between gap-3">
             <h1 className="text-2xl font-bold tracking-tight">{lesson.title}</h1>
             {view.course.isPublished && view.course.visibility !== "private" ? (
-              <ShareButton title={`${lesson.title} — ${view.course.title}`} label="Share" />
+              <ShareButton title={`${lesson.title} — ${view.course.title}`} label="Share" courseId={view.course.id} lessonId={lesson.id} />
             ) : null}
           </div>
 
@@ -167,9 +168,18 @@ export default async function LessonPage({ params }: Params) {
               <SaveOfflineButton url={lesson.contentUrl} />
             ) : null}
             {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
+            {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 ? (
+              <RecallPlayer courseId={view.course.id} lessonId={lesson.id} items={lesson.recallContent} />
+            ) : null}
             <div className="mt-6">
               {view.session ? (
-                <MarkCompleteButton courseId={view.course.id} lessonId={lesson.id} completed={completed} />
+                <MarkCompleteButton
+                  courseId={view.course.id}
+                  lessonId={lesson.id}
+                  completed={completed}
+                  isLinear={view.course.navigationMode !== "cyoa"}
+                  nextHref={next ? `${base}/lesson/${next.slug}` : null}
+                />
               ) : (
                 <Link href="/login" className="text-sm underline">
                   Sign in to track your progress

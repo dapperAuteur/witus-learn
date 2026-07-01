@@ -33,6 +33,12 @@ const Schema = z.object({
     .array(z.object({ title: z.string(), start: z.number().optional() }))
     .nullable()
     .optional(),
+  // Active-recall prompts (click-to-reveal + self-grade).
+  recallContent: z
+    .array(z.object({ prompt: z.string().min(1).max(1000), answer: z.string().min(1).max(4000) }))
+    .max(20)
+    .nullable()
+    .optional(),
   // Recording progress toggle → maps to recordedAt (now / null) in the handler.
   recorded: z.boolean().optional(),
 });

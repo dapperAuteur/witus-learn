@@ -9,7 +9,7 @@ import { sendToInbox } from "@/lib/ecosystem-webhook";
 // tenant-scoped and mirrored to the central WitUS Inbox (fire-and-forget, after response).
 
 const Body = z.object({
-  kind: z.enum(["bug", "idea", "other"]).default("bug"),
+  kind: z.enum(["bug", "feedback", "idea", "other"]).default("bug"),
   message: z.string().min(3).max(4000),
   pageUrl: z.string().max(500).optional(),
   email: z.string().email().max(200).optional(),

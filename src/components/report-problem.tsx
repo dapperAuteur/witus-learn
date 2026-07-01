@@ -3,11 +3,11 @@
 import { useState } from "react";
 
 // A small fixed "Report a problem" button on every page → a popover form that POSTs to
-// /api/report (bug / idea / other + message + optional email). Captures the current URL so
-// the admin sees where it was filed from. Works signed-in or anonymous.
+// /api/report (bug / feedback / idea / other + message + optional email). Captures the current URL
+// so the admin sees where it was filed from. Works signed-in or anonymous.
 export function ReportProblem() {
   const [open, setOpen] = useState(false);
-  const [kind, setKind] = useState<"bug" | "idea" | "other">("bug");
+  const [kind, setKind] = useState<"bug" | "feedback" | "idea" | "other">("bug");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -56,7 +56,7 @@ export function ReportProblem() {
             </button>
           </div>
           <div className="mb-2 flex gap-1 text-xs">
-            {(["bug", "idea", "other"] as const).map((k) => (
+            {(["bug", "feedback", "idea", "other"] as const).map((k) => (
               <button
                 key={k}
                 type="button"
