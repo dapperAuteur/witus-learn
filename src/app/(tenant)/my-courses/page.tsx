@@ -28,6 +28,17 @@ export default async function MyCoursesPage() {
 
   const { courses } = await getLearnerDashboard(tenant.id, session.user.id);
 
+  // Group enrolled courses by progress so learners see where they stand at a glance.
+  const inProgress = courses.filter((d) => d.percent > 0 && d.percent < 100);
+  const notStarted = courses.filter((d) => d.percent === 0);
+  const completed = courses.filter((d) => d.percent === 100);
+
+  const groups = [
+    { key: "in", title: "In progress", items: inProgress },
+    { key: "not", title: "Not started", items: notStarted },
+    { key: "done", title: "Completed", items: completed },
+  ].filter((g) => g.items.length > 0);
+
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
       <h1 className="text-2xl font-bold">My courses</h1>
@@ -40,14 +51,23 @@ export default async function MyCoursesPage() {
           .
         </p>
       ) : (
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {courses.map((d) => (
-            <CourseCard
-              key={d.course.id}
-              course={d.course}
-              progress={d.percent}
-              href={d.username && d.course.slug ? `/${d.username}/${d.course.slug}` : `/course/${d.course.id}`}
-            />
+        <div className="mt-6 space-y-10">
+          {groups.map((g) => (
+            <section key={g.key}>
+              <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+                {g.title} · {g.items.length}
+              </h2>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {g.items.map((d) => (
+                  <CourseCard
+                    key={d.course.id}
+                    course={d.course}
+                    progress={d.percent}
+                    href={d.username && d.course.slug ? `/${d.username}/${d.course.slug}` : `/course/${d.course.id}`}
+                  />
+                ))}
+              </div>
+            </section>
           ))}
         </div>
       )}
