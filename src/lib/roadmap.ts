@@ -13,6 +13,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
+- 🔧 **Teacher Help Center** (\`/help\`) — searchable in-app teacher guide (fuzzy search over
+  task-oriented how-tos: courses, lessons, recording, pricing, publishing, live, quick-recall,
+  feedback, sharing). Linked from the menu + Teach page. (help-documention.md)
 - 🔧 **Active recall** (\`feat/active-recall\`, stacks on \`feat/course-experience\`) — per-lesson
   **Quick-recall** cards: click-to-reveal answer + "I got it / Missed it" **self-grade**
   (\`lessons.recall_content\` + authoring in the lesson editor). Grades land in \`recall_attempts\`;
