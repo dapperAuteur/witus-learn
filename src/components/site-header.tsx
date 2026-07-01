@@ -31,6 +31,11 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
           <li>
             <ThemeToggle />
           </li>
+          <li>
+            <Link className="hover:underline" href="/courses">
+              Browse Catalog
+            </Link>
+          </li>
           {flags.commodityMap ? (
             <li>
               <Link className="hover:underline" href="/explore">

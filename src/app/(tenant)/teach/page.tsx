@@ -116,7 +116,20 @@ export default async function TeachPage() {
               <Link href={`/teach/${c.id}`} className="min-w-0 flex-1 truncate font-medium hover:underline">
                 {c.title}
               </Link>
-              <div className="flex shrink-0 items-center gap-3">
+              <div className="flex shrink-0 items-center gap-2">
+                {c.visibility === "private" ? (
+                  <span className="rounded-full bg-purple-100 px-2 py-0.5 text-xs text-purple-800 dark:bg-purple-900 dark:text-purple-200">
+                    🔒 Private
+                  </span>
+                ) : null}
+                {c.publishHoldReason ? (
+                  <span
+                    title={c.publishHoldReason}
+                    className="rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-800 dark:bg-amber-900 dark:text-amber-200"
+                  >
+                    ⚠️ On hold
+                  </span>
+                ) : null}
                 <span
                   className={`rounded-full px-2 py-0.5 text-xs ${
                     c.isPublished
