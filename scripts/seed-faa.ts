@@ -182,14 +182,17 @@ function buildCourse(): AuthoredCourse {
 }
 
 async function main() {
+  // FAA Part 107 (the "drone" course) is consolidated onto Learn.WitUS with the other
+  // former Trade School courses (was previously seeded into the standalone trade-school
+  // tenant, which is why it wasn't showing on Learn.WitUS).
   const t = await db
     .select({ id: schema.tenants.id })
     .from(schema.tenants)
-    .where(eq(schema.tenants.slug, "trade-school"))
+    .where(eq(schema.tenants.slug, "learn-witus"))
     .limit(1);
   const tenantId = t[0]?.id;
   if (!tenantId) {
-    console.error("Trade School tenant missing — run `pnpm seed:tenants` first.");
+    console.error("Learn.WitUS tenant missing — run `pnpm seed:tenants` first.");
     process.exit(1);
   }
 
