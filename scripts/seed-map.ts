@@ -123,6 +123,55 @@ async function main() {
     });
     console.log(`+ ${c.name}`);
   }
+
+  // ── S1-only Commodity Map for the schools that share Season 1 (Learn.WitUS + ElementaryMBA).
+  // Origin pins for the six S1 commodities that have a course AND a single origin (ep7 "synthesis"
+  // is a wrap-up, so it's omitted). Each pin links to that tenant's own shared course by slug.
+  // Idempotent by (tenant, name). BVC's own full map is untouched above.
+  const S1_SHARED: { name: string; slug: string; geo: string; lat: number; lon: number; summary: string }[] = [
+    { name: "Coffee", slug: "coffee", geo: "Ethiopian highlands", lat: 9, lon: 40, summary: "The world's second-largest traded commodity; Ethiopian origins." },
+    { name: "Tea", slug: "tea", geo: "Yunnan Province, China", lat: 25, lon: 101, summary: "Oldest documented tea cultivation; reshaped the geography of empire." },
+    { name: "Chocolate", slug: "chocolate", geo: "Mesoamerica (Maya origin)", lat: 16, lon: -90, summary: "Sacred Maya/Aztec currency; 70% of cacao now grows in West Africa." },
+    { name: "Sugar", slug: "sugar", geo: "Caribbean (colonial plantation zone)", lat: 18, lon: -66, summary: "Economic engine of the Atlantic slave trade." },
+    { name: "Guayusa", slug: "forest-wisdom", geo: "Ecuadorian Amazon", lat: 0, lon: -77, summary: "Caffeinated holly leaf and Kichwa dream-sharing tradition." },
+    { name: "Kava", slug: "kava", geo: "Vanuatu, Pacific Islands", lat: -16, lon: 168, summary: "A root drink of Pacific Island governance ceremonies." },
+  ];
+  for (const shareSlug of ["learn-witus", "elementary-mba"]) {
+    const st = await db.select({ id: schema.tenants.id }).from(schema.tenants).where(eq(schema.tenants.slug, shareSlug)).limit(1);
+    const shareTenant = st[0]?.id;
+    if (!shareTenant) {
+      console.log(`= skip S1 map → ${shareSlug} (tenant missing)`);
+      continue;
+    }
+    for (const c of S1_SHARED) {
+      const exists = await db
+        .select({ id: schema.mapCommodities.id })
+        .from(schema.mapCommodities)
+        .where(and(eq(schema.mapCommodities.tenantId, shareTenant), eq(schema.mapCommodities.name, c.name)))
+        .limit(1);
+      if (exists[0]) continue;
+      const course = await db
+        .select({ id: schema.courses.id })
+        .from(schema.courses)
+        .where(and(eq(schema.courses.tenantId, shareTenant), eq(schema.courses.slug, c.slug)))
+        .limit(1);
+      await db.insert(schema.mapCommodities).values({
+        tenantId: shareTenant,
+        courseId: course[0]?.id ?? null,
+        seasonNumber: 1,
+        name: c.name,
+        geo: c.geo,
+        lat: c.lat,
+        lon: c.lon,
+        color: SEASON_COLOR["1"],
+        isHome: false,
+        summary: c.summary,
+        sortOrder: 0,
+      });
+    }
+    console.log(`  S1 map → ${shareSlug} (${S1_SHARED.length} origin pins)`);
+  }
+
   // ── Growing belts (latitude band + production-region ISO numeric codes) ──
   interface B {
     commodity: string;

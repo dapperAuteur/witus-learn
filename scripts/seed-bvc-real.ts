@@ -32,6 +32,26 @@ function slugify(s: string): string {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "").slice(0, 50);
 }
 
+async function tenantBySlug(slug: string): Promise<string | undefined> {
+  const r = await db.select({ id: schema.tenants.id }).from(schema.tenants).where(eq(schema.tenants.slug, slug)).limit(1);
+  return r[0]?.id;
+}
+
+// Ensure an instructor exists on a tenant; reuse the real user if the email is taken.
+async function ensureInstructor(
+  tenantId: string,
+  who: { id: string; email: string; username: string; displayName: string },
+): Promise<string> {
+  const existing = await db.select({ id: schema.users.id }).from(schema.users).where(eq(schema.users.email, who.email)).limit(1);
+  const userId = existing[0]?.id ?? who.id;
+  if (!existing[0]) {
+    await db.insert(schema.users).values({ id: who.id, email: who.email, emailVerified: true, name: who.displayName }).onConflictDoNothing();
+  }
+  await db.insert(schema.userProfiles).values({ userId, username: who.username, displayName: who.displayName }).onConflictDoNothing();
+  await db.insert(schema.tenantMemberships).values({ tenantId, userId, role: "instructor" }).onConflictDoNothing();
+  return userId;
+}
+
 interface Row {
   module_title: string;
   lesson_order: string;
@@ -137,8 +157,61 @@ async function main() {
     console.log(`  episode ${ep.n} (${ep.slug}) — S${season}${gated ? " [age-gated]" : ""}`);
   }
 
+  // ── Share Season 1 (the caffeine/commodity origin stories — NOT age-gated) with the
+  // other schools. Same content, isolated per tenant (own course rows/enrollment/progress).
+  // BVC keeps all 3 seasons untouched; only S1 (eps 1-7) goes out. Learn.WitUS keeps the BVC
+  // branding; ElementaryMBA gets the neutral collection name.
+  const s1Files = files.filter((e) => e.n <= 7);
+  const shares = [
+    {
+      slug: "learn-witus",
+      instructor: { id: "bam", email: "bam@awews.com", username: "bam", displayName: "BAM" },
+      collection: "Better Vice Club: Origin Stories",
+      keepBvcBranding: true,
+    },
+    {
+      slug: "elementary-mba",
+      instructor: { id: "seed-emba-instructor", email: "faculty@emba.witus.online", username: "emba-faculty", displayName: "ElementaryMBA Faculty" },
+      collection: "Commodity: Origin Stories. Canon Events.",
+      keepBvcBranding: false,
+    },
+  ];
+  for (const share of shares) {
+    const shareTenant = await tenantBySlug(share.slug);
+    if (!shareTenant) {
+      console.log(`  skip S1 share → ${share.slug} (tenant missing)`);
+      continue;
+    }
+    const shareInstructor = await ensureInstructor(shareTenant, share.instructor);
+    await db.insert(schema.courseCategories).values({ tenantId: shareTenant, name: share.collection, sortOrder: 9 }).onConflictDoNothing();
+    for (const ep of s1Files) {
+      const course = buildEpisode(ep.file, ep.slug);
+      if (!course) continue;
+      // ElementaryMBA drops the "BVC — " prefix + vice framing (neutral, kid-appropriate).
+      const framed = share.keepBvcBranding
+        ? course
+        : {
+            ...course,
+            title: course.title.replace(/^BVC — /, ""),
+            description: course.description.replace(/^Better Vice Club: a cited/, "A cited"),
+          };
+      await seedAuthoredCourse(db, {
+        tenantId: shareTenant,
+        instructorId: shareInstructor,
+        slug: ep.slug,
+        course: framed,
+        category: share.collection,
+        navigationMode: "linear",
+        seasonNumber: 1,
+        requiresAgeGate: false,
+        replaceLessons: true,
+      });
+    }
+    console.log(`  shared S1 (${s1Files.length} eps) → ${share.slug} as "${share.collection}"`);
+  }
+
   await pool.end();
-  console.log("Done. Real BVC content migrated.");
+  console.log("Done. Real BVC content migrated + Season 1 shared with Learn.WitUS + ElementaryMBA.");
 }
 
 main().catch((error) => {
