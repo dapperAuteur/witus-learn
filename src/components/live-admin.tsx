@@ -7,6 +7,10 @@ interface Tenant {
   id: string;
   name: string;
 }
+interface CourseOption {
+  id: string;
+  title: string;
+}
 interface Session {
   id: string;
   title: string;
@@ -14,6 +18,7 @@ interface Session {
   visibility: string;
   recordingUrl: string | null;
   playbackUrl: string | null;
+  courseTitle: string | null;
 }
 
 const field = "min-h-10 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900";
@@ -23,10 +28,12 @@ const field = "min-h-10 w-full rounded-md border border-neutral-300 px-3 dark:bo
 export function LiveAdmin({
   tenants,
   currentTenantId,
+  courses,
   sessions,
 }: {
   tenants: Tenant[];
   currentTenantId: string;
+  courses: CourseOption[];
   sessions: Session[];
 }) {
   const router = useRouter();
@@ -35,6 +42,7 @@ export function LiveAdmin({
   const [desc, setDesc] = useState("");
   const [when, setWhen] = useState("");
   const [vis, setVis] = useState("members");
+  const [courseId, setCourseId] = useState("");
   const [url, setUrl] = useState("");
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
@@ -62,6 +70,7 @@ export function LiveAdmin({
         scheduledAt: when ? new Date(when).toISOString() : null,
         visibility: vis,
         playbackUrl: url || null,
+        courseId: courseId || null,
       }),
     });
     setBusy(false);
@@ -72,6 +81,7 @@ export function LiveAdmin({
       setDesc("");
       setWhen("");
       setUrl("");
+      setCourseId("");
       router.refresh();
     } else {
       const d = await r.json().catch(() => ({}));
@@ -112,6 +122,19 @@ export function LiveAdmin({
           </label>
         </div>
         <input value={url} onChange={(e) => setUrl(e.target.value)} placeholder="Player embed URL (from your RTMP/streaming service)" className={field} />
+        <label className="block text-sm">Course (optional — shows this session on that course page)
+          <select value={courseId} onChange={(e) => setCourseId(e.target.value)} className={`mt-1 ${field}`}>
+            <option value="">Not tied to a course (this school only)</option>
+            {courses.map((c) => (
+              <option key={c.id} value={c.id}>{c.title}</option>
+            ))}
+          </select>
+        </label>
+        {courseId ? (
+          <p className="text-xs text-neutral-500">
+            The course belongs to this school, so it only attaches here — other selected schools get the session without a course link.
+          </p>
+        ) : null}
         <fieldset>
           <legend className="text-sm font-medium">Broadcast to</legend>
           <div className="mt-1 flex flex-wrap gap-3 text-sm">
@@ -162,6 +185,7 @@ function ManageRow({
         <span className="font-medium">{s.title}</span>
         {s.isLive ? <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs text-red-700 dark:bg-red-900 dark:text-red-200">live</span> : null}
         <span className="text-xs text-neutral-500">{s.visibility}</span>
+        {s.courseTitle ? <span className="text-xs text-neutral-500">· 📚 {s.courseTitle}</span> : null}
         <div className="ml-auto flex gap-2">
           <button type="button" disabled={busy} onClick={() => onPatch(s.id, { isLive: !s.isLive })} className="rounded border border-neutral-300 px-2 py-0.5 dark:border-neutral-700">
             {s.isLive ? "End" : "Go live"}

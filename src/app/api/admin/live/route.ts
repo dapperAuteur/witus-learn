@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { apiContext, errorJson, json } from "@/lib/api";
 import { isPlatformOwner } from "@/lib/session";
-import { createLiveSessions } from "@/db/queries/live";
+import { createLiveSessions, getCourseTenantId } from "@/db/queries/live";
 
 const Schema = z.object({
   tenantIds: z.array(z.string().uuid()).min(1),
@@ -24,6 +24,16 @@ export async function POST(req: Request) {
   if (!parsed.success) return errorJson("Invalid input", 400);
   const d = parsed.data;
 
+  // If a course is attached, resolve its owning tenant. It must be one of the target schools,
+  // and the course link only lands on that school's row (never cross-attached to another brand).
+  let courseOwnerTenantId: string | null = null;
+  if (d.courseId) {
+    courseOwnerTenantId = await getCourseTenantId(d.courseId);
+    if (!courseOwnerTenantId || !d.tenantIds.includes(courseOwnerTenantId)) {
+      return errorJson("The selected course doesn't belong to any of the selected schools.", 400);
+    }
+  }
+
   const count = await createLiveSessions(
     d.tenantIds,
     {
@@ -35,6 +45,7 @@ export async function POST(req: Request) {
       playbackUrl: d.playbackUrl ?? null,
     },
     session.user.id,
+    courseOwnerTenantId,
   );
   return json({ ok: true, count });
 }
