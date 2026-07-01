@@ -7,6 +7,7 @@ import { canAccessCourse } from "@/lib/api";
 import { listLessons } from "@/db/queries/authoring";
 import { courseToRecordingScript } from "@/lib/narration";
 import { RecordingScriptView } from "@/components/recording-script-view";
+import { RecordingProgress } from "@/components/recording-progress";
 
 export const metadata: Metadata = { title: "Recording script" };
 
@@ -37,7 +38,15 @@ export default async function RecordingScriptPage({ params }: { params: Promise<
         break between lessons. It regenerates from the current lessons each time you open it, so edits
         stay in sync.
       </p>
-      <div className="mt-6">
+      <div className="mt-6 space-y-6">
+        <RecordingProgress
+          courseId={course.id}
+          lessons={lessons.map((l) => ({
+            id: l.id,
+            title: l.title,
+            recordedAt: l.recordedAt ? l.recordedAt.toISOString() : null,
+          }))}
+        />
         <RecordingScriptView script={script} />
       </div>
     </main>

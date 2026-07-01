@@ -159,6 +159,10 @@ export const lessons = pgTable(
     video360Autoplay: boolean("video_360_autoplay"),
     video360PosterUrl: text("video_360_poster_url"),
 
+    // Recording progress: when the instructor marked this lesson's audio/video as recorded.
+    // NULL = not recorded yet. Drives the "mark recorded" checklist on the recording-script page.
+    recordedAt: timestamp("recorded_at", { withTimezone: true }),
+
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },

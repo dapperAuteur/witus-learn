@@ -33,6 +33,8 @@ const Schema = z.object({
     .array(z.object({ title: z.string(), start: z.number().optional() }))
     .nullable()
     .optional(),
+  // Recording progress toggle → maps to recordedAt (now / null) in the handler.
+  recorded: z.boolean().optional(),
 });
 
 export async function GET(_req: Request, { params }: Params) {
@@ -52,7 +54,11 @@ export async function PATCH(req: Request, { params }: Params) {
   const parsed = Schema.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return errorJson("Invalid input", 400);
 
-  const updated = await updateLesson(id, lessonId, parsed.data);
+  const { recorded, ...rest } = parsed.data;
+  const patch: Record<string, unknown> = { ...rest };
+  if (recorded !== undefined) patch.recordedAt = recorded ? new Date() : null;
+
+  const updated = await updateLesson(id, lessonId, patch);
   if (!updated) return errorJson("Not found", 404);
   return json({ lesson: updated });
 }
