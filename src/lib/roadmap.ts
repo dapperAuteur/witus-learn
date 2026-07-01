@@ -24,6 +24,10 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   publish/unpublish/reprice + quick toggle); **learner progress groups** on \`/my-courses\`
   (in-progress / not-started / completed). Backlog from this batch: **social sharing**
   (share school/course/module) + **mobile-first** pass + admin sidebar shell.
+  **Now also in this bundle:** **social sharing** (ShareButton on school/course/lesson — native
+  sheet on mobile, Copy/X/LinkedIn/Facebook/Email fallback); **admin sidebar shell** (persistent
+  nav rail + mobile hamburger, replacing the flat card grid); **responsive site menu** (header
+  collapses to a hamburger drawer on small screens — mobile-first.md).
 - 🔧 **Course-tooling suite** (\`bundle/course-tooling-2026-07-01\`) — **outbound-link click tracking**
   (privacy-light \`link_clicks\` counter + \`/api/link/click\` tracked redirect + teacher "Link usage"
   panel); **cross-promotion, 3 disclosed/opt-in ways** (per-course "Related WitUS tools" card,
