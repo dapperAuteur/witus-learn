@@ -127,6 +127,13 @@
       "when": 1782924723997,
       "tag": "0017_equal_vulture",
       "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "7",
+      "when": 1782927847150,
+      "tag": "0018_fat_quasimodo",
+      "breakpoints": true
     }
   ]
 }

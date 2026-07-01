@@ -54,6 +54,8 @@ export const courses = pgTable(
     // Pricing / billing (wired in Phase 5)
     price: numeric("price", { precision: 10, scale: 2 }).notNull().default("0"),
     priceType: text("price_type").notNull().default("free"),
+    // For priceType "subscription": how often it bills. NULL = monthly (legacy default).
+    billingInterval: text("billing_interval"),
     stripeProductId: text("stripe_product_id"),
     stripePriceId: text("stripe_price_id"),
 
@@ -107,6 +109,7 @@ export const courses = pgTable(
     index("courses_tenant_published_idx").on(t.tenantId, t.isPublished),
     index("courses_tenant_series_idx").on(t.tenantId, t.seriesSlug),
     check("courses_price_type_chk", sql`${t.priceType} in ('free','one_time','subscription')`),
+    check("courses_billing_interval_chk", sql`${t.billingInterval} is null or ${t.billingInterval} in ('month','year')`),
     check("courses_visibility_chk", sql`${t.visibility} in ('public','members','scheduled','private')`),
     check("courses_navigation_mode_chk", sql`${t.navigationMode} in ('linear','cyoa')`),
   ],

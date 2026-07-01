@@ -30,7 +30,9 @@ export async function ensureCoursePrice(
     product: productId,
     currency: "usd",
     unit_amount: Math.round(Number(course.price) * 100),
-    ...(course.priceType === "subscription" ? { recurring: { interval: "month" } } : {}),
+    ...(course.priceType === "subscription"
+      ? { recurring: { interval: course.billingInterval === "year" ? "year" : "month" } }
+      : {}),
     metadata: { course_id: course.id },
   });
 

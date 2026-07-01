@@ -1,0 +1,2 @@
+ALTER TABLE "courses" ADD COLUMN "billing_interval" text;--> statement-breakpoint
+ALTER TABLE "courses" ADD CONSTRAINT "courses_billing_interval_chk" CHECK ("courses"."billing_interval" is null or "courses"."billing_interval" in ('month','year'));

@@ -60,6 +60,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             visibility: course.visibility as "public" | "members" | "scheduled" | "private",
             isPublished: course.isPublished,
             publishHoldReason: course.publishHoldReason,
+            billingInterval: course.billingInterval as "month" | "year" | null,
             requiresAgeGate: course.requiresAgeGate,
             allowCrossCourseCyoa: course.allowCrossCourseCyoa,
             isSequential: course.isSequential,

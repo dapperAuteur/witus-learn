@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { estimatedFee, estimatedNet } from "@/lib/fees";
 
@@ -19,6 +19,8 @@ export interface CourseSettings {
   isFeatured: boolean;
   priceType: "free" | "one_time" | "subscription";
   price: number;
+  /** For subscriptions: "month" | "year". */
+  billingInterval: "month" | "year" | null;
 }
 
 // Edit course settings (PATCH /api/courses/[id]). isFeatured is platform-owner only
@@ -35,6 +37,19 @@ export function CourseSettingsForm({
   const router = useRouter();
   const [v, setV] = useState<CourseSettings>(initial);
   const [state, setState] = useState<"idle" | "saving" | "saved" | "error">("idle");
+  const [savedSnapshot, setSavedSnapshot] = useState(() => JSON.stringify(initial));
+  const dirty = JSON.stringify(v) !== savedSnapshot;
+
+  // Warn before leaving (tab close / refresh / external nav) with unsaved changes.
+  useEffect(() => {
+    if (!dirty) return;
+    const handler = (e: BeforeUnloadEvent) => {
+      e.preventDefault();
+      e.returnValue = "";
+    };
+    window.addEventListener("beforeunload", handler);
+    return () => window.removeEventListener("beforeunload", handler);
+  }, [dirty]);
 
   function set<K extends keyof CourseSettings>(k: K, val: CourseSettings[K]) {
     setV((p) => ({ ...p, [k]: val }));
@@ -50,7 +65,10 @@ export function CourseSettingsForm({
       body: JSON.stringify(v),
     });
     setState(r.ok ? "saved" : "error");
-    if (r.ok) router.refresh();
+    if (r.ok) {
+      setSavedSnapshot(JSON.stringify(v)); // clears the unsaved-changes warning
+      router.refresh();
+    }
   }
 
   const field = "min-h-11 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900";
@@ -105,6 +123,17 @@ export function CourseSettingsForm({
             <option value="one_time">One-time purchase</option>
             <option value="subscription">Subscription</option>
           </select>
+          {v.priceType === "subscription" ? (
+            <select
+              aria-label="Billing frequency"
+              value={v.billingInterval ?? "month"}
+              onChange={(e) => set("billingInterval", e.target.value as "month" | "year")}
+              className={field}
+            >
+              <option value="month">Monthly</option>
+              <option value="year">Annually</option>
+            </select>
+          ) : null}
           {v.priceType !== "free" ? (
             <div className="flex items-center gap-2">
               <span className="text-neutral-500">$</span>
