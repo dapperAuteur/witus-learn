@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
+import { listCategories } from "@/db/queries/catalog";
 import { SignOutButton } from "./sign-out-button";
 import { ThemeToggle } from "./theme-toggle";
 
@@ -16,6 +17,12 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   // Admin: platform owner OR a brand admin. Teach: owner, brand admin, OR instructor.
   const canAdmin = owner || membership === "brand_admin";
   const canTeach = owner || ["instructor", "brand_admin"].includes(membership);
+
+  // Content-driven nav: only show /civics and /languages when this school has that content
+  // (both pages 404 otherwise). Keeps the menu relevant per tenant.
+  const categories = await listCategories(tenant.id);
+  const hasCivics = categories.some((c) => c.name === "Civics");
+  const hasLanguages = categories.some((c) => c.name === "Languages");
 
   return (
     <header className="border-b border-neutral-200 dark:border-neutral-800">
@@ -41,6 +48,20 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
               Live
             </Link>
           </li>
+          {hasCivics ? (
+            <li>
+              <Link className="hover:underline" href="/civics">
+                Civics
+              </Link>
+            </li>
+          ) : null}
+          {hasLanguages ? (
+            <li>
+              <Link className="hover:underline" href="/languages">
+                Languages
+              </Link>
+            </li>
+          ) : null}
           {flags.commodityMap ? (
             <li>
               <Link className="hover:underline" href="/explore">
