@@ -20,7 +20,9 @@ const PatchSchema = z.object({
   category: z.string().max(120).nullable().optional(),
   coverImageUrl: z.string().url().nullable().optional(),
   isPublished: z.boolean().optional(),
-  visibility: z.enum(["public", "members", "scheduled"]).optional(),
+  visibility: z.enum(["public", "members", "scheduled", "private"]).optional(),
+  // A non-empty hold blocks publishing and shows a UI banner; null clears it.
+  publishHoldReason: z.string().max(500).nullable().optional(),
   navigationMode: z.enum(["linear", "cyoa"]).optional(),
   isSequential: z.boolean().optional(),
   allowCrossCourseCyoa: z.boolean().optional(),
@@ -57,6 +59,14 @@ export async function PATCH(req: Request, { params }: Params) {
       delete patch.isFeatured;
       delete patch.featuredOrder;
     }
+  }
+  // A HELD course can't be published until the hold clears. Use the incoming hold value if
+  // this request sets it, otherwise the stored one — so you can clear the hold and publish
+  // in one action, but never publish while a hold stands (guards copyrighted/unvetted content).
+  const effectiveHold =
+    "publishHoldReason" in patch ? patch.publishHoldReason : course.publishHoldReason;
+  if (patch.isPublished === true && effectiveHold) {
+    return errorJson(`This course is on hold and can't be published: ${effectiveHold}`, 409);
   }
   // Stamp publish time on first publish.
   if (patch.isPublished === true && !course.publishedAt) patch.publishedAt = new Date();

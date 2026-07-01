@@ -5,7 +5,7 @@ import { courseModules, type Course, type CourseModule, type Lesson } from "@/db
 import { getCourseBySlug, listLessons } from "@/db/queries/authoring";
 import { getCompletedLessonIds } from "@/db/queries/progress";
 import { isEnrolled as checkEnrolled } from "@/db/queries/enrollment";
-import { canEditCourse } from "@/lib/api";
+import { canAccessCourse } from "@/lib/api";
 import { getSession } from "@/lib/session";
 import { requireTenant, type TenantRecord } from "@/lib/tenant";
 import type { Session } from "@/lib/auth";
@@ -35,8 +35,10 @@ export async function loadCourseView(
   if (!course) return null;
 
   const session = await getSession();
-  const isEditor = await canEditCourse(session, tenant.id, course);
-  if (!course.isPublished && !isEditor) return null;
+  const isEditor = await canAccessCourse(session, tenant.id, course);
+  // Hidden from non-owners when it's a draft OR marked private (private stays owner-only
+  // even if published). canAccessCourse already restricts private to owner/instructor.
+  if ((!course.isPublished || course.visibility === "private") && !isEditor) return null;
 
   const all = await listLessons(course.id);
   const lessons = isEditor ? all : all.filter((l) => l.isPublished);

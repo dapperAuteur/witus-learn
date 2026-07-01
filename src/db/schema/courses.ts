@@ -57,10 +57,17 @@ export const courses = pgTable(
     stripeProductId: text("stripe_product_id"),
     stripePriceId: text("stripe_price_id"),
 
-    // Publishing / visibility
+    // Publishing / visibility.
+    // visibility: "public" | "members" | "scheduled" | "private". A "private" course is
+    // owner-only — visible/editable ONLY by the platform owner and the course's own
+    // instructor, never by brand_admins/moderators (see canAccessCourse).
     isPublished: boolean("is_published").notNull().default(false),
     visibility: text("visibility").notNull().default("public"),
     publishedAt: timestamp("published_at", { withTimezone: true }),
+    // When set, the course is HELD: a clear UI banner shows this reason and publishing is
+    // blocked until it clears (e.g. "vet culturally" or "swap copyrighted source for open").
+    // NULL = no hold.
+    publishHoldReason: text("publish_hold_reason"),
 
     // Learning behaviour
     navigationMode: text("navigation_mode").notNull().default("linear"),
