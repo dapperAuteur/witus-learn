@@ -55,6 +55,15 @@ consolidate them into one `bundle/<slug>-YYYY-MM-DD` branch before handoff: merg
 order with `git merge --no-ff` (no squash), resolve conflicts, run a final `tsc + lint + build`,
 push, and file ONE `./plans/user-tasks/NN-merge-bundle-<slug>.md` for BAM. BAM does one merge, not N.
 
+**Half 3b — one bundle for EVERYTHING unmerged (on request or at handoff).** When BAM asks (or before
+ending a multi-branch session), create ONE `bundle/pending-YYYY-MM-DD` branch off the current
+`origin/main` and merge **every branch not yet in `main`** into it — `git branch --no-merged origin/main`
+lists them. Merge with `git merge --no-ff` in lowest-conflict order (branches that stack on another,
+and any carrying migrations, go first), **resolve ALL conflicts** so the bundle is conflict-free,
+then `tsc + lint + build` must pass before pushing. The result is a single branch BAM can merge with
+zero conflicts. In the handoff, spell out **exactly which migration/db commands to run after merge**
+(the ordered list of new migrations + `pnpm db:migrate:prod`, plus any `seed:*` re-runs).
+
 A checked-in `.githooks/pre-commit` guard refuses commits on `main`/`master`. Activate once per
 clone: `git config core.hooksPath .githooks`. Full rule: `gemini/witus/CLAUDE.md` §"Branch-hygiene rule".
 
