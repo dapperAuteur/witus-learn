@@ -107,7 +107,7 @@ export const courses = pgTable(
     index("courses_tenant_published_idx").on(t.tenantId, t.isPublished),
     index("courses_tenant_series_idx").on(t.tenantId, t.seriesSlug),
     check("courses_price_type_chk", sql`${t.priceType} in ('free','one_time','subscription')`),
-    check("courses_visibility_chk", sql`${t.visibility} in ('public','members','scheduled')`),
+    check("courses_visibility_chk", sql`${t.visibility} in ('public','members','scheduled','private')`),
     check("courses_navigation_mode_chk", sql`${t.navigationMode} in ('linear','cyoa')`),
   ],
 );
