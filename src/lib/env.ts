@@ -25,6 +25,11 @@ const schema = z.object({
   MAILGUN_REGION: z.enum(["us", "eu"]).default("us"),
   MAIL_FROM: z.string().default("Learn.WitUS <no-reply@witus.online>"),
 
+  // CentenarianOS metrics handoff (one-login for "Read Your Body's Data"). Shared HS256
+  // secret set to the SAME value on both apps; server-only. URL defaults to what CentOS gave.
+  WITUS_HANDOFF_SECRET: z.string().min(16).optional(),
+  CENTOS_HANDOFF_URL: z.string().url().optional(),
+
   // Stripe (Phase 5)
   STRIPE_SECRET_KEY: z.string().optional(),
   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().optional(),
