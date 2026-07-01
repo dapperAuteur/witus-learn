@@ -12,6 +12,7 @@ import { getSubmission } from "@/db/queries/assignments";
 import { buildCrossroads } from "@/lib/crossroads";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
+import { MetricsTrackerCta } from "@/components/metrics-tracker-cta";
 import { brandName } from "@/lib/branding";
 
 type Params = {
@@ -142,6 +143,7 @@ export default async function LessonPage({ params }: Params) {
             {access.open ? (
           <>
             <LessonPlayer lesson={lesson} />
+            {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
             <div className="mt-6">
               {view.session ? (
                 <MarkCompleteButton courseId={view.course.id} lessonId={lesson.id} completed={completed} />
