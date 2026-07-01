@@ -94,10 +94,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   section-scoped quizzes (≤10 Q). ECS copy-edited (em-dashes/AI-tells removed). \`pnpm seed:health\`/\`seed:speedway\`.
 - ✅ **Speedway copy-edited** (em-dashes→clean, narration/production cues removed; citations preserved)
   and **ECS accuracy flags fixed** ("hundreds of millions of years"; the CECD sentence rewritten).
-- ❓ **NASM CPT citations** — CentOS has no chapter-mapped sources and its authoring rule forbids citing
-  the textbook, so 170 lessons are flagged \`<!-- NEEDS SOURCE -->\` (NOT fabricated). DECISION needed:
-  map studies upstream in CentOS + re-gen, or ship CPT uncited. (CES/CNC already carry real DOIs.)
-  **Speedway S2/S3** still outline-only.
+- ✅ **NASM CPT citations — resolved: cite the NASM CPT course as the primary source.** Every one of
+  the 170 CPT lessons carries a \`## Sources & Further Reading\` block naming the **NASM Certified
+  Personal Trainer (CPT)** curriculum + the National Academy of Sports Medicine (nasm.org) as its
+  primary source, emitted by \`gen-health-data.ts\` (so a re-gen preserves it). Per-claim study
+  citations remain a planned enhancement. (CES/CNC already carry real DOIs.) Re-run \`seed:health\`
+  if the DB predates this. **Speedway S2/S3** still outline-only.
 - 🟡 **"Read Your Body's Data" needs a metrics tracker** — it logs daily numbers inside CentOS's
   "metrics page" (which witus lacks). Build a tracker, rewrite to external tools, or keep on CentOS.
 - 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
