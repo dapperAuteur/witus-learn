@@ -65,6 +65,16 @@ next number, don't skip). Sub-queues: `./plans/user-tasks/`, `./plans/bugs/`, `.
 `plans/` is gitignored — local working notes. Durable, committed planning lives in `docs/`
 (e.g. `docs/BUILD_PLAN.md`).
 
+## App-improvements review rule — check `./plans/app-improvements/` at both ends of a task
+
+`./plans/app-improvements/` is BAM's live product backlog — he drops feature notes and bug reports
+there as `*.md` (e.g. `course-experience.md`, `live.md`, `pricing.md`). Treat it as authoritative:
+- **Before writing code**, read the directory so new/updated notes inform the work.
+- **After finishing all changes** in a session, review it again and **ask BAM** whether he wants to
+  (a) implement any outstanding notes now, or (b) have you review the ones he picks and propose
+  **3 distinct implementation/resolution ideas** for each.
+A note isn't "done" until its behavior ships and the roadmap (`src/lib/roadmap.ts`) reflects it.
+
 ## Docs & roadmap maintenance — keep them current as the app grows
 
 As features land, **update the docs in the same change**, not "later":
