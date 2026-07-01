@@ -16,8 +16,10 @@ export default async function FeedbackQueuePage() {
   if (!session) redirect("/login");
 
   const role = await getMembership(session.user.id, tenant.id);
-  const seesAll = (await isPlatformOwner(session.user.id)) || role === "brand_admin";
-  if (!seesAll && !["instructor"].includes(role ?? "")) {
+  // Only the platform owner (BAM) sees the whole school's feedback. Every teacher — instructor
+  // OR brand admin — sees ONLY feedback on their own courses.
+  const seesAll = await isPlatformOwner(session.user.id);
+  if (!seesAll && !["instructor", "brand_admin"].includes(role ?? "")) {
     redirect("/teach");
   }
 

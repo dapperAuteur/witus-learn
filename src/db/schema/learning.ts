@@ -215,7 +215,7 @@ export const problemReports = pgTable(
       .references(() => tenants.id, { onDelete: "cascade" }),
     /** Set when the reporter is signed in; null for anonymous. */
     userId: text("user_id").references(() => users.id, { onDelete: "set null" }),
-    /** bug | idea | other */
+    /** bug | feedback | idea | other */
     kind: text("kind").notNull().default("bug"),
     message: text("message").notNull(),
     /** The page the report was filed from. */
@@ -228,12 +228,35 @@ export const problemReports = pgTable(
   },
   (t) => [
     index("problem_reports_tenant_idx").on(t.tenantId),
-    check("problem_reports_kind_chk", sql`${t.kind} in ('bug','idea','other')`),
+    check("problem_reports_kind_chk", sql`${t.kind} in ('bug','feedback','idea','other')`),
     check("problem_reports_status_chk", sql`${t.status} in ('new','triaged','closed')`),
   ],
 );
 
 export type ProblemReport = typeof problemReports.$inferSelect;
+
+// Social-share counter (privacy-light — no user id). One row per share action from the ShareButton,
+// so the admin dashboard can show how much a school / course gets shared and via which channel.
+export const socialShares = pgTable(
+  "social_shares",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id").references(() => courses.id, { onDelete: "cascade" }),
+    lessonId: uuid("lesson_id").references(() => lessons.id, { onDelete: "cascade" }),
+    /** copy | native | x | linkedin | facebook | email */
+    channel: text("channel").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("social_shares_tenant_idx").on(t.tenantId),
+    check("social_shares_channel_chk", sql`${t.channel} in ('copy','native','x','linkedin','facebook','email')`),
+  ],
+);
+
+export type SocialShare = typeof socialShares.$inferSelect;
 
 // Email campaigns (marketing). Drafts are composed + previewed here; SENDING is a
 // separate, explicitly-confirmed step (no send is wired yet). Tenant-scoped.

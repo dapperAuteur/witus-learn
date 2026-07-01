@@ -6,17 +6,33 @@ import { useEffect, useRef, useState } from "react";
 // available; otherwise a small popover with Copy link + X / LinkedIn / Facebook / Email. The OG
 // tags on each page provide the rich preview card. Shares whatever URL the user is on, so it works
 // for a school home, a course, or a specific lesson (module/section) without per-page wiring.
+type ShareChannel = "copy" | "native" | "x" | "linkedin" | "facebook" | "email";
+
 export function ShareButton({
   title,
   text,
   label = "Share",
+  courseId,
+  lessonId,
 }: {
   title: string;
   text?: string;
   label?: string;
+  /** Attribute the share to a course/lesson so it shows on the admin dashboard. */
+  courseId?: string | null;
+  lessonId?: string | null;
 }) {
   const [open, setOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+
+  // Fire-and-forget share count (privacy-light). Never blocks the share itself.
+  function track(channel: ShareChannel) {
+    void fetch("/api/share", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ channel, courseId: courseId ?? null, lessonId: lessonId ?? null }),
+    }).catch(() => {});
+  }
   // Set from the click handler (window is only available client-side); the popover — the only
   // place `url` is read — never renders before that runs.
   const [url, setUrl] = useState("");
@@ -44,9 +60,10 @@ export function ShareButton({
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
         await navigator.share({ title, text, url: shareUrl });
+        track("native");
         return; // native sheet handled it (including cancel)
       } catch {
-        return;
+        return; // user cancelled — don't count
       }
     }
     setUrl(shareUrl);
@@ -57,6 +74,7 @@ export function ShareButton({
     try {
       await navigator.clipboard.writeText(url);
       setCopied(true);
+      track("copy");
       setTimeout(() => setCopied(false), 1500);
     } catch {
       /* clipboard blocked — the links below still work */
@@ -64,11 +82,11 @@ export function ShareButton({
   }
 
   const enc = encodeURIComponent;
-  const links = [
-    { label: "X", href: `https://twitter.com/intent/tweet?url=${enc(url)}&text=${enc(title)}` },
-    { label: "LinkedIn", href: `https://www.linkedin.com/sharing/share-offsite/?url=${enc(url)}` },
-    { label: "Facebook", href: `https://www.facebook.com/sharer/sharer.php?u=${enc(url)}` },
-    { label: "Email", href: `mailto:?subject=${enc(title)}&body=${enc(`${text ? `${text}\n\n` : ""}${url}`)}` },
+  const links: { label: string; channel: ShareChannel; href: string }[] = [
+    { label: "X", channel: "x", href: `https://twitter.com/intent/tweet?url=${enc(url)}&text=${enc(title)}` },
+    { label: "LinkedIn", channel: "linkedin", href: `https://www.linkedin.com/sharing/share-offsite/?url=${enc(url)}` },
+    { label: "Facebook", channel: "facebook", href: `https://www.facebook.com/sharer/sharer.php?u=${enc(url)}` },
+    { label: "Email", channel: "email", href: `mailto:?subject=${enc(title)}&body=${enc(`${text ? `${text}\n\n` : ""}${url}`)}` },
   ];
 
   return (
@@ -102,6 +120,7 @@ export function ShareButton({
               target="_blank"
               rel="noreferrer"
               role="menuitem"
+              onClick={() => track(l.channel)}
               className="block rounded-md px-3 py-2 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-800"
             >
               {l.label}

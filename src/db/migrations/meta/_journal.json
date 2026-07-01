@@ -148,6 +148,13 @@
       "when": 1782930243814,
       "tag": "0020_young_darkstar",
       "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "7",
+      "when": 1782941180222,
+      "tag": "0021_lyrical_sentry",
+      "breakpoints": true
     }
   ]
 }

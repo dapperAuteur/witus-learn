@@ -153,7 +153,7 @@ export default async function LessonPage({ params }: Params) {
           <div className="flex items-start justify-between gap-3">
             <h1 className="text-2xl font-bold tracking-tight">{lesson.title}</h1>
             {view.course.isPublished && view.course.visibility !== "private" ? (
-              <ShareButton title={`${lesson.title} — ${view.course.title}`} label="Share" />
+              <ShareButton title={`${lesson.title} — ${view.course.title}`} label="Share" courseId={view.course.id} lessonId={lesson.id} />
             ) : null}
           </div>
 
@@ -169,7 +169,13 @@ export default async function LessonPage({ params }: Params) {
             {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
             <div className="mt-6">
               {view.session ? (
-                <MarkCompleteButton courseId={view.course.id} lessonId={lesson.id} completed={completed} />
+                <MarkCompleteButton
+                  courseId={view.course.id}
+                  lessonId={lesson.id}
+                  completed={completed}
+                  isLinear={view.course.navigationMode !== "cyoa"}
+                  nextHref={next ? `${base}/lesson/${next.slug}` : null}
+                />
               ) : (
                 <Link href="/login" className="text-sm underline">
                   Sign in to track your progress
