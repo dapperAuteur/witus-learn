@@ -258,6 +258,38 @@ export const socialShares = pgTable(
 
 export type SocialShare = typeof socialShares.$inferSelect;
 
+// Active-recall self-grades. One row per "I got it" / "Missed it" the learner taps on a lesson's
+// recall card, so we can compare IN-LESSON recall accuracy against QUIZ accuracy (is it sticking in
+// class, or only being crammed for the quiz?). Signed-in only.
+export const recallAttempts = pgTable(
+  "recall_attempts",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    lessonId: uuid("lesson_id")
+      .notNull()
+      .references(() => lessons.id, { onDelete: "cascade" }),
+    /** Index of the prompt within the lesson's recall_content array. */
+    promptIndex: integer("prompt_index").notNull().default(0),
+    gotIt: boolean("got_it").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("recall_attempts_tenant_course_idx").on(t.tenantId, t.courseId),
+    index("recall_attempts_user_idx").on(t.userId),
+  ],
+);
+
+export type RecallAttempt = typeof recallAttempts.$inferSelect;
+
 // Email campaigns (marketing). Drafts are composed + previewed here; SENDING is a
 // separate, explicitly-confirmed step (no send is wired yet). Tenant-scoped.
 export const emailCampaigns = pgTable(

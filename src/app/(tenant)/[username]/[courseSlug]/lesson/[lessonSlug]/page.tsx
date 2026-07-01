@@ -5,6 +5,7 @@ import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, type LessonLockReason } from "@/lib/gating";
 import { LessonPlayer } from "@/components/lesson-player";
 import { MarkCompleteButton } from "@/components/mark-complete-button";
+import { RecallPlayer } from "@/components/recall-player";
 import { ProgressBar } from "@/components/progress-bits";
 import { CurriculumFeedback } from "@/components/curriculum-feedback";
 import { AssignmentSubmit } from "@/components/assignment-submit";
@@ -167,6 +168,9 @@ export default async function LessonPage({ params }: Params) {
               <SaveOfflineButton url={lesson.contentUrl} />
             ) : null}
             {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
+            {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 ? (
+              <RecallPlayer courseId={view.course.id} lessonId={lesson.id} items={lesson.recallContent} />
+            ) : null}
             <div className="mt-6">
               {view.session ? (
                 <MarkCompleteButton
