@@ -10,6 +10,7 @@ const CARDS: { href: string; title: string; desc: string; soon?: boolean; ownerO
   { href: "/admin/domains", title: "Domains", desc: "Map a custom domain to your school." },
   { href: "/admin/marketing", title: "Marketing", desc: "Promo codes now; email campaigns soon." },
   { href: "/admin/leads", title: "Leads", desc: "Lead funnel signups." },
+  { href: "/admin/reports", title: "Problem reports", desc: "In-app bug/idea reports to triage." },
   { href: "/admin/paths", title: "Learning paths", desc: "Sequence courses into guided paths." },
   { href: "/admin/live", title: "Live", desc: "Schedule and run live sessions.", ownerOnly: true },
   { href: "/admin/roadmap", title: "Roadmap", desc: "Internal progress tracker.", ownerOnly: true },

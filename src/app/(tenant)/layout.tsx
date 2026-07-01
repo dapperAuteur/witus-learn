@@ -8,6 +8,7 @@ import { isWitusBrandedHost } from "@/lib/witus-host";
 import { organizationJsonLd } from "@/lib/seo/json-ld";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { ReportProblem } from "@/components/report-problem";
 import { EcosystemFooter } from "@/components/ecosystem-footer";
 import { AgeGate } from "@/components/age-gate";
 
@@ -53,6 +54,7 @@ export default async function TenantLayout({ children }: { children: React.React
       ) : (
         <SiteFooter tenant={tenant} />
       )}
+      <ReportProblem />
     </div>
   );
 }

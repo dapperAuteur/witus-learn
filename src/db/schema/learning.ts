@@ -171,6 +171,38 @@ export const leads = pgTable(
 
 export type Lead = typeof leads.$inferSelect;
 
+// App-wide bug reports / problem reports (distinct from the per-lesson curriculum feedback
+// above). Anyone can submit "Report a problem" (tenant-scoped); admins triage it. Each is also
+// mirrored to the central WitUS Inbox (sendToInbox) for triage there.
+export const problemReports = pgTable(
+  "problem_reports",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    /** Set when the reporter is signed in; null for anonymous. */
+    userId: text("user_id").references(() => users.id, { onDelete: "set null" }),
+    /** bug | idea | other */
+    kind: text("kind").notNull().default("bug"),
+    message: text("message").notNull(),
+    /** The page the report was filed from. */
+    pageUrl: text("page_url"),
+    /** Optional contact email (for anonymous reporters). */
+    email: text("email"),
+    /** new | triaged | closed */
+    status: text("status").notNull().default("new"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("problem_reports_tenant_idx").on(t.tenantId),
+    check("problem_reports_kind_chk", sql`${t.kind} in ('bug','idea','other')`),
+    check("problem_reports_status_chk", sql`${t.status} in ('new','triaged','closed')`),
+  ],
+);
+
+export type ProblemReport = typeof problemReports.$inferSelect;
+
 // Email campaigns (marketing). Drafts are composed + previewed here; SENDING is a
 // separate, explicitly-confirmed step (no send is wired yet). Tenant-scoped.
 export const emailCampaigns = pgTable(
