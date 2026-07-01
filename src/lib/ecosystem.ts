@@ -33,6 +33,10 @@ export const ECOSYSTEM_PRODUCTS: EcosystemProduct[] = [
   { slug: "tour-manager-os", name: "Tour Manager OS", href: "https://tour.witus.online", status: "beta", tagline: "Plan and run a live tour.", external: true },
   { slug: "wanderlearn", name: "Wanderlearn", href: "https://wanderlearn.witus.online", status: "beta", tagline: "Learn by traveling and doing.", external: true },
   { slug: "fly-witus", name: "Fly.WitUS", href: "https://fly.witus.online", status: "beta", tagline: "Plan real drone flights and log FAA-compliant missions.", external: true },
+  // RideWitUS is NOT yet in the canonical gemini/witus/lib/products.ts. URL + tagline are a
+  // FALLBACK inferred from the ecosystem's X.witus.online naming convention — CONFIRM against
+  // that file (and update here) once RideWitUS is registered there. See the authoritative-values rule.
+  { slug: "ride-witus", name: "RideWitUS", href: "https://ride.witus.online", status: "beta", external: true },
   { slug: "flashlearnai", name: "FlashLearnAI", href: "https://flashlearnai.witus.online", status: "beta", tagline: "Turn any topic into study flashcards.", external: true },
   { slug: "stream-witus", name: "Stream.WitUS", href: "https://stream.witus.online", status: "beta", tagline: "Broadcast and watch live streams.", external: true },
   { slug: "centenarian-coach", name: "Centenarian Coach", href: "https://centenarian.coach.multiagent.witus.online", status: "beta", external: true },
@@ -44,10 +48,15 @@ export const ECOSYSTEM_PRODUCTS: EcosystemProduct[] = [
   { slug: "wanderlearn-field-reporter", name: "Wanderlearn Field Reporter", href: "https://wanderlearn.field.reporter.witus.online", status: "infrastructure", external: true },
 ];
 
-/** Products an instructor can attach to a course/category as a cross-promo (excludes
- * this app itself and pure back-office infrastructure). Curated, not a blanket ad list. */
+// Pure back-office / ops surfaces that aren't learner destinations — never offered as cross-promo
+// (unlike Shop.WitUS and the Field Reporter, which ARE learner-facing despite being "infrastructure").
+const NON_PROMO_SLUGS = new Set(["learn-witus", "witus", "witus-inbox", "witus-outbox"]);
+
+/** Products an instructor/admin can attach to a course/category as a cross-promo. Includes every
+ * ecosystem app (live/beta/infra) EXCEPT this app itself and the pure ops surfaces above. Curated
+ * per course, not a blanket ad list. */
 export const CROSS_PROMO_PRODUCTS: EcosystemProduct[] = ECOSYSTEM_PRODUCTS.filter(
-  (p) => p.status !== "infrastructure" && p.slug !== "learn-witus",
+  (p) => !NON_PROMO_SLUGS.has(p.slug),
 );
 
 export function ecosystemProductBySlug(slug: string): EcosystemProduct | undefined {
