@@ -33,10 +33,8 @@ export const ECOSYSTEM_PRODUCTS: EcosystemProduct[] = [
   { slug: "tour-manager-os", name: "Tour Manager OS", href: "https://tour.witus.online", status: "beta", tagline: "Plan and run a live tour.", external: true },
   { slug: "wanderlearn", name: "Wanderlearn", href: "https://wanderlearn.witus.online", status: "beta", tagline: "Learn by traveling and doing.", external: true },
   { slug: "fly-witus", name: "Fly.WitUS", href: "https://fly.witus.online", status: "beta", tagline: "Plan real drone flights and log FAA-compliant missions.", external: true },
-  // RideWitUS is NOT yet in the canonical gemini/witus/lib/products.ts. URL + tagline are a
-  // FALLBACK inferred from the ecosystem's X.witus.online naming convention — CONFIRM against
-  // that file (and update here) once RideWitUS is registered there. See the authoritative-values rule.
-  { slug: "ride-witus", name: "RideWitUS", href: "https://ride.witus.online", status: "beta", external: true },
+  // NOTE: RideWitUS isn't registered in the canonical gemini/witus/lib/products.ts yet, so it's
+  // intentionally omitted here (don't assert a guessed URL). Add it once it's in that source.
   { slug: "flashlearnai", name: "FlashLearnAI", href: "https://flashlearnai.witus.online", status: "beta", tagline: "Turn any topic into study flashcards.", external: true },
   { slug: "stream-witus", name: "Stream.WitUS", href: "https://stream.witus.online", status: "beta", tagline: "Broadcast and watch live streams.", external: true },
   { slug: "centenarian-coach", name: "Centenarian Coach", href: "https://centenarian.coach.multiagent.witus.online", status: "beta", external: true },
