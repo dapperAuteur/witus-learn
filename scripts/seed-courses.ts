@@ -14,6 +14,9 @@ import { US_STATE_LOCAL_GOV_COURSE } from "./data/us-state-local-gov-course";
 import { HOW_TO_RUN_COURSE } from "./data/how-to-run-course";
 import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading-marketing-course";
 import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
+import { STATE_CIVICS_IN_COURSE } from "./data/state-civics-in-course";
+import { STATE_CIVICS_AZ_COURSE } from "./data/state-civics-az-course";
+import { STATE_CIVICS_AR_COURSE } from "./data/state-civics-ar-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
@@ -188,6 +191,40 @@ async function main() {
     instructorId,
     slug: "help-a-campaign",
     course: HELP_A_CAMPAIGN_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // Per-state Civics layer (IN, AZ, AR first) — each teaches ONE state's specific
+  // version of the system (constitution · 3 branches · bill→law · local government ·
+  // elections/ballot access · get-involved), in the same Civics category + cited,
+  // non-partisan standard. The slugs are a load-bearing contract with the /civics US
+  // map: they MUST stay exactly state-civics-in / -az / -ar (the map lights a state up
+  // by these slugs). Authoritative-values rule is load-bearing here: STATE facts vary
+  // and CHANGE, so each course cites the STATE'S OWN official .gov and FLAGS
+  // time-sensitive items rather than asserting a value that could go stale — notably
+  // AZ's Lieutenant Governor (Prop 131, 2022) coming online for the 2026 cycle, and
+  // AR's initiative rules being recently tightened + in flux.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "state-civics-in",
+    course: STATE_CIVICS_IN_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "state-civics-az",
+    course: STATE_CIVICS_AZ_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "state-civics-ar",
+    course: STATE_CIVICS_AR_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
