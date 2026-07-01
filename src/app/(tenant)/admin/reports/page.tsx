@@ -14,7 +14,7 @@ export default async function ReportsAdminPage() {
   const reports = await listProblemReports(sdb.tenantId);
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-10">
+    <main className="max-w-3xl py-10">
       <Link href="/admin" className="text-sm underline" style={{ color: "var(--accent)" }}>
         ← Admin
       </Link>

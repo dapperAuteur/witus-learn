@@ -72,7 +72,7 @@ export function ShareButton({
   ];
 
   return (
-    <div ref={ref} className="relative inline-block">
+    <div ref={ref} className="relative inline-block shrink-0">
       <button
         type="button"
         onClick={onClick}
