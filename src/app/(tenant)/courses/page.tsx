@@ -1,7 +1,11 @@
 import Link from "next/link";
+import { headers } from "next/headers";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { getSession, getMembership, isPlatformOwner } from "@/lib/session";
+import { resolveTenant } from "@/lib/tenant";
+import { isWitusBrandedHost } from "@/lib/witus-host";
+import { ecosystemProductBySlug } from "@/lib/ecosystem";
 import { CourseCard } from "@/components/course-card";
 
 export const metadata: Metadata = { title: "Courses" };
@@ -29,6 +33,19 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
   const courses = rawCourses.filter(
     (c) => c.visibility !== "private" || owner || (session && c.instructorId === session.user.id),
   );
+
+  // Cross-promotion idea #3: when browsing an active category that's mapped to a WitUS
+  // ecosystem product, show a single labeled chip (WitUS-branded hosts / opt-in tenants only).
+  const activeCategory = sp.category ? categories.find((c) => c.name === sp.category) : undefined;
+  let ecosystemChip: { name: string; href: string } | null = null;
+  if (activeCategory?.ecosystemProductSlug) {
+    const h = await headers();
+    const host = h.get("x-forwarded-host") || h.get("host");
+    const tenant = await resolveTenant();
+    const showEcosystem = isWitusBrandedHost(host) || tenant?.flags.ecosystemSso === true;
+    const product = ecosystemProductBySlug(activeCategory.ecosystemProductSlug);
+    if (showEcosystem && product) ecosystemChip = { name: product.name, href: product.href };
+  }
 
   const chip = "rounded-full border border-neutral-300 px-3 py-1 hover:border-current dark:border-neutral-700";
   return (
@@ -74,6 +91,16 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
         {sp.category ? ` in ${sp.category}` : ""}
         {sp.q ? ` matching “${sp.q}”` : ""}
       </p>
+      {ecosystemChip ? (
+        <a
+          href={ecosystemChip.href}
+          target="_blank"
+          rel="noreferrer"
+          className="mb-4 inline-flex items-center gap-1 rounded-full border border-neutral-300 px-3 py-1 text-xs hover:border-current dark:border-neutral-700"
+        >
+          Explore in the WitUS ecosystem: <span className="font-medium">{ecosystemChip.name}</span> ↗
+        </a>
+      ) : null}
       {isEditor && courses.some((c) => !c.isPublished || c.visibility === "private") ? (
         <p className="mb-3 text-xs text-neutral-500">
           Courses marked below are hidden from learners — only you (and editors) see them here.

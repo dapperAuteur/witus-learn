@@ -1,7 +1,11 @@
 import Link from "next/link";
+import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
+import { isWitusBrandedHost } from "@/lib/witus-host";
+import { trackedHref } from "@/lib/tracked-link";
+import { RelatedTools } from "@/components/related-tools";
 import { lessonAccess, isFreeCourse } from "@/lib/gating";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
 import { listLiveForCourse } from "@/db/queries/live";
@@ -34,6 +38,13 @@ export default async function CourseBySlugPage({ params }: Params) {
 
   const { course, lessons, isEditor, completedLessonIds, orderedLessonIds } = view;
   const courseLives = await listLiveForCourse(course.tenantId, course.id);
+
+  // Cross-promotion is shown only on WitUS-branded hosts (or tenants that opt in), so
+  // white-label brands never surface sibling apps. Mirrors the ecosystem-footer gate.
+  const h = await headers();
+  const host = h.get("x-forwarded-host") || h.get("host");
+  const showEcosystem = isWitusBrandedHost(host) || view.tenant.flags.ecosystemSso === true;
+  const relatedSlugs = Array.isArray(course.relatedProducts) ? course.relatedProducts : [];
 
   // Per-course (per-season) age gate: gate a course flagged requiresAgeGate even when
   // the brand itself is open (BVC S1 open, S2/S3 gated). Editors bypass.
@@ -301,9 +312,11 @@ export default async function CourseBySlugPage({ params }: Params) {
           <h2 className="mb-3 text-lg font-semibold">Sources</h2>
           <ol className="space-y-2 text-sm text-neutral-700 dark:text-neutral-300">
             {sources.map((s) => {
-              const href = s.pdfUrl
+              const rawHref = s.pdfUrl
                 ? `/api/document-proxy?url=${encodeURIComponent(s.pdfUrl)}`
                 : (s.url ?? (s.doi ? `https://doi.org/${s.doi}` : null));
+              // Count clicks on external sources (document-proxy is internal → passes through).
+              const href = rawHref ? trackedHref(rawHref, { courseId: course.id, kind: "content" }) : null;
               return (
                 <li key={s.id} className="flex items-start gap-2">
                   <span>{s.apa ?? s.inText ?? s.url}</span>
@@ -322,6 +335,10 @@ export default async function CourseBySlugPage({ params }: Params) {
             })}
           </ol>
         </section>
+      ) : null}
+
+      {showEcosystem && relatedSlugs.length > 0 ? (
+        <RelatedTools slugs={relatedSlugs} courseId={course.id} />
       ) : null}
 
       {course.isPublished && (view.isEditor || (view.isEnrolled && !isFreeCourse(course))) ? (

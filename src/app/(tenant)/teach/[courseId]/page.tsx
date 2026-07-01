@@ -5,8 +5,10 @@ import { getScopedDb } from "@/db/scoped";
 import { canEditCourse } from "@/lib/api";
 import { getSession, isPlatformOwner } from "@/lib/session";
 import { listLessons } from "@/db/queries/authoring";
+import { listLinkUsage } from "@/db/queries/link-clicks";
 import { CourseSettingsForm } from "@/components/course-settings-form";
 import { LessonsManager } from "@/components/lessons-manager";
+import { LinkUsagePanel } from "@/components/link-usage-panel";
 
 export const metadata: Metadata = { title: "Manage course" };
 
@@ -22,9 +24,11 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   if (!course) notFound();
   if (!(await canEditCourse(session, sdb.tenantId, course))) notFound();
 
-  const [lessons, owner] = await Promise.all([
+  const [lessons, owner, categories, linkUsage] = await Promise.all([
     listLessons(courseId),
     isPlatformOwner(session.user.id),
+    sdb.listCategories(),
+    listLinkUsage(sdb.tenantId, courseId),
   ]);
 
   return (
@@ -52,6 +56,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
         <CourseSettingsForm
           courseId={course.id}
           canFeature={owner}
+          categories={categories.map((c) => c.name)}
           initial={{
             title: course.title,
             description: course.description,
@@ -60,12 +65,14 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             visibility: course.visibility as "public" | "members" | "scheduled" | "private",
             isPublished: course.isPublished,
             publishHoldReason: course.publishHoldReason,
+            billingInterval: course.billingInterval as "month" | "year" | null,
             requiresAgeGate: course.requiresAgeGate,
             allowCrossCourseCyoa: course.allowCrossCourseCyoa,
             isSequential: course.isSequential,
             isFeatured: course.isFeatured,
             priceType: course.priceType as "free" | "one_time" | "subscription",
             price: Number(course.price ?? 0),
+            relatedProducts: Array.isArray(course.relatedProducts) ? course.relatedProducts : [],
           }}
         />
 
@@ -85,6 +92,8 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             transcriptContent: l.transcriptContent,
           }))}
         />
+
+        <LinkUsagePanel rows={linkUsage} />
       </div>
     </main>
   );

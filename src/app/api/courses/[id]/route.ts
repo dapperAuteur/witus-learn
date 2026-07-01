@@ -32,6 +32,9 @@ const PatchSchema = z.object({
   seriesTitle: z.string().max(200).nullable().optional(),
   priceType: z.enum(["free", "one_time", "subscription"]).optional(),
   price: z.number().min(0).max(100000).optional(),
+  billingInterval: z.enum(["month", "year"]).nullable().optional(),
+  // Cross-promotion: 0–3 ecosystem product slugs curated for this course.
+  relatedProducts: z.array(z.string().max(60)).max(3).nullable().optional(),
   // Admin-only (stripped below for non-admins)
   isFeatured: z.boolean().optional(),
   featuredOrder: z.number().int().nullable().optional(),
@@ -52,10 +55,12 @@ export async function PATCH(req: Request, { params }: Params) {
   // numeric column wants a string; a free course is always $0.
   if (patch.priceType === "free") patch.price = "0";
   else if (typeof patch.price === "number") patch.price = String(patch.price);
+  // billingInterval only applies to subscriptions; clear it otherwise.
+  if (patch.priceType && patch.priceType !== "subscription") patch.billingInterval = null;
 
   // If pricing changed, drop the cached Stripe price id so ensureCoursePrice re-creates it at
-  // the new amount — otherwise checkout keeps charging the OLD (cached) price after an edit.
-  if ("price" in patch || "priceType" in patch) patch.stripePriceId = null;
+  // the new amount/interval — otherwise checkout keeps charging the OLD (cached) price after an edit.
+  if ("price" in patch || "priceType" in patch || "billingInterval" in patch) patch.stripePriceId = null;
 
   // Featured flags are admin-only.
   if ("isFeatured" in patch || "featuredOrder" in patch) {

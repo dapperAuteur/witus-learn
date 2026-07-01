@@ -4,7 +4,7 @@ import { QuizPlayer } from "./quiz-player";
 import { ExercisePlayer } from "./exercise-player";
 import { SentenceEvaluator } from "./sentence-evaluator";
 import { MapLessonContent, type MapContent } from "./map-lesson-content";
-import { Markdown } from "./markdown";
+import { LessonBody } from "./lesson-body";
 import { MediaPlayer } from "./media-player";
 import { isDirectMediaFile, parseChapters, parseTranscript, toEmbed } from "@/lib/media";
 
@@ -55,7 +55,11 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
 
     case "text":
     case "assignment":
-      return lesson.textContent ? <Markdown>{lesson.textContent}</Markdown> : <Empty />;
+      return lesson.textContent ? (
+        <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} />
+      ) : (
+        <Empty />
+      );
 
     case "quiz": {
       const c = lesson.quizContent as {
@@ -76,7 +80,9 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
       if (!ex?.items?.length) return <Empty />;
       return (
         <div className="space-y-4">
-          {lesson.textContent ? <Markdown>{lesson.textContent}</Markdown> : null}
+          {lesson.textContent ? (
+            <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} />
+          ) : null}
           <ExercisePlayer content={ex} />
           <SentenceEvaluator courseId={lesson.courseId} />
         </div>
@@ -100,7 +106,7 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
           ) : null}
           {lesson.textContent ? (
             <div className="mt-4">
-              <Markdown>{lesson.textContent}</Markdown>
+              <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} />
             </div>
           ) : mc ? null : (
             <Empty />

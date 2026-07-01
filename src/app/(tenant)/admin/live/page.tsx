@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { requirePlatformOwner } from "@/lib/session";
 import { requireTenant } from "@/lib/tenant";
-import { listAllTenants, listLiveForAdmin } from "@/db/queries/live";
+import { listAllTenants, listCourseOptions, listLiveForAdmin } from "@/db/queries/live";
 import { LiveAdmin } from "@/components/live-admin";
 
 export const metadata: Metadata = { title: "Live classes" };
@@ -11,7 +11,12 @@ export const metadata: Metadata = { title: "Live classes" };
 export default async function LiveAdminPage() {
   await requirePlatformOwner();
   const tenant = await requireTenant();
-  const [tenants, sessions] = await Promise.all([listAllTenants(), listLiveForAdmin(tenant.id)]);
+  const [tenants, sessions, courses] = await Promise.all([
+    listAllTenants(),
+    listLiveForAdmin(tenant.id),
+    listCourseOptions(tenant.id),
+  ]);
+  const courseTitle = new Map(courses.map((c) => [c.id, c.title]));
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
@@ -24,6 +29,7 @@ export default async function LiveAdminPage() {
         <LiveAdmin
           tenants={tenants}
           currentTenantId={tenant.id}
+          courses={courses}
           sessions={sessions.map((s) => ({
             id: s.id,
             title: s.title,
@@ -31,6 +37,7 @@ export default async function LiveAdminPage() {
             visibility: s.visibility,
             recordingUrl: s.recordingUrl,
             playbackUrl: s.playbackUrl,
+            courseTitle: s.courseId ? (courseTitle.get(s.courseId) ?? null) : null,
           }))}
         />
       </div>

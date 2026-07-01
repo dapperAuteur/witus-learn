@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { LessonRecorder } from "./lesson-recorder";
 
 // "Mark recorded" checklist on the recording-script page. Lets the instructor track which
 // lessons they've already recorded across multiple sittings, and see progress. Persists via
@@ -48,25 +49,36 @@ export function RecordingProgress({ courseId, lessons }: { courseId: string; les
           style={{ width: `${lessons.length ? (done / lessons.length) * 100 : 0}%` }}
         />
       </div>
-      <ul className="mt-3 space-y-1">
+      <ul className="mt-3 space-y-3">
         {lessons.map((l, i) => (
-          <li key={l.id} className="flex items-center gap-2 text-sm">
-            <input
-              type="checkbox"
-              checked={Boolean(recorded[l.id])}
-              disabled={busy === l.id}
-              onChange={(e) => toggle(l.id, e.target.checked)}
-              aria-label={`Mark "${l.title}" recorded`}
-            />
-            <span className={recorded[l.id] ? "text-neutral-400 line-through" : ""}>
-              {i + 1}. {l.title}
-            </span>
+          <li key={l.id} className="text-sm">
+            <div className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                checked={Boolean(recorded[l.id])}
+                disabled={busy === l.id}
+                onChange={(e) => toggle(l.id, e.target.checked)}
+                aria-label={`Mark "${l.title}" recorded`}
+              />
+              <span className={recorded[l.id] ? "text-neutral-400 line-through" : ""}>
+                {i + 1}. {l.title}
+              </span>
+            </div>
+            {/* Record in-app (audio, offline-safe). A successful upload ticks the checkbox. */}
+            <div className="pl-6">
+              <LessonRecorder
+                courseId={courseId}
+                lessonId={l.id}
+                onUploaded={() => setRecorded((p) => ({ ...p, [l.id]: true }))}
+              />
+            </div>
           </li>
         ))}
       </ul>
       <p className="mt-2 text-xs text-neutral-500">
-        Tick a lesson after you record it. Your progress is saved, so you can record across several
-        sittings and pick up where you left off.
+        Record each lesson right here (audio), or tick it if you recorded elsewhere. Recordings are
+        saved on your device first and upload when you’re online — nothing is lost if you lose
+        connection. Your progress persists across sittings.
       </p>
     </details>
   );

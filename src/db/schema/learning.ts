@@ -148,6 +148,38 @@ export const liveSessions = pgTable(
 
 export type LiveSession = typeof liveSessions.$inferSelect;
 
+// Privacy-light outbound-link click counter. One row per (tenant, course, lesson?, url),
+// incremented by the /api/link/click redirect. NO user id, NO IP, NO cookies — counts only,
+// surfaced to the instructor as "Link usage". `kind` distinguishes lesson/source content
+// links from ecosystem cross-promo clicks. The dedup index is hand-written (COALESCE on the
+// nullable lesson_id) in the migration, since a plain UNIQUE treats NULL lesson_ids as
+// distinct and would defeat the upsert.
+export const linkClicks = pgTable(
+  "link_clicks",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    lessonId: uuid("lesson_id").references(() => lessons.id, { onDelete: "cascade" }),
+    /** 'content' (lesson body / Sources link) | 'ecosystem' (cross-promo). */
+    kind: text("kind").notNull().default("content"),
+    url: text("url").notNull(),
+    clickCount: integer("click_count").notNull().default(0),
+    firstClickedAt: timestamp("first_clicked_at", { withTimezone: true }).notNull().defaultNow(),
+    lastClickedAt: timestamp("last_clicked_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("link_clicks_tenant_course_idx").on(t.tenantId, t.courseId),
+    check("link_clicks_kind_chk", sql`${t.kind} in ('content','ecosystem')`),
+  ],
+);
+
+export type LinkClick = typeof linkClicks.$inferSelect;
+
 // Lead capture (email funnel). Tenant-scoped, one row per (tenant, email). Used by
 // the coming-soon landings and any "notify me" form, gated by flags.leadFunnel.
 export const leads = pgTable(
@@ -170,6 +202,38 @@ export const leads = pgTable(
 );
 
 export type Lead = typeof leads.$inferSelect;
+
+// App-wide bug reports / problem reports (distinct from the per-lesson curriculum feedback
+// above). Anyone can submit "Report a problem" (tenant-scoped); admins triage it. Each is also
+// mirrored to the central WitUS Inbox (sendToInbox) for triage there.
+export const problemReports = pgTable(
+  "problem_reports",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    /** Set when the reporter is signed in; null for anonymous. */
+    userId: text("user_id").references(() => users.id, { onDelete: "set null" }),
+    /** bug | idea | other */
+    kind: text("kind").notNull().default("bug"),
+    message: text("message").notNull(),
+    /** The page the report was filed from. */
+    pageUrl: text("page_url"),
+    /** Optional contact email (for anonymous reporters). */
+    email: text("email"),
+    /** new | triaged | closed */
+    status: text("status").notNull().default("new"),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("problem_reports_tenant_idx").on(t.tenantId),
+    check("problem_reports_kind_chk", sql`${t.kind} in ('bug','idea','other')`),
+    check("problem_reports_status_chk", sql`${t.status} in ('new','triaged','closed')`),
+  ],
+);
+
+export type ProblemReport = typeof problemReports.$inferSelect;
 
 // Email campaigns (marketing). Drafts are composed + previewed here; SENDING is a
 // separate, explicitly-confirmed step (no send is wired yet). Tenant-scoped.

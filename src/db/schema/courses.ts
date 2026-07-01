@@ -28,6 +28,9 @@ export const courseCategories = pgTable(
       .references(() => tenants.id, { onDelete: "cascade" }),
     name: citext("name").notNull(),
     sortOrder: integer("sort_order").notNull().default(0),
+    // Optional cross-promotion: a WitUS ecosystem product slug (see src/lib/ecosystem.ts)
+    // surfaced as an "Explore in the WitUS ecosystem" chip on this category's catalog header.
+    ecosystemProductSlug: text("ecosystem_product_slug"),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [unique("course_categories_tenant_name_uq").on(t.tenantId, t.name)],
@@ -50,10 +53,16 @@ export const courses = pgTable(
     coverImageUrl: text("cover_image_url"),
     category: text("category"),
     tags: text("tags").array(),
+    // Cross-promotion: 0–3 WitUS ecosystem product slugs (see src/lib/ecosystem.ts) the
+    // instructor curates for this course; rendered as a small labeled "Related WitUS tools"
+    // sidebar card. Empty/NULL = no card. Clicks route through /api/link/click.
+    relatedProducts: jsonb("related_products").$type<string[]>(),
 
     // Pricing / billing (wired in Phase 5)
     price: numeric("price", { precision: 10, scale: 2 }).notNull().default("0"),
     priceType: text("price_type").notNull().default("free"),
+    // For priceType "subscription": how often it bills. NULL = monthly (legacy default).
+    billingInterval: text("billing_interval"),
     stripeProductId: text("stripe_product_id"),
     stripePriceId: text("stripe_price_id"),
 
@@ -107,6 +116,7 @@ export const courses = pgTable(
     index("courses_tenant_published_idx").on(t.tenantId, t.isPublished),
     index("courses_tenant_series_idx").on(t.tenantId, t.seriesSlug),
     check("courses_price_type_chk", sql`${t.priceType} in ('free','one_time','subscription')`),
+    check("courses_billing_interval_chk", sql`${t.billingInterval} is null or ${t.billingInterval} in ('month','year')`),
     check("courses_visibility_chk", sql`${t.visibility} in ('public','members','scheduled','private')`),
     check("courses_navigation_mode_chk", sql`${t.navigationMode} in ('linear','cyoa')`),
   ],

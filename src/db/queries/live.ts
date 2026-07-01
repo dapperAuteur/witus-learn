@@ -1,6 +1,7 @@
 import "server-only";
 import { and, asc, desc, eq } from "drizzle-orm";
 import { db } from "@/db/client";
+import { courses } from "@/db/schema/courses";
 import { liveSessions, type LiveSession } from "@/db/schema/learning";
 import { tenants } from "@/db/schema/tenancy";
 
@@ -39,15 +40,31 @@ export async function listLiveForAdmin(tenantId: string): Promise<LiveSession[]>
     .orderBy(desc(liveSessions.createdAt));
 }
 
-/** Fan-out: one stream broadcast to several schools = one row per tenant. */
+/** Fan-out: one stream broadcast to several schools = one row per tenant. A courseId only
+ * ever attaches to the row of the tenant that OWNS the course (courseOwnerTenantId) — never to
+ * another school's session (a course belongs to exactly one tenant; cross-attaching would leak). */
 export async function createLiveSessions(
   tenantIds: string[],
   data: NewLiveSession,
   createdBy: string,
+  courseOwnerTenantId?: string | null,
 ): Promise<number> {
   if (tenantIds.length === 0) return 0;
-  await db.insert(liveSessions).values(tenantIds.map((tenantId) => ({ tenantId, createdBy, ...data })));
+  await db.insert(liveSessions).values(
+    tenantIds.map((tenantId) => ({
+      tenantId,
+      createdBy,
+      ...data,
+      courseId: data.courseId && tenantId === courseOwnerTenantId ? data.courseId : null,
+    })),
+  );
   return tenantIds.length;
+}
+
+/** The tenant that owns a course (for validating a live-session course attachment). */
+export async function getCourseTenantId(courseId: string): Promise<string | null> {
+  const [row] = await db.select({ tenantId: courses.tenantId }).from(courses).where(eq(courses.id, courseId)).limit(1);
+  return row?.tenantId ?? null;
 }
 
 export async function getLiveTenantId(id: string): Promise<string | null> {
@@ -69,4 +86,13 @@ export async function deleteLiveSession(id: string): Promise<void> {
 /** All schools, for the broadcast fan-out picker (platform owner). */
 export async function listAllTenants(): Promise<{ id: string; name: string }[]> {
   return db.select({ id: tenants.id, name: tenants.name }).from(tenants).orderBy(asc(tenants.name));
+}
+
+/** A school's courses (id + title) to populate the live-session course picker. Tenant-scoped. */
+export async function listCourseOptions(tenantId: string): Promise<{ id: string; title: string }[]> {
+  return db
+    .select({ id: courses.id, title: courses.title })
+    .from(courses)
+    .where(eq(courses.tenantId, tenantId))
+    .orderBy(asc(courses.title));
 }
