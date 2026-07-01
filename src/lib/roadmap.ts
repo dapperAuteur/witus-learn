@@ -42,6 +42,10 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   auto-attach + mark recorded). Migration 0020.
 
 ### Platform backlog
+- ⚪ **Add RideWitUS to cross-promotion when it's public** — it's intentionally omitted from
+  \`src/lib/ecosystem.ts\` because it isn't registered in the canonical \`gemini/witus/lib/products.ts\`
+  yet (don't assert a guessed URL). CHECK BACK: once RideWitUS is registered there / goes public,
+  add its real \`slug\` + \`href\` + \`tagline\` to \`ECOSYSTEM_PRODUCTS\` so it appears in the cross-promo picker.
 - 🔧 **UI/UX overhaul** — north star **active-practice / mastery** (Duolingo + Brilliant + Khan).
   Decisions locked: home = **Direction B (mastery dashboard)**; lesson loop = **one idea → drill →
   coach → next**; gamification = **light layer now** (streaks/goal/mastery), **XP + badges Phase 2**,
