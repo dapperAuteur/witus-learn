@@ -13,6 +13,8 @@ import { buildCrossroads } from "@/lib/crossroads";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { MetricsTrackerCta } from "@/components/metrics-tracker-cta";
+import { SaveOfflineButton } from "@/components/save-offline-button";
+import { isDirectMediaFile } from "@/lib/media";
 import { brandName } from "@/lib/branding";
 
 type Params = {
@@ -143,6 +145,11 @@ export default async function LessonPage({ params }: Params) {
             {access.open ? (
           <>
             <LessonPlayer lesson={lesson} />
+            {(lesson.lessonType === "audio" || lesson.lessonType === "video") &&
+            lesson.contentUrl &&
+            isDirectMediaFile(lesson.contentUrl) ? (
+              <SaveOfflineButton url={lesson.contentUrl} />
+            ) : null}
             {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
             <div className="mt-6">
               {view.session ? (
