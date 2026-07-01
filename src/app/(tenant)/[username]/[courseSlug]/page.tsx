@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, isFreeCourse } from "@/lib/gating";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
+import { listLiveForCourse } from "@/db/queries/live";
+import { LivePlayer } from "@/components/live-player";
 import { GlossaryList } from "@/components/glossary-list";
 import { ProgressBar } from "@/components/progress-bits";
 import { getUnmetRequired, listPrerequisites } from "@/db/queries/prerequisites";
@@ -31,6 +33,7 @@ export default async function CourseBySlugPage({ params }: Params) {
   if (!view) notFound();
 
   const { course, lessons, isEditor, completedLessonIds, orderedLessonIds } = view;
+  const courseLives = await listLiveForCourse(course.tenantId, course.id);
 
   // Per-course (per-season) age gate: gate a course flagged requiresAgeGate even when
   // the brand itself is open (BVC S1 open, S2/S3 gated). Editors bypass.
@@ -204,12 +207,56 @@ export default async function CourseBySlugPage({ params }: Params) {
         </section>
       ) : null}
 
+      {courseLives.length > 0 ? (
+        <section className="mt-8">
+          <div className="mb-3 flex items-center justify-between">
+            <h2 className="text-lg font-semibold">Live sessions</h2>
+            <Link href="/live" className="text-sm underline" style={{ color: "var(--accent)" }}>
+              All live →
+            </Link>
+          </div>
+          <ul className="space-y-3">
+            {courseLives.map((s) => (
+              <li key={s.id} className="rounded-xl border border-neutral-200 p-4 dark:border-neutral-800">
+                <div className="flex items-center justify-between gap-3">
+                  <span className="font-medium">
+                    {s.isLive ? "🔴 " : ""}
+                    {s.title}
+                  </span>
+                  {s.scheduledAt && !s.isLive ? (
+                    <span className="text-xs text-neutral-500">{new Date(s.scheduledAt).toLocaleString()}</span>
+                  ) : null}
+                </div>
+                {s.isLive && s.playbackUrl ? (
+                  <div className="mt-3">
+                    <LivePlayer url={s.playbackUrl} title={s.title} />
+                  </div>
+                ) : s.recordingUrl ? (
+                  <div className="mt-3">
+                    <LivePlayer url={s.recordingUrl} title={s.title} />
+                  </div>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
       <h2 className="mt-8 mb-3 text-lg font-semibold">{view.modules.length > 0 ? "Sections" : "Lessons"}</h2>
       {lessons.length === 0 ? (
         <p className="text-neutral-500">No lessons yet.</p>
       ) : view.modules.length > 0 ? (
         <div className="space-y-3">
-          {view.modules.map((mod) => {
+          {(() => {
+            // Collapse every module except the one you're likely on — the first module that
+            // isn't fully complete (or the first module for a fresh course). This turns a long
+            // scroll into a compact list of section headers you expand as needed.
+            const autoOpenId =
+              view.modules.find((m) => {
+                const ml = lessons.filter((l) => l.moduleId === m.id);
+                return ml.length > 0 && ml.some((l) => !completedLessonIds.has(l.id));
+              })?.id ?? view.modules[0]?.id;
+            return view.modules.map((mod) => {
             const modLessons = lessons.filter((l) => l.moduleId === mod.id);
             if (modLessons.length === 0) return null;
             const doneCount = modLessons.filter((l) => completedLessonIds.has(l.id)).length;
@@ -217,7 +264,7 @@ export default async function CourseBySlugPage({ params }: Params) {
             return (
               <details
                 key={mod.id}
-                open={!complete}
+                open={mod.id === autoOpenId}
                 className="rounded-xl border border-neutral-200 dark:border-neutral-800"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 font-medium">
@@ -232,7 +279,8 @@ export default async function CourseBySlugPage({ params }: Params) {
                 </ol>
               </details>
             );
-          })}
+          });
+          })()}
           {ungrouped.length > 0 ? (
             <ol className="space-y-2">{ungrouped.map((lesson) => lessonRow(lesson, lessons.indexOf(lesson) + 1))}</ol>
           ) : null}

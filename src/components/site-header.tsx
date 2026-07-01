@@ -11,11 +11,11 @@ import { ThemeToggle } from "./theme-toggle";
 export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   const { flags } = tenant;
   const session = await getSession();
-  // Show the Admin link to the platform owner OR a brand admin of this school.
-  const canAdmin = session
-    ? (await isPlatformOwner(session.user.id)) ||
-      (await getMembership(session.user.id, tenant.id)) === "brand_admin"
-    : false;
+  const owner = session ? await isPlatformOwner(session.user.id) : false;
+  const membership = session ? ((await getMembership(session.user.id, tenant.id)) ?? "") : "";
+  // Admin: platform owner OR a brand admin. Teach: owner, brand admin, OR instructor.
+  const canAdmin = owner || membership === "brand_admin";
+  const canTeach = owner || ["instructor", "brand_admin"].includes(membership);
 
   return (
     <header className="border-b border-neutral-200 dark:border-neutral-800">
@@ -34,6 +34,11 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
           <li>
             <Link className="hover:underline" href="/courses">
               Browse Catalog
+            </Link>
+          </li>
+          <li>
+            <Link className="hover:underline" href="/live">
+              Live
             </Link>
           </li>
           {flags.commodityMap ? (
@@ -57,6 +62,13 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
           </li>
           {session ? (
             <>
+              {canTeach ? (
+                <li>
+                  <Link className="font-medium hover:underline" style={{ color: "var(--accent)" }} href="/teach">
+                    Teach
+                  </Link>
+                </li>
+              ) : null}
               {canAdmin ? (
                 <li>
                   <Link className="font-medium hover:underline" style={{ color: "var(--accent)" }} href="/admin">
