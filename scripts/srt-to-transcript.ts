@@ -18,7 +18,7 @@ import { neonConfig, Pool } from "@neondatabase/serverless";
 import { eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
-import { parseSrt } from "../src/lib/srt";
+import { chaptersFromSegments, parseSrt } from "../src/lib/srt";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 
@@ -54,11 +54,17 @@ async function main() {
     `Parsed ${segments.length} cues from ${file} — first @ ${first.start}s, last @ ${last.end ?? last.start}s.`,
   );
 
+  // Auto-generate chapters too (the app lets you edit them after import).
+  const withChapters = has("chapters");
+  const chapters = withChapters ? chaptersFromSegments(segments) : [];
+  if (withChapters) console.error(`Auto-generated ${chapters.length} chapters.`);
+
   const outFile = flag("out");
   const lessonId = flag("lesson");
+  const payload = withChapters ? { transcript: segments, chapters } : segments;
 
   if (outFile) {
-    writeFileSync(outFile, JSON.stringify(segments, null, 2));
+    writeFileSync(outFile, JSON.stringify(payload, null, 2));
     console.error(`Wrote ${outFile}`);
   }
 
@@ -73,7 +79,7 @@ async function main() {
     const db = drizzle(pool, { schema });
     const updated = await db
       .update(schema.lessons)
-      .set({ transcriptContent: segments })
+      .set(withChapters ? { transcriptContent: segments, audioChapters: chapters } : { transcriptContent: segments })
       .where(eq(schema.lessons.id, lessonId))
       .returning({ id: schema.lessons.id, title: schema.lessons.title });
     await pool.end();
@@ -86,7 +92,7 @@ async function main() {
 
   if (!outFile && !lessonId) {
     // Print JSON to stdout so it can be piped/copied.
-    process.stdout.write(JSON.stringify(segments, null, 2) + "\n");
+    process.stdout.write(JSON.stringify(payload, null, 2) + "\n");
   }
 }
 

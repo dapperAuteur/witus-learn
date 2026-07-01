@@ -77,6 +77,8 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             sortOrder: l.sortOrder,
             textContent: l.textContent,
             contentUrl: l.contentUrl,
+            audioChapters: l.audioChapters,
+            transcriptContent: l.transcriptContent,
           }))}
         />
       </div>

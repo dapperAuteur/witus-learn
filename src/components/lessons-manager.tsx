@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { MarkdownEditor } from "./markdown-editor";
 import { CloudinaryUpload } from "./cloudinary-upload";
+import { ChapterEditor } from "./chapter-editor";
+import { parseChapters, parseTranscript, type Chapter, type TranscriptSegment } from "@/lib/media";
+import { chaptersFromSegments, parseSrt } from "@/lib/srt";
 
 export interface ManagedLesson {
   id: string;
@@ -15,6 +18,9 @@ export interface ManagedLesson {
   sortOrder: number;
   textContent: string | null;
   contentUrl: string | null;
+  /** Raw jsonb from the DB; parsed on the client for the chapter/transcript editors. */
+  audioChapters: unknown;
+  transcriptContent: unknown;
 }
 
 const EDITABLE_TYPES = ["text", "video", "audio", "slides"];
@@ -143,8 +149,26 @@ function LessonEditor({
   const [body, setBody] = useState(lesson.textContent ?? "");
   const [contentUrl, setContentUrl] = useState(lesson.contentUrl ?? "");
   const [freePreview, setFreePreview] = useState(lesson.isFreePreview);
+  const [chapters, setChapters] = useState<Chapter[]>(parseChapters(lesson.audioChapters));
+  const [transcript, setTranscript] = useState<TranscriptSegment[]>(parseTranscript(lesson.transcriptContent));
+  const [srtInfo, setSrtInfo] = useState<string | null>(null);
   const isMedia = lessonType === "video" || lessonType === "audio" || lessonType === "slides";
   const accept = lessonType === "video" ? "video/*" : lessonType === "audio" ? "audio/*" : "application/pdf,image/*";
+
+  async function onSrtFile(file: File) {
+    try {
+      const segs = parseSrt(await file.text());
+      if (segs.length === 0) {
+        setSrtInfo("No subtitle cues found in that file.");
+        return;
+      }
+      setTranscript(segs);
+      setChapters(chaptersFromSegments(segs));
+      setSrtInfo(`Imported ${segs.length} transcript lines and auto-generated chapters — edit them below, then Save.`);
+    } catch {
+      setSrtInfo("Couldn't read that file — is it a .srt/.vtt?");
+    }
+  }
 
   return (
     <div className="mt-3 space-y-2 rounded-md bg-neutral-50 p-3 dark:bg-neutral-900/50">
@@ -168,6 +192,28 @@ function LessonEditor({
           </div>
           <input value={contentUrl} onChange={(e) => setContentUrl(e.target.value)} placeholder="https://…" className="min-h-9 w-full rounded-md border border-neutral-300 px-3 text-sm dark:border-neutral-700 dark:bg-neutral-900" />
           {contentUrl ? <p className="truncate text-xs text-neutral-500">Media: {contentUrl}</p> : null}
+
+          <div className="border-t border-neutral-200 pt-2 dark:border-neutral-800">
+            <label className="flex flex-wrap items-center gap-2 text-sm">
+              Transcript (.srt / .vtt)
+              <input
+                type="file"
+                accept=".srt,.vtt,text/plain"
+                onChange={(e) => {
+                  const f = e.target.files?.[0];
+                  if (f) void onSrtFile(f);
+                }}
+                className="text-xs"
+              />
+              <span className="text-xs text-neutral-500">
+                {transcript.length ? `${transcript.length} lines loaded` : "builds a follow-along transcript + chapters"}
+              </span>
+            </label>
+            {srtInfo ? <p className="mt-1 text-xs text-green-700 dark:text-green-400">{srtInfo}</p> : null}
+            <div className="mt-2">
+              <ChapterEditor value={chapters} onChange={setChapters} />
+            </div>
+          </div>
         </div>
       ) : null}
 
@@ -178,7 +224,21 @@ function LessonEditor({
       <button
         type="button"
         disabled={busy}
-        onClick={() => onSave({ title, lessonType, textContent: body || null, contentUrl: isMedia ? contentUrl || null : null, isFreePreview: freePreview })}
+        onClick={() =>
+          onSave({
+            title,
+            lessonType,
+            textContent: body || null,
+            contentUrl: isMedia ? contentUrl || null : null,
+            isFreePreview: freePreview,
+            ...(isMedia
+              ? {
+                  transcriptContent: transcript.length ? transcript : null,
+                  audioChapters: chapters.length ? chapters : null,
+                }
+              : {}),
+          })
+        }
         className="min-h-10 rounded-md px-3 text-sm font-medium text-white disabled:opacity-60"
         style={{ backgroundColor: "var(--accent)" }}
       >

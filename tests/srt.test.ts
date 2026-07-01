@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { parseSrt, stripSubtitleFormatting } from "@/lib/srt";
+import {
+  chaptersFromSegments,
+  formatTimecode,
+  parseSrt,
+  parseTimecode,
+  stripSubtitleFormatting,
+} from "@/lib/srt";
 
 describe("stripSubtitleFormatting", () => {
   it("removes SRT/HTML tags and collapses whitespace", () => {
@@ -72,5 +78,47 @@ garbage-with-no-timing`;
   it("returns [] for empty input", () => {
     expect(parseSrt("")).toEqual([]);
     expect(parseSrt("   \n\n  ")).toEqual([]);
+  });
+});
+
+describe("chaptersFromSegments", () => {
+  it("starts a chapter at a silence gap and titles it from the first line", () => {
+    const segs = [
+      { text: "Welcome to the show.", start: 0, end: 2 },
+      { text: "Still the intro.", start: 2.2, end: 4 },
+      { text: "Now a brand new topic entirely here.", start: 10, end: 13 }, // 6s gap → new chapter
+    ];
+    const chapters = chaptersFromSegments(segs, { minGapSeconds: 2.5, everySeconds: 999 });
+    expect(chapters).toHaveLength(2);
+    expect(chapters[0]).toEqual({ title: "Welcome to the show", start: 0 });
+    expect(chapters[1]?.start).toBe(10);
+    expect(chapters[1]?.title.startsWith("Now a brand new topic")).toBe(true);
+  });
+
+  it("forces a chapter at least every everySeconds", () => {
+    const segs = Array.from({ length: 10 }, (_, i) => ({ text: `Line ${i}`, start: i * 60, end: i * 60 + 1 }));
+    // No big gaps, but a 120s cadence over 540s → several chapters.
+    const chapters = chaptersFromSegments(segs, { minGapSeconds: 999, everySeconds: 120 });
+    expect(chapters.length).toBeGreaterThan(2);
+    expect(chapters[0]?.start).toBe(0);
+  });
+
+  it("returns [] when no segment has timing", () => {
+    expect(chaptersFromSegments([{ text: "no time" }])).toEqual([]);
+  });
+});
+
+describe("timecode helpers", () => {
+  it("formats seconds", () => {
+    expect(formatTimecode(0)).toBe("0:00");
+    expect(formatTimecode(83)).toBe("1:23");
+    expect(formatTimecode(3725)).toBe("1:02:05");
+  });
+  it("parses timecodes and plain seconds", () => {
+    expect(parseTimecode("1:23")).toBe(83);
+    expect(parseTimecode("1:02:05")).toBe(3725);
+    expect(parseTimecode("42")).toBe(42);
+    expect(parseTimecode("")).toBeNull();
+    expect(parseTimecode("abc")).toBeNull();
   });
 });

@@ -11,7 +11,7 @@
 //     base so the transcript lines up with the player. An explicit offsetSeconds can nudge
 //     the sync further if a specific file needs it.
 
-import type { TranscriptSegment } from "@/lib/media";
+import type { Chapter, TranscriptSegment } from "@/lib/media";
 
 export interface ParseSrtOptions {
   /** Subtract a whole-hour base timecode (e.g. 01:00:00 → 00:00:00) so timestamps match
@@ -101,4 +101,72 @@ export function parseSrt(raw: string, opts: ParseSrtOptions = {}): TranscriptSeg
     if (c.end != null) seg.end = Math.max(start, round3(c.end + shift));
     return seg;
   });
+}
+
+export interface ChapterizeOptions {
+  /** New chapter when the silent gap before a cue is at least this many seconds (natural
+   *  topic/scene breaks tend to have longer pauses). */
+  minGapSeconds?: number;
+  /** Also force a new chapter at least every this many seconds, so no chapter runs too long. */
+  everySeconds?: number;
+  /** Max words kept in an auto-generated chapter title. */
+  titleWords?: number;
+}
+
+/** First few words of a cue, tidied into a chapter title. */
+function titleFromText(text: string, words: number): string {
+  const parts = text.trim().split(/\s+/);
+  let title = parts.slice(0, words).join(" ").replace(/[.,;:!?—-]+$/, "");
+  if (parts.length > words) title += "…";
+  return title.charAt(0).toUpperCase() + title.slice(1);
+}
+
+/**
+ * Derive navigable chapters from transcript segments. SRT has no chapter data, so we
+ * infer breaks from timing: a new chapter starts at a silence gap (>= minGapSeconds) or
+ * at least every everySeconds, titled from the first line spoken in that segment. The
+ * result is meant as a STARTING POINT the instructor edits (rename/retime) in the app.
+ */
+export function chaptersFromSegments(
+  segments: TranscriptSegment[],
+  opts: ChapterizeOptions = {},
+): Chapter[] {
+  const { minGapSeconds = 2.5, everySeconds = 120, titleWords = 8 } = opts;
+  const timed = segments.filter((s) => s.start != null);
+  if (timed.length === 0) return [];
+
+  const chapters: Chapter[] = [];
+  let lastChapterStart = -Infinity;
+  let prevEnd: number | undefined;
+  for (const seg of timed) {
+    const start = seg.start as number;
+    const gap = prevEnd != null ? start - prevEnd : Infinity;
+    const first = chapters.length === 0;
+    if (first || gap >= minGapSeconds || start - lastChapterStart >= everySeconds) {
+      chapters.push({ title: titleFromText(seg.text, titleWords), start: round3(start) });
+      lastChapterStart = start;
+    }
+    prevEnd = seg.end ?? start;
+  }
+  return chapters;
+}
+
+/** Seconds → "m:ss" (or "h:mm:ss" past an hour). For chapter/transcript UIs. */
+export function formatTimecode(seconds: number): string {
+  const s = Math.max(0, Math.floor(seconds));
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const sec = s % 60;
+  const mm = h > 0 ? String(m).padStart(2, "0") : String(m);
+  return `${h > 0 ? `${h}:` : ""}${mm}:${String(sec).padStart(2, "0")}`;
+}
+
+/** Parse "h:mm:ss" / "m:ss" / plain seconds → seconds. Returns null if unparseable. */
+export function parseTimecode(value: string): number | null {
+  const v = value.trim();
+  if (v === "") return null;
+  if (/^\d+(\.\d+)?$/.test(v)) return parseFloat(v);
+  const parts = v.split(":").map((p) => Number(p));
+  if (parts.some((n) => Number.isNaN(n))) return null;
+  return parts.reduce((acc, n) => acc * 60 + n, 0);
 }
