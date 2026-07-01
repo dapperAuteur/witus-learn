@@ -82,6 +82,7 @@ export function CategoryManager({ categories }: { categories: ManagedCategory[] 
           value={newName}
           onChange={(e) => setNewName(e.target.value)}
           placeholder="New category name"
+          aria-label="New category name"
           maxLength={120}
           className="min-h-10 flex-1 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900"
         />
