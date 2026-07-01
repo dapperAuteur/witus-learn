@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { resolveTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
+import { isWitusBrandedHost } from "@/lib/witus-host";
 import { MagicLinkForm } from "@/components/magic-link-form";
 import { WitusSsoButton } from "@/components/witus-sso-button";
 
@@ -21,13 +22,8 @@ export default async function LoginPage() {
   // White-label tenants on their OWN domains (bettervice.club, elementarymba.com)
   // never match, so they stay isolated — no per-tenant flag needed.
   const h = await headers();
-  const host = (h.get("x-forwarded-host") ?? h.get("host") ?? "").toLowerCase().split(":")[0];
-  const isWitusHost =
-    host === "witus.online" ||
-    host.endsWith(".witus.online") ||
-    host === "localhost" ||
-    host.endsWith(".localhost");
-  const showWitusSso = isWitusHost || tenant?.flags.ecosystemSso === true;
+  const host = h.get("x-forwarded-host") ?? h.get("host");
+  const showWitusSso = isWitusBrandedHost(host) || tenant?.flags.ecosystemSso === true;
 
   return (
     <main style={style} className="flex min-h-screen items-center justify-center px-6 py-12">
