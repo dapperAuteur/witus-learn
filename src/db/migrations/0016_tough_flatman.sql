@@ -1,0 +1,2 @@
+ALTER TABLE "courses" DROP CONSTRAINT "courses_visibility_chk";--> statement-breakpoint
+ALTER TABLE "courses" ADD CONSTRAINT "courses_visibility_chk" CHECK ("courses"."visibility" in ('public','members','scheduled','private'));

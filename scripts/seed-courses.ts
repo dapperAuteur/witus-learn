@@ -1,5 +1,5 @@
 import { neonConfig, Pool } from "@neondatabase/serverless";
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
@@ -7,6 +7,11 @@ import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
+import { KNOTS_COURSE } from "./data/knots-course";
+import { SURVIVAL_COURSE } from "./data/survival-course";
+import { BROADCASTING_COURSE } from "./data/broadcasting-course";
+import { HOODOO_COURSE } from "./data/hoodoo-course";
+import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
 import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
 import { STATE_VS_FEDERAL_COURSE } from "./data/state-vs-federal-course";
@@ -448,6 +453,62 @@ async function main() {
     category: "Cybersecurity",
     navigationMode: "linear",
   });
+
+  // ── Vocational / new courses (all on Learn.WitUS) ──────────────────────────
+  for (const { name, sortOrder } of [
+    { name: "Trade Skills", sortOrder: 8 },
+    { name: "Survival", sortOrder: 9 },
+    { name: "Careers & Media", sortOrder: 10 },
+    { name: "Culture & History", sortOrder: 11 },
+  ]) {
+    await db
+      .insert(schema.courseCategories)
+      .values({ tenantId: learnWitus, name, sortOrder })
+      .onConflictDoNothing();
+  }
+  for (const { slug, course, category } of [
+    { slug: "knot-tying", course: KNOTS_COURSE, category: "Trade Skills" },
+    { slug: "off-grid-survival", course: SURVIVAL_COURSE, category: "Survival" },
+    { slug: "broadcasting-break-in", course: BROADCASTING_COURSE, category: "Careers & Media" },
+    { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },
+    { slug: "hoodoo-complete", course: HOODOO_COMPLETE_COURSE, category: "Culture & History" },
+  ]) {
+    await seedAuthoredCourse(db, {
+      tenantId: learnWitus,
+      instructorId,
+      slug,
+      course,
+      category,
+      navigationMode: "linear",
+    });
+  }
+  // Hold BOTH Hoodoo courses from publishing, and make the comprehensive one PRIVATE
+  // (owner-only). seedAuthoredCourse publishes by default, so we override after seeding.
+  await db
+    .update(schema.courses)
+    .set({
+      isPublished: false,
+      publishedAt: null,
+      publishHoldReason:
+        "Hold for cultural review — do not publish until vetted by a knowledgeable member of the tradition.",
+    })
+    .where(
+      and(
+        eq(schema.courses.tenantId, learnWitus),
+        eq(schema.courses.slug, "hoodoo-tradition-of-resistance"),
+      ),
+    );
+  await db
+    .update(schema.courses)
+    .set({
+      isPublished: false,
+      publishedAt: null,
+      visibility: "private",
+      publishHoldReason:
+        "Private / personal study — draws on copyrighted sources. Owner-only; not for publication.",
+    })
+    .where(and(eq(schema.courses.tenantId, learnWitus), eq(schema.courses.slug, "hoodoo-complete")));
+  console.log("  hoodoo: held from publishing (v1 review-hold; v2 private, owner-only)");
 
   // Building with AI (F2) — also consolidated onto Learn.WitUS, in the shared
   // "AI & Technology" category alongside AI Literacy (F1, the recommended prerequisite).

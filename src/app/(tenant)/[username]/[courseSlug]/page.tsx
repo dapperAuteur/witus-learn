@@ -123,7 +123,23 @@ export default async function CourseBySlugPage({ params }: Params) {
           {username}
         </Link>
         {isEditor && !course.isPublished ? " · Draft (only you can see this)" : null}
+        {isEditor && course.visibility === "private" ? " · 🔒 Private (owner only)" : null}
       </p>
+      {isEditor && course.publishHoldReason ? (
+        <div
+          role="alert"
+          className="mt-4 rounded-lg border-2 border-amber-400 bg-amber-50 p-4 text-sm dark:border-amber-600 dark:bg-amber-950/40"
+        >
+          <p className="font-semibold text-amber-900 dark:text-amber-200">
+            ⚠️ ON HOLD — do not publish this course yet
+          </p>
+          <p className="mt-1 text-amber-800 dark:text-amber-300">{course.publishHoldReason}</p>
+          <p className="mt-1 text-xs text-amber-700 dark:text-amber-400">
+            Publishing is blocked until this hold is cleared (vet the content, or switch to
+            uncopyrighted sources). Only you and the platform owner can see this.
+          </p>
+        </div>
+      ) : null}
       {course.description ? (
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
       ) : null}

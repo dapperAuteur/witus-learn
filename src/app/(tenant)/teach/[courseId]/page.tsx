@@ -34,6 +34,9 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           ← Your courses
         </Link>
         <div className="flex items-center gap-4 text-sm">
+          <Link href={`/teach/${course.id}/script`} className="underline" style={{ color: "var(--accent)" }}>
+            📄 Recording script
+          </Link>
           <Link href={`/teach/${course.id}/submissions`} className="underline" style={{ color: "var(--accent)" }}>
             Submissions
           </Link>
@@ -54,8 +57,9 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             description: course.description,
             category: course.category,
             navigationMode: course.navigationMode as "linear" | "cyoa",
-            visibility: course.visibility as "public" | "members" | "scheduled",
+            visibility: course.visibility as "public" | "members" | "scheduled" | "private",
             isPublished: course.isPublished,
+            publishHoldReason: course.publishHoldReason,
             requiresAgeGate: course.requiresAgeGate,
             allowCrossCourseCyoa: course.allowCrossCourseCyoa,
             isSequential: course.isSequential,

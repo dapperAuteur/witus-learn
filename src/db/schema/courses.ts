@@ -57,10 +57,17 @@ export const courses = pgTable(
     stripeProductId: text("stripe_product_id"),
     stripePriceId: text("stripe_price_id"),
 
-    // Publishing / visibility
+    // Publishing / visibility.
+    // visibility: "public" | "members" | "scheduled" | "private". A "private" course is
+    // owner-only — visible/editable ONLY by the platform owner and the course's own
+    // instructor, never by brand_admins/moderators (see canAccessCourse).
     isPublished: boolean("is_published").notNull().default(false),
     visibility: text("visibility").notNull().default("public"),
     publishedAt: timestamp("published_at", { withTimezone: true }),
+    // When set, the course is HELD: a clear UI banner shows this reason and publishing is
+    // blocked until it clears (e.g. "vet culturally" or "swap copyrighted source for open").
+    // NULL = no hold.
+    publishHoldReason: text("publish_hold_reason"),
 
     // Learning behaviour
     navigationMode: text("navigation_mode").notNull().default("linear"),
@@ -100,7 +107,7 @@ export const courses = pgTable(
     index("courses_tenant_published_idx").on(t.tenantId, t.isPublished),
     index("courses_tenant_series_idx").on(t.tenantId, t.seriesSlug),
     check("courses_price_type_chk", sql`${t.priceType} in ('free','one_time','subscription')`),
-    check("courses_visibility_chk", sql`${t.visibility} in ('public','members','scheduled')`),
+    check("courses_visibility_chk", sql`${t.visibility} in ('public','members','scheduled','private')`),
     check("courses_navigation_mode_chk", sql`${t.navigationMode} in ('linear','cyoa')`),
   ],
 );
@@ -151,6 +158,10 @@ export const lessons = pgTable(
     podcastLinks: jsonb("podcast_links"),
     video360Autoplay: boolean("video_360_autoplay"),
     video360PosterUrl: text("video_360_poster_url"),
+
+    // Recording progress: when the instructor marked this lesson's audio/video as recorded.
+    // NULL = not recorded yet. Drives the "mark recorded" checklist on the recording-script page.
+    recordedAt: timestamp("recorded_at", { withTimezone: true }),
 
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),

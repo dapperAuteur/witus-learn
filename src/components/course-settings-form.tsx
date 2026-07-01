@@ -9,8 +9,10 @@ export interface CourseSettings {
   description: string | null;
   category: string | null;
   navigationMode: "linear" | "cyoa";
-  visibility: "public" | "members" | "scheduled";
+  visibility: "public" | "members" | "scheduled" | "private";
   isPublished: boolean;
+  /** Non-null = the course is held and can't be published until cleared. */
+  publishHoldReason: string | null;
   requiresAgeGate: boolean;
   allowCrossCourseCyoa: boolean;
   isSequential: boolean;
@@ -85,6 +87,7 @@ export function CourseSettingsForm({
             <option value="public">Public</option>
             <option value="members">Members</option>
             <option value="scheduled">Scheduled</option>
+            <option value="private">Private (owner only)</option>
           </select>
         </div>
       </div>
@@ -125,8 +128,30 @@ export function CourseSettingsForm({
         ) : null}
       </div>
 
+      {v.publishHoldReason ? (
+        <div className="rounded-md border-2 border-amber-400 bg-amber-50 p-3 text-sm dark:border-amber-600 dark:bg-amber-950/40">
+          <p className="font-semibold text-amber-900 dark:text-amber-200">⚠️ This course is on hold — publishing is blocked</p>
+          <p className="mt-1 text-amber-800 dark:text-amber-300">{v.publishHoldReason}</p>
+          <button
+            type="button"
+            onClick={() => set("publishHoldReason", null)}
+            className="mt-2 min-h-9 rounded-md border border-amber-500 px-3 text-xs font-medium text-amber-900 hover:bg-amber-100 dark:text-amber-200 dark:hover:bg-amber-900"
+          >
+            Release hold (vetted / cleared) — then you can publish and Save
+          </button>
+        </div>
+      ) : null}
+
       <fieldset className="space-y-2 text-sm">
-        <label className="flex items-center gap-2"><input type="checkbox" checked={v.isPublished} onChange={(e) => set("isPublished", e.target.checked)} /> Published</label>
+        <label className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            checked={v.isPublished}
+            disabled={Boolean(v.publishHoldReason)}
+            onChange={(e) => set("isPublished", e.target.checked)}
+          />{" "}
+          Published{v.publishHoldReason ? " (release the hold above first)" : ""}
+        </label>
         <label className="flex items-center gap-2"><input type="checkbox" checked={v.requiresAgeGate} onChange={(e) => set("requiresAgeGate", e.target.checked)} /> Requires age gate (18+)</label>
         <label className="flex items-center gap-2"><input type="checkbox" checked={v.isSequential} onChange={(e) => set("isSequential", e.target.checked)} /> Sequential (lessons unlock in order)</label>
         <label className="flex items-center gap-2"><input type="checkbox" checked={v.allowCrossCourseCyoa} onChange={(e) => set("allowCrossCourseCyoa", e.target.checked)} /> Allow this course as a cross-course CYOA destination</label>
