@@ -26,6 +26,7 @@
     "seed:owner": "tsx --env-file=.env.local scripts/seed-owner.ts",
     "srt:transcript": "tsx --env-file=.env.local scripts/srt-to-transcript.ts",
     "course:script": "tsx --env-file=.env.local scripts/course-to-script.ts",
+    "reassign:instructor": "tsx --env-file=.env.local scripts/reassign-instructor.ts",
     "test": "vitest run"
   },
   "dependencies": {
