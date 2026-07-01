@@ -7,6 +7,11 @@ import {
   savePending,
   type PendingRecording,
 } from "@/lib/recording-store";
+import { formatBytes, MAX_UPLOAD_BYTES, uploadToCloudinary } from "@/lib/cloudinary-upload";
+
+// Auto-stop a take a little under the plan cap so a single recording never exceeds it — the
+// instructor is nudged to continue in the next lesson (per-lesson recording is the default).
+const SAFE_BYTES = MAX_UPLOAD_BYTES - 4 * 1024 * 1024;
 
 // In-app, offline-first, per-lesson audio recorder.
 //  capture (MediaRecorder) → persist to IndexedDB immediately → upload to Cloudinary when online
@@ -40,10 +45,13 @@ export function LessonRecorder({
   const [status, setStatus] = useState<Status>("idle");
   const [progress, setProgress] = useState(0);
   const [elapsed, setElapsed] = useState(0);
+  const [bytes, setBytes] = useState(0);
+  const [autoStopped, setAutoStopped] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const recorderRef = useRef<MediaRecorder | null>(null);
   const chunksRef = useRef<BlobPart[]>([]);
+  const bytesRef = useRef(0);
   const streamRef = useRef<MediaStream | null>(null);
   const startedAtRef = useRef(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -59,33 +67,8 @@ export function LessonRecorder({
       setProgress(0);
       setError(null);
       try {
-        const cfgRes = await fetch("/api/upload/cloudinary");
-        if (!cfgRes.ok) {
-          throw new Error(cfgRes.status === 503 ? "Media uploads aren't configured yet." : "You can't upload here.");
-        }
-        const { cloudName, uploadPreset } = (await cfgRes.json()) as { cloudName: string; uploadPreset: string };
-        const form = new FormData();
-        form.append("file", new File([rec.blob], `lesson-${lessonId}.webm`, { type: rec.mime || "audio/webm" }));
-        form.append("upload_preset", uploadPreset);
-
-        const url = await new Promise<string>((resolve, reject) => {
-          const xhr = new XMLHttpRequest();
-          xhr.open("POST", `https://api.cloudinary.com/v1_1/${cloudName}/auto/upload`);
-          xhr.upload.onprogress = (e) => {
-            if (e.lengthComputable) setProgress(Math.round((e.loaded / e.total) * 100));
-          };
-          xhr.onload = () => {
-            if (xhr.status >= 200 && xhr.status < 300) {
-              try {
-                resolve((JSON.parse(xhr.responseText) as { secure_url: string }).secure_url);
-              } catch {
-                reject(new Error("Unexpected upload response."));
-              }
-            } else reject(new Error("Upload failed."));
-          };
-          xhr.onerror = () => reject(new Error("Upload failed — check your connection."));
-          xhr.send(form);
-        });
+        // Shared helper: rejects over-cap blobs up front, chunk-uploads large ones for reliability.
+        const url = await uploadToCloudinary(rec.blob, `lesson-${lessonId}.webm`, setProgress);
 
         // Attach to the lesson + mark recorded. Only clear local copy once this succeeds.
         const patch = await fetch(`/api/courses/${courseId}/lessons/${lessonId}`, {
@@ -151,8 +134,20 @@ export function LessonRecorder({
       const mime = pickMime();
       const mr = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
       chunksRef.current = [];
+      bytesRef.current = 0;
+      setBytes(0);
+      setAutoStopped(false);
       mr.ondataavailable = (e) => {
-        if (e.data.size > 0) chunksRef.current.push(e.data);
+        if (e.data.size > 0) {
+          chunksRef.current.push(e.data);
+          bytesRef.current += e.data.size;
+          setBytes(bytesRef.current);
+          // Stop just under the plan cap so one take never exceeds it; finish in the next lesson.
+          if (bytesRef.current >= SAFE_BYTES && mr.state === "recording") {
+            setAutoStopped(true);
+            mr.stop();
+          }
+        }
       };
       mr.onstop = async () => {
         stopTimer();
@@ -175,7 +170,7 @@ export function LessonRecorder({
       startedAtRef.current = Date.now();
       setElapsed(0);
       timerRef.current = setInterval(() => setElapsed((e) => e + 1), 1000);
-      mr.start();
+      mr.start(2000); // emit data every 2s so we can track size + auto-stop near the cap
       setStatus("recording");
     } catch {
       setError("Couldn't access the microphone. Check the browser permission.");
@@ -212,8 +207,15 @@ export function LessonRecorder({
           <span className="inline-flex items-center gap-1.5 font-medium text-red-600">
             <span className="h-2 w-2 animate-pulse rounded-full bg-red-600" /> {fmt(elapsed)}
           </span>
+          <span className="text-xs text-neutral-500">{formatBytes(bytes)} / {formatBytes(MAX_UPLOAD_BYTES)}</span>
           <button type="button" onClick={stopRecording} className={btn}>■ Stop</button>
         </>
+      ) : null}
+
+      {autoStopped && (status === "local" || status === "uploading" || status === "uploaded") ? (
+        <span className="w-full text-xs text-amber-600">
+          Reached the size limit — this take was saved. Record the rest as the next lesson.
+        </span>
       ) : null}
 
       {status === "local" ? <span className="text-neutral-500">Recorded — preparing upload…</span> : null}

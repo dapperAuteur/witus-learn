@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { canEditCourse } from "@/lib/api";
 import { getSession, isPlatformOwner } from "@/lib/session";
+import { hasStripe } from "@/lib/env";
 import { listLessons } from "@/db/queries/authoring";
 import { listLinkUsage } from "@/db/queries/link-clicks";
 import { CourseSettingsForm } from "@/components/course-settings-form";
@@ -56,6 +57,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
         <CourseSettingsForm
           courseId={course.id}
           canFeature={owner}
+          hasStripe={hasStripe}
           categories={categories.map((c) => c.name)}
           initial={{
             title: course.title,
