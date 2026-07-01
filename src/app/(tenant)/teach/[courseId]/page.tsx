@@ -22,9 +22,10 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   if (!course) notFound();
   if (!(await canEditCourse(session, sdb.tenantId, course))) notFound();
 
-  const [lessons, owner] = await Promise.all([
+  const [lessons, owner, categories] = await Promise.all([
     listLessons(courseId),
     isPlatformOwner(session.user.id),
+    sdb.listCategories(),
   ]);
 
   return (
@@ -52,6 +53,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
         <CourseSettingsForm
           courseId={course.id}
           canFeature={owner}
+          categories={categories.map((c) => c.name)}
           initial={{
             title: course.title,
             description: course.description,

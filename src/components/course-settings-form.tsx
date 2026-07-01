@@ -29,10 +29,13 @@ export function CourseSettingsForm({
   courseId,
   initial,
   canFeature,
+  categories = [],
 }: {
   courseId: string;
   initial: CourseSettings;
   canFeature: boolean;
+  /** This school's category names, offered as suggestions on the Category field. */
+  categories?: string[];
 }) {
   const router = useRouter();
   const [v, setV] = useState<CourseSettings>(initial);
@@ -90,7 +93,12 @@ export function CourseSettingsForm({
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label className="text-sm font-medium" htmlFor="cs-cat">Category</label>
-          <input id="cs-cat" value={v.category ?? ""} onChange={(e) => set("category", e.target.value)} maxLength={120} className={field} />
+          <input id="cs-cat" list="cs-cat-options" value={v.category ?? ""} onChange={(e) => set("category", e.target.value)} maxLength={120} className={field} placeholder="Pick or type a category" />
+          <datalist id="cs-cat-options">
+            {categories.map((name) => (
+              <option key={name} value={name} />
+            ))}
+          </datalist>
         </div>
         <div>
           <label className="text-sm font-medium" htmlFor="cs-nav">Navigation</label>
