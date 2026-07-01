@@ -148,6 +148,38 @@ export const liveSessions = pgTable(
 
 export type LiveSession = typeof liveSessions.$inferSelect;
 
+// Privacy-light outbound-link click counter. One row per (tenant, course, lesson?, url),
+// incremented by the /api/link/click redirect. NO user id, NO IP, NO cookies — counts only,
+// surfaced to the instructor as "Link usage". `kind` distinguishes lesson/source content
+// links from ecosystem cross-promo clicks. The dedup index is hand-written (COALESCE on the
+// nullable lesson_id) in the migration, since a plain UNIQUE treats NULL lesson_ids as
+// distinct and would defeat the upsert.
+export const linkClicks = pgTable(
+  "link_clicks",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    lessonId: uuid("lesson_id").references(() => lessons.id, { onDelete: "cascade" }),
+    /** 'content' (lesson body / Sources link) | 'ecosystem' (cross-promo). */
+    kind: text("kind").notNull().default("content"),
+    url: text("url").notNull(),
+    clickCount: integer("click_count").notNull().default(0),
+    firstClickedAt: timestamp("first_clicked_at", { withTimezone: true }).notNull().defaultNow(),
+    lastClickedAt: timestamp("last_clicked_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("link_clicks_tenant_course_idx").on(t.tenantId, t.courseId),
+    check("link_clicks_kind_chk", sql`${t.kind} in ('content','ecosystem')`),
+  ],
+);
+
+export type LinkClick = typeof linkClicks.$inferSelect;
+
 // Lead capture (email funnel). Tenant-scoped, one row per (tenant, email). Used by
 // the coming-soon landings and any "notify me" form, gated by flags.leadFunnel.
 export const leads = pgTable(

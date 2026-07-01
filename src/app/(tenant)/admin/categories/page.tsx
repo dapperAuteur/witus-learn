@@ -24,7 +24,13 @@ export default async function CategoriesAdminPage() {
         category in its settings.
       </p>
       <div className="mt-6">
-        <CategoryManager categories={categories.map((c) => ({ id: c.id, name: c.name }))} />
+        <CategoryManager
+          categories={categories.map((c) => ({
+            id: c.id,
+            name: c.name,
+            ecosystemProductSlug: c.ecosystemProductSlug,
+          }))}
+        />
       </div>
     </main>
   );

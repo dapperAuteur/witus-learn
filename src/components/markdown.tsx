@@ -1,10 +1,15 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { trackedHref, type LinkContext } from "@/lib/tracked-link";
 
 // Safe markdown renderer (no raw HTML injection) with GFM (tables, etc.). Styled
 // inline so it works without the typography plugin. Used for lesson text so authored
 // content renders formatted instead of showing raw # and *.
-export function Markdown({ children }: { children: string }) {
+//
+// When `linkContext` (a courseId, optionally a lessonId) is supplied, external links are
+// rewritten through /api/link/click so the instructor sees click counts. Without it, links
+// render verbatim (e.g. previews, non-course content).
+export function Markdown({ children, linkContext }: { children: string; linkContext?: LinkContext }) {
   return (
     <div className="text-neutral-800 dark:text-neutral-200">
       <ReactMarkdown
@@ -21,7 +26,13 @@ export function Markdown({ children }: { children: string }) {
           strong: ({ children }) => <strong className="font-semibold">{children}</strong>,
           em: ({ children }) => <em className="italic">{children}</em>,
           a: ({ children, href }) => (
-            <a href={href} className="underline" style={{ color: "var(--accent)" }} target="_blank" rel="noreferrer">
+            <a
+              href={linkContext ? trackedHref(href, linkContext) : href}
+              className="underline"
+              style={{ color: "var(--accent)" }}
+              target="_blank"
+              rel="noreferrer"
+            >
               {children}
             </a>
           ),

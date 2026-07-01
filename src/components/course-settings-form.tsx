@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { estimatedFee, estimatedNet } from "@/lib/fees";
+import { CROSS_PROMO_PRODUCTS } from "@/lib/ecosystem";
 
 export interface CourseSettings {
   title: string;
@@ -21,6 +22,8 @@ export interface CourseSettings {
   price: number;
   /** For subscriptions: "month" | "year". */
   billingInterval: "month" | "year" | null;
+  /** Cross-promotion: 0–3 WitUS ecosystem product slugs shown as a "Related tools" card. */
+  relatedProducts: string[];
 }
 
 // Edit course settings (PATCH /api/courses/[id]). isFeatured is platform-owner only
@@ -117,6 +120,38 @@ export function CourseSettingsForm({
           </select>
         </div>
       </div>
+
+      <fieldset className="rounded-md border border-neutral-200 p-3 dark:border-neutral-800">
+        <legend className="px-1 text-sm font-medium">Related WitUS tools (cross-promotion)</legend>
+        <p className="text-xs text-neutral-500">
+          Optionally surface up to 3 sibling apps as a small labeled card on this course page.
+          Off by default; only shown on WitUS-branded domains.
+        </p>
+        <div className="mt-2 grid gap-1.5 sm:grid-cols-2">
+          {CROSS_PROMO_PRODUCTS.map((p) => {
+            const checked = v.relatedProducts.includes(p.slug);
+            const atLimit = v.relatedProducts.length >= 3;
+            return (
+              <label key={p.slug} className="flex items-center gap-2 text-sm">
+                <input
+                  type="checkbox"
+                  checked={checked}
+                  disabled={!checked && atLimit}
+                  onChange={(e) =>
+                    set(
+                      "relatedProducts",
+                      e.target.checked
+                        ? [...v.relatedProducts, p.slug]
+                        : v.relatedProducts.filter((s) => s !== p.slug),
+                    )
+                  }
+                />
+                {p.name}
+              </label>
+            );
+          })}
+        </div>
+      </fieldset>
 
       <div className="rounded-md border border-neutral-200 p-3 dark:border-neutral-800">
         <label className="text-sm font-medium" htmlFor="cs-pricetype">Pricing</label>

@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { CROSS_PROMO_PRODUCTS } from "@/lib/ecosystem";
 
 export interface ManagedCategory {
   id: string;
   name: string;
+  ecosystemProductSlug: string | null;
 }
 
 // Admin CRUD for course categories: add, rename (inline), delete. Renaming moves its courses
@@ -29,7 +31,7 @@ export function CategoryManager({ categories }: { categories: ManagedCategory[] 
     });
     const data = await r.json().catch(() => ({}));
     if (r.ok) {
-      setRows((p) => [...p, { id: data.category.id, name: data.category.name }]);
+      setRows((p) => [...p, { id: data.category.id, name: data.category.name, ecosystemProductSlug: null }]);
       setNewName("");
       router.refresh();
     } else {
@@ -50,6 +52,18 @@ export function CategoryManager({ categories }: { categories: ManagedCategory[] 
       setRows((p) => p.map((c) => (c.id === id ? { ...c, name: next.trim() } : c)));
       router.refresh();
     }
+  }
+
+  async function setEcosystem(id: string, slug: string) {
+    const value = slug || null;
+    // optimistic
+    setRows((p) => p.map((c) => (c.id === id ? { ...c, ecosystemProductSlug: value } : c)));
+    await fetch(`/api/admin/categories/${id}`, {
+      method: "PATCH",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ ecosystemProductSlug: value }),
+    });
+    router.refresh();
   }
 
   async function remove(id: string, name: string) {
@@ -86,9 +100,24 @@ export function CategoryManager({ categories }: { categories: ManagedCategory[] 
       ) : (
         <ul className="divide-y divide-neutral-200 rounded-lg border border-neutral-200 dark:divide-neutral-800 dark:border-neutral-800">
           {rows.map((c) => (
-            <li key={c.id} className="flex items-center justify-between gap-3 p-3">
+            <li key={c.id} className="flex flex-wrap items-center justify-between gap-3 p-3">
               <span className="font-medium">{c.name}</span>
-              <span className="flex gap-3 text-sm">
+              <span className="flex flex-wrap items-center gap-3 text-sm">
+                <label className="flex items-center gap-1.5 text-xs text-neutral-500">
+                  Cross-promo
+                  <select
+                    value={c.ecosystemProductSlug ?? ""}
+                    onChange={(e) => setEcosystem(c.id, e.target.value)}
+                    className="min-h-8 rounded-md border border-neutral-300 px-2 text-sm dark:border-neutral-700 dark:bg-neutral-900"
+                  >
+                    <option value="">None</option>
+                    {CROSS_PROMO_PRODUCTS.map((p) => (
+                      <option key={p.slug} value={p.slug}>
+                        {p.name}
+                      </option>
+                    ))}
+                  </select>
+                </label>
                 <button type="button" onClick={() => rename(c.id, c.name)} className="underline">
                   Rename
                 </button>

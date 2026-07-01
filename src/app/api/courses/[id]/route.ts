@@ -33,6 +33,8 @@ const PatchSchema = z.object({
   priceType: z.enum(["free", "one_time", "subscription"]).optional(),
   price: z.number().min(0).max(100000).optional(),
   billingInterval: z.enum(["month", "year"]).nullable().optional(),
+  // Cross-promotion: 0–3 ecosystem product slugs curated for this course.
+  relatedProducts: z.array(z.string().max(60)).max(3).nullable().optional(),
   // Admin-only (stripped below for non-admins)
   isFeatured: z.boolean().optional(),
   featuredOrder: z.number().int().nullable().optional(),
