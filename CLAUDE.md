@@ -55,6 +55,15 @@ consolidate them into one `bundle/<slug>-YYYY-MM-DD` branch before handoff: merg
 order with `git merge --no-ff` (no squash), resolve conflicts, run a final `tsc + lint + build`,
 push, and file ONE `./plans/user-tasks/NN-merge-bundle-<slug>.md` for BAM. BAM does one merge, not N.
 
+**Half 3b — one bundle for EVERYTHING unmerged (on request or at handoff).** When BAM asks (or before
+ending a multi-branch session), create ONE `bundle/pending-YYYY-MM-DD` branch off the current
+`origin/main` and merge **every branch not yet in `main`** into it — `git branch --no-merged origin/main`
+lists them. Merge with `git merge --no-ff` in lowest-conflict order (branches that stack on another,
+and any carrying migrations, go first), **resolve ALL conflicts** so the bundle is conflict-free,
+then `tsc + lint + build` must pass before pushing. The result is a single branch BAM can merge with
+zero conflicts. In the handoff, spell out **exactly which migration/db commands to run after merge**
+(the ordered list of new migrations + `pnpm db:migrate:prod`, plus any `seed:*` re-runs).
+
 A checked-in `.githooks/pre-commit` guard refuses commits on `main`/`master`. Activate once per
 clone: `git config core.hooksPath .githooks`. Full rule: `gemini/witus/CLAUDE.md` §"Branch-hygiene rule".
 
@@ -64,6 +73,20 @@ All implementation plans live in `./plans/` as `NN-description.md` (two-digit pr
 next number, don't skip). Sub-queues: `./plans/user-tasks/`, `./plans/bugs/`, `./plans/future/`.
 `plans/` is gitignored — local working notes. Durable, committed planning lives in `docs/`
 (e.g. `docs/BUILD_PLAN.md`).
+
+## App-improvements review rule — check `./plans/app-improvements/` at both ends of a task
+
+`./plans/app-improvements/` is BAM's live product backlog — he drops feature notes and bug reports
+there as `*.md` (e.g. `course-experience.md`, `live.md`, `pricing.md`). Treat it as authoritative:
+- **Before writing code**, read the directory so new/updated notes inform the work.
+- **After finishing all changes** in a session, review it again and **ask BAM** whether he wants to
+  (a) implement any outstanding notes now, or (b) have you review the ones he picks and propose
+  **3 distinct implementation/resolution ideas** for each.
+- **When a branch's work is complete**, move each fully-shipped note into
+  `./plans/app-improvements/completed/` (create the subdir if needed) so the top level always lists
+  only OUTSTANDING work. `plans/` is gitignored → this is a local `mv`, not a commit. Leave partial
+  notes and reference docs (`00-report-and-plan.md`) at the top level.
+A note isn't "done" until its behavior ships and the roadmap (`src/lib/roadmap.ts`) reflects it.
 
 ## Docs & roadmap maintenance — keep them current as the app grows
 

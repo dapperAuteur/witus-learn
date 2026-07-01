@@ -162,20 +162,22 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
                                 {info.records.length > 1 ? "An apex domain works with EITHER the A or the CNAME — " : ""}
                                 use whatever your host (e.g. Vercel) shows for this domain.
                               </p>
-                              <table className="mt-1 w-full text-xs">
-                                <thead className="text-neutral-400">
-                                  <tr className="text-left"><th className="pr-3 font-normal">Type</th><th className="pr-3 font-normal">Name</th><th className="font-normal">Value</th></tr>
-                                </thead>
-                                <tbody className="font-mono">
-                                  {info.records.map((rec, i) => (
-                                    <tr key={i}>
-                                      <td className="pr-3 align-top">{rec.type}</td>
-                                      <td className="pr-2 align-top"><Copyable value={rec.name} /></td>
-                                      <td className="align-top"><Copyable value={rec.value} /></td>
-                                    </tr>
-                                  ))}
-                                </tbody>
-                              </table>
+                              <div className="mt-1 overflow-x-auto">
+                                <table className="w-full text-xs">
+                                  <thead className="text-neutral-400">
+                                    <tr className="text-left"><th className="pr-3 font-normal">Type</th><th className="pr-3 font-normal">Name</th><th className="font-normal">Value</th></tr>
+                                  </thead>
+                                  <tbody className="font-mono">
+                                    {info.records.map((rec, i) => (
+                                      <tr key={i}>
+                                        <td className="pr-3 align-top">{rec.type}</td>
+                                        <td className="pr-2 align-top"><Copyable value={rec.name} /></td>
+                                        <td className="align-top"><Copyable value={rec.value} /></td>
+                                      </tr>
+                                    ))}
+                                  </tbody>
+                                </table>
+                              </div>
                             </div>
                           ) : null}
                         </div>

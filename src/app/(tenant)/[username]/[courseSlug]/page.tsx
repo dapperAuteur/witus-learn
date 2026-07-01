@@ -5,7 +5,9 @@ import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
 import { isWitusBrandedHost } from "@/lib/witus-host";
 import { trackedHref } from "@/lib/tracked-link";
+import { ogImageUrl } from "@/lib/og";
 import { RelatedTools } from "@/components/related-tools";
+import { ShareButton } from "@/components/share-button";
 import { lessonAccess, isFreeCourse } from "@/lib/gating";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
 import { listLiveForCourse } from "@/db/queries/live";
@@ -25,7 +27,19 @@ type Params = { params: Promise<{ username: string; courseSlug: string }> };
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { username, courseSlug } = await params;
   const view = await loadCourseView(username, courseSlug);
-  return { title: view?.course.title ?? "Course" };
+  if (!view) return { title: "Course" };
+  const { course, tenant } = view;
+  const brand = brandName(tenant);
+  const description = course.description ?? `${course.title} — a course on ${brand}.`;
+  const subtitle = course.category ?? course.seriesTitle ?? undefined;
+  const image = ogImageUrl({ title: course.title, subtitle });
+  // Page-relevant preview card + description so a shared course link shows its own title/summary.
+  return {
+    title: course.title,
+    description,
+    openGraph: { type: "article", title: course.title, description, images: [image] },
+    twitter: { card: "summary_large_image", title: course.title, description, images: [image] },
+  };
 }
 
 // Canonical pretty URL: /{instructor-username}/{course-slug}. Tenant + username
@@ -124,13 +138,33 @@ export default async function CourseBySlugPage({ params }: Params) {
 
   const ungrouped = lessons.filter((l) => !l.moduleId);
 
+  // Course structured data for search engines (only for publicly-visible courses).
+  const jsonLd =
+    course.isPublished && course.visibility !== "private"
+      ? {
+          "@context": "https://schema.org",
+          "@type": "Course",
+          name: course.title,
+          description: course.description ?? `${course.title} — a course on ${brandName(view.tenant)}.`,
+          provider: { "@type": "Organization", name: brandName(view.tenant) },
+        }
+      : null;
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
+      {jsonLd ? (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      ) : null}
       <Link href="/" className="text-sm text-neutral-500 hover:underline">
         ← Back to catalog
       </Link>
       {meta ? <p className="mt-6 text-xs uppercase tracking-wide text-neutral-500">{meta}</p> : null}
-      <h1 className="mt-1 text-3xl font-bold">{course.title}</h1>
+      <div className="mt-1 flex items-start justify-between gap-3">
+        <h1 className="text-3xl font-bold">{course.title}</h1>
+        {course.isPublished && course.visibility !== "private" ? (
+          <ShareButton title={course.title} text={course.description ?? undefined} label="Share course" courseId={course.id} />
+        ) : null}
+      </div>
       <p className="mt-1 text-sm text-neutral-500">
         by{" "}
         <Link href={`/instructors/${username}`} className="hover:underline">

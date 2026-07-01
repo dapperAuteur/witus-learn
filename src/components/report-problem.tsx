@@ -3,11 +3,11 @@
 import { useState } from "react";
 
 // A small fixed "Report a problem" button on every page → a popover form that POSTs to
-// /api/report (bug / idea / other + message + optional email). Captures the current URL so
-// the admin sees where it was filed from. Works signed-in or anonymous.
+// /api/report (bug / feedback / idea / other + message + optional email). Captures the current URL
+// so the admin sees where it was filed from. Works signed-in or anonymous.
 export function ReportProblem() {
   const [open, setOpen] = useState(false);
-  const [kind, setKind] = useState<"bug" | "idea" | "other">("bug");
+  const [kind, setKind] = useState<"bug" | "feedback" | "idea" | "other">("bug");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
@@ -55,12 +55,13 @@ export function ReportProblem() {
               ✕
             </button>
           </div>
-          <div className="mb-2 flex gap-1 text-xs">
-            {(["bug", "idea", "other"] as const).map((k) => (
+          <div role="group" aria-label="Report type" className="mb-2 flex gap-1 text-xs">
+            {(["bug", "feedback", "idea", "other"] as const).map((k) => (
               <button
                 key={k}
                 type="button"
                 onClick={() => setKind(k)}
+                aria-pressed={kind === k}
                 className={`rounded-full px-2 py-1 capitalize ${kind === k ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-black" : "bg-neutral-100 dark:bg-neutral-800"}`}
               >
                 {k}
@@ -74,6 +75,7 @@ export function ReportProblem() {
             minLength={3}
             maxLength={4000}
             rows={4}
+            aria-label="Describe the problem or idea"
             placeholder="What went wrong, or what would help?"
             className="w-full rounded-md border border-neutral-300 p-2 text-sm dark:border-neutral-700 dark:bg-neutral-900"
           />
@@ -81,6 +83,7 @@ export function ReportProblem() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            aria-label="Your email (optional)"
             placeholder="Email (optional, if you'd like a reply)"
             className="mt-2 w-full rounded-md border border-neutral-300 p-2 text-sm dark:border-neutral-700 dark:bg-neutral-900"
           />

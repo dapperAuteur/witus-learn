@@ -1,11 +1,16 @@
 import type { Metadata, Viewport } from "next";
+import { headers } from "next/headers";
 import { resolveTenant } from "@/lib/tenant";
 import { tenantMetadata, tenantViewport } from "@/lib/branding";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
 import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
-  return tenantMetadata(await resolveTenant());
+  const h = await headers();
+  const host = h.get("x-forwarded-host") || h.get("host");
+  const proto = h.get("x-forwarded-proto") || "https";
+  const baseUrl = host ? `${proto}://${host}` : null;
+  return tenantMetadata(await resolveTenant(), baseUrl);
 }
 
 export async function generateViewport(): Promise<Viewport> {

@@ -160,6 +160,9 @@ export const lessons = pgTable(
 
     // Format-specific payloads (used by the Phase 4 lesson players)
     quizContent: jsonb("quiz_content"),
+    // Active-recall prompts: [{ prompt, answer }]. Rendered as click-to-reveal cards with a
+    // self-grade ("I got it" / "Missed it"), so learners test themselves in-lesson before the quiz.
+    recallContent: jsonb("recall_content").$type<{ prompt: string; answer: string }[]>(),
     exerciseContent: jsonb("exercise_content"),
     audioChapters: jsonb("audio_chapters"),
     transcriptContent: jsonb("transcript_content"),

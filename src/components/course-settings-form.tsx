@@ -33,12 +33,15 @@ export function CourseSettingsForm({
   initial,
   canFeature,
   categories = [],
+  hasStripe = true,
 }: {
   courseId: string;
   initial: CourseSettings;
   canFeature: boolean;
   /** This school's category names, offered as suggestions on the Category field. */
   categories?: string[];
+  /** Whether Stripe is configured — when false, paid courses can't be purchased yet. */
+  hasStripe?: boolean;
 }) {
   const router = useRouter();
   const [v, setV] = useState<CourseSettings>(initial);
@@ -155,6 +158,12 @@ export function CourseSettingsForm({
 
       <div className="rounded-md border border-neutral-200 p-3 dark:border-neutral-800">
         <label className="text-sm font-medium" htmlFor="cs-pricetype">Pricing</label>
+        {!hasStripe && v.priceType !== "free" ? (
+          <p className="mt-1 rounded-md border border-amber-400 bg-amber-50 px-2 py-1.5 text-xs text-amber-800 dark:border-amber-600 dark:bg-amber-950/40 dark:text-amber-300">
+            ⚠️ Stripe isn’t configured, so learners can’t actually purchase a paid course yet —
+            checkout will fail. Set the Stripe keys before publishing this as paid.
+          </p>
+        ) : null}
         <div className="mt-1 grid gap-3 sm:grid-cols-2">
           <select
             id="cs-pricetype"

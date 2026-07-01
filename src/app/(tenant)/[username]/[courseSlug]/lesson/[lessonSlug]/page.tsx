@@ -5,6 +5,7 @@ import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, type LessonLockReason } from "@/lib/gating";
 import { LessonPlayer } from "@/components/lesson-player";
 import { MarkCompleteButton } from "@/components/mark-complete-button";
+import { RecallPlayer } from "@/components/recall-player";
 import { ProgressBar } from "@/components/progress-bits";
 import { CurriculumFeedback } from "@/components/curriculum-feedback";
 import { AssignmentSubmit } from "@/components/assignment-submit";
@@ -14,8 +15,10 @@ import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { MetricsTrackerCta } from "@/components/metrics-tracker-cta";
 import { SaveOfflineButton } from "@/components/save-offline-button";
+import { ShareButton } from "@/components/share-button";
 import { isDirectMediaFile } from "@/lib/media";
 import { brandName } from "@/lib/branding";
+import { ogImageUrl } from "@/lib/og";
 
 type Params = {
   params: Promise<{ username: string; courseSlug: string; lessonSlug: string }>;
@@ -24,7 +27,16 @@ type Params = {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { username, courseSlug, lessonSlug } = await params;
   const view = await loadCourseView(username, courseSlug);
-  return { title: view?.lessons.find((l) => l.slug === lessonSlug)?.title ?? "Lesson" };
+  const lesson = view?.lessons.find((l) => l.slug === lessonSlug);
+  if (!view || !lesson) return { title: "Lesson" };
+  const description = `${lesson.title} — part of ${view.course.title}.`;
+  const image = ogImageUrl({ title: lesson.title, subtitle: view.course.title });
+  return {
+    title: lesson.title,
+    description,
+    openGraph: { type: "article", title: lesson.title, description, images: [image] },
+    twitter: { card: "summary_large_image", title: lesson.title, description, images: [image] },
+  };
 }
 
 const LOCK_COPY: Record<LessonLockReason, string> = {
@@ -139,7 +151,12 @@ export default async function LessonPage({ params }: Params) {
 
         {/* Main lesson column. */}
         <main className="min-w-0 flex-1">
-          <h1 className="text-2xl font-bold tracking-tight">{lesson.title}</h1>
+          <div className="flex items-start justify-between gap-3">
+            <h1 className="text-2xl font-bold tracking-tight">{lesson.title}</h1>
+            {view.course.isPublished && view.course.visibility !== "private" ? (
+              <ShareButton title={`${lesson.title} — ${view.course.title}`} label="Share" courseId={view.course.id} lessonId={lesson.id} />
+            ) : null}
+          </div>
 
           <div className="mt-6">
             {access.open ? (
@@ -151,9 +168,18 @@ export default async function LessonPage({ params }: Params) {
               <SaveOfflineButton url={lesson.contentUrl} />
             ) : null}
             {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
+            {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 ? (
+              <RecallPlayer courseId={view.course.id} lessonId={lesson.id} items={lesson.recallContent} />
+            ) : null}
             <div className="mt-6">
               {view.session ? (
-                <MarkCompleteButton courseId={view.course.id} lessonId={lesson.id} completed={completed} />
+                <MarkCompleteButton
+                  courseId={view.course.id}
+                  lessonId={lesson.id}
+                  completed={completed}
+                  isLinear={view.course.navigationMode !== "cyoa"}
+                  nextHref={next ? `${base}/lesson/${next.slug}` : null}
+                />
               ) : (
                 <Link href="/login" className="text-sm underline">
                   Sign in to track your progress

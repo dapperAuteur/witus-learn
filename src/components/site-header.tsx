@@ -5,6 +5,7 @@ import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { listCategories } from "@/db/queries/catalog";
 import { SignOutButton } from "./sign-out-button";
 import { ThemeToggle } from "./theme-toggle";
+import { MobileNav, type NavItem } from "./mobile-nav";
 
 // Brand-aware academy header. Nav is driven by the tenant's feature flags — not a
 // fixed CentOS module nav. Accent color comes from the --accent CSS var set by the
@@ -24,6 +25,21 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   const hasCivics = categories.some((c) => c.name === "Civics");
   const hasLanguages = categories.some((c) => c.name === "Languages");
 
+  // One nav model, rendered inline on desktop and in a hamburger drawer on mobile.
+  const items: NavItem[] = [
+    { href: "/courses", label: "Browse Catalog" },
+    { href: "/live", label: "Live" },
+    ...(hasCivics ? [{ href: "/civics", label: "Civics" }] : []),
+    ...(hasLanguages ? [{ href: "/languages", label: "Languages" }] : []),
+    ...(flags.commodityMap ? [{ href: "/explore", label: "Explore" }] : []),
+    ...(flags.paths ? [{ href: "/paths", label: "Paths" }] : []),
+    { href: "/instructors", label: "Instructors" },
+    ...(session && canTeach ? [{ href: "/teach", label: "Teach", accent: true }] : []),
+    ...(session && canTeach ? [{ href: "/help", label: "Help" }] : []),
+    ...(session && canAdmin ? [{ href: "/admin", label: "Admin", accent: true }] : []),
+    ...(session ? [{ href: "/my-courses", label: "My Courses" }] : []),
+  ];
+
   return (
     <header className="border-b border-neutral-200 dark:border-neutral-800">
       <nav className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
@@ -34,86 +50,31 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
         >
           {tenant.theme.wordmark ?? brandName(tenant)}
         </Link>
-        <ul className="flex items-center gap-4 text-sm">
-          <li>
-            <ThemeToggle />
-          </li>
-          <li>
-            <Link className="hover:underline" href="/courses">
-              Browse Catalog
-            </Link>
-          </li>
-          <li>
-            <Link className="hover:underline" href="/live">
-              Live
-            </Link>
-          </li>
-          {hasCivics ? (
-            <li>
-              <Link className="hover:underline" href="/civics">
-                Civics
-              </Link>
-            </li>
-          ) : null}
-          {hasLanguages ? (
-            <li>
-              <Link className="hover:underline" href="/languages">
-                Languages
-              </Link>
-            </li>
-          ) : null}
-          {flags.commodityMap ? (
-            <li>
-              <Link className="hover:underline" href="/explore">
-                Explore
-              </Link>
-            </li>
-          ) : null}
-          {flags.paths ? (
-            <li>
-              <Link className="hover:underline" href="/paths">
-                Paths
-              </Link>
-            </li>
-          ) : null}
-          <li>
-            <Link className="hover:underline" href="/instructors">
-              Instructors
-            </Link>
-          </li>
-          {session ? (
-            <>
-              {canTeach ? (
-                <li>
-                  <Link className="font-medium hover:underline" style={{ color: "var(--accent)" }} href="/teach">
-                    Teach
-                  </Link>
-                </li>
-              ) : null}
-              {canAdmin ? (
-                <li>
-                  <Link className="font-medium hover:underline" style={{ color: "var(--accent)" }} href="/admin">
-                    Admin
-                  </Link>
-                </li>
-              ) : null}
-              <li>
-                <Link className="hover:underline" href="/my-courses">
-                  My Courses
+
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+
+          {/* Desktop: inline links */}
+          <ul className="hidden items-center gap-4 text-sm md:flex">
+            {items.map((i) => (
+              <li key={i.href}>
+                <Link
+                  className={`hover:underline ${i.accent ? "font-medium" : ""}`}
+                  style={i.accent ? { color: "var(--accent)" } : undefined}
+                  href={i.href}
+                >
+                  {i.label}
                 </Link>
               </li>
-              <li>
-                <SignOutButton />
-              </li>
-            </>
-          ) : (
-            <li>
-              <Link className="hover:underline" href="/login">
-                Sign in
-              </Link>
-            </li>
-          )}
-        </ul>
+            ))}
+            <li>{session ? <SignOutButton /> : <Link className="hover:underline" href="/login">Sign in</Link>}</li>
+          </ul>
+
+          {/* Mobile: hamburger drawer */}
+          <div className="md:hidden">
+            <MobileNav items={items} signedIn={Boolean(session)} />
+          </div>
+        </div>
       </nav>
     </header>
   );

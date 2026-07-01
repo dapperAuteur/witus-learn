@@ -21,7 +21,7 @@ export default async function PathsAdminPage() {
   );
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-10">
+    <main className="max-w-3xl py-10">
       <h1 className="text-2xl font-bold">Learning paths</h1>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Curate ordered tracks of courses. Learners see them at <code>/paths</code> (the school needs

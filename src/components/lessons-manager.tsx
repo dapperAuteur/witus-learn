@@ -21,6 +21,19 @@ export interface ManagedLesson {
   /** Raw jsonb from the DB; parsed on the client for the chapter/transcript editors. */
   audioChapters: unknown;
   transcriptContent: unknown;
+  recallContent: unknown;
+}
+
+interface RecallItem {
+  prompt: string;
+  answer: string;
+}
+
+function parseRecall(value: unknown): RecallItem[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .filter((v): v is RecallItem => Boolean(v) && typeof v === "object" && "prompt" in v && "answer" in v)
+    .map((v) => ({ prompt: String(v.prompt), answer: String(v.answer) }));
 }
 
 const EDITABLE_TYPES = ["text", "video", "audio", "slides"];
@@ -151,6 +164,7 @@ function LessonEditor({
   const [freePreview, setFreePreview] = useState(lesson.isFreePreview);
   const [chapters, setChapters] = useState<Chapter[]>(parseChapters(lesson.audioChapters));
   const [transcript, setTranscript] = useState<TranscriptSegment[]>(parseTranscript(lesson.transcriptContent));
+  const [recall, setRecall] = useState<RecallItem[]>(parseRecall(lesson.recallContent));
   const [srtInfo, setSrtInfo] = useState<string | null>(null);
   const isMedia = lessonType === "video" || lessonType === "audio" || lessonType === "slides";
   const accept = lessonType === "video" ? "video/*" : lessonType === "audio" ? "audio/*" : "application/pdf,image/*";
@@ -218,6 +232,55 @@ function LessonEditor({
       ) : null}
 
       <MarkdownEditor value={body} onChange={setBody} rows={8} placeholder={isMedia ? "Optional notes / transcript shown with the media." : undefined} />
+
+      {/* Active-recall prompts: click-to-reveal + self-grade cards shown in the lesson. */}
+      <div className="rounded-md border border-neutral-200 p-2 dark:border-neutral-800">
+        <div className="flex items-center justify-between">
+          <span className="text-sm font-medium">Quick recall prompts</span>
+          <button
+            type="button"
+            onClick={() => setRecall((r) => [...r, { prompt: "", answer: "" }])}
+            className="min-h-8 rounded-md border border-neutral-300 px-2 text-xs dark:border-neutral-700"
+          >
+            + Add prompt
+          </button>
+        </div>
+        {recall.length === 0 ? (
+          <p className="mt-1 text-xs text-neutral-500">
+            Optional. Add question/answer pairs; learners test themselves before the quiz.
+          </p>
+        ) : (
+          <ul className="mt-2 space-y-2">
+            {recall.map((item, i) => (
+              <li key={i} className="rounded-md bg-white p-2 dark:bg-neutral-900">
+                <input
+                  value={item.prompt}
+                  onChange={(e) => setRecall((r) => r.map((x, j) => (j === i ? { ...x, prompt: e.target.value } : x)))}
+                  placeholder="Question / prompt"
+                  aria-label={`Recall prompt ${i + 1}`}
+                  className="min-h-9 w-full rounded-md border border-neutral-300 px-2 text-sm dark:border-neutral-700 dark:bg-neutral-900"
+                />
+                <textarea
+                  value={item.answer}
+                  onChange={(e) => setRecall((r) => r.map((x, j) => (j === i ? { ...x, answer: e.target.value } : x)))}
+                  placeholder="Answer (revealed on click)"
+                  aria-label={`Recall answer ${i + 1}`}
+                  rows={2}
+                  className="mt-1 w-full rounded-md border border-neutral-300 px-2 py-1 text-sm dark:border-neutral-700 dark:bg-neutral-900"
+                />
+                <button
+                  type="button"
+                  onClick={() => setRecall((r) => r.filter((_, j) => j !== i))}
+                  className="mt-1 text-xs text-red-600 underline"
+                >
+                  Remove
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
       <label className="flex items-center gap-2 text-sm">
         <input type="checkbox" checked={freePreview} onChange={(e) => setFreePreview(e.target.checked)} /> Free preview
       </label>
@@ -231,6 +294,11 @@ function LessonEditor({
             textContent: body || null,
             contentUrl: isMedia ? contentUrl || null : null,
             isFreePreview: freePreview,
+            // Drop blank rows; null when none so the lesson shows no recall section.
+            recallContent: (() => {
+              const clean = recall.filter((r) => r.prompt.trim() && r.answer.trim());
+              return clean.length ? clean : null;
+            })(),
             ...(isMedia
               ? {
                   transcriptContent: transcript.length ? transcript : null,

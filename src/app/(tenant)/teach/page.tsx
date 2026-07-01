@@ -4,6 +4,7 @@ import { requireTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { listOwnCourses } from "@/db/queries/authoring";
+import { TeacherCatalog } from "@/components/teacher-catalog";
 import { createCourseAction } from "./actions";
 
 export const metadata: Metadata = { title: "Teach" };
@@ -49,7 +50,7 @@ export default async function TeachPage() {
   const courses = await listOwnCourses(tenant.id, session.user.id);
 
   return (
-    <main className="mx-auto max-w-3xl px-4 py-12">
+    <main className="mx-auto max-w-4xl px-4 py-12">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Your courses</h1>
         <div className="flex items-center gap-4 text-sm">
@@ -63,6 +64,9 @@ export default async function TeachPage() {
               Announce →
             </Link>
           ) : null}
+          <Link href="/help" className="underline" style={{ color: "var(--accent)" }}>
+            Help →
+          </Link>
           <Link href="/teach/profile" className="underline" style={{ color: "var(--accent)" }}>
             Edit profile →
           </Link>
@@ -102,51 +106,24 @@ export default async function TeachPage() {
         </button>
       </form>
 
-      <ul className="mt-8 space-y-2">
-        {courses.length === 0 ? (
-          <li className="rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-500 dark:border-neutral-700">
-            No courses yet.
-          </li>
-        ) : (
-          courses.map((c) => (
-            <li
-              key={c.id}
-              className="flex items-center justify-between gap-3 rounded-xl border border-neutral-200 px-4 py-3 transition hover:border-neutral-300 hover:shadow-sm dark:border-neutral-800 dark:hover:border-neutral-700"
-            >
-              <Link href={`/teach/${c.id}`} className="min-w-0 flex-1 truncate font-medium hover:underline">
-                {c.title}
-              </Link>
-              <div className="flex shrink-0 items-center gap-2">
-                {c.visibility === "private" ? (
-                  <span className="rounded-full bg-purple-100 px-2 py-0.5 text-xs text-purple-800 dark:bg-purple-900 dark:text-purple-200">
-                    🔒 Private
-                  </span>
-                ) : null}
-                {c.publishHoldReason ? (
-                  <span
-                    title={c.publishHoldReason}
-                    className="rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-800 dark:bg-amber-900 dark:text-amber-200"
-                  >
-                    ⚠️ On hold
-                  </span>
-                ) : null}
-                <span
-                  className={`rounded-full px-2 py-0.5 text-xs ${
-                    c.isPublished
-                      ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
-                      : "bg-neutral-200 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200"
-                  }`}
-                >
-                  {c.isPublished ? "Published" : "Draft"}
-                </span>
-                <Link href={`/teach/${c.id}`} className="text-sm underline" style={{ color: "var(--accent)" }}>
-                  Manage
-                </Link>
-              </div>
-            </li>
-          ))
-        )}
-      </ul>
+      {courses.length === 0 ? (
+        <p className="mt-8 rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-500 dark:border-neutral-700">
+          No courses yet.
+        </p>
+      ) : (
+        <TeacherCatalog
+          courses={courses.map((c) => ({
+            id: c.id,
+            title: c.title,
+            category: c.category,
+            isPublished: c.isPublished,
+            visibility: c.visibility,
+            publishHoldReason: c.publishHoldReason,
+            priceType: c.priceType,
+            price: Number(c.price ?? 0),
+          }))}
+        />
+      )}
     </main>
   );
 }
