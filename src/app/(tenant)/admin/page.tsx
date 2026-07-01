@@ -6,6 +6,7 @@ import { isPlatformOwner, requireBrandAdmin } from "@/lib/session";
 export const metadata: Metadata = { title: "Admin" };
 
 const CARDS: { href: string; title: string; desc: string; soon?: boolean; ownerOnly?: boolean }[] = [
+  { href: "/admin/dashboard", title: "Dashboard", desc: "Learner count, enrollments, completions, and the learner roster." },
   { href: "/admin/settings", title: "Brand settings", desc: "Accent, branding, gamification, AI tutor, age-gate, coming-soon." },
   { href: "/admin/domains", title: "Domains", desc: "Map a custom domain to your school." },
   { href: "/admin/marketing", title: "Marketing", desc: "Promo codes now; email campaigns soon." },
