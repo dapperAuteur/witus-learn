@@ -18,6 +18,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   in-app **problem reporter** (site-wide button → \`/admin/reports\` triage + WitUS Inbox mirror +
   \`reports:list\`); **category management** (\`/admin/categories\` add/rename/delete + settings picker);
   **admin dashboard** (\`/admin/dashboard\` — learners, enrollments, completions + learner roster).
+- 🔧 **LMS UX batch** (\`bundle/lms-ux-2026-07-01\`) — **upload hardening** for the 100MB Cloudinary
+  cap (shared chunked \`uploadToCloudinary\` + size guard; recorder live-size + auto-stop; "Stripe
+  not configured" banner); **teacher catalog** (\`/teach\` fuzzy search + status filters + bulk
+  publish/unpublish/reprice + quick toggle); **learner progress groups** on \`/my-courses\`
+  (in-progress / not-started / completed). Backlog from this batch: **social sharing**
+  (share school/course/module) + **mobile-first** pass + admin sidebar shell.
 - 🔧 **Course-tooling suite** (\`bundle/course-tooling-2026-07-01\`) — **outbound-link click tracking**
   (privacy-light \`link_clicks\` counter + \`/api/link/click\` tracked redirect + teacher "Link usage"
   panel); **cross-promotion, 3 disclosed/opt-in ways** (per-course "Related WitUS tools" card,
