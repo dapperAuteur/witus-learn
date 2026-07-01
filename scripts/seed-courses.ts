@@ -17,9 +17,16 @@ import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { AI_LITERACY_COURSE } from "./data/ai-literacy-course";
 import { AI_L1_ADVANCED_PROMPTING_COURSE } from "./data/ai-l1-advanced-prompting-course";
 import { AI_L2_DETECTING_AI_COURSE } from "./data/ai-l2-detecting-ai-course";
+import { AI_L3_ETHICS_COURSE } from "./data/ai-l3-ethics-course";
+import { AI_L4_PRIVACY_SECURITY_COURSE } from "./data/ai-l4-privacy-security-course";
+import { AI_L5_RESEARCHING_COURSE } from "./data/ai-l5-researching-course";
 import { AI_BUILDING_COURSE } from "./data/ai-building-course";
 import { AI_B1_PROMPT_ENGINEERING_COURSE } from "./data/ai-b1-prompt-engineering-course";
 import { AI_B2_AGENTS_COURSE } from "./data/ai-b2-agents-automations-course";
+import { AI_B3_RAG_COURSE } from "./data/ai-b3-rag-course";
+import { AI_B4_FINE_TUNING_COURSE } from "./data/ai-b4-fine-tuning-course";
+import { AI_B5_DEPLOYING_EVALUATING_COURSE } from "./data/ai-b5-deploying-evaluating-course";
+import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capstone-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 
@@ -239,6 +246,36 @@ async function main() {
     category: "AI & Technology",
     navigationMode: "linear",
   });
+  // L3 AI Ethics, Bias & Society — literacy ladder (for everyone, not code-heavy). Cited to
+  // NIST AI RMF + SP 1270, UNESCO AI ethics, the EU AI Act, fairmlbook, and the ACM Code.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-l3-ethics",
+    course: AI_L3_ETHICS_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // L4 Data Privacy & Security in the AI Age — literacy ladder. Cited to NIST Privacy/CSF,
+  // FTC, CISA, GDPR/CCPA, and OWASP LLM (sensitive-info disclosure).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-l4-privacy-security",
+    course: AI_L4_PRIVACY_SECURITY_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // L5 Researching with AI (Cited & Verified) — literacy ladder; the anti-hallucinated-
+  // citation course. Cited to NIST AI RMF, Stanford COR (lateral reading), APA Style, CRAAP.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-l5-researching",
+    course: AI_L5_RESEARCHING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
 
   // Learning How to Learn — the study-skills foundation, on Learn.WitUS
   // (cross-cutting; the meta-skill that makes every other course land). Cited to
@@ -316,6 +353,46 @@ async function main() {
     instructorId,
     slug: "ai-b2-agents-automations",
     course: AI_B2_AGENTS_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // B3 RAG & Working with Your Own Data — builder ladder. Cited to Lewis et al. (RAG),
+  // pgvector, OpenAI/Anthropic retrieval docs, and OWASP LLM (LLM08/LLM01).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-b3-rag",
+    course: AI_B3_RAG_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // B4 Fine-tuning & Model Basics — builder ladder. Cited to OpenAI/Anthropic fine-tuning
+  // docs, Hugging Face PEFT, the LoRA + InstructGPT papers, and NIST AI RMF.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-b4-fine-tuning",
+    course: AI_B4_FINE_TUNING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // B5 Deploying & Evaluating AI Apps (LLMOps) — builder ladder. Cited to NIST AI RMF +
+  // GenAI Profile, OWASP LLM Top 10, OpenAI/Anthropic evals + production docs, Google PAIR.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-b5-deploying-evaluating",
+    course: AI_B5_DEPLOYING_EVALUATING_COURSE,
+    category: "AI & Technology",
+    navigationMode: "linear",
+  });
+  // B6 AI Product: Idea to Shipped Tool (Builder-track CAPSTONE) — synthesizes F2 + B1–B5.
+  // Cited to Anthropic "Building Effective Agents", NIST AI RMF, OWASP, Google PAIR.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "ai-b6-ai-product-capstone",
+    course: AI_B6_AI_PRODUCT_CAPSTONE_COURSE,
     category: "AI & Technology",
     navigationMode: "linear",
   });
