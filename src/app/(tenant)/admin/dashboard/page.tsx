@@ -29,7 +29,7 @@ export default async function AdminDashboardPage() {
   ];
 
   return (
-    <main className="mx-auto max-w-5xl px-4 py-10">
+    <main className="py-10">
       <Link href="/admin" className="text-sm underline" style={{ color: "var(--accent)" }}>
         ← Admin
       </Link>

@@ -17,6 +17,7 @@ import { SaveOfflineButton } from "@/components/save-offline-button";
 import { ShareButton } from "@/components/share-button";
 import { isDirectMediaFile } from "@/lib/media";
 import { brandName } from "@/lib/branding";
+import { ogImageUrl } from "@/lib/og";
 
 type Params = {
   params: Promise<{ username: string; courseSlug: string; lessonSlug: string }>;
@@ -25,7 +26,16 @@ type Params = {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { username, courseSlug, lessonSlug } = await params;
   const view = await loadCourseView(username, courseSlug);
-  return { title: view?.lessons.find((l) => l.slug === lessonSlug)?.title ?? "Lesson" };
+  const lesson = view?.lessons.find((l) => l.slug === lessonSlug);
+  if (!view || !lesson) return { title: "Lesson" };
+  const description = `${lesson.title} — part of ${view.course.title}.`;
+  const image = ogImageUrl({ title: lesson.title, subtitle: view.course.title });
+  return {
+    title: lesson.title,
+    description,
+    openGraph: { type: "article", title: lesson.title, description, images: [image] },
+    twitter: { card: "summary_large_image", title: lesson.title, description, images: [image] },
+  };
 }
 
 const LOCK_COPY: Record<LessonLockReason, string> = {
