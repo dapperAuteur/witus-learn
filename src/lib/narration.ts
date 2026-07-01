@@ -22,7 +22,7 @@ export function markdownToNarration(md: string, opts: NarrationOptions = {}): st
   }
 
   const out: string[] = [];
-  for (let rawLine of text.split("\n")) {
+  for (const rawLine of text.split("\n")) {
     let line = rawLine;
 
     // Skip markdown table separator rows (|---|---|).
