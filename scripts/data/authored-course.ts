@@ -22,6 +22,11 @@ export interface AuthoredLesson {
   exercise?: ExerciseContent;
   /** When set, this lesson is a MAP (markers/lines/polygons); body becomes context text. */
   mapContent?: unknown;
+  /** Active-recall cards shown in the lesson (click-to-reveal + self-grade). Use these
+   *  instead of spelling a recall answer out in the body — the answer stays hidden until
+   *  the learner reveals it. Renders via <RecallPlayer>; grades feed the teacher's
+   *  recall-accuracy panel. Pairs with a `body` (a recall lesson is still a text lesson). */
+  recallContent?: { prompt: string; answer: string }[];
 }
 
 export interface AuthoredCourse {

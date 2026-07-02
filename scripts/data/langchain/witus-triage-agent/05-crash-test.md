@@ -1,16 +1,14 @@
 Goal: After this lesson you can reproduce the core failure of human-in-the-loop agents: a worker restart under the default in-memory checkpointer destroys a paused thread.
 
-Follow along in the notebook: `durable-hitl-quickstart.ipynb`, Lesson 1 cells. This module is Python. The pattern is identical in the TypeScript agent from Module 1; only the syntax changes.
+Follow along in the [durable-HITL quickstart notebook](https://github.com/dapperAuteur/witus-triage-agent/blob/main/docs/course/module-0-durable-hitl/durable-hitl-quickstart.ipynb) (Lesson 1 cells), in the [WitUS Triage Agent repo](https://github.com/dapperAuteur/witus-triage-agent). This module is Python. The pattern is identical in the TypeScript agent from Module 1; only the syntax changes.
 
 ## Where you are
 
-Module 1 built the Triage Agent and, in Lesson 3, a human gate: `interrupt()` pauses the graph, a checkpointer saves the paused state, a later request resumes it. We took "the checkpointer saves the state" on faith. This module makes you earn it. We crash the process on purpose and watch what survives.
-
-One question to hold: in Module 1, what were we told persists a paused graph across a restart? The checkpointer. So the honest test of durability is to swap the checkpointer and see which one keeps a thread alive through a real crash. That is the whole module.
+Module 1 built the Triage Agent and, in Lesson 3, a human gate: `interrupt()` pauses the graph, a checkpointer saves the paused state, a later request resumes it. We took "the checkpointer saves the state" on faith. This module makes you earn it. We crash the process on purpose and watch what survives. The honest test of durability is to swap the checkpointer and see which one keeps a thread alive through a real crash. That's the whole module.
 
 ## The setup: a four-node graph that pauses
 
-The demo graph is a deliberately minimal triage: `intake → propose → human_approval → finalize`. The `human_approval` node calls `interrupt()`. There is no model call anywhere. Durability is a property of the checkpointer, not of the model, so an API key would only add friction. You can add a real model node later in one line, but the crash test does not need one.
+The demo graph is a deliberately minimal triage: `intake → propose → human_approval → finalize`. The `human_approval` node calls `interrupt()`. There's no model call anywhere. Durability is a property of the checkpointer, not of the model, so an API key would only add friction. You can add a real model node later in one line, but the crash test doesn't need one.
 
 ```python
 def human_approval(state: State) -> dict:
@@ -18,7 +16,7 @@ def human_approval(state: State) -> dict:
     return {"approval": decision}
 ```
 
-The graph is written to a file with `%%writefile` so that two separate Python processes can import it. This matters. A fake restart inside one process would not prove anything. We want two real processes: one that pauses and exits, and a brand-new one that tries to pick up where the first left off.
+The graph is written to a file with `%%writefile` so that two separate Python processes can import it. This matters. A fake restart inside one process wouldn't prove anything. We want two real processes: one that pauses and exits, and a brand-new one that tries to pick up where the first left off.
 
 ## The crash test with `MemorySaver`
 
@@ -39,13 +37,13 @@ X  STATE LOST: no checkpoint for thread 'crash-test-mem'
 
 ## Why the state is gone
 
-`MemorySaver` keeps every checkpoint in the first process's heap. That is what "in-memory" means. When process one exited, its heap went with it, and the paused approval died there. Process two starts with an empty checkpoint store, looks up `crash-test-mem`, and finds nothing to resume.
+`MemorySaver` keeps every checkpoint in the first process's heap. That's what "in-memory" means. When process one exited, its heap went with it, and the paused approval died there. Process two starts with an empty checkpoint store, looks up `crash-test-mem`, and finds nothing to resume.
 
 This is the gap no human-in-the-loop tutorial shows you. The tutorials demonstrate `interrupt()` and resume inside one long-lived process, where `MemorySaver` looks like it works. It does, right up until the process restarts, which in production it always eventually does: a deploy, a crash, an autoscaler killing an idle worker. Anything that holds a paused human request in process memory is one restart away from losing it.
 
 ## In practice
 
-The lesson is not "MemorySaver is bad." It is fine for tests and for graphs that never pause. The lesson is that durability across restarts is exactly the property `MemorySaver` does not have, and a human-in-the-loop pause is exactly the case that needs it. A human might take hours. Your process will not stay up for all of them. The next lesson closes the gap with a checkpointer that writes somewhere the crash cannot reach.
+The lesson isn't "MemorySaver is bad." It's fine for tests and for graphs that never pause. The lesson is that durability across restarts is exactly the property `MemorySaver` doesn't have, and a human-in-the-loop pause is exactly the case that needs it. A human might take hours. Your process won't stay up for all of them. The next lesson closes the gap with a checkpointer that writes somewhere the crash can't reach.
 
 ## Key Takeaways
 

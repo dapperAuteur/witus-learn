@@ -18,6 +18,8 @@ export async function seedAuthoredCourse(
     navigationMode?: "linear" | "cyoa";
     seasonNumber?: number;
     requiresAgeGate?: boolean;
+    /** Ecosystem product slugs (src/lib/ecosystem.ts) for the "Related WitUS tools" card. */
+    relatedProducts?: string[];
     /** Delete existing lessons first (clean replacement, e.g. migrating over a sample). */
     replaceLessons?: boolean;
   },
@@ -27,6 +29,7 @@ export async function seedAuthoredCourse(
   const extra = {
     ...(opts.seasonNumber != null ? { seasonNumber: opts.seasonNumber } : {}),
     ...(opts.requiresAgeGate != null ? { requiresAgeGate: opts.requiresAgeGate } : {}),
+    ...(opts.relatedProducts != null ? { relatedProducts: opts.relatedProducts } : {}),
   };
 
   const existing = await db
@@ -106,6 +109,7 @@ export async function seedAuthoredCourse(
     quizContent: l.quiz ?? null,
     exerciseContent: l.exercise ?? null,
     mapContent: l.mapContent ?? null,
+    recallContent: l.recallContent ?? null,
     sortOrder: i + 1,
     isFreePreview: i === 0,
     isPublished: true,
@@ -123,6 +127,7 @@ export async function seedAuthoredCourse(
           quizContent: sql`excluded.quiz_content`,
           exerciseContent: sql`excluded.exercise_content`,
           mapContent: sql`excluded.map_content`,
+          recallContent: sql`excluded.recall_content`,
           sortOrder: sql`excluded.sort_order`,
           moduleId: sql`excluded.module_id`,
           isFreePreview: sql`excluded.is_free_preview`,

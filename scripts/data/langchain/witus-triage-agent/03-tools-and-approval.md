@@ -1,18 +1,14 @@
 Goal: After this lesson you can build a typed tool with a Zod schema and use `interrupt()` plus a checkpointer to pause a graph for human approval and resume it later, safely.
 
-Follow along in the repo: `agent/tools/searchPastSubmissions.ts`, `agent/nodes/humanApproval.ts`, `agent/checkpointer.ts`, and `__tests__/agent/graph.test.ts`.
+Follow along in the [WitUS Triage Agent repo](https://github.com/dapperAuteur/witus-triage-agent). On screen this lesson opens [`agent/tools/searchPastSubmissions.ts`](https://github.com/dapperAuteur/witus-triage-agent/blob/main/agent/tools/searchPastSubmissions.ts), [`agent/nodes/humanApproval.ts`](https://github.com/dapperAuteur/witus-triage-agent/blob/main/agent/nodes/humanApproval.ts), [`agent/checkpointer.ts`](https://github.com/dapperAuteur/witus-triage-agent/blob/main/agent/checkpointer.ts), and [`__tests__/agent/graph.test.ts`](https://github.com/dapperAuteur/witus-triage-agent/blob/main/__tests__/agent/graph.test.ts).
 
-## Quick recall
-
-Last lesson we made state a contract and kept nodes pure. One question before we build on it: why did we insist a node be safe to run more than once? Take a second. Because an interrupt can cause a node to execute twice. This lesson is where that bites, so hold onto it.
-
-This lesson covers the two ideas that make the Triage Agent more than a sequence of prompts. **Tools** give the agent typed, deterministic access to the outside world. The **human-in-the-loop interrupt** lets the graph stop and wait for a person before acting. Both lean on the state and schema discipline from Lesson 2.
+This lesson covers the two ideas that make the Triage Agent more than a sequence of prompts. **Tools** give the agent typed, deterministic access to the outside world. The **human-in-the-loop interrupt** lets the graph stop and wait for a person before acting. Both lean on the state and schema discipline from Lesson 2, including its rule that a node must be safe to run more than once. Hold onto that rule, because this lesson is where it pays off.
 
 ## Tools are functions with a schema
 
-A tool, in LangGraph terms, is a function plus a description plus an input schema. The schema is not optional polish. It is the contract between the caller and the tool, the same way `TriageState` is the contract between nodes.
+A tool, in LangGraph terms, is a function plus a description plus an input schema. The schema isn't optional polish. It's the contract between the caller and the tool, the same way `TriageState` is the contract between nodes.
 
-Here is `searchPastSubmissions`, abridged from `agent/tools/searchPastSubmissions.ts`:
+Here's `searchPastSubmissions`, abridged from [`agent/tools/searchPastSubmissions.ts`](https://github.com/dapperAuteur/witus-triage-agent/blob/main/agent/tools/searchPastSubmissions.ts):
 
 ```ts
 export const SearchPastSubmissionsInputSchema = z.object({
@@ -30,19 +26,19 @@ export const searchPastSubmissions = tool(runSearchPastSubmissions, {
 
 The `tool()` wrapper takes the implementation and the metadata. The Zod schema does three jobs at once. It documents the inputs, it validates them at the boundary, and if the tool is ever bound to a model for the model to call, it becomes the JSON schema the model sees (LangChain, n.d.-a).
 
-Here is a choice worth noticing in this project. The `enrich` node calls its tools **deterministically**, not by letting a model decide. `enrich` knows it always wants the contact's history and the product's status, so it just calls `searchPastSubmissions` and `getProductStatus` directly. Tools are often tied to model-driven, agentic tool selection, but a tool earns its keep on its own: it is a typed, validated, named unit of work, even when ordinary code decides to call it. Use model-driven tool calling when the choice of tool is genuinely uncertain. Use a deterministic call when it is not. The triage agent does both: `enrich` calls tools deterministically, while `propose` makes one model decision and then deterministically assembles the rest.
+Here's a choice worth noticing in this project. The `enrich` node calls its tools **deterministically**, not by letting a model decide. `enrich` knows it always wants the contact's history and the product's status, so it just calls `searchPastSubmissions` and `getProductStatus` directly. Tools are often tied to model-driven, agentic tool selection, but a tool earns its keep on its own: it's a typed, validated, named unit of work, even when ordinary code decides to call it. Use model-driven tool calling when the choice of tool is genuinely uncertain. Use a deterministic call when it isn't. The triage agent does both: `enrich` calls tools deterministically, while `propose` makes one model decision and then deterministically assembles the rest.
 
 ## The problem the interrupt solves
 
 The `human_approval` node has to do something no ordinary function can. Stop, let a human think for an unknown length of time, and continue. The human might approve in ten seconds or ten hours. The server process might restart in between. The approval arrives on a completely separate HTTP request from the one that started the run.
 
-A plain `await` cannot express this. You cannot hold an HTTP request open for ten hours, and you certainly cannot hold it open across a deploy.
+A plain `await` can't express this. You can't hold an HTTP request open for ten hours, and you certainly can't hold it open across a deploy.
 
 ## `interrupt()` and the checkpointer
 
 LangGraph's answer has two parts that must be used together (LangChain, n.d.-b).
 
-The `interrupt()` function, called inside a node, suspends the graph and surfaces a payload to the caller. Here is the entire `human_approval` node (`agent/nodes/humanApproval.ts`):
+The `interrupt()` function, called inside a node, suspends the graph and surfaces a payload to the caller. Here's the entire `human_approval` node ([`agent/nodes/humanApproval.ts`](https://github.com/dapperAuteur/witus-triage-agent/blob/main/agent/nodes/humanApproval.ts)):
 
 ```ts
 export function humanApproval(state: TriageState): TriageStateUpdate {
@@ -58,7 +54,7 @@ export function humanApproval(state: TriageState): TriageStateUpdate {
 }
 ```
 
-On the first run, `interrupt()` does not return. It throws a special signal that pauses the graph. So how does the paused graph survive a process restart? That is the second part: the **checkpointer**. The graph is compiled with a `PostgresSaver` (`agent/checkpointer.ts`), and at every step, including the moment it pauses, the checkpointer writes the full graph state to Postgres, keyed by a `thread_id`.
+On the first run, `interrupt()` doesn't return. It throws a special signal that pauses the graph. So how does the paused graph survive a process restart? That's the second part: the **checkpointer**. The graph is compiled with a `PostgresSaver` ([`agent/checkpointer.ts`](https://github.com/dapperAuteur/witus-triage-agent/blob/main/agent/checkpointer.ts)), and at every step, including the moment it pauses, the checkpointer writes the full graph state to Postgres, keyed by a `thread_id`.
 
 This project uses the triage run's database id as the `thread_id`. One run is one durable thread. That single decision is what makes resuming trivial: the approval request arrives at `POST /api/triage/runs/:id/approve`, and the `:id` in the URL is the `thread_id`. The route needs nothing else to find the exact paused graph.
 
@@ -83,18 +79,18 @@ This is why Lesson 2 insisted nodes be pure, and why `human_approval` is only tw
 
 ## The gate, stated precisely
 
-Put together, the interrupt gives a guarantee you can describe in one sentence: the `execute` node is unreachable except through a `human_approval` node that has recorded an approved or edited decision. Rejection routes to `log_rejection`, which performs no external action. There is no edge into `execute` that bypasses the human. The `__tests__/agent/graph.test.ts` suite asserts exactly this: after the first `invoke()` the run is paused with no `execution`; only after a resume does `execution` appear. The approval gate is not a convention or a code-review rule. It is the topology of the graph.
+Put together, the interrupt gives a guarantee you can describe in one sentence: the `execute` node is unreachable except through a `human_approval` node that has recorded an approved or edited decision. Rejection routes to `log_rejection`, which performs no external action. There's no edge into `execute` that bypasses the human. The [`__tests__/agent/graph.test.ts`](https://github.com/dapperAuteur/witus-triage-agent/blob/main/__tests__/agent/graph.test.ts) suite asserts exactly this: after the first `invoke()` the run is paused with no `execution`; only after a resume does `execution` appear. The approval gate isn't a convention or a code-review rule. It's the topology of the graph.
 
 ## In practice
 
-Two habits carry to any HITL graph you build. First, put nothing non-idempotent before an `interrupt()`; charge the card and send the email in a node after the gate, where it runs once. Second, make the gate structural, not procedural: route irreversible work through a node that can only be reached after an approval is recorded, and write a test that proves no execution happens before resume. If a reviewer has to remember the rule, the rule is not enforced.
+Two habits carry to any HITL graph you build. First, put nothing non-idempotent before an `interrupt()`; charge the card and send the email in a node after the gate, where it runs once. Second, make the gate structural, not procedural: route irreversible work through a node that can only be reached after an approval is recorded, and write a test that proves no execution happens before resume. If a reviewer has to remember the rule, the rule isn't enforced.
 
 Lesson 4 turns to the question every one of these lessons has quietly raised: when a run behaves strangely, how do you see what the graph actually did?
 
 ## Key Takeaways
 
 - A tool is a function plus a description plus a Zod input schema; the schema documents, validates, and (when bound to a model) becomes the JSON the model sees.
-- Call tools deterministically when the choice is certain; let the model choose only when it is genuinely uncertain.
+- Call tools deterministically when the choice is certain; let the model choose only when it's genuinely uncertain.
 - `interrupt()` suspends the graph, and a checkpointer persists the paused state to Postgres keyed by `thread_id`.
 - Using the run id as the `thread_id` makes resume a one-liner: the URL id is the thread id.
 - A node with `interrupt()` re-runs from its first line on resume, so it must be idempotent and do nothing but interrupt and shape the result.
