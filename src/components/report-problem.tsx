@@ -5,11 +5,12 @@ import { useState } from "react";
 // A small fixed "Report a problem" button on every page → a popover form that POSTs to
 // /api/report (bug / feedback / idea / other + message + optional email). Captures the current URL
 // so the admin sees where it was filed from. Works signed-in or anonymous.
-export function ReportProblem() {
+export function ReportProblem({ defaultEmail }: { defaultEmail?: string }) {
   const [open, setOpen] = useState(false);
   const [kind, setKind] = useState<"bug" | "feedback" | "idea" | "other">("bug");
   const [message, setMessage] = useState("");
-  const [email, setEmail] = useState("");
+  // Prefilled with the signed-in user's email (still editable, so they confirm or change it).
+  const [email, setEmail] = useState(defaultEmail ?? "");
   const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   async function submit(e: React.FormEvent) {
@@ -33,10 +34,8 @@ export function ReportProblem() {
       }
       setState("sent");
       setMessage("");
-      setTimeout(() => {
-        setOpen(false);
-        setState("idle");
-      }, 1500);
+      // Keep the form open so a learner can send more than one report from the same page.
+      setTimeout(() => setState("idle"), 1500);
     } catch {
       setState("error");
     }
