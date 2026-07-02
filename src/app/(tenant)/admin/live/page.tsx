@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { requirePlatformOwner } from "@/lib/session";
 import { requireTenant } from "@/lib/tenant";
 import { listAllTenants, listCourseOptions, listLiveForAdmin } from "@/db/queries/live";
+import { getStreamSettings } from "@/db/queries/stream-settings";
 import { LiveAdmin } from "@/components/live-admin";
+import { StreamSettings } from "@/components/stream-settings";
 
 export const metadata: Metadata = { title: "Live classes" };
 
@@ -11,10 +13,11 @@ export const metadata: Metadata = { title: "Live classes" };
 export default async function LiveAdminPage() {
   await requirePlatformOwner();
   const tenant = await requireTenant();
-  const [tenants, sessions, courses] = await Promise.all([
+  const [tenants, sessions, courses, streamSettings] = await Promise.all([
     listAllTenants(),
     listLiveForAdmin(tenant.id),
     listCourseOptions(tenant.id),
+    getStreamSettings(tenant.id),
   ]);
   const courseTitle = new Map(courses.map((c) => [c.id, c.title]));
 
@@ -25,6 +28,10 @@ export default async function LiveAdminPage() {
         Push your stream from OBS to your RTMP service, paste its player embed URL here, and broadcast
         to one or more schools. Manage each school&apos;s sessions on its own domain.
       </p>
+      <div className="mt-6">
+        <StreamSettings initial={streamSettings} />
+      </div>
+
       <div className="mt-6">
         <LiveAdmin
           tenants={tenants}
