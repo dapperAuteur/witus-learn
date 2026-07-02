@@ -61,6 +61,13 @@ const schema = z.object({
   CLOUDINARY_API_KEY: z.string().optional(),
   CLOUDINARY_API_SECRET: z.string().optional(),
 
+  // Streaming default (optional). Used as the deployment-wide always-on stream when a tenant
+  // hasn't set its own in /admin/live, so the values need only be pasted once as env vars.
+  // STREAM_EMBED_CODE is the provider's iframe embed (extracted + host-allowlisted at read time,
+  // same as an admin paste); RTMP_STREAM_PLAYBACK_URL is a direct player URL.
+  RTMP_STREAM_PLAYBACK_URL: z.string().optional(),
+  STREAM_EMBED_CODE: z.string().optional(),
+
   // Ecosystem integrations (optional; features no-op until set).
   FLASHLEARN_ECO_API_KEY: z.string().optional(),
   INBOX_INGEST_URL: z.string().url().optional(),
