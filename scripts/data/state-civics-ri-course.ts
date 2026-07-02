@@ -1,4 +1,4 @@
-// Authored "Rhode Island Civics: How Your State Government Works" — the Rhode Island
+// Authored "Rhode Island Civics: How Your State Government Works", the Rhode Island
 // entry in the per-state Civics layer on Learn.WitUS. State-level companion to the
 // general Civics courses: those teach the SYSTEM; this teaches Rhode Island's version.
 //
@@ -19,18 +19,18 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_RI_COURSE: AuthoredCourse = {
   title: "Rhode Island Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Rhode Island governs itself — and how you take part where you live. Rhode Island, the smallest state, has several distinctive features: in 2020 its voters shortened its official name (dropping 'and Providence Plantations'); it has counties on the map but NO county governments — its 39 cities and towns do everything; its Supreme Court justices serve for LIFE (the only state high court with life tenure); and for centuries its Legislature was so dominant that voters passed a separation-of-powers amendment in 2004 to rein it in. You'll also learn Rhode Island's plural executive, its General Assembly of 38 senators and 75 representatives, and how to take part. Time-sensitive facts are flagged, pointing to the Secretary of State. Cited to Rhode Island's own official sources (rilegislature.gov, sos.ri.gov, courts.ri.gov).",
+    "A practical, non-partisan guide to how the state of Rhode Island governs itself, and how you take part where you live. Rhode Island, the smallest state, has several distinctive features: in 2020 its voters shortened its official name (dropping 'and Providence Plantations'); it has counties on the map but NO county governments (its 39 cities and towns do everything); its Supreme Court justices serve for LIFE (the only state high court with life tenure); and for centuries its Legislature was so dominant that voters passed a separation-of-powers amendment in 2004 to rein it in. You'll also learn Rhode Island's plural executive, its General Assembly of 38 senators and 75 representatives, and how to take part. Time-sensitive facts are flagged, pointing to the Secretary of State. Cited to Rhode Island's own official sources (rilegislature.gov, sos.ri.gov, courts.ri.gov).",
   lessons: [
     // ── Section 1: The name change + founding ────────────────────────────
     {
       slug: "ri-name-founding",
       title: "1 · The smallest state, its founding, and its 2020 name change",
       section: "What Makes Rhode Island Unique",
-      body: `Rhode Island is the **smallest state by area**, and one of the most historically distinctive. Founded by **Roger Williams in 1636** as a haven for **religious freedom and separation of church and state**, it was the **last of the original 13 colonies to ratify the U.S. Constitution** (becoming the **13th state on May 29, 1790**) — holding out until a Bill of Rights was assured (Rhode Island Secretary of State, n.d.).
+      body: `Rhode Island is the **smallest state by area**, and one of the most historically distinctive. Founded by **Roger Williams in 1636** as a haven for **religious freedom and separation of church and state**, it was the **last of the original 13 colonies to ratify the U.S. Constitution** (becoming the **13th state on May 29, 1790**), holding out until a Bill of Rights was assured (Rhode Island Secretary of State, n.d.).
 
-**A recent, meaningful name change.** For most of its history, Rhode Island's **full official name was "State of Rhode Island and Providence Plantations"** — the **longest official state name** in the country. ⚠️ In **2020, Rhode Island voters approved removing "and Providence Plantations"** from the official name, because of the word "plantations" and its associations; the state is now officially just the **"State of Rhode Island"** (Rhode Island Secretary of State, n.d.). It's a good example of how a state's **constitution and identity can change by a vote of the people** — and a fact older sources will get wrong.
+**A recent, meaningful name change.** For most of its history, Rhode Island's **full official name was "State of Rhode Island and Providence Plantations"**, the **longest official state name** in the country. ⚠️ In **2020, Rhode Island voters approved removing "and Providence Plantations"** from the official name, because of the word "plantations" and its associations; the state is now officially just the **"State of Rhode Island"** (Rhode Island Secretary of State, n.d.). It's a good example of how a state's **constitution and identity can change by a vote of the people**, and a fact older sources will get wrong.
 
-Rhode Island — nicknamed **"The Ocean State"** — governs under a constitution first adopted in **1843** (which ended an earlier property-restricted system after the **Dorr Rebellion** expanded suffrage) and substantially **reorganized in 1986.**
+Rhode Island (nicknamed **"The Ocean State"**) governs under a constitution first adopted in **1843** (which ended an earlier property-restricted system after the **Dorr Rebellion** expanded suffrage) and substantially **reorganized in 1986.**
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Rhode Island's own government (rilegislature.gov, sos.ri.gov, courts.ri.gov) is the authoritative source.
 
@@ -46,13 +46,25 @@ Rhode Island — nicknamed **"The Ocean State"** — governs under a constitutio
       slug: "ri-no-counties",
       title: "2 · Counties on the map, but no county governments",
       section: "What Makes Rhode Island Unique",
+      recallContent: [
+        {
+          prompt: "Who founded the Rhode Island colony, in what year, and for what principle?",
+          answer:
+            "Roger Williams founded it in 1636 as a haven for religious freedom and the separation of church and state.",
+        },
+        {
+          prompt: "What did Rhode Island voters change about the state's official name in 2020?",
+          answer:
+            "They voted to remove 'and Providence Plantations,' so the official name is now simply 'State of Rhode Island.'",
+        },
+      ],
       body: `Like Connecticut, Rhode Island is one of the few states with **NO functioning county government** (Rhode Island General Assembly, n.d.).
 
-**How it works.** Rhode Island has **5 counties** (Providence, Kent, Washington, Newport, Bristol), but they exist **only as geographic and judicial reference areas** — there are **no county commissioners, no county councils, no county budgets, and no county services.** Everything a county does elsewhere is handled by the **state** or by the **cities and towns** (Rhode Island General Assembly, n.d.).
+**How it works.** Rhode Island has **5 counties** (Providence, Kent, Washington, Newport, Bristol), but they exist **only as geographic and judicial reference areas**: there are **no county commissioners, no county councils, no county budgets, and no county services.** Everything a county does elsewhere is handled by the **state** or by the **cities and towns** (Rhode Island General Assembly, n.d.).
 
-**The city/town is everything.** Rhode Island has **39 cities and towns**, and they are the **workhorse of local government** — running schools, police, roads, zoning, and local services. Some smaller towns still use a **town meeting** or a **financial town meeting** to set budgets; larger cities use mayor-council forms. Because the state is small and has **only two tiers — the state and the municipality** — "who do I call?" is simple: your **city or town**, or the **state.**
+**The city/town is everything.** Rhode Island has **39 cities and towns**, and they are the **workhorse of local government**, running schools, police, roads, zoning, and local services. Some smaller towns still use a **town meeting** or a **financial town meeting** to set budgets; larger cities use mayor-council forms. Because the state is small and has **only two tiers** (the state and the municipality), "who do I call?" is simple: your **city or town**, or the **state.**
 
-This two-tier structure (with the **town** unusually important and **no county layer**) is shared only with a handful of states like Connecticut — a distinctive New England pattern.
+This two-tier structure (with the **town** unusually important and **no county layer**) is shared only with a handful of states like Connecticut, a distinctive New England pattern.
 
 **Check yourself.** How many cities and towns does Rhode Island have, and what happened to its county governments?
 
@@ -66,13 +78,25 @@ This two-tier structure (with the **town** unusually important and **no county l
       slug: "ri-separation-powers",
       title: "3 · From legislative supremacy to the 2004 separation-of-powers reform",
       section: "The Three Branches",
-      body: `For most of its history, Rhode Island was an extreme **"legislative supremacy"** state — its **General Assembly** was one of the **most powerful legislatures in the country**, reaching deep into the other branches (Rhode Island General Assembly, n.d.).
+      recallContent: [
+        {
+          prompt: "Do Rhode Island's five counties have working county governments?",
+          answer:
+            "No. The five counties exist only as geographic and judicial reference areas, with no county commissioners, councils, budgets, or services.",
+        },
+        {
+          prompt: "How many cities and towns does Rhode Island have, and what do they handle?",
+          answer:
+            "It has 39 cities and towns, and they run local government: schools, police, roads, zoning, and local services.",
+        },
+      ],
+      body: `For most of its history, Rhode Island was an extreme **"legislative supremacy"** state: its **General Assembly** was one of the **most powerful legislatures in the country**, reaching deep into the other branches (Rhode Island General Assembly, n.d.).
 
-**The old system.** Under Rhode Island's tradition, legislators didn't just make laws — they also **sat on and controlled many executive boards and commissions** that ran state agencies, blurring the line between making law and executing it. The Governor, by contrast, was comparatively **weak.** This concentration of power was a defining (and controversial) feature of Rhode Island government.
+**The old system.** Under Rhode Island's tradition, legislators didn't just make laws; they also **sat on and controlled many executive boards and commissions** that ran state agencies, blurring the line between making law and executing it. The Governor, by contrast, was comparatively **weak.** This concentration of power was a defining (and controversial) feature of Rhode Island government.
 
-**The 2004 reform.** ⚠️ In **2004, Rhode Island voters approved a constitutional "separation of powers" amendment** that **removed legislators from executive boards and strengthened the Governor and the executive branch** (Rhode Island General Assembly, n.d.). It was a landmark change that moved Rhode Island toward the more standard three-branch balance seen elsewhere. Because this reform is recent, older descriptions of Rhode Island's "all-powerful legislature" are now **out of date** — so confirm current arrangements at rilegislature.gov.
+**The 2004 reform.** ⚠️ In **2004, Rhode Island voters approved a constitutional "separation of powers" amendment** that **removed legislators from executive boards and strengthened the Governor and the executive branch** (Rhode Island General Assembly, n.d.). It was a landmark change that moved Rhode Island toward the more standard three-branch balance seen elsewhere. Because this reform is recent, older descriptions of Rhode Island's "all-powerful legislature" are now **out of date**, so confirm current arrangements at rilegislature.gov.
 
-**Executive today.** Rhode Island voters elect a **plural executive**: the **Governor**, **Lieutenant Governor** (elected **separately**), **Secretary of State**, **Attorney General**, and **General Treasurer** — each on a **4-year term.**
+**Executive today.** Rhode Island voters elect a **plural executive**: the **Governor**, **Lieutenant Governor** (elected **separately**), **Secretary of State**, **Attorney General**, and **General Treasurer**, each on a **4-year term.**
 
 **Check yourself.** What did the 2004 separation-of-powers amendment change about Rhode Island government?
 
@@ -85,15 +109,27 @@ This two-tier structure (with the **town** unusually important and **no county l
       slug: "ri-legislature-courts",
       title: "4 · The General Assembly and a Supreme Court that serves for life",
       section: "Making Law",
-      body: `**Legislative — the Rhode Island General Assembly.** A bicameral body meeting in Providence (Rhode Island General Assembly, n.d.):
-- **House of Representatives — 75 members**, and **Senate — 38 senators**, all serving **2-year terms.**
+      recallContent: [
+        {
+          prompt: "What did Rhode Island's 2004 separation-of-powers amendment do?",
+          answer:
+            "It removed legislators from executive boards and commissions and strengthened the Governor and the executive branch.",
+        },
+        {
+          prompt: "Who are the statewide officials in Rhode Island's plural executive?",
+          answer:
+            "The Governor, Lieutenant Governor (elected separately), Secretary of State, Attorney General, and General Treasurer, each on a 4-year term.",
+        },
+      ],
+      body: `**Legislative: the Rhode Island General Assembly.** A bicameral body meeting in Providence (Rhode Island General Assembly, n.d.):
+- **House of Representatives: 75 members**, and **Senate: 38 senators**, all serving **2-year terms.**
 
 **How a bill becomes law:**
 1. **Introduction** in the House or Senate; **committee** review; **floor votes** in both chambers.
-2. **Governor** — sign, veto, or let it become law. ⚠️ Note a Rhode Island distinctive: the Governor's veto is comparatively **weak** — the General Assembly can **override with just a three-fifths vote** (not two-thirds), a legacy of the legislative-supremacy tradition. (Rhode Island also has **no line-item veto.**)
+2. **Governor**: sign, veto, or let it become law. ⚠️ Note a Rhode Island distinctive: the Governor's veto is comparatively **weak**: the General Assembly can **override with just a three-fifths vote** (not two-thirds), a legacy of the legislative-supremacy tradition. (Rhode Island also has **no line-item veto.**)
 Rhode Island has **no statewide citizen initiative**; **constitutional amendments** are proposed by the General Assembly and then ratified by the **voters** (as with the 2020 name change and the 2004 reform).
 
-**A Supreme Court that serves for LIFE.** Here's a genuine Rhode Island distinctive: its **Supreme Court justices serve for LIFE** (during good behavior) — Rhode Island is the **only state whose highest-court justices have life tenure**, like federal judges (Rhode Island Judiciary, n.d.). Justices are chosen by **merit selection**: a **Judicial Nominating Commission** sends names to the **Governor**, who appoints with **legislative confirmation.** Lower-court judges also serve to retirement/for life via the same merit process. So Rhode Island keeps judges **entirely out of elections** — and, uniquely, gives its top justices **life tenure.**
+**A Supreme Court that serves for LIFE.** Here's a genuine Rhode Island distinctive: its **Supreme Court justices serve for LIFE** (during good behavior). Rhode Island is the **only state whose highest-court justices have life tenure**, like federal judges (Rhode Island Judiciary, n.d.). Justices are chosen by **merit selection**: a **Judicial Nominating Commission** sends names to the **Governor**, who appoints with **legislative confirmation.** Lower-court judges also serve to retirement/for life via the same merit process. So Rhode Island keeps judges **entirely out of elections**, and, uniquely, gives its top justices **life tenure.**
 
 **Check yourself.** What is unique about the tenure of Rhode Island's Supreme Court justices, and how strong is the Governor's veto?
 
@@ -107,18 +143,30 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
       slug: "ri-get-involved",
       title: "5 · How to take part where you live",
       section: "Get Involved",
+      recallContent: [
+        {
+          prompt: "What is unique about the tenure of Rhode Island's Supreme Court justices?",
+          answer:
+            "They serve for life (during good behavior); Rhode Island is the only state whose highest-court justices have life tenure.",
+        },
+        {
+          prompt: "How many members sit in Rhode Island's House and Senate, and how strong is the Governor's veto?",
+          answer:
+            "The House has 75 members and the Senate has 38, all on 2-year terms; the Governor's veto is weak, overridden by a three-fifths vote, with no line-item veto.",
+        },
+      ],
       body: `Because Rhode Island is small and has only **two tiers** (state + city/town), taking part is unusually direct (Rhode Island Secretary of State, n.d.).
 
-**Voting.** ⚠️ **Time-sensitive:** Rhode Island offers **early in-person voting**, **mail ballots**, and **online/automatic registration options**, and requires **ID** to vote. Rules and deadlines are administered by the **Secretary of State and local boards of canvassers** and can change — confirm the **current** details at **sos.ri.gov** (or elections.ri.gov) before you vote.
+**Voting.** ⚠️ **Time-sensitive:** Rhode Island offers **early in-person voting**, **mail ballots**, and **online/automatic registration options**, and requires **ID** to vote. Rules and deadlines are administered by the **Secretary of State and local boards of canvassers** and can change. Confirm the **current** details at **sos.ri.gov** (or elections.ri.gov) before you vote.
 
 **How to take part:**
-- **Register and vote** — use early voting or a mail ballot; check your status at sos.ri.gov.
-- **Show up locally.** With no county layer, your **city or town council** (or **town meeting/financial town meeting** in smaller towns) and your **school committee** make most local decisions — and they're very accessible in a small state.
-- **Contact your legislators** at the State House in Providence — you have one Representative and one Senator; in a small state, they're easy to reach.
-- **Weigh in on amendments.** Rhode Island voters ratify constitutional amendments (like the 2020 name change and the 2004 reform) — read them and vote.
-- **Run** — school committee, town/city council, and (in some towns) financial town meeting offices are among the most reachable in the country.
+- **Register and vote**: use early voting or a mail ballot; check your status at sos.ri.gov.
+- **Show up locally.** With no county layer, your **city or town council** (or **town meeting/financial town meeting** in smaller towns) and your **school committee** make most local decisions, and they're very accessible in a small state.
+- **Contact your legislators** at the State House in Providence. You have one Representative and one Senator; in a small state, they're easy to reach.
+- **Weigh in on amendments.** Rhode Island voters ratify constitutional amendments (like the 2020 name change and the 2004 reform). Read them and vote.
+- **Run**: school committee, town/city council, and (in some towns) financial town meeting offices are among the most reachable in the country.
 
-**The habit to build:** in a state this small, **one engaged resident** can genuinely influence a town budget or a State House bill — pick one issue and follow it.
+**The habit to build:** in a state this small, **one engaged resident** can genuinely influence a town budget or a State House bill. Pick one issue and follow it.
 
 **Check yourself.** With no counties, what local bodies make most decisions in Rhode Island, and what should you verify before voting?
 
@@ -146,7 +194,7 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           },
           {
             prompt:
-              "Rhode Island has 5 counties on the map but no county ___ — cities and towns do everything.",
+              "Rhode Island has 5 counties on the map but no county ___; cities and towns do everything.",
             answer: "government",
             accept: ["governments"],
             explanation:
@@ -157,7 +205,7 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
               "Rhode Island is the only state whose highest-court justices serve for ___.",
             answer: "life",
             explanation:
-              "Rhode Island Supreme Court justices have life tenure (during good behavior), chosen by merit selection — unique among the states.",
+              "Rhode Island Supreme Court justices have life tenure (during good behavior), chosen by merit selection, unique among the states.",
           },
           {
             prompt:
@@ -223,7 +271,7 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
             prompt: "What is true about Rhode Island's counties?",
             options: [
               "They run schools and police",
-              "They exist only as geographic/judicial areas — there are no county governments",
+              "They exist only as geographic/judicial areas; there are no county governments",
               "There are 39 of them",
               "They elect the Governor",
             ],
@@ -236,7 +284,7 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
             prompt: "What did Rhode Island's 2004 amendment do?",
             options: [
               "Abolished the Legislature",
-              "Established separation of powers — removing legislators from executive boards and strengthening the Governor",
+              "Established separation of powers, removing legislators from executive boards and strengthening the Governor",
               "Created counties",
               "Ended elections",
             ],
@@ -249,7 +297,7 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
             prompt: "What is unique about Rhode Island's Supreme Court justices?",
             options: [
               "They are elected annually",
-              "They serve for life — the only state high court with life tenure",
+              "They serve for life, the only state high court with life tenure",
               "They are chosen by lottery",
               "They must be under 40",
             ],
@@ -261,8 +309,8 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
           {
             prompt: "How strong is the Rhode Island Governor's veto?",
             options: [
-              "Very strong — impossible to override",
-              "Comparatively weak — the Legislature overrides with only a three-fifths vote, and there's no line-item veto",
+              "Very strong, impossible to override",
+              "Comparatively weak: the Legislature overrides with only a three-fifths vote, and there's no line-item veto",
               "The Governor cannot veto at all",
               "Only courts can override it",
             ],
@@ -301,7 +349,7 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
             prompt: "Can Rhode Island citizens put a law on the ballot by initiative?",
             options: [
               "Yes, a strong initiative",
-              "No — there is no statewide initiative; the General Assembly proposes amendments for voters",
+              "No, there is no statewide initiative; the General Assembly proposes amendments for voters",
               "Only in even years",
               "Only for schools",
             ],
@@ -314,7 +362,7 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
             prompt: "Why does this course tell you to VERIFY Rhode Island's name, structure, and voting rules?",
             options: [
               "Because Rhode Island has no government website",
-              "Because the name changed in 2020, powers were reformed in 2004, and voting rules are run locally and change — confirm at sos.ri.gov",
+              "Because the name changed in 2020, powers were reformed in 2004, and voting rules are run locally and change; confirm at sos.ri.gov",
               "Because only Congress sets them",
               "Because voting is secret",
             ],

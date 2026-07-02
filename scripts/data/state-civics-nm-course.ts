@@ -1,4 +1,4 @@
-// Authored "New Mexico Civics: How Your State Government Works" — the New Mexico entry
+// Authored "New Mexico Civics: How Your State Government Works", the New Mexico entry
 // in the per-state Civics layer on Learn.WitUS. State-level companion to the general
 // Civics courses: those teach the SYSTEM; this teaches New Mexico's version.
 //
@@ -18,7 +18,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_NM_COURSE: AuthoredCourse = {
   title: "New Mexico Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of New Mexico governs itself — and how you take part where you live. New Mexico has two features found nowhere else: its 1912 constitution contains special protections for Spanish-speaking citizens, making it effectively the most bilingual state, and it has the ONLY fully volunteer (unpaid) state legislature in the nation. You'll learn New Mexico's Constitution of 1912, its plural executive, its Legislature of 42 senators and 70 representatives, its hybrid judiciary, its 33 counties, and the sovereign Pueblo and tribal nations within its borders. Time-sensitive facts are flagged, pointing to sos.nm.gov. Cited to New Mexico's own official sources (nmlegis.gov, sos.nm.gov, nmcourts.gov).",
+    "A practical, non-partisan guide to how the state of New Mexico governs itself, and how you take part where you live. New Mexico has two features found nowhere else: its 1912 constitution contains special protections for Spanish-speaking citizens, making it effectively the most bilingual state, and it has the ONLY fully volunteer (unpaid) state legislature in the nation. You'll learn New Mexico's Constitution of 1912, its plural executive, its Legislature of 42 senators and 70 representatives, its hybrid judiciary, its 33 counties, and the sovereign Pueblo and tribal nations within its borders. Time-sensitive facts are flagged, pointing to sos.nm.gov. Cited to New Mexico's own official sources (nmlegis.gov, sos.nm.gov, nmcourts.gov).",
   lessons: [
     // ── Section 1: The bilingual constitution ────────────────────────────
     {
@@ -28,12 +28,12 @@ export const STATE_CIVICS_NM_COURSE: AuthoredCourse = {
       body: `New Mexico's most distinctive civic feature is written into its founding document: its **1912 constitution contains special protections for Spanish-speaking citizens**, making New Mexico effectively **the most bilingual state in the nation** (New Mexico Legislature, n.d.).
 
 **What the constitution does.** Because New Mexico had a large, long-established **Spanish-speaking (Hispano) population** at statehood in **1912**, its constitution deliberately protects them (New Mexico Legislature, n.d.):
-- It **protects the right to vote, hold office, and serve on juries regardless of ability to speak, read, or write English or Spanish** — so language cannot be used to exclude citizens.
+- It **protects the right to vote, hold office, and serve on juries regardless of ability to speak, read, or write English or Spanish**, so language cannot be used to exclude citizens.
 - It provides that **children of Spanish descent shall not be denied equal educational rights**, and it made certain laws and official notices available in **both English and Spanish.**
 - These protections were made **especially hard to amend**, entrenching bilingual rights.
 While New Mexico has **no single "official language"** declared the way some states do, in practice it operates as a **bilingual (English/Spanish)** state, and it celebrates its blended **Hispano, Native American, and Anglo** heritage.
 
-**Native nations.** New Mexico is also home to **many sovereign tribal nations** — including **19 Pueblos** and the Navajo Nation, Apache tribes, and others — governments with their own laws and courts, an essential part of the state's civic landscape.
+**Native nations.** New Mexico is also home to **many sovereign tribal nations** (including **19 Pueblos** and the Navajo Nation, Apache tribes, and others), governments with their own laws and courts, an essential part of the state's civic landscape.
 
 This is the through-line: New Mexico's government reflects a **multicultural, multilingual** society, protected in its very constitution.
 
@@ -53,18 +53,31 @@ This is the through-line: New Mexico's government reflects a **multicultural, mu
       section: "The Three Branches",
       body: `New Mexico's second national "only": it has the **only fully volunteer (UNPAID) state legislature in the country** (New Mexico Legislature, n.d.).
 
-**What that means.** New Mexico legislators receive **NO salary** for their work. They get a **per-diem allowance** (to cover expenses like lodging and meals during the session) and mileage — but **no annual pay** at all (New Mexico Legislature, n.d.). Every other state pays its legislators something; New Mexico pays them **nothing** beyond expenses. This makes New Mexico's the **truest "citizen legislature"** in the nation — people serve out of **civic duty**, and legislators tend to be retirees, business owners, or others who can afford to serve without a salary.
+**What that means.** New Mexico legislators receive **NO salary** for their work. They get a **per-diem allowance** (to cover expenses like lodging and meals during the session) and mileage, but **no annual pay** at all (New Mexico Legislature, n.d.). Every other state pays its legislators something; New Mexico pays them **nothing** beyond expenses. This makes New Mexico's the **truest "citizen legislature"** in the nation: people serve out of **civic duty**, and legislators tend to be retirees, business owners, or others who can afford to serve without a salary.
 
 **The sessions match.** New Mexico's Legislature is bicameral and part-time (New Mexico Legislature, n.d.):
-- **House of Representatives — 70 members** (2-year terms), and **Senate — 42 senators** (4-year terms).
-- It alternates **long and short sessions**: a **60-day** session in odd-numbered years and a **30-day** (mostly budget-focused) session in even years — short windows for an unpaid body.
+- **House of Representatives: 70 members** (2-year terms), and **Senate: 42 senators** (4-year terms).
+- It alternates **long and short sessions**: a **60-day** session in odd-numbered years and a **30-day** (mostly budget-focused) session in even years, short windows for an unpaid body.
 
-Why it matters: New Mexico bet that an **unpaid, part-time** legislature keeps government **close to citizens and cheap** — though critics note it can limit who is **able** to serve. Either way, it's a genuinely unique feature of American government.
+Why it matters: New Mexico bet that an **unpaid, part-time** legislature keeps government **close to citizens and cheap**, though critics note it can limit who is **able** to serve. Either way, it's a genuinely unique feature of American government.
 
 **Check yourself.** What is unique about how New Mexico pays its legislators, and how long are its sessions?
 
 ## Sources
 - New Mexico Legislature. (n.d.). *The volunteer (unpaid) Legislature; sessions and per diem*. nmlegis.gov. https://www.nmlegis.gov/`,
+      recallContent: [
+        {
+          prompt:
+            "What does New Mexico's 1912 constitution do for Spanish-speaking citizens?",
+          answer:
+            "It protects their right to vote, hold office, serve on juries, and receive an equal education regardless of their ability to read or write English or Spanish, making New Mexico effectively the most bilingual state.",
+        },
+        {
+          prompt: "Which sovereign tribal nations exist within New Mexico?",
+          answer:
+            "Many, including 19 Pueblos plus the Navajo Nation and Apache tribes, each a government with its own laws and courts.",
+        },
+      ],
     },
 
     // ── Section 3: The executive + the courts ────────────────────────────
@@ -72,7 +85,7 @@ Why it matters: New Mexico bet that an **unpaid, part-time** legislature keeps g
       slug: "nm-executive-courts",
       title: "3 · The executive and how New Mexico picks its judges",
       section: "The Three Branches",
-      body: `**Executive — a plural executive.** New Mexico voters elect several statewide officials (New Mexico Secretary of State, n.d.):
+      body: `**Executive: a plural executive.** New Mexico voters elect several statewide officials (New Mexico Secretary of State, n.d.):
 - The **Governor** and **Lieutenant Governor** (nominated separately in primaries, then running **together** in the general election),
 - the **Secretary of State** (who runs elections),
 - the **Attorney General**,
@@ -81,11 +94,11 @@ Why it matters: New Mexico bet that an **unpaid, part-time** legislature keeps g
 - the **Commissioner of Public Lands** (a powerful office in a state with vast public lands).
 Statewide officers serve **4-year terms** with **term limits.**
 
-**Judicial — a distinctive hybrid.** New Mexico chooses judges in an unusual **three-step blend** of appointment, partisan election, and retention (New Mexico Courts, n.d.):
+**Judicial: a distinctive hybrid.** New Mexico chooses judges in an unusual **three-step blend** of appointment, partisan election, and retention (New Mexico Courts, n.d.):
 1. When a judgeship opens, a **judicial nominating commission** sends names to the **Governor**, who **appoints** a judge.
 2. That judge must then run in the **next partisan election** (with a party label) to keep the seat.
 3. After winning once, the judge thereafter faces **nonpartisan yes/no retention elections** (needing a high approval threshold). The **New Mexico Supreme Court** has **5 justices.**
-So a New Mexico judge is **appointed, then partisan-elected, then retained** — mixing three different methods you've seen separately in other states.
+So a New Mexico judge is **appointed, then partisan-elected, then retained**, mixing three different methods you've seen separately in other states.
 
 **Veto and override.** The Governor may veto bills (and has a strong **line-item veto**); the Legislature overrides with a **two-thirds vote of each chamber.**
 
@@ -94,6 +107,19 @@ So a New Mexico judge is **appointed, then partisan-elected, then retained** —
 ## Sources
 - New Mexico Secretary of State. (n.d.). *Statewide elected officials*. sos.nm.gov. https://www.sos.nm.gov/
 - New Mexico Courts. (n.d.). *Judicial selection: appointment, partisan election, and retention*. nmcourts.gov. https://www.nmcourts.gov/`,
+      recallContent: [
+        {
+          prompt: "What is unique about how New Mexico pays its legislators?",
+          answer:
+            "It has the only fully volunteer, unpaid legislature in the nation. Legislators get a per-diem allowance and mileage for expenses but receive no salary at all.",
+        },
+        {
+          prompt:
+            "How is New Mexico's Legislature structured, and how long are its sessions?",
+          answer:
+            "A 70-member House (2-year terms) and a 42-member Senate (4-year terms). It alternates a 60-day session in odd-numbered years with a 30-day, mostly budget session in even years.",
+        },
+      ],
     },
 
     // ── Section 4: Lawmaking, local government, getting involved ─────────
@@ -103,27 +129,39 @@ So a New Mexico judge is **appointed, then partisan-elected, then retained** —
       section: "Get Involved",
       body: `**How a bill becomes law** (New Mexico Legislature, n.d.):
 1. **Introduction** during the 60-day (odd year) or 30-day (even year) session; **committee** review; **floor votes** in both chambers.
-2. **Governor** — sign, veto (two-thirds override), or **line-item veto** appropriations.
+2. **Governor**: sign, veto (two-thirds override), or **line-item veto** appropriations.
 New Mexico has **no statewide citizen initiative** for general laws; **constitutional amendments** are proposed by the Legislature and ratified by the **voters** (recall that the **language-rights provisions** are especially hard to amend).
 
 **Local government** (New Mexico Legislature, n.d.):
 - **33 counties**, governed by elected **county commissions**, plus other elected county officials.
 - **Cities, towns, and villages** provide municipal services; some have home-rule charters.
-- **Sovereign tribal nations** (the 19 Pueblos, Navajo Nation, and Apache tribes) govern their own lands — a major part of New Mexico's civic map.
+- **Sovereign tribal nations** (the 19 Pueblos, Navajo Nation, and Apache tribes) govern their own lands, a major part of New Mexico's civic map.
 
-**Voting.** ⚠️ **Time-sensitive:** New Mexico offers **same-day registration**, **early and absentee voting**, and (through recent reforms) automatic registration options. Rules and deadlines are administered by **county clerks** and can change — confirm the **current** details at **sos.nm.gov** before you vote. (And remember New Mexico's constitution protects your right to vote **regardless of your English or Spanish literacy.**)
+**Voting.** ⚠️ **Time-sensitive:** New Mexico offers **same-day registration**, **early and absentee voting**, and (through recent reforms) automatic registration options. Rules and deadlines are administered by **county clerks** and can change. Confirm the **current** details at **sos.nm.gov** before you vote. (And remember New Mexico's constitution protects your right to vote **regardless of your English or Spanish literacy.**)
 
 **How to take part:**
-- **Register and vote** — even same-day in many cases; check your status at sos.nm.gov.
-- **Serve — literally for free.** Because the Legislature is unpaid, New Mexico especially depends on **citizens willing to serve.** Running for the Legislature is an act of civic volunteering here.
+- **Register and vote**, even same-day in many cases; check your status at sos.nm.gov.
+- **Serve: literally for free.** Because the Legislature is unpaid, New Mexico especially depends on **citizens willing to serve.** Running for the Legislature is an act of civic volunteering here.
 - **Show up locally.** County commissions, city/town councils, and school boards hold public meetings; if you live near or on tribal land, tribal governments are key.
-- **Contact your legislators** in Santa Fe — you have one Representative and one Senator; sessions are short, so timing matters.
+- **Contact your legislators** in Santa Fe: you have one Representative and one Senator; sessions are short, so timing matters.
 
 **Check yourself.** Can New Mexico citizens start a law by initiative, and what does the state especially depend on given its unpaid Legislature?
 
 ## Sources
 - New Mexico Legislature. (n.d.). *How a bill becomes law; local government*. nmlegis.gov. https://www.nmlegis.gov/
 - New Mexico Secretary of State. (n.d.). *Registering and voting: same-day registration, early/absentee voting*. sos.nm.gov. https://www.sos.nm.gov/`,
+      recallContent: [
+        {
+          prompt: "How does a New Mexico judge reach and keep the bench?",
+          answer:
+            "In three steps: a nominating commission sends names to the Governor, who appoints the judge; the judge then wins the next partisan election; and afterward faces nonpartisan yes/no retention elections.",
+        },
+        {
+          prompt: "Which statewide executive officials do New Mexicans elect?",
+          answer:
+            "The Governor and Lieutenant Governor, the Secretary of State, the Attorney General, the State Treasurer, the State Auditor, and the Commissioner of Public Lands, all serving 4-year terms with term limits.",
+        },
+      ],
     },
 
     // ── Section 5: Practice (fill in the blanks) ─────────────────────────
@@ -148,7 +186,7 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
               "New Mexico has the only fully volunteer (___) state legislature in the nation.",
             answer: "unpaid",
             explanation:
-              "New Mexico legislators receive per diem and mileage but no salary — the only unpaid legislature in the country.",
+              "New Mexico legislators receive per diem and mileage but no salary, the only unpaid legislature in the country.",
           },
           {
             prompt:
@@ -170,14 +208,14 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
               "A New Mexico judge is first appointed, then must win a ___ election, then face retention votes.",
             answer: "partisan",
             explanation:
-              "New Mexico blends appointment, partisan election, and retention — a distinctive three-step judicial method.",
+              "New Mexico blends appointment, partisan election, and retention, a distinctive three-step judicial method.",
           },
           {
             prompt:
               "TRUE or FALSE: New Mexico pays its legislators an annual salary like other states.",
             answer: "false",
             explanation:
-              "False. New Mexico is the only state with an unpaid legislature — legislators receive only per diem and mileage.",
+              "False. New Mexico is the only state with an unpaid legislature: legislators receive only per diem and mileage.",
           },
         ],
       },
@@ -214,20 +252,20 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
             ],
             correctIndex: 1,
             explanation:
-              "New Mexico is home to 19 Pueblos plus the Navajo Nation and Apache tribes — sovereign governments.",
+              "New Mexico is home to 19 Pueblos plus the Navajo Nation and Apache tribes, sovereign governments.",
             sourceLessonSlug: "nm-bilingual",
           },
           {
             prompt: "What is unique about New Mexico's legislature?",
             options: [
               "It has 400 members",
-              "It is the only fully volunteer (unpaid) state legislature — no salary, only per diem",
+              "It is the only fully volunteer (unpaid) state legislature: no salary, only per diem",
               "It meets year-round",
               "It is appointed",
             ],
             correctIndex: 1,
             explanation:
-              "New Mexico legislators receive no salary — the only unpaid legislature in the nation.",
+              "New Mexico legislators receive no salary, the only unpaid legislature in the nation.",
             sourceLessonSlug: "nm-unpaid-legislature",
           },
           {
@@ -253,7 +291,7 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
             ],
             correctIndex: 1,
             explanation:
-              "New Mexico blends appointment, partisan election, and retention — a three-step hybrid.",
+              "New Mexico blends appointment, partisan election, and retention, a three-step hybrid.",
             sourceLessonSlug: "nm-executive-courts",
           },
           {
@@ -273,7 +311,7 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
             prompt: "Can New Mexico citizens start a general law by initiative?",
             options: [
               "Yes, a strong initiative",
-              "No — there is no statewide initiative; the Legislature proposes amendments for voters",
+              "No, there is no statewide initiative; the Legislature proposes amendments for voters",
               "Only in even years",
               "Only in Spanish",
             ],
@@ -307,7 +345,7 @@ New Mexico has **no statewide citizen initiative** for general laws; **constitut
             prompt: "Why does this course tell you to VERIFY New Mexico's voting rules?",
             options: [
               "Because New Mexico has no elections office",
-              "Because registration and early/absentee rules are run by county clerks and change — confirm at sos.nm.gov",
+              "Because registration and early/absentee rules are run by county clerks and change; confirm at sos.nm.gov",
               "Because only Congress sets them",
               "Because voting is secret",
             ],

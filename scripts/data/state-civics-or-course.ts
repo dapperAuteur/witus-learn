@@ -1,4 +1,4 @@
-// Authored "Oregon Civics: How Your State Government Works" — the Oregon entry in the
+// Authored "Oregon Civics: How Your State Government Works", the Oregon entry in the
 // per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Oregon's version.
 //
@@ -20,23 +20,23 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_OR_COURSE: AuthoredCourse = {
   title: "Oregon Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Oregon governs itself — and how you take part where you live. Oregon shaped American democracy twice over: it gave the nation the 'Oregon System' — the modern citizen initiative and referendum, copied by states everywhere — and it was the FIRST state to run all its elections entirely by mail, later pioneering automatic voter registration too. You'll learn Oregon's Constitution of 1859, its plural executive (no Lieutenant Governor), its Legislature of 30 senators and 60 representatives, how it elects judges on a nonpartisan ballot, and its counties, cities, and nationally known land-use planning. Time-sensitive facts are flagged, pointing to sos.oregon.gov. Cited to Oregon's own official sources (oregonlegislature.gov, sos.oregon.gov, courts.oregon.gov).",
+    "A practical, non-partisan guide to how the state of Oregon governs itself, and how you take part where you live. Oregon shaped American democracy twice over: it gave the nation the 'Oregon System' (the modern citizen initiative and referendum, copied by states everywhere) and it was the FIRST state to run all its elections entirely by mail, later pioneering automatic voter registration too. You'll learn Oregon's Constitution of 1859, its plural executive (no Lieutenant Governor), its Legislature of 30 senators and 60 representatives, how it elects judges on a nonpartisan ballot, and its counties, cities, and nationally known land-use planning. Time-sensitive facts are flagged, pointing to sos.oregon.gov. Cited to Oregon's own official sources (oregonlegislature.gov, sos.oregon.gov, courts.oregon.gov).",
   lessons: [
     // ── Section 1: Constitution + the Oregon System ──────────────────────
     {
       slug: "or-oregon-system",
       title: "1 · The 'Oregon System': how Oregon gave the nation direct democracy",
       section: "What Makes Oregon Unique",
-      body: `Oregon governs under its **Constitution of 1859**, adopted when Oregon became the **33rd state on February 14, 1859.** But Oregon's biggest mark on American government came a bit later — and it spread nationwide.
+      body: `Oregon governs under its **Constitution of 1859**, adopted when Oregon became the **33rd state on February 14, 1859.** But Oregon's biggest mark on American government came a bit later, and it spread nationwide.
 
-**The Oregon System.** In **1902**, Oregon voters amended their constitution to add the **initiative and referendum** — the power for **citizens to make and repeal laws directly at the ballot.** This package became famous as **"the Oregon System,"** and it was so influential that **states across the country copied it** in the Progressive Era (Oregon Secretary of State, n.d.). When you studied direct democracy in California, Colorado, or Washington, you were looking at Oregon's idea, exported.
+**The Oregon System.** In **1902**, Oregon voters amended their constitution to add the **initiative and referendum**, the power for **citizens to make and repeal laws directly at the ballot.** This package became famous as **"the Oregon System,"** and it was so influential that **states across the country copied it** in the Progressive Era (Oregon Secretary of State, n.d.). When you studied direct democracy in California, Colorado, or Washington, you were looking at Oregon's idea, exported.
 
 Oregon's direct-democracy tools include (Oregon Secretary of State, n.d.):
-- **Initiative** — citizens gather signatures to put a **statute or a constitutional amendment** directly on the ballot.
-- **Referendum** — voters can **reject** a law the Legislature passed (and the Legislature can also refer measures to voters).
-- **Recall** — voters can petition to remove elected officials.
+- **Initiative**: citizens gather signatures to put a **statute or a constitutional amendment** directly on the ballot.
+- **Referendum**: voters can **reject** a law the Legislature passed (and the Legislature can also refer measures to voters).
+- **Recall**: voters can petition to remove elected officials.
 
-This is the through-line of Oregon civics: **Oregon didn't just adopt direct democracy — it invented the modern American version of it**, and its ballots still carry many measures each cycle.
+This is the through-line of Oregon civics: **Oregon didn't just adopt direct democracy, it invented the modern American version of it**, and its ballots still carry many measures each cycle.
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Oregon's own government (oregonlegislature.gov, sos.oregon.gov, courts.oregon.gov) is the authoritative source. When something is time-sensitive, we say so.
 
@@ -52,15 +52,27 @@ This is the through-line of Oregon civics: **Oregon didn't just adopt direct dem
       slug: "or-vote-by-mail",
       title: "2 · Oregon went first: all-mail voting and automatic registration",
       section: "Elections",
-      body: `Oregon changed how Americans vote — twice.
+      recallContent: [
+        {
+          prompt: "What is 'the Oregon System,' and when did Oregon adopt it?",
+          answer:
+            "The citizen initiative and referendum, added to the state constitution in 1902 and later copied by states across the country.",
+        },
+        {
+          prompt: "Name Oregon's three direct-democracy tools.",
+          answer:
+            "Initiative (put a statute or amendment on the ballot), referendum (reject or vote on a law), and recall (remove elected officials).",
+        },
+      ],
+      body: `Oregon changed how Americans vote, twice.
 
-**The first all vote-by-mail state.** Oregon was the **FIRST state to conduct all its elections entirely by mail.** After years of experiments, Oregon voters approved all-mail elections by **initiative in 1998**, and Oregon has run its elections by mail ever since — the model **Washington and Colorado later followed** (Oregon Secretary of State, n.d.). Every registered voter is **mailed a ballot**; you return it **by mail (postage prepaid) or at an official drop box** by Election Day.
+**The first all vote-by-mail state.** Oregon was the **FIRST state to conduct all its elections entirely by mail.** After years of experiments, Oregon voters approved all-mail elections by **initiative in 1998**, and Oregon has run its elections by mail ever since, the model **Washington and Colorado later followed** (Oregon Secretary of State, n.d.). Every registered voter is **mailed a ballot**; you return it **by mail (postage prepaid) or at an official drop box** by Election Day.
 
-**"Motor Voter" automatic registration.** In **2016**, Oregon became the **first state to launch automatic voter registration** — often called **"Oregon Motor Voter."** When eligible residents interact with the DMV, they are **automatically registered to vote** (with a chance to opt out), rather than having to fill out a separate form. This too has since spread to other states (Oregon Secretary of State, n.d.).
+**"Motor Voter" automatic registration.** In **2016**, Oregon became the **first state to launch automatic voter registration**, often called **"Oregon Motor Voter."** When eligible residents interact with the DMV, they are **automatically registered to vote** (with a chance to opt out), rather than having to fill out a separate form. This too has since spread to other states (Oregon Secretary of State, n.d.).
 
 ⚠️ **Time-sensitive.** Registration details, drop-box locations, and deadlines are administered by **county clerks** and can change. Confirm the **current** rules and your ballot status at **sos.oregon.gov** or your county clerk before each election.
 
-The takeaway: on the *mechanics* of voting — all-mail ballots and automatic registration — **Oregon has repeatedly gone first**, and much of the country followed.
+The takeaway: on the *mechanics* of voting (all-mail ballots and automatic registration) **Oregon has repeatedly gone first**, and much of the country followed.
 
 **Check yourself.** What two national "firsts" did Oregon achieve in how people register and vote?
 
@@ -73,14 +85,26 @@ The takeaway: on the *mechanics* of voting — all-mail ballots and automatic re
       slug: "or-executive-legislature",
       title: "3 · The executive (no Lieutenant Governor) and the Legislature",
       section: "The Three Branches",
-      body: `**Executive — a plural executive with a twist.** Oregon voters elect several statewide officials, but with a notable gap (Oregon Secretary of State, n.d.):
-- **Governor** — the chief executive.
+      recallContent: [
+        {
+          prompt: "What national voting 'first' did Oregon achieve by initiative in 1998?",
+          answer:
+            "It became the first state to conduct all its elections entirely by mail, a model Washington and Colorado later followed.",
+        },
+        {
+          prompt: "What did Oregon pioneer in 2016, and how does it work?",
+          answer:
+            "Automatic voter registration ('Oregon Motor Voter'): eligible residents are registered automatically when they interact with the DMV, with a chance to opt out.",
+        },
+      ],
+      body: `**Executive: a plural executive with a twist.** Oregon voters elect several statewide officials, but with a notable gap (Oregon Secretary of State, n.d.):
+- **Governor**: the chief executive.
 - **Secretary of State**, **State Treasurer**, and **Attorney General** are each **elected separately.**
-- ⚠️ **Oregon has NO Lieutenant Governor.** Instead, the **Secretary of State is first in line** to succeed the Governor — a Constitution-of-1859 arrangement that has actually mattered (Oregon has seen the Secretary of State become Governor on a vacancy). (Voters approved *creating* a Lieutenant Governor in concept in a past measure, but confirm the **current** succession law at sos.oregon.gov.)
+- ⚠️ **Oregon has NO Lieutenant Governor.** Instead, the **Secretary of State is first in line** to succeed the Governor, a Constitution-of-1859 arrangement that has actually mattered (Oregon has seen the Secretary of State become Governor on a vacancy). (Voters approved *creating* a Lieutenant Governor in concept in a past measure, but confirm the **current** succession law at sos.oregon.gov.)
 
-**Legislative — the Oregon Legislative Assembly.** A bicameral body meeting in Salem (Oregon State Legislature, n.d.):
-- **House of Representatives — 60 representatives**, elected to **2-year terms.**
-- **Senate — 30 senators**, elected to **4-year terms.**
+**Legislative: the Oregon Legislative Assembly.** A bicameral body meeting in Salem (Oregon State Legislature, n.d.):
+- **House of Representatives: 60 representatives**, elected to **2-year terms.**
+- **Senate: 30 senators**, elected to **4-year terms.**
 - It is a **citizen legislature** without long sessions; Oregon added **annual** sessions (a short session in even years) by a 2010 measure.
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
@@ -97,21 +121,33 @@ The takeaway: on the *mechanics* of voting — all-mail ballots and automatic re
       slug: "or-bill-to-law",
       title: "4 · How a bill becomes an Oregon law",
       section: "Making Law",
-      body: `Oregon makes law **two ways** — through the Legislature, or directly by the voters (the Oregon System).
+      recallContent: [
+        {
+          prompt: "Oregon has no Lieutenant Governor, so who is first in line to succeed the Governor?",
+          answer:
+            "The Secretary of State, who is elected separately and has become Governor when a vacancy occurred.",
+        },
+        {
+          prompt: "How many members sit in each chamber of Oregon's Legislature, and for how long?",
+          answer:
+            "The House has 60 representatives elected to 2-year terms; the Senate has 30 senators elected to 4-year terms.",
+        },
+      ],
+      body: `Oregon makes law **two ways**: through the Legislature, or directly by the voters (the Oregon System).
 
-**Path 1 — the Legislature** (Oregon State Legislature, n.d.):
+**Path 1: the Legislature** (Oregon State Legislature, n.d.):
 1. **Introduction.** A legislator introduces a bill in the House or Senate.
 2. **Committee.** Hearings, amendments, and a committee vote.
 3. **Floor votes.** Both chambers must pass the bill.
 4. **Governor.** The Governor may sign, veto (two-thirds override), or let it become law.
 
-A distinctive Oregon wrinkle: because Oregon requires a **two-thirds "quorum"** to do business, a **minority of legislators can block action by walking out** and denying quorum — Oregon has seen high-profile legislative **walkouts** used as a tactic. (A 2022 ballot measure now disqualifies legislators with many unexcused absences from re-election — a change worth verifying for current effect.)
+A distinctive Oregon wrinkle: because Oregon requires a **two-thirds "quorum"** to do business, a **minority of legislators can block action by walking out** and denying quorum. Oregon has seen high-profile legislative **walkouts** used as a tactic. (A 2022 ballot measure now disqualifies legislators with many unexcused absences from re-election, a change worth verifying for current effect.)
 
-**Path 2 — the voters (the Oregon System):**
-- **Initiative** — put a statute or constitutional amendment directly on the ballot.
-- **Referendum** — reject a law the Legislature passed, or vote on one the Legislature refers.
+**Path 2, the voters (the Oregon System):**
+- **Initiative**: put a statute or constitutional amendment directly on the ballot.
+- **Referendum**: reject a law the Legislature passed, or vote on one the Legislature refers.
 
-Oregon voters see **many ballot measures** each cycle — reading them is a real civic task here, exactly as the Oregon System's designers intended.
+Oregon voters see **many ballot measures** each cycle. Reading them is a real civic task here, exactly as the Oregon System's designers intended.
 
 **Check yourself.** What is a legislative "walkout," and what are the two Oregon-System tools voters can use to make or unmake law?
 
@@ -125,14 +161,26 @@ Oregon voters see **many ballot measures** each cycle — reading them is a real
       slug: "or-courts-local",
       title: "5 · Nonpartisan judges, counties, and Oregon's famous land-use planning",
       section: "Local Government & Courts",
-      body: `**How Oregon picks its judges.** Oregon **elects** its judges on a **NONPARTISAN ballot** — no party label appears next to their names (Oregon Judicial Department, n.d.). The **Oregon Supreme Court** has **7 justices**, elected statewide to **6-year terms**; Court of Appeals and Circuit judges are elected similarly. When a seat opens mid-term, the **Governor appoints** a replacement who then stands for election.
+      recallContent: [
+        {
+          prompt: "What are the two ways Oregon makes law?",
+          answer:
+            "Through the Legislature (a bill passed by both chambers and signed by the Governor) or directly by the voters using the Oregon System (initiative and referendum).",
+        },
+        {
+          prompt: "What is a legislative 'walkout' in Oregon?",
+          answer:
+            "Because Oregon requires a two-thirds quorum to do business, a minority of legislators can block action by leaving and denying that quorum.",
+        },
+      ],
+      body: `**How Oregon picks its judges.** Oregon **elects** its judges on a **NONPARTISAN ballot**, no party label appears next to their names (Oregon Judicial Department, n.d.). The **Oregon Supreme Court** has **7 justices**, elected statewide to **6-year terms**; Court of Appeals and Circuit judges are elected similarly. When a seat opens mid-term, the **Governor appoints** a replacement who then stands for election.
 
 **Local government** (Oregon State Legislature, n.d.):
 - **36 counties**, governed by elected **boards of commissioners**, with many Oregon counties (and cities) operating under **home-rule charters.**
 - **Cities** run local services; Oregon has a strong home-rule tradition.
 - **Special districts** handle schools, fire, water, and transit.
 
-**A national first in land-use planning.** Oregon is famous for its **statewide land-use planning system**, created in **1973 (Senate Bill 100)**. It requires cities to draw **urban growth boundaries** — lines that concentrate development inside cities and **protect surrounding farmland and forests from sprawl.** It's one of the most distinctive local-government features in the country and a recurring subject of Oregon ballot measures (so, ⚠️ time-sensitive — confirm current rules). It's a good example of how Oregon's civic choices (planning, the environment) show up concretely in how communities grow.
+**A national first in land-use planning.** Oregon is famous for its **statewide land-use planning system**, created in **1973 (Senate Bill 100)**. It requires cities to draw **urban growth boundaries**, lines that concentrate development inside cities and **protect surrounding farmland and forests from sprawl.** It's one of the most distinctive local-government features in the country and a recurring subject of Oregon ballot measures (so, ⚠️ time-sensitive: confirm current rules). It's a good example of how Oregon's civic choices (planning, the environment) show up concretely in how communities grow.
 
 **Check yourself.** How are Oregon judges chosen, and what does an "urban growth boundary" do?
 
@@ -146,16 +194,28 @@ Oregon voters see **many ballot measures** each cycle — reading them is a real
       slug: "or-get-involved",
       title: "6 · How to take part where you live",
       section: "Get Involved",
-      body: `Oregon's civic tools are among the most open in the nation — use them (Oregon Secretary of State, n.d.):
+      recallContent: [
+        {
+          prompt: "How does Oregon choose its judges?",
+          answer:
+            "It elects them on a nonpartisan ballot (no party label appears by their names); the 7 Supreme Court justices serve 6-year terms, and the Governor fills mid-term vacancies.",
+        },
+        {
+          prompt: "What did Oregon's 1973 land-use law (SB 100) create, and what does an urban growth boundary do?",
+          answer:
+            "It created statewide land-use planning with urban growth boundaries, which concentrate development inside cities and protect surrounding farmland and forests from sprawl.",
+        },
+      ],
+      body: `Oregon's civic tools are among the most open in the nation, so use them (Oregon Secretary of State, n.d.):
 
-- **Vote — it's mailed to you, and you're likely already registered.** Thanks to all-mail voting and automatic registration, participating is easy: watch for your ballot, mark it, and return it by mail or drop box by Election Day. Verify your status at sos.oregon.gov.
-- **Read the measures.** Oregon ballots carry **many initiatives and referendums** — the Oregon System in action. Your vote on them directly makes or unmakes law.
-- **Start something.** Sign or circulate an **initiative** (statute or amendment) or a **referendum** to challenge a law — Oregon's on-ramps are wide open.
+- **Vote: it's mailed to you, and you're likely already registered.** Thanks to all-mail voting and automatic registration, participating is easy: watch for your ballot, mark it, and return it by mail or drop box by Election Day. Verify your status at sos.oregon.gov.
+- **Read the measures.** Oregon ballots carry **many initiatives and referendums**, the Oregon System in action. Your vote on them directly makes or unmakes law.
+- **Start something.** Sign or circulate an **initiative** (statute or amendment) or a **referendum** to challenge a law. Oregon's on-ramps are wide open.
 - **Show up locally.** County commissions, city councils, and school boards meet publicly; land-use and growth decisions are especially active in Oregon.
-- **Contact your legislators** in Salem — you have one Representative and one Senator.
-- **Run** — school board, city council, special-district, and county offices are reachable local starting points.
+- **Contact your legislators** in Salem: you have one Representative and one Senator.
+- **Run**: school board, city council, special-district, and county offices are reachable local starting points.
 
-**The habit to build:** pick **one** ballot measure this cycle and follow it — who's behind it, what it does, how it's funded. In Oregon, that measure might become law by your vote.
+**The habit to build:** pick **one** ballot measure this cycle and follow it: who's behind it, what it does, how it's funded. In Oregon, that measure might become law by your vote.
 
 **Check yourself.** Name two reasons voting is unusually easy in Oregon, and one direct-democracy action you can start.
 
@@ -200,7 +260,7 @@ Oregon voters see **many ballot measures** each cycle — reading them is a real
             answer: "State",
             accept: ["state"],
             explanation:
-              "Under Oregon's constitution the Secretary of State is first in the line of succession — and has become Governor on a vacancy.",
+              "Under Oregon's constitution the Secretary of State is first in the line of succession, and has become Governor on a vacancy.",
           },
           {
             prompt:
@@ -214,7 +274,7 @@ Oregon voters see **many ballot measures** each cycle — reading them is a real
               "TRUE or FALSE: Oregon elects its judges in openly partisan (party-labeled) elections.",
             answer: "false",
             explanation:
-              "False. Oregon elects judges on a NONPARTISAN ballot — no party label appears next to their names.",
+              "False. Oregon elects judges on a NONPARTISAN ballot, no party label appears next to their names.",
           },
         ],
       },
@@ -303,7 +363,7 @@ Oregon voters see **many ballot measures** each cycle — reading them is a real
             ],
             correctIndex: 1,
             explanation:
-              "Because Oregon requires a two-thirds quorum, a minority can block business by walking out — a tactic used in high-profile disputes.",
+              "Because Oregon requires a two-thirds quorum, a minority can block business by walking out, a tactic used in high-profile disputes.",
             sourceLessonSlug: "or-bill-to-law",
           },
           {
@@ -329,7 +389,7 @@ Oregon voters see **many ballot measures** each cycle — reading them is a real
             ],
             correctIndex: 1,
             explanation:
-              "SB 100 created statewide planning with urban growth boundaries — a nationally distinctive land-use system.",
+              "SB 100 created statewide planning with urban growth boundaries, a nationally distinctive land-use system.",
             sourceLessonSlug: "or-courts-local",
           },
           {
@@ -349,7 +409,7 @@ Oregon voters see **many ballot measures** each cycle — reading them is a real
             prompt: "Why does this course tell you to VERIFY Oregon's voting and land-use rules?",
             options: [
               "Because Oregon has no elections office",
-              "Because registration/ballot details are run by county clerks and land-use rules recur on ballots and change — confirm at sos.oregon.gov",
+              "Because registration/ballot details are run by county clerks and land-use rules recur on ballots and change, confirm at sos.oregon.gov",
               "Because only Congress sets them",
               "Because voting is secret",
             ],

@@ -1,4 +1,4 @@
-// Authored "Missouri Civics: How Your State Government Works" — the Missouri entry in
+// Authored "Missouri Civics: How Your State Government Works", the Missouri entry in
 // the per-state Civics layer on Learn.WitUS. State-level companion to the general
 // Civics courses: those teach the SYSTEM; this teaches Missouri's version.
 //
@@ -19,25 +19,25 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_MO_COURSE: AuthoredCourse = {
   title: "Missouri Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Missouri governs itself — and how you take part where you live. Missouri gave American government a nationally copied idea: the 'Missouri Plan' for choosing judges by merit selection plus retention elections, now used in some form by many states. You'll learn Missouri's Constitution of 1945, its plural executive of six statewide officers, its General Assembly of 34 senators and 163 representatives, its citizen initiative and referendum, and its counties and independent city of St. Louis. Time-sensitive facts (voter ID, ballot measures) are flagged, pointing to sos.mo.gov. Cited to Missouri's own official sources (house.mo.gov, senate.mo.gov, sos.mo.gov, courts.mo.gov).",
+    "A practical, non-partisan guide to how the state of Missouri governs itself, and how you take part where you live. Missouri gave American government a nationally copied idea: the 'Missouri Plan' for choosing judges by merit selection plus retention elections, now used in some form by many states. You'll learn Missouri's Constitution of 1945, its plural executive of six statewide officers, its General Assembly of 34 senators and 163 representatives, its citizen initiative and referendum, and its counties and independent city of St. Louis. Time-sensitive facts (voter ID, ballot measures) are flagged, pointing to sos.mo.gov. Cited to Missouri's own official sources (house.mo.gov, senate.mo.gov, sos.mo.gov, courts.mo.gov).",
   lessons: [
     // ── Section 1: The Missouri Plan ─────────────────────────────────────
     {
       slug: "mo-missouri-plan",
       title: "1 · The 'Missouri Plan': how Missouri taught the nation to pick judges",
       section: "What Makes Missouri Unique",
-      body: `Missouri's biggest contribution to American government is a way of **choosing judges** — so influential it carries the state's name nationwide: the **"Missouri Plan."**
+      body: `Missouri's biggest contribution to American government is a way of **choosing judges**, so influential it carries the state's name nationwide: the **"Missouri Plan."**
 
 Missouri governs under its **Constitution of 1945** (its fourth), and Missouri became the **24th state on August 10, 1821** (as part of the Missouri Compromise you may recall from Maine's lesson). But the idea that made Missouri famous came in **1940**, when Missouri voters adopted **merit selection with retention elections** for many judges (Missouri Courts, n.d.).
 
 **How the Missouri Plan works** (Missouri Courts, n.d.):
 1. **A nonpartisan nominating commission** reviews applicants for a judgeship and sends the Governor a short list of the most qualified.
-2. The **Governor appoints** a judge **from that list** — not from the whole field.
+2. The **Governor appoints** a judge **from that list**, not from the whole field.
 3. After serving a short time, the judge faces voters in a **nonpartisan yes/no "retention" election**, and again periodically after that.
 
-The goal is to blend **professional merit** (the commission screens for qualifications) with **public accountability** (voters can remove a judge) — while avoiding big-money, openly partisan judicial campaigns. **Many states copied it**, which is why — when you studied Colorado, Nebraska, or Alaska — you met the same "commission → appoint → retain" method. It started here.
+The goal is to blend **professional merit** (the commission screens for qualifications) with **public accountability** (voters can remove a judge), while avoiding big-money, openly partisan judicial campaigns. **Many states copied it**, which is why, when you studied Colorado, Nebraska, or Alaska, you met the same "commission → appoint → retain" method. It started here.
 
-⚠️ In Missouri the Plan covers the **appellate courts and some large urban trial courts**; **many other Missouri trial judges are still elected** in partisan races — a split worth confirming at courts.mo.gov.
+⚠️ In Missouri the Plan covers the **appellate courts and some large urban trial courts**; **many other Missouri trial judges are still elected** in partisan races, a split worth confirming at courts.mo.gov.
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Missouri's own government (house.mo.gov, senate.mo.gov, sos.mo.gov, courts.mo.gov) is the authoritative source.
 
@@ -51,18 +51,30 @@ The goal is to blend **professional merit** (the commission screens for qualific
     // ── Section 2: The executive ─────────────────────────────────────────
     {
       slug: "mo-executive",
-      title: "2 · Missouri's plural executive — six statewide officers",
+      title: "2 · Missouri's plural executive: six statewide officers",
       section: "The Three Branches",
+      recallContent: [
+        {
+          prompt: "What are the three steps of the Missouri Plan for choosing judges?",
+          answer:
+            "A nonpartisan nominating commission sends the Governor a short list of the most qualified applicants, the Governor appoints a judge from that list, and the judge then faces voters in periodic nonpartisan yes/no retention elections.",
+        },
+        {
+          prompt: "Why is this merit-selection method named the 'Missouri Plan'?",
+          answer:
+            "Missouri adopted it first, in 1940, and many other states later copied the same nominate, appoint, and retain model, so it kept Missouri's name.",
+        },
+      ],
       body: `Missouri has a **plural executive**: voters elect **six** separate statewide officials, so executive power is divided among independently elected officials (Missouri Secretary of State, n.d.):
 
-1. **Governor** — the chief executive.
-2. **Lieutenant Governor** — elected **separately** (can be a different party than the Governor); presides over the Senate.
-3. **Secretary of State** — runs elections and keeps state records.
-4. **State Auditor** — audits government (notably, in Missouri the Auditor is the **only statewide office regularly elected in a presidential-year cycle offset** from the others in some periods — but its core job is independent oversight).
-5. **State Treasurer** — manages state funds.
-6. **Attorney General** — the state's lawyer.
+1. **Governor**: the chief executive.
+2. **Lieutenant Governor**: elected **separately** (can be a different party than the Governor); presides over the Senate.
+3. **Secretary of State**: runs elections and keeps state records.
+4. **State Auditor**: audits government (notably, in Missouri the Auditor is the **only statewide office regularly elected in a presidential-year cycle offset** from the others in some periods, but its core job is independent oversight).
+5. **State Treasurer**: manages state funds.
+6. **Attorney General**: the state's lawyer.
 
-Because these officials are elected on their own, Missouri — like Washington or Illinois — can end up with a **Governor of one party and other statewide officers of another**, and they can check one another.
+Because these officials are elected on their own, Missouri, like Washington or Illinois, can end up with a **Governor of one party and other statewide officers of another**, and they can check one another.
 
 The **Judicial** branch (chosen largely by the Missouri Plan, Lesson 1) and the **Legislative** branch (the General Assembly, next) complete the three.
 
@@ -80,10 +92,22 @@ The **Judicial** branch (chosen largely by the Missouri Plan, Lesson 1) and the 
       slug: "mo-legislature",
       title: "3 · The General Assembly and how a bill becomes law",
       section: "Making Law",
-      body: `**Legislative — the Missouri General Assembly.** A bicameral body meeting in Jefferson City (Missouri General Assembly, n.d.):
-- **House of Representatives — 163 representatives**, elected to **2-year terms.**
-- **Senate — 34 senators**, elected to **4-year terms.**
-- Missouri has **term limits** — a total of **8 years in each chamber (16 years total)** in the General Assembly.
+      recallContent: [
+        {
+          prompt: "How many statewide executive officers do Missouri voters elect, and what is that arrangement called?",
+          answer:
+            "Six, an arrangement called a plural executive: the Governor, Lieutenant Governor, Secretary of State, State Auditor, State Treasurer, and Attorney General.",
+        },
+        {
+          prompt: "Why can Missouri's Governor and other statewide officers be from different parties?",
+          answer:
+            "Because voters elect each of the six officers separately rather than having the Governor choose them, so they can come from different parties and check one another.",
+        },
+      ],
+      body: `**Legislative: the Missouri General Assembly.** A bicameral body meeting in Jefferson City (Missouri General Assembly, n.d.):
+- **House of Representatives: 163 representatives**, elected to **2-year terms.**
+- **Senate: 34 senators**, elected to **4-year terms.**
+- Missouri has **term limits**: a total of **8 years in each chamber (16 years total)** in the General Assembly.
 
 **How a bill becomes law:**
 1. **Introduction.** A legislator introduces a bill in the House or Senate.
@@ -92,8 +116,8 @@ The **Judicial** branch (chosen largely by the Missouri Plan, Lesson 1) and the 
 4. **Governor.** The Governor may **sign**, **veto**, or **line-item veto** appropriations; a **two-thirds** override is possible in each chamber.
 
 **Direct democracy, too.** Missouri pairs its Legislature with **citizen tools** (Missouri Secretary of State, n.d.):
-- **Initiative** — citizens gather signatures to put a **statute or a constitutional amendment** on the ballot.
-- **Referendum** — voters can **reject** a law the Legislature passed.
+- **Initiative**: citizens gather signatures to put a **statute or a constitutional amendment** on the ballot.
+- **Referendum**: voters can **reject** a law the Legislature passed.
 Missouri voters have used the initiative for major decisions, so **ballot measures are a real feature** of Missouri civics.
 
 **Check yourself.** How many members sit in each chamber of the General Assembly, and what two direct-democracy tools do Missouri citizens have?
@@ -108,14 +132,26 @@ Missouri voters have used the initiative for major decisions, so **ballot measur
       slug: "mo-local-government",
       title: "4 · Local government: counties, charters, and the independent city of St. Louis",
       section: "Local Government",
+      recallContent: [
+        {
+          prompt: "How many members sit in each chamber of the Missouri General Assembly, and how long are their terms?",
+          answer:
+            "The House of Representatives has 163 members elected to 2-year terms, and the Senate has 34 members elected to 4-year terms, with a limit of 8 years per chamber.",
+        },
+        {
+          prompt: "What two direct-democracy tools do Missouri citizens have?",
+          answer:
+            "The initiative, used to place a statute or constitutional amendment on the ballot, and the referendum, used to reject a law the Legislature passed.",
+        },
+      ],
       body: `Missouri's local government has a distinctive quirk in one of its biggest cities (Missouri General Assembly, n.d.):
 
-- **114 counties** — governed by an elected **county commission** plus separately elected officials (sheriff, clerk, collector, assessor, prosecuting attorney). Some larger counties operate under **home-rule charters.**
-- ⚠️ **Plus one independent city: St. Louis.** The **City of St. Louis is NOT part of any county** — it is an **independent city**, having separated from St. Louis County in **1876.** So Missouri has "114 counties and one independent city" (you'll sometimes see "115 first-class subdivisions"). This is the same independent-city idea you met in Virginia, but Missouri has essentially just **one** — St. Louis — which is why locals distinguish **"the City" (St. Louis City) from "the County" (St. Louis County)** as two separate governments.
+- **114 counties**: governed by an elected **county commission** plus separately elected officials (sheriff, clerk, collector, assessor, prosecuting attorney). Some larger counties operate under **home-rule charters.**
+- ⚠️ **Plus one independent city: St. Louis.** The **City of St. Louis is NOT part of any county**: it is an **independent city**, having separated from St. Louis County in **1876.** So Missouri has "114 counties and one independent city" (you'll sometimes see "115 first-class subdivisions"). This is the same independent-city idea you met in Virginia, but Missouri has essentially just **one**, St. Louis, which is why locals distinguish **"the City" (St. Louis City) from "the County" (St. Louis County)** as two separate governments.
 - **Cities, towns, and villages** provide local services; Missouri has a strong tradition of municipal home rule for larger cities (including **Kansas City**).
 - **School districts and special districts** round out local government.
 
-The practical effect: in most of Missouri your county is a key unit — but if you live in **St. Louis City**, your city **is** your county-equivalent, a genuine local-government peculiarity.
+The practical effect: in most of Missouri your county is a key unit, but if you live in **St. Louis City**, your city **is** your county-equivalent, a genuine local-government peculiarity.
 
 **Check yourself.** How many counties does Missouri have, and what is unusual about the City of St. Louis?
 
@@ -129,15 +165,27 @@ The practical effect: in most of Missouri your county is a key unit — but if y
       slug: "mo-elections-involved",
       title: "5 · Elections and how to take part",
       section: "Get Involved",
+      recallContent: [
+        {
+          prompt: "How many counties does Missouri have, and who governs a county?",
+          answer:
+            "Missouri has 114 counties, each governed by an elected county commission plus separately elected officials such as the sheriff, clerk, collector, assessor, and prosecuting attorney.",
+        },
+        {
+          prompt: "What is unusual about the City of St. Louis?",
+          answer:
+            "It is an independent city that is not part of any county, having separated from St. Louis County in 1876, so 'the City' and 'the County' of St. Louis are two separate governments.",
+        },
+      ],
       body: `**Voting in Missouri.** ⚠️ **Time-sensitive:** Missouri requires a **photo ID** to vote in person (with provisional-ballot fallbacks), offers **in-person absentee/early voting** in the period before Election Day, and permits **absentee voting** under certain conditions. These rules have changed more than once and are administered by **county clerks and election boards.** Confirm the **current** ID, early-voting, and absentee rules at **sos.mo.gov** or your local election authority before you vote (Missouri Secretary of State, n.d.).
 
 **How to take part:**
-- **Register and vote** — bring photo ID for in-person voting; use early/absentee options if they fit; check your status at sos.mo.gov.
-- **Use direct democracy.** Sign or circulate an **initiative** (statute or amendment) or a **referendum** — Missouri voters decide major questions this way.
+- **Register and vote**: bring photo ID for in-person voting; use early/absentee options if they fit; check your status at sos.mo.gov.
+- **Use direct democracy.** Sign or circulate an **initiative** (statute or amendment) or a **referendum**. Missouri voters decide major questions this way.
 - **Show up locally.** County commissions, city councils, and school boards hold public meetings; in St. Louis, remember the **City** and the **County** are separate governments.
-- **Contact your legislators** in Jefferson City — you have one Representative and one Senator.
-- **Weigh in on judges.** Because of the Missouri Plan, you get a **yes/no retention vote** on many judges — an often-overlooked part of your ballot worth researching.
-- **Run** — school board, city council, and county offices are reachable local starting points.
+- **Contact your legislators** in Jefferson City, you have one Representative and one Senator.
+- **Weigh in on judges.** Because of the Missouri Plan, you get a **yes/no retention vote** on many judges, an often-overlooked part of your ballot worth researching.
+- **Run**: school board, city council, and county offices are reachable local starting points.
 
 **Check yourself.** What kind of vote does the Missouri Plan give you on many judges, and where should you confirm current voting rules?
 
@@ -161,7 +209,7 @@ The practical effect: in most of Missouri your county is a key unit — but if y
             answer: "Plan",
             accept: ["plan"],
             explanation:
-              "The Missouri Plan (1940): a commission nominates, the Governor appoints, and voters retain or remove judges — copied by many states.",
+              "The Missouri Plan (1940): a commission nominates, the Governor appoints, and voters retain or remove judges, copied by many states.",
           },
           {
             prompt:
@@ -190,7 +238,7 @@ The practical effect: in most of Missouri your county is a key unit — but if y
               "The City of St. Louis is unusual because it is not part of any ___.",
             answer: "county",
             explanation:
-              "St. Louis City separated from St. Louis County in 1876 and is an independent city — 'the City' and 'the County' are separate governments.",
+              "St. Louis City separated from St. Louis County in 1876 and is an independent city: 'the City' and 'the County' are separate governments.",
           },
           {
             prompt:
@@ -221,7 +269,7 @@ The practical effect: in most of Missouri your county is a key unit — but if y
             ],
             correctIndex: 1,
             explanation:
-              "The Missouri Plan (1940) blends a nominating commission, gubernatorial appointment, and yes/no retention votes — copied nationwide.",
+              "The Missouri Plan (1940) blends a nominating commission, gubernatorial appointment, and yes/no retention votes, copied nationwide.",
             sourceLessonSlug: "mo-missouri-plan",
           },
           {
@@ -322,7 +370,7 @@ The practical effect: in most of Missouri your county is a key unit — but if y
             prompt: "Why does this course tell you to VERIFY Missouri's voting rules?",
             options: [
               "Because Missouri has no elections office",
-              "Because photo-ID and early/absentee rules have changed and are run by county clerks — confirm at sos.mo.gov",
+              "Because photo-ID and early/absentee rules have changed and are run by county clerks (confirm at sos.mo.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],

@@ -1,4 +1,4 @@
-// Authored "New Hampshire Civics: How Your State Government Works" — the New Hampshire
+// Authored "New Hampshire Civics: How Your State Government Works", the New Hampshire
 // entry in the per-state Civics layer on Learn.WitUS. State-level companion to the
 // general Civics courses: those teach the SYSTEM; this teaches New Hampshire's version.
 //
@@ -19,22 +19,22 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_NH_COURSE: AuthoredCourse = {
   title: "New Hampshire Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of New Hampshire governs itself — and how you take part where you live. New Hampshire runs government unlike anywhere else: its House of Representatives has about 400 members — one of the largest legislative bodies in the English-speaking world — and legislators are paid just $100 a year, making it a true volunteer 'citizen legislature.' You'll learn New Hampshire's Constitution of 1784 (the second-oldest in the nation), its elected 5-member Executive Council that must approve the Governor's appointments, its 2-year governor term, its lack of a state income or sales tax ('the New Hampshire Advantage'), its appointed judiciary, its town-meeting tradition, and its protected first-in-the-nation presidential primary. Time-sensitive facts are flagged, pointing to sos.nh.gov. Cited to New Hampshire's own official sources (gencourt.state.nh.us, sos.nh.gov, courts.nh.gov).",
+    "A practical, non-partisan guide to how the state of New Hampshire governs itself, and how you take part where you live. New Hampshire runs government unlike anywhere else: its House of Representatives has about 400 members (one of the largest legislative bodies in the English-speaking world) and legislators are paid just $100 a year, making it a true volunteer 'citizen legislature.' You'll learn New Hampshire's Constitution of 1784 (the second-oldest in the nation), its elected 5-member Executive Council that must approve the Governor's appointments, its 2-year governor term, its lack of a state income or sales tax ('the New Hampshire Advantage'), its appointed judiciary, its town-meeting tradition, and its protected first-in-the-nation presidential primary. Time-sensitive facts are flagged, pointing to sos.nh.gov. Cited to New Hampshire's own official sources (gencourt.state.nh.us, sos.nh.gov, courts.nh.gov).",
   lessons: [
     // ── Section 1: The huge citizen legislature ──────────────────────────
     {
       slug: "nh-huge-legislature",
       title: "1 · The 400-member House: New Hampshire's giant citizen legislature",
       section: "What Makes New Hampshire Unique",
-      body: `Start with the fact that defines New Hampshire government: it has a **General Court** (the official name of its Legislature, shared with Massachusetts) with a **House of Representatives of about 400 members** — one of the **largest legislative bodies in the entire English-speaking world**, behind only the U.S. Congress and the British and Indian parliaments (New Hampshire General Court, n.d.).
+      body: `Start with the fact that defines New Hampshire government: it has a **General Court** (the official name of its Legislature, shared with Massachusetts) with a **House of Representatives of about 400 members**, one of the **largest legislative bodies in the entire English-speaking world**, behind only the U.S. Congress and the British and Indian parliaments (New Hampshire General Court, n.d.).
 
-**Just how big — and how "citizen."** With roughly **400 representatives** for a small-population state, each represents only a few thousand people — so your representative is often a **neighbor** you can actually reach. And here's the kicker: New Hampshire legislators are paid **just $100 per year** (plus mileage), a figure fixed in the constitution. That makes the General Court a genuine **volunteer "citizen legislature"** — people serve out of civic duty, not for a salary (New Hampshire General Court, n.d.).
+**Just how big, and how "citizen."** With roughly **400 representatives** for a small-population state, each represents only a few thousand people, so your representative is often a **neighbor** you can actually reach. And here's the kicker: New Hampshire legislators are paid **just $100 per year** (plus mileage), a figure fixed in the constitution. That makes the General Court a genuine **volunteer "citizen legislature"**: people serve out of civic duty, not for a salary (New Hampshire General Court, n.d.).
 
-The **Senate**, by contrast, is small — **24 senators.** So New Hampshire pairs a **giant, grassroots House** with a **compact Senate.**
+The **Senate**, by contrast, is small: **24 senators.** So New Hampshire pairs a **giant, grassroots House** with a **compact Senate.**
 
-Why it leads the course: this enormous, nearly unpaid House shapes New Hampshire's whole political culture — **extremely local, accessible, and participatory.** Ordinary residents run and win; testifying before a committee is routine.
+Why it leads the course: this enormous, nearly unpaid House shapes New Hampshire's whole political culture: **extremely local, accessible, and participatory.** Ordinary residents run and win; testifying before a committee is routine.
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but New Hampshire's own government (gencourt.state.nh.us, sos.nh.gov, courts.nh.gov) is the authoritative source. When something is time-sensitive — like the phase-out of a state tax — we say so.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but New Hampshire's own government (gencourt.state.nh.us, sos.nh.gov, courts.nh.gov) is the authoritative source. When something is time-sensitive, like the phase-out of a state tax, we say so.
 
 **Check yourself.** About how many members does the New Hampshire House have, and how much are legislators paid per year?
 
@@ -48,13 +48,26 @@ Why it leads the course: this enormous, nearly unpaid House shapes New Hampshire
       slug: "nh-executive-council",
       title: "2 · The 1784 Constitution, a 2-year Governor, and the Executive Council",
       section: "The Three Branches",
-      body: `New Hampshire governs under its **Constitution of 1784** — the **second-oldest state constitution still in use** (after Massachusetts's 1780). New Hampshire became the **9th state on June 21, 1788** — and it was the **decisive ninth ratification** that put the U.S. Constitution into effect (New Hampshire General Court, n.d.).
+      recallContent: [
+        {
+          prompt:
+            "About how many members are in the New Hampshire House, and how much are legislators paid per year?",
+          answer:
+            "About 400 members, and legislators are paid just $100 per year (plus mileage). That makes it a genuine volunteer citizen legislature.",
+        },
+        {
+          prompt: "How many members does the New Hampshire Senate have?",
+          answer:
+            "24 senators. New Hampshire pairs a giant, grassroots House with a compact Senate.",
+        },
+      ],
+      body: `New Hampshire governs under its **Constitution of 1784**, the **second-oldest state constitution still in use** (after Massachusetts's 1780). New Hampshire became the **9th state on June 21, 1788**, and it was the **decisive ninth ratification** that put the U.S. Constitution into effect (New Hampshire General Court, n.d.).
 
-**A 2-year Governor and no Lieutenant Governor.** New Hampshire's **Governor serves a 2-year term** — one of only **two states** (with **Vermont**) that still elect a governor every two years, and there is **no term limit.** New Hampshire also has **no Lieutenant Governor**; the **President of the Senate** is next in line to succeed the Governor (New Hampshire General Court, n.d.).
+**A 2-year Governor and no Lieutenant Governor.** New Hampshire's **Governor serves a 2-year term**, one of only **two states** (with **Vermont**) that still elect a governor every two years, and there is **no term limit.** New Hampshire also has **no Lieutenant Governor**; the **President of the Senate** is next in line to succeed the Governor (New Hampshire General Court, n.d.).
 
-**The Executive Council — a rare check on the Governor.** Like Massachusetts, New Hampshire elects an **Executive Council** — **five members**, each from a district — that **must approve many of the Governor's most important actions** (New Hampshire General Court, n.d.):
+**The Executive Council: a rare check on the Governor.** Like Massachusetts, New Hampshire elects an **Executive Council** (**five members**, each from a district) that **must approve many of the Governor's most important actions** (New Hampshire General Court, n.d.):
 - **Appointments** (including judges), **state contracts above a threshold**, **pardons**, and large expenditures.
-The Governor **cannot act alone** on these — the elected Council must agree. This makes New Hampshire's governorship comparatively **checked**: a five-member elected body sits between the Governor and much of the state's business. It's one of only a couple of states with such a council.
+The Governor **cannot act alone** on these: the elected Council must agree. This makes New Hampshire's governorship comparatively **checked**: a five-member elected body sits between the Governor and much of the state's business. It's one of only a couple of states with such a council.
 
 **Check yourself.** How long is New Hampshire's gubernatorial term, and what must the elected Executive Council approve?
 
@@ -68,15 +81,28 @@ The Governor **cannot act alone** on these — the elected Council must agree. T
       slug: "nh-taxes-lawmaking",
       title: "3 · The 'New Hampshire Advantage' and how a bill becomes law",
       section: "Making Law & Money",
-      body: `**No income tax, no sales tax.** New Hampshire is one of the very few states with **neither a broad-based state income tax on wages NOR a general state sales tax** — a combination locals call the **"New Hampshire Advantage"** (New Hampshire General Court, n.d.). Instead, the state leans heavily on **local property taxes** and **business taxes.** ⚠️ **Time-sensitive:** New Hampshire long taxed **interest and dividends** (not wages), but that tax has been **phased out** — so confirm the **current** tax landscape at the state's own sites rather than assuming a fixed answer. The absence of income and sales taxes profoundly shapes New Hampshire's budget debates and its low-tax political identity ("Live Free or Die").
+      recallContent: [
+        {
+          prompt:
+            "How old is New Hampshire's Constitution, and how long is the Governor's term?",
+          answer:
+            "The Constitution dates to 1784 (the second-oldest still in use, after Massachusetts's 1780), and the Governor serves a 2-year term with no term limit. New Hampshire has no Lieutenant Governor.",
+        },
+        {
+          prompt: "What is the Executive Council, and what must it approve?",
+          answer:
+            "An elected 5-member body (one member per district) that must approve many of the Governor's most important actions: appointments (including judges), large state contracts, and pardons.",
+        },
+      ],
+      body: `**No income tax, no sales tax.** New Hampshire is one of the very few states with **neither a broad-based state income tax on wages NOR a general state sales tax**, a combination locals call the **"New Hampshire Advantage"** (New Hampshire General Court, n.d.). Instead, the state leans heavily on **local property taxes** and **business taxes.** ⚠️ **Time-sensitive:** New Hampshire long taxed **interest and dividends** (not wages), but that tax has been **phased out**, so confirm the **current** tax landscape at the state's own sites rather than assuming a fixed answer. The absence of income and sales taxes profoundly shapes New Hampshire's budget debates and its low-tax political identity ("Live Free or Die").
 
 **How a bill becomes law** (New Hampshire General Court, n.d.):
 1. **Introduction.** A representative or senator introduces a bill.
-2. **Committee + hearings.** With ~400 House members and an open culture, **public hearings** are routine and accessible — ordinary residents testify often.
+2. **Committee + hearings.** With ~400 House members and an open culture, **public hearings** are routine and accessible. Ordinary residents testify often.
 3. **Floor votes.** Both the House and Senate must pass the bill.
 4. **Governor + Council note.** The Governor may sign or veto (a **two-thirds** override); recall that on **appointments and contracts**, the **Executive Council** also acts.
 
-New Hampshire has **no statewide citizen initiative** for general laws — lawmaking runs through the General Court and, locally, through **town meeting** (next).
+New Hampshire has **no statewide citizen initiative** for general laws. Lawmaking runs through the General Court and, locally, through **town meeting** (next).
 
 **Check yourself.** What two big taxes does New Hampshire NOT levy, and why should you verify its interest-and-dividends tax status?
 
@@ -89,14 +115,27 @@ New Hampshire has **no statewide citizen initiative** for general laws — lawma
       slug: "nh-courts-local",
       title: "4 · Appointed judges, 10 counties, and town meeting",
       section: "Local Government & Courts",
+      recallContent: [
+        {
+          prompt: "What is the 'New Hampshire Advantage'?",
+          answer:
+            "New Hampshire levies neither a broad-based state income tax on wages nor a general state sales tax. It relies mainly on local property taxes and business taxes.",
+        },
+        {
+          prompt:
+            "What time-sensitive tax detail should you verify, and does New Hampshire allow a statewide citizen initiative?",
+          answer:
+            "The interest-and-dividends tax has been phased out, so confirm the current tax landscape at the state's own sites. New Hampshire has no statewide citizen initiative for general laws; lawmaking runs through the General Court.",
+        },
+      ],
       body: `**How New Hampshire picks its judges.** New Hampshire does **not** elect its judges. Following the New England pattern, the **Governor nominates** a judge, the **Executive Council confirms**, and judges then serve **until the mandatory retirement age of 70** (New Hampshire Judicial Branch, n.d.). The **New Hampshire Supreme Court** has **5 justices.** Keeping judges appointed (and confirmed by the elected Council) puts them outside partisan campaigns.
 
-**Local government — towns first** (New Hampshire General Court, n.d.):
-- New Hampshire is a **town-based** New England state. Many towns govern by **open town meeting**, where **any registered voter can attend, debate, and vote** on the town budget and warrant articles — direct democracy at the local level. (Many towns now use the "SB 2" official-ballot form, but the town-meeting tradition remains central.)
+**Local government, towns first** (New Hampshire General Court, n.d.):
+- New Hampshire is a **town-based** New England state. Many towns govern by **open town meeting**, where **any registered voter can attend, debate, and vote** on the town budget and warrant articles, direct democracy at the local level. (Many towns now use the "SB 2" official-ballot form, but the town-meeting tradition remains central.)
 - New Hampshire has **10 counties**, which handle courts, jails, and some regional services, but the **town or city** is the center of daily local government.
 - **School districts** are run locally, often with their own district meetings.
 
-**The town meeting** is a defining New Hampshire (and New England) institution — the same participatory spirit as the 400-member House, applied to your own town's budget.
+**The town meeting** is a defining New Hampshire (and New England) institution, the same participatory spirit as the 400-member House, applied to your own town's budget.
 
 **Check yourself.** How are New Hampshire judges chosen, and what can any voter do at an open town meeting?
 
@@ -110,16 +149,29 @@ New Hampshire has **no statewide citizen initiative** for general laws — lawma
       slug: "nh-primary-involved",
       title: "5 · The first-in-the-nation primary and how to take part",
       section: "Get Involved",
-      body: `**First in the nation.** New Hampshire is famous for holding the **first presidential primary in the country**, a tradition **protected by state law** that directs the Secretary of State to schedule New Hampshire's primary **ahead of any similar contest** (New Hampshire Secretary of State, n.d.). ⚠️ **Time-sensitive:** the national primary calendar and party rules shift, and New Hampshire guards its first-primary status vigorously — confirm current dates and rules at **sos.nh.gov**. The tradition gives New Hampshire outsized attention in presidential politics and a strong culture of **retail, face-to-face campaigning.**
+      recallContent: [
+        {
+          prompt: "How are New Hampshire's judges chosen?",
+          answer:
+            "The Governor nominates a judge, the Executive Council confirms, and judges then serve until the mandatory retirement age of 70. Judges are not elected, and the Supreme Court has 5 justices.",
+        },
+        {
+          prompt:
+            "What can any registered voter do at an open town meeting, and how many counties does New Hampshire have?",
+          answer:
+            "At an open town meeting any registered voter can attend, debate, and vote on the town budget and warrant articles. New Hampshire has 10 counties, but the town or city is the center of daily local government.",
+        },
+      ],
+      body: `**First in the nation.** New Hampshire is famous for holding the **first presidential primary in the country**, a tradition **protected by state law** that directs the Secretary of State to schedule New Hampshire's primary **ahead of any similar contest** (New Hampshire Secretary of State, n.d.). ⚠️ **Time-sensitive:** the national primary calendar and party rules shift, and New Hampshire guards its first-primary status vigorously. Confirm current dates and rules at **sos.nh.gov**. The tradition gives New Hampshire outsized attention in presidential politics and a strong culture of **retail, face-to-face campaigning.**
 
 **How to take part:**
-- **Register and vote** — New Hampshire offers **same-day (Election-Day) registration**; check details at sos.nh.gov. In presidential years, you may vote in the **first-in-the-nation primary.**
+- **Register and vote**: New Hampshire offers **same-day (Election-Day) registration**; check details at sos.nh.gov. In presidential years, you may vote in the **first-in-the-nation primary.**
 - **Go to town meeting.** If your town holds one, **show up and vote** on the budget and warrant articles directly.
-- **Run — it's genuinely doable.** With ~400 House seats representing small populations, **ordinary residents win legislative office** here more easily than almost anywhere; local select boards and school boards are reachable too.
+- **Run, it's genuinely doable.** With ~400 House seats representing small populations, **ordinary residents win legislative office** here more easily than almost anywhere; local select boards and school boards are reachable too.
 - **Testify.** The General Court's culture of open hearings means your voice on a specific bill is welcomed.
-- **Contact your legislators** — you likely have **several** House members from your area (districts can elect multiple representatives) plus a senator.
+- **Contact your legislators**: you likely have **several** House members from your area (districts can elect multiple representatives) plus a senator.
 
-**The habit to build:** because New Hampshire government is so **local and accessible**, pick one town-meeting article or one bill and follow it — your participation carries unusual weight here.
+**The habit to build:** because New Hampshire government is so **local and accessible**, pick one town-meeting article or one bill and follow it. Your participation carries unusual weight here.
 
 **Check yourself.** What is New Hampshire's protected role in presidential elections, and name one reason running for office is unusually accessible here.
 
@@ -139,11 +191,11 @@ New Hampshire has **no statewide citizen initiative** for general laws — lawma
         items: [
           {
             prompt:
-              "New Hampshire's House of Representatives has about ___ members — one of the largest in the English-speaking world.",
+              "New Hampshire's House of Representatives has about ___ members, one of the largest in the English-speaking world.",
             answer: "400",
             accept: ["four hundred"],
             explanation:
-              "With ~400 representatives, each serves only a few thousand people; legislators are paid just $100/year — a true citizen legislature.",
+              "With ~400 representatives, each serves only a few thousand people; legislators are paid just $100/year, a true citizen legislature.",
           },
           {
             prompt:
@@ -198,7 +250,7 @@ New Hampshire has **no statewide citizen initiative** for general laws — lawma
             prompt: "What is distinctive about New Hampshire's House of Representatives?",
             options: [
               "It has only 10 members",
-              "It has about 400 members — one of the largest legislative bodies in the English-speaking world",
+              "It has about 400 members, one of the largest legislative bodies in the English-speaking world",
               "It is appointed by the Governor",
               "It meets once a decade",
             ],
@@ -212,14 +264,14 @@ New Hampshire has **no statewide citizen initiative** for general laws — lawma
             options: ["$100", "$50,000", "$100,000", "Nothing at all"],
             correctIndex: 0,
             explanation:
-              "The constitution fixes legislator pay at $100 per year (plus mileage) — a genuine volunteer legislature.",
+              "The constitution fixes legislator pay at $100 per year (plus mileage), a genuine volunteer legislature.",
             sourceLessonSlug: "nh-huge-legislature",
           },
           {
             prompt: "Which constitution governs New Hampshire, and how old is it?",
             options: [
-              "The 1784 Constitution — the second-oldest still in use",
-              "The 1959 Constitution — the newest",
+              "The 1784 Constitution, the second-oldest still in use",
+              "The 1959 Constitution, the newest",
               "The 1901 Constitution",
               "It has no written constitution",
             ],
@@ -238,7 +290,7 @@ New Hampshire has **no statewide citizen initiative** for general laws — lawma
             ],
             correctIndex: 1,
             explanation:
-              "The five-member elected Executive Council must approve many key gubernatorial actions — a rare check on the Governor.",
+              "The five-member elected Executive Council must approve many key gubernatorial actions, a rare check on the Governor.",
             sourceLessonSlug: "nh-executive-council",
           },
           {
@@ -285,7 +337,7 @@ New Hampshire has **no statewide citizen initiative** for general laws — lawma
             ],
             correctIndex: 1,
             explanation:
-              "Town meeting lets voters decide town budgets and warrant articles directly — direct democracy in New England towns.",
+              "Town meeting lets voters decide town budgets and warrant articles directly, direct democracy in New England towns.",
             sourceLessonSlug: "nh-courts-local",
           },
           {
@@ -305,7 +357,7 @@ New Hampshire has **no statewide citizen initiative** for general laws — lawma
             prompt: "Why does this course tell you to VERIFY New Hampshire's tax and primary details?",
             options: [
               "Because New Hampshire has no government website",
-              "Because the interest-and-dividends tax is being phased out and the primary calendar shifts — confirm at sos.nh.gov",
+              "Because the interest-and-dividends tax is being phased out and the primary calendar shifts. Confirm at sos.nh.gov",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
