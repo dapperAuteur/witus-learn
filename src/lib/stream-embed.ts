@@ -8,7 +8,8 @@
 // Registrable hosts we trust to serve a video player in an iframe. Match is exact
 // or a subdomain (e.g. `s.viloud.tv`). Extend this list to add a provider.
 export const STREAM_HOST_ALLOWLIST: readonly string[] = [
-  "viloud.tv", // Viloud (the current provider)
+  "viloud.tv", // Viloud
+  "wave.video", // Wave.Video (covers embed.wave.video and other subdomains)
   "youtube.com",
   "youtube-nocookie.com",
   "youtu.be",
