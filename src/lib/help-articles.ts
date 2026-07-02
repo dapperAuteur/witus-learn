@@ -250,6 +250,42 @@ lecture becomes several ordered parts that upload in order and play back in sequ
 learner (with Prev / Next). Nothing is lost if the tab closes mid-record; parts wait in the browser
 and drain when you're back online.`,
   },
+  {
+    slug: "keeping-courses-current",
+    title: "Keeping courses & content current (migrate + seed)",
+    category: "Operator",
+    keywords: ["seed", "migrate", "migration", "deploy", "update", "content", "current", "runbook", "operating"],
+    body: `# Keeping courses & content current
+
+Full runbook: **OPERATING.md** in the repo. The essentials:
+
+## The golden rule
+Code alone doesn't change what learners see — courses render from the **database**. After you
+change a course, **migrate (if the schema changed) then re-run its seed**:
+
+\`\`\`
+pnpm db:migrate:prod
+pnpm seed:<the affected seed>
+\`\`\`
+
+## Which seed owns what
+- **seed:courses** — civics (incl. all state-civics), the AI ladders, Hoodoo, Ed.L.D., cyber, and
+  most authored courses.
+- **seed:languages** — Spanish / French / Portuguese / Italian.
+- **seed:langchain** — the 3 LangGraph courses.
+- **seed:health** — NASM / ECS / Read-Your-Body. **seed:speedway** — ElementaryMBA.
+- **seed:faa** — FAA Part 107. **seed:bvc:real** — Better Vice Club. **seed:map** — the maps.
+
+Every seed is idempotent (upserts by slug), so re-running is always safe. On a fresh database, run
+**seed:tenants first**, then the content seeds.
+
+## Editing without a seed
+Lesson text, glossary, sources, and quick-recall prompts can be edited **in-app** on the
+**Curriculum** tab at \`/teach/<courseId>\` — those save straight to the database, no seed needed.
+
+## Learner reports
+\`pnpm reports:list\` (or \`/admin/reports\`) shows what learners filed via "Report a problem".`,
+  },
 ];
 
 export function helpArticleBySlug(slug: string): HelpArticle | undefined {
