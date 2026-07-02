@@ -1,0 +1,786 @@
+{
+  "slug": "langgraph-per-agent-rag",
+  "title": "Multi-Agent LangGraph with Per-Agent RAG",
+  "category": "AI & Technology",
+  "relatedProducts": ["centenarian-coach", "triage-agent-witus", "wanderlearn-field-reporter"],
+  "description": "Build one real multi-agent coach end to end, a LangGraph supervisor that routes each health question to the specialists that can actually answer it. Every specialist owns its own retrieval namespace, so a nutrition query never wades through workout documents, and each answer carries citations back to the snippets it was built from. You'll design the routing schema with Zod, guarantee ordering through the graph's shape, and isolate specialists by type so none can read another's findings, then measure routing, citation coverage, and grounding with LangSmith evals that gate every change. It's grounded in the open-source Centenarian Coach repo, TypeScript first with a Python translation track, and written to code along.",
+  "lessons": [
+    {
+      "type": "text", "section": "Module 0 · Setup and Scope", "slug": "m0-l01-course-overview", "title": "Course overview and the single-artifact promise", "file": "01-course-overview.md",
+      "recall": [
+        { "prompt": "What makes this course's per-agent RAG different from a typical multi-agent tutorial, and why does that difference matter?", "answer": "Most tutorials give every agent the same global retriever and tools. Here each specialist owns its own retrieval namespace and can't read the others' sources, which is what makes each specialist genuinely specialized instead of cosmetically so." },
+        { "prompt": "Why is citation grounding load-bearing in this health domain rather than a nice-to-have?", "answer": "An ungrounded model produces fluent text that's confidently wrong, and in health a wrong claim is a liability. So every answer carries citations to the snippets it was built from, and Module 4 adds an evaluator that scores whether each claim traces to a source." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 0 · Setup and Scope", "slug": "m0-l02-getting-set-up-typescript", "title": "Getting set up (TypeScript)", "file": "02-getting-set-up-typescript.md",
+      "recall": [
+        { "prompt": "What does `pnpm db:migrate` create that per-agent RAG depends on?", "answer": "The `coach_kb` table with a `namespace` column and an `embedding vector(768)` column, plus the `match_coach_kb` SQL function that runs the namespace-filtered cosine-similarity search each specialist calls." },
+        { "prompt": "How do you run the whole coach free with no API keys, and what's the one rule when you do?", "answer": "Point both chat and embeddings at a local Ollama server (COACH_LLM_PROVIDER=ollama, COACH_EMBED_PROVIDER=ollama). The rule: seed and query must use the same embedding backend, so if you switch the embed provider after seeding, re-seed." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 0 · Setup and Scope", "slug": "m0-l03-getting-set-up-python", "title": "Getting set up (Python) and the translation table", "file": "03-getting-set-up-python.md",
+      "recall": [
+        { "prompt": "The course teaches LangGraph but the artifact is TypeScript. Why one runnable codebase instead of parallel TypeScript and Python copies?", "answer": "A single artifact lets every lesson cite a real file and a real trace, and lets the branch tag one commit per lesson. A parallel Python copy would double the surface that can drift out of sync with the deployed coach." },
+        { "prompt": "Where do TypeScript and Python actually diverge in this course, and where do they stay the same?", "answer": "They diverge in two places: the schema library (Zod vs Pydantic) and the evaluation call surface (evaluate in JS, evaluate or aevaluate in Python). Everything else, the state graph, typed channels, reducers, and conditional edges, maps one to one." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 0 · Setup and Scope", "slug": "m0-l04-first-run-smoke-test", "title": "First-run smoke test", "file": "04-first-run-smoke-test.md",
+      "recall": [
+        { "prompt": "Ask the coach one nutrition question. What four NDJSON events arrive, and in what order?", "answer": "session (a session id), then routing (the supervisor's decision, here nutrition, with a rationale), then finding (the specialist's answer with citations), then answer (the synthesizer's woven answer plus combined citations). The order is enforced by the graph's structure." },
+        { "prompt": "At first run, what's the symptom of the embedding-consistency trap, and how do you confirm seeding worked?", "answer": "If the corpus was seeded with a different embedding model than the query uses, retrieval returns near-random documents and the answer is confidently wrong with nothing erroring. Confirm seeding with `pnpm kb:status` showing non-empty namespaces." }
+      ]
+    },
+    {
+      "type": "quiz",
+      "section": "Module 0 · Setup and Scope",
+      "slug": "m0-quiz",
+      "title": "Module 0 quiz: setup and scope",
+      "quiz": {
+        "passingScore": 80,
+        "questions": [
+          {
+            "prompt": "What makes this course's per-agent RAG different from a typical multi-agent tutorial?",
+            "options": [
+              "Every agent shares one global retriever over all the documents",
+              "Each specialist owns its own retrieval namespace and can't read the others' sources",
+              "The supervisor retrieves the documents and hands them to every specialist",
+              "Specialists retrieve from the model's training data instead of a database"
+            ],
+            "correctIndex": 1,
+            "explanation": "Per-agent RAG gives each specialist its own namespace, isolated from the others, which is what makes it genuinely specialized. The shared global retriever is exactly the typical pattern this course rejects. The supervisor does not retrieve and hand off; each specialist retrieves for itself from its own namespace. And RAG grounds answers in retrieved documents, not the model's parameters.",
+            "sourceLessonSlug": "m0-l01-course-overview"
+          },
+          {
+            "prompt": "Why is citation grounding load-bearing in this health domain, not just a nice feature?",
+            "options": [
+              "Citations make the model respond faster",
+              "Health questions can't be answered without a paid API key",
+              "An ungrounded model produces fluent, confident text that can be wrong, which in health is a liability, so answers cite their sources",
+              "Citations only matter for the video, not the app"
+            ],
+            "correctIndex": 2,
+            "explanation": "In a health domain a fluent but unsupported claim is a liability, so every answer carries citations to the snippets it was built from and Module 4 scores that grounding. Grounding is about correctness, not speed. You can run the whole coach free with Ollama, so no paid key is required. And grounding is a product feature in the app, not just a video prop.",
+            "sourceLessonSlug": "m0-l01-course-overview"
+          },
+          {
+            "prompt": "What does `pnpm db:migrate` create that per-agent RAG depends on?",
+            "options": [
+              "One vector table per specialist",
+              "The `coach_kb` table with a `namespace` column and the `match_coach_kb` search function",
+              "A separate database for each specialist",
+              "The LangSmith tracing project"
+            ],
+            "correctIndex": 1,
+            "explanation": "The migration creates one namespaced `coach_kb` table plus the `match_coach_kb` cosine-search function, which is the per-agent-RAG pattern. A table per specialist and a database per specialist are heavier patterns the coach deliberately avoids. Tracing is enabled separately with `LANGSMITH_API_KEY`, not by the migration.",
+            "sourceLessonSlug": "m0-l02-getting-set-up-typescript"
+          },
+          {
+            "prompt": "How can you run the whole coach with no API keys?",
+            "options": [
+              "Point both chat and embeddings at a local Ollama server",
+              "Use the LangSmith free tier as the model",
+              "Disable retrieval so no embeddings are needed",
+              "Run `pnpm db:migrate` in an offline mode"
+            ],
+            "correctIndex": 0,
+            "explanation": "Ollama serves open models locally, so setting COACH_LLM_PROVIDER=ollama and COACH_EMBED_PROVIDER=ollama needs no key. LangSmith is tracing, not a chat model. Retrieval is the whole point, and you still need embeddings, which Ollama provides. The migration does not run any model.",
+            "sourceLessonSlug": "m0-l02-getting-set-up-typescript"
+          },
+          {
+            "prompt": "The course teaches LangGraph but ships one TypeScript artifact. Why one codebase instead of parallel TypeScript and Python copies?",
+            "options": [
+              "TypeScript runs faster than Python",
+              "Because LangGraph has no Python version",
+              "So every lesson can cite a real file and trace and the branch can tag one commit per lesson, without a parallel copy drifting",
+              "To avoid ever mentioning Pydantic"
+            ],
+            "correctIndex": 2,
+            "explanation": "One runnable artifact keeps every citation and trace truthful and lets the branch tag one commit per lesson, while a parallel copy would drift. Speed is not the reason. LangGraph does ship in Python, which is why the lesson gives a translation table. And Pydantic is shown in that table as the Python equivalent of Zod, not avoided.",
+            "sourceLessonSlug": "m0-l03-getting-set-up-python"
+          },
+          {
+            "prompt": "You ask the coach one nutrition question. What four events stream, in order?",
+            "options": [
+              "routing, session, answer, finding",
+              "session, routing, finding, answer",
+              "answer, finding, routing, session",
+              "session, finding, routing, answer"
+            ],
+            "correctIndex": 1,
+            "explanation": "The order is a session id, then the supervisor's routing decision, then the specialist finding with citations, then the synthesizer's final answer, and it is enforced by the graph's structure. The other options scramble that order, which the topology of the graph makes impossible.",
+            "sourceLessonSlug": "m0-l04-first-run-smoke-test"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text", "section": "Module 1 · The Supervisor", "slug": "m1-l05-single-vs-multi-agent", "title": "Single-agent vs multi-agent: when the complexity pays", "file": "05-single-vs-multi-agent.md",
+      "recall": [
+        { "prompt": "Name the three concrete things that splitting one agent into a supervisor plus specialists buys you.", "answer": "Isolated retrieval (each specialist queries only its own namespace), isolated tools (a calorie calculator is invisible to a mobility lookup), and attributable cited answers (each specialist returns a structured finding with its own citations, so the answer says which specialist said what)." },
+        { "prompt": "What's the routing-for-routing's-sake anti-pattern, and how do you know you've fallen into it?", "answer": "If your specialists all read the same knowledge base and call the same tools, you've built a single agent with extra network hops and a routing-bug surface. Multi-agent only pays when the domains have genuinely different sources, tools, or need cross-domain synthesis." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 1 · The Supervisor", "slug": "m1-l06-routing-schema-zod", "title": "Designing the routing schema with Zod", "file": "06-routing-schema-zod.md",
+      "recall": [
+        { "prompt": "Why return a typed, structured routing decision instead of asking the model in prose which agents to use?", "answer": "Prose routing fails in frequent, boring ways: the model says 'Nutrition and Workout specialists' (now you're string-matching), adds a caveat, or names an agent that doesn't exist. Structured output makes the result conform to a schema, so an invalid agent name and 'route to nobody' are both unrepresentable." },
+        { "prompt": "A schema can't say 'primaryAgent must be one of agents.' Where does that cross-field rule get enforced, and why there?", "answer": "In the supervisor node that produces the value, right after the model returns, not in the downstream consumers. Enforcing the invariant in one place means every downstream node can fully trust the routing object." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 1 · The Supervisor", "slug": "m1-l07-topology-enforces-ordering", "title": "The topology-enforces-ordering rule", "file": "07-topology-enforces-ordering.md",
+      "recall": [
+        { "prompt": "How does the graph make 'supervisor first, synthesizer last' a structural guarantee rather than a hope?", "answer": "START connects only to the supervisor, specialists are reachable only through the supervisor's conditional edge, and every specialist's only out-edge is to synthesize, whose only out-edge is END. No other order is expressible in the graph." },
+        { "prompt": "What does tests/topology.test.ts assert, and why can it run with no API keys?", "answer": "It mocks the LLM and retrieval, streams the graph in updates mode, and asserts supervisor is first, synthesize is last, and every specialist runs between them, for both a single route and a full fan-out. It needs no keys because it checks the structure, not the model's behavior." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 1 · The Supervisor", "slug": "m1-l08-fan-out-and-temperature-zero", "title": "Conditional fan-out and temperature-0 classification", "file": "08-fan-out-and-temperature-zero.md",
+      "recall": [
+        { "prompt": "How does a conditional edge turn the supervisor's agents array into parallel work, and what happens when nothing matches?", "answer": "A conditional-edge function that returns an array of node names tells LangGraph to fan out and run all of them in the next superstep. One name runs one specialist, two run two in parallel, and an empty match returns ['synthesize'], so the graph degrades gracefully instead of dead-ending." },
+        { "prompt": "Why run the supervisor at temperature 0 but not the specialists' compose step?", "answer": "Routing is classification: you want the same question to route the same way every time, which buys reproducibility, testability, and deterministic debugging. Compose writes prose, where a little variation reads as natural language rather than as a bug, so temperature is saved for it." }
+      ]
+    },
+    {
+      "type": "quiz",
+      "section": "Module 1 · The Supervisor",
+      "slug": "m1-quiz",
+      "title": "Module 1 quiz: the supervisor",
+      "quiz": {
+        "passingScore": 80,
+        "questions": [
+          {
+            "prompt": "What does splitting one agent into a supervisor plus specialists actually buy you?",
+            "options": [
+              "Faster responses, lower cost, and simpler code",
+              "Isolated retrieval, isolated tools, and attributable cited answers",
+              "A larger context window per question",
+              "Automatic hallucination detection"
+            ],
+            "correctIndex": 1,
+            "explanation": "The split buys isolated retrieval, isolated tools, and answers you can attribute to a specific specialist with its own citations. It does not make things cheaper or simpler: multi-agent costs six or more model calls per question and more code. It does not enlarge the context window, and it does not detect hallucination automatically, which is why Module 4 measures grounding.",
+            "sourceLessonSlug": "m1-l05-single-vs-multi-agent"
+          },
+          {
+            "prompt": "Which situation is the routing-for-routing's-sake anti-pattern?",
+            "options": [
+              "Using a Zod schema for the routing decision",
+              "Running the supervisor at temperature 0",
+              "Specialists that all read the same knowledge base and call the same tools, so you've built a single agent with extra hops",
+              "Adding a synthesizer node"
+            ],
+            "correctIndex": 2,
+            "explanation": "If the specialists share one corpus and one tool set, you have a single agent with extra network hops and a routing-bug surface. A Zod routing schema and a temperature-0 supervisor are both good practice from this module, and a synthesizer is exactly what you need to combine genuinely different specialists.",
+            "sourceLessonSlug": "m1-l05-single-vs-multi-agent"
+          },
+          {
+            "prompt": "Why return a typed, structured routing decision instead of parsing the model's prose?",
+            "options": [
+              "It makes the model cheaper to run",
+              "It lets the model add a caveat sentence safely",
+              "It removes the need for a supervisor prompt",
+              "It constrains the output to a schema, making an invalid agent name and 'route to nobody' unrepresentable"
+            ],
+            "correctIndex": 3,
+            "explanation": "Structured output makes the result conform to a schema, so an unknown agent and an empty route can't be expressed. Cost is unrelated. A caveat sentence is exactly the prose failure structured output removes. And you still write a supervisor prompt; the schema constrains its output, it does not replace the prompt.",
+            "sourceLessonSlug": "m1-l06-routing-schema-zod"
+          },
+          {
+            "prompt": "The rule 'primaryAgent must be one of agents' can't live in the schema. Where does the coach enforce it?",
+            "options": [
+              "In every downstream node that reads routing",
+              "In the supervisor node that produces the value, so consumers can trust it",
+              "In a Zod refinement the model sees and always obeys",
+              "It isn't enforced anywhere"
+            ],
+            "correctIndex": 1,
+            "explanation": "Cross-field invariants belong in the one node that produces the value, so every consumer can trust the object. Scattering the check through downstream nodes is the mess this avoids. The schema the model sees can't reliably express a cross-field relationship, which is why the node normalizes it. And it is enforced, so 'nowhere' is wrong.",
+            "sourceLessonSlug": "m1-l06-routing-schema-zod"
+          },
+          {
+            "prompt": "How is 'supervisor first, synthesizer last' guaranteed?",
+            "options": [
+              "The system prompt tells the model to run in that order",
+              "A retry loop re-runs nodes until the order comes out right",
+              "The graph's edges: START reaches only the supervisor, specialists reach only synthesize, and synthesize reaches only END, so no other order is expressible",
+              "Each node checks a timestamp before it runs"
+            ],
+            "correctIndex": 2,
+            "explanation": "Ordering is a property of the edges: no path reaches a specialist without the supervisor, and no path leaves a specialist except to synthesize, whose only exit is END. A prompt asking for that order is the hope this lesson replaces, and neither a retry loop nor a timestamp check is how LangGraph enforces order.",
+            "sourceLessonSlug": "m1-l07-topology-enforces-ordering"
+          },
+          {
+            "prompt": "Why does the supervisor run at temperature 0 while the specialists' compose step does not?",
+            "options": [
+              "Temperature 0 makes the model cheaper",
+              "Routing is classification, so the same question should route the same way, while compose is prose where some variation reads as natural",
+              "Specialists don't support a temperature setting",
+              "Temperature 0 disables tool calls"
+            ],
+            "correctIndex": 1,
+            "explanation": "Routing is a classification you want to be reproducible, testable, and deterministically debuggable, so temperature 0 fits it. Compose writes natural-language findings, where a little variation is fine. Temperature is unrelated to cost, specialists do accept a temperature, and temperature 0 does not turn off tool calls.",
+            "sourceLessonSlug": "m1-l08-fan-out-and-temperature-zero"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text", "section": "Module 2 · Nutrition Specialist", "slug": "m2-l09-per-agent-retrieval-namespacing", "title": "Per-agent retrieval namespacing", "file": "09-per-agent-retrieval-namespacing.md",
+      "recall": [
+        { "prompt": "How does the coach give each specialist its own retrieval store without a database per specialist?", "answer": "One `coach_kb` table with a `namespace` column. Isolation becomes a `WHERE namespace = ...`, so there's one schema, one index, and one seeding script, and adding a namespace doesn't add a database." },
+        { "prompt": "Where is the Nutrition specialist's inability to retrieve workout documents actually enforced?", "answer": "In code, not by a prompt. retrieveNutritionKb only ever passes 'nutrition_kb' to match_coach_kb, and the SQL function filters by that namespace, so nothing outside it can come back." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 2 · Nutrition Specialist", "slug": "m2-l10-embedding-consistency-trap", "title": "The embedding-consistency trap", "file": "10-embedding-consistency-trap.md",
+      "recall": [
+        { "prompt": "Why does seeding with one embedding model and querying with another quietly ruin every answer?", "answer": "A sentence embedding only means something relative to other vectors from the same model. Cosine similarity between vectors from two different models is noise, so retrieval returns near-random documents, the specialist grounds on irrelevant snippets, and nothing errors." },
+        { "prompt": "What two guardrails does the coach use so an embedding mismatch fails loudly instead of silently?", "answer": "It pins dimensionality (the column is vector(768), Gemini requests 768 explicitly, and the Ollama path asserts the vector length), and it makes the provider an explicit, logged choice (COACH_EMBED_PROVIDER) with a documented full re-seed when you switch it." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 2 · Nutrition Specialist", "slug": "m2-l11-nutrition-subgraph", "title": "Building the first specialist subgraph (Nutrition)", "file": "11-nutrition-subgraph.md",
+      "recall": [
+        { "prompt": "What shape does the Nutrition specialist subgraph have, and where have you seen that shape before?", "answer": "retrieve, then assess, then either tools or compose, then compose, then END. It's the same pattern as the top-level supervisor graph from Module 1, one level down. Nesting graphs keeps each specialist self-contained and testable in isolation." },
+        { "prompt": "Are tools per-specialist or per-question, and what decides whether the calorie tool runs?", "answer": "Per-question. The assess node is a structured-output call that returns needsCalorieTool and extracted calorieArgs; the conditional edge routes to tools only when there's enough data, otherwise straight to compose. That decide-then-act split is the ReAct pattern applied to one specialist." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 2 · Nutrition Specialist", "slug": "m2-l12-type-enforced-isolation", "title": "The type-enforced isolation trick", "file": "12-type-enforced-isolation.md",
+      "recall": [
+        { "prompt": "How does the type system stop the Nutrition specialist from reading the Workout specialist's findings?", "answer": "The Nutrition subgraph's Annotation has no `findings` channel, so its nodes are typed against a state where state.findings doesn't type-check. The other specialists' outputs are unreachable by construction, not by a prompt asking the model to ignore them." },
+        { "prompt": "Two specialists fan out in parallel and both write findings. Why don't they clobber each other?", "answer": "The top-level findings channel has an object-merge reducer, and each adapter writes only its own key, like { nutrition: ... }. The keys are disjoint by construction, so the merge never overwrites. The synthesizer is the only node that reads the whole map." }
+      ]
+    },
+    {
+      "type": "quiz",
+      "section": "Module 2 · Nutrition Specialist",
+      "slug": "m2-quiz",
+      "title": "Module 2 quiz: per-agent RAG and isolation",
+      "quiz": {
+        "passingScore": 80,
+        "questions": [
+          {
+            "prompt": "How does each specialist get its own retrieval store without a database per specialist?",
+            "options": [
+              "One `coach_kb` table with a `namespace` column, filtered by `WHERE namespace = ...`",
+              "A separate Postgres database per specialist",
+              "One table per specialist, joined at query time",
+              "The model remembers which documents belong to which specialist"
+            ],
+            "correctIndex": 0,
+            "explanation": "One namespaced table means one schema, one index, and one seeding script, and isolation is a WHERE clause. A database per specialist and a table per specialist are the heavier patterns the coach avoids. Isolation is a query filter, not something the model remembers.",
+            "sourceLessonSlug": "m2-l09-per-agent-retrieval-namespacing"
+          },
+          {
+            "prompt": "Where is the Nutrition specialist's inability to fetch workout documents enforced?",
+            "options": [
+              "In the supervisor's prompt",
+              "In code: its retrieval function only ever passes 'nutrition_kb' to the namespace-filtered search",
+              "By a database permission on the workout rows",
+              "By the embedding model"
+            ],
+            "correctIndex": 1,
+            "explanation": "The Nutrition retrieval function hard-codes 'nutrition_kb', and the SQL function filters by it, so nothing else can return. Enforcing it by prompt is exactly what the course rejects. There is no per-row database permission involved, and the embedding model has nothing to do with namespace filtering.",
+            "sourceLessonSlug": "m2-l09-per-agent-retrieval-namespacing"
+          },
+          {
+            "prompt": "Why does seeding with one embedding model and querying with another quietly ruin answers?",
+            "options": [
+              "It throws a dimension error at query time",
+              "The second model is always worse than the first",
+              "Embeddings only mean something relative to their own model, so cross-model cosine similarity is noise and retrieval returns near-random documents",
+              "The database rejects the mismatched vectors"
+            ],
+            "correctIndex": 2,
+            "explanation": "A vector only has meaning relative to other vectors from the same model, so mixing models makes similarity noise and nothing errors. It does not throw, because dimension pinning catches only size mismatches, not two same-size models. The second model is not inherently worse, and the database happily stores same-size vectors from either model.",
+            "sourceLessonSlug": "m2-l10-embedding-consistency-trap"
+          },
+          {
+            "prompt": "Which is one of the coach's guardrails against a silent embedding mismatch?",
+            "options": [
+              "Storing the model name inside every answer",
+              "Querying twice and comparing the results",
+              "Using a larger vector column so any model fits",
+              "Pinning dimensionality to 768 (column type, explicit request, Ollama assertion) so a size mismatch fails loudly"
+            ],
+            "correctIndex": 3,
+            "explanation": "Pinning 768 across the column, the Gemini request, and an Ollama assertion makes a size mismatch fail loudly; the other guardrail is making the provider an explicit, logged choice with a full re-seed on switch. Embedding the model name in answers, double-querying, and an oversized column are none of the coach's guardrails.",
+            "sourceLessonSlug": "m2-l10-embedding-consistency-trap"
+          },
+          {
+            "prompt": "What is a specialist, structurally?",
+            "options": [
+              "A single prompt with a long system message",
+              "A compiled sub-StateGraph: retrieve, assess, optional tools, compose",
+              "A database view over the namespace",
+              "A function that calls the supervisor back"
+            ],
+            "correctIndex": 1,
+            "explanation": "A specialist is a small compiled graph, not a prompt: retrieve, assess, optional tools, then compose. A single long prompt is exactly what a specialist is not. It is not a database view, and it never calls the supervisor back; the supervisor routes to it.",
+            "sourceLessonSlug": "m2-l11-nutrition-subgraph"
+          },
+          {
+            "prompt": "How does the type system stop Nutrition from reading Workout's findings?",
+            "options": [
+              "A prompt tells the model not to look at other findings",
+              "A runtime check throws if a node reads another's findings",
+              "The Nutrition subgraph's Annotation has no `findings` channel, so `state.findings` doesn't type-check",
+              "The findings are encrypted per specialist"
+            ],
+            "correctIndex": 2,
+            "explanation": "Isolation is by absence: with no findings channel in its schema, reading it is a compile error inside Nutrition. A prompt instruction is the weaker approach the course rejects. It is a compile error, not a runtime throw, and nothing is encrypted; the field simply isn't in the type.",
+            "sourceLessonSlug": "m2-l12-type-enforced-isolation"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text", "section": "Module 3 · Workout and Recovery Specialists", "slug": "m3-l13-adding-workout", "title": "Adding Workout: the pattern repeats", "file": "13-adding-workout.md",
+      "recall": [
+        { "prompt": "Adding the Workout specialist changes only three things from the Nutrition template. What are they?", "answer": "The namespace (retrieveWorkoutKb queries workout_kb), the tools (Workout wires suggestProgression and mobilityLookup, and its assess returns both args nullable), and the prompts. The four-node shape and the adapter are identical." },
+        { "prompt": "How does Workout's assess and tools split differ from Nutrition's, and what does the conditional edge check?", "answer": "Nutrition's assess decides one boolean; Workout's can select zero, one, or both tools, and the tools node runs whichever were chosen. The conditional edge after assess checks progressionArgs or mobilityArgs, and skips straight to compose if neither fired." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 3 · Workout and Recovery Specialists", "slug": "m3-l14-adding-recovery-isolation", "title": "Adding Recovery, and why each specialist gets its own state", "file": "14-adding-recovery-and-isolation.md",
+      "recall": [
+        { "prompt": "Why not factor the three specialists' shared state fields into one schema they all import?", "answer": "A shared schema would carry every specialist's tool args into every specialist (Recovery's sleepArgs and hrvArgs into Workout, and so on), which is exactly the cross-domain leakage isolation closed. Separate schemas keep each specialist's state describing only its own work." },
+        { "prompt": "When Workout and Recovery run in parallel, what keeps them from racing on shared state?", "answer": "Each runs its own compiled subgraph against its own Annotation, so there's no shared mutable state to race on. Recovery writing sleepArgs can't touch Workout's progressionArgs because those fields live in different state objects entirely." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 3 · Workout and Recovery Specialists", "slug": "m3-l15-state-passing-and-fan-in", "title": "State passing and fan-in", "file": "15-state-passing-and-fan-in.md",
+      "recall": [
+        { "prompt": "What does the object-merge reducer on findings do, and why is it required for fan-out?", "answer": "A channel reducer tells LangGraph how to combine writes to the same channel in the same superstep. Without one, two specialists writing findings in parallel would conflict and be rejected. The spread-merge reducer merges the disjoint keys each adapter writes, so it never overwrites." },
+        { "prompt": "The synthesizer is the one node that reads every finding. What are its two rules for the final answer?", "answer": "It weaves a single answer that connects the specialists' advice rather than listing it, and it doesn't invent facts the specialists didn't provide or write its own citations. Citations are attached from the findings, so every source traces back to a specialist that retrieved it." }
+      ]
+    },
+    {
+      "type": "quiz",
+      "section": "Module 3 · Workout and Recovery Specialists",
+      "slug": "m3-quiz",
+      "title": "Module 3 quiz: parallel specialists and fan-in",
+      "quiz": {
+        "passingScore": 80,
+        "questions": [
+          {
+            "prompt": "Adding the Workout specialist from the Nutrition template changes which three things?",
+            "options": [
+              "The state reducer, the supervisor, and the synthesizer",
+              "The namespace, the tools, and the prompts; the four-node shape and adapter stay the same",
+              "Nothing; Workout reuses Nutrition's code unchanged",
+              "The database schema and the embedding model"
+            ],
+            "correctIndex": 1,
+            "explanation": "Only the namespace, the tools, and the prompts change; the four-node shape and the adapter are identical. The reducer, supervisor, and synthesizer are not per-specialist. Workout is not literally unchanged from Nutrition, and the shared schema and embedding model do not change per specialist.",
+            "sourceLessonSlug": "m3-l13-adding-workout"
+          },
+          {
+            "prompt": "How does Workout's assess node differ from Nutrition's?",
+            "options": [
+              "It runs at a higher temperature",
+              "It skips retrieval entirely",
+              "It can select zero, one, or both of two tools, and the tools node runs whichever were chosen",
+              "It reads the recovery specialist's findings first"
+            ],
+            "correctIndex": 2,
+            "explanation": "Workout's assess can pick zero, one, or both of its two tools, and the conditional edge skips to compose if neither fired. Temperature is not the difference. Retrieve still runs first in every specialist. And no specialist can read another's findings, by construction.",
+            "sourceLessonSlug": "m3-l13-adding-workout"
+          },
+          {
+            "prompt": "Why not factor the specialists' state into one shared schema they all import?",
+            "options": [
+              "Shared schemas run slower",
+              "It would carry every specialist's tool args into every specialist, re-opening the cross-domain leak isolation closed",
+              "LangGraph forbids sharing an annotation",
+              "It would break the embedding model"
+            ],
+            "correctIndex": 1,
+            "explanation": "A shared schema would put Recovery's sleep args in Workout and so on, which is exactly the leakage isolation closed. Speed is not the reason. LangGraph allows a shared annotation; it is just unwise here. And the embedding model is unrelated to state schemas.",
+            "sourceLessonSlug": "m3-l14-adding-recovery-isolation"
+          },
+          {
+            "prompt": "Under parallel fan-out, what keeps Workout and Recovery from racing on state?",
+            "options": [
+              "A lock around the shared state object",
+              "They actually run sequentially, not in parallel",
+              "The supervisor merges their state by hand",
+              "Each runs its own compiled subgraph against its own Annotation, so there's no shared mutable state to race on"
+            ],
+            "correctIndex": 3,
+            "explanation": "Each branch runs its own subgraph against its own schema, so there is no shared object to race on. There is nothing to lock. They genuinely run in parallel. And it is the merge reducer, not the supervisor, that combines the disjoint findings keys afterward.",
+            "sourceLessonSlug": "m3-l14-adding-recovery-isolation"
+          },
+          {
+            "prompt": "Why does the `findings` channel need an object-merge reducer?",
+            "options": [
+              "To sort the findings alphabetically",
+              "So two specialists writing findings in the same parallel step merge instead of conflicting, each writing only its own disjoint key",
+              "To deduplicate identical citations",
+              "To convert the findings into the final answer"
+            ],
+            "correctIndex": 1,
+            "explanation": "Without a reducer, two parallel writes to findings conflict and get rejected; the spread-merge reducer combines the disjoint keys. Sorting and deduplicating are not its job, and turning findings into the final answer is the synthesizer's job, not the reducer's.",
+            "sourceLessonSlug": "m3-l15-state-passing-and-fan-in"
+          },
+          {
+            "prompt": "What makes the synthesizer special in the graph?",
+            "options": [
+              "It runs before the specialists",
+              "It's the one node that reads the whole findings map, and it weaves a connected cited answer without inventing facts",
+              "It retrieves its own documents",
+              "It routes the question to specialists"
+            ],
+            "correctIndex": 1,
+            "explanation": "The synthesizer alone reads every finding and weaves one cited answer, forbidding invented facts. It runs last, not first. It retrieves nothing; it reuses the findings' citations. And routing is the supervisor's job, not the synthesizer's.",
+            "sourceLessonSlug": "m3-l15-state-passing-and-fan-in"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text", "section": "Module 4 · LangSmith Evaluation", "slug": "m4-l16-why-multi-agent-fails-quietly", "title": "Why multi-agent systems fail quietly", "file": "16-why-multi-agent-fails-quietly.md",
+      "recall": [
+        { "prompt": "What three failure axes does a supervisor-and-specialists system have, and why measure them separately?", "answer": "Routing accuracy (did the supervisor consult the right specialists), citation coverage (does every finding and the final answer carry a citation), and grounding (is the answer actually supported by the retrieved sources). They have different causes and fixes, so a single blended score hides where to look." },
+        { "prompt": "What does the pattern 'low routing, high grounding' tell you to fix, versus 'high routing, low grounding'?", "answer": "Low routing with high grounding means the specialists are good but the supervisor sends them the wrong questions, so fix the supervisor prompt or schema. High routing with low grounding means the right specialist is answering but not from its sources, so fix retrieval or the composer." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 4 · LangSmith Evaluation", "slug": "m4-l17-deterministic-evaluators", "title": "Deterministic evaluators: routing and citation", "file": "17-deterministic-evaluators.md",
+      "recall": [
+        { "prompt": "Why can routing and citation coverage be scored with plain code and no model call?", "answer": "Routing is an order-independent set comparison of the chosen agents against the example's expectedAgents, and citation coverage is a structural check that every finding and the final answer have at least one citation. Both are pure functions with no API or network, so they gate CI without spending tokens." },
+        { "prompt": "The full `pnpm eval` makes a real graph call per example. How does the suite still protect the evaluators on every run?", "answer": "The rubric functions have pure unit tests (evals.rubric.test.ts) that run every time with no keys, so the evaluators are always protected. The expensive full eval is opt-in (RUN_EVALS=1) and stays out of the fast default pnpm test." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 4 · LangSmith Evaluation", "slug": "m4-l18-llm-judge-grounding", "title": "The LLM-judge grounding evaluator", "file": "18-llm-judge-grounding.md",
+      "recall": [
+        { "prompt": "Why does grounding need an LLM judge when routing and citation don't, and what makes this judge trustworthy?", "answer": "Whether every claim is actually supported by a snippet is a semantic judgement code can't make. The judge is trustworthy because of three choices: temperature 0, a tight mechanical rubric (supported_claims over total_claims, be conservative, ignore encouragement), and a 0-to-1 gradient that also lists the unsupported claims." },
+        { "prompt": "A grounding judge can share blind spots with the model it grades. What mitigations does the coach use, and how should you treat the score?", "answer": "A narrow mechanical rubric, temperature 0, and structured output that forces the judge to list unsupported claims rather than emit a vibe. Treat the score as a strong signal that pairs with a human read (pnpm review), not as an oracle." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 4 · LangSmith Evaluation", "slug": "m4-l19-running-evals-in-langsmith", "title": "Running evals in LangSmith", "file": "19-running-evals-in-langsmith.md",
+      "recall": [
+        { "prompt": "What does the LangSmith runner add over the local `pnpm eval` gate?", "answer": "History and drill-down: which questions regressed between runs, how two providers compare, and the trace behind a low score. It runs the same evaluators as tracked experiments you can open, sort, and diff, whereas the local gate only gives a pass or fail in CI." },
+        { "prompt": "How does the suite avoid two copies of the scoring logic drifting apart?", "answer": "routingEvaluator and citationEvaluator are thin wrappers around the same pure functions the local gate uses, so there's one source of truth. pushDataset is also idempotent: it creates the centenarian-coach dataset once and returns the existing one on later runs." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 4 · LangSmith Evaluation", "slug": "m4-l20-iteration-loop-growing-dataset", "title": "The iteration loop and the growing dataset", "file": "20-iteration-loop-growing-dataset.md",
+      "recall": [
+        { "prompt": "What are the three steps of the eval iteration loop?", "answer": "Observe a failure (from eval output, a low grounding score, or a LangSmith trace), add an example to evals/dataset.json that pins it (tagged with addedIn and a note), then re-run the gate and the tracked experiment and fix until it passes without regressing the rest." },
+        { "prompt": "What do the addedIn and note fields buy, and why does a growing dataset beat a fixed one?", "answer": "They carry the dataset's history: which module and which bug introduced each example, so a fixed failure can never silently come back. A suite with only its original cases tests yesterday's understanding; a growing one tracks what you've actually learned about how the system breaks." }
+      ]
+    },
+    {
+      "type": "quiz",
+      "section": "Module 4 · LangSmith Evaluation",
+      "slug": "m4-quiz",
+      "title": "Module 4 quiz: evaluation",
+      "quiz": {
+        "passingScore": 80,
+        "questions": [
+          {
+            "prompt": "What are the three failure axes you measure separately for this system?",
+            "options": [
+              "Latency, cost, and token count",
+              "Routing accuracy, citation coverage, and grounding",
+              "Precision, recall, and F1",
+              "Temperature, top-p, and max tokens"
+            ],
+            "correctIndex": 1,
+            "explanation": "The three axes are routing accuracy, citation coverage, and grounding, each with its own cause and fix. Latency, cost, and tokens are the deployment dashboards from Module 5. Precision, recall, and F1 are generic metrics, not the coach's axes, and temperature and top-p are sampling parameters.",
+            "sourceLessonSlug": "m4-l16-why-multi-agent-fails-quietly"
+          },
+          {
+            "prompt": "A run shows high routing but low grounding. What does that point you to fix?",
+            "options": [
+              "The supervisor prompt or schema",
+              "Retrieval or the composer, because the right specialist is answering but not from its sources",
+              "The merge reducer",
+              "The database connection string"
+            ],
+            "correctIndex": 1,
+            "explanation": "High routing with low grounding means the correct specialist answered but not from its sources, so retrieval or the composer is the fix. The supervisor prompt is the fix for low routing, not this case. The merge reducer and the connection string have nothing to do with grounding.",
+            "sourceLessonSlug": "m4-l16-why-multi-agent-fails-quietly"
+          },
+          {
+            "prompt": "Why can routing and citation coverage be scored with no model call?",
+            "options": [
+              "Because the model scores them for free",
+              "Because LangSmith caches the scores",
+              "They're pure functions: an order-independent set comparison and a structural presence check, with no API or network",
+              "Because they only run in production"
+            ],
+            "correctIndex": 2,
+            "explanation": "Both are pure functions, so they gate CI without spending tokens. No model is involved, so 'the model scores them for free' is wrong. LangSmith caching is unrelated, and these evaluators run in CI, not only in production.",
+            "sourceLessonSlug": "m4-l17-deterministic-evaluators"
+          },
+          {
+            "prompt": "Why does grounding need an LLM judge?",
+            "options": [
+              "Because judging is faster than running code",
+              "Whether each claim is actually supported by a snippet is a semantic judgement code can't make",
+              "Because the routing evaluator already covers it",
+              "Because the database can't store the score"
+            ],
+            "correctIndex": 1,
+            "explanation": "Grounding is a semantic judgement, so you ask a model. It is slower and costs a call, not faster. Routing is a different axis and does not cover grounding. And where the score is stored is irrelevant to why a judge is needed.",
+            "sourceLessonSlug": "m4-l18-llm-judge-grounding"
+          },
+          {
+            "prompt": "What does `pnpm eval:langsmith` add over the local `pnpm eval` gate?",
+            "options": [
+              "It removes the need for API keys",
+              "It changes the scoring logic to be stricter",
+              "History and drill-down: compare runs over time, sort by score, and open the trace behind a low score",
+              "It runs without the dataset"
+            ],
+            "correctIndex": 2,
+            "explanation": "The LangSmith runner adds tracked history and lets you open the trace behind a low score. It needs LANGSMITH_API_KEY plus model keys, so it does not remove keys. It reuses the same pure functions, so the scoring logic does not change. And it pushes and evaluates the dataset rather than running without it.",
+            "sourceLessonSlug": "m4-l19-running-evals-in-langsmith"
+          },
+          {
+            "prompt": "What do the `addedIn` and `note` fields on an eval example buy you?",
+            "options": [
+              "They speed up the eval run",
+              "Provenance: which module and which bug introduced each example, so a fixed failure can't silently return",
+              "They're required by LangSmith or the run fails",
+              "They set the passing threshold for the gate"
+            ],
+            "correctIndex": 1,
+            "explanation": "The fields record where each example came from, so a fixed bug can't quietly reappear. They do not affect run speed. They are optional and backward compatible, not required. And the passing threshold lives in the gate test, not on the example.",
+            "sourceLessonSlug": "m4-l20-iteration-loop-growing-dataset"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text", "section": "Module 5 · Deployment and Multi-Tenant", "slug": "m5-l21-langgraph-platform-json", "title": "LangGraph Platform and langgraph.json", "file": "21-langgraph-platform-and-langgraph-json.md",
+      "recall": [
+        { "prompt": "What do langgraph.json and src/deployment/graph.ts each do, and why is the second a thin re-export?", "answer": "langgraph.json declares the deployment (node version, dependencies, one graph named coach pointing at an export, env file). src/deployment/graph.ts is a one-line re-export of coachGraph. Keeping it thin isolates the single import the Platform build must resolve, so if the @/ alias fails there you switch this one line to a relative import." },
+        { "prompt": "How do you run the LangGraph Platform surface locally, and why does that matter for this build?", "answer": "pnpm deploy:dev runs langgraphjs dev, which starts the Agent Server in memory with no Docker and no Postgres or Redis. It matters because the dev machine can't run Docker Desktop, and it surfaces the @/ alias risk before any cloud step. The only command that needs Docker is langgraph up, which the course doesn't use." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 5 · Deployment and Multi-Tenant", "slug": "m5-l22-deploying-env-and-database", "title": "Deploying, and wiring env and database", "file": "22-deploying-env-and-database.md",
+      "recall": [
+        { "prompt": "What's the one deployment mistake that breaks retrieval quietly, and what's the fix?", "answer": "Pointing the deployment at a database where coach_kb is empty or seeded with a different embedding model. Retrieval returns nothing, grounding collapses, and the app still answers, just without citations. The fix: run pnpm kb:seed against the deployment's exact DATABASE_URL and confirm with pnpm kb:status." },
+        { "prompt": "Which two targets does the coach deploy to for free, and what costs money?", "answer": "The app on Vercel's free Hobby tier, and the LangGraph Platform graph run locally via pnpm deploy:dev (no Docker). A fully managed Cloud graph deployment needs the paid Plus plan, so the course treats it as optional polish." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 5 · Deployment and Multi-Tenant", "slug": "m5-l23-per-user-state-and-auth", "title": "Per-user state and auth on the live coach", "file": "23-per-user-state-and-auth.md",
+      "recall": [
+        { "prompt": "What does the live coach ship today for tenancy and access, and why is that the right amount?", "answer": "Single-tenant by design (a sessionId per query, sessions persisted, no userId) with an admin gate: an Auth.js magic-link flow where only ADMIN_EMAIL signs in and everyone else lands on a waitlist. For a gated portfolio demo that's right: the public sees it exists, one person runs it." },
+        { "prompt": "Why is going multi-tenant an additive change rather than a rewrite?", "answer": "The architecture is already tenancy-ready: a sessionId, session persistence, an auth layer, and namespaced retrieval. You thread a userId through the state and the coach_sessions row, scope reads by userId, and turn the single-admin check into per-user sessions with the Auth.js machinery already wired. Per-agent namespaces even extend to per-user namespaces." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 5 · Deployment and Multi-Tenant", "slug": "m5-l24-cost-and-latency-dashboards", "title": "Cost and latency dashboards", "file": "24-cost-and-latency-dashboards.md",
+      "recall": [
+        { "prompt": "Where do the cost and latency dashboards get their data, and what did you add for monitoring?", "answer": "From the LangSmith traces every query already emits (Module 0); the graph is tagged and named so runs are findable. You added nothing new, the dashboards read the runs you're already producing, and LangSmith aggregates per-run latency, tokens, and cost over time." },
+        { "prompt": "For a fan-out to three specialists, is wall-clock latency the sum, and how do you compare providers fairly?", "answer": "No, it's the slowest specialist plus the supervisor and synthesizer, because the specialists run in parallel. To compare providers you tag experiments with the provider (the eval runner already sets metadata provider) and compare cost and quality on the same dataset, not by anecdote." }
+      ]
+    },
+    {
+      "type": "quiz",
+      "section": "Module 5 · Deployment and Multi-Tenant",
+      "slug": "m5-quiz",
+      "title": "Module 5 quiz: deployment and tenancy",
+      "quiz": {
+        "passingScore": 80,
+        "questions": [
+          {
+            "prompt": "Why is `src/deployment/graph.ts` a thin one-line re-export?",
+            "options": [
+              "To make the compiled graph smaller",
+              "To isolate the single import the Platform build must resolve, so if the @/ alias fails you switch one line to a relative import",
+              "Because langgraph.json can't point at a real file",
+              "To hide the graph from the Next.js app"
+            ],
+            "correctIndex": 1,
+            "explanation": "The thin file localizes the one import the Platform build resolves, so an @/ alias failure is a one-line fix. It does not change the graph's size. langgraph.json does point at that export. And the Next.js app keeps importing the same graph, so nothing is hidden.",
+            "sourceLessonSlug": "m5-l21-langgraph-platform-json"
+          },
+          {
+            "prompt": "How do you run the LangGraph Platform surface locally?",
+            "options": [
+              "`langgraph up`, which needs Docker",
+              "`pnpm deploy:dev`, which runs the Agent Server in memory with no Docker",
+              "`pnpm build && pnpm start`",
+              "You can't run the Platform surface locally"
+            ],
+            "correctIndex": 1,
+            "explanation": "`pnpm deploy:dev` runs the Agent Server in memory with no Docker, and it surfaces the alias risk early. `langgraph up` is the Docker container path the course avoids. `pnpm build && pnpm start` runs the Next.js app, a different surface. And it clearly can run locally.",
+            "sourceLessonSlug": "m5-l21-langgraph-platform-json"
+          },
+          {
+            "prompt": "What is the most common, quiet deployment failure?",
+            "options": [
+              "The build crashes on a syntax error",
+              "The deployment points at an empty or wrong-embedding database, so it answers without citations instead of crashing",
+              "The custom domain fails to resolve",
+              "The model key is rate-limited"
+            ],
+            "correctIndex": 1,
+            "explanation": "The quiet failure is a deployment aimed at an unseeded or wrong-embedding database: retrieval returns nothing and the app answers without citations. A syntax-error crash is loud and easy to spot. A domain failure and a rate limit are real problems but not the silent one this lesson warns about.",
+            "sourceLessonSlug": "m5-l22-deploying-env-and-database"
+          },
+          {
+            "prompt": "What's the fix for that quiet retrieval failure?",
+            "options": [
+              "Restart the server",
+              "Run `pnpm kb:seed` against the deployment's exact `DATABASE_URL` and confirm with `pnpm kb:status`",
+              "Increase the function timeout",
+              "Switch to a bigger model"
+            ],
+            "correctIndex": 1,
+            "explanation": "You have to seed the exact database the deployment uses and confirm non-empty namespaces. Restarting, raising the timeout, and using a bigger model all leave the database empty, so retrieval still returns nothing.",
+            "sourceLessonSlug": "m5-l22-deploying-env-and-database"
+          },
+          {
+            "prompt": "What does the live coach ship for tenancy and access today?",
+            "options": [
+              "Open sign-up with per-user data partitions",
+              "Single-tenant (a sessionId, no userId) with an admin gate: only ADMIN_EMAIL signs in, everyone else joins a waitlist",
+              "No auth at all",
+              "A per-user knowledge namespace for every visitor"
+            ],
+            "correctIndex": 1,
+            "explanation": "Today it is single-tenant with an Auth.js admin gate, and non-admins land on a waitlist. Open sign-up with per-user partitions is the multi-tenant future, not today. There is auth, so 'no auth' is wrong, and per-user namespaces are a future extension, not what ships.",
+            "sourceLessonSlug": "m5-l23-per-user-state-and-auth"
+          },
+          {
+            "prompt": "Under a fan-out to three specialists, what is the wall-clock latency?",
+            "options": [
+              "The sum of all three specialists' times",
+              "The slowest specialist plus the supervisor and synthesizer, because specialists run in parallel",
+              "Always dominated by the supervisor",
+              "Impossible to measure"
+            ],
+            "correctIndex": 1,
+            "explanation": "Because the specialists run in parallel, wall-clock is the slowest specialist plus the supervisor and synthesizer, not the sum. Summing ignores the parallelism. The supervisor does not always dominate. And the traces measure it directly, so it is far from impossible.",
+            "sourceLessonSlug": "m5-l24-cost-and-latency-dashboards"
+          }
+        ]
+      }
+    },
+    {
+      "type": "text", "section": "Module 6 · Extension Launching Pad", "slug": "m6-l25-add-a-new-specialist", "title": "How to add a new specialist (worked with Corrective)", "file": "25-how-to-add-a-new-specialist.md",
+      "recall": [
+        { "prompt": "Adding the Corrective specialist touched exactly six places. What are they?", "answer": "A namespace and corpus (corrective_kb), a retrieval module passing 'corrective_kb', a subgraph with its own annotation and an adapter writing findings.corrective, the type union (Agent and FindingsMap), the routing schema (AgentEnum) plus one supervisor-prompt line, and registering the node, fan-out target, and edge in src/graph.ts." },
+        { "prompt": "Why did the synthesizer, merge reducer, and topology test need no changes when Corrective was added?", "answer": "The synthesizer already loops over all agents, the merge reducer already handles any new findings key, and the topology test already asserts ordering for any specialist. Every earlier isolation decision removed a reason adding a specialist would be hard." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 6 · Extension Launching Pad", "slug": "m6-l26-extensions-with-file-paths", "title": "Five extensions, with starting file paths", "file": "26-extensions-with-file-paths.md",
+      "recall": [
+        { "prompt": "Of the five suggested extensions, which is easiest and which is hardest, and why?", "answer": "A new specialist is easiest because the shape is fixed and contained (copy src/agents/corrective/ and work the six-point checklist). Multi-tenant per-user state is hardest, not because any one change is large but because tenancy touches state, storage, auth, and retrieval together." },
+        { "prompt": "For the give-a-specialist-an-MCP-tool extension, where do you start and what's the actual work?", "answer": "Start in a specialist's assess and tools nodes (for example nutrition/subgraph.ts), swapping a local tool for an MCP client that reaches an external tool over the Model Context Protocol. The assess-or-tools pattern is the hook; the work is the MCP transport and auth." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 6 · Extension Launching Pad", "slug": "m6-l27-extending-the-eval-suite", "title": "Extending the eval suite as you extend the system", "file": "27-extending-the-eval-suite.md",
+      "recall": [
+        { "prompt": "What's the one rule that keeps an extensible system from rotting as it grows?", "answer": "A new capability ships with the evals that pin it. For a new specialist that means at least one pure-domain routing example and one cross-domain example, each tagged with addedIn and a note. A specialist with no eval example is a specialist you aren't testing." },
+        { "prompt": "When you add a feature that isn't a specialist, like conversation memory or an MCP tool, what goes in the suite?", "answer": "Its check. For memory, an example that asks a follow-up and asserts the prior turn was used; for an MCP tool, a question that should trigger it and asserts the tool call appears. The evaluator can be deterministic or an LLM judge, but it goes in the suite, not in your memory." }
+      ]
+    },
+    {
+      "type": "text", "section": "Module 6 · Extension Launching Pad", "slug": "m6-l28-capstone", "title": "Capstone: ship your own specialist", "file": "28-capstone.md",
+      "recall": [
+        { "prompt": "In one breath, what did you build across the six modules?", "answer": "A supervisor that returns a typed routing decision with ordering guaranteed by the graph's structure; specialists with per-agent RAG, each owning a namespace and isolated by type; a synthesizer that alone reads every finding and weaves one cited answer; evaluation built in as a CI gate and tracked experiments over a growing dataset; a deployable, observable graph runnable for free; and a launching pad where adding a specialist is a six-point change." },
+        { "prompt": "What are the capstone's steps for shipping your own specialist?", "answer": "Pick a domain the coach doesn't cover, seed a small namespace, copy src/agents/corrective/ and point its retrieval at the new namespace and wire compose, add it to the Agent union, routing schema, supervisor prompt, and graph, add two eval examples (one pure-domain, one cross-domain) and run pnpm eval, then open the trace and watch the supervisor route to it." }
+      ]
+    },
+    {
+      "type": "quiz",
+      "section": "Module 6 · Extension Launching Pad",
+      "slug": "m6-quiz",
+      "title": "Module 6 quiz: extension",
+      "quiz": {
+        "passingScore": 80,
+        "questions": [
+          {
+            "prompt": "How many places did adding the Corrective specialist touch, and what's an example?",
+            "options": [
+              "One place: the supervisor prompt",
+              "Six: namespace, retrieval module, subgraph plus adapter, type union, routing schema plus prompt, and graph registration",
+              "Every file that imports the state",
+              "Only the database schema"
+            ],
+            "correctIndex": 1,
+            "explanation": "Adding a specialist is a contained six-point change across those files and nothing else. One place is too few, since the prompt line is only part of it. It does not ripple to every state importer, and the database schema alone is nowhere near enough.",
+            "sourceLessonSlug": "m6-l25-add-a-new-specialist"
+          },
+          {
+            "prompt": "Why did the synthesizer and merge reducer need no changes when Corrective was added?",
+            "options": [
+              "They were rewritten for each new specialist",
+              "They were built to handle any specialist: the synthesizer loops over all agents and the reducer merges any new findings key",
+              "Corrective doesn't produce findings",
+              "The topology test was disabled for it"
+            ],
+            "correctIndex": 1,
+            "explanation": "The synthesizer already iterates over all agents and the reducer already merges any new key, so both absorbed Corrective for free. They were not rewritten. Corrective does write findings.corrective. And the topology test stayed on, already asserting order for any specialist.",
+            "sourceLessonSlug": "m6-l25-add-a-new-specialist"
+          },
+          {
+            "prompt": "Why is Corrective simpler than the Nutrition template?",
+            "options": [
+              "It skips retrieval",
+              "Its graph is just retrieve then compose, with no assess and no tools, since it has no tool to call",
+              "It shares Nutrition's namespace",
+              "It doesn't go through the supervisor"
+            ],
+            "correctIndex": 1,
+            "explanation": "Corrective is retrieve then compose, showing the template flexes: assess and tools are optional. It still retrieves. It has its own corrective_kb namespace, not Nutrition's. And the supervisor routes to it like any specialist.",
+            "sourceLessonSlug": "m6-l25-add-a-new-specialist"
+          },
+          {
+            "prompt": "Of the five extensions, which is hardest and why?",
+            "options": [
+              "A new specialist, because you write new prompts",
+              "Multi-tenant per-user state, because tenancy touches state, storage, auth, and retrieval together",
+              "Streaming partial findings, because streaming is brand new here",
+              "An MCP tool, because tools don't exist in the coach yet"
+            ],
+            "correctIndex": 1,
+            "explanation": "Multi-tenant state is hardest because it cuts across state, storage, auth, and retrieval at once. A new specialist is the easiest, with a fixed contained shape. The streaming plumbing already exists (streamMode updates), and local tools already exist, so the MCP work is the transport, not inventing tools.",
+            "sourceLessonSlug": "m6-l26-extensions-with-file-paths"
+          },
+          {
+            "prompt": "What is the closing discipline of the course?",
+            "options": [
+              "Ship features fast and add evals later",
+              "A new capability ships with the evals that pin it (a new specialist gets a pure-domain and a cross-domain example)",
+              "Only evaluate specialists, never other features",
+              "Keep the dataset fixed so scores stay comparable"
+            ],
+            "correctIndex": 1,
+            "explanation": "Every new capability ships with the evals that pin it. Adding evals later is exactly the habit this rule replaces. Non-specialist features get checks too. And the dataset should grow with the system, not stay frozen.",
+            "sourceLessonSlug": "m6-l27-extending-the-eval-suite"
+          },
+          {
+            "prompt": "What does the capstone ask you to do?",
+            "options": [
+              "Rebuild the coach on an unrelated domain from scratch",
+              "Ship your own specialist end to end: seed a namespace, copy the corrective template, wire it in, add two evals, and confirm the route in the trace",
+              "Write a blog post about the coach",
+              "Deploy the coach to a paid cloud plan"
+            ],
+            "correctIndex": 1,
+            "explanation": "The capstone is to ship your own specialist end to end using the six-point checklist and the eval discipline. The course deliberately avoids a separate-domain rebuild, since it extends one artifact. Writing a post is not a build task, and the paid cloud plan is optional polish, not the capstone.",
+            "sourceLessonSlug": "m6-l28-capstone"
+          }
+        ]
+      }
+    }
+  ]
+}

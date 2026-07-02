@@ -1,4 +1,4 @@
-# Screen-recording guide — LangGraph in Production: The WitUS Triage Agent
+# Screen-recording guide: LangGraph in Production, The WitUS Triage Agent
 
 Teacher aid for recording the course. It maps each lesson to the exact code to show
 on screen. This is NOT seeded as a lesson; it lives beside the lesson files.
