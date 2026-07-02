@@ -4,9 +4,19 @@ import { getLessonById, getUsername, listLessons } from "@/db/queries/authoring"
 import { getCompletedLessonIds, upsertProgress } from "@/db/queries/progress";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { lessonAccess } from "@/lib/gating";
-import { scoreQuiz, type QuizContent, type QuizFeedbackItem } from "@/lib/quiz";
+import { scoreQuizResponses, type QuizContent, type QuizFeedbackItem, type QuizResponse } from "@/lib/quiz";
 
-const Schema = z.object({ answers: z.array(z.number().int().min(0)) });
+// The player submits `responses` (original question + chosen-option indices for the SERVED
+// subset, safe under rotation + option shuffle). Legacy clients may still send `answers`
+// (one option index per question, in order) — normalized to responses below.
+const Schema = z
+  .object({
+    responses: z
+      .array(z.object({ questionIndex: z.number().int().min(0), optionIndex: z.number().int().min(0) }))
+      .optional(),
+    answers: z.array(z.number().int().min(0)).optional(),
+  })
+  .refine((d) => d.responses?.length || d.answers?.length, "Provide responses or answers");
 
 type Params = { params: Promise<{ id: string; lessonId: string }> };
 
@@ -42,22 +52,30 @@ export async function POST(req: Request, { params }: Params) {
   const content = lesson.quizContent as QuizContent | null;
   if (!content?.questions?.length) return errorJson("This lesson has no quiz", 400);
 
-  const result = scoreQuiz(content, parsed.data.answers);
+  // Normalize legacy `answers` (all questions in order) to `responses` (served subset).
+  const responses: QuizResponse[] =
+    parsed.data.responses ??
+    (parsed.data.answers ?? []).map((optionIndex, questionIndex) => ({ questionIndex, optionIndex }));
+  // Ignore responses pointing outside the quiz (stale content / tampering).
+  const valid = responses.filter((r) => r.questionIndex < content.questions.length);
+
+  const result = scoreQuizResponses(content, valid);
   await upsertProgress(session.user.id, lessonId, {
     completed: result.passed,
     quizScore: result.score,
-    quizAnswers: parsed.data.answers,
+    quizAnswers: valid.map((r) => r.optionIndex),
   });
 
-  // Per-question feedback (revealed only now, after submission): the correct answer,
-  // the explanation, and a link to the lesson where the answer is taught.
+  // Per-question feedback (revealed only now, after submission), in the SAME order the learner
+  // answered — so the player can line each one up with the question it showed.
   const username = await getUsername(course.instructorId);
   const bySlug = new Map(all.map((l) => [l.slug, l] as const));
-  const feedback: QuizFeedbackItem[] = content.questions.map((q, i) => {
+  const feedback: QuizFeedbackItem[] = valid.map((r) => {
+    const q = content.questions[r.questionIndex];
     const src = q.sourceLessonSlug ? bySlug.get(q.sourceLessonSlug) : undefined;
     return {
       correctIndex: q.correctIndex,
-      correct: parsed.data.answers[i] === q.correctIndex,
+      correct: r.optionIndex === q.correctIndex,
       explanation: q.explanation ?? null,
       source:
         src?.slug && username && course.slug

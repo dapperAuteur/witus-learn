@@ -4,9 +4,19 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+interface SafeQuestion {
+  prompt: string;
+  options: string[];
+  imageUrl?: string;
+  imageAlt?: string;
+}
 interface SafeQuiz {
-  questions: { prompt: string; options: string[] }[];
+  questions: SafeQuestion[];
   passingScore?: number;
+  /** Serve a random subset of this many questions per attempt (rotating pool). */
+  questionsPerAttempt?: number;
+  /** Shuffle each question's option order per attempt. */
+  shuffleOptions?: boolean;
 }
 
 interface FeedbackItem {
@@ -24,9 +34,41 @@ interface QuizResult {
   feedback?: FeedbackItem[];
 }
 
-// Quiz player. The correct answers are NOT in `content` (stripped server-side); the
-// submit endpoint scores, records progress, and returns per-question feedback — the
-// explanation plus a link to the lesson where the answer is taught.
+// One served question for this attempt: the original question index, the question, and the
+// display order of its options (original option indices). Rotation + shuffle live here so the
+// learner sees a different subset/order each attempt; scoring is by ORIGINAL indices server-side.
+interface Served {
+  qi: number;
+  q: SafeQuestion;
+  optionOrder: number[];
+}
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function buildAttempt(content: SafeQuiz): Served[] {
+  const n = content.questions.length;
+  let indices = Array.from({ length: n }, (_, i) => i);
+  const per = content.questionsPerAttempt;
+  if (per && per > 0 && per < n) indices = shuffle(indices).slice(0, per);
+  return indices.map((qi) => {
+    const q = content.questions[qi];
+    const optionOrder = content.shuffleOptions
+      ? shuffle(Array.from({ length: q.options.length }, (_, i) => i))
+      : Array.from({ length: q.options.length }, (_, i) => i);
+    return { qi, q, optionOrder };
+  });
+}
+
+// Quiz player. Correct answers are NOT in `content` (stripped server-side). A rotating pool +
+// option shuffle mean retries show different questions/orders; the submit endpoint scores the
+// SERVED subset and returns per-question feedback (explanation + link to the source lesson).
 export function QuizPlayer({
   courseId,
   lessonId,
@@ -37,25 +79,35 @@ export function QuizPlayer({
   content: SafeQuiz;
 }) {
   const router = useRouter();
-  const [answers, setAnswers] = useState<number[]>(() => Array(content.questions.length).fill(-1));
+  const [served, setServed] = useState<Served[]>(() => buildAttempt(content));
+  // answers[servedPosition] = chosen ORIGINAL option index (-1 = unanswered).
+  const [answers, setAnswers] = useState<number[]>(() => Array(served.length).fill(-1));
   const [result, setResult] = useState<QuizResult | null>(null);
   const [pending, setPending] = useState(false);
 
-  function setAnswer(qi: number, oi: number) {
+  function setAnswer(si: number, originalOptionIndex: number) {
     setAnswers((a) => {
       const next = [...a];
-      next[qi] = oi;
+      next[si] = originalOptionIndex;
       return next;
     });
+  }
+
+  function retry() {
+    const next = buildAttempt(content); // new random subset + shuffle
+    setServed(next);
+    setAnswers(Array(next.length).fill(-1));
+    setResult(null);
   }
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     setPending(true);
+    const responses = served.map((s, si) => ({ questionIndex: s.qi, optionIndex: answers[si] }));
     const r = await fetch(`/api/courses/${courseId}/lessons/${lessonId}/quiz`, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ answers }),
+      body: JSON.stringify({ responses }),
     });
     setPending(false);
     if (r.ok) {
@@ -66,20 +118,32 @@ export function QuizPlayer({
   }
 
   const graded = result?.feedback;
+  const total = content.questions.length;
+  const rotating = served.length < total;
 
   return (
     <form onSubmit={submit} className="space-y-6">
-      {content.questions.map((q, qi) => {
-        const fb = graded?.[qi];
+      {rotating ? (
+        <p className="text-sm text-neutral-500">
+          Showing {served.length} of {total} questions — retries draw a fresh set.
+        </p>
+      ) : null}
+
+      {served.map((s, si) => {
+        const fb = graded?.[si];
         return (
-          <fieldset key={qi}>
+          <fieldset key={si}>
             <legend className="font-medium">
-              {qi + 1}. {q.prompt}
+              {si + 1}. {s.q.prompt}
             </legend>
+            {s.q.imageUrl ? (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={s.q.imageUrl} alt={s.q.imageAlt ?? ""} loading="lazy" className="my-2 h-auto max-w-full rounded-lg" />
+            ) : null}
             <div className="mt-2 space-y-1">
-              {q.options.map((opt, oi) => {
+              {s.optionOrder.map((oi) => {
                 const isCorrect = fb && oi === fb.correctIndex;
-                const isWrongPick = fb && oi === answers[qi] && !fb.correct;
+                const isWrongPick = fb && oi === answers[si] && !fb.correct;
                 return (
                   <label
                     key={oi}
@@ -93,12 +157,12 @@ export function QuizPlayer({
                   >
                     <input
                       type="radio"
-                      name={`q${qi}`}
-                      checked={answers[qi] === oi}
+                      name={`q${si}`}
+                      checked={answers[si] === oi}
                       disabled={!!result}
-                      onChange={() => setAnswer(qi, oi)}
+                      onChange={() => setAnswer(si, oi)}
                     />
-                    <span>{opt}</span>
+                    <span>{s.q.options[oi]}</span>
                     {isCorrect ? <span aria-hidden>✓</span> : null}
                   </label>
                 );
@@ -153,10 +217,7 @@ export function QuizPlayer({
           {!result.passed ? (
             <button
               type="button"
-              onClick={() => {
-                setResult(null);
-                setAnswers(Array(content.questions.length).fill(-1));
-              }}
+              onClick={retry}
               className="min-h-11 rounded-md border border-neutral-300 px-4 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700"
             >
               Try again

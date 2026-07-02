@@ -10,11 +10,26 @@ export interface QuizQuestion {
   /** Slug of the lesson where the answer is found; becomes a "review" link.
    *  EVERY authored quiz question should set this (point the learner to the source). */
   sourceLessonSlug?: string;
+  /** Optional figure shown above the prompt. `imageAlt` is REQUIRED whenever `imageUrl`
+   *  is set (screen-reader description) — enforced by the seed/authoring guard. */
+  imageUrl?: string;
+  imageAlt?: string;
 }
 
 export interface QuizContent {
   questions: QuizQuestion[];
   passingScore?: number;
+  /** Serve a random subset of this many questions per attempt (a rotating pool), so a learner
+   *  sees different questions on retries. Omit / >= questions.length = show all. */
+  questionsPerAttempt?: number;
+  /** Shuffle each question's option order per attempt (display only; scoring is by identity). */
+  shuffleOptions?: boolean;
+}
+
+/** A learner's answer to one served question: original indices into content.questions/options. */
+export interface QuizResponse {
+  questionIndex: number;
+  optionIndex: number;
 }
 
 // Per-question feedback returned AFTER submission (so correct answers are never
@@ -37,6 +52,24 @@ export function scoreQuiz(
   content.questions.forEach((q, i) => {
     if (answers[i] === q.correctIndex) correct += 1;
   });
+  const score = Math.round((correct / total) * 100);
+  return { score, passed: score >= (content.passingScore ?? 70), correct, total };
+}
+
+// Score a rotated/shuffled attempt: the learner saw a subset of questions in some option order,
+// and submits the ORIGINAL indices for each. We score only the served questions (`responses`),
+// so subsetting and shuffling are safe regardless of display order.
+export function scoreQuizResponses(
+  content: QuizContent,
+  responses: QuizResponse[],
+): { score: number; passed: boolean; correct: number; total: number } {
+  const total = responses.length;
+  if (total === 0) return { score: 0, passed: false, correct: 0, total: 0 };
+  let correct = 0;
+  for (const r of responses) {
+    const q = content.questions[r.questionIndex];
+    if (q && r.optionIndex === q.correctIndex) correct += 1;
+  }
   const score = Math.round((correct / total) * 100);
   return { score, passed: score >= (content.passingScore ?? 70), correct, total };
 }
