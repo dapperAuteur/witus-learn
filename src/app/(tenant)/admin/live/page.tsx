@@ -3,8 +3,10 @@ import { requirePlatformOwner } from "@/lib/session";
 import { requireTenant } from "@/lib/tenant";
 import { listAllTenants, listCourseOptions, listLiveForAdmin } from "@/db/queries/live";
 import { getStreamSettings } from "@/db/queries/stream-settings";
+import { getStreamTargets } from "@/db/queries/stream-targets";
 import { LiveAdmin } from "@/components/live-admin";
 import { StreamSettings } from "@/components/stream-settings";
+import { StreamTargets } from "@/components/stream-targets";
 
 export const metadata: Metadata = { title: "Live classes" };
 
@@ -13,11 +15,12 @@ export const metadata: Metadata = { title: "Live classes" };
 export default async function LiveAdminPage() {
   await requirePlatformOwner();
   const tenant = await requireTenant();
-  const [tenants, sessions, courses, streamSettings] = await Promise.all([
+  const [tenants, sessions, courses, streamSettings, streamTargets] = await Promise.all([
     listAllTenants(),
     listLiveForAdmin(tenant.id),
     listCourseOptions(tenant.id),
     getStreamSettings(tenant.id),
+    getStreamTargets(tenant.id),
   ]);
   const courseTitle = new Map(courses.map((c) => [c.id, c.title]));
 
@@ -30,6 +33,10 @@ export default async function LiveAdminPage() {
       </p>
       <div className="mt-6">
         <StreamSettings initial={streamSettings} />
+      </div>
+
+      <div className="mt-6">
+        <StreamTargets initial={streamTargets} />
       </div>
 
       <div className="mt-6">
