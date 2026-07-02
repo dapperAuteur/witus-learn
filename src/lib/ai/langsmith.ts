@@ -15,7 +15,7 @@ export function configureLangSmith(): boolean {
     process.env.LANGSMITH_API_KEY = env.LANGSMITH_API_KEY as string;
     process.env.LANGCHAIN_API_KEY = env.LANGSMITH_API_KEY as string;
     if (!process.env.LANGSMITH_PROJECT) {
-      process.env.LANGSMITH_PROJECT = env.LANGSMITH_PROJECT ?? "witus-learn";
+      process.env.LANGSMITH_PROJECT = env.LANGSMITH_PROJECT ?? "Learn.WitUS";
     }
     configured = true;
   }

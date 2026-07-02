@@ -150,6 +150,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   quizzes). 79 lessons, 16 quizzes, 158 recall cards total. Seed \`pnpm seed:langchain\` (auto-discovers
   \`scripts/data/langchain/*\`). Pipeline gained \`recallContent\` + \`relatedProducts\` (cross-promo).
   Next: BAM builds the **learning path** Triage → Foundation (wanderlearn) → Project (centenarian).
+- 🔧 **Admin-managed stream settings** (\`feat/stream-settings\`) — the persistent per-tenant stream
+  (what would've been \`RTMP_STREAM_PLAYBACK_URL\` / \`STREAM_EMBED_CODE\` env vars) is now editable at
+  **/admin/live**. Paste a provider embed (iframe-in-div) or a direct URL; the server **extracts the
+  iframe src and allowlists its host** (\`src/lib/stream-embed.ts\`), storing only the URL in
+  \`platform_settings\` (tenant-scoped, no migration). Renders on the Live page in a **sandboxed**
+  iframe when no session is live. XSS-safe (never renders pasted HTML). Unit-tested.
 - 🟡 **Admin/Operator workstream** (scheduled next) — a consolidated \`/admin\` dashboard unifying the
   owner links (domains/live/paths/leads/roadmap) + **tenant settings** (flags: gamification dose,
   AI tutor, age-gate, coming-soon, **accent/branding**) + **marketing** (campaigns/promos). ~2-3 branches.
