@@ -183,6 +183,73 @@ sessions for the school.`,
   labeled card on the course page (WitUS-branded sites only).
 - **Link usage** — the course page shows how often outbound links get clicked (counts only).`,
   },
+  {
+    slug: "streaming-and-multistream",
+    title: "Streaming: always-on stream + multistream to socials",
+    category: "Live",
+    keywords: ["stream", "rtmp", "obs", "viloud", "embed", "multistream", "linkedin", "youtube", "restream"],
+    body: `# Streaming
+
+Manage streaming under **/admin/live** (platform owner / brand admin).
+
+## Always-on stream
+Paste your provider's embed code (an iframe from Viloud, YouTube, and the like) or a direct https
+player URL into **Always-on stream**, then Save. We keep only the player URL (never raw HTML) and
+show it on your school's **Live** page whenever no scheduled session is live. If it rejects the
+host, the message names it — add trusted hosts in \`src/lib/stream-embed.ts\`.
+
+## Multistream to LinkedIn / YouTube / …
+Add each destination's RTMP ingest URL + stream key under **Multistream targets**, then copy them
+into OBS's multiple-output so one broadcast fans out to several socials. The app only stores the
+config; OBS does the streaming. Stream keys are often single-use, so update them before a broadcast.`,
+  },
+  {
+    slug: "quizzes-rotation-and-images",
+    title: "Quizzes: rotating pools, shuffled options, and images",
+    category: "Courses",
+    keywords: ["quiz", "exam", "rotate", "random", "shuffle", "pool", "image", "alt", "accessibility"],
+    body: `# Quizzes & exams
+
+Quizzes are authored in \`quiz_content\` (via seeds today). Beyond the basics you can:
+
+- **Rotate questions** — set \`questionsPerAttempt\` to serve a random subset of a larger pool, so a
+  learner sees different questions on each retake. Omit it (or set it to the pool size) to show all.
+- **Shuffle options** — set \`shuffleOptions: true\` to randomize each question's option order per
+  attempt. Scoring is by identity, so rotation and shuffling never affect correctness.
+- **Add an image** — a question can carry \`imageUrl\` plus a REQUIRED \`imageAlt\` (screen-reader
+  description); it renders above the prompt. Seeding fails if an image has no alt text.`,
+  },
+  {
+    slug: "images-and-quick-recall",
+    title: "Lesson images (with alt text) and Quick recall",
+    category: "Teaching",
+    keywords: ["image", "alt", "accessibility", "screen reader", "recall", "retrieval", "previous lesson"],
+    body: `# Images & Quick recall
+
+## Images in lessons
+In the lesson editor's toolbar, use **Image**. It asks for a short description (alt text) first —
+this is required for screen-reader users — then uploads the image and inserts it. Images are
+responsive and lazy-loaded.
+
+## Quick recall
+Add **Quick recall** prompts (question/answer pairs) to a lesson. They render at the START of the
+lesson as click-to-reveal cards, so learners test themselves on the PREVIOUS lesson before the new
+material. Self-grades ("I got it" / "Missed it") feed the **Recall accuracy** panel on your course
+dashboard, so you can compare in-lesson recall against quiz results.`,
+  },
+  {
+    slug: "recording-long-lessons",
+    title: "Recording long lessons (auto-split parts)",
+    category: "Recording",
+    keywords: ["record", "audio", "long", "split", "parts", "upload", "cap", "size", "cloudinary"],
+    body: `# Long recordings
+
+The in-app recorder saves offline-first and uploads when you're online. If a take runs past the
+upload size cap, it now **rolls into a new part automatically** instead of cutting off — a long
+lecture becomes several ordered parts that upload in order and play back in sequence for the
+learner (with Prev / Next). Nothing is lost if the tab closes mid-record; parts wait in the browser
+and drain when you're back online.`,
+  },
 ];
 
 export function helpArticleBySlug(slug: string): HelpArticle | undefined {

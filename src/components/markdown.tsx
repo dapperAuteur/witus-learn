@@ -50,6 +50,10 @@ export function Markdown({ children, linkContext }: { children: string; linkCont
           th: ({ children }) => <th className="border border-neutral-300 px-2 py-1 text-left font-semibold dark:border-neutral-700">{children}</th>,
           td: ({ children }) => <td className="border border-neutral-300 px-2 py-1 dark:border-neutral-700">{children}</td>,
           hr: () => <hr className="my-4 border-neutral-200 dark:border-neutral-800" />,
+          // Responsive, lazy-loaded lesson images. `alt` comes from the markdown (![alt](url));
+          // the editor's image button requires it, so screen readers always get a description.
+          // eslint-disable-next-line @next/next/no-img-element
+          img: ({ src, alt }) => <img src={typeof src === "string" ? src : ""} alt={alt ?? ""} loading="lazy" className="my-3 h-auto max-w-full rounded-lg" />,
         }}
       >
         {children}

@@ -82,6 +82,11 @@ function assertNoAiTells(course: AuthoredCourse): void {
     if (l.quiz) {
       for (const q of l.quiz.questions) {
         texts.push(q.prompt, q.explanation ?? "", ...q.options);
+        // Accessibility gate: a quiz image must carry alt text (screen-reader description).
+        if (q.imageUrl && !q.imageAlt?.trim()) {
+          console.error(`Quiz image without alt text in "${l.slug}". Add imageAlt before seeding.`);
+          process.exit(1);
+        }
       }
     }
     for (const t of texts) {

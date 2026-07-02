@@ -52,6 +52,8 @@ pnpm seed:health     # health/fitness courses (NASM CPT/CES/CNC, Read Your Body'
                      #   ECS Foundations/Fitness) → Learn.WitUS (see scripts/seed-health.ts TARGET_SLUG)
 pnpm seed:speedway   # ElementaryMBA: Speedway docuseries (Indy 500), Intro to Robotics & STEAM,
                      #   Young Makers: AI for Kids (F3), and AI for Entrepreneurs (F4)
+pnpm seed:langchain  # 3 LangGraph/LangChain courses → Learn.WitUS (AI & Technology);
+                     #   auto-discovers scripts/data/langchain/<repo>/ (course.json + lessons)
 ```
 
 `*.localhost` subdomains resolve to 127.0.0.1 in modern browsers; no `/etc/hosts` edit needed.

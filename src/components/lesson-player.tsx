@@ -70,14 +70,23 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
 
     case "quiz": {
       const c = lesson.quizContent as {
-        questions?: { prompt: string; options: string[]; correctIndex: number }[];
+        questions?: { prompt: string; options: string[]; correctIndex: number; imageUrl?: string; imageAlt?: string }[];
         passingScore?: number;
+        questionsPerAttempt?: number;
+        shuffleOptions?: boolean;
       } | null;
       if (!c?.questions?.length) return <Empty />;
-      // Strip correctIndex before it reaches the client.
+      // Strip correctIndex before it reaches the client; keep image + rotation config.
       const safe = {
-        questions: c.questions.map((q) => ({ prompt: q.prompt, options: q.options })),
+        questions: c.questions.map((q) => ({
+          prompt: q.prompt,
+          options: q.options,
+          imageUrl: q.imageUrl,
+          imageAlt: q.imageAlt,
+        })),
         passingScore: c.passingScore,
+        questionsPerAttempt: c.questionsPerAttempt,
+        shuffleOptions: c.shuffleOptions,
       };
       return <QuizPlayer courseId={lesson.courseId} lessonId={lesson.id} content={safe} />;
     }
