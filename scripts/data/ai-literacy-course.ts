@@ -1,4 +1,4 @@
-// Authored "AI Literacy: Use It Well & Wisely" — F1, the flagship AI foundation on
+// Authored "AI Literacy: Use It Well & Wisely", F1, the flagship AI foundation on
 // Learn.WitUS. Carries the platform's trust DNA: use AI to learn/work faster, but
 // verify the output, spot fakes, and use it ethically. Cited (NIST AI RMF; the
 // transformer paper; C2PA; CISA deepfake guidance; NIST Privacy Framework). Exercises
@@ -9,18 +9,18 @@ import type { AuthoredCourse } from "./authored-course";
 export const AI_LITERACY_COURSE: AuthoredCourse = {
   title: "AI Literacy: Use It Well & Wisely",
   description:
-    "Get more out of AI without being fooled by it. Learn what tools like ChatGPT and Claude actually do, how to prompt them well, how to verify what they tell you, how to spot deepfakes and synthetic media, and how to use AI ethically and privately. Practical, cited, and non-hype — the trust foundation for everything else.",
+    "Get more out of AI without being fooled by it. Learn what tools like ChatGPT and Claude actually do, how to prompt them well, how to verify what they tell you, how to spot deepfakes and synthetic media, and how to use AI ethically and privately. Practical, cited, and non-hype: the trust foundation for everything else.",
   lessons: [
     {
       slug: "how-ai-works",
       title: "1 · What AI really is (and isn't)",
-      body: `Today's popular AI — chat assistants like ChatGPT, Claude, and Gemini — are **large language models (LLMs)**. At their core they **predict the next most-likely chunk of text** based on patterns learned from huge amounts of writing. They are extraordinary pattern-matchers, not knowers of truth.
+      body: `Today's popular AI (chat assistants like ChatGPT, Claude, and Gemini) are **large language models (LLMs)**. At their core they **predict the next most-likely chunk of text** based on patterns learned from huge amounts of writing. They are extraordinary pattern-matchers, not knowers of truth.
 
 That one fact explains almost everything you need to be careful about:
 
-- They sound **fluent and confident even when they are wrong** — fluency is what they optimize for, not accuracy.
+- They sound **fluent and confident even when they are wrong**: fluency is what they optimize for, not accuracy.
 - They are strong at **drafting, summarizing, rephrasing, brainstorming, translating, and explaining**.
-- They are weak at **exact facts, fresh/current events, math, counting, and anything needing a verified source** — unless connected to tools that look things up.
+- They are weak at **exact facts, fresh/current events, math, counting, and anything needing a verified source**, unless connected to tools that look things up.
 
 Modern LLMs are built on the **transformer** architecture (Vaswani et al., 2017). They don't "look things up" in a database by default; they generate the most plausible-sounding answer. Plausible is not the same as correct.
 
@@ -35,13 +35,17 @@ Modern LLMs are built on the **transformer** architecture (Vaswani et al., 2017)
     {
       slug: "prompting",
       title: "2 · Prompting well",
+      recallContent: [
+        { prompt: "What is an LLM fundamentally doing when it answers you?", answer: "Predicting the next most likely chunk of text from patterns it learned, not looking up verified facts." },
+        { prompt: "Why can an AI sound convincing yet still be wrong?", answer: "It optimizes for fluency, not accuracy, so confident wording does not mean the content is correct." },
+      ],
       body: `A vague prompt gets a vague answer. The fix is to give the model what a smart human helper would need. A reliable recipe:
 
-- **Role** — who it should act as ("You are a patient biology tutor").
-- **Task** — exactly what you want ("Explain photosynthesis to a 7th grader").
-- **Context** — the situation, audience, and any source text to use.
-- **Format** — length, structure, tone ("5 bullet points, plain English").
-- **Examples** — show one good answer when the format matters.
+- **Role**: who it should act as ("You are a patient biology tutor").
+- **Task**: exactly what you want ("Explain photosynthesis to a 7th grader").
+- **Context**: the situation, audience, and any source text to use.
+- **Format**: length, structure, tone ("5 bullet points, plain English").
+- **Examples**: show one good answer when the format matters.
 
 Then **iterate**: treat the first answer as a draft. Ask it to be shorter, cite its claims, try a different angle, or fix what's off. Good prompting is a conversation, not a one-shot.
 
@@ -62,23 +66,27 @@ Two habits that save you:
         instructions:
           "Each item names what a weak prompt is missing from the Role / Task / Context / Format / Examples recipe. Type the missing piece. Spelling is forgiving.",
         items: [
-          { prompt: "\"Write about dogs.\" — it never says how long or in what shape. What's missing? (one word)", answer: "format", explanation: "Specify length, structure, and tone — e.g. '5 short bullets'." },
-          { prompt: "\"Explain this.\" with nothing pasted — the model can't see what 'this' is. What's missing?", answer: "context", accept: ["the context", "source"], explanation: "Give it the material/situation; don't rely on its memory." },
+          { prompt: "\"Write about dogs.\" It never says how long or in what shape. What's missing? (one word)", answer: "format", explanation: "Specify length, structure, and tone (e.g. '5 short bullets')." },
+          { prompt: "\"Explain this.\" with nothing pasted, the model can't see what 'this' is. What's missing?", answer: "context", accept: ["the context", "source"], explanation: "Give it the material/situation; don't rely on its memory." },
           { prompt: "To make it answer like a kind coach instead of a generic bot, set its ___.", answer: "role", explanation: "A role ('You are a patient coach') shapes voice and depth." },
-          { prompt: "Treat the first answer as a draft and ask for changes — this habit is called ___.", answer: "iterating", accept: ["iteration", "iterate"], explanation: "Good prompting is a conversation, not one shot." },
-          { prompt: "To check whether a claim is true, ask the model to show its ___.", answer: "sources", accept: ["source", "reasoning"], explanation: "Then verify those sources yourself — see the next lesson." },
+          { prompt: "Treat the first answer as a draft and ask for changes. This habit is called ___.", answer: "iterating", accept: ["iteration", "iterate"], explanation: "Good prompting is a conversation, not one shot." },
+          { prompt: "To check whether a claim is true, ask the model to show its ___.", answer: "sources", accept: ["source", "reasoning"], explanation: "Then verify those sources yourself (see the next lesson)." },
         ],
       },
     },
     {
       slug: "verify",
       title: "4 · Verify the output (hallucinations)",
-      body: `When an AI states something false as if it were true, that's called a **hallucination** — and it happens often, because the model is generating plausible text, not checking facts. Hallucinations are dangerous precisely because they are **confident and well-written**.
+      recallContent: [
+        { prompt: "Name three of the five parts of a strong prompt.", answer: "Any three of: role, task, context, format, examples." },
+        { prompt: "Why treat the model's first answer as a draft?", answer: "Good prompting is a conversation, so you iterate, asking it to shorten, cite claims, or fix what is off." },
+      ],
+      body: `When an AI states something false as if it were true, that's called a **hallucination**, and it happens often, because the model is generating plausible text, not checking facts. Hallucinations are dangerous precisely because they are **confident and well-written**.
 
 Build a verify habit:
 
 - **Treat every fact, quote, statistic, name, and citation as unconfirmed** until you check it.
-- **Ask for sources — then open them.** Models can invent real-looking citations (fake DOIs, fake URLs, fake court cases). A source you didn't open is not a source.
+- **Ask for sources, then open them.** Models can invent real-looking citations (fake DOIs, fake URLs, fake court cases). A source you didn't open is not a source.
 - **Cross-check** important claims against a primary or reputable source.
 - **Be extra skeptical** of recent events, numbers, legal/medical/financial advice, and anything you'd act on.
 
@@ -87,18 +95,22 @@ This is the heart of Learn.WitUS: every claim ties to a source you can verify. U
 **Check yourself.** Why is a hallucination more dangerous than an obvious error?
 
 ## Sources
-- National Institute of Standards and Technology. (2023). AI Risk Management Framework (AI RMF 1.0) — see "Valid and Reliable." https://www.nist.gov/itl/ai-risk-management-framework`,
+- National Institute of Standards and Technology. (2023). AI Risk Management Framework (AI RMF 1.0), see "Valid and Reliable." https://www.nist.gov/itl/ai-risk-management-framework`,
     },
     {
       slug: "spot-fakes",
       title: "5 · Spotting deepfakes and synthetic media",
+      recallContent: [
+        { prompt: "What is a hallucination in AI output?", answer: "When the model states something false as if it were true, because it generates plausible text rather than checking facts." },
+        { prompt: "Why is an AI citation you never opened worthless as proof?", answer: "Models can invent real-looking citations with fake DOIs or URLs, so a source you did not open is not a source." },
+      ],
       body: `AI can now generate realistic **images, video, and voice**. "Deepfakes" can put words in someone's mouth or fabricate events. Treat surprising media as **unverified until confirmed**.
 
 Practical defenses:
 
 - **Consider the source and motive.** Who posted it, and what do they want you to feel or do? Strong emotional content spreads before it's checked.
-- **Look for tells** — odd hands/teeth/ears, warped text or backgrounds, mismatched lighting, unnatural blinking or lip-sync. (Tells fade as tech improves, so don't rely on them alone.)
-- **Check provenance.** **Content Credentials (C2PA)** attach a tamper-evident history to media — who made it and whether AI was involved. Look for that "CR" / Content Credentials marker.
+- **Look for tells**: odd hands/teeth/ears, warped text or backgrounds, mismatched lighting, unnatural blinking or lip-sync. (Tells fade as tech improves, so don't rely on them alone.)
+- **Check provenance.** **Content Credentials (C2PA)** attach a tamper-evident history to media: who made it and whether AI was involved. Look for that "CR" / Content Credentials marker.
 - **Trace it.** Reverse-image-search; find the original; see if reputable outlets report it.
 - **Slow down.** The single most effective habit is to **not share until you've confirmed**.
 
@@ -116,9 +128,9 @@ Government agencies now warn that synthetic media is a real threat for fraud and
       exercise: {
         instructions: "Short answers about verifying AI output and media. Type your answer, then check.",
         items: [
-          { prompt: "When an AI states something false with total confidence, that's called a ___.", answer: "hallucination", explanation: "Plausible-sounding but untrue — always verify." },
+          { prompt: "When an AI states something false with total confidence, that's called a ___.", answer: "hallucination", explanation: "Plausible-sounding but untrue. Always verify." },
           { prompt: "A citation the model gives but you never opened counts as ___ proof. (zero / strong)", answer: "zero", accept: ["no", "none"], explanation: "Models invent real-looking sources; open and confirm them." },
-          { prompt: "Tamper-evident media history showing who made an image and if AI was used: Content ___.", answer: "Credentials", explanation: "C2PA Content Credentials — provenance you can inspect." },
+          { prompt: "Tamper-evident media history showing who made an image and if AI was used: Content ___.", answer: "Credentials", explanation: "C2PA Content Credentials: provenance you can inspect." },
           { prompt: "Best single habit before resharing a shocking clip: do not ___ until confirmed.", answer: "share", accept: ["post", "repost"], explanation: "Slowing down stops most misinformation." },
           { prompt: "To find where an image really came from, do a reverse ___ search.", answer: "image", explanation: "Trace it to the original and check reputable coverage." },
         ],
@@ -127,37 +139,45 @@ Government agencies now warn that synthetic media is a real threat for fraud and
     {
       slug: "ethics-bias",
       title: "7 · Bias, ethics, and honesty",
-      body: `Because models learn from human-made data, they can **absorb and repeat bias** — stereotypes, skewed assumptions, gaps for less-represented groups (NIST, 2023). Treat AI output as a draft from a flawed assistant, not a neutral authority.
+      recallContent: [
+        { prompt: "What are Content Credentials (C2PA) and why do they help?", answer: "A tamper-evident history attached to media showing who made it and whether AI was involved, so you can check provenance." },
+        { prompt: "What is the single most effective habit before sharing shocking media?", answer: "Slow down and do not share until you have confirmed it, for example by reverse image searching for the original." },
+      ],
+      body: `Because models learn from human-made data, they can **absorb and repeat bias**: stereotypes, skewed assumptions, gaps for less-represented groups (NIST, 2023). Treat AI output as a draft from a flawed assistant, not a neutral authority.
 
 Use it honestly:
 
 - **Disclose** AI help when it matters (school, work, journalism) per the rules you're under. Passing AI work off as fully your own can be plagiarism or academic dishonesty.
-- **Don't use it to deceive or harm** — no fake reviews, fake people, impersonation, harassment, or cheating.
+- **Don't use it to deceive or harm**: no fake reviews, fake people, impersonation, harassment, or cheating.
 - **Keep humans accountable.** You are responsible for what you publish or act on, even if AI wrote it.
 - **Watch for bias** in hiring, grading, lending, or any decision about people; AI should support human judgment, not replace it.
 
-The goal isn't fear — it's **responsible leverage**: get the speed of AI while keeping your integrity.
+The goal isn't fear, it's **responsible use**: get the speed of AI while keeping your integrity.
 
 **Check yourself.** Why can an AI's answer be biased even when it sounds neutral?
 
 ## Sources
-- National Institute of Standards and Technology. (2023). AI RMF 1.0 — "Fair – with Harmful Bias Managed." https://www.nist.gov/itl/ai-risk-management-framework`,
+- National Institute of Standards and Technology. (2023). AI RMF 1.0, "Fair: with Harmful Bias Managed." https://www.nist.gov/itl/ai-risk-management-framework`,
     },
     {
       slug: "privacy-and-using-well",
       title: "8 · Privacy, security, and putting it together",
+      recallContent: [
+        { prompt: "Why can an AI's answer carry bias even when it sounds neutral?", answer: "It learns from human-made data that contains stereotypes and gaps, so it can absorb and repeat that bias." },
+        { prompt: "Who is accountable for AI-assisted work you publish or act on?", answer: "You are, so disclose AI help when it matters and keep human judgment in charge, especially for decisions about people." },
+      ],
       body: `**Privacy first.** Assume anything you type into a public AI tool **may be stored and used to improve the model** unless the settings say otherwise. So:
 
-- **Never paste secrets** — passwords, financial/health records, other people's personal data, confidential work files.
+- **Never paste secrets**: passwords, financial/health records, other people's personal data, confidential work files.
 - **Strip identifying details** when you can; ask in the abstract.
 - **Check the tool's data settings** (history off, "don't train on my data") and your workplace/school policy (NIST Privacy Framework).
 
-**Putting it all together — a healthy workflow:**
+**Putting it all together, a healthy workflow:**
 
-1. **Draft with AI** — outlines, explanations, first passes, code, brainstorms.
-2. **Verify with sources** — confirm every fact, quote, and citation that matters.
-3. **Spot fakes** — pause on surprising media; check provenance and origin.
-4. **Stay private and ethical** — share no secrets, disclose AI help, keep human judgment in charge.
+1. **Draft with AI**: outlines, explanations, first passes, code, brainstorms.
+2. **Verify with sources**: confirm every fact, quote, and citation that matters.
+3. **Spot fakes**: pause on surprising media; check provenance and origin.
+4. **Stay private and ethical**: share no secrets, disclose AI help, keep human judgment in charge.
 
 Do that and AI makes you faster *and* harder to fool. That's the whole point: **use it well, and use it wisely.**
 
@@ -182,14 +202,14 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
               "Searching the live web every time",
             ],
             correctIndex: 1,
-            explanation: "LLMs predict plausible text from learned patterns — fluent, but not fact-checked.",
+            explanation: "LLMs predict plausible text from learned patterns: fluent, but not fact-checked.",
             sourceLessonSlug: "how-ai-works",
           },
           {
             prompt: "When an AI confidently states something false, it's called a…",
             options: ["Glitch", "Hallucination", "Bug", "Syntax error"],
             correctIndex: 1,
-            explanation: "A hallucination — dangerous because it's confident and well-written. Verify everything.",
+            explanation: "A hallucination: dangerous because it's confident and well-written. Verify everything.",
             sourceLessonSlug: "verify",
           },
           {
@@ -237,7 +257,7 @@ Do that and AI makes you faster *and* harder to fool. That's the whole point: **
               "A general question",
             ],
             correctIndex: 2,
-            explanation: "Assume inputs may be stored or used for training — never share secrets or others' personal data.",
+            explanation: "Assume inputs may be stored or used for training. Never share secrets or others' personal data.",
             sourceLessonSlug: "privacy-and-using-well",
           },
         ],
