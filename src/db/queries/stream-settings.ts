@@ -2,6 +2,8 @@ import "server-only";
 import { and, eq, inArray } from "drizzle-orm";
 import { db } from "@/db/client";
 import { platformSettings } from "@/db/schema/tenancy";
+import { env } from "@/lib/env";
+import { isAllowedStreamUrl, resolveStreamSrc } from "@/lib/stream-embed";
 
 // Persistent, per-tenant "always-on" stream config, stored in the generic
 // platform_settings key/value table (tenant-scoped, no dedicated migration). These
@@ -31,10 +33,21 @@ export async function getStreamSettings(tenantId: string): Promise<StreamSetting
       ),
     );
   const byKey = new Map(rows.map((r) => [r.key, r.value]));
-  return {
-    playbackUrl: byKey.get(PLAYBACK_KEY) ?? null,
-    embedSrc: byKey.get(EMBED_SRC_KEY) ?? null,
-  };
+  let playbackUrl = byKey.get(PLAYBACK_KEY) ?? null;
+  let embedSrc = byKey.get(EMBED_SRC_KEY) ?? null;
+
+  // Fall back to the deployment-wide env defaults when this tenant hasn't set its own, so the
+  // stream values only need to be provided once (RTMP_STREAM_PLAYBACK_URL / STREAM_EMBED_CODE).
+  // Env values pass the SAME allowlist/extract as an admin paste; nothing raw is trusted.
+  if (!playbackUrl && env.RTMP_STREAM_PLAYBACK_URL && isAllowedStreamUrl(env.RTMP_STREAM_PLAYBACK_URL)) {
+    playbackUrl = env.RTMP_STREAM_PLAYBACK_URL.trim();
+  }
+  if (!embedSrc && env.STREAM_EMBED_CODE) {
+    const r = resolveStreamSrc(env.STREAM_EMBED_CODE);
+    if (r.src) embedSrc = r.src;
+  }
+
+  return { playbackUrl, embedSrc };
 }
 
 async function upsert(tenantId: string, key: string, value: string | null): Promise<void> {

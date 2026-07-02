@@ -155,7 +155,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   **/admin/live**. Paste a provider embed (iframe-in-div) or a direct URL; the server **extracts the
   iframe src and allowlists its host** (\`src/lib/stream-embed.ts\`), storing only the URL in
   \`platform_settings\` (tenant-scoped, no migration). Renders on the Live page in a **sandboxed**
-  iframe when no session is live. XSS-safe (never renders pasted HTML). Unit-tested.
+  iframe when no session is live. XSS-safe (never renders pasted HTML). Unit-tested. Falls back to
+  \`RTMP_STREAM_PLAYBACK_URL\` / \`STREAM_EMBED_CODE\` env vars, so the value is set once. Viloud +
+  Wave.Video hosts allowlisted. Multistream to socials = the \`stream-targets\` OBS-fan-out card.
+- ⚪ **Paid streaming/media infra DEFERRED** — Mux / Cloudflare Stream (a thin media-library over a
+  provider, spec \`plans/media-library-service.md\`) is **on hold until there are paying users**. Until
+  then streaming stays **free**: the app embeds BAM's existing Viloud / Wave.Video player, no new spend.
 - 🟡 **Admin/Operator workstream** (scheduled next) — a consolidated \`/admin\` dashboard unifying the
   owner links (domains/live/paths/leads/roadmap) + **tenant settings** (flags: gamification dose,
   AI tutor, age-gate, coming-soon, **accent/branding**) + **marketing** (campaigns/promos). ~2-3 branches.
