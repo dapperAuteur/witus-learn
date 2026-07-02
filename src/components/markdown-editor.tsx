@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { Markdown } from "./markdown";
+import { uploadToCloudinary } from "@/lib/cloudinary-upload";
 
 // A lightweight WYSIWYG-style editor for lesson bodies: a formatting toolbar that inserts
 // markdown around the selection + a live Preview tab (reusing the app's Markdown renderer).
@@ -18,7 +19,10 @@ export function MarkdownEditor({
   placeholder?: string;
 }) {
   const ref = useRef<HTMLTextAreaElement>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
+  const pendingAltRef = useRef("");
   const [tab, setTab] = useState<"write" | "preview">("write");
+  const [uploading, setUploading] = useState(false);
 
   function restore(selStart: number, selEnd: number) {
     requestAnimationFrame(() => {
@@ -62,6 +66,33 @@ export function MarkdownEditor({
     surround("[", `](${url})`);
   }
 
+  // Image insert with a REQUIRED alt-text gate: ask for the description first (screen-reader
+  // accessibility), then upload to Cloudinary and insert ![alt](url). No alt → nothing inserted.
+  function insertImage() {
+    const alt = window.prompt("Describe this image for screen readers (alt text — required):");
+    if (!alt || !alt.trim()) return;
+    pendingAltRef.current = alt.trim();
+    fileRef.current?.click();
+  }
+  async function onImageFile(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    e.target.value = ""; // allow re-selecting the same file later
+    if (!file) return;
+    setUploading(true);
+    try {
+      const url = await uploadToCloudinary(file, file.name);
+      const ta = ref.current;
+      const pos = ta ? ta.selectionStart : value.length;
+      const md = `![${pendingAltRef.current}](${url})`;
+      onChange(value.slice(0, pos) + md + value.slice(pos));
+      restore(pos + md.length, pos + md.length);
+    } catch (err) {
+      window.alert(err instanceof Error ? err.message : "Image upload failed.");
+    } finally {
+      setUploading(false);
+    }
+  }
+
   const btn = "min-h-8 rounded px-2 text-sm hover:bg-neutral-200 focus-visible:outline-2 dark:hover:bg-neutral-700";
   return (
     <div className="rounded-md border border-neutral-300 dark:border-neutral-700">
@@ -74,6 +105,10 @@ export function MarkdownEditor({
         <button type="button" onClick={() => prefixLines("1. ")} className={btn} title="Numbered list" aria-label="Numbered list">1. List</button>
         <button type="button" onClick={() => prefixLines("> ")} className={btn} title="Quote" aria-label="Quote">&ldquo;&rdquo;</button>
         <button type="button" onClick={insertLink} className={btn} title="Link" aria-label="Insert link">Link</button>
+        <button type="button" onClick={insertImage} disabled={uploading} className={btn} title="Insert image (alt text required)" aria-label="Insert image">
+          {uploading ? "Uploading…" : "🖼 Image"}
+        </button>
+        <input ref={fileRef} type="file" accept="image/*" onChange={onImageFile} className="hidden" aria-hidden />
         <button type="button" onClick={() => surround("`")} className={btn} title="Inline code" aria-label="Inline code">{"</>"}</button>
         <div className="ml-auto flex rounded bg-neutral-100 p-0.5 text-xs dark:bg-neutral-800">
           <button type="button" onClick={() => setTab("write")} className={`rounded px-2 py-0.5 ${tab === "write" ? "bg-white shadow-sm dark:bg-neutral-700" : ""}`}>Write</button>
