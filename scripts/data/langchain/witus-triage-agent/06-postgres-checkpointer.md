@@ -1,20 +1,20 @@
 Goal: After this lesson you can swap `MemorySaver` for `PostgresSaver` in about ten lines and watch a brand-new process resume a thread that paused inside a process that no longer exists.
 
-Follow along in the notebook: `durable-hitl-quickstart.ipynb`, Lesson 2 cells, plus `docker-compose.yml`.
+Follow along in the [durable-HITL quickstart notebook](https://github.com/dapperAuteur/witus-triage-agent/blob/main/docs/course/module-0-durable-hitl/durable-hitl-quickstart.ipynb) (Lesson 2 cells), plus [`docker-compose.yml`](https://github.com/dapperAuteur/witus-triage-agent/blob/main/docs/course/module-0-durable-hitl/docker-compose.yml).
 
-## Quick recall
+## What changed since last lesson
 
-Last lesson the crash test printed "STATE LOST." One question: whose memory held the paused thread, and why did the restart erase it? Take a second. `MemorySaver` kept the checkpoint in the first process's heap, so exiting the process dropped it. Now we move the checkpoint out of the heap and into Postgres, where a crash cannot reach it.
+Last lesson the crash test printed "STATE LOST" because `MemorySaver` kept the paused thread in the first process's heap, and exiting the process dropped it. Now we move the checkpoint out of the heap and into Postgres, where a crash can't reach it.
 
 ## Start a local Postgres
 
-The notebook only cares about one thing: a `DB_URI` connection string that points at something serving Postgres. Anything at that URI works. The repo ships a `docker-compose.yml`, so the fast path is:
+The notebook only cares about one thing: a `DB_URI` connection string that points at something serving Postgres. Anything at that URI works. The repo ships a [`docker-compose.yml`](https://github.com/dapperAuteur/witus-triage-agent/blob/main/docs/course/module-0-durable-hitl/docker-compose.yml), so the fast path is:
 
 ```bash
 docker compose up -d --wait
 ```
 
-If Docker Desktop is not an option on your machine, two container-free paths work just as well: Postgres.app (native macOS, click Initialize) or Homebrew (`brew install postgresql@16 && brew services start postgresql@16`). In both cases set `DB_URI` in `.env` to your local database. The notebook creates the tables it needs; you do not create them by hand.
+If Docker Desktop isn't an option on your machine, two container-free paths work just as well: Postgres.app (native macOS, click Initialize) or Homebrew (`brew install postgresql@16 && brew services start postgresql@16`). In both cases set `DB_URI` in `.env` to your local database. The notebook creates the tables it needs; you don't create them by hand.
 
 ## The swap, in about ten lines
 
@@ -31,7 +31,7 @@ checkpointer.setup()  # creates the checkpoint tables, once
 graph = builder.compile(checkpointer=checkpointer)
 ```
 
-Nothing about the graph changed. Same nodes, same edges, same `interrupt()`. The only difference is where the checkpoints are written. That is the point worth slowing down on: durability is a swap at compile time, not a rewrite of your agent. `setup()` is idempotent, so running it again on an existing database is safe; it creates the tables only if they are missing (LangChain, n.d.).
+Nothing about the graph changed. Same nodes, same edges, same `interrupt()`. The only difference is where the checkpoints are written. That's the point worth slowing down on: durability is a swap at compile time, not a rewrite of your agent. `setup()` is idempotent, so running it again on an existing database is safe; it creates the tables only if they're missing (LangChain, n.d.).
 
 ## Rerun the exact same crash test
 
@@ -56,7 +56,7 @@ A new process picked up a thread that paused inside a process that no longer exi
 SELECT thread_id, count(*) FROM checkpoints GROUP BY thread_id;
 ```
 
-The `durable-demo-1` row is there, with its checkpoint count. The paused state is not in anyone's heap anymore. It is sitting in a Postgres table, which is exactly why a second process can read it. When process one wrote a checkpoint at the pause, it wrote to Postgres. When process two resumed, it read from Postgres. The two processes never shared memory. They shared a database, and that is enough.
+The `durable-demo-1` row is there, with its checkpoint count. The paused state isn't in anyone's heap anymore. It's sitting in a Postgres table, which is exactly why a second process can read it. When process one wrote a checkpoint at the pause, it wrote to Postgres. When process two resumed, it read from Postgres. The two processes never shared memory. They shared a database, and that's enough.
 
 ## In practice
 
@@ -66,7 +66,7 @@ The demo runs against local Postgres for a reason: durability is about where sta
 
 - The notebook needs only a `DB_URI`; Docker, Postgres.app, or Homebrew all satisfy it.
 - The fix is about ten lines: a connection pool, a `PostgresSaver`, one `setup()` call, and compiling the same graph with it.
-- The graph does not change; durability is a compile-time swap of the checkpointer, not a rewrite.
+- The graph doesn't change; durability is a compile-time swap of the checkpointer, not a rewrite.
 - After the swap the identical crash test resumes, because a new process reads the paused state from Postgres instead of a dead process's heap.
 - A `SELECT` on the `checkpoints` table shows the persisted thread, which is the literal proof of durability.
 

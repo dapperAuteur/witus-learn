@@ -35,6 +35,8 @@ interface ManifestTextLesson {
   slug: string;
   title: string;
   file: string;
+  /** Active-recall cards (click-to-reveal). Keep the answer OUT of the .md body. */
+  recall?: { prompt: string; answer: string }[];
 }
 interface ManifestQuizLesson {
   type: "quiz";
@@ -49,6 +51,8 @@ interface CourseManifest {
   title: string;
   description: string;
   category: string;
+  /** Ecosystem product slugs for the course's "Related WitUS tools" cross-promo card. */
+  relatedProducts?: string[];
   lessons: ManifestLesson[];
 }
 
@@ -60,7 +64,7 @@ function loadCourse(dir: string): { manifest: CourseManifest; course: AuthoredCo
       return { slug: l.slug, title: l.title, section: l.section, quiz: l.quiz };
     }
     const body = readFileSync(join(ROOT, dir, l.file), "utf-8").trim();
-    return { slug: l.slug, title: l.title, section: l.section, body };
+    return { slug: l.slug, title: l.title, section: l.section, body, recallContent: l.recall };
   });
   return {
     manifest,
@@ -127,6 +131,7 @@ async function main() {
       course,
       category: manifest.category,
       navigationMode: "linear",
+      relatedProducts: manifest.relatedProducts,
     });
     const quizzes = course.lessons.filter((l) => l.quiz).length;
     console.log(`  ${manifest.slug}: ${course.lessons.length} lessons (${quizzes} quizzes) [${manifest.category}]`);

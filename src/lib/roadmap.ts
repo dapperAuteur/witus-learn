@@ -141,13 +141,15 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   OWASP/RAG); F3 "Young Makers: AI for Kids" (ElementaryMBA, grades 3-8, cited UNICEF/Common Sense/
   MIT Day of AI/Code.org/NIST); F4 "AI for Entrepreneurs" (ElementaryMBA, cited NIST + FTC + US
   Copyright Office + SBA). All coming-soon-gated. Next: the mastery ladders. Plan: \`docs/ai-curriculum.md\`.
-- 🔧 **LangGraph/LangChain courses** (\`feat/langchain-courses\`) — vetted + rewritten from the
-  \`lang-chain/*\` source repos to the WitUS course standard (no AI tells, recall openers, Key
-  Takeaways, quizzes, verified refs), under **AI & Technology**. Pilot **shipped**: "LangGraph in
-  Production: The WitUS Triage Agent" (2 modules, 8 lessons + 2 quizzes; \`seed:langchain\`, auto-
-  discovers \`scripts/data/langchain/*\`). Next after review: the Foundation course (wanderlearn
-  reflection-loops, ~43 lessons) + the Project course (centenarian per-agent RAG, ~28 lessons),
-  then a **learning path** Triage → Foundation → Project.
+- 🔧 **LangGraph/LangChain courses** (\`feat/langchain-courses\`) — 3 courses vetted + rewritten from
+  the \`lang-chain/*\` source repos to the WitUS standard (no AI tells, hide-answer **recall cards**,
+  Key Takeaways, per-module quizzes, hyperlinks to repo/app/tagged-files/docs, contractions), under
+  **AI & Technology**. All built: **"LangGraph in Production: The WitUS Triage Agent"** (2 mod, 8
+  lessons + 2 quizzes), **"Reflection Loops in LangGraph"** (wanderlearn, 7 mod, 43 lessons + 7
+  quizzes), **"Multi-Agent LangGraph with Per-Agent RAG"** (centenarian, 7 mod, 28 lessons + 7
+  quizzes). 79 lessons, 16 quizzes, 158 recall cards total. Seed \`pnpm seed:langchain\` (auto-discovers
+  \`scripts/data/langchain/*\`). Pipeline gained \`recallContent\` + \`relatedProducts\` (cross-promo).
+  Next: BAM builds the **learning path** Triage → Foundation (wanderlearn) → Project (centenarian).
 - 🟡 **Admin/Operator workstream** (scheduled next) — a consolidated \`/admin\` dashboard unifying the
   owner links (domains/live/paths/leads/roadmap) + **tenant settings** (flags: gamification dose,
   AI tutor, age-gate, coming-soon, **accent/branding**) + **marketing** (campaigns/promos). ~2-3 branches.
