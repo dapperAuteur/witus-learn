@@ -9,16 +9,16 @@ import {
 } from "@/lib/recording-store";
 import { formatBytes, MAX_UPLOAD_BYTES, uploadToCloudinary } from "@/lib/cloudinary-upload";
 
-// Auto-stop a take a little under the plan cap so a single recording never exceeds it — the
-// instructor is nudged to continue in the next lesson (per-lesson recording is the default).
-const SAFE_BYTES = MAX_UPLOAD_BYTES - 4 * 1024 * 1024;
+// When the CURRENT part nears the cap, finalize it and roll into a new part (a hair under the
+// cap so every part uploads). A long take becomes several ordered parts, played back seamlessly.
+const PART_ROLLOVER_BYTES = MAX_UPLOAD_BYTES - 4 * 1024 * 1024;
 
 // In-app, offline-first, per-lesson audio recorder.
 //  capture (MediaRecorder) → persist to IndexedDB immediately → upload to Cloudinary when online
-//  → attach to the lesson (contentUrl + lessonType=audio + mark recorded).
-// Nothing is lost if the tab closes or you're offline: the blob waits in IndexedDB and the queue
-// drains automatically when connectivity returns. Status: recorded-locally → waiting (offline) →
-// uploading NN% → uploaded ✓ / failed (retry).
+//  → attach to the lesson (contentUrl [+ mediaParts] + lessonType=audio + mark recorded).
+// A recording over the plan's upload cap is split into ordered <cap parts AT RECORD TIME (the
+// MediaRecorder is rotated), so no take is ever cut off. Nothing is lost if the tab closes or
+// you're offline: parts wait in IndexedDB and drain when connectivity returns.
 type Status = "idle" | "recording" | "local" | "offline" | "uploading" | "uploaded" | "error";
 
 function pickMime(): string {
@@ -46,17 +46,21 @@ export function LessonRecorder({
   const [progress, setProgress] = useState(0);
   const [elapsed, setElapsed] = useState(0);
   const [bytes, setBytes] = useState(0);
-  const [autoStopped, setAutoStopped] = useState(false);
+  const [parts, setParts] = useState(0); // finalized parts so far (multi-part takes)
   const [error, setError] = useState<string | null>(null);
 
   const recorderRef = useRef<MediaRecorder | null>(null);
-  const chunksRef = useRef<BlobPart[]>([]);
-  const bytesRef = useRef(0);
   const streamRef = useRef<MediaStream | null>(null);
+  const partsRef = useRef<Blob[]>([]); // finalized part blobs, in order
+  const chunksRef = useRef<BlobPart[]>([]); // current part's chunks
+  const partBytesRef = useRef(0); // current part size
+  const totalBytesRef = useRef(0); // all parts + current
+  const finishingRef = useRef(false); // true = user stopped (final); false = auto rollover
   const startedAtRef = useRef(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // Upload a pending blob to Cloudinary, attach it to the lesson, then clear it from IndexedDB.
+  // Upload each part in order, then attach the lesson (contentUrl mirrors part 1; mediaParts holds
+  // the full ordered list when there's more than one). Clears local copy only on success.
   const upload = useCallback(
     async (rec: PendingRecording) => {
       if (typeof navigator !== "undefined" && !navigator.onLine) {
@@ -67,15 +71,23 @@ export function LessonRecorder({
       setProgress(0);
       setError(null);
       try {
-        // Shared helper: rejects over-cap blobs up front, chunk-uploads large ones for reliability.
-        const url = await uploadToCloudinary(rec.blob, `lesson-${lessonId}.webm`, setProgress);
+        const urls: string[] = [];
+        const n = rec.parts.length;
+        for (let i = 0; i < n; i++) {
+          const name = n > 1 ? `lesson-${lessonId}-part${i + 1}.webm` : `lesson-${lessonId}.webm`;
+          // Cumulative progress across parts (each part 0..100 → overall 0..100).
+          const url = await uploadToCloudinary(rec.parts[i], name, (p) =>
+            setProgress(Math.round(((i + p / 100) / n) * 100)),
+          );
+          urls.push(url);
+        }
 
-        // Attach to the lesson + mark recorded. Only clear local copy once this succeeds.
         const patch = await fetch(`/api/courses/${courseId}/lessons/${lessonId}`, {
           method: "PATCH",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({
-            contentUrl: url,
+            contentUrl: urls[0],
+            mediaParts: urls.length > 1 ? urls.map((url) => ({ url })) : null,
             lessonType: "audio",
             recorded: true,
             durationSeconds: Math.round(rec.durationSeconds) || null,
@@ -132,45 +144,72 @@ export function LessonRecorder({
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       streamRef.current = stream;
       const mime = pickMime();
-      const mr = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+      partsRef.current = [];
       chunksRef.current = [];
-      bytesRef.current = 0;
+      partBytesRef.current = 0;
+      totalBytesRef.current = 0;
+      finishingRef.current = false;
+      setParts(0);
       setBytes(0);
-      setAutoStopped(false);
-      mr.ondataavailable = (e) => {
-        if (e.data.size > 0) {
-          chunksRef.current.push(e.data);
-          bytesRef.current += e.data.size;
-          setBytes(bytesRef.current);
-          // Stop just under the plan cap so one take never exceeds it; finish in the next lesson.
-          if (bytesRef.current >= SAFE_BYTES && mr.state === "recording") {
-            setAutoStopped(true);
-            mr.stop();
-          }
-        }
-      };
-      mr.onstop = async () => {
-        stopTimer();
-        streamRef.current?.getTracks().forEach((t) => t.stop());
-        const durationSeconds = (Date.now() - startedAtRef.current) / 1000;
-        const blob = new Blob(chunksRef.current, { type: mime || "audio/webm" });
+
+      // Persist the growing recording after each part finalizes — nothing is lost on a crash.
+      async function persist(): Promise<PendingRecording> {
         const rec: PendingRecording = {
           lessonId,
           courseId,
-          blob,
+          parts: [...partsRef.current],
           mime: mime || "audio/webm",
-          durationSeconds,
+          durationSeconds: (Date.now() - startedAtRef.current) / 1000,
           createdAt: Date.now(),
         };
-        await savePending(rec); // persisted BEFORE any upload attempt — never lost
-        setStatus("local");
-        void upload(rec);
-      };
+        await savePending(rec);
+        return rec;
+      }
+
+      // Build a recorder for one part; on stop it either rolls into the next part or finalizes.
+      function makeRecorder(): MediaRecorder {
+        const mr = new MediaRecorder(stream, mime ? { mimeType: mime } : undefined);
+        chunksRef.current = [];
+        partBytesRef.current = 0;
+        mr.ondataavailable = (e) => {
+          if (e.data.size <= 0) return;
+          chunksRef.current.push(e.data);
+          partBytesRef.current += e.data.size;
+          totalBytesRef.current += e.data.size;
+          setBytes(totalBytesRef.current);
+          // Near the cap: roll this part over into a fresh one (no cut-off).
+          if (partBytesRef.current >= PART_ROLLOVER_BYTES && mr.state === "recording" && !finishingRef.current) {
+            mr.stop();
+          }
+        };
+        mr.onstop = async () => {
+          const blob = new Blob(chunksRef.current, { type: mime || "audio/webm" });
+          if (blob.size > 0) {
+            partsRef.current.push(blob);
+            setParts(partsRef.current.length);
+          }
+          const rec = await persist();
+          if (finishingRef.current) {
+            stopTimer();
+            streamRef.current?.getTracks().forEach((t) => t.stop());
+            setStatus("local");
+            void upload(rec);
+          } else {
+            // Roll into the next part on the same live stream.
+            const next = makeRecorder();
+            recorderRef.current = next;
+            next.start(2000);
+          }
+        };
+        return mr;
+      }
+
+      const mr = makeRecorder();
       recorderRef.current = mr;
       startedAtRef.current = Date.now();
       setElapsed(0);
-      timerRef.current = setInterval(() => setElapsed((e) => e + 1), 1000);
-      mr.start(2000); // emit data every 2s so we can track size + auto-stop near the cap
+      timerRef.current = setInterval(() => setElapsed((s) => s + 1), 1000);
+      mr.start(2000); // emit data every 2s so we can track size + roll parts near the cap
       setStatus("recording");
     } catch {
       setError("Couldn't access the microphone. Check the browser permission.");
@@ -179,6 +218,7 @@ export function LessonRecorder({
   }
 
   function stopRecording() {
+    finishingRef.current = true;
     recorderRef.current?.stop();
   }
 
@@ -207,14 +247,17 @@ export function LessonRecorder({
           <span className="inline-flex items-center gap-1.5 font-medium text-red-600">
             <span className="h-2 w-2 animate-pulse rounded-full bg-red-600" /> {fmt(elapsed)}
           </span>
-          <span className="text-xs text-neutral-500">{formatBytes(bytes)} / {formatBytes(MAX_UPLOAD_BYTES)}</span>
+          <span className="text-xs text-neutral-500">
+            {formatBytes(bytes)}
+            {parts > 0 ? ` · part ${parts + 1}` : ""}
+          </span>
           <button type="button" onClick={stopRecording} className={btn}>■ Stop</button>
         </>
       ) : null}
 
-      {autoStopped && (status === "local" || status === "uploading" || status === "uploaded") ? (
-        <span className="w-full text-xs text-amber-600">
-          Reached the size limit — this take was saved. Record the rest as the next lesson.
+      {parts > 0 && status !== "recording" && status !== "idle" ? (
+        <span className="w-full text-xs text-neutral-500">
+          Long recording — split into {parts} parts, uploaded and played back in order.
         </span>
       ) : null}
 

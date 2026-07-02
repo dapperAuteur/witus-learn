@@ -39,6 +39,12 @@ const Schema = z.object({
     .max(20)
     .nullable()
     .optional(),
+  // Ordered media parts for a long recording split into <cap pieces (played back in sequence).
+  mediaParts: z
+    .array(z.object({ url: z.string().url(), durationSeconds: z.number().optional() }))
+    .max(50)
+    .nullable()
+    .optional(),
   // Recording progress toggle → maps to recordedAt (now / null) in the handler.
   recorded: z.boolean().optional(),
 });

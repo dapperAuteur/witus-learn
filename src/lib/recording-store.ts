@@ -1,6 +1,7 @@
 // Offline-first store for in-app lesson recordings. Captured audio is written to IndexedDB
 // immediately (survives tab close / connection loss) and drained to Cloudinary when back online.
-// One pending blob per lesson, keyed by lessonId. No external dependency — raw IndexedDB.
+// One pending recording per lesson, keyed by lessonId. A recording is one or more ordered PARTS
+// (a long take is split into <cap parts at record time). No external dependency — raw IndexedDB.
 
 const DB_NAME = "witus-recordings";
 const STORE = "pending";
@@ -9,10 +10,18 @@ const VERSION = 1;
 export interface PendingRecording {
   lessonId: string;
   courseId: string;
-  blob: Blob;
+  /** Ordered parts, each under the upload cap. A normal take is a single part. */
+  parts: Blob[];
   mime: string;
   durationSeconds: number;
   createdAt: number;
+}
+
+// Legacy records (pre-multi-part) stored a single `blob`. Normalize them to `parts` on read.
+function normalize(rec: (PendingRecording & { blob?: Blob }) | undefined): PendingRecording | undefined {
+  if (!rec) return undefined;
+  if (!Array.isArray(rec.parts)) rec.parts = rec.blob ? [rec.blob] : [];
+  return rec;
 }
 
 function idbAvailable(): boolean {
@@ -50,7 +59,7 @@ export async function savePending(rec: PendingRecording): Promise<void> {
 
 export async function getPending(lessonId: string): Promise<PendingRecording | undefined> {
   if (!idbAvailable()) return undefined;
-  return (await tx<PendingRecording | undefined>("readonly", (s) => s.get(lessonId))) ?? undefined;
+  return normalize(await tx<PendingRecording | undefined>("readonly", (s) => s.get(lessonId)));
 }
 
 export async function deletePending(lessonId: string): Promise<void> {
@@ -60,5 +69,6 @@ export async function deletePending(lessonId: string): Promise<void> {
 
 export async function listPending(): Promise<PendingRecording[]> {
   if (!idbAvailable()) return [];
-  return (await tx<PendingRecording[]>("readonly", (s) => s.getAll())) ?? [];
+  const all = (await tx<PendingRecording[]>("readonly", (s) => s.getAll())) ?? [];
+  return all.map((r) => normalize(r)!).filter(Boolean);
 }

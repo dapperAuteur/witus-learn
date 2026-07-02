@@ -165,6 +165,10 @@ export const lessons = pgTable(
     recallContent: jsonb("recall_content").$type<{ prompt: string; answer: string }[]>(),
     exerciseContent: jsonb("exercise_content"),
     audioChapters: jsonb("audio_chapters"),
+    // Multi-part media: when a recording is too long for the upload cap, it's captured and stored
+    // as ordered <cap parts and played back in sequence. contentUrl mirrors parts[0] for
+    // back-compat; a single-part recording leaves this null and uses contentUrl alone.
+    mediaParts: jsonb("media_parts").$type<{ url: string; durationSeconds?: number }[]>(),
     transcriptContent: jsonb("transcript_content"),
     mapContent: jsonb("map_content"),
     documents: jsonb("documents"),

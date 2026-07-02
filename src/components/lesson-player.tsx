@@ -6,6 +6,7 @@ import { SentenceEvaluator } from "./sentence-evaluator";
 import { MapLessonContent, type MapContent } from "./map-lesson-content";
 import { LessonBody } from "./lesson-body";
 import { MediaPlayer } from "./media-player";
+import { MultiPartPlayer } from "./multi-part-player";
 import { isDirectMediaFile, parseChapters, parseTranscript, toEmbed } from "@/lib/media";
 
 // Renders a lesson by type. Text/audio/video (file or YouTube/Vimeo embed) are first-class
@@ -41,7 +42,12 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
       );
     }
 
-    case "audio":
+    case "audio": {
+      // A long recording split into parts plays back in sequence.
+      const parts = Array.isArray(lesson.mediaParts) ? lesson.mediaParts : [];
+      if (parts.length > 1) {
+        return <MultiPartPlayer kind="audio" parts={parts.map((p) => p.url)} title={lesson.title} />;
+      }
       return lesson.contentUrl ? (
         <MediaPlayer
           kind="audio"
@@ -52,6 +58,7 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
       ) : (
         <Empty />
       );
+    }
 
     case "text":
     case "assignment":

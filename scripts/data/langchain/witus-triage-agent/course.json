@@ -2,35 +2,69 @@
   "slug": "langgraph-triage-agent",
   "title": "LangGraph in Production: The WitUS Triage Agent",
   "category": "AI & Technology",
-  "relatedProducts": ["triage-agent-witus", "centenarian-coach", "wanderlearn-field-reporter"],
+  "relatedProducts": [
+    "triage-agent-witus",
+    "centenarian-coach",
+    "wanderlearn-field-reporter"
+  ],
   "description": "Build a real production LangGraph agent, one small piece at a time. You start by learning when a linear chain has outgrown itself and you actually need a graph, then design a clean state contract, wire typed tools, and add a durable human-in-the-loop approval gate with interrupt() and a Postgres checkpointer. The second module crashes the process on purpose to prove the gate survives a restart, and shows the two rules that keep your own interrupts correct. It's grounded in the open-source WitUS Triage Agent code, TypeScript first with a Python durability track. Written to code along.",
   "lessons": [
     {
-      "type": "text", "section": "Module 1 · LangGraph Patterns", "slug": "m1-l1-chain-to-graph", "title": "From a chain to a graph", "file": "01-chain-to-graph.md",
+      "type": "text",
+      "section": "Module 1 · LangGraph Patterns",
+      "slug": "m1-l1-chain-to-graph",
+      "title": "From a chain to a graph",
+      "file": "01-chain-to-graph.md"
+    },
+    {
+      "type": "text",
+      "section": "Module 1 · LangGraph Patterns",
+      "slug": "m1-l2-agent-state",
+      "title": "Designing agent state",
+      "file": "02-agent-state.md",
       "recall": [
-        { "prompt": "What three questions tell you a chain has outgrown itself and you need a graph?", "answer": "1) Does a later step depend on several earlier, non-adjacent steps? 2) Must the program choose between alternative steps at runtime? 3) Must it pause and resume across process boundaries? Any single 'yes' justifies a graph." },
-        { "prompt": "In LangGraph, what replaces a chain's growing bag of return values, and what replaces its implicit step order?", "answer": "Shared, explicitly typed state replaces the bag. Explicit edges (including conditional edges) replace the implicit order. Interrupts replace the impossible pause." }
+        {
+          "prompt": "What three questions tell you a chain has outgrown itself and you need a graph?",
+          "answer": "1) Does a later step depend on several earlier, non-adjacent steps? 2) Must the program choose between alternative steps at runtime? 3) Must it pause and resume across process boundaries? Any single 'yes' justifies a graph."
+        },
+        {
+          "prompt": "In LangGraph, what replaces a chain's growing bag of return values, and what replaces its implicit step order?",
+          "answer": "Shared, explicitly typed state replaces the bag. Explicit edges (including conditional edges) replace the implicit order. Interrupts replace the impossible pause."
+        }
       ]
     },
     {
-      "type": "text", "section": "Module 1 · LangGraph Patterns", "slug": "m1-l2-agent-state", "title": "Designing agent state", "file": "02-agent-state.md",
+      "type": "text",
+      "section": "Module 1 · LangGraph Patterns",
+      "slug": "m1-l3-tools-and-approval",
+      "title": "Tools and the human-in-the-loop interrupt",
+      "file": "03-tools-and-approval.md",
       "recall": [
-        { "prompt": "What makes a state field 'explicit' and 'honest'?", "answer": "Explicit: it's named and typed, so any node author knows exactly what's available. Honest: some node genuinely produces it and some node genuinely consumes it. No 'just in case' fields." },
-        { "prompt": "Why derive the Classification type from the Zod schema with z.infer instead of writing it separately?", "answer": "So the compile-time type, the runtime validation, and the model's structured-output instruction all come from one definition and can't drift apart." }
+        {
+          "prompt": "What makes a state field 'explicit' and 'honest'?",
+          "answer": "Explicit: it's named and typed, so any node author knows exactly what's available. Honest: some node genuinely produces it and some node genuinely consumes it. No 'just in case' fields."
+        },
+        {
+          "prompt": "Why derive the Classification type from the Zod schema with z.infer instead of writing it separately?",
+          "answer": "So the compile-time type, the runtime validation, and the model's structured-output instruction all come from one definition and can't drift apart."
+        }
       ]
     },
     {
-      "type": "text", "section": "Module 1 · LangGraph Patterns", "slug": "m1-l3-tools-and-approval", "title": "Tools and the human-in-the-loop interrupt", "file": "03-tools-and-approval.md",
+      "type": "text",
+      "section": "Module 1 · LangGraph Patterns",
+      "slug": "m1-l4-observability",
+      "title": "Observability: reading a trace",
+      "file": "04-observability.md",
       "recall": [
-        { "prompt": "When should you call a tool deterministically versus let the model choose it?", "answer": "Call it deterministically when the choice of tool is certain (enrich always wants history plus product status). Let the model choose only when the choice is genuinely uncertain." },
-        { "prompt": "Why must a node containing interrupt() do nothing but interrupt and shape the result?", "answer": "On resume the node re-runs from its first line, so any side effect before interrupt() fires twice. Irreversible work goes in a node after the gate, which runs once." }
-      ]
-    },
-    {
-      "type": "text", "section": "Module 1 · LangGraph Patterns", "slug": "m1-l4-observability", "title": "Observability: reading a trace", "file": "04-observability.md",
-      "recall": [
-        { "prompt": "A run passes its tests but is quietly wrong (every classify returns 'other' with confidence 0). Why can a trace find the cause when the test can't?", "answer": "The test only checks that the output is a valid category. The trace shows the model-call span failed and a fail-soft fallback ran, which is invisible to an assertion on the output." },
-        { "prompt": "What one piece of plumbing makes a production trace cheap to find later?", "answer": "Store the LangSmith run id (langsmithRunId) on the run row at run time, so you jump straight from a complaint to its trace instead of hunting for it." }
+        {
+          "prompt": "When should you call a tool deterministically versus let the model choose it?",
+          "answer": "Call it deterministically when the choice of tool is certain (enrich always wants history plus product status). Let the model choose only when the choice is genuinely uncertain."
+        },
+        {
+          "prompt": "Why must a node containing interrupt() do nothing but interrupt and shape the result?",
+          "answer": "On resume the node re-runs from its first line, so any side effect before interrupt() fires twice. Irreversible work goes in a node after the gate, which runs once."
+        }
       ]
     },
     {
@@ -117,31 +151,71 @@
       }
     },
     {
-      "type": "text", "section": "Module 2 · Durable Human-in-the-Loop", "slug": "m2-l5-crash-test", "title": "The crash test: in-memory state dies on restart", "file": "05-crash-test.md",
+      "type": "text",
+      "section": "Module 2 · Durable Human-in-the-Loop",
+      "slug": "m2-l5-crash-test",
+      "title": "The crash test: in-memory state dies on restart",
+      "file": "05-crash-test.md",
       "recall": [
-        { "prompt": "Under MemorySaver, why does a worker restart destroy a paused thread?", "answer": "MemorySaver keeps every checkpoint in the first process's heap. When that process exits, the heap and the paused approval go with it." },
-        { "prompt": "Why does the crash-test graph use no model call?", "answer": "Durability is a property of the checkpointer, not the model. A model would only add friction and an API key; the checkpointer is what's being tested." }
+        {
+          "prompt": "A run passes its tests but is quietly wrong (every classify returns 'other' with confidence 0). Why can a trace find the cause when the test can't?",
+          "answer": "The test only checks that the output is a valid category. The trace shows the model-call span failed and a fail-soft fallback ran, which is invisible to an assertion on the output."
+        },
+        {
+          "prompt": "What one piece of plumbing makes a production trace cheap to find later?",
+          "answer": "Store the LangSmith run id (langsmithRunId) on the run row at run time, so you jump straight from a complaint to its trace instead of hunting for it."
+        }
       ]
     },
     {
-      "type": "text", "section": "Module 2 · Durable Human-in-the-Loop", "slug": "m2-l6-postgres-checkpointer", "title": "The ten-line fix: the Postgres checkpointer", "file": "06-postgres-checkpointer.md",
+      "type": "text",
+      "section": "Module 2 · Durable Human-in-the-Loop",
+      "slug": "m2-l6-postgres-checkpointer",
+      "title": "The ten-line fix: the Postgres checkpointer",
+      "file": "06-postgres-checkpointer.md",
       "recall": [
-        { "prompt": "What actually changes when you switch MemorySaver to PostgresSaver?", "answer": "Only the checkpointer passed at compile time. Same nodes, edges, and interrupt(). Durability is a compile-time swap, not a rewrite of the agent." },
-        { "prompt": "After the swap, what's the literal proof the paused state persisted?", "answer": "A SELECT on the checkpoints table shows the durable-demo-1 thread's rows. The state lives in Postgres, so a brand-new process can read it." }
+        {
+          "prompt": "Under MemorySaver, why does a worker restart destroy a paused thread?",
+          "answer": "MemorySaver keeps every checkpoint in the first process's heap. When that process exits, the heap and the paused approval go with it."
+        },
+        {
+          "prompt": "Why does the crash-test graph use no model call?",
+          "answer": "Durability is a property of the checkpointer, not the model. A model would only add friction and an API key; the checkpointer is what's being tested."
+        }
       ]
     },
     {
-      "type": "text", "section": "Module 2 · Durable Human-in-the-Loop", "slug": "m2-l7-two-rules", "title": "Two rules for durable interrupts", "file": "07-two-rules.md",
+      "type": "text",
+      "section": "Module 2 · Durable Human-in-the-Loop",
+      "slug": "m2-l7-two-rules",
+      "title": "Two rules for durable interrupts",
+      "file": "07-two-rules.md",
       "recall": [
-        { "prompt": "Rule one of durable interrupts: what survives a restart, and what doesn't?", "answer": "Only fields returned into graph state survive (they're in the checkpoint). Local variables, closures, and module globals don't. If you need it on resume, return it into state before the interrupt." },
-        { "prompt": "Rule two: where must a side effect like charging a card go, and why?", "answer": "In a node after the approval gate (execute or log_rejection), which runs exactly once. The interrupt node re-runs from its first line on resume, so a side effect before interrupt() fires twice." }
+        {
+          "prompt": "What actually changes when you switch MemorySaver to PostgresSaver?",
+          "answer": "Only the checkpointer passed at compile time. Same nodes, edges, and interrupt(). Durability is a compile-time swap, not a rewrite of the agent."
+        },
+        {
+          "prompt": "After the swap, what's the literal proof the paused state persisted?",
+          "answer": "A SELECT on the checkpoints table shows the durable-demo-1 thread's rows. The state lives in Postgres, so a brand-new process can read it."
+        }
       ]
     },
     {
-      "type": "text", "section": "Module 2 · Durable Human-in-the-Loop", "slug": "m2-l8-verify-langsmith", "title": "Verify durability in LangSmith", "file": "08-verify-langsmith.md",
+      "type": "text",
+      "section": "Module 2 · Durable Human-in-the-Loop",
+      "slug": "m2-l8-verify-langsmith",
+      "title": "Verify durability in LangSmith",
+      "file": "08-verify-langsmith.md",
       "recall": [
-        { "prompt": "In the trace, what confirms a resume continued correctly rather than replaying from the start?", "answer": "The resumed run enters mid-graph at human_approval into finalize, not at intake. Same thread_id, continued from the persisted checkpoint." },
-        { "prompt": "The Postgres SELECT already proved durability. What extra thing does the trace prove?", "answer": "That the resume used the checkpoint correctly by entering mid-graph. The row proves the checkpoint persisted; the trace proves correct resumption. They're different checks." }
+        {
+          "prompt": "Rule one of durable interrupts: what survives a restart, and what doesn't?",
+          "answer": "Only fields returned into graph state survive (they're in the checkpoint). Local variables, closures, and module globals don't. If you need it on resume, return it into state before the interrupt."
+        },
+        {
+          "prompt": "Rule two: where must a side effect like charging a card go, and why?",
+          "answer": "In a node after the approval gate (execute or log_rejection), which runs exactly once. The interrupt node re-runs from its first line on resume, so a side effect before interrupt() fires twice."
+        }
       ]
     },
     {
