@@ -14,7 +14,14 @@
       "section": "Module 0 · Reflection-Loop Primitive and Setup",
       "slug": "m0-l01-course-overview",
       "title": "Course overview: reflection is a graph, not a prompt",
-      "file": "01-course-overview.md",
+      "file": "01-course-overview.md"
+    },
+    {
+      "type": "text",
+      "section": "Module 0 · Reflection-Loop Primitive and Setup",
+      "slug": "m0-l02-setup-typescript",
+      "title": "Getting set up (TypeScript)",
+      "file": "02-setup-typescript.md",
       "recall": [
         {
           "prompt": "Why build a reflection loop as a graph rather than as one longer prompt?",
@@ -29,9 +36,9 @@
     {
       "type": "text",
       "section": "Module 0 · Reflection-Loop Primitive and Setup",
-      "slug": "m0-l02-setup-typescript",
-      "title": "Getting set up (TypeScript)",
-      "file": "02-setup-typescript.md",
+      "slug": "m0-l03-setup-python",
+      "title": "Getting set up (Python)",
+      "file": "03-setup-python.md",
       "recall": [
         {
           "prompt": "What do you need installed to run the Module 0 loop, and what can you skip?",
@@ -46,9 +53,9 @@
     {
       "type": "text",
       "section": "Module 0 · Reflection-Loop Primitive and Setup",
-      "slug": "m0-l03-setup-python",
-      "title": "Getting set up (Python)",
-      "file": "03-setup-python.md",
+      "slug": "m0-l04-translation-table",
+      "title": "The Python and TypeScript translation table",
+      "file": "04-translation-table.md",
       "recall": [
         {
           "prompt": "How does this course support Python learners without maintaining a second codebase?",
@@ -63,9 +70,9 @@
     {
       "type": "text",
       "section": "Module 0 · Reflection-Loop Primitive and Setup",
-      "slug": "m0-l04-translation-table",
-      "title": "The Python and TypeScript translation table",
-      "file": "04-translation-table.md",
+      "slug": "m0-l05-one-pass-plausible",
+      "title": "Why one pass is plausible, not good",
+      "file": "05-one-pass-plausible.md",
       "recall": [
         {
           "prompt": "Beyond naming style, what are the only two real differences between the TypeScript and Python tracks?",
@@ -80,9 +87,9 @@
     {
       "type": "text",
       "section": "Module 0 · Reflection-Loop Primitive and Setup",
-      "slug": "m0-l05-one-pass-plausible",
-      "title": "Why one pass is plausible, not good",
-      "file": "05-one-pass-plausible.md",
+      "slug": "m0-l06-minimal-loop",
+      "title": "The minimal write, critique, revise loop",
+      "file": "06-minimal-loop.md",
       "recall": [
         {
           "prompt": "Why does a single-pass model reply stop at plausible instead of good?",
@@ -91,23 +98,6 @@
         {
           "prompt": "What is the prompt-harder anti-pattern, and what actually fixes it?",
           "answer": "Prompt-harder means piling more requirements into the generation prompt, which conflates writing with judging, has no measurable success signal, and degrades as clauses compete for attention. The fix is structural: add a separate step whose only job is to judge the first draft."
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "section": "Module 0 · Reflection-Loop Primitive and Setup",
-      "slug": "m0-l06-minimal-loop",
-      "title": "The minimal write, critique, revise loop",
-      "file": "06-minimal-loop.md",
-      "recall": [
-        {
-          "prompt": "What guarantees that the cyclic reflection graph terminates, and where does it live?",
-          "answer": "A max-revisions check in the routing function ends the run once the counter reaches the cap. The line if (state.revisionNumber >= MAX_REVISIONS) return END lives in code, never in a prompt, which is what makes the loop guaranteed to exit."
-        },
-        {
-          "prompt": "What two properties make the stub critic useful, and why keep it deterministic in Module 0?",
-          "answer": "Each check is concretely verifiable by reading the text, and the critic returns evidence per check so verdicts are grounded rather than rubber-stamped. Keeping it a deterministic stub lets the whole loop run offline with a repeatable success signal, because Module 0 is about the shape of the loop, not the model."
         }
       ]
     },
@@ -202,6 +192,23 @@
       "file": "07-guaranteed-exit.md",
       "recall": [
         {
+          "prompt": "What guarantees that the cyclic reflection graph terminates, and where does it live?",
+          "answer": "A max-revisions check in the routing function ends the run once the counter reaches the cap. The line if (state.revisionNumber >= MAX_REVISIONS) return END lives in code, never in a prompt, which is what makes the loop guaranteed to exit."
+        },
+        {
+          "prompt": "What two properties make the stub critic useful, and why keep it deterministic in Module 0?",
+          "answer": "Each check is concretely verifiable by reading the text, and the critic returns evidence per check so verdicts are grounded rather than rubber-stamped. Keeping it a deterministic stub lets the whole loop run offline with a repeatable success signal, because Module 0 is about the shape of the loop, not the model."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "section": "Module 1 · Bounded Termination",
+      "slug": "m1-l08-max-iteration-counter",
+      "title": "Pattern 1: the max-iteration counter",
+      "file": "08-max-iteration-counter.md",
+      "recall": [
+        {
           "prompt": "Why is a cyclic reflection loop with no code-level exit a bug rather than a feature?",
           "answer": "The write node can route back to itself forever, so if the critic never passes the draft, the cycle repeats endlessly. 'The model will probably converge' is hope, not termination, and one bad input can run the loop unbounded, paying LLM latency and tokens on every wasted pass."
         },
@@ -214,9 +221,9 @@
     {
       "type": "text",
       "section": "Module 1 · Bounded Termination",
-      "slug": "m1-l08-max-iteration-counter",
-      "title": "Pattern 1: the max-iteration counter",
-      "file": "08-max-iteration-counter.md",
+      "slug": "m1-l09-convergence-detection",
+      "title": "Pattern 2: convergence detection",
+      "file": "09-convergence-detection.md",
       "recall": [
         {
           "prompt": "In the counter pattern, which part of the graph increments the counter and which part checks it?",
@@ -231,9 +238,9 @@
     {
       "type": "text",
       "section": "Module 1 · Bounded Termination",
-      "slug": "m1-l09-convergence-detection",
-      "title": "Pattern 2: convergence detection",
-      "file": "09-convergence-detection.md",
+      "slug": "m1-l10-human-escalation",
+      "title": "Pattern 3: human escalation",
+      "file": "10-human-escalation.md",
       "recall": [
         {
           "prompt": "What does 'converged' mean operationally, and what's the simplest honest test?",
@@ -248,9 +255,9 @@
     {
       "type": "text",
       "section": "Module 1 · Bounded Termination",
-      "slug": "m1-l10-human-escalation",
-      "title": "Pattern 3: human escalation",
-      "file": "10-human-escalation.md",
+      "slug": "m1-l11-composition-priority",
+      "title": "Composing the patterns in priority order",
+      "file": "11-composition-priority.md",
       "recall": [
         {
           "prompt": "What are the two honest endings of a reflection loop, and what breaks if you collapse them into a single END?",
@@ -265,9 +272,9 @@
     {
       "type": "text",
       "section": "Module 1 · Bounded Termination",
-      "slug": "m1-l11-composition-priority",
-      "title": "Composing the patterns in priority order",
-      "file": "11-composition-priority.md",
+      "slug": "m1-l12-recursionlimit-backstop",
+      "title": "recursionLimit: the backstop, not the steering wheel",
+      "file": "12-recursionlimit-backstop.md",
       "recall": [
         {
           "prompt": "In the composed router, what is the priority order of the four branches?",
@@ -276,23 +283,6 @@
         {
           "prompt": "Why must the success check come before the cap check?",
           "answer": "A draft that passes on the final allowed pass is a win, not an escalation. If the cap check ran first, that perfectly good reply would be escalated instead of shipped, so success has to dominate every other condition."
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "section": "Module 1 · Bounded Termination",
-      "slug": "m1-l12-recursionlimit-backstop",
-      "title": "recursionLimit: the backstop, not the steering wheel",
-      "file": "12-recursionlimit-backstop.md",
-      "recall": [
-        {
-          "prompt": "What does recursionLimit do when a LangGraph invocation exceeds it, and why is that different from your own patterns stopping the loop?",
-          "answer": "It throws a GraphRecursionError instead of looping forever. Your patterns end in a clean terminal state that carries an outcome downstream code can read, while recursionLimit ends with an exception and a stack trace, no outcome and no graceful escalation."
-        },
-        {
-          "prompt": "How should you set recursionLimit relative to your own termination patterns, and why?",
-          "answer": "Set it generously, above the worst case your own patterns allow, so in a healthy system it never fires. When it does fire, that is a signal a real bound is missing in your router, not the system working as designed."
         }
       ]
     },
@@ -387,6 +377,23 @@
       "file": "13-rubric-is-the-lever.md",
       "recall": [
         {
+          "prompt": "What does recursionLimit do when a LangGraph invocation exceeds it, and why is that different from your own patterns stopping the loop?",
+          "answer": "It throws a GraphRecursionError instead of looping forever. Your patterns end in a clean terminal state that carries an outcome downstream code can read, while recursionLimit ends with an exception and a stack trace, no outcome and no graceful escalation."
+        },
+        {
+          "prompt": "How should you set recursionLimit relative to your own termination patterns, and why?",
+          "answer": "Set it generously, above the worst case your own patterns allow, so in a healthy system it never fires. When it does fire, that is a signal a real bound is missing in your router, not the system working as designed."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "section": "Module 2 · Critique Design",
+      "slug": "m2-l14-vague-criteria",
+      "title": "Failure mode 1: vague criteria",
+      "file": "14-vague-criteria.md",
+      "recall": [
+        {
           "prompt": "In a reflection loop, what is the highest-impact thing you can edit to improve output quality?",
           "answer": "The rubric the critic scores against, not the graph structure or the generation prompt. Termination keeps the loop safe, but the rubric is what makes it good."
         },
@@ -399,9 +406,9 @@
     {
       "type": "text",
       "section": "Module 2 · Critique Design",
-      "slug": "m2-l14-vague-criteria",
-      "title": "Failure mode 1: vague criteria",
-      "file": "14-vague-criteria.md",
+      "slug": "m2-l15-overlapping-criteria",
+      "title": "Failure mode 2: overlapping criteria",
+      "file": "15-overlapping-criteria.md",
       "recall": [
         {
           "prompt": "What makes a rubric criterion vague, and why does that hurt the loop?",
@@ -416,9 +423,9 @@
     {
       "type": "text",
       "section": "Module 2 · Critique Design",
-      "slug": "m2-l15-overlapping-criteria",
-      "title": "Failure mode 2: overlapping criteria",
-      "file": "15-overlapping-criteria.md",
+      "slug": "m2-l16-compound-criteria",
+      "title": "Failure mode 3: compound criteria",
+      "file": "16-compound-criteria.md",
       "recall": [
         {
           "prompt": "What is an overlapping-criteria defect and what two problems does it cause?",
@@ -433,9 +440,9 @@
     {
       "type": "text",
       "section": "Module 2 · Critique Design",
-      "slug": "m2-l16-compound-criteria",
-      "title": "Failure mode 3: compound criteria",
-      "file": "16-compound-criteria.md",
+      "slug": "m2-l17-evidence-and-suggestion",
+      "title": "Evidence and suggestion per criterion",
+      "file": "17-evidence-and-suggestion.md",
       "recall": [
         {
           "prompt": "Why is a compound criterion, one key testing several things, a problem for a reflection loop?",
@@ -450,9 +457,9 @@
     {
       "type": "text",
       "section": "Module 2 · Critique Design",
-      "slug": "m2-l17-evidence-and-suggestion",
-      "title": "Evidence and suggestion per criterion",
-      "file": "17-evidence-and-suggestion.md",
+      "slug": "m2-l18-weights-and-pass-rules",
+      "title": "Weights and pass rules as data",
+      "file": "18-weights-and-pass-rules.md",
       "recall": [
         {
           "prompt": "Why isn't a bare boolean pass or fail enough from an LLM judge?",
@@ -461,23 +468,6 @@
         {
           "prompt": "What two fields does the Module 2 verdict schema require, and how does it force them?",
           "answer": "Evidence that grounds the verdict in the draft, and a concrete suggestion for how to fix a failure. Both use z.string().min(1), so structured-output validation rejects any verdict that leaves them empty."
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "section": "Module 2 · Critique Design",
-      "slug": "m2-l18-weights-and-pass-rules",
-      "title": "Weights and pass rules as data",
-      "file": "18-weights-and-pass-rules.md",
-      "recall": [
-        {
-          "prompt": "Why do the weights and pass rule belong in data rather than in the critique node's code?",
-          "answer": "Keeping them in data means you change which checks block and what threshold passes without editing, re-reading, or re-testing node code. It also lets the runtime rubric double as Module 4's offline eval instead of a second copy that drifts."
-        },
-        {
-          "prompt": "What is the difference between the all-blocking and weighted-threshold pass rules?",
-          "answer": "all-blocking passes only when every weight-1 check passes. weighted-threshold passes when earned weight over total weight clears a set threshold, so the same verdicts can fail one rule and pass the other."
         }
       ]
     },
@@ -572,6 +562,23 @@
       "file": "19-undebuggable-without-tracing.md",
       "recall": [
         {
+          "prompt": "Why do the weights and pass rule belong in data rather than in the critique node's code?",
+          "answer": "Keeping them in data means you change which checks block and what threshold passes without editing, re-reading, or re-testing node code. It also lets the runtime rubric double as Module 4's offline eval instead of a second copy that drifts."
+        },
+        {
+          "prompt": "What is the difference between the all-blocking and weighted-threshold pass rules?",
+          "answer": "all-blocking passes only when every weight-1 check passes. weighted-threshold passes when earned weight over total weight clears a set threshold, so the same verdicts can fail one rule and pass the other."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "section": "Module 3 · Tracing Reflection Loops",
+      "slug": "m3-l20-fail-soft-wiring",
+      "title": "LangSmith fail-soft wiring",
+      "file": "20-fail-soft-wiring.md",
+      "recall": [
+        {
           "prompt": "Why can't you debug a reflection loop from its final output alone?",
           "answer": "The output collapses several distinct failures into one string. An escalated ticket looks identical whether the loop ran out of budget, stalled on one draft, had a drifting critic, or had a judge that silently errored, so the causes are indistinguishable."
         },
@@ -584,9 +591,9 @@
     {
       "type": "text",
       "section": "Module 3 · Tracing Reflection Loops",
-      "slug": "m3-l20-fail-soft-wiring",
-      "title": "LangSmith fail-soft wiring",
-      "file": "20-fail-soft-wiring.md",
+      "slug": "m3-l21-trace-tree",
+      "title": "What a trace tree shows for a cyclic graph",
+      "file": "21-trace-tree.md",
       "recall": [
         {
           "prompt": "When does tracingConfig enable tracing, and why require both conditions?",
@@ -601,9 +608,9 @@
     {
       "type": "text",
       "section": "Module 3 · Tracing Reflection Loops",
-      "slug": "m3-l21-trace-tree",
-      "title": "What a trace tree shows for a cyclic graph",
-      "file": "21-trace-tree.md",
+      "slug": "m3-l22-wasted-iterations",
+      "title": "Diagnosing wasted iterations",
+      "file": "22-wasted-iterations.md",
       "recall": [
         {
           "prompt": "How do you read the revision count off a cyclic loop's trace tree?",
@@ -618,9 +625,9 @@
     {
       "type": "text",
       "section": "Module 3 · Tracing Reflection Loops",
-      "slug": "m3-l22-wasted-iterations",
-      "title": "Diagnosing wasted iterations",
-      "file": "22-wasted-iterations.md",
+      "slug": "m3-l23-critic-drift",
+      "title": "Diagnosing critic drift",
+      "file": "23-critic-drift.md",
       "recall": [
         {
           "prompt": "What is a wasted iteration, and how does it appear in the trace?",
@@ -635,9 +642,9 @@
     {
       "type": "text",
       "section": "Module 3 · Tracing Reflection Loops",
-      "slug": "m3-l23-critic-drift",
-      "title": "Diagnosing critic drift",
-      "file": "23-critic-drift.md",
+      "slug": "m3-l24-non-convergence",
+      "title": "Diagnosing non-convergence",
+      "file": "24-non-convergence.md",
       "recall": [
         {
           "prompt": "What is critic drift, and why is it visible only in the trace?",
@@ -652,9 +659,9 @@
     {
       "type": "text",
       "section": "Module 3 · Tracing Reflection Loops",
-      "slug": "m3-l24-non-convergence",
-      "title": "Diagnosing non-convergence",
-      "file": "24-non-convergence.md",
+      "slug": "m3-l25-worked-real-bug",
+      "title": "A worked real bug from production",
+      "file": "25-worked-real-bug.md",
       "recall": [
         {
           "prompt": "Detecting non-convergence is trivial, so where does the real work go?",
@@ -663,23 +670,6 @@
         {
           "prompt": "Why is reflexively raising MAX_REVISIONS a bad fix for non-convergence?",
           "answer": "It rescues only the case where the score was climbing but ran out of passes. For a flat-trajectory stall it just buys more identical failing passes at full price, so you read the trajectory before bumping the cap."
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "section": "Module 3 · Tracing Reflection Loops",
-      "slug": "m3-l25-worked-real-bug",
-      "title": "A worked real bug from production",
-      "file": "25-worked-real-bug.md",
-      "recall": [
-        {
-          "prompt": "How did a fail-soft classify node make a totally broken agent look healthy?",
-          "answer": "On every LLM error it returned a valid-looking fallback of category 'other' and confidence zero, so output assertions passed and the tests stayed green. The real error was swallowed before it ever reached the output."
-        },
-        {
-          "prompt": "The output said confidence zero. What did the trace show, and why could only the trace show it?",
-          "answer": "The model-call span carried the actual swallowed error: the API credit balance was too low, an unfunded key rejected for billing. Only the trace could show it because it records the model-call span including its error, before the fallback rewrites the result and erases the evidence."
         }
       ]
     },
@@ -774,6 +764,23 @@
       "file": "26-rubric-reuse.md",
       "recall": [
         {
+          "prompt": "How did a fail-soft classify node make a totally broken agent look healthy?",
+          "answer": "On every LLM error it returned a valid-looking fallback of category 'other' and confidence zero, so output assertions passed and the tests stayed green. The real error was swallowed before it ever reached the output."
+        },
+        {
+          "prompt": "The output said confidence zero. What did the trace show, and why could only the trace show it?",
+          "answer": "The model-call span carried the actual swallowed error: the API credit balance was too low, an unfunded key rejected for billing. Only the trace could show it because it records the model-call span including its error, before the fallback rewrites the result and erases the evidence."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "section": "Module 4 · Eval-Driven Reflection",
+      "slug": "m4-l27-creating-a-dataset",
+      "title": "Creating a dataset",
+      "file": "27-creating-a-dataset.md",
+      "recall": [
+        {
           "prompt": "Why reuse the runtime critic's rubric as the offline eval instead of writing a separate scorer?",
           "answer": "Because the eval then measures exactly what the loop optimizes, so its pass rate is the loop's real success rate. A separate scorer drifts from the runtime standard, and once it does a passing eval stops meaning a good loop."
         },
@@ -786,9 +793,9 @@
     {
       "type": "text",
       "section": "Module 4 · Eval-Driven Reflection",
-      "slug": "m4-l27-creating-a-dataset",
-      "title": "Creating a dataset",
-      "file": "27-creating-a-dataset.md",
+      "slug": "m4-l28-custom-evaluator",
+      "title": "A custom evaluator wrapping an LLM judge",
+      "file": "28-custom-evaluator.md",
       "recall": [
         {
           "prompt": "Why deliberately include a case like the `dead` ticket that the loop cannot pass?",
@@ -803,9 +810,9 @@
     {
       "type": "text",
       "section": "Module 4 · Eval-Driven Reflection",
-      "slug": "m4-l28-custom-evaluator",
-      "title": "A custom evaluator wrapping an LLM judge",
-      "file": "28-custom-evaluator.md",
+      "slug": "m4-l29-pairwise-eval",
+      "title": "Pairwise eval: single-shot vs the reflection loop",
+      "file": "29-pairwise-eval.md",
       "recall": [
         {
           "prompt": "What two values does the custom evaluator return, and why does the second one matter?",
@@ -820,9 +827,9 @@
     {
       "type": "text",
       "section": "Module 4 · Eval-Driven Reflection",
-      "slug": "m4-l29-pairwise-eval",
-      "title": "Pairwise eval: single-shot vs the reflection loop",
-      "file": "29-pairwise-eval.md",
+      "slug": "m4-l30-thresholds-with-margin",
+      "title": "Setting thresholds with margin for judge noise",
+      "file": "30-thresholds-with-margin.md",
       "recall": [
         {
           "prompt": "Why compare two systems pairwise instead of reading two separate pass-rate numbers?",
@@ -837,9 +844,9 @@
     {
       "type": "text",
       "section": "Module 4 · Eval-Driven Reflection",
-      "slug": "m4-l30-thresholds-with-margin",
-      "title": "Setting thresholds with margin for judge noise",
-      "file": "30-thresholds-with-margin.md",
+      "slug": "m4-l31-small-dataset",
+      "title": "Why a small dataset catches regressions",
+      "file": "31-small-dataset.md",
       "recall": [
         {
           "prompt": "Why set the CI threshold below the expected pass rate instead of requiring 100%?",
@@ -848,23 +855,6 @@
         {
           "prompt": "How do you size the margin between the expected pass rate and the threshold?",
           "answer": "Measure the noise instead of guessing. Run the eval several times on an unchanged good system, see the spread, and put the threshold a clear step below the bottom of it."
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "section": "Module 4 · Eval-Driven Reflection",
-      "slug": "m4-l31-small-dataset",
-      "title": "Why a small dataset catches regressions",
-      "file": "31-small-dataset.md",
-      "recall": [
-        {
-          "prompt": "Why can a small ten-example dataset catch regressions in a reflection loop?",
-          "answer": "A regression eval asks a differential question, did this get worse, which needs few examples. Real regressions tank many examples at once so ten curated cases show the cliff, and the eval is cheap enough to run on every commit."
-        },
-        {
-          "prompt": "What does a small dataset not buy you?",
-          "answer": "It won't give a precise quality number, only about 10% resolution, and it won't cover rare inputs like a one in 500 failure. Those you catch in production and add to the dataset so it grows along the failures it missed."
         }
       ]
     },
@@ -959,6 +949,23 @@
       "file": "32-online-convergence-rate.md",
       "recall": [
         {
+          "prompt": "Why can a small ten-example dataset catch regressions in a reflection loop?",
+          "answer": "A regression eval asks a differential question, did this get worse, which needs few examples. Real regressions tank many examples at once so ten curated cases show the cliff, and the eval is cheap enough to run on every commit."
+        },
+        {
+          "prompt": "What does a small dataset not buy you?",
+          "answer": "It won't give a precise quality number, only about 10% resolution, and it won't cover rare inputs like a one in 500 failure. Those you catch in production and add to the dataset so it grows along the failures it missed."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "section": "Module 5 · Production Reliability",
+      "slug": "m5-l33-alerts-runaway-loops",
+      "title": "Alerts on runaway loops",
+      "file": "33-alerts-runaway-loops.md",
+      "recall": [
+        {
           "prompt": "What does a reflection loop's convergence rate measure, and where does the data come from?",
           "answer": "It's the fraction of live runs that resolved (passed the rubric) rather than escalated. You compute it from the run records the loop already produces, so it needs no new instrumentation."
         },
@@ -971,9 +978,9 @@
     {
       "type": "text",
       "section": "Module 5 · Production Reliability",
-      "slug": "m5-l33-alerts-runaway-loops",
-      "title": "Alerts on runaway loops",
-      "file": "33-alerts-runaway-loops.md",
+      "slug": "m5-l34-ab-testing-critics",
+      "title": "A/B testing critic models",
+      "file": "34-ab-testing-critics.md",
       "recall": [
         {
           "prompt": "What makes a run a runaway, and why is it the most expensive failure?",
@@ -988,9 +995,9 @@
     {
       "type": "text",
       "section": "Module 5 · Production Reliability",
-      "slug": "m5-l34-ab-testing-critics",
-      "title": "A/B testing critic models",
-      "file": "34-ab-testing-critics.md",
+      "slug": "m5-l35-cost-accounting",
+      "title": "Cost accounting per iteration",
+      "file": "35-cost-accounting.md",
       "recall": [
         {
           "prompt": "Why is the critic model such a high-impact cost decision in a reflection loop?",
@@ -1005,9 +1012,9 @@
     {
       "type": "text",
       "section": "Module 5 · Production Reliability",
-      "slug": "m5-l35-cost-accounting",
-      "title": "Cost accounting per iteration",
-      "file": "35-cost-accounting.md",
+      "slug": "m5-l36-single-pass-check",
+      "title": "The single-pass good-enough check",
+      "file": "36-single-pass-check.md",
       "recall": [
         {
           "prompt": "How does runCost price a single run, and what two things drive the cost?",
@@ -1022,9 +1029,9 @@
     {
       "type": "text",
       "section": "Module 5 · Production Reliability",
-      "slug": "m5-l36-single-pass-check",
-      "title": "The single-pass good-enough check",
-      "file": "36-single-pass-check.md",
+      "slug": "m5-l37-cost-quality-pareto",
+      "title": "Cost and quality: the Pareto frontier",
+      "file": "37-cost-quality-pareto.md",
       "recall": [
         {
           "prompt": "What does the single-pass good-enough check decide, and how?",
@@ -1033,23 +1040,6 @@
         {
           "prompt": "Why re-run the single-pass check over time instead of trusting last year's answer?",
           "answer": "As models improve, single-shot quality rises, so a loop that was justified before may add cost for no gain now. The answer drifts, so you re-measure rather than assume."
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "section": "Module 5 · Production Reliability",
-      "slug": "m5-l37-cost-quality-pareto",
-      "title": "Cost and quality: the Pareto frontier",
-      "file": "37-cost-quality-pareto.md",
-      "recall": [
-        {
-          "prompt": "When is a configuration dominated, and why should you drop it?",
-          "answer": "A config is dominated when another is at least as good in quality and at least as cheap, and strictly better on one axis. Dominated configs are never worth running because something beats them on both cost and quality."
-        },
-        {
-          "prompt": "In the worked example, why is loop-cap-3 dominated by loop-cap-1?",
-          "answer": "Both reach 0.9 quality, but cap-3 costs double. Raising the revision cap from 1 to 3 bought no extra quality and doubled the cost, so cap-3 is strictly wasteful and falls off the frontier."
         }
       ]
     },
@@ -1144,6 +1134,23 @@
       "file": "38-capstone-composing.md",
       "recall": [
         {
+          "prompt": "When is a configuration dominated, and why should you drop it?",
+          "answer": "A config is dominated when another is at least as good in quality and at least as cheap, and strictly better on one axis. Dominated configs are never worth running because something beats them on both cost and quality."
+        },
+        {
+          "prompt": "In the worked example, why is loop-cap-3 dominated by loop-cap-1?",
+          "answer": "Both reach 0.9 quality, but cap-3 costs double. Raising the revision cap from 1 to 3 bought no extra quality and doubled the cost, so cap-3 is strictly wasteful and falls off the frontier."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "section": "Module 6 · Capstone on a New Domain",
+      "slug": "m6-l39-rubric-new-domain",
+      "title": "Designing a rubric for a new domain",
+      "file": "39-rubric-new-domain.md",
+      "recall": [
+        {
           "prompt": "What single belief does the capstone put to the test?",
           "answer": "That you can redeploy the reflection-loop pattern without the notes, on a domain you have never seen. It composes the whole stack on legal-clause plain-language rewriting, a task unrelated to the support replies it was built on."
         },
@@ -1156,9 +1163,9 @@
     {
       "type": "text",
       "section": "Module 6 · Capstone on a New Domain",
-      "slug": "m6-l39-rubric-new-domain",
-      "title": "Designing a rubric for a new domain",
-      "file": "39-rubric-new-domain.md",
+      "slug": "m6-l40-capstone-graph",
+      "title": "Composing the capstone graph",
+      "file": "40-capstone-graph.md",
       "recall": [
         {
           "prompt": "What is a rubric's 'central tension', and how do you encode it for plain-language rewriting?",
@@ -1173,9 +1180,9 @@
     {
       "type": "text",
       "section": "Module 6 · Capstone on a New Domain",
-      "slug": "m6-l40-capstone-graph",
-      "title": "Composing the capstone graph",
-      "file": "40-capstone-graph.md",
+      "slug": "m6-l41-capstone-eval",
+      "title": "The capstone eval and dashboard",
+      "file": "41-capstone-eval.md",
       "recall": [
         {
           "prompt": "How much new graph code does the capstone's plain-language loop actually add?",
@@ -1190,9 +1197,9 @@
     {
       "type": "text",
       "section": "Module 6 · Capstone on a New Domain",
-      "slug": "m6-l41-capstone-eval",
-      "title": "The capstone eval and dashboard",
-      "file": "41-capstone-eval.md",
+      "slug": "m6-l42-transfer-test",
+      "title": "The transfer test: a third domain",
+      "file": "42-transfer-test.md",
       "recall": [
         {
           "prompt": "What eval results prove the capstone loop beats single-shot on the legal-clause corpus?",
@@ -1207,9 +1214,9 @@
     {
       "type": "text",
       "section": "Module 6 · Capstone on a New Domain",
-      "slug": "m6-l42-transfer-test",
-      "title": "The transfer test: a third domain",
-      "file": "42-transfer-test.md",
+      "slug": "m6-l43-course-close",
+      "title": "Course close: the model you installed",
+      "file": "43-course-close.md",
       "recall": [
         {
           "prompt": "How does the transfer test show the pattern carries to a third domain with no scaffolding?",
@@ -1218,23 +1225,6 @@
         {
           "prompt": "What is the course's real exit criterion, beyond the code in the transfer test?",
           "answer": "Whether you can do it yourself off the page. Pick a fourth domain the course never named, write its rubric, build the loop from the reused parts, and run the eval and dashboard. Shipping that loop is the proof you hold the pattern as a tool."
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "section": "Module 6 · Capstone on a New Domain",
-      "slug": "m6-l43-course-close",
-      "title": "Course close: the model you installed",
-      "file": "43-course-close.md",
-      "recall": [
-        {
-          "prompt": "The course close frames the six modules as one method. State it in a sentence.",
-          "answer": "A reflection loop is a cyclic graph with a guaranteed exit, steered by a data rubric an LLM can score, made legible by tracing, protected by an eval that reuses the rubric, and allocated as a budget on a cost and quality curve. Because every piece is generic, the whole thing transfers."
-        },
-        {
-          "prompt": "What is the 'reflection is magic' anti-pattern, and how does the course refute it?",
-          "answer": "It is treating a reflection loop as a sophisticated thing you add on faith to make outputs better. The course refutes it by making reflection a bounded, judged, traced, evaluated, priced graph, where sometimes the right amount is none. You measure reflection loops now instead of believing in them."
         }
       ]
     },

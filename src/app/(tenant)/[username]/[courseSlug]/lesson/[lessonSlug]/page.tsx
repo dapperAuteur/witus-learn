@@ -161,6 +161,10 @@ export default async function LessonPage({ params }: Params) {
           <div className="mt-6">
             {access.open ? (
           <>
+            {/* Open with recall: quiz the PREVIOUS lesson before this one's content. */}
+            {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 ? (
+              <RecallPlayer courseId={view.course.id} lessonId={lesson.id} items={lesson.recallContent} />
+            ) : null}
             <LessonPlayer lesson={lesson} />
             {(lesson.lessonType === "audio" || lesson.lessonType === "video") &&
             lesson.contentUrl &&
@@ -168,9 +172,6 @@ export default async function LessonPage({ params }: Params) {
               <SaveOfflineButton url={lesson.contentUrl} />
             ) : null}
             {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
-            {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 ? (
-              <RecallPlayer courseId={view.course.id} lessonId={lesson.id} items={lesson.recallContent} />
-            ) : null}
             <div className="mt-6">
               {view.session ? (
                 <MarkCompleteButton
