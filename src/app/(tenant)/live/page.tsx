@@ -4,6 +4,7 @@ import { brandName } from "@/lib/branding";
 import { getSession } from "@/lib/session";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { listLiveForViewer } from "@/db/queries/live";
+import { getStreamSettings } from "@/db/queries/stream-settings";
 import { LivePlayer } from "@/components/live-player";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -33,10 +34,22 @@ export default async function LivePage() {
   const upcoming = visible.filter((s) => !s.isLive && !s.recordingUrl);
   const recordings = visible.filter((s) => !s.isLive && s.recordingUrl);
 
+  // Persistent "always-on" stream (admin-set): shown only when no session is live,
+  // so it never competes with a live broadcast. Src is host-allowlisted at save time.
+  const stream = await getStreamSettings(sdb.tenantId);
+  const streamSrc = stream.embedSrc ?? stream.playbackUrl;
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
       <h1 className="text-3xl font-bold">Live classes</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">Join us live, or catch the recordings.</p>
+
+      {liveNow.length === 0 && streamSrc ? (
+        <section className="mt-8">
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">Stream</h2>
+          <LivePlayer url={streamSrc} title={`${brandName(sdb.tenant)} stream`} sandbox />
+        </section>
+      ) : null}
 
       {liveNow.length > 0 ? (
         <section className="mt-8">
