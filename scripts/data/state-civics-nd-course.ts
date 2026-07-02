@@ -1,4 +1,4 @@
-// Authored "North Dakota Civics: How Your State Government Works" — the North Dakota
+// Authored "North Dakota Civics: How Your State Government Works", the North Dakota
 // entry in the per-state Civics layer on Learn.WitUS. State-level companion to the
 // general Civics courses: those teach the SYSTEM; this teaches North Dakota's version.
 //
@@ -18,7 +18,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_ND_COURSE: AuthoredCourse = {
   title: "North Dakota Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of North Dakota governs itself — and how you take part where you live. North Dakota does two things no other state does: it is the ONLY state with NO voter registration (eligible residents just show up with ID and vote), and it runs the ONLY state-owned bank in the nation (the Bank of North Dakota) plus a state-owned mill — legacies of its farmer-populist Nonpartisan League. You'll learn North Dakota's Constitution of 1889, its strong direct democracy, its large plural executive, its Legislative Assembly of 47 senators and 94 representatives that meets only every other year, its elected judiciary, and its 53 counties. Time-sensitive facts are flagged, pointing to sos.nd.gov. Cited to North Dakota's own official sources (ndlegis.gov, sos.nd.gov, ndcourts.gov).",
+    "A practical, non-partisan guide to how the state of North Dakota governs itself, and how you take part where you live. North Dakota does two things no other state does: it is the ONLY state with NO voter registration (eligible residents just show up with ID and vote), and it runs the ONLY state-owned bank in the nation (the Bank of North Dakota) plus a state-owned mill, legacies of its farmer-populist Nonpartisan League. You'll learn North Dakota's Constitution of 1889, its strong direct democracy, its large plural executive, its Legislative Assembly of 47 senators and 94 representatives that meets only every other year, its elected judiciary, and its 53 counties. Time-sensitive facts are flagged, pointing to sos.nd.gov. Cited to North Dakota's own official sources (ndlegis.gov, sos.nd.gov, ndcourts.gov).",
   lessons: [
     // ── Section 1: No voter registration ─────────────────────────────────
     {
@@ -27,9 +27,9 @@ export const STATE_CIVICS_ND_COURSE: AuthoredCourse = {
       section: "What Makes North Dakota Unique",
       body: `North Dakota's most distinctive civic feature is one word long: **none.** North Dakota is the **ONLY state in the nation with NO voter registration** (North Dakota Secretary of State, n.d.).
 
-**What that means.** In all 49 other states, you must **register** before you can vote — filling out a form, meeting a deadline, getting on the rolls. In North Dakota, **there is no registration step at all.** An eligible resident simply **shows up at the polls (or votes absentee) with acceptable ID proving identity and residence, and votes** (North Dakota Secretary of State, n.d.). North Dakota abolished voter registration in **1951**, relying instead on **small communities, poll workers who often know their neighbors, and an ID requirement** to confirm eligibility.
+**What that means.** In all 49 other states, you must **register** before you can vote, filling out a form, meeting a deadline, getting on the rolls. In North Dakota, **there is no registration step at all.** An eligible resident simply **shows up at the polls (or votes absentee) with acceptable ID proving identity and residence, and votes** (North Dakota Secretary of State, n.d.). North Dakota abolished voter registration in **1951**, relying instead on **small communities, poll workers who often know their neighbors, and an ID requirement** to confirm eligibility.
 
-Why it matters: it removes the single most common barrier to voting — the registration deadline — and reflects North Dakota's small-town, high-trust civic culture. ⚠️ **Time-sensitive:** because there's no registration, the **voter-ID rules** (what documents prove your identity and residence) do the work of confirming eligibility, and those rules have been **litigated and adjusted** — so confirm the **current** ID requirements at **sos.nd.gov** before you vote.
+Why it matters: it removes the single most common barrier to voting (the registration deadline) and reflects North Dakota's small-town, high-trust civic culture. ⚠️ **Time-sensitive:** because there's no registration, the **voter-ID rules** (what documents prove your identity and residence) do the work of confirming eligibility, and those rules have been **litigated and adjusted**, so confirm the **current** ID requirements at **sos.nd.gov** before you vote.
 
 North Dakota governs under its **Constitution of 1889**, adopted as it became a state on **November 2, 1889** (admitted the same day as South Dakota).
 
@@ -45,15 +45,27 @@ North Dakota governs under its **Constitution of 1889**, adopted as it became a 
     // ── Section 2: The state-owned bank and mill ─────────────────────────
     {
       slug: "nd-state-bank",
+      recallContent: [
+        {
+          prompt: "What makes North Dakota unique among all 50 states when it comes to voting?",
+          answer:
+            "It is the only state with no voter registration. Eligible residents just show up with acceptable ID and vote; North Dakota abolished registration in 1951.",
+        },
+        {
+          prompt: "With no registration, what confirms a North Dakota voter's eligibility, and where should you verify the rules?",
+          answer:
+            "Acceptable ID proving identity and residence does that work. Because those ID rules have been litigated and adjusted, confirm the current requirements at sos.nd.gov.",
+        },
+      ],
       title: "2 · The only state-owned bank (and a state-owned mill)",
       section: "What Makes North Dakota Unique",
-      body: `North Dakota's second national "only": it **owns and operates the only state-owned bank in the United States** — the **Bank of North Dakota** — plus a **state-owned flour mill and grain elevator** (North Dakota Legislative Assembly, n.d.).
+      body: `North Dakota's second national "only": it **owns and operates the only state-owned bank in the United States** (the **Bank of North Dakota**), plus a **state-owned flour mill and grain elevator** (North Dakota Legislative Assembly, n.d.).
 
-**Where these came from.** In the 1910s, North Dakota farmers, frustrated by out-of-state banks, railroads, and grain dealers, built a powerful farmer-populist movement — the **Nonpartisan League (NPL)** — that swept state government. In **1919**, they created two enterprises still running today (North Dakota Legislative Assembly, n.d.):
-- The **Bank of North Dakota** — a **state-owned bank** that holds state deposits, partners with local banks, and finances farming, students, and economic development. It is the **only bank of its kind in the country.**
-- The **North Dakota Mill and Elevator** — a **state-owned** flour mill, giving farmers a state-run buyer and processor for their wheat.
+**Where these came from.** In the 1910s, North Dakota farmers, frustrated by out-of-state banks, railroads, and grain dealers, built a powerful farmer-populist movement, the **Nonpartisan League (NPL)**, that swept state government. In **1919**, they created two enterprises still running today (North Dakota Legislative Assembly, n.d.):
+- The **Bank of North Dakota**, a **state-owned bank** that holds state deposits, partners with local banks, and finances farming, students, and economic development. It is the **only bank of its kind in the country.**
+- The **North Dakota Mill and Elevator**, a **state-owned** flour mill, giving farmers a state-run buyer and processor for their wheat.
 
-Why it matters: North Dakota decided that certain **economic functions should be run by the public**, through **elected accountability**, rather than left entirely to private markets — a distinctive answer to "what is government for?" The NPL legacy also gave North Dakota **strong direct-democracy tools** (next lessons). ⚠️ These institutions evolve; confirm current roles at the state's sites.
+Why it matters: North Dakota decided that certain **economic functions should be run by the public**, through **elected accountability**, rather than left entirely to private markets, a distinctive answer to "what is government for?" The NPL legacy also gave North Dakota **strong direct-democracy tools** (next lessons). ⚠️ These institutions evolve; confirm current roles at the state's sites.
 
 **Check yourself.** What two public enterprises did North Dakota's Nonpartisan League create in 1919, and why?
 
@@ -65,14 +77,26 @@ Why it matters: North Dakota decided that certain **economic functions should be
     // ── Section 3: Direct democracy + the executive ──────────────────────
     {
       slug: "nd-direct-democracy-executive",
+      recallContent: [
+        {
+          prompt: "What two public enterprises did North Dakota create in 1919, and what is notable about the bank?",
+          answer:
+            "The Bank of North Dakota, the only state-owned bank in the nation, and the North Dakota Mill and Elevator, a state-owned flour mill.",
+        },
+        {
+          prompt: "Which farmer-populist movement built North Dakota's state bank and mill, and why?",
+          answer:
+            "The Nonpartisan League (NPL). It held that certain economic functions should be run by the public through elected accountability rather than left entirely to private markets.",
+        },
+      ],
       title: "3 · Strong direct democracy and a large plural executive",
       section: "The Three Branches",
-      body: `**Strong direct democracy.** The same populist movement gave North Dakotans **robust citizen tools** (North Dakota Secretary of State, n.d.):
-- **Initiative** — citizens gather signatures to put a **statute OR a constitutional amendment** directly on the ballot. North Dakota's signature thresholds are comparatively **low**, so measures reach the ballot regularly.
-- **Referendum** — voters can **reject** a law the Legislature passed.
-- **Recall** — voters can remove elected officials (North Dakota famously **recalled its governor in 1921**, an early use).
+      body: `**Strong direct democracy.** The same populist movement gave North Dakotans **powerful citizen tools** (North Dakota Secretary of State, n.d.):
+- **Initiative**: citizens gather signatures to put a **statute OR a constitutional amendment** directly on the ballot. North Dakota's signature thresholds are comparatively **low**, so measures reach the ballot regularly.
+- **Referendum**: voters can **reject** a law the Legislature passed.
+- **Recall**: voters can remove elected officials (North Dakota famously **recalled its governor in 1921**, an early use).
 
-**A large plural executive.** North Dakota voters elect **many** statewide officials — one of the larger plural executives in the country (North Dakota Secretary of State, n.d.): the **Governor** and **Lieutenant Governor** (joint ticket), plus the **Secretary of State**, **Attorney General**, **State Treasurer**, **State Auditor**, **Agriculture Commissioner**, **Insurance Commissioner**, **Tax Commissioner**, the three-member **Public Service Commission**, and the **Superintendent of Public Instruction.** Executive power is spread widely across independently elected officials.
+**A large plural executive.** North Dakota voters elect **many** statewide officials, one of the larger plural executives in the country (North Dakota Secretary of State, n.d.): the **Governor** and **Lieutenant Governor** (joint ticket), plus the **Secretary of State**, **Attorney General**, **State Treasurer**, **State Auditor**, **Agriculture Commissioner**, **Insurance Commissioner**, **Tax Commissioner**, the three-member **Public Service Commission**, and the **Superintendent of Public Instruction.** Executive power is spread widely across independently elected officials.
 
 The **Legislative** and **Judicial** branches complete the three (next lesson).
 
@@ -85,18 +109,30 @@ The **Legislative** and **Judicial** branches complete the three (next lesson).
     // ── Section 4: The part-time legislature + courts + lawmaking ────────
     {
       slug: "nd-legislature-courts",
+      recallContent: [
+        {
+          prompt: "What are North Dakota's three direct-democracy tools?",
+          answer:
+            "Initiative (citizens put a statute or a constitutional amendment on the ballot), referendum (voters reject a law the Legislature passed), and recall (voters remove elected officials).",
+        },
+        {
+          prompt: "What does it mean that North Dakota has a large plural executive?",
+          answer:
+            "Voters elect many statewide officials independently, including the Governor and Lieutenant Governor, Secretary of State, Attorney General, Treasurer, Auditor, and several commissioners, so executive power is spread widely.",
+        },
+      ],
       title: "4 · A Legislature that meets every other year, and the courts",
       section: "Making Law",
-      body: `**Legislative — the North Dakota Legislative Assembly.** A distinctive **part-time, biennial** body meeting in Bismarck (North Dakota Legislative Assembly, n.d.):
-- **House of Representatives — 94 members**, and **Senate — 47 senators**, serving **4-year terms.**
-- ⚠️ **It meets only every OTHER year.** North Dakota's Legislature holds a regular session in **odd-numbered years**, limited to **80 days per two-year period (biennium)** — so lawmakers are **citizen legislators** who spend most of their time in their regular jobs. (Between sessions, interim committees do much of the work.)
+      body: `**Legislative: the North Dakota Legislative Assembly.** A distinctive **part-time, biennial** body meeting in Bismarck (North Dakota Legislative Assembly, n.d.):
+- **House of Representatives: 94 members**, and **Senate: 47 senators**, serving **4-year terms.**
+- ⚠️ **It meets only every OTHER year.** North Dakota's Legislature holds a regular session in **odd-numbered years**, limited to **80 days per two-year period (biennium)**, so lawmakers are **citizen legislators** who spend most of their time in their regular jobs. (Between sessions, interim committees do much of the work.)
 
 **How a bill becomes law:**
 1. **Introduction** in the House or Senate during the biennial session; **committee** hearings (every bill gets a hearing); **floor votes** in both chambers.
-2. **Governor** — sign, veto (a **two-thirds** override), or line-item veto appropriations.
+2. **Governor**: sign, veto (a **two-thirds** override), or line-item veto appropriations.
 Remember the citizen backstop: if the people dislike a law, they can **refer it to a vote** (referendum), and they can **initiate** their own laws.
 
-**Judicial — the North Dakota courts.** District courts and the **North Dakota Supreme Court** (5 justices). North Dakota **elects** its judges on a **nonpartisan** ballot to **10-year terms** (Supreme Court); vacancies may be filled by gubernatorial appointment from a nominating-committee list, after which the judge stands for election (North Dakota Courts, n.d.).
+**Judicial: the North Dakota courts.** District courts and the **North Dakota Supreme Court** (5 justices). North Dakota **elects** its judges on a **nonpartisan** ballot to **10-year terms** (Supreme Court); vacancies may be filled by gubernatorial appointment from a nominating-committee list, after which the judge stands for election (North Dakota Courts, n.d.).
 
 **Check yourself.** How often does North Dakota's Legislature meet, and how are its Supreme Court justices chosen?
 
@@ -108,21 +144,33 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
     // ── Section 5: Local government + getting involved ───────────────────
     {
       slug: "nd-local-involved",
+      recallContent: [
+        {
+          prompt: "How often does North Dakota's Legislative Assembly meet, and how big is it?",
+          answer:
+            "It meets only every other year, in odd years, capped at 80 days per two-year biennium. The House has 94 members and the Senate has 47, all serving 4-year terms.",
+        },
+        {
+          prompt: "How are North Dakota's Supreme Court justices chosen?",
+          answer:
+            "The five justices are elected on a nonpartisan ballot to 10-year terms; a vacancy may be filled by gubernatorial appointment from a nominating-committee list, after which the judge stands for election.",
+        },
+      ],
       title: "5 · Local government and how to take part",
       section: "Get Involved",
       body: `**Local government.** North Dakota's local layers include (North Dakota Legislative Assembly, n.d.):
 - **53 counties**, governed by elected **county commissions**, plus separately elected officials (sheriff, auditor, treasurer, state's attorney).
-- **Cities and townships** — North Dakota keeps active **townships** in rural areas alongside incorporated **cities.**
+- **Cities and townships**: North Dakota keeps active **townships** in rural areas alongside incorporated **cities.**
 - **School districts** and **special districts** round out local government.
 
-**Voting.** ⚠️ **Time-sensitive:** remember North Dakota has **no voter registration** (Lesson 1) — you just show up with **acceptable ID** proving identity and North Dakota residence, and vote (early in-person and absentee options are available). Because the **ID rules are what confirm eligibility**, and they have been litigated and adjusted, confirm the **current** acceptable-ID list at **sos.nd.gov** or your county auditor before you vote.
+**Voting.** ⚠️ **Time-sensitive:** remember North Dakota has **no voter registration** (Lesson 1), you just show up with **acceptable ID** proving identity and North Dakota residence, and vote (early in-person and absentee options are available). Because the **ID rules are what confirm eligibility**, and they have been litigated and adjusted, confirm the **current** acceptable-ID list at **sos.nd.gov** or your county auditor before you vote.
 
 **How to take part:**
-- **Just show up and vote** — no registration; bring valid ID. Use early or absentee voting if it fits.
-- **Use direct democracy.** North Dakota's **low initiative thresholds** mean citizen measures are a real, frequent tool — sign, circulate, or organize an initiative or referendum.
+- **Just show up and vote**: no registration; bring valid ID. Use early or absentee voting if it fits.
+- **Use direct democracy.** North Dakota's **low initiative thresholds** mean citizen measures are a real, frequent tool: sign, circulate, or organize an initiative or referendum.
 - **Show up locally.** County commissions, city councils, township meetings, and school boards hold public meetings.
-- **Contact your legislators** in Bismarck — you have one Representative-district team and one Senator; note the Legislature meets mainly in odd years.
-- **Run** — school board, township board, city council, and county commission are reachable local starting points.
+- **Contact your legislators** in Bismarck: you have one Representative-district team and one Senator; note the Legislature meets mainly in odd years.
+- **Run**: school board, township board, city council, and county commission are reachable local starting points.
 
 **Check yourself.** What do you bring to vote in North Dakota (since there's no registration), and why are citizen initiatives especially common here?
 
@@ -142,7 +190,7 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
         items: [
           {
             prompt:
-              "North Dakota is the only state with NO voter ___ — eligible residents just show up with ID and vote.",
+              "North Dakota is the only state with NO voter ___, eligible residents just show up with ID and vote.",
             answer: "registration",
             explanation:
               "North Dakota abolished voter registration in 1951; acceptable ID proving identity and residence confirms eligibility instead.",
@@ -168,7 +216,7 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
             answer: "other",
             accept: ["two years", "second"],
             explanation:
-              "The Legislative Assembly meets in odd years, limited to 80 days per two-year biennium — a citizen legislature.",
+              "The Legislative Assembly meets in odd years, limited to 80 days per two-year biennium, a citizen legislature.",
           },
           {
             prompt:
@@ -200,7 +248,7 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
             prompt: "What is unique about voting in North Dakota?",
             options: [
               "Voting is mandatory",
-              "It is the only state with no voter registration — eligible residents just bring ID and vote",
+              "It is the only state with no voter registration, eligible residents just bring ID and vote",
               "Only landowners may vote",
               "Voting is done by the Legislature",
             ],
@@ -252,7 +300,7 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
             prompt: "What direct-democracy tools do North Dakotans have?",
             options: [
               "None",
-              "Initiative (statutes and amendments), referendum, and recall — with comparatively low thresholds",
+              "Initiative (statutes and amendments), referendum, and recall (with comparatively low thresholds)",
               "Only recall of judges",
               "Only advisory votes",
             ],
@@ -310,14 +358,14 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
             ],
             correctIndex: 1,
             explanation:
-              "Low signature thresholds — a populist legacy — make North Dakota's initiative a frequently used tool.",
+              "Low signature thresholds (a populist legacy) make North Dakota's initiative a frequently used tool.",
             sourceLessonSlug: "nd-direct-democracy-executive",
           },
           {
             prompt: "Why does this course tell you to VERIFY North Dakota's voter-ID rules?",
             options: [
               "Because North Dakota has no elections office",
-              "Because with no registration, ID rules confirm eligibility and they have been litigated and adjusted — confirm at sos.nd.gov",
+              "Because with no registration, ID rules confirm eligibility and they have been litigated and adjusted: confirm at sos.nd.gov",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
