@@ -1,6 +1,7 @@
 import type { CSSProperties } from "react";
 import { headers } from "next/headers";
 import { requireTenant } from "@/lib/tenant";
+import { getSession } from "@/lib/session";
 import { hasAcknowledgedAge } from "@/lib/age-gate";
 import { brandName } from "@/lib/branding";
 import { getSiteUrl } from "@/lib/site-url";
@@ -39,6 +40,9 @@ export default async function TenantLayout({ children }: { children: React.React
   const showEcosystemFooter =
     isWitusBrandedHost(host) || tenant.flags.ecosystemSso === true;
 
+  // Prefill the "Report a problem" email for a signed-in user (they can still edit it).
+  const session = await getSession();
+
   return (
     <div style={style} className="flex min-h-screen flex-col">
       <script
@@ -54,7 +58,7 @@ export default async function TenantLayout({ children }: { children: React.React
       ) : (
         <SiteFooter tenant={tenant} />
       )}
-      <ReportProblem />
+      <ReportProblem defaultEmail={session?.user.email ?? undefined} />
     </div>
   );
 }
