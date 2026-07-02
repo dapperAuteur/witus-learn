@@ -290,6 +290,41 @@ export const recallAttempts = pgTable(
 
 export type RecallAttempt = typeof recallAttempts.$inferSelect;
 
+// One row per quiz submission (APPEND, not upsert) so a learner sees scores over time and
+// per-question performance across retries. lesson_progress still holds the latest for gating;
+// this is the history. `responses` records each served question + chosen option + correctness.
+export const quizAttempts = pgTable(
+  "quiz_attempts",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    lessonId: uuid("lesson_id")
+      .notNull()
+      .references(() => lessons.id, { onDelete: "cascade" }),
+    score: integer("score").notNull(), // 0–100
+    passed: boolean("passed").notNull(),
+    correct: integer("correct").notNull(),
+    total: integer("total").notNull(),
+    /** Served questions this attempt: original question index, chosen option, and whether right. */
+    responses: jsonb("responses").$type<{ questionIndex: number; optionIndex: number; correct: boolean }[]>(),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("quiz_attempts_tenant_course_idx").on(t.tenantId, t.courseId),
+    index("quiz_attempts_user_lesson_idx").on(t.userId, t.lessonId),
+  ],
+);
+
+export type QuizAttempt = typeof quizAttempts.$inferSelect;
+
 // Email campaigns (marketing). Drafts are composed + previewed here; SENDING is a
 // separate, explicitly-confirmed step (no send is wired yet). Tenant-scoped.
 export const emailCampaigns = pgTable(

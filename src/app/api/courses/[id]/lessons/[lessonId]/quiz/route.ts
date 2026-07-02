@@ -2,6 +2,7 @@ import { z } from "zod";
 import { apiContext, canEditCourse, errorJson, json } from "@/lib/api";
 import { getLessonById, getUsername, listLessons } from "@/db/queries/authoring";
 import { getCompletedLessonIds, upsertProgress } from "@/db/queries/progress";
+import { recordQuizAttempt } from "@/db/queries/quiz-attempts";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { lessonAccess } from "@/lib/gating";
 import { scoreQuizResponses, type QuizContent, type QuizFeedbackItem, type QuizResponse } from "@/lib/quiz";
@@ -64,6 +65,22 @@ export async function POST(req: Request, { params }: Params) {
     completed: result.passed,
     quizScore: result.score,
     quizAnswers: valid.map((r) => r.optionIndex),
+  });
+  // Append this attempt to the history (scores over time + per-question performance on retries).
+  await recordQuizAttempt({
+    tenantId: sdb.tenantId,
+    userId: session.user.id,
+    courseId: id,
+    lessonId,
+    score: result.score,
+    passed: result.passed,
+    correct: result.correct,
+    total: result.total,
+    responses: valid.map((r) => ({
+      questionIndex: r.questionIndex,
+      optionIndex: r.optionIndex,
+      correct: content.questions[r.questionIndex]?.correctIndex === r.optionIndex,
+    })),
   });
 
   // Per-question feedback (revealed only now, after submission), in the SAME order the learner

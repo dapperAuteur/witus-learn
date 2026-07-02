@@ -201,6 +201,11 @@ export default async function CourseBySlugPage({ params }: Params) {
             </span>
           </div>
           <ProgressBar percent={percent} className="mt-2" />
+          {view.session ? (
+            <Link href={`/${username}/${courseSlug}/results`} className="mt-2 inline-block text-sm underline" style={{ color: "var(--accent)" }}>
+              Your quiz &amp; recall results →
+            </Link>
+          ) : null}
         </div>
       ) : null}
 

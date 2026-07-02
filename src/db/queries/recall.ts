@@ -36,3 +36,27 @@ export async function getCourseRecallStats(tenantId: string, courseId: string): 
   const gotIt = row?.gotIt ?? 0;
   return { attempts, gotIt, accuracy: attempts > 0 ? Math.round((gotIt / attempts) * 100) : null };
 }
+
+// A single learner's own recall accuracy in a course (for their results view). Tenant-scoped.
+export async function getUserCourseRecallStats(
+  tenantId: string,
+  userId: string,
+  courseId: string,
+): Promise<RecallStats> {
+  const [row] = await db
+    .select({
+      attempts: sql<number>`count(*)`.mapWith(Number),
+      gotIt: sql<number>`count(*) filter (where ${recallAttempts.gotIt})`.mapWith(Number),
+    })
+    .from(recallAttempts)
+    .where(
+      and(
+        eq(recallAttempts.tenantId, tenantId),
+        eq(recallAttempts.userId, userId),
+        eq(recallAttempts.courseId, courseId),
+      ),
+    );
+  const attempts = row?.attempts ?? 0;
+  const gotIt = row?.gotIt ?? 0;
+  return { attempts, gotIt, accuracy: attempts > 0 ? Math.round((gotIt / attempts) * 100) : null };
+}
