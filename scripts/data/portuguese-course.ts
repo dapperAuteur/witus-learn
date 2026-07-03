@@ -1,4 +1,4 @@
-// Authored, tense-progressive Brazilian Portuguese course — mirrors the Spanish
+// Authored, tense-progressive Brazilian Portuguese course: mirrors the Spanish
 // template. Same "Curb Appeall and friends" story, taught tense by tense. Uses
 // "você" for the second person (Brazilian usage); tu exists regionally. Grammar
 // reviewed. Committed so it survives a fresh clone.
@@ -6,9 +6,9 @@
 import type { AuthoredCourse } from "./authored-course";
 
 export const PORTUGUESE_COURSE: AuthoredCourse = {
-  title: "Portuguese, Tense by Tense — the Curb Appeall Story",
+  title: "Portuguese, Tense by Tense: the Curb Appeall Story",
   description:
-    "Learn to speak Brazilian Portuguese by following one continuous story about Curb Appeall and friends learning healthy-living and money habits. Each unit teaches one tense — present, near future, preterite, imperfect, future, conditional, subjunctive — and ends with a conversation challenge so you produce the language yourself.",
+    "Learn to speak Brazilian Portuguese by following one continuous story about Curb Appeall and friends learning healthy-living and money habits. Each unit teaches one tense (present, near future, preterite, imperfect, future, conditional, subjunctive) and ends with a conversation challenge so you produce the language yourself.",
   lessons: [
     {
       slug: "presente-regulares",
@@ -82,6 +82,10 @@ I learn to cook fresh vegetables every day.
     {
       slug: "presente-irregulares",
       title: "2 · Present tense: the key irregular verbs",
+      recallContent: [
+        { prompt: "What are the three regular verb endings in Portuguese, and how do you conjugate a regular verb?", answer: "Verbs end in -ar, -er, or -ir. Drop the ending and add a new one for each subject, for example ajudar becomes ajudo, ajuda, ajudamos, ajudam." },
+        { prompt: "Which word do Brazilians usually use for 'you', and what verb form does it take?", answer: "Você, which takes the same form as ele/ela, for example você aprende. Tu is used in some regions." },
+      ],
       body: `A few verbs are irregular but essential. **Ser** and **estar** both mean "to be": use **ser** for identity and traits, **estar** for states and how you feel right now.
 
 | | ser | estar | ter | ir | querer | fazer |
@@ -151,7 +155,11 @@ I have a small garden where I grow herbs.
     {
       slug: "futuro-proximo",
       title: "3 · The near future: ir + infinitive",
-      body: `The easiest future is **ir + an infinitive** — like English "going to". In Portuguese there is no "a" between them: conjugate **ir** (vou, vai, vamos, vão) and add the base verb.
+      recallContent: [
+        { prompt: "What is the difference between ser and estar, which both mean 'to be'?", answer: "Use ser for identity and traits, and estar for states and how you feel right now." },
+        { prompt: "Give the eu (I) present form of ser, ter, and fazer.", answer: "Ser becomes sou, ter becomes tenho, and fazer becomes faço." },
+      ],
+      body: `The easiest future is **ir + an infinitive**, like English "going to". In Portuguese there is no "a" between them: conjugate **ir** (vou, vai, vamos, vão) and add the base verb.
 
 **Formula:** eu vou + _cozinhar_ → I am going to cook.
 
@@ -215,7 +223,11 @@ Are you going to study nutrition with us?
     {
       slug: "preterito-perfeito",
       title: "4 · The preterite: finished actions in the past",
-      body: `The **pretérito perfeito** narrates completed past actions — the events of the story.
+      recallContent: [
+        { prompt: "How do you form the near future (the 'going to' future) in Portuguese?", answer: "Conjugate ir (vou, vai, vamos, vão) and add the infinitive, with no 'a' between them, for example eu vou cozinhar." },
+        { prompt: "What are the four forms of ir used for the near future?", answer: "Vou for eu, vai for você/ele/ela, vamos for nós, and vão for vocês/eles." },
+      ],
+      body: `The **pretérito perfeito** narrates completed past actions: the events of the story.
 
 | | ajudar | aprender | dividir |
 |---|---|---|---|
@@ -286,7 +298,11 @@ After the meal, they took a walk around the neighborhood.
     {
       slug: "preterito-imperfeito",
       title: "5 · The imperfect: how things used to be",
-      body: `The **pretérito imperfeito** describes the past that was ongoing, habitual, or background — "used to" and "was -ing".
+      recallContent: [
+        { prompt: "What does the pretérito perfeito express, and what are the eu endings for -ar, -er, and -ir verbs?", answer: "It narrates completed past actions. The eu forms end in -ei (ajudei), -i (aprendi), and -i (dividi)." },
+        { prompt: "Give the preterite of fazer and of ir/ser for eu and ele.", answer: "Fazer becomes fiz (eu) and fez (ele). Ir and ser share fui (eu) and foi (ele)." },
+      ],
+      body: `The **pretérito imperfeito** describes the past that was ongoing, habitual, or background: "used to" and "was -ing".
 
 | | trabalhar | aprender / dividir |
 |---|---|---|
@@ -354,6 +370,10 @@ The garden was always full of fresh fruit.
     {
       slug: "perfeito-vs-imperfeito",
       title: "6 · Preterite vs. imperfect",
+      recallContent: [
+        { prompt: "What does the pretérito imperfeito describe?", answer: "The past that was ongoing, habitual, or background, meaning 'used to' and 'was -ing', for example Curb caminhava." },
+        { prompt: "Give the imperfect of the irregular verbs ser, ir, and ter.", answer: "Ser becomes era, ir becomes ia, and ter becomes tinha." },
+      ],
       body: `Choosing between the two past tenses is the heart of storytelling. Use the **pretérito perfeito** for a single completed event, and the **imperfeito** for the ongoing scene around it.
 
 - **Imperfeito** = the background (what was already happening).
@@ -380,27 +400,27 @@ Everyone was talking about money, but the otter changed the subject.
         instructions: "Escolha o tempo certo: imperfeito para o fundo, perfeito para o evento.",
         items: [
           {
-            prompt: "Curb ___ (caminhar — fundo) pelo parque quando viu a lontra",
+            prompt: "Curb ___ (caminhar, fundo) pelo parque quando viu a lontra",
             answer: "caminhava",
             explanation: "Cena de fundo em andamento → imperfeito. Da história.",
           },
           {
-            prompt: "Curb caminhava pelo parque quando ___ (ver — evento) a lontra",
+            prompt: "Curb caminhava pelo parque quando ___ (ver, evento) a lontra",
             answer: "viu",
             explanation: "Evento único que interrompe → pretérito perfeito. Da história.",
           },
           {
-            prompt: "Enquanto ___ (cozinhar, nós — fundo), o Platypus chegou",
+            prompt: "Enquanto ___ (cozinhar, nós, fundo), o Platypus chegou",
             answer: "cozinhávamos",
             explanation: "Ação em andamento → imperfeito (nós: -ávamos). Da história.",
           },
           {
-            prompt: "Enquanto cozinhávamos, o Platypus ___ (chegar — evento)",
+            prompt: "Enquanto cozinhávamos, o Platypus ___ (chegar, evento)",
             answer: "chegou",
             explanation: "Evento que move a história → perfeito. Da história.",
           },
           {
-            prompt: "Todos ___ (falar — fundo) sobre dinheiro, mas a lontra mudou de assunto",
+            prompt: "Todos ___ (falar, fundo) sobre dinheiro, mas a lontra mudou de assunto",
             answer: "falavam",
             explanation: "Pano de fundo → imperfeito (eles: -avam). Da história.",
           },
@@ -416,6 +436,10 @@ Everyone was talking about money, but the otter changed the subject.
     {
       slug: "futuro",
       title: "7 · The future tense: plans and predictions",
+      recallContent: [
+        { prompt: "When do you use the imperfeito versus the pretérito perfeito in a story?", answer: "Use the imperfeito for the background, meaning what was already happening, and the perfeito for the single event that interrupts or moves the story forward." },
+        { prompt: "In 'Curb caminhava pelo parque quando viu a lontra', which verb is the background and which is the event?", answer: "Caminhava (was walking) is the background imperfeito, and viu (saw) is the completed event in the perfeito." },
+      ],
       body: `The **futuro do presente** adds endings onto the whole infinitive (the same for -ar, -er, and -ir). In everyday speech Brazilians often prefer "ir + infinitive", but this is the formal future.
 
 | | trabalhar | aprender | dividir |
@@ -484,7 +508,11 @@ Will you learn to cook with us?
     {
       slug: "condicional",
       title: "8 · The conditional: politeness and “would”",
-      body: `The **futuro do pretérito** (conditional) means "would" — for hypotheticals and politeness. Add **-ia, -ia, -íamos, -iam** to the infinitive (same irregular stems as the future: faria, diria, traria).
+      recallContent: [
+        { prompt: "How do you form the futuro do presente, the formal future?", answer: "Add the endings onto the whole infinitive, the same for -ar, -er, and -ir verbs, for example trabalharei, trabalhará, trabalharemos, trabalharão." },
+        { prompt: "Which three verbs are irregular in the future tense?", answer: "Fazer (farei), dizer (direi), and trazer (trarei)." },
+      ],
+      body: `The **futuro do pretérito** (conditional) means "would": for hypotheticals and politeness. Add **-ia, -ia, -íamos, -iam** to the infinitive (same irregular stems as the future: faria, diria, traria).
 
 ### Na história
 **Eu gostaria de aprender mais receitas saudáveis.**
@@ -549,7 +577,11 @@ Without a budget, it would be hard to save.
     {
       slug: "subjuntivo-presente",
       title: "9 · The present subjunctive: wishes, advice, and doubt",
-      body: `The **presente do subjuntivo** appears after expressions of wish, advice, or doubt — usually with **que**. Take the **eu** form of the present, drop the **-o**, and add the "opposite" endings (-ar verbs take **-e**; -er/-ir verbs take **-a**).
+      recallContent: [
+        { prompt: "What does the conditional (futuro do pretérito) mean, and how do you form it?", answer: "It means 'would', for hypotheticals and politeness. Add -ia, -ia, -íamos, -iam to the infinitive, for example gostaria and poderia." },
+        { prompt: "How would you politely ask 'Could you teach me?' using the conditional?", answer: "Você poderia me ensinar? Poder in the conditional becomes poderia." },
+      ],
+      body: `The **presente do subjuntivo** appears after expressions of wish, advice, or doubt, usually with **que**. Take the **eu** form of the present, drop the **-o**, and add the "opposite" endings (-ar verbs take **-e**; -er/-ir verbs take **-a**).
 
 **comer** → eu como → que eu coma, você coma, nós comamos, vocês comam
 
@@ -625,6 +657,10 @@ Hopefully the garden grows quickly.
       slug: "dialogo-cafe",
       title: "Diálogo · Na cafeteria",
       section: "Dialogues",
+      recallContent: [
+        { prompt: "How do you form the present subjunctive, and which endings do -ar versus -er/-ir verbs take?", answer: "Take the eu form of the present, drop the -o, and add the opposite endings: -ar verbs take -e and -er/-ir verbs take -a, so comer becomes que eu coma." },
+        { prompt: "Name two expressions that trigger the present subjunctive.", answer: "For example é importante que, recomendo que, quero que, or tomara que, all expressing wish, advice, or doubt, usually with que." },
+      ],
       body: `Curb Appeall orders at a café. This conversation reuses the **present tense**, **ter**, **ir + infinitive**, and the **polite conditional** (_eu queria / gostaria de_ = "I would like").
 
 ### A conversa
@@ -677,7 +713,7 @@ _Curb: Here you go. Thank you very much!_
           { prompt: "Saudação de manhã: \"Bom ___!\"", answer: "dia", explanation: "\"Bom dia\" = good morning." },
           { prompt: "Pedido cortês: \"Eu ___ um café com leite.\" (querer, forma de cortesia)", answer: "queria", accept: ["gostaria de"], explanation: "\"Eu queria\" ou \"gostaria de\" para pedir com educação." },
           { prompt: "A atendente responde: \"___ maçãs e bananas.\" (ter, nós)", answer: "temos", explanation: "ter: nós → temos." },
-          { prompt: "Plano imediato: \"Eu vou ___ uma maçã.\" (levar — ir + infinitivo)", answer: "levar", explanation: "ir + infinitivo, sem \"a\" no português." },
+          { prompt: "Plano imediato: \"Eu vou ___ uma maçã.\" (levar, ir + infinitivo)", answer: "levar", explanation: "ir + infinitivo, sem \"a\" no português." },
           { prompt: "Pergunte o preço: \"___ é?\"", answer: "quanto", explanation: "\"Quanto é?\" = how much is it?" },
         ],
       },
@@ -686,6 +722,10 @@ _Curb: Here you go. Thank you very much!_
       slug: "dialogo-direcoes",
       title: "Diálogo · Pedir direções",
       section: "Dialogues",
+      recallContent: [
+        { prompt: "How do you politely order a coffee with milk in a café?", answer: "Eu queria um café com leite, por favor. Eu queria or gostaria de is the polite way to order." },
+        { prompt: "How do you ask the price in Portuguese?", answer: "Quanto é? meaning how much is it. The server might answer São quatro reais, meaning it is four reais." },
+      ],
       body: `Platypus is lost and asks the way to the market. This dialogue reuses **estar/ser** (location), **ir**, and the **near future** (ir + infinitive).
 
 ### A conversa
@@ -735,7 +775,7 @@ _Platypus: Thank you so much for your help!_
           { prompt: "Pergunte a localização: \"Onde ___ o mercado?\" (ficar)", answer: "fica", explanation: "\"Onde fica...?\" é a forma natural de perguntar a localização." },
           { prompt: "Indicação: \"Siga em ___.\" (straight ahead)", answer: "frente", explanation: "\"em frente\" = straight ahead." },
           { prompt: "Vire: \"Vire à ___.\" (right)", answer: "direita", explanation: "\"à direita\" = to the right." },
-          { prompt: "Previsão: \"Você vai ___ uma fonte grande.\" (ver — ir + infinitivo)", answer: "ver", explanation: "ir + infinitivo: o segundo verbo fica no infinitivo." },
+          { prompt: "Previsão: \"Você vai ___ uma fonte grande.\" (ver, ir + infinitivo)", answer: "ver", explanation: "ir + infinitivo: o segundo verbo fica no infinitivo." },
           { prompt: "Posição relativa: \"O mercado fica ao ___ da fonte.\" (next to)", answer: "lado", explanation: "\"ao lado de\" = next to." },
         ],
       },
@@ -744,6 +784,10 @@ _Platypus: Thank you so much for your help!_
       slug: "dialogo-apresentacoes",
       title: "Diálogo · Apresentações",
       section: "Dialogues",
+      recallContent: [
+        { prompt: "How do you ask where a place is, for example the market?", answer: "Onde fica o mercado? Onde fica...? is the natural way to ask where something is located." },
+        { prompt: "How do you say 'go straight ahead and turn right' when giving directions?", answer: "Siga em frente e vire à direita. Vire à esquerda means turn left." },
+      ],
       body: `Curb introduces a new friend to the otter who teaches the group. This dialogue reuses **ser** and **estar**, and the **near future** (ir + infinitive) for plans.
 
 ### A conversa
@@ -813,7 +857,7 @@ _Platypus: Perfect! I'm very happy to meet you._
             sourceLessonSlug: "dialogo-cafe",
           },
           {
-            prompt: "\"Temos maçãs\" — qual verbo e pessoa?",
+            prompt: "\"Temos maçãs\", qual verbo e pessoa?",
             options: ["ter, eu", "ter, nós", "ser, nós", "ter, eles"],
             correctIndex: 1,
             explanation: "\"temos\" é ter na pessoa \"nós\".",
