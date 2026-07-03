@@ -1,4 +1,4 @@
-// Authored "Alaska Civics: How Your State Government Works" — the Alaska entry in the
+// Authored "Alaska Civics: How Your State Government Works", the Alaska entry in the
 // per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Alaska's version.
 //
@@ -20,20 +20,20 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_AK_COURSE: AuthoredCourse = {
   title: "Alaska Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Alaska governs itself — and how you take part where you live. Alaska is unlike any other state: it uses BOROUGHS instead of counties, and most of its vast area lies in a single 'Unorganized Borough' with no local government at all; it elects officials through a 'top-four' open primary followed by a ranked-choice general election; and it pays residents an annual Permanent Fund Dividend from its oil-wealth savings — while collecting NO state income tax and NO statewide sales tax. You'll learn Alaska's modern Constitution of 1959, its strong governor and small executive, its Legislature of 20 senators and 40 representatives, its merit-selection judiciary, and its powerful citizen initiative. Time-sensitive facts (the voting system, the dividend) are flagged, pointing to elections.alaska.gov. Cited to Alaska's own official sources (akleg.gov, elections.alaska.gov, courts.alaska.gov).",
+    "A practical, non-partisan guide to how the state of Alaska governs itself, and how you take part where you live. Alaska is unlike any other state: it uses BOROUGHS instead of counties, and most of its vast area lies in a single 'Unorganized Borough' with no local government at all; it elects officials through a 'top-four' open primary followed by a ranked-choice general election; and it pays residents an annual Permanent Fund Dividend from its oil-wealth savings, while collecting NO state income tax and NO statewide sales tax. You'll learn Alaska's modern Constitution of 1959, its strong governor and small executive, its Legislature of 20 senators and 40 representatives, its merit-selection judiciary, and its powerful citizen initiative. Time-sensitive facts (the voting system, the dividend) are flagged, pointing to elections.alaska.gov. Cited to Alaska's own official sources (akleg.gov, elections.alaska.gov, courts.alaska.gov).",
   lessons: [
     // ── Section 1: Constitution + boroughs ───────────────────────────────
     {
       slug: "ak-constitution-boroughs",
-      title: "1 · Alaska's 1959 Constitution — and boroughs instead of counties",
+      title: "1 · Alaska's 1959 Constitution, and boroughs instead of counties",
       section: "What Makes Alaska Unique",
-      body: `Alaska governs under its **Constitution of 1959**, adopted as Alaska became the **49th state on January 3, 1959.** Written in the 1950s, it is often praised as one of the **best-designed modern state constitutions** — clean, concise, and built for a brand-new state (Alaska State Legislature, n.d.).
+      body: `Alaska governs under its **Constitution of 1959**, adopted as Alaska became the **49th state on January 3, 1959.** Written in the 1950s, it is often praised as one of the **best-designed modern state constitutions**, clean, concise, and built for a brand-new state (Alaska State Legislature, n.d.).
 
-**Boroughs, not counties.** Here is Alaska's most distinctive structural feature: **Alaska has no counties.** Its county-level units are called **boroughs** — and Alaska is one of only two states that doesn't use the word "county" (Louisiana, with its **parishes**, is the other) (Alaska State Legislature, n.d.).
+**Boroughs, not counties.** Here is Alaska's most distinctive structural feature: **Alaska has no counties.** Its county-level units are called **boroughs**, and Alaska is one of only two states that doesn't use the word "county" (Louisiana, with its **parishes**, is the other) (Alaska State Legislature, n.d.).
 
-**The Unorganized Borough.** Even more unusual: **most of Alaska's enormous land area is not part of any organized borough at all.** Alaska is divided into a set of **organized boroughs** (about 19, each with its own local government) **plus a single, gigantic "Unorganized Borough"** that covers roughly half the state's area, where **there is no borough-level local government.** In the Unorganized Borough, **the STATE provides the services** a county would elsewhere, and cities and special "**census areas**" handle the rest. This reflects Alaska's reality — vast distances, small and remote populations — and it means "what does my local government do?" has a genuinely different answer depending on whether you live in an organized borough or the Unorganized Borough.
+**The Unorganized Borough.** Even more unusual: **most of Alaska's enormous land area is not part of any organized borough at all.** Alaska is divided into a set of **organized boroughs** (about 19, each with its own local government) **plus a single, gigantic "Unorganized Borough"** that covers roughly half the state's area, where **there is no borough-level local government.** In the Unorganized Borough, **the STATE provides the services** a county would elsewhere, and cities and special "**census areas**" handle the rest. This reflects Alaska's reality (vast distances, small and remote populations) and it means "what does my local government do?" has a genuinely different answer depending on whether you live in an organized borough or the Unorganized Borough.
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Alaska's own government (akleg.gov, elections.alaska.gov, courts.alaska.gov) is the authoritative source. When something is time-sensitive — like the voting system or the dividend — we say so.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Alaska's own government ([akleg.gov](https://akleg.gov), [elections.alaska.gov](https://elections.alaska.gov), [courts.alaska.gov](https://courts.alaska.gov)) is the authoritative source. When something is time-sensitive (like the voting system or the dividend) we say so.
 
 **Check yourself.** What does Alaska call its counties, and what is the "Unorganized Borough"?
 
@@ -47,20 +47,33 @@ export const STATE_CIVICS_AK_COURSE: AuthoredCourse = {
       slug: "ak-executive-legislature",
       title: "2 · A strong Governor, a small executive, and the Legislature",
       section: "The Three Branches",
+      recallContent: [
+        {
+          prompt:
+            "What does Alaska use instead of counties, and which other state also avoids the word 'county'?",
+          answer:
+            "Alaska uses boroughs. Louisiana is the only other state that avoids 'county' (it uses parishes).",
+        },
+        {
+          prompt: "What is Alaska's 'Unorganized Borough'?",
+          answer:
+            "A single, huge area covering about half the state that has no borough-level local government, so the state (with cities and census areas) provides the county-type services.",
+        },
+      ],
       body: `Alaska's 1959 constitution deliberately built a **strong Governor** and a **small, streamlined executive** (Alaska State Legislature, n.d.).
 
 **Executive.** Alaska voters elect only **two** statewide officials:
 - The **Governor**, and
-- The **Lieutenant Governor** — who run **together on a joint ticket.**
+- The **Lieutenant Governor**, who run **together on a joint ticket.**
 
-That's it. Unlike states with a big "plural executive" (Washington elects nine officials), Alaska's constitution gives the **Governor** appointment power over the rest of the executive branch — the **Attorney General** and department heads are **appointed by the Governor** (with legislative confirmation), not elected. This makes Alaska's Governor comparatively **powerful**, controlling a compact executive.
+That's it. Unlike states with a big "plural executive" (Washington elects nine officials), Alaska's constitution gives the **Governor** appointment power over the rest of the executive branch: the **Attorney General** and department heads are **appointed by the Governor** (with legislative confirmation), not elected. This makes Alaska's Governor comparatively **powerful**, controlling a compact executive.
 
-**Legislative — the Alaska Legislature.** A bicameral body meeting in **Juneau** (Alaska State Legislature, n.d.):
-- **House of Representatives — 40 members**, elected to **2-year terms.**
-- **Senate — 20 senators**, elected to **4-year terms.**
-- Alaska has **no legislative term limits**, and its part-time Legislature is known for **bipartisan coalitions** that sometimes cross party lines to organize a chamber — a practical Alaska habit worth knowing.
+**Legislative: the Alaska Legislature.** A bicameral body meeting in **Juneau** (Alaska State Legislature, n.d.):
+- **House of Representatives: 40 members**, elected to **2-year terms.**
+- **Senate: 20 senators**, elected to **4-year terms.**
+- Alaska has **no legislative term limits**, and its part-time Legislature is known for **bipartisan coalitions** that sometimes cross party lines to organize a chamber, a practical Alaska habit worth knowing.
 
-**Veto and override.** Alaska's Governor has **strong veto powers**, including a **line-item veto** on appropriations. Overrides are demanding: a regular veto needs **two-thirds**, and overriding a veto of **appropriations** requires a **three-quarters** vote — one of the highest override bars in the country.
+**Veto and override.** Alaska's Governor has **strong veto powers**, including a **line-item veto** on appropriations. Overrides are demanding: a regular veto needs **two-thirds**, and overriding a veto of **appropriations** requires a **three-quarters** vote, one of the highest override bars in the country.
 
 **Check yourself.** How many statewide executives do Alaskans elect, and how many members are in each chamber of the Legislature?
 
@@ -73,15 +86,28 @@ That's it. Unlike states with a big "plural executive" (Washington elects nine o
       slug: "ak-top-four-rcv",
       title: "3 · Alaska's 'top-four' primary and ranked-choice general election",
       section: "Elections",
-      body: `Alaska adopted one of the most distinctive election systems in the country — a **"top-four" open primary paired with a ranked-choice general election** — approved by ballot measure in **2020** and first used in **2022** (Alaska Division of Elections, n.d.).
+      recallContent: [
+        {
+          prompt:
+            "How many statewide executive officials do Alaskans elect, and who are they?",
+          answer:
+            "Only two: the Governor and Lieutenant Governor, who run together on a joint ticket. The Attorney General and department heads are appointed by the Governor.",
+        },
+        {
+          prompt: "How is the Alaska Legislature structured?",
+          answer:
+            "A bicameral body meeting in Juneau: a House of 40 representatives (two-year terms) and a Senate of 20 senators (four-year terms), with no term limits.",
+        },
+      ],
+      body: `Alaska adopted one of the most distinctive election systems in the country: a **"top-four" open primary paired with a ranked-choice general election**, approved by ballot measure in **2020** and first used in **2022** (Alaska Division of Elections, n.d.).
 
 **How it works.**
-- **Open 'top-four' primary.** **All candidates for an office — of every party — appear on ONE primary ballot**, and every voter uses the same ballot. The **top FOUR finishers advance** to the general election, regardless of party.
+- **Open 'top-four' primary.** **All candidates for an office (of every party) appear on ONE primary ballot**, and every voter uses the same ballot. The **top FOUR finishers advance** to the general election, regardless of party.
 - **Ranked-choice general election.** In November, voters **rank** the (up to four) candidates in order of preference. If no one has a majority of first choices, the **last-place candidate is eliminated** and their votes transfer to next choices, repeating until someone has a **majority.**
 
-This differs from every other system you've met: it's **not** Washington's "top-two," **not** Louisiana's "jungle primary" (where 50% wins outright), and **not** Maine's plain ranked-choice — Alaska **combines** an open top-four primary **with** ranked-choice in the general.
+This differs from every other system you've met: it's **not** Washington's "top-two," **not** Louisiana's "jungle primary" (where 50% wins outright), and **not** Maine's plain ranked-choice. Alaska **combines** an open top-four primary **with** ranked-choice in the general.
 
-⚠️ **Time-sensitive and contested.** Alaska's system is **relatively new and has faced repeal efforts** at the ballot. Its future could change, and the mechanics are easy to misstate. **Confirm the current system and rules at elections.alaska.gov** rather than assuming.
+⚠️ **Time-sensitive and contested.** Alaska's system is **relatively new and has faced repeal efforts** at the ballot. Its future could change, and the mechanics are easy to misstate. **Confirm the current system and rules at [elections.alaska.gov](https://elections.alaska.gov)** rather than assuming.
 
 **Check yourself.** How many candidates advance from Alaska's open primary, and how are the winners then decided in the general election?
 
@@ -94,13 +120,26 @@ This differs from every other system you've met: it's **not** Washington's "top-
       slug: "ak-permanent-fund",
       title: "4 · The Permanent Fund Dividend, and why Alaska has no income or sales tax",
       section: "What Makes Alaska Unique",
-      body: `Alaska funds its government in a way found nowhere else — and it even **pays its residents** each year.
+      recallContent: [
+        {
+          prompt: "How does Alaska's open 'top-four' primary work?",
+          answer:
+            "Every candidate for an office, from every party, appears on one shared primary ballot, and the top four finishers advance to the general election. Alaska adopted it in 2020 and first used it in 2022.",
+        },
+        {
+          prompt:
+            "How are winners decided in Alaska's ranked-choice general election?",
+          answer:
+            "Voters rank the (up to four) candidates. If no one has a majority of first choices, the last-place candidate is eliminated and those votes transfer to the next choice, repeating until someone has a majority.",
+        },
+      ],
+      body: `Alaska funds its government in a way found nowhere else, and it even **pays its residents** each year.
 
-**The Alaska Permanent Fund.** When oil began flowing from the North Slope, Alaska voters amended the constitution in **1976** to create the **Alaska Permanent Fund** — a **state savings and investment fund** into which a share of **oil and mineral revenue** is deposited and invested for the long term (Alaska State Legislature, n.d.). The idea: turn a one-time, non-renewable resource into a **permanent** source of wealth for current and future Alaskans.
+**The Alaska Permanent Fund.** When oil began flowing from the North Slope, Alaska voters amended the constitution in **1976** to create the **Alaska Permanent Fund**, a **state savings and investment fund** into which a share of **oil and mineral revenue** is deposited and invested for the long term (Alaska State Legislature, n.d.). The idea: turn a one-time, non-renewable resource into a **permanent** source of wealth for current and future Alaskans.
 
-**The Permanent Fund Dividend (PFD).** Each year, a portion of the fund's earnings is distributed as the **Permanent Fund Dividend — an annual cash payment to virtually every eligible Alaska resident** (Alaska Department of Revenue, n.d.). ⚠️ **The amount changes every year** (it depends on fund earnings and legislative decisions), so this is a classic value to **verify** rather than memorize — check the state for the current figure.
+**The Permanent Fund Dividend (PFD).** Each year, a portion of the fund's earnings is distributed as the **Permanent Fund Dividend: an annual cash payment to virtually every eligible Alaska resident** (Alaska Department of Revenue, n.d.). ⚠️ **The amount changes every year** (it depends on fund earnings and legislative decisions), so this is a classic value to **verify** rather than memorize. Check the state for the current figure.
 
-**No state income tax, no statewide sales tax.** Because oil revenue and the Permanent Fund do so much of the work, **Alaska levies no state personal income tax and no statewide sales tax** — one of the few states with **neither.** (Local governments may impose **local** sales taxes.) This shapes Alaska politics profoundly: debates over the size of the **dividend** and how much oil money to spend versus save are central civic questions.
+**No state income tax, no statewide sales tax.** Because oil revenue and the Permanent Fund do so much of the work, **Alaska levies no state personal income tax and no statewide sales tax**, one of the few states with **neither.** (Local governments may impose **local** sales taxes.) This shapes Alaska politics profoundly: debates over the size of the **dividend** and how much oil money to spend versus save are central civic questions.
 
 **Check yourself.** What is the Permanent Fund Dividend, and what two big taxes does Alaska NOT collect at the state level?
 
@@ -114,23 +153,36 @@ This differs from every other system you've met: it's **not** Washington's "top-
       slug: "ak-courts-involved",
       title: "5 · Judges, direct democracy, and how to take part",
       section: "Get Involved",
-      body: `**How Alaska picks its judges — merit selection plus retention.** Alaska uses the **"Missouri Plan"** (Alaska Court System, n.d.):
+      recallContent: [
+        {
+          prompt: "What is the Alaska Permanent Fund Dividend (PFD)?",
+          answer:
+            "An annual cash payment to virtually every eligible Alaska resident, paid from the earnings of the Alaska Permanent Fund (the state's invested oil and mineral wealth, created by a 1976 constitutional amendment). The amount changes every year.",
+        },
+        {
+          prompt:
+            "Which two big taxes does Alaska NOT collect at the state level?",
+          answer:
+            "Alaska has no state personal income tax and no statewide sales tax, though local governments may impose their own local sales taxes.",
+        },
+      ],
+      body: `**How Alaska picks its judges: merit selection plus retention.** Alaska uses the **"Missouri Plan"** (Alaska Court System, n.d.):
 1. The **Alaska Judicial Council** (a nonpartisan body of lawyers and citizens) screens applicants and sends the Governor a list of the most qualified.
 2. The **Governor appoints** from that list.
 3. The judge later faces voters in a **nonpartisan yes/no retention election.** The **Alaska Supreme Court** has **5 justices.** This keeps judges out of partisan campaigns while preserving public accountability.
 
 **Direct democracy.** Alaska's constitution gives citizens **strong tools** (Alaska Division of Elections, n.d.):
-- **Initiative** — gather signatures to put a **law** on the ballot (Alaska's top-four/RCV system itself came this way, in 2020).
-- **Referendum** — reject a law the Legislature passed.
-- **Recall** — remove many elected officials.
-(Note: Alaska's initiative can make **statutes**, but not directly amend the constitution — amendments come from the Legislature or a convention, then voters.)
+- **Initiative:** gather signatures to put a **law** on the ballot (Alaska's top-four/RCV system itself came this way, in 2020).
+- **Referendum:** reject a law the Legislature passed.
+- **Recall:** remove many elected officials.
+(Note: Alaska's initiative can make **statutes**, but not directly amend the constitution; amendments come from the Legislature or a convention, then voters.)
 
 **How to take part:**
-- **Register and vote** — learn your ballot: an **open top-four primary** then a **ranked-choice general** (verify at elections.alaska.gov). Alaska also has broad **absentee/by-mail** options given its geography.
+- **Register and vote.** Learn your ballot: an **open top-four primary** then a **ranked-choice general** (verify at [elections.alaska.gov](https://elections.alaska.gov)). Alaska also has broad **absentee/by-mail** options given its geography.
 - **Show up locally.** In an **organized borough**, attend borough assembly and city council meetings; in the **Unorganized Borough**, your **city** and the **state** are your points of contact.
 - **Use the initiative.** Alaska's citizen initiative is a real, frequently used lever.
-- **Contact your legislators** in Juneau — you have one Representative and one Senator.
-- **Run** — city council, school board, and (in organized boroughs) borough assembly are reachable local starting points.
+- **Contact your legislators** in Juneau. You have one Representative and one Senator.
+- **Run.** City council, school board, and (in organized boroughs) borough assembly are reachable local starting points.
 
 **Check yourself.** How does Alaska choose its judges, and what is one thing to verify before voting in Alaska?
 
@@ -230,7 +282,7 @@ This differs from every other system you've met: it's **not** Washington's "top-
             prompt: "How many statewide executive officials do Alaskans elect?",
             options: [
               "Nine, a large plural executive",
-              "Only two — the Governor and Lieutenant Governor (joint ticket)",
+              "Only two: the Governor and Lieutenant Governor (joint ticket)",
               "None; the Legislature picks them",
               "Five",
             ],
@@ -249,7 +301,7 @@ This differs from every other system you've met: it's **not** Washington's "top-
             ],
             correctIndex: 1,
             explanation:
-              "Alaska uses an open top-four primary followed by a ranked-choice general — distinct from top-two, jungle primary, or plain RCV.",
+              "Alaska uses an open top-four primary followed by a ranked-choice general, distinct from top-two, jungle primary, or plain RCV.",
             sourceLessonSlug: "ak-top-four-rcv",
           },
           {
@@ -321,7 +373,7 @@ This differs from every other system you've met: it's **not** Washington's "top-
             prompt: "Why does this course tell you to VERIFY Alaska's voting system and dividend?",
             options: [
               "Because Alaska has no elections office",
-              "Because the top-four/RCV system is new and has faced repeal efforts, and the PFD amount changes yearly — confirm at elections.alaska.gov / the state",
+              "Because the top-four/RCV system is new and has faced repeal efforts, and the PFD amount changes yearly. Confirm at [elections.alaska.gov](https://elections.alaska.gov) / the state",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
