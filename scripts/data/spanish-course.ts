@@ -11,9 +11,9 @@
 import type { AuthoredCourse } from "./authored-course";
 
 export const SPANISH_COURSE: AuthoredCourse = {
-  title: "Spanish, Tense by Tense — the Curb Appeall Story",
+  title: "Spanish, Tense by Tense: the Curb Appeall Story",
   description:
-    "Learn to speak Spanish by following one continuous story about Curb Appeall and friends learning healthy-living and money habits. Each unit teaches one tense — present, near future, preterite, imperfect, future, conditional, subjunctive — and ends with a conversation challenge so you produce the language yourself.",
+    "Learn to speak Spanish by following one continuous story about Curb Appeall and friends learning healthy-living and money habits. Each unit teaches one tense (present, near future, preterite, imperfect, future, conditional, subjunctive) and ends with a conversation challenge so you produce the language yourself.",
   lessons: [
     {
       slug: "presente-regulares",
@@ -91,6 +91,10 @@ I have a small garden where I grow herbs.
 ### Ahora te toca
 - ¿Cómo estás hoy y qué quieres hacer? (How are you today and what do you want to do?)
 - Describe a un amigo usando ser y estar. (Describe a friend using ser and estar.)`,
+      recallContent: [
+        { prompt: "What are the three infinitive endings for Spanish verbs, and how do you conjugate them in the present?", answer: "-ar, -er, and -ir. Drop the ending and add a new one for each subject." },
+        { prompt: "Give the yo (I) present form of aprender (to learn).", answer: "aprendo. For -er verbs the yo form ends in -o (yo aprendo)." },
+      ],
     },
     {
       slug: "presente-irregulares-practica",
@@ -110,7 +114,7 @@ I have a small garden where I grow herbs.
     {
       slug: "futuro-proximo",
       title: "3 · The near future: ir + a + infinitive",
-      body: `The easiest way to talk about the future is **ir + a + an infinitive** — exactly like English "going to". Conjugate only **ir** (voy, vas, va, vamos, van) and keep the second verb in its base form.
+      body: `The easiest way to talk about the future is **ir + a + an infinitive**, exactly like English "going to". Conjugate only **ir** (voy, vas, va, vamos, van) and keep the second verb in its base form.
 
 **Formula:** voy a + _cocinar_ → I am going to cook.
 
@@ -130,6 +134,10 @@ Are you going to study nutrition with us?
 ### Ahora te toca
 - ¿Qué vas a hacer este fin de semana? (What are you going to do this weekend?)
 - Di tres planes usando "ir a". (Say three plans using "ir a".)`,
+      recallContent: [
+        { prompt: "When do you use ser versus estar (both mean to be)?", answer: "Use ser for identity and traits, and estar for location and how you feel right now." },
+        { prompt: "Give the yo (I) present forms of tener and ir.", answer: "yo tengo (I have) and yo voy (I go). Both are irregular." },
+      ],
     },
     {
       slug: "futuro-proximo-practica",
@@ -148,7 +156,7 @@ Are you going to study nutrition with us?
     {
       slug: "preterito",
       title: "4 · The preterite: finished actions in the past",
-      body: `The **pretérito** narrates completed past actions — the events of the story. Regular endings:
+      body: `The **pretérito** narrates completed past actions, the events of the story. Regular endings:
 
 | | ayudar | aprender | compartir |
 |---|---|---|---|
@@ -176,6 +184,10 @@ After the meal, they took a walk around the neighborhood.
 ### Ahora te toca
 - ¿Qué hiciste ayer? (What did you do yesterday?)
 - Cuenta una cosa que aprendiste la semana pasada. (Tell one thing you learned last week.)`,
+      recallContent: [
+        { prompt: "How do you form the near future in Spanish?", answer: "Use ir + a + an infinitive. Conjugate only ir (voy, vas, va, vamos, van) and keep the second verb in its base form." },
+        { prompt: "Translate: I am going to cook.", answer: "Voy a cocinar. Only ir is conjugated; cocinar stays in the infinitive." },
+      ],
     },
     {
       slug: "preterito-practica",
@@ -195,7 +207,7 @@ After the meal, they took a walk around the neighborhood.
     {
       slug: "imperfecto",
       title: "5 · The imperfect: how things used to be",
-      body: `The **imperfecto** describes the past that was ongoing, habitual, or background — "used to" and "was -ing". The endings are very regular:
+      body: `The **imperfecto** describes the past that was ongoing, habitual, or background: "used to" and "was -ing". The endings are very regular:
 
 | | trabajar | aprender / compartir |
 |---|---|---|
@@ -275,7 +287,7 @@ Everyone was talking about money, but the otter changed the subject to health.
     {
       slug: "futuro",
       title: "7 · The future tense: plans and predictions",
-      body: `The simple **futuro** adds one set of endings directly onto the whole infinitive — no need to drop anything. The endings are the same for -ar, -er, and -ir verbs.
+      body: `The simple **futuro** adds one set of endings directly onto the whole infinitive (no need to drop anything). The endings are the same for -ar, -er, and -ir verbs.
 
 | | trabajar | aprender | compartir |
 |---|---|---|---|
@@ -319,7 +331,7 @@ Will you learn to cook with us?
     {
       slug: "condicional",
       title: "8 · The conditional: politeness and “would”",
-      body: `The **condicional** means "would" — for hypotheticals and for being polite. Take the infinitive and add **-ía, -ías, -ía, -íamos, -ían** (the same irregular stems as the future: tendría, haría, podría).
+      body: `The **condicional** means "would": for hypotheticals and for being polite. Take the infinitive and add **-ía, -ías, -ía, -íamos, -ían** (the same irregular stems as the future: tendría, haría, podría).
 
 ### En la historia
 **Me gustaría aprender más recetas saludables.**
@@ -356,7 +368,7 @@ Without a budget, it would be hard to save.
     {
       slug: "subjuntivo-presente",
       title: "9 · The present subjunctive: wishes, advice, and doubt",
-      body: `The **subjuntivo** appears after expressions of wish, advice, emotion, or doubt — usually with **que**. To form it, take the **yo** form of the present, drop the **-o**, and add the "opposite" endings (-ar verbs take **-e**; -er/-ir verbs take **-a**).
+      body: `The **subjuntivo** appears after expressions of wish, advice, emotion, or doubt, usually with **que**. To form it, take the **yo** form of the present, drop the **-o**, and add the "opposite" endings (-ar verbs take **-e**; -er/-ir verbs take **-a**).
 
 **hablar** → yo hablo → que hable, hables, hable, hablemos, hablen
 **comer** → yo como → que coma, comas, coma, comamos, coman
