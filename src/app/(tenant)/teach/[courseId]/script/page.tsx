@@ -47,7 +47,15 @@ export default async function RecordingScriptPage({ params }: { params: Promise<
             recordedAt: l.recordedAt ? l.recordedAt.toISOString() : null,
           }))}
         />
-        <RecordingScriptView script={script} />
+        <RecordingScriptView
+          script={script}
+          courseId={course.id}
+          lessons={lessons.map((l) => ({
+            id: l.id,
+            title: l.title,
+            recordedAt: l.recordedAt ? l.recordedAt.toISOString() : null,
+          }))}
+        />
       </div>
     </main>
   );

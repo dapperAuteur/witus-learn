@@ -45,6 +45,7 @@ export function LessonRecorder({
   const [status, setStatus] = useState<Status>("idle");
   const [progress, setProgress] = useState(0);
   const [elapsed, setElapsed] = useState(0);
+  const [paused, setPaused] = useState(false); // recording paused (mic still held, no audio captured)
   const [bytes, setBytes] = useState(0);
   const [parts, setParts] = useState(0); // finalized parts so far (multi-part takes)
   const [error, setError] = useState<string | null>(null);
@@ -56,6 +57,8 @@ export function LessonRecorder({
   const partBytesRef = useRef(0); // current part size
   const totalBytesRef = useRef(0); // all parts + current
   const finishingRef = useRef(false); // true = user stopped (final); false = auto rollover
+  const pausedRef = useRef(false); // mirrors `paused` for the interval + duration accounting
+  const elapsedRef = useRef(0); // ACTIVE seconds recorded (excludes paused gaps)
   const startedAtRef = useRef(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -149,8 +152,11 @@ export function LessonRecorder({
       partBytesRef.current = 0;
       totalBytesRef.current = 0;
       finishingRef.current = false;
+      pausedRef.current = false;
+      elapsedRef.current = 0;
       setParts(0);
       setBytes(0);
+      setPaused(false);
 
       // Persist the growing recording after each part finalizes — nothing is lost on a crash.
       async function persist(): Promise<PendingRecording> {
@@ -159,7 +165,8 @@ export function LessonRecorder({
           courseId,
           parts: [...partsRef.current],
           mime: mime || "audio/webm",
-          durationSeconds: (Date.now() - startedAtRef.current) / 1000,
+          // Active seconds only — a paused stretch adds no audio, so it shouldn't add duration.
+          durationSeconds: elapsedRef.current,
           createdAt: Date.now(),
         };
         await savePending(rec);
@@ -208,7 +215,12 @@ export function LessonRecorder({
       recorderRef.current = mr;
       startedAtRef.current = Date.now();
       setElapsed(0);
-      timerRef.current = setInterval(() => setElapsed((s) => s + 1), 1000);
+      // Tick only while actively recording — a paused stretch doesn't advance the clock.
+      timerRef.current = setInterval(() => {
+        if (pausedRef.current) return;
+        elapsedRef.current += 1;
+        setElapsed(elapsedRef.current);
+      }, 1000);
       mr.start(2000); // emit data every 2s so we can track size + roll parts near the cap
       setStatus("recording");
     } catch {
@@ -217,8 +229,28 @@ export function LessonRecorder({
     }
   }
 
+  // Pause/resume the take (multi-session recording): MediaRecorder.pause() keeps the mic + the
+  // in-progress blob, emits no audio while paused, and stitches seamlessly on resume — so a
+  // course can be recorded across several sittings without stopping/re-uploading.
+  function togglePause() {
+    const mr = recorderRef.current;
+    if (!mr) return;
+    if (mr.state === "recording") {
+      mr.pause();
+      pausedRef.current = true;
+      setPaused(true);
+    } else if (mr.state === "paused") {
+      mr.resume();
+      pausedRef.current = false;
+      setPaused(false);
+    }
+  }
+
   function stopRecording() {
     finishingRef.current = true;
+    pausedRef.current = false;
+    // A paused recorder must resume before it can flush its final data on stop().
+    if (recorderRef.current?.state === "paused") recorderRef.current.resume();
     recorderRef.current?.stop();
   }
 
@@ -244,13 +276,17 @@ export function LessonRecorder({
 
       {status === "recording" ? (
         <>
-          <span className="inline-flex items-center gap-1.5 font-medium text-red-600">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-red-600" /> {fmt(elapsed)}
+          <span className={`inline-flex items-center gap-1.5 font-medium ${paused ? "text-amber-600" : "text-red-600"}`}>
+            <span className={`h-2 w-2 rounded-full ${paused ? "bg-amber-500" : "animate-pulse bg-red-600"}`} />
+            {fmt(elapsed)}{paused ? " · paused" : ""}
           </span>
           <span className="text-xs text-neutral-500">
             {formatBytes(bytes)}
             {parts > 0 ? ` · part ${parts + 1}` : ""}
           </span>
+          <button type="button" onClick={togglePause} className={btn}>
+            {paused ? "▶ Resume" : "⏸ Pause"}
+          </button>
           <button type="button" onClick={stopRecording} className={btn}>■ Stop</button>
         </>
       ) : null}

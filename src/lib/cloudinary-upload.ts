@@ -62,10 +62,20 @@ function postChunk(
           reject(new Error("Unexpected upload response."));
         }
       } else {
-        reject(new Error("Upload failed."));
+        // Surface Cloudinary's actual reason (e.g. "Upload preset must be whitelisted for unsigned
+        // uploads", "Invalid upload preset") instead of a generic failure — that's usually a config
+        // fix (see user-task: verify the preset is Unsigned + env vars set), not a code bug.
+        let msg = `Upload failed (HTTP ${xhr.status}).`;
+        try {
+          const body = JSON.parse(xhr.responseText) as { error?: { message?: string } };
+          if (body?.error?.message) msg = `Cloudinary: ${body.error.message}`;
+        } catch {
+          /* non-JSON error body — keep the status message */
+        }
+        reject(new Error(msg));
       }
     };
-    xhr.onerror = () => reject(new Error("Upload failed — check your connection."));
+    xhr.onerror = () => reject(new Error("Upload failed — check your connection (or a CORS/preset issue)."));
     xhr.send(form);
   });
 }

@@ -1,15 +1,32 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { LessonRecorder } from "./lesson-recorder";
+
+export interface ScriptLesson {
+  id: string;
+  title: string;
+  recordedAt: string | null;
+}
 
 // Displays a course's generated recording (narration) script in the admin UI — the words to
 // read aloud when recording. Two modes:
 //  • Reading pane (default) with Copy / Print / Save-PDF.
-//  • Teleprompter: full-screen auto-scrolling text with adjustable speed, text size, and a
-//    mirror toggle (for beam-splitter teleprompter rigs).
+//  • Teleprompter: full-screen auto-scrolling text with adjustable speed, text size, a mirror
+//    toggle (for beam-splitter rigs), AND an embedded in-app recorder so you can record and read
+//    at the same time (the overlay used to hide the per-lesson record buttons underneath it).
 // The script is generated server-side (src/lib/narration.ts) and passed in; regenerating the
 // page always reflects the current lessons.
-export function RecordingScriptView({ script }: { script: string }) {
+export function RecordingScriptView({
+  script,
+  courseId,
+  lessons = [],
+}: {
+  script: string;
+  courseId: string;
+  /** Lessons offered as record targets inside the teleprompter (id + title + recorded state). */
+  lessons?: ScriptLesson[];
+}) {
   const [copied, setCopied] = useState(false);
   const [teleprompter, setTeleprompter] = useState(false);
 
@@ -53,17 +70,33 @@ export function RecordingScriptView({ script }: { script: string }) {
         {script}
       </pre>
 
-      {teleprompter ? <Teleprompter script={script} onExit={() => setTeleprompter(false)} /> : null}
+      {teleprompter ? (
+        <Teleprompter script={script} courseId={courseId} lessons={lessons} onExit={() => setTeleprompter(false)} />
+      ) : null}
     </div>
   );
 }
 
-function Teleprompter({ script, onExit }: { script: string; onExit: () => void }) {
+function Teleprompter({
+  script,
+  courseId,
+  lessons,
+  onExit,
+}: {
+  script: string;
+  courseId: string;
+  lessons: ScriptLesson[];
+  onExit: () => void;
+}) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [playing, setPlaying] = useState(false);
   const [speed, setSpeed] = useState(60); // pixels per second
   const [fontSize, setFontSize] = useState(40); // px
   const [mirror, setMirror] = useState(false);
+  // Which lesson the embedded recorder attaches to — default to the first not-yet-recorded one.
+  const [recordLessonId, setRecordLessonId] = useState<string>(
+    () => lessons.find((l) => !l.recordedAt)?.id ?? lessons[0]?.id ?? "",
+  );
 
   // Auto-scroll loop: advance scrollTop by speed·dt while playing. Fractional accumulator
   // keeps slow speeds smooth. Stops at the bottom.
@@ -95,6 +128,9 @@ function Teleprompter({ script, onExit }: { script: string; onExit: () => void }
   // Keyboard: space = play/pause, Esc = exit, arrows = speed.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      // Don't hijack space/arrows while the user is on the recorder controls or a slider.
+      const t = e.target as HTMLElement | null;
+      if (t && ["BUTTON", "INPUT", "SELECT", "TEXTAREA"].includes(t.tagName)) return;
       if (e.key === " ") {
         e.preventDefault();
         setPlaying((p) => !p);
@@ -133,6 +169,31 @@ function Teleprompter({ script, onExit }: { script: string; onExit: () => void }
 
       {/* A center reading guide line */}
       <div className="pointer-events-none absolute left-0 right-0 top-1/2 border-t-2 border-red-500/60" />
+
+      {/* In-app recorder — record while you read (used to be hidden behind this overlay). */}
+      {lessons.length > 0 ? (
+        <div className="flex flex-wrap items-center justify-center gap-3 border-t border-neutral-800 bg-neutral-900 px-4 py-2 text-sm text-white">
+          <span aria-hidden className="text-red-500">🎙</span>
+          <label className="flex items-center gap-2">
+            <span className="text-neutral-400">Recording to</span>
+            <select
+              value={recordLessonId}
+              onChange={(e) => setRecordLessonId(e.target.value)}
+              className="min-h-9 max-w-[46vw] truncate rounded-md border border-neutral-600 bg-neutral-800 px-2 text-white"
+            >
+              {lessons.map((l) => (
+                <option key={l.id} value={l.id}>
+                  {l.recordedAt ? "✓ " : ""}
+                  {l.title}
+                </option>
+              ))}
+            </select>
+          </label>
+          {recordLessonId ? (
+            <LessonRecorder key={recordLessonId} courseId={courseId} lessonId={recordLessonId} />
+          ) : null}
+        </div>
+      ) : null}
 
       {/* Controls */}
       <div className="flex flex-wrap items-center justify-center gap-4 bg-neutral-900 px-4 py-3 text-sm">

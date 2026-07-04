@@ -69,11 +69,15 @@ button.
 
 - Recording is **offline-first**: your take is saved on your device immediately and uploads when
   you're back online — nothing is lost if you close the tab or drop your connection.
+- **Pause/Resume** — hit **⏸ Pause** to stop for a moment and **▶ Resume** to keep the same take
+  going. Record a whole course across several sittings; paused time isn't counted in the length.
 - Status shows **recording → saved locally → uploading → uploaded ✓** (or *retry* on failure).
-- A take **auto-stops** just under the 100 MB limit; record the rest as the next lesson.
+- A take **auto-stops / auto-splits** just under the 100 MB limit into ordered parts.
 - A successful upload attaches the audio to the lesson and ticks it **recorded**.
 
-Uploads need Cloudinary configured and an HTTPS URL (the deployed site).`,
+Uploads need Cloudinary configured and an HTTPS URL (the deployed site). If an upload fails, the red
+error now shows **Cloudinary's exact reason** — usually the upload preset isn't set to *Unsigned*
+(see the operator runbook / user-task 43).`,
   },
   {
     slug: "recording-scripts-teleprompter",
@@ -85,7 +89,11 @@ Uploads need Cloudinary configured and an HTTPS URL (the deployed site).`,
 The **Recording script** page turns your lessons into a clean read-aloud script (regenerated from
 the current lesson text each visit). Use **Teleprompter** for a full-screen auto-scroll with speed,
 text-size, and mirror controls. Tick lessons off as you record them — progress is saved across
-sittings.`,
+sittings.
+
+**Record while you read:** the teleprompter has a built-in recorder — pick the lesson from the
+**Recording to** dropdown in its control bar and hit **🎙 Record**, so you capture audio without
+leaving the full-screen script. Space = play/pause the scroll, ↑/↓ = speed, Esc = exit.`,
   },
   {
     slug: "set-pricing",
@@ -285,6 +293,40 @@ Lesson text, glossary, sources, and quick-recall prompts can be edited **in-app*
 
 ## Learner reports
 \`pnpm reports:list\` (or \`/admin/reports\`) shows what learners filed via "Report a problem".`,
+  },
+  {
+    slug: "change-course-instructor",
+    title: "Change a course's instructor (fix wrong bylines)",
+    category: "Operator",
+    keywords: ["instructor", "owner", "byline", "reassign", "can't edit", "cannot edit", "record", "save", "witus-health", "trade-faculty", "permission", "403"],
+    body: `# Change a course's instructor
+
+Every course has one **instructor** (its owner). Only that instructor — plus brand admins and the
+platform owner — can edit, record, or save it. Some courses were seeded under placeholder instructors
+(\`@witus-health\`, \`@trade-faculty\`, or a \`bam\` seed id) that may not match the account you log in
+with, which is why they can feel read-only or "won't save".
+
+## Fix one course (from the UI)
+As an **owner or brand admin**, open the course at \`/teach/<courseId>\` → **Course settings** →
+the **Instructor** dropdown → pick the right person → **Save settings**.
+
+- The course moves to that instructor's dashboard and its public URL changes to
+  \`/their-username/…\`. You keep access as an admin.
+- If you don't see the course under **Your courses**, admins see **every** course on the brand in
+  \`/teach\` (with an \`instructor:\` byline) — so it's reachable there.
+- "That instructor already has a course at this URL" → two courses would share a slug; rename this
+  course's slug first.
+
+## Fix them all at once (bulk)
+To make your account the instructor on **every** Learn.WitUS course, run the reassign script
+(dry-run first, then \`--apply\`):
+
+\`\`\`
+pnpm reassign:instructor
+pnpm reassign:instructor --apply
+\`\`\`
+
+See **user-task 42** in the repo for prod details.`,
   },
 ];
 
