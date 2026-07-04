@@ -1,4 +1,4 @@
-// Authored "Hawaii Civics: How Your State Government Works" — the Hawaii entry in the
+// Authored "Hawaii Civics: How Your State Government Works", the Hawaii entry in the
 // per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Hawaii's version.
 //
@@ -20,7 +20,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_HI_COURSE: AuthoredCourse = {
   title: "Hawaii Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Hawaii governs itself — and how you take part where you live. Hawaii runs the most CENTRALIZED government of any state: it has just FOUR counties and essentially NO city or town governments below them, and it is the ONLY state with a single, statewide school system (no local school districts). You'll learn Hawaii's Constitution of 1959, its executive, its Legislature of 25 senators and 51 representatives, its merit-selected judiciary (where a commission — not voters — decides retention), the Office of Hawaiian Affairs, and Hawaii's status as the only state with an official second language (Hawaiian). It also runs elections entirely by mail. Time-sensitive facts are flagged, pointing to elections.hawaii.gov. Cited to Hawaii's own official sources (capitol.hawaii.gov, elections.hawaii.gov, courts.state.hi.us).",
+    "A practical, non-partisan guide to how the state of Hawaii governs itself, and how you take part where you live. Hawaii runs the most CENTRALIZED government of any state: it has just FOUR counties and essentially NO city or town governments below them, and it is the ONLY state with a single, statewide school system (no local school districts). You'll learn Hawaii's Constitution of 1959, its executive, its Legislature of 25 senators and 51 representatives, its merit-selected judiciary (where a commission, not voters, decides retention), the Office of Hawaiian Affairs, and Hawaii's status as the only state with an official second language (Hawaiian). It also runs elections entirely by mail. Time-sensitive facts are flagged, pointing to elections.hawaii.gov. Cited to Hawaii's own official sources (capitol.hawaii.gov, elections.hawaii.gov, courts.state.hi.us).",
   lessons: [
     // ── Section 1: The most centralized state ────────────────────────────
     {
@@ -29,18 +29,18 @@ export const STATE_CIVICS_HI_COURSE: AuthoredCourse = {
       section: "What Makes Hawaii Unique",
       body: `Start with what makes Hawaii government unique: it is the **most centralized state government in the United States** (Hawaii State Legislature, n.d.).
 
-**Only counties — no city or town governments.** Most states stack **counties, cities, towns, and villages.** Hawaii has essentially **only ONE layer of local government: the county.** There are just **four (functioning) counties** (Hawaii Office of Elections, n.d.):
-- **City and County of Honolulu** (the island of Oʻahu — a consolidated city-county),
+**Only counties, no city or town governments.** Most states stack **counties, cities, towns, and villages.** Hawaii has essentially **only ONE layer of local government: the county.** There are just **four (functioning) counties** (Hawaii Office of Elections, n.d.):
+- **City and County of Honolulu** (the island of Oʻahu, a consolidated city-county),
 - **Hawaiʻi County** (the Big Island),
 - **Maui County** (Maui, Molokaʻi, Lānaʻi), and
 - **Kauaʻi County** (Kauaʻi and Niʻihau).
-(There's also tiny **Kalawao**, administered by the state health department.) Crucially, there are **no separate incorporated cities, towns, or villages** — so when you hear "Hilo" or "Kailua," those are **places**, not **governments.** Your local government is your **county.**
+(There's also tiny **Kalawao**, administered by the state health department.) Crucially, there are **no separate incorporated cities, towns, or villages**, so when you hear "Hilo" or "Kailua," those are **places**, not **governments.** Your local government is your **county.**
 
-**One statewide school system.** Even more striking: Hawaii is the **ONLY state with a single, unified, statewide public-school system.** There are **no local school districts and no local school boards** — the **Hawaii State Department of Education** runs **every public school in the state** as one system (Hawaii State Legislature, n.d.). In every other state, schools are run by hundreds or thousands of local districts; in Hawaii, it's **one.**
+**One statewide school system.** Even more striking: Hawaii is the **ONLY state with a single, unified, statewide public-school system.** There are **no local school districts and no local school boards**; the **Hawaii State Department of Education** runs **every public school in the state** as one system (Hawaii State Legislature, n.d.). In every other state, schools are run by hundreds or thousands of local districts; in Hawaii, it's **one.**
 
-Why this leads the course: Hawaii concentrates power at the **state** level to a degree no other state does — a legacy of its history as a **unified kingdom** before annexation and statehood.
+Why this leads the course: Hawaii concentrates power at the **state** level to a degree no other state does, a legacy of its history as a **unified kingdom** before annexation and statehood.
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Hawaii's own government (capitol.hawaii.gov, elections.hawaii.gov, courts.state.hi.us) is the authoritative source.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Hawaii's own government ([capitol.hawaii.gov](https://capitol.hawaii.gov), [elections.hawaii.gov](https://elections.hawaii.gov), [courts.state.hi.us](https://courts.state.hi.us)) is the authoritative source.
 
 **Check yourself.** How many counties does Hawaii have, and what is unique about how Hawaii runs its public schools?
 
@@ -54,18 +54,28 @@ Why this leads the course: Hawaii concentrates power at the **state** level to a
       slug: "hi-constitution-branches",
       title: "2 · The Constitution of 1959 and the three branches",
       section: "The Three Branches",
-      body: `Hawaii governs under its **Constitution of 1959**, adopted as Hawaii became the **50th (and newest) state on August 21, 1959.** It carries the marks of Hawaii's distinctive history — including recognition of **Native Hawaiian** rights and the **Hawaiian language** (Hawaii State Legislature, n.d.).
+      recallContent: [
+        {
+          prompt: "How many functioning counties does Hawaii have, and what layer of local government do they represent?",
+          answer: "Four (Honolulu, Hawaii County, Maui, and Kauai). The county is essentially the only layer of local government; there are no separate cities, towns, or villages below it.",
+        },
+        {
+          prompt: "What is unique about how Hawaii runs its public schools?",
+          answer: "Hawaii is the only state with a single, unified, statewide school system run by the Hawaii State Department of Education. There are no local school districts or boards.",
+        },
+      ],
+      body: `Hawaii governs under its **Constitution of 1959**, adopted as Hawaii became the **50th (and newest) state on August 21, 1959.** It carries the marks of Hawaii's distinctive history, including recognition of **Native Hawaiian** rights and the **Hawaiian language** (Hawaii State Legislature, n.d.).
 
-**Executive — a compact, elected top.** Hawaii voters elect just **two** statewide officials (Hawaii Office of Elections, n.d.):
+**Executive: a compact, elected top.** Hawaii voters elect just **two** statewide officials (Hawaii Office of Elections, n.d.):
 - The **Governor**, and
 - The **Lieutenant Governor** (who also serves as Hawaii's chief elections officer / "secretary of state"-type role).
-The **Attorney General** and department heads are **appointed by the Governor** (with Senate confirmation), so — like Alaska — Hawaii has a comparatively **strong Governor** over a small elected executive.
+The **Attorney General** and department heads are **appointed by the Governor** (with Senate confirmation), so (like Alaska) Hawaii has a comparatively **strong Governor** over a small elected executive.
 
-**Legislative — the Hawaii State Legislature.** A bicameral body meeting in Honolulu (Hawaii State Legislature, n.d.):
-- **House of Representatives — 51 members**, elected to **2-year terms.**
-- **Senate — 25 senators**, elected to **4-year terms.**
+**Legislative: the Hawaii State Legislature.** A bicameral body meeting in Honolulu (Hawaii State Legislature, n.d.):
+- **House of Representatives, 51 members**, elected to **2-year terms.**
+- **Senate, 25 senators**, elected to **4-year terms.**
 
-**Judicial — the Hawaii courts.** District and Circuit courts up through the Intermediate Court of Appeals and the **Hawaii Supreme Court** (5 justices). How Hawaii selects — and *retains* — judges is distinctive, covered next.
+**Judicial: the Hawaii courts.** District and Circuit courts up through the Intermediate Court of Appeals and the **Hawaii Supreme Court** (5 justices). How Hawaii selects (and *retains*) judges is distinctive, covered next.
 
 **Veto and override.** The Governor may veto bills; the Legislature overrides with a **two-thirds vote of each chamber.**
 
@@ -81,15 +91,25 @@ The **Attorney General** and department heads are **appointed by the Governor** 
       slug: "hi-courts",
       title: "3 · How Hawaii chooses its judges (a commission, not voters, decides retention)",
       section: "The Three Branches",
+      recallContent: [
+        {
+          prompt: "How many statewide executive officials do Hawaii voters elect, and who are they?",
+          answer: "Just two: the Governor and the Lieutenant Governor. The Attorney General and department heads are appointed by the Governor with Senate confirmation.",
+        },
+        {
+          prompt: "How many members sit in each chamber of the Hawaii Legislature, and for how long?",
+          answer: "The House has 51 representatives on 2-year terms, and the Senate has 25 senators on 4-year terms.",
+        },
+      ],
       body: `Hawaii uses **merit selection**, but with a distinctive twist on how judges keep their seats (Hawaii State Judiciary, n.d.):
 
 1. **Judicial Selection Commission.** A nonpartisan **Judicial Selection Commission** reviews applicants and sends a list of nominees to the appointing authority.
 2. **Appointment with Senate consent.** The **Governor appoints** Supreme Court and appellate judges (the **Chief Justice** also appoints many lower-court judges) **from that list**, and the **Senate confirms.** Judges serve **10-year terms.**
-3. **Retention by the Commission — not the voters.** Here's the twist: when a judge's term ends, ⚠️ **the Judicial Selection Commission — not the voters — decides whether to retain the judge.** Most merit-selection states (Missouri, Colorado, Alaska) send judges to **voters** for a yes/no retention vote; **Hawaii keeps that decision inside the commission.** This makes Hawaii's judiciary especially **insulated from electoral politics.**
+3. **Retention by the Commission, not the voters.** Here's the twist: when a judge's term ends, ⚠️ **the Judicial Selection Commission (not the voters) decides whether to retain the judge.** Most merit-selection states (Missouri, Colorado, Alaska) send judges to **voters** for a yes/no retention vote; **Hawaii keeps that decision inside the commission.** This makes Hawaii's judiciary especially **insulated from electoral politics.**
 
-Why it matters: if you're comparing states, don't assume Hawaii holds judicial **retention elections** — it doesn't. A professional commission handles both the front end (nomination) and the back end (retention).
+Why it matters: if you're comparing states, don't assume Hawaii holds judicial **retention elections**. It doesn't. A professional commission handles both the front end (nomination) and the back end (retention).
 
-**Check yourself.** Who decides whether a Hawaii judge is retained at the end of a term — and how is that different from Missouri or Colorado?
+**Check yourself.** Who decides whether a Hawaii judge is retained at the end of a term, and how is that different from Missouri or Colorado?
 
 ## Sources
 - Hawaii State Judiciary. (n.d.). *Judicial selection and retention; the Judicial Selection Commission*. courts.state.hi.us. https://www.courts.state.hi.us/
@@ -101,11 +121,21 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
       slug: "hi-hawaiian-affairs",
       title: "4 · The Office of Hawaiian Affairs and an official second language",
       section: "What Makes Hawaii Unique",
-      body: `Hawaii's constitution reflects its history as a **sovereign kingdom** before it was annexed by the United States — and two features stand out.
+      recallContent: [
+        {
+          prompt: "Who decides whether a Hawaii judge is retained, and how does that differ from states like Missouri or Colorado?",
+          answer: "The Judicial Selection Commission decides retention, not the voters. States like Missouri and Colorado send judges to voters for a yes/no retention vote; Hawaii keeps the decision inside the commission.",
+        },
+        {
+          prompt: "How long is a Hawaii judge's term, and who appoints them?",
+          answer: "Judges serve 10-year terms. The Governor appoints Supreme Court and appellate judges (the Chief Justice appoints many lower-court judges) from the commission's list, with Senate confirmation.",
+        },
+      ],
+      body: `Hawaii's constitution reflects its history as a **sovereign kingdom** before it was annexed by the United States, and two features stand out.
 
-**The Office of Hawaiian Affairs (OHA).** Hawaii's 1978 constitutional convention created the **Office of Hawaiian Affairs**, a distinctive **semi-autonomous state agency** governed by an **elected board of trustees** (Hawaii State Legislature, n.d.). OHA manages a share of the revenues from **"ceded lands"** (former kingdom and government lands) in trust for the betterment of **Native Hawaiians**, and advocates on their behalf. Uniquely, **all Hawaii voters** elect OHA's trustees. No other state has an equivalent elected body dedicated to an indigenous people's trust — it's a genuine Hawaii distinctive rooted in its unique history.
+**The Office of Hawaiian Affairs (OHA).** Hawaii's 1978 constitutional convention created the **Office of Hawaiian Affairs**, a distinctive **semi-autonomous state agency** governed by an **elected board of trustees** (Hawaii State Legislature, n.d.). OHA manages a share of the revenues from **"ceded lands"** (former kingdom and government lands) in trust for the betterment of **Native Hawaiians**, and advocates on their behalf. Uniquely, **all Hawaii voters** elect OHA's trustees. No other state has an equivalent elected body dedicated to an indigenous people's trust. It's a genuine Hawaii distinctive rooted in its unique history.
 
-**Two official languages.** Hawaii is the **only U.S. state with an official second language: Hawaiian** (ʻŌlelo Hawaiʻi). The state constitution makes **both English and Hawaiian official languages of the State** (Hawaii State Legislature, n.d.). This supports Hawaiian-language immersion schools and the use of Hawaiian in public life — another way Hawaii's kingdom-era heritage lives in its modern government.
+**Two official languages.** Hawaii is the **only U.S. state with an official second language: Hawaiian** (ʻŌlelo Hawaiʻi). The state constitution makes **both English and Hawaiian official languages of the State** (Hawaii State Legislature, n.d.). This supports Hawaiian-language immersion schools and the use of Hawaiian in public life, another way Hawaii's kingdom-era heritage lives in its modern government.
 
 ⚠️ **Time-sensitive:** OHA's structure, funding, and related legal questions evolve; confirm current details at the state's own sites.
 
@@ -120,17 +150,27 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
       slug: "hi-elections-involved",
       title: "5 · Elections, county government, and how to take part",
       section: "Get Involved",
-      body: `**Elections — Hawaii votes by mail.** Since 2020 Hawaii has conducted its **elections by mail**: every registered voter is **mailed a ballot**, returnable by mail or at a **voter service center or drop box** (Hawaii Office of Elections, n.d.). Hawaii also offers **same-day registration** at voter service centers. ⚠️ **Time-sensitive:** deadlines and service-center locations are administered by the **county clerks** and can change — confirm the **current** rules at **elections.hawaii.gov** or your county clerk before you vote.
+      recallContent: [
+        {
+          prompt: "What is the Office of Hawaiian Affairs (OHA), and who governs it?",
+          answer: "OHA is a semi-autonomous state agency created by the 1978 constitutional convention. It is governed by an elected board of trustees and manages a share of ceded-land revenues in trust for Native Hawaiians.",
+        },
+        {
+          prompt: "What makes Hawaii's official-language status unique among the states?",
+          answer: "Hawaii is the only U.S. state with an official second language, Hawaiian. The constitution makes both English and Hawaiian official languages of the State.",
+        },
+      ],
+      body: `**Elections: Hawaii votes by mail.** Since 2020 Hawaii has conducted its **elections by mail**: every registered voter is **mailed a ballot**, returnable by mail or at a **voter service center or drop box** (Hawaii Office of Elections, n.d.). Hawaii also offers **same-day registration** at voter service centers. ⚠️ **Time-sensitive:** deadlines and service-center locations are administered by the **county clerks** and can change. Confirm the **current** rules at **[elections.hawaii.gov](https://elections.hawaii.gov)** or your county clerk before you vote.
 
-**Local government is the county.** Remember Lesson 1: your local government is your **county** (Honolulu, Hawaiʻi, Maui, or Kauaʻi). There are **no city or town councils below the county** — the **county council and mayor** handle local roads, police, water, zoning, and parks. (Public schools, by contrast, are **state**-run, not local.)
+**Local government is the county.** Remember Lesson 1: your local government is your **county** (Honolulu, Hawaiʻi, Maui, or Kauaʻi). There are **no city or town councils below the county**; the **county council and mayor** handle local roads, police, water, zoning, and parks. (Public schools, by contrast, are **state**-run, not local.)
 
 **How to take part:**
-- **Vote — it's mailed to you.** Track your ballot at elections.hawaii.gov; return it by mail or drop box.
-- **Elect your OHA trustees.** All voters help choose the Office of Hawaiian Affairs board — an often-overlooked part of the Hawaii ballot.
+- **Vote, it's mailed to you.** Track your ballot at [elections.hawaii.gov](https://elections.hawaii.gov); return it by mail or drop box.
+- **Elect your OHA trustees.** All voters help choose the Office of Hawaiian Affairs board, an often-overlooked part of the Hawaii ballot.
 - **Show up at the county.** Your **county council** and mayor make most local decisions; their meetings are public.
-- **Contact your legislators** in Honolulu — you have one Representative and one Senator.
+- **Contact your legislators** in Honolulu: you have one Representative and one Senator.
 - **Engage the state on schools.** Because schools are state-run, education advocacy runs through the **statewide Board of Education and Legislature**, not a local district.
-- **Run** — county council, the Board of Education, OHA, and the Legislature are reachable starting points.
+- **Run.** County council, the Board of Education, OHA, and the Legislature are reachable starting points.
 
 **Check yourself.** Who provides your local government in Hawaii, and where do you go to influence public-school policy?
 
@@ -153,7 +193,7 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
               "Hawaii is the ONLY state with a single, statewide public ___ system (no local districts).",
             answer: "school",
             explanation:
-              "The Hawaii State Department of Education runs every public school as one system — there are no local school districts or boards.",
+              "The Hawaii State Department of Education runs every public school as one system. There are no local school districts or boards.",
           },
           {
             prompt:
@@ -172,7 +212,7 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           },
           {
             prompt:
-              "Unlike Missouri or Colorado, in Hawaii a judicial ___ Commission — not the voters — decides whether to retain a judge.",
+              "Unlike Missouri or Colorado, in Hawaii a judicial ___ Commission (not the voters) decides whether to retain a judge.",
             answer: "Selection",
             accept: ["selection"],
             explanation:
@@ -191,7 +231,7 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
               "TRUE or FALSE: Hawaii has hundreds of local school boards, like most states.",
             answer: "false",
             explanation:
-              "False. Hawaii is the only state with a single statewide school system — no local school boards or districts at all.",
+              "False. Hawaii is the only state with a single statewide school system, with no local school boards or districts at all.",
           },
         ],
       },
@@ -234,7 +274,7 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
           {
             prompt: "How many statewide executive officials do Hawaiians elect?",
             options: [
-              "Only two — the Governor and Lieutenant Governor",
+              "Only two: the Governor and Lieutenant Governor",
               "Nine",
               "None",
               "Six",
@@ -280,7 +320,7 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
             ],
             correctIndex: 1,
             explanation:
-              "Hawaii's constitution makes both English and Hawaiian official languages of the State — the only such state.",
+              "Hawaii's constitution makes both English and Hawaiian official languages of the State, the only such state.",
             sourceLessonSlug: "hi-hawaiian-affairs",
           },
           {
@@ -300,7 +340,7 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
             prompt: "In Hawaii, what provides your local government?",
             options: [
               "A city council",
-              "Your county (one of four) — there are no city or town governments below the county",
+              "Your county (one of four); there are no city or town governments below the county",
               "A township",
               "The school district",
             ],
@@ -313,7 +353,7 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
             prompt: "How does most voting happen in Hawaii?",
             options: [
               "In person only",
-              "By mail — a ballot is sent to every registered voter",
+              "By mail: a ballot is sent to every registered voter",
               "Online",
               "By telephone",
             ],
