@@ -72,3 +72,17 @@ pnpm test        # Vitest — unit + the isolation suite
 This repo follows the WitUS ecosystem rules. Read [CLAUDE.md](CLAUDE.md) and
 [STYLE_GUIDE.md](STYLE_GUIDE.md) before contributing — every change starts on a new
 `type/short-slug` branch off `main`, and **BAM merges** (never merge to `main` yourself).
+
+**Keep the docs current — in the same change, not "later."** When a set of tasks ships
+user- or operator-facing behavior, update the docs that describe it before wrapping up:
+
+- [README.md](README.md) — feature list, setup, and the seed/migration commands.
+- [OPERATING.md](OPERATING.md) — the operator runbook (migrate/seed order, how-to-run).
+- [src/lib/help-articles.ts](src/lib/help-articles.ts) — the in-app Help Center (the
+  "how to use the app" articles learners and operators read in-product).
+- [src/lib/roadmap.ts](src/lib/roadmap.ts) — move the entry to Shipped so the in-app
+  roadmap reflects reality.
+
+A feature isn't "done" until its README mention, usage/help note, and roadmap entry match
+what shipped. (A local `Stop` hook in `.claude/settings.json` nudges when `src/` code changed
+but these files didn't — a reminder, not a gate.)
