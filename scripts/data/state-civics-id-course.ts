@@ -1,4 +1,4 @@
-// Authored "Idaho Civics: How Your State Government Works" — the Idaho entry in the
+// Authored "Idaho Civics: How Your State Government Works", the Idaho entry in the
 // per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Idaho's version.
 //
@@ -19,7 +19,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_ID_COURSE: AuthoredCourse = {
   title: "Idaho Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Idaho governs itself — and how you take part where you live. You'll learn Idaho's Constitution of 1890; its plural executive; its part-time citizen Legislature of 35 senators and 70 representatives, elected from 35 shared districts (each district elects one senator and two representatives); its citizen initiative and referendum, which come with a demanding, geographically distributed signature requirement; its nonpartisan elected judiciary; and its 44 counties. Time-sensitive facts are flagged, pointing to sos.idaho.gov. Cited to Idaho's own official sources (legislature.idaho.gov, sos.idaho.gov, isc.idaho.gov).",
+    "A practical, non-partisan guide to how the state of Idaho governs itself, and how you take part where you live. You'll learn Idaho's Constitution of 1890; its plural executive; its part-time citizen Legislature of 35 senators and 70 representatives, elected from 35 shared districts (each district elects one senator and two representatives); its citizen initiative and referendum, which come with a demanding, geographically distributed signature requirement; its nonpartisan elected judiciary; and its 44 counties. Time-sensitive facts are flagged, pointing to sos.idaho.gov. Cited to Idaho's own official sources (legislature.idaho.gov, sos.idaho.gov, isc.idaho.gov).",
   lessons: [
     // ── Section 1: Constitution + shared districts ───────────────────────
     {
@@ -31,13 +31,13 @@ export const STATE_CIVICS_ID_COURSE: AuthoredCourse = {
 **A distinctive district design.** Idaho shares an unusual structure with Arizona, Washington, New Mexico, and New Jersey: it uses **35 legislative districts, and EACH district elects ONE senator and TWO representatives** (Idaho Legislature, n.d.). So:
 - The **Senate has 35 members** (one per district), and
 - The **House of Representatives has 70 members** (two per district).
-- Your **senator and your two representatives all represent the SAME district** — so you have **three legislators** sharing your exact geographic area, elected together. It's a design you don't see in most states (where House and Senate districts are drawn separately).
+- Your **senator and your two representatives all represent the SAME district**, so you have **three legislators** sharing your exact geographic area, elected together. It's a design you don't see in most states (where House and Senate districts are drawn separately).
 
 Idaho's Legislature is **part-time**, meeting in annual sessions of no fixed length (typically a few months in the winter/spring), so legislators are **citizen lawmakers** with regular jobs back home.
 
-This is a through-line: Idaho keeps government **close to citizens** — through a part-time legislature, shared local districts, and (as you'll see) strong initiative rights.
+This is a through-line: Idaho keeps government **close to citizens**, through a part-time legislature, shared local districts, and (as you'll see) strong initiative rights.
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Idaho's own government (legislature.idaho.gov, sos.idaho.gov, isc.idaho.gov) is the authoritative source.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Idaho's own government ([legislature.idaho.gov](https://legislature.idaho.gov), [sos.idaho.gov](https://sos.idaho.gov), [isc.idaho.gov](https://isc.idaho.gov)) is the authoritative source.
 
 **Check yourself.** How many legislators represent your Idaho district, and how are its 35 districts structured?
 
@@ -51,13 +51,27 @@ This is a through-line: Idaho keeps government **close to citizens** — through
       slug: "id-executive",
       title: "2 · Idaho's plural executive",
       section: "The Three Branches",
-      body: `**Executive — a plural executive.** Idaho voters elect several statewide officials (Idaho Secretary of State, n.d.):
-- The **Governor** and **Lieutenant Governor** (elected **separately** — they can be from different parties),
+      recallContent: [
+        {
+          prompt:
+            "How many legislative districts does Idaho have, and how many legislators does each elect?",
+          answer:
+            "35 districts, and each elects one senator and two representatives (35 senators and 70 representatives in total).",
+        },
+        {
+          prompt:
+            "Which constitution governs Idaho, and what makes its Legislature a citizen legislature?",
+          answer:
+            "The Constitution of 1890. The Legislature is part-time, meeting in short annual sessions, so legislators keep regular jobs back home.",
+        },
+      ],
+      body: `**Executive: a plural executive.** Idaho voters elect several statewide officials (Idaho Secretary of State, n.d.):
+- The **Governor** and **Lieutenant Governor** (elected **separately**, they can be from different parties),
 - the **Secretary of State** (who runs elections),
 - the **Attorney General**,
 - the **State Controller** (the state's accountant),
 - the **State Treasurer**, and
-- the **Superintendent of Public Instruction** (leading K–12 education).
+- the **Superintendent of Public Instruction** (leading K-12 education).
 Because they're elected on their own, these officials answer **directly to voters**, and Idaho can end up with statewide officers of different parties who check one another. Statewide officers serve **4-year terms.**
 
 The **Legislative** branch (the part-time Legislature from Lesson 1) and the **Judicial** branch (nonpartisan elected, covered later) complete the three.
@@ -74,21 +88,35 @@ The **Legislative** branch (the part-time Legislature from Lesson 1) and the **J
     // ── Section 3: Direct democracy + how a bill becomes law ─────────────
     {
       slug: "id-initiative",
-      title: "3 · The citizen initiative — powerful, but hard to qualify",
+      title: "3 · The citizen initiative: powerful, but hard to qualify",
       section: "Making Law",
-      body: `Idaho gives citizens the **initiative and referendum** — but qualifying a measure for the ballot is deliberately **demanding** (Idaho Secretary of State, n.d.).
+      recallContent: [
+        {
+          prompt:
+            "Are Idaho's Governor and Lieutenant Governor elected together or separately?",
+          answer:
+            "Separately, so they can be from different parties. Idaho has a plural executive with several independently elected statewide officers.",
+        },
+        {
+          prompt:
+            "How can the Idaho Legislature override a Governor's veto?",
+          answer:
+            "By a two-thirds vote of each chamber. The Governor also holds a line-item veto on appropriations.",
+        },
+      ],
+      body: `Idaho gives citizens the **initiative and referendum**, but qualifying a measure for the ballot is deliberately **demanding** (Idaho Secretary of State, n.d.).
 
 **The tools:**
-- **Initiative** — gather signatures to put a **statute** on the ballot (Idaho's initiative is for **laws**, not constitutional amendments — amendments come from the Legislature).
-- **Referendum** — voters can **reject** a law the Legislature passed.
+- **Initiative**: gather signatures to put a **statute** on the ballot (Idaho's initiative is for **laws**, not constitutional amendments; amendments come from the Legislature).
+- **Referendum**: voters can **reject** a law the Legislature passed.
 
-**The catch — geographic distribution.** ⚠️ Idaho requires initiative signatures to be gathered **not just in large numbers, but spread across the state** — a set percentage of voters in a large share of Idaho's **legislative districts** (Idaho Secretary of State, n.d.). This **distribution requirement** means a measure can't qualify on the strength of the two or three biggest cities alone; organizers must build **statewide** support. Idaho has **debated making these thresholds even harder**, and such changes have been litigated — so confirm the **current** signature rules at sos.idaho.gov. The effect: Idaho's initiative is a **real but hard-to-use** citizen power.
+**The catch: geographic distribution.** ⚠️ Idaho requires initiative signatures to be gathered **not just in large numbers, but spread across the state**, a set percentage of voters in a large share of Idaho's **legislative districts** (Idaho Secretary of State, n.d.). This **distribution requirement** means a measure can't qualify on the strength of the two or three biggest cities alone; organizers must build **statewide** support. Idaho has **debated making these thresholds even harder**, and such changes have been litigated, so confirm the **current** signature rules at [sos.idaho.gov](https://sos.idaho.gov). The effect: Idaho's initiative is a **real but hard-to-use** citizen power.
 
 **How a bill becomes law** (Idaho Legislature, n.d.):
 1. **Introduction** in the House or Senate during the annual session; **committee** review; **floor votes** in both chambers.
-2. **Governor** — sign, veto (two-thirds override), or line-item veto appropriations.
+2. **Governor**: sign, veto (two-thirds override), or line-item veto appropriations.
 
-The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen initiative is a genuine but demanding backup** — one that requires **statewide** organizing, by design.
+The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen initiative is a genuine but demanding backup**, one that requires **statewide** organizing, by design.
 
 **Check yourself.** What can Idaho citizens put on the ballot by initiative, and why is qualifying one difficult?
 
@@ -102,21 +130,34 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
       slug: "id-courts-involved",
       title: "4 · Judges, local government, and how to take part",
       section: "Get Involved",
-      body: `**How Idaho picks its judges.** Idaho **elects** its judges on a **NONPARTISAN** ballot — no party label appears next to their names (Idaho Supreme Court, n.d.). The **Idaho Supreme Court** has **5 justices**, elected statewide to **6-year terms**; Court of Appeals and District judges are likewise elected nonpartisan. When a seat opens mid-term, the **Governor appoints** a replacement from an **Idaho Judicial Council** list, who then stands for election.
+      recallContent: [
+        {
+          prompt:
+            "What kind of measure can Idaho citizens put on the ballot by initiative?",
+          answer:
+            "A statute (a law), not a constitutional amendment. Amendments come from the Legislature, and a referendum lets voters reject a law already passed.",
+        },
+        {
+          prompt: "Why is qualifying an Idaho initiative hard?",
+          answer:
+            "The geographic distribution requirement: signatures must be spread across a large share of legislative districts, so a measure needs statewide support, not just the biggest cities.",
+        },
+      ],
+      body: `**How Idaho picks its judges.** Idaho **elects** its judges on a **NONPARTISAN** ballot, no party label appears next to their names (Idaho Supreme Court, n.d.). The **Idaho Supreme Court** has **5 justices**, elected statewide to **6-year terms**; Court of Appeals and District judges are likewise elected nonpartisan. When a seat opens mid-term, the **Governor appoints** a replacement from an **Idaho Judicial Council** list, who then stands for election.
 
 **Local government** (Idaho Legislature, n.d.):
 - **44 counties**, governed by elected **boards of county commissioners**, plus other elected county officials (sheriff, clerk, assessor, treasurer, prosecutor).
 - **Cities** provide municipal services; **highway districts, school districts, and other special districts** round out local government (special districts are common across Idaho's large rural areas).
 - Idaho is also home to several **sovereign tribal nations** (such as the Nez Perce, Coeur d'Alene, and Shoshone-Bannock), governments with their own laws and courts.
 
-**Voting.** ⚠️ **Time-sensitive:** Idaho offers **Election-Day (same-day) registration**, absentee voting, and requires **ID** (with alternatives). Rules are administered by **county clerks** and can change — confirm the **current** details at **sos.idaho.gov** before you vote.
+**Voting.** ⚠️ **Time-sensitive:** Idaho offers **Election-Day (same-day) registration**, absentee voting, and requires **ID** (with alternatives). Rules are administered by **county clerks** and can change, confirm the **current** details at **[sos.idaho.gov](https://sos.idaho.gov)** before you vote.
 
 **How to take part:**
-- **Register and vote** — even on Election Day; check your status at sos.idaho.gov.
-- **Organize statewide for an initiative** — remember the distribution rule; a successful Idaho initiative needs support **across** the state.
+- **Register and vote**, even on Election Day; check your status at [sos.idaho.gov](https://sos.idaho.gov).
+- **Organize statewide for an initiative**, remember the distribution rule; a successful Idaho initiative needs support **across** the state.
 - **Show up locally.** County commissions, city councils, and school and highway district boards hold public meetings.
-- **Contact your three legislators** — you have one senator and two representatives from your shared district.
-- **Run** — school board, city council, and county commission are reachable local starting points.
+- **Contact your three legislators**, you have one senator and two representatives from your shared district.
+- **Run**: school board, city council, and county commission are reachable local starting points.
 
 **Check yourself.** How are Idaho's judges chosen, and how many legislators can you contact from your district?
 
@@ -140,7 +181,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             answer: "two",
             accept: ["2"],
             explanation:
-              "Each district elects 1 senator and 2 representatives, for 35 senators and 70 representatives — a shared-district design.",
+              "Each district elects 1 senator and 2 representatives, for 35 senators and 70 representatives, a shared-district design.",
           },
           {
             prompt:
@@ -159,7 +200,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
           },
           {
             prompt:
-              "Idaho initiative signatures must be gathered across many legislative districts — a ___ requirement.",
+              "Idaho initiative signatures must be gathered across many legislative districts, a ___ requirement.",
             answer: "distribution",
             accept: ["geographic distribution", "geographic"],
             explanation:
@@ -202,7 +243,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             ],
             correctIndex: 1,
             explanation:
-              "Each of Idaho's 35 districts elects one senator and two representatives — 35 senators, 70 representatives.",
+              "Each of Idaho's 35 districts elects one senator and two representatives: 35 senators, 70 representatives.",
             sourceLessonSlug: "id-constitution-districts",
           },
           {
@@ -222,7 +263,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             prompt: "Do Idaho's Governor and Lieutenant Governor run together?",
             options: [
               "Yes, on a joint ticket",
-              "No — they are elected separately and can be from different parties",
+              "No, they are elected separately and can be from different parties",
               "The Legislature picks both",
               "There is no Lieutenant Governor",
             ],
@@ -237,7 +278,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
               "A constitutional amendment",
               "A statute (a law)",
               "A new Governor",
-              "Nothing — Idaho has no initiative",
+              "Nothing: Idaho has no initiative",
             ],
             correctIndex: 1,
             explanation:
@@ -287,7 +328,7 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             prompt: "How many legislators represent your Idaho district?",
             options: [
               "One",
-              "Three — one senator and two representatives",
+              "Three: one senator and two representatives",
               "Five",
               "None; they are statewide",
             ],
@@ -308,13 +349,13 @@ The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen 
             prompt: "Why does this course tell you to VERIFY Idaho's initiative and voting rules?",
             options: [
               "Because Idaho has no elections office",
-              "Because signature-distribution thresholds have been debated and litigated and voting is run by county clerks — confirm at sos.idaho.gov",
+              "Because signature-distribution thresholds have been debated and litigated and voting is run by county clerks, confirm at [sos.idaho.gov](https://sos.idaho.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
             correctIndex: 1,
             explanation:
-              "Idaho's initiative thresholds are contested and voting is administered locally, so sos.idaho.gov is the authoritative source.",
+              "Idaho's initiative thresholds are contested and voting is administered locally, so [sos.idaho.gov](https://sos.idaho.gov) is the authoritative source.",
             sourceLessonSlug: "id-courts-involved",
           },
         ],
