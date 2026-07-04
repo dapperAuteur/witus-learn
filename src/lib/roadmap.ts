@@ -22,6 +22,11 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   <lesson>\`, \`witus/uploads/…\`, \`witus/images/…\`) via a \`public_id\` instead of random ids, so assets
   are findable. Upload failures now surface **Cloudinary's actual error** instead of a generic
   "Upload failed" (config-fix guidance in user-task 43).
+- 🔧 **iOS audio playback fix** (\`fix/ios-audio-playback\`) — recorded lessons are WebM/Opus, which
+  **iPhone/iPad Safari can't decode** (errored on iOS 16; played fine on Android). The player now
+  requests an **MP3 rendition** from Cloudinary (\`f_mp3\`, cached after first play) for audio, so
+  lessons play on every device — and the remaining-time readout is now accurate (WebM lacked duration
+  metadata). \`playableAudioSrc()\` in \`src/lib/media.ts\`, unit-tested.
 - 🔧 **Change course instructor** (\`feat/change-course-instructor\`) — an admin (owner / brand_admin)
   can reassign a course to a different instructor from **Course settings** (validated + slug-collision
   guarded, ensures the new instructor has a username; no migration). \`/teach\` now shows admins
