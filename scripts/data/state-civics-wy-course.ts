@@ -1,4 +1,4 @@
-// Authored "Wyoming Civics: How Your State Government Works" — the Wyoming entry in the
+// Authored "Wyoming Civics: How Your State Government Works", the Wyoming entry in the
 // per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Wyoming's version.
 //
@@ -18,24 +18,24 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_WY_COURSE: AuthoredCourse = {
   title: "Wyoming Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Wyoming governs itself — and how you take part where you live. Wyoming is 'The Equality State' for a landmark reason: it was the FIRST place in America to grant women the right to vote (1869), it elected the nation's first woman governor, and it entered the Union in 1890 refusing to give up women's suffrage. You'll learn Wyoming's Constitution of 1889, its plural executive (with NO lieutenant governor), its part-time Legislature of 31 senators and 62 representatives, its merit-selection judiciary, its lack of a state income tax, and its 23 counties. Time-sensitive facts are flagged, pointing to sos.wyo.gov. Cited to Wyoming's own official sources (wyoleg.gov, sos.wyo.gov, courts.state.wy.us).",
+    "A practical, non-partisan guide to how the state of Wyoming governs itself, and how you take part where you live. Wyoming is 'The Equality State' for a landmark reason: it was the FIRST place in America to grant women the right to vote (1869), it elected the nation's first woman governor, and it entered the Union in 1890 refusing to give up women's suffrage. You'll learn Wyoming's Constitution of 1889, its plural executive (with NO lieutenant governor), its part-time Legislature of 31 senators and 62 representatives, its merit-selection judiciary, its lack of a state income tax, and its 23 counties. Time-sensitive facts are flagged, pointing to sos.wyo.gov. Cited to Wyoming's own official sources (wyoleg.gov, sos.wyo.gov, courts.state.wy.us).",
   lessons: [
     // ── Section 1: The Equality State ────────────────────────────────────
     {
       slug: "wy-equality-state",
       title: "1 · 'The Equality State': first to grant women the vote",
       section: "What Makes Wyoming Unique",
-      body: `Wyoming's nickname — **"The Equality State"** — commemorates a genuine national first: Wyoming was the **FIRST place in America to grant women the right to vote** (Wyoming Secretary of State, n.d.).
+      body: `Wyoming's nickname, **"The Equality State"**, commemorates a genuine national first: Wyoming was the **FIRST place in America to grant women the right to vote** (Wyoming Secretary of State, n.d.).
 
-**The firsts.** As a **territory in 1869**, Wyoming gave **women the right to vote and hold office** — decades before the 19th Amendment (1920) extended women's suffrage nationwide. Wyoming's commitment ran deep (Wyoming Secretary of State, n.d.):
-- When Wyoming sought **statehood in 1890**, Congress pressured it to drop women's suffrage; Wyoming famously refused, reportedly telegraphing that it would **"remain out of the Union a hundred years rather than come in without the women."** It entered as the **44th state on July 10, 1890 — the first state with women's suffrage in its constitution.**
+**The firsts.** As a **territory in 1869**, Wyoming gave **women the right to vote and hold office**, decades before the 19th Amendment (1920) extended women's suffrage nationwide. Wyoming's commitment ran deep (Wyoming Secretary of State, n.d.):
+- When Wyoming sought **statehood in 1890**, Congress pressured it to drop women's suffrage; Wyoming famously refused, reportedly telegraphing that it would **"remain out of the Union a hundred years rather than come in without the women."** It entered as the **44th state on July 10, 1890, the first state with women's suffrage in its constitution.**
 - Wyoming also produced the nation's **first female governor**, **Nellie Tayloe Ross** (1925), and early women jurors and justices of the peace.
 
-Wyoming governs under its **Constitution of 1889**, whose very first article proclaims the **equal political rights of all citizens, including women** — the source of the nickname. Wyoming is also the **least populous state**, which shapes its **accessible, close-knit** civic culture.
+Wyoming governs under its **Constitution of 1889**, whose very first article proclaims the **equal political rights of all citizens, including women**, the source of the nickname. Wyoming is also the **least populous state**, which shapes its **accessible, close-knit** civic culture.
 
 This is the through-line: Wyoming's civic identity is built around **equal political rights**, established at its founding.
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Wyoming's own government (wyoleg.gov, sos.wyo.gov, courts.state.wy.us) is the authoritative source.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Wyoming's own government ([wyoleg.gov](https://wyoleg.gov), [sos.wyo.gov](https://sos.wyo.gov), [courts.state.wy.us](https://courts.state.wy.us)) is the authoritative source.
 
 **Check yourself.** Why is Wyoming called "The Equality State," and what did it refuse to give up to gain statehood?
 
@@ -47,17 +47,17 @@ This is the through-line: Wyoming's civic identity is built around **equal polit
     // ── Section 2: The executive (no Lt. Governor) ───────────────────────
     {
       slug: "wy-executive",
-      title: "2 · Wyoming's executive — five elected officers, and no Lieutenant Governor",
+      title: "2 · Wyoming's executive: five elected officers, and no Lieutenant Governor",
       section: "The Three Branches",
-      body: `**A plural executive with a distinctive gap.** Wyoming voters elect **five** statewide officials — but ⚠️ **Wyoming has NO Lieutenant Governor** (Wyoming Secretary of State, n.d.). The five elected statewide executives are:
-1. **Governor** — the chief executive.
-2. **Secretary of State** — who runs elections **and is first in line to succeed the Governor** (filling the role a lieutenant governor plays elsewhere).
+      body: `**A plural executive with a distinctive gap.** Wyoming voters elect **five** statewide officials, but ⚠️ **Wyoming has NO Lieutenant Governor** (Wyoming Secretary of State, n.d.). The five elected statewide executives are:
+1. **Governor**: the chief executive.
+2. **Secretary of State**, who runs elections **and is first in line to succeed the Governor** (filling the role a lieutenant governor plays elsewhere).
 3. **State Auditor.**
 4. **State Treasurer.**
-5. **Superintendent of Public Instruction** — leading K–12 education.
-These five, elected separately to **4-year terms**, together also sit as important **state boards** (for example, the State Loan and Investment Board and the Board of Land Commissioners) — so in Wyoming the elected executives collectively govern much of state administration.
+5. **Superintendent of Public Instruction**: leading K-12 education.
+These five, elected separately to **4-year terms**, together also sit as important **state boards** (for example, the State Loan and Investment Board and the Board of Land Commissioners), so in Wyoming the elected executives collectively govern much of state administration.
 
-Because there's **no Lieutenant Governor**, the **Secretary of State** is Wyoming's designated successor to the Governor — a good example of how states solve succession differently (compare Oregon, which also uses its Secretary of State, versus states with a Lieutenant Governor).
+Because there's **no Lieutenant Governor**, the **Secretary of State** is Wyoming's designated successor to the Governor, a good example of how states solve succession differently (compare Oregon, which also uses its Secretary of State, versus states with a Lieutenant Governor).
 
 The **Legislative** and **Judicial** branches complete the three (next lessons).
 
@@ -65,6 +65,18 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 
 ## Sources
 - Wyoming Secretary of State. (n.d.). *Statewide elected officials; succession*. sos.wyo.gov. https://sos.wyo.gov/`,
+      recallContent: [
+        {
+          prompt: "Why is Wyoming called 'The Equality State'?",
+          answer:
+            "It was the first place in America to grant women the right to vote, as a territory in 1869, and its 1889 Constitution proclaims equal political rights.",
+        },
+        {
+          prompt: "What did Wyoming refuse to give up to gain statehood in 1890?",
+          answer:
+            "Women's suffrage. It entered the Union in 1890 as the first state with women's suffrage in its constitution.",
+        },
+      ],
     },
 
     // ── Section 3: The Legislature + the courts ──────────────────────────
@@ -72,13 +84,13 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
       slug: "wy-legislature-courts",
       title: "3 · The part-time Legislature and how Wyoming picks its judges",
       section: "The Three Branches",
-      body: `**Legislative — the Wyoming Legislature.** A part-time **citizen legislature** meeting in Cheyenne (Wyoming Legislature, n.d.):
-- **House of Representatives — 62 members** (2-year terms), and **Senate — 31 senators** (4-year terms) — a small legislature for the least-populous state.
-- It meets in **short sessions**: a longer **general session** in odd years and a shorter **budget session** in even years (roughly 40 and 20 days), so legislators are part-time citizen lawmakers — ranchers, business owners, and retirees who often know their constituents personally.
+      body: `**Legislative: the Wyoming Legislature.** A part-time **citizen legislature** meeting in Cheyenne (Wyoming Legislature, n.d.):
+- **House of Representatives: 62 members** (2-year terms), and **Senate: 31 senators** (4-year terms), a small legislature for the least-populous state.
+- It meets in **short sessions**: a longer **general session** in odd years and a shorter **budget session** in even years (roughly 40 and 20 days), so legislators are part-time citizen lawmakers: ranchers, business owners, and retirees who often know their constituents personally.
 
-**No state income tax.** Wyoming levies **no state personal income tax**, funding government heavily through **mineral and energy** revenues (coal, oil, gas) and sales/property taxes — so its budget rises and falls with **energy markets.**
+**No state income tax.** Wyoming levies **no state personal income tax**, funding government heavily through **mineral and energy** revenues (coal, oil, gas) and sales/property taxes, so its budget rises and falls with **energy markets.**
 
-**Judicial — merit selection plus retention.** Wyoming uses the **"Missouri Plan"** (Wyoming Judicial Branch, n.d.):
+**Judicial: merit selection plus retention.** Wyoming uses the **"Missouri Plan"** (Wyoming Judicial Branch, n.d.):
 1. A **Judicial Nominating Commission** sends the Governor a list of nominees.
 2. The **Governor appoints** a judge from that list.
 3. The judge later faces voters in a **nonpartisan yes/no retention election.** The **Wyoming Supreme Court** has **5 justices.**
@@ -90,6 +102,18 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 ## Sources
 - Wyoming Legislature. (n.d.). *The Legislature; sessions; the state tax structure*. wyoleg.gov. https://www.wyoleg.gov/
 - Wyoming Judicial Branch. (n.d.). *Judicial selection: merit selection and retention*. courts.state.wy.us. https://www.courts.state.wy.us/`,
+      recallContent: [
+        {
+          prompt: "How many statewide executives does Wyoming elect, and which office is missing?",
+          answer:
+            "Five (Governor, Secretary of State, State Auditor, State Treasurer, and Superintendent of Public Instruction). Wyoming has no Lieutenant Governor.",
+        },
+        {
+          prompt: "Who is first in line to succeed the Governor of Wyoming?",
+          answer:
+            "The Secretary of State, who also runs elections and fills the succession role a lieutenant governor plays elsewhere.",
+        },
+      ],
     },
 
     // ── Section 4: Lawmaking, local government, getting involved ─────────
@@ -99,28 +123,40 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
       section: "Get Involved",
       body: `**How a bill becomes law** (Wyoming Legislature, n.d.):
 1. **Introduction** during the general (odd year) or budget (even year) session; **committee** review; **floor votes** in both chambers.
-2. **Governor** — sign, veto (two-thirds override), or line-item veto appropriations.
+2. **Governor**: sign, veto (two-thirds override), or line-item veto appropriations.
 
-**Direct democracy.** Wyoming citizens **do** have the **initiative and referendum**, but with comparatively **high signature and distribution requirements**, so statewide measures reach the ballot **less often** than in states like South Dakota or Colorado (Wyoming Secretary of State, n.d.). Constitutional **amendments** are proposed by the Legislature and ratified by the **voters** — and recall New Mexico's contrast: Wyoming's founding article is about **equal rights.**
+**Direct democracy.** Wyoming citizens **do** have the **initiative and referendum**, but with comparatively **high signature and distribution requirements**, so statewide measures reach the ballot **less often** than in states like South Dakota or Colorado (Wyoming Secretary of State, n.d.). Constitutional **amendments** are proposed by the Legislature and ratified by the **voters**, and recall New Mexico's contrast: Wyoming's founding article is about **equal rights.**
 
 **Local government** (Wyoming Legislature, n.d.):
 - **23 counties**, governed by elected **boards of county commissioners**, plus other elected county officials.
 - **Cities and towns** provide municipal services; **special districts** and **school districts** round things out.
 - Wyoming is also home to the **Wind River Reservation** (the Eastern Shoshone and Northern Arapaho tribes), sovereign governments within the state.
 
-**Voting.** ⚠️ **Time-sensitive:** Wyoming offers **Election-Day registration**, absentee voting, and requires **ID.** Rules are administered by **county clerks** and can change — confirm the **current** details at **sos.wyo.gov** before you vote.
+**Voting.** ⚠️ **Time-sensitive:** Wyoming offers **Election-Day registration**, absentee voting, and requires **ID.** Rules are administered by **county clerks** and can change: confirm the **current** details at **[sos.wyo.gov](https://sos.wyo.gov)** before you vote.
 
 **How to take part:**
-- **Register and vote** — even on Election Day; bring ID; check your status at sos.wyo.gov.
+- **Register and vote**: even on Election Day; bring ID; check your status at [sos.wyo.gov](https://sos.wyo.gov).
 - **Show up locally.** In a small state, county commissions, city/town councils, and school boards are especially accessible.
-- **Contact your legislators** in Cheyenne — you have one Representative and one Senator; sessions are short, so timing matters.
-- **Run** — school board, town council, and county commission are reachable local starting points.
+- **Contact your legislators** in Cheyenne: you have one Representative and one Senator; sessions are short, so timing matters.
+- **Run**: school board, town council, and county commission are reachable local starting points.
 
 **Check yourself.** Does Wyoming have a citizen initiative, and why do fewer statewide measures reach its ballot?
 
 ## Sources
 - Wyoming Legislature. (n.d.). *How a bill becomes law; local government*. wyoleg.gov. https://www.wyoleg.gov/
 - Wyoming Secretary of State. (n.d.). *Initiative and referendum; registering and voting*. sos.wyo.gov. https://sos.wyo.gov/`,
+      recallContent: [
+        {
+          prompt: "How large is Wyoming's Legislature, and how often does it meet?",
+          answer:
+            "A 62-member House (2-year terms) and a 31-member Senate (4-year terms). It is a part-time citizen legislature meeting in short sessions: a longer general session in odd years and a shorter budget session in even years.",
+        },
+        {
+          prompt: "How does Wyoming choose its Supreme Court justices, and how does it fund government?",
+          answer:
+            "By merit selection (the Missouri Plan): a nominating commission sends the Governor a list, the Governor appoints, and the judge later faces a nonpartisan retention vote. Wyoming has no state income tax and funds government heavily through mineral and energy revenue plus sales and property taxes.",
+        },
+      ],
     },
 
     // ── Section 5: Practice (fill in the blanks) ─────────────────────────
@@ -153,7 +189,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
             answer: "State",
             accept: ["state"],
             explanation:
-              "Wyoming's elected Secretary of State runs elections and succeeds the Governor — there's no lieutenant governor.",
+              "Wyoming's elected Secretary of State runs elections and succeeds the Governor. There's no lieutenant governor.",
           },
           {
             prompt:
@@ -168,7 +204,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
             answer: "62",
             accept: ["sixty-two"],
             explanation:
-              "The Wyoming House has 62 members (2-year terms) and the Senate has 31 (4-year terms) — a small legislature.",
+              "The Wyoming House has 62 members (2-year terms) and the Senate has 31 (4-year terms), a small legislature.",
           },
           {
             prompt:
@@ -251,7 +287,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
             ],
             correctIndex: 0,
             explanation:
-              "The Wyoming House has 62 members and the Senate has 31 — small, fitting the least-populous state.",
+              "The Wyoming House has 62 members and the Senate has 31, small, fitting the least-populous state.",
             sourceLessonSlug: "wy-legislature-courts",
           },
           {
@@ -305,7 +341,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
             prompt: "Why does this course tell you to VERIFY Wyoming's voting rules?",
             options: [
               "Because Wyoming has no elections office",
-              "Because registration and ID rules are administered by county clerks and can change — confirm at sos.wyo.gov",
+              "Because registration and ID rules are administered by county clerks and can change: confirm at [sos.wyo.gov](https://sos.wyo.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
