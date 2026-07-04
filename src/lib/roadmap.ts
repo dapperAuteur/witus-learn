@@ -122,6 +122,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   profile in-app. Builds on the existing certificates system + CYOA branching; generalizes to any
   course family. First consumer is the **Documentarian program** (see Content). Plan:
   \`plans/future/12-documentarian-program.md\`.
+- 🔧 **My Field Log** (\`feat/field-log-schema\`) — a per-user documentation-project workspace for the
+  Documentarian program: projects with story **legs** (sites/nodes of a chain, e.g. cocoa farm → factory
+  → corporate office), a **link-only capture log** + **consent ledger**, **crews** (co-owned projects),
+  and **self-attest + peer-review** assessment against the Trusted Documentation Rubric. This branch ships
+  the **schema** (6 tables, **migration 0025**) + templates-in-code + **access-scoped CRUD API**
+  (\`/api/field-log/*\`). Tenant-scoped; media is **never hosted** (links only); consent stored at the
+  minimum. Logistics (budgets/itineraries) hand off to **RideWitUS**, not built here. Next: the
+  \`/field-log\` UI. Spec: \`plans/future/14-field-kit.md\`.
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".

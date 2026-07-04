@@ -176,6 +176,13 @@
       "when": 1782969337184,
       "tag": "0024_tan_terror",
       "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "7",
+      "when": 1783200501021,
+      "tag": "0025_calm_captain_stacy",
+      "breakpoints": true
     }
   ]
 }
