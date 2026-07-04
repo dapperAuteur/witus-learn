@@ -13,7 +13,16 @@ export interface ProgressLesson {
   recordedAt: string | null;
 }
 
-export function RecordingProgress({ courseId, lessons }: { courseId: string; lessons: ProgressLesson[] }) {
+export function RecordingProgress({
+  courseId,
+  lessons,
+  courseLabel,
+}: {
+  courseId: string;
+  lessons: ProgressLesson[];
+  /** Course name/slug → readable Cloudinary upload names for each lesson's recording. */
+  courseLabel?: string;
+}) {
   const [recorded, setRecorded] = useState<Record<string, boolean>>(() =>
     Object.fromEntries(lessons.map((l) => [l.id, Boolean(l.recordedAt)])),
   );
@@ -69,6 +78,8 @@ export function RecordingProgress({ courseId, lessons }: { courseId: string; les
               <LessonRecorder
                 courseId={courseId}
                 lessonId={l.id}
+                courseLabel={courseLabel}
+                lessonLabel={l.title}
                 onUploaded={() => setRecorded((p) => ({ ...p, [l.id]: true }))}
               />
             </div>

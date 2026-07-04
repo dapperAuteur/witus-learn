@@ -24,16 +24,31 @@ export interface CourseSettings {
   billingInterval: "month" | "year" | null;
   /** Cross-promotion: 0–3 WitUS ecosystem product slugs shown as a "Related tools" card. */
   relatedProducts: string[];
+  /** The instructor (owner) of this course. Only reassignable by an admin (see canAssignInstructor). */
+  instructorId: string;
+}
+
+export interface InstructorOption {
+  userId: string;
+  username: string | null;
+  displayName: string | null;
+}
+
+function instructorLabel(o: InstructorOption): string {
+  return o.displayName || (o.username ? `@${o.username}` : o.userId);
 }
 
 // Edit course settings (PATCH /api/courses/[id]). isFeatured is platform-owner only
-// (the API strips it for non-admins; we only show it when canFeature).
+// (the API strips it for non-admins; we only show it when canFeature). The instructor picker
+// is admin-only (owner / brand_admin) and likewise validated + stripped server-side.
 export function CourseSettingsForm({
   courseId,
   initial,
   canFeature,
   categories = [],
   hasStripe = true,
+  instructors = [],
+  canAssignInstructor = false,
 }: {
   courseId: string;
   initial: CourseSettings;
@@ -42,10 +57,15 @@ export function CourseSettingsForm({
   categories?: string[];
   /** Whether Stripe is configured — when false, paid courses can't be purchased yet. */
   hasStripe?: boolean;
+  /** Eligible instructors for the reassignment picker (admins only). */
+  instructors?: InstructorOption[];
+  /** Whether the viewer may change the course's instructor (owner / brand_admin). */
+  canAssignInstructor?: boolean;
 }) {
   const router = useRouter();
   const [v, setV] = useState<CourseSettings>(initial);
   const [state, setState] = useState<"idle" | "saving" | "saved" | "error">("idle");
+  const [errMsg, setErrMsg] = useState<string | null>(null);
   const [savedSnapshot, setSavedSnapshot] = useState(() => JSON.stringify(initial));
   const dirty = JSON.stringify(v) !== savedSnapshot;
 
@@ -68,16 +88,36 @@ export function CourseSettingsForm({
   async function save(e: React.FormEvent) {
     e.preventDefault();
     setState("saving");
-    const r = await fetch(`/api/courses/${courseId}`, {
-      method: "PATCH",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(v),
-    });
-    setState(r.ok ? "saved" : "error");
+    setErrMsg(null);
+    let r: Response;
+    try {
+      r = await fetch(`/api/courses/${courseId}`, {
+        method: "PATCH",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(v),
+      });
+    } catch {
+      setState("error");
+      setErrMsg("Network error — check your connection and try again.");
+      return;
+    }
     if (r.ok) {
+      setState("saved");
       setSavedSnapshot(JSON.stringify(v)); // clears the unsaved-changes warning
       router.refresh();
+      return;
     }
+    // Surface WHY it didn't save — a vague "couldn't save" reads as "changes didn't persist".
+    setState("error");
+    const serverMsg = await r
+      .json()
+      .then((d: { error?: string }) => d?.error)
+      .catch(() => null);
+    setErrMsg(
+      r.status === 403
+        ? "You don't have permission to edit this course — it's owned by another instructor. Ask an admin to reassign it to you (Course settings → Instructor)."
+        : serverMsg || `Could not save (error ${r.status}).`,
+    );
   }
 
   const field = "min-h-11 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900";
@@ -123,6 +163,29 @@ export function CourseSettingsForm({
           </select>
         </div>
       </div>
+
+      {canAssignInstructor ? (
+        <div>
+          <label className="text-sm font-medium" htmlFor="cs-instructor">Instructor (owner of this course)</label>
+          <select
+            id="cs-instructor"
+            value={v.instructorId}
+            onChange={(e) => set("instructorId", e.target.value)}
+            className={field}
+          >
+            {instructors.some((o) => o.userId === v.instructorId) ? null : (
+              <option value={v.instructorId}>Current instructor (unlisted — {v.instructorId})</option>
+            )}
+            {instructors.map((o) => (
+              <option key={o.userId} value={o.userId}>{instructorLabel(o)}</option>
+            ))}
+          </select>
+          <p className="mt-1 text-xs text-neutral-500">
+            Reassigns who owns, edits, and records this course. It moves to their dashboard and its
+            public URL changes to <code>/their-username/…</code>. You keep access as an admin.
+          </p>
+        </div>
+      ) : null}
 
       <fieldset className="rounded-md border border-neutral-200 p-3 dark:border-neutral-800">
         <legend className="px-1 text-sm font-medium">Related WitUS tools (cross-promotion)</legend>
@@ -247,7 +310,7 @@ export function CourseSettingsForm({
         </button>
         <span role="status" aria-live="polite" className="text-sm">
           {state === "saved" ? <span className="text-green-700 dark:text-green-400">Saved.</span> : null}
-          {state === "error" ? <span className="text-red-600">Could not save.</span> : null}
+          {state === "error" ? <span className="text-red-600">{errMsg ?? "Could not save."}</span> : null}
         </span>
       </div>
     </form>

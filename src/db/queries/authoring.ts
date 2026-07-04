@@ -1,10 +1,12 @@
-import { and, asc, desc, eq, type SQL } from "drizzle-orm";
+import { and, asc, desc, eq, inArray, ne, type SQL } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseModules,
   courses,
   lessons,
+  tenantMemberships,
   userProfiles,
+  users,
   type Course,
   type CourseModule,
   type Lesson,
@@ -394,4 +396,108 @@ export async function listOwnCourses(tenantId: string, instructorId: string): Pr
     .from(courses)
     .where(and(...conds))
     .orderBy(desc(courses.updatedAt));
+}
+
+/** A course plus its instructor's display label — for an owner/admin's /teach view,
+ *  where courses they don't personally own still need to be visible + bylined. */
+export type ManagedCourse = Course & {
+  instructorUsername: string | null;
+  instructorDisplayName: string | null;
+};
+
+/** Every course on this tenant (published + drafts), newest-edited first, with the
+ *  instructor label joined. For an owner/brand_admin so they can reach and reassign a
+ *  course bylined to someone else (or to a stale seed instructor). Tenant-scoped. */
+export async function listAllTenantCourses(tenantId: string): Promise<ManagedCourse[]> {
+  const rows = await db
+    .select({
+      course: courses,
+      username: userProfiles.username,
+      displayName: userProfiles.displayName,
+    })
+    .from(courses)
+    .leftJoin(userProfiles, eq(userProfiles.userId, courses.instructorId))
+    .where(eq(courses.tenantId, tenantId))
+    .orderBy(desc(courses.updatedAt));
+  return rows.map((r) => ({
+    ...r.course,
+    instructorUsername: r.username,
+    instructorDisplayName: r.displayName,
+  }));
+}
+
+/** Someone eligible to be assigned as a course's instructor. */
+export interface TenantInstructor {
+  userId: string;
+  username: string | null;
+  displayName: string | null;
+}
+
+/** Everyone who can instruct on this tenant (role instructor OR brand_admin), joined to
+ *  their profile for a display label — the source list for the "change instructor" picker.
+ *  Unlike listInstructors (published-course authors only) this includes instructors with no
+ *  course yet, so you can hand a course to a brand-new instructor. Tenant-scoped. */
+export async function listTenantInstructors(tenantId: string): Promise<TenantInstructor[]> {
+  return db
+    .select({
+      userId: tenantMemberships.userId,
+      username: userProfiles.username,
+      displayName: userProfiles.displayName,
+    })
+    .from(tenantMemberships)
+    .leftJoin(userProfiles, eq(userProfiles.userId, tenantMemberships.userId))
+    .where(
+      and(
+        eq(tenantMemberships.tenantId, tenantId),
+        inArray(tenantMemberships.role, ["instructor", "brand_admin"]),
+      ),
+    )
+    .orderBy(asc(userProfiles.displayName));
+}
+
+/** Is this user an instructor/brand_admin member of the tenant? (Gate for reassignment —
+ *  a course can only be handed to someone allowed to teach here.) */
+export async function isTenantInstructorMember(tenantId: string, userId: string): Promise<boolean> {
+  const rows = await db
+    .select({ role: tenantMemberships.role })
+    .from(tenantMemberships)
+    .where(and(eq(tenantMemberships.tenantId, tenantId), eq(tenantMemberships.userId, userId)))
+    .limit(1);
+  const role = rows[0]?.role;
+  return role === "instructor" || role === "brand_admin";
+}
+
+/** Would assigning `instructorId` to a course with this `slug` collide with another of their
+ *  courses on the (tenant, instructor, slug) unique index? Checked before a reassignment so we
+ *  return a friendly 409 instead of a raw DB constraint error. */
+export async function instructorSlugTaken(
+  tenantId: string,
+  instructorId: string,
+  slug: string,
+  exceptCourseId: string,
+): Promise<boolean> {
+  const rows = await db
+    .select({ id: courses.id })
+    .from(courses)
+    .where(
+      and(
+        eq(courses.tenantId, tenantId),
+        eq(courses.instructorId, instructorId),
+        eq(courses.slug, slug),
+        ne(courses.id, exceptCourseId),
+      ),
+    )
+    .limit(1);
+  return Boolean(rows[0]);
+}
+
+/** Ensure a user (looked up by id) has a username — pretty course URLs need one. Reads their
+ *  email to derive a slug on first assignment. Returns null only if the user has no email row. */
+export async function ensureUsernameById(userId: string): Promise<string | null> {
+  const existing = await getUsername(userId);
+  if (existing) return existing;
+  const rows = await db.select({ email: users.email }).from(users).where(eq(users.id, userId)).limit(1);
+  const email = rows[0]?.email;
+  if (!email) return null;
+  return ensureUsername(userId, email);
 }

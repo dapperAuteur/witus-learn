@@ -13,6 +13,22 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
+- 🔧 **Recording batch** (\`feat/change-course-instructor\`) — the in-app audio recorder is now
+  embedded **inside** the teleprompter overlay (with a lesson picker), so you can read the
+  auto-scrolling script and record at the same time (the overlay used to hide the record buttons).
+  **Pause/Resume** (\`MediaRecorder.pause()\`) lets a course be taped across several sittings, not one
+  take; paused time doesn't count toward duration. **Download to device** saves the take locally as a
+  safety net if upload fails. Uploads get **readable Cloudinary names** (\`witus/recordings/<course>/
+  <lesson>\`, \`witus/uploads/…\`, \`witus/images/…\`) via a \`public_id\` instead of random ids, so assets
+  are findable. Upload failures now surface **Cloudinary's actual error** instead of a generic
+  "Upload failed" (config-fix guidance in user-task 43).
+- 🔧 **Change course instructor** (\`feat/change-course-instructor\`) — an admin (owner / brand_admin)
+  can reassign a course to a different instructor from **Course settings** (validated + slug-collision
+  guarded, ensures the new instructor has a username; no migration). \`/teach\` now shows admins
+  **every** course on the brand with an \`instructor:\` byline, so a course bylined to a stale seed
+  instructor (\`@witus-health\` / \`@trade-faculty\` / \`bam\`) is reachable to fix. Bulk data fix for the
+  existing bylines: \`pnpm reassign:instructor --apply\` (user-task 42). Also the root-cause fix for
+  "changes didn't persist" when the logged-in account didn't match the course's seed instructor id.
 - 🔧 **Teacher Help Center** (\`/help\`) — searchable in-app teacher guide (fuzzy search over
   task-oriented how-tos: courses, lessons, recording, pricing, publishing, live, quick-recall,
   feedback, sharing). Linked from the menu + Teach page. (help-documention.md)

@@ -7,7 +7,7 @@ import {
   savePending,
   type PendingRecording,
 } from "@/lib/recording-store";
-import { formatBytes, MAX_UPLOAD_BYTES, uploadToCloudinary } from "@/lib/cloudinary-upload";
+import { buildPublicId, formatBytes, MAX_UPLOAD_BYTES, uploadToCloudinary } from "@/lib/cloudinary-upload";
 
 // When the CURRENT part nears the cap, finalize it and roll into a new part (a hair under the
 // cap so every part uploads). A long take becomes several ordered parts, played back seamlessly.
@@ -37,14 +37,20 @@ export function LessonRecorder({
   courseId,
   lessonId,
   onUploaded,
+  courseLabel,
+  lessonLabel,
 }: {
   courseId: string;
   lessonId: string;
   onUploaded?: () => void;
+  /** Course + lesson names → a readable Cloudinary public_id (else a random id). */
+  courseLabel?: string;
+  lessonLabel?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [progress, setProgress] = useState(0);
   const [elapsed, setElapsed] = useState(0);
+  const [paused, setPaused] = useState(false); // recording paused (mic still held, no audio captured)
   const [bytes, setBytes] = useState(0);
   const [parts, setParts] = useState(0); // finalized parts so far (multi-part takes)
   const [error, setError] = useState<string | null>(null);
@@ -56,6 +62,8 @@ export function LessonRecorder({
   const partBytesRef = useRef(0); // current part size
   const totalBytesRef = useRef(0); // all parts + current
   const finishingRef = useRef(false); // true = user stopped (final); false = auto rollover
+  const pausedRef = useRef(false); // mirrors `paused` for the interval + duration accounting
+  const elapsedRef = useRef(0); // ACTIVE seconds recorded (excludes paused gaps)
   const startedAtRef = useRef(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -73,11 +81,18 @@ export function LessonRecorder({
       try {
         const urls: string[] = [];
         const n = rec.parts.length;
+        // Readable Cloudinary name (e.g. witus/recordings/faa-part-107/intro[-part2]); falls back
+        // to the lessonId when titles aren't provided, and to a random id if even that's empty.
+        const humanBase = buildPublicId("witus/recordings", courseLabel, lessonLabel ?? lessonId);
         for (let i = 0; i < n; i++) {
           const name = n > 1 ? `lesson-${lessonId}-part${i + 1}.webm` : `lesson-${lessonId}.webm`;
+          const publicId = humanBase ? (n > 1 ? `${humanBase}-part${i + 1}` : humanBase) : undefined;
           // Cumulative progress across parts (each part 0..100 → overall 0..100).
-          const url = await uploadToCloudinary(rec.parts[i], name, (p) =>
-            setProgress(Math.round(((i + p / 100) / n) * 100)),
+          const url = await uploadToCloudinary(
+            rec.parts[i],
+            name,
+            (p) => setProgress(Math.round(((i + p / 100) / n) * 100)),
+            publicId,
           );
           urls.push(url);
         }
@@ -103,7 +118,7 @@ export function LessonRecorder({
         setStatus("error");
       }
     },
-    [courseId, lessonId, onUploaded],
+    [courseId, lessonId, onUploaded, courseLabel, lessonLabel],
   );
 
   // On mount: resume any pending recording (survives reloads). Auto-upload if we're online.
@@ -149,8 +164,11 @@ export function LessonRecorder({
       partBytesRef.current = 0;
       totalBytesRef.current = 0;
       finishingRef.current = false;
+      pausedRef.current = false;
+      elapsedRef.current = 0;
       setParts(0);
       setBytes(0);
+      setPaused(false);
 
       // Persist the growing recording after each part finalizes — nothing is lost on a crash.
       async function persist(): Promise<PendingRecording> {
@@ -159,7 +177,8 @@ export function LessonRecorder({
           courseId,
           parts: [...partsRef.current],
           mime: mime || "audio/webm",
-          durationSeconds: (Date.now() - startedAtRef.current) / 1000,
+          // Active seconds only — a paused stretch adds no audio, so it shouldn't add duration.
+          durationSeconds: elapsedRef.current,
           createdAt: Date.now(),
         };
         await savePending(rec);
@@ -208,7 +227,12 @@ export function LessonRecorder({
       recorderRef.current = mr;
       startedAtRef.current = Date.now();
       setElapsed(0);
-      timerRef.current = setInterval(() => setElapsed((s) => s + 1), 1000);
+      // Tick only while actively recording — a paused stretch doesn't advance the clock.
+      timerRef.current = setInterval(() => {
+        if (pausedRef.current) return;
+        elapsedRef.current += 1;
+        setElapsed(elapsedRef.current);
+      }, 1000);
       mr.start(2000); // emit data every 2s so we can track size + roll parts near the cap
       setStatus("recording");
     } catch {
@@ -217,8 +241,28 @@ export function LessonRecorder({
     }
   }
 
+  // Pause/resume the take (multi-session recording): MediaRecorder.pause() keeps the mic + the
+  // in-progress blob, emits no audio while paused, and stitches seamlessly on resume — so a
+  // course can be recorded across several sittings without stopping/re-uploading.
+  function togglePause() {
+    const mr = recorderRef.current;
+    if (!mr) return;
+    if (mr.state === "recording") {
+      mr.pause();
+      pausedRef.current = true;
+      setPaused(true);
+    } else if (mr.state === "paused") {
+      mr.resume();
+      pausedRef.current = false;
+      setPaused(false);
+    }
+  }
+
   function stopRecording() {
     finishingRef.current = true;
+    pausedRef.current = false;
+    // A paused recorder must resume before it can flush its final data on stop().
+    if (recorderRef.current?.state === "paused") recorderRef.current.resume();
     recorderRef.current?.stop();
   }
 
@@ -234,7 +278,36 @@ export function LessonRecorder({
     setError(null);
   }
 
+  // Save the take to the device as a safety net (especially if the upload fails). Uses the
+  // in-memory blobs, falling back to the IndexedDB copy (survives a reload). Named from the
+  // course + lesson so the file is recognizable.
+  async function downloadRecording() {
+    let blobs = partsRef.current;
+    let mime = blobs[0]?.type;
+    if (!blobs.length) {
+      const rec = await getPending(lessonId);
+      if (rec) {
+        blobs = rec.parts;
+        mime = rec.mime;
+      }
+    }
+    if (!blobs.length) return;
+    const slug = buildPublicId(courseLabel, lessonLabel ?? lessonId)?.replace(/\//g, "-") || `lesson-${lessonId}`;
+    const ext = (mime ?? "").includes("mp4") ? "m4a" : (mime ?? "").includes("ogg") ? "ogg" : "webm";
+    blobs.forEach((blob, i) => {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = blobs.length > 1 ? `${slug}-part${i + 1}.${ext}` : `${slug}.${ext}`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 2000);
+    });
+  }
+
   const btn = "min-h-9 rounded-md border border-neutral-300 px-3 text-sm dark:border-neutral-700";
+  const canDownload = ["local", "uploading", "offline", "uploaded", "error"].includes(status);
 
   return (
     <div className="mt-1 flex flex-wrap items-center gap-2 text-sm">
@@ -244,13 +317,17 @@ export function LessonRecorder({
 
       {status === "recording" ? (
         <>
-          <span className="inline-flex items-center gap-1.5 font-medium text-red-600">
-            <span className="h-2 w-2 animate-pulse rounded-full bg-red-600" /> {fmt(elapsed)}
+          <span className={`inline-flex items-center gap-1.5 font-medium ${paused ? "text-amber-600" : "text-red-600"}`}>
+            <span className={`h-2 w-2 rounded-full ${paused ? "bg-amber-500" : "animate-pulse bg-red-600"}`} />
+            {fmt(elapsed)}{paused ? " · paused" : ""}
           </span>
           <span className="text-xs text-neutral-500">
             {formatBytes(bytes)}
             {parts > 0 ? ` · part ${parts + 1}` : ""}
           </span>
+          <button type="button" onClick={togglePause} className={btn}>
+            {paused ? "▶ Resume" : "⏸ Pause"}
+          </button>
           <button type="button" onClick={stopRecording} className={btn}>■ Stop</button>
         </>
       ) : null}
@@ -282,6 +359,12 @@ export function LessonRecorder({
           <button type="button" onClick={retryUpload} className={btn}>Retry</button>
           <button type="button" onClick={discard} className={btn}>Discard</button>
         </>
+      ) : null}
+
+      {canDownload ? (
+        <button type="button" onClick={downloadRecording} className={btn} title="Save the audio file to this device">
+          ⬇ Download
+        </button>
       ) : null}
 
       {error && status === "idle" ? <span className="text-red-600">{error}</span> : null}
