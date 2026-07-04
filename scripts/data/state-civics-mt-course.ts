@@ -1,4 +1,4 @@
-// Authored "Montana Civics: How Your State Government Works" — the Montana entry in the
+// Authored "Montana Civics: How Your State Government Works", the Montana entry in the
 // per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Montana's version.
 //
@@ -18,7 +18,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_MT_COURSE: AuthoredCourse = {
   title: "Montana Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Montana governs itself — and how you take part where you live. Montana rewrote its constitution in 1972 into one of the most distinctive in the country — it guarantees a 'right to a clean and healthful environment,' unusually strong individual privacy rights, and a right to know and to participate in government. You'll also learn Montana's part-time Legislature of 50 senators and 100 representatives, which meets only every other year for 90 days; its plural executive; its strong direct democracy; its nonpartisan elected judiciary; and its 56 counties. Time-sensitive facts are flagged, pointing to sosmt.gov. Cited to Montana's own official sources (leg.mt.gov, sosmt.gov, courts.mt.gov).",
+    "A practical, non-partisan guide to how the state of Montana governs itself, and how you take part where you live. Montana rewrote its constitution in 1972 into one of the most distinctive in the country: it guarantees a 'right to a clean and healthful environment,' unusually strong individual privacy rights, and a right to know and to participate in government. You'll also learn Montana's part-time Legislature of 50 senators and 100 representatives, which meets only every other year for 90 days; its plural executive; its strong direct democracy; its nonpartisan elected judiciary; and its 56 counties. Time-sensitive facts are flagged, pointing to sosmt.gov. Cited to Montana's own official sources (leg.mt.gov, sosmt.gov, courts.mt.gov).",
   lessons: [
     // ── Section 1: The 1972 constitution ─────────────────────────────────
     {
@@ -28,13 +28,13 @@ export const STATE_CIVICS_MT_COURSE: AuthoredCourse = {
       body: `Montana's civic identity rests on a document rewritten in living memory: its **Constitution of 1972.** In the early 1970s, an elected **constitutional convention** of ordinary citizens (not sitting politicians) rewrote Montana's old 1889 constitution into one of the most **distinctive and rights-focused** state constitutions in the country (Montana Legislature, n.d.).
 
 Several provisions are genuinely unusual (Montana Legislature, n.d.):
-- **A right to a clean and healthful environment.** Montana's constitution explicitly guarantees every person the **"right to a clean and healthful environment"** — one of the strongest environmental-rights clauses in any U.S. constitution, and one courts have enforced in real cases.
-- **Strong individual privacy rights.** The constitution protects **individual privacy** in explicit terms — going beyond the federal Constitution — a provision Montana courts have used to strike down laws.
-- **The right to know and to participate.** Montanans have an express **"right to know"** (access to government documents and meetings) and a **"right of participation"** in government decisions — unusually strong open-government guarantees.
+- **A right to a clean and healthful environment.** Montana's constitution explicitly guarantees every person the **"right to a clean and healthful environment"**: one of the strongest environmental-rights clauses in any U.S. constitution, and one courts have enforced in real cases.
+- **Strong individual privacy rights.** The constitution protects **individual privacy** in explicit terms (going beyond the federal Constitution), a provision Montana courts have used to strike down laws.
+- **The right to know and to participate.** Montanans have an express **"right to know"** (access to government documents and meetings) and a **"right of participation"** in government decisions: unusually strong open-government guarantees.
 
-Montana became the **41st state on November 8, 1889**, but it's the **1972 rewrite** that defines its modern government. This is the through-line: Montana's constitution puts **individual rights, the environment, and open government** front and center — and those choices show up throughout its civics.
+Montana became the **41st state on November 8, 1889**, but it's the **1972 rewrite** that defines its modern government. This is the through-line: Montana's constitution puts **individual rights, the environment, and open government** front and center, and those choices show up throughout its civics.
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Montana's own government (leg.mt.gov, sosmt.gov, courts.mt.gov) is the authoritative source.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Montana's own government ([leg.mt.gov](https://leg.mt.gov), [sosmt.gov](https://sosmt.gov), [courts.mt.gov](https://courts.mt.gov)) is the authoritative source.
 
 **Check yourself.** Name two distinctive rights guaranteed by Montana's 1972 constitution.
 
@@ -49,19 +49,29 @@ Montana became the **41st state on November 8, 1889**, but it's the **1972 rewri
       title: "2 · A citizen Legislature that meets 90 days every other year",
       section: "The Three Branches",
       body: `Montana has one of the **truest "citizen legislatures"** in the country (Montana Legislature, n.d.):
-- **House of Representatives — 100 members**, elected to **2-year terms**, and **Senate — 50 senators**, elected to **4-year terms.**
-- ⚠️ **It meets only every OTHER year — for 90 days.** Montana's Legislature holds a regular session in **odd-numbered years, limited to 90 legislative days.** That's it: for roughly **18 months out of every 24**, the Legislature is **not in session**, and lawmakers live and work in their communities as ranchers, teachers, small-business owners, and retirees. (Interim committees do work between sessions.)
+- **House of Representatives: 100 members**, elected to **2-year terms**, and **Senate: 50 senators**, elected to **4-year terms.**
+- ⚠️ **It meets only every OTHER year, for 90 days.** Montana's Legislature holds a regular session in **odd-numbered years, limited to 90 legislative days.** That's it: for roughly **18 months out of every 24**, the Legislature is **not in session**, and lawmakers live and work in their communities as ranchers, teachers, small-business owners, and retirees. (Interim committees do work between sessions.)
 
-Why it matters: this design keeps the Legislature **close to ordinary life** and **inexpensive**, but it also means the state must plan its budget and laws in **two-year cycles** and pack a lot into a short window. It reflects Montana's preference for **part-time, accessible government** — you might well **know your legislator personally.**
+Why it matters: this design keeps the Legislature **close to ordinary life** and **inexpensive**, but it also means the state must plan its budget and laws in **two-year cycles** and pack a lot into a short window. It reflects Montana's preference for **part-time, accessible government**, so you might well **know your legislator personally.**
 
-**Term limits.** Montana voters imposed **term limits** (via initiative) on legislators and statewide officers — generally **8 years in a 16-year period** for a given office.
+**Term limits.** Montana voters imposed **term limits** (via initiative) on legislators and statewide officers, generally **8 years in a 16-year period** for a given office.
 
-**Veto and override.** The Governor may veto bills; the Legislature overrides with a **two-thirds vote** — and because sessions are biennial, Montana even allows a **mail poll of legislators** to consider overriding vetoes issued after the session ends.
+**Veto and override.** The Governor may veto bills; the Legislature overrides with a **two-thirds vote**, and because sessions are biennial, Montana even allows a **mail poll of legislators** to consider overriding vetoes issued after the session ends.
 
 **Check yourself.** How often and for how long does Montana's Legislature meet, and what does that say about who serves in it?
 
 ## Sources
 - Montana Legislature. (n.d.). *The biennial 90-day session; term limits; veto override*. leg.mt.gov. https://leg.mt.gov/`,
+      recallContent: [
+        {
+          prompt: "What are two distinctive rights guaranteed by Montana's 1972 constitution?",
+          answer: "A right to a clean and healthful environment, and strong individual privacy rights (plus an express right to know and right of participation in government).",
+        },
+        {
+          prompt: "Who rewrote Montana's constitution in 1972, and what did it replace?",
+          answer: "An elected constitutional convention of ordinary citizens (not sitting politicians) rewrote the old 1889 constitution into one of the most rights-focused state constitutions in the country.",
+        },
+      ],
     },
 
     // ── Section 3: The executive + the courts ────────────────────────────
@@ -69,12 +79,12 @@ Why it matters: this design keeps the Legislature **close to ordinary life** and
       slug: "mt-executive-courts",
       title: "3 · The executive and how Montana picks its judges",
       section: "The Three Branches",
-      body: `**Executive — a plural executive.** Montana voters elect several statewide officials (Montana Secretary of State, n.d.):
+      body: `**Executive: a plural executive.** Montana voters elect several statewide officials (Montana Secretary of State, n.d.):
 - The **Governor** and **Lieutenant Governor** run **together on a joint ticket.**
 - Voters separately elect the **Secretary of State**, the **Attorney General**, the **State Auditor** (who also serves as Commissioner of Securities and Insurance), and the **Superintendent of Public Instruction.**
 Statewide officers serve **4-year terms** with **term limits.**
 
-**Judicial — the Montana courts.** District courts and the **Montana Supreme Court** (7 justices — a Chief Justice and six others). Montana **elects** its judges on a **NONPARTISAN** ballot — Supreme Court justices to **8-year terms**, district judges to 6-year terms (Montana Judicial Branch, n.d.). When a seat opens mid-term, the Governor appoints a replacement (from a Judicial Nomination Commission's list, with Senate confirmation) who then must stand for election. Given the 1972 constitution's strong rights provisions, Montana's courts are frequently where **environmental, privacy, and right-to-know** cases are decided — so those nonpartisan judicial elections carry real weight.
+**Judicial: the Montana courts.** District courts and the **Montana Supreme Court** (7 justices: a Chief Justice and six others). Montana **elects** its judges on a **NONPARTISAN** ballot: Supreme Court justices to **8-year terms**, district judges to 6-year terms (Montana Judicial Branch, n.d.). When a seat opens mid-term, the Governor appoints a replacement (from a Judicial Nomination Commission's list, with Senate confirmation) who then must stand for election. Given the 1972 constitution's strong rights provisions, Montana's courts are frequently where **environmental, privacy, and right-to-know** cases are decided, so those nonpartisan judicial elections carry real weight.
 
 **Veto and override** are covered in Lesson 2.
 
@@ -83,6 +93,16 @@ Statewide officers serve **4-year terms** with **term limits.**
 ## Sources
 - Montana Secretary of State. (n.d.). *Statewide elected officials*. sosmt.gov. https://sosmt.gov/
 - Montana Judicial Branch. (n.d.). *Nonpartisan judicial elections; the Supreme Court*. courts.mt.gov. https://courts.mt.gov/`,
+      recallContent: [
+        {
+          prompt: "How often and for how long does Montana's Legislature meet?",
+          answer: "Only every other year, in odd-numbered years, limited to 90 legislative days, which makes it a true part-time citizen legislature.",
+        },
+        {
+          prompt: "How many members are in Montana's House and Senate, and what are their terms?",
+          answer: "100 representatives on 2-year terms and 50 senators on 4-year terms.",
+        },
+      ],
     },
 
     // ── Section 4: Direct democracy + how a bill becomes law ─────────────
@@ -90,24 +110,34 @@ Statewide officers serve **4-year terms** with **term limits.**
       slug: "mt-direct-democracy",
       title: "4 · Direct democracy and how a bill becomes law",
       section: "Making Law",
-      body: `Montana makes law **two ways** — through the Legislature, or directly by the voters (Montana Secretary of State, n.d.).
+      body: `Montana makes law **two ways**: through the Legislature, or directly by the voters (Montana Secretary of State, n.d.).
 
 **Direct democracy.** Montana's 1972 constitution keeps **strong citizen tools:**
-- **Initiative** — citizens gather signatures to put a **statute** or a **constitutional amendment** on the ballot. (Montanans have used it for term limits and many other measures.)
-- **Referendum** — voters can **reject** a law the Legislature passed, and the Legislature can also refer measures to voters.
+- **Initiative:** citizens gather signatures to put a **statute** or a **constitutional amendment** on the ballot. (Montanans have used it for term limits and many other measures.)
+- **Referendum:** voters can **reject** a law the Legislature passed, and the Legislature can also refer measures to voters.
 - Montana even allows **"the right to know" and "right of participation"** to shape lawmaking, since the public must be able to observe and take part in government decisions.
 
 **How a bill becomes law** (Montana Legislature, n.d.):
 1. **Introduction** during the biennial 90-day session; **committee** hearings (open to the public, consistent with the right to participate); **floor votes** in both chambers.
-2. **Governor** — sign, veto (two-thirds override, sometimes by mail poll after the session), or **amendatory veto** (return a bill with suggested changes).
+2. **Governor:** sign, veto (two-thirds override, sometimes by mail poll after the session), or **amendatory veto** (return a bill with suggested changes).
 
-The takeaway: Montana combines a **short, part-time Legislature** with **robust citizen lawmaking** and **strong open-government rights** — so the public can both **watch** and **participate in** the process.
+The takeaway: Montana combines a **short, part-time Legislature** with **strong citizen lawmaking** and **strong open-government rights**, so the public can both **watch** and **participate in** the process.
 
 **Check yourself.** What can Montana citizens put on the ballot by initiative, and what open-government rights shape how laws are made?
 
 ## Sources
 - Montana Secretary of State. (n.d.). *Initiative and referendum in Montana*. sosmt.gov. https://sosmt.gov/
 - Montana Legislature. (n.d.). *How a bill becomes law; the amendatory veto*. leg.mt.gov. https://leg.mt.gov/`,
+      recallContent: [
+        {
+          prompt: "Besides the Governor, name two statewide officers Montanans elect.",
+          answer: "Any two of: the Secretary of State, the Attorney General, the State Auditor (also Commissioner of Securities and Insurance), and the Superintendent of Public Instruction.",
+        },
+        {
+          prompt: "How does Montana choose its Supreme Court justices?",
+          answer: "By nonpartisan election to 8-year terms; the Governor fills mid-term vacancies by appointment, and that appointee must then stand for election.",
+        },
+      ],
     },
 
     // ── Section 5: Local government + getting involved ───────────────────
@@ -121,21 +151,31 @@ The takeaway: Montana combines a **short, part-time Legislature** with **robust 
 - **School districts** and **special districts** round out local government.
 - A distinctive Montana feature: the 1972 constitution required **periodic local "voter review" of government structure**, letting communities revisit how they're organized.
 
-**Voting.** ⚠️ **Time-sensitive:** Montana offers **absentee/mail voting** and has at times offered **Election-Day registration** (rules here have changed and been litigated), and requires **ID** to vote. These rules are administered by **county election offices** and can change — confirm the **current** details at **sosmt.gov** before you vote.
+**Voting.** ⚠️ **Time-sensitive:** Montana offers **absentee/mail voting** and has at times offered **Election-Day registration** (rules here have changed and been litigated), and requires **ID** to vote. These rules are administered by **county election offices** and can change, so confirm the **current** details at **[sosmt.gov](https://sosmt.gov)** before you vote.
 
 **How to take part:**
-- **Register and vote** — check current registration and ID rules at sosmt.gov; use absentee voting given Montana's distances.
-- **Use direct democracy.** Sign or circulate an **initiative or referendum** — Montanans use these regularly.
-- **Exercise your right to know.** Montana's constitution gives you strong access to **government documents and meetings** — use it to follow decisions.
+- **Register and vote.** Check current registration and ID rules at [sosmt.gov](https://sosmt.gov); use absentee voting given Montana's distances.
+- **Use direct democracy.** Sign or circulate an **initiative or referendum**; Montanans use these regularly.
+- **Exercise your right to know.** Montana's constitution gives you strong access to **government documents and meetings**; use it to follow decisions.
 - **Show up locally.** County commissions, city/town councils, and school boards hold public meetings.
-- **Contact your legislators** in Helena — you have one Representative and one Senator; note the Legislature meets mainly in odd years.
-- **Run** — school board, city council, and county commission are reachable local starting points.
+- **Contact your legislators** in Helena: you have one Representative and one Senator; note the Legislature meets mainly in odd years.
+- **Run.** School board, city council, and county commission are reachable local starting points.
 
 **Check yourself.** Name one Montana open-government right you can use, and one voting detail to verify before an election.
 
 ## Sources
 - Montana Legislature. (n.d.). *Local government: counties, home rule, voter review*. leg.mt.gov. https://leg.mt.gov/
 - Montana Secretary of State. (n.d.). *Registering and voting: absentee, ID, deadlines*. sosmt.gov. https://sosmt.gov/`,
+      recallContent: [
+        {
+          prompt: "What are the two ways Montana makes law?",
+          answer: "Through the Legislature, or directly by the voters using the initiative and referendum.",
+        },
+        {
+          prompt: "What can Montana citizens put on the ballot by initiative?",
+          answer: "A statute or a constitutional amendment, placed on the ballot by gathering enough signatures (as Montanans did for term limits).",
+        },
+      ],
     },
 
     // ── Section 6: Practice (fill in the blanks) ─────────────────────────
@@ -159,7 +199,7 @@ The takeaway: Montana combines a **short, part-time Legislature** with **robust 
               "Montana's constitution also gives strong individual ___ rights (going beyond the federal Constitution).",
             answer: "privacy",
             explanation:
-              "Montana courts have used the explicit privacy right to strike down laws — a distinctive feature of the 1972 constitution.",
+              "Montana courts have used the explicit privacy right to strike down laws, a distinctive feature of the 1972 constitution.",
           },
           {
             prompt:
@@ -179,7 +219,7 @@ The takeaway: Montana combines a **short, part-time Legislature** with **robust 
           },
           {
             prompt:
-              "Montana's constitution gives citizens a 'right to ___' — access to government documents and meetings.",
+              "Montana's constitution gives citizens a 'right to ___', access to government documents and meetings.",
             answer: "know",
             explanation:
               "The 'right to know' and 'right of participation' are unusually strong open-government guarantees in Montana.",
@@ -189,7 +229,7 @@ The takeaway: Montana combines a **short, part-time Legislature** with **robust 
               "TRUE or FALSE: Montana's Legislature is in session year-round.",
             answer: "false",
             explanation:
-              "False. Montana's Legislature meets only in odd years, for 90 days — a part-time citizen legislature.",
+              "False. Montana's Legislature meets only in odd years, for 90 days, a part-time citizen legislature.",
           },
         ],
       },
@@ -319,7 +359,7 @@ The takeaway: Montana combines a **short, part-time Legislature** with **robust 
             prompt: "Why does this course tell you to VERIFY Montana's voting rules?",
             options: [
               "Because Montana has no elections office",
-              "Because registration and ID rules have changed and been litigated and are run by county offices — confirm at sosmt.gov",
+              "Because registration and ID rules have changed and been litigated and are run by county offices, so confirm at [sosmt.gov](https://sosmt.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
