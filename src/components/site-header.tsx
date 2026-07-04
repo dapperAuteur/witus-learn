@@ -38,6 +38,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
     ...(session && canTeach ? [{ href: "/help", label: "Help" }] : []),
     ...(session && canAdmin ? [{ href: "/admin", label: "Admin", accent: true }] : []),
     ...(session ? [{ href: "/my-courses", label: "My Courses" }] : []),
+    ...(session ? [{ href: "/field-log", label: "My Field Log" }] : []),
   ];
 
   return (
