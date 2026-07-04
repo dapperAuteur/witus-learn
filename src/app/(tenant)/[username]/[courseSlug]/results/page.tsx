@@ -21,7 +21,7 @@ export default async function CourseResultsPage({ params }: Params) {
   const { username, courseSlug } = await params;
   const view = await loadCourseView(username, courseSlug);
   if (!view) notFound();
-  const { course, tenant, session, lessons } = view;
+  const { course, tenant, session, lessons, modules } = view;
   const base = `/${username}/${courseSlug}`;
 
   if (!session) {
@@ -49,6 +49,28 @@ export default async function CourseResultsPage({ params }: Params) {
     byLesson.set(a.lessonId, list);
   }
 
+  // Rollups (subject view): use each quiz's LATEST attempt so a rollup reflects where you stand now.
+  const latestByLesson = new Map<string, (typeof attempts)[number]>();
+  for (const [lid, list] of byLesson) latestByLesson.set(lid, list[list.length - 1]);
+  const latests = [...latestByLesson.values()];
+  const courseAvg = latests.length ? Math.round(latests.reduce((s, a) => s + a.score, 0) / latests.length) : null;
+  const coursePassed = latests.filter((a) => a.passed).length;
+  // Per-module average (a module = a "subject"). Only modules with at least one attempted quiz show.
+  const moduleRollups = modules
+    .map((m) => {
+      const qs = [...latestByLesson.entries()]
+        .filter(([lid]) => lessonById.get(lid)?.moduleId === m.id)
+        .map(([, a]) => a);
+      if (qs.length === 0) return null;
+      return {
+        title: m.title,
+        count: qs.length,
+        avg: Math.round(qs.reduce((s, a) => s + a.score, 0) / qs.length),
+        passed: qs.filter((a) => a.passed).length,
+      };
+    })
+    .filter((r): r is NonNullable<typeof r> => r !== null);
+
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
       <div className="flex items-center justify-between gap-3">
@@ -67,6 +89,29 @@ export default async function CourseResultsPage({ params }: Params) {
           </p>
         )}
       </section>
+
+      {courseAvg !== null ? (
+        <section className="mt-6 rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">By subject</h2>
+          <p className="mt-2">
+            <span className="text-2xl font-bold" style={{ color: "var(--accent)" }}>{courseAvg}%</span>{" "}
+            course average <span className="text-neutral-500">({coursePassed}/{latests.length} quizzes passed)</span>
+          </p>
+          {moduleRollups.length > 1 ? (
+            <ul className="mt-3 space-y-1 text-sm">
+              {moduleRollups.map((m) => (
+                <li key={m.title} className="flex items-center justify-between gap-3">
+                  <span className="min-w-0 flex-1 truncate">{m.title}</span>
+                  <span className="shrink-0 text-neutral-500">
+                    {m.passed}/{m.count} passed ·{" "}
+                    <span className={m.avg >= 80 ? "text-green-700 dark:text-green-400" : m.avg >= 50 ? "text-amber-600" : "text-red-600"}>{m.avg}%</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </section>
+      ) : null}
 
       <section className="mt-6">
         <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-500">Quizzes over time</h2>
