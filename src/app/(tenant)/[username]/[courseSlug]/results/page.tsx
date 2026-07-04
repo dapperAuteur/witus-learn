@@ -14,6 +14,29 @@ function pct(correct: number, total: number): number {
   return total > 0 ? Math.round((correct / total) * 100) : 0;
 }
 
+// Compact score-over-time sparkline (single series → one accent hue, no legend; the attempt
+// list below is the accessible table, and each point carries a native <title> for hover).
+function Sparkline({ scores }: { scores: number[] }) {
+  if (scores.length < 2) return null;
+  const w = 140;
+  const h = 32;
+  const pad = 4;
+  const n = scores.length;
+  const x = (i: number) => pad + (i * (w - 2 * pad)) / (n - 1);
+  const y = (s: number) => pad + (1 - s / 100) * (h - 2 * pad); // 0–100 band, inverted
+  const d = scores.map((s, i) => `${i === 0 ? "M" : "L"}${x(i).toFixed(1)},${y(s).toFixed(1)}`).join(" ");
+  return (
+    <svg width={w} height={h} viewBox={`0 0 ${w} ${h}`} role="img" aria-label={`Score trend: ${scores.join("%, ")}%`}>
+      <path d={d} fill="none" stroke="var(--accent)" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" />
+      {scores.map((s, i) => (
+        <circle key={i} cx={x(i)} cy={y(s)} r={i === n - 1 ? 3 : 1.8} fill="var(--accent)">
+          <title>{`Attempt ${i + 1}: ${s}%`}</title>
+        </circle>
+      ))}
+    </svg>
+  );
+}
+
 // A learner's own results for one course: quiz scores over time (per lesson), per-question
 // performance across retries, and in-lesson recall accuracy. Tenant + enrollment scoped via
 // loadCourseView (a foreign tenant's URL 404s).
@@ -144,6 +167,12 @@ export default async function CourseResultsPage({ params }: Params) {
                       {latest.passed ? " · passed" : ""}
                     </span>
                   </div>
+
+                  {list.length >= 2 ? (
+                    <div className="mt-2" aria-hidden={false}>
+                      <Sparkline scores={list.map((a) => a.score)} />
+                    </div>
+                  ) : null}
 
                   <ol className="mt-3 space-y-1 text-sm">
                     {list.map((a) => (
