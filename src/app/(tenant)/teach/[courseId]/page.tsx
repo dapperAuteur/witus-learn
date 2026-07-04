@@ -3,9 +3,9 @@ import { notFound, redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { canEditCourse } from "@/lib/api";
-import { getSession, isPlatformOwner } from "@/lib/session";
+import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { hasStripe } from "@/lib/env";
-import { listLessons } from "@/db/queries/authoring";
+import { listLessons, listTenantInstructors } from "@/db/queries/authoring";
 import { listLinkUsage } from "@/db/queries/link-clicks";
 import { getCourseRecallStats } from "@/db/queries/recall";
 import { CourseSettingsForm } from "@/components/course-settings-form";
@@ -26,13 +26,17 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   if (!course) notFound();
   if (!(await canEditCourse(session, sdb.tenantId, course))) notFound();
 
-  const [lessons, owner, categories, linkUsage, recallStats] = await Promise.all([
+  const [lessons, owner, membership, categories, linkUsage, recallStats] = await Promise.all([
     listLessons(courseId),
     isPlatformOwner(session.user.id),
+    getMembership(session.user.id, sdb.tenantId),
     sdb.listCategories(),
     listLinkUsage(sdb.tenantId, courseId),
     getCourseRecallStats(sdb.tenantId, courseId),
   ]);
+  // Admins (platform owner / brand_admin) may reassign the course's instructor.
+  const isAdmin = owner || membership === "brand_admin";
+  const instructors = isAdmin ? await listTenantInstructors(sdb.tenantId) : [];
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
@@ -61,7 +65,10 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           canFeature={owner}
           hasStripe={hasStripe}
           categories={categories.map((c) => c.name)}
+          canAssignInstructor={isAdmin}
+          instructors={instructors}
           initial={{
+            instructorId: course.instructorId,
             title: course.title,
             description: course.description,
             category: course.category,

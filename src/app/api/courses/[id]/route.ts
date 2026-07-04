@@ -1,6 +1,13 @@
 import { z } from "zod";
 import { apiContext, errorJson, isTenantAdmin, json, loadEditableCourse } from "@/lib/api";
-import { deleteCourse, updateCourse } from "@/db/queries/authoring";
+import { isPlatformOwner } from "@/lib/session";
+import {
+  deleteCourse,
+  ensureUsernameById,
+  instructorSlugTaken,
+  isTenantInstructorMember,
+  updateCourse,
+} from "@/db/queries/authoring";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -35,9 +42,11 @@ const PatchSchema = z.object({
   billingInterval: z.enum(["month", "year"]).nullable().optional(),
   // Cross-promotion: 0–3 ecosystem product slugs curated for this course.
   relatedProducts: z.array(z.string().max(60)).max(3).nullable().optional(),
-  // Admin-only (stripped below for non-admins)
+  // Admin-only (stripped / validated below for non-admins)
   isFeatured: z.boolean().optional(),
   featuredOrder: z.number().int().nullable().optional(),
+  // Reassign the course to a different instructor (admin-only; validated in the handler).
+  instructorId: z.string().min(1).optional(),
 });
 
 // PATCH /api/courses/[id] — instructor (owner) or brand-admin edits a course.
@@ -67,6 +76,30 @@ export async function PATCH(req: Request, { params }: Params) {
     if (!(await isTenantAdmin(session, sdb.tenantId))) {
       delete patch.isFeatured;
       delete patch.featuredOrder;
+    }
+  }
+  // Reassigning the instructor is admin-only (platform owner or brand_admin) and validated.
+  // This is the fix for courses bylined to a stale seed instructor: an admin can hand the
+  // course to the real account. NOTE: after this, the OLD instructor loses edit access.
+  if ("instructorId" in patch) {
+    const newInstructorId = patch.instructorId as string;
+    if (!(await isTenantAdmin(session, sdb.tenantId))) {
+      delete patch.instructorId; // silently ignore for non-admins (mirrors isFeatured)
+    } else if (newInstructorId === course.instructorId) {
+      delete patch.instructorId; // no-op, skip the checks
+    } else {
+      // Target must be allowed to teach here (an instructor/brand_admin member, or the owner).
+      const eligible =
+        (await isTenantInstructorMember(sdb.tenantId, newInstructorId)) ||
+        (await isPlatformOwner(newInstructorId));
+      if (!eligible) return errorJson("That person isn't an instructor on this brand.", 400);
+      // Pretty course URLs are /{username}/{slug} — the new instructor needs a username.
+      const uname = await ensureUsernameById(newInstructorId);
+      if (!uname) return errorJson("That instructor has no profile yet — can't build their course URL.", 400);
+      // The (tenant, instructor, slug) unique index would collide if they already own this slug.
+      if (course.slug && (await instructorSlugTaken(sdb.tenantId, newInstructorId, course.slug, course.id))) {
+        return errorJson("That instructor already has a course at this URL — rename this course's slug first.", 409);
+      }
     }
   }
   // A HELD course can't be published until the hold clears. Use the incoming hold value if

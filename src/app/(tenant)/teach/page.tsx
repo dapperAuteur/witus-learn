@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { requireTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
-import { listOwnCourses } from "@/db/queries/authoring";
+import { listAllTenantCourses, listOwnCourses, type ManagedCourse } from "@/db/queries/authoring";
 import { TeacherCatalog } from "@/components/teacher-catalog";
 import { createCourseAction } from "./actions";
 
@@ -47,7 +47,17 @@ export default async function TeachPage() {
     );
   }
 
-  const courses = await listOwnCourses(tenant.id, session.user.id);
+  // Admins see EVERY course on the brand (so a course bylined to another/stale-seed instructor is
+  // reachable to reassign); a plain instructor sees only their own.
+  const courses = isAdmin
+    ? await listAllTenantCourses(tenant.id)
+    : await listOwnCourses(tenant.id, session.user.id);
+  const labelFor = (c: (typeof courses)[number]): string | null => {
+    if (!isAdmin) return null;
+    const m = c as ManagedCourse;
+    if (m.instructorId === session.user.id) return null; // "yours" — no byline needed
+    return m.instructorDisplayName || (m.instructorUsername ? `@${m.instructorUsername}` : "unassigned");
+  };
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-12">
@@ -121,6 +131,7 @@ export default async function TeachPage() {
             publishHoldReason: c.publishHoldReason,
             priceType: c.priceType,
             price: Number(c.price ?? 0),
+            instructorLabel: labelFor(c),
           }))}
         />
       )}

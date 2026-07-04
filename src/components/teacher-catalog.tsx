@@ -13,6 +13,8 @@ export interface CatalogCourse {
   publishHoldReason: string | null;
   priceType: string;
   price: number;
+  /** Instructor byline shown to owner/admins for courses they don't personally own (else null). */
+  instructorLabel?: string | null;
 }
 
 type Status = "all" | "published" | "draft" | "private" | "hold";
@@ -218,9 +220,14 @@ export function TeacherCatalog({ courses }: { courses: CatalogCourse[] }) {
                 onChange={() => toggle(c.id)}
                 aria-label={`Select ${c.title}`}
               />
-              <Link href={`/teach/${c.id}`} className="min-w-0 flex-1 truncate font-medium hover:underline">
-                {c.title}
-              </Link>
+              <span className="flex min-w-0 flex-1 flex-col">
+                <Link href={`/teach/${c.id}`} className="truncate font-medium hover:underline">
+                  {c.title}
+                </Link>
+                {c.instructorLabel ? (
+                  <span className="truncate text-xs text-neutral-500">instructor: {c.instructorLabel}</span>
+                ) : null}
+              </span>
               <span className="shrink-0 text-xs text-neutral-500">{priceLabel(c)}</span>
               {c.visibility === "private" ? (
                 <span className="shrink-0 rounded-full bg-purple-100 px-2 py-0.5 text-xs text-purple-800 dark:bg-purple-900 dark:text-purple-200">🔒</span>
