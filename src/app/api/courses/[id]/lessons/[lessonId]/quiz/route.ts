@@ -5,7 +5,7 @@ import { getCompletedLessonIds, upsertProgress } from "@/db/queries/progress";
 import { recordQuizAttempt } from "@/db/queries/quiz-attempts";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { lessonAccess } from "@/lib/gating";
-import { scoreQuizResponses, type QuizContent, type QuizFeedbackItem, type QuizResponse } from "@/lib/quiz";
+import { questionKey, scoreQuizResponses, type QuizContent, type QuizFeedbackItem, type QuizResponse } from "@/lib/quiz";
 
 // The player submits `responses` (original question + chosen-option indices for the SERVED
 // subset, safe under rotation + option shuffle). Legacy clients may still send `answers`
@@ -77,6 +77,7 @@ export async function POST(req: Request, { params }: Params) {
     correct: result.correct,
     total: result.total,
     responses: valid.map((r) => ({
+      questionKey: questionKey(content.questions[r.questionIndex]?.prompt ?? ""),
       questionIndex: r.questionIndex,
       optionIndex: r.optionIndex,
       correct: content.questions[r.questionIndex]?.correctIndex === r.optionIndex,

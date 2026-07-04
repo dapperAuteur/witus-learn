@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
 import { getUserCourseQuizAttempts } from "@/db/queries/quiz-attempts";
 import { getUserCourseRecallStats } from "@/db/queries/recall";
-import type { QuizContent } from "@/lib/quiz";
+import { questionKey, type QuizContent } from "@/lib/quiz";
 
 export const metadata: Metadata = { title: "Your results" };
 
@@ -147,17 +147,31 @@ export default async function CourseResultsPage({ params }: Params) {
               const title = lesson?.title ?? "Quiz";
               const best = Math.max(...list.map((a) => a.score));
               const latest = list[list.length - 1];
-              // Per-question hit rate across this lesson's attempts.
-              const perQ = new Map<number, { correct: number; total: number }>();
+              const quiz = lesson?.quizContent as QuizContent | null;
+              // Map each CURRENT question's stable key (and its original index, for pre-key rows) to
+              // its prompt + display order, so per-question history lines up even after a reorder.
+              const promptByKey = new Map<string, string>();
+              const orderByKey = new Map<string, number>();
+              quiz?.questions?.forEach((q, i) => {
+                const k = questionKey(q.prompt);
+                promptByKey.set(k, q.prompt);
+                orderByKey.set(k, i);
+                promptByKey.set(String(i), q.prompt); // fallback: old rows keyed by original index
+                orderByKey.set(String(i), i);
+              });
+              // Per-question hit rate across this lesson's attempts, keyed by stable identity.
+              const perQ = new Map<string, { correct: number; total: number; prompt: string }>();
               for (const a of list) {
                 for (const r of a.responses ?? []) {
-                  const agg = perQ.get(r.questionIndex) ?? { correct: 0, total: 0 };
+                  const key = r.questionKey ?? String(r.questionIndex);
+                  const prompt =
+                    promptByKey.get(key) ?? promptByKey.get(String(r.questionIndex)) ?? `Question ${r.questionIndex + 1}`;
+                  const agg = perQ.get(key) ?? { correct: 0, total: 0, prompt };
                   agg.total += 1;
                   if (r.correct) agg.correct += 1;
-                  perQ.set(r.questionIndex, agg);
+                  perQ.set(key, agg);
                 }
               }
-              const quiz = lesson?.quizContent as QuizContent | null;
               return (
                 <article key={lessonId} className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -189,12 +203,13 @@ export default async function CourseResultsPage({ params }: Params) {
                     <div className="mt-4">
                       <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">By question</p>
                       <ul className="mt-2 space-y-1 text-sm">
-                        {[...perQ.entries()].sort((a, b) => a[0] - b[0]).map(([qi, agg]) => {
-                          const prompt = quiz?.questions?.[qi]?.prompt ?? `Question ${qi + 1}`;
+                        {[...perQ.entries()]
+                          .sort((a, b) => (orderByKey.get(a[0]) ?? 999) - (orderByKey.get(b[0]) ?? 999))
+                          .map(([key, agg]) => {
                           const rate = pct(agg.correct, agg.total);
                           return (
-                            <li key={qi} className="flex items-start justify-between gap-3">
-                              <span className="min-w-0 flex-1 truncate text-neutral-700 dark:text-neutral-300">{prompt}</span>
+                            <li key={key} className="flex items-start justify-between gap-3">
+                              <span className="min-w-0 flex-1 truncate text-neutral-700 dark:text-neutral-300">{agg.prompt}</span>
                               <span className={rate >= 100 ? "shrink-0 text-green-700 dark:text-green-400" : rate === 0 ? "shrink-0 text-red-600" : "shrink-0 text-amber-600"}>
                                 {agg.correct}/{agg.total} right
                               </span>

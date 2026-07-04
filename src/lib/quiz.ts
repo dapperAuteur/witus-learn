@@ -32,6 +32,16 @@ export interface QuizResponse {
   optionIndex: number;
 }
 
+// A stable identity for a question, derived from its prompt text (djb2 → base36). Captured on each
+// attempt so per-question history survives question REORDERS (position changes, prompt doesn't).
+// Editing a prompt intentionally starts a fresh history for that (now different) question.
+export function questionKey(prompt: string): string {
+  const s = (prompt ?? "").trim();
+  let h = 5381;
+  for (let i = 0; i < s.length; i++) h = (((h << 5) + h) + s.charCodeAt(i)) | 0;
+  return (h >>> 0).toString(36);
+}
+
 // Per-question feedback returned AFTER submission (so correct answers are never
 // sent before the learner answers). `source` links to the lesson that teaches it.
 export interface QuizFeedbackItem {
