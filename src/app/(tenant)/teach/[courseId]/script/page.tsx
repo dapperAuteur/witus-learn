@@ -41,6 +41,7 @@ export default async function RecordingScriptPage({ params }: { params: Promise<
       <div className="mt-6 space-y-6">
         <RecordingProgress
           courseId={course.id}
+          courseLabel={course.slug ?? course.title}
           lessons={lessons.map((l) => ({
             id: l.id,
             title: l.title,
@@ -50,6 +51,7 @@ export default async function RecordingScriptPage({ params }: { params: Promise<
         <RecordingScriptView
           script={script}
           courseId={course.id}
+          courseLabel={course.slug ?? course.title}
           lessons={lessons.map((l) => ({
             id: l.id,
             title: l.title,

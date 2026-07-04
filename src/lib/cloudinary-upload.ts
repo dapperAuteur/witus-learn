@@ -1,3 +1,5 @@
+import { slugify } from "@/lib/slug";
+
 // Shared direct-to-Cloudinary upload used by the media uploader and the in-app recorder.
 // Two hardening measures for the current (100MB-cap) Cloudinary plan:
 //  1. a size guard that rejects anything ≥ the plan cap BEFORE a doomed multi-minute upload;
@@ -13,6 +15,18 @@ const CHUNK_BYTES = 6 * 1024 * 1024;
 export function formatBytes(bytes: number): string {
   if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(0)} KB`;
   return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
+/** Build a human-readable Cloudinary public_id (path) from parts, so assets are findable by name
+ *  ("witus/recordings/faa-part-107/intro") instead of a random id. Each part is slugified; empty
+ *  parts are dropped; slashes separate Cloudinary folders. Returns undefined if nothing usable. */
+export function buildPublicId(...parts: (string | null | undefined)[]): string | undefined {
+  const path = parts
+    .flatMap((p) => (p ?? "").split("/"))
+    .map((seg) => slugify(seg))
+    .filter((seg) => seg && seg !== "untitled")
+    .join("/");
+  return path || undefined;
 }
 
 /** Thrown when a file is too big for the plan — the caller shows a clear "split it" message. */
@@ -84,22 +98,31 @@ function postChunk(
  * Upload a file/blob to Cloudinary and return its secure URL.
  * Rejects (UploadTooLargeError) if it exceeds the plan cap. Uses chunked upload above CHUNK_BYTES.
  * `onProgress` reports 0–100 across the whole file.
+ * `publicId` (optional) sets a human-readable Cloudinary public_id (path) so the asset is findable
+ * by name instead of a random id — build it with buildPublicId(). Unsigned uploads accept public_id;
+ * on a re-upload Cloudinary keeps the readable prefix (it may add a short suffix for uniqueness).
  */
 export async function uploadToCloudinary(
   file: Blob,
   filename: string,
   onProgress?: (percent: number) => void,
+  publicId?: string,
 ): Promise<string> {
   if (file.size > MAX_UPLOAD_BYTES) throw new UploadTooLargeError(file.size);
 
   const { cloudName, uploadPreset } = await getConfig();
   const total = file.size;
+  const cleanId = publicId ? buildPublicId(publicId) : undefined;
+  const addFields = (form: FormData) => {
+    form.append("upload_preset", uploadPreset);
+    if (cleanId) form.append("public_id", cleanId);
+  };
 
   // Small file → one request (existing behaviour).
   if (total <= CHUNK_BYTES) {
     const form = new FormData();
     form.append("file", new File([file], filename, { type: file.type || "application/octet-stream" }));
-    form.append("upload_preset", uploadPreset);
+    addFields(form);
     const url = await postChunk(cloudName, form, {}, (loaded) =>
       onProgress?.(Math.round((loaded / total) * 100)),
     );
@@ -117,7 +140,7 @@ export async function uploadToCloudinary(
     const chunk = file.slice(start, end);
     const form = new FormData();
     form.append("file", new File([chunk], filename, { type: file.type || "application/octet-stream" }));
-    form.append("upload_preset", uploadPreset);
+    addFields(form);
     const base = uploaded;
     const url = await postChunk(
       cloudName,

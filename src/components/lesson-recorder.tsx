@@ -7,7 +7,7 @@ import {
   savePending,
   type PendingRecording,
 } from "@/lib/recording-store";
-import { formatBytes, MAX_UPLOAD_BYTES, uploadToCloudinary } from "@/lib/cloudinary-upload";
+import { buildPublicId, formatBytes, MAX_UPLOAD_BYTES, uploadToCloudinary } from "@/lib/cloudinary-upload";
 
 // When the CURRENT part nears the cap, finalize it and roll into a new part (a hair under the
 // cap so every part uploads). A long take becomes several ordered parts, played back seamlessly.
@@ -37,10 +37,15 @@ export function LessonRecorder({
   courseId,
   lessonId,
   onUploaded,
+  courseLabel,
+  lessonLabel,
 }: {
   courseId: string;
   lessonId: string;
   onUploaded?: () => void;
+  /** Course + lesson names → a readable Cloudinary public_id (else a random id). */
+  courseLabel?: string;
+  lessonLabel?: string;
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [progress, setProgress] = useState(0);
@@ -76,11 +81,18 @@ export function LessonRecorder({
       try {
         const urls: string[] = [];
         const n = rec.parts.length;
+        // Readable Cloudinary name (e.g. witus/recordings/faa-part-107/intro[-part2]); falls back
+        // to the lessonId when titles aren't provided, and to a random id if even that's empty.
+        const humanBase = buildPublicId("witus/recordings", courseLabel, lessonLabel ?? lessonId);
         for (let i = 0; i < n; i++) {
           const name = n > 1 ? `lesson-${lessonId}-part${i + 1}.webm` : `lesson-${lessonId}.webm`;
+          const publicId = humanBase ? (n > 1 ? `${humanBase}-part${i + 1}` : humanBase) : undefined;
           // Cumulative progress across parts (each part 0..100 → overall 0..100).
-          const url = await uploadToCloudinary(rec.parts[i], name, (p) =>
-            setProgress(Math.round(((i + p / 100) / n) * 100)),
+          const url = await uploadToCloudinary(
+            rec.parts[i],
+            name,
+            (p) => setProgress(Math.round(((i + p / 100) / n) * 100)),
+            publicId,
           );
           urls.push(url);
         }
@@ -106,7 +118,7 @@ export function LessonRecorder({
         setStatus("error");
       }
     },
-    [courseId, lessonId, onUploaded],
+    [courseId, lessonId, onUploaded, courseLabel, lessonLabel],
   );
 
   // On mount: resume any pending recording (survives reloads). Auto-upload if we're online.
@@ -266,7 +278,36 @@ export function LessonRecorder({
     setError(null);
   }
 
+  // Save the take to the device as a safety net (especially if the upload fails). Uses the
+  // in-memory blobs, falling back to the IndexedDB copy (survives a reload). Named from the
+  // course + lesson so the file is recognizable.
+  async function downloadRecording() {
+    let blobs = partsRef.current;
+    let mime = blobs[0]?.type;
+    if (!blobs.length) {
+      const rec = await getPending(lessonId);
+      if (rec) {
+        blobs = rec.parts;
+        mime = rec.mime;
+      }
+    }
+    if (!blobs.length) return;
+    const slug = buildPublicId(courseLabel, lessonLabel ?? lessonId)?.replace(/\//g, "-") || `lesson-${lessonId}`;
+    const ext = (mime ?? "").includes("mp4") ? "m4a" : (mime ?? "").includes("ogg") ? "ogg" : "webm";
+    blobs.forEach((blob, i) => {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = blobs.length > 1 ? `${slug}-part${i + 1}.${ext}` : `${slug}.${ext}`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 2000);
+    });
+  }
+
   const btn = "min-h-9 rounded-md border border-neutral-300 px-3 text-sm dark:border-neutral-700";
+  const canDownload = ["local", "uploading", "offline", "uploaded", "error"].includes(status);
 
   return (
     <div className="mt-1 flex flex-wrap items-center gap-2 text-sm">
@@ -318,6 +359,12 @@ export function LessonRecorder({
           <button type="button" onClick={retryUpload} className={btn}>Retry</button>
           <button type="button" onClick={discard} className={btn}>Discard</button>
         </>
+      ) : null}
+
+      {canDownload ? (
+        <button type="button" onClick={downloadRecording} className={btn} title="Save the audio file to this device">
+          ⬇ Download
+        </button>
       ) : null}
 
       {error && status === "idle" ? <span className="text-red-600">{error}</span> : null}

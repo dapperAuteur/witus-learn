@@ -13,13 +13,15 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
-- 🔧 **Recording: teleprompter + pause/resume** (\`feat/change-course-instructor\`) — the in-app audio
-  recorder is now embedded **inside** the teleprompter overlay (with a lesson picker), so you can
-  read the auto-scrolling script and record at the same time (the overlay used to hide the record
-  buttons). Recording gained **Pause/Resume** (\`MediaRecorder.pause()\`) so a course can be taped
-  across several sittings, not one take; paused time doesn't count toward duration. Upload failures
-  now surface **Cloudinary's actual error** instead of a generic "Upload failed" (config-fix guidance
-  in user-task 43).
+- 🔧 **Recording batch** (\`feat/change-course-instructor\`) — the in-app audio recorder is now
+  embedded **inside** the teleprompter overlay (with a lesson picker), so you can read the
+  auto-scrolling script and record at the same time (the overlay used to hide the record buttons).
+  **Pause/Resume** (\`MediaRecorder.pause()\`) lets a course be taped across several sittings, not one
+  take; paused time doesn't count toward duration. **Download to device** saves the take locally as a
+  safety net if upload fails. Uploads get **readable Cloudinary names** (\`witus/recordings/<course>/
+  <lesson>\`, \`witus/uploads/…\`, \`witus/images/…\`) via a \`public_id\` instead of random ids, so assets
+  are findable. Upload failures now surface **Cloudinary's actual error** instead of a generic
+  "Upload failed" (config-fix guidance in user-task 43).
 - 🔧 **Change course instructor** (\`feat/change-course-instructor\`) — an admin (owner / brand_admin)
   can reassign a course to a different instructor from **Course settings** (validated + slug-collision
   guarded, ensures the new instructor has a username; no migration). \`/teach\` now shows admins

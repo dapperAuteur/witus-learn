@@ -74,6 +74,9 @@ button.
 - Status shows **recording → saved locally → uploading → uploaded ✓** (or *retry* on failure).
 - A take **auto-stops / auto-splits** just under the 100 MB limit into ordered parts.
 - A successful upload attaches the audio to the lesson and ticks it **recorded**.
+- **⬇ Download** saves the take to your device as a backup — handy if an upload keeps failing.
+- Uploaded files get a **readable name** in Cloudinary (\`witus/recordings/<course>/<lesson>\`), so
+  you can find them later instead of hunting through random ids.
 
 Uploads need Cloudinary configured and an HTTPS URL (the deployed site). If an upload fails, the red
 error now shows **Cloudinary's exact reason** — usually the upload preset isn't set to *Unsigned*

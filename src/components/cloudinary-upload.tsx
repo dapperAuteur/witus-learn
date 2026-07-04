@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { uploadToCloudinary } from "@/lib/cloudinary-upload";
+import { buildPublicId, uploadToCloudinary } from "@/lib/cloudinary-upload";
 
 // Direct-to-Cloudinary unsigned upload for lesson media (video/audio/image/PDF). Uses the shared
 // helper: rejects over-cap files up front, and chunk-uploads large ones for reliability.
@@ -21,7 +21,12 @@ export function CloudinaryUpload({
     setBusy(true);
     setProgress(0);
     try {
-      const url = await uploadToCloudinary(file, file.name, setProgress);
+      const url = await uploadToCloudinary(
+        file,
+        file.name,
+        setProgress,
+        buildPublicId("witus/uploads", file.name.replace(/\.[^.]+$/, "")),
+      );
       onUploaded(url);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Upload failed.");

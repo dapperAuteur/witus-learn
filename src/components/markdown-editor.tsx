@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { Markdown } from "./markdown";
-import { uploadToCloudinary } from "@/lib/cloudinary-upload";
+import { buildPublicId, uploadToCloudinary } from "@/lib/cloudinary-upload";
 
 // A lightweight WYSIWYG-style editor for lesson bodies: a formatting toolbar that inserts
 // markdown around the selection + a live Preview tab (reusing the app's Markdown renderer).
@@ -80,7 +80,12 @@ export function MarkdownEditor({
     if (!file) return;
     setUploading(true);
     try {
-      const url = await uploadToCloudinary(file, file.name);
+      const url = await uploadToCloudinary(
+        file,
+        file.name,
+        undefined,
+        buildPublicId("witus/images", file.name.replace(/\.[^.]+$/, "")),
+      );
       const ta = ref.current;
       const pos = ta ? ta.selectionStart : value.length;
       const md = `![${pendingAltRef.current}](${url})`;

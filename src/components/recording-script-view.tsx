@@ -20,10 +20,13 @@ export interface ScriptLesson {
 export function RecordingScriptView({
   script,
   courseId,
+  courseLabel,
   lessons = [],
 }: {
   script: string;
   courseId: string;
+  /** Course name/slug → readable Cloudinary upload names for recordings. */
+  courseLabel?: string;
   /** Lessons offered as record targets inside the teleprompter (id + title + recorded state). */
   lessons?: ScriptLesson[];
 }) {
@@ -71,7 +74,13 @@ export function RecordingScriptView({
       </pre>
 
       {teleprompter ? (
-        <Teleprompter script={script} courseId={courseId} lessons={lessons} onExit={() => setTeleprompter(false)} />
+        <Teleprompter
+          script={script}
+          courseId={courseId}
+          courseLabel={courseLabel}
+          lessons={lessons}
+          onExit={() => setTeleprompter(false)}
+        />
       ) : null}
     </div>
   );
@@ -80,11 +89,13 @@ export function RecordingScriptView({
 function Teleprompter({
   script,
   courseId,
+  courseLabel,
   lessons,
   onExit,
 }: {
   script: string;
   courseId: string;
+  courseLabel?: string;
   lessons: ScriptLesson[];
   onExit: () => void;
 }) {
@@ -190,7 +201,13 @@ function Teleprompter({
             </select>
           </label>
           {recordLessonId ? (
-            <LessonRecorder key={recordLessonId} courseId={courseId} lessonId={recordLessonId} />
+            <LessonRecorder
+              key={recordLessonId}
+              courseId={courseId}
+              lessonId={recordLessonId}
+              courseLabel={courseLabel}
+              lessonLabel={lessons.find((l) => l.id === recordLessonId)?.title}
+            />
           ) : null}
         </div>
       ) : null}
