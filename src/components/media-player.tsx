@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import type { Ref, SyntheticEvent } from "react";
-import type { Chapter, TranscriptSegment } from "@/lib/media";
+import { playableAudioSrc, type Chapter, type TranscriptSegment } from "@/lib/media";
 
 function fmt(s?: number): string {
   if (s == null) return "";
@@ -55,7 +55,7 @@ export function MediaPlayer({
           onTimeUpdate={onTime}
         />
       ) : (
-        <audio ref={ref as Ref<HTMLAudioElement>} controls className="w-full" src={src} onTimeUpdate={onTime} />
+        <audio ref={ref as Ref<HTMLAudioElement>} controls className="w-full" src={playableAudioSrc(src)} onTimeUpdate={onTime} />
       )}
 
       {chapters.length ? (

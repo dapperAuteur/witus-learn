@@ -73,6 +73,23 @@ export function isDirectMediaFile(url: string): boolean {
   return DIRECT_MEDIA.test(url);
 }
 
+/**
+ * Make a recorded-audio URL playable on every device. The in-app recorder produces WebM/Opus,
+ * which **iOS Safari can't decode** (iPhone/iPad error; Android/desktop Chrome are fine). Cloudinary
+ * stores audio as a "video" resource and can transcode on delivery, so we request an **MP3** rendition
+ * (`f_mp3`) — universally supported, and Cloudinary caches it after the first play. Bonus: the MP3 has
+ * proper duration metadata, so the player's remaining-time readout is accurate (WebM from MediaRecorder
+ * often reports no/!nfinite duration). Non-Cloudinary URLs (external files, embeds) pass through unchanged.
+ */
+export function playableAudioSrc(url: string): string {
+  if (!url) return url;
+  const m = url.match(/^(https:\/\/res\.cloudinary\.com\/[^/]+\/(?:video|auto)\/upload)\/(.+)$/i);
+  if (!m) return url;
+  const [, base, rest] = m;
+  if (/(^|\/)f_[a-z0-9]+(,|\/)/i.test(rest)) return url; // already has a format transform — leave it
+  return `${base}/f_mp3/${rest}`;
+}
+
 /** Map a non-file URL to an embeddable iframe src (YouTube/Vimeo/Google Slides/PDF/generic). */
 export function toEmbed(url: string): Embed | null {
   if (!url) return null;

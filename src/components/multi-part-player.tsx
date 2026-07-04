@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { playableAudioSrc } from "@/lib/media";
 
 // Sequential player for a recording that was split into several <cap parts at record time.
 // Plays one part at a time and auto-advances to the next when it ends, so a long lecture that
@@ -44,7 +45,7 @@ export function MultiPartPlayer({
       {kind === "video" ? (
         <video ref={videoRef} controls className="w-full rounded-lg bg-black" src={src} onEnded={onEnded} />
       ) : (
-        <audio ref={audioRef} controls className="w-full" src={src} onEnded={onEnded} />
+        <audio ref={audioRef} controls className="w-full" src={playableAudioSrc(src)} onEnded={onEnded} />
       )}
       <div className="mt-2 flex items-center gap-3 text-sm text-neutral-600 dark:text-neutral-400">
         <span>
