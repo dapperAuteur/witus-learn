@@ -1,4 +1,4 @@
-// Authored "Illinois Civics: How Your State Government Works" — the Illinois entry in
+// Authored "Illinois Civics: How Your State Government Works", the Illinois entry in
 // the per-state Civics layer on Learn.WitUS. State-level companion to the general
 // Civics courses: those teach the SYSTEM; this teaches Illinois's version.
 //
@@ -21,23 +21,23 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_IL_COURSE: AuthoredCourse = {
   title: "Illinois Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Illinois governs itself — and how you take part where you live. You'll learn Illinois's modern Constitution of 1970; a plural executive of six separately elected statewide officers (including BOTH a Comptroller and a Treasurer); a General Assembly of 59 senators and 118 representatives; a Supreme Court elected in PARTISAN district races; Illinois's unusually LIMITED citizen initiative — usable only to change the structure of the Legislature, the route that produced the famous 1980 'Cutback Amendment'; and one of the nation's strongest HOME-RULE traditions, the opposite of Dillon's Rule. It also covers Illinois's 102 counties and Cook County, its voter-access rules, and flags time-sensitive facts, pointing to elections.il.gov. Cited to Illinois's own official sources (ilga.gov, elections.il.gov, illinoiscourts.gov).",
+    "A practical, non-partisan guide to how the state of Illinois governs itself, and how you take part where you live. You'll learn Illinois's modern Constitution of 1970; a plural executive of six separately elected statewide officers (including BOTH a Comptroller and a Treasurer); a General Assembly of 59 senators and 118 representatives; a Supreme Court elected in PARTISAN district races; Illinois's unusually LIMITED citizen initiative, usable only to change the structure of the Legislature, the route that produced the famous 1980 'Cutback Amendment'; and one of the nation's strongest HOME-RULE traditions, the opposite of Dillon's Rule. It also covers Illinois's 102 counties and Cook County, its voter-access rules, and flags time-sensitive facts, pointing to elections.il.gov. Cited to Illinois's own official sources (ilga.gov, elections.il.gov, illinoiscourts.gov).",
   lessons: [
     // ── Section 1: The Illinois Constitution ─────────────────────────────
     {
       slug: "il-constitution",
       title: "1 · Illinois's modern Constitution of 1970",
       section: "The Illinois Constitution",
-      body: `Illinois governs under its **Constitution of 1970**, which took effect **July 1, 1971** — a deliberately **modern** rewrite (Illinois's fourth constitution, after 1818, 1848, and 1870). Illinois became the **21st state on December 3, 1818** (Illinois General Assembly, n.d.).
+      body: `Illinois governs under its **Constitution of 1970**, which took effect **July 1, 1971**, a deliberately **modern** rewrite (Illinois's fourth constitution, after 1818, 1848, and 1870). Illinois became the **21st state on December 3, 1818** (Illinois General Assembly, n.d.).
 
 The 1970 constitution modernized Illinois government in ways this course highlights:
 - It created one of the nation's **strongest home-rule** systems, giving big local governments broad power.
-- It kept a **narrowly limited** form of citizen initiative — usable **only** to change the structure of the **Legislature itself.**
+- It kept a **narrowly limited** form of citizen initiative, usable **only** to change the structure of the **Legislature itself.**
 - It preserved an elected judiciary chosen in **partisan** races.
 
-A quick note on direct democracy: unlike Colorado or California, **Illinois voters cannot put ordinary laws or general constitutional amendments on the ballot by petition.** The citizen initiative exists, but it is **restricted to the Legislative Article** — a genuinely unusual limit covered in its own lesson.
+A quick note on direct democracy: unlike Colorado or California, **Illinois voters cannot put ordinary laws or general constitutional amendments on the ballot by petition.** The citizen initiative exists, but it is **restricted to the Legislative Article**, a genuinely unusual limit covered in its own lesson.
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Illinois's own government (ilga.gov, elections.il.gov, illinoiscourts.gov) is the authoritative source. When something is time-sensitive — like voter-registration rules — we say so.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Illinois's own government ([ilga.gov](https://ilga.gov), [elections.il.gov](https://elections.il.gov), [illinoiscourts.gov](https://illinoiscourts.gov)) is the authoritative source. When something is time-sensitive (like voter-registration rules) we say so.
 
 **Check yourself.** When did Illinois's current constitution take effect, and what is unusual about the scope of Illinois's citizen initiative?
 
@@ -49,18 +49,30 @@ A quick note on direct democracy: unlike Colorado or California, **Illinois vote
     // ── Section 2: The plural executive ──────────────────────────────────
     {
       slug: "il-executive",
-      title: "2 · Illinois's plural executive — six statewide officers",
+      title: "2 · Illinois's plural executive: six statewide officers",
       section: "The Three Branches",
+      recallContent: [
+        {
+          prompt: "When did Illinois's current constitution take effect?",
+          answer:
+            "The Constitution of 1970 took effect July 1, 1971; it is Illinois's fourth constitution (after 1818, 1848, and 1870).",
+        },
+        {
+          prompt: "What is unusual about the scope of Illinois's citizen initiative?",
+          answer:
+            "It is narrowly limited: citizens can use it only to change the structure of the Legislative Article, not ordinary laws or other amendments.",
+        },
+      ],
       body: `Illinois has a **plural executive**: voters elect **six** separate statewide constitutional officers, so executive power is spread across independently elected officials (Illinois General Assembly, n.d.):
 
-1. **Governor** — chief executive.
-2. **Lieutenant Governor** — since **2014**, the Governor and Lieutenant Governor **run together on a joint ticket.** ⚠️ Before that reform they were elected **separately**, which once produced a Governor and Lieutenant Governor **from different parties** — the reason the joint-ticket rule was adopted.
-3. **Attorney General** — the state's lawyer.
-4. **Secretary of State** — keeper of state records, driver's licenses, and more (a powerful office in Illinois).
-5. **Comptroller** — writes the state's checks and manages its accounts.
-6. **Treasurer** — the state's banker and investor.
+1. **Governor**: chief executive.
+2. **Lieutenant Governor**: since **2014**, the Governor and Lieutenant Governor **run together on a joint ticket.** ⚠️ Before that reform they were elected **separately**, which once produced a Governor and Lieutenant Governor **from different parties**, the reason the joint-ticket rule was adopted.
+3. **Attorney General**: the state's lawyer.
+4. **Secretary of State**: keeper of state records, driver's licenses, and more (a powerful office in Illinois).
+5. **Comptroller**: writes the state's checks and manages its accounts.
+6. **Treasurer**: the state's banker and investor.
 
-A distinctive Illinois quirk: it elects **both a Comptroller and a Treasurer** — **two** separate financial officers (one pays the bills, one holds and invests the money). Most states combine these; Illinois deliberately splits them as a check on each other, and a 2016 effort to merge the offices did not succeed.
+A distinctive Illinois quirk: it elects **both a Comptroller and a Treasurer**, **two** separate financial officers (one pays the bills, one holds and invests the money). Most states combine these; Illinois deliberately splits them as a check on each other, and a 2016 effort to merge the offices did not succeed.
 
 The **Judicial** branch (the Supreme Court and lower courts) and the **Legislative** branch (the General Assembly) are covered next.
 
@@ -76,19 +88,31 @@ The **Judicial** branch (the Supreme Court and lower courts) and the **Legislati
       slug: "il-legislature-courts",
       title: "3 · The General Assembly and the partisan-elected Supreme Court",
       section: "The Three Branches",
-      body: `**Legislative — the Illinois General Assembly.** A bicameral body meeting in Springfield (Illinois General Assembly, n.d.):
-- **House of Representatives — 118 representatives**, elected to **2-year terms.**
-- **Senate — 59 senators**, who serve on a staggered **"2-4-4"** cycle across each decade (tied to redistricting).
-- ⚠️ The House size — **118** — is itself a product of the **1980 "Cutback Amendment"** (next lesson), which shrank it from 177.
+      recallContent: [
+        {
+          prompt: "How many statewide constitutional officers do Illinois voters elect, and which two handle finances?",
+          answer:
+            "Six officers; the two financial ones are the Comptroller (writes the state's checks) and the Treasurer (holds and invests the money).",
+        },
+        {
+          prompt: "What changed in 2014 for the Governor and Lieutenant Governor?",
+          answer:
+            "They began running together on a joint ticket; before 2014 they were elected separately, which once produced a split-party pair.",
+        },
+      ],
+      body: `**Legislative: the Illinois General Assembly.** A bicameral body meeting in Springfield (Illinois General Assembly, n.d.):
+- **House of Representatives: 118 representatives**, elected to **2-year terms.**
+- **Senate: 59 senators**, who serve on a staggered **"2-4-4"** cycle across each decade (tied to redistricting).
+- ⚠️ The House size, **118**, is itself a product of the **1980 "Cutback Amendment"** (next lesson), which shrank it from 177.
 
-**Judicial — an elected, PARTISAN judiciary.** Here is an Illinois distinctive: unlike states with nonpartisan judicial ballots (Michigan, Washington) or appointment (Massachusetts), **Illinois elects its judges in openly PARTISAN elections** (Illinois Courts, n.d.):
-- The **Supreme Court of Illinois** has **7 justices**, elected from **judicial districts** — **3 from Cook County** (Chicago) and **1 each from four other districts** — in **partisan** races, to **10-year** terms.
+**Judicial: an elected, PARTISAN judiciary.** Here is an Illinois distinctive: unlike states with nonpartisan judicial ballots (Michigan, Washington) or appointment (Massachusetts), **Illinois elects its judges in openly PARTISAN elections** (Illinois Courts, n.d.):
+- The **Supreme Court of Illinois** has **7 justices**, elected from **judicial districts** (**3 from Cook County** (Chicago) and **1 each from four other districts**) in **partisan** races, to **10-year** terms.
 - After the first partisan election, a sitting justice runs in a nonpartisan **retention** election and needs a **60% "yes" vote** to stay.
 - Appellate and Circuit judges are likewise elected in partisan races (then retained).
 
-So in Illinois, judges run **with party labels** — a system that makes judicial elections notably political, and one worth remembering when you compare states.
+So in Illinois, judges run **with party labels**, a system that makes judicial elections notably political, and one worth remembering when you compare states.
 
-**Veto and override.** The Governor has strong veto tools — including an **amendatory veto** (returning a bill with specific changes) and a **line-item/reduction veto** on appropriations. Overrides require a **three-fifths vote of each chamber.**
+**Veto and override.** The Governor has strong veto tools, including an **amendatory veto** (returning a bill with specific changes) and a **line-item/reduction veto** on appropriations. Overrides require a **three-fifths vote of each chamber.**
 
 **Check yourself.** How are Illinois Supreme Court justices elected, and how many come from Cook County?
 
@@ -102,17 +126,29 @@ So in Illinois, judges run **with party labels** — a system that makes judicia
       slug: "il-initiative",
       title: "4 · The limited citizen initiative and the 1980 Cutback Amendment",
       section: "Making Law",
-      body: `Illinois has a citizen initiative — but a **deliberately narrow** one, and its most famous use reshaped the Legislature itself.
+      recallContent: [
+        {
+          prompt: "How are Illinois Supreme Court justices chosen, and how many come from Cook County?",
+          answer:
+            "They are elected in partisan district races to 10-year terms; 3 of the 7 justices come from Cook County, then each faces a nonpartisan retention vote needing 60% to stay.",
+        },
+        {
+          prompt: "How large are the two chambers of the Illinois General Assembly?",
+          answer:
+            "The House has 118 representatives on 2-year terms, and the Senate has 59 senators on a staggered 2-4-4 cycle.",
+        },
+      ],
+      body: `Illinois has a citizen initiative, but a **deliberately narrow** one, and its most famous use reshaped the Legislature itself.
 
-**The limit.** Under the 1970 Constitution (Article XIV, Section 3), Illinois citizens may use the initiative **ONLY to amend the "Legislative Article"** — the part of the constitution that governs the **structure and procedures of the General Assembly** (Illinois General Assembly, n.d.). Citizens **cannot** initiate ordinary laws, tax changes, or amendments on other subjects (education, rights, the executive, etc.). This makes Illinois's initiative one of the **most restricted** in any initiative state — a strong contrast with Colorado, where citizens can initiate almost anything.
+**The limit.** Under the 1970 Constitution (Article XIV, Section 3), Illinois citizens may use the initiative **ONLY to amend the "Legislative Article"**, the part of the constitution that governs the **structure and procedures of the General Assembly** (Illinois General Assembly, n.d.). Citizens **cannot** initiate ordinary laws, tax changes, or amendments on other subjects (education, rights, the executive, etc.). This makes Illinois's initiative one of the **most restricted** in any initiative state, a strong contrast with Colorado, where citizens can initiate almost anything.
 
-**The famous use — the 1980 "Cutback Amendment."** In 1980, Illinois voters used this narrow initiative power to pass the **Cutback Amendment**, which (Illinois General Assembly, n.d.):
+**The famous use: the 1980 "Cutback Amendment."** In 1980, Illinois voters used this narrow initiative power to pass the **Cutback Amendment**, which (Illinois General Assembly, n.d.):
 - **Shrank the House of Representatives from 177 members to 118**, and
 - **Ended Illinois's unusual multi-member districts and "cumulative voting"** system (in which each district had elected three representatives and voters could pile multiple votes on one candidate).
 
-It's a striking example: the **only** thing Illinois citizens can initiate — changing the Legislature's structure — is exactly what they did, dramatically cutting the size of their own House. Because the initiative is confined to the Legislative Article, the Cutback Amendment is essentially the model case of Illinois direct democracy.
+It's a striking example: the **only** thing Illinois citizens can initiate (changing the Legislature's structure) is exactly what they did, dramatically cutting the size of their own House. Because the initiative is confined to the Legislative Article, the Cutback Amendment is essentially the model case of Illinois direct democracy.
 
-Everything else — ordinary laws — is made **through the General Assembly** (introduction → committee → both chambers → the Governor's signature or veto).
+Everything else (ordinary laws) is made **through the General Assembly** (introduction → committee → both chambers → the Governor's signature or veto).
 
 **Check yourself.** What is the ONLY subject Illinois citizens may change by initiative, and what did the 1980 Cutback Amendment do?
 
@@ -125,18 +161,30 @@ Everything else — ordinary laws — is made **through the General Assembly** (
       slug: "il-home-rule",
       title: "5 · Home rule and local government (the opposite of Dillon's Rule)",
       section: "Local Government",
-      body: `Illinois is one of the strongest **home-rule** states in the country — the deliberate **opposite** of a Dillon's Rule state like Virginia (Illinois General Assembly, n.d.).
+      recallContent: [
+        {
+          prompt: "What is the ONLY subject Illinois citizens may change by initiative?",
+          answer:
+            "Only the Legislative Article, the structure and procedures of the General Assembly; they cannot initiate ordinary laws, tax changes, or other amendments.",
+        },
+        {
+          prompt: "What did the 1980 Cutback Amendment do?",
+          answer:
+            "It shrank the Illinois House from 177 to 118 members and ended the state's multi-member districts and cumulative voting.",
+        },
+      ],
+      body: `Illinois is one of the strongest **home-rule** states in the country, the deliberate **opposite** of a Dillon's Rule state like Virginia (Illinois General Assembly, n.d.).
 
-**What home rule means here.** Under Article VII of the 1970 Constitution, a **home-rule unit** may "exercise any power and perform any function pertaining to its government and affairs" **unless the state specifically limits it.** In other words, Illinois home-rule governments **start with broad power** and don't have to ask Springfield for permission for most local matters — the reverse of Dillon's Rule, where localities have only what the state grants (Illinois General Assembly, n.d.):
+**What home rule means here.** Under Article VII of the 1970 Constitution, a **home-rule unit** may "exercise any power and perform any function pertaining to its government and affairs" **unless the state specifically limits it.** In other words, Illinois home-rule governments **start with broad power** and don't have to ask Springfield for permission for most local matters, the reverse of Dillon's Rule, where localities have only what the state grants (Illinois General Assembly, n.d.):
 - **Municipalities over 25,000 people are automatically home-rule** units; smaller ones can **become** home rule by **referendum** (and can also vote to give it up).
 - Home-rule units have broad authority over local taxes, borrowing, licensing, and regulation.
 
 **The layers.** Illinois has (Illinois General Assembly, n.d.):
-- **102 counties** — including **Cook County**, one of the most populous local governments in the entire United States, which surrounds Chicago and itself has home-rule status.
+- **102 counties**, including **Cook County**, one of the most populous local governments in the entire United States, which surrounds Chicago and itself has home-rule status.
 - **Municipalities** (cities, villages, incorporated towns), many with home rule.
 - **Townships** in much of the state, plus a very large number of **special districts** (Illinois is often cited as having among the **most units of local government** of any state).
 
-The practical effect: Illinois pushes real power **down** to local governments, especially larger cities and Cook County — so "who decides?" is often a **local** answer.
+The practical effect: Illinois pushes real power **down** to local governments, especially larger cities and Cook County, so "who decides?" is often a **local** answer.
 
 **Check yourself.** How is Illinois home rule the opposite of Dillon's Rule, and which large Illinois county is itself a home-rule government?
 
@@ -149,16 +197,28 @@ The practical effect: Illinois pushes real power **down** to local governments, 
       slug: "il-elections-involved",
       title: "6 · Elections and how to take part",
       section: "Get Involved",
+      recallContent: [
+        {
+          prompt: "How is Illinois home rule the opposite of Dillon's Rule?",
+          answer:
+            "Home-rule units start with broad power to act on local affairs unless the state specifically limits them, rather than having only the powers the state expressly grants.",
+        },
+        {
+          prompt: "Which large Illinois county is itself a home-rule government?",
+          answer:
+            "Cook County, which surrounds Chicago and is one of the most populous local governments in the United States.",
+        },
+      ],
       body: `Illinois has expanded voting access substantially and offers real ways to take part (Illinois State Board of Elections, n.d.).
 
-**Access.** Illinois offers **same-day (Election-Day) registration**, **automatic voter registration**, **no-excuse vote-by-mail** (with a permanent vote-by-mail list you can join), **early voting**, and **online registration** — a broad menu of options. ⚠️ **Time-sensitive:** deadlines, drop-box availability, and ID requirements change and are administered by **county clerks and local election authorities** (Chicago and some cities run their own election boards). Confirm the **current** rules at **elections.il.gov** or your local election authority before you vote.
+**Access.** Illinois offers **same-day (Election-Day) registration**, **automatic voter registration**, **no-excuse vote-by-mail** (with a permanent vote-by-mail list you can join), **early voting**, and **online registration**, a broad menu of options. ⚠️ **Time-sensitive:** deadlines, drop-box availability, and ID requirements change and are administered by **county clerks and local election authorities** (Chicago and some cities run their own election boards). Confirm the **current** rules at **[elections.il.gov](https://elections.il.gov)** or your local election authority before you vote.
 
 **How to take part:**
-- **Register and vote** — even on Election Day; join the permanent vote-by-mail list at elections.il.gov if that suits you.
-- **Show up locally.** Because Illinois pushes power to home-rule cities, counties, townships, and school and special districts, **local meetings decide a lot** — and they're public.
-- **Contact your legislators** — you have one Representative and one Senator in Springfield.
-- **Use the (narrow) initiative.** Remember your one direct lever: citizens can initiate changes to the **structure of the General Assembly** — the power that produced the Cutback Amendment.
-- **Run** — school board, city/village council, township, and county offices are reachable local starting points.
+- **Register and vote**, even on Election Day; join the permanent vote-by-mail list at [elections.il.gov](https://elections.il.gov) if that suits you.
+- **Show up locally.** Because Illinois pushes power to home-rule cities, counties, townships, and school and special districts, **local meetings decide a lot**, and they're public.
+- **Contact your legislators**: you have one Representative and one Senator in Springfield.
+- **Use the (narrow) initiative.** Remember your one direct lever: citizens can initiate changes to the **structure of the General Assembly**, the power that produced the Cutback Amendment.
+- **Run**: school board, city/village council, township, and county offices are reachable local starting points.
 
 **Check yourself.** Name two ways Illinois makes registering and voting easier, and the one thing Illinois citizens can put on the ballot themselves.
 
@@ -184,22 +244,22 @@ The practical effect: Illinois pushes real power **down** to local governments, 
           },
           {
             prompt:
-              "Illinois elects BOTH a Comptroller and a ___ — two separate financial officers.",
+              "Illinois elects BOTH a Comptroller and a ___, two separate financial officers.",
             answer: "Treasurer",
             accept: ["treasurer"],
             explanation:
-              "The Comptroller writes the state's checks; the Treasurer holds and invests its money — a deliberate split as a check on each other.",
+              "The Comptroller writes the state's checks; the Treasurer holds and invests its money, a deliberate split as a check on each other.",
           },
           {
             prompt:
               "Illinois Supreme Court justices are elected in ___ (party-labeled) district races to 10-year terms.",
             answer: "partisan",
             explanation:
-              "Illinois elects judges in partisan races — 7 justices from districts (3 from Cook County), then nonpartisan retention needing 60% to stay.",
+              "Illinois elects judges in partisan races: 7 justices from districts (3 from Cook County), then nonpartisan retention needing 60% to stay.",
           },
           {
             prompt:
-              "Illinois citizens may use the initiative ONLY to amend the ___ Article — the part governing the structure of the General Assembly.",
+              "Illinois citizens may use the initiative ONLY to amend the ___ Article, the part governing the structure of the General Assembly.",
             answer: "Legislative",
             accept: ["legislative"],
             explanation:
@@ -217,7 +277,7 @@ The practical effect: Illinois pushes real power **down** to local governments, 
               "TRUE or FALSE: Illinois follows Dillon's Rule, giving localities only the powers the state expressly grants.",
             answer: "false",
             explanation:
-              "False. Illinois is a strong HOME-RULE state — the opposite of Dillon's Rule; home-rule units start with broad power.",
+              "False. Illinois is a strong HOME-RULE state, the opposite of Dillon's Rule; home-rule units start with broad power.",
           },
         ],
       },
@@ -293,7 +353,7 @@ The practical effect: Illinois pushes real power **down** to local governments, 
             ],
             correctIndex: 1,
             explanation:
-              "Illinois's initiative is confined to the Legislative Article — the narrowest such power among initiative states.",
+              "Illinois's initiative is confined to the Legislative Article, the narrowest such power among initiative states.",
             sourceLessonSlug: "il-initiative",
           },
           {
@@ -312,14 +372,14 @@ The practical effect: Illinois pushes real power **down** to local governments, 
           {
             prompt: "How is Illinois's local-government tradition best described?",
             options: [
-              "Dillon's Rule — localities have only granted powers",
-              "Strong home rule — home-rule units start with broad power unless the state limits them",
+              "Dillon's Rule: localities have only granted powers",
+              "Strong home rule: home-rule units start with broad power unless the state limits them",
               "All power held by the Governor",
               "No local governments at all",
             ],
             correctIndex: 1,
             explanation:
-              "Illinois is a strong home-rule state under Article VII — the opposite of Dillon's Rule.",
+              "Illinois is a strong home-rule state under Article VII, the opposite of Dillon's Rule.",
             sourceLessonSlug: "il-home-rule",
           },
           {
@@ -347,7 +407,7 @@ The practical effect: Illinois pushes real power **down** to local governments, 
             prompt: "Why does this course tell you to VERIFY Illinois's voting rules?",
             options: [
               "Because Illinois has no elections office",
-              "Because deadlines and ID rules change and are run by county clerks and local boards — confirm at elections.il.gov",
+              "Because deadlines and ID rules change and are run by county clerks and local boards; confirm at [elections.il.gov](https://elections.il.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
