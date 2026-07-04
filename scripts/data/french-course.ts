@@ -1,4 +1,4 @@
-// Authored, tense-progressive French course — mirrors the Spanish template
+// Authored, tense-progressive French course: mirrors the Spanish template
 // (scripts/data/spanish-course.ts). Same "Curb Appeall and friends" healthy-living
 // story, taught tense by tense (présent → futur proche → passé composé → imparfait →
 // contrast → futur simple → conditionnel → subjonctif) with a conversation challenge
@@ -7,9 +7,9 @@
 import type { AuthoredCourse } from "./authored-course";
 
 export const FRENCH_COURSE: AuthoredCourse = {
-  title: "French, Tense by Tense — the Curb Appeall Story",
+  title: "French, Tense by Tense: the Curb Appeall Story",
   description:
-    "Learn to speak French by following one continuous story about Curb Appeall and friends learning healthy-living and money habits. Each unit teaches one tense — present, near future, passé composé, imperfect, future, conditional, subjunctive — and ends with a conversation challenge so you produce the language yourself.",
+    "Learn to speak French by following one continuous story about Curb Appeall and friends learning healthy-living and money habits. Each unit teaches one tense (present, near future, passé composé, imperfect, future, conditional, subjunctive) and ends with a conversation challenge so you produce the language yourself.",
   lessons: [
     {
       slug: "present-reguliers",
@@ -85,8 +85,12 @@ I learn to cook fresh vegetables every day.
     },
     {
       slug: "present-irreguliers",
+      recallContent: [
+        { prompt: "What are the three regular verb endings you drop and replace when conjugating in the present?", answer: "-er, -ir, and -re." },
+        { prompt: "How do you say 'we help' with the -er verb aider?", answer: "Nous aidons." },
+      ],
       title: "2 · Present tense: the key irregular verbs",
-      body: `A few verbs are irregular but essential. **Être** (to be) and **avoir** (to have) are the two most important — you will also use them to build the past tense.
+      body: `A few verbs are irregular but essential. **Être** (to be) and **avoir** (to have) are the two most important. You will also use them to build the past tense.
 
 | | être | avoir | aller | faire | vouloir |
 |---|---|---|---|---|---|
@@ -155,8 +159,12 @@ I have a small garden where I grow herbs.
     },
     {
       slug: "futur-proche",
+      recallContent: [
+        { prompt: "Which two irregular verbs are the most important, and why?", answer: "Être (to be) and avoir (to have), because you also use them to build the past tense." },
+        { prompt: "Give the 'nous' form of être and the 'je' form of avoir.", answer: "Nous sommes; j'ai." },
+      ],
       title: "3 · The near future: aller + infinitive",
-      body: `The easiest future is **aller + an infinitive** — just like English "going to". Conjugate only **aller** (vais, vas, va, allons, allez, vont) and keep the second verb in its base form.
+      body: `The easiest future is **aller + an infinitive**, just like English "going to". Conjugate only **aller** (vais, vas, va, allons, allez, vont) and keep the second verb in its base form.
 
 **Formula:** je vais + _cuisiner_ → I am going to cook.
 
@@ -218,6 +226,10 @@ Are you going to study nutrition with us?
     },
     {
       slug: "passe-compose",
+      recallContent: [
+        { prompt: "How do you build the near future (futur proche)?", answer: "Conjugate aller in the present and add an infinitive; only aller changes." },
+        { prompt: "Say 'I am going to cook' in French.", answer: "Je vais cuisiner." },
+      ],
       title: "4 · The passé composé: finished actions in the past",
       body: `To talk about completed past actions, French uses the **passé composé**: a helper verb in the present (**avoir** for most verbs, **être** for a small set of movement/change verbs) + the **past participle**.
 
@@ -289,8 +301,12 @@ After the meal, they took a walk around the neighborhood.
     },
     {
       slug: "imparfait",
+      recallContent: [
+        { prompt: "What two parts make up the passé composé?", answer: "A present-tense helper (avoir for most verbs, être for a small set) plus the past participle." },
+        { prompt: "What are the regular past participle endings for -er, -ir, and -re verbs?", answer: "-er becomes -é, -ir becomes -i, and -re becomes -u." },
+      ],
       title: "5 · The imperfect: how things used to be",
-      body: `The **imparfait** describes the past that was ongoing, habitual, or background — "used to" and "was -ing". Take the **nous** form of the present, drop **-ons**, and add **-ais, -ais, -ait, -ions, -iez, -aient**.
+      body: `The **imparfait** describes the past that was ongoing, habitual, or background: "used to" and "was -ing". Take the **nous** form of the present, drop **-ons**, and add **-ais, -ais, -ait, -ions, -iez, -aient**.
 
 | travailler (nous travaillons →) | |
 |---|---|
@@ -355,6 +371,10 @@ The garden was always full of fresh fruit.
     },
     {
       slug: "passe-compose-vs-imparfait",
+      recallContent: [
+        { prompt: "What does the imparfait describe, and how do you get its stem?", answer: "The ongoing, habitual, or background past; take the 'nous' form of the present and drop -ons." },
+        { prompt: "Which verb has the only irregular imparfait stem?", answer: "être (j'étais, il était, nous étions)." },
+      ],
       title: "6 · Passé composé vs. imperfect",
       body: `Choosing between the two past tenses is the heart of storytelling. Use the **passé composé** for a single completed event, and the **imparfait** for the ongoing scene around it.
 
@@ -416,6 +436,10 @@ Everyone was talking about money, but the otter changed the subject.
     },
     {
       slug: "futur-simple",
+      recallContent: [
+        { prompt: "When telling a story, when do you use the imparfait versus the passé composé?", answer: "Imparfait for the background that was already happening; passé composé for the event that interrupts or moves the story forward." },
+        { prompt: "In 'Curb marchait quand il a vu la loutre', which verb is the interrupting event?", answer: "a vu (passé composé); marchait is the imparfait background." },
+      ],
       title: "7 · The simple future: plans and predictions",
       body: `The **futur simple** adds endings directly onto the infinitive (drop the final **-e** of -re verbs). The endings come from **avoir**: **-ai, -as, -a, -ons, -ez, -ont**.
 
@@ -482,8 +506,12 @@ Will you learn to cook with us?
     },
     {
       slug: "conditionnel",
+      recallContent: [
+        { prompt: "How do you form the futur simple for regular verbs?", answer: "Add -ai, -as, -a, -ons, -ez, -ont to the infinitive (drop the final -e of -re verbs)." },
+        { prompt: "What is the irregular future stem for être and for aller?", answer: "être becomes ser-, aller becomes ir-." },
+      ],
       title: "8 · The conditional: politeness and “would”",
-      body: `The **conditionnel** means "would" — for hypotheticals and politeness. Take the **future stem** and add the **imparfait** endings (-ais, -ais, -ait, -ions, -iez, -aient).
+      body: `The **conditionnel** means "would", for hypotheticals and politeness. Take the **future stem** and add the **imparfait** endings (-ais, -ais, -ait, -ions, -iez, -aient).
 
 ### Dans l'histoire
 **J'aimerais apprendre plus de recettes saines.**
@@ -543,8 +571,12 @@ Without a budget, it would be hard to save.
     },
     {
       slug: "subjonctif-present",
+      recallContent: [
+        { prompt: "How do you form the conditional (conditionnel)?", answer: "Take the future stem and add the imparfait endings (-ais, -ais, -ait, -ions, -iez, -aient)." },
+        { prompt: "What does the conditional express, and how do you politely say 'I would like'?", answer: "It means would, used for hypotheticals and politeness; say j'aimerais." },
+      ],
       title: "9 · The present subjunctive: wishes, advice, and doubt",
-      body: `The **subjonctif** appears after expressions of necessity, wish, emotion, or doubt — usually with **que**. Form it from the **ils** form of the present: drop **-ent** and add **-e, -es, -e, -ions, -iez, -ent**.
+      body: `The **subjonctif** appears after expressions of necessity, wish, emotion, or doubt, usually with **que**. Form it from the **ils** form of the present: drop **-ent** and add **-e, -es, -e, -ions, -iez, -ent**.
 
 **parler** → ils parlent → que je parle, que tu parles, qu'il parle, que nous parlions, qu'ils parlent
 
@@ -613,6 +645,10 @@ The garden needs to grow quickly.
     // fill-in exercise, then a quiz.
     {
       slug: "dialogue-cafe",
+      recallContent: [
+        { prompt: "How do you build the present subjunctive stem for a regular verb?", answer: "Take the ils form of the present, drop -ent, and add -e, -es, -e, -ions, -iez, -ent." },
+        { prompt: "Name a phrase that triggers the subjunctive.", answer: "Il faut que, il est important que, or vouloir que (all followed by que)." },
+      ],
       title: "Dialogue · Au café",
       section: "Dialogues",
       body: `Curb Appeall orders at a café. This conversation reuses the **present tense**, **avoir**, and the **polite conditional** (_je voudrais_ = "I would like") from the conditional unit.
@@ -674,6 +710,10 @@ _Curb: Here you go. Thank you very much!_
     },
     {
       slug: "dialogue-directions",
+      recallContent: [
+        { prompt: "What polite phrase does Curb use to order at the café?", answer: "Je voudrais (I would like), plus s'il vous plaît." },
+        { prompt: "How do you ask 'how much is it?' in French?", answer: "C'est combien? or Ça fait combien?" },
+      ],
       title: "Dialogue · Demander son chemin",
       section: "Dialogues",
       body: `Platypus is lost and asks the way to the market. This dialogue reuses **être** (location), **aller** (to go), and the **futur proche**.
@@ -732,6 +772,10 @@ _Platypus: Thank you very much for your help!_
     },
     {
       slug: "dialogue-presentations",
+      recallContent: [
+        { prompt: "How do you ask where the market is in French?", answer: "Où est le marché?" },
+        { prompt: "What do 'tout droit' and 'tournez à droite' mean?", answer: "Straight ahead, and turn right." },
+      ],
       title: "Dialogue · Les présentations",
       section: "Dialogues",
       body: `Curb introduces a new friend to the otter who teaches the group. This dialogue reuses **être** and **avoir**, and the **futur proche** for plans.
@@ -784,7 +828,7 @@ _Platypus: Perfect! I'm very happy to meet you._
           { prompt: "Profession : « Je ___ professeure. » (être, je)", answer: "suis", explanation: "La profession utilise être : je → suis." },
           { prompt: "Demande le nom : « Comment tu t'___ ? » (s'appeler)", answer: "appelles", explanation: "« Comment tu t'appelles ? » = what's your name?" },
           { prompt: "Émotion : « Je ___ très content de te rencontrer. » (être, je)", answer: "suis", explanation: "être : je → suis." },
-          { prompt: "Projet : « Demain, nous ___ cuisiner ensemble. » (aller, nous — futur proche)", answer: "allons", explanation: "aller : nous → allons ; futur proche = aller + infinitif." },
+          { prompt: "Projet : « Demain, nous ___ cuisiner ensemble. » (aller, nous, futur proche)", answer: "allons", explanation: "aller : nous → allons ; futur proche = aller + infinitif." },
         ],
       },
     },
@@ -803,7 +847,7 @@ _Platypus: Perfect! I'm very happy to meet you._
             sourceLessonSlug: "dialogue-cafe",
           },
           {
-            prompt: "« Nous avons des pommes » — quel verbe et quelle personne ?",
+            prompt: "« Nous avons des pommes » : quel verbe et quelle personne ?",
             options: ["avoir, je", "avoir, nous", "être, nous", "avoir, ils"],
             correctIndex: 1,
             explanation: "« avons » est avoir à la personne « nous ».",

@@ -1,4 +1,4 @@
-// Authored "Delaware Civics: How Your State Government Works" — the Delaware entry in
+// Authored "Delaware Civics: How Your State Government Works", the Delaware entry in
 // the per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Delaware's version.
 //
@@ -18,7 +18,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_DE_COURSE: AuthoredCourse = {
   title: "Delaware Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Delaware governs itself — and how you take part where you live. Delaware — 'The First State' to ratify the U.S. Constitution — has two features found nowhere else: it is the ONLY state that can amend its constitution WITHOUT a public vote (the Legislature does it alone), and it is the corporate capital of America, home to the famous Court of Chancery where most of the nation's big companies settle their business disputes. You'll learn Delaware's Constitution of 1897, its plural executive, its General Assembly of 21 senators and 41 representatives, its politically balanced appointed judiciary, and its three counties. Time-sensitive facts are flagged, pointing to elections.delaware.gov. Cited to Delaware's own official sources (legis.delaware.gov, elections.delaware.gov, courts.delaware.gov).",
+    "A practical, non-partisan guide to how the state of Delaware governs itself, and how you take part where you live. Delaware, 'The First State' to ratify the U.S. Constitution, has two features found nowhere else: it is the ONLY state that can amend its constitution WITHOUT a public vote (the Legislature does it alone), and it is the corporate capital of America, home to the famous Court of Chancery where most of the nation's big companies settle their business disputes. You'll learn Delaware's Constitution of 1897, its plural executive, its General Assembly of 21 senators and 41 representatives, its politically balanced appointed judiciary, and its three counties. Time-sensitive facts are flagged, pointing to elections.delaware.gov. Cited to Delaware's own official sources (legis.delaware.gov, elections.delaware.gov, courts.delaware.gov).",
   lessons: [
     // ── Section 1: Amending the constitution without a vote ──────────────
     {
@@ -27,13 +27,13 @@ export const STATE_CIVICS_DE_COURSE: AuthoredCourse = {
       section: "What Makes Delaware Unique",
       body: `Delaware's most distinctive civic rule is easy to state and genuinely unique: **Delaware is the ONLY state that can amend its constitution WITHOUT a vote of the people** (Delaware General Assembly, n.d.).
 
-**How it works.** In **every other state**, changing the constitution ultimately requires the **voters** to approve the amendment at the ballot. In Delaware, the **General Assembly (the Legislature) alone** can amend the state constitution: an amendment must pass by a **two-thirds vote of each chamber in two consecutive sessions** (with a legislative election in between) — and then it **becomes part of the constitution with no referendum** (Delaware General Assembly, n.d.). The people **never vote** on it directly.
+**How it works.** In **every other state**, changing the constitution ultimately requires the **voters** to approve the amendment at the ballot. In Delaware, the **General Assembly (the Legislature) alone** can amend the state constitution: an amendment must pass by a **two-thirds vote of each chamber in two consecutive sessions** (with a legislative election in between), and then it **becomes part of the constitution with no referendum** (Delaware General Assembly, n.d.). The people **never vote** on it directly.
 
-Why it matters: this makes the **elected Legislature unusually powerful** over Delaware's fundamental law, and it means Delaware's constitution can be changed **without a statewide campaign or ballot question.** It's the clearest sign of Delaware's legislature-centered tradition — and a favorite civics-trivia fact.
+Why it matters: this makes the **elected Legislature unusually powerful** over Delaware's fundamental law, and it means Delaware's constitution can be changed **without a statewide campaign or ballot question.** It's the clearest sign of Delaware's legislature-centered tradition, and a favorite civics-trivia fact.
 
 Delaware governs under its **Constitution of 1897** (its fourth), and it proudly calls itself **"The First State"** because it was the **first to ratify the U.S. Constitution, on December 7, 1787.**
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Delaware's own government (legis.delaware.gov, elections.delaware.gov, courts.delaware.gov) is the authoritative source. When something is time-sensitive — like voting rules — we say so.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Delaware's own government ([legis.delaware.gov](https://legis.delaware.gov), [elections.delaware.gov](https://elections.delaware.gov), [courts.delaware.gov](https://courts.delaware.gov)) is the authoritative source. When something is time-sensitive, like voting rules, we say so.
 
 **Check yourself.** What is unique about how Delaware amends its constitution, and why is Delaware called "The First State"?
 
@@ -49,9 +49,9 @@ Delaware governs under its **Constitution of 1897** (its fourth), and it proudly
       section: "What Makes Delaware Unique",
       body: `Delaware's second claim to fame shapes the **entire U.S. economy**: it is the **corporate capital of America.**
 
-**Why so many companies are 'Delaware corporations.'** A large majority of major U.S. companies — **most of the Fortune 500 and a huge share of publicly traded companies** — are **legally incorporated in Delaware**, even if they operate elsewhere (Delaware Courts, n.d.). They choose Delaware for its **well-developed, business-friendly corporate law** and, above all, for its **specialized court.**
+**Why so many companies are 'Delaware corporations.'** A large majority of major U.S. companies, **most of the Fortune 500 and a huge share of publicly traded companies**, are **legally incorporated in Delaware**, even if they operate elsewhere (Delaware Courts, n.d.). They choose Delaware for its **well-developed, business-friendly corporate law** and, above all, for its **specialized court.**
 
-**The Court of Chancery.** Delaware has a distinctive **Court of Chancery** — a **court of equity with NO juries**, whose judges (called the **Chancellor** and **Vice Chancellors**) are **expert in corporate and business law** (Delaware Courts, n.d.). It resolves shareholder disputes, mergers, and governance fights quickly and predictably, producing a deep body of **precedent** that companies rely on. Because of the Court of Chancery, **many of the most important business-law decisions in the country are made in Delaware** — a remarkable amount of influence for the second-smallest state.
+**The Court of Chancery.** Delaware has a distinctive **Court of Chancery**, a **court of equity with NO juries**, whose judges (called the **Chancellor** and **Vice Chancellors**) are **expert in corporate and business law** (Delaware Courts, n.d.). It resolves shareholder disputes, mergers, and governance fights quickly and predictably, producing a deep body of **precedent** that companies rely on. Because of the Court of Chancery, **many of the most important business-law decisions in the country are made in Delaware**, a remarkable amount of influence for the second-smallest state.
 
 Why it matters for civics: Delaware's government generates **revenue** from incorporation fees (a major part of the state budget) and gives Delaware **outsized influence** over how American businesses are governed. It's a case study in how a small state's **laws and courts** can shape the whole nation.
 
@@ -60,6 +60,18 @@ Why it matters for civics: Delaware's government generates **revenue** from inco
 ## Sources
 - Delaware Courts. (n.d.). *The Court of Chancery and Delaware corporate law*. courts.delaware.gov. https://courts.delaware.gov/
 - Delaware Department of State. (n.d.). *Division of Corporations*. corp.delaware.gov. https://corp.delaware.gov/`,
+      recallContent: [
+        {
+          prompt: "What is unique about how Delaware amends its constitution?",
+          answer:
+            "It is the only state where the Legislature (the General Assembly) can amend the constitution alone, by a two-thirds vote in two consecutive sessions, with no public referendum.",
+        },
+        {
+          prompt: "Why is Delaware called 'The First State'?",
+          answer:
+            "It was the first state to ratify the U.S. Constitution, on December 7, 1787.",
+        },
+      ],
     },
 
     // ── Section 3: The executive + General Assembly ──────────────────────
@@ -67,20 +79,20 @@ Why it matters for civics: Delaware's government generates **revenue** from inco
       slug: "de-executive-legislature",
       title: "3 · The executive and the General Assembly",
       section: "The Three Branches",
-      body: `**Executive — a plural executive.** Delaware voters elect several statewide officials (Delaware Department of Elections, n.d.):
-- The **Governor** and **Lieutenant Governor** (elected **separately** — they can be from different parties),
+      body: `**Executive: a plural executive.** Delaware voters elect several statewide officials (Delaware Department of Elections, n.d.):
+- The **Governor** and **Lieutenant Governor** (elected **separately**, they can be from different parties),
 - the **Attorney General**,
 - the **State Treasurer**,
 - the **State Auditor**, and
 - the **Insurance Commissioner.**
 The Governor serves a **4-year term**, limited to **two terms.**
 
-**Legislative — the Delaware General Assembly.** A bicameral body meeting in Dover (Delaware General Assembly, n.d.):
-- **House of Representatives — 41 members**, elected to **2-year terms.**
-- **Senate — 21 senators**, elected to **4-year terms.**
-- It is one of the **smaller legislatures** in the country — fitting for a small state — and part-time.
+**Legislative: the Delaware General Assembly.** A bicameral body meeting in Dover (Delaware General Assembly, n.d.):
+- **House of Representatives: 41 members**, elected to **2-year terms.**
+- **Senate: 21 senators**, elected to **4-year terms.**
+- It is one of the **smaller legislatures** in the country, fitting for a small state, and part-time.
 
-**Judicial — the Delaware courts.** Beyond the famous **Court of Chancery** (Lesson 2), Delaware has the **Superior Court**, other trial courts, and the **Delaware Supreme Court** (5 justices) at the top. How Delaware selects — and *balances* — its judges is distinctive, covered next.
+**Judicial: the Delaware courts.** Beyond the famous **Court of Chancery** (Lesson 2), Delaware has the **Superior Court**, other trial courts, and the **Delaware Supreme Court** (5 justices) at the top. How Delaware selects (and *balances*) its judges is distinctive, covered next.
 
 **Veto and override.** The Governor may veto bills; the General Assembly overrides with a **three-fifths vote of each chamber.**
 
@@ -89,6 +101,18 @@ The Governor serves a **4-year term**, limited to **two terms.**
 ## Sources
 - Delaware Department of Elections. (n.d.). *Statewide elected officials*. elections.delaware.gov. https://elections.delaware.gov/
 - Delaware General Assembly. (n.d.). *The General Assembly: House and Senate*. legis.delaware.gov. https://legis.delaware.gov/`,
+      recallContent: [
+        {
+          prompt: "Why do so many companies incorporate in Delaware?",
+          answer:
+            "For its well-developed, business-friendly corporate law and its specialized Court of Chancery, whose decisions create predictable precedent. Most of the Fortune 500 incorporate there.",
+        },
+        {
+          prompt: "What is unusual about Delaware's Court of Chancery?",
+          answer:
+            "It is a court of equity with no juries, decided by a Chancellor and Vice Chancellors who are experts in corporate and business law.",
+        },
+      ],
     },
 
     // ── Section 4: Politically balanced judiciary + no initiative ────────
@@ -96,19 +120,31 @@ The Governor serves a **4-year term**, limited to **two terms.**
       slug: "de-courts-lawmaking",
       title: "4 · A politically balanced bench, and how a bill becomes law",
       section: "Making Law",
-      body: `**How Delaware picks its judges — with a rare BALANCE rule.** Delaware **appoints** its judges: the **Governor nominates** and the **Senate confirms** them, for **12-year terms** (Delaware Courts, n.d.). But Delaware adds a genuinely unusual requirement written into its constitution: a **political-balance ("major-party balance") rule.** For its major courts, **no more than a bare majority of judges may belong to any one political party**, and the remainder must belong to the **other major party** (Delaware Courts, n.d.). In other words, Delaware **constitutionally requires its courts to be roughly bipartisan** — a feature no other state mandates so explicitly. (The exact application has been litigated, so ⚠️ confirm current details at courts.delaware.gov.) The goal is a judiciary seen as **balanced and non-partisan in outcome** — part of why businesses trust Delaware's courts.
+      body: `**How Delaware picks its judges, with a rare BALANCE rule.** Delaware **appoints** its judges: the **Governor nominates** and the **Senate confirms** them, for **12-year terms** (Delaware Courts, n.d.). But Delaware adds a genuinely unusual requirement written into its constitution: a **political-balance ("major-party balance") rule.** For its major courts, **no more than a bare majority of judges may belong to any one political party**, and the remainder must belong to the **other major party** (Delaware Courts, n.d.). In other words, Delaware **constitutionally requires its courts to be roughly bipartisan**, a feature no other state mandates so explicitly. (The exact application has been litigated, so ⚠️ confirm current details at [courts.delaware.gov](https://courts.delaware.gov).) The goal is a judiciary seen as **balanced and non-partisan in outcome**, part of why businesses trust Delaware's courts.
 
 **How a bill becomes law** (Delaware General Assembly, n.d.):
 1. **Introduction** in the House or Senate; **committee** review; **floor votes** in both chambers.
-2. **Governor** — sign, veto (three-fifths override), or let it become law.
+2. **Governor**: sign, veto (three-fifths override), or let it become law.
 
-**No citizen initiative.** Delaware citizens **cannot** put a statute or amendment on the ballot by petition — and remember from Lesson 1 that they **don't even vote on constitutional amendments.** So Delaware's lawmaking is, by design, **channeled through the elected General Assembly** more completely than almost anywhere else.
+**No citizen initiative.** Delaware citizens **cannot** put a statute or amendment on the ballot by petition, and remember from Lesson 1 that they **don't even vote on constitutional amendments.** So Delaware's lawmaking is, by design, **channeled through the elected General Assembly** more completely than almost anywhere else.
 
 **Check yourself.** What balance does Delaware require on its courts, and can Delaware citizens start a law by initiative?
 
 ## Sources
 - Delaware Courts. (n.d.). *Judicial appointment and the major-party balance requirement*. courts.delaware.gov. https://courts.delaware.gov/
 - Delaware General Assembly. (n.d.). *How a bill becomes law*. legis.delaware.gov. https://legis.delaware.gov/`,
+      recallContent: [
+        {
+          prompt: "How many members sit in each chamber of Delaware's General Assembly, and what are their terms?",
+          answer:
+            "The House has 41 members elected to 2-year terms; the Senate has 21 senators elected to 4-year terms.",
+        },
+        {
+          prompt: "What does it mean that Delaware has a 'plural executive'?",
+          answer:
+            "Voters elect several statewide officials separately, including the Governor and Lieutenant Governor (who can be from different parties), plus the Attorney General, Treasurer, Auditor, and Insurance Commissioner.",
+        },
+      ],
     },
 
     // ── Section 5: Local government + getting involved ───────────────────
@@ -116,25 +152,37 @@ The Governor serves a **4-year term**, limited to **two terms.**
       slug: "de-local-involved",
       title: "5 · Local government (just three counties) and how to take part",
       section: "Get Involved",
-      body: `**Local government.** Delaware's local map is simple — it has the **fewest counties of any state** (Delaware General Assembly, n.d.):
-- **3 counties: New Castle, Kent, and Sussex** — each governed by an elected **county council or Levy Court**, handling land use, some services, and property assessment.
+      body: `**Local government.** Delaware's local map is simple: it has the **fewest counties of any state** (Delaware General Assembly, n.d.):
+- **3 counties: New Castle, Kent, and Sussex**, each governed by an elected **county council or Levy Court**, handling land use, some services, and property assessment.
 - **Cities and towns** (like Wilmington and Dover) provide municipal services.
 - **School districts** operate locally.
 Because Delaware is small and the state government is strong, much is handled at the **state** level, with counties and towns filling in local services.
 
-**Voting.** ⚠️ **Time-sensitive:** Delaware has **expanded voting access** in recent years (adding early voting and same-day registration provisions), though some changes have faced legal challenges under Delaware's constitution. Rules and deadlines are administered by the **Department of Elections and county offices** and can change — confirm the **current** details at **elections.delaware.gov** before you vote.
+**Voting.** ⚠️ **Time-sensitive:** Delaware has **expanded voting access** in recent years (adding early voting and same-day registration provisions), though some changes have faced legal challenges under Delaware's constitution. Rules and deadlines are administered by the **Department of Elections and county offices** and can change: confirm the **current** details at **[elections.delaware.gov](https://elections.delaware.gov)** before you vote.
 
 **How to take part:**
-- **Register and vote** — check current early-voting and registration rules at elections.delaware.gov.
+- **Register and vote**: check current early-voting and registration rules at [elections.delaware.gov](https://elections.delaware.gov).
 - **Show up locally.** Your **county council/Levy Court**, city/town council, and school board hold public meetings.
-- **Contact your legislators** in Dover — you have one Representative and one Senator. Because the Legislature can even amend the constitution alone, contacting legislators carries real weight in Delaware.
-- **Run** — school board, town council, and county council are reachable local starting points.
+- **Contact your legislators** in Dover. You have one Representative and one Senator. Because the Legislature can even amend the constitution alone, contacting legislators carries real weight in Delaware.
+- **Run**: school board, town council, and county council are reachable local starting points.
 
 **Check yourself.** How many counties does Delaware have, and why does contacting your legislator carry special weight here?
 
 ## Sources
 - Delaware General Assembly. (n.d.). *Local government: the three counties and municipalities*. legis.delaware.gov. https://legis.delaware.gov/
 - Delaware Department of Elections. (n.d.). *Registering and voting in Delaware*. elections.delaware.gov. https://elections.delaware.gov/`,
+      recallContent: [
+        {
+          prompt: "How are Delaware's judges selected, and for how long do they serve?",
+          answer:
+            "The Governor nominates them and the Senate confirms them for 12-year terms, subject to a major-party balance rule.",
+        },
+        {
+          prompt: "What is Delaware's 'major-party balance' rule for its courts?",
+          answer:
+            "On its major courts, no more than a bare majority of judges may belong to one political party; the rest must belong to the other major party, making the bench roughly bipartisan by constitution.",
+        },
+      ],
     },
 
     // ── Section 6: Practice (fill in the blanks) ─────────────────────────
@@ -152,7 +200,7 @@ Because Delaware is small and the state government is strong, much is handled at
             answer: "people",
             accept: ["voters", "public"],
             explanation:
-              "The General Assembly amends the constitution by a two-thirds vote in two consecutive sessions — no referendum required.",
+              "The General Assembly amends the constitution by a two-thirds vote in two consecutive sessions, no referendum required.",
           },
           {
             prompt:
@@ -168,18 +216,18 @@ Because Delaware is small and the state government is strong, much is handled at
             answer: "First",
             accept: ["first"],
             explanation:
-              "Delaware ratified the U.S. Constitution on December 7, 1787 — the first state to do so.",
+              "Delaware ratified the U.S. Constitution on December 7, 1787, the first state to do so.",
           },
           {
             prompt:
               "Delaware's constitution requires a political ___ on its major courts (roughly bipartisan judges).",
             answer: "balance",
             explanation:
-              "No more than a bare majority of judges may be from one major party; the rest must be from the other — a unique constitutional rule.",
+              "No more than a bare majority of judges may be from one major party; the rest must be from the other, a unique constitutional rule.",
           },
           {
             prompt:
-              "Delaware has just ___ counties — the fewest of any state.",
+              "Delaware has just ___ counties, the fewest of any state.",
             answer: "3",
             accept: ["three"],
             explanation:
@@ -190,7 +238,7 @@ Because Delaware is small and the state government is strong, much is handled at
               "TRUE or FALSE: Delaware voters ratify constitutional amendments at the ballot box.",
             answer: "false",
             explanation:
-              "False. Delaware is the only state where the Legislature amends the constitution alone — voters never vote on amendments.",
+              "False. Delaware is the only state where the Legislature amends the constitution alone, voters never vote on amendments.",
           },
         ],
       },
@@ -208,7 +256,7 @@ Because Delaware is small and the state government is strong, much is handled at
             prompt: "What is unique about how Delaware amends its constitution?",
             options: [
               "It requires a unanimous public vote",
-              "The Legislature can amend it alone (two-thirds in two sessions) — no public vote is required",
+              "The Legislature can amend it alone (two-thirds in two sessions), no public vote is required",
               "Only the Governor can amend it",
               "It can never be amended",
             ],
@@ -273,7 +321,7 @@ Because Delaware is small and the state government is strong, much is handled at
             prompt: "What balance does Delaware's constitution require on its major courts?",
             options: [
               "An equal number of men and women",
-              "A major-party balance — no more than a bare majority from one party, the rest from the other",
+              "A major-party balance, no more than a bare majority from one party, the rest from the other",
               "Only judges over age 60",
               "Only judges from Wilmington",
             ],
@@ -299,7 +347,7 @@ Because Delaware is small and the state government is strong, much is handled at
             prompt: "Can Delaware citizens put a law on the ballot by initiative?",
             options: [
               "Yes, a strong initiative",
-              "No — Delaware has no initiative, and citizens don't even vote on constitutional amendments",
+              "No, Delaware has no initiative, and citizens don't even vote on constitutional amendments",
               "Only in even years",
               "Only for corporate law",
             ],
@@ -313,14 +361,14 @@ Because Delaware is small and the state government is strong, much is handled at
             options: ["3", "23", "64", "100"],
             correctIndex: 0,
             explanation:
-              "Delaware has just three counties — New Castle, Kent, and Sussex — the fewest of any state.",
+              "Delaware has just three counties (New Castle, Kent, and Sussex), the fewest of any state.",
             sourceLessonSlug: "de-local-involved",
           },
           {
             prompt: "Why does this course tell you to VERIFY Delaware's judiciary and voting rules?",
             options: [
               "Because Delaware has no government website",
-              "Because the party-balance rule has been litigated and voting-access changes are recent — confirm at courts.delaware.gov / elections.delaware.gov",
+              "Because the party-balance rule has been litigated and voting-access changes are recent: confirm at [courts.delaware.gov](https://courts.delaware.gov) / [elections.delaware.gov](https://elections.delaware.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],

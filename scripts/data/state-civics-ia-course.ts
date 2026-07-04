@@ -1,4 +1,4 @@
-// Authored "Iowa Civics: How Your State Government Works" — the Iowa entry in the
+// Authored "Iowa Civics: How Your State Government Works", the Iowa entry in the
 // per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Iowa's version.
 //
@@ -19,22 +19,22 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_IA_COURSE: AuthoredCourse = {
   title: "Iowa Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Iowa governs itself — and how you take part where you live. Iowa is famous for going first: its precinct caucuses have traditionally opened the presidential nominating season, giving a small state outsized attention. Iowa is also admired for something quieter but important — a nonpartisan redistricting process widely held up as a national model. You'll learn Iowa's Constitution of 1857, its plural executive, its General Assembly of 50 senators and 100 representatives, its merit-selection judiciary, its nonpartisan redistricting, and its 99 counties. Time-sensitive facts are flagged, pointing to sos.iowa.gov. Cited to Iowa's own official sources (legis.iowa.gov, sos.iowa.gov, iowacourts.gov).",
+    "A practical, non-partisan guide to how the state of Iowa governs itself, and how you take part where you live. Iowa is famous for going first: its precinct caucuses have traditionally opened the presidential nominating season, giving a small state outsized attention. Iowa is also admired for something quieter but important: a nonpartisan redistricting process widely held up as a national model. You'll learn Iowa's Constitution of 1857, its plural executive, its General Assembly of 50 senators and 100 representatives, its merit-selection judiciary, its nonpartisan redistricting, and its 99 counties. Time-sensitive facts are flagged, pointing to sos.iowa.gov. Cited to Iowa's own official sources (legis.iowa.gov, sos.iowa.gov, iowacourts.gov).",
   lessons: [
     // ── Section 1: The caucuses ──────────────────────────────────────────
     {
       slug: "ia-caucuses",
       title: "1 · The Iowa caucuses: going first in presidential politics",
       section: "What Makes Iowa Unique",
-      body: `Iowa's best-known civic feature is its **precinct caucuses** — neighborhood gatherings that, for decades, opened the nation's **presidential nominating season** (Iowa Secretary of State, n.d.).
+      body: `Iowa's best-known civic feature is its **precinct caucuses**, neighborhood gatherings that, for decades, opened the nation's **presidential nominating season** (Iowa Secretary of State, n.d.).
 
-**What a caucus is.** Unlike a **primary** (where you quietly cast a ballot at a polling place), an Iowa **caucus** is a **meeting.** On caucus night, neighbors gather at local precinct sites — school gyms, libraries, community centers — to **discuss candidates and party business** and to register their **presidential preference** (Iowa Secretary of State, n.d.). It's a **participatory, in-person** form of politics, run by the **political parties**, not the state elections office.
+**What a caucus is.** Unlike a **primary** (where you quietly cast a ballot at a polling place), an Iowa **caucus** is a **meeting.** On caucus night, neighbors gather at local precinct sites (school gyms, libraries, community centers) to **discuss candidates and party business** and to register their **presidential preference** (Iowa Secretary of State, n.d.). It's a **participatory, in-person** form of politics, run by the **political parties**, not the state elections office.
 
-**"First in the nation."** Iowa scheduled its caucuses **first on the presidential calendar**, so candidates spent enormous time meeting Iowans face-to-face — giving a small farm state **outsized influence** and a tradition of **retail, up-close campaigning.** ⚠️ **Time-sensitive:** the presidential nominating **calendar and party rules have changed recently** (the parties have reordered early contests), so Iowa's exact "first" status varies by party and year — confirm the **current** calendar at sos.iowa.gov and the parties. Whatever the order, the **caucus format** — neighbors meeting to do politics together — remains a distinctive Iowa civic institution.
+**"First in the nation."** Iowa scheduled its caucuses **first on the presidential calendar**, so candidates spent enormous time meeting Iowans face-to-face, giving a small farm state **outsized influence** and a tradition of **retail, up-close campaigning.** ⚠️ **Time-sensitive:** the presidential nominating **calendar and party rules have changed recently** (the parties have reordered early contests), so Iowa's exact "first" status varies by party and year. Confirm the **current** calendar at [sos.iowa.gov](https://sos.iowa.gov) and the parties. Whatever the order, the **caucus format** (neighbors meeting to do politics together) remains a distinctive Iowa civic institution.
 
 Iowa governs under its **Constitution of 1857**, and became the **29th state on December 28, 1846.**
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Iowa's own government (legis.iowa.gov, sos.iowa.gov, iowacourts.gov) is the authoritative source.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Iowa's own government ([legis.iowa.gov](https://legis.iowa.gov), [sos.iowa.gov](https://sos.iowa.gov), [iowacourts.gov](https://iowacourts.gov)) is the authoritative source.
 
 **Check yourself.** How is a caucus different from a primary, and why did Iowa's caucuses get so much attention?
 
@@ -46,17 +46,29 @@ Iowa governs under its **Constitution of 1857**, and became the **29th state on 
     // ── Section 2: Nonpartisan redistricting ─────────────────────────────
     {
       slug: "ia-redistricting",
-      title: "2 · Iowa's nonpartisan redistricting — a national model",
+      title: "2 · Iowa's nonpartisan redistricting: a national model",
       section: "What Makes Iowa Unique",
+      recallContent: [
+        {
+          prompt: "How is an Iowa caucus different from a primary?",
+          answer:
+            "A caucus is an in-person neighborhood meeting run by the parties to discuss candidates and register a presidential preference, not a quiet ballot cast at a polling place.",
+        },
+        {
+          prompt: "Why did Iowa's caucuses draw such outsized attention?",
+          answer:
+            "They traditionally went first on the presidential calendar, giving a small farm state huge influence and a tradition of face-to-face retail campaigning (though the calendar has since shifted).",
+        },
+      ],
       body: `Iowa's second distinctive feature is quieter but nationally admired: its **nonpartisan redistricting process** (Iowa Legislature, n.d.).
 
-**The problem it solves.** In most states, the **Legislature draws its own district maps**, which invites **gerrymandering** — drawing lines to favor the party in power. Iowa does it differently (Iowa Legislature, n.d.):
-- A **nonpartisan state agency — the Legislative Services Agency (LSA)** — draws Iowa's legislative and congressional maps using **neutral criteria** (equal population, compact districts, respect for county and city lines), and is **forbidden from considering** past election results, incumbents' addresses, or party registration.
+**The problem it solves.** In most states, the **Legislature draws its own district maps**, which invites **gerrymandering**, drawing lines to favor the party in power. Iowa does it differently (Iowa Legislature, n.d.):
+- A **nonpartisan state agency, the Legislative Services Agency (LSA),** draws Iowa's legislative and congressional maps using **neutral criteria** (equal population, compact districts, respect for county and city lines), and is **forbidden from considering** past election results, incumbents' addresses, or party registration.
 - The **Legislature then votes the maps up or down** (with limited ability to amend), and if it rejects them, the LSA prepares another plan.
 
-The result is districts drawn by **professionals following neutral rules**, not by politicians protecting themselves — which is why Iowa's system is frequently cited as a **model for reducing gerrymandering.** It reflects an Iowa preference for **fair, transparent process** over partisan advantage.
+The result is districts drawn by **professionals following neutral rules**, not by politicians protecting themselves, which is why Iowa's system is frequently cited as a **model for reducing gerrymandering.** It reflects an Iowa preference for **fair, transparent process** over partisan advantage.
 
-Why it matters: redistricting decides **which votes matter** for a decade. Iowa shows that a state can **take the pen out of politicians' hands** and hand it to a neutral agency — a reform other states study.
+Why it matters: redistricting decides **which votes matter** for a decade. Iowa shows that a state can **take the pen out of politicians' hands** and hand it to a neutral agency, a reform other states study.
 
 **Check yourself.** Who draws Iowa's district maps, and what is that body forbidden from considering?
 
@@ -69,19 +81,31 @@ Why it matters: redistricting decides **which votes matter** for a decade. Iowa 
       slug: "ia-executive-legislature",
       title: "3 · The executive and the General Assembly",
       section: "The Three Branches",
-      body: `**Executive — a plural executive.** Iowa voters elect several statewide officials (Iowa Secretary of State, n.d.):
+      recallContent: [
+        {
+          prompt: "Who draws Iowa's legislative and congressional district maps?",
+          answer:
+            "The nonpartisan Legislative Services Agency (LSA), using neutral criteria such as equal population, compact districts, and respect for county and city lines.",
+        },
+        {
+          prompt: "What is the LSA forbidden from considering when it draws maps?",
+          answer:
+            "Past election results, incumbents' addresses, and party registration, which is why Iowa's process is a national model for reducing gerrymandering.",
+        },
+      ],
+      body: `**Executive: a plural executive.** Iowa voters elect several statewide officials (Iowa Secretary of State, n.d.):
 - The **Governor** and **Lieutenant Governor** run **together on a joint ticket.**
 - Voters separately elect the **Secretary of State** (who runs elections), the **Attorney General**, the **State Treasurer**, the **State Auditor**, and the **Secretary of Agriculture** (a fitting office for a major farm state).
 Statewide officers serve **4-year terms.**
 
-**Legislative — the Iowa General Assembly.** A bicameral body meeting in Des Moines (Iowa Legislature, n.d.):
-- **House of Representatives — 100 members** (2-year terms), and **Senate — 50 senators** (4-year terms).
+**Legislative: the Iowa General Assembly.** A bicameral body meeting in Des Moines (Iowa Legislature, n.d.):
+- **House of Representatives: 100 members** (2-year terms), and **Senate: 50 senators** (4-year terms).
 - It is a part-time citizen legislature with annual sessions.
 
-**Judicial — merit selection plus retention.** Iowa uses the **"Missouri Plan"** (Iowa Judicial Branch, n.d.):
+**Judicial: merit selection plus retention.** Iowa uses the **"Missouri Plan"** (Iowa Judicial Branch, n.d.):
 1. A **State Judicial Nominating Commission** screens applicants and sends the Governor a list.
 2. The **Governor appoints** a judge from that list.
-3. The judge later faces voters in a **nonpartisan yes/no retention election.** The **Iowa Supreme Court** has **7 justices.** (Iowa's retention system drew national attention in 2010 when voters removed three justices — a reminder that retention votes are real.)
+3. The judge later faces voters in a **nonpartisan yes/no retention election.** The **Iowa Supreme Court** has **7 justices.** (Iowa's retention system drew national attention in 2010 when voters removed three justices, a reminder that retention votes are real.)
 
 **Veto and override.** The Governor may veto bills (and has a strong **item veto** on appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
 
@@ -97,24 +121,36 @@ Statewide officers serve **4-year terms.**
       slug: "ia-lawmaking-involved",
       title: "4 · How a bill becomes law, local government, and getting involved",
       section: "Get Involved",
+      recallContent: [
+        {
+          prompt: "How many members are in each chamber of the Iowa General Assembly?",
+          answer:
+            "The House has 100 members serving 2-year terms and the Senate has 50 senators serving 4-year terms.",
+        },
+        {
+          prompt: "How does Iowa choose and keep its Supreme Court justices?",
+          answer:
+            "By the Missouri Plan: a nominating commission sends the Governor a list, the Governor appoints from it, and the justice later faces a nonpartisan yes/no retention election.",
+        },
+      ],
       body: `**How a bill becomes law** (Iowa Legislature, n.d.):
 1. **Introduction** in the House or Senate; **committee** review; **floor votes** in both chambers.
-2. **Governor** — sign, veto (two-thirds override), or **item veto** appropriations.
-⚠️ A note on direct democracy: Iowa has **no statewide citizen initiative** for general laws — an unusual gap for a Midwestern state. Constitutional **amendments** are proposed by the **Legislature** (which must pass them in **two consecutive General Assemblies**) and then ratified by the **voters.**
+2. **Governor**: sign, veto (two-thirds override), or **item veto** appropriations.
+⚠️ A note on direct democracy: Iowa has **no statewide citizen initiative** for general laws, an unusual gap for a Midwestern state. Constitutional **amendments** are proposed by the **Legislature** (which must pass them in **two consecutive General Assemblies**) and then ratified by the **voters.**
 
 **Local government** (Iowa Legislature, n.d.):
-- **99 counties** — a famously large number for the state's size — governed by elected **boards of supervisors**, plus other elected county officials.
+- **99 counties** (a famously large number for the state's size) governed by elected **boards of supervisors**, plus other elected county officials.
 - **Cities** provide municipal services (Iowa has a strong tradition of city home rule); **townships** and **special districts** round things out.
 - **School districts** are locally run.
 
-**Voting.** ⚠️ **Time-sensitive:** Iowa offers **early/absentee voting** and requires **ID**; it has adjusted early-voting windows and deadlines in recent years, administered by **county auditors.** Confirm the **current** rules at **sos.iowa.gov** before you vote.
+**Voting.** ⚠️ **Time-sensitive:** Iowa offers **early/absentee voting** and requires **ID**; it has adjusted early-voting windows and deadlines in recent years, administered by **county auditors.** Confirm the **current** rules at **[sos.iowa.gov](https://sos.iowa.gov)** before you vote.
 
 **How to take part:**
 - **Caucus and vote.** Attend your **precinct caucus** (a hands-on way to shape party business and, in presidential years, register a preference), then vote in elections.
-- **Register and vote** — check current early-voting and ID rules at sos.iowa.gov.
+- **Register and vote**: check current early-voting and ID rules at [sos.iowa.gov](https://sos.iowa.gov).
 - **Show up locally.** County boards of supervisors, city councils, and school boards hold public meetings.
-- **Contact your legislators** in Des Moines — you have one Representative and one Senator.
-- **Run** — school board, city council, and county board of supervisors are reachable local starting points.
+- **Contact your legislators** in Des Moines. You have one Representative and one Senator.
+- **Run**: school board, city council, and county board of supervisors are reachable local starting points.
 
 **Check yourself.** Does Iowa have a statewide citizen initiative, and what hands-on party event can you attend?
 
@@ -146,7 +182,7 @@ Statewide officers serve **4-year terms.**
             answer: "Agency",
             accept: ["agency"],
             explanation:
-              "The LSA draws maps using neutral criteria and cannot consider election results, incumbents, or party — a model for reducing gerrymandering.",
+              "The LSA draws maps using neutral criteria and cannot consider election results, incumbents, or party, a model for reducing gerrymandering.",
           },
           {
             prompt:
@@ -199,7 +235,7 @@ Statewide officers serve **4-year terms.**
             ],
             correctIndex: 1,
             explanation:
-              "A caucus is a participatory party meeting, not a ballot primary — a distinctive Iowa institution.",
+              "A caucus is a participatory party meeting, not a ballot primary, a distinctive Iowa institution.",
             sourceLessonSlug: "ia-caucuses",
           },
           {
@@ -225,7 +261,7 @@ Statewide officers serve **4-year terms.**
             ],
             correctIndex: 1,
             explanation:
-              "The LSA draws maps on neutral criteria and cannot consider election results, incumbents, or party — a national model.",
+              "The LSA draws maps on neutral criteria and cannot consider election results, incumbents, or party, a national model.",
             sourceLessonSlug: "ia-redistricting",
           },
           {
@@ -238,7 +274,7 @@ Statewide officers serve **4-year terms.**
             ],
             correctIndex: 1,
             explanation:
-              "Iowa's neutral process bars the LSA from using partisan data — the heart of its anti-gerrymandering model.",
+              "Iowa's neutral process bars the LSA from using partisan data, the heart of its anti-gerrymandering model.",
             sourceLessonSlug: "ia-redistricting",
           },
           {
@@ -271,7 +307,7 @@ Statewide officers serve **4-year terms.**
             prompt: "Does Iowa have a statewide citizen initiative?",
             options: [
               "Yes, a strong one",
-              "No — amendments come from two consecutive General Assemblies, then voters",
+              "No: amendments come from two consecutive General Assemblies, then voters",
               "Only for taxes",
               "Only during caucuses",
             ],
@@ -305,13 +341,13 @@ Statewide officers serve **4-year terms.**
             prompt: "Why does this course tell you to VERIFY Iowa's caucus calendar and voting rules?",
             options: [
               "Because Iowa has no elections office",
-              "Because the presidential nominating calendar has shifted and early-voting rules change and are run by county auditors — confirm at sos.iowa.gov",
+              "Because the presidential nominating calendar has shifted and early-voting rules change and are run by county auditors, confirm at [sos.iowa.gov](https://sos.iowa.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
             correctIndex: 1,
             explanation:
-              "Iowa's caucus 'first' status varies by party/year and voting rules are administered locally, so sos.iowa.gov is authoritative.",
+              "Iowa's caucus 'first' status varies by party/year and voting rules are administered locally, so [sos.iowa.gov](https://sos.iowa.gov) is authoritative.",
             sourceLessonSlug: "ia-lawmaking-involved",
           },
         ],

@@ -1,4 +1,4 @@
-// Authored "Utah Civics: How Your State Government Works" — the Utah entry in the
+// Authored "Utah Civics: How Your State Government Works", the Utah entry in the
 // per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Utah's version.
 //
@@ -19,7 +19,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_UT_COURSE: AuthoredCourse = {
   title: "Utah Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Utah governs itself — and how you take part where you live. Utah has a distinctive way candidates get on the ballot: since 2014 they can qualify EITHER through the traditional caucus-and-convention system OR by gathering signatures (or both) — a 'dual path' found in few other states. You'll also learn Utah's Constitution of 1896 (statehood came only after banning polygamy), its plural executive, its part-time Legislature of 29 senators and 75 representatives that meets 45 days a year, its merit-selection judiciary with retention elections, its all-mail elections, and its 29 counties. Time-sensitive facts are flagged, pointing to vote.utah.gov. Cited to Utah's own official sources (le.utah.gov, vote.utah.gov, utcourts.gov).",
+    "A practical, non-partisan guide to how the state of Utah governs itself, and how you take part where you live. Utah has a distinctive way candidates get on the ballot: since 2014 they can qualify EITHER through the traditional caucus-and-convention system OR by gathering signatures (or both), a 'dual path' found in few other states. You'll also learn Utah's Constitution of 1896 (statehood came only after banning polygamy), its plural executive, its part-time Legislature of 29 senators and 75 representatives that meets 45 days a year, its merit-selection judiciary with retention elections, its all-mail elections, and its 29 counties. Time-sensitive facts are flagged, pointing to vote.utah.gov. Cited to Utah's own official sources (le.utah.gov, vote.utah.gov, utcourts.gov).",
   lessons: [
     // ── Section 1: The dual-path nomination ──────────────────────────────
     {
@@ -28,17 +28,17 @@ export const STATE_CIVICS_UT_COURSE: AuthoredCourse = {
       section: "What Makes Utah Unique",
       body: `Utah's most distinctive election feature is **how a candidate gets on the primary ballot.** Since **2014, Utah offers a "dual path" (or "dual track") to the ballot** that few states use (Utah Lieutenant Governor's Office, n.d.).
 
-**The two roads.** To appear on a party's primary ballot in Utah, a candidate can qualify **either — or both — of two ways** (Utah Lieutenant Governor's Office, n.d.):
+**The two roads.** To appear on a party's primary ballot in Utah, a candidate can qualify **either, or both, of two ways** (Utah Lieutenant Governor's Office, n.d.):
 1. **The caucus-and-convention path.** Neighbors gather at local **precinct caucuses** to elect delegates; those delegates meet at a party **convention** and vote on which candidates advance. This is the **traditional, activist-driven** route.
-2. **The signature path.** A candidate can **gather a set number of voter signatures** to qualify for the primary ballot directly — **bypassing the convention.**
+2. **The signature path.** A candidate can **gather a set number of voter signatures** to qualify for the primary ballot directly, **bypassing the convention.**
 
-**Why this exists.** For years Utah used **only** the caucus-convention system, which gave a small number of **convention delegates** enormous power to pick nominees. A **2014 compromise** (born from a citizen effort called "Count My Vote" and the Legislature's response, **"SB54"**) added the **signature path** so candidates could reach the **broader primary electorate** directly. ⚠️ **Time-sensitive:** the dual-path system has been **litigated** and debated ever since, so confirm the **current** rules at vote.utah.gov.
+**Why this exists.** For years Utah used **only** the caucus-convention system, which gave a small number of **convention delegates** enormous power to pick nominees. A **2014 compromise** (born from a citizen effort called "Count My Vote" and the Legislature's response, **"SB54"**) added the **signature path** so candidates could reach the **broader primary electorate** directly. ⚠️ **Time-sensitive:** the dual-path system has been **litigated** and debated ever since, so confirm the **current** rules at [vote.utah.gov](https://vote.utah.gov).
 
-Why it matters: it's a live, distinctive experiment in **who controls nominations — party activists at conventions, or the broader electorate through signatures and primaries.** Utah lets candidates try **both.**
+Why it matters: it's a live, distinctive experiment in **who controls nominations: party activists at conventions, or the broader electorate through signatures and primaries.** Utah lets candidates try **both.**
 
 Utah governs under its **Constitution of 1896**, adopted when Utah became the **45th state on January 4, 1896.**
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Utah's own government (le.utah.gov, vote.utah.gov, utcourts.gov) is the authoritative source.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Utah's own government ([le.utah.gov](https://le.utah.gov), [vote.utah.gov](https://vote.utah.gov), [utcourts.gov](https://utcourts.gov)) is the authoritative source.
 
 **Check yourself.** What are the two paths a Utah candidate can use to reach the primary ballot, and why was the second path added?
 
@@ -52,9 +52,21 @@ Utah governs under its **Constitution of 1896**, adopted when Utah became the **
       slug: "ut-statehood-executive",
       title: "2 · Statehood, and Utah's plural executive",
       section: "The Three Branches",
-      body: `**A statehood story worth knowing.** Utah's path to statehood was long and shaped by one issue: **polygamy.** The territory, settled largely by members of **The Church of Jesus Christ of Latter-day Saints**, sought statehood for decades but was repeatedly refused. Utah was admitted only in **1896**, after its constitution **permanently banned polygamy** and affirmed the **separation of church and state and religious freedom** (Utah State Legislature, n.d.). Notably, Utah's 1896 constitution also **guaranteed women the right to vote** from the start — Utah women had voted in the territory as early as 1870.
+      recallContent: [
+        {
+          prompt: "What are the two paths a Utah candidate can use to reach the primary ballot?",
+          answer:
+            "The caucus-and-convention path (precinct caucuses elect delegates who vote at a party convention) or the signature path (gathering a set number of voter signatures to qualify directly). Candidates can use one or both.",
+        },
+        {
+          prompt: "Why was the signature path added in 2014?",
+          answer:
+            "The 'Count My Vote' citizen effort and the Legislature's SB54 compromise added it so candidates could reach the broader primary electorate directly, rather than depending only on a small set of convention delegates.",
+        },
+      ],
+      body: `**A statehood story worth knowing.** Utah's path to statehood was long and shaped by one issue: **polygamy.** The territory, settled largely by members of **The Church of Jesus Christ of Latter-day Saints**, sought statehood for decades but was repeatedly refused. Utah was admitted only in **1896**, after its constitution **permanently banned polygamy** and affirmed the **separation of church and state and religious freedom** (Utah State Legislature, n.d.). Notably, Utah's 1896 constitution also **guaranteed women the right to vote** from the start. Utah women had voted in the territory as early as 1870.
 
-**Executive — a plural executive.** Utah voters elect several statewide officials (Utah Lieutenant Governor's Office, n.d.):
+**Executive, a plural executive.** Utah voters elect several statewide officials (Utah Lieutenant Governor's Office, n.d.):
 - The **Governor** and **Lieutenant Governor** run **together on a joint ticket** (the Lieutenant Governor also serves as Utah's **chief elections officer**).
 - Voters separately elect the **Attorney General**, the **State Auditor**, and the **State Treasurer.**
 Statewide officers serve **4-year terms.**
@@ -73,15 +85,27 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
       slug: "ut-legislature",
       title: "3 · A 45-day citizen Legislature and how a bill becomes law",
       section: "Making Law",
-      body: `**Legislative — the Utah State Legislature.** A part-time **citizen legislature** meeting in Salt Lake City (Utah State Legislature, n.d.):
-- **House of Representatives — 75 members**, elected to **2-year terms**, and **Senate — 29 senators**, elected to **4-year terms.**
-- ⚠️ **It meets for a short annual session — 45 calendar days**, beginning in January. Utah packs its lawmaking into that brief window each year, so legislators are **part-time citizen legislators** with regular jobs. (Special sessions can be called for specific issues.)
+      recallContent: [
+        {
+          prompt: "What condition did Utah have to meet before gaining statehood in 1896?",
+          answer:
+            "Its constitution had to permanently ban polygamy. The 1896 constitution also affirmed separation of church and state and religious freedom, and guaranteed women the right to vote.",
+        },
+        {
+          prompt: "Which Utah officials run together on a joint ticket, and who is the state's chief elections officer?",
+          answer:
+            "The Governor and Lieutenant Governor run together on a joint ticket, and the Lieutenant Governor also serves as Utah's chief elections officer. (Voters separately elect the Attorney General, State Auditor, and State Treasurer.)",
+        },
+      ],
+      body: `**Legislative: the Utah State Legislature.** A part-time **citizen legislature** meeting in Salt Lake City (Utah State Legislature, n.d.):
+- **House of Representatives: 75 members**, elected to **2-year terms**, and **Senate: 29 senators**, elected to **4-year terms.**
+- ⚠️ **It meets for a short annual session of 45 calendar days**, beginning in January. Utah packs its lawmaking into that brief window each year, so legislators are **part-time citizen legislators** with regular jobs. (Special sessions can be called for specific issues.)
 
 **How a bill becomes law:**
 1. **Introduction** during the 45-day session; **committee** hearings; **floor votes** in both chambers.
-2. **Governor** — sign, veto (a **two-thirds** override; the Legislature can call itself into a **veto-override session**), or line-item veto appropriations.
+2. **Governor**: sign, veto (a **two-thirds** override; the Legislature can call itself into a **veto-override session**), or line-item veto appropriations.
 
-**Direct democracy.** Utah citizens have the **initiative** (statutes) and **referendum** (rejecting laws) (Utah Lieutenant Governor's Office, n.d.). ⚠️ These tools have been the subject of notable recent fights (for example, over whether and how the Legislature may amend or repeal a voter-passed initiative), so confirm the **current** rules at vote.utah.gov. The takeaway: Utah pairs a **short, part-time Legislature** with **citizen initiative and referendum** — and the balance between them is an active civic question.
+**Direct democracy.** Utah citizens have the **initiative** (statutes) and **referendum** (rejecting laws) (Utah Lieutenant Governor's Office, n.d.). ⚠️ These tools have been the subject of notable recent fights (for example, over whether and how the Legislature may amend or repeal a voter-passed initiative), so confirm the **current** rules at [vote.utah.gov](https://vote.utah.gov). The takeaway: Utah pairs a **short, part-time Legislature** with **citizen initiative and referendum**, and the balance between them is an active civic question.
 
 **Check yourself.** How long is Utah's annual legislative session, and what two direct-democracy tools do Utah citizens have?
 
@@ -95,12 +119,24 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
       slug: "ut-courts-elections",
       title: "4 · How Utah picks its judges, and its all-mail elections",
       section: "Elections & Courts",
-      body: `**How Utah chooses its judges — merit selection plus retention.** Utah uses the **"Missouri Plan"** model (Utah State Courts, n.d.):
+      recallContent: [
+        {
+          prompt: "How long is Utah's annual legislative session, and how many members sit in each chamber?",
+          answer:
+            "The session lasts 45 calendar days each year (beginning in January), making it a part-time citizen legislature. The House has 75 representatives on 2-year terms and the Senate has 29 senators on 4-year terms.",
+        },
+        {
+          prompt: "What two direct-democracy tools do Utah citizens have?",
+          answer:
+            "The initiative (to propose and pass statutes) and the referendum (to reject laws). How the Legislature may amend or repeal a voter-passed initiative has been contested.",
+        },
+      ],
+      body: `**How Utah chooses its judges: merit selection plus retention.** Utah uses the **"Missouri Plan"** model (Utah State Courts, n.d.):
 1. A **Judicial Nominating Commission** screens applicants and sends the Governor a list.
 2. The **Governor appoints** a judge **from that list**, and the **Senate confirms.**
-3. The judge later faces voters in a **nonpartisan yes/no retention election.** The **Utah Supreme Court** has **5 justices** on **10-year** terms. Utah adds a distinctive quality check: a **Judicial Performance Evaluation Commission** publishes evaluations to help voters decide retention — an unusually transparent aid.
+3. The judge later faces voters in a **nonpartisan yes/no retention election.** The **Utah Supreme Court** has **5 justices** on **10-year** terms. Utah adds a distinctive quality check: a **Judicial Performance Evaluation Commission** publishes evaluations to help voters decide retention, an unusually transparent aid.
 
-**All-mail elections.** ⚠️ **Time-sensitive:** Utah conducts its elections primarily **by mail** — every active registered voter is **mailed a ballot**, returnable by mail or drop box, with in-person options and **same-day registration** also available (Utah Lieutenant Governor's Office, n.d.). Rules and deadlines are administered by **county clerks** and can change — confirm the **current** details at **vote.utah.gov** before you vote.
+**All-mail elections.** ⚠️ **Time-sensitive:** Utah conducts its elections primarily **by mail**: every active registered voter is **mailed a ballot**, returnable by mail or drop box, with in-person options and **same-day registration** also available (Utah Lieutenant Governor's Office, n.d.). Rules and deadlines are administered by **county clerks** and can change. Confirm the **current** details at **[vote.utah.gov](https://vote.utah.gov)** before you vote.
 
 **Check yourself.** How does Utah select its judges, and how do most Utahns receive their ballots?
 
@@ -114,19 +150,31 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
       slug: "ut-local-involved",
       title: "5 · Local government and how to take part",
       section: "Get Involved",
+      recallContent: [
+        {
+          prompt: "How does Utah select its judges?",
+          answer:
+            "By merit selection (the 'Missouri Plan'): a Judicial Nominating Commission sends the Governor a list, the Governor appoints from it, the Senate confirms, and the judge later faces a nonpartisan yes/no retention election aided by published performance evaluations.",
+        },
+        {
+          prompt: "How do most Utahns receive and return their ballots?",
+          answer:
+            "Utah runs all-mail elections: every active registered voter is mailed a ballot, returnable by mail or drop box, with in-person options and same-day registration also available. County clerks administer the details.",
+        },
+      ],
       body: `**Local government.** Utah's local layers include (Utah State Legislature, n.d.):
 - **29 counties**, governed by elected **county commissions or councils** (some counties have adopted alternative forms via charter), plus other elected county officials.
 - **Cities and towns** provide municipal services; larger cities use mayor-council or council-manager forms.
 - **School districts** and **special districts** round out local government.
 
 **How to take part:**
-- **Register and vote** — Utah mails you a ballot; you can also register same-day. Confirm details at vote.utah.gov.
-- **Go to your precinct caucus.** Because of the **dual-path** system (Lesson 1), the **neighborhood caucus** is still a powerful entry point — attend, and you can become a **delegate** who helps pick nominees.
-- **Gather or sign signatures.** The signature path means citizens and candidates can put names on the ballot by **petition** — another way to shape who runs.
+- **Register and vote.** Utah mails you a ballot; you can also register same-day. Confirm details at [vote.utah.gov](https://vote.utah.gov).
+- **Go to your precinct caucus.** Because of the **dual-path** system (Lesson 1), the **neighborhood caucus** is still a powerful entry point: attend, and you can become a **delegate** who helps pick nominees.
+- **Gather or sign signatures.** The signature path means citizens and candidates can put names on the ballot by **petition**, another way to shape who runs.
 - **Use direct democracy.** Sign or circulate an **initiative or referendum.**
 - **Show up locally.** County commissions/councils, city councils, and school boards hold public meetings.
-- **Contact your legislators** in Salt Lake City — you have one Representative and one Senator; note the session is a short 45 days each winter, so timing matters.
-- **Run** — school board, city council, and county commission are reachable local starting points.
+- **Contact your legislators** in Salt Lake City: you have one Representative and one Senator; note the session is a short 45 days each winter, so timing matters.
+- **Run.** School board, city council, and county commission are reachable local starting points.
 
 **Check yourself.** Name two ways Utah's dual-path system lets you influence who gets on the ballot.
 
@@ -157,7 +205,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
             answer: "caucuses",
             accept: ["caucus"],
             explanation:
-              "Precinct caucuses elect delegates to party conventions — the traditional path in Utah's dual-path system.",
+              "Precinct caucuses elect delegates to party conventions, the traditional path in Utah's dual-path system.",
           },
           {
             prompt:
@@ -186,7 +234,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
               "TRUE or FALSE: Utah's only way onto the primary ballot is winning at the party convention.",
             answer: "false",
             explanation:
-              "False. Since 2014 candidates can also qualify by gathering signatures — the dual-path system.",
+              "False. Since 2014 candidates can also qualify by gathering signatures, the dual-path system.",
           },
         ],
       },
@@ -204,7 +252,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
             prompt: "What is distinctive about how Utah candidates reach the primary ballot?",
             options: [
               "Only the Governor can nominate them",
-              "A dual path — the caucus-and-convention system OR gathering signatures (or both)",
+              "A dual path: the caucus-and-convention system OR gathering signatures (or both)",
               "They are appointed",
               "There is no primary",
             ],
@@ -290,7 +338,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
             prompt: "How do most Utahns receive their ballots?",
             options: [
               "In person only",
-              "By mail — Utah conducts elections primarily by mail",
+              "By mail: Utah conducts elections primarily by mail",
               "Online",
               "By phone",
             ],
@@ -316,13 +364,13 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
             prompt: "Why does this course tell you to VERIFY Utah's nomination and voting rules?",
             options: [
               "Because Utah has no elections office",
-              "Because the dual-path (SB54) system has been litigated and voting rules are run by county clerks and change — confirm at vote.utah.gov",
+              "Because the dual-path (SB54) system has been litigated and voting rules are run by county clerks and change; confirm at [vote.utah.gov](https://vote.utah.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
             correctIndex: 1,
             explanation:
-              "Utah's nomination system is contested and voting is administered locally, so vote.utah.gov is the authoritative source.",
+              "Utah's nomination system is contested and voting is administered locally, so [vote.utah.gov](https://vote.utah.gov) is the authoritative source.",
             sourceLessonSlug: "ut-local-involved",
           },
         ],

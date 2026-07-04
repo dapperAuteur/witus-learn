@@ -1,4 +1,4 @@
-// Authored "Mississippi Civics: How Your State Government Works" — the Mississippi entry
+// Authored "Mississippi Civics: How Your State Government Works", the Mississippi entry
 // in the per-state Civics layer on Learn.WitUS. State-level companion to the general
 // Civics courses: those teach the SYSTEM; this teaches Mississippi's version.
 //
@@ -20,24 +20,24 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_MS_COURSE: AuthoredCourse = {
   title: "Mississippi Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Mississippi governs itself — and how you take part where you live. Mississippi has changed in real, recent ways: in 2020 voters replaced an unusual Jim Crow-era rule that could send statewide elections to the state House, and Mississippi adopted a new state flag; and in 2021 the state's ballot-initiative process was struck down by its Supreme Court. You'll learn Mississippi's Constitution of 1890, its large plural executive (with an unusually powerful Lieutenant Governor), its Legislature of 52 senators and 122 representatives, its nonpartisan elected judiciary, its odd-year elections, and its 82 counties. Time-sensitive facts are flagged, pointing to sos.ms.gov. Cited to Mississippi's own official sources (legislature.ms.gov, sos.ms.gov, courts.ms.gov).",
+    "A practical, non-partisan guide to how the state of Mississippi governs itself, and how you take part where you live. Mississippi has changed in real, recent ways: in 2020 voters replaced an unusual Jim Crow-era rule that could send statewide elections to the state House, and Mississippi adopted a new state flag; and in 2021 the state's ballot-initiative process was struck down by its Supreme Court. You'll learn Mississippi's Constitution of 1890, its large plural executive (with an unusually powerful Lieutenant Governor), its Legislature of 52 senators and 122 representatives, its nonpartisan elected judiciary, its odd-year elections, and its 82 counties. Time-sensitive facts are flagged, pointing to sos.ms.gov. Cited to Mississippi's own official sources (legislature.ms.gov, sos.ms.gov, courts.ms.gov).",
   lessons: [
     // ── Section 1: Recent changes ────────────────────────────────────────
     {
       slug: "ms-recent-changes",
       title: "1 · A state that changed: the 2020 election rule and the new flag",
       section: "What Makes Mississippi Unique",
-      body: `Mississippi is a good place to see that **a state's rules and symbols can change** — and change recently. Two 2020 changes stand out (Mississippi Secretary of State, n.d.).
+      body: `Mississippi is a good place to see that **a state's rules and symbols can change**, and change recently. Two 2020 changes stand out (Mississippi Secretary of State, n.d.).
 
-**1. A Jim Crow-era election rule, replaced.** ⚠️ For 130 years, Mississippi's **1890 constitution** used an unusual rule to elect the **Governor and statewide officers**: a candidate had to win **BOTH a majority of the popular vote AND a majority of the state's 122 House districts.** If **no candidate won both**, the **state House of Representatives chose the winner** from the top two. This provision — adopted in the **1890 constitution**, part of a document written to entrench white political power and disenfranchise Black Mississippians — could **override the popular vote.** In **2020, Mississippi voters approved a constitutional amendment removing it**, replacing it with a straightforward system: **win a majority of the popular vote, or go to a runoff** (Mississippi Secretary of State, n.d.).
+**1. A Jim Crow-era election rule, replaced.** ⚠️ For 130 years, Mississippi's **1890 constitution** used an unusual rule to elect the **Governor and statewide officers**: a candidate had to win **BOTH a majority of the popular vote AND a majority of the state's 122 House districts.** If **no candidate won both**, the **state House of Representatives chose the winner** from the top two. This provision (adopted in the **1890 constitution**, part of a document written to entrench white political power and disenfranchise Black Mississippians) could **override the popular vote.** In **2020, Mississippi voters approved a constitutional amendment removing it**, replacing it with a straightforward system: **win a majority of the popular vote, or go to a runoff** (Mississippi Secretary of State, n.d.).
 
-**2. A new state flag.** Also in **2020**, Mississippi **retired its old state flag** — the last U.S. state flag to include the **Confederate battle emblem** — and voters approved a **new flag** (the "In God We Trust"/Magnolia flag) in a referendum (Mississippi Secretary of State, n.d.).
+**2. A new state flag.** Also in **2020**, Mississippi **retired its old state flag** (the last U.S. state flag to include the **Confederate battle emblem**) and voters approved a **new flag** (the "In God We Trust"/Magnolia flag) in a referendum (Mississippi Secretary of State, n.d.).
 
 Mississippi became the **20th state on December 10, 1817**, and still governs under the (much-amended) **Constitution of 1890.**
 
-This is the through-line: Mississippi's civics can only be understood with attention to **what has recently changed** — which is exactly why this course keeps saying to **verify current rules.**
+This is the through-line: Mississippi's civics can only be understood with attention to **what has recently changed**, which is exactly why this course keeps saying to **verify current rules.**
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Mississippi's own government (legislature.ms.gov, sos.ms.gov, courts.ms.gov) is the authoritative source.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Mississippi's own government ([legislature.ms.gov](https://legislature.ms.gov), [sos.ms.gov](https://sos.ms.gov), [courts.ms.gov](https://courts.ms.gov)) is the authoritative source.
 
 **Check yourself.** What Jim Crow-era election rule did Mississippi remove in 2020, and what else did the state change that year?
 
@@ -51,11 +51,23 @@ This is the through-line: Mississippi's civics can only be understood with atten
       slug: "ms-executive",
       title: "2 · A large plural executive and an unusually powerful Lieutenant Governor",
       section: "The Three Branches",
-      body: `**Executive — a large plural executive.** Mississippi voters elect **many** statewide officials (Mississippi Secretary of State, n.d.): the **Governor**, **Lieutenant Governor** (elected **separately** — can be a different party), **Secretary of State**, **Attorney General**, **State Treasurer**, **State Auditor**, **Insurance Commissioner**, and **Commissioner of Agriculture and Commerce**, plus the elected **Public Service Commission** and **Transportation Commission.** Executive power is spread widely across independently elected officers.
+      recallContent: [
+        {
+          prompt: "What Jim Crow-era election rule did Mississippi remove from its constitution in 2020?",
+          answer:
+            "The 1890 rule that a candidate for Governor or statewide office had to win BOTH a majority of the popular vote AND a majority of the 122 House districts, or the state House would choose the winner. It was replaced with a popular-majority-or-runoff system.",
+        },
+        {
+          prompt: "What state symbol did Mississippi also change in 2020?",
+          answer:
+            "Its state flag. Mississippi retired the last U.S. state flag carrying the Confederate battle emblem and voters approved a new flag (the 'In God We Trust'/Magnolia flag).",
+        },
+      ],
+      body: `**Executive: a large plural executive.** Mississippi voters elect **many** statewide officials (Mississippi Secretary of State, n.d.): the **Governor**, **Lieutenant Governor** (elected **separately**, can be a different party), **Secretary of State**, **Attorney General**, **State Treasurer**, **State Auditor**, **Insurance Commissioner**, and **Commissioner of Agriculture and Commerce**, plus the elected **Public Service Commission** and **Transportation Commission.** Executive power is spread widely across independently elected officers.
 
-**An unusually powerful Lieutenant Governor.** ⚠️ Mississippi's **Lieutenant Governor** is often described as **one of the most powerful in the nation.** Beyond succeeding the Governor, the Lieutenant Governor **presides over the state Senate** and, by tradition and rule, exercises **strong control over the Senate's committees, calendar, and which bills advance** (Mississippi Legislature, n.d.). In Mississippi, that makes the Lieutenant Governor a **central figure in lawmaking** — sometimes rivaling the Governor's influence — a distinctive feature to keep in mind.
+**An unusually powerful Lieutenant Governor.** ⚠️ Mississippi's **Lieutenant Governor** is often described as **one of the most powerful in the nation.** Beyond succeeding the Governor, the Lieutenant Governor **presides over the state Senate** and, by tradition and rule, exercises **strong control over the Senate's committees, calendar, and which bills advance** (Mississippi Legislature, n.d.). In Mississippi, that makes the Lieutenant Governor a **central figure in lawmaking** (sometimes rivaling the Governor's influence), a distinctive feature to keep in mind.
 
-Statewide officers serve **4-year terms**, elected in **odd-numbered years** (like Virginia, New Jersey, Kentucky, and Louisiana) — for example **2023 and 2027.**
+Statewide officers serve **4-year terms**, elected in **odd-numbered years** (like Virginia, New Jersey, Kentucky, and Louisiana), for example **2023 and 2027.**
 
 The **Legislative** and **Judicial** branches complete the three (next lessons).
 
@@ -71,17 +83,29 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
     // ── Section 3: The Legislature + the struck-down initiative ──────────
     {
       slug: "ms-legislature-initiative",
-      title: "3 · The Legislature — and why Mississippi's initiative doesn't work right now",
+      title: "3 · The Legislature, and why Mississippi's initiative doesn't work right now",
       section: "Making Law",
-      body: `**Legislative — the Mississippi Legislature.** A bicameral body meeting in Jackson (Mississippi Legislature, n.d.):
-- **House of Representatives — 122 members**, and **Senate — 52 senators**, all serving **4-year terms.**
+      recallContent: [
+        {
+          prompt: "Why is Mississippi's Lieutenant Governor considered unusually powerful?",
+          answer:
+            "The Lieutenant Governor is elected separately (can be a different party), presides over the state Senate, and strongly controls its committees, calendar, and which bills advance, making them a central figure in lawmaking.",
+        },
+        {
+          prompt: "In which years does Mississippi elect its Governor and other statewide officers, and for how long?",
+          answer:
+            "In odd-numbered years (for example 2023 and 2027), each serving a 4-year term.",
+        },
+      ],
+      body: `**Legislative: the Mississippi Legislature.** A bicameral body meeting in Jackson (Mississippi Legislature, n.d.):
+- **House of Representatives: 122 members**, and **Senate: 52 senators**, all serving **4-year terms.**
 - Recall from Lesson 2 that the **Lieutenant Governor** wields strong influence over the Senate.
 
 **How a bill becomes law:** introduction → committee → floor votes in both chambers → the Governor (sign, veto with a two-thirds override, or line-item veto).
 
-**A citizen initiative that was struck down.** ⚠️ Here's an unusual, important, time-sensitive fact: **Mississippi's ballot-initiative process is currently NOT in effect.** Mississippi's constitution allowed citizen initiatives, but it required signatures to be gathered **equally from the state's FIVE congressional districts.** After the **2000 census, Mississippi dropped from five U.S. House seats to four** — making the "five districts" formula **mathematically impossible to satisfy.** In **May 2021, the Mississippi Supreme Court ruled the entire initiative process invalid** because of this defect (in the case over a voter-passed medical-marijuana measure) (Mississippi Secretary of State, n.d.). So **as of authoring, Mississippi citizens cannot use a statewide initiative** unless and until the **Legislature and voters adopt a fix.** ⚠️ Confirm the **current** status at sos.ms.gov, since this may change.
+**A citizen initiative that was struck down.** ⚠️ Here's an unusual, important, time-sensitive fact: **Mississippi's ballot-initiative process is currently NOT in effect.** Mississippi's constitution allowed citizen initiatives, but it required signatures to be gathered **equally from the state's FIVE congressional districts.** After the **2000 census, Mississippi dropped from five U.S. House seats to four**, making the "five districts" formula **mathematically impossible to satisfy.** In **May 2021, the Mississippi Supreme Court ruled the entire initiative process invalid** because of this defect (in the case over a voter-passed medical-marijuana measure) (Mississippi Secretary of State, n.d.). So **as of authoring, Mississippi citizens cannot use a statewide initiative** unless and until the **Legislature and voters adopt a fix.** ⚠️ Confirm the **current** status at [sos.ms.gov](https://sos.ms.gov), since this may change.
 
-**Constitutional amendments** are otherwise proposed by the **Legislature** and ratified by the **voters.** The takeaway: in Mississippi today, lawmaking runs **through the Legislature** — the citizen initiative is, for now, **on hold.**
+**Constitutional amendments** are otherwise proposed by the **Legislature** and ratified by the **voters.** The takeaway: in Mississippi today, lawmaking runs **through the Legislature**, the citizen initiative is, for now, **on hold.**
 
 **Check yourself.** Why was Mississippi's initiative process struck down, and what does that mean for citizen lawmaking there now?
 
@@ -95,20 +119,32 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
       slug: "ms-courts-involved",
       title: "4 · Judges, local government, and how to take part",
       section: "Get Involved",
-      body: `**How Mississippi picks its judges.** Mississippi **elects** its judges on a **NONPARTISAN** ballot — no party label appears next to their names (Mississippi Judiciary, n.d.). The **Mississippi Supreme Court** has **9 justices**, elected from districts to **8-year terms**; Court of Appeals, Circuit, and Chancery judges are likewise elected nonpartisan. When a seat opens mid-term, the **Governor appoints** a replacement who then stands for election.
+      recallContent: [
+        {
+          prompt: "How many members are in the Mississippi House and Senate, and what are their terms?",
+          answer:
+            "The House of Representatives has 122 members and the Senate has 52 senators, all serving 4-year terms.",
+        },
+        {
+          prompt: "Why is Mississippi's citizen ballot-initiative process not in effect right now?",
+          answer:
+            "In 2021 the state Supreme Court struck it down. Its formula required signatures gathered equally from five congressional districts, but Mississippi dropped to four U.S. House seats after the 2000 census, making the five-district formula impossible to satisfy.",
+        },
+      ],
+      body: `**How Mississippi picks its judges.** Mississippi **elects** its judges on a **NONPARTISAN** ballot: no party label appears next to their names (Mississippi Judiciary, n.d.). The **Mississippi Supreme Court** has **9 justices**, elected from districts to **8-year terms**; Court of Appeals, Circuit, and Chancery judges are likewise elected nonpartisan. When a seat opens mid-term, the **Governor appoints** a replacement who then stands for election.
 
 **Local government** (Mississippi Legislature, n.d.):
 - **82 counties**, governed by elected **boards of supervisors** (each county is divided into five supervisor districts, or "beats"), plus other elected county officials (sheriff, chancery/circuit clerks, tax officials).
 - **Cities and towns** provide municipal services; **school districts** and **special districts** round out local government.
 
-**Voting.** ⚠️ **Time-sensitive:** Mississippi requires a **photo ID** to vote and has comparatively **limited early/absentee** options (an excuse is generally required for absentee, and Mississippi has been slower than many states to adopt no-excuse early voting). Rules are administered by **county election officials** and can change — confirm the **current** details at **sos.ms.gov** before you vote.
+**Voting.** ⚠️ **Time-sensitive:** Mississippi requires a **photo ID** to vote and has comparatively **limited early/absentee** options (an excuse is generally required for absentee, and Mississippi has been slower than many states to adopt no-excuse early voting). Rules are administered by **county election officials** and can change: confirm the **current** details at **[sos.ms.gov](https://sos.ms.gov)** before you vote.
 
 **How to take part:**
-- **Register and vote** — bring photo ID; check absentee eligibility and deadlines at sos.ms.gov. Remember Mississippi's big elections fall in **odd years.**
+- **Register and vote**: bring photo ID; check absentee eligibility and deadlines at [sos.ms.gov](https://sos.ms.gov). Remember Mississippi's big elections fall in **odd years.**
 - **Show up locally.** Your county **board of supervisors**, city council, and school board hold public meetings.
-- **Contact your legislators** in Jackson — you have one Representative and one Senator.
-- **Watch for an initiative fix.** If the Legislature restores a citizen-initiative process, that would return a direct lever to voters — follow it.
-- **Run** — school board, city council, and county board of supervisors are reachable local starting points.
+- **Contact your legislators** in Jackson: you have one Representative and one Senator.
+- **Watch for an initiative fix.** If the Legislature restores a citizen-initiative process, that would return a direct lever to voters. Follow it.
+- **Run**: school board, city council, and county board of supervisors are reachable local starting points.
 
 **Check yourself.** How are Mississippi's judges chosen, and what elected board governs a Mississippi county?
 
@@ -132,7 +168,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
             answer: "House",
             accept: ["house", "House of Representatives", "legislature"],
             explanation:
-              "The 1890 rule required winning both the popular vote and a majority of House districts, or the House would choose — removed in 2020.",
+              "The 1890 rule required winning both the popular vote and a majority of House districts, or the House would choose, removed in 2020.",
           },
           {
             prompt:
@@ -299,13 +335,13 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
             prompt: "Why does this course especially tell you to VERIFY Mississippi's rules?",
             options: [
               "Because Mississippi has no government website",
-              "Because so much changed recently — the election rule (2020), the flag (2020), and the initiative process (struck down 2021) — confirm current status at sos.ms.gov",
+              "Because so much changed recently: the election rule (2020), the flag (2020), and the initiative process (struck down 2021); confirm current status at [sos.ms.gov](https://sos.ms.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
             correctIndex: 1,
             explanation:
-              "Mississippi's electoral rule, flag, and initiative process all changed in 2020–2021, so the state's own sites are essential for current status.",
+              "Mississippi's electoral rule, flag, and initiative process all changed in 2020 to 2021, so the state's own sites are essential for current status.",
             sourceLessonSlug: "ms-legislature-initiative",
           },
         ],

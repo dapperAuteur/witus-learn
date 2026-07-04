@@ -1,4 +1,4 @@
-// Authored "How to Create a Course" — the meta-course for teachers on Learn.WitUS,
+// Authored "How to Create a Course", the meta-course for teachers on Learn.WitUS,
 // distilled from the CentOS course-authoring guides (content/course-authoring/:
 // CourseAuthoringGuide.md + CourseCreationWithAI.md) and the content/writing standard.
 // Audio-first, no AI tells, cited. Committed (the guides themselves stay in the
@@ -31,6 +31,10 @@ These are checked. A clean AI-tell scan (no em/en dashes, no filler, no rare wor
     {
       slug: "audio-first",
       title: "2 · The one rule: audio first",
+      recallContent: [
+        { prompt: "In a Learn.WitUS lesson, what should replace an em-dash or en-dash?", answer: "A comma, a period, or parentheses, and the word 'to' for numeric ranges." },
+        { prompt: "Why choose a common word over a rare one, like 'use' instead of 'utilize'?", answer: "Plain words sound like a person talking, and a clean AI-tell scan is part of shipping." },
+      ],
       body: `Every lesson is a script meant to be heard. People listen while they drive, walk, or do dishes. The screen is a bonus, not the plan. A lesson that only makes sense if you are looking at it has broken the one rule.
 
 Write for the ear:
@@ -44,6 +48,10 @@ Write for the ear:
     {
       slug: "lesson-structure",
       title: "3 · How to structure a lesson",
+      recallContent: [
+        { prompt: "What is the one rule that every lesson has to follow?", answer: "Audio-first. Each lesson is a script meant to be heard while driving, walking, or doing dishes." },
+        { prompt: "Why should a lesson never say 'as you can see'?", answer: "The listener cannot see anything, so any visual has to be painted in words." },
+      ],
       body: `A lesson that teaches has a shape. Use these beats in order:
 
 - **Recall.** Open by recalling the previous lesson: two quick questions, a pause, then the answers. Retrieval is how memory sticks.
@@ -54,7 +62,7 @@ Write for the ear:
 - **Check.** One question, a pause, the answer and why. Active recall again.
 - **Key Takeaways.** Three to five plain bullets. These are the exact facts the quiz will test.
 
-**The published text is clean.** Audio scripts may carry light stage cues (Beat, Sound, tone) for whoever records the audio, but the **reading version a learner sees has NO stage tags** — no [HOOK], [TEACH], [CHECK], [Beat]. Each beat becomes a short descriptive heading instead. Stage tags in published text are an AI tell.
+**The published text is clean.** Audio scripts may carry light stage cues (Beat, Sound, tone) for whoever records the audio, but the **reading version a learner sees has NO stage tags**: no [HOOK], [TEACH], [CHECK], [Beat]. Each beat becomes a short descriptive heading instead. Stage tags in published text are an AI tell.
 
 **Keep it short.** One concept, about eight minutes (roughly 1,150 spoken words) or fewer. If a draft needs two unrelated section headers, split it into two lessons. Teach the concrete thing before the abstract rule.
 
@@ -63,6 +71,10 @@ Write for the ear:
     {
       slug: "sources-and-citations",
       title: "4 · Sources and citations (never ship a fake)",
+      recallContent: [
+        { prompt: "What are the beats of a well-structured lesson, in order?", answer: "Recall, Hook, Teach, Picture, on the test or in practice, Check, then Key Takeaways." },
+        { prompt: "Should the reading version a learner sees carry stage tags like [HOOK] or [Beat]?", answer: "No. The published text is clean, and visible stage tags are an AI tell." },
+      ],
       body: `Every factual claim ties to a verified source. This is a product feature, not a formality: the sources are a visible trust signal.
 
 - **Verify every citation before using it** (against Crossref or PubMed for studies, the official document for rules and law). Never invent a study, author, year, journal, or statistic.
@@ -75,13 +87,17 @@ Write for the ear:
     {
       slug: "quizzes-that-teach",
       title: "5 · Build quizzes that teach",
+      recallContent: [
+        { prompt: "What do you do with a claim that has no verifiable source?", answer: "State it generally with no citation and flag it. Never invent a study, author, year, or statistic." },
+        { prompt: "Where do you verify a citation before using it?", answer: "Against Crossref or PubMed for studies, or the official document for rules and law." },
+      ],
       body: `A quiz is a teaching tool, not a gate. Use the real schema and make every question teach.
 
 - **Schema:** \`{ passingScore: 80, questions: [{ prompt, options, correctIndex, explanation, sourceLessonSlug }] }\`. The correct answer is an index into the options.
 - **Explanations say why the right answer is right AND why each wrong answer is wrong.** The wrong-answer reasons are the most useful study material.
 - **Design believable distractors.** Wrong answers should be the mistake a real student makes, not obviously silly.
 - **Frame for the test.** Where there's an exam, name the trap answer in the lesson ("On the test, this shows up as ...").
-- **Every question links back to the lesson that teaches it** (\`sourceLessonSlug\`). After submitting, the learner sees a "Where to find this →" link. No quiz ships without it — it is the witus-learn standard.
+- **Every question links back to the lesson that teaches it** (\`sourceLessonSlug\`). After submitting, the learner sees a "Where to find this →" link. No quiz ships without it. It is the witus-learn standard.
 - **Mix the order** within a quiz so it forces real recall, not pattern matching. Don't block all of one sub-topic together. (On witus-learn the player shows the whole quiz, so author the mix yourself.)
 - **Independently verify every answer** against the source. A wrong answer key teaches the wrong thing. Write original questions; never copy an exam provider's items.
 
@@ -92,6 +108,10 @@ On witus-learn a quiz lives in a lesson's \`quiz\` field (the schema above). A f
     {
       slug: "assignments-and-resources",
       title: "6 · Assignments, self-checks, and a resources module",
+      recallContent: [
+        { prompt: "Besides why the right answer is right, what must a quiz explanation cover?", answer: "Why each wrong answer is wrong, since those reasons are the most useful study material." },
+        { prompt: "What field links a quiz question back to the lesson that teaches it?", answer: "The sourceLessonSlug field, which gives the learner a 'Where to find this' link." },
+      ],
       body: `Lessons and quizzes are the spine. Two more things turn a course into something people finish.
 
 **Per module:** a graded assignment plus two self-check prompts (each with a model answer). Self-checks let the learner test understanding honestly; the model answer shows them the standard.
@@ -113,6 +133,10 @@ On witus-learn, add a lesson of type **assignment** (the prompt is the lesson bo
     {
       slug: "using-ai-to-author",
       title: "7 · Using an AI assistant to author",
+      recallContent: [
+        { prompt: "What two teaching pieces does each module add besides lessons and quizzes?", answer: "A graded assignment plus two self-check prompts, each with a model answer." },
+        { prompt: "What belongs in the resources module at the end of a course?", answer: "A study plan, a cheat sheet, the full glossary, and lead-magnet PDFs as free downloads." },
+      ],
       body: `An AI can draft fast, but it ships AI tells and invents citations unless you hold it to the standard. Give it the rules up front and verify its work.
 
 **The process:**
@@ -131,6 +155,10 @@ Hand the AI the full standard (the GUIDE bundle in \`content/course-authoring/\`
     {
       slug: "ship-checklist",
       title: "8 · The ship checklist + knowledge check",
+      recallContent: [
+        { prompt: "What is the first step when using an AI assistant to author a course?", answer: "Map the source material to a module-and-lesson plan, and confirm the map before authoring." },
+        { prompt: "What are the two ways to load a finished course into witus-learn?", answer: "As a committed AuthoredCourse data module the seeder upserts by slug, or by building it in the instructor dashboard." },
+      ],
       body: `Before a course goes live, walk the list:
 
 - [ ] Module and lesson map confirmed

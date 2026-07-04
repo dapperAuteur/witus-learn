@@ -1,4 +1,4 @@
-// Authored "Washington Civics: How Your State Government Works" — the Washington
+// Authored "Washington Civics: How Your State Government Works", the Washington
 // entry in the per-state Civics layer on Learn.WitUS. State-level companion to the
 // general Civics courses: those teach the SYSTEM; this teaches Washington's version.
 //
@@ -20,7 +20,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_WA_COURSE: AuthoredCourse = {
   title: "Washington Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Washington governs itself — and how you take part where you live. You'll learn Washington's Constitution of 1889 and its strong direct democracy (initiatives to the people AND to the legislature, referendum, recall); a notably 'plural' executive in which voters elect NINE separate statewide officials; a Legislature of 49 senators and 98 representatives elected from 49 shared districts; a Supreme Court of nine justices elected on a nonpartisan ballot; and Washington's distinctive elections — an all-mail (vote-by-mail) system statewide and a 'top-two' primary in which the two leading candidates advance regardless of party. It flags time-sensitive facts — including Washington's contested no-income-tax tradition — and points to sos.wa.gov. Cited to Washington's own official sources (leg.wa.gov, sos.wa.gov, courts.wa.gov).",
+    "A practical, non-partisan guide to how the state of Washington governs itself, and how you take part where you live. You'll learn Washington's Constitution of 1889 and its strong direct democracy (initiatives to the people AND to the legislature, referendum, recall); a notably 'plural' executive in which voters elect NINE separate statewide officials; a Legislature of 49 senators and 98 representatives elected from 49 shared districts; a Supreme Court of nine justices elected on a nonpartisan ballot; and Washington's distinctive elections: an all-mail (vote-by-mail) system statewide and a 'top-two' primary in which the two leading candidates advance regardless of party. It flags time-sensitive facts (including Washington's contested no-income-tax tradition) and points to sos.wa.gov. Cited to Washington's own official sources (leg.wa.gov, sos.wa.gov, courts.wa.gov).",
   lessons: [
     // ── Section 1: The Washington Constitution ───────────────────────────
     {
@@ -31,47 +31,57 @@ export const STATE_CIVICS_WA_COURSE: AuthoredCourse = {
 
 Like several Western states shaped by the **Progressive Era**, Washington built **direct-democracy tools** into its constitution (added by amendment in 1912) and uses them heavily (Washington Secretary of State, n.d.):
 
-- **Initiative** — citizens can gather signatures to make law directly. Washington has **two kinds**: an **Initiative to the People** (goes straight to the ballot) and an **Initiative to the Legislature** (goes to lawmakers first, who may enact it, reject it — sending it to voters — or offer an alternative).
-- **Referendum** — voters can **reject** a law the Legislature passed by petitioning it onto the ballot.
-- **Recall** — voters can petition to remove most elected officials for cause.
+- **Initiative**: citizens can gather signatures to make law directly. Washington has **two kinds**: an **Initiative to the People** (goes straight to the ballot) and an **Initiative to the Legislature** (goes to lawmakers first, who may enact it, reject it, sending it to voters, or offer an alternative).
+- **Referendum**: voters can **reject** a law the Legislature passed by petitioning it onto the ballot.
+- **Recall**: voters can petition to remove most elected officials for cause.
 
 This is the through-line of Washington civics: **voters are a lawmaking body**, not just an electorate. That single design choice explains many of Washington's distinctive features.
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Washington's own government (leg.wa.gov, sos.wa.gov, courts.wa.gov) is the authoritative source. When a fact is time-sensitive — especially Washington's contested tax structure — we say so.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Washington's own government ([leg.wa.gov](https://leg.wa.gov), [sos.wa.gov](https://sos.wa.gov), [courts.wa.gov](https://courts.wa.gov)) is the authoritative source. When a fact is time-sensitive, especially Washington's contested tax structure, we say so.
 
 **Check yourself.** When did Washington become a state, and what is the difference between an "Initiative to the People" and an "Initiative to the Legislature"?
 
 ## Sources
-- Washington State Legislature. (n.d.). *Washington State Constitution (1889)*. leg.wa.gov. https://leg.wa.gov/
-- Washington Secretary of State. (n.d.). *Initiatives and referenda*. sos.wa.gov. https://www.sos.wa.gov/`,
+- Washington State Legislature. (n.d.). *Washington State Constitution (1889)*. [leg.wa.gov](https://leg.wa.gov). https://leg.wa.gov/
+- Washington Secretary of State. (n.d.). *Initiatives and referenda*. [sos.wa.gov](https://sos.wa.gov). https://www.sos.wa.gov/`,
     },
 
     // ── Section 2: The plural executive ──────────────────────────────────
     {
       slug: "wa-executive",
-      title: "2 · Washington's 'plural' executive — nine elected statewide officials",
+      title: "2 · Washington's 'plural' executive: nine elected statewide officials",
       section: "The Three Branches",
-      body: `Here is one of Washington's most distinctive features. Where many states elect only a Governor (and maybe one or two others), Washington voters elect a **large, 'plural' executive** — **nine separate statewide officials**, each on their own ballot line (Washington Secretary of State, n.d.):
+      body: `Here is one of Washington's most distinctive features. Where many states elect only a Governor (and maybe one or two others), Washington voters elect a **large, 'plural' executive**: **nine separate statewide officials**, each on their own ballot line (Washington Secretary of State, n.d.):
 
-1. **Governor** — chief executive.
-2. **Lieutenant Governor** — presides over the Senate; elected **separately** (can be from a different party than the Governor).
-3. **Secretary of State** — runs elections and corporations.
-4. **Attorney General** — the state's lawyer.
-5. **State Treasurer** — manages state funds.
-6. **State Auditor** — audits government.
-7. **Superintendent of Public Instruction** — leads K–12 education; this office is **nonpartisan.**
-8. **Commissioner of Public Lands** — manages state lands and forests (a distinctively Western office).
-9. **Insurance Commissioner** — regulates insurance.
+1. **Governor**: chief executive.
+2. **Lieutenant Governor**: presides over the Senate; elected **separately** (can be from a different party than the Governor).
+3. **Secretary of State**: runs elections and corporations.
+4. **Attorney General**: the state's lawyer.
+5. **State Treasurer**: manages state funds.
+6. **State Auditor**: audits government.
+7. **Superintendent of Public Instruction**: leads K-12 education; this office is **nonpartisan.**
+8. **Commissioner of Public Lands**: manages state lands and forests (a distinctively Western office).
+9. **Insurance Commissioner**: regulates insurance.
 
-Why it matters: executive power in Washington is **divided among many independently elected officials**, not concentrated in one governor's appointees. Voters — not the Governor — pick the Attorney General, the elections chief, the schools chief, and more, so these officials answer directly to the public and can check one another.
+Why it matters: executive power in Washington is **divided among many independently elected officials**, not concentrated in one governor's appointees. Voters (not the Governor) pick the Attorney General, the elections chief, the schools chief, and more, so these officials answer directly to the public and can check one another.
 
-The **Judicial** branch runs from trial courts up to the **Court of Appeals** and the **Washington Supreme Court** (nine justices) — covered next. The **Legislative** branch is the Legislature, covered after that.
+The **Judicial** branch runs from trial courts up to the **Court of Appeals** and the **Washington Supreme Court** (nine justices), covered next. The **Legislative** branch is the Legislature, covered after that.
 
 **Check yourself.** Name three statewide executive officials Washington voters elect besides the Governor.
 
 ## Sources
-- Washington Secretary of State. (n.d.). *Statewide elected officials*. sos.wa.gov. https://www.sos.wa.gov/
-- Washington State Legislature. (n.d.). *Washington State Constitution, Article III (The Executive)*. leg.wa.gov. https://leg.wa.gov/`,
+- Washington Secretary of State. (n.d.). *Statewide elected officials*. [sos.wa.gov](https://sos.wa.gov). https://www.sos.wa.gov/
+- Washington State Legislature. (n.d.). *Washington State Constitution, Article III (The Executive)*. [leg.wa.gov](https://leg.wa.gov). https://leg.wa.gov/`,
+      recallContent: [
+        {
+          prompt: "Under which constitution does Washington govern, and when did it become a state?",
+          answer: "The original Constitution of 1889, adopted when Washington became the 42nd state on November 11, 1889.",
+        },
+        {
+          prompt: "What is the difference between an Initiative to the People and an Initiative to the Legislature?",
+          answer: "An Initiative to the People goes straight to the ballot; an Initiative to the Legislature goes to lawmakers first, who may enact it, reject it (sending it to voters), or offer an alternative.",
+        },
+      ],
     },
 
     // ── Section 3: Courts + Legislature ──────────────────────────────────
@@ -79,24 +89,34 @@ The **Judicial** branch runs from trial courts up to the **Court of Appeals** an
       slug: "wa-courts-legislature",
       title: "3 · The courts and the Legislature",
       section: "The Three Branches",
-      body: `**Judicial — the Washington courts.** Washington's judges are **elected by the voters on a NONPARTISAN ballot** — no party label appears next to their names (Washington Courts, n.d.):
+      body: `**Judicial: the Washington courts.** Washington's judges are **elected by the voters on a NONPARTISAN ballot**, so no party label appears next to their names (Washington Courts, n.d.):
 - The **Washington Supreme Court** has **nine justices**, elected statewide to **6-year terms.**
 - **Court of Appeals** and **Superior Court** judges are likewise elected on nonpartisan ballots.
 - When a seat opens mid-term, the **Governor appoints** an interim judge who must then stand for election.
 
-**Legislative — the Washington State Legislature.** A part-time "citizen legislature" that meets in **Olympia** (Washington State Legislature, n.d.):
-- **Senate — 49 senators**, elected to **4-year terms.**
-- **House of Representatives — 98 representatives**, elected to **2-year terms.**
+**Legislative: the Washington State Legislature.** A part-time "citizen legislature" that meets in **Olympia** (Washington State Legislature, n.d.):
+- **Senate, 49 senators**, elected to **4-year terms.**
+- **House of Representatives, 98 representatives**, elected to **2-year terms.**
 - Washington has **49 legislative districts**, and here's a twist it shares with Arizona: **each district elects ONE senator and TWO representatives.** So your senator and your two House members all represent the *same* district.
-- Washington has **no legislative term limits** — a 1992 voter-passed limit was struck down by the state Supreme Court as unconstitutional.
+- Washington has **no legislative term limits**; a 1992 voter-passed limit was struck down by the state Supreme Court as unconstitutional.
 
 **Veto and override.** The Governor may veto bills and, notably, use a **line-item veto** on parts of bills (broad in Washington). An override requires a **two-thirds vote of each chamber.**
 
 **Check yourself.** How many justices sit on the Washington Supreme Court, and how many representatives does each of the 49 districts elect?
 
 ## Sources
-- Washington Courts. (n.d.). *Washington State court system and judicial elections*. courts.wa.gov. https://www.courts.wa.gov/
-- Washington State Legislature. (n.d.). *About the Legislature; Constitution Article II*. leg.wa.gov. https://leg.wa.gov/`,
+- Washington Courts. (n.d.). *Washington State court system and judicial elections*. [courts.wa.gov](https://courts.wa.gov). https://www.courts.wa.gov/
+- Washington State Legislature. (n.d.). *About the Legislature; Constitution Article II*. [leg.wa.gov](https://leg.wa.gov). https://leg.wa.gov/`,
+      recallContent: [
+        {
+          prompt: "How many statewide executive officials do Washington voters elect, and what makes this a 'plural' executive?",
+          answer: "Nine separate statewide officials, each on their own ballot line, so executive power is divided among many independently elected officials rather than concentrated in the Governor.",
+        },
+        {
+          prompt: "Which of Washington's statewide executive offices is nonpartisan?",
+          answer: "The Superintendent of Public Instruction, who leads K-12 education, is elected on a nonpartisan basis.",
+        },
+      ],
     },
 
     // ── Section 4: How a bill becomes law ────────────────────────────────
@@ -104,30 +124,40 @@ The **Judicial** branch runs from trial courts up to the **Court of Appeals** an
       slug: "wa-bill-to-law",
       title: "4 · How a bill becomes a Washington law",
       section: "Making Law",
-      body: `In Washington a law can be made **two ways** — through the Legislature, or directly by the voters.
+      body: `In Washington a law can be made **two ways**: through the Legislature, or directly by the voters.
 
-**Path 1 — through the Legislature** (Washington State Legislature, n.d.):
+**Path 1, through the Legislature** (Washington State Legislature, n.d.):
 1. **Introduction.** A legislator introduces a bill in the House or Senate.
 2. **Committee.** It goes to committee for hearings, amendment, and a vote.
 3. **Floor votes.** The full chamber votes; the bill then crosses to the **other chamber** and repeats.
 4. **Reconciliation.** Differences are resolved (often in a conference committee).
 5. **Governor.** The Governor may **sign**, **veto**, or **line-item veto** appropriations; a two-thirds vote of each chamber overrides.
 
-**Path 2 — directly by the voters:**
-- **Initiative to the People** — signatures put a proposed law straight on the ballot.
-- **Initiative to the Legislature** — signatures send a proposed law to lawmakers first; if they don't enact it, it goes to the voters (sometimes alongside a legislative alternative).
-- **Referendum** — voters can veto a statute the Legislature passed.
+**Path 2, directly by the voters:**
+- **Initiative to the People**: signatures put a proposed law straight on the ballot.
+- **Initiative to the Legislature**: signatures send a proposed law to lawmakers first; if they don't enact it, it goes to the voters (sometimes alongside a legislative alternative).
+- **Referendum**: voters can veto a statute the Legislature passed.
 
-The takeaway: in Washington, **the Legislature is the usual road, but the voters have their own on-ramps** — a recurring theme of this course.
+The takeaway: in Washington, **the Legislature is the usual road, but the voters have their own on-ramps**, a recurring theme of this course.
 
 **Check yourself.** Name the two forms of initiative Washington voters can use, and say what makes them different.
 
 ## Sources
-- Washington State Legislature. (n.d.). *How a bill becomes law*. leg.wa.gov. https://leg.wa.gov/
-- Washington Secretary of State. (n.d.). *Initiatives to the People vs. to the Legislature*. sos.wa.gov. https://www.sos.wa.gov/`,
+- Washington State Legislature. (n.d.). *How a bill becomes law*. [leg.wa.gov](https://leg.wa.gov). https://leg.wa.gov/
+- Washington Secretary of State. (n.d.). *Initiatives to the People vs. to the Legislature*. [sos.wa.gov](https://sos.wa.gov). https://www.sos.wa.gov/`,
+      recallContent: [
+        {
+          prompt: "How are Washington's 49 legislative districts represented in the Senate and House?",
+          answer: "Each district elects one senator and two representatives, giving 49 senators (4-year terms) and 98 representatives (2-year terms).",
+        },
+        {
+          prompt: "How are Washington Supreme Court justices chosen and for how long?",
+          answer: "The nine justices are elected statewide by voters on a nonpartisan ballot to 6-year terms.",
+        },
+      ],
     },
 
-    // ── Section 5: Elections — all-mail + top-two ────────────────────────
+    // ── Section 5: Elections: all-mail + top-two ────────────────────────
     {
       slug: "wa-elections",
       title: "5 · Elections: all-mail voting and the 'top-two' primary",
@@ -138,14 +168,24 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
 - You can return your ballot **by mail (postage prepaid)** or drop it in an official **ballot drop box.**
 - Washington also offers **same-day and automatic voter registration**, and ballots postmarked by Election Day count.
 
-**2. The 'top-two' primary.** Washington uses a **top-two (nonpartisan) primary**: **all candidates for an office appear on ONE primary ballot regardless of party, and the two candidates with the most votes advance to the general election** — even if they belong to the **same** party (Washington Secretary of State, n.d.). Candidates may state a party they "prefer," but parties do not control who advances. (California later adopted a similar system; Washington's was upheld by the U.S. Supreme Court in 2008.)
+**2. The 'top-two' primary.** Washington uses a **top-two (nonpartisan) primary**: **all candidates for an office appear on ONE primary ballot regardless of party, and the two candidates with the most votes advance to the general election**, even if they belong to the **same** party (Washington Secretary of State, n.d.). Candidates may state a party they "prefer," but parties do not control who advances. (California later adopted a similar system; Washington's was upheld by the U.S. Supreme Court in 2008.)
 
-⚠️ **Time-sensitive.** Registration deadlines, drop-box locations, and ballot-return rules are administered by county auditors and can change. Confirm the **current** rules and your ballot status at **sos.wa.gov** (or your county elections office) before each election.
+⚠️ **Time-sensitive.** Registration deadlines, drop-box locations, and ballot-return rules are administered by county auditors and can change. Confirm the **current** rules and your ballot status at **[sos.wa.gov](https://sos.wa.gov)** (or your county elections office) before each election.
 
 **Check yourself.** How does a Washington voter receive their ballot, and how does the "top-two" primary decide who advances?
 
 ## Sources
-- Washington Secretary of State. (n.d.). *Vote by mail; the top-two primary*. sos.wa.gov. https://www.sos.wa.gov/`,
+- Washington Secretary of State. (n.d.). *Vote by mail; the top-two primary*. [sos.wa.gov](https://sos.wa.gov). https://www.sos.wa.gov/`,
+      recallContent: [
+        {
+          prompt: "In Washington, what are the two ways a law can be made?",
+          answer: "Through the Legislature (introduction, committee, floor votes in both chambers, then the Governor), or directly by the voters via an Initiative to the People, an Initiative to the Legislature, or a referendum.",
+        },
+        {
+          prompt: "What is the difference between an Initiative to the People and a referendum?",
+          answer: "An Initiative to the People uses signatures to put a proposed new law straight on the ballot; a referendum lets voters veto a statute the Legislature already passed.",
+        },
+      ],
     },
 
     // ── Section 6: Taxes, local government, getting involved ─────────────
@@ -153,25 +193,35 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
       slug: "wa-local-and-involved",
       title: "6 · Taxes, local government, and how to take part",
       section: "Get Involved",
-      body: `**A distinctive tax structure (and a live legal question).** Washington has **no personal state income tax** — a long tradition rooted in the state constitution's **uniformity clause**, which courts have historically read to bar a graduated income tax (Washington State Legislature, n.d.). ⚠️ **Time-sensitive and contested:** the question periodically returns to court and the ballot. For example, Washington's **capital-gains tax** (enacted 2021) was challenged and **upheld by the state Supreme Court in 2023** as an excise tax, not an income tax. Because this area is actively litigated, **do not assume a fixed answer — check leg.wa.gov / sos.wa.gov for current law.** Washington instead leans on **sales tax and property tax.**
+      body: `**A distinctive tax structure (and a live legal question).** Washington has **no personal state income tax**, a long tradition rooted in the state constitution's **uniformity clause**, which courts have historically read to bar a graduated income tax (Washington State Legislature, n.d.). ⚠️ **Time-sensitive and contested:** the question periodically returns to court and the ballot. For example, Washington's **capital-gains tax** (enacted 2021) was challenged and **upheld by the state Supreme Court in 2023** as an excise tax, not an income tax. Because this area is actively litigated, **do not assume a fixed answer: check [leg.wa.gov](https://leg.wa.gov) / [sos.wa.gov](https://sos.wa.gov) for current law.** Washington instead leans on **sales tax and property tax.**
 
 **Local government** (Washington State Legislature, n.d.):
 - **39 counties**, each governed by an elected board (commissioners or, in **home-rule charter counties** like King, Pierce, and Snohomish, an elected council and executive).
 - **Cities and towns** (many are **code cities** with broad home-rule powers) plus **special districts** (schools, ports, fire, water).
-- Washington grants substantial **home rule** — charter counties and code cities set much of their own structure, in contrast to Dillon's Rule states like Virginia.
+- Washington grants substantial **home rule**: charter counties and code cities set much of their own structure, in contrast to Dillon's Rule states like Virginia.
 
 **How to take part:**
-- **Vote — it's mailed to you.** Track your ballot at sos.wa.gov; return it by mail or drop box.
-- **Use direct democracy.** Sign, circulate, or file **initiatives and referenda** — Washington's on-ramps are among the most open in the country.
+- **Vote (it's mailed to you).** Track your ballot at [sos.wa.gov](https://sos.wa.gov); return it by mail or drop box.
+- **Use direct democracy.** Sign, circulate, or file **initiatives and referenda**; Washington's on-ramps are among the most open in the country.
 - **Show up locally.** County councils, city councils, school boards, and port districts hold public meetings with comment time.
-- **Contact your legislators** — you have one Senator and two Representatives from your district in Olympia.
-- **Run** — school board, city council, port commission, and county offices are reachable local starting points.
+- **Contact your legislators.** You have one Senator and two Representatives from your district in Olympia.
+- **Run.** School board, city council, port commission, and county offices are reachable local starting points.
 
 **Check yourself.** Does Washington levy a personal state income tax, and why does this course say to VERIFY the current answer?
 
 ## Sources
-- Washington State Legislature. (n.d.). *Washington tax structure; local government (counties, code cities)*. leg.wa.gov. https://leg.wa.gov/
-- Washington Secretary of State. (n.d.). *Get involved: voting, initiatives, local offices*. sos.wa.gov. https://www.sos.wa.gov/`,
+- Washington State Legislature. (n.d.). *Washington tax structure; local government (counties, code cities)*. [leg.wa.gov](https://leg.wa.gov). https://leg.wa.gov/
+- Washington Secretary of State. (n.d.). *Get involved: voting, initiatives, local offices*. [sos.wa.gov](https://sos.wa.gov). https://www.sos.wa.gov/`,
+      recallContent: [
+        {
+          prompt: "How does most voting happen in Washington, and how does the 'top-two' primary decide who advances?",
+          answer: "Washington is an all-mail state: a ballot is mailed to every registered voter, returned by mail or drop box. In the top-two primary all candidates share one ballot and the two highest vote-getters advance, even if from the same party.",
+        },
+        {
+          prompt: "What is notable about the deadlines and rules for Washington elections?",
+          answer: "Registration deadlines, drop-box locations, and ballot-return rules are administered by county auditors and can change, so voters should confirm current rules at sos.wa.gov before each election.",
+        },
+      ],
     },
 
     // ── Section 7: Practice (fill in the blanks) ─────────────────────────
@@ -195,14 +245,14 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
             answer: "nine",
             accept: ["9"],
             explanation:
-              "Governor, Lt. Governor, Secretary of State, Attorney General, Treasurer, Auditor, Superintendent of Public Instruction, Commissioner of Public Lands, and Insurance Commissioner — nine in all.",
+              "Governor, Lt. Governor, Secretary of State, Attorney General, Treasurer, Auditor, Superintendent of Public Instruction, Commissioner of Public Lands, and Insurance Commissioner: nine in all.",
           },
           {
             prompt:
               "Washington's Legislature has 49 senators and ___ representatives.",
             answer: "98",
             explanation:
-              "Each of the 49 districts elects one senator and two representatives — 49 senators and 98 representatives.",
+              "Each of the 49 districts elects one senator and two representatives, giving 49 senators and 98 representatives.",
           },
           {
             prompt:
@@ -224,7 +274,7 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
               "TRUE or FALSE: Washington levies a personal state income tax.",
             answer: "false",
             explanation:
-              "False. Washington has no personal state income tax (its uniformity clause has barred a graduated one); it relies on sales and property taxes. This area is litigated — verify current law.",
+              "False. Washington has no personal state income tax (its uniformity clause has barred a graduated one); it relies on sales and property taxes. This area is litigated, so verify current law.",
           },
         ],
       },
@@ -274,7 +324,7 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
             ],
             correctIndex: 2,
             explanation:
-              "The Superintendent of Public Instruction (leading K–12 education) is elected on a nonpartisan basis.",
+              "The Superintendent of Public Instruction (leading K-12 education) is elected on a nonpartisan basis.",
             sourceLessonSlug: "wa-executive",
           },
           {
@@ -300,7 +350,7 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
             ],
             correctIndex: 1,
             explanation:
-              "Like Arizona, each of Washington's 49 districts elects one senator and two representatives — 49 senators, 98 representatives.",
+              "Like Arizona, each of Washington's 49 districts elects one senator and two representatives, giving 49 senators, 98 representatives.",
             sourceLessonSlug: "wa-courts-legislature",
           },
           {
@@ -320,7 +370,7 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
             prompt: "How does most voting happen in Washington?",
             options: [
               "In person at polling places only",
-              "Entirely by mail — a ballot is sent to every registered voter",
+              "Entirely by mail: a ballot is sent to every registered voter",
               "Online through a state website",
               "By telephone",
             ],
@@ -359,7 +409,7 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
             prompt: "Why does this course tell you to VERIFY Washington's tax and voting rules?",
             options: [
               "Because Washington has no official website",
-              "Because tax questions are actively litigated and election rules are set locally and change — confirm at leg.wa.gov / sos.wa.gov",
+              "Because tax questions are actively litigated and election rules are set locally and change; confirm at [leg.wa.gov](https://leg.wa.gov) / [sos.wa.gov](https://sos.wa.gov)",
               "Because only Congress sets them",
               "Because the rules are secret",
             ],

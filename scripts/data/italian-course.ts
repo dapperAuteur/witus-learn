@@ -1,4 +1,4 @@
-// Authored, tense-progressive Italian course — mirrors the Spanish template, but
+// Authored, tense-progressive Italian course. It mirrors the Spanish template, but
 // unit 3 teaches the present progressive (stare + gerundio) instead of a "near
 // future with andare", because Italian does NOT use andare + infinitive that way
 // (it uses the present or the simple future for the future). Grammar reviewed.
@@ -7,9 +7,9 @@
 import type { AuthoredCourse } from "./authored-course";
 
 export const ITALIAN_COURSE: AuthoredCourse = {
-  title: "Italian, Tense by Tense — the Curb Appeall Story",
+  title: "Italian, Tense by Tense: the Curb Appeall Story",
   description:
-    "Learn to speak Italian by following one continuous story about Curb Appeall and friends learning healthy-living and money habits. Each unit teaches one tense — present, present progressive, passato prossimo, imperfect, future, conditional, subjunctive — and ends with a conversation challenge so you produce the language yourself.",
+    "Learn to speak Italian by following one continuous story about Curb Appeall and friends learning healthy-living and money habits. Each unit teaches one tense (present, present progressive, passato prossimo, imperfect, future, conditional, subjunctive) and ends with a conversation challenge so you produce the language yourself.",
   lessons: [
     {
       slug: "presente-regolari",
@@ -74,7 +74,7 @@ I learn to cook fresh vegetables every day.
             explanation: "I verbi in -ere: loro → -ono (prend-ere → prend-ono).",
           },
           {
-            prompt: "Traduci: We share — noi ___ (condividere)",
+            prompt: "Traduci: We share, noi ___ (condividere)",
             answer: "condividiamo",
             explanation: "Dalla storia: 'Noi condividiamo il cibo.' noi → -iamo.",
           },
@@ -83,8 +83,18 @@ I learn to cook fresh vegetables every day.
     },
     {
       slug: "presente-irregolari",
+      recallContent: [
+        {
+          prompt: "What are the three regular Italian verb endings, and how do you conjugate them?",
+          answer: "Verbs end in -are, -ere, or -ire; you drop the ending and add a new one for each subject.",
+        },
+        {
+          prompt: "Why does Italian usually drop subject pronouns like io, tu, and noi?",
+          answer: "Because the verb ending already shows who the subject is, for example 'aiuto' already means 'I help'.",
+        },
+      ],
       title: "2 · Present tense: the key irregular verbs",
-      body: `A few verbs are irregular but essential. **Essere** (to be) and **avere** (to have) are the two most important — you also use them to build the past tense.
+      body: `A few verbs are irregular but essential. **Essere** (to be) and **avere** (to have) are the two most important. You also use them to build the past tense.
 
 | | essere | avere | andare | fare | volere |
 |---|---|---|---|---|---|
@@ -144,7 +154,7 @@ I have a small garden where I grow herbs.
             explanation: "Andare: io vado, tu vai, lui/lei va.",
           },
           {
-            prompt: "Traduci: they want — loro ___ (volere)",
+            prompt: "Traduci: they want, loro ___ (volere)",
             answer: "vogliono",
             explanation: "Dalla storia: 'Curb e i suoi amici vogliono imparare a risparmiare.'",
           },
@@ -153,10 +163,20 @@ I have a small garden where I grow herbs.
     },
     {
       slug: "presente-progressivo",
+      recallContent: [
+        {
+          prompt: "Conjugate essere (to be) for io, tu, and lui/lei in the present.",
+          answer: "io sono, tu sei, lui/lei è.",
+        },
+        {
+          prompt: "Which two irregular verbs are the most important, and what else do they help you build?",
+          answer: "Essere and avere; you also use them to build the past tense.",
+        },
+      ],
       title: "3 · The present progressive: stare + gerund",
       body: `To say what is happening **right now**, Italian uses **stare + the gerund** (the "-ing" form). Form the gerund with **-ando** (-are verbs) or **-endo** (-ere / -ire verbs).
 
-Conjugate **stare**: sto, stai, sta, stiamo, state, stanno — then add the gerund.
+Conjugate **stare**: sto, stai, sta, stiamo, state, stanno. Then add the gerund.
 
 **Formula:** sto + _cucinando_ → I am cooking (right now).
 
@@ -210,7 +230,7 @@ What are you studying right now?
             explanation: "Stare, loro → stanno.",
           },
           {
-            prompt: "Traduci: I am walking — io sto ___ (camminare)",
+            prompt: "Traduci: I am walking, io sto ___ (camminare)",
             answer: "camminando",
             explanation: "Dalla storia: 'Io sto camminando intorno al lago.'",
           },
@@ -219,6 +239,16 @@ What are you studying right now?
     },
     {
       slug: "passato-prossimo",
+      recallContent: [
+        {
+          prompt: "How do you form the Italian present progressive for what is happening right now?",
+          answer: "Use stare (sto, stai, sta, stiamo, state, stanno) plus the gerund.",
+        },
+        {
+          prompt: "How do you build the gerund for -are verbs versus -ere and -ire verbs?",
+          answer: "-are verbs take -ando (cucinare becomes cucinando); -ere and -ire verbs take -endo (condividere becomes condividendo).",
+        },
+      ],
       title: "4 · The passato prossimo: finished actions in the past",
       body: `To talk about completed past actions, Italian uses the **passato prossimo**: a helper verb in the present (**avere** for most verbs, **essere** for movement/change verbs) + the **past participle**.
 
@@ -282,7 +312,7 @@ After the meal, they took a walk around the neighborhood.
             explanation: "Con essere il participio concorda: andare → andato/andata.",
           },
           {
-            prompt: "Traduci: we learned — noi abbiamo ___ (imparare)",
+            prompt: "Traduci: we learned, noi abbiamo ___ (imparare)",
             answer: "imparato",
             explanation: "Dalla storia: 'Abbiamo imparato a risparmiare acqua.'",
           },
@@ -291,8 +321,18 @@ After the meal, they took a walk around the neighborhood.
     },
     {
       slug: "imperfetto",
+      recallContent: [
+        {
+          prompt: "What two parts make up the passato prossimo?",
+          answer: "A present-tense helper verb (avere for most verbs, essere for movement or change verbs) plus the past participle.",
+        },
+        {
+          prompt: "What are the regular past participle endings for -are, -ere, and -ire verbs?",
+          answer: "-are becomes -ato (aiutato), -ere becomes -uto (creduto), and -ire becomes -ito (finito).",
+        },
+      ],
       title: "5 · The imperfect: how things used to be",
-      body: `The **imperfetto** describes the past that was ongoing, habitual, or background — "used to" and "was -ing". It is very regular: drop **-re** from the infinitive and add **-vo, -vi, -va, -vamo, -vate, -vano**.
+      body: `The **imperfetto** describes the past that was ongoing, habitual, or background ("used to" and "was -ing"). It is very regular: drop **-re** from the infinitive and add **-vo, -vi, -va, -vamo, -vate, -vano**.
 
 | | lavorare | prendere / partire |
 |---|---|---|
@@ -350,7 +390,7 @@ The garden was always full of fresh fruit.
             explanation: "Essere è irregolare: ero, eri, era, eravamo, erano.",
           },
           {
-            prompt: "Traduci: Curb used to walk — Curb ___ (camminare)",
+            prompt: "Traduci: Curb used to walk, Curb ___ (camminare)",
             answer: "camminava",
             explanation: "Dalla storia: 'Curb camminava al mercato ogni mattina.'",
           },
@@ -359,6 +399,16 @@ The garden was always full of fresh fruit.
     },
     {
       slug: "passato-prossimo-vs-imperfetto",
+      recallContent: [
+        {
+          prompt: "When do you use the imperfetto?",
+          answer: "For the past that was ongoing, habitual, or background, the 'used to' and 'was -ing' meanings.",
+        },
+        {
+          prompt: "How do you form the regular imperfetto?",
+          answer: "Drop -re from the infinitive and add -vo, -vi, -va, -vamo, -vate, -vano; essere is irregular (ero, eri, era, eravamo, erano).",
+        },
+      ],
       title: "6 · Passato prossimo vs. imperfect",
       body: `Choosing between the two past tenses is the heart of storytelling. Use the **passato prossimo** for a single completed event, and the **imperfetto** for the ongoing scene around it.
 
@@ -412,7 +462,7 @@ Everyone was talking about money, but the otter changed the subject.
             explanation: "Sfondo continuo → imperfetto: parla-vano.",
           },
           {
-            prompt: "Traduci: the otter changed — la lontra ___ (cambiare, evento, con avere)",
+            prompt: "Traduci: the otter changed, la lontra ___ (cambiare, evento, con avere)",
             answer: "ha cambiato",
             explanation: "Dalla storia: 'la lontra ha cambiato argomento.'",
           },
@@ -421,6 +471,16 @@ Everyone was talking about money, but the otter changed the subject.
     },
     {
       slug: "futuro-semplice",
+      recallContent: [
+        {
+          prompt: "In a past-tense story, what role does the imperfetto play versus the passato prossimo?",
+          answer: "The imperfetto sets the background (what was already happening); the passato prossimo is the completed event that interrupts or moves the story forward.",
+        },
+        {
+          prompt: "In 'Curb camminava nel parco quando ha visto la lontra', which verb is the background and which is the event?",
+          answer: "'camminava' (imperfetto) is the background; 'ha visto' (passato prossimo) is the event.",
+        },
+      ],
       title: "7 · The simple future: plans and predictions",
       body: `The **futuro semplice** adds endings onto the infinitive (drop the final **-e**; -are verbs change the **a** to **e**). The endings are **-ò, -ai, -à, -emo, -ete, -anno**.
 
@@ -480,7 +540,7 @@ Will you learn to cook with us?
             explanation: "Radice irregolare: essere → sar-, quindi sarò.",
           },
           {
-            prompt: "Traduci: we will save — noi ___ (risparmiare)",
+            prompt: "Traduci: we will save, noi ___ (risparmiare)",
             answer: "risparmieremo",
             explanation: "Dalla storia: 'Risparmieremo soldi e condivideremo i guadagni.'",
           },
@@ -489,8 +549,18 @@ Will you learn to cook with us?
     },
     {
       slug: "condizionale",
+      recallContent: [
+        {
+          prompt: "How do you form the simple future, and what are its endings?",
+          answer: "Add endings to the infinitive (drop the final -e, and -are verbs change the a to e): -ò, -ai, -à, -emo, -ete, -anno.",
+        },
+        {
+          prompt: "What are the irregular future stems for essere, avere, and fare?",
+          answer: "essere becomes sarò, avere becomes avrò, and fare becomes farò.",
+        },
+      ],
       title: "8 · The conditional: politeness and “would”",
-      body: `The **condizionale** means "would" — for hypotheticals and politeness. Take the **future stem** and add **-ei, -esti, -ebbe, -emmo, -ebbero** (same irregular stems as the future: sarei, avrei, farei).
+      body: `The **condizionale** means "would": for hypotheticals and politeness. Take the **future stem** and add **-ei, -esti, -ebbe, -emmo, -ebbero** (same irregular stems as the future: sarei, avrei, farei).
 
 ### Nella storia
 **Mi piacerebbe imparare più ricette sane.**
@@ -542,7 +612,7 @@ Without a budget, it would be hard to save.
             explanation: "Dalla storia: 'Potresti insegnarmi...?' (tu → -esti).",
           },
           {
-            prompt: "Traduci: I would like — mi ___ (piacere)",
+            prompt: "Traduci: I would like, mi ___ (piacere)",
             answer: "piacerebbe",
             explanation: "Dalla storia: 'Mi piacerebbe imparare più ricette sane.'",
           },
@@ -551,8 +621,18 @@ Without a budget, it would be hard to save.
     },
     {
       slug: "congiuntivo-presente",
+      recallContent: [
+        {
+          prompt: "What does the condizionale express, and how do you form it?",
+          answer: "It means 'would' (for hypotheticals and politeness); take the future stem and add -ei, -esti, -ebbe, -emmo, -ebbero.",
+        },
+        {
+          prompt: "How do you politely ask 'Could you...?' in Italian, as in the lesson?",
+          answer: "Use the conditional 'Potresti...?', for example 'Potresti insegnarmi a fare quel frullato?'.",
+        },
+      ],
       title: "9 · The present subjunctive: wishes, advice, and doubt",
-      body: `The **congiuntivo** appears after expressions of wish, opinion, or doubt — usually with **che**. Form it from the **io** form of the present: drop **-o** and add **-i** (-are verbs) or **-a** (-ere / -ire verbs); the three singular persons look the same.
+      body: `The **congiuntivo** appears after expressions of wish, opinion, or doubt (usually with **che**). Form it from the **io** form of the present: drop **-o** and add **-i** (-are verbs) or **-a** (-ere / -ire verbs); the three singular persons look the same.
 
 **parlare** → io parlo → che io parli, che tu parli, che lui parli, che noi parliamo, che loro parlino
 
@@ -608,7 +688,7 @@ Let's hope the garden grows quickly.
             explanation: "Dalla storia: 'Curb vuole che i suoi amici imparino...' (-are → -ino).",
           },
           {
-            prompt: "Traduci: that we eat — che noi ___ (mangiare)",
+            prompt: "Traduci: that we eat, che noi ___ (mangiare)",
             answer: "mangiamo",
             explanation: "Dalla storia: 'È importante che mangiamo più verdure.'",
           },
@@ -622,6 +702,16 @@ Let's hope the garden grows quickly.
     // fill-in exercise, then a quiz.
     {
       slug: "dialogo-bar",
+      recallContent: [
+        {
+          prompt: "When is the present subjunctive (congiuntivo) used, and what word usually introduces it?",
+          answer: "After expressions of wish, opinion, or doubt, usually introduced by 'che'.",
+        },
+        {
+          prompt: "How do you form the present subjunctive of an -are verb like parlare?",
+          answer: "From the io present, drop -o and add -i: che io parli, che tu parli, che lui parli, che noi parliamo, che loro parlino.",
+        },
+      ],
       title: "Dialogo · Al bar",
       section: "Dialogues",
       body: `Curb Appeall orders at an Italian bar (café). This conversation reuses the **present tense**, **avere**, and the **polite conditional** (_vorrei_ = "I would like") from the conditional unit.
@@ -676,13 +766,23 @@ _Curb: Here you go. Thank you very much!_
           { prompt: "Saluto del mattino: \"___! Cosa desidera?\"", answer: "buongiorno", explanation: "\"Buongiorno\" = good morning." },
           { prompt: "Ordine cortese: \"___ un caffellatte.\" (volere, condizionale di cortesia)", answer: "vorrei", explanation: "\"Vorrei\" è la forma cortese di volere (io)." },
           { prompt: "Il barista risponde: \"___ mele e banane.\" (avere, noi)", answer: "abbiamo", explanation: "avere: noi → abbiamo." },
-          { prompt: "Azione immediata: \"Allora ___ una mela.\" (prendere, io — presente)", answer: "prendo", explanation: "prendere: io → prendo (il presente esprime anche il futuro immediato)." },
+          { prompt: "Azione immediata: \"Allora ___ una mela.\" (prendere, io, presente)", answer: "prendo", explanation: "prendere: io → prendo (il presente esprime anche il futuro immediato)." },
           { prompt: "Chiedi il prezzo: \"___'è?\"", answer: "quant", explanation: "\"Quant'è?\" = how much is it?" },
         ],
       },
     },
     {
       slug: "dialogo-indicazioni",
+      recallContent: [
+        {
+          prompt: "In the bar dialogue, how did Curb politely order, and what does 'vorrei' mean?",
+          answer: "He said 'Vorrei un caffellatte, per favore'; 'vorrei' means 'I would like' (the polite conditional).",
+        },
+        {
+          prompt: "How do you ask the price in Italian, as Curb did at the bar?",
+          answer: "'Quant'è?', meaning 'How much is it?'.",
+        },
+      ],
       title: "Dialogo · Chiedere indicazioni",
       section: "Dialogues",
       body: `Platypus is lost and asks the way to the market. This dialogue reuses **essere** (location), **andare**, and the **future tense**.
@@ -734,13 +834,23 @@ _Platypus: Thank you very much for your help!_
           { prompt: "Chiedi la posizione: \"Dov'___ il mercato?\" (essere)", answer: "è", explanation: "Per la posizione si usa essere: lui/lei → è." },
           { prompt: "Indicazione: \"Vada sempre ___.\" (straight ahead)", answer: "dritto", explanation: "\"sempre dritto\" = straight ahead." },
           { prompt: "Gira: \"Giri a ___.\" (right)", answer: "destra", explanation: "\"a destra\" = to the right." },
-          { prompt: "Previsione: \"___ una grande fontana.\" (vedere, Lei — futuro)", answer: "vedrà", explanation: "vedere al futuro, forma di cortesia (Lei): vedrà." },
+          { prompt: "Previsione: \"___ una grande fontana.\" (vedere, Lei, futuro)", answer: "vedrà", explanation: "vedere al futuro, forma di cortesia (Lei): vedrà." },
           { prompt: "Posizione relativa: \"Il mercato è ___ alla fontana.\" (next to)", answer: "accanto", explanation: "\"accanto a\" = next to." },
         ],
       },
     },
     {
       slug: "dialogo-presentazioni",
+      recallContent: [
+        {
+          prompt: "How do you ask where a place is in Italian, and which verb does it use?",
+          answer: "'Dov'è...?' ('Where is...?'), which uses essere for location.",
+        },
+        {
+          prompt: "What do 'sempre dritto' and 'giri a destra' mean when giving directions?",
+          answer: "'sempre dritto' means 'straight ahead' and 'giri a destra' means 'turn right'.",
+        },
+      ],
       title: "Dialogo · Le presentazioni",
       section: "Dialogues",
       body: `Curb introduces a new friend to the otter who teaches the group. This dialogue reuses **essere** and **avere**, and the **future tense** for plans.
@@ -793,7 +903,7 @@ _Platypus: Perfect! I'm very happy to meet you._
           { prompt: "Professione: \"___ insegnante.\" (essere, io)", answer: "sono", explanation: "La professione usa essere: io → sono." },
           { prompt: "Chiedi il nome: \"Come ti ___?\" (chiamarsi)", answer: "chiami", explanation: "\"Come ti chiami?\" = what's your name?" },
           { prompt: "Emozione: \"___ molto contento di conoscerti.\" (essere, io)", answer: "sono", explanation: "essere: io → sono." },
-          { prompt: "Progetto: \"Domani ___ insieme.\" (cucinare, noi — futuro)", answer: "cucineremo", explanation: "cucinare al futuro: noi → cucineremo." },
+          { prompt: "Progetto: \"Domani ___ insieme.\" (cucinare, noi, futuro)", answer: "cucineremo", explanation: "cucinare al futuro: noi → cucineremo." },
         ],
       },
     },
@@ -812,7 +922,7 @@ _Platypus: Perfect! I'm very happy to meet you._
             sourceLessonSlug: "dialogo-bar",
           },
           {
-            prompt: "\"Abbiamo mele\" — quale verbo e persona?",
+            prompt: "\"Abbiamo mele\": quale verbo e persona?",
             options: ["avere, io", "avere, noi", "essere, noi", "avere, loro"],
             correctIndex: 1,
             explanation: "\"abbiamo\" è avere alla persona \"noi\".",

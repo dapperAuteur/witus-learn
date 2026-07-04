@@ -13,7 +13,7 @@ export async function recordQuizAttempt(input: {
   passed: boolean;
   correct: number;
   total: number;
-  responses: { questionIndex: number; optionIndex: number; correct: boolean }[];
+  responses: { questionKey?: string; questionIndex: number; optionIndex: number; correct: boolean }[];
 }): Promise<void> {
   await db.insert(quizAttempts).values(input);
 }

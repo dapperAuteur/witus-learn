@@ -1,4 +1,4 @@
-// Authored "West Virginia Civics: How Your State Government Works" — the West Virginia
+// Authored "West Virginia Civics: How Your State Government Works", the West Virginia
 // entry in the per-state Civics layer on Learn.WitUS. State-level companion to the
 // general Civics courses: those teach the SYSTEM; this teaches West Virginia's version.
 //
@@ -19,7 +19,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_WV_COURSE: AuthoredCourse = {
   title: "West Virginia Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of West Virginia governs itself — and how you take part where you live. West Virginia has a unique origin story: it is the ONLY state created by breaking away from another state — its western counties split from Virginia during the Civil War and joined the Union in 1863. You'll learn West Virginia's Constitution of 1872, its plural executive (with no lieutenant governor), its Legislature of 34 senators and 100 delegates, its recently nonpartisan judiciary, and its 55 counties. Time-sensitive facts are flagged, pointing to sos.wv.gov. Cited to West Virginia's own official sources (wvlegislature.gov, sos.wv.gov, courtswv.gov).",
+    "A practical, non-partisan guide to how the state of West Virginia governs itself, and how you take part where you live. West Virginia has a unique origin story: it is the ONLY state created by breaking away from another state, its western counties split from Virginia during the Civil War and joined the Union in 1863. You'll learn West Virginia's Constitution of 1872, its plural executive (with no lieutenant governor), its Legislature of 34 senators and 100 delegates, its recently nonpartisan judiciary, and its 55 counties. Time-sensitive facts are flagged, pointing to sos.wv.gov. Cited to West Virginia's own official sources (wvlegislature.gov, sos.wv.gov, courtswv.gov).",
   lessons: [
     // ── Section 1: Born from the Civil War ───────────────────────────────
     {
@@ -28,13 +28,13 @@ export const STATE_CIVICS_WV_COURSE: AuthoredCourse = {
       section: "What Makes West Virginia Unique",
       body: `West Virginia's most distinctive fact is its **origin**: it is the **only U.S. state created by separating from another state** (West Virginia Legislature, n.d.).
 
-**How it happened.** When Virginia **seceded from the Union in 1861** at the start of the Civil War, the people of Virginia's **western, mountainous counties** — culturally and economically different from the plantation east, and largely **pro-Union** — refused to go along. They organized their own government, and in **1863**, with Congress's approval, the western counties **broke away from Virginia and were admitted to the Union as the new state of West Virginia** (June 20, 1863) (West Virginia Legislature, n.d.).
+**How it happened.** When Virginia **seceded from the Union in 1861** at the start of the Civil War, the people of Virginia's **western, mountainous counties**, culturally and economically different from the plantation east, and largely **pro-Union**, refused to go along. They organized their own government, and in **1863**, with Congress's approval, the western counties **broke away from Virginia and were admitted to the Union as the new state of West Virginia** (June 20, 1863) (West Virginia Legislature, n.d.).
 
-This makes West Virginia the **only state formed by seceding from an existing state** — a birth **out of the Civil War itself.** (The U.S. Constitution normally forbids carving a new state out of an existing one without that state's consent; the extraordinary wartime circumstances made West Virginia's creation possible.) The split still echoes in West Virginia's identity as a state of **mountains, coal, and independent-minded communities.**
+This makes West Virginia the **only state formed by seceding from an existing state**, a birth **out of the Civil War itself.** (The U.S. Constitution normally forbids carving a new state out of an existing one without that state's consent; the extraordinary wartime circumstances made West Virginia's creation possible.) The split still echoes in West Virginia's identity as a state of **mountains, coal, and independent-minded communities.**
 
 West Virginia governs today under its **Constitution of 1872** (its second, replacing the 1863 founding constitution).
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but West Virginia's own government (wvlegislature.gov, sos.wv.gov, courtswv.gov) is the authoritative source. When something is time-sensitive — like recent changes to its courts — we say so.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but West Virginia's own government ([wvlegislature.gov](https://wvlegislature.gov), [sos.wv.gov](https://sos.wv.gov), [courtswv.gov](https://courtswv.gov)) is the authoritative source. When something is time-sensitive, like recent changes to its courts, we say so.
 
 **Check yourself.** How was West Virginia created, and what event made its creation possible?
 
@@ -48,8 +48,21 @@ West Virginia governs today under its **Constitution of 1872** (its second, repl
       slug: "wv-executive-legislature",
       title: "2 · The executive and the Legislature",
       section: "The Three Branches",
-      body: `**Executive — a plural executive with no Lieutenant Governor.** West Virginia voters elect several statewide officials (West Virginia Secretary of State, n.d.):
-- The **Governor** — the chief executive,
+      recallContent: [
+        {
+          prompt: "How was West Virginia created?",
+          answer:
+            "It is the only U.S. state formed by breaking away from another state: its pro-Union western counties split from Virginia and joined the Union in 1863.",
+        },
+        {
+          prompt:
+            "What event made West Virginia's creation possible, and under what constitution does it govern today?",
+          answer:
+            "The Civil War (Virginia seceded from the Union). West Virginia governs today under its Constitution of 1872.",
+        },
+      ],
+      body: `**Executive: a plural executive with no Lieutenant Governor.** West Virginia voters elect several statewide officials (West Virginia Secretary of State, n.d.):
+- The **Governor**, the chief executive,
 - the **Secretary of State** (who runs elections),
 - the **Attorney General**,
 - the **State Auditor**,
@@ -57,13 +70,13 @@ West Virginia governs today under its **Constitution of 1872** (its second, repl
 - the **Commissioner of Agriculture.**
 ⚠️ West Virginia has **no Lieutenant Governor**; by statute, the **President of the Senate** carries the title and is first in line to succeed the Governor (similar to Tennessee). Statewide officers serve **4-year terms.**
 
-**Legislative — the West Virginia Legislature.** A bicameral body meeting in Charleston (West Virginia Legislature, n.d.):
-- **House of Delegates — 100 members** (2-year terms), and **Senate — 34 senators** (4-year terms).
+**Legislative: the West Virginia Legislature.** A bicameral body meeting in Charleston (West Virginia Legislature, n.d.):
+- **House of Delegates: 100 members** (2-year terms), and **Senate: 34 senators** (4-year terms).
 - It is a part-time citizen legislature with a fixed annual session (60 days in most years).
 
 **Judicial** (nonpartisan, covered next) and the three branches complete the picture.
 
-**Veto and override.** The Governor may veto bills; ⚠️ note a West Virginia quirk — for **most** bills the Legislature can **override a veto with a simple majority** (a weak veto, like Tennessee and Alabama), though **budget and supplementary appropriations** bills require a **two-thirds** override.
+**Veto and override.** The Governor may veto bills; ⚠️ note a West Virginia quirk: for **most** bills the Legislature can **override a veto with a simple majority** (a weak veto, like Tennessee and Alabama), though **budget and supplementary appropriations** bills require a **two-thirds** override.
 
 **Check yourself.** Who succeeds the Governor in West Virginia (since there's no Lieutenant Governor), and how strong is the Governor's veto on most bills?
 
@@ -77,15 +90,29 @@ West Virginia governs today under its **Constitution of 1872** (its second, repl
       slug: "wv-courts",
       title: "3 · How West Virginia picks its judges (a recent switch to nonpartisan)",
       section: "The Three Branches",
-      body: `West Virginia **elects** its judges — but with a **recent, important change** worth knowing (West Virginia Judiciary, n.d.):
+      recallContent: [
+        {
+          prompt:
+            "Who succeeds the Governor of West Virginia, since there is no Lieutenant Governor?",
+          answer:
+            "The President of the Senate, who carries the Lieutenant Governor title by statute and is first in line to succeed the Governor.",
+        },
+        {
+          prompt:
+            "How many members sit in West Virginia's House of Delegates and Senate, and how strong is the Governor's veto?",
+          answer:
+            "100 delegates and 34 senators. The veto is weak: most bills can be overridden by a simple majority, though budget bills need two-thirds.",
+        },
+      ],
+      body: `West Virginia **elects** its judges, but with a **recent, important change** worth knowing (West Virginia Judiciary, n.d.):
 
-**From partisan to nonpartisan.** ⚠️ Until **2015**, West Virginia elected its judges in **partisan** races (with party labels). In **2015 the state switched to NONPARTISAN judicial elections** — judges now run **without party labels** on the ballot (West Virginia Judiciary, n.d.). So older sources describing "partisan" West Virginia judicial elections are **out of date.**
-- The **Supreme Court of Appeals of West Virginia** — the state's **highest court** (note the distinctive name; it's not called a "Supreme Court" plain) — has **5 justices**, elected on a **nonpartisan** ballot to **12-year terms.**
+**From partisan to nonpartisan.** ⚠️ Until **2015**, West Virginia elected its judges in **partisan** races (with party labels). In **2015 the state switched to NONPARTISAN judicial elections**, judges now run **without party labels** on the ballot (West Virginia Judiciary, n.d.). So older sources describing "partisan" West Virginia judicial elections are **out of date.**
+- The **Supreme Court of Appeals of West Virginia**, the state's **highest court** (note the distinctive name; it's not called a "Supreme Court" plain), has **5 justices**, elected on a **nonpartisan** ballot to **12-year terms.**
 - **Circuit** and other judges are likewise elected on nonpartisan ballots.
 
-**A brand-new intermediate court.** ⚠️ For most of its history, West Virginia was one of the few states with **no intermediate appellate court** — appeals went straight to the Supreme Court of Appeals. In **2022, West Virginia created a new Intermediate Court of Appeals** to hear appeals below the high court — a significant recent change to the court system (West Virginia Judiciary, n.d.).
+**A brand-new intermediate court.** ⚠️ For most of its history, West Virginia was one of the few states with **no intermediate appellate court**, appeals went straight to the Supreme Court of Appeals. In **2022, West Virginia created a new Intermediate Court of Appeals** to hear appeals below the high court, a significant recent change to the court system (West Virginia Judiciary, n.d.).
 
-Why it matters: West Virginia's courts have changed **substantially in the last decade** (nonpartisan elections in 2015, a new intermediate court in 2022) — a reminder to check **current** structure at courtswv.gov rather than older descriptions.
+Why it matters: West Virginia's courts have changed **substantially in the last decade** (nonpartisan elections in 2015, a new intermediate court in 2022), a reminder to check **current** structure at [courtswv.gov](https://courtswv.gov) rather than older descriptions.
 
 **Check yourself.** What changed about West Virginia's judicial elections in 2015, and what new court did it add in 2022?
 
@@ -98,9 +125,22 @@ Why it matters: West Virginia's courts have changed **substantially in the last 
       slug: "wv-lawmaking-involved",
       title: "4 · How a bill becomes law, local government, and getting involved",
       section: "Get Involved",
+      recallContent: [
+        {
+          prompt: "What changed about West Virginia's judicial elections in 2015?",
+          answer:
+            "The state switched from partisan to nonpartisan judicial elections, so judges now run without party labels on the ballot.",
+        },
+        {
+          prompt:
+            "What new court did West Virginia add in 2022, and what is its highest court called?",
+          answer:
+            "It created an Intermediate Court of Appeals in 2022. Its highest court is the Supreme Court of Appeals of West Virginia (5 justices, 12-year terms).",
+        },
+      ],
       body: `**How a bill becomes law** (West Virginia Legislature, n.d.):
 1. **Introduction** in the House of Delegates or Senate during the 60-day session; **committee** review; **floor votes** in both chambers.
-2. **Governor** — sign, veto (simple-majority override for most bills; two-thirds for budget bills), or line-item veto appropriations.
+2. **Governor**: sign, veto (simple-majority override for most bills; two-thirds for budget bills), or line-item veto appropriations.
 West Virginia has **no statewide citizen initiative**; **constitutional amendments** are proposed by the **Legislature** (by a two-thirds vote) and ratified by the **voters.**
 
 **Local government** (West Virginia Legislature, n.d.):
@@ -108,14 +148,14 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
 - **Cities and towns** provide municipal services; some larger cities have home-rule charters (West Virginia has expanded municipal home rule in recent years).
 - **County school systems** and **special districts** round out local government.
 
-**Voting.** ⚠️ **Time-sensitive:** West Virginia offers **early in-person voting** and **absentee** voting (with reasons), and requires **ID.** Rules and deadlines are administered by **county clerks** and can change — confirm the **current** details at **sos.wv.gov** before you vote.
+**Voting.** ⚠️ **Time-sensitive:** West Virginia offers **early in-person voting** and **absentee** voting (with reasons), and requires **ID.** Rules and deadlines are administered by **county clerks** and can change, confirm the **current** details at **[sos.wv.gov](https://sos.wv.gov)** before you vote.
 
 **How to take part:**
-- **Register and vote** — use early voting; bring ID; check your status at sos.wv.gov.
+- **Register and vote**, use early voting; bring ID; check your status at [sos.wv.gov](https://sos.wv.gov).
 - **Show up locally.** County commissions, city/town councils, and county boards of education hold public meetings.
-- **Contact your legislators** in Charleston — you have one Delegate-district team and one Senator; the session is a short 60 days, so timing matters.
-- **Watch judicial elections.** They're now **nonpartisan** — research candidates, since party labels no longer guide you.
-- **Run** — county board of education, city council, and county commission are reachable local starting points.
+- **Contact your legislators** in Charleston, you have one Delegate-district team and one Senator; the session is a short 60 days, so timing matters.
+- **Watch judicial elections.** They're now **nonpartisan**, research candidates, since party labels no longer guide you.
+- **Run**: county board of education, city council, and county commission are reachable local starting points.
 
 **Check yourself.** Does West Virginia have a citizen initiative, and why should you research judicial candidates carefully now?
 
@@ -135,7 +175,7 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
         items: [
           {
             prompt:
-              "West Virginia is the only state created by breaking away from another state — it split from ___ in 1863.",
+              "West Virginia is the only state created by breaking away from another state, it split from ___ in 1863.",
             answer: "Virginia",
             accept: ["virginia"],
             explanation:
@@ -235,7 +275,7 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
             prompt: "How strong is West Virginia's gubernatorial veto on most bills?",
             options: [
               "Impossible to override",
-              "Weak — most vetoes can be overridden by a simple majority (budget bills need two-thirds)",
+              "Weak: most vetoes can be overridden by a simple majority (budget bills need two-thirds)",
               "The Governor cannot veto",
               "Only courts can override it",
             ],
@@ -300,7 +340,7 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
             prompt: "Does West Virginia have a statewide citizen initiative?",
             options: [
               "Yes, a strong one",
-              "No — amendments are proposed by the Legislature and ratified by voters",
+              "No: amendments are proposed by the Legislature and ratified by voters",
               "Only for coal policy",
               "Only in even years",
             ],
@@ -313,7 +353,7 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
             prompt: "Why does this course tell you to VERIFY West Virginia's court structure and voting rules?",
             options: [
               "Because West Virginia has no government website",
-              "Because it switched to nonpartisan judicial elections (2015) and added an intermediate court (2022), and voting is run by county clerks — confirm at courtswv.gov / sos.wv.gov",
+              "Because it switched to nonpartisan judicial elections (2015) and added an intermediate court (2022), and voting is run by county clerks, confirm at [courtswv.gov](https://courtswv.gov) / [sos.wv.gov](https://sos.wv.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],

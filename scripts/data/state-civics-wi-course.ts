@@ -1,4 +1,4 @@
-// Authored "Wisconsin Civics: How Your State Government Works" — the Wisconsin entry in
+// Authored "Wisconsin Civics: How Your State Government Works", the Wisconsin entry in
 // the per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Wisconsin's version.
 //
@@ -19,22 +19,22 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_WI_COURSE: AuthoredCourse = {
   title: "Wisconsin Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Wisconsin governs itself — and how you take part where you live. Wisconsin was a Progressive-Era 'laboratory of democracy' — home of the 'Wisconsin Idea' that state government and its university should serve everyone. You'll learn Wisconsin's Constitution of 1848, its plural executive, its Legislature of 33 senators and 99 Assembly members, its unusually powerful gubernatorial PARTIAL VETO, its nonpartisan spring elections for a high-profile Supreme Court, its strong recall power, and its 72 counties. It also notes Wisconsin has no statewide citizen initiative. Time-sensitive facts are flagged, pointing to elections.wi.gov. Cited to Wisconsin's own official sources (legis.wisconsin.gov, elections.wi.gov, wicourts.gov).",
+    "A practical, non-partisan guide to how the state of Wisconsin governs itself, and how you take part where you live. Wisconsin was a Progressive-Era 'laboratory of democracy', home of the 'Wisconsin Idea' that state government and its university should serve everyone. You'll learn Wisconsin's Constitution of 1848, its plural executive, its Legislature of 33 senators and 99 Assembly members, its unusually powerful gubernatorial PARTIAL VETO, its nonpartisan spring elections for a high-profile Supreme Court, its strong recall power, and its 72 counties. It also notes Wisconsin has no statewide citizen initiative. Time-sensitive facts are flagged, pointing to elections.wi.gov. Cited to Wisconsin's own official sources (legis.wisconsin.gov, elections.wi.gov, wicourts.gov).",
   lessons: [
     // ── Section 1: The Wisconsin Idea + Progressive lab ──────────────────
     {
       slug: "wi-wisconsin-idea",
       title: "1 · The 'Wisconsin Idea': a laboratory of democracy",
       section: "What Makes Wisconsin Unique",
-      body: `Wisconsin's civic identity was forged in the **Progressive Era**, when it became known as a **"laboratory of democracy"** — a state that **experimented with reforms later copied nationwide** (Wisconsin State Legislature, n.d.).
+      body: `Wisconsin's civic identity was forged in the **Progressive Era**, when it became known as a **"laboratory of democracy"**, a state that **experimented with reforms later copied nationwide** (Wisconsin State Legislature, n.d.).
 
 Wisconsin governs under its **Constitution of 1848**, adopted when it became the **30th state on May 29, 1848.** But its fame comes from the early 1900s, led by figures like **Robert "Fighting Bob" La Follette**, when Wisconsin pioneered reforms such as an early **state income tax (1911)**, workers' compensation, the direct primary, and strong regulation of railroads and utilities.
 
-At the heart of it is **"the Wisconsin Idea"** — the principle that **the boundaries of the university are the boundaries of the state**, meaning **state government and the University of Wisconsin should put expertise to work for the good of all residents**, not just campus (Wisconsin State Legislature, n.d.). It shaped a tradition of **expert, reform-minded government** and public engagement that still colors Wisconsin's civic culture.
+At the heart of it is **"the Wisconsin Idea"**: the principle that **the boundaries of the university are the boundaries of the state**, meaning **state government and the University of Wisconsin should put expertise to work for the good of all residents**, not just campus (Wisconsin State Legislature, n.d.). It shaped a tradition of **expert, reform-minded government** and public engagement that still colors Wisconsin's civic culture.
 
-This is the through-line: Wisconsin sees itself as a place where **government is a tool for practical problem-solving and reform** — and several of its distinctive features (a powerful partial veto, high-profile nonpartisan court elections, a strong recall) fit that experimental, participatory tradition.
+This is the through-line: Wisconsin sees itself as a place where **government is a tool for practical problem-solving and reform**, and several of its distinctive features (a powerful partial veto, high-profile nonpartisan court elections, a strong recall) fit that experimental, participatory tradition.
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Wisconsin's own government (legis.wisconsin.gov, elections.wi.gov, wicourts.gov) is the authoritative source. When something is time-sensitive — like limits on the partial veto — we say so.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Wisconsin's own government ([legis.wisconsin.gov](https://legis.wisconsin.gov), [elections.wi.gov](https://elections.wi.gov), [wicourts.gov](https://wicourts.gov)) is the authoritative source. When something is time-sensitive, like limits on the partial veto, we say so.
 
 **Check yourself.** What is "the Wisconsin Idea," and why was Wisconsin called a "laboratory of democracy"?
 
@@ -48,16 +48,28 @@ This is the through-line: Wisconsin sees itself as a place where **government is
       slug: "wi-partial-veto",
       title: "2 · The executive and Wisconsin's uniquely powerful partial veto",
       section: "The Three Branches",
-      body: `**Executive — a plural executive.** Wisconsin voters elect several statewide officials (Wisconsin Elections Commission, n.d.):
+      recallContent: [
+        {
+          prompt: "What is 'the Wisconsin Idea'?",
+          answer:
+            "The principle that the boundaries of the university are the boundaries of the state: state government and the University of Wisconsin put expertise to work for the good of all residents, not just campus.",
+        },
+        {
+          prompt: "Why was Wisconsin called a 'laboratory of democracy'?",
+          answer:
+            "In the Progressive Era it experimented with reforms later copied nationwide, such as an early state income tax in 1911, workers' compensation, and the direct primary.",
+        },
+      ],
+      body: `**Executive: a plural executive.** Wisconsin voters elect several statewide officials (Wisconsin Elections Commission, n.d.):
 - The **Governor** and **Lieutenant Governor** (nominated separately in the primary, then running **together** in the general election),
 - the **Attorney General**,
 - the **Secretary of State**,
 - the **State Treasurer**, and
-- the **Superintendent of Public Instruction** (a **nonpartisan** office leading K–12 education).
+- the **Superintendent of Public Instruction** (a **nonpartisan** office leading K-12 education).
 
-**Wisconsin's famous PARTIAL VETO.** Here is a genuine Wisconsin distinctive: its Governor has one of the **most powerful partial (line-item) veto powers in the nation.** On **spending bills**, the Wisconsin Governor can veto **not just whole line items, but individual parts of them** — historically even **striking individual words, letters, or digits** to change a bill's meaning (Wisconsin State Legislature, n.d.). Creative use of this power earned nicknames like the **"Vanna White veto"** and the **"Frankenstein veto,"** because a governor could assemble new sentences or numbers from what remained.
+**Wisconsin's famous PARTIAL VETO.** Here is a genuine Wisconsin distinctive: its Governor has one of the **most powerful partial (line-item) veto powers in the nation.** On **spending bills**, the Wisconsin Governor can veto **not just whole line items, but individual parts of them**, historically even **striking individual words, letters, or digits** to change a bill's meaning (Wisconsin State Legislature, n.d.). Creative use of this power earned nicknames like the **"Vanna White veto"** and the **"Frankenstein veto,"** because a governor could assemble new sentences or numbers from what remained.
 
-⚠️ **Time-sensitive:** voters have **amended the constitution to limit** this power over time — for example, barring the old trick of striking individual letters to create new words, and (in a 2008 amendment) preventing the governor from combining parts of two or more sentences. The partial veto remains strong but **narrower than it once was**, so confirm the **current** limits at legis.wisconsin.gov.
+⚠️ **Time-sensitive:** voters have **amended the constitution to limit** this power over time, for example, barring the old trick of striking individual letters to create new words, and (in a 2008 amendment) preventing the governor from combining parts of two or more sentences. The partial veto remains strong but **narrower than it once was**, so confirm the **current** limits at [legis.wisconsin.gov](https://legis.wisconsin.gov).
 
 The **Legislative** and **Judicial** branches complete the three (next lessons).
 
@@ -73,16 +85,29 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
       slug: "wi-legislature-courts",
       title: "3 · The Legislature and Wisconsin's high-profile Supreme Court elections",
       section: "The Three Branches",
-      body: `**Legislative — the Wisconsin Legislature.** A bicameral body meeting in Madison (Wisconsin State Legislature, n.d.):
-- **State Assembly — 99 members**, elected to **2-year terms.**
-- **State Senate — 33 senators**, elected to **4-year terms.**
+      recallContent: [
+        {
+          prompt: "What makes Wisconsin's partial veto unusually powerful?",
+          answer:
+            "On spending bills the Governor can veto individual parts of line items, historically even striking individual words, letters, or digits to change a bill's meaning (nicknamed the 'Frankenstein veto').",
+        },
+        {
+          prompt:
+            "Wisconsin has a plural executive. Name two statewide elected officials besides the Governor.",
+          answer:
+            "Any two of: Lieutenant Governor, Attorney General, Secretary of State, State Treasurer, and the nonpartisan Superintendent of Public Instruction.",
+        },
+      ],
+      body: `**Legislative: the Wisconsin Legislature.** A bicameral body meeting in Madison (Wisconsin State Legislature, n.d.):
+- **State Assembly: 99 members**, elected to **2-year terms.**
+- **State Senate: 33 senators**, elected to **4-year terms.**
 - Wisconsin has **no legislative term limits.**
 
-**Judicial — nonpartisan spring elections.** Wisconsin **elects** its judges on a **NONPARTISAN ballot** — no party label appears next to their names — and it does so in **spring elections** (held in the first part of the year, separate from the November general) (Wisconsin Court System, n.d.):
+**Judicial: nonpartisan spring elections.** Wisconsin **elects** its judges on a **NONPARTISAN ballot** (no party label appears next to their names) and it does so in **spring elections** (held in the first part of the year, separate from the November general) (Wisconsin Court System, n.d.):
 - The **Wisconsin Supreme Court** has **7 justices**, elected statewide to **10-year terms** (one seat at a time, so a single justice is on the spring ballot in most years).
 - Court of Appeals and Circuit Court judges are also elected on nonpartisan spring ballots.
 
-Although officially nonpartisan, Wisconsin's **Supreme Court elections have become some of the most expensive and closely watched in the country**, because the court's balance can decide major statewide questions. So these low-turnout **spring** races carry outsized importance — a civic fact worth knowing: **your spring vote for a "nonpartisan" judge can be one of your most consequential.**
+Although officially nonpartisan, Wisconsin's **Supreme Court elections have become some of the most expensive and closely watched in the country**, because the court's balance can decide major statewide questions. So these low-turnout **spring** races carry outsized importance, a civic fact worth knowing: **your spring vote for a "nonpartisan" judge can be one of your most consequential.**
 
 **Veto and override.** Beyond the partial veto (Lesson 2), the Governor may veto whole bills; the Legislature overrides with a **two-thirds vote of each chamber.**
 
@@ -98,17 +123,30 @@ Although officially nonpartisan, Wisconsin's **Supreme Court elections have beco
       slug: "wi-lawmaking-recall",
       title: "4 · How a bill becomes law, the strong recall, and no initiative",
       section: "Making Law",
+      recallContent: [
+        {
+          prompt: "How and when does Wisconsin elect its Supreme Court justices?",
+          answer:
+            "On a nonpartisan ballot in spring elections. The 7 justices serve 10-year terms, with one seat on the ballot in most years.",
+        },
+        {
+          prompt:
+            "How many members are in the Wisconsin Assembly and Senate, and what are their terms?",
+          answer:
+            "The Assembly has 99 members on 2-year terms; the Senate has 33 senators on 4-year terms. Wisconsin has no legislative term limits.",
+        },
+      ],
       body: `**How a bill becomes law** (Wisconsin State Legislature, n.d.):
 1. **Introduction.** A legislator introduces a bill in the Assembly or Senate.
 2. **Committee.** Hearings, amendments, and a committee vote.
 3. **Floor votes.** Both chambers must pass the bill.
 4. **Governor.** The Governor may sign, veto (two-thirds override), or use the **partial veto** on appropriations (Lesson 2).
 
-**No statewide citizen initiative.** Despite its reform reputation, Wisconsin has **no citizen initiative** for statewide statutes or constitutional amendments. **Amendments** are proposed by the **Legislature** — which must pass them in **two consecutive sessions** — and then ratified by the **voters.** So Wisconsin voters have the **final say on amendments**, but cannot **start** one by petition (Wisconsin State Legislature, n.d.).
+**No statewide citizen initiative.** Despite its reform reputation, Wisconsin has **no citizen initiative** for statewide statutes or constitutional amendments. **Amendments** are proposed by the **Legislature**, which must pass them in **two consecutive sessions**, and then ratified by the **voters.** So Wisconsin voters have the **final say on amendments**, but cannot **start** one by petition (Wisconsin State Legislature, n.d.).
 
-**A strong recall power.** What Wisconsin *does* give citizens is a robust **recall**: voters can petition to force a **recall election** of state and local elected officials (Wisconsin Elections Commission, n.d.). Wisconsin used this power in a nationally famous way — including a **2012 gubernatorial recall election** — making recall a real, consequential feature of Wisconsin civics rather than a theoretical one. ⚠️ Recall rules (signature thresholds, timing) are specific; confirm current requirements at elections.wi.gov.
+**A strong recall power.** What Wisconsin *does* give citizens is a strong **recall**: voters can petition to force a **recall election** of state and local elected officials (Wisconsin Elections Commission, n.d.). Wisconsin used this power in a nationally famous way, including a **2012 gubernatorial recall election**, making recall a real, consequential feature of Wisconsin civics rather than a theoretical one. ⚠️ Recall rules (signature thresholds, timing) are specific; confirm current requirements at [elections.wi.gov](https://elections.wi.gov).
 
-The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but they **can remove officials by recall** — an unusual mix.
+The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but they **can remove officials by recall**, an unusual mix.
 
 **Check yourself.** Can Wisconsin citizens put a law on the ballot by initiative? What direct citizen power did Wisconsin use famously in 2012?
 
@@ -122,19 +160,31 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
       slug: "wi-local-involved",
       title: "5 · Local government and how to take part",
       section: "Get Involved",
+      recallContent: [
+        {
+          prompt: "Can Wisconsin citizens put a law on the ballot by initiative?",
+          answer:
+            "No. Wisconsin has no statewide citizen initiative. Amendments are proposed by the Legislature in two consecutive sessions, then ratified by the voters.",
+        },
+        {
+          prompt: "What direct citizen power did Wisconsin use famously in 2012?",
+          answer:
+            "A recall election of the Governor. Wisconsin's strong recall lets voters petition to force a recall election of elected officials.",
+        },
+      ],
       body: `**Local government.** Wisconsin's local layers include (Wisconsin State Legislature, n.d.):
 - **72 counties**, governed by elected **county boards of supervisors** (larger counties, like Milwaukee, also have an elected **county executive**).
-- **Cities, villages, and towns** — Wisconsin distinguishes **"towns"** (rural, general-purpose units, similar to townships) from **incorporated villages and cities.** Wisconsin has a strong **home-rule** tradition for cities and villages.
+- **Cities, villages, and towns**: Wisconsin distinguishes **"towns"** (rural, general-purpose units, similar to townships) from **incorporated villages and cities.** Wisconsin has a strong **home-rule** tradition for cities and villages.
 - **School districts** and **special districts** round out local government.
 
-**Voting.** ⚠️ **Time-sensitive:** Wisconsin offers **same-day (Election-Day) registration** and **early in-person absentee voting**, and requires a **photo ID** to vote. These rules change and are administered by **municipal clerks** (Wisconsin runs elections at the city/village/town level, with over 1,800 local clerks). Confirm the **current** rules at **elections.wi.gov** or your municipal clerk before you vote.
+**Voting.** ⚠️ **Time-sensitive:** Wisconsin offers **same-day (Election-Day) registration** and **early in-person absentee voting**, and requires a **photo ID** to vote. These rules change and are administered by **municipal clerks** (Wisconsin runs elections at the city/village/town level, with over 1,800 local clerks). Confirm the **current** rules at **[elections.wi.gov](https://elections.wi.gov)** or your municipal clerk before you vote.
 
 **How to take part:**
-- **Register and vote** — you can register on Election Day; bring photo ID; and **don't skip the spring elections**, where consequential judicial and local races are decided.
-- **Use recall** — if you believe an official should answer to voters before their term ends, Wisconsin's recall is a real tool.
+- **Register and vote**: you can register on Election Day; bring photo ID; and **don't skip the spring elections**, where consequential judicial and local races are decided.
+- **Use recall**: if you believe an official should answer to voters before their term ends, Wisconsin's recall is a real tool.
 - **Show up locally.** County boards, city/village/town meetings, and school boards hold public meetings.
-- **Contact your legislators** in Madison — you have one Assembly member and one Senator.
-- **Run** — town board, school board, city council, and county board are reachable local starting points.
+- **Contact your legislators** in Madison: you have one Assembly member and one Senator.
+- **Run**: town board, school board, city council, and county board are reachable local starting points.
 
 **Check yourself.** Name one voting feature Wisconsin offers, and one reason spring elections deserve your attention.
 
@@ -158,14 +208,14 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
             answer: "Idea",
             accept: ["idea"],
             explanation:
-              "The Wisconsin Idea holds that 'the boundaries of the university are the boundaries of the state' — expertise serving everyone.",
+              "The Wisconsin Idea holds that 'the boundaries of the university are the boundaries of the state': expertise serving everyone.",
           },
           {
             prompt:
               "Wisconsin's Governor has an unusually powerful partial (line-item) ___ on spending bills.",
             answer: "veto",
             explanation:
-              "The Wisconsin partial veto historically let a governor strike parts of items — nicknamed the 'Frankenstein' veto — though amendments have narrowed it.",
+              "The Wisconsin partial veto historically let a governor strike parts of items, nicknamed the 'Frankenstein' veto, though amendments have narrowed it.",
           },
           {
             prompt:
@@ -231,7 +281,7 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
             ],
             correctIndex: 1,
             explanation:
-              "Wisconsin's partial veto lets the Governor strike parts of appropriations items — a strong power, since narrowed by amendments.",
+              "Wisconsin's partial veto lets the Governor strike parts of appropriations items, a strong power, since narrowed by amendments.",
             sourceLessonSlug: "wi-partial-veto",
           },
           {
@@ -244,7 +294,7 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
             ],
             correctIndex: 1,
             explanation:
-              "Wisconsin's 7 justices are elected nonpartisan in spring elections to 10-year terms — races that have become nationally significant.",
+              "Wisconsin's 7 justices are elected nonpartisan in spring elections to 10-year terms, races that have become nationally significant.",
             sourceLessonSlug: "wi-legislature-courts",
           },
           {
@@ -277,13 +327,13 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
             prompt: "Can Wisconsin citizens put a new law on the ballot by initiative?",
             options: [
               "Yes, a strong initiative",
-              "No — Wisconsin has no statewide initiative, though it has a strong recall",
+              "No, Wisconsin has no statewide initiative, though it has a strong recall",
               "Only in spring",
               "Only for schools",
             ],
             correctIndex: 1,
             explanation:
-              "Wisconsin has no statewide initiative; amendments run through the Legislature, but citizens have a robust recall power.",
+              "Wisconsin has no statewide initiative; amendments run through the Legislature, but citizens have a strong recall power.",
             sourceLessonSlug: "wi-lawmaking-recall",
           },
           {
@@ -329,7 +379,7 @@ The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but the
             prompt: "Why does this course tell you to VERIFY Wisconsin's partial-veto limits and voting rules?",
             options: [
               "Because Wisconsin has no government website",
-              "Because amendments have narrowed the partial veto and voting rules are run by municipal clerks and change — confirm at legis.wisconsin.gov / elections.wi.gov",
+              "Because amendments have narrowed the partial veto and voting rules are run by municipal clerks and change: confirm at [legis.wisconsin.gov](https://legis.wisconsin.gov) / [elections.wi.gov](https://elections.wi.gov)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],

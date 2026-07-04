@@ -1,4 +1,4 @@
-// Authored "Connecticut Civics: How Your State Government Works" — the Connecticut entry
+// Authored "Connecticut Civics: How Your State Government Works", the Connecticut entry
 // in the per-state Civics layer on Learn.WitUS. State-level companion to the general
 // Civics courses: those teach the SYSTEM; this teaches Connecticut's version.
 //
@@ -19,22 +19,22 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_CT_COURSE: AuthoredCourse = {
   title: "Connecticut Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Connecticut governs itself — and how you take part where you live. Connecticut is 'The Constitution State,' a nickname honoring its 1639 Fundamental Orders — often called the first written constitution to frame a government. It is also one of the few states that ABOLISHED county government entirely (in 1960): Connecticut has no county governments at all — its 169 towns and the state do everything. You'll learn Connecticut's Constitution of 1965, its plural executive, its General Assembly of 36 senators and 151 representatives, how the Legislature appoints its judges, and its town-based local government. It also notes Connecticut recently added early voting. Time-sensitive facts are flagged, pointing to the Secretary of the State. Cited to Connecticut's own official sources (cga.ct.gov, portal.ct.gov/sots, jud.ct.gov).",
+    "A practical, non-partisan guide to how the state of Connecticut governs itself, and how you take part where you live. Connecticut is 'The Constitution State,' a nickname honoring its 1639 Fundamental Orders, often called the first written constitution to frame a government. It is also one of the few states that ABOLISHED county government entirely (in 1960): Connecticut has no county governments at all. Its 169 towns and the state do everything. You'll learn Connecticut's Constitution of 1965, its plural executive, its General Assembly of 36 senators and 151 representatives, how the Legislature appoints its judges, and its town-based local government. It also notes Connecticut recently added early voting. Time-sensitive facts are flagged, pointing to the Secretary of the State. Cited to Connecticut's own official sources (cga.ct.gov, portal.ct.gov/sots, jud.ct.gov).",
   lessons: [
     // ── Section 1: The Constitution State ────────────────────────────────
     {
       slug: "ct-constitution-state",
       title: "1 · 'The Constitution State' and the Fundamental Orders of 1639",
       section: "What Makes Connecticut Unique",
-      body: `Connecticut's nickname is **"The Constitution State"** — and it comes from a remarkable document: the **Fundamental Orders of 1639** (Connecticut Secretary of the State, n.d.).
+      body: `Connecticut's nickname is **"The Constitution State"**, and it comes from a remarkable document: the **Fundamental Orders of 1639** (Connecticut Secretary of the State, n.d.).
 
-**Why it matters.** In 1639, the towns of Hartford, Windsor, and Wethersfield adopted the **Fundamental Orders**, a written framework of self-government. Many historians call it **one of the first written constitutions in the Western tradition to establish a government by the consent of the governed** — which is why Connecticut proudly calls itself the Constitution State. It set an early precedent for the idea that **a written charter, not a king, defines the government's powers.**
+**Why it matters.** In 1639, the towns of Hartford, Windsor, and Wethersfield adopted the **Fundamental Orders**, a written framework of self-government. Many historians call it **one of the first written constitutions in the Western tradition to establish a government by the consent of the governed**, which is why Connecticut proudly calls itself the Constitution State. It set an early precedent for the idea that **a written charter, not a king, defines the government's powers.**
 
-Connecticut governs today under its **Constitution of 1965** — a relatively modern rewrite of an older order (Connecticut had long governed under its colonial charter and then an 1818 constitution). Connecticut became the **5th state on January 9, 1788.**
+Connecticut governs today under its **Constitution of 1965**, a relatively modern rewrite of an older order (Connecticut had long governed under its colonial charter and then an 1818 constitution). Connecticut became the **5th state on January 9, 1788.**
 
-Connecticut is also nicknamed **"the Land of Steady Habits,"** reflecting a tradition of stable, orderly government. Two features stand out and lead this course: Connecticut **abolished county government entirely**, and its **Legislature appoints the judges** — both covered ahead.
+Connecticut is also nicknamed **"the Land of Steady Habits,"** reflecting a tradition of stable, orderly government. Two features stand out and lead this course: Connecticut **abolished county government entirely**, and its **Legislature appoints the judges**, both covered ahead.
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Connecticut's own government (cga.ct.gov, portal.ct.gov/sots, jud.ct.gov) is the authoritative source. When something is time-sensitive — like Connecticut's new early voting — we say so.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Connecticut's own government ([cga.ct.gov](https://cga.ct.gov), [portal.ct.gov/sots](https://portal.ct.gov/sots), [jud.ct.gov](https://jud.ct.gov)) is the authoritative source. When something is time-sensitive, like Connecticut's new early voting, we say so.
 
 **Check yourself.** Why is Connecticut called "The Constitution State," and what document is the nickname based on?
 
@@ -48,13 +48,27 @@ Connecticut is also nicknamed **"the Land of Steady Habits,"** reflecting a trad
       slug: "ct-no-counties",
       title: "2 · Connecticut abolished county government (1960)",
       section: "What Makes Connecticut Unique",
+      recallContent: [
+        {
+          prompt:
+            "What document gives Connecticut its nickname 'The Constitution State'?",
+          answer:
+            "The Fundamental Orders of 1639, a written framework of self-government that many historians call one of the first written constitutions to establish government by the consent of the governed.",
+        },
+        {
+          prompt:
+            "Under which constitution does Connecticut govern today, and when did it become a state?",
+          answer:
+            "It governs under its Constitution of 1965. Connecticut became the 5th state on January 9, 1788.",
+        },
+      ],
       body: `Here is Connecticut's most distinctive structural feature: it is one of the very few states with **NO county government at all** (Connecticut General Assembly, n.d.).
 
-**What happened.** In **1960, Connecticut abolished its county governments.** The eight historic counties still exist **only as geographic and (for a time) judicial reference areas** — there are **no county commissioners, no county councils, no county budgets, and no county services.** Everything a county does elsewhere — courts, jails, records, roads, social services — is handled either by the **state** or by the **towns** (Connecticut General Assembly, n.d.).
+**What happened.** In **1960, Connecticut abolished its county governments.** The eight historic counties still exist **only as geographic and (for a time) judicial reference areas**: there are **no county commissioners, no county councils, no county budgets, and no county services.** Everything a county does elsewhere (courts, jails, records, roads, social services) is handled either by the **state** or by the **towns** (Connecticut General Assembly, n.d.).
 
-⚠️ **A recent update:** because federal programs and data often assume "counties," Connecticut in recent years designated **nine "planning regions"** (councils of governments) to serve as **county-equivalents for federal statistical purposes** — but these are **regional planning bodies, not general-purpose county governments.** So if you see Connecticut "counties" on a federal map or census table, remember: **they have no government.** Confirm current regional arrangements at the state's sites.
+⚠️ **A recent update:** because federal programs and data often assume "counties," Connecticut in recent years designated **nine "planning regions"** (councils of governments) to serve as **county-equivalents for federal statistical purposes**, but these are **regional planning bodies, not general-purpose county governments.** So if you see Connecticut "counties" on a federal map or census table, remember: **they have no government.** Confirm current regional arrangements at the state's sites.
 
-**The result: a two-tier system.** Connecticut government is essentially **the state + the towns**, with **no county layer** in between. This makes the **town** unusually important (next lesson) and the **state** unusually central — a genuinely distinctive American arrangement, shared only with a couple of other states (like Rhode Island).
+**The result: a two-tier system.** Connecticut government is essentially **the state + the towns**, with **no county layer** in between. This makes the **town** unusually important (next lesson) and the **state** unusually central, a genuinely distinctive American arrangement, shared only with a couple of other states (like Rhode Island).
 
 **Check yourself.** What did Connecticut do to its county governments in 1960, and who provides "county-type" services now?
 
@@ -68,7 +82,21 @@ Connecticut is also nicknamed **"the Land of Steady Habits,"** reflecting a trad
       slug: "ct-executive-legislature",
       title: "3 · The executive and the General Assembly",
       section: "The Three Branches",
-      body: `**Executive — a plural executive.** Connecticut voters elect several statewide officials (Connecticut Secretary of the State, n.d.):
+      recallContent: [
+        {
+          prompt:
+            "What did Connecticut do to its county governments in 1960?",
+          answer:
+            "It abolished them. Connecticut has no county governments at all; the eight historic counties remain only as geographic reference areas, with no commissioners, councils, budgets, or services.",
+        },
+        {
+          prompt:
+            "With no counties, who provides county-type services in Connecticut?",
+          answer:
+            "The state and the towns. Nine planning regions act as county-equivalents only for federal statistical purposes, not as general-purpose governments.",
+        },
+      ],
+      body: `**Executive: a plural executive.** Connecticut voters elect several statewide officials (Connecticut Secretary of the State, n.d.):
 - The **Governor** and **Lieutenant Governor** (nominated separately in primaries, then running **together** in the general election),
 - the **Secretary of the State** (who runs elections),
 - the **State Treasurer**,
@@ -76,12 +104,12 @@ Connecticut is also nicknamed **"the Land of Steady Habits,"** reflecting a trad
 - the **Attorney General.**
 All serve **4-year terms** with **no term limits.**
 
-**Legislative — the Connecticut General Assembly.** A bicameral body meeting in Hartford (Connecticut General Assembly, n.d.):
-- **House of Representatives — 151 members**, elected to **2-year terms.**
-- **Senate — 36 senators**, elected to **2-year terms** (yes — Connecticut senators also serve 2-year terms).
+**Legislative: the Connecticut General Assembly.** A bicameral body meeting in Hartford (Connecticut General Assembly, n.d.):
+- **House of Representatives: 151 members**, elected to **2-year terms.**
+- **Senate: 36 senators**, elected to **2-year terms** (yes, Connecticut senators also serve 2-year terms).
 - It is a **part-time citizen legislature** with sessions of fixed length (longer in odd "budget" years).
 
-**Judicial — the courts.** District courts up through the Appellate Court and the **Connecticut Supreme Court** (7 justices). How Connecticut selects judges — via the Legislature — is distinctive and covered next.
+**Judicial: the courts.** District courts up through the Appellate Court and the **Connecticut Supreme Court** (7 justices). How Connecticut selects judges (via the Legislature) is distinctive and covered next.
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the General Assembly overrides with a **two-thirds vote of each chamber.**
 
@@ -97,15 +125,29 @@ All serve **4-year terms** with **no term limits.**
       slug: "ct-courts-lawmaking",
       title: "4 · How Connecticut picks its judges, and how a bill becomes law",
       section: "Making Law",
-      body: `**How Connecticut chooses judges — nominated, then appointed by the Legislature.** Connecticut does **not** elect its judges in campaigns. Instead (Connecticut Judicial Branch, n.d.):
+      recallContent: [
+        {
+          prompt:
+            "How long is a Connecticut state senator's term, and how large are the two chambers?",
+          answer:
+            "Two years, the same as House members. The Senate has 36 senators and the House has 151 representatives.",
+        },
+        {
+          prompt:
+            "Which statewide executive officer runs Connecticut's elections?",
+          answer:
+            "The Secretary of the State, one of Connecticut's separately elected plural executive officers, all of whom serve 4-year terms with no term limits.",
+        },
+      ],
+      body: `**How Connecticut chooses judges: nominated, then appointed by the Legislature.** Connecticut does **not** elect its judges in campaigns. Instead (Connecticut Judicial Branch, n.d.):
 1. A **Judicial Selection Commission** screens candidates and recommends qualified nominees.
 2. The **Governor nominates** a judge from those recommended.
 3. The **General Assembly (the Legislature) appoints** the judge by vote, for an **8-year term** (renewable by reappointment through the same process).
-So Connecticut blends a **screening commission**, a **gubernatorial nomination**, and a **legislative appointment** — keeping judges out of elections while giving the elected branches the final say.
+So Connecticut blends a **screening commission**, a **gubernatorial nomination**, and a **legislative appointment**, keeping judges out of elections while giving the elected branches the final say.
 
 **How a bill becomes law** (Connecticut General Assembly, n.d.):
-1. **Introduction** in the House or Senate; **committee** hearings (Connecticut uses **joint committees** shared by both chambers — an efficiency feature); **floor votes** in both chambers.
-2. **Governor** — sign, veto (two-thirds override), or line-item veto appropriations.
+1. **Introduction** in the House or Senate; **committee** hearings (Connecticut uses **joint committees** shared by both chambers, an efficiency feature); **floor votes** in both chambers.
+2. **Governor:** sign, veto (two-thirds override), or line-item veto appropriations.
 
 **No statewide citizen initiative.** Connecticut citizens **cannot** put a statute or amendment on the ballot by petition. **Amendments** are proposed by the **General Assembly** and then ratified by the **voters** (and the state periodically asks voters whether to call a **constitutional convention**). So the citizen role is **ratification**, not initiation.
 
@@ -121,21 +163,35 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
       slug: "ct-towns-involved",
       title: "5 · Town government and how to take part",
       section: "Get Involved",
+      recallContent: [
+        {
+          prompt:
+            "How does Connecticut choose its judges?",
+          answer:
+            "A Judicial Selection Commission screens candidates, the Governor nominates, and the General Assembly appoints them to 8-year terms. Judges are not elected in campaigns.",
+        },
+        {
+          prompt:
+            "Can Connecticut citizens start a law by ballot initiative?",
+          answer:
+            "No. Connecticut has no statewide initiative. The General Assembly proposes amendments and the voters ratify them, so the citizen role is ratification, not initiation.",
+        },
+      ],
       body: `**Local government is the town.** Because Connecticut has **no counties** (Lesson 2), the **town** is the workhorse of local government (Connecticut General Assembly, n.d.):
 - Connecticut has **169 towns**, each with its own government. Many smaller towns still use a **town meeting** and a **board of selectmen**; larger towns and cities use **mayor-council** or **council-manager** forms.
-- Towns handle **schools, police, roads, zoning, and local services** — the things a county might do elsewhere.
+- Towns handle **schools, police, roads, zoning, and local services**, the things a county might do elsewhere.
 - **Regional councils of governments** (the "planning regions") coordinate some services across towns, but they are **not** general-purpose governments.
 
-**Voting.** ⚠️ **Time-sensitive:** Connecticut recently **expanded voting access** — voters approved **early in-person voting** (used starting in 2024) and **no-excuse absentee voting**, both relatively new for a state that had long been restrictive. Rules and deadlines are administered by **town registrars of voters** and can change — confirm the **current** details at the **Secretary of the State** (portal.ct.gov/sots) before you vote.
+**Voting.** ⚠️ **Time-sensitive:** Connecticut recently **expanded voting access**: voters approved **early in-person voting** (used starting in 2024) and **no-excuse absentee voting**, both relatively new for a state that had long been restrictive. Rules and deadlines are administered by **town registrars of voters** and can change. Confirm the **current** details at the **Secretary of the State** ([portal.ct.gov/sots](https://portal.ct.gov/sots)) before you vote.
 
 **How to take part:**
-- **Register and vote** — take advantage of Connecticut's new **early voting**; check your status at portal.ct.gov/sots.
-- **Show up at Town Hall.** With no county layer, your **town meeting, board of selectmen, or town/city council** — plus the **local board of education** — make most local decisions.
-- **Contact your legislators** in Hartford — you have one Representative and one Senator.
-- **Weigh in on amendments and conventions** — Connecticut voters ratify amendments and periodically vote on calling a constitutional convention.
-- **Run** — board of selectmen, board of education, and town/city council are reachable local starting points.
+- **Register and vote:** take advantage of Connecticut's new **early voting**; check your status at [portal.ct.gov/sots](https://portal.ct.gov/sots).
+- **Show up at Town Hall.** With no county layer, your **town meeting, board of selectmen, or town/city council** (plus the **local board of education**) make most local decisions.
+- **Contact your legislators** in Hartford: you have one Representative and one Senator.
+- **Weigh in on amendments and conventions:** Connecticut voters ratify amendments and periodically vote on calling a constitutional convention.
+- **Run:** board of selectmen, board of education, and town/city council are reachable local starting points.
 
-**Check yourself.** Since Connecticut has no counties, what is the key unit of local government — and what new voting option did Connecticut adopt?
+**Check yourself.** Since Connecticut has no counties, what is the key unit of local government, and what new voting option did Connecticut adopt?
 
 ## Sources
 - Connecticut General Assembly. (n.d.). *Town government and regional councils*. cga.ct.gov. https://www.cga.ct.gov/
@@ -157,7 +213,7 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
             answer: "Constitution",
             accept: ["constitution"],
             explanation:
-              "The 1639 Fundamental Orders are often called one of the first written constitutions framing a government — hence the nickname.",
+              "The 1639 Fundamental Orders are often called one of the first written constitutions framing a government, hence the nickname.",
           },
           {
             prompt:
@@ -188,7 +244,7 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
             answer: "town",
             accept: ["towns"],
             explanation:
-              "The 169 towns handle schools, police, roads, and zoning — the county's role elsewhere.",
+              "The 169 towns handle schools, police, roads, and zoning, the county's role elsewhere.",
           },
           {
             prompt:
@@ -226,7 +282,7 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
             prompt: "What did Connecticut do to county government in 1960?",
             options: [
               "Strengthened it",
-              "Abolished it — Connecticut has no county governments",
+              "Abolished it: Connecticut has no county governments",
               "Merged all counties into one",
               "Created new counties",
             ],
@@ -286,7 +342,7 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
             prompt: "Can Connecticut citizens put a law on the ballot by initiative?",
             options: [
               "Yes, a strong initiative",
-              "No — Connecticut has no statewide initiative; the General Assembly proposes amendments for voters",
+              "No, Connecticut has no statewide initiative; the General Assembly proposes amendments for voters",
               "Only in even years",
               "Only for schools",
             ],
@@ -325,7 +381,7 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
             prompt: "Why does this course tell you to VERIFY Connecticut's regions and voting rules?",
             options: [
               "Because Connecticut has no government website",
-              "Because planning-region arrangements and new voting rules are recent and change, and towns run elections — confirm at portal.ct.gov/sots",
+              "Because planning-region arrangements and new voting rules are recent and change, and towns run elections; confirm at [portal.ct.gov/sots](https://portal.ct.gov/sots)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],

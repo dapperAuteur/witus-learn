@@ -1,4 +1,4 @@
-// Authored "Michigan Civics: How Your State Government Works" — the Michigan entry
+// Authored "Michigan Civics: How Your State Government Works", the Michigan entry
 // in the per-state Civics layer on Learn.WitUS. State-level companion to the general
 // Civics courses (US Civics 101, US Constitution 101, State vs Federal Power, and US,
 // State & Local Government: Who Does What): those teach the SYSTEM; this teaches
@@ -12,7 +12,7 @@
 // Authoritative-values rule (load-bearing): state facts VARY and CHANGE. Michigan is a
 // heavy user of direct democracy, so its rules move relatively often. Two recent voter
 // changes are flagged PROMINENTLY: (1) the Independent Citizens Redistricting Commission
-// created by Proposal 2 of 2018 — Michigan took map-drawing away from the Legislature, a
+// created by Proposal 2 of 2018: Michigan took map-drawing away from the Legislature, a
 // national first of its kind; and (2) the voting-access and term-limit changes of the
 // 2018 and 2022 ballot proposals. Where a fact is time-sensitive, the course tells
 // learners to confirm the CURRENT status at michigan.gov/sos rather than asserting it.
@@ -25,24 +25,24 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_MI_COURSE: AuthoredCourse = {
   title: "Michigan Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Michigan governs itself — and how you take part where you live. You'll learn Michigan's Constitution of 1963; its strong direct democracy (initiative, referendum, and recall); the three state branches; how a bill becomes a Michigan law in a Legislature of 38 senators and 110 representatives; local government across Michigan's 83 counties, cities, villages, and townships; and Michigan's elections — including two recent, voter-approved changes flagged prominently: the Independent Citizens Redistricting Commission (Proposal 2 of 2018), which took district-drawing away from the Legislature, and the expanded voting access of the 2018 and 2022 proposals (no-reason absentee, automatic and same-day registration, nine days of early voting). It closes on how to get involved. Cited to Michigan's own official sources (legislature.mi.gov, michigan.gov/sos, courts.michigan.gov).",
+    "A practical, non-partisan guide to how the state of Michigan governs itself, and how you take part where you live. You'll learn Michigan's Constitution of 1963; its strong direct democracy (initiative, referendum, and recall); the three state branches; how a bill becomes a Michigan law in a Legislature of 38 senators and 110 representatives; local government across Michigan's 83 counties, cities, villages, and townships; and Michigan's elections, including two recent, voter-approved changes flagged prominently: the Independent Citizens Redistricting Commission (Proposal 2 of 2018), which took district-drawing away from the Legislature, and the expanded voting access of the 2018 and 2022 proposals (no-reason absentee, automatic and same-day registration, nine days of early voting). It closes on how to get involved. Cited to Michigan's own official sources (legislature.mi.gov, michigan.gov/sos, courts.michigan.gov).",
   lessons: [
     // ── Section 1: The Michigan Constitution ─────────────────────────────
     {
       slug: "mi-constitution",
       title: "1 · Michigan's Constitution of 1963 and its direct democracy",
       section: "The Michigan Constitution",
-      body: `Michigan governs itself under its **Constitution of 1963** — the state's **fourth** constitution, ratified by voters in 1963 and taking effect **January 1, 1964** (earlier Michigan constitutions were adopted in 1835 at statehood, then 1850 and 1908) (Michigan Legislature, n.d.). Michigan became the **26th state on January 26, 1837.**
+      body: `Michigan governs itself under its **Constitution of 1963**, the state's **fourth** constitution, ratified by voters in 1963 and taking effect **January 1, 1964** (earlier Michigan constitutions were adopted in 1835 at statehood, then 1850 and 1908) (Michigan Legislature, n.d.). Michigan became the **26th state on January 26, 1837.**
 
 A defining feature runs through Michigan civics: **voters themselves hold real lawmaking power.** The 1963 Constitution keeps a strong set of direct-democracy tools (Michigan Department of State, n.d.):
 
-- **Initiative** — citizens can gather signatures to propose a **new law** (an "initiated law," which the Legislature may adopt or send to the ballot) or even a **constitutional amendment** placed directly before voters.
-- **Referendum** — voters can **reject** a law the Legislature passed by petitioning to put it on the ballot.
-- **Recall** — voters can petition to **remove** most elected officials before their term ends.
+- **Initiative:** citizens can gather signatures to propose a **new law** (an "initiated law," which the Legislature may adopt or send to the ballot) or even a **constitutional amendment** placed directly before voters.
+- **Referendum:** voters can **reject** a law the Legislature passed by petitioning to put it on the ballot.
+- **Recall:** voters can petition to **remove** most elected officials before their term ends.
 
-This is the through-line: in Michigan, "the government" is not only the officials in Lansing — **the voters are a lawmaking body too.** That single design choice explains several of Michigan's most distinctive modern features, including the citizen-run redistricting commission you'll meet later, which was itself created *by* an initiative.
+This is the through-line: in Michigan, "the government" is not only the officials in Lansing: **the voters are a lawmaking body too.** That single design choice explains several of Michigan's most distinctive modern features, including the citizen-run redistricting commission you'll meet later, which was itself created *by* an initiative.
 
-**A note this course keeps returning to:** state facts **vary and change**, and Michigan — precisely because voters can amend the constitution by petition — changes its rules relatively often. Everything here is current as of authoring, but Michigan's own government (legislature.mi.gov, michigan.gov/sos, courts.michigan.gov) is the authoritative source. When something is time-sensitive, we say so.
+**A note this course keeps returning to:** state facts **vary and change**, and Michigan, precisely because voters can amend the constitution by petition, changes its rules relatively often. Everything here is current as of authoring, but Michigan's own government ([legislature.mi.gov](https://legislature.mi.gov), [michigan.gov/sos](https://michigan.gov/sos), [courts.michigan.gov](https://courts.michigan.gov)) is the authoritative source. When something is time-sensitive, we say so.
 
 **Check yourself.** When did Michigan's current constitution take effect, and name the three direct-democracy tools it gives voters.
 
@@ -56,18 +56,28 @@ This is the through-line: in Michigan, "the government" is not only the official
       slug: "mi-three-branches",
       title: "2 · The three branches of Michigan government",
       section: "The Three Branches",
+      recallContent: [
+        {
+          prompt: "When did Michigan's current constitution, the Constitution of 1963, take effect?",
+          answer: "January 1, 1964 (voters ratified it in 1963). It is Michigan's fourth constitution.",
+        },
+        {
+          prompt: "Name the three direct-democracy tools Michigan's 1963 Constitution gives voters.",
+          answer: "Initiative (propose a new law or amendment), referendum (reject a law the Legislature passed), and recall (remove most elected officials before their term ends).",
+        },
+      ],
       body: `Michigan divides power into the familiar three branches, with a few Michigan-specific twists.
 
-**Legislative — the Michigan Legislature.** A bicameral body (Michigan Legislature, n.d.):
-- **Senate — 38 senators**, elected to **4-year terms.**
-- **House of Representatives — 110 representatives**, elected to **2-year terms.**
-- ⚠️ **Term limits changed recently.** For decades Michigan had among the strictest limits (3 House terms / 2 Senate terms). **Proposal 1 of 2022** replaced that with a combined limit of **12 total years** served in the Legislature (in either chamber, in any combination) — and added financial-disclosure rules. Because this is time-sensitive, confirm the current rule at michigan.gov/sos or legislature.mi.gov.
+**Legislative: the Michigan Legislature.** A bicameral body (Michigan Legislature, n.d.):
+- **Senate: 38 senators**, elected to **4-year terms.**
+- **House of Representatives: 110 representatives**, elected to **2-year terms.**
+- ⚠️ **Term limits changed recently.** For decades Michigan had among the strictest limits (3 House terms / 2 Senate terms). **Proposal 1 of 2022** replaced that with a combined limit of **12 total years** served in the Legislature (in either chamber, in any combination), and added financial-disclosure rules. Because this is time-sensitive, confirm the current rule at [michigan.gov/sos](https://michigan.gov/sos) or [legislature.mi.gov](https://legislature.mi.gov).
 
-**Executive — the Governor and separately elected officers.** The **Governor** is the chief executive. The **Lieutenant Governor** runs on a **joint ticket** with the Governor in the general election (so a vote for Governor is a vote for the pair). Two other statewide executives are **elected on their own**: the **Secretary of State** (who runs elections) and the **Attorney General.** Note a Michigan quirk: these down-ballot statewide officers are **nominated at party conventions**, not by primary election. The **State Treasurer** is **appointed** by the Governor, not elected.
+**Executive: the Governor and separately elected officers.** The **Governor** is the chief executive. The **Lieutenant Governor** runs on a **joint ticket** with the Governor in the general election (so a vote for Governor is a vote for the pair). Two other statewide executives are **elected on their own**: the **Secretary of State** (who runs elections) and the **Attorney General.** Note a Michigan quirk: these down-ballot statewide officers are **nominated at party conventions**, not by primary election. The **State Treasurer** is **appointed** by the Governor, not elected.
 
-**Judicial — the Michigan courts.** Trial courts up through the **Court of Appeals** and the **Michigan Supreme Court** (7 justices). Michigan's method for choosing Supreme Court justices is genuinely distinctive and gets its **own lesson** next (Michigan Courts, n.d.).
+**Judicial: the Michigan courts.** Trial courts up through the **Court of Appeals** and the **Michigan Supreme Court** (7 justices). Michigan's method for choosing Supreme Court justices is genuinely distinctive and gets its **own lesson** next (Michigan Courts, n.d.).
 
-**Veto and override.** The Governor may veto bills — and, on spending bills, use a **line-item veto** to strike individual appropriations. The Legislature can override a veto only by a **two-thirds vote of each chamber** (Michigan Legislature, n.d.).
+**Veto and override.** The Governor may veto bills and, on spending bills, use a **line-item veto** to strike individual appropriations. The Legislature can override a veto only by a **two-thirds vote of each chamber** (Michigan Legislature, n.d.).
 
 **Check yourself.** How long is a Michigan Senate term versus a House term, and which two statewide executive officers (besides Governor/Lt. Governor) do voters elect directly?
 
@@ -81,19 +91,29 @@ This is the through-line: in Michigan, "the government" is not only the official
       slug: "mi-courts",
       title: "3 · How Michigan chooses its judges (the nonpartisan-ballot quirk)",
       section: "The Three Branches",
-      body: `Here is one of Michigan's most distinctive rules — and a favorite trivia trap.
+      recallContent: [
+        {
+          prompt: "How many members are in each chamber of the Michigan Legislature, and how long are their terms?",
+          answer: "The Senate has 38 senators (4-year terms) and the House has 110 representatives (2-year terms).",
+        },
+        {
+          prompt: "Besides the Governor and Lieutenant Governor, which two statewide executives do Michigan voters elect directly?",
+          answer: "The Secretary of State (who runs elections) and the Attorney General. The State Treasurer is appointed by the Governor, not elected.",
+        },
+      ],
+      body: `Here is one of Michigan's most distinctive rules, and a favorite trivia trap.
 
-Michigan **Supreme Court** justices are **elected by the voters to 8-year terms** — but on a ballot that is officially **NONPARTISAN**: when you vote for a justice, **no party label appears next to the name** (Michigan Courts, n.d.).
+Michigan **Supreme Court** justices are **elected by the voters to 8-year terms**, but on a ballot that is officially **NONPARTISAN**: when you vote for a justice, **no party label appears next to the name** (Michigan Courts, n.d.).
 
-The twist: those "nonpartisan" candidates are actually **nominated by the political parties at their state conventions** (or reach the ballot by petition). So Michigan runs a hybrid system often described as **"partisan nomination, nonpartisan election"** — the parties pick the candidates, but the party labels are stripped off the ballot voters see. It's a genuine Michigan peculiarity worth remembering.
+The twist: those "nonpartisan" candidates are actually **nominated by the political parties at their state conventions** (or reach the ballot by petition). So Michigan runs a hybrid system often described as **"partisan nomination, nonpartisan election"**: the parties pick the candidates, but the party labels are stripped off the ballot voters see. It's a genuine Michigan peculiarity worth remembering.
 
 Lower courts:
 - **Court of Appeals** judges and **Circuit / District / Probate** court judges are also **elected on nonpartisan ballots.**
 - When a judicial seat opens mid-term, the **Governor appoints** a replacement, who then must run at the next election to keep the seat.
 
-**Why this matters.** Different states pick judges in very different ways — some by partisan election, some by pure appointment, some by "merit selection" commissions. Michigan's answer is this nonpartisan-ballot-but-party-nominated hybrid. If you compare states, don't assume Michigan's method from another state's.
+**Why this matters.** Different states pick judges in very different ways: some by partisan election, some by pure appointment, some by "merit selection" commissions. Michigan's answer is this nonpartisan-ballot-but-party-nominated hybrid. If you compare states, don't assume Michigan's method from another state's.
 
-**Check yourself.** Do party labels appear next to Michigan Supreme Court candidates on the ballot — and who actually nominates them?
+**Check yourself.** Do party labels appear next to Michigan Supreme Court candidates on the ballot, and who actually nominates them?
 
 ## Sources
 - Michigan Courts. (n.d.). *Judicial selection and the Michigan Supreme Court*. courts.michigan.gov. https://www.courts.michigan.gov/
@@ -105,20 +125,30 @@ Lower courts:
       slug: "mi-bill-to-law",
       title: "4 · How a bill becomes a Michigan law",
       section: "Making Law",
-      body: `A Michigan law can be made **two ways** — through the Legislature, or directly by the voters.
+      recallContent: [
+        {
+          prompt: "Do party labels appear next to Michigan Supreme Court candidates on the ballot?",
+          answer: "No. The election is officially nonpartisan, so no party label appears. Justices are elected to 8-year terms.",
+        },
+        {
+          prompt: "If the ballot is nonpartisan, who actually nominates Michigan Supreme Court candidates?",
+          answer: "The political parties nominate them at their state conventions (or candidates reach the ballot by petition): a 'partisan nomination, nonpartisan election' hybrid.",
+        },
+      ],
+      body: `A Michigan law can be made **two ways**: through the Legislature, or directly by the voters.
 
-**Path 1 — through the Legislature** (Michigan Legislature, n.d.):
+**Path 1: through the Legislature** (Michigan Legislature, n.d.):
 1. **Introduction.** A legislator introduces a bill in the House or Senate.
 2. **Committee.** The bill goes to a committee, which holds hearings, amends it, and votes on whether to send it forward.
 3. **Floor votes.** The full chamber debates and votes. It then goes to the **other chamber** and repeats the process.
 4. **Reconciliation.** If the two chambers pass different versions, a **conference committee** works out one text both must approve.
 5. **Governor.** The Governor can **sign** it, **veto** it (a two-thirds vote of each chamber overrides), or use a **line-item veto** on appropriations. A bill the Governor neither signs nor returns becomes law after the constitutional waiting period.
 
-**Path 2 — directly by the voters:**
-- **Initiated law.** Citizens gather signatures to propose a statute. Unusually, in Michigan an initiated law goes **to the Legislature first**: lawmakers may **enact it as written** (in which case it does not go to the ballot), or decline — and then it goes to the voters.
+**Path 2: directly by the voters:**
+- **Initiated law.** Citizens gather signatures to propose a statute. Unusually, in Michigan an initiated law goes **to the Legislature first**: lawmakers may **enact it as written** (in which case it does not go to the ballot), or decline, and then it goes to the voters.
 - **Constitutional amendment by petition** and **referendum** let voters change the constitution or veto a statute directly.
 
-The takeaway: **the Legislature is the usual road, but not the only road.** Michigan voters can make law themselves — a recurring theme of this course.
+The takeaway: **the Legislature is the usual road, but not the only road.** Michigan voters can make law themselves, a recurring theme of this course.
 
 **Check yourself.** In Michigan, what happens to a citizen "initiated law" *before* it could go on the ballot?
 
@@ -126,23 +156,33 @@ The takeaway: **the Legislature is the usual road, but not the only road.** Mich
 - Michigan Legislature. (n.d.). *How a bill becomes law; initiative and referendum*. legislature.mi.gov. https://www.legislature.mi.gov/`,
     },
 
-    // ── Section 5: Redistricting — the citizens' commission ───────────────
+    // ── Section 5: Redistricting, the citizens' commission ───────────────
     {
       slug: "mi-redistricting",
       title: "5 · Redistricting: Michigan's Independent Citizens Redistricting Commission",
       section: "Elections & Redistricting",
-      body: `This is Michigan's headline modern civics story — and a genuine **national first.**
+      recallContent: [
+        {
+          prompt: "In Michigan, what happens to a citizen 'initiated law' before it could reach the ballot?",
+          answer: "It goes to the Legislature first. Lawmakers may enact it as written (then it does not go to the ballot), or decline, and then it goes to the voters.",
+        },
+        {
+          prompt: "What are the two ways a law can be made in Michigan?",
+          answer: "Through the Legislature (introduction, committee, floor votes in both chambers, then the Governor), or directly by the voters through initiative and referendum.",
+        },
+      ],
+      body: `This is Michigan's headline modern civics story, and a genuine **national first.**
 
 In most states, the **Legislature draws its own district maps** every ten years after the census, which lets the party in power shape districts to its advantage (gerrymandering). **Michigan voters changed that.** **Proposal 2 of 2018** amended the constitution to create the **Independent Citizens Redistricting Commission (ICRC)** and hand it the job of drawing Michigan's **state House, state Senate, and U.S. Congressional** district maps (Michigan Department of State, n.d.).
 
 What makes the ICRC distinctive (Michigan Department of State, n.d.):
-- **13 randomly selected citizens** — **4 who affiliate with the Democratic Party, 4 with the Republican Party, and 5 who affiliate with neither** — chosen from applicants by the Secretary of State's office.
+- **13 randomly selected citizens** (**4 who affiliate with the Democratic Party, 4 with the Republican Party, and 5 who affiliate with neither**), chosen from applicants by the Secretary of State's office.
 - **Politicians and insiders are excluded.** Current and recent officeholders, lobbyists, candidates, and their close relatives generally **cannot serve**, keeping the mapmakers independent of the officials whose districts they draw.
-- The commission works in **public**, with required hearings and transparency, and adopting a map needs support **across the partisan groups** — not just one side.
+- The commission works in **public**, with required hearings and transparency, and adopting a map needs support **across the partisan groups**, not just one side.
 
-Why it matters: Michigan **took a core power away from the Legislature and gave it to a randomly chosen citizen body** — precisely the kind of reform this course's "voters are a lawmaking body" theme predicts. It's one of the clearest real-world examples of direct democracy reshaping how a state governs itself.
+Why it matters: Michigan **took a core power away from the Legislature and gave it to a randomly chosen citizen body**, precisely the kind of reform this course's "voters are a lawmaking body" theme predicts. It's one of the clearest real-world examples of direct democracy reshaping how a state governs itself.
 
-⚠️ **Time-sensitive.** The commission's composition, its maps, and related court rulings evolve over time. For the current commissioners and maps, confirm at **michigan.gov/sos** rather than assuming.
+⚠️ **Time-sensitive.** The commission's composition, its maps, and related court rulings evolve over time. For the current commissioners and maps, confirm at **[michigan.gov/sos](https://michigan.gov/sos)** rather than assuming.
 
 **Check yourself.** Who draws Michigan's legislative and congressional districts, and how many members does that body have?
 
@@ -156,10 +196,20 @@ Why it matters: Michigan **took a core power away from the Legislature and gave 
       slug: "mi-elections",
       title: "6 · Elections and voting in Michigan",
       section: "Elections & Redistricting",
-      body: `Michigan has **expanded voting access substantially** through two voter-approved ballot proposals — a good example of the direct-democracy theme in action (Michigan Department of State, n.d.).
+      recallContent: [
+        {
+          prompt: "Who draws Michigan's state legislative and congressional district maps, and what created that body?",
+          answer: "The Independent Citizens Redistricting Commission (ICRC), created by Proposal 2 of 2018. It took map-drawing away from the Legislature, a national first.",
+        },
+        {
+          prompt: "How is the 13-member Independent Citizens Redistricting Commission composed?",
+          answer: "13 randomly selected citizens: 4 affiliated with the Democratic Party, 4 with the Republican Party, and 5 with neither. Politicians and lobbyists are excluded.",
+        },
+      ],
+      body: `Michigan has **expanded voting access substantially** through two voter-approved ballot proposals, a good example of the direct-democracy theme in action (Michigan Department of State, n.d.).
 
 **Proposal 3 of 2018 ("Promote the Vote")** put several voting rights into the **constitution**, including:
-- **No-reason absentee (mail) voting** — any registered voter may vote by mail without an excuse.
+- **No-reason absentee (mail) voting:** any registered voter may vote by mail without an excuse.
 - **Automatic voter registration** through the Secretary of State, and **same-day / Election-Day registration.**
 - **Straight-ticket voting** and the right to a secret ballot.
 
@@ -168,9 +218,9 @@ Why it matters: Michigan **took a core power away from the Legislature and gave 
 - **State-funded postage** for absentee ballots and **secure drop boxes.**
 - A **photo-ID requirement** with the option to sign an **affidavit** if a voter lacks ID (so eligible voters are not turned away).
 
-Michigan's elections are administered by the **Secretary of State** at the state level and run locally by **city and township clerks** — Michigan famously conducts elections through **more than 1,500 local clerks**, a very decentralized system.
+Michigan's elections are administered by the **Secretary of State** at the state level and run locally by **city and township clerks**: Michigan famously conducts elections through **more than 1,500 local clerks**, a very decentralized system.
 
-⚠️ **Time-sensitive.** Registration deadlines, ID rules, early-voting days, and drop-box locations change and are administered locally. Always confirm the **current** rules and your clerk's details at **michigan.gov/sos** before an election.
+⚠️ **Time-sensitive.** Registration deadlines, ID rules, early-voting days, and drop-box locations change and are administered locally. Always confirm the **current** rules and your clerk's details at **[michigan.gov/sos](https://michigan.gov/sos)** before an election.
 
 **Check yourself.** Name two voting-access changes Michigan voters approved (2018 or 2022), and say who runs elections at the local level.
 
@@ -184,14 +234,24 @@ Michigan's elections are administered by the **Secretary of State** at the state
       slug: "mi-local-government",
       title: "7 · Local government: counties, cities, villages, and townships",
       section: "Local Government",
-      body: `Most of the government you actually touch — roads, police and sheriffs, schools, water, zoning — is **local.** Michigan has an unusually full set of local layers (Michigan Legislature, n.d.):
+      recallContent: [
+        {
+          prompt: "Name two voting-access changes Michigan voters approved in 2018 or 2022.",
+          answer: "For example: no-reason absentee voting and automatic/same-day registration (Proposal 3 of 2018); nine days of early in-person voting and secure drop boxes (Proposal 2 of 2022).",
+        },
+        {
+          prompt: "Who runs Michigan elections at the local level?",
+          answer: "City and township clerks (more than 1,500 of them). The Secretary of State administers elections at the state level.",
+        },
+      ],
+      body: `Most of the government you actually touch (roads, police and sheriffs, schools, water, zoning) is **local.** Michigan has an unusually full set of local layers (Michigan Legislature, n.d.):
 
 - **83 counties.** Each is governed by an elected **Board of Commissioners**, plus separately elected county officials (sheriff, clerk, treasurer, prosecuting attorney, register of deeds). Counties handle courts, jails, elections administration, and county roads.
-- **Townships** — Michigan keeps **strong townships** (general-law and charter townships) that provide services in areas outside cities. This is a real Michigan feature: townships are active units of government, not just map lines. Every part of Michigan outside a city is in a township.
+- **Townships:** Michigan keeps **strong townships** (general-law and charter townships) that provide services in areas outside cities. This is a real Michigan feature: townships are active units of government, not just map lines. Every part of Michigan outside a city is in a township.
 - **Cities and villages.** Michigan is a strong **home-rule** state: under the **Home Rule City Act (1909)**, cities adopt their own charters and exercise broad local powers. **Villages** are smaller incorporated communities that remain part of their township for some purposes.
 - **Special districts and school districts** run schools, transit, and utilities.
 
-Because Michigan layers **county + township + city/village** together, "who do I call?" depends on where you live and which service you need — the county sheriff and the city police are different, and your township or city handles zoning and local roads.
+Because Michigan layers **county + township + city/village** together, "who do I call?" depends on where you live and which service you need: the county sheriff and the city police are different, and your township or city handles zoning and local roads.
 
 **Check yourself.** How many counties does Michigan have, and what local unit governs the areas *outside* cities?
 
@@ -204,14 +264,24 @@ Because Michigan layers **county + township + city/village** together, "who do I
       slug: "mi-get-involved",
       title: "8 · How to take part where you live",
       section: "Get Involved",
-      body: `Civics is not a spectator sport — and in Michigan, ordinary people have unusually direct levers. Here are concrete ways to take part (Michigan Department of State, n.d.):
+      recallContent: [
+        {
+          prompt: "How many counties does Michigan have, and what local unit governs the areas outside cities?",
+          answer: "Michigan has 83 counties. Every area outside a city lies within a township, a strong local unit in Michigan.",
+        },
+        {
+          prompt: "What kind of local-government state is Michigan for its cities, and under what law do cities adopt their own charters?",
+          answer: "A strong home-rule state. Under the Home Rule City Act (1909), cities write their own charters and exercise broad local powers.",
+        },
+      ],
+      body: `Civics is not a spectator sport, and in Michigan, ordinary people have unusually direct levers. Here are concrete ways to take part (Michigan Department of State, n.d.):
 
-- **Register and vote — and use the options.** Register (even on Election Day), then choose what fits you: **vote by mail** with no excuse, vote **early in person**, or vote on Election Day. Confirm your registration and clerk at **michigan.gov/sos**.
-- **Contact your legislators.** You have **one state Representative and one state Senator.** Find them at legislature.mi.gov and weigh in on bills in committee — where much of the real shaping happens.
+- **Register and vote, and use the options.** Register (even on Election Day), then choose what fits you: **vote by mail** with no excuse, vote **early in person**, or vote on Election Day. Confirm your registration and clerk at **[michigan.gov/sos](https://michigan.gov/sos)**.
+- **Contact your legislators.** You have **one state Representative and one state Senator.** Find them at [legislature.mi.gov](https://legislature.mi.gov) and weigh in on bills in committee, where much of the real shaping happens.
 - **Show up locally.** County commission, city council, township board, and school-board meetings are **public**, and public-comment time is built in. Local boards decide roads, zoning, and school policy.
-- **Use direct democracy.** Michigan lets citizens **initiate laws, amend the constitution, hold referendums, and recall officials** by petition. You can sign, circulate, or organize petitions — a power many states don't grant.
-- **Apply to serve.** Citizens can apply for boards and commissions — including, in redistricting years, the **Independent Citizens Redistricting Commission** itself.
-- **Run for office.** Township trustee, school board, city council, county commission — local seats are reachable starting points.
+- **Use direct democracy.** Michigan lets citizens **initiate laws, amend the constitution, hold referendums, and recall officials** by petition. You can sign, circulate, or organize petitions, a power many states don't grant.
+- **Apply to serve.** Citizens can apply for boards and commissions, including, in redistricting years, the **Independent Citizens Redistricting Commission** itself.
+- **Run for office.** Township trustee, school board, city council, county commission: local seats are reachable starting points.
 
 **The habit to build:** pick **one** race or issue and follow it from proposal to decision. You'll learn more civics from tracking a single local zoning fight or ballot proposal than from any lecture.
 
@@ -235,7 +305,7 @@ Because Michigan layers **county + township + city/village** together, "who do I
             prompt: "Michigan's current constitution, the Constitution of 1963, took effect in the year ___.",
             answer: "1964",
             explanation:
-              "The Constitution of 1963 was ratified by voters in 1963 and took effect January 1, 1964 — Michigan's fourth constitution.",
+              "The Constitution of 1963 was ratified by voters in 1963 and took effect January 1, 1964, Michigan's fourth constitution.",
           },
           {
             prompt: "Michigan's Legislature has 38 senators and ___ representatives.",
@@ -249,15 +319,15 @@ Because Michigan layers **county + township + city/village** together, "who do I
             answer: "redistricting",
             accept: ["Redistricting"],
             explanation:
-              "Proposal 2 of 2018 created the Independent Citizens Redistricting Commission — 13 randomly selected citizens (4 Democrats, 4 Republicans, 5 unaffiliated) — taking map-drawing from the Legislature.",
+              "Proposal 2 of 2018 created the Independent Citizens Redistricting Commission, 13 randomly selected citizens (4 Democrats, 4 Republicans, 5 unaffiliated), taking map-drawing from the Legislature.",
           },
           {
             prompt:
-              "On the ballot, Michigan Supreme Court candidates appear WITHOUT a party label — the election is officially ___.",
+              "On the ballot, Michigan Supreme Court candidates appear WITHOUT a party label; the election is officially ___.",
             answer: "nonpartisan",
             accept: ["non-partisan"],
             explanation:
-              "Michigan justices are nominated by the parties at convention but elected on a nonpartisan ballot — a distinctive 'partisan nomination, nonpartisan election' hybrid.",
+              "Michigan justices are nominated by the parties at convention but elected on a nonpartisan ballot, a distinctive 'partisan nomination, nonpartisan election' hybrid.",
           },
           {
             prompt: "Michigan is divided into ___ counties.",
@@ -295,7 +365,7 @@ Because Michigan layers **county + township + city/village** together, "who do I
             ],
             correctIndex: 1,
             explanation:
-              "Michigan's fourth constitution — the Constitution of 1963 — was ratified in 1963 and took effect January 1, 1964.",
+              "Michigan's fourth constitution, the Constitution of 1963, was ratified in 1963 and took effect January 1, 1964.",
             sourceLessonSlug: "mi-constitution",
           },
           {
@@ -334,7 +404,7 @@ Because Michigan layers **county + township + city/village** together, "who do I
             ],
             correctIndex: 1,
             explanation:
-              "Proposal 2 of 2018 created the 13-member Independent Citizens Redistricting Commission and moved district-drawing from the Legislature to citizens — a national first of its kind.",
+              "Proposal 2 of 2018 created the 13-member Independent Citizens Redistricting Commission and moved district-drawing from the Legislature to citizens, a national first of its kind.",
             sourceLessonSlug: "mi-redistricting",
           },
           {
@@ -347,7 +417,7 @@ Because Michigan layers **county + township + city/village** together, "who do I
             ],
             correctIndex: 1,
             explanation:
-              "The ICRC is 13 randomly selected citizens — 4 Democrats, 4 Republicans, 5 unaffiliated — with politicians and lobbyists excluded.",
+              "The ICRC is 13 randomly selected citizens (4 Democrats, 4 Republicans, 5 unaffiliated), with politicians and lobbyists excluded.",
             sourceLessonSlug: "mi-redistricting",
           },
           {
@@ -360,7 +430,7 @@ Because Michigan layers **county + township + city/village** together, "who do I
             ],
             correctIndex: 1,
             explanation:
-              "Michigan voters can initiate laws, amend the constitution by petition, and veto statutes by referendum — direct democracy alongside the Legislature.",
+              "Michigan voters can initiate laws, amend the constitution by petition, and veto statutes by referendum, direct democracy alongside the Legislature.",
             sourceLessonSlug: "mi-bill-to-law",
           },
           {
@@ -412,7 +482,7 @@ Because Michigan layers **county + township + city/village** together, "who do I
             ],
             correctIndex: 1,
             explanation:
-              "Michigan changes rules by ballot proposal relatively often (term limits in 2022, voting access in 2018 and 2022), so confirm the current status at michigan.gov/sos.",
+              "Michigan changes rules by ballot proposal relatively often (term limits in 2022, voting access in 2018 and 2022), so confirm the current status at [michigan.gov/sos](https://michigan.gov/sos).",
             sourceLessonSlug: "mi-elections",
           },
         ],

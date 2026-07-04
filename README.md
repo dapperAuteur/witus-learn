@@ -58,6 +58,9 @@ pnpm seed:langchain  # 3 LangGraph/LangChain courses → Learn.WitUS (AI & Techn
 
 `*.localhost` subdomains resolve to 127.0.0.1 in modern browsers; no `/etc/hosts` edit needed.
 
+**Operating the app** (migrate + seed order, which seed owns which course, keeping content current):
+see [OPERATING.md](OPERATING.md) — mirrored in-app at `/help` → "Keeping courses & content current".
+
 ```bash
 pnpm typecheck   # next typegen && tsc --noEmit
 pnpm lint

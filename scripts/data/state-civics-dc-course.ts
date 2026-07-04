@@ -1,7 +1,7 @@
-// Authored "District of Columbia Civics: How Your Government Works" — the DC entry in
+// Authored "District of Columbia Civics: How Your Government Works", the DC entry in
 // the per-state Civics layer on Learn.WitUS. DC is NOT a state; it is a federal district.
 // State-level companion to the general Civics courses: those teach the SYSTEM; this
-// teaches DC's distinctive version — and why it is different from a state.
+// teaches DC's distinctive version, and why it is different from a state.
 //
 // Factual and strictly non-partisan. Every content lesson is cited (APA 7 in-line +
 // a `## Sources` bibliography) to DC'S OWN OFFICIAL SOURCES: the Council of the District
@@ -21,22 +21,22 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_DC_COURSE: AuthoredCourse = {
   title: "District of Columbia Civics: How Your Government Works",
   description:
-    "A practical, non-partisan guide to how the District of Columbia governs itself — and why it is different from a state. DC is NOT a state; it is a FEDERAL DISTRICT created by the U.S. Constitution as the seat of the national government, and Congress holds ultimate authority over it. You'll learn how the Home Rule Act of 1973 gave DC an elected Mayor and Council; why DC has no voting representation in Congress (only a non-voting Delegate) yet gets three electoral votes for President under the 23rd Amendment; how its distinctive Advisory Neighborhood Commissions work; how its judges are appointed by the U.S. President; and the ongoing DC statehood debate. Time-sensitive facts are flagged, pointing to dccouncil.gov and dcboe.gov. Cited to DC's own official sources and the U.S. Constitution.",
+    "A practical, non-partisan guide to how the District of Columbia governs itself, and why it is different from a state. DC is NOT a state; it is a FEDERAL DISTRICT created by the U.S. Constitution as the seat of the national government, and Congress holds ultimate authority over it. You'll learn how the Home Rule Act of 1973 gave DC an elected Mayor and Council; why DC has no voting representation in Congress (only a non-voting Delegate) yet gets three electoral votes for President under the 23rd Amendment; how its distinctive Advisory Neighborhood Commissions work; how its judges are appointed by the U.S. President; and the ongoing DC statehood debate. Time-sensitive facts are flagged, pointing to dccouncil.gov and dcboe.gov. Cited to DC's own official sources and the U.S. Constitution.",
   lessons: [
     // ── Section 1: A federal district, not a state ───────────────────────
     {
       slug: "dc-federal-district",
-      title: "1 · Washington, DC is a federal district — not a state",
+      title: "1 · Washington, DC is a federal district, not a state",
       section: "What Makes DC Unique",
-      body: `The most important fact about the District of Columbia's government is what DC **is not**: it is **NOT a state.** DC is a **federal district** — the **seat of the national government** — and that single fact shapes everything about its civics (Council of the District of Columbia, n.d.).
+      body: `The most important fact about the District of Columbia's government is what DC **is not**: it is **NOT a state.** DC is a **federal district**, the **seat of the national government**, and that single fact shapes everything about its civics (Council of the District of Columbia, n.d.).
 
-**Written into the Constitution.** The **U.S. Constitution (Article I, Section 8)** authorized a special **district** to serve as the nation's capital, **not part of any state**, over which **Congress would exercise authority.** The District was formed in 1790–1801 from land **ceded by Maryland** (an earlier portion from Virginia was returned to Virginia in 1846). So from the start, DC was designed to be governed differently from a state (U.S. Constitution, Article I, §8; Council of the District of Columbia, n.d.).
+**Written into the Constitution.** The **U.S. Constitution (Article I, Section 8)** authorized a special **district** to serve as the nation's capital, **not part of any state**, over which **Congress would exercise authority.** The District was formed in 1790 to 1801 from land **ceded by Maryland** (an earlier portion from Virginia was returned to Virginia in 1846). So from the start, DC was designed to be governed differently from a state (U.S. Constitution, Article I, §8; Council of the District of Columbia, n.d.).
 
-**Congress holds ultimate power.** Because the Constitution gives **Congress** authority over the District, **the U.S. Congress is, in effect, DC's ultimate government.** Congress can **review and overturn laws** the District passes, shapes its **budget**, and historically governed DC directly. DC's local self-government exists only because **Congress granted it** — and Congress can change it. This is the through-line of DC civics: DC governs its **local** affairs, but under the **ultimate authority of Congress** — a relationship no state has.
+**Congress holds ultimate power.** Because the Constitution gives **Congress** authority over the District, **the U.S. Congress is, in effect, DC's ultimate government.** Congress can **review and overturn laws** the District passes, shapes its **budget**, and historically governed DC directly. DC's local self-government exists only because **Congress granted it**, and Congress can change it. This is the through-line of DC civics: DC governs its **local** affairs, but under the **ultimate authority of Congress**, a relationship no state has.
 
 DC is often noted to have **more residents than some states** (such as Wyoming and Vermont), which fuels the debates you'll meet later about **representation and statehood.**
 
-**A note this course keeps returning to:** facts about DC's status and autonomy **change**, and the **statehood** question is active. Everything here is current as of authoring, but DC's own government (dccouncil.gov, dcboe.gov) and the U.S. Constitution are the authoritative sources. When something is time-sensitive, we say so.
+**A note this course keeps returning to:** facts about DC's status and autonomy **change**, and the **statehood** question is active. Everything here is current as of authoring, but DC's own government ([dccouncil.gov](https://dccouncil.gov), [dcboe.gov](https://dcboe.gov)) and the U.S. Constitution are the authoritative sources. When something is time-sensitive, we say so.
 
 **Check yourself.** What is DC (if not a state), and which body holds ultimate authority over it?
 
@@ -48,21 +48,25 @@ DC is often noted to have **more residents than some states** (such as Wyoming a
     // ── Section 2: Home Rule ─────────────────────────────────────────────
     {
       slug: "dc-home-rule",
+      recallContent: [
+        { prompt: "Is Washington, DC a state, and if not, what is it?", answer: "No. DC is a federal district, the seat of the national government, created by the U.S. Constitution (Article I, Section 8) and formed mostly from land ceded by Maryland." },
+        { prompt: "Which body holds ultimate authority over the District of Columbia?", answer: "Congress. It can review and overturn DC's laws and shape its budget; DC's local self-government exists only because Congress granted it." },
+      ],
       title: "2 · Home Rule: DC's elected Mayor and Council (since 1973)",
       section: "Local Government",
-      body: `For most of its history, **DC had no elected local government at all** — **Congress ran the District directly**, and residents could not elect local leaders. That changed in **1973** (Council of the District of Columbia, n.d.).
+      body: `For most of its history, **DC had no elected local government at all**. **Congress ran the District directly**, and residents could not elect local leaders. That changed in **1973** (Council of the District of Columbia, n.d.).
 
 **The Home Rule Act of 1973.** Congress passed the **District of Columbia Home Rule Act**, granting DC **limited self-government.** Under Home Rule (Council of the District of Columbia, n.d.):
 - DC residents elect a **Mayor** (the chief executive) to a 4-year term, and
 - a **13-member Council** (the local legislature): a **Chairman** and **four at-large members** elected citywide, plus **eight members**, one from each of DC's eight **wards.**
-The Mayor and Council handle the things a **city and a state** would normally do — schools, police, sanitation, local taxes, and local laws.
+The Mayor and Council handle the things a **city and a state** would normally do: schools, police, sanitation, local taxes, and local laws.
 
 **But Congress keeps the last word.** ⚠️ Home Rule is **limited**, not full self-government (Council of the District of Columbia, n.d.):
 - **Every law the DC Council passes goes to Congress for a review period**, and Congress can **disapprove** it (a "resolution of disapproval").
 - Congress shapes and reviews DC's **budget** (DC has gained more **budget autonomy** over local funds in recent years, but federal oversight remains). ⚠️ Confirm the **current** scope of budget autonomy, as it has changed.
 - Congress can **override local decisions** and even legislate directly for DC.
 
-So DC's government is **real and elected — but operates under a congressional veto** no state faces.
+So DC's government is **real and elected, but operates under a congressional veto** no state faces.
 
 **Check yourself.** What did the Home Rule Act of 1973 create, and what power does Congress keep over DC laws?
 
@@ -74,15 +78,19 @@ So DC's government is **real and elected — but operates under a congressional 
     // ── Section 3: Representation, the 23rd Amendment, statehood ─────────
     {
       slug: "dc-representation-statehood",
+      recallContent: [
+        { prompt: "What did the Home Rule Act of 1973 create for DC?", answer: "Limited self-government: an elected Mayor (a 4-year term) and a 13-member Council (a Chairman, four at-large members, and eight ward members). Before 1973, Congress ran DC directly." },
+        { prompt: "Under Home Rule, what power does Congress keep over DC's laws?", answer: "Every law the Council passes goes to Congress for a review period, and Congress can disapprove it, shape the budget, and even legislate directly for DC, a veto no state faces." },
+      ],
       title: "3 · No vote in Congress, three electoral votes, and the statehood debate",
       section: "What Makes DC Unique",
       body: `DC's relationship to **national** representation is its most contested feature.
 
-**No voting representation in Congress.** ⚠️ DC residents **pay federal taxes and can be drafted, but have NO voting representation in Congress.** DC elects a **Delegate to the U.S. House**, but the Delegate **cannot vote** on final passage of laws on the House floor, and DC has **no U.S. Senators at all** (Council of the District of Columbia, n.d.). This is the origin of the protest slogan **"Taxation Without Representation,"** printed on DC license plates — DC residents are governed by a Congress they **cannot vote for.**
+**No voting representation in Congress.** ⚠️ DC residents **pay federal taxes and can be drafted, but have NO voting representation in Congress.** DC elects a **Delegate to the U.S. House**, but the Delegate **cannot vote** on final passage of laws on the House floor, and DC has **no U.S. Senators at all** (Council of the District of Columbia, n.d.). This is the origin of the protest slogan **"Taxation Without Representation,"** printed on DC license plates: DC residents are governed by a Congress they **cannot vote for.**
 
-**But three electoral votes for President.** There's an important exception: the **23rd Amendment (1961)** gave DC **electoral votes for President** — **three** (treated as if DC were a state, but capped at the number of the least-populous state) (U.S. Constitution, Amendment XXIII). So DC residents **do vote for President**, even though they lack voting members of Congress.
+**But three electoral votes for President.** There's an important exception: the **23rd Amendment (1961)** gave DC **electoral votes for President**: **three** (treated as if DC were a state, but capped at the number of the least-populous state) (U.S. Constitution, Amendment XXIII). So DC residents **do vote for President**, even though they lack voting members of Congress.
 
-**The statehood debate.** ⚠️ **Time-sensitive and active:** many DC residents and officials seek **statehood** (a proposed "State of Washington, Douglass Commonwealth") to gain full voting representation and self-government. **DC voters approved statehood in a 2016 referendum**, and the **U.S. House passed a DC statehood bill** (in 2020 and 2021), but it has **not become law** (it would need the Senate and faces constitutional debate) (Council of the District of Columbia, n.d.). Whether DC becomes a state — or gains representation another way — is an **open, evolving question.** Confirm current status at dccouncil.gov.
+**The statehood debate.** ⚠️ **Time-sensitive and active:** many DC residents and officials seek **statehood** (a proposed "State of Washington, Douglass Commonwealth") to gain full voting representation and self-government. **DC voters approved statehood in a 2016 referendum**, and the **U.S. House passed a DC statehood bill** (in 2020 and 2021), but it has **not become law** (it would need the Senate and faces constitutional debate) (Council of the District of Columbia, n.d.). Whether DC becomes a state, or gains representation another way, is an **open, evolving question.** Confirm current status at [dccouncil.gov](https://dccouncil.gov).
 
 **Check yourself.** Why do DC license plates say "Taxation Without Representation," yet DC residents can still vote for President?
 
@@ -94,13 +102,17 @@ So DC's government is **real and elected — but operates under a congressional 
     // ── Section 4: Neighborhood democracy + presidentially appointed courts
     {
       slug: "dc-ancs-courts",
+      recallContent: [
+        { prompt: "Does DC have voting representation in Congress, and why do its license plates say 'Taxation Without Representation'?", answer: "No. DC has only a non-voting House Delegate and no senators, yet its residents pay federal taxes, which is the origin of the slogan." },
+        { prompt: "How many electoral votes does DC get for President, and where do they come from?", answer: "Three, granted by the 23rd Amendment (1961), so DC residents vote for President even though they lack voting members of Congress." },
+      ],
       title: "4 · Advisory Neighborhood Commissions and presidentially appointed courts",
       section: "The Three Branches",
       body: `DC has two more distinctive institutions worth knowing.
 
-**Advisory Neighborhood Commissions (ANCs) — hyperlocal democracy.** DC is divided into small neighborhood districts, each represented by an elected **Advisory Neighborhood Commissioner** who serves on an **ANC** (Council of the District of Columbia, n.d.). ANCs are **unpaid, grassroots bodies** that advise the city on **very local matters** — zoning, liquor licenses, traffic, permits, and neighborhood concerns — and DC agencies must give ANC positions **"great weight."** With hundreds of commissioners citywide representing just a few thousand residents each, ANCs are one of the **most hyperlocal forms of elected government in America** — a distinctive DC feature that gives ordinary residents a direct, official voice.
+**Advisory Neighborhood Commissions (ANCs): hyperlocal democracy.** DC is divided into small neighborhood districts, each represented by an elected **Advisory Neighborhood Commissioner** who serves on an **ANC** (Council of the District of Columbia, n.d.). ANCs are **unpaid, grassroots bodies** that advise the city on **very local matters** (zoning, liquor licenses, traffic, permits, and neighborhood concerns) and DC agencies must give ANC positions **"great weight."** With hundreds of commissioners citywide representing just a few thousand residents each, ANCs are one of the **most hyperlocal forms of elected government in America**, a distinctive DC feature that gives ordinary residents a direct, official voice.
 
-**Courts appointed by the President.** ⚠️ Here's a genuinely unusual feature: DC's **local courts are not staffed by locally elected or locally appointed judges.** DC has its own trial court (the **Superior Court**) and the **District of Columbia Court of Appeals** (its highest local court), but their **judges are nominated by the U.S. PRESIDENT and confirmed by the U.S. SENATE** — from a list prepared by a **DC Judicial Nomination Commission** (District of Columbia Courts, n.d.). So even DC's **local** judiciary runs through the **federal** appointment process — another way DC's status as a federal district shapes its government differently from any state.
+**Courts appointed by the President.** ⚠️ Here's a genuinely unusual feature: DC's **local courts are not staffed by locally elected or locally appointed judges.** DC has its own trial court (the **Superior Court**) and the **District of Columbia Court of Appeals** (its highest local court), but their **judges are nominated by the U.S. PRESIDENT and confirmed by the U.S. SENATE**, from a list prepared by a **DC Judicial Nomination Commission** (District of Columbia Courts, n.d.). So even DC's **local** judiciary runs through the **federal** appointment process, another way DC's status as a federal district shapes its government differently from any state.
 
 **Check yourself.** What do Advisory Neighborhood Commissions do, and who appoints DC's local judges?
 
@@ -112,20 +124,24 @@ So DC's government is **real and elected — but operates under a congressional 
     // ── Section 5: Getting involved ──────────────────────────────────────
     {
       slug: "dc-get-involved",
+      recallContent: [
+        { prompt: "What are Advisory Neighborhood Commissions (ANCs)?", answer: "Unpaid, elected hyperlocal bodies that advise the city on very local matters like zoning, permits, and traffic; DC agencies must give their positions 'great weight.'" },
+        { prompt: "Who appoints DC's local judges?", answer: "The U.S. President nominates them and the U.S. Senate confirms them, from a list prepared by the DC Judicial Nomination Commission, so even DC's local judiciary runs through the federal process." },
+      ],
       title: "5 · How to take part where you live in DC",
       section: "Get Involved",
-      body: `Even without statehood, DC residents have **real, accessible ways to take part** — some more local than almost anywhere (District of Columbia Board of Elections, n.d.).
+      body: `Even without statehood, DC residents have **real, accessible ways to take part**, some more local than almost anywhere (District of Columbia Board of Elections, n.d.).
 
-**Voting.** ⚠️ **Time-sensitive:** DC offers **same-day (Election-Day) registration**, **early voting**, and **mail ballots sent to registered voters**, run by the **DC Board of Elections.** You vote for the **Mayor, Council, ANC commissioner, the U.S. House Delegate,** and — for President — DC's electors. Confirm the **current** rules at **dcboe.gov** before you vote.
+**Voting.** ⚠️ **Time-sensitive:** DC offers **same-day (Election-Day) registration**, **early voting**, and **mail ballots sent to registered voters**, run by the **DC Board of Elections.** You vote for the **Mayor, Council, ANC commissioner, the U.S. House Delegate,** and, for President, DC's electors. Confirm the **current** rules at **[dcboe.gov](https://dcboe.gov)** before you vote.
 
 **How to take part:**
-- **Register and vote** — even on Election Day; watch for your mailed ballot; vote in **local** races (Mayor, Council, ANC) that decide day-to-day life.
-- **Join your ANC.** Running for **Advisory Neighborhood Commissioner** is one of the most reachable elected offices in the country — a few hundred signatures can put a resident on the ballot, and ANCs shape real neighborhood decisions.
+- **Register and vote**: even on Election Day; watch for your mailed ballot; vote in **local** races (Mayor, Council, ANC) that decide day-to-day life.
+- **Join your ANC.** Running for **Advisory Neighborhood Commissioner** is one of the most reachable elected offices in the country: a few hundred signatures can put a resident on the ballot, and ANCs shape real neighborhood decisions.
 - **Testify at the Council.** The DC Council holds **public hearings**; residents regularly testify on bills and the budget.
-- **Engage on representation.** Follow the **statehood and voting-rights** debate — a defining civic issue for DC residents.
+- **Engage on representation.** Follow the **statehood and voting-rights** debate, a defining civic issue for DC residents.
 - **Watch Congress, too.** Because Congress can review DC laws and budget, national politics directly affects DC's local government in a way it doesn't for states.
 
-**The habit to build:** start with your **ANC and the Council** — the most immediate levers — while staying engaged on DC's larger fight for **representation.**
+**The habit to build:** start with your **ANC and the Council** (the most immediate levers) while staying engaged on DC's larger fight for **representation.**
 
 **Check yourself.** Name two DC offices you vote for, and one unusually reachable elected role in the District.
 
@@ -145,7 +161,7 @@ So DC's government is **real and elected — but operates under a congressional 
         items: [
           {
             prompt:
-              "Washington, DC is not a state — it is a ___ district, the seat of the national government.",
+              "Washington, DC is not a state, it is a ___ district, the seat of the national government.",
             answer: "federal",
             explanation:
               "The Constitution (Article I, §8) created DC as a federal district under the ultimate authority of Congress.",
@@ -160,7 +176,7 @@ So DC's government is **real and elected — but operates under a congressional 
           },
           {
             prompt:
-              "DC residents pay federal taxes but have no voting members of ___ — hence 'Taxation Without Representation.'",
+              "DC residents pay federal taxes but have no voting members of ___, hence 'Taxation Without Representation.'",
             answer: "Congress",
             accept: ["congress"],
             explanation:
@@ -180,14 +196,14 @@ So DC's government is **real and elected — but operates under a congressional 
             answer: "Commissions",
             accept: ["commissions", "commission"],
             explanation:
-              "ANCs advise the city on very local matters and must be given 'great weight' — one of the most hyperlocal governments in America.",
+              "ANCs advise the city on very local matters and must be given 'great weight', one of the most hyperlocal governments in America.",
           },
           {
             prompt:
               "TRUE or FALSE: DC's local judges are elected by DC voters.",
             answer: "false",
             explanation:
-              "False. DC's local judges are nominated by the U.S. President and confirmed by the U.S. Senate — a federal process.",
+              "False. DC's local judges are nominated by the U.S. President and confirmed by the U.S. Senate, a federal process.",
           },
         ],
       },
@@ -205,7 +221,7 @@ So DC's government is **real and elected — but operates under a congressional 
             prompt: "What is the District of Columbia?",
             options: [
               "The 51st state",
-              "A federal district — the seat of the national government — under the ultimate authority of Congress",
+              "A federal district, the seat of the national government, under the ultimate authority of Congress",
               "A county of Maryland",
               "A national park",
             ],
@@ -250,7 +266,7 @@ So DC's government is **real and elected — but operates under a congressional 
             ],
             correctIndex: 1,
             explanation:
-              "DC laws go to Congress for review and possible disapproval, and Congress shapes DC's budget — a congressional veto no state faces.",
+              "DC laws go to Congress for review and possible disapproval, and Congress shapes DC's budget, a congressional veto no state faces.",
             sourceLessonSlug: "dc-home-rule",
           },
           {
@@ -302,7 +318,7 @@ So DC's government is **real and elected — but operates under a congressional 
             ],
             correctIndex: 1,
             explanation:
-              "ANCs are grassroots elected commissions representing a few thousand residents each — among the most hyperlocal governments in America.",
+              "ANCs are grassroots elected commissions representing a few thousand residents each, among the most hyperlocal governments in America.",
             sourceLessonSlug: "dc-ancs-courts",
           },
           {
@@ -315,14 +331,14 @@ So DC's government is **real and elected — but operates under a congressional 
             ],
             correctIndex: 1,
             explanation:
-              "Even DC's local judiciary runs through the federal appointment process — a distinctive result of DC's status.",
+              "Even DC's local judiciary runs through the federal appointment process, a distinctive result of DC's status.",
             sourceLessonSlug: "dc-ancs-courts",
           },
           {
             prompt: "Why does this course tell you to VERIFY DC's autonomy and statehood status?",
             options: [
               "Because DC has no government website",
-              "Because DC's budget autonomy and the statehood question are active and change — confirm at dccouncil.gov / dcboe.gov",
+              "Because DC's budget autonomy and the statehood question are active and change: confirm at [dccouncil.gov](https://dccouncil.gov) / [dcboe.gov](https://dcboe.gov)",
               "Because only Maryland decides",
               "Because voting is secret",
             ],

@@ -1,4 +1,4 @@
-// Authored "Maine Civics: How Your State Government Works" — the Maine entry in the
+// Authored "Maine Civics: How Your State Government Works", the Maine entry in the
 // per-state Civics layer on Learn.WitUS. State-level companion to the general Civics
 // courses: those teach the SYSTEM; this teaches Maine's version.
 //
@@ -20,53 +20,63 @@ import type { AuthoredCourse } from "./authored-course";
 export const STATE_CIVICS_ME_COURSE: AuthoredCourse = {
   title: "Maine Civics: How Your State Government Works",
   description:
-    "A practical, non-partisan guide to how the state of Maine governs itself — and how you take part where you live. You'll learn Maine's Constitution of 1820 (when Maine separated from Massachusetts); why the Governor is the ONLY official Mainers elect statewide, while the Attorney General, Secretary of State, and Treasurer are chosen BY THE LEGISLATURE; that Maine was the FIRST state to adopt ranked-choice voting; its strong direct democracy (the citizen initiative and the 'people's veto'); how Maine appoints (not elects) its judges; and its New England traditions of town meeting and 16 counties. It also notes that Maine, with Nebraska, splits its presidential electoral votes by district. Time-sensitive facts are flagged, pointing to maine.gov/sos. Cited to Maine's own official sources (legislature.maine.gov, maine.gov/sos, courts.maine.gov).",
+    "A practical, non-partisan guide to how the state of Maine governs itself, and how you take part where you live. You'll learn Maine's Constitution of 1820 (when Maine separated from Massachusetts); why the Governor is the ONLY official Mainers elect statewide, while the Attorney General, Secretary of State, and Treasurer are chosen BY THE LEGISLATURE; that Maine was the FIRST state to adopt ranked-choice voting; its strong direct democracy (the citizen initiative and the 'people's veto'); how Maine appoints (not elects) its judges; and its New England traditions of town meeting and 16 counties. It also notes that Maine, with Nebraska, splits its presidential electoral votes by district. Time-sensitive facts are flagged, pointing to maine.gov/sos. Cited to Maine's own official sources (legislature.maine.gov, maine.gov/sos, courts.maine.gov).",
   lessons: [
     // ── Section 1: The Constitution + Maine's break from Massachusetts ───
     {
       slug: "me-constitution",
       title: "1 · Maine's Constitution of 1820 (and its split from Massachusetts)",
       section: "The Maine Constitution",
-      body: `Maine governs under its **Constitution of 1820** — and that date tells a story. Until 1820, **Maine was part of Massachusetts** (the "District of Maine"). Maine separated and was admitted as the **23rd state on March 15, 1820**, as part of the **Missouri Compromise** (Maine entered as a free state, balancing Missouri as a slave state) (Maine Legislature, n.d.).
+      body: `Maine governs under its **Constitution of 1820**, and that date tells a story. Until 1820, **Maine was part of Massachusetts** (the "District of Maine"). Maine separated and was admitted as the **23rd state on March 15, 1820**, as part of the **Missouri Compromise** (Maine entered as a free state, balancing Missouri as a slave state) (Maine Legislature, n.d.).
 
-Because of that heritage, Maine shares some **New England traditions** with Massachusetts — most visibly the **town meeting** (covered later). But Maine wrote its own constitution and built several distinctive features this course highlights:
-- The **Governor is the only official elected statewide** — Maine has **no Lieutenant Governor**, and its Attorney General, Secretary of State, and Treasurer are chosen **by the Legislature.**
+Because of that heritage, Maine shares some **New England traditions** with Massachusetts, most visibly the **town meeting** (covered later). But Maine wrote its own constitution and built several distinctive features this course highlights:
+- The **Governor is the only official elected statewide**, Maine has **no Lieutenant Governor**, and its Attorney General, Secretary of State, and Treasurer are chosen **by the Legislature.**
 - Maine was the **first state to adopt ranked-choice voting.**
-- Maine keeps strong **direct democracy** — the citizen initiative and the "people's veto."
+- Maine keeps strong **direct democracy**, the citizen initiative and the "people's veto."
 
-**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Maine's own government (legislature.maine.gov, maine.gov/sos, courts.maine.gov) is the authoritative source. When something is time-sensitive — like exactly which elections use ranked-choice voting — we say so.
+**A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Maine's own government ([legislature.maine.gov](https://legislature.maine.gov), [maine.gov/sos](https://maine.gov/sos), [courts.maine.gov](https://courts.maine.gov)) is the authoritative source. When something is time-sensitive, like exactly which elections use ranked-choice voting, we say so.
 
 **Check yourself.** What state was Maine part of before 1820, and what national compromise accompanied its statehood?
 
 ## Sources
-- Maine Legislature. (n.d.). *Constitution of the State of Maine (1820); Maine statehood*. legislature.maine.gov. https://legislature.maine.gov/
-- Maine Secretary of State. (n.d.). *Maine government and history*. maine.gov/sos. https://www.maine.gov/sos/`,
+- Maine Legislature. (n.d.). *Constitution of the State of Maine (1820); Maine statehood*. [legislature.maine.gov](https://legislature.maine.gov). https://legislature.maine.gov/
+- Maine Secretary of State. (n.d.). *Maine government and history*. [maine.gov/sos](https://maine.gov/sos). https://www.maine.gov/sos/`,
     },
 
-    // ── Section 2: The executive — one elected official ──────────────────
+    // ── Section 2: The executive, one elected official ──────────────────
     {
       slug: "me-executive",
       title: "2 · Maine's executive: the Governor is the only statewide-elected official",
       section: "The Three Branches",
+      recallContent: [
+        {
+          prompt: "What state was Maine part of before it became a state in 1820?",
+          answer: "Massachusetts (the 'District of Maine'). Maine was admitted as the 23rd state in 1820 under the Missouri Compromise.",
+        },
+        {
+          prompt: "Under which constitution does Maine govern, and what does its date mark?",
+          answer: "The Constitution of 1820, written when Maine separated from Massachusetts and became a state.",
+        },
+      ],
       body: `Here is a Maine surprise: **the Governor is the ONLY executive official Mainers elect statewide** (Maine Legislature, n.d.).
 
-**No Lieutenant Governor.** Maine has **no Lieutenant Governor.** If the governorship becomes vacant, the **President of the Senate** is next in line — so, as in Tennessee, a legislative leader stands in the succession.
+**No Lieutenant Governor.** Maine has **no Lieutenant Governor.** If the governorship becomes vacant, the **President of the Senate** is next in line, so, as in Tennessee, a legislative leader stands in the succession.
 
 **Officers chosen by the Legislature.** Three key statewide officers are **elected by the Legislature**, not by the voters (Maine Legislature, n.d.):
-- **Attorney General** — Maine is one of only a **handful of states where the Legislature elects the Attorney General.**
-- **Secretary of State** — who oversees elections.
+- **Attorney General:** Maine is one of only a **handful of states where the Legislature elects the Attorney General.**
+- **Secretary of State**, who oversees elections.
 - **State Treasurer.**
 - (The **State Auditor** is likewise chosen by the Legislature.)
 
 So Maine concentrates statewide **elected** authority in the single office of Governor, while routing the other constitutional offices through the **Legislature's** choice. The Governor serves a **4-year term**, limited to **two consecutive terms.**
 
-The **Judicial** branch (appointed, covered later) and the **Legislative** branch round out the three. This "Governor is the only one voters pick" design is a genuine Maine distinctive — keep it in mind alongside Tennessee, which shares the pattern.
+The **Judicial** branch (appointed, covered later) and the **Legislative** branch round out the three. This "Governor is the only one voters pick" design is a genuine Maine distinctive, keep it in mind alongside Tennessee, which shares the pattern.
 
 **Check yourself.** Which statewide executive officials do Maine voters elect, and who chooses the Attorney General, Secretary of State, and Treasurer?
 
 ## Sources
-- Maine Legislature. (n.d.). *Constitutional officers; election of the Attorney General, Secretary of State, and Treasurer by the Legislature*. legislature.maine.gov. https://legislature.maine.gov/
-- Maine Secretary of State. (n.d.). *About the office; statewide officers*. maine.gov/sos. https://www.maine.gov/sos/`,
+- Maine Legislature. (n.d.). *Constitutional officers; election of the Attorney General, Secretary of State, and Treasurer by the Legislature*. [legislature.maine.gov](https://legislature.maine.gov). https://legislature.maine.gov/
+- Maine Secretary of State. (n.d.). *About the office; statewide officers*. [maine.gov/sos](https://maine.gov/sos). https://www.maine.gov/sos/`,
     },
 
     // ── Section 3: Ranked-choice voting ──────────────────────────────────
@@ -74,6 +84,16 @@ The **Judicial** branch (appointed, covered later) and the **Legislative** branc
       slug: "me-ranked-choice",
       title: "3 · Ranked-choice voting: Maine went first",
       section: "Elections",
+      recallContent: [
+        {
+          prompt: "In Maine, which is the only executive official voters elect statewide?",
+          answer: "The Governor. Maine has no Lieutenant Governor, and the President of the Senate is next in line if the governorship becomes vacant.",
+        },
+        {
+          prompt: "Who chooses Maine's Attorney General, Secretary of State, and Treasurer?",
+          answer: "The Legislature elects them, rather than the voters. The Governor serves a 4-year term, limited to two consecutive terms.",
+        },
+      ],
       body: `Maine made national history in elections: it was the **FIRST state to adopt ranked-choice voting (RCV)** statewide, approved by citizen **initiative in 2016** (Maine Secretary of State, n.d.).
 
 **How ranked-choice voting works.** Instead of picking just one candidate, voters **rank the candidates in order of preference** (1st, 2nd, 3rd…). Then (Maine Secretary of State, n.d.):
@@ -83,42 +103,52 @@ The **Judicial** branch (appointed, covered later) and the **Legislative** branc
 
 The idea is to ensure winners have **broad support** and to let voters back a favorite without "spoiling" the race.
 
-**⚠️ An important Maine nuance — which elections use RCV.** Maine's own constitution requires that **some** state general elections (Governor and the state Legislature) be decided by a simple **plurality** (whoever gets the most votes). Because of that, Maine uses ranked-choice voting for (Maine Secretary of State, n.d.):
+**⚠️ An important Maine nuance: which elections use RCV.** Maine's own constitution requires that **some** state general elections (Governor and the state Legislature) be decided by a simple **plurality** (whoever gets the most votes). Because of that, Maine uses ranked-choice voting for (Maine Secretary of State, n.d.):
 - **All primary elections** (state and federal), and
-- **Federal general elections** (U.S. House, U.S. Senate, and — for president — its electors),
+- **Federal general elections** (U.S. House, U.S. Senate, and, for president, its electors),
 - **but NOT the general election for Governor or state legislature**, which remain plurality unless the constitution is amended.
 
-This split is exactly the kind of time-sensitive, easy-to-get-wrong detail to **confirm at maine.gov/sos** rather than assume.
+This split is exactly the kind of time-sensitive, easy-to-get-wrong detail to **confirm at [maine.gov/sos](https://maine.gov/sos)** rather than assume.
 
-**Check yourself.** In ranked-choice voting, what happens if no candidate has a majority of first choices — and which Maine general elections do NOT use RCV?
+**Check yourself.** In ranked-choice voting, what happens if no candidate has a majority of first choices, and which Maine general elections do NOT use RCV?
 
 ## Sources
-- Maine Secretary of State. (n.d.). *Ranked-choice voting in Maine*. maine.gov/sos. https://www.maine.gov/sos/
-- Maine Legislature. (n.d.). *Constitutional plurality requirement for state general elections*. legislature.maine.gov. https://legislature.maine.gov/`,
+- Maine Secretary of State. (n.d.). *Ranked-choice voting in Maine*. [maine.gov/sos](https://maine.gov/sos). https://www.maine.gov/sos/
+- Maine Legislature. (n.d.). *Constitutional plurality requirement for state general elections*. [legislature.maine.gov](https://legislature.maine.gov). https://legislature.maine.gov/`,
     },
 
     // ── Section 4: Direct democracy + how a bill becomes law ─────────────
     {
       slug: "me-bill-and-initiative",
-      title: "4 · How a bill becomes law — plus the initiative and 'people's veto'",
+      title: "4 · How a bill becomes law, plus the initiative and 'people's veto'",
       section: "Making Law",
-      body: `Maine makes law **two ways** — through the Legislature, or directly by the voters.
+      recallContent: [
+        {
+          prompt: "What made Maine first in the nation on elections, and in what year?",
+          answer: "Maine was the first state to adopt ranked-choice voting statewide, approved by citizen initiative in 2016.",
+        },
+        {
+          prompt: "In ranked-choice voting, what happens if no candidate wins a majority of first choices?",
+          answer: "The last-place candidate is eliminated and their ballots transfer to each voter's next choice, repeating round by round until someone has a majority.",
+        },
+      ],
+      body: `Maine makes law **two ways**, through the Legislature, or directly by the voters.
 
-**Path 1 — the Legislature.** Maine's **Legislature** is a part-time "citizen legislature" (Maine Legislature, n.d.):
-- **House of Representatives — 151 members**, and **Senate — 35 members**, serving **2-year terms** with a **term limit of four consecutive terms (8 years)** per chamber.
+**Path 1: the Legislature.** Maine's **Legislature** is a part-time "citizen legislature" (Maine Legislature, n.d.):
+- **House of Representatives: 151 members**, and **Senate: 35 members**, serving **2-year terms** with a **term limit of four consecutive terms (8 years)** per chamber.
 - A bill is introduced, reviewed in **joint standing committees** (shared by both chambers), passed by both chambers, and sent to the **Governor**, who may sign, veto (a **two-thirds** override), or let it become law.
 
-**Path 2 — the voters** (Maine Secretary of State, n.d.):
-- **Direct initiative.** Maine citizens can gather signatures to propose a **law**, which — after the Legislature has a chance to act — goes to the **voters** on the ballot. (Maine's initiative is often described as "indirect" because the Legislature gets a look first, and may enact it or offer a competing measure.)
-- **People's veto (referendum).** Maine citizens can gather signatures to **suspend a law the Legislature just passed and send it to the voters** to accept or reject — a direct citizen check on the Legislature, named the "people's veto."
+**Path 2: the voters** (Maine Secretary of State, n.d.):
+- **Direct initiative.** Maine citizens can gather signatures to propose a **law**, which, after the Legislature has a chance to act, goes to the **voters** on the ballot. (Maine's initiative is often described as "indirect" because the Legislature gets a look first, and may enact it or offer a competing measure.)
+- **People's veto (referendum).** Maine citizens can gather signatures to **suspend a law the Legislature just passed and send it to the voters** to accept or reject, a direct citizen check on the Legislature, named the "people's veto."
 
-Maine has used both tools often — including to adopt ranked-choice voting itself. The takeaway: in Maine, **the Legislature is the usual road, but citizens can both start laws and veto them.**
+Maine has used both tools often, including to adopt ranked-choice voting itself. The takeaway: in Maine, **the Legislature is the usual road, but citizens can both start laws and veto them.**
 
 **Check yourself.** What is Maine's "people's veto," and how is it different from the citizen initiative?
 
 ## Sources
-- Maine Legislature. (n.d.). *How a bill becomes law; the Legislature*. legislature.maine.gov. https://legislature.maine.gov/
-- Maine Secretary of State. (n.d.). *Citizen initiative and people's veto*. maine.gov/sos. https://www.maine.gov/sos/`,
+- Maine Legislature. (n.d.). *How a bill becomes law; the Legislature*. [legislature.maine.gov](https://legislature.maine.gov). https://legislature.maine.gov/
+- Maine Secretary of State. (n.d.). *Citizen initiative and people's veto*. [maine.gov/sos](https://maine.gov/sos). https://www.maine.gov/sos/`,
     },
 
     // ── Section 5: Courts, local government, split electoral votes ────────
@@ -126,20 +156,30 @@ Maine has used both tools often — including to adopt ranked-choice voting itse
       slug: "me-courts-local",
       title: "5 · Appointed judges, town meetings, and split electoral votes",
       section: "Local Government & Courts",
-      body: `**How Maine picks its judges — appointment, not election.** Maine does **not** elect its judges. The **Governor nominates** judges, the **Legislature confirms** them, and they serve fixed **7-year terms** (renewable by reappointment) (Maine Judicial Branch, n.d.). Maine's highest court is the **Supreme Judicial Court**, which when hearing appeals is called the **"Law Court."** Keeping judges appointed (and out of campaigns) is the New England pattern Maine shares with Massachusetts.
+      recallContent: [
+        {
+          prompt: "What are the two ways Maine makes law?",
+          answer: "Through the Legislature (a bill passed by both chambers and sent to the Governor), or directly by the voters through the citizen initiative and the people's veto.",
+        },
+        {
+          prompt: "What is Maine's people's veto?",
+          answer: "A citizen petition to suspend a law the Legislature just passed and send it to the voters to accept or reject.",
+        },
+      ],
+      body: `**How Maine picks its judges: appointment, not election.** Maine does **not** elect its judges. The **Governor nominates** judges, the **Legislature confirms** them, and they serve fixed **7-year terms** (renewable by reappointment) (Maine Judicial Branch, n.d.). Maine's highest court is the **Supreme Judicial Court**, which when hearing appeals is called the **"Law Court."** Keeping judges appointed (and out of campaigns) is the New England pattern Maine shares with Massachusetts.
 
-**Local government — towns, town meetings, and 16 counties** (Maine Legislature, n.d.):
-- Maine is a **town-based** state. Many communities still govern by **open town meeting**, where **any registered voter can attend, speak, and vote** on the town budget and ordinances — direct democracy at the local level.
+**Local government: towns, town meetings, and 16 counties** (Maine Legislature, n.d.):
+- Maine is a **town-based** state. Many communities still govern by **open town meeting**, where **any registered voter can attend, speak, and vote** on the town budget and ordinances, direct democracy at the local level.
 - Maine has **16 counties**, which handle courts, jails, sheriffs, and registries, but the **town or city** is the center of daily local government.
-- Much of Maine's north woods lies in **"unorganized territory"** with no local municipal government — there, **the state (and county) provides services** directly, a distinctive feature of a large, rural state.
+- Much of Maine's north woods lies in **"unorganized territory"** with no local municipal government, there, **the state (and county) provides services** directly, a distinctive feature of a large, rural state.
 
-**Splitting presidential electoral votes.** Like **Nebraska**, Maine **splits its presidential electoral votes by congressional district**: two electors go to the statewide winner and **one to the winner of each of Maine's two congressional districts** — so Maine's electors can divide between candidates (Maine Secretary of State, n.d.).
+**Splitting presidential electoral votes.** Like **Nebraska**, Maine **splits its presidential electoral votes by congressional district**: two electors go to the statewide winner and **one to the winner of each of Maine's two congressional districts**, so Maine's electors can divide between candidates (Maine Secretary of State, n.d.).
 
 **Check yourself.** How are Maine's judges chosen, and how does Maine award its presidential electoral votes?
 
 ## Sources
-- Maine Judicial Branch. (n.d.). *The Maine courts; judicial appointment and the Law Court*. courts.maine.gov. https://www.courts.maine.gov/
-- Maine Secretary of State. (n.d.). *Counties, unorganized territory, and presidential electors*. maine.gov/sos. https://www.maine.gov/sos/`,
+- Maine Judicial Branch. (n.d.). *The Maine courts; judicial appointment and the Law Court*. [courts.maine.gov](https://courts.maine.gov). https://www.courts.maine.gov/
+- Maine Secretary of State. (n.d.). *Counties, unorganized territory, and presidential electors*. [maine.gov/sos](https://maine.gov/sos). https://www.maine.gov/sos/`,
     },
 
     // ── Section 6: Getting involved ──────────────────────────────────────
@@ -147,21 +187,31 @@ Maine has used both tools often — including to adopt ranked-choice voting itse
       slug: "me-get-involved",
       title: "6 · How to take part where you live",
       section: "Get Involved",
+      recallContent: [
+        {
+          prompt: "How are Maine's judges chosen?",
+          answer: "They are appointed, not elected: the Governor nominates and the Legislature confirms them for renewable 7-year terms. The highest court is the Supreme Judicial Court (the 'Law Court' on appeals).",
+        },
+        {
+          prompt: "How does Maine award its presidential electoral votes?",
+          answer: "By congressional district (like Nebraska): two electors go to the statewide winner and one to the winner of each of Maine's two districts, so its electors can divide between candidates.",
+        },
+      ],
       body: `Maine gives ordinary people unusually direct levers. Concrete ways to take part (Maine Secretary of State, n.d.):
 
-- **Register and vote — and rank.** Maine offers **same-day (Election-Day) registration** and, in the elections that use it, lets you **rank candidates** in order of preference. ⚠️ Because which elections use ranked-choice voting depends on the constitutional nuance from Lesson 3, and because deadlines change, confirm the **current** rules at **maine.gov/sos**.
-- **Go to town meeting.** If your town holds open town meeting, **show up and vote** directly on the budget and local ordinances — few states offer this.
+- **Register and vote, and rank.** Maine offers **same-day (Election-Day) registration** and, in the elections that use it, lets you **rank candidates** in order of preference. ⚠️ Because which elections use ranked-choice voting depends on the constitutional nuance from Lesson 3, and because deadlines change, confirm the **current** rules at **[maine.gov/sos](https://maine.gov/sos)**.
+- **Go to town meeting.** If your town holds open town meeting, **show up and vote** directly on the budget and local ordinances, few states offer this.
 - **Use direct democracy.** Sign or circulate a **citizen initiative** to propose a law, or a **people's veto** petition to challenge one the Legislature passed.
-- **Contact your legislators** — you have one Representative and one Senator in Augusta; Maine's citizen legislature is famously accessible.
-- **Run** — select board, school board, town/city council, and county offices are reachable local starting points.
+- **Contact your legislators**, you have one Representative and one Senator in Augusta; Maine's citizen legislature is famously accessible.
+- **Run:** select board, school board, town/city council, and county offices are reachable local starting points.
 
-**The habit to build:** pick **one** measure — a town-meeting article, a statewide question, or a bill in Augusta — and follow it start to finish. Maine's direct-democracy tools mean your follow-through can actually change an outcome.
+**The habit to build:** pick **one** measure (a town-meeting article, a statewide question, or a bill in Augusta) and follow it start to finish. Maine's direct-democracy tools mean your follow-through can actually change an outcome.
 
 **Check yourself.** Name two direct-democracy actions a Maine citizen can take, and one thing to verify before you vote.
 
 ## Sources
-- Maine Secretary of State. (n.d.). *Registering and voting in Maine; same-day registration; ranked-choice voting*. maine.gov/sos. https://www.maine.gov/sos/
-- Maine Legislature. (n.d.). *Find your legislator; initiative and people's veto*. legislature.maine.gov. https://legislature.maine.gov/`,
+- Maine Secretary of State. (n.d.). *Registering and voting in Maine; same-day registration; ranked-choice voting*. [maine.gov/sos](https://maine.gov/sos). https://www.maine.gov/sos/
+- Maine Legislature. (n.d.). *Find your legislator; initiative and people's veto*. [legislature.maine.gov](https://legislature.maine.gov). https://legislature.maine.gov/`,
     },
 
     // ── Section 7: Practice (fill in the blanks) ─────────────────────────
@@ -216,7 +266,7 @@ Maine has used both tools often — including to adopt ranked-choice voting itse
               "TRUE or FALSE: Maine elects its judges in partisan elections.",
             answer: "false",
             explanation:
-              "False. Maine's Governor nominates judges and the Legislature confirms them for 7-year terms — judges are appointed, not elected.",
+              "False. Maine's Governor nominates judges and the Legislature confirms them for 7-year terms, judges are appointed, not elected.",
           },
         ],
       },
@@ -338,7 +388,7 @@ Maine has used both tools often — including to adopt ranked-choice voting itse
             prompt: "How does Maine award its presidential electoral votes?",
             options: [
               "Winner-take-all",
-              "By congressional district (with Nebraska) — two statewide, one per district",
+              "By congressional district (with Nebraska), two statewide, one per district",
               "By the Legislature",
               "It has none",
             ],
@@ -351,13 +401,13 @@ Maine has used both tools often — including to adopt ranked-choice voting itse
             prompt: "Why does this course tell you to VERIFY which Maine elections use ranked-choice voting?",
             options: [
               "Because Maine has no elections office",
-              "Because a constitutional nuance limits RCV to primaries and federal general elections (not the governor/legislature general) and rules change — confirm at maine.gov/sos",
+              "Because a constitutional nuance limits RCV to primaries and federal general elections (not the governor/legislature general) and rules change, confirm at [maine.gov/sos](https://maine.gov/sos)",
               "Because only Congress sets them",
               "Because voting is secret",
             ],
             correctIndex: 1,
             explanation:
-              "Maine's plurality requirement for state general elections makes the RCV scope easy to get wrong, so maine.gov/sos is the authoritative source.",
+              "Maine's plurality requirement for state general elections makes the RCV scope easy to get wrong, so [maine.gov/sos](https://maine.gov/sos) is the authoritative source.",
             sourceLessonSlug: "me-ranked-choice",
           },
         ],

@@ -313,8 +313,9 @@ export const quizAttempts = pgTable(
     passed: boolean("passed").notNull(),
     correct: integer("correct").notNull(),
     total: integer("total").notNull(),
-    /** Served questions this attempt: original question index, chosen option, and whether right. */
-    responses: jsonb("responses").$type<{ questionIndex: number; optionIndex: number; correct: boolean }[]>(),
+    /** Served questions this attempt: the stable questionKey (prompt-derived, survives reorders),
+     *  the original question index (fallback for old rows), the chosen option, and whether right. */
+    responses: jsonb("responses").$type<{ questionKey?: string; questionIndex: number; optionIndex: number; correct: boolean }[]>(),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [
