@@ -11,6 +11,10 @@ import { createHmac, randomUUID } from "node:crypto";
 // The receiver URL is what CentOS gave us; override via env if it changes (authoritative-
 // values rule: read it from CentOS, don't hardcode a guess as permanent truth).
 const HANDOFF_URL = process.env.CENTOS_HANDOFF_URL ?? "https://centenarianos.com/api/auth/witus/handoff";
+// Land the learner on the CentOS metrics MODULE, not the dashboard root. CentOS's handoff route
+// allow-lists `?next=` to paths under /dashboard/metrics, so we pin it explicitly here rather than
+// relying on CentOS's default (which reportedly dropped users on the dashboard).
+const METRICS_TARGET = process.env.CENTOS_METRICS_PATH ?? "/dashboard/metrics";
 
 function b64url(input: string): string {
   return Buffer.from(input).toString("base64url");
@@ -43,7 +47,9 @@ export function mintHandoffToken(email: string, sub?: string): string {
   return `${signingInput}.${sig}`;
 }
 
-/** The full CentOS handoff URL carrying a fresh token. Mint per click, server-side only. */
+/** The full CentOS handoff URL carrying a fresh token + the metrics-module destination.
+ *  Mint per click, server-side only. */
 export function metricsHandoffLink(email: string, sub?: string): string {
-  return `${HANDOFF_URL}?token=${encodeURIComponent(mintHandoffToken(email, sub))}`;
+  const token = encodeURIComponent(mintHandoffToken(email, sub));
+  return `${HANDOFF_URL}?token=${token}&next=${encodeURIComponent(METRICS_TARGET)}`;
 }
