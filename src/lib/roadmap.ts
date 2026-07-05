@@ -128,8 +128,15 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   and **self-attest + peer-review** assessment against the Trusted Documentation Rubric. This branch ships
   the **schema** (6 tables, **migration 0025**) + templates-in-code + **access-scoped CRUD API**
   (\`/api/field-log/*\`). Tenant-scoped; media is **never hosted** (links only); consent stored at the
-  minimum. Logistics (budgets/itineraries) hand off to **RideWitUS**, not built here. Next: the
-  \`/field-log\` UI. Spec: \`plans/future/14-field-kit.md\`.
+  minimum. Logistics (budgets/itineraries) hand off to **RideWitUS**, not built here. The
+  **\`/field-log\` UI** (\`feat/field-log-ui\`) ships the project list + workspace tabs (checklist, legs with
+  a **chain-mode** toggle, capture log + **consent ledger**, journal), **offline-queued mobile capture**,
+  **JSON + print/PDF export**, and the consent/legal disclaimers. Next: peer-review + credential hooks.
+  Spec: \`plans/future/14-field-kit.md\`.
+- 🔧 **Robust error UX** (\`feat/field-log-ui\`) — route error boundaries now **route the user back into
+  the app** (Home / My Field Log) AND **auto-report to an admin** (reusing the \`/api/report\` →
+  problem_reports + WitUS Inbox pipeline) with a reference id. The Field Log client surfaces clear
+  400/500 messages and reports 5xx; offline is handled separately (queued, not flagged as a bug).
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
