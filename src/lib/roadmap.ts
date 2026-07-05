@@ -131,8 +131,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   minimum. Logistics (budgets/itineraries) hand off to **RideWitUS**, not built here. The
   **\`/field-log\` UI** (\`feat/field-log-ui\`) ships the project list + workspace tabs (checklist, legs with
   a **chain-mode** toggle, capture log + **consent ledger**, journal), **offline-queued mobile capture**,
-  **JSON + print/PDF export**, and the consent/legal disclaimers. Next: peer-review + credential hooks.
-  Spec: \`plans/future/14-field-kit.md\`.
+  **JSON + print/PDF export**, and the consent/legal disclaimers. **Peer/teacher review**
+  (\`feat/field-log-review\`) is built: **self-attest → \`in_review\`** opens a project to a **review
+  queue**; peers/teachers score it against the **Trusted Documentation Rubric** (8 criteria + safety
+  gate; trust pillars must be Met) → **endorsements** count toward the credential (≥2), shown on the
+  project; plus in-app **reminders** (consent/back-up/overdue-leg). Next: course deep-link + credential
+  surfacing (\`feat/field-log-course-hooks\`). Spec: \`plans/future/14-field-kit.md\`, rubric: \`…/16\`.
 - 🔧 **Robust error UX** (\`feat/field-log-ui\`) — route error boundaries now **route the user back into
   the app** (Home / My Field Log) AND **auto-report to an admin** (reusing the \`/api/report\` →
   problem_reports + WitUS Inbox pipeline) with a reference id. The Field Log client surfaces clear

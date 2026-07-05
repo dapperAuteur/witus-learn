@@ -21,7 +21,7 @@ export default async function FieldLogProjectPage({ params }: Params) {
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
       <ProjectWorkspace
-        initial={{ project: bundle.project, legs: bundle.legs, captures: bundle.captures, comments: bundle.comments }}
+        initial={{ project: bundle.project, legs: bundle.legs, captures: bundle.captures, comments: bundle.comments, reviews: bundle.reviews }}
         me={{ id: session.user.id, name: session.user.name }}
       />
     </main>
