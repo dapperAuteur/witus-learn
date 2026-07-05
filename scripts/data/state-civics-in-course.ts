@@ -244,7 +244,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
       ],
       body: `This lesson exists because of the course's core honesty rule: **state facts change**, and two Indiana executive offices changed recently enough that older sources, and even the constitution's own text, can mislead you. Both are flagged here so you check the current name rather than trusting a stale one.
 
-**1) Superintendent of Public Instruction → appointed Secretary of Education (effective 2021).** For most of Indiana's history, the state's top K-12 education official, the **Superintendent of Public Instruction**, was **elected** statewide. Indiana changed this: the position became an **appointed Secretary of Education**, chosen by the Governor, **effective in 2021** (Ballotpedia, n.d.-a).
+**1) Superintendent of Public Instruction → appointed Secretary of Education (effective 2021).** For most of Indiana's history, the state's top K-12 education official, the **Superintendent of Public Instruction**, was **elected** statewide. Indiana changed this: the legislature passed **[House Enrolled Act 1005 (2019)](https://iga.in.gov/legislative/2019/bills/house/1005/details)**, making the position an **appointed Secretary of Education** chosen by the Governor, **effective in 2021** (Indiana General Assembly, 2019; Ballotpedia, n.d.-a).
 
 ⚠️ **The subtle part to flag:** the *constitution* still names the office of **"Superintendent of Public Instruction."** So the working, appointed job is the **Secretary of Education**, while the older constitutional title lingers in the document. If you read the constitution and then read a news story, you may see **two different names for what is now one appointed office.** Don't assume the elected superintendent still exists; confirm the current structure at [in.gov](https://in.gov).
 
@@ -255,6 +255,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
 **Check yourself.** What changed about Indiana's top K-12 education office in 2021, why can the constitution's text still confuse you about it, and what was the State Auditor renamed to (and when)?
 
 ## Sources
+- Indiana General Assembly. (2019). *House Enrolled Act 1005 (2019)*. IGA.in.gov. https://iga.in.gov/legislative/2019/bills/house/1005/details
 - Ballotpedia. (n.d.-a). *Indiana Secretary of Education*. https://ballotpedia.org/Indiana_Secretary_of_Education
 - WFYI Public Media. (2023, May 8). *Indiana state auditor changing title to state comptroller*. https://www.wfyi.org/public-affairs/2023-05-08/indiana-state-auditor-changing-title-to-state-comptroller
 - State of Indiana. (n.d.). *State of Indiana - agencies and officials*. IN.gov. https://www.in.gov/`,
@@ -275,17 +276,13 @@ The practical payoff is the same as everywhere: **who provides your service depe
           answer: "State Comptroller, effective July 1, 2023; it is the same elected office, only the name changed.",
         },
       ],
-      body: `Knowing how Indiana works only pays off when you **show up**. Because Indiana concentrates power in its legislature and its local boards, that's exactly where an engaged Hoosier has leverage.
+      body: `Knowing how Indiana works only pays off when you **show up**. Because Indiana concentrates power in its legislature and its local boards, that's exactly where an engaged Hoosier has leverage. Here are concrete ways to get involved:
 
-**Register and vote: mind Indiana's deadlines.** Register (and check your registration) **at least ~29 days before** any election you want to vote in, since Indiana has no same-day registration. Bring your **photo ID** to the polls. If you need to vote by mail, confirm you qualify under an **excuse** first. Start at the Secretary of State's elections site (Indiana Election Division, n.d.).
-
-**Contact your state legislators: they're the center of gravity.** You have **one state representative** and **one state senator** in the General Assembly, on top of your members of Congress. Because Indiana's legislature can override the governor and there's **no citizen initiative**, lobbying your legislators is *the* way to change state law here. Look them up and track bills at **[iga.in.gov](https://iga.in.gov)**, where you can also find committee schedules and read bills (Indiana General Assembly, n.d.).
-
-**Testify or submit comment on a bill.** Indiana's committee hearings are where most bills live or die. Watch a committee's calendar on [iga.in.gov](https://iga.in.gov), and submit written comment or testify on a bill you care about; comment carries the most weight *before* the committee vote.
-
-**Show up locally: county, township, city.** Your **County Council** and **Board of Commissioners** meetings, your **Township** meetings, and your **city/town council** meetings are public and set your local taxes and services. These smaller rooms are where one person's comment moves things most, and remember Indiana's extra township layer means there may be one more local board than you'd expect.
-
-**Cast your retention votes thoughtfully.** When appellate justices appear on your ballot for a **yes/no retention vote** (Lesson 3), that's a real decision; read up before you fill it in rather than leaving it blank.
+1. **Register and vote, and don't wait until the last minute.** Register (and check your registration) **at least ~29 days before** any election you want to vote in, since Indiana has no same-day registration. Better still, start **months ahead** so you have time to gather the proper forms and documents (proof of residence, an accepted photo ID) and to fix any problem with your registration before the deadline closes. Bring your **photo ID** to the polls. If you need to vote by mail, confirm you qualify under an **excuse** first. Start at the Secretary of State's elections site (Indiana Election Division, n.d.).
+2. **Contact your state legislators: they're the center of gravity.** You have **one state representative** and **one state senator** in the General Assembly, on top of your members of Congress. Because Indiana's legislature can override the governor and there's **no citizen initiative**, lobbying your legislators is *the* way to change state law here. Look them up and track bills at **[iga.in.gov](https://iga.in.gov)**, where you can also find committee schedules and read bills (Indiana General Assembly, n.d.).
+3. **Testify or submit comment on a bill.** Indiana's committee hearings are where most bills live or die. Watch a committee's calendar on [iga.in.gov](https://iga.in.gov), and submit written comment or testify on a bill you care about; comment carries the most weight *before* the committee vote.
+4. **Show up locally: county, township, city.** Your **County Council** and **Board of Commissioners** meetings, your **Township** meetings, and your **city/town council** meetings are public and set your local taxes and services. These smaller rooms are where one person's comment moves things most, and remember Indiana's extra township layer means there may be one more local board than you'd expect.
+5. **Cast your retention votes thoughtfully.** When appellate justices appear on your ballot for a **yes/no retention vote** (Lesson 3), that's a real decision; read up before you fill it in rather than leaving it blank.
 
 **Check yourself.** Name three specific ways to get involved in Indiana government, and explain why contacting your state legislators is especially important in Indiana given its weak governor and lack of a citizen initiative.
 

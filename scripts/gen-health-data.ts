@@ -990,26 +990,19 @@ function sliceAfter(md: string, start: RegExp): string {
 function main() {
   const ecsRoot = join(CENTOS, "content", "tutorials", "ecs");
 
-  // 1. Read Your Body's Data (FDA & Metrics academy-import)
-  const rybdDir = join(
-    CENTOS,
-    "docs",
-    "CentOS Courses",
-    "FDA and Metrics CentOS version",
-    "academy-import",
-  );
-  emit(
-    "read-your-body-course",
-    "READ_YOUR_BODY_COURSE",
-    buildFromAcademyCsv({
-      courseCsv: join(rybdDir, "course-import.csv"),
-      quizzesCsv: join(rybdDir, "quizzes-import.csv"),
-      title: "Read Your Body's Data: A 5-Week Guide to Living",
-      description:
-        "A five-week, audio-first course that teaches you to read your own fitness-tracker data — resting heart rate, steps, sleep, and intensity minutes — and turn it into small, compounding habits backed by longevity research. You run an N-of-1 experiment and finish with a personal health blueprint.",
-    }),
-    "Source: docs/CentOS Courses/FDA and Metrics CentOS version/academy-import",
-  );
+  // 1. Read Your Body's Data — INTENTIONALLY NOT REGENERATED.
+  // This course is now hand-maintained directly in scripts/data/read-your-body-course.ts (a
+  // Learn.WitUS course, tracked in git, edited in place + re-seeded with `pnpm seed:health`).
+  // Re-enabling this emit() would OVERWRITE those hand edits from the old CentOS import CSV — do
+  // NOT, unless you deliberately want to re-baseline from CentOS. Kept as a record of origin.
+  //
+  // const rybdDir = join(CENTOS, "docs", "CentOS Courses", "FDA and Metrics CentOS version", "academy-import");
+  // emit("read-your-body-course", "READ_YOUR_BODY_COURSE", buildFromAcademyCsv({
+  //   courseCsv: join(rybdDir, "course-import.csv"),
+  //   quizzesCsv: join(rybdDir, "quizzes-import.csv"),
+  //   title: "Read Your Body's Data: A 5-Week Guide to Living",
+  //   description: "…",
+  // }), "Source: docs/CentOS Courses/FDA and Metrics CentOS version/academy-import");
 
   // 2. NASM CES (corrective exercise)
   const cesDir = join(CENTOS, "docs", "ces-curriculum", "academy-import");
