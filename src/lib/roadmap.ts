@@ -117,6 +117,11 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Growing Belts latitude bands** — starts with 3 commodities, toggle the rest on/off (show-all /
   reset-to-3), and overlapping bands **blend** (mix-blend multiply) with a key explaining the mixed
   colors. (\`GrowingBeltsMap\`.)
+- ⚪ **Gated specialization credentials** — a *real* credential (not just a completion badge): earned by
+  finishing **shared core + one medium course + one subject course**, then surfaced on the learner
+  profile in-app. Builds on the existing certificates system + CYOA branching; generalizes to any
+  course family. First consumer is the **Documentarian program** (see Content). Plan:
+  \`plans/future/12-documentarian-program.md\`.
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
@@ -187,6 +192,13 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   AI tutor, age-gate, coming-soon, **accent/branding**) + **marketing** (campaigns/promos). ~2-3 branches.
 - ⚪ **Schools: Trade School + ElementaryMBA stay separate, bridged** — ElementaryMBA's HS end graduates
   into Trade School via a learning path (not merged).
+- ⚪ **Documentarian program** (BVC) — a course *family* teaching **trusted, cited documentation**, built
+  from BAM's **Ghana trip** as the live case study. Shape: a shared **Foundations & Trust core** (ethics,
+  consent, sourcing, representation) → a **standalone Archives & Records** course → a **medium ladder**
+  (Words & Photo → Sound/Podcast → Motion/Film — lightest→richest tooling) → **medium × subject
+  specializations** wired to the **CYOA** tool. Capstone: **one Ghana subject documented four ways**.
+  Beginner-first; earns a gated specialization credential (see Platform backlog). Plan:
+  \`plans/future/12-documentarian-program.md\`.
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
