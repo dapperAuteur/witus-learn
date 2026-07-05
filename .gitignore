@@ -54,6 +54,6 @@ yarn-error.log*
 /scripts/data/ecs-fitness-course.ts
 /scripts/data/ecs-nutrition-course.ts
 /scripts/data/ecs-neuroscience-course.ts
-/scripts/data/read-your-body-course.ts
+# read-your-body-course.ts is NOT ignored — now hand-maintained + tracked (see its banner).
 /scripts/data/speedway-course.ts
 /.claude/
