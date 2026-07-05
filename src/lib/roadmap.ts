@@ -117,6 +117,34 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Growing Belts latitude bands** — starts with 3 commodities, toggle the rest on/off (show-all /
   reset-to-3), and overlapping bands **blend** (mix-blend multiply) with a key explaining the mixed
   colors. (\`GrowingBeltsMap\`.)
+- ⚪ **Gated specialization credentials** — a *real* credential (not just a completion badge): earned by
+  finishing **shared core + one medium course + one subject course**, then surfaced on the learner
+  profile in-app. Builds on the existing certificates system + CYOA branching; generalizes to any
+  course family. First consumer is the **Documentarian program** (see Content). Plan:
+  \`plans/future/12-documentarian-program.md\`.
+- 🔧 **My Field Log** (\`feat/field-log-schema\`) — a per-user documentation-project workspace for the
+  Documentarian program: projects with story **legs** (sites/nodes of a chain, e.g. cocoa farm → factory
+  → corporate office), a **link-only capture log** + **consent ledger**, **crews** (co-owned projects),
+  and **self-attest + peer-review** assessment against the Trusted Documentation Rubric. This branch ships
+  the **schema** (6 tables, **migration 0025**) + templates-in-code + **access-scoped CRUD API**
+  (\`/api/field-log/*\`). Tenant-scoped; media is **never hosted** (links only); consent stored at the
+  minimum. Logistics (budgets/itineraries) hand off to **RideWitUS**, not built here. The
+  **\`/field-log\` UI** (\`feat/field-log-ui\`) ships the project list + workspace tabs (checklist, legs with
+  a **chain-mode** toggle, capture log + **consent ledger**, journal), **offline-queued mobile capture**,
+  **JSON + print/PDF export**, and the consent/legal disclaimers. **Peer/teacher review**
+  (\`feat/field-log-review\`) is built: **self-attest → \`in_review\`** opens a project to a **review
+  queue**; peers/teachers score it against the **Trusted Documentation Rubric** (8 criteria + safety
+  gate; trust pillars must be Met) → **endorsements** count toward the credential (≥2), shown on the
+  project; plus in-app **reminders** (consent/back-up/overdue-leg). **Course hooks**
+  (\`feat/field-log-course-hooks\`) complete the MVP: a **\`:::field-log <template>\` lesson callout** →
+  \`/field-log/start\` deep-link → creates a project, and the **Trusted Documentation credential**
+  (self-attest + 2 endorsements) is **surfaced** on My Field Log (a 🎖 group + per-card badge). The
+  fuller **gated course-family credential** (core+medium+subject) stays backlog, building on this signal.
+  Spec: \`plans/future/14-field-kit.md\`, rubric: \`…/16\`.
+- 🔧 **Robust error UX** (\`feat/field-log-ui\`) — route error boundaries now **route the user back into
+  the app** (Home / My Field Log) AND **auto-report to an admin** (reusing the \`/api/report\` →
+  problem_reports + WitUS Inbox pipeline) with a reference id. The Field Log client surfaces clear
+  400/500 messages and reports 5xx; offline is handled separately (queued, not flagged as a bug).
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
@@ -187,6 +215,13 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   AI tutor, age-gate, coming-soon, **accent/branding**) + **marketing** (campaigns/promos). ~2-3 branches.
 - ⚪ **Schools: Trade School + ElementaryMBA stay separate, bridged** — ElementaryMBA's HS end graduates
   into Trade School via a learning path (not merged).
+- ⚪ **Documentarian program** (BVC) — a course *family* teaching **trusted, cited documentation**, built
+  from BAM's **Ghana trip** as the live case study. Shape: a shared **Foundations & Trust core** (ethics,
+  consent, sourcing, representation) → a **standalone Archives & Records** course → a **medium ladder**
+  (Words & Photo → Sound/Podcast → Motion/Film — lightest→richest tooling) → **medium × subject
+  specializations** wired to the **CYOA** tool. Capstone: **one Ghana subject documented four ways**.
+  Beginner-first; earns a gated specialization credential (see Platform backlog). Plan:
+  \`plans/future/12-documentarian-program.md\`.
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
