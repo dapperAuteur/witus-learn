@@ -244,7 +244,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
       ],
       body: `This lesson exists because of the course's core honesty rule: **state facts change**, and two Indiana executive offices changed recently enough that older sources, and even the constitution's own text, can mislead you. Both are flagged here so you check the current name rather than trusting a stale one.
 
-**1) Superintendent of Public Instruction → appointed Secretary of Education (effective 2021).** For most of Indiana's history, the state's top K-12 education official, the **Superintendent of Public Instruction**, was **elected** statewide. Indiana changed this: the position became an **appointed Secretary of Education**, chosen by the Governor, **effective in 2021** (Ballotpedia, n.d.-a).
+**1) Superintendent of Public Instruction → appointed Secretary of Education (effective 2021).** For most of Indiana's history, the state's top K-12 education official, the **Superintendent of Public Instruction**, was **elected** statewide. Indiana changed this: the legislature passed **[House Enrolled Act 1005 (2019)](https://iga.in.gov/legislative/2019/bills/house/1005/details)**, making the position an **appointed Secretary of Education** chosen by the Governor, **effective in 2021** (Indiana General Assembly, 2019; Ballotpedia, n.d.-a).
 
 ⚠️ **The subtle part to flag:** the *constitution* still names the office of **"Superintendent of Public Instruction."** So the working, appointed job is the **Secretary of Education**, while the older constitutional title lingers in the document. If you read the constitution and then read a news story, you may see **two different names for what is now one appointed office.** Don't assume the elected superintendent still exists; confirm the current structure at [in.gov](https://in.gov).
 
@@ -255,6 +255,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
 **Check yourself.** What changed about Indiana's top K-12 education office in 2021, why can the constitution's text still confuse you about it, and what was the State Auditor renamed to (and when)?
 
 ## Sources
+- Indiana General Assembly. (2019). *House Enrolled Act 1005 (2019)*. IGA.in.gov. https://iga.in.gov/legislative/2019/bills/house/1005/details
 - Ballotpedia. (n.d.-a). *Indiana Secretary of Education*. https://ballotpedia.org/Indiana_Secretary_of_Education
 - WFYI Public Media. (2023, May 8). *Indiana state auditor changing title to state comptroller*. https://www.wfyi.org/public-affairs/2023-05-08/indiana-state-auditor-changing-title-to-state-comptroller
 - State of Indiana. (n.d.). *State of Indiana - agencies and officials*. IN.gov. https://www.in.gov/`,
