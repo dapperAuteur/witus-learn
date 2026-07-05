@@ -1,6 +1,7 @@
 import "server-only";
-import { and, desc, eq, isNull } from "drizzle-orm";
+import { and, desc, eq, inArray, isNull } from "drizzle-orm";
 import { db } from "@/db/client";
+import { CREDENTIAL_ENDORSEMENTS_REQUIRED, endorsementCount } from "@/lib/field-log-rubric";
 import {
   documentationProjects,
   projectCaptures,
@@ -312,4 +313,30 @@ export async function addReview(
     })
     .returning();
   return row ?? null;
+}
+
+// ── Credentials ───────────────────────────────────────────────────────────────
+// A project earns the Trusted Documentation credential when the learner has self-attested AND it
+// has ≥2 distinct endorsements. Derived from what we already store (no separate credential table
+// yet — the gated course-family credential is a later feature that will build on this signal).
+export async function listEarnedCredentials(
+  tenantId: string,
+  userId: string,
+): Promise<DocumentationProject[]> {
+  const projects = await listProjects(tenantId, userId);
+  if (projects.length === 0) return [];
+  const ids = projects.map((p) => p.id);
+  const reviews = await db
+    .select({ projectId: projectReviews.projectId, reviewerUserId: projectReviews.reviewerUserId, verdict: projectReviews.verdict })
+    .from(projectReviews)
+    .where(inArray(projectReviews.projectId, ids));
+  const byProject = new Map<string, { reviewerUserId: string; verdict: string }[]>();
+  for (const r of reviews) {
+    const list = byProject.get(r.projectId) ?? [];
+    list.push({ reviewerUserId: r.reviewerUserId, verdict: r.verdict });
+    byProject.set(r.projectId, list);
+  }
+  return projects.filter(
+    (p) => p.selfAttestedAt && endorsementCount(byProject.get(p.id) ?? []) >= CREDENTIAL_ENDORSEMENTS_REQUIRED,
+  );
 }
