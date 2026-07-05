@@ -1,5 +1,5 @@
 import "server-only";
-import { and, desc, eq } from "drizzle-orm";
+import { and, desc, eq, isNull } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   documentationProjects,
@@ -9,8 +9,10 @@ import {
   projectMembers,
   projectReviews,
   type DocumentationProject,
+  type FieldLogReviewRubric,
   type ProjectCapture,
   type ProjectLeg,
+  type ProjectReview,
 } from "@/db/schema/field-log";
 import { initialChecklist, templateByKey } from "@/lib/field-log-templates";
 
@@ -204,4 +206,110 @@ export async function addMember(
     .values({ projectId, userId: memberUserId, role: "collaborator" })
     .onConflictDoNothing({ target: [projectMembers.projectId, projectMembers.userId] });
   return true;
+}
+
+// ── Peer / teacher review ─────────────────────────────────────────────────────
+// A reviewer is any enrolled user in this tenant who is NOT on the project's crew, while the
+// project is `in_review`. Teachers/owners qualify the same way (the cold-start + quality backstop).
+
+/** The project if it's in this tenant, `in_review`, and the caller is NOT a crew member; else null. */
+async function reviewableProject(
+  tenantId: string,
+  reviewerUserId: string,
+  projectId: string,
+): Promise<DocumentationProject | null> {
+  const [p] = await db
+    .select()
+    .from(documentationProjects)
+    .where(
+      and(
+        eq(documentationProjects.id, projectId),
+        eq(documentationProjects.tenantId, tenantId),
+        eq(documentationProjects.visibility, "in_review"),
+      ),
+    )
+    .limit(1);
+  if (!p) return null;
+  const [member] = await db
+    .select({ id: projectMembers.id })
+    .from(projectMembers)
+    .where(and(eq(projectMembers.projectId, projectId), eq(projectMembers.userId, reviewerUserId)))
+    .limit(1);
+  if (member) return null; // can't review a project you're on the crew of
+  return p;
+}
+
+/** Projects awaiting review in this tenant that the user may review (not their own crew). */
+export async function listReviewQueue(tenantId: string, userId: string): Promise<DocumentationProject[]> {
+  const rows = await db
+    .select({ p: documentationProjects })
+    .from(documentationProjects)
+    .leftJoin(
+      projectMembers,
+      and(eq(projectMembers.projectId, documentationProjects.id), eq(projectMembers.userId, userId)),
+    )
+    .where(
+      and(
+        eq(documentationProjects.tenantId, tenantId),
+        eq(documentationProjects.visibility, "in_review"),
+        isNull(projectMembers.id), // exclude projects the user is a member of
+      ),
+    )
+    .orderBy(desc(documentationProjects.updatedAt));
+  return rows.map((r) => r.p);
+}
+
+/** Read-only bundle for a reviewer (project + legs + captures + comments + this reviewer's prior review). */
+export async function getReviewBundle(tenantId: string, reviewerUserId: string, projectId: string) {
+  const project = await reviewableProject(tenantId, reviewerUserId, projectId);
+  if (!project) return null;
+  const [legs, captures, comments, mine] = await Promise.all([
+    db.select().from(projectLegs).where(eq(projectLegs.projectId, projectId)).orderBy(projectLegs.sortOrder),
+    db.select().from(projectCaptures).where(eq(projectCaptures.projectId, projectId)).orderBy(desc(projectCaptures.createdAt)),
+    db.select().from(projectComments).where(eq(projectComments.projectId, projectId)).orderBy(desc(projectComments.createdAt)),
+    db.select().from(projectReviews).where(and(eq(projectReviews.projectId, projectId), eq(projectReviews.reviewerUserId, reviewerUserId))).limit(1),
+  ]);
+  return { project, legs, captures, comments, myReview: mine[0] ?? null };
+}
+
+type ReviewInput = {
+  verdict: "endorse" | "revise";
+  rubric?: FieldLogReviewRubric | null;
+  body?: string | null;
+  subjectUserId?: string | null;
+};
+
+/** Submit (or replace) this reviewer's review of an in_review project. One review per reviewer. */
+export async function addReview(
+  tenantId: string,
+  reviewerUserId: string,
+  projectId: string,
+  input: ReviewInput,
+): Promise<ProjectReview | null> {
+  if (!(await reviewableProject(tenantId, reviewerUserId, projectId))) return null;
+  const [existing] = await db
+    .select({ id: projectReviews.id })
+    .from(projectReviews)
+    .where(and(eq(projectReviews.projectId, projectId), eq(projectReviews.reviewerUserId, reviewerUserId)))
+    .limit(1);
+  if (existing) {
+    const [updated] = await db
+      .update(projectReviews)
+      .set({ verdict: input.verdict, rubric: input.rubric, body: input.body ?? null, subjectUserId: input.subjectUserId ?? null })
+      .where(eq(projectReviews.id, existing.id))
+      .returning();
+    return updated ?? null;
+  }
+  const [row] = await db
+    .insert(projectReviews)
+    .values({
+      projectId,
+      reviewerUserId,
+      verdict: input.verdict,
+      rubric: input.rubric,
+      body: input.body ?? null,
+      subjectUserId: input.subjectUserId ?? null,
+    })
+    .returning();
+  return row ?? null;
 }

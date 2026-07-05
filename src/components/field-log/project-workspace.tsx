@@ -8,7 +8,9 @@ import type {
   ProjectCapture,
   ProjectComment,
   ProjectLeg,
+  ProjectReview,
 } from "@/db/schema/field-log";
+import { CREDENTIAL_ENDORSEMENTS_REQUIRED, endorsementCount } from "@/lib/field-log-rubric";
 import { patchJson, postJson } from "./client";
 
 // Education, not legal advice — jurisdiction varies (see plans/future/15-field-log-safety-legal.md).
@@ -38,9 +40,11 @@ export function ProjectWorkspace({
     legs: ProjectLeg[];
     captures: ProjectCapture[];
     comments: ProjectComment[];
+    reviews: ProjectReview[];
   };
   me: { id: string; name?: string | null };
 }) {
+  const reviews = initial.reviews;
   const [project, setProject] = useState(initial.project);
   const [checklist, setChecklist] = useState<FieldLogChecklist>(
     (initial.project.checklist as FieldLogChecklist | null) ?? { stages: [] },
@@ -48,7 +52,7 @@ export function ProjectWorkspace({
   const [legs, setLegs] = useState(initial.legs);
   const [captures, setCaptures] = useState(initial.captures);
   const [comments, setComments] = useState(initial.comments);
-  const [tab, setTab] = useState<"checklist" | "legs" | "captures" | "journal">("checklist");
+  const [tab, setTab] = useState<"checklist" | "legs" | "captures" | "journal" | "reviews">("checklist");
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState<PendingCapture[]>([]);
 
@@ -97,6 +101,21 @@ export function ProjectWorkspace({
     }
     return { done, total };
   }, [checklist]);
+
+  // Gentle, data-driven reminders (in-app; email/cron delivery is a follow-up).
+  const reminders = useMemo(() => {
+    const out: string[] = [];
+    const now = new Date();
+    const noLink = captures.filter((c) => !c.storageUrl).length;
+    if (noLink) out.push(`${noLink} capture(s) have no media link yet — back up your files and add the link.`);
+    const naWithSubject = captures.filter((c) => c.consentStatus === "na" && c.subject).length;
+    if (naWithSubject) out.push(`${naWithSubject} capture(s) have a subject but no consent logged — double-check any people are covered.`);
+    const declined = captures.filter((c) => c.consentStatus === "declined").length;
+    if (declined) out.push(`${declined} subject(s) declined — don't publish them.`);
+    const overdue = legs.filter((l) => l.startDate && !l.visited && new Date(l.startDate) < now).length;
+    if (overdue) out.push(`${overdue} planned leg(s) are past their date — revisit or mark visited.`);
+    return out;
+  }, [captures, legs]);
 
   async function saveChecklist(next: FieldLogChecklist) {
     setChecklist(next);
@@ -182,6 +201,7 @@ export function ProjectWorkspace({
     { key: "legs", label: `Legs (${legs.length})` },
     { key: "captures", label: `Captures (${captures.length}${pending.length ? ` +${pending.length}` : ""})` },
     { key: "journal", label: `Journal (${comments.length})` },
+    { key: "reviews", label: `Reviews (${reviews.length})` },
   ] as const;
 
   return (
@@ -226,6 +246,14 @@ export function ProjectWorkspace({
           {pending.length} capture(s) saved offline — they’ll sync when you’re back online.
         </p>
       ) : null}
+      {reminders.length ? (
+        <details className="mt-3 rounded-md border border-neutral-200 p-3 text-sm dark:border-neutral-800">
+          <summary className="cursor-pointer font-medium">Reminders ({reminders.length})</summary>
+          <ul className="mt-2 list-disc space-y-1 pl-5 text-neutral-600 dark:text-neutral-400">
+            {reminders.map((r, i) => <li key={i}>{r}</li>)}
+          </ul>
+        </details>
+      ) : null}
 
       <div className="mt-5 flex flex-wrap gap-2 border-b border-neutral-200 dark:border-neutral-800">
         {tabs.map((t) => (
@@ -252,8 +280,44 @@ export function ProjectWorkspace({
           <CapturesTab captures={captures} pending={pending} legs={legs} onAdd={addCapture} />
         ) : null}
         {tab === "journal" ? <JournalTab comments={comments} onAdd={addComment} /> : null}
+        {tab === "reviews" ? <ReviewsTab reviews={reviews} project={project} /> : null}
       </div>
     </section>
+  );
+}
+
+function ReviewsTab({ reviews, project }: { reviews: ProjectReview[]; project: DocumentationProject }) {
+  const endorsements = endorsementCount(reviews);
+  const selfAttested = Boolean(project.selfAttestedAt);
+  const meets = selfAttested && endorsements >= CREDENTIAL_ENDORSEMENTS_REQUIRED;
+  return (
+    <div className="space-y-4">
+      <div className="rounded-lg border border-neutral-200 p-4 text-sm dark:border-neutral-800">
+        <p>
+          Endorsements: <strong>{endorsements}/{CREDENTIAL_ENDORSEMENTS_REQUIRED}</strong> · self-attested: <strong>{selfAttested ? "yes" : "no"}</strong>
+        </p>
+        <p className={`mt-1 ${meets ? "text-emerald-600 dark:text-emerald-400" : "text-neutral-500"}`}>
+          {meets ? "✓ Meets the credential bar" : "Not yet — needs self-attest + 2 endorsements."}
+        </p>
+        {project.visibility === "private" ? (
+          <p className="mt-1 text-xs text-neutral-500">Use “Self-attest &amp; request review” above to open this to peer reviewers.</p>
+        ) : null}
+      </div>
+      <ul className="space-y-2">
+        {reviews.map((r) => (
+          <li key={r.id} className="rounded-md border border-neutral-200 p-3 text-sm dark:border-neutral-800">
+            <div className="flex items-center justify-between">
+              <span className={`font-medium ${r.verdict === "endorse" ? "text-emerald-600 dark:text-emerald-400" : "text-amber-600 dark:text-amber-400"}`}>
+                {r.verdict === "endorse" ? "Endorsed" : "Needs revision"}
+              </span>
+              <span className="text-xs text-neutral-500">{new Date(r.createdAt).toLocaleDateString()}</span>
+            </div>
+            {r.body ? <p className="mt-1 whitespace-pre-wrap text-neutral-600 dark:text-neutral-400">{r.body}</p> : null}
+          </li>
+        ))}
+        {reviews.length === 0 ? <li className="text-sm text-neutral-500">No reviews yet.</li> : null}
+      </ul>
+    </div>
   );
 }
 

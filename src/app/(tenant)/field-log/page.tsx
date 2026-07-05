@@ -41,7 +41,12 @@ export default async function FieldLogPage() {
     <main className="mx-auto max-w-3xl px-4 py-10">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <h1 className="text-2xl font-bold">My Field Log</h1>
-        <NewProject />
+        <div className="flex items-center gap-3">
+          <Link href="/field-log/review" className="text-sm text-neutral-600 hover:underline dark:text-neutral-400">
+            Review peers →
+          </Link>
+          <NewProject />
+        </div>
       </div>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Run your own documentation projects — plan, gather with consent, verify, and publish. Each project
