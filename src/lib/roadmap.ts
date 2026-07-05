@@ -135,8 +135,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   (\`feat/field-log-review\`) is built: **self-attest → \`in_review\`** opens a project to a **review
   queue**; peers/teachers score it against the **Trusted Documentation Rubric** (8 criteria + safety
   gate; trust pillars must be Met) → **endorsements** count toward the credential (≥2), shown on the
-  project; plus in-app **reminders** (consent/back-up/overdue-leg). Next: course deep-link + credential
-  surfacing (\`feat/field-log-course-hooks\`). Spec: \`plans/future/14-field-kit.md\`, rubric: \`…/16\`.
+  project; plus in-app **reminders** (consent/back-up/overdue-leg). **Course hooks**
+  (\`feat/field-log-course-hooks\`) complete the MVP: a **\`:::field-log <template>\` lesson callout** →
+  \`/field-log/start\` deep-link → creates a project, and the **Trusted Documentation credential**
+  (self-attest + 2 endorsements) is **surfaced** on My Field Log (a 🎖 group + per-card badge). The
+  fuller **gated course-family credential** (core+medium+subject) stays backlog, building on this signal.
+  Spec: \`plans/future/14-field-kit.md\`, rubric: \`…/16\`.
 - 🔧 **Robust error UX** (\`feat/field-log-ui\`) — route error boundaries now **route the user back into
   the app** (Home / My Field Log) AND **auto-report to an admin** (reusing the \`/api/report\` →
   problem_reports + WitUS Inbox pipeline) with a reference id. The Field Log client surfaces clear
