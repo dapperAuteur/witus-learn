@@ -6,8 +6,6 @@ other WitUS apps — in particular it is **not** the CentenarianOS "Academy" mod
 from, and not `shop-witus` (the ecommerce-catalog app whose stack conventions it mirrors). Full
 ecosystem identity + product index: `gemini/witus/CLAUDE.md`.
 
-The site **brandanthonymcdonald.com** (BAM's personal portfolio) lives in `claude/bam-landing-page/`.
-
 > **After reading this file, read [STYLE_GUIDE.md](STYLE_GUIDE.md) and
 > [docs/BUILD_PLAN.md](docs/BUILD_PLAN.md) before making any changes.** The complete product
 > spec is in [docs/spec/dedicated-lms/](docs/spec/dedicated-lms/).
@@ -31,48 +29,14 @@ and improve it; never reduce it to a generic catalog.
   `tenant_filter` is the #1 leak vector — it must always be passed.
 - The **isolation test suite** (Phase 2) gates every later phase. Any cross-tenant leak fails the build.
 
-## Operator-task rule — capture user actions in `./plans/user-tasks/`
+## Migrations & prod deploys (repo-specific)
 
-When work needs BAM to do something outside the editor (account signup, API key, DNS change, vendor
-dashboard, env-var rotation, secret generation, PR review/merge, running a prod migration, etc.),
-create a `./plans/user-tasks/NN-slug.md` file. **No exceptions for "small" steps.** Any Drizzle
-migration must file a `./plans/user-tasks/NN-run-migration-<slug>.md` reminder to run
-`pnpm db:migrate:prod` — without it the next prod deploy 500s on the missing column.
-
-## Branch hygiene — BAM merges, between sessions by default
-
-**Half 1.** End-of-branch contract: branch → commit → push → stop. Claude does not run
-`git checkout main && git merge`. Never `--force` to shared branches. After push, hand back the
-branch name + summary and stop. Branch name = `type/short-slug` (`feat/`, `fix/`, `chore/`, `docs/`).
-
-**Half 2.** BAM merges committed-and-pushed branches via the GitHub UI before the next session,
-unless told otherwise. **Mid-session, after a push, BAM may merge in a separate window and the local
-checkout silently fast-forwards to `main`.** Re-check `git branch --show-current` before EVERY
-commit, not just at branch creation, or you risk landing follow-up commits directly on `main`.
-
-**Half 3.** Keep branches small (one concern per branch). When a session produces multiple branches,
-consolidate them into one `bundle/<slug>-YYYY-MM-DD` branch before handoff: merge in lowest-conflict
-order with `git merge --no-ff` (no squash), resolve conflicts, run a final `tsc + lint + build`,
-push, and file ONE `./plans/user-tasks/NN-merge-bundle-<slug>.md` for BAM. BAM does one merge, not N.
-
-**Half 3b — one bundle for EVERYTHING unmerged (on request or at handoff).** When BAM asks (or before
-ending a multi-branch session), create ONE `bundle/pending-YYYY-MM-DD` branch off the current
-`origin/main` and merge **every branch not yet in `main`** into it — `git branch --no-merged origin/main`
-lists them. Merge with `git merge --no-ff` in lowest-conflict order (branches that stack on another,
-and any carrying migrations, go first), **resolve ALL conflicts** so the bundle is conflict-free,
-then `tsc + lint + build` must pass before pushing. The result is a single branch BAM can merge with
-zero conflicts. In the handoff, spell out **exactly which migration/db commands to run after merge**
-(the ordered list of new migrations + `pnpm db:migrate:prod`, plus any `seed:*` re-runs).
-
-A checked-in `.githooks/pre-commit` guard refuses commits on `main`/`master`. Activate once per
-clone: `git config core.hooksPath .githooks`. Full rule: `gemini/witus/CLAUDE.md` §"Branch-hygiene rule".
-
-## Plans convention
-
-All implementation plans live in `./plans/` as `NN-description.md` (two-digit prefix, kebab-case,
-next number, don't skip). Sub-queues: `./plans/user-tasks/`, `./plans/bugs/`, `./plans/future/`.
-`plans/` is gitignored — local working notes. Durable, committed planning lives in `docs/`
-(e.g. `docs/BUILD_PLAN.md`).
+Any Drizzle migration must file a `./plans/user-tasks/NN-run-migration-<slug>.md` reminder to run
+`pnpm db:migrate:prod` — without it the next prod deploy 500s on the missing column. At bundle
+handoff, spell out the exact ordered list of new migrations + `pnpm db:migrate:prod` (plus any
+`seed:*` re-runs) BAM must run after merging. (General operator-task, branch-hygiene, and plans
+conventions are in the managed block below; durable committed planning lives in `docs/`, e.g.
+`docs/BUILD_PLAN.md`.)
 
 ## App-improvements review rule — check `./plans/app-improvements/` at both ends of a task
 
@@ -88,39 +52,10 @@ there as `*.md` (e.g. `course-experience.md`, `live.md`, `pricing.md`). Treat it
   notes and reference docs (`00-report-and-plan.md`) at the top level.
 A note isn't "done" until its behavior ships and the roadmap (`src/lib/roadmap.ts`) reflects it.
 
-## Docs & roadmap maintenance — keep them current as the app grows
-
-As features land, **update the docs in the same change**, not "later":
-- **`docs/ROADMAP.md`** — the internal progress tracker (Shipped / in-branch / backlog). Move items
-  to ✅ when merged; add new backlog as it arrives. BAM uses this to track progress.
-- **`README.md`** — keep the feature list, setup, and the seed/migration commands accurate (it gains
-  `seed:courses`, `seed:faa`, `seed:bvc:real`, etc. as they're added).
-- **Usage / how-to-use docs** — when a user-facing surface ships (instructor dashboard, domains, live,
-  paths, age-gate), add or update a short "how to use it" note (a Teacher/Operator guide under `docs/`).
-- A feature isn't "done" until its roadmap entry, README mention, and usage note are updated.
-
-## Citation rule
-
-BVC curriculum is cited, audio-first, and fact-checked: every claim ties to a verified source
-(`course_sources` / `course_claims`), APA 7 in-line + a `## Sources` bibliography, no fabricated
-characters, no "AI tells". These content rules are a **product feature** (the sources/claims/verify
-UI is a visible trust signal), not just a style guide. Code docs and `plans/*` are out of scope.
-Full rule: `gemini/witus/CLAUDE.md` §"Citation rule".
-
-## Authoritative-values rule — never assert guessed external values
-
-When a value is owned by an external system (DNS/registrar, a host like Vercel, a third-party API,
-another ecosystem app's schema/route), do NOT hardcode a generic default and present it as correct:
-1. **Read it from the authoritative source** — the system's API/config/env, or the actual data.
-2. If you must ship a fallback, **label it as a fallback** and point to the real source (in the UI
-   copy and a code comment), e.g. "use what Vercel shows for your domain".
-3. **Verify by behavior, not by exact-match against the guess** — "does the domain actually serve the
-   site?" (works for an A record OR a CNAME), not "does it equal IP `76.76.21.21`?".
-4. When unsure of an external value, **flag it or ask — don't assert it.**
-
-This exists because a hardcoded "apex → A `76.76.21.21`" check called a *working* Vercel CNAME setup
-"incorrect" (a false negative). Same rule applies to ecosystem cross-app assumptions (another app's
-URLs, routes, IDs, schema): confirm against that app, don't infer. Full rule: `gemini/witus/CLAUDE.md`.
+The BVC content-citation rule is a **product feature**, not just a style guide: every claim ties to a
+verified source (`course_sources` / `course_claims`), APA 7 in-line + a `## Sources` bibliography, no
+fabricated characters, no "AI tells" — the sources/claims/verify UI is a visible trust signal. (The
+general citation, docs-sync, and authoritative-values rules are in the managed block below.)
 
 ## Stack & conventions (mirror `shop-witus`)
 
@@ -129,3 +64,101 @@ drizzle-kit · Better Auth 1.6.2 (magic-link) · Zod 4 · Vitest · `tsx` script
 Mailgun, Gemini (pgvector 768d), Cloudinary. `@/*` → `src/*`. Lazy Proxy-wrapped DB client; env
 validated in `src/lib/env.ts`; schema split under `src/db/schema/`, Drizzle-generated migrations +
 hand-written SQL for the Postgres-specific bits (extensions, ivfflat, triggers).
+
+---
+
+<!-- BEGIN:witus-shared-rules v1 -->
+<!-- MANAGED BLOCK — do not edit by hand. Source: gemini/witus/docs/shared-rules.md.
+     Update the source, then run `node scripts/sync-claude-rules.mjs` in the witus repo. -->
+
+## ⚠️ Ecosystem identity (shared note — don't confuse repos)
+
+Full ecosystem identity + the canonical product index live in `gemini/witus/CLAUDE.md` and
+`gemini/witus/lib/products.ts`. Each repo states *which* product it is in its own hand-owned line
+above this managed block; don't infer another app's URLs, routes, IDs, env names, or DB schema —
+confirm against that app's own code.
+
+The site **brandanthonymcdonald.com** (BAM's personal portfolio) lives in `claude/bam-landing-page/`
+— **NOT** `projects/bam-portfolio/` (the retired legacy static site). Target `bam-landing-page`.
+
+## Operator-task rule — capture user actions in `./plans/user-tasks/`
+
+When Claude proposes work that needs BAM to do something outside the editor (account signup, API
+key, DNS change, vendor dashboard, env-var rotation, secret generation, PR review/merge, etc.),
+Claude MUST create a `./plans/user-tasks/NN-slug.md` file in this repo. **No exceptions for "small"
+steps.** Required sections: **Scope tag** · **What + why** (with explicit *what this blocks* detail
+and any hard deadline) · **Steps** · **What Claude will use** · **How to mark done** · **Related**.
+Keep `./plans/user-tasks/00-descriptions.md` updated with columns `# | Title | Scope | Blocks |
+Status` — the `Blocks` column is the one BAM scans. Ecosystem-wide tasks (Keap, IRL events, retros,
+cross-product decisions) live in the canonical witus queue at `gemini/witus/plans/user-tasks/`;
+repo-local tasks live here. Read the witus queue at session start before dependent work. Full rule:
+`gemini/witus/CLAUDE.md` §"Operator-task rule".
+
+## Branch hygiene — BAM merges, between sessions by default
+
+**Half 1.** Branch → commit → push → stop. Claude does not run `git checkout main && git merge`.
+Never `--force` to shared branches. Before every commit run `git branch --show-current`; if it is
+`main`/`master`, branch first (`feat/ fix/ chore/ docs/`). After push, hand back the branch name +
+summary and stop.
+
+**Half 2.** BAM merges pushed branches via the GitHub UI between sessions. Mid-session, after a
+push, BAM may merge in a separate window and the local checkout silently fast-forwards to `main` —
+so re-check `git branch --show-current` before **every** commit, not just at branch creation, or you
+risk landing follow-up commits directly on `main`.
+
+**Half 3.** Keep branches small (one concern each). When a session produces multiple branches,
+consolidate them into one `bundle/<slug>-YYYY-MM-DD` via `git merge --no-ff` (preserves per-concern
+history — no squash), resolve conflicts during bundling, run `tsc + lint + build` against the
+bundle, push, and file ONE `./plans/user-tasks/NN-merge-bundle-<slug>.md`. BAM does one merge, not N.
+
+**Commit often.** Commit at every working checkpoint — a passing build, a finished sub-step, a green
+test — not just at the end. A usage-limit cutoff, a dropped connection, or a crashed session must
+never lose more than the last few minutes of work. Small frequent commits on the feature branch keep
+the branch un-merged (Half 1 still holds) and give BAM clean per-step history to drill into.
+
+A checked-in `.githooks/pre-commit` guard refuses commits made directly on `main`/`master`. Activate
+once per clone: `git config core.hooksPath .githooks`. Full rule: `gemini/witus/CLAUDE.md`
+§"Branch-hygiene rule".
+
+## Docs-sync rule — a change isn't done until its docs are current
+
+When a change adds, alters, or removes a user-visible feature/route/scope, update the affected docs
+**in the same branch**: README (feature list, env examples, scripts), in-app help/tutorial content,
+`ROADMAP.md` **and** any public roadmap page, API/OpenAPI docs, and STYLE_GUIDE/CONTRIBUTING when a
+convention changed. State which docs you touched in the handoff. Never leave an aspirational ✅ on a
+roadmap — downgrade it with a one-line reason. If a doc update is genuinely out of scope, file it as
+a `./plans/` task rather than skipping silently. A Stop hook in `.claude/settings.json` gates on
+this: if the session diff changed feature/route files but touched no docs, it blocks once and asks
+you to update-or-defer. Schema-only migrations, refactors, perf, and dev-tooling changes don't
+trigger it.
+
+## Plans convention
+
+All implementation plans live in `./plans/` as `NN-description-of-plan.md` (two-digit prefix,
+kebab-case, next available number, don't skip). Sub-queues: `./plans/user-tasks/NN-slug.md`
+(operator tasks), `./plans/bugs/`, `./plans/future/`. (`plans/` is typically gitignored.)
+
+## Citation rule
+
+Anything publishable, teachable, or partner-facing (curriculum, teaching-oriented help articles,
+white papers, grant/sponsor/partner writing) uses APA 7 in-line citations with a `## References`
+section. Code docs, internal notes, and `plans/user-tasks/*` are out of scope. Full rule:
+`gemini/witus/CLAUDE.md` §"Citation rule".
+
+## Authoritative-values rule — never assert guessed external values
+
+When a value is owned by an external system (DNS/registrar, a host like Vercel, a third-party API,
+or another ecosystem app's URLs/routes/IDs/env/schema), read it from the authoritative source; don't
+hardcode a guessed default and present it as correct. If you must ship a fallback, label it as a
+fallback in both UI copy and a code comment. Verify by behavior (does the flow work?), not by
+exact-match against a guess. When unsure, flag or ask — never assert. Full rule:
+`gemini/witus/CLAUDE.md` §"Authoritative-values rule".
+
+## Coding conventions
+
+UI/UX/DX conventions (a11y, component patterns, TypeScript, microcopy, git-commit vocabulary, the
+default Neon+Drizzle+pnpm+Vitest stack) are consolidated in `gemini/witus/docs/shared-ui-ux-dx.md`.
+Read it before writing UI or API code. Two repos are grandfathered on Supabase+Jest and documented
+there as exceptions.
+
+<!-- END:witus-shared-rules v1 -->
