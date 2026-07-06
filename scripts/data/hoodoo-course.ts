@@ -36,7 +36,7 @@ export const HOODOO_COURSE: AuthoredCourse = {
 
 **A note on approach.** This course treats Hoodoo's practices as **culture and belief** (describing what they are and what they meant to people) rather than as instructions. And because Hoodoo is a **living Black tradition often appropriated by outsiders**, we center the scholarship of and about the communities who created it.
 
-**Check yourself.** Name two ways Hoodoo differs from Vodou/"Voodoo," and explain why Hoodoo is described as a "practice" rather than a "religion."
+:::reveal Name two ways Hoodoo differs from Vodou/"Voodoo," and explain why Hoodoo is described as a "practice" rather than a "religion." ||| Vodou/Vodun are organized religions with deities (lwa/vodun), priesthoods, and liturgy, while Hoodoo is an African American folk practice with no formal church, clergy, pantheon, or required initiation. It is called a practice because it is a body of workings for healing, protection, and power that most practitioners folded into their Christian faith rather than a separate religion.
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
@@ -72,7 +72,7 @@ export const HOODOO_COURSE: AuthoredCourse = {
 
 ⚠️ **A caution about specificity.** Because the enslaved came from many peoples and records are sparse, scholars debate exactly which practices trace to which origins. This course reports the **broad scholarly consensus** (strong Central-African/Kongo influence, plus West African and syncretic elements) and flags that finer claims are debated.
 
-**Check yourself.** What African object is considered a likely ancestor of the Hoodoo "mojo bag," and from which region?
+:::reveal What African object is considered a likely ancestor of the Hoodoo "mojo bag," and from which region? ||| The nkisi (plural minkisi), a consecrated power object from Central Africa (Kongo cosmology) used to concentrate spiritual power for protection and healing.
 
 ## Sources
 - Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
@@ -111,7 +111,7 @@ export const HOODOO_COURSE: AuthoredCourse = {
 
 This is why the tradition is often described, in the title of one study in the provided library, as a **"tradition of resistance."** Hoodoo carried **knowledge, healing, dignity, and defiance** through the darkest chapter of American history.
 
-**Check yourself.** Describe two roles the conjure/root doctor played in enslaved communities, and one way Hoodoo connected to resistance.
+:::reveal Describe two roles the conjure/root doctor played in enslaved communities, and one way Hoodoo connected to resistance. ||| The root doctor was a healer and herbalist and a midwife who treated illness, delivered babies, and eased pain when no doctor would come, and was a figure of authority in the quarters. Hoodoo connected to resistance because enslavers feared conjure and poisoning, conjure figures appear around planned revolts, and keeping an African-derived spiritual life in secret was itself an act of cultural resistance.
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
@@ -146,7 +146,7 @@ This is why the tradition is often described, in the title of one study in the p
 
 ⚠️ **A note on framing.** This lesson describes **what practitioners believed and did**, historically and today, as a matter of culture and religion, not as a set of instructions to follow.
 
-**Check yourself.** Explain how many practitioners reconciled Hoodoo with Christianity, and give one example of the Bible's role in the tradition.
+:::reveal Explain how many practitioners reconciled Hoodoo with Christianity, and give one example of the Bible's role in the tradition. ||| Most saw conjure as a companion to Christianity rather than a rival. The same person might attend church on Sunday and consult a root doctor on Monday, seeing no contradiction. The Bible itself was treated as a book of power: specific Psalms were tied to needs like protection or justice, and Moses was read as a kind of conjurer.
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
@@ -184,10 +184,10 @@ This is why the tradition is often described, in the title of one study in the p
 
 **The great field record.** Much of what we know about the *range* of these practices comes from the massive interviews collected by **Harry Middleton Hyatt** in the 1930s to 1940s (*Hoodoo-Conjuration-Witchcraft-Rootwork*, 5 vols.) and earlier by **Newbell Niles Puckett** (1926), invaluable **historical documentation** of a living tradition (available in the course library as reference).
 
-**Check yourself.** Name three materials or concepts central to Hoodoo practice, and explain what "rootwork" refers to.
+:::reveal Name three materials or concepts central to Hoodoo practice, and explain what "rootwork" refers to. ||| Three examples: High John the Conqueror root, the mojo bag (hand or toby), and graveyard dirt or goofer dust (the crossroads and foot-track magic also count). Rootwork refers to the tradition's use of roots, herbs, and natural materials believed to hold spiritual power; the name itself points to the centrality of plants.
 
 ## Sources
-- Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. (Public domain.)
+- Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. (Public domain, [read it free at the Internet Archive](https://archive.org/details/folkbeliefsofsou00puck).)
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
 - Hyatt, H. M. (1970-1978). *Hoodoo-conjuration-witchcraft-rootwork* (Vols. 1-5). Western Publishing. (Field documentation; reference.)`,
     },
@@ -221,7 +221,7 @@ This is why the tradition is often described, in the title of one study in the p
 
 **Change and continuity.** Some scholars (e.g., Hazzard-Donald, 2013) distinguish an **older, community-rooted "system"** from later **commercialized** forms. The tradition adapted (as living traditions do) while keeping its core: **using spiritual power to navigate a hard world.**
 
-**Check yourself.** Where did Hoodoo take especially deep root in the South, and what did the Great Migration do to the tradition?
+:::reveal Where did Hoodoo take especially deep root in the South, and what did the Great Migration do to the tradition? ||| It took especially deep root in the Deep South, in the Mississippi Delta and the Low Country of coastal South Carolina and Georgia (home to the Gullah Geechee). The Great Migration (roughly 1916 to 1970) carried Hoodoo into Northern and Western cities such as Chicago, Detroit, and New York, where it met the cash economy and mail order, gave rise to spiritual-supply shops, and adapted while keeping its core.
 
 ## Sources
 - Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
@@ -253,7 +253,7 @@ This is why the tradition is often described, in the title of one study in the p
 
 **Why this course is framed as it is.** These concerns are exactly why Learn.WitUS presents Hoodoo as **cultural history**: centering the tradition's own communities and scholarship, surveying practices as heritage rather than selling a how-to, and holding this course for **review by a knowledgeable member of the tradition** before publication.
 
-**Check yourself.** What tension does commercialization create for Hoodoo, and what does "appropriation" mean in this context?
+:::reveal What tension does commercialization create for Hoodoo, and what does "appropriation" mean in this context? ||| Commercialization turned a community folk practice into a marketplace of shops and mail-order catalogs, sometimes preserving knowledge but often with outsiders who were not part of the tradition profiting and selling cheap imitations. Appropriation here means outsiders packaging, selling, and teaching a tradition created by African Americans, stripped of its history and community; many hold that Hoodoo belongs to and is best carried by the Black community that created it.
 
 ## Sources
 - Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press.
@@ -288,7 +288,7 @@ This is why the tradition is often described, in the title of one study in the p
 
 **The takeaway.** Hoodoo is not a footnote. It is a **root system** beneath a great deal of African American art, faith, and identity, a tradition of **knowledge, healing, and resistance** that helped a people survive and shaped a culture.
 
-**Check yourself.** Give one example of Hoodoo in the blues and one writer who documented or drew on the tradition.
+:::reveal Give one example of Hoodoo in the blues and one writer who documented or drew on the tradition. ||| Blues example: Muddy Waters' "(I'm Your) Hoochie Coochie Man" name-checks the mojo, the John the Conqueror root, and the seventh son (the Robert Johnson crossroads legend also works). Writer: Zora Neale Hurston, who documented Hoodoo firsthand in Mules and Men (1935); Ishmael Reed (Mumbo Jumbo) also drew on it.
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
