@@ -31,6 +31,7 @@
     "reports:list": "tsx --env-file=.env.local scripts/report-list.ts",
     "feedback:list": "tsx --env-file=.env.local scripts/feedback-list.ts",
     "tracker:show": "tsx --env-file=.env.local scripts/tracker-show.ts",
+    "reveal:audit": "tsx scripts/reveal-audit.ts",
     "test": "vitest run"
   },
   "dependencies": {
