@@ -90,7 +90,7 @@ export default async function CourseBySlugPage({ params }: Params) {
   // owner-set stage (owner/instructor → invited/enrolled → paid). Config lives in platform_settings.
   const sourceChatConfig = await getSourceChatConfig(course.tenantId, course.id);
   const showSourceChat =
-    course.isPublished &&
+    (course.isPublished || isEditor) && // editors can test on their own unpublished courses
     (await courseHasChunks(course.tenantId, course.id)) &&
     sourceChatAllowed({ isEditor, isEnrolled: view.isEnrolled, free: isFreeCourse(course), stage: sourceChatConfig.stage });
   const typeIcon = (t: string) =>
