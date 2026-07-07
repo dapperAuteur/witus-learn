@@ -82,4 +82,11 @@ export const OPERATOR_COMMANDS: CommandGroup[] = [
       { cmd: "pnpm seed:speedway", desc: "Seed the Speedway course.", impact: "write-dev" },
     ],
   },
+  {
+    title: "AI / retrieval",
+    blurb: "Builds the search corpus for the per-course 'chat with the sources' feature.",
+    commands: [
+      { cmd: "pnpm rag:index --course <slug>", desc: "Chunk + embed (Gemini 768-dim) a course's lesson bodies + bibliography citations into source_chunks (a clean rebuild). Add --source-url <url> to also ingest a PUBLIC-DOMAIN full text (e.g. Puckett on archive.org); --tenant <slug> to disambiguate a shared slug. Needs GOOGLE_GEMINI_API_KEY.", impact: "write-dev" },
+    ],
+  },
 ];

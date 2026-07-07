@@ -183,6 +183,13 @@
       "when": 1783200501021,
       "tag": "0025_calm_captain_stacy",
       "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "7",
+      "when": 1783444744437,
+      "tag": "0026_tricky_green_goblin",
+      "breakpoints": true
     }
   ]
 }
