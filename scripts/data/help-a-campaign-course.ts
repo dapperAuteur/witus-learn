@@ -53,7 +53,7 @@ The common ways to help, roughly from least to most public-facing:
 
 This course covers each of these, **and the rules attached to them**, so you can help confidently and legally. Importantly, everything here works for **any** campaign: a candidate of any party, a **ballot measure**, or a **local cause**. This course teaches you *how* to help; *who* to help is always your choice.
 
-**Check yourself.** Name three different ways an ordinary person can help a campaign without running for office.
+:::reveal Name three different ways an ordinary person can help a campaign without running for office. ||| Any three of: donating, volunteering time, canvassing, phone or text banking, hosting an event, and helping digitally. No. They work for any campaign: a candidate of any party, a ballot measure, or a local cause. You choose who to help.
 
 ## Sources
 - FEC. (n.d.-a). *Volunteer activity*. Federal Election Commission. https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/volunteer-activity/
@@ -77,7 +77,7 @@ The line gets subtle in one important place: if **someone else pays for your ser
 
 For **state and local** campaigns, the same volunteer-vs-paid distinction exists, but the precise definitions and reporting live in **state law**, which varies. Confirm with your state's election or ethics agency (NCSL, n.d.-a).
 
-**Check yourself.** Is your own donated volunteer time a contribution under FEC rules? What changes if *someone else pays you* to work for the campaign?
+:::reveal Is your own donated volunteer time a contribution under FEC rules? What changes if *someone else pays you* to work for the campaign? ||| No. Volunteer services are not a contribution as long as no one pays you for that time. That payment can become an in-kind contribution from whoever paid. A paid role is a reported campaign expenditure, not free volunteering.
 
 ## Sources
 - FEC. (n.d.-a). *Volunteer activity*. Federal Election Commission. https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/volunteer-activity/
@@ -109,7 +109,7 @@ Examples of help that is **not** a contribution:
 
 There are specific **volunteer exemptions** for hosting (covered in the events lesson), but the headline is simple: **donating your hours is free; spending your dollars or buying things for the campaign is a contribution** that is valued at its normal cost and counts against your limit. When you're about to spend your own money *for* a campaign, assume it's an in-kind contribution and check the limit first (FEC, n.d.-c; FEC, n.d.-d).
 
-**Check yourself.** You spend four hours knocking doors, then buy $300 of poster board and markers and hand the signs to the campaign. Which of those two is an in-kind contribution, and what does its value count against?
+:::reveal You spend four hours knocking doors, then buy $300 of poster board and markers and hand the signs to the campaign. Which of those two is an in-kind contribution, and what does its value count against? ||| Non-monetary help: giving goods or services free or below the usual charge, or paying for something on the campaign's behalf (for example, buying yard signs). The $300 of signs is the in-kind contribution; your donated time is not. Its value counts against your contribution limit, just like cash.
 
 ## Sources
 - FEC. (n.d.-a). *Volunteer activity*. Federal Election Commission. https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/volunteer-activity/
@@ -139,7 +139,7 @@ There are specific **volunteer exemptions** for hosting (covered in the events l
 
 **The safe move:** before you give to a state or local effort, confirm the **limit and the disclosure threshold** with your **state's election/ethics agency**; NCSL summarizes the state-by-state landscape (NCSL, n.d.-a).
 
-**Check yourself.** Is there one nationwide individual contribution limit that applies to every campaign? Where do you confirm the limit for a *state* race?
+:::reveal Is there one nationwide individual contribution limit that applies to every campaign? Where do you confirm the limit for a *state* race? ||| No. The FEC sets federal limits (indexed for inflation), while state and local limits vary by state, and some states set no limit at all. With your state's election or ethics agency; NCSL summarizes the state-by-state landscape. Do not assume the federal number applies.
 
 ## Sources
 - FEC. (n.d.-c). *In-kind contributions*. https://www.fec.gov/help-candidates-and-committees/filing-reports/in-kind-contributions/
@@ -166,7 +166,7 @@ A practical helper's rule: **give your own money, in your own name, from your ow
 
 **State and local** races have their own lists of permitted and prohibited sources, which **vary by state** (for example, some states permit limited corporate giving that federal law bars). Confirm your state's rules before helping raise money locally (NCSL, n.d.-a).
 
-**Check yourself.** Can a foreign national contribute to a U.S. local ballot-measure campaign? Is it legal to give a donation in a friend's name and have them pay you back?
+:::reveal Can a foreign national contribute to a U.S. local ballot-measure campaign? Is it legal to give a donation in a friend's name and have them pay you back? ||| No. Federal law prohibits foreign-national contributions in connection with any federal, state, or local election, directly or indirectly. No. That is a contribution in the name of another (a straw-donor scheme) and is illegal. Give your own money, in your own name.
 
 ## Sources
 - FEC. (n.d.-e). *Who can and can't contribute*. Federal Election Commission. https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/who-can-and-cant-contribute/
@@ -199,7 +199,7 @@ A practical helper's rule: **give your own money, in your own name, from your ow
 - **Don't canvass where it's restricted**: many places limit electioneering **near polling places**, and rules vary by state; check before working near a polling site (USA.gov, n.d.-a).
 - **Don't collect or keep voters' personal data** beyond what the campaign's tool asks for.
 
-**Check yourself.** Name two "do's" and two "don'ts" of door-to-door or phone canvassing, and name an authoritative place to send someone who needs to register or check their registration.
+:::reveal Name two "do's" and two "don'ts" of door-to-door or phone canvassing, and name an authoritative place to send someone who needs to register or check their registration. ||| Any two of: identify yourself and who you're with, be brief and honest, respect a 'no,' log responses accurately, and point people to real voting information. Any two of: don't enter homes, don't misrepresent yourself or the facts, don't give false voting information, don't canvass where it's restricted near polling places, and don't keep voters' personal data.
 
 ## Sources
 - USA.gov. (n.d.-a). *State and local election offices*. https://www.usa.gov/state-election-office
@@ -224,7 +224,7 @@ A practical helper's rule: **give your own money, in your own name, from your ow
 
 **Helping digitally.** Your own **uncompensated internet activity** (emailing, blogging, posting, sharing, making graphics, building a site) is broadly **unrestricted** and is **not** a contribution (FEC, n.d.-b). But there's a line: if you **pay for advertising on someone else's website or platform**, that paid ad is treated like other paid public communications and **is** subject to the contribution/expenditure rules (FEC, n.d.-b). Free posting from your own account = fine; **buying ads** for the campaign = a regulated expenditure or in-kind contribution.
 
-**Check yourself.** If you host a campaign meet-and-greet at home and spend more than the federal allowance on food, what is the excess? Is unpaid posting from your own social account a contribution, and what about *buying* ads?
+:::reveal If you host a campaign meet-and-greet at home and spend more than the federal allowance on food, what is the excess? Is unpaid posting from your own social account a contribution, and what about *buying* ads? ||| An in-kind contribution the campaign must report. The exemption covers food, beverages, and invitations only up to a set amount per candidate, per election. Free posting from your own account is not a contribution. Paying for ads on someone else's platform is a regulated expenditure or in-kind contribution.
 
 ## Sources
 - FEC. (n.d.-a). *Volunteer activity*. Federal Election Commission. https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/volunteer-activity/
@@ -250,7 +250,7 @@ The catch is **coordination**: if your spending is made "in cooperation, consult
 
 *(State and local races have **parallel** coordination, independent-expenditure, and disclaimer rules that **vary by state**. Confirm locally before spending on your own (NCSL, n.d.-a).)*
 
-**Check yourself.** What turns an "independent" expenditure into a coordinated one, and what does coordination do to it (capped or not)? What must a paid political ad generally carry?
+:::reveal What turns an "independent" expenditure into a coordinated one, and what does coordination do to it (capped or not)? What must a paid political ad generally carry? ||| Coordinating with the candidate or party. It is then treated as an in-kind contribution that counts against contribution limits, no longer independent. A disclaimer saying who paid for it and whether a candidate authorized it.
 
 ## Sources
 - FEC. (n.d.-f). *Understanding independent expenditures*. Federal Election Commission. https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/understanding-independent-expenditures/
@@ -284,7 +284,7 @@ The catch is **coordination**: if your spending is made "in cooperation, consult
 - **Use the campaign's official tools** for voter contact, and **don't keep voters' personal information** afterward.
 - **Guard your own data.** Be wary of look-alike donation links and "urgent" texts; **donate only through the campaign's verified official site**, and treat unsolicited requests for your bank or card details with suspicion.
 
-**Check yourself.** Name one way to stay safe while canvassing and one way to protect your personal data while helping a campaign.
+:::reveal Name one way to stay safe while canvassing and one way to protect your personal data while helping a campaign. ||| Any of: tell someone your turf and expected return time, keep your phone charged, go in pairs in unfamiliar areas, and trust your instincts by skipping any door that feels unsafe. Use the campaign's official tools and don't keep voters' information; donate only through the campaign's verified official site and be wary of look-alike links and urgent texts.
 
 ## Sources
 - FEC. (n.d.-d). *Contribution limits*. https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/contribution-limits/
