@@ -55,7 +55,7 @@ None of those is illegal or even wrong on its own. The problem starts when persu
 
 The slippery middle is **deception**, because a claim can be **literally true and still deceptive**, e.g., burying the condition that makes the headline price impossible for most people. Specific, **measurable** claims ("3x faster," "clinically proven," "#1 dermatologist recommended") must be **backed by evidence**; vague brags need not be.
 
-**Check yourself.** "World's best pizza" vs. "clinically proven to lower cholesterol 30%": which is puffery and which needs proof, and why?
+:::reveal "World's best pizza" vs. "clinically proven to lower cholesterol 30%": which is puffery and which needs proof, and why? ||| "World's best pizza" is puffery: a subjective boast no one can measure, so it needs no proof. "Clinically proven to lower cholesterol 30%" is a specific, measurable factual claim, so it must be backed by real evidence.
 
 ## Sources
 - Federal Trade Commission. (1983). FTC Policy Statement on Deception. https://www.ftc.gov/legal-library/browse/ftc-policy-statement-deception
@@ -77,7 +77,7 @@ The slippery middle is **deception**, because a claim can be **literally true an
 
 The skill here is simple: **read the qualifier as carefully as the headline.** When a claim has an asterisk, the asterisk is usually where the real terms live.
 
-**Check yourself.** Why does "save up to 70%" tell you almost nothing about what *you'll* actually save?
+:::reveal Why does "save up to 70%" tell you almost nothing about what *you'll* actually save? ||| "Up to" sets only a ceiling. It is technically true if even one item is 70% off while everything else is barely discounted, so it tells you the maximum, not what you will typically or actually save.
 
 ## Sources
 - Federal Trade Commission. (2013). .com Disclosures: How to Make Effective Disclosures in Digital Advertising. https://www.ftc.gov/business-guidance/resources/com-disclosures-how-make-effective-disclosures-digital-advertising
@@ -102,7 +102,7 @@ How to defend yourself:
 - **Slow the clock.** A deal that's only good if you decide *right now* is engineered to skip your judgment. Step away; if it's real, it'll survive a few minutes' thought.
 - **Check the real price.** Compare the "was" price elsewhere or over time. Decide if the item is **worth the actual price**, ignoring the crossed-out number entirely.
 
-**Check yourself.** What single question deflates most "was \$X, now \$Y" discount claims?
+:::reveal What single question deflates most "was \$X, now \$Y" discount claims? ||| Was anything ever actually sold at that "was" price? If it was inflated or never really charged, the discount is a fake reference-price trick.
 
 ## Sources
 - Federal Trade Commission. (1983). FTC Policy Statement on Deception. https://www.ftc.gov/legal-library/browse/ftc-policy-statement-deception
@@ -280,7 +280,7 @@ Who handles what:
 
 Practical habits: **keep records** (screenshots, receipts, the ad itself, order numbers), report **even small** scams (patterns build cases), and dispute fraudulent charges with your **bank or card issuer**. You are not powerless, and you are not alone. A five-minute report can stop someone else from being hurt.
 
-**Check yourself.** Where would you report a deceptive ad, and where would you report a false supplement health claim?
+:::reveal Where would you report a deceptive ad, and where would you report a false supplement health claim? ||| Report a deceptive ad to the FTC (ReportFraud.ftc.gov). Report a false supplement or health claim to the FDA. Your state attorney general's consumer-protection office also takes complaints.
 
 ## Sources
 - Federal Trade Commission. Report Fraud. https://reportfraud.ftc.gov/
