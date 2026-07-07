@@ -39,6 +39,16 @@ export async function insertChunks(chunks: ChunkInsert[]): Promise<void> {
   );
 }
 
+/** Whether a course has been indexed yet (used to hide the chat panel until there's a corpus). */
+export async function courseHasChunks(tenantId: string, courseId: string): Promise<boolean> {
+  const rows = await db
+    .select({ id: sourceChunks.id })
+    .from(sourceChunks)
+    .where(and(eq(sourceChunks.tenantId, tenantId), eq(sourceChunks.courseId, courseId)))
+    .limit(1);
+  return rows.length > 0;
+}
+
 export type RetrievedChunk = Omit<SourceChunk, "embedding"> & { distance: number };
 
 /** Top-k nearest chunks for a query embedding, scoped to (tenant, course). Lower distance = closer. */
