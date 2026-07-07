@@ -49,7 +49,7 @@ export const AI_E2_OPERATIONS_COURSE: AuthoredCourse = {
 
 This is exactly the discipline the U.S. Small Business Administration points small owners toward: master your **day-to-day operations** deliberately, choosing where technology helps you run leaner (SBA, n.d.). SCORE, a nonprofit that mentors small businesses, frames automation the same way: automate repetitive tasks so you can focus on the work that grows the business, not so you can take humans out of the parts that need them (SCORE, n.d.).
 
-**Check yourself.** Name two traits that make a task a *good* automation candidate, and one kind of task you should keep a human on even if you could automate it.
+:::reveal Name two traits that make a task a *good* automation candidate, and one kind of task you should keep a human on even if you could automate it. ||| It's repetitive (done the same way over and over), rule-based (a clear if-this-then-that), boring and low-stakes (a mistake is cheap to fix), and it eats real time (adds up to hours, not two minutes a week). High-stakes work (money or legal), tasks full of judgment (an upset customer or a sensitive message), rare or always-different tasks, or anything about relationships where the personal touch is the value.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Manage your business*: master day-to-day operations and use technology to run leaner. https://www.sba.gov/business-guide/manage-your-business
@@ -82,7 +82,7 @@ This is exactly the discipline the U.S. Small Business Administration points sma
 
 A good rule: **fix the process first, then automate it.** Automating a messy workflow just gives you a faster mess. The SBA's whole "manage your business" guidance is about understanding your operations *before* you optimize them (SBA, n.d.).
 
-**Check yourself.** Why is "buy the tool first, figure out the workflow later" backwards, and what's the very first thing you write down when you map a workflow?
+:::reveal Why is "buy the tool first, figure out the workflow later" backwards, and what's the very first thing you write down when you map a workflow? ||| You can't automate a process you can't describe. Fix the process on paper first; automating a messy workflow just gives you a faster mess. The trigger, what starts it (for example, a customer fills out the order form). Then each step, the decision forks, who or what does each step, and what 'done' looks like.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Manage your business*: understand your day-to-day operations before optimizing them. https://www.sba.gov/business-guide/manage-your-business`,
@@ -113,7 +113,7 @@ A good rule: **fix the process first, then automate it.** Automating a messy wor
 - **Start with one workflow you mapped (Lesson 2), not ten.** Automate the single most annoying repetitive task, make it reliable, *then* add the next.
 - **AI drafts, you approve, especially at first.** Watch what it produces before you let anything go out on its own. SCORE's guidance is to automate repetitive tasks to free up time, not to fire-and-forget customer-facing work (SCORE, n.d.).
 
-**Check yourself.** In an automated workflow, what's the difference between what a no-code tool does and what an AI assistant does? Give one example of each.
+:::reveal In an automated workflow, what's the difference between what a no-code tool does and what an AI assistant does? Give one example of each. ||| The no-code tool handles the plumbing (when X happens, do Y); the AI assistant handles the language (writing a reply, summarizing, pulling the key info).
 
 ## Sources
 - SCORE. (n.d.). *Management & Operations*: using productivity and automation tools to streamline repetitive work. https://www.score.org/operations-resources
@@ -148,7 +148,7 @@ A good rule: **fix the process first, then automate it.** Automating a messy wor
 1. **Be honest it's a bot.** NIST's AI Risk Management Framework treats transparency and human oversight as core to trustworthy AI: people should know when they're dealing with AI and be able to reach a human (NIST, 2023). Hiding the bot and ghosting people who need help destroys trust.
 2. **Verify what it says.** Every price, policy, and promise an AI states on your behalf is *your* promise. If it can confidently make things up (it can, see F1), then an unverified support bot is a liability. Feed it only answers you've checked, and review its behavior.
 
-**Check yourself.** Give two kinds of support messages an AI helper can handle, and two situations where it must automatically hand off to a human.
+:::reveal Give two kinds of support messages an AI helper can handle, and two situations where it must automatically hand off to a human. ||| When someone is upset, confused, or asks twice; when money or promises are involved (refunds, exceptions); anything sensitive or unusual; and whenever the customer asks for a person.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: transparency and human oversight as traits of trustworthy AI. https://www.nist.gov/itl/ai-risk-management-framework
@@ -259,7 +259,7 @@ A $20/month tool that saves you 5 hours is a bargain. Five $15 tools you barely 
 - For AI-API workflows: **keep prompts lean, cap output length** (you pay for both), and use a **cheaper/smaller model** for easy tasks.
 - **Compare total cost to value**: does this tool earn its place, or just feel productive?
 
-**Check yourself.** When an automation calls an AI model's API, what unit do you pay for, and what two numbers do you compare to decide whether a tool is worth keeping?
+:::reveal When an automation calls an AI model's API, what unit do you pay for, and what two numbers do you compare to decide whether a tool is worth keeping? ||| Tokens, the chunk a model reads and writes (roughly three-quarters of a word). Both your input and the model's output cost tokens, so a busy automation can run up a real bill. The time it saves valued in money (hours saved times what an hour is worth) against the tool's real cost, its monthly subscription plus any per-token usage.
 
 ## Sources
 - National Institute of Standards and Technology. (2024). *Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (NIST AI 600-1)*. Cost and resource considerations of generative AI. https://doi.org/10.6028/NIST.AI.600-1
@@ -289,7 +289,7 @@ A $20/month tool that saves you 5 hours is a bargain. Five $15 tools you barely 
 
 **The accountability part:** NIST is explicit that trustworthy AI is **accountable and transparent**: a *person* is answerable for what the system does (NIST, 2023). "The automation did it" is never an excuse a customer (or a regulator) accepts. You own the output, so you build the safety net.
 
-**Check yourself.** What does "design for AI being wrong before it happens" look like in practice? Name one reliability check and one fallback you'd put on a customer-facing automation.
+:::reveal What does "design for AI being wrong before it happens" look like in practice? Name one reliability check and one fallback you'd put on a customer-facing automation. ||| Keep AI off the high-stakes path on its own (a human checks anything involving money or promises), set confidence limits that route unsure cases to a human, and test on real cases before going live. A human-handoff path that actually works, a manual version of the process you can run if the tool goes down, and regular monitoring so it isn't quietly failing.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: "valid and reliable" and "accountable and transparent" as traits of trustworthy AI; human oversight. https://www.nist.gov/itl/ai-risk-management-framework`,
@@ -322,7 +322,7 @@ The FTC's *Protecting Personal Information: A Guide for Business* lays out a pla
 
 **The trust connection:** customers hand you their data because they trust you with it. An automation that quietly funnels their personal info somewhere unsafe breaks that trust the moment they find out. Treat their data the way you'd want yours treated.
 
-**Check yourself.** Name two of the FTC's data-protection steps, and explain why pasting customer personal data into a public AI tool is risky.
+:::reveal Name two of the FTC's data-protection steps, and explain why pasting customer personal data into a public AI tool is risky. ||| Take stock (know what data you collect and where it lives), scale down (keep only what you need), lock it (strong passwords and limited access), pitch it (delete what you don't need), and plan ahead for a breach. It may be stored or used to train the model, leaking your customers' info into a system you don't control. Use business-grade tools and strip out personal details when you can.
 
 ## Sources
 - Federal Trade Commission. (n.d.). *Protecting Personal Information: A Guide for Business*. Take stock, scale down, lock it, pitch it, plan ahead; and the security practices of service providers. https://www.ftc.gov/business-guidance/resources/protecting-personal-information-guide-business`,

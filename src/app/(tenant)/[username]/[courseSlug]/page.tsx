@@ -17,6 +17,10 @@ import { ProgressBar } from "@/components/progress-bits";
 import { getUnmetRequired, listPrerequisites } from "@/db/queries/prerequisites";
 import { CourseActions } from "@/components/course-actions";
 import { TutorChat } from "@/components/tutor-chat";
+import { CourseSourceChat } from "@/components/course-source-chat";
+import { getSourceChatConfig } from "@/db/queries/source-chat-config";
+import { courseHasChunks } from "@/db/queries/source-chunks";
+import { sourceChatAllowed } from "@/lib/source-chat-access";
 import { CourseAdminTools } from "@/components/course-admin-tools";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
@@ -81,6 +85,14 @@ export default async function CourseBySlugPage({ params }: Params) {
   const completedCount = lessons.filter((l) => completedLessonIds.has(l.id)).length;
   const percent = lessons.length > 0 ? Math.round((completedCount / lessons.length) * 100) : 0;
   const showProgress = (view.isEnrolled || completedCount > 0) && lessons.length > 0;
+
+  // "Chat with the sources": shown when the course is indexed AND the learner is allowed by the
+  // owner-set stage (owner/instructor → invited/enrolled → paid). Config lives in platform_settings.
+  const sourceChatConfig = await getSourceChatConfig(course.tenantId, course.id);
+  const showSourceChat =
+    course.isPublished &&
+    (await courseHasChunks(course.tenantId, course.id)) &&
+    sourceChatAllowed({ isEditor, isEnrolled: view.isEnrolled, free: isFreeCourse(course), stage: sourceChatConfig.stage });
   const typeIcon = (t: string) =>
     ({ text: "📖", exercise: "✍️", quiz: "🧠", map: "🗺️", video: "🎬", "360video": "🎬", audio: "🎧", assignment: "📝" })[t] ?? "📄";
 
@@ -383,6 +395,8 @@ export default async function CourseBySlugPage({ params }: Params) {
       {course.isPublished && (view.isEditor || (view.isEnrolled && !isFreeCourse(course))) ? (
         <TutorChat courseId={course.id} courseTitle={course.title} />
       ) : null}
+
+      {showSourceChat ? <CourseSourceChat courseId={course.id} courseTitle={course.title} /> : null}
 
       {view.isEditor ? (
         <CourseAdminTools courseId={course.id} navigationMode={course.navigationMode} />

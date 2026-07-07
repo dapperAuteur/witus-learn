@@ -49,7 +49,7 @@ That single distinction decides most of your architecture:
 
 > **Trust DNA:** every increment of autonomy you hand the model is an increment of control you give up, over cost, over behavior, and over what real-world actions get taken. Spend it deliberately.
 
-**Check yourself.** In one sentence, what's the dividing line between a workflow and an agent, and why is "you probably don't need an agent" a reasonable default?
+:::reveal In one sentence, what's the dividing line between a workflow and an agent, and why is "you probably don't need an agent" a reasonable default? ||| A workflow runs through predefined code paths you wrote; an agent lets the model dynamically direct its own process and tool use. The real question is who controls the control flow: your code or the model. Agentic systems trade latency and cost for flexibility, so you find the simplest solution first (one call, retrieval, or a fixed workflow) and add autonomy only when the path genuinely cannot be predetermined.
 
 ## Sources
 - Anthropic. (2024). *Building Effective Agents*: workflows vs. agents; "find the simplest solution possible." https://www.anthropic.com/research/building-effective-agents
@@ -74,7 +74,7 @@ Anthropic's recommendation for this layer is concrete and worth following: **tai
 
 The mental model for the whole course: **an agent is an augmented LLM run in a loop** (next lesson), and **a workflow is augmented LLMs wired together by your code** (section 3). Same Lego brick, different assemblies.
 
-**Check yourself.** Name the three augmentations that turn a bare model into an "augmented LLM," and explain why a tool's *description* is part of its engineering, not an afterthought.
+:::reveal Name the three augmentations that turn a bare model into an "augmented LLM," and explain why a tool's *description* is part of its engineering, not an afterthought. ||| A model enhanced with three augmentations: retrieval (pull in external information), tools (functions it can call to act or fetch data), and memory (information that persists across turns or steps). The name, the description of when to use it, and the parameter schema are the model's entire manual for the tool, so vague descriptions produce wrong calls. Keep the tool surface small so there is less to misuse and test.
 
 ## Sources
 - Anthropic. (2024). *Building Effective Agents*: "The augmented LLM" (retrieval, tools, memory); clean, documented interfaces. https://www.anthropic.com/research/building-effective-agents
@@ -116,7 +116,7 @@ Why interleaving reasoning and acting matters: a model that only reasons can hal
 
 > **Trust DNA:** the loop is the agent's engine *and* its blast radius. An unbounded loop is an unbounded bill and an unbounded set of actions. Always ship the cap with the loop.
 
-**Check yourself.** Name the four phases of the agent loop, and name two brakes you must add so the loop can't run away.
+:::reveal Name the four phases of the agent loop, and name two brakes you must add so the loop can't run away. ||| Plan, act (call a tool), observe (read the result), and repeat. ReAct (Yao et al., 2022) formalized interleaving reasoning traces with actions so the model can plan, gather information, and adjust its plan. A hard iteration cap on loop turns and no-progress detection (the same tool and arguments twice means it is stuck), plus a per-run token or cost budget. An unbounded loop is OWASP LLM10, Unbounded Consumption.
 
 ## Sources
 - Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2022). ReAct: Synergizing reasoning and acting in language models. *arXiv:2210.03629*. https://arxiv.org/abs/2210.03629
@@ -270,7 +270,7 @@ Why interleaving reasoning and acting matters: a model that only reasons can hal
 
 **Where to put a checkpoint, a simple test:** *If this step is wrong, can I cheaply undo it?* Cheap-to-undo → let it run and log it. Hard-to-undo (money, external comms, deletions) → require a human OK. Don't gate everything (that's just a slow manual process); gate the actions whose mistakes you can't take back.
 
-**Check yourself.** Why must triggers be idempotent, and what specific reliability property does putting the model work behind a *queue* buy you? Name one action that should always sit behind a human-in-the-loop checkpoint.
+:::reveal Why must triggers be idempotent, and what specific reliability property does putting the model work behind a *queue* buy you? Name one action that should always sit behind a human-in-the-loop checkpoint. ||| Networks retry, so the same event can arrive twice and must not run the work twice; stamp each run with the event ID and skip duplicates. A queue buys retries with backoff, backpressure, durability, and a place to enforce budgets. Anything irreversible or high-stakes: sending an external email, issuing a refund, deleting data, publishing. The test is whether you can cheaply undo it. Cheap-to-undo can run and log; hard-to-undo needs a human OK.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: human-AI configuration; oversight in the "Manage" function. https://www.nist.gov/itl/ai-risk-management-framework
@@ -307,7 +307,7 @@ Why interleaving reasoning and acting matters: a model that only reasons can hal
 
 > **Trust DNA:** an agent's "memory" is data *you* curate and store. If it persists, you own it, including the duty to keep injected instructions and stale facts from quietly steering the next run.
 
-**Check yourself.** Why is the context window a "budget, not a backpack," and where should long-term memory actually live (and why not just in the prompt)?
+:::reveal Why is the context window a "budget, not a backpack," and where should long-term memory actually live (and why not just in the prompt)? ||| Outside the model, in a database or vector store, retrieved into context when needed. The context window is a budget, not a backpack: long context is slower, costlier, and can dilute the model's attention.
 
 ## Sources
 - Anthropic. (2024). *Building Effective Agents*: memory as an augmentation of the LLM; retrieval for external knowledge. https://www.anthropic.com/research/building-effective-agents
@@ -438,7 +438,7 @@ Why interleaving reasoning and acting matters: a model that only reasons can hal
 
 Run that set **every time you change the prompt, a tool, or the model**, the same discipline as unit tests. This is NIST's **Measure** function in practice: you don't hope the agent behaves, you measure it on known cases and catch regressions before users do (NIST, 2023).
 
-**Check yourself.** What is a *trace*, and why is it the first thing you instrument? Name two agent-specific failure modes a trace makes obvious.
+:::reveal What is a *trace*, and why is it the first thing you instrument? Name two agent-specific failure modes a trace makes obvious. ||| The full, ordered record of one run: every plan, tool call with arguments, observation, and per-step tokens and latency. It makes most failures obvious on inspection, so you instrument it before you have problems.
 
 ## Sources
 - Anthropic. (2024). *Building Effective Agents*, transparency: show the agent's planning steps; measure before adding complexity. https://www.anthropic.com/research/building-effective-agents

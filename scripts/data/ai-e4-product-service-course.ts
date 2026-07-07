@@ -74,7 +74,7 @@ export const AI_E4_PRODUCT_SERVICE_COURSE: AuthoredCourse = {
 
 **The founder's discipline: start as light as the job allows.** Over-engineering is its own kind of slop, and the heaviest path is also the most expensive to run and maintain. You can always move down the ladder later, once customers prove the idea is worth the heavier build.
 
-**Check yourself.** For your idea, which path fits *the first version* (buy, no-code, or build) and what's the one fact about the job that decides it?
+:::reveal For your idea, which path fits *the first version* (buy, no-code, or build) and what's the one fact about the job that decides it? ||| Start as light as the job allows. Over-engineering is its own kind of slop and the heaviest path costs the most to run, so move heavier only once customers prove the idea is worth it.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Calculate your startup costs*: weigh tool and build costs before committing. https://www.sba.gov/business-guide/plan-your-business/calculate-your-startup-costs
@@ -102,7 +102,7 @@ export const AI_E4_PRODUCT_SERVICE_COURSE: AuthoredCourse = {
 
 **The biggest beginner mistake: shipping the raw model.** A model behind a text box, with no expectations set, no editing, no sources, and no fallback, *feels* like magic for five minutes and like a scam by minute six. The product is everything you wrap *around* the model.
 
-**Check yourself.** Name two things a good AI experience does for the user (besides give an answer), and why "just a text box on a model" usually fails.
+:::reveal Name two things a good AI experience does for the user (besides give an answer), and why "just a text box on a model" usually fails. ||| Because the product is everything you wrap around the model: honest expectations, an obvious AI role, editable output, sources when a claim matters, and a graceful failure. Raw, it feels like magic for five minutes and a scam by minute six.
 
 ## Sources
 - Google PAIR. (2021). *People + AI Guidebook*: setting expectations, user control, explainability and trust. https://pair.withgoogle.com/guidebook/
@@ -217,7 +217,7 @@ A feature that's "basically free" while three friends test it can become a real 
 
 The SBA's startup-cost guidance is blunt about this: list your real one-time *and* ongoing operating costs so you can estimate profit and break even (SBA, n.d.). For an AI business, your **per-use AI cost is an ongoing cost**. It belongs in that math, not as an afterthought. NIST's GenAI Profile likewise flags resource and (literal) environmental cost as a real consideration of generative-AI use (NIST, 2024).
 
-**Check yourself.** Why can an AI feature that's "free" in testing become a real monthly bill at scale, and what two numbers do you multiply to estimate your monthly cost-to-serve?
+:::reveal Why can an AI feature that's "free" in testing become a real monthly bill at scale, and what two numbers do you multiply to estimate your monthly cost-to-serve? ||| Unit economics is revenue per customer minus what it costs to serve that customer. You pay per token on both the input and the output of every call, for every customer, so a cost that is tiny for three testers becomes a real monthly bill at 500 customers. Cap output length and keep prompts lean since you pay for both, use a cheaper or smaller model for easy tasks, cache or reuse answers instead of regenerating them, and audit subscriptions you stopped using.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Calculate your startup costs*: list one-time and ongoing operating costs; estimate profit and break-even. https://www.sba.gov/business-guide/plan-your-business/calculate-your-startup-costs
@@ -255,7 +255,7 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
 - **Don't race to the bottom.** "Cheaper than the big AI company" is not a strategy; *better for this specific customer* is.
 - **Be honest about value.** Overstating what your AI does to justify a price isn't just bad pricing. Overstated performance claims can be illegal (Lesson 8). Charge for real value, described truthfully.
 
-**Check yourself.** What sets the *floor* on your price, what sets the *ceiling*, and why is flat-rate pricing risky when your AI cost is usage-based?
+:::reveal What sets the *floor* on your price, what sets the *ceiling*, and why is flat-rate pricing risky when your AI cost is usage-based? ||| Your cost-to-serve, including your per-use AI cost, sets the floor, because a price below it loses money on every sale. The value you deliver to the customer sets the ceiling, and your price lives in between, above the floor. One heavy power user can run up an AI cost that exceeds their flat fee and wipe out your margin. Cap usage or move heavy users to a higher tier, and do not race to the bottom on price.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Write your business plan*: tie pricing to costs and real financial outcomes. https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan
@@ -289,7 +289,7 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
 
 > **Trust DNA:** customers forgive an honest small business that's clearly trying. They do not forgive being deceived: by a hidden bot, an overstated claim, or a wrong answer no one would fix. Handle the mistake well and you can actually *gain* trust.
 
-**Check yourself.** Name one way to handle an AI wrong answer that builds trust, and one disclosure rule you must follow, and say why the disclosure rule is also a *legal* matter.
+:::reveal Name one way to handle an AI wrong answer that builds trust, and one disclosure rule you must follow, and say why the disclosure rule is also a *legal* matter. ||| Catch it before the customer does with a human-in-the-loop, make uncertainty visible so the feature can say it is not sure and show how to reach a person, and make it easy for customers to correct or report a bad answer. AI performance claims must be truthful and substantiated. You cannot exaggerate what your AI does, and saying the AI produced it is no defense, so overstating is a legal line, not just an ethical one.
 
 ## Sources
 - Google PAIR. (2021). *People + AI Guidebook*: designing for graceful failure, feedback, and user control. https://pair.withgoogle.com/guidebook/
@@ -316,7 +316,7 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
 
 **The founder's posture:** treat these as product features, not obstacles. A business that's honest about its data use, its claims, and what its AI can do earns the trust that small founders win on. NIST's framework folds privacy, fairness, and honesty into what makes AI trustworthy in the first place (NIST, 2023).
 
-**Check yourself.** A customer's personal data, an AI-generated logo, and a friend's paid 5-star review each carry a legal/ethical rule. Name the rule for any two of them.
+:::reveal A customer's personal data, an AI-generated logo, and a friend's paid 5-star review each carry a legal/ethical rule. Name the rule for any two of them. ||| Protect customer privacy by not pasting their personal data into public AI tools, keep claims honest and substantiated, never create or buy fake reviews (illegal under an FTC rule) and disclose paid endorsements, and respect copyright.
 
 ## Sources
 - Federal Trade Commission. (2023). *Keep your AI claims in check*: AI claims must be truthful and substantiated. https://www.ftc.gov/business-guidance/blog/2023/02/keep-your-ai-claims-check
@@ -356,7 +356,7 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
 
 **The trap to avoid: a big, polished launch of an unvalidated idea.** Spending months building before any real customer touches it is how founders pour effort into things nobody wants. Launch small, learn, then scale what's proven.
 
-**Check yourself.** Why is launching to a few real users better than a big public launch for a first AI product, and what kind of feedback (said vs. done) should you trust most?
+:::reveal Why is launching to a few real users better than a big public launch for a first AI product, and what kind of feedback (said vs. done) should you trust most? ||| To learn fast and cheap with a few real customers whether the product actually solves the problem, before spending time and money scaling something nobody wants. Then measure against what working means and manage by fixing, dropping, or doubling down. Trust what customers do, such as whether they come back, pay, or recommend it, over what they say, and ask about the job rather than your ego. Avoid the trap of a big, polished launch of an unvalidated idea.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*: test your concept against real demand before scaling. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis

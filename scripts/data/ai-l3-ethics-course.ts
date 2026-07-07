@@ -35,7 +35,7 @@ Major bodies have converged on a shared set of principles. The **UNESCO Recommen
 
 You'll meet each of those in this course. The point isn't to memorize a list, it's to be able to look at a real AI system and ask the right questions.
 
-**Check yourself.** Why does treating AI as a "socio-technical system" matter when you're trying to find the source of a harm?
+:::reveal Why does treating AI as a "socio-technical system" matter when you're trying to find the source of a harm? ||| AI is not just code but code plus the data, people, institutions, and incentives around it, so a harm usually comes from the whole system rather than the algorithm alone.
 
 ## Sources
 - UNESCO. (2021). *Recommendation on the Ethics of Artificial Intelligence.* https://www.unesco.org/en/artificial-intelligence/recommendation-ethics
@@ -61,7 +61,7 @@ Three specific entry points are worth naming, because you can look for them:
 - **The labels**: someone decided what counts as a "good employee," a "risky borrower," or "toxic" speech. Those judgments are subjective and they carry bias.
 - **Feedback loops**: when a model's output shapes the next batch of data. Predict more crime in a neighborhood → send more police there → record more arrests there → "confirm" the prediction. The loop can manufacture the very pattern it claims to find.
 
-**Check yourself.** A model has no "race" field at all. Explain how it can still produce racially biased outcomes.
+:::reveal A model has no "race" field at all. Explain how it can still produce racially biased outcomes. ||| It can learn from historical or institutional data that already encoded discrimination, which is systemic bias, so it repeats those patterns without any explicit race field.
 
 ## Sources
 - Schwartz, R., Vassilev, A., Greene, K., Perine, L., Burt, A., & Hall, P. (2022). *Towards a Standard for Identifying and Managing Bias in Artificial Intelligence* (NIST SP 1270). National Institute of Standards and Technology. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1270.pdf
@@ -198,7 +198,7 @@ This is hard for a real reason. Many powerful models are **"black boxes"**, even
 
 Transparency isn't all-or-nothing, and it isn't free: full model disclosure can expose private data or invite gaming. The ethical target is **enough transparency, to the right people, for the stakes involved**, more for a sentencing tool, less for a spam filter (NIST, 2023).
 
-**Check yourself.** What's the difference between a system being *transparent* and a single decision being *explainable*?
+:::reveal What's the difference between a system being *transparent* and a single decision being *explainable*? ||| Transparency is about the system: is an AI disclosed, what is it for, what data and error rates does it have; explainability is about a specific decision: a human-understandable reason for this particular outcome.
 
 ## Sources
 - UNESCO. (2021). *Recommendation on the Ethics of Artificial Intelligence*: transparency & explainability principles. https://www.unesco.org/en/artificial-intelligence/recommendation-ethics
@@ -221,7 +221,7 @@ A key safeguard is **meaningful human oversight**: a real person, with real auth
 
 For professionals who build these systems, the **ACM Code of Ethics and Professional Conduct (2018)** is explicit: computing professionals should contribute to human well-being, **avoid harm**, be honest and trustworthy, be fair and **take action not to discriminate**, and respect privacy. Accountability isn't only a legal question; it's a professional duty.
 
-**Check yourself.** What makes human oversight "meaningful" rather than a rubber stamp?
+:::reveal What makes human oversight "meaningful" rather than a rubber stamp? ||| A real person with real authority and real information who can review, override, and stop the system, rather than just clicking approve; automation bias, our tendency to over-trust a confident machine, makes rubber-stamping common.
 
 ## Sources
 - UNESCO. (2021). *Recommendation on the Ethics of Artificial Intelligence*: responsibility, accountability, human oversight. https://www.unesco.org/en/artificial-intelligence/recommendation-ethics
@@ -249,7 +249,7 @@ There's also a **power-asymmetry** problem that runs through the whole field:
 
 This is why UNESCO frames AI ethics around **human rights and dignity** and calls for proportionality (don't use more surveillance power than the legitimate aim requires) and for protecting the vulnerable (UNESCO, 2021). Asking "who gains power here, and who loses it?" is a core ethics question, not a political aside.
 
-**Check yourself.** Name one AI use the EU AI Act treats as "unacceptable risk," and say why a ban (not just regulation) might be the ethical response.
+:::reveal Name one AI use the EU AI Act treats as "unacceptable risk," and say why a ban (not just regulation) might be the ethical response. ||| Government social scoring of citizens and, with narrow exceptions, real-time remote biometric identification in public spaces; naming some uses off-limits says they should not be built however accurate they are.
 
 ## Sources
 - European Commission. *Regulatory framework on AI* (the EU AI Act): unacceptable-risk / prohibited practices. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
@@ -276,7 +276,7 @@ This is why UNESCO frames AI ethics around **human rights and dignity** and call
 
 Ethics asks us to see this hidden supply chain, not just the magic at the end of it. "Free" or "automatic" usually means **someone, somewhere, paid a cost**, and fairness includes them.
 
-**Check yourself.** Name one environmental cost and one labor cost behind a large AI model.
+:::reveal Name one environmental cost and one labor cost behind a large AI model. ||| Data centers that consume substantial electricity and water for cooling, with a carbon impact that depends on the energy grid; UNESCO names environmental sustainability as a core value and treats the planet as a stakeholder. Data workers who label training data and moderate disturbing content, often for low pay in hard conditions, and creators whose writing, art, code, and voices were used as training data without consent, credit, or compensation.
 
 ## Sources
 - UNESCO. (2021). *Recommendation on the Ethics of Artificial Intelligence*: environmental sustainability; labour. https://www.unesco.org/en/artificial-intelligence/recommendation-ethics`,
@@ -299,7 +299,7 @@ Ethics asks us to see this hidden supply chain, not just the magic at the end of
 
 None of this is destiny. These are **design and policy choices**, which means they can be made differently. That's exactly why an informed, questioning public matters.
 
-**Check yourself.** How can a recommender system harm democracy even if every individual recommendation seems harmless?
+:::reveal How can a recommender system harm democracy even if every individual recommendation seems harmless? ||| By deciding what billions of people see and optimizing purely for engagement, it can amplify outrage, deepen polarization, and trap people in feedback loops, a societal harm at population scale that nobody voted on.
 
 ## Sources
 - UNESCO. (2021). *Recommendation on the Ethics of Artificial Intelligence*: labour markets, information, democracy. https://www.unesco.org/en/artificial-intelligence/recommendation-ethics

@@ -63,7 +63,7 @@ Two habits that follow:
 - **Check the data settings** of every AI tool: look for "don't use my data for training," history controls, and deletion options.
 - **Follow your school/employer's policy.** Confidential work data is not yours to paste, no matter how convenient.
 
-**Check yourself.** Name the three places your data lives in an AI system (training, ___, retention).
+:::reveal Name the three places your data lives in an AI system (training, ___, retention). ||| The model's training data, your prompts, and retention (how long the provider keeps your conversations).
 
 ## Sources
 - OWASP. (2025). LLM02:2025 Sensitive Information Disclosure - OWASP Top 10 for LLM Applications. https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/
@@ -159,7 +159,7 @@ Two takeaways even if you live elsewhere:
 
 This is high-level orientation, **not legal advice**. For a specific situation, check the official sources or a professional.
 
-**Check yourself.** Name the GDPR/CCPA right you'd use to make a company hand over a copy of what it knows about you.
+:::reveal Name the GDPR/CCPA right you'd use to make a company hand over a copy of what it knows about you. ||| The GDPR right of access, which CCPA calls the right to know; both require the company to disclose the personal data it holds about you. Opting out of the sale or sharing of your personal information, which limits how your behavior gets brokered around the web.
 
 ## Sources
 - GDPR.eu. What is GDPR, the EU's new data protection law? https://gdpr.eu/what-is-gdpr/
@@ -183,7 +183,7 @@ The problem is **re-identification.** Stripped-down data can be matched back to 
 
 This is why the FTC has warned that broad claims a dataset is "anonymous" are often **misleading**, and that truly de-identifying data takes real measures plus a commitment not to re-identify it (FTC). For you, the lesson is humility: **"anonymized" is not the same as "untraceable."** Share less up front, because de-identification is not a guarantee you can lean on.
 
-**Check yourself.** Why can "anonymized" location data still point back to a specific person?
+:::reveal Why can "anonymized" location data still point back to a specific person? ||| Through re-identification: stripped-down data can be matched to a person by combining it with other available data, such as a few timestamped location points.
 
 ## Sources
 - Federal Trade Commission. (2014). Data Brokers: A Call for Transparency and Accountability (see discussion of de-identification and re-identification). https://www.ftc.gov/reports/data-brokers-call-transparency-accountability-report-federal-trade-commission-may-2014
@@ -210,7 +210,7 @@ You can shrink your footprint:
 
 You won't reach zero, but every reduction shrinks what can be brokered, targeted, or stolen.
 
-**Check yourself.** What is a "data broker," and name one way to shrink the footprint they can collect.
+:::reveal What is a "data broker," and name one way to shrink the footprint they can collect. ||| A company that collects, packages, and sells profiles built from your data, often without your knowledge; the FTC found brokers hold billions of data elements on nearly every U.S. household. Minimize at the source (share less, deny unneeded app permissions), use delete and do-not-sell/share rights, turn off ad personalization, or simply post less.
 
 ## Sources
 - Federal Trade Commission. (2014). Data Brokers: A Call for Transparency and Accountability. https://www.ftc.gov/reports/data-brokers-call-transparency-accountability-report-federal-trade-commission-may-2014`,
@@ -233,7 +233,7 @@ You won't reach zero, but every reduction shrinks what can be brokered, targeted
 
 These map directly onto the **Protect** function of the NIST Cybersecurity Framework (CSF) 2.0, the part about controlling access and safeguarding accounts so an incident never starts (NIST CSF 2.0, 2024).
 
-**Check yourself.** Why is a *reused* password worse than a merely weak one?
+:::reveal Why is a *reused* password worse than a merely weak one? ||| Because of credential stuffing: when one site is breached, attackers try that same email and password pair on all your other accounts.
 
 ## Sources
 - Cybersecurity and Infrastructure Security Agency (CISA). Secure Our World. https://www.cisa.gov/secure-our-world
@@ -265,7 +265,7 @@ The durable defenses don't depend on spotting the fake:
 
 This is exactly why the security basics from the last lesson matter: when MFA is on and you verify before you act, even a perfect AI-written lure runs into a wall.
 
-**Check yourself.** Someone "from your bank" calls and asks you to read back the code they just texted. What do you do?
+:::reveal Someone "from your bank" calls and asks you to read back the code they just texted. What do you do? ||| Refuse and verify on a trusted channel: hang up and call back on a number you already have. A request to share an MFA code is the scam.
 
 ## Sources
 - Cybersecurity and Infrastructure Security Agency (CISA). Secure Our World: Recognize and Report Phishing. https://www.cisa.gov/secure-our-world

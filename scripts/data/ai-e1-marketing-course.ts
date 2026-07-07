@@ -73,7 +73,7 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
 
 **A one-question gut check before anything goes public:** *"Is this true, and can I show why?"* If the honest answer is "the AI said so," stop. Verify it, or cut it. Real evidence is the only kind that builds a business that lasts.
 
-**Check yourself.** Give one example of using AI for legitimate research and one example of using it to fabricate, and explain the single difference that separates them.
+:::reveal Give one example of using AI for legitimate research and one example of using it to fabricate, and explain the single difference that separates them. ||| Generating fake reviews or testimonials, inventing statistics you never measured, citing studies that don't exist, or faking demand like waitlist and follower counts. All are lying, and fake reviews are also illegal.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Base decisions on real market and competitor research. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis
@@ -147,7 +147,7 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
 3. **Every promise to a customer**: make sure you can actually keep it.
 4. **Every "fact" about a competitor**: verify; getting it wrong can be defamation, not just embarrassing.
 
-**Check yourself.** Pick one channel above. Name the best way AI helps there *and* the one thing you must do before that content reaches a real person.
+:::reveal Pick one channel above. Name the best way AI helps there *and* the one thing you must do before that content reaches a real person. ||| Edit it into your own voice, and fact-check every claim: every number, date, price, quote, and named study, against a real source before it goes public.
 
 ## Sources
 - Google. (n.d.). *Search Essentials*. Key best practices: helpful people-first content, useful keywords in prominent places; spam policies cover scaled content abuse. https://developers.google.com/search/docs/essentials
@@ -302,7 +302,7 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
 
 > **Trust DNA:** customers forgive a small business that's clearly *trying*. They don't forgive being fed lazy, fake, or deceptive content. Use AI to be *better and faster*, never to be hollow.
 
-**Check yourself.** Spot two signs of AI slop in a piece of marketing, and name the single habit that fixes the "could-be-anyone" problem.
+:::reveal Spot two signs of AI slop in a piece of marketing, and name the single habit that fixes the "could-be-anyone" problem. ||| Be specific: add one true, concrete detail only your business could share, like a real result or a customer story you have permission to use. Specific beats generic, and quality beats volume.
 
 ## Sources
 - Google. (n.d.). *Creating helpful, reliable, people-first content*. First-hand experience, depth, and trust over content made to game rankings. https://developers.google.com/search/docs/fundamentals/creating-helpful-content

@@ -49,7 +49,7 @@ NIST frames trustworthy AI as a continuous lifecycle of four functions (**Govern
 
 > **Trust DNA:** the two laws of this course (*you can't improve what you don't measure*, and *treat every model output as untrusted input*) are the spine of everything that follows.
 
-**Check yourself.** In one sentence, what does LLMOps add that plain DevOps doesn't have to worry about?
+:::reveal In one sentence, what does LLMOps add that plain DevOps doesn't have to worry about? ||| Operating a non-deterministic model you usually don't own: measuring and managing its quality, safety, cost, and latency in production.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: Govern, Map, Measure, Manage functions. https://www.nist.gov/itl/ai-risk-management-framework
@@ -77,7 +77,7 @@ The throughline is NIST's insight that trustworthy AI is **continuous**: you *Me
 
 Each remaining section of this course is one arc of this loop: **Evaluation** (steps 1 to 3, 6), **Guardrails & Observability** (step 4), **Reliability & Cost** (step 4, deeper), and **Operate Responsibly** (steps 5, 7).
 
-**Check yourself.** Why is "we shipped it" the *beginning* of LLMOps work rather than the end?
+:::reveal Why is "we shipped it" the *beginning* of LLMOps work rather than the end? ||| Because trustworthy AI is a continuous loop: you evaluate, guard, roll out gradually, monitor real usage, and feed every surprise back as a new eval case or guardrail.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: continuous Measure/Manage. https://www.nist.gov/itl/ai-risk-management-framework
@@ -111,7 +111,7 @@ Each remaining section of this course is one arc of this loop: **Evaluation** (s
 
 > **Trust DNA:** "it worked when I tried it" is an anecdote, not evidence. An eval set turns vibes into numbers you can defend.
 
-**Check yourself.** Name the three kinds of cases a good golden dataset must include, and say why leaving out the last two is dangerous.
+:::reveal Name the three kinds of cases a good golden dataset must include, and say why leaving out the last two is dangerous. ||| A curated set of representative inputs paired with known-good answers or rubrics: your evaluation ground truth, built from a mix of production, expert-written, and historical data. Typical, edge, and adversarial cases; leaving out the hard ones hides exactly the failures that hurt in production.
 
 ## Sources
 - OpenAI. (2025). *Evaluation best practices* (API documentation): collecting datasets; typical/edge/adversarial cases; metrics. https://developers.openai.com/api/docs/guides/evaluation-best-practices
@@ -143,7 +143,7 @@ Once live, you measure on production traffic. Two staged-rollout techniques keep
 
 > **Trust DNA:** offline eval protects users from your *known* mistakes; online eval finds the ones you didn't know to test. Stage the rollout so discovery is cheap.
 
-**Check yourself.** What does a canary release let you learn that an offline eval cannot, and what does it cost you if the new version is bad?
+:::reveal What does a canary release let you learn that an offline eval cannot, and what does it cost you if the new version is bad? ||| Sending a new version to a small slice of traffic (say 1 to 5%) first and widening only if it holds; it bounds the blast radius, so a bad version exposes a few users, not everyone.
 
 ## Sources
 - OpenAI. (2025). *Evaluation best practices* (API documentation): running comparisons and continuous (online) evaluation. https://developers.openai.com/api/docs/guides/evaluation-best-practices
@@ -296,7 +296,7 @@ Add quality and safety signals too: error rate, guardrail trigger rate, refusal 
 
 > **Trust DNA:** every production trace and log is future eval data. Surprises in the dashboard become tomorrow's golden-dataset cases.
 
-**Check yourself.** Why must you log the *model and prompt version* with each request, and what must you redact before logs are stored?
+:::reveal Why must you log the *model and prompt version* with each request, and what must you redact before logs are stored? ||| So you can correlate a behavior change with the change that caused it; redact PII and secrets first, because logs are an attack surface (OWASP LLM02).
 
 ## Sources
 - OWASP. (2025). *Top 10 for LLM Applications 2025*: LLM02: Sensitive Information Disclosure (logs and secrets). https://genai.owasp.org/llm-top-10/
@@ -327,7 +327,7 @@ Add quality and safety signals too: error rate, guardrail trigger rate, refusal 
 
 > **Trust DNA:** a model hiccup should never take down your product. Wrap the unreliable component in timeouts, bounded retries, a fallback, and a cache, the same way you'd wrap any untrusted input.
 
-**Check yourself.** Why must retries use backoff *and* a cap? What goes wrong if you retry forever with no delay?
+:::reveal Why must retries use backoff *and* a cap? What goes wrong if you retry forever with no delay? ||| Uncapped, no-delay retries hammer a struggling provider, worsen the outage, and run up the bill (a self-inflicted Unbounded Consumption problem); back off with jitter and only retry safe steps.
 
 ## Sources
 - OWASP. (2025). *Top 10 for LLM Applications 2025*: LLM10: Unbounded Consumption (uncapped retries / resource exhaustion). https://genai.owasp.org/llm-top-10/
@@ -364,7 +364,7 @@ Add quality and safety signals too: error rate, guardrail trigger rate, refusal 
 
 > **Trust DNA:** optimize against your eval set, not against vibes: a "cheaper, faster" change that quietly tanks quality isn't an optimization, it's a regression you didn't measure.
 
-**Check yourself.** Name one change that reduces *both* cost and latency, and one cost/quality trade-off you'd verify against your eval set before shipping.
+:::reveal Name one change that reduces *both* cost and latency, and one cost/quality trade-off you'd verify against your eval set before shipping. ||| Cutting tokens: trim the prompt and context, cap the output length, and cache repeats, since you pay per token and wait per output token.
 
 ## Sources
 - Anthropic. (2024). *Reducing latency* (Claude docs): streaming, output length, and latency strategies. https://docs.anthropic.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-latency
@@ -392,7 +392,7 @@ Add quality and safety signals too: error rate, guardrail trigger rate, refusal 
 
 > **Trust DNA:** the responsible question isn't "will it ever misbehave?" (it will). It's "how fast can we detect it, stop it, and recover?" Build the kill switch *before* you need it.
 
-**Check yourself.** Name the three things every AI feature should have ready before an incident: one to find trouble, one to stop it, one to recover.
+:::reveal Name the three things every AI feature should have ready before an incident: one to find trouble, one to stop it, one to recover. ||| One to find trouble (red-teaming), one to stop it fast (a kill switch that routes to the fallback), and one to recover (rollback to the last known-good version).
 
 ## Sources
 - National Institute of Standards and Technology. (2024). *AI RMF Generative AI Profile (NIST AI 600-1)*: red-teaming (Measure); incident response, escalation, fallback (Manage). https://doi.org/10.6028/NIST.AI.600-1
