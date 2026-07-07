@@ -64,7 +64,7 @@ A few terms you'll use constantly:
 - **System prompt**: standing instructions that set the model's role and rules, separate from the user's message.
 - **Temperature**: a knob for randomness. Low (near 0) for factual/structured tasks; higher for brainstorming.
 
-**Check yourself.** In the five-part loop, which step is where you check that the output is the right shape before acting on it?
+:::reveal In the five-part loop, which step is where you check that the output is the right shape before acting on it? ||| Validation and parsing. You never pass raw model output straight into a sensitive action.
 
 ## Sources
 - OpenAI. (2025). *Prompting* (API documentation): system messages, parameters, structure. https://platform.openai.com/docs/guides/prompting
@@ -218,7 +218,7 @@ Notice the shape: the AI does one **narrow, well-defined** job (classify), and y
 
 This maps to NIST's "Manage" function: you actively manage the AI component's risk with validation and fallbacks rather than assuming it behaves (NIST, 2023).
 
-**Check yourself.** In the triage example, what does your *code* (not the model) do in steps 3 and 4, and why does that keep the automation reliable?
+:::reveal In the triage example, what does your *code* (not the model) do in steps 3 and 4, and why does that keep the automation reliable? ||| A fixed pipeline: a trigger fires and your code runs a defined sequence of steps, one of which may call AI. You, not the model, decide the order, which is what makes it reliable. Give the model the smallest, most checkable task, like classifying into a fixed set of labels. Your code constrains and validates the output, provides a fallback, and logs inputs and outputs.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: see the "Manage" function. https://www.nist.gov/itl/ai-risk-management-framework
@@ -259,7 +259,7 @@ This maps to NIST's "Manage" function: you actively manage the AI component's ri
 
 > **Trust DNA:** an assistant that can take actions is software with a fuzzy operator inside it. Constrain its tools, log what it does, and keep a human approving anything that's hard to undo.
 
-**Check yourself.** Why does Anthropic recommend reaching for a fixed *workflow* before a fully autonomous *agent*, and what's one way to bound an agent that can take actions?
+:::reveal Why does Anthropic recommend reaching for a fixed *workflow* before a fully autonomous *agent*, and what's one way to bound an agent that can take actions? ||| A workflow orchestrates models and tools through predefined code paths. An agent lets the model decide which steps to take and which tools to call. Prefer a workflow when the steps are knowable in advance. Give it few, tightly scoped tools, cap its steps or budget, and require confirmation before irreversible actions. This applies least privilege against Excessive Agency (OWASP LLM06).
 
 ## Sources
 - Anthropic. (2024). *Building Effective Agents*: workflows vs. agents; "find the simplest solution possible." https://www.anthropic.com/research/building-effective-agents
@@ -301,7 +301,7 @@ Why builders love RAG:
 - **Tell the model to refuse when the answer isn't in the context**: otherwise it fills the gap with a hallucination.
 - **Your vector store is an attack surface**: poisoned or leaky embeddings are a named LLM risk (OWASP, 2025, LLM08). Control what goes in and who can query it.
 
-**Check yourself.** In RAG, why can you show *sources* for an answer, and what should you instruct the model to do when the retrieved passages don't contain the answer?
+:::reveal In RAG, why can you show *sources* for an answer, and what should you instruct the model to do when the retrieved passages don't contain the answer? ||| It retrieves the passages relevant to a question and puts them in the prompt, so the model answers grounded in your content. Because you know which chunks went in, you can cite them. Tell it to refuse or say it does not know. Otherwise it fills the gap with a hallucination.
 
 ## Sources
 - Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., … Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *arXiv:2005.11401*. https://arxiv.org/abs/2005.11401
@@ -341,7 +341,7 @@ Why builders love RAG:
 
 This is the "Measure" and "Manage" of NIST's framework in practice: you don't *hope* the system is reliable, you **test it and contain it** (NIST, 2023).
 
-**Check yourself.** Name the OWASP #1 LLM risk, and the single habit ("treat model output as ___") that defends against it.
+:::reveal Name the OWASP #1 LLM risk, and the single habit ("treat model output as ___") that defends against it. ||| Prompt injection (LLM01). Treat all model input and output as untrusted: validate it and never pass raw output into a sensitive action.
 
 ## Sources
 - OWASP. (2025). *Top 10 for LLM Applications 2025*: LLM01: Prompt Injection; LLM05: Improper Output Handling. https://genai.owasp.org/llm-top-10/
@@ -378,7 +378,7 @@ This is the "Measure" and "Manage" of NIST's framework in practice: you don't *h
 
 Shipping is not the finish line; it's the start of the **measure → manage** loop. You watch real usage, feed surprises back into your eval set, and improve. That's how a demo becomes a dependable product instead of a liability.
 
-**Check yourself.** Name two things that should live in versioned config so you can re-evaluate before a provider's change reaches users.
+:::reveal Name two things that should live in versioned config so you can re-evaluate before a provider's change reaches users. ||| The model version and the prompt. Pinning both lets you run your eval set in CI and re-check quality before adopting a change.
 
 ## Sources
 - OWASP. (2025). *Top 10 for LLM Applications 2025*: LLM02: Sensitive Information Disclosure (keys/secrets); LLM03: Supply Chain. https://genai.owasp.org/llm-top-10/

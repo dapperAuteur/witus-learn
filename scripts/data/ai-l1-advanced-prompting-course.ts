@@ -43,7 +43,7 @@ A quick before/after:
 
 Both "strong" prompts win not because of fancy words, but because they supply **structure**: audience, length, format, role, and a precise task.
 
-**Check yourself.** In one sentence, why does structure usually matter more than clever wording?
+:::reveal In one sentence, why does structure usually matter more than clever wording? ||| A structured prompt states the audience, goal, length, and format, so the model stops guessing; magic words add no context.
 
 ## Sources
 - OpenAI. (2025). Prompting (API guide). https://platform.openai.com/docs/guides/prompting
@@ -127,7 +127,7 @@ Two cautions that keep examples honest:
 - **Your examples teach the pattern, including their mistakes.** A sloppy or biased example produces sloppy, biased output. Pick examples you'd be proud of.
 - **Examples don't make facts true.** Demonstrating a *format* is great; demonstrating a *claim* doesn't verify it. Sourcing and verification (next section) are still your job.
 
-**Check yourself.** Give one situation where showing an example beats describing what you want, and one thing an example still can't do for you.
+:::reveal Give one situation where showing an example beats describing what you want, and one thing an example still can't do for you. ||| It cannot make a claim true: showing a format does not verify facts, so sourcing and verification stay your job.
 
 ## Sources
 - OpenAI. (2025). Prompting (API guide): few-shot examples. https://platform.openai.com/docs/guides/prompting
@@ -158,7 +158,7 @@ That second point is the one this course cares about most. Showing the work is w
 
 **One honest caveat (we'll hammer this in lesson 9):** the written steps are *also* generated text. A model can produce a tidy, confident chain of reasoning that still reaches a wrong answer, or that doesn't actually reflect how it got there. "Show your reasoning" makes answers easier to check, it does **not** make them automatically correct. Reasoning is a tool for *you* to verify, not a guarantee.
 
-**Check yourself.** What are the two reasons to ask a model to "show its reasoning", and why is visible reasoning still not proof the answer is right?
+:::reveal What are the two reasons to ask a model to "show its reasoning", and why is visible reasoning still not proof the answer is right? ||| Better answers on multi-step problems, and a visible trail you can audit to find the exact step that went wrong. The steps are also generated text; a tidy, confident chain can reach a wrong answer or not reflect how the model got there.
 
 ## Sources
 - Wei, J., et al. (2022). Chain-of-thought prompting elicits reasoning in large language models. arXiv:2201.11903. https://arxiv.org/abs/2201.11903
@@ -189,7 +189,7 @@ A reliable pattern that stacks these moves:
 
 > Answer the question. Then, in a separate section: (1) list the sources I should check for each claim, (2) flag anything you're unsure about, and (3) note what could make this answer wrong.
 
-**Check yourself.** Why is "ask for sources" only half the job, and what's the other half that's on you?
+:::reveal Why is "ask for sources" only half the job, and what's the other half that's on you? ||| Models can invent real-looking URLs, DOIs, and case names; the other half is on you: open each source and confirm it says what is claimed.
 
 ## Sources
 - Anthropic. Prompt engineering overview: let the model say "I don't know"; ask for grounded claims. https://docs.anthropic.com/en/docs/prompt-engineering
@@ -221,7 +221,7 @@ Two moves that make iteration much faster:
 
 OpenAI's and Anthropic's guides both describe prompting as **iterative and empirical**: you test, observe, and refine against what a good result actually looks like. That's not a sign you're bad at it, iteration *is* the skill.
 
-**Check yourself.** When an answer is too long and too generic, which two pieces of the frame are probably missing, and what's the one-variable rule for fixing it?
+:::reveal When an answer is too long and too generic, which two pieces of the frame are probably missing, and what's the one-variable rule for fixing it? ||| A length format and an audience; add those and change only one variable at a time so you know what worked.
 
 ## Sources
 - OpenAI. (2025). Prompting (API guide): iterate and refine prompts. https://platform.openai.com/docs/guides/prompting
@@ -253,7 +253,7 @@ A grounding constraint worth memorizing, for any "answer from this document" tas
 
 It won't make the model perfect, but it sharply cuts the made-up-facts problem, and it keeps you in the driver's seat on what counts as evidence.
 
-**Check yourself.** Name three constraints you can add to almost any prompt, and the one "out" you should give the model to cut down on invented answers.
+:::reveal Name three constraints you can add to almost any prompt, and the one "out" you should give the model to cut down on invented answers. ||| Length, audience, and tone (scope and a list of what not to do also help).
 
 ## Sources
 - Anthropic. Prompt engineering overview: give Claude a way to say it doesn't know; constrain scope. https://docs.anthropic.com/en/docs/prompt-engineering
@@ -289,7 +289,7 @@ The NIST AI Risk Management Framework names "Valid and Reliable" as a core trust
 
 That's not a limitation to apologize for, it's the skill that makes you genuinely good with these tools while everyone else gets fooled.
 
-**Check yourself.** Step-by-step reasoning and a self-check both *look* convincing. Give the one reason neither one proves the answer is true.
+:::reveal Step-by-step reasoning and a self-check both *look* convincing. Give the one reason neither one proves the answer is true. ||| The reasoning and the self-check are also generated text; fluency is not accuracy, self-checks can rubber-stamp errors, and sources can be fabricated.
 
 ## Sources
 - Wei, J., et al. (2022). Chain-of-thought prompting elicits reasoning in large language models. arXiv:2201.11903. https://arxiv.org/abs/2201.11903

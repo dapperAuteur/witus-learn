@@ -38,7 +38,7 @@ Two facts set the tone for this whole course.
 
 **Second: the tech is getting better, fast.** That means this course can't just hand you a checklist of glitches. It has to teach you a way of thinking that survives the next model. That way of thinking is **provenance** (establishing where something came from) and you'll build it lesson by lesson.
 
-**Check yourself.** What's the difference between "synthetic media" and a "deepfake," and where does the real harm begin?
+:::reveal What's the difference between "synthetic media" and a "deepfake," and where does the real harm begin? ||| Synthetic media is any AI-generated or AI-altered content (text, image, audio, or video); a deepfake is the subset used to make a real person appear to say or do something they never did. Not with synthetic media itself, which is often harmless or useful, but when it is used to deceive without disclosure.
 
 ## Sources
 - Partnership on AI. (2023). Responsible Practices for Synthetic Media: A Framework for Collective Action. https://syntheticmedia.partnershiponai.org/
@@ -64,7 +64,7 @@ This is also why **AI "detector" tools can't be trusted as a verdict.** NIST, th
 
 So if looking *at* the pixels doesn't work, what does? Looking *around* the media: at its origin and its corroboration. That's the rest of this course.
 
-**Check yourself.** Give two reasons "count the fingers" stops working, and why a detector tool's confidence score isn't proof.
+:::reveal Give two reasons "count the fingers" stops working, and why a detector tool's confidence score isn't proof. ||| Generators are trained to fix every visible tell, the tells were never fully reliable, and manual spotting does not scale to a fast real feed.
 
 ## Sources
 - National Institute of Standards and Technology. GenAI: Deepfakes - Media Forensics Challenge. https://ai-challenges.nist.gov/forensics
@@ -88,7 +88,7 @@ The fact-checker's name for step 3 is **lateral reading**: instead of staying *o
 
 Why this is durable: it doesn't depend on any flaw in the media. **A perfect, artifact-free deepfake still has to come from somewhere and still fails to be corroborated by independent reporting.** Provenance and lateral reading work no matter how good the generator gets, which is exactly why newsrooms rely on them.
 
-**Check yourself.** Name the three provenance questions, and explain why lateral reading still works on a *flawless* fake.
+:::reveal Name the three provenance questions, and explain why lateral reading still works on a *flawless* fake. ||| Who made it (a named, accountable source)? Where did it come from (the earliest version)? Who else independently confirms it? Leaving the suspect page to open new tabs and check what trusted sources say about the source and claim; it works because even a perfect fake still has an origin and still lacks independent corroboration.
 
 ## Sources
 - Stanford Civic Online Reasoning / Digital Inquiry Group. Lateral Reading vs. Vertical Reading. https://cor.inquirygroup.org/curriculum/lessons/lateral-vs-vertical-reading/
@@ -114,7 +114,7 @@ Why this is durable: it doesn't depend on any flaw in the media. **A perfect, ar
 
 The honest takeaway: **content credentials and watermarks are provenance you can sometimes read off the file: a strong signal when you find one, never a verdict when you don't.** They complement the who/where/corroborate habit; they don't replace it.
 
-**Check yourself.** Why does the *absence* of a Content Credential or SynthID watermark NOT prove a piece of media is real?
+:::reveal Why does the *absence* of a Content Credential or SynthID watermark NOT prove a piece of media is real? ||| C2PA Content Credentials are an open-standard, tamper-evident 'nutrition label' attached to a file; SynthID is Google DeepMind's imperceptible watermark embedded in AI-generated content. Most media carries none, and a screenshot, re-upload, or metadata-stripping platform can erase them, so they are a positive signal when present, never a test you fail.
 
 ## Sources
 - Coalition for Content Provenance and Authenticity (C2PA). Content Credentials. https://c2pa.org/
@@ -140,7 +140,7 @@ The honest takeaway: **content credentials and watermarks are provenance you can
 
 The mindset: these tools help you **find the original and check the timeline** (which is provenance work, the durable skill), not magic "is-it-fake" detectors.
 
-**Check yourself.** What everyday deception does reverse-image search catch *without* any AI analysis, and why is missing metadata not evidence of a fake?
+:::reveal What everyday deception does reverse-image search catch *without* any AI analysis, and why is missing metadata not evidence of a fake? ||| A real, old photo reused with a false caption; the search reveals where and when the image actually appeared before.
 
 ## Sources
 - WITNESS Media Lab. OSINT Digital Forensics (verifying media). https://lab.witness.org/projects/osint-digital-forensics/
@@ -167,7 +167,7 @@ The mindset: these tools help you **find the original and check the timeline** (
 - **Slow the urgency.** Manufactured panic and secrecy ("don't tell anyone") exist to stop you from making that callback. Real emergencies survive a two-minute verification.
 - **For payments at work,** require **out-of-band confirmation** (a separate, known channel) before any urgent transfer, no matter how convincing the voice or face on the call.
 
-**Check yourself.** A caller has your relative's exact voice and says it's an emergency. What two steps verify it, and why doesn't recognizing the voice count?
+:::reveal A caller has your relative's exact voice and says it's an emergency. What two steps verify it, and why doesn't recognizing the voice count? ||| Hang up and call back on a number you already have, and use a pre-agreed family code word; slow the manufactured urgency instead of paying right away.
 
 ## Sources
 - FBI Internet Crime Complaint Center. (2024). Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud (Alert I-120324). https://www.ic3.gov/PSA/2024/PSA241203
@@ -193,7 +193,7 @@ This is exactly why fearmongering backfires, and why this course refuses it. If 
 
 The durable skill protects you from **both** errors: believing a convincing fake, and disbelieving an inconvenient truth.
 
-**Check yourself.** What is the "liar's dividend," and why does shouting "anything could be fake" actually make it worse?
+:::reveal What is the "liar's dividend," and why does shouting "anything could be fake" actually make it worse? ||| Because deepfakes are known to exist, a person caught on real, genuine video or audio can dismiss it as fake, using the mere possibility of fakery as a built-in excuse. It hands out the liar's dividend by training people to dismiss authentic evidence; the goal is calibrated trust and checking provenance, not reflexive cynicism.
 
 ## Sources
 - WITNESS. Prepare, Don't Panic: Synthetic Media and Deepfakes. https://lab.witness.org/projects/synthetic-media-and-deep-fakes/
@@ -218,7 +218,7 @@ The durable skill protects you from **both** errors: believing a convincing fake
 
 Notice every step is **provenance and corroboration** (origin, source, independent confirmation), not "spot the glitch." That's why the method outlasts each new generation of models.
 
-**Check yourself.** Name three steps a newsroom takes to verify a viral video, and explain why "we couldn't confirm it" is a responsible outcome.
+:::reveal Name three steps a newsroom takes to verify a viral video, and explain why "we couldn't confirm it" is a responsible outcome. ||| Find the earliest or original version, identify and contact the source, and read laterally for independent corroboration (then check internal consistency against the real world).
 
 ## Sources
 - WITNESS Media Lab. OSINT Digital Forensics. https://lab.witness.org/projects/osint-digital-forensics/
