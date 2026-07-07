@@ -35,7 +35,7 @@ The Constitution's answer was to **divide power vertically**: give the national 
 
 A practical consequence you live with every day: the level of government that issues your driver's license, runs your local schools, and writes most criminal law is usually your **state**, while the level that runs the military, issues currency, and conducts foreign policy is the **federal** government.
 
-**Check yourself.** In your own words, what does "federalism" divide, and name one extreme the framers were reacting against.
+:::reveal In your own words, what does "federalism" divide, and name one extreme the framers were reacting against. ||| The distant British Crown they felt they could not check, or the Articles of Confederation, whose central government was too weak to tax, regulate interstate trade, or enforce its decisions.
 
 ## Sources
 - National Archives. (n.d.-a). *Articles of Confederation (1777)*. https://www.archives.gov/milestone-documents/articles-of-confederation
@@ -65,7 +65,7 @@ A practical consequence you live with every day: the level of government that is
 
 A simple way to remember it: the federal government has **listed** powers (plus what's needed to carry them out); the states keep the **rest**. So the everyday question in a federalism dispute is often, "Is this an area the Constitution handed to the federal government, or one the states kept?"
 
-**Check yourself.** Which of the three kinds of power does the 10th Amendment describe, and which Article lists most of the enumerated powers?
+:::reveal Which of the three kinds of power does the 10th Amendment describe, and which Article lists most of the enumerated powers? ||| Enumerated (delegated) powers the Constitution lists for the federal government, implied powers needed to carry those out, and reserved powers kept by the states or the people. Reserved powers: everything not delegated to the federal government (nor prohibited to the states) is kept by the states or the people.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -102,7 +102,7 @@ The section closes with the **Necessary and Proper Clause** ("the elastic clause
 
 The key point for federalism: these powers are a **defined list**, not "anything the federal government wants." When a federal action is challenged, the question is whether it traces back to one of these enumerated powers (and the Necessary and Proper Clause), or whether it strays into territory the states kept.
 
-**Check yourself.** Name two powers Article I, § 8 gives to Congress, and what the Necessary and Proper Clause adds.
+:::reveal Name two powers Article I, § 8 gives to Congress, and what the Necessary and Proper Clause adds. ||| It lets Congress make all laws necessary and proper to carry out its listed powers, which is the textual source of implied powers.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -134,7 +134,7 @@ The phrase "among the several States" is the **interstate commerce** power: the 
 - **Why it matters for federalism.** Because interstate commerce is so broad, the clause is the basis for a great deal of federal law. At the same time, it is not unlimited: it reaches *interstate* commerce, which leaves room for the states' own authority over genuinely local matters. Drawing that line, what is "interstate" enough, has been litigated repeatedly over two centuries, and the Constitution Annotated tracks how the Court's reading has shifted (Constitution Annotated, n.d.-c).
 - **The takeaway.** When you hear that a federal law rests on "the Commerce Clause," it means Congress is regulating activity it treats as part of interstate commerce. Whether a particular activity qualifies is exactly the kind of federalism question courts decide.
 
-**Check yourself.** Which words in the Commerce Clause give Congress power over trade *between* the states, and why does that power loom so large today?
+:::reveal Which words in the Commerce Clause give Congress power over trade *between* the states, and why does that power loom so large today? ||| Commerce with foreign nations, among the several states, and with the Indian tribes; the 'among the several States' phrase is the interstate commerce power. So much economic life (goods, shipping, communications, markets) crosses state lines, so a great deal of activity counts as interstate commerce, though the power still reaches only interstate, not purely local, matters.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -176,7 +176,7 @@ When valid federal law and state law conflict, federal law wins and the state la
 
 Crucially, supremacy operates **only within the federal government's lane**. Where the federal government has no valid power to act, there is nothing for a state law to "conflict" with, and the state's law stands.
 
-**Check yourself.** What does the Supremacy Clause make "the supreme Law of the Land," and what does the word "preemption" describe?
+:::reveal What does the Supremacy Clause make "the supreme Law of the Land," and what does the word "preemption" describe? ||| The Constitution and valid federal laws made in pursuance of it, plus treaties; state judges are bound by them, and a conflicting state law gives way. When a valid federal law overrides a conflicting state law. It can be express, conflict, or field preemption, but only within the federal government's lane.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -208,7 +208,7 @@ Common examples:
 
 Concurrent powers are where federalism is most visible in daily life, and they are also where conflicts can arise, which is exactly when the **Supremacy Clause** (the previous lesson) decides the outcome. When the two levels' valid laws can coexist, both apply; when they truly conflict within the federal government's lane, the federal law prevails.
 
-**Check yourself.** Give two examples of a power that both the federal government and the states exercise, and explain how a conflict between their laws is resolved.
+:::reveal Give two examples of a power that both the federal government and the states exercise, and explain how a conflict between their laws is resolved. ||| The Supremacy Clause resolves it in favor of the federal law within the federal government's lane; when the two levels' valid laws can coexist, both apply.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -243,7 +243,7 @@ Concurrent powers are where federalism is most visible in daily life, and they a
 
 **Why it matters.** *McCulloch* is the bedrock authority for two ideas this course has introduced: **implied powers** (the federal government can do what is necessary and proper to carry out its listed powers) and **federal supremacy** (states cannot undermine valid federal action).
 
-**Check yourself.** What two things did *McCulloch v. Maryland* establish, one about the *scope* of federal power, one about what a *state* may not do to it?
+:::reveal What two things did *McCulloch v. Maryland* establish, one about the *scope* of federal power, one about what a *state* may not do to it? ||| That Congress has implied powers under the Necessary and Proper Clause (so it could charter a national bank), and that a state may not tax the federal government.
 
 ## Sources
 - National Archives. (n.d.-e). *McCulloch v. Maryland (1819)*. https://www.archives.gov/milestone-documents/mcculloch-v-maryland
@@ -276,7 +276,7 @@ Concurrent powers are where federalism is most visible in daily life, and they a
 
 **Why it matters.** *Gibbons* established that the Commerce Clause is a **substantial, national power** over interstate commercial activity, the doctrinal starting point for the broad reach of federal commercial regulation you saw in Lesson 4. It also shows the federal-state hierarchy in action: a state grant could not stand against a valid federal regulation of interstate commerce.
 
-**Check yourself.** How did *Gibbons v. Ogden* define "commerce," and why did the federal license win over the state monopoly?
+:::reveal How did *Gibbons v. Ogden* define "commerce," and why did the federal license win over the state monopoly? ||| Broadly, to include navigation and every species of commercial intercourse among the states, not just the buying and selling of goods. Congress's commerce power covered the interstate steamboat trade, so the valid federal license prevailed and the state monopoly grant had to give way.
 
 ## Sources
 - National Archives. (n.d.-d). *Gibbons v. Ogden (1824)*. https://www.archives.gov/milestone-documents/gibbons-v-ogden
@@ -318,7 +318,7 @@ Three differences worth remembering:
 
 A practical takeaway from US Civics 101 bears repeating: **much of what affects your daily life is decided at the state and local level**, which is also where individual participation often carries the most weight.
 
-**Check yourself.** Where do *local* governments get their authority, and which amendment is the default rule for powers the Constitution did not give to the federal government?
+:::reveal Where do *local* governments get their authority, and which amendment is the default rule for powers the Constitution did not give to the federal government? ||| From their state, not the U.S. Constitution, which does not mention cities or counties; they exist and act under their state's law. The 10th Amendment, which reserves those un-delegated powers to the states or the people.
 
 ## Sources
 - National Archives. (n.d.-c). *The Bill of Rights: A transcription*. https://www.archives.gov/founding-docs/bill-of-rights-transcript

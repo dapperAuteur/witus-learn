@@ -28,7 +28,7 @@ So in 1787 delegates met in Philadelphia at what became the **Constitutional Con
 
 A useful way to read the whole document: it first **creates** power (the three branches, in Articles I to III), then **divides and checks** that power, and finally lets the people **amend** it over time.
 
-**Check yourself.** Name two things the national government could *not* do under the Articles of Confederation.
+:::reveal Name two things the national government could *not* do under the Articles of Confederation. ||| It could not levy taxes or regulate trade; there was also no national executive or court system.
 
 ## Sources
 - National Archives. (n.d.-a). *Articles of Confederation (1777)*. https://www.archives.gov/milestone-documents/articles-of-confederation
@@ -57,7 +57,7 @@ Two things to notice:
 - **"We the People."** Authority is claimed to come from the people, not from the states acting alone, a deliberate contrast with the Articles of Confederation.
 - **The Preamble grants no power.** It states *purposes* (justice, domestic tranquility, common defense, the general welfare, liberty). Courts do not treat it as a source of government authority: the actual powers come from the Articles that follow. The Preamble is the statement of intent, not an operative grant (Constitution Annotated, n.d.-a).
 
-**Check yourself.** Whom does the Preamble name as establishing the Constitution, and does the Preamble itself grant the government any powers?
+:::reveal Whom does the Preamble name as establishing the Constitution, and does the Preamble itself grant the government any powers? ||| We the People of the United States. No. It states purposes only; the actual powers come from the Articles that follow.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -90,7 +90,7 @@ Key features:
 - **The power of the purse.** Spending requires an appropriation by law: "No Money shall be drawn from the Treasury, but in Consequence of Appropriations made by Law" (U.S. Const. art. I, § 9).
 - **How a law is made.** Section 7 sets out presentment: a bill that passes both chambers goes to the President, who signs or vetoes it; Congress can override a veto by a two-thirds vote in each chamber (U.S. Const. art. I, § 7).
 
-**Check yourself.** What are the two chambers of Congress, and how long is a term in each?
+:::reveal What are the two chambers of Congress, and how long is a term in each? ||| The House of Representatives (2-year terms) and the Senate (6-year terms).
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -123,7 +123,7 @@ What Article II sets up:
 
 Notice how much of the President's power is *shared* with Congress, that interlock is the checks-and-balances design.
 
-**Check yourself.** Name one presidential power that the Senate must approve before it takes effect.
+:::reveal Name one presidential power that the Senate must approve before it takes effect. ||| Making a treaty, or a major appointment such as a judge or officer, needs the Senate's advice and consent.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -154,7 +154,7 @@ Key features:
 - **Judicial review.** The text does not use the phrase, but the Supreme Court established the power to declare a law unconstitutional in **Marbury v. Madison, 5 U.S. 137 (1803)**, making the judiciary the interpreter of the Constitution (Library of Congress, n.d.).
 - **Treason, narrowly defined.** Article III, § 3 carefully limits treason ("only in levying War against them, or in adhering to their Enemies") and requires two witnesses or a confession in open court, the one crime the Constitution itself defines.
 
-**Check yourself.** How long do federal judges serve, and which 1803 case established judicial review?
+:::reveal How long do federal judges serve, and which 1803 case established judicial review? ||| During good behavior, effectively for life, and their salary cannot be reduced. Marbury v. Madison, 5 U.S. 137 (1803).
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -187,7 +187,7 @@ Key features:
 
 This was a deliberate guard against tyranny. As James Madison put it in **Federalist No. 51 (1788)**, "the great security against a gradual concentration of the several powers in the same department, consists in giving to those who administer each department the necessary constitutional means … to resist encroachments of the others", the design often summed up as "Ambition must be made to counteract ambition."
 
-**Check yourself.** Give one check each branch holds over another.
+:::reveal Give one check each branch holds over another. ||| The President can veto a bill; Congress can override a veto by a two-thirds vote and can impeach and remove officials.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -216,7 +216,7 @@ This was a deliberate guard against tyranny. As James Madison put it in **Federa
 
 A practical takeaway: much of what affects your daily life is decided at the **state and local** level, not in Washington, while a core set of national matters is reserved to the federal government.
 
-**Check yourself.** Which amendment reserves un-delegated powers to the states and the people?
+:::reveal Which amendment reserves un-delegated powers to the states and the people? ||| The 10th Amendment.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
@@ -258,7 +258,7 @@ A quick map of the ten:
 
 The First Amendment's text is worth reading directly: "Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances" (U.S. Const. amend. I).
 
-**Check yourself.** What are the first ten amendments collectively called, and which one protects speech and religion?
+:::reveal What are the first ten amendments collectively called, and which one protects speech and religion? ||| The Bill of Rights, ratified in 1791. The First Amendment.
 
 ## Sources
 - National Archives. (n.d.-c). *The Bill of Rights: A transcription*. https://www.archives.gov/founding-docs/bill-of-rights-transcript

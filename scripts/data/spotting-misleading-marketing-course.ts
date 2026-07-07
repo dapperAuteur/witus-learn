@@ -35,7 +35,7 @@ None of those is illegal or even wrong on its own. The problem starts when persu
 
 **Mindset for this course:** you don't have to distrust everything. You need a small set of habits that let you **pause, check, and decide** instead of reacting. A skilled consumer isn't paranoid. They're hard to fool.
 
-**Check yourself.** Name three persuasion levers an ad might use that are perfectly legal.
+:::reveal Name three persuasion levers an ad might use that are perfectly legal. ||| Yes. Persuasion is legal and normal. The problem starts only when it crosses into deception, creating a false impression likely to change what a reasonable person does with their money. Any three of: emotion, identity, social proof, authority, and scarcity or urgency. None is illegal on its own.
 
 ## Sources
 - Federal Trade Commission. (1983). FTC Policy Statement on Deception. https://www.ftc.gov/legal-library/browse/ftc-policy-statement-deception
@@ -127,7 +127,7 @@ How to read reviews like a pro:
 - **Look for disclosure.** No "#ad" on an obviously promotional post is itself a warning.
 - **Read the 3-star reviews**: they tend to be the most specific and honest.
 
-**Check yourself.** What does an influencer have to disclose, and what is the simplest way to do it?
+:::reveal What does an influencer have to disclose, and what is the simplest way to do it? ||| Any material connection to the brand. The simplest way is a clear '#ad' or 'sponsored' placed with the endorsement, not buried in a bio or behind 'more.'
 
 ## Sources
 - Federal Trade Commission. (2024). Rule on the Use of Consumer Reviews and Testimonials, 16 CFR Part 465. https://www.ftc.gov/legal-library/browse/rules/rule-use-consumer-reviews-testimonials
@@ -155,7 +155,7 @@ Defenses:
 - **Find the total before you commit.** Hunt for the all-in price *before* entering payment details.
 - **Before you subscribe, find the cancel path.** If it's hidden, that's the point, and a reason not to sign up.
 
-**Check yourself.** Name two of the four dark-pattern families from the FTC report.
+:::reveal Name two of the four dark-pattern families from the FTC report. ||| An interface designed to trick you into doing something you didn't mean to. Two of the families are misleading or disguised ads, hard-to-cancel subscription traps, buried terms and junk fees, and tricked into sharing data.
 
 ## Sources
 - Federal Trade Commission. (2022). Bringing Dark Patterns to Light (Staff Report). https://www.ftc.gov/reports/bringing-dark-patterns-light
@@ -179,7 +179,7 @@ Know the rules:
 
 Defense: for anything you'd put in your body, **look for the disclaimer, separate "supports" from "cures," and check a primary source** (the next lessons show how) before trusting, or spending.
 
-**Check yourself.** A supplement says it "cures diabetes." Why is that claim almost certainly illegal?
+:::reveal A supplement says it "cures diabetes." Why is that claim almost certainly illegal? ||| Supplements may make structure/function claims (like 'supports healthy blood sugar') but may not claim to diagnose, treat, cure, or prevent a disease. The FDA also does not pre-approve them under DSHEA.
 
 ## Sources
 - U.S. Food and Drug Administration. Structure/Function Claims. https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/structurefunction-claims
@@ -204,7 +204,7 @@ Defense: for anything you'd put in your body, **look for the disclaimer, separat
 
 Defense questions: **Compared to what? Out of how many? Measured by whom? Does the chart's axis start at zero?** "4 out of 5 dentists" means little without knowing how many were asked and how the question was framed.
 
-**Check yourself.** Why can "cuts your risk in half" be technically true and still misleading?
+:::reveal Why can "cuts your risk in half" be technically true and still misleading? ||| It reports a relative change that can hide a tiny absolute one, such as going from 2-in-a-million to 1-in-a-million. Always ask for the absolute numbers.
 
 ## Sources
 - News Literacy Project. Resource Library (evaluating evidence and data). https://newslit.org/educators/resources/
@@ -228,7 +228,7 @@ What to watch for:
 
 The durable defense isn't spotting pixels, it's **provenance and motive**: *Who is actually behind this, and what do they want me to do?* The verification habits in the next lesson work whether the content is human- or AI-made.
 
-**Check yourself.** Why is "I recognized the celebrity" a weak reason to trust an endorsement video?
+:::reveal Why is "I recognized the celebrity" a weak reason to trust an endorsement video? ||| AI can fake a familiar face or voice cheaply, so recognizing the person is not proof they actually endorsed the product, especially for get-rich-quick or miracle-cure offers.
 
 ## Sources
 - Federal Trade Commission. (2024). Rule on the Use of Consumer Reviews and Testimonials, 16 CFR Part 465. https://www.ftc.gov/legal-library/browse/rules/rule-use-consumer-reviews-testimonials
@@ -253,7 +253,7 @@ The durable defense isn't spotting pixels, it's **provenance and motive**: *Who 
 
 You don't have to run all five every time. For a small purchase, "follow the money" and a quick lateral read are often enough. For health, money, or anything you'd act on seriously, do them all.
 
-**Check yourself.** What does "lateral reading" mean, and why is it better than judging a site by its own polish?
+:::reveal What does "lateral reading" mean, and why is it better than judging a site by its own polish? ||| Opening a new tab to see what independent, reputable sources say about the seller and the claim. A slick site can still be deceptive, so trusted outside sources are a better guide.
 
 ## Sources
 - Stanford Civic Online Reasoning. Lateral Reading. https://cor.stanford.edu/curriculum/collections/lateral-reading/
