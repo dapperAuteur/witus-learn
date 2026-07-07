@@ -36,7 +36,7 @@ Maryland governs under its **Constitution of 1867** (its fourth) and became the 
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Maryland's own government ([mgaleg.maryland.gov](https://mgaleg.maryland.gov/), [elections.maryland.gov](https://elections.maryland.gov/), [mdcourts.gov](https://www.mdcourts.gov/)) is the authoritative source. When something is time-sensitive, like the court's new name or budget mechanics, we say so.
 
-**Check yourself.** What can Maryland's Legislature generally NOT do to the Governor's proposed budget, and why does that make the Governor so powerful?
+:::reveal What can Maryland's Legislature generally NOT do to the Governor's proposed budget, and why does that make the Governor so powerful? ||| It cannot add new spending or raise items; it can only cut or reduce them (the executive-budget system).
 
 ## Sources
 - Maryland General Assembly. (n.d.). *The executive budget system; the Maryland Constitution (1867)*. mgaleg.maryland.gov. https://mgaleg.maryland.gov/
@@ -76,7 +76,7 @@ So Maryland's *elected* statewide executive is compact (Governor/Lt. Governor, A
 
 **Veto and override.** The Governor may veto bills; the General Assembly overrides with a **three-fifths vote of each chamber.**
 
-**Check yourself.** Which statewide executive officers do Maryland voters elect, and how long is a Maryland legislative session?
+:::reveal Which statewide executive officers do Maryland voters elect, and how long is a Maryland legislative session? ||| Governor and Lt. Governor (on a joint ticket), the Attorney General, and the Comptroller. 141 delegates in the House and 47 senators in the Senate; the annual session lasts 90 days.
 
 ## Sources
 - Maryland State Board of Elections. (n.d.). *Statewide elected officials*. elections.maryland.gov. https://elections.maryland.gov/
@@ -111,7 +111,7 @@ So Maryland's *elected* statewide executive is compact (Governor/Lt. Governor, A
 
 So Maryland blends **merit appointment** with some **elections**, depending on the court.
 
-**Check yourself.** What is Maryland's highest court now called (and what was it called before 2022), and how are its appellate judges chosen?
+:::reveal What is Maryland's highest court now called (and what was it called before 2022), and how are its appellate judges chosen? ||| The Supreme Court of Maryland; before 2022 it was the Court of Appeals. The Governor appoints them with Senate confirmation, and they then face yes/no retention elections.
 
 ## Sources
 - Maryland Judiciary. (n.d.). *The Maryland courts; the 2022 renaming; judicial selection*. mdcourts.gov. https://www.mdcourts.gov/
@@ -148,7 +148,7 @@ So Maryland blends **merit appointment** with some **elections**, depending on t
 
 Constitutional **amendments** are proposed by the General Assembly (by a **three-fifths vote**) and then ratified by the **voters.**
 
-**Check yourself.** What is the difference between Maryland's referendum and a citizen initiative, and which one does Maryland have?
+:::reveal What is the difference between Maryland's referendum and a citizen initiative, and which one does Maryland have? ||| A petition to referendum (a citizen veto that sends a passed law to the voters); it has no citizen initiative to propose laws.
 
 ## Sources
 - Maryland General Assembly. (n.d.). *How a bill becomes law; amending the constitution*. mgaleg.maryland.gov. https://mgaleg.maryland.gov/

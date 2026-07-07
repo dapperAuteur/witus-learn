@@ -37,7 +37,7 @@ This is the through-line: Wyoming's civic identity is built around **equal polit
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Wyoming's own government ([wyoleg.gov](https://wyoleg.gov), [sos.wyo.gov](https://sos.wyo.gov), [courts.state.wy.us](https://courts.state.wy.us)) is the authoritative source.
 
-**Check yourself.** Why is Wyoming called "The Equality State," and what did it refuse to give up to gain statehood?
+:::reveal Why is Wyoming called "The Equality State," and what did it refuse to give up to gain statehood? ||| It was the first place in America to grant women the right to vote, as a territory in 1869, and its 1889 Constitution proclaims equal political rights. Women's suffrage. It entered the Union in 1890 as the first state with women's suffrage in its constitution.
 
 ## Sources
 - Wyoming Secretary of State. (n.d.). *The Equality State: women's suffrage first, 1869; Nellie Tayloe Ross*. sos.wyo.gov. https://sos.wyo.gov/
@@ -61,7 +61,7 @@ Because there's **no Lieutenant Governor**, the **Secretary of State** is Wyomin
 
 The **Legislative** and **Judicial** branches complete the three (next lessons).
 
-**Check yourself.** How many statewide executives does Wyoming elect, and who succeeds the Governor (since there's no Lieutenant Governor)?
+:::reveal How many statewide executives does Wyoming elect, and who succeeds the Governor (since there's no Lieutenant Governor)? ||| Five (Governor, Secretary of State, State Auditor, State Treasurer, and Superintendent of Public Instruction). Wyoming has no Lieutenant Governor. The Secretary of State, who also runs elections and fills the succession role a lieutenant governor plays elsewhere.
 
 ## Sources
 - Wyoming Secretary of State. (n.d.). *Statewide elected officials; succession*. sos.wyo.gov. https://sos.wyo.gov/`,
@@ -97,7 +97,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** How large is Wyoming's Legislature, and how does Wyoming choose its Supreme Court justices?
+:::reveal How large is Wyoming's Legislature, and how does Wyoming choose its Supreme Court justices? ||| A 62-member House (2-year terms) and a 31-member Senate (4-year terms). It is a part-time citizen legislature meeting in short sessions: a longer general session in odd years and a shorter budget session in even years. By merit selection (the Missouri Plan): a nominating commission sends the Governor a list, the Governor appoints, and the judge later faces a nonpartisan retention vote. Wyoming has no state income tax and funds government heavily through mineral and energy revenue plus sales and property taxes.
 
 ## Sources
 - Wyoming Legislature. (n.d.). *The Legislature; sessions; the state tax structure*. wyoleg.gov. https://www.wyoleg.gov/

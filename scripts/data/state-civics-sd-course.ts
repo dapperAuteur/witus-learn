@@ -38,7 +38,7 @@ This is the through-line: South Dakota sees **direct citizen lawmaking** as a fo
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but South Dakota's own government (sdlegislature.gov, sdsos.gov, ujs.sd.gov) is the authoritative source.
 
-**Check yourself.** What national first does South Dakota hold, and in what year, and how does that compare to Oregon?
+:::reveal What national first does South Dakota hold, and in what year, and how does that compare to Oregon? ||| 1898, years before Oregon's more famous 1902 system.
 
 ## Sources
 - South Dakota Secretary of State. (n.d.). *The initiative and referendum: South Dakota's 1898 first*. sdsos.gov. https://sdsos.gov/
@@ -65,7 +65,7 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** How many members are in each chamber of the South Dakota Legislature, and does South Dakota have a state income tax?
+:::reveal How many members are in each chamber of the South Dakota Legislature, and does South Dakota have a state income tax? ||| The House has 70 members and the Senate has 35, all serving 2-year terms in a part-time citizen legislature. No. South Dakota levies no state personal income tax and relies on sales and other taxes.
 
 ## Sources
 - South Dakota Secretary of State. (n.d.). *Statewide elected officials*. sdsos.gov. https://sdsos.gov/
@@ -102,7 +102,7 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
 
 **And remember the citizen path (Lesson 1).** As the **first initiative and referendum state**, South Dakota lets citizens **make law directly**: gather signatures to put a **statute or constitutional amendment** on the ballot (initiative), or to **reject** a law the Legislature passed (referendum). ⚠️ South Dakota has debated **raising signature or approval thresholds** for measures in recent years, so confirm the **current** rules at sdsos.gov. The takeaway: in South Dakota, the **Legislature and the voters both make law**, and the voters have done so since 1898.
 
-**Check yourself.** How does South Dakota choose its Supreme Court justices, and what are the two ways law gets made here?
+:::reveal How does South Dakota choose its Supreme Court justices, and what are the two ways law gets made here? ||| By merit selection (the Missouri Plan): a commission screens applicants, the Governor appoints from the list, and justices later face nonpartisan yes/no retention elections. Through the Legislature passing bills, and directly by the voters using the initiative and referendum.
 
 ## Sources
 - South Dakota Unified Judicial System. (n.d.). *Judicial selection: merit selection and retention*. ujs.sd.gov. https://ujs.sd.gov/

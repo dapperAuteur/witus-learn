@@ -47,7 +47,7 @@ This is the through-line of Arizona civics: in a lot of states, "the government"
 
 **A note this course keeps returning to:** state facts **vary and change**, and Arizona (precisely because voters can amend the constitution by initiative) changes its rules relatively often. Everything here is current as of authoring, but Arizona's own government ([azleg.gov](https://azleg.gov), [azsos.gov](https://azsos.gov), [azcourts.gov](https://azcourts.gov)) is the authoritative source. When something is time-sensitive or mid-transition, we say so, loudly (see the Lieutenant Governor lesson).
 
-**Check yourself.** When did Arizona become a state, and name the three direct-democracy tools its constitution gives voters.
+:::reveal When did Arizona become a state, and name the three direct-democracy tools its constitution gives voters. ||| Arizona's constitution was drafted in 1910, and Arizona became the 48th state on February 14, 1912. Initiative (put a new law or amendment on the ballot), referendum (veto a law the legislature passed, or refer measures to voters), and recall (remove an elected official before the term ends).
 
 ## Sources
 - Arizona Secretary of State. (n.d.). *Arizona Constitution and direct democracy (initiative, referendum, recall)*. AZSOS.gov. https://azsos.gov/
@@ -85,7 +85,7 @@ This is the through-line of Arizona civics: in a lot of states, "the government"
 
 **Veto override: a two-thirds rule.** Unlike Indiana's weak governor, **Arizona's legislature needs a two-thirds vote of each chamber to override the governor's veto** (Arizona State Legislature, n.d.). That makes Arizona's governor comparatively **strong** on vetoes, a useful contrast to keep in mind if you study more than one state.
 
-**Check yourself.** How many senators and representatives does Arizona have, what's unusual about how its 30 districts are represented, and what vote does it take to override the Arizona governor's veto?
+:::reveal How many senators and representatives does Arizona have, what's unusual about how its 30 districts are represented, and what vote does it take to override the Arizona governor's veto? ||| Arizona has 30 senators and 60 representatives. Each of the 30 districts elects one senator and two representatives, so all three share the same district. A two-thirds vote of each chamber, which makes Arizona's governor comparatively strong on vetoes.
 
 ## Sources
 - Arizona State Legislature. (n.d.). *About the Arizona Legislature*. AZLeg.gov. https://www.azleg.gov/
@@ -122,7 +122,7 @@ This is meant to insulate the busiest, highest-stakes courts from campaign polit
 
 **Why this matters civically:** on an Arizona ballot you might see judges up for a **yes/no retention vote** (in a large county) or judges in a **contested election** (in a small county), and it's the *same state*. Knowing which system your county uses tells you what kind of decision your ballot is actually asking you to make.
 
-**Check yourself.** Explain what determines whether an Arizona Superior Court judge is chosen by merit selection or by election, and why the same state can show you two different kinds of judicial races.
+:::reveal Explain what determines whether an Arizona Superior Court judge is chosen by merit selection or by election, and why the same state can show you two different kinds of judicial races. ||| The population size of the county. Large counties (historically above about 250,000 residents) use merit selection, while smaller counties elect their Superior Court judges. A nonpartisan commission screens applicants and sends the Governor a short list, the Governor appoints a judge from it, and the judge later faces a yes/no retention vote by voters.
 
 ## Sources
 - Arizona Judicial Branch. (n.d.). *Judicial selection / merit selection*. AZCourts.gov. https://www.azcourts.gov/
@@ -162,7 +162,7 @@ This is meant to insulate the busiest, highest-stakes courts from campaign polit
 
 **Why Route 2 is a big deal:** it means an idea the Legislature refuses to pass can still become law if voters want it, and, as the next section shows, once voters pass it, the Legislature can't easily undo it.
 
-**Check yourself.** Describe the two different ways a new law can be made in Arizona, and explain why the initiative route makes Arizona's voters a kind of "third lawmaker."
+:::reveal Describe the two different ways a new law can be made in Arizona, and explain why the initiative route makes Arizona's voters a kind of "third lawmaker." ||| Through the Legislature (a bill passes both chambers and goes to the Governor), or by voters directly through the initiative, which puts a law or amendment on the ballot. Citizens gather enough valid signatures and the proposed law or amendment goes directly on the ballot, and it becomes law without the Legislature's or Governor's signature.
 
 ## Sources
 - Arizona State Legislature. (n.d.). *How a bill becomes law / legislative process*. AZLeg.gov. https://www.azleg.gov/
@@ -198,7 +198,7 @@ This is meant to insulate the busiest, highest-stakes courts from campaign polit
 
 The practical upshot: in Arizona, your local services come from your **county** and your **city or town**, not from a township. That two-layer simplicity is itself a defining feature of Arizona local government.
 
-**Check yourself.** How many counties does Arizona have, what elected body runs a county, and what local layer, common in some other states, does Arizona NOT have?
+:::reveal How many counties does Arizona have, what elected body runs a county, and what local layer, common in some other states, does Arizona NOT have? ||| Arizona has 15 counties, and each one is run by an elected Board of Supervisors. Townships. Below the county, Arizona's local government is just cities and towns (municipalities).
 
 ## Sources
 - Arizona Secretary of State. (n.d.). *Arizona counties and local government*. AZSOS.gov. https://azsos.gov/
@@ -234,7 +234,7 @@ The practical upshot: in Arizona, your local services come from your **county** 
 
 In plain terms: **in Arizona, a law the voters pass is protected from the very legislators the voters bypassed to pass it.** This is why Arizona initiatives "stick" in a way they might not elsewhere, and it's a direct expression of the Progressive-Era distrust baked into the 1910 constitution.
 
-**Check yourself.** What is the Active Early Voting List, and under the Voter Protection Act, what are the TWO conditions the Legislature must meet to amend a voter-approved initiative?
+:::reveal What is the Active Early Voting List, and under the Voter Protection Act, what are the TWO conditions the Legislature must meet to amend a voter-approved initiative? ||| A list you can join so a mail ballot is sent to you automatically for each election, instead of requesting one every time. Any change needs a three-fourths supermajority of each chamber, and it must further the purpose of the original measure. The Legislature cannot repeal the measure at all.
 
 ## Sources
 - Arizona Secretary of State. (n.d.). *Voting in Arizona: early voting and the Active Early Voting List*. AZSOS.gov. https://azsos.gov/
@@ -271,7 +271,7 @@ Both can be "true" for different moments in time, which is exactly why you must 
 
 **Do this:** to know whether Arizona has a sitting Lieutenant Governor *right now*, and who is currently first in the line of succession, confirm at the **Arizona Secretary of State ([azsos.gov](https://azsos.gov))** and the **Arizona Legislature ([azleg.gov](https://azleg.gov))**. This is the single most important "verify, don't assert" moment in the course.
 
-**Check yourself.** Historically, who was first in line to succeed Arizona's governor, what did Proposition 131 (2022) create and when does it take effect, and why should you verify the current status rather than trusting an older source?
+:::reveal Historically, who was first in line to succeed Arizona's governor, what did Proposition 131 (2022) create and when does it take effect, and why should you verify the current status rather than trusting an older source? ||| The Secretary of State. Arizona had no Lieutenant Governor, and the Secretary of State has become governor several times in Arizona history. It creates the office of Lieutenant Governor, effective with the 2026 election cycle, and makes that new officer (not the Secretary of State) first in line of succession.
 
 ## Sources
 - Ballotpedia. (n.d.). *Arizona Proposition 131, Create Office of Lieutenant Governor Amendment (2022)*. https://ballotpedia.org/Arizona_Proposition_131,_Create_Office_of_Lieutenant_Governor_Amendment_(2022)

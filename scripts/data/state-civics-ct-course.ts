@@ -36,7 +36,7 @@ Connecticut is also nicknamed **"the Land of Steady Habits,"** reflecting a trad
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Connecticut's own government ([cga.ct.gov](https://cga.ct.gov), [portal.ct.gov/sots](https://portal.ct.gov/sots), [jud.ct.gov](https://jud.ct.gov)) is the authoritative source. When something is time-sensitive, like Connecticut's new early voting, we say so.
 
-**Check yourself.** Why is Connecticut called "The Constitution State," and what document is the nickname based on?
+:::reveal Why is Connecticut called "The Constitution State," and what document is the nickname based on? ||| The Fundamental Orders of 1639, a written framework of self-government that many historians call one of the first written constitutions to establish government by the consent of the governed. It governs under its Constitution of 1965. Connecticut became the 5th state on January 9, 1788.
 
 ## Sources
 - Connecticut Secretary of the State. (n.d.). *The Fundamental Orders of 1639 and 'The Constitution State'*. portal.ct.gov/sots. https://portal.ct.gov/sots/
@@ -70,7 +70,7 @@ Connecticut is also nicknamed **"the Land of Steady Habits,"** reflecting a trad
 
 **The result: a two-tier system.** Connecticut government is essentially **the state + the towns**, with **no county layer** in between. This makes the **town** unusually important (next lesson) and the **state** unusually central, a genuinely distinctive American arrangement, shared only with a couple of other states (like Rhode Island).
 
-**Check yourself.** What did Connecticut do to its county governments in 1960, and who provides "county-type" services now?
+:::reveal What did Connecticut do to its county governments in 1960, and who provides "county-type" services now? ||| It abolished them. Connecticut has no county governments at all; the eight historic counties remain only as geographic reference areas, with no commissioners, councils, budgets, or services. The state and the towns. Nine planning regions act as county-equivalents only for federal statistical purposes, not as general-purpose governments.
 
 ## Sources
 - Connecticut General Assembly. (n.d.). *The abolition of county government (1960); planning regions*. cga.ct.gov. https://www.cga.ct.gov/
@@ -113,7 +113,7 @@ All serve **4-year terms** with **no term limits.**
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the General Assembly overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** Which statewide executive officers do Connecticut voters elect, and how long is a Connecticut state senator's term?
+:::reveal Which statewide executive officers do Connecticut voters elect, and how long is a Connecticut state senator's term? ||| Two years, the same as House members. The Senate has 36 senators and the House has 151 representatives. The Secretary of the State, one of Connecticut's separately elected plural executive officers, all of whom serve 4-year terms with no term limits.
 
 ## Sources
 - Connecticut Secretary of the State. (n.d.). *Statewide elected officials*. portal.ct.gov/sots. https://portal.ct.gov/sots/
@@ -151,7 +151,7 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
 
 **No statewide citizen initiative.** Connecticut citizens **cannot** put a statute or amendment on the ballot by petition. **Amendments** are proposed by the **General Assembly** and then ratified by the **voters** (and the state periodically asks voters whether to call a **constitutional convention**). So the citizen role is **ratification**, not initiation.
 
-**Check yourself.** Who appoints Connecticut's judges, and can Connecticut citizens start a law by initiative?
+:::reveal Who appoints Connecticut's judges, and can Connecticut citizens start a law by initiative? ||| A Judicial Selection Commission screens candidates, the Governor nominates, and the General Assembly appoints them to 8-year terms. Judges are not elected in campaigns. No. Connecticut has no statewide initiative. The General Assembly proposes amendments and the voters ratify them, so the citizen role is ratification, not initiation.
 
 ## Sources
 - Connecticut Judicial Branch. (n.d.). *Judicial selection: the commission, nomination, and legislative appointment*. jud.ct.gov. https://www.jud.ct.gov/

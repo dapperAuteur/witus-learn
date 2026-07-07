@@ -36,7 +36,7 @@ Iowa governs under its **Constitution of 1857**, and became the **29th state on 
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Iowa's own government ([legis.iowa.gov](https://legis.iowa.gov), [sos.iowa.gov](https://sos.iowa.gov), [iowacourts.gov](https://iowacourts.gov)) is the authoritative source.
 
-**Check yourself.** How is a caucus different from a primary, and why did Iowa's caucuses get so much attention?
+:::reveal How is a caucus different from a primary, and why did Iowa's caucuses get so much attention? ||| A caucus is an in-person neighborhood meeting run by the parties to discuss candidates and register a presidential preference, not a quiet ballot cast at a polling place. They traditionally went first on the presidential calendar, giving a small farm state huge influence and a tradition of face-to-face retail campaigning (though the calendar has since shifted).
 
 ## Sources
 - Iowa Secretary of State. (n.d.). *The Iowa caucuses and elections*. sos.iowa.gov. https://sos.iowa.gov/
@@ -70,7 +70,7 @@ The result is districts drawn by **professionals following neutral rules**, not 
 
 Why it matters: redistricting decides **which votes matter** for a decade. Iowa shows that a state can **take the pen out of politicians' hands** and hand it to a neutral agency, a reform other states study.
 
-**Check yourself.** Who draws Iowa's district maps, and what is that body forbidden from considering?
+:::reveal Who draws Iowa's district maps, and what is that body forbidden from considering? ||| The nonpartisan Legislative Services Agency (LSA), using neutral criteria such as equal population, compact districts, and respect for county and city lines. Past election results, incumbents' addresses, and party registration, which is why Iowa's process is a national model for reducing gerrymandering.
 
 ## Sources
 - Iowa Legislature. (n.d.). *Redistricting and the Legislative Services Agency (LSA)*. legis.iowa.gov. https://www.legis.iowa.gov/`,
@@ -109,7 +109,7 @@ Statewide officers serve **4-year terms.**
 
 **Veto and override.** The Governor may veto bills (and has a strong **item veto** on appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** How many members are in each chamber of the Iowa General Assembly, and how does Iowa choose its Supreme Court justices?
+:::reveal How many members are in each chamber of the Iowa General Assembly, and how does Iowa choose its Supreme Court justices? ||| The House has 100 members serving 2-year terms and the Senate has 50 senators serving 4-year terms. By the Missouri Plan: a nominating commission sends the Governor a list, the Governor appoints from it, and the justice later faces a nonpartisan yes/no retention election.
 
 ## Sources
 - Iowa Secretary of State. (n.d.). *Statewide elected officials*. sos.iowa.gov. https://sos.iowa.gov/

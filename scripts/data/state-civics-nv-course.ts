@@ -37,7 +37,7 @@ Nevada governs under its **Constitution of 1864**, adopted when Nevada became a 
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Nevada's own government (leg.state.nv.us, nvsos.gov, nvcourts.gov) is the authoritative source.
 
-**Check yourself.** What can Nevada voters do that no other state's voters can, and does that option decide the winner?
+:::reveal What can Nevada voters do that no other state's voters can, and does that option decide the winner? ||| 'None of These Candidates,' printed as a real choice on statewide ballots since 1976.
 
 ## Sources
 - Nevada Secretary of State. (n.d.). *'None of These Candidates' on statewide ballots*. nvsos.gov. https://www.nvsos.gov/
@@ -60,7 +60,7 @@ Nevada's gaming regulation became the **model copied by other states and countri
 
 Why it matters for civics: Nevada is a case study in how a **single industry** can shape a state's **tax structure, budget, and even its regulatory institutions.** The Gaming Control Board is, in effect, one of the most powerful bodies in Nevada government.
 
-**Check yourself.** Which two bodies regulate Nevada's casinos, and why does Nevada have no state income tax?
+:::reveal Which two bodies regulate Nevada's casinos, and why does Nevada have no state income tax? ||| The Gaming Control Board investigates and enforces; the Gaming Commission licenses casinos and sets policy. Gaming taxes and fees, plus sales and other taxes tied to tourism, raise enough revenue that Nevada levies no state income tax.
 
 ## Sources
 - Nevada Legislature. (n.d.). *Gaming regulation (Gaming Control Board and Gaming Commission); Nevada's tax structure*. leg.state.nv.us. https://www.leg.state.nv.us/`,
@@ -91,7 +91,7 @@ Statewide officers serve **4-year terms** with **term limits** (two terms).
 
 **Veto and override.** The Governor may veto bills; the Legislature overrides with a **two-thirds vote of each house**, but note that with a biennial session, an override often can't happen until the next session unless a special session is called.
 
-**Check yourself.** How often does Nevada's Legislature meet and for how long, and how are Nevada's judges chosen?
+:::reveal How often does Nevada's Legislature meet and for how long, and how are Nevada's judges chosen? ||| It meets every other year, in odd-numbered years, limited to 120 days; the Assembly has 42 members and the Senate has 21 senators. Judges are elected on a nonpartisan ballot to 6-year terms; the Nevada Supreme Court has 7 justices.
 
 ## Sources
 - Nevada Secretary of State. (n.d.). *Statewide elected officials*. nvsos.gov. https://www.nvsos.gov/
@@ -120,7 +120,7 @@ Remember the **citizen backstop**: Nevadans can **initiate** their own laws and 
 
 The takeaway: Nevada pairs a **short, every-other-year Legislature** with **strong citizen lawmaking**, but makes constitutional change by initiative pass the unusual **"twice, two years apart"** test.
 
-**Check yourself.** How many times must a citizen-initiated constitutional amendment pass in Nevada before it takes effect?
+:::reveal How many times must a citizen-initiated constitutional amendment pass in Nevada before it takes effect? ||| Twice: it must win in two consecutive general elections, two years apart.
 
 ## Sources
 - Nevada Secretary of State. (n.d.). *Initiative, referendum, and the two-election amendment rule*. nvsos.gov. https://www.nvsos.gov/

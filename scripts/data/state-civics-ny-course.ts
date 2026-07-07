@@ -57,7 +57,7 @@ A state constitution does for the state what the U.S. Constitution does for the 
 
 **A note this course keeps returning to:** state facts **vary and change**. Rules and dates described here are current as of authoring, but the authoritative source is always New York's own government (the offices cited below), not a textbook. When something is time-sensitive, we say so.
 
-**Check yourself.** In what year was New York's current constitution adopted, what two things must happen for an ordinary amendment to pass, and what question is New York required to put on the ballot every 20 years?
+:::reveal In what year was New York's current constitution adopted, what two things must happen for an ordinary amendment to pass, and what question is New York required to put on the ballot every 20 years? ||| 1894. It came out of an 1894 constitutional convention and has been amended many times since. Whether to hold a convention to revise the state constitution. The most recent was in 2017 (voters said no), so the next is 2037.
 
 ## Sources
 - New York State Senate. (n.d.-a). *The New York State Constitution*. NYSenate.gov. https://www.nysenate.gov/new-york-state-constitution
@@ -85,7 +85,7 @@ Because the Attorney General and Comptroller answer to voters, not to the Govern
 
 **Judicial: the state courts (with famously confusing names).** New York's court system is real-world confusing because its court **names are inverted** compared with the federal system: the trial court is called the "Supreme Court" and the top court is the "Court of Appeals." That inversion is important enough to get its own lesson next.
 
-**Check yourself.** Name New York's three branches; give the size and term of each legislative chamber; and name two statewide executive officers (besides the Governor) whom New Yorkers elect separately.
+:::reveal Name New York's three branches; give the size and term of each legislative chamber; and name two statewide executive officers (besides the Governor) whom New Yorkers elect separately. ||| The Assembly has 150 members and the Senate has 63 members. Both are elected to 2-year terms. Because voters separately elect the Attorney General and the Comptroller, not just the Governor, so executive power is shared rather than held by the Governor alone.
 
 ## Sources
 - New York State Senate. (n.d.-d). *Branches of government in New York State*. NYSenate.gov. https://www.nysenate.gov/branches-government-new-york-state
@@ -118,7 +118,7 @@ A Court of Appeals judge serves a **14-year term** (with mandatory retirement at
 
 Note that many *other* New York judges (including trial-level Supreme Court justices and many local judges) are chosen by **election**, not by this appointment process. The "Governor appoints from a commission list" rule you just learned is specifically the path to the **Court of Appeals**, the state's highest court.
 
-**Check yourself.** In New York, which court is the trial court and which is the highest court, and why is that the opposite of what the names suggest? Then describe the three steps by which a Court of Appeals judge is chosen.
+:::reveal In New York, which court is the trial court and which is the highest court, and why is that the opposite of what the names suggest? Then describe the three steps by which a Court of Appeals judge is chosen. ||| The 'Supreme Court' is the trial court where cases begin, and the 'Court of Appeals' is the state's highest court. The names are the reverse of the federal system. A Commission on Judicial Nomination sends the Governor a short list of candidates, the Governor must appoint from that list, and the State Senate must confirm the choice.
 
 ## Sources
 - New York State Court of Appeals. (n.d.). *New York State Court of Appeals - the State's highest court*. NYCourts.gov. https://www.nycourts.gov/ctapps/
@@ -146,7 +146,7 @@ Note that many *other* New York judges (including trial-level Supreme Court just
 
 **A New York wrinkle: the powerful executive budget.** New York's governor has a distinctive amount of leverage over the **budget** specifically. Under the state's "executive budget" system, the Governor proposes the budget and the Legislature's ability to change it is constrained, a feature that makes the New York governor unusually strong on the budget compared with governors in many other states. (For the precise current rules, consult the Legislature's own materials, since budget procedure is intricate and can be litigated.)
 
-**Check yourself.** Put these in order: committee, Governor's signature or veto, introduction, floor vote, the other chamber. Then state the vote New York's Legislature needs to override a gubernatorial veto.
+:::reveal Put these in order: committee, Governor's signature or veto, introduction, floor vote, the other chamber. Then state the vote New York's Legislature needs to override a gubernatorial veto. ||| A two-thirds vote of the members in each house, the same threshold as the federal system. In committee. The committee decides whether to report a bill to the floor, and most never make it out, so it is the biggest filter.
 
 ## Sources
 - New York State Senate. (n.d.-e). *How a bill becomes a law*. NYSenate.gov. https://www.nysenate.gov/how-bill-becomes-law
@@ -177,7 +177,7 @@ Note that many *other* New York judges (including trial-level Supreme Court just
 
 The practical payoff is the same as everywhere: **who provides your service depends on where you live**, and in New York, it may be your city, your town, your village, your county, or a special district. In New York City, uniquely, the five boroughs *are* counties, but it's the **city** that governs.
 
-**Check yourself.** How many counties does New York have, and what is unusual about the five that make up New York City? Name the three general-purpose local governments below the county, and name the power New York is known for granting them.
+:::reveal How many counties does New York have, and what is unusual about the five that make up New York City? Name the three general-purpose local governments below the county, and name the power New York is known for granting them. ||| New York has 62 counties. Five of them are the boroughs of New York City, though the city government (not five county governments) runs services there. Cities, towns, and villages. New York is known for strong home rule, broad authority to pass local laws without needing Albany's approval for every decision.
 
 ## Sources
 - New York State Department of State. (n.d.-b). *County government* (Local Government Handbook). DOS.ny.gov. https://video.dos.ny.gov/lg/handbook/html/county_government.html
@@ -208,7 +208,7 @@ You use **one or the other** for a given election: a voter issued an early mail 
 
 **No statewide citizen initiative.** A big structural fact for ballot access: **New York has NO statewide citizen initiative.** In many Western states, ordinary citizens can gather signatures to put a proposed law or constitutional amendment directly on the statewide ballot. **In New York, they cannot.** Statewide ballot measures reach the ballot only when the **Legislature refers** them (a proposed constitutional amendment passed by two successive Legislatures, or a bond act), not by citizen petition. So in New York, "changing state law" means electing and lobbying legislators, not launching a statewide petition drive. (New York *does* allow various local referenda; this "no initiative" rule is about the **statewide** level.)
 
-**Check yourself.** Explain the difference between New York's absentee ballot and its early mail ballot; say what a "closed primary" requires; and state whether a New York citizen can put a new statewide law on the ballot by petition.
+:::reveal Explain the difference between New York's absentee ballot and its early mail ballot; say what a "closed primary" requires; and state whether a New York citizen can put a new statewide law on the ballot by petition. ||| The absentee ballot requires a listed excuse, while the early mail ballot (from the Early Mail Voter Act, in effect for 2024) is no-excuse for any registered voter. Both exist side by side. No. New York has no statewide citizen initiative, so statewide measures reach the ballot only when the Legislature refers them.
 
 ## Sources
 - New York State Board of Elections. (n.d.-a). *Ways to vote / registration and voting deadlines*. Elections.ny.gov. https://elections.ny.gov/ways-vote
@@ -234,7 +234,7 @@ You use **one or the other** for a given election: a voter issued an early mail 
 
 **Why a whole lesson on two recent changes?** Because this is exactly where learners (and older textbooks) get tripped up, and it teaches the transferable skill: **when a source and current practice disagree, the state's own current site is the tiebreaker.** New York isn't unique in reworking election rules, every state does it, so the habit ("verify the *current* rule at the state's official source") matters more than memorizing today's answer.
 
-**Check yourself.** What new no-excuse mail option did New York add, and why can a pre-2024 source mislead you about mail voting? And what changed about how New York nominates its Lieutenant Governor starting in 2026?
+:::reveal What new no-excuse mail option did New York add, and why can a pre-2024 source mislead you about mail voting? And what changed about how New York nominates its Lieutenant Governor starting in 2026? ||| Because it predates the no-excuse early mail ballot. The old 'excuse required' rule still fits the absentee ballot, but not the new early mail option that took effect for 2024. The Governor and Lieutenant Governor now run as a joint ticket from the primary onward, and the separate lieutenant-governor primary was eliminated.
 
 ## Sources
 - New York State Board of Elections. (n.d.-b). *Request a ballot (early mail and absentee)*. Elections.ny.gov. https://elections.ny.gov/request-ballot

@@ -39,7 +39,7 @@ This is the through-line: New Mexico's government reflects a **multicultural, mu
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but New Mexico's own government (nmlegis.gov, sos.nm.gov, nmcourts.gov) is the authoritative source.
 
-**Check yourself.** What does New Mexico's constitution protect for Spanish-speaking citizens, and what sovereign governments exist within the state?
+:::reveal What does New Mexico's constitution protect for Spanish-speaking citizens, and what sovereign governments exist within the state? ||| It protects their right to vote, hold office, serve on juries, and receive an equal education regardless of their ability to read or write English or Spanish, making New Mexico effectively the most bilingual state. Many, including 19 Pueblos plus the Navajo Nation and Apache tribes, each a government with its own laws and courts.
 
 ## Sources
 - New Mexico Legislature. (n.d.). *New Mexico Constitution (1912): language and educational protections*. nmlegis.gov. https://www.nmlegis.gov/
@@ -61,7 +61,7 @@ This is the through-line: New Mexico's government reflects a **multicultural, mu
 
 Why it matters: New Mexico bet that an **unpaid, part-time** legislature keeps government **close to citizens and cheap**, though critics note it can limit who is **able** to serve. Either way, it's a genuinely unique feature of American government.
 
-**Check yourself.** What is unique about how New Mexico pays its legislators, and how long are its sessions?
+:::reveal What is unique about how New Mexico pays its legislators, and how long are its sessions? ||| It has the only fully volunteer, unpaid legislature in the nation. Legislators get a per-diem allowance and mileage for expenses but receive no salary at all. A 70-member House (2-year terms) and a 42-member Senate (4-year terms). It alternates a 60-day session in odd-numbered years with a 30-day, mostly budget session in even years.
 
 ## Sources
 - New Mexico Legislature. (n.d.). *The volunteer (unpaid) Legislature; sessions and per diem*. nmlegis.gov. https://www.nmlegis.gov/`,
@@ -102,7 +102,7 @@ So a New Mexico judge is **appointed, then partisan-elected, then retained**, mi
 
 **Veto and override.** The Governor may veto bills (and has a strong **line-item veto**); the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** Name two statewide executives New Mexicans elect, and describe the three steps by which a New Mexico judge reaches and keeps the bench.
+:::reveal Name two statewide executives New Mexicans elect, and describe the three steps by which a New Mexico judge reaches and keeps the bench. ||| In three steps: a nominating commission sends names to the Governor, who appoints the judge; the judge then wins the next partisan election; and afterward faces nonpartisan yes/no retention elections. The Governor and Lieutenant Governor, the Secretary of State, the Attorney General, the State Treasurer, the State Auditor, and the Commissioner of Public Lands, all serving 4-year terms with term limits.
 
 ## Sources
 - New Mexico Secretary of State. (n.d.). *Statewide elected officials*. sos.nm.gov. https://www.sos.nm.gov/

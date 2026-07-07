@@ -37,7 +37,7 @@ This is the through-line: Kentucky's civic life is shaped by its **Commonwealth 
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Kentucky's own government ([legislature.ky.gov](https://legislature.ky.gov), [sos.ky.gov](https://sos.ky.gov), [kycourts.gov](https://kycourts.gov)) is the authoritative source.
 
-**Check yourself.** In which years does Kentucky elect its Governor, and how many counties does it have?
+:::reveal In which years does Kentucky elect its Governor, and how many counties does it have? ||| Odd-numbered years, off the presidential cycle (for example 2023 and 2027). 120 counties, the third-most of any state, behind only Texas (254) and Georgia (159).
 
 ## Sources
 - Kentucky Legislature. (n.d.). *Kentucky as a Commonwealth; the Constitution of 1891*. legislature.ky.gov. https://legislature.ky.gov/
@@ -72,7 +72,7 @@ Because so many officials are elected on their own, Kentucky, like many states, 
 
 **Veto and override.** ⚠️ Note a Kentucky quirk: the Governor's veto is comparatively **weak**: the General Assembly can **override a veto with a simple majority** (like Tennessee, Alabama, and West Virginia). The Governor also has a **line-item veto** on appropriations.
 
-**Check yourself.** Which statewide executive officers do Kentuckians elect, and how strong is the Governor's veto?
+:::reveal Which statewide executive officers do Kentuckians elect, and how strong is the Governor's veto? ||| Weak: the General Assembly can override it with a simple majority. The Governor also has a line-item veto on appropriations.
 
 ## Sources
 - Kentucky Secretary of State. (n.d.). *Statewide elected officials*. sos.ky.gov. https://www.sos.ky.gov/
@@ -106,7 +106,7 @@ So Kentucky keeps judicial races **nonpartisan** (a contrast with, say, Alabama'
 
 **No statewide citizen initiative.** Kentucky citizens **cannot** put a statute or amendment on the ballot by petition. **Constitutional amendments** are proposed by the **General Assembly** (by a three-fifths vote) and then ratified by the **voters**, so the citizen role is **ratification**, not initiation.
 
-**Check yourself.** How are Kentucky's Supreme Court justices chosen, and can Kentucky citizens start a law by initiative?
+:::reveal How are Kentucky's Supreme Court justices chosen, and can Kentucky citizens start a law by initiative? ||| They are elected on a nonpartisan ballot from districts to 8-year terms; there are 7 justices. No. There is no statewide citizen initiative; the General Assembly proposes amendments and voters ratify them.
 
 ## Sources
 - Kentucky Court of Justice. (n.d.). *Nonpartisan judicial elections; the Supreme Court of Kentucky*. kycourts.gov. https://www.kycourts.gov/

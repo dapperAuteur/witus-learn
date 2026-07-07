@@ -36,7 +36,7 @@ This is the through-line: Wisconsin sees itself as a place where **government is
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Wisconsin's own government ([legis.wisconsin.gov](https://legis.wisconsin.gov), [elections.wi.gov](https://elections.wi.gov), [wicourts.gov](https://wicourts.gov)) is the authoritative source. When something is time-sensitive, like limits on the partial veto, we say so.
 
-**Check yourself.** What is "the Wisconsin Idea," and why was Wisconsin called a "laboratory of democracy"?
+:::reveal What is "the Wisconsin Idea," and why was Wisconsin called a "laboratory of democracy"? ||| The principle that the boundaries of the university are the boundaries of the state: state government and the University of Wisconsin put expertise to work for the good of all residents, not just campus. In the Progressive Era it experimented with reforms later copied nationwide, such as an early state income tax in 1911, workers' compensation, and the direct primary.
 
 ## Sources
 - Wisconsin State Legislature. (n.d.). *The Wisconsin Idea; Progressive-Era reforms; the 1848 Constitution*. legis.wisconsin.gov. https://legis.wisconsin.gov/
@@ -73,7 +73,7 @@ This is the through-line: Wisconsin sees itself as a place where **government is
 
 The **Legislative** and **Judicial** branches complete the three (next lessons).
 
-**Check yourself.** What makes Wisconsin's partial veto unusually powerful, and how has it been limited over time?
+:::reveal What makes Wisconsin's partial veto unusually powerful, and how has it been limited over time? ||| On spending bills the Governor can veto individual parts of line items, historically even striking individual words, letters, or digits to change a bill's meaning (nicknamed the 'Frankenstein veto'). Any two of: Lieutenant Governor, Attorney General, Secretary of State, State Treasurer, and the nonpartisan Superintendent of Public Instruction.
 
 ## Sources
 - Wisconsin State Legislature. (n.d.). *The partial (line-item) veto and constitutional limits*. legis.wisconsin.gov. https://legis.wisconsin.gov/
@@ -111,7 +111,7 @@ Although officially nonpartisan, Wisconsin's **Supreme Court elections have beco
 
 **Veto and override.** Beyond the partial veto (Lesson 2), the Governor may veto whole bills; the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** When and how does Wisconsin elect its Supreme Court justices, and why do those races matter so much?
+:::reveal When and how does Wisconsin elect its Supreme Court justices, and why do those races matter so much? ||| On a nonpartisan ballot in spring elections. The 7 justices serve 10-year terms, with one seat on the ballot in most years.
 
 ## Sources
 - Wisconsin State Legislature. (n.d.). *The Legislature: Assembly and Senate*. legis.wisconsin.gov. https://legis.wisconsin.gov/
@@ -148,7 +148,7 @@ Although officially nonpartisan, Wisconsin's **Supreme Court elections have beco
 
 The takeaway: in Wisconsin, citizens **can't start laws by initiative**, but they **can remove officials by recall**, an unusual mix.
 
-**Check yourself.** Can Wisconsin citizens put a law on the ballot by initiative? What direct citizen power did Wisconsin use famously in 2012?
+:::reveal Can Wisconsin citizens put a law on the ballot by initiative? What direct citizen power did Wisconsin use famously in 2012? ||| No. Wisconsin has no statewide citizen initiative. Amendments are proposed by the Legislature in two consecutive sessions, then ratified by the voters. A recall election of the Governor. Wisconsin's strong recall lets voters petition to force a recall election of elected officials.
 
 ## Sources
 - Wisconsin State Legislature. (n.d.). *How a bill becomes law; amending the constitution*. legis.wisconsin.gov. https://legis.wisconsin.gov/

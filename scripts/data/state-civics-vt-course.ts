@@ -37,7 +37,7 @@ This is the through-line: Vermont sees government as **close, local, and partici
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Vermont's own government ([legislature.vermont.gov](https://legislature.vermont.gov), [sos.vermont.gov](https://sos.vermont.gov), [vermontjudiciary.org](https://vermontjudiciary.org)) is the authoritative source. When something is time-sensitive, like voting rules, we say so.
 
-**Check yourself.** What two American "firsts" did Vermont's 1777 constitution achieve, and what was Vermont before it became a state?
+:::reveal What two American "firsts" did Vermont's 1777 constitution achieve, and what was Vermont before it became a state? ||| An independent republic with its own constitution, currency, and postal service; it joined the Union as the 14th state in 1791. It was the first constitution in America to ban adult slavery and to drop property-ownership requirements for voting.
 
 ## Sources
 - Vermont Secretary of State. (n.d.). *Vermont's history: the independent republic and the 1777 Constitution*. sos.vermont.gov. https://sos.vermont.gov/
@@ -71,7 +71,7 @@ This is the through-line: Vermont sees government as **close, local, and partici
 
 The **Legislative** and **Judicial** branches complete the three (next lessons).
 
-**Check yourself.** How long is Vermont's gubernatorial term, and what happens if no candidate for Governor wins a majority?
+:::reveal How long is Vermont's gubernatorial term, and what happens if no candidate for Governor wins a majority? ||| Two years, one of only two states (with New Hampshire) that elect a governor every two years, and there is no term limit. All statewide officers serve two-year terms. The Legislature (General Assembly) chooses the winner from the top finishers, by secret ballot.
 
 ## Sources
 - Vermont Secretary of State. (n.d.). *Statewide elected officials and two-year terms*. sos.vermont.gov. https://sos.vermont.gov/
@@ -110,7 +110,7 @@ So Vermont blends **merit appointment** (nominating board + Governor + Senate) w
 
 **Veto and override.** The Governor may veto bills; the General Assembly overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** How many members sit in each chamber, and who decides whether a Vermont judge is retained?
+:::reveal How many members sit in each chamber, and who decides whether a Vermont judge is retained? ||| The House has 150 members and the Senate has 30, all serving two-year terms in a part-time citizen legislature. The General Assembly (the Legislature) votes on retention, not the voters. Judges are first appointed via a nominating board, the Governor, and Senate confirmation.
 
 ## Sources
 - Vermont General Assembly. (n.d.). *The General Assembly: House and Senate*. legislature.vermont.gov. https://legislature.vermont.gov/
@@ -147,7 +147,7 @@ So Vermont blends **merit appointment** (nominating board + Governor + Senate) w
 
 So in Vermont, "local government" means your **town**, and once a year, on Town Meeting Day, **you are the local government.**
 
-**Check yourself.** What can any registered voter do on Town Meeting Day, and why is county government minor in Vermont?
+:::reveal What can any registered voter do on Town Meeting Day, and why is county government minor in Vermont? ||| Attend, speak, debate, and vote directly on the town budget, local officers, school matters, and resolutions; it is held the first Tuesday in March. Vermont's 14 counties are mainly judicial districts with a few offices; the town, not the county, is the center of local government.
 
 ## Sources
 - Vermont Secretary of State. (n.d.). *Town Meeting Day and local government*. sos.vermont.gov. https://sos.vermont.gov/

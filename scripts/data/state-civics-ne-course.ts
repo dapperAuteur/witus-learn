@@ -38,7 +38,7 @@ This is the through-line of Nebraska civics: nearly everything about how Nebrask
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Nebraska's own government (nebraskalegislature.gov, sos.nebraska.gov) is the authoritative source. When something is time-sensitive, we say so.
 
-**Check yourself.** What two things make Nebraska's Legislature unique among the states, and who championed the change in 1934?
+:::reveal What two things make Nebraska's Legislature unique among the states, and who championed the change in 1934? ||| It is the only unicameral (single-house) state legislature, and the only officially nonpartisan one, where candidates run with no party label on the ballot.
 
 ## Sources
 - Nebraska Legislature. (n.d.). *About the Unicameral: one-house, nonpartisan Legislature*. nebraskalegislature.gov. https://nebraskalegislature.gov/
@@ -106,7 +106,7 @@ The takeaway: Nebraska's one-house design trades the "check" of a second chamber
 
 So Nebraska keeps judges out of partisan campaigns (appointing from a vetted list, then letting voters retain or remove them), a contrast with states that elect judges in contested races.
 
-**Check yourself.** How does Nebraska select its judges, and name two statewide executive officers Nebraskans elect besides the Governor?
+:::reveal How does Nebraska select its judges, and name two statewide executive officers Nebraskans elect besides the Governor? ||| A nonpartisan nominating commission vets applicants and sends the Governor a short list, the Governor appoints from that list, and the judge later faces voters in a nonpartisan yes/no retention election. Any two of: Secretary of State, Attorney General, State Treasurer, and State Auditor. (The Governor and Lieutenant Governor run together on a joint ticket.)
 
 ## Sources
 - Nebraska Secretary of State. (n.d.). *Statewide elected officials and boards*. sos.nebraska.gov. https://sos.nebraska.gov/
@@ -134,7 +134,7 @@ So Nebraska keeps judges out of partisan campaigns (appointing from a vetted lis
 
 **2. Splitting presidential electoral votes.** For President, most states award **all** their Electoral College votes to the statewide winner (winner-take-all). Nebraska is one of only **two states** (with **Maine**) that **splits its electoral votes by congressional district**: two electors go to the statewide winner, and **one elector goes to the winner of each congressional district** (Nebraska Secretary of State, n.d.). That's why Nebraska's Omaha-based district, the **"blue dot"**, can send a single electoral vote to a different candidate than the rest of the state. ⚠️ **Time-sensitive:** proposals to switch Nebraska to winner-take-all surface periodically, so confirm the **current** rule at sos.nebraska.gov.
 
-**Check yourself.** What is unusual about who owns Nebraska's electricity, and how does Nebraska award its presidential electoral votes?
+:::reveal What is unusual about who owns Nebraska's electricity, and how does Nebraska award its presidential electoral votes? ||| Nebraska is the only state where all electricity is publicly owned, with no private for-profit electric utilities. Power comes from public power districts, municipal utilities, and cooperatives run by elected boards. Like Maine, Nebraska splits its electoral votes by congressional district: two go to the statewide winner and one to the winner of each congressional district, so the Omaha 'blue dot' district can differ from the rest of the state.
 
 ## Sources
 - Nebraska Legislature. (n.d.). *Public power in Nebraska*. nebraskalegislature.gov. https://nebraskalegislature.gov/
