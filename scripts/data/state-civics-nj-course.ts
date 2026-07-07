@@ -37,7 +37,7 @@ The 1947 constitution's signature achievement was to **streamline and strengthen
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but New Jersey's own government (njleg.gov, nj.gov/state, njcourts.gov) is the authoritative source. When something is time-sensitive, like the 2010 Lieutenant Governor or the recent county-board renaming, we say so.
 
-**Check yourself.** What did New Jersey's 1947 constitution most notably do to the executive branch?
+:::reveal What did New Jersey's 1947 constitution most notably do to the executive branch? ||| The Constitution of 1947, New Jersey's third (after 1776 and 1844).
 
 ## Sources
 - New Jersey Legislature. (n.d.). *New Jersey State Constitution (1947)*. njleg.gov. https://www.njleg.gov/
@@ -61,7 +61,7 @@ The 1947 constitution's signature achievement was to **streamline and strengthen
 
 **Governor's term.** The Governor serves a **4-year term** and may serve **two consecutive terms** (then must sit out).
 
-**Check yourself.** Name two officials the New Jersey Governor appoints (rather than voters electing), and say when New Jersey first had a Lieutenant Governor.
+:::reveal Name two officials the New Jersey Governor appoints (rather than voters electing), and say when New Jersey first had a Lieutenant Governor. ||| The Governor appoints many top officials (the Attorney General, Secretary of State, and Treasurer), with Senate confirmation, rather than voters electing them, so the Governor controls the executive branch directly. In January 2010, created by a constitutional amendment; the Governor and Lieutenant Governor now run together on a joint ticket.
 
 ## Sources
 - New Jersey Department of State. (n.d.). *The Governor and Lieutenant Governor of New Jersey*. nj.gov/state. https://www.nj.gov/state/
@@ -89,7 +89,7 @@ The 1947 constitution's signature achievement was to **streamline and strengthen
 
 ⚠️ **A New Jersey Senate custom to know: "senatorial courtesy."** By long-standing (unwritten) tradition, a nominee can be blocked by the senator(s) from the nominee's home county. It's a real feature of how confirmations work in practice, but it's a custom, not a constitutional rule, so confirm current practice.
 
-**Check yourself.** How are New Jersey judges chosen, and what must happen for a judge to gain tenure to age 70?
+:::reveal How are New Jersey judges chosen, and what must happen for a judge to gain tenure to age 70? ||| Each district elects one senator and two Assembly members; the Assembly has 80 members and the Senate has 40. The Governor nominates and the Senate confirms; after an initial 7-year term and reappointment, the judge gains tenure until the mandatory retirement age of 70.
 
 ## Sources
 - New Jersey Legislature. (n.d.). *The Legislature; districts and terms*. njleg.gov. https://www.njleg.gov/
@@ -117,7 +117,7 @@ The 1947 constitution's signature achievement was to **streamline and strengthen
 
 The takeaway: in New Jersey, **the Legislature and the strong Governor make the law**. The direct-democracy on-ramps found in Colorado or California simply don't exist here.
 
-**Check yourself.** Can New Jersey citizens put a law on the ballot by petition? What is a "conditional veto"?
+:::reveal Can New Jersey citizens put a law on the ballot by petition? What is a "conditional veto"? ||| No. New Jersey has no citizen initiative or popular referendum; laws are made through the Legislature. The Governor returns a bill to the Legislature with specific proposed changes, rather than simply signing or rejecting it.
 
 ## Sources
 - New Jersey Legislature. (n.d.). *How a bill becomes law; amending the constitution*. njleg.gov. https://www.njleg.gov/`,
@@ -141,7 +141,7 @@ The takeaway: in New Jersey, **the Legislature and the strong Governor make the 
 
 The practical effect: in New Jersey, **a great deal happens at the town level**, and property taxes, which fund much of it, are a perennial civic issue. "Who do I call?" usually starts with your **municipality**, then the county.
 
-**Check yourself.** What were New Jersey county boards called before 2021, and what does "home rule" look like in New Jersey?
+:::reveal What were New Jersey county boards called before 2021, and what does "home rule" look like in New Jersey? ||| They were the 'Board of Chosen Freeholders'; the state renamed them county commissioners (voted in 2020, effective 2021). A tradition of strong, numerous local governments: 21 counties and 565 municipalities, with much decision-making about schools, police, zoning, and services at the town level.
 
 ## Sources
 - New Jersey Department of State. (n.d.). *Counties and municipalities; home rule; the Faulkner Act*. nj.gov/state. https://www.nj.gov/state/

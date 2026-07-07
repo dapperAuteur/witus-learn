@@ -38,7 +38,7 @@ Why this leads the course: nearly every distinctive feature of Louisiana civics,
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Louisiana's own government ([legis.la.gov](https://legis.la.gov), [sos.la.gov](https://sos.la.gov), [lasc.org](https://lasc.org)) is the authoritative source. When something is time-sensitive, like election dates or voter rules, we say so.
 
-**Check yourself.** What legal tradition is Louisiana's system based on, and how does that differ from the other 49 states?
+:::reveal What legal tradition is Louisiana's system based on, and how does that differ from the other 49 states? ||| Civil law (from the French and Spanish, ultimately Roman/Napoleonic tradition), not the English common law used by the other 49 states.
 
 ## Sources
 - Louisiana State Legislature. (n.d.). *Louisiana's civil-law system and the Civil Code*. legis.la.gov. https://www.legis.la.gov/
@@ -82,7 +82,7 @@ Why this leads the course: nearly every distinctive feature of Louisiana civics,
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** How many statewide executive officials do Louisiana voters elect, and how many members sit in each legislative chamber?
+:::reveal How many statewide executive officials do Louisiana voters elect, and how many members sit in each legislative chamber? ||| Seven, a plural executive: Governor, Lieutenant Governor, Secretary of State, Attorney General, Treasurer, Commissioner of Agriculture and Forestry, and Commissioner of Insurance. The House has 105 representatives and the Senate has 39 senators; members serve 4-year terms with a three consecutive term (12 year) limit.
 
 ## Sources
 - Louisiana State Legislature. (n.d.). *Constitution of Louisiana (1974); the branches of government*. legis.la.gov. https://www.legis.la.gov/
@@ -118,7 +118,7 @@ This is different from Washington's or California's "top-two," where the top two
 
 **Timing.** Louisiana often holds these elections on an **off-cycle calendar**. For example, the **Governor is elected in odd-numbered years** (an October primary with a November runoff, e.g., 2023, 2027). ⚠️ **Time-sensitive:** exact dates, and the rules for federal offices, have shifted over the years. Confirm the **current** election calendar and rules at **[sos.la.gov](https://sos.la.gov)** before you plan to vote.
 
-**Check yourself.** In Louisiana's jungle primary, what happens if a candidate wins more than 50% in the first round, and what if no one does?
+:::reveal In Louisiana's jungle primary, what happens if a candidate wins more than 50% in the first round, and what if no one does? ||| They win the office outright with no runoff; all candidates of every party share one ballot in the first round. The top two finishers advance to a runoff, even if they belong to the same party.
 
 ## Sources
 - Louisiana Secretary of State. (n.d.). *Louisiana's open (jungle) primary and election calendar*. sos.la.gov. https://www.sos.la.gov/`,
@@ -152,7 +152,7 @@ This is different from Washington's or California's "top-two," where the top two
 
 **The civil-law flavor.** Remember from Lesson 1: Louisiana statutes fit within a **civil-law Civil Code** framework, so the *style* of Louisiana law, comprehensive codes rather than precedent-driven common law, shapes how these bills are written and applied.
 
-**Check yourself.** Can Louisiana citizens initiate a statute by petition? How does a constitutional amendment reach Louisiana voters?
+:::reveal Can Louisiana citizens initiate a statute by petition? How does a constitutional amendment reach Louisiana voters? ||| No. Louisiana has no general citizen initiative; only constitutional amendments reach voters, and those are proposed by the Legislature. The Legislature proposes it by a two-thirds vote of each chamber, then voters ratify it at the ballot; Louisiana sees such amendments often.
 
 ## Sources
 - Louisiana State Legislature. (n.d.). *How a bill becomes law; amending the constitution*. legis.la.gov. https://www.legis.la.gov/`,
@@ -188,7 +188,7 @@ This is different from Washington's or California's "top-two," where the top two
 
 The practical effect: in Louisiana, when other Americans say "county," you say **"parish"**, and your parish (via a police jury or a parish president and council) handles roads, drainage, and local services.
 
-**Check yourself.** What does Louisiana call its counties, why, and what is a "police jury"?
+:::reveal What does Louisiana call its counties, why, and what is a "police jury"? ||| Parishes, 64 of them; the term comes from its French and Spanish Catholic colonial past, and Louisiana is the only state to use it (Alaska uses boroughs). A traditional parish governing board, roughly like a county commission; other parishes use a parish president and council under a home-rule charter.
 
 ## Sources
 - Louisiana Secretary of State. (n.d.). *Parishes of Louisiana*. sos.la.gov. https://www.sos.la.gov/

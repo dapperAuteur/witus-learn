@@ -38,7 +38,7 @@ Why it matters: Alabama's constitution is a living lesson in how **weak local se
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Alabama's own government ([legislature.state.al.us](https://legislature.state.al.us), [sos.alabama.gov](https://sos.alabama.gov), [judicial.alabama.gov](https://judicial.alabama.gov)) is the authoritative source.
 
-**Check yourself.** Why did Alabama's constitution become the longest in the world, and what did voters do in 2022?
+:::reveal Why did Alabama's constitution become the longest in the world, and what did voters do in 2022? ||| Weak home rule centralized power in the state Legislature, so local matters often required statewide constitutional amendments, producing hundreds of narrow local amendments over a century. A recompiled Constitution of Alabama 2022 that removed racist language, deleted repealed sections, and reorganized the text without changing its fundamental structure.
 
 ## Sources
 - Alabama Legislature. (n.d.). *The Alabama Constitution: length, local amendments, and the 2022 recompilation*. legislature.state.al.us. https://legislature.state.al.us/
@@ -71,7 +71,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations), but ⚠️ Alabama's veto is comparatively **weak**: the Legislature can **override with only a simple majority** (the same majority that passed the bill), similar to Tennessee, so a determined majority can override easily.
 
-**Check yourself.** What does "weak home rule" mean for Alabama's local governments, and how strong is the Governor's veto?
+:::reveal What does "weak home rule" mean for Alabama's local governments, and how strong is the Governor's veto? ||| Counties and cities have little independent authority, so many local decisions run through the state Legislature, which passes local laws for individual counties.
 
 ## Sources
 - Alabama Legislature. (n.d.). *Home rule, local laws, and the Legislature*. legislature.state.al.us. https://legislature.state.al.us/
@@ -108,7 +108,7 @@ This makes Alabama's judicial elections **explicitly political**, a contrast wit
 
 **How a bill becomes law:** introduction → committee → floor votes in both chambers → the Governor (sign, weak veto, or line-item veto). Alabama has **no statewide citizen initiative**; constitutional **amendments** are proposed by the Legislature and ratified by the **voters**, which, given the weak home rule, is why Alabamians vote on **so many** (often local) amendments.
 
-**Check yourself.** How are Alabama's Supreme Court justices elected, and why do Alabamians vote on so many constitutional amendments?
+:::reveal How are Alabama's Supreme Court justices elected, and why do Alabamians vote on so many constitutional amendments? ||| It elects all 9 justices in openly partisan statewide elections, with party labels on the ballot, to 6-year terms.
 
 ## Sources
 - Alabama Legislature. (n.d.). *The Legislature; local legislation; how a bill becomes law*. legislature.state.al.us. https://legislature.state.al.us/

@@ -40,7 +40,7 @@ Utah governs under its **Constitution of 1896**, adopted when Utah became the **
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Utah's own government ([le.utah.gov](https://le.utah.gov), [vote.utah.gov](https://vote.utah.gov), [utcourts.gov](https://utcourts.gov)) is the authoritative source.
 
-**Check yourself.** What are the two paths a Utah candidate can use to reach the primary ballot, and why was the second path added?
+:::reveal What are the two paths a Utah candidate can use to reach the primary ballot, and why was the second path added? ||| The caucus-and-convention path (precinct caucuses elect delegates who vote at a party convention) or the signature path (gathering a set number of voter signatures to qualify directly). Candidates can use one or both. The 'Count My Vote' citizen effort and the Legislature's SB54 compromise added it so candidates could reach the broader primary electorate directly, rather than depending only on a small set of convention delegates.
 
 ## Sources
 - Utah Lieutenant Governor's Office (Elections). (n.d.). *Candidate ballot access: the dual-path (caucus-convention and signature) system*. vote.utah.gov. https://vote.utah.gov/
@@ -73,7 +73,7 @@ Statewide officers serve **4-year terms.**
 
 The **Legislative** and **Judicial** branches complete the three (next lessons).
 
-**Check yourself.** What condition did Utah have to meet for statehood in 1896, and which official serves as Utah's chief elections officer?
+:::reveal What condition did Utah have to meet for statehood in 1896, and which official serves as Utah's chief elections officer? ||| Its constitution had to permanently ban polygamy. The 1896 constitution also affirmed separation of church and state and religious freedom, and guaranteed women the right to vote. The Governor and Lieutenant Governor run together on a joint ticket, and the Lieutenant Governor also serves as Utah's chief elections officer. (Voters separately elect the Attorney General, State Auditor, and State Treasurer.)
 
 ## Sources
 - Utah State Legislature. (n.d.). *Utah statehood and the 1896 Constitution*. le.utah.gov. https://le.utah.gov/
@@ -107,7 +107,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 
 **Direct democracy.** Utah citizens have the **initiative** (statutes) and **referendum** (rejecting laws) (Utah Lieutenant Governor's Office, n.d.). ⚠️ These tools have been the subject of notable recent fights (for example, over whether and how the Legislature may amend or repeal a voter-passed initiative), so confirm the **current** rules at [vote.utah.gov](https://vote.utah.gov). The takeaway: Utah pairs a **short, part-time Legislature** with **citizen initiative and referendum**, and the balance between them is an active civic question.
 
-**Check yourself.** How long is Utah's annual legislative session, and what two direct-democracy tools do Utah citizens have?
+:::reveal How long is Utah's annual legislative session, and what two direct-democracy tools do Utah citizens have? ||| The session lasts 45 calendar days each year (beginning in January), making it a part-time citizen legislature. The House has 75 representatives on 2-year terms and the Senate has 29 senators on 4-year terms. The initiative (to propose and pass statutes) and the referendum (to reject laws). How the Legislature may amend or repeal a voter-passed initiative has been contested.
 
 ## Sources
 - Utah State Legislature. (n.d.). *The 45-day session; how a bill becomes law*. le.utah.gov. https://le.utah.gov/
@@ -138,7 +138,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 
 **All-mail elections.** ⚠️ **Time-sensitive:** Utah conducts its elections primarily **by mail**: every active registered voter is **mailed a ballot**, returnable by mail or drop box, with in-person options and **same-day registration** also available (Utah Lieutenant Governor's Office, n.d.). Rules and deadlines are administered by **county clerks** and can change. Confirm the **current** details at **[vote.utah.gov](https://vote.utah.gov)** before you vote.
 
-**Check yourself.** How does Utah select its judges, and how do most Utahns receive their ballots?
+:::reveal How does Utah select its judges, and how do most Utahns receive their ballots? ||| By merit selection (the 'Missouri Plan'): a Judicial Nominating Commission sends the Governor a list, the Governor appoints from it, the Senate confirms, and the judge later faces a nonpartisan yes/no retention election aided by published performance evaluations. Utah runs all-mail elections: every active registered voter is mailed a ballot, returnable by mail or drop box, with in-person options and same-day registration also available. County clerks administer the details.
 
 ## Sources
 - Utah State Courts. (n.d.). *Judicial selection, retention, and performance evaluation*. utcourts.gov. https://www.utcourts.gov/

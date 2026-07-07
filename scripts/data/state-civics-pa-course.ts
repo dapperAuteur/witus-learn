@@ -59,7 +59,7 @@ A state constitution does for the state what the U.S. Constitution does for the 
 
 **A note this course keeps returning to:** state facts **vary and change**. Deadlines, court rulings, and rules described here are current as of authoring, but the authoritative source is always Pennsylvania's own government (the offices below), not a textbook. When something is time-sensitive or litigated, we say so.
 
-**Check yourself.** In what year did Pennsylvania adopt its current constitution, what two steps must happen *before* voters ever see a proposed amendment, and what direct-democracy tool does Pennsylvania NOT give its citizens?
+:::reveal In what year did Pennsylvania adopt its current constitution, what two steps must happen *before* voters ever see a proposed amendment, and what direct-democracy tool does Pennsylvania NOT give its citizens? ||| 1968, its fourth constitution, adopted through a limited constitutional convention. The General Assembly must pass an amendment in two consecutive sessions, then a majority of voters must approve it. Pennsylvania has no citizen initiative.
 
 ## Sources
 - Pennsylvania General Assembly. (n.d.-a). *Constitution of Pennsylvania*. Legis.state.pa.us. https://www.legis.state.pa.us/cfdocs/legis/LI/consCheck.cfm?txtType=HTM&ttl=00
@@ -95,7 +95,7 @@ It writes state law and passes the budget. Pennsylvania has **no term limits** o
 
 **Judicial: the Unified Judicial System.** Pennsylvania's courts run from local magisterial district judges and county trial courts up through three appellate courts to the Supreme Court of Pennsylvania. How Pennsylvania picks those judges (by **election**, not appointment) is distinctive and covered in the next lesson.
 
-**Check yourself.** How many total members sit in the General Assembly, and why is it notable nationally? Explain the difference in how the Lieutenant Governor and the Attorney General each reach office in Pennsylvania.
+:::reveal How many total members sit in the General Assembly, and why is it notable nationally? Explain the difference in how the Lieutenant Governor and the Attorney General each reach office in Pennsylvania. ||| 253 total: a 203-member House with 2-year terms and a 50-member Senate with 4-year terms, the largest full-time state legislature in the nation. The Governor and Lieutenant Governor run as a joint ticket in the general election but are nominated separately in the primary. The Attorney General, Auditor General, and State Treasurer are each elected separately.
 
 ## Sources
 - Pennsylvania General Assembly. (n.d.-b). *The Pennsylvania General Assembly - House (203 members) and Senate (50 members)*. Legis.state.pa.us. https://www.legis.state.pa.us/
@@ -136,7 +136,7 @@ It writes state law and passes the budget. Pennsylvania has **no term limits** o
 
 **Why this matters civically:** on your Pennsylvania ballot you may see judges running **with party labels** (first term) *and* judges listed for a **yes/no retention vote** (later terms). Knowing which is which (and that these are separate lines) means you can vote them thoughtfully instead of skipping them.
 
-**Check yourself.** Name Pennsylvania's two intermediate appellate courts and what each mainly handles, and describe the TWO different ways a judge appears on your ballot over a career (first term vs. later terms).
+:::reveal Name Pennsylvania's two intermediate appellate courts and what each mainly handles, and describe the TWO different ways a judge appears on your ballot over a career (first term vs. later terms). ||| They first win a partisan election to a full 10-year term, then keep the seat through nonpartisan yes/no retention votes. The Superior Court hears most criminal and civil appeals from the Courts of Common Pleas; the Commonwealth Court hears cases involving state and local government.
 
 ## Sources
 - Pennsylvania Constitution, art. V (The Judiciary). https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/00/00.005..HTM
@@ -171,7 +171,7 @@ It writes state law and passes the budget. Pennsylvania has **no term limits** o
 
 Note what Pennsylvania **lacks**: because there is **no citizen initiative** (Lesson 1), there is no way for citizens to make a *statute* by petition. The only measures that go straight to the voters are things the **General Assembly refers** to the ballot (a proposed constitutional amendment or a statewide ballot question).
 
-**Check yourself.** Put these in order: committee, introduction, the Governor, the other chamber, three-readings floor consideration. Then name the two special powers a Pennsylvania governor has over legislation (hint: one is a supermajority the President also faces; the other is about spending and the President does not have it).
+:::reveal Put these in order: committee, introduction, the Governor, the other chamber, three-readings floor consideration. Then name the two special powers a Pennsylvania governor has over legislation (hint: one is a supermajority the President also faces; the other is about spending and the President does not have it). ||| A veto that the General Assembly can override only with a two-thirds vote of each house, and a line-item veto that lets the Governor reduce or strike individual items in an appropriations bill (a power the U.S. President lacks). Most bills die in committee. The constitution requires a bill to be considered on three different days (three readings) in each house before final passage.
 
 ## Sources
 - Pennsylvania Constitution, art. III (Legislation, including the three-considerations rule). https://www.legis.state.pa.us/WU01/LI/LI/CT/HTM/00/00.003..HTM
@@ -212,7 +212,7 @@ Note what Pennsylvania **lacks**: because there is **no citizen initiative** (Le
 
 The practical payoff: **who provides your service depends on where you live**. It might be your **township**, a **borough**, a **city**, your **county**, or a special-purpose authority (water, sewer, transit). But unlike some states, Pennsylvania's answer very often **is** a township.
 
-**Check yourself.** How many counties does Pennsylvania have, what are the main types of general-purpose municipality (name at least three), and what is the one thing about **townships** that makes Pennsylvania different from a state that has abolished them?
+:::reveal How many counties does Pennsylvania have, what are the main types of general-purpose municipality (name at least three), and what is the one thing about **townships** that makes Pennsylvania different from a state that has abolished them? ||| 67 counties. Pennsylvania keeps a full, active layer of townships (first and second class) alongside cities and boroughs; it does NOT abolish townships. A code municipality runs under the default rules the General Assembly sets in the municipal codes. A home-rule municipality has adopted its own charter, approved by its voters, letting it pick its own form of government and set its own rules within state law.
 
 ## Sources
 - Pennsylvania Department of Community & Economic Development. (n.d.). *Municipalities in Pennsylvania; municipal statistics; home rule*. DCED.pa.gov. https://dced.pa.gov/local-government/municipal-statistics/municipalities/
@@ -250,7 +250,7 @@ The practical payoff: **who provides your service depends on where you live**. I
 
 **And still, NO citizen initiative.** As Lesson 1 stressed, Pennsylvania voters **cannot** put a law or constitutional amendment on the ballot by petition. Statewide ballot questions appear **only** when the **General Assembly** refers them.
 
-**Check yourself.** What did Act 77 of 2019 create, and what happened when it was challenged in court? Explain what a "closed primary" means for an independent voter, and name one way Pennsylvania's registration rules are *stricter* than a same-day-registration state.
+:::reveal What did Act 77 of 2019 create, and what happened when it was challenged in court? Explain what a "closed primary" means for an independent voter, and name one way Pennsylvania's registration rules are *stricter* than a same-day-registration state. ||| Act 77 created no-excuse mail-in voting. The Commonwealth Court struck it down in January 2022, but the Pennsylvania Supreme Court reversed and upheld it on August 2, 2022 (McLinko v. Dept. of State). In a closed primary only registered Democrats and Republicans can vote for their party's nominees, so independents cannot vote in the major-party primaries. You must register at least 15 days before an election; Pennsylvania has no same-day registration.
 
 ## Sources
 - Pennsylvania Department of State. (n.d.-a). *Mail-in and absentee ballots (Act 77 no-excuse mail-in voting)*. Pa.gov/vote. https://www.pa.gov/agencies/vote/voter-support/mail-in-and-absentee-ballot

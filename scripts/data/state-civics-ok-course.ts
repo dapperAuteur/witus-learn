@@ -39,7 +39,7 @@ This is one of the through-lines: Oklahoma made distinctive **structural choices
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Oklahoma's own government (oklegislature.gov, elections.ok.gov, oscn.net) is the authoritative source.
 
-**Check yourself.** What are Oklahoma's two highest courts, and how do you know which one is final for a given case?
+:::reveal What are Oklahoma's two highest courts, and how do you know which one is final for a given case? ||| The Court of Criminal Appeals is final for criminal cases; the Oklahoma Supreme Court is final for civil cases. There is no appeal from one to the other.
 
 ## Sources
 - Oklahoma State Courts Network. (n.d.). *The Oklahoma Supreme Court and the Court of Criminal Appeals*. oscn.net. https://www.oscn.net/
@@ -80,7 +80,7 @@ Because so many executive officials answer **directly to voters** rather than to
 
 The **Legislative** and **Judicial** branches complete the three (Lesson 1 covered the courts; the Legislature is next).
 
-**Check yourself.** Name three statewide executives Oklahomans elect besides the Governor, and note which top official is appointed rather than elected.
+:::reveal Name three statewide executives Oklahomans elect besides the Governor, and note which top official is appointed rather than elected. ||| Its Progressive-Era founders distrusted concentrated power, so many statewide officials are elected separately. That divides executive power among independently elected officers who can check one another. The Secretary of State is appointed by the Governor. Others (Governor, Lieutenant Governor, Attorney General, Treasurer, Auditor and Inspector, and more) are elected separately.
 
 ## Sources
 - Oklahoma State Election Board. (n.d.). *Statewide elected officials*. elections.ok.gov. https://oklahoma.gov/elections.html
@@ -119,7 +119,7 @@ The **Legislative** and **Judicial** branches complete the three (Lesson 1 cover
 - **Referendum**: voters can **reject** a law the Legislature passed.
 So Oklahoma pairs a **term-limited Legislature** with **strong citizen lawmaking**: the people can make law directly when the Legislature won't.
 
-**Check yourself.** What two direct-democracy tools do Oklahomans have, and what "first" does Oklahoma's 1907 constitution hold regarding them?
+:::reveal What two direct-democracy tools do Oklahomans have, and what "first" does Oklahoma's 1907 constitution hold regarding them? ||| The initiative (put a statute or a constitutional amendment on the ballot) and the referendum (reject a law the Legislature passed). Oklahoma was the first state to include the initiative and referendum in its original constitution.
 
 ## Sources
 - Oklahoma Legislature. (n.d.). *The Legislature; term limits; how a bill becomes law*. oklegislature.gov. https://www.oklegislature.gov/

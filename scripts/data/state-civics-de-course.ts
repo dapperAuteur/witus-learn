@@ -35,7 +35,7 @@ Delaware governs under its **Constitution of 1897** (its fourth), and it proudly
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Delaware's own government ([legis.delaware.gov](https://legis.delaware.gov), [elections.delaware.gov](https://elections.delaware.gov), [courts.delaware.gov](https://courts.delaware.gov)) is the authoritative source. When something is time-sensitive, like voting rules, we say so.
 
-**Check yourself.** What is unique about how Delaware amends its constitution, and why is Delaware called "The First State"?
+:::reveal What is unique about how Delaware amends its constitution, and why is Delaware called "The First State"? ||| It is the only state where the Legislature (the General Assembly) can amend the constitution alone, by a two-thirds vote in two consecutive sessions, with no public referendum. It was the first state to ratify the U.S. Constitution, on December 7, 1787.
 
 ## Sources
 - Delaware General Assembly. (n.d.). *Amending the Delaware Constitution (1897) without a referendum*. legis.delaware.gov. https://legis.delaware.gov/
@@ -55,7 +55,7 @@ Delaware governs under its **Constitution of 1897** (its fourth), and it proudly
 
 Why it matters for civics: Delaware's government generates **revenue** from incorporation fees (a major part of the state budget) and gives Delaware **outsized influence** over how American businesses are governed. It's a case study in how a small state's **laws and courts** can shape the whole nation.
 
-**Check yourself.** Why do so many companies incorporate in Delaware, and what is special about the Court of Chancery?
+:::reveal Why do so many companies incorporate in Delaware, and what is special about the Court of Chancery? ||| For its well-developed, business-friendly corporate law and its specialized Court of Chancery, whose decisions create predictable precedent. Most of the Fortune 500 incorporate there. It is a court of equity with no juries, decided by a Chancellor and Vice Chancellors who are experts in corporate and business law.
 
 ## Sources
 - Delaware Courts. (n.d.). *The Court of Chancery and Delaware corporate law*. courts.delaware.gov. https://courts.delaware.gov/
@@ -96,7 +96,7 @@ The Governor serves a **4-year term**, limited to **two terms.**
 
 **Veto and override.** The Governor may veto bills; the General Assembly overrides with a **three-fifths vote of each chamber.**
 
-**Check yourself.** Which statewide executive officers do Delaware voters elect, and how many members are in each legislative chamber?
+:::reveal Which statewide executive officers do Delaware voters elect, and how many members are in each legislative chamber? ||| The House has 41 members elected to 2-year terms; the Senate has 21 senators elected to 4-year terms. Voters elect several statewide officials separately, including the Governor and Lieutenant Governor (who can be from different parties), plus the Attorney General, Treasurer, Auditor, and Insurance Commissioner.
 
 ## Sources
 - Delaware Department of Elections. (n.d.). *Statewide elected officials*. elections.delaware.gov. https://elections.delaware.gov/
@@ -128,7 +128,7 @@ The Governor serves a **4-year term**, limited to **two terms.**
 
 **No citizen initiative.** Delaware citizens **cannot** put a statute or amendment on the ballot by petition, and remember from Lesson 1 that they **don't even vote on constitutional amendments.** So Delaware's lawmaking is, by design, **channeled through the elected General Assembly** more completely than almost anywhere else.
 
-**Check yourself.** What balance does Delaware require on its courts, and can Delaware citizens start a law by initiative?
+:::reveal What balance does Delaware require on its courts, and can Delaware citizens start a law by initiative? ||| On its major courts, no more than a bare majority of judges may belong to one political party; the rest must belong to the other major party, making the bench roughly bipartisan by constitution.
 
 ## Sources
 - Delaware Courts. (n.d.). *Judicial appointment and the major-party balance requirement*. courts.delaware.gov. https://courts.delaware.gov/

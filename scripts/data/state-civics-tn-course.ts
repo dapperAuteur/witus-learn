@@ -38,7 +38,7 @@ Because citizens can't initiate laws or amendments, **the General Assembly is th
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Tennessee's own government ([capitol.tn.gov](https://capitol.tn.gov), [sos.tn.gov](https://sos.tn.gov), [tncourts.gov](https://tncourts.gov)) is the authoritative source. When something is time-sensitive (like voter-ID rules) we say so.
 
-**Check yourself.** Can Tennessee citizens put a law on the ballot by petition, and what turnout-linked threshold must a constitutional amendment clear?
+:::reveal Can Tennessee citizens put a law on the ballot by petition, and what turnout-linked threshold must a constitutional amendment clear? ||| The Constitution of 1870 (its third, after 1796 and 1834). No: Tennessee has no citizen initiative, so the General Assembly is the gateway. The 'yes' votes must be a majority AND exceed half of the total votes cast in that same election's race for Governor.
 
 ## Sources
 - Tennessee General Assembly. (n.d.). *Constitution of the State of Tennessee (1870); amendment process*. capitol.tn.gov. https://www.capitol.tn.gov/
@@ -77,7 +77,7 @@ Because citizens can't initiate laws or amendments, **the General Assembly is th
 
 So Tennessee **spreads executive selection across all three branches**: the people pick the Governor, the Legislature picks several officers, and the Supreme Court picks the Attorney General.
 
-**Check yourself.** Who holds the title "Lieutenant Governor" in Tennessee, and who appoints Tennessee's Attorney General?
+:::reveal Who holds the title "Lieutenant Governor" in Tennessee, and who appoints Tennessee's Attorney General? ||| The Speaker of the state Senate carries the title by statute. The General Assembly (Legislature) elects those three officers, not the voters. The five justices of the state Supreme Court, for an 8-year term. It is the only such arrangement in the nation.
 
 ## Sources
 - Tennessee General Assembly. (n.d.). *Constitutional officers; the Speaker of the Senate as Lieutenant Governor*. capitol.tn.gov. https://www.capitol.tn.gov/
@@ -116,7 +116,7 @@ And recall the twist from the last lesson: those **five Supreme Court justices t
 
 **A very weak veto.** ⚠️ Here's another Tennessee distinctive: the Governor's veto is **one of the weakest in the nation.** The General Assembly can **override a veto by the same SIMPLE MAJORITY that passed the bill**, not the two-thirds most states require. So a Tennessee Governor's veto is more a **speed bump than a wall**, and the Governor also has a limited **reduction veto** on appropriations.
 
-**Check yourself.** How does Tennessee choose its Supreme Court justices, and why is the Governor's veto considered weak?
+:::reveal How does Tennessee choose its Supreme Court justices, and why is the Governor's veto considered weak? ||| By the Tennessee Plan: the Governor appoints from a nominating commission's list, then judges face yes/no retention elections. The veto is weak because the Legislature overrides it with a simple majority.
 
 ## Sources
 - Tennessee General Assembly. (n.d.). *The General Assembly; veto and override*. capitol.tn.gov. https://www.capitol.tn.gov/
@@ -154,7 +154,7 @@ And recall the twist from the last lesson: those **five Supreme Court justices t
 
 The takeaway: in Tennessee, **the Legislature is the road**, the Governor is a comparatively **weak check**, and citizens' direct role comes at the **ratification** stage, not the **proposal** stage.
 
-**Check yourself.** What is a "constitutional majority" in the Tennessee General Assembly, and how easily can the Legislature override the Governor's veto?
+:::reveal What is a "constitutional majority" in the Tennessee General Assembly, and how easily can the Legislature override the Governor's veto? ||| A majority of all elected members of each chamber (50 in the House, 17 in the Senate), not just of those present. Very easily: a simple majority, the same majority that passed the bill, can override it.
 
 ## Sources
 - Tennessee General Assembly. (n.d.). *How a bill becomes law; constitutional majority; veto override*. capitol.tn.gov. https://www.capitol.tn.gov/`,
@@ -188,7 +188,7 @@ The takeaway: in Tennessee, **the Legislature is the road**, the Governor is a c
 
 The practical effect: in Tennessee, the **county** is a major unit of government (more so than in some northeastern states), and a few areas use **consolidated metro** government that blends city and county into one.
 
-**Check yourself.** How many counties does Tennessee have, and what is distinctive about Nashville's government?
+:::reveal How many counties does Tennessee have, and what is distinctive about Nashville's government? ||| 95 counties, each governed by an elected county commission and a county mayor (county executive), plus separately elected officials like the sheriff and trustee. It is a consolidated metropolitan city-county government, Metro Nashville-Davidson County, one of the earliest and best-known city-county consolidations in the U.S.
 
 ## Sources
 - Tennessee General Assembly. (n.d.). *Local government: counties, municipalities, and metropolitan government*. capitol.tn.gov. https://www.capitol.tn.gov/

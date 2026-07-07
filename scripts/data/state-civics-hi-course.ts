@@ -42,7 +42,7 @@ Why this leads the course: Hawaii concentrates power at the **state** level to a
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Hawaii's own government ([capitol.hawaii.gov](https://capitol.hawaii.gov), [elections.hawaii.gov](https://elections.hawaii.gov), [courts.state.hi.us](https://courts.state.hi.us)) is the authoritative source.
 
-**Check yourself.** How many counties does Hawaii have, and what is unique about how Hawaii runs its public schools?
+:::reveal How many counties does Hawaii have, and what is unique about how Hawaii runs its public schools? ||| Four (Honolulu, Hawaii County, Maui, and Kauai). The county is essentially the only layer of local government; there are no separate cities, towns, or villages below it. Hawaii is the only state with a single, unified, statewide school system run by the Hawaii State Department of Education. There are no local school districts or boards.
 
 ## Sources
 - Hawaii State Legislature. (n.d.). *Hawaii's centralized government; the statewide school system*. capitol.hawaii.gov. https://www.capitol.hawaii.gov/
@@ -79,7 +79,7 @@ The **Attorney General** and department heads are **appointed by the Governor** 
 
 **Veto and override.** The Governor may veto bills; the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** How many statewide executives do Hawaiians elect, and how many members sit in each chamber of the Legislature?
+:::reveal How many statewide executives do Hawaiians elect, and how many members sit in each chamber of the Legislature? ||| Just two: the Governor and the Lieutenant Governor. The Attorney General and department heads are appointed by the Governor with Senate confirmation. The House has 51 representatives on 2-year terms, and the Senate has 25 senators on 4-year terms.
 
 ## Sources
 - Hawaii State Legislature. (n.d.). *Constitution of the State of Hawaii (1959); the three branches*. capitol.hawaii.gov. https://www.capitol.hawaii.gov/
@@ -109,7 +109,7 @@ The **Attorney General** and department heads are **appointed by the Governor** 
 
 Why it matters: if you're comparing states, don't assume Hawaii holds judicial **retention elections**. It doesn't. A professional commission handles both the front end (nomination) and the back end (retention).
 
-**Check yourself.** Who decides whether a Hawaii judge is retained at the end of a term, and how is that different from Missouri or Colorado?
+:::reveal Who decides whether a Hawaii judge is retained at the end of a term, and how is that different from Missouri or Colorado? ||| The Judicial Selection Commission decides retention, not the voters. States like Missouri and Colorado send judges to voters for a yes/no retention vote; Hawaii keeps the decision inside the commission. Judges serve 10-year terms. The Governor appoints Supreme Court and appellate judges (the Chief Justice appoints many lower-court judges) from the commission's list, with Senate confirmation.
 
 ## Sources
 - Hawaii State Judiciary. (n.d.). *Judicial selection and retention; the Judicial Selection Commission*. courts.state.hi.us. https://www.courts.state.hi.us/
@@ -139,7 +139,7 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
 
 ⚠️ **Time-sensitive:** OHA's structure, funding, and related legal questions evolve; confirm current details at the state's own sites.
 
-**Check yourself.** What does the Office of Hawaiian Affairs do, and what makes Hawaii's official-language status unique among the states?
+:::reveal What does the Office of Hawaiian Affairs do, and what makes Hawaii's official-language status unique among the states? ||| OHA is a semi-autonomous state agency created by the 1978 constitutional convention. It is governed by an elected board of trustees and manages a share of ceded-land revenues in trust for Native Hawaiians. Hawaii is the only U.S. state with an official second language, Hawaiian. The constitution makes both English and Hawaiian official languages of the State.
 
 ## Sources
 - Hawaii State Legislature. (n.d.). *The Office of Hawaiian Affairs; official languages (Constitution, Article XV)*. capitol.hawaii.gov. https://www.capitol.hawaii.gov/`,

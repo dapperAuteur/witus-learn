@@ -46,7 +46,7 @@ Because the 1874 document is so heavily amended, **the amendments are where a lo
 
 **A note this course keeps returning to:** state facts **vary and change**, and Arkansas's amendment-heavy constitution changes relatively often, its initiative rules especially. Everything here is current as of authoring, but Arkansas's own government ([arkleg.state.ar.us](https://arkleg.state.ar.us), [sos.arkansas.gov](https://sos.arkansas.gov), [arcourts.gov](https://arcourts.gov)) is the authoritative source. When something is time-sensitive or in flux, we say so.
 
-**Check yourself.** In what year was Arkansas's current constitution adopted, and what did Amendment 7 (1920) give Arkansas citizens the power to do?
+:::reveal In what year was Arkansas's current constitution adopted, and what did Amendment 7 (1920) give Arkansas citizens the power to do? ||| 1874. It is Arkansas's fifth constitution, built to limit state government, and it has been amended more than 100 times. It gave them the initiative (propose laws or constitutional amendments by petition) and the referendum (refer a law the Legislature passed to the ballot).
 
 ## Sources
 - Arkansas Secretary of State. (n.d.). *Constitution of the State of Arkansas of 1874*. SOS.arkansas.gov. https://www.sos.arkansas.gov/
@@ -79,7 +79,7 @@ All serve **four-year terms** under **Amendment 63 (1984)**.
 
 **Veto override: a SIMPLE majority.** Like Indiana (and unlike Arizona), **Arkansas's General Assembly can override the governor's veto with a SIMPLE majority** of each chamber (Arkansas General Assembly, n.d.). Combined with a governor who shares power with six other elected executives, this makes the Arkansas governor comparatively **limited**, exactly what the 1874 constitution intended.
 
-**Check yourself.** Give the size of each chamber of the Arkansas General Assembly, name what's distinctive about how Arkansas's Lieutenant Governor is chosen, and state the vote needed to override the governor's veto.
+:::reveal Give the size of each chamber of the Arkansas General Assembly, name what's distinctive about how Arkansas's Lieutenant Governor is chosen, and state the vote needed to override the governor's veto. ||| The Senate has 35 senators (4-year staggered terms); the House has 100 representatives (2-year terms). The executive is plural: seven separately elected constitutional officers. The Lieutenant Governor is elected on their own (not a running mate), so the governor and lieutenant governor can be from different parties.
 
 ## Sources
 - Arkansas General Assembly. (n.d.). *About the General Assembly*. Arkleg.state.ar.us. https://arkleg.state.ar.us/
@@ -114,7 +114,7 @@ The justices serve **staggered 8-year terms**, so it's unlikely the whole court 
 
 **Why this matters civically:** in Arkansas, your **judicial races are real elections you vote in**, not yes/no retention questions. You may see candidates for the Supreme Court and Court of Appeals on your ballot with **no party listed**, which is by design (nonpartisan). Knowing that these are contested, nonpartisan elections tells you to research the candidates on the merits rather than looking for a party cue that isn't there.
 
-**Check yourself.** How does Arkansas choose its Supreme Court justices, how is that different from merit selection, and what does "nonpartisan" mean on your judicial ballot?
+:::reveal How does Arkansas choose its Supreme Court justices, how is that different from merit selection, and what does "nonpartisan" mean on your judicial ballot? ||| By nonpartisan statewide election (Amendment 80, 2001), not merit selection. The Supreme Court has seven justices serving 8-year staggered terms. The candidates run without a party label, so you research them on the merits rather than looking for a party cue.
 
 ## Sources
 - Arkansas Judiciary. (n.d.). *Arkansas Supreme Court / judicial selection (Amendment 80)*. Arcourts.gov. https://www.arcourts.gov/courts/supreme-court
@@ -151,7 +151,7 @@ The justices serve **staggered 8-year terms**, so it's unlikely the whole court 
 
 **And don't forget the other lawmaker: the voters.** Because of **Amendment 7**, Arkansans can also make law **without** the Legislature, by **initiative** (petition a law or amendment onto the ballot) or block a law by **referendum**. So, as in Arizona, a bill isn't the *only* route to a new law in Arkansas, though (as the next flagged lesson explains) the rules for that petition route have recently been **tightened**.
 
-**Check yourself.** Order these: committee, floor vote, Governor's action, introduction, the other chamber. Then explain why an Arkansas governor's veto is comparatively weak.
+:::reveal Order these: committee, floor vote, Governor's action, introduction, the other chamber. Then explain why an Arkansas governor's veto is comparatively weak. ||| The General Assembly can override it with a simple majority of each chamber, the same majority that passed the bill, so the Legislature stays the center of gravity.
 
 ## Sources
 - Arkansas General Assembly. (n.d.). *How a bill becomes a law / legislative process*. Arkleg.state.ar.us. https://arkleg.state.ar.us/
@@ -188,7 +188,7 @@ Other county officers (**Sheriff, Circuit Clerk, County Clerk, Assessor, Collect
 
 The practical upshot: if you have a local problem in Arkansas, the two levels to think about are your **county** (county judge + quorum court of JPs) and your **city or town**, not a township. And watch the vocabulary: the "county judge" is your executive and the "quorum court" is your local legislature, which trips up newcomers constantly.
 
-**Check yourself.** How many counties does Arkansas have, what does the "county judge" actually do, what is the "quorum court," and what local layer does Arkansas NOT have?
+:::reveal How many counties does Arkansas have, what does the "county judge" actually do, what is the "quorum court," and what local layer does Arkansas NOT have? ||| The county judge is the county's chief executive (not a courtroom judge); the quorum court is the county's legislature, made up of elected Justices of the Peace (JPs). 75 counties, and no townships. Below the county are cities and towns (municipalities).
 
 ## Sources
 - Arkansas Secretary of State. (n.d.). *Arkansas county government (county judge, quorum court, JPs)*. SOS.arkansas.gov. https://www.sos.arkansas.gov/
@@ -222,7 +222,7 @@ The practical upshot: if you have a local problem in Arkansas, the two levels to
 
 **Registration closes 30 days before the election.** Arkansas does **not** have same-day registration; you must be registered about **30 days before Election Day**. Miss the deadline and you can't vote in that election (Arkansas Secretary of State, n.d.).
 
-**Check yourself.** In Arkansas, which kind of voting is "no-excuse" and which kind needs an excuse, and how many days before the election does registration close?
+:::reveal In Arkansas, which kind of voting is "no-excuse" and which kind needs an excuse, and how many days before the election does registration close? ||| Early in-person voting is no-excuse for any registered voter; absentee voting by mail generally requires qualifying under a listed excuse. Arkansas generally requires a photo ID (with a fail-safe such as a provisional ballot), and registration closes about 30 days before the election (no same-day registration).
 
 ## Sources
 - Arkansas Secretary of State. (n.d.). *Voter information - ID, early voting, absentee, registration*. SOS.arkansas.gov. https://www.sos.arkansas.gov/elections/
@@ -258,7 +258,7 @@ The practical upshot: if you have a local problem in Arkansas, the two levels to
 
 **Why flag this so hard?** Ballot-access rules are exactly the kind of "state fact" that **changes between elections** and **varies by cycle**. Asserting a stale number here would be worse than useless. It could send someone down a petition path under rules that no longer apply. The durable skill is: **for the initiative process, always pull the current handbook from [sos.arkansas.gov](https://sos.arkansas.gov).**
 
-**Check yourself.** What power does Amendment 7 give Arkansans, why does this course refuse to state fixed signature-distribution numbers, and where should you look for the current rules?
+:::reveal What power does Amendment 7 give Arkansans, why does this course refuse to state fixed signature-distribution numbers, and where should you look for the current rules? ||| It lets citizens initiate a state statute or constitutional amendment by petition, and refer a legislative act to the ballot. The rules were recently tightened and remain in flux (county distribution, canvasser/ID, fiscal impact), so you should check the Secretary of State's current Initiatives & Referenda Handbook.
 
 ## Sources
 - Arkansas Secretary of State. (n.d.). *Initiatives and Referenda (current Handbook)*. SOS.arkansas.gov. https://www.sos.arkansas.gov/elections/initiatives-and-referenda/

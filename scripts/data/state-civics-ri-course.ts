@@ -34,7 +34,7 @@ Rhode Island (nicknamed **"The Ocean State"**) governs under a constitution firs
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Rhode Island's own government (rilegislature.gov, sos.ri.gov, courts.ri.gov) is the authoritative source.
 
-**Check yourself.** What did Rhode Island change about its official name in 2020, and who founded the colony and why?
+:::reveal What did Rhode Island change about its official name in 2020, and who founded the colony and why? ||| Roger Williams founded it in 1636 as a haven for religious freedom and the separation of church and state. They voted to remove 'and Providence Plantations,' so the official name is now simply 'State of Rhode Island.'
 
 ## Sources
 - Rhode Island Secretary of State. (n.d.). *Rhode Island history; the 2020 official-name change*. sos.ri.gov. https://www.sos.ri.gov/
@@ -66,7 +66,7 @@ Rhode Island (nicknamed **"The Ocean State"**) governs under a constitution firs
 
 This two-tier structure (with the **town** unusually important and **no county layer**) is shared only with a handful of states like Connecticut, a distinctive New England pattern.
 
-**Check yourself.** How many cities and towns does Rhode Island have, and what happened to its county governments?
+:::reveal How many cities and towns does Rhode Island have, and what happened to its county governments? ||| No. The five counties exist only as geographic and judicial reference areas, with no county commissioners, councils, budgets, or services. It has 39 cities and towns, and they run local government: schools, police, roads, zoning, and local services.
 
 ## Sources
 - Rhode Island General Assembly. (n.d.). *Local government: cities and towns; the absence of county government*. rilegislature.gov. https://www.rilegislature.gov/
@@ -98,7 +98,7 @@ This two-tier structure (with the **town** unusually important and **no county l
 
 **Executive today.** Rhode Island voters elect a **plural executive**: the **Governor**, **Lieutenant Governor** (elected **separately**), **Secretary of State**, **Attorney General**, and **General Treasurer**, each on a **4-year term.**
 
-**Check yourself.** What did the 2004 separation-of-powers amendment change about Rhode Island government?
+:::reveal What did the 2004 separation-of-powers amendment change about Rhode Island government? ||| It removed legislators from executive boards and commissions and strengthened the Governor and the executive branch. The Governor, Lieutenant Governor (elected separately), Secretary of State, Attorney General, and General Treasurer, each on a 4-year term.
 
 ## Sources
 - Rhode Island General Assembly. (n.d.). *Legislative history and the 2004 separation-of-powers amendment; statewide elected officials*. rilegislature.gov. https://www.rilegislature.gov/`,
@@ -131,7 +131,7 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
 
 **A Supreme Court that serves for LIFE.** Here's a genuine Rhode Island distinctive: its **Supreme Court justices serve for LIFE** (during good behavior). Rhode Island is the **only state whose highest-court justices have life tenure**, like federal judges (Rhode Island Judiciary, n.d.). Justices are chosen by **merit selection**: a **Judicial Nominating Commission** sends names to the **Governor**, who appoints with **legislative confirmation.** Lower-court judges also serve to retirement/for life via the same merit process. So Rhode Island keeps judges **entirely out of elections**, and, uniquely, gives its top justices **life tenure.**
 
-**Check yourself.** What is unique about the tenure of Rhode Island's Supreme Court justices, and how strong is the Governor's veto?
+:::reveal What is unique about the tenure of Rhode Island's Supreme Court justices, and how strong is the Governor's veto? ||| They serve for life (during good behavior); Rhode Island is the only state whose highest-court justices have life tenure. The House has 75 members and the Senate has 38, all on 2-year terms; the Governor's veto is weak, overridden by a three-fifths vote, with no line-item veto.
 
 ## Sources
 - Rhode Island General Assembly. (n.d.). *The General Assembly; how a bill becomes law; the three-fifths override*. rilegislature.gov. https://www.rilegislature.gov/

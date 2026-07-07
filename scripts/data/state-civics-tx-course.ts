@@ -59,7 +59,7 @@ A state constitution is also **easier to amend than the U.S. Constitution**: in 
 
 **A note this course keeps returning to:** state facts **vary and change**. Office names, deadlines, and rules described here are current as of authoring, but the authoritative source is always Texas's own government ([capitol.texas.gov](https://capitol.texas.gov) and the offices below), not a textbook. When something is time-sensitive, we say so.
 
-**Check yourself.** In what year did Texas adopt its current constitution, why is it so long and so often amended, and what does "plural executive" mean?
+:::reveal In what year did Texas adopt its current constitution, why is it so long and so often amended, and what does "plural executive" mean? ||| 1876. It writes many specifics directly into the constitution, so changing state policy often requires a constitutional amendment (700+ proposed, 500+ approved). Executive power is scattered among several separately-elected statewide officers rather than concentrated in the governor.
 
 ## Sources
 - Texas Legislative Council. (n.d.-a). *The Texas Constitution.* Texas Constitution and Statutes. https://statutes.capitol.texas.gov/?link=CN
@@ -102,7 +102,7 @@ Because these officials answer to voters, executive power in Texas is **shared a
 
 **Judicial: the state courts.** Texas's court system is unusual because it has **TWO** highest courts, a split ("bifurcated") top. That's the subject of the next lesson.
 
-**Check yourself.** Name Texas's three branches; give the size and term length of each legislative chamber; and explain what "plural executive" means and why the Lieutenant Governor is so powerful.
+:::reveal Name Texas's three branches; give the size and term length of each legislative chamber; and explain what "plural executive" means and why the Lieutenant Governor is so powerful. ||| The House has 150 members with 2-year terms; the Senate has 31 members with 4-year terms. As President of the Senate, the Lt. Governor presides over the Senate, appoints its committee members and chairs, and assigns bills to committee.
 
 ## Sources
 - Tex. Const. art. IV (Executive Department). https://statutes.capitol.texas.gov/Docs/CN/htm/CN.4.htm
@@ -138,7 +138,7 @@ So in Texas, whether your case ends at the Supreme Court or the Court of Crimina
 
 ⚠️ **Some details vary by court level.** The partisan-election, six-year-term rule described here is the statewide/appellate picture. Rules for particular trial courts (and periodic reform proposals about how Texas selects judges) can differ, so when you want the rule for a *specific* court, the authoritative source is the Texas Judicial Branch ([txcourts.gov](https://txcourts.gov)).
 
-**Check yourself.** Name Texas's two highest courts and say which kinds of cases each one ends; and describe how Texas selects the judges on those courts.
+:::reveal Name Texas's two highest courts and say which kinds of cases each one ends; and describe how Texas selects the judges on those courts. ||| The Supreme Court of Texas is the last word on civil cases; the Court of Criminal Appeals is the last word on criminal cases (a bifurcated top since 1891). In partisan statewide elections (party label on the ballot) to six-year terms.
 
 ## Sources
 - Texas Office of Court Administration. (n.d.). *Court structure of Texas / Texas courts: A descriptive summary.* Txcourts.gov. https://www.txcourts.gov/about-texas-courts/
@@ -174,7 +174,7 @@ Now the route a bill travels:
 5. **The Governor.** Once both chambers pass the same bill, it goes to the governor, who can **sign** it, **let it become law without a signature**, or **veto** it. (Texas also gives the governor a **line-item veto** over spending items in the budget bill.)
 6. **The two-thirds override.** If the governor vetoes, the Legislature can override with a **two-thirds vote of each chamber**: the same threshold Congress uses against a presidential veto. But there's a Texas twist: because the session is so short and ends in 140 days, many vetoes arrive **after the Legislature has already gone home**, so in practice a large share of Texas vetoes are **never** subject to an override vote at all.
 
-**Check yourself.** Put these in order: committee, governor's signature or veto, introduction, floor vote, the other chamber. Then explain why the biennial session and its 140-day limit make many Texas vetoes effectively final even though the override threshold is two-thirds.
+:::reveal Put these in order: committee, governor's signature or veto, introduction, floor vote, the other chamber. Then explain why the biennial session and its 140-day limit make many Texas vetoes effectively final even though the override threshold is two-thirds. ||| Only in odd-numbered years, convening the second Tuesday in January for a maximum of 140 days; only the governor can call special sessions. By a two-thirds vote of each chamber, but because the session is short (140 days) many vetoes arrive after the Legislature has adjourned, so they are never subject to an override vote.
 
 ## Sources
 - Texas Legislative Council. (n.d.-c). *The legislative process in Texas.* TLC.texas.gov. https://tlc.texas.gov/docs/legref/legislativeprocess.pdf
@@ -213,7 +213,7 @@ So a big Texas city writes its own charter and has wide latitude; a small town o
 
 The practical payoff is the same as everywhere: **who provides your service depends on where you live**: it might be your city, your county, or a special district. Texas's "no townships, but lots of special districts" mix just arranges the boxes differently than many states.
 
-**Check yourself.** How many counties does Texas have (and how does that rank nationally)? Who sits on a commissioners court and what does it do? And what common local layer does Texas NOT have?
+:::reveal How many counties does Texas have (and how does that rank nationally)? Who sits on a commissioners court and what does it do? And what common local layer does Texas NOT have? ||| 254 counties, the most of any state, each governed by a commissioners court made up of a county judge plus four commissioners elected from precincts. Townships. Texas has no township layer between the county and the city; unincorporated areas are largely served by the county plus special districts.
 
 ## Sources
 - Tex. Loc. Gov't Code ch. 81 (Commissioners Court). https://statutes.capitol.texas.gov/Docs/LG/htm/LG.81.htm
@@ -246,7 +246,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
 
 **No statewide citizen initiative.** Here's a big structural fact for ballot access: **Texas has NO statewide citizen-initiated ballot measures.** In many Western states, ordinary citizens can gather signatures to put a law or constitutional amendment directly on the statewide ballot. **In Texas, they can't**: the constitution lets **only the Legislature** propose amendments (by a two-thirds vote of each chamber), which voters then ratify (Tex. Const. art. XVII). The constitutional amendments Texans vote on every odd November all originate in the Legislature, not from citizen petitions. (Some Texas **home-rule cities** allow local initiative/referendum on city matters, but there is no *statewide* citizen initiative.) So in Texas, "changing state law" means electing legislators and lobbying them, not launching a statewide petition drive.
 
-**Check yourself.** Name Texas's ID requirement to vote in person and what a voter without accepted photo ID can do instead; explain what "no same-day registration / ~30-day deadline" means; and state whether a Texas citizen can put a new state law on the statewide ballot by petition.
+:::reveal Name Texas's ID requirement to vote in person and what a voter without accepted photo ID can do instead; explain what "no same-day registration / ~30-day deadline" means; and state whether a Texas citizen can put a new state law on the statewide ballot by petition. ||| An accepted photo ID; a voter who cannot reasonably obtain one may sign a Reasonable Impediment Declaration and show a supporting document. No. Texas has no statewide citizen initiative; only the Legislature can propose amendments (by a two-thirds vote), which voters then ratify.
 
 ## Sources
 - VoteTexas.gov. (n.d.-a). *Required identification for voters.* Texas Secretary of State. https://www.votetexas.gov/voting/need-id.html

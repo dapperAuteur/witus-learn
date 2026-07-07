@@ -39,7 +39,7 @@ This is the through-line: Mississippi's civics can only be understood with atten
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Mississippi's own government ([legislature.ms.gov](https://legislature.ms.gov), [sos.ms.gov](https://sos.ms.gov), [courts.ms.gov](https://courts.ms.gov)) is the authoritative source.
 
-**Check yourself.** What Jim Crow-era election rule did Mississippi remove in 2020, and what else did the state change that year?
+:::reveal What Jim Crow-era election rule did Mississippi remove in 2020, and what else did the state change that year? ||| The 1890 rule that a candidate for Governor or statewide office had to win BOTH a majority of the popular vote AND a majority of the 122 House districts, or the state House would choose the winner. It was replaced with a popular-majority-or-runoff system. Its state flag. Mississippi retired the last U.S. state flag carrying the Confederate battle emblem and voters approved a new flag (the 'In God We Trust'/Magnolia flag).
 
 ## Sources
 - Mississippi Secretary of State. (n.d.). *2020 constitutional amendment on electing statewide officials; the new state flag*. sos.ms.gov. https://www.sos.ms.gov/
@@ -73,7 +73,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** Why is Mississippi's Lieutenant Governor considered so powerful, and in which years does Mississippi elect its Governor?
+:::reveal Why is Mississippi's Lieutenant Governor considered so powerful, and in which years does Mississippi elect its Governor? ||| The Lieutenant Governor is elected separately (can be a different party), presides over the state Senate, and strongly controls its committees, calendar, and which bills advance, making them a central figure in lawmaking. In odd-numbered years (for example 2023 and 2027), each serving a 4-year term.
 
 ## Sources
 - Mississippi Secretary of State. (n.d.). *Statewide elected officials; odd-year elections*. sos.ms.gov. https://www.sos.ms.gov/
@@ -107,7 +107,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 
 **Constitutional amendments** are otherwise proposed by the **Legislature** and ratified by the **voters.** The takeaway: in Mississippi today, lawmaking runs **through the Legislature**, the citizen initiative is, for now, **on hold.**
 
-**Check yourself.** Why was Mississippi's initiative process struck down, and what does that mean for citizen lawmaking there now?
+:::reveal Why was Mississippi's initiative process struck down, and what does that mean for citizen lawmaking there now? ||| In 2021 the state Supreme Court struck it down. Its formula required signatures gathered equally from five congressional districts, but Mississippi dropped to four U.S. House seats after the 2000 census, making the five-district formula impossible to satisfy.
 
 ## Sources
 - Mississippi Secretary of State. (n.d.). *The initiative process and the 2021 Supreme Court ruling*. sos.ms.gov. https://www.sos.ms.gov/

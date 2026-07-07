@@ -54,7 +54,7 @@ export const STATE_CIVICS_NC_COURSE: AuthoredCourse = {
 
 **A note this course keeps returning to:** state facts **vary and change**, and North Carolina's are among the most **litigated** in the country. Everything here is current as of authoring, but North Carolina's own government ([ncleg.gov](https://ncleg.gov), [ncsbe.gov](https://ncsbe.gov), [sosnc.gov](https://sosnc.gov), [nccourts.gov](https://nccourts.gov)) is the authoritative source. When something is time-sensitive or in flux, we say so.
 
-**Check yourself.** In what year was North Carolina's current constitution adopted, is it the state's first/second/third constitution, and who can propose a constitutional amendment: citizens by petition, or the General Assembly?
+:::reveal In what year was North Carolina's current constitution adopted, is it the state's first/second/third constitution, and who can propose a constitutional amendment: citizens by petition, or the General Assembly? ||| 1971, and it is North Carolina's third constitution (after those of 1776 and 1868). Only the General Assembly can propose one, by a three-fifths vote of each house, and then the voters ratify. North Carolina has no citizen initiative.
 
 ## Sources
 - North Carolina General Assembly. (n.d.). *Constitution of North Carolina*. NCleg.gov. https://www.ncleg.gov/Laws/Constitution
@@ -106,7 +106,7 @@ Because these ten officers are elected **on their own**, real executive power in
 
 **The veto, and the 3/5 override.** North Carolina's governor is unusual twice over: the office had **no veto power at all until 1997** (NC was the **last** state to grant its governor a veto), and even now a veto is overridden by only **three-fifths** of the members present and voting in each chamber, not the more common two-thirds. Both points get their own treatment in Lesson 4.
 
-**Check yourself.** Give the size of each chamber of the General Assembly, name what the "Council of State" is and roughly how many officers it has, and say how North Carolina chooses its appellate judges.
+:::reveal Give the size of each chamber of the General Assembly, name what the "Council of State" is and roughly how many officers it has, and say how North Carolina chooses its appellate judges. ||| It is North Carolina's plural elected executive: ten statewide officers each elected separately (Governor, Lt. Governor, Attorney General, and others), not a single governor with appointed deputies. The House has 120 members and the Senate has 50, both serving 2-year terms.
 
 ## Sources
 - North Carolina General Assembly. (n.d.). *The North Carolina General Assembly (House & Senate)*. NCleg.gov. https://www.ncleg.gov/
@@ -145,7 +145,7 @@ This is worth underlining because it differs from other models:
 
 **Why this matters civically:** in North Carolina, your **judicial races are real, party-labeled elections you vote in**, not yes/no retention questions and not label-free contests. Knowing they're partisan tells you a party cue *will* appear on the ballot, but it's still worth researching the candidates on the merits.
 
-**Check yourself.** How does North Carolina choose its Supreme Court justices and Court of Appeals judges, and what does "partisan" mean on your judicial ballot, versus "nonpartisan"?
+:::reveal How does North Carolina choose its Supreme Court justices and Court of Appeals judges, and what does "partisan" mean on your judicial ballot, versus "nonpartisan"? ||| By statewide partisan elections, with a party label on the ballot, not merit selection and not nonpartisan races. The Governor appoints a replacement, who must then stand for election to keep the seat, so even appointed judges face the voters.
 
 ## Sources
 - North Carolina Judicial Branch. (n.d.). *Supreme Court / Court of Appeals / how judges are selected*. NCcourts.gov. https://www.nccourts.gov/courts
@@ -187,7 +187,7 @@ This is worth underlining because it differs from other models:
 
 **And note what North Carolina does NOT have:** there's **no citizen initiative** (Lesson 1), so, unlike Arizona or Arkansas, voters can't write a *statute* directly by petition. The main route to a new state law is a **bill through the General Assembly** (voters do get the final say when the legislature refers a **constitutional amendment**).
 
-**Check yourself.** Order these: committee, floor vote, Governor's action, introduction, the other chamber. Then state two things that make North Carolina's veto unusual (when the governor first got it, and the fraction needed to override).
+:::reveal Order these: committee, floor vote, Governor's action, introduction, the other chamber. Then state two things that make North Carolina's veto unusual (when the governor first got it, and the fraction needed to override). ||| The veto took effect in 1997 (voters approved it in 1996), making North Carolina the last state in the nation to grant its governor a veto. Three-fifths (3/5) of the members present and voting in each chamber, a lower bar than the more common two-thirds.
 
 ## Sources
 - North Carolina General Assembly. (n.d.). *How a bill becomes a law / the legislative process*. NCleg.gov. https://www.ncleg.gov/
@@ -226,7 +226,7 @@ This is worth underlining because it differs from other models:
 
 The practical upshot: if you have a local problem in North Carolina, the two levels to think about are your **county** (Board of Commissioners) and your **city or town** (council), not a township. And remember the limit: because North Carolina is a Dillon's-Rule state, what your local government *can* do is often set by the **General Assembly** in Raleigh.
 
-**Check yourself.** How many counties does North Carolina have, what governs a county, what does "limited home rule / Dillon's Rule" mean for a city or county, and what local layer does North Carolina NOT have?
+:::reveal How many counties does North Carolina have, what governs a county, what does "limited home rule / Dillon's Rule" mean for a city or county, and what local layer does North Carolina NOT have? ||| 100 counties, each governed by an elected Board of County Commissioners. Local governments have only the powers the General Assembly grants them (limited home rule), and North Carolina has no township layer of government.
 
 ## Sources
 - UNC School of Government - Coates' Canons. (n.d.). *Is North Carolina a Dillon's Rule state?* SOG.unc.edu. https://canons.sog.unc.edu/2012/10/is-north-carolina-a-dillons-rule-state/
@@ -262,7 +262,7 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
 
 ⚠️ **Flagged: absentee deadlines have MOVED.** North Carolina recently **changed** its mail-ballot **return** rule: where absentee ballots postmarked by Election Day once had a short grace period to arrive, the General Assembly moved to requiring ballots to be **received by Election Day**. Because this (and the request deadline) can change again, **do not rely on a fixed date from this course: confirm the current request and return deadlines at [ncsbe.gov](https://ncsbe.gov)** for your specific election (North Carolina State Board of Elections, n.d.).
 
-**Check yourself.** In North Carolina, can you register and vote on the same day during early voting? What is the regular registration deadline (in days before the election)? And is absentee/mail voting "no-excuse"?
+:::reveal In North Carolina, can you register and vote on the same day during early voting? What is the regular registration deadline (in days before the election)? And is absentee/mail voting "no-excuse"? ||| Yes. North Carolina allows same-day registration during early voting (with proof of residence), though not on Election Day itself. The regular registration deadline is 25 days before Election Day, and absentee (mail) voting is no-excuse: any registered voter may request a ballot.
 
 ## Sources
 - North Carolina State Board of Elections. (n.d.). *Vote early in person (one-stop) / same-day registration*. NCsbe.gov. https://www.ncsbe.gov/voting/vote-early-person
@@ -302,7 +302,7 @@ The practical upshot: if you have a local problem in North Carolina, the two lev
 
 **Why flag this so hard?** Voter-ID rules are exactly the kind of "state fact" that **changes with each court ruling and legislative session**. Asserting a stale status here would be worse than useless: it could tell someone they don't need ID when they do, or vice versa. The durable skill is: **for photo-ID rules, always pull the current guidance from [ncsbe.gov](https://ncsbe.gov).**
 
-**Check yourself.** What does North Carolina now generally require to vote in person, why does this course refuse to treat one court ruling as the final word, and where should you look for the current rule and ID list?
+:::reveal What does North Carolina now generally require to vote in person, why does this course refuse to treat one court ruling as the final word, and where should you look for the current rule and ID list? ||| A photo ID (with fail-safe options like an ID Exception Form or a provisional ballot). Because the rule has moved through the courts repeatedly, confirm the current status and acceptable-ID list at ncsbe.gov. Because the requirement (SB 824, 2018) was litigated for years, blocked then allowed, taking effect only in 2023 to 2024 with federal litigation continuing, so the status can change with each ruling or session.
 
 ## Sources
 - North Carolina State Board of Elections. (n.d.). *Voter ID / bring your photo ID to vote*. NCsbe.gov. https://www.ncsbe.gov/voting/voter-id

@@ -47,7 +47,7 @@ A state constitution is also **easier to amend than the U.S. Constitution**, and
 
 **A note this course keeps returning to:** state facts **vary and change**. Office names, deadlines, and rules described here are current as of authoring, but the authoritative source is always Indiana's own government ([in.gov](https://in.gov) and the offices below), not a textbook. When something is time-sensitive, we say so.
 
-**Check yourself.** In what year did Indiana adopt its current constitution, and what does the strict state-debt clause effectively require the state budget to do?
+:::reveal In what year did Indiana adopt its current constitution, and what does the strict state-debt clause effectively require the state budget to do? ||| 1851, replacing the original 1816 statehood constitution. Because the state generally can't borrow, it acts as a de-facto balanced-budget requirement.
 
 ## Sources
 - Indiana Historical Bureau. (n.d.). *The 1851 Indiana Constitution* (by D. G. Vanderstel). IN.gov. https://www.in.gov/history/about-indiana-history-and-trivia/explore-indiana-history-by-topic/state-constitutions/the-1851-indiana-constitution-by-david-g-vanderstel/
@@ -84,7 +84,7 @@ It writes state law and passes the budget (Indiana General Assembly, n.d.).
 
 Compare that to the U.S. Congress, which needs a **two-thirds** vote to override a presidential veto. In Indiana, a governor who vetoes a bill the legislature still wants can be overridden almost immediately. This makes the **legislature the center of gravity** in Indiana government, a design choice, rooted in the 1851 constitution's distrust of concentrated executive power.
 
-**Check yourself.** Name Indiana's three branches, give the size and term length of each legislative chamber, and explain what makes Indiana's governor "weak" compared with the U.S. President.
+:::reveal Name Indiana's three branches, give the size and term length of each legislative chamber, and explain what makes Indiana's governor "weak" compared with the U.S. President. ||| The legislature can override the governor's veto with a simple majority, not the two-thirds Congress needs.
 
 ## Sources
 - Indiana General Assembly. (n.d.). *About the General Assembly*. IGA.in.gov. https://iga.in.gov/information/about
@@ -117,7 +117,7 @@ This "merit selection + retention" system was adopted by constitutional amendmen
 
 **Why this matters civically:** on your ballot you may see appellate justices listed for a **yes/no retention vote**. That's not a throwaway line; it's your direct check on the judges who interpret Indiana law. Knowing what a retention vote *is* means you can cast it thoughtfully instead of skipping it.
 
-**Check yourself.** Describe Indiana's three-step way of selecting Supreme Court and Court of Appeals justices, and explain what a "retention vote" asks you to decide.
+:::reveal Describe Indiana's three-step way of selecting Supreme Court and Court of Appeals justices, and explain what a "retention vote" asks you to decide. ||| Merit selection: a nominating commission sends the governor a short list, the governor appoints, then justices face yes/no retention votes. A simple yes/no on whether to keep a sitting justice; there is no opponent, it is a performance check.
 
 ## Sources
 - State of Indiana, Judicial Branch. (n.d.). *About the Indiana Supreme Court / selection of justices*. Courts.in.gov. https://www.in.gov/courts/supreme/about/
@@ -150,7 +150,7 @@ This "merit selection + retention" system was adopted by constitutional amendmen
 
 **A budget wrinkle unique to Indiana's setup:** because the constitution's strict debt clause functions as a de-facto balanced-budget rule (Lesson 1), the budget bill can't simply borrow to cover a shortfall the way the federal government does. Indiana's budget process has to make the numbers balance; that constraint shapes what bills can realistically spend.
 
-**Check yourself.** Put these in order: committee, Governor's signature or veto, introduction, floor vote, the other chamber. Then explain why an Indiana governor's veto is easier to override than a U.S. President's.
+:::reveal Put these in order: committee, Governor's signature or veto, introduction, floor vote, the other chamber. Then explain why an Indiana governor's veto is easier to override than a U.S. President's. ||| With a simple majority of each chamber, the same votes used to pass the bill, not the two-thirds Congress needs.
 
 ## Sources
 - Indiana General Assembly. (n.d.). *How a bill becomes a law / legislative process*. IGA.in.gov. https://iga.in.gov/information/about
@@ -187,7 +187,7 @@ Splitting executive and fiscal power between two elected boards is itself an Ind
 
 The practical payoff is the same as everywhere: **who provides your service depends on where you live**: it might be your city, your county, or your township. Indiana's township layer just gives it one more box than many states have.
 
-**Check yourself.** How many counties does Indiana have, what are the two elected county bodies and what does each control, and what local layer does Indiana keep that many states have dropped?
+:::reveal How many counties does Indiana have, what are the two elected county bodies and what does each control, and what local layer does Indiana keep that many states have dropped? ||| 92 counties, each typically run by a Board of Commissioners (executive) and a County Council (fiscal body). Townships, about 1,008 active ones, covering every acre of the state.
 
 ## Sources
 - Indiana General Assembly. (n.d.). *Indiana Code, Title 36 - Local Government*. IGA.in.gov. https://iga.in.gov/laws/current/ic/titles/36
@@ -221,7 +221,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
 
 ⚠️ **Confirm the current details.** ID lists, excuse categories, and the exact registration deadline are set by state law and can be adjusted. Verify the current rules at **[in.gov/sos](https://in.gov/sos)** before relying on a specific one.
 
-**Check yourself.** Name Indiana's ID requirement to vote in person and the case that upheld it; explain what "absentee by mail requires an excuse" means; and state whether an Indiana citizen can put a new law on the ballot by petition.
+:::reveal Name Indiana's ID requirement to vote in person and the case that upheld it; explain what "absentee by mail requires an excuse" means; and state whether an Indiana citizen can put a new law on the ballot by petition. ||| A government-issued photo ID, upheld in Crawford v. Marion County Election Board (2008). No. Indiana has no statewide citizen initiative; only the General Assembly can propose amendments.
 
 ## Sources
 - Indiana Election Division / Secretary of State. (n.d.). *Voter information - ID, absentee, registration*. IN.gov. https://www.in.gov/sos/elections/
@@ -252,7 +252,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
 
 **Why a whole lesson on two name/selection changes?** Because this is exactly where learners get tripped up, and it teaches the transferable skill: **when a source and a document disagree on an office's name or how it's filled, the state's own current site is the tiebreaker.** Indiana isn't unique in renaming or reworking offices (every state does it), so the habit ("verify the office's *current* name and *current* selection method") matters more than memorizing today's answer.
 
-**Check yourself.** What changed about Indiana's top K-12 education office in 2021, why can the constitution's text still confuse you about it, and what was the State Auditor renamed to (and when)?
+:::reveal What changed about Indiana's top K-12 education office in 2021, why can the constitution's text still confuse you about it, and what was the State Auditor renamed to (and when)? ||| The elected Superintendent of Public Instruction became an appointed Secretary of Education, though the constitution still names the old title. State Comptroller, effective July 1, 2023; it is the same elected office, only the name changed.
 
 ## Sources
 - Indiana General Assembly. (2019). *House Enrolled Act 1005 (2019)*. IGA.in.gov. https://iga.in.gov/legislative/2019/bills/house/1005/details

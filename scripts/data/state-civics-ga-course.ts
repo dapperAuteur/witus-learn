@@ -68,7 +68,7 @@ A state constitution does for the state what the U.S. Constitution does for the 
 
 **A note this course keeps returning to:** state facts **vary and change**. Deadlines, election rules, and figures described here are current as of authoring, but the authoritative source is always Georgia's own government (the offices below), not a textbook. When something is time-sensitive, we say so.
 
-**Check yourself.** In what year did Georgia's current constitution take effect, and what are the only two ways a constitutional amendment can be *proposed*, given that Georgia has no citizen initiative?
+:::reveal In what year did Georgia's current constitution take effect, and what are the only two ways a constitutional amendment can be *proposed*, given that Georgia has no citizen initiative? ||| 1983 (ratified by voters on November 2, 1982, effective July 1, 1983). No. Georgia has no citizen initiative. An amendment must be proposed by a two-thirds vote of each house of the General Assembly (or a constitutional convention) and then ratified by a majority of voters.
 
 ## Sources
 - Georgia Secretary of State. (n.d.-a). *Constitution of the State of Georgia* [Official text, revised March 2019]. SOS.ga.gov. https://sos.ga.gov/sites/default/files/2022-02/state_constitution.pdf
@@ -104,7 +104,7 @@ It writes state law and passes the budget. Note that **both** chambers serve two
 
 **Judicial: the state courts.** Georgia's court system runs from trial courts up to the **Court of Appeals** and the **Supreme Court of Georgia** (9 justices). How Georgia chooses its appellate judges (nonpartisan statewide elections) is distinctive and covered in the next lesson.
 
-**Check yourself.** Name Georgia's three branches, give the size and term length of each chamber of the General Assembly, and explain two things about the Lieutenant Governor: how they're elected, and what job they hold in the Senate.
+:::reveal Name Georgia's three branches, give the size and term length of each chamber of the General Assembly, and explain two things about the Lieutenant Governor: how they're elected, and what job they hold in the Senate. ||| The House has 180 members and the Senate has 56 members (236 seats total), and both serve two-year terms. The Lieutenant Governor is elected independently, not on a joint ticket with the Governor (and can be from a different party), and presides over the State Senate as its President.
 
 ## Sources
 - Georgia Constitution. (1983). Art. III (Legislative Branch) & Art. V (Executive Branch). https://sos.ga.gov/sites/default/files/2022-02/state_constitution.pdf
@@ -139,7 +139,7 @@ It writes state law and passes the budget. Note that **both** chambers serve two
 
 **Why this matters civically:** because appellate judicial races are **nonpartisan**, you can't rely on a party label to decide: you'll want to read about the candidates before you vote those lines, rather than skipping them. (Trial courts below the appellate level, Superior Courts and others, also use nonpartisan elections in Georgia.)
 
-**Check yourself.** How many members sit on Georgia's Supreme Court and how many on its Court of Appeals? Are their elections partisan or nonpartisan, and what does that word mean for what you'll see on your ballot?
+:::reveal How many members sit on Georgia's Supreme Court and how many on its Court of Appeals? Are their elections partisan or nonpartisan, and what does that word mean for what you'll see on your ballot? ||| The Supreme Court has nine justices and the Court of Appeals has fifteen judges. They are nonpartisan: no party label appears next to the candidate's name, so you vote on the person, not a party line. They serve six-year terms.
 
 ## Sources
 - Georgia Constitution. (1983). Art. VI (Judicial Branch). https://sos.ga.gov/sites/default/files/2022-02/state_constitution.pdf
@@ -173,7 +173,7 @@ It writes state law and passes the budget. Note that **both** chambers serve two
 
 Remember from Lesson 1: some measures **don't go to the Governor at all.** A **constitutional amendment** proposed by the General Assembly skips the Governor's desk and goes straight to the **voters** for ratification, and because Georgia has **no citizen initiative**, that legislative-then-voter path is the *only* way to amend the constitution.
 
-**Check yourself.** Put these in order: committee, floor vote, introduction, the Governor, the other house. Then state the vote a Georgia governor's veto takes to override (and in which houses).
+:::reveal Put these in order: committee, floor vote, introduction, the Governor, the other house. Then state the vote a Georgia governor's veto takes to override (and in which houses). ||| A two-thirds vote of the members of each house.
 
 ## Sources
 - Georgia General Assembly. (n.d.-c). *About legislation (how an idea becomes law)*. Legis.ga.gov. https://www.legis.ga.gov/legislation/about
@@ -207,7 +207,7 @@ Remember from Lesson 1: some measures **don't go to the Governor at all.** A **c
 
 The practical payoff: **who provides your service depends on where you live**: it might be your city, your county, or (if you're in a consolidated government) a single merged body. Georgia's answer just never includes a township.
 
-**Check yourself.** How many counties does Georgia have, and where does that rank nationally? What is a "consolidated city-county government," and what common local layer (found in some other states) does Georgia NOT have?
+:::reveal How many counties does Georgia have, and where does that rank nationally? What is a "consolidated city-county government," and what common local layer (found in some other states) does Georgia NOT have? ||| 159 counties, the second-most of any state, behind only Texas (254). Georgia has no townships. A consolidated city-county government merges a city and county into one body (for example Columbus-Muscogee, Georgia's first, in 1971).
 
 ## Sources
 - Georgia Constitution. (1983). Art. IX (Counties and Municipal Corporations; home rule). https://sos.ga.gov/sites/default/files/2022-02/state_constitution.pdf
@@ -245,7 +245,7 @@ The practical payoff: **who provides your service depends on where you live**: i
 
 **⚠️ The Georgia gotcha: the MAJORITY-VOTE RUNOFF.** Georgia is a **majority-vote** state: to win most offices, a candidate must receive an **outright majority (more than 50% of the vote)**, not merely the most votes. **If no candidate gets a majority, the top two finishers advance to a RUNOFF election** held after the first vote (Georgia.gov, n.d.-e; Georgia Secretary of State, n.d.-c). This is why Georgia sometimes holds a second, decisive election weeks after Election Day. ⚠️ **The runoff *timing* is set by law and was changed by SB 202** (which shortened the runoff period, especially for federal races): the exact number of days can differ by race and can be amended, so confirm the current runoff schedule at [sos.ga.gov](https://sos.ga.gov).
 
-**Check yourself.** Name three things about voting in Georgia (think ID at the polls, the early-voting window, and how you can vote by mail). Then explain the majority-vote runoff: what has to happen for a runoff to be triggered?
+:::reveal Name three things about voting in Georgia (think ID at the polls, the early-voting window, and how you can vote by mail). Then explain the majority-vote runoff: what has to happen for a runoff to be triggered? ||| No candidate winning an outright majority (more than 50%); the top two finishers then advance to a runoff. Absentee ballots are verified by a driver's-license or state-ID number (or SSN digits plus date of birth) instead of signature matching; SB 202 also moved drop boxes inside early-voting sites and set the request deadline at 11 days before Election Day.
 
 ## Sources
 - Georgia Secretary of State. (n.d.-c). *How-to guide: voting (photo ID; advance voting; runoffs)*. SOS.ga.gov. https://sos.ga.gov/how-to-guide/how-guide-voting
@@ -281,7 +281,7 @@ The practical payoff: **who provides your service depends on where you live**: i
 
 ⚠️ **Time-sensitive / varies.** The specific amendments and referendum questions on any given ballot change every cycle. For what's actually on your upcoming ballot, use the Secretary of State's "Proposed Constitutional Amendments" page ([sos.ga.gov](https://sos.ga.gov)).
 
-**Check yourself.** True or false: in Georgia, citizens can gather signatures to put a constitutional amendment on the ballot. Then name the two ways an amendment *can* be proposed, and who must ratify it.
+:::reveal True or false: in Georgia, citizens can gather signatures to put a constitutional amendment on the ballot. Then name the two ways an amendment *can* be proposed, and who must ratify it. ||| No. Georgia has no statewide citizen initiative.
 
 ## Sources
 - Georgia Constitution. (1983). Art. X, §I (Amendments proposed by the General Assembly; ratification by voters). https://sos.ga.gov/sites/default/files/2022-02/state_constitution.pdf

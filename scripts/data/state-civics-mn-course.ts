@@ -35,7 +35,7 @@ Why this leads the course: Minnesota's whole civic identity leans **participator
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Minnesota's own government ([leg.mn.gov](https://leg.mn.gov), [sos.mn.gov](https://sos.mn.gov), [mncourts.gov](https://mncourts.gov)) is the authoritative source. When something is time-sensitive, like registration or turnout details, we say so.
 
-**Check yourself.** What voting rule (adopted in 1974) helps explain Minnesota's high turnout, and why does it matter?
+:::reveal What voting rule (adopted in 1974) helps explain Minnesota's high turnout, and why does it matter? ||| Same-day (Election-Day) voter registration, which lets an eligible person register and vote at the polls on the same day, removing the missed-deadline barrier.
 
 ## Sources
 - Minnesota Secretary of State. (n.d.). *Voter turnout and Election-Day registration in Minnesota*. sos.mn.gov. https://www.sos.mn.gov/
@@ -67,7 +67,7 @@ Why this leads the course: Minnesota's whole civic identity leans **participator
 
 Why it matters: both features show Minnesota's independent streak: a state that built its **own** party (DFL) and, for a long time, tried to keep **party out of** its Legislature entirely.
 
-**Check yourself.** What does "DFL" stand for, and what was unusual about the Minnesota Legislature from 1913 to 1973?
+:::reveal What does "DFL" stand for, and what was unusual about the Minnesota Legislature from 1913 to 1973? ||| The Democratic-Farmer-Labor Party, formed from a 1944 merger of the Minnesota Democratic Party and the Farmer-Labor Party; a Minnesota Democrat is a DFLer. It was officially nonpartisan: legislators ran and served without party labels, until Minnesota returned to a partisan Legislature in 1973.
 
 ## Sources
 - Minnesota Secretary of State. (n.d.). *Minnesota's political parties, including the DFL*. sos.mn.gov. https://www.sos.mn.gov/
@@ -105,7 +105,7 @@ So Minnesota's elected executive is moderate in size, with the Governor as the c
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** How many members sit in each chamber of the Minnesota Legislature, and how do most Minnesota judges first reach the bench?
+:::reveal How many members sit in each chamber of the Minnesota Legislature, and how do most Minnesota judges first reach the bench? ||| The House has 134 members on 2-year terms; the Senate has 67 senators on 4-year terms (with one 2-year term each decade around redistricting). Most are first appointed by the Governor to fill a vacancy, then run as incumbents, even though judges are elected on a nonpartisan ballot to 6-year terms.
 
 ## Sources
 - Minnesota Secretary of State. (n.d.). *Statewide elected officials*. sos.mn.gov. https://www.sos.mn.gov/
@@ -141,7 +141,7 @@ So Minnesota's elected executive is moderate in size, with the Governor as the c
 
 The takeaway: in Minnesota, the **Legislature and Governor make the law**, and citizens' direct role is **ratifying amendments** (under that strict majority rule), not starting them.
 
-**Check yourself.** Can Minnesota citizens propose a law by initiative? Why does leaving an amendment question blank count as a "no"?
+:::reveal Can Minnesota citizens propose a law by initiative? Why does leaving an amendment question blank count as a "no"? ||| No. Minnesota has no statewide citizen initiative; the Legislature and Governor make the law, and citizens only ratify amendments the Legislature refers. Because an amendment must pass by a majority of everyone voting in that election, not just those who marked the question, so a blank effectively counts against it.
 
 ## Sources
 - Minnesota State Legislature. (n.d.). *How a bill becomes law; amending the constitution*. leg.mn.gov. https://www.leg.mn.gov/`,

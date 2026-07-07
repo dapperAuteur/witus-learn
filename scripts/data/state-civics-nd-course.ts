@@ -35,7 +35,7 @@ North Dakota governs under its **Constitution of 1889**, adopted as it became a 
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but North Dakota's own government (ndlegis.gov, sos.nd.gov, ndcourts.gov) is the authoritative source.
 
-**Check yourself.** What does North Dakota NOT require that every other state does, and what confirms a voter's eligibility instead?
+:::reveal What does North Dakota NOT require that every other state does, and what confirms a voter's eligibility instead? ||| It is the only state with no voter registration. Eligible residents just show up with acceptable ID and vote; North Dakota abolished registration in 1951. Acceptable ID proving identity and residence does that work. Because those ID rules have been litigated and adjusted, confirm the current requirements at sos.nd.gov.
 
 ## Sources
 - North Dakota Secretary of State. (n.d.). *No voter registration in North Dakota; voter ID*. sos.nd.gov. https://www.sos.nd.gov/
@@ -67,7 +67,7 @@ North Dakota governs under its **Constitution of 1889**, adopted as it became a 
 
 Why it matters: North Dakota decided that certain **economic functions should be run by the public**, through **elected accountability**, rather than left entirely to private markets, a distinctive answer to "what is government for?" The NPL legacy also gave North Dakota **strong direct-democracy tools** (next lessons). ⚠️ These institutions evolve; confirm current roles at the state's sites.
 
-**Check yourself.** What two public enterprises did North Dakota's Nonpartisan League create in 1919, and why?
+:::reveal What two public enterprises did North Dakota's Nonpartisan League create in 1919, and why? ||| The Bank of North Dakota, the only state-owned bank in the nation, and the North Dakota Mill and Elevator, a state-owned flour mill. The Nonpartisan League (NPL). It held that certain economic functions should be run by the public through elected accountability rather than left entirely to private markets.
 
 ## Sources
 - North Dakota Legislative Assembly. (n.d.). *The Bank of North Dakota and the North Dakota Mill and Elevator; the Nonpartisan League*. ndlegis.gov. https://www.ndlegis.gov/
@@ -100,7 +100,7 @@ Why it matters: North Dakota decided that certain **economic functions should be
 
 The **Legislative** and **Judicial** branches complete the three (next lesson).
 
-**Check yourself.** Name the three direct-democracy tools North Dakotans have, and describe how big North Dakota's elected executive is.
+:::reveal Name the three direct-democracy tools North Dakotans have, and describe how big North Dakota's elected executive is. ||| Initiative (citizens put a statute or a constitutional amendment on the ballot), referendum (voters reject a law the Legislature passed), and recall (voters remove elected officials). Voters elect many statewide officials independently, including the Governor and Lieutenant Governor, Secretary of State, Attorney General, Treasurer, Auditor, and several commissioners, so executive power is spread widely.
 
 ## Sources
 - North Dakota Secretary of State. (n.d.). *Initiative, referendum, recall; statewide elected officials*. sos.nd.gov. https://www.sos.nd.gov/`,
@@ -134,7 +134,7 @@ Remember the citizen backstop: if the people dislike a law, they can **refer it 
 
 **Judicial: the North Dakota courts.** District courts and the **North Dakota Supreme Court** (5 justices). North Dakota **elects** its judges on a **nonpartisan** ballot to **10-year terms** (Supreme Court); vacancies may be filled by gubernatorial appointment from a nominating-committee list, after which the judge stands for election (North Dakota Courts, n.d.).
 
-**Check yourself.** How often does North Dakota's Legislature meet, and how are its Supreme Court justices chosen?
+:::reveal How often does North Dakota's Legislature meet, and how are its Supreme Court justices chosen? ||| It meets only every other year, in odd years, capped at 80 days per two-year biennium. The House has 94 members and the Senate has 47, all serving 4-year terms. The five justices are elected on a nonpartisan ballot to 10-year terms; a vacancy may be filled by gubernatorial appointment from a nominating-committee list, after which the judge stands for election.
 
 ## Sources
 - North Dakota Legislative Assembly. (n.d.). *The biennial Legislative Assembly; how a bill becomes law*. ndlegis.gov. https://www.ndlegis.gov/

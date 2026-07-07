@@ -39,7 +39,7 @@ This is the through-line of Colorado civics: **voters are a lawmaking body.** Th
 
 **A note this course keeps returning to:** state facts **vary and change**, and Colorado, because voters amend the constitution by initiative, changes its rules often. Everything here is current as of authoring, but Colorado's own government ([leg.colorado.gov](https://leg.colorado.gov), [sos.state.co.us](https://sos.state.co.us), [coloradojudicial.gov](https://coloradojudicial.gov)) is the authoritative source. When something is time-sensitive, we say so.
 
-**Check yourself.** Why is Colorado the "Centennial State," and what can Colorado citizens put on the ballot by initiative that many states cannot?
+:::reveal Why is Colorado the "Centennial State," and what can Colorado citizens put on the ballot by initiative that many states cannot? ||| It became the 38th state in 1876, the nation's 100th year (its centennial). Initiative, referendum, and recall. The initiative lets citizens enact either a statute or a constitutional amendment directly at the ballot.
 
 ## Sources
 - Colorado General Assembly. (n.d.). *Colorado Constitution (1876)*. leg.colorado.gov. https://leg.colorado.gov/
@@ -65,7 +65,7 @@ This is the through-line of Colorado civics: **voters are a lawmaking body.** Th
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations). The General Assembly overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** How many members are in each chamber of the General Assembly, and what does the "GAVEL" amendment guarantee?
+:::reveal How many members are in each chamber of the General Assembly, and what does the "GAVEL" amendment guarantee? ||| The Senate has 35 senators serving 4-year terms; the House has 65 representatives serving 2-year terms. Each chamber has an 8-year term limit. That every bill gets a committee hearing, limiting leaders' power to kill bills quietly.
 
 ## Sources
 - Colorado General Assembly. (n.d.). *How the General Assembly works; term limits and GAVEL*. leg.colorado.gov. https://leg.colorado.gov/
@@ -98,7 +98,7 @@ This is the through-line of Colorado civics: **voters are a lawmaking body.** Th
 
 Why it matters: this blends professional vetting (the commission) with public accountability (the yes/no retention vote), while avoiding big-money contested judicial campaigns. If you're comparing states, note that Colorado's judges are **appointed from a vetted list, then kept or removed by voters**, not elected in head-to-head races.
 
-**Check yourself.** Walk through the three steps by which a Colorado judge reaches and keeps the bench.
+:::reveal Walk through the three steps by which a Colorado judge reaches and keeps the bench. ||| A nonpartisan nominating commission sends the Governor a short list, the Governor must appoint from that list, and the judge later faces yes/no retention elections.
 
 ## Sources
 - Colorado Judicial Branch. (n.d.). *Judicial selection and retention in Colorado*. coloradojudicial.gov. https://www.coloradojudicial.gov/
@@ -179,7 +179,7 @@ Why it matters: TABOR makes **the voters the gatekeepers of taxation and spendin
 
 The takeaway: in Colorado the Legislature is the usual road, but **the voters have their own on-ramp, and on taxes their approval is mandatory** thanks to TABOR.
 
-**Check yourself.** Why can't the Colorado Legislature raise a tax on its own, even after passing a bill?
+:::reveal Why can't the Colorado Legislature raise a tax on its own, even after passing a bill? ||| Because of TABOR: any tax increase must also be approved by the voters, not the Legislature alone.
 
 ## Sources
 - Colorado General Assembly. (n.d.). *How a bill becomes law; the GAVEL amendment*. leg.colorado.gov. https://leg.colorado.gov/`,

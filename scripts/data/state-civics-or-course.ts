@@ -40,7 +40,7 @@ This is the through-line of Oregon civics: **Oregon didn't just adopt direct dem
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Oregon's own government (oregonlegislature.gov, sos.oregon.gov, courts.oregon.gov) is the authoritative source. When something is time-sensitive, we say so.
 
-**Check yourself.** What is "the Oregon System," and why does it matter beyond Oregon?
+:::reveal What is "the Oregon System," and why does it matter beyond Oregon? ||| The citizen initiative and referendum, added to the state constitution in 1902 and later copied by states across the country.
 
 ## Sources
 - Oregon Secretary of State. (n.d.). *The Oregon System: initiative, referendum, and recall*. sos.oregon.gov. https://sos.oregon.gov/
@@ -74,7 +74,7 @@ This is the through-line of Oregon civics: **Oregon didn't just adopt direct dem
 
 The takeaway: on the *mechanics* of voting (all-mail ballots and automatic registration) **Oregon has repeatedly gone first**, and much of the country followed.
 
-**Check yourself.** What two national "firsts" did Oregon achieve in how people register and vote?
+:::reveal What two national "firsts" did Oregon achieve in how people register and vote? ||| It became the first state to conduct all its elections entirely by mail, a model Washington and Colorado later followed.
 
 ## Sources
 - Oregon Secretary of State. (n.d.). *Vote by mail and automatic voter registration (Oregon Motor Voter)*. sos.oregon.gov. https://sos.oregon.gov/`,
@@ -109,7 +109,7 @@ The takeaway: on the *mechanics* of voting (all-mail ballots and automatic regis
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** Who is first in line to succeed Oregon's Governor, and how many members sit in each legislative chamber?
+:::reveal Who is first in line to succeed Oregon's Governor, and how many members sit in each legislative chamber? ||| The Secretary of State, who is elected separately and has become Governor when a vacancy occurred. The House has 60 representatives elected to 2-year terms; the Senate has 30 senators elected to 4-year terms.
 
 ## Sources
 - Oregon Secretary of State. (n.d.). *Statewide elected officials and succession*. sos.oregon.gov. https://sos.oregon.gov/
@@ -149,7 +149,7 @@ A distinctive Oregon wrinkle: because Oregon requires a **two-thirds "quorum"** 
 
 Oregon voters see **many ballot measures** each cycle. Reading them is a real civic task here, exactly as the Oregon System's designers intended.
 
-**Check yourself.** What is a legislative "walkout," and what are the two Oregon-System tools voters can use to make or unmake law?
+:::reveal What is a legislative "walkout," and what are the two Oregon-System tools voters can use to make or unmake law? ||| Through the Legislature (a bill passed by both chambers and signed by the Governor) or directly by the voters using the Oregon System (initiative and referendum). Because Oregon requires a two-thirds quorum to do business, a minority of legislators can block action by leaving and denying that quorum.
 
 ## Sources
 - Oregon State Legislature. (n.d.). *How a bill becomes law; quorum rules*. oregonlegislature.gov. https://www.oregonlegislature.gov/
@@ -182,7 +182,7 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
 
 **A national first in land-use planning.** Oregon is famous for its **statewide land-use planning system**, created in **1973 (Senate Bill 100)**. It requires cities to draw **urban growth boundaries**, lines that concentrate development inside cities and **protect surrounding farmland and forests from sprawl.** It's one of the most distinctive local-government features in the country and a recurring subject of Oregon ballot measures (so, ⚠️ time-sensitive: confirm current rules). It's a good example of how Oregon's civic choices (planning, the environment) show up concretely in how communities grow.
 
-**Check yourself.** How are Oregon judges chosen, and what does an "urban growth boundary" do?
+:::reveal How are Oregon judges chosen, and what does an "urban growth boundary" do? ||| It elects them on a nonpartisan ballot (no party label appears by their names); the 7 Supreme Court justices serve 6-year terms, and the Governor fills mid-term vacancies. It created statewide land-use planning with urban growth boundaries, which concentrate development inside cities and protect surrounding farmland and forests from sprawl.
 
 ## Sources
 - Oregon Judicial Department. (n.d.). *Oregon courts and judicial elections*. courts.oregon.gov. https://www.courts.oregon.gov/
