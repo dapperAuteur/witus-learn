@@ -330,7 +330,7 @@ Two practical habits that work at every level:
 
 The through-line of this whole course: **the level closest to you is the one where one person is most likely to be heard**, and it's also the level handling your schools, streets, water, and safety. That's the practical case for showing up locally, not just voting nationally.
 
-**Check yourself.** Name one place you can be heard at each level (local, state, and federal), and give one habit that makes your comment more effective everywhere.
+:::reveal Name one place you can be heard at each level (local, state, and federal), and give one habit that makes your comment more effective everywhere. ||| Local: a city council or school-board meeting. State: a legislative committee hearing or your state legislator's office. Federal: your member of Congress or a federal public-comment period. Effective everywhere: be specific and personal. Say who you are, name the exact bill or issue, and state the action you want.
 
 ## Sources
 - USA.gov. (n.d.-c). *How to contact your elected officials*. https://www.usa.gov/elected-officials

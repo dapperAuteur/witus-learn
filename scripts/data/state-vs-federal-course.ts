@@ -350,7 +350,7 @@ A practical takeaway from US Civics 101 bears repeating: **much of what affects 
 
 The through-line: most of the time, state and federal law **overlap peacefully**; the constitutional tools you learned (enumerated powers, the 10th Amendment, the Supremacy Clause) are what sort out the cases where they don't.
 
-**Check yourself.** Give one example where state and federal law operate side by side without conflict, and name the clause that decides the cases where they *do* conflict.
+:::reveal Give one example where state and federal law operate side by side without conflict, and name the clause that decides the cases where they *do* conflict. ||| Example: both the state and federal governments tax income, and both run their own court systems, side by side. When they genuinely conflict, the Supremacy Clause (Article VI) makes valid federal law prevail.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
