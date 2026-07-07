@@ -26,7 +26,7 @@ Modern LLMs are built on the **transformer** architecture (Vaswani et al., 2017)
 
 **Mindset for this course:** AI is a powerful **assistant**, not an oracle. You stay the editor, the fact-checker, and the person responsible for the result.
 
-**Check yourself.** In one sentence, what is an LLM actually doing when it answers you?
+:::reveal In one sentence, what is an LLM actually doing when it answers you? ||| Predicting the next most likely chunk of text from patterns it learned, not looking up verified facts.
 
 ## Sources
 - Vaswani, A., et al. (2017). Attention is all you need. arXiv:1706.03762. https://arxiv.org/abs/1706.03762
@@ -154,7 +154,7 @@ Use it honestly:
 
 The goal isn't fear, it's **responsible use**: get the speed of AI while keeping your integrity.
 
-**Check yourself.** Why can an AI's answer be biased even when it sounds neutral?
+:::reveal Why can an AI's answer be biased even when it sounds neutral? ||| It learns from human-made data that contains stereotypes and gaps, so it can absorb and repeat that bias.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). AI RMF 1.0, "Fair: with Harmful Bias Managed." https://www.nist.gov/itl/ai-risk-management-framework`,

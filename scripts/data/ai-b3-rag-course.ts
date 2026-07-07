@@ -43,7 +43,7 @@ But grounding is a **probability, not a guarantee.** RAG reduces hallucination; 
 
 > **Trust DNA:** retrieved ≠ true. RAG grounds the model in your sources so you can *cite and check*. It is not a fact oracle. Evaluate retrieval, and cite what went in.
 
-**Check yourself.** RAG lets you *cite sources* for an answer. Why is that possible, and why does "grounded in retrieved text" still not mean "guaranteed correct"?
+:::reveal RAG lets you *cite sources* for an answer. Why is that possible, and why does "grounded in retrieved text" still not mean "guaranteed correct"? ||| RAG retrieves the relevant pieces of your own text and puts them in the prompt so the model answers from real content, not just its parametric memory. Grounding is a probability, not a guarantee: a retrieved passage is not automatically true, so you still cite and check.
 
 ## Sources
 - Lewis, P., Perez, E., Piktus, A., Petroni, F., Karpukhin, V., Goyal, N., … Kiela, D. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *arXiv:2005.11401* (NeurIPS 2020). https://arxiv.org/abs/2005.11401
@@ -78,7 +78,7 @@ QUERY (per Q):      embed(question) → retrieve top-k → assemble prompt → g
 
 Two things trip up beginners. First, **you must embed the query with the same model you embedded the chunks with**. Vectors from two different models aren't comparable, and similarity search silently returns garbage. Second, **most RAG quality problems are retrieval problems, not generation problems.** If step 5 hands the model the wrong passages, no amount of prompt-tuning in step 6 saves the answer. That's why the rest of this course spends most of its time on retrieval and evaluation. The generate step is the easy part.
 
-**Check yourself.** Which steps happen *offline* (once, when documents change) versus *per question*? And why must the query be embedded with the *same* model as the chunks?
+:::reveal Which steps happen *offline* (once, when documents change) versus *per question*? And why must the query be embedded with the *same* model as the chunks? ||| Offline indexing is ingest, chunk, embed, and store. Per question you embed the user's question, retrieve the top-k nearest chunks, assemble the prompt, and generate an answer with citations. Vectors from two different models are not comparable, so similarity search would silently return garbage. Query and chunks have to share one embedding model.
 
 ## Sources
 - Lewis, P., et al. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *arXiv:2005.11401*. https://arxiv.org/abs/2005.11401
@@ -110,7 +110,7 @@ Two things trip up beginners. First, **you must embed the query with the same mo
 
 There's no universal best chunk size. It depends on your content and embedding model. Treat it as a parameter you **tune and measure** (see the evaluation lesson), not a value to guess once and forget.
 
-**Check yourself.** Describe the two opposite chunking failures (too big / too small) and what each costs you. Why keep a *date* and *source* on every chunk?
+:::reveal Describe the two opposite chunking failures (too big / too small) and what each costs you. Why keep a *date* and *source* on every chunk? ||| Chunks too large span several topics and get a muddy average embedding that matches everything weakly, and they waste context space. Chunks too small are torn mid thought and lose the context that makes them answerable. You need it to cite the answer, to filter by access control or freshness, and to debug which chunk produced a claim. A chunk without provenance is a citation you cannot make.
 
 ## Sources
 - Anthropic. (2024). *Introducing Contextual Retrieval*, prepending chunk-specific context before embedding to reduce retrieval failures. https://www.anthropic.com/news/contextual-retrieval
@@ -143,7 +143,7 @@ Two pgvector facts worth internalizing:
 
 Keeping vectors **in Postgres next to your relational data** is a real advantage for RAG: you can filter by tenant, user permission, or date in the *same* query that does the similarity search, which is exactly how you'll enforce access control and freshness later in this course.
 
-**Check yourself.** Why must every vector in a store come from the same embedding model and have the same number of dimensions? What does pgvector trade away when you add an HNSW or IVFFlat index instead of exact search?
+:::reveal Why must every vector in a store come from the same embedding model and have the same number of dimensions? What does pgvector trade away when you add an HNSW or IVFFlat index instead of exact search? ||| Embeddings are only comparable when they come from the same model and have the same fixed length. Mixing models or dimensions breaks similarity search. By default pgvector does exact nearest neighbor search with perfect recall but scans every row. HNSW or IVFFlat add approximate search that trades a little recall for much more speed at scale.
 
 ## Sources
 - pgvector. *pgvector: Open-source vector similarity search for Postgres*, exact vs. approximate (HNSW/IVFFlat) search; L2/inner-product/cosine distance. https://github.com/pgvector/pgvector
@@ -174,7 +174,7 @@ hybrid search (vector + BM25) → take top ~50 candidates
 
 The throughline: **you can't fix bad retrieval in the prompt.** If the right passage never makes it into the context, the model cannot answer correctly. It can only hallucinate plausibly. Invest here first, and *measure* it (the next-section evaluation lesson shows how to score retrieval on its own).
 
-**Check yourself.** Pure vector search is strong at meaning but weak at one thing: what, and which technique fixes it? What does a re-ranker do that the first-pass retrieval doesn't?
+:::reveal Pure vector search is strong at meaning but weak at one thing: what, and which technique fixes it? What does a re-ranker do that the first-pass retrieval doesn't? ||| It can miss exact strings like error codes, SKUs, and names. Hybrid search adds BM25 keyword matching to catch those while vectors handle meaning. It is a sharper second stage model that re-scores the top candidates against the actual question and keeps the best few. Retrieve broadly, then re-rank precisely.
 
 ## Sources
 - Anthropic. (2024). *Introducing Contextual Retrieval*, hybrid (embeddings + BM25) beats embeddings alone; adding reranking cut top-20 retrieval failures by 67%. https://www.anthropic.com/news/contextual-retrieval
@@ -307,7 +307,7 @@ Retrieval metrics isolate the most common RAG failure. If recall@k is bad, fix c
 
 > **Trust DNA:** "groundedness" is the citation rule made measurable: every claim ties to a retrieved source, or it doesn't ship. Retrieved ≠ true *and* fluent ≠ grounded; you verify both.
 
-**Check yourself.** Why measure *retrieval* separately from *generation*? Define "groundedness," and explain why a fluent, correct-sounding RAG answer can still fail it.
+:::reveal Why measure *retrieval* separately from *generation*? Define "groundedness," and explain why a fluent, correct-sounding RAG answer can still fail it. ||| They fail for different reasons. If recall@k is low the right passage never reached the model, a retrieval bug that prompting cannot fix. Only with good context do you judge generation on groundedness, relevance, and correct refusal. Groundedness is whether every claim in the answer is supported by the retrieved passages. A fluent answer can lean on the model's parametric memory instead of your sources, which fails groundedness and breaks citations.
 
 ## Sources
 - Lewis, P., et al. (2020). Retrieval-augmented generation for knowledge-intensive NLP tasks. *arXiv:2005.11401*, RAG measured on factuality of generated answers. https://arxiv.org/abs/2005.11401
@@ -345,7 +345,7 @@ Retrieval metrics isolate the most common RAG failure. If recall@k is bad, fix c
 
 > **Trust DNA:** a retrieved passage is *untrusted input*, exactly like a form field from the internet. Retrieved ≠ true, and retrieved ≠ safe: validate it, scope it, and cite it.
 
-**Check yourself.** What is *indirect* prompt injection in a RAG system, and why is a stale-but-cited answer especially dangerous? Name two defenses.
+:::reveal What is *indirect* prompt injection in a RAG system, and why is a stale-but-cited answer especially dangerous? Name two defenses. ||| An attacker plants instructions inside a document you ingest, such as telling the model to ignore its instructions or email the user's data out. When that chunk is retrieved it enters your prompt as if you wrote it, and it can even be hidden text in a PDF. A wrong answer with a source attached looks trustworthy, so it is worse than an obvious guess. Defenses include a freshness discipline that re-indexes on change and dates every chunk, and treating retrieved text as untrusted data.
 
 ## Sources
 - OWASP. (2025). *Top 10 for LLM Applications 2025*, LLM01: Prompt Injection (direct and **indirect** via retrieved content). https://genai.owasp.org/llmrisk/llm01-prompt-injection/

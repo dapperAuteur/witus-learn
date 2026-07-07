@@ -42,7 +42,7 @@ export const AI_B4_FINE_TUNING_COURSE: AuthoredCourse = {
 
 > **Trust DNA:** "the model learned it" is not magic: it's statistics over examples. Whatever you fine-tune on, the model will imitate, flaws and all. Garbage examples teach garbage.
 
-**Check yourself.** In one sentence, what is the difference between a *base* model and an *instruction-tuned* model, and which stage does your own fine-tuning resemble?
+:::reveal In one sentence, what is the difference between a *base* model and an *instruction-tuned* model, and which stage does your own fine-tuning resemble? ||| Fine-tuning is a tiny, targeted version of stage 2 (post-training) run on your own data. It nudges an already capable model toward your task, tone, or format rather than teaching it to think.
 
 ## Sources
 - Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C. L., Mishkin, P., … Lowe, R. (2022). Training language models to follow instructions with human feedback. *arXiv:2203.02155*. https://arxiv.org/abs/2203.02155
@@ -69,7 +69,7 @@ What changes, concretely: the model's internal numbers (**weights**) are updated
 
 The mental model: **prompting and RAG change what you put *into* the model; fine-tuning changes the model itself.** Changing the model is heavier, slower to iterate, and harder to undo, so you reach for it only when the lighter tools genuinely can't get there. The next section is that decision.
 
-**Check yourself.** A teammate wants to "fine-tune the model on our help-center articles so it can answer support questions." Why is that often the wrong tool, and what would you suggest instead?
+:::reveal A teammate wants to "fine-tune the model on our help-center articles so it can answer support questions." Why is that often the wrong tool, and what would you suggest instead? ||| Fine-tuning teaches behavior and form, not a reliable, updatable knowledge base. For facts that change and need to be citable, use retrieval (RAG) instead.
 
 ## Sources
 - Anthropic. (2024). *Fine-tune Claude 3 Haiku in Amazon Bedrock*: fine-tuning on high-quality prompt-completion pairs. https://www.anthropic.com/news/fine-tune-claude-3-haiku
@@ -110,7 +110,7 @@ The mental model: **prompting and RAG change what you put *into* the model; fine
 
 > **Trust DNA:** "we fine-tuned it" sounds advanced; "we wrote a better prompt and it worked" *is* advanced: it shipped the result for a tenth of the cost. Evaluate honestly.
 
-**Check yourself.** For each, name the right tool: (a) the model keeps inventing product details that change weekly; (b) the model's answers are correct but never in your required JSON shape; (c) the model ignores half your formatting instructions in a short prompt.
+:::reveal For each, name the right tool: (a) the model keeps inventing product details that change weekly; (b) the model's answers are correct but never in your required JSON shape; (c) the model ignores half your formatting instructions in a short prompt. ||| Fine-tuning. The gap is form and format, not missing facts, so retrieval would not help. RAG is for knowledge gaps, when the model doesn't know something.
 
 ## Sources
 - OpenAI. (2025). *Model optimization (fine-tuning) guide*: try prompt engineering and chaining first; fine-tune when those plateau. https://platform.openai.com/docs/guides/fine-tuning
@@ -145,7 +145,7 @@ The mental model: **prompting and RAG change what you put *into* the model; fine
 
 **The practical takeaway:** for most builders, **LoRA/PEFT + supervised instruction tuning** is the default: it's cheap, fast, and quality-competitive. Reach for full fine-tuning or preference tuning only when you have evidence the simpler method fell short.
 
-**Check yourself.** Why can a solo builder LoRA-fine-tune a large open model on one GPU, when full fine-tuning the same model would be out of reach, and which family (SFT or preference) would you use to fix "answers are right but the tone is wrong"?
+:::reveal Why can a solo builder LoRA-fine-tune a large open model on one GPU, when full fine-tuning the same model would be out of reach, and which family (SFT or preference) would you use to fix "answers are right but the tone is wrong"? ||| Supervised fine-tuning (SFT) trains on (prompt, ideal response) pairs and is the workhorse for most API fine-tuning. Preference tuning trains on (prompt, better response, worse response) triples so the model learns which style or judgment you prefer, for example OpenAI's DPO. LoRA is a parameter-efficient (PEFT) method that freezes the pretrained weights and injects small trainable low-rank matrices. It cuts trainable parameters by orders of magnitude and adds no extra inference latency once merged, so the training fits on a single GPU.
 
 ## Sources
 - Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., … Chen, W. (2021). LoRA: Low-rank adaptation of large language models. *arXiv:2106.09685*. https://arxiv.org/abs/2106.09685
@@ -184,7 +184,7 @@ The mental model: **prompting and RAG change what you put *into* the model; fine
 
 > **Trust DNA:** label your own data honestly. The temptation is to wave through "close enough" examples to hit a row count. Don't. You're not padding a spreadsheet, you're defining the model's behavior.
 
-**Check yourself.** You have 5,000 scraped examples of uneven quality, or you could hand-curate 200 excellent ones. Which produces the better fine-tune, and why, and what must you reserve from *either* set before training?
+:::reveal You have 5,000 scraped examples of uneven quality, or you could hand-curate 200 excellent ones. Which produces the better fine-tune, and why, and what must you reserve from *either* set before training? ||| A held-out validation or test set the model never trains on, so you can measure real performance (whether it generalizes) instead of memorization.
 
 ## Sources
 - Anthropic. (2024). *Fine-tune Claude 3 Haiku in Amazon Bedrock*: start with ~50 to 100 high-quality rows; quality of data matters more than size; JSONL message format. https://www.anthropic.com/news/fine-tune-claude-3-haiku
@@ -221,7 +221,7 @@ The mental model: **prompting and RAG change what you put *into* the model; fine
 
 > **Trust DNA:** a model that aces the data it trained on has proven nothing. "It works" means it works on inputs it has *never seen.* Trust the validation set, not the training curve.
 
-**Check yourself.** Training loss is still dropping nicely, but your validation accuracy peaked two epochs ago and is now declining. What's happening, and what should you do?
+:::reveal Training loss is still dropping nicely, but your validation accuracy peaked two epochs ago and is now declining. What's happening, and what should you do? ||| An epoch is one full pass over your training data. Falling training loss only shows the model fitting data it has already seen; the goal is generalizing to new inputs, which you judge on held-out validation data. That gap is overfitting: the model is memorizing examples instead of learning the pattern. Train for fewer epochs, use more varied data, and stop when validation stops improving.
 
 ## Sources
 - OpenAI. (2025). *Model optimization (fine-tuning) guide*: epochs and tuning hyperparameters; evaluating results. https://platform.openai.com/docs/guides/fine-tuning
@@ -355,7 +355,7 @@ This is NIST's **"Measure"** function in practice: you don't assert the system i
 
 **The honest decision:** managed API when you want speed-to-ship and no ops and accept vendor lock-in and usage premiums; open-weights when volume, data control, or cost-at-scale justify owning the stack. Neither is "more advanced": pick the one your constraints actually point to.
 
-**Check yourself.** Give one scenario where API fine-tuning is the right call and one where open-weights fine-tuning is, and name the dominant *cost* you're trading in each.
+:::reveal Give one scenario where API fine-tuning is the right call and one where open-weights fine-tuning is, and name the dominant *cost* you're trading in each. ||| Managed API fine-tuning, where there are no GPU ops and it scales for you but you pay to train, pay a higher per-token price, and accept vendor lock-in; and open-weights self-hosting, where you get full control, no per-token fee, and your data stays in your infra but you own the hosting and ops. It can let you drop a giant system prompt, so you send fewer input tokens on every call. A smaller fine-tuned model can also beat a bigger general one on a narrow task, cheaper and faster per call.
 
 ## Sources
 - OpenAI. (2025). *Model optimization (fine-tuning) guide*: shorter prompts / token savings; fine-tuned model usage. https://platform.openai.com/docs/guides/fine-tuning
@@ -391,7 +391,7 @@ This is NIST's **"Measure"** function in practice: you don't assert the system i
 
 > **Trust DNA:** "open" is a spectrum with fine print. Verify the license against the source. Don't repeat a forum claim that "it's basically MIT." NIST's framework treats this kind of legal/governance check as part of responsibly governing an AI system (NIST, 2023).
 
-**Check yourself.** Why is "the weights are downloadable" *not* enough to conclude you can ship a commercial product built on a model, and where do you find the authoritative answer?
+:::reveal Why is "the weights are downloadable" *not* enough to conclude you can ship a commercial product built on a model, and where do you find the authoritative answer? ||| No. 'Open weights' is not automatically 'open source' or 'do anything.' Licenses range from permissive (like Apache 2.0) to custom community licenses with real restrictions, so you must read that specific model and version's actual license, and flag it for legal review when unsure.
 
 ## Sources
 - Hugging Face. (2024). *PEFT (Parameter-Efficient Fine-Tuning) documentation*: fine-tuning open models efficiently. https://huggingface.co/docs/peft/index
@@ -423,7 +423,7 @@ This is NIST's **"Measure"** function in practice: you don't assert the system i
 
 > **Trust DNA:** fine-tuning can quietly make a model *less* trustworthy (more biased, more leaky, narrower) while looking better on your one metric. Evaluate honestly means evaluating for the harms too, not just the win.
 
-**Check yourself.** Name the three risks in this lesson and the single root cause they share, then give one defense that helps with all three.
+:::reveal Name the three risks in this lesson and the single root cause they share, then give one defense that helps with all three. ||| They trace back to the training data and over-training. Curating the data honestly and training no harder than you must (for example with PEFT/LoRA and fewer epochs), while evaluating for side effects, helps with all three.
 
 ## Sources
 - Anthropic. (2024). *Fine-tune Claude 3 Haiku in Amazon Bedrock*: data stays in the customer's environment; safety preserved. https://www.anthropic.com/news/fine-tune-claude-3-haiku

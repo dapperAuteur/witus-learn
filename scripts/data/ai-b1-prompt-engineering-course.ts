@@ -46,7 +46,7 @@ Modern model APIs distinguish message roles by trust level:
 
 > **Trust DNA:** the instruction hierarchy is a *defense*, not just a style choice. Authority lives in the layers you control; the user layer is hostile until proven otherwise.
 
-**Check yourself.** You're building a support assistant. Which layer holds "never reveal internal pricing," and why is putting it there safer than putting it in the user-facing prompt template the user can influence?
+:::reveal You're building a support assistant. Which layer holds "never reveal internal pricing," and why is putting it there safer than putting it in the user-facing prompt template the user can influence? ||| In the system or developer layer. Providers train models to prefer higher-priority instructions (the instruction hierarchy), so a rule there is harder for untrusted user text to override.
 
 ## Sources
 - OpenAI. (2025). *Prompting* (API documentation): message roles and the instruction hierarchy (platform / developer / user). https://platform.openai.com/docs/guides/prompting
@@ -75,7 +75,7 @@ Modern model APIs distinguish message roles by trust level:
 
 > **Trust DNA:** "valid JSON" and "matches my schema" are about *shape*. Whether the values are correct or safe is still on you to check.
 
-**Check yourself.** What does a schema-constrained Structured Output guarantee, and name one thing it does *not* guarantee that you must still validate in code?
+:::reveal What does a schema-constrained Structured Output guarantee, and name one thing it does *not* guarantee that you must still validate in code? ||| That the output conforms to your schema shape: right keys, right types, required fields present. It is stronger than plain JSON mode, which only guarantees valid JSON, not your shape.
 
 ## Sources
 - OpenAI. (2025). *Structured Outputs* and *Function calling* (API documentation): \`strict: true\`, JSON Schema adherence, tool-call arguments. https://platform.openai.com/docs/guides/structured-outputs
@@ -104,7 +104,7 @@ Modern model APIs distinguish message roles by trust level:
 
 > **Trust DNA:** examples are a knob you *tune against a test set*, not a pile you grow on a hunch. Count tokens; measure accuracy; keep the smallest set that hits your bar.
 
-**Check yourself.** You're classifying tickets into billing / bug / other and the model keeps forcing odd tickets into "billing." What's the most likely gap in your few-shot examples, and how does dynamic example selection differ from hard-coded examples?
+:::reveal You're classifying tickets into billing / bug / other and the model keeps forcing odd tickets into "billing." What's the most likely gap in your few-shot examples, and how does dynamic example selection differ from hard-coded examples? ||| They teach the exact output format and the hard edge cases. Always include an example of every label, including the none or other escape hatch, or the model forces odd inputs into the labels it saw. Dynamic few-shot retrieves the most relevant examples per request from a labeled pool, often by embedding similarity, instead of a fixed set. Every example is input tokens on every call, so tune the set against a test set.
 
 ## Sources
 - OpenAI. (2025). *Prompting* (API documentation): giving examples (few-shot) and writing clear instructions. https://platform.openai.com/docs/guides/prompting
@@ -132,7 +132,7 @@ Modern model APIs distinguish message roles by trust level:
 
 > **Trust DNA:** visible reasoning makes a confident answer *legible*, not *true*. The chain can be plausible and wrong. Verify the conclusion (and, for anything load-bearing, the steps). Don't trust it because the prose looks careful.
 
-**Check yourself.** What does self-consistency change versus a single chain-of-thought call, what does it cost, and why doesn't a convincing reasoning chain prove the answer is correct?
+:::reveal What does self-consistency change versus a single chain-of-thought call, what does it cost, and why doesn't a convincing reasoning chain prove the answer is correct? ||| Use it for multi-step problems like math, logic, and planning where a single jump is error-prone. Skip it for simple lookups and classification, where it just spends output tokens without helping. It samples several reasoning paths and takes the majority answer, since correct reasoning tends to converge while errors scatter. It costs roughly N times the tokens and latency, so reserve it for high-stakes answers.
 
 ## Sources
 - Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., … Zhou, D. (2022). Chain-of-thought prompting elicits reasoning in large language models. *arXiv:2201.11903*. https://arxiv.org/abs/2201.11903
@@ -159,7 +159,7 @@ Modern model APIs distinguish message roles by trust level:
 
 > **Trust DNA:** ReAct lets the model *act*, which means a bad step has real-world reach. Constrain the tools, bound the loop, log every thought/action/observation, and keep a human on anything hard to undo.
 
-**Check yourself.** What does ReAct interleave that plain chain-of-thought can't, why does that reduce hallucination, and why must you treat each tool observation as untrusted?
+:::reveal What does ReAct interleave that plain chain-of-thought can't, why does that reduce hallucination, and why must you treat each tool observation as untrusted? ||| It interleaves thought, action (a tool call), and observation in a loop. The actions pull in real external facts to ground each step, instead of reasoning from possibly wrong premises inside the model's head. An unbounded loop can spin and every step costs tokens and time. Each observation, such as a web page or a database row, can carry injected instructions, so treat it as hostile data, not as instructions.
 
 ## Sources
 - Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., & Cao, Y. (2023). ReAct: Synergizing reasoning and acting in language models. *arXiv:2210.03629* (ICLR 2023). https://arxiv.org/abs/2210.03629
@@ -190,7 +190,7 @@ Modern model APIs distinguish message roles by trust level:
 
 > **Trust DNA:** small, checked steps are how you keep a probabilistic component honest. A checkpoint between steps is a place to *validate*, not just to pass data along.
 
-**Check yourself.** Name two concrete advantages of splitting a complex task into a prompt chain versus one mega-prompt, and one signal that tells you to reach for a ReAct agent instead of a fixed chain.
+:::reveal Name two concrete advantages of splitting a complex task into a prompt chain versus one mega-prompt, and one signal that tells you to reach for a ReAct agent instead of a fixed chain. ||| Each step is independently checkable, so you validate its output before spending the next call, and independently tunable and evaluable, so you can swap a cheaper model per step. A failure also tells you exactly which step broke. Only when the path genuinely cannot be predetermined. A chain or workflow has a path you decide in advance and is more predictable, testable, and cheaper, so prefer it whenever the steps are knowable.
 
 ## Sources
 - Anthropic. (n.d.). *Prompt engineering overview*: chain complex prompts; and *Building Effective Agents*: workflows over agents when steps are knowable. https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
@@ -219,7 +219,7 @@ Modern model APIs distinguish message roles by trust level:
 
 > **Trust DNA:** temperature 0 is "less random," not "guaranteed." Never let "it's deterministic now" replace validation. Engineer for variance you can't fully remove.
 
-**Check yourself.** Why should you tune temperature *or* top-p but not both, and why is "I set temperature to 0" not a substitute for validating the output in code?
+:::reveal Why should you tune temperature *or* top-p but not both, and why is "I set temperature to 0" not a substitute for validating the output in code? ||| Adjusting both at once makes behavior hard to reason about, so tune one. For a task with a correct answer, such as classification or extraction, use a low temperature near 0. Temperature 0 reduces variance but is not a true determinism guarantee: floating-point and infrastructure nondeterminism, plus silent model updates, can still shift output. Your schema and value checks are the actual guarantee.
 
 ## Sources
 - OpenAI. (2025). *Prompting* / API reference: \`temperature\`, \`top_p\`, and reproducibility (\`seed\`) parameters. https://platform.openai.com/docs/guides/prompting
@@ -249,7 +249,7 @@ Modern model APIs distinguish message roles by trust level:
 
 > **Trust DNA, security form:** the model has no reliable way to tell your instructions from an attacker's. Untrusted in, untrusted out: delimit it, least-privilege it, validate it, and design so a successful injection still can't reach anything dangerous.
 
-**Check yourself.** What's the difference between direct and indirect prompt injection, and name two layered defenses (one that raises the bar on the prompt, one that limits the damage if injection still succeeds).
+:::reveal What's the difference between direct and indirect prompt injection, and name two layered defenses (one that raises the bar on the prompt, one that limits the damage if injection still succeeds). ||| Direct injection is malicious instructions typed by the user. Indirect injection hides instructions in content your app feeds the model, such as a web page, email, or tool result, and is more dangerous because the attacker is not even your user. Raise the bar by putting rules and role in the system or developer layer and labeling untrusted content as data, not instructions. Limit the damage with least privilege on tools and by never passing raw model output into a SQL query, shell, eval, or unescaped HTML.
 
 ## Sources
 - OWASP. (2025). *Top 10 for LLM Applications 2025*, LLM01: Prompt Injection; LLM05: Improper Output Handling; LLM06: Excessive Agency. https://genai.owasp.org/llm-top-10/
@@ -388,7 +388,7 @@ NIST's GenAI Profile even names **environmental impact** as a real cost of large
 
 > **Trust DNA:** a technique you can't afford at scale isn't shipped, it's a demo. Budget tokens per design choice and measure the accuracy it buys: the smallest prompt that hits your eval bar wins.
 
-**Check yourself.** Name two prompt-design choices that increase token cost on every call, and two controls you'd use to bring an expensive feature's cost down without dropping below your eval bar.
+:::reveal Name two prompt-design choices that increase token cost on every call, and two controls you'd use to bring an expensive feature's cost down without dropping below your eval bar. ||| Input-token choices sent on every call: a long system prompt, few-shot examples, retrieved RAG context, conversation history, and tool schemas. Chain-of-thought and self-consistency add output tokens, with self-consistency multiplying output by N. Right-size the model by using a cheaper model for easy steps like classify or route, trim the prompt with shorter instructions and dynamically selected examples and a capped max_tokens, cache repeated answers, and bound ReAct loops. Any two of these.
 
 ## Sources
 - OpenAI. (2025). *Prompting* / API reference: \`max_tokens\`, token-based pricing, and prompt-design cost trade-offs. https://platform.openai.com/docs/guides/prompting

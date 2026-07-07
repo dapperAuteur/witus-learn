@@ -203,7 +203,7 @@ This is NIST's "Human-AI configuration" made concrete: keep a person in charge o
 
 By the end of this stage you should be able to demo: *real input in, useful output out, logged, with secrets safe.* That's a spine you can harden, not a pile of features that don't connect.
 
-**Check yourself.** Name two things from this lesson you'd do on the very first day of building, before adding any second feature.
+:::reveal Name two things from this lesson you'd do on the very first day of building, before adding any second feature. ||| The thinnest slice that runs the whole loop end to end (input, prompt assembly, model call, validation, action). On day one, hard-wire one real input to one useful output, log every call, and keep secrets server-side.
 
 ## Sources
 - OpenAI. (2025). *Production best practices*: managing latency, secrets, and operational concerns when moving from prototype to production. https://platform.openai.com/docs/guides/production-best-practices
@@ -244,7 +244,7 @@ By the end of this stage you should be able to demo: *real input in, useful outp
 
 This is NIST's **Manage** function in practice: you actively contain the AI component's risk rather than assuming it behaves (NIST, 2023).
 
-**Check yourself.** Name the OWASP #1 LLM risk and the single habit ("treat all model input and output as ___") that defends against it, then name one item that belongs in your capstone eval set.
+:::reveal Name the OWASP #1 LLM risk and the single habit ("treat all model input and output as ___") that defends against it, then name one item that belongs in your capstone eval set. ||| Prompt injection (LLM01): attacker text in user input or retrieved RAG content can hijack instructions. Treat all model input and output as untrusted, and never let unvalidated output drive a sensitive action.
 
 ## Sources
 - OWASP. (2025). *Top 10 for LLM Applications 2025*: LLM01 Prompt Injection; LLM05 Improper Output Handling; LLM06 Excessive Agency; LLM10 Unbounded Consumption. https://genai.owasp.org/llm-top-10/
@@ -287,7 +287,7 @@ This is NIST's **Manage** function in practice: you actively contain the AI comp
 
 Write the answers down, this review *is* a section of your capstone brief, and it's how you ship something **cited, validated, honest, and affordable** rather than just fast.
 
-**Check yourself.** Write the token-cost formula, name one latency lever you'll use, and name the security risk that applies to *both* user input and retrieved RAG content.
+:::reveal Write the token-cost formula, name one latency lever you'll use, and name the security risk that applies to *both* user input and retrieved RAG content. ||| Latency lever: stream output (or trim the prompt and context, parallelize independent calls, or cache). The shared risk is prompt injection: any text reaching the model, user input or RAG documents, can carry an attack.
 
 ## Sources
 - OpenAI. (2025). *Production best practices / Latency optimization*: streaming, prompt size, and operational cost/latency tradeoffs. https://platform.openai.com/docs/guides/production-best-practices
@@ -326,7 +326,7 @@ This is NIST's framework as an operating rhythm: you don't ship-and-forget, you 
 
 > **Trust DNA:** a shipped AI tool you don't monitor is a liability you haven't noticed yet. Watch the metric, watch the cost, keep the kill switch in reach.
 
-**Check yourself.** Name two things that belong in versioned config so you can re-evaluate before a provider's change reaches users, and one signal you'll watch in production.
+:::reveal Name two things that belong in versioned config so you can re-evaluate before a provider's change reaches users, and one signal you'll watch in production. ||| So when a provider updates a model and behavior shifts, you can re-run your evals before adopting the change instead of after a user finds the regression. Pair it with running the eval set in CI so a quality regression fails the build.
 
 ## Sources
 - OpenAI. (2025). *Production best practices*: versioning, error handling, retries, and monitoring for live LLM features. https://platform.openai.com/docs/guides/production-best-practices

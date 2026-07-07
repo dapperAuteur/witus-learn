@@ -40,7 +40,7 @@ The NIST AI Risk Management Framework names **"valid and reliable"** as the foun
 
 **The mental model for this whole course:** use AI to help you **find and frame**, and use **real sources** to confirm. You stay the researcher; the AI is the eager intern whose work you always check.
 
-**Check yourself.** Name one research job AI does well and one it should never be trusted with alone.
+:::reveal Name one research job AI does well and one it should never be trusted with alone. ||| It is a strong assistant for getting oriented fast, rephrasing and explaining, brainstorming angles, and drafting. On its own it is not reliable for stating facts, numbers, dates, or quotes, or for providing citations.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). AI Risk Management Framework (AI RMF 1.0). See "Valid and Reliable." https://www.nist.gov/itl/ai-risk-management-framework`,
@@ -137,7 +137,7 @@ Two habits to pair with it:
 
 This matters doubly with AI because an AI summary **is** a layer of remove. When the stakes are real, treat the AI's account as a pointer to where the truth lives, then go there.
 
-**Check yourself.** What does "lateral reading" mean, and why is it better than judging a source by how polished it looks?
+:::reveal What does "lateral reading" mean, and why is it better than judging a source by how polished it looks? ||| Lateral reading means opening new tabs to check what independent, reputable sources say about a source before trusting it. Reading vertically, staying on the page, gets you fooled by the source's own polish and confident tone.
 
 ## Sources
 - Stanford Civic Online Reasoning (Digital Inquiry Group). Intro to Lateral Reading. https://cor.stanford.edu/curriculum/lessons/intro-to-lateral-reading/
@@ -163,7 +163,7 @@ This matters doubly with AI because an AI summary **is** a layer of remove. When
 
 CRAAP applies to AI output too: AI-generated text often **fails Authority** (no identifiable, accountable author) and **Accuracy** (no real, checkable citations), which is precisely why you push past the AI to the underlying sources and evaluate *those*.
 
-**Check yourself.** What do the letters in CRAAP stand for, and which one is about who paid for the work?
+:::reveal What do the letters in CRAAP stand for, and which one is about who paid for the work? ||| Currency (when it was published), Relevance (does it fit your question), Authority (who wrote it and their expertise), Accuracy (is it backed by checkable evidence), and Purpose (why it exists and who funded it). Purpose. A study can be methodologically sound yet funded by a party with a stake in the outcome, which does not automatically make it wrong but is a fact you need on the table.
 
 ## Sources
 - University of Rhode Island Libraries. Evaluating Information: The CRAAP Test. https://uri.libguides.com/start/craap`,
@@ -192,7 +192,7 @@ Using an AI to *verify* its own output is circular: the thing that might have ha
 
 So: a summary is a **lead, not a finding.** Use it to know *where to look*, then read the source itself before you cite, decide, or publish.
 
-**Check yourself.** Why can't you safely use an AI to verify its own answer?
+:::reveal Why can't you safely use an AI to verify its own answer? ||| Use AI for finding and framing, where roughly right is fine, but not for verifying or deciding. It cannot verify itself because the tool that may have hallucinated cannot reliably catch its own hallucination, so verification must come from outside.
 
 ## Sources
 - McAdoo, T. (2023). How to cite ChatGPT. APA Style Blog, American Psychological Association. https://apastyle.apa.org/blog/how-to-cite-chatgpt
@@ -223,7 +223,7 @@ How to synthesize honestly:
 
 The honest test: could you **defend every sentence** (explain where the idea came from and confirm the source really says it)? If yes, you've synthesized. If you'd have to go look up what your own paragraph means, you've copied.
 
-**Check yourself.** What's the difference between synthesizing from sources and lightly-reworded copying?
+:::reveal What's the difference between synthesizing from sources and lightly-reworded copying? ||| Synthesis is reading several real sources, understanding them, and writing in your own words while crediting them. Lightly reworded copying keeps a source's structure and ideas while swapping a few words, which is still plagiarism.
 
 ## Sources
 - McAdoo, T. (2023). How to cite ChatGPT. APA Style Blog, American Psychological Association. https://apastyle.apa.org/blog/how-to-cite-chatgpt
@@ -254,7 +254,7 @@ A few APA basics for research writing:
 
 But citing the AI **does not** substitute for citing the real sources behind a factual claim, and remember APA's own warning that AI-provided references must be opened and confirmed, because one of theirs turned out to be fabricated (McAdoo, 2023). Cite the AI for the AI's role; cite the **primary sources** for the facts.
 
-**Check yourself.** In APA, who is listed as the *author* when you cite ChatGPT, and why doesn't citing the AI replace citing your real sources?
+:::reveal In APA, who is listed as the *author* when you cite ChatGPT, and why doesn't citing the AI replace citing your real sources? ||| The company that made it, such as OpenAI, with the tool as the title and [Large language model] in brackets. Citing the AI covers its role but not the facts, so you still cite the primary sources behind each claim.
 
 ## Sources
 - American Psychological Association. References (APA Style). https://apastyle.apa.org/style-grammar-guidelines/references

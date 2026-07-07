@@ -48,7 +48,7 @@ export const AI_E5_FINANCE_ANALYTICS_CAPSTONE_COURSE: AuthoredCourse = {
 
 > **Trust DNA, finance edition:** every number in your business is a claim. Revenue, a cost, a forecast. Treat each one the way you treat anything an AI tells you: **verify it.** A wrong number you believed is more dangerous than one you knew you had to check.
 
-**Check yourself.** In one sentence each, say the difference between *revenue* and *profit*, and why a *profitable* business can still run out of *cash*.
+:::reveal In one sentence each, say the difference between *revenue* and *profit*, and why a *profitable* business can still run out of *cash*. ||| Cash flow is about timing. If a bill is due before your customers pay you, you can be profitable over the year yet run out of cash in a single month.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Manage your finances*: accounting for revenue and expenses; balance sheets; cash vs. accrual. https://www.sba.gov/business-guide/manage-your-business/manage-your-finances`,
@@ -83,7 +83,7 @@ Large language models are *text* predictors, not calculators. They can add a col
 
 > **Trust DNA:** a spreadsheet's \`SUM\` is trustworthy; a chatbot's mental math is not. Use AI to *organize*, use a calculator to *compute*, and use your own eyes to *verify*.
 
-**Check yourself.** Why should the *spreadsheet* (not the chatbot) be the thing that actually adds up your totals?
+:::reveal Why should the *spreadsheet* (not the chatbot) be the thing that actually adds up your totals? ||| Language models predict text rather than compute, so they can be confidently wrong on arithmetic. A spreadsheet actually calculates, so let it do the math and check it yourself.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Manage your finances*: bookkeeping, accounting methods (cash vs. accrual), and recordkeeping. https://www.sba.gov/business-guide/manage-your-business/manage-your-finances
@@ -147,7 +147,7 @@ The difference: a **real metric changes a decision.** If a number goes up but yo
 
 **Where AI helps vs. fools you:** AI can *summarize* analytics, spot patterns, and explain a metric (useful). But it can also generate a *confident, wrong* interpretation, or dress up a vanity metric as if it were meaningful. NIST's framework calls for continuously **measuring and managing** what AI tells you rather than trusting it (NIST, 2023). Ask "would this number change what I do?" before you celebrate it.
 
-**Check yourself.** Give one vanity metric and the real metric you'd track instead, and state the test that tells them apart.
+:::reveal Give one vanity metric and the real metric you'd track instead, and state the test that tells them apart. ||| A vanity metric like follower count or page views feels good but changes no decision. A real metric like paying customers, conversion rate, or cash on hand tells you to keep, fix, or kill something. Ask whether the number would change what you do. If it would, it is real; if you would act no differently, it is probably vanity.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: the "Measure" and "Manage" functions; valid and reliable measurement. https://www.nist.gov/itl/ai-risk-management-framework
@@ -186,7 +186,7 @@ A projection is a *story about the future*, and the future doesn't read your spr
 
 > **Trust DNA:** an AI projection is a *first draft of a guess.* Its confidence is not evidence. Your verified numbers and honest, conservative assumptions are what make it useful.
 
-**Check yourself.** Name two different reasons an AI-generated projection can be wrong: one about the *math*, one about the *assumptions*.
+:::reveal Name two different reasons an AI-generated projection can be wrong: one about the *math*, one about the *assumptions*. ||| It can do the arithmetic wrong, producing a clean forecast with a hidden math error, and it can invent optimistic assumptions such as a growth or conversion rate not based on your real numbers.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Write your business plan*: the financial plan: budget, projections, and conservative assumptions. https://www.sba.gov/business-guide/plan-your-business/write-your-business-plan
@@ -216,7 +216,7 @@ A projection is a *story about the future*, and the future doesn't read your spr
 
 **Where AI helps vs. fools you:** AI can *explain* break-even, *set up* the formula in a sheet, and *list* cost categories you forgot. But if you ask it to *calculate* your break-even, **re-do the division yourself**: a wrong break-even tells you a doomed price is fine. And only *you* know your real fixed costs and real unit margin; a model's guesses aren't your business.
 
-**Check yourself.** With **$200** in fixed costs and a **$10** unit margin, what's your break-even in units, and how did you check the number yourself?
+:::reveal With **$200** in fixed costs and a **$10** unit margin, what's your break-even in units, and how did you check the number yourself? ||| Break-even in units equals fixed costs divided by unit margin. It tells you how many units you must sell to cover your fixed costs before you earn any profit. $120 divided by $9 is about 13.3, so you must sell 14 units to reach zero, and unit 15 is your first profit. Re-check the division yourself instead of trusting an AI's total.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Calculate your startup costs*: fixed vs. recurring costs and break-even analysis. https://www.sba.gov/business-guide/plan-your-business/calculate-your-startup-costs

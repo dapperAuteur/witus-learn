@@ -44,7 +44,7 @@ export const AI_ENTREPRENEURS_COURSE: AuthoredCourse = {
 
 The honest framing comes straight from NIST's AI Risk Management Framework: trustworthy AI is **"valid and reliable,"** and you get there by designing the human oversight *around* the model, not by trusting it (NIST, 2023). For a founder that means: **AI drafts, you decide.**
 
-**Check yourself.** Name one job in a business you'd happily hand AI, and one you'd never let it make the final call on, and say why.
+:::reveal Name one job in a business you'd happily hand AI, and one you'd never let it make the final call on, and say why. ||| Money, law, hiring, safety, or any fact, price, or quote a customer relies on. Models can confidently make things up, so a human has to verify and sign off on those.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*. See "Valid and Reliable" and human oversight. https://www.nist.gov/itl/ai-risk-management-framework`,
@@ -70,7 +70,7 @@ The honest framing comes straight from NIST's AI Risk Management Framework: trus
 
 **Where AI helps vs. fools you here:** it's great at *organizing* your thinking and surfacing questions you hadn't asked. It is *terrible* at telling you whether real people will pay. Only customers can answer that. Don't let a confident AI summary substitute for one real conversation.
 
-**Check yourself.** Why is "I have a cool AI tool, now what?" a worse starting point than "people keep complaining about X"?
+:::reveal Why is "I have a cool AI tool, now what?" a worse starting point than "people keep complaining about X"? ||| It runs backwards. Start from a real, painful problem people will pay to remove, not from a tool hunting for a use. A problem nobody pays to solve is a hobby, not a business.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Secondary research, knowing your market and competition. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis`,
@@ -102,7 +102,7 @@ The honest framing comes straight from NIST's AI Risk Management Framework: trus
 
 > **Trust DNA:** AI can help you *prepare* for and *digest* customer research. It can never *be* the customer. Validation comes from real people, not a convincing simulation.
 
-**Check yourself.** What's the one thing customer research must answer that no AI persona can ever answer for you?
+:::reveal What's the one thing customer research must answer that no AI persona can ever answer for you? ||| It can draft neutral questions, design a quick survey, and cluster answers into themes. It must never replace the real conversations, and it cannot prove whether people will pay.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Direct research with your real customers. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis`,
@@ -131,7 +131,7 @@ The honest framing comes straight from NIST's AI Risk Management Framework: trus
 
 **A simple rule:** if you'd be embarrassed to have customers know AI wrote it *and you didn't improve it*, don't ship it. Using AI to write faster is fine; using AI to write *worse* and call it done is not.
 
-**Check yourself.** Name the two failure modes of AI-generated marketing content, and the one habit (about *your* writing) that fixes the first one.
+:::reveal Name the two failure modes of AI-generated marketing content, and the one habit (about *your* writing) that fixes the first one. ||| Generic slop that any business could publish and that builds no trust, and confident falsehoods, meaning claims you never checked. The fix for slop is feeding AI your own voice and rewriting in your words.
 
 ## Sources
 - Federal Trade Commission. (2023). *Keep your AI claims in check*. Performance claims in marketing must be truthful and substantiated. https://www.ftc.gov/business-guidance/blog/2023/02/keep-your-ai-claims-check`,
@@ -239,7 +239,7 @@ A feature that's "basically free" while you test it can become a real monthly bi
 - **Audit your subscriptions quarterly.** Cancel the AI tools you stopped using. "I forgot I was paying for it" is a silent profit leak.
 - **Compare total cost to value.** A $50/month tool that saves you 10 hours is a bargain; five $20 tools you barely touch is waste.
 
-**Check yourself.** When you build with a model's API, what unit do you pay for, and name two things that make a single request cost more.
+:::reveal When you build with a model's API, what unit do you pay for, and name two things that make a single request cost more. ||| You pay per token, and both your input and the model's output count, so long prompts and long answers cost more on every call. Estimate cost as tokens per request times requests per day times the price per token.
 
 ## Sources
 - National Institute of Standards and Technology. (2024). *AI RMF Generative AI Profile (NIST AI 600-1)*. Cost and resource considerations of generative AI use. https://doi.org/10.6028/NIST.AI.600-1
@@ -301,7 +301,7 @@ A feature that's "basically free" while you test it can become a real monthly bi
 
 > **Trust DNA, founder's edition:** customers will forgive a small honest business that's clearly *trying*. They will not forgive being deceived. Use AI to be *better and faster*, never to be fake.
 
-**Check yourself.** Give one example of AI use that builds customer trust and one that destroys it, and name what separates them.
+:::reveal Give one example of AI use that builds customer trust and one that destroys it, and name what separates them. ||| Trust grows when you admit a bot is a bot and offer a path to a human, keep your own voice, and verify every claim, price, and policy first. It is destroyed by hidden bots, invented policies, and fake reviews.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*. Transparency, accountability, and human oversight as traits of trustworthy AI. https://www.nist.gov/itl/ai-risk-management-framework

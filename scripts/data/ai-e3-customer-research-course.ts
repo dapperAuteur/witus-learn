@@ -48,7 +48,7 @@ The trap is that a guess feels exactly like the truth from inside your own head.
 
 > **Trust DNA:** validation comes from *reality* (what real people say and do), not from a confident summary, and never from a chatbot telling you you're right.
 
-**Check yourself.** What does "there are no facts inside your building" mean for a founder who keeps refining their idea by chatting with an AI instead of talking to people?
+:::reveal What does "there are no facts inside your building" mean for a founder who keeps refining their idea by chatting with an AI instead of talking to people? ||| Outside the building, with real people, not in your imagination and not inside an AI chatbot. As Blank put it, there are no facts inside your building, so get outside.
 
 ## Sources
 - Blank, S. (2013). *The Customer Development Manifesto* / "There are no facts inside your building, so get outside." The core risk is building something nobody wants; facts live with customers, not in the building. https://steveblank.com/category/customer-development-manifesto/
@@ -87,7 +87,7 @@ The trap is that a guess feels exactly like the truth from inside your own head.
 
 > **Trust DNA:** AI prepares you for reality and helps you digest it. It is never a stand-in for reality.
 
-**Check yourself.** Name one research job you'd happily hand AI and one you must never let it do, and say why the second one can't be faked.
+:::reveal Name one research job you'd happily hand AI and one you must never let it do, and say why the second one can't be faked. ||| Be a real customer, tell you whether people will actually pay, or replace the real conversation. Those produce the facts, and they have to come from real humans.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Secondary research (existing sources) vs. direct research (surveys, interviews, focus groups with your customers). https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis
@@ -239,7 +239,7 @@ The trap is that a guess feels exactly like the truth from inside your own head.
 
 > **Trust DNA, the core of this course:** validate with reality, not with an agreeable chatbot. If your only "proof" is that an AI agreed with you, you have no proof.
 
-**Check yourself.** What is confirmation bias, and why does asking an AI "isn't my idea great?" make it worse instead of better?
+:::reveal What is confirmation bias, and why does asking an AI "isn't my idea great?" make it worse instead of better? ||| Confirmation bias is noticing only the evidence that says you're right; automation bias is over-trusting output just because a computer produced it. Together they make 'the AI agreed' feel like real proof when it isn't. Try to prove yourself WRONG, ask the AI for the strongest reasons your idea fails (use it as a red team, not a cheerleader), and trust real behavior over agreeable words.
 
 ## Sources
 - National Institute of Standards and Technology. (2022). *Towards a Standard for Identifying and Managing Bias in Artificial Intelligence (NIST SP 1270)*. Human/cognitive biases including confirmation bias and automation bias (over-reliance on automated output). https://doi.org/10.6028/NIST.SP.1270
@@ -275,7 +275,7 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
 
 **Where AI helps, and where it inflates:** AI can pull together secondary-research starting points (industry size, demographics, competitor pricing) for you to **verify** against the SBA's free federal data and other primary sources (SBA, n.d.). But AI will also happily generate a confident, **made-up** market number if you let it. Treat any figure it gives as a lead to check, never a fact, and never copy a TAM you can't trace to a real source. (Inflating claims to investors or customers also runs into the truthfulness rules in Lesson 9.)
 
-**Check yourself.** Why is leading with a giant "TAM" weaker than showing a realistic "SOM," and what makes a bottom-up estimate more honest than "1% of a huge market"?
+:::reveal Why is leading with a giant "TAM" weaker than showing a realistic "SOM," and what makes a bottom-up estimate more honest than "1% of a huge market"? ||| TAM is everyone with the problem, SAM is the slice you can reach and serve, SOM is the realistic share you can win near-term. Lead with SOM, not a giant TAM. Building it bottom-up from real customers times price times frequency, not '1% of a billion.' Treat any number AI gives you as a lead to verify, never a fact.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Estimate demand and market size, know your competitors' pricing and market saturation; free federal market data. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis`,
@@ -309,7 +309,7 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
 
 **The line you can't cross: the page must be truthful.** It's tempting to overstate what your not-yet-built product does to juice sign-ups. Don't. The FTC is explicit that claims must be **truthful and substantiated**: you can't promise capabilities (including "AI-powered" features) you can't back up, even on a test page (FTC, 2023). Validate real demand with an honest offer; a sign-up you got by lying validates nothing and can get you in trouble.
 
-**Check yourself.** Why can a simple landing page sometimes teach you more than a finished product, and what's the one rule your test page must follow no matter what?
+:::reveal Why can a simple landing page sometimes teach you more than a finished product, and what's the one rule your test page must follow no matter what? ||| It must be truthful. The FTC requires claims, including 'AI-powered' ones, to be truthful and substantiated even on a test page. A sign-up you got by lying validates nothing.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Test your concept against real market demand before scaling. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis
