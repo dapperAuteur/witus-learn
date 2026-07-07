@@ -30,12 +30,14 @@ export function LearnerDashboardView({
   gamification = "light",
   leaderboard = [],
   userId,
+  commodityMap = false,
 }: {
   data: LearnerDashboard;
   name: string;
   gamification?: "off" | "light" | "full";
   leaderboard?: LeaderRow[];
   userId?: string;
+  commodityMap?: boolean;
 }) {
   const { resume, upNext, courses, streak, bestStreak, week, xp, level, xpIntoLevel, xpForLevel, badges } = data;
   const next = upNext[0] ?? null;
@@ -61,6 +63,17 @@ export function LearnerDashboardView({
           Browse catalog →
         </Link>
       </div>
+
+      {commodityMap ? (
+        <Link
+          href="/explore"
+          className="mt-6 flex items-center justify-between gap-3 rounded-xl border-2 p-4 transition hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2"
+          style={{ borderColor: "var(--accent)" }}
+        >
+          <span className="font-semibold">🗺️ Explore the Commodity Map — where every story begins</span>
+          <span aria-hidden className="text-xl" style={{ color: "var(--accent)" }}>→</span>
+        </Link>
+      ) : null}
 
       <div className="mt-6 grid gap-6 lg:grid-cols-3">
         {/* LEFT */}
