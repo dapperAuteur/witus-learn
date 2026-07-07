@@ -70,7 +70,7 @@ Some powers are shared (taxing), some are exclusive. The **10th Amendment** rese
 
 Most bills never become law. They die in committee. The same basic path exists in your **state legislature** for state laws. The presentment and veto process is set out in U.S. Const. art. I, § 7.
 
-**Check yourself.** What two things can the President do when a bill reaches their desk, and how can Congress respond to one of them?
+:::reveal What two things can the President do when a bill reaches their desk, and how can Congress respond to one of them? ||| Sign it, so it becomes law, or veto it. Congress can override a veto with a two-thirds vote in both chambers. Most bills never become law, because they die in committee.
 
 ## Sources
 - U.S. Const. art. I, § 7. Constitution Annotated, Congress.gov. https://constitution.congress.gov/constitution/article-1/
@@ -97,7 +97,7 @@ Most bills never become law. They die in committee. The same basic path exists i
 - Judges are nominated by the President and confirmed by the Senate; federal judges serve for life, to insulate them from political pressure.
 - States have their own court systems for state law.
 
-**Check yourself.** What is judicial review, and which 1803 case established it?
+:::reveal What is judicial review, and which 1803 case established it? ||| Judicial review is the power of courts to strike down laws or actions that violate the Constitution. The Supreme Court established it in Marbury v. Madison (1803).
 
 ## Sources
 - Marbury v. Madison, 5 U.S. 137 (1803). Library of Congress. https://www.loc.gov/item/usrep005137/
@@ -127,7 +127,7 @@ Most bills never become law. They die in committee. The same basic path exists i
 
 Voting rules (registration, deadlines, ID) are set **by each state**, so they differ. Check your state's official election website for yours.
 
-**Check yourself.** Why can a single vote carry more weight in a local election than in a presidential one?
+:::reveal Why can a single vote carry more weight in a local election than in a presidential one? ||| Each state sets its own voting rules. A single vote can carry more weight in state and local elections because turnout is usually much lower.
 
 ## Sources
 - U.S. Const. art. I; art. II; amend. XII. Constitution Annotated, Congress.gov. https://constitution.congress.gov/

@@ -54,7 +54,7 @@ A useful rule of thumb: **the closer the government is to you, the more often it
 
 One more practical fact this course keeps returning to: **local government is not one fixed shape.** How counties, cities, and special districts are organized **varies from state to state**. The U.S. Census Bureau counts more than 90,000 local governments precisely because the country builds them so many different ways (U.S. Census Bureau, 2023). We'll keep flagging where things vary so you check *your* place, not a textbook average.
 
-**Check yourself.** Name the three levels of government you live under, and say which one you interact with most often in daily life.
+:::reveal Name the three levels of government you live under, and say which one you interact with most often in daily life. ||| Federal (national), state, and local. Local government, the level closest to you (schools, trash, police, zoning, water).
 
 ## Sources
 - USA.gov. (n.d.-a). *Branches of the U.S. government*. https://www.usa.gov/branches-of-government
@@ -90,7 +90,7 @@ A quick "which level?" sorter for everyday problems:
 
 The lines aren't always clean. Many programs are **shared** between levels (the next sections explain how money and mandates flow). But starting at the right level is the single most useful civic skill, and it's why this whole course is organized as "who does what."
 
-**Check yourself.** A streetlight on your corner is out, and separately you have a question about your Social Security benefit. Which level of government do you contact for each?
+:::reveal A streetlight on your corner is out, and separately you have a question about your Social Security benefit. Which level of government do you contact for each? ||| Local, almost always your city or county.
 
 ## Sources
 - USA.gov. (n.d.-b). *State, county, and municipal government*. https://www.usa.gov/state-government
@@ -127,7 +127,7 @@ A practical tell: **if the program is the same in every state, it's probably fed
 
 (This course stays on *what the federal government does*. For *why* it may do these things (the enumerated powers, the Commerce Clause), see the **State vs Federal Power** course.)
 
-**Check yourself.** Name three things the federal government handles, and give the "tell" that usually signals a program is federal rather than state.
+:::reveal Name three things the federal government handles, and give the "tell" that usually signals a program is federal rather than state. ||| Any two of: national defense and foreign affairs, currency, interstate commerce, Social Security and Medicare, federal courts, immigration and passports. It works the same in every state (like Social Security), instead of being run 50 different ways.
 
 ## Sources
 - USA.gov. (n.d.-a). *Branches of the U.S. government*. https://www.usa.gov/branches-of-government
@@ -162,7 +162,7 @@ Big state jobs:
 
 The state legislature is where much of this is decided. The National Conference of State Legislatures (NCSL) tracks how the 50 legislatures are structured and how their rules differ, a reminder that "the state does it" still means **50 different versions** of how (NCSL, n.d.-a).
 
-**Check yourself.** Name three things your state handles, and explain why a professional license or an election rule can differ when you cross a state line.
+:::reveal Name three things your state handles, and explain why a professional license or an election rule can differ when you cross a state line. ||| Because states set those rules themselves, so there are 50 different versions.
 
 ## Sources
 - National Conference of State Legislatures. (n.d.-a). *About state legislatures*. https://www.ncsl.org/about-state-legislatures
@@ -206,7 +206,7 @@ Now the part the authoritative sources insist on: **local structure VARIES, and 
 
 Why the variety matters in practice: in one place your services come from a **county**; in another from a **city**; in another from a **township**; and in many places from **special districts** layered on top (next section). Some states have strong counties and weak townships; some have the reverse; some cities are "independent" of any county at all. **Don't assume; check who actually provides your service**, because the Census count exists precisely because the answer differs from place to place (National League of Cities, n.d.; NACo, n.d.; U.S. Census Bureau, 2023).
 
-**Check yourself.** Name three services your local government provides, and explain why you can't assume a "county" or a "city" provides them everywhere in the U.S.
+:::reveal Name three services your local government provides, and explain why you can't assume a "county" or a "city" provides them everywhere in the U.S. ||| Any two of: public schools day-to-day, zoning and land use, police and fire, water/sewer/trash, local roads, parks, and libraries, the property tax. Local structure varies by state; the Census counted 90,837 local governments because counties, cities, townships, and special districts combine differently.
 
 ## Sources
 - U.S. Census Bureau. (2023, August 24). *Census Bureau releases 2022 Census of Governments: Organization data* [Press release]. https://www.census.gov/newsroom/press-releases/2023/census-of-governments.html
@@ -245,7 +245,7 @@ Why the variety matters in practice: in one place your services come from a **co
 
 **This is the cooperative, money-and-rules plumbing of federalism.** (The *legal* limits on what one level may force on another, and who wins in a true conflict, are the **State vs Federal Power** course; here we're tracing how the money and rules actually move.)
 
-**Check yourself.** Explain the difference between a grant and a mandate, and what makes a mandate "unfunded."
+:::reveal Explain the difference between a grant and a mandate, and what makes a mandate "unfunded." ||| A grant sends money down between levels (often with conditions); a mandate is a rule one level imposes on another. It is a requirement imposed without the money to carry it out, which can strain a state or local budget.
 
 ## Sources
 - U.S. Government Accountability Office. (n.d.). *Unfunded Mandates Reform Act of 1995 (UMRA)*. https://www.gao.gov/unfunded-mandates-reform-act
@@ -281,7 +281,7 @@ Common kinds people forget exist:
 
 Why this is the most useful lesson in the course: **these low-profile boards have the highest "vote weight" in the country.** A school-board or water-district election can be decided by a handful of votes, the meetings are open to the public, and the decisions (your water rate, your school's calendar, where the bus runs) hit your life directly. The governments people **forget** are exactly the ones where **one engaged person has the most leverage.**
 
-**Check yourself.** What is a special district, name two examples, and explain why these "forgotten" governments are where a single vote or public comment can matter most.
+:::reveal What is a special district, name two examples, and explain why these "forgotten" governments are where a single vote or public comment can matter most. ||| A local government created to do one job (like water, fire, or transit), separate from the city or county. Their elections can be decided by a handful of votes, the meetings are open to the public, and their decisions hit your daily life directly.
 
 ## Sources
 - U.S. Census Bureau. (2023, August). *Special district governments manage natural resources in many U.S. communities* [America Counts story]. https://www.census.gov/library/stories/2023/08/2022-census-of-governments.html

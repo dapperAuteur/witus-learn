@@ -48,7 +48,7 @@ Two practical questions before you commit: **Is the seat actually open or compet
 
 USA.gov's plain-language election guides are a good neutral starting point for how federal offices are filled, and your **state and local election office** is the authoritative source for the offices on your local ballot (USA.gov, n.d.-a; USA.gov, n.d.-b).
 
-**Check yourself.** Name one reason most first-time candidates start with a local or state office rather than a federal one.
+:::reveal Name one reason most first-time candidates start with a local or state office rather than a federal one. ||| Local and state seats have a smaller electorate and a lower cost, so a real campaign is possible on a small budget and a small team.
 
 ## Sources
 - USA.gov. (n.d.-a). *How the president is elected*. https://www.usa.gov/election
@@ -82,7 +82,7 @@ USA.gov's plain-language election guides are a good neutral starting point for h
 
 **Do not assume.** Check the eligibility rules for *your* office with the authoritative source: your **state or local election office** (USA.gov, n.d.-b), and for state legislatures, NCSL's eligibility table (NCSL, n.d.-a).
 
-**Check yourself.** For a *state* legislative seat, are the age and residency rules the same in every state? Where would you confirm the rule for your state?
+:::reveal For a *state* legislative seat, are the age and residency rules the same in every state? Where would you confirm the rule for your state? ||| No. Each state's constitution and statutes set them, so age and residency requirements vary by state and by office. Check NCSL or your election office.
 
 ## Sources
 - U.S. Const. art. I, §§ 2-3; art. II, § 1. Constitution Annotated, Congress.gov. https://constitution.congress.gov/
@@ -119,7 +119,7 @@ Whichever path, expect some combination of:
 
 **Do not state a single number.** The signature count and filing fee for, say, a city council seat in one state tell you nothing about another state, or even another office in the same state. Get the exact petition rules, signature threshold, fee, and deadline for *your* office from your **state or local election office** (USA.gov, n.d.-b), and use Ballotpedia's per-state ballot-access overviews to understand the landscape (Ballotpedia, n.d.-a; Ballotpedia, n.d.-b).
 
-**Check yourself.** Name the three general paths onto the ballot, and name the authoritative place to get the exact signature and fee requirements for your office.
+:::reveal Name the three general paths onto the ballot, and name the authoritative place to get the exact signature and fee requirements for your office. ||| Party nomination (win a primary or be nominated at a convention), independent or unaffiliated (qualify by petition), and write-in (file a declaration in advance). No. Ballot access is a separate step run by the states, and the required signatures and filing fees vary by state and by office.
 
 ## Sources
 - Ballotpedia. (n.d.-a). *Ballot access*. https://ballotpedia.org/Ballot_access
@@ -152,7 +152,7 @@ Whichever path, expect some combination of:
 
 **State and local races are NOT under the FEC.** A school-board, city-council, or state-legislative campaign follows **state law**, not the FEC: different registration, different (or no) committee forms, and different contribution limits. Some states cap contributions; others don't; the caps that exist vary widely (NCSL, n.d.-b). Confirm which regime applies to *your* race before you raise a dollar.
 
-**Check yourself.** What dollar amount of raising or spending makes you a federal "candidate," and which body's rules govern a *state* legislative race instead of the FEC?
+:::reveal What dollar amount of raising or spending makes you a federal "candidate," and which body's rules govern a *state* legislative race instead of the FEC? ||| More than $5,000 in contributions or expenditures. You then file a Statement of Candidacy (Form 2) within 15 days. No. The FEC governs only federal races. State and local campaigns follow state law, with their own registration, forms, and contribution limits.
 
 ## Sources
 - FEC. (n.d.-a). *Registering as a candidate*. Federal Election Commission. https://www.fec.gov/help-candidates-and-committees/registering-candidate/
@@ -187,7 +187,7 @@ For **state and local** races, **state law** governs who may give and how much. 
 
 **Ethics: the part no form enforces for you.** Beyond the letter of the law: don't accept money in exchange for an official act (that's bribery), don't disguise the true source of a contribution (a "straw donor" scheme is illegal), keep **campaign funds separate from personal funds**, and **never spend campaign money on personal expenses**. The FEC's **personal-use ban** prohibits using campaign funds for expenses that would exist regardless of the campaign (FEC, n.d.-f). Transparency is the campaign-finance system's core safeguard: when in doubt, disclose.
 
-**Check yourself.** Name one source that is *prohibited* from contributing to a *federal* campaign, and state the rule about spending campaign funds on personal expenses.
+:::reveal Name one source that is *prohibited* from contributing to a *federal* campaign, and state the rule about spending campaign funds on personal expenses. ||| Corporations and labor unions (from treasury funds), federal government contractors, and foreign nationals are all prohibited from contributing.
 
 ## Sources
 - FEC. (n.d.-d). *Contribution limits*. https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/contribution-limits/
@@ -221,7 +221,7 @@ For **state and local** campaigns, a parallel system exists under **state law**,
 
 The practical takeaway: **identify your reporting body and your deadlines on day one.** Missed or late reports are one of the most common ways a well-meaning first-time campaign gets into legal and reputational trouble.
 
-**Check yourself.** What is the purpose of disclosure, and where does a *state* legislative candidate file finance reports (vs. a federal candidate)?
+:::reveal What is the purpose of disclosure, and where does a *state* legislative candidate file finance reports (vs. a federal candidate)? ||| It makes the money a campaign raises and spends publicly visible, so voters and regulators can see who funds it. It does not cap contributions by itself. Federal candidates file with the FEC. State and local candidates file with a state agency (a secretary of state, board of elections, or ethics commission) under state law.
 
 ## Sources
 - FEC. (n.d.-g). *Filing candidate reports*. Federal Election Commission. https://www.fec.gov/help-candidates-and-committees/filing-reports/
@@ -253,7 +253,7 @@ A simple plan: estimate the **votes you need to win** (turnout times your target
 
 This lesson is about **mechanics**, not persuasion tactics for any party or position. The same nuts and bolts serve any candidate.
 
-**Check yourself.** Name the three things a campaign is built to do, and name the public dataset campaigns use to target voter contact.
+:::reveal Name the three things a campaign is built to do, and name the public dataset campaigns use to target voter contact. ||| Define a message, build a team, and reach voters. Direct voter contact, door-knocking and phone calls, is the workhorse. Campaigns target it using the voter file, the public list of registered voters.
 
 ## Sources
 - USA.gov. (n.d.-b). *State and local election offices*. https://www.usa.gov/state-election-office
