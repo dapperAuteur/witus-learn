@@ -61,6 +61,7 @@ export const OPERATOR_COMMANDS: CommandGroup[] = [
     title: "Content tools",
     commands: [
       { cmd: "pnpm reassign:instructor", desc: "Bulk-reassign course instructors to the owner. Dry-run by default; add --apply to write.", impact: "write-dev" },
+      { cmd: "pnpm reveal:audit", desc: "Inventory every inline \"Check yourself\" prompt across the authored courses and whether a recall-card answer exists to reuse (for the :::reveal rollout). Flags: --list · --course <substr>.", impact: "read" },
       { cmd: "pnpm srt:transcript", desc: "Convert an .srt caption file into a lesson's synced transcript_content.", impact: "read" },
       { cmd: "pnpm course:script", desc: "Export a course to a flat teleprompter script (for recording).", impact: "read" },
     ],
@@ -79,6 +80,13 @@ export const OPERATOR_COMMANDS: CommandGroup[] = [
       { cmd: "pnpm seed:faa", desc: "Seed the FAA Part 107 course.", impact: "write-dev" },
       { cmd: "pnpm gen:health  →  pnpm seed:health", desc: "Generate the health-course data (from CentOS), then seed it. Run gen first.", impact: "write-dev" },
       { cmd: "pnpm seed:speedway", desc: "Seed the Speedway course.", impact: "write-dev" },
+    ],
+  },
+  {
+    title: "AI / retrieval",
+    blurb: "Builds the search corpus for the per-course 'chat with the sources' feature.",
+    commands: [
+      { cmd: "pnpm rag:index --course <slug>", desc: "Chunk + embed (Gemini 768-dim) a course's lesson bodies + bibliography citations into source_chunks (a clean rebuild). Add --source-url <url> to also ingest a PUBLIC-DOMAIN full text (e.g. Puckett on archive.org); --tenant <slug> to disambiguate a shared slug. Needs GOOGLE_GEMINI_API_KEY.", impact: "write-dev" },
     ],
   },
 ];
