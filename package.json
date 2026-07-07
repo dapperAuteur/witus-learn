@@ -34,6 +34,7 @@
     "reveal:audit": "tsx scripts/reveal-audit.ts",
     "reveal:convert": "tsx scripts/reveal-convert.ts",
     "rag:index": "tsx --env-file=.env.local scripts/rag-index.ts",
+    "rag:list": "tsx --env-file=.env.local scripts/rag-list.ts",
     "test": "vitest run"
   },
   "dependencies": {
