@@ -54,7 +54,7 @@ A state constitution does for the state what the U.S. Constitution does for the 
 
 ⚠️ **Time-sensitive / recently changed, flag it.** That **60% supermajority is itself a recent rule.** Florida voters added it in **2006 (Amendment 3)**; before then, a **simple majority** (more than 50%) was enough. So an amendment that would have passed in, say, 2004 with 55% would **fail** today. When you read older material about "passing an amendment," check whether it predates the 60% rule.
 
-**Check yourself.** Name three ways the Florida Constitution can be amended, and state the single percentage of the vote any amendment now needs to pass, and when that threshold was adopted.
+:::reveal Name three ways the Florida Constitution can be amended, and state the single percentage of the vote any amendment now needs to pass, and when that threshold was adopted. ||| The 1968 revision, a wholesale rewrite that replaced the 1885 constitution. At least 60%, a supermajority Florida voters added in 2006 (Amendment 3). Before then a simple majority was enough.
 
 ## Sources
 - Florida Department of State, Division of Elections. (n.d.-a). *Constitutional amendments/initiatives*. DOS.fl.gov. https://dos.fl.gov/elections/laws-rules/constitutional-amendmentsinitiatives/
@@ -84,7 +84,7 @@ A state constitution does for the state what the U.S. Constitution does for the 
 
 **Why this matters civically.** In a CRC year, some of the amendments on your ballot didn't come from the Legislature *or* from a citizen petition, they came from an appointed commission most Floridians have never heard of. Knowing the CRC exists helps you understand *where a ballot amendment came from*, which is part of judging it.
 
-**Check yourself.** How often does Florida's Constitution Revision Commission meet, and what can it do that makes it unusually powerful compared with commissions in other states?
+:::reveal How often does Florida's Constitution Revision Commission meet, and what can it do that makes it unusually powerful compared with commissions in other states? ||| Once every 20 years; it convened in 1977 to 1978, 1997 to 1998, and 2017 to 2018. Its proposals go directly to the ballot; the Legislature cannot approve, block, or edit them.
 
 ## Sources
 - Florida Department of State, Division of Elections. (n.d.-a). *Constitutional amendments/initiatives*. DOS.fl.gov. https://dos.fl.gov/elections/laws-rules/constitutional-amendmentsinitiatives/
@@ -124,7 +124,7 @@ Because these officials answer to the voters, not to the Governor, Florida's exe
 
 **Judicial: the state courts.** Florida's court system runs from trial courts up through the **District Courts of Appeal (DCAs)** to the **Florida Supreme Court**. How Florida picks its *appellate* judges is covered in the next lesson.
 
-**Check yourself.** Name Florida's three branches; give the size and term length of each legislative chamber; and name the three separately-elected officers who, with the Governor, make up the Florida Cabinet.
+:::reveal Name Florida's three branches; give the size and term length of each legislative chamber; and name the three separately-elected officers who, with the Governor, make up the Florida Cabinet. ||| House: 120 members, 2-year terms. Senate: 40 members, 4-year staggered terms. Three separately-elected officers: the Attorney General, the Chief Financial Officer, and the Commissioner of Agriculture and Consumer Services.
 
 ## Sources
 - The Florida Senate. (n.d.-b). *The Florida Constitution* (Article III: Legislature; Article IV: Executive). FLSenate.gov. https://www.flsenate.gov/laws/constitution
@@ -157,7 +157,7 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
 
 **Why this matters civically.** On a Florida ballot you may see **two different kinds of judicial races at once**: a contested *election* for a circuit or county judge, and a yes/no *retention* vote for a Supreme Court justice or DCA judge. Knowing which is which means you can vote each one thoughtfully instead of skipping it. When you want the exact rule for a specific court, the authoritative source is the Florida courts: [flcourts.gov](https://flcourts.gov).
 
-**Check yourself.** Explain Florida's three-step way of selecting Supreme Court and District Court of Appeal judges, and describe how that differs from how circuit and county (trial) judges are chosen.
+:::reveal Explain Florida's three-step way of selecting Supreme Court and District Court of Appeal judges, and describe how that differs from how circuit and county (trial) judges are chosen. ||| Merit selection: a nominating commission sends the Governor a short list, the Governor appoints, and the judge later faces a yes/no retention vote every six years. In nonpartisan contested elections, where voters actually pick them.
 
 ## Sources
 - Florida Supreme Court. (n.d.). *Merit selection, retention & retirement*. FLCourts.gov. https://supremecourt.flcourts.gov/the-court/about-the-court/justices/merit-selection-retention-retirement
@@ -188,7 +188,7 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
 5. **The Governor.** Once both chambers pass the same bill, it goes to the Governor, who can **sign** it, **let it become law without a signature**, or **veto** it. Florida's Governor also has a **line-item veto** over specific appropriations in a budget bill, the power to strike individual spending items.
 6. **The veto override: two-thirds.** If the Governor vetoes, the Legislature can override with a **two-thirds vote of each chamber** (Florida Constitution, Art. III, §8). That's the same high bar Congress uses against a presidential veto, so an override in Florida is hard, and the Governor's veto is a strong tool.
 
-**Check yourself.** Put these in order: committee, Governor's signature or veto, introduction, floor vote, the other chamber. Then state what fraction of each chamber it takes to override a Florida Governor's veto.
+:::reveal Put these in order: committee, Governor's signature or veto, introduction, floor vote, the other chamber. Then state what fraction of each chamber it takes to override a Florida Governor's veto. ||| A two-thirds vote of each chamber, the same high bar Congress uses.
 
 ## Sources
 - The Florida Senate. (n.d.-c). *FAQ: how a bill becomes a law*. FLSenate.gov. https://www.flsenate.gov/reference/faq
@@ -225,7 +225,7 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
 
 **The practical payoff:** who provides your service depends on where you live, your city (if you're in one) or your county (if you're not). And knowing your county's **type** (charter vs. non-charter) tells you how much freedom it has to make its own rules.
 
-**Check yourself.** How many counties does Florida have; what's the difference between a charter and a non-charter county; and what common local layer, found in states like Indiana, does Florida NOT have?
+:::reveal How many counties does Florida have; what's the difference between a charter and a non-charter county; and what common local layer, found in states like Indiana, does Florida NOT have? ||| 67 counties, split into charter counties (broad home rule) and non-charter counties (state-defined powers). Townships. Florida's local government is essentially two layers: counties and municipalities.
 
 ## Sources
 - The Florida Senate. (n.d.-b). *The Florida Constitution* (Article VIII: Local Government). FLSenate.gov. https://www.flsenate.gov/laws/constitution
@@ -265,7 +265,7 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
 
 ⚠️ **Confirm the current details.** ID lists, mail-ballot request rules, and deadlines are set by state law and have been changing. Verify the current rules at **[dos.fl.gov](https://dos.fl.gov)** and with your county Supervisor of Elections before relying on any specific one.
 
-**Check yourself.** What does "closed primary" mean in Florida, and what's the one exception; what recently changed about how long a vote-by-mail request lasts; and what share of the vote does a constitutional amendment need to pass?
+:::reveal What does "closed primary" mean in Florida, and what's the one exception; what recently changed about how long a vote-by-mail request lasts; and what share of the vote does a constitutional amendment need to pass? ||| Only voters registered in a party may vote in that party's primary. The exception is a universal primary contest: all candidates are one party and the winner has no general-election opponent, which opens it to all voters. A request now expires faster (through the end of the next general-election year), and you must supply an ID number to request a mail ballot.
 
 ## Sources
 - Florida Department of State, Division of Elections. (n.d.-b). *For voters: voter registration, ID, and voting*. DOS.fl.gov. https://dos.fl.gov/elections/for-voters/
@@ -298,7 +298,7 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
 
 ⚠️ **Flag it: the rules here shift.** Signature thresholds, the geographic-distribution requirement, petition deadlines, and the mechanics of gathering/verifying signatures have been adjusted by the Legislature more than once and are a recurring subject of new bills. Treat the specifics above as the framework and confirm the **current** signature counts and deadlines at **[dos.fl.gov](https://dos.fl.gov)** before starting a petition.
 
-**Check yourself.** Describe the citizen-initiative path in Florida: roughly how many signatures, what the Florida Supreme Court checks, and what share of the vote it takes to pass.
+:::reveal Describe the citizen-initiative path in Florida: roughly how many signatures, what the Florida Supreme Court checks, and what share of the vote it takes to pass. ||| Signatures equal to about 8% of the votes cast in the last presidential election, spread across at least half of Florida's congressional districts. Florida Supreme Court review for single-subject and a clear ballot title and summary, and then at least 60% of the vote at the polls.
 
 ## Sources
 - Florida Department of State, Division of Elections. (n.d.-a). *Constitutional amendments/initiatives*. DOS.fl.gov. https://dos.fl.gov/elections/laws-rules/constitutional-amendmentsinitiatives/

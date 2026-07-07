@@ -44,7 +44,7 @@ A few things make Virginia's setup distinctive from the very start, and this cou
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Virginia's own government ([law.lis.virginia.gov](https://law.lis.virginia.gov), [elections.virginia.gov](https://elections.virginia.gov), [vacourts.gov](https://vacourts.gov)) is the authoritative source. When a fact is time-sensitive (voter ID, early voting, redistricting), we say so and point you there.
 
-**Check yourself.** What is Virginia's current constitution, and what does calling Virginia a "Commonwealth" actually mean?
+:::reveal What is Virginia's current constitution, and what does calling Virginia a "Commonwealth" actually mean? ||| The Constitution of 1971, Virginia's seventh constitution, which took effect July 1, 1971. It carries no special legal power; it reflects the old idea of government founded on the common weal, the common good. Virginia is one of only four commonwealth states.
 
 ## Sources
 - Virginia General Assembly. (n.d.). *Constitution of Virginia (1971); Code of Virginia*. law.lis.virginia.gov. https://law.lis.virginia.gov/
@@ -79,7 +79,7 @@ A few things make Virginia's setup distinctive from the very start, and this cou
 
 **Veto and override.** The Governor may veto bills (and use a line-item veto on appropriations). An override requires a **two-thirds vote of the members present in each chamber.**
 
-**Check yourself.** How many members are in the House of Delegates versus the Senate, and which three statewide executive officers do Virginia voters elect?
+:::reveal How many members are in the House of Delegates versus the Senate, and which three statewide executive officers do Virginia voters elect? ||| The House of Delegates has 100 delegates on 2-year terms; the Senate has 40 senators on 4-year terms. The Governor, the Lieutenant Governor, and the Attorney General, each elected separately (not on a joint ticket), so they can be from different parties.
 
 ## Sources
 - Virginia General Assembly. (n.d.). *The General Assembly of Virginia; the Code of Virginia*. law.lis.virginia.gov. https://law.lis.virginia.gov/
@@ -113,7 +113,7 @@ Why does this matter beyond trivia? It shapes Virginia politics profoundly:
 
 Contrast this with the separately elected Lieutenant Governor and Attorney General, who do **not** face the same consecutive-term ban. It's a distinctive design choice rooted in Virginia's long suspicion of concentrated executive power.
 
-**Check yourself.** Can a Virginia Governor run for re-election immediately after their term, and is Virginia unique in this rule?
+:::reveal Can a Virginia Governor run for re-election immediately after their term, and is Virginia unique in this rule? ||| Virginia is the only state that bars its Governor from serving two consecutive terms. A Governor serves a 4-year term and cannot immediately run for re-election. No. The ban is only on consecutive terms. A former Governor may return after sitting out, as Mills Godwin did with two non-consecutive terms.
 
 ## Sources
 - Virginia General Assembly. (n.d.). *Constitution of Virginia, Article V (Executive)*. law.lis.virginia.gov. https://law.lis.virginia.gov/
@@ -146,7 +146,7 @@ Only **two states**, **Virginia and South Carolina**, use legislative election a
 
 Why it matters: it means Virginia judges answer, for reappointment, to the **legislators** rather than to voters or the governor. If you're comparing states, do **not** assume Virginia elects judges at the ballot box: it emphatically does not.
 
-**Check yourself.** Who elects Virginia's Supreme Court justices, and how long is their term?
+:::reveal Who elects Virginia's Supreme Court justices, and how long is their term? ||| The General Assembly (the Legislature) elects Virginia's judges. Supreme Court of Virginia justices are elected to 12-year terms.
 
 ## Sources
 - Supreme Court of Virginia. (n.d.). *Judicial selection in Virginia*. vacourts.gov. https://www.vacourts.gov/
@@ -183,7 +183,7 @@ Why it matters: it means Virginia judges answer, for reappointment, to the **leg
 
 That two-sessions-plus-a-vote requirement makes Virginia's constitution comparatively **hard to change**, a strong contrast with initiative-heavy states like Arizona or California.
 
-**Check yourself.** Can Virginia citizens put a law on the ballot by petition? What must happen before a proposed constitutional amendment reaches the voters?
+:::reveal Can Virginia citizens put a law on the ballot by petition? What must happen before a proposed constitutional amendment reaches the voters? ||| No. Virginia has no citizen initiative. Law is made through the General Assembly, not by petition. The General Assembly must pass the amendment in two separate sessions with a House of Delegates general election in between, and then it goes to voters in a referendum.
 
 ## Sources
 - Virginia General Assembly. (n.d.). *How a bill becomes law; Constitution of Virginia, Article XII (Future Changes)*. law.lis.virginia.gov. https://law.lis.virginia.gov/`,
@@ -215,7 +215,7 @@ That two-sessions-plus-a-vote requirement makes Virginia's constitution comparat
 
 So "what governs where I live?" in Virginia depends on whether you're in a **county**, an **independent city**, or a **town within a county**: three different answers.
 
-**Check yourself.** What does Dillon's Rule mean for a Virginia locality's powers, and how is an independent city different from a town?
+:::reveal What does Dillon's Rule mean for a Virginia locality's powers, and how is an independent city different from a town? ||| A locality has only the powers the state expressly grants it (plus those necessarily implied). If a power is not clearly granted, the locality must ask the General Assembly. This is the opposite of home rule. An independent city is not part of any county; it is a separate, county-equivalent unit. A town, by contrast, is part of a county. Virginia has 95 counties plus 38 independent cities.
 
 ## Sources
 - Virginia General Assembly. (n.d.). *Local government and the Code of Virginia (Dillon's Rule)*. law.lis.virginia.gov. https://law.lis.virginia.gov/

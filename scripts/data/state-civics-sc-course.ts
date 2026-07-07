@@ -39,7 +39,7 @@ Why this leads the course: nearly every distinctive feature of South Carolina go
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but South Carolina's own government (scstatehouse.gov, scvotes.gov, sccourts.org) is the authoritative source.
 
-**Check yourself.** What does it mean that South Carolina is a "legislative state," and name one lasting sign of that tradition.
+:::reveal What does it mean that South Carolina is a "legislative state," and name one lasting sign of that tradition. ||| For most of its history the General Assembly, not the Governor, held most of the power. The Constitution of 1895 deliberately created a very weak Governor and concentrated authority in the Legislature. The General Assembly elects the state's judges (South Carolina and Virginia are the only two states that do), and the Governor historically shared executive power with many separately elected officials.
 
 ## Sources
 - South Carolina Legislature. (n.d.). *Constitution of South Carolina (1895); the General Assembly*. scstatehouse.gov. https://www.scstatehouse.gov/
@@ -81,7 +81,7 @@ The **Judicial** branch (elected by the Legislature, next) and the **Legislative
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the General Assembly overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** Why does South Carolina elect so many separate statewide officials, and name one recent reform that strengthened the Governor.
+:::reveal Why does South Carolina elect so many separate statewide officials, and name one recent reform that strengthened the Governor. ||| Because the 1895 constitution distrusted a strong Governor, executive power is spread across many separately elected statewide officials (Attorney General, Secretary of State, Treasurer, Comptroller General, and more), so the Governor historically did not control the branch.
 
 ## Sources
 - South Carolina Legislature. (n.d.). *Statewide elected officials; executive-branch reforms*. scstatehouse.gov. https://www.scstatehouse.gov/`,
@@ -116,7 +116,7 @@ The **Judicial** branch (elected by the Legislature, next) and the **Legislative
 
 Why it matters: it means South Carolina judges answer, for re-election, to the **legislators**, not to the voters and not to the Governor. Combined with the historically weak Governor, this is why South Carolina is called a **legislative state.** If you're comparing states, note the pairing: **South Carolina and Virginia elect judges through the Legislature; almost everyone else elects them at the ballot or appoints them.**
 
-**Check yourself.** Who elects South Carolina's Supreme Court justices, and what screening step comes first?
+:::reveal Who elects South Carolina's Supreme Court justices, and what screening step comes first? ||| The General Assembly elects them. First a Judicial Merit Selection Commission screens candidates for qualifications and reports those it finds qualified, and then the Assembly elects a judge from that screened list. Five justices, elected by the General Assembly to 10-year terms. South Carolina and Virginia are the only two states where the Legislature elects the judges.
 
 ## Sources
 - South Carolina Judicial Branch. (n.d.). *Judicial selection: the Judicial Merit Selection Commission and legislative election*. sccourts.org. https://www.sccourts.org/
@@ -156,7 +156,7 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
 
 **No citizen initiative or statewide referendum by petition.** South Carolina citizens **cannot** put a statute or amendment on the ballot by gathering signatures. Constitutional **amendments** run through the Legislature: the General Assembly proposes an amendment by a **two-thirds vote**, voters ratify it, and then the Legislature **re-ratifies** it, a distinctive extra step. So South Carolina voters have a **final say** on amendments the Legislature sends, but cannot **start** one themselves.
 
-**Check yourself.** Can South Carolina citizens put a law on the ballot by petition? How many members are in the House and Senate?
+:::reveal Can South Carolina citizens put a law on the ballot by petition? How many members are in the House and Senate? ||| The House has 124 members elected to 2-year terms; the Senate has 46 senators elected to 4-year terms. No. There is no citizen initiative. Amendments run through the General Assembly (proposed by a two-thirds vote), voters ratify them, and then the Legislature re-ratifies, a distinctive extra step.
 
 ## Sources
 - South Carolina Legislature. (n.d.). *How a bill becomes law; amending the constitution; the General Assembly*. scstatehouse.gov. https://www.scstatehouse.gov/`,

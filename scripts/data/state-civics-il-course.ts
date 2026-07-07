@@ -39,7 +39,7 @@ A quick note on direct democracy: unlike Colorado or California, **Illinois vote
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Illinois's own government ([ilga.gov](https://ilga.gov), [elections.il.gov](https://elections.il.gov), [illinoiscourts.gov](https://illinoiscourts.gov)) is the authoritative source. When something is time-sensitive (like voter-registration rules) we say so.
 
-**Check yourself.** When did Illinois's current constitution take effect, and what is unusual about the scope of Illinois's citizen initiative?
+:::reveal When did Illinois's current constitution take effect, and what is unusual about the scope of Illinois's citizen initiative? ||| The Constitution of 1970 took effect July 1, 1971; it is Illinois's fourth constitution (after 1818, 1848, and 1870). It is narrowly limited: citizens can use it only to change the structure of the Legislative Article, not ordinary laws or other amendments.
 
 ## Sources
 - Illinois General Assembly. (n.d.). *Constitution of the State of Illinois (1970)*. ilga.gov. https://www.ilga.gov/
@@ -76,7 +76,7 @@ A distinctive Illinois quirk: it elects **both a Comptroller and a Treasurer**, 
 
 The **Judicial** branch (the Supreme Court and lower courts) and the **Legislative** branch (the General Assembly) are covered next.
 
-**Check yourself.** Name the two separate financial officers Illinois elects, and explain what changed in 2014 about the Governor and Lieutenant Governor.
+:::reveal Name the two separate financial officers Illinois elects, and explain what changed in 2014 about the Governor and Lieutenant Governor. ||| Six officers; the two financial ones are the Comptroller (writes the state's checks) and the Treasurer (holds and invests the money). They began running together on a joint ticket; before 2014 they were elected separately, which once produced a split-party pair.
 
 ## Sources
 - Illinois General Assembly. (n.d.). *Constitution of Illinois, Article V (The Executive)*. ilga.gov. https://www.ilga.gov/
@@ -114,7 +114,7 @@ So in Illinois, judges run **with party labels**, a system that makes judicial e
 
 **Veto and override.** The Governor has strong veto tools, including an **amendatory veto** (returning a bill with specific changes) and a **line-item/reduction veto** on appropriations. Overrides require a **three-fifths vote of each chamber.**
 
-**Check yourself.** How are Illinois Supreme Court justices elected, and how many come from Cook County?
+:::reveal How are Illinois Supreme Court justices elected, and how many come from Cook County? ||| They are elected in partisan district races to 10-year terms; 3 of the 7 justices come from Cook County, then each faces a nonpartisan retention vote needing 60% to stay.
 
 ## Sources
 - Illinois General Assembly. (n.d.). *The General Assembly; Constitution Article IV*. ilga.gov. https://www.ilga.gov/
@@ -150,7 +150,7 @@ It's a striking example: the **only** thing Illinois citizens can initiate (chan
 
 Everything else (ordinary laws) is made **through the General Assembly** (introduction → committee → both chambers → the Governor's signature or veto).
 
-**Check yourself.** What is the ONLY subject Illinois citizens may change by initiative, and what did the 1980 Cutback Amendment do?
+:::reveal What is the ONLY subject Illinois citizens may change by initiative, and what did the 1980 Cutback Amendment do? ||| Only the Legislative Article, the structure and procedures of the General Assembly; they cannot initiate ordinary laws, tax changes, or other amendments. It shrank the Illinois House from 177 to 118 members and ended the state's multi-member districts and cumulative voting.
 
 ## Sources
 - Illinois General Assembly. (n.d.). *Constitution of Illinois, Article XIV, Section 3 (initiative on the Legislative Article); the 1980 Cutback Amendment*. ilga.gov. https://www.ilga.gov/`,
@@ -186,7 +186,7 @@ Everything else (ordinary laws) is made **through the General Assembly** (introd
 
 The practical effect: Illinois pushes real power **down** to local governments, especially larger cities and Cook County, so "who decides?" is often a **local** answer.
 
-**Check yourself.** How is Illinois home rule the opposite of Dillon's Rule, and which large Illinois county is itself a home-rule government?
+:::reveal How is Illinois home rule the opposite of Dillon's Rule, and which large Illinois county is itself a home-rule government? ||| Home-rule units start with broad power to act on local affairs unless the state specifically limits them, rather than having only the powers the state expressly grants. Cook County, which surrounds Chicago and is one of the most populous local governments in the United States.
 
 ## Sources
 - Illinois General Assembly. (n.d.). *Constitution of Illinois, Article VII (Local Government) and home rule*. ilga.gov. https://www.ilga.gov/`,

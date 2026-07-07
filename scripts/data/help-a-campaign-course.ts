@@ -311,7 +311,7 @@ The catch is **coordination**: if your spending is made "in cooperation, consult
 
 The throughline of this whole course: **the skills are universal; the rules are local.** Learn the rule for *your* race from the authoritative source, then help with confidence, for any candidate, measure, or cause you choose.
 
-**Check yourself.** Name the three main types of ballot measures, and say which body's rules govern donations to a ballot-measure committee (federal FEC, or state law)?
+:::reveal Name the three main types of ballot measures, and say which body's rules govern donations to a ballot-measure committee (federal FEC, or state law)? ||| The citizen initiative, the referendum, and the legislative referral. Donations to a ballot-measure committee follow state campaign-finance rules, not the federal FEC (there is no federal ballot-measure process).
 
 ## Sources
 - Ballotpedia. (n.d.). *Ballot measure*. https://ballotpedia.org/Ballot_measure

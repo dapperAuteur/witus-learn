@@ -41,7 +41,7 @@ The goal is to blend **professional merit** (the commission screens for qualific
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Missouri's own government (house.mo.gov, senate.mo.gov, sos.mo.gov, courts.mo.gov) is the authoritative source.
 
-**Check yourself.** What are the three steps of the Missouri Plan, and why is it named for Missouri?
+:::reveal What are the three steps of the Missouri Plan, and why is it named for Missouri? ||| A nonpartisan nominating commission sends the Governor a short list of the most qualified applicants, the Governor appoints a judge from that list, and the judge then faces voters in periodic nonpartisan yes/no retention elections. Missouri adopted it first, in 1940, and many other states later copied the same nominate, appoint, and retain model, so it kept Missouri's name.
 
 ## Sources
 - Missouri Courts. (n.d.). *The Missouri Nonpartisan Court Plan (merit selection and retention)*. courts.mo.gov. https://www.courts.mo.gov/
@@ -80,7 +80,7 @@ The **Judicial** branch (chosen largely by the Missouri Plan, Lesson 1) and the 
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the General Assembly overrides with a **two-thirds vote of each chamber**, sometimes in a dedicated **veto session** in September.
 
-**Check yourself.** Name three of the six statewide executives Missouri voters elect, and explain why they can be from different parties.
+:::reveal Name three of the six statewide executives Missouri voters elect, and explain why they can be from different parties. ||| Six, an arrangement called a plural executive: the Governor, Lieutenant Governor, Secretary of State, State Auditor, State Treasurer, and Attorney General. Because voters elect each of the six officers separately rather than having the Governor choose them, so they can come from different parties and check one another.
 
 ## Sources
 - Missouri Secretary of State. (n.d.). *Statewide elected officials*. sos.mo.gov. https://www.sos.mo.gov/
@@ -120,7 +120,7 @@ The **Judicial** branch (chosen largely by the Missouri Plan, Lesson 1) and the 
 - **Referendum**: voters can **reject** a law the Legislature passed.
 Missouri voters have used the initiative for major decisions, so **ballot measures are a real feature** of Missouri civics.
 
-**Check yourself.** How many members sit in each chamber of the General Assembly, and what two direct-democracy tools do Missouri citizens have?
+:::reveal How many members sit in each chamber of the General Assembly, and what two direct-democracy tools do Missouri citizens have? ||| The House of Representatives has 163 members elected to 2-year terms, and the Senate has 34 members elected to 4-year terms, with a limit of 8 years per chamber. The initiative, used to place a statute or constitutional amendment on the ballot, and the referendum, used to reject a law the Legislature passed.
 
 ## Sources
 - Missouri General Assembly. (n.d.). *How a bill becomes law; term limits*. senate.mo.gov. https://www.senate.mo.gov/
@@ -153,7 +153,7 @@ Missouri voters have used the initiative for major decisions, so **ballot measur
 
 The practical effect: in most of Missouri your county is a key unit, but if you live in **St. Louis City**, your city **is** your county-equivalent, a genuine local-government peculiarity.
 
-**Check yourself.** How many counties does Missouri have, and what is unusual about the City of St. Louis?
+:::reveal How many counties does Missouri have, and what is unusual about the City of St. Louis? ||| Missouri has 114 counties, each governed by an elected county commission plus separately elected officials such as the sheriff, clerk, collector, assessor, and prosecuting attorney. It is an independent city that is not part of any county, having separated from St. Louis County in 1876, so 'the City' and 'the County' of St. Louis are two separate governments.
 
 ## Sources
 - Missouri General Assembly. (n.d.). *Local government: counties, home-rule charters, and the independent City of St. Louis*. house.mo.gov. https://house.mo.gov/

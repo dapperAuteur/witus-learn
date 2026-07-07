@@ -36,6 +36,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
           gamification={gamification}
           leaderboard={leaderboard}
           userId={session.user.id}
+          commodityMap={tenant.flags.commodityMap === true}
         />
       );
     }
@@ -65,6 +66,29 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
           </Link>
         ) : null}
       </header>
+
+      {/* The Commodity Map is the signature discovery surface — feature it front and center. */}
+      {tenant.flags.commodityMap ? (
+        <Link
+          href="/explore"
+          className="mb-8 block rounded-xl border-2 p-6 transition hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2"
+          style={{ borderColor: "var(--accent)" }}
+        >
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--accent)" }}>
+                Start here
+              </p>
+              <h2 className="mt-1 text-2xl font-bold">🗺️ Explore the Commodity Map</h2>
+              <p className="mt-1 max-w-2xl text-neutral-600 dark:text-neutral-400">
+                See where every story begins — the origins, growing belts, and journeys behind the courses,
+                on one interactive map.
+              </p>
+            </div>
+            <span aria-hidden className="text-3xl" style={{ color: "var(--accent)" }}>→</span>
+          </div>
+        </Link>
+      ) : null}
 
       {tenant.flags.recruiting ? (
         <section className="mb-8 rounded-lg border border-neutral-200 p-6 dark:border-neutral-800">

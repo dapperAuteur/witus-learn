@@ -39,7 +39,7 @@ This is a through-line: Idaho keeps government **close to citizens**, through a 
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Idaho's own government ([legislature.idaho.gov](https://legislature.idaho.gov), [sos.idaho.gov](https://sos.idaho.gov), [isc.idaho.gov](https://isc.idaho.gov)) is the authoritative source.
 
-**Check yourself.** How many legislators represent your Idaho district, and how are its 35 districts structured?
+:::reveal How many legislators represent your Idaho district, and how are its 35 districts structured? ||| 35 districts, and each elects one senator and two representatives (35 senators and 70 representatives in total).
 
 ## Sources
 - Idaho Legislature. (n.d.). *Idaho Constitution (1890); legislative districts (one senator, two representatives)*. legislature.idaho.gov. https://legislature.idaho.gov/
@@ -78,7 +78,7 @@ The **Legislative** branch (the part-time Legislature from Lesson 1) and the **J
 
 **Veto and override.** The Governor may veto bills (and has a **line-item veto** on appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** Name three statewide executives Idahoans elect besides the Governor, and note whether the Governor and Lieutenant Governor run together.
+:::reveal Name three statewide executives Idahoans elect besides the Governor, and note whether the Governor and Lieutenant Governor run together. ||| Separately, so they can be from different parties. Idaho has a plural executive with several independently elected statewide officers.
 
 ## Sources
 - Idaho Secretary of State. (n.d.). *Statewide elected officials*. sos.idaho.gov. https://sos.idaho.gov/
@@ -118,7 +118,7 @@ The **Legislative** branch (the part-time Legislature from Lesson 1) and the **J
 
 The takeaway: in Idaho, the **Legislature is the main road**, and the **citizen initiative is a genuine but demanding backup**, one that requires **statewide** organizing, by design.
 
-**Check yourself.** What can Idaho citizens put on the ballot by initiative, and why is qualifying one difficult?
+:::reveal What can Idaho citizens put on the ballot by initiative, and why is qualifying one difficult? ||| A statute (a law), not a constitutional amendment. Amendments come from the Legislature, and a referendum lets voters reject a law already passed. The geographic distribution requirement: signatures must be spread across a large share of legislative districts, so a measure needs statewide support, not just the biggest cities.
 
 ## Sources
 - Idaho Secretary of State. (n.d.). *Initiative and referendum; signature distribution requirements*. sos.idaho.gov. https://sos.idaho.gov/

@@ -38,7 +38,7 @@ Because the 1780 constitution has never been replaced (only amended) Massachuset
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Massachusetts's own government ([malegislature.gov](https://malegislature.gov), [sec.state.ma.us](https://sec.state.ma.us), [mass.gov/courts](https://mass.gov/courts)) is the authoritative source. When something is time-sensitive, like the recent voting-law changes, we say so.
 
-**Check yourself.** What is notable about Massachusetts's 1780 constitution, and who principally drafted it?
+:::reveal What is notable about Massachusetts's 1780 constitution, and who principally drafted it? ||| It is the oldest functioning written constitution in the world, older than the U.S. Constitution and still in force today. John Adams drafted it in 1779 to 1780; its structure influenced the U.S. Constitution drafted seven years later.
 
 ## Sources
 - Commonwealth of Massachusetts. (n.d.). *Constitution of the Commonwealth of Massachusetts (1780)*. malegislature.gov. https://malegislature.gov/
@@ -75,7 +75,7 @@ Because the 1780 constitution has never been replaced (only amended) Massachuset
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations). The General Court overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** What is the official name of the Massachusetts Legislature, and how many members sit in each chamber?
+:::reveal What is the official name of the Massachusetts Legislature, and how many members sit in each chamber? ||| The General Court of the Commonwealth: a 160-member House of Representatives and a 40-member Senate.
 
 ## Sources
 - Massachusetts General Court. (n.d.). *About the General Court*. malegislature.gov. https://malegislature.gov/
@@ -112,7 +112,7 @@ Because the 1780 constitution has never been replaced (only amended) Massachuset
 
 Why it matters: Massachusetts keeps judges **out of electoral politics entirely**, and routes the confirmation power through an **elected Council** rather than the Senate. If you're comparing states, this Governor's-Council-confirms-and-judges-serve-to-70 model is genuinely unusual.
 
-**Check yourself.** What must the Governor's Council approve, and until what age do Massachusetts judges serve once confirmed?
+:::reveal What must the Governor's Council approve, and until what age do Massachusetts judges serve once confirmed? ||| The Governor's judicial appointments, plus pardons and commutations and certain contracts and appointments. The Governor nominates and the Governor's Council confirms; a judge then serves until mandatory retirement at age 70, with no judicial elections.
 
 ## Sources
 - Commonwealth of Massachusetts. (n.d.). *The Governor's Council*. sec.state.ma.us / mass.gov. https://www.mass.gov/
@@ -151,7 +151,7 @@ Why it matters: Massachusetts keeps judges **out of electoral politics entirely*
 
 This "legislature first, ballot second" design is why it's called an **indirect** initiative, a middle path between pure legislative lawmaking and the direct initiatives of states like Colorado or California.
 
-**Check yourself.** What makes Massachusetts's initiative "indirect," and who gets the first opportunity to act on a citizen petition?
+:::reveal What makes Massachusetts's initiative "indirect," and who gets the first opportunity to act on a citizen petition? ||| A citizen petition goes to the General Court first; only if the Legislature declines to act do petitioners gather a second round of signatures and take the measure to the voters. Residents may ask a legislator to file a bill on their behalf, so ideas can enter the General Court from the public.
 
 ## Sources
 - Massachusetts General Court. (n.d.). *How an idea becomes a law; the right of free petition*. malegislature.gov. https://malegislature.gov/
@@ -185,7 +185,7 @@ This "legislature first, ballot second" design is why it's called an **indirect*
 
 So in Massachusetts, "what does my county do?" genuinely depends on **which** county you're in, a rare situation nationwide. The **town or city**, not the county, is the center of local government for most residents.
 
-**Check yourself.** What can any registered voter do at an open town meeting, and what happened to many Massachusetts county governments around 1997 to 2000?
+:::reveal What can any registered voter do at an open town meeting, and what happened to many Massachusetts county governments around 1997 to 2000? ||| Attend, speak, and vote directly on the town budget and bylaws, one of the purest forms of direct democracy in America. Several county governments were abolished and their functions absorbed by the state; 14 counties remain as geographic and judicial districts, but not all have a functioning county government.
 
 ## Sources
 - Commonwealth of Massachusetts. (n.d.). *Cities and towns; home rule; the status of county government*. mass.gov. https://www.mass.gov/

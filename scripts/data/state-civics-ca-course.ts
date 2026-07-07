@@ -58,7 +58,7 @@ A state constitution does for the state what the U.S. Constitution does for the 
 
 **A note this course keeps returning to:** state facts **vary and change**. Deadlines, signature thresholds, and rules described here are current as of authoring, but the authoritative source is always California's own government (the offices below), not a textbook. When something is time-sensitive, we say so.
 
-**Check yourself.** In what year did California adopt its current constitution, and what are the three direct-democracy tools its Article II gives ordinary citizens?
+:::reveal In what year did California adopt its current constitution, and what are the three direct-democracy tools its Article II gives ordinary citizens? ||| 1879. It replaced the original 1849 statehood constitution, and it is one of the longest and most heavily amended state constitutions in the nation. The initiative (propose a law or amendment), the referendum (approve or reject a law the Legislature passed), and the recall (remove an elected official early), all added in 1911.
 
 ## Sources
 - California Secretary of State. (n.d.-a). *Constitutions collection (1849 and 1878-1879)*. SOS.ca.gov. https://www.sos.ca.gov/archives/collections/constitutions
@@ -98,7 +98,7 @@ It writes state law and passes the budget. ⚠️ **Term limits (varies by when 
 
 **Judicial: the state courts.** California's court system runs from trial courts up to the **Courts of Appeal** and the **California Supreme Court** (7 justices). How California's *appellate* justices reach the bench is distinctive and covered in the next lesson.
 
-**Check yourself.** Name California's three branches, give the size and term length of each legislative chamber, and explain why the Lieutenant Governor is not simply "the Governor's running mate."
+:::reveal Name California's three branches, give the size and term length of each legislative chamber, and explain why the Lieutenant Governor is not simply "the Governor's running mate." ||| The Assembly has 80 members with 2-year terms and the Senate has 40 members with 4-year terms, 120 seats in total. California has a plural executive. The Lieutenant Governor is elected independently, not on a joint ticket, and can be from a different party than the Governor.
 
 ## Sources
 - California Constitution, art. IV (Legislative). https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CONS&article=IV
@@ -139,7 +139,7 @@ It writes state law and passes the budget. ⚠️ **Term limits (varies by when 
 
 **Why this matters civically:** on your ballot you may see Supreme Court and Court of Appeal justices listed for a **yes/no retention vote**, and Superior Court judges in contested races. Knowing which is which means you can vote those lines thoughtfully instead of skipping them.
 
-**Check yourself.** Name California's three court tiers, describe the three steps by which a Supreme Court justice reaches the bench, and explain what a "retention vote" asks you to decide.
+:::reveal Name California's three court tiers, describe the three steps by which a Supreme Court justice reaches the bench, and explain what a "retention vote" asks you to decide. ||| Superior Courts (the trial courts, one in each of the 58 counties), the Courts of Appeal, and the California Supreme Court, which has seven justices. The Governor appoints the justice, the Commission on Judicial Appointments confirms, and then voters cast a yes/no retention vote. Full terms are 12 years.
 
 ## Sources
 - California Constitution, art. VI (Judicial). https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CONS&article=VI
@@ -176,7 +176,7 @@ It writes state law and passes the budget. ⚠️ **Term limits (varies by when 
 
 Some measures **skip the Governor entirely.** A constitutional amendment or a change the Legislature refers to the ballot goes to the **voters**, not the Governor, and a **citizen initiative** (Lesson 1) becomes law by a vote of the people without any legislative or gubernatorial signature at all.
 
-**Check yourself.** Put these in order: committee, floor vote, introduction, the Governor, the other house. Then name the two special powers a California governor has over legislation (hint: one is a supermajority the President also faces; the other is about spending and the President does not have it).
+:::reveal Put these in order: committee, floor vote, introduction, the Governor, the other house. Then name the two special powers a California governor has over legislation (hint: one is a supermajority the President also faces; the other is about spending and the President does not have it). ||| A veto that the Legislature can override only with a two-thirds vote of each house (rare in practice), and a line-item veto that lets the Governor reduce or eliminate individual spending items on an appropriations bill.
 
 ## Sources
 - California State Senate. (n.d.). *The legislative process (citizen's guide)*. Senate.ca.gov. https://www.senate.ca.gov/citizens-guide/legislative-process
@@ -214,7 +214,7 @@ Some measures **skip the Governor entirely.** A constitutional amendment or a ch
 
 The practical payoff: **who provides your service depends on where you live**: it might be your city, your county, a special district, or a combination. California's answer just never includes a township.
 
-**Check yourself.** How many counties does California have, what is the difference between a charter city and a general-law city, and what common local layer (found in some other states) does California NOT have?
+:::reveal How many counties does California have, what is the difference between a charter city and a general-law city, and what common local layer (found in some other states) does California NOT have? ||| Townships. California's local governments run counties, cities, special districts, and school districts, with no township layer. A charter city adopts its own charter (a local constitution approved by its voters) for home rule over municipal affairs, while a general-law city follows the default rules the state Legislature sets in the Government Code.
 
 ## Sources
 - California Constitution, art. XI (Local Government). https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CONS&sectionNum=SEC.+5.&article=XI
@@ -254,7 +254,7 @@ The practical payoff: **who provides your service depends on where you live**: i
 
 ⚠️ **Signature thresholds VARY every cycle: do not memorize a raw number.** The *percentage* is fixed in the constitution, but because it's a percentage of the **last governor's-race turnout**, the actual **raw signature count changes after every gubernatorial election**. Always get the **current** number from the Secretary of State ([sos.ca.gov](https://sos.ca.gov)) rather than trusting a fixed figure.
 
-**Check yourself.** Name three ways California makes registering or voting easier (think DMV, deadline safety net, and how ballots reach you); explain what "top two" means; and explain why California's initiative signature requirement is a *percentage* rather than a fixed number.
+:::reveal Name three ways California makes registering or voting easier (think DMV, deadline safety net, and how ballots reach you); explain what "top two" means; and explain why California's initiative signature requirement is a *percentage* rather than a fixed number. ||| For state and congressional offices, all candidates share one primary ballot regardless of party and the top two vote-getters advance to the general election, even if they are from the same party (Proposition 14, 2010). It is a percentage of the votes cast for Governor at the last gubernatorial election (about 5% for a statute, 8% for a constitutional amendment), so the raw signature count changes after every governor's race.
 
 ## Sources
 - California Secretary of State. (n.d.-d). *Voter registration (online, automatic "Motor Voter," and conditional/same-day registration)*. SOS.ca.gov. https://www.sos.ca.gov/elections/voter-registration
@@ -291,7 +291,7 @@ The practical payoff: **who provides your service depends on where you live**: i
 
 **Why a whole lesson on this?** Because direct democracy is **the** thing that makes California civics different. In many states, "changing the law" means only electing legislators and lobbying them. In California, an organized group of citizens can **write a law and pass it at the ballot box**, **repeal one the Legislature passed**, or **remove an official**, so understanding these tools is essential to taking part here.
 
-**Check yourself.** Match each tool to what it does: which one lets voters PASS a new law, which lets voters BLOCK a law the Legislature passed, and which lets voters REMOVE an official early?
+:::reveal Match each tool to what it does: which one lets voters PASS a new law, which lets voters BLOCK a law the Legislature passed, and which lets voters REMOVE an official early? ||| The initiative lets voters propose and pass a new law; the referendum lets voters block or reject a statute the Legislature already enacted.
 
 ## Sources
 - California Secretary of State. (n.d.-b). *Recalls; ballot measures (initiatives and referenda)*. SOS.ca.gov. https://www.sos.ca.gov/elections/recalls

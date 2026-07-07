@@ -35,7 +35,7 @@ export const STATE_CIVICS_AK_COURSE: AuthoredCourse = {
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Alaska's own government ([akleg.gov](https://akleg.gov), [elections.alaska.gov](https://elections.alaska.gov), [courts.alaska.gov](https://courts.alaska.gov)) is the authoritative source. When something is time-sensitive (like the voting system or the dividend) we say so.
 
-**Check yourself.** What does Alaska call its counties, and what is the "Unorganized Borough"?
+:::reveal What does Alaska call its counties, and what is the "Unorganized Borough"? ||| Alaska uses boroughs. Louisiana is the only other state that avoids 'county' (it uses parishes). A single, huge area covering about half the state that has no borough-level local government, so the state (with cities and census areas) provides the county-type services.
 
 ## Sources
 - Alaska State Legislature. (n.d.). *The Constitution of the State of Alaska (1959); boroughs and the Unorganized Borough*. akleg.gov. https://www.akleg.gov/
@@ -75,7 +75,7 @@ That's it. Unlike states with a big "plural executive" (Washington elects nine o
 
 **Veto and override.** Alaska's Governor has **strong veto powers**, including a **line-item veto** on appropriations. Overrides are demanding: a regular veto needs **two-thirds**, and overriding a veto of **appropriations** requires a **three-quarters** vote, one of the highest override bars in the country.
 
-**Check yourself.** How many statewide executives do Alaskans elect, and how many members are in each chamber of the Legislature?
+:::reveal How many statewide executives do Alaskans elect, and how many members are in each chamber of the Legislature? ||| Only two: the Governor and Lieutenant Governor, who run together on a joint ticket. The Attorney General and department heads are appointed by the Governor.
 
 ## Sources
 - Alaska State Legislature. (n.d.). *The executive and legislative branches; veto and override*. akleg.gov. https://www.akleg.gov/`,
@@ -109,7 +109,7 @@ This differs from every other system you've met: it's **not** Washington's "top-
 
 ⚠️ **Time-sensitive and contested.** Alaska's system is **relatively new and has faced repeal efforts** at the ballot. Its future could change, and the mechanics are easy to misstate. **Confirm the current system and rules at [elections.alaska.gov](https://elections.alaska.gov)** rather than assuming.
 
-**Check yourself.** How many candidates advance from Alaska's open primary, and how are the winners then decided in the general election?
+:::reveal How many candidates advance from Alaska's open primary, and how are the winners then decided in the general election? ||| Every candidate for an office, from every party, appears on one shared primary ballot, and the top four finishers advance to the general election. Alaska adopted it in 2020 and first used it in 2022. Voters rank the (up to four) candidates. If no one has a majority of first choices, the last-place candidate is eliminated and those votes transfer to the next choice, repeating until someone has a majority.
 
 ## Sources
 - Alaska Division of Elections. (n.d.). *Open primary and ranked-choice voting in Alaska*. elections.alaska.gov. https://www.elections.alaska.gov/`,
@@ -141,7 +141,7 @@ This differs from every other system you've met: it's **not** Washington's "top-
 
 **No state income tax, no statewide sales tax.** Because oil revenue and the Permanent Fund do so much of the work, **Alaska levies no state personal income tax and no statewide sales tax**, one of the few states with **neither.** (Local governments may impose **local** sales taxes.) This shapes Alaska politics profoundly: debates over the size of the **dividend** and how much oil money to spend versus save are central civic questions.
 
-**Check yourself.** What is the Permanent Fund Dividend, and what two big taxes does Alaska NOT collect at the state level?
+:::reveal What is the Permanent Fund Dividend, and what two big taxes does Alaska NOT collect at the state level? ||| An annual cash payment to virtually every eligible Alaska resident, paid from the earnings of the Alaska Permanent Fund (the state's invested oil and mineral wealth, created by a 1976 constitutional amendment). The amount changes every year. Alaska has no state personal income tax and no statewide sales tax, though local governments may impose their own local sales taxes.
 
 ## Sources
 - Alaska State Legislature. (n.d.). *The Alaska Permanent Fund (constitutional amendment, 1976)*. akleg.gov. https://www.akleg.gov/

@@ -39,7 +39,7 @@ This is the through-line of Washington civics: **voters are a lawmaking body**, 
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Washington's own government ([leg.wa.gov](https://leg.wa.gov), [sos.wa.gov](https://sos.wa.gov), [courts.wa.gov](https://courts.wa.gov)) is the authoritative source. When a fact is time-sensitive, especially Washington's contested tax structure, we say so.
 
-**Check yourself.** When did Washington become a state, and what is the difference between an "Initiative to the People" and an "Initiative to the Legislature"?
+:::reveal When did Washington become a state, and what is the difference between an "Initiative to the People" and an "Initiative to the Legislature"? ||| The original Constitution of 1889, adopted when Washington became the 42nd state on November 11, 1889. An Initiative to the People goes straight to the ballot; an Initiative to the Legislature goes to lawmakers first, who may enact it, reject it (sending it to voters), or offer an alternative.
 
 ## Sources
 - Washington State Legislature. (n.d.). *Washington State Constitution (1889)*. [leg.wa.gov](https://leg.wa.gov). https://leg.wa.gov/
@@ -67,7 +67,7 @@ Why it matters: executive power in Washington is **divided among many independen
 
 The **Judicial** branch runs from trial courts up to the **Court of Appeals** and the **Washington Supreme Court** (nine justices), covered next. The **Legislative** branch is the Legislature, covered after that.
 
-**Check yourself.** Name three statewide executive officials Washington voters elect besides the Governor.
+:::reveal Name three statewide executive officials Washington voters elect besides the Governor. ||| Nine separate statewide officials, each on their own ballot line, so executive power is divided among many independently elected officials rather than concentrated in the Governor. The Superintendent of Public Instruction, who leads K-12 education, is elected on a nonpartisan basis.
 
 ## Sources
 - Washington Secretary of State. (n.d.). *Statewide elected officials*. [sos.wa.gov](https://sos.wa.gov). https://www.sos.wa.gov/
@@ -102,7 +102,7 @@ The **Judicial** branch runs from trial courts up to the **Court of Appeals** an
 
 **Veto and override.** The Governor may veto bills and, notably, use a **line-item veto** on parts of bills (broad in Washington). An override requires a **two-thirds vote of each chamber.**
 
-**Check yourself.** How many justices sit on the Washington Supreme Court, and how many representatives does each of the 49 districts elect?
+:::reveal How many justices sit on the Washington Supreme Court, and how many representatives does each of the 49 districts elect? ||| Each district elects one senator and two representatives, giving 49 senators (4-year terms) and 98 representatives (2-year terms). The nine justices are elected statewide by voters on a nonpartisan ballot to 6-year terms.
 
 ## Sources
 - Washington Courts. (n.d.). *Washington State court system and judicial elections*. [courts.wa.gov](https://courts.wa.gov). https://www.courts.wa.gov/
@@ -172,7 +172,7 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
 
 ⚠️ **Time-sensitive.** Registration deadlines, drop-box locations, and ballot-return rules are administered by county auditors and can change. Confirm the **current** rules and your ballot status at **[sos.wa.gov](https://sos.wa.gov)** (or your county elections office) before each election.
 
-**Check yourself.** How does a Washington voter receive their ballot, and how does the "top-two" primary decide who advances?
+:::reveal How does a Washington voter receive their ballot, and how does the "top-two" primary decide who advances? ||| Washington is an all-mail state: a ballot is mailed to every registered voter, returned by mail or drop box. In the top-two primary all candidates share one ballot and the two highest vote-getters advance, even if from the same party.
 
 ## Sources
 - Washington Secretary of State. (n.d.). *Vote by mail; the top-two primary*. [sos.wa.gov](https://sos.wa.gov). https://www.sos.wa.gov/`,

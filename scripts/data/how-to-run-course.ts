@@ -282,7 +282,7 @@ This lesson is about **mechanics**, not persuasion tactics for any party or posi
 - **If you lose.** You still must **file final disclosure reports**, **settle debts**, and properly **close the committee**. Leftover campaign funds are subject to strict use rules: they **cannot** be converted to personal use (FEC, n.d.-f).
 - **Either way:** thank your volunteers and donors. Many strong officeholders lost their first race; the list, the relationships, and the experience carry forward.
 
-**Check yourself.** Are election-night results official? And name one duty a candidate still has *after* the election, win or lose.
+:::reveal Are election-night results official? And name one duty a candidate still has *after* the election, win or lose. ||| No. Election-night results are unofficial until the votes are canvassed and certified. Win or lose, a candidate still has to file final campaign-finance disclosure reports and properly wind down the campaign committee.
 
 ## Sources
 - USA.gov. (n.d.-b). *State and local election offices*. https://www.usa.gov/state-election-office

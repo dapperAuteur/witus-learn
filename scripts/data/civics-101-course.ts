@@ -23,7 +23,7 @@ This split is **separation of powers**, reinforced by **checks and balances**: e
 
 Each branch is laid out in the Constitution: Congress (U.S. Const. art. I), the President (U.S. Const. art. II), and the courts (U.S. Const. art. III).
 
-**Check yourself.** Name the branch that makes laws, the one that enforces them, and the one that interprets them.
+:::reveal Name the branch that makes laws, the one that enforces them, and the one that interprets them. ||| The legislative branch (Congress) makes laws, the executive branch (the President) enforces them, and the judicial branch (the courts) interprets them.
 
 ## Sources
 - U.S. Const. arts. I-III. National Archives. https://www.archives.gov/founding-docs/constitution-transcript`,
@@ -39,7 +39,7 @@ Each branch is laid out in the Constitution: Congress (U.S. Const. art. I), the 
 
 Some powers are shared (taxing), some are exclusive. The **10th Amendment** reserves to the states (and the people) powers not given to the federal government (U.S. Const. amend. X). A practical takeaway: **a lot of what affects your daily life is decided at the state and local level**, not in Washington.
 
-**Check yourself.** Which level of government runs your local schools and roads?
+:::reveal Which level of government runs your local schools and roads? ||| Mostly local government (school districts, cities, and counties), with state funding and standards. It is not run by the federal government.
 
 ## Sources
 - U.S. Const. amend. X. Constitution Annotated, Congress.gov. https://constitution.congress.gov/constitution/amendment-10/`,
@@ -157,7 +157,7 @@ Participation is not only voting:
 - **Stay informed** from primary and varied sources, and check claims (see the media-literacy course).
 - **Serve**: on a jury, a board, or by running for local office.
 
-**Check yourself.** What are the first ten amendments collectively called, and name two ways to participate besides voting.
+:::reveal What are the first ten amendments collectively called, and name two ways to participate besides voting. ||| The Bill of Rights. Besides voting you can, for example, contact your representatives, attend public meetings, volunteer for a campaign, serve on a jury, or peacefully protest (any two).
 
 ## Sources
 - U.S. Const. amends. I-X (Bill of Rights). National Archives. https://www.archives.gov/founding-docs/bill-of-rights-transcript

@@ -36,7 +36,7 @@ This is the through-line: Kansas's government was **forged in the national strug
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Kansas's own government ([kslegislature.gov](https://kslegislature.gov), [sos.ks.gov](https://sos.ks.gov), [kscourts.gov](https://kscourts.gov)) is the authoritative source.
 
-**Check yourself.** What was "Bleeding Kansas," and which of Kansas's constitutions is still in force today?
+:::reveal What was "Bleeding Kansas," and which of Kansas's constitutions is still in force today? ||| The violent 1850s struggle over whether Kansas would be a free or slave state, an era that helped spark the Civil War. The free-state Wyandotte Constitution of 1859, under which Kansas entered the Union as a free state in 1861.
 
 ## Sources
 - Kansas Secretary of State. (n.d.). *Bleeding Kansas and the Wyandotte Constitution (1859)*. sos.ks.gov. https://sos.ks.gov/
@@ -73,7 +73,7 @@ Because several officials are elected on their own, Kansas can end up with a **G
 
 **Veto and override.** The Governor may veto bills (and line-item veto appropriations); the Legislature overrides with a **two-thirds vote of each chamber.**
 
-**Check yourself.** Which statewide executive officers do Kansans elect, and how many members are in each legislative chamber?
+:::reveal Which statewide executive officers do Kansans elect, and how many members are in each legislative chamber? ||| The Governor and Lieutenant Governor on a joint ticket, plus separately the Secretary of State, Attorney General, State Treasurer, and Commissioner of Insurance. The House has 125 representatives (2-year terms) and the Senate has 40 senators (4-year terms).
 
 ## Sources
 - Kansas Secretary of State. (n.d.). *Statewide elected officials*. sos.ks.gov. https://sos.ks.gov/
@@ -109,7 +109,7 @@ Because several officials are elected on their own, Kansas can end up with a **G
 
 **No statewide citizen initiative.** ⚠️ Here's a surprise: unlike its plains and western neighbors (Colorado, Nebraska, the Dakotas), **Kansas has NO statewide citizen initiative.** Kansans **cannot** put a statute or amendment on the ballot by petition. **Constitutional amendments** are proposed by the **Legislature** (by a two-thirds vote) and then ratified by the **voters**, so the citizen role is **ratification**, not initiation. (This is why major Kansas ballot questions are ones the **Legislature** chose to refer.)
 
-**Check yourself.** How does Kansas pick its Supreme Court justices, and can Kansas citizens start a law by initiative?
+:::reveal How does Kansas pick its Supreme Court justices, and can Kansas citizens start a law by initiative? ||| By merit selection (the Missouri Plan): a nominating commission sends the Governor a short list, the Governor appoints, and the justice later faces a yes/no retention election. No. Kansas has no statewide citizen initiative; the Legislature proposes amendments by a two-thirds vote and voters only ratify them.
 
 ## Sources
 - Kansas Judicial Branch. (n.d.). *Judicial selection: merit selection and retention; the debate over methods*. kscourts.gov. https://www.kscourts.gov/

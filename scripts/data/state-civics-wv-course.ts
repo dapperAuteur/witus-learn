@@ -36,7 +36,7 @@ West Virginia governs today under its **Constitution of 1872** (its second, repl
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but West Virginia's own government ([wvlegislature.gov](https://wvlegislature.gov), [sos.wv.gov](https://sos.wv.gov), [courtswv.gov](https://courtswv.gov)) is the authoritative source. When something is time-sensitive, like recent changes to its courts, we say so.
 
-**Check yourself.** How was West Virginia created, and what event made its creation possible?
+:::reveal How was West Virginia created, and what event made its creation possible? ||| It is the only U.S. state formed by breaking away from another state: its pro-Union western counties split from Virginia and joined the Union in 1863. The Civil War (Virginia seceded from the Union). West Virginia governs today under its Constitution of 1872.
 
 ## Sources
 - West Virginia Legislature. (n.d.). *West Virginia statehood (1863) and the Constitution of 1872*. wvlegislature.gov. https://www.wvlegislature.gov/
@@ -78,7 +78,7 @@ West Virginia governs today under its **Constitution of 1872** (its second, repl
 
 **Veto and override.** The Governor may veto bills; ⚠️ note a West Virginia quirk: for **most** bills the Legislature can **override a veto with a simple majority** (a weak veto, like Tennessee and Alabama), though **budget and supplementary appropriations** bills require a **two-thirds** override.
 
-**Check yourself.** Who succeeds the Governor in West Virginia (since there's no Lieutenant Governor), and how strong is the Governor's veto on most bills?
+:::reveal Who succeeds the Governor in West Virginia (since there's no Lieutenant Governor), and how strong is the Governor's veto on most bills? ||| The President of the Senate, who carries the Lieutenant Governor title by statute and is first in line to succeed the Governor. 100 delegates and 34 senators. The veto is weak: most bills can be overridden by a simple majority, though budget bills need two-thirds.
 
 ## Sources
 - West Virginia Secretary of State. (n.d.). *Statewide elected officials; succession*. sos.wv.gov. https://sos.wv.gov/
@@ -114,7 +114,7 @@ West Virginia governs today under its **Constitution of 1872** (its second, repl
 
 Why it matters: West Virginia's courts have changed **substantially in the last decade** (nonpartisan elections in 2015, a new intermediate court in 2022), a reminder to check **current** structure at [courtswv.gov](https://courtswv.gov) rather than older descriptions.
 
-**Check yourself.** What changed about West Virginia's judicial elections in 2015, and what new court did it add in 2022?
+:::reveal What changed about West Virginia's judicial elections in 2015, and what new court did it add in 2022? ||| The state switched from partisan to nonpartisan judicial elections, so judges now run without party labels on the ballot. It created an Intermediate Court of Appeals in 2022. Its highest court is the Supreme Court of Appeals of West Virginia (5 justices, 12-year terms).
 
 ## Sources
 - West Virginia Judiciary. (n.d.). *Nonpartisan judicial elections (2015); the Intermediate Court of Appeals (2022); the Supreme Court of Appeals*. courtswv.gov. https://www.courtswv.gov/`,

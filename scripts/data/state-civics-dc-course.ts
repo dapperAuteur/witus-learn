@@ -38,7 +38,7 @@ DC is often noted to have **more residents than some states** (such as Wyoming a
 
 **A note this course keeps returning to:** facts about DC's status and autonomy **change**, and the **statehood** question is active. Everything here is current as of authoring, but DC's own government ([dccouncil.gov](https://dccouncil.gov), [dcboe.gov](https://dcboe.gov)) and the U.S. Constitution are the authoritative sources. When something is time-sensitive, we say so.
 
-**Check yourself.** What is DC (if not a state), and which body holds ultimate authority over it?
+:::reveal What is DC (if not a state), and which body holds ultimate authority over it? ||| Congress. It can review and overturn DC's laws and shape its budget; DC's local self-government exists only because Congress granted it.
 
 ## Sources
 - Council of the District of Columbia. (n.d.). *About DC government; the District as a federal district*. dccouncil.gov. https://dccouncil.gov/
@@ -68,7 +68,7 @@ The Mayor and Council handle the things a **city and a state** would normally do
 
 So DC's government is **real and elected, but operates under a congressional veto** no state faces.
 
-**Check yourself.** What did the Home Rule Act of 1973 create, and what power does Congress keep over DC laws?
+:::reveal What did the Home Rule Act of 1973 create, and what power does Congress keep over DC laws? ||| Limited self-government: an elected Mayor (a 4-year term) and a 13-member Council (a Chairman, four at-large members, and eight ward members). Before 1973, Congress ran DC directly. Every law the Council passes goes to Congress for a review period, and Congress can disapprove it, shape the budget, and even legislate directly for DC, a veto no state faces.
 
 ## Sources
 - Council of the District of Columbia. (n.d.). *The Home Rule Act (1973); the Mayor and Council; congressional review*. dccouncil.gov. https://dccouncil.gov/
@@ -92,7 +92,7 @@ So DC's government is **real and elected, but operates under a congressional vet
 
 **The statehood debate.** ⚠️ **Time-sensitive and active:** many DC residents and officials seek **statehood** (a proposed "State of Washington, Douglass Commonwealth") to gain full voting representation and self-government. **DC voters approved statehood in a 2016 referendum**, and the **U.S. House passed a DC statehood bill** (in 2020 and 2021), but it has **not become law** (it would need the Senate and faces constitutional debate) (Council of the District of Columbia, n.d.). Whether DC becomes a state, or gains representation another way, is an **open, evolving question.** Confirm current status at [dccouncil.gov](https://dccouncil.gov).
 
-**Check yourself.** Why do DC license plates say "Taxation Without Representation," yet DC residents can still vote for President?
+:::reveal Why do DC license plates say "Taxation Without Representation," yet DC residents can still vote for President? ||| No. DC has only a non-voting House Delegate and no senators, yet its residents pay federal taxes, which is the origin of the slogan.
 
 ## Sources
 - Council of the District of Columbia. (n.d.). *DC representation, the Delegate, and statehood efforts*. dccouncil.gov. https://dccouncil.gov/
@@ -114,7 +114,7 @@ So DC's government is **real and elected, but operates under a congressional vet
 
 **Courts appointed by the President.** ⚠️ Here's a genuinely unusual feature: DC's **local courts are not staffed by locally elected or locally appointed judges.** DC has its own trial court (the **Superior Court**) and the **District of Columbia Court of Appeals** (its highest local court), but their **judges are nominated by the U.S. PRESIDENT and confirmed by the U.S. SENATE**, from a list prepared by a **DC Judicial Nomination Commission** (District of Columbia Courts, n.d.). So even DC's **local** judiciary runs through the **federal** appointment process, another way DC's status as a federal district shapes its government differently from any state.
 
-**Check yourself.** What do Advisory Neighborhood Commissions do, and who appoints DC's local judges?
+:::reveal What do Advisory Neighborhood Commissions do, and who appoints DC's local judges? ||| Unpaid, elected hyperlocal bodies that advise the city on very local matters like zoning, permits, and traffic; DC agencies must give their positions 'great weight.' The U.S. President nominates them and the U.S. Senate confirms them, from a list prepared by the DC Judicial Nomination Commission, so even DC's local judiciary runs through the federal process.
 
 ## Sources
 - Council of the District of Columbia. (n.d.). *Advisory Neighborhood Commissions (ANCs)*. dccouncil.gov. https://dccouncil.gov/

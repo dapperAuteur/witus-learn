@@ -36,7 +36,7 @@ Why it leads the course: this enormous, nearly unpaid House shapes New Hampshire
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but New Hampshire's own government (gencourt.state.nh.us, sos.nh.gov, courts.nh.gov) is the authoritative source. When something is time-sensitive, like the phase-out of a state tax, we say so.
 
-**Check yourself.** About how many members does the New Hampshire House have, and how much are legislators paid per year?
+:::reveal About how many members does the New Hampshire House have, and how much are legislators paid per year? ||| About 400 members, and legislators are paid just $100 per year (plus mileage). That makes it a genuine volunteer citizen legislature. 24 senators. New Hampshire pairs a giant, grassroots House with a compact Senate.
 
 ## Sources
 - New Hampshire General Court. (n.d.). *About the General Court: the House, the Senate, and legislator pay*. gencourt.state.nh.us. https://gencourt.state.nh.us/
@@ -69,7 +69,7 @@ Why it leads the course: this enormous, nearly unpaid House shapes New Hampshire
 - **Appointments** (including judges), **state contracts above a threshold**, **pardons**, and large expenditures.
 The Governor **cannot act alone** on these: the elected Council must agree. This makes New Hampshire's governorship comparatively **checked**: a five-member elected body sits between the Governor and much of the state's business. It's one of only a couple of states with such a council.
 
-**Check yourself.** How long is New Hampshire's gubernatorial term, and what must the elected Executive Council approve?
+:::reveal How long is New Hampshire's gubernatorial term, and what must the elected Executive Council approve? ||| The Constitution dates to 1784 (the second-oldest still in use, after Massachusetts's 1780), and the Governor serves a 2-year term with no term limit. New Hampshire has no Lieutenant Governor. An elected 5-member body (one member per district) that must approve many of the Governor's most important actions: appointments (including judges), large state contracts, and pardons.
 
 ## Sources
 - New Hampshire General Court. (n.d.). *Constitution of New Hampshire (1784); the Governor and Executive Council*. gencourt.state.nh.us. https://gencourt.state.nh.us/
@@ -104,7 +104,7 @@ The Governor **cannot act alone** on these: the elected Council must agree. This
 
 New Hampshire has **no statewide citizen initiative** for general laws. Lawmaking runs through the General Court and, locally, through **town meeting** (next).
 
-**Check yourself.** What two big taxes does New Hampshire NOT levy, and why should you verify its interest-and-dividends tax status?
+:::reveal What two big taxes does New Hampshire NOT levy, and why should you verify its interest-and-dividends tax status? ||| New Hampshire levies neither a broad-based state income tax on wages nor a general state sales tax. It relies mainly on local property taxes and business taxes. The interest-and-dividends tax has been phased out, so confirm the current tax landscape at the state's own sites. New Hampshire has no statewide citizen initiative for general laws; lawmaking runs through the General Court.
 
 ## Sources
 - New Hampshire General Court. (n.d.). *State taxes; how a bill becomes law*. gencourt.state.nh.us. https://gencourt.state.nh.us/`,
@@ -137,7 +137,7 @@ New Hampshire has **no statewide citizen initiative** for general laws. Lawmakin
 
 **The town meeting** is a defining New Hampshire (and New England) institution, the same participatory spirit as the 400-member House, applied to your own town's budget.
 
-**Check yourself.** How are New Hampshire judges chosen, and what can any voter do at an open town meeting?
+:::reveal How are New Hampshire judges chosen, and what can any voter do at an open town meeting? ||| The Governor nominates a judge, the Executive Council confirms, and judges then serve until the mandatory retirement age of 70. Judges are not elected, and the Supreme Court has 5 justices. At an open town meeting any registered voter can attend, debate, and vote on the town budget and warrant articles. New Hampshire has 10 counties, but the town or city is the center of daily local government.
 
 ## Sources
 - New Hampshire Judicial Branch. (n.d.). *The New Hampshire courts; judicial nomination and Executive Council confirmation*. courts.nh.gov. https://www.courts.nh.gov/

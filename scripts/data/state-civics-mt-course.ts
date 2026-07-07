@@ -36,7 +36,7 @@ Montana became the **41st state on November 8, 1889**, but it's the **1972 rewri
 
 **A note this course keeps returning to:** state facts **vary and change.** Everything here is current as of authoring, but Montana's own government ([leg.mt.gov](https://leg.mt.gov), [sosmt.gov](https://sosmt.gov), [courts.mt.gov](https://courts.mt.gov)) is the authoritative source.
 
-**Check yourself.** Name two distinctive rights guaranteed by Montana's 1972 constitution.
+:::reveal Name two distinctive rights guaranteed by Montana's 1972 constitution. ||| A right to a clean and healthful environment, and strong individual privacy rights (plus an express right to know and right of participation in government). An elected constitutional convention of ordinary citizens (not sitting politicians) rewrote the old 1889 constitution into one of the most rights-focused state constitutions in the country.
 
 ## Sources
 - Montana Legislature. (n.d.). *The 1972 Montana Constitution: environment, privacy, and the right to know*. leg.mt.gov. https://leg.mt.gov/
@@ -58,7 +58,7 @@ Why it matters: this design keeps the Legislature **close to ordinary life** and
 
 **Veto and override.** The Governor may veto bills; the Legislature overrides with a **two-thirds vote**, and because sessions are biennial, Montana even allows a **mail poll of legislators** to consider overriding vetoes issued after the session ends.
 
-**Check yourself.** How often and for how long does Montana's Legislature meet, and what does that say about who serves in it?
+:::reveal How often and for how long does Montana's Legislature meet, and what does that say about who serves in it? ||| Only every other year, in odd-numbered years, limited to 90 legislative days, which makes it a true part-time citizen legislature.
 
 ## Sources
 - Montana Legislature. (n.d.). *The biennial 90-day session; term limits; veto override*. leg.mt.gov. https://leg.mt.gov/`,
@@ -88,7 +88,7 @@ Statewide officers serve **4-year terms** with **term limits.**
 
 **Veto and override** are covered in Lesson 2.
 
-**Check yourself.** Name two statewide executive officers Montanans elect besides the Governor, and say how Montana chooses its Supreme Court justices.
+:::reveal Name two statewide executive officers Montanans elect besides the Governor, and say how Montana chooses its Supreme Court justices. ||| Any two of: the Secretary of State, the Attorney General, the State Auditor (also Commissioner of Securities and Insurance), and the Superintendent of Public Instruction. By nonpartisan election to 8-year terms; the Governor fills mid-term vacancies by appointment, and that appointee must then stand for election.
 
 ## Sources
 - Montana Secretary of State. (n.d.). *Statewide elected officials*. sosmt.gov. https://sosmt.gov/
@@ -123,7 +123,7 @@ Statewide officers serve **4-year terms** with **term limits.**
 
 The takeaway: Montana combines a **short, part-time Legislature** with **strong citizen lawmaking** and **strong open-government rights**, so the public can both **watch** and **participate in** the process.
 
-**Check yourself.** What can Montana citizens put on the ballot by initiative, and what open-government rights shape how laws are made?
+:::reveal What can Montana citizens put on the ballot by initiative, and what open-government rights shape how laws are made? ||| A statute or a constitutional amendment, placed on the ballot by gathering enough signatures (as Montanans did for term limits).
 
 ## Sources
 - Montana Secretary of State. (n.d.). *Initiative and referendum in Montana*. sosmt.gov. https://sosmt.gov/

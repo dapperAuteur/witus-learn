@@ -55,7 +55,7 @@ A state constitution is also **easier to amend than the U.S. Constitution**, and
 
 **A note this course keeps returning to:** state facts **vary and change**. Thresholds, ID lists, and rules described here are current as of authoring, but the authoritative source is always Ohio's own government (the Ohio Constitution/Revised Code and the offices below), not a textbook. When something is time-sensitive, we say so.
 
-**Check yourself.** In what year did Ohio adopt its current constitution, what pivotal power did the 1912 amendments give directly to the people, and what majority does a citizen-initiated constitutional amendment still need to pass?
+:::reveal In what year did Ohio adopt its current constitution, what pivotal power did the 1912 amendments give directly to the people, and what majority does a citizen-initiated constitutional amendment still need to pass? ||| 1851. That 1851 document was then heavily amended in 1912. The initiative and referendum (direct democracy). A citizen-initiated amendment still passes on a simple majority (50% + 1).
 
 ## Sources
 - Ohio Secretary of State. (n.d.-a). *Ohio history and the Ohio Constitution.* Ohiosos.gov. https://www.ohiosos.gov/
@@ -88,7 +88,7 @@ Because the Attorney General, Secretary of State, Auditor, and Treasurer answer 
 
 **Ohio's veto-override number to remember: three-fifths.** One number here is a classic Ohio "gotcha," so plant it now: to override the Governor's veto, each chamber needs a **three-fifths (3/5)** vote, **not** the two-thirds people assume from Congress. We work through it fully in the bill-to-law lesson.
 
-**Check yourself.** Name Ohio's three branches, give the size and term length of each legislative chamber, name the six separately-elected statewide executive officers, and say which two of them must run together on a joint ticket.
+:::reveal Name Ohio's three branches, give the size and term length of each legislative chamber, name the six separately-elected statewide executive officers, and say which two of them must run together on a joint ticket. ||| The House has 99 members (2-year terms) and the Senate has 33 members (4-year terms). The Governor and the Lieutenant Governor. The Attorney General, Secretary of State, Auditor, and Treasurer are each elected separately.
 
 ## Sources
 - Ohio General Assembly. (n.d.). *About the Ohio General Assembly / the legislative process.* Legislature.ohio.gov. https://www.legislature.ohio.gov/publications/the-legislative-process
@@ -115,7 +115,7 @@ Because the Attorney General, Secretary of State, Auditor, and Treasurer answer 
 
 **Why this matters civically:** because Ohioans *elect* their judges (and now see party labels for the top courts), those judicial races are real, contested decisions on your ballot, not lines to skip. Knowing the current format means you can vote those races deliberately.
 
-**Check yourself.** How does Ohio choose its Supreme Court justices: appointment or election? Describe Ohio's old "partisan primary / nonpartisan general" system and the 2021 change (SB 80) that put party labels on the general-election ballot for the top courts.
+:::reveal How does Ohio choose its Supreme Court justices: appointment or election? Describe Ohio's old "partisan primary / nonpartisan general" system and the 2021 change (SB 80) that put party labels on the general-election ballot for the top courts. ||| By election. Ohioans elect them in popular elections (six-year terms). It added party labels to the general-election ballot for Supreme Court and Court of Appeals races, starting with the 2022 elections.
 
 ## Sources
 - Supreme Court of Ohio. (n.d.). *About the Court / judicial elections.* Supremecourt.ohio.gov. https://www.supremecourt.ohio.gov/
@@ -141,7 +141,7 @@ Because the Attorney General, Secretary of State, Auditor, and Treasurer answer 
 5. **The Governor.** Once both chambers pass the same bill (now an "act"), it goes to the **Governor**, who can **sign** it, **let it become law without a signature**, or **veto** it. Ohio's Governor also has a **line-item veto** on appropriations bills.
 6. **The Ohio twist: a THREE-FIFTHS override.** If the Governor vetoes, the General Assembly can override, but the number is the Ohio gotcha: **three-fifths (3/5) of the members elected to EACH chamber**, which works out to **60 of 99 in the House and 20 of 33 in the Senate** (Constitution of Ohio, art. II, §16). That is **not** the **two-thirds** Congress needs to override a presidential veto. Ohio's 3/5 bar is **lower** than the federal two-thirds, a distinctive, easy-to-miss detail.
 
-**Check yourself.** Put these in order: committee (second consideration), Governor's signature or veto, introduction (first consideration), floor vote (third consideration), the other chamber. Then state the exact fraction (and the raw vote counts) Ohio needs to override a veto, and say how that differs from Congress.
+:::reveal Put these in order: committee (second consideration), Governor's signature or veto, introduction (first consideration), floor vote (third consideration), the other chamber. Then state the exact fraction (and the raw vote counts) Ohio needs to override a veto, and say how that differs from Congress. ||| Three-fifths (3/5) of each chamber: 60 of 99 in the House and 20 of 33 in the Senate. That is lower than the federal two-thirds.
 
 ## Sources
 - Ohio Senate. (n.d.). *How a bill becomes a law.* Ohiosenate.gov. https://ohiosenate.gov/about/how-a-bill-becomes-a-law
@@ -172,7 +172,7 @@ Because the Attorney General, Secretary of State, Auditor, and Treasurer answer 
 
 The practical payoff is the same as everywhere: **who provides your service depends on where you live**. It might be your city, your village, your county, your township, or a special district. Ohio's strong municipal home rule just means your **city or village** can set more of its own rules than in many states.
 
-**Check yourself.** How many counties does Ohio have, what is "home rule" and which 1912 constitutional article grants it to cities and villages, and what does an Ohio township do for people who live in unincorporated areas?
+:::reveal How many counties does Ohio have, what is "home rule" and which 1912 constitutional article grants it to cities and villages, and what does an Ohio township do for people who live in unincorporated areas? ||| 88 counties. Home rule gives cities and villages broad powers of local self-government (their own charters and ordinances), as long as they do not conflict with general state law. Run by elected trustees, a township provides services like roads, fire, and zoning for people in the unincorporated parts of a county, outside any city or village.
 
 ## Sources
 - Constitution of the State of Ohio, art. XVIII (Municipal Corporations, home rule). Ohio Laws. https://codes.ohio.gov/ohio-constitution/article-18
@@ -204,7 +204,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
 
 ⚠️ **The 2023 Issue 1 gotcha: the simple-majority bar SURVIVED.** In an **August 8, 2023** special election, Ohioans voted on **Issue 1**, which would have **raised** the bar to pass a citizen constitutional amendment from a simple majority to **60%** (and made petitioning harder). **It FAILED, about 57% to 43%** (Ballotpedia, n.d.-c). So as of authoring, a citizen constitutional amendment in Ohio **still passes on a simple majority**. The 60% supermajority was **rejected by the voters**. If you see older material claiming Ohio requires (or is about to require) 60%, it's either predicting that failed measure or is out of date; confirm the current rule at ohiosos.gov.
 
-**Check yourself.** Name Ohio's in-person ID requirement and the 2023 law that created it; say whether Ohio has no-excuse early/absentee voting; state the signature threshold and passing majority for a citizen constitutional amendment; and explain what 2023's Issue 1 tried to do and how it turned out.
+:::reveal Name Ohio's in-person ID requirement and the 2023 law that created it; say whether Ohio has no-excuse early/absentee voting; state the signature threshold and passing majority for a citizen constitutional amendment; and explain what 2023's Issue 1 tried to do and how it turned out. ||| An unexpired photo ID. It came from House Bill 458 (HB 458), effective April 2023. It would have raised the bar to pass a citizen constitutional amendment from a simple majority to 60%. Voters rejected it (about 57% to 43%), so the simple majority still stands.
 
 ## Sources
 - Ohio Secretary of State. (n.d.-b). *Putting an issue on the ballot in Ohio (citizen-initiated amendments, statutes, referendum).* Ohiosos.gov. https://www.ohiosos.gov/legislation-and-ballot-issues/putting-an-issue-on-the-ballot/
@@ -231,7 +231,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
 
 **Why a whole lesson on recent changes?** Because this is exactly where learners get tripped up, and it teaches the durable skill: **verify the office's, ballot's, or threshold's CURRENT rule against Ohio's own site**, rather than memorizing whatever a possibly-outdated source says. Ohio isn't unusual in changing its rules (every state does), so the habit matters more than today's specific answer.
 
-**Check yourself.** For each of the four items above, state what the current Ohio rule is and why an older source might state it wrong.
+:::reveal For each of the four items above, state what the current Ohio rule is and why an older source might state it wrong. ||| Treat Ohio's own current official site as the tiebreaker. Verify the office's, ballot's, or threshold's current rule there instead of trusting a possibly outdated source.
 
 ## Sources
 - Ballotpedia. (n.d.-b). *Judicial selection in Ohio (Senate Bill 80, 2021).* https://ballotpedia.org/Judicial_selection_in_Ohio

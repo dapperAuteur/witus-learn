@@ -289,7 +289,7 @@ Several later amendments dramatically expanded liberty and the vote: the **Recon
 
 Together these show the design at work: a fixed framework, changed only by broad national consensus, gradually widening who is included as "We the People."
 
-**Check yourself.** How many states must ratify an amendment, and which amendment abolished slavery?
+:::reveal How many states must ratify an amendment, and which amendment abolished slavery? ||| Three-quarters of the states (38 of 50) must ratify an amendment. The 13th Amendment abolished slavery.
 
 ## Sources
 - National Archives. (n.d.-b). *The Constitution of the United States: A transcription*. https://www.archives.gov/founding-docs/constitution-transcript
