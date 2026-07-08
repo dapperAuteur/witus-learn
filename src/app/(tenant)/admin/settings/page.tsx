@@ -19,6 +19,7 @@ export default async function SettingsPage() {
     gamification: tenant.flags.gamification ?? "light",
     aiTutor: tenant.flags.aiTutor !== false,
     comingSoon: tenant.flags.comingSoon ?? false,
+    commodityMap: tenant.flags.commodityMap === true,
     requiresAgeGate: tenant.requiresAgeGate,
   };
 
