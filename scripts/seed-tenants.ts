@@ -124,7 +124,7 @@ const TENANTS: SeedTenant[] = [
   {
     slug: "hip-hop-axiom",
     name: "Hip-Hop Axiom",
-    tagline: "The principles of hip-hop as a framework for learning and life.",
+    tagline: "The principles of Hip-Hop as a framework for learning and life.",
     requiresAgeGate: false,
     theme: {
       name: "Hip-Hop Axiom",
