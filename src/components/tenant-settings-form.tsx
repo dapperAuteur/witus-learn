@@ -10,6 +10,7 @@ export interface TenantSettings {
   gamification: "off" | "light" | "full";
   aiTutor: boolean;
   comingSoon: boolean;
+  commodityMap: boolean;
   requiresAgeGate: boolean;
 }
 
@@ -90,6 +91,7 @@ export function TenantSettingsForm({ initial }: { initial: TenantSettings }) {
           <Toggle label="AI tutor" checked={s.aiTutor} onChange={(v) => set("aiTutor", v)} hint="Off disables the tutor + sentence coach for this brand." />
           <Toggle label="Age gate" checked={s.requiresAgeGate} onChange={(v) => set("requiresAgeGate", v)} hint="Require an age check before entering." />
           <Toggle label="Coming soon" checked={s.comingSoon} onChange={(v) => set("comingSoon", v)} hint="Show a launch holding page instead of the catalog." />
+          <Toggle label="Commodity Map" checked={s.commodityMap} onChange={(v) => set("commodityMap", v)} hint="Show the interactive origins map at /explore and feature it on the home page (needs map data — pnpm seed:map)." />
         </div>
       </section>
 
