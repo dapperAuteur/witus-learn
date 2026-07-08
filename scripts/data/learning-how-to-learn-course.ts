@@ -34,7 +34,7 @@ A large review of study techniques reached the same verdict: rereading and highl
 
 **Mindset for this course:** study time is best spent **getting information out of your head**, not just putting it in. Every technique ahead is a way to do that.
 
-**Check yourself.** Which of the three steps (encoding, storage, retrieval) does rereading mostly exercise, and which one do tests actually measure?
+:::reveal Which of the three steps (encoding, storage, retrieval) does rereading mostly exercise, and which one do tests actually measure? ||| Encoding (getting information in), storage (holding it over time), and retrieval (getting it back out). A test measures retrieval.
 
 ## Sources
 - Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. *Psychological Science, 17*(3), 249-255. https://doi.org/10.1111/j.1467-9280.2006.01693.x
@@ -63,7 +63,7 @@ The practical point: **hard problems often get solved by switching between the t
 
 This connects directly to two later lessons: **spacing** your study (so diffuse mode and consolidation can act between sessions) and **sleep** (the deepest form of diffuse-mode processing). Oakley and Sejnowski built their widely taken course *Learning How to Learn* around exactly this idea: pairing the two modes, and using short bursts of focus rather than marathon sessions (Oakley & Sejnowski, 2018).
 
-**Check yourself.** You've been stuck on the same problem for 30 minutes. Based on the two-modes idea, what should you do?
+:::reveal You've been stuck on the same problem for 30 minutes. Based on the two-modes idea, what should you do? ||| Step away and let diffuse mode work, then come back. Cramming keeps you in focused mode with no gap for diffuse mode or consolidation to act.
 
 ## Sources
 - Oakley, B., & Sejnowski, T. (2018). *Learning how to learn: How to succeed in school without spending all your time studying; a guide for kids and teens.* TarcherPerigee.`,
@@ -271,7 +271,7 @@ The ingredients of deliberate practice:
 
 For studying, this means: **don't practice what you already know.** Find your error-prone spots, drill those specifically, check answers immediately, and keep nudging the difficulty up. Note how naturally this pairs with retrieval practice (testing finds your weak spots) and interleaving (it keeps you at the edge).
 
-**Check yourself.** What two features turn ordinary repetition into deliberate practice?
+:::reveal What two features turn ordinary repetition into deliberate practice? ||| Aiming at a specific target just beyond your reach, with full concentration and immediate feedback, then repeating with refinement (Ericsson et al., 1993).
 
 ## Sources
 - Ericsson, K. A., Krampe, R. Th., & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. *Psychological Review, 100*(3), 363-406. https://doi.org/10.1037/0033-295X.100.3.363`,
@@ -308,7 +308,7 @@ Why it works, in terms of this course:
 - **The breaks feed diffuse mode and prevent the burnout** of marathon sessions, and they fit naturally with spacing rather than cramming.
 - **It targets the *process*, not the *outcome*.** You promise yourself effort (25 focused minutes), not a result (a finished essay). Outcomes cause anxiety; process is doable.
 
-**Check yourself.** Procrastination is often about avoiding a *feeling*, not avoiding *work*. How does committing to 25 minutes of effort (rather than to finishing) defuse that feeling?
+:::reveal Procrastination is often about avoiding a *feeling*, not avoiding *work*. How does committing to 25 minutes of effort (rather than to finishing) defuse that feeling? ||| Procrastination avoids a feeling, not the work. Promising effort (a 25 minute focused block) rather than an outcome lowers the cost of starting, which is the hardest part.
 
 ## Sources
 - Cirillo, F. (2018). *The Pomodoro Technique: The acclaimed time-management system that has transformed how we work.* Currency.`,
