@@ -5,7 +5,9 @@ import { getSession } from "@/lib/session";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { listLiveForViewer } from "@/db/queries/live";
 import { getStreamSettings } from "@/db/queries/stream-settings";
+import { isTenantAdmin } from "@/lib/api";
 import { LivePlayer } from "@/components/live-player";
+import { LiveChat } from "@/components/live-chat";
 
 export async function generateMetadata(): Promise<Metadata> {
   const sdb = await getScopedDb();
@@ -18,6 +20,7 @@ export default async function LivePage() {
   const sdb = await getScopedDb();
   const session = await getSession();
   const sessions = await listLiveForViewer(sdb.tenantId);
+  const canModerate = session ? await isTenantAdmin(session, sdb.tenantId) : false;
 
   // Visibility gate per session.
   const visible = [];
@@ -67,6 +70,9 @@ export default async function LivePage() {
           </div>
         </section>
       ) : null}
+
+      {/* Live class chat — a per-school room so students can interact with the instructor in real time. */}
+      <LiveChat signedIn={Boolean(session)} canModerate={canModerate} />
 
       {upcoming.length > 0 ? (
         <section className="mt-8">

@@ -12,3 +12,4 @@ export * from "./connect";
 export * from "./map";
 export * from "./field-log";
 export * from "./rag";
+export * from "./live-chat";
