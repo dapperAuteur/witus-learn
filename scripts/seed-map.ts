@@ -245,6 +245,69 @@ async function main() {
     console.log(`  + ${beltName}`);
   }
 
+  // Shared schools (learn-witus, elementary-mba): give them BVC's Season-1 Growing Belts + a home base
+  // pin (Indianapolis), so their /explore matches BVC's Season 1 on BOTH map tabs. Idempotent.
+  const S1_NAMES = new Set(S1_SHARED.map((c) => c.name));
+  for (const shareSlug of ["learn-witus", "elementary-mba"]) {
+    const st = await db.select({ id: schema.tenants.id }).from(schema.tenants).where(eq(schema.tenants.slug, shareSlug)).limit(1);
+    const shareTenant = st[0]?.id;
+    if (!shareTenant) continue;
+
+    // Home base pin (Indianapolis).
+    const homeExists = await db
+      .select({ id: schema.mapCommodities.id })
+      .from(schema.mapCommodities)
+      .where(and(eq(schema.mapCommodities.tenantId, shareTenant), eq(schema.mapCommodities.name, "Home Base")))
+      .limit(1);
+    if (!homeExists[0]) {
+      await db.insert(schema.mapCommodities).values({
+        tenantId: shareTenant,
+        seasonNumber: 1,
+        name: "Home Base",
+        geo: "Indianapolis, Indiana",
+        lat: 39.8,
+        lon: -86.2,
+        color: SEASON_COLOR.home,
+        isHome: true,
+        summary: "WitUS home base — where the story is told.",
+        sortOrder: 99,
+      });
+    }
+
+    // Season-1 growing belts for the shared school (linked to its own commodity rows).
+    const shareCommodities = await db
+      .select({ id: schema.mapCommodities.id, name: schema.mapCommodities.name })
+      .from(schema.mapCommodities)
+      .where(eq(schema.mapCommodities.tenantId, shareTenant));
+    const shareByName = new Map(shareCommodities.map((c) => [c.name, c.id]));
+    for (let i = 0; i < BELTS.length; i++) {
+      const b = BELTS[i];
+      if (!S1_NAMES.has(b.commodity)) continue;
+      const cid = shareByName.get(b.commodity);
+      if (!cid) continue;
+      const beltName = `${b.commodity} belt`;
+      const exists = await db
+        .select({ id: schema.mapBelts.id })
+        .from(schema.mapBelts)
+        .where(and(eq(schema.mapBelts.tenantId, shareTenant), eq(schema.mapBelts.name, beltName)))
+        .limit(1);
+      if (exists[0]) continue;
+      await db.insert(schema.mapBelts).values({
+        tenantId: shareTenant,
+        commodityId: cid,
+        name: beltName,
+        seasonNumber: 1,
+        color: beltColorByName.get(b.commodity) ?? "#888888",
+        latMin: b.latMin,
+        latMax: b.latMax,
+        productionCountryCodes: b.codes,
+        description: b.description,
+        sortOrder: i,
+      });
+    }
+    console.log(`  shared map → ${shareSlug}: home pin + S1 belts`);
+  }
+
   await pool.end();
   console.log("Done.");
 }
