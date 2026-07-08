@@ -24,6 +24,15 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   manages a **roster** at \`/cohorts/[id]\` showing **● here** for anyone currently present on
   \`/live\`. Students accept at \`/join/[token]\` and land on \`/live\` enrolled. Tenant-scoped tables
   \`cohorts\`/\`cohort_members\`/\`cohort_invites\` (migration 0029).
+- 🔧 **Family** (\`feat/cohorts-family\`) — a read-only parent view (Model A of the hybrid: kids keep
+  their own accounts). From a cohort roster, a teacher **invites a parent** by email per student
+  (\`/api/cohorts/[id]/guardian-invite\`); the parent accepts at \`/family/accept/[token]\` and sees, at
+  **/family**, read-only **course progress**, **grades** (recall + quiz), **credentials**, and
+  **live-class attendance** for **their linked child(ren) only** — gated by \`isGuardianOf\` on every
+  per-child read. Attendance is derived for free from the \`/live\` presence heartbeat (a cohort member
+  seen present on a day is marked attended that day — no separate check-in flow). Tenant-scoped tables
+  \`guardians\`/\`guardian_invites\`/\`cohort_attendance\` (migration 0030). Model B (parent-managed
+  sub-profiles for kids too young for their own account) is a future follow-up, not built here.
 - 🔧 **Recording batch** (\`feat/change-course-instructor\`) — the in-app audio recorder is now
   embedded **inside** the teleprompter overlay (with a lesson picker), so you can read the
   auto-scrolling script and record at the same time (the overlay used to hide the record buttons).

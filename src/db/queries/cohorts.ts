@@ -107,6 +107,16 @@ export async function listMembers(tenantId: string, cohortId: string): Promise<C
   }));
 }
 
+/** Cohort ids this user is a member of, in this tenant. Used to piggyback live-presence
+ *  heartbeats onto attendance records (src/app/api/live/presence/route.ts). */
+export async function listCohortIdsForMember(tenantId: string, userId: string): Promise<string[]> {
+  const rows = await db
+    .select({ cohortId: cohortMembers.cohortId })
+    .from(cohortMembers)
+    .where(and(eq(cohortMembers.tenantId, tenantId), eq(cohortMembers.userId, userId)));
+  return rows.map((r) => r.cohortId);
+}
+
 export async function removeMember(tenantId: string, cohortId: string, userId: string): Promise<void> {
   await db
     .delete(cohortMembers)
