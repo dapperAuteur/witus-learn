@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { requireTenant } from "@/lib/tenant";
-import { requireInstructor } from "@/lib/session";
+import { requireUser } from "@/lib/session";
 import { listCohorts } from "@/db/queries/cohorts";
 import { CreateCohortForm } from "@/components/create-cohort-form";
 
 export const metadata: Metadata = { title: "Cohorts" };
 
-// Cohorts: an instructor's private classes (home-school #1 use case — a parent asked
-// to have BVC teach her child + classmates). An instructor creates a cohort, invites
-// students by email, and sees a live "who's here" roster on each cohort's page.
+// Cohorts: any signed-in user's private classes (home-school #1 use case — a parent asked
+// to have BVC teach her child + classmates). A user creates a cohort, invites students by
+// email, and sees a live "who's here" roster on each cohort's page. Not admin-only — any
+// signed-in teacher/parent-teacher can run their own cohorts.
 export default async function CohortsPage() {
   const tenant = await requireTenant();
-  const session = await requireInstructor(tenant.id);
+  const session = await requireUser();
 
   const cohorts = await listCohorts(tenant.id, session.user.id);
 
@@ -34,7 +35,7 @@ export default async function CohortsPage() {
       <ul className="mt-8 divide-y divide-neutral-200 dark:divide-neutral-800">
         {cohorts.map((c) => (
           <li key={c.id} className="py-3">
-            <Link href={`/admin/cohorts/${c.id}`} className="font-medium hover:underline">
+            <Link href={`/cohorts/${c.id}`} className="font-medium hover:underline">
               {c.name}
             </Link>
             <p className="text-sm text-neutral-500">

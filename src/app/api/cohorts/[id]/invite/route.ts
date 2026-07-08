@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { apiContext, errorJson, isTenantInstructor, json } from "@/lib/api";
+import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
 import { createInvite, getCohort } from "@/db/queries/cohorts";
 import { sendCohortInviteEmail } from "@/lib/emails";
 import { getSiteUrl } from "@/lib/site-url";
@@ -8,16 +8,21 @@ type Params = { params: Promise<{ id: string }> };
 
 const Body = z.object({ email: z.string().email() });
 
-// POST /api/admin/cohorts/[id]/invite — email a student an invite link. Always
-// returns the invite URL (so the instructor can copy/share it) even if the email
-// itself fails to send — the invite record already exists either way.
+// POST /api/cohorts/[id]/invite — email a student an invite link. Gated on ownership
+// (the cohort's own creator) or a tenant admin — not just "any instructor" — so one
+// user can't manage another's cohort. Always returns the invite URL (so the owner can
+// copy/share it) even if the email itself fails to send — the invite record already
+// exists either way.
 export async function POST(req: Request, { params }: Params) {
   const { id } = await params;
   const { sdb, session } = await apiContext();
-  if (!(await isTenantInstructor(session, sdb.tenantId))) return errorJson("Forbidden", 403);
+  if (!session) return errorJson("Please sign in first.", 401);
 
   const cohort = await getCohort(sdb.tenantId, id);
   if (!cohort) return errorJson("Not found", 404);
+  if (cohort.ownerId !== session.user.id && !(await isTenantAdmin(session, sdb.tenantId))) {
+    return errorJson("Forbidden", 403);
+  }
 
   const parsed = Body.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return errorJson("Please enter a valid email address.", 400);

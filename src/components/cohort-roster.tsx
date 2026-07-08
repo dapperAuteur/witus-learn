@@ -45,7 +45,7 @@ export function CohortRoster({ cohortId, members }: { cohortId: string; members:
     setBusy(true);
     setErr(null);
     setInvite(null);
-    const res = await fetch(`/api/admin/cohorts/${cohortId}/invite`, {
+    const res = await fetch(`/api/cohorts/${cohortId}/invite`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ email }),
@@ -62,7 +62,7 @@ export function CohortRoster({ cohortId, members }: { cohortId: string; members:
 
   async function remove(userId: string) {
     if (!confirm("Remove this student from the class?")) return;
-    await fetch(`/api/admin/cohorts/${cohortId}/members/${userId}`, { method: "DELETE" }).catch(() => {});
+    await fetch(`/api/cohorts/${cohortId}/members/${userId}`, { method: "DELETE" }).catch(() => {});
     router.refresh();
   }
 

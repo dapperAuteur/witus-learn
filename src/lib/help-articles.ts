@@ -174,8 +174,8 @@ sessions for the school.`,
     keywords: ["cohort", "class", "roster", "invite", "home school", "homeschool", "students", "who's here", "presence"],
     body: `# Cohorts
 
-**Admin → Cohorts** lets you run a private class — the home-school use case (a parent asks you to
-teach their child + classmates live).
+**/cohorts** lets any signed-in user — not just brand admins — run a private class: the
+home-school use case (a parent asks you to teach their child + classmates live).
 
 1. **Create a class** — give it a name (e.g. "Tuesday homeschool group").
 2. **Invite students by email** from the class's roster page. Each invite is a one-time link; if
@@ -184,7 +184,7 @@ teach their child + classmates live).
 4. The roster shows **● here** next to any student currently present on /live, so you can see who
    showed up in real time. Remove a student from the roster at any time.
 
-A plain instructor sees only their own classes; brand admins/owner can see any class on the school.`,
+You see only your own classes; brand admins/owner can see any class on the school.`,
   },
   {
     slug: "learner-feedback-and-reports",
