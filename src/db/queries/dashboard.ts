@@ -1,7 +1,17 @@
 import "server-only";
 import { and, desc, eq, gte, inArray, isNotNull, sql } from "drizzle-orm";
 import { db } from "@/db/client";
-import { courses, enrollments, lessonProgress, lessons, userProfiles, type Course } from "@/db/schema";
+import {
+  courseCompletions,
+  courses,
+  enrollments,
+  lessonProgress,
+  lessons,
+  quizAttempts,
+  recallAttempts,
+  userProfiles,
+  type Course,
+} from "@/db/schema";
 import { listLessons } from "@/db/queries/authoring";
 
 export interface NextLesson {
@@ -235,6 +245,76 @@ export async function getLearnerDashboard(tenantId: string, userId: string): Pro
     week,
     daysActive,
     ...computeGamification(totalCompleted, coursesCompleted, bestStreak),
+  };
+}
+
+export interface Credential {
+  courseTitle: string;
+  courseId: string;
+  token: string;
+  completedAt: Date;
+}
+
+export interface LearnerStats {
+  recallTotal: number;
+  recallGotIt: number;
+  /** 0–100, integer. 0 when there are no attempts. */
+  recallAccuracy: number;
+  quizCount: number;
+  /** 0–100, integer average score. 0 when there are no attempts. */
+  quizAvg: number;
+  credentials: Credential[];
+}
+
+/**
+ * Recall / quiz / credential stats for one learner in one tenant. TENANT-SCOPED —
+ * recall_attempts and quiz_attempts carry tenant_id directly; course_completions has no
+ * tenant_id of its own, so we join through courses and filter courses.tenant_id.
+ */
+export async function getLearnerStats(tenantId: string, userId: string): Promise<LearnerStats> {
+  const [recallRow] = await db
+    .select({
+      total: sql<number>`count(*)::int`,
+      gotIt: sql<number>`count(*) filter (where ${recallAttempts.gotIt})::int`,
+    })
+    .from(recallAttempts)
+    .where(and(eq(recallAttempts.tenantId, tenantId), eq(recallAttempts.userId, userId)));
+
+  const [quizRow] = await db
+    .select({
+      count: sql<number>`count(*)::int`,
+      avgScore: sql<number>`coalesce(round(avg(${quizAttempts.score}))::int, 0)`,
+    })
+    .from(quizAttempts)
+    .where(and(eq(quizAttempts.tenantId, tenantId), eq(quizAttempts.userId, userId)));
+
+  const credentialRows = await db
+    .select({
+      courseId: courses.id,
+      courseTitle: courses.title,
+      token: courseCompletions.verificationToken,
+      completedAt: courseCompletions.completedAt,
+    })
+    .from(courseCompletions)
+    .innerJoin(courses, eq(courses.id, courseCompletions.courseId))
+    .where(and(eq(courseCompletions.userId, userId), eq(courses.tenantId, tenantId)))
+    .orderBy(desc(courseCompletions.completedAt));
+
+  const recallTotal = recallRow?.total ?? 0;
+  const recallGotIt = recallRow?.gotIt ?? 0;
+
+  return {
+    recallTotal,
+    recallGotIt,
+    recallAccuracy: recallTotal > 0 ? Math.round((recallGotIt / recallTotal) * 100) : 0,
+    quizCount: quizRow?.count ?? 0,
+    quizAvg: quizRow?.avgScore ?? 0,
+    credentials: credentialRows.map((r) => ({
+      courseTitle: r.courseTitle,
+      courseId: r.courseId,
+      token: r.token,
+      completedAt: r.completedAt,
+    })),
   };
 }
 
