@@ -25,3 +25,22 @@ export async function sendCompletionEmail(opts: {
     text: `${who}congratulations on completing "${opts.course.title}" with ${brand}.\n\nVerify your certificate:\n${verifyUrl}\n`,
   });
 }
+
+// Cohort invite email — invites a student into an instructor's private class
+// (home-school #1 use case). Same per-tenant sender pattern as the certificate
+// email above.
+export async function sendCohortInviteEmail(opts: {
+  tenant: TenantRecord;
+  cohortName: string;
+  to: string;
+  inviteUrl: string;
+}): Promise<void> {
+  const brand = brandName(opts.tenant);
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    replyTo: opts.tenant.email.replyTo,
+    subject: `You're invited to "${opts.cohortName}" on ${brand}`,
+    text: `You've been invited to join the class "${opts.cohortName}" on ${brand}.\n\nJoin here:\n${opts.inviteUrl}\n`,
+  });
+}

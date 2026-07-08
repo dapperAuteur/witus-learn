@@ -13,6 +13,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
+- 🔧 **Cohorts** (\`feat/cohorts\`) — private classes for live class management (home-school #1):
+  an instructor creates a **cohort**, invites students by email (one-time link; falls back to a
+  copyable link if Mailgun isn't sending), and manages a **roster** at \`/admin/cohorts/[id]\`
+  showing **● here** for anyone currently present on \`/live\`. Students accept at \`/join/[token]\`
+  and land on \`/live\` enrolled. Tenant-scoped tables \`cohorts\`/\`cohort_members\`/\`cohort_invites\`
+  (migration 0029).
 - 🔧 **Recording batch** (\`feat/change-course-instructor\`) — the in-app audio recorder is now
   embedded **inside** the teleprompter overlay (with a lesson picker), so you can read the
   auto-scrolling script and record at the same time (the overlay used to hide the record buttons).
