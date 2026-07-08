@@ -7,6 +7,7 @@ import { CourseCard } from "@/components/course-card";
 import { ShareButton } from "@/components/share-button";
 import { LearnerDashboardView } from "@/components/learner-dashboard";
 import { ComingSoon } from "@/components/coming-soon";
+import { tenantHasMapData } from "@/db/queries/map";
 
 type SearchParams = Promise<{ q?: string; category?: string; sort?: string; view?: string }>;
 
@@ -20,6 +21,9 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
 
   // Pre-launch schools show a branded holding page instead of an empty catalog.
   if (tenant.flags.comingSoon) return <ComingSoon tenant={tenant} />;
+
+  // The Commodity Map shows for any school that HAS map data (the flag is only a force-hide override).
+  const showMap = tenant.flags.commodityMap !== false && (await tenantHasMapData(tenant.id));
 
   // Logged-in learner → mastery dashboard (unless they asked for the catalog).
   const session = await getSession();
@@ -36,7 +40,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
           gamification={gamification}
           leaderboard={leaderboard}
           userId={session.user.id}
-          commodityMap={tenant.flags.commodityMap === true}
+          commodityMap={showMap}
         />
       );
     }
@@ -91,7 +95,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
       ) : null}
 
       {/* 2) Map explorations — the Commodity Map (Season 1) + the Language Atlas. */}
-      {tenant.flags.commodityMap ? (
+      {showMap ? (
         <Link
           href="/explore"
           className="mb-4 block rounded-xl border-2 p-6 transition hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2"
