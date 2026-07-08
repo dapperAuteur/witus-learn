@@ -44,3 +44,22 @@ export async function sendCohortInviteEmail(opts: {
     text: `You've been invited to join the class "${opts.cohortName}" on ${brand}.\n\nJoin here:\n${opts.inviteUrl}\n`,
   });
 }
+
+// Guardian (parent) invite email — a teacher links a parent to their child's account so
+// the parent gets a read-only Family view (progress/grades/attendance for that child
+// only). Same per-tenant sender pattern as the cohort invite above.
+export async function sendGuardianInviteEmail(opts: {
+  tenant: TenantRecord;
+  studentName: string;
+  to: string;
+  inviteUrl: string;
+}): Promise<void> {
+  const brand = brandName(opts.tenant);
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    replyTo: opts.tenant.email.replyTo,
+    subject: `See ${opts.studentName}'s progress on ${brand}`,
+    text: `You've been invited to link your ${brand} parent account to ${opts.studentName}, so you can see their course progress, grades, and attendance.\n\nLink your account:\n${opts.inviteUrl}\n`,
+  });
+}

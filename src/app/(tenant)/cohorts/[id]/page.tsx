@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { forbidden } from "next/navigation";
-import { requireInstructor } from "@/lib/session";
+import { requireUser } from "@/lib/session";
 import { isTenantAdmin } from "@/lib/api";
 import { getScopedDb } from "@/db/scoped";
 import { getCohort, listMembers } from "@/db/queries/cohorts";
@@ -25,11 +25,11 @@ export async function generateMetadata({
 export default async function CohortRosterPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const sdb = await getScopedDb();
-  const session = await requireInstructor(sdb.tenantId);
+  const session = await requireUser();
 
   const found = await getCohort(sdb.tenantId, id);
   const cohort = sdb.ownOrNotFound(found);
-  // A plain instructor manages only their own cohorts; brand admins/owner see any.
+  // Any signed-in user manages only their own cohorts; brand admins/owner see any.
   if (cohort.ownerId !== session.user.id && !(await isTenantAdmin(session, sdb.tenantId))) forbidden();
 
   const [members, present] = await Promise.all([
@@ -40,7 +40,7 @@ export default async function CohortRosterPage({ params }: { params: Promise<{ i
 
   return (
     <main className="max-w-2xl py-10">
-      <Link href="/admin/cohorts" className="text-sm text-neutral-500 hover:underline">
+      <Link href="/cohorts" className="text-sm text-neutral-500 hover:underline">
         ← Cohorts
       </Link>
       <h1 className="mt-3 text-2xl font-bold">{cohort.name}</h1>
