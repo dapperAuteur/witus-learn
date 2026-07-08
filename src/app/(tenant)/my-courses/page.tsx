@@ -41,7 +41,12 @@ export default async function MyCoursesPage() {
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10">
-      <h1 className="text-2xl font-bold">My courses</h1>
+      <div className="flex flex-wrap items-end justify-between gap-4">
+        <h1 className="text-2xl font-bold">My courses</h1>
+        <Link href="/dashboard" className="shrink-0 text-sm font-medium underline" style={{ color: "var(--accent)" }}>
+          ← Your dashboard
+        </Link>
+      </div>
       {courses.length === 0 ? (
         <p className="mt-3 text-neutral-500">
           You are not enrolled in any courses yet.{" "}
