@@ -39,7 +39,7 @@ export const AI_BUILDING_COURSE: AuthoredCourse = {
 
 The builder's mindset: **AI is a probabilistic component in an otherwise normal system.** You wrap it in validation, fallbacks, and human review, the same way you'd wrap any unreliable input. NIST's AI Risk Management Framework calls this designing for systems that are "valid and reliable", the first trait of trustworthy AI (NIST, 2023).
 
-**Check yourself.** Name one task AI is reliable for and one it is not, and say what you'd add to make the unreliable one safe to ship.
+:::reveal Name one task AI is reliable for and one it is not, and say what you'd add to make the unreliable one safe to ship. ||| Reliable: drafting and transforming text (summaries, rewrites, first-pass code). Unreliable: stating facts, numbers, or citations from memory. To ship the unreliable one safely, ground it in real sources (give it the data or use retrieval) and add human review before anything goes out.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: see "Valid and Reliable." https://www.nist.gov/itl/ai-risk-management-framework
@@ -99,7 +99,7 @@ A few terms you'll use constantly:
 
 > **Trust DNA:** code you didn't read is not code you can ship. A green checkmark on tests *you wrote or read* is verification; "it looked fine" is not.
 
-**Check yourself.** Rewrite this weak coding prompt into a strong one: "make a login page."
+:::reveal Rewrite this weak coding prompt into a strong one: "make a login page." ||| For example: "You are a senior React developer. Build a responsive login page in Next.js + Tailwind with email and password fields, inline validation, a show-password toggle, an error-message area, and an accessible form (labels, focus states). Return the component code only." It adds role, stack, exact requirements, and output format.
 
 ## Sources
 - OpenAI. (2025). *Prompting* (API documentation): writing clear instructions and giving examples. https://platform.openai.com/docs/guides/prompting
@@ -137,7 +137,7 @@ A few terms you'll use constantly:
 
 Start as light as the job allows; move down the ladder only when the lighter tool stops fitting. Over-engineering is its own kind of slop.
 
-**Check yourself.** You need a working internal demo by end of day with no custom logic. Which rung of the ladder, and why?
+:::reveal You need a working internal demo by end of day with no custom logic. Which rung of the ladder, and why? ||| No-code — it's the lightest, fastest rung and needs no engineering. With no custom logic and a same-day deadline, a no-code AI tool gets you a working demo without writing or deploying any code.
 
 ## Sources
 - OpenAI. (2025). *Prompting* and API reference: making model calls and handling structured output. https://platform.openai.com/docs/guides/prompting
@@ -416,7 +416,7 @@ Shipping is not the finish line; it's the start of the **measure → manage** lo
 
 > **Trust DNA, final form:** ship things that are *cited, validated, honest, and affordable.* Speed is easy; trustworthy is the whole job.
 
-**Check yourself.** Name one ethical practice and one cost-control practice you'd apply before shipping an AI feature to real users.
+:::reveal Name one ethical practice and one cost-control practice you'd apply before shipping an AI feature to real users. ||| Ethical: disclose that AI is involved, keep a human in the loop for consequential outputs, and protect user data. Cost-control: pick the smallest model that works and cap usage (cache repeated calls, set token and rate limits) so spend stays predictable.
 
 ## Sources
 - Google PAIR. (2021). *People + AI Guidebook*: onboarding users to AI and giving them control. https://pair.withgoogle.com/guidebook/

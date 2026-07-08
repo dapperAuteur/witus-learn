@@ -54,7 +54,7 @@ Two habits that save you:
 - **Ask for its reasoning or sources** so you can check them.
 - **Give it the material** (paste the article/data) instead of trusting its memory, when accuracy matters.
 
-**Check yourself.** Name three of the five things a strong prompt usually includes.
+:::reveal Name three of the five things a strong prompt usually includes. ||| Any three of: Role (who the AI should act as), Task (exactly what you want), Context (the situation, audience, and any source text), Format (length, structure, tone), and Examples (a sample answer when the format matters).
 
 ## Sources
 - National Institute of Standards and Technology. (2023). AI Risk Management Framework (AI RMF 1.0). https://www.nist.gov/itl/ai-risk-management-framework`,
@@ -92,7 +92,7 @@ Build a verify habit:
 
 This is the heart of Learn.WitUS: every claim ties to a source you can verify. Use AI to **draft and explain**, and use real sources to **confirm**. "Trust, but verify" becomes "draft with AI, verify with sources."
 
-**Check yourself.** Why is a hallucination more dangerous than an obvious error?
+:::reveal Why is a hallucination more dangerous than an obvious error? ||| Because a hallucination is confident and fluent, so it looks right. An obvious error you catch immediately; a plausible, well-worded false claim slips past you and gets trusted and shared.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). AI Risk Management Framework (AI RMF 1.0), see "Valid and Reliable." https://www.nist.gov/itl/ai-risk-management-framework`,
@@ -116,7 +116,7 @@ Practical defenses:
 
 Government agencies now warn that synthetic media is a real threat for fraud and disinformation (CISA et al., 2023). Healthy skepticism is a skill, not cynicism.
 
-**Check yourself.** Name two ways to check whether a shocking video is real.
+:::reveal Name two ways to check whether a shocking video is real. ||| Any two: check its provenance and original source (who first posted it, and where); look for the same event covered by independent, credible outlets; and read laterally instead of trusting the clip itself. Be extra skeptical of anything designed to shock or enrage you.
 
 ## Sources
 - Coalition for Content Provenance and Authenticity (C2PA). Content Credentials specification. https://c2pa.org
@@ -181,7 +181,7 @@ The goal isn't fear, it's **responsible use**: get the speed of AI while keeping
 
 Do that and AI makes you faster *and* harder to fool. That's the whole point: **use it well, and use it wisely.**
 
-**Check yourself.** Name one thing you should never paste into a public AI tool, and the two-step "draft / ___" habit.
+:::reveal Name one thing you should never paste into a public AI tool, and the two-step "draft / ___" habit. ||| Never paste secrets: passwords, financial or health records, other people's personal data, or confidential work files. The habit is "draft with AI, then verify with sources" — confirm every fact, quote, and citation that matters.
 
 ## Sources
 - National Institute of Standards and Technology. (2020). NIST Privacy Framework 1.0. https://www.nist.gov/privacy-framework
