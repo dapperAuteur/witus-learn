@@ -222,7 +222,7 @@ The practical effect: in Louisiana, when other Americans say "county," you say *
 - **Contact your legislators** in Baton Rouge: you have one Representative and one Senator.
 - **Run**: school board, city council, police jury/parish council, and parish offices are reachable local starting points.
 
-**Check yourself.** How are Louisiana Supreme Court justices chosen, and where should you confirm current voting rules?
+:::reveal How are Louisiana Supreme Court justices chosen, and where should you confirm current voting rules? ||| Louisiana elects its Supreme Court justices from geographic districts. Confirm current voting rules at sos.la.gov or with your parish Registrar of Voters before you vote.
 
 ## Sources
 - Louisiana Supreme Court. (n.d.). *The Louisiana Supreme Court and judicial elections*. lasc.org. https://www.lasc.org/

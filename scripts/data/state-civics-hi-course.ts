@@ -172,7 +172,7 @@ Why it matters: if you're comparing states, don't assume Hawaii holds judicial *
 - **Engage the state on schools.** Because schools are state-run, education advocacy runs through the **statewide Board of Education and Legislature**, not a local district.
 - **Run.** County council, the Board of Education, OHA, and the Legislature are reachable starting points.
 
-**Check yourself.** Who provides your local government in Hawaii, and where do you go to influence public-school policy?
+:::reveal Who provides your local government in Hawaii, and where do you go to influence public-school policy? ||| Your county (its council and mayor) provides local government in Hawaii — there are no city or town governments below the county. Because schools are run by the state, you influence public-school policy through the statewide Board of Education and the Legislature, not a local district.
 
 ## Sources
 - Hawaii Office of Elections. (n.d.). *Elections by mail; registration; voter service centers*. elections.hawaii.gov. https://elections.hawaii.gov/

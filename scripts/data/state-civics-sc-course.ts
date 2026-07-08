@@ -195,7 +195,7 @@ Why it matters: it means South Carolina judges answer, for re-election, to the *
 - **Watch judicial elections**: because the General Assembly elects judges, following those votes is a real (if often overlooked) part of civic life here.
 - **Run**: school board, city council, and county council are reachable local starting points.
 
-**Check yourself.** What did the Home Rule Act of 1975 change, and where should you confirm current voting rules?
+:::reveal What did the Home Rule Act of 1975 change, and where should you confirm current voting rules? ||| The Home Rule Act of 1975 shifted power to elected county councils, letting counties decide more locally instead of everything running through the state legislature as before. Confirm current voting rules at scvotes.gov.
 
 ## Sources
 - South Carolina Legislature. (n.d.). *Local government and the Home Rule Act (1975)*. scstatehouse.gov. https://www.scstatehouse.gov/

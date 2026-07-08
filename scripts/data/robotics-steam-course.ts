@@ -37,7 +37,7 @@ Even NASA's Mars rovers follow this exact loop. A rover senses the ground with c
 
 **Try this (no kit needed).** Pick three machines in your home (a microwave, a phone, a washing machine). For each one, name its **sensor**, its **controller**, and its **actuator**. If you can't find all three, that's interesting too. Ask which step is missing.
 
-**Check yourself.** In your own words, what are the three things every robot does?
+:::reveal In your own words, what are the three things every robot does? ||| Sense, think, act. A robot senses the world, thinks about what it senses, then acts to do something useful.
 
 ## Sources
 NASA. (n.d.-a). *Robotics*. National Aeronautics and Space Administration. https://www.nasa.gov/robotics/
@@ -69,7 +69,7 @@ But here's the honest part: robots are **not** smarter than you. They're fast, t
 
 The word "robot" itself is young. It comes from a 1920 play and means roughly "forced labor." That tells you what we've always wanted robots for: to take over the work people would rather not, or can't safely, do.
 
-**Check yourself.** Name the "three D's" (the kinds of jobs robots are especially good for) and give one real example of each.
+:::reveal Name the "three D's" (the kinds of jobs robots are especially good for) and give one real example of each. ||| Dull (very repetitive), dirty (messy or unhealthy), and dangerous (unsafe for people).
 
 ## Sources
 NASA. (n.d.-a). *Robotics*. National Aeronautics and Space Administration. https://www.nasa.gov/robotics/`,
@@ -105,7 +105,7 @@ The micro:bit, a popular beginner board, is built around exactly these ideas: it
 
 **Try this (household items).** With an adult's help, make a simple circuit using a single AA or AAA battery, a small flashlight bulb (or a low-voltage LED with a resistor from a kit), and two short pieces of wire or aluminum foil. Touch the wires to complete the loop: the bulb lights. Break the loop: it goes dark. You just built a switch with your fingers. **Safety:** use only a small battery, never a wall outlet.
 
-**Check yourself.** What three parts does a basic circuit need, and why must the loop be "closed"?
+:::reveal What three parts does a basic circuit need, and why must the loop be "closed"? ||| A power source (a battery that pushes the electricity), a path (wires for the current to flow through), and a load (something useful like a bulb, buzzer, or motor). Electricity can only flow around a complete, closed loop, so any gap stops it. A switch is a controlled gap: closing it turns the load on, opening it turns the load off.
 
 ## Sources
 Micro:bit Educational Foundation. (n.d.). *micro:bit features overview*. https://microbit.org/get-started/features/overview/`,
@@ -141,7 +141,7 @@ The micro:bit is a perfect example because you can see all three on one tiny boa
 
 Once you have this frame, programming a robot stops feeling mysterious. You're always answering three questions: *What's my input? How should I process it? What output do I want?*
 
-**Check yourself.** A motion-sensing porch light turns on when someone walks up at night. Name its input, its process, and its output.
+:::reveal A motion-sensing porch light turns on when someone walks up at night. Name its input, its process, and its output. ||| Input comes from a sensor or button, process is the program that decides what the input means, and output is an action like a light, a motor, or a sound.
 
 ## Sources
 Micro:bit Educational Foundation. (n.d.). *micro:bit features overview*. https://microbit.org/get-started/features/overview/`,
@@ -175,7 +175,7 @@ So the first skill of a coder isn't typing: it's **thinking clearly in small, or
 
 **Try this (no computer needed).** Write the algorithm for an everyday task (brushing your teeth, tying a shoe) as a numbered list, pretending the reader is a literal robot. Then hand it to a friend (or sibling) who must do *only* what's written, *exactly* in order. Wherever they get stuck or do something silly, you found a missing or out-of-order step. Fix it. That's debugging.
 
-**Check yourself.** In one sentence, what is an algorithm? Why does the *order* of the steps matter so much to a computer?
+:::reveal In one sentence, what is an algorithm? Why does the *order* of the steps matter so much to a computer? ||| Sequencing means the order of the steps matters. A computer is extremely literal and does exactly what you say in exactly the order you say it, so a missing or out-of-order step breaks the result.
 
 ## Sources
 Code.org. (n.d.). *Computer science fundamentals curriculum*. https://code.org/en-US/curriculum/computer-science-fundamentals`,
@@ -213,7 +213,7 @@ Put it together and a line-following robot is just: **loop forever { IF I see th
 
 **Try this (unplugged).** Be the robot. A partner gives you a tiny program out loud, like: "Loop 4 times: take one step; IF you reach the wall, stop." Act it out *literally*. Then make the rule trickier and see if the program still works. Spotting where it breaks is exactly what programmers do.
 
-**Check yourself.** What does a **loop** do, and what does a **conditional** (if/else) do? Give one real robot behavior that needs both.
+:::reveal What does a **loop** do, and what does a **conditional** (if/else) do? Give one real robot behavior that needs both. ||| A loop repeats a section of code over and over; a conditional (if/else) runs one section only when something is true, otherwise another. A line-following robot needs both: loop forever { IF I see the line, go straight; ELSE steer back toward it } — sense, decide, move, repeated.
 
 ## Sources
 Code.org. (n.d.). *Computer science fundamentals curriculum*. https://code.org/en-US/curriculum/computer-science-fundamentals`,
@@ -305,7 +305,7 @@ IEEE (the world's largest organization of engineers) runs **TryEngineering**, a 
 
 **Try this (household items).** Pick a tiny problem, say, "a stand that holds my phone at a good angle." Run the whole cycle with only paper, cardboard, and tape: brainstorm, build a quick prototype, test it (does the phone actually stay up?), then iterate at least once to make it better. Notice how much your *second* version improves on the first.
 
-**Check yourself.** What does it mean to **iterate**, and why do engineers treat a failed test as useful instead of bad?
+:::reveal What does it mean to **iterate**, and why do engineers treat a failed test as useful instead of bad? ||| To iterate is to go back, improve your design, and try again. Engineers loop through building, testing, and evaluating until a solution works. A failed test is a normal step that teaches you what to change next, not the end. A prototype is a quick, rough first test version, not the finished product.
 
 ## Sources
 NASA JPL Education. (n.d.). *Engineering design process flow chart*. NASA Jet Propulsion Laboratory. https://www.jpl.nasa.gov/edu/resources/image/engineering-design-process-flow-chart/
@@ -336,7 +336,7 @@ Which is "better"? Neither. They're different starting points. The micro:bit is 
 
 **Try this (free, no kit).** Both platforms have **free online simulators**: a pretend board on your screen. Search for the official micro:bit MakeCode editor or the Arduino site, drag together a tiny program (like "when button A is pressed, show a heart"), and run it in the simulator. You'll write real code without buying a thing.
 
-**Check yourself.** Name one way the micro:bit and Arduino are different. What does it mean that Arduino is **open-source**?
+:::reveal Name one way the micro:bit and Arduino are different. What does it mean that Arduino is **open-source**? ||| The micro:bit has many sensors and outputs built in, so you can program it the first day without wiring. Arduino is a controller you wire your own sensors and motors to, so it teaches more about circuits. Its designs are shared freely, so anyone can study, use, and build on them.
 
 ## Sources
 Micro:bit Educational Foundation. (n.d.). *micro:bit features overview*. https://microbit.org/get-started/features/overview/
@@ -368,7 +368,7 @@ Arduino. (n.d.-b). *Getting started with Arduino products*. https://www.arduino.
 
 Across all three, the pattern is identical and the people are essential: humans imagine the goal, engineers design and program the machine, and the robot handles the parts that are too repetitive, too delicate, or too far away.
 
-**Check yourself.** Pick one field (factory, medicine, or space) and explain how a robot there still follows "sense → think → act," and where a human stays in charge.
+:::reveal Pick one field (factory, medicine, or space) and explain how a robot there still follows "sense → think → act," and where a human stays in charge. ||| Factories (robotic arms welding, painting, and lifting), medicine (robotically-assisted surgical systems), and space (NASA rovers like Perseverance on Mars).
 
 ## Sources
 FDA. (n.d.). *Computer-assisted surgical systems*. U.S. Food and Drug Administration. https://www.fda.gov/medical-devices/surgery-devices/computer-assisted-surgical-systems
@@ -403,7 +403,7 @@ None of these have one easy answer, and that's the point. The best engineers are
 
 The future of robotics isn't only about smarter machines. It's about wise people choosing to build the *right* things, the *right* way, for the *right* reasons, and that future includes **you.**
 
-**Check yourself.** Pick one concern from this lesson (jobs, safety, responsibility, or fairness). Explain it in your own words and give one thing an engineer could do to handle it responsibly.
+:::reveal Pick one concern from this lesson (jobs, safety, responsibility, or fairness). Explain it in your own words and give one thing an engineer could do to handle it responsibly. ||| There's no single right answer — e.g. jobs: automation can replace some work, so an engineer could design tools that assist people and support retraining rather than simply cutting them. Whichever you pick, the point is that good engineers ask "should we?" alongside "can we?" — thinking about who benefits, who's left out, and who could be harmed.
 
 ## Sources
 FDA. (n.d.). *Computer-assisted surgical systems*. U.S. Food and Drug Administration. https://www.fda.gov/medical-devices/surgery-devices/computer-assisted-surgical-systems

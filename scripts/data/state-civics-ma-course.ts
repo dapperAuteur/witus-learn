@@ -225,7 +225,7 @@ So in Massachusetts, "what does my county do?" genuinely depends on **which** co
 - **Contact your legislators**: you have one Representative and one Senator in the General Court.
 - **Run**: select board, school committee, city council, and town offices are reachable local starting points.
 
-**Check yourself.** Name two access changes from the 2022 VOTES Act, and one uniquely local way Massachusetts residents make decisions.
+:::reveal Name two access changes from the 2022 VOTES Act, and one uniquely local way Massachusetts residents make decisions. ||| The 2022 VOTES Act expanded no-excuse mail-in voting and in-person early voting (and strengthened same-day registration). A uniquely local way residents decide things is open town meeting, where you show up and vote directly on the town budget and bylaws.
 
 ## Sources
 - Secretary of the Commonwealth. (n.d.). *Voting in Massachusetts; the VOTES Act (2022)*. sec.state.ma.us. https://www.sec.state.ma.us/

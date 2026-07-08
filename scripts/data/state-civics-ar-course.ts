@@ -296,7 +296,7 @@ The practical upshot: if you have a local problem in Arkansas, the two levels to
 
 **Show up locally: county and city.** Your **Quorum Court** (the Justices of the Peace) and your **city/town council** meetings are public and set your local taxes, ordinances, and services (no townships to track in Arkansas). These smaller rooms are where one voice carries the most weight, and remember the vocabulary: the **county judge** is your local executive, the **quorum court** is your local legislature.
 
-**Check yourself.** Name three ways to get involved in Arkansas government, and explain why you must check the current handbook before relying on the state's initiative rules.
+:::reveal Name three ways to get involved in Arkansas government, and explain why you must check the current handbook before relying on the state's initiative rules. ||| Three ways: track bills and testify in committee at the General Assembly (arkleg.state.ar.us), show up at your county Quorum Court and city/town council meetings, and vote and run for local office. Check the current rules first because Arkansas's initiative signature and filing requirements change and are frequently litigated, so relying on an old figure can sink a petition.
 
 ## Sources
 - Arkansas Secretary of State. (n.d.). *Voting, registration, and citizen petitions*. SOS.arkansas.gov. https://www.sos.arkansas.gov/elections/

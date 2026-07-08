@@ -284,7 +284,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
 4. **Show up locally: county, township, city.** Your **County Council** and **Board of Commissioners** meetings, your **Township** meetings, and your **city/town council** meetings are public and set your local taxes and services. These smaller rooms are where one person's comment moves things most, and remember Indiana's extra township layer means there may be one more local board than you'd expect.
 5. **Cast your retention votes thoughtfully.** When appellate justices appear on your ballot for a **yes/no retention vote** (Lesson 3), that's a real decision; read up before you fill it in rather than leaving it blank.
 
-**Check yourself.** Name three specific ways to get involved in Indiana government, and explain why contacting your state legislators is especially important in Indiana given its weak governor and lack of a citizen initiative.
+:::reveal Name three specific ways to get involved in Indiana government, and explain why contacting your state legislators is especially important in Indiana given its weak governor and lack of a citizen initiative. ||| Three ways: track bills and submit comment or testify before committee votes (iga.in.gov), show up at your County Council, township, and city/town council meetings, and cast your judicial retention votes thoughtfully. Contacting legislators is especially important because Indiana has a relatively weak governor and no citizen initiative, so the Legislature is where state law is actually made or changed.
 
 ## Sources
 - Indiana General Assembly. (n.d.). *Find your legislators / track legislation*. IGA.in.gov. https://iga.in.gov/

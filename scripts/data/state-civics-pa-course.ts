@@ -287,7 +287,7 @@ The practical payoff: **who provides your service depends on where you live**. I
 
 **Because there's no initiative, elections and hearings ARE the lever.** In states with a citizen initiative, an organized group can write and pass a law at the ballot box. In Pennsylvania, that route doesn't exist, so **voting, contacting legislators, and testifying at hearings** are how citizens actually shape the law. Understanding that changes how you spend your civic energy here.
 
-**Check yourself.** Name three specific ways to get involved in Pennsylvania government, and explain why the **absence of a citizen initiative** makes voting and contacting legislators *more* central here than in an initiative state like California.
+:::reveal Name three specific ways to get involved in Pennsylvania government, and explain why the **absence of a citizen initiative** makes voting and contacting legislators *more* central here than in an initiative state like California. ||| Three ways: vote, contact your legislators and testify at hearings, and show up locally at your township supervisors, borough or city council, county commissioners, and school board. Because Pennsylvania has no citizen initiative, there's no ballot route to write and pass a law directly — so voting, contacting legislators, and testifying are the actual levers, making them more central than in an initiative state like California.
 
 ## Sources
 - Pennsylvania Department of State. (n.d.-a; n.d.-d). *Register to vote; mail-in ballots; deadlines*. Vote.pa.gov. https://www.pa.gov/agencies/vote/voter-registration

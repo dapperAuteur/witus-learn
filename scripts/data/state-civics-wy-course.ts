@@ -140,7 +140,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 - **Contact your legislators** in Cheyenne: you have one Representative and one Senator; sessions are short, so timing matters.
 - **Run**: school board, town council, and county commission are reachable local starting points.
 
-**Check yourself.** Does Wyoming have a citizen initiative, and why do fewer statewide measures reach its ballot?
+:::reveal Does Wyoming have a citizen initiative, and why do fewer statewide measures reach its ballot? ||| Yes, but barely — Wyoming has an initiative and referendum process, but its signature and distribution requirements are so high that few measures ever qualify, which is why fewer statewide measures reach the ballot.
 
 ## Sources
 - Wyoming Legislature. (n.d.). *How a bill becomes law; local government*. wyoleg.gov. https://www.wyoleg.gov/

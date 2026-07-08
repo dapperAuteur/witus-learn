@@ -157,7 +157,7 @@ West Virginia has **no statewide citizen initiative**; **constitutional amendmen
 - **Watch judicial elections.** They're now **nonpartisan**, research candidates, since party labels no longer guide you.
 - **Run**: county board of education, city council, and county commission are reachable local starting points.
 
-**Check yourself.** Does West Virginia have a citizen initiative, and why should you research judicial candidates carefully now?
+:::reveal Does West Virginia have a citizen initiative, and why should you research judicial candidates carefully now? ||| No — West Virginia has no citizen initiative, so ballot measures come from the Legislature. Research judicial candidates carefully because West Virginia's judicial elections are now nonpartisan: party labels no longer appear to guide you, so the homework is on you.
 
 ## Sources
 - West Virginia Legislature. (n.d.). *How a bill becomes law; local government; amending the constitution*. wvlegislature.gov. https://www.wvlegislature.gov/

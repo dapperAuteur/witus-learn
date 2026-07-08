@@ -191,7 +191,7 @@ So Connecticut blends a **screening commission**, a **gubernatorial nomination**
 - **Weigh in on amendments and conventions:** Connecticut voters ratify amendments and periodically vote on calling a constitutional convention.
 - **Run:** board of selectmen, board of education, and town/city council are reachable local starting points.
 
-**Check yourself.** Since Connecticut has no counties, what is the key unit of local government, and what new voting option did Connecticut adopt?
+:::reveal Since Connecticut has no counties, what is the key unit of local government, and what new voting option did Connecticut adopt? ||| The town is the key unit of local government — your town meeting, board of selectmen or town/city council, plus the local board of education, make most local decisions. Connecticut recently adopted early voting.
 
 ## Sources
 - Connecticut General Assembly. (n.d.). *Town government and regional councils*. cga.ct.gov. https://www.cga.ct.gov/

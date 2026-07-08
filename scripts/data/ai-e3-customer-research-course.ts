@@ -131,7 +131,7 @@ The trap is that a guess feels exactly like the truth from inside your own head.
 
 **Where AI helps:** paste your draft questions and ask it to flag which ones are leading, hypothetical, or double-barreled, and to rewrite them as open and neutral. AI is good at *spotting bias in wording*. Just remember the SBA frames interviews and surveys as **direct research** with real people. AI tightens the questions; the answers must come from outside the building (SBA, n.d.).
 
-**Check yourself.** Why is "would you use this?" a weak question, and what kind of question gets you a more honest answer?
+:::reveal Why is "would you use this?" a weak question, and what kind of question gets you a more honest answer? ||| "Would you use this?" is hypothetical and invites people to be nice to you rather than truthful. Ask open questions about real past behavior instead — "what did you actually do the last time you faced this?" — because real stories about what people did beat opinions about what they think they'd do.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Direct research methods (interviews, surveys, focus groups, questionnaires) with your real customers. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis
@@ -168,7 +168,7 @@ The trap is that a guess feels exactly like the truth from inside your own head.
 
 **Where AI helps, and the line it must not cross:** AI can draft survey questions, suggest scales, and check your wording for bias. What it must **never** do is **invent responses or fill in "typical" answers**. A survey's value is that the data came from real people; a synthetic answer is a lie dressed as data (Lesson 5 covers this). Use AI to build the instrument, not to fake the results.
 
-**Check yourself.** Name the two ways a survey can mislead you (one about the *questions* and one about *who you ask*) and give a fix for each.
+:::reveal Name the two ways a survey can mislead you (one about the *questions* and one about *who you ask*) and give a fix for each. ||| (1) Biased or leading questions — fix by writing neutral, open, non-double-barreled questions (AI can flag leading wording). (2) The wrong or too-small, self-selected sample (only your fans answer) — fix by surveying your actual target market, getting enough responses, and watching for who didn't answer (sampling/nonresponse bias).
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Research your real target market and use direct-research methods like questionnaires and surveys. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis`,
@@ -200,7 +200,7 @@ The trap is that a guess feels exactly like the truth from inside your own head.
 
 > **Trust DNA:** AI may *organize* the truth you collected. It may never *invent* truth you didn't.
 
-**Check yourself.** You ask AI to summarize 12 interviews and it reports "73% of users are frustrated by X," but you never recorded any percentages. What do you do, and why?
+:::reveal You ask AI to summarize 12 interviews and it reports "73% of users are frustrated by X," but you never recorded any percentages. What do you do, and why? ||| Reject the number and go back to the raw interviews — you never collected percentages, so "73%" is fabricated. AI may organize the truth you actually gathered, but it may never invent data; a synthetic finding presented as evidence is a lie dressed as data, and trustworthy results are ones you can stand behind.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*. Trustworthy AI is "valid and reliable"; outputs you can stand behind, not fabricated. https://www.nist.gov/itl/ai-risk-management-framework
@@ -347,7 +347,7 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
 
 **Where AI helps (carefully):** AI can tally and chart your results and compute simple rates (e.g., sign-ups ÷ visitors). Useful, but don't let a clean dashboard launder a weak signal. **Automation bias** (Lesson 6) makes an AI-generated chart *feel* like proof; the chart is only as good as whether the underlying action cost the person anything (NIST, 2022). A beautiful graph of likes is still a graph of likes.
 
-**Check yourself.** Rank these by how much you'd trust them as proof of demand, and say why: 100 likes, 10 email sign-ups, 3 pre-orders that paid money.
+:::reveal Rank these by how much you'd trust them as proof of demand, and say why: 100 likes, 10 email sign-ups, 3 pre-orders that paid money. ||| Most trustworthy: the 3 paid pre-orders, then the 10 email sign-ups, then the 100 likes. Weight each signal by what it cost the person — money is the strongest proof of demand, an email is a smaller commitment, and a like costs nothing. A beautiful chart of likes is still a graph of likes.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Measure actual demand from your target market, not surface approval. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis
@@ -437,7 +437,7 @@ The honest move is to lead with **SOM**, not TAM. Anyone can claim a giant TAM; 
 
 > **Trust DNA:** the bravest, most honest founders let *reality* (not their hopes and not an agreeable AI) tell them when to push, when to turn, and when to stop.
 
-**Check yourself.** What's the difference between a pivot and stubbornly persisting, and why is killing a bad idea early actually a win?
+:::reveal What's the difference between a pivot and stubbornly persisting, and why is killing a bad idea early actually a win? ||| A pivot is changing course because the evidence told you to; stubborn persistence is ignoring the data to avoid stopping. Killing a bad idea early is a win because cheap validation exists precisely so you don't build blindly — the shame isn't stopping, it's spending years and money on something reality already told you won't work.
 
 ## Sources
 - Blank, S. (2013). *Customer Development Manifesto*. Customer discovery and validation tell you whether to proceed, pivot, or rethink before scaling. https://steveblank.com/category/customer-development-manifesto/

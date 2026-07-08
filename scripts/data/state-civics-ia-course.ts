@@ -152,7 +152,7 @@ Statewide officers serve **4-year terms.**
 - **Contact your legislators** in Des Moines. You have one Representative and one Senator.
 - **Run**: school board, city council, and county board of supervisors are reachable local starting points.
 
-**Check yourself.** Does Iowa have a statewide citizen initiative, and what hands-on party event can you attend?
+:::reveal Does Iowa have a statewide citizen initiative, and what hands-on party event can you attend? ||| No — Iowa has no statewide citizen initiative, so ballot measures come from the Legislature. The hands-on party event you can attend is your precinct caucus, where you help shape party business and (in presidential years) register a preference.
 
 ## Sources
 - Iowa Legislature. (n.d.). *How a bill becomes law; amending the constitution; local government*. legis.iowa.gov. https://www.legis.iowa.gov/

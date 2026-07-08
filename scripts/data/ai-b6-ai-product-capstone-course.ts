@@ -53,7 +53,7 @@ If you can't name the user, the task, the friction, and the current workaround, 
 
 **Scope down to a thin slice.** A capstone is one workflow done well, not a platform. Cut until you have the smallest version that, if it works, *proves the value*. Everything else is a later phase.
 
-**Check yourself.** Write your problem statement in the \[user]/\[task]/\[friction]/\[workaround] shape, then name the one number you'll move and how you'll measure its baseline.
+:::reveal Write your problem statement in the \[user]/\[task]/\[friction]/\[workaround] shape, then name the one number you'll move and how you'll measure its baseline. ||| There's no single right answer — a strong one names a specific real user, the task they're doing, the friction, and their current workaround, then picks ONE measurable number (time-to-complete, error/rework rate, throughput, or a rubric score) and measures the current non-AI workaround first to set the baseline. Without that baseline you can't prove the tool helped.
 
 ## Sources
 - Google PAIR. (2021). *People + AI Guidebook*: see "User Needs + Defining Success." https://pair.withgoogle.com/chapter/userneeds/
@@ -82,7 +82,7 @@ Walk the ladder top to bottom and stop at the first rung that fits:
 
 Most capstones land on **a single prompt or a RAG workflow.** That's not a failure of ambition, it's good engineering. Write down *why* you chose your rung; you'll defend it in the capstone brief.
 
-**Check yourself.** For your scoped problem, which rung fits, and what's the one sentence justifying why the lighter rung above it would not?
+:::reveal For your scoped problem, which rung fits, and what's the one sentence justifying why the lighter rung above it would not? ||| Most capstones land on a single prompt or a RAG workflow — pick the lightest rung that does the job, reaching for RAG before fine-tuning and a workflow before an agent. Your one-sentence justification should say why the rung above falls short (e.g. "a plain prompt can't answer over my changing documents with citations, so I need RAG").
 
 ## Sources
 - Anthropic. (2024). *Building Effective Agents*: "find the simplest solution possible"; workflows vs. agents. https://www.anthropic.com/research/building-effective-agents
@@ -121,7 +121,7 @@ Most capstones land on **a single prompt or a RAG workflow.** That's not a failu
 
 This is NIST's "Human-AI configuration" made concrete: keep a person in charge of anything consequential or hard to undo (NIST, 2024). It's also your strongest guardrail, covered next.
 
-**Check yourself.** Sketch the unhappy path: what does your tool show the user when the model returns a wrong or low-confidence answer, and which single action (if any) will you gate behind explicit human approval?
+:::reveal Sketch the unhappy path: what does your tool show the user when the model returns a wrong or low-confidence answer, and which single action (if any) will you gate behind explicit human approval? ||| On the unhappy path, show the uncertainty rather than hide it: surface low confidence, show the sources/reasoning, offer an easy correction or a way to reach a human, and fail to a safe fallback instead of acting on a bad answer. Gate behind explicit human approval any irreversible or consequential action (send an email, charge a card, delete data); reversible things like draft text can just be shown.
 
 ## Sources
 - Google PAIR. (2021). *People + AI Guidebook*: "Mental Models," "Errors + Graceful Failure," "Feedback + Control," "Explainability + Trust." https://pair.withgoogle.com/guidebook/
@@ -371,7 +371,7 @@ This is also the **Govern** function of NIST's framework: documented accountabil
 - **Mind bias and fairness.** If your tool decides anything about people, test across groups and keep human judgment in charge (NIST, 2024).
 - **Cite and disclose.** If it makes factual claims, ground them (RAG) and show sources, the Learn.WitUS DNA: trust is a feature, not an afterthought.
 
-**Check yourself.** Name two sections your capstone README must contain, and one ethical practice you'll apply before real users touch the tool.
+:::reveal Name two sections your capstone README must contain, and one ethical practice you'll apply before real users touch the tool. ||| Two of: the problem + success metric, the approach/architecture (prompt and model pinned), guardrails + evals, cost/latency/security, ship + monitor (the kill switch), or iterate + ethics. One ethical practice before real users: disclose that it's AI and can be wrong with a way to reach a human — and don't deceive or impersonate, cite factual claims, and test for bias on anything that decides about people.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: the "Govern" function (documentation and accountability). https://www.nist.gov/itl/ai-risk-management-framework
@@ -411,7 +411,7 @@ This is also the **Govern** function of NIST's framework: documented accountabil
 
 Do the writing offline, then run the confirmation drill below, and finish with the quiz to lock the whole arc.
 
-**Check yourself.** Could a teammate read only your brief and (a) understand what problem it solves, and (b) run and re-evaluate the tool without you? If not, which section is missing?`,
+:::reveal Could a teammate read only your brief and (a) understand what problem it solves, and (b) run and re-evaluate the tool without you? If not, which section is missing? ||| If they can't, the gap is usually the eval section (your eval set + metric + how to run it) or the pinned prompt/model config and MVP loop — without those a teammate can't re-evaluate the tool. A complete brief lets someone else both understand the problem and run and re-evaluate it without you; whichever they can't do points at the missing section.`,
       exercise: {
         instructions:
           "Assemble your capstone brief OFFLINE first (all eight parts above), then type each guided keyword to confirm. The keyword records completion; the explanation states what makes that part defensible.",

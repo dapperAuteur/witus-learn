@@ -187,7 +187,7 @@ Vermont has **no statewide citizen initiative**; direct democracy in Vermont hap
 - **Consider third parties.** Vermont's **Progressive Party** and strong independent tradition mean your vote, and your candidacy, need not fit the two-party mold.
 - **Run**, select board, school board, and other town offices are among the most reachable in the country.
 
-**Check yourself.** Does Vermont have a statewide citizen initiative, and where does Vermont's direct democracy actually happen?
+:::reveal Does Vermont have a statewide citizen initiative, and where does Vermont's direct democracy actually happen? ||| No — Vermont has no statewide citizen initiative. Its direct democracy happens at Town Meeting Day each March, where residents show up and vote directly on their town's budget and questions.
 
 ## Sources
 - Vermont General Assembly. (n.d.). *How a bill becomes law*. legislature.vermont.gov. https://legislature.vermont.gov/

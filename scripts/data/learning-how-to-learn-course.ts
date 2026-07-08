@@ -34,7 +34,7 @@ A large review of study techniques reached the same verdict: rereading and highl
 
 **Mindset for this course:** study time is best spent **getting information out of your head**, not just putting it in. Every technique ahead is a way to do that.
 
-**Check yourself.** Which of the three steps (encoding, storage, retrieval) does rereading mostly exercise, and which one do tests actually measure?
+:::reveal Which of the three steps (encoding, storage, retrieval) does rereading mostly exercise, and which one do tests actually measure? ||| Encoding (getting information in), storage (holding it over time), and retrieval (getting it back out). A test measures retrieval.
 
 ## Sources
 - Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. *Psychological Science, 17*(3), 249-255. https://doi.org/10.1111/j.1467-9280.2006.01693.x
@@ -63,7 +63,7 @@ The practical point: **hard problems often get solved by switching between the t
 
 This connects directly to two later lessons: **spacing** your study (so diffuse mode and consolidation can act between sessions) and **sleep** (the deepest form of diffuse-mode processing). Oakley and Sejnowski built their widely taken course *Learning How to Learn* around exactly this idea: pairing the two modes, and using short bursts of focus rather than marathon sessions (Oakley & Sejnowski, 2018).
 
-**Check yourself.** You've been stuck on the same problem for 30 minutes. Based on the two-modes idea, what should you do?
+:::reveal You've been stuck on the same problem for 30 minutes. Based on the two-modes idea, what should you do? ||| Step away and let diffuse mode work, then come back. Cramming keeps you in focused mode with no gap for diffuse mode or consolidation to act.
 
 ## Sources
 - Oakley, B., & Sejnowski, T. (2018). *Learning how to learn: How to succeed in school without spending all your time studying; a guide for kids and teens.* TarcherPerigee.`,
@@ -99,7 +99,7 @@ How to use it:
 
 This is why every quiz in Learn.WitUS courses links each question back to the lesson that teaches it: the quiz isn't just a grade, it's a learning tool.
 
-**Check yourself.** Why did rereading look *better* than testing on an immediate test but *worse* after a week?
+:::reveal Why did rereading look *better* than testing on an immediate test but *worse* after a week? ||| Rereading builds easy short-term familiarity, so it flatters an immediate test. But testing forces effortful retrieval, which strengthens durable memory — so a week later, once familiarity has faded, the tested group remembers far more. The struggle to recall is the mechanism; if it feels easy, little learning is happening.
 
 ## Sources
 - Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. *Psychological Science, 17*(3), 249-255. https://doi.org/10.1111/j.1467-9280.2006.01693.x
@@ -131,7 +131,7 @@ How to use it:
 - **Combine spacing with retrieval**: each review should be a *recall* attempt, not a reread. This is "spaced retrieval," and it's the engine behind every good flashcard system.
 - **Let software do the scheduling.** A spaced-repetition tool like **FlashLearn** tracks each card and resurfaces it right around when you're about to forget it, automating the expanding-interval pattern so you don't have to plan it by hand.
 
-**Check yourself.** You have four hours to prepare for a test next week. What's the better plan: one four-hour session tonight, or four one-hour sessions across the week, and why?
+:::reveal You have four hours to prepare for a test next week. What's the better plan: one four-hour session tonight, or four one-hour sessions across the week, and why? ||| Four one-hour sessions across the week. Spacing lets memory consolidate between sessions (including over several nights of sleep) and turns each review into a fresh recall attempt, which is far more effective than one massed four-hour block of rereading.
 
 ## Sources
 - Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. *Psychological Bulletin, 132*(3), 354-380. https://doi.org/10.1037/0033-2909.132.3.354
@@ -163,7 +163,7 @@ How to use it:
 - **Shuffle your flashcards** rather than reviewing in a fixed, predictable order.
 - **Expect it to feel worse** than blocking, and trust the delayed payoff, not the in-session feeling.
 
-**Check yourself.** Interleaving made practice *feel* harder and look worse that day. Why is that a sign it's working, not failing?
+:::reveal Interleaving made practice *feel* harder and look worse that day. Why is that a sign it's working, not failing? ||| Because interleaving is a desirable difficulty: mixing problem types forces you to choose the right approach each time (real retrieval), which feels worse in the moment but builds stronger, more flexible memory. The discomfort isn't a bug, it's the work; blocked practice feels smooth precisely because it's doing less.
 
 ## Sources
 - Rohrer, D., & Taylor, K. (2007). The shuffling of mathematics problems improves learning. *Instructional Science, 35*(6), 481-498. https://doi.org/10.1007/s11251-007-9015-8
@@ -239,7 +239,7 @@ The implications for studying are direct:
 
 This is also the deepest form of the **diffuse mode** from Lesson 2: your brain making connections while you're not consciously working.
 
-**Check yourself.** Give two reasons an all-nighter is a poor way to prepare, in terms of consolidation and the modes of thinking.
+:::reveal Give two reasons an all-nighter is a poor way to prepare, in terms of consolidation and the modes of thinking. ||| (1) Sleep is when memories consolidate and get integrated and locked in, so skipping it trades away the very process that would have secured what you crammed. (2) An exhausted brain also loses the diffuse mode — the relaxed, connection-making state that helps you solve and integrate — leaving you only a depleted focused mode.
 
 ## Sources
 - Diekelmann, S., & Born, J. (2010). The memory function of sleep. *Nature Reviews Neuroscience, 11*(2), 114-126. https://doi.org/10.1038/nrn2762`,
@@ -271,7 +271,7 @@ The ingredients of deliberate practice:
 
 For studying, this means: **don't practice what you already know.** Find your error-prone spots, drill those specifically, check answers immediately, and keep nudging the difficulty up. Note how naturally this pairs with retrieval practice (testing finds your weak spots) and interleaving (it keeps you at the edge).
 
-**Check yourself.** What two features turn ordinary repetition into deliberate practice?
+:::reveal What two features turn ordinary repetition into deliberate practice? ||| Aiming at a specific target just beyond your reach, with full concentration and immediate feedback, then repeating with refinement (Ericsson et al., 1993).
 
 ## Sources
 - Ericsson, K. A., Krampe, R. Th., & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. *Psychological Review, 100*(3), 363-406. https://doi.org/10.1037/0033-295X.100.3.363`,
@@ -308,7 +308,7 @@ Why it works, in terms of this course:
 - **The breaks feed diffuse mode and prevent the burnout** of marathon sessions, and they fit naturally with spacing rather than cramming.
 - **It targets the *process*, not the *outcome*.** You promise yourself effort (25 focused minutes), not a result (a finished essay). Outcomes cause anxiety; process is doable.
 
-**Check yourself.** Procrastination is often about avoiding a *feeling*, not avoiding *work*. How does committing to 25 minutes of effort (rather than to finishing) defuse that feeling?
+:::reveal Procrastination is often about avoiding a *feeling*, not avoiding *work*. How does committing to 25 minutes of effort (rather than to finishing) defuse that feeling? ||| Procrastination avoids a feeling, not the work. Promising effort (a 25 minute focused block) rather than an outcome lowers the cost of starting, which is the hardest part.
 
 ## Sources
 - Cirillo, F. (2018). *The Pomodoro Technique: The acclaimed time-management system that has transformed how we work.* Currency.`,
@@ -340,7 +340,7 @@ The cure is to **replace the feeling with a measurement**, and the measurement i
 
 The Learn.WitUS quiz design is built for exactly this: each result links to the lesson behind the answer, so a miss isn't a grade: it's a pointer to your next study target.
 
-**Check yourself.** Why is "this feels familiar" a dangerous signal, and what should you do instead of trusting it?
+:::reveal Why is "this feels familiar" a dangerous signal, and what should you do instead of trusting it? ||| Familiarity is an illusion of competence: "this looks familiar" is not "I can explain this without looking," and it fools you into stopping too soon. Instead, trust performance — close the book and produce the idea from memory (the Feynman move: explain it simply); wherever you stall is exactly what to study next.
 
 ## Sources
 - Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. *American Psychologist, 34*(10), 906-911. https://doi.org/10.1037/0003-066X.34.10.906
@@ -419,7 +419,7 @@ Notice that the system isn't a pile of separate tricks: the techniques **reinfor
 
 The discomfort is the tell. If your studying feels smooth and easy, you're probably building familiarity, not memory. If it feels effortful (recalling, mixing, spacing, drilling the hard parts), that's the sound of learning that lasts.
 
-**Check yourself.** Pick a subject you're learning now. Write the one step of this loop you're currently *skipping*, and how you'll add it this week.
+:::reveal Pick a subject you're learning now. Write the one step of this loop you're currently *skipping*, and how you'll add it this week. ||| There's no single right answer — most people skip retrieval (rereading instead of recalling), spacing (cramming), or metacognition (never checking what they actually can't do). Name the one you skip and add it concretely this week; the techniques reinforce each other, and the discomfort of effortful study is the tell that it's working.
 
 ## Sources
 - Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving students' learning with effective learning techniques: Promising directions from cognitive and educational psychology. *Psychological Science in the Public Interest, 14*(1), 4-58. https://doi.org/10.1177/1529100612453266

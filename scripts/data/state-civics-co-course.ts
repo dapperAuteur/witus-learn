@@ -138,7 +138,7 @@ Why it matters: TABOR makes **the voters the gatekeepers of taxation and spendin
 
 ⚠️ **Time-sensitive.** TABOR's caps, refund mechanics, and interactions with other measures change year to year and are frequently litigated and on the ballot. For the **current** numbers and rules, rely on [leg.colorado.gov](https://leg.colorado.gov) and [sos.state.co.us](https://sos.state.co.us) rather than a fixed figure.
 
-**Check yourself.** Under TABOR, who must approve a tax increase in Colorado, and what happens to revenue collected above the cap?
+:::reveal Under TABOR, who must approve a tax increase in Colorado, and what happens to revenue collected above the cap? ||| The voters must approve any tax increase — TABOR makes voters the gatekeepers of taxation and spending. Revenue collected above the cap must be refunded to taxpayers, unless voters agree to let their government keep and spend it ("de-Brucing").
 
 ## Sources
 - Colorado General Assembly. (n.d.). *TABOR (Colorado Constitution, Article X, Section 20)*. leg.colorado.gov. https://leg.colorado.gov/
@@ -219,7 +219,7 @@ The takeaway: in Colorado the Legislature is the usual road, but **the voters ha
 - **Contact your legislators** in Denver, and testify. The GAVEL rule means your bill gets heard.
 - **Run**: school board, city council, special-district, and county offices are reachable starting points.
 
-**Check yourself.** How does a Colorado voter receive their ballot, and who draws Colorado's district maps since 2018?
+:::reveal How does a Colorado voter receive their ballot, and who draws Colorado's district maps since 2018? ||| Every Colorado voter is mailed their ballot (track it at sos.state.co.us). Since 2018, independent citizen redistricting commissions — not the Legislature — draw Colorado's congressional and legislative district maps.
 
 ## Sources
 - Colorado Secretary of State. (n.d.). *Voting in Colorado: mail ballots, registration; independent redistricting commissions*. sos.state.co.us. https://www.sos.state.co.us/

@@ -113,7 +113,7 @@ Large language models are *text* predictors, not calculators. They can add a col
 
 > **Trust DNA:** AI can teach you *what* CAC and LTV mean and *how* to compute them. The actual inputs must be your real, verified numbers, and you re-check the arithmetic.
 
-**Check yourself.** Why is "we're selling a lot" not enough on its own, and which two numbers do you compare to know if getting customers is actually worth it?
+:::reveal Why is "we're selling a lot" not enough on its own, and which two numbers do you compare to know if getting customers is actually worth it? ||| High sales can still lose money if each customer costs more to win than they're worth. Compare CAC (cost to acquire a customer) against LTV (the lifetime value that customer brings): value in must beat cost to acquire, with a common rough rule of LTV several times CAC. Use your real, verified numbers and re-check the arithmetic.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Manage your finances*: cost-benefit analysis and accounting for revenue vs. expenses behind each sale. https://www.sba.gov/business-guide/manage-your-business/manage-your-finances`,
@@ -247,7 +247,7 @@ A projection is a *story about the future*, and the future doesn't read your spr
 
 > **Trust DNA, capstone form:** the most expensive AI mistakes are the ones about money. Verify every number, keep a human on taxes and compliance, and treat urgency around payment as a red flag, not a deadline.
 
-**Check yourself.** For each of the three risks, name the human-in-the-loop move that protects you (one sentence each).
+:::reveal For each of the three risks, name the human-in-the-loop move that protects you (one sentence each). ||| AI: keep a human verifying every number and factual claim before you rely on it. Taxes: keep a human (or a professional) accountable for filing and compliance rather than trusting a tool's output. Scams: slow down and verify any payment request through a known channel, treating urgency as a red flag, not a deadline.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: human oversight; valid and reliable AI; accountability. https://www.nist.gov/itl/ai-risk-management-framework

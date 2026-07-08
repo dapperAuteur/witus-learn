@@ -57,7 +57,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 **How this course is organized.** Twelve sections move from **roots → history → belief → materia → workings → divination → regions → commerce → the Hyatt corpus → culture → ethics.** A fill-in **exercise** and a final **quiz** close it out. Every content lesson ends with a **Check yourself** prompt and a cited **## Sources** list.
 
-**Check yourself.** State the two kinds of sources this course uses and how it treats each; then name the single most important distinction to keep straight (hint: it is not "Voodoo").
+:::reveal State the two kinds of sources this course uses and how it treats each; then name the single most important distinction to keep straight (hint: it is not "Voodoo"). ||| Hoodoo is an African American folk practice (conjure, rootwork). Vodou (Haitian) and Vodun (West African) are organized religions with deities, priesthoods, and liturgy. They are related but distinct. Scholarship (historians, anthropologists, folklorists, and the Hyatt field record) carries the factual and historical claims. Practitioner literature shows what practice looks like from inside and is cited as practitioner perspective, not settled fact.
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
@@ -88,7 +88,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 ⚠️ **A scholarly caution.** The enslaved came from many nations, and the record is thin and mediated. Scholars therefore report a **broad consensus** (strong Kongo influence + West African + syncretic elements) while **debating finer attributions**. Treat confident one-to-one "this came from exactly here" claims (common in popular books) with care.
 
-**Check yourself.** Define *nkisi/minkisi* and explain, in two or three sentences, how it relates to the mojo bag. Then name one West African contribution distinct from the Kongo thread.
+:::reveal Define *nkisi/minkisi* and explain, in two or three sentences, how it relates to the mojo bag. Then name one West African contribution distinct from the Kongo thread. ||| A nkisi is a Kongo consecrated container (a bag, bundle, or figure) packed with medicines (bilongo) and animated to heal, protect, judge, or bind. The Hoodoo mojo bag is widely read as its descendant.
 
 ## Sources
 - Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
@@ -131,7 +131,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 ⚠️ **Historical, not instructional.** This lesson reports **what people did and believed** under slavery. It is not a manual, and the hostile side of conjure is treated as **history and ethics** (Section 12), not how-to.
 
-**Check yourself.** List three roles the conjure/root doctor filled, and give two distinct ways conjure connected to resistance. Then note the "complicated figure" point in one sentence.
+:::reveal List three roles the conjure/root doctor filled, and give two distinct ways conjure connected to resistance. Then note the "complicated figure" point in one sentence. ||| Often healer, herbalist, midwife, counselor, and spiritual specialist at once. With little access to white medicine, communities relied on this figure for births, illness, injury, and trouble, which gave real authority. Enslavers feared poisoning and conjure, which the enslaved could sometimes turn to advantage; belief in spiritual protection could embolden revolt (as with Gullah Jack in the 1822 Denmark Vesey conspiracy); and simply keeping an African-derived spiritual life alive was itself defiance.
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
@@ -170,7 +170,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 ⚠️ **Framing note.** This describes practitioners' **belief and use** of scripture. It is not a claim that reciting a verse produces a physical outcome, and it is not religious or professional advice.
 
-**Check yourself.** Explain how practitioners historically reconciled Hoodoo with Christianity, why Moses is read as a "conjurer," and how you'd treat a book's Psalm-by-Psalm correspondence table (as fact, or as one lineage's system?).
+:::reveal Explain how practitioners historically reconciled Hoodoo with Christianity, why Moses is read as a "conjurer," and how you'd treat a book's Psalm-by-Psalm correspondence table (as fact, or as one lineage's system?). ||| Hoodoo was a companion to the church, not a rival. The same person might worship on Sunday and consult a root doctor on Monday and see no contradiction, since both reached for spiritual power to meet life's troubles. As one lineage's system, not fixed doctrine. Scripture in practice is real and old, but the detailed verse-by-verse tables are later systematizations that vary from book to book, so read them as practitioner perspective.
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
@@ -213,7 +213,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 **Where we know this from.** The **range** of these materials is documented above all by **Hyatt** (1970 to 1978) and **Puckett** (1926); practitioner books (Yronwode; Casas; Moise; Shone; Alvarado) organize and teach them today (**practitioner perspective**).
 
-**Check yourself.** Name three roots/herbs with their traditional associations, define a "personal concern," and state two categories of item on this list that carry a safety or legal flag (and why).
+:::reveal Name three roots/herbs with their traditional associations, define a "personal concern," and state two categories of item on this list that carry a safety or legal flag (and why). ||| A personal concern is something of the target such as hair, nail parings, a name on paper, a photograph, or a footprint. The belief is that a connection to the person carries the working, which anthropologists call contagious or sympathetic magic.
 
 ## Sources
 - Puckett, N. N. (1926). *Folk beliefs of the Southern Negro*. University of North Carolina Press. (Public domain.)
@@ -260,7 +260,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 **A note on the "how."** Real workings involve **timing** (days, moon), **prayer/scripture** (Section 4), **direction and disposal**, and above all **the worker's focus and faith**. This survey conveys the **shape and meaning** of these families **without** functioning as a step-by-step manual, consistent with this course's responsibility even in private study.
 
-**Check yourself.** Match each to its aim: mojo hand, honey jar, uncrossing, red-brick-dust wash, foot-track work, crossroads. Then identify which two families this lesson treats as **history/ethics only**, and why.
+:::reveal Match each to its aim: mojo hand, honey jar, uncrossing, red-brick-dust wash, foot-track work, crossroads. Then identify which two families this lesson treats as **history/ethics only**, and why. ||| It sets a person's name-paper in honey or sugar with a candle to sweeten how someone regards you, for love, family peace, a boss, or a court. The logic is sympathetic: as this is sweet, so let their feeling be sweet. Baths, washes, smoke, and egg cleansings remove a crossed condition, bad luck, or unnatural illness. Its aim is relief, which is why it is the least controversial. Note that unnatural illness is a cultural category, not a medical diagnosis.
 
 ## Sources
 - Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
@@ -303,7 +303,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 **Where we know this from.** **Puckett (1926)** and **Hyatt (1970 to 1978)** record the signs, dreams, and reading-methods as they were actually reported; **Long (2001)** documents the dream-book commerce; practitioner books teach the methods as living practice.
 
-**Check yourself.** Name three divination methods used in conjure, explain what "reading before acting" accomplishes, and state the flag about "natural vs. unnatural" trouble in one sentence.
+:::reveal Name three divination methods used in conjure, explain what "reading before acting" accomplishes, and state the flag about "natural vs. unnatural" trouble in one sentence. ||| Divination reads the situation and the unseen before any work, setting the whole working. A central question is whether the trouble is natural (needing a doctor, lawyer, or conversation) or unnatural (a crossed condition).
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
@@ -346,7 +346,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 **Hazzard-Donald's argument.** Katrina **Hazzard-Donald (2013)** distinguishes an older, **community-rooted "Old Black Belt Hoodoo system"** from later **"marketeered"** forms, arguing that commerce and outsiders reshaped (and in places thinned) the tradition even as it spread. Whether one fully accepts the sharp line, it's a **useful frame** for seeing change and continuity together.
 
-**Check yourself.** Contrast the Low Country/Gullah and the Delta as Hoodoo homelands, and explain what the Great Migration did to the tradition. Then state Hazzard-Donald's "old system vs. marketeered" distinction in one sentence.
+:::reveal Contrast the Low Country/Gullah and the Delta as Hoodoo homelands, and explain what the Great Migration did to the tradition. Then state Hazzard-Donald's "old system vs. marketeered" distinction in one sentence. ||| Relatively isolated Sea Island communities, descended largely from rice-culture West and Central Africans, preserved unusually strong African retentions in language (Gullah creole), foodways, and spiritual life. It was home to legendary root doctors like Dr. Buzzard. It carried Hoodoo into cities like Chicago, Detroit, and New York, where it met the cash economy and mail order (fueling spiritual-supply shops and catalogs), gave rise to Spiritual churches blending conjure with Catholic and Protestant elements, and took on urban concerns.
 
 ## Sources
 - Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.
@@ -383,7 +383,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 **Why this matters even for private study.** Studying privately doesn't exempt anyone from **respect**. The responsible posture, the one this course models, is to **learn from the tradition's own communities and scholarship**, to **credit and center** them, and to be **honest about the appropriation and commodification** woven into the modern supply chain.
 
-**Check yourself.** Summarize Long's finding about who ran the spiritual-supply business, define "appropriation" in this context, and name the live practitioner debate (who may practice/teach) without claiming to resolve it.
+:::reveal Summarize Long's finding about who ran the spiritual-supply business, define "appropriation" in this context, and name the live practitioner debate (who may practice/teach) without claiming to resolve it. ||| That a folk practice met mass production, and that many manufacturers and shop owners were not part of the tradition, often white or immigrant businessmen profiting from a Black practice. Commercialization both preserved knowledge and diluted it. Practitioners argue openly over who may practice and teach, over initiatory versus open transmission, and over commercialization. Voices like Starr Casas emphasize family and African American lineage and the Christian core, while teachers like Sherry Shone and Denise Alvarado frame a more open approach.
 
 ## Sources
 - Long, C. M. (2001). *Spiritual merchants: Religion, magic, and commerce*. University of Tennessee Press.
@@ -429,7 +429,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 **Practitioner authors, labeled.** **Yronwode**, **Casas**, **Moise**, **Shone**, and **Alvarado** are cited throughout this course **as practitioner perspectives**, knowledgeable, useful, and **sometimes in disagreement with each other**. That disagreement is a **feature** to study, not a defect to resolve.
 
-**Check yourself.** Give two reasons the Hyatt corpus must be read critically, explain why Hurston's vantage differs from Hyatt's, and state the two questions to ask of every claim.
+:::reveal Give two reasons the Hyatt corpus must be read critically, explain why Hurston's vantage differs from Hyatt's, and state the two questions to ask of every claim. ||| A white outsider paid Black informants for their knowledge in the Jim Crow South, which shaped what was shared, withheld, or exaggerated, and how it was framed. It also captured contradictory practices, so it shows the tradition's breadth and variety, not a single correct doctrine. First, who is speaking and with what authority: a historian documenting what people did, or a practitioner teaching what they do? Second, is this fact, interpretation, or one lineage's system?
 
 ## Sources
 - Hyatt, H. M. (1970 to 1978). *Hoodoo, conjuration, witchcraft, rootwork* (Vols. 1 to 5). Alma Egan Hyatt Foundation. (Field documentation; reference.)
@@ -468,7 +468,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 **The takeaway.** Hoodoo is **not a footnote**. It is a **root system** beneath a great deal of African American art, faith, and identity, a tradition of **knowledge, healing, and resistance** that helped a people survive and shaped a culture the whole world borrows from.
 
-**Check yourself.** Give one specific example of Hoodoo in the blues (song + the conjure item it names) and two writers who documented or drew on the tradition. Then note how the crossroads legend both uses and distorts the older Kongo idea.
+:::reveal Give one specific example of Hoodoo in the blues (song + the conjure item it names) and two writers who documented or drew on the tradition. Then note how the crossroads legend both uses and distorts the older Kongo idea. ||| Muddy Waters' 'Hoochie Coochie Man' name-checks the mojo, the John the Conqueror root, and the seventh son. The Robert Johnson crossroads legend draws on the Hoodoo (ultimately Kongo) idea of the crossroads as a place of spiritual power, but distorts it by adding a Christian devil the older tradition did not require. Zora Neale Hurston (Mules and Men) documented it firsthand and wove it through her fiction. Charles Chesnutt (The Conjure Woman), Ishmael Reed (Mumbo Jumbo and 'Neo-HooDoo'), Toni Morrison, and Gloria Naylor (Mama Day) drew on it.
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.
@@ -511,7 +511,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 **The through-line.** Hoodoo carried **knowledge, healing, dignity, and defiance** through the darkest chapter of American history and shaped a whole culture. Studying it well means honoring **all** of that: its beauty and its hard edges, its Africa and its America, its faith and its resistance, with **respect, accuracy, and care.**
 
-**Check yourself.** State the first ethic (origin/credit), the autonomy principle, and one legal-or-safety flag; then explain, in a sentence, why "Hoodoo is not Voodoo" is an **ethical** point and not just a factual one.
+:::reveal State the first ethic (origin/credit), the autonomy principle, and one legal-or-safety flag; then explain, in a sentence, why "Hoodoo is not Voodoo" is an **ethical** point and not just a factual one. ||| The first ethic is to honor the tradition's African American origins and credit them rather than appropriate (the respectful posture is to listen and credit). The autonomy principle is that the tradition's own communities and practitioners have the right to define and transmit their practice. A legal-or-safety flag: some materials (certain herbs and roots) or acts framed as harming another carry real health or legal risk. "Hoodoo is not Voodoo" is ethical, not just factual, because conflating them erases a distinct people's history and dignity and spreads a harmful stereotype.
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.

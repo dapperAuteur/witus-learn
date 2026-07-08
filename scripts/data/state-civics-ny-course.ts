@@ -262,7 +262,7 @@ You use **one or the other** for a given election: a voter issued an early mail 
 
 **Vote on the ballot questions, including the big one.** When statewide **ballot proposals** appear (legislatively referred amendments and bond acts), those are real decisions, not throwaway lines. Read up before you fill them in. And remember New York's **automatic 20-year convention question** (next due in **2037**): when it appears, *you*, the voter, decide whether to reopen the whole state constitution.
 
-**Check yourself.** Name three specific ways to get involved in New York government, and explain why contacting your state legislators is especially important in New York given its lack of a statewide citizen initiative.
+:::reveal Name three specific ways to get involved in New York government, and explain why contacting your state legislators is especially important in New York given its lack of a statewide citizen initiative. ||| Three ways: contact your Assembly member and Senator and testify, show up at your county legislature/board, city council, town board, or village board, and vote on the statewide ballot proposals (including the 20-year constitutional-convention question, next due 2037). Contacting legislators is especially important because New York has no statewide citizen initiative, so the Legislature — not a ballot petition — is how state law gets changed.
 
 ## Sources
 - New York State Senate. (n.d.-e). *How a bill becomes a law / find your legislators*. NYSenate.gov. https://www.nysenate.gov/how-bill-becomes-law

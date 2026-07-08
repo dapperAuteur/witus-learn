@@ -187,7 +187,7 @@ The practical effect: in most of Missouri your county is a key unit, but if you 
 - **Weigh in on judges.** Because of the Missouri Plan, you get a **yes/no retention vote** on many judges, an often-overlooked part of your ballot worth researching.
 - **Run**: school board, city council, and county offices are reachable local starting points.
 
-**Check yourself.** What kind of vote does the Missouri Plan give you on many judges, and where should you confirm current voting rules?
+:::reveal What kind of vote does the Missouri Plan give you on many judges, and where should you confirm current voting rules? ||| Under the Missouri Plan you get a yes/no retention vote on many judges — they're chosen through merit selection, then you decide whether to keep them. Confirm current voting rules at sos.mo.gov.
 
 ## Sources
 - Missouri Secretary of State. (n.d.). *Voting in Missouri: photo ID, absentee and early voting, registration*. sos.mo.gov. https://www.sos.mo.gov/

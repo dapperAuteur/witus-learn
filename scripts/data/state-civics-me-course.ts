@@ -207,7 +207,7 @@ Maine has used both tools often, including to adopt ranked-choice voting itself.
 
 **The habit to build:** pick **one** measure (a town-meeting article, a statewide question, or a bill in Augusta) and follow it start to finish. Maine's direct-democracy tools mean your follow-through can actually change an outcome.
 
-**Check yourself.** Name two direct-democracy actions a Maine citizen can take, and one thing to verify before you vote.
+:::reveal Name two direct-democracy actions a Maine citizen can take, and one thing to verify before you vote. ||| A Maine citizen can sign or circulate a citizen initiative to propose a law, and a people's veto petition to challenge a law the Legislature passed. Before voting, verify your current registration and voting details (and, if your town holds one, your town-meeting date).
 
 ## Sources
 - Maine Secretary of State. (n.d.). *Registering and voting in Maine; same-day registration; ranked-choice voting*. [maine.gov/sos](https://maine.gov/sos). https://www.maine.gov/sos/

@@ -217,7 +217,7 @@ Question: <the user's question>
 
 **Mind the context window, and where you place things.** Everything you stuff in (system prompt + all k chunks + question + room for the answer) must fit the model's **context window** (its max tokens). Two consequences: (1) more/larger chunks cost more tokens and money on *every* call, so retrieve precisely rather than dumping 50 chunks "to be safe"; (2) models can attend unevenly across a very long context, so a flood of marginal chunks can *bury* the relevant one. **Fewer, better chunks usually beat more chunks**, another reason re-ranking down to a tight top-k pays off.
 
-**Check yourself.** Which one instruction most reduces hallucination when retrieval finds nothing relevant, and why does "fewer, better chunks" often beat stuffing in everything you retrieved?
+:::reveal Which one instruction most reduces hallucination when retrieval finds nothing relevant, and why does "fewer, better chunks" often beat stuffing in everything you retrieved? ||| Tell the model to answer only from the provided passages and to say it doesn't know (or that it isn't covered) when they don't contain the answer. Fewer, better chunks win because every chunk costs tokens on each call and models attend unevenly across a long context, so a flood of marginal chunks can bury the one relevant passage.
 
 ## Sources
 - OpenAI. (2025). *Vector embeddings* and prompting guidance, assembling retrieved context and instructing the model. https://platform.openai.com/docs/guides/embeddings
@@ -384,7 +384,7 @@ The decisions that matter:
 
 > **Trust DNA, final form:** the right tool grounds answers you can **cite, scope, and keep current.** RAG isn't a badge of sophistication: reach for it when citable retrieval over changing, access-controlled data is the actual job, and skip it when it isn't.
 
-**Check yourself.** Give one case where you'd choose long-context over RAG, and one where you'd choose RAG over fine-tuning. Why must access-control filtering happen *at retrieval time*, in the same query as the similarity search?
+:::reveal Give one case where you'd choose long-context over RAG, and one where you'd choose RAG over fine-tuning. Why must access-control filtering happen *at retrieval time*, in the same query as the similarity search? ||| Choose long-context when the whole relevant corpus is tiny and fits the window (a vector store for ten paragraphs is over-engineering). Choose RAG over fine-tuning when you need citable, access-controlled, frequently-updated answers over a big corpus — fine-tuning teaches style, not fresh facts, and gives no citations. Access control must run at retrieval time, in the same query as the similarity search, so a user can never retrieve, or have the model quote, a chunk they aren't allowed to see.
 
 ## Sources
 - OWASP. (2025). *Top 10 for LLM Applications 2025*, LLM08: Vector and Embedding Weaknesses (access-control failures / context leakage in multi-tenant vector stores). https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/

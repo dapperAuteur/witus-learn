@@ -168,7 +168,7 @@ Rhode Island has **no statewide citizen initiative**; **constitutional amendment
 
 **The habit to build:** in a state this small, **one engaged resident** can genuinely influence a town budget or a State House bill. Pick one issue and follow it.
 
-**Check yourself.** With no counties, what local bodies make most decisions in Rhode Island, and what should you verify before voting?
+:::reveal With no counties, what local bodies make most decisions in Rhode Island, and what should you verify before voting? ||| With no county governments, your city or town council (or the town/financial town meeting in smaller towns) and your school committee make most local decisions. Before voting, verify your current registration and rules at the Secretary of State, along with any amendment questions on your ballot.
 
 ## Sources
 - Rhode Island Secretary of State. (n.d.). *Registering and voting: early voting, mail ballots, ID; local boards of canvassers*. sos.ri.gov. https://www.sos.ri.gov/

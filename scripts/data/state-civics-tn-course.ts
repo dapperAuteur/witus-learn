@@ -225,7 +225,7 @@ The practical effect: in Tennessee, the **county** is a major unit of government
 - **Weigh in on amendments.** You can't start one, but the Legislature refers **constitutional amendments** to the ballot, and your turnout in the governor's race affects whether they pass.
 - **Run**: school board, city council, county commission, and county offices are reachable local starting points.
 
-**Check yourself.** Does Tennessee offer no-excuse absentee voting, and where should you confirm the current rules?
+:::reveal Does Tennessee offer no-excuse absentee voting, and where should you confirm the current rules? ||| No — Tennessee does not offer no-excuse absentee voting; you must qualify under a specific excuse (though early in-person voting is available). Confirm the current rules with the Secretary of State or your county election office before you vote.
 
 ## Sources
 - Tennessee Secretary of State. (n.d.). *Voting in Tennessee: photo ID, absentee excuses, early voting*. sos.tn.gov. https://sos.tn.gov/

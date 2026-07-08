@@ -140,7 +140,7 @@ The **Judicial** branch runs from trial courts up to the **Court of Appeals** an
 
 The takeaway: in Washington, **the Legislature is the usual road, but the voters have their own on-ramps**, a recurring theme of this course.
 
-**Check yourself.** Name the two forms of initiative Washington voters can use, and say what makes them different.
+:::reveal Name the two forms of initiative Washington voters can use, and say what makes them different. ||| The Initiative to the People (signatures put a proposed law straight on the ballot) and the Initiative to the Legislature (signatures send the proposed law to lawmakers first; if they don't enact it, it goes to the voters). The difference is whether the measure goes directly to the ballot or passes through the Legislature first.
 
 ## Sources
 - Washington State Legislature. (n.d.). *How a bill becomes law*. [leg.wa.gov](https://leg.wa.gov). https://leg.wa.gov/
@@ -207,7 +207,7 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
 - **Contact your legislators.** You have one Senator and two Representatives from your district in Olympia.
 - **Run.** School board, city council, port commission, and county offices are reachable local starting points.
 
-**Check yourself.** Does Washington levy a personal state income tax, and why does this course say to VERIFY the current answer?
+:::reveal Does Washington levy a personal state income tax, and why does this course say to VERIFY the current answer? ||| No — Washington has no personal state income tax; it relies on sales and other taxes instead. Verify the current answer because tax law is contested and changes — new taxes and court rulings can shift what's true — so confirm it rather than trust a fixed figure.
 
 ## Sources
 - Washington State Legislature. (n.d.). *Washington tax structure; local government (counties, code cities)*. [leg.wa.gov](https://leg.wa.gov). https://leg.wa.gov/

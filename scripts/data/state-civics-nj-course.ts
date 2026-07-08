@@ -170,7 +170,7 @@ The practical effect: in New Jersey, **a great deal happens at the town level**,
 - **Weigh in on amendments.** You can't start a ballot measure, but the Legislature refers **constitutional amendments** to you. Read them and vote.
 - **Run**: school board, borough/township council, and county commission are reachable local starting points.
 
-**Check yourself.** In which years does New Jersey elect its Governor, and who administers the details of New Jersey elections?
+:::reveal In which years does New Jersey elect its Governor, and who administers the details of New Jersey elections? ||| New Jersey elects its Governor in odd years (one of only a couple of states that do). The details of elections are administered by county election officials (confirm rules at nj.gov/state/elections).
 
 ## Sources
 - New Jersey Division of Elections. (n.d.). *Voting in New Jersey: early voting, vote-by-mail, registration*. nj.gov/state/elections. https://www.nj.gov/state/elections/
