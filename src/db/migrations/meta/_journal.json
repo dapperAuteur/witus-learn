@@ -190,6 +190,13 @@
       "when": 1783444744437,
       "tag": "0026_tricky_green_goblin",
       "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "7",
+      "when": 1783508223612,
+      "tag": "0027_talented_legion",
+      "breakpoints": true
     }
   ]
 }
