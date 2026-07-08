@@ -168,6 +168,25 @@ live / end / set the saved recording from the same screen. A dedicated **/live**
 sessions for the school.`,
   },
   {
+    slug: "cohorts",
+    title: "Run a private class with Cohorts",
+    category: "Live",
+    keywords: ["cohort", "class", "roster", "invite", "home school", "homeschool", "students", "who's here", "presence"],
+    body: `# Cohorts
+
+**Admin → Cohorts** lets you run a private class — the home-school use case (a parent asks you to
+teach their child + classmates live).
+
+1. **Create a class** — give it a name (e.g. "Tuesday homeschool group").
+2. **Invite students by email** from the class's roster page. Each invite is a one-time link; if
+   email delivery isn't configured yet, the link is shown right there to copy and send yourself.
+3. Students open the link, sign in (magic link), and land on **/live** already enrolled.
+4. The roster shows **● here** next to any student currently present on /live, so you can see who
+   showed up in real time. Remove a student from the roster at any time.
+
+A plain instructor sees only their own classes; brand admins/owner can see any class on the school.`,
+  },
+  {
     slug: "learner-feedback-and-reports",
     title: "See learner feedback and problem reports",
     category: "Feedback",
