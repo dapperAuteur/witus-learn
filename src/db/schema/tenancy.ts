@@ -145,6 +145,11 @@ export const userProfiles = pgTable("user_profiles", {
   avatarUrl: text("avatar_url"),
   links: jsonb("links").$type<ProfileLinks>().notNull().default({}),
   isPlatformOwner: boolean("is_platform_owner").notNull().default(false),
+  // Family Model B: non-null ⇒ this is a login-less managed child profile (a real `users`
+  // row with a synthetic, non-deliverable email) owned/operated by this parent. The parent
+  // "studies as" this profile via the active-learner cookie (src/lib/active-learner.ts);
+  // `isManagedChildOf` is the mandatory gate before any act-as or /family read.
+  managedByUserId: text("managed_by_user_id").references(() => users.id, { onDelete: "cascade" }),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 });

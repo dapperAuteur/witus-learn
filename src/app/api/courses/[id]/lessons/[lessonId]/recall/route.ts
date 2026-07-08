@@ -2,6 +2,7 @@ import { z } from "zod";
 import { apiContext, errorJson, json } from "@/lib/api";
 import { getLessonById } from "@/db/queries/authoring";
 import { recordRecallAttempt } from "@/db/queries/recall";
+import { getActiveLearner } from "@/lib/active-learner";
 
 const Schema = z.object({
   promptIndex: z.number().int().min(0).max(200),
@@ -16,6 +17,7 @@ export async function POST(req: Request, { params }: Params) {
   const { id, lessonId } = await params;
   const { sdb, session } = await apiContext();
   if (!session) return errorJson("Sign in first", 401);
+  const learner = (await getActiveLearner(session))!;
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
@@ -27,7 +29,7 @@ export async function POST(req: Request, { params }: Params) {
 
   await recordRecallAttempt({
     tenantId: sdb.tenantId,
-    userId: session.user.id,
+    userId: learner.id,
     courseId: id,
     lessonId,
     promptIndex: parsed.data.promptIndex,

@@ -5,6 +5,7 @@ import { getCompletedLessonIds } from "@/db/queries/progress";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { lessonAccess } from "@/lib/gating";
 import { upsertSubmission } from "@/db/queries/assignments";
+import { getActiveLearner } from "@/lib/active-learner";
 
 const Schema = z.object({ body: z.string().min(1).max(20000) });
 
@@ -16,6 +17,7 @@ export async function POST(req: Request, { params }: Params) {
   const { id, lessonId } = await params;
   const { sdb, session } = await apiContext();
   if (!session) return errorJson("Unauthorized", 401);
+  const learner = (await getActiveLearner(session))!;
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
@@ -27,10 +29,10 @@ export async function POST(req: Request, { params }: Params) {
   const isEditor = await canEditCourse(session, sdb.tenantId, course);
   const all = await listLessons(id);
   const ordered = (isEditor ? all : all.filter((l) => l.isPublished)).map((l) => l.id);
-  const completed = new Set(await getCompletedLessonIds(session.user.id, id));
+  const completed = new Set(await getCompletedLessonIds(learner.id, id));
   const access = lessonAccess(course, lesson, {
     isEditor,
-    isEnrolled: await isEnrolled(session.user.id, id),
+    isEnrolled: await isEnrolled(learner.id, id),
     completedLessonIds: completed,
     orderedLessonIds: ordered,
   });
@@ -43,7 +45,7 @@ export async function POST(req: Request, { params }: Params) {
     tenantId: sdb.tenantId,
     courseId: id,
     lessonId,
-    userId: session.user.id,
+    userId: learner.id,
     body: parsed.data.body,
   });
   return json({ ok: true });

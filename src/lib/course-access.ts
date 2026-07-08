@@ -7,6 +7,7 @@ import { getCompletedLessonIds } from "@/db/queries/progress";
 import { isEnrolled as checkEnrolled } from "@/db/queries/enrollment";
 import { canAccessCourse } from "@/lib/api";
 import { getSession } from "@/lib/session";
+import { getActiveLearner } from "@/lib/active-learner";
 import { requireTenant, type TenantRecord } from "@/lib/tenant";
 import type { Session } from "@/lib/auth";
 
@@ -14,6 +15,10 @@ export interface CourseView {
   tenant: TenantRecord;
   course: Course;
   session: Session | null;
+  /** The ACTIVE learner's user id (self, or a managed child if "studying as" one) — use
+   *  this, not `session.user.id`, for any further per-learner read the page makes
+   *  (submissions, unmet prerequisites, etc). Null when signed out. */
+  activeLearnerId: string | null;
   isEditor: boolean;
   isEnrolled: boolean;
   lessons: Lesson[];
@@ -25,7 +30,10 @@ export interface CourseView {
 
 /** Load a course (by pretty URL) plus the viewer's access context. Returns null
  *  when it doesn't resolve in this tenant, or is a draft and the viewer can't
- *  edit it — both surface as 404 at the page. */
+ *  edit it — both surface as 404 at the page. Enrollment/progress are read for
+ *  the ACTIVE learner (self, or a managed child), so a parent "studying as" a
+ *  child sees exactly what that child is enrolled in and has completed. Editor
+ *  status is always the real signed-in account — never the active learner. */
 export async function loadCourseView(
   username: string,
   courseSlug: string,
@@ -47,10 +55,11 @@ export async function loadCourseView(
     .from(courseModules)
     .where(eq(courseModules.courseId, course.id))
     .orderBy(asc(courseModules.sortOrder));
-  const [completed, enrolled] = session
+  const learner = await getActiveLearner(session);
+  const [completed, enrolled] = learner
     ? await Promise.all([
-        getCompletedLessonIds(session.user.id, course.id),
-        checkEnrolled(session.user.id, course.id),
+        getCompletedLessonIds(learner.id, course.id),
+        checkEnrolled(learner.id, course.id),
       ])
     : [[] as string[], false];
 
@@ -58,6 +67,7 @@ export async function loadCourseView(
     tenant,
     course,
     session,
+    activeLearnerId: learner?.id ?? null,
     isEditor,
     isEnrolled: enrolled,
     lessons,

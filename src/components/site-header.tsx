@@ -2,11 +2,15 @@ import Link from "next/link";
 import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
+import { getActiveLearner } from "@/lib/active-learner";
+import { listManagedChildren } from "@/db/queries/family";
 import { listCategories } from "@/db/queries/catalog";
 import { tenantHasMapData } from "@/db/queries/map";
 import { SignOutButton } from "./sign-out-button";
 import { ThemeToggle } from "./theme-toggle";
 import { MobileNav, type NavItem } from "./mobile-nav";
+import { ProfileSwitcher } from "./profile-switcher";
+import { ActingAsBanner } from "./acting-as-banner";
 
 // Brand-aware academy header. Nav is driven by the tenant's feature flags — not a
 // fixed CentOS module nav. Accent color comes from the --accent CSS var set by the
@@ -28,6 +32,12 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   // The Commodity Map shows for any school that HAS map data (flag is only a force-hide override).
   const showMap = flags.commodityMap !== false && (await tenantHasMapData(tenant.id));
 
+  // Family Model B "studying as" switcher: only rendered for a parent with ≥1 managed
+  // child. The active learner is re-verified server-side on every request (never trusted
+  // from a cookie alone) by getActiveLearner.
+  const managedChildren = session ? await listManagedChildren(tenant.id, session.user.id) : [];
+  const activeLearner = session ? await getActiveLearner(session) : null;
+
   // One nav model, rendered inline on desktop and in a hamburger drawer on mobile.
   const items: NavItem[] = [
     { href: "/courses", label: "Browse Catalog" },
@@ -48,41 +58,53 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   ];
 
   return (
-    <header className="border-b border-neutral-200 dark:border-neutral-800">
-      <nav className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
-        <Link
-          href="/"
-          className="text-lg font-bold focus-visible:outline-2 focus-visible:outline-offset-2"
-          style={{ color: "var(--accent)" }}
-        >
-          {tenant.theme.wordmark ?? brandName(tenant)}
-        </Link>
+    <>
+      <header className="border-b border-neutral-200 dark:border-neutral-800">
+        <nav className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
+          <Link
+            href="/"
+            className="text-lg font-bold focus-visible:outline-2 focus-visible:outline-offset-2"
+            style={{ color: "var(--accent)" }}
+          >
+            {tenant.theme.wordmark ?? brandName(tenant)}
+          </Link>
 
-        <div className="flex items-center gap-3">
-          <ThemeToggle />
+          <div className="flex items-center gap-3">
+            {managedChildren.length > 0 ? (
+              <ProfileSwitcher
+                currentId={activeLearner?.isChild ? activeLearner.id : null}
+                managedChildren={managedChildren}
+              />
+            ) : null}
 
-          {/* Desktop: inline links */}
-          <ul className="hidden items-center gap-4 text-sm md:flex">
-            {items.map((i) => (
-              <li key={i.href}>
-                <Link
-                  className={`hover:underline ${i.accent ? "font-medium" : ""}`}
-                  style={i.accent ? { color: "var(--accent)" } : undefined}
-                  href={i.href}
-                >
-                  {i.label}
-                </Link>
-              </li>
-            ))}
-            <li>{session ? <SignOutButton /> : <Link className="hover:underline" href="/login">Sign in</Link>}</li>
-          </ul>
+            <ThemeToggle />
 
-          {/* Mobile: hamburger drawer */}
-          <div className="md:hidden">
-            <MobileNav items={items} signedIn={Boolean(session)} />
+            {/* Desktop: inline links */}
+            <ul className="hidden items-center gap-4 text-sm md:flex">
+              {items.map((i) => (
+                <li key={i.href}>
+                  <Link
+                    className={`hover:underline ${i.accent ? "font-medium" : ""}`}
+                    style={i.accent ? { color: "var(--accent)" } : undefined}
+                    href={i.href}
+                  >
+                    {i.label}
+                  </Link>
+                </li>
+              ))}
+              <li>{session ? <SignOutButton /> : <Link className="hover:underline" href="/login">Sign in</Link>}</li>
+            </ul>
+
+            {/* Mobile: hamburger drawer */}
+            <div className="md:hidden">
+              <MobileNav items={items} signedIn={Boolean(session)} />
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+      {activeLearner?.isChild ? (
+        <ActingAsBanner childName={activeLearner.name ?? "your child"} />
+      ) : null}
+    </>
   );
 }

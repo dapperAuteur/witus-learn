@@ -1,0 +1,2 @@
+ALTER TABLE "user_profiles" ADD COLUMN "managed_by_user_id" text;--> statement-breakpoint
+ALTER TABLE "user_profiles" ADD CONSTRAINT "user_profiles_managed_by_user_id_users_id_fk" FOREIGN KEY ("managed_by_user_id") REFERENCES "public"."users"("id") ON DELETE cascade ON UPDATE no action;

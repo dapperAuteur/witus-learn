@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
 import { deleteLiveMessage, listLiveMessages, postLiveMessage } from "@/db/queries/live-chat";
+import { getActiveLearner } from "@/lib/active-learner";
 
 // Live class chat for the current tenant. Any signed-in user reads + posts; tenant admins can delete
 // (moderation). Tenant resolved server-side (isolation). Polled by the client.
@@ -19,9 +20,11 @@ const PostSchema = z.object({ body: z.string().min(1).max(500) });
 export async function POST(req: Request) {
   const { sdb, session } = await apiContext();
   if (!session) return errorJson("Unauthorized", 401);
+  const learner = (await getActiveLearner(session))!;
   const parsed = PostSchema.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return errorJson("Invalid input", 400);
-  const msg = await postLiveMessage(sdb.tenantId, session.user.id, session.user.name ?? null, parsed.data.body.trim());
+  // Chat identity = the ACTIVE learner (self, or a managed child if "studying as" one).
+  const msg = await postLiveMessage(sdb.tenantId, learner.id, learner.name ?? null, parsed.data.body.trim());
   return json(msg, 201);
 }
 

@@ -6,6 +6,7 @@ import { recordQuizAttempt } from "@/db/queries/quiz-attempts";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { lessonAccess } from "@/lib/gating";
 import { questionKey, scoreQuizResponses, type QuizContent, type QuizFeedbackItem, type QuizResponse } from "@/lib/quiz";
+import { getActiveLearner } from "@/lib/active-learner";
 
 // The player submits `responses` (original question + chosen-option indices for the SERVED
 // subset, safe under rotation + option shuffle). Legacy clients may still send `answers`
@@ -27,6 +28,7 @@ export async function POST(req: Request, { params }: Params) {
   const { id, lessonId } = await params;
   const { sdb, session } = await apiContext();
   if (!session) return errorJson("Unauthorized", 401);
+  const learner = (await getActiveLearner(session))!;
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
@@ -38,10 +40,10 @@ export async function POST(req: Request, { params }: Params) {
   const isEditor = await canEditCourse(session, sdb.tenantId, course);
   const all = await listLessons(id);
   const ordered = (isEditor ? all : all.filter((l) => l.isPublished)).map((l) => l.id);
-  const completed = new Set(await getCompletedLessonIds(session.user.id, id));
+  const completed = new Set(await getCompletedLessonIds(learner.id, id));
   const access = lessonAccess(course, lesson, {
     isEditor,
-    isEnrolled: await isEnrolled(session.user.id, id),
+    isEnrolled: await isEnrolled(learner.id, id),
     completedLessonIds: completed,
     orderedLessonIds: ordered,
   });
@@ -61,7 +63,7 @@ export async function POST(req: Request, { params }: Params) {
   const valid = responses.filter((r) => r.questionIndex < content.questions.length);
 
   const result = scoreQuizResponses(content, valid);
-  await upsertProgress(session.user.id, lessonId, {
+  await upsertProgress(learner.id, lessonId, {
     completed: result.passed,
     quizScore: result.score,
     quizAnswers: valid.map((r) => r.optionIndex),
@@ -69,7 +71,7 @@ export async function POST(req: Request, { params }: Params) {
   // Append this attempt to the history (scores over time + per-question performance on retries).
   await recordQuizAttempt({
     tenantId: sdb.tenantId,
-    userId: session.user.id,
+    userId: learner.id,
     courseId: id,
     lessonId,
     score: result.score,
