@@ -125,15 +125,16 @@ async function main() {
   }
 
   // ── S1-only Commodity Map for the schools that share Season 1 (Learn.WitUS + ElementaryMBA).
-  // Origin pins for the six S1 commodities that have a course AND a single origin (ep7 "synthesis"
-  // is a wrap-up, so it's omitted). Each pin links to that tenant's own shared course by slug.
-  // Idempotent by (tenant, name). BVC's own full map is untouched above.
+  // Origin pins for the seven Season-1 commodities, so a shared school's map matches BVC's Season 1.
+  // Each pin links to that tenant's own shared course by slug (Guayusa + Kola Nut share the
+  // "Forest Wisdom" course). Idempotent by (tenant, name). BVC's own full map is untouched above.
   const S1_SHARED: { name: string; slug: string; geo: string; lat: number; lon: number; summary: string }[] = [
     { name: "Coffee", slug: "coffee", geo: "Ethiopian highlands", lat: 9, lon: 40, summary: "The world's second-largest traded commodity; Ethiopian origins." },
     { name: "Tea", slug: "tea", geo: "Yunnan Province, China", lat: 25, lon: 101, summary: "Oldest documented tea cultivation; reshaped the geography of empire." },
     { name: "Chocolate", slug: "chocolate", geo: "Mesoamerica (Maya origin)", lat: 16, lon: -90, summary: "Sacred Maya/Aztec currency; 70% of cacao now grows in West Africa." },
     { name: "Sugar", slug: "sugar", geo: "Caribbean (colonial plantation zone)", lat: 18, lon: -66, summary: "Economic engine of the Atlantic slave trade." },
     { name: "Guayusa", slug: "forest-wisdom", geo: "Ecuadorian Amazon", lat: 0, lon: -77, summary: "Caffeinated holly leaf and Kichwa dream-sharing tradition." },
+    { name: "Kola Nut", slug: "forest-wisdom", geo: "West Africa (Nigeria, Ghana)", lat: 7, lon: 3, summary: "The original caffeinated ingredient in Coca-Cola." },
     { name: "Kava", slug: "kava", geo: "Vanuatu, Pacific Islands", lat: -16, lon: 168, summary: "A root drink of Pacific Island governance ceremonies." },
   ];
   for (const shareSlug of ["learn-witus", "elementary-mba"]) {
@@ -242,6 +243,69 @@ async function main() {
       sortOrder: i,
     });
     console.log(`  + ${beltName}`);
+  }
+
+  // Shared schools (learn-witus, elementary-mba): give them BVC's Season-1 Growing Belts + a home base
+  // pin (Indianapolis), so their /explore matches BVC's Season 1 on BOTH map tabs. Idempotent.
+  const S1_NAMES = new Set(S1_SHARED.map((c) => c.name));
+  for (const shareSlug of ["learn-witus", "elementary-mba"]) {
+    const st = await db.select({ id: schema.tenants.id }).from(schema.tenants).where(eq(schema.tenants.slug, shareSlug)).limit(1);
+    const shareTenant = st[0]?.id;
+    if (!shareTenant) continue;
+
+    // Home base pin (Indianapolis).
+    const homeExists = await db
+      .select({ id: schema.mapCommodities.id })
+      .from(schema.mapCommodities)
+      .where(and(eq(schema.mapCommodities.tenantId, shareTenant), eq(schema.mapCommodities.name, "Home Base")))
+      .limit(1);
+    if (!homeExists[0]) {
+      await db.insert(schema.mapCommodities).values({
+        tenantId: shareTenant,
+        seasonNumber: 1,
+        name: "Home Base",
+        geo: "Indianapolis, Indiana",
+        lat: 39.8,
+        lon: -86.2,
+        color: SEASON_COLOR.home,
+        isHome: true,
+        summary: "WitUS home base — where the story is told.",
+        sortOrder: 99,
+      });
+    }
+
+    // Season-1 growing belts for the shared school (linked to its own commodity rows).
+    const shareCommodities = await db
+      .select({ id: schema.mapCommodities.id, name: schema.mapCommodities.name })
+      .from(schema.mapCommodities)
+      .where(eq(schema.mapCommodities.tenantId, shareTenant));
+    const shareByName = new Map(shareCommodities.map((c) => [c.name, c.id]));
+    for (let i = 0; i < BELTS.length; i++) {
+      const b = BELTS[i];
+      if (!S1_NAMES.has(b.commodity)) continue;
+      const cid = shareByName.get(b.commodity);
+      if (!cid) continue;
+      const beltName = `${b.commodity} belt`;
+      const exists = await db
+        .select({ id: schema.mapBelts.id })
+        .from(schema.mapBelts)
+        .where(and(eq(schema.mapBelts.tenantId, shareTenant), eq(schema.mapBelts.name, beltName)))
+        .limit(1);
+      if (exists[0]) continue;
+      await db.insert(schema.mapBelts).values({
+        tenantId: shareTenant,
+        commodityId: cid,
+        name: beltName,
+        seasonNumber: 1,
+        color: beltColorByName.get(b.commodity) ?? "#888888",
+        latMin: b.latMin,
+        latMax: b.latMax,
+        productionCountryCodes: b.codes,
+        description: b.description,
+        sortOrder: i,
+      });
+    }
+    console.log(`  shared map → ${shareSlug}: home pin + S1 belts`);
   }
 
   await pool.end();

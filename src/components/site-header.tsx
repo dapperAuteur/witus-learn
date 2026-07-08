@@ -3,6 +3,7 @@ import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { listCategories } from "@/db/queries/catalog";
+import { tenantHasMapData } from "@/db/queries/map";
 import { SignOutButton } from "./sign-out-button";
 import { ThemeToggle } from "./theme-toggle";
 import { MobileNav, type NavItem } from "./mobile-nav";
@@ -24,6 +25,8 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   const categories = await listCategories(tenant.id);
   const hasCivics = categories.some((c) => c.name === "Civics");
   const hasLanguages = categories.some((c) => c.name === "Languages");
+  // The Commodity Map shows for any school that HAS map data (flag is only a force-hide override).
+  const showMap = flags.commodityMap !== false && (await tenantHasMapData(tenant.id));
 
   // One nav model, rendered inline on desktop and in a hamburger drawer on mobile.
   const items: NavItem[] = [
@@ -31,7 +34,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
     { href: "/live", label: "Live" },
     ...(hasCivics ? [{ href: "/civics", label: "Civics" }] : []),
     ...(hasLanguages ? [{ href: "/languages", label: "Languages" }] : []),
-    ...(flags.commodityMap ? [{ href: "/explore", label: "Explore" }] : []),
+    ...(showMap ? [{ href: "/explore", label: "Explore" }] : []),
     ...(flags.paths ? [{ href: "/paths", label: "Paths" }] : []),
     { href: "/instructors", label: "Instructors" },
     ...(session && canTeach ? [{ href: "/teach", label: "Teach", accent: true }] : []),

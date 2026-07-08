@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { requireTenant } from "@/lib/tenant";
-import { listBelts, listCommodities } from "@/db/queries/map";
+import { listBelts, listCommodities, tenantHasMapData } from "@/db/queries/map";
 import { type MapPin } from "@/components/commodity-map";
 import { type MapBelt } from "@/components/growing-belts-map";
 import { MapTabs } from "@/components/map-tabs";
 
 export const metadata: Metadata = { title: "Explore the Commodity Map" };
 
-// The signature discovery surface. Tenant-scoped (only this brand's pins) and
-// only for tenants with the map enabled.
+// The signature discovery surface. Tenant-scoped (only this brand's pins). Shown for any tenant that
+// HAS map data, unless the commodityMap flag is explicitly set false (a force-hide override).
 export default async function ExplorePage() {
   const tenant = await requireTenant();
-  if (!tenant.flags.commodityMap) notFound();
+  if (tenant.flags.commodityMap === false || !(await tenantHasMapData(tenant.id))) notFound();
 
   const [rows, beltRows] = await Promise.all([listCommodities(tenant.id), listBelts(tenant.id)]);
   const pins: MapPin[] = rows.map((c) => ({
