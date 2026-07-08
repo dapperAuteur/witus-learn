@@ -16,9 +16,9 @@ export interface StateLink {
 const WIDTH = 960;
 const HEIGHT = 600;
 
-// Clickable US map: a state with a civics course is filled with the tenant accent and links
-// to it; states without are dimmed "coming soon." States keyed by NAME (us-atlas carries the
-// state name in feature.properties.name). geoAlbersUsa insets Alaska + Hawaii.
+// Clickable US map with a red/white/blue civics theme: a state with a civics course is filled RED
+// and links to it; states without are BLUE ("coming soon"); borders are white. States keyed by NAME
+// (us-atlas carries the state name in feature.properties.name). geoAlbersUsa insets Alaska + Hawaii.
 export function UsStatesMap({ states }: { states: Record<string, StateLink> }) {
   const router = useRouter();
   const [hover, setHover] = useState<string | null>(null);
@@ -68,9 +68,9 @@ export function UsStatesMap({ states }: { states: Record<string, StateLink> }) {
               strokeWidth={0.5}
               className={
                 active
-                  ? "cursor-pointer fill-[var(--accent)] outline-none transition-opacity focus-visible:opacity-100 " +
-                    (hover === name ? "opacity-100" : "opacity-80")
-                  : "fill-neutral-200 dark:fill-neutral-700"
+                  ? "cursor-pointer fill-red-600 outline-none transition-opacity focus-visible:opacity-100 " +
+                    (hover === name ? "opacity-100" : "opacity-90")
+                  : "fill-blue-200 dark:fill-blue-900"
               }
             />
           );
