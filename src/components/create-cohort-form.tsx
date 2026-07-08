@@ -14,7 +14,7 @@ export function CreateCohortForm() {
     e.preventDefault();
     setBusy(true);
     setErr(null);
-    const res = await fetch("/api/admin/cohorts", {
+    const res = await fetch("/api/cohorts", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ name }),
