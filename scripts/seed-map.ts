@@ -125,15 +125,16 @@ async function main() {
   }
 
   // ── S1-only Commodity Map for the schools that share Season 1 (Learn.WitUS + ElementaryMBA).
-  // Origin pins for the six S1 commodities that have a course AND a single origin (ep7 "synthesis"
-  // is a wrap-up, so it's omitted). Each pin links to that tenant's own shared course by slug.
-  // Idempotent by (tenant, name). BVC's own full map is untouched above.
+  // Origin pins for the seven Season-1 commodities, so a shared school's map matches BVC's Season 1.
+  // Each pin links to that tenant's own shared course by slug (Guayusa + Kola Nut share the
+  // "Forest Wisdom" course). Idempotent by (tenant, name). BVC's own full map is untouched above.
   const S1_SHARED: { name: string; slug: string; geo: string; lat: number; lon: number; summary: string }[] = [
     { name: "Coffee", slug: "coffee", geo: "Ethiopian highlands", lat: 9, lon: 40, summary: "The world's second-largest traded commodity; Ethiopian origins." },
     { name: "Tea", slug: "tea", geo: "Yunnan Province, China", lat: 25, lon: 101, summary: "Oldest documented tea cultivation; reshaped the geography of empire." },
     { name: "Chocolate", slug: "chocolate", geo: "Mesoamerica (Maya origin)", lat: 16, lon: -90, summary: "Sacred Maya/Aztec currency; 70% of cacao now grows in West Africa." },
     { name: "Sugar", slug: "sugar", geo: "Caribbean (colonial plantation zone)", lat: 18, lon: -66, summary: "Economic engine of the Atlantic slave trade." },
     { name: "Guayusa", slug: "forest-wisdom", geo: "Ecuadorian Amazon", lat: 0, lon: -77, summary: "Caffeinated holly leaf and Kichwa dream-sharing tradition." },
+    { name: "Kola Nut", slug: "forest-wisdom", geo: "West Africa (Nigeria, Ghana)", lat: 7, lon: 3, summary: "The original caffeinated ingredient in Coca-Cola." },
     { name: "Kava", slug: "kava", geo: "Vanuatu, Pacific Islands", lat: -16, lon: 168, summary: "A root drink of Pacific Island governance ceremonies." },
   ];
   for (const shareSlug of ["learn-witus", "elementary-mba"]) {
