@@ -8,6 +8,7 @@ import { getStreamSettings } from "@/db/queries/stream-settings";
 import { isTenantAdmin } from "@/lib/api";
 import { LivePlayer } from "@/components/live-player";
 import { LiveChat } from "@/components/live-chat";
+import { LivePresence } from "@/components/live-presence";
 
 export async function generateMetadata(): Promise<Metadata> {
   const sdb = await getScopedDb();
@@ -70,6 +71,9 @@ export default async function LivePage() {
           </div>
         </section>
       ) : null}
+
+      {/* Who's here — live roster for cohort management, refreshed by a client heartbeat. */}
+      <LivePresence signedIn={Boolean(session)} meId={session?.user.id} />
 
       {/* Live class chat — a per-school room so students can interact with the instructor in real time. */}
       <LiveChat signedIn={Boolean(session)} canModerate={canModerate} />

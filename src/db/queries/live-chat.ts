@@ -1,7 +1,7 @@
 import "server-only";
 import { and, asc, desc, eq, gt } from "drizzle-orm";
 import { db } from "@/db/client";
-import { liveMessages, type LiveMessage } from "@/db/schema/live-chat";
+import { liveMessages, livePresence, type LiveMessage, type LivePresence } from "@/db/schema/live-chat";
 
 // Live class chat — tenant-scoped. Read the recent messages (or just the new ones after a cursor),
 // post a message, and (for moderators) delete one.
@@ -37,4 +37,26 @@ export async function listLiveMessages(tenantId: string, after?: Date, limit = 1
 
 export async function deleteLiveMessage(tenantId: string, id: string): Promise<void> {
   await db.delete(liveMessages).where(and(eq(liveMessages.tenantId, tenantId), eq(liveMessages.id, id)));
+}
+
+// ── Presence ("who's here") ──────────────────────────────────────────────────
+const PRESENCE_WINDOW_MS = 60_000;
+
+/** Refresh this user's presence (upsert on the (tenant, user) unique). */
+export async function heartbeat(tenantId: string, userId: string, name: string | null): Promise<void> {
+  const now = new Date();
+  await db
+    .insert(livePresence)
+    .values({ tenantId, userId, name, lastSeenAt: now })
+    .onConflictDoUpdate({ target: [livePresence.tenantId, livePresence.userId], set: { name, lastSeenAt: now } });
+}
+
+/** Users seen within the presence window, name-sorted. */
+export async function listPresent(tenantId: string): Promise<LivePresence[]> {
+  const cutoff = new Date(Date.now() - PRESENCE_WINDOW_MS);
+  return db
+    .select()
+    .from(livePresence)
+    .where(and(eq(livePresence.tenantId, tenantId), gt(livePresence.lastSeenAt, cutoff)))
+    .orderBy(asc(livePresence.name));
 }
