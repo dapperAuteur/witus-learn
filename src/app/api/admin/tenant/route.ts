@@ -14,6 +14,7 @@ const Schema = z.object({
   gamification: z.enum(["off", "light", "full"]).optional(),
   aiTutor: z.boolean().optional(),
   comingSoon: z.boolean().optional(),
+  commodityMap: z.boolean().optional(),
   requiresAgeGate: z.boolean().optional(),
 });
 
@@ -40,6 +41,7 @@ export async function PATCH(req: Request) {
   if (d.gamification !== undefined) flags.gamification = d.gamification;
   if (d.aiTutor !== undefined) flags.aiTutor = d.aiTutor;
   if (d.comingSoon !== undefined) flags.comingSoon = d.comingSoon;
+  if (d.commodityMap !== undefined) flags.commodityMap = d.commodityMap;
 
   await db
     .update(tenants)

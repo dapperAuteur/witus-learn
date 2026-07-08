@@ -67,29 +67,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         ) : null}
       </header>
 
-      {/* The Commodity Map is the signature discovery surface — feature it front and center. */}
-      {tenant.flags.commodityMap ? (
-        <Link
-          href="/explore"
-          className="mb-8 block rounded-xl border-2 p-6 transition hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2"
-          style={{ borderColor: "var(--accent)" }}
-        >
-          <div className="flex items-center justify-between gap-4">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--accent)" }}>
-                Start here
-              </p>
-              <h2 className="mt-1 text-2xl font-bold">🗺️ Explore the Commodity Map</h2>
-              <p className="mt-1 max-w-2xl text-neutral-600 dark:text-neutral-400">
-                See where every story begins — the origins, growing belts, and journeys behind the courses,
-                on one interactive map.
-              </p>
-            </div>
-            <span aria-hidden className="text-3xl" style={{ color: "var(--accent)" }}>→</span>
-          </div>
-        </Link>
-      ) : null}
-
+      {/* 1) Run your own school. */}
       {tenant.flags.recruiting ? (
         <section className="mb-8 rounded-lg border border-neutral-200 p-6 dark:border-neutral-800">
           <h2 className="text-xl font-semibold">Run your own school on WitUS</h2>
@@ -112,6 +90,49 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         </section>
       ) : null}
 
+      {/* 2) Map explorations — the Commodity Map (Season 1) + the Language Atlas. */}
+      {tenant.flags.commodityMap ? (
+        <Link
+          href="/explore"
+          className="mb-4 block rounded-xl border-2 p-6 transition hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2"
+          style={{ borderColor: "var(--accent)" }}
+        >
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest" style={{ color: "var(--accent)" }}>
+                Explore
+              </p>
+              <h2 className="mt-1 text-2xl font-bold">🗺️ The Commodity Map</h2>
+              <p className="mt-1 max-w-2xl text-neutral-600 dark:text-neutral-400">
+                See where every story begins — the origins, growing belts, and journeys behind the courses,
+                on one interactive map.
+              </p>
+            </div>
+            <span aria-hidden className="text-3xl" style={{ color: "var(--accent)" }}>→</span>
+          </div>
+        </Link>
+      ) : null}
+
+      {categories.some((c) => c.name === "Languages") ? (
+        <Link
+          href="/languages"
+          className="mb-8 flex items-center justify-between gap-3 rounded-lg border border-neutral-200 p-4 hover:border-current dark:border-neutral-800"
+        >
+          <span className="font-medium">🌍 Language Atlas — see where each language comes from and how it spread</span>
+          <span aria-hidden style={{ color: "var(--accent)" }}>→</span>
+        </Link>
+      ) : null}
+
+      {/* 3) Browse all courses. */}
+      {courses.length > 0 ? (
+        <p className="mb-8 text-sm">
+          <Link href="/courses" className="font-medium underline" style={{ color: "var(--accent)" }}>
+            Browse all {courses.length} course{courses.length === 1 ? "" : "s"} →
+          </Link>
+        </p>
+      ) : null}
+
+      {/* 4) Search. */}
       <form method="get" action="/courses" className="mb-8 flex flex-wrap items-center gap-3">
         <label className="sr-only" htmlFor="q">Search courses</label>
         <input
@@ -157,16 +178,6 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         </section>
       ) : null}
 
-      {categories.some((c) => c.name === "Languages") ? (
-        <Link
-          href="/languages"
-          className="mb-8 flex items-center justify-between gap-3 rounded-lg border border-neutral-200 p-4 hover:border-current dark:border-neutral-800"
-        >
-          <span className="font-medium">🌍 Language Atlas — see where each language comes from and how it spread</span>
-          <span aria-hidden style={{ color: "var(--accent)" }}>→</span>
-        </Link>
-      ) : null}
-
       {featured.length > 0 ? (
         <section className="mb-6">
           <h2 className="mb-3 text-lg font-semibold">Featured</h2>
@@ -178,15 +189,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         </section>
       ) : null}
 
-      {courses.length === 0 ? (
-        <p className="text-neutral-500">No courses yet.</p>
-      ) : (
-        <p className="text-sm text-neutral-500">
-          <Link href="/courses" className="font-medium underline" style={{ color: "var(--accent)" }}>
-            Browse all {courses.length} course{courses.length === 1 ? "" : "s"} →
-          </Link>
-        </p>
-      )}
+      {courses.length === 0 ? <p className="text-neutral-500">No courses yet.</p> : null}
     </main>
   );
 }
