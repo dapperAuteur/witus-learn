@@ -187,6 +187,29 @@ home-school use case (a parent asks you to teach their child + classmates live).
 You see only your own classes; brand admins/owner can see any class on the school.`,
   },
   {
+    slug: "family",
+    title: "Give parents a read-only Family view",
+    category: "Live",
+    keywords: ["family", "parent", "guardian", "child", "progress", "grades", "attendance", "cohort"],
+    body: `# Family
+
+**/family** gives a parent a read-only view of their own child's **course progress**, **grades**
+(recall + quiz), **credentials**, and **live-class attendance** — nothing else, and never another
+family's child.
+
+1. From a cohort's roster (**/cohorts/[id]**), click **Invite a parent/guardian** next to a student
+   and enter the parent's email. It's a one-time link; if email delivery isn't configured yet, the
+   link is shown right there to copy and send yourself.
+2. The parent opens the link at \`/family/accept/[token]\`, signs in (magic link), and is linked to
+   that one child.
+3. At **/family** they see that child's enrolled-course progress %, recall accuracy, quiz average,
+   earned credentials, and which live-class days they attended.
+
+A parent only ever sees children they've been explicitly linked to. Kids keep their own accounts
+(this is not a shared/managed login) — a future release may add managed sub-profiles for children
+too young for their own account.`,
+  },
+  {
     slug: "learner-feedback-and-reports",
     title: "See learner feedback and problem reports",
     category: "Feedback",
