@@ -148,7 +148,7 @@ Because several officials are elected on their own, Kansas can end up with a **G
 - **Contact your legislators** in Topeka, you have one Representative and one Senator.
 - **Run**: school board, city council, township, and county commission are reachable local starting points.
 
-**Check yourself.** What does home rule give Kansas localities, and where do Kansas ballot measures come from (since there's no initiative)?
+:::reveal What does home rule give Kansas localities, and where do Kansas ballot measures come from (since there's no initiative)? ||| Home rule lets Kansas counties, cities, and school boards decide a lot on their own without waiting on the Legislature in Topeka. Since Kansans can't start ballot measures, the ones you see were referred by the Legislature — so read them carefully.
 
 ## Sources
 - Kansas Legislature. (n.d.). *Home rule; local government: counties, cities, townships*. kslegislature.gov. https://www.kslegislature.gov/

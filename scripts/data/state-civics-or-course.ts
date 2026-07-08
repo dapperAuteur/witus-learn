@@ -217,7 +217,7 @@ Oregon voters see **many ballot measures** each cycle. Reading them is a real ci
 
 **The habit to build:** pick **one** ballot measure this cycle and follow it: who's behind it, what it does, how it's funded. In Oregon, that measure might become law by your vote.
 
-**Check yourself.** Name two reasons voting is unusually easy in Oregon, and one direct-democracy action you can start.
+:::reveal Name two reasons voting is unusually easy in Oregon, and one direct-democracy action you can start. ||| Oregon mails every voter a ballot (vote-by-mail) and has automatic voter registration, making voting unusually easy. A direct-democracy action you can start: sign or circulate an initiative (a statute or amendment) or a referendum to challenge a law — the Oregon System in action.
 
 ## Sources
 - Oregon Secretary of State. (n.d.). *Get involved: voting by mail, initiatives, referendums, and local offices*. sos.oregon.gov. https://sos.oregon.gov/`,

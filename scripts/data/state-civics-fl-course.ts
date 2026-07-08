@@ -332,7 +332,7 @@ Florida voters adopted this merit-selection-plus-retention system for all appell
 
 **Cast your judicial votes thoughtfully.** On a Florida ballot you may see both a **contested election** for a circuit or county judge and a **yes/no retention vote** for an appellate judge (Lesson 4). Both are real decisions: read up before you fill them in rather than leaving them blank.
 
-**Check yourself.** Name three specific ways to get involved in Florida government, and explain why contacting your state legislators *early* (before a committee vote) matters given Florida's 60-day session.
+:::reveal Name three specific ways to get involved in Florida government, and explain why contacting your state legislators *early* (before a committee vote) matters given Florida's 60-day session. ||| Three ways: contact your legislators and comment before committee votes, show up at your county commission and city/town/village council, and vote your ballot measures and judicial races thoughtfully. Contacting legislators early matters because Florida's regular session is only 60 days — bills move fast and most die in committee, so weighing in before that committee vote is where your voice counts.
 
 ## Sources
 - Florida Department of State, Division of Elections. (n.d.-b). *For voters: registration, ID, and voting*. DOS.fl.gov. https://dos.fl.gov/elections/for-voters/

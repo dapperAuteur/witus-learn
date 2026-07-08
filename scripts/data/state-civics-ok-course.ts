@@ -157,7 +157,7 @@ So Oklahoma pairs a **term-limited Legislature** with **strong citizen lawmaking
 - **Learn tribal governance** if you live in or near a nation's boundaries. Tribal governments are sovereign and consequential.
 - **Contact your legislators** in Oklahoma City; **run** for reachable local offices.
 
-**Check yourself.** How does Oklahoma pick its appellate judges, and what did the 2020 McGirt decision establish?
+:::reveal How does Oklahoma pick its appellate judges, and what did the 2020 McGirt decision establish? ||| Oklahoma picks its appellate judges by merit selection: a judicial nominating commission screens applicants, the governor appoints, and voters then cast retention votes. The 2020 McGirt v. Oklahoma decision established that much of eastern Oklahoma remains Native American reservation land for purposes of federal law, affirming tribal and federal jurisdiction there.
 
 ## Sources
 - Oklahoma State Courts Network. (n.d.). *Judicial selection: merit selection and retention*. oscn.net. https://www.oscn.net/

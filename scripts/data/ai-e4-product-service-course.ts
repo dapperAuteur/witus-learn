@@ -42,7 +42,7 @@ export const AI_E4_PRODUCT_SERVICE_COURSE: AuthoredCourse = {
 
 **Trust DNA from the start:** the need is validated by *real people* (F4), and the idea should aim AI at a job it can do reliably, with you accountable for the result. NIST frames trustworthy AI as **valid and reliable** with human oversight designed around it (NIST, 2023). Build for that, not for a demo.
 
-**Check yourself.** Take your validated problem. Name the one *job* a customer is trying to do, and the *smallest* AI-assisted version (product OR service) you could offer to help with it.
+:::reveal Take your validated problem. Name the one *job* a customer is trying to do, and the *smallest* AI-assisted version (product OR service) you could offer to help with it. ||| State the one job the customer is trying to get done, then offer the smallest thing that helps — often an AI-assisted service (a done-for-you outcome with you in the loop) rather than a full product. Starting tiny lets you learn what customers really want and automate later; a service is a legitimate AI business, not a lesser one.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: "Valid and Reliable" and human oversight. https://www.nist.gov/itl/ai-risk-management-framework
@@ -136,7 +136,7 @@ This is exactly NIST's **Manage** function: you actively manage the AI's risk wi
 
 > **Trust DNA:** the human-in-the-loop is the difference between "AI helped me serve customers better" and "AI embarrassed me in front of a customer." Design it before you launch, not after the first mistake.
 
-**Check yourself.** Name one task in *your* idea where a human must approve AI output before a customer sees it, and one where lighter review is fine. What makes them different?
+:::reveal Name one task in *your* idea where a human must approve AI output before a customer sees it, and one where lighter review is fine. What makes them different? ||| A human must approve anything customer-facing or hard to undo (a price quote, a factual claim, a contract) before it ships; lighter spot-checking is fine for low-stakes, high-volume, easily-reversible work once you trust the quality. The difference is how much an error could hurt the customer or your reputation — the more it can hurt, the more human stays in the loop.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). *AI Risk Management Framework (AI RMF 1.0)*: the "Manage" function and human oversight. https://www.nist.gov/itl/ai-risk-management-framework
@@ -388,7 +388,7 @@ The honest rule: **your cost-to-serve sets the floor; the value you deliver sets
 
 > **Trust DNA, founder's edition:** use AI to be *better and faster*, never to be *fake or generic*. The brands that survive the AI flood are the ones that still feel human, accurate, and like they actually care.
 
-**Check yourself.** Name two ways AI slop damages a brand and the single habit (about *your* voice and verification) that fixes them.
+:::reveal Name two ways AI slop damages a brand and the single habit (about *your* voice and verification) that fixes them. ||| Slop damages a brand by making it feel generic and fake (indistinguishable from everyone else's output) and by shipping unverified false claims or prices that break trust. The fix is one habit: keep a human on anything that represents you — write in your real voice and verify every factual claim and price before it reaches a customer. Quality over volume.
 
 ## Sources
 - Federal Trade Commission. (2023). *Keep your AI claims in check*: truthful, substantiated claims protect both customers and your brand. https://www.ftc.gov/business-guidance/blog/2023/02/keep-your-ai-claims-check

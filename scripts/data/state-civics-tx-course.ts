@@ -281,7 +281,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
 
 **Vote your judicial races thoughtfully.** Because Texas **elects** its judges in partisan races (Lesson 3), your ballot will include real, contested judicial contests, from the two high courts down to local benches. Read up before you fill them in rather than skipping them.
 
-**Check yourself.** Name three specific ways to get involved in Texas government, and explain why the *timing* of contacting your state legislators matters so much in Texas given its biennial session and lack of a citizen initiative.
+:::reveal Name three specific ways to get involved in Texas government, and explain why the *timing* of contacting your state legislators matters so much in Texas given its biennial session and lack of a citizen initiative. ||| Three ways: contact your legislators and comment before committee votes, show up at your commissioners court, city council, and school or special-district boards, and vote your partisan judicial races thoughtfully. Timing matters enormously because the Texas Legislature meets only once every two years (biennial) and there's no citizen initiative — so if you miss that narrow window before a committee vote, the next chance to shape a state law may be two years away.
 
 ## Sources
 - Texas Legislature Online. (n.d.). *Find your legislators / track legislation.* Capitol.texas.gov. https://capitol.texas.gov/

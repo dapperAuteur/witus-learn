@@ -146,7 +146,7 @@ The **Legislative** and **Judicial** branches complete the three (next lessons).
 - **Watch for an initiative fix.** If the Legislature restores a citizen-initiative process, that would return a direct lever to voters. Follow it.
 - **Run**: school board, city council, and county board of supervisors are reachable local starting points.
 
-**Check yourself.** How are Mississippi's judges chosen, and what elected board governs a Mississippi county?
+:::reveal How are Mississippi's judges chosen, and what elected board governs a Mississippi county? ||| Mississippi elects its judges in nonpartisan elections. A Mississippi county is governed by an elected board of supervisors.
 
 ## Sources
 - Mississippi Judiciary. (n.d.). *Nonpartisan judicial elections; the Supreme Court*. courts.ms.gov. https://courts.ms.gov/

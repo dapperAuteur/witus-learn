@@ -150,7 +150,7 @@ The takeaway: Nevada pairs a **short, every-other-year Legislature** with **stro
 - **Contact your legislators** in Carson City: you have one Assembly member and one Senator; note the Legislature meets mainly in odd years.
 - **Run**: school board, city council, and county commission are reachable local starting points.
 
-**Check yourself.** What is unusual about Carson City's status, and name one voting feature Nevada offers.
+:::reveal What is unusual about Carson City's status, and name one voting feature Nevada offers. ||| Carson City is a consolidated municipality — it functions as both a city and a county (an independent city). One voting feature Nevada offers is the "None of These Candidates" option on statewide races, alongside a mailed ballot and Election-Day voting.
 
 ## Sources
 - Nevada Legislature. (n.d.). *Local government: counties, Carson City, county school districts*. leg.state.nv.us. https://www.leg.state.nv.us/

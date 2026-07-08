@@ -261,7 +261,7 @@ The practical payoff is the same as everywhere: **who provides your service depe
 
 **Vote your judicial races deliberately.** Ohioans **elect** their judges, and (since 2022) the top-court races carry **party labels** on the general ballot. Those aren't lines to skip: read up on the candidates and vote them.
 
-**Check yourself.** Name four specific ways to get involved in Ohio government, and explain why Ohio's citizen initiative/referendum makes it different from a state where "changing the law" means only electing and lobbying legislators.
+:::reveal Name four specific ways to get involved in Ohio government, and explain why Ohio's citizen initiative/referendum makes it different from a state where "changing the law" means only electing and lobbying legislators. ||| Four ways: contact and lobby your legislators, use the citizen initiative or referendum, show up at your county commissioners, city/village council, township trustees, or special-district boards, and vote your (now party-labeled) judicial races deliberately. Ohio's initiative and referendum make it different because citizens can write and pass — or veto — a law at the ballot box themselves, a direct route that doesn't exist where changing the law means only electing and lobbying legislators.
 
 ## Sources
 - Ohio General Assembly. (n.d.). *Find your legislators / track legislation.* Legislature.ohio.gov. https://www.legislature.ohio.gov/

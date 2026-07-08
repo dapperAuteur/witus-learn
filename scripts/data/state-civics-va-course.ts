@@ -251,7 +251,7 @@ So "what governs where I live?" in Virginia depends on whether you're in a **cou
 - **Show up locally**: county boards of supervisors, city councils, and school boards hold public meetings; because of Dillon's Rule, big local changes often need action in Richmond too, so following both levels pays off.
 - **Run**: soil and water boards, town councils, school boards, and boards of supervisors are reachable local starting points.
 
-**Check yourself.** In which years does Virginia elect its Governor, and who draws Virginia's district maps?
+:::reveal In which years does Virginia elect its Governor, and who draws Virginia's district maps? ||| Virginia elects its Governor in odd years (the year after each presidential election). Its bipartisan redistricting commission draws the district maps, and if that commission deadlocks the Supreme Court of Virginia draws them (as it did in 2021).
 
 ## Sources
 - Virginia Department of Elections. (n.d.). *Voting in Virginia: early voting, ID, registration; the Virginia Redistricting Commission*. elections.virginia.gov. https://www.elections.virginia.gov/

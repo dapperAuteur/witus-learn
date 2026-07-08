@@ -142,7 +142,7 @@ Statewide officers serve **4-year terms** with **term limits** (two consecutive 
 - **Contact your legislators** in Pierre, you have one Representative-district team and one Senator; note the short annual session.
 - **Run:** school board, township board, city council, and county commission are reachable local starting points.
 
-**Check yourself.** What founding-era tool can South Dakotans use to make law directly, and what sovereign governments are part of South Dakota's civic landscape?
+:::reveal What founding-era tool can South Dakotans use to make law directly, and what sovereign governments are part of South Dakota's civic landscape? ||| South Dakota was the first state to adopt the initiative and referendum, and citizens still use that founding-era tool to make or repeal law directly. Sovereign tribal nations (Native American governments) are also part of South Dakota's civic landscape.
 
 ## Sources
 - South Dakota Legislature. (n.d.). *Local government: counties, cities, townships; tribal nations*. sdlegislature.gov. https://sdlegislature.gov/

@@ -511,7 +511,7 @@ export const HOODOO_COMPLETE_COURSE: AuthoredCourse = {
 
 **The through-line.** Hoodoo carried **knowledge, healing, dignity, and defiance** through the darkest chapter of American history and shaped a whole culture. Studying it well means honoring **all** of that: its beauty and its hard edges, its Africa and its America, its faith and its resistance, with **respect, accuracy, and care.**
 
-**Check yourself.** State the first ethic (origin/credit), the autonomy principle, and one legal-or-safety flag; then explain, in a sentence, why "Hoodoo is not Voodoo" is an **ethical** point and not just a factual one.
+:::reveal State the first ethic (origin/credit), the autonomy principle, and one legal-or-safety flag; then explain, in a sentence, why "Hoodoo is not Voodoo" is an **ethical** point and not just a factual one. ||| The first ethic is to honor the tradition's African American origins and credit them rather than appropriate (the respectful posture is to listen and credit). The autonomy principle is that the tradition's own communities and practitioners have the right to define and transmit their practice. A legal-or-safety flag: some materials (certain herbs and roots) or acts framed as harming another carry real health or legal risk. "Hoodoo is not Voodoo" is ethical, not just factual, because conflating them erases a distinct people's history and dignity and spreads a harmful stereotype.
 
 ## Sources
 - Chireau, Y. P. (2003). *Black magic: Religion and the African American conjuring tradition*. University of California Press.

@@ -178,7 +178,7 @@ The takeaway: in Minnesota, the **Legislature and Governor make the law**, and c
 - **Contact your legislators** in St. Paul: you have one Representative and one Senator.
 - **Run:** school board, township board, city council, and county board are reachable local starting points.
 
-**Check yourself.** Name a voting feature that boosts Minnesota turnout, and one local body unique to the Twin Cities region.
+:::reveal Name a voting feature that boosts Minnesota turnout, and one local body unique to the Twin Cities region. ||| Same-day (Election-Day) registration is a big reason Minnesota's turnout is high. A local body unique to the Twin Cities region is the Metropolitan Council, which oversees regional matters there.
 
 ## Sources
 - Minnesota State Legislature. (n.d.). *Local government: counties, cities, townships, the Metropolitan Council*. leg.mn.gov. https://www.leg.mn.gov/

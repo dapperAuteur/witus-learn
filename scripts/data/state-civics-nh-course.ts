@@ -173,7 +173,7 @@ New Hampshire has **no statewide citizen initiative** for general laws. Lawmakin
 
 **The habit to build:** because New Hampshire government is so **local and accessible**, pick one town-meeting article or one bill and follow it. Your participation carries unusual weight here.
 
-**Check yourself.** What is New Hampshire's protected role in presidential elections, and name one reason running for office is unusually accessible here.
+:::reveal What is New Hampshire's protected role in presidential elections, and name one reason running for office is unusually accessible here. ||| New Hampshire protects its first-in-the-nation presidential primary. Running for office is unusually accessible because the House has about 400 seats representing small populations, so ordinary residents win legislative office more easily than almost anywhere else.
 
 ## Sources
 - New Hampshire Secretary of State. (n.d.). *The first-in-the-nation presidential primary; registering and voting*. sos.nh.gov. https://www.sos.nh.gov/

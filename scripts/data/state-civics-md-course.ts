@@ -187,7 +187,7 @@ Constitutional **amendments** are proposed by the General Assembly (by a **three
 - **Contact your legislators** in Annapolis: you have one Delegate-district team and one Senator (Maryland districts elect multiple delegates).
 - **Run**: school board, city council, and county council are reachable local starting points.
 
-**Check yourself.** What is unusual about the City of Baltimore, and what citizen tool lets Marylanders challenge a new law?
+:::reveal What is unusual about the City of Baltimore, and what citizen tool lets Marylanders challenge a new law? ||| Baltimore is an independent city — it belongs to no county and acts as its own county-level government. The citizen tool to challenge a new law is the petition to referendum: gather signatures to send a law the General Assembly passed to the voters.
 
 ## Sources
 - Maryland General Assembly. (n.d.). *Local government: charter counties and the independent City of Baltimore*. mgaleg.maryland.gov. https://mgaleg.maryland.gov/

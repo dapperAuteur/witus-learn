@@ -312,7 +312,7 @@ And thanks to the **Voter Protection Act**, a measure you help pass is hard for 
 
 **Vote your judicial ballot knowingly.** Depending on your county, you'll either **retain-or-not** merit-selected judges or vote in **contested judicial elections** (Lesson 3), know which one your ballot is asking.
 
-**Check yourself.** Name three ways to get involved in Arizona government, and explain why the initiative + Voter Protection Act make direct democracy an especially powerful tool for an Arizonan.
+:::reveal Name three ways to get involved in Arizona government, and explain why the initiative + Voter Protection Act make direct democracy an especially powerful tool for an Arizonan. ||| Three ways: look up and lobby your one senator and two representatives and testify in committee (azleg.gov), show up at your County Board of Supervisors and city/town council, and use the initiative or referendum. Direct democracy is especially powerful here because Arizona's Voter Protection Act bars the Legislature from repealing or gutting a voter-passed initiative, so a law citizens pass at the ballot actually sticks.
 
 ## Sources
 - Arizona Secretary of State. (n.d.). *Voting, registration, and citizen petitions*. AZSOS.gov. https://azsos.gov/

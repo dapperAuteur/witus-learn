@@ -46,7 +46,7 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
 
 > **Trust DNA:** AI can help you discover the truth about your audience. It can never *manufacture* it. Validation comes from real humans, not a convincing simulation.
 
-**Check yourself.** Write your one-sentence message ("For ___, we help ___ so they ___"). Then name one way AI helped you research it, and one thing only a real person can confirm.
+:::reveal Write your one-sentence message ("For ___, we help ___ so they ___"). Then name one way AI helped you research it, and one thing only a real person can confirm. ||| Fill the sentence honestly ("For [who], we help [do what], so they [get what benefit]"). AI can help you find, understand, and reach real people and rehearse your questions — but only a real person can confirm they actually want it and would pay; a model's "happy customer" answer is fiction, never validation.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Secondary and direct research to know your market and customers. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis`,
@@ -110,7 +110,7 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
 
 > **Trust DNA:** AI is a drafting partner, not a ghostwriter that replaces you. The value you add (your voice, your specifics, your judgment) is the whole point of you doing the marketing.
 
-**Check yourself.** Take an AI-drafted sentence and rewrite it in your own voice with one specific, true detail only you would know. What changed?
+:::reveal Take an AI-drafted sentence and rewrite it in your own voice with one specific, true detail only you would know. What changed? ||| A good rewrite swaps vague filler ("best-in-class solutions") for a concrete, verified specific — your real story, a real example, a number you actually measured — and cuts the AI tells ("in today's fast-paced world," "unlock," "elevate," "delve"). What changed: it now sounds like a real person wrote it and carries information only you could supply.
 
 ## Sources
 - Google. (n.d.). *Creating helpful, reliable, people-first content*. Demonstrate first-hand experience and expertise; create content for people, not to manipulate rankings. https://developers.google.com/search/docs/fundamentals/creating-helpful-content`,
@@ -185,7 +185,7 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
 
 **A consistency catch on AI images and logos:** a logo or design you got from a single AI prompt may not be something you can legally own or stop others from copying (Lesson 7), another reason your brand's recognizable elements should carry real human creative choices, not just one prompt.
 
-**Check yourself.** List the three voice words and two "never" phrases for your brand. How would pasting those at the top of a prompt change what AI gives you back?
+:::reveal List the three voice words and two "never" phrases for your brand. How would pasting those at the top of a prompt change what AI gives you back? ||| Pick three adjectives that describe your voice and two phrases you'll never use. Pasting that brand kit at the top of every prompt ("write in this voice, for this audience, following these rules") turns the model's generic default into something that consistently sounds like you across social, email, and blog — without collapsing into robotic sameness.
 
 ## Sources
 - Google. (n.d.). *Creating helpful, reliable, people-first content*. A consistent, trustworthy brand voice supports experience and trust (E-E-A-T). https://developers.google.com/search/docs/fundamentals/creating-helpful-content`,
@@ -259,7 +259,7 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
 
 **4 · Know the copyright limits on AI output.** The U.S. Copyright Office concluded that **purely AI-generated material isn't protected by copyright, and prompting alone is not enough** to make an AI's output yours. Copyright requires human authorship (U.S. Copyright Office, 2025). Practical meaning: a logo, jingle, or post you got from a single prompt may be something you can't legally *own or stop others from copying*. Your *human* creative contributions (your edits, arrangement, and original writing) are what's protectable. Also respect others' copyrights and your tools' terms of use.
 
-**Check yourself.** A friend will post a glowing 5-star review of your product if you send them a free unit. Name two distinct FTC problems with treating that as an ordinary, independent review.
+:::reveal A friend will post a glowing 5-star review of your product if you send them a free unit. Name two distinct FTC problems with treating that as an ordinary, independent review. ||| (1) There's a material connection (the free unit) that must be disclosed clearly and conspicuously — presenting it as independent is deceptive under FTC endorsement rules. (2) If the review's claims aren't the friend's honest experience, it's a fake/misleading review; "the reviewer said it" is no defense, and burying "#ad" where no one sees it doesn't cure it.
 
 ## Sources
 - Federal Trade Commission. (2023). *Keep your AI claims in check*. AI claims must be truthful and substantiated. https://www.ftc.gov/business-guidance/blog/2023/02/keep-your-ai-claims-check
@@ -349,7 +349,7 @@ export const AI_E1_MARKETING_COURSE: AuthoredCourse = {
 
 **Where AI helps here, and where it fools you:** AI can summarize your analytics and spot patterns to *investigate*. It can't decide what "success" means for your business (that's your call), and a tool that generates a *lot* of content is not proof that the content *worked*. Don't confuse motion with progress.
 
-**Check yourself.** Name one vanity metric and one metric that actually matters for your business, and explain why the second one is more honest.
+:::reveal Name one vanity metric and one metric that actually matters for your business, and explain why the second one is more honest. ||| A vanity metric is something like likes or follower count; a metric that matters is sales, paying customers, or repeat purchases and return visits. The second is more honest because it reflects an action that cost the person something real — proof your message is true and the product delivers — whereas a like costs nothing and can't tell you the content actually worked.
 
 ## Sources
 - U.S. Small Business Administration. (n.d.). *Market research and competitive analysis*. Measure real customer response, not surface numbers, to guide decisions. https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis`,

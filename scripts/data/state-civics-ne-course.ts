@@ -72,7 +72,7 @@ This is the through-line of Nebraska civics: nearly everything about how Nebrask
 
 The takeaway: Nebraska's one-house design trades the "check" of a second chamber for **more transparency** (a hearing for every bill, three debate stages, no conference committee) plus the **backstop of direct democracy.**
 
-**Check yourself.** Name two features of the Unicameral that provide the deliberation a second chamber would otherwise supply.
+:::reveal Name two features of the Unicameral that provide the deliberation a second chamber would otherwise supply. ||| Every bill gets a public hearing, and each bill goes through three separate rounds of floor debate — with no conference committee to hide deals. Those features (in a nonpartisan chamber) supply the scrutiny a second chamber would otherwise provide.
 
 ## Sources
 - Nebraska Legislature. (n.d.). *How a bill becomes law; the public-hearing rule and three-stage debate*. nebraskalegislature.gov. https://nebraskalegislature.gov/
@@ -170,7 +170,7 @@ So Nebraska keeps judges out of partisan campaigns (appointing from a vetted lis
 
 ⚠️ **Time-sensitive:** Nebraska added a **voter photo-ID requirement** by initiative (2022); registration and ID rules are administered by **county election officials** and can change. Confirm current rules at **sos.nebraska.gov** before voting.
 
-**Check yourself.** Name two Nebraska boards you can vote for that other states usually don't elect, and one reason the Unicameral is unusually open to citizens.
+:::reveal Name two Nebraska boards you can vote for that other states usually don't elect, and one reason the Unicameral is unusually open to citizens. ||| Nebraskans elect boards other states usually don't, such as Natural Resource District (NRD) boards and public-power (utility) boards. The Unicameral is unusually open because every bill gets a public hearing, so any citizen can testify on a specific bill — and you have just one senator to track and lobby.
 
 ## Sources
 - Nebraska Legislature. (n.d.). *Local government: counties, cities, natural resources districts, public power*. nebraskalegislature.gov. https://nebraskalegislature.gov/

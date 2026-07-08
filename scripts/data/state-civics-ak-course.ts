@@ -184,7 +184,7 @@ This differs from every other system you've met: it's **not** Washington's "top-
 - **Contact your legislators** in Juneau. You have one Representative and one Senator.
 - **Run.** City council, school board, and (in organized boroughs) borough assembly are reachable local starting points.
 
-**Check yourself.** How does Alaska choose its judges, and what is one thing to verify before voting in Alaska?
+:::reveal How does Alaska choose its judges, and what is one thing to verify before voting in Alaska? ||| Alaska uses merit selection: a nonpartisan judicial council screens applicants, the governor appoints from that list, and voters then decide whether to retain each judge. Before voting, verify your current ballot rules — Alaska's open top-four primary and ranked-choice general — at elections.alaska.gov.
 
 ## Sources
 - Alaska Court System. (n.d.). *Judicial selection: the Alaska Judicial Council and retention elections*. courts.alaska.gov. https://courts.alaska.gov/

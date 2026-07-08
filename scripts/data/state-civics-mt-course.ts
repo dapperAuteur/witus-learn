@@ -161,7 +161,7 @@ The takeaway: Montana combines a **short, part-time Legislature** with **strong 
 - **Contact your legislators** in Helena: you have one Representative and one Senator; note the Legislature meets mainly in odd years.
 - **Run.** School board, city council, and county commission are reachable local starting points.
 
-**Check yourself.** Name one Montana open-government right you can use, and one voting detail to verify before an election.
+:::reveal Name one Montana open-government right you can use, and one voting detail to verify before an election. ||| Montana's constitution gives you a strong right to know — access to government documents and meetings — which you can use to follow decisions. Before an election, verify your current registration, ID, and absentee rules (useful given Montana's distances) at sosmt.gov.
 
 ## Sources
 - Montana Legislature. (n.d.). *Local government: counties, home rule, voter review*. leg.mt.gov. https://leg.mt.gov/
