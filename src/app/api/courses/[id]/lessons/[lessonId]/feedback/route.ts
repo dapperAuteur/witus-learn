@@ -6,6 +6,7 @@ import { isPlatformOwner } from "@/lib/session";
 import { sendToInbox } from "@/lib/ecosystem-webhook";
 import { db } from "@/db/client";
 import { lessonFeedback } from "@/db/schema";
+import { getActiveLearner } from "@/lib/active-learner";
 
 const Schema = z.object({
   kind: z.enum(["correction", "comment", "question"]),
@@ -22,6 +23,7 @@ export async function POST(req: Request, { params }: Params) {
   const { id, lessonId } = await params;
   const { sdb, session } = await apiContext();
   if (!session) return errorJson("Sign in to send feedback", 401);
+  const learner = (await getActiveLearner(session))!;
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
@@ -36,18 +38,20 @@ export async function POST(req: Request, { params }: Params) {
     tenantId: sdb.tenantId,
     courseId: id,
     lessonId,
-    userId: session.user.id,
+    userId: learner.id,
     kind,
     body,
   });
 
   // Mirror to the WitUS Inbox ONLY for the platform owner's own courses (per BAM's request).
+  // submitter_email stays the signed-in account's real address (a managed child's email is
+  // a synthetic, non-deliverable placeholder); submitter_name reflects who actually wrote it.
   if (await isPlatformOwner(course.instructorId)) {
     after(
       sendToInbox({
         form_type: "learn-witus-curriculum-feedback",
         submitter_email: session.user.email ?? undefined,
-        submitter_name: session.user.name ?? undefined,
+        submitter_name: learner.name ?? session.user.name ?? undefined,
         priority: kind === "correction" ? "high" : "normal",
         payload: {
           kind,

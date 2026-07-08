@@ -3,12 +3,13 @@ import { cohorts } from "./cohorts";
 import { users } from "./auth";
 import { tenants } from "./tenancy";
 
-// Family (Model A of the hybrid): a parent/guardian links to their own child's EXISTING
-// learner account (the child signs in themselves) and gets a READ-ONLY view of that
-// child's progress/grades/attendance. Model B (parent-managed sub-profiles for kids too
-// young for their own account) is a future follow-up — NOT built here; this schema
-// doesn't preclude it. Tenant-scoped like everything else — every read filters tenant_id,
-// and `isGuardianOf` is the mandatory gate before showing any child's data.
+// Family, hybrid model: Model A — a parent/guardian links to their own child's EXISTING
+// learner account (the child signs in themselves); Model B — a parent creates a login-less
+// managed child profile (see `user_profiles.managed_by_user_id` in tenancy.ts) that reuses
+// this SAME `guardians` link so both kinds of children render in one read-only /family view.
+// Tenant-scoped like everything else — every read filters tenant_id, and `isGuardianOf`
+// (Model A data) / `isManagedChildOf` (Model B act-as) are the mandatory gates before
+// showing or acting as any child's data.
 
 // A confirmed parent↔child link. Many guardians can link to one student (both parents),
 // and (in principle) one guardian could be linked to multiple children.

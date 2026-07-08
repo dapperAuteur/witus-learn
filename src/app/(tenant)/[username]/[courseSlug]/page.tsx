@@ -75,8 +75,8 @@ export default async function CourseBySlugPage({ params }: Params) {
     listSources(course.id),
     listPrerequisites(course.id),
   ]);
-  const unmetPrereqIds = view.session
-    ? new Set((await getUnmetRequired(view.session.user.id, course.id)).map((c) => c.id))
+  const unmetPrereqIds = view.activeLearnerId
+    ? new Set((await getUnmetRequired(view.activeLearnerId, course.id)).map((c) => c.id))
     : new Set<string>();
   const meta = [course.seriesTitle, course.seasonNumber ? `Season ${course.seasonNumber}` : null]
     .filter(Boolean)

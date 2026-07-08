@@ -75,10 +75,11 @@ export default async function LessonPage({ params }: Params) {
   const coursePercent = total > 0 ? Math.round((view.completedLessonIds.size / total) * 100) : 0;
   const remaining = Math.max(0, total - view.completedLessonIds.size);
 
-  // Assignment lessons: load the learner's own submission for the submit box.
+  // Assignment lessons: load the ACTIVE learner's own submission for the submit box
+  // (self, or a managed child if a parent is "studying as" one).
   const submission =
-    lesson.lessonType === "assignment" && access.open && view.session
-      ? await getSubmission(lesson.id, view.session.user.id)
+    lesson.lessonType === "assignment" && access.open && view.activeLearnerId
+      ? await getSubmission(lesson.id, view.activeLearnerId)
       : null;
 
   // CYOA crossroads (semantic + cross-course are tenant-scoped inside buildCrossroads).

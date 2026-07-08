@@ -10,23 +10,28 @@ import {
 import { isFreeCourse } from "@/lib/gating";
 import { createCourseCheckout, createPromoCoupon, ensureCoursePrice, getStripe } from "@/lib/stripe";
 import { getSiteUrl } from "@/lib/site-url";
+import { getActiveLearner } from "@/lib/active-learner";
 
 // POST /api/courses/[id]/enroll — free → insert directly; paid → return a Stripe
 // Checkout URL (with optional promo discount + Connect payout routing). 404s
-// across tenants; enforces required prerequisites first.
+// across tenants; enforces required prerequisites first. Enrollment is attributed
+// to the ACTIVE learner (self, or a managed child if "studying as" one) — Stripe
+// Checkout collects its own payment-page email, so the parent's/child's synthetic
+// email never enters the payment flow either way.
 export async function POST(req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const { sdb, session } = await apiContext();
   if (!session) return errorJson("Unauthorized", 401);
+  const learner = (await getActiveLearner(session))!;
 
   const course = await sdb.getCourseById(id);
   if (!course || !course.isPublished) return errorJson("Not found", 404);
 
-  if (await isEnrolled(session.user.id, id)) {
+  if (await isEnrolled(learner.id, id)) {
     return json({ enrolled: true });
   }
 
-  const unmet = await getUnmetRequired(session.user.id, id);
+  const unmet = await getUnmetRequired(learner.id, id);
   if (unmet.length > 0) {
     return json(
       {
@@ -38,7 +43,7 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
   }
 
   if (isFreeCourse(course)) {
-    const enrollment = await enrollFree(sdb.tenantId, session.user.id, id);
+    const enrollment = await enrollFree(sdb.tenantId, learner.id, id);
     return json({ enrolled: true, enrollment }, 201);
   }
 
@@ -69,7 +74,7 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
     stripe,
     tenant: sdb.tenant,
     course,
-    userId: session.user.id,
+    userId: learner.id,
     priceId,
     siteUrl: await getSiteUrl(),
     connectAccountId,

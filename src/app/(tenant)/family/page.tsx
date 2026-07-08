@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { requireUser } from "@/lib/session";
 import { getScopedDb } from "@/db/scoped";
-import { isGuardianOf, listAttendanceForChild, listChildren } from "@/db/queries/family";
+import { isGuardianOf, listAttendanceForChild, listChildren, listManagedChildren } from "@/db/queries/family";
 import { getLearnerDashboard, getLearnerStats } from "@/db/queries/dashboard";
+import { ManageChildren } from "@/components/manage-children";
 
 export const metadata: Metadata = { title: "Family" };
 
@@ -16,16 +17,22 @@ interface ChildView {
   attendance: { cohortName: string; days: string[] }[];
 }
 
-// Read-only parent Family view (Model A of the hybrid — kids have their own accounts).
-// Shows, per linked child ONLY, their course progress, grades (quiz + recall), credentials,
-// and live-class attendance. THE invariant: every per-child data call below is preceded by
-// isGuardianOf — a guardian linked to child X can never render child Y's data, even if
-// listChildren (already filtered to this guardian) were ever refactored to be looser.
+// Parent Family view, hybrid model: read-only progress/grades/credentials/attendance for
+// EVERY linked child (Model A — the child has their own account — AND Model B — a
+// login-less managed profile the parent created; both flow through the same `guardians`
+// link, so they render identically here) PLUS, at the top, the Model-B-only "Manage
+// children" panel to add a new managed profile or switch into "studying as" one. THE
+// invariant: every per-child data call below is preceded by isGuardianOf — a guardian
+// linked to child X can never render child Y's data, even if listChildren (already
+// filtered to this guardian) were ever refactored to be looser.
 export default async function FamilyPage() {
   const sdb = await getScopedDb();
   const session = await requireUser();
 
-  const children = await listChildren(sdb.tenantId, session.user.id);
+  const [children, managedChildren] = await Promise.all([
+    listChildren(sdb.tenantId, session.user.id),
+    listManagedChildren(sdb.tenantId, session.user.id),
+  ]);
 
   const views: ChildView[] = [];
   for (const child of children) {
@@ -58,9 +65,14 @@ export default async function FamilyPage() {
         attendance.
       </p>
 
+      <div className="mt-6">
+        <ManageChildren initialChildren={managedChildren} />
+      </div>
+
       {views.length === 0 ? (
         <p className="mt-8 text-sm text-neutral-500">
-          No children linked yet. Ask your teacher to send a parent invite from their cohort roster.
+          No children yet. Add one above if they&apos;re too young for email, or ask your teacher to
+          send a parent invite from their cohort roster if they already have their own account.
         </p>
       ) : (
         <div className="mt-8 space-y-10">

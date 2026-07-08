@@ -1,5 +1,5 @@
 import "server-only";
-import { randomBytes } from "node:crypto";
+import { randomBytes, randomUUID } from "node:crypto";
 import { and, asc, eq, isNull } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
@@ -8,6 +8,7 @@ import {
   guardianInvites,
   guardians,
   userProfiles,
+  users,
   type GuardianInvite,
 } from "@/db/schema";
 
@@ -159,4 +160,102 @@ export async function listAttendanceForChild(tenantId: string, studentUserId: st
     else byCohort.set(r.cohortId, { cohortId: r.cohortId, cohortName: r.cohortName, days: [r.day] });
   }
   return [...byCohort.values()];
+}
+
+// ── Family Model B: parent-managed child profiles (no login) ───────────────────
+//
+// A managed child is a REAL `users` row (so every existing learner code path —
+// enrollment, progress, recall, quiz, submissions, live presence/chat — works
+// unchanged, keyed on that row's id) that can never authenticate: its email is a
+// synthetic, non-deliverable placeholder and it's never sent a magic link. The
+// parent "studies as" it via the active-learner cookie (src/lib/active-learner.ts).
+// It also gets a `user_profiles.managed_by_user_id` back-reference (the act-as gate)
+// AND a `guardians` row (so it shows up in the same /family read-path as Model A).
+
+export interface ManagedChild {
+  userId: string;
+  displayName: string;
+}
+
+/**
+ * Create a login-less managed child profile for this parent, in this tenant.
+ * Inserts a `users` row (synthetic unique email, unverified), a `user_profiles`
+ * row (`managedByUserId = parentUserId`), and a `guardians` link — all in one
+ * transaction. Safe to call repeatedly (each call mints a fresh uuid-based email,
+ * so re-running never collides on the unique email constraint).
+ */
+export async function createManagedChild(
+  tenantId: string,
+  parentUserId: string,
+  name: string,
+): Promise<string> {
+  const childId = randomUUID();
+  const syntheticEmail = `managed-${randomUUID()}@no-login.invalid`;
+
+  return db.transaction(async (tx) => {
+    await tx.insert(users).values({
+      id: childId,
+      email: syntheticEmail,
+      emailVerified: false,
+      name,
+    });
+    await tx.insert(userProfiles).values({
+      userId: childId,
+      displayName: name,
+      managedByUserId: parentUserId,
+    });
+    await tx
+      .insert(guardians)
+      .values({ tenantId, guardianUserId: parentUserId, studentUserId: childId })
+      .onConflictDoNothing({ target: [guardians.guardianUserId, guardians.studentUserId] });
+    return childId;
+  });
+}
+
+/** The parent's managed child profiles (Model B), scoped to THIS tenant via the
+ *  `guardians` link created alongside the child (every managed child gets one, tied to
+ *  the tenant it was created in) — so a parent who's a member of more than one tenant
+ *  never sees a sibling brand's managed children bleed into this one's UI. */
+export async function listManagedChildren(
+  tenantId: string,
+  parentUserId: string,
+): Promise<ManagedChild[]> {
+  const rows = await db
+    .select({ userId: userProfiles.userId, displayName: userProfiles.displayName })
+    .from(userProfiles)
+    .innerJoin(
+      guardians,
+      and(
+        eq(guardians.studentUserId, userProfiles.userId),
+        eq(guardians.guardianUserId, parentUserId),
+        eq(guardians.tenantId, tenantId),
+      ),
+    )
+    .where(eq(userProfiles.managedByUserId, parentUserId))
+    .orderBy(asc(userProfiles.createdAt));
+  return rows.map((r) => ({ userId: r.userId, displayName: r.displayName ?? "Learner" }));
+}
+
+/** THE act-as gate: is `childUserId` a profile this parent actually manages?
+ *  Every act-as switch and active-learner resolution must call this — never
+ *  trust a client-supplied learner id (or a cookie) without it. */
+export async function isManagedChildOf(parentUserId: string, childUserId: string): Promise<boolean> {
+  const rows = await db
+    .select({ userId: userProfiles.userId })
+    .from(userProfiles)
+    .where(and(eq(userProfiles.userId, childUserId), eq(userProfiles.managedByUserId, parentUserId)))
+    .limit(1);
+  return rows.length > 0;
+}
+
+/** Display name for a managed child (used to render the cookie-selected learner's
+ *  name without trusting the cookie for anything but the id). Returns null if the
+ *  profile doesn't exist (should not happen once isManagedChildOf has passed). */
+export async function getManagedChildName(childUserId: string): Promise<string | null> {
+  const rows = await db
+    .select({ displayName: userProfiles.displayName })
+    .from(userProfiles)
+    .where(eq(userProfiles.userId, childUserId))
+    .limit(1);
+  return rows[0]?.displayName ?? null;
 }

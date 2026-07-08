@@ -3,6 +3,7 @@ import { getScopedDb } from "@/db/scoped";
 import { brandName } from "@/lib/branding";
 import { getSession } from "@/lib/session";
 import { isEnrolled } from "@/db/queries/enrollment";
+import { getActiveLearner } from "@/lib/active-learner";
 import { listLiveForViewer } from "@/db/queries/live";
 import { getStreamSettings } from "@/db/queries/stream-settings";
 import { isTenantAdmin } from "@/lib/api";
@@ -20,17 +21,20 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function LivePage() {
   const sdb = await getScopedDb();
   const session = await getSession();
+  const learner = await getActiveLearner(session);
   const sessions = await listLiveForViewer(sdb.tenantId);
   const canModerate = session ? await isTenantAdmin(session, sdb.tenantId) : false;
 
-  // Visibility gate per session.
+  // Visibility gate per session. "enrolled" is checked for the ACTIVE learner (self, or a
+  // managed child if a parent is "studying as" one), so a child sees exactly the live
+  // sessions for courses they're enrolled in.
   const visible = [];
   for (const s of sessions) {
     if (s.visibility === "public") visible.push(s);
-    else if (!session) continue;
+    else if (!session || !learner) continue;
     else if (s.visibility === "members") visible.push(s);
     else if (s.visibility === "enrolled") {
-      if (!s.courseId || (await isEnrolled(session.user.id, s.courseId))) visible.push(s);
+      if (!s.courseId || (await isEnrolled(learner.id, s.courseId))) visible.push(s);
     }
   }
 
@@ -72,8 +76,9 @@ export default async function LivePage() {
         </section>
       ) : null}
 
-      {/* Who's here — live roster for cohort management, refreshed by a client heartbeat. */}
-      <LivePresence signedIn={Boolean(session)} meId={session?.user.id} />
+      {/* Who's here — live roster for cohort management, refreshed by a client heartbeat.
+          meId is the ACTIVE learner (presence is recorded under that id, not the account id). */}
+      <LivePresence signedIn={Boolean(session)} meId={learner?.id} />
 
       {/* Live class chat — a per-school room so students can interact with the instructor in real time. */}
       <LiveChat signedIn={Boolean(session)} canModerate={canModerate} />
