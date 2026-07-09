@@ -8,7 +8,7 @@
 // Edit copy here ONLY — don't paraphrase inline at any call site, so every surface stays in sync.
 
 export const DISCLAIMER_FULL =
-  "This content is for informational and educational purposes only and is not professional advice (medical, legal, financial, or otherwise). Always do your own research and consult a qualified professional for your situation. Knowledge evolves — science, laws, and best practices change over time — so verify against current sources.";
+  "This content is for informational and educational purposes only and is not professional advice (medical, legal, financial, or otherwise). Always do your own research and consult a qualified professional for your situation. Knowledge evolves. Science, laws, and best practices change over time. Therefore, verify against current sources.";
 
 export const DISCLAIMER_SHORT =
-  "For educational purposes only — not professional advice. Do your own research; science, laws, and best practices evolve.";
+  "For educational purposes only. NOT professional advice. Do your own research; science, laws, and best practices evolve.";
