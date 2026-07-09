@@ -19,6 +19,8 @@ import { US_STATE_LOCAL_GOV_COURSE } from "./data/us-state-local-gov-course";
 import { HOW_TO_RUN_COURSE } from "./data/how-to-run-course";
 import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading-marketing-course";
 import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
+import { HOW_A_BILL_BECOMES_LAW_COURSE } from "./data/how-a-bill-becomes-law-course";
+import { SUPREME_COURT_JUDICIAL_BRANCH_COURSE } from "./data/supreme-court-judicial-branch-course";
 import { STATE_CIVICS_IN_COURSE } from "./data/state-civics-in-course";
 import { STATE_CIVICS_AZ_COURSE } from "./data/state-civics-az-course";
 import { STATE_CIVICS_AR_COURSE } from "./data/state-civics-ar-course";
@@ -85,6 +87,7 @@ import { AI_B5_DEPLOYING_EVALUATING_COURSE } from "./data/ai-b5-deploying-evalua
 import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capstone-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
+import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -255,6 +258,33 @@ async function main() {
     instructorId,
     slug: "help-a-campaign",
     course: HELP_A_CAMPAIGN_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // How a Bill Becomes Law (Federal) — the deep version of US Civics 101's
+  // six-line "how a bill becomes a law" lesson. Same Civics category and cited,
+  // non-partisan standard: this is the PROCESS (committees, House vs. Senate floor
+  // rules, presentment, veto/override), never an argument for or against any bill.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "how-a-bill-becomes-law",
+    course: HOW_A_BILL_BECOMES_LAW_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // The Supreme Court & the Judicial Branch — the deep version of US Civics 101's
+  // five-line "the courts and judicial review" lesson, distinct from
+  // state-vs-federal's landmark-case lessons (which illustrate the federalism
+  // SPLIT, not how the Court itself operates). Institutional and strictly
+  // non-partisan: covers structure, nomination/confirmation, certiorari, oral
+  // argument, opinions/precedent, interpretive approaches (described evenhandedly),
+  // and checks on the judiciary. No position on any Justice, ruling, or philosophy.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "supreme-court-judicial-branch",
+    course: SUPREME_COURT_JUDICIAL_BRANCH_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
@@ -472,6 +502,11 @@ async function main() {
     { slug: "broadcasting-break-in", course: BROADCASTING_COURSE, category: "Careers & Media" },
     { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },
     { slug: "hoodoo-complete", course: HOODOO_COMPLETE_COURSE, category: "Culture & History" },
+    // The Great Migration — homeschool-friendly cultural history, companion to Hoodoo (how
+    // Southern traditions spread north) and Civics (the Black urban vote). Pairs with the
+    // green/black/red interactive map at /great-migration-map. See plans/future-courses/
+    // great-migration.md (design) and great-migration-facts.md (the fact-check pass).
+    { slug: "great-migration", course: GREAT_MIGRATION_COURSE, category: "Culture & History" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,

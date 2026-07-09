@@ -8,7 +8,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phases 1–7 + 5a–d (isolation, catalog, auth, enrollment, Stripe, prerequisites, CYOA,
   embeddings, pedagogy/trust, certificates).
 - ✅ AI tutor (multi-agent + streaming + LangSmith + per-tenant + paid-only + isolation test).
-- ✅ Maps: Commodity (Episode Origins), Growing Belts, Languages atlas, **map lessons**.
+- ✅ Maps: Commodity (Episode Origins), Growing Belts, Languages atlas, Civics (blue/red US map),
+  **Great Migration** (green/black/red Pan-African map — 3 migration streams + Chicago/Harlem/
+  Detroit/Vanport clickable feature cards, \`/great-migration-map\`), **map lessons**.
 - ✅ Quiz answer-links; **markdown rendering** in lessons.
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
@@ -128,7 +130,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Offline support (PWA)** — conservative per-origin service worker (network-first navigation +
   \`/offline\` fallback; cache-first hashed assets; API/cross-origin never cached), tenant-aware
   \`/manifest.webmanifest\`, and a \`NEXT_PUBLIC_DISABLE_SW=1\` kill-switch. Test on a preview first.
-- 🟡 **Offline video/audio** — media should play offline. CentOS had a solution — review and port it.
+- ✅ **Offline video/audio** — done. The service worker (\`public/sw.js\`) serves lesson audio/video from
+  a \`witus-media-v1\` Cache; **Save for offline** (\`save-offline-button.tsx\`) stores a lesson's media
+  (incl. cross-origin Cloudinary). YouTube-style embeds can't be cached (noted in-UI).
 - ⚪ **WYSIWYG + markdown editor** (CentOS) for lesson authoring in the dashboard.
 - ✅ **Rich lesson media** — native audio/video files get a full player; YouTube/Vimeo/Google
   Slides/PDF auto-embed (\`toEmbed\`). Cloudinary upload UI is the remaining piece (URLs work today).
@@ -193,8 +197,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   primary source, emitted by \`gen-health-data.ts\` (so a re-gen preserves it). Per-claim study
   citations remain a planned enhancement. (CES/CNC already carry real DOIs.) Re-run \`seed:health\`
   if the DB predates this. **Speedway S2/S3** still outline-only.
-- 🟡 **"Read Your Body's Data" needs a metrics tracker** — it logs daily numbers inside CentOS's
-  "metrics page" (which witus lacks). Build a tracker, rewrite to external tools, or keep on CentOS.
+- ✅ **"Read Your Body's Data" metrics tracker — decided: keep on CentOS.** The course logs daily
+  numbers in CentenarianOS's tracker (\`centenarianos.com/dashboard/metrics\`); the course now links
+  learners there directly. witus does NOT build its own tracker (ecosystem: metrics live in CentOS).
 - 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
   a **sentence-evaluating coach**: the learner writes a sentence and the AI checks grammar/word-order
   grounded only in the course, cites the rule, and gives a next prompt.
@@ -254,6 +259,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   specializations** wired to the **CYOA** tool. Capstone: **one Ghana subject documented four ways**.
   Beginner-first; earns a gated specialization credential (see Platform backlog). Plan:
   \`plans/future/12-documentarian-program.md\`.
+- ✅ **The Great Migration** (Culture & History) — 12-lesson homeschool course covering the two
+  waves, the three migration streams, the Black press, the Harlem Renaissance, music (blues→jazz→
+  gospel), faith/foodways/mutual aid, civil rights, redlining, and the New Great Migration reversal
+  — incl. the Pacific NW/Vanport Second-Migration thread. Cited (National Archives, Census Bureau,
+  Smithsonian, BlackPast, Schomburg *In Motion*, Wilkerson/Gregory/Grossman); two claims flagged
+  unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
+  were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
+  Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
