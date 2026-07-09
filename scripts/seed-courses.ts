@@ -99,6 +99,7 @@ import { TRAVEL_FLYING_HOME_COURSE } from "./data/travel-flying-home-course";
 import { MOVING_ABROAD_101_COURSE } from "./data/moving-abroad-101-course";
 import { TAXES_AMERICANS_ABROAD_COURSE } from "./data/taxes-americans-abroad-course";
 import { BANKING_ABROAD_COURSE } from "./data/banking-abroad-course";
+import { HEALTHCARE_ABROAD_COURSE } from "./data/healthcare-abroad-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -795,6 +796,19 @@ async function main() {
     instructorId,
     slug: "banking-abroad",
     course: BANKING_ABROAD_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Healthcare Abroad — how healthcare differs once you leave the U.S., travel medical insurance
+  // vs. international/expat health insurance, the key fact that Medicare generally does NOT cover
+  // care outside the U.S., medications abroad, routine/emergency care, medical evacuation, and what
+  // the State Department can (and cannot) do. Educational only, not medical/insurance advice. Cited
+  // to Medicare.gov (CMS), travel.state.gov, and the CDC's Travelers' Health / Yellow Book.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "healthcare-abroad",
+    course: HEALTHCARE_ABROAD_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
