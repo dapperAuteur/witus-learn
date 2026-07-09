@@ -93,6 +93,7 @@ import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
+import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -701,11 +702,11 @@ async function main() {
     navigationMode: "linear",
   });
 
-  // Travel & Living Abroad (new category) — practical, cited how-to content, launching
-  // with "How to Get a U.S. Passport". Cited throughout to the U.S. Department of State's
-  // travel.state.gov. Fees, forms, and processing times change, so the course teaches the
-  // process and points learners to the official site for current numbers rather than
-  // asserting fixed figures (authoritative-values rule).
+  // Travel & Living Abroad (new category) — practical, cited, destination-agnostic how-to
+  // guides for U.S. citizens (passports, visas, and related abroad-travel skills). Cited to
+  // travel.state.gov / USA.gov and official EU/ETIAS sources; because fees, forms, and
+  // requirements CHANGE, every course teaches the process and points learners to the official
+  // source for current figures rather than asserting fixed numbers (authoritative-values rule).
   await db
     .insert(schema.courseCategories)
     .values({ tenantId: learnWitus, name: "Travel & Living Abroad", sortOrder: 12 })
@@ -715,6 +716,14 @@ async function main() {
     instructorId,
     slug: "us-passport",
     course: TRAVEL_PASSPORT_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "travel-visas-101",
+    course: TRAVEL_VISAS_101_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
