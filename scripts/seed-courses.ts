@@ -21,6 +21,7 @@ import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading
 import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { HOW_A_BILL_BECOMES_LAW_COURSE } from "./data/how-a-bill-becomes-law-course";
 import { SUPREME_COURT_JUDICIAL_BRANCH_COURSE } from "./data/supreme-court-judicial-branch-course";
+import { KNOW_YOUR_RIGHTS_COURSE } from "./data/know-your-rights-course";
 import { STATE_CIVICS_IN_COURSE } from "./data/state-civics-in-course";
 import { STATE_CIVICS_AZ_COURSE } from "./data/state-civics-az-course";
 import { STATE_CIVICS_AR_COURSE } from "./data/state-civics-ar-course";
@@ -285,6 +286,19 @@ async function main() {
     instructorId,
     slug: "supreme-court-judicial-branch",
     course: SUPREME_COURT_JUDICIAL_BRANCH_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // The Bill of Rights: Know Your Rights — practical, strictly non-partisan 1st and 4th
+  // Amendment basics (speech, religion, press, assembly, petition; searches, seizures,
+  // warrants, probable cause) in everyday terms: at school, online, and in encounters
+  // with police. Same Civics category and cited standard. Explains what these rights
+  // protect and their limits; takes no position on any case, law, or politician.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "know-your-rights",
+    course: KNOW_YOUR_RIGHTS_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
