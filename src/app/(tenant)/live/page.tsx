@@ -44,7 +44,8 @@ export default async function LivePage() {
 
   // Persistent "always-on" stream (admin-set): shown only when no session is live,
   // so it never competes with a live broadcast. Src is host-allowlisted at save time.
-  const stream = await getStreamSettings(sdb.tenantId);
+  // Only WitUS-owned schools inherit the deployment-wide stream default; others must set their own.
+  const stream = await getStreamSettings(sdb.tenantId, { firstParty: sdb.tenant.flags.firstParty === true });
   const streamSrc = stream.embedSrc ?? stream.playbackUrl;
 
   return (

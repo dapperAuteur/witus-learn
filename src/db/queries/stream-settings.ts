@@ -22,7 +22,16 @@ export interface StreamSettings {
   embedSrc: string | null;
 }
 
-export async function getStreamSettings(tenantId: string): Promise<StreamSettings> {
+/**
+ * @param opts.firstParty  When true, this WitUS-owned tenant inherits the deployment-wide
+ *   stream env defaults if it hasn't set its own. Third-party schools (default: false) NEVER
+ *   inherit BAM's ViLoud/RTMP stream — they must paste their own embed at /admin/live. Pass
+ *   `tenant.flags.firstParty === true`.
+ */
+export async function getStreamSettings(
+  tenantId: string,
+  opts?: { firstParty?: boolean },
+): Promise<StreamSettings> {
   const rows = await db
     .select({ key: platformSettings.key, value: platformSettings.value })
     .from(platformSettings)
@@ -36,15 +45,18 @@ export async function getStreamSettings(tenantId: string): Promise<StreamSetting
   let playbackUrl = byKey.get(PLAYBACK_KEY) ?? null;
   let embedSrc = byKey.get(EMBED_SRC_KEY) ?? null;
 
-  // Fall back to the deployment-wide env defaults when this tenant hasn't set its own, so the
-  // stream values only need to be provided once (RTMP_STREAM_PLAYBACK_URL / STREAM_EMBED_CODE).
-  // Env values pass the SAME allowlist/extract as an admin paste; nothing raw is trusted.
-  if (!playbackUrl && env.RTMP_STREAM_PLAYBACK_URL && isAllowedStreamUrl(env.RTMP_STREAM_PLAYBACK_URL)) {
-    playbackUrl = env.RTMP_STREAM_PLAYBACK_URL.trim();
-  }
-  if (!embedSrc && env.STREAM_EMBED_CODE) {
-    const r = resolveStreamSrc(env.STREAM_EMBED_CODE);
-    if (r.src) embedSrc = r.src;
+  // Fall back to the deployment-wide env defaults ONLY for first-party (WitUS-owned) tenants, so
+  // BAM's stream needs to be provided once for his own schools — but a third-party/white-label
+  // school never broadcasts BAM's ViLoud channel; it must set its own embed. Env values pass the
+  // SAME allowlist/extract as an admin paste; nothing raw is trusted.
+  if (opts?.firstParty) {
+    if (!playbackUrl && env.RTMP_STREAM_PLAYBACK_URL && isAllowedStreamUrl(env.RTMP_STREAM_PLAYBACK_URL)) {
+      playbackUrl = env.RTMP_STREAM_PLAYBACK_URL.trim();
+    }
+    if (!embedSrc && env.STREAM_EMBED_CODE) {
+      const r = resolveStreamSrc(env.STREAM_EMBED_CODE);
+      if (r.src) embedSrc = r.src;
+    }
   }
 
   return { playbackUrl, embedSrc };

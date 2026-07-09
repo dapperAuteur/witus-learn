@@ -49,7 +49,7 @@ const TENANTS: SeedTenant[] = [
     legal: { termsUrl: "/terms", privacyUrl: "/privacy" },
     // ecosystemSso: show "Sign in with WitUS" on this WitUS-branded base tenant.
     // White-label tenants (bettervice.club, elementarymba.com) deliberately omit it.
-    flags: { recruiting: true, paths: false, commodityMap: true, ecosystemSso: true },
+    flags: { recruiting: true, paths: false, commodityMap: true, ecosystemSso: true, firstParty: true },
     hosts: [
       { host: "learn.witus.online", isPrimary: true },
       { host: "learn.localhost", isPrimary: false },
@@ -71,7 +71,7 @@ const TENANTS: SeedTenant[] = [
       colors: { accent: "#993C1D", accentFg: "#ffffff" },
     },
     legal: { termsUrl: "/terms", privacyUrl: "/privacy", safetyUrl: "/safety" },
-    flags: { commodityMap: true, paths: true, leadFunnel: true },
+    flags: { commodityMap: true, paths: true, leadFunnel: true, firstParty: true },
     hosts: [
       { host: "bvc.localhost", isPrimary: true },
       { host: "bettervice.club", isPrimary: false },
@@ -103,7 +103,7 @@ const TENANTS: SeedTenant[] = [
       colors: { accent: "#0F766E", accentFg: "#ffffff" },
     },
     legal: { termsUrl: "/terms", privacyUrl: "/privacy" },
-    flags: { comingSoon: true },
+    flags: { comingSoon: true, firstParty: true },
     hosts: [{ host: "trade.localhost", isPrimary: true }],
   },
   {
@@ -118,7 +118,7 @@ const TENANTS: SeedTenant[] = [
       colors: { accent: "#15803D", accentFg: "#ffffff" },
     },
     legal: { termsUrl: "/terms", privacyUrl: "/privacy" },
-    flags: { comingSoon: true, commodityMap: true },
+    flags: { comingSoon: true, commodityMap: true, firstParty: true },
     hosts: [{ host: "emba.localhost", isPrimary: true }],
   },
   {
@@ -133,7 +133,7 @@ const TENANTS: SeedTenant[] = [
       colors: { accent: "#6D28D9", accentFg: "#ffffff" },
     },
     legal: { termsUrl: "/terms", privacyUrl: "/privacy" },
-    flags: { comingSoon: true },
+    flags: { comingSoon: true, firstParty: true },
     hosts: [{ host: "axiom.localhost", isPrimary: true }],
   },
   {
@@ -148,7 +148,7 @@ const TENANTS: SeedTenant[] = [
       colors: { accent: "#BE123C", accentFg: "#ffffff" },
     },
     legal: { termsUrl: "/terms", privacyUrl: "/privacy", safetyUrl: "/safety" },
-    flags: { comingSoon: true },
+    flags: { comingSoon: true, firstParty: true },
     hosts: [{ host: "swlo.localhost", isPrimary: true }],
   },
 ];

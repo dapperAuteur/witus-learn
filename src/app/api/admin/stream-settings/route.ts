@@ -50,5 +50,5 @@ export async function GET() {
   const { sdb, session } = await apiContext();
   if (!session) return errorJson("Unauthorized", 401);
   if (!(await isTenantAdmin(session, sdb.tenantId))) return errorJson("Forbidden", 403);
-  return json(await getStreamSettings(sdb.tenantId));
+  return json(await getStreamSettings(sdb.tenantId, { firstParty: sdb.tenant.flags.firstParty === true }));
 }
