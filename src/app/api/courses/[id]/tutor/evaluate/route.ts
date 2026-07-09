@@ -4,6 +4,7 @@ import { isEnrolled } from "@/db/queries/enrollment";
 import { isFreeCourse } from "@/lib/gating";
 import { streamSentenceEvaluation } from "@/lib/ai/tutor";
 import { hasAiProvider } from "@/lib/env";
+import { getActiveLearner } from "@/lib/active-learner";
 
 const Schema = z.object({ sentence: z.string().min(2).max(600) });
 
@@ -22,7 +23,10 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
   const course = await sdb.getCourseById(id);
   if (!course || !course.isPublished) return errorJson("Not found", 404);
 
-  const paidLearner = !isFreeCourse(course) && (await isEnrolled(session.user.id, id));
+  // Same enrollment attribution as the tutor route: check the ACTIVE learner (self, or
+  // a managed child while "studying as"), since enrollment itself is per-learner.
+  const learner = (await getActiveLearner(session))!;
+  const paidLearner = !isFreeCourse(course) && (await isEnrolled(learner.id, id));
   const allowed = (await canEditCourse(session, sdb.tenantId, course)) || paidLearner;
   if (!allowed) return errorJson("The AI coach is for enrolled paid students", 403);
 
