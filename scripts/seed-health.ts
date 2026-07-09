@@ -7,6 +7,7 @@ import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import type { AuthoredCourse } from "./data/authored-course";
 import { READ_YOUR_BODY_COURSE } from "./data/read-your-body-course";
+import { DENTAL_HEALTH_COURSE } from "./data/dental-health-course";
 import { NASM_CES_COURSE } from "./data/nasm-ces-course";
 import { NASM_CPT_COURSE } from "./data/nasm-cpt-course";
 import { NASM_CNC_COURSE } from "./data/nasm-cnc-course";
@@ -46,6 +47,7 @@ interface HealthCourse {
 // Categories group the courses on the school. ECS = Endocannabinoid System.
 const COURSES: HealthCourse[] = [
   { slug: "read-your-bodys-data", course: READ_YOUR_BODY_COURSE, category: "Health & Longevity" },
+  { slug: "dental-health-101", course: DENTAL_HEALTH_COURSE, category: "Dental Health" },
   { slug: "nasm-cpt", course: NASM_CPT_COURSE, category: "Fitness Certification" },
   { slug: "nasm-ces", course: NASM_CES_COURSE, category: "Fitness Certification" },
   { slug: "nasm-cnc", course: NASM_CNC_COURSE, category: "Fitness Certification" },
