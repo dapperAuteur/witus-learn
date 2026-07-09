@@ -85,6 +85,7 @@ import { AI_B5_DEPLOYING_EVALUATING_COURSE } from "./data/ai-b5-deploying-evalua
 import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capstone-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
+import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -472,6 +473,11 @@ async function main() {
     { slug: "broadcasting-break-in", course: BROADCASTING_COURSE, category: "Careers & Media" },
     { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },
     { slug: "hoodoo-complete", course: HOODOO_COMPLETE_COURSE, category: "Culture & History" },
+    // The Great Migration — homeschool-friendly cultural history, companion to Hoodoo (how
+    // Southern traditions spread north) and Civics (the Black urban vote). Pairs with the
+    // green/black/red interactive map at /great-migration-map. See plans/future-courses/
+    // great-migration.md (design) and great-migration-facts.md (the fact-check pass).
+    { slug: "great-migration", course: GREAT_MIGRATION_COURSE, category: "Culture & History" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
