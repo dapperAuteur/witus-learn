@@ -97,6 +97,7 @@ import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
 import { TRAVEL_FLYING_HOME_COURSE } from "./data/travel-flying-home-course";
 import { MOVING_ABROAD_101_COURSE } from "./data/moving-abroad-101-course";
+import { TAXES_AMERICANS_ABROAD_COURSE } from "./data/taxes-americans-abroad-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -767,6 +768,18 @@ async function main() {
     instructorId,
     slug: "moving-abroad-101",
     course: MOVING_ABROAD_101_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Taxes for Americans Abroad — high-stakes financial content, deliberately conservative:
+  // repeatedly framed as educational only (not tax/legal advice), cited heavily to the IRS,
+  // FinCEN, and Treasury, and dollar thresholds are framed as annually-changing rather than
+  // asserted as permanent (authoritative-values rule).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "taxes-americans-abroad",
+    course: TAXES_AMERICANS_ABROAD_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
