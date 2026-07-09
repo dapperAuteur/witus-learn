@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { requireTenant } from "@/lib/tenant";
 import { getSession } from "@/lib/session";
+import { getActiveLearner } from "@/lib/active-learner";
 import { getLearnerDashboard } from "@/db/queries/dashboard";
 import { CourseCard } from "@/components/course-card";
 
@@ -26,7 +27,9 @@ export default async function MyCoursesPage() {
     );
   }
 
-  const { courses } = await getLearnerDashboard(tenant.id, session.user.id);
+  // The active learner's enrollments — the child's, if a parent is currently studying as one.
+  const learner = await getActiveLearner(session);
+  const { courses } = await getLearnerDashboard(tenant.id, learner?.id ?? session.user.id);
 
   // Group enrolled courses by progress so learners see where they stand at a glance.
   const inProgress = courses.filter((d) => d.percent > 0 && d.percent < 100);

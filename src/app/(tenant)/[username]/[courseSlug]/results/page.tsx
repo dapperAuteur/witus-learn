@@ -37,14 +37,15 @@ function Sparkline({ scores }: { scores: number[] }) {
   );
 }
 
-// A learner's own results for one course: quiz scores over time (per lesson), per-question
-// performance across retries, and in-lesson recall accuracy. Tenant + enrollment scoped via
+// The ACTIVE learner's results for one course: quiz scores over time (per lesson), per-question
+// performance across retries, and in-lesson recall accuracy. If a parent is studying as a managed
+// child, this shows the child's results, not the parent's. Tenant + enrollment scoped via
 // loadCourseView (a foreign tenant's URL 404s).
 export default async function CourseResultsPage({ params }: Params) {
   const { username, courseSlug } = await params;
   const view = await loadCourseView(username, courseSlug);
   if (!view) notFound();
-  const { course, tenant, session, lessons, modules } = view;
+  const { course, tenant, session, activeLearnerId, lessons, modules } = view;
   const base = `/${username}/${courseSlug}`;
 
   if (!session) {
@@ -58,9 +59,12 @@ export default async function CourseResultsPage({ params }: Params) {
     );
   }
 
+  // The active learner's results (self, or a managed child if a parent is studying as one) —
+  // activeLearnerId is re-verified server-side inside loadCourseView, never trusted from a cookie here.
+  const learnerId = activeLearnerId ?? session.user.id;
   const [attempts, recall] = await Promise.all([
-    getUserCourseQuizAttempts(tenant.id, session.user.id, course.id),
-    getUserCourseRecallStats(tenant.id, session.user.id, course.id),
+    getUserCourseQuizAttempts(tenant.id, learnerId, course.id),
+    getUserCourseRecallStats(tenant.id, learnerId, course.id),
   ]);
 
   const lessonById = new Map(lessons.map((l) => [l.id, l]));

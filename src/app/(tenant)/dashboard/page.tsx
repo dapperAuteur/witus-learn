@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { requireTenant } from "@/lib/tenant";
 import { getSession } from "@/lib/session";
+import { getActiveLearner } from "@/lib/active-learner";
 import { getLearnerDashboard, getLearnerStats } from "@/db/queries/dashboard";
 import { ProgressBar, WeekBars } from "@/components/progress-bits";
 import { DashboardProfileForm } from "@/components/dashboard-profile-form";
@@ -55,9 +56,14 @@ export default async function DashboardPage() {
     );
   }
 
+  // Stats reflect whoever the parent is currently studying as (self, or a managed child) —
+  // getActiveLearner re-verifies the "act-as" cookie server-side on every call. The profile
+  // section below stays on the signed-in account regardless (see "Manage your profile").
+  const learner = await getActiveLearner(session);
+  const activeLearnerId = learner?.id ?? session.user.id;
   const [dashboard, stats] = await Promise.all([
-    getLearnerDashboard(tenant.id, session.user.id),
-    getLearnerStats(tenant.id, session.user.id),
+    getLearnerDashboard(tenant.id, activeLearnerId),
+    getLearnerStats(tenant.id, activeLearnerId),
   ]);
   const { streak, bestStreak, week, courses, xp, level, xpIntoLevel, xpForLevel, badges } = dashboard;
   const lessonsCompleted = courses.reduce((sum, c) => sum + c.completed, 0);
@@ -162,6 +168,11 @@ export default async function DashboardPage() {
 
       <section className="mt-8">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Manage your profile</h2>
+        {learner?.isChild ? (
+          <p className="mt-1 text-xs text-neutral-500">
+            This is your account — {learner.name ?? "the learner above"} is a managed profile.
+          </p>
+        ) : null}
         <div className="mt-3">
           <DashboardProfileForm />
         </div>
