@@ -90,6 +90,7 @@ import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capsto
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
+import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -662,6 +663,24 @@ async function main() {
     slug: "ai-b6-ai-product-capstone",
     course: AI_B6_AI_PRODUCT_CAPSTONE_COURSE,
     category: "AI & Technology",
+    navigationMode: "linear",
+  });
+
+  // Travel & Living Abroad (new category) — practical, cited how-to content, launching
+  // with "How to Get a U.S. Passport". Cited throughout to the U.S. Department of State's
+  // travel.state.gov. Fees, forms, and processing times change, so the course teaches the
+  // process and points learners to the official site for current numbers rather than
+  // asserting fixed figures (authoritative-values rule).
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Travel & Living Abroad", sortOrder: 12 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "us-passport",
+    course: TRAVEL_PASSPORT_COURSE,
+    category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
 
