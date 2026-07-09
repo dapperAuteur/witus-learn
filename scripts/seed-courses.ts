@@ -100,6 +100,7 @@ import { MOVING_ABROAD_101_COURSE } from "./data/moving-abroad-101-course";
 import { TAXES_AMERICANS_ABROAD_COURSE } from "./data/taxes-americans-abroad-course";
 import { BANKING_ABROAD_COURSE } from "./data/banking-abroad-course";
 import { HEALTHCARE_ABROAD_COURSE } from "./data/healthcare-abroad-course";
+import { RETIRING_ABROAD_COURSE } from "./data/retiring-abroad-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -809,6 +810,22 @@ async function main() {
     instructorId,
     slug: "healthcare-abroad",
     course: HEALTHCARE_ABROAD_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Retiring Abroad — the retirement-specific companion to Moving Abroad 101: Social Security
+  // payments abroad (and the Payments Abroad Screening Tool), retirement/passive-income visas
+  // (Portugal + Panama as verified official examples), U.S. worldwide-income taxation of
+  // retirement income, Medicare's lack of coverage abroad, a retirement-specific take on cost of
+  // living/choosing a country, estate/beneficiary considerations, and a planning checklist.
+  // Points to Moving Abroad 101, Taxes for Americans Abroad, and a forthcoming Healthcare Abroad
+  // companion rather than duplicating them. Educational only, cited to ssa.gov, travel.state.gov,
+  // irs.gov, and medicare.gov.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "retiring-abroad",
+    course: RETIRING_ABROAD_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
