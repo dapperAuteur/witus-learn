@@ -58,6 +58,11 @@ export interface TenantFlags {
    *  (bettervice.club, elementarymba.com) leave it off so they never reveal the
    *  shared backend by redirecting to accounts.witus.online. */
   ecosystemSso?: boolean;
+  /** First-party (WitUS-owned) tenant. Only these schools inherit the deployment-wide
+   *  ViLoud/RTMP stream defaults (STREAM_EMBED_CODE / RTMP_STREAM_PLAYBACK_URL) — every
+   *  other (third-party / white-label) school must paste its OWN embed at /admin/live and
+   *  never sees BAM's stream. Set for the seeded WitUS tenants; left off for outside schools. */
+  firstParty?: boolean;
 }
 
 export interface TenantStripeConfig {

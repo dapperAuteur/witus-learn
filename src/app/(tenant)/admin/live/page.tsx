@@ -19,7 +19,7 @@ export default async function LiveAdminPage() {
     listAllTenants(),
     listLiveForAdmin(tenant.id),
     listCourseOptions(tenant.id),
-    getStreamSettings(tenant.id),
+    getStreamSettings(tenant.id, { firstParty: tenant.flags.firstParty === true }),
     getStreamTargets(tenant.id),
   ]);
   const courseTitle = new Map(courses.map((c) => [c.id, c.title]));
