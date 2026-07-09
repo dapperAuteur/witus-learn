@@ -88,6 +88,7 @@ import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capsto
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
+import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -630,6 +631,25 @@ async function main() {
     slug: "ai-b6-ai-product-capstone",
     course: AI_B6_AI_PRODUCT_CAPSTONE_COURSE,
     category: "AI & Technology",
+    navigationMode: "linear",
+  });
+
+  // Travel & Living Abroad — practical, destination-agnostic guides for U.S. citizens
+  // (how to research + obtain a visa, passports, and related abroad-travel skills). Not
+  // civic content, so it's a category of its own. Cited to travel.state.gov / USA.gov and
+  // the official EU/ETIAS sources; every course in this category stresses that requirements
+  // CHANGE and tells learners to reconfirm with the destination's own official source rather
+  // than asserting a fixed per-country rule (authoritative-values rule).
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Travel & Living Abroad", sortOrder: 12 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "travel-visas-101",
+    course: TRAVEL_VISAS_101_COURSE,
+    category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
 
