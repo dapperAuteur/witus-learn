@@ -31,6 +31,18 @@ Better Auth (magic-link) · Stripe · Mailgun · Gemini (embeddings + recommenda
 - Branding, legal pages, age-gate, Stripe descriptor, and email sender are all driven by the
   `tenants` row — never hardcoded, never client-supplied.
 
+## Public read API (`/api/v1`)
+
+A read-only, per-tenant, **API-key**-scoped surface so an external app's backend (starting with
+WanderLearn) can render real Learn.WitUS lesson content — `GET /api/v1/courses` (paginated,
+`?limit=&offset=`), `GET /api/v1/courses/[id]`, and `GET /api/v1/courses/[id]/lessons/[lessonId]`
+(full lesson body/media). The tenant comes **only** from `Authorization: Bearer <key>` — never the
+host, never client input — and every response is **published + `visibility:"public"` only**. Mint
+keys at `/admin/api-keys` (owner/brand-admin). Every response includes a top-level `disclaimer`
+field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.ts) and the
+consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
+`/embed/course/[id]` iframe view is also available for embedding without calling the API directly.
+
 ## Develop
 
 ```bash
