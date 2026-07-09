@@ -203,6 +203,16 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`plans/wanderlearn-embed-integration.md\`, the consumer integration guide). DB-backed isolation
   tests cover the lesson endpoint too, incl. mismatched course/lesson pairings
   (\`tests/isolation/api-v1.db.test.ts\`).
+- 🔧 **Demo account** (\`feat/demo-account\`) — "Try the demo" on the **Acme** tenant's login page
+  mints a session for a **shared demo account** (a \`brand_admin\` on Acme ONLY, so a visitor can try
+  teacher/admin surfaces — authoring, \`/teach\`, \`/live\`, \`/cohorts\` — never a platform owner, never
+  another brand). A nightly **Vercel cron** (\`/api/cron/demo-reset\`, midnight UTC, Bearer \`CRON_SECRET\`
+  guarded) wipes the demo user's Acme data and reseeds a small baseline (a couple of enrollments +
+  completed lessons) so every visitor gets a fresh sandbox. Session mint reuses the kid-login plugin
+  pattern (a real signed Better Auth cookie — not hand-rolled). No migration; three new **optional**
+  env vars (\`CRON_SECRET\`, \`DEMO_VISITOR_PASSWORD\`, \`DEMO_VISITOR_USER_EMAIL\`) — the feature stays
+  dark until BAM sets them (see \`plans/user-tasks/62-demo-account-setup.md\` for the domain/env/seed
+  steps).
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".

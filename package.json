@@ -25,6 +25,7 @@
     "seed:health": "tsx --env-file=.env.local scripts/seed-health.ts",
     "seed:speedway": "tsx --env-file=.env.local scripts/seed-speedway.ts",
     "seed:owner": "tsx --env-file=.env.local scripts/seed-owner.ts",
+    "seed:demo": "tsx --env-file=.env.local scripts/seed-demo.ts",
     "srt:transcript": "tsx --env-file=.env.local scripts/srt-to-transcript.ts",
     "course:script": "tsx --env-file=.env.local scripts/course-to-script.ts",
     "reassign:instructor": "tsx --env-file=.env.local scripts/reassign-instructor.ts",

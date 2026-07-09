@@ -7,7 +7,9 @@ import { brandName } from "@/lib/branding";
 import { getSiteUrl } from "@/lib/site-url";
 import { isWitusBrandedHost } from "@/lib/witus-host";
 import { organizationJsonLd } from "@/lib/seo/json-ld";
+import { isDemoEmail } from "@/db/queries/demo";
 import { SiteHeader } from "@/components/site-header";
+import { DemoBanner } from "@/components/demo-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { ReportProblem } from "@/components/report-problem";
 import { EcosystemFooter } from "@/components/ecosystem-footer";
@@ -42,6 +44,7 @@ export default async function TenantLayout({ children }: { children: React.React
 
   // Prefill the "Report a problem" email for a signed-in user (they can still edit it).
   const session = await getSession();
+  const isDemo = isDemoEmail(session?.user.email);
 
   return (
     <div style={style} className="flex min-h-screen flex-col">
@@ -50,6 +53,7 @@ export default async function TenantLayout({ children }: { children: React.React
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <SiteHeader tenant={tenant} />
+      {isDemo ? <DemoBanner /> : null}
       <div id="main-content" className="flex-1">
         {children}
       </div>

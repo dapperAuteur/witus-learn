@@ -43,6 +43,17 @@ field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.
 consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
 `/embed/course/[id]` iframe view is also available for embedding without calling the API directly.
 
+## Demo account
+
+"Try the demo" on the **Acme** tenant's login page (`acme.learning.witus.online`) signs a visitor
+into a **shared demo account** — a `brand_admin` on Acme only, so they can try teacher/admin
+surfaces (authoring, `/teach`, `/live`, `/cohorts`) without ever becoming a platform owner or a
+member of any other brand. A nightly Vercel cron (`/api/cron/demo-reset`, midnight UTC) wipes the
+demo user's Acme data and reseeds a small baseline so every visitor gets a fresh sandbox. Fully
+optional: three env vars (`CRON_SECRET`, `DEMO_VISITOR_PASSWORD`, `DEMO_VISITOR_USER_EMAIL`) gate
+it — the app boots fine without them. See [src/db/queries/demo.ts](src/db/queries/demo.ts) and
+`plans/user-tasks/62-demo-account-setup.md`.
+
 ## Develop
 
 ```bash
@@ -66,6 +77,8 @@ pnpm seed:speedway   # ElementaryMBA: Speedway docuseries (Indy 500), Intro to R
                      #   Young Makers: AI for Kids (F3), and AI for Entrepreneurs (F4)
 pnpm seed:langchain  # 3 LangGraph/LangChain courses → Learn.WitUS (AI & Technology);
                      #   auto-discovers scripts/data/langchain/<repo>/ (course.json + lessons)
+pnpm seed:demo       # demo account (brand_admin on Acme) + baseline enrollments — needs
+                     #   DEMO_VISITOR_USER_EMAIL set; run once, and after every reseed of Acme content
 ```
 
 `*.localhost` subdomains resolve to 127.0.0.1 in modern browsers; no `/etc/hosts` edit needed.

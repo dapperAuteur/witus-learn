@@ -11,6 +11,7 @@ import { sendEmail } from "./mailer";
 import { getTenantByHost } from "./tenant";
 import { computeTrustedOrigins } from "./auth-origins";
 import { kidLoginPlugin } from "./kid-login-plugin";
+import { demoLoginPlugin } from "./demo-login-plugin";
 
 /** Origins allowed to drive auth. DYNAMIC: every brand has its own domain(s), so we
  *  trust the request's origin when its host resolves to a registered tenant — that's
@@ -83,6 +84,9 @@ export const auth = betterAuth({
     // dedicated endpoint that mints a child's own session without email or a password.
     // See src/lib/kid-login-plugin.ts for why this is a plugin, not a hand-rolled cookie.
     kidLoginPlugin(),
+    // "Try the demo" (Acme tenant only) — mints a session for the shared demo account.
+    // See src/lib/demo-login-plugin.ts for the tenant-lock + secret-lock security model.
+    demoLoginPlugin(),
     nextCookies(),
   ],
   databaseHooks: {

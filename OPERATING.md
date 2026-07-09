@@ -37,6 +37,8 @@ pnpm seed:health            # 8. NASM / ECS / Read-Your-Body
 pnpm seed:faa               # 9. FAA Part 107 (needs the gitignored content/drone-curriculum/)
 pnpm seed:bvc:real          # 10. real BVC episode content
 pnpm seed:speedway          # 11. ElementaryMBA: Speedway, Robotics/STEAM, Young Makers
+pnpm seed:demo              # 12. demo account (brand_admin on Acme) + baseline — needs
+                            #     DEMO_VISITOR_USER_EMAIL set; re-run after reseeding Acme content
 ```
 
 Every seed is **idempotent** (upserts by slug), so re-running is always safe. `seed:tenants` must
@@ -94,3 +96,6 @@ Teachers can also edit lesson text, glossary, sources, and recall prompts **in-a
 - **Streaming:** paste a Viloud/Wave.Video embed at `/admin/live`, or set `RTMP_STREAM_PLAYBACK_URL`
   / `STREAM_EMBED_CODE` once as env vars (the app falls back to them).
 - **Operator to-dos from a session** land in `plans/user-tasks/NN-*.md` (local, gitignored).
+- **Demo account** ("Try the demo" on the Acme login page + its nightly reset cron): set
+  `CRON_SECRET` / `DEMO_VISITOR_PASSWORD` / `DEMO_VISITOR_USER_EMAIL` in Vercel, add the Acme
+  tenant's public host, then `pnpm seed:demo` once. See `plans/user-tasks/62-demo-account-setup.md`.

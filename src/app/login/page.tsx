@@ -4,9 +4,12 @@ import { headers } from "next/headers";
 import { resolveTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { isWitusBrandedHost } from "@/lib/witus-host";
+import { hasDemoLogin } from "@/lib/env";
+import { DEMO_TENANT_SLUG } from "@/db/queries/demo";
 import Link from "next/link";
 import { MagicLinkForm } from "@/components/magic-link-form";
 import { WitusSsoButton } from "@/components/witus-sso-button";
+import { DemoLoginButton } from "@/components/demo-login-button";
 
 export const metadata: Metadata = { title: "Sign in" };
 
@@ -26,6 +29,11 @@ export default async function LoginPage() {
   const host = h.get("x-forwarded-host") ?? h.get("host");
   const showWitusSso = isWitusBrandedHost(host) || tenant?.flags.ecosystemSso === true;
 
+  // "Try the demo" ONLY on the Acme host, and only once DEMO_VISITOR_PASSWORD /
+  // DEMO_VISITOR_USER_EMAIL are configured — a white-label tenant never shows it, and
+  // it's dark entirely until BAM sets the env vars.
+  const showDemoLogin = tenant?.slug === DEMO_TENANT_SLUG && hasDemoLogin;
+
   return (
     <main style={style} className="flex min-h-screen items-center justify-center px-6 py-12">
       <div className="w-full max-w-sm">
@@ -42,6 +50,12 @@ export default async function LoginPage() {
             <div className="mt-4">
               <p className="mb-3 text-center text-xs uppercase tracking-wide text-neutral-400">or</p>
               <WitusSsoButton />
+            </div>
+          ) : null}
+          {showDemoLogin ? (
+            <div className="mt-4">
+              <p className="mb-3 text-center text-xs uppercase tracking-wide text-neutral-400">or</p>
+              <DemoLoginButton />
             </div>
           ) : null}
           <p className="mt-6 text-center text-sm text-neutral-500">
