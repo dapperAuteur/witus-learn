@@ -225,6 +225,13 @@
       "when": 1783549192799,
       "tag": "0031_tidy_penance",
       "breakpoints": true
+    },
+    {
+      "idx": 32,
+      "version": "7",
+      "when": 1783554842273,
+      "tag": "0032_unknown_blue_blade",
+      "breakpoints": true
     }
   ]
 }

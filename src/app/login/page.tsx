@@ -4,6 +4,7 @@ import { headers } from "next/headers";
 import { resolveTenant } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { isWitusBrandedHost } from "@/lib/witus-host";
+import Link from "next/link";
 import { MagicLinkForm } from "@/components/magic-link-form";
 import { WitusSsoButton } from "@/components/witus-sso-button";
 
@@ -43,6 +44,11 @@ export default async function LoginPage() {
               <WitusSsoButton />
             </div>
           ) : null}
+          <p className="mt-6 text-center text-sm text-neutral-500">
+            <Link href="/kids" className="font-medium underline" style={{ color: "var(--accent)" }}>
+              I&apos;m a student
+            </Link>
+          </p>
         </div>
       </div>
     </main>

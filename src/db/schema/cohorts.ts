@@ -17,6 +17,10 @@ export const cohorts = pgTable(
     ownerId: text("owner_id")
       .notNull()
       .references(() => users.id),
+    // Short human-friendly code (e.g. 6 chars, no ambiguous characters) a teacher shares
+    // with families so kids can self-serve sign in — see POST /api/kid-login and
+    // plans/kid-login-avatar-pin-design.md. Null until kid-login is enabled for the class.
+    classCode: text("class_code").unique(),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [index("cohorts_tenant_idx").on(t.tenantId)],
