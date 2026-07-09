@@ -68,6 +68,13 @@ const schema = z.object({
   RTMP_STREAM_PLAYBACK_URL: z.string().optional(),
   STREAM_EMBED_CODE: z.string().optional(),
 
+  // Demo account (Acme "Try the demo" login + nightly Vercel cron reset). All optional —
+  // the app boots fine without them; the demo button/endpoints just stay dark until BAM
+  // sets them in Vercel. See src/db/queries/demo.ts.
+  CRON_SECRET: z.string().min(16).optional(),
+  DEMO_VISITOR_PASSWORD: z.string().min(8).optional(),
+  DEMO_VISITOR_USER_EMAIL: z.string().email().optional(),
+
   // Ecosystem integrations (optional; features no-op until set).
   FLASHLEARN_ECO_API_KEY: z.string().optional(),
   INBOX_INGEST_URL: z.string().url().optional(),
@@ -155,3 +162,7 @@ export const hasAiProvider = Boolean(
     env.TOGETHER_API_KEY ||
     env.OLLAMA_BASE_URL,
 );
+/** The "Try the demo" button + demo-login endpoint can run (a visitor can sign in). */
+export const hasDemoLogin = Boolean(env.DEMO_VISITOR_PASSWORD && env.DEMO_VISITOR_USER_EMAIL);
+/** The nightly demo-reset cron endpoint can run (its Bearer guard has a real secret). */
+export const hasDemoReset = Boolean(env.CRON_SECRET);
