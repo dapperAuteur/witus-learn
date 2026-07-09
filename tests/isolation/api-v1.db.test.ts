@@ -3,8 +3,9 @@ import { afterAll, beforeAll, describe, expect, it } from "vitest";
 // Content-isolation gate for the WanderLearn-embed read API (/api/v1) + its API-key auth
 // (DB-backed). Requires the seeded BVC + Acme tenants + sample courses:
 //   pnpm seed:tenants && pnpm seed:bvc, then DATABASE_URL=... pnpm test
-// Skipped offline so the pure suite still runs. Mints its own throwaway keys and cleans
-// them up — never touches real admin-minted keys.
+// Skipped offline so the pure suite still runs. Mints its own throwaway keys + a throwaway
+// published lesson per tenant, and cleans them all up in afterAll — never touches real
+// admin-minted keys or real course content.
 const HAS_DB = !!process.env.DATABASE_URL && !process.env.DATABASE_URL.includes("placeholder");
 
 describe.skipIf(!HAS_DB)("api/v1 is tenant-scoped by API key, not host (content isolation)", () => {
@@ -12,6 +13,8 @@ describe.skipIf(!HAS_DB)("api/v1 is tenant-scoped by API key, not host (content 
   let acmeId = "";
   let bvcCourseId = "";
   let acmeCourseId = "";
+  let bvcLessonId = "";
+  let acmeLessonId = "";
   let bvcKeyId = "";
   let bvcRawKey = "";
   let acmeKeyId = "";
@@ -19,7 +22,7 @@ describe.skipIf(!HAS_DB)("api/v1 is tenant-scoped by API key, not host (content 
 
   beforeAll(async () => {
     const { db } = await import("@/db/client");
-    const { tenants, courses } = await import("@/db/schema");
+    const { tenants, courses, lessons } = await import("@/db/schema");
     const { eq, and } = await import("drizzle-orm");
     const { createApiKey } = await import("@/db/queries/api-keys");
 
@@ -42,6 +45,37 @@ describe.skipIf(!HAS_DB)("api/v1 is tenant-scoped by API key, not host (content 
     bvcCourseId = bc[0]!.id;
     acmeCourseId = ac[0]!.id;
 
+    // A PUBLISHED lesson within each of those courses. Rather than assume the seed data has
+    // one (Acme's seed course has zero published lessons today), mint our own throwaway
+    // published lesson per tenant — same "insert + clean up in afterAll" pattern as the API
+    // keys below, so this test never depends on seed content shape.
+    const bl = await db
+      .insert(lessons)
+      .values({
+        courseId: bvcCourseId,
+        tenantId: bvcId,
+        title: "Isolation test lesson (BVC)",
+        lessonType: "text",
+        textContent: "Throwaway isolation-test content.",
+        contentFormat: "markdown",
+        isPublished: true,
+      })
+      .returning({ id: lessons.id });
+    const al = await db
+      .insert(lessons)
+      .values({
+        courseId: acmeCourseId,
+        tenantId: acmeId,
+        title: "Isolation test lesson (Acme)",
+        lessonType: "text",
+        textContent: "Throwaway isolation-test content.",
+        contentFormat: "markdown",
+        isPublished: true,
+      })
+      .returning({ id: lessons.id });
+    bvcLessonId = bl[0]!.id;
+    acmeLessonId = al[0]!.id;
+
     const bvcKey = await createApiKey(bvcId, "isolation-test-bvc", null);
     const acmeKey = await createApiKey(acmeId, "isolation-test-acme", null);
     bvcKeyId = bvcKey.key.id;
@@ -52,9 +86,10 @@ describe.skipIf(!HAS_DB)("api/v1 is tenant-scoped by API key, not host (content 
 
   afterAll(async () => {
     const { db } = await import("@/db/client");
-    const { tenantApiKeys } = await import("@/db/schema");
+    const { tenantApiKeys, lessons } = await import("@/db/schema");
     const { inArray } = await import("drizzle-orm");
     await db.delete(tenantApiKeys).where(inArray(tenantApiKeys.id, [bvcKeyId, acmeKeyId].filter(Boolean)));
+    await db.delete(lessons).where(inArray(lessons.id, [bvcLessonId, acmeLessonId].filter(Boolean)));
   });
 
   it("a key resolves to its OWN tenant only", async () => {
@@ -76,13 +111,27 @@ describe.skipIf(!HAS_DB)("api/v1 is tenant-scoped by API key, not host (content 
   it("listPublishedCourses never crosses tenants", async () => {
     const { listPublishedCourses } = await import("@/db/queries/api-v1");
 
-    const bvcCourses = await listPublishedCourses(bvcId);
-    expect(bvcCourses.length).toBeGreaterThan(0);
-    expect(bvcCourses.map((c) => c.id)).not.toContain(acmeCourseId);
+    const bvc = await listPublishedCourses(bvcId);
+    expect(bvc.items.length).toBeGreaterThan(0);
+    expect(bvc.items.map((c) => c.id)).not.toContain(acmeCourseId);
+    expect(bvc.pagination.total).toBeGreaterThanOrEqual(bvc.items.length);
 
-    const acmeCourses = await listPublishedCourses(acmeId);
-    expect(acmeCourses.length).toBeGreaterThan(0);
-    expect(acmeCourses.map((c) => c.id)).not.toContain(bvcCourseId);
+    const acme = await listPublishedCourses(acmeId);
+    expect(acme.items.length).toBeGreaterThan(0);
+    expect(acme.items.map((c) => c.id)).not.toContain(bvcCourseId);
+  });
+
+  it("listPublishedCourses paginates and clamps caller-supplied limit/offset", async () => {
+    const { listPublishedCourses } = await import("@/db/queries/api-v1");
+
+    const page = await listPublishedCourses(bvcId, { limit: 1, offset: 0 });
+    expect(page.items.length).toBe(1);
+    expect(page.pagination).toMatchObject({ limit: 1, offset: 0 });
+
+    // A huge/negative limit is clamped, not passed straight to the DB.
+    const clamped = await listPublishedCourses(bvcId, { limit: 999999, offset: -5 });
+    expect(clamped.pagination.limit).toBeLessThanOrEqual(100);
+    expect(clamped.pagination.offset).toBe(0);
   });
 
   it("getPublishedCourseWithLessons 404s (returns null) for a foreign-tenant id — same as a bogus id", async () => {
@@ -92,6 +141,23 @@ describe.skipIf(!HAS_DB)("api/v1 is tenant-scoped by API key, not host (content 
     // BVC's key/tenantId can't read Acme's course, and vice versa.
     expect(await getPublishedCourseWithLessons(bvcId, acmeCourseId)).toBeNull();
     expect(await getPublishedCourseWithLessons(acmeId, bvcCourseId)).toBeNull();
+  });
+
+  it("getPublishedLesson never crosses tenants or courses — foreign key, foreign course, and wrong-course pairing all 404", async () => {
+    const { getPublishedLesson } = await import("@/db/queries/api-v1");
+
+    // Own tenant, own course, own lesson: resolves.
+    const own = await getPublishedLesson(bvcId, bvcCourseId, bvcLessonId);
+    expect(own).not.toBeNull();
+    expect(own?.id).toBe(bvcLessonId);
+
+    // A BVC key/tenantId can't read Acme's lesson, and vice versa — same for the course id.
+    expect(await getPublishedLesson(bvcId, acmeCourseId, acmeLessonId)).toBeNull();
+    expect(await getPublishedLesson(acmeId, bvcCourseId, bvcLessonId)).toBeNull();
+
+    // Right tenant, but mismatched course/lesson pairing (lesson belongs to a different
+    // course than the one named in the URL) — also 404s, not a cross-course leak.
+    expect(await getPublishedLesson(bvcId, acmeCourseId, bvcLessonId)).toBeNull();
   });
 
   it("a missing, garbage, or revoked key is rejected — never returns data", async () => {

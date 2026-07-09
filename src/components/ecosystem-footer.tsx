@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
 import { ECOSYSTEM_PRODUCTS } from "@/lib/ecosystem";
+import { DISCLAIMER_SHORT } from "@/lib/disclaimer";
 
 // Ecosystem footer — rendered ONLY on WitUS-branded surfaces (the apex +
 // *.witus.online, incl. learn.witus.online), gated in (tenant)/layout.tsx via
@@ -112,6 +113,7 @@ export function EcosystemFooter({ tenant }: { tenant: TenantRecord }) {
         </div>
 
         <p className="text-neutral-500">© {brandName(tenant)}</p>
+        <p className="text-xs text-neutral-400 dark:text-neutral-600">{DISCLAIMER_SHORT}</p>
       </div>
     </footer>
   );

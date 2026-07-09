@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { TenantRecord } from "@/lib/tenant";
 import { brandName } from "@/lib/branding";
+import { DISCLAIMER_SHORT } from "@/lib/disclaimer";
 
 // Per-tenant footer. Legal links come from tenants.legal — no cross-app footer
 // ("your account also works on …"); each brand stands alone.
@@ -35,6 +36,9 @@ export function SiteFooter({ tenant }: { tenant: TenantRecord }) {
             </li>
           ) : null}
         </ul>
+      </div>
+      <div className="mx-auto max-w-5xl px-4 pb-6">
+        <p className="text-xs text-neutral-400 dark:text-neutral-600">{DISCLAIMER_SHORT}</p>
       </div>
     </footer>
   );
