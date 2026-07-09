@@ -15,12 +15,11 @@ export async function POST(req: Request) {
   const parsed = Schema.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return errorJson("Invalid input", 400);
 
-  const allowed =
-    (await isPlatformOwner(session.user.id)) ||
-    (await getMembership(session.user.id, parsed.data.tenantId)) === "brand_admin";
+  const owner = await isPlatformOwner(session.user.id);
+  const allowed = owner || (await getMembership(session.user.id, parsed.data.tenantId)) === "brand_admin";
   if (!allowed) return errorJson("Forbidden", 403);
 
-  const res = await addDomain(parsed.data.tenantId, parsed.data.host);
+  const res = await addDomain(parsed.data.tenantId, parsed.data.host, { exemptFromCap: owner });
   if ("error" in res) return errorJson(res.error, 400);
   return json(res);
 }

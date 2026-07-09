@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { requireTenant } from "@/lib/tenant";
 import { isPlatformOwner, requireBrandAdmin } from "@/lib/session";
-import { listTenantsWithDomains } from "@/db/queries/admin-domains";
+import { listTenantsWithDomains, MAX_DOMAINS_PER_TENANT } from "@/db/queries/admin-domains";
+import { hasVercelDomains } from "@/lib/env";
 import { DomainsAdmin } from "@/components/domains-admin";
 
 export const metadata: Metadata = { title: "Domains" };
@@ -26,7 +27,7 @@ export default async function DomainsAdminPage() {
           : `Map a custom domain to ${tenant.name}.`}
       </p>
       <div className="mt-6">
-        <DomainsAdmin tenants={tenants} />
+        <DomainsAdmin tenants={tenants} hasVercelDomains={hasVercelDomains} maxDomains={MAX_DOMAINS_PER_TENANT} />
       </div>
     </main>
   );

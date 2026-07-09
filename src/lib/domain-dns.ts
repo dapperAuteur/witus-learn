@@ -1,10 +1,30 @@
 import "server-only";
 import { promises as dns } from "node:dns";
+import { env } from "@/lib/env";
 
 // Where custom domains should point. Vercel defaults; override per deployment with
 // DOMAIN_APEX_IP / DOMAIN_CNAME_TARGET.
 export const APEX_IP = process.env.DOMAIN_APEX_IP ?? "76.76.21.21";
 export const CNAME_TARGET = process.env.DOMAIN_CNAME_TARGET ?? "cname.vercel-dns.com";
+
+// The app's own zone (e.g. "learn.witus.online"), read from NEXT_PUBLIC_APP_URL — never
+// hardcoded, per the authoritative-values rule. A wildcard Vercel domain for
+// "*.<baseZone>" covers every subdomain, so those never go through the Vercel Domains API.
+function baseZoneHost(): string {
+  try {
+    return new URL(env.NEXT_PUBLIC_APP_URL).hostname.toLowerCase();
+  } catch {
+    return "localhost";
+  }
+}
+
+/** Is this host a subdomain of (or equal to) the app's own zone? Those are covered by
+ *  the wildcard Vercel domain BAM sets up once — no per-tenant Vercel API call needed. */
+export function isWildcardCovered(host: string): boolean {
+  const clean = host.toLowerCase().replace(/\.$/, "");
+  const base = baseZoneHost();
+  return clean === base || clean.endsWith(`.${base}`);
+}
 
 export interface DnsRecord {
   type: "A" | "CNAME";

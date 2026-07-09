@@ -43,6 +43,20 @@ field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.
 consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
 `/embed/course/[id]` iframe view is also available for embedding without calling the API directly.
 
+## Self-serve custom domains
+
+At `/admin/domains`, a school's **brand_admin** maps a domain to their tenant entirely self-serve —
+no BAM in the loop. A `<slug>.learn.witus.online` subdomain works instantly (covered by a wildcard
+Vercel domain BAM sets up once). A **custom** domain (e.g. `theirschool.com`) is auto-registered
+with the Vercel project via the Vercel Domains API
+([src/lib/vercel-domains.ts](src/lib/vercel-domains.ts)); the admin sees the DNS records to set at
+their own registrar and a **"Check verification"** button that polls status. Optional env vars
+`VERCEL_API_TOKEN` / `VERCEL_PROJECT_ID` / `VERCEL_TEAM_ID` gate the Vercel-side automation — without
+them the domain manager still maps the host and shows generic DNS records, it just can't register
+the domain with Vercel for you. A per-tenant cap (5 domains) keeps this abuse-resistant; Vercel never
+serves an unverified domain, so a school can't hijack a domain it doesn't control. See
+`plans/user-tasks/64-domain-self-serve-setup.md`.
+
 ## Demo account
 
 "Try the demo" on the **Acme** tenant's login page (`acme.learning.witus.online`) signs a visitor

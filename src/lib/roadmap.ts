@@ -15,6 +15,13 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
+- 🔧 **Self-serve custom domains — Vercel automation** (\`feat/vercel-domains\`) — a brand_admin
+  attaching their **own** domain (e.g. \`theirschool.com\`) at \`/admin/domains\` no longer needs BAM: the
+  app registers it with the Vercel project via the Vercel Domains API, shows the DNS records to set at
+  their registrar, and a **"Check verification"** button polls status until it flips to ✅ Verified.
+  \`<slug>.learn.witus.online\` subdomains are unaffected — the wildcard zone covers them instantly, so
+  the app skips the Vercel API call for those. Degrades gracefully to the old manual flow if
+  \`VERCEL_API_TOKEN\`/\`VERCEL_PROJECT_ID\` aren't set. Per-tenant cap of 5 domains. No migration.
 - 🔧 **Operator overview** (\`feat/operator-overview\`) — an owner-only \`/admin/overview\` dashboard
   consolidating cross-cutting signals in one place: **open problem reports**, **new curriculum
   feedback**, **recent leads + enrollments** (each a headline number + a few recent rows + a link to
