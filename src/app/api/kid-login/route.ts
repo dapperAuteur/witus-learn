@@ -3,10 +3,11 @@ import { errorJson } from "@/lib/api";
 import { auth } from "@/lib/auth";
 
 // POST /api/kid-login — the kid-facing sign-in endpoint (class code → avatar → PIN). This
-// route is a thin wrapper: ALL real validation (class code → cohort, cohort membership,
-// rate-limited PIN compare, session mint) lives in the Better Auth plugin endpoint
-// `auth.api.kidLoginVerify` (src/lib/kid-login-plugin.ts) — kept there, not here, so the
-// same checks apply no matter which URL a caller hits (see that file's comment).
+// route is a thin wrapper: ALL real validation (login-CSRF/origin, class code → cohort,
+// cohort membership, rate-limited PIN compare, session mint) lives in the Better Auth
+// plugin endpoint `auth.api.kidLoginVerify` (src/lib/kid-login-plugin.ts) — kept there,
+// not here, so the same checks apply no matter which URL a caller hits (see that file's
+// comment). We forward the request headers so the plugin can run the origin check.
 //
 // No enumeration: every failure — bad class code, child not in that class, wrong PIN,
 // locked out — surfaces as the exact same generic message. Never distinguish them.
@@ -25,6 +26,9 @@ export async function POST(req: Request) {
   try {
     const response = await auth.api.kidLoginVerify({
       body: parsed.data,
+      // Forward the real request headers so the plugin's login-CSRF check (checkLoginOrigin)
+      // can see Origin/Referer/Cookie/Sec-Fetch and resolve the tenant's trusted origins.
+      headers: req.headers,
       asResponse: true,
     });
     return response;

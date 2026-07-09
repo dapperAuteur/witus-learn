@@ -3,6 +3,7 @@ import { setSessionCookie } from "better-auth/cookies";
 import { APIError } from "better-auth";
 import * as z from "zod";
 import { getCohortIdByClassCode, isCohortMember, verifyKidPin } from "@/db/queries/kid-login";
+import { checkLoginOrigin } from "@/lib/auth-origins";
 
 // A dedicated Better Auth plugin (Option A of plans/kid-login-avatar-pin-design.md) that
 // mints a real Better Auth session for a child user WITHOUT a magic link or a password.
@@ -17,14 +18,23 @@ import { getCohortIdByClassCode, isCohortMember, verifyKidPin } from "@/db/queri
 // session cookie is signed exactly the way `getSession()` expects (same `ctx.setSignedCookie`
 // call every other sign-in path uses), so there is no risk of forging a signature by hand.
 //
-// SECURITY: all the real validation (class code → cohort, cohort membership, rate-limited
-// PIN compare) lives INSIDE this endpoint, not in the Next.js route that calls it. That
-// matters because this plugin is registered on the shared `auth` instance whose handler
-// backs the public `/api/auth/[...all]` catch-all — so this endpoint is ALSO reachable
-// directly at POST /api/auth/kid-login/verify, not just via our own POST /api/kid-login
-// wrapper. If the validation lived only in the wrapper route, hitting the plugin path
-// directly would mint a session without checking the PIN. Keeping the checks here means
-// both entry points enforce the identical rate-limited, class-code-bound PIN verification.
+// SECURITY: all the real validation (origin/CSRF, class code → cohort, cohort membership,
+// rate-limited PIN compare) lives INSIDE this endpoint, not in the Next.js route that calls
+// it. That matters because this plugin is registered on the shared `auth` instance whose
+// handler backs the public `/api/auth/[...all]` catch-all — so this endpoint is ALSO
+// reachable directly at POST /api/auth/kid-login/verify, not just via our own POST
+// /api/kid-login wrapper. If the validation lived only in the wrapper route, hitting the
+// plugin path directly would mint a session without checking the PIN. Keeping the checks
+// here means both entry points enforce the identical rate-limited, class-code-bound PIN
+// verification and the same login-CSRF (trusted-origin) guard.
+//
+// CSRF: `checkLoginOrigin` mirrors Better Auth's built-in `validateFormCsrf` (the exact
+// middleware `/sign-in/email` runs) against the SAME trusted-origin set as auth.ts, so
+// kid-login is neither more nor less permissive than the platform's own sign-in. We call
+// it explicitly (rather than the built-in middleware) because this endpoint is invoked via
+// `auth.api.kidLoginVerify({ headers })` where `ctx.request` isn't set — the built-in
+// middleware short-circuits on a missing `ctx.request`, so it would silently NOT run. The
+// wrapper forwards the real request headers, which arrive here as `ctx.headers`.
 const kidLoginBodySchema = z.object({
   classCode: z.string().trim().min(1).max(32),
   childUserId: z.string().min(1),
@@ -45,6 +55,14 @@ export const kidLoginPlugin = () => ({
       "/kid-login/verify",
       { method: "POST", body: kidLoginBodySchema },
       async (ctx) => {
+        // Login-CSRF guard FIRST, before any DB work — a cross-origin POST is rejected
+        // exactly as the built-in sign-in would reject it. `ctx.headers` is the forwarded
+        // request's headers (or, on the direct HTTP path, the real request's).
+        const headers = ctx.headers ?? ctx.request?.headers;
+        if (headers && (await checkLoginOrigin(headers)) === "blocked") {
+          throw new APIError("FORBIDDEN", { message: "That didn't match. Please try again." });
+        }
+
         const { classCode, childUserId, pin } = ctx.body;
 
         const cohort = await getCohortIdByClassCode(classCode);

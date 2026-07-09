@@ -139,6 +139,28 @@ async function main() {
   const sess = await pool.query("select user_id, expires_at from sessions where user_id=$1 order by created_at desc limit 1", [childId]);
   console.log("sessions row for child:", JSON.stringify(sess.rows[0]));
 
+  // --- Check: login-CSRF — a cross-origin POST (even with the CORRECT PIN) is rejected ---
+  console.log("\n== CHECK: cross-origin login-CSRF is blocked ==");
+  await pool.query("delete from kid_login_attempts where child_user_id=$1", [childId]);
+  const crossOrigin = await fetch(`${BASE}/api/kid-login`, {
+    method: "POST",
+    headers: { ...h, origin: "https://evil.example" },
+    body: JSON.stringify({ classCode: CLASS_CODE, childUserId: childId, pin: CORRECT_PIN }),
+  });
+  const crossBody = await crossOrigin.json().catch(() => ({}));
+  const crossCookies = getSetCookie(crossOrigin);
+  console.log("cross-origin correct PIN:", crossOrigin.status, JSON.stringify(crossBody));
+  console.log("cross-origin Set-Cookie count:", crossCookies.length, "(must be 0 — no session leaked)");
+  const crossAttempts = await pool.query(
+    "select attempts from kid_login_attempts where child_user_id=$1",
+    [childId],
+  );
+  console.log(
+    "attempts row after cross-origin:",
+    JSON.stringify(crossAttempts.rows[0] ?? null),
+    "(null/0 ⇒ blocked BEFORE the PIN check, so it can't burn rate-limit budget)",
+  );
+
   // --- Check 4: session resolves to child + is low-privilege ---
   console.log("\n== CHECK: minted session is child-scoped + low privilege ==");
   const cookieHeader = cookies.map((c) => c.split(";")[0]).join("; ");

@@ -9,38 +9,17 @@ import { env } from "./env";
 import { rewriteOrigin } from "./auth-url";
 import { sendEmail } from "./mailer";
 import { getTenantByHost } from "./tenant";
+import { computeTrustedOrigins } from "./auth-origins";
 import { kidLoginPlugin } from "./kid-login-plugin";
-
-/** Static, env-driven base origins (the platform's own URLs + any explicit extras). */
-function staticTrustedOrigins(): string[] {
-  const fromEnv = (env.TRUSTED_ORIGINS ?? "")
-    .split(",")
-    .map((s) => s.trim())
-    .filter(Boolean);
-  const devHosts =
-    env.NODE_ENV !== "production"
-      ? ["http://localhost:3040", "http://bvc.localhost:3040", "http://acme.localhost:3040"]
-      : [];
-  return Array.from(
-    new Set([env.BETTER_AUTH_URL, env.NEXT_PUBLIC_APP_URL, ...devHosts, ...fromEnv]),
-  );
-}
 
 /** Origins allowed to drive auth. DYNAMIC: every brand has its own domain(s), so we
  *  trust the request's origin when its host resolves to a registered tenant — that's
  *  why custom domains like www.bettervice.club work without hardcoding each in env.
- *  (Previously static + env-only, which 403'd magic-link sign-in on tenant domains.) */
+ *  (Previously static + env-only, which 403'd magic-link sign-in on tenant domains.)
+ *  The computation lives in ./auth-origins so the kid-login plugin's CSRF check reuses
+ *  the exact same trusted set (single source of truth). */
 async function trustedOrigins(request?: Request): Promise<string[]> {
-  const origins = new Set(staticTrustedOrigins());
-  const host = request?.headers.get("x-forwarded-host") ?? request?.headers.get("host");
-  if (host) {
-    const tenant = await getTenantByHost(host);
-    if (tenant) {
-      const proto = request?.headers.get("x-forwarded-proto") ?? (host.includes("localhost") ? "http" : "https");
-      origins.add(`${proto}://${host}`);
-    }
-  }
-  return Array.from(origins);
+  return computeTrustedOrigins(request?.headers);
 }
 
 export const auth = betterAuth({
