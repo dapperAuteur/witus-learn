@@ -98,6 +98,7 @@ import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
 import { TRAVEL_FLYING_HOME_COURSE } from "./data/travel-flying-home-course";
 import { MOVING_ABROAD_101_COURSE } from "./data/moving-abroad-101-course";
 import { TAXES_AMERICANS_ABROAD_COURSE } from "./data/taxes-americans-abroad-course";
+import { BANKING_ABROAD_COURSE } from "./data/banking-abroad-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -780,6 +781,20 @@ async function main() {
     instructorId,
     slug: "taxes-americans-abroad",
     course: TAXES_AMERICANS_ABROAD_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Banking & Money When You Live Abroad — companion to Taxes for Americans Abroad: why FATCA
+  // makes some foreign banks reluctant to serve Americans, keeping/using U.S. bank and brokerage
+  // accounts from abroad, a short pointer (not a repeat) to FBAR/FATCA reporting, moving money
+  // internationally, currency risk, avoiding scams, and staying compliant (OFAC sanctions
+  // screening, registered providers). Cited to the IRS, FinCEN, Treasury (OFAC), and the CFPB;
+  // educational only, not financial/tax/legal advice (authoritative-values rule).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "banking-abroad",
+    course: BANKING_ABROAD_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
