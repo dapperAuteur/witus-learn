@@ -10,6 +10,13 @@ export interface AdminNavItem {
 }
 
 export const ADMIN_NAV: AdminNavItem[] = [
+  {
+    href: "/admin/overview",
+    title: "Operator overview",
+    desc: "Open reports, curriculum feedback, recent leads + enrollments, migration status.",
+    icon: "📡",
+    ownerOnly: true,
+  },
   { href: "/admin/dashboard", title: "Dashboard", desc: "Learners, enrollments, completions + roster.", icon: "📊" },
   { href: "/admin/settings", title: "Brand settings", desc: "Accent, branding, gamification, AI tutor, age-gate.", icon: "🎨" },
   { href: "/admin/categories", title: "Categories", desc: "Add, rename, or remove course categories.", icon: "🗂️" },

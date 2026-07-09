@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { requireTenant } from "@/lib/tenant";
 import { getSiteUrl } from "@/lib/site-url";
 import { getPublishedCourseWithLessons } from "@/db/queries/api-v1";
+import { DISCLAIMER_SHORT } from "@/lib/disclaimer";
 
 export const metadata: Metadata = { robots: { index: false, follow: false } };
 
@@ -71,6 +72,12 @@ export default async function EmbedCoursePage({ params }: Params) {
       >
         Continue on {tenant.name} →
       </a>
+
+      {/* The embed strips all other site chrome (no SiteFooter/EcosystemFooter), so the
+          disclaimer is repeated here — it must travel with the content wherever it's iframed. */}
+      <p className="mt-8 border-t border-neutral-200 pt-4 text-xs text-neutral-400 dark:border-neutral-800 dark:text-neutral-600">
+        {DISCLAIMER_SHORT}
+      </p>
     </main>
   );
 }

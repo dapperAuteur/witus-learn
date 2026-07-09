@@ -1,5 +1,5 @@
 import "server-only";
-import { and, asc, eq } from "drizzle-orm";
+import { and, asc, count, eq } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses, lessons, userProfiles, type Lesson } from "@/db/schema";
 
@@ -17,25 +17,65 @@ export interface ApiCourseListItem {
   category: string | null;
 }
 
-export async function listPublishedCourses(tenantId: string): Promise<ApiCourseListItem[]> {
-  const rows = await db
-    .select({
-      id: courses.id,
-      slug: courses.slug,
-      title: courses.title,
-      description: courses.description,
-      category: courses.category,
-    })
-    .from(courses)
-    .where(
-      and(
-        eq(courses.tenantId, tenantId),
-        eq(courses.isPublished, true),
-        eq(courses.visibility, "public"),
-      ),
-    )
-    .orderBy(asc(courses.title));
-  return rows;
+export interface ApiPagination {
+  limit: number;
+  offset: number;
+  total: number;
+  hasMore: boolean;
+}
+
+const DEFAULT_LIST_LIMIT = 20;
+const MAX_LIST_LIMIT = 100;
+
+/** Clamp caller-supplied pagination params to sane bounds — never trust raw query-string
+ *  numbers straight into a DB query (negative/huge limit, negative offset). */
+export function normalizeListPagination(opts?: { limit?: number; offset?: number }): {
+  limit: number;
+  offset: number;
+} {
+  const rawLimit = opts?.limit;
+  const rawOffset = opts?.offset;
+  const limit =
+    Number.isFinite(rawLimit) && (rawLimit as number) > 0
+      ? Math.min(Math.floor(rawLimit as number), MAX_LIST_LIMIT)
+      : DEFAULT_LIST_LIMIT;
+  const offset = Number.isFinite(rawOffset) && (rawOffset as number) > 0 ? Math.floor(rawOffset as number) : 0;
+  return { limit, offset };
+}
+
+export async function listPublishedCourses(
+  tenantId: string,
+  opts?: { limit?: number; offset?: number },
+): Promise<{ items: ApiCourseListItem[]; pagination: ApiPagination }> {
+  const { limit, offset } = normalizeListPagination(opts);
+  const where = and(
+    eq(courses.tenantId, tenantId),
+    eq(courses.isPublished, true),
+    eq(courses.visibility, "public"),
+  );
+
+  const [rows, totalRows] = await Promise.all([
+    db
+      .select({
+        id: courses.id,
+        slug: courses.slug,
+        title: courses.title,
+        description: courses.description,
+        category: courses.category,
+      })
+      .from(courses)
+      .where(where)
+      .orderBy(asc(courses.title))
+      .limit(limit)
+      .offset(offset),
+    db.select({ value: count() }).from(courses).where(where),
+  ]);
+
+  const total = totalRows[0]?.value ?? 0;
+  return {
+    items: rows,
+    pagination: { limit, offset, total, hasMore: offset + rows.length < total },
+  };
 }
 
 export interface ApiLessonListItem {
@@ -97,4 +137,77 @@ export async function getPublishedCourseWithLessons(
     .orderBy(asc(lessons.sortOrder));
 
   return { ...course, lessons: lessonRows };
+}
+
+export interface ApiLessonDetail {
+  id: string;
+  slug: string | null;
+  title: string;
+  lessonType: string;
+  order: number;
+  /** Lesson body text (markdown/tiptap per `contentFormat`) — null for media-only lesson types. */
+  body: string | null;
+  contentFormat: string | null;
+  /** Primary media URL (video/audio/slides/photo/etc.), if this lesson type has one. */
+  mediaUrl: string | null;
+}
+
+/** One published lesson belonging to a published+public course, tenant-scoped from the
+ *  caller's API key. Null (route 404s) if the course id doesn't resolve in this tenant, isn't
+ *  published/public, or the lesson doesn't belong to that course / isn't published — same
+ *  no-existence-leak rule as getPublishedCourseWithLessons. This is the ONLY api-v1 read that
+ *  returns lesson body/media — the course-detail endpoint stays metadata-only. */
+export async function getPublishedLesson(
+  tenantId: string,
+  courseId: string,
+  lessonId: string,
+): Promise<ApiLessonDetail | null> {
+  const courseRows = await db
+    .select({ id: courses.id })
+    .from(courses)
+    .where(
+      and(
+        eq(courses.id, courseId),
+        eq(courses.tenantId, tenantId),
+        eq(courses.isPublished, true),
+        eq(courses.visibility, "public"),
+      ),
+    )
+    .limit(1);
+  if (!courseRows[0]) return null;
+
+  const lessonRows = await db
+    .select({
+      id: lessons.id,
+      slug: lessons.slug,
+      title: lessons.title,
+      lessonType: lessons.lessonType,
+      sortOrder: lessons.sortOrder,
+      textContent: lessons.textContent,
+      contentFormat: lessons.contentFormat,
+      contentUrl: lessons.contentUrl,
+    })
+    .from(lessons)
+    .where(
+      and(
+        eq(lessons.id, lessonId),
+        eq(lessons.courseId, courseId),
+        eq(lessons.tenantId, tenantId),
+        eq(lessons.isPublished, true),
+      ),
+    )
+    .limit(1);
+  const lesson = lessonRows[0];
+  if (!lesson) return null;
+
+  return {
+    id: lesson.id,
+    slug: lesson.slug,
+    title: lesson.title,
+    lessonType: lesson.lessonType,
+    order: lesson.sortOrder,
+    body: lesson.textContent,
+    contentFormat: lesson.contentFormat,
+    mediaUrl: lesson.contentUrl,
+  };
 }

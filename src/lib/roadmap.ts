@@ -15,6 +15,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
+- 🔧 **Operator overview** (\`feat/operator-overview\`) — an owner-only \`/admin/overview\` dashboard
+  consolidating cross-cutting signals in one place: **open problem reports**, **new curriculum
+  feedback**, **recent leads + enrollments** (each a headline number + a few recent rows + a link to
+  the full page), and a **migration-status indicator** comparing migrations on disk
+  (\`src/db/migrations/meta/_journal.json\`) against \`drizzle.__drizzle_migrations\` for the current
+  database — surfaces "N applied / M on disk, run \`pnpm db:migrate:prod\`" instead of guessing
+  whether prod is behind. Degrades gracefully (shows latest-on-disk only) if the bookkeeping table
+  can't be read. No migration; reuses existing tenant-scoped query helpers.
 - 🔧 **Learner dashboard** (\`feat/student-dashboard\`) — a signed-in learner's stats + profile hub
   at \`/dashboard\`: current/best **streak**, lessons completed, **recall accuracy**, **quiz average**,
   a 7-day activity strip, earned **credentials** (each links to \`/verify/[token]\`), XP/level + badges
@@ -181,15 +189,20 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   the app** (Home / My Field Log) AND **auto-report to an admin** (reusing the \`/api/report\` →
   problem_reports + WitUS Inbox pipeline) with a reference id. The Field Log client surfaces clear
   400/500 messages and reports 5xx; offline is handled separately (queued, not flagged as a bug).
-- 🔧 **WanderLearn embed foundation** (\`feat/embed-api\`) — a read-only, versioned, **API-key**-scoped
-  public API (\`GET /api/v1/courses\`, \`GET /api/v1/courses/[id]\`) so another app's backend (starting
-  with WanderLearn, which is removing its own LMS) can read a tenant's **published, public** courses
-  + lesson metadata. The tenant comes ONLY from the \`Authorization: Bearer <key>\` — never the host,
-  never client input — via a new \`tenant_api_keys\` table (**migration 0033**, sha256-hashed keys,
-  raw key shown once). Brand-admin/owner UI to mint/revoke at **/admin/api-keys**. A chromeless
-  **\`/embed/course/[id]\`** iframe view ships too (host-tenant-resolved, metadata-only, "Continue on
-  Learn.WitUS" deep link out to the real course page). DB-backed isolation tests added
-  (\`tests/isolation/api-v1.db.test.ts\`). Design: \`plans/wanderlearn-embed-design.md\`.
+- ✅ **WanderLearn embed API** (\`feat/embed-finish\`, supersedes \`feat/embed-api\`) — a read-only,
+  versioned, **API-key**-scoped public API (\`GET /api/v1/courses\` with \`limit\`/\`offset\` pagination,
+  \`GET /api/v1/courses/[id]\`, and \`GET /api/v1/courses/[id]/lessons/[lessonId]\` for the **full lesson
+  body/media**) so another app's backend (starting with WanderLearn, which is removing its own LMS)
+  can render real lesson content. The tenant comes ONLY from the \`Authorization: Bearer <key>\` —
+  never the host, never client input — via the \`tenant_api_keys\` table (**migration 0033**,
+  sha256-hashed keys, raw key shown once). Brand-admin/owner UI to mint/revoke at **/admin/api-keys**.
+  A chromeless **\`/embed/course/[id]\`** iframe view ships too (host-tenant-resolved, "Continue on
+  Learn.WitUS" deep link out to the real course page). Every surface — footer, embed view, and every
+  \`/api/v1\` JSON response — now carries the **educational-use disclaimer**
+  (\`src/lib/disclaimer.ts\`); consumers are required to display it (see
+  \`plans/wanderlearn-embed-integration.md\`, the consumer integration guide). DB-backed isolation
+  tests cover the lesson endpoint too, incl. mismatched course/lesson pairings
+  (\`tests/isolation/api-v1.db.test.ts\`).
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
