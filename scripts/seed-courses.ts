@@ -94,6 +94,7 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
+import { MOVING_ABROAD_101_COURSE } from "./data/moving-abroad-101-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -724,6 +725,18 @@ async function main() {
     instructorId,
     slug: "travel-visas-101",
     course: TRAVEL_VISAS_101_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Moving Abroad 101 — the hub course for the "Moving & living abroad" pillar: long stay vs.
+  // residency vs. citizenship, long-stay visa categories, choosing a country, timeline/cost, and
+  // keeping U.S. ties (voting/mail/banking/taxes). Points to the not-yet-built Taxes/Banking
+  // Abroad courses rather than duplicating them. Same category + cited standard.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "moving-abroad-101",
+    course: MOVING_ABROAD_101_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
