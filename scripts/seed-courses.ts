@@ -94,6 +94,7 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
+import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -724,6 +725,18 @@ async function main() {
     instructorId,
     slug: "travel-visas-101",
     course: TRAVEL_VISAS_101_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // International Travel Basics — the connective "start here" hub for this category. Ties the
+  // pre-trip checklist together (timeline, passport, visa, STEP, insurance, health, money,
+  // packing, emergencies, customs) and points to the two courses above for depth rather than
+  // duplicating them. Cited to travel.state.gov, CDC Travelers' Health, and CBP.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "international-travel-basics",
+    course: TRAVEL_BASICS_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
