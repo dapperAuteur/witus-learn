@@ -95,6 +95,7 @@ import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
+import { TRAVEL_FLYING_HOME_COURSE } from "./data/travel-flying-home-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -737,6 +738,22 @@ async function main() {
     instructorId,
     slug: "international-travel-basics",
     course: TRAVEL_BASICS_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Flying Internationally & Coming Home — the airport-and-border companion to the passport
+  // and visa courses: TSA screening + PreCheck, what CBP does, the Trusted Traveler Programs
+  // (Global Entry, PreCheck, NEXUS, SENTRI), and the CBP re-entry/customs process coming
+  // home (declaration, duty-free allowances, prohibited/restricted items). Cited to tsa.gov,
+  // cbp.gov, and USDA APHIS. Authoritative-values rule is load-bearing: TTP fees and duty-free
+  // exemption dollar amounts both change (and exemptions vary by trip), so the course teaches
+  // the structure and points to CBP/TSA's own tools for current figures rather than asserting
+  // fixed numbers.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "flying-coming-home",
+    course: TRAVEL_FLYING_HOME_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
