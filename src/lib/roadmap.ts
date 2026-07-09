@@ -8,7 +8,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phases 1–7 + 5a–d (isolation, catalog, auth, enrollment, Stripe, prerequisites, CYOA,
   embeddings, pedagogy/trust, certificates).
 - ✅ AI tutor (multi-agent + streaming + LangSmith + per-tenant + paid-only + isolation test).
-- ✅ Maps: Commodity (Episode Origins), Growing Belts, Languages atlas, **map lessons**.
+- ✅ Maps: Commodity (Episode Origins), Growing Belts, Languages atlas, Civics (blue/red US map),
+  **Great Migration** (green/black/red Pan-African map — 3 migration streams + Chicago/Harlem/
+  Detroit/Vanport clickable feature cards, \`/great-migration-map\`), **map lessons**.
 - ✅ Quiz answer-links; **markdown rendering** in lessons.
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
@@ -254,6 +256,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   specializations** wired to the **CYOA** tool. Capstone: **one Ghana subject documented four ways**.
   Beginner-first; earns a gated specialization credential (see Platform backlog). Plan:
   \`plans/future/12-documentarian-program.md\`.
+- ✅ **The Great Migration** (Culture & History) — 12-lesson homeschool course covering the two
+  waves, the three migration streams, the Black press, the Harlem Renaissance, music (blues→jazz→
+  gospel), faith/foodways/mutual aid, civil rights, redlining, and the New Great Migration reversal
+  — incl. the Pacific NW/Vanport Second-Migration thread. Cited (National Archives, Census Bureau,
+  Smithsonian, BlackPast, Schomburg *In Motion*, Wilkerson/Gregory/Grossman); two claims flagged
+  unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
+  were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
+  Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
