@@ -94,6 +94,16 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
+import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
+import { TRAVEL_FLYING_HOME_COURSE } from "./data/travel-flying-home-course";
+import { MOVING_ABROAD_101_COURSE } from "./data/moving-abroad-101-course";
+import { DUAL_CITIZENSHIP_COURSE } from "./data/dual-citizenship-course";
+import { TAXES_AMERICANS_ABROAD_COURSE } from "./data/taxes-americans-abroad-course";
+import { BANKING_ABROAD_COURSE } from "./data/banking-abroad-course";
+import { HEALTHCARE_ABROAD_COURSE } from "./data/healthcare-abroad-course";
+import { RETIRING_ABROAD_COURSE } from "./data/retiring-abroad-course";
+import { STUDYING_ABROAD_COURSE } from "./data/studying-abroad-course";
+import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -724,6 +734,148 @@ async function main() {
     instructorId,
     slug: "travel-visas-101",
     course: TRAVEL_VISAS_101_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // International Travel Basics — the connective "start here" hub for this category. Ties the
+  // pre-trip checklist together (timeline, passport, visa, STEP, insurance, health, money,
+  // packing, emergencies, customs) and points to the two courses above for depth rather than
+  // duplicating them. Cited to travel.state.gov, CDC Travelers' Health, and CBP.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "international-travel-basics",
+    course: TRAVEL_BASICS_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Flying Internationally & Coming Home — the airport-and-border companion to the passport
+  // and visa courses: TSA screening + PreCheck, what CBP does, the Trusted Traveler Programs
+  // (Global Entry, PreCheck, NEXUS, SENTRI), and the CBP re-entry/customs process coming
+  // home (declaration, duty-free allowances, prohibited/restricted items). Cited to tsa.gov,
+  // cbp.gov, and USDA APHIS. Authoritative-values rule is load-bearing: TTP fees and duty-free
+  // exemption dollar amounts both change (and exemptions vary by trip), so the course teaches
+  // the structure and points to CBP/TSA's own tools for current figures rather than asserting
+  // fixed numbers.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "flying-coming-home",
+    course: TRAVEL_FLYING_HOME_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Moving Abroad 101 — the hub course for the "Moving & living abroad" pillar: long stay vs.
+  // residency vs. citizenship, long-stay visa categories, choosing a country, timeline/cost, and
+  // keeping U.S. ties (voting/mail/banking/taxes). Points to the not-yet-built Taxes/Banking
+  // Abroad courses rather than duplicating them. Same category + cited standard.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "moving-abroad-101",
+    course: MOVING_ABROAD_101_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Taxes for Americans Abroad — high-stakes financial content, deliberately conservative:
+  // repeatedly framed as educational only (not tax/legal advice), cited heavily to the IRS,
+  // FinCEN, and Treasury, and dollar thresholds are framed as annually-changing rather than
+  // asserted as permanent (authoritative-values rule).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "taxes-americans-abroad",
+    course: TAXES_AMERICANS_ABROAD_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Banking & Money When You Live Abroad — companion to Taxes for Americans Abroad: why FATCA
+  // makes some foreign banks reluctant to serve Americans, keeping/using U.S. bank and brokerage
+  // accounts from abroad, a short pointer (not a repeat) to FBAR/FATCA reporting, moving money
+  // internationally, currency risk, avoiding scams, and staying compliant (OFAC sanctions
+  // screening, registered providers). Cited to the IRS, FinCEN, Treasury (OFAC), and the CFPB;
+  // educational only, not financial/tax/legal advice (authoritative-values rule).
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "banking-abroad",
+    course: BANKING_ABROAD_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Healthcare Abroad — how healthcare differs once you leave the U.S., travel medical insurance
+  // vs. international/expat health insurance, the key fact that Medicare generally does NOT cover
+  // care outside the U.S., medications abroad, routine/emergency care, medical evacuation, and what
+  // the State Department can (and cannot) do. Educational only, not medical/insurance advice. Cited
+  // to Medicare.gov (CMS), travel.state.gov, and the CDC's Travelers' Health / Yellow Book.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "healthcare-abroad",
+    course: HEALTHCARE_ABROAD_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Retiring Abroad — the retirement-specific companion to Moving Abroad 101: Social Security
+  // payments abroad (and the Payments Abroad Screening Tool), retirement/passive-income visas
+  // (Portugal + Panama as verified official examples), U.S. worldwide-income taxation of
+  // retirement income, Medicare's lack of coverage abroad, a retirement-specific take on cost of
+  // living/choosing a country, estate/beneficiary considerations, and a planning checklist.
+  // Points to Moving Abroad 101, Taxes for Americans Abroad, and a forthcoming Healthcare Abroad
+  // companion rather than duplicating them. Educational only, cited to ssa.gov, travel.state.gov,
+  // irs.gov, and medicare.gov.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "retiring-abroad",
+    course: RETIRING_ABROAD_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Studying Abroad — for U.S. students (and parents) planning academic study in another
+  // country: program types, choosing a program, the student-visa framework (each country sets
+  // its own rules; cross-references Travel Visas 101 for the general method), passport
+  // readiness, funding/financial-aid portability, health & safety, and credit transfer. Cited to
+  // travel.state.gov, EducationUSA/USA StudyAbroad (state.gov), CDC Travelers' Health, and
+  // studentaid.gov.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "studying-abroad",
+    course: STUDYING_ABROAD_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Dual Citizenship & Renunciation Basics — plain-language, non-partisan: dual nationality is
+  // permitted under U.S. law (the U.S. doesn't require choosing, but the other country's rules
+  // vary), the general (country-varies) ways a second citizenship is acquired, practical
+  // implications (passports, taxes — cross-references Taxes for Americans Abroad rather than
+  // duplicating it, military/other obligations), and the formal, irrevocable renunciation
+  // process before a consular officer, including its exit-tax consequences. Takes no position on
+  // whether to acquire or renounce a citizenship. Cited to travel.state.gov, USCIS, and the IRS.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "dual-citizenship",
+    course: DUAL_CITIZENSHIP_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Shipping & Logistics of an International Move — the physical-logistics companion to Moving
+  // Abroad 101: movers vs. DIY shipping vs. sell-and-rebuy, air vs. sea freight and vetting a
+  // licensed international mover, destination-side customs on household goods, moving pets
+  // internationally, documents to hand-carry, closing out U.S. mail, and staying registered to
+  // vote from abroad. Cited to travel.state.gov, CBP/CFR, USDA APHIS, GOV.UK (Transfer of
+  // Residence), the Federal Maritime Commission, USPS, and FVAP.gov. Authoritative-values rule
+  // is load-bearing: destination customs exemptions and pet-entry requirements are set
+  // unilaterally per country and change, so the course teaches the framework (using the U.S.'s
+  // own returning-resident exemption and the UK's Transfer of Residence relief as two concrete,
+  // verified examples) rather than asserting fixed rules for every destination.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "shipping-logistics-abroad",
+    course: SHIPPING_LOGISTICS_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
