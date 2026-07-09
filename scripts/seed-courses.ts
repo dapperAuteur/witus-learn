@@ -13,6 +13,8 @@ import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
 import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
+import { VOTING_ELECTIONS_101_COURSE } from "./data/voting-elections-101-course";
+import { CITIZENSHIP_NATURALIZATION_COURSE } from "./data/citizenship-naturalization-course";
 import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
 import { STATE_VS_FEDERAL_COURSE } from "./data/state-vs-federal-course";
 import { US_STATE_LOCAL_GOV_COURSE } from "./data/us-state-local-gov-course";
@@ -21,6 +23,8 @@ import { SPOTTING_MISLEADING_MARKETING_COURSE } from "./data/spotting-misleading
 import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { HOW_A_BILL_BECOMES_LAW_COURSE } from "./data/how-a-bill-becomes-law-course";
 import { SUPREME_COURT_JUDICIAL_BRANCH_COURSE } from "./data/supreme-court-judicial-branch-course";
+import { KNOW_YOUR_RIGHTS_COURSE } from "./data/know-your-rights-course";
+import { JURY_DUTY_COURTS_COURSE } from "./data/jury-duty-courts-course";
 import { STATE_CIVICS_IN_COURSE } from "./data/state-civics-in-course";
 import { STATE_CIVICS_AZ_COURSE } from "./data/state-civics-az-course";
 import { STATE_CIVICS_AR_COURSE } from "./data/state-civics-ar-course";
@@ -88,6 +92,8 @@ import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capsto
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
+import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
+import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -180,6 +186,39 @@ async function main() {
     instructorId,
     slug: "us-civics-101",
     course: CIVICS_101_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // Voting & Elections 101 — the mechanics companion to US Civics 101's one-line elections
+  // lesson: registration, primaries vs. caucuses vs. the general election, how ballots work
+  // (polling places, early voting, mail voting), the Electoral College, ballot measures, and
+  // how votes are counted, canvassed, and certified. Same Civics category and non-partisan +
+  // cited standard: it explains how the system works and never argues who should win. The
+  // authoritative-values rule is load-bearing: registration deadlines, ID rules, primary
+  // type, and ballot-measure signature thresholds all VARY BY STATE, so the course names the
+  // rule and points to the source (EAC, National Archives, Congress.gov/CRS, NCSL) rather
+  // than asserting one number as universal.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "voting-elections-101",
+    course: VOTING_ELECTIONS_101_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // Citizenship & Naturalization Basics — plain-language, strictly non-partisan (the
+  // process and rules, not immigration policy or politics): who is a citizen at birth
+  // (birthright + through parents), naturalization eligibility and process, the civics/
+  // English test, the Oath of Allegiance, rights and responsibilities, and where to get
+  // authoritative help. Same Civics category and cited standard. Authoritative-values
+  // rule is load-bearing: fees, the civics-test format (2025 vs. 2008 versions), and even
+  // birthright citizenship's litigation status have changed recently, so the course points
+  // to uscis.gov as the source of truth rather than asserting fixed numbers as permanent.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "citizenship-naturalization",
+    course: CITIZENSHIP_NATURALIZATION_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
@@ -285,6 +324,36 @@ async function main() {
     instructorId,
     slug: "supreme-court-judicial-branch",
     course: SUPREME_COURT_JUDICIAL_BRANCH_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // The Bill of Rights: Know Your Rights — practical, strictly non-partisan 1st and 4th
+  // Amendment basics (speech, religion, press, assembly, petition; searches, seizures,
+  // warrants, probable cause) in everyday terms: at school, online, and in encounters
+  // with police. Same Civics category and cited standard. Explains what these rights
+  // protect and their limits; takes no position on any case, law, or politician.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "know-your-rights",
+    course: KNOW_YOUR_RIGHTS_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // Jury Duty & the Courts (the citizen's side) — the practical, citizen-facing
+  // companion to supreme-court-judicial-branch (which covers the institution) and
+  // how-a-bill-becomes-law (the legislative process). Same Civics category and cited,
+  // non-partisan standard: covers why juries exist (6th & 7th Amendments), getting a
+  // summons, voir dire, grand vs. petit juries, the structure of a trial, civil vs.
+  // criminal juries, and jury duty logistics (pay, exemptions, employer protections).
+  // Authoritative-values rule is load-bearing: pay, exemptions, and summons procedure
+  // are the FEDERAL baseline (uscourts.gov, 28 U.S.C.); the course flags that state and
+  // local jury systems vary rather than asserting one nationwide rule.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "jury-duty-courts",
+    course: JURY_DUTY_COURTS_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
@@ -630,6 +699,32 @@ async function main() {
     slug: "ai-b6-ai-product-capstone",
     course: AI_B6_AI_PRODUCT_CAPSTONE_COURSE,
     category: "AI & Technology",
+    navigationMode: "linear",
+  });
+
+  // Travel & Living Abroad (new category) — practical, cited, destination-agnostic how-to
+  // guides for U.S. citizens (passports, visas, and related abroad-travel skills). Cited to
+  // travel.state.gov / USA.gov and official EU/ETIAS sources; because fees, forms, and
+  // requirements CHANGE, every course teaches the process and points learners to the official
+  // source for current figures rather than asserting fixed numbers (authoritative-values rule).
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Travel & Living Abroad", sortOrder: 12 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "us-passport",
+    course: TRAVEL_PASSPORT_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "travel-visas-101",
+    course: TRAVEL_VISAS_101_COURSE,
+    category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
 
