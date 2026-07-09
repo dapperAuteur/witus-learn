@@ -103,6 +103,7 @@ import { BANKING_ABROAD_COURSE } from "./data/banking-abroad-course";
 import { HEALTHCARE_ABROAD_COURSE } from "./data/healthcare-abroad-course";
 import { RETIRING_ABROAD_COURSE } from "./data/retiring-abroad-course";
 import { STUDYING_ABROAD_COURSE } from "./data/studying-abroad-course";
+import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -857,6 +858,24 @@ async function main() {
     instructorId,
     slug: "dual-citizenship",
     course: DUAL_CITIZENSHIP_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Shipping & Logistics of an International Move — the physical-logistics companion to Moving
+  // Abroad 101: movers vs. DIY shipping vs. sell-and-rebuy, air vs. sea freight and vetting a
+  // licensed international mover, destination-side customs on household goods, moving pets
+  // internationally, documents to hand-carry, closing out U.S. mail, and staying registered to
+  // vote from abroad. Cited to travel.state.gov, CBP/CFR, USDA APHIS, GOV.UK (Transfer of
+  // Residence), the Federal Maritime Commission, USPS, and FVAP.gov. Authoritative-values rule
+  // is load-bearing: destination customs exemptions and pet-entry requirements are set
+  // unilaterally per country and change, so the course teaches the framework (using the U.S.'s
+  // own returning-resident exemption and the UK's Transfer of Residence relief as two concrete,
+  // verified examples) rather than asserting fixed rules for every destination.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "shipping-logistics-abroad",
+    course: SHIPPING_LOGISTICS_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
