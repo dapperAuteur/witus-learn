@@ -97,6 +97,7 @@ import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
 import { TRAVEL_FLYING_HOME_COURSE } from "./data/travel-flying-home-course";
 import { MOVING_ABROAD_101_COURSE } from "./data/moving-abroad-101-course";
+import { DUAL_CITIZENSHIP_COURSE } from "./data/dual-citizenship-course";
 import { TAXES_AMERICANS_ABROAD_COURSE } from "./data/taxes-americans-abroad-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
@@ -780,6 +781,21 @@ async function main() {
     instructorId,
     slug: "taxes-americans-abroad",
     course: TAXES_AMERICANS_ABROAD_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Dual Citizenship & Renunciation Basics — plain-language, non-partisan: dual nationality is
+  // permitted under U.S. law (the U.S. doesn't require choosing, but the other country's rules
+  // vary), the general (country-varies) ways a second citizenship is acquired, practical
+  // implications (passports, taxes — cross-references Taxes for Americans Abroad rather than
+  // duplicating it, military/other obligations), and the formal, irrevocable renunciation
+  // process before a consular officer, including its exit-tax consequences. Takes no position on
+  // whether to acquire or renounce a citizenship. Cited to travel.state.gov, USCIS, and the IRS.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "dual-citizenship",
+    course: DUAL_CITIZENSHIP_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
