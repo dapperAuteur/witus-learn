@@ -98,6 +98,7 @@ import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
 import { TRAVEL_FLYING_HOME_COURSE } from "./data/travel-flying-home-course";
 import { MOVING_ABROAD_101_COURSE } from "./data/moving-abroad-101-course";
 import { TAXES_AMERICANS_ABROAD_COURSE } from "./data/taxes-americans-abroad-course";
+import { STUDYING_ABROAD_COURSE } from "./data/studying-abroad-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -780,6 +781,20 @@ async function main() {
     instructorId,
     slug: "taxes-americans-abroad",
     course: TAXES_AMERICANS_ABROAD_COURSE,
+    category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+  // Studying Abroad — for U.S. students (and parents) planning academic study in another
+  // country: program types, choosing a program, the student-visa framework (each country sets
+  // its own rules; cross-references Travel Visas 101 for the general method), passport
+  // readiness, funding/financial-aid portability, health & safety, and credit transfer. Cited to
+  // travel.state.gov, EducationUSA/USA StudyAbroad (state.gov), CDC Travelers' Health, and
+  // studentaid.gov.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "studying-abroad",
+    course: STUDYING_ABROAD_COURSE,
     category: "Travel & Living Abroad",
     navigationMode: "linear",
   });
