@@ -23,6 +23,7 @@ import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { HOW_A_BILL_BECOMES_LAW_COURSE } from "./data/how-a-bill-becomes-law-course";
 import { SUPREME_COURT_JUDICIAL_BRANCH_COURSE } from "./data/supreme-court-judicial-branch-course";
 import { KNOW_YOUR_RIGHTS_COURSE } from "./data/know-your-rights-course";
+import { JURY_DUTY_COURTS_COURSE } from "./data/jury-duty-courts-course";
 import { STATE_CIVICS_IN_COURSE } from "./data/state-civics-in-course";
 import { STATE_CIVICS_AZ_COURSE } from "./data/state-civics-az-course";
 import { STATE_CIVICS_AR_COURSE } from "./data/state-civics-ar-course";
@@ -318,6 +319,23 @@ async function main() {
     instructorId,
     slug: "know-your-rights",
     course: KNOW_YOUR_RIGHTS_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // Jury Duty & the Courts (the citizen's side) — the practical, citizen-facing
+  // companion to supreme-court-judicial-branch (which covers the institution) and
+  // how-a-bill-becomes-law (the legislative process). Same Civics category and cited,
+  // non-partisan standard: covers why juries exist (6th & 7th Amendments), getting a
+  // summons, voir dire, grand vs. petit juries, the structure of a trial, civil vs.
+  // criminal juries, and jury duty logistics (pay, exemptions, employer protections).
+  // Authoritative-values rule is load-bearing: pay, exemptions, and summons procedure
+  // are the FEDERAL baseline (uscourts.gov, 28 U.S.C.); the course flags that state and
+  // local jury systems vary rather than asserting one nationwide rule.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "jury-duty-courts",
+    course: JURY_DUTY_COURTS_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
