@@ -232,6 +232,13 @@
       "when": 1783554842273,
       "tag": "0032_unknown_blue_blade",
       "breakpoints": true
+    },
+    {
+      "idx": 33,
+      "version": "7",
+      "when": 1783604286623,
+      "tag": "0033_certain_slayback",
+      "breakpoints": true
     }
   ]
 }

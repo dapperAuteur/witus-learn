@@ -373,6 +373,41 @@ pnpm reassign:instructor --apply
 
 See **user-task 42** in the repo for prod details.`,
   },
+  {
+    slug: "api-keys-and-embedding",
+    title: "Embed your courses in another app (API keys)",
+    category: "Operator",
+    keywords: ["api", "api key", "embed", "wanderlearn", "integration", "external", "bearer", "token"],
+    body: `# Embed your courses in another app
+
+If another app's backend wants to read your school's **published** courses (title, description,
+category, and lesson list) — for example to show them inside its own catalog UI — it can, using a
+per-school **API key**. This does not require the other app's users to sign in to Learn.WitUS.
+
+## Create a key
+As an **owner or brand admin**, go to **/admin/api-keys** → **Create a key**, give it a name that
+says who/what it's for (e.g. "WanderLearn embed"), and click **Create key**. The full key is shown
+**once**, right after creation — copy it into the other app's server-side secret storage
+immediately. After you leave the page, only a short prefix is shown for identification; the full
+key can't be retrieved again.
+
+## What a key can read
+- \`GET /api/v1/courses\` — this school's published, public courses.
+- \`GET /api/v1/courses/[id]\` — one of those courses plus its published lesson list.
+
+A key only ever sees **your** school's published content — never drafts, never another school's.
+Send it as \`Authorization: Bearer <key>\` on every request.
+
+## Revoke a key
+If a key is compromised or no longer needed, click **Revoke** next to it on **/admin/api-keys**.
+Revoking is immediate and permanent (create a new key if you need to reconnect later).
+
+## A lighter option: the iframe embed
+For a quick visual embed with no backend integration, another app can point an \`<iframe>\` at
+\`https://learn.witus.online/embed/course/<courseId>\` — a chromeless page listing the course's
+published lessons with a "Continue on Learn.WitUS" link out to the full course. No API key needed;
+it only ever shows published, public content.`,
+  },
 ];
 
 export function helpArticleBySlug(slug: string): HelpArticle | undefined {

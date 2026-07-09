@@ -177,6 +177,15 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   the app** (Home / My Field Log) AND **auto-report to an admin** (reusing the \`/api/report\` →
   problem_reports + WitUS Inbox pipeline) with a reference id. The Field Log client surfaces clear
   400/500 messages and reports 5xx; offline is handled separately (queued, not flagged as a bug).
+- 🔧 **WanderLearn embed foundation** (\`feat/embed-api\`) — a read-only, versioned, **API-key**-scoped
+  public API (\`GET /api/v1/courses\`, \`GET /api/v1/courses/[id]\`) so another app's backend (starting
+  with WanderLearn, which is removing its own LMS) can read a tenant's **published, public** courses
+  + lesson metadata. The tenant comes ONLY from the \`Authorization: Bearer <key>\` — never the host,
+  never client input — via a new \`tenant_api_keys\` table (**migration 0033**, sha256-hashed keys,
+  raw key shown once). Brand-admin/owner UI to mint/revoke at **/admin/api-keys**. A chromeless
+  **\`/embed/course/[id]\`** iframe view ships too (host-tenant-resolved, metadata-only, "Continue on
+  Learn.WitUS" deep link out to the real course page). DB-backed isolation tests added
+  (\`tests/isolation/api-v1.db.test.ts\`). Design: \`plans/wanderlearn-embed-design.md\`.
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
