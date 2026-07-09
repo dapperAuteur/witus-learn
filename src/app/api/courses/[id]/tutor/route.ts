@@ -4,6 +4,7 @@ import { isEnrolled } from "@/db/queries/enrollment";
 import { isFreeCourse } from "@/lib/gating";
 import { streamTutor } from "@/lib/ai/tutor";
 import { hasAiProvider } from "@/lib/env";
+import { getActiveLearner } from "@/lib/active-learner";
 
 const Schema = z.object({ question: z.string().min(2).max(1000) });
 
@@ -24,7 +25,11 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
 
   // AI tutor is for PAID students only: editors/owners, or learners enrolled in a
   // paid course (a free-course enrollment is not a payment, so it doesn't qualify).
-  const paidLearner = !isFreeCourse(course) && (await isEnrolled(session.user.id, id));
+  // Enrollment is per-learner, so a parent "studying as" a managed child checks the
+  // CHILD's own enrollment — matching how enrollment itself is attributed (see
+  // /api/courses/[id]/enroll). Editor/owner status stays on the real signed-in account.
+  const learner = (await getActiveLearner(session))!;
+  const paidLearner = !isFreeCourse(course) && (await isEnrolled(learner.id, id));
   const allowed = (await canEditCourse(session, sdb.tenantId, course)) || paidLearner;
   if (!allowed) return errorJson("The AI tutor is for enrolled paid students", 403);
 

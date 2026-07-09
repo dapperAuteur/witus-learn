@@ -5,6 +5,7 @@ import { isFreeCourse } from "@/lib/gating";
 import { getSourceChatConfig } from "@/db/queries/source-chat-config";
 import { sourceChat } from "@/lib/ai/source-chat";
 import type { Lens } from "@/lib/ai/specialists";
+import { getActiveLearner } from "@/lib/active-learner";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -36,8 +37,12 @@ export async function POST(req: Request, { params }: Params) {
   const isAdmin = await canEditCourse(session, sdb.tenantId, course);
   let allowed = isAdmin;
   if (!allowed) {
-    if (config.stage === "invited") allowed = await isEnrolled(session.user.id, id);
-    else if (config.stage === "paid") allowed = !isFreeCourse(course) && (await isEnrolled(session.user.id, id));
+    // Enrollment gates here are per-learner (see /api/courses/[id]/enroll), so check the
+    // ACTIVE learner (self, or a managed child while "studying as") rather than the
+    // signed-in account directly.
+    const learner = (await getActiveLearner(session))!;
+    if (config.stage === "invited") allowed = await isEnrolled(learner.id, id);
+    else if (config.stage === "paid") allowed = !isFreeCourse(course) && (await isEnrolled(learner.id, id));
   }
   if (!allowed) return errorJson("Chat with the sources isn't available for you on this course yet.", 403);
 
