@@ -13,6 +13,7 @@ import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
 import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
+import { VOTING_ELECTIONS_101_COURSE } from "./data/voting-elections-101-course";
 import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
 import { STATE_VS_FEDERAL_COURSE } from "./data/state-vs-federal-course";
 import { US_STATE_LOCAL_GOV_COURSE } from "./data/us-state-local-gov-course";
@@ -181,6 +182,23 @@ async function main() {
     instructorId,
     slug: "us-civics-101",
     course: CIVICS_101_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // Voting & Elections 101 — the mechanics companion to US Civics 101's one-line elections
+  // lesson: registration, primaries vs. caucuses vs. the general election, how ballots work
+  // (polling places, early voting, mail voting), the Electoral College, ballot measures, and
+  // how votes are counted, canvassed, and certified. Same Civics category and non-partisan +
+  // cited standard: it explains how the system works and never argues who should win. The
+  // authoritative-values rule is load-bearing: registration deadlines, ID rules, primary
+  // type, and ballot-measure signature thresholds all VARY BY STATE, so the course names the
+  // rule and points to the source (EAC, National Archives, Congress.gov/CRS, NCSL) rather
+  // than asserting one number as universal.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "voting-elections-101",
+    course: VOTING_ELECTIONS_101_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
