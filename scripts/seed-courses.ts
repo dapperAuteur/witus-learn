@@ -14,6 +14,7 @@ import { HOODOO_COURSE } from "./data/hoodoo-course";
 import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
 import { VOTING_ELECTIONS_101_COURSE } from "./data/voting-elections-101-course";
+import { CITIZENSHIP_NATURALIZATION_COURSE } from "./data/citizenship-naturalization-course";
 import { US_CONSTITUTION_COURSE } from "./data/us-constitution-course";
 import { STATE_VS_FEDERAL_COURSE } from "./data/state-vs-federal-course";
 import { US_STATE_LOCAL_GOV_COURSE } from "./data/us-state-local-gov-course";
@@ -201,6 +202,22 @@ async function main() {
     instructorId,
     slug: "voting-elections-101",
     course: VOTING_ELECTIONS_101_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // Citizenship & Naturalization Basics — plain-language, strictly non-partisan (the
+  // process and rules, not immigration policy or politics): who is a citizen at birth
+  // (birthright + through parents), naturalization eligibility and process, the civics/
+  // English test, the Oath of Allegiance, rights and responsibilities, and where to get
+  // authoritative help. Same Civics category and cited standard. Authoritative-values
+  // rule is load-bearing: fees, the civics-test format (2025 vs. 2008 versions), and even
+  // birthright citizenship's litigation status have changed recently, so the course points
+  // to uscis.gov as the source of truth rather than asserting fixed numbers as permanent.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "citizenship-naturalization",
+    course: CITIZENSHIP_NATURALIZATION_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
