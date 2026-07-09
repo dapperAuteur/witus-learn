@@ -15,6 +15,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
+- 🔧 **Operator overview** (\`feat/operator-overview\`) — an owner-only \`/admin/overview\` dashboard
+  consolidating cross-cutting signals in one place: **open problem reports**, **new curriculum
+  feedback**, **recent leads + enrollments** (each a headline number + a few recent rows + a link to
+  the full page), and a **migration-status indicator** comparing migrations on disk
+  (\`src/db/migrations/meta/_journal.json\`) against \`drizzle.__drizzle_migrations\` for the current
+  database — surfaces "N applied / M on disk, run \`pnpm db:migrate:prod\`" instead of guessing
+  whether prod is behind. Degrades gracefully (shows latest-on-disk only) if the bookkeeping table
+  can't be read. No migration; reuses existing tenant-scoped query helpers.
 - 🔧 **Learner dashboard** (\`feat/student-dashboard\`) — a signed-in learner's stats + profile hub
   at \`/dashboard\`: current/best **streak**, lessons completed, **recall accuracy**, **quiz average**,
   a 7-day activity strip, earned **credentials** (each links to \`/verify/[token]\`), XP/level + badges

@@ -1,5 +1,5 @@
 import "server-only";
-import { and, desc, eq } from "drizzle-orm";
+import { and, desc, eq, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { lessonFeedback } from "@/db/schema/learning";
 import { courses, lessons } from "@/db/schema/courses";
@@ -43,6 +43,15 @@ export async function listFeedback(
     .where(and(...conds))
     .orderBy(desc(lessonFeedback.createdAt))
     .limit(200);
+}
+
+/** Count of "open" (unreviewed) feedback for a tenant — the operator-overview headline number. */
+export async function countOpenFeedback(tenantId: string): Promise<number> {
+  const [row] = await db
+    .select({ count: sql<number>`count(*)`.mapWith(Number) })
+    .from(lessonFeedback)
+    .where(and(eq(lessonFeedback.tenantId, tenantId), eq(lessonFeedback.status, "open")));
+  return row?.count ?? 0;
 }
 
 /** The feedback row's course id (for the status-update auth check). Tenant-scoped. */
