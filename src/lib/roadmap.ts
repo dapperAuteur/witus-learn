@@ -130,7 +130,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Offline support (PWA)** — conservative per-origin service worker (network-first navigation +
   \`/offline\` fallback; cache-first hashed assets; API/cross-origin never cached), tenant-aware
   \`/manifest.webmanifest\`, and a \`NEXT_PUBLIC_DISABLE_SW=1\` kill-switch. Test on a preview first.
-- 🟡 **Offline video/audio** — media should play offline. CentOS had a solution — review and port it.
+- ✅ **Offline video/audio** — done. The service worker (\`public/sw.js\`) serves lesson audio/video from
+  a \`witus-media-v1\` Cache; **Save for offline** (\`save-offline-button.tsx\`) stores a lesson's media
+  (incl. cross-origin Cloudinary). YouTube-style embeds can't be cached (noted in-UI).
 - ⚪ **WYSIWYG + markdown editor** (CentOS) for lesson authoring in the dashboard.
 - ✅ **Rich lesson media** — native audio/video files get a full player; YouTube/Vimeo/Google
   Slides/PDF auto-embed (\`toEmbed\`). Cloudinary upload UI is the remaining piece (URLs work today).
@@ -195,8 +197,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   primary source, emitted by \`gen-health-data.ts\` (so a re-gen preserves it). Per-claim study
   citations remain a planned enhancement. (CES/CNC already carry real DOIs.) Re-run \`seed:health\`
   if the DB predates this. **Speedway S2/S3** still outline-only.
-- 🟡 **"Read Your Body's Data" needs a metrics tracker** — it logs daily numbers inside CentOS's
-  "metrics page" (which witus lacks). Build a tracker, rewrite to external tools, or keep on CentOS.
+- ✅ **"Read Your Body's Data" metrics tracker — decided: keep on CentOS.** The course logs daily
+  numbers in CentenarianOS's tracker (\`centenarianos.com/dashboard/metrics\`); the course now links
+  learners there directly. witus does NOT build its own tracker (ecosystem: metrics live in CentOS).
 - 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
   a **sentence-evaluating coach**: the learner writes a sentence and the AI checks grammar/word-order
   grounded only in the course, cites the rule, and gives a next prompt.
