@@ -175,6 +175,8 @@ export async function listAttendanceForChild(tenantId: string, studentUserId: st
 export interface ManagedChild {
   userId: string;
   displayName: string;
+  loginMethod: string;
+  avatarKey: string | null;
 }
 
 /**
@@ -221,7 +223,12 @@ export async function listManagedChildren(
   parentUserId: string,
 ): Promise<ManagedChild[]> {
   const rows = await db
-    .select({ userId: userProfiles.userId, displayName: userProfiles.displayName })
+    .select({
+      userId: userProfiles.userId,
+      displayName: userProfiles.displayName,
+      loginMethod: userProfiles.loginMethod,
+      avatarKey: userProfiles.avatarKey,
+    })
     .from(userProfiles)
     .innerJoin(
       guardians,
@@ -233,7 +240,12 @@ export async function listManagedChildren(
     )
     .where(eq(userProfiles.managedByUserId, parentUserId))
     .orderBy(asc(userProfiles.createdAt));
-  return rows.map((r) => ({ userId: r.userId, displayName: r.displayName ?? "Learner" }));
+  return rows.map((r) => ({
+    userId: r.userId,
+    displayName: r.displayName ?? "Learner",
+    loginMethod: r.loginMethod,
+    avatarKey: r.avatarKey,
+  }));
 }
 
 /** THE act-as gate: is `childUserId` a profile this parent actually manages?

@@ -135,24 +135,44 @@ export interface ProfileLinks {
   custom?: { label: string; url: string }[];
 }
 
-export const userProfiles = pgTable("user_profiles", {
-  userId: text("user_id")
-    .primaryKey()
-    .references(() => users.id, { onDelete: "cascade" }),
-  username: citext("username").unique(),
-  displayName: text("display_name"),
-  bio: text("bio"),
-  avatarUrl: text("avatar_url"),
-  links: jsonb("links").$type<ProfileLinks>().notNull().default({}),
-  isPlatformOwner: boolean("is_platform_owner").notNull().default(false),
-  // Family Model B: non-null ⇒ this is a login-less managed child profile (a real `users`
-  // row with a synthetic, non-deliverable email) owned/operated by this parent. The parent
-  // "studies as" this profile via the active-learner cookie (src/lib/active-learner.ts);
-  // `isManagedChildOf` is the mandatory gate before any act-as or /family read.
-  managedByUserId: text("managed_by_user_id").references(() => users.id, { onDelete: "cascade" }),
-  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
-  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
-});
+export const userProfiles = pgTable(
+  "user_profiles",
+  {
+    userId: text("user_id")
+      .primaryKey()
+      .references(() => users.id, { onDelete: "cascade" }),
+    username: citext("username").unique(),
+    displayName: text("display_name"),
+    bio: text("bio"),
+    avatarUrl: text("avatar_url"),
+    links: jsonb("links").$type<ProfileLinks>().notNull().default({}),
+    isPlatformOwner: boolean("is_platform_owner").notNull().default(false),
+    // Family Model B: non-null ⇒ this is a login-less managed child profile (a real `users`
+    // row with a synthetic, non-deliverable email) owned/operated by this parent. The parent
+    // "studies as" this profile via the active-learner cookie (src/lib/active-learner.ts);
+    // `isManagedChildOf` is the mandatory gate before any act-as or /family read.
+    managedByUserId: text("managed_by_user_id").references(() => users.id, { onDelete: "cascade" }),
+    // Kid login (avatar + PIN), a per-child parent choice — see
+    // plans/kid-login-avatar-pin-design.md. 'none': no self-login (Model B act-as only).
+    // 'magic_link': normal email sign-in (Model A). 'avatar_pin': the child signs in
+    // themselves via POST /api/kid-login (class code → avatar → PIN), no email required.
+    // avatarKey/pinHash/pinSetAt are only meaningful when method is 'avatar_pin'; cleared
+    // whenever the method changes away from it (src/db/queries/kid-login.ts).
+    loginMethod: text("login_method").notNull().default("none"),
+    avatarKey: text("avatar_key"),
+    // scrypt: "salt:hash", both hex. NEVER the plaintext PIN — see src/lib/kid-pin.ts.
+    pinHash: text("pin_hash"),
+    pinSetAt: timestamp("pin_set_at", { withTimezone: true }),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    check(
+      "user_profiles_login_method_chk",
+      sql`${t.loginMethod} in ('none','magic_link','avatar_pin')`,
+    ),
+  ],
+);
 
 /** key/value platform settings; optional tenant_id for per-tenant overrides. */
 export const platformSettings = pgTable(

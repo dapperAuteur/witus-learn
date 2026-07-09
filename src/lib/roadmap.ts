@@ -32,7 +32,19 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   per-child read. Attendance is derived for free from the \`/live\` presence heartbeat (a cohort member
   seen present on a day is marked attended that day — no separate check-in flow). Tenant-scoped tables
   \`guardians\`/\`guardian_invites\`/\`cohort_attendance\` (migration 0030). Model B (parent-managed
-  sub-profiles for kids too young for their own account) is a future follow-up, not built here.
+  sub-profiles for kids too young for their own account) ships in \`feat/family-model-b\`.
+- 🔧 **Kid login — avatar + PIN** (\`feat/kid-login\`, on \`feat/family-model-b\`) — a **per-child
+  parent choice** of how a managed child signs in: None / Email / **Avatar+PIN**. Young kids with no
+  email sign in **themselves** at **/kids** (also linked "I'm a student" from \`/login\`): enter the
+  class **class code** → tap their **animal avatar** → enter a **4–6 digit PIN** → land on their OWN
+  \`/dashboard\` (their own low-privilege session). Privacy: the screen never lists children — a bad
+  class code reveals nothing (generic "class not found"; the avatar grid only appears for a valid
+  code). PINs are **scrypt-hashed** (salted, constant-time compare — never plaintext) and
+  **rate-limited** per child (5 wrong tries → 5-min lock). Session minted by a dedicated Better Auth
+  plugin endpoint (Option A — no password login exposed to normal users). Parent controls live on
+  \`/family\`; the teacher enables/rotates a cohort's class code (\`/api/cohorts/[id]/class-code\`).
+  Adds \`user_profiles.login_method/avatar_key/pin_hash/pin_set_at\`, \`cohorts.class_code\`, and a
+  \`kid_login_attempts\` table (migration 0032).
 - 🔧 **Recording batch** (\`feat/change-course-instructor\`) — the in-app audio recorder is now
   embedded **inside** the teleprompter overlay (with a lesson picker), so you can read the
   auto-scrolling script and record at the same time (the overlay used to hide the record buttons).

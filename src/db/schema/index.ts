@@ -15,3 +15,4 @@ export * from "./rag";
 export * from "./live-chat";
 export * from "./cohorts";
 export * from "./family";
+export * from "./kid-login";

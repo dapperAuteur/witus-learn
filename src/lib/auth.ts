@@ -9,6 +9,7 @@ import { env } from "./env";
 import { rewriteOrigin } from "./auth-url";
 import { sendEmail } from "./mailer";
 import { getTenantByHost } from "./tenant";
+import { kidLoginPlugin } from "./kid-login-plugin";
 
 /** Static, env-driven base origins (the platform's own URLs + any explicit extras). */
 function staticTrustedOrigins(): string[] {
@@ -99,6 +100,10 @@ export const auth = betterAuth({
           }),
         ]
       : []),
+    // Avatar + PIN kid login (Option A of plans/kid-login-avatar-pin-design.md) — a
+    // dedicated endpoint that mints a child's own session without email or a password.
+    // See src/lib/kid-login-plugin.ts for why this is a plugin, not a hand-rolled cookie.
+    kidLoginPlugin(),
     nextCookies(),
   ],
   databaseHooks: {
