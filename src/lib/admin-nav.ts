@@ -14,6 +14,7 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { href: "/admin/settings", title: "Brand settings", desc: "Accent, branding, gamification, AI tutor, age-gate.", icon: "🎨" },
   { href: "/admin/categories", title: "Categories", desc: "Add, rename, or remove course categories.", icon: "🗂️" },
   { href: "/admin/domains", title: "Domains", desc: "Map a custom domain to your school.", icon: "🌐" },
+  { href: "/admin/api-keys", title: "API keys", desc: "Mint/revoke read keys for embedding your courses in another app.", icon: "🔑" },
   { href: "/admin/marketing", title: "Marketing", desc: "Promo codes now; email campaigns soon.", icon: "📣" },
   { href: "/admin/leads", title: "Leads", desc: "Lead funnel signups.", icon: "🎯" },
   { href: "/admin/reports", title: "Problem reports", desc: "In-app bug/idea reports to triage.", icon: "🐞" },
