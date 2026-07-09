@@ -84,6 +84,15 @@ const schema = z.object({
   OUTBOX_INGEST_URL: z.string().url().optional(),
   OUTBOX_SOURCE_SLUG: z.string().optional(),
   OUTBOX_INGEST_SECRET: z.string().optional(),
+
+  // Self-serve custom domains (Vercel Domains API). All optional — without them, the
+  // domain manager still maps a host to a tenant + shows generic DNS records, but a
+  // brand_admin's custom domain isn't auto-registered with the Vercel project (see
+  // src/lib/vercel-domains.ts). Wildcard *.learn.witus.online subdomains never need
+  // these — that zone is covered by a wildcard Vercel domain BAM sets up once.
+  VERCEL_API_TOKEN: z.string().optional(),
+  VERCEL_PROJECT_ID: z.string().optional(),
+  VERCEL_TEAM_ID: z.string().optional(),
 });
 
 const isProd = process.env.NODE_ENV === "production";
@@ -166,3 +175,6 @@ export const hasAiProvider = Boolean(
 export const hasDemoLogin = Boolean(env.DEMO_VISITOR_PASSWORD && env.DEMO_VISITOR_USER_EMAIL);
 /** The nightly demo-reset cron endpoint can run (its Bearer guard has a real secret). */
 export const hasDemoReset = Boolean(env.CRON_SECRET);
+/** Custom domains can be auto-registered with the Vercel project via its API. Without
+ *  this, /admin/domains still maps hosts + shows generic DNS records (degrades gracefully). */
+export const hasVercelDomains = Boolean(env.VERCEL_API_TOKEN && env.VERCEL_PROJECT_ID);

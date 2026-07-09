@@ -30,30 +30,64 @@ interface Tenant {
   id: string;
   slug: string;
   name: string;
-  domains: { id: string; host: string; isPrimary: boolean }[];
+  domains: { id: string; host: string; isPrimary: boolean; wildcardCovered: boolean }[];
 }
 
-// Platform-owner UI to map custom domains to schools (writes tenant_domains).
-export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
+type DnsRecord = { type: string; name: string; value: string };
+type VerificationRecord = { type: string; domain: string; value: string; reason?: string };
+
+// DNS/Vercel state for one host, keyed by host (not domain id) so it survives from the
+// "just added" response through the router.refresh() that re-fetches the domain list.
+interface HostInfo {
+  loading?: boolean;
+  records?: DnsRecord[];
+  status?: { ok: boolean; detail: string };
+  verifying?: boolean;
+  verified?: boolean;
+  verification?: VerificationRecord[];
+  vercelError?: string;
+}
+
+// School (brand_admin) + platform-owner UI to self-serve custom domains: map a host to a
+// school, then — for a genuinely custom domain — register it with Vercel and show the
+// DNS records + a "Check verification" poll. Subdomains of the app's own wildcard zone
+// need none of that; they're live the moment the row exists.
+export function DomainsAdmin({
+  tenants,
+  hasVercelDomains,
+  maxDomains,
+}: {
+  tenants: Tenant[];
+  hasVercelDomains: boolean;
+  maxDomains: number;
+}) {
   const router = useRouter();
   const [tenantId, setTenantId] = useState(tenants[0]?.id ?? "");
   const [host, setHost] = useState("");
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
+  const [info, setInfo] = useState<Record<string, HostInfo>>({});
 
-  type DnsRecord = { type: string; name: string; value: string };
-  type DnsInfo = { loading?: boolean; records?: DnsRecord[]; status?: { ok: boolean; detail: string } };
-  const [dns, setDns] = useState<Record<string, DnsInfo>>({});
-
-  async function checkDns(id: string, h: string) {
-    setDns((m) => ({ ...m, [id]: { ...m[id], loading: true } }));
+  async function checkDns(h: string) {
+    setInfo((m) => ({ ...m, [h]: { ...m[h], loading: true } }));
     const r = await fetch("/api/admin/domains/check", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ host: h }),
     });
     const d = r.ok ? await r.json() : { status: { ok: false, detail: "check failed" }, records: [] };
-    setDns((m) => ({ ...m, [id]: { loading: false, records: d.records, status: d.status } }));
+    setInfo((m) => ({ ...m, [h]: { ...m[h], loading: false, records: d.records, status: d.status } }));
+  }
+
+  async function checkVerification(h: string) {
+    setInfo((m) => ({ ...m, [h]: { ...m[h], verifying: true } }));
+    const r = await fetch("/api/admin/domains/verify", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ host: h }),
+    });
+    const d = r.ok ? await r.json() : { verified: false, verification: [] };
+    setInfo((m) => ({ ...m, [h]: { ...m[h], verifying: false, verified: d.verified, verification: d.verification } }));
   }
 
   async function add(e: React.FormEvent) {
@@ -65,12 +99,22 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ tenantId, host }),
     });
+    const d = await r.json().catch(() => ({}));
     setBusy(false);
     if (r.ok) {
+      const h = d.host as string;
+      setInfo((m) => ({
+        ...m,
+        [h]: {
+          records: d.dnsRecords ?? [],
+          verified: d.vercel?.verified,
+          verification: d.vercel?.verification,
+          vercelError: d.vercel && d.vercel.ok === false ? d.vercel.error : undefined,
+        },
+      }));
       setHost("");
       router.refresh();
     } else {
-      const d = await r.json().catch(() => ({}));
       setErr(d.error ?? "Could not add domain.");
     }
   }
@@ -102,7 +146,7 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
           </label>
           <label className="text-sm">
             Domain
-            <input value={host} onChange={(e) => setHost(e.target.value)} placeholder="school.example.com" className="mt-1 min-h-11 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900" />
+            <input value={host} onChange={(e) => setHost(e.target.value)} placeholder="school.example.com or myschool.learn.witus.online" className="mt-1 min-h-11 w-full rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900" />
           </label>
           <button type="submit" disabled={busy || host.trim().length < 3} className="min-h-11 rounded-md px-4 font-medium text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
             Add
@@ -110,10 +154,12 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
         </div>
         {err ? <p className="text-sm text-red-600">{err}</p> : null}
         <p className="text-xs text-neutral-500">
-          After adding here: point the domain at the deployment (a CNAME to{" "}
-          <code>cname.vercel-dns.com</code>, or the A record Vercel shows), add it in the Vercel
-          project, and it goes live once DNS propagates and the TLS cert issues.{" "}
-          <code>www.</code> resolves the same as the apex automatically.
+          A <code>&lt;name&gt;.learn.witus.online</code> subdomain goes live immediately — no DNS
+          needed. {" "}
+          {hasVercelDomains
+            ? "A custom domain (your own, e.g. school.example.com) is registered with Vercel automatically — we'll show you the DNS records to set at your registrar and a button to check when it verifies."
+            : "Custom domains still map here, but Vercel auto-registration isn't configured yet — point the domain at the generic DNS records shown below, and ask the platform owner to add it in the Vercel project."}
+          {" "}Up to {maxDomains} domains per school.
         </p>
       </form>
 
@@ -128,7 +174,7 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
             ) : (
               <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
                 {t.domains.map((d) => {
-                  const info = dns[d.id];
+                  const hi = info[d.host];
                   return (
                     <li key={d.id} className="py-2 text-sm">
                       <div className="flex flex-wrap items-center gap-2">
@@ -140,26 +186,50 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
                             Make primary
                           </button>
                         )}
-                        <button type="button" disabled={info?.loading} onClick={() => checkDns(d.id, d.host)} className="rounded border border-neutral-300 px-2 py-0.5 text-xs dark:border-neutral-700">
-                          {info?.loading ? "Checking…" : "Check DNS"}
-                        </button>
+                        {d.wildcardCovered ? (
+                          <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+                            covered — no DNS needed, it&apos;s live
+                          </span>
+                        ) : (
+                          <>
+                            <button type="button" disabled={hi?.loading} onClick={() => checkDns(d.host)} className="rounded border border-neutral-300 px-2 py-0.5 text-xs dark:border-neutral-700">
+                              {hi?.loading ? "Checking…" : "Check DNS"}
+                            </button>
+                            {hasVercelDomains ? (
+                              <button type="button" disabled={hi?.verifying} onClick={() => checkVerification(d.host)} className="rounded border border-neutral-300 px-2 py-0.5 text-xs dark:border-neutral-700">
+                                {hi?.verifying ? "Checking…" : "Check verification"}
+                              </button>
+                            ) : null}
+                            {hi?.verified === true ? (
+                              <span className="rounded-full bg-green-100 px-2 py-0.5 text-xs text-green-800 dark:bg-green-900 dark:text-green-200">✅ Verified</span>
+                            ) : hi?.verified === false ? (
+                              <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-800 dark:bg-amber-900 dark:text-amber-200">⏳ Pending DNS</span>
+                            ) : null}
+                          </>
+                        )}
                         <button type="button" disabled={busy} onClick={() => act(d.id, "DELETE")} className="ml-auto rounded px-2 py-0.5 text-xs text-red-600">
                           Remove
                         </button>
                       </div>
-                      {info && !info.loading ? (
+                      {!d.wildcardCovered && hi?.vercelError ? (
+                        <p className="mt-2 text-xs text-red-600">
+                          Vercel registration error: {hi.vercelError}. The domain is still mapped here —
+                          try &quot;Check verification&quot;, or remove and re-add it to retry.
+                        </p>
+                      ) : null}
+                      {!d.wildcardCovered && hi && !hi.loading ? (
                         <div className="mt-2 rounded-md bg-neutral-50 p-3 dark:bg-neutral-900/60">
-                          {info.status ? (
-                            <p className={info.status.ok ? "text-green-700 dark:text-green-400" : "text-amber-700 dark:text-amber-400"}>
-                              {info.status.ok ? "✓ Live — " : "⏳ Not set up yet — "}
-                              {info.status.detail}
+                          {hi.status ? (
+                            <p className={hi.status.ok ? "text-green-700 dark:text-green-400" : "text-amber-700 dark:text-amber-400"}>
+                              {hi.status.ok ? "✓ Live — " : "⏳ Not set up yet — "}
+                              {hi.status.detail}
                             </p>
                           ) : null}
-                          {info.records?.length ? (
+                          {hi.records?.length ? (
                             <div className="mt-2">
                               <p className="text-xs text-neutral-500">
                                 Add a record at your DNS provider (click a value to copy).{" "}
-                                {info.records.length > 1 ? "An apex domain works with EITHER the A or the CNAME — " : ""}
+                                {hi.records.length > 1 ? "An apex domain works with EITHER the A or the CNAME — " : ""}
                                 use whatever your host (e.g. Vercel) shows for this domain.
                               </p>
                               <div className="mt-1 overflow-x-auto">
@@ -168,10 +238,28 @@ export function DomainsAdmin({ tenants }: { tenants: Tenant[] }) {
                                     <tr className="text-left"><th className="pr-3 font-normal">Type</th><th className="pr-3 font-normal">Name</th><th className="font-normal">Value</th></tr>
                                   </thead>
                                   <tbody className="font-mono">
-                                    {info.records.map((rec, i) => (
+                                    {hi.records.map((rec, i) => (
                                       <tr key={i}>
                                         <td className="pr-3 align-top">{rec.type}</td>
                                         <td className="pr-2 align-top"><Copyable value={rec.name} /></td>
+                                        <td className="align-top"><Copyable value={rec.value} /></td>
+                                      </tr>
+                                    ))}
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          ) : null}
+                          {hi.verification?.length ? (
+                            <div className="mt-3">
+                              <p className="text-xs text-neutral-500">Vercel also asks for:</p>
+                              <div className="mt-1 overflow-x-auto">
+                                <table className="w-full text-xs">
+                                  <tbody className="font-mono">
+                                    {hi.verification.map((rec, i) => (
+                                      <tr key={i}>
+                                        <td className="pr-3 align-top">{rec.type}</td>
+                                        <td className="pr-2 align-top"><Copyable value={rec.domain} /></td>
                                         <td className="align-top"><Copyable value={rec.value} /></td>
                                       </tr>
                                     ))}
