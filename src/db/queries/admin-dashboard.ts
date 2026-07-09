@@ -49,6 +49,32 @@ export async function getAdminStats(tenantId: string): Promise<AdminStats> {
   };
 }
 
+export interface RecentEnrollmentRow {
+  id: string;
+  userEmail: string;
+  userName: string | null;
+  courseTitle: string;
+  enrolledAt: Date;
+}
+
+/** Most recent N enrollment events for a tenant (operator-overview card). */
+export async function listRecentEnrollments(tenantId: string, limit = 5): Promise<RecentEnrollmentRow[]> {
+  return db
+    .select({
+      id: enrollments.id,
+      userEmail: users.email,
+      userName: users.name,
+      courseTitle: courses.title,
+      enrolledAt: enrollments.enrolledAt,
+    })
+    .from(enrollments)
+    .innerJoin(users, eq(users.id, enrollments.userId))
+    .innerJoin(courses, eq(courses.id, enrollments.courseId))
+    .where(eq(enrollments.tenantId, tenantId))
+    .orderBy(desc(enrollments.enrolledAt))
+    .limit(limit);
+}
+
 export interface LearnerRow {
   userId: string;
   email: string;
