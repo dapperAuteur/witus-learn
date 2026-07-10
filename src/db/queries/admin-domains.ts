@@ -4,7 +4,7 @@ import { db } from "@/db/client";
 import { tenants, tenantDomains } from "@/db/schema/tenancy";
 import { normalizeHost } from "@/lib/tenant-util";
 import { dnsRecordsFor, isWildcardCovered, type DnsRecord } from "@/lib/domain-dns";
-import { hasVercelDomains } from "@/lib/env";
+import { hasVercelDomains, hasVercelWildcard } from "@/lib/env";
 import { attachDomain, detachDomain, type AttachResult } from "@/lib/vercel-domains";
 
 // A school can self-serve up to this many domains (subdomains + custom) before BAM needs
@@ -34,7 +34,7 @@ export async function listTenantsWithDomains(): Promise<TenantWithDomains[]> {
     name: t.name,
     domains: ds
       .filter((d) => d.tenantId === t.id)
-      .map((d) => ({ id: d.id, host: d.host, isPrimary: d.isPrimary, wildcardCovered: isWildcardCovered(d.host) })),
+      .map((d) => ({ id: d.id, host: d.host, isPrimary: d.isPrimary, wildcardCovered: isWildcardCovered(d.host) && hasVercelWildcard })),
   }));
 }
 
@@ -70,7 +70,10 @@ export async function addDomain(
 
   await db.insert(tenantDomains).values({ tenantId, host, isPrimary: tenantRows.length === 0 });
 
-  const wildcardCovered = isWildcardCovered(host);
+  // A base-zone subdomain is only "covered" (skip API + DNS) when a real Vercel WILDCARD DOMAIN is
+  // configured (`hasVercelWildcard`, which needs Vercel nameservers). Otherwise attach it via the API
+  // like any custom domain — that works with just a wildcard CNAME DNS record, no nameserver move.
+  const wildcardCovered = isWildcardCovered(host) && hasVercelWildcard;
   const vercel = !wildcardCovered && hasVercelDomains ? await attachDomain(host) : undefined;
   const dnsRecords = wildcardCovered ? [] : dnsRecordsFor(host);
   return { host, wildcardCovered, dnsRecords, vercel };
