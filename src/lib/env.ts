@@ -93,6 +93,11 @@ const schema = z.object({
   VERCEL_API_TOKEN: z.string().optional(),
   VERCEL_PROJECT_ID: z.string().optional(),
   VERCEL_TEAM_ID: z.string().optional(),
+  // Set to "true" ONLY if you've added a `*.<baseZone>` WILDCARD DOMAIN on Vercel (which needs
+  // Vercel nameservers). Then subdomains are covered and skip the per-domain API attach. Leave
+  // unset (default) to attach each subdomain via the API instead — that works with just a wildcard
+  // CNAME *DNS record* at your own DNS host, no nameserver move.
+  VERCEL_WILDCARD_DOMAIN: z.string().optional(),
 });
 
 const isProd = process.env.NODE_ENV === "production";
@@ -178,3 +183,7 @@ export const hasDemoReset = Boolean(env.CRON_SECRET);
 /** Custom domains can be auto-registered with the Vercel project via its API. Without
  *  this, /admin/domains still maps hosts + shows generic DNS records (degrades gracefully). */
 export const hasVercelDomains = Boolean(env.VERCEL_API_TOKEN && env.VERCEL_PROJECT_ID);
+/** True only when a Vercel *wildcard domain* (`*.<baseZone>`) is set up (needs Vercel nameservers).
+ *  When false (default), base-zone subdomains are attached to Vercel individually via the API, which
+ *  works with just a wildcard CNAME DNS record — no nameserver move. */
+export const hasVercelWildcard = env.VERCEL_WILDCARD_DOMAIN === "true";
