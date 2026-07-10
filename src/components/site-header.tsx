@@ -41,6 +41,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   // One nav model, rendered inline on desktop and in a hamburger drawer on mobile.
   const items: NavItem[] = [
     { href: "/courses", label: "Browse Catalog" },
+    ...(flags.recruiting ? [{ href: "/demo", label: "Demo" }] : []),
     { href: "/live", label: "Live" },
     ...(hasCivics ? [{ href: "/civics", label: "Civics" }] : []),
     ...(hasLanguages ? [{ href: "/languages", label: "Languages" }] : []),
