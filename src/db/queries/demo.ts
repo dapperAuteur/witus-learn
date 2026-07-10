@@ -18,6 +18,7 @@ import {
   quizAttempts,
   recallAttempts,
   tenantApiKeys,
+  tenantDomains,
   tenantMemberships,
   tenants,
   userProfiles,
@@ -231,4 +232,46 @@ export async function resetDemoData(): Promise<DemoAccount | null> {
   await clearDemoData(demo.userId, demo.tenantId);
   await seedDemoBaseline(demo.userId, demo.tenantId);
   return demo;
+}
+
+const isLocalHost = (host: string): boolean => host === "localhost" || host.endsWith(".localhost");
+
+/**
+ * The Acme demo school's public URL — the `/platform` and `/demo` marketing pages' "Launch
+ * the demo school" button. Read from `tenant_domains` at request time, NEVER hardcoded (BAM
+ * may repoint the domain; see `plans/user-tasks/62-demo-account-setup.md`, which registers
+ * `acme.learning.witus.online` as a two-place change — Vercel domain + `tenant_domains` row —
+ * so a stale hardcoded guess here would silently drift from reality).
+ *
+ * Preference order: the tenant's primary non-local host → any non-local host → (dev only, so
+ * the button still works before a prod host is registered) a `*.localhost` host with the dev
+ * app's port → `null` when nothing usable exists yet, so the caller can show a "not published
+ * yet" note instead of a dead link.
+ */
+export async function getDemoSchoolUrl(): Promise<string | null> {
+  const tenant = await getDemoTenant();
+  if (!tenant) return null;
+
+  const hosts = await db
+    .select({ host: tenantDomains.host, isPrimary: tenantDomains.isPrimary })
+    .from(tenantDomains)
+    .where(eq(tenantDomains.tenantId, tenant.id));
+
+  const prodHosts = hosts.filter((h) => !isLocalHost(h.host));
+  const primary = prodHosts.find((h) => h.isPrimary) ?? prodHosts[0];
+  if (primary) return `https://${primary.host}`;
+
+  if (env.NODE_ENV !== "production") {
+    const devHost = hosts.find((h) => isLocalHost(h.host))?.host ?? "acme.localhost";
+    let port = "3040";
+    try {
+      port = new URL(env.NEXT_PUBLIC_APP_URL).port || port;
+    } catch {
+      // env.NEXT_PUBLIC_APP_URL is already URL-validated by src/lib/env.ts; this catch is
+      // just belt-and-suspenders so a malformed value never throws here.
+    }
+    return `http://${devHost}:${port}`;
+  }
+
+  return null;
 }

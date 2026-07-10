@@ -112,6 +112,18 @@ export function EcosystemFooter({ tenant }: { tenant: TenantRecord }) {
           </div>
         </div>
 
+        {tenant.flags.recruiting ? (
+          <p className="text-neutral-500">
+            <Link href="/platform" className={linkClasses}>
+              About this platform
+            </Link>
+            {" · "}
+            <Link href="/demo" className={linkClasses}>
+              Try the demo
+            </Link>
+          </p>
+        ) : null}
+
         <p className="text-neutral-500">© {brandName(tenant)}</p>
         <p className="text-xs text-neutral-400 dark:text-neutral-600">{DISCLAIMER_SHORT}</p>
       </div>

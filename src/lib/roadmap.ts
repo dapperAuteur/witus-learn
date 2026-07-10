@@ -220,6 +220,18 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   env vars (\`CRON_SECRET\`, \`DEMO_VISITOR_PASSWORD\`, \`DEMO_VISITOR_USER_EMAIL\`) — the feature stays
   dark until BAM sets them (see \`plans/user-tasks/62-demo-account-setup.md\` for the domain/env/seed
   steps).
+- 🔧 **Platform + demo landing pages** (\`feat/platform-demo-landing\`) — two public marketing pages,
+  shown only on Learn.WitUS itself (\`tenant.flags.recruiting\`, 404 elsewhere so a white-label school
+  never advertises the platform underneath it): **\`/platform\`** pitches Learn.WitUS as a product for
+  prospective school operators (own domain, cited/media-rich courses, live classes + cohorts, parent
+  view, kid login, AI tutor); **\`/demo\`** explains the shared **demo teacher account** on the
+  **Acme Academy** demo school (try every teacher/admin feature, no signup) and that its data
+  **resets nightly at midnight**, with a **"Launch the demo school →"** button. The demo school's URL
+  is resolved at request time from \`tenant_domains\` (\`getDemoSchoolUrl()\` in \`src/db/queries/demo.ts\`)
+  — never hardcoded — preferring the primary non-local prod host, falling back to any prod host, then
+  (dev only) \`acme.localhost\` on the dev port; if none exists yet the button degrades to a "not
+  published yet" note instead of a dead link. Linked from a new **Demo** nav item, the home page's
+  recruiting block, and the ecosystem footer. No migration.
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
