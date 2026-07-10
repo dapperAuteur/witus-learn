@@ -15,14 +15,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ Phase 8: instructor dashboard, feedback review queue, self-serve domains, per-season age-gate,
   assignments, live-streaming, brand directory, lead funnel, learning paths.
 - ✅ Instructor profile + re-home all courses to **BAM** (\`seed:owner\`); admin **Roadmap** page.
-- 🔧 **Self-serve custom domains — Vercel automation** (\`feat/vercel-domains\`) — a brand_admin
+- ✅ **Self-serve custom domains — Vercel automation** (\`feat/vercel-domains\`) — a brand_admin
   attaching their **own** domain (e.g. \`theirschool.com\`) at \`/admin/domains\` no longer needs BAM: the
   app registers it with the Vercel project via the Vercel Domains API, shows the DNS records to set at
   their registrar, and a **"Check verification"** button polls status until it flips to ✅ Verified.
   \`<slug>.learn.witus.online\` subdomains are unaffected — the wildcard zone covers them instantly, so
   the app skips the Vercel API call for those. Degrades gracefully to the old manual flow if
   \`VERCEL_API_TOKEN\`/\`VERCEL_PROJECT_ID\` aren't set. Per-tenant cap of 5 domains. No migration.
-- 🔧 **Operator overview** (\`feat/operator-overview\`) — an owner-only \`/admin/overview\` dashboard
+- ✅ **Operator overview** (\`feat/operator-overview\`) — an owner-only \`/admin/overview\` dashboard
   consolidating cross-cutting signals in one place: **open problem reports**, **new curriculum
   feedback**, **recent leads + enrollments** (each a headline number + a few recent rows + a link to
   the full page), and a **migration-status indicator** comparing migrations on disk
@@ -30,18 +30,18 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   database — surfaces "N applied / M on disk, run \`pnpm db:migrate:prod\`" instead of guessing
   whether prod is behind. Degrades gracefully (shows latest-on-disk only) if the bookkeeping table
   can't be read. No migration; reuses existing tenant-scoped query helpers.
-- 🔧 **Learner dashboard** (\`feat/student-dashboard\`) — a signed-in learner's stats + profile hub
+- ✅ **Learner dashboard** (\`feat/student-dashboard\`) — a signed-in learner's stats + profile hub
   at \`/dashboard\`: current/best **streak**, lessons completed, **recall accuracy**, **quiz average**,
   a 7-day activity strip, earned **credentials** (each links to \`/verify/[token]\`), XP/level + badges
   (shown only when the tenant's gamification flag is \`full\`), and inline **profile editing**
   (reuses \`/api/profile\`). Reuses \`getLearnerDashboard\` + a new \`getLearnerStats\`; no migration.
-- 🔧 **Cohorts** (\`feat/cohorts-open\`) — private classes for live class management (home-school #1):
+- ✅ **Cohorts** (\`feat/cohorts-open\`) — private classes for live class management (home-school #1):
   **any signed-in user** (not just brand admins) creates a **cohort** at \`/cohorts\`, invites
   students by email (one-time link; falls back to a copyable link if Mailgun isn't sending), and
   manages a **roster** at \`/cohorts/[id]\` showing **● here** for anyone currently present on
   \`/live\`. Students accept at \`/join/[token]\` and land on \`/live\` enrolled. Tenant-scoped tables
   \`cohorts\`/\`cohort_members\`/\`cohort_invites\` (migration 0029).
-- 🔧 **Family** (\`feat/cohorts-family\`) — a read-only parent view (Model A of the hybrid: kids keep
+- ✅ **Family** (\`feat/cohorts-family\`) — a read-only parent view (Model A of the hybrid: kids keep
   their own accounts). From a cohort roster, a teacher **invites a parent** by email per student
   (\`/api/cohorts/[id]/guardian-invite\`); the parent accepts at \`/family/accept/[token]\` and sees, at
   **/family**, read-only **course progress**, **grades** (recall + quiz), **credentials**, and
@@ -50,7 +50,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   seen present on a day is marked attended that day — no separate check-in flow). Tenant-scoped tables
   \`guardians\`/\`guardian_invites\`/\`cohort_attendance\` (migration 0030). Model B (parent-managed
   sub-profiles for kids too young for their own account) ships in \`feat/family-model-b\`.
-- 🔧 **Kid login — avatar + PIN** (\`feat/kid-login\`, on \`feat/family-model-b\`) — a **per-child
+- ✅ **Kid login — avatar + PIN** (\`feat/kid-login\`, on \`feat/family-model-b\`) — a **per-child
   parent choice** of how a managed child signs in: None / Email / **Avatar+PIN**. Young kids with no
   email sign in **themselves** at **/kids** (also linked "I'm a student" from \`/login\`): enter the
   class **class code** → tap their **animal avatar** → enter a **4–6 digit PIN** → land on their OWN
@@ -62,7 +62,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`/family\`; the teacher enables/rotates a cohort's class code (\`/api/cohorts/[id]/class-code\`).
   Adds \`user_profiles.login_method/avatar_key/pin_hash/pin_set_at\`, \`cohorts.class_code\`, and a
   \`kid_login_attempts\` table (migration 0032).
-- 🔧 **Recording batch** (\`feat/change-course-instructor\`) — the in-app audio recorder is now
+- ✅ **Recording batch** (\`feat/change-course-instructor\`) — the in-app audio recorder is now
   embedded **inside** the teleprompter overlay (with a lesson picker), so you can read the
   auto-scrolling script and record at the same time (the overlay used to hide the record buttons).
   **Pause/Resume** (\`MediaRecorder.pause()\`) lets a course be taped across several sittings, not one
@@ -71,41 +71,41 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   <lesson>\`, \`witus/uploads/…\`, \`witus/images/…\`) via a \`public_id\` instead of random ids, so assets
   are findable. Upload failures now surface **Cloudinary's actual error** instead of a generic
   "Upload failed" (config-fix guidance in user-task 43).
-- 🔧 **iOS audio playback fix** (\`fix/ios-audio-playback\`) — recorded lessons are WebM/Opus, which
+- ✅ **iOS audio playback fix** (\`fix/ios-audio-playback\`) — recorded lessons are WebM/Opus, which
   **iPhone/iPad Safari can't decode** (errored on iOS 16; played fine on Android). The player now
   requests an **MP3 rendition** from Cloudinary (\`f_mp3\`, cached after first play) for audio, so
   lessons play on every device — and the remaining-time readout is now accurate (WebM lacked duration
   metadata). \`playableAudioSrc()\` in \`src/lib/media.ts\`, unit-tested.
-- 🔧 **Change course instructor** (\`feat/change-course-instructor\`) — an admin (owner / brand_admin)
+- ✅ **Change course instructor** (\`feat/change-course-instructor\`) — an admin (owner / brand_admin)
   can reassign a course to a different instructor from **Course settings** (validated + slug-collision
   guarded, ensures the new instructor has a username; no migration). \`/teach\` now shows admins
   **every** course on the brand with an \`instructor:\` byline, so a course bylined to a stale seed
   instructor (\`@witus-health\` / \`@trade-faculty\` / \`bam\`) is reachable to fix. Bulk data fix for the
   existing bylines: \`pnpm reassign:instructor --apply\` (user-task 42). Also the root-cause fix for
   "changes didn't persist" when the logged-in account didn't match the course's seed instructor id.
-- 🔧 **Teacher Help Center** (\`/help\`) — searchable in-app teacher guide (fuzzy search over
+- ✅ **Teacher Help Center** (\`/help\`) — searchable in-app teacher guide (fuzzy search over
   task-oriented how-tos: courses, lessons, recording, pricing, publishing, live, quick-recall,
   feedback, sharing). Linked from the menu + Teach page. (help-documention.md)
-- 🔧 **Active recall** (\`feat/active-recall\`, stacks on \`feat/course-experience\`) — per-lesson
+- ✅ **Active recall** (\`feat/active-recall\`, stacks on \`feat/course-experience\`) — per-lesson
   **Quick-recall** cards: click-to-reveal answer + "I got it / Missed it" **self-grade**
   (\`lessons.recall_content\` + authoring in the lesson editor). Grades land in \`recall_attempts\`;
   the teacher course page shows **recall accuracy** (in-lesson signal vs quiz). Migration 0022.
-- 🔧 **Course-experience batch** (\`feat/course-experience\`) — **mark-complete** no longer jumps the
+- ✅ **Course-experience batch** (\`feat/course-experience\`) — **mark-complete** no longer jumps the
   page (flips in place + offers "Next lesson" on linear courses); **curriculum feedback** mirrors to
   the WitUS Inbox for the owner's courses + \`pnpm feedback:list\` CLI + each teacher sees only their
   own; **Report a problem** gains a **feedback** kind (bug/feedback/idea/other); **social-share
   tracking** (\`social_shares\` + \`/api/share\` + ShareButton) surfaced on the admin dashboard. Migration 0021.
-- 🔧 **SEO + mobile + admin-polish batch** (\`bundle/seo-mobile-admin-2026-07-01\`) — **per-page
+- ✅ **SEO + mobile + admin-polish batch** (\`bundle/seo-mobile-admin-2026-07-01\`) — **per-page
   social previews** (\`/api/og\` content-relevant cards, \`metadataBase\`, Twitter cards, course/lesson
   page OG + description, Course JSON-LD); **cross-promo picker** now lists all ecosystem apps (adds
   RideWitUS [flagged URL], Shop.WitUS, Field Reporter); **admin sub-pages** render cleanly in the
   sidebar shell; **mobile fixes** (DNS-table overflow, share-button squeeze).
-- 🔧 **Course-admin suite** (\`bundle/course-admin-suite\`) — subscription **billing frequency**
+- ✅ **Course-admin suite** (\`bundle/course-admin-suite\`) — subscription **billing frequency**
   (monthly/annual) driving the Stripe interval; **unsaved-changes** guard on course settings;
   in-app **problem reporter** (site-wide button → \`/admin/reports\` triage + WitUS Inbox mirror +
   \`reports:list\`); **category management** (\`/admin/categories\` add/rename/delete + settings picker);
   **admin dashboard** (\`/admin/dashboard\` — learners, enrollments, completions + learner roster).
-- 🔧 **LMS UX batch** (\`bundle/lms-ux-2026-07-01\`) — **upload hardening** for the 100MB Cloudinary
+- ✅ **LMS UX batch** (\`bundle/lms-ux-2026-07-01\`) — **upload hardening** for the 100MB Cloudinary
   cap (shared chunked \`uploadToCloudinary\` + size guard; recorder live-size + auto-stop; "Stripe
   not configured" banner); **teacher catalog** (\`/teach\` fuzzy search + status filters + bulk
   publish/unpublish/reprice + quick toggle); **learner progress groups** on \`/my-courses\`
@@ -115,7 +115,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sheet on mobile, Copy/X/LinkedIn/Facebook/Email fallback); **admin sidebar shell** (persistent
   nav rail + mobile hamburger, replacing the flat card grid); **responsive site menu** (header
   collapses to a hamburger drawer on small screens — mobile-first.md).
-- 🔧 **Course-tooling suite** (\`bundle/course-tooling-2026-07-01\`) — **outbound-link click tracking**
+- ✅ **Course-tooling suite** (\`bundle/course-tooling-2026-07-01\`) — **outbound-link click tracking**
   (privacy-light \`link_clicks\` counter + \`/api/link/click\` tracked redirect + teacher "Link usage"
   panel); **cross-promotion, 3 disclosed/opt-in ways** (per-course "Related WitUS tools" card,
   \`:::tool\` lesson callout, category→ecosystem catalog chip — WitUS-branded hosts only); **live
@@ -173,7 +173,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   profile in-app. Builds on the existing certificates system + CYOA branching; generalizes to any
   course family. First consumer is the **Documentarian program** (see Content). Plan:
   \`plans/future/12-documentarian-program.md\`.
-- 🔧 **My Field Log** (\`feat/field-log-schema\`) — a per-user documentation-project workspace for the
+- ✅ **My Field Log** (\`feat/field-log-schema\`) — a per-user documentation-project workspace for the
   Documentarian program: projects with story **legs** (sites/nodes of a chain, e.g. cocoa farm → factory
   → corporate office), a **link-only capture log** + **consent ledger**, **crews** (co-owned projects),
   and **self-attest + peer-review** assessment against the Trusted Documentation Rubric. This branch ships
@@ -192,7 +192,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   (self-attest + 2 endorsements) is **surfaced** on My Field Log (a 🎖 group + per-card badge). The
   fuller **gated course-family credential** (core+medium+subject) stays backlog, building on this signal.
   Spec: \`plans/future/14-field-kit.md\`, rubric: \`…/16\`.
-- 🔧 **Robust error UX** (\`feat/field-log-ui\`) — route error boundaries now **route the user back into
+- ✅ **Robust error UX** (\`feat/field-log-ui\`) — route error boundaries now **route the user back into
   the app** (Home / My Field Log) AND **auto-report to an admin** (reusing the \`/api/report\` →
   problem_reports + WitUS Inbox pipeline) with a reference id. The Field Log client surfaces clear
   400/500 messages and reports 5xx; offline is handled separately (queued, not flagged as a bug).
@@ -210,7 +210,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`plans/wanderlearn-embed-integration.md\`, the consumer integration guide). DB-backed isolation
   tests cover the lesson endpoint too, incl. mismatched course/lesson pairings
   (\`tests/isolation/api-v1.db.test.ts\`).
-- 🔧 **Demo account** (\`feat/demo-account\`) — "Try the demo" on the **Acme** tenant's login page
+- ✅ **Demo account** (\`feat/demo-account\`) — "Try the demo" on the **Acme** tenant's login page
   mints a session for a **shared demo account** (a \`brand_admin\` on Acme ONLY, so a visitor can try
   teacher/admin surfaces — authoring, \`/teach\`, \`/live\`, \`/cohorts\` — never a platform owner, never
   another brand). A nightly **Vercel cron** (\`/api/cron/demo-reset\`, midnight UTC, Bearer \`CRON_SECRET\`
@@ -239,7 +239,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **"Read Your Body's Data" metrics tracker — decided: keep on CentOS.** The course logs daily
   numbers in CentenarianOS's tracker (\`centenarianos.com/dashboard/metrics\`); the course now links
   learners there directly. witus does NOT build its own tracker (ecosystem: metrics live in CentOS).
-- 🔧 **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
+- ✅ **Deepen the languages** (in branch) — per-tense fill-in EXERCISES (forgiving on accents) +
   a **sentence-evaluating coach**: the learner writes a sentence and the AI checks grammar/word-order
   grounded only in the course, cites the rule, and gives a next prompt.
 - ✅ **Language DIALOGUE lessons** (es/fr/pt/it) — a "Dialogues" section per course with 3 realistic
@@ -266,7 +266,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   OWASP/RAG); F3 "Young Makers: AI for Kids" (ElementaryMBA, grades 3-8, cited UNICEF/Common Sense/
   MIT Day of AI/Code.org/NIST); F4 "AI for Entrepreneurs" (ElementaryMBA, cited NIST + FTC + US
   Copyright Office + SBA). All coming-soon-gated. Next: the mastery ladders. Plan: \`docs/ai-curriculum.md\`.
-- 🔧 **LangGraph/LangChain courses** (\`feat/langchain-courses\`) — 3 courses vetted + rewritten from
+- ✅ **LangGraph/LangChain courses** (\`feat/langchain-courses\`) — 3 courses vetted + rewritten from
   the \`lang-chain/*\` source repos to the WitUS standard (no AI tells, hide-answer **recall cards**,
   Key Takeaways, per-module quizzes, hyperlinks to repo/app/tagged-files/docs, contractions), under
   **AI & Technology**. All built: **"LangGraph in Production: The WitUS Triage Agent"** (2 mod, 8
@@ -275,7 +275,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   quizzes). 79 lessons, 16 quizzes, 158 recall cards total. Seed \`pnpm seed:langchain\` (auto-discovers
   \`scripts/data/langchain/*\`). Pipeline gained \`recallContent\` + \`relatedProducts\` (cross-promo).
   Next: BAM builds the **learning path** Triage → Foundation (wanderlearn) → Project (centenarian).
-- 🔧 **Admin-managed stream settings** (\`feat/stream-settings\`) — the persistent per-tenant stream
+- ✅ **Admin-managed stream settings** (\`feat/stream-settings\`) — the persistent per-tenant stream
   (what would've been \`RTMP_STREAM_PLAYBACK_URL\` / \`STREAM_EMBED_CODE\` env vars) is now editable at
   **/admin/live**. Paste a provider embed (iframe-in-div) or a direct URL; the server **extracts the
   iframe src and allowlists its host** (\`src/lib/stream-embed.ts\`), storing only the URL in
