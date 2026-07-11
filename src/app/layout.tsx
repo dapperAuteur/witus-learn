@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import { resolveTenant } from "@/lib/tenant";
 import { tenantMetadata, tenantViewport } from "@/lib/branding";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -37,6 +38,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         {children}
         <ServiceWorkerRegister />
+        {/* Vercel Web Analytics — privacy-friendly, cookieless page/route counts. No-ops off Vercel. */}
+        <Analytics />
       </body>
     </html>
   );

@@ -1,0 +1,8 @@
+# pnpm 11 moved build-script approval here (the old package.json `pnpm.onlyBuiltDependencies`
+# field is no longer read — see https://pnpm.io/settings). These three need their build
+# scripts to run: esbuild (used by tsx, which every `pnpm <script>` in scripts/ runs on),
+# sharp (Next.js image optimization), and unrs-resolver (eslint's resolver).
+allowBuilds:
+  esbuild: true
+  sharp: true
+  unrs-resolver: true
