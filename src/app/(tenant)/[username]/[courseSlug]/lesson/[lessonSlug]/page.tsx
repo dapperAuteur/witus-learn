@@ -69,6 +69,13 @@ export default async function LessonPage({ params }: Params) {
   const prev = idx > 0 ? view.lessons[idx - 1] : null;
   const next = idx < view.lessons.length - 1 ? view.lessons[idx + 1] : null;
   const base = `/${username}/${courseSlug}`;
+  // "Save for offline" needs the current + next lesson's page path and (if direct-media) file —
+  // embeds like YouTube can't be cached, so mediaUrl is null for those (the page still caches).
+  const directMediaUrl = (l: (typeof view.lessons)[number]) =>
+    (l.lessonType === "audio" || l.lessonType === "video") && l.contentUrl && isDirectMediaFile(l.contentUrl)
+      ? l.contentUrl
+      : null;
+  const nextOffline = next ? { pagePath: `${base}/lesson/${next.slug}`, mediaUrl: directMediaUrl(next) } : null;
   const completed = view.completedLessonIds.has(lesson.id);
   const total = view.lessons.length;
   const position = idx + 1;
@@ -167,11 +174,11 @@ export default async function LessonPage({ params }: Params) {
               <RecallPlayer courseId={view.course.id} lessonId={lesson.id} items={lesson.recallContent} />
             ) : null}
             <LessonPlayer lesson={lesson} />
-            {(lesson.lessonType === "audio" || lesson.lessonType === "video") &&
-            lesson.contentUrl &&
-            isDirectMediaFile(lesson.contentUrl) ? (
-              <SaveOfflineButton url={lesson.contentUrl} />
-            ) : null}
+            <SaveOfflineButton
+              pagePath={`${base}/lesson/${lesson.slug}`}
+              mediaUrl={directMediaUrl(lesson)}
+              next={nextOffline}
+            />
             {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
             <div className="mt-6">
               {view.session ? (

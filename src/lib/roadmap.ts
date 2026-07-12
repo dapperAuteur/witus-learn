@@ -145,9 +145,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Offline support (PWA)** — conservative per-origin service worker (network-first navigation +
   \`/offline\` fallback; cache-first hashed assets; API/cross-origin never cached), tenant-aware
   \`/manifest.webmanifest\`, and a \`NEXT_PUBLIC_DISABLE_SW=1\` kill-switch. Test on a preview first.
-- ✅ **Offline video/audio** — done. The service worker (\`public/sw.js\`) serves lesson audio/video from
-  a \`witus-media-v1\` Cache; **Save for offline** (\`save-offline-button.tsx\`) stores a lesson's media
-  (incl. cross-origin Cloudinary). YouTube-style embeds can't be cached (noted in-UI).
+- ✅ **Offline lessons (pages + media)** — "Save for offline" (\`save-offline-button.tsx\`) now caches the
+  lesson **page itself** (HTML + RSC payload, via \`src/lib/offline.ts\`'s \`witus-pages-v1\` Cache) *and*
+  its audio/video (\`witus-media-v1\`), plus the **next lesson** — so tapping "Next" keeps working
+  offline. \`save-course-offline-button.tsx\` saves an entire course at once with progress. \`/offline\`
+  lists what's actually saved. Fixes the earlier gap where only media was cached and any lesson page
+  (including the next one) 404'd offline. YouTube-style embeds still can't be cached (noted in-UI).
 - ⚪ **WYSIWYG + markdown editor** (CentOS) for lesson authoring in the dashboard.
 - ✅ **Rich lesson media** — native audio/video files get a full player; YouTube/Vimeo/Google
   Slides/PDF auto-embed (\`toEmbed\`). Cloudinary upload UI is the remaining piece (URLs work today).

@@ -1,42 +1,57 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { isSaved, saveLesson, removeLesson, type SavableLesson } from "@/lib/offline";
 
-// Learner-facing "Save for offline": stores a lesson's audio/video file in the Cache API
-// (the "witus-media" cache the service worker serves from when offline). Works for direct
-// media files (incl. Cloudinary, which sends CORS); embeds like YouTube can't be cached.
-const MEDIA_CACHE = "witus-media-v1";
-
-export function SaveOfflineButton({ url }: { url: string }) {
+// Learner-facing "Save for offline": caches the lesson's PAGE (HTML + RSC payload, so the page
+// itself opens offline and "Next lesson" navigation keeps working) and its audio/video, if any,
+// via the Cache API. The service worker (public/sw.js) serves both from cache when offline.
+// Also saves the NEXT lesson (best-effort) so continuing the course offline works too.
+export function SaveOfflineButton({
+  pagePath,
+  mediaUrl,
+  next,
+}: {
+  pagePath: string;
+  mediaUrl?: string | null;
+  next?: SavableLesson | null;
+}) {
   const [state, setState] = useState<"idle" | "saving" | "saved" | "error">("idle");
 
   useEffect(() => {
-    if (typeof caches === "undefined") return;
+    let cancelled = false;
     // Async setState only (no synchronous set-in-effect): mark "saved" if already cached.
-    caches
-      .open(MEDIA_CACHE)
-      .then((c) => c.match(url))
-      .then((hit) => {
-        if (hit) setState("saved");
-      })
-      .catch(() => {});
-  }, [url]);
+    isSaved(pagePath).then((saved) => {
+      if (!cancelled && saved) setState("saved");
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [pagePath]);
 
   async function save() {
     setState("saving");
     try {
-      const c = await caches.open(MEDIA_CACHE);
-      await c.add(url); // fetches + stores; needs a CORS-ok response (Cloudinary is fine)
-      setState("saved");
+      await saveLesson({ pagePath, mediaUrl });
     } catch {
       setState("error");
+      return;
     }
+    if (next) {
+      // Best-effort: this lesson is already safely saved, so a flaky next-lesson fetch
+      // shouldn't be reported as a failure of the button the learner just clicked.
+      try {
+        await saveLesson(next);
+      } catch {
+        /* ignore */
+      }
+    }
+    setState("saved");
   }
 
   async function remove() {
     try {
-      const c = await caches.open(MEDIA_CACHE);
-      await c.delete(url);
+      await removeLesson({ pagePath, mediaUrl });
     } catch {
       /* ignore */
     }
@@ -44,21 +59,28 @@ export function SaveOfflineButton({ url }: { url: string }) {
   }
 
   return (
-    <div className="mt-3 text-sm">
+    <div className="mt-3 text-sm" aria-live="polite">
       {state === "saved" ? (
-        <span className="inline-flex items-center gap-2 text-green-700 dark:text-green-400">
+        <span className="inline-flex flex-wrap items-center gap-2 text-green-700 dark:text-green-400">
           ✓ Saved for offline
-          <button type="button" onClick={remove} className="text-xs text-neutral-500 underline">remove</button>
+          <button type="button" onClick={remove} className="text-xs text-neutral-500 underline">
+            remove
+          </button>
         </span>
       ) : (
-        <button
-          type="button"
-          onClick={save}
-          disabled={state === "saving"}
-          className="inline-flex min-h-9 items-center rounded-md border border-neutral-300 px-3 hover:bg-neutral-100 focus-visible:outline-2 disabled:opacity-60 dark:border-neutral-700 dark:hover:bg-neutral-800"
-        >
-          {state === "saving" ? "Saving…" : "⬇ Save for offline"}
-        </button>
+        <div>
+          <button
+            type="button"
+            onClick={save}
+            disabled={state === "saving"}
+            className="inline-flex min-h-9 items-center rounded-md border border-neutral-300 px-3 hover:bg-neutral-100 focus-visible:outline-2 disabled:opacity-60 dark:border-neutral-700 dark:hover:bg-neutral-800"
+          >
+            {state === "saving" ? "Saving…" : "⬇ Save for offline"}
+          </button>
+          {next ? (
+            <p className="mt-1 text-xs text-neutral-500">Also saves the next lesson, so you can keep going offline.</p>
+          ) : null}
+        </div>
       )}
       {state === "error" ? <p className="mt-1 text-xs text-red-600">Couldn&rsquo;t save this for offline.</p> : null}
     </div>

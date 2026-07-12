@@ -1,14 +1,20 @@
 // Conservative offline service worker. Goals: (1) never serve stale HTML while online —
-// navigations are network-first; (2) only fall back to a generic offline page when the
-// network is truly unreachable; (3) cache only immutable hashed assets. API + cross-origin
-// are never touched. Service workers are per-origin, so each tenant domain gets its own
-// cache — no cross-tenant leakage. Bump VERSION to roll out a new SW + purge old caches.
-const VERSION = "v2";
+// navigations are network-first; (2) fall back to a learner's own saved lesson pages when the
+// network is unreachable, and only to the generic offline page when nothing was saved;
+// (3) cache only immutable hashed assets. API + cross-origin are never touched. Service workers
+// are per-origin, so each tenant domain gets its own cache — no cross-tenant leakage. Bump
+// VERSION to roll out a new SW + purge old caches.
+const VERSION = "v3";
 const STATIC_CACHE = `witus-static-${VERSION}`;
-// Media the learner explicitly saved for offline. Independent of VERSION so a SW update never
-// wipes downloaded lessons — it's preserved across activations.
+// Media + lesson pages the learner explicitly saved for offline. Independent of VERSION so a SW
+// update never wipes a learner's downloads — both are preserved across activations. Keep these
+// names in sync with src/lib/offline.ts (the client-side code that writes into them).
 const MEDIA_CACHE = "witus-media-v1";
+const PAGES_CACHE = "witus-pages-v1";
 const OFFLINE_URL = "/offline";
+// Synthetic key a saved page's RSC (React Server Component) payload is stored under — see
+// src/lib/offline.ts. Not a real URL, so it can't collide with a real cached page.
+const rscKey = (pathname) => `${pathname}?__rsc`;
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(STATIC_CACHE).then((c) => c.add(OFFLINE_URL)).catch(() => {}));
@@ -19,7 +25,11 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
       .keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== STATIC_CACHE && k !== MEDIA_CACHE).map((k) => caches.delete(k))))
+      .then((keys) =>
+        Promise.all(
+          keys.filter((k) => k !== STATIC_CACHE && k !== MEDIA_CACHE && k !== PAGES_CACHE).map((k) => caches.delete(k)),
+        ),
+      )
       .then(() => self.clients.claim()),
   );
 });
@@ -56,8 +66,33 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Page navigations → network-first (always fresh online), generic offline page if offline.
+  // Client-side RSC (React Server Component) fetches — what Next's router issues for a
+  // <Link>/router.push navigation instead of a full document request. Network-first (always
+  // fresh online); offline, serve the payload savePage() cached under this pathname's synthetic
+  // key (see src/lib/offline.ts). If it's missing (never saved, or a stale/incompatible payload
+  // from a previous deploy), let this fail — Next's router then falls back to a hard navigation,
+  // which the navigate handler below serves from the page cache instead. NOTE: a cached RSC
+  // payload can go stale across deploys (its shape is tied to the build); it's strictly an
+  // offline-only fallback and is never served while the network is reachable.
+  const isRscRequest = request.headers.get("RSC") === "1" || url.searchParams.has("_rsc");
+  if (isRscRequest) {
+    event.respondWith(
+      fetch(request).catch(() => caches.open(PAGES_CACHE).then((c) => c.match(new Request(rscKey(url.pathname))))),
+    );
+    return;
+  }
+
+  // Page navigations → network-first (always fresh online). Offline, serve the learner's own
+  // saved copy of this exact lesson page when they saved it (ignoreSearch: query strings don't
+  // change lesson content); only fall back to the generic offline page when nothing was saved.
   if (request.mode === "navigate") {
-    event.respondWith(fetch(request).catch(() => caches.match(OFFLINE_URL)));
+    event.respondWith(
+      fetch(request).catch(() =>
+        caches
+          .open(PAGES_CACHE)
+          .then((c) => c.match(request, { ignoreSearch: true }))
+          .then((hit) => hit || caches.match(OFFLINE_URL)),
+      ),
+    );
   }
 });
