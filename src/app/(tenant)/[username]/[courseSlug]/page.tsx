@@ -9,6 +9,9 @@ import { ogImageUrl } from "@/lib/og";
 import { RelatedTools } from "@/components/related-tools";
 import { ShareButton } from "@/components/share-button";
 import { lessonAccess, isFreeCourse } from "@/lib/gating";
+import { isDirectMediaFile } from "@/lib/media";
+import type { SavableLesson } from "@/lib/offline";
+import { SaveCourseOfflineButton } from "@/components/save-course-offline-button";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
 import { listLiveForCourse } from "@/db/queries/live";
 import { LivePlayer } from "@/components/live-player";
@@ -85,6 +88,18 @@ export default async function CourseBySlugPage({ params }: Params) {
   const completedCount = lessons.filter((l) => completedLessonIds.has(l.id)).length;
   const percent = lessons.length > 0 ? Math.round((completedCount / lessons.length) * 100) : 0;
   const showProgress = (view.isEnrolled || completedCount > 0) && lessons.length > 0;
+  // "Save whole course for offline": every accessible lesson's page path (+ direct-media file,
+  // when applicable). Locked lessons are excluded — there's nothing useful to cache for them.
+  const savableLessons = lessons.reduce<SavableLesson[]>((acc, l) => {
+    const access = lessonAccess(course, l, { isEditor, isEnrolled: view.isEnrolled, completedLessonIds, orderedLessonIds });
+    if (!access.open) return acc;
+    const mediaUrl =
+      (l.lessonType === "audio" || l.lessonType === "video") && l.contentUrl && isDirectMediaFile(l.contentUrl)
+        ? l.contentUrl
+        : null;
+    acc.push({ pagePath: `${base}/lesson/${l.slug}`, mediaUrl });
+    return acc;
+  }, []);
 
   // "Chat with the sources": shown when the course is indexed AND the learner is allowed by the
   // owner-set stage (owner/instructor → invited/enrolled → paid). Config lives in platform_settings.
@@ -239,6 +254,8 @@ export default async function CourseBySlugPage({ params }: Params) {
           to enroll and track your progress.
         </p>
       ) : null}
+
+      <SaveCourseOfflineButton lessons={savableLessons} />
 
       {prerequisites.length > 0 ? (
         <section className="mt-8">

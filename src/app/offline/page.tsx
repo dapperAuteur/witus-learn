@@ -1,18 +1,22 @@
 import type { Metadata } from "next";
+import { OfflineSavedLessons } from "@/components/offline-saved-lessons";
 
 export const metadata: Metadata = { title: "Offline" };
 
 // Generic offline fallback, precached by the service worker and shown only when a page
-// navigation can't reach the network. Deliberately brand-neutral and self-contained (no
-// tenant data) so it's correct on every domain and never stale.
+// navigation can't reach the network AND the requested lesson wasn't itself saved for offline
+// (see public/sw.js — a saved lesson page is served straight from cache instead of landing
+// here). Deliberately brand-neutral and self-contained (no tenant data) so it's correct on
+// every domain and never stale. The saved-lessons list below is read client-side from the
+// browser's own Cache API, so it works even though this page itself can't hit the network.
 export default function OfflinePage() {
   return (
     <main id="main-content" className="mx-auto flex min-h-[60vh] max-w-md flex-col items-center justify-center px-4 text-center">
       <p className="text-4xl" aria-hidden>📡</p>
       <h1 className="mt-4 text-2xl font-bold">You&rsquo;re offline</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
-        This page isn&rsquo;t available without a connection. Lessons you&rsquo;ve already opened may
-        still work — otherwise, reconnect and try again.
+        This page isn&rsquo;t available without a connection. Lessons you&rsquo;ve saved for
+        offline still work — otherwise, reconnect and try again.
       </p>
       {/* A real <a> (not next/link): offline, we want a full reload that re-hits the
           network, not a client-side navigation that would just fail again. */}
@@ -24,6 +28,7 @@ export default function OfflinePage() {
       >
         Retry
       </a>
+      <OfflineSavedLessons />
     </main>
   );
 }
