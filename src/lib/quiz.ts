@@ -32,6 +32,48 @@ export interface QuizResponse {
   optionIndex: number;
 }
 
+/** No attempt ever serves more than this many questions, in ANY course. A long bank becomes a
+ *  rotating pool instead of a slog: a shorter attempt the learner will actually retry, and each
+ *  retry draws a fresh subset. Applied at the SERVING seam (`toSafeQuiz`), so it covers authored
+ *  quizzes, CSV-imported ones, and anything authored later — no per-course opt-in. */
+export const MAX_QUESTIONS_PER_ATTEMPT = 10;
+
+/** How many questions THIS attempt serves: the author's `questionsPerAttempt` when they asked for
+ *  fewer, otherwise the cap — and never more questions than the bank actually holds.
+ *  A bank of 24 with no author value serves 10; an author value of 5 wins; 20 clamps to 10. */
+export function questionsToServe(content: Pick<QuizContent, "questions" | "questionsPerAttempt">): number {
+  const bank = content.questions?.length ?? 0;
+  const cap = Math.min(MAX_QUESTIONS_PER_ATTEMPT, bank);
+  const authored = content.questionsPerAttempt;
+  // An author value below the cap still wins; above it clamps. Junk (0, negative, NaN) is ignored.
+  if (typeof authored === "number" && Number.isFinite(authored) && authored > 0) {
+    return Math.min(Math.floor(authored), cap);
+  }
+  return cap;
+}
+
+/** The client-safe copy of a quiz: `correctIndex` and `explanation` are stripped (they'd hand the
+ *  learner the answers), and `questionsPerAttempt` is RESOLVED through the cap so the player never
+ *  has to know the rule. This is the one seam every quiz passes through on its way to a learner. */
+export function toSafeQuiz(content: QuizContent): {
+  questions: Omit<QuizQuestion, "correctIndex" | "explanation" | "sourceLessonSlug">[];
+  passingScore?: number;
+  questionsPerAttempt: number;
+  shuffleOptions?: boolean;
+} {
+  return {
+    questions: (content.questions ?? []).map((q) => ({
+      prompt: q.prompt,
+      options: q.options,
+      imageUrl: q.imageUrl,
+      imageAlt: q.imageAlt,
+    })),
+    passingScore: content.passingScore,
+    questionsPerAttempt: questionsToServe(content),
+    shuffleOptions: content.shuffleOptions,
+  };
+}
+
 // A stable identity for a question, derived from its prompt text (djb2 → base36). Captured on each
 // attempt so per-question history survives question REORDERS (position changes, prompt doesn't).
 // Editing a prompt intentionally starts a fresh history for that (now different) question.

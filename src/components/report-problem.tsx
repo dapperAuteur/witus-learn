@@ -50,7 +50,7 @@ export function ReportProblem({ defaultEmail }: { defaultEmail?: string }) {
         >
           <div className="mb-2 flex items-center justify-between">
             <span className="font-medium">Report a problem</span>
-            <button type="button" onClick={() => setOpen(false)} aria-label="Close" className="text-neutral-400 hover:text-neutral-600">
+            <button type="button" onClick={() => setOpen(false)} aria-label="Close" className="-m-2 flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded text-neutral-400 hover:text-neutral-600 focus-visible:outline-2 focus-visible:outline-offset-2">
               ✕
             </button>
           </div>

@@ -94,7 +94,7 @@ export function LiveChat({ signedIn, canModerate }: { signedIn: boolean; canMode
                 <span className="font-medium">{m.name ?? "Someone"}</span>{" "}
                 <span className="text-xs text-neutral-400">{new Date(m.createdAt).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}</span>
                 {canModerate ? (
-                  <button type="button" onClick={() => remove(m.id)} className="ml-2 text-xs text-red-500 opacity-0 group-hover:opacity-100" aria-label="Delete message">×</button>
+                  <button type="button" onClick={() => remove(m.id)} className="ml-1 inline-flex min-h-8 min-w-8 items-center justify-center rounded text-sm text-red-500 opacity-70 hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2" aria-label="Delete message">×</button>
                 ) : null}
                 <p className="whitespace-pre-wrap break-words">{m.body}</p>
               </div>

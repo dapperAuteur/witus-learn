@@ -21,9 +21,9 @@ export default async function LeadsPage() {
       ) : (
         <ul className="mt-6 divide-y divide-neutral-200 text-sm dark:divide-neutral-800">
           {rows.map((l) => (
-            <li key={l.email} className="flex items-center justify-between gap-3 py-2">
-              <span className="font-mono">{l.email}</span>
-              <span className="text-neutral-500">
+            <li key={l.email} className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 py-2">
+              <span className="break-all font-mono">{l.email}</span>
+              <span className="whitespace-nowrap text-neutral-500">
                 {l.source ?? "—"} · {l.createdAt.toLocaleDateString()}
               </span>
             </li>

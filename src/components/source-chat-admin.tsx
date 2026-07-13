@@ -116,7 +116,7 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
               {PROVIDERS.map((p) => <option key={p.v} value={p.v}>{p.label}</option>)}
             </select>
           </label>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <label className="block text-sm">
               Temperature
               <input type="number" step="0.1" min={0} max={1} value={config.temperature} onChange={(e) => setConfig((c) => ({ ...c, temperature: Number(e.target.value) }))} className={`mt-1 ${field}`} />

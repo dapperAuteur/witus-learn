@@ -238,7 +238,34 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
-- ✅ FAA Part 107; ✅ BVC real 21-episode content (lessons + quizzes + maps + Coffee assignment).
+- ✅ BVC real 21-episode content (lessons + quizzes + maps + Coffee assignment).
+- ✅ **FAA Part 107 — sectioned, quizzed, and click-to-reveal** (\`fix/faa-sections-quizzes\`). The
+  import had seeded 90+ lessons as ONE flat list (\`seed-faa.ts\` never set \`section\`, so the course
+  built zero modules), only 5 of its 14 modules had a quiz, and the audio "[CHECK]" beat rendered as
+  a plain "Quick check" heading with the answer in prose right below the question. Now: all 14
+  modules from the import's own metadata become collapsible SECTIONS (course page + lesson-page
+  contents rail), every module ends with a quiz (6 imported + **10 authored**, 207 questions total,
+  in the committed \`scripts/data/faa-part-107-quizzes.ts\`), all 92 quick checks are
+  \`:::reveal\` click-to-reveal, and the 180 recall beats became self-graded recall cards.
+  Authored explanations cite 14 CFR only where a real rule governs. Re-run \`pnpm seed:faa\`
+  (\`--dry-run\` prints the breakdown without touching the DB).
+- ✅ **Quizzes cap at 10 questions per attempt and rotate** (\`feat/quiz-rotation-cap\`). No attempt in
+  ANY course now serves more than **10** questions: \`toSafeQuiz()\` in \`src/lib/quiz.ts\` is the single
+  seam every quiz passes through on its way to a learner, so the cap covers authored quizzes, the
+  CSV-imported FAA ones (the 24-question practice exam, the 11-question Regulation Quiz 4), and any
+  course authored later — no per-course opt-in. An author asking for fewer than 10 still wins; more
+  than 10 clamps. Scoring already graded the **served subset** by question identity, so \`passingScore\`
+  keeps meaning what it says. To make the rotation actually vary, each of the **10 authored FAA banks
+  grew from 6–8 to 15 questions** (+79, every one answerable from that module's own lesson text).
+  Re-run \`pnpm seed:faa\` for the new questions.
+- ✅ **FAA Part 107 — the 11 module reviews the import was dropping** (\`feat/faa-review-lessons\`).
+  Every module JSON carries a \`review\` key beside \`lessons\` — a ready-made recap — and
+  \`seed-faa.ts\` had never read it, so the course shipped with none of them. All 11 (modules 1–11;
+  modules 0/12/13 have \`review: null\` in the source) now import as a lesson at the END of their
+  module, after the content lessons and **before the quiz** — review, then test. Their rapid-fire
+  Q/A ("Question one. … Fact three. …") runs through the same \`:::reveal\` + recall-card conversion
+  as the rest of the seed, so no answer is published in prose under its own question: **87 new
+  click-to-reveal checks** (179 total) and 18 new recall cards, 0 left as prose.
 - ✅ **Health/fitness courses migrated from CentOS + sectioned** — NASM CPT/CES/CNC, "Read Your
   Body's Data", ECS (Foundations/Fitness/Nutrition/Neuroscience) → Learn.WitUS; Speedway → ElementaryMBA.
   Gen-from-CentOS (\`pnpm gen:health\`), each course now has chapter/module/episode SECTIONS with

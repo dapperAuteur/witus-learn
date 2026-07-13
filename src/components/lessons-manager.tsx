@@ -116,18 +116,18 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
               )}
               {l.isFreePreview ? <span className="text-xs text-neutral-500">· free preview</span> : null}
 
-              <div className="ml-auto flex items-center gap-1 text-sm">
-                <button type="button" disabled={busy || i === 0} onClick={() => move(i, -1)} className="rounded px-1.5 disabled:opacity-30" aria-label="Move up">↑</button>
-                <button type="button" disabled={busy || i === sorted.length - 1} onClick={() => move(i, 1)} className="rounded px-1.5 disabled:opacity-30" aria-label="Move down">↓</button>
-                <button type="button" disabled={busy} onClick={() => patch(l.id, { isPublished: !l.isPublished })} className="rounded border border-neutral-300 px-2 py-0.5 dark:border-neutral-700">
+              <div className="ml-auto flex flex-wrap items-center gap-1 text-sm">
+                <button type="button" disabled={busy || i === 0} onClick={() => move(i, -1)} className="min-h-11 min-w-11 rounded disabled:opacity-30 focus-visible:outline-2 focus-visible:outline-offset-2" aria-label="Move up">↑</button>
+                <button type="button" disabled={busy || i === sorted.length - 1} onClick={() => move(i, 1)} className="min-h-11 min-w-11 rounded disabled:opacity-30 focus-visible:outline-2 focus-visible:outline-offset-2" aria-label="Move down">↓</button>
+                <button type="button" disabled={busy} onClick={() => patch(l.id, { isPublished: !l.isPublished })} className="min-h-11 rounded border border-neutral-300 px-3 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">
                   {l.isPublished ? "Unpublish" : "Publish"}
                 </button>
                 {EDITABLE_TYPES.includes(l.lessonType) ? (
-                  <button type="button" onClick={() => setEditing(editing === l.id ? null : l.id)} className="rounded border border-neutral-300 px-2 py-0.5 dark:border-neutral-700">
+                  <button type="button" onClick={() => setEditing(editing === l.id ? null : l.id)} className="min-h-11 rounded border border-neutral-300 px-3 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">
                     {editing === l.id ? "Close" : "Edit"}
                   </button>
                 ) : null}
-                <button type="button" disabled={busy} onClick={() => remove(l.id)} className="rounded px-2 py-0.5 text-red-600">Delete</button>
+                <button type="button" disabled={busy} onClick={() => remove(l.id)} className="min-h-11 rounded px-3 text-red-600 focus-visible:outline-2 focus-visible:outline-offset-2">Delete</button>
               </div>
             </div>
 

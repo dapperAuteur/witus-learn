@@ -242,7 +242,7 @@ function ChildLoginSettings({
         <>
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500">Avatar</p>
-            <div className="mt-2 grid grid-cols-8 gap-1.5">
+            <div className="mt-2 grid grid-cols-5 gap-1.5 sm:grid-cols-8">
               {KID_AVATARS.map((a) => (
                 <button
                   key={a.key}

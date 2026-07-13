@@ -1,5 +1,6 @@
 import type { Lesson } from "@/db/schema";
 import type { ExerciseContent } from "@/lib/exercise";
+import { toSafeQuiz, type QuizContent } from "@/lib/quiz";
 import { QuizPlayer } from "./quiz-player";
 import { ExercisePlayer } from "./exercise-player";
 import { SentenceEvaluator } from "./sentence-evaluator";
@@ -69,25 +70,11 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
       );
 
     case "quiz": {
-      const c = lesson.quizContent as {
-        questions?: { prompt: string; options: string[]; correctIndex: number; imageUrl?: string; imageAlt?: string }[];
-        passingScore?: number;
-        questionsPerAttempt?: number;
-        shuffleOptions?: boolean;
-      } | null;
+      const c = lesson.quizContent as QuizContent | null;
       if (!c?.questions?.length) return <Empty />;
-      // Strip correctIndex before it reaches the client; keep image + rotation config.
-      const safe = {
-        questions: c.questions.map((q) => ({
-          prompt: q.prompt,
-          options: q.options,
-          imageUrl: q.imageUrl,
-          imageAlt: q.imageAlt,
-        })),
-        passingScore: c.passingScore,
-        questionsPerAttempt: c.questionsPerAttempt,
-        shuffleOptions: c.shuffleOptions,
-      };
+      // Strips correctIndex before it reaches the client AND resolves questionsPerAttempt through
+      // the catalog-wide 10-question cap — every quiz in every course is served through here.
+      const safe = toSafeQuiz(c);
       return <QuizPlayer courseId={lesson.courseId} lessonId={lesson.id} content={safe} />;
     }
 

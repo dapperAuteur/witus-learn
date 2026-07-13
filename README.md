@@ -82,7 +82,9 @@ Optional content seeds (each needs `seed:tenants` first; re-seedable — upsert 
 `(courseId, slug)`):
 
 ```bash
-pnpm seed:faa        # FAA Part 107 → Trade School
+pnpm seed:faa        # FAA Part 107 → Learn.WitUS (14 collapsible modules, a quiz per module,
+                     #   click-to-reveal quick checks). `pnpm seed:faa --dry-run` prints the
+                     #   module → lesson/quiz breakdown WITHOUT touching the database.
 pnpm seed:bvc:real   # real 21-episode BVC content → Better Vice Club
 pnpm seed:languages  # Spanish/French/Portuguese/Italian → Learn.WitUS
 pnpm seed:health     # health/fitness courses (NASM CPT/CES/CNC, Read Your Body's Data,

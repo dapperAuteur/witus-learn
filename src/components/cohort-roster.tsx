@@ -193,13 +193,13 @@ export function CohortRoster({ cohortId, members }: { cohortId: string; members:
           {members.map((m) => (
             <li key={m.userId} className="py-2 text-sm">
               <div className="flex items-center justify-between gap-3">
-                <span>
+                <span className="min-w-0 break-words">
                   {m.displayName}
                   {m.present ? (
                     <span className="ml-2 text-xs text-green-700 dark:text-green-400">● here</span>
                   ) : null}
                 </span>
-                <button type="button" onClick={() => remove(m.userId)} className="text-xs text-red-600 hover:underline">
+                <button type="button" onClick={() => remove(m.userId)} className="min-h-11 shrink-0 rounded px-2 text-xs text-red-600 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2">
                   Remove
                 </button>
               </div>

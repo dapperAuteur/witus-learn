@@ -98,7 +98,11 @@ export function MarkdownEditor({
     }
   }
 
-  const btn = "min-h-8 rounded px-2 text-sm hover:bg-neutral-200 focus-visible:outline-2 dark:hover:bg-neutral-700";
+  // Compact ~32px density for mouse/trackpad (these are instructor-facing authoring tools used
+  // mostly on desktop); bump to a 44px WCAG 2.5.5 target only on touch/coarse pointers, where
+  // finger accuracy — not legibility — is the actual constraint.
+  const btn =
+    "min-h-8 rounded px-2 text-sm hover:bg-neutral-200 focus-visible:outline-2 dark:hover:bg-neutral-700 pointer-coarse:min-h-11 pointer-coarse:min-w-11";
   return (
     <div className="rounded-md border border-neutral-300 dark:border-neutral-700">
       <div className="flex flex-wrap items-center gap-0.5 border-b border-neutral-200 p-1 dark:border-neutral-800">
@@ -116,8 +120,22 @@ export function MarkdownEditor({
         <input ref={fileRef} type="file" accept="image/*" onChange={onImageFile} className="hidden" aria-hidden />
         <button type="button" onClick={() => surround("`")} className={btn} title="Inline code" aria-label="Inline code">{"</>"}</button>
         <div className="ml-auto flex rounded bg-neutral-100 p-0.5 text-xs dark:bg-neutral-800">
-          <button type="button" onClick={() => setTab("write")} className={`rounded px-2 py-0.5 ${tab === "write" ? "bg-white shadow-sm dark:bg-neutral-700" : ""}`}>Write</button>
-          <button type="button" onClick={() => setTab("preview")} className={`rounded px-2 py-0.5 ${tab === "preview" ? "bg-white shadow-sm dark:bg-neutral-700" : ""}`}>Preview</button>
+          <button
+            type="button"
+            onClick={() => setTab("write")}
+            aria-pressed={tab === "write"}
+            className={`min-h-8 rounded px-3 focus-visible:outline-2 pointer-coarse:min-h-11 pointer-coarse:min-w-11 ${tab === "write" ? "bg-white shadow-sm dark:bg-neutral-700" : ""}`}
+          >
+            Write
+          </button>
+          <button
+            type="button"
+            onClick={() => setTab("preview")}
+            aria-pressed={tab === "preview"}
+            className={`min-h-8 rounded px-3 focus-visible:outline-2 pointer-coarse:min-h-11 pointer-coarse:min-w-11 ${tab === "preview" ? "bg-white shadow-sm dark:bg-neutral-700" : ""}`}
+          >
+            Preview
+          </button>
         </div>
       </div>
       {tab === "write" ? (
