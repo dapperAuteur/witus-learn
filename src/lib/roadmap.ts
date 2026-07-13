@@ -258,6 +258,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   keeps meaning what it says. To make the rotation actually vary, each of the **10 authored FAA banks
   grew from 6–8 to 15 questions** (+79, every one answerable from that module's own lesson text).
   Re-run \`pnpm seed:faa\` for the new questions.
+- ✅ **FAA Part 107 — the 11 module reviews the import was dropping** (\`feat/faa-review-lessons\`).
+  Every module JSON carries a \`review\` key beside \`lessons\` — a ready-made recap — and
+  \`seed-faa.ts\` had never read it, so the course shipped with none of them. All 11 (modules 1–11;
+  modules 0/12/13 have \`review: null\` in the source) now import as a lesson at the END of their
+  module, after the content lessons and **before the quiz** — review, then test. Their rapid-fire
+  Q/A ("Question one. … Fact three. …") runs through the same \`:::reveal\` + recall-card conversion
+  as the rest of the seed, so no answer is published in prose under its own question: **87 new
+  click-to-reveal checks** (179 total) and 18 new recall cards, 0 left as prose.
 - ✅ **Health/fitness courses migrated from CentOS + sectioned** — NASM CPT/CES/CNC, "Read Your
   Body's Data", ECS (Foundations/Fitness/Nutrition/Neuroscience) → Learn.WitUS; Speedway → ElementaryMBA.
   Gen-from-CentOS (\`pnpm gen:health\`), each course now has chapter/module/episode SECTIONS with
