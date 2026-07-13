@@ -9,7 +9,7 @@ import { GrowingBeltsMap, type MapBelt } from "./growing-belts-map";
 export function MapTabs({ commodities, belts }: { commodities: MapPin[]; belts: MapBelt[] }) {
   const [mode, setMode] = useState<"origins" | "belts">("origins");
   const tabClass = (active: boolean) =>
-    `px-4 py-2 text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 ${
+    `min-h-11 px-4 py-2 text-sm font-medium focus-visible:outline-2 focus-visible:outline-offset-2 ${
       active ? "text-white" : "text-neutral-600 dark:text-neutral-300"
     }`;
 
