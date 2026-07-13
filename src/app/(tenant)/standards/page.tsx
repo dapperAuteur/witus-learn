@@ -160,11 +160,13 @@ export default async function StandardsPage() {
             <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
               {framework.adoption}
             </p>
+            {/* The most important control on the page: it is how a teacher checks us. It is a
+                real touch target, not a 20px inline link. */}
             <a
               href={framework.sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${textLink} mt-2 inline-block wrap-break-word text-sm`}
+              className={`${textLink} mt-1 inline-flex min-h-11 items-center wrap-break-word text-sm pointer-coarse:min-h-12`}
               style={accent}
             >
               Read the source document →

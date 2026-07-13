@@ -429,7 +429,11 @@ export default async function ExplorePage() {
           its exact code, the standard&apos;s own words, and the lesson that covers it — and says
           so plainly when we only cover part of it.
         </p>
-        <Link href="/standards" className={`${textLink} mt-3 inline-block`} style={accent}>
+        <Link
+          href="/standards"
+          className={`${textLink} mt-2 inline-flex min-h-11 items-center pointer-coarse:min-h-12`}
+          style={accent}
+        >
           See which standards are met, and by which lesson →
         </Link>
       </section>

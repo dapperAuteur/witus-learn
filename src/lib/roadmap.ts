@@ -389,8 +389,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   migration**. Metadata/OG/JSON-LD tenant-scoped. Mobile-first (no 320px overflow; ≥44px targets).
 - 🔧 **Standards alignment** (\`feat/explore-standards\`) — a \`/standards\` page, linked from
   \`/explore\`, answering the one question a teacher or a reporting homeschooler asks first: *which
-  requirements does this meet, and which lesson meets them?* **31 standards across 9 frameworks in
-  2 jurisdictions**, each with its **exact code**, the standard's **verbatim text**, a link to the
+  requirements does this meet, and which lesson meets them?* **41 standards (21 fully covered, 20
+  partially) across 9 frameworks in 2 jurisdictions**, each with its **exact code**, the
+  standard's **verbatim text**, a link to the
   **publisher's own document**, the **lessons** that cover it, and a \`full\` | \`partial\` flag —
   partials must state what is missing (a unit test enforces it). Indiana: Economics (2026), Geography
   and History of the World, World History and Civilization, U.S. History, ELA 9-10 and 11-12 (all
