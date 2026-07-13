@@ -386,6 +386,29 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   (\`plans/user-tasks/72\`). Hero copy is per-tenant overridable via \`platform_settings\`
   (\`explore_headline\`/\`explore_subhead\`/\`explore_intro\`) with brand-neutral defaults — **no
   migration**. Metadata/OG/JSON-LD tenant-scoped. Mobile-first (no 320px overflow; ≥44px targets).
+- 🔧 **/explore: pricing conversation + the map fixes** (\`feat/explore-pricing-contact\`) — closes
+  three of the four open questions from \`plans/user-tasks/73\` and three map reports.
+  **Age range: answered** — "Designed for high school students" now sits under the \`<h1>\` and in the
+  FAQ, per-tenant overridable via \`platform_settings.explore_audience\` (**no migration**).
+  **Time commitment: still TBD, and the page SAYS so** rather than deriving an hours-per-week figure
+  from \`lessons.duration_seconds\` — a parent plans a school year around that number, so a wrong one
+  is worse than none. **Standards alignment: still absent**, with a marked insertion point for the
+  separate \`src/lib/standards.ts\` work. **Pricing: a "contact us for pricing" form** (\`#pricing\`) —
+  name / email / role / students / message, **Zod-validated server-side**, tenant resolved from the
+  HOST, honeypot + a per-IP sliding window (the \`/api/v1\` limiter, extracted to
+  \`src/lib/rate-limit.ts\` and now shared rather than duplicated). No captcha dependency, and **no
+  price is stated anywhere** — that is the point. It **persists the lead FIRST and emails second**:
+  a Mailgun failure logs loudly and returns \`notified: false\`, but the enquiry is already in
+  \`leads\` and readable at \`/admin/leads\`, because a lost lead is a lost sale. **Migration:
+  \`0034\` adds \`leads.inquiries\` (jsonb, append-only)** — the (tenant, email) unique constraint
+  meant a repeat enquiry was being silently dropped by \`ON CONFLICT DO NOTHING\`; it now appends.
+  **Map fixes:** the season filter is **gone** (it was a hardcoded \`SEASONS\` array carrying ONE
+  brand's episode titles into a multi-tenant component, and it hid 2/3 of the pins from a first-time
+  visitor) — season survives as a data-derived heading in the episode list; clicking an episode
+  **no longer navigates away** but opens a shared \`<EpisodeDetail>\` panel in place (lessons, cited
+  sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
+  return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
+  OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`

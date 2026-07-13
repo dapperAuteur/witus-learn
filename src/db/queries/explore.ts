@@ -238,11 +238,23 @@ export async function getEpisodeFacts(
 const HEADLINE_KEY = "explore_headline";
 const SUBHEAD_KEY = "explore_subhead";
 const INTRO_KEY = "explore_intro";
+const AUDIENCE_KEY = "explore_audience";
 
 export interface ExploreCopy {
   headline: string;
   subhead: string;
   intro: string | null;
+  /**
+   * Who the curriculum is designed for. The single most-asked question from a homeschooling
+   * parent, and the page used to answer it with silence.
+   *
+   * The default is BAM's answer for this platform ("high school students") and it is what every
+   * brand gets until it says otherwise; a school whose curriculum targets a different age
+   * overrides it with one `explore_audience` row in platform_settings for its OWN tenant_id (no
+   * migration). It is deliberately a plain audience statement, not an age range in years — we
+   * have not defined one, so we do not print one.
+   */
+  audience: string | null;
 }
 
 /**
@@ -262,7 +274,7 @@ export async function getExploreCopy(tenant: TenantRecord): Promise<ExploreCopy>
     .where(
       and(
         eq(platformSettings.tenantId, tenant.id),
-        inArray(platformSettings.key, [HEADLINE_KEY, SUBHEAD_KEY, INTRO_KEY]),
+        inArray(platformSettings.key, [HEADLINE_KEY, SUBHEAD_KEY, INTRO_KEY, AUDIENCE_KEY]),
       ),
     );
 
@@ -274,5 +286,6 @@ export async function getExploreCopy(tenant: TenantRecord): Promise<ExploreCopy>
       set.get(SUBHEAD_KEY) ??
       `A curriculum you enter through a map. Every course in ${brandName(tenant)} begins with a real thing from a real place — pick a pin, and the history, geography, science, and economics behind it unfold from there.`,
     intro: set.get(INTRO_KEY) ?? tenant.tagline,
+    audience: set.get(AUDIENCE_KEY) ?? "Designed for high school students",
   };
 }

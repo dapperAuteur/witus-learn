@@ -239,6 +239,13 @@
       "when": 1783604286623,
       "tag": "0033_certain_slayback",
       "breakpoints": true
+    },
+    {
+      "idx": 34,
+      "version": "7",
+      "when": 1783959769087,
+      "tag": "0034_redundant_grey_gargoyle",
+      "breakpoints": true
     }
   ]
 }

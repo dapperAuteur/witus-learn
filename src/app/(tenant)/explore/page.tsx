@@ -17,6 +17,7 @@ import { type MapPin } from "@/components/commodity-map";
 import { type MapBelt } from "@/components/growing-belts-map";
 import { MapTabs } from "@/components/map-tabs";
 import { EpisodeExplorer } from "@/components/episode-explorer";
+import { PricingContactForm } from "@/components/pricing-contact-form";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // /explore — the landing page for the map curriculum.
@@ -168,17 +169,32 @@ export default async function ExplorePage() {
   const accent = { color: "var(--accent)" };
 
   const faqs = [
+    copy.audience
+      ? {
+          // BAM's answer, verbatim in substance: high school. We do not dress it up with an age
+          // range in years or claims about younger learners — he has not made those calls.
+          q: "Who is this designed for?",
+          a: `${copy.audience}. If you are teaching a different age group and want to know whether it fits, ask us below — we would rather tell you honestly than have you find out after you have planned around it.`,
+        }
+      : null,
     stats.courses > 0
       ? {
           q: "What does it cost?",
           a:
             stats.freeCourses === stats.courses
-              ? `Every one of the ${stats.courses} ${plural(stats.courses, "course")} here is currently free. Each course page shows its own price.`
+              ? `Every one of the ${stats.courses} ${plural(stats.courses, "course")} here is currently free. Each course page shows its own price. For a class, a co-op, or a school, pricing is a conversation — ask us below and we will answer with a number for the number of students you actually have.`
               : stats.freeCourses > 0
-                ? `${stats.freeCourses} of the ${stats.courses} ${plural(stats.courses, "course")} here are free; the rest are paid. Every course page shows its price before you enrol.`
-                : "Every course page shows its price before you enrol.",
+                ? `${stats.freeCourses} of the ${stats.courses} ${plural(stats.courses, "course")} here are free; the rest are paid. Every course page shows its price before you enrol. For a class, a co-op, or a school, ask us about pricing below.`
+                : "Every course page shows its price before you enrol. For a class, a co-op, or a school, ask us about pricing below.",
         }
       : null,
+    {
+      // Time commitment: BAM has NOT set one, so this page does not print one. It would be easy
+      // to add up lessons.duration_seconds and call it "hours per week" — and it would be a made-up
+      // number that a parent might plan a school year around. Saying "not yet" is the honest answer.
+      q: "How much time does it take each week?",
+      a: "We have not published an hours-per-week figure yet, so we are not going to invent one — you would plan a school year around it. Go in any order and at your own pace in the meantime; when we have a number we can stand behind, it will be on this page. If you need to know now, ask us below and we will talk through what your week looks like.",
+    },
     {
       q: "What do we need to get started?",
       a: "A web browser — phone, tablet, or computer. Signing in is a magic link sent to your email, so there is no password to remember.",
@@ -219,6 +235,18 @@ export default async function ExplorePage() {
           {brand}
         </p>
         <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">{copy.headline}</h1>
+
+        {/* The first question a homeschooling parent asks, answered before they have to scroll
+            for it. Tenant-overridable (platform_settings.explore_audience) — see getExploreCopy. */}
+        {copy.audience ? (
+          <p
+            className="mt-3 inline-flex rounded-full border px-3 py-1 text-sm font-medium"
+            style={{ color: "var(--accent)", borderColor: "var(--accent)" }}
+          >
+            {copy.audience}
+          </p>
+        ) : null}
+
         <p className="mt-4 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
           {copy.subhead}
         </p>
@@ -568,11 +596,37 @@ export default async function ExplorePage() {
           <Link href="/help" className={textLink} style={accent}>
             Read the help centre
           </Link>
+          , or{" "}
+          <a href="#pricing" className={textLink} style={accent}>
+            ask us directly
+          </a>
           .
         </p>
       </section>
 
-      {/* 9. Do the thing — and the thing is the map, where this page started. */}
+      {/* ── STANDARDS-ALIGNMENT INSERTION POINT ────────────────────────────────────────────
+          A standards-alignment section belongs HERE (after the questions, before the pricing
+          conversation): it is the last thing a school buyer checks before asking what it costs.
+          Owned by a separate change (src/lib/standards.ts + its own section/page) — intentionally
+          left empty rather than filled with a placeholder claim, because an unverifiable
+          standards claim on a page that sells children's education is a defect, not a gap.
+          ──────────────────────────────────────────────────────────────────────────────────── */}
+
+      {/* 9. Pricing is a conversation. We do not print a number, because there is not one number:
+             it depends on whether you are one family or a district. So we ask, and we answer. */}
+      <section id="pricing" className="mt-14 scroll-mt-4" aria-labelledby="pricing-heading">
+        <h2 id="pricing-heading" className="text-2xl font-bold">
+          Ask us about pricing
+        </h2>
+        <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
+          One family, a co-op, a classroom, and a district are four different conversations, so we
+          would rather have the conversation than post a number that is wrong for three of them.
+          Tell us who you are teaching and we will come back to you with a straight answer.
+        </p>
+        <PricingContactForm />
+      </section>
+
+      {/* 10. Do the thing — and the thing is the map, where this page started. */}
       <section
         className="mt-14 rounded-2xl border-2 p-6 sm:p-8"
         style={{ borderColor: "var(--accent)" }}
@@ -593,6 +647,9 @@ export default async function ExplorePage() {
           <Link href="/cohorts" className={secondaryCta}>
             Run it with a class
           </Link>
+          <a href="#pricing" className={secondaryCta}>
+            Ask about pricing
+          </a>
         </div>
       </section>
     </main>
