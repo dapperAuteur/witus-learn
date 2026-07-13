@@ -37,7 +37,9 @@ const SHELL_PATHS = new Set<string>([DOWNLOADS_PATH, "/offline"]);
 
 // Synthetic cache key for a page's RSC (React Server Component) payload — the stream Next
 // fetches for client-side <Link> navigation. It isn't a real URL a browser would request, so it
-// can't collide with a real cached page.
+// can't collide with a real cached page. Passed to the Cache API as a plain string (a valid
+// RequestInfo, normalised against the document base exactly as `new Request(...)` would be) —
+// same stored key, and no relative-URL construction to trip over.
 function rscKey(pathname: string): string {
   return `${pathname}?__rsc`;
 }
@@ -80,7 +82,7 @@ export async function savePage(pathname: string): Promise<void> {
       throw new Error(`Failed to save ${pathname}: ${res.status}`);
     }),
     fetch(pathname, { credentials: "same-origin", headers: { RSC: "1" } }).then((res) => {
-      if (res.ok) return cache.put(new Request(rscKey(pathname)), res);
+      if (res.ok) return cache.put(rscKey(pathname), res);
     }),
   ]);
   // Require the HTML half to succeed (it's the offline fallback of last resort); the RSC half
@@ -123,6 +125,13 @@ async function ensureManagerCached(): Promise<void> {
 export async function saveLesson(lesson: SavableLesson): Promise<void> {
   await savePage(lesson.pagePath);
   if (lesson.mediaUrl) await saveMedia(lesson.mediaUrl);
+  // VERIFY, don't assume. "Saved" must mean "I have read this back out of the cache", not "the
+  // promise resolved" — a green check the learner trusts and then loses on a plane is the worst
+  // outcome this feature has. Throwing here also keeps the lesson out of the manifest, so the
+  // Downloads screen can't advertise it either.
+  if (!(await isSaved(lesson.pagePath))) {
+    throw new Error(`Offline save could not be verified for ${lesson.pagePath}`);
+  }
   upsertEntry({
     pagePath: lesson.pagePath,
     courseTitle: lesson.meta.courseTitle,
@@ -163,9 +172,7 @@ export async function removeLessons(lessons: RemovableLesson[]): Promise<void> {
   const paths = lessons.map((l) => l.pagePath);
 
   const pages = await caches.open(PAGES_CACHE);
-  await Promise.all(
-    paths.flatMap((p) => [pages.delete(p), pages.delete(new Request(rscKey(p)))]),
-  );
+  await Promise.all(paths.flatMap((p) => [pages.delete(p), pages.delete(rscKey(p))]));
 
   const after = withoutPaths(before, paths);
   const stillReferenced = referencedMedia(after);
@@ -318,6 +325,56 @@ export async function removeAllOffline(): Promise<void> {
   clearManifest();
   managerCached = false;
   void ensureManagerCached(); // best-effort; a no-op when we're offline
+}
+
+/**
+ * Can this page ACTUALLY serve content offline right now?
+ *
+ * The Cache API works with or without a service worker — which is precisely the trap. Downloads
+ * write into the cache happily, the UI goes green, and then the learner switches to airplane mode
+ * and gets the browser's "no connection" page, because nothing is intercepting the navigation.
+ * `controller` is the one honest signal: it is non-null only when a SW is actively controlling
+ * THIS page, and that is exactly the condition under which public/sw.js can answer a navigation
+ * from cache. Anything that claims "saved for offline" must gate on it.
+ *
+ * `controller` is legitimately null for a short window on a first visit (the SW installs, then
+ * `clients.claim()`s) — callers listen for `controllerchange` and re-probe, rather than
+ * permanently condemning the page.
+ */
+export type OfflineReadiness = {
+  /** Cache API + manifest storage usable at all. */
+  storage: boolean;
+  /** The browser exposes the Service Worker API (false in private windows on some browsers). */
+  serviceWorkerApi: boolean;
+  /** A service worker is installed and active for this scope. */
+  registered: boolean;
+  /** A service worker is controlling THIS page — the only state in which offline actually works. */
+  controlling: boolean;
+};
+
+export async function offlineReadiness(): Promise<OfflineReadiness> {
+  const storage = offlineSupported();
+  const serviceWorkerApi = typeof navigator !== "undefined" && "serviceWorker" in navigator;
+  if (!serviceWorkerApi) return { storage, serviceWorkerApi: false, registered: false, controlling: false };
+  let registered = false;
+  try {
+    const registration = await navigator.serviceWorker.getRegistration();
+    registered = Boolean(registration?.active);
+  } catch {
+    registered = false;
+  }
+  return {
+    storage,
+    serviceWorkerApi: true,
+    registered,
+    controlling: navigator.serviceWorker.controller !== null,
+  };
+}
+
+/** True when a learner can genuinely rely on offline: storage to put lessons in, and a service
+ *  worker controlling the page to serve them back. Both, or it's a lie. */
+export function offlineWorks(readiness: OfflineReadiness): boolean {
+  return readiness.storage && readiness.controlling;
 }
 
 /**

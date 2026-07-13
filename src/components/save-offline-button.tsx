@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { isSaved, saveLesson, removeLesson, type OfflineLessonMeta, type SavableLesson } from "@/lib/offline";
+import { useOfflineReadiness } from "@/lib/use-offline-readiness";
 
 // Learner-facing "Save for offline": caches the lesson's PAGE (HTML + RSC payload, so the page
 // itself opens offline and "Next lesson" navigation keeps working) and its audio/video, if any,
@@ -21,6 +22,7 @@ export function SaveOfflineButton({
   next?: SavableLesson | null;
 }) {
   const [state, setState] = useState<"idle" | "saving" | "saved" | "error">("idle");
+  const { ready, works } = useOfflineReadiness();
 
   useEffect(() => {
     let cancelled = false;
@@ -51,7 +53,9 @@ export function SaveOfflineButton({
         /* ignore */
       }
     }
-    setState("saved");
+    // Read it back out of the cache before claiming anything. saveLesson already verifies, but the
+    // button the learner actually looks at should never say "✓ Saved" on hope alone.
+    setState((await isSaved(pagePath)) ? "saved" : "error");
   }
 
   async function remove() {
@@ -63,6 +67,22 @@ export function SaveOfflineButton({
       /* ignore */
     }
     setState("idle");
+  }
+
+  // The Cache API writes happily with no service worker — which is exactly how a learner ends up
+  // with a green check and the browser's no-connection page in airplane mode. If nothing is
+  // controlling this page, offline will NOT work, so say that instead of offering a save.
+  if (ready !== null && !works) {
+    return (
+      <p role="status" className="mt-3 max-w-sm text-xs text-amber-700 dark:text-amber-500">
+        ⚠️{" "}
+        {!ready.storage || !ready.serviceWorkerApi
+          ? "Offline downloads aren’t supported in this browser. (Private or incognito windows usually block the storage they need.)"
+          : ready.registered
+            ? "Offline mode is still starting up — reload the page to finish enabling downloads."
+            : "Offline mode isn’t running on this page yet — reload the page to enable downloads."}
+      </p>
+    );
   }
 
   return (

@@ -6,9 +6,11 @@ import {
   offlineSupported,
   removeLessons,
   saveCourse,
+  type OfflineReadiness,
   type SavableLesson,
   type SaveCourseProgress,
 } from "@/lib/offline";
+import { useOfflineReadiness } from "@/lib/use-offline-readiness";
 
 /**
  * Selective offline downloads on the course page: a checkbox per lesson, a select-all per section,
@@ -28,6 +30,11 @@ type Busy = { mode: "save" | "remove"; done: number; total: number };
 
 type SelectionCtx = {
   supported: boolean;
+  /** Null while the first probe is in flight. */
+  readiness: OfflineReadiness | null;
+  /** Storage AND a controlling service worker. False ⇒ a download would not survive going
+   *  offline, so nothing in this UI may render as "saved". */
+  works: boolean;
   /** Only ACCESSIBLE lessons are registered — the course page excludes locked ones, so they get
    *  no checkbox and can't be selected. */
   byPath: Map<string, SavableLesson>;
@@ -60,6 +67,7 @@ export function OfflineDownloadProvider({
   const [saved, setSaved] = useState<Set<string>>(() => new Set());
   const [busy, setBusy] = useState<Busy | null>(null);
   const [failed, setFailed] = useState(0);
+  const { ready: readiness, works } = useOfflineReadiness();
 
   const byPath = useMemo(() => new Map(lessons.map((l) => [l.pagePath, l])), [lessons]);
   const allPaths = useMemo(() => lessons.map((l) => l.pagePath), [lessons]);
@@ -163,8 +171,8 @@ export function OfflineDownloadProvider({
   );
 
   const value = useMemo<SelectionCtx>(
-    () => ({ supported, byPath, allPaths, selected, saved, busy, failed, toggle, setMany, download, remove }),
-    [supported, byPath, allPaths, selected, saved, busy, failed, toggle, setMany, download, remove],
+    () => ({ supported, readiness, works, byPath, allPaths, selected, saved, busy, failed, toggle, setMany, download, remove }),
+    [supported, readiness, works, byPath, allPaths, selected, saved, busy, failed, toggle, setMany, download, remove],
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
@@ -179,7 +187,7 @@ const BOX = "h-5 w-5 shrink-0 cursor-pointer accent-current focus-visible:outlin
  *  savable (locked → never registered) or when the browser can't do offline at all. */
 export function OfflineLessonCheckbox({ pagePath, lessonTitle }: { pagePath: string; lessonTitle: string }) {
   const ctx = useSelection();
-  if (!ctx?.supported || !ctx.byPath.has(pagePath)) return null;
+  if (!ctx?.supported || !ctx.works || !ctx.byPath.has(pagePath)) return null;
   const isSaved = ctx.saved.has(pagePath);
   const checked = ctx.selected.has(pagePath);
   return (
@@ -220,7 +228,7 @@ export function OfflineSectionCheckbox({ sectionTitle, paths }: { sectionTitle: 
     if (ref.current) ref.current.indeterminate = some;
   }, [some]);
 
-  if (!ctx?.supported || mine.length === 0) return null;
+  if (!ctx?.supported || !ctx.works || mine.length === 0) return null;
 
   return (
     // Stop the click here: this label sits inside <summary>, and a click bubbling up to <summary>
@@ -249,17 +257,43 @@ export function OfflineSectionCheckbox({ sectionTitle, paths }: { sectionTitle: 
   );
 }
 
+/**
+ * Why offline can't be relied on right now, in the learner's words — or null when it can.
+ *
+ * This is the guard against the bug that shipped: the Cache API writes fine with no service
+ * worker, so downloads "succeeded" and the UI went green, but nothing was there to serve them and
+ * airplane mode produced the browser's own no-connection page. If the SW isn't controlling this
+ * page, we say so instead of showing a check the learner would trust on a plane.
+ */
+function unavailableReason(ctx: SelectionCtx): string | null {
+  if (ctx.readiness === null) return null; // still probing — don't flash a scary banner
+  if (!ctx.readiness.storage) return "Offline downloads aren’t supported in this browser. (Private or incognito windows usually block the storage they need.)";
+  if (!ctx.readiness.serviceWorkerApi) return "Offline downloads aren’t supported in this browser.";
+  if (!ctx.readiness.controlling) {
+    return ctx.readiness.registered
+      ? "Offline mode is still starting up — reload the page to finish enabling downloads."
+      : "Offline mode isn’t running on this page yet — reload the page to enable downloads.";
+  }
+  return null;
+}
+
+function OfflineUnavailable({ reason }: { reason: string }) {
+  return (
+    <p role="status" className="max-w-sm text-xs text-amber-700 dark:text-amber-500">
+      ⚠️ {reason}
+    </p>
+  );
+}
+
 /** The one-click path, preserved: download every accessible lesson in the course. Sits next to the
  *  syllabus heading and shares state with the checkboxes, so ticks appear as it goes. */
 export function OfflineDownloadAllButton() {
   const ctx = useSelection();
   if (!ctx || ctx.allPaths.length === 0) return null;
 
-  if (!ctx.supported) {
-    return (
-      <p className="text-xs text-neutral-500">Offline downloads aren&rsquo;t supported in this browser.</p>
-    );
-  }
+  const reason = unavailableReason(ctx);
+  if (reason) return <OfflineUnavailable reason={reason} />;
+  if (!ctx.supported || !ctx.works) return null;
 
   const missing = ctx.allPaths.filter((p) => !ctx.saved.has(p));
   const total = ctx.allPaths.length;
@@ -295,7 +329,7 @@ export function OfflineDownloadAllButton() {
  */
 export function OfflineSelectionBar() {
   const ctx = useSelection();
-  if (!ctx?.supported || ctx.allPaths.length === 0) return null;
+  if (!ctx?.supported || !ctx.works || ctx.allPaths.length === 0) return null;
 
   const selected = [...ctx.selected];
   const busy = ctx.busy;

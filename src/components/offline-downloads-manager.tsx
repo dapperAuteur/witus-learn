@@ -11,6 +11,7 @@ import {
   type OfflineEntry,
   type OfflineInventory,
 } from "@/lib/offline";
+import { useOfflineReadiness } from "@/lib/use-offline-readiness";
 
 /**
  * The Downloads manager — everything this device has saved, across every course, with a Remove at
@@ -355,7 +356,60 @@ export function OfflineDownloadsManager() {
           </p>
         </section>
       ) : null}
+
+      <OfflineDiagnostics savedPages={entries.length + orphanPages.length} usage={storage?.usage ?? null} />
     </div>
+  );
+}
+
+/**
+ * Offline diagnostics — how you tell truth from a lie.
+ *
+ * The bug that shipped was invisible precisely because there was nowhere to look: the Cache API
+ * accepted every write, the UI went green, and only airplane mode revealed that no service worker
+ * had ever registered. "Serving offline pages" is the load-bearing line — when it says No, saving
+ * lessons is pointless no matter how many are cached, and that is exactly the state that produced
+ * the browser's no-connection page on a plane.
+ */
+function OfflineDiagnostics({ savedPages, usage }: { savedPages: number; usage: number | null }) {
+  const { ready } = useOfflineReadiness();
+
+  const rows: { label: string; value: string; bad?: boolean }[] = [
+    {
+      label: "Serving offline pages",
+      value: ready?.controlling ? "Yes" : "No — reload the page",
+      bad: ready !== null && !ready.controlling,
+    },
+    {
+      label: "Offline worker installed",
+      value: ready?.registered ? "Yes" : "No",
+      bad: ready !== null && !ready.registered,
+    },
+    { label: "Storage available", value: ready?.storage ? "Yes" : "No", bad: ready !== null && !ready.storage },
+    { label: "Pages saved", value: String(savedPages) },
+    { label: "Storage used (this site)", value: usage === null ? "Unknown" : formatBytes(usage) },
+  ];
+
+  return (
+    <details className="mt-8 rounded-xl border border-neutral-200 dark:border-neutral-800">
+      <summary className="flex min-h-11 cursor-pointer list-none items-center px-4 text-sm font-medium text-neutral-600 dark:text-neutral-400">
+        Offline diagnostics
+      </summary>
+      <dl className="space-y-1 px-4 pb-4 text-sm">
+        {rows.map((row) => (
+          <div key={row.label} className="flex items-center justify-between gap-3">
+            <dt className="text-neutral-500">{row.label}</dt>
+            <dd className={`tabular-nums ${row.bad ? "font-medium text-amber-700 dark:text-amber-500" : ""}`}>
+              {ready === null ? "…" : row.value}
+            </dd>
+          </div>
+        ))}
+      </dl>
+      <p className="px-4 pb-4 text-xs text-neutral-500">
+        If &ldquo;Serving offline pages&rdquo; says No, saved lessons will NOT open without a
+        connection — reload this page to start the offline worker, then try again.
+      </p>
+    </details>
   );
 }
 
