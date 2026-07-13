@@ -833,6 +833,86 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
           "High temperature, high field elevation, and high humidity all raise density altitude, which thins the air the props have to grab. The drone climbs slower, carries less, and feels mushy. High pressure and cold air do the opposite: thick air, low density altitude, better performance.",
         sourceLessonNumber: 8,
       },
+      {
+        prompt: "On a standard day you climb from sea level to 3,000 feet. About what is the temperature up there?",
+        options: ["About 9 degrees Celsius", "About 13 degrees Celsius", "About 3 degrees Celsius"],
+        correctIndex: 0,
+        explanation:
+          "Temperature falls about 2 degrees Celsius per 1,000 feet. Start at the standard 15 degrees at sea level, lose 6 degrees over 3,000 feet, and you land at about 9. (Pressure drops on its own schedule: about 1 inch of mercury per 1,000 feet, so 29.92 at sea level is about 26.92 at 3,000.)",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "In the Northern Hemisphere, which way does a HIGH pressure system rotate, and what weather does it usually bring?",
+        options: [
+          "Counterclockwise and inward, usually bringing clouds and rough air",
+          "Clockwise and outward, usually bringing clear skies",
+          "Clockwise and inward, usually bringing steady rain",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A high turns clockwise and pushes air OUTWARD, shoving the weather out of the way — usually clear skies. A low turns counterclockwise and pulls air INWARD and up, and that lifting brings clouds, rough air, and worse weather. Do not swap the two.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "Sky coverage is reported in eighths. How much of the sky is covered for a layer to be called BROKEN?",
+        options: [
+          "Three to four eighths",
+          "Five to seven eighths",
+          "All eight eighths",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Broken is five to seven eighths. The full ladder: clear (0), few (1 to 2), scattered (3 to 4), broken (5 to 7), overcast (8 of 8). This is what makes the ceiling definition work — only BROKEN or OVERCAST counts as a ceiling.",
+        sourceLessonNumber: 6,
+      },
+      {
+        prompt: "What unit is flight visibility reported in, and what is the highest value a report will show?",
+        options: [
+          "Nautical miles, up to a maximum of 10",
+          "Statute miles, up to a maximum of 10",
+          "Kilometers, with no maximum",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Visibility is always reported in STATUTE miles — the regular road mile, not the nautical mile — and a report tops out at 10 statute miles. That matters because the Part 107 minimum of 3 miles is also in statute miles. Ceiling looks up; visibility looks sideways.",
+        sourceLessonNumber: 6,
+      },
+      {
+        prompt: "How hard does a microburst push down, and how long does it last?",
+        options: [
+          "Up to 6,000 feet per minute, lasting only about 5 to 15 minutes",
+          "Up to 600 feet per minute, lasting about an hour",
+          "Up to 1,500 feet per minute, lasting several hours",
+        ],
+        correctIndex: 0,
+        explanation:
+          "A microburst punches air straight down at up to 6,000 feet per minute and swings the wind by 30 to 90 knots, and it is over in 5 to 15 minutes. That is far more than enough to slam a small drone into the ground — and you cannot see it. This is why you never fly with thunderstorms anywhere in the area. (The test may offer a smaller downdraft figure to fool you.)",
+        sourceLessonNumber: 7,
+      },
+      {
+        prompt: "Which cloud has the greatest turbulence of any cloud in the sky, and what three ingredients build it?",
+        options: [
+          "The stratus cloud; cool air, dry air, and a temperature inversion",
+          "The cumulonimbus cloud; water vapor, unstable air, and a lifting action such as surface heat",
+          "The cumulus cloud; high pressure, low humidity, and strong surface wind",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A thunderstorm needs three things: water vapor, unstable air that wants to rise, and something to lift it (like surface heating). The unstable air keeps climbing and builds the tall cumulonimbus — the cloud with the strongest turbulence in the sky. Inside it the air rushes up hard and then crashes down hard.",
+        sourceLessonNumber: 7,
+      },
+      {
+        prompt: "You fly through a cloud on a day when the temperature is at freezing. What is the danger?",
+        options: [
+          "Structural icing — ice builds on the props, adding weight, killing lift, and causing heavy vibration",
+          "Nothing. A drone is too small and fast for ice to form on it",
+          "The battery loses charge, but the airframe is unaffected",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Visible moisture (cloud or fog) plus a temperature at or below freezing equals structural icing. Ice changes the shape and weight of the props, so they make less lift and shake hard — that breaks props, kills motors, and drops the drone. Moisture also wrecks the electronics. In cold, wet air, stay out of the visible moisture.",
+        sourceLessonNumber: 8,
+      },
     ],
   },
 
@@ -907,6 +987,99 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         explanation:
           "A PIREP is a pilot report of the conditions actually encountered in flight. It is not a forecast. UA marks a routine report and UUA marks an urgent one.",
         sourceLessonNumber: 5,
+      },
+      {
+        prompt: "You want to talk to a real person about the weather before a flight. What do you call?",
+        options: [
+          "Flight Service at 1-800-WX-BRIEF",
+          "The nearest control tower on its published CT frequency",
+          "FAA DroneZone support",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Flight Service, at 1-800-WX-BRIEF (it spells 'weather brief'), puts a real human on the line who will brief you and answer questions. The three main aviation weather sources are that phone line, the free aviationweather.gov website, and an aviation app (Aloft, Kitty Hawk, Aeroweather) — never your phone's ordinary forecast, which averages the whole city at ground level.",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "How often is a METAR issued, and how often is a TAF?",
+        options: [
+          "METAR about once an hour; TAF four times a day (0000, 0600, 1200, 1800 Zulu)",
+          "Both about once an hour",
+          "METAR four times a day; TAF about once an hour",
+        ],
+        correctIndex: 0,
+        explanation:
+          "A METAR is a snapshot of NOW, refreshed about hourly (early if the weather changes sharply). A TAF looks AHEAD and is reissued four times a day, every six hours, starting at 0000 Zulu. METARs show up at almost every field; TAFs are mostly at larger airports.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "A METAR starts with KPRC. What does the K tell you?",
+        options: [
+          "The report is from the United States",
+          "The airport has a control tower",
+          "The report is a corrected re-issue",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Station identifiers are four letters, and in the United States they always start with K. So KPRC is the K for the U.S., then PRC for Prescott. The identifier says nothing about whether there is a tower.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "A METAR reads -RA. What is happening?",
+        options: ["Light rain", "Heavy rain", "Freezing rain"],
+        correctIndex: 0,
+        explanation:
+          "Intensity is carried by the sign: a minus is LIGHT, no sign is moderate, and a plus is HEAVY. So -RA is light rain and +RA is heavy rain. The two-letter type codes worth knowing: RA rain, SN snow, BR mist, FG fog.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "A METAR reads 19/M15. What are the temperature and dew point?",
+        options: [
+          "19 degrees Celsius, dew point 15 degrees Celsius",
+          "19 degrees Celsius, dew point MINUS 15 degrees Celsius",
+          "19 degrees Fahrenheit, dew point 15 degrees Fahrenheit",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Temperature and dew point are always in CELSIUS, split by a slash, and an M in front means MINUS. So 19/M15 is 19 degrees with a dew point of minus 15 — a huge spread, meaning very dry air. (12/11 would be the dangerous one: a one-degree spread, near saturation, fog likely.)",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "In a TAF, what is the difference between FM, BECMG, and TEMPO?",
+        options: [
+          "FM is a rapid change at the stated time; BECMG is a gradual change over a window; TEMPO is a brief change that then goes away",
+          "FM is a forecast; BECMG is an observation; TEMPO is a pilot report",
+          "FM is a gradual change; BECMG is a brief blip; TEMPO is a rapid switch",
+        ],
+        correctIndex: 0,
+        explanation:
+          "FM ('from') is a light switch flipped at an exact minute — the whole forecast flips to new conditions. BECMG ('becoming') is a dimmer turning up gradually over a window. TEMPO is someone flicking the porch light on and off, then leaving it as it was: a brief change that does not last.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "A winds aloft forecast for 3,000 feet reads 2420+15. Decode it.",
+        options: [
+          "Wind from 240 degrees TRUE at 20 knots, temperature 15 degrees Celsius",
+          "Wind from 240 degrees MAGNETIC at 20 knots, temperature 15 degrees Fahrenheit",
+          "Wind from 024 degrees true at 20 knots, temperature 15 degrees Celsius",
+        ],
+        correctIndex: 0,
+        explanation:
+          "First two digits are the direction (240), next two are the speed in knots (20), and the signed number is the temperature in Celsius. Like a METAR and a TAF, winds aloft are given in TRUE direction — only a control tower on the radio gives you magnetic. (Quirk: if the speed is 100 knots or more, 50 is added to the direction so it still fits.)",
+        sourceLessonNumber: 5,
+      },
+      {
+        prompt:
+          "Your METAR looks fine, but the TAF reads 'FM012100 ... 2SM BKN008' and your job runs past 2100 Zulu. What is the call?",
+        options: [
+          "Go. The current observation is what governs the flight",
+          "Go now, but land before 2100 — the forecast drops visibility to 2 statute miles, below the 3-mile minimum",
+          "No go at all. A TAF that forecasts any change grounds the whole day",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A METAR tells you NOW; a TAF tells you SOON. You need both. From 2100 the forecast visibility falls to 2 statute miles — under the 3-statute-mile minimum — so the flight is legal now and illegal after 2100. Fly the window and land before it closes. (P6SM, by contrast, means visibility greater than 6 statute miles: comfortably legal.)\n\nReference: 14 CFR § 107.51 (minimum flight visibility of 3 statute miles from the control station).",
+        sourceLessonNumber: 6,
       },
     ],
   },
@@ -996,6 +1169,98 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
           "The remote pilot in command is directly responsible for and is the final authority on the operation, and that includes self-assessing fitness with IMSAFE (Illness, Medication, Stress, Alcohol, Fatigue, Emotion). No medical exam is required for Part 107; the call is yours, and if you are impaired you self-ground.\n\nReference: 14 CFR § 107.19 (remote pilot in command).",
         sourceLessonNumber: 6,
       },
+      {
+        prompt: 'A friend dares a pilot to fly right over the crowd. The pilot grins and says "Watch this." Which hazardous attitude, and what is the antidote?',
+        options: [
+          'Macho; "Taking chances is foolish."',
+          'Impulsivity; "Not so fast. Think first."',
+          'Anti-authority; "Follow the rules. They are usually right."',
+        ],
+        correctIndex: 0,
+        explanation:
+          '"I can do it, watch this" is macho: showing off with a risky act to prove skill. The antidote is "Taking chances is foolish." Do not confuse it with invulnerability, which is the quieter belief that the bad thing simply will not happen to YOU.',
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: 'A rushed pilot skips the preflight checklist and tells the crew "we do not have time for that, let\'s just fly." Which hazardous attitude, and what is the antidote?',
+        options: [
+          'Resignation; "I am not helpless. I can make a difference."',
+          'Impulsivity; "Not so fast. Think first."',
+          'Invulnerability; "It could happen to me."',
+        ],
+        correctIndex: 1,
+        explanation:
+          'The danger here is the rush itself — doing something fast instead of doing it right. That is impulsivity ("Do something quickly, anything"), and the antidote is "Not so fast. Think first."',
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: 'Your drone drifts behind a hill and the signal drops. You think, "It is gone. Nothing I can do." What is that, and what should you do?',
+        options: [
+          'Resignation — and the antidote is "I am not helpless. I can make a difference." Walk up the hill and try to regain line of sight',
+          "Invulnerability — accept the loss and file an accident report",
+          "Sound judgment — once the link is lost, the aircraft is unrecoverable by definition",
+        ],
+        correctIndex: 0,
+        explanation:
+          'Resignation says "What is the use, it is out of my hands," and it is a lie. If the signal drops behind a hill, you can MOVE: walk up the hill, regain line of sight, and the link often returns. The antidote is "I am not helpless. I can make a difference." Keep working the problem until it is truly over.',
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "What are the six steps of the DECIDE model, in order?",
+        options: [
+          "Detect, Estimate, Choose, Identify, Do, Evaluate",
+          "Detect, Evaluate, Consider, Identify, Decide, Execute",
+          "Determine, Estimate, Calculate, Implement, Do, End",
+        ],
+        correctIndex: 0,
+        explanation:
+          "DECIDE spells itself: Detect the change, Estimate whether you must react, Choose the outcome you want, Identify the actions that get you there, Do them, Evaluate whether it worked. Like 3P, it ends by looking again — if the hazard is still there, you run the loop from the top.",
+        sourceLessonNumber: 5,
+      },
+      {
+        prompt: "Which of these tools are PREFLIGHT checklists, and which are IN-FLIGHT decision loops?",
+        options: [
+          "PAVE and IMSAFE are preflight checklists; 3P and DECIDE are in-flight decision loops",
+          "3P and DECIDE are preflight checklists; PAVE and IMSAFE are in-flight decision loops",
+          "All four are preflight checklists",
+        ],
+        correctIndex: 0,
+        explanation:
+          "PAVE (Pilot, Aircraft, enVironment, External pressures) and IMSAFE (the fitness self-check) are run BEFORE you fly, during planning. 3P (Perceive, Process, Perform) and DECIDE are the loops you run WHEN SOMETHING CHANGES in the air. Mixing these four up is the single most common miss on this topic.",
+        sourceLessonNumber: 5,
+      },
+      {
+        prompt: 'Your client keeps calling: "Hurry up, we are losing daylight." Which part of PAVE flags that?',
+        options: ["The P, Pilot", "The A, Aircraft", "The E, External pressures"],
+        correctIndex: 2,
+        explanation:
+          "External pressures are the outside forces pushing you to fly when you maybe should not: a pushy client, a tight deadline, a friend daring you. PAVE makes you NAME them out loud before they steer your decision.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "What is crew resource management (CRM)?",
+        options: [
+          "The effective use of all available resources: human, hardware, and information",
+          "The FAA requirement to fly with at least one visual observer",
+          "The maintenance program that keeps a fleet of drones airworthy",
+        ],
+        correctIndex: 0,
+        explanation:
+          "CRM is the effective use of ALL available resources — human, hardware, and information — before and during flight. In plain words: use everyone and everything you have got. That phrasing is exactly how the FAA words the question.",
+        sourceLessonNumber: 6,
+      },
+      {
+        prompt: "What is a visual observer's job, and what is the 'sterile cockpit' rule?",
+        options: [
+          "The VO flies the drone while the pilot watches the sky; the sterile cockpit means the crew stays silent",
+          "The VO's only job is to watch (the drone, other aircraft, people, birds, airspace); the sterile cockpit means that while flying, the crew talks only about the operation",
+          "The VO handles the client and the paperwork; the sterile cockpit means no one may stand near the control station",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A visual observer extends your eyes: their only job is to watch the drone and the surroundings so you can stay on the controller and the shot. The sterile cockpit rule, borrowed from manned aviation, means that when you are flying, the conversation is about the flight — full stop. No dinner plans. Distraction is what lets the deer step onto the road.",
+        sourceLessonNumber: 6,
+      },
     ],
   },
 
@@ -1079,6 +1344,97 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         explanation:
           "Hypoxia is oxygen deficiency. For a drone pilot it shows up at high GROUND elevation, like a mountain job at 8,000 to 10,000 feet, and it sneaks up without warning. It sits alongside dehydration, stress, and fatigue as the physical states that quietly degrade judgment.",
         sourceLessonNumber: 5,
+      },
+      {
+        prompt: "What do the CONES in your eye do, and where do they sit?",
+        options: [
+          "Color, fine detail, and sharp straight-ahead daytime vision; they are packed in the center of the retina",
+          "Low light and peripheral vision; they sit around the edges of the retina",
+          "Depth perception only; they are spread evenly across the retina",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Cones do color, fine detail, and your sharp central daytime vision, and they are packed into the center back of the eye — but they need good light. That is exactly why the center of your view becomes a BLIND SPOT at night: the cones there go nearly blind and there are few rods in the middle to cover for them. (Rods are the low-light, peripheral sensors, about 10,000 times more light-sensitive.)",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "Why do night pilots use a RED light for preflight instead of a white one?",
+        options: [
+          "Red light is brighter, so it reveals more damage on the airframe",
+          "Red light does not bleach the rods, so it does not reset your dark adaptation",
+          "Red light is required by regulation for any operation after sunset",
+        ],
+        correctIndex: 1,
+        explanation:
+          "There is a chemical in your rods that bright white light bleaches out — one look at a phone at full brightness, a headlight, or a strobe and your dark adaptation is back near zero, costing you another ~30 minutes. Red light does not bleach the rods nearly as much. Dim your screens all the way down too.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt:
+          "At night, a row of distant town lights along a slope makes you misjudge which way is level. What illusion is that?",
+        options: ["A false horizon", "Autokinesis", "Flicker vertigo"],
+        correctIndex: 0,
+        explanation:
+          "A false horizon: a line of distant lights, boats on dark water, or sloping terrain fakes the line where ground meets sky, and everything you judge off it is tilted too. Autokinesis is the single still light that appears to drift; flicker vertigo is dizziness from staring at a flashing light.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt:
+          "An aircraft's lights make it look like it is flying AWAY from you when it is actually coming toward you. What is that called?",
+        options: ["Reversible perspective", "A false horizon", "Autokinesis"],
+        correctIndex: 0,
+        explanation:
+          "Reversible perspective: the lights fool you about which way the aircraft is going, so a closing aircraft reads as a departing one. It is one of the four night illusions Part 107 names, alongside autokinesis, the false horizon, and flicker vertigo (fixed by looking away, then back).",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "You take an over-the-counter allergy pill the morning of a job. Can you fly?",
+        options: [
+          "Yes. The rules only cover illegal drugs and alcohol",
+          "Not if it affects your ability to fly safely — read the label; 'do not operate heavy machinery' means do not operate your drone",
+          "Yes, as long as you wait 8 hours after taking it",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The rule is not just about illegal drugs. Over-the-counter and prescription medication can ground you just as hard: antihistamines and decongestants cause drowsiness and slow your thinking. The plain test is the label — if it says do not operate heavy machinery, do not fly. When in doubt, check the FAA's approved-medication list or ask an aviation medical examiner.\n\nReference: 14 CFR § 91.17 (alcohol and drugs), which Part 107 applies to remote pilots.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt:
+          "Halfway through a long, hot field mission you get a headache, your legs cramp, and you feel dizzy. What is most likely happening?",
+        options: [
+          "Dehydration — stop and drink water before you fly again",
+          "Hypoxia — descend to a lower elevation",
+          "Flicker vertigo — look away from your screen",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Headaches, cramps, and dizziness are dehydration. Heat, dry wind, and low humidity pull water out of you — and so do coffee, tea, soda, and alcohol, because they make you urinate more. Drink water, and do not wait until you feel thirsty. A dizzy, unfocused pilot cannot safely control an aircraft.",
+        sourceLessonNumber: 5,
+      },
+      {
+        prompt: "What is the anti-collision light actually FOR, and does a downward landing light satisfy the rule?",
+        options: [
+          "It is so YOU can see your drone in the dark; a landing light counts as long as it is bright",
+          "It is so MANNED aircraft can see your drone and stay away; a landing light does NOT count — it must be the strobe visible for 3 statute miles",
+          "It is a Remote ID broadcast device; a landing light is unrelated",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The anti-collision light is not for you — it is so manned aircraft can spot your drone and steer clear, like a blinking light on a bicycle at night. A landing light pointing at the ground does not satisfy it. It must be visible for at least 3 statute miles and flash fast enough to help others avoid a collision.\n\nReference: 14 CFR § 107.29 (operation at night).",
+        sourceLessonNumber: 6,
+      },
+      {
+        prompt: "You were certified in 2019, before the night rule changed. How do you satisfy the night-training requirement now?",
+        options: [
+          "Retake the initial knowledge test at a testing center",
+          "Complete the FAA's free online recurrent training",
+          "Apply for a night waiver through FAA DroneZone",
+        ],
+        correctIndex: 1,
+        explanation:
+          "There are two paths and you only need one. If you took your INITIAL knowledge test after the rule took effect (April 6, 2021), it already contained night questions and you are covered. If you were certified before that, you complete the FAA's free online recurrent training. Either path counts — and no waiver is required for night flight anymore.",
+        sourceLessonNumber: 6,
       },
     ],
   },
@@ -1164,6 +1520,99 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         explanation:
           "The preflight check is: assess the operating environment, inspect the aircraft for safe operation, confirm the control link works, and confirm there is enough battery or fuel for the entire flight. A written checklist is a best practice for doing it the same way every time.\n\nReference: 14 CFR § 107.49 (preflight familiarization, inspection, and actions for aircraft operation).",
         sourceLessonNumber: 5,
+      },
+      {
+        prompt: "What is the difference between scheduled and unscheduled maintenance?",
+        options: [
+          "Scheduled is planned on a set interval; unscheduled happens after a problem, like a hard landing or a failed part",
+          "Scheduled is done by the manufacturer; unscheduled is done by the pilot",
+          "Scheduled is required by the FAA; unscheduled is optional",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Scheduled maintenance is the oil change: planned, on a set interval, done before anything goes wrong. Unscheduled maintenance is the pothole: a hard landing, a crash, a broken part, a swollen battery — you did not plan it, the aircraft made you do it.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt:
+          "You land hard after a gust pushes you into the grass. The drone still powers on and looks fine, and the manufacturer's schedule says nothing is due. Can you launch again right away?",
+        options: [
+          "Yes. Nothing is due and the aircraft powers on normally",
+          "No. A hard landing calls for unscheduled maintenance — inspect the props, motors, arms, and battery first",
+          "Yes, but only for one more short flight to confirm it handles normally",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A hard landing is exactly when hidden damage shows up. Inspect before the next flight, because a small unmanned aircraft that is not in a condition for safe operation must not be flown — and the manufacturer's calendar has no idea you just hit the ground.\n\nReference: 14 CFR § 107.15 (condition for safe operation).",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "What belongs in a maintenance record?",
+        options: [
+          "Only the repairs made after a crash",
+          "Overhauls, repairs, inspections, modifications, part replacements, and software updates",
+          "Only the parts still under manufacturer warranty",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Log every overhaul, repair, inspection, modification, part replacement, and software update — and note each part's age and the time since its last repair. Those dates and hour counts are what reveal a trend (props cracking around 50 hours) so you can replace a part BEFORE it snaps mid-flight. A simple logbook or spreadsheet is enough.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "A damaged or overheated lithium battery can start a chain reaction fire. What is that called?",
+        options: ["Thermal runaway", "Voltage sag", "Cell balancing"],
+        correctIndex: 0,
+        explanation:
+          "Thermal runaway: one cell overheats and ignites, and that heat sets off the next cell, and the next. It is the reason a swollen battery never flies and never charges — and why heat is the one thing you keep batteries away from. (Voltage sag is a different problem: what a COLD battery does under load.)",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "How should you store your drone's lithium batteries?",
+        options: [
+          "Fully charged, so they are always ready for a job",
+          "Cool, at a partial charge, away from extreme heat",
+          "Fully discharged, in a sealed airtight case",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Cool, partly charged, out of the blazing window — like a houseplant that is neither parched nor drowning. A battery left at full charge for weeks, or left baking in a hot car, ages fast and is more likely to swell. Heat is the trigger for thermal runaway.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "It is a cold morning. How does that change your battery planning?",
+        options: [
+          "Cold improves battery performance, so you can plan longer flights",
+          "Cold cuts power and the voltage can sag fast in flight, so plan shorter flights and keep spares warm",
+          "Cold has no effect; only heat matters for lithium batteries",
+        ],
+        correctIndex: 1,
+        explanation:
+          "In the cold a battery delivers less power and can sag fast in flight, so plan shorter flights and keep spares warm in a pocket. Watch the thermometer on BOTH ends: in the heat, a battery that is already warm from flying needs time to cool before you charge it.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "What does a crew and site briefing cover before anyone touches a control?",
+        options: [
+          "Each person's job, the plan, and what to do in an emergency — plus an assessment of the launch and landing area",
+          "The client's shot list and the invoice terms",
+          "Only the weather forecast and the airspace class",
+        ],
+        correctIndex: 0,
+        explanation:
+          "If other people are part of the operation, you tell them their jobs, the plan, and the emergency procedures. Then you assess the launch and landing area for obstacles, people who should not be there, and anything that could block your signal — metal structures, power lines.",
+        sourceLessonNumber: 5,
+      },
+      {
+        prompt: "Why do a low hover check before climbing to altitude?",
+        options: [
+          "To warm the battery up to its operating temperature",
+          "To confirm the drone is stable, the sticks respond, and the link is clean — while you are still two feet up, not two hundred",
+          "It is a regulatory requirement under 14 CFR 107.49",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Lift a foot or two, confirm the aircraft is stable, the sticks respond, and the control link is solid — THEN climb. A pilot who took off inside a parking garage found the rebar had killed his link at two feet instead of two hundred. A shifted camera mount shows up the same way. It is a best practice, not a listed regulation, and it costs you seconds.",
+        sourceLessonNumber: 1,
       },
     ],
   },
