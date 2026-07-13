@@ -116,8 +116,8 @@ export function MarkdownEditor({
         <input ref={fileRef} type="file" accept="image/*" onChange={onImageFile} className="hidden" aria-hidden />
         <button type="button" onClick={() => surround("`")} className={btn} title="Inline code" aria-label="Inline code">{"</>"}</button>
         <div className="ml-auto flex rounded bg-neutral-100 p-0.5 text-xs dark:bg-neutral-800">
-          <button type="button" onClick={() => setTab("write")} className={`rounded px-2 py-0.5 ${tab === "write" ? "bg-white shadow-sm dark:bg-neutral-700" : ""}`}>Write</button>
-          <button type="button" onClick={() => setTab("preview")} className={`rounded px-2 py-0.5 ${tab === "preview" ? "bg-white shadow-sm dark:bg-neutral-700" : ""}`}>Preview</button>
+          <button type="button" onClick={() => setTab("write")} className={`min-h-8 rounded px-3 focus-visible:outline-2 ${tab === "write" ? "bg-white shadow-sm dark:bg-neutral-700" : ""}`}>Write</button>
+          <button type="button" onClick={() => setTab("preview")} className={`min-h-8 rounded px-3 focus-visible:outline-2 ${tab === "preview" ? "bg-white shadow-sm dark:bg-neutral-700" : ""}`}>Preview</button>
         </div>
       </div>
       {tab === "write" ? (

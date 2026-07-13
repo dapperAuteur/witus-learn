@@ -16,7 +16,7 @@ function Copyable({ value, className = "" }: { value: string; className?: string
       }}
       aria-label={copied ? `Copied ${value}` : `Copy ${value}`}
       title="Click to copy"
-      className={`group inline-flex items-center gap-1 rounded px-1 hover:bg-neutral-200 dark:hover:bg-neutral-800 ${className}`}
+      className={`group inline-flex min-h-11 items-center gap-1 rounded px-2 hover:bg-neutral-200 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:bg-neutral-800 ${className}`}
     >
       <span className="break-all">{value}</span>
       <span aria-hidden className="text-[10px] text-neutral-400 group-hover:text-neutral-600 dark:group-hover:text-neutral-300">
@@ -182,7 +182,7 @@ export function DomainsAdmin({
                         {d.isPrimary ? (
                           <span className="rounded-full bg-green-100 px-2 py-0.5 text-xs text-green-800 dark:bg-green-900 dark:text-green-200">primary</span>
                         ) : (
-                          <button type="button" disabled={busy} onClick={() => act(d.id, "PATCH")} className="rounded border border-neutral-300 px-2 py-0.5 text-xs dark:border-neutral-700">
+                          <button type="button" disabled={busy} onClick={() => act(d.id, "PATCH")} className="min-h-11 rounded border border-neutral-300 px-3 text-xs focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">
                             Make primary
                           </button>
                         )}
@@ -192,11 +192,11 @@ export function DomainsAdmin({
                           </span>
                         ) : (
                           <>
-                            <button type="button" disabled={hi?.loading} onClick={() => checkDns(d.host)} className="rounded border border-neutral-300 px-2 py-0.5 text-xs dark:border-neutral-700">
+                            <button type="button" disabled={hi?.loading} onClick={() => checkDns(d.host)} className="min-h-11 rounded border border-neutral-300 px-3 text-xs focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">
                               {hi?.loading ? "Checking…" : "Check DNS"}
                             </button>
                             {hasVercelDomains ? (
-                              <button type="button" disabled={hi?.verifying} onClick={() => checkVerification(d.host)} className="rounded border border-neutral-300 px-2 py-0.5 text-xs dark:border-neutral-700">
+                              <button type="button" disabled={hi?.verifying} onClick={() => checkVerification(d.host)} className="min-h-11 rounded border border-neutral-300 px-3 text-xs focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">
                                 {hi?.verifying ? "Checking…" : "Check verification"}
                               </button>
                             ) : null}
@@ -207,7 +207,7 @@ export function DomainsAdmin({
                             ) : null}
                           </>
                         )}
-                        <button type="button" disabled={busy} onClick={() => act(d.id, "DELETE")} className="ml-auto rounded px-2 py-0.5 text-xs text-red-600">
+                        <button type="button" disabled={busy} onClick={() => act(d.id, "DELETE")} className="ml-auto min-h-11 rounded px-3 text-xs text-red-600 focus-visible:outline-2 focus-visible:outline-offset-2">
                           Remove
                         </button>
                       </div>

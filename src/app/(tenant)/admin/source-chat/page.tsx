@@ -19,8 +19,8 @@ export default async function SourceChatAdminPage() {
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         A retrieval-grounded, multi-agent chat over a course&apos;s indexed sources. Pick a course, choose
         who can use it and which agents run, then test it below. Build a course&apos;s index first with{" "}
-        <span className="font-mono">pnpm rag:index --course &lt;slug&gt;</span> (see{" "}
-        <span className="font-mono">/admin/commands</span>).
+        <span className="break-all font-mono">pnpm rag:index --course &lt;slug&gt;</span> (see{" "}
+        <span className="break-all font-mono">/admin/commands</span>).
       </p>
       <div className="mt-6">
         <SourceChatAdmin courses={courses} />

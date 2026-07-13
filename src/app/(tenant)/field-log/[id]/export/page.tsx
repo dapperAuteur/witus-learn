@@ -50,22 +50,24 @@ export default async function FieldLogExportPage({ params }: Params) {
 
       <section className="mt-6">
         <h2 className="font-semibold">Consent ledger</h2>
-        <table className="mt-2 w-full text-left text-sm">
-          <thead className="text-xs text-neutral-500">
-            <tr><th className="py-1 pr-3">Subject</th><th className="py-1 pr-3">Consent</th><th className="py-1 pr-3">Minor</th><th className="py-1 pr-3">When</th></tr>
-          </thead>
-          <tbody>
-            {captures.map((c) => (
-              <tr key={c.id} className="border-t border-neutral-100 dark:border-neutral-800">
-                <td className="py-1 pr-3">{c.subject ?? "—"}</td>
-                <td className="py-1 pr-3">{c.consentStatus}</td>
-                <td className="py-1 pr-3">{c.involvesMinor ? "yes" : ""}</td>
-                <td className="py-1 pr-3 text-xs text-neutral-500">{new Date(c.createdAt).toLocaleDateString()}</td>
-              </tr>
-            ))}
-            {captures.length === 0 ? <tr><td colSpan={4} className="py-2 text-neutral-500">No captures.</td></tr> : null}
-          </tbody>
-        </table>
+        <div className="mt-2 overflow-x-auto">
+          <table className="w-full text-left text-sm">
+            <thead className="text-xs text-neutral-500">
+              <tr><th className="py-1 pr-3">Subject</th><th className="py-1 pr-3">Consent</th><th className="py-1 pr-3">Minor</th><th className="py-1 pr-3">When</th></tr>
+            </thead>
+            <tbody>
+              {captures.map((c) => (
+                <tr key={c.id} className="border-t border-neutral-100 dark:border-neutral-800">
+                  <td className="py-1 pr-3">{c.subject ?? "—"}</td>
+                  <td className="py-1 pr-3">{c.consentStatus}</td>
+                  <td className="py-1 pr-3">{c.involvesMinor ? "yes" : ""}</td>
+                  <td className="py-1 pr-3 text-xs text-neutral-500 whitespace-nowrap">{new Date(c.createdAt).toLocaleDateString()}</td>
+                </tr>
+              ))}
+              {captures.length === 0 ? <tr><td colSpan={4} className="py-2 text-neutral-500">No captures.</td></tr> : null}
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section className="mt-6">

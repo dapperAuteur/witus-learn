@@ -120,7 +120,7 @@ export function CommodityMap({ commodities }: { commodities: MapPin[] }) {
               type="button"
               onClick={() => setSelected(null)}
               aria-label="Close"
-              className="text-neutral-400 hover:text-neutral-600"
+              className="-m-2 flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded text-neutral-400 hover:text-neutral-600 focus-visible:outline-2 focus-visible:outline-offset-2"
             >
               ✕
             </button>

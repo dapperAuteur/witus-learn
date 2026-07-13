@@ -74,7 +74,7 @@ export function ChapterEditor({
                 type="button"
                 onClick={() => remove(i)}
                 aria-label={`Remove chapter ${i + 1}`}
-                className="px-1 text-neutral-400 hover:text-red-600"
+                className="min-h-8 min-w-8 rounded px-2 text-neutral-400 hover:text-red-600 focus-visible:outline-2 focus-visible:outline-offset-2"
               >
                 ✕
               </button>

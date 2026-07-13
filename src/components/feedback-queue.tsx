@@ -63,16 +63,16 @@ export function FeedbackQueue({ items }: { items: FeedbackItem[] }) {
 
           <div className="mt-3 flex gap-2 text-sm">
             {f.status !== "reviewed" ? (
-              <button type="button" disabled={busy === f.id} onClick={() => setStatus(f.id, "reviewed")} className="rounded border border-neutral-300 px-2 py-0.5 dark:border-neutral-700">
+              <button type="button" disabled={busy === f.id} onClick={() => setStatus(f.id, "reviewed")} className="min-h-11 rounded border border-neutral-300 px-3 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">
                 Mark reviewed
               </button>
             ) : null}
             {f.status !== "resolved" ? (
-              <button type="button" disabled={busy === f.id} onClick={() => setStatus(f.id, "resolved")} className="rounded border border-neutral-300 px-2 py-0.5 dark:border-neutral-700">
+              <button type="button" disabled={busy === f.id} onClick={() => setStatus(f.id, "resolved")} className="min-h-11 rounded border border-neutral-300 px-3 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">
                 Resolve
               </button>
             ) : (
-              <button type="button" disabled={busy === f.id} onClick={() => setStatus(f.id, "open")} className="rounded border border-neutral-300 px-2 py-0.5 dark:border-neutral-700">
+              <button type="button" disabled={busy === f.id} onClick={() => setStatus(f.id, "open")} className="min-h-11 rounded border border-neutral-300 px-3 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">
                 Reopen
               </button>
             )}

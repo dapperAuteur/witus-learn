@@ -21,7 +21,7 @@ export default async function CommandsPage() {
       <h1 className="text-2xl font-bold">Commands</h1>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Operator CLI reference. Run these in a <strong>terminal</strong> from the repo root (they can&apos;t
-        run in the browser). Also in <span className="font-mono">docs/OPERATOR_COMMANDS.md</span>.
+        run in the browser). Also in <span className="break-all font-mono">docs/OPERATOR_COMMANDS.md</span>.
       </p>
       <div className="mt-3 flex flex-wrap gap-2 text-xs">
         {(Object.keys(COMMAND_IMPACT_LABEL) as CommandImpact[]).map((k) => (

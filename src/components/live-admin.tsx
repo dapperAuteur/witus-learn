@@ -187,15 +187,15 @@ function ManageRow({
         <span className="text-xs text-neutral-500">{s.visibility}</span>
         {s.courseTitle ? <span className="text-xs text-neutral-500">· 📚 {s.courseTitle}</span> : null}
         <div className="ml-auto flex gap-2">
-          <button type="button" disabled={busy} onClick={() => onPatch(s.id, { isLive: !s.isLive })} className="rounded border border-neutral-300 px-2 py-0.5 dark:border-neutral-700">
+          <button type="button" disabled={busy} onClick={() => onPatch(s.id, { isLive: !s.isLive })} className="min-h-11 rounded border border-neutral-300 px-3 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">
             {s.isLive ? "End" : "Go live"}
           </button>
-          <button type="button" disabled={busy} onClick={() => onDelete(s.id)} className="rounded px-2 py-0.5 text-red-600">Delete</button>
+          <button type="button" disabled={busy} onClick={() => onDelete(s.id)} className="min-h-11 rounded px-3 text-red-600 focus-visible:outline-2 focus-visible:outline-offset-2">Delete</button>
         </div>
       </div>
-      <div className="mt-2 flex gap-2">
-        <input value={rec} onChange={(e) => setRec(e.target.value)} placeholder="Recording embed URL" className="min-h-9 flex-1 rounded-md border border-neutral-300 px-2 dark:border-neutral-700 dark:bg-neutral-900" />
-        <button type="button" disabled={busy} onClick={() => onPatch(s.id, { recordingUrl: rec || null })} className="rounded-md border border-neutral-300 px-2 dark:border-neutral-700">Save recording</button>
+      <div className="mt-2 flex flex-wrap gap-2">
+        <input value={rec} onChange={(e) => setRec(e.target.value)} placeholder="Recording embed URL" className="min-h-11 min-w-0 flex-1 rounded-md border border-neutral-300 px-2 dark:border-neutral-700 dark:bg-neutral-900" />
+        <button type="button" disabled={busy} onClick={() => onPatch(s.id, { recordingUrl: rec || null })} className="min-h-11 rounded-md border border-neutral-300 px-3 focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700">Save recording</button>
       </div>
     </li>
   );

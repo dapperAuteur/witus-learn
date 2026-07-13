@@ -141,7 +141,7 @@ export function ApiKeysAdmin({ keys }: { keys: ApiKeyRow[] }) {
                   type="button"
                   disabled={busy}
                   onClick={() => revoke(k.id)}
-                  className="ml-auto rounded px-2 py-0.5 text-xs text-red-600"
+                  className="ml-auto min-h-11 rounded px-3 text-xs text-red-600 focus-visible:outline-2 focus-visible:outline-offset-2"
                 >
                   Revoke
                 </button>
