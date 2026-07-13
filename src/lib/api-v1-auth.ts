@@ -5,6 +5,13 @@ import { tenants } from "@/db/schema";
 import type { TenantRecord } from "@/lib/tenant";
 import { extractBearerKey } from "@/lib/api-keys";
 import { findActiveApiKeyByRaw, touchApiKeyLastUsed } from "@/db/queries/api-keys";
+import { checkRateLimit } from "@/lib/rate-limit";
+
+// Per-key budget for the public API. The limiter itself now lives in src/lib/rate-limit.ts so the
+// public unauthenticated forms share ONE implementation with this route (see its caveats — it is
+// in-memory and per-instance, not a durable shared store).
+const WINDOW_MS = 60_000;
+const MAX_REQUESTS_PER_WINDOW = 120;
 
 /**
  * Auth gate for the read-only, versioned, tenant-scoped public API (src/app/api/v1).
@@ -24,7 +31,10 @@ export async function authenticateApiV1Request(request: Request): Promise<ApiV1A
     return { ok: false, status: 401, error: "Missing API key. Send Authorization: Bearer <key>." };
   }
 
-  const rateLimited = checkRateLimit(raw);
+  const rateLimited = checkRateLimit(`apiv1:${raw}`, {
+    windowMs: WINDOW_MS,
+    max: MAX_REQUESTS_PER_WINDOW,
+  });
   if (!rateLimited.allowed) {
     return { ok: false, status: 403, error: "Rate limit exceeded. Try again shortly." };
   }
@@ -46,28 +56,3 @@ export async function authenticateApiV1Request(request: Request): Promise<ApiV1A
   return { ok: true, tenant };
 }
 
-// ── Best-effort per-process rate limiting ───────────────────────────────────────────
-// MVP only: an in-memory sliding window keyed by the raw key. This is NOT durable across
-// serverless instances/cold starts and resets on redeploy — it protects against a single
-// runaway client on a single instance, nothing more. Before this API takes real third-
-// party traffic at scale, replace with a shared store (Vercel Firewall rate limiting,
-// Upstash Redis, etc.) — see plans/wanderlearn-embed-design.md "Rate limiting".
-const WINDOW_MS = 60_000;
-const MAX_REQUESTS_PER_WINDOW = 120;
-const hits = new Map<string, number[]>();
-
-function checkRateLimit(rawKey: string): { allowed: boolean } {
-  const now = Date.now();
-  const windowStart = now - WINDOW_MS;
-  const existing = (hits.get(rawKey) ?? []).filter((t) => t > windowStart);
-  if (existing.length >= MAX_REQUESTS_PER_WINDOW) {
-    hits.set(rawKey, existing);
-    return { allowed: false };
-  }
-  existing.push(now);
-  hits.set(rawKey, existing);
-  // Bound memory: forget keys once in a while so an attacker cycling random invalid
-  // keys can't grow this map unboundedly. Cheap, approximate, fine for MVP.
-  if (hits.size > 5000) hits.clear();
-  return { allowed: true };
-}

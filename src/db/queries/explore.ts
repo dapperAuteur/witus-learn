@@ -178,16 +178,83 @@ export async function getMostCitedCourse(
   return rows[0] ?? null;
 }
 
+/**
+ * Per-course facts for the episodes on the map, so clicking a pin can reveal what that episode
+ * actually contains (lessons to work through, sources behind it) INSTEAD of ejecting the visitor
+ * into the course. Keyed by course id.
+ *
+ * Tenant-scoped the same way every other aggregate here is: the courses join carries the tenant
+ * filter, so a pin pointing at another brand's course yields no facts rather than that brand's
+ * numbers. Unpublished/private courses are excluded, so a visitor never learns a draft exists.
+ */
+export interface EpisodeFacts {
+  lessons: number;
+  sources: number;
+}
+
+export async function getEpisodeFacts(
+  tenantId: string,
+  courseIds: string[],
+): Promise<Map<string, EpisodeFacts>> {
+  const ids = [...new Set(courseIds)];
+  const out = new Map<string, EpisodeFacts>();
+  if (ids.length === 0) return out;
+
+  const conds = [...publicCourseConds(tenantId), inArray(courses.id, ids)];
+
+  const [lessonRows, sourceRows] = await Promise.all([
+    db
+      .select({ courseId: courses.id, n: countDistinct(lessons.id) })
+      .from(courses)
+      .leftJoin(
+        lessons,
+        and(
+          eq(lessons.courseId, courses.id),
+          eq(lessons.tenantId, tenantId),
+          eq(lessons.isPublished, true),
+        ),
+      )
+      .where(and(...conds))
+      .groupBy(courses.id),
+
+    db
+      .select({ courseId: courses.id, n: countDistinct(courseSources.id) })
+      .from(courses)
+      .leftJoin(courseSources, eq(courseSources.courseId, courses.id))
+      .where(and(...conds))
+      .groupBy(courses.id),
+  ]);
+
+  for (const r of lessonRows) out.set(r.courseId, { lessons: r.n ?? 0, sources: 0 });
+  for (const r of sourceRows) {
+    const existing = out.get(r.courseId) ?? { lessons: 0, sources: 0 };
+    out.set(r.courseId, { ...existing, sources: r.n ?? 0 });
+  }
+  return out;
+}
+
 // ── Tenant-configurable hero copy (no migration: the generic platform_settings k/v) ──
 
 const HEADLINE_KEY = "explore_headline";
 const SUBHEAD_KEY = "explore_subhead";
 const INTRO_KEY = "explore_intro";
+const AUDIENCE_KEY = "explore_audience";
 
 export interface ExploreCopy {
   headline: string;
   subhead: string;
   intro: string | null;
+  /**
+   * Who the curriculum is designed for. The single most-asked question from a homeschooling
+   * parent, and the page used to answer it with silence.
+   *
+   * The default is BAM's answer for this platform ("high school students") and it is what every
+   * brand gets until it says otherwise; a school whose curriculum targets a different age
+   * overrides it with one `explore_audience` row in platform_settings for its OWN tenant_id (no
+   * migration). It is deliberately a plain audience statement, not an age range in years — we
+   * have not defined one, so we do not print one.
+   */
+  audience: string | null;
 }
 
 /**
@@ -207,7 +274,7 @@ export async function getExploreCopy(tenant: TenantRecord): Promise<ExploreCopy>
     .where(
       and(
         eq(platformSettings.tenantId, tenant.id),
-        inArray(platformSettings.key, [HEADLINE_KEY, SUBHEAD_KEY, INTRO_KEY]),
+        inArray(platformSettings.key, [HEADLINE_KEY, SUBHEAD_KEY, INTRO_KEY, AUDIENCE_KEY]),
       ),
     );
 
@@ -219,5 +286,6 @@ export async function getExploreCopy(tenant: TenantRecord): Promise<ExploreCopy>
       set.get(SUBHEAD_KEY) ??
       `A curriculum you enter through a map. Every course in ${brandName(tenant)} begins with a real thing from a real place — pick a pin, and the history, geography, science, and economics behind it unfold from there.`,
     intro: set.get(INTRO_KEY) ?? tenant.tagline,
+    audience: set.get(AUDIENCE_KEY) ?? "Designed for high school students",
   };
 }
