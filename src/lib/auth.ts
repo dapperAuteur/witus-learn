@@ -54,6 +54,10 @@ export const auth = betterAuth({
           text: `Sign in to ${brand}:\n${link}\n\nThis link expires in 10 minutes. If you didn't request it, ignore this email.`,
           from: tenant?.email.from,
           replyTo: tenant?.email.replyTo,
+          // Mirrored to the WitUS Inbox as metadata only — `link` is a bearer credential (it signs
+          // the recipient in), so src/lib/email-redact.ts strips it from the mirrored body.
+          kind: "magic-link",
+          tenant: tenant?.slug,
         });
       },
     }),

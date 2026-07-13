@@ -130,20 +130,31 @@ export function NavMenu({
           onKeyDown={onPanelKeyDown}
           className="absolute right-0 z-30 mt-2 w-56 rounded-lg border border-neutral-200 bg-white p-1 text-sm shadow-lg dark:border-neutral-700 dark:bg-neutral-900"
         >
-          {items.map((i) => (
-            <li key={i.href} role="none">
-              <Link
-                href={i.href}
-                role="menuitem"
-                data-menu-item
-                onClick={() => setOpen(false)}
-                className="block min-h-11 rounded-md px-3 py-2 leading-7 hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:bg-neutral-800"
-                style={i.accent ? { color: "var(--accent)", fontWeight: 500 } : undefined}
-              >
-                {i.label}
-              </Link>
-            </li>
-          ))}
+          {items.map((i) => {
+            // `hardNav` items (today: /downloads) MUST be a real <a> — a client-side <Link>
+            // navigation is an RSC fetch, which dies with no network. See NavItem.hardNav.
+            const props = {
+              role: "menuitem" as const,
+              "data-menu-item": true,
+              onClick: () => setOpen(false),
+              className:
+                "block min-h-11 rounded-md px-3 py-2 leading-7 hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:bg-neutral-800",
+              style: i.accent ? { color: "var(--accent)", fontWeight: 500 } : undefined,
+            };
+            return (
+              <li key={i.href} role="none">
+                {i.hardNav ? (
+                  <a href={i.href} {...props}>
+                    {i.label}
+                  </a>
+                ) : (
+                  <Link href={i.href} {...props}>
+                    {i.label}
+                  </Link>
+                )}
+              </li>
+            );
+          })}
           {trailing ? (
             <li
               role="none"

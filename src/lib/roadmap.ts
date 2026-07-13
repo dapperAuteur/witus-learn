@@ -156,8 +156,10 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   never offered. The one-click "save whole course" path is preserved next to the syllabus heading.
 - ✅ **Downloads manager (\`/downloads\`)** — everything saved on this device, grouped **course →
   section → lesson**, with **remove at every level** (lesson, section, course, "Remove all") and
-  storage used (\`navigator.storage.estimate()\`). Reachable from \`/dashboard\`, \`/offline\` and the
-  per-lesson saved state. Deliberately outside the \`(tenant)\` group so it makes **no DB/session
+  storage used (\`navigator.storage.estimate()\`). Reachable from the **header nav** (Account ▾ →
+  Downloads, desktop *and* the mobile drawer), \`/dashboard\`, the **course page** (next to the
+  save-for-offline controls, once that course has something saved), \`/offline\`, and the per-lesson
+  saved state. Deliberately outside the \`(tenant)\` group so it makes **no DB/session
   call** and works with no network. Backed by an **offline manifest** (localStorage) mapping a
   cached path → course/section/lesson titles, since the Cache API only stores URLs; it's a hint
   layer, and \`reconcileOffline()\` treats the cache as truth (stale entries pruned, orphaned pages
@@ -172,6 +174,34 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   reported after it's **read back out of the cache**; and every "saved" affordance is gated on
   \`navigator.serviceWorker.controller\` (an **Offline diagnostics** panel on \`/downloads\` shows it).
   Verified end-to-end in real Chrome against a **killed server**, not just typechecked.
+- ✅ **You can now FIND your downloads** (\`feat/downloads-link-inbox-mirror\`) — \`/downloads\` shipped
+  working and then sat there **unlinked from the nav**, which is the same as not shipping it. It's now
+  in **Account ▾ → Downloads** — one \`accountItems\` array feeds both the desktop dropdown and the
+  mobile drawer, so it lights up on both — plus a **"Manage downloads"** exit on the course page next
+  to the save-for-offline controls (only once that course has something saved, so it isn't permanent
+  chrome). The nav item is a **real \`<a>\`, not a \`<Link>\`** (\`NavItem.hardNav\`): \`/downloads\` sits
+  outside the \`(tenant)\` group precisely so the service worker can serve it with **zero network**, and
+  a \`<Link>\` issues an **RSC fetch that dies offline** — on the one screen that exists for offline.
+  \`tests/offline-nav.test.ts\` runs the **real \`public/sw.js\`** against a dead network and proves both
+  halves: the hard navigation is served from the precache, and the RSC fetch a \`<Link>\` would have
+  issued has nothing to serve. The **page itself stays ungated** — only the link is signed-in.
+- ✅ **Every email is mirrored to the WitUS Inbox — with the credentials stripped**
+  (\`feat/downloads-link-inbox-mirror\`) — only the pricing form mirrored before; magic-link sign-in,
+  certificates, cohort invites and guardian invites left no record. The mirror now happens at the
+  **chokepoint** (\`sendEmail\` in \`src/lib/mailer.ts\`), so an email added tomorrow is covered without
+  anyone remembering to wire it up. **The security half is the point:** several of these emails *are*
+  bearer credentials — the magic-link URL **signs you in**, \`/join/<token>\` grants **class
+  membership**, \`/family/accept/<token>\` opens a **child's** records — so mirroring them verbatim
+  would copy working credentials into a triage inbox. \`src/lib/email-redact.ts\` therefore strips every
+  token-bearing URL from the mirrored body (**biased to redact when unsure**: unknown query-param
+  secrets, token-redemption paths, token-shaped path segments, and anything unparseable), scrubs
+  labelled raw secrets (PIN/password), and **never mirrors the HTML part** at all. \`/verify/<token>\`
+  is deliberately **kept** — a certificate check is *meant* to be shareable. What crosses the boundary
+  is **metadata** (recipient, subject, which email, tenant, timestamp, delivered/failure) plus the
+  redacted body and the **routes** the stripped links pointed at — enough to answer "did the sign-in
+  link go out?" without being able to use it. \`form_type\` is per kind
+  (\`learn-witus-email:cohort-invite\`) so triage can sort. The mirror runs **after** the delivery
+  attempt, no-ops when the Inbox is unconfigured, and is wrapped so it **can never fail a send**.
 - ✅ **Resume where you left off** (\`feat/resume-where-you-left-off\`) — progress already recorded
   **skipping around** faithfully (\`lesson_progress\` is keyed on \`(user, lesson)\`, not a linear
   pointer), but a row was only written on **"Mark complete"** — opening a lesson and reading half of
