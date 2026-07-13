@@ -58,7 +58,7 @@ export function CommodityMap({ commodities }: { commodities: MapPin[] }) {
             type="button"
             onClick={() => setSeason(s.v)}
             aria-pressed={season === s.v}
-            className={`rounded-full border px-3 py-1 focus-visible:outline-2 focus-visible:outline-offset-2 ${
+            className={`rounded-full border px-3 py-1 focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11 pointer-coarse:px-4 ${
               season === s.v
                 ? "border-current font-medium"
                 : "border-neutral-300 dark:border-neutral-700"
