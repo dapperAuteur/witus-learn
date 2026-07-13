@@ -25,9 +25,14 @@ import { PricingContactForm } from "@/components/pricing-contact-form";
 // THE RULE THIS PAGE LIVES BY: every number and every noun below is either (a) counted
 // out of THIS tenant's own rows, (b) a real, checked citation in the Sources block, or
 // (c) a description of behaviour that demonstrably exists in this repo. There are no
-// invented statistics, no efficacy claims, no testimonials, and no standards-alignment
-// claims — this page sells children's education to parents and teachers, so an
-// unverifiable sentence is a defect, not a flourish. If you add a claim, bring its receipt.
+// invented statistics, no efficacy claims and no testimonials — this page sells children's
+// education to parents and teachers, so an unverifiable sentence is a defect, not a flourish.
+// If you add a claim, bring its receipt.
+//
+// Standards alignment DOES now have its receipt, and so it is linked (section 5b): every code
+// and every quoted standard on /standards was fetched from its publisher and transcribed
+// verbatim, with partial coverage flagged as partial. See src/lib/standards.ts before touching
+// it — a wrong standard code is the one defect on this page that could do a family real harm.
 //
 // The map stays the centrepiece: the hero is deliberately short, the map renders
 // immediately after it, and both CTAs point back at it. Never demote it to a catalog.
@@ -432,6 +437,31 @@ export default async function ExplorePage() {
         </div>
       </section>
 
+      {/* 5b. Standards. Teachers and reporting homeschoolers need this before they need anything
+             else on this page. The claims themselves live on /standards, where each one carries
+             its verbatim standard text, its source link, and an honest "partially covered" flag —
+             see src/lib/standards.ts. Nothing is asserted here that isn't backed there. */}
+      <section className="mt-14" aria-labelledby="standards-heading">
+        <h2 id="standards-heading" className="text-2xl font-bold">
+          Standards alignment
+        </h2>
+        <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
+          Designed for high school. We mapped this curriculum against the published{" "}
+          <strong>Indiana Academic Standards</strong> and the standards{" "}
+          <strong>Washington, D.C.</strong> has adopted — Common Core for literacy, NGSS for
+          science, and D.C.&apos;s own 2023 social studies standards. Each standard we claim shows
+          its exact code, the standard&apos;s own words, and the lesson that covers it — and says
+          so plainly when we only cover part of it.
+        </p>
+        <Link
+          href="/standards"
+          className={`${textLink} mt-2 inline-flex min-h-11 items-center pointer-coarse:min-h-12`}
+          style={accent}
+        >
+          See which standards are met, and by which lesson →
+        </Link>
+      </section>
+
       {/* 6. Trust. The real differentiator — and it is demonstrable, so demonstrate it. */}
       <section className="mt-14" aria-labelledby="trust-heading">
         <h2 id="trust-heading" className="text-2xl font-bold">
@@ -564,8 +594,8 @@ export default async function ExplorePage() {
       </section>
 
       {/* 8. FAQ — ONLY questions this repo can answer truthfully. Cost, logins, cohorts and
-             accuracy all come from real behaviour. What we cannot ground (recommended age
-             range, hours per week, standards alignment) is ABSENT rather than guessed. */}
+             accuracy all come from real behaviour. What we cannot ground (hours per week) is
+             ABSENT rather than guessed. Standards alignment is now grounded — see section 5b. */}
       <section className="mt-14" aria-labelledby="faq-heading">
         <h2 id="faq-heading" className="text-2xl font-bold">
           Questions
