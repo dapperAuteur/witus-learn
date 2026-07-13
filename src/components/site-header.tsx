@@ -8,7 +8,9 @@ import { listCategories } from "@/db/queries/catalog";
 import { tenantHasMapData } from "@/db/queries/map";
 import { SignOutButton } from "./sign-out-button";
 import { ThemeToggle } from "./theme-toggle";
-import { MobileNav, type NavItem } from "./mobile-nav";
+import { MobileNav } from "./mobile-nav";
+import { NavMenu } from "./nav-menu";
+import type { NavItem } from "./nav-types";
 import { ProfileSwitcher } from "./profile-switcher";
 import { ActingAsBanner } from "./acting-as-banner";
 
@@ -38,39 +40,58 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   const managedChildren = session ? await listManagedChildren(tenant.id, session.user.id) : [];
   const activeLearner = session ? await getActiveLearner(session) : null;
 
-  // One nav model, rendered inline on desktop and in a hamburger drawer on mobile.
-  const items: NavItem[] = [
+  // Nav model: a short list of always-inline targets, plus three grouped dropdowns
+  // (Explore / Teach / Account) so the bar never grows past ~5 top-level targets no matter how
+  // many tenant flags/roles are active (mobile-first.md). Every link + its exact gating from the
+  // old flat list is preserved — just bucketed instead of inlined.
+  const primaryItems: NavItem[] = [
     { href: "/courses", label: "Browse Catalog" },
-    ...(flags.recruiting ? [{ href: "/demo", label: "Demo" }] : []),
     { href: "/live", label: "Live" },
+  ];
+  const showDemo = Boolean(flags.recruiting);
+
+  // Content-driven links the tenant actually has, plus the always-on Instructors directory.
+  const exploreItems: NavItem[] = [
     ...(hasCivics ? [{ href: "/civics", label: "Civics" }] : []),
     ...(hasLanguages ? [{ href: "/languages", label: "Languages" }] : []),
     ...(showMap ? [{ href: "/explore", label: "Explore" }] : []),
     ...(flags.paths ? [{ href: "/paths", label: "Paths" }] : []),
     { href: "/instructors", label: "Instructors" },
+  ];
+
+  // Only rendered for instructors/brand admins/the platform owner (canTeach).
+  const teachItems: NavItem[] = [
     ...(session && canTeach ? [{ href: "/teach", label: "Teach", accent: true }] : []),
     ...(session && canTeach ? [{ href: "/help", label: "Help" }] : []),
     ...(session && canAdmin ? [{ href: "/admin", label: "Admin", accent: true }] : []),
-    ...(session ? [{ href: "/dashboard", label: "Dashboard" }] : []),
-    ...(session ? [{ href: "/cohorts", label: "Cohorts" }] : []),
-    ...(session ? [{ href: "/family", label: "Family" }] : []),
-    ...(session ? [{ href: "/my-courses", label: "My Courses" }] : []),
-    ...(session ? [{ href: "/field-log", label: "My Field Log" }] : []),
   ];
+  const showTeachMenu = Boolean(session) && canTeach && teachItems.length > 0;
+
+  // Only rendered when signed in; Sign out is appended as the trailing action in both the
+  // desktop dropdown and the mobile drawer's Account section.
+  const accountItems: NavItem[] = session
+    ? [
+        { href: "/dashboard", label: "Dashboard" },
+        { href: "/cohorts", label: "Cohorts" },
+        { href: "/family", label: "Family" },
+        { href: "/my-courses", label: "My Courses" },
+        { href: "/field-log", label: "My Field Log" },
+      ]
+    : [];
 
   return (
     <>
       <header className="border-b border-neutral-200 dark:border-neutral-800">
-        <nav className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
+        <nav className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3">
           <Link
             href="/"
-            className="text-lg font-bold focus-visible:outline-2 focus-visible:outline-offset-2"
+            className="min-w-0 truncate text-lg font-bold focus-visible:outline-2 focus-visible:outline-offset-2"
             style={{ color: "var(--accent)" }}
           >
             {tenant.theme.wordmark ?? brandName(tenant)}
           </Link>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2">
             {managedChildren.length > 0 ? (
               <ProfileSwitcher
                 currentId={activeLearner?.isChild ? activeLearner.id : null}
@@ -80,25 +101,71 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
 
             <ThemeToggle />
 
-            {/* Desktop: inline links */}
-            <ul className="hidden items-center gap-4 text-sm md:flex">
-              {items.map((i) => (
+            {/* Desktop: short top bar + grouped dropdowns (never overflows: ~5 targets max) */}
+            <ul className="hidden items-center gap-1 text-sm md:flex">
+              {primaryItems.map((i) => (
                 <li key={i.href}>
                   <Link
-                    className={`hover:underline ${i.accent ? "font-medium" : ""}`}
-                    style={i.accent ? { color: "var(--accent)" } : undefined}
+                    className="inline-flex min-h-11 items-center px-2 py-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
                     href={i.href}
                   >
                     {i.label}
                   </Link>
                 </li>
               ))}
-              <li>{session ? <SignOutButton /> : <Link className="hover:underline" href="/login">Sign in</Link>}</li>
+              <li>
+                <NavMenu label="Explore" items={exploreItems} />
+              </li>
+              {showDemo ? (
+                <li>
+                  <Link
+                    className="inline-flex min-h-11 items-center px-2 py-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+                    href="/demo"
+                  >
+                    Demo
+                  </Link>
+                </li>
+              ) : null}
+              {showTeachMenu ? (
+                <li>
+                  <NavMenu label="Teach" items={teachItems} accent />
+                </li>
+              ) : null}
+              {session ? (
+                <li>
+                  <NavMenu
+                    label="Account"
+                    items={accountItems}
+                    trailing={
+                      <SignOutButton
+                        menuItem
+                        className="block min-h-11 w-full rounded-md px-3 py-2 text-left leading-7 hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:bg-neutral-800"
+                      />
+                    }
+                  />
+                </li>
+              ) : (
+                <li>
+                  <Link
+                    className="inline-flex min-h-11 items-center px-2 py-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+                    href="/login"
+                  >
+                    Sign in
+                  </Link>
+                </li>
+              )}
             </ul>
 
-            {/* Mobile: hamburger drawer */}
+            {/* Mobile: hamburger drawer, grouped into the same Explore/Teach/Account sections */}
             <div className="md:hidden">
-              <MobileNav items={items} signedIn={Boolean(session)} />
+              <MobileNav
+                primaryItems={primaryItems}
+                showDemo={showDemo}
+                exploreItems={exploreItems}
+                teachItems={showTeachMenu ? teachItems : []}
+                accountItems={accountItems}
+                signedIn={Boolean(session)}
+              />
             </div>
           </div>
         </nav>
