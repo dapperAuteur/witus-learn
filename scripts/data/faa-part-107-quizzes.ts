@@ -103,6 +103,110 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
           "Recurrent training (free, online) is required every 24 calendar months to keep flying under Part 107.\n\nReference: 14 CFR § 107.65 (aeronautical knowledge recency).",
         sourceLessonNumber: 1,
       },
+      {
+        prompt: "What does the Part 107 remote pilot certificate actually allow you to do?",
+        options: [
+          "Fly a drone for any commercial or work purpose",
+          "Fly a drone recreationally, which otherwise would not be allowed",
+          "Fly a drone above 400 feet without any further authorization",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Part 107 is the FAA's permission slip to fly a drone for any commercial purpose: selling photos, inspecting a roof, mapping a field. Anything where money or a business is involved needs it. Flying purely for fun falls under a different, looser set of rules.\n\nReference: 14 CFR § 107.12 (requirement for a remote pilot certificate with a small UAS rating).",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "What is the official name of the Part 107 knowledge test?",
+        options: [
+          "The Remote Pilot Aeronautical Exam (RPAE)",
+          "The Unmanned Aircraft General test (the UAG)",
+          "The Small UAS Certification Test (SUCT)",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The test is the Unmanned Aircraft General test, the UAG. That is the name you will see when you schedule it, so recognize it rather than looking for the words 'Part 107' on the booking page.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "What should you bring with you to the testing center?",
+        options: [
+          "A government-issued photo ID, and optionally a simple non-scientific calculator",
+          "A government-issued photo ID and your own printed figure supplement",
+          "A laptop and a scientific calculator that can store formulas",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Bring a government photo ID (driver's license or passport) so the center can confirm who you are. A simple calculator is optional and the center usually has one; it may NOT be a scientific calculator that stores information. The figure booklet is handed to you there, so you do not bring your own.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "You answer a question on the test computer and it tells you nothing. What does that mean?",
+        options: [
+          "The answer did not save, so you should re-enter it",
+          "Nothing is wrong. The test scores everything at the very end, so keep moving",
+          "The question was one of the unscored experimental questions",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The screen never tells you right or wrong as you go. It saves the answer in silence and adds everything up at the end, when the proctor tells you the result. The silence is normal, so let an unsure question go and keep moving.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "Which parts of Part 107 certification are done in person, and which are done online?",
+        options: [
+          "Both the initial knowledge test and the later recurrent training are in person",
+          "The initial knowledge test is in person; the later recurrent training is online",
+          "Both the initial knowledge test and the later recurrent training are online",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The initial knowledge test is in person at an FAA-approved testing center, with no exceptions. The recurrent training you take later to stay current is the online one. Do not swap the two.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "About how much does the knowledge test cost, and how often do you pay it?",
+        options: [
+          "About 175 dollars, once per attempt",
+          "About 175 dollars, once, covering unlimited retakes",
+          "It is free; the FAA covers the testing center fee",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The test runs about 175 dollars and you pay the testing center per attempt. That is exactly why the course wants you at 80 to 90 percent on the practice exam before you book: a retake costs the full fee again.",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "About how many hours of study does the FAA suggest before you sit the knowledge test?",
+        options: ["About 5 hours", "About 20 hours", "About 60 hours"],
+        correctIndex: 1,
+        explanation:
+          "The FAA suggests around 20 hours of study. This is not a cram-the-answers course: that depth is what keeps you safe in the air, not just what gets you past the question bank.",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "What is the 'layered practice' study method this course is built around?",
+        options: [
+          "Listen to the lessons, then re-listen to any that did not land",
+          "Listen to each lesson; use the glossary and flashcards; take the module quiz aiming for 80 percent; re-study your weak spots and retake",
+          "Take the practice exam first, then study only the questions you missed",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Four parts that stack: listen to each lesson, drill recall with the glossary and flashcards, take the module quiz aiming for at least 80 percent, and re-study the weak spots before retaking. You hit each topic from several angles instead of relying on any one of them.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "You score 72 percent on a module quiz. The real test only needs 70 percent. What does the course method say to do?",
+        options: [
+          "Move on. You are already above the FAA passing score",
+          "Go back, re-study what you missed, and retake the quiz until you are at 80 percent or better",
+          "Move on, but retake this quiz once you finish the whole course",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Treat 80 percent as the floor on every quiz. Seventy is the bare pass on the real test under perfect conditions, and test day is not perfect conditions. Each module also builds on the one before it, so a weak topic carried forward drags down everything after it.",
+        sourceLessonNumber: 2,
+      },
     ],
   },
 
@@ -182,6 +286,98 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         explanation:
           "A bold C inside a circle marks the CTAF. The common trap is grabbing the AWOS or ASOS weather frequency printed nearby in the same data block.",
         sourceLessonNumber: 2,
+      },
+      {
+        prompt: "A manned aircraft is inbound to land while you are flying nearby. Who yields?",
+        options: [
+          "The manned aircraft, because your drone is smaller and less maneuverable",
+          "Your drone. Manned aircraft have the right of way, and you must not interfere with their operation",
+          "Whoever saw the other one first",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Your drone yields, always. Manned aircraft have the right of way and you may not operate so close as to create a collision hazard, so stay well clear of the traffic pattern and especially the final approach path — that low straight line where planes come in to land.\n\nReference: 14 CFR § 107.37 (operation near aircraft; right-of-way rules).",
+        sourceLessonNumber: 6,
+      },
+      {
+        prompt: "Almost every call sign for a U.S.-registered aircraft starts with the same phonetic word. Which one?",
+        options: ["Alpha", "November", "Uniform"],
+        correctIndex: 1,
+        explanation:
+          "Every U.S. tail number starts with the letter N, spoken 'November' — for example November 342 Sierra Alpha. The tail number is the aircraft's registration, like a license plate, and the pilot uses it as their call sign.",
+        sourceLessonNumber: 5,
+      },
+      {
+        prompt: "Why do pilots say 'niner' instead of 'nine' on the radio?",
+        options: [
+          "It is the Morse-code convention carried over to voice",
+          "So it is not confused with other words or numbers over a fuzzy radio",
+          "It marks the number as part of a runway designation rather than an altitude",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A fuzzy radio drops sounds, so a few numbers are deliberately reshaped: 'tree' for three (the 'th' is hard to hear), 'fife' for five, and 'niner' for nine so it is not mixed up with 'five' or the German word for no. 'Niner' sticks around because it is just different enough to matter.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "A self-announce position report at a non-towered airport follows a fixed five-part order. What is it?",
+        options: [
+          "Call sign, airport name, altitude, intention, call sign again",
+          "Airport name, who they are, where they are, what they intend to do, airport name again",
+          "Airport name, runway in use, wind, who they are, where they are",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The order is: airport name ('Sedona traffic'), who they are ('Cessna one two three Bravo Foxtrot'), where they are ('ten miles south'), what they intend to do ('inbound for landing'), then the airport name again. Memorize the ORDER, not the exact words.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "Why does a pilot say the airport name twice — at the start AND the end of a position report?",
+        options: [
+          "Because one CTAF frequency can be shared by several airports, so listeners need to know which airport the call is about",
+          "Because FAA regulations require the airport name to bracket every transmission",
+          "Because the first call is for the tower and the second is for other pilots",
+        ],
+        correctIndex: 0,
+        explanation:
+          "CTAF frequencies are shared: one frequency can cover several airports spread across the map. A pilot listening might pick up calls from two different airports at once, so naming the airport at both ends tells everyone which field this call is about.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "Which frequency can actually connect you to a person on the ground at the airport?",
+        options: [
+          "UNICOM, which can reach a ground station such as a fuel desk",
+          "MULTICOM, which is staffed by a regional FAA operator",
+          "CTAF, which is always staffed during daylight hours",
+        ],
+        correctIndex: 0,
+        explanation:
+          "UNICOM is the front desk: a private advisory service, often just a person at the airport, who can pass along the runway in use, the wind, or fuel. MULTICOM (122.9) is purely pilot-to-pilot with nobody staffing a radio, and the CTAF is the pilots' self-announce channel, not a staffed station.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "You look up a small airport and its CTAF and UNICOM are listed as the SAME frequency. What does that mean?",
+        options: [
+          "The listing is an error; they are never the same",
+          "One frequency does both jobs at that field, so you listen on that single number",
+          "The airport's tower is closed and the frequency has been temporarily merged",
+        ],
+        correctIndex: 1,
+        explanation:
+          "At many small airports the traffic channel and the front desk share one frequency. Same channel, two jobs. You listen on that single number for both position reports and airport information.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "A controller first calls an aircraft 'November three four two Sierra Alpha', then later just '2 Sierra Alpha'. What happened?",
+        options: [
+          "A second, different aircraft entered the frequency",
+          "The controller shortened the call sign after first contact — same aircraft",
+          "The aircraft switched from its tail number to its airline flight number",
+        ],
+        correctIndex: 1,
+        explanation:
+          "After first contact a controller often shortens the call sign to the last few characters. Same airplane, shorter name. Airlines work differently: they use a company name and flight number ('United 146'), and that flight number does NOT match the aircraft's tail number.",
+        sourceLessonNumber: 5,
       },
     ],
   },
@@ -279,6 +475,91 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         explanation:
           "Each grid number is the maximum altitude in feet AGL eligible for near-instant LAANC approval at that spot. A zero means you are too close to the airport for instant approval and must request authorization through FAA DroneZone.",
         sourceLessonNumber: 8,
+      },
+      {
+        prompt:
+          "You are flying over flat ground, then cross a 200-foot hill. What happens to your legal altitude ceiling?",
+        options: [
+          "It stays fixed at 400 feet above your takeoff point",
+          "It rises with the hill — the 400-foot limit is measured above the ground beneath you",
+          "It drops to 200 feet to keep you clear of the terrain",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The 400-foot limit is an AGL number and it follows the dirt. Over a flat field you stay 400 feet over the field; over a 200-foot hill the ceiling rises with the hill. (You may also fly within 400 feet of a structure.)\n\nReference: 14 CFR § 107.51 (operating limitations for small unmanned aircraft).",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "How many airspace classes are there in the United States, and which letter is missing?",
+        options: [
+          "Six: A, B, C, D, E, and G. There is no Class F in the United States",
+          "Seven: A through G, all of them in use",
+          "Five: A, B, C, D, and G. There is no Class E or F",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Six classes: A, B, C, D, E, and G. There is no Class F in the United States. Five of them (A, B, C, D, E) are controlled; only Class G is uncontrolled. Class A starts at 18,000 feet MSL and runs up to 60,000, so a drone at or below 400 feet never touches it.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "What shape and size is Class D airspace?",
+        options: [
+          "Two stacked layers: a 5 nautical mile core and a 10 nautical mile shelf",
+          "A single cylinder, roughly a 4 nautical mile radius, up to about 2,500 feet above the airport",
+          "An upside-down wedding cake topping out around 10,000 feet MSL",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Class D is the simplest shape in the system: ONE cylinder, no stacked layers, about a 4 nautical mile radius, reaching up to roughly 2,500 feet above the airport. Two stacked layers is Class C; the upside-down wedding cake is Class B. It starts at the surface, so you are inside it from the moment you launch.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "Class B is measured differently from most airspace. How is its top given, and roughly where is it?",
+        options: [
+          "In feet AGL, around 4,000 feet above the ground",
+          "In feet MSL, generally around 10,000 feet MSL (some airports lower)",
+          "In flight levels, at FL180",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Class B's top is given in MSL — measured from sea level, not from the dirt — and generally sits around 10,000 feet MSL, though plenty of airports run lower (Phoenix tops at 9,000). Class B is the most restrictive controlled airspace there is: even a manned pilot needs a clearance to enter it.",
+        sourceLessonNumber: 6,
+      },
+      {
+        prompt: "Your airport is not in the LAANC system. How do you request authorization, and how long can it take?",
+        options: [
+          "Through an approved LAANC app anyway; it just takes a few extra minutes",
+          "Through the FAA DroneZone website, which the page warns can take up to 90 days",
+          "You cannot get authorization at all; the airspace is closed to drones",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Airports outside LAANC take a manual request through FAA DroneZone. The page warns it can take up to 90 days (in practice usually a week or two), so plan ahead. LAANC covers a bit over 700 airports — roughly 80 percent of controlled airspace — and returns approval in seconds when you stay at or below the grid number.",
+        sourceLessonNumber: 8,
+      },
+      {
+        prompt: "A TFR is active over a wildfire. Where would you have found out about it, given that no printed chart shows it?",
+        options: [
+          "On the sectional chart, marked with a blue comb line",
+          "As a NOTAM — check tfr.faa.gov or call 1-800-WX-BRIEF before every flight",
+          "On the UAS Facility Map grid, as a square marked zero",
+        ],
+        correctIndex: 1,
+        explanation:
+          "TFRs are temporary, so no paper chart shows them. They go out as NOTAMs, and you check tfr.faa.gov or call 1-800-WX-BRIEF for a live briefing before every flight. They pop up over wildfires and disasters, major accidents, space launches, and VIP travel (a 30-mile bubble that rides along with the President).",
+        sourceLessonNumber: 7,
+      },
+      {
+        prompt: "A military operating area (MOA) near your job site is active. May you fly there?",
+        options: [
+          "Yes, you are allowed in even when it is active, but use extreme caution",
+          "No. An active MOA is closed to all civil aircraft, including drones",
+          "Only after you contact the controlling agency for permission",
+        ],
+        correctIndex: 0,
+        explanation:
+          "An MOA is where military jets train — nothing is exploding, but jets and helicopters fly low and fast. You are permitted in, even when it is active, but use extreme caution. That makes it different from a restricted area (contact the controlling agency) and a prohibited area (never). On the chart an MOA wears a magenta comb line; prohibited, restricted, and warning areas wear a blue one.",
+        sourceLessonNumber: 7,
       },
     ],
   },
@@ -379,6 +660,86 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         explanation:
           "A solid magenta line is Class C, which touches the surface and requires authorization (fastest through LAANC). Dashed blue would be Class D; a faded magenta band would be Class E starting at 700 feet AGL with Class G below it.",
         sourceLessonNumber: 8,
+      },
+      {
+        prompt: "A faded BLUE band on a sectional chart marks what?",
+        options: [
+          "Class B airspace, because of the blue color",
+          "Class E starting at 1,200 feet AGL",
+          "Class D airspace whose tower is closed",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A faded blue band is Class E starting at 1,200 feet AGL. Faded means a floor up in the air, not at the surface. Hold the pair together: faded MAGENTA is Class E at 700 feet, faded BLUE is Class E at 1,200 feet. Class B is a sharp SOLID blue line, not a soft band.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "Near an airport you see two numbers stacked like a fraction: 100 over 40. What does that mean?",
+        options: [
+          "The airspace runs from 4,000 feet up to 10,000 feet MSL",
+          "The airspace runs from 40 feet up to 100 feet AGL",
+          "The airspace ceiling is 10,000 feet and the airport elevation is 4,000 feet",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Top number is the ceiling, bottom number is the floor, both in feet MSL, with the last two zeros dropped to save space. So 100 over 40 is 4,000 feet up to 10,000 feet. If the bottom reads SFC, the airspace starts at the surface.",
+        sourceLessonNumber: 5,
+      },
+      {
+        prompt: "Small tick marks stick out around the edge of an airport symbol, like spokes on a wheel. What do they mean?",
+        options: [
+          "The airport has fuel and services available",
+          "The airport has a control tower",
+          "The number of runways at the field",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Ticks (spokes) mean fuel and services are available during normal business hours. It is a fast visual: spokes equal gas. The COLOR of the symbol is what tells you about the tower (magenta = no tower, blue = tower), and the runway drawing inside the symbol tells you about the runways.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "Special use airspace is outlined with a fat comb-tooth line. What do the two comb colors tell you?",
+        options: [
+          "Blue comb = prohibited, restricted, and warning areas; magenta comb = MOAs and alert areas",
+          "Blue comb = active right now; magenta comb = inactive right now",
+          "Blue comb = you may enter with permission; magenta comb = you may never enter",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Same comb shape, two colors. Prohibited (P), Restricted (R), and Warning (W) areas wear a BLUE comb. Military operating areas (MOA) and Alert (A) areas wear a MAGENTA comb. The letter inside the outline tells you which type it is. The color says nothing about whether the area is active.",
+        sourceLessonNumber: 7,
+      },
+      {
+        prompt: "You need a close-up of the crowded airspace around a big airport. A sectional is too coarse. What chart do you switch to?",
+        options: ["A terminal area chart", "A world aeronautical chart", "A UAS Facility Map"],
+        correctIndex: 0,
+        explanation:
+          "A terminal area chart is the zoomed-in version: same symbols, more detail, smaller area. A sectional is drawn at 1 to 500,000 (about 7 miles per inch), so it covers a wide area but cannot show fine detail. (The UAS Facility Map is a different tool entirely — it shows LAANC approval ceilings, not chart symbology.)",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "The tick marks running up the side edge of a sectional double as a distance ruler. How?",
+        options: [
+          "One minute of latitude equals one statute mile",
+          "One minute of latitude equals one nautical mile",
+          "One degree of latitude equals one nautical mile",
+        ],
+        correctIndex: 1,
+        explanation:
+          "One minute of latitude equals one nautical mile, so if two points are ten latitude ticks apart they are about ten nautical miles apart. Each tick along the line is one minute, and one degree is 60 of them.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "At a TOWERED airport, which frequency is the CTAF?",
+        options: [
+          "There is no CTAF at a towered airport",
+          "The control tower frequency (labeled CT) is the CTAF while the tower is open",
+          "The ground control frequency is always the CTAF",
+        ],
+        correctIndex: 1,
+        explanation:
+          "While the tower is open, the control tower frequency (labeled CT on the chart, like 'CT 118.3') IS the CTAF. When the tower closes for the night, pilots switch to a different listed frequency to self-announce.",
+        sourceLessonNumber: 6,
       },
     ],
   },
@@ -882,6 +1243,107 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         explanation:
           "A lapse does not void the certificate. You can still fly recreationally, but your Part 107 privileges are unusable until you complete the free recurrent training. There is no time limit on doing it and no re-test.",
         sourceLessonNumber: 2,
+      },
+      {
+        prompt: "Three different FAA websites, three different jobs. Which one registers the aircraft itself?",
+        options: ["IACRA", "FAA DroneZone", "FAASafety.gov"],
+        correctIndex: 1,
+        explanation:
+          "DroneZone registers the drone. IACRA is where you apply for your pilot certificate, and FAASafety.gov is where you take the free recurrent training. Three sites, three purposes, three separate accounts — the FAA does not connect them for you.",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "How long is the temporary certificate good for?",
+        options: ["30 days", "120 days", "24 calendar months"],
+        correctIndex: 1,
+        explanation:
+          "The temporary certificate is valid for 120 days, which is plenty of runway for the permanent plastic card to arrive in the mail (about 30 to 40 days). Do not confuse the 120 days with the 24-calendar-month recurrent clock.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "How does the permanent certificate reach you, and how long does it take?",
+        options: [
+          "You download and print it from IACRA within 5 to 7 days",
+          "It arrives by mail as a plastic card in about 30 to 40 days",
+          "You pick it up in person at the testing center",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The permanent card is mailed to you in roughly 30 to 40 days. The thing you download and print in about 5 to 7 days is the TEMPORARY certificate, and it is what makes you legal to fly in the meantime.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt:
+          "You are logged back into IACRA after passing. Which application do you start, and what do you give as your basis?",
+        options: [
+          "Pilot, then Remote Pilot Initial; basis is 'completion of a knowledge test'",
+          "Pilot, then Remote Pilot Recurrent; basis is 'completion of recurrent training'",
+          "Mechanic, then Remote Pilot Initial; basis is 'military competence'",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Choose Pilot, then Remote Pilot Initial, and give 'completion of a knowledge test' as the basis. You will also enter your ID and the knowledge test exam ID that the testing center hands you after you pass.\n\nReference: 14 CFR § 107.63 (application for a remote pilot certificate with a small UAS rating).",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "What is Remote ID?",
+        options: [
+          "The drone broadcasting its location and identity in flight, like a digital license plate",
+          "The FTN that identifies you to the FAA",
+          "The registration number you write on the outside of the aircraft",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Remote ID means the drone broadcasts its location and identity while it is flying. Think of it as a digital license plate for the aircraft. It is separate from your FTN (which identifies the pilot) and from the registration number you mark on the airframe.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "You pass the test on September 15th and your certificate is issued in mid-October. When does the 24-month recurrent clock start?",
+        options: [
+          "The certificate issue date in October",
+          "The test date, September 15th",
+          "January 1st of the following year",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Count from your TEST date, not the date printed on your certificate. The certificate gets issued a month or so later, so trusting that date quietly buys you extra time you do not actually have and can leave you flying out of currency.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "Does the remote pilot certificate itself expire?",
+        options: [
+          "Yes, it expires every 24 calendar months and must be reissued",
+          "No. The certificate does not expire; what expires is your currency, and recurrent training resets that clock",
+          "Yes, it expires after 120 days unless you register a drone",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The certificate itself never expires. Your CURRENCY does, and only the free recurrent training resets that clock. That is why a lapse does not take the certificate away from you: it just parks your Part 107 privileges until you train again.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "What kicks off immediately after you submit the IACRA application?",
+        options: [
+          "A practical flight test with an FAA examiner",
+          "TSA security vetting (a background check)",
+          "Your drone's Remote ID compliance check",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Submitting the application starts TSA security vetting, a background check run by the Transportation Security Administration. Once it clears, the FAA issues the certificate. There is no practical flight test anywhere in Part 107.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "What does the testing center require before it will let you sit down and test?",
+        options: [
+          "A government-issued photo ID",
+          "An instructor endorsement signed within the last 60 days",
+          "Proof that your drone is registered on DroneZone",
+        ],
+        correctIndex: 0,
+        explanation:
+          "A government-issued photo ID (driver's license or passport). No ID, no test, and you lose the appointment and the fee. No instructor endorsement is needed for Part 107, and your drone's registration has nothing to do with sitting the exam.",
+        sourceLessonNumber: 1,
       },
     ],
   },
