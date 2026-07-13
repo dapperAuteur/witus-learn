@@ -238,7 +238,17 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
-- ✅ FAA Part 107; ✅ BVC real 21-episode content (lessons + quizzes + maps + Coffee assignment).
+- ✅ BVC real 21-episode content (lessons + quizzes + maps + Coffee assignment).
+- ✅ **FAA Part 107 — sectioned, quizzed, and click-to-reveal** (\`fix/faa-sections-quizzes\`). The
+  import had seeded 90+ lessons as ONE flat list (\`seed-faa.ts\` never set \`section\`, so the course
+  built zero modules), only 5 of its 14 modules had a quiz, and the audio "[CHECK]" beat rendered as
+  a plain "Quick check" heading with the answer in prose right below the question. Now: all 14
+  modules from the import's own metadata become collapsible SECTIONS (course page + lesson-page
+  contents rail), every module ends with a quiz (6 imported + **10 authored**, 128 questions total,
+  in the committed \`scripts/data/faa-part-107-quizzes.ts\`), all 92 quick checks are
+  \`:::reveal\` click-to-reveal, and the 180 recall beats became self-graded recall cards.
+  Authored explanations cite 14 CFR only where a real rule governs. Re-run \`pnpm seed:faa\`
+  (\`--dry-run\` prints the breakdown without touching the DB).
 - ✅ **Health/fitness courses migrated from CentOS + sectioned** — NASM CPT/CES/CNC, "Read Your
   Body's Data", ECS (Foundations/Fitness/Nutrition/Neuroscience) → Learn.WitUS; Speedway → ElementaryMBA.
   Gen-from-CentOS (\`pnpm gen:health\`), each course now has chapter/module/episode SECTIONS with
