@@ -145,12 +145,33 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Offline support (PWA)** — conservative per-origin service worker (network-first navigation +
   \`/offline\` fallback; cache-first hashed assets; API/cross-origin never cached), tenant-aware
   \`/manifest.webmanifest\`, and a \`NEXT_PUBLIC_DISABLE_SW=1\` kill-switch. Test on a preview first.
-- ✅ **Offline lessons (pages + media)** — "Save for offline" (\`save-offline-button.tsx\`) now caches the
-  lesson **page itself** (HTML + RSC payload, via \`src/lib/offline.ts\`'s \`witus-pages-v1\` Cache) *and*
-  its audio/video (\`witus-media-v1\`), plus the **next lesson** — so tapping "Next" keeps working
-  offline. \`save-course-offline-button.tsx\` saves an entire course at once with progress. \`/offline\`
-  lists what's actually saved. Fixes the earlier gap where only media was cached and any lesson page
-  (including the next one) 404'd offline. YouTube-style embeds still can't be cached (noted in-UI).
+- ✅ **Offline lessons (pages + media)** — "Save for offline" caches the lesson **page itself**
+  (HTML + RSC payload, via \`src/lib/offline.ts\`'s \`witus-pages-v1\` Cache), its audio/video
+  (\`witus-media-v1\`), **and the JS/CSS the page needs to render** (\`witus-assets-v1\`) — plus the
+  **next lesson**, so tapping "Next" keeps working offline. YouTube-style embeds still can't be
+  cached (noted in-UI).
+- ✅ **Pick exactly what goes offline** — a checkbox per lesson inside its collapsible section, a
+  **select-all per section** (indeterminate when partial), a course-level select-all, and a sticky
+  action bar with "Download selected (N)" / "Remove selected" + live progress. Locked lessons are
+  never offered. The one-click "save whole course" path is preserved next to the syllabus heading.
+- ✅ **Downloads manager (\`/downloads\`)** — everything saved on this device, grouped **course →
+  section → lesson**, with **remove at every level** (lesson, section, course, "Remove all") and
+  storage used (\`navigator.storage.estimate()\`). Reachable from \`/dashboard\`, \`/offline\` and the
+  per-lesson saved state. Deliberately outside the \`(tenant)\` group so it makes **no DB/session
+  call** and works with no network. Backed by an **offline manifest** (localStorage) mapping a
+  cached path → course/section/lesson titles, since the Cache API only stores URLs; it's a hint
+  layer, and \`reconcileOffline()\` treats the cache as truth (stale entries pruned, orphaned pages
+  still shown + removable), so the UI can't claim a download that isn't there. Shared media is
+  refcounted — removing one lesson never deletes audio another saved lesson still uses.
+- ✅ **Offline actually works now (bug fix)** — the service worker was **never registering**:
+  registration was attached to \`window\`'s \`load\` event from inside a \`useEffect\` that usually runs
+  *after* \`load\` has already fired, and the error was swallowed by an empty \`.catch()\`. Downloads
+  still wrote to the Cache API, so the UI went green while nothing existed to serve them —
+  airplane mode gave the browser's own "no connection" page. Registration now happens immediately
+  when the document is already complete; \`savePage()\` throws on a non-OK response; a save is only
+  reported after it's **read back out of the cache**; and every "saved" affordance is gated on
+  \`navigator.serviceWorker.controller\` (an **Offline diagnostics** panel on \`/downloads\` shows it).
+  Verified end-to-end in real Chrome against a **killed server**, not just typechecked.
 - ⚪ **WYSIWYG + markdown editor** (CentOS) for lesson authoring in the dashboard.
 - ✅ **Rich lesson media** — native audio/video files get a full player; YouTube/Vimeo/Google
   Slides/PDF auto-embed (\`toEmbed\`). Cloudinary upload UI is the remaining piece (URLs work today).
@@ -348,6 +369,23 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
+- 🔧 **/explore is a landing page now** (\`feat/explore-landing\`) — the Commodity Map page was an
+  \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
+  now answers **what is this → what will my student learn → why trust it → what next**, for the
+  people who actually buy (parents, teachers, homeschoolers), each addressed on their own terms.
+  **The map is still the centrepiece** — short hero, map immediately below it, both CTAs pointing
+  back at it. **Every figure on the page is a count of the tenant's own rows** (episodes, origins,
+  seasons, belt countries, lessons, courses, free courses, cited sources, verified sources, tracked
+  claims, named instructors) via a new tenant-scoped \`src/db/queries/explore.ts\` — \`course_sources\`
+  / \`course_claims\` carry no \`tenant_id\`, so every aggregate INNER JOINs \`courses\` and filters
+  \`courses.tenant_id\`; that join IS the boundary. **No invented stats, no efficacy claims, no
+  testimonials, no standards-alignment claim**; the one pedagogical claim carries three real,
+  verified APA 7 citations rendered on the page (Smith 2002; Sobel 2004; McGrew et al. 2018). The
+  FAQ answers only what the repo can answer truthfully (cost is derived from \`price_type\`) — age
+  range, time commitment and standards alignment are **deliberately absent** pending BAM
+  (\`plans/user-tasks/72\`). Hero copy is per-tenant overridable via \`platform_settings\`
+  (\`explore_headline\`/\`explore_subhead\`/\`explore_intro\`) with brand-neutral defaults — **no
+  migration**. Metadata/OG/JSON-LD tenant-scoped. Mobile-first (no 320px overflow; ≥44px targets).
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`

@@ -11,7 +11,13 @@ import { ShareButton } from "@/components/share-button";
 import { lessonAccess, isFreeCourse } from "@/lib/gating";
 import { isDirectMediaFile } from "@/lib/media";
 import type { SavableLesson } from "@/lib/offline";
-import { SaveCourseOfflineButton } from "@/components/save-course-offline-button";
+import {
+  OfflineDownloadProvider,
+  OfflineDownloadAllButton,
+  OfflineLessonCheckbox,
+  OfflineSectionCheckbox,
+  OfflineSelectionBar,
+} from "@/components/offline-selection";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
 import { listLiveForCourse } from "@/db/queries/live";
 import { LivePlayer } from "@/components/live-player";
@@ -88,8 +94,11 @@ export default async function CourseBySlugPage({ params }: Params) {
   const completedCount = lessons.filter((l) => completedLessonIds.has(l.id)).length;
   const percent = lessons.length > 0 ? Math.round((completedCount / lessons.length) * 100) : 0;
   const showProgress = (view.isEnrolled || completedCount > 0) && lessons.length > 0;
-  // "Save whole course for offline": every accessible lesson's page path (+ direct-media file,
-  // when applicable). Locked lessons are excluded — there's nothing useful to cache for them.
+  // Every lesson the learner may save for offline: page path, direct-media file (when applicable),
+  // and the metadata the offline manifest needs so /downloads can name it with no network (a
+  // cached URL alone can't tell you its course, section or title — see src/lib/offline-manifest.ts).
+  // Locked lessons are EXCLUDED — nothing useful to cache, and no checkbox is rendered for them.
+  const moduleTitles = new Map(view.modules.map((m) => [m.id, m.title]));
   const savableLessons = lessons.reduce<SavableLesson[]>((acc, l) => {
     const access = lessonAccess(course, l, { isEditor, isEnrolled: view.isEnrolled, completedLessonIds, orderedLessonIds });
     if (!access.open) return acc;
@@ -97,9 +106,20 @@ export default async function CourseBySlugPage({ params }: Params) {
       (l.lessonType === "audio" || l.lessonType === "video") && l.contentUrl && isDirectMediaFile(l.contentUrl)
         ? l.contentUrl
         : null;
-    acc.push({ pagePath: `${base}/lesson/${l.slug}`, mediaUrl });
+    acc.push({
+      pagePath: `${base}/lesson/${l.slug}`,
+      mediaUrl,
+      meta: {
+        courseTitle: course.title,
+        courseSlug,
+        courseHref: base,
+        sectionTitle: (l.moduleId ? moduleTitles.get(l.moduleId) : null) ?? null,
+        lessonTitle: l.title,
+      },
+    });
     return acc;
   }, []);
+  const savablePaths = new Set(savableLessons.map((l) => l.pagePath));
 
   // "Chat with the sources": shown when the course is indexed AND the learner is allowed by the
   // owner-set stage (owner/instructor → invited/enrolled → paid). Config lives in platform_settings.
@@ -145,17 +165,22 @@ export default async function CourseBySlugPage({ params }: Params) {
         </div>
       </>
     );
+    const pagePath = `${base}/lesson/${lesson.slug}`;
     return (
-      <li key={lesson.id}>
+      // The offline checkbox sits OUTSIDE the <Link> — a checkbox nested inside an anchor can't be
+      // clicked without navigating. It renders itself away for locked lessons (never registered
+      // with the provider) and in browsers with no Cache API.
+      <li key={lesson.id} className="flex items-center gap-1">
+        <OfflineLessonCheckbox pagePath={pagePath} lessonTitle={lesson.title} />
         {access.open ? (
           <Link
-            href={`${base}/lesson/${lesson.slug}`}
-            className="flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 transition hover:border-neutral-300 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800 dark:hover:border-neutral-700"
+            href={pagePath}
+            className="flex min-w-0 flex-1 items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 transition hover:border-neutral-300 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800 dark:hover:border-neutral-700"
           >
             {inner}
           </Link>
         ) : (
-          <div className="flex items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 opacity-70 dark:border-neutral-800">
+          <div className="flex min-w-0 flex-1 items-center gap-3 rounded-xl border border-neutral-200 px-4 py-3 opacity-70 dark:border-neutral-800">
             {inner}
           </div>
         )}
@@ -255,8 +280,6 @@ export default async function CourseBySlugPage({ params }: Params) {
         </p>
       ) : null}
 
-      <SaveCourseOfflineButton lessons={savableLessons} />
-
       {prerequisites.length > 0 ? (
         <section className="mt-8">
           <h2 className="mb-3 text-lg font-semibold">Prerequisites</h2>
@@ -321,7 +344,15 @@ export default async function CourseBySlugPage({ params }: Params) {
         </section>
       ) : null}
 
-      <h2 className="mt-8 mb-3 text-lg font-semibold">{view.modules.length > 0 ? "Sections" : "Lessons"}</h2>
+      {/* Offline downloads. The provider is a CLIENT component; the syllabus below is SERVER JSX
+          passed to it as children, so it renders inside the provider's React tree and the client
+          checkboxes nested in each row/section read its context — that's how the ticks live inside
+          the existing collapsible sections instead of in a duplicated shadow list. */}
+      <OfflineDownloadProvider lessons={savableLessons}>
+      <div className="mt-8 mb-3 flex flex-wrap items-center justify-between gap-2">
+        <h2 className="text-lg font-semibold">{view.modules.length > 0 ? "Sections" : "Lessons"}</h2>
+        <OfflineDownloadAllButton />
+      </div>
       {lessons.length === 0 ? (
         <p className="text-neutral-500">No lessons yet.</p>
       ) : view.modules.length > 0 ? (
@@ -346,8 +377,16 @@ export default async function CourseBySlugPage({ params }: Params) {
                 open={mod.id === autoOpenId}
                 className="rounded-xl border border-neutral-200 dark:border-neutral-800"
               >
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 font-medium">
-                  <span className="min-w-0 truncate">{mod.title}</span>
+                <summary className="flex cursor-pointer list-none items-center gap-2 px-4 py-3 font-medium">
+                  {/* Select-all for this section. Stops its own clicks so ticking it doesn't also
+                      collapse the section it lives in. */}
+                  <OfflineSectionCheckbox
+                    sectionTitle={mod.title}
+                    paths={modLessons
+                      .map((l) => `${base}/lesson/${l.slug}`)
+                      .filter((p) => savablePaths.has(p))}
+                  />
+                  <span className="min-w-0 flex-1 truncate">{mod.title}</span>
                   <span className="shrink-0 text-xs tabular-nums text-neutral-500">
                     {complete ? "✓ " : ""}
                     {doneCount}/{modLessons.length}
@@ -367,6 +406,8 @@ export default async function CourseBySlugPage({ params }: Params) {
       ) : (
         <ol className="space-y-2">{lessons.map((lesson, i) => lessonRow(lesson, i + 1))}</ol>
       )}
+      <OfflineSelectionBar />
+      </OfflineDownloadProvider>
 
       {glossary.length > 0 ? (
         <section className="mt-10">

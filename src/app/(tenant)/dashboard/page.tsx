@@ -6,6 +6,7 @@ import { getActiveLearner } from "@/lib/active-learner";
 import { getLearnerDashboard, getLearnerStats } from "@/db/queries/dashboard";
 import { ProgressBar, WeekBars } from "@/components/progress-bits";
 import { DashboardProfileForm } from "@/components/dashboard-profile-form";
+import { OfflineDownloadsSummary } from "@/components/offline-downloads-manager";
 
 export const metadata: Metadata = { title: "Your dashboard" };
 
@@ -164,6 +165,14 @@ export default async function DashboardPage() {
             ))}
           </ul>
         )}
+      </section>
+
+      {/* Discoverability only — the manager itself lives at /downloads, which is DB-free and
+          precached so it still works with no network. This card reads the browser's own caches
+          client-side, so it never adds a server round-trip to the dashboard. */}
+      <section className="mt-8">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Downloads</h2>
+        <OfflineDownloadsSummary />
       </section>
 
       <section className="mt-8">

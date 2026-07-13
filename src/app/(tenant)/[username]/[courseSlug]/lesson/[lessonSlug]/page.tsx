@@ -15,6 +15,7 @@ import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { MetricsTrackerCta } from "@/components/metrics-tracker-cta";
 import { SaveOfflineButton } from "@/components/save-offline-button";
+import type { OfflineLessonMeta, SavableLesson } from "@/lib/offline";
 import { ShareButton } from "@/components/share-button";
 import { isDirectMediaFile } from "@/lib/media";
 import { brandName } from "@/lib/branding";
@@ -75,7 +76,19 @@ export default async function LessonPage({ params }: Params) {
     (l.lessonType === "audio" || l.lessonType === "video") && l.contentUrl && isDirectMediaFile(l.contentUrl)
       ? l.contentUrl
       : null;
-  const nextOffline = next ? { pagePath: `${base}/lesson/${next.slug}`, mediaUrl: directMediaUrl(next) } : null;
+  // Metadata for the offline manifest, so /downloads can name a saved lesson with no network (a
+  // cached URL alone carries no title/course/section — see src/lib/offline-manifest.ts).
+  const moduleTitles = new Map(view.modules.map((m) => [m.id, m.title]));
+  const offlineMeta = (l: (typeof view.lessons)[number]): OfflineLessonMeta => ({
+    courseTitle: view.course.title,
+    courseSlug,
+    courseHref: base,
+    sectionTitle: (l.moduleId ? moduleTitles.get(l.moduleId) : null) ?? null,
+    lessonTitle: l.title,
+  });
+  const nextOffline: SavableLesson | null = next
+    ? { pagePath: `${base}/lesson/${next.slug}`, mediaUrl: directMediaUrl(next), meta: offlineMeta(next) }
+    : null;
   const completed = view.completedLessonIds.has(lesson.id);
   const total = view.lessons.length;
   const position = idx + 1;
@@ -208,6 +221,7 @@ export default async function LessonPage({ params }: Params) {
             <SaveOfflineButton
               pagePath={`${base}/lesson/${lesson.slug}`}
               mediaUrl={directMediaUrl(lesson)}
+              meta={offlineMeta(lesson)}
               next={nextOffline}
             />
             {view.course.slug === "read-your-bodys-data" && view.session ? <MetricsTrackerCta /> : null}
