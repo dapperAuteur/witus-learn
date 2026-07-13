@@ -244,11 +244,20 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   built zero modules), only 5 of its 14 modules had a quiz, and the audio "[CHECK]" beat rendered as
   a plain "Quick check" heading with the answer in prose right below the question. Now: all 14
   modules from the import's own metadata become collapsible SECTIONS (course page + lesson-page
-  contents rail), every module ends with a quiz (6 imported + **10 authored**, 128 questions total,
+  contents rail), every module ends with a quiz (6 imported + **10 authored**, 207 questions total,
   in the committed \`scripts/data/faa-part-107-quizzes.ts\`), all 92 quick checks are
   \`:::reveal\` click-to-reveal, and the 180 recall beats became self-graded recall cards.
   Authored explanations cite 14 CFR only where a real rule governs. Re-run \`pnpm seed:faa\`
   (\`--dry-run\` prints the breakdown without touching the DB).
+- ✅ **Quizzes cap at 10 questions per attempt and rotate** (\`feat/quiz-rotation-cap\`). No attempt in
+  ANY course now serves more than **10** questions: \`toSafeQuiz()\` in \`src/lib/quiz.ts\` is the single
+  seam every quiz passes through on its way to a learner, so the cap covers authored quizzes, the
+  CSV-imported FAA ones (the 24-question practice exam, the 11-question Regulation Quiz 4), and any
+  course authored later — no per-course opt-in. An author asking for fewer than 10 still wins; more
+  than 10 clamps. Scoring already graded the **served subset** by question identity, so \`passingScore\`
+  keeps meaning what it says. To make the rotation actually vary, each of the **10 authored FAA banks
+  grew from 6–8 to 15 questions** (+79, every one answerable from that module's own lesson text).
+  Re-run \`pnpm seed:faa\` for the new questions.
 - ✅ **Health/fitness courses migrated from CentOS + sectioned** — NASM CPT/CES/CNC, "Read Your
   Body's Data", ECS (Foundations/Fitness/Nutrition/Neuroscience) → Learn.WitUS; Speedway → ElementaryMBA.
   Gen-from-CentOS (\`pnpm gen:health\`), each course now has chapter/module/episode SECTIONS with

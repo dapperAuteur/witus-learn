@@ -13,8 +13,10 @@ interface SafeQuestion {
 interface SafeQuiz {
   questions: SafeQuestion[];
   passingScore?: number;
-  /** Serve a random subset of this many questions per attempt (rotating pool). */
-  questionsPerAttempt?: number;
+  /** How many questions to serve this attempt (rotating pool). Already resolved server-side by
+   *  `toSafeQuiz` through the catalog-wide cap (`MAX_QUESTIONS_PER_ATTEMPT`) — the player just
+   *  obeys it, it does not re-derive the rule. */
+  questionsPerAttempt: number;
   /** Shuffle each question's option order per attempt. */
   shuffleOptions?: boolean;
 }
