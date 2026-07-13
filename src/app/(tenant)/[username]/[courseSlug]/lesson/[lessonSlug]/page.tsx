@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
 import { lessonAccess, type LessonLockReason } from "@/lib/gating";
 import { LessonPlayer } from "@/components/lesson-player";
+import { LessonViewPing } from "@/components/lesson-view-ping";
 import { MarkCompleteButton } from "@/components/mark-complete-button";
 import { RecallPlayer } from "@/components/recall-player";
 import { ProgressBar } from "@/components/progress-bits";
@@ -213,11 +214,20 @@ export default async function LessonPage({ params }: Params) {
           <div className="mt-6">
             {access.open ? (
           <>
+            {/* Records "the learner opened this lesson" (for the ACTIVE learner — a managed child
+                when a parent is studying as one), so Continue can point at the lesson they were
+                really on instead of the first gap in the syllabus. Never a completion. Signed-out
+                learners simply don't render it — no ping, no error. */}
+            {view.session ? <LessonViewPing courseId={view.course.id} lessonId={lesson.id} /> : null}
             {/* Open with recall: quiz the PREVIOUS lesson before this one's content. */}
             {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 ? (
               <RecallPlayer courseId={view.course.id} lessonId={lesson.id} items={lesson.recallContent} />
             ) : null}
-            <LessonPlayer lesson={lesson} />
+            <LessonPlayer
+              lesson={lesson}
+              trackPlayback={Boolean(view.session)}
+              resumeAt={view.watchSeconds.get(lesson.id) ?? 0}
+            />
             <SaveOfflineButton
               pagePath={`${base}/lesson/${lesson.slug}`}
               mediaUrl={directMediaUrl(lesson)}

@@ -9,6 +9,7 @@ import { ogImageUrl } from "@/lib/og";
 import { RelatedTools } from "@/components/related-tools";
 import { ShareButton } from "@/components/share-button";
 import { lessonAccess, isFreeCourse } from "@/lib/gating";
+import { selectResume } from "@/lib/resume";
 import { isDirectMediaFile } from "@/lib/media";
 import type { SavableLesson } from "@/lib/offline";
 import {
@@ -94,6 +95,26 @@ export default async function CourseBySlugPage({ params }: Params) {
   const completedCount = lessons.filter((l) => completedLessonIds.has(l.id)).length;
   const percent = lessons.length > 0 ? Math.round((completedCount / lessons.length) * 100) : 0;
   const showProgress = (view.isEnrolled || completedCount > 0) && lessons.length > 0;
+
+  // "Continue where you left off" — the lesson the learner was ACTUALLY on (last opened), not the
+  // first gap in the syllabus. Only shown once they've genuinely begun, so the copy never lies to
+  // someone who has never opened the course; and only when the lesson is still open to them (a
+  // sequential course could have re-locked it), otherwise the syllabus below is the honest answer.
+  const hasBegun = Boolean(view.lastViewedLessonId) || completedCount > 0;
+  const resumeLesson =
+    view.session && hasBegun
+      ? selectResume(lessons, completedLessonIds, view.lastViewedLessonId).lesson
+      : null;
+  const resumeHref =
+    resumeLesson?.slug &&
+    lessonAccess(course, resumeLesson, { isEditor, isEnrolled: view.isEnrolled, completedLessonIds, orderedLessonIds }).open
+      ? `${base}/lesson/${resumeLesson.slug}`
+      : null;
+  // Distinguish "you stopped mid-lesson" from "you finished that one, here's the next".
+  const resumingInProgress =
+    resumeLesson != null &&
+    resumeLesson.id === view.lastViewedLessonId &&
+    !completedLessonIds.has(resumeLesson.id);
   // Every lesson the learner may save for offline: page path, direct-media file (when applicable),
   // and the metadata the offline manifest needs so /downloads can name it with no network (a
   // cached URL alone can't tell you its course, section or title — see src/lib/offline-manifest.ts).
@@ -242,6 +263,27 @@ export default async function CourseBySlugPage({ params }: Params) {
       ) : null}
       {course.description ? (
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
+      ) : null}
+
+      {resumeLesson && resumeHref ? (
+        <section className="mt-5 flex flex-col gap-4 rounded-xl border-2 p-4 sm:flex-row sm:items-center" style={{ borderColor: "var(--accent)" }}>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
+              {resumingInProgress ? "Continue where you left off" : "Next up"}
+            </p>
+            <p className="mt-0.5 truncate text-lg font-bold">{resumeLesson.title}</p>
+            <p className="mt-0.5 text-sm text-neutral-500">
+              Lesson {lessons.indexOf(resumeLesson) + 1} of {lessons.length}
+            </p>
+          </div>
+          <Link
+            href={resumeHref}
+            className="grid min-h-11 shrink-0 place-items-center rounded-xl px-6 text-center font-semibold focus-visible:outline-2 focus-visible:outline-offset-2"
+            style={{ backgroundColor: "var(--accent)", color: "var(--accent-fg, #fff)" }}
+          >
+            {resumingInProgress ? "Resume" : "Continue"} →
+          </Link>
+        </section>
       ) : null}
 
       {showProgress ? (

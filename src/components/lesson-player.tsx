@@ -13,7 +13,12 @@ import { isDirectMediaFile, parseChapters, parseTranscript, toEmbed } from "@/li
 // Renders a lesson by type. Text/audio/video (file or YouTube/Vimeo embed) are first-class
 // with chapter jump-markers + a synced transcript; slides/PDF embed; 360/tour/map have basic
 // viewers. Markdown is rendered as preserved-whitespace text (no HTML injection).
-export function LessonPlayer({ lesson }: { lesson: Lesson }) {
+//
+// `resumeAt` is the ACTIVE learner's saved playback position for this lesson (0 when signed
+// out, or when they've never played it) — direct-media audio/video picks up from there.
+export function LessonPlayer({ lesson, resumeAt = 0, trackPlayback = false }: { lesson: Lesson; resumeAt?: number; trackPlayback?: boolean }) {
+  // Only a signed-in learner has a position worth saving; signed out, the player is untracked.
+  const track = trackPlayback ? { courseId: lesson.courseId, lessonId: lesson.id, resumeAt } : {};
   switch (lesson.lessonType) {
     case "video":
     case "360video": {
@@ -29,6 +34,7 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
             poster={lesson.video360PosterUrl ?? undefined}
             chapters={chapters}
             transcript={transcript}
+            {...track}
           />
         );
       }
@@ -55,6 +61,7 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
           src={lesson.contentUrl}
           chapters={parseChapters(lesson.audioChapters)}
           transcript={parseTranscript(lesson.transcriptContent)}
+          {...track}
         />
       ) : (
         <Empty />
