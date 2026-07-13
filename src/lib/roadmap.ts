@@ -348,6 +348,23 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
+- 🔧 **/explore is a landing page now** (\`feat/explore-landing\`) — the Commodity Map page was an
+  \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
+  now answers **what is this → what will my student learn → why trust it → what next**, for the
+  people who actually buy (parents, teachers, homeschoolers), each addressed on their own terms.
+  **The map is still the centrepiece** — short hero, map immediately below it, both CTAs pointing
+  back at it. **Every figure on the page is a count of the tenant's own rows** (episodes, origins,
+  seasons, belt countries, lessons, courses, free courses, cited sources, verified sources, tracked
+  claims, named instructors) via a new tenant-scoped \`src/db/queries/explore.ts\` — \`course_sources\`
+  / \`course_claims\` carry no \`tenant_id\`, so every aggregate INNER JOINs \`courses\` and filters
+  \`courses.tenant_id\`; that join IS the boundary. **No invented stats, no efficacy claims, no
+  testimonials, no standards-alignment claim**; the one pedagogical claim carries three real,
+  verified APA 7 citations rendered on the page (Smith 2002; Sobel 2004; McGrew et al. 2018). The
+  FAQ answers only what the repo can answer truthfully (cost is derived from \`price_type\`) — age
+  range, time commitment and standards alignment are **deliberately absent** pending BAM
+  (\`plans/user-tasks/72\`). Hero copy is per-tenant overridable via \`platform_settings\`
+  (\`explore_headline\`/\`explore_subhead\`/\`explore_intro\`) with brand-neutral defaults — **no
+  migration**. Metadata/OG/JSON-LD tenant-scoped. Mobile-first (no 320px overflow; ≥44px targets).
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
