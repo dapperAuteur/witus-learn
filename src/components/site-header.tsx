@@ -68,7 +68,15 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   const showTeachMenu = Boolean(session) && canTeach && teachItems.length > 0;
 
   // Only rendered when signed in; Sign out is appended as the trailing action in both the
-  // desktop dropdown and the mobile drawer's Account section.
+  // desktop dropdown and the mobile drawer's Account section. ONE array feeds both the desktop
+  // dropdown (NavMenu) and the mobile drawer (MobileNav), so an item added here lights up both.
+  //
+  // Downloads is `hardNav` — a real <a>, not a <Link>. /downloads lives outside the (tenant)
+  // route group precisely so it needs no tenant/session/DB call and the service worker can serve
+  // it with zero network; a <Link> would issue an RSC fetch that fails the moment the learner is
+  // offline, i.e. exactly when they reach for this menu. Gating the LINK on a session is fine —
+  // the PAGE stays open to anyone at /downloads (never gate it), because its whole contract is
+  // "renderable from cache with no session lookup".
   const accountItems: NavItem[] = session
     ? [
         { href: "/dashboard", label: "Dashboard" },
@@ -76,6 +84,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
         { href: "/family", label: "Family" },
         { href: "/my-courses", label: "My Courses" },
         { href: "/field-log", label: "My Field Log" },
+        { href: "/downloads", label: "Downloads", hardNav: true },
       ]
     : [];
 

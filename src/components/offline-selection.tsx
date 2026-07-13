@@ -285,6 +285,24 @@ function OfflineUnavailable({ reason }: { reason: string }) {
   );
 }
 
+/** "Manage downloads" → the Downloads manager. Only shown once this device actually HAS something
+ *  saved, so it's a useful exit and not permanent chrome on a course nobody has downloaded.
+ *
+ *  Real <a>, not next/link: /downloads is served from the service worker's precache when there's
+ *  no network, and only a hard navigation is a request the SW can answer. A <Link> would issue an
+ *  RSC fetch that fails offline — on the one screen that exists for offline. */
+function ManageDownloadsLink() {
+  return (
+    // eslint-disable-next-line @next/next/no-html-link-for-pages
+    <a
+      href="/downloads"
+      className="inline-flex min-h-8 items-center text-xs text-neutral-500 underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11 dark:text-neutral-400"
+    >
+      Manage downloads
+    </a>
+  );
+}
+
 /** The one-click path, preserved: download every accessible lesson in the course. Sits next to the
  *  syllabus heading and shares state with the checkboxes, so ticks appear as it goes. */
 export function OfflineDownloadAllButton() {
@@ -299,26 +317,32 @@ export function OfflineDownloadAllButton() {
   const total = ctx.allPaths.length;
   const savedCount = total - missing.length;
   const wholeCourse = ctx.busy?.mode === "save" && ctx.busy.total === total;
-
-  if (missing.length === 0) {
-    return (
-      <span className="text-sm text-green-700 dark:text-green-400">✓ Whole course saved for offline</span>
-    );
-  }
+  // `saved` is scoped to THIS course's lessons (refreshSaved filters by byPath), so this means
+  // "the learner has downloaded something here" — the moment a manage/remove exit becomes useful.
+  const hasDownloads = ctx.saved.size > 0;
 
   return (
-    <button
-      type="button"
-      onClick={() => void ctx.download(missing)}
-      disabled={ctx.busy !== null}
-      className="inline-flex min-h-10 items-center rounded-md border border-neutral-300 px-3 text-sm hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 pointer-coarse:min-h-11 dark:border-neutral-700 dark:hover:bg-neutral-800"
-    >
-      {wholeCourse && ctx.busy
-        ? `Saving… ${ctx.busy.done}/${ctx.busy.total}`
-        : savedCount > 0
-          ? `⬇ Save the remaining ${missing.length} lesson${missing.length === 1 ? "" : "s"}`
-          : `⬇ Save whole course (${total} lesson${total === 1 ? "" : "s"})`}
-    </button>
+    <span className="flex flex-wrap items-center gap-x-3 gap-y-1">
+      {missing.length === 0 ? (
+        <span className="text-sm text-green-700 dark:text-green-400">
+          ✓ Whole course saved for offline
+        </span>
+      ) : (
+        <button
+          type="button"
+          onClick={() => void ctx.download(missing)}
+          disabled={ctx.busy !== null}
+          className="inline-flex min-h-10 items-center rounded-md border border-neutral-300 px-3 text-sm hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 pointer-coarse:min-h-11 dark:border-neutral-700 dark:hover:bg-neutral-800"
+        >
+          {wholeCourse && ctx.busy
+            ? `Saving… ${ctx.busy.done}/${ctx.busy.total}`
+            : savedCount > 0
+              ? `⬇ Save the remaining ${missing.length} lesson${missing.length === 1 ? "" : "s"}`
+              : `⬇ Save whole course (${total} lesson${total === 1 ? "" : "s"})`}
+        </button>
+      )}
+      {hasDownloads ? <ManageDownloadsLink /> : null}
+    </span>
   );
 }
 

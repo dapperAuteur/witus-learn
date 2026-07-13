@@ -24,6 +24,10 @@ export async function sendCompletionEmail(opts: {
     replyTo: opts.tenant.email.replyTo,
     subject: `Your ${brand} certificate: ${opts.course.title}`,
     text: `${who}congratulations on completing "${opts.course.title}" with ${brand}.\n\nVerify your certificate:\n${verifyUrl}\n`,
+    // `/verify/<token>` is PUBLIC by design (a stranger is meant to be able to open it and check
+    // the certificate), so it survives the Inbox mirror's redaction — see email-redact.ts.
+    kind: "certificate",
+    tenant: opts.tenant.slug,
   });
 }
 
@@ -43,6 +47,9 @@ export async function sendCohortInviteEmail(opts: {
     replyTo: opts.tenant.email.replyTo,
     subject: `You're invited to "${opts.cohortName}" on ${brand}`,
     text: `You've been invited to join the class "${opts.cohortName}" on ${brand}.\n\nJoin here:\n${opts.inviteUrl}\n`,
+    // `/join/<token>` GRANTS class membership to whoever holds it → stripped from the Inbox mirror.
+    kind: "cohort-invite",
+    tenant: opts.tenant.slug,
   });
 }
 
@@ -106,6 +113,13 @@ export async function sendPricingInquiryEmail(opts: {
     replyTo: opts.fromEmail,
     subject: `${brand}: pricing enquiry from ${who}`,
     text: lines.join("\n"),
+    // Note: the ENQUIRY itself is already mirrored by submitPricingInquiry as
+    // `learn-witus-pricing-inquiry` (with the full lead). This mirrors the NOTIFICATION EMAIL as
+    // `learn-witus-email:pricing-inquiry` — a different form_type, so triage can tell "a lead came
+    // in" from "we emailed the brand about it", which is exactly the pair you want when a send
+    // silently fails.
+    kind: "pricing-inquiry",
+    tenant: opts.tenant.slug,
   });
 }
 
@@ -125,5 +139,9 @@ export async function sendGuardianInviteEmail(opts: {
     replyTo: opts.tenant.email.replyTo,
     subject: `See ${opts.studentName}'s progress on ${brand}`,
     text: `You've been invited to link your ${brand} parent account to ${opts.studentName}, so you can see their course progress, grades, and attendance.\n\nLink your account:\n${opts.inviteUrl}\n`,
+    // `/family/accept/<token>` GRANTS access to a CHILD's data → the most sensitive link we send.
+    // Stripped from the Inbox mirror; only the fact that the invite went out is recorded.
+    kind: "guardian-invite",
+    tenant: opts.tenant.slug,
   });
 }

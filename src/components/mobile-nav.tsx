@@ -77,16 +77,25 @@ export function MobileNav({
   }
 
   function renderLink(i: NavItem) {
+    // `hardNav` items (today: /downloads) MUST be a real <a> — a client-side <Link> navigation
+    // is an RSC fetch, which dies with no network, and the drawer is exactly where an offline
+    // learner goes looking for their downloads. See NavItem.hardNav.
+    const props = {
+      onClick: () => setOpen(false),
+      className: linkClass,
+      style: i.accent ? { color: "var(--accent)", fontWeight: 500 } : undefined,
+    };
     return (
       <li key={i.href}>
-        <Link
-          href={i.href}
-          onClick={() => setOpen(false)}
-          className={linkClass}
-          style={i.accent ? { color: "var(--accent)", fontWeight: 500 } : undefined}
-        >
-          {i.label}
-        </Link>
+        {i.hardNav ? (
+          <a href={i.href} {...props}>
+            {i.label}
+          </a>
+        ) : (
+          <Link href={i.href} {...props}>
+            {i.label}
+          </Link>
+        )}
       </li>
     );
   }
