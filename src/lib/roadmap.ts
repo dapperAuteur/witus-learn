@@ -379,13 +379,32 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   claims, named instructors) via a new tenant-scoped \`src/db/queries/explore.ts\` — \`course_sources\`
   / \`course_claims\` carry no \`tenant_id\`, so every aggregate INNER JOINs \`courses\` and filters
   \`courses.tenant_id\`; that join IS the boundary. **No invented stats, no efficacy claims, no
-  testimonials, no standards-alignment claim**; the one pedagogical claim carries three real,
-  verified APA 7 citations rendered on the page (Smith 2002; Sobel 2004; McGrew et al. 2018). The
-  FAQ answers only what the repo can answer truthfully (cost is derived from \`price_type\`) — age
-  range, time commitment and standards alignment are **deliberately absent** pending BAM
-  (\`plans/user-tasks/72\`). Hero copy is per-tenant overridable via \`platform_settings\`
+  testimonials**; the one pedagogical claim carries three real, verified APA 7 citations rendered
+  on the page (Smith 2002; Sobel 2004; McGrew et al. 2018). The FAQ answers only what the repo can
+  answer truthfully (cost is derived from \`price_type\`) — time commitment is still **deliberately
+  absent** pending BAM (\`plans/user-tasks/72\`); **age range is now confirmed (high school)** and
+  **standards alignment now ships** (see below), so both have been removed from that list. Hero
+  copy is per-tenant overridable via \`platform_settings\`
   (\`explore_headline\`/\`explore_subhead\`/\`explore_intro\`) with brand-neutral defaults — **no
   migration**. Metadata/OG/JSON-LD tenant-scoped. Mobile-first (no 320px overflow; ≥44px targets).
+- 🔧 **Standards alignment** (\`feat/explore-standards\`) — a \`/standards\` page, linked from
+  \`/explore\`, answering the one question a teacher or a reporting homeschooler asks first: *which
+  requirements does this meet, and which lesson meets them?* **31 standards across 9 frameworks in
+  2 jurisdictions**, each with its **exact code**, the standard's **verbatim text**, a link to the
+  **publisher's own document**, the **lessons** that cover it, and a \`full\` | \`partial\` flag —
+  partials must state what is missing (a unit test enforces it). Indiana: Economics (2026), Geography
+  and History of the World, World History and Civilization, U.S. History, ELA 9-10 and 11-12 (all
+  2023 IDOE). Washington, D.C. resolves to **three** frameworks, because DC has no homegrown set:
+  **Common Core** (ELA, adopted Jul 2010), **NGSS** (science, adopted Dec 2013) and **DC's own K-12
+  Social Studies Standards** (Jun 2023) — all three confirmed on OSSE's own pages. The page states,
+  above the claims, that **we** did the mapping (nobody endorsed it), the **date every standard was
+  fetched**, and that standards get revised. Honest omissions are published too: **no mathematics**,
+  **almost no science** (one NGSS PE, partial — there is no lab work here and we say so), and no DC
+  citation for Prohibition/mass incarceration because DC's standards contain none. Tenant-scoped:
+  the table is keyed by course **slug** and \`db/queries/standards.ts\` resolves slugs against
+  **this** tenant's published courses, so a Season-1-only school (Learn.WitUS, ElementaryMBA) can
+  never surface a Season 2/3 standard, and a tenant hosting none of the curriculum **404s**.
+  Printable + one-click copy-as-plain-text for state filings. **No migration.**
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
