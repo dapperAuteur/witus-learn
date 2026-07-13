@@ -59,7 +59,7 @@ export function ChapterEditor({
                   e.target.value = c.start != null ? formatTimecode(c.start) : "";
                 }}
                 aria-label={`Chapter ${i + 1} time`}
-                className="min-h-8 w-20 rounded-md border border-neutral-300 px-2 text-sm dark:border-neutral-700 dark:bg-neutral-900"
+                className="min-h-8 w-20 rounded-md border border-neutral-300 px-2 text-sm pointer-coarse:min-h-11 dark:border-neutral-700 dark:bg-neutral-900"
                 placeholder="m:ss"
               />
               <input
@@ -67,14 +67,14 @@ export function ChapterEditor({
                 value={c.title}
                 onChange={(e) => update(i, { title: e.target.value })}
                 aria-label={`Chapter ${i + 1} title`}
-                className="min-h-8 flex-1 rounded-md border border-neutral-300 px-2 text-sm dark:border-neutral-700 dark:bg-neutral-900"
+                className="min-h-8 flex-1 rounded-md border border-neutral-300 px-2 text-sm pointer-coarse:min-h-11 dark:border-neutral-700 dark:bg-neutral-900"
                 placeholder="Chapter title"
               />
               <button
                 type="button"
                 onClick={() => remove(i)}
                 aria-label={`Remove chapter ${i + 1}`}
-                className="min-h-8 min-w-8 rounded px-2 text-neutral-400 hover:text-red-600 focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="min-h-8 min-w-8 rounded px-2 text-neutral-400 hover:text-red-600 focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-11 pointer-coarse:min-w-11"
               >
                 ✕
               </button>
