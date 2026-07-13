@@ -13,6 +13,8 @@ import {
   type Course,
 } from "@/db/schema";
 import { listLessons } from "@/db/queries/authoring";
+import { getLastViewedLessonId } from "@/db/queries/progress";
+import { selectResume } from "@/lib/resume";
 
 export interface NextLesson {
   slug: string;
@@ -175,7 +177,11 @@ export async function getLearnerDashboard(tenantId: string, userId: string): Pro
     .select({
       courseId: lessons.courseId,
       done: sql<number>`count(*) filter (where ${lessonProgress.completedAt} is not null)::int`,
-      lastActivity: sql<string | null>`max(${lessonProgress.updatedAt})`,
+      // "Last activity" has to include OPENING a lesson, not just writing to it. updated_at moves
+      // only on a real progress write (a completion, a quiz score); last_viewed_at moves when the
+      // learner merely reads. A learner who spent an hour reading and finished nothing was still
+      // active in this course, so take whichever is later.
+      lastActivity: sql<string | null>`max(greatest(${lessonProgress.updatedAt}, coalesce(${lessonProgress.lastViewedAt}, ${lessonProgress.updatedAt})))`,
     })
     .from(lessonProgress)
     .innerJoin(lessons, eq(lessons.id, lessonProgress.lessonId))
@@ -211,28 +217,34 @@ export async function getLearnerDashboard(tenantId: string, userId: string): Pro
       .filter((d) => d.percent < 100)
       .sort((a, b) => (b.lastActivity?.getTime() ?? 0) - (a.lastActivity?.getTime() ?? 0))[0] ?? null;
 
+  // What "Continue" actually points at. The old rule — first incomplete lesson in course order —
+  // is wrong for anyone who skips around: a learner who jumped ahead to lesson 20 and never went
+  // back for lesson 3 was sent to lesson 3, which is not where they left off. Resume now follows
+  // last_viewed_at (see src/lib/resume.ts); first-incomplete survives only as the fallback for a
+  // learner who has never opened anything.
   let upNext: NextLesson[] = [];
   if (resume) {
     const published = (await listLessons(resume.course.id)).filter((l) => l.isPublished && l.slug);
-    const completedIds = new Set(
-      (
-        await db
-          .select({ id: lessonProgress.lessonId })
-          .from(lessonProgress)
-          .innerJoin(lessons, eq(lessons.id, lessonProgress.lessonId))
-          .where(
-            and(
-              eq(lessonProgress.userId, userId),
-              eq(lessons.courseId, resume.course.id),
-              isNotNull(lessonProgress.completedAt),
-            ),
-          )
-      ).map((r) => r.id),
-    );
-    upNext = published
-      .filter((l) => !completedIds.has(l.id))
-      .slice(0, 3)
-      .map((l) => ({ slug: l.slug as string, title: l.title, lessonType: l.lessonType }));
+    const [completedIdRows, lastViewedLessonId] = await Promise.all([
+      db
+        .select({ id: lessonProgress.lessonId })
+        .from(lessonProgress)
+        .innerJoin(lessons, eq(lessons.id, lessonProgress.lessonId))
+        .where(
+          and(
+            eq(lessonProgress.userId, userId),
+            eq(lessons.courseId, resume.course.id),
+            isNotNull(lessonProgress.completedAt),
+          ),
+        ),
+      getLastViewedLessonId(userId, resume.course.id),
+    ]);
+    const completedIds = new Set(completedIdRows.map((r) => r.id));
+    upNext = selectResume(published, completedIds, lastViewedLessonId).upNext.map((l) => ({
+      slug: l.slug as string,
+      title: l.title,
+      lessonType: l.lessonType,
+    }));
   }
 
   const coursesCompleted = dashCourses.filter((d) => d.percent === 100).length;

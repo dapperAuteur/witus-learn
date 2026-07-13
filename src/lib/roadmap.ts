@@ -172,6 +172,26 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   reported after it's **read back out of the cache**; and every "saved" affordance is gated on
   \`navigator.serviceWorker.controller\` (an **Offline diagnostics** panel on \`/downloads\` shows it).
   Verified end-to-end in real Chrome against a **killed server**, not just typechecked.
+- ✅ **Resume where you left off** (\`feat/resume-where-you-left-off\`) — progress already recorded
+  **skipping around** faithfully (\`lesson_progress\` is keyed on \`(user, lesson)\`, not a linear
+  pointer), but a row was only written on **"Mark complete"** — opening a lesson and reading half of
+  it wrote nothing, so the app couldn't tell "started and left" from "never opened". Resume then fell
+  back to the *first incomplete lesson in course order*, which sent a learner who'd skipped ahead to
+  lesson 20 back to their lesson-3 gap. Now: a **\`last_viewed_at\`** column (migration **0034**;
+  deliberately NOT \`updated_at\`, which moves on any write — a quiz score is not a view) fed by a lean
+  tenant-scoped **\`/view\` ping**; **\`src/lib/resume.ts\`**, the pure, unit-tested rule (last-viewed +
+  unfinished → resume there · last-viewed + finished → roll forward · never opened → lesson 1); the
+  **dashboard** Continue/Up-next follow it; and a **"Continue where you left off"** card on the course
+  page **naming the lesson**. **\`watch_seconds\` is finally wired** — audio/video resumes mid-track
+  (with a "Start over" escape), which matters most for FAA Part 107's 118 audio lessons. **Viewing is
+  not completing:** \`completed_at\` alone still drives the %, sequential unlocking, and certificates.
+  Recorded against the **active learner**, so a parent studying as a child resumes the *child*. Cheap
+  on purpose (Neon egress): 30s server-side debounce + a client guard on the ping, one player write
+  per ~20s and on pause/leave (never on the timeupdate tick), and the course page reads completion +
+  last-viewed + positions in ONE query that *replaces* the old completed-ids query.
+- ⚪ **Resume for multi-part audio + embeds** — the position is remembered for direct-media
+  audio/video only. \`MultiPartPlayer\` (a long recording split into parts) would additionally need the
+  part index, and YouTube/Vimeo embeds expose no time to us without their iframe APIs. Not started.
 - ⚪ **WYSIWYG + markdown editor** (CentOS) for lesson authoring in the dashboard.
 - ✅ **Rich lesson media** — native audio/video files get a full player; YouTube/Vimeo/Google
   Slides/PDF auto-embed (\`toEmbed\`). Cloudinary upload UI is the remaining piece (URLs work today).
