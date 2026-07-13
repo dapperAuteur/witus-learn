@@ -121,11 +121,15 @@ export default async function LessonPage({ params }: Params) {
       </div>
 
       <div className="mx-auto flex max-w-6xl gap-8 px-4 py-8">
-        {/* Contents rail — completion at a glance. */}
+        {/* Contents rail — completion at a glance. On a sectioned course (FAA Part 107 runs 14
+            modules / 100+ lessons) a flat list is an endless scroll, so lessons are grouped into
+            collapsible sections and only the section you're in starts open. Flat courses stay flat. */}
         <nav aria-label="Lessons in this course" className="hidden w-60 shrink-0 lg:block">
-          <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">Lessons</div>
-          <ol className="mt-3 space-y-0.5 text-sm">
-            {view.lessons.map((l) => {
+          <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
+            {view.modules.length > 0 ? "Sections" : "Lessons"}
+          </div>
+          {(() => {
+            const lessonLink = (l: (typeof view.lessons)[number]) => {
               const done = view.completedLessonIds.has(l.id);
               const current = l.id === lesson.id;
               return (
@@ -153,8 +157,35 @@ export default async function LessonPage({ params }: Params) {
                   </Link>
                 </li>
               );
-            })}
-          </ol>
+            };
+
+            if (view.modules.length === 0) {
+              return <ol className="mt-3 space-y-0.5 text-sm">{view.lessons.map(lessonLink)}</ol>;
+            }
+            const ungrouped = view.lessons.filter((l) => !l.moduleId);
+            return (
+              <div className="mt-3 space-y-1 text-sm">
+                {view.modules.map((mod) => {
+                  const modLessons = view.lessons.filter((l) => l.moduleId === mod.id);
+                  if (modLessons.length === 0) return null;
+                  const doneCount = modLessons.filter((l) => view.completedLessonIds.has(l.id)).length;
+                  const hasCurrent = modLessons.some((l) => l.id === lesson.id);
+                  return (
+                    <details key={mod.id} open={hasCurrent}>
+                      <summary className="flex cursor-pointer list-none items-center justify-between gap-2 rounded-md px-2 py-1.5 font-medium hover:bg-neutral-50 dark:hover:bg-neutral-900">
+                        <span className="min-w-0 truncate">{mod.title}</span>
+                        <span className="shrink-0 text-xs tabular-nums text-neutral-500">
+                          {doneCount}/{modLessons.length}
+                        </span>
+                      </summary>
+                      <ol className="space-y-0.5 pl-2">{modLessons.map(lessonLink)}</ol>
+                    </details>
+                  );
+                })}
+                {ungrouped.length > 0 ? <ol className="space-y-0.5">{ungrouped.map(lessonLink)}</ol> : null}
+              </div>
+            );
+          })()}
         </nav>
 
         {/* Main lesson column. */}
