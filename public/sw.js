@@ -4,7 +4,7 @@
 // (3) cache only immutable hashed assets. API + cross-origin are never touched. Service workers
 // are per-origin, so each tenant domain gets its own cache — no cross-tenant leakage. Bump
 // VERSION to roll out a new SW + purge old caches.
-const VERSION = "v3";
+const VERSION = "v4";
 const STATIC_CACHE = `witus-static-${VERSION}`;
 // Media + lesson pages the learner explicitly saved for offline. Independent of VERSION so a SW
 // update never wipes a learner's downloads — both are preserved across activations. Keep these
@@ -12,12 +12,23 @@ const STATIC_CACHE = `witus-static-${VERSION}`;
 const MEDIA_CACHE = "witus-media-v1";
 const PAGES_CACHE = "witus-pages-v1";
 const OFFLINE_URL = "/offline";
+// The Downloads manager — the ONLY screen where a learner can see and delete what they've saved.
+// It has to work with no network, so it's precached here alongside the offline fallback. Both are
+// tenant-neutral, DB-free pages (outside the (tenant) route group) precisely so one cached copy is
+// correct on every domain. src/lib/offline.ts ALSO re-caches /downloads into PAGES_CACHE on the
+// learner's first save, so a failed install-time fetch here can't strand them.
+const DOWNLOADS_URL = "/downloads";
 // Synthetic key a saved page's RSC (React Server Component) payload is stored under — see
 // src/lib/offline.ts. Not a real URL, so it can't collide with a real cached page.
 const rscKey = (pathname) => `${pathname}?__rsc`;
 
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(STATIC_CACHE).then((c) => c.add(OFFLINE_URL)).catch(() => {}));
+  // Added independently (not addAll) so one failing fetch doesn't take the other down with it.
+  event.waitUntil(
+    caches.open(STATIC_CACHE).then((c) =>
+      Promise.all([c.add(OFFLINE_URL).catch(() => {}), c.add(DOWNLOADS_URL).catch(() => {})]),
+    ).catch(() => {}),
+  );
   self.skipWaiting();
 });
 
@@ -82,17 +93,23 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Page navigations → network-first (always fresh online). Offline, serve the learner's own
-  // saved copy of this exact lesson page when they saved it (ignoreSearch: query strings don't
-  // change lesson content); only fall back to the generic offline page when nothing was saved.
+  // Page navigations → network-first (always fresh online). Offline, fall back in order:
+  //   1. the learner's own saved copy of this exact lesson page (ignoreSearch: query strings
+  //      don't change lesson content);
+  //   2. a precached app-shell page — today that's /downloads, so a learner with no signal can
+  //      still reach the one screen that lists and deletes their downloads;
+  //   3. the generic /offline page.
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request).catch(() =>
-        caches
-          .open(PAGES_CACHE)
-          .then((c) => c.match(request, { ignoreSearch: true }))
-          .then((hit) => hit || caches.match(OFFLINE_URL)),
-      ),
+      fetch(request).catch(async () => {
+        const pages = await caches.open(PAGES_CACHE);
+        const saved = await pages.match(request, { ignoreSearch: true });
+        if (saved) return saved;
+        const shell = await caches.open(STATIC_CACHE);
+        const shellHit = await shell.match(request, { ignoreSearch: true });
+        if (shellHit) return shellHit;
+        return caches.match(OFFLINE_URL);
+      }),
     );
   }
 });

@@ -1,36 +1,28 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { PAGES_CACHE } from "@/lib/offline";
+import { reconcileOffline, type OfflineInventory } from "@/lib/offline";
 
-// Lists the lesson pages currently saved for offline, read straight from the Cache API (the
-// same PAGES_CACHE src/lib/offline.ts writes into and public/sw.js serves navigations from).
-// Server-rendered on /offline would show nothing (no request/tenant context to scope a DB
-// query to, and the whole point of this page is "the network already failed") — so this reads
-// the *browser's own* cache, which is exactly what's actually usable right now.
+// Lists what's actually saved for offline, read straight from the browser's own Cache API +
+// localStorage manifest (the same stores src/lib/offline.ts writes into and public/sw.js serves
+// navigations from). Server-rendering this would show nothing — the whole point of the page is
+// that the network already failed — so it reads what's genuinely on the device instead.
+//
+// reconcileOffline() treats the CACHE as the source of truth: manifest entries whose page isn't
+// actually cached are pruned, and cached pages the manifest can't name still show (by path). So
+// this list can never advertise a lesson that wouldn't open.
 export function OfflineSavedLessons() {
-  const [pages, setPages] = useState<string[] | null>(null);
+  const [inventory, setInventory] = useState<OfflineInventory | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     // Async setState only (no synchronous set-in-effect), even on the "unsupported" path.
-    Promise.resolve()
-      .then(() => {
-        if (typeof caches === "undefined") return [] as Request[];
-        return caches.open(PAGES_CACHE).then((c) => c.keys());
-      })
-      .then((requests) => {
-        if (cancelled) return;
-        const seen = new Set<string>();
-        for (const req of requests) {
-          const url = new URL(req.url);
-          if (url.searchParams.has("__rsc")) continue; // synthetic RSC-payload key, not a page
-          seen.add(url.pathname);
-        }
-        setPages(Array.from(seen).sort());
+    reconcileOffline()
+      .then((next) => {
+        if (!cancelled) setInventory(next);
       })
       .catch(() => {
-        if (!cancelled) setPages([]);
+        if (!cancelled) setInventory({ entries: [], orphanPages: [], orphanMedia: [] });
       });
     return () => {
       cancelled = true;
@@ -38,13 +30,17 @@ export function OfflineSavedLessons() {
   }, []);
 
   // Loading (or Cache API unsupported): render nothing rather than a flash of "no lessons saved".
-  if (pages === null) return null;
+  if (inventory === null) return null;
 
-  if (pages.length === 0) {
+  const { entries, orphanPages } = inventory;
+  const total = entries.length + orphanPages.length;
+
+  if (total === 0) {
     return (
       <p className="mt-6 text-sm text-neutral-500" role="status">
         You haven&rsquo;t saved any lessons for offline yet. Next time you&rsquo;re online, open a
-        lesson and tap &ldquo;Save for offline&rdquo; so it&rsquo;s here when you need it.
+        course, tick the lessons you want, and tap &ldquo;Download selected&rdquo; so they&rsquo;re
+        here when you need them.
       </p>
     );
   }
@@ -52,20 +48,38 @@ export function OfflineSavedLessons() {
   return (
     <div className="mt-6 w-full max-w-sm text-left" role="status">
       <h2 className="text-xs font-semibold uppercase tracking-wide text-neutral-500">
-        Available offline ({pages.length})
+        Available offline ({total})
       </h2>
       <ul className="mt-2 space-y-1 text-sm">
-        {pages.map((path) => (
-          <li key={path}>
+        {entries.map((entry) => (
+          <li key={entry.pagePath} className="truncate">
             {/* Real <a> (not next/link): guarantees a hard navigation, which the service
                 worker's navigate handler can serve from the page cache even if this path's
                 RSC payload wasn't also saved. */}
+            <a href={entry.pagePath} className="underline underline-offset-2" style={{ color: "var(--accent, #111)" }}>
+              {entry.lessonTitle}
+            </a>
+            <span className="block truncate text-xs text-neutral-500">{entry.courseTitle}</span>
+          </li>
+        ))}
+        {orphanPages.map((path) => (
+          <li key={path} className="truncate">
             <a href={path} className="underline underline-offset-2" style={{ color: "var(--accent, #111)" }}>
               {path}
             </a>
           </li>
         ))}
       </ul>
+      {/* Real <a>: /downloads must be entered by a hard navigation — the only kind the service
+          worker can answer from cache, and this component only ever renders when we're offline. */}
+      {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+      <a
+        href="/downloads"
+        className="mt-4 inline-flex min-h-11 items-center text-sm underline underline-offset-2"
+        style={{ color: "var(--accent, #111)" }}
+      >
+        Manage downloads →
+      </a>
     </div>
   );
 }
