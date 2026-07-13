@@ -1,0 +1,1 @@
+ALTER TABLE "leads" ADD COLUMN "inquiries" jsonb DEFAULT '[]'::jsonb NOT NULL;
