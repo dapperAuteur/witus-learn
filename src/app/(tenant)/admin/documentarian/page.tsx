@@ -21,7 +21,7 @@ export default async function DocumentarianAdminPage() {
         The build tracker for the “trusted documentarian” course family — a shared trust core, a
         standalone Archives &amp; Records course, a Words → Sound → Motion medium ladder, and medium ×
         subject specializations, all sourced from the Ghana trip. Check things off and leave notes as
-        you go; the full plan lives in <span className="font-mono">plans/future/12-documentarian-program.md</span>.
+        you go; the full plan lives in <span className="break-all font-mono">plans/future/12-documentarian-program.md</span>.
       </p>
       <div className="mt-6">
         <DocumentarianTracker initial={state} />

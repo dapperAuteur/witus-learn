@@ -48,7 +48,7 @@ export function TenantSettingsForm({ initial }: { initial: TenantSettings }) {
             Tagline
             <input className={`mt-1 ${field}`} value={s.tagline} maxLength={200} onChange={(e) => set("tagline", e.target.value)} />
           </label>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <label className="text-sm font-medium">
               Accent
               <div className="mt-1 flex items-center gap-2">

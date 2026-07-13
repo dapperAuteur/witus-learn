@@ -38,19 +38,21 @@ export default async function ReviewProjectPage({ params }: Params) {
         </ol>
 
         <h2 className="mt-4 font-semibold">Consent ledger</h2>
-        <table className="mt-1 w-full text-left">
-          <thead className="text-xs text-neutral-500"><tr><th className="py-1 pr-3">Subject</th><th className="py-1 pr-3">Consent</th><th className="py-1 pr-3">Minor</th></tr></thead>
-          <tbody>
-            {captures.map((c) => (
-              <tr key={c.id} className="border-t border-neutral-100 dark:border-neutral-800">
-                <td className="py-1 pr-3">{c.subject ?? "—"}</td>
-                <td className="py-1 pr-3">{c.consentStatus}</td>
-                <td className="py-1 pr-3">{c.involvesMinor ? "yes" : ""}</td>
-              </tr>
-            ))}
-            {captures.length === 0 ? <tr><td colSpan={3} className="py-1 text-neutral-500">No captures.</td></tr> : null}
-          </tbody>
-        </table>
+        <div className="mt-1 overflow-x-auto">
+          <table className="w-full text-left">
+            <thead className="text-xs text-neutral-500"><tr><th className="py-1 pr-3">Subject</th><th className="py-1 pr-3">Consent</th><th className="py-1 pr-3">Minor</th></tr></thead>
+            <tbody>
+              {captures.map((c) => (
+                <tr key={c.id} className="border-t border-neutral-100 dark:border-neutral-800">
+                  <td className="py-1 pr-3">{c.subject ?? "—"}</td>
+                  <td className="py-1 pr-3">{c.consentStatus}</td>
+                  <td className="py-1 pr-3">{c.involvesMinor ? "yes" : ""}</td>
+                </tr>
+              ))}
+              {captures.length === 0 ? <tr><td colSpan={3} className="py-1 text-neutral-500">No captures.</td></tr> : null}
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section className="mt-6">

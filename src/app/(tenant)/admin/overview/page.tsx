@@ -76,7 +76,7 @@ export default async function OperatorOverviewPage() {
           )
         ) : (
           <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-            Latest on disk: <span className="font-mono">{migration.latestOnDisk ?? "none"}</span> ({migration.onDisk}{" "}
+            Latest on disk: <span className="break-all font-mono">{migration.latestOnDisk ?? "none"}</span> ({migration.onDisk}{" "}
             total). Could not read the applied-migrations count for this database{migration.error ? ` (${migration.error})` : ""} —
             verify prod is migrated manually.
           </p>

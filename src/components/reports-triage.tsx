@@ -63,8 +63,8 @@ export function ReportsTriage({ reports }: { reports: TriageReport[] }) {
               <div className="mb-1 flex flex-wrap items-center gap-2 text-xs text-neutral-500">
                 <span className="rounded-full bg-neutral-100 px-2 py-0.5 capitalize dark:bg-neutral-800">{r.kind}</span>
                 <span>{new Date(r.createdAt).toLocaleString()}</span>
-                {r.pageUrl ? <span className="truncate">· {r.pageUrl}</span> : null}
-                {r.email ? <span>· {r.email}</span> : null}
+                {r.pageUrl ? <span className="break-all">· {r.pageUrl}</span> : null}
+                {r.email ? <span className="break-all">· {r.email}</span> : null}
               </div>
               <p className="whitespace-pre-wrap text-sm">{r.message}</p>
               <div className="mt-2 flex gap-1 text-xs">
