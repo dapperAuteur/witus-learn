@@ -8,6 +8,7 @@ import { listBelts, listCommodities, tenantHasMapData } from "@/db/queries/map";
 import {
   countPublicCourses,
   getCurriculumStats,
+  getEpisodeFacts,
   getExploreCopy,
   getMostCitedCourse,
   summarizeMap,
@@ -15,6 +16,7 @@ import {
 import { type MapPin } from "@/components/commodity-map";
 import { type MapBelt } from "@/components/growing-belts-map";
 import { MapTabs } from "@/components/map-tabs";
+import { EpisodeExplorer } from "@/components/episode-explorer";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // /explore — the landing page for the map curriculum.
@@ -59,7 +61,10 @@ export async function generateMetadata(): Promise<Metadata> {
       ? `${map.commodities} ${plural(map.commodities, "episode")} from ${map.origins} ${plural(map.origins, "origin")} around the world, each one a cited, source-checked course from ${brand}.`
       : copy.subhead;
 
-  const image = ogImageUrl({ title: copy.headline, subtitle: brand });
+  // Share this page and the preview IS the map — /api/og?map=1 renders this tenant's own pins on
+  // the same Natural Earth projection the page uses. The route reads the pins for the tenant it
+  // resolves from the host, so a brand can only ever get its own map on its own card.
+  const image = ogImageUrl({ title: copy.headline, subtitle: brand, map: true });
   return {
     title: copy.headline,
     description,
@@ -81,30 +86,36 @@ export default async function ExplorePage() {
 
   // How many pins actually open a full course — tenant-scoped, so a pin somehow pointing
   // at a foreign course contributes nothing rather than inflating the number.
-  const [pinCourses, citedCourse] = await Promise.all([
-    countPublicCourses(
-      tenant.id,
-      rows.map((c) => c.courseId).filter((id): id is string => !!id),
-    ),
+  const courseIds = rows.map((c) => c.courseId).filter((id): id is string => !!id);
+  const [pinCourses, citedCourse, episodeFacts] = await Promise.all([
+    countPublicCourses(tenant.id, courseIds),
     getMostCitedCourse(tenant.id),
+    // Per-episode lesson/source counts, so clicking a pin can reveal what the episode actually
+    // contains instead of throwing the visitor into the course. Tenant-scoped (see the query).
+    getEpisodeFacts(tenant.id, courseIds),
   ]);
 
   const map = summarizeMap(rows, beltRows);
   const brand = brandName(tenant);
 
-  const pins: MapPin[] = rows.map((c) => ({
-    id: c.id,
-    name: c.name,
-    geo: c.geo,
-    lat: c.lat,
-    lon: c.lon,
-    color: c.color,
-    seasonNumber: c.seasonNumber,
-    isHome: c.isHome,
-    courseId: c.courseId,
-    episodeLabel: c.episodeLabel,
-    summary: c.summary,
-  }));
+  const pins: MapPin[] = rows.map((c) => {
+    const facts = c.courseId ? episodeFacts.get(c.courseId) : undefined;
+    return {
+      id: c.id,
+      name: c.name,
+      geo: c.geo,
+      lat: c.lat,
+      lon: c.lon,
+      color: c.color,
+      seasonNumber: c.seasonNumber,
+      isHome: c.isHome,
+      courseId: c.courseId,
+      episodeLabel: c.episodeLabel,
+      summary: c.summary,
+      lessons: facts?.lessons ?? 0,
+      sources: facts?.sources ?? 0,
+    };
+  });
   const belts: MapBelt[] = beltRows.map((b) => ({
     id: b.id,
     name: b.name,
@@ -251,8 +262,8 @@ export default async function ExplorePage() {
           Start anywhere
         </h2>
         <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
-          Every episode sits at its origin — tap a pin to open it. Switch to{" "}
-          <strong>Growing Belts</strong> to see where each commodity is actually grown.
+          Every episode sits at its origin — tap a pin to read what it is about, right here. Switch
+          to <strong>Growing Belts</strong> to see where each commodity is actually grown.
         </p>
         <div className="mt-5 min-w-0">
           {pins.length === 0 ? (
@@ -318,27 +329,12 @@ export default async function ExplorePage() {
           <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
             One thing you can hold, traced back to where it came from. Each one pulls in history,
             geography, economics, and science — because that is what it takes to explain it honestly.
+            Pick any name to read what it covers.
           </p>
-          <ul className="mt-5 flex flex-wrap gap-2">
-            {rows.map((c) => (
-              <li key={c.id}>
-                <Link
-                  href={`/episode/${c.id}`}
-                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-neutral-300 px-4 py-1.5 text-sm transition-colors hover:border-current focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700"
-                >
-                  <span
-                    aria-hidden
-                    className="h-2.5 w-2.5 shrink-0 rounded-full"
-                    style={{ backgroundColor: c.color ?? "var(--accent)" }}
-                  />
-                  <span className="font-medium">{c.name}</span>
-                  {c.geo ? (
-                    <span className="text-neutral-500 dark:text-neutral-400">· {c.geo}</span>
-                  ) : null}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          {/* Selecting an episode opens it IN PLACE. It used to link straight into /episode/<id>,
+              which ejected a visitor mid-page; now the detail is revealed here and opening the
+              episode is a deliberate second step. */}
+          <EpisodeExplorer pins={pins} />
           {map.beltCountries > 0 ? (
             <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400">
               The <strong>Growing Belts</strong> view maps production regions for {map.belts}{" "}

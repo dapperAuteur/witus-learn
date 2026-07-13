@@ -178,6 +178,61 @@ export async function getMostCitedCourse(
   return rows[0] ?? null;
 }
 
+/**
+ * Per-course facts for the episodes on the map, so clicking a pin can reveal what that episode
+ * actually contains (lessons to work through, sources behind it) INSTEAD of ejecting the visitor
+ * into the course. Keyed by course id.
+ *
+ * Tenant-scoped the same way every other aggregate here is: the courses join carries the tenant
+ * filter, so a pin pointing at another brand's course yields no facts rather than that brand's
+ * numbers. Unpublished/private courses are excluded, so a visitor never learns a draft exists.
+ */
+export interface EpisodeFacts {
+  lessons: number;
+  sources: number;
+}
+
+export async function getEpisodeFacts(
+  tenantId: string,
+  courseIds: string[],
+): Promise<Map<string, EpisodeFacts>> {
+  const ids = [...new Set(courseIds)];
+  const out = new Map<string, EpisodeFacts>();
+  if (ids.length === 0) return out;
+
+  const conds = [...publicCourseConds(tenantId), inArray(courses.id, ids)];
+
+  const [lessonRows, sourceRows] = await Promise.all([
+    db
+      .select({ courseId: courses.id, n: countDistinct(lessons.id) })
+      .from(courses)
+      .leftJoin(
+        lessons,
+        and(
+          eq(lessons.courseId, courses.id),
+          eq(lessons.tenantId, tenantId),
+          eq(lessons.isPublished, true),
+        ),
+      )
+      .where(and(...conds))
+      .groupBy(courses.id),
+
+    db
+      .select({ courseId: courses.id, n: countDistinct(courseSources.id) })
+      .from(courses)
+      .leftJoin(courseSources, eq(courseSources.courseId, courses.id))
+      .where(and(...conds))
+      .groupBy(courses.id),
+  ]);
+
+  for (const r of lessonRows) out.set(r.courseId, { lessons: r.n ?? 0, sources: 0 });
+  for (const r of sourceRows) {
+    const existing = out.get(r.courseId) ?? { lessons: 0, sources: 0 };
+    out.set(r.courseId, { ...existing, sources: r.n ?? 0 });
+  }
+  return out;
+}
+
 // ── Tenant-configurable hero copy (no migration: the generic platform_settings k/v) ──
 
 const HEADLINE_KEY = "explore_headline";
