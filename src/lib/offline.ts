@@ -26,9 +26,25 @@ export type { OfflineEntry, OfflineLessonMeta };
 
 export const PAGES_CACHE = "witus-pages-v1";
 export const MEDIA_CACHE = "witus-media-v1";
+/**
+ * The JS/CSS a saved page needs in order to actually RENDER offline.
+ *
+ * public/sw.js caches `/_next/static/*` cache-first, but only ON DEMAND — a chunk lands in the
+ * cache because the learner requested it, i.e. because they visited the page that needs it. That
+ * silently breaks any page they only ever open OFFLINE: the SW serves the cached HTML, React then
+ * tries to load its route chunk, the network is gone, and the whole page dies with a
+ * ChunkLoadError → "Something went wrong". It bit /downloads and /offline exactly — the two pages
+ * whose entire job is to work with no connection.
+ *
+ * So when we save a page we also save the build assets its HTML references. Content-hashed and
+ * immutable, so they're safe to keep and never need revalidating. Version-independent (like PAGES
+ * and MEDIA) and in the SW's activate-purge allowlist, so a deploy can't strip a learner's
+ * downloads of the code that renders them.
+ */
+export const ASSETS_CACHE = "witus-assets-v1";
 
-/** The Downloads manager route. Precached by the SW and (belt-and-braces) re-cached on first
- *  save — see ensureManagerCached. */
+/** The Downloads manager route. Precached by the SW and (belt-and-braces) re-cached — with its
+ *  JS/CSS — on the learner's first save. See ensureShellCached. */
 export const DOWNLOADS_PATH = "/downloads";
 
 /** App shell pages that live in PAGES_CACHE but are NOT lessons. Excluded from the offline
@@ -77,9 +93,13 @@ export async function savePage(pathname: string): Promise<void> {
   if (unsupported()) return;
   const cache = await caches.open(PAGES_CACHE);
   const results = await Promise.allSettled([
-    fetch(pathname, { credentials: "same-origin" }).then((res) => {
-      if (res.ok) return cache.put(pathname, res);
-      throw new Error(`Failed to save ${pathname}: ${res.status}`);
+    fetch(pathname, { credentials: "same-origin" }).then(async (res) => {
+      if (!res.ok) throw new Error(`Failed to save ${pathname}: ${res.status}`);
+      // Clone BEFORE put — put consumes the body, and we need the HTML text to find the page's
+      // JS/CSS. Without those, this page would be served from cache and then die rendering.
+      const forAssets = res.clone();
+      await cache.put(pathname, res);
+      return forAssets.text();
     }),
     fetch(pathname, { credentials: "same-origin", headers: { RSC: "1" } }).then((res) => {
       if (res.ok) return cache.put(rscKey(pathname), res);
@@ -88,6 +108,27 @@ export async function savePage(pathname: string): Promise<void> {
   // Require the HTML half to succeed (it's the offline fallback of last resort); the RSC half
   // is a nice-to-have for client-side nav and is allowed to fail independently.
   if (results[0].status === "rejected") throw results[0].reason;
+  await savePageAssets(results[0].value);
+}
+
+// Every /_next/static/… URL the HTML mentions — <script src>, <link href>, preloads, and the ones
+// embedded in the RSC flight payload (which appear escaped, so we don't anchor on a quote).
+const NEXT_ASSET_RE = /\/_next\/static\/[^"'()\s\\]+/g;
+
+/** Cache the build assets a saved page needs to render. Best-effort per asset: a single missing
+ *  chunk must not fail the lesson save the learner actually asked for. */
+async function savePageAssets(html: string): Promise<void> {
+  if (unsupported()) return;
+  const urls = new Set<string>(html.match(NEXT_ASSET_RE) ?? []);
+  if (urls.size === 0) return;
+  const cache = await caches.open(ASSETS_CACHE);
+  await Promise.allSettled(
+    [...urls].map(async (url) => {
+      // Content-hashed and immutable: if we already have it, never fetch it again.
+      if (await cache.match(url)) return;
+      await cache.add(url);
+    }),
+  );
 }
 
 /** Cache a lesson's audio/video file. Needs a CORS-ok response (Cloudinary is fine). */
@@ -97,19 +138,31 @@ export async function saveMedia(url: string): Promise<void> {
   await cache.add(url);
 }
 
-// The Downloads manager is the ONLY screen where a learner can delete what they've saved, so it
-// has to be reachable with no network. The service worker precaches it at install (public/sw.js),
-// but an install-time fetch can fail (flaky connection, cold deploy). Re-cache it into PAGES_CACHE
-// the first time a learner saves anything — by definition they're online at that moment. Runs once
-// per page load, best-effort, and never blocks or fails the save the learner actually asked for.
-let managerCached = false;
-async function ensureManagerCached(): Promise<void> {
-  if (unsupported() || managerCached) return;
-  managerCached = true;
+/**
+ * Cache the two pages that only ever get OPENED offline: the Downloads manager (the only screen
+ * where a learner can see and delete what they've saved) and the /offline fallback.
+ *
+ * The service worker precaches both at install, but only their HTML — and HTML alone is not enough
+ * (see ASSETS_CACHE: a page whose route chunk was never fetched dies with a ChunkLoadError the
+ * moment it's opened without a network). savePage() pulls in each page's JS/CSS too, so this is
+ * what actually makes them work.
+ *
+ * Runs on the learner's first save, when they are by definition online. Best-effort: it never
+ * blocks or fails the save they actually asked for.
+ */
+const SHELL_TO_CACHE = [DOWNLOADS_PATH, "/offline"];
+let shellCached = false;
+async function ensureShellCached(): Promise<void> {
+  if (unsupported() || shellCached) return;
+  shellCached = true;
   try {
-    if (!(await isSaved(DOWNLOADS_PATH))) await savePage(DOWNLOADS_PATH);
+    await Promise.all(
+      SHELL_TO_CACHE.map(async (path) => {
+        if (!(await isSaved(path))) await savePage(path);
+      }),
+    );
   } catch {
-    managerCached = false; // let a later save retry
+    shellCached = false; // let a later save retry
   }
 }
 
@@ -142,7 +195,7 @@ export async function saveLesson(lesson: SavableLesson): Promise<void> {
     mediaUrl: lesson.mediaUrl ?? null,
     savedAt: Date.now(),
   });
-  void ensureManagerCached();
+  void ensureShellCached();
 }
 
 /** Remove a single lesson's page (HTML + RSC) and its media, unless another saved lesson still
@@ -317,14 +370,25 @@ export async function removeMedia(urls: string[]): Promise<void> {
   await Promise.all(urls.map((u) => cache.delete(u)));
 }
 
-/** Nuke every download: both caches and the manifest. The Downloads manager itself is precached
- *  in the SW's static cache, so it stays reachable offline even after this wipes PAGES_CACHE. */
+/**
+ * Nuke every download: pages, media, the page assets we pulled in for them, and the manifest.
+ *
+ * "Remove all" has to mean it — leaving the assets cache behind would keep megabytes of JS the
+ * learner explicitly asked to reclaim. The SW still has the shell HTML in its own static cache, and
+ * we re-cache /downloads + /offline (with their JS) immediately after, so the manager doesn't
+ * saw off the branch it's sitting on. That re-cache needs the network; when we're offline it's a
+ * no-op and the SW's static cache carries the page instead.
+ */
 export async function removeAllOffline(): Promise<void> {
   if (unsupported()) return;
-  await Promise.all([caches.delete(PAGES_CACHE), caches.delete(MEDIA_CACHE)]);
+  await Promise.all([
+    caches.delete(PAGES_CACHE),
+    caches.delete(MEDIA_CACHE),
+    caches.delete(ASSETS_CACHE),
+  ]);
   clearManifest();
-  managerCached = false;
-  void ensureManagerCached(); // best-effort; a no-op when we're offline
+  shellCached = false;
+  void ensureShellCached();
 }
 
 /**

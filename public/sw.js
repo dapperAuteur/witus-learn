@@ -11,6 +11,13 @@ const STATIC_CACHE = `witus-static-${VERSION}`;
 // names in sync with src/lib/offline.ts (the client-side code that writes into them).
 const MEDIA_CACHE = "witus-media-v1";
 const PAGES_CACHE = "witus-pages-v1";
+// The JS/CSS a saved page needs to RENDER offline. The `/_next/static/` handler below is
+// cache-first but only fills on demand, so a page the learner opens for the FIRST time while
+// offline has no route chunk and dies with a ChunkLoadError. src/lib/offline.ts therefore caches
+// each saved page's assets here at save time. Version-independent + preserved across activations,
+// exactly like PAGES/MEDIA — a deploy must never strip a learner's downloads of the code that
+// renders them.
+const ASSETS_CACHE = "witus-assets-v1";
 const OFFLINE_URL = "/offline";
 // The Downloads manager — the ONLY screen where a learner can see and delete what they've saved.
 // It has to work with no network, so it's precached here alongside the offline fallback. Both are
@@ -38,7 +45,11 @@ self.addEventListener("activate", (event) => {
       .keys()
       .then((keys) =>
         Promise.all(
-          keys.filter((k) => k !== STATIC_CACHE && k !== MEDIA_CACHE && k !== PAGES_CACHE).map((k) => caches.delete(k)),
+          keys
+            .filter(
+              (k) => k !== STATIC_CACHE && k !== MEDIA_CACHE && k !== PAGES_CACHE && k !== ASSETS_CACHE,
+            )
+            .map((k) => caches.delete(k)),
         ),
       )
       .then(() => self.clients.claim()),

@@ -145,12 +145,33 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Offline support (PWA)** — conservative per-origin service worker (network-first navigation +
   \`/offline\` fallback; cache-first hashed assets; API/cross-origin never cached), tenant-aware
   \`/manifest.webmanifest\`, and a \`NEXT_PUBLIC_DISABLE_SW=1\` kill-switch. Test on a preview first.
-- ✅ **Offline lessons (pages + media)** — "Save for offline" (\`save-offline-button.tsx\`) now caches the
-  lesson **page itself** (HTML + RSC payload, via \`src/lib/offline.ts\`'s \`witus-pages-v1\` Cache) *and*
-  its audio/video (\`witus-media-v1\`), plus the **next lesson** — so tapping "Next" keeps working
-  offline. \`save-course-offline-button.tsx\` saves an entire course at once with progress. \`/offline\`
-  lists what's actually saved. Fixes the earlier gap where only media was cached and any lesson page
-  (including the next one) 404'd offline. YouTube-style embeds still can't be cached (noted in-UI).
+- ✅ **Offline lessons (pages + media)** — "Save for offline" caches the lesson **page itself**
+  (HTML + RSC payload, via \`src/lib/offline.ts\`'s \`witus-pages-v1\` Cache), its audio/video
+  (\`witus-media-v1\`), **and the JS/CSS the page needs to render** (\`witus-assets-v1\`) — plus the
+  **next lesson**, so tapping "Next" keeps working offline. YouTube-style embeds still can't be
+  cached (noted in-UI).
+- ✅ **Pick exactly what goes offline** — a checkbox per lesson inside its collapsible section, a
+  **select-all per section** (indeterminate when partial), a course-level select-all, and a sticky
+  action bar with "Download selected (N)" / "Remove selected" + live progress. Locked lessons are
+  never offered. The one-click "save whole course" path is preserved next to the syllabus heading.
+- ✅ **Downloads manager (\`/downloads\`)** — everything saved on this device, grouped **course →
+  section → lesson**, with **remove at every level** (lesson, section, course, "Remove all") and
+  storage used (\`navigator.storage.estimate()\`). Reachable from \`/dashboard\`, \`/offline\` and the
+  per-lesson saved state. Deliberately outside the \`(tenant)\` group so it makes **no DB/session
+  call** and works with no network. Backed by an **offline manifest** (localStorage) mapping a
+  cached path → course/section/lesson titles, since the Cache API only stores URLs; it's a hint
+  layer, and \`reconcileOffline()\` treats the cache as truth (stale entries pruned, orphaned pages
+  still shown + removable), so the UI can't claim a download that isn't there. Shared media is
+  refcounted — removing one lesson never deletes audio another saved lesson still uses.
+- ✅ **Offline actually works now (bug fix)** — the service worker was **never registering**:
+  registration was attached to \`window\`'s \`load\` event from inside a \`useEffect\` that usually runs
+  *after* \`load\` has already fired, and the error was swallowed by an empty \`.catch()\`. Downloads
+  still wrote to the Cache API, so the UI went green while nothing existed to serve them —
+  airplane mode gave the browser's own "no connection" page. Registration now happens immediately
+  when the document is already complete; \`savePage()\` throws on a non-OK response; a save is only
+  reported after it's **read back out of the cache**; and every "saved" affordance is gated on
+  \`navigator.serviceWorker.controller\` (an **Offline diagnostics** panel on \`/downloads\` shows it).
+  Verified end-to-end in real Chrome against a **killed server**, not just typechecked.
 - ⚪ **WYSIWYG + markdown editor** (CentOS) for lesson authoring in the dashboard.
 - ✅ **Rich lesson media** — native audio/video files get a full player; YouTube/Vimeo/Google
   Slides/PDF auto-embed (\`toEmbed\`). Cloudinary upload UI is the remaining piece (URLs work today).

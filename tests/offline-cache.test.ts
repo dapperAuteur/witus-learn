@@ -86,8 +86,17 @@ beforeEach(() => {
   vi.stubGlobal("navigator", { storage: undefined });
   vi.stubGlobal("fetch", async (input: RequestInfo) => {
     const url = typeof input === "string" ? input : input.url;
-    if (broken.has(new URL(url, "https://tenant.example").pathname)) {
-      return new Response("nope", { status: 404 });
+    const path = new URL(url, "https://tenant.example").pathname;
+    if (broken.has(path)) return new Response("nope", { status: 404 });
+    // Lesson pages come back as real HTML referencing their build assets, so savePage() has
+    // something to discover — that's the ChunkLoadError regression below.
+    if (path.includes("/lesson/") || path === "/downloads" || path === "/offline") {
+      return new Response(
+        `<!doctype html><script src="/_next/static/chunks/shared-abc.js"></script>` +
+          `<link rel="stylesheet" href="/_next/static/css/app-def.css">` +
+          `<script>self.__next_f.push([1,"\\"/_next/static/chunks/app${path}/page-xyz.js\\""])</script>`,
+        { status: 200, headers: { "content-type": "text/html" } },
+      );
     }
     return new Response("ok", { status: 200 });
   });
@@ -270,10 +279,40 @@ describe("offline cache + manifest, together", () => {
     expect(await cachedPaths(offline)).toEqual(["/bam/signals/lesson/a"]);
   });
 
-  it("removeAllOffline wipes both caches and the manifest", async () => {
+  // REGRESSION (found by driving real Chrome against a killed server): the SW caches
+  // /_next/static/* cache-first but only ON DEMAND, so a page the learner opens for the first time
+  // while OFFLINE had no route chunk and died with a ChunkLoadError → "Something went wrong". It
+  // broke /downloads and /offline — the two pages whose whole job is to work with no network.
+  it("caches the JS/CSS a saved page needs to actually RENDER offline", async () => {
+    const offline = await load();
+    await offline.saveLesson(lesson("a"));
+
+    const assets = cacheStorage.caches.get(offline.ASSETS_CACHE);
+    const keys = [...(assets?.store.keys() ?? [])].map((u) => new URL(u).pathname);
+    expect(keys).toContain("/_next/static/chunks/shared-abc.js");
+    expect(keys).toContain("/_next/static/css/app-def.css");
+    // Including the route chunk embedded (escaped) in the RSC flight payload — the exact one whose
+    // absence produced the ChunkLoadError.
+    expect(keys).toContain("/_next/static/chunks/app/bam/signals/lesson/a/page-xyz.js");
+  });
+
+  it("caches the /downloads and /offline shells — with their JS — on the first save", async () => {
+    const offline = await load();
+    await offline.saveLesson(lesson("a"));
+    await vi.waitFor(async () => {
+      expect(await offline.isSaved(offline.DOWNLOADS_PATH)).toBe(true);
+      expect(await offline.isSaved("/offline")).toBe(true);
+    });
+    const assets = cacheStorage.caches.get(offline.ASSETS_CACHE);
+    const keys = [...(assets?.store.keys() ?? [])].map((u) => new URL(u).pathname);
+    expect(keys).toContain("/_next/static/chunks/app/downloads/page-xyz.js");
+  });
+
+  it("removeAllOffline wipes pages, media, page assets and the manifest", async () => {
     const offline = await load();
     await offline.saveLesson(lesson("a", "https://cdn/a.mp3"));
     await offline.saveLesson(lesson("b", "https://cdn/b.mp3"));
+    expect(cacheStorage.caches.get(offline.ASSETS_CACHE)!.store.size).toBeGreaterThan(0);
 
     await offline.removeAllOffline();
 
@@ -281,6 +320,8 @@ describe("offline cache + manifest, together", () => {
     expect(entries).toHaveLength(0);
     expect(orphanPages).toEqual([]);
     expect(orphanMedia).toEqual([]);
+    // "Remove all" must reclaim the JS too, or it quietly leaves megabytes behind.
+    expect(cacheStorage.caches.get(offline.ASSETS_CACHE)?.store.size ?? 0).toBe(0);
   });
 
   it("storageUsage returns null (rather than a wrong 0 B) where estimate() is unsupported", async () => {
