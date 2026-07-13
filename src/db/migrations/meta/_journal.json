@@ -239,6 +239,20 @@
       "when": 1783604286623,
       "tag": "0033_certain_slayback",
       "breakpoints": true
+    },
+    {
+      "idx": 34,
+      "version": "7",
+      "when": 1783959187682,
+      "tag": "0034_parched_tarot",
+      "breakpoints": true
+    },
+    {
+      "idx": 35,
+      "version": "7",
+      "when": 1783960912161,
+      "tag": "0035_clumsy_mastermind",
+      "breakpoints": true
     }
   ]
 }

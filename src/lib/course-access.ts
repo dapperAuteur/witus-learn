@@ -3,7 +3,7 @@ import { asc, eq } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courseModules, type Course, type CourseModule, type Lesson } from "@/db/schema";
 import { getCourseBySlug, listLessons } from "@/db/queries/authoring";
-import { getCompletedLessonIds } from "@/db/queries/progress";
+import { getCourseProgressSummary } from "@/db/queries/progress";
 import { isEnrolled as checkEnrolled } from "@/db/queries/enrollment";
 import { canAccessCourse } from "@/lib/api";
 import { getSession } from "@/lib/session";
@@ -24,7 +24,13 @@ export interface CourseView {
   lessons: Lesson[];
   /** Sections (course modules), ordered. Empty for flat courses. */
   modules: CourseModule[];
+  /** COMPLETED lessons only. Merely opening a lesson never lands here — see `lastViewedLessonId`. */
   completedLessonIds: Set<string>;
+  /** The lesson the active learner most recently OPENED. The anchor for "continue where you
+   *  left off" — a weaker signal than completion, and never counted as one. Null if never opened. */
+  lastViewedLessonId: string | null;
+  /** lessonId → saved playback position, so an audio/video lesson resumes mid-track. */
+  watchSeconds: Map<string, number>;
   orderedLessonIds: string[];
 }
 
@@ -56,12 +62,14 @@ export async function loadCourseView(
     .where(eq(courseModules.courseId, course.id))
     .orderBy(asc(courseModules.sortOrder));
   const learner = await getActiveLearner(session);
-  const [completed, enrolled] = learner
+  // ONE round trip for completion + last-viewed + playback positions (it replaces the old
+  // completed-ids-only query rather than adding to it — resume costs no extra Neon egress).
+  const [progress, enrolled] = learner
     ? await Promise.all([
-        getCompletedLessonIds(learner.id, course.id),
+        getCourseProgressSummary(learner.id, course.id),
         checkEnrolled(learner.id, course.id),
       ])
-    : [[] as string[], false];
+    : [null, false];
 
   return {
     tenant,
@@ -72,7 +80,9 @@ export async function loadCourseView(
     isEnrolled: enrolled,
     lessons,
     modules,
-    completedLessonIds: new Set(completed),
+    completedLessonIds: progress?.completedLessonIds ?? new Set<string>(),
+    lastViewedLessonId: progress?.lastViewedLessonId ?? null,
+    watchSeconds: progress?.watchSeconds ?? new Map<string, number>(),
     orderedLessonIds: lessons.map((l) => l.id),
   };
 }

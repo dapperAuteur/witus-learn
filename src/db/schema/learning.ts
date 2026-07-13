@@ -17,9 +17,19 @@ import { users } from "./auth";
 import { courses, lessons } from "./courses";
 import { tenants } from "./tenancy";
 
-// Per-(user, lesson) progress. completed_at is set when the learner finishes the
-// lesson; watch_seconds / quiz fields support the players (quiz scoring lands in
-// Phase 6). Tenant scope is inherited via the lesson.
+// Per-(user, lesson) progress. Keyed on (user, lesson) — NOT a linear pointer — so a
+// learner who skips around is recorded faithfully in any order. Tenant scope is inherited
+// via the lesson.
+//
+// Three DISTINCT signals, deliberately not collapsed into one:
+//   • completed_at  — the learner finished the lesson. The ONLY thing that counts toward
+//                     the completion %, sequential unlocking, and certificates.
+//   • last_viewed_at— the learner OPENED the lesson. A weaker signal that powers "continue
+//                     where you left off". A viewed lesson is NOT a completed lesson.
+//   • updated_at    — bookkeeping: any write to this row (a quiz score, a completion).
+//                     NOT a substitute for last_viewed_at — it moves for writes that aren't
+//                     views, and a view ping deliberately does not touch it.
+//   • watch_seconds — last playback position, so audio/video resumes mid-track.
 export const lessonProgress = pgTable(
   "lesson_progress",
   {
@@ -30,13 +40,19 @@ export const lessonProgress = pgTable(
       .notNull()
       .references(() => lessons.id, { onDelete: "cascade" }),
     completedAt: timestamp("completed_at", { withTimezone: true }),
+    /** Last time the learner OPENED this lesson. Powers resume; never implies completion. */
+    lastViewedAt: timestamp("last_viewed_at", { withTimezone: true }),
     watchSeconds: integer("watch_seconds").notNull().default(0),
     quizScore: numeric("quiz_score", { precision: 5, scale: 2 }),
     quizAnswers: jsonb("quiz_answers"),
     tourProgress: jsonb("tour_progress"),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
-  (t) => [primaryKey({ columns: [t.userId, t.lessonId] })],
+  (t) => [
+    primaryKey({ columns: [t.userId, t.lessonId] }),
+    // "Where was this learner last?" — the resume lookup, per learner, newest first.
+    index("lesson_progress_user_viewed_idx").on(t.userId, t.lastViewedAt),
+  ],
 );
 
 export type LessonProgress = typeof lessonProgress.$inferSelect;
@@ -182,6 +198,26 @@ export type LinkClick = typeof linkClicks.$inferSelect;
 
 // Lead capture (email funnel). Tenant-scoped, one row per (tenant, email). Used by
 // the coming-soon landings and any "notify me" form, gated by flags.leadFunnel.
+
+/**
+ * One thing a lead actually SAID — a pricing enquiry from /explore, say. The bare email funnel
+ * only ever needed (email, source); a "contact us for pricing" form carries a message, and the
+ * (tenant, email) unique constraint means a second submission from the same person would
+ * otherwise be dropped on the floor by ON CONFLICT DO NOTHING. So enquiries are appended to
+ * this array instead: nothing a prospective customer writes is ever silently lost.
+ */
+export interface LeadInquiry {
+  /** Which form produced it, e.g. "explore-pricing". */
+  source: string;
+  /** parent | teacher | homeschooler | school_district | other */
+  role?: string | null;
+  /** How many students they are asking about. */
+  students?: number | null;
+  message?: string | null;
+  /** ISO-8601. Set server-side — never from the client. */
+  at: string;
+}
+
 export const leads = pgTable(
   "leads",
   {
@@ -193,6 +229,8 @@ export const leads = pgTable(
     name: text("name"),
     /** where the lead came from, e.g. "coming-soon" or "home". */
     source: text("source"),
+    /** Append-only log of what this lead asked for. Empty for a plain "notify me" signup. */
+    inquiries: jsonb("inquiries").$type<LeadInquiry[]>().notNull().default([]),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [

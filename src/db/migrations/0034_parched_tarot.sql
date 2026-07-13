@@ -1,0 +1,2 @@
+ALTER TABLE "lesson_progress" ADD COLUMN "last_viewed_at" timestamp with time zone;--> statement-breakpoint
+CREATE INDEX "lesson_progress_user_viewed_idx" ON "lesson_progress" USING btree ("user_id","last_viewed_at");

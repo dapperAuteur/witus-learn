@@ -172,6 +172,26 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   reported after it's **read back out of the cache**; and every "saved" affordance is gated on
   \`navigator.serviceWorker.controller\` (an **Offline diagnostics** panel on \`/downloads\` shows it).
   Verified end-to-end in real Chrome against a **killed server**, not just typechecked.
+- ✅ **Resume where you left off** (\`feat/resume-where-you-left-off\`) — progress already recorded
+  **skipping around** faithfully (\`lesson_progress\` is keyed on \`(user, lesson)\`, not a linear
+  pointer), but a row was only written on **"Mark complete"** — opening a lesson and reading half of
+  it wrote nothing, so the app couldn't tell "started and left" from "never opened". Resume then fell
+  back to the *first incomplete lesson in course order*, which sent a learner who'd skipped ahead to
+  lesson 20 back to their lesson-3 gap. Now: a **\`last_viewed_at\`** column (migration **0034**;
+  deliberately NOT \`updated_at\`, which moves on any write — a quiz score is not a view) fed by a lean
+  tenant-scoped **\`/view\` ping**; **\`src/lib/resume.ts\`**, the pure, unit-tested rule (last-viewed +
+  unfinished → resume there · last-viewed + finished → roll forward · never opened → lesson 1); the
+  **dashboard** Continue/Up-next follow it; and a **"Continue where you left off"** card on the course
+  page **naming the lesson**. **\`watch_seconds\` is finally wired** — audio/video resumes mid-track
+  (with a "Start over" escape), which matters most for FAA Part 107's 118 audio lessons. **Viewing is
+  not completing:** \`completed_at\` alone still drives the %, sequential unlocking, and certificates.
+  Recorded against the **active learner**, so a parent studying as a child resumes the *child*. Cheap
+  on purpose (Neon egress): 30s server-side debounce + a client guard on the ping, one player write
+  per ~20s and on pause/leave (never on the timeupdate tick), and the course page reads completion +
+  last-viewed + positions in ONE query that *replaces* the old completed-ids query.
+- ⚪ **Resume for multi-part audio + embeds** — the position is remembered for direct-media
+  audio/video only. \`MultiPartPlayer\` (a long recording split into parts) would additionally need the
+  part index, and YouTube/Vimeo embeds expose no time to us without their iframe APIs. Not started.
 - ⚪ **WYSIWYG + markdown editor** (CentOS) for lesson authoring in the dashboard.
 - ✅ **Rich lesson media** — native audio/video files get a full player; YouTube/Vimeo/Google
   Slides/PDF auto-embed (\`toEmbed\`). Cloudinary upload UI is the remaining piece (URLs work today).
@@ -379,13 +399,56 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   claims, named instructors) via a new tenant-scoped \`src/db/queries/explore.ts\` — \`course_sources\`
   / \`course_claims\` carry no \`tenant_id\`, so every aggregate INNER JOINs \`courses\` and filters
   \`courses.tenant_id\`; that join IS the boundary. **No invented stats, no efficacy claims, no
-  testimonials, no standards-alignment claim**; the one pedagogical claim carries three real,
-  verified APA 7 citations rendered on the page (Smith 2002; Sobel 2004; McGrew et al. 2018). The
-  FAQ answers only what the repo can answer truthfully (cost is derived from \`price_type\`) — age
-  range, time commitment and standards alignment are **deliberately absent** pending BAM
-  (\`plans/user-tasks/72\`). Hero copy is per-tenant overridable via \`platform_settings\`
+  testimonials**; the one pedagogical claim carries three real, verified APA 7 citations rendered
+  on the page (Smith 2002; Sobel 2004; McGrew et al. 2018). The FAQ answers only what the repo can
+  answer truthfully (cost is derived from \`price_type\`) — time commitment is still **deliberately
+  absent** pending BAM (\`plans/user-tasks/72\`); **age range is now confirmed (high school)** and
+  **standards alignment now ships** (see below), so both have been removed from that list. Hero
+  copy is per-tenant overridable via \`platform_settings\`
   (\`explore_headline\`/\`explore_subhead\`/\`explore_intro\`) with brand-neutral defaults — **no
   migration**. Metadata/OG/JSON-LD tenant-scoped. Mobile-first (no 320px overflow; ≥44px targets).
+- 🔧 **/explore: pricing conversation + the map fixes** (\`feat/explore-pricing-contact\`) — closes
+  three of the four open questions from \`plans/user-tasks/73\` and three map reports.
+  **Age range: answered** — "Designed for high school students" now sits under the \`<h1>\` and in the
+  FAQ, per-tenant overridable via \`platform_settings.explore_audience\` (**no migration**).
+  **Time commitment: still TBD, and the page SAYS so** rather than deriving an hours-per-week figure
+  from \`lessons.duration_seconds\` — a parent plans a school year around that number, so a wrong one
+  is worse than none. **Standards alignment: still absent**, with a marked insertion point for the
+  separate \`src/lib/standards.ts\` work. **Pricing: a "contact us for pricing" form** (\`#pricing\`) —
+  name / email / role / students / message, **Zod-validated server-side**, tenant resolved from the
+  HOST, honeypot + a per-IP sliding window (the \`/api/v1\` limiter, extracted to
+  \`src/lib/rate-limit.ts\` and now shared rather than duplicated). No captcha dependency, and **no
+  price is stated anywhere** — that is the point. It **persists the lead FIRST and emails second**:
+  a Mailgun failure logs loudly and returns \`notified: false\`, but the enquiry is already in
+  \`leads\` and readable at \`/admin/leads\`, because a lost lead is a lost sale. **Migration:
+  \`0034\` adds \`leads.inquiries\` (jsonb, append-only)** — the (tenant, email) unique constraint
+  meant a repeat enquiry was being silently dropped by \`ON CONFLICT DO NOTHING\`; it now appends.
+  **Map fixes:** the season filter is **gone** (it was a hardcoded \`SEASONS\` array carrying ONE
+  brand's episode titles into a multi-tenant component, and it hid 2/3 of the pins from a first-time
+  visitor) — season survives as a data-derived heading in the episode list; clicking an episode
+  **no longer navigates away** but opens a shared \`<EpisodeDetail>\` panel in place (lessons, cited
+  sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
+  return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
+  OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Standards alignment** (\`feat/explore-standards\`) — a \`/standards\` page, linked from
+  \`/explore\`, answering the one question a teacher or a reporting homeschooler asks first: *which
+  requirements does this meet, and which lesson meets them?* **41 standards (21 fully covered, 20
+  partially) across 9 frameworks in 2 jurisdictions**, each with its **exact code**, the
+  standard's **verbatim text**, a link to the
+  **publisher's own document**, the **lessons** that cover it, and a \`full\` | \`partial\` flag —
+  partials must state what is missing (a unit test enforces it). Indiana: Economics (2026), Geography
+  and History of the World, World History and Civilization, U.S. History, ELA 9-10 and 11-12 (all
+  2023 IDOE). Washington, D.C. resolves to **three** frameworks, because DC has no homegrown set:
+  **Common Core** (ELA, adopted Jul 2010), **NGSS** (science, adopted Dec 2013) and **DC's own K-12
+  Social Studies Standards** (Jun 2023) — all three confirmed on OSSE's own pages. The page states,
+  above the claims, that **we** did the mapping (nobody endorsed it), the **date every standard was
+  fetched**, and that standards get revised. Honest omissions are published too: **no mathematics**,
+  **almost no science** (one NGSS PE, partial — there is no lab work here and we say so), and no DC
+  citation for Prohibition/mass incarceration because DC's standards contain none. Tenant-scoped:
+  the table is keyed by course **slug** and \`db/queries/standards.ts\` resolves slugs against
+  **this** tenant's published courses, so a Season-1-only school (Learn.WitUS, ElementaryMBA) can
+  never surface a Season 2/3 standard, and a tenant hosting none of the curriculum **404s**.
+  Printable + one-click copy-as-plain-text for state filings. **No migration.**
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
