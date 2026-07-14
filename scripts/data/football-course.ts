@@ -2766,5 +2766,527 @@ But **do not mistake wealth for the whole game.** Enormous football cultures wit
         ],
       },
     },
+
+    // ────────────────── SECTION 7 · MONEY, LABOUR, AND THE COST OF THE GAME ──────────────────
+    {
+      slug: "football-transfers-and-academies",
+      title: "26 · Transfers and academies: how a player becomes an asset",
+      section: "Section 7 · Money, labour, and the cost of the game",
+      body: `In most sports, a player under contract simply plays out that contract. In football, a club that wants a player who is under contract at another club **buys the contract** — and the price is the **transfer fee**.
+
+**How a transfer actually works.**
+
+1. Club A has a player under contract until, say, 2029.
+2. Club B wants them. Club B offers Club A a **transfer fee** — a payment to release the player from the remaining contract.
+3. If Club A accepts, Club B negotiates **personal terms** (wages) with the player.
+4. The player's **registration** moves to Club B. **Transfer windows** — fixed periods set by the national association within FIFA's framework — limit when this may happen.
+
+The fee goes **to the selling club**, not to the player. The player gets **wages** and, usually, a **signing-on fee**.
+
+**And a player whose contract has EXPIRED costs nothing.** They are a **free agent** and may sign with anyone. This is the single most important economic fact in football's labour market, and it is the reason a club will often sell a star with one year left rather than lose them for nothing next summer. Contract length is leverage.
+
+**The numbers, cited.**
+
+- **The men's world record transfer fee is €222 million** — **Neymar**, from Barcelona to Paris Saint-Germain, in **August 2017**. Remarkably, it **still stands** (Statista, 2026). Nearly a decade, and no club has topped it.
+- **The women's world record is roughly $1.1 million** — **Naomi Girma**, from the San Diego Wave to Chelsea, in **January 2025**. She was the **first player in women's football to move for more than $1 million**, surpassing the previous record of about **$767,000** (Racheal Kundananji to Bay FC, February 2024) (ESPN, 2025).
+
+**Put those two numbers next to each other and just look at them.** €222 million. $1.1 million. That is not a small gap; it is a gap of roughly **two hundred times**. Both are records. Both are the highest price the market has ever paid. **That ratio is the honest measure of where the women's game currently sits economically** — and, given Lesson 22, it is a measure of what fifty stolen years cost.
+
+---
+
+**Academies: how clubs manufacture assets.**
+
+A professional club's **academy** recruits children — often from the age of eight or nine — and develops them. If a player makes the first team, the club has produced a **first-team player at almost no transfer cost**. If they are sold, the fee is **almost pure profit**, because the club never paid a fee for them.
+
+This is a genuinely rational business. It is also where the ethics get uncomfortable, and you should understand why:
+
+- **The failure rate is enormous.** The overwhelming majority of children who enter a professional academy will **not** become professional footballers. They will be released — often as teenagers, often after years in which football has been the organising principle of their entire life and education has been the thing they fitted around it.
+- **A released 16-year-old has an identity problem, not just a career problem.** This is a well-recognised welfare issue in the game, and clubs are increasingly required to provide educational and aftercare support. Whether they do it well is a fair question to ask of any academy you or a friend are considering.
+- **A child in an academy is, on the club's balance sheet, a speculative asset.** That is not a slur. It is an accurate description of the incentive, and the incentive explains a great deal of the behaviour in this section.
+
+**Solidarity and training compensation.** FIFA's transfer system does try to send money back down the chain: when a player is transferred internationally, a proportion is meant to flow to the clubs that **trained** them between roughly the ages of 12 and 23. In principle this rewards the small club that found a talent at eleven. In practice, whether small clubs — especially outside Europe — actually receive what they are owed is a persistent and legitimate complaint.
+
+**The honest summary.** The transfer system is a market in **human beings' registrations**, in which the people being valued **do not receive the fee**. It has produced enormous wealth, a genuinely global talent pipeline, and — as the next lesson shows — a set of incentives that lead directly to the exploitation of children.
+
+:::reveal Why will a club often sell its best player one year before their contract expires, rather than keeping them for the final season? ||| Because a player whose contract has **expired** becomes a **free agent** and can leave **for nothing**. Selling with a year left is the club's last chance to convert the player into a fee. Contract length is leverage — it is the single most important economic fact in football's labour market.
+
+## Sources
+- ESPN. (2025, January 26). *How Chelsea broke the women's transfer record to sign USWNT star Girma*. https://www.espn.com/soccer/story/_/id/43557138/how-chelsea-broke-world-record-sign-naomi-girma-san-diego-wave
+- FIFA. (2025). *Regulations on the status and transfer of players* (January 2025 edition). https://digitalhub.fifa.com/m/696d877ea35ca761/original/Regulations-on-the-Status-and-Transfer-of-Players-January-2025-edition.pdf
+- Statista. (2026). *Record transfers in soccer*. https://www.statista.com/statistics/263304/transfer-fees-the-10-most-expensive-transfers-in-soccer-ever/`,
+      recallContent: [
+        {
+          prompt: "Who receives a transfer fee?",
+          answer:
+            "The SELLING CLUB — not the player. The player receives wages and usually a signing-on fee. The fee is the price of releasing them from their remaining contract.",
+        },
+        {
+          prompt: "Compare the men's and women's world record transfer fees.",
+          answer:
+            "Men's: €222m (Neymar, Barcelona to PSG, August 2017) — still the record. Women's: about $1.1m (Naomi Girma, San Diego Wave to Chelsea, January 2025), the first women's move above $1m. A gap of roughly 200 times.",
+        },
+        {
+          prompt: "Why is an academy graduate so valuable to a club's balance sheet?",
+          answer:
+            "Because the club never paid a transfer fee for them — so if they are sold, the fee is almost pure profit. Which also means a child in an academy is, on the balance sheet, a speculative asset. That incentive explains a lot.",
+        },
+      ],
+    },
+    {
+      slug: "football-agents-minors-and-exploitation",
+      title: "27 · Agents, minors, and the trade in other people's children",
+      section: "Section 7 · Money, labour, and the cost of the game",
+      body: `Here is a market with the following properties:
+
+- The prize is **life-changing wealth**.
+- The odds of winning it are **tiny**.
+- The people competing are **children**.
+- The people who profit from arranging the competition are **not regulated in most of the places it happens**.
+
+That is a recipe, and it produces exactly what you would expect.
+
+---
+
+**The rule that exists to stop it: FIFA's Article 19.**
+
+FIFA's **Regulations on the Status and Transfer of Players (RSTP), Article 19 — "Protection of minors"** — sets a hard default:
+
+> **International transfers of players are only permitted if the player is over the age of 18.** (FIFA, 2025, Art. 19)
+
+With narrow, listed exceptions, including:
+
+- **(a)** The player's **parents move** to the country of the new club **for reasons not linked to football**.
+- **(b)** The player is aged **16-18** and the transfer takes place **within the EU/EEA**, or between two associations within the same country — **and** the new club must then guarantee **adequate football education and training** to the highest national standard **and** an **academic, school or vocational education** enabling the player to pursue a career other than football if they stop playing.
+- **(c)** The player lives **within 50 km of a national border** and the new club is within 50 km of the same border on the other side (with both associations consenting).
+- Plus provision for **refugees and protected persons**.
+
+Read exception (b) again. It is the rule that says: **if you take a 16-year-old's childhood, you owe them a fallback.** Whether that obligation is honoured in practice is one of the sharpest questions in the sport.
+
+**Why Article 19 exists at all:** because without it, clubs would simply buy children internationally, and a large number would be discarded far from home.
+
+---
+
+**The unlicensed agents, and the trade in hope.**
+
+Across **West Africa** in particular — and in parts of **South America** and **Asia** — a trade has grown up around a simple lie: *pay me, and I will get your son a trial at a European club.*
+
+The mechanics are consistent and well documented in journalism and academic research:
+
+1. A man who presents himself as an **agent** or a **scout** approaches a family, or opens a small, unlicensed "academy."
+2. He asks for **money** — sometimes thousands of dollars, an amount that can require a family to sell land, borrow, or spend savings.
+3. The boy is flown to Europe, or promised he will be.
+4. **The trial does not exist**, or it exists and he is not signed.
+5. He is **abandoned** — undocumented, unpaid, far from home, and frequently too ashamed of the failure to contact his family.
+
+The result is a population of young men, mostly African, living irregularly in European cities, whose migration was financed by their families on the strength of a promise that was never real.
+
+---
+
+**Now the number — and how to handle it honestly.**
+
+You will see the claim that **around 15,000 young players a year** are moved out of West Africa under false pretences. It is attributed to the NGO **Culture Foot Solidaire**, and it is repeated constantly in journalism.
+
+**This course is not going to repeat it as a fact, and here is why.**
+
+That figure describes a **hidden population** — people engaged in an activity that is unrecorded, often illegal, and by its nature invisible to official statistics. Estimates of hidden populations are notoriously unreliable in **both directions**, and researchers who study football migration specifically have cautioned that trafficking statistics in this field should be treated with real care, and have challenged the way the issue is popularly represented (Esson, 2015; Esson & Drywood, n.d.). Some experts believe the true number may be **higher**, because monitoring barely exists. Others argue the framing of "trafficking" itself obscures what is often a **voluntary, family-financed migration decision** taken under conditions of very poor information — which is a different problem requiring a different solution.
+
+**So what IS true?**
+
+- The **exploitation is real, documented, and serious**. That is not in dispute.
+- The **scale is genuinely contested**, and **nobody has a reliable count**.
+- **A course that gives you a confident number is telling you something it cannot know.**
+
+That is a less satisfying lesson than a big scary statistic. It is also a **better** one, and it is the whole point of a cited education: **learning to say "the exploitation is documented; the number is not" is a harder and more valuable skill than memorising a figure that might be invented.**
+
+**Agent regulation** is a live and contested area. FIFA has re-introduced a licensing system requiring agents to pass an examination — but parts of the accompanying regulations, in particular attempts to **cap agents' commissions**, have been **challenged in courts and in arbitration**, and their status has shifted. **If you need the current position, check FIFA's own published regulations and the relevant rulings — do not take it from a course, including this one.** That is not evasion; it is the honest state of the question.
+
+:::reveal Why does this course refuse to state that 15,000 young African players are trafficked each year? ||| Because it describes a **hidden population** — unrecorded, often illegal, invisible to official statistics — and estimates of hidden populations are unreliable in **both directions**. Researchers of football migration caution that these figures must be treated with care. What IS true: **the exploitation is real, documented and serious; the scale is genuinely contested; and nobody has a reliable count.** Saying "the exploitation is documented, the number is not" is harder — and far more valuable — than memorising a figure that may be invented.
+
+## Sources
+- Esson, J. (2015). Better off at home? Rethinking responses to trafficked West African footballers in Europe. *Journal of Ethnic and Migration Studies, 41*(3), 512-530. https://doi.org/10.1080/1369183X.2014.927733
+- Esson, J., & Drywood, E. (n.d.). *Challenging popular representations of child trafficking in football*. University of Liverpool Repository. https://livrepository.liverpool.ac.uk/3015792/1/Esson%20DrywoodTrafficking%20and%20football%20Sp%20Issue%20Sport%20and%20Crime%20Final.pdf
+- FIFA. (2025). *Regulations on the status and transfer of players* (January 2025 edition), Article 19. https://digitalhub.fifa.com/m/696d877ea35ca761/original/Regulations-on-the-Status-and-Transfer-of-Players-January-2025-edition.pdf`,
+      recallContent: [
+        {
+          prompt: "What is FIFA's Article 19, and what is its default rule?",
+          answer:
+            "'Protection of minors' in the Regulations on the Status and Transfer of Players. Default: international transfers are only permitted if the player is over 18 — with narrow exceptions (parents moving for non-football reasons; 16-18 within the EU/EEA with a guaranteed academic education; a 50km cross-border rule; refugees).",
+        },
+        {
+          prompt: "How should you talk about the scale of exploitation of young African footballers?",
+          answer:
+            "The exploitation is real, documented and serious — but the SCALE is genuinely contested and nobody has a reliable count. The widely-quoted '15,000 a year' is a hidden-population estimate researchers caution against citing as fact.",
+        },
+      ],
+    },
+    {
+      slug: "football-qatar-2022",
+      title: "28 · Qatar 2022: four numbers, four different questions",
+      section: "Section 7 · Money, labour, and the cost of the game",
+      body: `The 2022 FIFA World Cup in Qatar required an enormous construction programme — stadiums, but also a metro, roads, hotels and an entire new city — built overwhelmingly by **migrant workers** from South and Southeast Asia and East Africa.
+
+**How many of them died?**
+
+This is one of the most contested questions in modern sport. You will find confident answers everywhere, and **almost all of them are quietly answering a different question from the one they appear to be answering.**
+
+So here is the honest method: **four figures, four sources, and — crucially — four DIFFERENT THINGS BEING COUNTED.**
+
+---
+
+| Figure | Source | What it actually counts |
+| --- | --- | --- |
+| **At least 6,500** | *The Guardian*, February 2021 | Deaths of migrant workers from **India, Pakistan, Nepal, Bangladesh and Sri Lanka**, in **Qatar**, from **all causes**, in **any job or none**, over **roughly 2010-2020** |
+| **3 work-related + 34 non-work-related (37)** | Qatar's **Supreme Committee for Delivery & Legacy** | Deaths among workers **on FIFA World Cup stadium sites specifically** |
+| **"Between 400 and 500"** | **Hassan Al-Thawadi**, Qatar's World Cup chief, November 2022 | Deaths of migrant workers **on projects connected to the tournament** — a much broader definition than stadium sites |
+| **50 work-related deaths in 2020** (plus 500+ severe and c. 37,600 mild-to-moderate injuries) | **International Labour Organization**, November 2021 | **Occupational** deaths and injuries across **all of Qatar**, in the single year **2020** |
+
+---
+
+**Now look at what just happened.** Those four figures are **not four estimates of one number**. They are four **answers to four different questions**:
+
+- The Guardian's **6,500** is a count of **all deaths** among a defined set of nationalities living in Qatar over a decade. Many of those people never worked on a World Cup project. Some died of old age, in traffic accidents, of illness. **The Guardian's own reporting says so**, and it explicitly notes the figure is likely an **undercount** of total migrant deaths, because it **excludes** several major sending countries (such as the Philippines and Kenya) and the final months of 2020 (*The Guardian*, 2021).
+- Qatar's **37** counts only **stadium** workers — which is the narrowest possible definition of "the World Cup."
+- Al-Thawadi's **400-500** — offered by Qatar's own World Cup chief — is much broader than Qatar's official stadium figure, and it is one of the more revealing numbers in the whole dispute, precisely because of **who said it** (CNN, 2022).
+- The ILO's **50** is a **single year**, and only **work-related**.
+
+**Anyone who tells you "6,500 workers died building the World Cup" has combined the widest possible death count with the narrowest possible cause, and produced a claim that no source actually supports.** Anyone who tells you "only 37 died" has done the reverse.
+
+---
+
+**The deeper problem, and it is the real story: the deaths were not properly investigated.**
+
+This is where the dispute stops being about arithmetic and starts being about **accountability**.
+
+- **Amnesty International** documented that Qatar routinely **failed to investigate** migrant worker deaths, leaving families without answers or compensation (Amnesty International, 2021).
+- A very large share of deaths were certified as **"natural causes"** — acute heart or respiratory failure — **without autopsy**. The Guardian found that **69% of deaths among Indian, Nepali and Bangladeshi workers between 2010 and 2020** were attributed to natural causes (*The Guardian*, 2021).
+- The **ILO's own 2021 report** found that Qatar was **not investigating or reporting all work-related deaths** (ILO, 2021).
+
+**Why does the classification matter so much?** Because a young, healthy man who dies of "cardiac arrest" after working outdoors in extreme heat may well have died **of the heat** — and heat is a **workplace condition**, which makes his death a **work-related death**, which makes it someone's **legal responsibility**. Certifying it as "natural causes," **without an autopsy**, makes the question unanswerable — and unanswerable questions have no defendant.
+
+**So the honest conclusion is not a number. It is this:**
+
+> **The true toll of the labour that built Qatar 2022 is genuinely unknown — and it is unknown in large part because the deaths were not investigated. The absence of a reliable figure is not a neutral gap in the data. It is itself the finding.**
+
+That is a harder sentence than "6,500 workers died." It is also the true one, and the one you can defend.
+
+**What this teaches you beyond football:** when you meet a contested number, **do not pick the one that suits your argument.** Ask what each figure **counts**, who **published** it, and what **incentive** they had. That single habit will serve you for the rest of your life, in every subject you ever study.
+
+:::reveal Why is "6,500 workers died building the Qatar World Cup" a claim that no source actually supports? ||| Because it **fuses two incompatible figures**. The Guardian's 6,500 counts **all deaths, from all causes, in any job or none**, among migrants from five countries living in Qatar over roughly a decade — not deaths on World Cup projects. Qatar's stadium-site figure is **37**. Its own World Cup chief said **400-500** across projects connected to the tournament. Each number answers a **different question**. The honest finding is that the true toll is **unknown — because the deaths were not investigated**, and that absence is itself the finding.
+
+## Sources
+- Amnesty International. (2021, August 26). *Qatar: Failure to investigate migrant worker deaths leaves families in despair*. https://www.amnesty.org/en/latest/news/2021/08/qatar-failure-to-investigate-migrant-worker-deaths-leaves-families-in-despair/
+- CNN. (2022, November 29). *Qatar World Cup chief says between 400 and 500 migrant workers have died in projects connected to the tournament*. https://www.cnn.com/2022/11/29/football/qatar-world-cup-migrant-worker-deaths-spt-intl/index.html
+- International Labour Organization. (2021, November). *One is too many: The collection and analysis of data on occupational injuries in Qatar*. https://www.ilo.org/publications/one-too-many-collection-and-analysis-data-occupational-injuries-qatar
+- *The Guardian*. (2021, February 23). *Revealed: 6,500 migrant workers have died in Qatar since World Cup awarded*. https://www.theguardian.com/global-development/2021/feb/23/revealed-migrant-worker-deaths-qatar-fifa-world-cup-2022`,
+      recallContent: [
+        {
+          prompt: "Name the four Qatar 2022 figures and what each one actually counts.",
+          answer:
+            "6,500 (Guardian, 2021) = all deaths, all causes, five nationalities, all of Qatar, c. 2010-2020. 37 (Qatar's Supreme Committee) = deaths among World Cup STADIUM workers. 400-500 (Al-Thawadi, 2022) = deaths on projects CONNECTED to the tournament. 50 (ILO, 2021) = work-related deaths across all Qatar in the single year 2020.",
+        },
+        {
+          prompt: "What is the honest conclusion about the Qatar 2022 death toll?",
+          answer:
+            "That the true toll is genuinely UNKNOWN — largely because the deaths were not investigated and a great many were certified as 'natural causes' without autopsy. The absence of a reliable figure is not a neutral gap in the data; it is itself the finding.",
+        },
+        {
+          prompt: "Why does certifying a death as 'natural causes' without an autopsy matter so much?",
+          answer:
+            "Because a young healthy man who dies of 'cardiac arrest' after working in extreme heat may have died OF the heat — and heat is a workplace condition, which would make it a work-related death and therefore someone's legal responsibility. Unanswerable questions have no defendant.",
+        },
+      ],
+    },
+    {
+      slug: "football-pay-to-play",
+      title: "29 · Pay-to-play: how American youth football gates access by income",
+      section: "Section 7 · Money, labour, and the cost of the game",
+      body: `Everything in this section so far has been about somewhere else. This one is about **the United States**, and it is probably the part of this course most likely to be about **you**.
+
+**In most of the world, football is the cheapest sport there is.** A ball, some grass, two piles of jumpers for goalposts. That is the entire barrier to entry, which is exactly why the game is played everywhere, by everyone, and why so many of its greatest players came from places with no money at all.
+
+**In the United States, it is one of the more expensive youth sports.** This is not an accident of the game. It is a feature of the **system built around it**, and it has a name: **pay-to-play.**
+
+---
+
+**How the American system works.**
+
+There is no meaningful free pipeline. To play competitive youth football in the US, a family generally pays:
+
+- **Club fees** — the core cost, paid to a private club, per season or per year.
+- **Travel** — the "travel team" is the whole model. Tournaments in other cities and states mean petrol, flights, hotels and meals.
+- **Kit** — required uniforms, training gear, warm-ups, often from a specified supplier.
+- **Tournament entry fees.**
+- **Private coaching and trainers**, if you want to keep up with the kids who have them.
+- **The invisible cost: a parent's time.** Someone must drive to training three times a week and give up entire weekends. That requires a job with **flexible hours** — which is itself a marker of income.
+
+---
+
+**The numbers, cited.**
+
+The Aspen Institute's **Project Play** surveys what American families actually spend:
+
+- **Soccer is the most expensive** of the four major youth sports it studied: an average of **$1,188 per child, per season** (Aspen Institute, 2022) — ahead of basketball, baseball and tackle football.
+- Across youth sport generally, the average family spent **$1,016 on a child's primary sport in 2024 — a 46% increase since 2019** — plus roughly **$475** more on that child's other sports, for **close to $1,500 a year for one child** (Aspen Institute, 2025).
+
+**And here is the number that tells the actual story.** Regular sport participation among children aged **6-12**, by household income (Aspen Institute, 2022):
+
+| Household income | Children playing sports regularly |
+| --- | --- |
+| **$25,000 or less** | **24%** |
+| **$100,000 or more** | **40%** |
+
+A child from a household earning over $100,000 is **substantially more likely** to be playing sport at all. And Project Play further reports that children from homes earning **$100,000 or more are twice as likely to play travel sports** as those from homes earning under $50,000 (Aspen Institute, 2025) — and in American football, **travel is where the pathway is.**
+
+---
+
+**Now put that beside Lesson 22, and see the pattern.**
+
+In **1921**, the FA did not ban women from playing football. It **locked them out of the grounds** — and without grounds there were no crowds, no revenue, and no pathway.
+
+In the **United States today**, nobody bans poor children from playing football. **The pathway simply costs money they do not have** — and without the club, the travel, and the tournaments, they are invisible to the scouts, the college coaches, and the national team programme.
+
+**Different century. Different mechanism. Same result: the people who control access decide who gets to play.**
+
+This is why the pay-to-play problem is a **talent** problem as well as a **justice** problem. A system that selects for **parental income** is not selecting for **ability** — and every country that has a cheaper, more open pathway is drawing from a bigger pool of children than the United States is. When people ask why American football has not produced more world-class players relative to the size and wealth of the country, this is one of the serious answers on the table.
+
+---
+
+**What actually helps — practical, and not preachy.**
+
+- **Recreational and school football exist and are dramatically cheaper.** They are not the elite pathway, but they are football, and a good player playing a lot of football is developing.
+- **Ask clubs directly about scholarships, fee waivers and financial aid.** Many have them. Many do not advertise them. **Ask anyway** — the worst outcome is a no.
+- **Free football is real football.** Pickup games, futsal courts, the wall in the driveway. Some of the best players alive learned in exactly these conditions, and the "everyone in the world learns on the street" story is not a myth — it is the norm nearly everywhere except here.
+- **Refereeing (Lesson 30) is a way to be paid BY football rather than paying for it.** If cost is the barrier, this is the single most direct thing a teenager can do about it — and it is the subject of the very next lesson.
+
+:::reveal What is structurally identical about the FA's 1921 ban on women's football and American pay-to-play — and what is different? ||| **Different mechanism, same result.** In 1921 the FA locked women out of the **grounds**; without grounds there were no crowds, no revenue, no pathway. In the US today nobody bans poor children — the **pathway simply costs money they do not have**, and without the club and the travel they are invisible to scouts and college coaches. In both cases, **the people who control access decide who gets to play.** And in both cases it is a **talent** problem as well as a justice one: a system that selects for parental income is not selecting for ability.
+
+## Sources
+- Aspen Institute. (2022). *State of play 2022: Costs to play trends*. https://www.aspeninstitute.org/wp-content/uploads/2025/08/2022_SoP_National_CostsPlay-FINAL.pdf
+- Aspen Institute. (2025, February 24). *Project Play survey: Family spending on youth sports rises 46% over five years*. https://projectplay.org/news/2025/2/24/project-play-survey-family-spending-on-youth-sports-rises-46-over-five-years
+- Aspen Institute's Project Play. (n.d.). *Youth sports facts: Challenges*. Retrieved July 2026, from https://projectplay.org/youth-sports/facts/challenges`,
+      recallContent: [
+        {
+          prompt: "What does the average American family spend on youth soccer, and how does it compare to other sports?",
+          answer:
+            "About $1,188 per child per season (Aspen Institute, 2022) — the MOST expensive of the four major youth sports studied, ahead of basketball, baseball and tackle football.",
+        },
+        {
+          prompt: "Give the participation gap by household income for US children aged 6-12.",
+          answer:
+            "24% of children from households earning $25,000 or less play sports regularly, against 40% from households earning $100,000 or more. And kids from $100k+ homes are twice as likely to play TRAVEL sports — which, in American soccer, is where the pathway is.",
+        },
+        {
+          prompt: "Why is pay-to-play a TALENT problem, not only a justice problem?",
+          answer:
+            "Because a system that selects for parental income is not selecting for ability. Every country with a cheaper, more open pathway is drawing from a bigger pool of children than the US is.",
+        },
+      ],
+    },
+    {
+      slug: "football-quiz-section-7",
+      title: "Section 7 quiz · Money, labour, and the cost of the game",
+      section: "Section 7 · Money, labour, and the cost of the game",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who receives a transfer fee when a player moves clubs?",
+            options: [
+              "The player",
+              "The selling club",
+              "The player's agent, in full",
+              "The national association",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The fee goes to the SELLING CLUB — it is the price of releasing the player from their remaining contract. The player receives wages and usually a signing-on fee.",
+            sourceLessonSlug: "football-transfers-and-academies",
+          },
+          {
+            prompt: "Why does a club often sell its best player with a year left on their contract?",
+            options: [
+              "Because FIFA requires it",
+              "Because an expired contract makes the player a FREE AGENT who can leave for nothing — so it is the club's last chance to convert them into a fee",
+              "Because transfer fees are highest in a player's final year",
+              "Because the salary cap forces it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Contract length is leverage — the single most important economic fact in football's labour market.",
+            sourceLessonSlug: "football-transfers-and-academies",
+          },
+          {
+            prompt: "What is the men's world record transfer fee, and does it still stand?",
+            options: [
+              "€222 million — Neymar, Barcelona to PSG, August 2017 — and it still stands",
+              "€100 million — and it has been broken many times since",
+              "€500 million, set in 2024",
+              "There is no record; fees are confidential",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Neymar's €222m move in August 2017 remains the record nearly a decade later — no club has topped it.",
+            sourceLessonSlug: "football-transfers-and-academies",
+          },
+          {
+            prompt: "What is the women's world record transfer fee, and what makes it notable?",
+            options: [
+              "About $1.1 million — Naomi Girma to Chelsea, January 2025 — the first women's transfer above $1 million",
+              "About €50 million",
+              "About $767,000, and it has not been broken",
+              "There has never been a paid transfer in women's football",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Girma's roughly $1.1m move from San Diego Wave to Chelsea broke the previous record of about $767,000 (Kundananji to Bay FC, February 2024). Set it beside the men's €222m and the ratio — roughly 200 times — is the honest measure of where the women's game sits economically.",
+            sourceLessonSlug: "football-transfers-and-academies",
+          },
+          {
+            prompt: "What is FIFA's Article 19?",
+            options: [
+              "The rule requiring VAR at all World Cup matches",
+              "'Protection of minors' — international transfers are only permitted if the player is over 18, with narrow listed exceptions",
+              "The salary cap for MLS clubs",
+              "The rule creating the transfer window",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In the Regulations on the Status and Transfer of Players. Exceptions include parents moving for non-football reasons; players aged 16-18 within the EU/EEA (where the club must guarantee an academic education as well as football training); a 50km cross-border rule; and refugees.",
+            sourceLessonSlug: "football-agents-minors-and-exploitation",
+          },
+          {
+            prompt: "Under Article 19's EU/EEA exception for 16-18 year-olds, what must the new club guarantee?",
+            options: [
+              "A first-team contract",
+              "Adequate football education AND an academic, school or vocational education allowing a career other than football",
+              "A minimum wage set by FIFA",
+              "Return travel to the player's home country",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is the rule that says: if you take a 16-year-old's childhood, you owe them a fallback. Whether that obligation is honoured in practice is one of the sharpest questions in the sport.",
+            sourceLessonSlug: "football-agents-minors-and-exploitation",
+          },
+          {
+            prompt: "How should the widely-quoted figure of '15,000 young West African players trafficked per year' be treated?",
+            options: [
+              "As an established fact — it comes from an NGO",
+              "As a contested hidden-population estimate: the exploitation is real and documented, but nobody has a reliable count",
+              "As a proven undercount",
+              "As a fabrication with no basis at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The figure describes a hidden population — unrecorded, often illegal, invisible to statistics. Researchers of football migration caution that such numbers must be handled with care. The exploitation is documented; the SCALE is not. Learning to say that is more valuable than memorising a number.",
+            sourceLessonSlug: "football-agents-minors-and-exploitation",
+          },
+          {
+            prompt: "The Guardian's figure of at least 6,500 migrant worker deaths in Qatar counts what, exactly?",
+            options: [
+              "Deaths of workers on World Cup stadium construction sites",
+              "Deaths of migrant workers from five countries, in Qatar, from ALL causes, in any job or none, over roughly 2010-2020",
+              "Work-related deaths across Qatar in 2020",
+              "Deaths on all projects connected to the tournament",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is an ALL-CAUSE death count among migrants from India, Pakistan, Nepal, Bangladesh and Sri Lanka living in Qatar over a decade. The Guardian's own reporting says so — and notes it likely undercounts total migrant deaths, since it excludes several major sending countries.",
+            sourceLessonSlug: "football-qatar-2022",
+          },
+          {
+            prompt: "Qatar's Supreme Committee reported 3 work-related and 34 non-work-related deaths (37 total). What does that figure count?",
+            options: [
+              "All migrant deaths in Qatar",
+              "Deaths among workers on FIFA World Cup STADIUM sites specifically — the narrowest possible definition",
+              "Deaths across all tournament-connected projects",
+              "Work-related deaths in a single year",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Stadium sites only. Anyone quoting 'only 37 died' has taken the narrowest possible count and applied it to the whole World Cup.",
+            sourceLessonSlug: "football-qatar-2022",
+          },
+          {
+            prompt: "Who said that between 400 and 500 migrant workers died on projects connected to the Qatar World Cup?",
+            options: [
+              "Amnesty International",
+              "The International Labour Organization",
+              "Hassan Al-Thawadi, Qatar's own World Cup chief, in November 2022",
+              "The Guardian",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is one of the most revealing numbers in the dispute precisely because of WHO said it — Qatar's own World Cup chief, giving a figure far broader than Qatar's official stadium count of 37.",
+            sourceLessonSlug: "football-qatar-2022",
+          },
+          {
+            prompt: "What is the honest conclusion about the death toll of the labour that built Qatar 2022?",
+            options: [
+              "It was 6,500",
+              "It was 37",
+              "It is genuinely unknown — largely because the deaths were not investigated, and that absence is itself the finding",
+              "It was 400-500, and the matter is settled",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Amnesty documented Qatar's failure to investigate; the ILO found deaths were not all reported; and a large share were certified 'natural causes' without autopsy. A heat death certified as cardiac arrest becomes a question with no defendant.",
+            sourceLessonSlug: "football-qatar-2022",
+          },
+          {
+            prompt: "Why does certifying a worker's death as 'natural causes' without an autopsy matter?",
+            options: [
+              "It affects the family's religious rites only",
+              "Because a young healthy man who dies of 'cardiac arrest' after working in extreme heat may have died OF the heat — a workplace condition, and therefore someone's legal responsibility",
+              "It has no practical consequence",
+              "It changes the total published by FIFA",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The classification is not a clerical detail. It is the mechanism by which a work-related death becomes an unanswerable question — and unanswerable questions have no defendant.",
+            sourceLessonSlug: "football-qatar-2022",
+          },
+          {
+            prompt: "According to the Aspen Institute, how does soccer rank among the costs of major American youth sports?",
+            options: [
+              "The cheapest of the four major sports",
+              "The MOST expensive of the four major sports studied — about $1,188 per child per season",
+              "Roughly the same as baseball",
+              "Free, because it is school-based",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Ahead of basketball, baseball and tackle football. Elsewhere in the world football is the cheapest sport there is — a ball and some grass. In the US, the SYSTEM around it is expensive, not the game.",
+            sourceLessonSlug: "football-pay-to-play",
+          },
+          {
+            prompt: "What is the US youth sport participation gap by household income (ages 6-12)?",
+            options: [
+              "24% for households at $25,000 or less, versus 40% for households at $100,000 or more",
+              "There is no meaningful gap",
+              "40% versus 42% — the gap is negligible",
+              "10% versus 90%",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And children from $100k+ homes are twice as likely to play TRAVEL sports — which, in American soccer, is where the entire pathway lives.",
+            sourceLessonSlug: "football-pay-to-play",
+          },
+          {
+            prompt: "What do the FA's 1921 ban and American pay-to-play have in common?",
+            options: [
+              "Both were imposed by FIFA",
+              "Different mechanisms, same result: the people who control ACCESS decide who gets to play — and a system that selects for income or gender is not selecting for ability",
+              "Both were formally rescinded in 1971",
+              "Nothing — they are unrelated",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In 1921 the FA locked women out of the grounds; today the pathway simply costs money many families do not have. In both cases the barrier is structural, and in both cases it is a TALENT problem as well as a justice problem.",
+            sourceLessonSlug: "football-pay-to-play",
+          },
+        ],
+      },
+    },
   ],
 };
