@@ -1034,5 +1034,335 @@ It would be easy to file this under "history," or under "sad news about a famous
         ],
       },
     },
+    // ─────────── SECTION 4 · WHAT RETALIATION COSTS (CRYSTAL LEE SUTTON) ───────────
+    {
+      slug: "kyraw-retaliation-what-the-law-says",
+      title: "11 · Retaliation: what the law forbids, and what it actually does about it",
+      section: "Section 4 · Retaliation, and what it costs",
+      recallContent: [
+        {
+          prompt: "What was the boycott, in leverage terms?",
+          answer:
+            "Going around an employer who could outlast a strike, to the employer's customers — the one place the growers were actually vulnerable. Leverage is a seam you find, not a thing you are given.",
+        },
+        {
+          prompt: "What is the central claim of \"A movement is not a saint\"?",
+          answer:
+            "The organizing work was real and the harm was real. The person who built the power can also be harmed inside it, and neither fact cancels the other.",
+        },
+      ],
+      body: `You now know that Section 7 protects concerted activity. So here is the obvious next question, and it is the question that actually matters: **what happens if your employer fires you for it anyway?**
+
+**What the law forbids.** Section 8(a) of the NLRA lists the employer conduct that is an **unfair labor practice**. Three of them matter to you:
+
+| Provision | The statute's words |
+| --- | --- |
+| **§ 8(a)(1)** | It is unlawful "to interfere with, restrain, or coerce employees in the exercise of the rights guaranteed in section 157" (29 U.S.C. § 158(a)(1)) |
+| **§ 8(a)(3)** | It is unlawful to discriminate "in regard to hire or tenure of employment or any term or condition of employment to encourage or discourage membership in any labor organization" (29 U.S.C. § 158(a)(3)) |
+| **§ 8(a)(4)** | It is unlawful "to discharge or otherwise discriminate against an employee because he has filed charges or given testimony" under the Act (29 U.S.C. § 158(a)(4)) |
+
+Read § 8(a)(1) again. It does not say "fire." It says **interfere with, restrain, or coerce**. Retaliation is not only a firing. It is the cut hours. The suddenly-terrible schedule. The write-up for a rule nobody else gets written up for. The transfer to the worst station. The meeting where a manager explains, warmly, that people who make trouble tend not to last. That last one has a name: it is a **threat**, and threatening an employee for protected activity is itself a violation of § 8(a)(1) — the employer does not have to actually do anything.
+
+**§ 8(a)(4) is the one people miss.** It makes it separately unlawful to punish you **for filing a charge or testifying**. The law anticipated that the act of complaining would itself invite punishment, and forbade that too.
+
+**What you can actually do about it.**
+
+1. **You file a charge with the National Labor Relations Board.** Not a lawsuit — a **charge**. The regulation is refreshingly plain: "**Any person** may file a charge alleging that any person has engaged in or is engaging in any unfair labor practice" (29 C.F.R. § 102.9). *Any person.* You do not need to be in a union. You do not need a lawyer. It does not cost money. You file with the NLRB **Regional Office** for your area, and the Board's staff investigates.
+
+2. **You have six months. This is the deadline that ends most cases before they start.** Section 10(b) says that "**no complaint shall issue based upon any unfair labor practice occurring more than six months prior to the filing of the charge**" (29 U.S.C. § 160(b)). Six months from the event — not from when you found out it was illegal, not from when you got around to it. **If you take one practical thing from this entire course, take this one: the clock is six months, and it is short.**
+
+3. **If the Board finds a violation, what do you get?** Here the course has to be honest with you, because this is where most people's picture of the law is wrong. Section 10(c) empowers the Board to order the employer "to cease and desist from such unfair labor practice, and to take such affirmative action **including reinstatement of employees with or without back pay**" (29 U.S.C. § 160(c)).
+
+**Read what that remedy is — and notice what it is not.**
+
+- You can get your **job back**.
+- You can get **back pay** — the wages you lost.
+- What you generally **do not** get is **punitive damages**. There is no pot of money that punishes the employer for what it did to you. The remedy is designed to *make you whole*, to put you roughly back where you were.
+- And § 10(c) has a proviso: no reinstatement or back pay "if such individual was suspended or discharged **for cause**." Which is exactly what every employer in this situation says the reason was.
+
+**So the honest summary is this.** The law forbids retaliation. The remedy is your job back and your lost wages, **years later, after a process you have to survive** — and in the meantime you have no income, and the thirty coworkers watching you get walked out have learned a lesson the statute cannot un-teach.
+
+That gap — between what the law says and what it costs the person who tests it — is not a footnote. **It is the subject of the next lesson.**
+
+**Where to check this yourself.** The National Labor Relations Board (nlrb.gov) publishes its own plain-language guidance and the addresses of its Regional Offices; the statute itself is at 29 U.S.C. §§ 151–169. **This course explains general legal principles and is not legal advice.** If something has happened to you, an NLRB Regional Office, a union, or a legal-aid organization can advise you on your facts — and the six-month clock is running while you decide.
+
+:::reveal Your manager cuts your hours in half two days after you and three coworkers signed a letter about scheduling. Nobody was fired. Is that retaliation, and how long do you have to do something about it? ||| Yes, potentially. § 8(a)(1) forbids conduct that "interfere[s] with, restrain[s], or coerce[s]" employees in exercising § 7 rights — it is not limited to firing. Cut hours, punitive scheduling, selective write-ups, and even a *threat* can all violate it. You file a **charge** with an NLRB Regional Office — any person may file, no lawyer and no union needed, at no cost — and under § 10(b) you have **six months** from the event.
+
+## Sources
+- National Labor Relations Act § 8(a), 29 U.S.C. § 158(a). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/158
+- National Labor Relations Act § 10(b) and § 10(c), 29 U.S.C. § 160. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/160
+- 29 C.F.R. § 102.9 (Who may file a charge). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/cfr/text/29/102.9`,
+    },
+    {
+      slug: "kyraw-sutton-the-price",
+      title: "12 · Crystal Lee Sutton: the person who pays for the clause",
+      section: "Section 4 · Retaliation, and what it costs",
+      recallContent: [
+        {
+          prompt: "How long do you have to file an unfair labor practice charge with the NLRB, and where does that deadline come from?",
+          answer:
+            "Six months from the event. NLRA § 10(b), 29 U.S.C. § 160(b): no complaint may issue on an unfair labor practice occurring more than six months before the charge was filed.",
+        },
+        {
+          prompt: "If the NLRB finds your employer retaliated against you, what is the remedy — and what is it NOT?",
+          answer:
+            "Reinstatement and back pay (§ 10(c)) — a make-whole remedy. It is NOT punitive damages. There is generally no money that punishes the employer for what it did.",
+        },
+      ],
+      body: `Every course about labor rights is tempted to teach the law and skip the price. **She is the price.**
+
+**Crystal Lee Jordan** — she was Jordan then; Sutton is a later married name — worked at the **J.P. Stevens** textile mill in **Roanoke Rapids, North Carolina**, folding towels for about **$2.65 an hour** (Alamance Community College [ACC], n.d.). *(Not Burlington. Burlington is where she later lived and died, and the mix-up is the single most common error told about her.)*
+
+The **Textile Workers Union of America (TWUA)** was trying to organize the plant. She signed on.
+
+On **May 30, 1973**, she was fired for "insubordination" after copying an anti-union letter off the company bulletin board (Fink, 2014). And on her way out, she did the thing that became a film:
+
+> She "climbed atop a shop floor table and raised a piece of cardboard with 'UNION' scrawled on it" (Fink, 2014).
+
+In her own words, from her archive: she "took a piece of cardboard and wrote the word UNION on it in big letters, got up on my work table, and slowly turned it around" (ACC, n.d.). One by one, the machines went quiet. The police carried her out.
+
+*Norma Rae* (1979) is her story. **Her name is not in it.**
+
+**Now the part the film does not show you.**
+
+**The retaliation was not a one-off. It was the business model.** Between 1963 and 1973, the NLRB found J.P. Stevens "guilty of violating labor laws in **twenty-one of twenty-two cases**." The company "paid **$1.3 million in back wages to nearly three hundred workers illegally discharged for union support**" (Fink, 2014).
+
+Sit with that. **Three hundred people fired for organizing, at one company.** And the remedy was exactly the remedy Lesson 11 described: back pay. Money, later. Which the company evidently regarded as an acceptable operating expense — because it kept doing it. **When the only penalty for breaking a law is paying back what you owed anyway, the law has priced the violation, not prohibited it.**
+
+**They won. It took six more years.**
+
+On **August 28, 1974**, workers at the seven Stevens plants in Roanoke Rapids voted. **3,133 workers cast ballots and the TWUA won by 237 votes** (Fink, 2014). *(The union that won that election was the TWUA. You will very often see it credited to the ACTWU — including in her own archive — but ACTWU did not exist until the 1976 merger. The record drifts; check the dates.)*
+
+And then **nothing happened for six years.** Winning the election did not get them a contract. The company simply would not sign one. "Two years after the euphoria of Roanoke Rapids, the workers still had no contract" (Fink, 2014). The union took the fight national — a boycott, the same weapon Huerta used — and in **October 1980**, seven years after Crystal Lee Jordan was carried out of that mill, J.P. Stevens finally settled: a contract with **automatic dues check-off, binding arbitration of grievances, and compensation for the wage increases the workers lost during the years spent trying to secure a contract** (Fink, 2014).
+
+**Look at that list.** Binding arbitration of grievances. It is Wyatt's contract. It is the clause from Lesson 2. **It took seven years and three hundred fired workers to buy the paragraph that Addie Wyatt's union already had in 1941** — and that is the honest shape of how this works.
+
+**What happened to her.** In **1977** she was awarded back wages and her job was **reinstated by court order**. She went back for **two days**, and left (ACC, n.d.).
+
+**One thing this course will not do, and you should know why.**
+
+You may have heard that there is a landmark court case bearing her name. **There is not.** A search of the published-opinions database returns **no case captioned with her name**, as Jordan or as Sutton. Her firing was found unlawful and her reinstatement and back pay were real — that is well documented — but they came through the NLRB-and-court process that ground J.P. Stevens down over two decades, not through a single famous precedent with her name on the cover.
+
+**The course could have made one up. It is not going to.** A citation you have not read is not a citation; it is a decoration. And if this course is going to tell you to check the law before you rely on it, it has to hold itself to the same rule. **Where the record is thin, the honest thing is to say so.**
+
+**What she actually teaches.** Not "the system works." Something harder and more useful:
+
+- **Retaliation is real, it is illegal, and it happens anyway** — twenty-one times out of twenty-two, at one company, for a decade.
+- **The remedy is slow and it is make-whole, not punitive** — which means an employer can decide the fine is worth it.
+- **The person who goes first absorbs the cost**, and the cost is not abstract: a job, an income, a town, years.
+- **And it still worked.** They won the election. They got the contract. The clauses are real and they protected people for decades afterward. **Both of those things are true at once** — which, by now, you should be recognizing as the shape of this entire course.
+
+:::reveal The NLRB found J.P. Stevens violated labor law in 21 of 22 cases over a decade, and the company paid $1.3 million in back pay to ~300 illegally fired workers — and kept doing it. What does that tell you about the remedy in NLRA § 10(c)? ||| That a make-whole remedy — reinstatement and back pay, with no punitive damages — can function as a **price** rather than a prohibition. If breaking the law costs no more than paying back what you owed anyway, an employer can rationally treat mass illegal firings as an operating expense. That is the gap between what the law says and what it does, and it is why the person who goes first pays for everyone.
+
+## Sources
+- Alamance Community College. (n.d.). *About Crystal Lee* [Crystal Lee Sutton Collection]. https://library.alamancecc.edu/sutton/about
+- Fink, J. (2014, July 15). In good faith: Working-class women, feminism, and religious support in the struggle to organize J. P. Stevens textile workers in the Southern Piedmont, 1974–1980. *Southern Spaces*. https://southernspaces.org/2014/good-faith-working-class-women-feminism-and-religious-support-struggle-organize-j-p-stevens-textile-workers-southern-piedmont-1974-1980/
+- National Labor Relations Act § 10(c), 29 U.S.C. § 160(c). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/160`,
+    },
+    {
+      slug: "kyraw-quiz-retaliation",
+      title: "13 · Quiz: retaliation, and what it costs",
+      section: "Section 4 · Retaliation, and what it costs",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How long do you have to file an unfair labor practice charge with the NLRB?",
+            options: [
+              "Six months from the unfair labor practice",
+              "Two years from the unfair labor practice",
+              "Thirty days from the unfair labor practice",
+              "There is no deadline",
+            ],
+            correctIndex: 0,
+            explanation:
+              "NLRA § 10(b), 29 U.S.C. § 160(b). Six months — from the event, not from when you learned it was unlawful. This deadline ends more cases than any argument does.",
+            sourceLessonSlug: "kyraw-retaliation-what-the-law-says",
+          },
+          {
+            prompt: "Who may file an unfair labor practice charge with the NLRB?",
+            options: [
+              "Any person — no union membership, no lawyer, and no fee required",
+              "Only a certified union, on a worker's behalf",
+              "Only an employee with at least one year of service",
+              "Only an attorney admitted to practice before the Board",
+            ],
+            correctIndex: 0,
+            explanation:
+              "29 C.F.R. § 102.9: \"Any person may file a charge alleging that any person has engaged in or is engaging in any unfair labor practice.\"",
+            sourceLessonSlug: "kyraw-retaliation-what-the-law-says",
+          },
+          {
+            prompt: "If the Board finds your employer retaliated against you, what remedy does NLRA § 10(c) authorize?",
+            options: [
+              "Cease and desist, and affirmative action including reinstatement with or without back pay",
+              "Punitive damages of up to three times lost wages",
+              "Criminal prosecution of the manager involved",
+              "Automatic union recognition at the workplace",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a make-whole remedy: your job and your lost wages. There are generally no punitive damages — which is the whole problem the Sutton lesson exposes.",
+            sourceLessonSlug: "kyraw-retaliation-what-the-law-says",
+          },
+          {
+            prompt: "Retaliation under § 8(a)(1) is limited to firing someone. True or false?",
+            options: [
+              "False — the statute forbids conduct that interferes with, restrains, or coerces, which includes cut hours, punitive scheduling, selective discipline, and even threats",
+              "True — only a discharge counts",
+              "True, unless the employee is in a union",
+              "False, but only cut pay counts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"To interfere with, restrain, or coerce.\" A manager who merely *threatens* an employee for protected activity has already violated § 8(a)(1).",
+            sourceLessonSlug: "kyraw-retaliation-what-the-law-says",
+          },
+          {
+            prompt: "What does NLRA § 8(a)(4) separately forbid?",
+            options: [
+              "Discharging or discriminating against an employee because they filed charges or gave testimony under the Act",
+              "Hiring replacement workers during a strike",
+              "Closing a plant for economic reasons",
+              "Refusing to recognize a union without an election",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The law anticipated that complaining would itself invite punishment, and forbade that too. It is the provision people most often miss.",
+            sourceLessonSlug: "kyraw-retaliation-what-the-law-says",
+          },
+          {
+            prompt: "Where was the mill where Crystal Lee Sutton worked and was fired?",
+            options: [
+              "Roanoke Rapids, North Carolina",
+              "Burlington, North Carolina",
+              "Delano, California",
+              "Chicago, Illinois",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Roanoke Rapids. Burlington is where she later lived and died — the mix-up is the single most common error told about her.",
+            sourceLessonSlug: "kyraw-sutton-the-price",
+          },
+          {
+            prompt: "Which union was organizing the Roanoke Rapids mill in 1973–74, and won the election?",
+            options: [
+              "The Textile Workers Union of America (TWUA)",
+              "The Amalgamated Clothing and Textile Workers Union (ACTWU)",
+              "The United Packinghouse Workers of America (UPWA)",
+              "The United Farm Workers (UFW)",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The TWUA. ACTWU did not exist until the 1976 merger, and is very often credited retroactively — including in Sutton's own archive. Check the dates; records drift.",
+            sourceLessonSlug: "kyraw-sutton-the-price",
+          },
+          {
+            prompt: "Between 1963 and 1973, how did the NLRB rule in cases against J.P. Stevens?",
+            options: [
+              "It found the company guilty of violating labor laws in 21 of 22 cases",
+              "It found for the company in most cases",
+              "It never heard a case against the company",
+              "It found one violation, in 1973",
+            ],
+            correctIndex: 0,
+            explanation:
+              "21 of 22. The company paid $1.3 million in back wages to nearly 300 workers illegally discharged for union support — and kept doing it (Fink, 2014).",
+            sourceLessonSlug: "kyraw-sutton-the-price",
+          },
+          {
+            prompt: "What is the deeper point of the J.P. Stevens back-pay figure?",
+            options: [
+              "When the only penalty for breaking a law is paying back what you owed anyway, the law has priced the violation rather than prohibited it",
+              "The NLRB is an ineffective agency that should be abolished",
+              "Back pay is a generous remedy",
+              "Workers should not file charges",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A make-whole remedy with no punitive damages can be rationally treated by an employer as an operating expense. That is the gap between what the law says and what it does.",
+            sourceLessonSlug: "kyraw-sutton-the-price",
+          },
+          {
+            prompt: "The Roanoke Rapids workers won their NLRB election in August 1974. When did they get a first contract?",
+            options: [
+              "October 1980 — six more years, after a national boycott",
+              "Immediately, in September 1974",
+              "In 1975, after federal mediation",
+              "They never got one",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Winning an election does not get you a contract. It took six more years and a national boycott — the same weapon Huerta used — to force J.P. Stevens to sign.",
+            sourceLessonSlug: "kyraw-sutton-the-price",
+          },
+          {
+            prompt: "What did the October 1980 J.P. Stevens settlement contain?",
+            options: [
+              "Dues check-off, binding arbitration of grievances, and compensation for wages lost during the fight for a contract",
+              "Punitive damages for every fired worker",
+              "A federal consent decree and criminal penalties",
+              "Automatic recognition at every Stevens plant nationwide",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Binding arbitration of grievances — the clause from Lesson 2. It took seven years and 300 fired workers to buy the paragraph Addie Wyatt's union already had in 1941.",
+            sourceLessonSlug: "kyraw-sutton-the-price",
+          },
+          {
+            prompt: "Is there a landmark court case bearing Crystal Lee Sutton's name?",
+            options: [
+              "No — a published-opinions search returns no case captioned with her name; her reinstatement came through the NLRB-and-court process, not a famous precedent",
+              "Yes — Sutton v. J.P. Stevens, decided by the Supreme Court",
+              "Yes — Jordan v. J.P. Stevens, decided by the Fourth Circuit",
+              "Yes, but it was unpublished",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course says so out loud rather than inventing a citation. A citation you have not read is not a citation; it is a decoration.",
+            sourceLessonSlug: "kyraw-sutton-the-price",
+          },
+          {
+            prompt: "What happened after Sutton was reinstated by court order in 1977?",
+            options: [
+              "She worked two days and left",
+              "She stayed at the mill until she retired",
+              "She refused reinstatement and took a cash settlement instead",
+              "She was immediately fired again",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two days. The remedy restored the job; it could not restore the four years.",
+            sourceLessonSlug: "kyraw-sutton-the-price",
+          },
+          {
+            prompt: "Which film tells her story, and what is notable about how it does?",
+            options: [
+              "Norma Rae (1979) — her name is not in it",
+              "Norma Rae (1979) — she is credited as a co-writer",
+              "Silkwood (1983) — she is named throughout",
+              "Matewan (1987) — she appears as herself",
+            ],
+            correctIndex: 0,
+            explanation: "Her story became a famous film and an Oscar. Her name was never used in it.",
+            sourceLessonSlug: "kyraw-sutton-the-price",
+          },
+          {
+            prompt: "What are the two things the Sutton lesson insists are true AT ONCE?",
+            options: [
+              "The person who goes first absorbs a real and heavy cost — AND it still worked: they won the election, got the contract, and the clauses protected people for decades",
+              "That the law is useless, and that unions are unnecessary",
+              "That retaliation is rare, and that remedies are generous",
+              "That the film was accurate, and that her name was used",
+            ],
+            correctIndex: 0,
+            explanation:
+              "By Section 4 you should be recognizing this shape. Holding two true things at once is the method this whole course is teaching.",
+            sourceLessonSlug: "kyraw-sutton-the-price",
+          },
+        ],
+      },
+    },
   ],
 };
