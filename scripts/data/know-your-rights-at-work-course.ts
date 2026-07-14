@@ -1364,5 +1364,287 @@ You may have heard that there is a landmark court case bearing her name. **There
         ],
       },
     },
+    // ─────────── SECTION 5 · LEVERAGE (SARA NELSON) ───────────
+    {
+      slug: "kyraw-find-the-seam",
+      title: "14 · Sara Nelson: find the seam",
+      section: "Section 5 · Leverage when you hold no obvious cards",
+      recallContent: [
+        {
+          prompt: "What made J.P. Stevens' pattern of illegal firings economically rational for the company?",
+          answer:
+            "The NLRA's remedy is make-whole — reinstatement and back pay, with no punitive damages. Paying back what you already owed can be cheaper than obeying the law, so the fine becomes a price.",
+        },
+        {
+          prompt: "Under 29 C.F.R. § 102.9, who may file an unfair labor practice charge?",
+          answer:
+            "Any person. No union membership, no lawyer, and no fee — and under § 10(b) you have six months from the event.",
+        },
+      ],
+      body: `Every previous section has been about people with an obvious grievance and no obvious power. This section is about the question underneath all of them: **where does leverage actually come from?**
+
+**Sara Nelson** became a flight attendant at **United Airlines in 1996**, joining the union the same year. She has served as **International President of the Association of Flight Attendants-CWA since 2014** (Nelson, 2021).
+
+**Start with how weak her position looks on paper.**
+
+Remember the exclusion list from Lesson 6? Flight attendants are on it. Airline employees are excluded from the NLRA because their employer is "subject to the **Railway Labor Act**" (29 U.S.C. § 152(3)). So they organize under the **RLA** instead — and the RLA is not a friendlier statute. It is a statute **designed to stop you striking.**
+
+Here is what a flight attendant has to get through before she can legally walk out (National Mediation Board [NMB], n.d.):
+
+| Step | What it means |
+| --- | --- |
+| **Section 6 notice** | The union serves notice of intended changes; the **status quo is frozen** (45 U.S.C. § 156). |
+| **Direct negotiation** | Bargain. There is no deadline. Airline contracts do not expire — they become "amendable." Negotiations can run for **years**. |
+| **Mediation** | The **National Mediation Board** takes the case. The NMB decides when — and whether — it is done. |
+| **Proffer of arbitration** | "When the NMB believes that further mediation efforts will not result in an agreement, it issues a proffer of arbitration" (NMB, n.d.). |
+| **Release + 30-day cooling-off** | Only if a party *rejects* arbitration does the NMB release the parties into a **30-day cooling-off period**, during which nobody may change the status quo (NMB, n.d.). |
+| **Self-help** | Only *then* may the union legally strike (NMB, n.d.) — and even then Congress or a Presidential Emergency Board may intervene. |
+
+**Read that table as a worker, not a lawyer.** A flight attendant cannot simply walk out when the freezer breaks. She cannot do what the seven machinists in *Washington Aluminum* did — the case that anchors this entire course does **not** apply to her. She must be *released*, by a federal board, at a time the board chooses. In practice, **97% of NMB mediation cases have been resolved with no interruption to service** (NMB, n.d.). The statute works exactly as designed.
+
+**So: no strike weapon, no NLRA, no leverage. Right?**
+
+**January 2019.** The federal government had been shut down for a month — the longest in U.S. history. Roughly 800,000 federal workers were furloughed or working without pay. Among them: **air traffic controllers** and **TSA officers**. Not Nelson's members. Not her union. Not her fight, on any org chart.
+
+On **January 20, 2019**, accepting the AFL-CIO's **Martin Luther King Jr. Drum Major for Justice Award**, Nelson stood up and called on the labor movement to **discuss conducting a general strike** to end the shutdown.
+
+**Now look at what she had actually noticed.** She did not argue that the shutdown was unfair, though it was. She did not appeal to anyone's decency. **She pointed at a seam.**
+
+The seam was this: *the safety of the aviation system was degrading, and aviation is the one system in America whose interruption is instantly, nationally, undeniably visible.* Air traffic controllers were exhausted and unpaid. Screeners were calling out. Her own union was preparing for a flight attendant strike over **unsafe conditions** — a different legal theory entirely from a contract strike (Nelson, 2021).
+
+She was not threatening to make America angry. **She was pointing out, correctly and publicly, that the country was about to stop flying.**
+
+**What happened next is the part you must get right.** On **January 25, 2019**, after air traffic controller sick-outs began delaying flights at LaGuardia, the shutdown ended — the same day. **Five days after her speech.**
+
+**And here is the honest accounting, which matters more than the legend:**
+
+- **The general strike never happened.** It was never called. It was, at most, proposed for discussion.
+- **AFA did not strike either.** Under the RLA, it largely could not.
+- **The people whose absence actually stopped the planes were the air traffic controllers**, acting on their own — and they are federal employees, who are *forbidden* to strike.
+- Nelson's own congressional biography claims only that the *New York Times* called her "America's most powerful flight attendant" for her role in **helping to end** the shutdown (Nelson, 2021). Her own description of what she did is careful. This course will be too.
+
+**So what was the leverage? The leverage was the credible threat, and the fact that she was the one who made it legible.**
+
+Nothing was withdrawn. No one struck. What changed is that a sentence was said out loud, by someone with standing to say it, that made an *already-existing* vulnerability impossible for the other side to keep ignoring. The pressure was always there in the system. She named it.
+
+**This is the transferable skill, and it is the most valuable thing in this course:**
+
+> **Leverage is not about how sympathetic you are, how hard you have worked, or how badly you are being treated. It is about locating the point in a system where your group's refusal — or even your group's credible, articulated capacity to refuse — stops something the other side cannot afford to have stopped. And then making that point legible to them.**
+
+You are a freelance camera operator with one client. You are a contractor whose invoice is 90 days late. You are one of four people who know how the payroll system works. You are a high school student and your shift is the only one that covers Friday close. **You are never as powerless as the org chart says.** You are, however, usually looking in the wrong place — at fairness, when you should be looking at *dependency*.
+
+**Ask: what breaks if we stop? Who notices? How fast? And do they know it yet?**
+
+**One correction, because this course does not repeat things it cannot verify.** You will frequently see Sara Nelson credited with a place on the *Time* 100 list. **That could not be verified in any year, and this course does not assert it.** Her membership numbers move too — her own 2021 congressional testimony said AFA represented **50,000 flight attendants at 17 airlines** *as of that date*, and the number has been changing as new carriers organize. Facts about living people have dates on them. Check them.
+
+:::reveal Sara Nelson's union legally could not strike, never called a general strike, and the workers who actually stopped the planes were not hers. So what exactly was her leverage? ||| The **credible, articulated threat** — and her standing to make it legible. She identified an already-existing vulnerability (aviation safety was degrading and the country was about to stop flying) and said it out loud, publicly, in a way the other side could no longer ignore. Leverage is not sympathy or desert; it is locating the point where a refusal — or a credible capacity to refuse — stops something the other side cannot afford to have stopped.
+
+## Sources
+- National Labor Relations Act § 2(3), 29 U.S.C. § 152(3). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/152
+- Railway Labor Act § 6, 45 U.S.C. § 156. Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/45/156
+- National Mediation Board. (n.d.). *Mediation overview & FAQ*. https://nmb.gov/NMB_Application/index.php/meditation-overview-faq/
+- Nelson, S. (2021, September 23). *Witness biography* [Submitted to the U.S. House Committee on Transportation and Infrastructure]. U.S. Congress. https://www.congress.gov/117/meeting/house/114058/witnesses/HHRG-117-PW05-Bio-NelsonS-20210923.pdf`,
+    },
+    {
+      slug: "kyraw-quiz-leverage",
+      title: "15 · Quiz: leverage when you hold no obvious cards",
+      section: "Section 5 · Leverage when you hold no obvious cards",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why are flight attendants NOT covered by the National Labor Relations Act?",
+            options: [
+              "NLRA § 2(3) excludes employees of an employer subject to the Railway Labor Act, which covers airlines",
+              "They are classified as independent contractors",
+              "They are classified as supervisors",
+              "They cross state lines, so no federal law applies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Airlines and railroads are under the Railway Labor Act — a different statute with very different rules, especially about striking.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "Under the Railway Labor Act, when may an airline union legally strike?",
+            options: [
+              "Only after the NMB proffers arbitration, a party rejects it, the NMB releases the parties, and a 30-day cooling-off period expires",
+              "Any time after the contract expires",
+              "Any time a majority of members vote to do so",
+              "Only with the President's written permission",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The RLA is designed to prevent interruptions. 97% of NMB mediation cases have been resolved with no interruption to service — the statute works as intended.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "Could the seven machinists in NLRB v. Washington Aluminum have done what they did, if they had been flight attendants?",
+            options: [
+              "No — the NLRA does not cover them, and the RLA forbids a walkout until the parties are released and a cooling-off period expires",
+              "Yes — § 7 applies to all private-sector workers",
+              "Yes, but only with 30 days' notice",
+              "Only if they had first filed a charge with the NLRB",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The case that anchors this whole course does not apply to a flight attendant. That is the constraint Sara Nelson had to work inside.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "On January 20, 2019, what did Sara Nelson actually do?",
+            options: [
+              "Called on the labor movement to discuss conducting a general strike to end the government shutdown",
+              "Called an immediate strike of all AFA flight attendants",
+              "Filed an unfair labor practice charge against the federal government",
+              "Ordered air traffic controllers to call in sick",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She made the call while accepting the AFL-CIO's MLK Drum Major for Justice Award. Getting this precise matters — the legend inflates it.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "Did a general strike actually happen in January 2019?",
+            options: [
+              "No — it was never called, and AFA did not strike either",
+              "Yes — millions of workers walked out",
+              "Yes — but only flight attendants participated",
+              "Yes — it lasted five days",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It was, at most, proposed for discussion. The honest accounting is the point of the lesson: the threat, not the strike, was the leverage.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "Whose absence actually began to stop the planes, five days later?",
+            options: [
+              "Air traffic controllers, whose sick-outs delayed flights at LaGuardia",
+              "Flight attendants, who walked off aircraft",
+              "Pilots, who refused to fly",
+              "Baggage handlers, who struck nationally",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Federal employees, acting on their own — and they are forbidden to strike. The shutdown ended the same day, January 25, 2019.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "What, precisely, was Sara Nelson's leverage?",
+            options: [
+              "A credible, articulated threat that made an already-existing vulnerability impossible for the other side to keep ignoring",
+              "The legal right to shut down all U.S. air travel",
+              "A strike fund large enough to outlast the government",
+              "A court injunction against the shutdown",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nothing was withdrawn and no one struck. What changed is that someone with standing said the vulnerability out loud.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "The course defines leverage as:",
+            options: [
+              "Locating the point where your group's refusal — or credible capacity to refuse — stops something the other side cannot afford to have stopped, and making it legible to them",
+              "The degree of public sympathy your cause attracts",
+              "The number of members your union has",
+              "How badly you are being treated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Leverage is about dependency, not fairness. Ask: what breaks if we stop? Who notices? How fast? And do they know it yet?",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "The course says you are \"usually looking in the wrong place.\" What is the right place?",
+            options: ["Dependency — who needs what you do", "Fairness — whether you deserve better", "Seniority", "Your job title"],
+            correctIndex: 0,
+            explanation:
+              "Fairness is an argument. Dependency is leverage. The two are not the same, and only one of them moves an employer.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "Is Sara Nelson a Time 100 honoree?",
+            options: [
+              "It could not be verified in any year, so this course does not assert it",
+              "Yes, in 2019",
+              "Yes, multiple times",
+              "Yes, in 2020 and 2022",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The credit circulates widely and could not be substantiated. This course drops claims it cannot verify rather than repeating them.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "Under the RLA, what happens to an airline contract when it reaches its end date?",
+            options: [
+              "It does not expire — it becomes \"amendable,\" and the terms stay in force while bargaining continues, possibly for years",
+              "It expires and the workers become at-will",
+              "It automatically renews on the same terms for one year",
+              "The NMB imposes a new contract",
+            ],
+            correctIndex: 0,
+            explanation:
+              "This is a genuinely strange feature of the RLA, and it is a large part of why airline negotiations run so long.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "What was AFA preparing, separate from any general strike?",
+            options: [
+              "A flight attendant strike over unsafe conditions — a different legal theory from a contract strike",
+              "A lawsuit against the President",
+              "A boycott of United Airlines",
+              "A petition to Congress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Per her own congressional witness bio (Nelson, 2021). Safety is a distinct route, and it mattered to the credibility of the threat.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "Sara Nelson's own 2021 congressional testimony said AFA represented how many flight attendants?",
+            options: [
+              "About 50,000, at 17 airlines — as of that date",
+              "Exactly 55,000, at 20 airlines, permanently",
+              "About 100,000, at 30 airlines",
+              "The number has never been published",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The number moves as new carriers organize. The course gives it WITH its date, because facts about living people and living organizations have dates on them.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "Why is the RLA's 97% no-interruption record relevant to the leverage lesson?",
+            options: [
+              "It shows the statute is designed to prevent strikes — and works — which is exactly why Nelson had to find leverage somewhere other than a strike",
+              "It proves flight attendants do not want to strike",
+              "It shows the NMB is biased toward unions",
+              "It is irrelevant to leverage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Her whole achievement only makes sense once you understand how thoroughly the law had disarmed her.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+          {
+            prompt: "You are one of four people at your company who understand the payroll system, and your invoice is 90 days late. What does this section tell you to ask?",
+            options: [
+              "What breaks if we stop? Who notices? How fast? And do they know it yet?",
+              "Am I being treated fairly compared to my coworkers?",
+              "How long have I worked here?",
+              "Is my manager a reasonable person?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You are never as powerless as the org chart says — but you have to look at dependency rather than desert.",
+            sourceLessonSlug: "kyraw-find-the-seam",
+          },
+        ],
+      },
+    },
   ],
 };
