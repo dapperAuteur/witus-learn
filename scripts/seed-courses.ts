@@ -95,6 +95,7 @@ import { AI_B5_DEPLOYING_EVALUATING_COURSE } from "./data/ai-b5-deploying-evalua
 import { AI_B6_AI_PRODUCT_CAPSTONE_COURSE } from "./data/ai-b6-ai-product-capstone-course";
 import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
+import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
@@ -550,6 +551,25 @@ async function main() {
     instructorId,
     slug: "learning-how-to-learn",
     course: LEARNING_HOW_TO_LEARN_COURSE,
+    category: "Study Skills",
+    navigationMode: "linear",
+  });
+
+  // WOOP (Wish · Outcome · Obstacle · Plan) — Oettingen's Mental Contrasting with Implementation
+  // Intentions. The sibling of Learning How to Learn, and deliberately a course about a METHOD, not
+  // a biography: a student finishes able to run WOOP on a real goal of their own. It leads with the
+  // counterintuitive finding rather than burying it — positive fantasizing about a desired future,
+  // on its own, predicts LOWER effort and WORSE attainment; the obstacle step is what converts a
+  // wish into action, and only when expectations of success are high (when they're low, mental
+  // contrasting correctly leads you to let the goal go — a feature, not a bug). Section 5 teaches
+  // the evidence honestly: modest effect sizes, replication debates, and which claims rest on a
+  // single study. WOOP is trademarked — the course teaches the method and cites the peer-reviewed
+  // research without implying endorsement or reproducing woopmylife.org's branded worksheets.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "woop-science-of-doing-it",
+    course: WOOP_COURSE,
     category: "Study Skills",
     navigationMode: "linear",
   });
