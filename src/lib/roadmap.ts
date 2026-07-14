@@ -309,6 +309,28 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
+- ✅ **Pickleball — the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
+  "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**
+  (banks >10 so the 10-question attempt cap actually rotates), 24 \`:::reveal\` checks, APA 7 +
+  \`## Sources\` per lesson. Teaches the game (court, serve, kitchen, two-bounce rule, third-shot
+  drop, dinking, doubles), then the parts a generic sports course skips. Two content traps drive
+  the whole design: (1) **the rulebook is revised ANNUALLY** and the **2026** edition renumbered
+  nearly everything, so every rule number is cited to the 2026 rulebook **by year** and none is
+  asserted from memory — where a concept has no verified number, it's taught **without** one
+  (e.g. the recommended court-BUILD area, which lives in USA Pickleball's court-construction
+  guidance, not the rulebook); (2) **the "named after a dog named Pickles" story is DISPUTED**, so
+  the course teaches the **dispute** — Joel Pritchard's own archived oral history says the dog came
+  after the game, co-founder Barney McCallum told the dog story until he died, and the claim that
+  would settle it (the dog's birth year) has **never been documented by anyone** — and turns it into
+  a source-evaluation module. Same discipline on statistics: SFIA's coherent series (4.2M/2020 →
+  24.3M/2025) is the one quoted, and a lesson teaches why SFIA said **8.9M** for 2022 while
+  APP/YouGov said **36.5M** for the same year (different thresholds, neither lying). Rally vs.
+  side-out scoring is presented as an **event-level choice** (Rule 15.C.2 — rally scoring is a
+  *provisional option* a TD may pick, and is barred from Nationals), never as one universal system.
+  The strongest section is the entrepreneur angle: court conversion + the **noise litigation** that
+  actually kills those projects, coaching/certification, leagues and events, the paddle industry's
+  delamination → **PBCoR** arms race, and the pro tours' post-merger contract correction.
+  Re-run \`pnpm seed:courses\`. No migration.
 - ✅ BVC real 21-episode content (lessons + quizzes + maps + Coffee assignment).
 - ✅ **FAA Part 107 — sectioned, quizzed, and click-to-reveal** (\`fix/faa-sections-quizzes\`). The
   import had seeded 90+ lessons as ONE flat list (\`seed-faa.ts\` never set \`section\`, so the course
