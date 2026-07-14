@@ -1751,5 +1751,552 @@ Which is exactly the skill the rest of this course is going to make you use on s
         ],
       },
     },
+
+    // ── Section 6 · There is no single union model ────────────────────────────
+    {
+      slug: "nordics-ghent-and-sectoral-bargaining",
+      section: "Section 6 · There is no single union model: six countries",
+      title: "20 · The Nordics: when the union pays your unemployment cheque",
+      recallContent: [
+        {
+          prompt: "Name two ways American unions themselves excluded workers.",
+          answer:
+            "Any two of: whites-only clauses in union constitutions; blocking Black workers from apprenticeships; segregated 'auxiliary' locals with no vote; sex-segregated seniority lines; bargaining for a 'family wage' that justified paying women less.",
+        },
+        {
+          prompt: "What four things does the course say you must hold at once about union corruption?",
+          answer:
+            "It was real; it was not universal; the story was also used as a political weapon far beyond what was proved; and the union-democracy rules created to cure it are now used by rank-and-file members to reform their own unions.",
+        },
+      ],
+      body: `Everything you have learned so far is **one country's answer**. Now the point of the course: **there is no single "union" model.** The American system — company-by-company elections, a federal referee, a contract for that workplace — is one design among many, and by world standards it is an unusual one.
+
+Six countries. Same four questions each time.
+
+---
+
+**The Nordics: Denmark, Sweden, Finland, Iceland, Norway.**
+
+Start with the number, because it is startling. In 2024, trade union density was around **65% in Sweden, Denmark and Finland**, and about **91% in Iceland** — against **10.0%** in the United States in 2025 (OECD, 2025; BLS, 2026).
+
+Why?
+
+**Q1 — Who may organise?** Everyone, easily. But that is true in a lot of countries with 10% density, so it is not the explanation.
+
+**The real explanation is a piece of plumbing called the Ghent system.** In Denmark, Sweden, Finland, Iceland — and partly Belgium — **unemployment insurance is administered by union-affiliated funds**, not (only) by the state. To be insured against losing your job, you deal with an institution linked to your union, and joining the union is the natural, socially default step. The OECD (2025) is blunt about it: the countries where union membership is at or near 50% are essentially *the Ghent countries*, plus Norway.
+
+That is a devastating little fact, and you should let it change how you think. **Density in these countries is not primarily a story about how much workers love unions. It is a story about who runs the unemployment system.** Institutions shape behaviour. If you want to explain a country's union numbers, look for the plumbing before you reach for the culture.
+
+**Q3 — Who bargains with whom?** **Sectoral bargaining.** A union federation and an employers' federation negotiate for an entire *industry* at once, and the resulting agreement covers the firms in it. The consequence is remarkable: **Denmark and Sweden have no statutory national minimum wage at all.** Not because they don't believe in wage floors — because the wage floor is set by collective agreement, industry by industry, and covers nearly everybody without a law being needed (European Commission, 2022).
+
+**And now the honesty.** The Ghent system is **eroding.** Private unemployment-insurance funds that do *not* require union membership have been growing, and Nordic union density has been declining for decades from a much higher peak (Nordic Council of Ministers, 2025). "Nordic unions are strong" is true, and "Nordic unions are weakening" is also true, and a course that gives you only the first has given you a postcard.
+
+:::reveal What is the Ghent system, and why does it explain Nordic union density better than culture does? ||| A system in which unemployment insurance is administered by union-affiliated funds rather than by the state alone. To be insured against job loss you deal with a union-linked institution, so joining is the default. The OECD finds that the countries with union membership near or above 50% are essentially the Ghent countries — which means the density is largely explained by who runs the unemployment system, not by how much workers like unions.
+
+## Sources
+- OECD. (2025). *Membership of unions and employers' organisations, and bargaining coverage*. OECD Publishing. https://www.oecd.org/en/publications/membership-of-unions-and-employers-organisations-and-bargaining-coverage_fe47107c-en.html
+- Bureau of Labor Statistics. (2026, February 18). *Union members — 2025*. U.S. Department of Labor. https://www.bls.gov/news.release/pdf/union2.pdf
+- European Commission. (2022). *Directive (EU) 2022/2041 on adequate minimum wages in the European Union*. EUR-Lex. https://eur-lex.europa.eu/eli/dir/2022/2041/oj
+- Nordic Council of Ministers. (2025). *Changes in union density in the Nordic countries*. Nordic Economic Policy Review 2025. https://pub.norden.org/nord2025-001/changes-in-union-density-in-the-nordic-countries.html`,
+    },
+    {
+      slug: "germany-codetermination",
+      section: "Section 6 · There is no single union model: six countries",
+      title: "21 · Germany: workers on the board",
+      recallContent: [
+        {
+          prompt: "Roughly what were trade union density rates in Sweden, Denmark and Iceland in 2024, and in the US in 2025?",
+          answer:
+            "Around 65% in Sweden and Denmark, about 91% in Iceland (OECD, 2025) — against 10.0% in the United States in 2025 (BLS, 2026).",
+        },
+        {
+          prompt: "Why do Denmark and Sweden have no statutory national minimum wage?",
+          answer:
+            "Because the wage floor is set by sectoral collective agreements, industry by industry, which cover nearly everybody — so no statute is needed.",
+        },
+      ],
+      body: `Germany is the country that will most confuse an American, because on paper its unions look *weak* and its workers have *more power* than almost anywhere else.
+
+**The numbers first.** German trade union density was about **14.1% in 2024** — barely above the US **10.0%** in 2025. But **collective bargaining coverage in Germany is roughly 49–50%** (2022–2024 estimates), against **11.2%** in the US in 2025 (ETUI/Worker Participation, 2024; BLS, 2026).
+
+Stop and look at that.
+
+| | Germany | United States |
+|---|---|---|
+| Union **members** | ~14.1% (2024) | 10.0% (2025) |
+| Workers **covered** by a union contract | ~49–50% (2022–24) | 11.2% (2025) |
+
+Roughly the same share of workers *join*. **Roughly five times the share are covered.** Now go back to Question 3 from lesson 2 — *who bargains with whom, and at what level* — because it is the entire answer. German bargaining happens at the **sector** level, between an industry union and an employers' association, and the agreement covers the firms in that association whether or not a given worker ever signed anything.
+
+**And then Germany does something no American workplace does. Twice.**
+
+**Channel one: the works council (*Betriebsrat*).** Under the Works Constitution Act (*Betriebsverfassungsgesetz*), employees in a workplace can elect a works council. Note who elects it: **all the employees, not just union members.** It is not the union — it is a *statutory* body of the workforce. It has real **co-determination rights**: on things like working hours, overtime, shift patterns, holiday scheduling and disciplinary procedures, the employer generally cannot act **without the works council's agreement**. On restructuring and redundancies it has strong information and consultation rights.
+
+**Channel two: the supervisory board (*Aufsichtsrat*).** German companies have a two-tier board: a management board that runs the company, and a supervisory board that appoints and oversees it. Under the **Co-determination Act of 1976 (*Mitbestimmungsgesetz*)**, a company with **more than 2,000 employees** must fill **half** the seats on that supervisory board with **employee representatives**. Smaller companies (roughly 500–2,000 employees) have **one-third** employee representation.
+
+Read that again. **Half the supervisory board.** Workers, in the room where the CEO is hired and fired.
+
+**Now the catch, because there is always a catch and the caricature usually omits it.** The chair of the supervisory board comes from the shareholder side and holds a **casting vote** in a tie. So it is parity *of seats*, not parity *of power* — shareholders retain ultimate control. (The exception is the coal and steel industries, where a 1951 law gave genuinely full parity.) German co-determination is not workers running the company. It is workers being **structurally, legally, permanently in the room** — with a vote, a veto over a defined list of workplace decisions, and access to the information.
+
+**Does it work?** That is a live argument and this course will not settle it for you. Supporters point to Germany's manufacturing base, its low strike rates, and how German firms handled the 2008–09 crisis (cutting hours rather than jobs, with union agreement). Critics argue co-determination slows decisions and can entrench insiders — workers with permanent contracts — against everyone else. Both camps have evidence. **What is not arguable is that it exists**, and that it is a completely different answer to Question 3 than anything in American law.
+
+:::reveal Germany and the US have similar union MEMBERSHIP rates. Why is German bargaining COVERAGE roughly five times higher? ||| Because German bargaining happens at the SECTOR level — an industry union negotiates with an employers' association, and the agreement covers the firms in it whether or not a given worker ever joined a union. American bargaining happens workplace by workplace, so coverage can barely exceed membership.
+
+## Sources
+- ETUI / Worker Participation. (n.d.). *Germany: National industrial relations*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries/germany
+- Mitbestimmungsgesetz [Co-determination Act] of 4 May 1976 (Germany). Gesetze im Internet, Federal Ministry of Justice. https://www.gesetze-im-internet.de/mitbestg/
+- Betriebsverfassungsgesetz [Works Constitution Act] (Germany). Gesetze im Internet, Federal Ministry of Justice. https://www.gesetze-im-internet.de/betrvg/
+- OECD. (2025). *Membership of unions and employers' organisations, and bargaining coverage*. OECD Publishing. https://www.oecd.org/en/publications/membership-of-unions-and-employers-organisations-and-bargaining-coverage_fe47107c-en.html
+- Bureau of Labor Statistics. (2026, February 18). *Union members — 2025*. U.S. Department of Labor. https://www.bls.gov/news.release/pdf/union2.pdf`,
+    },
+    {
+      slug: "japan-enterprise-unions",
+      section: "Section 6 · There is no single union model: six countries",
+      title: "22 · Japan: the union inside the company",
+      recallContent: [
+        {
+          prompt: "What is a German works council, and who elects it?",
+          answer:
+            "A statutory body of the workforce, elected by ALL employees in a workplace — not just union members. It has co-determination rights: on working hours, overtime, shifts and discipline the employer generally cannot act without its agreement.",
+        },
+        {
+          prompt: "Under the German Co-determination Act of 1976, what share of the supervisory board of a company with over 2,000 employees must be employee representatives — and what is the catch?",
+          answer:
+            "Half. The catch is that the board's chair comes from the shareholder side and holds a casting vote in a tie, so it is parity of seats, not parity of power.",
+        },
+      ],
+      body: `In America a union is usually organized by **craft** (the electricians) or by **industry** (all autoworkers). In Japan, the dominant form is neither. It is the **enterprise union**: the union of *this company*.
+
+Toyota's workers have a Toyota union. Its members are the regular employees of Toyota. Its officers are Toyota employees, often on leave from their jobs, and many will return to management careers at Toyota afterwards.
+
+**Ask Question 3.** Who bargains with whom? The company's union bargains with the company. So the union's fortunes are tied, tightly and directly, to the firm's fortunes. If the company does badly, the union does badly. **This produces cooperation.** Japan's strike rates are among the lowest in the industrialized world, and Japanese unions have historically accepted restructuring in exchange for protecting the jobs of their members.
+
+**Then how does anyone get a raise?** Through a mechanism with no American equivalent: the **shuntō**, the "spring labour offensive." Every spring, enterprise unions across the whole economy bargain at roughly the same time. The national federation — **RENGO**, the Japanese Trade Union Confederation, formed in 1989 — sets a target, big exporters settle first, and their settlement becomes the benchmark everyone else negotiates against. It is a way of getting *coordinated*, economy-wide wage-setting out of a movement organized company by company. In the 2024 shuntō, RENGO reported an average wage increase above **5%** — its highest in over three decades, after decades of near-flat wages (JILPT, 2025).
+
+**And now Question 2, which is where the model bleeds.**
+
+The enterprise union is the union of the company's **regular employees**. Japan has an enormous **non-regular** workforce — part-time, fixed-term, and dispatched (agency) workers — who are, roughly speaking, not the people the enterprise union was built to protect. A union whose entire structure is "we are the company's people" struggles by design to defend the workers the company treats as *not* its people.
+
+Japan's estimated unionization rate was **16.1% as of June 30, 2024** — the lowest on record, down from around 30% in 1990 (Ministry of Health, Labour and Welfare, 2024).
+
+**The lesson.** Enterprise unionism buys cooperation, stability, and low conflict — and pays for it by drawing a line around who counts as "us." That is not a Japanese quirk. **It is the same trade-off you saw the AFL make in 1886**, and the same one the CIO refused in 1935. The question of *who is in the union* is never a detail. It is the whole design.
+
+:::reveal What is an enterprise union, and which group of workers does that structure systematically leave out in Japan? ||| A union organized at a single company, whose members are that company's regular employees. It systematically leaves out non-regular workers — part-time, fixed-term and dispatched (agency) workers — because a union built on "we are the company's people" struggles by design to defend the workers the company treats as not its people.
+
+## Sources
+- Ministry of Health, Labour and Welfare (Japan). (2024). *Basic survey on labour unions, 2024*. Reported in Japan Institute for Labour Policy and Training, *Japan Labor Issues*. https://www.jil.go.jp/english/jli/documents/2025/054-02.pdf
+- Japan Institute for Labour Policy and Training. (2025). *2024 shuntō: The first wage increase above 5%*. *Japan Labor Issues*. https://www.jil.go.jp/english/jli/documents/2025/051-03.pdf
+- Japanese Trade Union Confederation (RENGO). (n.d.). *About RENGO*. https://www.jtuc-rengo.org/about/
+- OECD. (2025). *Membership of unions and employers' organisations, and bargaining coverage*. OECD Publishing. https://www.oecd.org/en/publications/membership-of-unions-and-employers-organisations-and-bargaining-coverage_fe47107c-en.html`,
+    },
+    {
+      slug: "china-acftu-a-different-object",
+      section: "Section 6 · There is no single union model: six countries",
+      title: "23 · China: when the union is an arm of the state",
+      recallContent: [
+        {
+          prompt: "What is the shuntō, and what problem does it solve?",
+          answer:
+            "Japan's annual 'spring labour offensive': enterprise unions across the economy bargain at roughly the same time, with RENGO setting a target and big exporters' settlements becoming the benchmark. It produces coordinated, economy-wide wage-setting from a movement organized company by company.",
+        },
+        {
+          prompt: "What was Japan's estimated unionization rate as of June 2024?",
+          answer: "16.1% — the lowest on record, down from around 30% in 1990 (MHLW, 2024).",
+        },
+      ],
+      body: `This lesson requires you to do something genuinely difficult: **stop assuming the word means what you think it means.**
+
+China has a trade union. It has, by membership, the **largest trade union organization in the world**: the **All-China Federation of Trade Unions (ACFTU)**.
+
+It is not a weak union. It is a **different kind of object**, and calling it a "union" without explanation will mislead you every time.
+
+**Run the four questions, straight down the statute.**
+
+**Q1 — Who is allowed to organise?** Under China's **Trade Union Law**, trade unions operate **under the leadership of the Communist Party of China**, and the ACFTU is the single, unified national trade union organization. A union at a workplace must **affiliate to the ACFTU**, and establishing one requires **approval from the trade union body at the next level up**.
+
+So: you may join a union. You may not found an **independent** one. There is one union, its structure runs upward to a federation, and that federation's leadership relationship is defined by law as running to the party.
+
+**Q2 — Who is excluded?** Anyone who wants a union that is not that one.
+
+**Q3 — Who bargains with whom?** The workplace union is, structurally, part of an apparatus whose loyalties the law defines. When a dispute pits workers against an employer — particularly a state-linked employer, or a major local one — the union is not a straightforwardly independent party to it. In practice the ACFTU does a great deal of real work — welfare administration, legal aid, some wage negotiation — and it would be a caricature to say it does nothing for workers. **But it is not, and is not designed to be, an organization whose first duty is to its members against the state.**
+
+**Q4 — What happens to you if you try?** The right to strike appeared in China's 1975 and 1978 constitutions. It was **removed from the 1982 Constitution** and is not a constitutional right today (Chang & Brown, 2017). Strikes still happen — a lot of them — but they happen *outside* any legal framework that protects the people who join them. Workers who attempt to organize independently, and the labour NGOs and activists who assist them, have been detained; international bodies including the ILO's supervisory machinery and the International Trade Union Confederation have raised this repeatedly (ITUC, n.d.).
+
+**And the international marker.** China has **not ratified** ILO Convention No. **87** (Freedom of Association and Protection of the Right to Organise, 1948) or Convention No. **98** (Right to Organise and Collective Bargaining, 1949) — the two conventions that define the international floor you will meet in Section 7 (ILO NORMLEX, n.d.).
+
+**Why this lesson is in the course.** Not to score a political point. Because it teaches you the sharpest possible version of **Question 1**. In most of this course, "who may organise?" has been a question about *obstacles* — cost, retaliation, exclusion, hostile employers. In China it is a question about **definition**: the thing you are permitted to join is not the thing an American or a Swede means by the word.
+
+When you compare countries, the word "union" is not a fixed unit. **Check what the institution actually is before you compare the numbers.** A membership figure means nothing if you have not asked who the organization answers to.
+
+> **Currency note.** Laws and enforcement change. Everything in this lesson is described as of **2026** and cited to the statute or to a dated source. If you use it in an argument, check whether it still holds.
+
+:::reveal Under China's Trade Union Law, what makes the ACFTU a fundamentally different kind of institution from a Swedish or American union? ||| It is the single legal national trade union: unions operate under the leadership of the Communist Party, a workplace union must affiliate to the ACFTU, and forming one requires approval from the union body at the next level up. You may join a union; you may not found an independent one. So its first duty is not defined as running to its members against the state.
+
+## Sources
+- Trade Union Law of the People's Republic of China (as amended). National People's Congress. http://en.npc.gov.cn/2021-12/24/c_791373.htm
+- International Labour Organization. (n.d.). *Ratifications for China*. NORMLEX. https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:103404
+- Chang, K., & Brown, W. (2017). *The emerging industrial relations of China*. Cambridge University Press. https://www.cambridge.org/core/books/emerging-industrial-relations-of-china/
+- International Trade Union Confederation. (n.d.). *Global Rights Index*. https://www.ituc-csi.org/global-rights-index
+- International Labour Organization. (n.d.). *Freedom of Association and Protection of the Right to Organise Convention, 1948 (No. 87)*. NORMLEX. https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:12100:0::NO::P12100_INSTRUMENT_ID:312232`,
+    },
+    {
+      slug: "solidarity-and-cosatu",
+      section: "Section 6 · There is no single union model: six countries",
+      title: "24 · Poland and South Africa: when a union is the opposition",
+      recallContent: [
+        {
+          prompt: "Which two ILO conventions has China not ratified, and what do they cover?",
+          answer:
+            "Convention No. 87 (freedom of association and the right to organise, 1948) and Convention No. 98 (the right to organise and bargain collectively, 1949).",
+        },
+        {
+          prompt: "What happened to the right to strike in China's constitution?",
+          answer:
+            "It appeared in the 1975 and 1978 constitutions and was removed from the 1982 Constitution. It is not a constitutional right today. Strikes still occur, but outside any framework that protects the people who join them.",
+        },
+      ],
+      body: `Sometimes a union is not primarily about wages at all. Sometimes it is the only organization a repressive state has failed to control — and it becomes the vehicle for overthrowing that state.
+
+Two cases, on two continents, in the same decade.
+
+---
+
+**Poland: Solidarność.**
+
+Poland in 1980 was a communist state that described itself as a *workers'* state. Which created a fascinating vulnerability: it could not easily explain why actual workers were not allowed to organize themselves.
+
+In **August 1980**, workers at the Lenin Shipyard in **Gdańsk** occupied the yard, led by an electrician named **Lech Wałęsa**. They posted **21 Demands** on the shipyard gate. Demand number one was not about pay. It was the right to form **free trade unions, independent of the Communist Party**. (The handwritten boards are now inscribed on **UNESCO's Memory of the World** register.)
+
+On **31 August 1980**, the government signed the **Gdańsk Agreement**, conceding an independent, self-governing trade union — the first in the Soviet bloc. **Solidarity** was born, and within about a year had grown to roughly **10 million members** — an extraordinary share of the country's working population.
+
+The state's answer came on **13 December 1981**: **martial law**. Solidarity was banned, its leaders interned. It survived underground for most of a decade.
+
+And then it won. The **Round Table talks** of February–April **1989** produced partly free elections in **June 1989**, which Solidarity's candidates swept. Poland became the first Soviet-bloc country to break, and the rest of the bloc followed within months.
+
+**Sit with what that means.** A trade union — a *trade union* — was the instrument that ended communist rule in Poland. Question 1 ("who may organise?") turned out, in a one-party state, to be the same question as "who governs?"
+
+---
+
+**South Africa: COSATU.**
+
+Under apartheid, Black South Africans could not vote. Black trade unions were, for most of the apartheid era, outside the legal industrial-relations system entirely.
+
+In **1973**, a wave of strikes broke out in **Durban** — large, spreading, and impossible to ignore. In **1979**, the government-appointed **Wiehahn Commission** recommended that Black trade unions be granted **legal recognition** and brought into the registration system. The regime's reasoning was **control**: unregistered Black unions were growing anyway, and a registered union can be regulated. In **1985**, the **Congress of South African Trade Unions (COSATU)** was founded, and it turned that legal opening into a weapon.
+
+Because Black workers had **no vote**, the union became the political vehicle. COSATU's strikes and "stayaways" were not only about wages; they were about apartheid. **In a country where you cannot vote, withdrawing your labour is the ballot you have.** COSATU, allied with the ANC and the United Democratic Front, became one of the central engines of the movement that ended apartheid in 1994.
+
+**And then it got complicated — which is the part you must not skip.** After 1994 COSATU entered a formal governing alliance with the ANC, the party it had helped bring to power. A union federation allied to the governing party is in a genuinely difficult position: it must bargain with a state run by its own allies. That tension is live and **actively contested in South African politics today**, and it is not this course's job to adjudicate it. In **August 2012**, police killed **34 striking miners at Marikana**; a judicial commission of inquiry reported in **2015**, and responsibility for what happened remains politically contested and litigated. It is a reminder that a union movement's relationship to a state it helped create does not stay simple.
+
+---
+
+**What both cases teach.** When workers have no other legal channel — no vote, no party, no free press — **the union becomes the channel**, and the state understands that perfectly well. That is why authoritarian governments so often permit *a* union and forbid *an independent* one. They are not confused about what a union is. They know exactly what it is.
+
+:::reveal Why did a trade union become the vehicle for democratic change in both Poland and apartheid South Africa? ||| Because in each case workers had no other legal channel — no free vote, no independent party, no free press. When the union is the only organization the state has failed to control, "who may organise?" becomes the same question as "who governs?" — which is precisely why authoritarian states permit a union but forbid an independent one.
+
+## Sources
+- UNESCO. (n.d.). *Twenty-one demands, Gdańsk, August 1980: The birth of the Solidarity trade union*. Memory of the World Register. https://www.unesco.org/en/memory-world/twenty-one-demands-gdansk-august-1980-birth-solidarity-trades-union-massive-social-movement
+- International Center on Nonviolent Conflict. (n.d.). *Poland's Solidarity movement (1980–1989)*. https://www.nonviolent-conflict.org/polands-solidarity-movement-1980-1989/
+- South African History Online. (n.d.). *Wiehahn Commission report tabled in parliament*. https://sahistory.org.za/dated-event/wiehahn-commission-report-tabled-parliament
+- Nelson Mandela Foundation, O'Malley Archives. (n.d.). *Trade unions*. https://omalley.nelsonmandela.org/index.php/site/q/03lv02424/04lv02730/05lv03188/06lv03220.htm
+- Republic of South Africa. (2015). *Report of the Marikana Commission of Inquiry*. https://www.gov.za/documents/marikana-commission-inquiry-report`,
+    },
+    {
+      slug: "gulf-kafala",
+      section: "Section 6 · There is no single union model: six countries",
+      title: "25 · The Gulf: workers with almost no rights at all",
+      recallContent: [
+        {
+          prompt: "What was the first of Solidarity's 21 Demands at Gdańsk in August 1980?",
+          answer: "The right to form free trade unions, independent of the Communist Party. Not pay — the right to organise.",
+        },
+        {
+          prompt: "Why did COSATU's strikes function as politics in apartheid South Africa?",
+          answer:
+            "Because Black South Africans could not vote. In a country where you cannot vote, withdrawing your labour is the ballot you have.",
+        },
+      ],
+      body: `The last stop is the hardest, and the course would be dishonest without it. Everywhere else in this section, workers had *some* answer to Question 4 — *what happens if you try?* Here, for a very large number of people, the answer is close to: **everything you have.**
+
+**The kafala system.**
+
+Across much of the Gulf, migrant workers — who in several of these countries are the **overwhelming majority of the workforce** — enter under a sponsorship system known as **kafala**. A worker's legal status in the country is tied to a **specific employer**, the *kafeel*. Historically this meant that without the employer's permission you could not change jobs, and in some cases could not leave the country. Layer on top of that the standard pattern documented by the ILO and by rights organizations: **recruitment debt** (workers pay large fees to agents to get the job, arriving already in debt), **passport confiscation**, and wage theft.
+
+**Run Question 4.** If your visa, your housing, your ability to change jobs, and your ability to go home all run through one man, then "I'd like to raise a grievance" is not a workplace conversation. It is a bet on the rest of your life.
+
+**What has changed — and this is real, and you should say so.**
+
+Qatar, under sustained international scrutiny and in a formal programme with the ILO, made substantial legal reforms in 2020:
+
+- **Law No. 17 of 2020** introduced a **non-discriminatory minimum wage** — the first in the region — of **QAR 1,000 per month**, plus allowances for food and accommodation where the employer does not provide them.
+- **Law No. 19 of 2020** **removed the No-Objection Certificate requirement**, so a migrant worker can change jobs without needing the employer's permission. Exit-permit requirements had been removed earlier.
+
+The ILO described these as dismantling core elements of kafala (ILO, 2020). That is a genuine change, and pretending otherwise would be exactly the kind of dishonesty this course is against.
+
+**What has NOT changed.**
+
+**Migrant workers in Qatar still may not form or join trade unions.** The right to form workers' organizations is reserved to Qatari nationals. The main workplace mechanism available to migrants is an elected **"joint committee"** at the enterprise — a consultative body, not a union with the right to bargain and strike. Qatar has **not ratified** ILO Convention No. **87** or No. **98** (U.S. Department of State, 2025; ILO, n.d.).
+
+So run the four questions honestly, as of **2026**:
+
+| | Answer |
+|---|---|
+| **Q1 — who may organise?** | Nationals. Migrant workers, who are most of the workforce, may not form or join a trade union. |
+| **Q2 — who is excluded?** | The majority of the people doing the work. |
+| **Q3 — who bargains with whom?** | Largely, nobody bargains. There are consultative joint committees; there is a minimum wage set by law. |
+| **Q4 — what happens if you try?** | Your legal presence in the country has historically depended on your employer. Reforms have loosened that; enforcement is contested. |
+
+**Be careful here, in both directions.** Reporting on the Gulf runs to two failure modes: the promotional version, which recites the 2020 laws and stops; and the atrocity version, which recites abuses and ignores that the law changed. Both are propaganda. **The accurate statement is: the legal framework improved substantially in 2020, freedom of association for migrant workers did not, and independent monitors — including the ILO's own annual reporting — describe enforcement as uneven.** Date every claim. Check whether it still holds.
+
+**And one last thought, which brings you home.** Look at the shape of what is happening here: a category of worker is defined *by law* as outside the system that protects everyone else, and the workers in that category are the ones doing the hardest, most dangerous work.
+
+You have seen that shape before. It was in **lesson 10**, in a 1935 American statute, and the words were *"agricultural laborer"* and *"domestic service."*
+
+The mechanism is not exotic. It is the oldest one there is.
+
+:::reveal Under the kafala system, what is the practical consequence of tying a migrant worker's legal status to one specific employer? ||| Your visa, housing, ability to change jobs and ability to leave the country all run through one person — so raising a grievance is not a workplace conversation, it is a bet on the rest of your life. Qatar's 2020 reforms removed the No-Objection Certificate requirement and introduced a minimum wage, but migrant workers still may not form or join trade unions.
+
+## Sources
+- International Labour Organization. (2020, August 30). *Dismantling the kafala system and introducing a minimum wage mark new era for Qatar labour market*. https://www.ilo.org/resource/article/dismantling-kafala-system-and-introducing-minimum-wage-mark-new-era-qatar
+- International Labour Organization. (2025). *ILO–Qatar annual report 2024*. https://www.ilo.org/sites/default/files/2025-02/ILO-Qatar%20Annual%20Report%202024.pdf
+- U.S. Department of State. (2025). *2024 country reports on human rights practices: Qatar*. https://www.state.gov/reports/2024-country-reports-on-human-rights-practices/qatar
+- International Labour Organization. (n.d.). *Ratifications for Qatar*. NORMLEX. https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:103426
+- National Labor Relations Act, 29 U.S.C. § 152(3) (1935). Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section152&edition=prelim`,
+    },
+    {
+      slug: "section-6-quiz",
+      section: "Section 6 · There is no single union model: six countries",
+      title: "26 · Check yourself: six countries, four questions",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the \"Ghent system\"?",
+            options: [
+              "A system of sectoral bargaining used in Belgium",
+              "A system in which UNEMPLOYMENT INSURANCE is administered by union-affiliated funds, making union membership the natural default",
+              "A treaty setting minimum labour standards in Europe",
+              "A form of board-level worker representation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Denmark, Sweden, Finland, Iceland and partly Belgium. The OECD (2025) finds the countries with membership near or above 50% are essentially the Ghent countries — density is largely explained by plumbing, not culture.",
+            sourceLessonSlug: "nordics-ghent-and-sectoral-bargaining",
+          },
+          {
+            prompt: "Roughly what was Iceland's trade union density in 2024, per the OECD?",
+            options: ["About 25%", "About 50%", "About 65%", "About 91%"],
+            correctIndex: 3,
+            explanation:
+              "About 91% in Iceland; around 65% in Sweden, Denmark and Finland — against 10.0% in the US in 2025 (OECD, 2025; BLS, 2026).",
+            sourceLessonSlug: "nordics-ghent-and-sectoral-bargaining",
+          },
+          {
+            prompt: "Why do Denmark and Sweden have NO statutory national minimum wage?",
+            options: [
+              "Because they do not believe in wage floors",
+              "Because the wage floor is set by sectoral collective agreements, industry by industry, and covers nearly everybody without a law",
+              "Because EU law forbids national minimum wages",
+              "Because wages are set individually by each employer",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A perfect illustration of Question 3 — bargaining LEVEL. The floor exists; it just isn't a statute.",
+            sourceLessonSlug: "nordics-ghent-and-sectoral-bargaining",
+          },
+          {
+            prompt: "What honest complication does the course add about the Nordic model?",
+            options: [
+              "That Nordic unions have never been strong",
+              "That the Ghent system is ERODING — private unemployment funds not requiring union membership have grown, and Nordic density has declined for decades from a higher peak",
+              "That Nordic countries have banned strikes",
+              "That the OECD data are fabricated",
+            ],
+            correctIndex: 1,
+            explanation:
+              "\"Nordic unions are strong\" and \"Nordic unions are weakening\" are both true. A course that gives you only the first has given you a postcard.",
+            sourceLessonSlug: "nordics-ghent-and-sectoral-bargaining",
+          },
+          {
+            prompt: "Germany's union MEMBERSHIP rate (~14.1%, 2024) is close to the US rate (10.0%, 2025). What is dramatically different?",
+            options: [
+              "German unions have more money",
+              "German bargaining COVERAGE is roughly 49–50%, versus 11.2% in the US — because German bargaining happens at the SECTOR level",
+              "Germany has no strikes",
+              "German unions are run by the government",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Roughly the same share join; roughly five times the share are covered. Question 3 — who bargains with whom, and at what level — is the entire answer.",
+            sourceLessonSlug: "germany-codetermination",
+          },
+          {
+            prompt: "Under Germany's Co-determination Act of 1976, a company with more than 2,000 employees must fill what share of its SUPERVISORY BOARD with employee representatives?",
+            options: ["One-tenth", "One-third", "Half", "All of it"],
+            correctIndex: 2,
+            explanation:
+              "Half the seats. Workers in the room where the CEO is hired and fired. Companies of roughly 500–2,000 employees have one-third.",
+            sourceLessonSlug: "germany-codetermination",
+          },
+          {
+            prompt: "What is the \"catch\" in German board-level co-determination that the caricature usually omits?",
+            options: [
+              "Employee representatives cannot vote",
+              "The board chair comes from the shareholder side and holds a CASTING VOTE in a tie — so it is parity of seats, not parity of power",
+              "The law applies only to state-owned companies",
+              "Workers must buy shares to qualify",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Shareholders retain ultimate control (except in coal and steel, where a 1951 law gave full parity). Co-determination is not workers running the company — it is workers structurally, permanently in the room.",
+            sourceLessonSlug: "germany-codetermination",
+          },
+          {
+            prompt: "Who elects a German works council (Betriebsrat)?",
+            options: [
+              "The union's national leadership",
+              "ALL the employees in a workplace — not just union members",
+              "The company's shareholders",
+              "The federal labour ministry",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is a statutory body of the workforce, not the union. It has co-determination rights over working hours, overtime, shifts and discipline.",
+            sourceLessonSlug: "germany-codetermination",
+          },
+          {
+            prompt: "What is an \"enterprise union\"?",
+            options: [
+              "A union of all workers in an industry",
+              "A union organized at a single COMPANY, whose members are that company's regular employees",
+              "A union organized by craft",
+              "A union owned by the employer",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Japan's dominant form. The union's fortunes are tied directly to the firm's, which produces cooperation and very low strike rates.",
+            sourceLessonSlug: "japan-enterprise-unions",
+          },
+          {
+            prompt: "Which workers does Japan's enterprise-union structure systematically leave out?",
+            options: [
+              "Senior managers",
+              "Non-regular workers — part-time, fixed-term and dispatched (agency) workers",
+              "Engineers",
+              "Public employees",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A union built on \"we are the company's people\" struggles by design to defend workers the company treats as NOT its people. It is the same trade-off the AFL made in 1886.",
+            sourceLessonSlug: "japan-enterprise-unions",
+          },
+          {
+            prompt: "What is Japan's shuntō?",
+            options: [
+              "A law requiring annual wage increases",
+              "The 'spring labour offensive' — enterprise unions across the economy bargain at roughly the same time, with RENGO setting a target and big exporters' settlements setting the benchmark",
+              "A ban on strikes during the spring",
+              "A government wage board",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It gets coordinated, economy-wide wage-setting out of a movement organized company by company. In 2024, RENGO reported an average increase above 5% — its highest in over three decades.",
+            sourceLessonSlug: "japan-enterprise-unions",
+          },
+          {
+            prompt: "Under China's Trade Union Law, what is true of the ACFTU?",
+            options: [
+              "It is one of several competing national federations",
+              "It is the single legal national trade union: workplace unions must affiliate to it, forming one requires approval from the next-level union body, and unions operate under the leadership of the Communist Party",
+              "It is a private organization independent of the state",
+              "It is banned in mainland China",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You may join a union. You may not found an independent one. The word 'union' is not a fixed unit across countries — check what the institution actually IS before comparing membership numbers.",
+            sourceLessonSlug: "china-acftu-a-different-object",
+          },
+          {
+            prompt: "What happened to the right to strike in China's constitution?",
+            options: [
+              "It was added in 1982",
+              "It appeared in the 1975 and 1978 constitutions and was REMOVED from the 1982 Constitution",
+              "It has been in every Chinese constitution",
+              "It has never appeared in any Chinese constitution",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Strikes still happen — many of them — but outside any legal framework that protects the people who join them. China has also not ratified ILO Conventions 87 or 98.",
+            sourceLessonSlug: "china-acftu-a-different-object",
+          },
+          {
+            prompt: "What was the FIRST of Solidarity's 21 Demands, posted on the Gdańsk shipyard gate in August 1980?",
+            options: [
+              "A wage increase",
+              "The right to form FREE TRADE UNIONS, independent of the Communist Party",
+              "Free elections for parliament",
+              "Poland's withdrawal from the Warsaw Pact",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not pay — the right to organise. In a one-party state, Question 1 (\"who may organise?\") turned out to be the same question as \"who governs?\"",
+            sourceLessonSlug: "solidarity-and-cosatu",
+          },
+          {
+            prompt: "Why did the apartheid government's Wiehahn Commission (1979) recommend legally recognizing Black trade unions?",
+            options: [
+              "Out of a commitment to racial equality",
+              "For CONTROL — unregistered Black unions were growing anyway, and a registered union can be regulated",
+              "Because the ILO ordered it",
+              "Because Black workers had won the vote",
+            ],
+            correctIndex: 1,
+            explanation:
+              "COSATU (founded 1985) turned that legal opening into a weapon. Because Black South Africans could not vote, withdrawing labour was the ballot they had.",
+            sourceLessonSlug: "solidarity-and-cosatu",
+          },
+          {
+            prompt: "What did Qatar's Law No. 19 of 2020 do?",
+            options: [
+              "Legalized trade unions for migrant workers",
+              "Removed the No-Objection Certificate requirement, so a migrant worker can change jobs without the employer's permission",
+              "Banned all foreign workers",
+              "Required employers to pay recruitment fees",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Paired with Law No. 17 of 2020, which set a non-discriminatory minimum wage — the first in the region. The ILO described these as dismantling core elements of kafala. That change is real.",
+            sourceLessonSlug: "gulf-kafala",
+          },
+          {
+            prompt: "What has NOT changed for migrant workers in Qatar as of 2026?",
+            options: [
+              "They still cannot be paid a minimum wage",
+              "They still may not form or join TRADE UNIONS — that right is reserved to Qatari nationals; the main mechanism is a consultative 'joint committee'",
+              "They still cannot leave the country under any circumstances",
+              "They are still barred from any legal complaint",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Qatar has not ratified ILO Convention 87 or 98. The accurate statement: the legal framework improved substantially in 2020, freedom of association did not, and monitors describe enforcement as uneven.",
+            sourceLessonSlug: "gulf-kafala",
+          },
+          {
+            prompt: "The course says the Gulf's exclusion of migrant workers has a shape you have already seen. Where?",
+            options: [
+              "In the Taft-Hartley Act's secondary-boycott ban",
+              "In the NLRA's 1935 exclusion of \"agricultural laborers\" and workers \"in the domestic service\" — a category of worker defined BY LAW as outside the system that protects everyone else",
+              "In the Chinese Trade Union Law",
+              "In Germany's works councils",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A category of worker is defined by law as outside the protections, and the workers in that category do the hardest, most dangerous work. The mechanism is not exotic. It is the oldest one there is.",
+            sourceLessonSlug: "gulf-kafala",
+          },
+        ],
+      },
+    },
   ],
 };
