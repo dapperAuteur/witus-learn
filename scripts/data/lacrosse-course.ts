@@ -573,7 +573,7 @@ Sources by cell: World Lacrosse (2025a) Rules 19.1, 1.1, 29.1, 43.1, 17.1; World
 
 **2. "Women don't wear helmets because the game is safer."** Wrong causality, and it gets the rule backwards. Under World Lacrosse women's rules field players are **not permitted** to wear headgear or face masks (Rule 6.A.2). The reasoning that produced the modern women's game runs the other way: because players are *not* armored, the rules remove the actions that armor exists to survive — no body checking, no defenders in the shooting lane (Rule 20.A.19), no crowding the goal (Rule 20.A.20). And under **NCAA** women's rules, **eye protection is mandatory**: "All field players shall wear eye protection properly" (NCAA, 2026a, Rule 2, Sec. 18). Different code, different answer, and neither is "the girls' version."
 
-**3. "Same sport, different rules."** They are related sports with a shared ancestor, the way rugby union and rugby league are related. A men's defender's core skill — a legal body check (World Lacrosse, 2025a, Rule 70) — does not exist in the women's game. A women's defender's core skill — playing legal defense without entering shooting space — has no men's equivalent. **Coach them separately, watch them separately, and describe them separately.**
+**3. "Same sport, different rules."** They are related sports with a shared ancestor, the way rugby union and rugby league are related. A men's defender's core skill — a legal body check, the boundaries of which are set by the *Illegal Body-Check* rule (World Lacrosse, 2025a, Rule 70) — does not exist in the women's game. A women's defender's core skill — playing legal defense without entering shooting space — has no men's equivalent. **Coach them separately, watch them separately, and describe them separately.**
 
 ### How to check any rule yourself, in 90 seconds
 
@@ -839,7 +839,7 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
       slug: "the-five-fundamentals",
       title: "11 · The five fundamentals",
       section: "3 · Skills & strategy",
-      body: `Everything in lacrosse is built from five things. Nobody outgrows them. The professionals you'll watch in Section 5 are simply people who do these five things faster and under more pressure than you can.
+      body: `**Discipline: all four.** These five skills are the one part of this course that genuinely does transfer across men's field, women's field, box and Sixes. Everything *else* — team size, contact, equipment, clocks — differs by discipline and code, and this course keeps saying so. The fundamentals don't. Nobody outgrows them, either: the professionals you'll watch in Section 5 are simply people who do these five things faster and under more pressure than you can.
 
 **1. Cradle.** Carrying the ball in the stick while you run. The head of the stick rocks in a small arc so the ball stays pinned in the pocket by its own momentum — the same reason water stays in a bucket you swing overhead. Beginners cradle too hard and too wide; the goal is the *smallest* motion that keeps the ball secure while you sprint, cut, and get checked.
 
@@ -849,7 +849,7 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
 
 **4. Shoot.** Same mechanics as a pass, plus your whole body — hips and shoulders rotate through, weight transfers front foot. Accuracy beats power at every level below professional, and it beats power at professional level more often than highlight reels suggest. **Pick a corner.** Goalkeepers save the ball that's aimed at their chest.
 
-**5. Ground balls.** The one that actually decides games. A loose ball on the turf is a possession nobody owns yet. You get low — knees bent, back of the stick head almost flat on the ground — you **scoop through** the ball rather than at it, and you protect it immediately. There's a coaching cliché that ground balls win games. It is a cliché because it keeps being true: possession is the whole currency of a sport with an 80-second shot clock (World Lacrosse, 2025a, Rule 43.1). Every ground ball you win is up to 80 seconds you take from the other team.
+**5. Ground balls.** The one that actually decides games. A loose ball on the turf is a possession nobody owns yet. You get low — knees bent, back of the stick head almost flat on the ground — you **scoop through** the ball rather than at it, and you protect it immediately. There's a coaching cliché that ground balls win games. It is a cliché because it keeps being true: possession is the whole currency of a sport played on a shot clock — 80 seconds in the World Lacrosse men's and women's field games (World Lacrosse, 2025a, Rule 43.1; World Lacrosse, 2025b, Rule 24.A.1), 90 in NCAA women's, 30 in Sixes. Every ground ball you win is a possession you take from the other team and hand to yourself.
 
 ### How to actually get better, without a team
 
@@ -857,10 +857,11 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
 - **Your weak hand.** A one-handed player is a solved problem for any competent defender: they simply take away your strong side and you disappear. Spend at least half your reps on the hand you hate.
 - **Ground balls alone.** Roll the ball out, sprint, scoop, protect, sprint back. It's boring. Do it anyway.
 
-:::reveal Which of the five fundamentals is the one coaches say wins games, and why is that literally true in a shot-clock sport? ||| Ground balls. A loose ball is a possession nobody owns; winning it hands you the ball and takes it from the other team. In a sport with an 80-second shot clock, every ground ball you win is up to 80 seconds of possession you take away from your opponent.
+:::reveal Which of the five fundamentals is the one coaches say wins games, and why is that literally true in a shot-clock sport? ||| Ground balls. A loose ball is a possession nobody owns; winning it hands you the ball and takes it from the other team. Every lacrosse discipline runs a shot clock (80 s in WL men's and women's field, 90 s in NCAA women's, 30 s in Sixes), so every ground ball you win is a whole possession's worth of clock taken from your opponent and given to you.
 
 ## Sources
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf`,
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf
+- World Lacrosse. (2025b). *2025–2026 women's field lacrosse rules* (v1.1). https://worldlacrosse.sport/wp-content/uploads/2025/03/2025_2026-WF-Rulebook_FINALv1.1-1.pdf`,
       recallContent: [
         {
           prompt: "Name the four lacrosse disciplines.",
@@ -876,7 +877,17 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
       slug: "offense",
       title: "12 · Offense: creating a shot that isn't a prayer",
       section: "3 · Skills & strategy",
-      body: `A settled offense in lacrosse is a puzzle: six attackers (three attackers + three midfielders, because of the offside rule) against six defenders, one of whom is a goalkeeper, on an 80-second clock. Almost nothing scores by accident. Here's how good teams create a real shot.
+      body: `**Discipline: field lacrosse. Code: World Lacrosse (men's and women's).** The *principles* below — move the defense, make them help, punish the help — are common to every discipline. The *numbers* are not, so here they are up front:
+
+| | Settled attackers | Shot / possession clock |
+| --- | --- | --- |
+| WL men's field | 6 (3 attackers + 3 midfielders) — offside, Rule 65.1 | 80 s (Rule 43.1) |
+| WL women's field | 6 — no more than six in the Attacking Area, Rule 18.A.2 | 80 s (Rule 24.A.1) |
+| **NCAA women's** | **7** — offside is called at more than seven in the offensive end | **90 s** |
+
+So when this lesson says "6-on-6," it is describing the World Lacrosse game. In NCAA women's lacrosse the same ideas run **7-on-7** with an extra 10 seconds on the clock. The shapes change; the logic doesn't.
+
+A settled offense is a puzzle: six attackers against six defenders, one of whom is a goalkeeper, on a shot clock. Almost nothing scores by accident. Here's how good teams create a real shot.
 
 ### The three ways to create an advantage
 
@@ -907,6 +918,7 @@ In the women's game, a major foul by the defense inside the critical scoring are
 :::reveal What is the real purpose of a dodge, and what is "X"? ||| A dodge's purpose isn't to score — it's to force the defense to move. When your defender is beaten, someone must slide to help, and the moment they do, a teammate is open. "X" is the space directly behind the goal (playable because the goal sits 12 m off the end line), the best attacking real estate on the field: your defender's back is to their own goal and you can attack from either side.
 
 ## Sources
+- National Collegiate Athletic Association. (2026a). *2026 and 2027 NCAA women's lacrosse rules*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/PRWLA_RulesBook.pdf
 - World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf
 - World Lacrosse. (2025b). *2025–2026 women's field lacrosse rules* (v1.1). https://worldlacrosse.sport/wp-content/uploads/2025/03/2025_2026-WF-Rulebook_FINALv1.1-1.pdf`,
       recallContent: [
@@ -1615,7 +1627,7 @@ Lacrosse sits at the expensive end of that spectrum. A men's field player needs 
 
 ### Premier Lacrosse League (PLL) — men's field
 
-Founded by players, the PLL is the top men's field league in North America. It runs **eight teams** — the Boston Cannons, New York Atlas, Philadelphia Waterdogs, Maryland Whipsnakes, Carolina Chaos, Denver Outlaws, Utah Archers, and California Redwoods — and its 2026 season is its eighth (Premier Lacrosse League, 2026). It began as a touring league playing in a different city each weekend and has since moved to a city-based model — a deliberate bet that the sport can sustain local franchises.
+Founded by players, the PLL is the top men's field league in North America. It runs **eight teams** — the Boston Cannons, New York Atlas, Philadelphia Waterdogs, Maryland Whipsnakes, Carolina Chaos, Denver Outlaws, Utah Archers, and California Redwoods (Premier Lacrosse League, 2026). It began as a touring league playing in a different city each weekend and has since moved to a city-based model — a deliberate bet that the sport can sustain local franchises.
 
 ### National Lacrosse League (NLL) — men's box
 
@@ -1705,7 +1717,7 @@ Some things that have happened:
         {
           prompt: "How many teams does the PLL have, and what does the NLL publish about its own players' jobs?",
           answer:
-            "The PLL has eight teams (2026 is its eighth season). The NLL's own site runs a piece titled \"Many NLL Players Hold Multiple Jobs\" — noting that its athletes hold full-time jobs, raise families, AND play professionally.",
+            "The PLL has eight teams. The NLL's own site runs a piece titled \"Many NLL Players Hold Multiple Jobs\" — noting that its athletes hold full-time jobs, raise families, AND play professionally.",
         },
         {
           prompt: "What happened to Athletes Unlimited Pro Lacrosse?",
@@ -1783,7 +1795,7 @@ Some things that have happened:
             prompt: "What is the PLL, and how big is it?",
             options: [
               "A women's indoor league with four teams",
-              "The top men's FIELD league in North America, with eight teams; 2026 is its eighth season",
+              "The top men's FIELD league in North America, with eight teams",
               "The international governing body",
               "A college conference",
             ],
