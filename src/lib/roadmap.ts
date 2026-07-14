@@ -419,6 +419,36 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
+- ✅ **Football: Play It, Read It, Work In It** (Sports) — 42 lessons across **8 sections**, each with
+  its own quiz (banks of **15**, so the 10-question attempt cap actually rotates; 120 questions, every
+  one carrying an \`explanation\` + \`sourceLessonSlug\`). The game the US calls soccer, called
+  **football** throughout at BAM's instruction: the game & the pitch · **how to play** (first touch,
+  dribbling, finishing, defending, goalkeeping) · **the Laws** · **strategy** · **history** · who runs
+  what & the leagues · money & labour · **opportunities for amateurs and entrepreneurs**.
+  **Governance is stated correctly, and this is the load-bearing part**: the **Laws of the Game are
+  written by THE IFAB, not FIFA** — FIFA holds **4 of 8 votes**, a change needs a three-quarters
+  majority (**6**), so FIFA *cannot change a Law alone*. There are **17 Laws**, revised annually, and
+  every Law statement is read out of the official **Laws of the Game 2026/27** PDF (effective 1 July
+  2026) with its Law number — never guessed. **Offside is Law 11** (hands/arms are not considered),
+  **handball sits inside Law 12** (the current text — the old "accidental handball anywhere in the
+  build-up voids the goal" clause is **gone**, and the course says so), and **VAR is Law 5 §4**
+  (including the *new* 2026/27 competition-option corner-kick review). **Contested numbers are taught
+  AS contested, never resolved to a headline**: the Dick, Kerr Ladies' Goodison Park crowd (c.
+  46,000–53,000) and **Qatar 2022**, where four figures are shown to answer four *different* questions
+  — the Guardian's **6,500** (all-cause, five nationalities, a decade), Qatar's **37** (stadium sites
+  only), Al-Thawadi's own **400–500** (tournament-connected projects), and the **ILO's 50** (work-
+  related, 2020) — landing on the honest finding that the toll is unknown *because the deaths were not
+  investigated*. History is told honestly: **ball games long predate England** (FIFA's own careful
+  cuju claim, with **no** fake family tree to Wembley), the **1863** codification, and a full lesson on
+  **the FA's 1921 ban on women's football, which lasted 50 years** — the resolution quoted verbatim
+  ("quite unsuitable for females"). The entrepreneur section is concrete and cited: **refereeing** as a
+  real paid job from age **13** (one association's *published* pay scale, \$30–\$90/game), the coaching
+  licence ladder, the **pay-to-play** problem (Aspen/Project Play: soccer ≈**\$1,188**/child/season;
+  **24% vs 40%** participation by household income), and the honest odds (**NCAA's own** table: **1.4%**
+  of HS boys and **2.8%** of girls reach D-I — and the NCAA publishes **no** HS→pro figure for soccer,
+  which the course explains rather than inventing). **No fabricated statistics, quotes or people**; the
+  "soccer" etymology is verified as a **British** coinage and the undocumented Wreford-Brown
+  attribution is explicitly **not** repeated. \`pnpm seed:courses\` picks it up.
 - 🔧 **/explore is a landing page now** (\`feat/explore-landing\`) — the Commodity Map page was an
   \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
   now answers **what is this → what will my student learn → why trust it → what next**, for the
