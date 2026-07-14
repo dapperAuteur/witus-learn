@@ -618,4 +618,14 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Authoritative-values rule** — added to ecosystem + repo CLAUDE.md (never assert guessed external
   values; born from the DNS A-record false-negative). Still TODO: commit the ecosystem copy in \`gemini/\`.
 - ⚪ Inform CentOS that witus-learn hosts BVC.
+- ✅ **Future classes & features** (\`feat/admin-future-work\`, **migration 0036**) — an owner-only
+  \`/admin/future\` board for everything proposed but not yet built: the **She Did the Work** course
+  proposals (9 courses A–I, the build order, the 14 factual errors in the source calendar, the
+  rights/permissions table) plus a **research seed per subject** (29 — 5 that carry a course alone,
+  Sage Steele cut, Mary Bassett deferred to the health vertical), the extra **civics** courses, and
+  the **Travel & Living Abroad** track. Each item renders its full markdown and takes a **note** →
+  \`future_work_notes\` → read from a terminal with **\`pnpm future:list\`** (no copy-paste; same shape
+  as \`reports:list\`). The content is **committed** (\`src/lib/future-work-content/*\`, generated from the
+  gitignored \`plans/future-courses/\` notes by \`pnpm gen:future-work\`), so the page renders in
+  production — nothing reads \`plans/\` at runtime.
 `;

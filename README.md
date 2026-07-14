@@ -108,6 +108,24 @@ pnpm lint
 pnpm test        # Vitest — unit + the isolation suite
 ```
 
+## Future classes & features (`/admin/future`)
+
+Owner-only review surface for everything proposed but not yet built — the *She Did the Work* course
+proposals plus a research seed per subject, the extra civics courses, and the Travel & Living Abroad
+track. Leave a note on any item and it lands in `future_work_notes`; read the notes back from a
+terminal, no copy-paste:
+
+```bash
+pnpm future:list                  # open notes, all schools (--tenant <slug> · --status open|done|all
+                                  #   · --item <key> · --limit N)
+pnpm gen:future-work              # regenerate src/lib/future-work-content/* from plans/future-courses/
+```
+
+The proposals are **committed** (`src/lib/future-work-content/*`, generated from the gitignored
+`plans/future-courses/` notes by `gen:future-work`) — the app never reads `plans/` at runtime, so the
+page renders the same in production. Add a proposal by dropping markdown in `plans/future-courses/`,
+re-running the generator, and registering it in `src/lib/future-work.ts`.
+
 ## Conventions
 
 This repo follows the WitUS ecosystem rules. Read [CLAUDE.md](CLAUDE.md) and
