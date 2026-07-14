@@ -6,6 +6,7 @@ import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
+import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { KNOTS_COURSE } from "./data/knots-course";
 import { CROQUET_COURSE } from "./data/croquet-course";
@@ -902,6 +903,8 @@ async function main() {
   // lacrosse are taught as the different games they are. The Haudenosaunee Olympic
   // eligibility question is dated in-text (verified July 2026) and tells the learner to
   // re-check — the authoritative-values rule applied to a live news story.
+  // Sports — on Learn.WitUS. Play-it/question-it/build-with-it courses: the sport itself, the
+  // sourcing discipline behind its folklore, and the amateur/entrepreneur economy around it.
   await db
     .insert(schema.courseCategories)
     .values({ tenantId: learnWitus, name: "Sports", sortOrder: 13 })
@@ -911,6 +914,22 @@ async function main() {
     instructorId,
     slug: "lacrosse-creators-game",
     course: LACROSSE_COURSE,
+  // Pickleball — how to play (court, serve, kitchen, two-bounce rule, strategy), how to read a
+  // rulebook that USA Pickleball revises ANNUALLY (the 2026 edition renumbered nearly everything,
+  // so every rule number here is cited to the 2026 rulebook BY YEAR), why the beloved "named after
+  // a dog named Pickles" origin story is DISPUTED rather than settled (the course teaches the
+  // dispute + source evaluation instead of picking the cute answer), and the real amateur/
+  // entrepreneur opportunity: courts and the noise litigation that kills them, coaching and
+  // certification, leagues and events, the paddle industry and the delamination/PBCoR arms race,
+  // and the pro tours' post-merger contract correction. Authoritative-values rule is load-bearing:
+  // rule numbers change every year, participation counts differ by a factor of four between SFIA
+  // and APP/YouGov depending on the threshold, and rally vs. side-out scoring is presented as an
+  // event-level choice (Rule 15.C.2) rather than one universal system.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "pickleball",
+    course: PICKLEBALL_COURSE,
     category: "Sports",
     navigationMode: "linear",
   });
