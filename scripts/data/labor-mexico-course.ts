@@ -620,5 +620,334 @@ The number of contracts that died is a **ceiling**, not a count. It tells you th
         ],
       },
     },
+
+    // ──────────────── SECTION 3 · THE 2019 REFORM, AND WHO ACTUALLY DROVE IT ────────────────
+    {
+      slug: "mexico-2019-reform",
+      section: "Section 3 · The 2019 reform, and who actually drove it",
+      title: "7 · Mexico rewrites its labor law — and the 68-year gap that explains why",
+      body: `Between 2017 and 2019, Mexico dismantled the machinery you just spent a section learning. This lesson is what changed. The next one is what it cost the protection contracts.
+
+## First, a date that tells the whole story
+
+Mexico ratified **ILO Convention No. 87** — freedom of association — on **1 April 1950**. Early. Decades before many rich democracies.
+
+Mexico ratified **ILO Convention No. 98** — the right to organize and bargain collectively — on **23 November 2018** (International Labour Organization [ILO], 2018).
+
+**A sixty-eight-year gap.** And it is not an accident of paperwork, because of what C98 specifically requires. Convention 87 protects your right to *form* a union. **Convention 98 is the one that prohibits *employer interference and domination* of workers' organizations** — the one that says an employer may not run, fund, or dominate the union that is supposed to bargain against it.
+
+That is a precise legal description of a protection contract. Mexico could sign the convention about *forming* unions in 1950. It could not sign the convention about *employer-dominated* unions until it was ready to give them up. **The ratification date is the confession.**
+
+## What actually changed
+
+**Step 1 — the constitution, 24 February 2017.** Mexico amended Articles 107 and 123 (DOF, 2017). The **Juntas de Conciliación y Arbitraje** — the tripartite boards of clause XX, the ones the dominant confederation sat on — were **abolished**. In their place:
+
+| Old | New |
+| --- | --- |
+| Tripartite Juntas de Conciliación y Arbitraje | **Labor courts**, inside the judiciary, staffed by judges |
+| Registration handled by those same boards | An **independent federal body** for registering unions and collective agreements |
+| — | Compulsory **conciliation** before you may go to court |
+
+**Step 2 — the law, 1 May 2019.** The implementing rewrite of the **Ley Federal del Trabajo** was published in the *Diario Oficial de la Federación* on **1 May 2019** — Mexico's Labor Day — and took effect the next day (LFT, 1970/2019). It created:
+
+- The **Centro Federal de Conciliación y Registro Laboral (CFCRL)** — the Federal Center for Conciliation and Labor Registration. One national body that registers every union and every collective agreement, and verifies that the votes were real.
+- The **personal, free, direct and secret vote** — for electing union leaders, for approving a first contract, for approving every revision, and (next lesson) for keeping the contract you already have.
+- The **constancia de representatividad** — before a union may even seek to negotiate an initial collective agreement, it must obtain a certificate from the CFCRL showing it has the support of at least **30%** of the workers it wants to cover (Procuraduría Federal de la Defensa del Trabajo [PROFEDET], n.d.).
+- A **public website** carrying every collective agreement in force — so that a worker can *read their own contract*, which is not a joke: under the old system, many could not.
+
+**Look at what the 30% certificate does.** It attacks the protection contract at its root. You can no longer produce an agreement out of nowhere for a workforce that has not been consulted. You must first *demonstrate that actual workers want you there.*
+
+---
+
+## Now the part that is easy to get wrong, so get it right
+
+You are about to learn (Section 4) about a US enforcement tool, and there is a very tempting story in which the United States forced Mexico to clean up its labor law. **That story is false, and the treaty itself says so.**
+
+Read the opening line of **USMCA Annex 23-A**, the annex where Mexico's labor commitments live:
+
+> "Mexico shall adopt and maintain the measures set out in paragraph 2 … **given that the Mexican government incoming in December 2018 has confirmed that each of these provisions is within the scope of the mandate provided to the government by the people of Mexico in the elections**." (Office of the United States Trade Representative [USTR], n.d., Annex 23-A, ¶1)
+
+The treaty text explicitly grounds the reform in **a Mexican electoral mandate**. And check the calendar, because the chronology settles it:
+
+| Date | Event |
+| --- | --- |
+| 1 July 2018 | Mexican general election |
+| 23 Nov 2018 | Mexico ratifies ILO Convention 98 |
+| 24 Feb 2017 → 1 May **2019** | Mexico's constitutional reform, then its new labor law |
+| **1 July 2020** | **USMCA — and the enforcement mechanism — enters into force** |
+
+**Mexico's labor law was rewritten more than a year before the trade agreement that supposedly forced it existed.** The reform came out of decades of work by Mexican independent unions, Mexican labor lawyers, Mexican courts and a Mexican election. It was passed by Mexico's Congress and published in Mexico's official gazette.
+
+**What the trade agreement added was not the law. It was a way to make somebody obey it.** Hold that distinction — the entire next section depends on it.
+
+:::reveal Mexico ratified ILO Convention 87 (freedom of association) in 1950 but Convention 98 in 2018. Why is that 68-year gap so revealing? ||| Because of what C98 specifically prohibits: employer interference in and domination of workers' organizations. That is a precise legal description of a protection contract. Mexico could ratify the convention about the right to *form* a union in 1950; it could not ratify the convention against *employer-dominated* unions until it was prepared to give them up. The ratification date is effectively a confession about what the system had been.
+
+## Sources
+- International Labour Organization. (2018, November 23). *Mexico ratifies the Right to Organise and Collective Bargaining Convention, 1949 (No. 98)*. https://www.ilo.org/resource/news/mexico-ratifies-right-organise-and-collective-bargaining-convention-1949-no
+- International Labour Organization. (n.d.). *Ratifications for Mexico*. NORMLEX. https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:102764
+- Diario Oficial de la Federación. (2017, February 24). *Decreto por el que se declaran reformadas y adicionadas diversas disposiciones de los artículos 107 y 123 de la Constitución Política de los Estados Unidos Mexicanos, en materia de Justicia Laboral*. https://www.dof.gob.mx/nota_detalle.php?codigo=5472965&fecha=24/02/2017
+- Ley Federal del Trabajo. (1970, as amended by decree published May 1, 2019). Cámara de Diputados. https://www.diputados.gob.mx/LeyesBiblio/ref/lft/LFT_ref30_01may19.pdf
+- Office of the United States Trade Representative. (n.d.). *USMCA Chapter 23 — Labor, Annex 23-A*. https://ustr.gov/sites/default/files/files/agreements/FTA/USMCA/Text/23-Labor.pdf
+- Procuraduría Federal de la Defensa del Trabajo. (n.d.). *Constancia de Representatividad y aprobación de los contratos colectivos, pilares de la Reforma Laboral*. Gobierno de México. https://www.gob.mx/profedet/articulos/constancia-de-representatividad-y-aprobacion-de-los-contratos-colectivos-pilares-de-la-reforma-laboral`,
+    },
+    {
+      slug: "mexico-legitimation",
+      section: "Section 3 · The 2019 reform, and who actually drove it",
+      title: "8 · Legitimation: every contract in the country goes to a vote, or dies",
+      recallContent: [
+        {
+          prompt: "What body did the 2019 reform create to register every union and every collective agreement, and to verify that votes were real?",
+          answer: "The Centro Federal de Conciliación y Registro Laboral (CFCRL) — the Federal Center for Conciliation and Labor Registration.",
+        },
+        {
+          prompt: "What must a union now obtain before it can even seek to negotiate an initial collective agreement — and what threshold does it require?",
+          answer: "A constancia de representatividad from the CFCRL, showing support from at least 30% of the workers it wants to cover.",
+        },
+        {
+          prompt: "Which came first — Mexico's 2019 labor law, or the USMCA enforcement mechanism?",
+          answer: "Mexico's law. The Ley Federal del Trabajo rewrite was published 1 May 2019; USMCA entered into force 1 July 2020. The trade agreement did not author the right — it added a way to enforce it.",
+        },
+      ],
+      body: `Reforming the law going forward is the easy half. Mexico then did the hard half, and it is one of the most remarkable things any country has done to its own labor system.
+
+**It put every collective bargaining agreement in the country on trial.**
+
+## The rule
+
+The 2019 reform gave existing agreements a **four-year deadline**. The commitment appears in the treaty in exactly these terms:
+
+> "all **existing** collective bargaining agreements shall be **revised at least once during the four years** after the legislation goes into effect" — and shall not be terminated by that deadline "as long as a **majority of the workers** covered by the collective bargaining agreement **demonstrate support** for such agreement through a **personal, free, and secret vote**." (USTR, n.d., Annex 23-A, ¶2(f))
+
+Mexican law calls this **legitimation** (*legitimación*). The mechanics, in plain terms:
+
+1. Every collective agreement already on the books had to be **shown to the workers it covered** — the actual text, in advance.
+2. The workers then voted on it, in a **personal, free, direct and secret** ballot, verified by the CFCRL.
+3. **Majority yes → the contract lives**, and the CFCRL issues a certificate of legitimation.
+4. **Majority no, or no vote at all → the contract dies.**
+
+The deadline was **1 May 2023** — four years to the day after the law took effect.
+
+**Understand how aggressive that is.** The Mexican state told every union in the country: *go and ask the workers whether they want you. If you can't, or won't, your contract is void.* No other country in this track has ever put its entire stock of collective agreements to a confidence vote of the workforce.
+
+---
+
+## What happened
+
+**Start with a number that should stop you.** When the Federal Center actually digitized and audited the register, it found it did not know what was in it. Agreements had been described in the hundreds of thousands for years; after the audit, **139,000** collective agreements had **active registration** (STPS, 2023, 20 January). Everything else was duplicate, dead, or empty paper.
+
+**A state that cannot say how many union contracts it has is telling you something about what those contracts were for.**
+
+Then the clock ran out. The dated record:
+
+| Date | Legitimized so far | Source |
+| --- | --- | --- |
+| **20 Jan 2023** (100 days left) | **12,641** contracts, via 23,845 consultations, out of **139,000** | STPS (official) |
+| **~27 Apr 2023** (4 days left) | **15,742** legitimized; **287** rejected by workers | *La Jornada* (newspaper, reporting the tally) |
+| **1 May 2023** | **Deadline.** | — |
+| **2 May 2023** | Every agreement without a certificate of legitimation is **terminated** | CFCRL, published in the DOF |
+
+Processes already under way on 1 May could be completed until **31 July 2023**, so the final figure is somewhat higher than the last column above (CFCRL, 2023).
+
+**But the shape is unmistakable, and it is staggering.** Of roughly 139,000 registered collective bargaining agreements in Mexico, something on the order of **one in nine** was put to a vote of the workers and survived. **The overwhelming majority of Mexico's union contracts were never defended by anybody, and simply ceased to exist.**
+
+Recall Section 2's discipline: that is a **ceiling on** the protection-contract problem, not a measurement of it. Some of those contracts died because the firm was long gone. But a country does not lose seven-eighths of its collective agreements overnight because of clerical untidiness. **Whatever the precise number was, it was very large.**
+
+---
+
+## The question every student asks next
+
+*If my contract died, did I lose my wages?*
+
+**No — and the law is explicit about it.** When an agreement was not legitimized, the union lost the contract: its administration, its dues, its privileges. But the **workers keep the wages, benefits and conditions** they already had; those carry over into their individual employment terms (CFCRL, 2023; STPS, n.d.).
+
+**That design choice is worth admiring.** The reform was built so that killing a fake union could not be used to cut a real worker's pay — which is precisely the threat an employer would otherwise have made in the run-up to the vote. Remove that threat and the vote becomes free. **Good institutional design anticipates the retaliation.**
+
+:::reveal Roughly 139,000 collective agreements were on Mexico's register; only about 16,000 were legitimized by the deadline. What did NOT happen to the workers whose contracts died? ||| They did not lose their pay. The union lost the contract — its administration, its dues and its privileges — but the workers keep the wages, benefits and conditions they already had, which carry over into their individual employment terms. The reform was deliberately built that way, so that an employer could not campaign against legitimation by threatening workers that a "no" vote would cut their wages.
+
+## Sources
+- Office of the United States Trade Representative. (n.d.). *USMCA Chapter 23 — Labor, Annex 23-A*. https://ustr.gov/sites/default/files/files/agreements/FTA/USMCA/Text/23-Labor.pdf
+- Secretaría del Trabajo y Previsión Social. (2023, January 20). *100 días para concluir el plazo de legitimación de contratos colectivos*. Gobierno de México. https://www.gob.mx/stps/prensa/100-dias-para-concluir-el-plazo-de-legitimacion-de-contratos-colectivos
+- Secretaría del Trabajo y Previsión Social. (2023, May 2). *Concluye etapa histórica de la Reforma Laboral*. Gobierno de México. https://www.gob.mx/stps/prensa/concluye-etapa-historica-de-la-reforma-laboral-332970
+- Centro Federal de Conciliación y Registro Laboral. (2023, May 2). *Acuerdo por el que se dan a conocer los contratos colectivos de trabajo legitimados y aquellos que se dan por terminados*. Diario Oficial de la Federación. https://www.dof.gob.mx/2023/CFCRL/acuerdo-terminacion-CCT.pdf
+- Secretaría del Trabajo y Previsión Social. (n.d.). *¿No se legitimó el contrato colectivo en tu empresa?* Gobierno de México. https://www.gob.mx/stps/documentos/no-se-legitimo-el-contrato-colectivo-en-tu-empresa
+- *La Jornada*. (2023, April 29). *Validaron sólo 20 mil de 500 mil contratos colectivos de trabajo*. https://www.jornada.com.mx/notas/2023/04/29/sociedad/validaron-solo-20-mil-de-500-mil-contratos-colectivos-de-trabajo/ [Newspaper reporting of the running tally — cited for the late-April figure, which no official source published in real time.]`,
+    },
+    {
+      slug: "mexico-section-3-quiz",
+      section: "Section 3 · The 2019 reform, and who actually drove it",
+      title: "9 · Check yourself: the reform and the reckoning",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Mexico ratified ILO Convention 87 in 1950 but Convention 98 only in 2018. What does Convention 98 specifically prohibit?",
+            options: [
+              "Employer interference in, and domination of, workers' organizations",
+              "Child labor in hazardous industries",
+              "Forced labor",
+              "Strikes in essential public services",
+            ],
+            correctIndex: 0,
+            explanation: "Which is a precise legal description of a protection contract. Mexico could ratify the convention about forming unions in 1950; it could not ratify the one against employer-dominated unions until it was ready to give them up.",
+            sourceLessonSlug: "mexico-2019-reform",
+          },
+          {
+            prompt: "On what date did Mexico ratify ILO Convention No. 98?",
+            options: ["23 November 2018", "1 April 1950", "1 May 2019", "1 July 2020"],
+            correctIndex: 0,
+            explanation: "1 April 1950 is C87. 1 May 2019 is the labor-law decree. 1 July 2020 is USMCA's entry into force.",
+            sourceLessonSlug: "mexico-2019-reform",
+          },
+          {
+            prompt: "What did Mexico's constitutional reform of 24 February 2017 abolish?",
+            options: [
+              "The tripartite Juntas de Conciliación y Arbitraje, replacing them with labor courts inside the judiciary",
+              "The right to strike",
+              "Article 123 itself",
+              "The Confederación de Trabajadores de México",
+            ],
+            correctIndex: 0,
+            explanation: "The tripartite boards of clause XX — the ones the dominant confederation sat on — were replaced by judges, plus compulsory conciliation and an independent registration body.",
+            sourceLessonSlug: "mexico-2019-reform",
+          },
+          {
+            prompt: "What does CFCRL stand for, and what does it do?",
+            options: [
+              "The Centro Federal de Conciliación y Registro Laboral — it registers every union and collective agreement and verifies that votes were real",
+              "The Mexican labor ministry",
+              "The federal labor court of appeal",
+              "The employers' conciliation council",
+            ],
+            correctIndex: 0,
+            explanation: "One national registration body, created by the 2019 reform, replacing registration by the old tripartite boards.",
+            sourceLessonSlug: "mexico-2019-reform",
+          },
+          {
+            prompt: "What is a constancia de representatividad, and what threshold does it require?",
+            options: [
+              "A CFCRL certificate showing a union has the support of at least 30% of the workers it wants to cover, required before it may seek to negotiate an initial contract",
+              "A certificate proving a union has been legally registered for at least five years",
+              "A document showing 51% of workers voted for a strike",
+              "A permit allowing a foreign union to operate in Mexico",
+            ],
+            correctIndex: 0,
+            explanation: "It attacks the protection contract at its root: you can no longer produce an agreement out of nowhere for a workforce nobody consulted.",
+            sourceLessonSlug: "mexico-2019-reform",
+          },
+          {
+            prompt: "Which came FIRST?",
+            options: [
+              "Mexico's 2019 labor law (1 May 2019) — USMCA entered into force 1 July 2020",
+              "USMCA's entry into force — Mexico legislated afterwards, under pressure",
+              "They took effect on the same day",
+              "The USMCA Rapid Response Mechanism, by two years",
+            ],
+            correctIndex: 0,
+            explanation: "The chronology is the whole point. Mexico's labor law was rewritten more than a year before the trade agreement that supposedly forced it existed.",
+            sourceLessonSlug: "mexico-2019-reform",
+          },
+          {
+            prompt: "What does USMCA Annex 23-A, paragraph 1 say about WHY Mexico is adopting these measures?",
+            options: [
+              "That they are within 'the mandate provided to the government by the people of Mexico in the elections'",
+              "That the United States required them as a condition of trade",
+              "That the ILO ordered them",
+              "That Mexican employers requested them",
+            ],
+            correctIndex: 0,
+            explanation: "The treaty text itself grounds the reform in a Mexican electoral mandate. This is the sentence that kills the 'US cleaned up Mexico' story.",
+            sourceLessonSlug: "mexico-2019-reform",
+          },
+          {
+            prompt: "What is 'legitimation' (legitimación)?",
+            options: [
+              "The requirement that every EXISTING collective agreement be put to a free, secret, personal vote of the workers by 1 May 2023, or be terminated",
+              "The process of registering a new union",
+              "The government's formal recognition of a union's elected leadership",
+              "The certification of a strike as lawful",
+            ],
+            correctIndex: 0,
+            explanation: "Four years from the law taking effect (2 May 2019) to the deadline of 1 May 2023. Mexico put its entire stock of collective agreements to a confidence vote.",
+            sourceLessonSlug: "mexico-legitimation",
+          },
+          {
+            prompt: "What was the legitimation deadline?",
+            options: ["1 May 2023", "1 July 2020", "31 December 2022", "23 November 2021"],
+            correctIndex: 0,
+            explanation: "Four years to the day after the reformed Ley Federal del Trabajo took effect. Processes already under way could be completed until 31 July 2023.",
+            sourceLessonSlug: "mexico-legitimation",
+          },
+          {
+            prompt: "How many collective agreements had ACTIVE registration in Mexico, once the Federal Center digitized and audited the register (STPS, January 2023)?",
+            options: ["About 139,000", "About 550,000", "About 12,000", "About 4 million"],
+            correctIndex: 0,
+            explanation: "The register had been described in the hundreds of thousands. After the audit, 139,000 had active registration; the rest was duplicate, dead or empty paper.",
+            sourceLessonSlug: "mexico-legitimation",
+          },
+          {
+            prompt: "Roughly what share of Mexico's registered collective agreements survived legitimation?",
+            options: [
+              "On the order of one in nine — the overwhelming majority were never put to a vote and ceased to exist",
+              "About three quarters",
+              "Almost all of them",
+              "Exactly half",
+            ],
+            correctIndex: 0,
+            explanation: "About 15,742 legitimized of roughly 139,000 as of late April 2023. A country does not lose seven-eighths of its collective agreements overnight because of clerical untidiness.",
+            sourceLessonSlug: "mexico-legitimation",
+          },
+          {
+            prompt: "If a worker's collective agreement was NOT legitimized, what happened to their pay and benefits?",
+            options: [
+              "They kept them — the wages, benefits and conditions carry over into their individual employment terms",
+              "They reverted to the statutory minimum wage",
+              "They were frozen for four years",
+              "They were cut by the same proportion as the union's dues",
+            ],
+            correctIndex: 0,
+            explanation: "The union lost the contract — its administration, dues and privileges. The worker did not lose their pay. That was deliberate.",
+            sourceLessonSlug: "mexico-legitimation",
+          },
+          {
+            prompt: "Why was it good institutional design to guarantee that workers keep their pay even if the contract dies?",
+            options: [
+              "Because otherwise an employer could campaign against legitimation by threatening that a 'no' vote would cut wages — removing that threat makes the vote free",
+              "Because it saved the government money",
+              "Because the ILO required it",
+              "Because it made the vote unnecessary",
+            ],
+            correctIndex: 0,
+            explanation: "Good institutional design anticipates the retaliation. Killing a fake union must not be usable as a way to cut a real worker's pay.",
+            sourceLessonSlug: "mexico-legitimation",
+          },
+          {
+            prompt: "What does it tell you that Mexico's state could not say how many collective agreements it had until it audited the register?",
+            options: [
+              "Something about what many of those contracts were for — a register nobody maintained was a register nobody was using to represent anyone",
+              "That Mexican record-keeping is uniquely bad",
+              "That the agreements were all forged",
+              "Nothing — every country has this problem",
+            ],
+            correctIndex: 0,
+            explanation: "The state's own ignorance of its register is evidence about the system it was registering.",
+            sourceLessonSlug: "mexico-legitimation",
+          },
+          {
+            prompt: "Under legitimation, what happened if the workers simply were never asked to vote at all?",
+            options: [
+              "The contract died — no vote was the same as a lost vote",
+              "The contract was automatically renewed",
+              "The government held the vote on the union's behalf",
+              "The employer could legitimize it unilaterally",
+            ],
+            correctIndex: 0,
+            explanation: "Majority yes → the contract lives. Majority no, OR no vote at all → the contract is terminated. That is why so many simply ceased to exist.",
+            sourceLessonSlug: "mexico-legitimation",
+          },
+        ],
+      },
+    },
   ],
 };
