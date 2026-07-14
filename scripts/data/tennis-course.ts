@@ -1101,5 +1101,327 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
         ],
       },
     },
+
+    // ───────────────────── SECTION 6 · HOW THE SPORT IS ORGANIZED ─────────────────────
+    {
+      slug: "tennis-the-professional-ladder",
+      title: "28 · The professional ladder, and how rankings actually work",
+      section: "Section 6 · How the sport is organized",
+      body: `Professional tennis is a **ladder**, and almost nobody explains it to you, so here it is.
+
+| Rung | What it is |
+| --- | --- |
+| **ITF World Tennis Tour** | The entry level. Roughly **600 tournaments in ~70 countries**. Men's events at the **$15,000** and **$30,000** prize-money levels; women's at **W15 / W25 / W60 / W80 / W100**. Results earn ATP/WTA ranking points (ITF, n.d.-c). |
+| **ATP Challenger Tour** / **WTA 125** | The second tier — where you go once you have a ranking but not a tour-level one. |
+| **ATP Tour** / **WTA Tour** | The main tour: **ATP 250 → ATP 500 → ATP Masters 1000**, and **WTA 250 → WTA 500 → WTA 1000**, plus the season-ending **ATP Finals** and **WTA Finals**. |
+| **The four Grand Slams** | Owned and run by four national federations, not the tours (Section 1, Lesson 5). |
+
+**Read that table again and notice the naming.** The ATP itself explains it: *"ATP 250, ATP 500 and ATP Masters 1000 events are named for the number of ATP Rankings points earned by their champion"* (ATP Tour, n.d.-b). The tier **is** the points number. Once you see that, the whole tour becomes legible: a WTA 500 title is worth 500 points, a WTA 1000 title is worth 1,000, and **a Grand Slam title is worth 2,000** — the biggest single prize in the ranking system on either tour (Women's Tennis Association [WTA], n.d.-c).
+
+**Rankings are a rolling 52-week system**, updated every Monday. The points you win at a tournament stay on your ranking for **one year** and then **drop off** when that tournament comes around again. This is why commentators talk about a player having "points to defend" — and it is the most important structural fact about a tennis career.
+
+Think about what a rolling ranking actually does to a person:
+
+- **You never bank anything.** A title you won last July is worth exactly zero next July unless you win it again.
+- **You cannot rest.** Skip a tournament you won last year and your ranking falls even if you never lose a match.
+- **An injury is not a pause; it is a demolition.** Miss six months and six months of points evaporate on schedule.
+
+On the WTA side, a maximum of **18 tournaments** count toward a player's singles ranking (WTA, n.d.-c). Roughly **1,600 athletes** compete on the WTA tour (WTA, n.d.-d). Hold onto that number — Section 7 is going to ask you what fraction of them make a living.
+
+**Integrity.** Since **1 January 2022**, tennis's **anti-doping and anti-corruption** programs have both been run by the **International Tennis Integrity Agency (ITIA)** — an independent body established in 2021 by the ATP, the ITF, the WTA, and the Grand Slams, with five independent members including its chair (International Tennis Integrity Agency [ITIA], n.d.). Note what happened there: the sport moved policing *out* of the organizations with a commercial interest in the results. That is not a small thing, and plenty of sports still haven't done it.
+
+:::reveal Your ranking points from a tournament you won last year are about to "drop off." What does that mean, and what does the rolling 52-week system do to a player who gets injured? ||| Ranking points last exactly **52 weeks**. The points you earned at an event come off your ranking when that event comes around again — so you must "defend" them by performing at least as well, every year, forever. You never bank anything. And an injury isn't a pause: miss six months and six months of points evaporate on schedule, whether or not you ever lost a match.
+
+## Sources
+- ATP Tour. (n.d.-b). *Tennis explained: The ATP Tour*. https://www.atptour.com/en/news/tennis-explained-atp-tour
+- International Tennis Federation. (n.d.-c). *What is the ITF World Tennis Tour?* https://www.itftennis.com/en/news-and-media/articles/what-is-the-itf-world-tennis-tour/
+- International Tennis Integrity Agency. (n.d.). *About the ITIA*. https://www.itia.tennis/about/
+- Women's Tennis Association. (n.d.-c). *Rankings explained*. https://www.wtatennis.com/rankings-explained
+- Women's Tennis Association. (n.d.-d). *About the WTA*. https://www.wtatennis.com/news/1367607/about-the-wta`,
+    },
+    {
+      slug: "tennis-team-competitions",
+      title: "29 · The team game: Davis Cup, Billie Jean King Cup, and the Olympics",
+      section: "Section 6 · How the sport is organized",
+      body: `Tennis is famously a lonely sport. No teammates, no substitutions, no coach allowed to fix things mid-match. Which is exactly why its **team** competitions matter so much to the people who play them.
+
+**Davis Cup (1900).** The men's national-team championship, and one of the oldest team competitions in any international sport. It came from four Harvard players; one of them, **Dwight Davis**, designed the format and **bought the trophy with his own money**. The first tie was played in **August 1900** at the Longwood Cricket Club in Boston, USA vs. the British Isles. It is run by the **ITF**.
+
+**Billie Jean King Cup (1963).** The women's national-team championship, launched in **1963 as the Federation Cup** to mark the ITF's 50th anniversary — 16 nations, at Queen's Club, London, no prize money. It became the **Fed Cup** in 1995, and on **17 September 2020** it was renamed the **Billie Jean King Cup**. The ITF's announcement is worth quoting: *"It is the first time a major global team competition has been named after a woman"* (International Tennis Federation [ITF], 2020). By then it had grown to **116 nations** — the largest annual international team competition in women's sport.
+
+Sit with that for a second. **2020.** Not 1975. The first time a global team competition in any sport was named for a woman was **six years ago**.
+
+**The Olympics — and the 64-year hole.** Tennis was in the Games from **1896 to 1924**, and then it **vanished**. Why? A fight between the **ILTF and the IOC** — fundamentally about **amateurism and who controlled the players** (the same fight you met in Section 4). The ILTF voted not to take part in 1928, and tennis was gone from the official program for six decades. It appeared as a **demonstration sport** in 1968 and 1984, and returned as a **full medal sport at the 1988 Seoul Games** — this time **open to professionals** (Olympics.com, n.d.).
+
+In that first year back, **Steffi Graf** won Olympic gold *and* all four Grand Slams in the same calendar year — the **"Golden Slam."** She remains **the only player, man or woman, ever to do it.**
+
+**Team competitions you can actually watch this year:**
+
+- **Laver Cup** — Team Europe vs. Team World, six a side, three days, with matches worth more points each day (Day 1 = 1 point, Day 2 = 2, Day 3 = 3; first to 13 wins). An officially sanctioned ATP Tour event since 2019.
+- **World TeamTennis** — founded in **1974** with **Billie Jean King** among its founders; dormant since 2022; **relaunching on 2 December 2026** at Barclays Center in Brooklyn, with a format of four singles sets (two men's, two women's) plus a mixed-doubles supertiebreaker — and, notably, an ownership model that gives **competing players equity in the league**, a first in tennis (PR Newswire, 2025).
+
+That last detail is not trivia. **Players owning a piece of the league they play in** is the logical endpoint of the story you read in Section 5 — the Original 9's dollar bills, fifty-six years later.
+
+:::reveal Tennis was an Olympic sport from 1896 to 1924, then disappeared for over sixty years. Why — and when did it return? ||| It was dropped after a fight between the **ILTF and the IOC over amateurism and control of the players** — the same fight that produced "shamateurism" and eventually the Open era. The ILTF voted not to take part in 1928. Tennis returned as a **full medal sport at the 1988 Seoul Games**, this time **open to professionals**. Steffi Graf promptly won gold plus all four majors in one year — the "Golden Slam," which no one else has ever done.
+
+## Sources
+- International Tennis Federation. (2020, September 17). *Fed Cup renamed Billie Jean King Cup by BNP Paribas*. https://www.itftennis.com/en/news-and-media/articles/fed-cup-renamed-billie-jean-king-cup-by-bnp-paribas/
+- International Tennis Federation. (n.d.-d). *About World Tennis*. https://www.itftennis.com/en/about-us/
+- Olympics.com. (n.d.). *A brief history of tennis*. https://www.olympics.com/en/news/a-brief-history-of-tennis
+- PR Newswire. (2025). *World TeamTennis returns in 2026, built for a new generation of fans*. https://www.prnewswire.com/news-releases/world-team-tennis-returns-in-2026-built-for-a-new-generation-of-fans-302775257.html`,
+      recallContent: [
+        {
+          prompt: "How long do ATP/WTA ranking points last?",
+          answer:
+            "52 weeks. Points drop off when that tournament comes around again — you must defend them every year. Nothing is ever banked.",
+        },
+        {
+          prompt: "How many ranking points does a Grand Slam singles title award?",
+          answer: "2,000 — the biggest single prize in the ranking system on either tour.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-where-you-actually-play",
+      title: "30 · Where you actually play: high school, leagues, juniors, college",
+      section: "Section 6 · How the sport is organized",
+      body: `Everything in the last two lessons was about roughly two thousand people on Earth. This lesson is about you.
+
+**High school.** Tennis is a big high-school sport and it is **growing**. Per the NFHS's 2024–25 participation survey, U.S. high schools fielded **204,721 girls' tennis players** (the 7th most popular girls' sport, up more than 4% in one year) and **158,667 boys' tennis players** (9th most popular) — roughly **363,000 high school tennis players** in total (National Federation of State High School Associations [NFHS], 2025).
+
+Two things follow from that number, and they point in opposite directions:
+
+- **The good news:** if your school has a team, you can very likely make it. Tennis is not football. A motivated beginner who works for two years can play varsity at a lot of schools.
+- **The reality check:** 363,000 is also the denominator in Section 7's arithmetic about turning pro. Remember it.
+
+**USTA League — the adult game, and the one almost nobody knows about.** USTA League is **the largest adult competitive tennis league in the country, with more than 320,000 players taking part each year** (United States Tennis Association [USTA], n.d.-a). You play locally, on a team, in a division for your level; win, and your team can advance to **district**, then **sectional**, then the **USTA League National Championships**.
+
+Read that again: **there is a national championship for recreational adult tennis players, and it is a real thing you could plausibly reach.** Very few sports offer an ordinary adult a competitive ladder with a national final at the top of it. Tennis does. This is one of the most under-appreciated facts in American sport, and it is the direct answer to "opportunities for amateurs."
+
+**NTRP.** That ladder works because of the **National Tennis Rating Program** — the USTA's level system that sorts players so that matches are competitive. USTA League play generally runs from **2.5 through 5.0**, and you either **self-rate** or get a **computer rating** generated from your match results (USTA, n.d.-b). A 3.0 plays 3.0s. A 4.5 plays 4.5s. Nobody's afternoon gets ruined.
+
+*(This course deliberately does not print the descriptions of each NTRP level, because the USTA's own wording is the authority and it changes. Look up the current definitions on usta.com before you self-rate — guessing high or low both make for miserable matches.)*
+
+**Juniors.** **USTA Junior Team Tennis** is coed team play for ages **5 to 18**, organized by junior NTRP rating, with **nearly 100,000 kids playing annually** (USTA, n.d.-c). A team match typically runs boys' singles, girls' singles, boys' doubles, girls' doubles, and mixed doubles, decided on **total games won**.
+
+**College.** The **Intercollegiate Tennis Association (ITA)** is the governing body of college tennis, spanning NCAA Divisions I, II, and III, the NAIA, and junior/community colleges (ITA, n.d.). And college tennis has a **team scoring format the pro game does not have**: in Division I, three doubles matches play for **one** combined team point, then **six singles matches are worth one point each** — **first team to 4 points wins the dual match**, and any matches still in progress are stopped. It's played with **no-ad scoring** (NCAA, 2015) — the Appendix VI option you met in Section 1.
+
+Which means your teammate's match can end mid-point because someone else clinched. It is the most **team** thing that happens in tennis, and college players will tell you it is the best atmosphere in the sport.
+
+:::reveal USTA League has more than 320,000 adult players a year. What can an ordinary recreational adult actually work their way up to, and what makes the ladder possible? ||| Local team play → **district** → **sectional** → the **USTA League National Championships**. A genuine national championship for recreational adults. It's possible because of the **NTRP** rating system, which sorts players by level (League runs roughly 2.5–5.0) so that people play opponents of comparable ability instead of being crushed or crushing.
+
+## Sources
+- Intercollegiate Tennis Association. (n.d.). *We are college tennis*. https://wearecollegetennis.com/
+- National Collegiate Athletic Association. (2015, August 13). *Division I tennis championships move to no-ad scoring*. https://www.ncaa.com/news/tennis-men/article/2015-08-13/division-i-tennis-championships-move-no-ad-scoring
+- National Federation of State High School Associations. (2025). *Participation in high school sports hits record high with sizable increase in 2024-25*. https://nfhs.org/stories/participation-in-high-school-sports-hits-record-high-with-sizable-increase-in-2024-25
+- United States Tennis Association. (n.d.-a). *USTA League*. https://www.usta.com/en/home/play/adult-tennis/programs/national/usta-league.html
+- United States Tennis Association. (n.d.-b). *About NTRP ratings*. https://www.usta.com/en/home/play/adult-tennis/programs/national/about-ntrp-ratings.html
+- United States Tennis Association. (n.d.-c). *About USTA Junior Team Tennis*. https://www.usta.com/en/home/play/youth-tennis/programs/national/about-usta-junior-team-tennis.html`,
+      recallContent: [
+        {
+          prompt: "In what year was the Fed Cup renamed the Billie Jean King Cup, and why was that notable?",
+          answer:
+            "2020 — the first time a major global team competition in any sport had been named after a woman. Not 1975. 2020.",
+        },
+        {
+          prompt: "Who is the only player ever to win the 'Golden Slam'?",
+          answer:
+            "Steffi Graf, in 1988 — all four majors plus Olympic gold in the same calendar year, in the first year tennis returned to the Olympics as a full medal sport.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-quiz-organization",
+      title: "31 · Quiz: how the sport is organized",
+      section: "Section 6 · How the sport is organized",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does the '500' in 'ATP 500' or 'WTA 500' refer to?",
+            options: [
+              "The prize money in thousands of dollars",
+              "The number of ranking points the champion earns",
+              "The number of players in the draw",
+              "The year the event was founded",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The tier IS the points number. A Grand Slam title is worth 2,000 — the largest single prize in the ranking system on either tour.",
+            sourceLessonSlug: "tennis-the-professional-ladder",
+          },
+          {
+            prompt: "ATP and WTA rankings use a rolling 52-week system. What does that mean in practice?",
+            options: [
+              "Points accumulate permanently over a career",
+              "Points expire after 52 weeks and must be re-earned — you 'defend' them every year",
+              "Rankings are recalculated once a year",
+              "Only your best career result counts",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Nothing is ever banked. Skip a tournament you won last year and your ranking falls even if you never lose a match — and an injury isn't a pause, it's a demolition.",
+            sourceLessonSlug: "tennis-the-professional-ladder",
+          },
+          {
+            prompt: "What is the ITF World Tennis Tour?",
+            options: [
+              "The top tier of professional tennis",
+              "The entry level of pro tennis — ~600 tournaments, where players earn their first ATP/WTA ranking points",
+              "A team competition between nations",
+              "The junior circuit only",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Men's events at the $15,000 and $30,000 levels; women's at W15 through W100. It's the bottom rung of the professional ladder.",
+            sourceLessonSlug: "tennis-the-professional-ladder",
+          },
+          {
+            prompt: "Since 1 January 2022, who runs tennis's anti-doping and anti-corruption programs?",
+            options: [
+              "The ITF",
+              "The ATP and WTA separately",
+              "The International Tennis Integrity Agency (ITIA), an independent body",
+              "The Grand Slam Board",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Established in 2021 by the ATP, ITF, WTA, and the Slams — it moved policing out of the organizations with a commercial interest in the results.",
+            sourceLessonSlug: "tennis-the-professional-ladder",
+          },
+          {
+            prompt: "The Davis Cup began in 1900. Where did its trophy come from?",
+            options: [
+              "It was donated by the ITF",
+              "Dwight Davis, one of the four Harvard players behind the idea, bought it with his own money",
+              "It was commissioned by the British royal family",
+              "It was funded by a sponsor",
+            ],
+            correctIndex: 1,
+            explanation: "Davis also designed the format. The first tie was USA vs. the British Isles, in Boston, August 1900.",
+            sourceLessonSlug: "tennis-team-competitions",
+          },
+          {
+            prompt: "The Fed Cup was renamed the Billie Jean King Cup in 2020. What made that notable?",
+            options: [
+              "It was the first team competition to allow professionals",
+              "It was the first time a major global team competition in any sport had been named after a woman",
+              "It was the first ITF event to pay prize money",
+              "It merged with the Davis Cup",
+            ],
+            correctIndex: 1,
+            explanation: "The competition began in 1963 as the Federation Cup and had grown to 116 nations by 2020.",
+            sourceLessonSlug: "tennis-team-competitions",
+          },
+          {
+            prompt: "Why did tennis disappear from the Olympics after 1924?",
+            options: [
+              "Not enough countries played it",
+              "A dispute between the ILTF and the IOC over amateurism and control of the players",
+              "The courts were too expensive to build",
+              "It was replaced by badminton",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same fight that produced 'shamateurism.' The ILTF voted not to take part in 1928, and tennis was gone from the official program until 1988.",
+            sourceLessonSlug: "tennis-team-competitions",
+          },
+          {
+            prompt: "When did tennis return to the Olympics as a full medal sport, and who won the 'Golden Slam' that year?",
+            options: [
+              "1968, Billie Jean King",
+              "1984, Martina Navratilova",
+              "1988 (Seoul), Steffi Graf",
+              "1992 (Barcelona), Jennifer Capriati",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Graf won all four majors plus Olympic gold in the same calendar year — the only player, man or woman, ever to do it.",
+            sourceLessonSlug: "tennis-team-competitions",
+          },
+          {
+            prompt: "Roughly how many students played high school tennis in the U.S. in 2024–25?",
+            options: ["About 60,000", "About 130,000", "About 363,000 (204,721 girls + 158,667 boys)", "About 1.2 million"],
+            correctIndex: 2,
+            explanation:
+              "Per the NFHS participation survey. Girls' tennis is the 7th most popular girls' sport; boys' tennis is 9th. Remember this number — it's the denominator when we do the odds of turning pro.",
+            sourceLessonSlug: "tennis-where-you-actually-play",
+          },
+          {
+            prompt: "What is USTA League?",
+            options: [
+              "The U.S. professional tour",
+              "The largest adult competitive tennis league in the country — 320,000+ players a year, with a path to a national championship",
+              "A junior development program",
+              "The college tennis governing body",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Local team play advances to district, then sectional, then the USTA League National Championships. A genuine competitive ladder for ordinary adults — very few sports offer this.",
+            sourceLessonSlug: "tennis-where-you-actually-play",
+          },
+          {
+            prompt: "What makes the USTA League ladder work?",
+            options: [
+              "Age divisions only",
+              "The NTRP rating system, which sorts players by level so matches are competitive",
+              "A draft system",
+              "Random assignment",
+            ],
+            correctIndex: 1,
+            explanation: "League play generally runs from 2.5 to 5.0. You either self-rate or receive a computer rating from your results.",
+            sourceLessonSlug: "tennis-where-you-actually-play",
+          },
+          {
+            prompt: "In NCAA Division I team tennis, how does a dual match work?",
+            options: [
+              "Six singles matches, most wins takes it",
+              "Three doubles matches for one combined team point, then six singles worth one point each — first team to 4 points wins",
+              "One match per player, best of five sets",
+              "Same as a pro tournament — single elimination",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Matches still in progress are stopped once a team clinches. It's played with no-ad scoring — the ITF Appendix VI option from Section 1.",
+            sourceLessonSlug: "tennis-where-you-actually-play",
+          },
+          {
+            prompt: "Which body is the governing body of U.S. college tennis?",
+            options: [
+              "The USTA",
+              "The ITF",
+              "The Intercollegiate Tennis Association (ITA)",
+              "The NCAA alone",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The ITA spans NCAA Divisions I, II, and III, the NAIA, and junior/community colleges, and runs the rankings. The NCAA runs the team championships.",
+            sourceLessonSlug: "tennis-where-you-actually-play",
+          },
+          {
+            prompt: "World TeamTennis, founded in 1974 with Billie Jean King among its founders, relaunches in December 2026 with what notable feature?",
+            options: [
+              "No-let serving",
+              "Competing players receive equity in the league — a first in tennis",
+              "Matches played on grass only",
+              "No doubles",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Players owning a piece of the league they play in is the logical endpoint of the Original 9's dollar bills, fifty-six years later.",
+            sourceLessonSlug: "tennis-team-competitions",
+          },
+          {
+            prompt: "Roughly how many athletes compete on the WTA tour?",
+            options: ["About 200", "About 1,600", "About 12,000", "About 50,000"],
+            correctIndex: 1,
+            explanation:
+              "Keep this number in mind for Section 7, when we ask how many of them actually earn a living from prize money.",
+            sourceLessonSlug: "tennis-the-professional-ladder",
+          },
+        ],
+      },
+    },
   ],
 };
