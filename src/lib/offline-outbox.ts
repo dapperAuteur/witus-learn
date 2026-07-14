@@ -4,10 +4,15 @@
  * The OFFLINE OUTBOX — a general queue for writes made with no network, replayed when it returns.
  *
  * Built for BAM's bug report: "user should be able to submit comment, correction, question, bug,
- * feedback, idea, other when offline and it syncs when back online". Today only the /admin/future
- * notes form uses it, but nothing here knows what a note is: an item is `{ url, method, body }`
- * plus a label to show the human. Point any other form at it (report-a-problem, feedback, course
- * corrections) by giving it a new `kind`.
+ * feedback, idea, other when offline and it syncs when back online" — and now delivering all seven
+ * of those words: `comment`/`correction`/`question` are lesson feedback, `bug`/`feedback`/`idea`/
+ * `other` are problem reports, and both queue here alongside the /admin/future notes.
+ *
+ * Nothing in this file knows what any of them ARE: an item is `{ url, method, body }` plus a label
+ * to show the human, and the flusher replays it verbatim — there is no `switch (kind)` here and
+ * there must not be one. Which endpoint and which body shape a `kind` means is decided once, at
+ * enqueue time, in ./outbox-kinds.ts. `kind` is used here only so a form can show its own pending
+ * rows and nobody else's.
  *
  * ── The rule this module exists to enforce ────────────────────────────────────────────────────
  * A QUEUED WRITE IS NEVER SILENTLY LOST. Everything else is a consequence of that:
@@ -55,6 +60,21 @@ export type OutboxItem = {
   lastError: string | null;
   /** The server rejected this in a way retrying won't fix. Kept and shown; never auto-deleted. */
   failed: boolean;
+  /**
+   * The origin this item was written on — i.e. WHICH BRAND. Optional, because items queued by
+   * earlier builds don't have it; those still send (they predate multi-form queuing, and the only
+   * writer was the owner-only /admin/future form).
+   *
+   * The tenant is resolved server-side from the request Host and is never in the body, so "which
+   * tenant does this item belong to" is answered entirely by "which origin is it stored on". In
+   * production that is already airtight without any code: tenants live on separate domains, and
+   * localStorage is partitioned per origin — an item queued on brand-a.com is not merely rejected
+   * on brand-b.com, it is *invisible* there. This field makes the invariant explicit rather than
+   * incidental, and closes the one place it doesn't hold on its own: a dev box, where
+   * DEV_TENANT_HOST can point a single origin (localhost:3040) at a different brand between
+   * restarts. See the guard in flushOutbox().
+   */
+  origin?: string;
 };
 
 export type OutboxSyncedDetail = { item: OutboxItem; response: unknown };
@@ -135,6 +155,16 @@ function newId(): string {
   }
 }
 
+/** The origin we're running on, or null where there isn't one (SSR, tests). */
+function currentOrigin(): string | null {
+  try {
+    if (typeof location === "undefined" || !location.origin) return null;
+    return location.origin;
+  } catch {
+    return null;
+  }
+}
+
 /**
  * Queue a write. Returns the item on success, or null when it could NOT be persisted — the caller
  * must then tell the human their text wasn't saved, not silently drop it.
@@ -157,6 +187,7 @@ export function enqueue(input: {
     attempts: 0,
     lastError: null,
     failed: false,
+    ...(currentOrigin() ? { origin: currentOrigin()! } : {}),
   };
   return mutate((items) => [...items, item]) ? item : null;
 }
@@ -194,8 +225,30 @@ export async function flushOutbox(): Promise<void> {
   if (typeof navigator !== "undefined" && navigator.onLine === false) return;
 
   flushing = true;
+  const here = currentOrigin();
   try {
     for (const item of queue) {
+      // WRONG BRAND. An item stamped with another origin must never be replayed here: the tenant is
+      // resolved from the Host we'd be POSTing to, so sending it would file one brand's bug report
+      // against another's school. Keep it (it is still the person's writing — the outbox's one
+      // promise) but stop trying, and say where it belongs. In production this is unreachable by
+      // construction (per-origin localStorage); on a dev box with DEV_TENANT_HOST re-pointed, it is
+      // the thing that stops a stale queue from leaking across brands.
+      if (item.origin && here && item.origin !== here) {
+        mutate((items) =>
+          items.map((i) =>
+            i.id === item.id
+              ? {
+                  ...i,
+                  failed: true,
+                  lastError: `Written on ${item.origin} — open that site to send it. It hasn't been saved here.`,
+                }
+              : i,
+          ),
+        );
+        continue;
+      }
+
       let res: Response;
       try {
         res = await fetch(item.url, {
