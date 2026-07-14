@@ -1143,5 +1143,322 @@ And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor* — 
         ],
       },
     },
+
+    // ────────────── SECTION 4 · THE DUAL SYSTEM AND THE PEACE OBLIGATION ──────────────
+    {
+      slug: "germany-dual-system-and-tarifvorrang",
+      title: "11 · The dual system: two channels, one seam",
+      section: "Section 4 · The dual system, and the price of it",
+      body: `You now have both channels in your head. Put them together, and you have the thing Germans call the **dual system** (*duales System*) — and the reason it works is a **seam**: a line the law draws between the two, so that they do not fight each other for the same job.
+
+| | **Channel one: the union** | **Channel two: the works council** |
+| --- | --- | --- |
+| **Where it sits** | **Above** the firm — at the level of the whole sector | **Inside** the firm — in the establishment |
+| **Who it is** | An industrial union (IG Metall, ver.di…) facing an employers' association | A statutory body elected by **all** employees |
+| **What it produces** | A **collective agreement** (*Tarifvertrag*) — pay, the length of the working week | A **works agreement** (*Betriebsvereinbarung*) — how the workplace is actually run |
+| **Its weapon** | **The strike** | **None. It may not strike.** |
+| **Its statute** | TVG (+ Basic Law Art. 9(3)) | BetrVG |
+
+## The seam: Tarifvorrang
+
+The law does not leave the boundary to good manners. It writes it down, twice.
+
+**First, in the works council's own charter — BetrVG § 77(3):**
+
+> "**Works agreements cannot deal with remuneration and other conditions of employment that have been fixed or are normally fixed by collective agreement.** The foregoing does not apply where a collective agreement expressly authorises the making of supplementary works agreements."
+
+**Second, in the co-determination list itself — the opening words of § 87(1):** the works council has co-determination rights in those fourteen matters **"in so far as they are not prescribed by legislation or collective agreement."**
+
+Germans call this **Tarifvorrang** — the *primacy of the collective agreement*. And it is the piece that makes the whole architecture cohere.
+
+**Think about what it prevents.** Without it, an employer under pressure would go straight to the works council — a body made of its own employees, who cannot strike, who work in the building, whose kids go to the local school — and negotiate a cheaper deal on pay than the union got at sector level. Every firm would do this. Within a decade the sectoral agreement would be worthless and the works council would have become the instrument for undercutting it. **§ 77(3) makes that illegal.** Pay is the union's, and the works council may not trade it away.
+
+So the division of labour is exact:
+
+- **The union decides how much you are paid, and how many hours you work.** It bargains for the sector, and it can strike.
+- **The works council decides how the place is run** — shifts, monitoring, health and safety, discipline, bonus *structures*, remote work — and it can force those to a binding decision without ever downing tools.
+
+**Two bodies. Two statutes. Two kinds of power. One line between them.**
+
+## The opening clause — where the seam has been giving way
+
+Note the second sentence of § 77(3): a works agreement *can* deal with pay **"where a collective agreement expressly authorises"** it. Since the 1990s, German sectoral agreements have increasingly written in exactly such authorisations — **opening clauses** (*Öffnungsklauseln*) — that let a single firm, with its works council's agreement, deviate from the sectoral deal: work longer hours, defer a raise, cut a bonus, usually in exchange for a job guarantee.
+
+You can read that two ways, and both are honest:
+- **As flexibility that saved the system.** A sectoral agreement that cannot bend will break — firms in trouble would simply leave. Opening clauses let them stay covered.
+- **As decentralisation by the back door.** Every opening clause moves a decision from the sector, where the union is strong and can strike, into the firm, where the works council is closer to management and cannot.
+
+The German system's defenders and its critics agree on the mechanism and disagree about the verdict. **You are allowed to do the same, once you can describe it.**
+
+:::reveal Why does BetrVG § 77(3) forbid a works agreement from setting pay that the collective agreement normally fixes? ||| Because otherwise employers would bypass the union entirely — negotiating pay with a body made of their own employees that cannot strike, that works in the building, and that is under far more pressure to say yes. The sectoral agreement would be undercut firm by firm until it was worthless. Tarifvorrang keeps pay in the channel that has the strike.
+
+## Sources
+- Betriebsverfassungsgesetz [Works Constitution Act] (Germany), §§ 77(3), 87(1) [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_betrvg/englisch_betrvg.html
+- Tarifvertragsgesetz [Collective Agreements Act] (Germany), §§ 3, 4. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/tvg/`,
+    },
+    {
+      slug: "germany-strikes-and-the-peace-obligation",
+      title: "12 · The peace obligation: what Germany charges for all this",
+      section: "Section 4 · The dual system, and the price of it",
+      body: `Nothing in this course is free. Germany gives workers a statutory body inside every establishment, real co-determination over how the place runs, and half the seats on the supervisory board of every large firm. **In exchange, it takes something away, and it is worth naming precisely what.**
+
+## 1. The works council may not strike. Ever.
+
+**BetrVG § 74(2)**, first sentence:
+
+> "**Industrial action between the employer and the works council is unlawful**; the foregoing does not apply to industrial action between collective bargaining parties. The employer and the works council have to refrain from activities that interfere with operations or imperil the peace in the establishment."
+
+And § 74(1) requires the two of them to meet **at least once a month** and to "discuss the matters at issue **with an earnest desire to reach agreement**."
+
+So the body with power *inside* the company has **no** power to stop work — and a statutory duty to be constructive. The body that *can* stop work — the union — is **outside** the company. **That separation is the deal.** The works council trades the strike for the conciliation committee; instead of downing tools when it deadlocks, it goes to arbitration whose award becomes the rule (§ 87(2)).
+
+Whether that is a good trade is a real question, and Section 6 lets you argue it. But notice how neatly it explains the thing foreigners always remark on: **German industrial relations are quiet inside the firm.** They are quiet by construction. Conflict inside the establishment isn't suppressed by culture; it is *routed* — into a monthly meeting and, failing that, into an arbitration panel.
+
+## 2. And the union may not strike whenever it likes either — the Friedenspflicht
+
+Here the course has to be careful, because **Germany has no statute that grants a right to strike.** Not one. What it has is:
+
+- **Basic Law Art. 9(3)**, which guarantees the right to combine "to safeguard and improve working and economic conditions" to every individual and every occupation, and voids any agreement that impairs it; and
+- **decades of case law from the Federal Labour Court** (*Bundesarbeitsgericht*), which built the German law of industrial action on top of that constitutional guarantee.
+
+**This course is not going to cite you a case name for that, because it did not retrieve one, and a fabricated citation is worse than an honest gap.** What you should take away is the *shape* of the judge-made rules, which is well established and which German labour lawyers will all recognise:
+
+- **A strike must be led by a union.** Spontaneous, unofficial walkouts — what Americans call **wildcat strikes** — are not protected industrial action in Germany.
+- **A strike must aim at a collective agreement.** It must be about something a *Tarifvertrag* could lawfully settle. A **purely political strike** — a strike against a government policy rather than an employer — is not protected.
+- **And while a collective agreement is running, there is a peace obligation** — the *Friedenspflicht*. You do not strike over things your own contract has already settled, for as long as it lasts.
+
+Put that last one next to the numbers and you can see the machine at work. A German sectoral agreement runs for a fixed term. **For that whole term, the matters it settles are off the table.** Bargaining rounds are scheduled events. Warning strikes (*Warnstreiks*) — short, sharp stoppages during a bargaining round, once the peace obligation has lapsed — are a normal and expected part of the choreography.
+
+**The result is a system in which industrial conflict is legal, real, and almost entirely predictable.** It happens at a known level (the sector), between known parties (the union and the employers' association), at a known time (when the agreement expires), over a known subject (what the next agreement will say).
+
+*(A word on what this course will not tell you: you may have read that Germany loses very few days to strikes compared with, say, France or the United States. That is the general reputation, and the structural reasons above make it plausible. But this course did not retrieve a strike-days statistic from a primary source it trusts, and it is not going to quote one it cannot stand behind. **Learn the mechanism; be suspicious of the tidy number.**)*
+
+## 3. The trade, in one sentence
+
+**Germany gives the workforce a permanent, statutory seat and takes away its ability to make a scene.**
+
+That is not a criticism. It might be the best bargain any working class ever struck. But an educated person should be able to state the *price* of an institution as fluently as its benefits — and the price of German co-determination is paid in the currency of disruption.
+
+:::reveal A German works council deadlocks with the employer over shift patterns. Can it call a strike? What does it do instead? ||| **No.** BetrVG § 74(2): "Industrial action between the employer and the works council is unlawful." Shift patterns are a § 87(1) co-determination matter, so it goes to the **conciliation committee**, whose award takes the place of an agreement (§ 87(2)). The works council trades the strike for binding arbitration. The strike belongs to the union, which sits outside the firm.
+
+## Sources
+- Basic Law for the Federal Republic of Germany, Art. 9(3) [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_gg/englisch_gg.html
+- Betriebsverfassungsgesetz [Works Constitution Act] (Germany), §§ 74, 87(2) [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_betrvg/englisch_betrvg.html
+- Tarifvertragsgesetz [Collective Agreements Act] (Germany), § 4. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/tvg/`,
+      recallContent: [
+        {
+          prompt: "What is Tarifvorrang, and which section states it?",
+          answer:
+            "The primacy of the collective agreement: BetrVG § 77(3) forbids a works agreement from dealing with pay and conditions that a collective agreement fixes or normally fixes — unless the collective agreement expressly opens the door. It keeps pay in the channel that has the strike.",
+        },
+        {
+          prompt: "Can a German works council go on strike?",
+          answer:
+            "No. BetrVG § 74(2): 'Industrial action between the employer and the works council is unlawful.' It goes to the conciliation committee instead. Only the union — outside the firm — can strike.",
+        },
+      ],
+    },
+    {
+      slug: "germany-quiz-4",
+      title: "Section 4 quiz · The dual system and the peace obligation",
+      section: "Section 4 · The dual system, and the price of it",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "In the German dual system, who bargains over the LEVEL of pay?",
+            options: [
+              "The works council, inside the firm",
+              "The industrial union and the employers' association, at sector level",
+              "The supervisory board",
+              "The Federal Ministry of Labour",
+            ],
+            correctIndex: 1,
+            explanation: "Pay is channel one — the union's channel, above the firm. The works council is expressly forbidden from touching it.",
+            sourceLessonSlug: "germany-dual-system-and-tarifvorrang",
+          },
+          {
+            prompt: "What does BetrVG § 77(3) forbid?",
+            options: [
+              "Works councils from meeting without the employer",
+              "Works agreements from dealing with pay and conditions that a collective agreement fixes or normally fixes",
+              "Unions from entering the workplace",
+              "Employers from joining an employers' association",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Tarifvorrang — the primacy of the collective agreement. Without it, employers would bypass the union by cutting a cheaper deal with a body that cannot strike.",
+            sourceLessonSlug: "germany-dual-system-and-tarifvorrang",
+          },
+          {
+            prompt: "Why is Tarifvorrang necessary to the whole architecture?",
+            options: [
+              "It saves the employer paperwork",
+              "Without it, employers would negotiate pay with the works council — a body of their own employees who cannot strike — and undercut the sectoral agreement firm by firm",
+              "It is an EU requirement",
+              "It stops works councils from being elected",
+            ],
+            correctIndex: 1,
+            explanation: "The rule keeps pay in the one channel that carries a credible threat.",
+            sourceLessonSlug: "germany-dual-system-and-tarifvorrang",
+          },
+          {
+            prompt: "What is an Öffnungsklausel (opening clause)?",
+            options: [
+              "A clause letting workers open the company's books",
+              "A clause in a sectoral agreement expressly authorising a single firm and its works council to deviate from it — e.g. longer hours in exchange for a job guarantee",
+              "A clause letting an employer leave the employers' association",
+              "A clause opening the works council to union members only",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Permitted by the second sentence of § 77(3). Read as flexibility that saved the system, or as decentralisation by the back door — the mechanism is agreed, the verdict is not.",
+            sourceLessonSlug: "germany-dual-system-and-tarifvorrang",
+          },
+          {
+            prompt: "Can a German works council lawfully call a strike?",
+            options: [
+              "Yes, over any § 87(1) matter",
+              "No — BetrVG § 74(2) makes industrial action between the employer and the works council unlawful",
+              "Yes, but only with the union's permission",
+              "Yes, but only once per year",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It trades the strike for the conciliation committee, whose award replaces agreement (§ 87(2)). The body with power inside the firm has no power to stop work.",
+            sourceLessonSlug: "germany-strikes-and-the-peace-obligation",
+          },
+          {
+            prompt: "Under § 74(1), how often must the employer and works council meet?",
+            options: [
+              "Once a year",
+              "At least once a month, discussing matters 'with an earnest desire to reach agreement'",
+              "Only when the employer chooses",
+              "Never — meetings are voluntary",
+            ],
+            correctIndex: 1,
+            explanation: "Conflict inside the German establishment isn't suppressed by culture; it is routed — into a monthly meeting.",
+            sourceLessonSlug: "germany-strikes-and-the-peace-obligation",
+          },
+          {
+            prompt: "Where does the German right to strike come from?",
+            options: [
+              "A statute passed in 1949",
+              "Basic Law Art. 9(3) plus decades of Federal Labour Court (Bundesarbeitsgericht) case law — there is no statute granting it",
+              "The Works Constitution Act, § 74",
+              "An EU directive",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is judge-made law resting on the constitutional guarantee of freedom of association. This course does not cite you a case name for it, because it did not retrieve one.",
+            sourceLessonSlug: "germany-strikes-and-the-peace-obligation",
+          },
+          {
+            prompt: "Which of these is NOT protected industrial action in Germany?",
+            options: [
+              "A warning strike during a bargaining round after the peace obligation has lapsed",
+              "A union strike aimed at a new collective agreement",
+              "A spontaneous, unofficial walkout not led by a union ('wildcat strike')",
+              "A strike organised by IG Metall over pay",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Under the judge-made rules a strike must be led by a union and aimed at something a collective agreement could settle. Wildcat strikes — and purely political strikes — are not protected.",
+            sourceLessonSlug: "germany-strikes-and-the-peace-obligation",
+          },
+          {
+            prompt: "What is the Friedenspflicht (peace obligation)?",
+            options: [
+              "A ban on all strikes in Germany",
+              "While a collective agreement is running, the matters it settles are off the table — you do not strike over what your own contract has already agreed",
+              "A duty on the government to mediate every dispute",
+              "A rule that strikes must be announced 30 days in advance",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is why German industrial conflict is legal, real, and almost entirely predictable: known level, known parties, known time, known subject.",
+            sourceLessonSlug: "germany-strikes-and-the-peace-obligation",
+          },
+          {
+            prompt: "This course refuses to quote a 'days lost to strikes' statistic for Germany. Why?",
+            options: [
+              "Because Germany has never had a strike",
+              "Because it did not retrieve one from a primary source it trusts — learn the mechanism, be suspicious of the tidy number",
+              "Because the figure is classified",
+              "Because strike data is meaningless",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The structural reasons for low disruption are well sourced. The headline statistic was not. So the course teaches the first and declines the second.",
+            sourceLessonSlug: "germany-strikes-and-the-peace-obligation",
+          },
+          {
+            prompt: "State the German trade in one sentence.",
+            options: [
+              "Germany gives workers a strike fund and takes away their board seats",
+              "Germany gives the workforce a permanent, statutory seat — and takes away its ability to make a scene",
+              "Germany gives workers pay rises and takes away their holidays",
+              "Germany gives employers total control and workers nothing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "An educated person should be able to state the price of an institution as fluently as its benefits. Co-determination's price is paid in the currency of disruption.",
+            sourceLessonSlug: "germany-strikes-and-the-peace-obligation",
+          },
+          {
+            prompt: "A works agreement (Betriebsvereinbarung) and a collective agreement (Tarifvertrag) — which produces which?",
+            options: [
+              "The union produces the works agreement; the works council produces the collective agreement",
+              "The works council + employer produce the works agreement; the union + employers' association produce the collective agreement",
+              "Both are produced by the supervisory board",
+              "Both are issued by the labour ministry",
+            ],
+            correctIndex: 1,
+            explanation: "Two bodies, two statutes, two kinds of power — and § 77(3) is the line between them.",
+            sourceLessonSlug: "germany-dual-system-and-tarifvorrang",
+          },
+          {
+            prompt:
+              "An employer in trouble wants its works council to accept a pay cut below the sectoral rate. What does it need first?",
+            options: [
+              "Nothing — the works council can simply agree",
+              "An opening clause in the sectoral collective agreement expressly authorising the deviation (§ 77(3), second sentence)",
+              "Permission from the supervisory board",
+              "A court order",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Absent an express authorisation in the collective agreement, a works agreement on pay is void. That is the whole point of Tarifvorrang.",
+            sourceLessonSlug: "germany-dual-system-and-tarifvorrang",
+          },
+          {
+            prompt: "Which body has power inside the German firm, and which body has the strike?",
+            options: [
+              "Both belong to the works council",
+              "Both belong to the union",
+              "The works council has power inside the firm; the union — outside the firm — has the strike",
+              "Neither has either",
+            ],
+            correctIndex: 2,
+            explanation:
+              "That separation IS the deal. It is why conflict inside a German establishment is quiet: it has been routed somewhere else by design.",
+            sourceLessonSlug: "germany-strikes-and-the-peace-obligation",
+          },
+          {
+            prompt: "Under § 87(1)'s opening words, what happens to a works council's co-determination right if the collective agreement already covers the matter?",
+            options: [
+              "The works council co-determines it anyway",
+              "The right does not apply — § 87(1) operates only 'in so far as [matters] are not prescribed by legislation or collective agreement'",
+              "The works council may override the collective agreement",
+              "The matter goes to the supervisory board",
+            ],
+            correctIndex: 1,
+            explanation: "The second half of the seam. Between § 87(1)'s chapeau and § 77(3), the boundary between the two channels is fully written down.",
+            sourceLessonSlug: "germany-dual-system-and-tarifvorrang",
+          },
+        ],
+      },
+    },
   ],
 };
