@@ -14,6 +14,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { ReportProblem } from "@/components/report-problem";
 import { EcosystemFooter } from "@/components/ecosystem-footer";
 import { AgeGate } from "@/components/age-gate";
+import { OfflinePrivacyGuard } from "@/components/offline-privacy-guard";
 
 // Wraps every tenant-facing surface. Resolves the brand from the host (404 on an
 // unknown host), applies the accent token, gates content behind the age-gate when
@@ -63,6 +64,10 @@ export default async function TenantLayout({ children }: { children: React.React
         <SiteFooter tenant={tenant} />
       )}
       <ReportProblem defaultEmail={session?.user.email ?? undefined} />
+      {/* A saved /admin/future is signed-in content sitting in this device's cache. This deletes it
+          the moment the person at the keyboard isn't the one who saved it — a session that expired,
+          or somebody else signing in on the same laptop. Online loads only; see the component. */}
+      <OfflinePrivacyGuard userId={session?.user.id ?? null} />
     </div>
   );
 }

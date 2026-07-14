@@ -7,9 +7,11 @@ import {
   removeAllOffline,
   removeLessons,
   removeMedia,
+  removeSavedPaths,
   storageUsage,
-  type OfflineEntry,
   type OfflineInventory,
+  type OfflineLessonEntry,
+  type OfflinePageEntry,
 } from "@/lib/offline";
 import { useOfflineReadiness } from "@/lib/use-offline-readiness";
 
@@ -60,12 +62,12 @@ const REMOVE_BTN =
 type Course = {
   courseHref: string;
   courseTitle: string;
-  sections: { title: string | null; lessons: OfflineEntry[] }[];
-  lessons: OfflineEntry[];
+  sections: { title: string | null; lessons: OfflineLessonEntry[] }[];
+  lessons: OfflineLessonEntry[];
 };
 
 /** Group a flat inventory into course → section → lesson, preserving first-seen order. */
-function groupByCourse(entries: OfflineEntry[]): Course[] {
+function groupByCourse(entries: OfflineLessonEntry[]): Course[] {
   const courses = new Map<string, Course>();
   for (const entry of [...entries].sort((a, b) => a.savedAt - b.savedAt)) {
     let course = courses.get(entry.courseHref);
@@ -118,7 +120,7 @@ export function OfflineDownloadsManager() {
   // Every mutation re-reconciles against the real caches rather than patching local state, so what
   // you see after a delete is what the browser actually still has.
   const drop = useCallback(
-    async (lessons: OfflineEntry[]) => {
+    async (lessons: OfflineLessonEntry[]) => {
       setPending(true);
       try {
         await removeLessons(lessons.map((l) => ({ pagePath: l.pagePath, mediaUrl: l.mediaUrl })));
@@ -131,11 +133,12 @@ export function OfflineDownloadsManager() {
     [refresh],
   );
 
+  // By path: saved standalone pages (/admin/future) and orphans the manifest can't name.
   const dropPaths = useCallback(
     async (paths: string[]) => {
       setPending(true);
       try {
-        await removeLessons(paths.map((pagePath) => ({ pagePath })));
+        await removeSavedPaths(paths);
       } catch {
         /* ignore */
       }
@@ -187,10 +190,12 @@ export function OfflineDownloadsManager() {
   }
 
   const entries = inventory?.entries ?? [];
+  const pages = inventory?.pages ?? [];
   const orphanPages = inventory?.orphanPages ?? [];
   const orphanMedia = inventory?.orphanMedia ?? [];
   const courses = groupByCourse(entries);
-  const nothing = entries.length === 0 && orphanPages.length === 0 && orphanMedia.length === 0;
+  const nothing =
+    entries.length === 0 && pages.length === 0 && orphanPages.length === 0 && orphanMedia.length === 0;
 
   return (
     <div className="mt-6">
@@ -199,6 +204,7 @@ export function OfflineDownloadsManager() {
           <p className="font-medium">
             {entries.length} lesson{entries.length === 1 ? "" : "s"} saved
             {courses.length > 0 ? ` across ${courses.length} course${courses.length === 1 ? "" : "s"}` : ""}
+            {pages.length > 0 ? ` · ${pages.length} page${pages.length === 1 ? "" : "s"}` : ""}
           </p>
           {storage ? (
             <p className="mt-0.5 text-xs text-neutral-500">
@@ -305,6 +311,51 @@ export function OfflineDownloadsManager() {
         ))}
       </ul>
 
+      {/* Saved PAGES — things that aren't lessons and shouldn't be filed under a course they don't
+          belong to. Today that's the owner's /admin/future board. The privacy line is not decoration:
+          this is the one place a page cached from a SIGNED-IN screen is listed, and the person
+          reading it deserves to know it's sitting in this browser unencrypted, and how it leaves. */}
+      {pages.length > 0 ? (
+        <section className="mt-6 rounded-xl border border-neutral-200 dark:border-neutral-800">
+          <h2 className="border-b border-neutral-200 px-4 py-3 text-sm font-semibold dark:border-neutral-800">
+            Saved pages
+          </h2>
+          <ul className="divide-y divide-neutral-100 dark:divide-neutral-900">
+            {pages.map((page) => (
+              <li key={page.pagePath} className="px-4 py-3">
+                <div className="flex flex-wrap items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    {/* Real <a>: a hard navigation is the only kind the SW can answer from cache. */}
+                    <a href={page.pagePath} className="font-medium underline underline-offset-2">
+                      {page.pageTitle}
+                    </a>
+                    <p className="text-xs text-neutral-500">
+                      {page.pageSummary ? `${page.pageSummary} · ` : ""}
+                      {savedAgo(page.savedAt)}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => void dropPaths([page.pagePath])}
+                    disabled={pending}
+                    className={REMOVE_BTN}
+                    aria-label={`Remove ${page.pageTitle} from your offline downloads`}
+                  >
+                    Remove
+                  </button>
+                </div>
+                {page.sensitive ? (
+                  <p className="mt-2 text-xs text-amber-700 dark:text-amber-500">
+                    Private — this is a copy of a page from your account, stored on this device
+                    without a password in front of it. It&rsquo;s deleted when you sign out.
+                  </p>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
       {/* Honesty rows. A cached page the manifest can't name, or a media file no saved lesson
           claims, still occupies the learner's storage — hiding them would be exactly the "misled
           about what's actually saved" failure this feature exists to fix. */}
@@ -357,7 +408,10 @@ export function OfflineDownloadsManager() {
         </section>
       ) : null}
 
-      <OfflineDiagnostics savedPages={entries.length + orphanPages.length} usage={storage?.usage ?? null} />
+      <OfflineDiagnostics
+        savedPages={entries.length + pages.length + orphanPages.length}
+        usage={storage?.usage ?? null}
+      />
     </div>
   );
 }
@@ -432,7 +486,9 @@ export function OfflineDownloadsSummary() {
       .then((result) => {
         if (cancelled || !result) return;
         const [inventory, storage] = result;
-        setCount(inventory.entries.length + inventory.orphanPages.length);
+        setCount(
+          inventory.entries.length + inventory.pages.length + inventory.orphanPages.length,
+        );
         setUsage(storage?.usage ?? null);
       })
       .catch(() => {
@@ -459,7 +515,8 @@ export function OfflineDownloadsSummary() {
             ? "See and remove what you've saved for offline"
             : count === 0
               ? "Nothing saved yet — tick lessons on any course page"
-              : `${count} lesson${count === 1 ? "" : "s"} on this device${usage ? ` · ${formatBytes(usage)} used` : ""}`}
+              : /* "item", not "lesson" — the count now includes saved pages like /admin/future. */
+              `${count} item${count === 1 ? "" : "s"} on this device${usage ? ` · ${formatBytes(usage)} used` : ""}`}
         </span>
       </span>
       <span aria-hidden className="shrink-0 text-neutral-400">

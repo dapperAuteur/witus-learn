@@ -12,6 +12,8 @@
 // when the cache says otherwise.
 import {
   clearManifest,
+  isLessonEntry,
+  isPageEntry,
   manifestSupported,
   readManifest,
   referencedMedia,
@@ -19,10 +21,20 @@ import {
   withoutPaths,
   writeManifest,
   type OfflineEntry,
+  type OfflineLessonEntry,
   type OfflineLessonMeta,
+  type OfflinePageEntry,
+  type OfflinePageMeta,
 } from "./offline-manifest";
 
-export type { OfflineEntry, OfflineLessonMeta };
+export type {
+  OfflineEntry,
+  OfflineLessonEntry,
+  OfflineLessonMeta,
+  OfflinePageEntry,
+  OfflinePageMeta,
+};
+export { isLessonEntry, isPageEntry };
 
 export const PAGES_CACHE = "witus-pages-v1";
 export const MEDIA_CACHE = "witus-media-v1";
@@ -67,6 +79,27 @@ export type SavableLesson = {
   mediaUrl?: string | null;
   meta: OfflineLessonMeta;
 };
+
+/** A standalone page the user can save (today: `/admin/future`). Same rule — `meta` is required,
+ *  and for a signed-in page it carries the `sensitive` flag the purge depends on. */
+export type SavablePage = {
+  pagePath: string;
+  meta: OfflinePageMeta;
+};
+
+/**
+ * Cached paths that are ALWAYS treated as private, whatever the manifest says.
+ *
+ * The manifest is a hint layer: it can be cleared, quota-blocked, or corrupted, and then a cached
+ * admin page would have no `sensitive: true` record to find it by — leaving signed-in HTML on the
+ * device with nothing left to revoke it. So the purge ALSO sweeps by path prefix. Belt and braces,
+ * on the one thing where being wrong means leaving someone else's private notes on a shared phone.
+ */
+const PRIVATE_PATH_PREFIXES = ["/admin"];
+
+function isPrivatePath(pathname: string): boolean {
+  return PRIVATE_PATH_PREFIXES.some((p) => pathname === p || pathname.startsWith(`${p}/`));
+}
 
 /** Enough to *remove* a lesson: the manifest supplies the media URL when it knows it, and the
  *  optional hint covers orphans (cached page, manifest entry lost). */
@@ -186,6 +219,7 @@ export async function saveLesson(lesson: SavableLesson): Promise<void> {
     throw new Error(`Offline save could not be verified for ${lesson.pagePath}`);
   }
   upsertEntry({
+    kind: "lesson",
     pagePath: lesson.pagePath,
     courseTitle: lesson.meta.courseTitle,
     courseSlug: lesson.meta.courseSlug,
@@ -198,10 +232,105 @@ export async function saveLesson(lesson: SavableLesson): Promise<void> {
   void ensureShellCached();
 }
 
+/**
+ * Save a standalone page for offline — the same page + assets + verify + manifest sequence as
+ * saveLesson, for something that isn't a lesson. Today: `/admin/future`.
+ *
+ * ── Why this is allowed to cache an AUTHENTICATED page, and on what terms ─────────────────────
+ * Everything else here is public course content. This writes a SIGNED-IN, owner-only page — with
+ * whatever notes are on it — into the Cache API as plain text on the device. That is a real
+ * exposure, so it is fenced:
+ *
+ *  1. EXPLICIT ONLY. There is no auto-save, no prefetch, no "we saved this for you". The only
+ *     thing that calls this with `sensitive: true` is a button the owner deliberately pressed, and
+ *     its copy says what lands on the device. (Contrast lessons, which a course page will happily
+ *     bulk-save — that is fine for public content and would not be fine here.)
+ *  2. REVOCABLE. `savedByUserId` + `sensitive` let purgeSensitivePages() delete it on sign-out and
+ *     on the next online load under a different account. See that function.
+ *  3. STILL SERVER-GATED. Caching changes nothing about authorisation: the page is network-first,
+ *     so ONLINE it is always re-fetched and `requirePlatformOwner()` runs. The cached copy is only
+ *     ever reachable when the network is gone — which is the whole point — and until the purge
+ *     removes it.
+ *
+ * What remains, honestly: between saving and signing out, someone holding the unlocked device with
+ * the network off can read the cached page. That is the deal the button's copy states plainly.
+ */
+export async function savePageOffline(page: SavablePage): Promise<void> {
+  await savePage(page.pagePath);
+  // VERIFY, don't assume — same rule as saveLesson: "saved" means "read back out of the cache".
+  if (!(await isSaved(page.pagePath))) {
+    throw new Error(`Offline save could not be verified for ${page.pagePath}`);
+  }
+  upsertEntry({
+    kind: "page",
+    pagePath: page.pagePath,
+    pageTitle: page.meta.pageTitle,
+    pageSummary: page.meta.pageSummary,
+    sensitive: page.meta.sensitive,
+    savedByUserId: page.meta.savedByUserId,
+    mediaUrl: null,
+    savedAt: Date.now(),
+  });
+  void ensureShellCached();
+}
+
+/**
+ * Delete every cached page that is private and no longer belongs to the user who is signed in
+ * RIGHT NOW. This is the revocation half of the deal `savePageOffline` makes.
+ *
+ * Called with:
+ *   • `null` from the sign-out button, BEFORE the session is destroyed → the owner's saved admin
+ *     page leaves the device with them.
+ *   • the current user id from `<OfflinePrivacyGuard>` on every ONLINE tenant page load → so a
+ *     session that simply expired, or a second person signing in on the same device, also clears
+ *     it. (The guard skips this while offline, because a page replayed from cache carries a STALE
+ *     `userId` baked in at save time — acting on that would delete the owner's own downloads.)
+ *
+ * Two independent sweeps, because either one alone has a hole:
+ *   • by MANIFEST — every `sensitive` page entry whose `savedByUserId` isn't the current user;
+ *   • by PATH — every cached page under `/admin` (see PRIVATE_PATH_PREFIXES), even if the manifest
+ *     lost its record of it, unless it's the current user's own described entry.
+ *
+ * Returns the paths it removed (the caller may want to tell the user).
+ */
+export async function purgeSensitivePages(currentUserId: string | null): Promise<string[]> {
+  if (unsupported()) return [];
+  const manifest = readManifest();
+  const doomed = new Set<string>();
+
+  const mine = (entry: OfflineEntry): boolean =>
+    isPageEntry(entry) && Boolean(currentUserId) && entry.savedByUserId === currentUserId;
+
+  for (const entry of Object.values(manifest)) {
+    if (isPageEntry(entry) && entry.sensitive && !mine(entry)) doomed.add(entry.pagePath);
+  }
+  // Path sweep: catches anything the manifest can no longer describe (cleared, quota-blocked,
+  // corrupted) — a cached /admin page with no record is exactly the case a manifest-only purge
+  // would strand on the device forever.
+  const cache = await caches.open(PAGES_CACHE);
+  for (const request of await cache.keys()) {
+    const { pathname } = new URL(request.url);
+    if (!isPrivatePath(pathname)) continue;
+    const entry = manifest[pathname];
+    if (entry && mine(entry)) continue;
+    doomed.add(pathname);
+  }
+
+  if (doomed.size === 0) return [];
+  await removeSavedPaths([...doomed]);
+  return [...doomed];
+}
+
 /** Remove a single lesson's page (HTML + RSC) and its media, unless another saved lesson still
  *  references that media. Thin wrapper over removeLessons. */
 export async function removeLesson(lesson: RemovableLesson): Promise<void> {
   await removeLessons([lesson]);
+}
+
+/** Remove saved pages by path — lessons, standalone pages, or orphans the manifest can't name.
+ *  The same machinery as removeLessons (which is media-aware); these just have no media. */
+export async function removeSavedPaths(pagePaths: string[]): Promise<void> {
+  await removeLessons(pagePaths.map((pagePath) => ({ pagePath })));
 }
 
 /**
@@ -317,9 +446,12 @@ export async function isCourseSaved(lessons: SavableLesson[]): Promise<boolean> 
 
 /** What is *actually* saved on this device, right now, with no network. */
 export type OfflineInventory = {
-  /** Saved AND described — the normal case; groupable by course → section → lesson. */
-  entries: OfflineEntry[];
-  /** Cached lesson pages the manifest can't name (manifest cleared, quota-blocked write, an
+  /** Saved LESSONS, described — the normal case; groupable by course → section → lesson. */
+  entries: OfflineLessonEntry[];
+  /** Saved standalone pages (today: `/admin/future`). Listed under their own heading on
+   *  /downloads rather than shoehorned into a course they don't belong to. */
+  pages: OfflinePageEntry[];
+  /** Cached pages the manifest can't name (manifest cleared, quota-blocked write, an
    *  older build that predates the manifest). Shown by path, and removable. */
   orphanPages: string[];
   /** Media files in MEDIA_CACHE no saved lesson references. Shown as removable "other media" so
@@ -338,28 +470,32 @@ export type OfflineInventory = {
  * Everything the Downloads screen and the per-lesson "saved" badges render comes from here.
  */
 export async function reconcileOffline(): Promise<OfflineInventory> {
-  if (unsupported()) return { entries: [], orphanPages: [], orphanMedia: [] };
+  if (unsupported()) return { entries: [], pages: [], orphanPages: [], orphanMedia: [] };
 
   const [cachedPaths, cachedMedia] = await Promise.all([listSavedPagePaths(), listSavedMediaUrls()]);
   const cached = new Set(cachedPaths);
   const manifest = readManifest();
 
-  const entries: OfflineEntry[] = [];
+  const live: OfflineEntry[] = [];
   let stale = false;
   for (const [path, entry] of Object.entries(manifest)) {
-    if (cached.has(path)) entries.push(entry);
+    if (cached.has(path)) live.push(entry);
     else stale = true;
   }
   // Persist the prune so the drift is corrected, not just hidden from this render.
-  if (stale) writeManifest(Object.fromEntries(entries.map((e) => [e.pagePath, e])));
+  if (stale) writeManifest(Object.fromEntries(live.map((e) => [e.pagePath, e])));
 
-  const described = new Set(entries.map((e) => e.pagePath));
+  const entries = live.filter(isLessonEntry);
+  const pages = live.filter(isPageEntry).sort((a, b) => a.pageTitle.localeCompare(b.pageTitle));
+
+  // BOTH kinds count as "described" — a saved page the manifest knows about is not an orphan.
+  const described = new Set(live.map((e) => e.pagePath));
   const orphanPages = cachedPaths.filter((p) => !described.has(p)).sort();
 
-  const referenced = new Set(entries.map((e) => e.mediaUrl).filter((u): u is string => Boolean(u)));
+  const referenced = referencedMedia(Object.fromEntries(live.map((e) => [e.pagePath, e])));
   const orphanMedia = cachedMedia.filter((u) => !referenced.has(u)).sort();
 
-  return { entries, orphanPages, orphanMedia };
+  return { entries, pages, orphanPages, orphanMedia };
 }
 
 /** Delete every media URL passed, unconditionally. Only used for the "other media" row on the

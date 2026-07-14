@@ -22,7 +22,7 @@ export function OfflineSavedLessons() {
         if (!cancelled) setInventory(next);
       })
       .catch(() => {
-        if (!cancelled) setInventory({ entries: [], orphanPages: [], orphanMedia: [] });
+        if (!cancelled) setInventory({ entries: [], pages: [], orphanPages: [], orphanMedia: [] });
       });
     return () => {
       cancelled = true;
@@ -32,8 +32,8 @@ export function OfflineSavedLessons() {
   // Loading (or Cache API unsupported): render nothing rather than a flash of "no lessons saved".
   if (inventory === null) return null;
 
-  const { entries, orphanPages } = inventory;
-  const total = entries.length + orphanPages.length;
+  const { entries, pages, orphanPages } = inventory;
+  const total = entries.length + pages.length + orphanPages.length;
 
   if (total === 0) {
     return (
@@ -60,6 +60,19 @@ export function OfflineSavedLessons() {
               {entry.lessonTitle}
             </a>
             <span className="block truncate text-xs text-neutral-500">{entry.courseTitle}</span>
+          </li>
+        ))}
+        {/* Saved standalone pages (today: the owner's /admin/future board). Listed here too — the
+            /offline fallback is where you land when the network is gone, so anything readable
+            offline has to be reachable from it. */}
+        {pages.map((page) => (
+          <li key={page.pagePath} className="truncate">
+            <a href={page.pagePath} className="underline underline-offset-2" style={{ color: "var(--accent, #111)" }}>
+              {page.pageTitle}
+            </a>
+            {page.pageSummary ? (
+              <span className="block truncate text-xs text-neutral-500">{page.pageSummary}</span>
+            ) : null}
           </li>
         ))}
         {orphanPages.map((path) => (
