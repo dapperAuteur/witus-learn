@@ -62,10 +62,27 @@
 //         (Wolfe v. North Carolina, 1960, dismissed the appeal without reaching the merits), and the
 //         course teaches the correct disposition.
 //
+//   * AMATEUR STATUS IS THE PRODUCT. The single most valuable, most current, least-known fact in
+//     this course is that the 2022 rewrite legalized sponsorship, endorsement, NIL, expenses, and
+//     free equipment for amateurs — so a high school golfer can sign a sponsorship deal today and
+//     still play college golf. Almost nobody is acting on it, because almost everybody (coaches and
+//     parents included) still believes the pre-2022 rules. Paid instruction is the one thing that is
+//     STILL restricted, and non-cash payment counts as payment; that trap gets its own warning.
+//
+//   * THE OTHER OPEN DOOR. The U.S. Open is genuinely open: any professional, or any amateur with a
+//     Handicap Index of 0.4 or better, may enter — and the USGA accepted a record 10,202 entries for
+//     the 2025 U.S. Open. A whole lesson is built on that number, deliberately placed after the
+//     history section, because the history section is about doors being held shut and this is the
+//     one that structurally is not. (The U.S. Women's Amateur handicap limit is NOT printed anywhere
+//     in this course: a figure is widely repeated online but could not be verified against the USGA's
+//     own conditions of entry, so the course tells students to go and read the conditions instead.)
+//
 // Cited APA 7 in-line with a `## Sources` bibliography per lesson (the BVC citation rule). No
-// fabricated people, quotes, or statistics. Six sections, each ending in a quiz whose bank is 15
-// questions deep so the serving layer's 10-question cap actually rotates a different subset each
-// attempt. Every quiz question sets `sourceLessonSlug`. Self-checks are `:::reveal` (answer hidden
+// fabricated people, quotes, or statistics. SIX SECTIONS — How to Play · The Rules · Strategy ·
+// History · Tours & Leagues · Opportunities — each ending in a quiz whose bank is 15 questions deep,
+// so the serving layer's 10-question cap actually rotates a different subset each attempt (a bank of
+// 10 or fewer would rotate nothing). 42 lessons: 6 quizzes, 3 fill-in exercises, 33 text lessons.
+// Every quiz question sets `sourceLessonSlug`. Self-checks are single-line `:::reveal` (answer hidden
 // until clicked), never printed in prose under the question. Audience: high school students.
 
 import type { AuthoredCourse } from "./authored-course";
@@ -605,7 +622,7 @@ They write **one shared code**. The Rules of Golf you play by at your local muni
 
 All three changed in **2019**. All three are still argued about on golf courses every weekend.
 
-**How rules are cited.** The format is `Rule 4.1b(1)`: rule number, then a letter, then a parenthesized numeral. When you want to settle an argument, that citation is how you find the exact text in seconds.
+**How rules are cited.** The format is \`Rule 4.1b(1)\`: rule number, then a letter, then a parenthesized numeral. When you want to settle an argument, that citation is how you find the exact text in seconds.
 
 **How the Rules expect you to behave.** Rule 1.2a says all players are expected to play "in the spirit of the game" by "acting with integrity, for example, by following the Rules, applying all penalties, and being honest in all aspects of play" (R&A, 2023). Golf is the only major sport where **players routinely call penalties on themselves that no official saw**. That norm is the sport's best feature, and it is worth protecting.
 
@@ -2516,6 +2533,625 @@ That third question is the one this course keeps asking. **You would find out th
             explanation:
               "A LIV player could be among the best alive, earn a fortune, and still slide down a ranking that decided whether he could play at Augusta.",
             sourceLessonSlug: "golf-liv-and-2026",
+          },
+        ],
+      },
+    },
+
+    // ── Section 6: Opportunities ──────────────────────────────────────────
+    {
+      slug: "golf-amateur-status",
+      title: "36 · Amateur status: the five ways to lose it",
+      section: "Opportunities",
+      recallContent: [
+        {
+          prompt: "Did the PGA TOUR and PIF merge in June 2023?",
+          answer:
+            "No. They announced a framework agreement — an agreement to try to reach an agreement — which was never consummated. Men's professional golf is still not reunified.",
+        },
+        {
+          prompt: "Why was the world ranking the real battleground in the LIV dispute?",
+          answer:
+            "Because it decides entry to the majors, which are run by neither tour. The fight was about access to the four tournaments neither side controls.",
+        },
+      ],
+      body: `⚠️ **This is the most out-of-date subject in golf, and getting it wrong can cost a teenager a college career.** The **Rules of Amateur Status were substantially rewritten effective 1 January 2022**, and the internet is still full of the old ones. **Everything below is the current rule.**
+
+**Why you should care.** If you want to play **college golf**, you generally need to be an **amateur**. Amateur status is not a trophy; it is **eligibility**. Lose it by accident at 16 and you have damaged something real.
+
+**There are FIVE ways to lose amateur status** (USGA & R&A, 2022). Most write-ups list three. Here are all five:
+
+1. **Accept a prize you are not allowed to accept** (see the money rules below).
+2. **Play in a competition as a professional.**
+3. **Accept payment for giving instruction** that the Rules disallow.
+4. **Be employed as a club professional or a driving-range professional.**
+5. **Hold membership of an association for professional golfers.**
+
+**Look closely at #2, because it contains a trap and a gift.**
+
+> **Being a MEMBER of a professional tour is allowed. It is PLAYING in a competition as a professional that ends your amateur status.**
+
+The Rules draw the line at the act, not the affiliation. This surprises nearly everybody, and it is exactly the kind of distinction that gets misreported by people who "know" the rules from ten years ago.
+
+---
+
+**The money rules. Learn these two sentences exactly.**
+
+| Situation | Can an amateur take the prize money? |
+| --- | --- |
+| A **scratch** competition | **Yes — up to US$1,000** per competition |
+| A **handicap** competition | **NO. Not one dollar. Ever.** |
+
+Say that again, because it is the one people trip over: **in a handicap competition an amateur may not accept prize money at all.** Not $50. Not a $20 gift card that is really cash. **Zero.** The logic is straightforward once you see it — a handicap event lets a weak player win, so paying cash for it would turn handicaps into a business.
+
+---
+
+**🟢 Now the good news, and it is genuinely big news for a high-school golfer.**
+
+The 2022 rewrite **legalized nearly everything that used to end careers by accident.** All of the following are **now allowed** for an amateur:
+
+- ✅ **Sponsorship**
+- ✅ **Endorsement deals**
+- ✅ **NIL** (name, image, and likeness) deals
+- ✅ **Expenses** — someone can pay for your travel to a tournament
+- ✅ **Free equipment** — a manufacturer can put clubs in your bag
+
+**Read that list again as a 15-year-old golfer.** A local car dealership can sponsor you. A brand can pay you to post about their gear. A club maker can give you a free set. **You can be paid, and remain an amateur, and go and play college golf.** For most of golf's history this was unthinkable, and a great many people still believe it is.
+
+**🔴 And the one thing the 2022 rewrite did NOT liberalize: PAID INSTRUCTION.**
+
+Teaching golf for money is **still restricted**. This is the single most common way a young golfer destroys their own eligibility, precisely *because* they assume the general loosening covered it. **It did not.**
+
+⚠️ And note the sting in the tail: **non-cash compensation counts as payment.** If the range lets you hit free balls in exchange for helping with junior lessons, **that is payment.** No money changed hands and you have still been paid. Nobody thinks of it that way, which is why it catches people.
+
+**So: want to teach golf and stay an amateur? Volunteer. Take nothing — not cash, not free range time, not a discount. The moment you receive value in exchange, you have a problem.**
+
+---
+
+**Reinstatement.** If you do turn pro and want to come back, you can apply to be reinstated as an amateur. **Six months is a recommended minimum waiting period**, and it is **longer for players with a substantial professional record.** There is no single fixed number of years, and anyone who quotes you one is guessing.
+
+**⚠️ The NCAA is a SEPARATE rulebook.** College golf eligibility is governed by the **NCAA**, not by the USGA. The two are different, and **the binding constraint on you is whichever is STRICTER.** Satisfying the Rules of Amateur Status does **not** automatically make you NCAA-eligible.
+
+College athletics is also in genuine flux right now: following the *House* settlement, scholarship limits at opt-in schools have been converted into **roster limits** (for golf, currently 9), and **this is actively being litigated.** So learn the *concept* — **there is a cap, and it is small, and it moves** — and then **check the current number with the actual coach.** Do not trust a number you read in a course, including this one.
+
+:::reveal Can a high-school amateur golfer accept a sponsorship deal, and what is the one thing the 2022 rewrite did NOT allow? ||| Yes — sponsorship, endorsement, NIL, expenses, and free equipment are ALL now allowed for an amateur. The one thing the 2022 rewrite did NOT liberalize is PAID INSTRUCTION: teaching golf for money is still restricted, and non-cash compensation (like free range balls in exchange for helping with lessons) counts as payment. That is the commonest way a young golfer accidentally destroys their own eligibility.
+
+## Sources
+- USGA & R&A. (2022). *Rules of Amateur Status*. https://www.usga.org/amateur-status.html
+- R&A. (2022). *Rules of Amateur Status*. https://www.randa.org/en/rules-of-amateur-status
+- NCAA. (n.d.). *Amateurism and eligibility*. https://www.ncaa.org/sports/2014/10/6/amateurism.aspx`,
+    },
+    {
+      slug: "golf-the-us-open-is-open",
+      title: "37 · The U.S. Open is actually open. To you.",
+      section: "Opportunities",
+      recallContent: [
+        {
+          prompt: "How much prize money may an amateur accept in a HANDICAP competition?",
+          answer:
+            "None at all. Not one dollar. In a SCRATCH competition an amateur may accept up to US$1,000 per competition.",
+        },
+        {
+          prompt: "Which rulebook actually governs your college golf eligibility?",
+          answer:
+            "The NCAA's — a separate rulebook from the USGA's Rules of Amateur Status. The binding constraint is whichever is STRICTER.",
+        },
+      ],
+      body: `**Most sports are closed. You cannot enter the Super Bowl. You cannot enter the NBA Finals. There is no form.**
+
+**Golf is different, and almost nobody realizes how different.**
+
+> ## The U.S. Open — a major championship — is open to ANY professional, and to ANY amateur with a **Handicap Index of 0.4 or better**.
+>
+> **That is the entire entry requirement. There is a form. There is a fee. You fill it in.**
+
+Nobody has to invite you. No scout has to find you. No agent has to call. **You need a handicap and an entry form**, and then you have to go and shoot the scores.
+
+**And people do it. The USGA accepted a record 10,202 entries for the 2025 U.S. Open** (USGA, 2025).
+
+Sit with that number. **Over ten thousand people entered a major championship** — for **156 spots** in the field. They were not all delusional. Every year, **qualifiers make it through**, and some of them are club professionals, mini-tour players, and amateurs nobody had heard of on Monday.
+
+**How qualifying actually works — two stages:**
+
+| Stage | Format | Roughly where |
+| --- | --- | --- |
+| **Local Qualifying** | **18 holes** | About **109 sites** across the country |
+| **Final Qualifying** | **36 holes in ONE day** | About **13 sites** |
+
+**Read that second row again. Thirty-six holes. In a single day.** It is known in golf as **"Golf's Longest Day,"** and it is one of the most brutal tests in sport: two full rounds, walking, with a place in a major on the line and no second chance. **That is the door.** It is narrow, it is exhausting, and — **crucially — it is not locked.**
+
+---
+
+**The handicap numbers, precisely, because they get misquoted constantly:**
+
+| Championship | Handicap Index limit |
+| --- | --- |
+| **U.S. Open** | **0.4** |
+| **U.S. Amateur** | **0.4** |
+| **U.S. Mid-Amateur** | **2.4** — **and you must be 25 or older** |
+
+⚠️ **The commonest error you will meet is people quoting 2.4 for the U.S. Amateur.** That is the **Mid-Amateur** number, and the Mid-Am also has an **age requirement of 25+**, so it is not even available to a high-school player. **Get the number right: 0.4.**
+
+*(This course does not print a handicap limit for the U.S. Women's Amateur. A figure is widely repeated online, but it could not be verified against the USGA's own published conditions — so rather than pass on a number that might be wrong, **go and read the conditions of entry for the year you intend to play**. Which is what you should do for every championship anyway, because these limits are set annually.)*
+
+---
+
+**And there is a second open door, every week: the Monday qualifier.**
+
+Several **PGA TOUR** events run an **open 18-hole qualifier on the Monday of tournament week**, typically with **four spots** in that week's field. Anyone eligible can enter. **You shoot the number, you tee it up on Thursday against the best players in the world.** Players have made their entire careers out of a Monday qualifier — this is a real, used, documented path, not a theoretical one.
+
+---
+
+**Why this lesson exists.**
+
+The history section of this course was, in large part, about **doors being held shut** — by a membership clause, by a leased "private club," by an invitation nobody sent. **This lesson is the other side of that.**
+
+**Golf's flagship national championship has, structurally, the most open front door in American sport.** You do not need permission, a scholarship, a scout, or a connection. **You need a Handicap Index of 0.4 and the entry fee.**
+
+**That number is the whole thing.** It is astonishingly hard to earn — 0.4 means you are effectively a scratch golfer, and you should not pretend otherwise. **But it is a number, and a number is a thing you can go and work on tomorrow.** Nothing about your name, your school, your money, or your zip code stands between you and the entry form.
+
+**Ten thousand two hundred and two people filled it in last year. There is nothing stopping you being 10,203.**
+
+:::reveal What are the entry requirements for the U.S. Open, and how many entries did the USGA accept in 2025? ||| It is open to ANY professional, or any amateur with a Handicap Index not exceeding 0.4 — that is the whole requirement, and there is a form. The USGA accepted a record 10,202 entries for the 2025 U.S. Open, competing for 156 spots. Qualifying runs in two stages: 18-hole Local Qualifying at about 109 sites, then Final Qualifying — 36 holes in ONE day, "Golf's Longest Day" — at about 13 sites.
+
+## Sources
+- USGA. (2025). *U.S. Open championship entries*. https://www.usga.org/usopen.html
+- USGA. (n.d.). *U.S. Open qualifying*. https://www.usga.org/usopen/qualifying.html
+- USGA. (n.d.). *U.S. Amateur*. https://www.usga.org/usamateur.html
+- USGA. (n.d.). *U.S. Mid-Amateur*. https://www.usga.org/mid-amateur.html`,
+    },
+    {
+      slug: "golf-the-ladders",
+      title: "38 · The ladders: how a player actually turns pro",
+      section: "Opportunities",
+      recallContent: [
+        {
+          prompt: "What Handicap Index do you need to enter the U.S. Open or the U.S. Amateur?",
+          answer:
+            "0.4 or better. (2.4 is the U.S. MID-Amateur, which also requires you to be 25 or older — quoting 2.4 for the U.S. Amateur is the commonest error.)",
+        },
+        {
+          prompt: "What is \"Golf's Longest Day\"?",
+          answer:
+            "Final Qualifying for the U.S. Open: 36 holes in a single day, at about 13 sites, with a place in a major on the line.",
+        },
+      ],
+      body: `Nobody is drafted in golf. **There is no draft.** So how does a player actually get from a high-school team to a tour card? Through a **ladder**, and the rungs are public, numbered, and identical for everyone.
+
+**The men's ladder:**
+
+| Rung | What it is | How you get through |
+| --- | --- | --- |
+| **College golf** | NCAA competition | Recruiting, walk-on tryouts |
+| **PGA TOUR University** | Ranks graduating college seniors | Top finishers earn status directly, **no Q-School required** |
+| **Q-School** | The qualifying tournament | **Top 5** at Final Stage earn PGA TOUR cards |
+| **Korn Ferry Tour** | The official feeder tour | **20 PGA TOUR cards per season** |
+| **PGA TOUR** | The destination | — |
+| **Monday qualifiers** | A side door, every week | ~**4 spots** per event, open entry |
+
+**The women's ladder:**
+
+| Rung | What it is | How you get through |
+| --- | --- | --- |
+| **College golf** | NCAA competition | Recruiting, walk-on |
+| **Epson Tour** | The LPGA's official feeder tour | **Top 15** earn **LPGA cards** |
+| **LPGA Q-Series** | The qualifying series | **Top 25 and ties** earn LPGA cards |
+| **LPGA Tour** | The destination | — |
+
+**And the rung nobody tells teenagers about: PGA TOUR Champions, for players aged 50 and over.** Golf is one of the very few sports with a **second professional career** waiting on the other side of middle age. Players who never made it at 30 have made a genuine living at 52. **In golf, "too old" arrives much later than you have been led to believe — and then it un-arrives.**
+
+---
+
+**Now look at the numbers honestly, because this course will not lie to you.**
+
+**20 Korn Ferry cards a season. Top 5 at Q-School.** Those are the real widths of the door. Thousands of excellent players — players far better than anyone at your school — are competing for a couple of dozen places a year. **Tour golf is a lottery that you can improve your odds at, but it remains a lottery.**
+
+**Three things follow from that, and they are the real content of this lesson:**
+
+**1. The ladder is public, which is rarer than you think.** Compare it to the sports where a scout has to notice you. Here, **nobody's opinion of you matters.** There is a leaderboard. You shoot the scores or you do not. For a kid from a school nobody recruits at, from a family with no connections, **a system that ignores everything except your score is the fairest deal on offer anywhere in sport.** Golf's history, as you now know, was viciously exclusionary — and the *scoring system*, at least, never was. **A number cannot tell what you look like.**
+
+**2. Do not bet your whole life on the top rung.** Every rung of that ladder passes through **college golf**, and college golf comes with **a degree**. Chase the tour with everything you have — **and finish the degree**, because the same sport that offers you a lottery ticket also offers you 30,000 stable jobs (Lesson 39), and the ladder to *those* runs through exactly the same place.
+
+**3. The odds get much better when you widen the definition of "making it."** "Playing on the PGA TOUR" is a lottery. **"Earning a living in golf" is a career with an application process.** Those are completely different propositions and people conflate them constantly — usually to their own cost, and usually at about 22.
+
+:::reveal How many PGA TOUR cards does the Korn Ferry Tour award per season, and how many players earn cards from Q-School Final Stage? ||| Twenty Korn Ferry cards per season, and the top 5 at Q-School Final Stage. Those are the real widths of the door — which is why the lesson is to chase it AND finish the degree. On the women's side: the top 15 on the Epson Tour and the top 25 and ties at LPGA Q-Series earn LPGA cards.
+
+## Sources
+- PGA TOUR. (n.d.). *Korn Ferry Tour*. https://www.pgatour.com/korn-ferry-tour
+- PGA TOUR. (n.d.). *PGA TOUR University*. https://www.pgatour.com/university
+- PGA TOUR. (n.d.). *PGA TOUR Champions*. https://www.pgatour.com/champions
+- LPGA. (n.d.). *Epson Tour*. https://www.epsontour.com/
+- LPGA. (n.d.). *Q-Series*. https://www.lpga.com/qualifying`,
+    },
+    {
+      slug: "golf-jobs-in-golf",
+      title: "39 · The 30,000 jobs nobody televises",
+      section: "Opportunities",
+      recallContent: [
+        {
+          prompt: "How does golf differ from sports where a scout has to notice you?",
+          answer:
+            "There is no draft and no scout. There is a leaderboard and a public ladder. Nobody's opinion of you matters — you shoot the scores or you do not. A number cannot tell what you look like.",
+        },
+        {
+          prompt: "What is PGA TOUR Champions, and why does it matter?",
+          answer:
+            "A tour for players aged 50 and over. Golf is one of very few sports offering a second professional career on the far side of middle age.",
+        },
+      ],
+      body: `**Start with the size of the thing, because most people badly underestimate it.**
+
+| The golf economy (year-end 2025) | |
+| --- | --- |
+| Americans who play **on a course** | **29.1 million** |
+| Total golfers **including off-course** (Topgolf, simulators, ranges) | **48.1 million** |
+| **Golf courses** in the US | **~16,000**, at about **14,000 facilities** |
+| Share of US facilities **open to the public** | **~75%** |
+
+*(Use the right number for the right claim. **29.1 million** is the figure for "plays golf on a golf course." The 48.1M figure includes everyone who has swung a club at a Topgolf, and quoting it as "golfers" is how statistics get abused.)*
+
+**Now do the arithmetic that changes your life.** Roughly **fourteen thousand facilities**, each one of which is **a small business** that needs to be run, maintained, staffed, marketed, and supplied. That is **an industry**, not a game — and about **three-quarters of it is open to the public**, which means it is open to *you*.
+
+**And every single one of those businesses has jobs in it that have nothing to do with how far you hit a driver.**
+
+| Job | What it actually is | How you get in |
+| --- | --- | --- |
+| **PGA Professional** | Teaching, running a facility, managing golf operations. **The 30,000-member career** from Lesson 31. | The PGA of America's education/certification program |
+| **Teaching professional / coach** | Lessons, junior programs, academies | Certification, apprenticeship |
+| **Club fitter** | Matching clubs to swings. Technical, growing, and well paid. | Manufacturer training, retail apprenticeship |
+| **Superintendent / turf management** | Growing grass at a professional standard. **This is agronomy — a science degree.** | Turfgrass programs (many universities offer one) |
+| **General manager / director of golf** | Running the business | Hospitality/business route |
+| **Caddie** | The classic entry point (see below) | Show up |
+| **Rules official** | Administering competitions | Rules certification through the USGA/R&A |
+| **Golf media** | Writing, video, social, broadcast, analytics | Portfolio |
+| **Equipment / retail** | Sales, fitting, e-commerce | Retail entry |
+| **Course architecture** | Designing courses | Design/landscape architecture, apprenticeship |
+
+**Two of those deserve a closer look, because they are the ones teenagers can start immediately.**
+
+**Caddying is the single best first job in golf, and it is wildly undervalued.**
+- **You get paid to be on a golf course.** Frequently in cash, frequently well, and often the same day.
+- **You learn strategy from the inside** — how good players actually think, which is Section 3 delivered live, for free, while being paid.
+- **You meet adults.** A caddie spends four uninterrupted hours walking beside business owners, lawyers, contractors, and hiring managers, having an actual conversation. **There is no other job available to a 15-year-old that puts you in that room.** Ask any adult how they got their break and a startling number will say "someone I met."
+- **Caddie scholarship programs exist**, and they are real, substantial, and chronically under-applied-for.
+
+**Turf management is the job nobody thinks of and the industry is always short of.** Somebody has to keep 16,000 courses alive, and they are **agronomists** — soil scientists with a payroll. If you like biology or chemistry and you like being outdoors, **there is a degree, and there is a hiring shortage, and there is no lottery.**
+
+---
+
+**And if the money is the barrier: First Tee.**
+
+**First Tee was founded in 1997** by five organizations that between them own most of American golf: **the LPGA, the Masters Tournament (Augusta National), the PGA of America, the PGA TOUR, and the USGA**, under the leadership of **Tim Finchem** (First Tee, n.d.).
+
+Its purpose is to get golf to young people who otherwise could not access it — coaching, clubs, and course access, built around a youth-development curriculum. **If cost is what is standing between you and this sport, this is the organization built specifically to remove that barrier, and it was built by the people who own the sport.**
+
+**Notice the irony, and do not let it be lost on you.** The **Masters Tournament** — Augusta National, which did not invite a Black player until 1975 and did not admit a Black member until 1990 — is a **founding partner of the program whose entire job is to hand golf to kids who were locked out of it.** History does not resolve into a clean story. **Take the access. Then remember exactly what it cost to pry the door open, because you learned that in Section 4.**
+
+:::reveal How many Americans play golf on a course, roughly how many facilities are there, and what makes caddying the best first job in golf? ||| 29.1 million Americans play on a course (48.1 million including off-course venues like Topgolf), across about 16,000 courses at ~14,000 facilities, roughly 75% of which are open to the public. Caddying is the best first job because you are paid to be on a course, you learn strategy from the inside for free, caddie scholarship programs exist — and you spend four uninterrupted hours walking beside business owners and hiring managers, which no other job available to a 15-year-old does.
+
+## Sources
+- National Golf Foundation. (2025). *Golf participation in the U.S.* https://www.ngf.org/golf-industry-research/
+- First Tee. (n.d.). *Our history*. https://firsttee.org/about/
+- PGA of America. (n.d.). *Become a PGA Professional*. https://www.pga.org/education/
+- Golf Course Superintendents Association of America. (n.d.). *Careers in golf course management*. https://www.gcsaa.org/`,
+    },
+    {
+      slug: "golf-entrepreneurs",
+      title: "40 · Build something: the entrepreneur's golf course",
+      section: "Opportunities",
+      recallContent: [
+        {
+          prompt: "Which five organizations founded First Tee in 1997?",
+          answer:
+            "The LPGA, the Masters Tournament (Augusta National), the PGA of America, the PGA TOUR, and the USGA — under Tim Finchem.",
+        },
+        {
+          prompt: "Why is turf management a job worth knowing about?",
+          answer:
+            "Somebody has to keep 16,000 courses alive, and they are agronomists — soil scientists with a payroll. There is a degree, a hiring shortage, and no lottery.",
+        },
+      ],
+      body: `**Every one of the barriers described in this course is also a business.** That is not a cynical observation; it is how most useful businesses start. **Somebody could not get something they needed, so they built it.**
+
+**Bill Powell is the case study, and he is in Section 4 for a reason.** Barred from playing on other people's golf courses, he **built his own — Clearview.** He did not campaign, or wait, or accept it. **He acquired land and constructed a golf course.** His daughter **Renee Powell** went on to the LPGA and, in 1996, became the first African American woman to become a PGA member. **That is what building the thing you were denied looks like across two generations.**
+
+You do not need to build a golf course. But you should learn the move.
+
+---
+
+**🟢 Start here: the 2022 rule change is a live, current, unexploited opportunity for you.**
+
+Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement, NIL, expenses, free equipment — all legal for an amateur since 1 January 2022.**
+
+**Almost no high-school golfer is acting on this**, because most of them (and most of their coaches, and most of their parents) still believe the old rules. **You now know something most of your competition does not.** Concretely, and starting this month:
+
+- **Approach a local business** — a car dealership, a restaurant, an insurance agency, an orthodontist. They sponsor the baseball team already. **Offer them a season: your name, your results, your social posts, a logo on your bag.** Ask for equipment, tournament entry fees, and travel costs.
+- **Build the thing a sponsor is actually buying**: an audience. Post your rounds. Film your practice. **Teach what you are learning as you learn it** — a "learning to break 90" account is more compelling than a highlight reel, and it is honest.
+- **Keep a one-page record**: your scores, your Handicap Index, your events, your following. **That is a pitch deck**, and no other 16-year-old golfer in your county has one.
+- ⚠️ **And stay inside the line: do NOT take money for instruction, and do NOT take free range balls in exchange for helping with lessons.** That is the one door that is still closed, and non-cash payment is still payment.
+
+---
+
+**Businesses a young person can genuinely start in golf:**
+
+| Business | Why it works |
+| --- | --- |
+| **Ball recovery and resale** | Golfers lose millions of balls into ponds and woods. **Collect, clean, sort, resell.** Near-zero startup cost. Ask permission first. |
+| **Club cleaning / bag service** | A simple, repeatable service at any club, sold to members who value time. |
+| **Junior clinics** ⚠️ | Real demand — **but note the amateur-status trap**: charging for instruction ends your amateur status. **Run these AFTER you have decided about college, or run them as a volunteer.** |
+| **Club fitting / repair** | Regripping is learnable in an afternoon, needs almost no capital, and every golfer needs it. Grows into a real trade. |
+| **Golf media** | Nobody covers your local junior scene. **Cover it.** Publishing is free and a portfolio is the qualification. |
+| **Simulator / off-course golf** | **48.1M golfers vs 29.1M on-course** — the gap between those numbers *is* the growth market. |
+| **Tournament operations** | Charity scrambles need people who can run them. Learn it once, get hired forever. |
+| **Course maintenance crew** | Hiring now, teaches the industry from the ground up, and connects directly to turf management. |
+
+---
+
+**The one that is hiding in plain sight.** Look at those two participation numbers one more time: **48.1 million total golfers, 29.1 million on a course.** **Nineteen million people are engaging with golf without going near a golf course.** They are at Topgolf, in simulators, on ranges.
+
+**That gap is the single biggest, clearest, most legible opportunity in the sport**, and it exists because of everything you read in Section 4 — golf spent a century building an industry around **exclusive, expensive, hard-to-access places**, and a whole generation now wants the game **without the clubhouse.** The businesses that meet those 19 million people where they actually are will be the ones that matter.
+
+**You have read this course's history section. You know precisely why that clubhouse feels the way it feels, and who it was designed to keep out.** That makes you unusually well qualified to build the version that does not.
+
+:::reveal What is the current, under-exploited opportunity the 2022 amateur-status rewrite created for a high-school golfer, and what is the one line you must not cross? ||| Sponsorship, endorsement, NIL, expenses, and free equipment are all legal for an amateur now — so you can approach local businesses for a sponsorship deal covering equipment, entry fees, and travel, and almost no high-school golfer is doing it because most still believe the old rules. The line you must not cross: do NOT accept payment for instruction, including non-cash payment like free range balls for helping with lessons.
+
+## Sources
+- USGA & R&A. (2022). *Rules of Amateur Status*. https://www.usga.org/amateur-status.html
+- National Golf Foundation. (2025). *Golf participation in the U.S.* https://www.ngf.org/golf-industry-research/
+- First Tee. (n.d.). *Our history*. https://firsttee.org/about/`,
+    },
+    {
+      slug: "golf-opportunity-drill",
+      title: "41 · Practice: your own next step",
+      section: "Opportunities",
+      recallContent: [
+        {
+          prompt: "What does the gap between 48.1 million and 29.1 million golfers represent?",
+          answer:
+            "About 19 million people engaging with golf without going near a golf course — at Topgolf, in simulators, on ranges. It is the sport's clearest growth market.",
+        },
+        {
+          prompt: "Who was Bill Powell?",
+          answer:
+            "Barred from playing on other people's courses, he built his own — Clearview Golf Club. His daughter Renee Powell reached the LPGA and became the first African American woman PGA member in 1996.",
+        },
+      ],
+      body: `The whole point of this section is that golf's doors have numbers on them, and a number is a thing you can work toward. Fill in each blank. **These are the specific facts that turn "I like golf" into a plan.**`,
+      exercise: {
+        instructions:
+          "Fill in each blank. Every answer here is a real, checkable number or name — the raw material of an actual next step.",
+        items: [
+          {
+            prompt: "There are ___ ways to lose your amateur status under the current Rules.",
+            answer: "5",
+            accept: ["five"],
+            explanation:
+              "Accept a disallowed prize; play in a competition as a professional; accept payment for disallowed instruction; be employed as a club/range pro; hold membership of an association for professional golfers. Most write-ups list only three.",
+          },
+          {
+            prompt: "The one thing the 2022 amateur-status rewrite did NOT liberalize is paid ___.",
+            answer: "instruction",
+            accept: ["teaching", "instruction", "coaching"],
+            explanation:
+              "And non-cash compensation, like free range balls for helping with lessons, still counts as payment. This is the commonest way a young golfer destroys their eligibility.",
+          },
+          {
+            prompt: "In a SCRATCH competition an amateur may accept up to US$___ in prize money.",
+            answer: "1000",
+            accept: ["1,000", "$1000", "$1,000", "1000 dollars", "one thousand"],
+            explanation: "And in a HANDICAP competition, an amateur may not accept prize money at all — not one dollar.",
+          },
+          {
+            prompt: "To enter the U.S. Open as an amateur you need a Handicap Index of ___ or better.",
+            answer: "0.4",
+            accept: ["0.4", ".4"],
+            explanation:
+              "The same limit as the U.S. Amateur. (2.4 is the U.S. MID-Amateur, which also requires you to be 25 or older.)",
+          },
+          {
+            prompt: "The USGA accepted a record ___ entries for the 2025 U.S. Open.",
+            answer: "10202",
+            accept: ["10,202", "10202"],
+            explanation: "Over ten thousand people, competing for 156 spots. There is a form, and you can fill it in.",
+          },
+          {
+            prompt: "U.S. Open Final Qualifying is ___ holes in a single day, known as Golf's Longest Day.",
+            answer: "36",
+            accept: ["thirty-six", "36 holes"],
+            explanation: "Two full rounds, walking, with a place in a major on the line and no second chance.",
+          },
+          {
+            prompt: "The Korn Ferry Tour awards ___ PGA TOUR cards per season.",
+            answer: "20",
+            accept: ["twenty"],
+            explanation: "And the top 5 at Q-School Final Stage earn cards. Those are the real widths of the door.",
+          },
+          {
+            prompt: "The PGA of America has more than ___ thousand members, most of whom are working club and teaching pros, not tournament players.",
+            answer: "30",
+            accept: ["thirty", "30,000", "30000"],
+            explanation:
+              "This is the realistic, salaried, achievable career in golf — and the one nobody televises.",
+          },
+          {
+            prompt: "About ___ million Americans play golf on an actual golf course.",
+            answer: "29.1",
+            accept: ["29.1", "29", "29.1 million"],
+            explanation:
+              "48.1 million including off-course venues like Topgolf and simulators. Use the right number for the right claim.",
+          },
+          {
+            prompt: "The program founded in 1997 by the LPGA, the Masters, the PGA of America, the PGA TOUR and the USGA to give young people access to golf is called ___ Tee.",
+            answer: "first",
+            accept: ["first", "first tee"],
+            explanation:
+              "If cost is the barrier between you and this sport, First Tee is the organization built specifically to remove it.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "golf-opportunities-quiz",
+      title: "42 · Check your understanding: opportunities",
+      section: "Opportunities",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "How many ways are there to lose your amateur status under the current Rules?",
+            options: ["Two", "Three", "Five", "Seven"],
+            correctIndex: 2,
+            explanation:
+              "Five — most write-ups list only three. Accept a disallowed prize; play in a competition as a professional; accept payment for disallowed instruction; be employed as a club/range pro; hold membership of an association for professional golfers.",
+            sourceLessonSlug: "golf-amateur-status",
+          },
+          {
+            prompt: "Which of these is NOT allowed for an amateur under the 2022 Rules?",
+            options: [
+              "Signing a sponsorship or NIL deal",
+              "Accepting free equipment from a manufacturer",
+              "Accepting payment for giving golf instruction",
+              "Having travel expenses paid",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Paid instruction is the ONE thing the 2022 rewrite did not liberalize — and non-cash payment (free range balls for helping with lessons) still counts as payment.",
+            sourceLessonSlug: "golf-amateur-status",
+          },
+          {
+            prompt: "How much prize money may an amateur accept in a HANDICAP competition?",
+            options: ["Up to $1,000", "Up to $500", "None at all", "Unlimited"],
+            correctIndex: 2,
+            explanation:
+              "Not one dollar. The $1,000 cap applies only in SCRATCH competitions. A handicap event lets a weak player win, so paying cash would turn handicaps into a business.",
+            sourceLessonSlug: "golf-amateur-status",
+          },
+          {
+            prompt: "Under the current Rules, being a MEMBER of a professional tour:",
+            options: [
+              "Immediately ends your amateur status",
+              "Is allowed — it is PLAYING in a competition as a professional that ends it",
+              "Is impossible for an amateur",
+              "Requires USGA permission",
+            ],
+            correctIndex: 1,
+            explanation: "The Rules draw the line at the act, not the affiliation. This surprises nearly everybody.",
+            sourceLessonSlug: "golf-amateur-status",
+          },
+          {
+            prompt: "Which rulebook actually governs your college golf eligibility?",
+            options: [
+              "The USGA's Rules of Amateur Status",
+              "The NCAA's — a separate rulebook; the binding constraint is whichever is stricter",
+              "The R&A's",
+              "The PGA TOUR's",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Satisfying the Rules of Amateur Status does NOT automatically make you NCAA-eligible. And college eligibility rules are currently being litigated, so check the current number with the actual coach.",
+            sourceLessonSlug: "golf-amateur-status",
+          },
+          {
+            prompt: "What is the entry requirement for an amateur to enter the U.S. Open?",
+            options: [
+              "An invitation from the USGA",
+              "A Handicap Index of 0.4 or better, plus the entry form and fee",
+              "A top-100 world ranking",
+              "A college golf scholarship",
+            ],
+            correctIndex: 1,
+            explanation:
+              "That is the entire requirement. Nobody has to invite you, no scout has to find you. Golf's flagship national championship has the most open front door in American sport.",
+            sourceLessonSlug: "golf-the-us-open-is-open",
+          },
+          {
+            prompt: "How many entries did the USGA accept for the 2025 U.S. Open?",
+            options: ["About 500", "About 2,000", "A record 10,202", "About 40,000"],
+            correctIndex: 2,
+            explanation: "Over ten thousand people, competing for 156 spots in the field. Qualifiers make it through every year.",
+            sourceLessonSlug: "golf-the-us-open-is-open",
+          },
+          {
+            prompt: "What is \"Golf's Longest Day\"?",
+            options: [
+              "The 18-hole Local Qualifying round",
+              "U.S. Open Final Qualifying: 36 holes in a single day",
+              "The final round of the Masters",
+              "A 72-hole LIV event",
+            ],
+            correctIndex: 1,
+            explanation: "Two full rounds, walking, at about 13 sites, with a place in a major on the line and no second chance.",
+            sourceLessonSlug: "golf-the-us-open-is-open",
+          },
+          {
+            prompt: "A player quotes you 2.4 as the Handicap Index limit for the U.S. Amateur. Are they right?",
+            options: [
+              "Yes, 2.4 is correct",
+              "No — the U.S. Amateur limit is 0.4. 2.4 is the U.S. MID-Amateur, which also requires you to be 25 or older",
+              "No, there is no limit",
+              "Yes, but only for players under 18",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This is the commonest error you will meet, and the Mid-Am's age requirement means it is not even available to a high-school player.",
+            sourceLessonSlug: "golf-the-us-open-is-open",
+          },
+          {
+            prompt: "How many PGA TOUR cards does the Korn Ferry Tour award per season?",
+            options: ["5", "20", "50", "125"],
+            correctIndex: 1,
+            explanation:
+              "Twenty — and the top 5 at Q-School Final Stage. Thousands of excellent players compete for a couple of dozen places a year. Tour golf is a lottery you can improve your odds at.",
+            sourceLessonSlug: "golf-the-ladders",
+          },
+          {
+            prompt: "On the women's ladder, what does finishing in the top 15 on the Epson Tour earn you?",
+            options: ["A Korn Ferry card", "An LPGA card", "A Solheim Cup place", "Nothing automatic"],
+            correctIndex: 1,
+            explanation: "The Epson Tour is the LPGA's official feeder tour. LPGA Q-Series awards cards to the top 25 and ties.",
+            sourceLessonSlug: "golf-the-ladders",
+          },
+          {
+            prompt: "PGA TOUR Champions is for players aged:",
+            options: ["Under 25", "Over 40", "50 and over", "60 and over"],
+            correctIndex: 2,
+            explanation:
+              "Golf is one of very few sports offering a genuine second professional career on the far side of middle age.",
+            sourceLessonSlug: "golf-the-ladders",
+          },
+          {
+            prompt: "About how many Americans play golf ON A COURSE?",
+            options: ["10.5 million", "29.1 million", "48.1 million", "75 million"],
+            correctIndex: 1,
+            explanation:
+              "48.1 million is the total INCLUDING off-course venues like Topgolf and simulators. Quoting that as 'golfers' is how statistics get abused.",
+            sourceLessonSlug: "golf-jobs-in-golf",
+          },
+          {
+            prompt: "Which five organizations founded First Tee in 1997?",
+            options: [
+              "The World Golf Foundation alone",
+              "The LPGA, the Masters Tournament, the PGA of America, the PGA TOUR, and the USGA",
+              "The USGA and The R&A",
+              "LIV Golf and the PGA TOUR",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Founded under Tim Finchem. Note the irony: Augusta National, which did not invite a Black player until 1975, is a founding partner of the program built to hand golf to kids who were locked out of it.",
+            sourceLessonSlug: "golf-jobs-in-golf",
+          },
+          {
+            prompt: "What does the gap between 48.1 million and 29.1 million golfers represent?",
+            options: [
+              "A statistical error",
+              "About 19 million people engaging with golf without going near a golf course — the sport's clearest growth market",
+              "Players who quit the sport",
+              "Golfers who live outside the US",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They are at Topgolf, in simulators, on ranges — a generation that wants the game without the clubhouse. Having read Section 4, you know exactly why that clubhouse feels the way it does.",
+            sourceLessonSlug: "golf-entrepreneurs",
           },
         ],
       },
