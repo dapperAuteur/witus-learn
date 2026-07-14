@@ -1022,5 +1022,468 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
         ],
       },
     },
+
+    // ── Section 3: Strategy ───────────────────────────────────────────────
+    {
+      slug: "golf-course-management",
+      title: "16 · Course management: the free strokes",
+      section: "Strategy",
+      recallContent: [
+        {
+          prompt: "Which format makes a disaster hole simply score zero and let you move on?",
+          answer: "Stableford (Rule 21.1), which awards points per hole rather than counting every stroke.",
+        },
+        {
+          prompt: "What is the general penalty?",
+          answer: "Two strokes in stroke play, or loss of the hole in match play.",
+        },
+      ],
+      body: `Here is the least fair thing about golf: **you can lower your score without improving your swing at all.** Strategy is free. It costs nothing, it requires no talent, and almost nobody does it.
+
+Course management means choosing the shot that gives you the best *average* outcome, rather than the shot that gives you the best *possible* outcome. Those are different, and the gap between them is where amateurs bleed strokes.
+
+**Rule 1: play to your miss.** Every golfer has a shot shape they hit when things go wrong. If your bad shot curves right, then **aim down the left side and let the course be wide**. You do not have to fix your slice to score better with it. You have to stop pretending you do not have it. Aiming down the middle with a ball that curves right means half the fairway is unusable to you and you chose to ignore that.
+
+**Rule 2: aim at the fat part of the green, not the flag.** A flag tucked four paces from a bunker is bait. The middle of the green is almost always the correct target, because the middle is surrounded on all sides by more green. Professionals aim at the middle far more often than television makes it look. **You are not being timid. You are being paid in pars.**
+
+**Rule 3: take enough club.** Amateurs come up short of the green far more often than they fly it. Your "I hit my 7-iron 150" number is almost always your *best-ever* 7-iron, not your average one. Club up. The trouble on a golf hole is usually in front of the green, and being past the flag on the correct level is rarely punished.
+
+**Rule 4: the tee shot's job is to be findable.** A drive 220 yards in the fairway beats a drive 260 yards in the trees every single time, because the ball in the trees is often not a golf shot at all — it is a chip sideways. If a hole scares you, **hit a hybrid or an iron off the tee.** There is no rule requiring you to hit a driver, and nobody is checking.
+
+**Rule 5: when you are in trouble, get out. First try.** The single most expensive belief in amateur golf is that a miracle shot through a two-foot gap in the branches is a reasonable idea. It works maybe one time in ten. The other nine times it stays in the trees and you are still there, one stroke worse. **Take the wedge. Punch it back to the fairway. Play your next shot from the grass like a golfer.**
+
+**The math nobody tells beginners.** Suppose you are 180 yards out, behind a tree, with water in front of the green. The hero shot works 10% of the time for a 4, and the other 90% of the time it makes 7. Average: about 6.7. The boring chip-out makes a near-certain 5 or 6. Average: about 5.5. **The boring shot wins by more than a stroke, every time you face it, forever.** Golf rewards the player who is willing to be bored.
+
+:::reveal Why is aiming at the middle of the green usually better than aiming at the flag? ||| Because the middle of the green is surrounded on every side by more green, so your misses still finish on the putting surface. A tucked flag near a bunker punishes a small miss severely. Aiming at the fat part is not timid, it is how you collect pars.
+
+## Sources
+- R&A. (2023). *Rule 1: The game, player conduct and the Rules*. The Rules of Golf. https://www.randa.org/en/rog/the-rules-of-golf/rule-1
+- USGA. (n.d.). *Handicapping*. https://www.usga.org/handicapping.html`,
+    },
+    {
+      slug: "golf-reading-the-shot",
+      title: "17 · Reading the shot: lie, wind, slope, distance",
+      section: "Strategy",
+      recallContent: [
+        {
+          prompt: "What does \"play to your miss\" mean?",
+          answer:
+            "Aim so that your habitual bad shot still finishes in a playable place. If your ball curves right, aim down the left side. You do not have to fix the miss to score better with it.",
+        },
+        {
+          prompt: "You are behind a tree with a 10% chance of pulling off a hero shot. What should you do?",
+          answer:
+            "Chip out sideways to the fairway. The boring shot averages more than a full stroke better, because the hero shot fails nine times out of ten and leaves you still in trouble.",
+        },
+      ],
+      body: `Before you pick a club, you have four questions to answer. Good players run this checklist so fast it looks like instinct. It is not instinct. It is a checklist.
+
+**1. What is the lie?** The lie decides what is *possible*, so it comes first.
+
+| Lie | What it does to the shot |
+| --- | --- |
+| **Fairway** | Ball sits up. You can do anything. |
+| **Light rough** | Grass gets between clubface and ball, killing backspin. The ball comes out **hot and runs**. This is a "flier" — it goes *further* than normal, which is why it surprises people. |
+| **Deep rough** | The grass grabs the hosel and shuts the face. **Get out. That is the whole plan.** Take a lofted club and accept the yardage you lose. |
+| **Bare dirt / hardpan** | No cushion. Ball-first contact is essential; do not try to scoop. |
+| **Uphill lie** | Ball goes **higher and shorter**. Take more club. |
+| **Downhill lie** | Ball goes **lower and further**, and it is the hardest lie in golf to make solid contact from. |
+
+**2. What is the wind doing?** Not what it is doing on your face on the tee, which is often sheltered. Look at the **tops of the trees** and the flag on the green.
+
+- **Into the wind:** the wind exaggerates every bit of spin and curve you put on the ball. A little slice becomes a big one. The rule is **"when it's breezy, swing easy"** — a softer swing spins less and holds its line. Take two extra clubs and swing at 80%.
+- **Downwind:** the ball flies further but lands hot and does not stop. Downwind on a green is harder than it sounds.
+- **Crosswind:** you can either fight it or ride it. Riding it (aiming into the wind and letting it bring the ball back) is easier.
+
+**3. What is the slope?** On the green, the ball always breaks **away from the high ground and toward the low ground**. Read your putt from behind the ball, and then from the low side. Water runs downhill; so does your ball. If you can see where water would drain off this green, you can read the putt.
+
+**4. How far is it, really?** Distance to the **flag** is not the number you want. The number you want is distance to a **safe part of the green**. If the flag is at the back and there is a bunker at the front, the correct number is the one that carries the bunker and lands in the middle.
+
+**Yardage markers** are usually to the *middle* of the green, not the flag. Most courses mark 150 yards with a post or a plate. Know that before you trust a sprinkler head.
+
+**A note on rangefinders and phone apps.** A **distance-measuring device is allowed** by default under the Rules, though a Committee may adopt a Local Rule prohibiting them (Rule 4.3a(1); R&A, 2023). What is *not* allowed is using a device to measure **elevation change or wind**, or to give you club recommendations — that is where a legal device becomes an illegal one. Read the setting on your app before a competition, because the same app is legal in one mode and not in another.
+
+:::reveal Why does a ball out of light rough often fly FURTHER than one from the fairway, and what is the rule of thumb for playing into the wind? ||| Grass gets between the clubface and the ball and kills the backspin, so the ball comes out hot and runs. That is a "flier." Into the wind, "when it's breezy, swing easy" — a softer swing puts less spin on the ball, so the wind exaggerates the curve less. Take more club and swing at about 80%.
+
+## Sources
+- R&A. (2023). *Rule 4: The player's equipment*. The Rules of Golf. https://www.randa.org/en/rog/the-rules-of-golf/rule-4
+- R&A. (2023). *Rule 13: Putting greens*. The Rules of Golf. https://www.randa.org/en/rog/the-rules-of-golf/rule-13`,
+    },
+    {
+      slug: "golf-avoiding-the-big-number",
+      title: "18 · Avoiding the big number",
+      section: "Strategy",
+      recallContent: [
+        {
+          prompt: "Which lie is the hardest to make solid contact from, and what does it do to ball flight?",
+          answer:
+            "A downhill lie. The ball comes out lower and travels further, and solid contact is harder than from any other common lie.",
+        },
+        {
+          prompt: "Is a rangefinder legal, and what makes it illegal?",
+          answer:
+            "It is allowed by default (Rule 4.3a(1)), unless a Committee prohibits it by Local Rule. It becomes illegal if you use it to measure elevation change or wind, or to get club recommendations.",
+        },
+      ],
+      body: `**Your score is not ruined by the holes you play badly. It is ruined by the holes you play catastrophically.**
+
+Look at a beginner's scorecard. It is usually a run of 5s, 6s and 7s — which is fine, that is bogey-ish golf — punctuated by a 9 and an 11. Those two holes cost more than the other sixteen combined. **Strategy for a new golfer is mostly the art of not making a 9.**
+
+**Where big numbers come from.** Almost all of them come from exactly four places:
+
+1. **A ball out of bounds** (white stakes). Stroke and distance. This is the killer — one wild drive can be a 7 before you have made any other error.
+2. **Repeated attempts to escape trouble.** Three swings in the same bush.
+3. **Trying to carry water that you cannot actually carry.**
+4. **Short-siding yourself** — missing the green on the *same* side as the flag, leaving you no green to work with. Your chip has to be perfect. It usually is not.
+
+**The five habits that eliminate the big number:**
+
+- **Hit a provisional.** Every time you think it might be gone. It costs 30 seconds and saves a walk of shame and, often, two strokes of confusion (Rule 18.3; R&A, 2023).
+- **Take the unplayable.** One stroke, chosen by you, beats three swings in a bush (Rule 19; R&A, 2023).
+- **Never short-side yourself.** If the flag is on the right edge, **miss left.** Aim to miss on the side that leaves you plenty of green to land on. This single idea will save you more strokes than any swing change.
+- **Lay up to a number you like.** If you cannot reach the green, do not just hit it as far as possible and take whatever is left. Hit it to a distance you can actually hit a full wedge from. **A 100-yard shot you have practiced beats a 43-yard shot you have not.**
+- **Play the hole backwards.** Stand on the tee and ask: where do I want to hit my approach *from*? Then work back and pick a tee shot that puts you there. That is how good players think, and it costs nothing to copy.
+
+**"Bogey golf is excellent golf."** If you shoot bogey on every hole of a par-72 course, you shoot 90. That puts you comfortably better than most people who play this game. **Aim for bogey and pars will happen by accident.** Aiming for par on every hole and going for every flag is how you make 9s.
+
+**The scoring ladder — set a realistic target:**
+
+| Milestone | What it means |
+| --- | --- |
+| **Break 120** | You are playing golf and finishing rounds. |
+| **Break 100** | You have eliminated most of the disasters. This is the big one. |
+| **Break 90** | Bogey golf. Better than most golfers alive. |
+| **Break 80** | Serious player. |
+| **Par or better** | Scratch. A tiny fraction of golfers. |
+
+Breaking 100 is not a swing achievement. It is a **decision-making achievement**. Nearly everyone who breaks 100 for the first time does it by making fewer stupid choices, not by hitting the ball better.
+
+:::reveal What does it mean to "short-side" yourself, and what is the simple rule that prevents it? ||| Short-siding means missing the green on the same side the flag is on, so you have almost no green between your ball and the hole and your chip must be perfect. The rule: miss AWAY from the flag. If the flag is on the right edge, aim so that your miss goes left, where you have the whole green to work with.
+
+## Sources
+- R&A. (2023). *Rule 18: Stroke-and-distance relief; ball lost or out of bounds; provisional ball*. The Rules of Golf. https://www.randa.org/en/rog/the-rules-of-golf/rule-18
+- R&A. (2023). *Rule 19: Unplayable ball*. The Rules of Golf. https://www.randa.org/en/rog/the-rules-of-golf/rule-19`,
+    },
+    {
+      slug: "golf-handicap-system",
+      title: "19 · The World Handicap System",
+      section: "Strategy",
+      recallContent: [
+        {
+          prompt: "What are the four main sources of a big number on a hole?",
+          answer:
+            "A ball out of bounds (stroke and distance), repeated attempts to escape trouble, trying to carry water you cannot carry, and short-siding yourself.",
+        },
+        {
+          prompt: "What score is \"bogey golf\" on a par-72 course, and why is it a good target?",
+          answer:
+            "90. Aiming for bogey rather than par keeps you from making the aggressive choices that produce 9s, and pars start happening by accident.",
+        },
+      ],
+      body: `Golf's handicap system is the reason a 15-year-old beginner can play a real, competitive match against a 50-year-old club champion and **either one of them might genuinely win.** No other major sport has anything like it. It is golf's best idea.
+
+**One system for the whole world.** Before 2020 there were six different regional handicap systems that did not agree with each other. The **World Handicap System (WHS)** launched in **January 2020**, unifying them into one, and it is governed jointly by the **USGA and The R&A** — the same two bodies that write the Rules (USGA, n.d.; R&A, n.d.). Your handicap now means the same thing in Ohio, Osaka, and Aberdeen.
+
+**Your Handicap Index is a measure of your demonstrated ability.** Two facts define it:
+
+- It is calculated as **the average of the lowest 8 Score Differentials out of your most recent 20** (USGA, n.d.).
+- The **maximum Handicap Index is 54.0**, for any player (USGA, n.d.).
+
+Read that first bullet again, because it contains the most misunderstood idea in golf. **Your handicap is not your average score.** It is built from your **best 8 of the last 20** rounds. It represents your *potential* — what you do when things go reasonably well. This is exactly why **you should expect to play worse than your handicap most of the time.** Playing to your handicap is a good day, not an average one. New golfers routinely conclude they are getting worse when in fact their handicap is simply doing precisely what it was designed to do.
+
+That 54.0 ceiling matters too: it is deliberately generous, so that a genuine beginner can hold a real, official handicap and compete on day one rather than waiting years to qualify.
+
+**Getting your first one: 54 holes.** You need to submit scores from **54 holes** to receive an initial Handicap Index (USGA, n.d.). Those 54 holes can be any combination of 18-hole and 9-hole rounds — three 18s, six 9s, or a mix. That is a low bar on purpose.
+
+**Handicap Index vs Course Handicap — the distinction people get wrong.**
+
+| | What it is |
+| --- | --- |
+| **Handicap Index** | Your portable number. Travels with you. Means the same everywhere. |
+| **Course Handicap** | The number of strokes you actually get **at this course, from these tees, today.** |
+
+Your Course Handicap is calculated from your Index using that specific set of tees, because a hard course from the back tees should give you more strokes than an easy one from the forward tees. It relies on two published ratings for every tee:
+
+- **Course Rating** — what a **scratch** golfer is expected to shoot from those tees.
+- **Slope Rating** — how much **harder** the course plays for a bogey golfer than for a scratch golfer. A high Slope means the course punishes weaker players disproportionately (forced carries, dense trouble). It is *not* a measure of raw difficulty; it is a measure of how *unfairly* the difficulty falls on the weaker player.
+
+**Net score.** Gross score minus your Course Handicap. If you shoot 95 and your Course Handicap is 20, your net score is 75. That is the number a handicap competition uses, and it is how the beginner and the club champion end up in the same event with a straight face.
+
+**Keeping it honest.** The system only works if scores go in. **You post every acceptable round, not the good ones.** A player who posts only their bad rounds to inflate their handicap and win prizes is called a sandbagger, and it is regarded as a form of cheating, because that is exactly what it is.
+
+**The current edition.** The Rules of Handicapping are revised periodically; the current edition is the **2024 revision**. As with the Rules of Golf, **check the date on any handicap advice you read.**
+
+:::reveal Is your Handicap Index your average score, and how many holes do you need to get your first one? ||| No — and this is the most misunderstood idea in golf. Your Handicap Index is the average of the LOWEST 8 Score Differentials from your most recent 20, so it measures your potential, not your average. You should therefore expect to play worse than your handicap most of the time. You need 54 holes to receive an initial Index, and the maximum Index is 54.0.
+
+## Sources
+- USGA. (n.d.). *Handicapping*. https://www.usga.org/handicapping.html
+- R&A. (n.d.). *World Handicap System*. https://www.randa.org/en/whs`,
+    },
+    {
+      slug: "golf-strategy-drill",
+      title: "20 · Practice: think your way around a hole",
+      section: "Strategy",
+      recallContent: [
+        {
+          prompt: "What is the maximum Handicap Index, and how is the Index calculated?",
+          answer:
+            "The maximum is 54.0. The Index is the average of the lowest 8 Score Differentials out of your most recent 20 rounds.",
+        },
+        {
+          prompt: "What is the difference between a Handicap Index and a Course Handicap?",
+          answer:
+            "The Handicap Index is your portable number that means the same thing everywhere. The Course Handicap is how many strokes you actually receive at a specific course, from a specific set of tees.",
+        },
+      ],
+      body: `Strategy is a set of habits, and habits are built by repetition. Fill in each blank from what you have learned. These are the decisions that lower a score without touching your swing.`,
+      exercise: {
+        instructions:
+          "Fill in each blank. Every one of these is a decision you will face on a golf course, and every one of them is free to get right.",
+        items: [
+          {
+            prompt: "Instead of aiming at a tucked flag, aim at the ___ part of the green.",
+            answer: "fat",
+            accept: ["middle", "centre", "center", "fattest"],
+            explanation:
+              "The middle of the green is surrounded on all sides by more green, so your misses still finish on the putting surface.",
+          },
+          {
+            prompt: "Missing the green on the SAME side as the flag, leaving yourself no green to work with, is called ___-siding yourself.",
+            answer: "short",
+            explanation: "Miss AWAY from the flag. This one idea saves more strokes than any swing change.",
+          },
+          {
+            prompt: "A ball from light rough comes out with less spin, so it runs and flies further than expected. This shot is called a ___.",
+            answer: "flier",
+            accept: ["flyer"],
+            explanation: "Grass gets between the clubface and the ball and kills the backspin.",
+          },
+          {
+            prompt: "Into the wind, the saying is: when it's breezy, swing ___.",
+            answer: "easy",
+            explanation: "A softer swing puts less spin on the ball, so the wind exaggerates your curve less. Take more club.",
+          },
+          {
+            prompt: "Your Handicap Index is the average of your lowest ___ Score Differentials out of the most recent 20.",
+            answer: "8",
+            accept: ["eight"],
+            explanation:
+              "This is why your handicap is your potential, not your average, and why you will play worse than it most of the time.",
+          },
+          {
+            prompt: "The maximum Handicap Index any player may hold is ___.",
+            answer: "54.0",
+            accept: ["54", "54.0"],
+            explanation: "Deliberately generous, so a genuine beginner can hold a real handicap and compete immediately.",
+          },
+          {
+            prompt: "You must submit scores from ___ holes to receive your first Handicap Index.",
+            answer: "54",
+            accept: ["fifty-four", "54 holes"],
+            explanation: "Any mix of 18s and 9s. A low bar, on purpose.",
+          },
+          {
+            prompt: "Gross score minus Course Handicap gives you your ___ score.",
+            answer: "net",
+            explanation: "The number a handicap competition actually uses. It is how a beginner and a club champion compete fairly.",
+          },
+          {
+            prompt: "If you shoot bogey on every hole of a par-72 course, you shoot ___.",
+            answer: "90",
+            accept: ["ninety"],
+            explanation: "Bogey golf is better than most people who play this game. Aim for bogey and pars happen by accident.",
+          },
+          {
+            prompt: "A player who posts only bad rounds to inflate their handicap and win prizes is called a ___.",
+            answer: "sandbagger",
+            accept: ["sand bagger", "sandbagger"],
+            explanation: "It is regarded as a form of cheating, because that is what it is. Post every acceptable round.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "golf-strategy-quiz",
+      title: "21 · Check your understanding: strategy",
+      section: "Strategy",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "What does \"play to your miss\" mean?",
+            options: [
+              "Practice until you have no miss",
+              "Aim so that your habitual bad shot still finishes somewhere playable",
+              "Always aim directly at the flag",
+              "Only play holes that suit you",
+            ],
+            correctIndex: 1,
+            explanation:
+              "If your ball curves right, aim down the left side. You do not have to fix the miss to score better with it; you have to stop pretending you do not have it.",
+            sourceLessonSlug: "golf-course-management",
+          },
+          {
+            prompt: "Why is the middle of the green usually the correct target?",
+            options: [
+              "Greens are flattest in the middle",
+              "Because it is surrounded on all sides by more green, so misses still finish on the putting surface",
+              "Because the Rules require it",
+              "It is not; always attack the flag",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A flag tucked near a bunker is bait. Aiming at the fat part is not timid, it is how you collect pars.",
+            sourceLessonSlug: "golf-course-management",
+          },
+          {
+            prompt: "You are behind a tree. The hero shot works about 10% of the time. What does the math say?",
+            options: [
+              "Take the hero shot; the upside is worth it",
+              "Chip out sideways, which averages more than a full stroke better",
+              "Declare the ball unplayable and go back to the tee",
+              "The two options are equivalent",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The hero shot fails nine times in ten and leaves you still in trouble, one stroke worse. Golf rewards the player willing to be bored.",
+            sourceLessonSlug: "golf-course-management",
+          },
+          {
+            prompt: "Amateurs most often miss greens by:",
+            options: [
+              "Flying the green long",
+              "Coming up short of it",
+              "Missing exactly pin high",
+              "Hitting it out of bounds",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Your '150-yard 7-iron' is usually your best-ever 7-iron, not your average one. Club up; the trouble is usually in front.",
+            sourceLessonSlug: "golf-course-management",
+          },
+          {
+            prompt: "Why does a ball from light rough often fly FURTHER than one from the fairway?",
+            options: [
+              "The grass springs the ball forward",
+              "Grass between the clubface and ball kills backspin, so the ball comes out hot and runs",
+              "It does not; it always goes shorter",
+              "The ball sits closer to the hole",
+            ],
+            correctIndex: 1,
+            explanation: "This is called a 'flier,' and it surprises people because they expect rough to cost distance.",
+            sourceLessonSlug: "golf-reading-the-shot",
+          },
+          {
+            prompt: "What is the rule of thumb for playing into the wind?",
+            options: [
+              "Swing harder to punch through it",
+              "When it's breezy, swing easy: take more club and swing at about 80%",
+              "Aim well right of the target",
+              "Use your driver from anywhere",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Wind exaggerates spin. A softer swing spins less and holds its line, so take two extra clubs and swing easy.",
+            sourceLessonSlug: "golf-reading-the-shot",
+          },
+          {
+            prompt: "Under Rule 4.3a(1), a distance-measuring device is:",
+            options: [
+              "Always prohibited",
+              "Allowed by default, unless a Committee prohibits it by Local Rule",
+              "Allowed only in match play",
+              "Allowed only for professionals",
+            ],
+            correctIndex: 1,
+            explanation:
+              "But using it to measure elevation change or wind, or to get club recommendations, makes it illegal. Check your app's setting before a competition.",
+            sourceLessonSlug: "golf-reading-the-shot",
+          },
+          {
+            prompt: "What does it mean to \"short-side\" yourself?",
+            options: [
+              "To lay up short of the green",
+              "To miss the green on the same side as the flag, leaving no green to work with",
+              "To use too little club",
+              "To play from the forward tees",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Your chip then has to be perfect, and it usually is not. Miss AWAY from the flag; this idea saves more strokes than any swing change.",
+            sourceLessonSlug: "golf-avoiding-the-big-number",
+          },
+          {
+            prompt: "Breaking 100 for the first time is mostly:",
+            options: [
+              "A swing achievement",
+              "A decision-making achievement, from making fewer disastrous choices",
+              "A matter of buying better clubs",
+              "Impossible without a coach",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Scores are ruined by catastrophic holes, not merely bad ones. Eliminate the 9s and the 100 falls.",
+            sourceLessonSlug: "golf-avoiding-the-big-number",
+          },
+          {
+            prompt: "If you shoot bogey on every hole of a par-72 course, what do you shoot?",
+            options: ["72", "82", "90", "108"],
+            correctIndex: 2,
+            explanation:
+              "18 bogeys on a par 72 is 90 — better than most people who play this game. Aim for bogey and pars happen by accident.",
+            sourceLessonSlug: "golf-avoiding-the-big-number",
+          },
+          {
+            prompt: "When did the World Handicap System launch?",
+            options: ["January 2000", "January 2016", "January 2020", "January 2024"],
+            correctIndex: 2,
+            explanation:
+              "It unified six different regional systems into one, governed jointly by the USGA and The R&A.",
+            sourceLessonSlug: "golf-handicap-system",
+          },
+          {
+            prompt: "How is your Handicap Index calculated?",
+            options: [
+              "The average of all your scores",
+              "The average of your lowest 8 Score Differentials out of the most recent 20",
+              "Your best round ever",
+              "Your most recent round",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Because it uses your best 8 of 20, your handicap measures your POTENTIAL, not your average. You should expect to play worse than it most of the time.",
+            sourceLessonSlug: "golf-handicap-system",
+          },
+          {
+            prompt: "What is the maximum Handicap Index a player may hold?",
+            options: ["18.0", "36.0", "54.0", "There is no maximum"],
+            correctIndex: 2,
+            explanation:
+              "Deliberately generous, so a genuine beginner can hold a real, official handicap and compete from day one.",
+            sourceLessonSlug: "golf-handicap-system",
+          },
+          {
+            prompt: "How many holes must you submit to receive an initial Handicap Index?",
+            options: ["18", "36", "54", "90"],
+            correctIndex: 2,
+            explanation: "54 holes, in any combination of 18-hole and 9-hole rounds. A low bar, on purpose.",
+            sourceLessonSlug: "golf-handicap-system",
+          },
+          {
+            prompt: "What does Slope Rating measure?",
+            options: [
+              "The steepness of the terrain",
+              "How much harder the course plays for a bogey golfer than for a scratch golfer",
+              "What a scratch golfer is expected to shoot",
+              "The average score of all players",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Course Rating is what a scratch golfer is expected to shoot. Slope measures how unfairly the difficulty falls on the weaker player.",
+            sourceLessonSlug: "golf-handicap-system",
+          },
+        ],
+      },
+    },
   ],
 };
