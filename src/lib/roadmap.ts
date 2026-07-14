@@ -310,6 +310,22 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
 - ✅ BVC real 21-episode content (lessons + quizzes + maps + Coffee assignment).
+- ✅ **Lacrosse: The Creator's Game** (\`content/lacrosse-course\`) — new **Sports** category. 29
+  lessons across 6 collapsible sections, 6 quizzes × **15 questions** each (90 total, every one
+  carrying \`sourceLessonSlug\`), 22 \`:::reveal\` checks, 1 exercise. **Indigenous origins are
+  foundational, not a footnote:** Section 1 is the Haudenosaunee game, led by the Onondaga Nation's
+  own words and by an Indigenous historian (Allan Downey, Dakelh — *The Creator's Game*, 2018),
+  with Indigenous-owned news (Windspeaker) carrying the current reporting. The course teaches
+  **that** ceremonial medicine games exist, whose they are, and why they matter — and then stops:
+  **no ceremonial procedure, songs, or ritual detail is reproduced**, and it tells the learner that
+  the silence is deliberate. Men's, women's, box and Sixes are taught as the **four different games
+  they are**; every rules lesson names the discipline AND the code before it gives a number, and
+  every rule number was checked against the governing body's own PDF (WL men's field v1.1, women's
+  field v1.1, Sixes/box v2.0, NCAA men's and women's). Haudenosaunee **Olympic eligibility for LA28
+  is dated in-text** (IOC position as of March 25 2026; WL's qualification pathway as of July 1
+  2026) and tells the learner to re-check rather than picking an outcome. Section 6 is the
+  amateur/entrepreneur map — coaching, officiating, stringing, table crew, program-building — and
+  Lesson 27 names the sport's access and equity problems honestly. **Re-run \`pnpm seed:courses\`.**
 - ✅ **FAA Part 107 — sectioned, quizzed, and click-to-reveal** (\`fix/faa-sections-quizzes\`). The
   import had seeded 90+ lessons as ONE flat list (\`seed-faa.ts\` never set \`section\`, so the course
   built zero modules), only 5 of its 14 modules had a quiz, and the audio "[CHECK]" beat rendered as

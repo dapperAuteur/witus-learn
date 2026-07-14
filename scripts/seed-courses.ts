@@ -106,6 +106,7 @@ import { HEALTHCARE_ABROAD_COURSE } from "./data/healthcare-abroad-course";
 import { RETIRING_ABROAD_COURSE } from "./data/retiring-abroad-course";
 import { STUDYING_ABROAD_COURSE } from "./data/studying-abroad-course";
 import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
+import { LACROSSE_COURSE } from "./data/lacrosse-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -889,6 +890,28 @@ async function main() {
     slug: "shipping-logistics-abroad",
     course: SHIPPING_LOGISTICS_COURSE,
     category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+
+  // ── Sports ────────────────────────────────────────────────────────────────
+  // Lacrosse: The Creator's Game. Indigenous origins are foundational, not a footnote:
+  // the course leads with the Onondaga Nation's own words and an Indigenous historian
+  // (Downey, 2018), and deliberately does NOT reproduce ceremonial medicine-game
+  // practice. Every rule is quoted from a current, cited rulebook (World Lacrosse
+  // men's/women's field, box, Sixes; NCAA men's and women's) and men's and women's
+  // lacrosse are taught as the different games they are. The Haudenosaunee Olympic
+  // eligibility question is dated in-text (verified July 2026) and tells the learner to
+  // re-check — the authoritative-values rule applied to a live news story.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Sports", sortOrder: 13 })
+    .onConflictDoNothing();
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "lacrosse-creators-game",
+    course: LACROSSE_COURSE,
+    category: "Sports",
     navigationMode: "linear",
   });
 
