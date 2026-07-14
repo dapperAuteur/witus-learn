@@ -109,6 +109,7 @@ import { RETIRING_ABROAD_COURSE } from "./data/retiring-abroad-course";
 import { STUDYING_ABROAD_COURSE } from "./data/studying-abroad-course";
 import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 import { LACROSSE_COURSE } from "./data/lacrosse-course";
+import { TENNIS_COURSE } from "./data/tennis-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -907,15 +908,32 @@ async function main() {
   // re-check — the authoritative-values rule applied to a live news story.
   // Sports — on Learn.WitUS. Play-it/question-it/build-with-it courses: the sport itself, the
   // sourcing discipline behind its folklore, and the amateur/entrepreneur economy around it.
-  await db
-    .insert(schema.courseCategories)
-    .values({ tenantId: learnWitus, name: "Sports", sortOrder: 13 })
-    .onConflictDoNothing();
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
     slug: "lacrosse-creators-game",
     course: LACROSSE_COURSE,
+    category: "Sports",
+    navigationMode: "linear",
+  });
+
+  // Tennis — the court, the scoreboard and the ITF's Rules (the tours and the four Slams layer
+  // their own conditions on top, and the Slams are NOT run by the tours); how points are actually
+  // won; and the history, which is the point: Althea Gibson, Arthur Ashe, the segregated American
+  // Tennis Association that produced them, Billie Jean King and the Original 9. Equal prize money
+  // is taught as a 34-year climb, not a 1973 victory — the Australian Open reached it in 1984,
+  // went BACKWARD by 1996 citing TV ratings, and only restored it in 2001. Equality is reversible,
+  // and that is the lesson. Prize-money distribution is given at field level (the only level
+  // anyone publishes) and the course says so rather than inventing a table.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "tennis",
+    course: TENNIS_COURSE,
+    category: "Sports",
+    navigationMode: "linear",
+  });
+
   // Pickleball — how to play (court, serve, kitchen, two-bounce rule, strategy), how to read a
   // rulebook that USA Pickleball revises ANNUALLY (the 2026 edition renumbered nearly everything,
   // so every rule number here is cited to the 2026 rulebook BY YEAR), why the beloved "named after
