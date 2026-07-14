@@ -1485,5 +1485,692 @@ Your Course Handicap is calculated from your Index using that specific set of te
         ],
       },
     },
+
+    // ── Section 4: History ────────────────────────────────────────────────
+    {
+      slug: "golf-origins",
+      title: "22 · Origins: Scotland, and two things that did not happen",
+      section: "History",
+      recallContent: [
+        {
+          prompt: "What does Slope Rating measure?",
+          answer:
+            "How much harder a course plays for a bogey golfer than for a scratch golfer. Course Rating, by contrast, is what a scratch golfer is expected to shoot.",
+        },
+        {
+          prompt: "Why should you expect to play worse than your handicap most of the time?",
+          answer:
+            "Because the Index averages your LOWEST 8 Score Differentials out of the most recent 20. It measures your potential, not your average.",
+        },
+      ],
+      body: `Golf as we know it took shape in **Scotland**, and the first solid documentary evidence of it is wonderfully unflattering: **the government trying to ban it.**
+
+**The 1457 Act.** An Act of the Scottish Parliament ordered that "the fut bal ande the golf" be "cryit doun" — cried down, suppressed — so that men would go and practise **archery** instead, archery being useful for national defence and golf being, in Parliament's view, a waste of an afternoon (Records of the Parliaments of Scotland, 1457/1458). The Act is dated **6 March 1457** in the old style, which is why you will also see it dated **1458**; Scotland began its year in March at the time, so both dates refer to the same document.
+
+Two things are worth noticing. First, **a law banning golf is proof that golf was already popular.** Nobody bans a thing nobody does. Second, you will see a tidy modernized English version of this Act quoted everywhere as if it were the manuscript. It is a translation. **Go and read the actual record**, linked in the Sources below, and notice how different a primary source looks from the quotation people pass around. That habit — checking the thing itself — is what this whole section is about.
+
+**Now, two things that did NOT happen, both of which you will be told confidently.**
+
+**Myth 1: "18 holes were standardized in 1764."** This is repeated constantly and it is wrong. What happened in 1764 is that **St Andrews shortened its own round from 22 holes to 18** by combining some short holes. That was a local decision about one course. **Eighteen holes became the norm only in the 1880s**, as St Andrews' prestige gradually made its number everybody's number (R&A, n.d.). The gap between those two dates is more than a century. A course having 18 holes is a fashion that hardened into a rule, not a rule that was declared.
+
+**Myth 2: "The first Open Championship was an open championship."** The first **Open**, played at **Prestwick in 1860**, was contested by **eight professionals**, over **three rounds of a 12-hole course** (36 holes in one day), and there was **no prize money** — the winner, **Willie Park Snr**, received a belt (R&A, n.d.). And the entry was **by invitation**. The tournament called "The Open" was, in its first year, closed. It was opened to amateurs the following year, which is where the name actually comes from.
+
+**The institutions, and a distinction that matters.**
+
+| Body | Founded | What it is |
+| --- | --- | --- |
+| **The Royal & Ancient Golf Club of St Andrews** | 1754 | A **private golf club**. |
+| **The R&A** | **2004** | The **governing body**, spun out of the club to run the rules and The Open. |
+| **The USGA** | **22 December 1894** | Governs golf in the US and Mexico. **Five charter clubs**, one of which was the **Newport Golf Club** (USGA, n.d.). |
+
+**The R&A and the R&A Golf Club are not the same organization**, and conflating them is the single most common error written about golf's governance. The club is from 1754. The governing body is from 2004. When this course says "The R&A," it means the governing body.
+
+:::reveal Were 18 holes standardized in 1764, and was the first Open Championship actually open? ||| No, on both counts. In 1764 St Andrews shortened its OWN round from 22 holes to 18; eighteen holes only became the norm in the 1880s. And the first Open (Prestwick, 1860) was played by eight professionals by INVITATION, over three rounds of a 12-hole course, with no prize money. It was opened to amateurs the next year, which is where the name comes from.
+
+## Sources
+- Records of the Parliaments of Scotland. (1457/1458). *Legislation of the parliament of James II, 6 March 1457*. University of St Andrews. https://rps.ac.uk/trans/1458/3/7
+- R&A. (n.d.). *The history of The Open*. https://www.theopen.com/about
+- R&A. (n.d.). *About The R&A*. https://www.randa.org/en/about-us
+- USGA. (n.d.). *Our history*. https://www.usga.org/about/our-history.html`,
+    },
+    {
+      slug: "golf-equipment-revolutions",
+      title: "23 · The ball changed everything",
+      section: "History",
+      recallContent: [
+        {
+          prompt: "What actually happened at St Andrews in 1764?",
+          answer:
+            "St Andrews shortened its own round from 22 holes to 18. It did not standardize anything — 18 holes became the norm only in the 1880s.",
+        },
+        {
+          prompt: "Are the Royal & Ancient Golf Club and \"The R&A\" the same organization?",
+          answer:
+            "No. The club dates from 1754. The R&A, the governing body that runs the rules and The Open, was created in 2004.",
+        },
+      ],
+      body: `If you want to understand why golf looks the way it does, follow the ball. **Almost every major change in the game was caused by someone inventing a better one**, and each time, the sport's establishment resisted it and then surrendered to it.
+
+**The feathery.** Boiled feathers stuffed into a stitched leather pouch, made by hand. A skilled craftsman could make a handful in a day, so they were **brutally expensive** — a single ball could cost more than a club. They also went soggy in the rain and burst. The feathery made golf a rich man's game by simple arithmetic: **if you lose three balls in a round, you have to be able to afford to lose three balls.**
+
+**The guttie (1848).** Made from **gutta-percha**, a rubbery latex from a Malaysian tree, which could be heated, moulded, and — crucially — **remoulded when it got knocked out of shape.** It was **dramatically cheaper** than the feathery, and it did more to open golf to ordinary people than any rule ever passed. Its inventor is genuinely **disputed**: the USGA credits **Robert Adams**, while a very widely repeated version of the story attaches a longer clerical name to him that the primary sources do not support (USGA, n.d.). This course names it as disputed rather than picking the popular answer.
+
+Golfers soon noticed that a **scuffed, nicked** guttie flew better than a smooth new one. That observation — that surface roughness makes a ball fly *further* — is the direct ancestor of the **dimple**, and it was discovered by accident, by players who could not afford new balls.
+
+**The Haskell (1898–1902): the one that actually changed the game.** Coburn Haskell's rubber-cored, thread-wound ball went **substantially further** than a guttie for the same swing. The details are more interesting than the legend:
+
+- The patent (**US Patent 622,834**) was **filed 9 August 1898** and **granted 11 April 1899**.
+- It names a **co-inventor: Bertram G. Work**, of the B.F. Goodrich company. **Popular accounts drop him entirely** and hand the invention to Haskell alone. Go and look at the patent. Both names are on it.
+- Golfers mocked it at first. It won the argument in **1902**, when **Sandy Herd won The Open** using one, and the guttie was finished inside a season.
+
+**Why this is a lesson and not trivia.** The Haskell forced golf's authorities into a fight they have been fighting ever since: **technology makes the ball go further, and courses that were built to be hard become easy.** Every argument you now hear about limiting the modern golf ball is the same argument, with the same shape, that people had in 1902. Golf's rule-makers have always been trying to catch a ball that keeps outrunning them.
+
+**A footnote worth keeping: golf and the Olympics.** Golf was played at the **1900** and **1904** Games and then **vanished for over a century**, returning only in **2016**. The 1904 champion was **George Lyon of Canada**. And the 1900 women's champion, **Margaret Abbott**, an American studying art in Paris, **died in 1955 without ever knowing she was an Olympic champion** — the event's status was so muddled at the time that nobody told her. She is one of the few Olympic gold medallists in history who never found out.
+
+:::reveal Whose name is on the Haskell ball patent besides Coburn Haskell's, and what year did the ball actually take over the game? ||| Bertram G. Work is named as co-inventor on US Patent 622,834 (filed 9 August 1898, granted 11 April 1899), and popular accounts drop him entirely. The ball conquered the game in 1902, when Sandy Herd won The Open with one.
+
+## Sources
+- Haskell, C., & Work, B. G. (1899). *Golf-ball* (US Patent No. 622,834). United States Patent and Trademark Office. https://patents.google.com/patent/US622834A/en
+- USGA. (n.d.). *The USGA Golf Museum: The ball*. https://www.usga.org/museum.html
+- R&A. (n.d.). *The history of The Open*. https://www.theopen.com/about
+- International Olympic Committee. (n.d.). *Golf*. https://olympics.com/en/sports/golf/`,
+    },
+    {
+      slug: "golf-the-color-line",
+      title: "24 · The color line: the clause, 1934 to 1961",
+      section: "History",
+      recallContent: [
+        {
+          prompt: "Why did the guttie ball do more to open golf to ordinary people than any rule?",
+          answer:
+            "It was dramatically cheaper than the hand-made feathery, and it could be remoulded when knocked out of shape. When you can afford to lose a ball, you can afford to play.",
+        },
+        {
+          prompt: "Who was Margaret Abbott?",
+          answer:
+            "The 1900 Olympic women's golf champion, an American studying art in Paris, who died in 1955 without ever knowing she was an Olympic champion.",
+        },
+      ],
+      body: `For **27 years**, the constitution of the Professional Golfers' Association of America restricted membership to golfers of the **Caucasian race**. The clause was adopted in **1934** and removed in **November 1961** (PGA of America, n.d.).
+
+Be precise about what that meant, because it is easy to underrate. The PGA was not a club you joined for the badge. **PGA membership was the gate to playing tournament golf for a living.** A clause about who could be a member was, in practice, a rule about **who was allowed to have the job at all.**
+
+**Note the dates.** The clause was written in **1934** — not in some distant unenlightened past, but the same decade as the first Masters. And it was removed in **1961**, which is **within the lifetime of people alive today**, and after *Brown v. Board of Education*. This is not ancient history. It is your grandparents' history.
+
+**The PGA of America has acknowledged this history. It has not apologized for it.** That is a real distinction and this course does not blur it.
+
+**Bill Spiller, and the 1948 Richmond Open.** Spiller was one of the best golfers in America who was not allowed to prove it. He dominated the **United Golfers Association** — the Black golf tour that existed because the white one was closed — winning **more than 100 tournaments**, backed financially by the heavyweight champion **Joe Louis**, who used his own fame and money to fund Black golf.
+
+In **1948**, Spiller, **Ted Rhodes**, and **Madison Gunter** qualified for the **Richmond Open** in California and were then **barred** from playing on the grounds of the Caucasian-only clause. They sued.
+
+**They did not win.** This matters, and most retellings get it wrong. **The suit was withdrawn**, not decided in their favour, after the PGA promised to stop discriminating. **The PGA then broke that promise** — by simply changing the *form* of its events rather than its rules, which is the subject of Lesson 26. Spiller had traded a lawsuit for a promise, and got nothing.
+
+*(One correction while we are here: Madison Gunter was an **amateur**, not a professional, though he is often described as one.)*
+
+**How the clause finally fell: a caddie and an Attorney General.** Years later, Bill Spiller was **caddying** at a Los Angeles club — a working caddie, because the tour he was good enough for would not have him. One of the men whose bag he carried was **Stanley Mosk**, the **Attorney General of California**.
+
+Spiller told him what the PGA did. Mosk did something about it: he took the position that the PGA could not run a discriminatory organization on **public golf courses in his state**, and **threatened to bar the PGA from every public course in California**. The PGA's tournament calendar depended on California. **The clause came out in November 1961.**
+
+So the causal chain runs: **a Black golfer, denied a career, carrying the clubs of the man who happened to have the power to end the rule that denied it.** Hold on to that, because in the next lesson you are going to read how the golf industry told the story of the repeal at the time — and discover that **not one of these people is in it.**
+
+**The United Golfers Association.** The UGA was where Black golfers actually played: their own tour, their own championships, their own stars. Its **founding year is genuinely disputed** — you will see 1925, 1926, and 1928, and the National Museum of African American History and Culture says only "the mid-1920s." This course does not pick one. Its greatest under-taught figure is **Ethel Funches**, an **eight-time UGA champion**, who is far less famous than she should be.
+
+:::reveal Did Bill Spiller and Ted Rhodes WIN their 1948 lawsuit against the PGA, and how did the Caucasian-only clause finally fall? ||| No. The suit was WITHDRAWN, not won, in exchange for a PGA promise not to discriminate — a promise the PGA then broke by changing the form of its events instead of its rules. The clause finally fell in November 1961 because Spiller, working as a caddie, carried the bag of Stanley Mosk, the Attorney General of California, who then threatened to bar the PGA from every public course in the state.
+
+## Sources
+- PGA of America. (n.d.). *PGA history*. https://www.pga.com/story/pga-of-america-history
+- National Museum of African American History and Culture. (n.d.). *African Americans and golf*. Smithsonian Institution. https://nmaahc.si.edu/
+- USGA. (n.d.). *The USGA Golf Museum*. https://www.usga.org/museum.html`,
+    },
+    {
+      slug: "golf-golfdom-1962",
+      title: "25 · Primary source: read what the industry said in 1962",
+      section: "History",
+      recallContent: [
+        {
+          prompt: "When was the PGA's Caucasian-only clause adopted, and when was it removed?",
+          answer:
+            "Adopted in 1934 and removed in November 1961 — 27 years, and within the lifetime of people alive today.",
+        },
+        {
+          prompt: "How did Bill Spiller come to meet the man who ended the clause?",
+          answer:
+            "He was working as a caddie, and carried the bag of Stanley Mosk, the Attorney General of California, who then threatened to bar the PGA from every public course in the state.",
+        },
+      ],
+      body: `This lesson is different. **You are going to read a primary source and find out what is missing from it.**
+
+*Golfdom* was the golf industry's trade magazine — written by the business for the business, not for the public. In **January 1962**, a few weeks after the PGA removed the Caucasian-only clause, *Golfdom* reported the repeal. The document is scanned, free, and linked below.
+
+**Go and read it now, before you read the rest of this lesson.**
+
+👉 **[*Golfdom*, January 1962 — the report of the repeal](https://archive.lib.msu.edu/tic/golfd/article/1962jan58F.pdf)** (Michigan State University Turfgrass Information Center)
+
+Now answer three questions about the document you just read.
+
+**Question 1: What reason does the article give for the change?**
+
+It attributes the repeal to **"difficulties in making tournament arrangements."** That is the industry's own stated explanation: an administrative inconvenience. A logistics problem. Some awkwardness with scheduling.
+
+**Question 2: Who is named in it?**
+
+Not **Charlie Sifford**. Not **Bill Spiller**. Not **Ted Rhodes**. Not **Stanley Mosk**, the Attorney General whose threat actually forced the decision. **The people who spent more than a decade fighting this rule — and the man who broke it — appear nowhere in the industry's account of its own repeal.**
+
+**Question 3: So what actually happened here?**
+
+Read the two things side by side:
+
+| What the record shows | What *Golfdom* told the industry |
+| --- | --- |
+| A 13-year campaign by excluded Black professionals | *(absent)* |
+| A lawsuit, withdrawn on a promise the PGA broke | *(absent)* |
+| A state Attorney General threatening to shut the PGA out of California | *(absent)* |
+| A rule that barred a whole race from a profession for 27 years | *(not the focus)* |
+| — | **"difficulties in making tournament arrangements"** |
+
+**This is the most important lesson in the course, and it is not about golf.**
+
+The erasure did not require anybody to lie. Every word in that article can be technically defensible. The PGA *did* have difficulties making tournament arrangements — that is precisely what happens when the Attorney General of your largest state threatens to lock you out of every public course in it. **The article is not false. It is emptied.** It takes a civil-rights defeat and files it under logistics.
+
+And notice **who this was written for**: not the public, but the industry itself — club managers, course superintendents, equipment sellers. This is how the business explained the repeal **to itself**. It is the version that the people who ran golf got to believe, and, if nobody checks, it is the version that becomes the history.
+
+**The transferable skill.** When you read any institution's account of its own reform, ask the three questions you just asked:
+
+1. **What reason is given?** (Is it a moral reason, or an administrative one?)
+2. **Who is named?** (And, far more revealingly: **who is missing?**)
+3. **Who was the audience?** (Who was this version of the story *for*?)
+
+An institution describing why it stopped doing something wrong is one of the least reliable documents you will ever read, **and it is usually the only one that gets filed.** That is why you go and find the people who were left out. In golf's case they were named Sifford, Spiller, Rhodes, and Mosk, and you now know their names — which is more than *Golfdom*'s readers did.
+
+:::reveal What reason does the January 1962 Golfdom article give for the repeal, and which four people are missing from it? ||| It attributes the repeal to "difficulties in making tournament arrangements" — an administrative inconvenience. Missing from the industry's own account are Charlie Sifford, Bill Spiller, Ted Rhodes, and Stanley Mosk, the California Attorney General whose threat actually forced the decision. The article is not false; it is emptied. It files a civil-rights defeat under logistics.
+
+## Sources
+- *Golfdom*. (1962, January). [Report on the removal of the PGA's Caucasian-only clause]. Michigan State University Turfgrass Information Center. https://archive.lib.msu.edu/tic/golfd/article/1962jan58F.pdf
+- PGA of America. (n.d.). *PGA history*. https://www.pga.com/story/pga-of-america-history`,
+    },
+    {
+      slug: "golf-three-evasions",
+      title: "26 · Three evasions: change the form, escape the rule",
+      section: "History",
+      recallContent: [
+        {
+          prompt: "What reason did the January 1962 Golfdom article give for the repeal of the Caucasian-only clause?",
+          answer:
+            "\"Difficulties in making tournament arrangements\" — an administrative inconvenience. It named none of the people who forced the change.",
+        },
+        {
+          prompt: "What three questions should you ask of any institution's account of its own reform?",
+          answer:
+            "What reason is given (moral or administrative)? Who is named, and who is missing? Who was the audience — who was this version of the story for?",
+        },
+      ],
+      body: `Here is the pattern that runs through this entire history, and once you see it you will see it everywhere, in every field:
+
+> **When a rule threatens an institution, the institution does not change what it does. It changes its FORM, so the rule can no longer reach it.**
+
+Golf gives us three clean, documented examples of exactly that move.
+
+**Evasion 1: Rename the tournament.**
+After Spiller and Rhodes sued over the 1948 Richmond Open, the PGA needed its events to stop being things a Black golfer could qualify for. Its solution was beautifully simple: **relabel the events "Invitationals."** An open tournament must accept qualifiers. An **invitational** need only invite. **The PGA then did not invite Black players.** Nothing in the rulebook had to say "no Black golfers" — the word "Invitational" did the work, and it did it without ever using a racial term.
+
+**Evasion 2: Lease the public course to a "private club."**
+The Fourteenth Amendment restrains **states**, not private parties. So a city that did not want to integrate its **public** golf course had an obvious escape: **stop having a public golf course.** Greensboro, North Carolina **leased its city-owned Gillespie Park course to a nonprofit corporation**, which then operated it as a "private club" that Black golfers could not join. The course was the same. The grass was the same. The city still owned the land. Only the **paperwork** changed.
+
+Federal judge Johnson J. Hayes saw through it, and his words are worth reading twice (*Simkins v. City of Greensboro*, 1957):
+
+> *"If, however, it undertakes to do it out of the public treasury, it cannot constitutionally furnish the facility to a part of its citizens and deny it to others similarly situated."*
+
+**Look at the year: 1957. That is seven years before the Civil Rights Act of 1964 existed.** Which raises the question this lesson is really about.
+
+**Evasion 3: Sell the course outright.**
+**Delray Beach, Florida sold its municipal golf course** in **1957–58**. Why? Three newspapers printed the reason plainly. The *Palm Beach Post* described it as **"a move by the city to prevent use of the course by Negroes."** Not an inference by a historian. **The stated motive, in the paper, at the time.**
+
+---
+
+**Now the question you should be asking: why didn't the Civil Rights Act just fix all this?**
+
+**Because the Civil Rights Act does not cover golf courses.** Go and read the statute.
+
+**Title II** lists the places of public accommodation it covers (42 U.S.C. § 2000a(b)): **inns and hotels, restaurants and lunch counters, movie theaters, concert halls, sports arenas and stadiums.** Read that list again and notice what is not on it. **There is no golf course. There is no country club.** A stadium — where you *watch* sport — is covered. A golf course — where you *play* it — is not named.
+
+And then § 2000a(e) adds an exemption for **"a private club or other establishment not in fact open to the public."** So the private-club evasion is not merely a loophole somebody found. **It is written into the statute.**
+
+**This is why golf's desegregation ran through the Fourteenth Amendment, not the Civil Rights Act.** The cases had to be built on **state action** — on the fact that a city *owned* the course, spent *public money* on it, and therefore could not hand it to some citizens and deny it to others. That argument reaches a **municipal** course. It does not reach a private club at all.
+
+**And so the final evasion: just close it.** If a city can be forced to integrate a public facility, can it simply shut the facility instead? The Supreme Court answered that in **Palmer v. Thompson (1971)** — a case about Jackson, Mississippi's **swimming pools**, not its golf courses (Jackson **did** desegregate its golf courses). The Court held, **5–4**, that a city **may** close a public facility rather than operate it on an integrated basis. **That ruling is the shelter the closure tactic lived under.**
+
+**Put the whole thing together and you have the shape of the problem:**
+
+| The move | Why it worked |
+| --- | --- |
+| Rename the tournament "Invitational" | An invitational owes nobody an invitation |
+| Lease the course to a "private club" | The Fourteenth Amendment restrains states, not private parties — and Title II exempts private clubs |
+| Sell the course | No public ownership, no state action, no case |
+| Close the course | *Palmer v. Thompson* (1971): a city may close a facility rather than integrate it |
+
+**None of these required a single racist word in a single document.** That is the lesson. **A rule that only bans the stated intention will be defeated by anyone willing to change the paperwork.** The people who fought this had to win it one course, one city, and one lawsuit at a time — which is exactly what they did, and it is the next lesson.
+
+:::reveal Why did golf's desegregation have to run through the Fourteenth Amendment instead of the Civil Rights Act? ||| Because Title II of the Civil Rights Act does not list golf courses at all — 42 U.S.C. § 2000a(b) names inns, restaurants, theaters, and stadiums, but no golf course and no country club — and § 2000a(e) expressly exempts private clubs "not in fact open to the public." So the cases had to be built on state action under the Fourteenth Amendment: a city owned the course and spent public money on it, so it could not give it to some citizens and deny it to others.
+
+## Sources
+- Civil Rights Act of 1964, 42 U.S.C. § 2000a (1964). https://www.law.cornell.edu/uscode/text/42/2000a
+- *Simkins v. City of Greensboro*, 149 F. Supp. 562 (M.D.N.C. 1957).
+- *Palmer v. Thompson*, 403 U.S. 217 (1971). https://supreme.justia.com/cases/federal/us/403/217/
+- *Palm Beach Post*. (1957–1958). [Reporting on the sale of the Delray Beach municipal golf course].`,
+    },
+    {
+      slug: "golf-the-courtroom",
+      title: "27 · The courtroom: Atlanta, Greensboro, and seven years to the day",
+      section: "History",
+      recallContent: [
+        {
+          prompt: "Name the three evasions cities and the PGA used to keep golf segregated.",
+          answer:
+            "Rename the tournament an \"Invitational\" and invite nobody Black; lease the public course to a sham \"private club\"; or sell the course outright. A fourth option, closing it, was later blessed by Palmer v. Thompson (1971).",
+        },
+        {
+          prompt: "Does Title II of the Civil Rights Act cover golf courses?",
+          answer:
+            "No. 42 U.S.C. § 2000a(b) lists inns, restaurants, theaters and stadiums — no golf courses, no country clubs — and § 2000a(e) exempts private clubs not in fact open to the public.",
+        },
+      ],
+      body: `**Holmes v. City of Atlanta.** In the early 1950s, **Dr. Hamilton Mayo Holmes** and others sued Atlanta for access to its municipal golf courses.
+
+🔴 **A name trap, because you will meet both men.** Dr. Hamilton **Mayo** Holmes, the plaintiff here, is **not** Hamilton **E.** Holmes, who desegregated the **University of Georgia in 1961**. They are different people. The one who desegregated the university was the **grandson** of the one who sued over the golf course. **The same family, two generations, two doors forced open.**
+
+**What the district court did is the single most extraordinary document in this course.**
+
+In **July 1954** — **seven weeks after *Brown v. Board of Education***, in which the Supreme Court had just held that separate is inherently unequal — the federal district court ruled on Atlanta's golf courses. It ordered the city to provide **equal** facilities. And it described its own order this way (*Holmes v. Atlanta*, 124 F. Supp. 290, 1954):
+
+> *"...while preserving segregation, will be in full and fair accord with its principles."*
+
+Read that once more. **A federal judge, seven weeks after *Brown*, ordering equality *and* segregation, and claiming to be faithful to *Brown* in doing so.** And then the **Fifth Circuit affirmed it.**
+
+It took the **Supreme Court of the United States** to erase both judgments. On **7 November 1955**, in *Holmes v. City of Atlanta*, 350 U.S. 879, the Court **vacated** the lower judgments. (Vacated — wiped out. Not "reversed and remanded," which is how it is usually misdescribed.) **Thurgood Marshall was counsel on the petition**, though the case was decided **without oral argument**, so he did not argue it.
+
+**Notice the sequence, because the Court was building a wall, brick by brick:**
+
+| Date | Case | Facility |
+| --- | --- | --- |
+| 1954 | *Brown v. Board of Education* | **Schools** |
+| 7 Nov 1955 | *Mayor of Baltimore v. Dawson* | **Beaches** |
+| **7 Nov 1955** | ***Holmes v. City of Atlanta*** | **Golf courses** |
+
+**Beaches and golf courses on the same day.** *Brown* had been about schools, and segregationists argued it was *only* about schools — that education was special. In one afternoon the Court quietly answered: **no, it was never only about schools.**
+
+---
+
+**The Greensboro Six, and the longest week in golf.**
+
+On **7 December 1955**, six Black men played the **Gillespie Park** course in Greensboro — the city-owned course that had been leased to a sham "private club" (Lesson 26). They paid their green fee. They played. **They were arrested.**
+
+They were sentenced to **30 days in jail** — the **statutory maximum**. Not a fine. Not a warning. The maximum, for playing golf.
+
+🔴 **Now, a correction, and it is an important one.** You will read — **on the PGA TOUR's own website, and in *Global Golf Post*** — that the Greensboro Six "**lost 5–4 at the Supreme Court**" in 1958 or 1959. **Both publications are wrong.** The case is ***Wolfe v. North Carolina*, 364 U.S. 177**, decided **27 June 1960**, and the Court **dismissed the appeal** — it **never reached the merits at all.** There was no 5–4 loss on the substance of their claim. There was a procedural dismissal.
+
+That the sport's own governing bodies get this wrong, in public, on the record, tells you something worth knowing: **being an official source is not the same as being a correct one.** You are permitted — required, really — to go and read the opinion. It is public. It has a number.
+
+**How it ended.** Someone **burned the Gillespie Park clubhouse down.** The city closed the course — the *Palmer v. Thompson* escape hatch, in practice.
+
+And then, on **7 December 1962** — **seven years to the day** after the six men were arrested for playing it — **the course reopened, desegregated**, with **George Simkins teeing off first.**
+
+They took the same tee, on the same date, on the far side of seven years, a jail sentence, an arson, and a Supreme Court dismissal. **That is what it actually cost to play a round of golf.**
+
+:::reveal What did the district court order in Holmes v. Atlanta in July 1954, and what really happened to the Greensboro Six at the Supreme Court? ||| Seven weeks after Brown, the district court ordered EQUAL facilities "while preserving segregation," claiming this was "in full and fair accord with" Brown's principles — and the Fifth Circuit affirmed it. The Supreme Court VACATED both judgments on 7 November 1955. As for the Greensboro Six: the PGA TOUR and Global Golf Post both say they "lost 5-4 at the Supreme Court," and both are wrong. In Wolfe v. North Carolina, 364 U.S. 177 (27 June 1960), the Court DISMISSED the appeal and never reached the merits.
+
+## Sources
+- *Holmes v. City of Atlanta*, 350 U.S. 879 (1955). https://supreme.justia.com/cases/federal/us/350/879/
+- *Holmes v. Atlanta*, 124 F. Supp. 290 (N.D. Ga. 1954).
+- *Mayor & City Council of Baltimore City v. Dawson*, 350 U.S. 877 (1955). https://supreme.justia.com/cases/federal/us/350/877/
+- *Brown v. Board of Education*, 347 U.S. 483 (1954). https://supreme.justia.com/cases/federal/us/347/483/
+- *Wolfe v. North Carolina*, 364 U.S. 177 (1960). https://supreme.justia.com/cases/federal/us/364/177/
+- *Simkins v. City of Greensboro*, 149 F. Supp. 562 (M.D.N.C. 1957).`,
+    },
+    {
+      slug: "golf-breaking-in",
+      title: "28 · The players who went first",
+      section: "History",
+      recallContent: [
+        {
+          prompt: "What happened on 7 December 1955, and what happened on 7 December 1962?",
+          answer:
+            "On 7 December 1955 the Greensboro Six played the leased Gillespie Park course and were arrested, receiving 30 days in jail — the statutory maximum. Seven years to the day later, on 7 December 1962, the course reopened desegregated, with George Simkins teeing off first.",
+        },
+        {
+          prompt: "Did the Greensboro Six lose 5-4 at the Supreme Court?",
+          answer:
+            "No, though the PGA TOUR and Global Golf Post both say so. In Wolfe v. North Carolina (1960) the Court dismissed the appeal without reaching the merits.",
+        },
+      ],
+      body: `**John Shippen, 1896.** At the second **U.S. Open**, at **Shinnecock Hills**, a 16-year-old named **John Shippen** became the **first Black competitor in a USGA championship**, alongside **Oscar Bunn**, a member of the **Shinnecock** tribe (USGA, n.d.). He finished in the **top six**.
+
+Three things about Shippen are usually told wrong, and the truth is better:
+
+- He is routinely called "the first American-born golf professional." **That claim is his own.** The USGA's own account is careful: **he told an interviewer that he *believed* himself to be** the first. That is a man's recollection of his own life, not an established record — and it should be written the way the USGA writes it.
+- The famous story that the white professionals **threatened to boycott** unless he was removed is described by the **USGA itself as "undocumented."**
+- His exact finish, his age, and the size of the field **conflict between the USGA's own pages**. Where an institution's own records disagree with each other, say so.
+
+One verified, human detail survives: **he took an 11 on a single hole** — and still finished in the top six.
+
+**And then the gap. Read this slowly: after John Shippen played in 1896, it was 52 YEARS before another Black golfer played in the U.S. Open** (Ted Rhodes, in 1948).
+
+**The gap is the story.** A door opened in 1896 and then closed for half a century. Progress is not a ratchet. **It can go backwards, and here it did.**
+
+---
+
+**Ann Gregory, 1956** — the first African American woman to play in a **USGA championship**. And here is the part that is almost always left out, and is the whole lesson:
+
+**She could only enter because the Chicago Women's Golf Club had, that same year, become the first all-Black club admitted to USGA membership.** Entry ran through **club membership**. So the barrier was never really about Ann Gregory. **It was institutional.** No amount of individual excellence could have gotten her in; an *organization* had to be let through the door first, and then she could walk through it.
+
+**Bill Wright, 1959** — the first African American to **WIN** a USGA championship. He won the **Amateur Public Links**.
+
+**Read that championship's name again.** Of all the USGA's championships, the first won by a Black golfer was **the one for players from public courses**. That is not a coincidence, and after Lessons 26 and 27 you know exactly why: **private clubs were where exclusion was legal and permanent.** The public course was the only door, so the public-course championship was the first one through it.
+
+**Althea Gibson** — already a tennis champion, she joined the **LPGA in 1963**. (You will see 1964 in places, including Wikipedia; the **LPGA and the PGA both say 1963**.) **She never won an LPGA title** — and that is precisely the point. **The barrier she broke was entry, not victory.** We remember firsts who won. We should also remember firsts who simply *got in*, because getting in was the hard part.
+
+**Renee Powell** — joined the **LPGA in 1967**, and in **1996** became the **first African American woman to become a PGA member**. Her father, **Bill Powell**, **built his own golf course — Clearview** — for the simplest possible reason: **he was barred from playing on everyone else's.**
+
+**Charlie Sifford.** At the **end of 1960** Sifford received an **"approved player"** card. Notice the wording: **not full membership. A second-class category, invented to admit him partway.**
+
+🔴 **When did he get full PGA membership? Official golf sources contradict each other — some say 1961, some say 1964.** This course is not going to pretend otherwise, because **the ambiguity IS the history.** An organization that had spent 27 years keeping a man out did not keep clean records of the day it finally let him in. **The sloppiness is evidence.**
+
+What is not ambiguous: the **1967 Greater Hartford Open**, Sifford's **first official PGA TOUR win**. He won again at the **1969 Los Angeles Open** — played at **Rancho Park**, *not* Riviera, which is widely misreported. In **2014** he received the **Presidential Medal of Freedom**.
+
+**Lee Elder** became the **first Black golfer to play in the Masters, in 1975**, having earned it the only way that could not be denied: **by winning the 1974 Monsanto Open.** In 2021 Augusta made him an **honorary starter** — an honor at which, it should be noted, **he did not hit a tee shot.**
+
+---
+
+**Tiger Woods, 1997.** He won the Masters at **21**, the **youngest champion ever**, shooting **270 (−18)** and winning by **12 shots** over Tom Kite. In the PGA of America's own words, he was the **first African-American to win the Masters**.
+
+**Put one fact next to that win and it changes shape entirely: Augusta National did not invite its first Black player until 1975 — the year Tiger Woods was born.** The gap between "no Black man has ever been invited to play here" and "a Black man just won by 12" is **one human lifetime, and not a long one.**
+
+🔴 **What this course will not say:** that Woods was the "first Asian-American Masters champion." That claim is unsupported, and golf's institutions describe **Hideki Matsuyama (2021)** as the first Asian man to win it.
+
+**What is far more interesting is what Woods did himself.** In 1997, on *Oprah*, he **refused a single racial label** and offered a word he had made up as a child: **"Cablinasian"** — Caucasian, Black, (American) Indian, and Asian. He did it because calling him simply "African American" **erased his Thai mother.**
+
+He was widely criticized for it. But sit with the actual question he raised, because it is the sharpest one in this section: **who gets to decide which race a person is — the person, or everyone else?** For most of the history in this course, **the institutions decided**, and they wrote their decision into a membership clause. **Woods, at 21, took that authority back for himself.** You can think he was right or wrong, but you should notice what he was actually doing.
+
+*(A related correction, since precision matters here: the **LPGA was founded in 1950** and speaks of **13 founders**, but **only five women signed the Certificate of Incorporation.** "Thirteen women signed the charter" is a very common and very wrong sentence.)*
+
+:::reveal Why could Ann Gregory enter a USGA championship in 1956, and why is it significant that Bill Wright's 1959 win was in the Amateur Public Links? ||| Gregory could only enter because the Chicago Women's Golf Club had that year become the first all-Black club admitted to USGA membership — entry ran through club membership, so the barrier was institutional, not individual. Wright's win came in the PUBLIC-course championship because private clubs were where exclusion remained legal and permanent; the public course was the only door open, so it was the first one a Black golfer came through.
+
+## Sources
+- USGA. (n.d.). *John Shippen*. USGA Golf Museum. https://www.usga.org/museum.html
+- PGA of America. (n.d.). *PGA history*. https://www.pga.com/story/pga-of-america-history
+- LPGA. (n.d.). *LPGA history and founders*. https://www.lpga.com/about
+- National Museum of African American History and Culture. (n.d.). *African Americans and golf*. Smithsonian Institution. https://nmaahc.si.edu/
+- Masters Tournament. (n.d.). *Tournament history*. https://www.masters.com/en_US/history/index.html`,
+    },
+    {
+      slug: "golf-the-clubs-and-the-caddies",
+      title: "29 · The clubs and the caddies",
+      section: "History",
+      recallContent: [
+        {
+          prompt: "How long was the gap between John Shippen playing the U.S. Open and the next Black golfer to do so?",
+          answer:
+            "52 years — Shippen in 1896, then Ted Rhodes in 1948. The gap is the story: progress is not a ratchet, and here it went backwards.",
+        },
+        {
+          prompt: "What word did Tiger Woods coin in 1997, and why?",
+          answer:
+            "\"Cablinasian\" — Caucasian, Black, Indian, Asian. He refused a single racial label because calling him simply African American erased his Thai mother. The real question he raised: who decides a person's race, the person or everyone else?",
+        },
+      ],
+      body: `**The caddie rule at Augusta is the sharpest story in golf, and almost nobody teaches it.**
+
+From **1934**, every player in the Masters was **required** to use one of **Augusta National's own caddies** — a corps that was **entirely Black**. You could not bring your own. So for **roughly 48 years**, the most famous golf tournament in America guaranteed Black men a place inside the ropes, **in exactly one role: carrying a white player's bag.** They were essential, they were expert — an Augusta caddie's knowledge of those greens was worth strokes no yardage book could give you — and they were **structurally barred from being anything else.**
+
+**How it ended is the part that should make you uncomfortable.**
+
+The rule was lifted by chairman **Hord Hardin** in **November 1982**, effective the **1983 Masters**. **And the trigger was not civil rights.** It was **player pressure, led by Tom Watson**, after Augusta's caddies were **late getting back out to a rain-delayed restart.** The rule that had confined Black men to a subordinate role for half a century was ended because it had become **professionally inconvenient for the players.**
+
+**And then look at what "progress" did to the men themselves. In 1983, the first year players could bring their own caddies, 63 of the 81 players did.** The rule that had trapped them in a subordinate job ended by **promptly taking that job away from most of them.**
+
+Sit with both halves of that, because both are true and they do not resolve neatly:
+- The rule was **demeaning**, and ending it was **right**.
+- Ending it **cost most of those men their livelihoods**, and it was ended for a reason that had **nothing to do with their dignity**.
+
+**Reform is not automatically kind to the people it liberates**, especially when it is done *for* them rather than *with* them, and by people whose actual motive was a rain delay. That is a hard, adult idea and it belongs in a golf course.
+
+*(One man who stayed: **Carl "Skillet" Jackson**, an Augusta caddie who went on to caddie for **Ben Crenshaw's Masters wins in 1984 and 1995**.)*
+
+---
+
+**Shoal Creek, 1990: the year the money finally cared.**
+
+The 1990 **PGA Championship** was scheduled at **Shoal Creek**, in Birmingham, Alabama. Asked about the club having **no Black members**, its founder **Hall Thompson** said it was simply **"that's just not done in Birmingham."**
+
+**Then something happened that a century of moral argument had not achieved: the advertisers left.** **IBM, Toyota, and Anheuser-Busch pulled their television advertising.**
+
+Shoal Creek admitted **Louis J. Willie** — as an **honorary** member. Read that carefully. **Not a full member. A partial concession**, offered under commercial pressure, which is exactly what a partial concession is for.
+
+**Roughly one month later, Augusta National admitted its first Black member: Ron Townsend, in 1990** — and, to be precise where precision favours them, **as a full member.**
+
+**Ask yourself what actually moved these institutions.** Not *Brown*. Not the Fourteenth Amendment. Not thirty years of Black golfers being excellent in public. **Television advertising revenue.** You may draw your own conclusions about what that says, but do not look away from it.
+
+---
+
+**And the women.**
+
+- **Augusta National admitted its first women members on 20 August 2012: Condoleezza Rice and Darla Moore.** A decade earlier, chairman **Hootie Johnson** had said the club might one day admit a woman, but **"not at the point of a bayonet."**
+- **The Royal & Ancient Golf Club** — the club, remember, not the governing body — **voted to admit women on 18 September 2014**, with **85%** in favour. It had been founded in 1754.
+- **Muirfield** voted in **2016** and **failed**, at **64%**. The R&A promptly **removed it from the rota of courses that host The Open** — the most valuable thing a British links course has. Muirfield voted again in **2017** and passed at **80.2%**, and was **reinstated**. **The first 12 women members joined on 1 July 2019** — **275 years after the club was founded.**
+
+**Notice the mechanism in the Muirfield story**, because it is the same one as Shoal Creek: the club changed when **exclusion started costing it something it valued**. A vote failed on principle in 2016. The same men, asked the same question after losing The Open, produced a completely different answer in 2017.
+
+---
+
+**One last thing, and it is a gap rather than a fact.**
+
+Golf's own participation data reports that **25% of on-course golfers are Black, Asian, or Hispanic *combined*** — up from **8% in 1990** — and about **26% of juniors** (National Golf Foundation, 2025).
+
+**Now notice what you cannot find. The National Golf Foundation publishes no standalone figure for the percentage of golfers who are Black.** Not a low number. **No number.** The three groups are reported together, which means the specific question this section has spent seven lessons on — *how many Black golfers are there?* — **cannot be answered from the sport's own headline data.**
+
+**Name the absence, because the absence is itself a finding.** When an institution reports a combined figure, ask what the combination is hiding, and ask who benefits from it being hidden. **What does not get counted usually does not get fixed.**
+
+:::reveal Why did Augusta's all-Black caddie rule end in 1982, and what happened to those caddies in 1983? ||| Not for civil-rights reasons. It ended because of player pressure led by Tom Watson after the caddies were late returning to a rain-delayed restart — it had become professionally inconvenient. Then in 1983, the first year players could bring their own caddies, 63 of 81 did. The rule that had confined Black men to a subordinate role for ~48 years ended by promptly costing most of them their jobs.
+
+## Sources
+- Masters Tournament. (n.d.). *Tournament history*. https://www.masters.com/en_US/history/index.html
+- Associated Press. (1990). [Contemporaneous reporting on Shoal Creek and the 1990 PGA Championship].
+- R&A. (2014, September 18). *Members of The Royal and Ancient Golf Club of St Andrews vote to admit women*. https://www.randa.org/en/news
+- National Golf Foundation. (2025). *Golf participation in the U.S.* https://www.ngf.org/golf-industry-research/`,
+    },
+    {
+      slug: "golf-history-quiz",
+      title: "30 · Check your understanding: history",
+      section: "History",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "What did the Scottish Parliament's 1457 Act actually do about golf?",
+            options: [
+              "Established the first 18-hole course",
+              "Ordered golf to be 'cried down' so men would practise archery instead",
+              "Created the first Rules of Golf",
+              "Founded the Royal & Ancient Golf Club",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A law banning golf is proof golf was already popular. Nobody bans a thing nobody does.",
+            sourceLessonSlug: "golf-origins",
+          },
+          {
+            prompt: "Were 18 holes standardized in 1764?",
+            options: [
+              "Yes, by an act of the R&A",
+              "No — St Andrews shortened its OWN round from 22 to 18; eighteen became the norm only in the 1880s",
+              "Yes, by the USGA",
+              "No, the standard is still 22 holes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This is one of golf's most-repeated myths. A local decision about one course hardened into a fashion, and then into a norm, more than a century later.",
+            sourceLessonSlug: "golf-origins",
+          },
+          {
+            prompt: "The first Open Championship (Prestwick, 1860) was:",
+            options: [
+              "Open to anyone who entered, with a large purse",
+              "Contested by eight professionals BY INVITATION, over three rounds of a 12-hole course, with no prize money",
+              "A 72-hole event won by an amateur",
+              "Held at St Andrews over 18 holes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The tournament called 'The Open' was, in its first year, closed. It was opened to amateurs the following year, which is where the name comes from.",
+            sourceLessonSlug: "golf-origins",
+          },
+          {
+            prompt: "Whose name appears alongside Coburn Haskell's on the 1899 golf-ball patent?",
+            options: ["Sandy Herd", "Robert Adams", "Bertram G. Work", "Willie Park Snr"],
+            correctIndex: 2,
+            explanation:
+              "US Patent 622,834, filed 9 August 1898 and granted 11 April 1899, names Bertram G. Work as co-inventor. Popular accounts drop him entirely.",
+            sourceLessonSlug: "golf-equipment-revolutions",
+          },
+          {
+            prompt: "When was the PGA of America's Caucasian-only clause adopted and removed?",
+            options: [
+              "Adopted 1916, removed 1948",
+              "Adopted 1934, removed November 1961",
+              "Adopted 1948, removed 1964",
+              "Adopted 1920, removed 1975",
+            ],
+            correctIndex: 1,
+            explanation:
+              "27 years. And 1961 is within the lifetime of people alive today — this is not ancient history.",
+            sourceLessonSlug: "golf-the-color-line",
+          },
+          {
+            prompt: "What was the outcome of Bill Spiller and Ted Rhodes's 1948 lawsuit over the Richmond Open?",
+            options: [
+              "They won, and the clause was struck down",
+              "The suit was WITHDRAWN on a PGA promise not to discriminate — a promise the PGA then broke",
+              "They lost at the Supreme Court",
+              "The case is still pending",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They traded a lawsuit for a promise and got nothing. The PGA then evaded it by relabelling its events 'Invitationals.'",
+            sourceLessonSlug: "golf-the-color-line",
+          },
+          {
+            prompt: "How did Bill Spiller come to meet California Attorney General Stanley Mosk?",
+            options: [
+              "They played together on the PGA Tour",
+              "Spiller was working as a caddie and carried Mosk's bag",
+              "Mosk was his lawyer in the 1948 suit",
+              "They met at a PGA meeting",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A Black golfer denied a career, carrying the clubs of the one man with the power to end the rule that denied it. Mosk threatened to bar the PGA from every public course in California.",
+            sourceLessonSlug: "golf-the-color-line",
+          },
+          {
+            prompt: "What reason did the January 1962 issue of Golfdom give for the repeal of the Caucasian-only clause?",
+            options: [
+              "A moral reckoning with racial injustice",
+              "\"Difficulties in making tournament arrangements\"",
+              "A Supreme Court ruling",
+              "Pressure from Charlie Sifford",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The industry's own trade press filed a civil-rights defeat under logistics — and never named Sifford, Spiller, Rhodes, or Mosk. The article is not false. It is emptied.",
+            sourceLessonSlug: "golf-golfdom-1962",
+          },
+          {
+            prompt: "Why did golf's desegregation have to run through the Fourteenth Amendment rather than the Civil Rights Act?",
+            options: [
+              "Because the Civil Rights Act came too late in every case",
+              "Because Title II does not list golf courses at all, and expressly exempts private clubs",
+              "Because golf is a federal matter",
+              "Because the PGA is a government agency",
+            ],
+            correctIndex: 1,
+            explanation:
+              "42 U.S.C. § 2000a(b) names inns, restaurants, theaters and stadiums — no golf course, no country club — and § 2000a(e) exempts private clubs. So the cases had to be built on state action at MUNICIPAL courses.",
+            sourceLessonSlug: "golf-three-evasions",
+          },
+          {
+            prompt: "Which of these was NOT one of the evasions used to keep golf segregated?",
+            options: [
+              "Relabelling tournaments as 'Invitationals'",
+              "Leasing a city-owned course to a sham 'private club'",
+              "Selling the municipal course outright",
+              "Passing a state law explicitly banning Black golfers from all courses",
+            ],
+            correctIndex: 3,
+            explanation:
+              "That is exactly the point: NONE of these required a single racist word in a single document. They changed the form of the institution so the rule could not reach it.",
+            sourceLessonSlug: "golf-three-evasions",
+          },
+          {
+            prompt: "In July 1954, seven weeks after Brown, what did the district court order in the Atlanta golf case?",
+            options: [
+              "Immediate desegregation of all municipal courses",
+              "Equal facilities \"while preserving segregation,\" claiming to be in accord with Brown's principles",
+              "That the courses be closed",
+              "That the case be dismissed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A federal judge ordering equality AND segregation, weeks after Brown — and the Fifth Circuit affirmed it. The Supreme Court vacated both judgments on 7 November 1955.",
+            sourceLessonSlug: "golf-the-courtroom",
+          },
+          {
+            prompt: "What actually happened to the Greensboro Six's case at the Supreme Court?",
+            options: [
+              "They lost 5-4 on the merits",
+              "In Wolfe v. North Carolina (1960) the Court DISMISSED the appeal, never reaching the merits",
+              "They won unanimously",
+              "The Court never heard of the case",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The PGA TOUR's own site and Global Golf Post both report a '5-4 loss.' Both are wrong. Being an official source is not the same as being a correct one.",
+            sourceLessonSlug: "golf-the-courtroom",
+          },
+          {
+            prompt: "Why could Ann Gregory enter a USGA championship in 1956?",
+            options: [
+              "She won a qualifying tournament",
+              "Because the Chicago Women's Golf Club became the first all-Black club admitted to USGA membership that year",
+              "The USGA changed its rules for individuals",
+              "She was invited personally",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Entry ran through club membership, so the barrier was INSTITUTIONAL, not individual. No amount of personal excellence could have gotten her in; an organization had to be let through first.",
+            sourceLessonSlug: "golf-breaking-in",
+          },
+          {
+            prompt: "How many years passed between John Shippen playing the 1896 U.S. Open and the next Black golfer to play in it?",
+            options: ["5 years", "20 years", "52 years", "It never happened again"],
+            correctIndex: 2,
+            explanation:
+              "Shippen in 1896, then Ted Rhodes in 1948. The gap IS the story: a door opened and then closed for half a century. Progress is not a ratchet.",
+            sourceLessonSlug: "golf-breaking-in",
+          },
+          {
+            prompt: "What happened to Augusta's Black caddies in 1983, the first year players could bring their own?",
+            options: [
+              "They were given full club membership",
+              "63 of the 81 players brought outside caddies, so most of them lost the work",
+              "Nothing changed; players kept using them",
+              "They were hired by the PGA TOUR",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The rule that had confined Black men to a subordinate role for ~48 years was ended (because of a rain delay, at Tom Watson's urging) in a way that promptly cost most of them their jobs. Reform is not automatically kind to the people it liberates.",
+            sourceLessonSlug: "golf-the-clubs-and-the-caddies",
+          },
+        ],
+      },
+    },
   ],
 };
