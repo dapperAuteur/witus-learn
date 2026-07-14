@@ -10,6 +10,7 @@ import {
 } from "@/lib/future-work";
 import { Markdown } from "@/components/markdown";
 import { FutureWorkNotes } from "@/components/future-work-notes";
+import { SavePageOfflineButton } from "@/components/save-page-offline-button";
 
 export const metadata: Metadata = { title: "Future classes & features" };
 
@@ -18,6 +19,20 @@ export const metadata: Metadata = { title: "Future classes & features" };
 // plans/future-courses/ notes by `pnpm gen:future-work`) — nothing is read from disk at runtime, so
 // this renders the same in production. The tenant comes from getScopedDb(), which resolves it from
 // the request host; notes are written and read scoped to it.
+//
+// ── This page can be SAVED FOR OFFLINE, which is unusual and deliberate ───────────────────────
+// It's a reading surface — 30-odd long proposals BAM reviews on a plane — so it gets the same
+// "Save for offline" treatment as a lesson (SavePageOfflineButton → src/lib/offline.ts caches the
+// HTML, the RSC payload, and the JS/CSS chunks it needs to render, then reads it back to verify).
+// It is also the ONLY authenticated page in the app that may be cached, and the terms are strict:
+//   • the owner must press the button — nothing here is auto-cached or prefetched;
+//   • the cached copy is marked `sensitive`, so signing out deletes it, and so does the next online
+//     load under a different account (OfflinePrivacyGuard in the (tenant) layout);
+//   • requirePlatformOwner() below is untouched. Caching is a client-side copy of a response the
+//     server had already decided this user could see; it grants nothing. Online, the page is
+//     network-first, so the gate runs on every visit.
+// Notes written offline don't vanish: the form queues them (src/lib/offline-outbox.ts) and they're
+// sent as soon as there's a connection.
 const statusClass: Record<FutureWorkStatus, string> = {
   proposed: "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300",
   recommended: "bg-green-100 text-green-800 dark:bg-green-950 dark:text-green-300",
@@ -43,8 +58,12 @@ const KINDS: { kind: FutureWorkKind; title: string; blurb: string }[] = [
 
 export default async function FutureWorkPage() {
   const sdb = await getScopedDb();
-  await requirePlatformOwner();
+  const session = await requirePlatformOwner();
   const notes = await futureWorkNotesByItem(sdb.tenantId);
+  const itemCount = KINDS.reduce(
+    (n, { kind }) => n + futureWorkGroups(kind).reduce((m, g) => m + g.items.length, 0),
+    0,
+  );
 
   return (
     <main className="max-w-3xl py-10">
@@ -56,6 +75,19 @@ export default async function FutureWorkPage() {
         <span className="break-all font-mono">plans/future-courses/</span> and run{" "}
         <span className="font-mono">pnpm gen:future-work</span>.
       </p>
+
+      {/* `savedByUserId` is what makes the cached copy revocable — the purge compares it against
+          whoever is signed in and deletes anything that isn't theirs. It is NOT an authorisation
+          check (the server's requirePlatformOwner above is); it's a "whose device-copy is this". */}
+      <SavePageOfflineButton
+        pagePath="/admin/future"
+        meta={{
+          pageTitle: "Future classes & features",
+          pageSummary: `${itemCount} proposal${itemCount === 1 ? "" : "s"} to review`,
+          sensitive: true,
+          savedByUserId: session.user.id,
+        }}
+      />
 
       {KINDS.map(({ kind, title, blurb }) => {
         const groups = futureWorkGroups(kind);

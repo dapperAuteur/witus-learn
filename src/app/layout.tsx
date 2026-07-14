@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import { resolveTenant } from "@/lib/tenant";
 import { tenantMetadata, tenantViewport } from "@/lib/branding";
 import { ServiceWorkerRegister } from "@/components/service-worker-register";
+import { OfflineOutboxFlusher } from "@/components/offline-outbox-flusher";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -59,6 +60,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         {children}
         <ServiceWorkerRegister />
+        {/* Sends anything written while offline (today: /admin/future notes) as soon as there's a
+            connection — on whatever page is open when it comes back, not just the one that queued
+            it. Renders nothing; no-ops on an empty queue. See src/lib/offline-outbox.ts. */}
+        <OfflineOutboxFlusher />
         {/* Vercel Web Analytics — privacy-friendly, cookieless page/route counts. No-ops off Vercel. */}
         <Analytics />
       </body>

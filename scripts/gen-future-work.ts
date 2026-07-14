@@ -100,12 +100,28 @@ function main() {
   writeFileSync(join(OUT_DIR, "she-did-the-work.ts"), out);
 
   // ── Standalone proposals (top-level *.md) ────────────────────────────────────────────────────
-  const civics = readFileSync(join(dir, "civics-more-proposal.md"), "utf8").trim();
-  const travel = readFileSync(join(dir, "travel-abroad-proposal.md"), "utf8").trim();
+  // AUTO-DISCOVERED, deliberately. These used to be two hardcoded filenames, which meant every new
+  // planning note BAM dropped in `plans/future-courses/` was SILENTLY IGNORED by /admin/future until
+  // someone remembered to edit this script — the note looked filed but was invisible in the app.
+  // Now every top-level `.md` becomes an item automatically. Add a note, run `pnpm gen:future-work`,
+  // and it shows up. No code change, nothing to forget.
+  const proposalFiles = readdirSync(dir)
+    .filter((f) => f.endsWith(".md"))
+    .sort();
 
-  let out2 = header("plans/future-courses/*.md");
-  out2 += `/** Six candidate civics courses that fill gaps in the shipped civics catalog. */\nexport const CIVICS_MORE_PROPOSAL = \`${lit(civics)}\`;\n\n`;
-  out2 += `/** The "Travel & Living Abroad" category: 16 courses, two building, the rest proposed. */\nexport const TRAVEL_ABROAD_PROPOSAL = \`${lit(travel)}\`;\n`;
+  let out2 = header("plans/future-courses/*.md (auto-discovered — add a .md, re-run, done)");
+  out2 += `export interface ProposalDoc {\n  /** Stable key: the filename without .md. Used as the /admin/future item key. */\n  key: string;\n  /** Human title: the doc's first \`# heading\`, else the de-slugged filename. */\n  title: string;\n  /** First real line of prose, for the card. */\n  summary: string;\n  body: string;\n  provenance: string;\n}\n\n`;
+  out2 += `export const PROPOSAL_DOCS: ProposalDoc[] = [\n`;
+  for (const f of proposalFiles) {
+    const body = readFileSync(join(dir, f), "utf8").trim();
+    if (!body) continue;
+    const key = f.replace(/\.md$/, "");
+    // Title: prefer the doc's own H1; fall back to the filename, de-slugged.
+    const h1 = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
+    const title = h1 ?? key.replace(/-/g, " ").replace(/^\w/, (c) => c.toUpperCase());
+    out2 += `  {\n    key: ${JSON.stringify(key)},\n    title: ${JSON.stringify(title)},\n    summary: ${JSON.stringify(summarize(body))},\n    body: \`${lit(body)}\`,\n    provenance: ${JSON.stringify(`plans/future-courses/${f}`)},\n  },\n`;
+  }
+  out2 += `];\n`;
   writeFileSync(join(OUT_DIR, "proposals.ts"), out2);
 
   console.log(`Wrote src/lib/future-work-content/she-did-the-work.ts (${subjects.length} subjects) + proposals.ts`);

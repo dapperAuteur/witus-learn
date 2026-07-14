@@ -54,12 +54,29 @@ async function load() {
 
 function entry(over: Partial<Record<string, unknown>> = {}) {
   return {
+    kind: "lesson",
     pagePath: "/bam/course/lesson/one",
     courseTitle: "Course",
     courseSlug: "course",
     courseHref: "/bam/course",
     sectionTitle: "Section 1",
     lessonTitle: "Lesson One",
+    mediaUrl: null,
+    savedAt: 1_700_000_000_000,
+    ...over,
+  } as import("@/lib/offline-manifest").OfflineEntry;
+}
+
+/** A saved standalone PAGE — the /admin/future case. Not a lesson, and it must not be coerced into
+ *  looking like one. */
+function pageEntry(over: Partial<Record<string, unknown>> = {}) {
+  return {
+    kind: "page",
+    pagePath: "/admin/future",
+    pageTitle: "Future classes & features",
+    pageSummary: "32 proposals to review",
+    sensitive: true,
+    savedByUserId: "user-bam",
     mediaUrl: null,
     savedAt: 1_700_000_000_000,
     ...over,
@@ -96,6 +113,8 @@ describe("offline manifest", () => {
     store.setItem(
       KEY,
       JSON.stringify({
+        // No `kind` — written by a build that predates saved pages. Must still read as a lesson,
+        // or every download an existing learner has would turn into an unnamed orphan on upgrade.
         "/good": { courseTitle: "C", courseSlug: "c", courseHref: "/c", lessonTitle: "L" },
         "/bad-missing-title": { courseTitle: "C", courseSlug: "c", courseHref: "/c" },
         "/bad-not-an-object": 42,
@@ -104,10 +123,44 @@ describe("offline manifest", () => {
     const m = await load();
     const manifest = m.readManifest();
     expect(Object.keys(manifest)).toEqual(["/good"]);
+    const good = manifest["/good"];
+    expect(m.isLessonEntry(good)).toBe(true);
+    if (!m.isLessonEntry(good)) throw new Error("legacy entry must read as a lesson");
     // Missing optionals are normalised, never left undefined.
-    expect(manifest["/good"].sectionTitle).toBeNull();
-    expect(manifest["/good"].mediaUrl).toBeNull();
-    expect(manifest["/good"].savedAt).toBe(0);
+    expect(good.sectionTitle).toBeNull();
+    expect(good.mediaUrl).toBeNull();
+    expect(good.savedAt).toBe(0);
+  });
+
+  it("round-trips a saved PAGE without pretending it's a lesson", async () => {
+    const m = await load();
+    m.upsertEntry(pageEntry());
+    const saved = m.readManifest()["/admin/future"];
+    expect(m.isPageEntry(saved)).toBe(true);
+    expect(m.isLessonEntry(saved)).toBe(false);
+    if (!m.isPageEntry(saved)) throw new Error("expected a page entry");
+    expect(saved.pageTitle).toBe("Future classes & features");
+    expect(saved.sensitive).toBe(true);
+    expect(saved.savedByUserId).toBe("user-bam");
+  });
+
+  it("a page entry with a corrupted `sensitive` flag reads as PRIVATE, not public", async () => {
+    // Fail safe. If we can't prove a cached page is public, treat it as private — the purge then
+    // removes it on sign-out. The other default would leave an admin page on the device forever.
+    store.setItem(
+      KEY,
+      JSON.stringify({ "/admin/future": { kind: "page", pageTitle: "F", sensitive: "yes-ish" } }),
+    );
+    const m = await load();
+    const saved = m.readManifest()["/admin/future"];
+    if (!m.isPageEntry(saved)) throw new Error("expected a page entry");
+    expect(saved.sensitive).toBe(true);
+  });
+
+  it("drops a page entry with no title — an unnameable page becomes a removable orphan instead", async () => {
+    store.setItem(KEY, JSON.stringify({ "/admin/future": { kind: "page", sensitive: true } }));
+    const m = await load();
+    expect(m.readManifest()).toEqual({});
   });
 
   it("withoutPaths removes only the named lessons", async () => {

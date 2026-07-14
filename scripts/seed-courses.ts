@@ -28,6 +28,7 @@ import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { HOW_A_BILL_BECOMES_LAW_COURSE } from "./data/how-a-bill-becomes-law-course";
 import { SUPREME_COURT_JUDICIAL_BRANCH_COURSE } from "./data/supreme-court-judicial-branch-course";
 import { KNOW_YOUR_RIGHTS_COURSE } from "./data/know-your-rights-course";
+import { KNOW_YOUR_RIGHTS_AT_WORK_COURSE } from "./data/know-your-rights-at-work-course";
 import { JURY_DUTY_COURTS_COURSE } from "./data/jury-duty-courts-course";
 import { STATE_CIVICS_IN_COURSE } from "./data/state-civics-in-course";
 import { STATE_CIVICS_AZ_COURSE } from "./data/state-civics-az-course";
@@ -97,6 +98,7 @@ import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
+import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
@@ -357,6 +359,26 @@ async function main() {
     category: "Civics",
     navigationMode: "linear",
   });
+  // Know Your Rights at Work — the LABOR-side sibling of know-your-rights (Bill of Rights). Same
+  // Civics category and cited standard. Six women, one argument in six movements: Addie Wyatt (what
+  // a contract IS), Dolores Huerta (building power outside the room), Crystal Lee Sutton (what
+  // retaliation COSTS), Sara Nelson (leverage), Drescher + Stiehm (AI likeness and an employer
+  // restructuring the job out from under the old contract). Every statutory statement is quoted
+  // from the U.S. Code itself (NLRA §§ 2, 7, 8, 10 = 29 U.S.C. §§ 152, 157, 158, 160; RLA = 45
+  // U.S.C. § 156) — nlrb.gov and dol.gov block automated fetching, so the course cites the STATUTE
+  // rather than paraphrasing an agency page it could not read. At-will employment VARIES BY STATE,
+  // so the course says so and names Montana as the statutory exception (authoritative-values rule).
+  // The Huerta lesson addresses the March 2026 abuse allegations against Cesar Chavez directly and
+  // cited, per BAM's editorial decision: it teaches the organizing method AND the public record,
+  // adjudicates nothing, and invents no quotes.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "know-your-rights-at-work",
+    course: KNOW_YOUR_RIGHTS_AT_WORK_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
   // Jury Duty & the Courts (the citizen's side) — the practical, citizen-facing
   // companion to supreme-court-judicial-branch (which covers the institution) and
   // how-a-bill-becomes-law (the legislative process). Same Civics category and cited,
@@ -614,6 +636,18 @@ async function main() {
     // green/black/red interactive map at /great-migration-map. See plans/future-courses/
     // great-migration.md (design) and great-migration-facts.md (the fact-check pass).
     { slug: "great-migration", course: GREAT_MIGRATION_COURSE, category: "Culture & History" },
+    // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
+    // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
+    // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:
+    // the NLRA's deliberate agricultural/domestic carve-out, unions' own record of racial and
+    // gender exclusion, and the corruption chapters. Then six genuinely different national
+    // models (Nordic/Ghent, German co-determination, Japanese enterprise unions, China's
+    // state-run ACFTU, Solidarity/COSATU, the Gulf kafala system) plus the ILO floor. The
+    // Haymarket bombing is taught AS AN UNRESOLVED DISPUTE — the record never established who
+    // threw the bomb, and the course refuses to pick. History companion to "Know Your Rights at
+    // Work" (that course = your rights today; this one = how we got here). Proposal for the
+    // country-by-country track: plans/future-courses/workers-rights-track-proposal.md.
+    { slug: "history-of-unions", course: HISTORY_OF_UNIONS_COURSE, category: "Culture & History" },
     // Golf — the first of the sports courses. Six sections: how to play, the Rules (cited to
     // the 2023 code), strategy + the World Handicap System, history (incl. the documented
     // record of racial and gender exclusion — students read the January 1962 *Golfdom* trade

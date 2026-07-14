@@ -185,6 +185,34 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`tests/offline-nav.test.ts\` runs the **real \`public/sw.js\`** against a dead network and proves both
   halves: the hard navigation is served from the precache, and the RSC fetch a \`<Link>\` would have
   issued has nothing to serve. The **page itself stays ungated** — only the link is signed-in.
+- ✅ **Read \`/admin/future\` on a plane** (\`feat/offline-admin-future\`) — the Future classes & features
+  board is 30-odd long proposals to *review*, which is reading you want to do without a connection. It
+  now has the same **Save for offline** treatment as a lesson (page HTML + RSC payload + the
+  \`/_next/static\` chunks it needs to actually **render** — a page cached without them dies with a
+  \`ChunkLoadError\` the first time it's opened offline), and it lists on \`/downloads\` under **Saved
+  pages** — its own heading, not a fake course. The offline manifest gained a \`kind\` discriminant
+  (\`lesson\` | \`page\`) to make that honest; entries written by earlier builds still read as lessons.
+  **It is the only authenticated page the app will cache, and the terms are strict:** it is cached
+  **only on an explicit click** (never auto-saved), the button says in words that a copy of the page
+  *including its notes* lands in this browser's storage unencrypted, **signing out deletes it**, and
+  so does the next online page load under a different (or no) account — the purge sweeps both the
+  manifest and the \`/admin\` path prefix, so a cleared manifest can't strand signed-in HTML on the
+  device. \`requirePlatformOwner()\` is untouched: online the page is network-first, so the server gate
+  runs on every visit. \`tests/offline-admin-page.test.ts\` drives the **real \`public/sw.js\`** over a
+  dead network and proves the page *and its chunks* are served, and that sign-out revokes it while
+  leaving the learner's saved lessons alone.
+- ✅ **Notes written offline aren't lost — they queue and sync** (\`feat/offline-admin-future\`) — the
+  ideas happen on the plane, but notes are DB-backed, so a POST with no network just throws. There's
+  now a general **offline outbox** (\`src/lib/offline-outbox.ts\`, localStorage) behind the
+  \`/admin/future\` note form: write with no connection and the note is **queued**, shown as *waiting to
+  send*, and posted automatically the moment the network is back — from whatever page is open, not
+  just the one that queued it. The rule it enforces is **a queued write is never silently lost**: it
+  survives a reload and a closed tab; it is only ever removed on a **2xx** or an explicit **Discard**;
+  a **401** (session expired while it sat there) keeps it and retries after sign-in; a **400** keeps it,
+  flags it, and shows the error with the text still on screen to copy out. Marking a note done still
+  needs a connection (a queued toggle against a note that may not exist server-side yet is a good way
+  to resurrect a closed one) and says so instead of silently reverting. The queue is deliberately
+  generic — pointing report-a-problem or feedback at it is a \`kind\` string, not a rewrite.
 - ✅ **Every email is mirrored to the WitUS Inbox — with the credentials stripped**
   (\`feat/downloads-link-inbox-mirror\`) — only the pricing form mirrored before; magic-link sign-in,
   certificates, cohort invites and guardian invites left no record. The mirror now happens at the
@@ -457,6 +485,28 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
+- 🔧 **The History of Unions: America and the World** (Culture & History, \`content/history-of-unions\`)
+  — the **anchor of the workers'-rights track**, for high school students. 7 sections · 22 teaching
+  lessons · 7 quizzes (15–18-question banks, above the 10-question attempt cap so retries rotate) ·
+  1 exercise. The US arc (Knights/AFL → **Haymarket** → Homestead/Pullman → **Triangle** → the
+  **Wagner Act** → the CIO → **Taft-Hartley** → Randolph → **Memphis** → **PATCO** → the BLS density
+  series) told **with the parts a comfortable course skips**: the NLRA's deliberate
+  **agricultural/domestic carve-out** (29 U.S.C. § 152(3)) and why farmworker organizing had to
+  happen outside the law; unions' **own** record of racial and gender exclusion (whites-only
+  clauses, the apprenticeship chokepoint, segregated auxiliaries, *Steele v. L&N* (1944), the
+  AFL-CIO declining to endorse the 1963 March); and the corruption chapters. **King was killed in
+  Memphis because he was there for a strike** — said plainly. Then six genuinely different national
+  models (Nordic/**Ghent**, German **co-determination**, Japanese **enterprise unions**, China's
+  state-run **ACFTU**, **Solidarity**/**COSATU**, the Gulf **kafala** system) and the **ILO** floor,
+  built on a transferable four-question frame. Accuracy posture is the point: **Haymarket's
+  bomb-thrower is taught as unresolved** (the record never established who threw it; the lesson
+  refuses to name one and flags that confident accounts in *both* directions exceed the evidence),
+  as is Hoffa's disappearance; the NLRA exclusion splits **text** / **effect** / **motive**; every
+  BLS, OECD, ILO and Gallup figure carries a **year** (incl. BLS's own caveat that the 2025 series
+  is an 11-month average); and the standard PATCO folklore is corrected (permanent replacement was
+  lawful from *Mackay Radio*, **1938**). Registered in \`seed-courses.ts\`; **no migration** —
+  \`pnpm seed:courses\`. Cross-links to *Know Your Rights at Work*. Track proposal (11 country
+  courses, 3 build waves) at \`/admin/future\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
@@ -501,6 +551,32 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   club/handicap ladder, and the real openings for an amateur or entrepreneur. Unsourceable folklore
   (a Boston croquet "ban") was **cut**, not softened. \`pnpm seed:courses\` picks it up; **no
   migration**.
+- ✅ **Know Your Rights at Work** (Civics) — the **labor-side sibling** of *The Bill of Rights: Know
+  Your Rights*, and the educational layer under Work.WitUS's union-contract product. 19 lessons across
+  **6 sections** (13 teaching · 2 exercise · 6 quizzes, banks of **15** so the 10-question attempt cap
+  actually rotates; every question carries an \`explanation\` + \`sourceLessonSlug\`). Six women, one
+  argument in six movements: **Addie Wyatt** (what a contract *is* — the seniority clause that saved her
+  job at seventeen) · **Dolores Huerta** (building power outside the room) · **Crystal Lee Sutton** (what
+  retaliation *costs* the person who absorbs it) · **Sara Nelson** (leverage) · **Fran Drescher +
+  Meredith Stiehm** (AI likeness, residuals, and an employer restructuring the job so the old contract
+  stops mapping onto it). **The law is quoted, never guessed**: NLRA §7 (29 U.S.C. § 157), the §2(3)
+  exclusions + §2(11) "supervisor" (§ 152), §8(a)(1)/(3)/(4) (§ 158), §10(b)'s **six-month** charge clock
+  and §10(c)'s **make-whole-not-punitive** remedy (§ 160), 29 C.F.R. § 102.9 ("**any person** may file"),
+  and the **Railway Labor Act** (45 U.S.C. § 156 + the NMB's own release/30-day-cooling-off process) —
+  because flight attendants are *excluded* from the NLRA, which is the whole reason Nelson's leverage
+  lesson works. \`NLRB v. Washington Aluminum\`, 370 U.S. 9 (1962) anchors protected concerted activity:
+  **no union required**. At-will employment **varies by state**, so the course says so and names Montana
+  as the statutory exception rather than asserting one state's rule as universal. **Five calendar errors
+  corrected on purpose**: Wyatt was one of **twelve** women on Time's 1975 cover (Time named "American
+  Women" *collectively*), her 1976 election was to the **Amalgamated Meat Cutters** (UFCW didn't exist
+  until 1979), Sutton's mill was **Roanoke Rapids** (and the union was the **TWUA**, not ACTWU), Drescher
+  and Stiehm are **former** presidents (both left office Sept 2025), and Nelson's unverifiable "Time 100"
+  credit is **dropped and said so in-lesson**. **Sutton's court case does not exist** — a published-
+  opinions search returns no case bearing her name, so the course teaches retaliation from the statute and
+  **says so out loud** instead of inventing a citation. The **Huerta/Chavez** record (March 2026) is
+  addressed **directly and cited** (AP/NPR/CalMatters), dated, adjudicating nothing and inventing no
+  quote: *a movement is not a saint; the person who built the power can also be harmed inside it.*
+  \`pnpm seed:courses\` picks it up; **no migration**.
 - ✅ **Tennis: Play It, Read It, Work In It** (Sports) — 41 lessons across **8 sections**, each with
   its own quiz (banks of **15–16** questions, so the 10-question attempt cap actually rotates):
   the rules · **hitting the ball** (grips, strokes, footwork) · **strategy** (the First 4 Shots,

@@ -22,11 +22,33 @@ describe("future-work content index", () => {
   it("carries the other standing proposals", () => {
     expect(getFutureWorkItem("civics-more")?.body).toContain("civics");
     expect(getFutureWorkItem("travel-abroad")?.body).toContain("Passport");
+    // The workers'-rights track: the built History of Unions anchor + the country courses.
+    expect(getFutureWorkItem("workers-rights-track-proposal")?.body).toContain("four questions");
+  });
+
+  // Top-level plans/future-courses/*.md are AUTO-DISCOVERED. Before this, the generator read two
+  // hardcoded filenames, so a note BAM filed was invisible in /admin/future until someone edited the
+  // script — it looked filed, and wasn't there. This test is the guard against that regressing.
+  it("auto-discovers a newly dropped proposal note", () => {
+    const unions = getFutureWorkItem("history-of-unions");
+    expect(unions, "history-of-unions was not picked up — is discovery hardcoded again?").toBeDefined();
+    expect(unions!.body.length).toBeGreaterThan(50);
+    expect(unions!.group).toBe("Workers' Rights");
   });
 
   it("keeps item keys unique — they are the join key for future_work_notes", () => {
     const keys = FUTURE_WORK.map((i) => i.key);
     expect(new Set(keys).size).toBe(keys.length);
+  });
+
+  // item_key is the join column for future_work_notes. Renaming a key silently orphans every note
+  // filed against it — the note stays in the table and never renders again. These two predate
+  // auto-discovery (whose keys are filename-derived), so they are pinned by an explicit override.
+  it("preserves the pre-existing keys that notes may already be attached to", () => {
+    expect(getFutureWorkItem("civics-more")).toBeDefined();
+    expect(getFutureWorkItem("travel-abroad")).toBeDefined();
+    expect(getFutureWorkItem("civics-more-proposal")).toBeUndefined();
+    expect(getFutureWorkItem("travel-abroad-proposal")).toBeUndefined();
   });
 
   it("reflects the proposal's judgment: 5 carry a course, Sage Steele is cut", () => {
@@ -41,8 +63,11 @@ describe("future-work content index", () => {
       "She Did the Work",
       "She Did the Work — subject research",
       "Civics",
+      "Workers' Rights",
       "Travel & Living Abroad",
+      "World History",
     ]);
-    expect(futureWorkGroups("feature")).toEqual([]);
+    // The pricing one-pager + its market research are `feature`, not course proposals.
+    expect(futureWorkGroups("feature").map((g) => g.title)).toEqual(["Pricing"]);
   });
 });
