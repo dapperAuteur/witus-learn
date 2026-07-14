@@ -16,8 +16,12 @@
 //     family testimony. The course teaches the dispute, not a winner, and uses it as a source-
 //     evaluation lesson.
 //
-// Growth numbers are SFIA's own published figures (not the conflicting series circulating on
-// aggregator sites). Every statistic carries a year and a named source or it is not stated.
+//  3. THE GROWTH NUMBERS DON'T AGREE. For 2022, SFIA reported 8.9M participants while an
+//     Association of Pickleball Professionals / YouGov survey reported 36.5M — a factor of four,
+//     with neither party lying (they used different participation thresholds). Section 6 teaches
+//     that gap rather than picking a winner, and quotes SFIA's own coherent series (4.2M in 2020 →
+//     13.6M in 2023 → 19.8M in 2024 → 24.3M in 2025) as the one to cite. Every statistic in this
+//     course carries a year and a named source or it is not stated.
 //
 // Sectioned (six collapsible modules), a 15-question quiz bank per section (the serving layer caps
 // attempts at 10 and draws a random subset, so a bank >10 is what makes rotation vary), :::reveal
@@ -1263,7 +1267,7 @@ Notice that the **dog story sits at the bottom** of that table and the **foundin
 - *"It's asserted, but I haven't seen the evidence, that…"* (the dog's birth year)
 - *"Nobody actually knows…"* (the exact date the game was invented)
 
-**Now use it on something that matters.** In Section 6 of this course you are going to read numbers about how fast pickleball is growing. Those numbers get thrown around loosely — and there are, right now, **two conflicting participation series in circulation**, both attributed to the same organization. When you get there, you will notice, because you have practiced on a dog.
+**Now use it on something that matters.** In Section 6 of this course you are going to read numbers about how fast pickleball is growing. Those numbers get thrown around loosely — and for the **same year**, two reputable organizations published participation counts that differ by roughly **a factor of four**. Neither one is lying. They counted different things, and almost nobody who repeats the numbers says which. When you get there, you will notice, because you have practiced on a dog.
 
 :::reveal Applying the source-evaluation table: which is better evidence — the 1968 articles of incorporation for Pickle Ball Inc. filed with the Washington Secretary of State, or USA Pickleball's 2020 statement that the dog was born in 1968? Why? ||| The articles of incorporation, by a wide margin. It is a dated, contemporaneous document, created at the time, by a process with no stake in a later dispute, and it still exists in the state archive. USA Pickleball's 2020 statement is an institution asserting a fact "based on evidence" without naming the evidence, decades after the fact, in support of a story the institution has a reason to prefer. Same year mentioned; completely different quality of proof.
 
@@ -1534,6 +1538,830 @@ That last bullet is not a dodge; it is the correct answer. The most useful thing
             explanation:
               "USA Pickleball governs sanctioned play in the U.S.; the pro tours are private businesses; international governance has been reorganizing. 'Whose rule, and what year' is the correct question, and 'that changed recently and I'd have to check' is often the most expert answer available.",
             sourceLessonSlug: "pb-backyard-to-governing-body",
+          },
+        ],
+      },
+    },
+
+    // ── Section 5: Getting good, and getting rated ──────────────────────────
+    {
+      slug: "pb-how-good-how-fast",
+      title: "21 · How good can you get, and how fast?",
+      section: "Getting Good, and Getting Rated",
+      body: `Here is the honest hook of this sport, and it is the reason it grew the way it did: **the barrier to entry is genuinely, structurally low, and you can become genuinely competitive faster than in almost any other sport.**
+
+That is not a motivational slogan. It is a consequence of rules you have already learned.
+
+**Why the barrier is low — mechanically:**
+
+- **The serve is not a weapon.** It is constrained by rule: underhand, upward arc, below the waist (Rules 7.C.1–7.C.3), or a drop serve with even fewer requirements (Rule 7.D). In tennis, an opponent with a 120-mph serve can end points before you touch the ball. In pickleball, **nobody can do that to you.** The rulebook forbids it.
+- **The two-bounce rule (Rule 10.A) removes the athletic ambush.** No serve-and-volley, no rushing the net behind a big serve. Every point starts slowly, on purpose.
+- **The kitchen (Rule 11.A) taxes power and rewards touch.** The tallest, strongest, fastest person cannot simply stand at the net and hit down. That is exactly what the zone was designed to prevent.
+- **The court is 20 ft × 44 ft** (Rule 3.A.1) — about a quarter the footprint of a tennis court. **You do not have to be fast.** Most of the game happens in a space you can cover by shuffling.
+- **The gear is cheap and the rules cap it.** A paddle and a plastic ball. And the paddle rules mean nobody can buy an unlimited advantage (Section 6 is about what happened when manufacturers tested that).
+
+Add those up. The sport deliberately suppresses the three things that normally take years to acquire — **serve power, foot speed, and reach** — and rewards the one thing you can build quickly: **touch and shot selection.**
+
+**So what actually separates levels?** Not athleticism. Nearly always, in this order:
+
+| What separates you from the next level | The fix |
+|---|---|
+| You drive every third shot | Learn the **drop** (Lesson 12) |
+| You get impatient in dink rallies | Hit **one more dink than you want to** (Lesson 13) |
+| You attack balls below net height | Wait for the pop-up (Lesson 13) |
+| You camp in the transition zone | Move **through** it (Lesson 11) |
+| You and your partner drift apart | Stay a **straight wall** (Lesson 14) |
+
+Every one of those is a decision, not a gift. That is why a beginner who understands the geometry can beat an athlete who does not.
+
+**Now the honest limit, because this course does not sell you anything.** "Competitive fast" is true. "**Elite** fast" is not. The gap between a solid intermediate and a professional is enormous and is made of exactly the boring things — soft-hands resets under pressure, hand-speed at the net, and error rates measured over hundreds of balls. Getting *good* is quick. Getting *paid* is not, and Lesson 24 is a cold look at why.
+
+:::reveal Pickleball suppresses three attributes that normally take years to build in a racket sport — which means a new player can compete much sooner. Name them, and name the rules that suppress each. ||| Serve power (Rules 7.C.1-7.C.3 force an underhand, upward-arc, below-the-waist serve, and Rule 7.D's drop serve is even less restricted — so nobody can serve you off the court); foot speed (the court is only 20 ft x 44 ft, Rule 3.A.1, and the two-bounce rule, Rule 10.A, removes serve-and-volley ambushes); and reach/height (the non-volley zone, Rule 11.A, stops a tall player from standing at the net and hitting everything downward). What is left is touch and shot selection — which you can learn quickly.
+
+## Sources
+- USA Pickleball. (2026). *2026 USA Pickleball official rulebook*, Rules 3.A.1, 7.C.1–7.C.3, 7.D, 10.A, 11.A. https://usapickleball.org/docs/rules/USAP-Official-Rulebook.pdf
+- USA Pickleball. (n.d.). *Pickleball player rating*. https://usapickleball.org/skill-level/ratings/`,
+      recallContent: [
+        {
+          prompt: "Why is pickleball's barrier to entry structurally low, rather than just 'easy to pick up'?",
+          answer:
+            "Because the rules themselves suppress serve power (7.C/7.D), athletic ambush (the two-bounce rule, 10.A), and height/reach advantage at the net (the kitchen, 11.A), on a court only 20 x 44 ft (3.A.1). The attributes that take years elsewhere are rule-limited here, leaving touch and shot selection — which are learnable fast.",
+        },
+        {
+          prompt: "What actually separates an intermediate player from the next level?",
+          answer:
+            "Decisions, not athleticism: learning the third-shot drop instead of driving everything, staying patient in dink rallies, not attacking balls below net height, moving through the transition zone instead of camping in it, and staying a straight wall with your partner.",
+        },
+      ],
+    },
+    {
+      slug: "pb-ratings-dupr-utpr",
+      title: "22 · Ratings: why you have more than one number",
+      section: "Getting Good, and Getting Rated",
+      body: `Sooner or later somebody asks "what are you rated?" — and the correct answer is a question: **"by which system?"** Because there are at least two, they measure different things, and they will not agree.
+
+**UTPR — the USA Pickleball Tournament Player Rating.**
+The official rating of the national governing body. It counts **only results from USA Pickleball sanctioned tournaments**, and it issues **separate ratings for singles, doubles, and mixed doubles** (USA Pickleball, n.d.). Your Tuesday-night rec games are invisible to it. If you never enter a sanctioned tournament, you do not have one.
+
+**DUPR — the Dynamic Universal Pickleball Rating.**
+A private, independent rating on a **2.000 to 8.000** scale. It counts **both tournament and recreational matches**, and it is *dynamic*: it moves on **performance versus expectation**, weighing opponent strength and the score, not just the win. DUPR's own explanation is blunt about the consequence: if you were expected to win 11–3 and you win 11–8, **your rating can go down** (DUPR, n.d.).
+
+Sit with that, because it is genuinely counterintuitive: **in DUPR, you can win a match and get worse.** That is not a bug. It is what "rating" means when the thing being estimated is your *true strength*, not your *record*.
+
+**Why the two numbers disagree — and why that is not a scandal.**
+
+| | UTPR | DUPR |
+|---|---|---|
+| Run by | USA Pickleball (the NGB) | A private company |
+| Counts | Sanctioned tournament results only | Tournament **and** rec matches |
+| Scale | Roughly 1.0–6.0+ | 2.000–8.000 |
+| Splits by format | Yes — singles / doubles / mixed | A unified rating (with format detail) |
+| Rewards | Winning | Winning **relative to expectation** |
+
+Feed the same match into both and you can get different movement, because they are **not measuring the same quantity**. One is asking "how have you done in sanctioned brackets?" The other is asking "how strong are you, given everyone you have played?"
+
+**And now the actual lesson, which you already know how to apply.** A rating is an **instrument with a definition**. In Section 4 you learned to ask, of any claim, *what kind of evidence is this, and what is it actually counting?* A rating is exactly that question wearing a number. When someone says "I'm a 4.0," the informative follow-ups are:
+
+- **Whose 4.0?** (UTPR and DUPR 4.0 are not interchangeable.)
+- **From how many matches?** (A rating built on six games is a rumor.)
+- **How recent?** (Both systems weight recency; a two-year-old rating describes a different player.)
+
+Numbers feel objective. **A number is only as objective as its definition**, and in the very next lesson — where we count how many Americans play this sport — that principle stops being a nicety and starts being the whole ballgame.
+
+:::reveal In DUPR, you win a match — and your rating goes DOWN. Explain how that is possible and why it is not a flaw. ||| DUPR rates performance against EXPECTATION, weighing opponent strength and the score margin rather than the bare result. If the system expected you to win 11-3 and you only won 11-8, you underperformed the expectation, so your estimated strength falls (DUPR, n.d.). It is not a flaw, because the rating is estimating your true strength, not tallying your win-loss record. UTPR, by contrast, moves on sanctioned-tournament results, which is why the two systems can disagree about the same player.
+
+## Sources
+- DUPR. (n.d.). *Understanding all pickleball ratings*. https://www.dupr.com/post/understanding-all-pickleball-ratings
+- Pickleheads. (n.d.). *A guide to pickleball ratings — DUPR vs. UTPR*. https://www.pickleheads.com/guides/a-guide-to-pickleball-ratings-dupr-utpr
+- USA Pickleball. (n.d.). *Pickleball player rating*. https://usapickleball.org/skill-level/ratings/`,
+      recallContent: [
+        {
+          prompt: "What is the difference between UTPR and DUPR?",
+          answer:
+            "UTPR is USA Pickleball's official rating and counts only sanctioned tournament results, with separate ratings for singles, doubles, and mixed. DUPR is an independent 2.000-8.000 rating that counts rec matches as well as tournaments and moves on performance versus expectation (opponent strength and score margin), not just wins.",
+        },
+        {
+          prompt: "Someone tells you they are 'a 4.0.' What should you ask?",
+          answer:
+            "Whose 4.0 (UTPR and DUPR are not interchangeable), from how many matches (a rating built on a handful of games is a rumor), and how recent. A rating is an instrument with a definition — it is only as objective as what it counts.",
+        },
+      ],
+    },
+    {
+      slug: "pb-tournaments-and-leagues",
+      title: "23 · Tournaments, leagues, and how competitive play is organized",
+      section: "Getting Good, and Getting Rated",
+      body: `You do not have to be good to enter a tournament. This surprises people, and it is the single most useful practical fact in this section: pickleball tournaments are bracketed **by skill and by age**, so your first event is not against professionals — it is against people rated the same as you, often in your own decade of life.
+
+**Sanctioned vs. unsanctioned.**
+
+- A **sanctioned** tournament runs under USA Pickleball's rulebook and reports results to the **UTPR** (Lesson 22). This is how you get an official rating.
+- An **unsanctioned** event — most local, club, and charity tournaments — may run whatever format the organizer chooses. It may feed **DUPR**. It will not touch your UTPR.
+
+Neither is better. They are different products, and knowing which one you signed up for is entirely your job.
+
+**The formats, from the rulebook.** In sanctioned play the standard match formats are **best 2-of-3 games to 11**, **best 3-of-5 games to 11**, **one game to 15 or 21**, or **one game to 11** for round robins with six or more teams (Rule 15.C.1). **All scoring options are win-by-two, except that win-by-one is allowed for team play** (Rule 15.C).
+
+And remember Lesson 9: a **Tournament Director may choose rally scoring** (Rule 15.C.2) — but **not** in double-elimination doubles events, **not** at the 2026 Golden Ticket events, and **not** at the 2026 USA Pickleball National Championship. So the scoring system you will play under is a property of *the event*, not of *the sport*. **Read the event page. Do not assume.**
+
+**Bracket structures you will meet:**
+
+| Format | How it works | What it feels like |
+|---|---|---|
+| **Round robin** | Everyone in your pool plays everyone else | Most matches for your money; good for a first event |
+| **Double elimination** | You must lose twice to be out | The standard for serious brackets; you get a second life |
+| **Single elimination** | Lose once, go home | Fast, brutal, uncommon in amateur pickleball |
+
+**Divisions.** Events are typically split by **skill rating** (3.0, 3.5, 4.0…) and by **age group**, and often by both at once. This is why a 62-year-old 3.5 player has a real, winnable bracket. It is also why "I won a medal" is a claim that means nothing until you ask *which division* — a lesson you have now been taught three different ways in three different sections.
+
+**Leagues and ladders** are the lower-commitment path and, for most people, the better one: a fixed night, the same venue, rotating partners, over some number of weeks. They are also — file this away for Lesson 28 — an **excellent small business**, because they generate recurring revenue on courts you do not own.
+
+**How to actually enter your first one.** Pick an event with a round-robin format in a skill division at or slightly **below** your honest self-assessment. Play up later. The most common beginner mistake is entering a bracket that is too high because it sounds better, then losing every match 11–2 and learning nothing.
+
+:::reveal Two people both say "I medaled in a pickleball tournament." Why is that claim close to meaningless on its own, and what must you ask? ||| Because events are bracketed by BOTH skill rating and age group, and formats vary. A medal in a 3.0 senior round-robin and a medal in an open 5.0 double-elimination bracket are wildly different achievements. You must ask which division (skill and age), what format, and whether the event was sanctioned — because only a sanctioned event feeds the official UTPR rating at all.
+
+## Sources
+- USA Pickleball. (2026). *2026 USA Pickleball official rulebook*, Rules 15.C, 15.C.1, 15.C.2. https://usapickleball.org/docs/rules/USAP-Official-Rulebook.pdf
+- USA Pickleball. (n.d.). *Pickleball player rating*. https://usapickleball.org/skill-level/ratings/`,
+      recallContent: [
+        {
+          prompt: "What is the practical difference between a sanctioned and an unsanctioned tournament?",
+          answer:
+            "A sanctioned tournament runs under USA Pickleball's rulebook and reports results to your official UTPR rating. An unsanctioned event uses whatever format the organizer picks and does not affect UTPR (though it may feed DUPR). Know which one you entered.",
+        },
+        {
+          prompt: "Which scoring system will you play under at a tournament?",
+          answer:
+            "Whichever the event uses — it is a property of the event, not of the sport. Standard is side-out scoring, but a Tournament Director may select the provisional rally-scoring option (Rule 15.C.2), except in double-elimination doubles, Golden Ticket events, and the National Championship. Read the event page.",
+        },
+      ],
+    },
+    {
+      slug: "pb-the-pro-game",
+      title: "24 · The pro game: the PPA, MLP, and the money that wasn't there",
+      section: "Getting Good, and Getting Rated",
+      body: `If you only read the headlines from 2023, you would think professional pickleball was a gold rush. It is a more interesting and more useful story than that, and it is a warning worth reading **before** Section 6 tells you where the real opportunity is.
+
+**The players on the board.**
+
+- The **PPA Tour** (Professional Pickleball Association) — a tour of individual tournaments.
+- **MLP** (Major League Pickleball) — a **team** league, with franchises, drafted rosters, and owners drawn from sports and entertainment.
+- The **APP** (Association of Pickleball Professionals) — a separate tour, which has continued to operate independently.
+
+**What happened.** In 2023 the PPA and MLP were in a **bidding war** for the same very small pool of elite players. Both handed out **guaranteed** contracts. Reported player compensation escalated steeply — trade coverage described top earnings moving from roughly six figures into the mid-hundreds of thousands, guaranteed, in a single cycle.
+
+Then the arithmetic arrived. **In February 2024 the PPA Tour and Major League Pickleball completed a merger**, and the combined entity was organized under the **United Pickleball Association (UPA)** (CNBC, 2024; Boss, 2024).
+
+**And the moment the bidding war ended, the bidding-war prices ended.** With both properties under one roof, there was no longer any need to outbid anyone. Trade coverage subsequently reported players being asked to **restructure contracts**, spreading compensation over additional years and **reintroducing performance-based pay** in place of guarantees (The Dink, n.d.).
+
+**How to hold this story honestly.** The merger itself is **documented** — CNBC and Forbes both reported it, and it is not in dispute. The **contract restructuring and pay reductions are reported by the pickleball trade press**, which is the only press covering it closely; they are not audited financials, and the leagues are **private companies with no obligation to publish their books.** So the correct confidence level is: *"the merger happened; the correction is well reported and widely corroborated; the exact numbers are not independently verifiable."* You have practiced this. Say what you know at the confidence you know it.
+
+**The three lessons that actually matter to you:**
+
+1. **Player salaries were never a measure of the sport's health.** They were a measure of **two buyers competing.** Remove one buyer and the price falls, even if the sport keeps growing — and pickleball *did* keep growing right through the correction (Lesson 26). **A bidding war is not a market.**
+2. **Do not plan a career on the top of this pyramid.** It is a young, private, consolidating market with a few dozen viable seats.
+3. **The interesting money was never at the top.** It is in **courts, coaching, leagues, and events** — the amateur economy, which is *fed* by growth rather than by a bidding war. That is Section 6, and it is the point of this whole course.
+
+The pro game is the part of pickleball that gets the cameras. It is not the part that has room for you.
+
+:::reveal Pro pickleball salaries spiked in 2023 and then fell — while the sport's participation kept growing. What actually caused the spike, and what does that tell you about using salaries as evidence? ||| The spike was caused by a bidding war: the PPA Tour and MLP were competing to sign the same small pool of elite players and both offered guaranteed contracts. When the two merged in February 2024 under the United Pickleball Association (CNBC, 2024; Boss, 2024), there was no longer a rival bidder, and compensation was reported to be restructured downward. So the salaries measured the number of BUYERS, not the health or growth of the sport — the sport kept growing while the salaries fell. A bidding war is not a market.
+
+## Sources
+- Boss, T. (2024, March 4). *PPA and MLP finalize merger of two of pickleball's biggest pro entities*. Forbes. https://www.forbes.com/sites/toddboss/2024/03/04/ppa-and-mlp-finalize-merger-of-two-of-pickleballs-biggest-pro-entities/
+- CNBC. (2024, February 29). *Major League Pickleball and PPA Tour complete long-awaited merger*. https://www.cnbc.com/2024/02/29/major-league-pickleball-and-ppa-tour-complete-merger.html
+- The Dink. (n.d.). *The UPA is extending new pro contracts — what it means and who is affected*. https://www.thedinkpickleball.com/the-upa-is-negotiating-new-pro-contracts-what-it-means-and-who-is-affected/`,
+      recallContent: [
+        {
+          prompt: "What is the UPA, and how did it come about?",
+          answer:
+            "The United Pickleball Association — the entity formed when the PPA Tour and Major League Pickleball completed their merger in February 2024 (CNBC, 2024; Boss, 2024). The APP remains a separate tour.",
+        },
+        {
+          prompt: "Where is the actual opportunity in pickleball, if not in playing professionally?",
+          answer:
+            "In the amateur economy: courts, coaching, leagues, events, and equipment. That layer is fed by participation growth rather than by a bidding war between two leagues, and it has room for far more than a few dozen people.",
+        },
+      ],
+    },
+    {
+      slug: "pb-quiz-competitive",
+      title: "25 · Quiz: Getting good, and getting rated",
+      section: "Getting Good, and Getting Rated",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why is pickleball's barrier to entry structurally low, rather than merely 'easy to learn'?",
+            options: [
+              "The rules themselves suppress serve power, foot speed, and reach — the attributes that take years to build in other racket sports",
+              "There are no rules governing the serve",
+              "The court is the same size as a tennis court, so movement matters less",
+              "Professional players are required to give beginners a handicap",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The serve is rule-constrained (7.C.1-7.C.3, 7.D), the two-bounce rule (10.A) removes serve-and-volley, the kitchen (11.A) stops tall players from smashing everything from the net, and the court is only 20 x 44 ft (3.A.1). What is left — touch and shot selection — is learnable quickly.",
+            sourceLessonSlug: "pb-how-good-how-fast",
+          },
+          {
+            prompt: "Which rule most directly prevents a stronger, taller player from simply standing at the net and hitting every ball downward?",
+            options: [
+              "Rule 11.A — the non-volley zone",
+              "Rule 15.C — tournament match formats",
+              "Rule 3.D.2 — no restriction on paddle thickness",
+              "Rule 6.D — the 10-second rule",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The kitchen is a deliberate, artificial constraint that converts a power game into a touch game. Without it, the tallest and strongest player would dominate every point from the net.",
+            sourceLessonSlug: "pb-how-good-how-fast",
+          },
+          {
+            prompt: "According to this course, what most commonly separates an intermediate player from the next level?",
+            options: [
+              "Decisions — driving instead of dropping, impatience in dink rallies, attacking balls below net height",
+              "Raw foot speed",
+              "Serve velocity",
+              "Paddle price",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every item on that list is a choice, not a gift. It is why a beginner who understands the geometry can beat an athlete who does not — and why the plateau is almost always the third-shot drop.",
+            sourceLessonSlug: "pb-how-good-how-fast",
+          },
+          {
+            prompt: "What does UTPR count?",
+            options: [
+              "Only results from USA Pickleball sanctioned tournaments",
+              "All recreational and tournament matches",
+              "Only professional tour results",
+              "Self-reported skill levels",
+            ],
+            correctIndex: 0,
+            explanation:
+              "UTPR is USA Pickleball's official rating and reflects sanctioned tournament play only, with separate ratings for singles, doubles, and mixed doubles. Rec play is invisible to it.",
+            sourceLessonSlug: "pb-ratings-dupr-utpr",
+          },
+          {
+            prompt: "In DUPR, you win a match — and your rating goes DOWN. How is that possible?",
+            options: [
+              "DUPR moves on performance versus expectation, weighing opponent strength and score margin; winning by less than expected can lower your rating",
+              "It is a known bug in DUPR",
+              "DUPR penalizes players who play recreational matches",
+              "It is impossible — a win always raises a DUPR rating",
+            ],
+            correctIndex: 0,
+            explanation:
+              "DUPR's own explanation: if you were expected to win 11-3 and you win 11-8, your rating can move down. The rating estimates your true strength, not your win-loss record.",
+            sourceLessonSlug: "pb-ratings-dupr-utpr",
+          },
+          {
+            prompt: "What is DUPR's rating scale?",
+            options: ["2.000 to 8.000", "1.0 to 10.0", "0 to 100", "1.0 to 6.0+"],
+            correctIndex: 0,
+            explanation:
+              "DUPR runs 2.000 to 8.000 and counts both rec and tournament matches. UTPR runs roughly 1.0 to 6.0+ and counts sanctioned tournaments only — which is one reason the two numbers are not interchangeable.",
+            sourceLessonSlug: "pb-ratings-dupr-utpr",
+          },
+          {
+            prompt: "Someone says 'I'm a 4.0.' What is the most informative follow-up question?",
+            options: [
+              "Whose 4.0 — UTPR or DUPR? And from how many matches, and how recently?",
+              "How many years have you played?",
+              "What paddle do you use?",
+              "Nothing — a 4.0 is a 4.0",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A rating is an instrument with a definition. UTPR and DUPR measure different quantities and are not interchangeable, and a rating built on a handful of stale matches is a rumor. A number is only as objective as its definition.",
+            sourceLessonSlug: "pb-ratings-dupr-utpr",
+          },
+          {
+            prompt: "What is the difference between a sanctioned and an unsanctioned tournament?",
+            options: [
+              "A sanctioned event runs under USA Pickleball's rulebook and reports to your official UTPR; an unsanctioned event does not",
+              "Unsanctioned tournaments are illegal",
+              "Sanctioned tournaments are only for professionals",
+              "There is no difference; the words are interchangeable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most local, club, and charity events are unsanctioned and may run any format the organizer chooses (and may feed DUPR). Neither type is better — but knowing which one you entered is your job.",
+            sourceLessonSlug: "pb-tournaments-and-leagues",
+          },
+          {
+            prompt: "Under Rule 15.C, what is true of scoring options in sanctioned play?",
+            options: [
+              "All scoring options are win by two points, except win by one is allowed for team play",
+              "All games are win by one point",
+              "Games are always to 21, win by two",
+              "Only rally scoring is permitted",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Rule 15.C. And Rule 15.C.1 lists the standard formats: best 2-of-3 to 11, best 3-of-5 to 11, one game to 15 or 21, or one game to 11 for round robins with six or more teams.",
+            sourceLessonSlug: "pb-tournaments-and-leagues",
+          },
+          {
+            prompt: "Which bracket format requires you to lose twice before you are eliminated?",
+            options: ["Double elimination", "Round robin", "Single elimination", "Ladder"],
+            correctIndex: 0,
+            explanation:
+              "Double elimination is the standard for serious amateur brackets — you get a second life. A round robin, where everyone in your pool plays everyone else, is usually the friendlier choice for a first event.",
+            sourceLessonSlug: "pb-tournaments-and-leagues",
+          },
+          {
+            prompt: "Two players each say they 'medaled in a pickleball tournament.' Why does that claim mean little on its own?",
+            options: [
+              "Events are bracketed by both skill rating and age group, so a medal in one division is not comparable to a medal in another",
+              "Medals are awarded to every entrant",
+              "Tournaments do not award medals",
+              "It means a lot — a medal is a medal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You have to ask which division (skill AND age), what format, and whether it was sanctioned. Same lesson as the dog and the ratings: the number is only as meaningful as its definition.",
+            sourceLessonSlug: "pb-tournaments-and-leagues",
+          },
+          {
+            prompt: "What happened between the PPA Tour and Major League Pickleball in February 2024?",
+            options: [
+              "They completed a merger, with the combined entity organized under the United Pickleball Association (UPA)",
+              "MLP shut down entirely",
+              "They were both acquired by USA Pickleball",
+              "They split into four separate tours",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reported by CNBC (February 29, 2024) and Forbes (March 4, 2024). The APP has continued to operate as a separate tour.",
+            sourceLessonSlug: "pb-the-pro-game",
+          },
+          {
+            prompt: "Pro pickleball salaries spiked in 2023 and were later reported to fall — while participation kept growing. What caused the spike?",
+            options: [
+              "A bidding war: two leagues competing to sign the same small pool of elite players, both offering guaranteed contracts",
+              "A surge in television revenue",
+              "A USA Pickleball rule requiring minimum salaries",
+              "Ticket sales at the National Championship",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Once the PPA and MLP merged, there was no rival bidder and compensation was reported to be restructured. The salaries measured the number of BUYERS, not the health of the sport. A bidding war is not a market.",
+            sourceLessonSlug: "pb-the-pro-game",
+          },
+          {
+            prompt: "What is the correct confidence level to hold about reported pro-pickleball contract cuts?",
+            options: [
+              "The merger is documented; the correction is well reported by the trade press but not independently auditable, because the leagues are private companies",
+              "It is fully audited public financial data",
+              "It is pure rumor with no reporting behind it",
+              "USA Pickleball publishes the leagues' books annually",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Say what you know at the confidence you know it (Lesson 18). The merger was reported by CNBC and Forbes and is not disputed; the contract restructuring is reported by the pickleball trade press, which is the press covering it most closely, but private companies need not publish their books.",
+            sourceLessonSlug: "pb-the-pro-game",
+          },
+          {
+            prompt: "According to this course, where is the real opportunity in pickleball for an amateur or entrepreneur?",
+            options: [
+              "In the amateur economy — courts, coaching, leagues, events, and equipment — which is fed by participation growth",
+              "In signing a professional playing contract",
+              "In buying an MLP franchise",
+              "There is no opportunity; the market is saturated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The top of the pyramid is a young, private, consolidating market with a few dozen viable seats. The layer underneath it grows with participation rather than with a bidding war — and it has room for you.",
+            sourceLessonSlug: "pb-the-pro-game",
+          },
+        ],
+      },
+    },
+
+    // ── Section 6: The opportunity — courts, coaching, and paddles ──────────
+    {
+      slug: "pb-the-growth-numbers",
+      title: "26 · The growth numbers, and how not to get fooled by them",
+      section: "The Opportunity: Courts, Coaching, and Paddles",
+      body: `Everything in this section rests on one claim: **a lot of people started playing pickleball, and there is nowhere near enough court space for them.** Both halves of that are true. But the numbers people quote for the first half are a mess, and you promised yourself in Lesson 18 that you would notice.
+
+**Start with one organization, stated cleanly.** The **Sports & Fitness Industry Association (SFIA)** publishes an annual *Topline Participation Report*. Its pickleball series:
+
+| Year | SFIA participants | Change |
+|---|---|---|
+| 2020 | ~4.2 million | — |
+| 2023 | ~13.6 million | — |
+| 2024 | **19.8 million** | +45.8% over 2023 (SFIA, 2025) |
+| 2025 | **24.3 million** | +479% over 2020 (SFIA, 2026) |
+
+That is a real, coherent, single-source series, and it is the one to quote. Pickleball has been the **fastest-growing sport in the U.S. for several consecutive years** on SFIA's own measure.
+
+**Now the trap.**
+
+For **2022**, SFIA reported **8.9 million** pickleball participants. For essentially **the same window**, a study commissioned by the **Association of Pickleball Professionals** and conducted by **YouGov** (a poll of about 2,500 nationally representative U.S. adults) reported **36.5 million** Americans had played pickleball **at least once** between August 2021 and August 2022 (as reported in The Dink, 2023).
+
+**36.5 million versus 8.9 million. For the same sport, in the same year. A factor of four.**
+
+Neither organization is lying. **They counted different things.** The 36.5M figure counts anyone who picked up a paddle **even once in twelve months**. SFIA applies stricter participation thresholds. Both are defensible; **they are simply not the same quantity**, and almost nobody who repeats either number tells you which one they are holding.
+
+**SFIA itself makes the point for you**, because it publishes the split. For 2025 it reported roughly **16.8 million casual** participants (playing 1–7 times a year) and about **7.48 million core** participants (8+ times a year). Those are both "pickleball players." One of those groups will buy a paddle and a membership. The other played once at a barbecue.
+
+**So the rule for any number you cite in this section — or in a pitch deck:**
+
+1. **The year.** ("Pickleball has 36 million players" is, at best, an aging 2022 figure.)
+2. **The organization.** (SFIA and APP/YouGov are not interchangeable.)
+3. **The threshold.** ("Played once in a year" and "plays weekly" are different businesses.)
+
+Drop any one of the three and you are quoting folklore — which, as you learned from a dog, is what most confident numbers turn out to be.
+
+**Now the number that actually matters to a builder.** In its **2023 State of Pickleball: Participation & Infrastructure Report**, SFIA concluded that meeting demand would require roughly **25,000 new courts** and on the order of **$900 million** in court infrastructure investment (SFIA, 2023).
+
+**That is the whole opportunity in one sentence: the players arrived and the courts did not.** The next three lessons are about the three ways in.
+
+:::reveal For 2022, one source says 8.9 million Americans played pickleball and another says 36.5 million. Both are honest. Explain the gap, and state the three things any participation number must carry. ||| They counted different things. SFIA's 8.9 million applies stricter participation thresholds; the 36.5 million figure comes from an Association of Pickleball Professionals / YouGov survey counting anyone who played AT LEAST ONCE in a twelve-month window. Same sport, same year, a factor of four, no dishonesty — just different definitions. Any participation number must carry: (1) the YEAR, (2) the ORGANIZATION that produced it, and (3) the THRESHOLD it used to count someone as a player.
+
+## Sources
+- Sports & Fitness Industry Association. (2023, August 10). *2023 state of pickleball: Participation & infrastructure report*. https://sfia.org/resources/pickleball-sees-unprecedented-growth-will-require-25000-courts-built-900-million-investment-to-keep-up-with-demand/
+- Sports & Fitness Industry Association. (2025). *2025 topline participation report*. https://sfia.org/resources/sfias-topline-participation-report-shows-247-1-million-americans-were-active-in-2024/
+- Sports & Fitness Industry Association. (2026). *U.S. pickleball participation*. https://sfia.org/research/u-s-pickleball-participation/
+- The Dink. (2023). *New study reveals 36.5 million people played pickleball last year* [reporting an Association of Pickleball Professionals / YouGov study]. https://www.thedinkpickleball.com/app-participation-report-2023/`,
+      recallContent: [
+        {
+          prompt: "What three things must every pickleball participation number carry?",
+          answer:
+            "The year, the organization that produced it, and the threshold it used to count a 'player.' Drop any one and you are quoting folklore — SFIA said 8.9 million for 2022 while an APP/YouGov survey said 36.5 million for the same window, purely because of definitions.",
+        },
+        {
+          prompt: "What is the core infrastructure finding that defines the opportunity?",
+          answer:
+            "SFIA's 2023 State of Pickleball report estimated roughly 25,000 new courts and on the order of $900 million of investment would be needed to meet demand. The players arrived and the courts did not.",
+        },
+      ],
+    },
+    {
+      slug: "pb-courts-conversion-and-noise",
+      title: "27 · Courts: conversion, construction, and the problem nobody plans for",
+      section: "The Opportunity: Courts, Coaching, and Paddles",
+      body: `The court shortage (Lesson 26) is the most obvious business in pickleball, and it is the one where beginners lose the most money — because they diligence the **asphalt** and not the **neighbors**.
+
+**The geometry, and the honest version of the conversion pitch.**
+
+The **playing surface** is 20 ft × 44 ft (USA Pickleball, 2026, Rule 3.A.1). But you cannot build a court that size, because players run. USA Pickleball's **court-construction guidance** (a separate document from the rulebook — note that, and do not cite a rule number for it) recommends a **minimum total area of 30 ft × 60 ft** per court, with **34 ft × 64 ft preferred**.
+
+Now do the conversion arithmetic everybody does. A regulation **tennis court is about 60 ft × 120 ft** overall. Divide by the 30 × 60 minimum and you get the famous pitch: **"four pickleball courts per tennis court."**
+
+**It is true and it is misleading.** Four courts fit *only at the bare minimum spacing*, which pushes run-off into the fence, into the neighboring court, and into other players. Builders routinely note that the four-court layout creates overruns and safety problems, and that **two or three courts** with real run-off is the honest number for a good facility. **The "4x" figure is a geometry claim being sold as a capacity claim.** You have seen this move before.
+
+**Now the thing that actually kills these projects: noise.**
+
+Pickleball's sound is not loud in the way a highway is loud. It is **impulsive** — a sharp, high-frequency *crack*, repeated relentlessly. The American Planning Association's own coverage puts the numbers plainly: a single pickleball strike is about **20 decibels louder than a tennis strike**, strikes occur **up to 900 times per hour per court**, and converting one tennis court into four pickleball courts therefore produces roughly **3,600 sharp, high-frequency impulses every hour** (American Planning Association, 2025).
+
+The frequency lands squarely where human hearing is most sensitive, and the sound is **brief, irregular, and impossible to tune out** — the profile that triggers a stress response rather than fading into background. The APA notes sound can carry as far as **1,000 feet** depending on weather and reflections, though **serious conflict is unlikely beyond about 800 feet** (American Planning Association, 2025).
+
+**And it goes to court.** This is not hypothetical:
+
+- Neighbors have sued over converted courts, and **cities have lost.** Boise settled a homeowners' lawsuit by agreeing to **convert pickleball courts back to tennis** at two athletic complexes (KTVB, n.d.).
+- Municipalities have **banned** play at specific parks after noise complaints.
+- Country clubs converting tennis courts to pickleball have faced organized neighbor campaigns.
+
+**The genuine conflict with tennis clubs** is now legible, and it is not pettiness. Convert a tennis court and you get roughly four times the players per square foot — great for the facility's revenue, and an existential complaint for tennis members who just lost a court. Add a noise profile that tennis never had and you have a fight with **two** constituencies: your own members and the people who live across the street.
+
+**So the actual diligence checklist for anyone building or converting courts:**
+
+| Do this **first** | Not this |
+|---|---|
+| Read the **local zoning and noise ordinance**; find the setback | Pour the slab and hope |
+| Measure the distance to the **nearest residence** (800 ft is the APA's rough conflict horizon) | Assume "it's just a park" |
+| Talk to neighbors **before** the permit hearing | Meet them at the permit hearing |
+| Budget for **acoustic mitigation** (barriers, fencing, quieter paddle/ball requirements, restricted hours) | Treat mitigation as optional |
+| Plan **2–3 courts with real run-off** | Cram in 4 and call it capacity |
+
+**The business lesson, and it generalizes far beyond pickleball:** the binding constraint on a new market is rarely demand. Demand is the *easy* part here — SFIA counted it. The binding constraint is the **externality nobody priced**, and the people who lose money in the pickleball court business are, overwhelmingly, the ones who thought their risk was construction cost.
+
+:::reveal You are pitched on converting a tennis court into four pickleball courts. Name the two things wrong with the pitch and the one risk that most often kills the project. ||| First, "four courts per tennis court" is a geometry claim, not a capacity claim: four fit only at the bare 30 x 60 ft minimum spacing, which creates unsafe run-off overruns — two or three courts with real run-off is the honest number. Second, the playing surface is 20 x 44 ft (Rule 3.A.1) but the recommended BUILD area is 30 x 60 ft minimum / 34 x 64 ft preferred, which comes from USA Pickleball's court-construction guidance, not the rulebook. The risk that kills projects is NOISE: a pickleball strike is roughly 20 dB louder than tennis and repeats up to 900 times per hour per court — about 3,600 impulses per hour across four courts — which has produced lawsuits, bans, and at least one city (Boise) settling by converting courts back to tennis.
+
+## Sources
+- American Planning Association. (2025, November). *Why the pop, pop, pop of pickleball needs a zoning solution*. Planning. https://www.planning.org/planning/2025/nov/why-the-pop-pop-pop-of-pickleball-needs-a-zoning-solution/
+- KTVB. (n.d.). *"This was my home court": Pickleball courts being converted back to tennis over noise lawsuit*. https://www.ktvb.com/article/news/local/pickleball-courts-being-converted-back-tennis-over-noise-lawsuit/277-54c11fd0-09ca-4e90-a530-582dbb5ee0fd
+- Sports & Fitness Industry Association. (2023, August 10). *2023 state of pickleball: Participation & infrastructure report*. https://sfia.org/resources/pickleball-sees-unprecedented-growth-will-require-25000-courts-built-900-million-investment-to-keep-up-with-demand/
+- USA Pickleball. (2026). *2026 USA Pickleball official rulebook*, Rule 3.A.1. https://usapickleball.org/docs/rules/USAP-Official-Rulebook.pdf`,
+      recallContent: [
+        {
+          prompt: "Why is 'four pickleball courts per tennis court' misleading?",
+          answer:
+            "It is a geometry claim sold as a capacity claim. Four courts fit only at the bare minimum 30 x 60 ft total area per court, which forces unsafe run-off overruns. Two or three courts with adequate run-off is the honest number for a facility people will actually use.",
+        },
+        {
+          prompt: "What is the risk that most often kills a pickleball court project?",
+          answer:
+            "Noise. The strike is impulsive and high-frequency — about 20 dB louder than tennis, up to 900 times per hour per court (APA, 2025) — and it has produced lawsuits, municipal bans, and settlements requiring courts be converted back to tennis. Diligence the zoning, setbacks, and neighbors before the slab.",
+        },
+      ],
+    },
+    {
+      slug: "pb-coaching-leagues-events",
+      title: "28 · Coaching, leagues, and events: the businesses you can start on Saturday",
+      section: "The Opportunity: Courts, Coaching, and Paddles",
+      body: `Building courts is capital-intensive, slow, and — as Lesson 27 showed — legally hazardous. The rest of the pickleball economy is not. **The best risk-adjusted opportunities in this sport require a paddle, a net, some insurance, and the willingness to organize other people.**
+
+**1. Coaching.** This is the clearest supply-demand gap in the sport. Participation grew (Lesson 26). The supply of coaches did not grow with it, because coaching requires a person and people take time. Meanwhile the *thing* you would teach is exactly the thing this course has been teaching: **most players plateau for identifiable, correctable reasons** (Lesson 21).
+
+**Certification** is not legally required to coach, but it is what facilities, clubs, and parks departments ask for — and it is how you get **liability insurance**, which matters the first time someone rolls an ankle on your court. Two bodies dominate:
+
+| Body | Position |
+|---|---|
+| **PPR** (Professional Pickleball Registry) | The **official education and certification partner of USA Pickleball**; membership bundles liability coverage |
+| **IPTPA** (International Pickleball Teaching Professional Association) | An independent certifier; tiered levels, with a written exam, a skills test, and an **observed teaching lesson** |
+
+Both certify through some combination of coursework, a **written exam**, an **on-court skills test**, and an **observed lesson** — you have to prove you can *teach*, not just play. Both publish their fees, and both fees have changed; expect a few hundred dollars, and **check the current number on the certifier's own page rather than trusting any figure you read anywhere — including this sentence.** (That is the authoritative-source habit from Section 4, applied to your own wallet.)
+
+**2. Leagues and ladders.** The quietly excellent business. You do not own courts; you **organize time on somebody else's courts.** Recurring revenue, minimal capital, and you are supplying the thing rec players actually want and cannot get: **a reliable game against people at their level, on a schedule.** Open play is chaos. A league is a product.
+
+**3. Tournaments and events.** Higher effort, lumpier revenue, real upside — and a genuine on-ramp, because you can start **unsanctioned** (Lesson 23), learn the operational reality on a small local event, and grow toward sanctioning later. Charity and corporate events are a large and under-served slice.
+
+**4. Programming for facilities that already exist.** Gyms, HOAs, apartment complexes, parks departments, breweries, and community centers now know they are *supposed* to have pickleball and mostly have no idea how to run it. Selling **programming** to an owner who already has the asphalt sidesteps every risk in Lesson 27 — the zoning fight, the noise litigation, the capital — and leaves you with the part that actually generates cash.
+
+**The honest risks, because there always are some:**
+
+- **You are building on courts you do not control.** A facility can raise your rate, book over you, or start its own league with your playbook. Get it in writing and diversify venues.
+- **Coaching does not scale by itself.** Your revenue is your calendar until you build clinics, group sessions, or other coaches.
+- **The market is no longer empty.** "Underserved" is not "unoccupied" — it means you need to be *better organized*, not merely *first*.
+
+**But notice the shape of it.** In Lesson 24 you saw the top of the pyramid: a few dozen seats, a bidding war, a correction. Down here, the constraint is not capital, credentials, or talent. It is **whether you will do the organizing that nobody else wants to do.** That is a very different kind of barrier — and it is one you can simply decide to clear.
+
+:::reveal Why are leagues and coaching better risk-adjusted businesses than building courts — and what is the biggest structural risk of running them? ||| Because they need almost no capital and they sidestep the two things that kill court projects: zoning/noise liability and construction cost. You organize time on courts somebody else already owns, and coaching addresses a real supply gap (participation grew far faster than the coach supply). The biggest structural risk is exactly the flip side of that advantage: you are building on courts you do not control, so a facility can raise your rate, book over you, or copy your league — which is why you get terms in writing and diversify venues.
+
+## Sources
+- IPTPA. (n.d.). *Certification program*. https://iptpa.com/certification.html
+- Professional Pickleball Registry. (n.d.). *Pricing*. https://pprpickleball.org/pricing/
+- Sports & Fitness Industry Association. (2026). *U.S. pickleball participation*. https://sfia.org/research/u-s-pickleball-participation/`,
+      recallContent: [
+        {
+          prompt: "Do you need a certification to coach pickleball, and what does it actually get you?",
+          answer:
+            "It is not legally required, but it is what clubs, facilities, and parks departments ask for, and it is how you get liability insurance. PPR is USA Pickleball's official education and certification partner; IPTPA is an independent certifier. Both test with a written exam, a skills test, and an observed teaching lesson — you must prove you can teach, not just play.",
+        },
+        {
+          prompt: "Why is running a league a strong low-capital business?",
+          answer:
+            "It generates recurring revenue on courts you do not own or maintain, and it supplies what rec players genuinely cannot get from open play: a reliable, scheduled game against people at their level. Open play is chaos; a league is a product.",
+        },
+      ],
+    },
+    {
+      slug: "pb-paddle-industry",
+      title: "29 · Paddle tech: the loophole, the trampoline, and the regulator",
+      section: "The Opportunity: Courts, Coaching, and Paddles",
+      body: `Back in Lesson 2 you were told to hold on to a word: **delamination**. Here is why. The paddle business is the most instructive story in pickleball, because it is a case study in what happens when a rule **caps the wrong dimension**.
+
+**The loophole.** The rulebook caps paddle **size** — combined length plus width no more than 24 in, length no more than 17 in — and it explicitly imposes **no restriction on paddle thickness** and **no restriction on paddle weight** (USA Pickleball, 2026, Rules 3.D.2, 3.D.3). What it *does* police is the **hitting surface**: no holes, cracks, **delamination**, or indentations that break the paddle skin, no rough texturing or sandpaper characteristics, no rubber, no moving parts, and nothing "that allow[s] a player to impart excessive spin on the ball" (Rule 3.D.5).
+
+Read that list as an engineer and you will see what manufacturers saw: **the rules constrain the outline and the skin, and say almost nothing about what is inside.**
+
+**The trampoline.** So the industry went inside. Thermoformed construction, injected foam, carbon-fiber faces, unibody builds. The prize was the **trampoline effect** — USA Pickleball's own definition: the surface of a paddle **"deforms and then rapidly returns to its original shape upon contact with the ball,"** artificially amplifying ball speed (USA Pickleball, n.d.). A paddle that springs is a paddle that hits harder for free.
+
+**And now the genuinely strange part.** **Delamination** — the paddle's face separating from its honeycomb core — is a **manufacturing defect**. It creates an air gap between layers. And an air gap is a **spring**. So a *broken* paddle is often a **more powerful** paddle.
+
+Sit with the incentive that creates. In a sport where a defect improves performance, "my paddle is falling apart" stops being a complaint and starts being an **advantage** — which is precisely why the rulebook names delamination in the same breath as sandpaper and moving parts (Rule 3.D.5). It is not a durability rule. **It is an anti-cheating rule wearing a durability costume.**
+
+**The regulator catches up.** Banning delamination by *description* is nearly useless, because you cannot see it — you need to measure what the paddle *does*. So USA Pickleball introduced a **performance** test instead of a cosmetic one: **PBCoR** (Paddle/Ball Coefficient of Restitution), launched in **Q4 2024** and developed in collaboration with SFIA, the testing lab Element, and manufacturers. It measures the trampoline directly — how much energy the paddle returns to the ball.
+
+The limit has been **ratcheted down** on a published schedule:
+
+| PBCoR limit | Effective |
+|---|---|
+| **0.44** | November 1, 2024 |
+| **0.43** | November 1, 2025 |
+
+**And the enforcement is real, not theatrical.** USA Pickleball **sunset seven paddles** from its Approved Paddle List for sanctioned tournament play, effective **July 1, 2025** — the **JOOLA** Perseus 14 mm and 16 mm Mod TA-15, the **Gearbox** Pro Power Elongated, and the **ProKennex** Black Ace Ovation, Pro, LG, and XF (USA Pickleball, n.d.). Those are not obscure paddles. Those were **flagship products.**
+
+**The business lesson, which is the point of the whole lesson.**
+
+If you are thinking about the equipment side, understand what kind of market this is: **a regulated hardware market in which the governing body can delist your flagship SKU between seasons, retroactively, and there is no appeal** — the rulebook says USA Pickleball's decisions "are final and cannot be appealed" (Lesson 19). Your R&D is a race toward a performance ceiling that the regulator is actively **lowering**. Every inch of advantage you engineer is an inch the test is designed to take back.
+
+That is a brutal business to enter on the strength of loving pickleball. It is also why the **adjacent** layer — bags, grips, court equipment, nets, resurfacing, apparel, ball machines, facility supply — is where a lot of durable small businesses actually live: **the same growth curve, none of the certification risk.**
+
+**And for you as a player, one flat practical rule:** for sanctioned play, your paddle must be on the **USA Pickleball Approved Paddle List** (Rule 3.D.1). The list **changes**. Check it before an event — because "it was approved when I bought it" is, as seven flagship paddles discovered, not a defense.
+
+:::reveal Delamination is a manufacturing DEFECT — so why does the rulebook ban it alongside sandpaper and moving parts, and how does USA Pickleball actually enforce a ban on something you cannot see? ||| Because a delaminated paddle is more powerful, not less: the face separates from the honeycomb core, leaving an air gap that acts as a spring and amplifies the trampoline effect. So the defect is a performance ADVANTAGE, which makes Rule 3.D.5 an anti-cheating rule rather than a durability rule. Since you cannot reliably see delamination, USA Pickleball stopped policing appearance and started measuring behavior: the PBCoR (Paddle/Ball Coefficient of Restitution) test, launched Q4 2024, measures the trampoline directly, with the limit set at 0.44 effective November 1, 2024 and tightened to 0.43 effective November 1, 2025.
+
+## Sources
+- USA Pickleball. (n.d.). *Paddle certification updates*. https://usapickleball.org/equipment/paddle-certification-updates/
+- USA Pickleball. (n.d.). *Paddle-ball coefficient of restitution (PBCoR) test protocol*. https://equipment.usapickleball.org/docs/pbcor-testing.pdf
+- USA Pickleball. (2025). *USA Pickleball equipment standards manual*. https://usapickleball.org/docs/rules/USAP-Equipment-Standards-Manual.pdf
+- USA Pickleball. (2026). *2026 USA Pickleball official rulebook*, Rules 3.D.1, 3.D.2, 3.D.3, 3.D.5. https://usapickleball.org/docs/rules/USAP-Official-Rulebook.pdf`,
+      recallContent: [
+        {
+          prompt: "Why is a delaminated paddle a problem for the sport rather than just for its owner?",
+          answer:
+            "Because delamination makes the paddle MORE powerful. The face separates from the core, creating an air gap that acts as a spring and amplifies the trampoline effect. A defect that improves performance creates an incentive to seek it, which is why Rule 3.D.5 bans delamination alongside sandpaper and moving parts.",
+        },
+        {
+          prompt: "What is PBCoR, and why did USA Pickleball introduce it?",
+          answer:
+            "The Paddle/Ball Coefficient of Restitution test, launched in Q4 2024, which measures the trampoline effect directly — how much energy a paddle returns to the ball. It was introduced because you cannot reliably police delamination by appearance; you have to measure behavior. The limit was 0.44 from November 1, 2024 and 0.43 from November 1, 2025.",
+        },
+      ],
+    },
+    {
+      slug: "pb-quiz-opportunity",
+      title: "30 · Quiz: The opportunity",
+      section: "The Opportunity: Courts, Coaching, and Paddles",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "For 2022, SFIA reported 8.9 million pickleball participants while an APP/YouGov study reported 36.5 million. What explains the gap?",
+            options: [
+              "They used different thresholds — the 36.5M figure counted anyone who played at least once in a 12-month window",
+              "One of the two organizations fabricated its data",
+              "The 36.5M figure counted players worldwide, not just in the U.S.",
+              "SFIA excluded doubles players",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Neither is lying; they counted different things. SFIA applies stricter participation thresholds. A number is only as objective as its definition — the same lesson as the dog and the ratings.",
+            sourceLessonSlug: "pb-the-growth-numbers",
+          },
+          {
+            prompt: "What three things must any pickleball participation number carry to be worth quoting?",
+            options: [
+              "The year, the organization, and the threshold used to count a player",
+              "The year, the sport, and the state",
+              "The organization, the sample size, and the price of a paddle",
+              "Nothing — participation numbers are self-explanatory",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Drop any one of the three and you are quoting folklore. 'Pickleball has 36 million players' is, at best, an aging 2022 figure using the loosest possible definition.",
+            sourceLessonSlug: "pb-the-growth-numbers",
+          },
+          {
+            prompt: "According to SFIA, how many Americans played pickleball in 2025?",
+            options: ["24.3 million", "8.9 million", "36.5 million", "13.6 million"],
+            correctIndex: 0,
+            explanation:
+              "SFIA's series: roughly 4.2 million in 2020, 13.6 million in 2023, 19.8 million in 2024, and 24.3 million in 2025 — about +479% over 2020. That is the coherent single-source series to quote.",
+            sourceLessonSlug: "pb-the-growth-numbers",
+          },
+          {
+            prompt: "What is the difference between a 'casual' and a 'core' participant in SFIA's data?",
+            options: [
+              "Casual is 1-7 times a year; core is 8 or more times a year",
+              "Casual plays recreationally; core plays professionally",
+              "Casual is unrated; core has a UTPR",
+              "There is no such distinction",
+            ],
+            correctIndex: 0,
+            explanation:
+              "For 2025 SFIA reported roughly 16.8 million casual and about 7.48 million core participants. Both groups are 'pickleball players,' but only one of them is buying a membership — which is why the threshold matters to a business.",
+            sourceLessonSlug: "pb-the-growth-numbers",
+          },
+          {
+            prompt: "What did SFIA's 2023 State of Pickleball report conclude about infrastructure?",
+            options: [
+              "Roughly 25,000 new courts and on the order of $900 million of investment would be needed to meet demand",
+              "There was already a surplus of courts",
+              "Court demand would be met by converting golf courses",
+              "No new courts would be needed before 2030",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That gap — the players arrived and the courts did not — is the entire commercial opportunity in this section.",
+            sourceLessonSlug: "pb-the-growth-numbers",
+          },
+          {
+            prompt: "The playing surface is 20 ft × 44 ft. What total area does USA Pickleball's court-CONSTRUCTION guidance recommend per court?",
+            options: [
+              "A minimum of 30 ft × 60 ft, with 34 ft × 64 ft preferred",
+              "Exactly 20 ft × 44 ft — no run-off is needed",
+              "A minimum of 60 ft × 120 ft",
+              "A minimum of 24 ft × 50 ft",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 20 x 44 ft playing surface is Rule 3.A.1 of the rulebook. The recommended BUILD area comes from USA Pickleball's court-construction guidance — a separate document — because players need run-off room.",
+            sourceLessonSlug: "pb-courts-conversion-and-noise",
+          },
+          {
+            prompt: "Why is 'four pickleball courts fit on one tennis court' a misleading pitch?",
+            options: [
+              "Four fit only at bare-minimum spacing, which creates unsafe run-off overruns; two or three with real run-off is the honest number",
+              "It is false — no pickleball court fits on a tennis court",
+              "Tennis courts cannot legally be converted",
+              "It understates capacity; six actually fit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a geometry claim being sold as a capacity claim. The four-court layout pushes run-off into fences, neighboring courts, and other players.",
+            sourceLessonSlug: "pb-courts-conversion-and-noise",
+          },
+          {
+            prompt: "What makes pickleball noise so much more disruptive than tennis noise?",
+            options: [
+              "It is impulsive and high-frequency — roughly 20 dB louder per strike than tennis, repeating up to 900 times per hour per court",
+              "It is a low, constant rumble that carries through walls",
+              "It is quieter, but players shout more",
+              "There is no meaningful difference in noise",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Per the American Planning Association (2025). Converting one tennis court into four pickleball courts produces roughly 3,600 sharp impulses per hour, in the frequency range where human hearing is most sensitive, and the sound is brief and irregular — impossible to tune out.",
+            sourceLessonSlug: "pb-courts-conversion-and-noise",
+          },
+          {
+            prompt: "Roughly how far can pickleball noise create serious neighbor conflict, per the American Planning Association?",
+            options: [
+              "Up to about 800 feet (sound may carry as far as 1,000 ft depending on conditions)",
+              "About 50 feet",
+              "About 5 miles",
+              "Only within the fence line of the court",
+            ],
+            correctIndex: 0,
+            explanation:
+              "APA (2025) notes sound can carry up to 1,000 feet depending on weather and reflections, though serious conflict is unlikely beyond roughly 800 feet. That distance is the first thing to measure before you build.",
+            sourceLessonSlug: "pb-courts-conversion-and-noise",
+          },
+          {
+            prompt: "What happened in Boise as a result of a pickleball noise lawsuit?",
+            options: [
+              "The city settled with homeowners and agreed to convert pickleball courts back to tennis at two complexes",
+              "The city won and expanded its pickleball program",
+              "The lawsuit was dismissed as frivolous",
+              "The state legislature banned pickleball",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Noise litigation is not hypothetical — cities have lost. This is why zoning, setbacks, and neighbor relations are the real diligence on a court project, not construction cost.",
+            sourceLessonSlug: "pb-courts-conversion-and-noise",
+          },
+          {
+            prompt: "Which body is USA Pickleball's official education and certification partner for coaches?",
+            options: [
+              "PPR (Professional Pickleball Registry)",
+              "IPTPA (International Pickleball Teaching Professional Association)",
+              "DUPR",
+              "The UPA",
+            ],
+            correctIndex: 0,
+            explanation:
+              "PPR is USA Pickleball's official education and certification partner, and membership bundles liability coverage. IPTPA is a well-established independent certifier. Certification is not legally required to coach, but it is what facilities ask for and how you get insured.",
+            sourceLessonSlug: "pb-coaching-leagues-events",
+          },
+          {
+            prompt: "Why is running a league an attractive low-capital business?",
+            options: [
+              "It generates recurring revenue on courts you do not own, and supplies the reliable, level-matched, scheduled game that open play cannot",
+              "Leagues require no organizing work at all",
+              "League operators are exempt from liability",
+              "USA Pickleball pays a subsidy per league",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Open play is chaos; a league is a product. The main structural risk is the flip side of the advantage — you are building on courts you do not control, so get terms in writing and diversify venues.",
+            sourceLessonSlug: "pb-coaching-leagues-events",
+          },
+          {
+            prompt: "The rulebook caps paddle length and combined length-plus-width. What does it explicitly NOT restrict — the gap the paddle industry drove through?",
+            options: [
+              "Thickness and weight",
+              "Surface roughness",
+              "The approved paddle list",
+              "The ball's material",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Rules 3.D.2 and 3.D.3 impose no restriction on thickness or weight. The rules constrain the outline and the skin (3.D.5) and say almost nothing about what is inside — so manufacturers went inside, chasing the trampoline effect.",
+            sourceLessonSlug: "pb-paddle-industry",
+          },
+          {
+            prompt: "Why does a DELAMINATED paddle create a cheating problem rather than just a warranty problem?",
+            options: [
+              "Delamination makes the paddle more powerful — the air gap between face and core acts as a spring",
+              "Delaminated paddles are heavier and therefore illegal by weight",
+              "Delamination makes the paddle weaker, so players demand refunds",
+              "It does not; Rule 3.D.5 is purely a durability rule",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A defect that improves performance creates an incentive to seek the defect. That is why Rule 3.D.5 lists delamination alongside sandpaper and moving parts — it is an anti-cheating rule wearing a durability costume.",
+            sourceLessonSlug: "pb-paddle-industry",
+          },
+          {
+            prompt: "What is the single most important thing to understand before entering the paddle-manufacturing business?",
+            options: [
+              "The governing body can delist your flagship paddle between seasons with no appeal, and it is actively lowering the performance ceiling (PBCoR 0.44 → 0.43)",
+              "Paddle designs are protected by USA Pickleball from regulatory change",
+              "Once a paddle is approved, it stays approved permanently",
+              "There is no equipment testing in pickleball",
+            ],
+            correctIndex: 0,
+            explanation:
+              "USA Pickleball sunset seven paddles — including JOOLA, Gearbox, and ProKennex flagships — effective July 1, 2025, and the rulebook says its decisions are final and cannot be appealed. Your R&D races toward a ceiling the regulator keeps lowering. The adjacent layer (bags, grips, nets, resurfacing, ball machines) rides the same growth with none of the certification risk.",
+            sourceLessonSlug: "pb-paddle-industry",
           },
         ],
       },
