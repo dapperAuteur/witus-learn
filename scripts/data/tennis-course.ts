@@ -871,10 +871,12 @@ The first half is true. The second half is where most people stop, and stopping 
 | **by 1996** | The **Australian Open is paying men more again**, citing **higher TV ratings for men's matches**. |
 | **2001** | The **Australian Open restores** equal prize money, this time permanently. |
 | **2006** | **Roland-Garros** pays its two **singles champions** equally — **but only the champions**. A woman losing in the third round is still paid less than a man losing in the third round. |
-| **2007** | **Roland-Garros** extends equal prize money **through the entire draw** (announced 16 March 2007). |
-| **2007** | **Wimbledon**, the last of the four, announces equal prize money at all stages (22 February 2007). |
+| **2007** | **Wimbledon** announces equal prize money at all stages (**22 February 2007**) — the last Slam to offer *any* equal prize money. |
+| **2007** | **Roland-Garros** extends equal prize money **through the entire draw** (announced **16 March 2007**) — the last Slam to reach *full-draw* equality. |
 
-*(Sources: US Open, 2023; ESPN, 2023; Tennis Majors, 2022, 2023.)*
+*(Sources: US Open, 2023; ESPN, 2023; Tennis Majors, 2022, 2023; The Washington Post, 2007.)*
+
+**"Which Slam was last?" is a trick question, and the dates are why.** **Wimbledon** was the last to offer equal prize money *at all* — it had none until **22 February 2007**. But **Roland-Garros** was the last to pay the *whole draw* equally, announcing that on **16 March 2007**, three weeks *after* Wimbledon. So the sport's tidiest sentence — "Wimbledon was the last" — is only true under one definition of "last." Both crossed the line in **2007**; that is the number that matters, and it is **34 years** after the US Open.
 
 **Three things in that table are routinely left out of the story, and each one is the interesting part.**
 
@@ -890,17 +892,23 @@ Look at the shape of that: **a champion uses the press to shame the sport's gate
 
 **And it is not finished.** Equal prize money at the four Slams is **not** equal pay in tennis. The Slams are four events in a season of dozens. Outside them the gap is large and current: in **2023**, Novak Djokovic won the Cincinnati title and received **$1.02 million**; Coco Gauff won the women's title **at the same combined event, the same week**, and received **$454,500** — less than half (ESPN, 2023).
 
+**And that gap is not just at the top of the draw — it is the whole payroll.** At that same 2023 Cincinnati event, the tournament paid out roughly **$6.6 million to the men's field and about $2.8 million to the women's** (Sportico, 2023). That is the number to reach for when someone points at the Slams and says the problem is solved: the champions' cheques are the *most* equal part of tennis, not the least. Gauff's own response was to reject the usual explanation — "*My matches were more crowded or the same as some of the top seeds on the men's side, so I don't think it's an attraction issue*" (Sportico, 2023).
+
+**One honest caveat about the numbers in this lesson.** Tournament-by-tournament *distribution* tables — how a purse is split across every round, at every event, for both tours — are **not published in one place**, and this course will not invent them. The figures above are the ones the tournaments and reporters actually published. Where you see a confident chart claiming to break down the full distribution of tennis prize money by gender across the whole calendar, ask where the underlying data came from; often the honest answer is that nobody has assembled it.
+
 The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize money: equal pay at **combined WTA 1000 and 500 events by 2027**, and at **non-combined ones by 2033** (WTA, 2023).
 
 **2033 is sixty years after 1973.** And a pathway is a **promise**, not an achievement. When you hear "tennis solved equal pay," the accurate reply is: *tennis solved equal prize money at four tournaments, over 34 years, and has publicly given itself until 2033 to solve the rest.*
 
-:::reveal The US Open paid equal prize money in 1973. Name the year each of the other three Slams did — and name the one that went equal and then went BACKWARDS. ||| **Australian Open: 1984** — then it **reverted to paying men more by 1996**, citing higher TV ratings for men's matches, and only restored equality permanently in **2001**. **Roland-Garros: 2006 for the champions only, 2007 for the full draw.** **Wimbledon: 2007**, the last of the four. From the US Open in 1973 to the last Slam in 2007 is **34 years** — and equal prize money across the rest of the tour still hasn't happened; the WTA has pledged 2027/2033.
+:::reveal The US Open paid equal prize money in 1973. Name the year each of the other three Slams did — and name the one that went equal and then went BACKWARDS. ||| **Australian Open: 1984** — then it **reverted to paying men more by 1996**, citing higher TV ratings for men's matches, and only restored equality permanently in **2001**. **Wimbledon: 2007** (announced 22 February) — the last Slam to offer any equal prize money. **Roland-Garros: 2006 for the champions only, 2007 for the full draw** (announced 16 March) — the last Slam to reach full-draw equality. From the US Open in 1973 to the last Slam in 2007 is **34 years** — and equal prize money across the rest of the tour still hasn't happened; the WTA has pledged 2027/2033.
 
 ## Sources
 - ESPN. (2023). *Fifty years after the Battle of the Sexes and equal pay at the US Open, gender equity remains elusive in tennis*. https://www.espn.com/tennis/story/_/id/38441339/fifty-years-battle-sexes-equal-pay-us-open-gender-equity-remains-elusive-tennis
 - Tennis Majors. (2022). *February 22, 2007: The day Wimbledon finally announced it would award equal pay*. https://www.tennismajors.com/wimbledon-news/february-22-2007-the-day-wimbledon-finally-announced-it-would-award-equal-pay-323512.html
 - Tennis Majors. (2023). *The day Roland-Garros finally offered equal prize money*. https://www.tennismajors.com/atp/atp-wta-roland-garros-finally-offered-equal-prize-money-592633.html
 - US Open. (2023, March 30). *Milestones in equality: A long climb to equal prize money at the four Grand Slams*. https://www.usopen.org/en_US/news/articles/2023-03-30/milestones_in_equality_a_long_climb_to_equal_prize_money_at_the_four_grand_slams.html
+- Sportico. (2023, August 29). *US Open prize money equality still isn't the standard in tennis*. https://www.sportico.com/leagues/tennis/2023/us-open-prize-money-gender-pay-gap-1234736498/
+- *The Washington Post*. (2007, March 17). *Finally, equal pay for all at French Open*. https://www.washingtonpost.com/archive/sports/2007/03/17/finally-equal-pay-for-all-at-french-open/b5c6c5b5-ae6b-428a-a0c1-d52553f8bba2/
 - *The Washington Post*. (2013, July 2). *How Venus Williams got equal pay for women at Wimbledon*. https://www.washingtonpost.com/news/reliable-source/wp/2013/07/02/how-venus-williams-got-equal-pay-for-women-at-wimbledon/
 - Women's Tennis Association. (2023, June 27). *WTA announces new tour calendar and pathway to equal prize money*. https://www.wtatennis.com/news/3557739/wta-announces-new-tour-calendar-and-pathway-to-equal-prize-money`,
       recallContent: [
