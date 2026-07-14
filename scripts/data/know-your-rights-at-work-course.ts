@@ -1646,5 +1646,435 @@ You are a freelance camera operator with one client. You are a contractor whose 
         ],
       },
     },
+    // ─────────── SECTION 6 · THE MODERN FIGHT (FRAN DRESCHER + MEREDITH STIEHM) ───────────
+    {
+      slug: "kyraw-your-face-is-not-public-domain",
+      title: "16 · Fran Drescher: your face is not public domain",
+      section: "Section 6 · When the job changes shape",
+      recallContent: [
+        {
+          prompt: "What was Sara Nelson's actual leverage in January 2019?",
+          answer:
+            "A credible, articulated threat. She made an already-existing vulnerability — degrading aviation safety — impossible for the other side to keep ignoring. No strike was ever called.",
+        },
+        {
+          prompt: "Leverage is about ___, not fairness.",
+          answer:
+            "Dependency. Ask what breaks if you stop, who notices, how fast, and whether they know it yet.",
+        },
+      ],
+      body: `Everything so far has been about a fight over the **terms** of a job: the pay, the hours, the safety, who gets laid off first. This section is about something newer and stranger — a fight over whether the **job still exists in the form the contract describes**.
+
+**Fran Drescher** — the actor, from *The Nanny* — was elected **President of SAG-AFTRA in September 2021** and re-elected in 2023. **She left office in September 2025**, succeeded by **Sean Astin** (SAG-AFTRA, 2025). She is a **former** president, and this course says so because getting the tense right about a living person is the minimum standard.
+
+In 2023 she led the **SAG-AFTRA strike: 118 days**, from **July 14 to November 9, 2023** — the longest actors' strike against the studios in Hollywood history, and the first time actors and writers had struck simultaneously since 1960.
+
+**And the central issue was not glamorous.** It was this: *studios wanted to scan performers' faces and bodies, and then use the scan.*
+
+**What the strike actually won, and it is a real, readable document.** The 2023 agreement built a consent-and-compensation framework around what it calls a **digital replica**. Here is the structure (Authors Guild, 2024):
+
+**An "employment-based digital replica"** is one created in connection with your employment — they scan you on set — and used to make you appear in scenes you did not actually perform.
+
+- **Consent is required**, and it must be **clear and conspicuous**, in the employment contract or a separate signed document.
+- The consent must include a **"reasonably specific description" of the intended use.** This is the load-bearing sentence in the whole framework, and you should understand exactly why. A blanket consent — *"Producer may use Performer's digital replica in any manner, in any media, in perpetuity"* — is precisely the thing this provision is designed to defeat. **"Reasonably specific" means they have to tell you what they are going to do with your face.**
+- **You get paid**, and you get **residuals** if the replica is used in ways that would have earned you residuals had you done the work yourself.
+- **Consent survives death** unless otherwise stated — which is why the estate provisions exist at all.
+
+**An "independently created digital replica"** is one made *without* employing you at all — a synthetic asset that creates the clear impression of an identifiable performer. Consent, in a signed document with a reasonably specific description of the use, is required **before creation and use**. There are carve-outs grounded in the First Amendment for comment, criticism, scholarship, satire, parody, docudrama, and historical or biographical work.
+
+**A "synthetic performer"** is a digitally created asset trained on multiple humans that is not recognizably any one of them. Producers must **notify the union** and bargain over compensation.
+
+**Why this belongs in a course for people who are not actors.**
+
+Because **you are being asked to sign this right now, and you are not being paid $200,000 to do it.**
+
+Read that list again and translate it out of Hollywood. A "digital replica" clause is a clause about **your voice, your face, your name, your likeness, and your work product being used to make a thing that replaces you.** Look at the contracts already circulating in ordinary working life:
+
+- The retail job whose onboarding paperwork licenses your image "for training and promotional purposes."
+- The customer-service job that records your calls — and the clause about using recordings to "improve our systems."
+- The freelance gig whose terms grant the client a "perpetual, irrevocable, worldwide, royalty-free license" to your work product **for any purpose**.
+- The content platform whose terms let it train models on everything you upload.
+- The school or employer app that collects your voice or face for "verification."
+
+**Every one of those is the same clause SAG-AFTRA struck 118 days over.** The performers had a union, a strike fund, and enormous public sympathy, and it still took them four months to win the word **"reasonably specific."**
+
+**So the practical skill this course wants you to leave with is simple, and it is a habit, not a fact:**
+
+When a document asks for your image, voice, name, likeness, or work product — **find the scope words.** *Perpetual. Irrevocable. Worldwide. Royalty-free. Sublicensable. In any media now known or hereafter devised. For any purpose. In its sole discretion.* Each of those words is doing enormous work, and none of them is there by accident.
+
+**Ask the question the 2023 agreement forced the studios to answer: what, specifically, are you going to do with it?** If the document will not say, that is the answer.
+
+**A note on a famous quote.** Drescher gave a widely-shared speech at the start of the strike. **Two different orderings of its most-quoted passage circulate**, and this course could not retrieve the primary video to settle which is right — so it does not reproduce the quote at all. That is the same rule the course applied to Crystal Lee Sutton's non-existent court case and Sara Nelson's unverifiable *Time* credit. **The agreement is the artifact. Teach the document, not the anecdote.**
+
+:::reveal A freelance contract grants the client a "perpetual, irrevocable, worldwide, royalty-free, sublicensable license to Contractor's name, voice and likeness for any purpose." What did SAG-AFTRA's 2023 agreement establish that this clause is missing? ||| **A "reasonably specific description" of the intended use** — plus consent that is clear and conspicuous, and compensation (including residuals) for the use. "For any purpose," in perpetuity, is exactly the blanket consent the digital-replica provisions were written to defeat. If the document will not tell you what it is going to do with your face, that refusal *is* the answer.
+
+## Sources
+- Authors Guild. (2024, January 17). *SAG-AFTRA agreement establishes important safeguards for actors around AI use*. https://authorsguild.org/news/sag-aftra-agreement-establishes-important-ai-safeguards/
+- SAG-AFTRA. (2025, September). *SAG-AFTRA members elect Sean Astin president and Michelle Hurd secretary-treasurer*. https://www.sagaftra.org/sag-aftra-members-elect-sean-astin-president-and-michelle-hurd-secretary-treasurer
+- SAG-AFTRA. (n.d.). *2023 TV/Theatrical contracts*. https://www.sagaftra.org/contracts-industry-resources/contracts/2023-tvtheatrical-contracts`,
+    },
+    {
+      slug: "kyraw-when-the-job-changes-shape",
+      title: "17 · Meredith Stiehm: when the employer restructures the job",
+      section: "Section 6 · When the job changes shape",
+      recallContent: [
+        {
+          prompt: "What does a \"reasonably specific description\" requirement do to a digital-replica consent?",
+          answer:
+            "It defeats blanket consent. The employer must say what, specifically, it will do with your likeness — rather than taking a perpetual, irrevocable licence \"for any purpose.\"",
+        },
+        {
+          prompt: "How long was the 2023 SAG-AFTRA strike, and who led it?",
+          answer:
+            "118 days (July 14 – November 9, 2023), led by then-president Fran Drescher. She left office in September 2025 and was succeeded by Sean Astin.",
+        },
+      ],
+      body: `Drescher's fight was about a thing being taken from you — your face. **Meredith Stiehm's is subtler, and in the long run it is the one that will touch more people's jobs.**
+
+Stiehm is a screenwriter and showrunner: **creator of *Cold Case*, co-creator of *The Bridge*, writer and executive producer on *Homeland*** (which she did not create — it was developed by Howard Gordon and Alex Gansa), with earlier credits on *NYPD Blue* and *ER*. She was elected **President of the Writers Guild of America West in September 2021**, re-elected in 2023, and **termed out in September 2025**, succeeded by **Michele Mulroney**. Like Drescher, she is a **former** president.
+
+She led the WGAW through the **148-day 2023 strike** (May 2 – September 27, 2023). *(Do not swap the numbers: **WGA = 148 days. SAG-AFTRA = 118 days.** They are constantly crossed.)*
+
+**Her fight was about the shape of the job.** Consider what had happened to television writing without a single word of the contract changing:
+
+| The old job | What it became |
+| --- | --- |
+| A writers' room of a dozen people, staffed for a full season | A **"mini-room"** — a handful of writers, hired for a few weeks, before a show is even greenlit |
+| 22 episodes a year | 8 or 10, so the same "one season" of work pays a fraction |
+| A writer on set, learning to produce | A writer sent home after the script, never becoming a showrunner |
+| Residuals you could compute from a broadcast schedule | Streaming residuals based on viewership data **the company would not show you** |
+
+**Notice what the employer did not do.** It did not cut the rate per script. It did not violate a clause. **It restructured the job so that the clauses stopped mapping onto it.** The contract said what a "season" pays. It did not say a season had to be twenty-two episodes, or that the room had to exist, or that you got to see the numbers your pay depended on.
+
+**This is the most sophisticated idea in this course, and it is the one most likely to happen to you:** the employer does not break the contract. The employer **changes the work until the contract no longer describes it** — and then points out, accurately, that it has broken nothing.
+
+**So the 2023 WGA agreement bargained over structure, not just price.** It set **minimum staffing levels and minimum durations** for writers' rooms — a floor under the *shape* of the job, not just its wage. It won **streaming viewership transparency**. And it wrote AI rules that are worth reading in the Guild's own words (WGA, n.d.):
+
+- **"No written material produced by traditional AI or GAI can be considered literary material."** AI is not a writer. This matters because "literary material" is the unit the entire contract — credits, compensation, separated rights — is built on. If AI output counted as literary material, a studio could generate a draft, hire a human to "polish" it, and pay a rewrite fee for what used to be a script fee. **They wrote AI out of the definition rather than trying to ban it.**
+- **AI-generated material is not "source material"** either, "meaning that AI-generated material can't be used to undermine a writer's credit or separated rights."
+- **"The company can't require the writer to use AI software (e.g., ChatGPT) when performing writing services."** A writer *may* choose to use it, with the company's consent. The choice belongs to the writer.
+- **"The Company must disclose to the writer if any materials given to the writer have been generated by AI or incorporate AI-generated material."** You get to know what you are being handed.
+- **"The WGA reserves the right to assert that exploitation of writers' material to train AI is prohibited by MBA or other law."** The training question was not conceded; it was preserved.
+
+**Look at the strategy in that list, because it is genuinely clever.** The WGA did not try to ban a technology — a fight it would have lost, and which would have been obsolete in eighteen months anyway. **It defined the technology's output as something that does not count**, protected the human's right to refuse it, and required disclosure. It legislated the *relationship* to the tool rather than the tool.
+
+**Now put the whole course together.**
+
+- **Wyatt**: the contract is the protection. A clause is worth more than a promise.
+- **Huerta**: when the law does not cover you, build the power outside the room — and a movement is not a saint.
+- **Sutton**: retaliation is real, the remedy is thin, and someone pays for the clause you inherit.
+- **Nelson**: leverage is dependency, not desert. Find the seam.
+- **Drescher**: read what you are signing away, and make them say what they will do with it.
+- **Stiehm**: **and watch for the employer who does not break the contract, but changes the job until the contract stops protecting you.**
+
+That last one is the one you should carry into whatever your work turns out to be. The clause you negotiate today describes a job. **Jobs change shape. Keep reading.**
+
+:::reveal Your employer never cuts your pay rate and never breaks a single clause of your agreement — but reorganizes the work so that the protections in it no longer apply to what you actually do all day. What is that, and what did the WGA do about it? ||| That is **bargaining over structure, not price** — the employer restructuring the job until the old contract stops mapping onto it. The WGA answered it structurally: minimum staffing levels and minimum durations for writers' rooms (a floor under the *shape* of the job), streaming viewership transparency, and AI rules that define AI output as not "literary material" or "source material," protect a writer's right to refuse to use AI, and require the company to disclose AI-generated material it hands you.
+
+## Sources
+- Writers Guild of America West. (n.d.). *Artificial intelligence* [Know Your Rights]. https://www.wga.org/contracts/know-your-rights/artificial-intelligence
+- Writers Guild of America West. (n.d.). *Summary of the 2023 WGA MBA*. https://www.wgacontract2023.org/the-campaign/summary-of-the-2023-wga-mba
+- Deadline. (2025, September). *Michele Mulroney officially elected president of WGA West*. https://deadline.com/2025/09/wga-2025-election-results-michele-mulroney-president-1236553449/`,
+    },
+    {
+      slug: "kyraw-read-the-ai-clause",
+      title: "18 · Practice: read the clause that takes your face",
+      section: "Section 6 · When the job changes shape",
+      recallContent: [
+        {
+          prompt: "How long was the 2023 WGA strike — and what is the number people constantly confuse it with?",
+          answer:
+            "The WGA strike was 148 days (May 2 – September 27, 2023). SAG-AFTRA's was 118 days. The two are routinely swapped.",
+        },
+        {
+          prompt: "Rather than trying to ban AI, what did the WGA's 2023 agreement do?",
+          answer:
+            "It defined AI output as NOT \"literary material\" or \"source material\" — so it cannot displace a writer's credit or fee — protected the writer's right to refuse to use AI, and required the company to disclose AI-generated material. It legislated the relationship to the tool, not the tool.",
+        },
+      ],
+      body: `The whole course comes down to a habit: **before you sign, find the clause.** This drill builds it.
+
+**The scope words.** When a document asks for your image, voice, name, likeness, or work product, these are the words that decide how much you are giving away:
+
+| Word | What it actually means |
+| --- | --- |
+| **Perpetual** | Forever. It never comes back to you. |
+| **Irrevocable** | You cannot change your mind. Ever. |
+| **Worldwide** | Everywhere. |
+| **Royalty-free** | They never have to pay you again. |
+| **Sublicensable** | They can hand it to someone else — someone you never agreed to. |
+| **In any media now known or hereafter devised** | Including technologies that do not exist yet. This clause is how a 1998 signature ends up training a 2026 model. |
+| **For any purpose** | The opposite of the "reasonably specific description" SAG-AFTRA struck 118 days to win. |
+| **Sole discretion** | They decide. You have no say. |
+
+**The four questions to ask of any likeness, AI, or IP clause:**
+
+1. **What exactly are they taking?** (My face? My voice? A recording? Everything I make on their equipment? Everything I make *at all*?)
+2. **What will they do with it?** If the document will not say specifically — that refusal is the answer.
+3. **For how long, and can I take it back?** (*Perpetual* and *irrevocable* mean: forever, and no.)
+4. **Do I get paid when they use it again?** (*Royalty-free* means: no.)
+
+Fill in each blank, then check. Spelling and capitalization are forgiving.
+
+**This course explains general legal principles. It is not legal advice.** State laws on likeness and publicity rights vary a great deal, and some states have passed new digital-replica laws that federal law does not have. If a real contract is in front of you, a lawyer, your union, or a legal-aid organization can advise you on your state and your facts.`,
+      exercise: {
+        instructions: "Fill in each blank, then check. Spelling and capitalization are forgiving.",
+        items: [
+          {
+            prompt: "SAG-AFTRA's 2023 agreement requires that consent to a digital replica include a \"reasonably ___ description\" of the intended use.",
+            answer: "specific",
+            explanation: "This is the phrase that defeats blanket consent. It forces the employer to say what it will actually do with your face.",
+          },
+          {
+            prompt: "A licence term meaning \"forever — it never returns to you\" is ___.",
+            answer: "perpetual",
+            explanation: "Paired with \"irrevocable,\" it means you have given it away permanently and cannot change your mind.",
+          },
+          {
+            prompt: "A licence term meaning \"you cannot change your mind, ever\" is ___.",
+            answer: "irrevocable",
+            explanation: "Look for it next to \"perpetual.\" They almost always travel together.",
+          },
+          {
+            prompt: "A licence term meaning \"they never have to pay you again for it\" is ___-free.",
+            answer: "royalty",
+            explanation: "Royalty-free is the opposite of the residuals SAG-AFTRA won for digital replica use.",
+          },
+          {
+            prompt: "A licence term meaning \"they can hand your likeness to a third party you never agreed to\" is ___.",
+            answer: "sublicensable",
+            explanation: "This is how a clause you signed with one company ends up benefiting a company you have never heard of.",
+          },
+          {
+            prompt: "The 2023 SAG-AFTRA strike lasted ___ days. (Write the number.)",
+            answer: "118",
+            explanation: "SAG-AFTRA = 118 days (July 14 – Nov 9, 2023). Do not cross it with the WGA's 148.",
+          },
+          {
+            prompt: "The 2023 WGA strike lasted ___ days. (Write the number.)",
+            answer: "148",
+            explanation: "WGA = 148 days (May 2 – Sept 27, 2023). The two strike lengths are constantly swapped.",
+          },
+          {
+            prompt: "Under the 2023 WGA agreement, AI output cannot be considered \"___ material\" — the unit on which credits and compensation are built.",
+            answer: "literary",
+            explanation: "Rather than banning AI, the WGA defined its output out of the category that pays and credits writers.",
+          },
+          {
+            prompt: "Under the 2023 WGA agreement, can a company REQUIRE a writer to use AI software? Answer yes or no.",
+            answer: "no",
+            explanation: "\"The company can't require the writer to use AI software... when performing writing services.\" The choice belongs to the writer.",
+          },
+          {
+            prompt: "Under the 2023 WGA agreement, a company must ___ to the writer if materials it hands them were generated by AI.",
+            answer: "disclose",
+            explanation: "You get to know what you are being handed. Disclosure is a right, not a courtesy.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "kyraw-quiz-modern-fight",
+      title: "19 · Quiz: when the job changes shape",
+      section: "Section 6 · When the job changes shape",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Is Fran Drescher the current president of SAG-AFTRA?",
+            options: [
+              "No — she served 2021–2025 and was succeeded by Sean Astin in September 2025",
+              "Yes, she was re-elected in 2025",
+              "Yes, she has served continuously since 2021",
+              "No — she resigned during the 2023 strike",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She is a former president. Getting the tense right about a living person is the minimum standard for a cited course.",
+            sourceLessonSlug: "kyraw-your-face-is-not-public-domain",
+          },
+          {
+            prompt: "Is Meredith Stiehm the current president of the WGA West?",
+            options: [
+              "No — she served 2021–2025, termed out, and was succeeded by Michele Mulroney",
+              "Yes, she is serving a third term",
+              "Yes, she was re-elected in 2025",
+              "No — she never held the office",
+            ],
+            correctIndex: 0,
+            explanation: "Also a former president. Both left office in September 2025.",
+            sourceLessonSlug: "kyraw-when-the-job-changes-shape",
+          },
+          {
+            prompt: "How long were the two 2023 strikes?",
+            options: [
+              "SAG-AFTRA 118 days; WGA 148 days",
+              "SAG-AFTRA 148 days; WGA 118 days",
+              "Both 118 days",
+              "SAG-AFTRA 100 days; WGA 200 days",
+            ],
+            correctIndex: 0,
+            explanation:
+              "SAG-AFTRA: July 14 – Nov 9, 2023. WGA: May 2 – Sept 27, 2023. These numbers are crossed more often than any other pair in this course.",
+            sourceLessonSlug: "kyraw-your-face-is-not-public-domain",
+          },
+          {
+            prompt: "Under SAG-AFTRA's 2023 agreement, what must consent to an employment-based digital replica include?",
+            options: [
+              "A clear and conspicuous consent with a \"reasonably specific description\" of the intended use",
+              "A verbal agreement on set",
+              "A blanket licence for any purpose, in perpetuity",
+              "Nothing — consent is not required if you are already employed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "\"Reasonably specific\" is the load-bearing phrase: it is designed to defeat exactly the blanket consent the studios wanted.",
+            sourceLessonSlug: "kyraw-your-face-is-not-public-domain",
+          },
+          {
+            prompt: "What is a \"synthetic performer\" under the 2023 SAG-AFTRA agreement?",
+            options: [
+              "A digitally created asset trained on multiple humans, not recognizably any one of them — producers must notify the union and bargain over compensation",
+              "A body double",
+              "A performer who works remotely",
+              "An animated character voiced by a union member",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is distinct from a digital replica, which is recognizably a specific identifiable person.",
+            sourceLessonSlug: "kyraw-your-face-is-not-public-domain",
+          },
+          {
+            prompt: "In a contract, what does \"in any media now known or hereafter devised\" do?",
+            options: [
+              "Extends the licence to technologies that do not exist yet — it is how an old signature ends up training a new model",
+              "Limits the licence to current technology only",
+              "Requires renegotiation when technology changes",
+              "Restricts the licence to broadcast television",
+            ],
+            correctIndex: 0,
+            explanation: "It is one of the most consequential phrases in modern contracts, and it is easy to skim past.",
+            sourceLessonSlug: "kyraw-read-the-ai-clause",
+          },
+          {
+            prompt: "A freelance contract takes a \"perpetual, irrevocable, worldwide, royalty-free, sublicensable\" licence to your work. What have you given up?",
+            options: [
+              "It forever, everywhere, with no further payment, with no ability to change your mind, and they may hand it to third parties you never agreed to",
+              "A one-year licence you can cancel",
+              "Nothing — these are standard terms with no legal effect",
+              "Only the right to sell the work yourself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every one of those five words is doing enormous work, and none of them is there by accident.",
+            sourceLessonSlug: "kyraw-read-the-ai-clause",
+          },
+          {
+            prompt: "What is a \"mini-room,\" and why did it matter to the WGA?",
+            options: [
+              "A small writers' room hired for a few weeks before a show is greenlit — an example of the employer restructuring the JOB so the old contract stopped protecting it",
+              "A small room where arbitration hearings are held",
+              "A union meeting of fewer than ten members",
+              "A streaming service's internal development team",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The studios broke no clause. They changed the work until the clauses no longer described it.",
+            sourceLessonSlug: "kyraw-when-the-job-changes-shape",
+          },
+          {
+            prompt: "Under the 2023 WGA agreement, can AI-generated text be \"literary material\"?",
+            options: [
+              "No — and that matters because \"literary material\" is the unit on which credits, compensation and separated rights are built",
+              "Yes, if a human edits it",
+              "Yes, if the company discloses it",
+              "Only for streaming productions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If AI output counted, a studio could generate a draft, hire a human to polish it, and pay a rewrite fee instead of a script fee.",
+            sourceLessonSlug: "kyraw-when-the-job-changes-shape",
+          },
+          {
+            prompt: "Under the 2023 WGA agreement, can a company require a writer to use ChatGPT to perform writing services?",
+            options: [
+              "No — but a writer may choose to use AI, with the company's consent",
+              "Yes, if it is in the writer's contract",
+              "Yes, for any streaming project",
+              "Only if the company pays a premium",
+            ],
+            correctIndex: 0,
+            explanation: "The choice belongs to the writer. That is the point of the provision.",
+            sourceLessonSlug: "kyraw-when-the-job-changes-shape",
+          },
+          {
+            prompt: "What is the WGA's strategy toward AI, as the course describes it?",
+            options: [
+              "It did not ban the technology — it defined AI output as something that doesn't count, protected the human's right to refuse it, and required disclosure",
+              "It banned all use of AI in film and television",
+              "It required studios to pay a per-use AI licence fee to the Guild",
+              "It took no position on AI",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It legislated the *relationship* to the tool rather than the tool — a fight it could actually win, and one that does not go obsolete in eighteen months.",
+            sourceLessonSlug: "kyraw-when-the-job-changes-shape",
+          },
+          {
+            prompt: "Why does this course NOT reproduce Fran Drescher's most famous strike quote?",
+            options: [
+              "Two orderings of the passage circulate and the primary video could not be retrieved, so the course teaches the agreement instead of the anecdote",
+              "Because the quote is copyrighted",
+              "Because she has asked that it not be reproduced",
+              "Because the quote is not relevant to the course",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same rule the course applied to Sutton's non-existent case and Nelson's unverifiable Time credit. Teach the document, not the anecdote.",
+            sourceLessonSlug: "kyraw-your-face-is-not-public-domain",
+          },
+          {
+            prompt: "Which single question does the course say to ask of any likeness or AI clause?",
+            options: [
+              "What, specifically, are you going to do with it? — and if the document will not say, that refusal is the answer",
+              "Is this contract standard in the industry?",
+              "Has anyone else signed this?",
+              "Is the company reputable?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the question the 2023 agreement forced the studios to answer, via the \"reasonably specific description\" requirement.",
+            sourceLessonSlug: "kyraw-read-the-ai-clause",
+          },
+          {
+            prompt: "Meredith Stiehm's fight is described as the most sophisticated idea in the course. What is it?",
+            options: [
+              "The employer does not break the contract — it changes the work until the contract no longer describes it, and then correctly points out that it has broken nothing",
+              "The employer refuses to sign any contract at all",
+              "The employer replaces all workers with AI",
+              "The employer relocates the work overseas",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Which is why the WGA bargained over STRUCTURE — minimum staffing, minimum room durations, data transparency — and not only over price.",
+            sourceLessonSlug: "kyraw-when-the-job-changes-shape",
+          },
+          {
+            prompt: "Which of these is Meredith Stiehm's actual credit?",
+            options: [
+              "Creator of Cold Case; co-creator of The Bridge; writer/EP on Homeland",
+              "Creator of Homeland",
+              "Creator of Bosch",
+              "Creator of NYPD Blue",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She did not create Homeland (Howard Gordon and Alex Gansa developed it), and Bosch is not her credit at all — it appears in some drafts and is wrong.",
+            sourceLessonSlug: "kyraw-when-the-job-changes-shape",
+          },
+        ],
+      },
+    },
   ],
 };
