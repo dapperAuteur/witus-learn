@@ -113,6 +113,9 @@ const PROPOSAL_META: Record<
   "travel-abroad-proposal": { key: "travel-abroad", group: "Travel & Living Abroad", status: "building" },
   "history-of-unions": { group: "Workers' Rights", status: "building" },
   "workers-rights-track-proposal": { group: "Workers' Rights" },
+  // Dropped in while the union work was building — and picked up with no code change, which is the
+  // whole point of auto-discovery. Under the old hardcoded generator it would have been invisible.
+  world: { group: "World History" },
   // Not course proposals — a live sales asset and the market research behind it. They're `feature`
   // so they don't clutter the course list, but they stay visible: BAM asked for one place for
   // "this type of stuff", and pricing is exactly the kind of thing that goes stale unseen.

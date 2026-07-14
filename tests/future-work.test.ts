@@ -22,6 +22,8 @@ describe("future-work content index", () => {
   it("carries the other standing proposals", () => {
     expect(getFutureWorkItem("civics-more")?.body).toContain("civics");
     expect(getFutureWorkItem("travel-abroad")?.body).toContain("Passport");
+    // The workers'-rights track: the built History of Unions anchor + the country courses.
+    expect(getFutureWorkItem("workers-rights-track-proposal")?.body).toContain("four questions");
   });
 
   // Top-level plans/future-courses/*.md are AUTO-DISCOVERED. Before this, the generator read two
@@ -63,6 +65,7 @@ describe("future-work content index", () => {
       "Civics",
       "Workers' Rights",
       "Travel & Living Abroad",
+      "World History",
     ]);
     // The pricing one-pager + its market research are `feature`, not course proposals.
     expect(futureWorkGroups("feature").map((g) => g.title)).toEqual(["Pricing"]);
