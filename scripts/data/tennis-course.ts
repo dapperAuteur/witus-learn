@@ -1761,5 +1761,559 @@ That is not a consolation prize. **That is the prize.**
         ],
       },
     },
+
+    // ────────────────── SECTION 8 · OPPORTUNITIES FOR ENTREPRENEURS ──────────────────
+    {
+      slug: "tennis-coaching-and-certification",
+      title: "36 · Coaching: the biggest job in tennis",
+      section: "Section 8 · Opportunities for entrepreneurs",
+      body: `Here is the number that reframes everything. In the U.S., the Bureau of Labor Statistics counts (Bureau of Labor Statistics [BLS], 2025):
+
+| Occupation | People employed | Median annual wage | Mean annual wage |
+| --- | --- | --- | --- |
+| **Coaches and scouts** | **248,950** | **$47,320** | $60,160 |
+| **Athletes and sports competitors** | **15,070** | $66,710 | **$206,180** |
+
+**There are about sixteen times more coaching jobs than athlete jobs.** Across all sports. That ratio is the entire thesis of this section.
+
+**And look hard at the athletes' row, because it is a statistics lesson hiding in a salary table.** The **mean** ($206,180) is **3.1 times the median** ($66,710). The 90th percentile earns **$742,310**; the 10th earns **$26,500** (BLS, 2025). When a mean is triple its median, you are looking at a **right-skewed distribution** — a small number of enormous earners dragging the average far above what a typical person in that job actually makes.
+
+**So whenever someone quotes you the "average" salary of a professional athlete, they are quoting a number that almost no professional athlete earns.** The median is the honest one. This is a trick that will be played on you for the rest of your life, in every industry. Tennis just gives you an unusually clean example.
+
+**How you actually become a coach.**
+
+**Certification.** Two organizations dominate in the U.S. — and one of them changed its name recently, so get this right:
+
+- **RSPA — the Racquet Sports Professionals Association.** This is the organization founded in **1927** as the **USPTA** (United States Professional Tennis Association). It **rebranded to RSPA on 16 September 2024** and now covers tennis, pickleball, padel, squash, and platform tennis. Over **14,000 members** (Racquet Sports Professionals Association [RSPA], n.d.). *If a website or an older adult says "USPTA," they mean RSPA.*
+- **PTR — the Professional Tennis Registry.** A presence in **125 countries** and over **16,000 members**. Its **Level 1 Certification** is the entry-level credential, and the pathway is: register → complete pre-course requirements (**Safe Play, background check, First Aid/CPR**) → attend workshops → pass a **skills** assessment and a **written** assessment (Professional Tennis Registry [PTR], n.d.).
+
+**And here is a distinction almost nobody knows.** **The USTA does not certify coaches.** It **accredits the organizations that do.** In the USTA's own words: *"'Accreditation' is an evaluation process where an entity (e.g., the USTA) defines standards… whereas 'certification' is a process by which an organization grants recognition of competence to an individual"* (United States Tennis Association [USTA], n.d.-d). Accreditation is **voluntary and free of charge**.
+
+Sit with that for a second, because it's a general lesson about how industries are actually structured: **the governing body sets the standard; independent organizations sell the credential; the coach buys it.** Understanding who certifies whom — and who profits at each layer — is a skill that transfers to every professional field you will ever enter.
+
+**Safe Play is not optional.** Any adult with regular contact with or authority over minor athletes in USTA programs, events, or tournaments must have **Safe Play Approval**, which requires **three** things: a **criminal background check**, acknowledgement of the **USTA Safe Play Policy**, and mandatory **U.S. Center for SafeSport training**. The training and policy acknowledgement are **annual**; the background screening is **every two years** (USTA, n.d.-e).
+
+If you want to coach kids, this is the first door, and it is a locked one. Start here, not with your forehand.
+
+:::reveal The BLS says the MEAN wage for athletes and sports competitors is $206,180 but the MEDIAN is $66,710. What does that gap tell you, and which number should you trust? ||| The mean is **3.1× the median**, which is the signature of a **right-skewed distribution**: a small number of superstar earners (90th percentile: $742,310) drag the *average* far above what a typical person in the job actually makes. **Trust the median.** Whenever someone quotes the "average" salary of a professional athlete, they're quoting a number almost no professional athlete earns.
+
+## Sources
+- Bureau of Labor Statistics. (2025). *Occupational employment and wage statistics: Coaches and scouts (27-2022); Athletes and sports competitors (27-2021)*. U.S. Department of Labor. https://www.bls.gov/oes/current/oes272022.htm
+- Professional Tennis Registry. (n.d.). *Certification*. https://www.ptrtennis.org/certification/
+- Racquet Sports Professionals Association. (n.d.). *RSPA vs PTR vs USTA*. https://rspa.net/rspa-vs-ptr-vs-usta/
+- United States Tennis Association. (n.d.-d). *USTA coaching accreditation program*. https://www.usta.com/en/home/about-usta/who-we-are/national/usta-coaching-accreditation-program.html
+- United States Tennis Association. (n.d.-e). *Safe Play*. https://www.usta.com/en/home/safe-play.html`,
+    },
+    {
+      slug: "tennis-the-racquet-trade",
+      title: "37 · The racquet trade: stringing as a real business",
+      section: "Section 8 · Opportunities for entrepreneurs",
+      body: `Every single player in every match you have ever watched is holding a piece of equipment that a **person had to build by hand**, and that **fails on a schedule**.
+
+Strings break. Strings also lose tension even when they don't break, which means serious players restring on a *calendar*, not on failure. The old coaching rule of thumb — restring as many times per year as you play per week — is a rule of thumb, not a law, but the underlying economics are real: **a recurring, non-optional service, purchased repeatedly by the same customer, for as long as they play the sport.**
+
+That is a **subscription business** wearing a tracksuit. And it's one of the very few businesses a high school student can actually start.
+
+**Why it's a genuine entry point:**
+
+- **The capital cost is a machine**, not a building, not a lease, and not a payroll.
+- **The customers already exist and are standing next to you** — your team, your opponents' teams, the adults in the USTA League at your local courts (Section 6: 320,000+ of them a year).
+- **You can learn it to a professional standard while you're still in school**, and the credential is real.
+
+**The credential.** The **U.S. Racquet Stringers Association (USRSA)** certifies at three levels (U.S. Racquet Stringers Association [USRSA], n.d.):
+
+| Certification | What it covers |
+| --- | --- |
+| **PRA** — Professional Racquet Advisor | For coaches and shop staff who **advise** on racquet and string technology but don't do the service work. |
+| **CS** — Certified Stringer | Proficiency in stringing and servicing racquets. |
+| **MRT** — **Master Racquet Technician** | The top credential: grommet and string installation, regripping, handle sizing, and **customizing weight, balance, and swingweight** — plus advanced knowledge of current frame and string technology. |
+
+Certified members must **maintain USRSA membership and pass an annual test** on manufacturers' current technologies (USRSA, n.d.). That annual re-test is worth noticing: it tells you the knowledge **decays**, which is precisely why the credential retains value.
+
+**Look at what an MRT actually is.** "Customizing weight, balance, and swingweight" is not stringing. That is a **racquet technician** modifying a professional's instrument to spec. It is a skilled trade, it is portable to any tournament on Earth, and — usefully — the **2025 US Open provided competitors with free stringing of up to five racquets per round** (US Open, 2025), which tells you exactly how essential tournaments consider that labor to be.
+
+**The honest caveat, because this course doesn't guess.** The USRSA does **not** publish its exam fees or membership dues publicly, so this lesson will not invent a number for what certification costs or what a stringer earns. **Look it up before you commit money.** That instinct — refusing to act on a figure you cannot source — is worth more than any number this lesson could have printed.
+
+:::reveal Why is racquet stringing structurally a good first business, and what is the top USRSA credential? ||| Because it's a **recurring, non-optional service**: strings break, and they lose tension even when they don't, so serious players restring on a schedule — the same customer, buying again, for as long as they play. It's a subscription business with a **machine** as its only real capital cost, and the customers are already standing next to you. The top credential is the **MRT (Master Racquet Technician)**, which covers not just stringing but **customizing a racquet's weight, balance, and swingweight** — a genuine skilled trade.
+
+## Sources
+- U.S. Racquet Stringers Association. (n.d.). *Types of certification*. https://www.racquettech.com/certification/types.php
+- US Open. (2025, August 6). *2025 US Open prize money sets record for largest purse in tennis history*. https://www.usopen.org/en_US/news/articles/2025-08-06/2025_us_open_prize_money_sets_record_for_largest_purse_in_tennis_history.html`,
+      recallContent: [
+        {
+          prompt: "How many coaching jobs are there compared with athlete jobs, per the BLS?",
+          answer:
+            "About 248,950 coaches and scouts vs. about 15,070 athletes and sports competitors — roughly sixteen times more coaching jobs than athlete jobs, across all sports.",
+        },
+        {
+          prompt: "Does the USTA certify tennis coaches?",
+          answer:
+            "No. It ACCREDITS the organizations that certify coaches (like RSPA and PTR). Accreditation is voluntary and free. The governing body sets the standard; independent organizations sell the credential.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-officiating",
+      title: "38 · Officiating: the career ladder nobody mentions",
+      section: "Section 8 · Opportunities for entrepreneurs",
+      body: `Every match needs officials. Almost nobody tells students that officiating is a **structured international career** with a published ladder you can climb — starting at your local junior tournament and ending, in principle, in the chair at a Grand Slam final.
+
+**The ITF's ladder.** The ITF runs officiating schools at **four levels** (International Tennis Federation [ITF], n.d.-e):
+
+| Level | Badge |
+| --- | --- |
+| National | *(national certification)* |
+| **Level 1** | **Green Badge** |
+| **Level 2** | **White Badge** |
+| **Level 3** | **Bronze → Silver → Gold Badge** |
+
+**Bronze, Silver, and Gold are the international badges** — these are the officials at the Grand Slams and on the ATP and WTA tours. Promotion to Silver and Gold is decided at an **end-of-year re-certification meeting** by a panel of the **Joint Certification Programme**, run by the ITF, ATP, WTA, and the Grand Slams together (ITF, n.d.-e).
+
+*(Note the correction to a common mistake: the ladder starts with a **Green** badge, below White. People routinely list it as "white, bronze, silver, gold" and drop the first rung.)*
+
+**Three distinct jobs, not one.** ITF certification covers the **Chair Umpire**, the **Chief Umpire**, and the **Referee** — different roles with different responsibilities. (Green Badge is offered only for Chair Umpire certification.) The chair umpire runs the match. The referee runs the *tournament* and is the final authority on questions of tennis law.
+
+**Why this is worth your attention right now:**
+
+1. **You can start as a teenager.** Local and junior tournaments need officials constantly, and that is the first rung.
+2. **It pays, and it travels.** A badged international official works tournaments around the world.
+3. **The job just got more interesting, not less.** You might assume electronic line calling (Section 1, Lesson 5) is killing officiating. Look again at what actually happened at **Wimbledon 2025**: Live ELC replaced the **line umpires' out/fault calls** — and the tournament kept roughly **70 officials on site**, redeployed as "match assistants" to support the umpires and step in during technical outages. **The chair umpire did not go anywhere.** The technology took the single most mechanical task in officiating and left every judgment-based task — code violations, hindrance, time violations, crowd management, deciding whether a player is being unreasonable — exactly where it was.
+
+That is a pattern you should learn to recognize, because you are going to spend your whole career watching it happen: **automation eats the measurable task first, and leaves the judgment.** The correct response is not to avoid the field. It is to **move up the ladder toward the judgment.**
+
+**And the ITF still publishes rules for it.** The 2026 rulebook contains full **Electronic Review Procedures** — including the rule that a player gets **three unsuccessful appeals per set** — for tournaments where a review system is used (ITF, 2026, Appendix VII). Somebody has to know those rules cold. That somebody gets paid.
+
+:::reveal What are the ITF's officiating badge levels, in order — and why hasn't electronic line calling eliminated the job? ||| **National → Green Badge (Level 1) → White Badge (Level 2) → Bronze, Silver, Gold (Level 3).** Bronze/Silver/Gold are the international badges worked at Slams and on tour. ELC hasn't eliminated officiating because it only replaced the **out/fault line calls** — the single most *mechanical* task. Wimbledon 2025 kept ~70 officials on site as "match assistants," and the **chair umpire** still handles every judgment call: code violations, hindrance, time violations, crowd management. Automation eats the measurable task first and leaves the judgment.
+
+## Sources
+- International Tennis Federation. (n.d.-e). *Officiating FAQs*. https://www.itftennis.com/en/about-us/organisation/faqs/?type=officiating
+- International Tennis Federation. (2026). *ITF rules of tennis 2026* (Appendix VII: Role of court officials). https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf
+- Wimbledon. (2025, July 3). *The precision operation: Introducing electronic line calling*. https://www.wimbledon.com/en_GB/news/articles/2025-07-03/the_precision_operation_introducing_electronic_line_calling.html`,
+      recallContent: [
+        {
+          prompt: "What are the three USRSA certification levels?",
+          answer:
+            "PRA (Professional Racquet Advisor — advises but doesn't service), CS (Certified Stringer), and MRT (Master Racquet Technician — the top credential, including customizing weight, balance, and swingweight).",
+        },
+        {
+          prompt: "Why does the USRSA require certified members to pass an ANNUAL test?",
+          answer:
+            "Because knowledge of current frame and string technology decays — manufacturers keep changing it. That's exactly why the credential holds its value.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-courts-clubs-pickleball",
+      title: "39 · Courts, clubs, and the pickleball squeeze",
+      section: "Section 8 · Opportunities for entrepreneurs",
+      body: `Tennis is played on a **physical asset that somebody owns**. Follow the asset and you find the business.
+
+**The demand is real and growing.** U.S. tennis participation hit **27.3 million players in 2025**, a sixth consecutive year of growth and **up 54% since 2019** (United States Tennis Association [USTA], 2026). The USTA has stated a goal of **35 million players by 2035**.
+
+**But so is the competition — for the same concrete.** Pickleball had **24.3 million U.S. players in 2025**, up from **4.2 million in 2020**, making it the nation's fastest-growing sport for five consecutive years (Sports & Fitness Industry Association [SFIA], 2026).
+
+Put those two side by side:
+
+| Sport | U.S. players, 2025 |
+| --- | --- |
+| Tennis | 27.3 million |
+| Pickleball | 24.3 million |
+
+**Two sports of nearly equal size, and a fixed number of courts.** A tennis court can be re-lined into **four** pickleball courts. Pickleball is louder. Both communities want the same municipal budget. **This is a genuine, documented conflict, not a culture-war invention** — the USTA's Southern section publishes a document literally titled *"Facing the Challenge — Tennis and Pickleball: It Doesn't Have to be a Battle."*
+
+And it produces real outcomes with real money attached. In **September 2025, the City of Boise settled a lawsuit and announced it would convert pickleball courts at two city parks back to tennis-only**, over noise complaints (City of Boise, 2025).
+
+**Why an entrepreneur should care.** Court supply is now a **contested, politically live resource** in most American towns — which means it is a market with a shortage, a policy fight, and public money moving through it. That is not a reason to despair. **That is a description of an opportunity.**
+
+**There is public money.** The USTA's facility grant program funds **up to 50% of total project cost** for court construction and resurfacing, with grant maxima scaling by court count, and it **requires the facility to be open to the public** to qualify (USTA, 2025). The USTA committed an **additional $10 million** toward courts and facility infrastructure in February 2025.
+
+Read the conditions again, because they are the actual business lesson: **the money is available, it is matched, and it is contingent on public access.** Somebody in your town has to write that application. It could be you.
+
+**What this course refuses to tell you.** You will find websites confidently quoting "the cost to build a tennis court." **This lesson will not**, because the authoritative body — the **American Sports Builders Association**, which publishes the actual *Tennis Court Construction Guidelines* — **does not publish a price** (American Sports Builders Association [ASBA], n.d.). Costs vary by site, surface, drainage, region, and year. Every specific figure you find online is from a lead-generation site trying to sell you something.
+
+So the honest instruction is: **the ASBA sets the standards; get real quotes from builders who follow them.** Anyone who gives you a confident national average for a construction project is not helping you.
+
+:::reveal Tennis had 27.3 million U.S. players in 2025 and pickleball had 24.3 million. Why is that a business fact and not just a trivia fact? ||| Because both sports need the **same finite court supply** — and a single tennis court can be re-lined into four pickleball courts. That makes courts a **contested, politically live resource** in most American towns: a shortage, a policy fight, and public money moving through it (the USTA funds up to 50% of court projects, contingent on public access). A shortage with public funding attached is a description of an **opportunity**, and somebody has to write the grant application.
+
+## Sources
+- American Sports Builders Association. (n.d.). *Tennis court construction guidelines*. https://sportsbuilders.org/page/TennisConstructionGuidelines
+- City of Boise. (2025, September). *City of Boise settles lawsuit; pickleball courts at two city parks transitioning back to tennis only*. https://www.cityofboise.org/news/parks-and-recreation/2025/september/city-of-boise-settles-lawsuit-pickleball-courts-at-two-city-parks-transitioning-back-to-tennis-only/
+- Sports & Fitness Industry Association. (2026, June 4). *SFIA releases 2026 pickleball single sport report*. https://sfia.org/resources/sfia-releases-2026-pickleball-single-sport-report-team-sports-reports-to-follow/
+- United States Tennis Association. (2025). *Facility grant program*. https://www.usta.com/content/dam/usta/2025-pdfs/facility-grant-one-pager.pdf
+- United States Tennis Association. (2026, February 18). *Tennis participation continues to surge with six consecutive years of growth*. https://www.usta.com/en/home/stay-current/national/tennis-participation-continues-to-surge-with-six-consecutive-yea.html`,
+      recallContent: [
+        {
+          prompt: "What are the ITF officiating badge levels, in order?",
+          answer:
+            "National → Green Badge (Level 1) → White Badge (Level 2) → Bronze, Silver, Gold (Level 3). Bronze/Silver/Gold are the international badges.",
+        },
+        {
+          prompt: "Why hasn't electronic line calling eliminated the chair umpire's job?",
+          answer:
+            "ELC only replaced the out/fault line calls — the most mechanical task. Every judgment call (code violations, hindrance, time violations, crowd management) stays with the chair umpire. Automation eats the measurable task first and leaves the judgment.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-building-a-tennis-business",
+      title: "40 · Building a business in tennis: putting it together",
+      section: "Section 8 · Opportunities for entrepreneurs",
+      body: `You now have every piece. Let's assemble them.
+
+**The core insight of this whole section, in one line: the money in tennis is not mostly in *playing* tennis.** Roughly **96% of professional players lose money** (Lesson 33). Meanwhile there are **sixteen times more coaching jobs than athlete jobs** (Lesson 36), **27.3 million American players** who all need courts, strings, lessons, and organized competition (Lesson 39), and a **national league with 320,000 adults in it** (Section 6).
+
+The players are the *product*. The **sport is the market.**
+
+**Five businesses a person can actually start, ranked by capital required:**
+
+| Business | Capital needed | The credential | What it sells |
+| --- | --- | --- | --- |
+| **Stringing** | A machine | USRSA **CS** → **MRT** | A recurring, non-optional service |
+| **Officiating** | Almost none | ITF **Green → White → Bronze/Silver/Gold** | Judgment that automation didn't take |
+| **Coaching** | Almost none | **PTR** Level 1 or **RSPA** | Time, expertise, and Safe Play clearance |
+| **Programming** (clinics, camps, junior leagues) | Court time | Safe Play + a certification | Organized competition for other people |
+| **Facilities** | Serious money — but the USTA funds up to **50%** | — | The asset everything else runs on |
+
+**Notice something about that table.** The first three columns are within reach of a high school student **this year**. Not "someday." You could be a Certified Stringer and a certified official before you graduate, and both of those pay.
+
+**Three things that make a tennis business different from a lemonade stand:**
+
+1. **The customer is a repeat customer by the structure of the sport.** Strings break on a schedule. Lessons are weekly. Leagues run seasons. You are not chasing one-time transactions — which is exactly why the economics work at small scale.
+2. **The credentials are cheap relative to the professions they gate.** Compare the cost of a PTR Level 1 or a USRSA certification to a four-year degree. This is one of the lowest-barrier skilled trades available to a teenager.
+3. **The market is growing and under-supplied.** Six consecutive years of participation growth, a court shortage, and a governing body actively handing out matching grants.
+
+**Now the discipline.** This course has cited every number it gave you, and it has **refused to give you several** — the cost of building a court, the annual cost of junior development, what a stringer earns — because **no authoritative source publishes them**. Take that seriously as a business habit, not just a school rule:
+
+- **Where a governing body publishes a figure, use it.** The ITF's break-even ranking. The BLS median wage. The NFHS participation count. The USTA's grant terms.
+- **Where nobody publishes a figure, go and get quotes.** Don't trust a website whose business model is selling you a lead.
+- **And always ask who benefits from the number you're being shown.** An academy quoting you the *mean* professional salary — $206,180 — instead of the *median* — $66,710 — is not lying. It is selecting. Learning to catch that is worth more than any single fact in this course.
+
+**One last thought, and it's the reason this section exists at all.** The people you met in Section 5 were not just players. **Gladys Heldman published a magazine and ran a tournament.** The **Original 9 signed contracts.** **Billie Jean King founded an organization and a league.** **Arthur Ashe built the players' union that still runs men's tennis.** They changed tennis not because they hit the ball hardest, but because they understood **how the business worked** — and were willing to build a different one.
+
+You are being handed the same information they had to fight to assemble.
+
+:::reveal The course argues that "the money in tennis is not mostly in playing tennis." What's the evidence, and what does it imply about where an entrepreneur should look? ||| The evidence: roughly **96% of professional players lose money**; there are **~16× more coaching jobs than athlete jobs** (248,950 vs 15,070); there are **27.3 million U.S. players** who need courts, strings, lessons, and organized competition; and USTA League alone has **320,000+ adults** a year. The implication: **the players are the product; the sport is the market.** An entrepreneur should look at the recurring services the 27 million need — stringing, coaching, officiating, programming, facilities — not at the lottery ticket 14,000 people are buying.
+
+## Sources
+- Bureau of Labor Statistics. (2025). *Occupational employment and wage statistics: Coaches and scouts (27-2022); Athletes and sports competitors (27-2021)*. U.S. Department of Labor. https://www.bls.gov/oes/current/oes272022.htm
+- Independent Review Panel. (2018). *Independent review of integrity in tennis: Final report*. International Tennis Integrity Agency. https://www.itia.tennis/media/bjuateer/irp-report-final.pdf
+- United States Tennis Association. (2026, February 18). *Tennis participation continues to surge with six consecutive years of growth*. https://www.usta.com/en/home/stay-current/national/tennis-participation-continues-to-surge-with-six-consecutive-yea.html`,
+      recallContent: [
+        {
+          prompt: "Why won't this course tell you the cost of building a tennis court?",
+          answer:
+            "Because the authoritative body (the American Sports Builders Association) publishes construction STANDARDS but no price. Every confident figure online comes from a lead-generation site. The honest instruction is to get real quotes from builders who follow ASBA standards.",
+        },
+        {
+          prompt: "What does the USTA facility grant program fund, and what's the catch?",
+          answer:
+            "Up to 50% of a court project's total cost — but the facility must be open to the PUBLIC to qualify. Somebody has to write the application.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-exercise",
+      title: "41 · Practice: name the concept",
+      section: "Section 8 · Opportunities for entrepreneurs",
+      exercise: {
+        instructions:
+          "Fill in each blank with the term or number from this course, then check. Spelling and capitalization are forgiving.",
+        items: [
+          {
+            prompt: "The body that publishes the Rules of Tennis is the ___ (three letters).",
+            answer: "ITF",
+            accept: ["itf", "international tennis federation", "world tennis"],
+            explanation:
+              "The International Tennis Federation — now rebranding as 'World Tennis' (trading name adopted 1 January 2026).",
+          },
+          {
+            prompt: "When both players have won three points, the score is called ___.",
+            answer: "deuce",
+            explanation: "Not 40–40. From Deuce you must win two consecutive points (ITF Rule 5a).",
+          },
+          {
+            prompt: "A serve that touches the net, strap, or band and is otherwise good is a ___ (ITF Rule 22).",
+            answer: "let",
+            accept: ["service let", "a let"],
+            explanation: "You serve that one again — and a service let does NOT cancel a previous fault.",
+          },
+          {
+            prompt: "The net is 3 feet high at the center and 3½ feet at the posts, which is why the ___-court ball is the geometrically safer shot.",
+            answer: "cross",
+            accept: ["cross-court", "crosscourt", "cross court"],
+            explanation:
+              "It travels over the lowest part of the net and along a longer diagonal — more margin in both dimensions.",
+          },
+          {
+            prompt: "In 1968 the ILTF approved ___ tennis, ending the rule that amateurs and professionals couldn't compete against each other.",
+            answer: "open",
+            explanation: "Voted 30 March 1968 in Paris; the first open tournament was at Bournemouth from 22 April 1968.",
+          },
+          {
+            prompt: "The organization founded in 1916 because the USLTA barred Black players was the American Tennis ___.",
+            answer: "Association",
+            accept: ["association", "ata"],
+            explanation: "The ATA — the oldest African American sports organization in the U.S. It produced both Althea Gibson and Arthur Ashe.",
+          },
+          {
+            prompt: "In 1956 Althea Gibson won the ___ Championships — the first Grand Slam title won by a Black player.",
+            answer: "French",
+            accept: ["french", "roland-garros", "roland garros"],
+            explanation: "She then won Wimbledon and the U.S. Nationals in both 1957 and 1958.",
+          },
+          {
+            prompt: "The nine players who signed $1 contracts in September 1970 to launch women's professional tennis are known as the Original ___.",
+            answer: "9",
+            accept: ["nine", "original 9", "original nine"],
+            explanation:
+              "The $1 contract was a legal device: it made them contract professionals, shielding the Houston Racquet Club from USLTA sanctions.",
+          },
+          {
+            prompt: "The first Grand Slam to pay equal prize money did so in the year ___.",
+            answer: "1973",
+            explanation:
+              "The US Open, $25,000 to each singles champion — after Billie Jean King threatened a boycott and Bristol-Myers funded the difference.",
+          },
+          {
+            prompt: "The LAST Grand Slam to pay equal prize money did so in the year ___.",
+            answer: "2007",
+            explanation:
+              "Wimbledon (and Roland-Garros across the full draw). 34 years after the US Open. The Australian Open went equal in 1984 and then went backwards.",
+          },
+          {
+            prompt: "Ranking points on the ATP and WTA tours last exactly ___ weeks before dropping off.",
+            answer: "52",
+            accept: ["52 weeks", "fifty-two"],
+            explanation: "A rolling system — you must defend your points every year. Nothing is ever banked.",
+          },
+          {
+            prompt: "Of roughly 14,000 professional tennis players, only about ___ hundred earn enough prize money to cover their costs.",
+            answer: "6",
+            accept: ["six", "600", "6 hundred"],
+            explanation:
+              "About 600, per the ITF — and that excludes coaching costs. Roughly 96% of professional players lose money.",
+          },
+          {
+            prompt: "The BLS counts about 249,000 coaches and scouts but only about 15,000 athletes — roughly ___ times more coaching jobs.",
+            answer: "16",
+            accept: ["sixteen", "16x", "15", "fifteen"],
+            explanation: "Which is the entire thesis of Section 8: the players are the product; the sport is the market.",
+          },
+          {
+            prompt: "The top USRSA stringing credential — which includes customizing a racquet's weight, balance, and swingweight — is the ___ (three letters).",
+            answer: "MRT",
+            accept: ["mrt", "master racquet technician"],
+            explanation: "Below it sit CS (Certified Stringer) and PRA (Professional Racquet Advisor).",
+          },
+          {
+            prompt: "The first international ITF officiating badge above National level is the ___ Badge.",
+            answer: "Green",
+            accept: ["green"],
+            explanation: "The ladder runs National → Green → White → Bronze → Silver → Gold. People routinely forget the Green rung.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "tennis-quiz-entrepreneurs",
+      title: "42 · Quiz: opportunities for entrepreneurs",
+      section: "Section 8 · Opportunities for entrepreneurs",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Per the BLS, roughly how many coaching jobs are there compared with athlete jobs?",
+            options: [
+              "About the same number of each",
+              "About 16 times more coaching jobs (248,950 vs 15,070)",
+              "About 3 times more athlete jobs",
+              "About 100 times more athlete jobs",
+            ],
+            correctIndex: 1,
+            explanation: "This ratio is the whole thesis of Section 8: the players are the product; the sport is the market.",
+            sourceLessonSlug: "tennis-coaching-and-certification",
+          },
+          {
+            prompt:
+              "For athletes and sports competitors, the BLS mean wage is $206,180 and the median is $66,710. What does that tell you?",
+            options: [
+              "The data is wrong",
+              "It's a right-skewed distribution — a few superstars drag the average far above what a typical athlete earns. Trust the median.",
+              "Most athletes earn about $206,180",
+              "It means athletes are underpaid relative to coaches",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The 90th percentile earns $742,310; the 10th earns $26,500. When someone quotes the 'average' athlete salary, they're quoting a number almost no athlete earns.",
+            sourceLessonSlug: "tennis-coaching-and-certification",
+          },
+          {
+            prompt: "What happened to the USPTA?",
+            options: [
+              "It merged with the USTA",
+              "It shut down",
+              "It rebranded as the RSPA (Racquet Sports Professionals Association) in September 2024, now covering tennis, pickleball, padel, squash, and platform tennis",
+              "It was absorbed by the PTR",
+            ],
+            correctIndex: 2,
+            explanation: "Founded in 1927 as the USPTA. Over 14,000 members. If an older source says 'USPTA,' it means RSPA.",
+            sourceLessonSlug: "tennis-coaching-and-certification",
+          },
+          {
+            prompt: "Does the USTA certify tennis coaches?",
+            options: [
+              "Yes — it is the only body that can",
+              "No. It ACCREDITS the organizations that certify coaches — and accreditation is voluntary and free",
+              "Yes, but only for junior coaches",
+              "No — nobody certifies tennis coaches",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The governing body sets the standard; independent organizations (RSPA, PTR) sell the credential; the coach buys it. Knowing who certifies whom — and who profits at each layer — transfers to every profession.",
+            sourceLessonSlug: "tennis-coaching-and-certification",
+          },
+          {
+            prompt: "What three things does USTA Safe Play Approval require?",
+            options: [
+              "A tennis rating, a résumé, and references",
+              "A criminal background check, acknowledgement of the Safe Play Policy, and U.S. Center for SafeSport training",
+              "A college degree, a certification, and insurance",
+              "Only a background check",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Required for any adult with regular contact with or authority over minor athletes. Training and policy acknowledgement are annual; background screening is every two years. If you want to coach kids, this is the first door.",
+            sourceLessonSlug: "tennis-coaching-and-certification",
+          },
+          {
+            prompt: "Why is racquet stringing structurally a good first business?",
+            options: [
+              "It requires a large building and staff",
+              "It's a recurring, non-optional service — strings break and lose tension on a schedule, so the same customer buys again for as long as they play",
+              "It has no competition anywhere",
+              "It requires a four-year degree",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A subscription business wearing a tracksuit. The only real capital cost is a machine, and the customers are already standing next to you.",
+            sourceLessonSlug: "tennis-the-racquet-trade",
+          },
+          {
+            prompt: "What is the top USRSA credential, and what does it uniquely cover?",
+            options: [
+              "CS (Certified Stringer) — basic stringing only",
+              "PRA (Professional Racquet Advisor) — advising on technology",
+              "MRT (Master Racquet Technician) — including customizing a racquet's weight, balance, and swingweight",
+              "There is only one USRSA credential",
+            ],
+            correctIndex: 2,
+            explanation:
+              "That's not stringing — that's a racquet technician modifying a professional's instrument to spec. A skilled trade, portable to any tournament on Earth.",
+            sourceLessonSlug: "tennis-the-racquet-trade",
+          },
+          {
+            prompt: "What are the ITF's officiating badge levels, in order?",
+            options: [
+              "White → Bronze → Silver → Gold",
+              "National → Green → White → Bronze → Silver → Gold",
+              "Bronze → Silver → Gold → Platinum",
+              "Level 1 → Level 2 → Level 3, with no badges",
+            ],
+            correctIndex: 1,
+            explanation:
+              "People routinely drop the Green rung. Bronze, Silver, and Gold are the international badges — the officials at Slams and on tour.",
+            sourceLessonSlug: "tennis-officiating",
+          },
+          {
+            prompt: "Why hasn't electronic line calling eliminated the officiating career?",
+            options: [
+              "Because ELC is only used at Roland-Garros",
+              "Because ELC replaced only the out/fault calls — the most mechanical task — while every judgment call stays with the chair umpire",
+              "Because the ITF banned it",
+              "It has eliminated it — there are no officials left",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Wimbledon 2025 kept ~70 officials on site as 'match assistants.' Automation eats the measurable task first and leaves the judgment. The correct response is to move up the ladder toward the judgment.",
+            sourceLessonSlug: "tennis-officiating",
+          },
+          {
+            prompt: "How many U.S. tennis players and pickleball players were there in 2025?",
+            options: [
+              "Tennis 27.3 million, pickleball 24.3 million",
+              "Tennis 5 million, pickleball 40 million",
+              "Tennis 50 million, pickleball 2 million",
+              "Tennis 10 million, pickleball 10 million",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two sports of nearly equal size — competing for the same finite court supply. A tennis court can be re-lined into four pickleball courts.",
+            sourceLessonSlug: "tennis-courts-clubs-pickleball",
+          },
+          {
+            prompt: "What does the USTA's facility grant program fund, and what is the condition?",
+            options: [
+              "100% of costs, with no conditions",
+              "Up to 50% of total project cost — but the facility must be open to the public",
+              "Only private club renovations",
+              "Only professional tournament venues",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Matching money, contingent on public access. The USTA committed an additional $10 million toward courts in February 2025. Somebody has to write the application.",
+            sourceLessonSlug: "tennis-courts-clubs-pickleball",
+          },
+          {
+            prompt: "Why does this course refuse to state the cost of building a tennis court?",
+            options: [
+              "Because it's a secret",
+              "Because the authoritative body (the American Sports Builders Association) publishes construction standards but no price — every confident figure online comes from a lead-generation site",
+              "Because courts are free to build",
+              "Because the USTA forbids it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Refusing to act on a figure you cannot source is a business habit, not just a school rule. Get real quotes from builders who follow ASBA standards.",
+            sourceLessonSlug: "tennis-courts-clubs-pickleball",
+          },
+          {
+            prompt: "Which of these tennis businesses requires the LEAST capital to start?",
+            options: ["Building a facility", "Officiating", "Buying a tennis club", "Running a residential academy"],
+            correctIndex: 1,
+            explanation:
+              "Officiating and coaching require almost no capital. Stringing requires a machine. Facilities require serious money — though the USTA will fund up to 50%.",
+            sourceLessonSlug: "tennis-building-a-tennis-business",
+          },
+          {
+            prompt: "What is the core argument of Section 8?",
+            options: [
+              "Everyone should try to turn professional",
+              "The money in tennis is not mostly in PLAYING tennis — the players are the product, and the sport is the market",
+              "Tennis is a dying industry",
+              "Only wealthy people can work in tennis",
+            ],
+            correctIndex: 1,
+            explanation:
+              "96% of pros lose money, but there are 16× more coaching jobs than athlete jobs and 27.3 million American players who need courts, strings, lessons, and organized competition.",
+            sourceLessonSlug: "tennis-building-a-tennis-business",
+          },
+          {
+            prompt:
+              "The course points out that Gladys Heldman, the Original 9, Billie Jean King, and Arthur Ashe changed tennis. What does it say they had in common?",
+            options: [
+              "They all won Wimbledon",
+              "They understood how the BUSINESS worked — publishing, contracts, organizations, leagues, a players' union — and were willing to build a different one",
+              "They were all coached by the same person",
+              "They all played left-handed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They changed the sport not because they hit the ball hardest, but because they understood its structure. You're being handed the information they had to fight to assemble.",
+            sourceLessonSlug: "tennis-building-a-tennis-business",
+          },
+        ],
+      },
+    },
   ],
 };
