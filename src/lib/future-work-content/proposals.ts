@@ -92,3 +92,351 @@ USCIS, SSA), all stressing "verify current rules/fees at the official source" si
 ## Note
 The tax/legal/immigration courses must be firmly framed as **educational, not professional advice**
 (the new site-wide disclaimer already covers this) and point to IRS/USCIS/a licensed professional.`;
+
+/** The "Workers' Rights" track: the built History of Unions anchor plus eleven country
+ *  courses spanning the spectrum of state-labor relations, in three build waves. */
+export const WORKERS_RIGHTS_TRACK_PROPOSAL = `# Workers' Rights Around the World — course track proposal
+
+A proposed **"Workers' Rights"** track: one built anchor course plus a set of country courses chosen
+to span a genuinely diverse spectrum of how states interact with labor — not a tour of rich
+democracies. From BAM's note (\`plans/future-courses/history-of-unions.md\`):
+
+> "create a track of courses that covers workers rights globally, with courses on different countries
+> showing a diverse spectrum of how nations/states interact with labor"
+
+**Nothing below is built.** These are proposals — pick which to author, and in what order.
+
+---
+
+## The anchor (built, \`content/history-of-unions\`)
+
+**The History of Unions: America and the World** (Culture & History) — 7 sections, 22 teaching
+lessons, 7 quizzes, 1 exercise. The full US arc (Knights/AFL → Haymarket → Homestead/Pullman →
+Triangle → Wagner Act → CIO → Taft-Hartley → Randolph/Memphis → PATCO → the BLS density series),
+told with the parts a comfortable course skips (the NLRA's agricultural/domestic carve-out, unions'
+own record of racial and gender exclusion, the corruption chapters). Then one lesson each on six
+national models, and the ILO.
+
+**The anchor's real payload is a reusable analytical spine — "the four questions."** Every course in
+this track should use it as its skeleton, so the track compounds instead of being twelve unrelated
+country tours:
+
+1. **Who is allowed to organise?**
+2. **Who is excluded?**
+3. **Who bargains with whom, and at what level?**
+4. **What happens to you if you try?**
+
+A student who has done the anchor plus any three country courses should be able to walk into a
+country they have never studied and produce a defensible first-pass answer to all four.
+
+A companion course, **Know Your Rights at Work** (\`content/know-your-rights-at-work\`, parallel
+branch), covers *your rights on the job today*. The anchor cross-links to it; the country courses
+should too. The division of labour is: **that one = what do I do on Monday. This track = how did
+this get built, and why is it different over there.**
+
+---
+
+## Selection criteria (why these countries, and not others)
+
+A country earns a slot only if it teaches something **no other course in the track can teach**. The
+test is not "is it important" — it is "does removing it leave a hole in the spectrum."
+
+The spectrum this track is trying to cover, end to end:
+
+| Position on the spectrum | Country that anchors it |
+|---|---|
+| Workers **in the boardroom**, by statute | Germany |
+| Unions run the **welfare plumbing**; the wage floor is a contract, not a law | Sweden / Denmark |
+| The union as **liberation movement** — and then as part of the government | South Africa |
+| The union as the thing that **brought down the state** | Poland |
+| Most workers have **no employer at all** to bargain with | India |
+| Unions **chartered and funded by the state** — and then defunded overnight | Brazil |
+| The union as a **tool of the employer** (the protection contract) — and rights enforced through a **trade deal** | Mexico |
+| A labor system **deliberately engineered to atomise bargaining** | Chile |
+| Rights won *with* democracy — and then policed with **damages suits against individual strikers** | South Korea |
+| Your real employer is a **brand on another continent** | Bangladesh |
+| The union **is an arm of the party-state** | China |
+| Workers with **almost no rights at all** | The Gulf (Qatar / UAE / Saudi Arabia) |
+
+Two deliberate omissions, so the reasoning is on the record:
+
+- **The UK.** Voluntarism, the 1984–85 miners' strike, the 2016 Trade Union Act, the 2023
+  minimum-service-levels law. Genuinely interesting, but it overlaps the US course heavily (common
+  law, adversarial, declining density) and would spend a slot without widening the spectrum. **Build
+  it only if a UK audience materialises.**
+- **France.** The very low density / very high coverage gap is the most vivid illustration of
+  Question 3 anywhere on earth — but it is *already* the punchline of the Germany course, and
+  France's own union landscape (multiple competing confederations, extension by ministerial decree)
+  is more confusing than instructive for a first pass. **Fold the France contrast into Germany;
+  don't build the course.**
+
+---
+
+## Wave 1 — build first (highest teaching value per unit of sourcing pain)
+
+These four are the backbone. Each is well-sourced from official/primary material, each anchors a
+distinct end of the spectrum, and none requires a subject-matter reviewer to ship responsibly.
+
+### 1. Germany — *Workers on the Board*
+**Teaches uniquely:** that a country can have roughly the same union **membership** rate as the US
+(14.1%, 2024) and roughly **five times** the bargaining **coverage** (~49–50%) — and that the
+difference is a design choice, not a cultural one. Board-level co-determination (Co-determination
+Act 1976: half the supervisory board of a >2,000-employee company) and the **dual channel** (works
+councils are statutory bodies elected by *all* employees, and are not the union).
+**Why it earns a slot:** it is the strongest available refutation of "unions vs. companies" as the
+only possible frame. Nothing else in the track shows workers with a structural, permanent, legal
+seat.
+**Hard parts:** the two-tier board is genuinely confusing to an American student — this course needs
+real diagrams. And the honest version must include the **casting-vote catch** (parity of seats, not
+of power) and the insider/outsider critique (co-determination is argued to protect permanent staff
+at the expense of everyone else). Sourcing is excellent: statutes in English at
+\`gesetze-im-internet.de\`, ETUI's \`worker-participation.eu\`, Hans-Böckler-Stiftung, OECD/AIAS.
+
+### 2. Sweden & Denmark — *The Wage Floor That Isn't a Law*
+**Teaches uniquely:** the **Ghent system** (unemployment insurance administered by union-affiliated
+funds → density around 65%), **sectoral bargaining**, and the fact that neither country has a
+statutory national minimum wage — because the floor is a contract. Plus Danish **flexicurity**: easy
+dismissal, generous benefit, active retraining — a bargain most Americans have never heard proposed.
+**Why it earns a slot:** it detonates the assumption that a legal protection must be a *law*. It also
+teaches the track's best methodological habit — *look for the plumbing before you reach for the
+culture*.
+**Hard parts:** it must tell the **erosion** story (private unemployment funds that don't require
+membership; decades of decline from a higher peak; pressure from the EU Adequate Minimum Wages
+Directive 2022/2041) or it is a tourism brochure. Also: Sweden and Denmark differ enough that the
+course has to teach both, not blur them into "Scandinavia."
+
+### 3. Poland — *Solidarność: When a Union Brought Down a State*
+**Teaches uniquely:** that in a one-party state, "who may organise?" **is** "who governs?" The 21
+Demands (demand #1 was the right to form free unions, not pay), the Gdańsk Agreement (31 Aug 1980),
+roughly 10 million members, martial law (13 Dec 1981), the Round Table, June 1989.
+**Why it earns a slot:** it is the most dramatic and most *teachable* proof of the anchor's thesis,
+and it puts a trade union at the centre of the biggest geopolitical story of the late 20th century —
+which most students have never been told.
+**Hard parts:** **the present tense is a minefield.** The 1980–89 history is superbly sourced (UNESCO
+Memory of the World holds the 21 Demands; the European Solidarity Centre in Gdańsk has a vast open
+archive; the Institute of National Remembrance). But today's NSZZ "Solidarność" is a politically
+aligned organization very different from the 1980 movement, and **Lech Wałęsa's own record is
+fiercely contested in Polish politics**, including long-running allegations about a 1970s
+security-service file. **Recommendation: build the course on 1980–89, state explicitly that the
+movement's contemporary legacy is contested in Poland today, and do not adjudicate Wałęsa's file.**
+Say so in the course, in one honest paragraph. That is the whole fix.
+
+### 4. Mexico — *The Protection Contract, and the Trade Deal That Came for It*
+**Teaches uniquely:** a **third kind of union object** the anchor only gestures at — the union that
+is a **tool of the employer**. Mexico's "protection contracts" were collective agreements signed
+between a company and a friendly or phantom union, sometimes before a single worker was hired, which
+then legally blocked any real union from organising. Then: the **2019 labour reform** (personal,
+free, direct, secret votes to legitimise existing contracts) and the **USMCA Rapid Response Labor
+Mechanism** (in force 2020), under which the United States can impose tariffs **on one specific
+factory** for denying freedom of association.
+**Why it earns a slot:** the RRM is the only concrete, working, *enforceable* international labor
+mechanism in the whole track — the answer to the anchor's bleak ILO lesson ("the floor is made of
+paper"). And the protection contract teaches a student to ask *whose union is it?* rather than *is
+there a union?*
+**Hard parts:** none that are severe. Sourcing is good and public: the Ley Federal del Trabajo as
+amended (2019), the USMCA text, and USTR's **published list of RRM cases** — which is a gift,
+because students can read the actual disputes. Keep it neutral on US–Mexico trade politics; teach
+the mechanism, not the trade war.
+
+---
+
+## Wave 2 — build second (widens the spectrum; needs more care)
+
+### 5. India — *When Most Workers Have No Employer*
+**Teaches uniquely — and this may be the single most important course in the track.** The
+overwhelming majority of India's workforce is **informal**: no contract, no employer of record,
+frequently no identifiable legal employer at all. Every concept in the anchor course — the election,
+the contract, the grievance procedure, the duty to bargain — assumes an *employer*. **India is where
+that assumption breaks.** It teaches SEWA (the Self-Employed Women's Association, founded 1972) — a
+union of self-employed women, which is a genuinely different institutional invention — and general
+strikes that mobilise tens of millions.
+**Why it earns a slot:** it is the course that stops a student from thinking "worker = employee." It
+is also, bluntly, the world's largest workforce, and its absence from the track would be
+embarrassing.
+**Hard parts:** **the statistics are genuinely contested** — informality is defined differently by
+different bodies and the headline percentage swings accordingly. The course must name its definition
+and its source rather than quoting a number. The 2019–20 **Labour Codes** (consolidating dozens of
+statutes) are politically contested and their implementation has been staggered — do not state their
+status as settled; date it. Sources: ILO India, the Periodic Labour Force Survey, the Codes' text on
+\`india.gov.in\`, SEWA's own materials.
+
+### 6. South Korea — *Democracy, the Chaebol, and the Lawsuit as a Weapon*
+**Teaches uniquely:** rights won *alongside* democracy (the 1987 Great Workers' Struggle), the
+**regular/irregular dual labour market** inside the chaebol conglomerates, and a repression mechanism
+students will not have seen anywhere else — **civil damages suits and provisional seizure of assets
+brought against individual strikers**, which can financially destroy a worker without ever
+criminalising the strike. Great hook: **Korea ratified ILO Conventions 87 and 98 only in 2021** — a
+rich, democratic OECD member that took until the 2020s to sign the freedom-of-association floor.
+**Why it earns a slot:** it is the track's sharpest version of **Question 4** *inside a wealthy
+democracy*, which is exactly where American students assume Question 4 is boring.
+**Hard parts:** contested domestic politics (the "yellow envelope" bill limiting damages suits has
+been passed, vetoed and re-fought — date any claim about its status). Sourcing is otherwise good:
+ILO NORMLEX, OECD, the KCTU and FKTU, Korean labour statutes.
+
+### 7. Brazil — *State-Chartered Unions, a Union-Made President, and the 2017 Rupture*
+**Teaches uniquely:** **corporatism** — a system in which unions are chartered by the state, granted
+monopoly representation of a category in a territory, and funded by a **compulsory union tax**
+deducted from workers whether or not they joined (the 1943 CLT structure). Then the "new unionism"
+of the ABC metalworkers, which produced a president. Then **Law 13.467/2017**, which abolished the
+compulsory tax and cut union finances off at the knees more or less overnight. Also: Brazil has a
+dedicated **labour judiciary**, which almost no student has ever heard of.
+**Why it earns a slot:** it is a controlled experiment nobody could have designed. *What happens to
+unions that were funded by the state, when the state stops funding them?* Brazil answers it.
+**Hard parts:** **political heat.** Lula is a current/recent head of state and Brazilian politics is
+brutally polarised. The course must be scrupulously neutral, stick to the statute and the numbers,
+and date everything. Sourcing is fine (CLT, Law 13.467/2017, ILO, IBGE).
+
+### 8. Chile — *A Labor System Designed to Be Weak*
+**Teaches uniquely:** the **1979 Plan Laboral** — a labour code written under a military dictatorship
+which deliberately **fragmented bargaining to the individual firm**, permitted competing unions
+inside one workplace, and constrained the right to strike. This is the clearest documented case
+anywhere of a labour system *engineered*, on purpose, to atomise worker power — and it survived the
+return to democracy largely intact, which is the more interesting half of the story.
+**Why it earns a slot:** every other course shows institutions that *evolved*. Chile shows one that
+was **designed**, by named people, with a stated goal. It turns Question 3 from a description into an
+accusation — and it is the perfect final lesson before a student re-reads their own country's law.
+**Hard parts:** Pinochet-era history is contested and painful; the course must handle the
+dictatorship soberly and cite carefully. Sourcing is adequate (the Código del Trabajo, ILO, OECD,
+Chilean scholarship) but much of the best material is in Spanish — a translation pass is required.
+
+---
+
+## Wave 3 — build last (hardest to source; the state may be hostile)
+
+These three complete the spectrum and are the ones the track *needs* in order not to be a tour of
+comfortable countries. They are also the ones most likely to produce a credibility failure if built
+carelessly. **Do not build these until the method is proven on Waves 1–2.**
+
+### 9. China — *The Union That Is the State*
+**Teaches uniquely:** the sharpest possible form of **Question 1**. The ACFTU is the world's largest
+union organization and a genuinely different *object*: unions operate under Party leadership by
+statute, a workplace union must affiliate upward, and forming one requires higher-level approval. The
+right to strike was in the 1975 and 1978 constitutions and was **removed in 1982**.
+**Why it earns a slot:** without it, "union" reads as a fixed unit across countries. It isn't.
+**What makes it hard — and this is a *specific* difficulty worth understanding:** the **law is easy**
+and the **practice is hard**. The statutes are public and officially translated (\`npc.gov.cn\`), so
+the legal structure is unarguable and can be taught from primary sources with total confidence. What
+cannot be sourced cleanly is *what actually happens*: strike frequency, detentions of labour NGO
+staff, conditions. The standard open dataset was **China Labour Bulletin's strike map**, and CLB — a
+Hong Kong-based advocacy organization — **wound down its operations in 2023**, which leaves a real
+and worsening evidence gap. The state is hostile to independent research on exactly this question.
+**What BAM would need:** a hard editorial rule — *build the course from the statute and from ILO
+supervisory-body findings; state explicitly what cannot be verified; do not launder advocacy claims
+as fact; do not caricature (the ACFTU does administer real welfare and legal aid); date everything.*
+Done that way this course is defensible and genuinely excellent. Done the other way it is a
+liability.
+
+### 10. The Gulf — *Kafala: The Workers Who Build the Cities* (Qatar / UAE / Saudi Arabia)
+**Teaches uniquely:** the near-zero end of the spectrum, and the exact same *mechanism* as the NLRA's
+1935 farm/domestic carve-out — a class of worker defined **by law** as outside the protections
+everyone else gets, doing the hardest and most dangerous work. Qatar's 2020 reforms (Law No. 17,
+minimum wage; Law No. 19, removing the No-Objection Certificate) are **real** and must be taught as
+real; and migrant workers still **may not form or join trade unions**, which must also be taught.
+**Why it earns a slot:** because a workers'-rights track that stops at countries with unions has not
+described the world.
+**What makes it hard:** the two failure modes are the promotional version (recite the 2020 laws,
+stop) and the atrocity version (recite abuses, ignore that the law changed). **Both are propaganda.**
+Independent research access is limited, official statistics are thin, and *every* available source —
+including the ILO's own Qatar office, which operates inside a formal joint programme with the
+government and is therefore both authoritative and diplomatically constrained — is motivated.
+Migrant-worker death-toll figures in particular are contested and have been misreported by major
+outlets.
+**What BAM would need:** a rule that **every claim carries the statute + the ILO + at least one
+independent monitor**, that contested figures are presented *as contested, with the range and the
+dispute named*, and that nothing is asserted undated. Also: do not erase migrant workers' agency —
+wildcat strikes happen and are documented.
+
+### 11. Bangladesh — *Rana Plaza and the Brand on Another Continent*
+**Teaches uniquely:** what Question 3 means when **your real employer is a logo in another country**.
+The Rana Plaza collapse (24 April 2013; more than 1,100 garment workers killed) and what followed:
+the **Accord on Fire and Building Safety in Bangladesh** — a *legally binding* agreement between
+global brands and global unions, enforceable through arbitration. That is one of the most important
+labour-governance experiments of this century and it is essentially invisible to American students,
+who are wearing its output.
+**Why it earns a slot:** it is the course with the shortest distance between the syllabus and the
+student's own shirt. It also answers the ILO lesson's despair with something that actually binds —
+not a treaty, but a contract.
+**What makes it hard:** the **Bangladeshi state has been hostile to garment-union organising** —
+union registration is difficult, and organisers have been dismissed, blacklisted and assaulted (well
+documented). The Accord's status has been repeatedly renegotiated and litigated, so any claim about
+its current form must be dated. Sourcing is otherwise good: ILO, Better Work, the Accord's own
+published inspection reports, the brands' own disclosures.
+
+---
+
+## Optional / later
+
+- **Nigeria (or Kenya)** — African labour *outside* South Africa. The Nigeria Labour Congress
+  repeatedly calls general strikes that shut the country (fuel-subsidy disputes), so a union
+  federation functions as de facto political opposition — a thing American students never see.
+  Sourcing is moderate; informal-sector statistics are weak. Good candidate if the track continues.
+- **The UK** and **France** — see "deliberate omissions" above.
+- **South Africa** is listed in the spectrum table and *should* be built — see the reviewer caveat in
+  "What BAM would need." It sits between Wave 1 and Wave 2 on difficulty: the archives are excellent
+  (South African History Online, the O'Malley/Nelson Mandela Foundation archives, the Labour
+  Relations Act, the 2015 Marikana Commission report), but the post-1994 ANC alliance and Marikana
+  are live, litigated, domestically contested politics. **Build it in Wave 2, with a reviewer.**
+
+---
+
+## Recommended build order, and why
+
+**1 → Germany. 2 → Sweden & Denmark. 3 → Mexico. 4 → Poland. 5 → India. 6 → South Africa.
+7 → South Korea. 8 → Brazil. 9 → Chile. 10 → Bangladesh. 11 → China. 12 → The Gulf.**
+
+The reasoning:
+
+- **Start with Germany and the Nordics** because they are the *easiest to source* and the *hardest to
+  argue with*. They establish the track's credibility with primary-source material and near-zero
+  political risk, and they teach the two habits the whole track depends on (*bargaining level
+  explains coverage*; *look for the plumbing before the culture*).
+- **Then Mexico**, early and deliberately, because the USMCA Rapid Response mechanism is the track's
+  one piece of good news, and because it inoculates the student against the assumption that "a union
+  exists" means "workers have a union."
+- **Then Poland**, once the student has the vocabulary — Solidarity lands far harder *after* you know
+  what a normal union is, because the point is what it wasn't.
+- **India, South Africa, Korea, Brazil, Chile** widen the spectrum in the middle. India in particular
+  should come before the Wave-3 courses, because "most workers have no employer" is the concept that
+  makes the Gulf course legible rather than merely shocking.
+- **Bangladesh, China and the Gulf go last** because they are the three where a sourcing failure
+  would be most damaging, and because by then the method — statute first, dated claims, named
+  disputes, motivated sources read against each other — will be established and repeatable.
+
+**Track sequencing for the learner** is a different order from the build order. As a learning path:
+*Know Your Rights at Work* (present-tense, practical) → **History of Unions** (the anchor and the
+four questions) → any country courses in any order → **Chile last**, because "a labour system
+designed to be weak" is the right final thought before a student goes and re-reads their own
+country's statute.
+
+---
+
+## What BAM would need to build the hard ones responsibly
+
+1. **A standing editorial rule for hostile-state and contested courses**, applied identically to
+   China, the Gulf and Bangladesh:
+   *statute or official text first · every claim dated · contested figures presented as contested,
+   with the range and the dispute named · no advocacy claim laundered as fact · at least one
+   independent monitor cited alongside any official source, and vice versa.*
+   The anchor course already models this (Haymarket's bomb-thrower, Hoffa, the NLRA exclusion's
+   motive, the Qatar reforms) — it is a proven pattern in this repo, not a new invention.
+2. **A South African reviewer for the COSATU course** (Marikana is still litigated and the ANC
+   alliance is a live domestic fight) — the same posture the repo already takes on the Hoodoo
+   courses, which are held from publishing pending review by a knowledgeable member of the tradition.
+3. **Translation capacity** for the Chile course (Spanish) and, to a lesser degree, Brazil
+   (Portuguese) and Korea. Primary sources exist; they are not in English.
+4. **A decision about the China course's evidence gap** — with China Labour Bulletin wound down since
+   2023, there is no longer a good open dataset on Chinese strikes. Either build the course from the
+   statute alone and *say so in the course*, or don't build it.
+5. **Nothing else.** Waves 1 and 2 need no permissions, no reviewers (except South Africa), and no
+   vendor — only authoring time. That is the argument for starting there.
+
+---
+
+## Cross-links
+
+- Anchor course: \`scripts/data/history-of-unions-course.ts\` (branch \`content/history-of-unions\`).
+- Companion: **Know Your Rights at Work** (branch \`content/know-your-rights-at-work\`).
+- Category: **Culture & History** (the anchor ships there). If the track grows past ~4 courses,
+  consider promoting it to its own **"Workers & Rights"** category with a learning path.
+- Source note: \`plans/future-courses/history-of-unions.md\` (BAM's original ask — move to
+  \`completed/\` once the anchor ships).`;

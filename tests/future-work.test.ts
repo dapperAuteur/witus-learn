@@ -22,6 +22,8 @@ describe("future-work content index", () => {
   it("carries the other standing proposals", () => {
     expect(getFutureWorkItem("civics-more")?.body).toContain("civics");
     expect(getFutureWorkItem("travel-abroad")?.body).toContain("Passport");
+    // The workers'-rights track: the built History of Unions anchor + the country courses.
+    expect(getFutureWorkItem("workers-rights-track")?.body).toContain("four questions");
   });
 
   it("keeps item keys unique — they are the join key for future_work_notes", () => {
@@ -42,6 +44,7 @@ describe("future-work content index", () => {
       "She Did the Work — subject research",
       "Civics",
       "Travel & Living Abroad",
+      "Culture & History",
     ]);
     expect(futureWorkGroups("feature")).toEqual([]);
   });

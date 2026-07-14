@@ -102,10 +102,12 @@ function main() {
   // ── Standalone proposals (top-level *.md) ────────────────────────────────────────────────────
   const civics = readFileSync(join(dir, "civics-more-proposal.md"), "utf8").trim();
   const travel = readFileSync(join(dir, "travel-abroad-proposal.md"), "utf8").trim();
+  const workersRights = readFileSync(join(dir, "workers-rights-track-proposal.md"), "utf8").trim();
 
   let out2 = header("plans/future-courses/*.md");
   out2 += `/** Six candidate civics courses that fill gaps in the shipped civics catalog. */\nexport const CIVICS_MORE_PROPOSAL = \`${lit(civics)}\`;\n\n`;
-  out2 += `/** The "Travel & Living Abroad" category: 16 courses, two building, the rest proposed. */\nexport const TRAVEL_ABROAD_PROPOSAL = \`${lit(travel)}\`;\n`;
+  out2 += `/** The "Travel & Living Abroad" category: 16 courses, two building, the rest proposed. */\nexport const TRAVEL_ABROAD_PROPOSAL = \`${lit(travel)}\`;\n\n`;
+  out2 += `/** The "Workers' Rights" track: the built History of Unions anchor plus eleven country\n *  courses spanning the spectrum of state-labor relations, in three build waves. */\nexport const WORKERS_RIGHTS_TRACK_PROPOSAL = \`${lit(workersRights)}\`;\n`;
   writeFileSync(join(OUT_DIR, "proposals.ts"), out2);
 
   console.log(`Wrote src/lib/future-work-content/she-did-the-work.ts (${subjects.length} subjects) + proposals.ts`);

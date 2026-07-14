@@ -9,7 +9,11 @@
 // BAM reviews these at /admin/future and leaves notes per item; the notes go to the
 // `future_work_notes` table and are readable from the CLI with `pnpm future:list`.
 
-import { CIVICS_MORE_PROPOSAL, TRAVEL_ABROAD_PROPOSAL } from "@/lib/future-work-content/proposals";
+import {
+  CIVICS_MORE_PROPOSAL,
+  TRAVEL_ABROAD_PROPOSAL,
+  WORKERS_RIGHTS_TRACK_PROPOSAL,
+} from "@/lib/future-work-content/proposals";
 import { SHE_DID_THE_WORK_PROPOSAL, SHE_DID_THE_WORK_SUBJECTS } from "@/lib/future-work-content/she-did-the-work";
 
 export type FutureWorkKind = "course" | "feature";
@@ -116,6 +120,17 @@ export const FUTURE_WORK: FutureWorkItem[] = [
       "A new category: 16 courses from passports and visas (building now) through taxes, healthcare, and retiring abroad — all cited to authoritative government sources.",
     body: TRAVEL_ABROAD_PROPOSAL,
     provenance: "plans/future-courses/travel-abroad-proposal.md",
+  },
+  {
+    key: "workers-rights-track",
+    title: "Workers' Rights Around the World — course track",
+    kind: "course",
+    status: "proposed",
+    group: "Culture & History",
+    summary:
+      "Eleven country courses anchored on the built History of Unions course, chosen to span the real spectrum of state–labor relations — from workers on the German board to the Gulf's kafala system — with a build order, the sourcing difficulty of each, and an honest list of which ones need a reviewer.",
+    body: WORKERS_RIGHTS_TRACK_PROPOSAL,
+    provenance: "plans/future-courses/workers-rights-track-proposal.md",
   },
 ];
 

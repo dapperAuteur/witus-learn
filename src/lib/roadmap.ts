@@ -457,6 +457,28 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
+- 🔧 **The History of Unions: America and the World** (Culture & History, \`content/history-of-unions\`)
+  — the **anchor of the workers'-rights track**, for high school students. 7 sections · 22 teaching
+  lessons · 7 quizzes (15–18-question banks, above the 10-question attempt cap so retries rotate) ·
+  1 exercise. The US arc (Knights/AFL → **Haymarket** → Homestead/Pullman → **Triangle** → the
+  **Wagner Act** → the CIO → **Taft-Hartley** → Randolph → **Memphis** → **PATCO** → the BLS density
+  series) told **with the parts a comfortable course skips**: the NLRA's deliberate
+  **agricultural/domestic carve-out** (29 U.S.C. § 152(3)) and why farmworker organizing had to
+  happen outside the law; unions' **own** record of racial and gender exclusion (whites-only
+  clauses, the apprenticeship chokepoint, segregated auxiliaries, *Steele v. L&N* (1944), the
+  AFL-CIO declining to endorse the 1963 March); and the corruption chapters. **King was killed in
+  Memphis because he was there for a strike** — said plainly. Then six genuinely different national
+  models (Nordic/**Ghent**, German **co-determination**, Japanese **enterprise unions**, China's
+  state-run **ACFTU**, **Solidarity**/**COSATU**, the Gulf **kafala** system) and the **ILO** floor,
+  built on a transferable four-question frame. Accuracy posture is the point: **Haymarket's
+  bomb-thrower is taught as unresolved** (the record never established who threw it; the lesson
+  refuses to name one and flags that confident accounts in *both* directions exceed the evidence),
+  as is Hoffa's disappearance; the NLRA exclusion splits **text** / **effect** / **motive**; every
+  BLS, OECD, ILO and Gallup figure carries a **year** (incl. BLS's own caveat that the 2025 series
+  is an 11-month average); and the standard PATCO folklore is corrected (permanent replacement was
+  lawful from *Mackay Radio*, **1938**). Registered in \`seed-courses.ts\`; **no migration** —
+  \`pnpm seed:courses\`. Cross-links to *Know Your Rights at Work*. Track proposal (11 country
+  courses, 3 build waves) at \`/admin/future\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
