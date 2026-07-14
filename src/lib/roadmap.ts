@@ -419,6 +419,29 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
+- ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
+  (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
+  students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
+  System taught from the verified figures (launched Jan 2020, max Index 54.0, 54 holes for an
+  initial index, Index = average of the **lowest 8 of the last 20** — i.e. potential, not average).
+  The **History** section is the spine: the PGA's Caucasian-only clause (1934–Nov 1961, acknowledged
+  but never apologized for) and the three documented evasions institutions used to stay segregated —
+  rename the tournament an "Invitational," lease the municipal course to a sham "private club," or
+  sell it — plus the statutory reason they worked (**Title II does not list golf courses at all**;
+  42 U.S.C. § 2000a(b), and § 2000a(e) exempts private clubs), which is why desegregation ran
+  through the **Fourteenth Amendment**. Centerpiece is a **primary-source lesson**: students read the
+  **January 1962 *Golfdom*** trade report of the repeal and find it credits "difficulties in making
+  tournament arrangements" and names none of Sifford, Spiller, Rhodes, or Mosk — the article isn't
+  false, it's *emptied*. Corrections carried deliberately against widely published error (incl. the
+  PGA TOUR's own site): *Holmes* was **vacated**, not reversed; the Greensboro Six did **not** lose
+  5–4 (*Wolfe*, 1960, dismissed the appeal); *Palmer v. Thompson* is a **pool** case. **Opportunities**
+  is the payload: the **2022 amateur-status rewrite legalized sponsorship/endorsement/NIL/expenses/
+  free equipment** (paid instruction is the one door still shut, and non-cash payment counts), and
+  the **U.S. Open is genuinely open** — any amateur at a **0.4** Handicap Index may enter, and the
+  USGA accepted a record **10,202 entries** for the 2025 U.S. Open. No unverifiable figure is printed
+  (no NGF standalone Black-participation %, because none exists — the absence is taught as the
+  finding; no U.S. Women's Amateur handicap limit, because it couldn't be verified).
+  \`pnpm seed:courses\` picks it up. First of the five sports courses.
 - 🔧 **/explore is a landing page now** (\`feat/explore-landing\`) — the Commodity Map page was an
   \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
   now answers **what is this → what will my student learn → why trust it → what next**, for the
