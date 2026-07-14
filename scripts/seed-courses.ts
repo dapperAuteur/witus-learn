@@ -9,6 +9,7 @@ import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { KNOTS_COURSE } from "./data/knots-course";
 import { SURVIVAL_COURSE } from "./data/survival-course";
+import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
 import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
@@ -569,6 +570,7 @@ async function main() {
     { name: "Survival", sortOrder: 9 },
     { name: "Careers & Media", sortOrder: 10 },
     { name: "Culture & History", sortOrder: 11 },
+    { name: "Sports", sortOrder: 12 },
   ]) {
     await db
       .insert(schema.courseCategories)
@@ -586,6 +588,7 @@ async function main() {
     // green/black/red interactive map at /great-migration-map. See plans/future-courses/
     // great-migration.md (design) and great-migration-facts.md (the fact-check pass).
     { slug: "great-migration", course: GREAT_MIGRATION_COURSE, category: "Culture & History" },
+    { slug: "football", course: FOOTBALL_COURSE, category: "Sports" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
