@@ -720,5 +720,319 @@ The next four sections are, in order: what people did when the law **didn't** co
         ],
       },
     },
+    // ─────────── SECTION 3 · BUILDING POWER OUTSIDE THE ROOM (DOLORES HUERTA) ───────────
+    {
+      slug: "kyraw-building-power-outside-the-room",
+      title: "8 · Dolores Huerta: how you build power outside the room",
+      section: "Section 3 · Building power when the law does not cover you",
+      recallContent: [
+        {
+          prompt: "Which group excluded from NLRA § 2(3) is the reason this section exists?",
+          answer:
+            "Agricultural laborers. Farm workers have no federal right to organize under the NLRA — so the farm worker movement had to build power outside the statute entirely.",
+        },
+        {
+          prompt: "Under NLRA § 2(11), what makes someone a \"supervisor\" and therefore outside § 7?",
+          answer:
+            "Authority to hire, discipline, discharge, assign or effectively recommend such action, exercised with independent judgment — not the job title, and not whether they are salaried.",
+        },
+      ],
+      body: `Section 2 ended on a hard fact: **agricultural laborers are written out of the National Labor Relations Act** (29 U.S.C. § 152(3)). No federal right to organize. No federal election. No federal agency to complain to.
+
+So what do you do when the law is not merely against you — it simply *does not see you*?
+
+**Dolores Clara Fernández Huerta** was born in Dawson, New Mexico, on **April 10, 1930** (National Archives [NARA], 2023). She trained as a teacher, and quit — because, as she put it, she could do more by organizing farm workers than by trying to teach their hungry children (NARA, 2023). She met **César Chávez** at the Community Service Organization, and in **1962** the two of them founded the **National Farm Workers Association (NFWA)**, which became the **United Farm Workers (UFW)** (NARA, 2023; Dolores Huerta Foundation [DHF], n.d.).
+
+She was **the UFW's chief contract negotiator** — the person actually at the table — across four decades, at a time when neither Latinos nor women were in those rooms at all.
+
+**Here is her method, and it is the transferable part.** She could not file for an election, so she built power everywhere the law wasn't:
+
+**1. Legislate what you cannot bargain for.** Before the union was even a union, Huerta was lobbying in Sacramento. Working with allies in the legislature in the early 1960s, she helped win **disability insurance and public assistance for California farm workers regardless of citizenship** (DHF, n.d.). If you cannot win a benefit at the bargaining table, win it in the statute book, and the employer has to obey it anyway.
+
+**2. Organize house to house.** The UFW was built through **house meetings** — one worker's kitchen, a handful of neighbours, a conversation. This is slow, and it is the only thing that works. An organization built out of relationships survives a lost strike. An organization built out of a mailing list does not.
+
+**3. Strike — and know that the strike alone may not be enough.** On **September 8, 1965**, over 800 Filipino farm workers of the **Agricultural Workers Organizing Committee (AWOC)**, led by **Larry Itliong** and Ben Gines, walked out of ten grape vineyards around Delano, California (National Park Service [NPS], n.d.). *The Filipino workers struck first.* This is routinely left out of the story, and leaving it out is a small dishonesty that has become a large one. On **September 16, 1965** — Mexican Independence Day — the NFWA membership voted overwhelmingly to join them (NPS, n.d.).
+
+**4. When the employer can outlast you, go around the employer to the customer.** The growers could wait out a strike; farm work is seasonal and strikers get hungry. So the union went to the *buyers*. In December 1965 the NFWA launched a **boycott** of Schenley Industries, the second-largest grower in Delano; by April 1966 Schenley's sales had dropped significantly, and the company signed an agreement (NPS, n.d.). That tactic scaled into the **national grape boycott** — millions of Americans simply not buying grapes. **The boycott is the purest illustration of this whole course's argument: leverage is not something you are given, it is a seam you find.**
+
+The strike lasted five years. **Huerta was the lead negotiator on the final contracts** (NARA, 2023).
+
+**5. Then turn the win into a law, so the next group does not have to do it all again.** In **1975**, California enacted the **Agricultural Labor Relations Act**, "becoming the first state to extend collective bargaining rights to agricultural workers" (Agricultural Labor Relations Board [ALRB], n.d.). Huerta was instrumental in it (DHF, n.d.). The federal exclusion still stands — but in one state, farm workers finally had a board, an election, and an unfair-labor-practice process.
+
+**6. And a phrase.** In **1972**, when Arizona's governor moved to push legislation criminalizing UFW organizing and boycotts, Huerta answered with three words that became the movement's rallying cry: **"Sí, se puede"** (NARA, 2023). **It is hers.** It is very commonly credited to Chávez, and that is simply wrong — the UFW's own history corrects it.
+
+She received the **Presidential Medal of Freedom in 2012** (DHF, n.d.).
+
+**The lesson, stated plainly:** Wyatt teaches you what a contract is. Huerta teaches you **how you get one when you have nothing** — no statute, no election, no agency, no leverage. You build it: in the legislature, in the kitchen, on the picket line, and in the grocery store two thousand miles away. You build power *outside* the room so that you have something to say *inside* it.
+
+The next lesson is about what else was happening inside that movement — because the public record changed in 2026, and a course that stopped here would be lying to you by omission.
+
+:::reveal The growers could outlast a strike, because farm work is seasonal and strikers get hungry. What did the farm workers do instead, and why is it the best illustration of "leverage" in this course? ||| They went around the employer to the employer's **customers** — a boycott, first of Schenley Industries in 1965–66 and then the national table-grape boycott. It is the best illustration because the workers had no legal power and no economic power *at the worksite*, so they found the one place where their opponent WAS vulnerable: sales. Leverage is not given to you; it is a seam you find.
+
+## Sources
+- Agricultural Labor Relations Board. (n.d.). *Who we are*. State of California. https://www.alrb.ca.gov/about-us/who-we-are/
+- Dolores Huerta Foundation. (n.d.). *Dolores Huerta*. https://doloreshuerta.org/dolores-huerta/
+- National Archives and Records Administration. (2023, October 11). *Dolores Huerta: "Sí, se puede!"* Pieces of History. https://prologue.blogs.archives.gov/2023/10/11/dolores-huerta-si-se-puede/
+- National Park Service. (n.d.). *Workers united: The Delano grape strike and boycott*. https://www.nps.gov/articles/000/workers-united-the-delano-grape-strike-and-boycott.htm
+- National Labor Relations Act § 2(3), 29 U.S.C. § 152(3). Legal Information Institute, Cornell Law School. https://www.law.cornell.edu/uscode/text/29/152`,
+    },
+    {
+      slug: "kyraw-a-movement-is-not-a-saint",
+      title: "9 · A movement is not a saint: the record, as it stands in 2026",
+      section: "Section 3 · Building power when the law does not cover you",
+      recallContent: [
+        {
+          prompt: "Who struck first at Delano in September 1965, and why does the course insist on saying so?",
+          answer:
+            "Filipino farm workers of the AWOC, led by Larry Itliong and Ben Gines, on September 8, 1965. The NFWA voted to join on September 16. Leaving the Filipino workers out is a small dishonesty that has become a large one.",
+        },
+        {
+          prompt: "Who coined \"Sí, se puede,\" and in what circumstances?",
+          answer:
+            "Dolores Huerta, in 1972, when Arizona's governor moved to push legislation criminalizing UFW organizing and boycotts. It is very commonly miscredited to César Chávez.",
+        },
+      ],
+      body: `The last lesson told you how the farm worker movement was built. This one tells you what else was true inside it. **Both lessons are part of the same course, and neither cancels the other.**
+
+**What happened, and when.**
+
+On **March 18, 2026**, *The New York Times* published an investigation into **César Chávez**, reported by Manny Fernandez and Sarah Hurtes over nearly five years. As the Associated Press and NPR reported, the *Times* interviewed **more than 60 people** and reviewed **hundreds of pages of union records**. The investigation reported that Chávez sexually abused women and girls within the farm worker movement over a period of decades, including two women who said the abuse began when they were **12 and 13 years old** (Figueroa, 2026; NPR, 2026).
+
+**The same day, Dolores Huerta came forward.** In a statement, Huerta — then 95, the union's co-founder and the woman you just spent a lesson reading about — said that Chávez sexually abused her in the 1960s. She described two encounters: one in which she was manipulated and pressured, and one in which, in her words, she was **"forced against my will."** Both, she said, resulted in pregnancies. She said she had stayed silent for six decades because she feared damaging the farm worker movement, which was her life's work (Figueroa, 2026).
+
+She also said: **"Cesar's actions do not reflect the values of our community and our movement."** (Figueroa, 2026)
+
+**What followed.** The **United Farm Workers** and the **UFW Foundation** cancelled all César Chávez Day activities, and the union and the Cesar Chavez Foundation said they would set up a confidential channel for people who wanted to report harm, and a process for accountability measures (NPR, 2026). On **March 26, 2026** — eight days after the story broke — the California Legislature voted unanimously in the Senate, 37–0, to **rename the state's March 31 holiday from César Chávez Day to Farmworkers Day**, and Governor Newsom signed it into law immediately (CalMatters, 2026; PBS News, 2026).
+
+**What this course will not do.**
+
+It will not adjudicate. It is not the job of a high school course to decide what a court has not, and no court has. It will not speculate about anyone's motives. It will not invent a quotation, or repeat one it cannot source. Where it has told you something, it has told you **who reported it and on what date**, so that you can go and check — and so that you can update it when the record does, because a record from four months ago is a record that is still moving.
+
+**What this course will do is refuse to tell you a simpler story than the true one.**
+
+Because here is the thing about the version of this story you would have been told two years ago. It was a story about a heroic partnership: two people who built a union from nothing. And that story was **true**. The house meetings happened. The boycott worked. The 1975 Act is real law and it still protects people. Huerta really was at the table for forty years and really did coin the phrase.
+
+**And it was not the whole truth.** The same organization that won those contracts was, according to its own co-founder, a place where she was assaulted and then stayed silent for sixty years *because speaking would have damaged the work*. Read that sentence again, because it is the most important sentence in this course:
+
+**She stayed silent to protect the movement — and the movement was the thing that had harmed her.**
+
+**Why this belongs in a course about your rights at work.**
+
+It would be easy to file this under "history," or under "sad news about a famous man," and move on. Do not. There is a straight line from this to the job you have right now:
+
+- **The powerful person who is on your side of the fight is still a powerful person.** A union, a boss, a coach, a mentor, a movement you believe in — none of these is a guarantee of safety, and *believing in the cause is exactly the pressure that keeps people quiet.* Huerta named that pressure precisely: she was protecting the work.
+- **This is why procedure matters more than personality.** Section 1 taught you that a grievance procedure ending before a **neutral third party** is what gives every other clause its teeth. That is not a boring administrative detail. It is the *entire* answer to "what do I do when the person who wronged me is the person everybody admires?" A process you can use without the permission of the powerful is the only kind worth having — and it has to exist *inside* the organization, not just against the employer.
+- **An institution that cannot be criticized cannot be trusted.** The instinct to protect a good movement from a true story is the instinct that lets harm continue inside it. The UFW's response — cancelling the celebrations, opening a reporting channel — is what taking that seriously looks like at the start. Whether it works is a question for the record, later.
+
+**A movement is not a saint.** The person who built the power can also be harmed inside it. **Both are true, and neither one cancels the other.** You are allowed — you are *required* — to hold both.
+
+:::reveal Dolores Huerta said she stayed silent for six decades. What reason did she give, and why does this course call that the most important thing in it? ||| She said she feared that speaking would damage the farm worker movement — building it and securing farm worker rights had been her life's work. It is the most important thing in the course because it names the exact pressure that keeps people silent inside organizations they believe in: *she stayed quiet to protect the movement, and the movement was the thing that had harmed her.* It is also why a grievance process that works **without the permission of the powerful** matters more than any individual's good character.
+
+## Sources
+- CalMatters. (2026, March). *César Chávez Day renamed to Farmworkers Day in California*. https://calmatters.org/politics/2026/03/cesar-chavez-day-renamed/
+- Figueroa, F. (2026, March 18). *Labor rights leader Dolores Huerta says she was sexually abused by César Chávez* [Associated Press]. PBS News. https://www.pbs.org/newshour/nation/labor-rights-leader-dolores-huerta-says-she-was-sexually-abused-by-cesar-chavez
+- NPR. (2026, March 18). *Cesar Chavez abused and raped women and girls, NYT investigation says*. https://www.npr.org/2026/03/18/nx-s1-5752253/cesar-chavez-sexual-assault-dolores-huerta-united-farm-workers
+- PBS News. (2026, March). *California lawmakers pass bill renaming César Chávez Day after sexual abuse allegations*. https://www.pbs.org/newshour/politics/california-lawmakers-pass-bill-renaming-cesar-chavez-day-after-sexual-abuse-allegations`,
+    },
+    {
+      slug: "kyraw-quiz-power",
+      title: "10 · Quiz: building power when the law does not cover you",
+      section: "Section 3 · Building power when the law does not cover you",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why could farm workers not simply file for an NLRB election in the 1960s?",
+            options: [
+              "Agricultural laborers are excluded from the NLRA's definition of \"employee\"",
+              "The NLRB only operated east of the Mississippi",
+              "They had not yet formed a union",
+              "Their employers were too small to be covered",
+            ],
+            correctIndex: 0,
+            explanation:
+              "29 U.S.C. § 152(3) excludes agricultural laborers. No federal right to organize, no federal election, no federal agency — which is why the entire movement had to be built outside the statute.",
+            sourceLessonSlug: "kyraw-building-power-outside-the-room",
+          },
+          {
+            prompt: "Who began the Delano grape strike on September 8, 1965?",
+            options: [
+              "Filipino farm workers of the AWOC, led by Larry Itliong and Ben Gines",
+              "The National Farm Workers Association, led by César Chávez",
+              "The Teamsters",
+              "The United Farm Workers, led by Dolores Huerta",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Over 800 Filipino farm workers of the AWOC struck ten vineyards first. The NFWA voted to join on September 16. Leaving the Filipino workers out of this story is a common and consequential erasure.",
+            sourceLessonSlug: "kyraw-building-power-outside-the-room",
+          },
+          {
+            prompt: "The growers could outlast a strike. What did the farm workers do instead, and why did it work?",
+            options: [
+              "Launched a consumer boycott, going around the employer to the employer's customers — the one place the growers were vulnerable",
+              "Filed unfair labor practice charges with the NLRB",
+              "Sued the growers in federal court",
+              "Petitioned Congress to amend the NLRA",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Schenley boycott (1965–66) and then the national grape boycott. This is the course's clearest illustration that leverage is a seam you find, not a thing you are given.",
+            sourceLessonSlug: "kyraw-building-power-outside-the-room",
+          },
+          {
+            prompt: "Who coined the phrase \"Sí, se puede\"?",
+            options: ["Dolores Huerta", "César Chávez", "Larry Itliong", "Philip Vera Cruz"],
+            correctIndex: 0,
+            explanation:
+              "Huerta, in 1972, when Arizona's governor moved against UFW organizing and boycotts. It is very commonly miscredited to Chávez — the UFW's own history corrects this.",
+            sourceLessonSlug: "kyraw-building-power-outside-the-room",
+          },
+          {
+            prompt: "What did California's Agricultural Labor Relations Act of 1975 do?",
+            options: [
+              "Made California the first state to extend collective bargaining rights to agricultural workers",
+              "Amended the NLRA to cover farm workers nationwide",
+              "Banned consumer boycotts of agricultural products",
+              "Created the National Labor Relations Board",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The ALRB's own words. Note what it did NOT do: the federal exclusion in § 2(3) still stands. A farm worker in most states still has no organizing statute.",
+            sourceLessonSlug: "kyraw-building-power-outside-the-room",
+          },
+          {
+            prompt: "\"Legislate what you cannot bargain for.\" What does this step in Huerta's method mean?",
+            options: [
+              "If you cannot win a benefit at the bargaining table, win it in the statute book — then the employer must obey it anyway",
+              "Only elected officials can improve working conditions",
+              "Unions should not negotiate contracts",
+              "Boycotts should be made illegal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Huerta helped win disability insurance and public assistance for California farm workers regardless of citizenship — before the union had any bargaining power at all.",
+            sourceLessonSlug: "kyraw-building-power-outside-the-room",
+          },
+          {
+            prompt: "Why does the course say house meetings — one kitchen, a few neighbours — are worth the slowness?",
+            options: [
+              "An organization built out of relationships survives a lost strike; one built out of a mailing list does not",
+              "They are cheaper than advertising",
+              "They are legally required before an election",
+              "They allow the union to avoid the employer's notice",
+            ],
+            correctIndex: 0,
+            explanation: "This is the least glamorous and most durable part of the method.",
+            sourceLessonSlug: "kyraw-building-power-outside-the-room",
+          },
+          {
+            prompt: "On March 18, 2026, what did Dolores Huerta say publicly?",
+            options: [
+              "That César Chávez sexually abused her in the 1960s, and that she had stayed silent for six decades",
+              "That she was retiring from the Dolores Huerta Foundation",
+              "That the UFW should disband",
+              "That she disputed The New York Times investigation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Her statement came the same day The New York Times published its investigation into Chávez (Figueroa, 2026, AP).",
+            sourceLessonSlug: "kyraw-a-movement-is-not-a-saint",
+          },
+          {
+            prompt: "What reason did Huerta give for her long silence?",
+            options: [
+              "She feared speaking would damage the farm worker movement, which was her life's work",
+              "She had signed a non-disclosure agreement",
+              "She had been threatened with a lawsuit",
+              "She did not remember the events until recently",
+            ],
+            correctIndex: 0,
+            explanation:
+              "This is the pressure the lesson asks you to notice: she stayed silent to protect the movement, and the movement was the thing that had harmed her.",
+            sourceLessonSlug: "kyraw-a-movement-is-not-a-saint",
+          },
+          {
+            prompt: "What did the California Legislature do on March 26, 2026?",
+            options: [
+              "Voted to rename the March 31 state holiday from César Chávez Day to Farmworkers Day",
+              "Repealed the Agricultural Labor Relations Act",
+              "Extended NLRA coverage to farm workers",
+              "Opened a criminal investigation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Senate voted 37–0 and the governor signed it immediately, in time for the March 31 holiday (CalMatters, 2026; PBS News, 2026).",
+            sourceLessonSlug: "kyraw-a-movement-is-not-a-saint",
+          },
+          {
+            prompt: "What is the central claim of the lesson \"A movement is not a saint\"?",
+            options: [
+              "The organizing work was real AND the harm was real — the person who built the power can also be harmed inside it, and neither fact cancels the other",
+              "The farm worker movement's achievements were fraudulent",
+              "Allegations against historical figures should be left to historians",
+              "The 1975 Act should be repealed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The house meetings happened. The boycott worked. The 1975 Act is still law. And the co-founder says she was assaulted and stayed silent for sixty years. You are required to hold both.",
+            sourceLessonSlug: "kyraw-a-movement-is-not-a-saint",
+          },
+          {
+            prompt: "What does the course say is the connection between the Huerta/Chávez record and YOUR rights at work?",
+            options: [
+              "It is why a grievance process you can use WITHOUT the permission of the powerful matters more than anyone's good character",
+              "It proves unions are ineffective",
+              "It shows you should never trust a coworker",
+              "It means historical figures cannot be taught",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Believing in the cause is exactly the pressure that keeps people quiet. Procedure beats personality — that is the whole argument for a neutral third party.",
+            sourceLessonSlug: "kyraw-a-movement-is-not-a-saint",
+          },
+          {
+            prompt: "The course reports the 2026 allegations with named sources and specific dates. Why does it insist on that, rather than just summarizing?",
+            options: [
+              "So you can check it yourself, and update it when the record moves — a record from a few months ago is still moving",
+              "Because the sources requested attribution",
+              "To make the lesson longer",
+              "Because the events are disputed and unverifiable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course adjudicates nothing and speculates nowhere. It tells you who reported what, and when, so the claim is checkable rather than trusted.",
+            sourceLessonSlug: "kyraw-a-movement-is-not-a-saint",
+          },
+          {
+            prompt: "Dolores Huerta's formal role in the UFW, across four decades, was:",
+            options: [
+              "Chief contract negotiator — the person actually at the bargaining table",
+              "Press secretary",
+              "Treasurer",
+              "Legal counsel",
+            ],
+            correctIndex: 0,
+            explanation:
+              "She was lead negotiator on the contracts that ended the five-year Delano strike (NARA, 2023) — at a time when neither Latinos nor women were in those rooms.",
+            sourceLessonSlug: "kyraw-building-power-outside-the-room",
+          },
+          {
+            prompt: "Which of these best describes the relationship between the two lessons in this section?",
+            options: [
+              "They are both required: the method is genuinely teachable, and the record is genuinely true, and a course that gave you only one would be lying by omission",
+              "The second lesson replaces the first",
+              "The first lesson is history; the second is opinion",
+              "They contradict each other, and the student must choose",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is the design of this section, stated in its own text. Neither fact cancels the other.",
+            sourceLessonSlug: "kyraw-a-movement-is-not-a-saint",
+          },
+        ],
+      },
+    },
   ],
 };
