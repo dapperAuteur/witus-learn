@@ -183,6 +183,8 @@ Read that last paragraph again, because it is the shape of this whole sport: **a
 
 **The ITF publishes the rules.** The International Tennis Federation is the governing body of the game, and its duties "include protecting the integrity of the game through determination of the Rules of Tennis." A **Rules of Tennis Committee** monitors the game and recommends changes to the ITF Board, which recommends them to the ITF's **Annual General Meeting** — "the ultimate authority for making any changes to the Rules of Tennis" (ITF, 2026, Foreword). The rulebook is republished every year.
 
+*(Naming note: the ITF's member nations voted in October 2025 to rebrand the federation as **"World Tennis,"** a trading name adopted on 1 January 2026 (ITF, 2025). You'll see both names in use for a while. This course says "ITF," because that is what the rulebook it cites still says on the cover.)*
+
 **But the ITF does not run professional tennis.** Three other kinds of organization layer their own conditions on top of that rulebook:
 
 - The **ATP** runs the men's professional tour and publishes its own annual rulebook (ATP Tour, 2026).
@@ -202,6 +204,7 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
 ## Sources
 - ATP Tour. (2023, April). *Electronic Line Calling Live to be adopted across the ATP Tour*. https://www.atptour.com/en/news/electronic-line-calling-release-april-2023
 - ATP Tour. (2026). *The 2026 ATP official rulebook*. https://www.atptour.com/-/media/files/rulebook/2026/2026-rulebook_27apr26.pdf
+- International Tennis Federation. (2025, October 16). *International Tennis Federation to become World Tennis in 2026*. https://www.itftennis.com/en/news-and-media/articles/international-tennis-federation-to-become-world-tennis-in-2026/
 - International Tennis Federation. (2026). *ITF rules of tennis 2026*. https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf
 - Roland-Garros. (n.d.). *Grand Slam tennis: A partnership with a shared governance structure*. https://www.rolandgarros.com/en-us/page/grand-slam-tennis-partnership-shared-governance-structure-development-history-traditions
 - Sky Sports. (2026). *French Open will retain human line judges for 2026, making it a Grand Slam outlier*. https://www.skysports.com/tennis/news/32455/13441312/french-open-will-retain-human-line-judges-for-2026-making-it-a-grand-slam-outlier
@@ -384,6 +387,716 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
             explanation:
               "Roland-Garros is the only major still using line judges. On clay the ball leaves an inspectable mark, and its tournament director has said the technology's reliability is 'not absolute' on the surface.",
             sourceLessonSlug: "tennis-who-writes-the-rules",
+          },
+        ],
+      },
+    },
+
+    // ─────────────────────── SECTION 4 · WHERE THE GAME CAME FROM ───────────────────────
+    {
+      slug: "tennis-origins",
+      title: "17 · From a monastery courtyard to a lawn: where tennis came from",
+      section: "Section 4 · Where the game came from",
+      body: `Modern tennis is about 150 years old. The game *behind* it is far older.
+
+**Real tennis (*jeu de paume*).** The ITF traces the game to **France in the 11th or 12th century, played by French monks** — *jeu de paume*, "the game of the palm," because they hit the ball with the **hand**, in enclosed courtyards, adding gloves and eventually rackets (International Tennis Federation [ITF], n.d.-a). That ancestor game is not extinct. It is still played, under four national names for one sport: ***jeu de paume*** in France, **real tennis** in Britain, **court tennis** in the U.S., and **royal tennis** in Australia (ITF, n.d.-a) — on an asymmetrical walled court that looks nothing like yours.
+
+The word **"tennis"** comes from the French **"tenez"** — "take this," or "be ready" — what the server called out before serving. Both the ITF and Britain's Lawn Tennis Association state this plainly (ITF, n.d.-a; Lawn Tennis Association [LTA], n.d.).
+
+**Now the part where confident nonsense circulates.** Someone will tell you that 15/30/40 comes from a **clock face** (15, 30, 45, shortened to 40), and that "love" comes from the French *l'œuf*, "the egg." Notice that the LTA — the national federation — introduces the clock story with the words **"one theory is…"** and then immediately offers a *competing* theory, that the numbers come from the 45-foot *jeu de paume* court, where the server advanced 15 feet, then 15 more, then 10 (LTA, n.d.).
+
+And there's a problem with the clock: **tennis scoring shows up in the 15th century, but clocks of that era had no minute hand.** You cannot move a hand a quarter-turn at a time on a clock that only tells hours. The earliest attempts to *explain* "15" were published in the 1500s — meaning the convention was **already old and already unexplained** 450 years ago.
+
+The honest answer is: **nobody knows.** A course that tells you it knows is selling you something.
+
+**Lawn tennis, 1873–74.** The game you play was assembled in Victorian Britain. **Major Walter Clopton Wingfield** designed and introduced his outdoor game in **1873**, and on **23 February 1874** obtained a **provisional patent — for a portable court** (International Tennis Hall of Fame [ITHF], n.d.-c). Get the object right, because it is the whole story: what he sold was **a box**. Two poles, a net, a mallet, pegs, four rackets, rubber balls, and an instruction manual (ITHF, n.d.-c). He briefly marketed it under the Greek-flavored name *Sphairistike*, which was a bad pun and did not stick; "lawn tennis" did.
+
+**He did not invent tennis. He packaged it** — and packaging is why a monastic handball game became a global sport in about fifteen years. Within two years the **MCC** (the *cricket* club) had rewritten his rules, and it is the MCC's 1876 version, not Wingfield's, that carried forward (ITF, n.d.).
+
+**The tournaments came fast.** The **All England Croquet and Lawn Tennis Club** — a *croquet* club that had taken up lawn tennis to fill its lawns and its accounts — held the first **Wimbledon Championships in 1877**. Its organizers set the court at **78 by 27 feet**, adopted **15/30/40** scoring, and allowed the server one fault. **All three of those decisions are still the rules today** (Britannica, n.d.-b). The first **U.S. National Championships** followed in **1881**; women's singles was added in **1887**. The **French Championships** began in **1891** but were **closed to foreign players until 1925** — which is why, as a true international major, it is the youngest of the four. The **Australasian Championships**, later the Australian Open, began in **1905**.
+
+**And "15/30/40" was borrowed, not invented.** Lawn tennis took it from real tennis, which had been using it since at least the 1400s. Why *real* tennis used those numbers, nobody actually knows.
+
+**About that "Grand Slam."** Two claims usually get told together, and only one of them is solid.
+
+- **Solid:** in **1938, Don Budge became the first player to win all four majors in one year** (ITHF, n.d.-d).
+- **Not solid:** the popular story that the writer Allison Danzig **coined** "Grand Slam" for Budge that year. Newspapers were already using the phrase about tennis in **1933**, for **Jack Crawford**, who won three of the four and then lost the U.S. final (Quinion, n.d.). The term itself comes from **bridge**, the card game, and reached sport first through **golf**.
+
+So: Budge did it first. He probably didn't name it. This course will keep doing this to you — separating *what happened* from *the tidy story about what happened* — because that distinction is most of what a citation is for.
+
+**Governing body: 1913.** The **International Lawn Tennis Federation** was founded in **Paris in 1913**, with 15 member nations, to write one set of rules for a game being played on four continents with local variations; it formally became the governor of the Rules of Tennis with effect from **1 January 1924** (ITF, n.d.-b). It later dropped the "Lawn" to become the **ITF** — and it is renaming again: in October 2025 its member nations voted to rebrand it **"World Tennis,"** a trading name it adopted on **1 January 2026** (ITF, 2025). If you see "World Tennis" and "ITF" used interchangeably, that is why.
+
+:::reveal Walter Clopton Wingfield is often called the inventor of tennis. What did he actually patent in February 1874, and why is "inventor" the wrong word? ||| A **portable court** — sold as a **box** containing poles, a net, a mallet, pegs, rackets, balls, and an instruction manual, that turned any flat lawn into a tennis court. Racket-and-ball games (*jeu de paume* / real tennis) were centuries old, and within two years the MCC had rewritten his rules anyway. He didn't invent the game; he **packaged and distributed** it — which is exactly why it spread so fast.
+
+## Sources
+- Encyclopaedia Britannica. (n.d.-a). *Tennis*. https://www.britannica.com/sports/tennis
+- Encyclopaedia Britannica. (n.d.-b). *All-England Croquet and Lawn Tennis Club*. https://www.britannica.com/topic/All-England-Croquet-and-Lawn-Tennis-Club
+- International Tennis Federation. (n.d.-a). *History of tennis*. https://www.itftennis.com/en/news-and-media/articles/history-of-tennis/
+- International Tennis Federation. (n.d.-b). *History of World Tennis*. https://www.itftennis.com/en/about-us/organisation/history-of-world-tennis/
+- International Tennis Federation. (2025, October 16). *International Tennis Federation to become World Tennis in 2026*. https://www.itftennis.com/en/news-and-media/articles/international-tennis-federation-to-become-world-tennis-in-2026/
+- International Tennis Hall of Fame. (n.d.-c). *Celebrating the Wingfield patent*. https://www.tennisfame.com/celebrating-the-wingfield-patent
+- International Tennis Hall of Fame. (n.d.-d). *Don Budge*. https://www.tennisfame.com/hall-of-famers/inductees/don-budge
+- Lawn Tennis Association. (n.d.). *History of tennis*. https://www.lta.org.uk/about-us/history-of-tennis/
+- Quinion, M. (n.d.). *Grand slam*. World Wide Words. https://www.worldwidewords.org/qa/qa-gra7.htm`,
+    },
+    {
+      slug: "tennis-amateurism-and-shamateurism",
+      title: "18 · \"Amateur\": the rule that decided who was allowed to get paid",
+      section: "Section 4 · Where the game came from",
+      body: `For the first ninety years of its life, tennis had a rule that shaped everything else about it — and it was not in the rulebook you read in Section 1.
+
+**The rule: amateurs and professionals could not play each other.**
+
+- **Amateurs** played the tournaments that mattered — Wimbledon, the U.S. Nationals, Davis Cup — and were officially **unpaid**. They were governed by national associations and the ILTF.
+- **Professionals** got paid openly, on barnstorming exhibition tours, and were **banned from the majors**.
+
+Read that again, because the consequence is bizarre: **the best players in the world were not allowed to play the biggest tournaments in the world.** Once an amateur champion turned pro to earn a living, he vanished from Wimbledon forever. Jack Kramer's summary, quoted by the International Tennis Hall of Fame: *"The most well-known events didn't have the best players"* (International Tennis Hall of Fame [ITHF], 2018).
+
+**And the amateurs were being paid anyway.** The Hall of Fame does not dance around this. Amateurs received "discreet, under-the-table payments in all sorts of random and beguiling ways," and by 1967 leading amateurs were pulling in **$1,000 a week and more** in appearance money — Roy Emerson reportedly demanding $1,500 simply to enter one event (ITHF, 2018). The sport had a name for this: **"shamateurism."**
+
+So be precise about what the amateur rule actually was. It was **not** a rule that money didn't exist in tennis. It was a rule that money existed **dishonestly**. And the point of the arrangement — the part worth understanding if you ever end up on the wrong side of an institution — was **control**. As long as players' income came as untraceable favors from the federations that ran the tournaments, the federations held all the leverage: over who played where, for how much, under what conditions, and over who was allowed to complain.
+
+**This is the thread that connects the whole course.** The Open era (next lesson) ends the amateur rule. The Original 9 (Section 5) walk out because the federations still set the purses. The ATP and WTA get founded because players finally organize. And "opportunities for amateurs" — Section 7 — is a phrase that only makes sense *because* of this history: for ninety years, "amateur" wasn't a stage of your development, it was a **legal category** that determined whether you were allowed to be paid.
+
+:::reveal What was "shamateurism," and what was the real purpose of the amateur rule? ||| "Shamateurism" was the open secret that officially unpaid amateur players were in fact taking **under-the-table appearance money** — $1,000 a week and up by 1967. The amateur rule's real function wasn't to keep money out of tennis; it was to keep money **untraceable and discretionary**, which kept **control** in the hands of the national federations that ran the tournaments and quietly paid the players.
+
+## Sources
+- International Tennis Hall of Fame. (2018). *5 things to know: The dawn of the Open era*. https://www.tennisfame.com/blog/2018/4/5-things-to-know-the-dawn-of-the-open-era
+- Encyclopaedia Britannica. (n.d.). *Tennis: Professional and open tennis*. https://www.britannica.com/sports/tennis/Professional-and-open-tennis`,
+      recallContent: [
+        {
+          prompt: "What did Walter Clopton Wingfield actually do in 1874?",
+          answer:
+            "He patented and sold a portable lawn-tennis set — net, poles, rackets, balls, rules in a box — that turned any flat lawn into a court. He packaged the game; he didn't invent racket-and-ball sport.",
+        },
+        {
+          prompt: "When was the first Wimbledon, and who ran it?",
+          answer: "1877, by the All England Croquet and Lawn Tennis Club — a croquet club that had taken up lawn tennis.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-the-open-era",
+      title: "19 · 1968: the Open era",
+      section: "Section 4 · Where the game came from",
+      body: `The amateur rule broke in one year.
+
+**The vote.** On **30 March 1968**, at a Special General Meeting in Paris, the **International Lawn Tennis Federation approved open tennis** — tournaments in which amateurs and professionals could compete against each other, for money (International Tennis Hall of Fame [ITHF], 2018). Twelve "open" tournaments across eight countries were approved for that year.
+
+**The first one.** The **British Hard Court Championships** at the West Hants Club in **Bournemouth, England**, began on **22 April 1968** — the first open tournament ever played (ITHF, 2018). **Ken Rosewall** beat **Rod Laver** in the men's final; **Virginia Wade** won the women's title.
+
+And in the second round, something happened that ended the argument on the spot. **Mark Cox, an amateur, beat Pancho Gonzales, a professional, in five sets** — the first time an amateur had beaten a pro in an open event (ITHF, 2018). Ninety years of the sport had been organized around the premise that these were two different classes of human being. It took about four days to disprove.
+
+The first **Grand Slam** of the Open era was the **1968 French Championships** in May–June. Bournemouth was first; it just wasn't a major.
+
+**What actually changed.** Everything downstream:
+
+- **Prize money became legal and public.** You could now know what a player earned, which meant you could now **compare** what two players earned — and Section 5 is what happened when women did that arithmetic.
+- **Players could organize.** The **ATP** was formed in **September 1972**; the **WTA** in **June 1973**. Neither is imaginable under the amateur rule, because under the amateur rule the players were not employees, contractors, or professionals — they were *guests*.
+- **"Amateur" stopped being a legal cage** and became what it means to you today: someone who plays for reasons other than money. That is a much better word, and you get to use it because a room full of people in Paris voted in 1968.
+
+**One person did not get the memo, and it's the best story in the sport.** Keep that in mind — the next section opens with the 1968 US Open.
+
+:::reveal What did the ILTF vote to do on 30 March 1968, where was the first open tournament, and what happened in its second round that undercut ninety years of policy? ||| The ILTF, meeting in Paris, **approved open tennis** — amateurs and professionals competing together for prize money. The first open tournament was the **British Hard Court Championships at Bournemouth**, starting **22 April 1968**. In the second round, the **amateur Mark Cox beat the professional Pancho Gonzales in five sets** — the first amateur ever to beat a pro in an open event, which demolished the idea that the two were different classes of player.
+
+## Sources
+- International Tennis Hall of Fame. (2018). *5 things to know: The dawn of the Open era*. https://www.tennisfame.com/blog/2018/4/5-things-to-know-the-dawn-of-the-open-era
+- ATP Tour. (n.d.). *ATP heritage: Open tennis*. https://www.atptour.com/en/news/atp-heritage-open-tennis-laver-rosewall-cox-1968-bournemouth`,
+      recallContent: [
+        {
+          prompt: "Under the amateur rule, why weren't the best players at the biggest tournaments?",
+          answer:
+            "Professionals were paid openly but were banned from the majors; amateurs played the majors but were officially unpaid. Once a champion turned pro to make a living, he could never play Wimbledon again.",
+        },
+        {
+          prompt: "What did 'shamateurism' describe?",
+          answer:
+            "Officially unpaid amateurs taking substantial under-the-table appearance money — which kept the money untraceable and the power with the federations.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-quiz-history-origins",
+      title: "20 · Quiz: origins, amateurism, and 1968",
+      section: "Section 4 · Where the game came from",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is *jeu de paume*?",
+            options: [
+              "The French name for the Roland-Garros tournament",
+              "A medieval French game — 'the game of the palm' — played by hitting a ball with the hand, the ancestor of tennis",
+              "The original name for a tie-break",
+              "The French tennis federation",
+            ],
+            correctIndex: 1,
+            explanation: "Played in enclosed courtyards, later with gloves and rackets; it survives today as 'real tennis.'",
+            sourceLessonSlug: "tennis-origins",
+          },
+          {
+            prompt: "The clock-face explanation of 15/30/40 scoring is best described as:",
+            options: [
+              "A documented fact stated in the ITF rulebook",
+              "A theory — widely repeated, but not established",
+              "A rule invented by the USTA",
+              "A myth that historians have definitively disproved",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It may be true; nobody has established it. The same goes for l'œuf ('the egg') as the origin of 'love.' What is documented is the modern rule (ITF Rule 5).",
+            sourceLessonSlug: "tennis-origins",
+          },
+          {
+            prompt: "What did Walter Clopton Wingfield's February 1874 provisional patent actually cover?",
+            options: [
+              "The tie-break",
+              "The modern tennis racket",
+              "A portable court — sold as a box of poles, net, mallet, pegs, rackets, balls, and an instruction manual",
+              "The 15/30/40 scoring system",
+            ],
+            correctIndex: 2,
+            explanation:
+              "He packaged and distributed the game, which is why it spread so fast. He did not invent racket-and-ball sport — and within two years the MCC had rewritten his rules anyway.",
+            sourceLessonSlug: "tennis-origins",
+          },
+          {
+            prompt: "Which statement about the phrase 'Grand Slam' is accurate?",
+            options: [
+              "Don Budge was the first to win all four majors in a year (1938), but the claim that the term was coined for him is contested — newspapers used it about tennis in 1933",
+              "The writer Allison Danzig definitively coined it for Don Budge in 1938",
+              "It is the official ITF term, defined in the rulebook",
+              "It originated in baseball",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 1933 usages (about Jack Crawford) predate Budge. The term comes from bridge, the card game, and reached sport first through golf. Budge's feat is solid; the coinage story isn't.",
+            sourceLessonSlug: "tennis-origins",
+          },
+          {
+            prompt: "In what year was the first Wimbledon Championships held?",
+            options: ["1868", "1877", "1891", "1905"],
+            correctIndex: 1,
+            explanation: "1877, by the All England Croquet and Lawn Tennis Club.",
+            sourceLessonSlug: "tennis-origins",
+          },
+          {
+            prompt: "Put these in order of first staging: US National Championships, Wimbledon, Australasian Championships, French Championships.",
+            options: [
+              "Wimbledon (1877), US (1881), French (1891), Australasian (1905)",
+              "US (1877), Wimbledon (1881), Australasian (1891), French (1905)",
+              "Wimbledon (1877), French (1881), US (1891), Australasian (1905)",
+              "French (1877), Wimbledon (1881), US (1891), Australasian (1905)",
+            ],
+            correctIndex: 0,
+            explanation: "Wimbledon 1877, US Nationals 1881, French 1891, Australasian 1905.",
+            sourceLessonSlug: "tennis-origins",
+          },
+          {
+            prompt: "Why was the French Championships, though founded in 1891, the last of the four to become a true international major?",
+            options: [
+              "It was cancelled for its first thirty years",
+              "It was closed to foreign players until 1925",
+              "It didn't allow women until 1968",
+              "It wasn't played on clay until 1925",
+            ],
+            correctIndex: 1,
+            explanation: "Before 1925 it was an interclub competition for French players.",
+            sourceLessonSlug: "tennis-origins",
+          },
+          {
+            prompt: "Under the pre-1968 amateur rule, what happened when an amateur champion turned professional?",
+            options: [
+              "Nothing — he kept playing the majors and now got paid",
+              "He was banned from the majors, and could only play paid exhibition tours",
+              "He had to give back his trophies",
+              "He was required to join the ILTF board",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Pros were barred from the majors. This is why, as Jack Kramer put it, 'the most well-known events didn't have the best players.'",
+            sourceLessonSlug: "tennis-amateurism-and-shamateurism",
+          },
+          {
+            prompt: "What was 'shamateurism'?",
+            options: [
+              "A style of play popular in the 1950s",
+              "The open secret that officially unpaid amateurs were taking large under-the-table payments",
+              "An early name for the ATP",
+              "A rule allowing amateurs to accept prize money",
+            ],
+            correctIndex: 1,
+            explanation: "By 1967, top amateurs were reportedly taking $1,000 a week and more in appearance money.",
+            sourceLessonSlug: "tennis-amateurism-and-shamateurism",
+          },
+          {
+            prompt: "What was the real function of the amateur rule?",
+            options: [
+              "To keep money out of tennis entirely",
+              "To keep players' income untraceable and discretionary — which kept control with the national federations",
+              "To protect players from taxes",
+              "To make matches shorter",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Money was already in tennis. The rule made it a favor rather than a wage, and a favor can be withdrawn — which is leverage.",
+            sourceLessonSlug: "tennis-amateurism-and-shamateurism",
+          },
+          {
+            prompt: "On 30 March 1968, meeting in Paris, what did the ILTF vote to do?",
+            options: [
+              "Create the ATP",
+              "Approve open tennis — amateurs and professionals competing together for prize money",
+              "Standardize the tie-break",
+              "Ban South Africa from Davis Cup",
+            ],
+            correctIndex: 1,
+            explanation: "Twelve open tournaments across eight countries were approved for 1968.",
+            sourceLessonSlug: "tennis-the-open-era",
+          },
+          {
+            prompt: "What was the first open tournament ever played?",
+            options: [
+              "The 1968 Wimbledon Championships",
+              "The 1968 US Open",
+              "The British Hard Court Championships at Bournemouth, from 22 April 1968",
+              "The 1968 French Championships",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Bournemouth was first overall. The 1968 French Championships was the first open *Grand Slam*, weeks later.",
+            sourceLessonSlug: "tennis-the-open-era",
+          },
+          {
+            prompt: "In the second round at Bournemouth, amateur Mark Cox beat professional Pancho Gonzales. Why did that matter?",
+            options: [
+              "It was the first five-set match in history",
+              "It won Cox the tournament",
+              "It was the first time an amateur beat a pro in an open event — undercutting the premise that they were different classes of player",
+              "It caused the ILTF to reverse the open-tennis vote",
+            ],
+            correctIndex: 2,
+            explanation: "Ninety years of policy rested on that premise. It took about four days of open tennis to disprove.",
+            sourceLessonSlug: "tennis-the-open-era",
+          },
+          {
+            prompt: "Which of these became possible only *after* the Open era began?",
+            options: [
+              "Players organizing into their own associations (the ATP in 1972, the WTA in 1973)",
+              "The tie-break",
+              "Doubles",
+              "The Davis Cup",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Under the amateur rule players weren't professionals at all — they were guests of the federations. Public prize money made both organizing and comparing pay possible.",
+            sourceLessonSlug: "tennis-the-open-era",
+          },
+          {
+            prompt: "Which tournament was the first open *Grand Slam*?",
+            options: [
+              "Wimbledon 1968",
+              "The French Championships, May–June 1968",
+              "The US Open 1968",
+              "The Australian Championships 1968",
+            ],
+            correctIndex: 1,
+            explanation: "Bournemouth (April 1968) was the first open tournament, but it was not a major.",
+            sourceLessonSlug: "tennis-the-open-era",
+          },
+          {
+            prompt: "How did the Open era change the meaning of the word 'amateur'?",
+            options: [
+              "It didn't — the word means the same thing it always did",
+              "It turned it from a legal category controlling whether you could be paid into simply meaning someone who plays for reasons other than money",
+              "It made 'amateur' a professional ranking level",
+              "It abolished amateur tennis entirely",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Before 1968, 'amateur' was a cage. Afterward, it became a description of why you play — which is the sense used in Section 7 of this course.",
+            sourceLessonSlug: "tennis-the-open-era",
+          },
+        ],
+      },
+    },
+
+    // ─────────────────── SECTION 5 · THE PEOPLE WHO CHANGED THE GAME ───────────────────
+    {
+      slug: "tennis-ata-and-althea-gibson",
+      title: "21 · The American Tennis Association and Althea Gibson",
+      section: "Section 5 · The people who changed the game",
+      body: `Before you can understand Althea Gibson, you have to understand the organization that made her possible — and *why it had to exist*.
+
+**The American Tennis Association, 1916.** The U.S. Lawn Tennis Association (USLTA), which ran American tennis, had issued a policy statement **formally barring African American players from its competitions**. So on **Thanksgiving Day, 30 November 1916**, in **Washington, D.C.**, representatives of more than a dozen Black tennis clubs met and founded the **American Tennis Association** (American Tennis Association [ATA], n.d.). Its first national championships were held in **August 1917** at **Druid Hill Park in Baltimore**.
+
+The ATA is **the oldest African American sports organization in the United States** (ATA, n.d.). It did not exist to be a protest. It existed because Black players wanted to *play tournaments*, and the tournaments were closed. So they built their own — and then that circuit produced two of the most consequential players in the history of the sport. Both **Althea Gibson** and **Arthur Ashe** were "sponsored and groomed by ATA officials and coaches" (ATA, n.d.), most famously through the junior development program run by **Dr. Walter Johnson**.
+
+**Althea Gibson.** She won **ten consecutive ATA national women's singles titles beginning in 1947** (International Tennis Hall of Fame [ITHF], n.d.-a) — dominating a circuit that the sport's official body pretended was not there.
+
+Getting her out of it took a coalition. ATA officials lobbied the USLTA hard and continuously. And on **1 July 1950**, the former champion **Alice Marble** published an editorial in *American Lawn Tennis* magazine that made the exclusion impossible to ignore in polite company:
+
+> "If tennis is a game for ladies and gentlemen, it's also time we acted a little more like gentle people and less like sanctimonious hypocrites.... If Althea Gibson represents a challenge to the present crop of women players, it's only fair that they should meet that challenge on the courts." (Marble, 1950, as published by ATA, n.d.-b)
+
+**In August 1950, Gibson became the first Black player to compete at the U.S. National Championships** at Forest Hills (United States Tennis Association [USTA], 2020). She won her first-round match, and lost a rain-delayed three-setter in the second round to the reigning Wimbledon champion, Louise Brough. In **July 1951** she became the first Black player to compete at **Wimbledon** (ITHF, n.d.-a).
+
+Then she won. In **1956 she won the French Championships — the first Black player, of any gender, to win a Grand Slam title.** She won **Wimbledon and the U.S. Nationals in both 1957 and 1958**. Five Grand Slam singles titles, eleven major titles overall, and she was named **Associated Press Female Athlete of the Year in 1957 *and* 1958** (ITHF, n.d.-a).
+
+**And there was no money in it.** This is 1957 — eleven years before the Open era. She was an amateur, because the tournaments she'd broken into only admitted amateurs. In **1964, aged 37, she became the first African American woman to join the LPGA golf tour** (ITHF, n.d.-a) — a career change that tells you plenty about what a Black woman's tennis résumé was worth in the amateur era.
+
+Hold that thought. It is exactly what the next three lessons are about.
+
+:::reveal Why did the American Tennis Association have to be founded in 1916, and which two Hall of Fame players did it produce? ||| Because the USLTA — the body running American tennis — had formally barred African American players from its competitions. Black tennis clubs founded the ATA in Washington, D.C., on Thanksgiving Day 1916 so their players would have tournaments to enter. It is the oldest African American sports organization in the U.S., and it sponsored and developed both **Althea Gibson** and **Arthur Ashe**.
+
+## Sources
+- American Tennis Association. (n.d.-a). *History*. https://www.yourata.org/history
+- American Tennis Association. (n.d.-b). *Historic pioneers: Alice Marble*. https://www.yourata.org/historic-pioneers/alice-marble
+- International Tennis Hall of Fame. (n.d.-a). *Althea Gibson*. https://www.tennisfame.com/hall-of-famers/inductees/althea-gibson
+- National Museum of African American History and Culture. (n.d.). *Althea Gibson, Hall of Famer*. https://nmaahc.si.edu/althea-gibson
+- United States Tennis Association. (2020). *Black History Month: Althea Gibson's Forest Hills debut, 1950*. https://www.usta.com/en/home/stay-current/national/2020-black-history-month--althea-gibson-s-forest-hills-debut--19.html`,
+    },
+    {
+      slug: "tennis-arthur-ashe",
+      title: "22 · Arthur Ashe: the champion who wasn't allowed to be paid",
+      section: "Section 5 · The people who changed the game",
+      body: `**1968. The first US Open of the Open era.** After ninety years, prize money was finally legal, public, and on the line: a **$100,000** purse, **$14,000** to the champion.
+
+**Arthur Ashe won it** — the first Black man ever to win the US Open — beating Tom Okker 14–12, 5–7, 6–3, 3–6, 6–3 (International Tennis Hall of Fame [ITHF], n.d.-b).
+
+**He did not get the $14,000.** Ashe was a **U.S. Army lieutenant** and had kept his **amateur** status, which he needed for Davis Cup eligibility. So the winner's cheque went instead to **Tom Okker — the man he had just beaten** — who held "registered player" status and *was* allowed to take it (World Tennis Magazine, n.d.). What Ashe received was a **per diem of $20 a day** for the fortnight: **roughly $280** (CNBC, 2019).
+
+You will sometimes see this told as "Arthur Ashe earned $20 for winning the US Open." That's a compression, and the true version is better: he earned **about $280 in expenses, while the $14,000 went to the runner-up** — in the very tournament that was supposed to have ended the amateur farce. The Open era did not arrive all at once. It arrived in pieces, and Ashe got caught in the seam.
+
+**The rest of the résumé.** He won the **1970 Australian Open**, and in **1975** he beat the top-seeded, heavily favored Jimmy Connors in the **Wimbledon final**, 6–1, 6–1, 5–7, 6–4 — one of the great upsets in the tournament's history (ITHF, n.d.-b). He was a **founding member of the ATP in 1972**, its **first vice-president**, and its **president from 1974** (ITHF, n.d.-b; ATP Tour, n.d.).
+
+**South Africa.** Ashe spoke publicly against **apartheid**, and campaigned to have South Africa expelled from international tennis. South Africa **denied him a visa in 1969**, and again in following years, explicitly because of what he'd said (South African History Online, n.d.). In **November 1973** he was finally admitted, and played the **South African Open** — insisting on entering **as a Black man**, refusing the "honorary white" designation the apartheid government used to let foreign sports stars in. He lost the singles final to Connors and won the doubles title with Okker.
+
+**And he was criticized for going.** Some anti-apartheid activists argued that playing there at all lent the regime legitimacy, no matter what he called himself. That criticism was serious, and Ashe took it seriously. **Do not smooth this over.** The interesting question — the one worth arguing about in class — is not "was Ashe a hero?" It is: **when a system is unjust, is it better to refuse to enter it, or to enter it on your own terms and be seen?** Reasonable people disagreed then. They still do.
+
+**The end, and how it was taken from him.** Ashe had a heart attack and bypass surgery in 1979, and a **second bypass operation in 1983**, during which he received a **blood transfusion** — before any screening of the blood supply for HIV existed (*The Washington Post*, 1992). He was **diagnosed with HIV in September 1988**, after an infection cost him the use of his right hand.
+
+He kept it private. Then, on **7 April 1992**, a *USA Today* reporter told him the paper had a tip. Ashe held a press conference the **next day** and announced his diagnosis — and the Hall of Fame states it plainly: **"news leaks forced his announcement"** (ITHF, n.d.-b). This is not the story of a man choosing to go public. It is the story of a man's medical privacy being taken from him, and it set off a national argument about journalism ethics that has not really ended.
+
+He spent his last months campaigning on AIDS, founding an institute for urban health, and finishing *A Hard Road to Glory*, his history of the Black American athlete. He **died on 6 February 1993**, of AIDS-related pneumonia, aged 49.
+
+:::reveal Arthur Ashe won the 1968 US Open — the first prize-money US Open. How much of the $14,000 winner's cheque did he receive, and why? ||| **None of it.** He was a U.S. Army lieutenant who had kept **amateur** status for Davis Cup eligibility, so under the rules the winner's cheque went to the **runner-up, Tom Okker**, who was a "registered player" and could accept it. Ashe got a **$20-a-day per diem — about $280 for the fortnight.**
+
+## Sources
+- ATP Tour. (n.d.). *ATP 50: Pioneers*. https://www.atptour.com/en/news/atp-50-pioneers-longform
+- CNBC. (2019, September 9). *The first men's US Open champion earned $20 in 1968*. https://www.cnbc.com/2019/09/09/the-first-mens-us-open-champion-earned-20-in-1968.html
+- International Tennis Hall of Fame. (n.d.-b). *Arthur Ashe*. https://www.tennisfame.com/hall-of-famers/inductees/arthur-ashe
+- South African History Online. (n.d.). *African American tennis player Arthur Ashe denied visa by South African government*. https://sahistory.org.za/dated-event/african-american-tennis-player-arthur-ashe-denied-visa-south-african-government
+- *The Washington Post*. (1992, April 9). *In 1983, HIV blood screening was nonexistent*. https://www.washingtonpost.com/archive/politics/1992/04/09/in-1983-hiv-blood-screening-was-nonexistent/02f1b98e-710d-4c94-8e2d-9ce5094d2f2e/
+- World Tennis Magazine. (n.d.). *Tom Okker: The 1968 U.S. Open runner-up who got the first-prize paycheck*. https://worldtennismagazine.com/tom-okker-the-1968-u-s-open-runner-up-who-got-the-first-prize-paycheck/25573`,
+      recallContent: [
+        {
+          prompt: "What did Althea Gibson win in 1956, and why was it historic?",
+          answer:
+            "The French Championships — making her the first Black player, of any gender, to win a Grand Slam title. She then won Wimbledon and the U.S. Nationals in both 1957 and 1958.",
+        },
+        {
+          prompt: "Who published the July 1950 editorial that helped force the USLTA to admit Althea Gibson, and where?",
+          answer:
+            "Former champion Alice Marble, in *American Lawn Tennis* magazine. It worked alongside sustained lobbying by ATA officials — it was a coalition, not a lone rescuer.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-original-9-and-the-wta",
+      title: "23 · The Original 9: nine players, nine one-dollar contracts",
+      section: "Section 5 · The people who changed the game",
+      body: `The Open era made prize money **public**. That turned out to be dangerous for the people setting it — because now anyone could do the subtraction.
+
+**The arithmetic.** At the 1970 **Pacific Southwest Championships**, run by Jack Kramer, the **men's field played for a total purse of $12,500 and the women's field for $1,500** — an **8-to-1 gap**, at the same tournament, in the same week. Bud Collins called it a "feudalistic ratio."
+
+*(A note on how this course handles that number: you will often see it written as "$12,500 to the men's champion, $1,500 to the women's champion." Sources contradict each other on whether these were champions' cheques or total purses. The **8-to-1 ratio** is consistent across every account, so that is what this lesson teaches — the ratio, which is the number that matters, rather than a figure we cannot pin down. This is what citation discipline looks like in practice: when the sources disagree, you say so.)*
+
+Gladys Heldman — publisher of *World Tennis* magazine — asked Kramer to narrow the gap. **He refused.**
+
+**23 September 1970.** Nine players signed **$1 contracts** with Heldman to play a tournament she had organized in Houston instead: the **Houston Women's Invitation**, a rival event, in defiance of the USLTA (Women's Tennis Association [WTA], n.d.-a).
+
+The nine — **the Original 9** — were:
+
+> **Jane "Peaches" Bartkowicz · Rosie Casals · Judy Dalton · Julie Heldman · Billie Jean King · Kerry Melville · Kristy Pigeon · Nancy Richey · Valerie Ziegenfuss**
+
+**Why one dollar?** It was a **legal device**. By signing them as contract players for one week, Heldman made them professionals under contract rather than freelancing amateurs — which shielded the **Houston Racquet Club** from USLTA sanctions. They signed roughly an hour before play started, then held the dollar bills up for a photograph. That photo is the founding image of women's professional tennis (WTA, n.d.-a).
+
+They were risking their careers. The USLTA could have — and threatened to — suspend them, which in 1970 meant losing their eligibility for the tournaments that defined the sport.
+
+**June 1973: the WTA.** Three years later, in a room at the **Gloucester Hotel** in London, **a week before Wimbledon**, more than sixty players met and founded the **Women's Tennis Association**. **Billie Jean King** became its first president; she famously posted Betty Stöve at the door to keep the players in and the press out until they had agreed (Billie Jean King, n.d.; WTA, n.d.-b).
+
+Note the timing. The men had formed the **ATP in September 1972**. The women formed the WTA in **June 1973**. The structural lesson is not subtle: **once one group of workers in an industry organizes, the other group's choice is to organize or to be left behind.**
+
+**And in September 1973, King beat Bobby Riggs.** The "Battle of the Sexes," **20 September 1973**, Houston Astrodome, winner-take-all $100,000: **King (29) beat Riggs (55) in straight sets, 6–4, 6–3, 6–3**, in front of roughly **50 million** U.S. television viewers (Billie Jean King, n.d.). It was a spectacle, and it was also a stress test — she has said, repeatedly, that a loss would have set women's tennis back years. She did not lose.
+
+:::reveal Why did the Original 9 sign contracts for exactly one dollar? ||| It was a **legal device**, not a symbolic one. Signing them as contract professionals for the week made the Houston tournament a contracted professional event, which **shielded the Houston Racquet Club from USLTA sanctions**. The players signed about an hour before play began and held the dollar bills up for the photograph that became the founding image of women's pro tennis.
+
+## Sources
+- Billie Jean King. (n.d.). *Battle of the Sexes* and *Women's Tennis Association*. https://www.billiejeanking.com/battle-of-the-sexes/
+- Women's Tennis Association. (n.d.-a). *WTA honors Original 9 and Gladys Heldman on 55th anniversary of $1 contracts*. https://www.wtatennis.com/news/4367345/wta-honors-original-9-and-gladys-heldman-on-55th-anniversary-of-1-contracts
+- Women's Tennis Association. (n.d.-b). *Serving up a revolution: Billie Jean King and the dawn of the WTA*. https://www.wtatennis.com/news/3545936/serving-up-a-revolution-billie-jean-king-and-the-dawn-of-the-wta
+- Smithsonian American Women's History Museum. (n.d.). *Beyond the court: Billie Jean King's triumph in the Battle of the Sexes*. https://womenshistory.si.edu/blog/beyond-court-billie-jean-kings-triumph-battle-sexes`,
+      recallContent: [
+        {
+          prompt: "Arthur Ashe was forced to announce his HIV diagnosis in April 1992. Why 'forced'?",
+          answer:
+            "A *USA Today* reporter told him on 7 April 1992 that the paper had a tip. He held a press conference the next day. The Hall of Fame states that 'news leaks forced his announcement' — his medical privacy was taken from him, not surrendered.",
+        },
+        {
+          prompt: "Why is Arthur Ashe's 1973 South African Open appearance a genuinely contested story?",
+          answer:
+            "He entered as a Black man, refusing the apartheid regime's 'honorary white' designation — but some anti-apartheid activists argued that playing there at all legitimized the regime. Reasonable people disagreed then and still do.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-equal-prize-money",
+      title: "24 · Equal prize money: a 34-year climb, and the part that isn't finished",
+      section: "Section 5 · The people who changed the game",
+      body: `Here is the sentence you have probably heard: *"Tennis was the first sport to pay women equally — the US Open did it in 1973."*
+
+The first half is true. The second half is where most people stop, and stopping there turns a 34-year fight into a feel-good anecdote. So let's do the whole thing.
+
+**1973 — the US Open, first of the four.** In 1972, **Billie Jean King** won the US Open and was paid **$10,000**; men's champion **Ilie Năstase** got **$25,000**. King said she would not play in 1973, and that no other woman would either. **Bristol-Myers** stepped in and offered to fund the entire difference, and that summer the US Open announced that **both singles champions would receive $25,000** — the **first Grand Slam, and by the USTA's account the first major sporting event in the world, to pay men and women equally** (US Open, 2023; ESPN, 2023).
+
+**Notice how it was won.** Not by a federation deciding to reallocate its own money. By **a boycott threat plus a sponsor writing a cheque.** That is the honest version, and it is far more useful to you than the greeting-card version, because it tells you what actually moves an institution.
+
+**Then, for a long time, nothing.**
+
+| Year | What happened |
+| --- | --- |
+| **1973** | **US Open** pays equal prize money — the first Slam. |
+| **1984** | **Australian Open** pays equal prize money — 11 years later. |
+| **by 1996** | The **Australian Open is paying men more again**, citing **higher TV ratings for men's matches**. |
+| **2001** | The **Australian Open restores** equal prize money, this time permanently. |
+| **2006** | **Roland-Garros** pays its two **singles champions** equally — **but only the champions**. A woman losing in the third round is still paid less than a man losing in the third round. |
+| **2007** | **Roland-Garros** extends equal prize money **through the entire draw** (announced 16 March 2007). |
+| **2007** | **Wimbledon**, the last of the four, announces equal prize money at all stages (22 February 2007). |
+
+*(Sources: US Open, 2023; ESPN, 2023; Tennis Majors, 2022, 2023.)*
+
+**Three things in that table are routinely left out of the story, and each one is the interesting part.**
+
+1. **The Australian Open went equal in 1984 and then went backwards.** By 1996 it was paying men more again, and its stated reason was **TV ratings** (US Open, 2023). Most timelines just say "Australian Open: 2001" and skip a decade. Don't. **This is the single most important fact in the lesson**, because it proves something students are rarely told: **equality is reversible.** A win is not a ratchet. It can be taken back, with a business rationale, by people who are not cartoon villains.
+2. **"The French Open went equal in 2006" is not quite true.** In 2006 only the **champions** were paid equally. Full-draw equality came in **2007**. The gap between those two years is exactly the difference between a *trophy photo* and a *payroll*.
+3. **It took 34 years.** 1973 to 2007. A student starting kindergarten the year Billie Jean King forced the US Open's hand would have been **36 years old** before all four majors paid equally.
+
+**Venus Williams finished it.** In **2005**, ahead of the Wimbledon final, she addressed the Grand Slam committee in person on equal pay. Nothing changed. In 2006 Wimbledon declined again — arguing that men drew more spectators and played best-of-five sets. So on **26 June 2006**, Venus published an op-ed in *The Times* of London under the headline **"Wimbledon has sent me a message: I'm only a second-class champion."** She asked why Wimbledon placed a lesser value on her trophy than on Roger Federer's, and answered the best-of-five argument by pointing out that women would happily play five sets (*The Washington Post*, 2013).
+
+**Wimbledon reversed in February 2007.** Venus won the title that year and became the first woman to collect an equal champion's cheque at Wimbledon — **£700,000**, the same as Federer.
+
+Look at the shape of that: **a champion uses the press to shame the sport's gatekeepers into doing the right thing.** It is *precisely* what Alice Marble did for Althea Gibson in 1950 (Lesson 21). Same weapon, 56 years apart.
+
+**And it is not finished.** Equal prize money at the four Slams is **not** equal pay in tennis. The Slams are four events in a season of dozens. Outside them the gap is large and current: in **2023**, Novak Djokovic won the Cincinnati title and received **$1.02 million**; Coco Gauff won the women's title **at the same combined event, the same week**, and received **$454,500** — less than half (ESPN, 2023).
+
+The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize money: equal pay at **combined WTA 1000 and 500 events by 2027**, and at **non-combined ones by 2033** (WTA, 2023).
+
+**2033 is sixty years after 1973.** And a pathway is a **promise**, not an achievement. When you hear "tennis solved equal pay," the accurate reply is: *tennis solved equal prize money at four tournaments, over 34 years, and has publicly given itself until 2033 to solve the rest.*
+
+:::reveal The US Open paid equal prize money in 1973. Name the year each of the other three Slams did — and name the one that went equal and then went BACKWARDS. ||| **Australian Open: 1984** — then it **reverted to paying men more by 1996**, citing higher TV ratings for men's matches, and only restored equality permanently in **2001**. **Roland-Garros: 2006 for the champions only, 2007 for the full draw.** **Wimbledon: 2007**, the last of the four. From the US Open in 1973 to the last Slam in 2007 is **34 years** — and equal prize money across the rest of the tour still hasn't happened; the WTA has pledged 2027/2033.
+
+## Sources
+- ESPN. (2023). *Fifty years after the Battle of the Sexes and equal pay at the US Open, gender equity remains elusive in tennis*. https://www.espn.com/tennis/story/_/id/38441339/fifty-years-battle-sexes-equal-pay-us-open-gender-equity-remains-elusive-tennis
+- Tennis Majors. (2022). *February 22, 2007: The day Wimbledon finally announced it would award equal pay*. https://www.tennismajors.com/wimbledon-news/february-22-2007-the-day-wimbledon-finally-announced-it-would-award-equal-pay-323512.html
+- Tennis Majors. (2023). *The day Roland-Garros finally offered equal prize money*. https://www.tennismajors.com/atp/atp-wta-roland-garros-finally-offered-equal-prize-money-592633.html
+- US Open. (2023, March 30). *Milestones in equality: A long climb to equal prize money at the four Grand Slams*. https://www.usopen.org/en_US/news/articles/2023-03-30/milestones_in_equality_a_long_climb_to_equal_prize_money_at_the_four_grand_slams.html
+- *The Washington Post*. (2013, July 2). *How Venus Williams got equal pay for women at Wimbledon*. https://www.washingtonpost.com/news/reliable-source/wp/2013/07/02/how-venus-williams-got-equal-pay-for-women-at-wimbledon/
+- Women's Tennis Association. (2023, June 27). *WTA announces new tour calendar and pathway to equal prize money*. https://www.wtatennis.com/news/3557739/wta-announces-new-tour-calendar-and-pathway-to-equal-prize-money`,
+      recallContent: [
+        {
+          prompt: "Name three of the Original 9.",
+          answer:
+            "Any three of: Jane 'Peaches' Bartkowicz, Rosie Casals, Judy Dalton, Julie Heldman, Billie Jean King, Kerry Melville, Kristy Pigeon, Nancy Richey, Valerie Ziegenfuss.",
+        },
+        {
+          prompt: "The men founded the ATP in September 1972. When did the women found the WTA, and what's the structural lesson?",
+          answer:
+            "June 1973, at the Gloucester Hotel in London, a week before Wimbledon — Billie Jean King its first president. Once one group in an industry organizes, the other group's choice is to organize or be left behind.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-quiz-people",
+      title: "25 · Quiz: the people who changed the game",
+      section: "Section 5 · The people who changed the game",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why was the American Tennis Association founded in 1916?",
+            options: [
+              "To organize professional tennis",
+              "Because the USLTA had formally barred African American players from its competitions",
+              "To write the rules of tennis",
+              "To run the US Open",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Black tennis clubs founded the ATA in Washington, D.C., on Thanksgiving Day 1916 so their players would have tournaments to enter. It is the oldest African American sports organization in the U.S.",
+            sourceLessonSlug: "tennis-ata-and-althea-gibson",
+          },
+          {
+            prompt: "Which two Hall of Fame players were developed by the ATA?",
+            options: [
+              "Althea Gibson and Arthur Ashe",
+              "Billie Jean King and Rosie Casals",
+              "Venus and Serena Williams",
+              "Alice Marble and Louise Brough",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both were 'sponsored and groomed by ATA officials and coaches,' notably through Dr. Walter Johnson's junior development program.",
+            sourceLessonSlug: "tennis-ata-and-althea-gibson",
+          },
+          {
+            prompt: "What did Althea Gibson win in 1956?",
+            options: [
+              "Wimbledon",
+              "The U.S. Nationals",
+              "The French Championships — the first Grand Slam title won by a Black player",
+              "The Australian Championships",
+            ],
+            correctIndex: 2,
+            explanation:
+              "She then won Wimbledon and the U.S. Nationals in both 1957 and 1958, and was AP Female Athlete of the Year in 1957 and 1958.",
+            sourceLessonSlug: "tennis-ata-and-althea-gibson",
+          },
+          {
+            prompt: "Who wrote the July 1950 editorial in *American Lawn Tennis* that helped force the USLTA to admit Althea Gibson?",
+            options: ["Billie Jean King", "Alice Marble", "Gladys Heldman", "Louise Brough"],
+            correctIndex: 1,
+            explanation:
+              "Former champion Alice Marble. But it was a coalition: sustained ATA lobbying plus Marble's public shaming of the USLTA — not a lone rescuer.",
+            sourceLessonSlug: "tennis-ata-and-althea-gibson",
+          },
+          {
+            prompt: "Arthur Ashe won the 1968 US Open. Who received the $14,000 winner's cheque?",
+            options: [
+              "Ashe",
+              "Nobody — it was withheld",
+              "Tom Okker, the runner-up, because Ashe was an amateur and could not accept it",
+              "The USTA",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Ashe was a U.S. Army lieutenant keeping amateur status for Davis Cup. He received a $20-a-day per diem — about $280 for the fortnight.",
+            sourceLessonSlug: "tennis-arthur-ashe",
+          },
+          {
+            prompt: "At the 1973 South African Open, what did Arthur Ashe insist on?",
+            options: [
+              "Playing only doubles",
+              "Entering as a Black man, refusing the apartheid regime's 'honorary white' designation",
+              "Donating his prize money to the ATP",
+              "Playing under a false name",
+            ],
+            correctIndex: 1,
+            explanation:
+              "And some anti-apartheid activists still criticized him for going at all, arguing it legitimized the regime. The disagreement was serious and is worth arguing about.",
+            sourceLessonSlug: "tennis-arthur-ashe",
+          },
+          {
+            prompt: "How did Arthur Ashe's HIV diagnosis become public in April 1992?",
+            options: [
+              "He chose to announce it at a press conference of his own initiative",
+              "A *USA Today* reporter told him the paper had a tip; he announced it the next day — the leak forced his hand",
+              "It was disclosed by the ATP",
+              "It was never made public in his lifetime",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The International Tennis Hall of Fame states that 'news leaks forced his announcement.' It set off a lasting argument about journalism ethics and medical privacy.",
+            sourceLessonSlug: "tennis-arthur-ashe",
+          },
+          {
+            prompt: "Why did the Original 9 sign $1 contracts on 23 September 1970?",
+            options: [
+              "As a symbolic protest against low pay",
+              "As a legal device — becoming contract professionals shielded the Houston Racquet Club from USLTA sanctions",
+              "Because that was the tournament's actual prize money",
+              "To join the ATP",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Signed roughly an hour before play began, with Gladys Heldman, publisher of *World Tennis* magazine. The photo of them holding up the dollar bills is the founding image of women's pro tennis.",
+            sourceLessonSlug: "tennis-original-9-and-the-wta",
+          },
+          {
+            prompt: "At the 1970 Pacific Southwest Championships, what was the ratio between the men's and women's prize money?",
+            options: ["2 to 1", "8 to 1", "20 to 1", "They were equal"],
+            correctIndex: 1,
+            explanation:
+              "$12,500 to the men's field, $1,500 to the women's — a gap Bud Collins called a 'feudalistic ratio.' Sources disagree on whether these were champions' cheques or total purses, so this course teaches the ratio, which every account agrees on.",
+            sourceLessonSlug: "tennis-original-9-and-the-wta",
+          },
+          {
+            prompt: "When and where was the WTA founded?",
+            options: [
+              "September 1972, at Forest Hills",
+              "June 1973, at the Gloucester Hotel in London, a week before Wimbledon",
+              "September 1970, in Houston",
+              "March 1968, in Paris",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Billie Jean King was its first president. The men had formed the ATP in September 1972 — the women organized in response.",
+            sourceLessonSlug: "tennis-original-9-and-the-wta",
+          },
+          {
+            prompt: "Which Grand Slam was the first to pay equal prize money, and in what year?",
+            options: ["Wimbledon, 2007", "The Australian Open, 1984", "The US Open, 1973", "Roland-Garros, 2006"],
+            correctIndex: 2,
+            explanation:
+              "$25,000 to each singles champion — after Billie Jean King threatened a boycott and Bristol-Myers offered to fund the difference.",
+            sourceLessonSlug: "tennis-equal-prize-money",
+          },
+          {
+            prompt: "Which Grand Slam paid equal prize money, then went BACKWARDS to paying men more?",
+            options: [
+              "Wimbledon",
+              "The US Open",
+              "The Australian Open — equal in 1984, paying men more again by 1996, equal permanently only from 2001",
+              "None of them ever reversed",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Its stated reason for reverting was higher TV ratings for men's matches. This is the fact most timelines omit — and it proves that equality is reversible.",
+            sourceLessonSlug: "tennis-equal-prize-money",
+          },
+          {
+            prompt: "What is the precise truth about Roland-Garros and equal prize money?",
+            options: [
+              "It went fully equal in 2006",
+              "In 2006 only the two singles champions were paid equally; full-draw equality came in 2007",
+              "It has never paid equal prize money",
+              "It was the first Slam to pay equally",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The difference between 2006 and 2007 is the difference between a trophy photo and a payroll — in 2006 a woman losing in round three still earned less than a man losing in round three.",
+            sourceLessonSlug: "tennis-equal-prize-money",
+          },
+          {
+            prompt: "How long did it take from the first Slam paying equally to the last?",
+            options: ["4 years", "12 years", "34 years (1973 to 2007)", "It still hasn't happened at all four"],
+            correctIndex: 2,
+            explanation: "US Open 1973 → Wimbledon and full-draw Roland-Garros in 2007.",
+            sourceLessonSlug: "tennis-equal-prize-money",
+          },
+          {
+            prompt: "Does equal prize money at the four Slams mean tennis has equal pay?",
+            options: [
+              "Yes — the Slams are the whole sport",
+              "No. Outside the Slams the gap is large and current, and the WTA has pledged a pathway to equal prize money only by 2027 (combined events) and 2033 (non-combined)",
+              "Yes, since the WTA's 2023 announcement",
+              "No, because the ATP refuses to allow it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In 2023 Djokovic earned $1.02m for the Cincinnati title while Gauff earned $454,500 at the same combined event the same week. 2033 would be sixty years after 1973 — and a pathway is a promise, not an achievement.",
+            sourceLessonSlug: "tennis-equal-prize-money",
           },
         ],
       },
