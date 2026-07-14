@@ -1423,5 +1423,343 @@ Which means your teammate's match can end mid-point because someone else clinche
         ],
       },
     },
+
+    // ──────────────────── SECTION 7 · OPPORTUNITIES FOR AMATEURS ────────────────────
+    {
+      slug: "tennis-college-pipeline",
+      title: "32 · The college pipeline, and the real odds",
+      section: "Section 7 · Opportunities for amateurs",
+      body: `College tennis is the single best opportunity in this course, and it is also where you need a clear head about numbers.
+
+**The programs exist, and there are a lot of them.** Per the NCAA's own 2024–25 sponsorship report, U.S. colleges field **683 men's tennis teams** (2,420 D-I athletes, 1,654 D-II, 3,399 D-III → **7,473** men) and **840 women's tennis teams** (2,787 D-I, 1,891 D-II, 3,459 D-III → **8,137** women) (National Collegiate Athletic Association [NCAA], 2025a).
+
+Notice that **most college tennis is not Division I.** There are more D-III men's programs (297) than D-I ones (237). If you are picturing "college tennis" as a scholarship at a giant football school, you are picturing about a quarter of it.
+
+**The odds.** The NCAA publishes them, so we don't have to guess (NCAA, 2025b):
+
+| | High school players | NCAA players | **HS → NCAA** | **HS → Division I** |
+| --- | --- | --- | --- | --- |
+| **Men** | 158,667 | 7,473 | **4.7%** | **1.5%** |
+| **Women** | 204,721 | 8,137 | **4.0%** | **1.4%** |
+
+**And the NCAA tells you those numbers are flattering.** Its own caveat: the high-school figures count only players on *high school teams*, not those competing exclusively on **club** teams — and the NCAA **specifically names tennis** as a sport where that happens a lot. So the true high-school-to-NCAA rate for tennis is **lower than 4.7% and 4.0%** (NCAA, 2025b).
+
+Even so: **roughly 1 in 20 to 1 in 25.** That is a real, reachable target for a committed high school player — and it is *vastly* better than the odds in the next lesson.
+
+**A big rule just changed, and most people haven't caught up.** For decades, D-I tennis ran on **scholarship limits**: men's tennis was an "equivalency" sport capped at **4.5** scholarships; women's tennis was a "head-count" sport with **8**. Those numbers are now **historical**. Following the **House v. NCAA settlement**, effective **1 July 2025**, the D-I Board replaced sport-specific scholarship limits with **roster limits** — **10 for men's tennis and 10 for women's tennis** — and schools may now offer a scholarship to **any and all** athletes on the roster (NCAA, 2025c).
+
+Three things people are getting wrong about this, so get them right:
+
+1. It applies only to D-I schools **in a defendant conference or that opt in** to the settlement.
+2. **Opting in is all-or-nothing per institution** — a school can't opt in for football and out for tennis.
+3. **D-II and D-III are unaffected.**
+
+If you are being recruited, **ask each school directly whether it has opted in.** The answer changes what it can offer you.
+
+**One more rule, and it's tennis-specific.** NCAA rules carve tennis out of the normal amateurism restrictions: **before full-time college enrollment, a tennis player may accept up to $10,000 per calendar year in prize money** and keep NCAA eligibility (beyond that, prize money may only cover actual and necessary expenses) (NCAA, 2025c). Almost no other sport gets this. Hold onto it — in the next lesson you'll compute how hard that $10,000 actually is to earn.
+
+:::reveal Roughly what share of U.S. high school tennis players go on to play NCAA tennis — and why does the NCAA say its own figure is too generous? ||| About **4.7% of boys and 4.0% of girls** — roughly 1 in 20 to 1 in 25. The NCAA cautions that its high-school denominator counts only players on **high school teams**, not those competing exclusively on **club** teams, and it names tennis specifically as a sport where that's common. So the real rate is **lower** than the published figure.
+
+## Sources
+- National Collegiate Athletic Association. (2025a). *NCAA sports sponsorship and participation rates report (1956-57 through 2024-25)*. https://ncaaorg.s3.amazonaws.com/research/sportpart/2025RES_SportsSponsorshipParticipationRatesReport.pdf
+- National Collegiate Athletic Association. (2025b). *Probability of competing beyond high school*. https://www.ncaa.org/student-athletes/probability-of-competing-beyond-high-school/
+- National Collegiate Athletic Association. (2025c). *DI Board of Directors formally adopts changes to roster limits*. https://www.ncaa.org/media-center-di-board-of-directors-formally-adopts-changes-to-roster-limits/`,
+    },
+    {
+      slug: "tennis-the-honest-math",
+      title: "33 · The honest math: what professional tennis actually pays",
+      section: "Section 7 · Opportunities for amateurs",
+      body: `This is the most important lesson in the course, and it is a **math** lesson. Every number below comes from a governing body or a tournament's own published figures. Do the arithmetic yourself — that's the point.
+
+**Start at the top.** At **Wimbledon 2025**, the singles champion — men's and women's, equally, as of 2007 — received **£3,000,000**. A player who **lost in the first round** received **£66,000**. A player who lost in the first round of **qualifying** received **£15,500** (All England Lawn Tennis Club [AELTC], 2025).
+
+At the **2025 US Open**, the champion received **$5,000,000**, and a **first-round loser received $110,000**, from a total player compensation pool of **$90,000,000** (US Open, 2025).
+
+Look at that first-round number. **$110,000 for losing your first match.** That sounds like a solved problem.
+
+**Now go to the bottom of the ladder — the ITF World Tennis Tour**, where essentially every professional starts. From the ITF's own 2026 prize-money tables (International Tennis Federation [ITF], 2026b):
+
+| At an **M15** event ($15,000 total) | Prize |
+| --- | --- |
+| Winner | **$2,160** |
+| Semi-finalist | $753 |
+| **Lost in the first round** | **$156** |
+
+At a **W15** event, the winner gets **$2,352**, a first-round loser **$147**, and **qualifying pays $0**.
+
+**Do the subtraction.** A first-round loser at the US Open earns **$110,000**. A first-round loser at an M15 earns **$156**. That is a ratio of roughly **705 to 1** — and the M15 player is *also* a professional tennis player, playing an ITF-sanctioned professional tournament, in the same sport, in the same week.
+
+**Now the costs.** The ITF studied this. Its 2014 review found the average annual cost of playing professional tennis — **excluding coaching** — was **$38,800 for men and $40,180 for women** (Independent Review Panel [IRP], 2018).
+
+So: an M15 winner earns **$2,160**. Costs are about **$38,800 a year**. The Independent Review Panel spells out the consequence, and you should read it twice:
+
+> "The winner of a singles tournament at that level is unlikely to receive more than $4,000. As a result, a player at that Lowest Level would need to **win at least ten tournaments in a year just to break even**, without any accounting for coaching." (IRP, 2018, ¶85)
+
+**Win ten professional tournaments in a year. To break even. Before paying a coach.**
+
+**How many people are we talking about?** The ITF, quoted in the same report: *"every year, 14,000 men and women play at least one $15,000 tournament, but research indicates that **only approximately 600 earn enough prize money to cover the typical annual cost of competing** – excluding the cost of coaching"* (IRP, 2018, ¶294). The panel's own summary puts it at **the top 250 to 350 players**, out of roughly **14,000** (IRP, 2018, ¶8.2).
+
+**Your turn. Get out a calculator.**
+
+- 600 ÷ 14,000 = **4.3%** of professional tennis players cover their costs.
+- 350 ÷ 14,000 = **2.5%** by the panel's stricter figure.
+- Which means **roughly 96–97% of professional tennis players lose money playing professional tennis.**
+- The ITF puts the **break-even ranking** at **336 for men and 253 for women** — *before* coaching costs, so the true break-even ranking is **worse** than that (IRP, 2018, ¶84).
+- And "earning a living" is a higher bar than breaking even. The panel says players ranked in the **top 100, possibly to around 150**, can generally earn a living from prize money and sponsorship (IRP, 2018, ¶84).
+
+**Top 150. In the world. Out of ~14,000 trying.** That is **about one percent** — and every one of those 14,000 was, at some point, the best player at their high school.
+
+**Two honest closing notes.**
+
+First: **this is not a reason to quit.** It is a reason to be **clear-eyed about which prize you are actually playing for.** Section 6 showed you a national championship for recreational adults. This lesson shows you that the professional tour is a lottery with a 97% loss rate. Both are true, and only one of them is being sold to you by an academy.
+
+Second: **notice how much of this you could only learn because someone published the numbers.** The ITF commissioned a review, the review printed the break-even ranking, and Wimbledon publishes its prize-money table as a PDF anyone can download. A sport that hid these figures would look exactly like a sport where everybody makes it.
+
+:::reveal Roughly 14,000 people play professional tennis each year. Roughly how many earn enough prize money to cover the cost of competing — and what does that mean as a percentage? ||| **About 600** — the ITF's own figure — and that's *excluding* the cost of coaching. The Independent Review Panel puts it more strictly at **the top 250 to 350 players**. 600 ÷ 14,000 ≈ **4.3%**; 350 ÷ 14,000 = **2.5%**. So **roughly 96–97% of professional tennis players lose money playing professional tennis.** The break-even ranking is about **336 for men and 253 for women**, before coaching costs.
+
+## Sources
+- All England Lawn Tennis Club. (2025). *The Championships, Wimbledon 2025 prize money*. https://www.wimbledon.com/pdf/Wimbledon_Prize_Money_2025.pdf
+- Independent Review Panel. (2018). *Independent review of integrity in tennis: Final report*. International Tennis Integrity Agency. https://www.itia.tennis/media/bjuateer/irp-report-final.pdf
+- International Tennis Federation. (2026b). *2026 ITF World Tennis Tour regulations* (Appendices H and J: prize money). https://www.itftennis.com/media/15546/2026-wtt-regulations.pdf
+- US Open. (2025, August 6). *2025 US Open prize money sets record for largest purse in tennis history*. https://www.usopen.org/en_US/news/articles/2025-08-06/2025_us_open_prize_money_sets_record_for_largest_purse_in_tennis_history.html`,
+      recallContent: [
+        {
+          prompt: "What replaced NCAA Division I scholarship limits in tennis, and when?",
+          answer:
+            "Roster limits — 10 for men's tennis, 10 for women's — effective 1 July 2025 under the House v. NCAA settlement, for D-I schools in a defendant conference or that opt in. The old 4.5 (men) / 8 (women) scholarship numbers are now historical.",
+        },
+        {
+          prompt: "How much prize money can a tennis player accept before college enrollment without losing NCAA eligibility?",
+          answer:
+            "Up to $10,000 per calendar year. Tennis is specifically carved out of the general NCAA amateurism rule — almost no other sport gets this.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-the-amateurs-real-opportunity",
+      title: "34 · What tennis is actually for: the amateur's real opportunity",
+      section: "Section 7 · Opportunities for amateurs",
+      body: `Last lesson was brutal on purpose. This one is the other half of the truth, and it is the reason this course exists.
+
+**Tennis is one of the very few sports you can play competitively for your entire life.** Not "stay active." **Compete.** Keep score, play a league, have a rating, chase a national championship — at 25, at 45, at 70.
+
+Think about what that is worth relative to the sports you're being funneled toward. American football effectively ends at 22 for all but a few hundred people. Basketball becomes a pickup game. Tennis has **27.3 million U.S. players and grew for a sixth consecutive year in 2025** — up **54% since 2019** (United States Tennis Association [USTA], 2026). Globally, the ITF counts **just under 106 million players** and **698,034 courts** across 199 nations (International Tennis Federation [ITF], 2024).
+
+**That's the asset. Now here's how to actually use it.**
+
+**1. Get a rating, not an opinion.** Two systems matter:
+
+- **NTRP** (the USTA's National Tennis Rating Program) — the level system that USTA League runs on. It's what lets you find matches you can actually win and lose.
+- **UTR (Universal Tennis Rating)** — a 1–16.50 rating run by the private company Universal Tennis. Note carefully: a **rating** estimates your *level*; a **ranking** is an *ordered list*. They are different tools, and UTR is a company's product, not a governing body's.
+
+A rating is the single most useful thing an amateur can acquire, because it converts "am I any good?" — an unanswerable, morale-destroying question — into a number that finds you competitive matches.
+
+**2. Play the ladder that actually exists.** USTA League: local → **district** → **sectional** → **National Championships** (Section 6). 320,000+ adults a year. You will never be on Centre Court. You could absolutely be at a national final.
+
+**3. Understand the second-order value.** Be honest that this is what a lot of tennis is *for*, socially:
+
+- It is a **networking sport**, for reasons that are partly admirable (you can play it with anyone at any age; a 4.0 doubles game runs two hours and you talk the whole time) and partly not (it has been an upper-middle-class club sport for a century, and access to courts, coaching, and club membership is not evenly distributed — which is exactly why the ATA had to exist in 1916).
+- Naming that plainly is not cynicism. It is **strategy**. If a sport is a room where useful relationships get made, then knowing how to get into the room is a real skill, and knowing who is *kept out of* the room is a real analysis.
+
+**4. Be useful to your community immediately.** You do not need to be good to be valuable. High-school players are chronically in demand as hitting partners, junior-clinic helpers, tournament desk staff, and stringers. Every single one of those is a paid job for somebody — which is the entire subject of Section 8.
+
+**The reframe.** For ninety years, "amateur" was a **cage** — a rule that decided whether you were allowed to be paid (Section 4). Today it means something the people who invented the word would not recognize: **a person who plays because the game is worth playing.** Roughly 96% of *professionals* lose money at tennis. The amateur, playing a Tuesday-night league match with a rating that finds them a fair opponent, is — measured honestly — having a better time and a better financial year.
+
+That is not a consolation prize. **That is the prize.**
+
+:::reveal What is the difference between a rating (like NTRP or UTR) and a ranking — and why is getting a rating the single most useful thing an amateur can do? ||| A **rating** estimates your **level** (a number describing how well you play). A **ranking** is an **ordered list** (who is ahead of whom). A rating is what an amateur needs, because it converts the unanswerable, morale-destroying question "am I any good?" into a number that **finds you competitive matches** — opponents you can genuinely beat and genuinely lose to. That's what makes leagues, ladders, and a lifetime of real competition possible.
+
+## Sources
+- International Tennis Federation. (2024). *ITF Global Tennis Report: Participation hits 106 million in five years*. https://www.itftennis.com/en/news-and-media/articles/itf-global-tennis-report-participation-hits-106-million-in-five-years/
+- United States Tennis Association. (2026, February 18). *Tennis participation continues to surge with six consecutive years of growth*. https://www.usta.com/en/home/stay-current/national/tennis-participation-continues-to-surge-with-six-consecutive-yea.html`,
+      recallContent: [
+        {
+          prompt: "At an ITF M15 event, what does the winner earn, and what does a first-round loser earn?",
+          answer:
+            "The winner gets $2,160; a first-round loser gets $156. Meanwhile a first-round loser at the 2025 US Open earned $110,000 — a ratio of roughly 705 to 1, in the same sport, in the same week.",
+        },
+        {
+          prompt: "How many tournaments would a lowest-level pro need to WIN in a year just to break even?",
+          answer:
+            "At least ten — and that's before paying a coach. Average annual cost of competing (excluding coaching) is about $38,800 for men and $40,180 for women.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-quiz-amateurs",
+      title: "35 · Quiz: opportunities for amateurs",
+      section: "Section 7 · Opportunities for amateurs",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Roughly what percentage of U.S. high school tennis players go on to play NCAA tennis?",
+            options: ["About 25%", "About 15%", "About 4–5% (4.7% of boys, 4.0% of girls)", "Less than 0.1%"],
+            correctIndex: 2,
+            explanation:
+              "And the NCAA notes its own figure is generous, because the denominator misses club-only players — a group it names tennis as having a lot of. So the true rate is lower.",
+            sourceLessonSlug: "tennis-college-pipeline",
+          },
+          {
+            prompt: "Which division has the MOST men's tennis programs?",
+            options: ["Division I (237)", "Division II (149)", "Division III (297)", "They are equal"],
+            correctIndex: 2,
+            explanation:
+              "Most college tennis is not Division I. If you picture 'college tennis' as a scholarship at a big football school, you're picturing about a quarter of it.",
+            sourceLessonSlug: "tennis-college-pipeline",
+          },
+          {
+            prompt: "What replaced NCAA Division I scholarship limits for tennis, effective 1 July 2025?",
+            options: [
+              "Nothing — men's tennis is still capped at 4.5 scholarships and women's at 8",
+              "Roster limits of 10 men and 10 women, under the House v. NCAA settlement",
+              "A hard ban on athletic scholarships in tennis",
+              "A single scholarship per team",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The old 4.5 / 8 numbers are now historical. Schools may offer a scholarship to any and all athletes on the roster — but only at D-I schools in a defendant conference or that opt in. Ask each school directly.",
+            sourceLessonSlug: "tennis-college-pipeline",
+          },
+          {
+            prompt: "How much prize money can a tennis player accept before college enrollment and keep NCAA eligibility?",
+            options: ["$0", "$1,000 per year", "Up to $10,000 per calendar year", "Unlimited"],
+            correctIndex: 2,
+            explanation: "Tennis is specifically carved out of the general NCAA amateurism rule. Almost no other sport gets this.",
+            sourceLessonSlug: "tennis-college-pipeline",
+          },
+          {
+            prompt: "At Wimbledon 2025, the singles champion received £3,000,000. What did a first-round loser receive?",
+            options: ["£0", "£66,000", "£500,000", "£1,520,000"],
+            correctIndex: 1,
+            explanation:
+              "And a first-round qualifying loser received £15,500. These figures are published by the AELTC as a downloadable PDF — anyone can check them.",
+            sourceLessonSlug: "tennis-the-honest-math",
+          },
+          {
+            prompt: "At an ITF M15 tournament — the entry level of professional tennis — what does the WINNER earn?",
+            options: ["$15,000", "$2,160", "$110,000", "$25,000"],
+            correctIndex: 1,
+            explanation:
+              "A first-round loser earns $156. Compare that to a first-round loser at the US Open ($110,000) — a ratio of about 705 to 1, in the same sport.",
+            sourceLessonSlug: "tennis-the-honest-math",
+          },
+          {
+            prompt: "The ITF found the average annual cost of playing pro tennis (EXCLUDING coaching) was about:",
+            options: [
+              "$4,000 for men and women",
+              "$38,800 for men and $40,180 for women",
+              "$150,000 for men and women",
+              "$12,000 for men and $10,000 for women",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Which is why the Independent Review Panel concluded that a lowest-level player would need to WIN at least ten tournaments a year just to break even — before paying a coach.",
+            sourceLessonSlug: "tennis-the-honest-math",
+          },
+          {
+            prompt:
+              "About 14,000 people play professional tennis each year. Roughly how many earn enough prize money to cover the cost of competing?",
+            options: ["About 6,000", "About 2,500", "About 600 (the ITF's figure) — or the top 250–350, per the review panel", "Nearly all of them"],
+            correctIndex: 2,
+            explanation:
+              "600 ÷ 14,000 ≈ 4.3%. By the panel's stricter figure, 350 ÷ 14,000 = 2.5%. Roughly 96–97% of professional tennis players LOSE money playing professional tennis.",
+            sourceLessonSlug: "tennis-the-honest-math",
+          },
+          {
+            prompt: "According to the ITF, what is the approximate 'break-even' ranking in professional tennis?",
+            options: [
+              "Around 336 for men and 253 for women — and that's BEFORE coaching costs",
+              "Around 1,000 for both",
+              "Around 50 for both",
+              "There is no break-even point",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Since the figure excludes coaching, the true break-even ranking is worse than that. 'Earning a living' is a higher bar still — roughly the top 100 to 150.",
+            sourceLessonSlug: "tennis-the-honest-math",
+          },
+          {
+            prompt: "What is the difference between a rating (NTRP, UTR) and a ranking?",
+            options: [
+              "They are two words for the same thing",
+              "A rating estimates your level; a ranking is an ordered list of who is ahead of whom",
+              "A ranking estimates your level; a rating is an ordered list",
+              "Ratings are only for professionals",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A rating is what an amateur needs — it converts 'am I any good?' into a number that finds you competitive matches. Note that UTR is run by a private company, not a governing body.",
+            sourceLessonSlug: "tennis-the-amateurs-real-opportunity",
+          },
+          {
+            prompt: "How many people played tennis in the U.S. in 2025, and what's the trend?",
+            options: [
+              "27.3 million — a sixth consecutive year of growth, up 54% since 2019",
+              "5 million — declining",
+              "60 million — flat",
+              "12 million — declining since 2019",
+            ],
+            correctIndex: 0,
+            explanation: "Globally the ITF counts just under 106 million players and 698,034 courts across 199 nations.",
+            sourceLessonSlug: "tennis-the-amateurs-real-opportunity",
+          },
+          {
+            prompt: "What is the single strongest argument for tennis as a lifetime sport?",
+            options: [
+              "It is the easiest sport to learn",
+              "You can COMPETE — with a rating, a league, and a path to a national championship — at 25, 45, and 70",
+              "It requires no equipment",
+              "It has the highest professional salaries",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not 'stay active' — compete. Football effectively ends at 22 for almost everyone. Tennis doesn't end.",
+            sourceLessonSlug: "tennis-the-amateurs-real-opportunity",
+          },
+          {
+            prompt:
+              "The lesson notes that tennis is a 'networking sport' but insists on naming a complication. What is it?",
+            options: [
+              "Tennis is too expensive to televise",
+              "It has been an upper-middle-class club sport for a century, and access to courts, coaching, and membership is not evenly distributed",
+              "Networking is against USTA rules",
+              "Doubles partners are assigned randomly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Which is exactly why the American Tennis Association had to be founded in 1916. Naming who is kept out of the room is analysis, not cynicism.",
+            sourceLessonSlug: "tennis-the-amateurs-real-opportunity",
+          },
+          {
+            prompt: "Which statement best captures this section's argument?",
+            options: [
+              "Turning pro is the only worthwhile goal in tennis",
+              "The pro tour is a lottery with roughly a 97% loss rate; the amateur ladder is a real, winnable competition for life — and only one of those is being sold to you",
+              "Nobody should play competitive tennis",
+              "College tennis is impossible to reach",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both facts are true at once. Being clear-eyed about which prize you're playing for is the whole lesson.",
+            sourceLessonSlug: "tennis-the-amateurs-real-opportunity",
+          },
+          {
+            prompt: "Why is it significant that the ITF and Wimbledon PUBLISH these prize-money and break-even figures?",
+            options: [
+              "It is required by law",
+              "It isn't significant — every sport does it",
+              "Because a sport that hid these figures would look exactly like a sport where everybody makes it",
+              "It boosts ticket sales",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The ITF commissioned a review that printed the break-even ranking; Wimbledon publishes its prize table as a downloadable PDF. You can only check what somebody publishes.",
+            sourceLessonSlug: "tennis-the-honest-math",
+          },
+        ],
+      },
+    },
   ],
 };
