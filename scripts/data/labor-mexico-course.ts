@@ -20,10 +20,14 @@
 //     Article 31-A.2 means it CANNOT reach a wrong that Mexican law does not already prohibit — which
 //     is exactly why the US LOST the San Martín panel.
 //   * Every case is dated and cited to USTR or the US Department of Labor (both publish them), and the
-//     course deliberately teaches the ones that went BADLY: San Martín (Mexico won; determination
-//     final, 13 May 2024), BBB Manufacturing (the US government rejected the petition itself for
-//     insufficient evidence, Sept 2022), and VU Manufacturing (remedy imposed — then the company
-//     closed the plant, Oct 2023). A course that only taught GM Silao would be advertising.
+//     course deliberately teaches the ones that went BADLY: San Martín / Grupo México mine, Zacatecas
+//     (Mexico won the panel; determination public 13 May 2024) and Manufacturas VU / VU Manufacturing,
+//     Piedras Negras (remediation agreed — then the company closed the plant, 10 Oct 2023, ~400 workers).
+//     GM Silao (2021–22) is the WIN, told without the US-saves-Mexico framing; the 2026 Faurecia request
+//     (18 May 2026) shows the tool survived a change of US administration. A course that only taught GM
+//     Silao would be advertising. NOTE: an earlier draft plan named a "BBB Manufacturing" petition the US
+//     supposedly rejected in Sept 2022; that outcome could NOT be verified against USTR/DOL in authoring,
+//     so it is NOT cited — teach only what the primary sources confirm (the course's own discipline).
 //   * SCALE OF PROTECTION CONTRACTS IS DELIBERATELY NOT QUANTIFIED. Gacek (2019, Mexican Law Review)
 //     says they are "believed to make up the overwhelming majority of collective agreements" and gives
 //     no figure, because no reliable count exists. The course says so, and REFUSES the widely repeated
@@ -945,6 +949,652 @@ Recall Section 2's discipline: that is a **ceiling on** the protection-contract 
             correctIndex: 0,
             explanation: "Majority yes → the contract lives. Majority no, OR no vote at all → the contract is terminated. That is why so many simply ceased to exist.",
             sourceLessonSlug: "mexico-legitimation",
+          },
+        ],
+      },
+    },
+
+    // ─────────── SECTION 4 · THE TRADE DEAL THAT CAME FOR IT: RAPID RESPONSE ───────────
+    {
+      slug: "mexico-rrm-how-it-works",
+      section: "Section 4 · The trade deal that came for it: the Rapid Response Mechanism",
+      title: "10 · The Rapid Response Mechanism: an international labor rule with teeth",
+      body: `The anchor course, *The History of Unions*, ends on a bleak note. Its last big lesson is the **International Labour Organization** — the world's labor floor — and the punchline is that the floor **is made of paper**. The ILO can investigate, report, convene a Commission of Inquiry, and *name* what it found. What it cannot do is make anyone pay. It has no fines, no court, no tariffs, no police.
+
+**This lesson is the exception to that bleakness — the one place in the whole Workers' Rights track where an international labor rule acquired teeth.** It is not a treaty about labor in the abstract. It is a clause in a **trade** agreement, and it bites a single factory in the wallet.
+
+## What it is
+
+When the United States, Mexico, and Canada replaced NAFTA with the **USMCA** (the *Tratado entre México, Estados Unidos y Canadá*, T-MEC — in force **1 July 2020**), they attached to the dispute-settlement chapter a new device: the **Facility-Specific Rapid-Response Labor Mechanism**, in **Annex 31-A** (USTR, n.d.).
+
+Read the name slowly, because two words in it are the whole innovation:
+
+- **"Facility-Specific."** Every other international labor tool acts on a *country*. This one acts on **one factory**. It lets one government ask the other to review whether the workers at a **single named worksite** are being denied the right to **freedom of association and collective bargaining**.
+- **"Rapid."** A World Trade Organization case takes years. This is built to run in **weeks**.
+
+And one more thing the name does not say, which matters: **Annex 31-A binds only the United States and Mexico.** (There is a separate, parallel Annex 31-B between Canada and Mexico.) It is not a general treaty duty. It is a specific, bilateral lever aimed at Mexican workplaces — because the protection contract was a Mexican problem, and the leverage was designed for it.
+
+## How the process actually runs
+
+Here is the sequence, with the timeframes the two governments actually operate under (Covington & Burling, 2024):
+
+1. **A petition.** A union, a worker, a labor NGO — or the U.S. Trade Representative on its own initiative — files a complaint that a covered facility is denying workers free association or collective bargaining.
+2. **The 30-day screen.** The USTR's interagency labor committee has **30 days** to decide whether there is *sufficient, credible evidence*. (This is a real filter, not a rubber stamp — the next lesson shows the United States both winning and losing on the merits.)
+3. **The request — and the freeze.** If the evidence clears the bar, the United States formally asks Mexico to **review** the facility. At the *same moment*, USTR can instruct the Treasury to **suspend liquidation** of customs on that facility's goods — i.e., freeze the tariff accounts, so the penalty is already loaded and waiting.
+4. **Mexico's clock.** Mexico then has **10 days** to decide whether to conduct a review, and **45 days** to carry it out.
+5. **Remediation, or a panel.** Most cases end in a **remediation plan** the two governments negotiate (a real re-vote, reinstatement of fired organizers, back pay). If they cannot agree, a **three-person Rapid Response panel** takes over — it can do an **on-site verification** at the plant and issue a binding determination.
+
+## The remedy — the part with teeth
+
+If a denial is found and not cured, the United States can **suspend preferential tariff treatment on the goods that specific facility exports** — and, for repeat offenders, block them. In plain terms: *a tariff penalty aimed at one factory's products.* Suddenly the company's exports to its largest market cost more than its law-abiding competitor's.
+
+**That is the thing the ILO never had.** The ILO can tell the world your factory denies workers a union. The RRM can make your factory's goods **more expensive at the U.S. border** until it stops.
+
+## One limit, built into the definition — remember it for later
+
+A facility is only "covered" if it produces a good or supplies a service in a **Priority Sector** — defined as **manufacturing, services, and mining** (Covington & Burling, 2024). **Agriculture is not a Priority Sector.** The tool that finally put teeth into an international labor rule was pointed at the auto plant and the call center and the mine — and *not* at the farm, where some of the most vulnerable workers in North America are. Hold that; Section 4's third lesson comes back to it.
+
+:::reveal What are the two features in the phrase "Facility-Specific Rapid-Response Labor Mechanism" that make it different from every other international labor tool, and what is its remedy? ||| It is facility-specific (it acts on one named factory, not a whole country) and rapid (built to run in weeks, not the years a WTO case takes). Its remedy is the thing the ILO never had: the United States can suspend preferential tariff treatment on the goods that one facility exports — a tariff penalty aimed at a single factory's products, making them more expensive at the U.S. border until the denial of rights is cured.
+
+## Sources
+- Office of the United States Trade Representative. (n.d.). *Chapter 31 Annex A: Facility-Specific Rapid-Response Labor Mechanism*. https://ustr.gov/trade-topics/enforcement/dispute-settlement-proceedings/fta-dispute-settlement/usmca/chapter-31-annex-facility-specific-rapid-response-labor-mechanism
+- Office of the United States Trade Representative. (n.d.). *USMCA Chapter 31 — Dispute Settlement* [Treaty text]. https://ustr.gov/sites/default/files/files/agreements/FTA/USMCA/Text/31-Dispute-Settlement.pdf
+- Covington & Burling LLP. (2024, May 20). *Four years of the USMCA rapid response labor mechanism*. https://www.cov.com/en/news-and-insights/insights/2024/05/four-years-of-the-usmca-rapid-response-labor-mechanism`,
+    },
+    {
+      slug: "mexico-gm-silao",
+      section: "Section 4 · The trade deal that came for it: the Rapid Response Mechanism",
+      title: "11 · GM Silao: the case that proved the teeth were real",
+      recallContent: [
+        {
+          prompt: "In one sentence, what does the USMCA Rapid Response Labor Mechanism do?",
+          answer:
+            "It lets one government ask the other to review a single named factory for denying workers free association or collective bargaining, with the remedy being suspension of preferential tariff treatment on that facility's exports — a tariff penalty aimed at one plant.",
+        },
+        {
+          prompt: "Which two countries does USMCA Annex 31-A bind, and what is the covered-sector limit?",
+          answer:
+            "Only the United States and Mexico (Annex 31-B is the separate Canada–Mexico version). A facility is covered only if it is in a Priority Sector — manufacturing, services, or mining. Agriculture is not covered.",
+        },
+      ],
+      body: `The first time anyone used the Rapid Response Mechanism, it landed on the biggest possible target, and it worked. This is the case to know — and the case people most often tell wrong.
+
+## What happened, dated
+
+| Date | Event |
+| --- | --- |
+| **April 2021** | A **legitimation vote** (Section 3) is held at **General Motors' pickup-truck plant in Silao, Guanajuato** — on the sitting **CTM** collective contract. Mexican federal labor inspectors detect **serious irregularities**, including **destroyed ballots**, and halt the count. |
+| **12 May 2021** | The United States files the **first-ever RRM request**, asking Mexico to review whether Silao workers are being denied free association and collective bargaining. USTR instructs Treasury to suspend liquidation on the plant's goods. |
+| **8 July 2021** | The two governments announce a **remediation plan**. |
+| **August 2021** | The old CTM contract is put to a fresh **personal, free, secret vote**, with the **ILO** and Mexican authorities observing. **Workers reject it.** |
+| **1–2 Feb 2022** | A new **independent** union — **SINTTIA** (Sindicato Independiente Nacional de Trabajadores y Trabajadoras de la Industria Automotriz) — wins the representation vote with **about 76.5%**. |
+| **May 2022** | SINTTIA negotiates a new contract with GM: **raises above inflation**. |
+
+(Office of the United States Trade Representative, n.d.; Covington & Burling, 2024; Brookings Institution, 2024.)
+
+**Sit with what that chain produced.** At one of the largest auto plants in Mexico, a **protection-style incumbent contract** was voted out and a genuinely independent union voted in — and then that union won real money at the table. This is exactly the outcome the anchor course's ILO lesson said the international system could never deliver. Here it was delivered, at a named factory, in under a year.
+
+## Now the part people get wrong — and the reason this course exists
+
+It is very tempting to tell this as: *the United States reached in and fixed a Mexican factory.* **Do not tell it that way. It is false, and it matters.**
+
+Look again at the chain, and notice who did each thing:
+
+- **Mexican labor inspectors** caught the ballot tampering and stopped the vote. That is what triggered everything.
+- The tampering was illegal under **Mexico's own 2019 labor law** (Section 3) — the personal, free, secret vote that **Mexico** had already legislated. There was a law to break because **Mexican workers, lawyers and legislators had passed it first.**
+- **The workers of Silao** organized SINTTIA, ran the campaign, and cast the votes. Nobody in Washington did that.
+
+So what did the RRM actually add? **A deadline and a price.** It took a violation that Mexican law already prohibited and attached a consequence — a tariff threat on GM's exports — that made resolving it urgent instead of eternal. Recall from Section 2 that *delay is the employer's weapon*: workers cannot outlast a lawsuit. The RRM's real contribution was to **put a clock and a cost on the other side of the table**, so that for once delay hurt the company more than the workers.
+
+That is leverage. **It is not authorship.** The right was Mexican; the enforcement pressure was shared. Keep that distinction sharp — the next lesson shows you three different ways the leverage runs out.
+
+:::reveal The GM Silao case is often told as "the United States fixed a Mexican factory." Why is that framing wrong, and what did the RRM actually contribute? ||| Because Mexicans did the substantive work: Mexican inspectors caught the ballot tampering and halted the vote, the tampering was illegal under Mexico's own 2019 labor law, and the workers of Silao organized the independent union (SINTTIA) and won the vote themselves. What the RRM added was not the right and not the union — it was a deadline and a price: a tariff threat on GM's exports that made resolving a violation Mexican law already prohibited urgent instead of eternal. That is leverage, not authorship.
+
+## Sources
+- Office of the United States Trade Representative. (n.d.). *Chapter 31 Annex A: Facility-Specific Rapid-Response Labor Mechanism* [case index]. https://ustr.gov/trade-topics/enforcement/dispute-settlement-proceedings/fta-dispute-settlement/usmca/chapter-31-annex-facility-specific-rapid-response-labor-mechanism
+- Covington & Burling LLP. (2024, May 20). *Four years of the USMCA rapid response labor mechanism*. https://www.cov.com/en/news-and-insights/insights/2024/05/four-years-of-the-usmca-rapid-response-labor-mechanism
+- Brookings Institution. (2024). *The track record of the USMCA rapid response mechanism*. https://www.brookings.edu/articles/the-track-record-of-the-usmca-rapid-response-mechanism/`,
+    },
+    {
+      slug: "mexico-rrm-limits",
+      section: "Section 4 · The trade deal that came for it: the Rapid Response Mechanism",
+      title: "12 · The limits, honestly: the cases the United States lost",
+      recallContent: [
+        {
+          prompt: "What did the RRM actually add at GM Silao, if not the right itself?",
+          answer:
+            "A deadline and a price. It attached a tariff threat to a violation that Mexican law already prohibited, so delay finally cost the employer more than the workers. Leverage, not authorship.",
+        },
+      ],
+      body: `A course that taught only GM Silao would be an advertisement. The mechanism has real limits, and the honest way to learn them is through the cases that went **badly**. There are four limits, and the first two each have a dated case attached.
+
+## Limit 1 — it enforces a right; it cannot create one (the San Martín loss)
+
+**The case.** In **August 2023** the United States requested the **second-ever RRM dispute-settlement panel**, over the **San Martín mine** (owned by **Grupo México**) in **Zacatecas**, where the miners' union **Los Mineros** was in a long recognition fight. The panel did an **on-site verification** in **February 2024**, held a hearing, and made its determination public on **13 May 2024** (USTR, 2024; United Steelworkers, 2024).
+
+**The United States lost.** The panel agreed the mine was a *covered facility* — but found that the alleged denial of rights **was not brought under the specific Mexican labor laws that carry out Mexico's USMCA obligations**. In other words, the dispute did not fit the narrow legal channel the treaty enforces.
+
+**This is the single most important limit, and it is the treaty working as written, not failing.** Go back to Section 3: the RRM enforces a right that **Mexican law already guarantees**. It is a lever bolted onto Mexican labor law — it can force Mexico to *apply* that law at a facility, but it **cannot reach a wrong that Mexican law does not already prohibit in the way the treaty specifies**. If you want the right itself changed, that is a job for Mexico's Congress, not a trade panel. The RRM is downstream of the reform, always.
+
+## Limit 2 — a tariff cannot keep a factory open (Manufacturas VU)
+
+**The case.** A petition in **December 2022** targeted **Manufacturas VU** (VU Manufacturing), an auto-parts plant in **Piedras Negras, Coahuila**. The two governments agreed a **remediation plan in March 2023**. But instead of remediating, the company began **laying off workers and moving out its machinery**, and on **10 October 2023** it **closed the plant entirely — about 400 workers terminated** (U.S. Department of Labor, 2023; USTR, 2023).
+
+**Read the limit precisely.** The RRM's whole threat is *"comply, or your goods get more expensive at the U.S. border."* But an owner always has a third option the threat cannot touch: **leave.** The mechanism can make a Mexican facility unprofitable to run badly; it cannot make anyone keep running it at all. The workers who organized at VU got the mechanism to work — and got a closed plant. **An enforcement tool that can win the case and still lose the jobs is a real tool with a real ceiling.**
+
+## Limit 3 — it is bilateral, and it depends on a willing U.S. administration
+
+The RRM is not a neutral court a worker can walk into. It is a **lever held by the U.S. government**, which **chooses** whether to pull it. That has two edges:
+
+- The United States has a direct commercial interest — protecting its own workers from competition with rights-denying plants — so it is genuinely motivated to act. That is why the tool has bite at all.
+- But a lever that depends on political will can be set down. A different administration, a different trade mood, and the petitions simply stop being filed.
+
+**Be honest in both directions here.** As of 2026 the tool has **not** been abandoned: the United States filed a fresh RRM request over a **Faurecia** auto-parts plant in **Silao** on **18 May 2026**, under a different administration than the one that started the program (USTR, 2026a). So the mechanism has survived a change of government. But "it still gets used" is not the same as "it is guaranteed." Its use is discretionary, and **discretion is exactly the vulnerability** — the right belongs to Mexican workers, but the enforcement belongs to Washington's calendar.
+
+## Limit 4 — it lasts only as long as the trade deal does
+
+The RRM is a clause in the USMCA. Its life is the treaty's life. And the treaty's life is now an open question: at the **joint review on 1 July 2026**, the United States **declined to confirm the 16-year extension**, which under Article 34.7.4 triggers **annual reviews** for the rest of the term. The agreement **remains fully in force** — all rights and obligations, the RRM included, keep operating — and the extension is still available if the three governments later agree (USTR, 2026b; White & Case, 2026). **This course dates that fact and refuses to predict what happens next.** What you should take is structural: an enforcement tool attached to a trade deal is exactly as durable as the trade deal, and no more.
+
+## A note on sourcing, in this course's own spirit
+
+You will see confident aggregate claims about the RRM — "*N* cases, *X* workers helped." Treat them the way Section 2 taught you to treat the protection-contract count. The Brookings Institution (2024), reviewing the record, concluded only that "in at least a small handful of firms, workers appear to have benefitted economically" — a deliberately modest claim. This lesson teaches only the individual cases it could verify against **USTR** and the **U.S. Department of Labor** directly, and it declines to launder a tidy success statistic it cannot stand behind.
+
+:::reveal In the San Martín case the United States lost because the panel found the alleged denial "was not brought under" the Mexican labor laws that implement the USMCA. Why is that loss the clearest illustration of what the RRM fundamentally is? ||| Because it shows the RRM enforces a right rather than creating one. The mechanism is a lever bolted onto Mexican labor law: it can force Mexico to apply that law at a specific facility, but it cannot reach a wrong that Mexican law does not already prohibit in the way the treaty specifies. Changing the right itself is a job for Mexico's Congress; the RRM is always downstream of the domestic reform. The loss is the treaty working as written, not failing.
+
+## Sources
+- Office of the United States Trade Representative. (2024, May 13). *USMCA Rapid Response Labor Mechanism panel releases determination regarding Grupo México mine* [Press release]. https://ustr.gov/about-us/policy-offices/press-office/press-releases/2024/may/usmca-rapid-response-labor-mechanism-panel-releases-determination-regarding-grupo-mexico-mine-biden
+- United Steelworkers. (2024, May 13). *USW disappointed in USMCA panel decision on San Martín mine* [Press release; a party to the dispute — read accordingly]. https://m.usw.org/news/media-center/releases/2024/usw-disappointed-in-usmca-panel-decision-on-san-martin-mine
+- U.S. Department of Labor. (2023, October 10). *Statement by Under Secretary of Labor for International Affairs Thea Lee on closure of auto parts facility at Piedras Negras* [Press release]. https://www.dol.gov/newsroom/releases/ilab/ilab20231010
+- Office of the United States Trade Representative. (2023, March 31). *United States and Mexico announce plan to remediate denials of rights at Manufacturas VU facility* [Press release]. https://ustr.gov/about-us/policy-offices/press-office/press-releases/2023/march/united-states-and-mexico-announce-plan-remediate-denials-rights-manufacturas-vu-facility
+- Office of the United States Trade Representative. (2026a, May). *United States seeks Mexico's review of alleged denial of workers' rights at Faurecia facility* [Press release]. https://ustr.gov/about/policy-offices/press-office/press-releases/2026/may/united-states-seeks-mexicos-review-alleged-denial-workers-rights-faurecia-facility
+- Office of the United States Trade Representative. (2026b, July). *Ambassador Greer issues statement on the USMCA joint review* [Press release]. https://ustr.gov/about/policy-offices/press-office/press-releases/2026/july/ambassador-greer-issues-statement-usmca-joint-review
+- White & Case LLP. (2026). *USMCA 2026 joint review: United States declines to extend agreement, triggering annual reviews*. https://www.whitecase.com/insight-alert/usmca-2026-joint-review-united-states-declines-extend-agreement-triggering-annual
+- Brookings Institution. (2024). *The track record of the USMCA rapid response mechanism*. https://www.brookings.edu/articles/the-track-record-of-the-usmca-rapid-response-mechanism/`,
+    },
+    {
+      slug: "mexico-section-4-quiz",
+      section: "Section 4 · The trade deal that came for it: the Rapid Response Mechanism",
+      title: "13 · Check yourself: the mechanism, the win, and the limits",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does the USMCA Rapid Response Labor Mechanism (Annex 31-A) act upon?",
+            options: [
+              "A single named facility accused of denying free association or collective bargaining",
+              "A whole country's labor law at once",
+              "An entire industrial sector across all three USMCA countries",
+              "Individual workers' unemployment claims",
+            ],
+            correctIndex: 0,
+            explanation: "The word is 'Facility-Specific.' Every other international labor tool acts on a country; this one acts on one factory.",
+            sourceLessonSlug: "mexico-rrm-how-it-works",
+          },
+          {
+            prompt: "What is the RRM's remedy — the thing that gives it 'teeth'?",
+            options: [
+              "Suspension of preferential tariff treatment on the goods that specific facility exports",
+              "A public report naming the violation, with no financial consequence",
+              "Imprisonment of the company's executives",
+              "Expulsion of the country from the United Nations",
+            ],
+            correctIndex: 0,
+            explanation: "A tariff penalty aimed at one factory's products — the thing the ILO never had. The ILO can only publicize; the RRM can raise a factory's costs at the U.S. border.",
+            sourceLessonSlug: "mexico-rrm-how-it-works",
+          },
+          {
+            prompt: "Which countries does Annex 31-A bind?",
+            options: [
+              "Only the United States and Mexico (Annex 31-B is the separate Canada–Mexico version)",
+              "All three USMCA countries equally",
+              "The United States and Canada only",
+              "Every WTO member",
+            ],
+            correctIndex: 0,
+            explanation: "It is a bilateral lever aimed at Mexican workplaces, because the protection contract was a Mexican problem the leverage was designed for.",
+            sourceLessonSlug: "mexico-rrm-how-it-works",
+          },
+          {
+            prompt: "A facility is only 'covered' if it is in a Priority Sector. Which sector is NOT covered?",
+            options: ["Agriculture", "Manufacturing", "Mining", "Services"],
+            correctIndex: 0,
+            explanation: "Priority Sectors are manufacturing, services, and mining. Agriculture — where some of the most vulnerable workers in North America are — is not named.",
+            sourceLessonSlug: "mexico-rrm-how-it-works",
+          },
+          {
+            prompt: "Roughly how fast is the RRM designed to run, compared with an ordinary trade dispute?",
+            options: [
+              "Weeks — a WTO case can take years; 'Rapid' is in the name",
+              "It takes longer than a WTO case, by design",
+              "Exactly one calendar year, fixed by treaty",
+              "There is no time limit at all",
+            ],
+            correctIndex: 0,
+            explanation: "USTR has 30 days to screen a petition; Mexico then has 10 days to decide to review and 45 to conduct it. The whole point is speed.",
+            sourceLessonSlug: "mexico-rrm-how-it-works",
+          },
+          {
+            prompt: "Who can start an RRM case?",
+            options: [
+              "A union, a worker, or a labor NGO by petition — or the USTR on its own initiative",
+              "Only the President of the United States",
+              "Only the Mexican government",
+              "Only a company that competes with the accused facility",
+            ],
+            correctIndex: 0,
+            explanation: "A petition is screened by USTR's interagency labor committee within 30 days for sufficient, credible evidence before the U.S. formally asks Mexico to review.",
+            sourceLessonSlug: "mexico-rrm-how-it-works",
+          },
+          {
+            prompt: "What triggered the first-ever RRM case, at GM's Silao plant in 2021?",
+            options: [
+              "Mexican labor inspectors detected serious irregularities, including destroyed ballots, in a legitimation vote on the CTM contract",
+              "General Motors voluntarily reported itself to the United States",
+              "A strike that shut down the entire Mexican auto industry",
+              "A ruling by the U.S. Supreme Court",
+            ],
+            correctIndex: 0,
+            explanation: "The tampering was illegal under Mexico's own 2019 labor law. Mexican inspectors caught it and halted the vote; the U.S. filed the RRM request on 12 May 2021.",
+            sourceLessonSlug: "mexico-gm-silao",
+          },
+          {
+            prompt: "What was the outcome at GM Silao?",
+            options: [
+              "Workers rejected the old CTM contract and, in Feb 2022, voted in an independent union (SINTTIA), which then won raises above inflation",
+              "The plant closed and moved to the United States",
+              "The CTM contract was upheld and the case dismissed",
+              "The United States imposed permanent tariffs on all Mexican cars",
+            ],
+            correctIndex: 0,
+            explanation: "SINTTIA won the representation vote with about 76.5% in February 2022 and negotiated a new contract by May 2022 — the outcome the ILO lesson said the system could never deliver.",
+            sourceLessonSlug: "mexico-gm-silao",
+          },
+          {
+            prompt: "Why is it WRONG to tell GM Silao as 'the United States fixed a Mexican factory'?",
+            options: [
+              "Because Mexicans did the substantive work — inspectors caught the fraud, Mexican law made it illegal, and Silao's workers organized the new union themselves",
+              "Because the United States was not involved at all",
+              "Because GM was never actually unionized",
+              "Because the case was decided by the ILO, not the RRM",
+            ],
+            correctIndex: 0,
+            explanation: "The RRM added a deadline and a price to a violation Mexican law already prohibited. That is leverage, not authorship — the distinction this whole course turns on.",
+            sourceLessonSlug: "mexico-gm-silao",
+          },
+          {
+            prompt: "In the San Martín mine case (determination public 13 May 2024), what happened?",
+            options: [
+              "The United States LOST — the panel found the alleged denial was not brought under the Mexican labor laws that implement the USMCA",
+              "The United States won and imposed tariffs on all copper",
+              "The mine was found not to be a covered facility",
+              "The case is still pending with no decision",
+            ],
+            correctIndex: 0,
+            explanation: "The panel agreed the mine was covered but found the dispute did not fit the narrow legal channel the treaty enforces. The RRM enforces Mexican law; it cannot reach a wrong that law does not already prohibit in the specified way.",
+            sourceLessonSlug: "mexico-rrm-limits",
+          },
+          {
+            prompt: "What does the San Martín loss reveal about the fundamental nature of the RRM?",
+            options: [
+              "It enforces a right rather than creating one — it is a lever on Mexican labor law, always downstream of the domestic reform",
+              "It proves the mechanism is broken and never works",
+              "It shows the United States can rewrite Mexican law through a panel",
+              "It means agriculture is secretly covered after all",
+            ],
+            correctIndex: 0,
+            explanation: "Changing the right itself is a job for Mexico's Congress. The RRM can force Mexico to apply its law at a facility; it cannot supply a right the law does not contain. The loss is the treaty working as written.",
+            sourceLessonSlug: "mexico-rrm-limits",
+          },
+          {
+            prompt: "At Manufacturas VU (Piedras Negras), the remediation plan was agreed — and then what happened, on 10 October 2023?",
+            options: [
+              "The company closed the plant entirely, terminating about 400 workers",
+              "The company complied fully and the union thrived",
+              "The United States seized the factory",
+              "The workers accepted the old protection contract",
+            ],
+            correctIndex: 0,
+            explanation: "An owner always has a third option a tariff threat cannot touch: leave. The tool can make a plant unprofitable to run badly; it cannot make anyone keep it open.",
+            sourceLessonSlug: "mexico-rrm-limits",
+          },
+          {
+            prompt: "What general limit does the VU Manufacturing closure illustrate?",
+            options: [
+              "An enforcement tool can win the case and still lose the jobs",
+              "The RRM only works for auto plants",
+              "Tariffs always force compliance",
+              "Mexican law does not protect auto workers",
+            ],
+            correctIndex: 0,
+            explanation: "The RRM's threat is 'comply or your goods cost more at the border.' Closing the plant escapes that threat entirely — a real ceiling on a real tool.",
+            sourceLessonSlug: "mexico-rrm-limits",
+          },
+          {
+            prompt: "Why is the RRM's dependence on 'a willing U.S. administration' both a strength and a weakness?",
+            options: [
+              "The U.S. has a real commercial motive to act (strength), but a lever that depends on political will can be set down by a later administration (weakness)",
+              "It means the mechanism is fully automatic and needs no one to trigger it",
+              "It means only Mexico can ever start a case",
+              "It has no effect on how often cases are filed",
+            ],
+            correctIndex: 0,
+            explanation: "The motive is why the tool bites; the discretion is the vulnerability. The right belongs to Mexican workers, but the enforcement belongs to Washington's calendar.",
+            sourceLessonSlug: "mexico-rrm-limits",
+          },
+          {
+            prompt: "As of 2026, is the RRM still in use — and what does that tell you?",
+            options: [
+              "Yes — the U.S. filed a fresh RRM request over a Faurecia plant in Silao on 18 May 2026, under a different administration, so it has survived a change of government (though its use remains discretionary)",
+              "No — the mechanism was formally abolished in 2024",
+              "It has never been used since GM Silao",
+              "It was replaced by an ILO tribunal",
+            ],
+            correctIndex: 0,
+            explanation: "'It still gets used' is not the same as 'it is guaranteed.' The tool survived a change of administration, but its use is discretionary — and discretion is the vulnerability.",
+            sourceLessonSlug: "mexico-rrm-limits",
+          },
+          {
+            prompt: "What happened to the USMCA at the joint review on 1 July 2026?",
+            options: [
+              "The U.S. declined to confirm the 16-year extension, triggering annual reviews; the agreement remains fully in force",
+              "The agreement was terminated immediately",
+              "The RRM was removed from the treaty",
+              "Mexico withdrew from the USMCA",
+            ],
+            correctIndex: 0,
+            explanation: "Under Article 34.7.4 the decision triggers annual reviews for the rest of the term; all rights and obligations, the RRM included, keep operating. The course dates this and refuses to predict what comes next.",
+            sourceLessonSlug: "mexico-rrm-limits",
+          },
+        ],
+      },
+    },
+
+    // ─────────── SECTION 5 · LEVERAGE, NOT AUTHORSHIP: THE SKILL YOU KEEP ───────────
+    {
+      slug: "mexico-leverage",
+      section: "Section 5 · Leverage, not authorship: the skill you keep",
+      title: "14 · What Mexico gives the track: leverage, and the question you keep",
+      recallContent: [
+        {
+          prompt: "What is the single most important limit the San Martín case exposed?",
+          answer:
+            "The RRM enforces a right rather than creating one. It can force Mexico to apply its labor law at a specific facility, but it cannot reach a wrong Mexican law does not already prohibit in the way the treaty specifies. It is always downstream of the domestic reform.",
+        },
+        {
+          prompt: "Name the three RRM cases this course teaches and what each shows.",
+          answer:
+            "GM Silao (2021–22) — the win: a protection-style contract voted out, an independent union voted in. San Martín (lost, 13 May 2024) — the RRM enforces a right, it cannot create one. Manufacturas VU (closed 10 Oct 2023) — a tariff can't keep a factory open; you can win the case and lose the jobs.",
+        },
+      ],
+      body: `You will not remember every date in this course five years from now. That is fine. **This is the lesson you keep.**
+
+## Put the whole course in one line
+
+The anchor course, *The History of Unions*, ends on the ILO and a bleak verdict: the world's labor floor **is made of paper** — no fines, no court, no teeth. This course was the answer to that lesson. Mexico is where an international labor rule finally acquired teeth.
+
+**But read carefully what kind of teeth, because the honest answer is the point.** The Rapid Response Mechanism is real, and it has bitten. And it is:
+
+- **Leverage, not authorship** — it enforces a right that *Mexican workers won for themselves* in the 2019 reform; it did not write that right.
+- **Downstream, not upstream** — it can make Mexico apply its own law (Silao), but it cannot supply a right the law lacks (San Martín).
+- **A lever, not a court** — it depends on a willing U.S. administration choosing to pull it.
+- **As durable as a trade deal** — no more (the 2026 joint review put the whole USMCA on annual review).
+
+An honest student holds both halves: **the RRM is the best piece of good news in the entire Workers' Rights track — *and* it is narrow, conditional, and borrowed.** Anyone who sells it as either a miracle or a fraud is selling you something.
+
+## The question this course actually gave you
+
+Every other course in the track teaches you to ask *is there a union?* Mexico rewired that question permanently. From now on you ask:
+
+> ### **Whose union is it?**
+
+A workplace with 100% coverage, a signed agreement, and dues on every paycheck can be a place where workers have **no voice at all** — where the union sits on the *employer's* side of the table. That is the protection contract, and once you have seen it you cannot un-see it. It is the most portable idea in this course: carry it into any country, any company, any headline about a "union deal," and ask *whose*.
+
+## The four questions, applied to Mexico
+
+The track's reusable spine (from the anchor), answered for the country you just studied:
+
+| Question | Mexico's answer |
+| --- | --- |
+| **1. Who may organize?** | Anyone — since **1917**, in the constitution (Art. 123). On paper, early and generous. |
+| **2. Who is excluded?** | For most of a century, *effectively everyone*, by the protection contract — and today, from the RRM's reach, **agricultural workers** (not a Priority Sector). |
+| **3. Who bargains, at what level?** | Firm-level contracts — which is exactly what let a friendly union quietly hold the title to a workplace's agreement. |
+| **4. What happens if you try?** | Historically: an *open* vote your employer could watch — a list of people to fire. Since 2019: a personal, free, **secret** vote, and an independent union can now win (Silao). |
+
+## What you can actually do with this
+
+- **The RRM petition is open** — to unions, workers, and labor NGOs, not just governments. The disputes are public: you can read the actual cases at **USTR** and the **U.S. Department of Labor**. If you ever need to know whether a specific Mexican plant is under review, that is where you look.
+- **Follow the supply chain.** If you are a U.S. worker or consumer, the auto parts, electronics, and steel around you likely pass through exactly these plants. The RRM is one of the few places your government's trade policy and a Mexican worker's freedom of association are wired to the same switch.
+- **Take the companion course.** For what your *own* rights are on the job today — protected concerted activity, retaliation, at-will employment, reading a contract — take **Know Your Rights at Work**. This course told you how one country killed the fake union and borrowed teeth from a trade deal. That one tells you what to do on Monday.
+
+:::reveal After everything, what is the most honest one-sentence verdict on the USMCA Rapid Response Mechanism? ||| It is the best piece of good news in the Workers' Rights track — the one international labor rule with real teeth — but it is narrow, conditional, and borrowed: it enforces a right Mexican workers won for themselves rather than creating one, it can only make Mexico apply a law the law already contains, it depends on a willing U.S. administration choosing to use it, and it lasts only as long as the trade deal does.
+
+## Sources
+- Office of the United States Trade Representative. (n.d.). *Chapter 31 Annex A: Facility-Specific Rapid-Response Labor Mechanism*. https://ustr.gov/trade-topics/enforcement/dispute-settlement-proceedings/fta-dispute-settlement/usmca/chapter-31-annex-facility-specific-rapid-response-labor-mechanism
+- U.S. Department of Labor. (n.d.). *USMCA cases* [Bureau of International Labor Affairs]. https://www.dol.gov/agencies/ilab/our-work/trade/labor-rights-usmca-cases
+- Constitución Política de los Estados Unidos Mexicanos. (1917, as amended). Cámara de Diputados. https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf`,
+    },
+    {
+      slug: "mexico-practice",
+      section: "Section 5 · Leverage, not authorship: the skill you keep",
+      title: "15 · Practice: the facts you should be able to produce cold",
+      body: `Fill in each blank, then check. Spelling and capitalization are forgiving.
+
+These are the specific, checkable facts this course wants in your head — the ones that let you catch an error in someone else's argument about Mexican labor or the USMCA. Everything else you can look up.`,
+      exercise: {
+        instructions: "Fill in each blank, then check. Spelling and capitalization are forgiving.",
+        items: [
+          {
+            prompt: "Mexico put labor rights — the eight-hour day, the union, the strike — into its constitution in the year ___, in Article 123.",
+            answer: "1917",
+            explanation: "Eighteen years before the U.S. Wagner Act (1935). Rights on paper, first — the gap between that promise and real worker power is the whole course.",
+          },
+          {
+            prompt: "Instead of asking 'is there a union?', Mexico teaches you to ask 'whose ___ is it?'",
+            answer: "union",
+            accept: ["union is it"],
+            explanation: "A workplace can have full coverage, a signed contract, and dues on every paycheck — and workers with no voice, because the union sits on the employer's side.",
+          },
+          {
+            prompt: "A collective agreement signed between a company and a union the workers never heard of — sometimes before anyone was hired — is called a ___ contract.",
+            answer: "protection",
+            accept: ["protection", "contrato de protección", "contrato de proteccion"],
+            explanation: "A real, registered, enforceable contract whose function is to prevent unionization. Not a forgery — that is what makes it dangerous.",
+          },
+          {
+            prompt: "Mexico's rewritten labor law was published on 1 May ___; every existing contract then had to win a free secret vote (legitimation) by 1 May 2023 or die.",
+            answer: "2019",
+            explanation: "The law came first (1 May 2019); the USMCA and its enforcement mechanism entered into force more than a year later (1 July 2020).",
+          },
+          {
+            prompt: "The USMCA labor enforcement tool — a tariff penalty aimed at a single factory — is the Rapid ___ Labor Mechanism.",
+            answer: "response",
+            accept: ["Response", "response"],
+            explanation: "Annex 31-A, between the U.S. and Mexico only. 'Facility-specific' and 'rapid' are the two words that make it different from every other international labor tool.",
+          },
+          {
+            prompt: "The RRM's remedy is suspension of preferential ___ treatment on the goods a specific facility exports.",
+            answer: "tariff",
+            explanation: "The thing the ILO never had. It makes one factory's goods more expensive at the U.S. border until the denial of rights is cured.",
+          },
+          {
+            prompt: "The first-ever RRM case, in 2021, was at a General Motors plant in the city of ___, Guanajuato.",
+            answer: "Silao",
+            explanation: "Workers rejected the old CTM contract and, in Feb 2022, voted in the independent union SINTTIA — the win the ILO lesson said the system could never produce.",
+          },
+          {
+            prompt: "In the San Martín mine case (2024), the United States ___ (won / lost) the panel.",
+            answer: "lost",
+            explanation: "The panel found the alleged denial was not brought under the Mexican labor laws implementing the USMCA. The RRM enforces a right; it cannot create one.",
+          },
+          {
+            prompt: "At the Manufacturas VU plant in Piedras Negras, rather than remediate, the company ___ the plant (Oct 2023), terminating about 400 workers.",
+            answer: "closed",
+            accept: ["shut", "shut down", "closed down"],
+            explanation: "A tariff threat cannot keep a factory open. You can win the case and still lose the jobs.",
+          },
+          {
+            prompt: "One-word answer: the sector NOT covered by the RRM's Priority Sectors (manufacturing, services, mining) is ___.",
+            answer: "agriculture",
+            accept: ["agriculture", "farming", "agricultural"],
+            explanation: "Some of the most vulnerable workers in North America are agricultural — and they sit outside the one international labor tool with teeth.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "mexico-section-5-quiz",
+      section: "Section 5 · Leverage, not authorship: the skill you keep",
+      title: "16 · Final check: the whole arc",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the single most portable idea in this course?",
+            options: [
+              "Ask 'whose union is it?' — not merely 'is there a union?'",
+              "All unions are corrupt",
+              "Trade deals always help workers",
+              "Constitutional rights guarantee strong unions",
+            ],
+            correctIndex: 0,
+            explanation: "A workplace with full coverage and dues on every paycheck can still leave workers voiceless if the union sits on the employer's side. That is the protection contract.",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "Which phrase best captures the honest verdict on the Rapid Response Mechanism?",
+            options: [
+              "Real teeth, but narrow, conditional, and borrowed",
+              "A miracle that solved Mexican labor",
+              "A fraud that never worked once",
+              "An ILO program with no enforcement",
+            ],
+            correctIndex: 0,
+            explanation: "It enforces a right Mexican workers won, can only make Mexico apply a law it already has, depends on a willing U.S. administration, and lasts only as long as the trade deal.",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "The RRM is best described as 'leverage, not authorship.' What does that mean?",
+            options: [
+              "It attaches pressure to enforce a right that Mexican workers created in their own 2019 reform — it did not write that right",
+              "The United States authored Mexico's labor law",
+              "It creates brand-new rights that Mexican law never contained",
+              "It has no effect on Mexican factories",
+            ],
+            correctIndex: 0,
+            explanation: "The reform came out of Mexican unions, lawyers, courts, and an election. The RRM added a deadline and a price — that is leverage on an existing right.",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "In what year did labor rights enter Mexico's constitution, and how does that compare with the U.S.?",
+            options: [
+              "1917 — eighteen years before the U.S. Wagner Act (1935)",
+              "1935 — the same year as the U.S. Wagner Act",
+              "1994 — with NAFTA",
+              "1950 — with ILO Convention 87",
+            ],
+            correctIndex: 0,
+            explanation: "Article 123. On the question of when labor rights entered the supreme law of the land, Mexico was early and the U.S. was late — but rights on paper are not power in a workplace.",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "Applying the track's four questions to Mexico: who is excluded from the RRM's reach today?",
+            options: [
+              "Agricultural workers — agriculture is not a Priority Sector",
+              "Auto workers",
+              "Miners",
+              "Call-center (service) workers",
+            ],
+            correctIndex: 0,
+            explanation: "Manufacturing, services, and mining are covered; agriculture is not. Someone is always excluded — Question 2 of the four questions.",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "Which came first — Mexico's 2019 labor reform, or the USMCA enforcement mechanism?",
+            options: [
+              "Mexico's reform (law published 1 May 2019); the USMCA entered into force 1 July 2020",
+              "The USMCA mechanism, which then forced Mexico to legislate",
+              "They took effect on the same day",
+              "Mexico has never reformed its labor law",
+            ],
+            correctIndex: 0,
+            explanation: "The chronology kills the 'US cleaned up Mexico' story. The treaty text itself grounds the reform in a Mexican electoral mandate (Annex 23-A, ¶1).",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "What was a protection contract's defining function?",
+            options: [
+              "To prevent unionization — a real union contract that blocked a genuine union from bargaining",
+              "To protect workers from being fired",
+              "To guarantee a minimum wage set by the president",
+              "To insure a union against strike costs",
+            ],
+            correctIndex: 0,
+            explanation: "The institutional form of worker power, turned inside out and used as an instrument against workers. That inversion is why Mexico earns its slot in the track.",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "Where can a worker or NGO actually read the record of RRM disputes?",
+            options: [
+              "USTR and the U.S. Department of Labor publish the cases",
+              "Nowhere — they are secret",
+              "Only in the Mexican constitution",
+              "Only through a paid legal database",
+            ],
+            correctIndex: 0,
+            explanation: "The petition is open to unions, workers, and NGOs, and the disputes are public. Reading the actual cases is the source-discipline habit this whole platform teaches.",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "Which companion course covers what your rights are on the job TODAY?",
+            options: [
+              "Know Your Rights at Work",
+              "The History of Unions",
+              "US Civics 101",
+              "Learning How to Learn",
+            ],
+            correctIndex: 0,
+            explanation: "This course = how one country killed the fake union and borrowed teeth from a trade deal. Know Your Rights at Work = what to do on Monday.",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "How does the RRM answer the anchor course's bleak ILO lesson ('the floor is made of paper')?",
+            options: [
+              "It shows an international labor rule CAN have teeth — a facility-specific tariff penalty — though narrow and conditional ones",
+              "It proves the ILO was right and nothing can ever be enforced",
+              "It replaced the ILO entirely",
+              "It gives the ILO the power to impose tariffs",
+            ],
+            correctIndex: 0,
+            explanation: "The ILO can only publicize; the RRM can make a factory's goods more expensive at the border. It is the track's one piece of good news — read honestly.",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "What is the correct lesson from the fact that ~139,000 registered contracts existed but only about one in nine survived legitimation?",
+            options: [
+              "The scale of the problem was enormous — but that number is a ceiling, not an exact count of protection contracts",
+              "Exactly 139,000 protection contracts existed",
+              "Legitimation was a failure",
+              "Most workers lost their wages",
+            ],
+            correctIndex: 0,
+            explanation: "A contract can also die because the firm closed or the union never filed. Hold both: the practice was pervasive AND the exact number is unknowable.",
+            sourceLessonSlug: "mexico-leverage",
+          },
+          {
+            prompt: "Since 2019, why can an independent union now realistically win a vote it could not have won before?",
+            options: [
+              "The vote is now personal, free, direct, and secret — no longer an open ballot the employer could watch",
+              "Strikes were made illegal",
+              "The government now appoints union leaders",
+              "Foreign unions were allowed to take over",
+            ],
+            correctIndex: 0,
+            explanation: "An open vote is a list of people to fire. Making it secret is what made GM Silao's outcome possible.",
+            sourceLessonSlug: "mexico-leverage",
           },
         ],
       },
