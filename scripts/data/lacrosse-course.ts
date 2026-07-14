@@ -1217,6 +1217,1222 @@ The women's game manages this differently — with **cards**. In NCAA women's la
         ],
       },
     },
-    // <<<APPEND-NEXT-SECTION>>>
+    // ═══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — Rules, fouls & officials
+    // ═══════════════════════════════════════════════════════════════════════
+    {
+      slug: "who-writes-the-rules",
+      title: "16 · Who actually writes the rules",
+      section: "4 · Rules, fouls & officials",
+      body: `There is no single lacrosse rulebook. There are several, they disagree with each other, and they turn over on different schedules. If you can name the rule-writers, you can settle almost any lacrosse argument in a browser tab.
+
+| Body | What it governs | Where its rules live |
+| --- | --- | --- |
+| **World Lacrosse** | The international game: men's field, women's field, box, Sixes, plus endorsed wheelchair and mixed formats. This is the code used at world championships and at the **Olympics**. | worldlacrosse.sport/the-game/playing-rules/ |
+| **NCAA** | U.S. college lacrosse — separate men's and women's rules books, each with its own rules committee. | ncaapublications.com |
+| **National/member federations** (e.g. USA Lacrosse) | The sport within one country: youth rules, coach and official certification, safety standards. | usalacrosse.com |
+| **State high-school associations** | Your actual high-school season — usually adopting a national high-school code with state modifications. | your state association |
+| **Pro leagues** (PLL, NLL, WLL) | Their own competitions. Leagues write house rules — different clocks, different field sizes, sometimes a 2-point line. | each league's site |
+
+World Lacrosse states its own remit plainly: it "is responsible for the rules of men's and women's field, box and Sixes lacrosse" (World Lacrosse, n.d.-c).
+
+### The edition trap
+
+Rulebooks are dated, and the dates don't line up:
+
+- Men's field: a **2025–2027** book.
+- Women's field: a **2025–2026** book.
+- Sixes and box: **2026–2028** books.
+- NCAA men's: a **2025 and 2026** book. NCAA women's: a **2026 and 2027** book.
+
+This is precisely how a stale rule survives on the internet for a decade. Someone reads a 2018 rulebook, writes a blog post, and it gets copied forever. **Always check the edition year on the cover.**
+
+### How to read a rulebook without reading a rulebook
+
+You are not going to read 90 pages. You don't have to. Every rulebook is built the same way:
+
+1. **Table of contents first.** Rules are grouped: the field, the equipment, the teams, time, fouls, penalties. Find the group, then the rule.
+2. **Search the PDF** for the term you actually care about ("shot clock," "shooting space," "body-check").
+3. **Read the rule and the note under it.** Most rulebooks add interpretations, examples, or "approved rulings" (ARs) beneath the rule. World Lacrosse's men's book says it outright: the ARs "have the same authority as the rules."
+4. **Cite it.** "World Lacrosse men's field, Rule 70.3" ends an argument. "I'm pretty sure you can't hit someone from behind" does not.
+
+Doing this once is a genuinely useful life skill and not just a lacrosse one: **going to the primary source and reading the actual text** is the difference between knowing something and having heard something.
+
+:::reveal Someone says "you can't check a player from behind in lacrosse." How do you turn that into a claim you can defend? ||| Name the discipline and code, find the rule, and cite it: World Lacrosse men's field lacrosse, Rule 70.3 — it is illegal to body-check an opponent where initial contact is from their rear, below their hips, or at or above their neck. Then check the edition year on the cover (this is the 2025–2027 book), because rulebooks turn over.
+
+## Sources
+- World Lacrosse. (n.d.-c). *Playing rules*. https://worldlacrosse.sport/the-game/playing-rules/
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf`,
+      recallContent: [
+        {
+          prompt: "In transition, what's the difference between a clear and a ride?",
+          answer:
+            "A clear is your team moving the ball out of your defensive end after winning it. A ride is the other team's attackers pressuring that clear to force a turnover.",
+        },
+        {
+          prompt: "In NCAA women's lacrosse, how long do the green, yellow, and red cards cost you?",
+          answer: "Green card = 1 minute, yellow = 2 minutes, red = 5 minutes.",
+        },
+      ],
+    },
+    {
+      slug: "fouls-and-penalties",
+      title: "17 · Fouls and penalties",
+      section: "4 · Rules, fouls & officials",
+      body: `Fouls are where the men's and women's games diverge most visibly, so — as always — name the discipline and the code first.
+
+### Men's field (World Lacrosse, 2025a)
+
+Fouls come in three tiers.
+
+**Minor fouls** — "those of a less serious kind" (Rule 51.1). Examples: interference (52), pushing (53), illegal pick (54), holding (55), withholding the ball from play (58), offside (65), warding — guarding your stick with your free arm (66), illegal stick (63), illegal equipment (64).
+*Penalty:* if the offending team has the ball or the ball is loose, possession goes to the other team where the foul occurred. If the *other* team already had possession, the offender is suspended for **30 seconds** (Rule 50.1).
+
+**Major fouls** — "those of a more serious kind" (Rule 69.1). These are the ones you'll hear called on television: **illegal body-check** (70), **slashing** (71), **cross check** (72), **tripping** (73), **unnecessary roughness** (74), **unsportsmanlike conduct** (75).
+*Penalty:* suspension for **1, 2, or 3 minutes**, at the officials' judgment of severity and intent; the ball normally goes to the fouled team (Rule 68.1). Commit five major fouls and you're out of the game (Rule 76).
+
+**Expulsion fouls** — the most serious; the player is out (Rules 77–78).
+
+Two useful details you can only get from the actual text. First, slashing doesn't require you to hit anything: swinging "at an opponent's stick in a dangerous or reckless way" is slashing "even if they do not actually hit the opponent's stick or body" (Rule 71.1). Second, the rulebook explicitly protects the follow-through: a player "in their legitimate follow through motion" who strikes an opponent on the head while shooting or passing has committed **no foul** (Approved Ruling 71.1). Rules are written by people who have watched a lot of lacrosse.
+
+### Women's field (World Lacrosse, 2025b)
+
+The women's book has **minor** and **major** fouls too, but the penalty logic is built around **space, not the penalty box**. The characteristic penalty is a **free position**: play stops, the ball is given to the fouled player, and the offending defender is moved to a set distance away. For a major foul by the defense inside the critical scoring area, that free position is a genuinely dangerous scoring chance — which is exactly the point. The rules make illegal defense expensive.
+
+The signature women's fouls, all cited earlier: **illegal contact** (20.A.12 — you may not displace another player), **charge** (20.A.3), **ward** (20.A.18 — you may not guard your stick with your arm), **shooting space** (20.A.19), **three seconds in the 11 m fan** (20.A.20). Shooting space is an immediate whistle (Rule 20.B.7).
+
+And on top of the fouls, there are **cards** — the mechanism that puts a women's team a player down. In NCAA women's lacrosse: **green = 1 minute, yellow = 2 minutes, red = 5 minutes** (NCAA, 2026b).
+
+### What this means for you as a player
+
+Learn your own code's fouls the way you'd learn vocabulary, because **the fouls define the game's shape**. In the men's game, discipline means not handing your opponent a 6-on-5. In the women's game, discipline means not handing your opponent a free position eight metres from your goal. Same lesson, different currency: **penalties are how good teams lose to worse ones.**
+
+:::reveal In World Lacrosse men's field, does a slash require actually hitting the opponent? ||| No. Rule 71.1: swinging your stick "at an opponent's stick in a dangerous or reckless way" is slashing "even if they do not actually hit the opponent's stick or body." Conversely, a player in a legitimate follow-through while shooting or passing who strikes an opponent on the head has committed no foul (AR 71.1).
+
+## Sources
+- National Collegiate Athletic Association. (2026b). *2025 NCAA women's lacrosse table reference sheet*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/2025PRWLA_NCAAWomensLacrosseTableReferenceSheet.pdf
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf
+- World Lacrosse. (2025b). *2025–2026 women's field lacrosse rules* (v1.1). https://worldlacrosse.sport/wp-content/uploads/2025/03/2025_2026-WF-Rulebook_FINALv1.1-1.pdf`,
+      recallContent: [
+        {
+          prompt: "Name the five main bodies that write lacrosse rules.",
+          answer:
+            "World Lacrosse (international, and the Olympic code), the NCAA (U.S. college — separate men's and women's books), national federations like USA Lacrosse, state high-school associations, and the pro leagues, which write their own house rules.",
+        },
+        {
+          prompt: "What is the \"edition trap\"?",
+          answer:
+            "Rulebooks are dated and don't turn over together — men's field is a 2025–2027 book, women's field 2025–2026, Sixes and box 2026–2028, NCAA men's 2025–26, NCAA women's 2026–27. Quoting an old edition is how stale rules survive online for years. Always check the cover date.",
+        },
+      ],
+    },
+    {
+      slug: "becoming-an-official",
+      title: "18 · The third team on the field: becoming an official",
+      section: "4 · Rules, fouls & officials",
+      body: `USA Lacrosse calls officials "**the third team on the field**" (USA Lacrosse, n.d.-a). That's the right frame, and it points at something practical: **officiating is the single most accessible paid role in this sport.**
+
+Think about what it requires. Not size. Not speed. Not a club-team budget. It requires that you know the rulebook, that you can make a decision in half a second and stand behind it, and that you are willing to be shouted at by adults who have not read the rulebook. If you already have the temperament, everything else is learnable in a season.
+
+### How it works
+
+USA Lacrosse develops "certified training programs to prepare officials for game situations," and membership "includes all requirements needed for official certification" — plus educational resources, the annual rule book, online courses, clinics, and webinars (USA Lacrosse, n.d.-a). The path is: join, train, get certified, start on youth games, work up. Local officials' associations assign games and pay per game.
+
+### Why this is genuinely worth your time as a high-school student
+
+1. **It pays now.** Not someday. Officials are paid per game, and youth games are the entry point.
+2. **Chronic shortage.** Officials' associations in most sports are short-handed, which means a competent, reliable, punctual young official is not competing for scarce work — the work is competing for them.
+3. **It makes you a much better player.** You cannot officiate a game without knowing exactly where the line is between a legal check and a major foul, or between good defense and shooting space. Officials know the rules better than most coaches. That knowledge shows up in your own game immediately.
+4. **It's a real credential.** "Certified lacrosse official, three seasons" on a résumé is a claim about judgment, composure, and reliability under pressure that most 17-year-olds cannot make.
+
+### The scorer's table
+
+Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-clock operator, and a scorer**, and those roles are formally defined in the rulebooks — the World Lacrosse men's book gives the shot-clock operator their own duties section (2025a, Rule 43.3), and the NCAA publishes a women's **table reference sheet** telling the table crew exactly when to stop the clock, when to sound the horn, and when to reset the possession clock to 90 (NCAA, 2026b). Table crew is often the first paid job available to a young person at a lacrosse venue, and it's the fastest way to learn a rulebook cold.
+
+:::reveal Why is officiating the most accessible paid role in lacrosse — and how does it make you a better player? ||| It requires no size, speed, or club budget: only rules knowledge, quick decisions, and composure. USA Lacrosse membership includes what's needed for certification, and officials' associations pay per game amid a chronic shortage. And you cannot officiate without knowing exactly where the line sits between a legal check and a major foul — knowledge that shows up in your own play immediately.
+
+## Sources
+- National Collegiate Athletic Association. (2026b). *2025 NCAA women's lacrosse table reference sheet*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/2025PRWLA_NCAAWomensLacrosseTableReferenceSheet.pdf
+- USA Lacrosse. (n.d.-a). *Officials*. https://www.usalacrosse.com/officials
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf`,
+      recallContent: [
+        {
+          prompt: "What is a \"free position\" in women's lacrosse?",
+          answer:
+            "The characteristic penalty: play stops, the ball is given to the fouled player, and the offending defender is moved a set distance away. For a major defensive foul inside the critical scoring area, it's a serious scoring chance — which is the point.",
+        },
+        {
+          prompt: "Why do penalties matter so much strategically?",
+          answer:
+            "Because penalties are how good teams lose to worse ones. In the men's game a penalty hands the opponent a 6-on-5 for 30 seconds to 3 minutes; in the women's game it hands them a free position near your goal.",
+        },
+      ],
+    },
+    {
+      slug: "quiz-rules-officials",
+      title: "19 · Check your understanding: rules & officials",
+      section: "4 · Rules, fouls & officials",
+      body: "A graded quiz on Section 4. Passing score is 70%.",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "Which body writes the rules used at the Olympic Games?",
+            options: ["The NCAA", "USA Lacrosse", "World Lacrosse", "The Premier Lacrosse League"],
+            correctIndex: 2,
+            explanation:
+              "World Lacrosse is \"responsible for the rules of men's and women's field, box and Sixes lacrosse\" — and Sixes is the Olympic discipline.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "What is the \"edition trap\"?",
+            options: [
+              "Rulebooks are secret and can't be read by the public",
+              "Rulebooks are dated and turn over on different schedules, so quoting an old edition spreads stale rules — always check the cover year",
+              "Only coaches are allowed to own a rulebook",
+              "Every governing body publishes the same book",
+            ],
+            correctIndex: 1,
+            explanation:
+              "WL men's field is a 2025–2027 book; WL women's field 2025–2026; Sixes and box 2026–2028; NCAA men's 2025–26; NCAA women's 2026–27. They don't line up.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "In a World Lacrosse rulebook, what authority do \"approved rulings\" (ARs) have?",
+            options: [
+              "None — they're just commentary",
+              "The same authority as the rules themselves",
+              "They apply only to youth games",
+              "They apply only in overtime",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The men's field rulebook states that the ARs \"have the same authority as the rules.\" They're where the interpretations and edge cases live.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "Which of these is the strongest way to settle a lacrosse rules argument?",
+            options: [
+              "\"I've played for years and this is how we always did it\"",
+              "\"A coach told me\"",
+              "Name the discipline and code, quote the rule number from the current rulebook, and note the edition year",
+              "Search a forum thread",
+            ],
+            correctIndex: 2,
+            explanation:
+              "\"World Lacrosse men's field, Rule 70.3, 2025–2027 edition\" ends an argument. Going to the primary source is a life skill, not just a lacrosse one.",
+            sourceLessonSlug: "who-writes-the-rules",
+          },
+          {
+            prompt: "In World Lacrosse men's field, what is the penalty for a MINOR foul when the other team already has possession?",
+            options: [
+              "Loss of possession",
+              "A 30-second suspension for the player who committed the foul",
+              "A 3-minute suspension",
+              "A free position for the fouled player",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rule 50.1. If the offending team has the ball or the ball is loose, possession simply changes hands instead.",
+            sourceLessonSlug: "fouls-and-penalties",
+          },
+          {
+            prompt: "Which of these is a MAJOR foul in World Lacrosse men's field?",
+            options: ["Offside", "Warding", "Slashing", "Illegal pick"],
+            correctIndex: 2,
+            explanation:
+              "Slashing (Rule 71) is a major foul, alongside illegal body-check (70), cross check (72), tripping (73), unnecessary roughness (74) and unsportsmanlike conduct (75). Offside, warding and illegal pick are minor fouls.",
+            sourceLessonSlug: "fouls-and-penalties",
+          },
+          {
+            prompt: "Does a slash require actually striking the opponent?",
+            options: [
+              "Yes, contact is always required",
+              "No — swinging at an opponent's stick in a dangerous or reckless way is slashing \"even if they do not actually hit the opponent's stick or body\"",
+              "Only if the opponent falls down",
+              "Only in box lacrosse",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rule 71.1. And the reverse is also written down: a legitimate follow-through while shooting or passing that strikes an opponent's head is no foul (AR 71.1).",
+            sourceLessonSlug: "fouls-and-penalties",
+          },
+          {
+            prompt: "How many major fouls can a player commit in a World Lacrosse men's field match before being removed from the game?",
+            options: ["Two", "Three", "Five", "There is no limit"],
+            correctIndex: 2,
+            explanation: "Rule 76: a player committing five major fouls is out of the game.",
+            sourceLessonSlug: "fouls-and-penalties",
+          },
+          {
+            prompt: "What is the characteristic penalty in women's lacrosse?",
+            options: [
+              "The penalty box",
+              "A free position — play stops, the fouled player gets the ball, and the offending defender is moved a set distance away",
+              "A penalty shot from the center circle",
+              "Loss of a timeout",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The women's penalty logic is built around space rather than the box. A major defensive foul inside the critical scoring area yields a genuinely dangerous free position — which is the point: illegal defense is made expensive.",
+            sourceLessonSlug: "fouls-and-penalties",
+          },
+          {
+            prompt: "In NCAA women's lacrosse, what does a yellow card cost?",
+            options: ["30 seconds", "1 minute", "2 minutes", "5 minutes"],
+            correctIndex: 2,
+            explanation: "Green = 1 minute, yellow = 2 minutes, red = 5 minutes (NCAA, 2026b).",
+            sourceLessonSlug: "fouls-and-penalties",
+          },
+          {
+            prompt: "How does USA Lacrosse describe officials?",
+            options: [
+              "\"The necessary evil\"",
+              "\"The third team on the field\"",
+              "\"Volunteers only\"",
+              "\"The rulebook's servants\"",
+            ],
+            correctIndex: 1,
+            explanation:
+              "USA Lacrosse (n.d.-a). And it develops certified training programs; membership includes what's needed for certification.",
+            sourceLessonSlug: "becoming-an-official",
+          },
+          {
+            prompt: "Why is officiating described as the most accessible PAID role in lacrosse?",
+            options: [
+              "Because it requires elite athleticism",
+              "Because it requires no size, speed, or club-team budget — only rules knowledge, decisiveness, and composure — and officials are paid per game amid a chronic shortage",
+              "Because officials are guaranteed a college scholarship",
+              "Because it requires no training at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A competent, reliable, punctual young official isn't competing for scarce work — the work is competing for them.",
+            sourceLessonSlug: "becoming-an-official",
+          },
+          {
+            prompt: "How does officiating make you a better player?",
+            options: [
+              "It doesn't — it's purely a job",
+              "Because you cannot officiate without knowing exactly where the line sits between a legal check and a major foul, or between good defense and shooting space",
+              "Because officials get extra practice time",
+              "Because officials are scouted by colleges",
+            ],
+            correctIndex: 1,
+            explanation: "Officials know the rules better than most coaches, and that knowledge shows up in your own game immediately.",
+            sourceLessonSlug: "becoming-an-official",
+          },
+          {
+            prompt: "Which of these is a real, rulebook-defined game role you could be paid for without officiating?",
+            options: [
+              "Shot-clock operator",
+              "Assistant referee coordinator",
+              "Field commissioner",
+              "Sideline analyst",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The World Lacrosse men's book gives the shot-clock operator their own duties section (Rule 43.3), and the NCAA publishes a women's table reference sheet for the timer, possession-clock timer and scorer.",
+            sourceLessonSlug: "becoming-an-official",
+          },
+          {
+            prompt: "Why is table crew (timer/scorer/shot-clock) a smart first job at a lacrosse venue?",
+            options: [
+              "It's the highest-paid role in the sport",
+              "It's often the first paid job available to a young person there, and it's the fastest way to learn a rulebook cold",
+              "It requires a coaching license",
+              "It guarantees a spot on the varsity team",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The roles are formally defined in the rulebooks — which means learning them means learning the rules from the inside.",
+            sourceLessonSlug: "becoming-an-official",
+          },
+        ],
+      },
+    },
+    // ═══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — Leagues & the road to LA28
+    // ═══════════════════════════════════════════════════════════════════════
+    {
+      slug: "college-and-recruiting",
+      title: "20 · College lacrosse and the recruiting pipeline",
+      section: "5 · Leagues & the road to LA28",
+      body: `For most American high-school players, "the next level" means NCAA lacrosse — men's and women's, across Divisions I, II and III, each with its own rules book and its own recruiting rules. This lesson is the honest version, including the parts a recruiting service won't tell you.
+
+### The one recruiting rule to know
+
+Lacrosse had a genuine early-recruiting crisis: coaches were making offers to 14-year-olds. In **April 2017** the NCAA passed legislation moving the initial recruiting-contact date to **September 1 of a player's junior year** for men's and women's lacrosse (Intercollegiate Women's Lacrosse Coaches Association, n.d.). Before that date, Division I coaches cannot call, text, email, or make offers.
+
+**Two warnings, both load-bearing.**
+First, recruiting rules change — often annually — and they differ by division and by sport. Do not take *this course's* word for what the rule is in the year you're being recruited. **Go to ncaa.org, find the current recruiting calendar for your division and sport, and read it.** That is the authoritative source; anything else, including a coach, a club, or a paid recruiting service, is a secondary interpretation of it.
+Second, the rule restricts what **coaches** may do, not what **you** may do. You can email coaches, send film, and attend camps before September 1. They simply can't reply the way you'd like yet.
+
+### The honest math
+
+The pipeline runs through **club and travel lacrosse**, and that is precisely where the sport's access problem lives. Recruiting happens at summer tournaments and showcases that cost money to enter, money to travel to, and money to stay at. The Aspen Institute's Project Play finds that **travel is now the costliest feature of youth sports** — on average parents spend more per year on travel than on equipment, private lessons, registration fees, or camps — and that participation splits sharply by income: 24% of kids aged 6–12 from homes earning $25,000 or less played sports regularly, versus 40% from homes earning $100,000+ (Aspen Institute Project Play, n.d.).
+
+Lacrosse sits at the expensive end of that spectrum. A men's field player needs a helmet, gloves, shoulder and arm protection, a stick, and cleats before they play a single minute, and then a club fee and a tournament schedule on top. **That is not a small barrier; it is the barrier**, and Section 6 is partly about what people are doing to lower it.
+
+### What to actually do with this
+
+- **Play in high school. Play in a club if you can.** But know that the club circuit is a market, not a meritocracy, and price it accordingly.
+- **Send film.** Coaches watch film. Film is cheap. Film does not care where you live.
+- **Consider Division III.** No athletic scholarships there — but strong lacrosse, real coaching, and admissions officers who care that you play. For a lot of players it's a better outcome than a D-I roster spot they never come off the bench for.
+- **Ask what the roster actually looks like.** How many players at your position? How many are on the field on Saturday? A hard question early saves four unhappy years.
+- **Have a plan that isn't playing.** Which is the whole point of Section 6.
+
+:::reveal When can NCAA Division I lacrosse coaches first contact a recruit — and where should you verify that? ||| September 1 of the player's junior year, under legislation the NCAA passed in April 2017 to curb early recruiting. But verify it yourself for the year you're recruited, on ncaa.org's current recruiting calendar for your division and sport — the rules change, and every club, coach, or recruiting service is only interpreting that document.
+
+## Sources
+- Aspen Institute Project Play. (n.d.). *Youth sports facts: Challenges*. https://projectplay.org/youth-sports/facts/challenges
+- Intercollegiate Women's Lacrosse Coaches Association. (n.d.). *Lacrosse keeps September 1 junior year contact rule*. https://www.iwlca.org/news_article/show/1014833
+- National Collegiate Athletic Association. (n.d.). *NCAA.org* [recruiting calendars and rules by division and sport]. https://www.ncaa.org/`,
+      recallContent: [
+        {
+          prompt: "What does USA Lacrosse call officials, and why is it an accessible role?",
+          answer:
+            "\"The third team on the field.\" It needs no size, speed, or club budget — only rules knowledge, decisiveness, and composure — it's paid per game, and there's a chronic shortage of officials.",
+        },
+        {
+          prompt: "Which body's rules will be used for lacrosse at the Olympics?",
+          answer: "World Lacrosse — specifically the Sixes rules, because Sixes is the Olympic discipline.",
+        },
+      ],
+    },
+    {
+      slug: "pro-leagues",
+      title: "21 · The pro leagues — including the one that shut down",
+      section: "5 · Leagues & the road to LA28",
+      body: `Professional lacrosse is real, growing, and small. Knowing its actual shape — not the shape a highlight reel implies — is what lets you make sensible decisions about it.
+
+### Premier Lacrosse League (PLL) — men's field
+
+Founded by players, the PLL is the top men's field league in North America. It runs **eight teams** — the Boston Cannons, New York Atlas, Philadelphia Waterdogs, Maryland Whipsnakes, Carolina Chaos, Denver Outlaws, Utah Archers, and California Redwoods — and its 2026 season is its eighth (Premier Lacrosse League, 2026). It began as a touring league playing in a different city each weekend and has since moved to a city-based model — a deliberate bet that the sport can sustain local franchises.
+
+### National Lacrosse League (NLL) — men's box
+
+The NLL is the professional **box** (indoor) league, and it is the older institution. It's also the honest one about its own economics: the league's own website publishes a piece titled *"Many NLL Players Hold Multiple Jobs: An Inside Look"* — noting that "something that makes the NLL unique vs other sports is the athlete's ability to hold down full time jobs, raise families AND play a professional sport" (National Lacrosse League, n.d.).
+
+Read that sentence carefully, because it's the single most useful fact in this lesson. **Professional lacrosse, for most of the people playing it, is not a full-time living.** Players teach, sell, coach, build, and work — and then play professionally on weekends. That is not a knock on the league; it's a description of a sport still building its economy. It should inform every plan you make. (This course does not print salary figures, because the figures floating around the internet come from content farms rather than from leagues or player associations. If you want a number, get it from a league or a CBA — not from a listicle.)
+
+### Women's Lacrosse League (WLL)
+
+The PLL launched the **WLL**, a women's professional league, which debuted at the 2025 PLL Championship Series with four teams: the **Boston Guard, New York Charging, Maryland Charm, and California Palms** (Premier Lacrosse League, 2024). In 2026 it took its biggest step yet: its first full regular season — eleven weekends with playoffs, rosters expanded to 23 players via an expansion draft, games on ESPN networks — and it **switched from the sixes format to full-field 10-v-10** (USA Lacrosse, 2025).
+
+Notice that 10. It's the same number as World Lacrosse's women's field rules (Lesson 7). The professional women's game and the international women's game are converging on the same shape.
+
+### The league that shut down — and why it's in this course
+
+**Athletes Unlimited Pro Lacrosse** was a women's professional league with an unusual model: no fixed teams, players drafted into new teams each week, individual points deciding a champion. It ran four seasons, **2021 through 2024**. On **December 18, 2024**, Athletes Unlimited suspended it **indefinitely, effective immediately**, saying that "the international competition schedule and availability of the sport's most elite athletes during the summer months over the next few years makes it impossible for AU to project the growth of our league" (Athletes Unlimited, 2024).
+
+This is in the course on purpose. Almost every "list of pro lacrosse leagues" you will find still lists Athletes Unlimited as active, because nobody updates a listicle. **A sport this young changes fast, and a source that hasn't been checked this year is a source that is probably wrong.** Before you cite any league, roster, or format — go to the league's own site and look at the date.
+
+:::reveal Is Athletes Unlimited a current professional lacrosse league? ||| No. AU Pro Lacrosse ran 2021–2024 and Athletes Unlimited suspended it indefinitely, effective immediately, on December 18, 2024 — citing the international competition schedule and elite-athlete availability. Most online "lists of pro lacrosse leagues" still list it, which is the lesson: check the league's own site and check the date.
+
+## Sources
+- Athletes Unlimited. (2024, December 18). *Athletes Unlimited official statement regarding AU Pro Lacrosse*. https://auprosports.com/read/athletes-unlimited-official-statement-regarding-au-pro-lacrosse/
+- National Lacrosse League. (n.d.). *Many NLL players hold multiple jobs: An inside look*. https://www.nll.com/news/many-nll-players-hold-multiple-jobs-an-inside-look/
+- Premier Lacrosse League. (2024). *Premier Lacrosse League launches Women's Lacrosse League (WLL)*. https://premierlacrosseleague.com/articles/premier-lacrosse-league-launches-womens-lacrosse-league-wll-new-womens-professional-lacrosse-property-to-debut-at-2025-pll-championship-series
+- Premier Lacrosse League. (2026). *Premier Lacrosse League announces 2026 schedule, expands regular season*. https://premierlacrosseleague.com/articles/premier-lacrosse-league-announces-2026-schedule-expands-regular-season
+- USA Lacrosse. (2025, September 10). *Women's Lacrosse League expands to full season schedule with playoffs*. https://www.usalacrosse.com/magazine/professional/wll/womens-lacrosse-league-expands-full-season-schedule-playoffs`,
+      recallContent: [
+        {
+          prompt: "When can NCAA Division I lacrosse coaches first contact a recruit?",
+          answer:
+            "September 1 of the player's junior year (NCAA legislation, April 2017) — but verify the current calendar on ncaa.org for your division and sport, because recruiting rules change.",
+        },
+        {
+          prompt: "Where does the recruiting pipeline's access problem come from?",
+          answer:
+            "It runs through club and travel lacrosse — paid tournaments and showcases. Project Play finds travel is now the costliest feature of youth sports, and participation splits sharply by household income (24% of kids from homes under $25k play regularly vs 40% from $100k+ homes).",
+        },
+      ],
+    },
+    {
+      slug: "road-to-la28",
+      title: "22 · The road to LA28 — and who is not invited",
+      section: "5 · Leagues & the road to LA28",
+      body: `Lacrosse is returning to the Olympic Games. That sentence contains one of the sport's happiest facts and its ugliest open question, and this lesson gives you both — with dates, so you can check whether they've changed.
+
+### Lacrosse has been here before
+
+Lacrosse was a **medal sport at the 1904 St. Louis Games and the 1908 London Games**, and a demonstration sport in 1928, 1932 and 1948 (World Lacrosse, n.d.-a). And at St. Louis in 1904, one of the medals went to a team of **Mohawk players from Canada, who took bronze** (ICT, n.d.). The Creator's Game's last Olympic medal era already included Indigenous people. Keep that in mind for what follows.
+
+### The 2028 pathway (verified July 2026)
+
+At **Los Angeles 2028**, lacrosse returns as **Sixes**, with **"six men's and six women's teams"** (World Lacrosse, 2026c). World Lacrosse confirmed the qualification route on **July 1, 2026**:
+
+1. **Continental championships, September–December 2026.** Pan-American (Oshawa, Canada, Sept. 29–Oct. 4); Asia-Pacific (Sunshine Coast, Australia, Oct. 5–10); European (Salou, Spain, Nov. 2–18); African (Johannesburg, South Africa, Dec. 1–4). "The top 16 nations per gender — five each from the Pan-American, Asia-Pacific and European championships, one from Africa — advance."
+2. **World Lacrosse Sixes Championships, October 2027** — "sending five men's and five women's teams to LA28. That includes the United States, which qualifies automatically as host, subject to participation at both the Pan-American championships and the WLSC."
+3. **Final Olympic qualifying tournament, early 2028.** "The next six ranked teams from the WLSC get one last chance, with the winners completing the field of six for LA28."
+
+Six teams. That is a very small door.
+
+### The question the sport has not answered
+
+**Can the Haudenosaunee — the people who invented this game — play it at the Olympics?**
+
+Here is the state of play, and here is the date attached to it. **As of the most recent reporting verified for this course (March 25, 2026):** the International Olympic Committee's position is that it will **not** allow the Haudenosaunee to compete under their own flag, because IOC eligibility rules require a **National Olympic Committee**, which in turn requires recognition as an independent state — which the Haudenosaunee, recognized by World Lacrosse but not by the United Nations, do not have. IOC officials have also warned that granting an exception might encourage other groups to seek recognition (Laskaris, 2026).
+
+The Haudenosaunee are not asking to be a country. They are asking to play their own game. Their director of lacrosse operations, Claudia Jimerson: **"The barrier is structural, not athletic"** (as quoted in Laskaris, 2026).
+
+Some things that have happened:
+- **January 17, 2025:** the outgoing U.S. administration, jointly with Canada, formally called on the IOC to grant the Haudenosaunee an exception. That request has not, as of the reporting above, been reissued by the current administrations (Laskaris, 2026; Onondaga Nation, 2025).
+- The Nationals are **preparing for the 2027 international competition** that any nation must go through to reach LA28 — while the question of whether they would be permitted to accept a place remains open (Laskaris, 2026).
+- Rex Lyons, the men's head coach, on the bureaucratic shape of the problem: "There's not a box for us to check. We are not recognized by the UN as a nation-state" (as quoted in Onondaga Nation, 2025).
+
+### Your job, as a person who now knows this
+
+**Go and check the current status yourself.** This lesson is dated July 2026. If you are reading it later, something has probably changed, and the source that will tell you is not a sports blog — it's the Haudenosaunee Nationals, the Onondaga Nation, World Lacrosse, and Indigenous news outlets like Windspeaker and ICT. Being able to say "as of *this date*, the status was *this*, and here is where I checked" is the single most valuable habit this entire course is trying to teach you.
+
+:::reveal As of the most recent reporting verified for this course, can the Haudenosaunee Nationals compete at the 2028 Olympics — and why? ||| As of March 25, 2026: no. The IOC's position is that only nations with a National Olympic Committee may compete, and an NOC requires recognition as an independent state. The Haudenosaunee are recognized by World Lacrosse (a full member since 1985) but not by the UN, so under current IOC rules they are ineligible, and no exception has been granted. As their director of lacrosse operations put it: "The barrier is structural, not athletic." Check the current status — this is live.
+
+## Sources
+- ICT. (n.d.). *When the Mohawk lacrosse team played at the Olympics*. https://ictnews.org/archive/when-the-mohawk-lacrosse-team-played-at-the-olympics/
+- Laskaris, S. (2026, March 25). *Haudenosaunee Nationals lacrosse teams still pushing for IOC recognition*. Windspeaker. https://windspeaker.com/news/sports/haudenosaunee-nationals-lacrosse-teams-still-pushing-ioc-recognition
+- Onondaga Nation. (2025, June 5). *Haudenosaunee's quest: Lacrosse will make the 2028 LA Olympics. Will the game's creators?* https://www.onondaganation.org/news/2025/haudenosaunees-quest-lacrosse-will-make-the-2028-la-olympics-will-the-games-creators/
+- World Lacrosse. (n.d.-a). *Origin & history*. https://worldlacrosse.sport/the-game/origin-history/
+- World Lacrosse. (2026c, July 1). *WL confirms Olympic pathway from continental Sixes championships to LA28*. https://worldlacrosse.sport/wl-confirms-olympic-pathway-from-continental-sixes-championships-to-la28/`,
+      recallContent: [
+        {
+          prompt: "How many teams does the PLL have, and what does the NLL publish about its own players' jobs?",
+          answer:
+            "The PLL has eight teams (2026 is its eighth season). The NLL's own site runs a piece titled \"Many NLL Players Hold Multiple Jobs\" — noting that its athletes hold full-time jobs, raise families, AND play professionally.",
+        },
+        {
+          prompt: "What happened to Athletes Unlimited Pro Lacrosse?",
+          answer:
+            "It ran 2021–2024 and was suspended indefinitely, effective immediately, on December 18, 2024. Most online lists of pro lacrosse leagues still show it as active — which is the lesson about checking dates.",
+        },
+      ],
+    },
+    {
+      slug: "quiz-leagues-olympics",
+      title: "23 · Check your understanding: leagues & the Olympics",
+      section: "5 · Leagues & the road to LA28",
+      body: "A graded quiz on Section 5. Note that several answers here are dated — if you're reading this well after July 2026, verify the Olympic status yourself. Passing score is 70%.",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "When may NCAA Division I lacrosse coaches first contact a recruit?",
+            options: [
+              "Any time from ninth grade",
+              "September 1 of the player's junior year, under NCAA legislation passed in April 2017 to curb early recruiting",
+              "Only after the player graduates",
+              "January 1 of senior year, in all divisions",
+            ],
+            correctIndex: 1,
+            explanation:
+              "And verify it for your own year on ncaa.org — recruiting calendars change, and clubs and recruiting services are only interpreting that document.",
+            sourceLessonSlug: "college-and-recruiting",
+          },
+          {
+            prompt: "The September 1 rule restricts what, exactly?",
+            options: [
+              "What recruits may do — you can't email a coach before then",
+              "What coaches may do — you can still email coaches, send film, and attend camps; they just can't respond the way you'd like yet",
+              "Both parties equally",
+              "Only official campus visits",
+            ],
+            correctIndex: 1,
+            explanation: "Send film. Film is cheap, coaches watch it, and it doesn't care where you live.",
+            sourceLessonSlug: "college-and-recruiting",
+          },
+          {
+            prompt: "According to the Aspen Institute's Project Play, what is now the costliest feature of youth sports?",
+            options: ["Equipment", "Private lessons", "Travel", "Registration fees"],
+            correctIndex: 2,
+            explanation:
+              "On average parents spend more per year on travel than on equipment, private lessons, registration fees, or camps — which is exactly what makes a recruiting pipeline that runs through travel tournaments an access problem.",
+            sourceLessonSlug: "college-and-recruiting",
+          },
+          {
+            prompt: "Project Play reports what gap in regular sports participation among kids aged 6–12?",
+            options: [
+              "No measurable gap by income",
+              "24% from homes earning $25,000 or less, versus 40% from homes earning $100,000+",
+              "35% versus 37% — essentially even",
+              "Participation is higher in lower-income homes",
+            ],
+            correctIndex: 1,
+            explanation: "Cost is not a small barrier in lacrosse; it is the barrier.",
+            sourceLessonSlug: "college-and-recruiting",
+          },
+          {
+            prompt: "Why does the course suggest seriously considering NCAA Division III?",
+            options: [
+              "Because D-III offers the largest athletic scholarships",
+              "Because there are no athletic scholarships there — but there is strong lacrosse, real coaching, and admissions officers who care that you play, which beats a D-I roster spot you never come off the bench for",
+              "Because D-III has no recruiting rules",
+              "Because D-III teams play in the PLL",
+            ],
+            correctIndex: 1,
+            explanation: "Also worth asking any program: how many players at my position, and how many are on the field on Saturday?",
+            sourceLessonSlug: "college-and-recruiting",
+          },
+          {
+            prompt: "What is the PLL, and how big is it?",
+            options: [
+              "A women's indoor league with four teams",
+              "The top men's FIELD league in North America, with eight teams; 2026 is its eighth season",
+              "The international governing body",
+              "A college conference",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Boston Cannons, New York Atlas, Philadelphia Waterdogs, Maryland Whipsnakes, Carolina Chaos, Denver Outlaws, Utah Archers, California Redwoods. It began as a touring league and moved to a city-based model.",
+            sourceLessonSlug: "pro-leagues",
+          },
+          {
+            prompt: "What does the NLL itself publish about its players' working lives?",
+            options: [
+              "That all players are full-time professional athletes",
+              "That many hold multiple jobs — its own site runs a piece noting athletes hold down full-time jobs, raise families, AND play professionally",
+              "That players are forbidden from outside employment",
+              "Nothing — the league does not comment",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It's the most useful fact in the lesson: professional lacrosse, for most people playing it, is not yet a full-time living. Plan accordingly.",
+            sourceLessonSlug: "pro-leagues",
+          },
+          {
+            prompt: "Why does this course refuse to print professional lacrosse salary figures?",
+            options: [
+              "Because salaries are secret by law",
+              "Because the numbers circulating online come from content farms rather than leagues or player associations — if you want a number, get it from a league or a CBA",
+              "Because players are unpaid",
+              "Because salaries are identical across all leagues",
+            ],
+            correctIndex: 1,
+            explanation: "Cite the source that owns the number, or don't cite a number.",
+            sourceLessonSlug: "pro-leagues",
+          },
+          {
+            prompt: "What changed for the Women's Lacrosse League (WLL) in 2026?",
+            options: [
+              "It folded",
+              "It played its first full regular season — eleven weekends with playoffs, rosters expanded to 23, games on ESPN — and switched from sixes to full-field 10-v-10",
+              "It expanded to sixteen teams",
+              "It merged with the NLL",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Four teams: Boston Guard, New York Charging, Maryland Charm, California Palms. That 10-v-10 matches World Lacrosse's women's field rules — the pro and international women's games are converging.",
+            sourceLessonSlug: "pro-leagues",
+          },
+          {
+            prompt: "Is Athletes Unlimited Pro Lacrosse currently operating?",
+            options: [
+              "Yes — it's the top women's league",
+              "No — it ran 2021–2024 and Athletes Unlimited suspended it indefinitely, effective immediately, on December 18, 2024",
+              "Yes, but only in Canada",
+              "It never existed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Most online \"lists of pro lacrosse leagues\" still show it as active, because nobody updates a listicle. Check the league's own site, and check the date.",
+            sourceLessonSlug: "pro-leagues",
+          },
+          {
+            prompt: "When was lacrosse previously an Olympic medal sport?",
+            options: [
+              "1924 and 1936",
+              "1904 (St. Louis) and 1908 (London) — with demonstration appearances in 1928, 1932 and 1948",
+              "It has never been an Olympic sport",
+              "1948 only",
+            ],
+            correctIndex: 1,
+            explanation:
+              "And at St. Louis in 1904 a team of Mohawk players from Canada took bronze — the Creator's Game's last Olympic medal era already included Indigenous people.",
+            sourceLessonSlug: "road-to-la28",
+          },
+          {
+            prompt: "How many teams per gender will play lacrosse at the Los Angeles 2028 Olympic Games?",
+            options: ["Four", "Six", "Eight", "Twelve"],
+            correctIndex: 1,
+            explanation:
+              "Six men's and six women's teams, in the Sixes discipline (World Lacrosse, July 1, 2026). It is a very small door.",
+            sourceLessonSlug: "road-to-la28",
+          },
+          {
+            prompt: "What is the confirmed qualification pathway to LA28?",
+            options: [
+              "A single world championship in 2028",
+              "Continental championships (Sept–Dec 2026) → World Lacrosse Sixes Championships (Oct 2027, sending five teams per gender including host USA) → a final Olympic qualifying tournament in early 2028 that completes the field of six",
+              "Direct invitation by the IOC",
+              "The top six teams in the world rankings qualify automatically",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Confirmed by World Lacrosse on July 1, 2026. The USA qualifies automatically as host, subject to participating in the Pan-American championships and the WLSC.",
+            sourceLessonSlug: "road-to-la28",
+          },
+          {
+            prompt: "What is the IOC's stated reason for not admitting the Haudenosaunee to the 2028 Games?",
+            options: [
+              "That the team isn't competitive enough",
+              "That IOC eligibility rules require a National Olympic Committee, which requires recognition as an independent state — recognition the Haudenosaunee do not have from the UN, though World Lacrosse has recognized them as a full member since 1985",
+              "That lacrosse isn't their traditional sport",
+              "That the roster deadline passed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "As of March 25, 2026 (Laskaris, Windspeaker). Claudia Jimerson of the Nationals: \"The barrier is structural, not athletic.\"",
+            sourceLessonSlug: "road-to-la28",
+          },
+          {
+            prompt: "What is the right way to state the Haudenosaunee Olympic-eligibility situation to someone else?",
+            options: [
+              "\"They're definitely in\"",
+              "\"They're definitely out, forever\"",
+              "\"As of [this date], the status was [this], and here is where I checked\" — because the question is live and the authoritative sources are the Nationals, the Onondaga Nation, World Lacrosse, and Indigenous news outlets",
+              "\"Nobody knows anything about it\"",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Dating your claim and naming your source is the single most valuable habit this course is trying to teach — in lacrosse and everywhere else.",
+            sourceLessonSlug: "road-to-la28",
+          },
+        ],
+      },
+    },
+    // ═══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — Opportunities: amateurs & entrepreneurs
+    // ═══════════════════════════════════════════════════════════════════════
+    {
+      slug: "ways-into-the-game",
+      title: "24 · Ways into the game that don't require being a star",
+      section: "6 · Opportunities: amateurs & entrepreneurs",
+      body: `Almost every conversation a young person has about a sport assumes one path: **be good enough to get picked.** That path is real, it is narrow, and — as Section 5 showed — it does not even end in a full-time living for most of the people who complete it.
+
+Here is the other map. Every item on it is available to you **now**, at your current skill level, and several of them pay.
+
+### 1. Get certified as a coach — possibly before you can drive
+
+USA Lacrosse runs a coach certification ladder — **Bronze, Silver, Gold, and Platinum** (formerly Levels 1–3). Bronze is the baseline required of all active coach members and focuses on safety and risk management. Membership for coaches 18 and older includes enrollment in the Level 1 program, and every coach member gets a background screening through the National Center for Safety Initiatives, renewed every two years (USA Lacrosse, n.d.-b).
+
+And here's the part most high-school students don't know: USA Lacrosse also runs a **Junior Coach** certification, aimed at teenagers — **a coach can be certified as a Junior Level 1 coach at 14** (USA Lacrosse, n.d.-c; confirm current requirements on the page, as certification programs get updated).
+
+Read that again. You can hold a real, named coaching certification while you are still in high school, and go coach eight-year-olds on Saturday mornings.
+
+### 2. Officiate (Lesson 18)
+
+Certified, paid per game, chronically short-handed, and it makes you a smarter player. This is the highest-leverage item on the list.
+
+### 3. Work the table
+
+Timer, scorer, shot-clock operator (Lesson 18). Often the first paid job at a lacrosse venue, and the fastest way to learn the rulebook cold.
+
+### 4. String sticks
+
+Stringing a lacrosse head — the mesh, the sidewall, the shooting strings — is a craft skill that determines how a stick throws. Every team has players who cannot string their own sticks and will pay someone who can. It costs almost nothing to learn, requires no facility, and it is a genuine, immediate, cash-in-hand micro-business you can start this month. (It's also the shallow end of a much deeper craft tradition — Lesson 26.)
+
+### 5. Film and stats
+
+Coaches want film. Recruiters want film. Parents want film. Learn to shoot a game from a good angle, cut a clean highlight reel, and keep accurate stats, and you will not lack for people who want to pay you. It's also one of the few roles where the skills transfer straight into a career that has nothing to do with lacrosse.
+
+### 6. Run wall-ball for younger kids
+
+You need a wall, a bucket of balls, and an hour. Charge a small amount, or run it free at a rec center and build something. **A person who consistently shows up and organizes other people is a rarer and more valuable thing than a person with a good shot** — a sentence worth taping to your wall regardless of what you end up doing with your life.
+
+:::reveal Name three roles in lacrosse that pay, that a high-school student can hold right now. ||| Any three of: certified official (USA Lacrosse certification, paid per game, chronic shortage); table crew (timer, scorer, shot-clock operator); certified coach — USA Lacrosse's Junior Coach certification starts as young as 14; stick stringer; film and stats; running wall-ball sessions for younger players.
+
+## Sources
+- USA Lacrosse. (n.d.-b). *Coach certification*. https://www.usalacrosse.com/coach-certification
+- USA Lacrosse. (n.d.-c). *Junior coach certification*. https://www.usalacrosse.com/junior-coach-certification`,
+      recallContent: [
+        {
+          prompt: "How many teams will play Olympic lacrosse per gender at LA28, and in which discipline?",
+          answer: "Six per gender, in Sixes.",
+        },
+        {
+          prompt: "As of the reporting verified in this course, can the Haudenosaunee compete at LA28?",
+          answer:
+            "As of March 25, 2026: no. The IOC requires a National Olympic Committee, which requires recognition as an independent state; the Haudenosaunee have World Lacrosse membership (since 1985) but not UN statehood, and no exception has been granted. Check the current status — it's live.",
+        },
+      ],
+    },
+    {
+      slug: "building-a-program",
+      title: "25 · Building a program: the honest economics",
+      section: "6 · Opportunities: amateurs & entrepreneurs",
+      body: `Lacrosse is a growing sport in a lot of places that don't have it yet. That is the entrepreneurial opening — and also a warning, because most people who "start a lacrosse program" start a club that costs families money and folds in two years. Here is how the economics actually work.
+
+### The three models
+
+**1. The school program.** Cheapest for families, hardest to start. It needs a school that will sanction it, a coach, a field, and enough equipment for a roster. Its advantage is enormous: it reaches kids who would never seek out a club, and it's usually free or nearly free to play.
+
+**2. The rec/youth league.** A community organization, often volunteer-run, playing local games. Modest registration fee, borrowed fields, loaner equipment. This is where most players in a new lacrosse market actually come from.
+
+**3. The club/travel team.** Paid coaching, tournament travel, showcase events. It is the recruiting pipeline (Lesson 20). It is also, honestly, a **business** — one whose customers are anxious parents and whose product is partly hope. Some clubs are outstanding. Some sell access they cannot deliver. If you build one, decide early which you're going to be.
+
+### What it actually costs to put a kid on a field
+
+Men's field lacrosse requires a helmet with facemask, gloves, and a stick, plus shoulder and arm protection — **before the first practice** (World Lacrosse, 2025a, Rule 17.1). Women's field requires a stick and a mouthguard, and, in NCAA and most U.S. school play, eye protection (NCAA, 2026a, Rule 2, Sec. 18); a goalkeeper in either game needs a helmet, throat guard and chest protector. Add cleats. Add a field. Add a registration fee. Add — if it's a club — travel.
+
+This is why the sport's participation splits along income lines the way Section 5 described (Aspen Institute Project Play, n.d.). **Equipment is the gate.** Any program that wants to be genuinely open has to answer the equipment question before it answers anything else.
+
+### The five things a program actually needs
+
+1. **A field.** School fields, parks-department fields, a lined soccer pitch. This is a phone call, not a construction project.
+2. **Equipment that families don't buy.** A loaner bin is the single highest-leverage thing a new program can build. Used gear, donated gear, grant-funded gear, outgrown gear from an established club nearby.
+3. **Certified, background-checked coaches.** USA Lacrosse membership includes the certification path and a background screening through the National Center for Safety Initiatives, renewed every two years (USA Lacrosse, n.d.-b). This is not paperwork — it is the reason parents will trust you with their children.
+4. **Officials.** No officials, no games. Which is why growing a program and growing the local officials' pool are the same project (Lesson 18).
+5. **A reason to keep showing up.** Kids stay for their friends and for a coach who knows their name. They do not stay for a logo.
+
+### Where the actual money is (and isn't)
+
+The romantic version — you start a club, it grows, you turn pro — is rare. The realistic versions are ordinary and workable: **paid coaching** (school, club, camps, private sessions), **running camps and clinics** in the off-season, **officiating** at volume, **equipment services**, and **program administration** for a league that has grown past what volunteers can manage. None of these will make you rich. Several of them will pay you to spend your life around a game you love, which is not nothing, and is more than most people get.
+
+:::reveal What is the single highest-leverage thing a new lacrosse program can build, and why? ||| A loaner-equipment bin. Equipment is the gate — men's field requires helmet, gloves, stick and arm/shoulder protection before the first practice; women's requires a stick, mouthguard and (in NCAA/most U.S. school play) eye protection. A program that removes the equipment cost removes the biggest barrier to who can walk on the field.
+
+## Sources
+- Aspen Institute Project Play. (n.d.). *Youth sports facts: Challenges*. https://projectplay.org/youth-sports/facts/challenges
+- National Collegiate Athletic Association. (2026a). *2026 and 2027 NCAA women's lacrosse rules*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/PRWLA_RulesBook.pdf
+- USA Lacrosse. (n.d.-b). *Coach certification*. https://www.usalacrosse.com/coach-certification
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf`,
+      recallContent: [
+        {
+          prompt: "At what age can someone hold a USA Lacrosse Junior Coach certification?",
+          answer: "As young as 14 — a real, named coaching credential you can hold while still in high school. (Confirm current requirements on USA Lacrosse's page.)",
+        },
+        {
+          prompt: "What are USA Lacrosse's coach certification levels, and what does membership include?",
+          answer:
+            "Bronze, Silver, Gold and Platinum (formerly Levels 1–3), with Bronze as the safety-and-risk baseline for all active coach members. Membership includes the certification path and a background screening through the National Center for Safety Initiatives, renewed every two years.",
+        },
+      ],
+    },
+    {
+      slug: "the-business-side",
+      title: "26 · The business side: sticks, gear, camps, and media",
+      section: "6 · Opportunities: amateurs & entrepreneurs",
+      body: `Every sport has an economy around it. Lacrosse's is small enough that an individual can still find a real gap in it — which is exactly why it's interesting.
+
+### Stringing, and the craft behind it
+
+Start with the obvious one: **stringing heads for money.** Low startup cost, immediate demand, no facility. Learn mesh, sidewall, shooters, pocket placement, and learn the pocket-depth rules well enough that you never string an illegal stick (Lesson 2 — officials check).
+
+Then look at the deep end of the same craft. A traditional Haudenosaunee wooden stick takes years: select hickory, split, steam, bend, clamp, cure, carve, string. Onondaga's **Alf Jacques** made them for roughly half a century and taught the game's history alongside them; he was called "one of the greatest ambassadors the sport has ever seen" (Onondaga Nation, 2023). This is a living Indigenous craft, held by a small number of makers, sitting alongside a plastic mass-manufacturing industry that mostly ignores it.
+
+If you are not Haudenosaunee, the honest way into that world is as a **customer, a student, and an advocate** — not as someone who learns the shape and sells it. Buy from Native makers. Learn who they are. Understand that the wooden stick means something before you handle one like inventory.
+
+### Equipment and the second-hand market
+
+Gear is expensive (Lesson 25) and kids outgrow it every year. That combination is a business and a public good at the same time: **used-equipment resale, cleaning and refurbishing, gear swaps, and consignment.** It is unglamorous and it is genuinely needed, and every dollar it takes off a family's cost is a kid who gets to play.
+
+### Camps, clinics, and coaching
+
+Off-season camps, position-specific clinics (goalkeeping, face-off/draw, defense), skills sessions, wall-ball groups. The barrier is trust, not talent: certification and a background check (USA Lacrosse, n.d.-b) plus a track record. Start small, run one clinic well, and let it grow by word of mouth.
+
+### Media
+
+The sport is under-covered relative to how fast it's growing, and the tools are in your pocket. Game film, highlight reels, a local-scene newsletter, a podcast, photography, a YouTube channel that explains rules to new parents. The PLL and WLL now put their games on ESPN networks (USA Lacrosse, 2025) — a signal that the audience is real and growing, and that the amateur layer beneath it (high-school and club coverage) is largely unbuilt.
+
+### The rule that governs all of it
+
+**Solve a problem someone actually has.** Nobody needs another lacrosse apparel brand. Plenty of people need: a stick strung properly by Thursday; a used helmet that fits an eleven-year-old; a clinic for kids whose school has no team; an official who shows up on time; a highlight reel that a college coach will actually watch; a wooden stick made by someone who knows what it means. **Every one of those is a business, and none of them requires you to be great at lacrosse.**
+
+:::reveal If you are not Haudenosaunee, what is the honest way to engage with traditional wooden stick-making? ||| As a customer, a student, and an advocate — buy from Native makers, learn who they are, and understand that the wooden stick carries meaning before you handle one like inventory. Not by learning the shape and selling it.
+
+## Sources
+- Onondaga Nation. (2023). *'National treasure of the Haudenosaunee' Alfie Jacques dies at 74*. https://www.onondaganation.org/news/2023/national-treasure-of-the-haudenosaunee-alfie-jacques-dies-at-74/
+- USA Lacrosse. (n.d.-b). *Coach certification*. https://www.usalacrosse.com/coach-certification
+- USA Lacrosse. (2025, September 10). *Women's Lacrosse League expands to full season schedule with playoffs*. https://www.usalacrosse.com/magazine/professional/wll/womens-lacrosse-league-expands-full-season-schedule-playoffs`,
+      recallContent: [
+        {
+          prompt: "Name three of the five things a new lacrosse program actually needs.",
+          answer:
+            "Any three of: a field (a phone call, not a construction project); loaner equipment families don't have to buy; certified, background-checked coaches; officials (no officials, no games); and a reason for kids to keep showing up — friends and a coach who knows their name.",
+        },
+        {
+          prompt: "Why does equipment matter so much to who gets to play lacrosse?",
+          answer:
+            "Because it's the gate. Men's field requires a helmet, gloves, stick and arm/shoulder protection before the first practice; goalkeepers need a helmet, throat guard and chest protector. Add cleats, fees and travel, and the sport's participation splits along income lines.",
+        },
+      ],
+    },
+    {
+      slug: "the-access-problem",
+      title: "27 · The access problem, named honestly",
+      section: "6 · Opportunities: amateurs & entrepreneurs",
+      body: `Here is the thing a promotional lacrosse course would leave out.
+
+**Lacrosse is an Indigenous game that became, in its organized American form, one of the whitest and most expensive sports in the country.** Not by accident, and not only by economics — Section 1 showed you the 1880 rule that pushed Indigenous players out of the sport's championship structure for over a century (Downey, 2018).
+
+### The numbers, and how to get current ones
+
+A peer-reviewed study of NCAA participation data reported that white athletes made up **91.4% of male lacrosse players and 90.6% of female lacrosse players**, with Black athletes at 2.2% and 2.4% respectively (Fultz & Chen, 2012, using NCAA data). Those figures are more than a decade old, and the sport has changed somewhat since — which is exactly why you should not take them as current.
+
+**Go get the current ones yourself.** The NCAA publishes a **Demographics Database** that lets you break participation down by sport, division, and race/ethnicity, updated regularly (NCAA, n.d.-a). Look up lacrosse. Look up a sport you'd expect to be more diverse. Compare. That's a twenty-minute exercise that will teach you more than any paragraph here can.
+
+### Why it's like this
+
+Three causes, all real, none of them "kids in some neighborhoods don't like lacrosse":
+
+1. **Equipment cost** (Lesson 25) — a gate at the door.
+2. **The travel-club pipeline** (Lesson 20) — recruiting happens where the money already is. Project Play: travel is the costliest feature of youth sports, and participation splits sharply by household income (Aspen Institute Project Play, n.d.).
+3. **Geography and history** — the sport concentrated in a handful of regions and a set of schools, and stayed there. Plus the exclusion in Section 1, whose effects don't evaporate because a rule was repealed.
+
+### What people are actually doing about it
+
+- **School-based programs that go to the kids.** **Harlem Lacrosse** places full-time program directors *inside* schools, running not just lacrosse but "daily wrap-around academic support, mentoring, leadership training, college readiness, career exploration [and] admissions counseling," across New York, Boston, Los Angeles, Baltimore, and Philadelphia (Harlem Lacrosse, n.d.). The model is the interesting part: the program comes to the school, not the other way round, and the sport is the hook rather than the point.
+- **Loaner-equipment programs** that remove the gate entirely.
+- **Sixes.** Don't miss this: World Lacrosse's newest discipline needs a smaller field, fewer players, and no long sticks or face-off specialists (World Lacrosse, 2026b). A discipline explicitly designed to lower the cost of entry is an access intervention wearing an Olympic uniform.
+- **Indigenous-led lacrosse**, on its own terms — the Haudenosaunee Nationals, wooden-stick festivals, community programs. Support looks like showing up, buying from Native makers, and getting the history right when you tell it.
+
+### The entrepreneurial reading of all this
+
+Every barrier in this lesson is also an opening. A sport with an equipment gate needs equipment programs. A sport with a travel-club pipeline needs alternatives to it. A sport that is 90% one demographic in a country that is not has an enormous unserved population and a growing one — and the people who build the on-ramps will be the ones who shape what the sport becomes over the next twenty years.
+
+**That is a more interesting job than being a professional lacrosse player, and — as Section 5 showed — a considerably better-paid one.**
+
+:::reveal What are the three real causes of lacrosse's access problem? ||| Equipment cost (a gate at the door); the travel-club recruiting pipeline (recruiting happens where the money already is); and geography plus history — including the 1880 exclusion of Indigenous players from championship competition, whose effects didn't evaporate when the rule was repealed. Notably absent: any claim that some kids "aren't interested."
+
+## Sources
+- Aspen Institute Project Play. (n.d.). *Youth sports facts: Challenges*. https://projectplay.org/youth-sports/facts/challenges
+- Downey, A. (2018). *The Creator's game: Lacrosse, identity, and Indigenous nationhood*. UBC Press. https://www.ubcpress.ca/the-creators-game
+- Fultz, M., & Chen, S. (2012). A close look at the diversity of lacrosse. *KAHPERD Journal, 50*(1), 13–18. https://scholarworks.moreheadstate.edu/msu_faculty_research/309/
+- Harlem Lacrosse. (n.d.). *Harlem Lacrosse*. https://www.harlemlacrosse.org/
+- National Collegiate Athletic Association. (n.d.-a). *NCAA demographics database*. https://www.ncaa.org/sports/2018/12/13/ncaa-demographics-database.aspx
+- World Lacrosse. (2026b). *2026–2028 Sixes lacrosse official playing rules* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2026/02/WL-26-28-Sixes-Rule-Book_Feb26.pdf`,
+      recallContent: [
+        {
+          prompt: "What's the rule that governs any lacrosse business idea?",
+          answer:
+            "Solve a problem someone actually has. Nobody needs another apparel brand; plenty of people need a stick strung by Thursday, a used helmet that fits, a clinic for kids with no school team, an official who shows up on time, or a highlight reel a coach will actually watch.",
+        },
+        {
+          prompt: "Why is the second-hand equipment market both a business and a public good?",
+          answer:
+            "Gear is expensive and kids outgrow it every year. Resale, refurbishing, swaps and consignment take cost off families — and every dollar removed is a kid who gets to play.",
+        },
+      ],
+    },
+    {
+      slug: "lacrosse-exercise",
+      title: "28 · Practice: the vocabulary that makes you sound like you belong",
+      section: "6 · Opportunities: amateurs & entrepreneurs",
+      body: "Fill in the missing term. One or two words each; spelling and capitalization are checked forgivingly. These are the terms that recur across the whole course — the rules, the strategy, the history, and the business.",
+      exercise: {
+        instructions:
+          "Type the term the description points to. If you're stuck, the lesson that teaches it is named in the explanation after you check.",
+        items: [
+          {
+            prompt:
+              "Because lacrosse was given by the Creator, is played for the Creator, and is known to have healing power, the Onondaga Nation also call it the ________ Game.",
+            answer: "Medicine",
+            accept: ["medicine", "medicine game", "the medicine game"],
+            explanation:
+              "Onondaga Nation (n.d.). It is also called the Creator's Game. (Lesson 1)",
+          },
+          {
+            prompt:
+              "The Montreal dentist who wrote down the first modern rules from 1860 and drove the founding of the National Lacrosse Association in 1867 was William George ________.",
+            answer: "Beers",
+            accept: ["beers", "w.g. beers"],
+            explanation:
+              "He codified an existing Indigenous game — and simultaneously argued that \"the Indian never can play as scientifically as the best white players.\" (Lesson 3)",
+          },
+          {
+            prompt:
+              "The national teams of the Haudenosaunee Confederacy — a full member of World Lacrosse since 1985 — are called the Haudenosaunee ________.",
+            answer: "Nationals",
+            accept: ["nationals", "haudenosaunee nationals"],
+            explanation:
+              "Known as the Iroquois Nationals until June 2022. The only Indigenous nation admitted to international competition by a sport's world governing body. (Lesson 4)",
+          },
+          {
+            prompt:
+              "In World Lacrosse men's field, a full team of ten is 1 goalkeeper, 3 defenders, 3 midfielders and 3 ________.",
+            answer: "attackers",
+            accept: ["attacker", "attack", "attackmen", "attackers/attack"],
+            explanation: "World Lacrosse (2025a), Rule 19.1. (Lesson 6)",
+          },
+          {
+            prompt:
+              "The women's rule forbidding a defender from blocking or guarding the goal with any part of their body to obstruct the shooting lane is called ________ ________.",
+            answer: "shooting space",
+            accept: ["shooting-space", "the shooting space"],
+            explanation:
+              "World Lacrosse (2025b), Rule 20.A.19 — it exists because obstructing that space \"denies the attacking team the opportunity to shoot safely.\" (Lesson 7)",
+          },
+          {
+            prompt:
+              "The six-a-side discipline, played on a 70 m × 36 m field with four 8-minute quarters and a 30-second shot clock, that will be played at the 2028 Olympics is called ________.",
+            answer: "Sixes",
+            accept: ["sixes", "lacrosse sixes", "six"],
+            explanation: "World Lacrosse (2026b). Designed to lower cost and make the sport globally viable. (Lesson 9)",
+          },
+          {
+            prompt:
+              "The space directly behind the goal — playable because the goal sits 12 m off the end line — is traditionally called ________.",
+            answer: "X",
+            accept: ["x", "behind the goal", "the x"],
+            explanation:
+              "The best attacking real estate on the field: your defender's back is to their own cage and you can attack from either side. (Lesson 12)",
+          },
+          {
+            prompt:
+              "When a defender leaves their own player to stop a ball carrier who has beaten their defender, that's called a ________.",
+            answer: "slide",
+            accept: ["slide", "sliding"],
+            explanation:
+              "And it forces the rest of the defense to rotate, because it always leaves someone open. (Lesson 13)",
+          },
+          {
+            prompt:
+              "Moving the ball out of your own defensive end after winning it is called a ________; the opponent's pressure on it is called a ride.",
+            answer: "clear",
+            accept: ["clear", "clearing"],
+            explanation: "A turnover during a clear hands the opponent the ball near your goal with your defense out of position. (Lesson 14)",
+          },
+          {
+            prompt:
+              "In World Lacrosse men's field, the penalty for a major foul is a suspension of 1, 2, or 3 ________.",
+            answer: "minutes",
+            accept: ["minute", "minutes", "mins"],
+            explanation:
+              "Rule 68.1 — at the officials' judgment of severity and intent. That's the extra-man offense. (Lesson 14)",
+          },
+          {
+            prompt:
+              "USA Lacrosse calls officials \"the third ________ on the field.\"",
+            answer: "team",
+            accept: ["team"],
+            explanation:
+              "Certified, paid per game, chronically short-handed — the most accessible paid role in the sport. (Lesson 18)",
+          },
+          {
+            prompt:
+              "The women's professional league launched by the PLL, which played its first full regular season in 2026, is the ________ ________ ________ (abbreviated WLL).",
+            answer: "Women's Lacrosse League",
+            accept: ["womens lacrosse league", "women's lacrosse league", "wll"],
+            explanation:
+              "Four teams — Boston Guard, New York Charging, Maryland Charm, California Palms — and it switched from sixes to 10-v-10 for 2026. (Lesson 21)",
+          },
+          {
+            prompt:
+              "The IOC's stated reason the Haudenosaunee cannot currently enter the Olympics is that they lack a National Olympic ________.",
+            answer: "Committee",
+            accept: ["committee", "noc"],
+            explanation:
+              "An NOC requires recognition as an independent state. \"The barrier is structural, not athletic\" — Claudia Jimerson. (Lesson 22)",
+          },
+          {
+            prompt:
+              "USA Lacrosse's certification aimed at teen coaches — available from age 14 — is the ________ Coach certification.",
+            answer: "Junior",
+            accept: ["junior", "junior coach"],
+            explanation: "A real, named coaching credential you can hold while still in high school. (Lesson 24)",
+          },
+          {
+            prompt:
+              "The single highest-leverage thing a new lacrosse program can build, because equipment is the gate, is a ________ bin (or program) of gear families don't have to buy.",
+            answer: "loaner",
+            accept: ["loaner", "loan", "equipment", "loaner equipment"],
+            explanation:
+              "Remove the equipment cost and you remove the biggest barrier to who can walk onto the field. (Lessons 25 and 27)",
+          },
+        ],
+      },
+    },
+    {
+      slug: "quiz-opportunities",
+      title: "29 · Check your understanding: opportunities",
+      section: "6 · Opportunities: amateurs & entrepreneurs",
+      body: "The final graded quiz. Passing score is 70%.",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "What is the minimum age for a USA Lacrosse Junior Coach certification?",
+            options: ["18", "16", "14", "There is no junior pathway"],
+            correctIndex: 2,
+            explanation:
+              "You can hold a real, named coaching credential while still in high school (USA Lacrosse, n.d.-c — confirm current requirements on their page).",
+            sourceLessonSlug: "ways-into-the-game",
+          },
+          {
+            prompt: "What are USA Lacrosse's coach certification levels?",
+            options: [
+              "Beginner, Intermediate, Advanced",
+              "Bronze, Silver, Gold, Platinum (formerly Levels 1–3), with Bronze as the safety/risk-management baseline for all active coach members",
+              "A, B, and C licences",
+              "There is only one level",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Membership also includes a background screening through the National Center for Safety Initiatives, renewed every two years.",
+            sourceLessonSlug: "ways-into-the-game",
+          },
+          {
+            prompt: "Which of these is described as the highest-leverage paid role available to a high-school student in lacrosse?",
+            options: ["Playing on a travel club team", "Officiating", "Selling apparel", "Managing a college roster"],
+            correctIndex: 1,
+            explanation:
+              "Certified, paid per game, chronically short-handed — and it makes you a smarter player, because you have to know exactly where every line is.",
+            sourceLessonSlug: "ways-into-the-game",
+          },
+          {
+            prompt: "Why is stick stringing a realistic micro-business for a student?",
+            options: [
+              "It requires a workshop and expensive machinery",
+              "It costs almost nothing to learn, requires no facility, and every team has players who can't string their own sticks and will pay someone who can",
+              "It's licensed by World Lacrosse",
+              "It only pays at professional level",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Just learn the pocket-depth rules well enough never to string an illegal stick — officials check.",
+            sourceLessonSlug: "ways-into-the-game",
+          },
+          {
+            prompt: "Which statement about the three program models is accurate?",
+            options: [
+              "School programs are the most expensive for families",
+              "Club/travel teams are the cheapest way to play",
+              "School programs are cheapest for families and reach kids who'd never seek out a club; club/travel teams are a business whose product is partly hope",
+              "Rec leagues are only for elite players",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Some clubs are outstanding; some sell access they cannot deliver. If you build one, decide early which you're going to be.",
+            sourceLessonSlug: "building-a-program",
+          },
+          {
+            prompt: "What is the single highest-leverage thing a new lacrosse program can build?",
+            options: [
+              "A logo and uniforms",
+              "A loaner-equipment bin — because equipment is the gate",
+              "A social media account",
+              "A championship team",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Men's field requires helmet, gloves, stick and arm/shoulder protection before the first practice. Remove that cost and you remove the biggest barrier to who can play.",
+            sourceLessonSlug: "building-a-program",
+          },
+          {
+            prompt: "Why are growing a program and growing the local officials' pool the same project?",
+            options: [
+              "Because officials also coach",
+              "Because no officials means no games",
+              "Because officials pay the league fees",
+              "They're unrelated",
+            ],
+            correctIndex: 1,
+            explanation: "A program with no officials has practices, not a season.",
+            sourceLessonSlug: "building-a-program",
+          },
+          {
+            prompt: "What does the course say about where the realistic money is in lacrosse?",
+            options: [
+              "Playing professionally",
+              "Paid coaching, camps and clinics, officiating at volume, equipment services, and program administration — none of which will make you rich, but several of which will pay you to spend your life around the game",
+              "Sponsorship deals for amateur players",
+              "There is no money in lacrosse at any level",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The romantic version — start a club, turn pro — is rare. The ordinary versions are workable, and more than most people get.",
+            sourceLessonSlug: "building-a-program",
+          },
+          {
+            prompt: "If you are not Haudenosaunee, what's the honest way to engage with traditional wooden stick-making?",
+            options: [
+              "Learn the shape and start selling wooden sticks",
+              "As a customer, a student, and an advocate — buy from Native makers, learn who they are, and understand the stick carries meaning before you handle one like inventory",
+              "Avoid the subject entirely",
+              "Mass-produce a plastic version",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It's a living Indigenous craft held by a small number of makers, sitting alongside a mass-manufacturing industry that mostly ignores it.",
+            sourceLessonSlug: "the-business-side",
+          },
+          {
+            prompt: "What's the rule the course gives for evaluating any lacrosse business idea?",
+            options: [
+              "Go where the biggest market is",
+              "Solve a problem someone actually has — nobody needs another apparel brand; plenty of people need a stick strung by Thursday or a used helmet that fits",
+              "Only start something if you were an elite player",
+              "Copy what a successful club is already doing",
+            ],
+            correctIndex: 1,
+            explanation: "And none of those problems requires you to be great at lacrosse.",
+            sourceLessonSlug: "the-business-side",
+          },
+          {
+            prompt: "What did a peer-reviewed study of NCAA data (Fultz & Chen, 2012) report about lacrosse participation?",
+            options: [
+              "That lacrosse was the most racially diverse NCAA sport",
+              "That white athletes made up 91.4% of male and 90.6% of female NCAA lacrosse players, with Black athletes at 2.2% and 2.4%",
+              "That participation was evenly split across all groups",
+              "That the NCAA does not collect this data",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Those figures are over a decade old — which is why the lesson tells you to go pull current numbers from the NCAA's own Demographics Database rather than trusting a stale paragraph.",
+            sourceLessonSlug: "the-access-problem",
+          },
+          {
+            prompt: "Which of these is NOT one of the three real causes of lacrosse's access problem?",
+            options: [
+              "Equipment cost",
+              "The travel-club recruiting pipeline",
+              "Geography and history, including the 1880 exclusion of Indigenous players",
+              "Kids in some neighborhoods not being interested in the sport",
+            ],
+            correctIndex: 3,
+            explanation:
+              "That last one is the explanation people reach for when they haven't looked at the first three.",
+            sourceLessonSlug: "the-access-problem",
+          },
+          {
+            prompt: "What is distinctive about the Harlem Lacrosse model?",
+            options: [
+              "It runs elite travel tournaments",
+              "It places full-time program directors inside schools, delivering academic support, mentoring, leadership training and college/career counseling alongside lacrosse — the program comes to the school, not the other way round",
+              "It is a professional league",
+              "It manufactures equipment",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It operates in New York, Boston, Los Angeles, Baltimore and Philadelphia. The sport is the hook rather than the point.",
+            sourceLessonSlug: "the-access-problem",
+          },
+          {
+            prompt: "In what sense is the Sixes discipline an access intervention?",
+            options: [
+              "It isn't — it's purely a TV format",
+              "It needs a smaller field, fewer players, and no long sticks or face-off specialists — a discipline explicitly designed to lower the cost of entry, wearing an Olympic uniform",
+              "It bans expensive equipment brands",
+              "It is free to play by rule",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Field lacrosse's big pitch, big roster and specialist gear quietly favor countries and communities that already have infrastructure. Sixes strips that out.",
+            sourceLessonSlug: "the-access-problem",
+          },
+          {
+            prompt: "What is the entrepreneurial reading of lacrosse's access problem?",
+            options: [
+              "That the sport is a bad market and should be avoided",
+              "That every barrier is also an opening — a sport with an equipment gate needs equipment programs, a sport with a travel-club pipeline needs alternatives, and a sport that is 90% one demographic has an enormous unserved population",
+              "That someone else will fix it eventually",
+              "That the only fix is more scholarships",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The people who build the on-ramps will shape what the sport becomes over the next twenty years — a more interesting job than playing professionally, and a better-paid one.",
+            sourceLessonSlug: "the-access-problem",
+          },
+        ],
+      },
+    },
   ],
 };
