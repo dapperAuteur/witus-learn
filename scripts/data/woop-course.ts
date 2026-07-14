@@ -407,5 +407,450 @@ This is also, by the way, the honest reason that a course like this one is not a
         ],
       },
     },
+
+    // ───────────────── SECTION 2 · MENTAL CONTRASTING: THE ENGINE ─────────────────
+    {
+      slug: "mcii-how-mental-contrasting-works",
+      title: "6 · Mental contrasting: putting the future and the obstacle side by side",
+      section: "Section 2 · Mental contrasting: the engine",
+      recallContent: [
+        {
+          prompt: "What is the intention-behavior gap, and how big is it?",
+          answer:
+            "Intentions are only loosely attached to behavior. Webb and Sheeran (2006) found a medium-to-large change in intention (d = 0.66) produced only a small-to-medium change in behavior (d = 0.36).",
+        },
+        {
+          prompt: "Which two problems does MCII solve, and with which tool each?",
+          answer:
+            "The goal-setting problem (do you really commit?), solved by mental contrasting. And the goal-striving problem (do you act in the moment?), solved by implementation intentions.",
+        },
+      ],
+      body: `Mental contrasting is two mental acts, performed in one sitting, **in a fixed order**:
+
+1. **Imagine the desired future.** Not the steps, not the plan. The *outcome*, and specifically the best thing about it. Make it vivid. Let yourself feel it.
+2. **Immediately confront the obstacle inside you that stands in the way.** Also vivid, also concrete, also felt.
+
+That is it. No affirmations, no journaling ritual, no hour. Two elaborations, in that order, done properly.
+
+**Why the order is load-bearing.** Reverse it (obstacle first, then future) and the effect weakens or disappears in the experimental work: contrasting the *reality* with the future is not the same operation as contrasting the *future* with the reality (Oettingen, 2012). The reason is directional. When the future comes first, the obstacle arrives as *the thing standing between you and something you can already taste*, and it acquires urgency from the future you just built. When the obstacle comes first, the lovely future arrives afterward as consolation, an escape from the grim present, which is just indulging with extra steps.
+
+**What the collision actually does.** Oettingen, Pak, and Schnetter (2001) ran the study that made this a theory rather than a technique. Participants were led into mental contrasting, or into indulging (future only), or into dwelling (reality only). Then the researchers measured how committed they were to the goal. And the finding was not "mental contrasting produces more commitment." It was stranger and much more useful than that:
+
+- People who **mentally contrasted** ended up with commitment that **tracked their expectations of success**. High expectations, strong commitment. Low expectations, weak commitment.
+- People who **indulged** or **dwelled** ended up with **middling commitment either way**, largely disconnected from whether they were actually likely to succeed.
+
+Read that twice, because most summaries of this research get it wrong. **Mental contrasting is not a commitment amplifier. It is a commitment *selector*.** It does not make you want everything more. It makes you want the reachable things more and the unreachable things less, by forcing you to consult the one thing indulging lets you skip: your actual track record.
+
+That is why the method is *honest*, and it is also why some people find it uncomfortable. Run it on a goal you secretly know you are not going to do, and it will not manufacture enthusiasm for you. It will tell you.
+
+**The mechanism, in one sentence.** Contrasting the vivid future against the vivid obstacle activates your expectations, and the activated expectations then do the deciding (Oettingen, 2012; Oettingen et al., 2001). Lesson 8 is about what happens when those expectations come back low, which is the most misunderstood part of this entire method.
+
+:::reveal Mental contrasting is often sold as a way to boost motivation. Based on Oettingen, Pak, and Schnetter (2001), what is it actually doing? ||| It is **selecting**, not amplifying. Mental contrasting makes commitment **track your expectations of success**: strong when expectations are high, weak when they are low. Indulging and dwelling produce middling commitment either way, disconnected from your real odds. So it does not make you want everything more; it makes you want the *reachable* things more, by forcing you to consult a track record that indulging lets you skip.
+
+## Sources
+- Oettingen, G. (2012). Future thought and behaviour change. *European Review of Social Psychology, 23*(1), 1-63. https://doi.org/10.1080/10463283.2011.643698
+- Oettingen, G., Pak, H., & Schnetter, K. (2001). Self-regulation of goal setting: Turning free fantasies about the future into binding goals. *Journal of Personality and Social Psychology, 80*(5), 736-753. https://doi.org/10.1037/0022-3514.80.5.736`,
+    },
+    {
+      slug: "mcii-the-inner-obstacle",
+      title: "7 · The obstacle is inside you (this is where most people fail)",
+      section: "Section 2 · Mental contrasting: the engine",
+      recallContent: [
+        {
+          prompt: "What are the two acts of mental contrasting, and why does the order matter?",
+          answer:
+            "First elaborate the desired future vividly, then immediately elaborate the inner obstacle. Reversed, the effect weakens: the future must come first so the obstacle arrives as the thing standing between you and something you can already taste.",
+        },
+        {
+          prompt: "Is mental contrasting a commitment amplifier or a commitment selector?",
+          answer:
+            "A selector. It makes commitment track your expectations of success (strong when high, weak when low), rather than raising commitment across the board (Oettingen, Pak, & Schnetter, 2001).",
+        },
+      ],
+      body: `If you take one practical thing from this course, take this one. **The obstacle step asks for an obstacle *in you*, and almost everybody, on their first try, names something else.**
+
+Watch what people produce when you ask them what stands between them and their goal:
+
+| What they say | What it actually is |
+| --- | --- |
+| "I don't have enough time" | A circumstance, and usually a fiction |
+| "The job market is terrible" | A condition of the world |
+| "My manager never gives me the good projects" | Another person |
+| "I need a better laptop first" | A purchase |
+| "I get home and I am so tired that I open my phone instead" | **An obstacle** |
+
+Only the last one qualifies. The test is simple and it is unforgiving: **an inner obstacle is a thought, feeling, habit, or behavior of yours that you could, in principle, do something about.** It lives on your side of the line.
+
+**Why the method insists on this.** Because of what happens next. Section 3 will have you build an if-then plan whose trigger is the obstacle, and **you cannot build a trigger out of the job market.** A trigger has to be something you will actually detect, in the moment, in your own body or your own behavior. "If the economy is bad, then I will..." is not a plan. "If I get home and reach for my phone, then I will put it in the drawer and open the application instead" is.
+
+The obstacle step is not a complaint box. It is a **specification for a trigger**, and it will be worthless to you if you fill it with things you cannot act on.
+
+**How to find the real one.** Ask, in this order:
+
+1. What actually happened the last few times I did not do this? Not why in the abstract. What *happened*, in the last concrete instance.
+2. Where exactly did it break down? Be embarrassingly specific: the time of day, the room, the feeling, the thing you did instead.
+3. Ask "and what is stopping me from doing that?" repeatedly, and **keep going until the answer is about you.** If the answer names the world, you have not arrived yet.
+
+Most inner obstacles turn out to be one of a small handful: **a feeling** (dread, boredom, anxiety, resentment, the fear it will be bad), **a habit** (opening the app, going to the fridge, saying yes), or **a state** (tired, hungry, distracted, overwhelmed). If your obstacle does not reduce to something in that family, keep digging.
+
+**One caution.** "I am lazy" and "I lack discipline" are not inner obstacles. They are insults, and they are useless, because they are not detectable in the moment and you cannot build a trigger from them. Laziness is not a thing that happens to you at 6:40 pm in the kitchen. Reaching for your phone is.
+
+:::reveal "The market is bad and I don't have time" is not an inner obstacle. What is wrong with it, in terms of what happens in Section 3? ||| It names the world, not you, and the obstacle step exists to **specify a trigger** for an if-then plan. You cannot detect "the market" in the moment, so you cannot build a plan on it. An inner obstacle is a thought, feeling, habit, or behavior of yours that you could act on, and it must be concrete enough to notice when it shows up ("I get home and reach for my phone"). Note also that "I am lazy" fails the same test: it is an insult, not a detectable event.
+
+## Sources
+- Oettingen, G. (2012). Future thought and behaviour change. *European Review of Social Psychology, 23*(1), 1-63. https://doi.org/10.1080/10463283.2011.643698
+- Oettingen, G., Pak, H., & Schnetter, K. (2001). Self-regulation of goal setting: Turning free fantasies about the future into binding goals. *Journal of Personality and Social Psychology, 80*(5), 736-753. https://doi.org/10.1037/0022-3514.80.5.736`,
+    },
+    {
+      slug: "mcii-expectations-and-letting-go",
+      title: "8 · The boundary condition: when the method tells you to quit",
+      section: "Section 2 · Mental contrasting: the engine",
+      recallContent: [
+        {
+          prompt: "What is the test for whether something counts as an inner obstacle?",
+          answer:
+            "It must be a thought, feeling, habit, or behavior of YOURS that you could in principle act on, and it must be concrete enough to detect in the moment. Circumstances, other people, and insults like 'I am lazy' all fail.",
+        },
+        {
+          prompt: "Why must the obstacle be inner, in terms of what comes next in the method?",
+          answer:
+            "Because the obstacle becomes the TRIGGER of an if-then plan. A trigger has to be something you can actually detect in the moment, so it cannot be the economy or another person.",
+        },
+      ],
+      body: `Here is the part of the method that self-help books quietly delete, and it is the part that makes it a science rather than a pep talk.
+
+**When your expectations of success are LOW, mental contrasting leads you to let the goal go. That is not a malfunction. It is the intended behavior of the tool.**
+
+Recall the finding from Lesson 6: after mental contrasting, commitment *tracks expectations* (Oettingen, Pak, & Schnetter, 2001). High expectations produce strong commitment and energized action. Low expectations produce **weak** commitment, disengagement, and a turn toward something else.
+
+Most people, hearing this, think the method has failed them. It has done the opposite. Consider what the alternative actually is:
+
+- **Indulging** in a goal you cannot reach keeps you attached to it, feeling good about it, and doing nothing about it. Forever. That is not motivation, that is a trap with a nice view.
+- **Mental contrasting** on a goal you cannot reach frees the effort, attention, and time that goal was quietly consuming, and lets you spend them somewhere they will actually convert.
+
+Your finite resource is not enthusiasm. It is effort. A tool that helps you *withdraw* effort from a lost cause is doing exactly as much for you as a tool that helps you pour effort into a live one. **Letting go is a feature.**
+
+**What this means when you run the method.** If you contrast honestly and you find your commitment draining away rather than sharpening, do not force it. Ask the diagnostic question: **is this goal genuinely out of reach, or is my expectation low for a bad reason?** Expectations are judgments from a track record, and track records can be short, unrepresentative, or poisoned by one bad experience. Two very different situations produce the same low number:
+
+| Low expectation because... | What to do |
+| --- | --- |
+| I have tried this five times and it has never worked | Believe it. Let it go, or change the goal to one you can reach. |
+| I have never tried, and I am guessing from fear | Get a real data point first. Shrink the goal until it is small enough to attempt, then re-run. |
+
+**Now the honesty, and it is not optional.** The expectation boundary condition is a **central theoretical claim** of this method, and **its evidence is currently weaker than the theory needs it to be.**
+
+- The largest meta-analysis of MCII (Wang, Wang, & Gai, 2021) tested expectation level as a moderator across the pooled studies and **did not find a significant moderating effect**. The only moderator that reached significance was how the intervention was delivered.
+- An independent comparison study (Abdulla & Woods, 2021) also found that **expectancy did not moderate** the effect of condition on commitment. The authors offered a plausible explanation: **84.7% of their participants had moderate-to-high expectancy**, so there may not have been enough genuinely low-expectancy people in the sample for the predicted negative effect to show up.
+
+So where does that leave you? With an honest three-part answer, which is the correct answer and not a dodge:
+
+1. The **original experiments** did show expectancy-dependent commitment, and they are good experiments.
+2. The **pooled and independent evidence** has not yet confirmed that the moderation holds in general, and one plausible reason is that low-expectancy people are rare in the samples that have been studied.
+3. Therefore: **treat "let it go when it is truly out of reach" as good judgment that this theory supports, not as a proven mechanism you should bet a life decision on.** Section 5 goes further into how to read evidence in exactly this state.
+
+A course that told you the boundary condition was settled science would be lying to you, and a course that dropped it because the evidence is untidy would be teaching you a method with its safety catch removed. This is what the middle looks like.
+
+:::reveal You run the method on a goal and feel your commitment DRAIN rather than sharpen. The method "failed." Did it? ||| No. When expectations of success are low, mental contrasting is *supposed* to produce disengagement, and that frees the effort a lost cause was quietly consuming (Oettingen, Pak, & Schnetter, 2001). **Letting go is a feature.** But run the diagnostic first: is the expectation low because your track record honestly says so (believe it), or because you are guessing from fear without ever having tried (shrink the goal, get a real data point, re-run)? And note the honest caveat: this expectancy boundary condition did **not** show up as a significant moderator in the main MCII meta-analysis (Wang et al., 2021) or in Abdulla and Woods (2021), so treat it as supported judgment, not settled mechanism.
+
+## Sources
+- Abdulla, A., & Woods, R. (2021). Comparing mental contrasting with implementation intentions against solution-focused and autonomous planning. *School Psychology International, 42*(4), 398-421. https://doi.org/10.1177/01430343211000399
+- Oettingen, G., Pak, H., & Schnetter, K. (2001). Self-regulation of goal setting: Turning free fantasies about the future into binding goals. *Journal of Personality and Social Psychology, 80*(5), 736-753. https://doi.org/10.1037/0022-3514.80.5.736
+- Wang, G., Wang, Y., & Gai, X. (2021). A meta-analysis of the effects of mental contrasting with implementation intentions on goal attainment. *Frontiers in Psychology, 12*, Article 565202. https://doi.org/10.3389/fpsyg.2021.565202`,
+    },
+    {
+      slug: "mcii-exercise-inner-or-outer",
+      title: "9 · Practice: inner obstacle, or something else?",
+      section: "Section 2 · Mental contrasting: the engine",
+      body: `The obstacle step is where the method usually breaks, so drill it before you use it. For each statement below, decide what it really is. Then, in the last few items, name the mode of future thought being described.
+
+Answer with one word. Spelling is forgiving. When you are done, look at the obstacle you wrote for your own goal and run the same test on it.`,
+      exercise: {
+        instructions:
+          "For items 1-8, answer INNER if it is a genuine inner obstacle (a thought, feeling, habit, or behavior of yours that you could act on and could detect in the moment), or OUTER if it is a circumstance, another person, or an insult. For items 9-12, name the mode of future thought.",
+        items: [
+          {
+            prompt: "\"When I sit down to write, I open a new tab and read the news instead.\" Inner or outer?",
+            answer: "inner",
+            explanation:
+              "A behavior of yours, detectable in the moment. It can become the trigger of an if-then plan, which is exactly what the obstacle step is for.",
+          },
+          {
+            prompt: "\"The hiring market in my field is brutal right now.\" Inner or outer?",
+            answer: "outer",
+            explanation:
+              "A condition of the world. It may well be true, and it is still useless as an obstacle, because you cannot build a detectable trigger out of it.",
+          },
+          {
+            prompt: "\"I'm just lazy.\" Inner or outer?",
+            answer: "outer",
+            explanation:
+              "This one fools people. It sounds internal, but it is an insult, not an event: laziness does not happen at a specific moment you could notice. Dig until you find the behavior underneath it.",
+          },
+          {
+            prompt: "\"Around 4pm I get a wave of dread about the phone call, and I decide to do it tomorrow.\" Inner or outer?",
+            answer: "inner",
+            explanation:
+              "A feeling plus a behavior, with a time attached. This is close to an ideal obstacle: vivid, specific, and detectable.",
+          },
+          {
+            prompt: "\"My manager keeps assigning me the boring projects.\" Inner or outer?",
+            answer: "outer",
+            explanation:
+              "Another person. Your REACTION to it could be an inner obstacle (for example, going quiet in the meeting instead of asking), but the manager is not.",
+          },
+          {
+            prompt: "\"I can't start until I buy a proper desk.\" Inner or outer?",
+            answer: "outer",
+            explanation:
+              "A purchase, and usually a stalling tactic. The inner obstacle hiding behind it is more often a feeling about starting than a missing piece of furniture.",
+          },
+          {
+            prompt: "\"I say yes to every request, and then there is no time left for my own work.\" Inner or outer?",
+            answer: "inner",
+            explanation:
+              "A habit of yours. 'If someone asks me for something before noon, then I will say I'll get back to them tomorrow' is a plan you can actually run.",
+          },
+          {
+            prompt: "\"I get home tired, and the moment I sit on the sofa the evening is gone.\" Inner or outer?",
+            answer: "inner",
+            explanation:
+              "A state (tired) and a behavior (sitting down), both detectable. Note that the trigger is the sofa, not the tiredness, because the sofa is easier to notice.",
+          },
+          {
+            prompt: "Picturing only the promotion, the office, and how good it will feel, and nothing else. This mode is called ___.",
+            answer: "indulging",
+            accept: ["indulge", "indulgence"],
+            explanation:
+              "Indulging: the desired future only. It feels good, drains energy, and produces middling commitment disconnected from your real odds (Oettingen, 2012).",
+          },
+          {
+            prompt: "Ruminating only on how bad your current job is, with no picture of anything better. This mode is called ___.",
+            answer: "dwelling",
+            accept: ["dwell"],
+            explanation:
+              "Dwelling: the grim present only. It fails for the same reason indulging does. Neither one puts the future and the obstacle side by side.",
+          },
+          {
+            prompt: "Vividly imagining the promotion, and then immediately vividly confronting the fact that you go silent whenever it is time to ask for more. This is ___ contrasting.",
+            answer: "mental",
+            accept: ["mental contrasting"],
+            explanation:
+              "Mental contrasting: the future FIRST, then the inner obstacle. The order is load-bearing; reversed, the effect weakens.",
+          },
+          {
+            prompt: "After contrasting honestly, your commitment to a goal drops and you disengage. In this method, that outcome is treated as a ___ (bug or feature?).",
+            answer: "feature",
+            explanation:
+              "When expectations are genuinely low, disengagement frees effort a lost cause was consuming. Note the caveat from Lesson 8: the expectancy moderation is not yet confirmed in the pooled evidence.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "mcii-quiz-mental-contrasting",
+      title: "10 · Quiz: mental contrasting",
+      section: "Section 2 · Mental contrasting: the engine",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What are the two acts of mental contrasting, in order?",
+            options: [
+              "Elaborate the obstacle, then elaborate the desired future",
+              "Elaborate the desired future, then immediately elaborate the inner obstacle",
+              "Write a plan, then visualize it succeeding",
+              "List your strengths, then list your weaknesses",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Future first, obstacle second. Both vivid, both concrete, one sitting.",
+            sourceLessonSlug: "mcii-how-mental-contrasting-works",
+          },
+          {
+            prompt: "Why does the ORDER of the two elaborations matter?",
+            options: [
+              "It does not; the research shows either order works",
+              "Future-first makes the obstacle arrive as the thing blocking something you can already taste; obstacle-first turns the future into consolation, which is indulging with extra steps",
+              "Obstacle-first is actually the recommended order",
+              "Because the app enforces that order",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Reversing the order weakens or eliminates the effect in the experimental work. The operation is directional (Oettingen, 2012).",
+            sourceLessonSlug: "mcii-how-mental-contrasting-works",
+          },
+          {
+            prompt: "In Oettingen, Pak, and Schnetter (2001), what happened to the commitment of participants who mentally contrasted?",
+            options: [
+              "It rose uniformly, regardless of their expectations",
+              "It TRACKED their expectations: strong when expectations were high, weak when low",
+              "It fell uniformly, regardless of their expectations",
+              "It was identical to the indulging group",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This is the central result. Indulging and dwelling produced middling commitment disconnected from real odds; mental contrasting made commitment track expectations.",
+            sourceLessonSlug: "mcii-how-mental-contrasting-works",
+          },
+          {
+            prompt: "Is mental contrasting best described as a commitment amplifier or a commitment selector?",
+            options: [
+              "An amplifier: it makes you want everything more",
+              "A selector: it makes you want the reachable things more and the unreachable things less",
+              "Neither: it has no effect on commitment",
+              "An amplifier, but only for health goals",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It forces you to consult your actual track record, which indulging lets you skip. It will not manufacture enthusiasm for a goal you know you will not pursue.",
+            sourceLessonSlug: "mcii-how-mental-contrasting-works",
+          },
+          {
+            prompt: "What is the test for a genuine INNER obstacle?",
+            options: [
+              "It must be the biggest problem you face",
+              "It must be a thought, feeling, habit, or behavior of yours that you could act on and could detect in the moment",
+              "It must be something other people also struggle with",
+              "It must be solvable within one week",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It has to live on your side of the line, and it has to be concrete enough to notice when it shows up.",
+            sourceLessonSlug: "mcii-the-inner-obstacle",
+          },
+          {
+            prompt: "Why does the method insist the obstacle be internal rather than a circumstance?",
+            options: [
+              "To encourage you to take personal responsibility for everything",
+              "Because the obstacle becomes the TRIGGER of an if-then plan, and you cannot build a detectable trigger out of the job market",
+              "Because external obstacles are never real",
+              "Because it makes the exercise faster",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The obstacle step is a specification for a trigger, not a complaint box. External conditions may be entirely real and still be useless here.",
+            sourceLessonSlug: "mcii-the-inner-obstacle",
+          },
+          {
+            prompt: "Why is \"I'm just lazy\" a bad obstacle even though it sounds internal?",
+            options: [
+              "Because it is too harsh on yourself",
+              "Because it is an insult, not a detectable event: laziness does not happen at 6:40 pm in the kitchen, but reaching for your phone does",
+              "Because laziness is not real",
+              "Because it is external",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You cannot build an if-then trigger from a character judgment. Dig until you find the behavior underneath it.",
+            sourceLessonSlug: "mcii-the-inner-obstacle",
+          },
+          {
+            prompt: "Which of these is the best-formed inner obstacle?",
+            options: [
+              "\"The economy is bad.\"",
+              "\"I get home, sit on the sofa, and the evening disappears.\"",
+              "\"I need a better laptop first.\"",
+              "\"My manager doesn't respect me.\"",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A state plus a behavior, both detectable in the moment, which is exactly what an if-then plan needs.",
+            sourceLessonSlug: "mcii-the-inner-obstacle",
+          },
+          {
+            prompt: "When your expectations of success are LOW, what does mental contrasting lead to, and how should you read that?",
+            options: [
+              "Stronger commitment, which is the point of the method",
+              "Weak commitment and disengagement, which the theory treats as a FEATURE, not a malfunction",
+              "No change in commitment at all",
+              "An error that means you performed the method incorrectly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Disengaging from a goal you cannot reach frees the effort that goal was quietly consuming. Indulging, by contrast, keeps you attached and inactive.",
+            sourceLessonSlug: "mcii-expectations-and-letting-go",
+          },
+          {
+            prompt: "Your expectation is low. What is the diagnostic question before you let the goal go?",
+            options: [
+              "Do other people think I can do it?",
+              "Is my expectation low because my track record honestly says so, or because I am guessing from fear without ever having tried?",
+              "How much do I want it?",
+              "Would a positive affirmation change my mind?",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two very different situations produce the same low number. If you have never tried, shrink the goal until it is attemptable, get a real data point, and re-run.",
+            sourceLessonSlug: "mcii-expectations-and-letting-go",
+          },
+          {
+            prompt: "What did the Wang, Wang, and Gai (2021) meta-analysis find when it tested EXPECTATION LEVEL as a moderator of the MCII effect?",
+            options: [
+              "It confirmed the expectancy boundary condition strongly",
+              "It did NOT find a significant moderating effect of expectation level",
+              "It found the effect reversed at high expectations",
+              "It did not test expectation level",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This is the honest caveat. The only moderator that reached significance was how the intervention was delivered (face-to-face vs document).",
+            sourceLessonSlug: "mcii-expectations-and-letting-go",
+          },
+          {
+            prompt: "Abdulla and Woods (2021) also found no expectancy moderation. What explanation did the authors offer?",
+            options: [
+              "That mental contrasting does not work at all",
+              "That 84.7% of their participants had moderate-to-high expectancy, so there may not have been enough genuinely low-expectancy people for the predicted effect to appear",
+              "That their measure of commitment was invalid",
+              "That the participants cheated",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A restricted range on the moderator is a real and specific limitation, and naming it is more useful than either dismissing or ignoring the null result.",
+            sourceLessonSlug: "mcii-expectations-and-letting-go",
+          },
+          {
+            prompt: "Given that the original experiments supported the expectancy boundary but the pooled evidence has not confirmed it, how should you hold the idea?",
+            options: [
+              "As settled science you can bet a life decision on",
+              "As good judgment that the theory supports, but not as a proven mechanism",
+              "As definitively refuted, and therefore ignorable",
+              "As true only for people over 30",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The honest middle. Presenting it as settled would be a lie; dropping it would remove the method's safety catch.",
+            sourceLessonSlug: "mcii-expectations-and-letting-go",
+          },
+          {
+            prompt: "Why is indulging in an unreachable goal described as \"a trap with a nice view\"?",
+            options: [
+              "Because it makes you feel bad about yourself",
+              "Because it keeps you attached to the goal, feeling good about it, and doing nothing about it, indefinitely",
+              "Because it makes you quit too early",
+              "Because it raises your expectations unrealistically high",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Your finite resource is effort, not enthusiasm. A tool that helps you withdraw effort from a lost cause is doing real work for you.",
+            sourceLessonSlug: "mcii-expectations-and-letting-go",
+          },
+          {
+            prompt: "Which of these correctly describes what dwelling produces?",
+            options: [
+              "Strong commitment, because facing reality is motivating",
+              "Middling commitment, largely disconnected from whether you are actually likely to succeed",
+              "Exactly the same result as mental contrasting",
+              "Higher expectations of success",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Dwelling on the grim present alone fails for the same reason indulging does: neither puts the future and the obstacle side by side.",
+            sourceLessonSlug: "mcii-how-mental-contrasting-works",
+          },
+        ],
+      },
+    },
   ],
 };
