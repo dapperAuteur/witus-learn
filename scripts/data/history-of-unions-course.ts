@@ -1023,5 +1023,360 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
         ],
       },
     },
+
+    // ── Section 4 · Industrial unionism, backlash, and the long decline ───────
+    {
+      slug: "the-cio-and-industrial-unionism",
+      section: "Section 4 · Industrial unionism, backlash, and the long decline",
+      title: "12 · The CIO: organizing everybody in the building",
+      recallContent: [
+        {
+          prompt: "Which two groups of workers does 29 U.S.C. § 152(3) cut out of the NLRA?",
+          answer: "Agricultural laborers and domestic workers.",
+        },
+        {
+          prompt: "Why did the United Farm Workers have to use a nationwide consumer boycott instead of an NLRB election?",
+          answer:
+            "Because farm workers are excluded from the NLRA, they had no NLRB election, no protection from being fired for organizing, and no employer duty to bargain. The boycott was a workaround for a legal exclusion.",
+        },
+      ],
+      body: `The Wagner Act handed American workers a right. It did not hand them an organization capable of using it.
+
+The AFL was still built on craft. Its unions organized the skilled electrician in an auto plant and had no interest in the 3,000 people on the line beside him. In an industry like auto or steel or rubber, that was useless: the assembly line is the point, and the assembly line is unskilled.
+
+In November 1935 — four months after the Wagner Act — a group inside the AFL led by **John L. Lewis** of the United Mine Workers set up the **Committee for Industrial Organization** to do the thing the AFL would not: organize **entire industries**, everyone in the plant, skilled and unskilled together. The AFL threw them out. In 1938 they reconstituted as an independent federation, the **Congress of Industrial Organizations (CIO)**.
+
+This is the Knights of Labor's old idea — organize everybody — except now it had the Wagner Act behind it. That combination is what made the late 1930s the most explosive decade in American labor history.
+
+**Flint, 1936–37.** On December 30, 1936, autoworkers at General Motors plants in Flint, Michigan did something new: instead of walking out, they **sat down** — occupied the plants and stopped production from inside, where strikebreakers could not replace them. The **Flint sit-down strike** held for 44 days. On **February 11, 1937**, General Motors — then the largest manufacturing company in the world — recognized the **United Auto Workers**. Weeks later, **US Steel** signed with the CIO's steel committee without a strike at all, having watched what happened to GM (Library of Congress, n.d.).
+
+**And it was not all victories.** The smaller "Little Steel" companies fought. On **May 30, 1937**, Chicago police fired on a crowd of striking Republic Steel workers and their families marching toward the plant. **Ten people were killed.** It is remembered as the **Memorial Day massacre**, and Little Steel was not organized until the war.
+
+**One thing the CIO did that the AFL had not.** The CIO organized **Black workers**, deliberately and at scale — in steel, in auto, in meatpacking. Not out of pure idealism: in an industry-wide union you cannot leave a quarter of the workforce outside, because the employer will simply hire them as strikebreakers, as employers had been doing for fifty years. But the effect was real, and it made CIO unions a genuine base of the mid-century civil-rights movement in a way most AFL craft unions never were. **Hold that comparison.** It is the setup for Section 5, which is about what those AFL craft unions were doing instead.
+
+The two federations finally merged in **December 1955** into the **AFL-CIO**, which remains the largest American labor federation today.
+
+By the mid-1950s, roughly a third of American wage and salary workers were union members — the high-water mark. (That figure comes from historical estimates, not from the Bureau of Labor Statistics' modern series, which only begins in 1983. You will see why that distinction matters in lesson 14.)
+
+:::reveal What was the CIO's core strategic idea, and how did it differ from the AFL's? ||| Industrial unionism: organize EVERYONE in an industry — skilled and unskilled, in one union — rather than only skilled workers grouped by craft. It was the Knights of Labor's old idea, but now with the Wagner Act behind it.
+
+## Sources
+- Library of Congress. (n.d.). *The Flint sit-down strike*. This Month in Business History. https://guides.loc.gov/this-month-in-business-history/december/flint-sit-down-strike
+- AFL-CIO. (n.d.). *Our history*. https://aflcio.org/about-us/history
+- Illinois Labor History Society. (n.d.). *The Memorial Day massacre of 1937*. https://www.illinoislaborhistory.org/the-memorial-day-massacre
+- National Archives. (n.d.). *Records of the National Labor Relations Board* (Record Group 25). https://www.archives.gov/research/guide-fed-records/groups/025.html`,
+    },
+    {
+      slug: "taft-hartley-1947",
+      section: "Section 4 · Industrial unionism, backlash, and the long decline",
+      title: "13 · Taft-Hartley, 1947: what the law took back",
+      recallContent: [
+        {
+          prompt: "What happened at Flint, Michigan between December 1936 and February 1937?",
+          answer:
+            "Autoworkers occupied General Motors plants in a 44-day sit-down strike. On February 11, 1937, GM — then the largest manufacturer in the world — recognized the United Auto Workers.",
+        },
+        {
+          prompt: "Name one reason the CIO organized Black workers at scale when most AFL craft unions did not.",
+          answer:
+            "In an industry-wide union you cannot leave a large share of the workforce outside, because the employer will hire them as strikebreakers. The effect was real regardless of motive: CIO unions became a genuine base of the mid-century civil-rights movement.",
+        },
+      ],
+      body: `The Wagner Act was written by people who thought labor was too weak. By 1947, a lot of Americans thought labor had become too strong. There had been a huge strike wave after the war. Congress had swung.
+
+The result was the **Labor Management Relations Act of 1947** — the **Taft-Hartley Act**. President Truman vetoed it. **Congress overrode the veto**, and it became law on **June 23, 1947** (National Labor Relations Board, n.d.).
+
+If the Wagner Act is a list of things employers may not do, Taft-Hartley is the list of things **unions** may not do — plus a set of tools handed to employers and to the government. It is still the framework you live under.
+
+**What it took away, and what it added:**
+
+| Change | What it means |
+|---|---|
+| **Union unfair labor practices** (§ 8(b)) | For the first time, unions could be found to have violated the law — e.g. by coercing workers, or refusing to bargain in good faith. |
+| **The closed shop banned** | An employer may no longer agree to hire *only* people who are already union members. |
+| **Secondary boycotts banned** (§ 8(b)(4)) | A union may not pressure a *neutral* business to stop dealing with the employer it has a dispute with. This removed one of labor's most powerful weapons. |
+| **§ 14(b): state "right-to-work" laws** | States may ban union-security agreements — the clauses that require workers covered by a union contract to pay dues or fees. Roughly half the states have such laws. |
+| **National-emergency injunctions** (§§ 206–210) | The President may go to court for an **80-day injunction** — a "cooling-off period" — halting a strike said to imperil national health or safety. |
+| **Employer "free speech"** (§ 8(c)) | Employers gained explicit latitude to campaign against a union before an election. |
+| **Supervisors excluded** | Supervisors were written out of the Act's protection — enlarging the hole from lesson 10. |
+| **§ 9(h): non-communist affidavits** | Union officers had to swear they were not Communists, or the union lost access to the NLRB. Repealed in 1959. |
+
+**Now the irony you should not miss.**
+
+Taft-Hartley banned the secondary boycott. But the secondary boycott ban lives *inside* the NLRA — and **farm workers are not covered by the NLRA**. So when the United Farm Workers ran a nationwide consumer boycott of table grapes in the late 1960s, pressuring supermarkets that had no dispute with anyone, they were doing something that would have been **illegal for an autoworkers' or steelworkers' union** — and was perfectly lawful for them, precisely *because* they had been excluded from the law in 1935 (National Park Service, n.d.).
+
+Sit with that. The same clause that stripped farm workers of every protection also placed them outside the law's biggest restriction, and they turned it into their most effective weapon. That is not a happy ending — they still had no right to an election, no protection from firing, no duty on the grower to bargain. But it is a real, verifiable, deeply strange fact, and it is the kind of thing you only see if you read the statute instead of the slogan.
+
+:::reveal Name three things the Taft-Hartley Act (1947) did to restrict unions. ||| Any three of: created union unfair labor practices (§ 8(b)); banned the closed shop; banned secondary boycotts (§ 8(b)(4)); allowed states to pass "right-to-work" laws (§ 14(b)); gave the President an 80-day national-emergency injunction; gave employers explicit latitude to campaign against unions (§ 8(c)); excluded supervisors from protection; required non-communist affidavits from union officers (§ 9(h), repealed 1959).
+
+## Sources
+- Labor Management Relations Act (Taft-Hartley Act), 29 U.S.C. §§ 141–197 (1947). Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?path=/prelim@title29/chapter7&edition=prelim
+- National Labor Relations Board. (n.d.). *1947 Taft-Hartley passage and NLRB structural changes*. Our history. https://www.nlrb.gov/about-nlrb/who-we-are/our-history/1947-taft-hartley-passage-and-nlrb-structural-changes
+- Truman, H. S. (1947, June 20). *Veto of the Taft-Hartley labor bill* [Message to Congress]. Harry S. Truman Presidential Library. https://www.trumanlibrary.gov/library/public-papers/120/veto-taft-hartley-labor-bill
+- National Park Service. (n.d.). *Workers united: The Delano grape strike and boycott*. https://www.nps.gov/articles/000/workers-united-the-delano-grape-strike-and-boycott.htm`,
+    },
+    {
+      slug: "patco-and-the-long-decline",
+      section: "Section 4 · Industrial unionism, backlash, and the long decline",
+      title: "14 · PATCO, 1981 — and reading the decline honestly",
+      recallContent: [
+        {
+          prompt: "What is a \"right-to-work\" law, and what part of Taft-Hartley allows it?",
+          answer:
+            "A state law banning union-security agreements — the clauses requiring workers covered by a union contract to pay dues or fees. Section 14(b) of Taft-Hartley permits states to pass them.",
+        },
+        {
+          prompt: "Why was the UFW's nationwide grape boycott lawful when the same tactic would have been illegal for the autoworkers?",
+          answer:
+            "Taft-Hartley's secondary-boycott ban lives inside the NLRA, and farm workers are excluded from the NLRA. The clause that stripped them of protection also placed them outside the law's biggest restriction.",
+        },
+      ],
+      body: `**August 3, 1981.** The Professional Air Traffic Controllers Organization — **PATCO** — went on strike over pay, hours, and the crushing stress of the job. Roughly 13,000 controllers walked out.
+
+Two facts, and you need both.
+
+**Fact one: the strike was illegal, and everyone knew it.** Federal employees are prohibited by statute from striking against the United States government (5 U.S.C. § 7311; 18 U.S.C. § 1918). PATCO struck anyway.
+
+**Fact two: what happened next was not legally required.** President Reagan gave the controllers 48 hours to return. On **August 5, 1981**, he **fired the 11,345 who did not**, and barred them from federal employment for life. On **October 22, 1981**, the Federal Labor Relations Authority **decertified** the union (Miller Center, n.d.).
+
+**Why this is the hinge of modern American labor history — and why the usual explanation is wrong.**
+
+The usual explanation is: "Reagan made it legal to permanently replace strikers." **That is false**, and you should stop people who say it. Permanently replacing workers who go on an economic strike had been lawful in the *private* sector since **NLRB v. Mackay Radio & Telegraph Co., 304 U.S. 333 (1938)** — a Supreme Court decision handed down under Franklin Roosevelt, three years after the Wagner Act. The legal power was forty-three years old.
+
+What changed in 1981 was not the law. It was **the norm.** Employers had the power and mostly had not used it, because using it was seen as beyond the pale. Then the President of the United States used it — on live television, against a union that had endorsed him — and it turned out you could. Through the 1980s, private employers began permanently replacing strikers in a way they simply had not before, and the American strike became a far more dangerous thing for a worker to do.
+
+**Now the numbers — with their years, and their caveats.**
+
+The Bureau of Labor Statistics publishes the union membership rate every year. Its **comparable series begins in 1983**, so it cannot tell you about 1955 (BLS, 2026).
+
+| | 1983 (first comparable year) | 2025 |
+|---|---|---|
+| Union membership rate | **20.1%** | **10.0%** |
+| Union members | **17.7 million** | **14.7 million** |
+| Public-sector rate | — | **32.9%** |
+| Private-sector rate | — | **5.9%** |
+| Represented by a union (members + covered non-members) | — | **11.2%** |
+
+*(Bureau of Labor Statistics, 2026, released February 18, 2026.)*
+
+**Read the caveat, because it is exactly the sort of thing a careless course drops.** BLS states that the 2025 annual figures are **11-month averages that exclude October 2025**, because October data were not collected during the federal government shutdown — so the 2025 estimates are **not strictly comparable** with other years (BLS, 2026). The rate has been near 10% for several years; do not build an argument on a one-year move.
+
+Three things the table is telling you:
+
+1. **The rate halved**, from 20.1% to 10.0%, in about forty years.
+2. **The absolute number fell far less** — 17.7 million to 14.7 million — because the workforce grew. Union membership did not so much collapse as fail to grow with the country.
+3. **The public/private gap is enormous**: 32.9% versus 5.9% in 2025. Modern American unionism is overwhelmingly a *public-sector* phenomenon — teachers, firefighters, postal workers, city employees. That is a completely different labor movement from the one that shut down General Motors in 1937, and it is why fights over public-sector unions are now the loudest fights in American labor.
+
+**And now the honest part: WHY did it fall?** The candidate explanations are: the shift from manufacturing to services; globalization and offshoring; automation; more aggressive and more sophisticated employer opposition; the spread of state right-to-work laws under § 14(b); weak penalties for illegal firings; and unions' own strategic failures. **Serious people weight these differently, and this course is not going to pretend the question is settled.** Anyone who gives you one cause and no others is selling you something.
+
+One last number, because it complicates every story: in Gallup's August 2025 poll, **68% of Americans said they approve of labor unions** — near the highest level in more than fifty years — in a year when 10.0% of them belonged to one (Gallup, 2025). Whatever is driving the decline, it does not appear to be that Americans have decided they dislike unions. That gap is the most interesting open question in American labor today.
+
+:::reveal What is the most common false claim about PATCO, and what is the accurate version? ||| The false claim is that Reagan made it legal to permanently replace strikers. Permanent replacement of economic strikers had been lawful in the private sector since NLRB v. Mackay Radio (1938). What changed in 1981 was not the law but the NORM — employers had long had the power and had largely declined to use it, and after PATCO they used it.
+
+## Sources
+- Bureau of Labor Statistics. (2026, February 18). *Union members — 2025*. U.S. Department of Labor. https://www.bls.gov/news.release/pdf/union2.pdf
+- Bureau of Labor Statistics. (2026). *Union membership rate 10.0 percent in 2025*. The Economics Daily. https://www.bls.gov/opub/ted/2026/union-membership-rate-10-0-percent-in-2025.htm
+- Miller Center, University of Virginia. (n.d.). *Reagan vs. air traffic controllers*. https://millercenter.org/reagan-vs-air-traffic-controllers
+- NLRB v. Mackay Radio & Telegraph Co., 304 U.S. 333 (1938). Library of Congress. https://www.loc.gov/item/usrep304333/
+- 5 U.S.C. § 7311; 18 U.S.C. § 1918. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title5-section7311&edition=prelim
+- Gallup. (2025, August). *Labor union approval relatively steady at 68% in U.S.* https://news.gallup.com/poll/694472/labor-union-approval-relatively-steady.aspx`,
+    },
+    {
+      slug: "section-4-quiz",
+      section: "Section 4 · Industrial unionism, backlash, and the long decline",
+      title: "15 · Check yourself: rise, backlash, decline",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What was the CIO's core strategic idea?",
+            options: [
+              "Organize only skilled workers, grouped by craft",
+              "Organize entire industries — everyone in the plant, skilled and unskilled, in one union",
+              "Organize only public employees",
+              "Replace collective bargaining with legislation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Industrial unionism — the Knights of Labor's old idea, but now with the Wagner Act behind it. That combination made the late 1930s explosive.",
+            sourceLessonSlug: "the-cio-and-industrial-unionism",
+          },
+          {
+            prompt: "What was new about the tactic autoworkers used at Flint in 1936–37?",
+            options: [
+              "They walked out and picketed the gates",
+              "They SAT DOWN — occupied the plants and stopped production from inside, where strikebreakers could not replace them",
+              "They filed a lawsuit against General Motors",
+              "They ran a consumer boycott of Chevrolets",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The sit-down held 44 days. On February 11, 1937, GM recognized the United Auto Workers — and US Steel signed with the CIO weeks later without a strike at all.",
+            sourceLessonSlug: "the-cio-and-industrial-unionism",
+          },
+          {
+            prompt: "What was the Memorial Day massacre of May 30, 1937?",
+            options: [
+              "A bombing at a labor rally in Chicago",
+              "Chicago police fired on marching Republic Steel strikers and their families, killing ten",
+              "A fire in a garment factory",
+              "The Pinkertons' assault on Homestead",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The CIO's 1937 was not all victories. 'Little Steel' fought, and was not organized until the war.",
+            sourceLessonSlug: "the-cio-and-industrial-unionism",
+          },
+          {
+            prompt: "The Taft-Hartley Act became law in 1947 how?",
+            options: [
+              "President Truman signed it enthusiastically",
+              "Congress overrode Truman's veto",
+              "It was imposed by executive order",
+              "The Supreme Court ordered Congress to pass it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Truman vetoed it; Congress overrode the veto and it became law on June 23, 1947.",
+            sourceLessonSlug: "taft-hartley-1947",
+          },
+          {
+            prompt: "Section 14(b) of Taft-Hartley permits states to:",
+            options: [
+              "Ban strikes outright",
+              "Pass \"right-to-work\" laws banning union-security agreements — the clauses that require workers covered by a union contract to pay dues or fees",
+              "Require every worker to join a union",
+              "Set their own minimum wage",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Roughly half the states have such laws. This is one of the most consequential single subsections in American labor law.",
+            sourceLessonSlug: "taft-hartley-1947",
+          },
+          {
+            prompt: "What is a \"secondary boycott,\" and what did Taft-Hartley do about it?",
+            options: [
+              "A second strike at the same employer; Taft-Hartley encouraged it",
+              "Pressuring a NEUTRAL business to stop dealing with the employer a union has a dispute with; Taft-Hartley banned it (§ 8(b)(4))",
+              "A boycott organized by consumers rather than workers; Taft-Hartley protected it",
+              "A union refusing to bargain; Taft-Hartley legalized it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Banning it removed one of labor's most powerful weapons — pressure on the supermarkets, suppliers and customers of the employer.",
+            sourceLessonSlug: "taft-hartley-1947",
+          },
+          {
+            prompt: "Why was the United Farm Workers' nationwide grape boycott LAWFUL when the identical tactic would have been illegal for a steelworkers' union?",
+            options: [
+              "Because agricultural boycotts have a special exemption written into Taft-Hartley",
+              "Because the secondary-boycott ban lives inside the NLRA, and farm workers are excluded from the NLRA",
+              "Because the Supreme Court granted the UFW an exception",
+              "Because California law overrode federal law",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same clause that stripped farm workers of every protection also placed them outside the law's biggest restriction — and they turned it into their most effective weapon.",
+            sourceLessonSlug: "taft-hartley-1947",
+          },
+          {
+            prompt: "What did the Taft-Hartley Act's § 8(b) create for the first time?",
+            options: [
+              "Employer unfair labor practices",
+              "UNION unfair labor practices — things a union itself could be found to have done illegally",
+              "The National Labor Relations Board",
+              "The right to strike",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Wagner Act listed what employers may not do. Taft-Hartley added a list of what unions may not do.",
+            sourceLessonSlug: "taft-hartley-1947",
+          },
+          {
+            prompt: "The PATCO strike of August 3, 1981 was:",
+            options: [
+              "Legal, and Reagan's response was unlawful",
+              "Illegal — federal employees are barred by statute from striking against the government (5 U.S.C. § 7311)",
+              "Legal under Taft-Hartley's national-emergency provisions",
+              "Authorized in advance by the FAA",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both facts matter: the strike was illegal AND what happened next was not legally required. Reagan chose to fire 11,345 controllers on August 5, 1981.",
+            sourceLessonSlug: "patco-and-the-long-decline",
+          },
+          {
+            prompt: "What is the most common FALSE claim about PATCO?",
+            options: [
+              "That the strike was illegal",
+              "That Reagan MADE IT LEGAL to permanently replace strikers — in fact that had been lawful in the private sector since NLRB v. Mackay Radio (1938)",
+              "That PATCO was decertified",
+              "That the controllers were barred from federal employment",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The legal power was 43 years old, granted under FDR. What changed in 1981 was the NORM: employers had the power and had largely declined to use it. After PATCO, they used it.",
+            sourceLessonSlug: "patco-and-the-long-decline",
+          },
+          {
+            prompt: "According to the Bureau of Labor Statistics, what was the US union membership rate in 2025?",
+            options: ["5.9%", "10.0%", "20.1%", "32.9%"],
+            correctIndex: 1,
+            explanation:
+              "10.0% in 2025, with 14.7 million members — down from 20.1% and 17.7 million in 1983, the first year of BLS's comparable series (BLS, 2026).",
+            sourceLessonSlug: "patco-and-the-long-decline",
+          },
+          {
+            prompt: "What caveat does BLS attach to the 2025 union figures?",
+            options: [
+              "They exclude workers under age 25",
+              "They are 11-month averages excluding October 2025 (data were not collected during the federal shutdown), so they are not strictly comparable with other years",
+              "They cover only the private sector",
+              "They are projections, not measurements",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Exactly the sort of caveat a careless course drops. The rate has been near 10% for several years; do not build an argument on a one-year move.",
+            sourceLessonSlug: "patco-and-the-long-decline",
+          },
+          {
+            prompt: "In 2025 the US public-sector union membership rate was 32.9% and the private-sector rate was 5.9%. What does that tell you?",
+            options: [
+              "Private-sector unions are growing faster",
+              "Modern American unionism is overwhelmingly a PUBLIC-sector phenomenon — a very different labor movement from the one that shut down GM in 1937",
+              "Public employees are barred from unionizing",
+              "The two sectors are converging",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Teachers, firefighters, postal workers, city employees. It is why fights over public-sector unions are now the loudest fights in American labor.",
+            sourceLessonSlug: "patco-and-the-long-decline",
+          },
+          {
+            prompt: "How does this course treat the question of WHY US union density fell?",
+            options: [
+              "It identifies employer opposition as the single proven cause",
+              "It identifies globalization as the single proven cause",
+              "It lists the serious candidate explanations and says the question is not settled — warning that anyone offering one cause and no others is selling you something",
+              "It says the decline never happened",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Deindustrialization, globalization, automation, employer opposition, right-to-work laws, weak penalties, and unions' own strategic failures. Serious people weight these differently.",
+            sourceLessonSlug: "patco-and-the-long-decline",
+          },
+          {
+            prompt: "In Gallup's August 2025 poll, roughly what share of Americans said they approve of labor unions?",
+            options: ["10%", "34%", "51%", "68%"],
+            correctIndex: 3,
+            explanation:
+              "68% approved — near the highest in over fifty years — in a year when 10.0% of workers belonged to a union. That gap is the most interesting open question in American labor today.",
+            sourceLessonSlug: "patco-and-the-long-decline",
+          },
+        ],
+      },
+    },
   ],
 };
