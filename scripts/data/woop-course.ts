@@ -852,5 +852,444 @@ Answer with one word. Spelling is forgiving. When you are done, look at the obst
         ],
       },
     },
+
+    // ─────────────── SECTION 3 · IMPLEMENTATION INTENTIONS: THE TRIGGER ───────────────
+    {
+      slug: "mcii-goal-vs-implementation-intention",
+      title: "11 · Two kinds of intention, and only one of them survives contact with Tuesday",
+      section: "Section 3 · Implementation intentions: the trigger",
+      recallContent: [
+        {
+          prompt: "What does mental contrasting do to commitment when expectations are low, and is that a bug?",
+          answer:
+            "It produces weak commitment and disengagement. That is a feature: it frees the effort a lost cause was consuming. But the expectancy moderation is not confirmed in the pooled evidence, so treat it as supported judgment, not settled mechanism.",
+        },
+        {
+          prompt: "Give an example of a well-formed inner obstacle and a badly-formed one.",
+          answer:
+            "Well-formed: 'I get home, sit on the sofa, and the evening disappears' (a detectable state plus behavior). Badly-formed: 'the job market is brutal' (a condition of the world) or 'I'm lazy' (an insult, not an event).",
+        },
+      ],
+      body: `Peter Gollwitzer drew a distinction in 1993 that turns out to explain most of why people do not do what they said they would. It is a distinction between **two kinds of intention**, and they are not the same object at all (Gollwitzer, 1999).
+
+**A goal intention** has the structure: **"I intend to reach x!"** It names an end point, a performance or an outcome. "I intend to get fit." "I intend to finish the application." Forming one turns a vague desire into a binding goal, and it produces a genuine sense of commitment. Every goal theory you have ever met, including the theory of planned behavior, is about this kind of intention.
+
+**An implementation intention** has the structure: **"When situation x arises, I will perform response y!"** It is *subordinate* to a goal intention and it specifies the **when, where, and how** of the actions that lead to the goal (Gollwitzer, 1999). It does not link *you* to a desired end state. It links **a specific situation** to **a specific response**.
+
+That structural difference is the whole trick. A goal intention commits your *self* to an outcome. An implementation intention **delegates control of the action to a situational cue**, so that when the cue shows up, the response is triggered without you having to relitigate the decision while tired.
+
+**What it buys you, in numbers.**
+
+- **Students writing a report over Christmas.** Half were asked to specify exactly when and where they would write it during a 48-hour window; half were not. When the reports came back in the mail, **three quarters** of the implementation-intention students had written theirs in the required period, against **one third** of the controls (Gollwitzer & Brandstätter, 1997, as reported in Gollwitzer, 1999).
+- **Women who had already resolved to do a breast self-examination in the next month.** Among those with strong goal intentions, **100% did so if they had also been induced to form an implementation intention** (writing down where and when). Among those with the same strong goal intention and no implementation intention, **only 53% did** (Orbell, Hodgkins, & Sheeran, 1997, as reported in Gollwitzer, 1999).
+
+Look hard at that second one. **Every woman in it already intended to do the thing.** The intention was held constant. All that changed was whether they had specified a when and a where, and the completion rate nearly doubled. This is the intention-behavior gap from Lesson 4, being closed by one sentence written on a piece of paper.
+
+**And now the discipline this course promised you.** That 100% figure is arresting, and you should be suspicious of arresting figures. **It comes from a single study, from 1997, with a modest sample, and 100% is the kind of clean number that rarely survives replication at the same magnitude.** Do not go and repeat "it doubles your follow-through" as though it were a law. The *direction* of the effect is supported by a large body of later work, which you will meet in Lesson 12 and weigh properly in Section 5. The *size* of the effect in any one striking study is almost always the least reliable thing about it.
+
+:::reveal Write the two intention structures, and explain why the second one works when you are tired. ||| Goal intention: **"I intend to reach x!"** It links your SELF to an end state. Implementation intention: **"When situation x arises, I will perform response y!"** It links a SITUATION to a RESPONSE (Gollwitzer, 1999). The second survives Tuesday because it **delegates control of the action to a situational cue**: when the cue appears, the response fires without you having to re-make the decision at the exact moment you have the least willpower to make it.
+
+## Sources
+- Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. *American Psychologist, 54*(7), 493-503. https://doi.org/10.1037/0003-066X.54.7.493
+- Gollwitzer, P. M., & Brandstätter, V. (1997). Implementation intentions and effective goal pursuit. *Journal of Personality and Social Psychology, 73*(1), 186-199. https://doi.org/10.1037/0022-3514.73.1.186
+- Orbell, S., Hodgkins, S., & Sheeran, P. (1997). Implementation intentions and the theory of planned behavior. *Personality and Social Psychology Bulletin, 23*(9), 945-954. https://doi.org/10.1177/0146167297239004`,
+    },
+    {
+      slug: "mcii-how-if-then-works",
+      title: "12 · Why a sentence works: delegation, not willpower",
+      section: "Section 3 · Implementation intentions: the trigger",
+      recallContent: [
+        {
+          prompt: "What are the structures of a goal intention and an implementation intention?",
+          answer:
+            "Goal intention: 'I intend to reach x!' (links your self to an end state). Implementation intention: 'When situation x arises, I will perform response y!' (links a situation to a response) (Gollwitzer, 1999).",
+        },
+        {
+          prompt: "In Orbell, Hodgkins, and Sheeran (1997), what were the two completion rates, and what is the honest caveat?",
+          answer:
+            "Among women with strong goal intentions, 100% did the breast self-examination with an implementation intention versus 53% without. The caveat: a single 1997 study with a modest sample. Trust the direction, not that exact magnitude.",
+        },
+      ],
+      body: `The reason an if-then plan works is not that it makes you try harder. It is that **it moves the decision out of the moment when you are least able to make it.**
+
+Gollwitzer's account is that implementation intentions **delegate the control of goal-directed responses to anticipated situational cues, which, when actually encountered, elicit those responses automatically** (Gollwitzer, 1999). Two things follow, and they are the two things you actually feel:
+
+1. **The cue gets easier to notice.** Having named "when I sit down at my desk after dinner" in advance, you become primed to detect that moment. It stops being invisible.
+2. **The response gets easier to launch.** The link between cue and action has been pre-built, so at the moment of truth you are not weighing options, negotiating with yourself, or generating an action from scratch. You are executing one you already chose.
+
+Compare the two experiences honestly, because you have had both:
+
+| | Goal intention only | With an implementation intention |
+| --- | --- | --- |
+| At the moment of truth | You must notice it is the moment, decide, generate an action, and overcome the pull of the easier thing | The cue fires, the response is already chosen |
+| What it costs | Willpower, at the exact time of day you have the least | Almost nothing |
+| What it depends on | How you happen to feel | That you set it up in advance, when you were calm |
+
+**Note what this implies about willpower.** The method is not asking you to have more of it. It is a **design pattern for a person who runs out of willpower**, which is every person. That is the whole point, and it is why "just be more disciplined" is not competing advice, it is a description of the problem.
+
+**How strong is the effect, across everything?** Gollwitzer and Sheeran (2006) meta-analyzed **94 independent tests** of implementation intentions and found a positive effect on goal attainment of **medium-to-large magnitude, d = 0.65**. That is a real effect and, by the standards of behavior-change interventions, a good one.
+
+**Two honest qualifications, and they matter.**
+
+- **That 2006 figure is for implementation intentions on their own, not for MCII.** They are different interventions, tested in different literatures. Do not import d = 0.65 into a claim about the four-step method. The MCII-specific number is smaller, and you will meet it in Section 5.
+- **A 2006 meta-analysis of this kind reflects the publication practices of its era.** Psychology's reckoning with publication bias, small samples, and unreplicated results largely postdates it. That does not make it wrong. It does mean you should treat d = 0.65 as **the best summary available from that body of work**, not as a physical constant.
+
+:::reveal Someone says an if-then plan is "just a fancy way of telling yourself to have more willpower." Why is that exactly backwards? ||| Because the plan is a **design pattern for a person who runs out of willpower**, which is everyone. It **delegates control of the action to a situational cue** (Gollwitzer, 1999), so the decision gets made in advance, while you are calm, instead of at 9 pm when you are depleted. The cue becomes easier to notice, and the response becomes easier to launch, because it is already chosen. It removes the need for willpower at the moment of truth rather than demanding more of it.
+
+## Sources
+- Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. *American Psychologist, 54*(7), 493-503. https://doi.org/10.1037/0003-066X.54.7.493
+- Gollwitzer, P. M., & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. *Advances in Experimental Social Psychology, 38*, 69-119. https://doi.org/10.1016/S0065-2601(06)38002-1`,
+    },
+    {
+      slug: "mcii-writing-a-good-if-then",
+      title: "13 · How to write an if-then that actually fires",
+      section: "Section 3 · Implementation intentions: the trigger",
+      recallContent: [
+        {
+          prompt: "How does an implementation intention work, mechanically?",
+          answer:
+            "It delegates control of the response to an anticipated situational cue. The cue becomes easier to notice, and the response is pre-chosen, so no decision has to be made at the moment of truth (Gollwitzer, 1999).",
+        },
+        {
+          prompt: "What did Gollwitzer and Sheeran (2006) find, and what are the two caveats on using that number?",
+          answer:
+            "Across 94 independent tests, implementation intentions had a medium-to-large effect on goal attainment (d = 0.65). Caveats: it is for implementation intentions ALONE, not MCII, and it predates psychology's reckoning with publication bias.",
+        },
+      ],
+      body: `Most if-then plans fail because they are not if-then plans. They are wishes with the word "if" in front of them. Here is the craft.
+
+**Rule 1: the IF must be detectable.** You have to be able to *notice* it happening, in the moment, without effort. Detectable cues are times, places, objects, actions, and bodily states.
+
+| Bad IF | Why it fails | Good IF |
+| --- | --- | --- |
+| "If I have time..." | You will never detect this. Nobody has ever noticed the arrival of "time." | "If it is 7:30 am and I am in the kitchen..." |
+| "If I feel motivated..." | Motivation is precisely what will be missing | "If I finish brushing my teeth..." |
+| "If work is not too busy..." | Vague, and it is a permission slip | "If I close my laptop at the end of the day..." |
+
+**Rule 2: the THEN must be an action you can start immediately.** Not a result, not a quantity, not a mood. Something your hands can begin doing within about five seconds of the cue.
+
+| Bad THEN | Why it fails | Good THEN |
+| --- | --- | --- |
+| "...then I will be more focused." | Not an action. You cannot start "being focused." | "...then I will put my phone in the drawer and open the document." |
+| "...then I will do two hours of study." | A quantity, so it is a negotiation, and you will lose | "...then I will open the book and read one page." |
+| "...then I will eat healthier." | A direction, not a move | "...then I will fill a glass of water and take the fruit from the top shelf." |
+
+**Rule 3: build the IF out of the obstacle you found in Section 2.** This is where the two halves of the method fuse, and it is the single most important sentence in this course. **The obstacle IS the trigger.**
+
+Go and look at your obstacle. If you did the work in Lesson 7, it is a thought, a feeling, a habit, or a state, and it is concrete. Now write:
+
+> **If [my obstacle happens], then I will [the specific action that defeats it].**
+
+That sentence is the fourth step of the method, and it is why the obstacle step is not a therapy exercise. You were not identifying your obstacle in order to understand yourself. You were **harvesting a trigger.**
+
+**Rule 4: two flavors, and you want both eventually.** An if-then can be *obstacle-triggered* ("If I reach for my phone on the sofa, then I will stand up and go to the desk") or *opportunity-triggered* ("If I sit down on the train, then I will open the flashcards"). The obstacle-triggered one is the heart of the method, because it is what mental contrasting hands you. The opportunity-triggered one is a good second plan, because it catches the moments when the obstacle never even shows up.
+
+**Rule 5: say it, and mean it, as a commitment, not a hypothesis.** Gollwitzer's phrasing carries an exclamation mark for a reason. "When situation x arises, I will perform response y!" You are not predicting your future behavior. You are deciding it, now, in advance.
+
+**Rule 6: keep it small enough to be embarrassing.** If your THEN feels too easy, it is probably correct. The plan's job is to get you *started*, and the research on the Christmas reports found exactly that: implementation intentions promote goal attainment by **helping people get started** (Gollwitzer, 1999). Nobody has ever failed at a goal because their first action was too small.
+
+:::reveal What is wrong with "If I have time this week, then I will work on my portfolio," and how would you fix it? ||| Both halves are broken. The IF is **not detectable**: nobody ever notices "time" arriving, so the cue will never fire. The THEN is **not an immediately startable action**: "work on my portfolio" is a project, not a move your hands can begin in five seconds. A fixed version builds the IF out of your actual obstacle and shrinks the THEN until it is almost embarrassing: **"If I sit down on the sofa after dinner, then I will stand up, go to the desk, and open the portfolio file."**
+
+## Sources
+- Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. *American Psychologist, 54*(7), 493-503. https://doi.org/10.1037/0003-066X.54.7.493
+- Gollwitzer, P. M., & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. *Advances in Experimental Social Psychology, 38*, 69-119. https://doi.org/10.1016/S0065-2601(06)38002-1`,
+    },
+    {
+      slug: "mcii-exercise-fix-the-plan",
+      title: "14 · Practice: fix the broken if-then",
+      section: "Section 3 · Implementation intentions: the trigger",
+      body: `Every plan below is broken. For each one, name the single word that describes what is wrong with it, or supply the missing piece.
+
+Answer with one word unless the item says otherwise. Spelling is forgiving. When you are finished, go and apply the same test to the plan you are about to write for your own goal.`,
+      exercise: {
+        instructions:
+          "Diagnose each broken if-then plan. Answer with one word. Use IF when the problem is the trigger (not detectable), THEN when the problem is the action (not immediately startable), or BOTH when neither half works.",
+        items: [
+          {
+            prompt: "\"If I have some free time, then I will study.\" Which half is broken: if, then, or both?",
+            answer: "both",
+            explanation:
+              "The IF is undetectable (nobody notices 'free time' arriving) and the THEN is a project, not a move you can start in five seconds.",
+          },
+          {
+            prompt: "\"If I sit down at my desk after breakfast, then I will be more productive.\" Which half is broken?",
+            answer: "then",
+            explanation:
+              "The IF is excellent: a place plus a time, fully detectable. The THEN is not an action. You cannot start 'being productive'. Replace it with the first physical move.",
+          },
+          {
+            prompt: "\"If I feel motivated, then I will open the running app and put my shoes on.\" Which half is broken?",
+            answer: "if",
+            explanation:
+              "The THEN is fine (two concrete moves). The IF fails badly: motivation is precisely the thing that will be missing, so the cue will never fire.",
+          },
+          {
+            prompt: "\"If work isn't too crazy, then I will get healthier.\" Which half is broken?",
+            answer: "both",
+            explanation:
+              "The IF is a vague permission slip and the THEN is a direction rather than a move. This is a wish with the word 'if' in front of it.",
+          },
+          {
+            prompt: "\"If I close my laptop at 6pm, then I will do three hours of guitar practice.\" Which half is broken?",
+            answer: "then",
+            explanation:
+              "A quantity turns the THEN into a negotiation, and at 6pm you will lose it. Shrink it: 'then I will take the guitar off the wall and play one scale.'",
+          },
+          {
+            prompt: "In Section 2 you found your inner obstacle. In an if-then plan, that obstacle becomes the ___.",
+            answer: "trigger",
+            accept: ["if", "cue"],
+            explanation:
+              "The obstacle IS the trigger. That is why the obstacle step is a specification, not a therapy exercise: you were harvesting a cue.",
+          },
+          {
+            prompt: "A good THEN should be small enough to feel almost ___.",
+            answer: "embarrassing",
+            accept: ["easy", "too easy", "silly"],
+            explanation:
+              "The plan's job is to get you STARTED. Gollwitzer (1999) reports that implementation intentions work largely by helping people get started.",
+          },
+          {
+            prompt: "A cue you can actually notice in the moment (a time, a place, an object, an action, a bodily state) is called a ___ cue.",
+            answer: "detectable",
+            accept: ["concrete", "specific"],
+            explanation:
+              "Rule 1. If you cannot notice it happening without effort, the plan will never fire, no matter how good the intention behind it.",
+          },
+          {
+            prompt: "\"If I reach for my phone on the sofa, then I will stand up and go to the desk\" is an obstacle-triggered plan. \"If I sit down on the train, then I will open my flashcards\" is an ___-triggered plan.",
+            answer: "opportunity",
+            explanation:
+              "Both are useful. Obstacle-triggered plans are the heart of MCII, because mental contrasting hands you the obstacle. Opportunity-triggered plans catch moments the obstacle never reaches.",
+          },
+          {
+            prompt: "\"I intend to get fit.\" What kind of intention is that (one word: goal or implementation)?",
+            answer: "goal",
+            explanation:
+              "Goal intentions have the structure 'I intend to reach x!' and link your self to an end state. They are necessary and, on their own, insufficient (Gollwitzer, 1999).",
+          },
+          {
+            prompt: "\"When I get off the bus at my stop, I will walk the last mile home!\" What kind of intention is that?",
+            answer: "implementation",
+            accept: ["implementation intention", "if-then"],
+            explanation:
+              "It links a specific SITUATION to a specific RESPONSE, which is the structure Gollwitzer (1999) defines.",
+          },
+          {
+            prompt: "Gollwitzer and Sheeran (2006) pooled 94 independent tests. Was their d = 0.65 an effect for implementation intentions alone, or for the full four-step method? (one word: alone, or four-step)",
+            answer: "alone",
+            accept: ["implementation intentions alone", "alone."],
+            explanation:
+              "It is for implementation intentions ALONE. Do not import it into a claim about MCII, whose pooled effect is smaller (Section 5).",
+          },
+        ],
+      },
+    },
+    {
+      slug: "mcii-quiz-implementation-intentions",
+      title: "15 · Quiz: implementation intentions",
+      section: "Section 3 · Implementation intentions: the trigger",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the structure of a GOAL intention?",
+            options: [
+              "\"When situation x arises, I will perform response y!\"",
+              "\"I intend to reach x!\"",
+              "\"If I fail, then I will try again.\"",
+              "\"I wish I could reach x.\"",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A goal intention names an end point and links your SELF to it (Gollwitzer, 1999). It produces commitment, and on its own it is not enough.",
+            sourceLessonSlug: "mcii-goal-vs-implementation-intention",
+          },
+          {
+            prompt: "What is the structure of an IMPLEMENTATION intention?",
+            options: [
+              "\"I intend to reach x!\"",
+              "\"When situation x arises, I will perform response y!\"",
+              "\"I hope situation x does not arise.\"",
+              "\"I will try my best at x.\"",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is subordinate to a goal intention and specifies the when, where, and how, linking a SITUATION to a RESPONSE (Gollwitzer, 1999).",
+            sourceLessonSlug: "mcii-goal-vs-implementation-intention",
+          },
+          {
+            prompt: "In the Christmas-report study, what proportion of implementation-intention students completed the report on time, versus controls?",
+            options: [
+              "Half, versus a quarter",
+              "Three quarters, versus one third",
+              "Everyone, versus half",
+              "One third, versus three quarters",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Three quarters versus one third (Gollwitzer & Brandstätter, 1997, as reported in Gollwitzer, 1999). The only difference was specifying a when and a where.",
+            sourceLessonSlug: "mcii-goal-vs-implementation-intention",
+          },
+          {
+            prompt: "In Orbell, Hodgkins, and Sheeran (1997), what made the breast-self-examination result so striking?",
+            options: [
+              "The implementation-intention group wanted it more than the control group",
+              "Goal intention was held constant: all the women already strongly intended to do it, and only the presence of a when-and-where plan differed (100% vs 53%)",
+              "The control group had no intention to do it at all",
+              "The effect only appeared after two years",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It isolates the intention-behavior gap: same intention, different follow-through, closed by one written sentence.",
+            sourceLessonSlug: "mcii-goal-vs-implementation-intention",
+          },
+          {
+            prompt: "How should you treat that 100%-versus-53% figure?",
+            options: [
+              "As a law you can quote confidently: if-then plans double your follow-through",
+              "With care: it is a SINGLE 1997 study with a modest sample, and clean numbers like 100% rarely survive replication at that magnitude. Trust the direction, not the size",
+              "As fabricated, since 100% is impossible",
+              "As irrelevant, since it is old",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The direction of the effect is supported by a large later literature. The magnitude in any single striking study is usually its least reliable feature.",
+            sourceLessonSlug: "mcii-goal-vs-implementation-intention",
+          },
+          {
+            prompt: "Mechanically, why does an if-then plan work?",
+            options: [
+              "It increases your motivation to reach the goal",
+              "It delegates control of the response to an anticipated situational cue, so the decision is made in advance rather than at the moment of truth",
+              "It makes the goal seem more important",
+              "It creates guilt, which drives action",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The cue becomes easier to notice and the response is pre-chosen, so no willpower is required at the moment you have least of it (Gollwitzer, 1999).",
+            sourceLessonSlug: "mcii-how-if-then-works",
+          },
+          {
+            prompt: "\"Just have more discipline\" is not competing advice against implementation intentions. Why not?",
+            options: [
+              "Because discipline does not exist",
+              "Because it is a description of the PROBLEM. The method is a design pattern for a person who runs out of willpower, which is everyone",
+              "Because discipline works better",
+              "Because implementation intentions require even more discipline",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The method removes the need for willpower at the moment of truth rather than demanding more of it.",
+            sourceLessonSlug: "mcii-how-if-then-works",
+          },
+          {
+            prompt: "Gollwitzer and Sheeran (2006) meta-analyzed how many independent tests, and found what effect size?",
+            options: [
+              "24 tests, g = 0.34",
+              "94 tests, d = 0.65 (medium-to-large)",
+              "317 tests, d = 0.36",
+              "12 tests, d = 1.20",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A real, and by behavior-change standards good, effect for implementation intentions on goal attainment.",
+            sourceLessonSlug: "mcii-how-if-then-works",
+          },
+          {
+            prompt: "What is the most important caveat about applying d = 0.65 to the four-step method?",
+            options: [
+              "There is none: it applies directly",
+              "It is the effect of implementation intentions ALONE, a different intervention from MCII, whose pooled effect is smaller",
+              "It only applies to students",
+              "It was later retracted",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two different literatures. Importing the implementation-intention number into an MCII claim would overstate the evidence.",
+            sourceLessonSlug: "mcii-how-if-then-works",
+          },
+          {
+            prompt: "Which of these is a properly detectable IF?",
+            options: [
+              "\"If I have time...\"",
+              "\"If it is 7:30 am and I am in the kitchen...\"",
+              "\"If I feel motivated...\"",
+              "\"If work is not too busy...\"",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A time plus a place. Detectable cues are times, places, objects, actions, and bodily states. The other three cannot be noticed in the moment.",
+            sourceLessonSlug: "mcii-writing-a-good-if-then",
+          },
+          {
+            prompt: "Which of these is a properly formed THEN?",
+            options: [
+              "\"...then I will be more focused.\"",
+              "\"...then I will put my phone in the drawer and open the document.\"",
+              "\"...then I will do two hours of study.\"",
+              "\"...then I will eat healthier.\"",
+            ],
+            correctIndex: 1,
+            explanation:
+              "An action your hands can begin within seconds. A mood is not an action, a quantity is a negotiation, and a direction is not a move.",
+            sourceLessonSlug: "mcii-writing-a-good-if-then",
+          },
+          {
+            prompt: "How do the two halves of MCII fuse together?",
+            options: [
+              "The wish becomes the THEN",
+              "The obstacle found by mental contrasting BECOMES the trigger (the IF) of the implementation intention",
+              "The outcome becomes the IF",
+              "They do not fuse; they are run separately on different goals",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This is why the obstacle must be inner and detectable. You were not identifying it to understand yourself. You were harvesting a trigger.",
+            sourceLessonSlug: "mcii-writing-a-good-if-then",
+          },
+          {
+            prompt: "What is the difference between an obstacle-triggered and an opportunity-triggered if-then plan?",
+            options: [
+              "Obstacle-triggered plans fire when your obstacle shows up; opportunity-triggered plans fire on a good moment for the action, even when the obstacle never appears",
+              "Opportunity-triggered plans are always superior",
+              "They are two names for the same thing",
+              "Obstacle-triggered plans are for health goals only",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Obstacle-triggered plans are the heart of MCII because contrasting hands you the obstacle. Opportunity-triggered plans are a good second plan.",
+            sourceLessonSlug: "mcii-writing-a-good-if-then",
+          },
+          {
+            prompt: "Why should the THEN be small enough to feel almost embarrassing?",
+            options: [
+              "To lower your expectations of success",
+              "Because the plan's job is to get you STARTED, and implementation intentions work largely by helping people get started",
+              "Because small goals matter more than big ones",
+              "Because it makes the plan easier to memorize",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Gollwitzer (1999) reports that implementation intentions promote goal attainment by helping people get started. Nobody ever failed because their first action was too small.",
+            sourceLessonSlug: "mcii-writing-a-good-if-then",
+          },
+          {
+            prompt: "Rewrite: \"If I have time this week, then I will work on my portfolio.\" Which is the best fix?",
+            options: [
+              "\"If I really want it, then I will find the time for my portfolio.\"",
+              "\"If I sit down on the sofa after dinner, then I will stand up, go to the desk, and open the portfolio file.\"",
+              "\"If this week is not too busy, then I will do four hours on my portfolio.\"",
+              "\"I intend to finish my portfolio this week!\"",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It builds the IF out of the actual obstacle (the sofa) and shrinks the THEN to a move you can start in seconds. The last option is a goal intention, not an implementation intention.",
+            sourceLessonSlug: "mcii-writing-a-good-if-then",
+          },
+        ],
+      },
+    },
   ],
 };
