@@ -677,5 +677,351 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
         ],
       },
     },
+
+    // ── Section 3 · Fire, law, and the New Deal (1911–1938) ───────────────────
+    {
+      slug: "triangle-shirtwaist-1911",
+      section: "Section 3 · Fire, law, and the New Deal (1911–1938)",
+      title: "8 · The Triangle fire, 1911 — and what it actually changed",
+      recallContent: [
+        {
+          prompt: "What was a labor injunction, and why was it so effective against strikes?",
+          answer:
+            "A judge's order — often issued without a trial and sometimes without hearing the union at all — forbidding a strike or boycott. Defy it and you went to jail for contempt, as Eugene Debs did in 1894.",
+        },
+        {
+          prompt: "What did the Norris-LaGuardia Act of 1932 do?",
+          answer:
+            "It sharply limited federal courts' power to issue injunctions in labor disputes and made yellow-dog contracts unenforceable in federal court. It did NOT give workers any right to organize.",
+        },
+      ],
+      body: `On the afternoon of **Saturday, March 25, 1911**, a fire started on the eighth floor of the Triangle Waist Company, a garment factory occupying the top three floors of a building just off Washington Square in New York City. **One hundred and forty-six workers died** — most of them young immigrant women and girls, many Italian and Eastern European Jewish, some as young as fourteen.
+
+They died because of the building, not the fire. The stairway door to Washington Place was locked — a common practice, to stop workers stealing and to funnel them past an inspection point at the end of a shift. The single fire escape buckled and collapsed. The fire department's ladders reached only to about the sixth floor. Workers who could not get out jumped from the ninth-floor windows, in view of a crowd on the street.
+
+**Three things about this story that get left out, and shouldn't be.**
+
+**One: the workers had already asked.** In 1909–1910, tens of thousands of New York shirtwaist makers — overwhelmingly young immigrant women — walked out in a strike remembered as the **Uprising of the 20,000**, demanding better pay, shorter hours, *and safety conditions*. Many shops settled. **Triangle was one of the shops that refused.** The women who died had already tried to fix this the peaceful, organized, legal way, and had been beaten.
+
+**Two: nobody went to prison.** The owners, Max Blanck and Isaac Harris, were tried for manslaughter and, on **December 27, 1911, acquitted** — the jury was not satisfied it had been proved they *knew* the door was locked. A civil settlement years later paid the families a token sum per life.
+
+**Three: what changed was state law, not federal law, and it took politics.** The fire produced the **New York State Factory Investigating Commission** (1911), which spent years inspecting workplaces and produced dozens of new **New York State** laws on fire safety, machinery guarding, and hours for women and children.
+
+Look at who ran that commission. Its leaders were state senator **Robert F. Wagner** and assemblyman **Alfred E. Smith**. One of its investigators was a young reformer named **Frances Perkins**, who had watched the fire from the street.
+
+Twenty-four years later, Robert Wagner would be the United States Senator who wrote the **National Labor Relations Act**. Frances Perkins would be Franklin Roosevelt's **Secretary of Labor** — the first woman in a US Cabinet — and one of the architects of Social Security and the Fair Labor Standards Act.
+
+So the honest version of "the Triangle fire changed America" is not that horror alone produced reform. It is that **146 deaths radicalized a specific set of politicians who were standing there, and those people were still in the room twenty-four years later when the law got written.** Outrage does not become law by itself. It becomes law when it lands on someone who later holds a pen.
+
+:::reveal What did the Triangle fire actually change, immediately — and how did it eventually reach federal law? ||| Immediately, it produced the New York State Factory Investigating Commission and dozens of NEW YORK STATE laws on fire safety, machinery and hours — not federal law. It reached federal law through people: the commission's leaders included Robert F. Wagner, who later wrote the National Labor Relations Act, and its investigators included Frances Perkins, who became FDR's Secretary of Labor.
+
+## Sources
+- Cornell University ILR School, Kheel Center. (n.d.). *The 1911 Triangle Factory Fire*. https://trianglefire.ilr.cornell.edu/
+- Cornell University ILR School, Kheel Center. (n.d.). *The trial*. The 1911 Triangle Factory Fire. https://trianglefire.ilr.cornell.edu/story/theTrial.html
+- New York State Department of Labor. (n.d.). *The Triangle Shirtwaist Factory fire and the New York State Factory Investigating Commission*. https://dol.ny.gov/triangle-factory-fire
+- U.S. Department of Labor. (n.d.). *Frances Perkins*. https://www.dol.gov/general/aboutdol/hallofsecretaries/perkins`,
+    },
+    {
+      slug: "the-wagner-act-1935",
+      section: "Section 3 · Fire, law, and the New Deal (1911–1938)",
+      title: "9 · 1935: the year organizing became a right",
+      recallContent: [
+        {
+          prompt: "What happened to the owners of the Triangle Waist Company?",
+          answer:
+            "Max Blanck and Isaac Harris were tried for manslaughter and acquitted on December 27, 1911. A civil settlement years later paid the families a token sum per life lost.",
+        },
+        {
+          prompt: "Who ran the New York Factory Investigating Commission, and why does that matter for the 1930s?",
+          answer:
+            "Robert F. Wagner and Alfred E. Smith led it, and Frances Perkins investigated for it. Wagner later wrote the National Labor Relations Act; Perkins became FDR's Secretary of Labor.",
+        },
+      ],
+      body: `Everything you have read so far happened in a country where organizing a union was **not a right**. It was, at best, something the law had stopped actively punishing.
+
+That changed on **July 5, 1935**, when President Roosevelt signed the **National Labor Relations Act** — the **Wagner Act**, after the senator from the last lesson.
+
+**What Section 7 says.** This is the sentence the rest of American labor law hangs on:
+
+> "Employees shall have the right to self-organization, to form, join, or assist labor organizations, to bargain collectively through representatives of their own choosing, and to engage in other concerted activities for the purpose of collective bargaining or other mutual aid or protection..." (National Labor Relations Act, 29 U.S.C. § 157)
+
+Read the last part again: **"other concerted activities... for mutual aid or protection."** That phrase reaches beyond unions. Two coworkers talking about their pay are engaged in concerted activity. It is the legal root of a lot of what your companion course, *Know Your Rights at Work*, teaches about what you may do on the job **today** — which is where you should go for how it applies to you now.
+
+**What the Act actually did, in plain terms:**
+
+1. **It made organizing a legal right**, not merely a tolerated activity.
+2. **It made it an "unfair labor practice" for an employer to interfere** — to fire you for organizing, to threaten you, to run a company-controlled fake union, to refuse to bargain with a union your coworkers chose (29 U.S.C. § 158(a)).
+3. **It created the National Labor Relations Board (NLRB)** — a federal agency to run union elections and enforce those rules. The government now had a referee, and a *process* replaced the street.
+4. **It required the employer to bargain** with the union a majority of workers chose. Not to agree — to bargain, in good faith.
+
+**Did it survive?** Nobody was sure. The Supreme Court had been striking down New Deal laws. In **NLRB v. Jones & Laughlin Steel Corp., 301 U.S. 1 (1937)**, the Court upheld the Wagner Act, holding that Congress could regulate labor relations in manufacturing under its power over interstate commerce (Constitution Annotated, n.d.).
+
+The effect was fast and enormous. Union membership in the United States roughly tripled between the mid-1930s and the mid-1940s. The strikes and organizing drives of that decade — you will meet them in Section 4 — were possible because, for the first time, **a worker who got fired for organizing had somewhere to go.**
+
+Which raises the obvious question, and it is the question the next lesson exists to answer:
+
+**Everyone?**
+
+:::reveal What is the single most important thing the Wagner Act (1935) did that no earlier US law had done? ||| It made organizing an affirmative legal RIGHT — Section 7 — and backed it with a federal agency (the NLRB) that could run union elections and punish employers who interfered. Earlier laws had at most stopped the courts from helping the employer; none had created a right.
+
+## Sources
+- National Labor Relations Act, 29 U.S.C. §§ 151–169 (1935). Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?path=/prelim@title29/chapter7/subchapter2&edition=prelim
+- National Labor Relations Board. (n.d.). *National Labor Relations Act*. https://www.nlrb.gov/guidance/key-reference-materials/national-labor-relations-act
+- National Labor Relations Board. (n.d.). *1935 passage of the Wagner Act*. Our history. https://www.nlrb.gov/about-nlrb/who-we-are/our-history/1935-passage-of-the-wagner-act
+- NLRB v. Jones & Laughlin Steel Corp., 301 U.S. 1 (1937). Constitution Annotated, Congress.gov. https://constitution.congress.gov/browse/essay/artI-S8-C3-7-3/ALDE_00013310/`,
+    },
+    {
+      slug: "who-the-wagner-act-left-out",
+      section: "Section 3 · Fire, law, and the New Deal (1911–1938)",
+      title: "10 · The hole in the law: who the Wagner Act left out",
+      recallContent: [
+        {
+          prompt: "Quote the core right created by Section 7 of the National Labor Relations Act.",
+          answer:
+            "Employees have the right to self-organization, to form, join, or assist labor organizations, to bargain collectively through representatives of their own choosing, and to engage in other concerted activities for the purpose of collective bargaining or other mutual aid or protection.",
+        },
+        {
+          prompt: "What case upheld the Wagner Act, and in what year?",
+          answer: "NLRB v. Jones & Laughlin Steel Corp., 301 U.S. 1 (1937).",
+        },
+      ],
+      body: `Section 7 gives rights to "**employees**." So the whole Act turns on one definition — and the definition has a list of people it says are not employees.
+
+Here is the operative text. It is still the law today, and it has never been amended on this point:
+
+> "The term 'employee' shall include any employee... **but shall not include any individual employed as an agricultural laborer, or in the domestic service of any family or person at his home**, or any individual employed by his parent or spouse, or any individual having the status of an independent contractor, or any individual employed as a supervisor, or any individual employed by an employer subject to the Railway Labor Act..." (National Labor Relations Act, 29 U.S.C. § 152(3))
+
+Farm workers. Domestic workers — housekeepers, cooks, nannies, care workers in the home.
+
+Cut out. Not by an oversight. **By a clause.**
+
+**Why this is not a technicality.**
+
+In the 1930s, agricultural and domestic labour were the occupations in which Black Americans — the great majority of whom still lived in the rural South — were overwhelmingly concentrated. To write "not agricultural laborers, not domestic servants" into a statute in 1935 was to write a very large share of Black workers out of the country's central labor law without ever using a racial word. Mexican and Mexican-American farm workers in the Southwest were removed by the same clause.
+
+The same exclusions appear in the **Social Security Act of 1935** and, in a different form, the **Fair Labor Standards Act of 1938** — the minimum-wage and overtime law. It is a pattern, not a coincidence.
+
+**Now: how sure can we be about *why*?** This is where the course makes you do the harder thing.
+
+- **The text is not in dispute.** You just read it.
+- **The effect is not in dispute.** It excluded a disproportionate share of Black and Latino workers, and that is measurable.
+- **The motive is a historical argument.** The most influential scholarly case that the exclusion was a deliberate, race-conscious concession is Juan Perea's *The Echoes of Slavery* (2011), which traces the price Southern Democrats — who chaired the key congressional committees — demanded for supporting New Deal legislation. Other scholars point out that similar exclusions existed in earlier labour statutes and were also defended on administrative grounds. **You do not have to resolve that to see clearly.** A law can be racially devastating in effect whether or not you can prove what was in a particular senator's head, and the effect is what the workers lived.
+
+**The consequence: organizing outside the law.**
+
+Because farm workers had no NLRA rights, they had no NLRB election, no protection from being fired for organizing, and no legal duty on the grower to bargain. So the great farmworker organizing of the 1960s — the grape strike and boycott led by the United Farm Workers, Cesar Chavez and Dolores Huerta — could not use the machinery every factory worker had. It had to be built out of strikes, marches, fasts, and a **consumer boycott** that reached shoppers in supermarkets thousands of miles away. That was not a stylistic choice. **It was a workaround for a legal exclusion**, and it is the direct reason farmworker organizing looks so different from auto or steel organizing.
+
+It eventually produced a law — a **state** one. California's **Agricultural Labor Relations Act of 1975** gave farm workers in that state the collective-bargaining rights the federal law had denied them for forty years. Most states still have no equivalent. **The federal exclusion is still there.**
+
+Domestic workers took even longer. New York passed the first state **Domestic Workers' Bill of Rights** in **2010**; a handful of other states have followed. The federal carve-out remains.
+
+> Dolores Huerta appears in your companion course, *Know Your Rights at Work*, among the people who changed what workers can do. Here, notice the structural point rather than the biography: **she had to invent a different kind of organizing because a clause in a 1935 statute said the ordinary kind did not apply to the people she represented.**
+
+:::reveal Which two large groups of workers does the NLRA's definition of "employee" (29 U.S.C. § 152(3)) explicitly exclude, and what is the practical consequence? ||| Agricultural laborers and domestic workers. They have no federally protected right to organize, no NLRB election, no protection from being fired for organizing, and no employer duty to bargain — which is why farmworker organizing had to be built outside the law, on strikes, marches and consumer boycotts.
+
+## Sources
+- National Labor Relations Act, 29 U.S.C. § 152(3) (1935). Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section152&edition=prelim
+- National Labor Relations Board. (n.d.). *Are you covered?* https://www.nlrb.gov/about-nlrb/rights-we-protect/the-law/employees/are-you-covered
+- Perea, J. F. (2011). The echoes of slavery: Recognizing the racist origins of the agricultural and domestic worker exclusion from the National Labor Relations Act. *Ohio State Law Journal, 72*(1), 95–138. https://lawecommons.luc.edu/facpubs/151/
+- California Agricultural Labor Relations Board. (n.d.). *The Agricultural Labor Relations Act of 1975*. State of California. https://www.alrb.ca.gov/resources/the-alra/
+- Library of Congress. (n.d.). *Dolores Huerta and the United Farm Workers*. https://guides.loc.gov/latinx-civil-rights/labor-rights`,
+    },
+    {
+      slug: "section-3-quiz",
+      section: "Section 3 · Fire, law, and the New Deal (1911–1938)",
+      title: "11 · Check yourself: fire, law, and the hole in the law",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How many workers died in the Triangle Waist Company fire on March 25, 1911?",
+            options: ["46", "146", "246", "1,146"],
+            correctIndex: 1,
+            explanation:
+              "146 workers died, most of them young immigrant women and girls. They died because of the building — a locked stairway door, a collapsing fire escape, ladders that reached only to about the sixth floor.",
+            sourceLessonSlug: "triangle-shirtwaist-1911",
+          },
+          {
+            prompt: "What is the \"Uprising of the 20,000,\" and why does the course insist on mentioning it in the Triangle lesson?",
+            options: [
+              "A 1911 protest march held after the fire",
+              "A 1909–1910 shirtwaist workers' strike demanding pay, hours AND safety — which Triangle refused to settle",
+              "The union that organized the Homestead steelworkers",
+              "A Chicago rally that preceded Haymarket",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The women who died had already tried to fix this the organized, legal way, and Triangle was one of the shops that refused to settle. The strike came BEFORE the fire.",
+            sourceLessonSlug: "triangle-shirtwaist-1911",
+          },
+          {
+            prompt: "What happened to Triangle's owners, Max Blanck and Isaac Harris?",
+            options: [
+              "Both were convicted of manslaughter and imprisoned",
+              "Both were acquitted of manslaughter on December 27, 1911",
+              "Both fled the country before trial",
+              "They were never charged",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They were tried and acquitted; the jury was not satisfied it had been proved they knew the door was locked. A later civil settlement paid families a token sum per life.",
+            sourceLessonSlug: "triangle-shirtwaist-1911",
+          },
+          {
+            prompt: "What did the Triangle fire produce IMMEDIATELY?",
+            options: [
+              "The National Labor Relations Act",
+              "The New York State Factory Investigating Commission and dozens of NEW YORK STATE safety and hours laws",
+              "The federal Occupational Safety and Health Administration",
+              "The Fair Labor Standards Act",
+            ],
+            correctIndex: 1,
+            explanation:
+              "State law, not federal. The federal consequences came later, through the PEOPLE the commission trained — Wagner and Perkins.",
+            sourceLessonSlug: "triangle-shirtwaist-1911",
+          },
+          {
+            prompt: "What is the connection between the Triangle fire and the National Labor Relations Act of 1935?",
+            options: [
+              "The Act was named after a Triangle victim",
+              "Robert F. Wagner led the Factory Investigating Commission created after the fire, and 24 years later wrote the NLRA",
+              "The Act was passed in 1911 in direct response to the fire",
+              "There is no connection; the course invented it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Frances Perkins, who watched the fire from the street and investigated for the commission, became FDR's Secretary of Labor. Outrage becomes law when it lands on someone who later holds a pen.",
+            sourceLessonSlug: "triangle-shirtwaist-1911",
+          },
+          {
+            prompt: "Section 7 of the NLRA gives employees the right to self-organize, to bargain collectively, AND to engage in what else?",
+            options: [
+              "\"Other concerted activities... for mutual aid or protection\"",
+              "\"Any lawful protest against the government\"",
+              "\"Political campaign contributions\"",
+              "\"Refusal to work for any reason\"",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That phrase reaches beyond formal unions — two coworkers discussing their pay are engaged in concerted activity. It is the root of much of what the companion course, *Know Your Rights at Work*, teaches.",
+            sourceLessonSlug: "the-wagner-act-1935",
+          },
+          {
+            prompt: "Which federal agency did the Wagner Act create?",
+            options: [
+              "The Department of Labor",
+              "The National Labor Relations Board (NLRB)",
+              "The Occupational Safety and Health Administration",
+              "The Federal Mediation and Conciliation Service",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The NLRB runs union elections and enforces the Act's unfair-labor-practice rules. A federal process replaced the street.",
+            sourceLessonSlug: "the-wagner-act-1935",
+          },
+          {
+            prompt: "Under the Wagner Act, an employer who bargains with a union chosen by a majority of workers must:",
+            options: [
+              "Agree to whatever the union demands",
+              "Bargain in good faith — but is not required to agree",
+              "Recognize the union only if the government approves each term",
+              "Pay the union's legal costs",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The duty is to bargain, not to concede. This distinction matters enormously in practice — and it is why an employer can bargain lawfully and still never sign a contract.",
+            sourceLessonSlug: "the-wagner-act-1935",
+          },
+          {
+            prompt: "In NLRB v. Jones & Laughlin Steel Corp. (1937), the Supreme Court:",
+            options: [
+              "Struck down the Wagner Act as unconstitutional",
+              "Upheld the Wagner Act under Congress's power over interstate commerce",
+              "Held that unions violate the Sherman Antitrust Act",
+              "Ordered the NLRB abolished",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Nobody was sure the Act would survive — the Court had been striking down New Deal laws. It held.",
+            sourceLessonSlug: "the-wagner-act-1935",
+          },
+          {
+            prompt: "Which two large groups of workers does the NLRA's definition of \"employee\" (29 U.S.C. § 152(3)) explicitly exclude?",
+            options: [
+              "Teachers and nurses",
+              "Agricultural laborers and domestic workers",
+              "Steelworkers and miners",
+              "Railroad engineers and pilots only",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Written into the statute as a clause, not left out by oversight. It has never been amended on this point.",
+            sourceLessonSlug: "who-the-wagner-act-left-out",
+          },
+          {
+            prompt: "Why does the exclusion of agricultural and domestic workers have a racial dimension, even though the statute uses no racial word?",
+            options: [
+              "It doesn't; the course overstates it",
+              "In the 1930s those were the occupations in which Black Americans — mostly still in the rural South — were overwhelmingly concentrated; Mexican-American farm workers were removed by the same clause",
+              "Because the NLRB refused to register Black unions",
+              "Because the Supreme Court later added a racial requirement",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A law can be racially devastating in effect without using a racial word. The same exclusions appear in the Social Security Act of 1935 — a pattern, not a coincidence.",
+            sourceLessonSlug: "who-the-wagner-act-left-out",
+          },
+          {
+            prompt: "How does this course handle the question of WHY the agricultural/domestic exclusion was written?",
+            options: [
+              "It states as settled fact that every legislator involved was motivated by racism",
+              "It separates three things: the TEXT (not in dispute), the EFFECT (not in dispute), and the MOTIVE (a historical argument, with Perea (2011) the leading case that it was deliberate)",
+              "It avoids the question entirely",
+              "It says the exclusion was purely administrative and had no racial effect",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You do not have to prove what was in a senator's head to see clearly. The effect is what the workers lived.",
+            sourceLessonSlug: "who-the-wagner-act-left-out",
+          },
+          {
+            prompt: "Why did farmworker organizing in the 1960s rely on marches, fasts and a nationwide CONSUMER BOYCOTT rather than NLRB elections?",
+            options: [
+              "Because those tactics are more effective in every industry",
+              "Because farm workers were excluded from the NLRA, so they had no NLRB election, no protection from being fired for organizing, and no employer duty to bargain",
+              "Because the UFW chose not to use the law available to it",
+              "Because boycotts were the only tactic allowed under Taft-Hartley",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It was a workaround for a legal exclusion — the direct reason farmworker organizing looks so different from auto or steel organizing.",
+            sourceLessonSlug: "who-the-wagner-act-left-out",
+          },
+          {
+            prompt: "What was the California Agricultural Labor Relations Act of 1975?",
+            options: [
+              "A federal law extending NLRA rights to all farm workers",
+              "A STATE law giving California farm workers the collective-bargaining rights federal law had denied them — most states still have no equivalent",
+              "A law banning farmworker unions in California",
+              "A Supreme Court decision on farm labor",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A state fix for a federal hole. The federal exclusion in 29 U.S.C. § 152(3) is still there.",
+            sourceLessonSlug: "who-the-wagner-act-left-out",
+          },
+          {
+            prompt: "Which state passed the first Domestic Workers' Bill of Rights, and in what year?",
+            options: ["California, 1975", "New York, 2010", "Illinois, 1935", "Texas, 1994"],
+            correctIndex: 1,
+            explanation:
+              "New York, in 2010 — seventy-five years after the federal carve-out. A handful of states have followed; the federal exclusion remains.",
+            sourceLessonSlug: "who-the-wagner-act-left-out",
+          },
+        ],
+      },
+    },
   ],
 };
