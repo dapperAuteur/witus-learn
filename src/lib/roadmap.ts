@@ -501,6 +501,25 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   club/handicap ladder, and the real openings for an amateur or entrepreneur. Unsourceable folklore
   (a Boston croquet "ban") was **cut**, not softened. \`pnpm seed:courses\` picks it up; **no
   migration**.
+- ✅ **Tennis: Play It, Read It, Work In It** (Sports) — 41 lessons across **8 sections**, each with
+  its own quiz (banks of **15–16** questions, so the 10-question attempt cap actually rotates):
+  the rules · **hitting the ball** (grips, strokes, footwork) · **strategy** (the First 4 Shots,
+  Serve +1, court geometry, doubles) · origins & amateurism · **the people** · how the sport is
+  organized · opportunities for amateurs · opportunities for entrepreneurs. **Governance is stated
+  correctly**: the **ITF publishes the Rules of Tennis**; the **ATP/WTA tours and the four Slams
+  layer their own conditions on top — and the Slams are run by their national federations and the
+  Grand Slam Board, not by the tours.** Rule numbers are read out of the ITF 2026 PDF, never guessed
+  (tie-break is Rule 5(b), not a rule of its own; service let is Rule 22; No-Ad/No-Let/match
+  tie-breaks are Appendix VI), and formats that **vary by event** are named as varying rather than
+  asserted as universal. The **equal-prize-money timeline is the honest one**: US Open **1973**
+  (first, via a boycott threat + a Bristol-Myers cheque), Australian Open **1984** → **reverted to
+  paying men more by 1996** citing TV ratings → restored **2001**; Wimbledon **2007** (22 Feb, last
+  to offer *any* equal pay); Roland-Garros **2006 champions only → 2007 full draw** (16 Mar, last to
+  *full-draw* equality) — a **34-year** climb, with the WTA's rest-of-tour pathway still pledged for
+  **2027/2033**. Covers the segregated **American Tennis Association**, **Althea Gibson**, **Arthur
+  Ashe**, **Billie Jean King**, the **Original 9**, the founding of the **WTA**, and the **Open era
+  (1968)**. **No invented statistics**: where full per-round prize-money distribution data doesn't
+  exist, the course says so instead of fabricating a table. \`pnpm seed:courses\` picks it up.
 - 🔧 **/explore is a landing page now** (\`feat/explore-landing\`) — the Commodity Map page was an
   \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
   now answers **what is this → what will my student learn → why trust it → what next**, for the
