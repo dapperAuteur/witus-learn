@@ -1502,5 +1502,435 @@ This is deliberately unglamorous. The old "contested drop ball," where two playe
         ],
       },
     },
+
+    // ────────────────── SECTION 4 · STRATEGY ──────────────────
+    {
+      slug: "football-formations",
+      title: "15 · Formations — what the numbers mean and what they hide",
+      section: "Section 4 · Strategy: how football is actually won",
+      body: `A **formation** is written as a string of numbers — 4-4-2, 4-3-3, 3-5-2 — read from the back, **not counting the goalkeeper**. So 4-3-3 is four defenders, three midfielders, three forwards. The numbers always add to **ten**, because the eleventh is in goal.
+
+Remember from Lesson 3: **no Law mentions formations.** They are pure choice.
+
+**The common shapes and what each is really trying to do.**
+
+| Formation | Shape | What it is good at | What it gives up |
+| --- | --- | --- | --- |
+| **4-4-2** | Two banks of four, two strikers | Simple, compact, defensively solid; two strikers occupy two centre-backs | Outnumbered in central midfield (2 v 3) against most modern shapes |
+| **4-3-3** | Back four, midfield three, front three | Width high up, pressing triggers, three midfielders control the centre | Full-backs get exposed when the wingers stay high |
+| **4-2-3-1** | Back four, **double pivot**, a 10 and two wingers, one striker | Very stable — two holding midfielders screen the defence | The lone striker can get isolated |
+| **3-5-2** | Three centre-backs, wing-backs, three central midfielders | Overloads midfield; wing-backs provide all the width | Enormous physical demand on wing-backs; wide areas exposed if they are caught upfield |
+| **4-4-2 diamond** | Back four, midfield diamond, two strikers | Dominates the centre; a 10 behind two strikers | Almost **no natural width** — full-backs must supply it all |
+
+**Now the important part, and it is the part TV coverage never says.**
+
+**A formation is not a shape. It is at least three shapes.** The graphic before kick-off is nearly a lie. A team lines up as one thing **in possession**, a different thing **out of possession**, and something else again **in transition**.
+
+The clearest example: a "4-3-3" defending often becomes a **4-5-1** — the two wingers drop into the midfield line, and the front three is suddenly a front one. Meanwhile a "4-3-3" *attacking* frequently becomes a **2-3-5** — the full-backs push high or tuck inside, one midfielder drops between the centre-backs, and five players occupy the last line. Same eleven, same "formation," three completely different structures inside a single minute.
+
+So when someone tells you a team "plays 4-3-3," they have told you almost nothing. The real questions are:
+
+1. **Where does the width come from?** Wingers, or full-backs, or wing-backs? Somebody must stretch the pitch, or the defence never has to move.
+2. **Who protects the space in front of the centre-backs?** If nobody does, the team is one pass from being cut open.
+3. **Who occupies the space between the opponent's midfield and defence?** That is where matches are won, and it is the hardest area of the pitch to defend.
+4. **When we lose the ball, how many players are behind it?** This is the question that decides whether an ambitious attacking shape is brave or reckless.
+
+**The principle underneath everything.** Football is a game of **creating numerical superiority** — getting more players than the opposition in the area where the ball is. Every formation is a bet about **where** you want to be strong and **where** you can afford to be weak. There is no correct formation, only a formation that suits the players you actually have and the opponent you are actually facing.
+
+Which is the honest coaching answer, and the one that will serve you best if you ever pick a team: **choose the shape that fits your players.** A 3-5-2 with wing-backs who cannot run is not a 3-5-2. It is a disaster with a nice diagram.
+
+:::reveal Someone tells you their team "plays 4-3-3." Why does that sentence tell you almost nothing? ||| Because a formation is **at least three different shapes**: one in possession, one out of possession, one in transition. A 4-3-3 typically defends as a **4-5-1** (wingers drop in) and attacks as something like a **2-3-5** (full-backs push up, a midfielder drops in). The real questions are where the **width** comes from, who **screens** the centre-backs, who occupies the space **between the lines**, and how many players are **behind the ball** when possession is lost.
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
+      recallContent: [
+        {
+          prompt: "How do you read a formation, and why do the numbers add to ten?",
+          answer:
+            "From the back, and the goalkeeper is not counted — so 4-3-3 is four defenders, three midfielders, three forwards. Ten outfield players plus the keeper makes eleven.",
+        },
+        {
+          prompt: "What is the core strategic idea every formation is a bet about?",
+          answer:
+            "Creating numerical superiority — having more players than the opposition where the ball is. Every formation chooses where to be strong and where to accept weakness.",
+        },
+      ],
+    },
+    {
+      slug: "football-in-possession",
+      title: "16 · In possession: how good teams actually move the ball",
+      section: "Section 4 · Strategy: how football is actually won",
+      body: `You have the ball. What are you trying to do?
+
+The naive answer — "go forwards" — is the reason most amateur teams look like a firework display and lose 3-0. Here is the real one.
+
+**The purpose of possession is to MOVE the opposition.** A defence that never has to move is impossible to break down. A defence that has been pulled ten yards to the left has a hole ten yards to the right. **You are not passing the ball to the ball. You are passing the ball to drag people.**
+
+**The four principles.**
+
+**1. Width and depth: make the pitch as big as you can.**
+Push players to both touchlines and get somebody in behind. This forces the defence to **spread horizontally** (covering the width) and **drop vertically** (respecting the runner in behind). A stretched defence has gaps between its players. A compact one does not. Teams that attack with everyone in a bunch in the middle are making the defenders' job trivially easy.
+
+**2. Create the passing triangle.**
+The player on the ball should always have **at least two** passing options at different angles. If the only pass available is a straight line, a single defender can block it. Triangles mean a defender must choose, and choosing means being wrong about something. This is what coaches mean by "support the ball" — and it is why the player *without* the ball is usually the one who has made the mistake when a possession breaks down.
+
+**3. Play between the lines.**
+The most valuable real estate on a football pitch is the strip of grass **between the opposition's midfield line and their defensive line**. Why? Because a player receiving there is **facing the goal** with **defenders behind them** — and the midfielders who should mark them are, by definition, in front of them and running the wrong way. This is why the "10" exists, and why the modern game obsesses over "receiving between the lines" and "playing through the lines."
+
+**4. Switch the play.**
+The single most under-used weapon in amateur football. When the opposition has shuffled everyone across to your right side to squeeze you, the whole **left** is empty. A long, flat pass across the pitch — a **switch** — forces the entire defence to sprint sideways and re-organise, and defences are at their most disorganised while moving. Grind them left, then punish them right.
+
+**Building from the back.** Modern teams pass out from the goalkeeper rather than launching the ball long. It looks like showing off. It is not. The purpose is to **invite the press**: if the opposition come forward to hunt the ball, they leave space behind themselves, and one pass through the press means you are attacking a stretched, unbalanced defence with numbers. Law 16 makes this deliberately easier — a goal kick is in play as soon as it is kicked and clearly moves, and opponents must be outside the penalty area (IFAB, 2026, Law 16).
+
+**But it is a genuine risk**, and this is the honest bit: playing out from the back with players who cannot execute it is how a team concedes an idiotic goal. If your centre-backs cannot pass under pressure, **do not do it**. A long ball into a channel is not a moral failure. It is a legitimate strategy, and some very good teams are built on it.
+
+**The counter-argument, stated fairly.** There is an entire, respectable school of football — direct play, second balls, set pieces, pressing high and going long — that wins matches and trophies. Possession is **not** a virtue in itself. A team that has 70% of the ball and does nothing with it has simply found an elaborate way to pass sideways. **What matters is what possession produces**: shots from good positions (Lesson 7).
+
+:::reveal Your opponents have crowded every player over to your right wing to trap you. What is the most valuable pass on the pitch, and why? ||| A **switch of play** — a long, flat pass to the completely empty **left** side. Defences are at their most disorganised while moving sideways, and forcing the whole block to sprint across the pitch and re-set is what creates the gap. Grinding them to one side and then punishing the other is the point of moving the ball at all.
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
+      recallContent: [
+        {
+          prompt: "What is the actual purpose of keeping possession?",
+          answer:
+            "To MOVE the opposition. A defence that never has to move cannot be broken down; a defence dragged ten yards left has a hole ten yards right. Possession that doesn't move anyone is just elaborate sideways passing.",
+        },
+        {
+          prompt: "Why is the space 'between the lines' so valuable?",
+          answer:
+            "A player receiving between the opponent's midfield and defensive lines is facing goal with defenders behind them — and the midfielders who should mark them are in front of them, running the wrong way.",
+        },
+        {
+          prompt: "Why do teams play out from the back rather than launching it long?",
+          answer:
+            "To invite the press. If opponents come forward to hunt the ball, they leave space behind — and one pass through the press means attacking a stretched defence with numbers. But it is a real risk: if your defenders can't pass under pressure, don't do it.",
+        },
+      ],
+    },
+    {
+      slug: "football-pressing-and-transitions",
+      title: "17 · Out of possession: pressing, compactness, and the five seconds that decide games",
+      section: "Section 4 · Strategy: how football is actually won",
+      body: `You do not have the ball. There are two completely different ways to not have the ball, and the difference is a strategic choice.
+
+**Option A: the high press.** Hunt the ball high up the pitch, in the opponent's half, immediately.
+
+- **The prize:** win the ball 30 yards from their goal, with their defenders facing the wrong way. The shortest route to a good chance in football is winning the ball in the opponent's defensive third.
+- **The price:** you must push your defensive line high to stay **compact**, which leaves space **behind** it. A single accurate long pass over the top can put a striker through on goal.
+- **The requirement:** everyone presses or nobody does. One player who does not sprint creates a passing lane, and the press is broken — and now you have committed eight players upfield for nothing. It is the most physically and mentally demanding thing in football.
+
+**Option B: the low block.** Drop deep, get everyone behind the ball, deny space near your own goal, and concede the ball in areas where it cannot hurt you.
+
+- **The prize:** the opposition can pass it around in front of you all day. They are welcome to. There is nowhere to go, and no space behind you to run into.
+- **The price:** you have surrendered territory and initiative. You will spend the match defending, and if you concede, you must come out of your shell and become vulnerable.
+- **This is not cowardice.** It is a completely legitimate, often brilliant strategy — especially against a stronger team — and it pairs naturally with the counter-attack.
+
+**Compactness: the concept underneath both.** In either plan, the distances between your defensive line, your midfield line, and your forward line must stay **short**. If your defence drops and your forwards do not, you have opened a 40-yard gap through the middle of your own team and the opposition will simply play in it. **The whole team moves as one block** — up together, back together, across together. Amateur teams lose because they stretch; good teams look like a net being dragged around.
+
+**The offside trap.** A defensive line can step **up** in unison at the moment a pass is played, leaving the striker in an offside position. This is legal and effective — and it is a **high-risk play**, because a single defender who does not step (or steps late) plays everyone onside, and the entire line is then behind the ball with a striker running free. Remember Law 11: the position is judged **at the moment the ball is played by the team-mate**, and **level is onside** (IFAB, 2026, Law 11). The trap has to be *early* and it has to be *together*.
+
+---
+
+**Now the most important idea in modern football: TRANSITION.**
+
+A **transition** is the moment possession changes hands. There are two.
+
+**Transition to defence (you have just LOST the ball).** This is the most dangerous moment in football, and it is not close. Why? Because you were **attacking** — which means your players are spread out, pushed high, out of position, and off balance. The opposition are, at that exact instant, **facing a disorganised team**.
+
+The response is the **counter-press**: the instant you lose the ball, the nearest two or three players attack the ball immediately and ferociously — not to tackle so much as to **deny the opponent the time to look up and start the counter**. If you win it back in those first seconds, you are attacking a defence that has already begun to think about attacking. If you fail, at least you have slowed the break long enough for your team to get back.
+
+**Transition to attack (you have just WON the ball).** The mirror image. The opposition were attacking; they are spread out and disorganised. **This is the best attacking moment you will get all match** — and it lasts about five seconds. A team that wins the ball and immediately passes it sideways has thrown that moment away. A team that wins the ball and drives forward at speed is a **counter-attack**, and counter-attacks are efficient precisely because the defence has not yet re-formed.
+
+**This is why the transition moments matter more than the possession phases.** A very well-organised defence, given time to set, is genuinely hard to break down. A defence caught in transition is not organised at all. The best teams in the world are not the ones with the prettiest passing — they are the ones who are **ruthless in the five seconds after the ball changes hands, in both directions.**
+
+:::reveal What is the most dangerous moment for a team, and why? ||| **The moment they LOSE the ball.** Because they were attacking — so their players are spread out, pushed high, out of position, and off balance. The opposition are, at that instant, facing a disorganised team. The response is the **counter-press**: attack the ball immediately with the nearest players to deny the opponent time to look up and start their counter.
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
+      recallContent: [
+        {
+          prompt: "What is a counter-press?",
+          answer:
+            "Attacking the ball immediately and ferociously in the first seconds after losing it, with the nearest two or three players — to deny the opponent time to look up and launch a counter-attack against your disorganised, spread-out team.",
+        },
+        {
+          prompt: "Why is compactness the concept underneath both the high press and the low block?",
+          answer:
+            "Because the distances between your defensive, midfield and forward lines must stay short. If the defence drops and the forwards don't, you have opened a 40-yard hole through your own team. The whole block moves as one.",
+        },
+        {
+          prompt: "Why is the offside trap high-risk?",
+          answer:
+            "One defender who fails to step up, or steps late, plays everyone onside — and the whole defensive line is then behind the ball with a striker running free. The trap must be early and it must be together.",
+        },
+      ],
+    },
+    {
+      slug: "football-set-pieces-and-watching",
+      title: "18 · Set pieces, and how to watch a match like an analyst",
+      section: "Section 4 · Strategy: how football is actually won",
+      body: `**Set pieces are the one part of football you can rehearse.**
+
+Everything else in the game is chaotic — twenty-two people improvising. But a corner, a free kick, and a throw-in are **stopped, positioned, and repeatable**. It is the only moment where a coach's plan survives contact with reality intact, and it is the reason professional clubs now employ **dedicated set-piece coaches**. If you are a small team playing a better team, set pieces are the fairest fight you will get all afternoon.
+
+**Attacking corners: the choices.**
+
+| Delivery | What it does |
+| --- | --- |
+| **Inswinger** | Curls **towards** the goal. Attacks the goalkeeper. A flick anywhere is dangerous; the keeper must commit. |
+| **Outswinger** | Curls **away** from the goal. Easier for an attacker to meet with power, and away from the keeper's reach. |
+| **Near post flick-on** | One attacker attacks the near post and glances the ball across the six-yard box for runners behind. |
+| **Short corner** | Two players, a pass, and a cross from a different angle — designed to drag defenders out and change the geometry. |
+
+**Attacking routines** are about **movement, not height.** Blocking runs (legal screening — but be careful, Law 12 makes **holding** an offence), decoy runners, a group starting together and splitting late. The point is to **create a moment of separation** between a marker and a runner. And remember from Lesson 14: there is **no offside from a corner kick** — attackers can stand wherever they like.
+
+**Defending corners: zonal vs man-marking.** Zonal marking assigns defenders to **spaces**; man-marking assigns them to **players**. Most teams now use a hybrid. Pundits love to blame "zonal marking" whenever a corner is conceded, which is mostly lazy — both systems concede goals, and both work.
+
+**Free kicks.** Direct shooting range is roughly 18-30 yards out and central. Further out or wider, it becomes a **delivery** — effectively a corner from a different angle. And the wall: Law 13 requires opponents to stay **9.15 m (10 yds)** away, and where the defending team forms a wall of **three or more**, all attacking players must stay **1 m (1 yd)** clear of it (IFAB, 2026, Law 13).
+
+**The long throw.** Genuinely underrated, entirely legal, and one of the cheapest advantages in amateur football. A throw-in launched into the penalty area is a free cross that the opposition cannot be offside against — Law 11 explicitly says **no offside from a throw-in**. One player with a long throw changes the value of every touchline in the attacking half.
+
+---
+
+**How to watch a match like an analyst.**
+
+Almost everybody watches the ball. The ball is the least informative object on the pitch. Here is a better protocol — try it for ten minutes of any match:
+
+**1. Watch the space, not the ball.** Where is the pitch **empty**? That is where the next goal comes from.
+
+**2. Pick one player and watch only them for five minutes.** Not the striker — pick a **full-back** or a **holding midfielder**. You will suddenly see the enormous amount of work that happens off the ball and never appears on a highlight reel. This single exercise will teach you more about football than a hundred hours of watching the ball.
+
+**3. Watch the defensive line.** Is it high or deep? Does it step up together? Where does it break? A back four that is not level is a back four about to concede.
+
+**4. Watch the five seconds after every turnover.** Do they counter-press or do they retreat? That one choice tells you the coach's entire philosophy.
+
+**5. Ask "who is free?"** At any moment, somebody on the pitch is unmarked. Find them before the player on the ball does. When you start beating the professionals to that answer, you are reading the game.
+
+**6. Count the chances, not the score.** A 1-0 win in which you were battered is not a good performance; a 0-2 loss in which you created eight clear chances is often a team about to go on a run. Score is a noisy signal. **Chances are the real story** — which is the whole intuition behind expected goals from Lesson 7.
+
+:::reveal Why are set pieces disproportionately valuable for a weaker team? ||| Because they are the **only rehearsable moments** in football. Open play is twenty-two people improvising, and the better team usually wins an improvisation contest. A corner or a free kick is stopped, positioned and repeatable — it is the fairest fight a weaker side will get, which is exactly why professional clubs now employ dedicated set-piece coaches.
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
+      recallContent: [
+        {
+          prompt: "Why can a long throw-in be so dangerous in the attacking half?",
+          answer:
+            "It is a free cross that the opposition cannot be offside against — Law 11 says there is no offside directly from a throw-in. One player with a long throw changes the value of every touchline.",
+        },
+        {
+          prompt: "Name three things to watch in a match instead of the ball.",
+          answer:
+            "The empty space (where the next goal comes from); one single off-ball player for five minutes (a full-back or holding midfielder); and the five seconds after every turnover (counter-press or retreat?).",
+        },
+      ],
+    },
+    {
+      slug: "football-quiz-section-4",
+      title: "Section 4 quiz · Strategy",
+      section: "Section 4 · Strategy: how football is actually won",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How is a formation read, and why do the numbers add to ten?",
+            options: [
+              "Front to back; ten because one player is always suspended",
+              "Back to front, excluding the goalkeeper — ten outfield players plus the keeper makes eleven",
+              "Back to front, including the goalkeeper",
+              "The order is arbitrary",
+            ],
+            correctIndex: 1,
+            explanation:
+              "4-3-3 = four defenders, three midfielders, three forwards. The goalkeeper is never counted, so the digits always sum to ten.",
+            sourceLessonSlug: "football-formations",
+          },
+          {
+            prompt: "Why does 'we play 4-3-3' tell you very little about a team?",
+            options: [
+              "Because 4-3-3 is illegal in most competitions",
+              "Because a formation is at least three shapes — one in possession, one out of possession, one in transition",
+              "Because formations are decided by the referee",
+              "Because all formations are functionally identical",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A 4-3-3 typically defends as a 4-5-1 (wingers drop into midfield) and attacks as something like a 2-3-5 (full-backs push up, a midfielder drops in). The kick-off graphic is nearly a lie.",
+            sourceLessonSlug: "football-formations",
+          },
+          {
+            prompt: "Which of these is the weakness of a 4-4-2 against most modern shapes?",
+            options: [
+              "It has no strikers",
+              "It is outnumbered in central midfield (two against three)",
+              "It cannot defend set pieces",
+              "It is illegal under Law 3",
+            ],
+            correctIndex: 1,
+            explanation:
+              "4-4-2 is compact and simple and its two strikers occupy two centre-backs — but two central midfielders against three is a losing count in the area that matters most.",
+            sourceLessonSlug: "football-formations",
+          },
+          {
+            prompt: "What is the actual purpose of keeping possession of the ball?",
+            options: [
+              "To run down the clock",
+              "To MOVE the opposition — a defence that never has to move cannot be broken down",
+              "To improve the team's passing statistics",
+              "To tire out the opposition's goalkeeper",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You are not passing the ball to the ball; you are passing it to drag people. A defence pulled ten yards left has a hole ten yards right. Possession that moves nobody is just elaborate sideways passing.",
+            sourceLessonSlug: "football-in-possession",
+          },
+          {
+            prompt: "Why is the space 'between the lines' the most valuable area of the pitch?",
+            options: [
+              "Because the Laws grant extra protection there",
+              "Because a player receiving there faces the goal with defenders behind them, while the midfielders who should mark them are in front and running the wrong way",
+              "Because it is closest to the goal",
+              "Because offside does not apply there",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This is why the '10' exists and why the modern game obsesses over 'receiving between the lines'. It has nothing to do with the Laws — it is pure geometry and body orientation.",
+            sourceLessonSlug: "football-in-possession",
+          },
+          {
+            prompt: "Why do teams deliberately pass out from the back instead of kicking long?",
+            options: [
+              "To show off technical ability",
+              "To invite the press — if opponents come forward to hunt the ball, they leave space behind, and one pass through the press attacks a stretched defence",
+              "Because Law 16 requires it",
+              "To reduce the goalkeeper's workload",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is a deliberate trap, made easier by Law 16 (the ball is in play the instant it is kicked and clearly moves; opponents must be outside the area). But it is a genuine risk: if your centre-backs can't pass under pressure, don't do it.",
+            sourceLessonSlug: "football-in-possession",
+          },
+          {
+            prompt: "Your opponents have crowded everyone to one flank to trap you. What is the highest-value pass?",
+            options: [
+              "A pass backwards to the goalkeeper",
+              "A switch of play — a long flat pass to the empty far side",
+              "A short pass into the crowded area",
+              "A long ball down the same flank",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Defences are at their most disorganised while moving sideways. Grind them to one side, then punish the other. The switch is the single most under-used weapon in amateur football.",
+            sourceLessonSlug: "football-in-possession",
+          },
+          {
+            prompt: "What is the trade-off of a high press?",
+            options: [
+              "It wins the ball near the opponent's goal but leaves space behind a high defensive line",
+              "It is safer than a low block in every respect",
+              "It requires only the strikers to work hard",
+              "It is prohibited above youth level",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The prize is winning the ball 30 yards from their goal with defenders facing the wrong way. The price is the space behind your high line, and the requirement is that EVERYONE presses — one player who doesn't sprint breaks it.",
+            sourceLessonSlug: "football-pressing-and-transitions",
+          },
+          {
+            prompt: "Is a low block a sign of a cowardly or unambitious team?",
+            options: [
+              "Yes — good teams always press high",
+              "No — it is a legitimate strategy that surrenders territory in exchange for denying space near your own goal, and it pairs naturally with the counter-attack",
+              "Yes, and it is penalised as time-wasting",
+              "It is only legal when a team is a player short",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Dropping deep, getting everyone behind the ball and inviting the opponent to pass it around in front of you is often brilliant, especially against a stronger side. The price is surrendering territory and initiative.",
+            sourceLessonSlug: "football-pressing-and-transitions",
+          },
+          {
+            prompt: "What is the most dangerous moment in football for a team, and why?",
+            options: [
+              "The moment they win the ball, because they may be caught out of shape",
+              "The moment they LOSE the ball — because they were attacking, so they are spread out, high, and off balance",
+              "A corner against them",
+              "The first minute of the second half",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Losing the ball while attacking hands the opposition a disorganised team to attack. This is why the counter-press exists: the nearest players attack the ball instantly to deny the opponent time to look up.",
+            sourceLessonSlug: "football-pressing-and-transitions",
+          },
+          {
+            prompt: "Why is the offside trap high-risk?",
+            options: [
+              "Because Law 11 makes it an offence",
+              "Because one defender who fails to step up (or steps late) plays everyone onside, leaving the whole line behind the ball",
+              "Because VAR always overturns it",
+              "Because it requires the goalkeeper to leave the area",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The trap is legal and effective, but it must be EARLY and TOGETHER. Remember Law 11: position is judged at the moment the ball is played, and level is onside.",
+            sourceLessonSlug: "football-pressing-and-transitions",
+          },
+          {
+            prompt: "Why are set pieces disproportionately valuable for a weaker team?",
+            options: [
+              "Because referees award more of them to underdogs",
+              "Because they are the only rehearsable moments in football — stopped, positioned, and repeatable",
+              "Because the offside law is suspended during them",
+              "Because they carry more points",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Open play is twenty-two people improvising, and the better team usually wins an improvisation contest. Set pieces are the fairest fight a weaker side gets — which is why professional clubs now employ dedicated set-piece coaches.",
+            sourceLessonSlug: "football-set-pieces-and-watching",
+          },
+          {
+            prompt: "Why is a long throw-in into the box so dangerous?",
+            options: [
+              "Because a goal can be scored directly from it",
+              "Because it is a free cross that the opposition cannot be offside against — Law 11 says no offside directly from a throw-in",
+              "Because defenders must stay 10 yards away",
+              "Because the goalkeeper may not handle it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No offside from a throw-in (Law 11). Note that a goal CANNOT be scored directly from a throw-in (Law 15) — the danger is the second contact, not the throw itself.",
+            sourceLessonSlug: "football-set-pieces-and-watching",
+          },
+          {
+            prompt: "What does an inswinging corner do that an outswinger does not?",
+            options: [
+              "It curls TOWARDS the goal, attacking the goalkeeper — a flick anywhere is dangerous and the keeper must commit",
+              "It guarantees a header on target",
+              "It removes the offside law",
+              "It must be taken with the weaker foot",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The inswinger attacks the keeper and turns any flick into a threat. The outswinger curls AWAY from goal — easier for an attacker to meet with power, and away from the keeper's reach. Different tools, different jobs.",
+            sourceLessonSlug: "football-set-pieces-and-watching",
+          },
+          {
+            prompt: "You want to actually read a match rather than just watch it. What is the single best exercise?",
+            options: [
+              "Follow the ball closely at all times",
+              "Pick one off-ball player — a full-back or holding midfielder — and watch only them for five minutes",
+              "Watch only the replays",
+              "Track the score minute by minute",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The ball is the least informative object on the pitch. Watching one off-ball player reveals the enormous volume of work that never appears on a highlight reel — and it teaches you more than a hundred hours of ball-watching.",
+            sourceLessonSlug: "football-set-pieces-and-watching",
+          },
+        ],
+      },
+    },
   ],
 };
