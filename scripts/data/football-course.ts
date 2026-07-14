@@ -3288,5 +3288,579 @@ This is why the pay-to-play problem is a **talent** problem as well as a **justi
         ],
       },
     },
+
+    // ────────────────── SECTION 8 · OPPORTUNITIES ──────────────────
+    {
+      slug: "football-refereeing",
+      title: "30 · Refereeing: the best paid job a teenager can get in football",
+      section: "Section 8 · Opportunities for amateurs and entrepreneurs",
+      body: `**Start here, because this is the most actionable lesson in the course.**
+
+If you are a high school student who loves football, **refereeing is the single most direct way to be paid BY football instead of paying for it.** It is real work, it pays properly, you can start at **13**, and there is a permanent shortage of officials — which means if you are competent and reliable, **you will get as many games as you can handle.**
+
+---
+
+**How to actually start (United States).**
+
+1. **Age.** You must be **at least 13** to create a profile in the **U.S. Soccer Learning Center** (South Texas Soccer Referees, n.d.).
+2. **The course.** The entry-level qualification is the **Grassroots referee** licence: an **online component of roughly 4.5 hours** plus an **in-person field session** (South Texas Soccer Referees, n.d.).
+3. **The cost.** It varies by state association. The South Texas association publishes a **$55** total fee for the first-time referee course; other associations publish different figures, and some bundle a starter kit. **Check your own state association's published fee — do not assume this one applies to you.**
+4. **Background check.** Required **only if you are 18 or older** (South Texas Soccer Referees, n.d.).
+5. **Gear.** A whistle, a watch, cards, a notebook, and a uniform. Law 5 actually specifies the compulsory equipment — whistle, watch, red and yellow cards, and a means of keeping a record of the match (IFAB, 2026, Law 5).
+6. **Get assigned.** Your local league or association assigns games. Say yes to everything early on.
+
+---
+
+**What it pays.**
+
+Rates are set by **each league or association**, not nationally — so the honest way to show you is to take **one association's actual published fee schedule** and let you see the shape of it. Below is the scale published by **SYA (Sports & Youth Association, Centreville, Virginia), effective Spring 2025** (SYA, 2025):
+
+**Recreational league:**
+
+| Age group | Centre referee | Assistant referee |
+| --- | --- | --- |
+| U9-U10 | $30 | $15 |
+| U11-U12 | $35 | $20 |
+| U13-U14 | $45 | $25 |
+| U15-U16 | $55 | $35 |
+| U17-U19 | $65 | $40 |
+
+**Higher-level competitive leagues (NCSL / ECNL-RL / EDP):**
+
+| Age group | Centre referee | Assistant referee |
+| --- | --- | --- |
+| U11-U12 | $70 | $35-40 |
+| U13-U14 | $75 | $35-45 |
+| U15-U16 | $80 | $40-50 |
+| U17-U19 | **$90** | $45-55 |
+
+**These are one association's published rates, in one state, for one season. Yours will differ.** Look up your own — the numbers are usually published on the league's website, exactly like this one, and if they are not, ask.
+
+**But look at the shape of it, because the shape is what matters.** A **$90** game. Referees frequently work **several matches on the same morning**, because clubs schedule back-to-back fixtures on the same fields. Do the arithmetic on a Saturday of three or four games and compare it to almost any other job available to a fifteen-year-old.
+
+---
+
+**The part nobody tells you: it is hard, and that is why it pays.**
+
+You will be shouted at. By parents, mostly. Some of them will be shouting at a fourteen-year-old about a throw-in in an under-11 game, and they will not be embarrassed about it. **Referee retention is a genuine crisis in youth sport, and abuse from adults is the reason.**
+
+So learn this before your first game:
+
+- **Know the Laws better than anyone in the ground.** You have just spent Section 3 of this course doing exactly that. When you can say "Law 11 — the second-last opponent, and hands and arms are not considered," calmly, you win the argument permanently.
+- **Be decisive.** A confident wrong decision causes less trouble than a hesitant right one. Whistle, signal, move on.
+- **Do not argue back.** You have a whistle and a notebook. You do not need to win a shouting match, and you will not.
+- **Your assignor is your ally.** Report abuse. Every time. This is not tattling; it is how the system is supposed to work, and if you do not report it, nothing changes.
+
+---
+
+**Why this is also a CAREER, not just a job.**
+
+Refereeing has a **ladder**, exactly like coaching. Grassroots → regional → national → professional → international. Referees at the top of that ladder officiate professional matches and are paid accordingly; a small number officiate at World Cups. **Every one of them started with an under-10 game on a Saturday morning and a parent screaming at them.**
+
+And even if you never climb it: **you will learn the Laws better than any player you ever meet, you will get paid every weekend of your teens, and you will understand football from the inside.**
+
+:::reveal You are 15, you have $55, and you want to earn money from football this season. What is the single most direct path — and what is the first thing you should do? ||| **Become a referee.** You can create a U.S. Soccer Learning Center profile from age **13**; the Grassroots licence takes roughly **4.5 hours online plus an in-person field session**; and a published scale like SYA's (Spring 2025) pays a centre referee **$30 at U9-U10 up to $90 at U17-U19** in top competitive leagues — often several games in one morning. **First step: look up YOUR state association's published course fee and referee pay scale** (they differ) and register for the next Grassroots course.
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*, Law 5. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en
+- South Texas Soccer Referees. (n.d.). *Referee certification and resources*. Retrieved July 2026, from https://www.stxref.org/referee/
+- SYA. (2025). *Soccer referee pay scale* (Effective Spring 2025). Sports & Youth Association, Centreville, VA. https://syasports.org/resources/referee-pay-scale/
+- U.S. Soccer. (n.d.). *U.S. Soccer Learning Center*. Retrieved July 2026, from https://learning.ussoccer.com/`,
+      recallContent: [
+        {
+          prompt: "What is the minimum age to start the US Soccer grassroots referee pathway, and what does the course involve?",
+          answer:
+            "13 — you must be at least 13 to create a U.S. Soccer Learning Center profile. The Grassroots licence is roughly 4.5 hours of online learning plus an in-person field session. A background check is required only from age 18.",
+        },
+        {
+          prompt: "Roughly what does refereeing pay, and how should you find your own rate?",
+          answer:
+            "One published example (SYA, Virginia, Spring 2025): $30 for a U9-U10 centre up to $90 for a U17-U19 centre in top competitive leagues, with several games often scheduled in one morning. Rates are set locally — look up YOUR association's published scale.",
+        },
+        {
+          prompt: "What is the single best defence against being shouted at as a young referee?",
+          answer:
+            "Knowing the Laws better than anyone in the ground, and being decisive. A confident wrong decision causes less trouble than a hesitant right one — and report abuse to your assignor every time.",
+        },
+      ],
+    },
+    {
+      slug: "football-coaching-badges",
+      title: "31 · Coaching: the licensing ladder, and how to get on it",
+      section: "Section 8 · Opportunities for amateurs and entrepreneurs",
+      body: `Coaching is a **licensed profession**, and the licence ladder is public, structured, and open to a teenager. You do **not** need to have been a professional player. Many excellent coaches were not, and some of the best managers in the world barely played at all.
+
+---
+
+**The U.S. Soccer coaching pathway.**
+
+It starts free and gets progressively more demanding:
+
+| Level | What it is |
+| --- | --- |
+| **Introduction to Grassroots Coaching** | A short, **free** online module. This is the front door — anyone can walk through it today. |
+| **Grassroots licences: 4v4, 7v7, 9v9, 11v11** | Short (around two-hour) courses, each tied to a game format. Available online and in person. **Two must be taken in person**, and one of those in-person courses must be the **11v11**, before you can move up. |
+| **National D Licence** | The **first formal licence** and the step from grassroots into competitive coaching — a multi-week course combining in-person sessions, virtual meetings, assignments and mentoring with a licensed U.S. Soccer educator. |
+| **National C Licence** | Aimed at coaching in the roughly U13-U17 environment. |
+| **National B Licence** | A months-long course focused on player and team development in a performance environment. Requires holding the C for a period, several years' coaching experience, and an active coaching role with access to 11v11 training. |
+| **National A Licence** | Typically split into **A-Youth** (developing the future professional player) and **A-Senior** (high-performance senior environments). |
+| **Pro Licence** | The top qualification — for coaching at the professional level (MLS, NWSL, USL, national teams). |
+
+**Outside the US**, the equivalent ladder in Europe runs under **UEFA's coaching convention**, with licences commonly labelled **C → B → A → Pro**, administered by each **national association** (The FA in England, the DFB in Germany, and so on). **The exact names, prerequisites and costs are set by that national association — look them up at the source for the country you are in.** Do not take a course's word for it, including this one.
+
+---
+
+**Why this is a genuinely good route for a young person.**
+
+- **You can start now.** The introductory module is free and online. The grassroots licences are short and cheap relative to almost any other professional qualification.
+- **The work exists immediately.** Youth clubs, camps, and recreational leagues need coaches constantly, and a licensed 17-year-old who is reliable, safe and organised is genuinely employable.
+- **It compounds.** Every licence unlocks the next, and every season of coaching is a prerequisite for the level above. A person who starts the ladder at 16 and keeps going is, at 26, ten years into a licensed career while their peers are just starting one.
+- **It is transferable.** Everything coaching teaches — planning a session, holding a room, giving feedback, managing conflict with parents — is a management skill in a tracksuit.
+
+---
+
+**How to actually be good at it, briefly.**
+
+- **Maximise touches.** The single most common mistake in youth coaching is drills in which twelve children stand in a line and one child touches the ball. **Small-sided games** with lots of repetitions beat elaborate exercises. If your session has a queue in it, redesign the session.
+- **Let them play.** Children learn football by playing football. A session that is 80% talking is a session about you.
+- **Coach the decision, not just the outcome.** "Good pass" teaches nothing. "You saw the switch was on — good decision" teaches the thing you actually want repeated.
+- **Safeguarding is not paperwork.** Background checks, certification, never being alone with a child, knowing your club's reporting procedure. It is the **most important part of the job** and the part that ends careers when it is neglected. Take it seriously from your very first session.
+
+:::reveal You are 16 and want to start coaching. What is the very first, free step — and what is the constraint on climbing past the grassroots level? ||| The **free online "Introduction to Grassroots Coaching" module** — that is the front door, and you can do it today. Then the grassroots licences (**4v4, 7v7, 9v9, 11v11**). The constraint: **two of the grassroots courses must be taken IN PERSON, and one of those must be the 11v11 course**, before you can progress to the **National D Licence** — the first formal licence and the step into competitive coaching.
+
+## Sources
+- U.S. Soccer. (2018, August 15). *7v7, 9v9 and 11v11 online courses complete new U.S. Soccer grassroots coaching pathway*. https://www.ussoccer.com/stories/2018/08/7v7-9v9-and-11v11-online-courses-complete-new-us-soccer-grassroots-coaching-pathway
+- U.S. Soccer. (n.d.). *U.S. Soccer Learning Center*. Retrieved July 2026, from https://learning.ussoccer.com/
+- Cal South. (n.d.). *Soccer coaching license pathway*. Retrieved July 2026, from https://calsouth.com/coaching-license-pathway/`,
+      recallContent: [
+        {
+          prompt: "What is the first step on the U.S. Soccer coaching ladder, and what does it cost?",
+          answer:
+            "The 'Introduction to Grassroots Coaching' online module — it is free and short. From there: the 4v4, 7v7, 9v9 and 11v11 grassroots licences, then the National D Licence.",
+        },
+        {
+          prompt: "What is the most common mistake in youth coaching?",
+          answer:
+            "Drills where twelve children queue and one touches the ball. Maximise touches — small-sided games with lots of repetitions beat elaborate exercises. If your session has a queue in it, redesign the session.",
+        },
+      ],
+    },
+    {
+      slug: "football-the-honest-odds",
+      title: "32 · Playing for a living: the honest odds, with the real numbers",
+      section: "Section 8 · Opportunities for amateurs and entrepreneurs",
+      body: `This lesson exists to tell you the truth, and the truth is not cruel — it is **useful**, because it lets you plan.
+
+**Almost nobody makes a living playing football.** Not "few." **Almost nobody.**
+
+---
+
+**The pathway, laid out.**
+
+In the United States, the routes are roughly:
+
+- **High school football** → the broadest base, and for most players the end of the competitive road.
+- **Club / travel football** (see Lesson 29 on what it costs) → where college recruitment actually happens.
+- **MLS NEXT** and elite academy platforms → the highest-level youth environment; some clubs' academies are free, which is a genuine and underused route.
+- **College football (NCAA Divisions I, II, III; NAIA; junior college)** → the main American pipeline, and by far the best of these options for the overwhelming majority, because **you also get a degree.**
+- **Professional: MLS, USL Championship, USL League One, NWSL**, and leagues abroad.
+
+---
+
+**Now the numbers. These are the NCAA's own, published, current figures** (NCAA Research, 2026 — high school data from the 2024-25 NFHS participation survey; college data from the NCAA's 2024-25 participation report):
+
+**Men's soccer:**
+
+| Measure | Figure |
+| --- | --- |
+| High school participants | **484,908** |
+| NCAA participants | **28,746** |
+| **% of HS players who play NCAA soccer (any division)** | **5.9%** |
+| **% who play NCAA Division I** | **1.4%** |
+
+**Women's soccer:**
+
+| Measure | Figure |
+| --- | --- |
+| High school participants | **393,048** |
+| NCAA participants | **31,200** |
+| **% of HS players who play NCAA soccer (any division)** | **7.9%** |
+| **% who play NCAA Division I** | **2.8%** |
+
+**Read those Division I rows again.** Roughly **1 in 71** high school boys and **1 in 36** high school girls will play Division I college soccer. And **Division I college soccer is not professional football.** It is the step before people even begin to think about professional football.
+
+---
+
+**"So what percentage go pro?"**
+
+**The NCAA does not publish that number for soccer — and the reason is itself worth learning.**
+
+The NCAA's professional-probability tables are built from **draft data**. But **men's soccer is excluded** from those tables, because professional opportunity in men's soccer is not funnelled through a single draft — players sign with MLS, USL, and clubs all over the world by many different routes. And the **NWSL is excluded too**, because it has **discontinued its draft** altogether (NCAA Research, 2026). No draft, no draft data, no probability table.
+
+So: **anyone who quotes you a precise "X% of high school players turn pro" figure for soccer is quoting a number that the sport's own major statistical authority declines to publish.** Ask them where it came from.
+
+**What we can say honestly:** if only 1.4% of high school boys reach Division I, and professional football is a further, far narrower filter applied on top of that — recruiting globally, from a planet's worth of players — then the probability that any given high school player becomes a professional footballer is **very small indeed**. You do not need a decimal point to make the decision this fact implies.
+
+---
+
+**So what should you actually do? Four things, and they are not "give up."**
+
+**1. Play. Really play.** The odds are an argument against *betting your future* on football. They are **not** an argument against playing. Football will give you fitness, friends, discipline and joy for your entire life, and none of that requires a professional contract.
+
+**2. Take the college route seriously — for the degree.** College soccer is a genuinely great outcome: you play at a high level **and** you leave with a qualification that works whether or not football does. Play in high school **and** club, get your grades, and understand that coaches recruit players they can actually admit.
+
+**3. Have the other plan, and have it EARLY.** Not "if football fails." **Alongside.** Every academy prospectus in the world says this and a great many families ignore it. Do not ignore it. The 16-year-old who is released and has nothing else is the most predictable tragedy in this sport, and it is entirely preventable.
+
+**4. Point yourself at the industry, not just the pitch.** This is the real conclusion of this whole section, and it is the next lesson: **the jobs in football are not on the pitch.** For every player in a professional squad there are coaches, referees, physios, analysts, scouts, groundstaff, media, medics, kit staff, administrators, agents, commercial staff and executives. **That is where the careers are, that is where the numbers are survivable, and every single one of those people gets to spend their working life in football.**
+
+:::reveal What percentage of American high school soccer players go on to play NCAA Division I soccer — and what does the NCAA say about the odds of turning professional? ||| **1.4% of boys and 2.8% of girls** reach **NCAA Division I** (NCAA Research, 2026). Overall NCAA participation (all divisions) is **5.9%** of high school boys and **7.9%** of girls. As for turning pro: **the NCAA does not publish a probability for soccer at all** — men's soccer is excluded because professional entry is not funnelled through a draft, and the **NWSL has discontinued its draft** entirely. So anyone quoting you a precise "% who turn pro" for soccer is quoting a figure the sport's own statistical authority declines to publish.
+
+## Sources
+- NCAA Research. (2026, March). *Estimated probability of competing in college athletics: Figures and methodology*. National Collegiate Athletic Association. https://ncaaorg.s3.amazonaws.com/research/pro_beyond/RES_ProbabilityBeyondHSFiguresMethod.pdf
+- National Federation of State High School Associations. (2025). *2024-25 high school athletics participation survey*. https://www.nfhs.org/`,
+      recallContent: [
+        {
+          prompt: "What percentage of US high school soccer players reach NCAA Division I?",
+          answer:
+            "1.4% of boys and 2.8% of girls (NCAA Research, 2026, using 2024-25 data). Across all NCAA divisions it is 5.9% of boys and 7.9% of girls. Roughly 1 in 71 boys and 1 in 36 girls reach DI.",
+        },
+        {
+          prompt: "Why does the NCAA publish no high-school-to-professional probability for soccer?",
+          answer:
+            "Because its pro tables are built from DRAFT data. Men's soccer is excluded (pro entry isn't funnelled through one draft — MLS, USL, and clubs worldwide all sign players), and the NWSL is excluded because it has discontinued its draft. No draft, no data, no table.",
+        },
+        {
+          prompt: "What is the real conclusion to draw from the odds?",
+          answer:
+            "Not 'give up' — play, take the college route for the DEGREE, build the other plan ALONGSIDE (not after), and point yourself at the INDUSTRY, not just the pitch. That's where the careers, and the survivable numbers, actually are.",
+        },
+      ],
+    },
+    {
+      slug: "football-starting-a-club-or-league",
+      title: "33 · Building something: clubs, futsal leagues, and the entrepreneur's route in",
+      section: "Section 8 · Opportunities for amateurs and entrepreneurs",
+      body: `The most underrated fact about football: **the barriers to STARTING something are astonishingly low.** You need a ball, some people, and a place. Everything else is organisation — and organisation is a skill, not a birthright.
+
+---
+
+**Start a team.**
+
+A team is eleven people who agree to turn up. (Or seven, or five.) What it actually requires is:
+
+- **A place to play** — a school field, a park, a community pitch. Ask. Councils, schools and parks departments have pitches sitting empty most of the week, and are often startled that a young person has bothered to ask about them.
+- **A way to affiliate.** To play in an organised league, a team usually needs to affiliate with the local league or state association, which brings **registration** and, importantly, **insurance**. Look up your state association's requirements. This is where "a group of mates" becomes "a club."
+- **A treasurer.** Even if it is you. Money going in and out of a shared pot needs one person accountable for it, from day one, with a written record. This is the point at which most amateur organisations fail, and it is entirely avoidable.
+
+---
+
+**Start a futsal league. (Seriously.)**
+
+**Futsal** — five-a-side, indoors, on a hard court, with a smaller, heavier, low-bounce ball — is the highest-leverage business idea in this entire course, and here is why:
+
+| Futsal's property | Why it matters commercially |
+| --- | --- |
+| **Indoors** | It is **weather-proof**. Your season does not get rained off, which means your revenue does not get rained off. |
+| **Small court** | You can run it in a **school gym, a community centre, a basketball court** — spaces that already exist, that are empty in the evenings, and that can be hired cheaply. |
+| **Five-a-side** | You need **ten people**, not twenty-two. Filling a fixture is far easier. |
+| **Short matches** | You can run **many games in one evening** on one court — which is what makes the economics work. |
+| **Genuinely develops players** | The small court and heavy ball force **close control, fast decisions and constant touches**. It is not a watered-down version of football; it is a superb training environment for it. |
+
+**The model, honestly stated.** You hire a court for an evening at a fixed cost. You sell entry to teams at a price per team per season. Your revenue is (teams × fee); your cost is (court hire + balls + a referee, who might be you, now that you read Lesson 30). **If the number of teams times the fee exceeds the cost of the court, you have a business.** If it does not, you have a hobby — and you will know which within one evening, which is exactly why it is a good first venture: **the feedback is immediate and the downside is one night's court hire.**
+
+**The unglamorous parts that actually determine whether it works:** a **fixture list** people can rely on, a **results table** people can see, starting **on time**, and **insurance**. Amateur sport does not fail because the football is bad. It fails because nobody knows when they are playing, and because somebody got hurt and there was no cover.
+
+---
+
+**Other things a young person can genuinely build.**
+
+- **Coach a camp.** School holidays, younger children, parents who need childcare. Get licensed (Lesson 31), get safeguarded, charge a fair rate. This is a real, common, first business.
+- **Run a tournament.** A one-day, small-sided tournament with an entry fee per team. Logistically demanding, financially simple, and an outstanding thing to have organised at seventeen.
+- **Provide a service to clubs that already exist.** Clubs need: photography, video, social media, a website, matchday programmes, kit printing, sponsorship packages. Most amateur clubs are run by volunteers who are exhausted and would gladly pay someone competent. **Walk into a local club and ask what they cannot get done.** That question is the origin of a large number of real businesses.
+
+---
+
+**The honest warning.** Everything above is real, and all of it is **work**. Booking courts, chasing fees, writing fixture lists, dealing with a team that drops out in week three. **The football is the easy part.** But the person who has organised a futsal league at seventeen has done something almost nobody their age has done, and can prove it — and that is worth considerably more than a trophy.
+
+:::reveal Why is a futsal league a better first venture than an outdoor 11-a-side league? ||| Because almost every commercial risk is smaller. It is **indoors** (weather-proof — your revenue can't be rained off), it fits in **spaces that already exist and sit empty in the evenings** (a school gym, a community centre), it needs only **ten players** to fill a fixture rather than twenty-two, and **short matches** let you run many games on one court in one evening, which is what makes the economics work. Your downside is **one night's court hire** — and you'll know within one evening whether it's a business or a hobby.
+
+## Sources
+- U.S. Soccer. (n.d.). *U.S. Soccer Learning Center*. Retrieved July 2026, from https://learning.ussoccer.com/`,
+      recallContent: [
+        {
+          prompt: "What are the two things that most often kill an amateur sports organisation?",
+          answer:
+            "Money with nobody accountable for it (get a treasurer and a written record from day one), and unreliability — no fixture list, no table, no punctuality. Plus no insurance. Amateur sport rarely fails because the football is bad.",
+        },
+        {
+          prompt: "What is the simplest test of whether a futsal league is a business?",
+          answer:
+            "Teams × entry fee versus court hire + balls + referee. If revenue exceeds cost, it's a business; if not, it's a hobby. The downside is one night's court hire, and you find out immediately — which is what makes it a good first venture.",
+        },
+      ],
+    },
+    {
+      slug: "football-jobs-around-the-game",
+      title: "34 · The jobs that actually exist: where football's careers really are",
+      section: "Section 8 · Opportunities for amateurs and entrepreneurs",
+      body: `**The last lesson gave you the odds of playing. This one gives you the alternative — and it is much, much bigger than the pitch.**
+
+A professional club fields eleven players. It **employs** — directly or through the industry around it — a great many more people than that, none of whom had to be good enough to play.
+
+---
+
+**The jobs, and what they actually are.**
+
+**Officiating.** Covered in Lesson 30. Pays immediately, starts at 13, has a ladder to the professional game.
+
+**Coaching.** Covered in Lesson 31. Licensed, laddered, and hiring constantly at the youth level.
+
+**Grounds and pitch management.** A **groundskeeper** is an applied scientist. Soil, drainage, grass species, seed, irrigation, disease, fertiliser, mowing height, wear patterns, and — increasingly — hybrid natural/artificial surfaces (which Law 1 explicitly permits where competition rules allow). Every club, school, university, park and stadium needs its pitches maintained. It is **skilled**, **licensed** in places, **outdoors**, and there is genuine demand. Almost no teenager considers it, which is precisely the point.
+
+**Sports medicine and performance.** Physiotherapists, athletic trainers, doctors, sports scientists, strength and conditioning coaches, nutritionists, and — a fast-growing area — **rehabilitation** and **injury-prevention** specialists. These are qualified professions with real training routes, and they exist at every level from a college programme upward.
+
+**Performance analysis.** The person who codes every match, tags every event, builds the opposition report, and hands the coach the clips that decide the team talk. **This is now a standard role at professional clubs**, and it is one of the most accessible ways in for a young person who is good with a laptop, because the entry test is a **portfolio**, not a CV. **Analyse a match. Write it up. Publish it. Do it again.** Do that fifty times and you have something almost nobody else applying has.
+
+**Data and recruitment analytics.** Clubs employ statisticians and data scientists to value players and model outcomes (expected goals, from Lesson 7, is the most famous product of this field). If you like maths and football, this is a real, growing, well-paid job — and it did not exist twenty-five years ago.
+
+**Scouting.** Watching matches, identifying players, writing reports. Traditionally an apprenticeship built on trust and mileage; increasingly a hybrid of **video, data and live viewing**. Start by writing scouting reports on players in your own local league. Nobody will stop you, and it is exactly what the job is.
+
+**Media, broadcast and content.** Commentary, journalism, podcasting, video, social media, club channels. Every club and league is now also a **media company**. The barrier to producing football media is currently **zero**, and the barrier to being **good** at it is the only real filter.
+
+**Club operations, commercial and community.** Ticketing, sponsorship, matchday operations, merchandise, community programmes, safeguarding, finance, and running the actual organisation. **These are ordinary professional jobs, in football.** A club needs an accountant just as much as a hospital does.
+
+**Kit, equipment, facilities, security, hospitality.** Real jobs. Real people. Every matchday.
+
+---
+
+**The economics of a lower-league club — and how to find them out for yourself.**
+
+Here is the honest structure, without numbers I cannot source:
+
+**Revenue** typically comes from **matchday** (tickets, food, bar), **commercial** (sponsorship, advertising, merchandise), **broadcast** (large at the top, small or nonexistent lower down), **player sales** (a genuine and sometimes dominant income line for a small club that develops well), and increasingly **community and facility hire** (the ground earning money on the days there is no match).
+
+**Costs** are dominated — overwhelmingly — by **player and staff wages**. Then the stadium, the pitch, travel, insurance, and the academy.
+
+**And the structural trap:** the way to earn more revenue is to be promoted, and the way to be promoted is to spend more on wages — so clubs spend beyond their income chasing promotion, and many **lose money**. Financial distress and even insolvency are **common** in lower-league football. This is a genuine, recurring, well-documented feature of the pyramid, and it is the price of the open ladder we praised in Lesson 24.
+
+**Now here is the thing you should actually take away.** **You can check all of this yourself.** In England, football clubs are **companies**, and companies **file their accounts publicly** — you can read the real revenue and wage bill of a real football club, for free, at Companies House. Many clubs in other countries publish accounts too. **A course can tell you that wages dominate costs. A published set of accounts can PROVE it to you — and finding that out for yourself is exactly the skill this entire course has been trying to teach.**
+
+---
+
+**The closing point of this whole course.**
+
+You are extremely unlikely to be paid to play football. You are **very likely indeed** to be able to build a life **in** football if you want one — as a referee, a coach, an analyst, a scout, a physio, a groundskeeper, a journalist, an administrator, or the person who started the futsal league.
+
+**Almost nobody makes a living playing. The surrounding industry is where the jobs actually are — and it is enormous.** Go and find your part of it.
+
+:::reveal You want a job in football analysis and you are 17 with no contacts. What is the entry test, and what should you do this week? ||| The entry test is a **portfolio, not a CV** — nobody is checking your credentials, they are checking your work. So: **analyse a match. Write it up. Publish it. Do it again.** Do that fifty times and you have something almost nobody else applying has. The same logic applies to scouting (write reports on players in your own local league) and to football media (the barrier to producing it is zero; the barrier to being good at it is the only filter).
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*, Law 1. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en
+- NCAA Research. (2026, March). *Estimated probability of competing in college athletics: Figures and methodology*. National Collegiate Athletic Association. https://ncaaorg.s3.amazonaws.com/research/pro_beyond/RES_ProbabilityBeyondHSFiguresMethod.pdf`,
+      recallContent: [
+        {
+          prompt: "What is the entry test for a job in football analysis or scouting?",
+          answer:
+            "A PORTFOLIO, not a CV. Analyse a match, write it up, publish it, repeat. Write scouting reports on players in your own local league. Nobody will stop you — and it is literally what the job is.",
+        },
+        {
+          prompt: "What dominates the costs of a lower-league club, and what is the structural trap?",
+          answer:
+            "Player and staff WAGES dominate. The trap: more revenue requires promotion, and promotion requires spending more on wages — so clubs overspend chasing it, and financial distress is common. It is the price of the open pyramid.",
+        },
+        {
+          prompt: "How can you verify a club's finances yourself?",
+          answer:
+            "In England, clubs are companies and file accounts publicly — you can read a real club's revenue and wage bill free at Companies House. A course can tell you wages dominate; published accounts can PROVE it.",
+        },
+      ],
+    },
+    {
+      slug: "football-quiz-section-8",
+      title: "Section 8 quiz · Opportunities for amateurs and entrepreneurs",
+      section: "Section 8 · Opportunities for amateurs and entrepreneurs",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the minimum age to begin the U.S. Soccer grassroots referee pathway?",
+            options: ["16", "13", "18", "21"],
+            correctIndex: 1,
+            explanation:
+              "You must be at least 13 to create a profile in the U.S. Soccer Learning Center. A background check is required only from age 18 — so a 13-to-17-year-old can be certified and working.",
+            sourceLessonSlug: "football-refereeing",
+          },
+          {
+            prompt: "What does the U.S. Soccer Grassroots referee course involve?",
+            options: [
+              "A four-year apprenticeship",
+              "An online component of roughly 4.5 hours plus an in-person field session",
+              "A written exam only, taken at a FIFA centre",
+              "Playing at college level first",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Roughly 4.5 hours online plus an in-person field session. Course fees vary by state association — one published example is $55 — so look up YOUR association's fee rather than assuming.",
+            sourceLessonSlug: "football-refereeing",
+          },
+          {
+            prompt: "According to SYA's published Spring 2025 scale, what does a centre referee earn for a U17-U19 match in a top competitive league?",
+            options: ["$15", "$30", "$90", "$250"],
+            correctIndex: 2,
+            explanation:
+              "$90 — and referees often work several matches in one morning, because clubs schedule back-to-back fixtures. Note this is ONE association's published rate in one state; rates are set locally and yours will differ.",
+            sourceLessonSlug: "football-refereeing",
+          },
+          {
+            prompt: "What is the best defence for a young referee against abuse from adults?",
+            options: [
+              "Arguing back forcefully",
+              "Knowing the Laws better than anyone in the ground, being decisive, and reporting abuse to your assignor every time",
+              "Avoiding difficult decisions",
+              "Only refereeing matches involving friends",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A confident wrong decision causes less trouble than a hesitant right one. And reporting abuse is not tattling — it is how the system is supposed to work. Referee retention is a genuine crisis, and adult abuse is the cause.",
+            sourceLessonSlug: "football-refereeing",
+          },
+          {
+            prompt: "What is the free first step on the U.S. Soccer coaching ladder?",
+            options: [
+              "The National D Licence",
+              "The 'Introduction to Grassroots Coaching' online module",
+              "The UEFA B Licence",
+              "The Pro Licence",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A short, free online module — the front door, and you can walk through it today. Then the 4v4, 7v7, 9v9 and 11v11 grassroots licences, then the National D.",
+            sourceLessonSlug: "football-coaching-badges",
+          },
+          {
+            prompt: "What must you do before progressing from the grassroots licences to the National D?",
+            options: [
+              "Have played professionally",
+              "Take at least two grassroots courses IN PERSON, one of which must be the 11v11 course",
+              "Coach for ten years",
+              "Pass a written exam set by FIFA",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two of the grassroots courses must be in person, and one of those must be the 11v11. You do NOT need to have played professionally — many excellent coaches never did.",
+            sourceLessonSlug: "football-coaching-badges",
+          },
+          {
+            prompt: "What is the most common mistake in youth coaching sessions?",
+            options: [
+              "Too much small-sided play",
+              "Drills where twelve children queue and one touches the ball — a session with a queue in it needs redesigning",
+              "Letting children play without instruction",
+              "Coaching decisions rather than outcomes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Maximise touches. Children learn football by playing football, and a session that is 80% talking is a session about you.",
+            sourceLessonSlug: "football-coaching-badges",
+          },
+          {
+            prompt: "What percentage of US high school MEN'S soccer players go on to play NCAA Division I soccer?",
+            options: ["1.4%", "5.9%", "15%", "0.01%"],
+            correctIndex: 0,
+            explanation:
+              "1.4% reach Division I; 5.9% reach the NCAA at any division (NCAA Research, 2026, from 2024-25 data). Roughly 1 in 71 high school boys reaches DI — and DI is not professional football, it is the step before people begin thinking about it.",
+            sourceLessonSlug: "football-the-honest-odds",
+          },
+          {
+            prompt: "What percentage of US high school WOMEN'S soccer players play NCAA soccer at any division?",
+            options: ["2.8%", "7.9%", "25%", "0.5%"],
+            correctIndex: 1,
+            explanation:
+              "7.9% across all NCAA divisions, and 2.8% at Division I — from 393,048 high school participants to 31,200 NCAA participants (NCAA Research, 2026).",
+            sourceLessonSlug: "football-the-honest-odds",
+          },
+          {
+            prompt: "Why does the NCAA publish no high-school-to-professional probability for soccer?",
+            options: [
+              "Because the figure is too depressing to publish",
+              "Because its pro tables are built from DRAFT data — men's soccer is excluded (entry isn't funnelled through one draft) and the NWSL has discontinued its draft entirely",
+              "Because soccer is not an NCAA sport",
+              "Because FIFA prohibits it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No draft, no draft data, no probability table. So anyone quoting you a precise 'X% turn pro' figure for soccer is quoting a number the sport's own major statistical authority declines to publish. Ask them where it came from.",
+            sourceLessonSlug: "football-the-honest-odds",
+          },
+          {
+            prompt: "What is the honest conclusion of the odds lesson?",
+            options: [
+              "Give up football and study something else",
+              "Play, take the college route for the DEGREE, build the other plan alongside rather than after, and point yourself at the industry rather than only the pitch",
+              "Move abroad at 16 to join an academy",
+              "Focus entirely on football and drop everything else",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The odds are an argument against BETTING YOUR FUTURE on football, not against playing it. The 16-year-old who is released with nothing else is the most predictable tragedy in the sport — and it is entirely preventable.",
+            sourceLessonSlug: "football-the-honest-odds",
+          },
+          {
+            prompt: "Why is a futsal league an unusually good first business for a young person?",
+            options: [
+              "Because it requires no organisation at all",
+              "Indoors (weather-proof revenue), uses spaces that already exist and sit empty, needs only ten players to fill a fixture, and short matches let you run many games per evening on one court",
+              "Because futsal courts are free everywhere",
+              "Because it needs no referee",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The test is simple: teams × fee versus court hire + balls + referee. Downside is one night's court hire, and you learn immediately whether it is a business or a hobby.",
+            sourceLessonSlug: "football-starting-a-club-or-league",
+          },
+          {
+            prompt: "What most often kills an amateur football club or league?",
+            options: [
+              "Poor quality of football",
+              "Money with nobody accountable for it, unreliability (no fixture list, no table, late starts), and no insurance",
+              "Too many players wanting to join",
+              "Playing on grass rather than turf",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Amateur sport rarely fails because the football is bad. It fails because nobody knows when they are playing, and because somebody got hurt and there was no cover. Get a treasurer and a written record from day one.",
+            sourceLessonSlug: "football-starting-a-club-or-league",
+          },
+          {
+            prompt: "You are 17, want to work in football analysis, and have no contacts. What is the entry test?",
+            options: [
+              "A degree in sports science",
+              "A PORTFOLIO, not a CV — analyse a match, write it up, publish it, and do it again",
+              "Having played at academy level",
+              "A FIFA agent licence",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Do it fifty times and you have something almost nobody else applying has. The same logic applies to scouting (write reports on your own local league) and to football media, where the barrier to producing it is zero.",
+            sourceLessonSlug: "football-jobs-around-the-game",
+          },
+          {
+            prompt: "What dominates the cost base of a lower-league club, and how can you verify it yourself?",
+            options: [
+              "Stadium maintenance; you cannot verify it, as club finances are secret",
+              "Player and staff WAGES — and in England clubs are companies that file accounts publicly, so you can read a real club's revenue and wage bill for free at Companies House",
+              "Travel costs; verified through the league's website",
+              "Broadcast production; verified via FIFA",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Wages dominate, and the structural trap is that more revenue requires promotion while promotion requires more wages — so clubs overspend and financial distress is common. And you can PROVE all of it from published accounts, which is the skill this whole course has been teaching.",
+            sourceLessonSlug: "football-jobs-around-the-game",
+          },
+        ],
+      },
+    },
   ],
 };
