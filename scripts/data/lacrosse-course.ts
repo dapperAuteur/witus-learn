@@ -29,8 +29,26 @@
 //      - NCAA. 2026 and 2027 Women's Lacrosse Rules.
 //    NOTE: the Sixes/box books turned over to v2.0 in May 2026 and the men's field book to v1.1
 //    — an earlier draft of this course cited the superseded v1.0s. The course preaches "check
-//    the edition date"; it now passes its own test. One casualty: a draft line citing a specific
-//    ASTM standard number for Sixes women's eyewear was CUT — the rulebook names no number.
+//    the edition date"; it now passes its own test.
+//
+//  • WHAT THE FACT-CHECK PASS CUT (July 2026). Kept here so nobody re-adds it:
+//      - "ASTM F3077" as the standard for Sixes women's eyewear. That number appears NOWHERE
+//        in the rulebook, which says only "applicable ASTM safety standard or a comparable
+//        standard." An invented-looking specific beats a vague true one every time — until
+//        someone checks. Cut.
+//      - Alfie Jacques described as "one of the greatest ambassadors the sport has ever seen"
+//        and making sticks "for roughly half a century." The Onondaga Nation obituary we cite
+//        says neither. It says "a national treasure of the Haudenosaunee" / "a cultural icon
+//        who preserved centuries of lacrosse tradition," and six decades. Replaced with the
+//        Nation's own words — which are better anyway.
+//      - "The PLL's 2026 season is its eighth." The cited PLL source lists the eight teams; it
+//        does not state the season count. Cut rather than derived.
+//      - A claim that the Jan. 2025 U.S./Canada request to the IOC "has not been reissued" by
+//        current administrations. Unverifiable either way; the course now says so explicitly
+//        instead of asserting a negative.
+//    Mis-citations corrected: NCAA women's 12-player rule is Rule 3 Sec. 1 (not Rule 1); two
+//    Olympic-lesson claims were attributed to the Windspeaker piece but live in the Onondaga
+//    Nation piece.
 //    Trap we defuse explicitly: the international women's field game is TEN a side (WL 5.A.3);
 //    NCAA women's is TWELVE (NCAA women's rules, Rule 1). Both are true; most of the internet
 //    reports only the second. Same for the shot clock (WL 80s both codes; NCAA women's 90s).
@@ -96,7 +114,7 @@ The Onondaga Nation describes the wooden stick as carrying the game's meaning in
 
 ### Why the stick maker matters
 
-Making a traditional stick is a years-long craft: select and fell the hickory, split it, steam and bend the crook, clamp it, cure it — commonly for a year or more — then carve, drill, and string it. Onondaga's best-known maker, **Alf (Alfie) Jacques**, made wooden sticks for roughly half a century and spent decades teaching the history of the game to anyone who asked; when he died in 2023 he was described as "one of the greatest ambassadors the sport has ever seen" (Onondaga Nation, 2023).
+Making a traditional stick is a years-long craft: select and fell the hickory, split it, steam and bend the crook, clamp it, cure it — commonly for a year or more — then carve, drill, and string it. Onondaga's best-known maker, **Alfie Jacques**, handcrafted wooden sticks for roughly **six decades** and spent much of that time teaching the history of the game to anyone who asked. When he died in 2023 at 74, the Onondaga Nation called him "a national treasure of the Haudenosaunee" and "a cultural icon who preserved centuries of lacrosse tradition" (Onondaga Nation, 2023).
 
 Hold that next to a fact you will meet in Section 6: the modern sport's equipment industry is large, growing, and almost entirely plastic. Traditional stick-making is a living Indigenous craft that a mass-manufacturing sport nearly rendered invisible. If you are looking for a place where lacrosse's history and its economics collide, this is it — and it is one of the more interesting doors in the whole sport for someone who likes making things with their hands.
 
@@ -2035,7 +2053,7 @@ The romantic version — you start a club, it grows, you turn pro — is rare. T
 
 Start with the obvious one: **stringing heads for money.** Low startup cost, immediate demand, no facility. Learn mesh, sidewall, shooters, pocket placement, and learn the pocket-depth rules well enough that you never string an illegal stick (Lesson 2 — officials check).
 
-Then look at the deep end of the same craft. A traditional Haudenosaunee wooden stick takes years: select hickory, split, steam, bend, clamp, cure, carve, string. Onondaga's **Alf Jacques** made them for roughly half a century and taught the game's history alongside them; he was called "one of the greatest ambassadors the sport has ever seen" (Onondaga Nation, 2023). This is a living Indigenous craft, held by a small number of makers, sitting alongside a plastic mass-manufacturing industry that mostly ignores it.
+Then look at the deep end of the same craft. A traditional Haudenosaunee wooden stick takes years: select hickory, split, steam, bend, clamp, cure, carve, string. Onondaga's **Alfie Jacques** made them for roughly six decades and taught the game's history alongside them; the Onondaga Nation called him "a national treasure of the Haudenosaunee" (Onondaga Nation, 2023). This is a living Indigenous craft, held by a small number of makers, sitting alongside a plastic mass-manufacturing industry that mostly ignores it.
 
 If you are not Haudenosaunee, the honest way into that world is as a **customer, a student, and an advocate** — not as someone who learns the shape and sells it. Buy from Native makers. Learn who they are. Understand that the wooden stick means something before you handle one like inventory.
 
@@ -2084,7 +2102,7 @@ The sport is under-covered relative to how fast it's growing, and the tools are 
 
 ### The numbers, and how to get current ones
 
-A peer-reviewed study of NCAA participation data reported that white athletes made up **91.4% of male lacrosse players and 90.6% of female lacrosse players**, with Black athletes at 2.2% and 2.4% respectively (Fultz & Chen, 2012, using NCAA data). Those figures are more than a decade old, and the sport has changed somewhat since — which is exactly why you should not take them as current.
+A study in the *KAHPERD Journal* drawing on NCAA data reported that at the **Division I** level, white athletes made up **91.4% of male lacrosse players and 90.6% of female lacrosse players**, with Black athletes under 2.5% of participants (Fultz & Chen, 2012). Note the two qualifiers we just attached to that number — *Division I*, and *2012*. Those figures are well over a decade old, and the sport has changed somewhat since, which is exactly why you should not repeat them as current. (Plenty of articles do.)
 
 **Go get the current ones yourself.** The NCAA publishes a **Demographics Database** that lets you break participation down by sport, division, and race/ethnicity, updated regularly (NCAA, n.d.-a). Look up lacrosse. Look up a sport you'd expect to be more diverse. Compare. That's a twenty-minute exercise that will teach you more than any paragraph here can.
 
@@ -2386,16 +2404,16 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
             sourceLessonSlug: "the-business-side",
           },
           {
-            prompt: "What did a peer-reviewed study of NCAA data (Fultz & Chen, 2012) report about lacrosse participation?",
+            prompt: "What did Fultz & Chen (2012), drawing on NCAA data, report about Division I lacrosse participation?",
             options: [
               "That lacrosse was the most racially diverse NCAA sport",
-              "That white athletes made up 91.4% of male and 90.6% of female NCAA lacrosse players, with Black athletes at 2.2% and 2.4%",
+              "That white athletes made up 91.4% of male and 90.6% of female Division I lacrosse players, with Black athletes under 2.5%",
               "That participation was evenly split across all groups",
               "That the NCAA does not collect this data",
             ],
             correctIndex: 1,
             explanation:
-              "Those figures are over a decade old — which is why the lesson tells you to go pull current numbers from the NCAA's own Demographics Database rather than trusting a stale paragraph.",
+              "Note the qualifiers: Division I, and 2012. Those figures are well over a decade old — which is why the lesson tells you to pull current numbers from the NCAA's own Demographics Database rather than repeating a stale paragraph.",
             sourceLessonSlug: "the-access-problem",
           },
           {
