@@ -11,6 +11,7 @@ import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { KNOTS_COURSE } from "./data/knots-course";
 import { CROQUET_COURSE } from "./data/croquet-course";
 import { SURVIVAL_COURSE } from "./data/survival-course";
+import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { GOLF_COURSE } from "./data/golf-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
@@ -600,6 +601,7 @@ async function main() {
     // reunified), and opportunities for amateurs + entrepreneurs. See plans/future-courses/
     // sports-courses/golf.md (brief).
     { slug: "golf-play-know-work", course: GOLF_COURSE, category: "Sports" },
+    { slug: "football", course: FOOTBALL_COURSE, category: "Sports" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
