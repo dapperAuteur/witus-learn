@@ -28,6 +28,7 @@ import { HELP_A_CAMPAIGN_COURSE } from "./data/help-a-campaign-course";
 import { HOW_A_BILL_BECOMES_LAW_COURSE } from "./data/how-a-bill-becomes-law-course";
 import { SUPREME_COURT_JUDICIAL_BRANCH_COURSE } from "./data/supreme-court-judicial-branch-course";
 import { KNOW_YOUR_RIGHTS_COURSE } from "./data/know-your-rights-course";
+import { KNOW_YOUR_RIGHTS_AT_WORK_COURSE } from "./data/know-your-rights-at-work-course";
 import { JURY_DUTY_COURTS_COURSE } from "./data/jury-duty-courts-course";
 import { STATE_CIVICS_IN_COURSE } from "./data/state-civics-in-course";
 import { STATE_CIVICS_AZ_COURSE } from "./data/state-civics-az-course";
@@ -354,6 +355,26 @@ async function main() {
     instructorId,
     slug: "know-your-rights",
     course: KNOW_YOUR_RIGHTS_COURSE,
+    category: "Civics",
+    navigationMode: "linear",
+  });
+  // Know Your Rights at Work — the LABOR-side sibling of know-your-rights (Bill of Rights). Same
+  // Civics category and cited standard. Six women, one argument in six movements: Addie Wyatt (what
+  // a contract IS), Dolores Huerta (building power outside the room), Crystal Lee Sutton (what
+  // retaliation COSTS), Sara Nelson (leverage), Drescher + Stiehm (AI likeness and an employer
+  // restructuring the job out from under the old contract). Every statutory statement is quoted
+  // from the U.S. Code itself (NLRA §§ 2, 7, 8, 10 = 29 U.S.C. §§ 152, 157, 158, 160; RLA = 45
+  // U.S.C. § 156) — nlrb.gov and dol.gov block automated fetching, so the course cites the STATUTE
+  // rather than paraphrasing an agency page it could not read. At-will employment VARIES BY STATE,
+  // so the course says so and names Montana as the statutory exception (authoritative-values rule).
+  // The Huerta lesson addresses the March 2026 abuse allegations against Cesar Chavez directly and
+  // cited, per BAM's editorial decision: it teaches the organizing method AND the public record,
+  // adjudicates nothing, and invents no quotes.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "know-your-rights-at-work",
+    course: KNOW_YOUR_RIGHTS_AT_WORK_COURSE,
     category: "Civics",
     navigationMode: "linear",
   });
