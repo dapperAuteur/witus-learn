@@ -57,17 +57,34 @@ describe("future-work content index", () => {
     expect(getFutureWorkItem("sdtw-mary-bassett")?.status).toBe("deferred");
   });
 
-  it("groups by kind, preserving declaration order", () => {
-    const groups = futureWorkGroups("course");
-    expect(groups.map((g) => g.title)).toEqual([
-      "She Did the Work",
-      "She Did the Work — subject research",
-      "Civics",
-      "Workers' Rights",
-      "Travel & Living Abroad",
-      "World History",
-    ]);
-    // The pricing one-pager + its market research are `feature`, not course proposals.
-    expect(futureWorkGroups("feature").map((g) => g.title)).toEqual(["Pricing"]);
+  // Asserts the KNOWN groups are present and correctly ordered relative to each other — NOT the exact
+  // full list. Content is auto-discovered, so a new note/folder legitimately adds a group; pinning the
+  // whole list would make every new drop a test failure, which is the brittleness this system removed.
+  it("groups by kind, keeping the curated groups in declaration order", () => {
+    const courseGroups = futureWorkGroups("course").map((g) => g.title);
+    for (const g of ["She Did the Work", "Civics", "Workers' Rights", "Travel & Living Abroad"]) {
+      expect(courseGroups, `${g} missing from /admin/future`).toContain(g);
+    }
+    // She Did the Work is authored first and must stay at the top.
+    expect(courseGroups[0]).toBe("She Did the Work");
+
+    // Research bundles are `feature`. Pricing is curated; Mansa Gold is an auto-discovered subdir.
+    const featureGroups = futureWorkGroups("feature").map((g) => g.title);
+    expect(featureGroups).toContain("Pricing");
+    expect(featureGroups).toContain("Mansa Gold");
+  });
+
+  // Subdirectories of plans/future-courses/ are auto-discovered folder-by-folder, one item per .md,
+  // grouped by the folder. This is what makes the Mansa Gold interview-prep pack reviewable in
+  // /admin/future. The `*-FULL.md` concatenation (a PDF-export artifact) is skipped so it can't
+  // duplicate its own sibling files.
+  it("auto-discovers a subdirectory research bundle (Mansa Gold)", () => {
+    const prep = getFutureWorkItem("mansa-gold-interview-prep");
+    expect(prep, "mansa-gold/ subdir was not picked up").toBeDefined();
+    expect(prep!.kind).toBe("feature");
+    expect(prep!.group).toBe("Mansa Gold");
+    expect(prep!.body.length).toBeGreaterThan(200);
+    // The redundant concatenation must NOT appear as its own item.
+    expect(getFutureWorkItem("mansa-gold-mansa-gold-interview-prep-FULL")).toBeUndefined();
   });
 });
