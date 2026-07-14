@@ -1782,5 +1782,468 @@ The board tells your opponent exactly how poor you are. Play accordingly.
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 — History. Every claim here was checked against a primary or scholarly source, and
+    // the beloved claims that FAILED the check are taught as failures (see "myths-we-cut"). The
+    // 1900 Olympics women's claim in particular is corrected: croquet's women were among the first
+    // female Olympians, NOT the first (Hélène de Pourtalès competed in yachting on 22 May 1900,
+    // five weeks before croquet began on 28 June).
+    // ══════════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "victorian-craze",
+      title: "21 · Where croquet came from — and what nobody can prove",
+      section: "6 · History you can actually check",
+      body: `Croquet's history is genuinely interesting. It is also **badly told almost everywhere**, because it is exactly the kind of history where a charming, uncited claim gets repeated until it sounds like a fact. This section separates the two.
+
+## What can be said with confidence
+
+By the early 1860s croquet was a mass craze in Britain, and one man is at the centre of the documented record: **John Jaques II** (1820–1890), a London sports-equipment manufacturer. He is in the **World Croquet Federation's Hall of Fame** (inducted 2007), and the WCF's own citation says that "by the early 1860s he was recognized as the game's leading expert," and that in **1864** he "wrote and published *Croquet; the Laws and Regulations of the Game* **which is recognizably the foundation of the modern laws of Association Croquet**" (World Croquet Federation, n.d.).
+
+That is a strong, checkable claim from a governing body: the modern Association Croquet laws trace back to an 1864 rulebook published by a manufacturer who was also selling the sets.
+
+Hold that thought — a company that writes the rules *and* sells the equipment is a business model, and Section 8 comes back to it.
+
+## What is disputed, and should be presented as disputed
+
+**Where croquet actually came from is not settled.**
+
+- The most-repeated version is that croquet arrived in England **from Ireland around 1850–52**. **OxfordCroquet**, a long-standing croquet reference site, calls the standard telling — croquet "emerging from the mists of Ireland around 1850" — a "**somewhat dubious refusal to acknowledge a really foreign source**," and argues instead for descent from the French game *jeu de mail* (OxfordCroquet, n.d.).
+- The Jaques company's own marketing says it introduced croquet to Britain and exhibited at the **1851 Great Exhibition**, publishing the first English rulebook in **1857**. That claim is sourced chiefly to **the company's own blog** — and even that page concedes there is a rival claim (Jaques of London, n.d.). The WCF's Hall of Fame citation does **not** mention 1851 or 1857; it credits the **1864** rulebook.
+
+**So here is how this course handles it, and it is a rule you can use for the rest of your life:**
+
+> When two sources disagree and one of them is selling something, **cite the one that isn't**, and say out loud that the other exists.
+
+Load-bearing claim: **1864, Jaques, cited to the WCF.** The 1851 and 1857 claims: "the company says so."
+
+## The standard scholarly reference
+
+If you want to go deeper than any website, the accepted book-length history is **Prichard, D. M. C. (1981). *The History of Croquet*. London: Cassell.** It was written with the cooperation of the Croquet Association and is the work later historians cite. This course does not quote it, because this course did not read it — which is itself the point. **Do not cite what you have not read.**
+
+:::reveal What is the strongest, best-sourced claim about croquet's origins that this course will make — and what is the weakest claim it refuses to make? ||| Strongest: John Jaques II published "Croquet; the Laws and Regulations of the Game" in 1864, which the World Croquet Federation's own Hall of Fame citation calls "recognizably the foundation of the modern laws of Association Croquet." Weakest / refused: that croquet "came from Ireland around 1850," or that Jaques "introduced croquet to Britain" and won a medal at the 1851 Great Exhibition — those are disputed and are sourced mainly to the company's own marketing.
+
+## Sources
+- World Croquet Federation. (n.d.). *John Jaques II* [Hall of Fame citation]. https://worldcroquet.org/john-jaques-ii/
+- OxfordCroquet. (n.d.). *The origins of croquet*. https://oxfordcroquet.org/history/origins1.php
+- Jaques of London. (n.d.). *Who invented croquet?* [Company blog — a self-interested source, cited here only to show what it claims]. https://www.jaqueslondon.co.uk/blogs/posts/who-invented-croquet
+- Prichard, D. M. C. (1981). *The history of croquet*. Cassell. [The standard scholarly history — named here as further reading; not quoted, because it was not read for this course.]`,
+    },
+    {
+      slug: "wimbledon-pivot",
+      title: "22 · The croquet club that became Wimbledon",
+      section: "6 · History you can actually check",
+      body: `This is the best-documented story in croquet, because the organisation it happened to is still around, is very rich, and publishes its own history. The source here is the **Wimbledon Compendium** — the All England Lawn Tennis Club's own official reference book (All England Lawn Tennis Club, 2025).
+
+## The facts, from the club's own record
+
+> "The story begins on **23 July 1868** when John H. Walsh, Capt. R.F. Dalton, J. Hinde Hale, the Revd. A. Law, S.H. Clarke Maddock and Walter Jones Whitmore met in the offices of Herbert Cox, the publisher of *The Field*, at **346 Strand in London**, and the **All England Croquet Club** was founded." (All England Lawn Tennis Club, 2025)
+
+**Read the address.** The All England Croquet Club was founded **in central London, on the Strand** — *not* at Wimbledon. It **moved** to Wimbledon in **October 1869**, to a four-acre ground off Worple Road.
+
+Almost every retelling you will find says "founded at Wimbledon in 1868." It is wrong, and the club's own book says so. This is a free, painless lesson in what happens when everyone copies everyone: **the error survives because nobody opens the primary source.**
+
+## Then croquet collapsed
+
+> "But **by 1875 interest in croquet had waned** and so had the Club's finances. The Committee, looking to revive the fortunes of the Club, announced that **one croquet lawn would be set apart for playing lawn tennis**, a new game introduced to the public by Major Wingfield in 1874 that was sweeping the country." (All England Lawn Tennis Club, 2025)
+
+One lawn. That is how it starts.
+
+- **April 1877:** the club is re-named "The All England Croquet and Lawn Tennis Club."
+- **1877:** the first Championship is held — **22 entries, gentlemen only**.
+- **1881:** the club raises enough money to buy the Worple Road ground; "the following year **croquet ceased to be played**" and it became the **All England Lawn Tennis Club**.
+
+So: a croquet club, running out of money, rents out one lawn to a fashionable new game — and within seven years the new game has eaten it, and croquet is gone from the grounds entirely.
+
+## The postscript nobody tells you
+
+Croquet came back. The word returned to the club's name in **1899**, and croquet **as a sport was reintroduced in 1957** (All England Lawn Tennis Club, 2025). The full name of the club that runs Wimbledon today is the **All England Lawn Tennis and Croquet Club**.
+
+That word "Croquet" in the name of the most famous tennis tournament on earth is not decoration. It is a receipt.
+
+## What to take from it
+
+Croquet's Victorian boom was enormous and **it ended fast**. Any story that treats croquet's decline as slow and dignified is not paying attention: the sport lost its own flagship club to a game that was three years old.
+
+:::reveal Where was the All England Croquet Club actually founded, and what did the club do in 1875 that changed sport forever? ||| It was founded on 23 July 1868 in central London — in a publisher's offices at 346 Strand — NOT at Wimbledon (it moved to Wimbledon in October 1869). In 1875, with croquet's popularity and the club's finances both fading, the committee set aside ONE croquet lawn for the new game of lawn tennis. By 1882 croquet had ceased to be played there and the club had become the All England Lawn Tennis Club.
+
+## Sources
+- All England Lawn Tennis Club. (2025). *The Wimbledon compendium 2025* (pp. 18–19; history section adapted from J. Barrett, *Wimbledon: The Official History*). https://www.wimbledon.com/pdf/2025_Wimbledon_Compendium_W_250617.pdf`,
+      recallContent: [
+        {
+          prompt: "What is the single best-sourced claim about croquet's origins, and who is the source?",
+          answer:
+            "John Jaques II published Croquet; the Laws and Regulations of the Game in 1864, which the World Croquet Federation's Hall of Fame citation calls 'recognizably the foundation of the modern laws of Association Croquet.'",
+        },
+        {
+          prompt: "Why does this course refuse to state that croquet came to England from Ireland around 1850?",
+          answer:
+            "Because it is contested. OxfordCroquet calls the Irish-origin story 'somewhat dubious' and argues for descent from the French jeu de mail. A disputed claim is presented as a dispute, not as a fact.",
+        },
+      ],
+    },
+    {
+      slug: "women-and-the-1900-olympics",
+      title: "23 · Women, the 1900 Olympics, and a claim that got laundered",
+      section: "6 · History you can actually check",
+      body: `Croquet has been at the Olympic Games **once**: Paris, 1900. What happened there is genuinely remarkable, and the version you will read online is genuinely wrong. Both halves are worth your time.
+
+The source throughout is **Olympedia**, the scholarly Olympic-history database maintained by the OlyMADMen and used by Olympic historians (Olympedia, n.d.-a).
+
+## What actually happened
+
+| | |
+|---|---|
+| **Venue and dates** | Cercle du Bois de Boulogne, Paris; 28 June – 22 July 1900 |
+| **Total competitors** | **10** — seven men and **three women** |
+| **Nations** | **One.** France. Every medal went to France. |
+| **Events** | Three medal events (Singles One Ball; Singles Two Balls; Doubles), plus one non-medal handicap singles |
+| **Singles, One Ball** | Nine competitors, 28 June 1900. Gold **Gaston Aumoitte**; silver **Georges Johin**; bronze **Chrétien Waydelich** |
+
+Ten athletes. One country. That is the entire Olympic history of croquet.
+
+## The part that matters
+
+Olympedia's own summary is worth quoting exactly:
+
+> "The most important occurrence at 1900 croquet is that **women made their Olympic début in this sport**. In fact, three women competed... and **they competed against the men in the same competition**. Thus, they would be **among the first female Olympians, trailing only the Swiss Hélène de Pourtalès in yachting**." (Olympedia, n.d.-a)
+
+The three women were **Jeanne Filleul-Brohy**, **Marie Ohier**, and **Louise Anne Marie Després**. Després finished **fifth**; Filleul-Brohy and Ohier did not finish their first-round matches.
+
+Read what they did again, because it is easy to skim past. **They were not in a separate women's event.** There wasn't one. They entered the same competition as the men and played against them. In 1900. In a Europe where women could not vote almost anywhere.
+
+## Now the correction — and this is the lesson
+
+You will read, in many places, that **"the croquet women were the first female Olympians."**
+
+**That is false.** Olympedia's entry for **Hélène de Pourtalès** states that on **22 May 1900** she was part of the crew of the yacht *Lérina*, which won its class — "This made her **the first woman to compete at the Olympics and the first female Olympic medalist**" (Olympedia, n.d.-b).
+
+**22 May beats 28 June by five weeks.** Sailing was first. Croquet was close behind.
+
+And note who gets this wrong: not just random blogs. The **New-York Historical Society's own blog** states that "since the croquet match took place first, the women croquet players were the very first female Olympians" — and also says *two* women, not three (New-York Historical Society, n.d.).
+
+An institution with a research library published it. It is still wrong. **Check the primary source, even when the source that got it wrong is impressive.**
+
+**The defensible version — the one this course teaches:** croquet was **one of the first Olympic events in which women competed**, and — unusually, and much more interestingly — **the women competed directly against the men in the same competition.** That claim is true, it is sourced, and it is a better story than the false one.
+
+## Roque, 1904: the sequel nobody remembers
+
+Four years later, at the St. Louis Games, the Olympics held **roque** — the American hard-court variant, whose name Olympedia notes is croquet "with the initial 'c' and the trailing 't' dropped" (Olympedia, n.d.-c).
+
+- 3–8 August 1904, Francis Field, Washington University, St. Louis
+- **One event** (Singles, Men) and **four competitors — all American**
+- Gold **Charles Jacobus**, silver **Smith Streeter**, bronze **Charles Brown**
+
+Olympedia's verdict is flat: "**Croquet, or roque, has never again been contested at the Olympics**, and there are no plans for this in future."
+
+Two appearances. Fourteen athletes between them. Both times, one country won everything.
+
+:::reveal What is the accurate claim about women at the 1900 Olympic croquet event, and what is the popular claim that is false? ||| ACCURATE: croquet was one of the first Olympic events in which women competed (28 June 1900), and — unusually — the three women (Jeanne Filleul-Brohy, Marie Ohier and Louise Després) competed directly AGAINST the men in the same competition. FALSE: that they were "the first female Olympians." Hélène de Pourtalès competed in yachting on 22 May 1900, five weeks earlier, and is recorded as the first woman to compete at the Olympics and the first female Olympic medalist.
+
+## Sources
+- Olympedia. (n.d.-a). *Croquet at the 1900 Summer Olympics*. http://www.olympedia.org/editions/2/sports/CQT
+- Olympedia. (n.d.-b). *Hélène de Pourtalès*. http://www.olympedia.org/athletes/61789
+- Olympedia. (n.d.-c). *Roque at the 1904 Summer Olympics*. http://www.olympedia.org/editions/3/sports/ROQ
+- New-York Historical Society. (n.d.). *Croquet: An Olympic sport* [Blog post — cited here as an example of the error, not as support for it]. https://blog.nyhistory.org/croquet-an-olympic-sport/`,
+      recallContent: [
+        {
+          prompt: "Where was the All England Croquet Club founded, and why does the usual answer get it wrong?",
+          answer:
+            "At 346 Strand, in central London, on 23 July 1868 — not at Wimbledon. It moved to Wimbledon in October 1869. The error survives because retellings copy each other instead of opening the club's own Compendium.",
+        },
+        {
+          prompt: "What happened to croquet at the All England Croquet Club after 1875?",
+          answer:
+            "With croquet's popularity fading, the committee set aside one lawn for lawn tennis. By April 1877 the club had been renamed to include lawn tennis; by 1882 croquet had ceased to be played there. Croquet returned to the club's name in 1899 and as a sport in 1957.",
+        },
+      ],
+    },
+    {
+      slug: "myths-we-cut",
+      title: "24 · The stories we cut, and why",
+      section: "6 · History you can actually check",
+      body: `Every course makes choices about what to leave out. Most courses do not tell you what they cut. This one does, because **the cuts are the lesson.**
+
+Here is every well-loved croquet claim that this course checked and then refused to state as fact — and what happened when it was checked.
+
+## 1. "The croquet women were the first female Olympians"
+
+**Verdict: false.** Corrected in the previous lesson. Hélène de Pourtalès sailed on 22 May 1900; croquet began 28 June. It is repeated even by the New-York Historical Society's blog.
+
+**What went wrong:** someone reasoned "croquet was early in the Games, therefore first" without checking whether anything was earlier. It was.
+
+## 2. "The 1900 Olympic croquet event had only one paying spectator"
+
+**Verdict: half-true, and the popular version launders a hedge into a statistic.** This one is the most interesting cut in the whole course.
+
+It is not folklore. It really is in **the Official Report of the 1900 Games** — which is quoted at length by **Chris Hudson, then Secretary-General of the World Croquet Federation**, in *Croquet World Online Magazine* (Hudson, 1999). Here is the passage:
+
+> "One must admit that there were not many players; about a dozen... Spectators were not at all numerous; although I must mention an English lover of the game who made the journey from Nice to Paris to watch the first matches of the competition; **unless I am very much mistaken, however, this gentleman was the only paying spectator**." (Official Report of the 1900 Games, as quoted and translated by Hudson, 1999)
+
+Look at what the writer actually wrote: ***"unless I am very much mistaken."*** That is a man in 1900 saying *I think, but I'm not sure*.
+
+A hundred and twenty-six years of retelling turned "I think, but I'm not sure" into "**fact: one paying spectator**." Nothing was invented. A hedge was simply **dropped**, and the sentence hardened.
+
+**Two more honest notes.** First: this course verified the **English translation as published by the WCF**, not the French original — so the correct attribution is "the Official Report, as quoted and translated by the World Croquet Federation," not "the Official Report" flat. Second: Olympedia, the scholarly Olympic database, **does not mention the spectator claim at all**, and warns that "very little is known about croquet at the 1900 Olympics" and that "some Olympic historians will state that it was not an Olympic sport" (Olympedia, n.d.).
+
+The same Official Report also sneers that croquet "**has hardly any pretensions to athleticism**" — and then, remarkably, defends it: "One would be wrong, however, to disdain croquet. It develops a combinative mind — one has only to see it **transform young girls into reasoners, and from reasoners into reasonable people**" (as quoted by Hudson, 1999). Read that sentence twice. It is 1900 congratulating itself for noticing that women can think.
+
+## 3. "Croquet was banned in Boston by a clergyman"
+
+**Verdict: cannot verify a ban. Cut.**
+
+A clergyman **denouncing** something is not a ban. The USCA's own history says only that "the Boston clergy **spoke out against** the drinking, gambling, and licentious behavior" around croquet — no ban, and no citation. The vivid quote that always travels with this story (croquet as "the gaping jaw of Hades") circulates only through blogs and club pages, with no primary source attached.
+
+Denunciation is real and interesting. "Banned" is a stronger word than anybody can support, so this course does not use it.
+
+## 4. "Jaques introduced croquet to Britain and won a medal at the 1851 Great Exhibition"
+
+**Verdict: sourced to the company's own marketing. Cut, or hedged.** See Lesson 21. The WCF's Hall of Fame citation credits the **1864** rulebook — that is what this course stands on.
+
+## 5. "Croquet came to England from Ireland around 1850"
+
+**Verdict: contested.** OxfordCroquet argues for the French *jeu de mail* and calls the Irish story "somewhat dubious." Presented as a dispute.
+
+## 6. "The All England Croquet Club was founded at Wimbledon"
+
+**Verdict: false.** Founded at 346 Strand, London; moved to Wimbledon the following year. The club's own Compendium says so.
+
+## But the Victorian gender story is REAL — here is where to find it
+
+None of this means the "croquet challenged Victorian gender roles" story is a myth. It is real, and it is **peer-reviewed** — which is exactly why it survives checking when the anecdotes do not.
+
+- **Sterngass, J. (1998). Cheating, gender roles, and the nineteenth-century croquet craze. *Journal of Sport History*, 25(3), 398–418.** The argument: croquet's mixed-gender competition challenged Victorian ideas about womanhood; women frequently beat men, and were then **accused of cheating** — of using the "push shot," or of nudging the ball under their skirts.
+- **Beissel Heath, M. (2012). Not "all ridges and furrows" and "uncroquetable lawns": Croquet, female citizenship, and 1860s domestic chronicles. *Critical Survey*, 24(1), 43–56.**
+
+**An honesty note this course owes you:** it did **not** read the Sterngass article itself — the summary above follows *JSTOR Daily*'s account of it (JSTOR Daily, n.d.). That is why the article is named with full bibliographic detail: **so you can go and check, which is the entire point.** If you want the vivid period line about croquet as "a source of slumbering depravity, a veritable Frankenstein monster of recreation," it is quoted *in* Sterngass — go and read it there, and cite it as *quoted in Sterngass*, not as if you found it yourself.
+
+## The transferable skill
+
+Six claims. Three false, two hedged into shape, one only half-checkable. Not one of them was *malicious* — every single one started as something true-ish and got worn smooth by repetition.
+
+**That is what happens to claims. Check the ones you plan to repeat.**
+
+:::reveal The "only one paying spectator at the 1900 Olympic croquet" story turned out not to be folklore. So what exactly is wrong with the way it is usually told? ||| The claim IS in the Official Report of the 1900 Games — but the writer hedged it: "unless I am very much mistaken, however, this gentleman was the only paying spectator." Retelling dropped the hedge and turned "I think, but I'm not sure" into a hard statistic. Nothing was invented; a qualifier was simply lost. (Also: the verified text is the WCF's English translation, not the French original, and Olympedia does not mention the claim at all.)
+
+## Sources
+- Hudson, C. (1999). *Croquet in the Olympics* [Quoting and translating the Official Report of the 2nd Olympic Games]. Croquet World Online Magazine. http://www.croquetworld.com/News/Olympics.asp
+- Olympedia. (n.d.). *Croquet at the 1900 Summer Olympics*. http://www.olympedia.org/editions/2/sports/CQT
+- Sterngass, J. (1998). Cheating, gender roles, and the nineteenth-century croquet craze. *Journal of Sport History, 25*(3), 398–418.
+- Beissel Heath, M. (2012). Not "all ridges and furrows" and "uncroquetable lawns": Croquet, female citizenship, and 1860s domestic chronicles. *Critical Survey, 24*(1), 43–56.
+- JSTOR Daily. (n.d.). *The dangerous game of croquet* [Summarizing Sterngass, 1998; this is the source actually consulted for the summary above]. https://daily.jstor.org/the-dangerous-game-of-croquet/
+- OxfordCroquet. (n.d.). *The origins of croquet*. https://oxfordcroquet.org/history/origins1.php
+- All England Lawn Tennis Club. (2025). *The Wimbledon compendium 2025*. https://www.wimbledon.com/pdf/2025_Wimbledon_Compendium_W_250617.pdf`,
+      recallContent: [
+        {
+          prompt: "Who was the first woman to compete at the modern Olympics, and in what sport?",
+          answer:
+            "Hélène de Pourtalès, in yachting, on 22 May 1900 — five weeks before croquet's event began on 28 June. Croquet's three women were among the first female Olympians, but not the first.",
+        },
+        {
+          prompt: "What was genuinely unusual about the women in the 1900 Olympic croquet event?",
+          answer:
+            "They competed directly against the men in the same competition — there was no separate women's event. Louise Després finished fifth.",
+        },
+      ],
+    },
+    {
+      slug: "quiz-history",
+      title: "25 · Section quiz: history you can check",
+      section: "6 · History you can actually check",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "What is the best-sourced claim about the foundation of the modern Association Croquet laws?",
+            options: [
+              "Jaques introduced croquet to Britain at the 1851 Great Exhibition",
+              "John Jaques II published 'Croquet; the Laws and Regulations of the Game' in 1864 — which the WCF's Hall of Fame calls 'recognizably the foundation of the modern laws of Association Croquet'",
+              "The rules came from Ireland in 1850",
+              "The All England Croquet Club wrote them in 1868",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The 1864 rulebook is cited by the governing body itself. The 1851/1857 claims come from the company's own marketing and are not repeated by the WCF.",
+            sourceLessonSlug: "victorian-craze",
+          },
+          {
+            prompt: "How does this course treat the claim that croquet came to England from Ireland around 1850?",
+            options: [
+              "As settled fact",
+              "As a disputed claim — OxfordCroquet calls it 'somewhat dubious' and argues for the French jeu de mail instead",
+              "As deliberately invented",
+              "As proven by the WCF",
+            ],
+            correctIndex: 1,
+            explanation: "A disputed claim is presented as a dispute, not as a fact.",
+            sourceLessonSlug: "victorian-craze",
+          },
+          {
+            prompt: "Where and when was the All England Croquet Club founded?",
+            options: [
+              "At Wimbledon, in 1868",
+              "In central London, at 346 Strand, on 23 July 1868 — it moved to Wimbledon in October 1869",
+              "At Worple Road, in 1875",
+              "In Paris, in 1900",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The club's own Wimbledon Compendium records the founding meeting in a publisher's offices on the Strand. 'Founded at Wimbledon' is the version everyone copies — and it is wrong.",
+            sourceLessonSlug: "wimbledon-pivot",
+          },
+          {
+            prompt: "What did the All England Croquet Club do in 1875, and what did it lead to?",
+            options: [
+              "It banned croquet outright",
+              "With croquet's popularity and its finances fading, it set aside ONE lawn for lawn tennis — and by 1882 croquet had ceased to be played there",
+              "It moved to Paris",
+              "It merged with the Croquet Association",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The first Championship followed in 1877 (22 entries, gentlemen only). Croquet returned to the club's name in 1899 and as a sport in 1957 — which is why the club is still the All England Lawn Tennis AND CROQUET Club.",
+            sourceLessonSlug: "wimbledon-pivot",
+          },
+          {
+            prompt: "How many athletes competed in croquet at the 1900 Paris Olympics, and from how many nations?",
+            options: ["10 athletes, from 1 nation (France)", "72 athletes, from 12 nations", "4 athletes, from 1 nation", "22 athletes, from 3 nations"],
+            correctIndex: 0,
+            explanation:
+              "Ten competitors — seven men and three women — all French. Every medal went to France. That is croquet's entire Olympic history.",
+            sourceLessonSlug: "women-and-the-1900-olympics",
+          },
+          {
+            prompt: "What was genuinely unusual about the three women in the 1900 Olympic croquet event?",
+            options: [
+              "They were the first female Olympians",
+              "They competed directly against the men in the same competition — there was no separate women's event",
+              "They won all three medals",
+              "They were the only competitors",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Jeanne Filleul-Brohy, Marie Ohier and Louise Després entered the same competition as the men. Després finished fifth. That is the true, and better, story.",
+            sourceLessonSlug: "women-and-the-1900-olympics",
+          },
+          {
+            prompt: "Why is 'the croquet women were the first female Olympians' false?",
+            options: [
+              "Because no women competed in 1900",
+              "Because Hélène de Pourtalès competed in yachting on 22 May 1900 — five weeks before croquet began on 28 June",
+              "Because croquet was not an Olympic sport",
+              "Because they competed in a separate event",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Olympedia records de Pourtalès as the first woman to compete at the Olympics and the first female Olympic medalist. Even the New-York Historical Society's blog gets this wrong.",
+            sourceLessonSlug: "women-and-the-1900-olympics",
+          },
+          {
+            prompt: "What happened to roque at the 1904 St. Louis Olympics?",
+            options: [
+              "It drew 80 competitors from 12 nations",
+              "One event, four competitors, all American — gold to Charles Jacobus; croquet or roque has never been contested at the Olympics again",
+              "It was cancelled",
+              "Women competed against men again",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Roque is croquet with the initial 'c' and trailing 't' dropped. Two Olympic appearances, fourteen athletes in total, and both times one country won everything.",
+            sourceLessonSlug: "women-and-the-1900-olympics",
+          },
+          {
+            prompt: "The 'only one paying spectator at the 1900 Olympics' story is best described as...",
+            options: [
+              "Pure folklore with no source",
+              "A hard statistic from the Official Report",
+              "Real but hedged — the Official Report says 'unless I am very much mistaken, however, this gentleman was the only paying spectator'; retelling dropped the hedge",
+              "An invention of the WCF",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Nothing was fabricated. A qualifier was simply lost, and 'I think, but I'm not sure' hardened into a fact over 126 years of repetition.",
+            sourceLessonSlug: "myths-we-cut",
+          },
+          {
+            prompt: "Why does this course cite the 1900 spectator quote as 'the Official Report, as quoted and translated by the World Croquet Federation' rather than just 'the Official Report'?",
+            options: [
+              "Because the WCF wrote the report",
+              "Because the course verified the WCF's English translation, not the French original — so it says exactly what it checked",
+              "Because the report is secret",
+              "Because the WCF disputes the report",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Cite what you actually read. If you read a translation, say you read a translation.",
+            sourceLessonSlug: "myths-we-cut",
+          },
+          {
+            prompt: "What is wrong with the claim that croquet was 'banned in Boston' by the clergy?",
+            options: [
+              "Nothing — it is well documented",
+              "A ban cannot be verified. The USCA's own history says only that the Boston clergy 'spoke out against' the behaviour around croquet — denouncing is not banning",
+              "It happened in New York, not Boston",
+              "It was the police, not the clergy",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The vivid 'gaping jaw of Hades' quote circulates only via blogs with no primary source. Denunciation is real; 'banned' is a stronger word than anyone can support.",
+            sourceLessonSlug: "myths-we-cut",
+          },
+          {
+            prompt: "Which source is peer-reviewed scholarship on croquet and Victorian gender roles?",
+            options: [
+              "The Jaques company blog",
+              "Sterngass, J. (1998), 'Cheating, gender roles, and the nineteenth-century croquet craze', Journal of Sport History, 25(3)",
+              "The New-York Historical Society blog post",
+              "Croquet World Online Magazine",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Its argument: mixed-gender competition challenged Victorian ideas of womanhood, and women who beat men were accused of cheating. This course names it with full detail precisely so you can go and check it.",
+            sourceLessonSlug: "myths-we-cut",
+          },
+          {
+            prompt: "This course names Prichard's 'The History of Croquet' (1981) but does not quote it. Why?",
+            options: [
+              "It is out of print",
+              "It is unreliable",
+              "Because the course did not read it — and you do not cite what you have not read",
+              "Because the WCF disputes it",
+            ],
+            correctIndex: 2,
+            explanation:
+              "It is named as further reading. Naming a source you have not read, as further reading, is honest; quoting it as if you had is not.",
+            sourceLessonSlug: "victorian-craze",
+          },
+          {
+            prompt: "What is the general rule this course applies when two sources disagree and one of them is selling something?",
+            options: [
+              "Average the two",
+              "Cite the one that isn't selling — and say out loud that the other exists",
+              "Cite whichever is more famous",
+              "Cite neither",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Which is why the WCF's Hall of Fame citation (1864) is load-bearing here, and the manufacturer's 1851/1857 claims are reported as 'the company says'.",
+            sourceLessonSlug: "victorian-craze",
+          },
+          {
+            prompt: "What does Olympedia itself warn about croquet at the 1900 Games?",
+            options: [
+              "That it drew record crowds",
+              "That 'very little is known' about it, and that some Olympic historians say it was not even an Olympic sport",
+              "That the results were falsified",
+              "That women were barred",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A good source tells you the limits of what it knows. That is a feature, not a weakness — and it is why Olympedia is trustworthy on the parts it does document.",
+            sourceLessonSlug: "myths-we-cut",
+          },
+        ],
+      },
+    },
   ],
 };
