@@ -2360,5 +2360,411 @@ The women's game today is growing fast: the **2023 FIFA Women's World Cup** in A
         ],
       },
     },
+
+    // ────────────────── SECTION 6 · WHO RUNS WHAT, AND THE LEAGUES ──────────────────
+    {
+      slug: "football-who-runs-what",
+      title: "23 · Who runs what: the five layers of football governance",
+      section: "Section 6 · How the sport is organised",
+      body: `Football's governance is **routinely blurred** — by journalists, by broadcasters, and by other courses. Here it is, exactly, in five layers. Learn this table and you will be more precise about football than most people who write about it professionally.
+
+| Layer | Who | What they actually control |
+| --- | --- | --- |
+| **1. The Laws** | **The IFAB** | The 17 Laws of the Game. **Nothing else.** |
+| **2. The world body** | **FIFA** | 211 member associations; the World Cup and other global competitions; the international **transfer** system; four of The IFAB's eight votes |
+| **3. Confederations** | **UEFA · CONMEBOL · CAF · CONCACAF · AFC · OFC** | Continental competitions and continental governance |
+| **4. National associations** | The FA (England), U.S. Soccer, the DFB (Germany), the CBF (Brazil)… | The game inside one country: national teams, referees, coaching licences, the domestic pyramid, discipline |
+| **5. Leagues and clubs** | The Premier League, MLS, the NWSL, Liga MX… | Their own competition rules — the ones the Laws leave to the "competition" |
+
+**The confederations, in full** (FIFA, n.d.):
+
+| Confederation | Region |
+| --- | --- |
+| **UEFA** | Europe |
+| **CONMEBOL** | South America |
+| **CAF** | Africa |
+| **CONCACAF** | North and Central America and the Caribbean |
+| **AFC** | Asia |
+| **OFC** | Oceania |
+
+Six. Not five, not seven. **CONCACAF** is the one people mangle — it includes the **United States, Canada, Mexico**, all of Central America, and the Caribbean. And note that **Australia plays in the AFC (Asia), not the OFC** — a governance decision, not a geographical one, and a reminder that these are **political bodies**, not maps.
+
+---
+
+**Now the sentence that ties this whole course together.**
+
+Remember from Section 3: the Laws are full of the words *"where competition rules permit."* Substitutions, VAR, goal-line technology, extra time, sin bins, the number of substitutes named on the bench — **The IFAB writes one rulebook with a menu of options, and Layer 5 picks from the menu.**
+
+That is why:
+
+- A **World Cup** match, a **Premier League** match, and **your high school match** all play the **same 17 Laws**...
+- ...and still **do not play the same game.**
+
+Once you see this, football's rules stop being confusing. There is one rulebook and thousands of configurations of it.
+
+---
+
+**Three governance errors to stop making.**
+
+1. **"FIFA changed the offside rule."** No. **The IFAB** did — with FIFA's four votes and at least two British ones. (Lesson 10.)
+2. **"UEFA runs European football."** Partly. UEFA runs European **competitions** and European governance — but the **Premier League** is run by the Premier League, and **The FA** governs English football. Three different bodies, three different jobs, constantly conflated.
+3. **"The World Cup is the biggest club competition."** The World Cup is for **national teams**. Club football is a separate universe with its own competitions (next lesson but one).
+
+---
+
+**Where does the money and power actually sit?** Honestly: **not** in the place the org chart suggests. The IFAB owns the rulebook and has almost no money. FIFA has enormous money and does not own the rulebook. The richest **clubs** in Europe have, at various times, threatened to leave their competitions entirely — and the credibility of that threat is a form of power that appears on no org chart at all.
+
+**Governance is what an institution can enforce, not what it is entitled to.** Keep that in mind for Section 7.
+
+:::reveal Name the six confederations and say which one the United States belongs to. ||| **UEFA** (Europe) · **CONMEBOL** (South America) · **CAF** (Africa) · **CONCACAF** (North and Central America and the Caribbean) · **AFC** (Asia) · **OFC** (Oceania). The United States is in **CONCACAF** — along with Canada, Mexico, Central America and the Caribbean. (And note Australia plays in the **AFC**, not the OFC — these are political bodies, not maps.)
+
+## Sources
+- FIFA. (n.d.). *Member associations*. Retrieved July 2026, from https://inside.fifa.com/associations
+- The IFAB. (n.d.). *The IFAB organisation*. Retrieved July 2026, from https://www.theifab.com/organisation/
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
+      recallContent: [
+        {
+          prompt: "Name the five layers of football governance and what each controls.",
+          answer:
+            "1) The IFAB — the 17 Laws, and nothing else. 2) FIFA — world body, 211 member associations, the World Cup, the transfer system, 4 IFAB votes. 3) The six confederations — continental competitions. 4) National associations — the game inside one country. 5) Leagues and clubs — their own competition rules.",
+        },
+        {
+          prompt: "Why do a World Cup match, a Premier League match and a high school match all use the same 17 Laws yet not play the same game?",
+          answer:
+            "Because the Laws are full of 'where competition rules permit'. The IFAB writes one rulebook with a MENU of options — substitutions, VAR, extra time, sin bins — and each competition picks from the menu.",
+        },
+      ],
+    },
+    {
+      slug: "football-the-pyramid",
+      title: "24 · The pyramid: promotion, relegation, and why American leagues are different",
+      section: "Section 6 · How the sport is organised",
+      body: `Most of the football world is organised as a **pyramid**, and the pyramid is the single biggest structural difference between football and American sport.
+
+**How it works.** Divisions are stacked. At the end of each season, the **best teams in a division are promoted** to the one above, and the **worst are relegated** to the one below. In England, the ladder runs from the **Premier League** down through the **EFL Championship**, **League One**, **League Two**, into the **National League** — and then keeps going, through regional divisions, right down to genuinely local amateur football.
+
+**And there is no floor.** The pyramid connects — in principle, and occasionally in practice — a team of teenagers on a public park to the top of the professional game. There is a **continuous ladder**. A club that keeps winning keeps going up. There is no committee that has to admit you and no franchise fee to pay.
+
+**What this does to a season.** It means **most matches matter to somebody**. A club in mid-table with nothing to win is rare; a club fighting relegation is fighting for its **financial existence**, because dropping a division can mean losing a large share of its income and its best players. Relegation is not a sporting embarrassment. It is a **budgetary catastrophe**, and that is precisely why the football at the bottom of a table is often more desperate and more compelling than the football at the top.
+
+---
+
+**The American model is different — deliberately.**
+
+**Major League Soccer (MLS)** in the United States and Canada is a **closed league**. There is **no promotion and no relegation** between MLS and the divisions below it. New clubs join by **expansion** — an existing ownership group is admitted, typically after paying a substantial expansion fee. MLS also operates as a **single entity**, with a **salary cap** and league-level mechanisms (like Designated Player rules) that allow clubs to sign a limited number of high-paid stars outside the cap.
+
+Below MLS sit **USL** competitions (the USL Championship, USL League One) and other divisions; the **MLS NEXT** platform runs the elite youth pathway. **The USL has publicly moved toward introducing promotion and relegation within its own structure** — a genuinely notable development in American soccer, and one whose outcome you should check for yourself rather than take from any course, including this one.
+
+**Which is better?** Here is the honest answer, and it is not the one football romantics want.
+
+**The case for the pyramid:**
+- **Sporting merit is the only entry ticket.** Win and you rise. No committee, no fee.
+- **Almost every match has stakes.**
+- **A local club can, in principle, climb.**
+
+**The case for the closed league:**
+- **Financial stability.** An owner's investment cannot be destroyed by relegation, so owners will invest in stadiums, academies and long-term projects that a club fighting relegation cannot afford to.
+- **Cost control.** A salary cap prevents the arms race in which clubs spend themselves into insolvency chasing survival — which, in open pyramids, **happens regularly and ruins historic clubs.**
+- **Competitive balance.** Closed leagues with caps and drafts tend to be far less predictable at the top than open leagues, where the same handful of wealthy clubs win over and over.
+
+That last point deserves emphasis, because pyramid romantics skip it: **open pyramids are extremely unequal.** The same small group of rich clubs wins the big European leagues year after year, precisely because there is no cap, no draft, and no revenue-sharing floor. The pyramid gives you a beautiful theoretical ladder **and** a top division that is often boringly predictable. The closed league gives you no ladder **and** a genuinely competitive championship.
+
+**Both models are trade-offs, and neither is morally superior.** Anyone who tells you otherwise is a fan, not an analyst.
+
+:::reveal Why is relegation described as a budgetary catastrophe rather than a sporting embarrassment? ||| Because dropping a division can cost a club a large share of its **income** — broadcast money, gate revenue, sponsorship — and usually its best players too. The club's financial existence, not just its pride, is on the line. That is exactly why the football at the bottom of a table is often more desperate than the football at the top.
+
+## Sources
+- FIFA. (n.d.). *Member associations*. Retrieved July 2026, from https://inside.fifa.com/associations`,
+      recallContent: [
+        {
+          prompt: "What is the single biggest structural difference between football and American sport?",
+          answer:
+            "The pyramid — promotion and relegation. Divisions are stacked and connected, with no floor: in principle a club can climb from a public park to the top division. MLS, by contrast, is a closed league: no promotion, no relegation, entry by expansion.",
+        },
+        {
+          prompt: "State the strongest argument FOR a closed league.",
+          answer:
+            "Financial stability and competitive balance. An owner's investment can't be destroyed by relegation, so they invest long-term; a salary cap prevents the spending arms race that regularly bankrupts clubs in open pyramids; and capped leagues are often far less predictable at the top than open ones.",
+        },
+      ],
+    },
+    {
+      slug: "football-leagues-and-competitions",
+      title: "25 · The leagues and competitions worth knowing — men's and women's",
+      section: "Section 6 · How the sport is organised",
+      body: `**Three different kinds of competition run at the same time**, and confusing them is the most common way to sound lost in a football conversation.
+
+| Type | What it is | Example |
+| --- | --- | --- |
+| **League** | Everyone plays everyone; points accumulate; the table decides | Premier League, MLS, NWSL |
+| **Domestic cup** | Single-elimination knockout, usually open to clubs from **every** division | The FA Cup; the U.S. Open Cup |
+| **Continental competition** | The best clubs of a confederation, playing each other | UEFA Champions League; CONMEBOL Copa Libertadores |
+
+**A single club can be playing in all three in the same month.** That is why fixture congestion is a real, constant topic — a successful club can play twice a week for months.
+
+---
+
+**Domestic leagues (men's).** The wealthiest and most-watched are concentrated in western Europe — commonly called the "big five":
+
+| League | Country |
+| --- | --- |
+| **Premier League** | England |
+| **La Liga** | Spain |
+| **Bundesliga** | Germany |
+| **Serie A** | Italy |
+| **Ligue 1** | France |
+
+But **do not mistake wealth for the whole game.** Enormous football cultures with vast followings operate outside that list — **Brazil** and **Argentina** (whose leagues have produced a disproportionate share of the game's greatest players), **Liga MX** in Mexico, the leagues of North Africa and West Africa, **Japan's J1 League** and **South Korea's K League**, and **Major League Soccer** in the US and Canada. A course that treats western Europe as football and everything else as a feeder system is telling you about **money**, not about **football**.
+
+**Domestic leagues (women's).** Not an appendix — a fast-growing professional game in its own right:
+
+| League | Country |
+| --- | --- |
+| **National Women's Soccer League (NWSL)** | United States |
+| **Women's Super League (WSL)** | England |
+| **Liga F** | Spain |
+| **Frauen-Bundesliga** | Germany |
+
+**One concrete, verifiable difference worth knowing:** the **NWSL abolished its college draft.** The NCAA's own research now notes that the NWSL is excluded from its professional-probability tables because the league has **discontinued its draft** (NCAA Research, 2026). Players now enter as **free agents**, negotiating with any club — a genuinely significant labour change, and the sort of concrete detail that separates someone who follows the women's game from someone who says they support it.
+
+---
+
+**Continental club competitions — one per confederation.**
+
+| Confederation | Premier club competition |
+| --- | --- |
+| **UEFA** | UEFA Champions League |
+| **CONMEBOL** | Copa Libertadores |
+| **CAF** | CAF Champions League |
+| **CONCACAF** | CONCACAF Champions Cup |
+| **AFC** | AFC Champions League Elite |
+| **OFC** | OFC Champions League |
+
+**Qualification is by league position**, not by invitation — finish high enough in your domestic league and you are in. This is another way the pyramid's logic reaches all the way up: your **league table** determines your **continental** football, which determines your **revenue**, which determines your **squad**. Everything is connected to the table.
+
+---
+
+**National-team competitions.**
+
+- **FIFA World Cup** (men's) and **FIFA Women's World Cup** — the global championships, every four years.
+- **Continental championships** — UEFA European Championship ("the Euros"), CONMEBOL Copa América, CAF Africa Cup of Nations (AFCON), CONCACAF Gold Cup, AFC Asian Cup, OFC Nations Cup — each with a women's counterpart.
+
+**And the current one:** the **2026 FIFA World Cup**, hosted by **Canada, Mexico and the United States**, is the first with **48 teams** and **104 matches** — 12 groups of four, with the top two from each group plus the eight best third-placed teams advancing to a round of 32 (FIFA, n.d.). It is being played as this course is published. **This course is not going to tell you who won it** — go and find out, and notice that a source which *does* tell you, without checking, is a source that guesses.
+
+:::reveal What genuinely significant labour change has the NWSL made, and how do you know it is true rather than rumour? ||| It **abolished its college draft** — players now enter the league as **free agents** who can negotiate with any club. You know it because the **NCAA's own research** now excludes the NWSL from its professional-probability tables on the explicit grounds that the league has **discontinued its draft**. That is a governing body documenting the change in its own published methodology, not a rumour.
+
+## Sources
+- FIFA. (n.d.). *How the FIFA World Cup 26 will work with 48 teams*. Retrieved July 2026, from https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer
+- FIFA. (n.d.). *Member associations*. Retrieved July 2026, from https://inside.fifa.com/associations
+- NCAA Research. (2026, March). *Estimated probability of competing in college athletics*. National Collegiate Athletic Association. https://ncaaorg.s3.amazonaws.com/research/pro_beyond/RES_ProbabilityBeyondHSFiguresMethod.pdf`,
+      recallContent: [
+        {
+          prompt: "Name the three kinds of competition a club can be playing in simultaneously.",
+          answer:
+            "A LEAGUE (everyone plays everyone; the table decides), a DOMESTIC CUP (knockout, usually open to clubs from every division), and a CONTINENTAL competition (the best clubs of a confederation).",
+        },
+        {
+          prompt: "How do clubs qualify for continental competitions like the Champions League or the Copa Libertadores?",
+          answer:
+            "By LEAGUE POSITION, not invitation. Your table position determines your continental football, which determines your revenue, which determines your squad. Everything connects back to the table.",
+        },
+      ],
+    },
+    {
+      slug: "football-quiz-section-6",
+      title: "Section 6 quiz · How the sport is organised",
+      section: "Section 6 · How the sport is organised",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Which body controls the Laws of the Game, and what else does it control?",
+            options: [
+              "FIFA — it also runs the World Cup and the transfer system",
+              "The IFAB — and nothing else",
+              "UEFA — and European club competitions",
+              "The Premier League — and English football",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Layer 1 of the governance stack: The IFAB owns the 17 Laws and NOTHING else. FIFA (Layer 2) runs the World Cup, the transfer system, and 211 member associations — and holds four of The IFAB's eight votes.",
+            sourceLessonSlug: "football-who-runs-what",
+          },
+          {
+            prompt: "How many confederations are there, and which one does the United States belong to?",
+            options: [
+              "Five; the USA is in CONMEBOL",
+              "Six; the USA is in CONCACAF",
+              "Six; the USA is in UEFA",
+              "Seven; the USA is in the OFC",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Six: UEFA, CONMEBOL, CAF, CONCACAF, AFC, OFC. The USA is in CONCACAF, with Canada, Mexico, Central America and the Caribbean. Note that Australia plays in the AFC, not the OFC — these are political bodies, not maps.",
+            sourceLessonSlug: "football-who-runs-what",
+          },
+          {
+            prompt: "How many member associations does FIFA have?",
+            options: ["48", "104", "211", "17"],
+            correctIndex: 2,
+            explanation:
+              "211. (48 is the number of teams at the 2026 World Cup; 104 the number of matches; 17 the number of Laws — all different things, and all frequently muddled.)",
+            sourceLessonSlug: "football-who-runs-what",
+          },
+          {
+            prompt: "Which of these statements is CORRECT?",
+            options: [
+              "UEFA runs the Premier League",
+              "The FA governs English football; the Premier League runs the Premier League; UEFA runs European competitions — three bodies, three jobs",
+              "FIFA runs the Premier League and appoints its referees",
+              "The IFAB approves each league's fixture list",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Three different bodies, constantly conflated. Getting this right is what separates precise football talk from vague football talk.",
+            sourceLessonSlug: "football-who-runs-what",
+          },
+          {
+            prompt: "Why do a World Cup match and a high school match use the same 17 Laws without playing the same game?",
+            options: [
+              "Because the World Cup uses a secret extra rulebook",
+              "Because the Laws are full of 'where competition rules permit' — one rulebook with a MENU of options, and each competition picks from it",
+              "Because FIFA modifies the Laws for elite competition",
+              "Because high school football uses only 12 of the 17 Laws",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Substitutions, VAR, extra time, sin bins, goal-line technology — all are options the Law offers and the COMPETITION chooses. Once you see this pattern, football's rules stop being confusing.",
+            sourceLessonSlug: "football-who-runs-what",
+          },
+          {
+            prompt: "What is a football 'pyramid'?",
+            options: [
+              "A youth development structure",
+              "Stacked divisions connected by promotion and relegation, with no floor — in principle a park team can climb to the top",
+              "The seating arrangement in a stadium",
+              "FIFA's ranking of national teams",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The single biggest structural difference between football and American sport. A club that keeps winning keeps going up — no committee has to admit it and no franchise fee is required.",
+            sourceLessonSlug: "football-the-pyramid",
+          },
+          {
+            prompt: "Why is relegation better described as a budgetary catastrophe than a sporting embarrassment?",
+            options: [
+              "Because relegated clubs must pay a fine to the league",
+              "Because dropping a division can cost a club a large share of its income — broadcast money, gate, sponsorship — and usually its best players",
+              "Because relegated clubs are expelled from the FA",
+              "It isn't — relegation has no financial consequences",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Financial existence, not just pride, is on the line. It is exactly why the football at the bottom of a table is often more desperate than the football at the top.",
+            sourceLessonSlug: "football-the-pyramid",
+          },
+          {
+            prompt: "How does MLS differ structurally from the English pyramid?",
+            options: [
+              "It has more divisions",
+              "It is a CLOSED league — no promotion or relegation; new clubs join by expansion, and it operates as a single entity with a salary cap",
+              "It plays by different Laws of the Game",
+              "It is governed by UEFA",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No promotion, no relegation, entry by expansion (usually with a substantial fee), single-entity structure, salary cap, and Designated Player rules for signing stars outside the cap.",
+            sourceLessonSlug: "football-the-pyramid",
+          },
+          {
+            prompt: "What is the strongest HONEST argument in favour of a closed league?",
+            options: [
+              "It is more traditional",
+              "Financial stability and competitive balance — no relegation risk means long-term investment, and a cap prevents the spending arms race that regularly bankrupts clubs in open pyramids",
+              "It produces better players",
+              "It is required by FIFA",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Pyramid romantics skip this: open pyramids are extremely UNEQUAL. The same rich clubs win the big European leagues year after year, because there is no cap, no draft, and no revenue floor. Both models are trade-offs; neither is morally superior.",
+            sourceLessonSlug: "football-the-pyramid",
+          },
+          {
+            prompt: "Name the three different kinds of competition a club may be playing in during the same month.",
+            options: [
+              "The league, the domestic cup, and the continental competition",
+              "The league, the World Cup, and the Olympics",
+              "The league, the transfer window, and the playoffs",
+              "The league, the reserve league, and the youth league",
+            ],
+            correctIndex: 0,
+            explanation:
+              "League (everyone plays everyone; the table decides), domestic cup (knockout, usually open to every division), and continental competition (the best clubs of a confederation). This is why fixture congestion is a constant topic.",
+            sourceLessonSlug: "football-leagues-and-competitions",
+          },
+          {
+            prompt: "How do clubs qualify for the Champions League or the Copa Libertadores?",
+            options: [
+              "By invitation from the confederation",
+              "By league position in their domestic league",
+              "By winning the domestic cup only",
+              "By paying an entry fee",
+            ],
+            correctIndex: 1,
+            explanation:
+              "By league position. Table → continental football → revenue → squad. Everything in football connects back to the table.",
+            sourceLessonSlug: "football-leagues-and-competitions",
+          },
+          {
+            prompt: "Which continental competition belongs to CONMEBOL?",
+            options: ["The Copa Libertadores", "The UEFA Champions League", "The CONCACAF Champions Cup", "The AFC Champions League Elite"],
+            correctIndex: 0,
+            explanation:
+              "One premier club competition per confederation: UEFA Champions League, CONMEBOL Copa Libertadores, CAF Champions League, CONCACAF Champions Cup, AFC Champions League Elite, OFC Champions League.",
+            sourceLessonSlug: "football-leagues-and-competitions",
+          },
+          {
+            prompt: "What significant labour change has the NWSL made?",
+            options: [
+              "It introduced promotion and relegation",
+              "It abolished its college draft — players now enter as free agents who can negotiate with any club",
+              "It adopted a hard salary cap for the first time",
+              "It merged with MLS",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Documented in the NCAA's own research methodology, which now excludes the NWSL from its professional-probability tables on the explicit grounds that the league has discontinued its draft.",
+            sourceLessonSlug: "football-leagues-and-competitions",
+          },
+          {
+            prompt: "What is new about the 2026 FIFA World Cup format?",
+            options: [
+              "48 teams and 104 matches, in 12 groups of four, with a round of 32",
+              "32 teams in eight groups, as before",
+              "It is the first to be held outside Europe",
+              "It has abolished the group stage entirely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "48 teams, 104 matches, 12 groups of four; the top two from each group plus the eight best third-placed teams reach a round of 32. Hosted by Canada, Mexico and the United States.",
+            sourceLessonSlug: "football-leagues-and-competitions",
+          },
+          {
+            prompt: "Why is it a mistake to treat western Europe's 'big five' leagues as the whole of football?",
+            options: [
+              "Because they are not actually the wealthiest",
+              "Because that tells you about MONEY, not about football — enormous football cultures operate outside it, and the best players have never come only from Europe",
+              "Because they play by different Laws",
+              "Because they are not FIFA members",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Brazil and Argentina alone have produced a disproportionate share of the game's greatest players. The richest LEAGUES are concentrated in western Europe; the PLAYERS are not.",
+            sourceLessonSlug: "football-leagues-and-competitions",
+          },
+        ],
+      },
+    },
   ],
 };
