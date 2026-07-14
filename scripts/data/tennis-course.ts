@@ -18,7 +18,17 @@
 //     runner-up), "the French Open went equal in 2006" (champions only; full draw was 2007), and
 //     "the Australian Open went equal in 2001" (it first went equal in 1984 and went BACKWARDS).
 //   * The prize-money distribution lesson uses only figures published by the tournaments and the
-//     ITF. No invented statistics, no invented people, no invented rule numbers.
+//     ITF. No invented statistics, no invented people, no invented rule numbers. Where the data
+//     genuinely does not exist (full per-round, per-event prize-money distribution across both
+//     tours), the lesson SAYS SO rather than fabricating a table.
+//   * Technique (Section 2) is cited to USTA Player Development's stroke fundamentals. Note that
+//     the ITF rulebook says NOTHING about grips — the course states that explicitly rather than
+//     dressing coaching convention up as law.
+//   * Strategy (Section 3) uses Craig O'Shannessy's ATP/Infosys rally-length work (~70% of points
+//     end in 0-4 shots). That figure is flagged in-lesson as MEN'S PROFESSIONAL data, because no
+//     comparable public recreational data exists. Court geometry is cited to ITF Rule 1 (exact
+//     dimensions); the course deliberately REFUSES to quote a sourceless "X% of amateur points are
+//     unforced errors" statistic, and says why.
 
 import type { AuthoredCourse } from "./authored-course";
 
@@ -392,10 +402,798 @@ Which means the honest answer to "does tennis use robot line judges?" is: **at t
       },
     },
 
+    // ───────────────────────────── SECTION 2 · HITTING THE BALL ─────────────────────────────
+    {
+      slug: "tennis-grips",
+      title: "7 · Grips: the one decision that quietly determines every shot you can hit",
+      section: "Section 2 · Hitting the ball",
+      body: `Before you swing at anything, you make a decision most beginners don't know they're making: **how you hold the racquet**. The grip is not a preference. It is a set of physical constraints. It decides what height of ball you can hit comfortably, how much topspin you can generate, and — this is the part nobody tells you — **which shots become nearly impossible**.
+
+**The bevel system.** Hold the racquet edge-on, like an axe about to chop. The handle is an octagon: eight flat faces, called **bevels**. Number them starting with the top face as **bevel 1**, then go **clockwise for a right-hander** (counter-clockwise for a left-hander — every grip below mirrors). Where you put the **heel pad** and the **index knuckle** of your hitting hand names the grip (USTA Player Development, n.d.).
+
+| Grip | Index knuckle on | What it's for | The trade-off |
+| --- | --- | --- | --- |
+| **Continental** | Bevel 2 | **Serves, volleys, overheads, slice** — and the bottom hand on a two-handed backhand | Terrible for a modern topspin forehand; the face is too open |
+| **Eastern forehand** | Bevel 3 | A flat, penetrating, controllable forehand | Less topspin; struggles with high balls |
+| **Semi-western forehand** | Bevel 4 | Heavy topspin; the most common forehand on tour today | Low, skidding balls are awkward |
+| **Western forehand** | Bevel 5 | Extreme topspin, very high bounces | Low balls become genuinely hard; hostile on grass |
+| **Eastern backhand** | Bevel 1 | A one-handed topspin backhand | Requires an early, disciplined preparation |
+
+**The single most important grip is the Continental**, and it is the one beginners avoid, because it feels *wrong* on a forehand. Learn it anyway. It is the grip for the **serve, the volley, the overhead, and the slice** — four different shots, one grip (USTA Player Development, n.d.). A player who can't hold Continental cannot really serve or volley; they can only pat the ball. The reason it feels wrong is that it opens the racquet face, and an open face is exactly what a serve and a volley need, and exactly what a topspin forehand does not.
+
+**Why the tour drifted semi-western.** The semi-western forehand closes the face and lets you brush **up** the back of the ball, which produces topspin, which makes the ball dip down inside the baseline. That lets you swing hard *and* keep it in. It is the best available compromise between spin and flat power across the ball heights the modern game produces (USTA Player Development, n.d.). It is not a free lunch: it makes low, sliced balls awkward, which is precisely why players slice against western-grip opponents.
+
+**The honest coaching note.** There is no "correct" grip handed down by the ITF — **the rulebook says nothing whatsoever about how you hold the racquet**. Grips are coaching convention, not law. What *is* true is the constraint: a grip that is great for one shot is bad for another, so every grip choice is a bet about which shots you intend to hit.
+
+:::reveal Which single grip is used for the serve, the volley, the overhead, AND the slice — and why does it feel wrong to beginners on a forehand? ||| The **Continental** grip (index knuckle on **bevel 2**). It feels wrong on a forehand because it leaves the racquet **face open** — which is exactly what a serve and a volley need, and exactly what a topspin forehand does not. Beginners avoid it for that reason, and as a result never really learn to serve or volley.
+
+## Sources
+- International Tennis Federation. (2026). *ITF rules of tennis 2026*. https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf
+- USTA Player Development. (n.d.). *Technique: Stroke fundamentals*. https://www.playerdevelopment.usta.com/Improve-Your-Game/Sport-Science/114384_Technique_Stroke_Fundamentals/`,
+      recallContent: [
+        {
+          prompt: "Who writes the Rules of Tennis, and who layers conditions on top?",
+          answer:
+            "The ITF publishes the Rules of Tennis. The ATP and WTA tours layer their own conditions on top for their events — and the four Grand Slams are run by their own national associations and the Grand Slam Board, NOT by the tours.",
+        },
+        {
+          prompt: "Does the ITF rulebook specify how you must hold the racquet?",
+          answer: "No. The rules say nothing about grips at all. Grips are coaching convention, not law.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-groundstrokes",
+      title: "8 · Groundstrokes: the forehand, and the two different backhands",
+      section: "Section 2 · Hitting the ball",
+      body: `A **groundstroke** is any ball you hit after it bounces once. It is the majority of the shots you will ever play, and it comes in two flavours — forehand and backhand — that are not mirror images of each other.
+
+**The forehand.** The dominant-side groundstroke, and for most players the shot they build a game around. The chain the USTA teaches is **legs → hips → torso → shoulder → arm → racquet**: power is generated from the ground up and passed along the body, not manufactured by the arm (USTA Player Development, n.d.). If you are arming the ball, you have skipped the first four links.
+
+Three things matter more than the details:
+- **Early preparation.** The racquet turns back as the ball crosses the net, not as it bounces on your side. Late preparation is the single most common fault in recreational tennis, and no grip fixes it.
+- **Contact out in front.** You want to strike the ball ahead of your front hip, where you can still see it and still accelerate. Contact behind you is a defensive shot you didn't choose to hit.
+- **Low to high.** To make topspin, the racquet head travels from **below** the ball to **above** it, brushing up the back. Topspin is what lets you hit hard and still land it in.
+
+**The backhand: pick a side of an old argument.**
+
+| | One-handed backhand | Two-handed backhand |
+| --- | --- | --- |
+| **Reach** | Longer | Shorter |
+| **Slice / disguise** | Natural — it's the same grip | Requires releasing the top hand |
+| **High balls** | Hard; the shoulder is exposed | Much easier — the second hand supports |
+| **Learning curve** | Slower; demands early preparation | Faster; the second hand stabilizes for you |
+| **Power on the return** | Harder to block back a big serve | Easier — this is why the tour drifted two-handed |
+
+Neither is correct. The two-hander is easier to learn, better on high balls, and better against a big serve, which is why it dominates the professional game. The one-hander has more reach and a more natural slice. **The two-hander's grip is the interesting detail**: the bottom (dominant) hand typically stays **Continental** — which means a two-hander is, in part, the same grip you serve and volley with (USTA Player Development, n.d.).
+
+**The slice.** Hit with a **Continental** grip and a high-to-low path, the slice puts **backspin** on the ball. It floats, it stays low after the bounce, and it gives you time. It is not a weak shot; it is a *different* shot. Against a western-grip opponent who wants the ball at shoulder height, a slice that stays at knee height is an attack, not a retreat.
+
+:::reveal Name the power chain a groundstroke should use, in order — and the most common recreational fault that no grip change can fix. ||| **Legs → hips → torso → shoulder → arm → racquet**: power comes from the ground up, passed through the body, not manufactured by the arm. The most common fault is **late preparation** — turning the racquet back when the ball bounces on your side instead of when it crosses the net. No grip fixes being late.
+
+## Sources
+- USTA Player Development. (n.d.). *Technique: Stroke fundamentals*. https://www.playerdevelopment.usta.com/Improve-Your-Game/Sport-Science/114384_Technique_Stroke_Fundamentals/`,
+      recallContent: [
+        {
+          prompt: "Where does the index knuckle sit for a Continental grip, and for a semi-western forehand?",
+          answer:
+            "Continental: bevel 2. Semi-western forehand: bevel 4. (Right-hander numbering — a left-hander mirrors it.)",
+        },
+        {
+          prompt: "Why did the professional game drift toward the two-handed backhand?",
+          answer:
+            "It's easier to learn, far better on high balls, and much easier to block back a big serve — the second hand stabilizes the racquet.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-serve-and-return-technique",
+      title: "9 · The serve and the return: the two shots that touch every single point",
+      section: "Section 2 · Hitting the ball",
+      body: `Lesson 4 covered what the **rules** say about the serve. This lesson is about **hitting** it — and about the shot on the other side of the net, which is the most under-practised stroke in tennis.
+
+**Every point in tennis begins with a serve and a return. Every single one.** That is worth sitting with, because it means these two shots are guaranteed to appear in 100% of points, while your beautiful running forehand appears in some of them. Practice time in most clubs is allocated in almost exactly the reverse order.
+
+**The serve.**
+- **Grip: Continental.** Non-negotiable. A "frying-pan" (forehand) grip lets a beginner get the ball in the box on day one and then caps them forever: you cannot generate **spin** with it, so you cannot hit a reliable second serve, so you double-fault under pressure (USTA Player Development, n.d.).
+- **The toss is the shot.** A serve is only as good as the toss. Consistent toss, consistent serve — and a toss you don't like, you are explicitly allowed to **catch and re-toss**: under ITF Rule 19, Case 1, if you toss the ball and decide not to hit it, you may catch it or let it bounce, and **it is not a fault** (ITF, 2026). Free do-over. Use it.
+- **Trophy position → drive up.** The legs bend, the tossing arm extends, the hitting arm cocks. Then you drive **up** at the ball, not out at it. Beginners hit down at the ball, believing that's how you get it in the box; the net says otherwise.
+- **The second serve is a different shot.** It is not "the first serve, but softer." That's how you get a serve that lands short and gets attacked. A real second serve is hit with **spin** — the racquet brushes across or up the back of the ball — which makes it dip into the box and kick up off the court. Spin, not speed, is what makes a second serve safe.
+
+**The return.** The most neglected shot in tennis, and the one that decides who breaks serve.
+- **Shorten the swing.** You do not have time for a full backswing against a real serve. The pace is supplied for you; your job is to redirect it. A blocked return that lands deep beats a beautiful full swing that lands in the net.
+- **Split step as they strike.** (Next lesson.)
+- **Two different jobs.** Against a **first serve**, the goal is simply to **get it back, deep, and neutralize**. Against a **second serve**, the goal is to **attack** — step in, take it early, and take the server's advantage away. Playing both returns the same way wastes the single biggest opportunity in a game.
+
+**The strategic punchline:** the serve is the only shot in tennis you hit without anyone interfering, and the return is your only chance to take the server's free advantage away. They are the two highest-leverage strokes in the sport — which is exactly why Section 3 opens by proving it with data.
+
+:::reveal Under ITF Rule 19, you toss the ball for your serve and don't like the toss. What are you allowed to do? ||| You may **catch it, or let it bounce** — and it is **not a fault** (ITF, 2026, Rule 19, Case 1). A serve is only as good as its toss, and the rulebook gives you a free do-over on a bad one. Most recreational players hit the bad toss anyway.
+
+## Sources
+- International Tennis Federation. (2026). *ITF rules of tennis 2026*. https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf
+- USTA Player Development. (n.d.). *Technique: Stroke fundamentals*. https://www.playerdevelopment.usta.com/Improve-Your-Game/Sport-Science/114384_Technique_Stroke_Fundamentals/`,
+      recallContent: [
+        {
+          prompt: "What makes a second serve safe — speed or spin? Why?",
+          answer:
+            "Spin. Brushing up/across the back of the ball makes it dip down into the box and kick off the court. A second serve that is just a slower first serve lands short and gets attacked.",
+        },
+        {
+          prompt: "How should your goal differ returning a first serve vs. a second serve?",
+          answer:
+            "First serve: get it back deep and neutralize. Second serve: attack — step in, take it early, and take away the server's advantage.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-volleys-and-overheads",
+      title: "10 · Volleys and overheads: the net game",
+      section: "Section 2 · Hitting the ball",
+      body: `A **volley** is a ball you hit **before it bounces**. An **overhead** (or "smash") is a volley hit above your head, like a serve, against a ball floating down at you. Both are hit with the **Continental** grip — the same grip as the serve (USTA Player Development, n.d.). One grip, three shots. This is the payoff for having learned the grip that felt wrong in Lesson 7.
+
+**The volley is not a swing. It is a block.**
+
+The single hardest idea to teach a beginner at the net is that you should **not swing**. The ball already has pace; you are borrowing it. The volley is a short, firm punch — racquet out in front, wrist firm, a small step forward through the ball. If you take a backswing at the net, the ball is past you before the racquet comes forward.
+
+- **Racquet head above the wrist** wherever possible. When the ball is low, you **bend your knees** to get down to it, rather than dropping the racquet head.
+- **Contact in front of the body**, where you can see it.
+- **The open face is doing the work.** The Continental grip's open face is what lifts a low volley over the net and puts a little backspin on it so it stays low on the other side. You don't need to lift it with your arm; the grip does it.
+
+**The overhead is a serve you didn't get to plan.** Same grip, same up-and-out motion — but the ball is moving, the sun may be in it, and you have to move your feet first. The rule that saves overheads: **turn sideways and move back with side-steps, getting behind the ball**, rather than backpedaling flat-footed with your chest to the net. Point your non-hitting hand up at the ball to track it.
+
+**Why bother, in an era where nobody comes to net?**
+
+Because "nobody comes to net" is a myth about *singles at the top of the men's tour*, generalized wildly. Even there it's false — players finish points at the net constantly; they just don't serve-and-volley every point. And in **doubles**, which is what most recreational tennis actually *is*, the net is the whole game: the team that controls the net usually wins. A player with no volley has voluntarily forfeited half the court and most of doubles.
+
+:::reveal What is the one instruction that most improves a beginner's volley, and what should you do instead when the ball is low? ||| **Do not swing** — the volley is a short, firm **block/punch** with the racquet out in front; the ball already has pace and you are borrowing it. When the ball is low, **bend your knees** to get down to it rather than dropping the racquet head. The Continental grip's open face does the lifting for you.
+
+## Sources
+- USTA Player Development. (n.d.). *Technique: Stroke fundamentals*. https://www.playerdevelopment.usta.com/Improve-Your-Game/Sport-Science/114384_Technique_Stroke_Fundamentals/`,
+      recallContent: [
+        {
+          prompt: "Which grip do the volley, the overhead, and the serve share?",
+          answer: "Continental — index knuckle on bevel 2. One grip, three shots (plus the slice).",
+        },
+        {
+          prompt: "How should you move back for an overhead?",
+          answer:
+            "Turn sideways and side-step back to get behind the ball, tracking it with the non-hitting hand pointed up — not backpedaling flat-footed with your chest to the net.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-footwork-and-recovery",
+      title: "11 · Footwork: how you lose the point before you ever swing",
+      section: "Section 2 · Hitting the ball",
+      body: `Here is the most useful sentence in this whole section: **most bad shots are not bad swings. They are good swings taken from the wrong place.**
+
+You cannot fix with your arm what you failed to fix with your feet. A player who arrives on balance hits a mediocre technique well. A player who arrives late and reaching hits a beautiful technique badly.
+
+**The split step — the one thing to take from this lesson.**
+
+As your opponent **strikes the ball**, you make a small hop and land lightly on the balls of both feet, knees bent, weight forward. That's it. That's the split step.
+
+The timing is the whole trick: **you land as they make contact, not after.** The landing loads your legs like a spring, so that the instant you read the ball's direction you can push off in it. A player who is standing flat when the ball is struck must first *start* moving; a player who has split-stepped is already loaded and simply *goes*. Over a long rally that difference compounds into being a step late on every ball — which is indistinguishable, on the scoreboard, from having worse strokes.
+
+**Recovery: the part nobody watches.**
+
+Amateurs watch the ball. Watch the *player* instead, and you'll notice the thing that actually separates levels: **after hitting, they immediately move back toward the middle.** Not to the exact center — to the middle of the **angles their opponent can now hit**. Hit a ball crosscourt from the deuce corner and your recovery position is not the center mark; it is shaded toward the side the opponent's best reply comes from.
+
+The rhythm of a rally is therefore not *hit, watch, hit*. It is:
+
+**split step → read → move → hit → recover → split step → …**
+
+Most recreational players do *hit → admire → panic*. They stand and watch their own shot, which is the single most expensive habit in the sport, because it costs them the split step and thus the first step to the next ball.
+
+**The unglamorous truth about fitness.** Tennis is not a running sport in a straight line; it is a sport of short, explosive, multi-directional bursts with tiny recoveries between them. The stop is as important as the start — the ability to *decelerate*, plant, and change direction is what lets you hit on balance. That, and not stroke technique, is usually what gives out first in a long match.
+
+:::reveal When exactly do you split step, and what does landing at that moment actually buy you? ||| You split step as your **opponent strikes the ball** — landing on the balls of both feet as they make contact, **not after**. Landing at that instant **loads your legs like a spring**, so that the moment you read direction you can push off immediately. A flat-footed player has to *start* moving first, which puts them a step late on every ball for the rest of the rally.
+
+## Sources
+- USTA Player Development. (n.d.). *Technique: Stroke fundamentals*. https://www.playerdevelopment.usta.com/Improve-Your-Game/Sport-Science/114384_Technique_Stroke_Fundamentals/`,
+      recallContent: [
+        {
+          prompt: "Why is the volley a block rather than a swing?",
+          answer:
+            "The ball already carries pace — you're borrowing it. A backswing at the net means the ball is past you before the racquet comes forward.",
+        },
+        {
+          prompt: "What's the full rhythm of a rally, in order?",
+          answer: "Split step → read → move → hit → recover → split step → … (Not: hit → admire → panic.)",
+        },
+      ],
+    },
+    {
+      slug: "tennis-quiz-hitting",
+      title: "12 · Quiz: hitting the ball",
+      section: "Section 2 · Hitting the ball",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "On the bevel system (right-hander), where does the index knuckle sit for a Continental grip?",
+            options: ["Bevel 1", "Bevel 2", "Bevel 4", "Bevel 5"],
+            correctIndex: 1,
+            explanation:
+              "Continental = heel pad and index knuckle on bevel 2 (bevel 7 for a left-hander, mirrored). It's the grip for serves, volleys, overheads, and slice.",
+            sourceLessonSlug: "tennis-grips",
+          },
+          {
+            prompt: "Which set of shots all share the Continental grip?",
+            options: [
+              "Topspin forehand, topspin backhand, and the return",
+              "Serve, volley, overhead, and slice",
+              "Only the serve",
+              "Semi-western forehand and the two-handed backhand",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One grip, four shots: serve, volley, overhead, slice — plus the bottom hand of a two-handed backhand. This is why the 'wrong-feeling' grip is the most important one to learn.",
+            sourceLessonSlug: "tennis-grips",
+          },
+          {
+            prompt: "What does the ITF rulebook say about which grip you must use?",
+            options: [
+              "It mandates the Continental grip for serving",
+              "It mandates an Eastern grip for beginners",
+              "Nothing at all — grips are coaching convention, not law",
+              "It bans the Western grip on grass",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The rules say nothing whatsoever about how you hold the racquet. Every grip 'rule' you hear is coaching convention. The real constraint is physical: a grip that's great for one shot is bad for another.",
+            sourceLessonSlug: "tennis-grips",
+          },
+          {
+            prompt: "Why did the professional tour drift toward the semi-western forehand grip?",
+            options: [
+              "It is required by the ATP",
+              "It closes the face so you can brush up the ball for topspin — letting you swing hard and still keep it in",
+              "It is the only grip that works on clay",
+              "It makes low, skidding balls easier to handle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Semi-western closes the face, enabling heavy topspin, which dips the ball down inside the baseline. The trade-off is real: low, sliced balls become awkward — which is exactly why players slice against it.",
+            sourceLessonSlug: "tennis-grips",
+          },
+          {
+            prompt: "The USTA teaches groundstroke power as a chain. What is the correct order?",
+            options: [
+              "Arm → shoulder → torso → hips → legs",
+              "Legs → hips → torso → shoulder → arm → racquet",
+              "Wrist → arm → racquet",
+              "Torso → legs → arm → racquet",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Legs → hips → torso → shoulder → arm → racquet. Power is generated from the ground up and passed through the body. If you're arming the ball, you skipped the first four links.",
+            sourceLessonSlug: "tennis-groundstrokes",
+          },
+          {
+            prompt: "What is the most common fault in recreational groundstrokes — the one no grip change can fix?",
+            options: [
+              "Gripping the racquet too tightly",
+              "Late preparation — taking the racquet back when the ball bounces rather than when it crosses the net",
+              "Standing too close to the baseline",
+              "Using two hands on the backhand",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Late preparation. The racquet should turn back as the ball crosses the net, not as it bounces on your side. No grip fixes being late.",
+            sourceLessonSlug: "tennis-groundstrokes",
+          },
+          {
+            prompt: "Which is a genuine advantage of the ONE-handed backhand over the two-hander?",
+            options: [
+              "It is easier on high, shoulder-height balls",
+              "It is easier to block back a big serve",
+              "More reach, and a more natural slice (it's the same grip)",
+              "It is easier for beginners to learn",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The one-hander has longer reach and a natural slice. The two-hander wins on high balls, on returns of big serves, and on learning speed — which is why the tour drifted two-handed.",
+            sourceLessonSlug: "tennis-groundstrokes",
+          },
+          {
+            prompt: "What does a slice do to the ball, and why is it not merely defensive?",
+            options: [
+              "Topspin, making the ball dip — it's purely a rally ball",
+              "Backspin, making the ball float and stay low after the bounce — an attack against a player who wants the ball high",
+              "Sidespin only, which is illegal in singles",
+              "Nothing; slice is just a slower groundstroke",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Backspin. The ball floats, gives you time, and stays low off the bounce. Against a western-grip opponent who wants shoulder-height balls, a knee-high slice is an attack.",
+            sourceLessonSlug: "tennis-groundstrokes",
+          },
+          {
+            prompt: "You toss the ball to serve, dislike the toss, and catch it. Under ITF Rule 19, what has happened?",
+            options: [
+              "A fault",
+              "A let — serve again",
+              "Nothing — it is not a fault; you may catch it or let it bounce",
+              "Loss of point",
+            ],
+            correctIndex: 2,
+            explanation:
+              "ITF Rule 19, Case 1: if you toss the ball and decide not to hit it, you may catch it or let it bounce, and it is NOT a fault. It's a free do-over that most recreational players never use.",
+            sourceLessonSlug: "tennis-serve-and-return-technique",
+          },
+          {
+            prompt: "What actually makes a second serve safe?",
+            options: [
+              "Hitting the first serve more softly",
+              "Spin — brushing up/across the ball so it dips into the box and kicks off the court",
+              "Aiming for the centre line every time",
+              "Standing further behind the baseline",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Spin, not reduced speed. A second serve that's just a slower first serve lands short and gets attacked. The spin is what makes it dip in and kick up.",
+            sourceLessonSlug: "tennis-serve-and-return-technique",
+          },
+          {
+            prompt: "How should your intent differ when returning a first serve versus a second serve?",
+            options: [
+              "Attack the first, neutralize the second",
+              "Play both exactly the same way for consistency",
+              "Neutralize the first (get it back deep); attack the second (step in, take it early)",
+              "Lob the first, slice the second",
+            ],
+            correctIndex: 2,
+            explanation:
+              "First serve: get it back, deep, neutralize. Second serve: attack — step in and take away the server's advantage. Playing both the same wastes the biggest opportunity in a game.",
+            sourceLessonSlug: "tennis-serve-and-return-technique",
+          },
+          {
+            prompt: "What is the single most important instruction for a beginner's volley?",
+            options: [
+              "Take a long backswing to generate pace",
+              "Do not swing — block/punch the ball with the racquet out in front",
+              "Drop the racquet head below the wrist on every ball",
+              "Always volley with a semi-western grip",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Don't swing. The ball already has pace and you're borrowing it. A backswing at the net means the ball is past you before the racquet comes forward.",
+            sourceLessonSlug: "tennis-volleys-and-overheads",
+          },
+          {
+            prompt: "The ball is low at the net. What should you do?",
+            options: [
+              "Drop the racquet head below your wrist",
+              "Bend your knees to get down to the ball, keeping the racquet head up",
+              "Swing harder to lift it",
+              "Let it bounce and hit a groundstroke",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Bend the knees; keep the racquet head above the wrist where possible. The Continental grip's open face does the lifting — you don't need to lift with your arm.",
+            sourceLessonSlug: "tennis-volleys-and-overheads",
+          },
+          {
+            prompt: "When exactly should you split step?",
+            options: [
+              "Just after you hit your own shot",
+              "As your opponent strikes the ball — landing on the balls of both feet at their moment of contact",
+              "Immediately after the ball bounces on your side",
+              "Only when you're at the net",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You land as they make contact, not after. That loads your legs like a spring, so you can push off the instant you read direction. A flat-footed player has to start moving first — and is a step late all rally.",
+            sourceLessonSlug: "tennis-footwork-and-recovery",
+          },
+          {
+            prompt: "After you hit a shot, where should you recover to?",
+            options: [
+              "Exactly the centre mark, every time",
+              "Toward the middle of the angles your opponent can now hit — shaded, not dead centre",
+              "Stay where you hit from, to watch the shot",
+              "The net, always",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not the geometric centre — the middle of the opponent's available angles. And the habit that ruins this is standing to admire your own shot, which costs you the split step and the first step to the next ball.",
+            sourceLessonSlug: "tennis-footwork-and-recovery",
+          },
+        ],
+      },
+    },
+
+    // ───────────────────────────────── SECTION 3 · STRATEGY ─────────────────────────────────
+    {
+      slug: "tennis-the-first-4-shots",
+      title: "13 · What tennis actually is: the first four shots",
+      section: "Section 3 · Strategy: how points are actually won",
+      body: `Ask a casual fan what professional tennis looks like and they will describe **long rallies** — two players trading heavy groundstrokes for twenty shots until one cracks. It is the sport's signature image. It is also, statistically, a minority event.
+
+**The number that reorganizes everything.** Analysis of ATP match data by strategy analyst **Craig O'Shannessy**, whose work has been published through the ATP/Infosys partnership, found that in men's professional tennis roughly **70% of all points end within 0–4 shots**, about **20%** run 5–8 shots, and only about **10%** reach 9 shots or more (O'Shannessy, n.d.; TennisWorldUSA, 2016).
+
+| Rally length | Share of points (ATP data) |
+| --- | --- |
+| **0–4 shots** | **~70%** |
+| 5–8 shots | ~20% |
+| 9+ shots | ~10% |
+
+Sit with the first row. **Seven points in ten are over by the fourth shot.** In a 0–4 shot point, each player has touched the ball **at most twice**. So what are those four shots? They are always the same four (TennisWorldUSA, 2016):
+
+1. The **serve**
+2. The **return**
+3. The server's next ball — **"Serve +1"**
+4. The returner's next ball — **"Return +1"**
+
+O'Shannessy calls these **The First 4 Shots**, and his central observation about coaching is a genuinely uncomfortable one: **these are the shots that get practised least and matter most.** Go to any club and watch. Two players rally crosscourt from the baseline for forty minutes — which is training for the ~10% of points that reach 9+ shots — and then play a match in which 70% of points are decided in the first four balls they never rehearsed.
+
+**Important calibration, so you don't over-claim this.** That 70/20/10 split comes from **men's professional (ATP) match data**. It is *not* a measured fact about your high-school match, and this course will not pretend otherwise — comparable public rally-length data for recreational play essentially does not exist. But the *structural* point survives the change of level, and in fact **gets stronger**: at lower levels, serves and returns produce even more errors, so points end even sooner. If 70% is the professional figure, the recreational figure is not lower.
+
+**What this changes about how you practise.** If you accept the data, the ordinary club practice routine is close to backwards. The rational allocation is to spend most of your time on:
+- serving (both first and second),
+- returning (both first and second serves),
+- and the **one ball after each** of those.
+
+**What this does NOT mean.** It does not mean rallying is worthless, or that fitness doesn't matter, or that you should try to end every point in two shots by swinging wildly. It means the **first four shots deserve the practice time they currently don't get** — and that the player who wins the short points usually wins the match.
+
+:::reveal In men's professional tennis, roughly what share of points end within 0–4 shots — and what are those four shots called? ||| Roughly **70%** (with ~20% running 5–8 shots and ~10% going 9+). The four are the **serve**, the **return**, the server's next ball (**"Serve +1"**), and the returner's next ball (**"Return +1"**) — what Craig O'Shannessy calls **The First 4 Shots**. They're the shots practised least and decisive most.
+
+## Sources
+- O'Shannessy, C. (n.d.). *ATP world articles: Tennis data & analytics*. Brain Game Tennis. https://braingametennis.com/media/atp-infosys-brain-game/
+- SportsEdTV. (n.d.). *SportsEdTV talks with Craig O'Shannessy*. https://sportsedtv.com/blog/sportsedtv-talks-with-craig-o-shannessy
+- TennisWorldUSA. (2016). *The first 4 shots*. https://www.tennisworldusa.org/tennis/news/Tennis_Technique/32178/the-first-4-shots/`,
+      recallContent: [
+        {
+          prompt: "Most bad shots are not bad swings. What are they?",
+          answer: "Good swings taken from the wrong place. You can't fix with your arm what you failed to fix with your feet.",
+        },
+        {
+          prompt: "Which two shots appear in 100% of tennis points?",
+          answer: "The serve and the return. Every point begins with both — yet they're among the least-practised shots at most clubs.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-serve-plus-one",
+      title: "14 · Serve +1 and Return +1: building the point you want",
+      section: "Section 3 · Strategy: how points are actually won",
+      body: `If 70% of points end inside four shots (Lesson 13), then the question "what do I do with the ball *after* my serve?" is not a detail. It is most of the sport.
+
+**Serve +1: the serve is a setup, not a weapon.**
+
+Amateurs serve hoping for an ace. Aces are lovely and rare. The professional model treats the serve as the **first half of a two-shot combination**: you serve to a location *in order to force a predictable reply*, and you are already moving to hit that reply.
+
+The classic pattern, for a right-hander:
+1. **Serve wide** in the deuce court, pulling the returner off the court to their right.
+2. The return, hit under pressure from outside the sideline, most often comes back **crosscourt** — the safest reply, over the low part of the net.
+3. You have therefore **known in advance** roughly where the ball is coming. Step around and hit **Serve +1 into the open court** they just vacated.
+
+That is it. That's the pattern that wins an enormous share of professional points. It is not exotic. It is available to a high-school player on day one, and almost none of them run it, because they are still hoping for the ace.
+
+**The mechanism to internalize: you are not guessing, you are narrowing.** A serve to a location doesn't *determine* the return — it **shrinks the set of likely returns**. Strategy in tennis is almost never certainty; it is **playing the odds you yourself created.**
+
+**Return +1: take the free lunch, then don't give it back.**
+
+The mirror image. Against a **second serve**, the returner is the one with the advantage — and the standard failure is to waste it by trying to hit a winner off the return itself. The better model:
+1. **Return +1 thinking**: hit a return that's *deep and aggressive but safe*, deliberately setting up the next ball.
+2. **Then attack** with the +1 shot, from a balanced position, with the server now on defence.
+
+The returner's cardinal sin is going for too much on the return of a second serve — turning the biggest advantage in the game into an unforced error, and handing back a point they were statistically favoured to win.
+
+**Why "just get it back deep" is real strategy, not cowardice.** A deep ball takes away your opponent's ability to attack, because they must hit from behind the baseline, where the angles available to them are small. A short ball hands them the whole court. "Deep" is not a consolation prize for players who can't hit winners; **depth is the mechanism by which you take the opponent's options away.**
+
+**Putting the section together:** you serve to a spot to narrow their reply → you pre-move to the reply you expect → you hit +1 into the space they left. You return deep to a spot to narrow *their* reply → you attack their weak next ball. That is what a "constructed" point means, and it is the whole difference between hitting tennis balls and playing tennis.
+
+:::reveal Describe the classic Serve +1 pattern from the deuce court for a right-hander, and state what the serve is actually FOR. ||| **Serve wide** in the deuce court to pull the returner off the court; their return, hit under pressure from outside the sideline, most often comes back **crosscourt**; you step around and hit **Serve +1 into the open court** they just vacated. The serve is **not a weapon hunting an ace — it is a setup**: it doesn't determine the return, it **narrows** the set of likely returns, so you're playing odds you created yourself.
+
+## Sources
+- O'Shannessy, C. (n.d.). *ATP world articles: Tennis data & analytics*. Brain Game Tennis. https://braingametennis.com/media/atp-infosys-brain-game/
+- TennisWorldUSA. (2016). *The first 4 shots*. https://www.tennisworldusa.org/tennis/news/Tennis_Technique/32178/the-first-4-shots/`,
+      recallContent: [
+        {
+          prompt: "Roughly what share of ATP points end within 0–4 shots?",
+          answer: "About 70%. Another ~20% run 5–8 shots, and only ~10% reach 9 or more.",
+        },
+        {
+          prompt: "What are 'The First 4 Shots'?",
+          answer: "Serve, return, Serve +1 (server's next ball), and Return +1 (returner's next ball). Practised least, decisive most.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-court-geometry",
+      title: "15 · Court geometry: why crosscourt is free and the line is expensive",
+      section: "Section 3 · Strategy: how points are actually won",
+      body: `Tennis strategy is, to an unreasonable degree, just **geometry that most players never do**. Three facts about the shape of the court explain an enormous share of who wins.
+
+**Fact 1 — The net is lower in the middle.** The net is **3 feet (0.914 m) high at the centre** and **3 feet 6 inches (1.07 m) at the posts** (ITF, 2026, Rule 1). It **sags six inches**. So a crosscourt ball crosses a *lower* net than a down-the-line ball.
+
+**Fact 2 — The court is longer on the diagonal.** Obviously, but nobody uses it: the diagonal of the singles court is meaningfully longer than its straight length. So a crosscourt ball has **more court to land in**.
+
+**Put those together and you get the most useful rule in tennis:**
+
+> **Crosscourt gives you a lower net AND a longer court. Down-the-line gives you a higher net AND a shorter court.**
+
+Which is why **crosscourt is the percentage rally ball, and down-the-line is the higher-risk attacking shot.** This is not a stylistic preference. It is arithmetic. Players who "go for the line" on neutral balls are choosing the smallest target over the biggest one, for no reason, and then blaming their technique when it misses.
+
+**The corollary that wins matches: change direction on a ball you are ahead of, not one you are behind.** Hitting down the line is a *decision you earn* — take it when you're balanced and the ball is in your strike zone. Changing direction off a defensive ball, on the run, over the high part of the net, into the short part of the court, is the single most reliably losing shot in amateur tennis.
+
+**Fact 3 — Depth compresses your opponent's angles.** Think about where your opponent stands. If they're forced to hit from **behind the baseline**, the angles available to them are narrow — from back there, a sharp crosscourt simply doesn't geometrically exist. If you hit **short**, they can step inside the court, and from there the whole court opens up: sharp angles, drop shots, and approach shots all become available.
+
+So **depth is defence and offence at the same time.** It's not the exciting shot, but it is the shot that decides whether your opponent gets to play the exciting one.
+
+**And the myth to kill: "winners win matches."** At every level below professional, matches are decided overwhelmingly by **errors, not winners** — the ball that goes into the net or long is worth exactly as much to your opponent as their best forehand. The player who understands the geometry is simply **choosing targets with more margin**: over the low part of the net, into the long part of the court, deep enough that the reply is weak. That is "percentage tennis," and it beats prettier tennis with dreary regularity.
+
+**One honest note on the numbers.** This lesson gives you the *court dimensions* from the ITF rulebook (ITF, 2026, Rule 1), which are exact and verifiable. It deliberately does **not** hand you a made-up statistic like "X% of amateur points end in unforced errors" — that number gets thrown around constantly with no source behind it, and this course won't add to the pile. The geometry stands on its own without it.
+
+:::reveal Why is a crosscourt ball the "percentage" shot? Give both geometric reasons, with the net heights. ||| Two reasons, and both are arithmetic. **(1) Lower net:** the net is **3 ft (0.914 m) at the centre** and **3 ft 6 in (1.07 m) at the posts** (ITF, 2026, Rule 1) — it sags six inches, so a crosscourt ball crosses a *lower* net. **(2) Longer court:** the diagonal is longer than the straight length, so a crosscourt ball has *more court to land in*. Down-the-line gives you the opposite of both: a higher net and a shorter court — which is why it's the higher-risk attacking shot, to be taken only off a ball you're ahead of.
+
+## Sources
+- International Tennis Federation. (2026). *ITF rules of tennis 2026*. https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf
+- O'Shannessy, C. (n.d.). *ATP world articles: Tennis data & analytics*. Brain Game Tennis. https://braingametennis.com/media/atp-infosys-brain-game/`,
+      recallContent: [
+        {
+          prompt: "What is the returner's cardinal sin against a second serve?",
+          answer:
+            "Going for too much on the return itself — turning the biggest statistical advantage in the game into an unforced error. Return deep and aggressive but safe, THEN attack with the +1.",
+        },
+        {
+          prompt: "Why is 'just get it back deep' real strategy rather than cowardice?",
+          answer:
+            "Depth forces the opponent to hit from behind the baseline, where the available angles are small. A short ball lets them step in and opens the whole court to them.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-doubles-strategy",
+      title: "16 · Doubles: the same court, a completely different sport",
+      section: "Section 3 · Strategy: how points are actually won",
+      body: `Most tennis played by actual human beings is **doubles**. It is the format of club leagues, of high-school teams, of every social match ever arranged by four people who wanted to play for two hours. And it is not "singles with more people." The strategy inverts.
+
+**The court gets wider — but not as much as you think.** The doubles court is **36 feet (10.97 m)** wide against the singles court's **27 feet (8.23 m)** — the two **doubles alleys** (or "tramlines") add **4.5 feet** each (ITF, 2026, Rule 1). Same length, though. So you have added **two players** and only **nine feet** of width. The court is, in effect, **much more crowded** — and that single fact drives everything else.
+
+**Therefore: the net wins.** Because the court is crowded and short, the team that gets **both players to the net** controls the point. From the net you can hit **down** into a court that has no room; from the baseline you must hit **up** over the net to opponents who are waiting to volley. In doubles, the baseline is not neutral territory — it is a **disadvantage** you are trying to escape.
+
+Which retro-justifies Lesson 10: a player with no volley is not a full doubles player. The net game isn't optional here; it's the objective.
+
+**The standard formation, and what each player is actually doing.**
+- The **server** serves and (in the attacking model) comes forward to join their partner.
+- The **server's partner** stands at the net, and their job is *not* to stand there decoratively. It is to **poach** — to move across and intercept the return. Even the *threat* of poaching does work: a returner who is worried about the net player will aim wider, and miss more.
+- The **returner** returns, ideally **crosscourt**, low, and away from that net player.
+- The **returner's partner** starts near the service line, ready to come forward if the return is good — and to retreat if it isn't.
+
+**The two rules that fix most amateur doubles:**
+1. **Return crosscourt, and keep it low.** Down the line into the net player is a gift. Low is what matters more than hard: a ball hit at their feet cannot be volleyed down at you.
+2. **Move as a unit.** The two partners are connected by an invisible rope about 8–10 feet long. Both up, or both back — but **never one up and one back**, which is the most common recreational formation and the worst one, because it leaves a diagonal corridor of open court that a competent team will hit through all afternoon.
+
+**The lob is a real weapon, not an admission of defeat.** Against a team that has taken the net properly, the lob over the net player's head is the correct answer — it forces them to turn, retreat, and hit an overhead on the move, and it lets *your* team come forward. Amateurs treat the lob as embarrassing. Good doubles teams treat it as a play.
+
+**And a rule detail that decides real points:** the serve must land in the service box **diagonally opposite** (ITF, 2026, Rule 17). The doubles alleys are **not** part of the service box — so the service box in doubles is *exactly the same size as in singles*. The alleys only come into play once the point is live. Half the recreational players in the world do not know this.
+
+:::reveal In doubles, what is the worst common formation, why is it bad — and what are the doubles court's actual dimensions vs. singles? ||| **One up and one back** — it leaves a **diagonal corridor of open court** that a competent team will hit through all day. Partners should move as a unit ("connected by an invisible rope"): **both up, or both back.** The doubles court is **36 ft (10.97 m)** wide vs. singles' **27 ft (8.23 m)** — the two alleys add **4.5 ft each**, with the **same length** (ITF, 2026, Rule 1). Two extra players, only nine extra feet: the court is *more crowded*, which is why **the team that takes the net wins**.
+
+## Sources
+- International Tennis Federation. (2026). *ITF rules of tennis 2026*. https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf
+- USTA Player Development. (n.d.). *Technique: Stroke fundamentals*. https://www.playerdevelopment.usta.com/Improve-Your-Game/Sport-Science/114384_Technique_Stroke_Fundamentals/`,
+      recallContent: [
+        {
+          prompt: "What are the two geometric reasons crosscourt is the percentage shot?",
+          answer:
+            "The net is lower in the middle (3 ft centre vs 3 ft 6 in at the posts — it sags six inches), and the court is longer on the diagonal. Lower net, more court.",
+        },
+        {
+          prompt: "When should you change direction and hit down the line?",
+          answer:
+            "Off a ball you're AHEAD of — balanced, in your strike zone. Changing direction off a defensive ball on the run is the most reliably losing shot in amateur tennis.",
+        },
+      ],
+    },
+    {
+      slug: "tennis-quiz-strategy",
+      title: "17 · Quiz: how points are actually won",
+      section: "Section 3 · Strategy: how points are actually won",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "In men's professional (ATP) match data, roughly what share of points end within 0–4 shots?",
+            options: ["About 30%", "About 50%", "About 70%", "About 95%"],
+            correctIndex: 2,
+            explanation:
+              "About 70%, with ~20% running 5–8 shots and only ~10% reaching 9+. Seven points in ten are over by the fourth shot — meaning each player has touched the ball at most twice.",
+            sourceLessonSlug: "tennis-the-first-4-shots",
+          },
+          {
+            prompt: "What are 'The First 4 Shots'?",
+            options: [
+              "The first four games of a set",
+              "Serve, return, Serve +1, and Return +1",
+              "Forehand, backhand, volley, and overhead",
+              "The four shots allowed before a let is called",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The serve, the return, the server's next ball (Serve +1), and the returner's next ball (Return +1). O'Shannessy's point: these are practised least and matter most.",
+            sourceLessonSlug: "tennis-the-first-4-shots",
+          },
+          {
+            prompt: "The course cites the 70/20/10 rally-length split. What important caveat does it attach?",
+            options: [
+              "The data is disputed and probably wrong",
+              "It comes from men's professional (ATP) data — comparable public recreational data essentially does not exist, though the structural point likely strengthens at lower levels",
+              "It only applies on clay courts",
+              "It was measured at high-school matches",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The course refuses to pretend an ATP statistic is a measured fact about your match. It notes the structural point survives — and likely strengthens — at lower levels, since serves and returns produce even more errors there.",
+            sourceLessonSlug: "tennis-the-first-4-shots",
+          },
+          {
+            prompt: "Why is the standard club practice routine (long crosscourt baseline rallies) close to backwards?",
+            options: [
+              "Rallying is worthless and should never be practised",
+              "It trains the ~10% of points that reach 9+ shots, while the 70% decided in the first four balls go unrehearsed",
+              "Crosscourt is a bad shot",
+              "Because fitness doesn't matter in tennis",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It's a misallocation, not a worthless activity. The rational split gives most time to serving, returning, and the one ball after each.",
+            sourceLessonSlug: "tennis-the-first-4-shots",
+          },
+          {
+            prompt: "In the classic Serve +1 pattern from the deuce court (right-hander), what does the wide serve accomplish?",
+            options: [
+              "It guarantees an ace",
+              "It pulls the returner off court, making a crosscourt return the likeliest reply — so you can pre-move and hit +1 into the open court",
+              "It forces the returner to lob",
+              "It is illegal under ITF rules",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The serve is a setup, not a weapon. It doesn't determine the return — it narrows the likely returns, so you're playing odds you created yourself.",
+            sourceLessonSlug: "tennis-serve-plus-one",
+          },
+          {
+            prompt: "The course says strategy in tennis is 'almost never certainty.' What is it instead?",
+            options: [
+              "Guessing, and hoping",
+              "Narrowing — shrinking the set of likely replies, then playing the odds you yourself created",
+              "Hitting as hard as possible",
+              "Copying whatever the professionals do",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You are not guessing; you are narrowing. A serve to a location shrinks the set of likely returns. That's the whole mechanism behind a 'constructed' point.",
+            sourceLessonSlug: "tennis-serve-plus-one",
+          },
+          {
+            prompt: "What is the returner's cardinal sin against a second serve?",
+            options: [
+              "Returning crosscourt",
+              "Returning too deep",
+              "Going for too much on the return itself — converting the game's biggest advantage into an unforced error",
+              "Split-stepping too early",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Against a second serve the returner is statistically favoured. Hit a deep, aggressive but SAFE return that sets up the next ball, then attack with the +1.",
+            sourceLessonSlug: "tennis-serve-plus-one",
+          },
+          {
+            prompt: "Why is hitting deep genuinely strategic rather than merely cautious?",
+            options: [
+              "It looks impressive to spectators",
+              "It forces the opponent to hit from behind the baseline, where the angles available to them are small — a short ball lets them step in and opens the whole court",
+              "Deep balls always produce winners",
+              "The rules award bonus points for depth",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Depth is the mechanism by which you take away the opponent's options. It's defence and offence simultaneously.",
+            sourceLessonSlug: "tennis-serve-plus-one",
+          },
+          {
+            prompt: "How high is the net at the centre, and at the posts?",
+            options: [
+              "3 ft at the centre; 3 ft 6 in at the posts",
+              "3 ft 6 in at the centre; 3 ft at the posts",
+              "3 ft everywhere",
+              "4 ft at the centre; 3 ft at the posts",
+            ],
+            correctIndex: 0,
+            explanation:
+              "3 ft (0.914 m) at the centre, 3 ft 6 in (1.07 m) at the posts — it sags six inches (ITF, 2026, Rule 1). That sag is half the reason crosscourt is the percentage shot.",
+            sourceLessonSlug: "tennis-court-geometry",
+          },
+          {
+            prompt: "Give BOTH geometric reasons that crosscourt is the percentage rally ball.",
+            options: [
+              "Lower net in the middle, and a longer court on the diagonal",
+              "Higher net and a shorter court",
+              "It's easier to disguise, and the wind helps",
+              "It's the only legal direction on a rally ball",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Crosscourt = lower net + more court to land in. Down-the-line = higher net + shorter court. It's arithmetic, not style — which is why down-the-line is the higher-risk attacking shot.",
+            sourceLessonSlug: "tennis-court-geometry",
+          },
+          {
+            prompt: "When should you change direction and go down the line?",
+            options: [
+              "On any ball, whenever you feel like it",
+              "Off a defensive ball while on the run",
+              "Off a ball you're AHEAD of — balanced, with the ball in your strike zone",
+              "Only on second serves",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Down the line is a decision you earn. Changing direction off a defensive ball, on the run, over the high part of the net into the short part of the court, is the most reliably losing shot in amateur tennis.",
+            sourceLessonSlug: "tennis-court-geometry",
+          },
+          {
+            prompt: "The course refuses to cite one commonly-repeated statistic. Which, and why?",
+            options: [
+              "The net height — because it varies by tournament",
+              "A figure like 'X% of amateur points end in unforced errors' — because it's repeated everywhere with no source behind it",
+              "The 70/20/10 rally split — because O'Shannessy is unreliable",
+              "The court dimensions — because the ITF hasn't published them",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The course gives the exact, verifiable ITF court dimensions but declines to invent an amateur unforced-error percentage. The geometry argument stands without it.",
+            sourceLessonSlug: "tennis-court-geometry",
+          },
+          {
+            prompt: "How wide is the doubles court compared with the singles court?",
+            options: [
+              "36 ft (10.97 m) vs 27 ft (8.23 m) — each alley adds 4.5 ft; same length",
+              "40 ft vs 27 ft — each alley adds 6.5 ft",
+              "36 ft vs 27 ft, and the court is also longer",
+              "They are the same width; only the service boxes change",
+            ],
+            correctIndex: 0,
+            explanation:
+              "36 ft vs 27 ft, alleys of 4.5 ft each, same length (ITF, 2026, Rule 1). Two extra players but only nine extra feet — so the court is MORE crowded, which is why the net wins.",
+            sourceLessonSlug: "tennis-doubles-strategy",
+          },
+          {
+            prompt: "In doubles, is the service box bigger than in singles?",
+            options: [
+              "Yes — the doubles alleys count on the serve",
+              "No — the serve must land in the diagonally opposite service box, and the alleys are NOT part of it; the alleys only come into play once the point is live",
+              "Yes, but only on the second serve",
+              "Only at Grand Slam events",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The service box is exactly the same size as in singles (ITF, 2026, Rule 17). The alleys are live only after the serve. Half the recreational players in the world don't know this.",
+            sourceLessonSlug: "tennis-doubles-strategy",
+          },
+          {
+            prompt: "What is the worst common formation in recreational doubles?",
+            options: [
+              "Both players at the net",
+              "Both players at the baseline",
+              "One up and one back — it leaves a diagonal corridor of open court",
+              "Both players standing in the alleys",
+            ],
+            correctIndex: 2,
+            explanation:
+              "One up, one back is the most common recreational formation and the worst. Partners should move as a unit — both up or both back — as if joined by an invisible 8–10 ft rope.",
+            sourceLessonSlug: "tennis-doubles-strategy",
+          },
+        ],
+      },
+    },
+
     // ─────────────────────── SECTION 4 · WHERE THE GAME CAME FROM ───────────────────────
     {
       slug: "tennis-origins",
-      title: "17 · From a monastery courtyard to a lawn: where tennis came from",
+      title: "18 · From a monastery courtyard to a lawn: where tennis came from",
       section: "Section 4 · Where the game came from",
       body: `Modern tennis is about 150 years old. The game *behind* it is far older.
 
@@ -441,7 +1239,7 @@ So: Budge did it first. He probably didn't name it. This course will keep doing 
     },
     {
       slug: "tennis-amateurism-and-shamateurism",
-      title: "18 · \"Amateur\": the rule that decided who was allowed to get paid",
+      title: "19 · \"Amateur\": the rule that decided who was allowed to get paid",
       section: "Section 4 · Where the game came from",
       body: `For the first ninety years of its life, tennis had a rule that shaped everything else about it — and it was not in the rulebook you read in Section 1.
 
@@ -477,7 +1275,7 @@ So be precise about what the amateur rule actually was. It was **not** a rule th
     },
     {
       slug: "tennis-the-open-era",
-      title: "19 · 1968: the Open era",
+      title: "20 · 1968: the Open era",
       section: "Section 4 · Where the game came from",
       body: `The amateur rule broke in one year.
 
@@ -517,7 +1315,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
     },
     {
       slug: "tennis-quiz-history-origins",
-      title: "20 · Quiz: origins, amateurism, and 1968",
+      title: "21 · Quiz: origins, amateurism, and 1968",
       section: "Section 4 · Where the game came from",
       quiz: {
         passingScore: 70,
@@ -725,7 +1523,7 @@ The first **Grand Slam** of the Open era was the **1968 French Championships** i
     // ─────────────────── SECTION 5 · THE PEOPLE WHO CHANGED THE GAME ───────────────────
     {
       slug: "tennis-ata-and-althea-gibson",
-      title: "21 · The American Tennis Association and Althea Gibson",
+      title: "22 · The American Tennis Association and Althea Gibson",
       section: "Section 5 · The people who changed the game",
       body: `Before you can understand Althea Gibson, you have to understand the organization that made her possible — and *why it had to exist*.
 
@@ -758,7 +1556,7 @@ Hold that thought. It is exactly what the next three lessons are about.
     },
     {
       slug: "tennis-arthur-ashe",
-      title: "22 · Arthur Ashe: the champion who wasn't allowed to be paid",
+      title: "23 · Arthur Ashe: the champion who wasn't allowed to be paid",
       section: "Section 5 · The people who changed the game",
       body: `**1968. The first US Open of the Open era.** After ninety years, prize money was finally legal, public, and on the line: a **$100,000** purse, **$14,000** to the champion.
 
@@ -804,7 +1602,7 @@ He spent his last months campaigning on AIDS, founding an institute for urban he
     },
     {
       slug: "tennis-original-9-and-the-wta",
-      title: "23 · The Original 9: nine players, nine one-dollar contracts",
+      title: "24 · The Original 9: nine players, nine one-dollar contracts",
       section: "Section 5 · The people who changed the game",
       body: `The Open era made prize money **public**. That turned out to be dangerous for the people setting it — because now anyone could do the subtraction.
 
@@ -852,7 +1650,7 @@ Note the timing. The men had formed the **ATP in September 1972**. The women for
     },
     {
       slug: "tennis-equal-prize-money",
-      title: "24 · Equal prize money: a 34-year climb, and the part that isn't finished",
+      title: "25 · Equal prize money: a 34-year climb, and the part that isn't finished",
       section: "Section 5 · The people who changed the game",
       body: `Here is the sentence you have probably heard: *"Tennis was the first sport to pay women equally — the US Open did it in 1973."*
 
@@ -888,7 +1686,7 @@ The first half is true. The second half is where most people stop, and stopping 
 
 **Wimbledon reversed in February 2007.** Venus won the title that year and became the first woman to collect an equal champion's cheque at Wimbledon — **£700,000**, the same as Federer.
 
-Look at the shape of that: **a champion uses the press to shame the sport's gatekeepers into doing the right thing.** It is *precisely* what Alice Marble did for Althea Gibson in 1950 (Lesson 21). Same weapon, 56 years apart.
+Look at the shape of that: **a champion uses the press to shame the sport's gatekeepers into doing the right thing.** It is *precisely* what Alice Marble did for Althea Gibson in 1950 (Lesson 22). Same weapon, 56 years apart.
 
 **And it is not finished.** Equal prize money at the four Slams is **not** equal pay in tennis. The Slams are four events in a season of dozens. Outside them the gap is large and current: in **2023**, Novak Djokovic won the Cincinnati title and received **$1.02 million**; Coco Gauff won the women's title **at the same combined event, the same week**, and received **$454,500** — less than half (ESPN, 2023).
 
@@ -926,7 +1724,7 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
     },
     {
       slug: "tennis-quiz-people",
-      title: "25 · Quiz: the people who changed the game",
+      title: "26 · Quiz: the people who changed the game",
       section: "Section 5 · The people who changed the game",
       quiz: {
         passingScore: 70,
@@ -1113,7 +1911,7 @@ The WTA knows. On **27 June 2023** it announced a **pathway** to equal prize mon
     // ───────────────────── SECTION 6 · HOW THE SPORT IS ORGANIZED ─────────────────────
     {
       slug: "tennis-the-professional-ladder",
-      title: "28 · The professional ladder, and how rankings actually work",
+      title: "27 · The professional ladder, and how rankings actually work",
       section: "Section 6 · How the sport is organized",
       body: `Professional tennis is a **ladder**, and almost nobody explains it to you, so here it is.
 
@@ -1149,7 +1947,7 @@ On the WTA side, a maximum of **18 tournaments** count toward a player's singles
     },
     {
       slug: "tennis-team-competitions",
-      title: "29 · The team game: Davis Cup, Billie Jean King Cup, and the Olympics",
+      title: "28 · The team game: Davis Cup, Billie Jean King Cup, and the Olympics",
       section: "Section 6 · How the sport is organized",
       body: `Tennis is famously a lonely sport. No teammates, no substitutions, no coach allowed to fix things mid-match. Which is exactly why its **team** competitions matter so much to the people who play them.
 
@@ -1191,7 +1989,7 @@ That last detail is not trivia. **Players owning a piece of the league they play
     },
     {
       slug: "tennis-where-you-actually-play",
-      title: "30 · Where you actually play: high school, leagues, juniors, college",
+      title: "29 · Where you actually play: high school, leagues, juniors, college",
       section: "Section 6 · How the sport is organized",
       body: `Everything in the last two lessons was about roughly two thousand people on Earth. This lesson is about you.
 
@@ -1240,7 +2038,7 @@ Which means your teammate's match can end mid-point because someone else clinche
     },
     {
       slug: "tennis-quiz-organization",
-      title: "31 · Quiz: how the sport is organized",
+      title: "30 · Quiz: how the sport is organized",
       section: "Section 6 · How the sport is organized",
       quiz: {
         passingScore: 70,
@@ -1435,7 +2233,7 @@ Which means your teammate's match can end mid-point because someone else clinche
     // ──────────────────── SECTION 7 · OPPORTUNITIES FOR AMATEURS ────────────────────
     {
       slug: "tennis-college-pipeline",
-      title: "32 · The college pipeline, and the real odds",
+      title: "31 · The college pipeline, and the real odds",
       section: "Section 7 · Opportunities for amateurs",
       body: `College tennis is the single best opportunity in this course, and it is also where you need a clear head about numbers.
 
@@ -1475,7 +2273,7 @@ If you are being recruited, **ask each school directly whether it has opted in.*
     },
     {
       slug: "tennis-the-honest-math",
-      title: "33 · The honest math: what professional tennis actually pays",
+      title: "32 · The honest math: what professional tennis actually pays",
       section: "Section 7 · Opportunities for amateurs",
       body: `This is the most important lesson in the course, and it is a **math** lesson. Every number below comes from a governing body or a tournament's own published figures. Do the arithmetic yourself — that's the point.
 
@@ -1545,7 +2343,7 @@ Second: **notice how much of this you could only learn because someone published
     },
     {
       slug: "tennis-the-amateurs-real-opportunity",
-      title: "34 · What tennis is actually for: the amateur's real opportunity",
+      title: "33 · What tennis is actually for: the amateur's real opportunity",
       section: "Section 7 · Opportunities for amateurs",
       body: `Last lesson was brutal on purpose. This one is the other half of the truth, and it is the reason this course exists.
 
@@ -1595,7 +2393,7 @@ That is not a consolation prize. **That is the prize.**
     },
     {
       slug: "tennis-quiz-amateurs",
-      title: "35 · Quiz: opportunities for amateurs",
+      title: "34 · Quiz: opportunities for amateurs",
       section: "Section 7 · Opportunities for amateurs",
       quiz: {
         passingScore: 70,
@@ -1773,7 +2571,7 @@ That is not a consolation prize. **That is the prize.**
     // ────────────────── SECTION 8 · OPPORTUNITIES FOR ENTREPRENEURS ──────────────────
     {
       slug: "tennis-coaching-and-certification",
-      title: "36 · Coaching: the biggest job in tennis",
+      title: "35 · Coaching: the biggest job in tennis",
       section: "Section 8 · Opportunities for entrepreneurs",
       body: `Here is the number that reframes everything. In the U.S., the Bureau of Labor Statistics counts (Bureau of Labor Statistics [BLS], 2025):
 
@@ -1814,7 +2612,7 @@ If you want to coach kids, this is the first door, and it is a locked one. Start
     },
     {
       slug: "tennis-the-racquet-trade",
-      title: "37 · The racquet trade: stringing as a real business",
+      title: "36 · The racquet trade: stringing as a real business",
       section: "Section 8 · Opportunities for entrepreneurs",
       body: `Every single player in every match you have ever watched is holding a piece of equipment that a **person had to build by hand**, and that **fails on a schedule**.
 
@@ -1862,7 +2660,7 @@ Certified members must **maintain USRSA membership and pass an annual test** on 
     },
     {
       slug: "tennis-officiating",
-      title: "38 · Officiating: the career ladder nobody mentions",
+      title: "37 · Officiating: the career ladder nobody mentions",
       section: "Section 8 · Opportunities for entrepreneurs",
       body: `Every match needs officials. Almost nobody tells students that officiating is a **structured international career** with a published ladder you can climb — starting at your local junior tournament and ending, in principle, in the chair at a Grand Slam final.
 
@@ -1912,7 +2710,7 @@ That is a pattern you should learn to recognize, because you are going to spend 
     },
     {
       slug: "tennis-courts-clubs-pickleball",
-      title: "39 · Courts, clubs, and the pickleball squeeze",
+      title: "38 · Courts, clubs, and the pickleball squeeze",
       section: "Section 8 · Opportunities for entrepreneurs",
       body: `Tennis is played on a **physical asset that somebody owns**. Follow the asset and you find the business.
 
@@ -1964,11 +2762,11 @@ So the honest instruction is: **the ASBA sets the standards; get real quotes fro
     },
     {
       slug: "tennis-building-a-tennis-business",
-      title: "40 · Building a business in tennis: putting it together",
+      title: "39 · Building a business in tennis: putting it together",
       section: "Section 8 · Opportunities for entrepreneurs",
       body: `You now have every piece. Let's assemble them.
 
-**The core insight of this whole section, in one line: the money in tennis is not mostly in *playing* tennis.** Roughly **96% of professional players lose money** (Lesson 33). Meanwhile there are **sixteen times more coaching jobs than athlete jobs** (Lesson 36), **27.3 million American players** who all need courts, strings, lessons, and organized competition (Lesson 39), and a **national league with 320,000 adults in it** (Section 6).
+**The core insight of this whole section, in one line: the money in tennis is not mostly in *playing* tennis.** Roughly **96% of professional players lose money** (Lesson 32). Meanwhile there are **sixteen times more coaching jobs than athlete jobs** (Lesson 35), **27.3 million American players** who all need courts, strings, lessons, and organized competition (Lesson 38), and a **national league with 320,000 adults in it** (Section 6).
 
 The players are the *product*. The **sport is the market.**
 
@@ -2021,7 +2819,7 @@ You are being handed the same information they had to fight to assemble.
     },
     {
       slug: "tennis-exercise",
-      title: "41 · Practice: name the concept",
+      title: "40 · Practice: name the concept",
       section: "Section 8 · Opportunities for entrepreneurs",
       exercise: {
         instructions:
@@ -2124,7 +2922,7 @@ You are being handed the same information they had to fight to assemble.
     },
     {
       slug: "tennis-quiz-entrepreneurs",
-      title: "42 · Quiz: opportunities for entrepreneurs",
+      title: "41 · Quiz: opportunities for entrepreneurs",
       section: "Section 8 · Opportunities for entrepreneurs",
       quiz: {
         passingScore: 70,
