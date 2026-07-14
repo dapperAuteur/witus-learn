@@ -5,13 +5,15 @@
 // generic golf course skips and the one this platform exists for.
 //
 // FACT-CHECK PASS. Every rule number, tour fact, handicap figure, amateur-status rule, date, and
-// dollar amount in this course was verified against a primary source before authoring. What was
-// checked, and what was deliberately NOT asserted:
+// dollar amount in this course was verified against a primary source in a dedicated verification
+// pass run separately from the writing. What was checked, and — just as important — what is
+// deliberately NOT asserted because it could not be verified:
 //
 //   * RULES OF GOLF. Verified against The R&A's published rule pages (randa.org/en/rog/...), which
 //     carry the single joint code the USGA and The R&A write together. Edition in force: the 2023
-//     Rules of Golf, effective 1 January 2023 (the previous full rewrite was 2019); the next edition
-//     is due 1 January 2028. Three corrections were made to first drafts during the check:
+//     Rules of Golf, effective 1 January 2023 (the previous full rewrite was 2019). The date of the
+//     NEXT edition is not asserted anywhere in this course; no primary source confirmed one.
+//     Three corrections were made to first drafts during the check:
 //       - the accidental double-hit penalty was removed in the 2019 rewrite, NOT in 2023;
 //       - the current term is "temporary water", not the legacy "casual water";
 //       - the three-minute search limit lives in Rule 18.2a(1), not in Rule 7 (which governs how to
@@ -21,40 +23,57 @@
 //     course says so, because students who watch tour golf will otherwise be confused.
 //
 //   * AMATEUR STATUS. The Rules of Amateur Status were substantially liberalized effective
-//     1 January 2022. This matters enormously to the opportunities section and is the single most
-//     commonly out-of-date thing written about golf, so it is taught from the current rules only.
+//     1 January 2022, and this is the single most commonly out-of-date thing written about golf, so
+//     it is taught from the current rules only. There are FIVE ways to lose amateur status, not the
+//     three that most write-ups list. Prize money is capped at US$1,000 and only in SCRATCH
+//     competitions (in a handicap competition an amateur may not accept prize money at all).
+//     Sponsorship, endorsement, NIL, expenses, and free equipment are ALL now allowed. Paid
+//     instruction is the one thing the 2022 rewrite did not liberalize.
 //
-//   * HISTORY OF EXCLUSION. Taught factually and cited, not airbrushed. Several widely repeated
-//     claims were checked and then deliberately left out or softened because they could not be
-//     verified:
-//       - The YEAR the PGA of America adopted its "Caucasian-only" clause is contested in the
-//         sources (1934 is the majority claim; at least one reputable outlet says 1943; the PGA's
-//         own page declines to date it). The course does not assert a year. The year it was REMOVED,
-//         November 1961, is solid and is cited.
-//       - The clause's verbatim constitutional wording could not be retrieved from a primary source,
-//         so it is never put in quotation marks.
-//       - The Augusta National caddie rule is stated precisely: the club required every competitor
-//         to use a CLUB caddie, and the club's caddies were all Black. It was not written as a
-//         racial rule. The course does not claim it was, because the true version is damning enough.
-//       - The Theodore Havemeyer quote traditionally attached to John Shippen's 1896 U.S. Open could
-//         not be traced to a contemporaneous source and is omitted.
-//       - Golf's "18 holes standardized at St Andrews in 1764" story could not be confirmed from a
-//         primary source, so 18 holes is taught as a convention that spread, not a decree with a date.
-//       - Althea Gibson's first LPGA season is given as "the early-to-mid 1960s" because sources
-//         split between 1963 and 1964, and the course turns that into a lesson about checking dates.
+//   * THE PROFESSIONAL GAME IS TAUGHT AS OF 2026, WHICH MATTERS. Nearly everything written about
+//     LIV Golf before 2026 is now wrong: LIV events are 72 holes from the 2026 season (the "54"
+//     branding is retired), LIV WAS accredited by the OWGR on 3 February 2026, and PIF has said it
+//     will fund LIV only through the end of the 2026 season. The June 2023 PGA TOUR / DP World /
+//     PIF framework agreement was never consummated — men's professional golf is NOT reunified, and
+//     this course does not teach a merger as fact.
+//
+//   * HISTORY OF EXCLUSION. Taught factually and cited, not airbrushed, and it is the longest
+//     section in the course. The centerpiece is a primary-source lesson: students read the January
+//     1962 issue of the trade magazine *Golfdom* reporting the repeal of the PGA's Caucasian-only
+//     clause, and discover that the industry's own account of the repeal never mentions Charlie
+//     Sifford, Bill Spiller, or the California Attorney General who forced it.
+//     Claims deliberately left out, or attributed rather than asserted:
+//       - The famous long version of the Hall Thompson / Shoal Creek quote could not be traced to
+//         any 1990 primary text. The course anchors on the contemporaneous AP wording and
+//         attributes the longer version to later reporting.
+//       - John Shippen's "first American-born golf professional" title is written the way the USGA
+//         itself writes it: as what Shippen told an interviewer he BELIEVED about himself.
+//       - The United Golfers Association's founding year is genuinely disputed (1925/1926/1928), so
+//         no single year is stated.
+//       - No standalone "percentage of golfers who are Black" is printed, because the National Golf
+//         Foundation does not publish one. The course names that absence as itself a finding.
+//       - Tiger Woods is NOT called the first Asian American Masters champion (an unsupported claim
+//         that conflicts with how golf's own institutions describe Hideki Matsuyama's 2021 win).
+//         The verified fact — the PGA of America's "first African-American to win the Masters" — is
+//         taught alongside Woods's own 1997 refusal of any single racial label.
+//       - "Charleston sold its course rather than integrate" and "Montgomery closed a golf course"
+//         are both widely repeated and both unsupported. Neither appears here.
+//       - Widely published claims that the Greensboro Six "lost 5-4 at the Supreme Court" are wrong
+//         (Wolfe v. North Carolina, 1960, dismissed the appeal without reaching the merits), and the
+//         course teaches the correct disposition.
 //
 // Cited APA 7 in-line with a `## Sources` bibliography per lesson (the BVC citation rule). No
 // fabricated people, quotes, or statistics. Six sections, each ending in a quiz whose bank is 15
-// questions deep so the serving layer's 10-question cap actually rotates. Every quiz question sets
-// `sourceLessonSlug`. Self-checks are `:::reveal` (answer hidden until clicked), never printed in
-// prose under the question.
+// questions deep so the serving layer's 10-question cap actually rotates a different subset each
+// attempt. Every quiz question sets `sourceLessonSlug`. Self-checks are `:::reveal` (answer hidden
+// until clicked), never printed in prose under the question. Audience: high school students.
 
 import type { AuthoredCourse } from "./authored-course";
 
 export const GOLF_COURSE: AuthoredCourse = {
   title: "Golf: Play It, Know It, Work In It",
   description:
-    "A complete, cited introduction to golf for people who have never held a club, and a real look at the sport as an industry. Learn how to play (the course, the clubs, the swing, the short game), the Rules of Golf as they actually read today (cited to the 2023 code the USGA and The R&A write together), how to think your way around a course, the World Handicap System, golf's history including its documented record of racial and gender exclusion, how the tours and leagues actually work (the PGA Tour and the PGA of America are not the same organization), and the part most golf courses skip: the genuine, checkable opportunities in this sport for amateurs and entrepreneurs, from caddie scholarships that pay full college tuition to qualifying for the U.S. Open with nothing but a low handicap.",
+    "A complete, cited introduction to golf for people who have never held a club, and a real look at the sport as an industry. Learn how to play (the course, the clubs, the swing, the short game), the Rules of Golf as they actually read today (cited to the 2023 code the USGA and The R&A write together), how to think your way around a course, the World Handicap System, golf's history including its documented record of racial and gender exclusion (read the trade magazine that reported the repeal of the PGA's Caucasian-only clause and never once mentioned the men who forced it), how the tours and leagues actually work in 2026 (the PGA TOUR and the PGA of America are not the same organization, and men's professional golf is still not reunified), and the part most golf courses skip: the genuine, checkable opportunities in this sport for amateurs and entrepreneurs, from the 2022 rule change that lets a high school golfer sign a sponsorship deal without losing amateur status, to the fact that anyone with a Handicap Index of 0.4 or better can enter the U.S. Open.",
   lessons: [
     // ── Section 1: How to Play ────────────────────────────────────────────
     {
@@ -170,7 +189,7 @@ That table is worth memorizing before your first round. A player who knows red f
 
 **Balls.** A ball must conform to the equipment rules (Rule 4.2; R&A, 2023), but for you this is a non-issue: any ball in the shop conforms. **Do not buy expensive balls.** You are going to lose them. Buy used ones by the bucket. Nobody has ever hit a worse shot because of a $1 ball.
 
-**What you actually need to start:** shoes you can walk five miles in, a glove for your lead hand (optional but nice), a few tees, and clubs. That is it. Borrowed or secondhand clubs are completely fine, and Lesson 31 covers how to get equipment for close to nothing.
+**What you actually need to start:** shoes you can walk five miles in, a glove for your lead hand (optional but nice), a few tees, and clubs. That is it. Borrowed or secondhand clubs are completely fine, and the **Opportunities** section covers how to get equipment for close to nothing.
 
 :::reveal What is the maximum number of clubs you may carry, and what six clubs make a sensible beginner's bag? ||| Fourteen is the maximum (Rule 4.1b(1)), but a beginner needs about six: a 7-iron, a 9-iron, a pitching wedge, a sand wedge, a hybrid, and a putter.
 
@@ -209,7 +228,7 @@ That table is worth memorizing before your first round. A player who knows red f
 2. When five in a row come off the middle, lengthen the swing.
 3. Only then move to longer clubs.
 
-**Get a lesson.** Not ten. One. A single hour with a qualified teaching professional at the start will save you years of grooving a mistake. Many facilities offer free or cheap group clinics, and Lesson 31 covers how to find them.
+**Get a lesson.** Not ten. One. A single hour with a qualified teaching professional at the start will save you years of grooving a mistake. Many facilities offer free or cheap group clinics, and the **Opportunities** section covers how to find them.
 
 :::reveal What is the single swing thought that fixes the most beginners, and why is it counterintuitive? ||| Hit the ground on the target side of the ball, meaning strike the ball first and the turf second. It is counterintuitive because beginners try to scoop or lift the ball into the air, which is backwards. The club's loft does the lifting, so you should hit down.
 
@@ -574,7 +593,7 @@ Better still, the Rules explicitly kill the old idea that you must wait for the 
 
 They write **one shared code**. The Rules of Golf you play by at your local muni are word for word the Rules that decide a major championship.
 
-**Which edition is in force.** The Rules were substantially **rewritten for 2019**, the biggest modernization in generations. The current edition is the **2023 Rules of Golf, effective 1 January 2023**, and The R&A has said the next edition will be published on **1 January 2028** (R&A, n.d.). Between editions the two bodies issue clarifications, which explain the rules but do not renumber them.
+**Which edition is in force.** The Rules were substantially **rewritten for 2019**, the biggest modernization in generations. The current edition is the **2023 Rules of Golf, effective 1 January 2023** (R&A, n.d.). Between editions the two bodies issue clarifications, which explain the rules but do not renumber them. The Rules are revised periodically, so **check the date on any rulebook you are handed**, and check the date on any golf advice you read online. That habit is most of what separates a player who knows the rules from a player who knows the rules *of 2015*.
 
 **This is why you should be suspicious of golf advice.** The 2019 rewrite changed several of the rules people "know," and a lot of what gets repeated on a golf course is simply the old rulebook, confidently recited. Three examples you will meet in this section:
 
@@ -590,7 +609,7 @@ All three changed in **2019**. All three are still argued about on golf courses 
 
 **How the Rules expect you to behave.** Rule 1.2a says all players are expected to play "in the spirit of the game" by "acting with integrity, for example, by following the Rules, applying all penalties, and being honest in all aspects of play" (R&A, 2023). Golf is the only major sport where **players routinely call penalties on themselves that no official saw**. That norm is the sport's best feature, and it is worth protecting.
 
-:::reveal Which two organizations write the Rules of Golf, which parts of the world does each govern, and which edition is currently in force? ||| The USGA (governing the United States and Mexico) and The R&A (governing the rest of the world) write one shared code together. The edition in force is the 2023 Rules of Golf, effective 1 January 2023, following the major 2019 rewrite. The next edition is due 1 January 2028.
+:::reveal Which two organizations write the Rules of Golf, which parts of the world does each govern, and which edition is currently in force? ||| The USGA (governing the United States and Mexico) and The R&A (governing the rest of the world) write one shared code together. The edition in force is the 2023 Rules of Golf, effective 1 January 2023, following the major 2019 rewrite.
 
 ## Sources
 - R&A. (2023). *Rule 1: The game, player conduct and the Rules*. The Rules of Golf. https://www.randa.org/en/rog/the-rules-of-golf/rule-1
@@ -850,11 +869,11 @@ The Rules formally recognize a whole menu of alternatives (Rule 21; R&A, 2023). 
               "The 2016 Rules",
               "The 2019 Rules",
               "The 2023 Rules, effective 1 January 2023",
-              "The 2028 Rules",
+              "Each tour writes its own",
             ],
             correctIndex: 2,
             explanation:
-              "The major rewrite was 2019; the current edition took effect 1 January 2023, and the next is due 1 January 2028.",
+              "The major rewrite was 2019; the current edition took effect 1 January 2023. Because the Rules are revised periodically, always check the date on golf advice you read online.",
             sourceLessonSlug: "golf-who-writes-the-rules",
           },
           {
