@@ -2172,5 +2172,353 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
         ],
       },
     },
+
+    // ── Section 5: Tours & Leagues ────────────────────────────────────────
+    {
+      slug: "golf-pga-of-america-vs-pga-tour",
+      title: "31 · The PGA of America is not the PGA TOUR",
+      section: "Tours & Leagues",
+      recallContent: [
+        {
+          prompt: "What does the National Golf Foundation NOT publish, and why does that matter?",
+          answer:
+            "It publishes no standalone figure for the percentage of golfers who are Black — only a combined Black/Asian/Hispanic figure (25%). Name the absence: what does not get counted usually does not get fixed.",
+        },
+        {
+          prompt: "What finally moved Shoal Creek and Augusta National in 1990?",
+          answer:
+            "Television advertising revenue. IBM, Toyota, and Anheuser-Busch pulled their advertising. Not Brown, not the Fourteenth Amendment, not decades of Black excellence.",
+        },
+      ],
+      body: `**These are two different organizations, and almost everybody gets them confused.** Getting this right is the single fastest way to sound like you actually know golf.
+
+| | **PGA of America** | **PGA TOUR** |
+| --- | --- | --- |
+| **Founded** | **1916** | **1968** |
+| **Who its members are** | **30,000+ working club and teaching professionals** — the people who run pro shops, give lessons, and manage facilities | **The elite touring players** you see on television |
+| **What it owns** | The **PGA Championship** and the **Ryder Cup** | **THE PLAYERS**, the **FedExCup**, the **Presidents Cup**, the **Korn Ferry Tour**, **Q-School**, **PGA TOUR University** |
+| **What it is, in one line** | The professional body for people who **work in golf** | The **league** for people who **play golf for prize money** |
+
+**How they split.** The PGA TOUR was **"formed in 1968 when a subset of touring professionals broke away from the PGA of America"** (PGA TOUR, n.d.). The tournament players wanted control of their own tournaments and their own television money. So they left.
+
+**Why this distinction should matter to you personally.** Read the PGA of America row again: **30,000-plus members**, and the overwhelming majority of them **are not tournament players.** They are teaching professionals, head pros, directors of golf, general managers.
+
+**That is what "being a golf professional" almost always actually means.** The PGA TOUR has a few hundred players. The PGA of America has tens of thousands of members with **stable careers, salaries, and benefits**. When a 16-year-old says "I want to be a pro golfer," they are almost always picturing the tiny organization and not the enormous one. **The realistic, achievable, well-paid path is the one nobody televises**, and the Opportunities section is going to walk you down it.
+
+**One more piece of vocabulary.** A "**PGA Professional**" (a PGA of America member — a person who teaches and runs golf facilities) and a "**Tour player**" are different jobs, requiring different training, with different odds of success. **The first has a training program and a hiring market. The second has a lottery.**
+
+:::reveal What is the PGA of America, what is the PGA TOUR, and which one has more members? ||| The PGA of America (1916) is the professional body for 30,000+ working club and teaching professionals, and it owns the PGA Championship and the Ryder Cup. The PGA TOUR (1968) is the league for elite touring players, formed when a subset of touring pros broke away from the PGA of America; it owns THE PLAYERS, the FedExCup, and the Presidents Cup. The PGA of America is vastly larger — and its members have the realistic careers.
+
+## Sources
+- PGA of America. (n.d.). *About the PGA of America*. https://www.pga.com/about
+- PGA TOUR. (n.d.). *About the PGA TOUR*. https://www.pgatour.com/company.html`,
+    },
+    {
+      slug: "golf-the-majors",
+      title: "32 · The majors, men's and women's",
+      section: "Tours & Leagues",
+      recallContent: [
+        {
+          prompt: "Which organization owns the Ryder Cup and the PGA Championship?",
+          answer: "The PGA of America — not the PGA TOUR.",
+        },
+        {
+          prompt: "When a teenager says \"I want to be a pro golfer,\" which organization are they usually picturing, and which one has the realistic career path?",
+          answer:
+            "They picture the PGA TOUR (a few hundred players — a lottery). The realistic path is the PGA of America: 30,000+ members with salaries, benefits, and an actual hiring market.",
+        },
+      ],
+      body: `The **majors** are the four tournaments that define a career. Winning one changes a player's life permanently. **And each one is run by a different organization** — which is exactly why the previous lesson mattered.
+
+**The men's majors:**
+
+| Major | Run by | Where |
+| --- | --- | --- |
+| **The Masters** | **Augusta National Golf Club** | Always **Augusta National**. The only major with a permanent home. |
+| **PGA Championship** | **The PGA of America** | Rotates |
+| **U.S. Open** | **The USGA** | Rotates |
+| **The Open Championship** | **The R&A** | Rotates among links courses in the UK |
+
+**Note that no major is run by the PGA TOUR.** The tour's own flagship event, **THE PLAYERS Championship**, has one of the strongest fields in golf and is sometimes called "the fifth major" — but it is **not** one, and the reason is structural: the majors are owned by the *governing bodies and the club*, not by the *league*. That is a real limit on the PGA TOUR's power, and it explains a great deal about golf politics.
+
+**⚠️ Call it "The Open Championship," or just "The Open." Never "the British Open."** It is not its name. The R&A runs it, it is the oldest major in golf, and it was called The Open before any other tournament existed to be confused with. Getting this right is a small thing that marks you instantly as someone who knows the sport.
+
+**The women's majors: there are FIVE**, not four. Women's golf recognizes five major championships, which is a fact most casual fans do not know and which is worth saying out loud, since the women's game is routinely described in the men's terms.
+
+**The FedExCup.** The PGA TOUR's season-long points race. Players earn points all year, the field narrows through a playoff series, and the last event decides the champion. It is the tour's answer to the problem that a season of individual tournaments has no natural climax.
+
+**The Grand Slam.** Winning all four men's majors in the **same calendar year**. **It has never been done in the modern era.** Tiger Woods held all four at once across 2000–2001 — the so-called "Tiger Slam" — but not within a single calendar year, which is why it gets its own name rather than the real one.
+
+:::reveal Which organization runs each of the four men's majors, and what is the correct name of the one The R&A runs? ||| The Masters is run by Augusta National Golf Club (the only major with a permanent home); the PGA Championship by the PGA of America; the U.S. Open by the USGA; and The Open Championship by The R&A. It is called The Open Championship, or simply The Open — never "the British Open." Note that the PGA TOUR runs NO major.
+
+## Sources
+- Masters Tournament. (n.d.). *Tournament history*. https://www.masters.com/en_US/history/index.html
+- PGA of America. (n.d.). *PGA Championship*. https://www.pgachampionship.com/
+- USGA. (n.d.). *U.S. Open*. https://www.usga.org/usopen.html
+- R&A. (n.d.). *The Open*. https://www.theopen.com/about
+- LPGA. (n.d.). *Majors*. https://www.lpga.com/tournaments`,
+    },
+    {
+      slug: "golf-team-golf",
+      title: "33 · Team golf: Ryder, Presidents, Solheim",
+      section: "Tours & Leagues",
+      recallContent: [
+        {
+          prompt: "How many women's majors are there?",
+          answer: "Five — not four. The women's game is routinely and wrongly described in the men's terms.",
+        },
+        {
+          prompt: "Does the PGA TOUR run any of the four men's majors?",
+          answer:
+            "No. They belong to Augusta National, the PGA of America, the USGA, and The R&A. THE PLAYERS is the TOUR's flagship, but it is not a major.",
+        },
+      ],
+      body: `Golf is an individual sport for 51 weeks a year. Then, occasionally, it is a team sport, and it becomes something else entirely — **players who are paid millions to be calm find themselves weeping on a golf course.** The team events are, by common consent among the players themselves, the most intense golf that exists.
+
+| Event | Who plays | Format | Run by |
+| --- | --- | --- | --- |
+| **Ryder Cup** | **Men**: **USA v Europe** | Match play, over three days | **The PGA of America** |
+| **Presidents Cup** | **Men**: **USA v an International team from the rest of the world, EXCLUDING Europe** | Match play | **The PGA TOUR** |
+| **Solheim Cup** | **Women**: **USA v Europe** | Match play | **The LPGA** |
+
+**Why the Presidents Cup exists, and why its definition is so strange.** Read its row again: **USA versus the rest of the world *excluding Europe*.** That exclusion is not a quirk of geography. **Europe is excluded because Europe already has the Ryder Cup** — and the Ryder Cup belongs to the *PGA of America*, not the PGA TOUR. The Presidents Cup is, in effect, **the PGA TOUR's own team event, built in the space the Ryder Cup left over.** Golf's institutional politics are visible right there in the eligibility rules, if you know how to read them.
+
+**And here is the detail that tells you what team golf actually is: there is NO PRIZE MONEY at the Presidents Cup.** The best players on earth compete, ferociously, for nothing but the result. (Proceeds go to charity.) For one week, professional golf stops being a profession.
+
+**Why match play makes it wild.** These events are contested at **match play** (Lesson 1), where each hole is a separate battle. Momentum is real, a blow-up hole costs only that hole, and a player 3 down with 4 to play is *not* finished. **Match play produces comebacks that stroke play makes arithmetically impossible**, and that is why the crowds are unlike anything else in golf.
+
+**Why this matters to a 15-year-old.** Look at the format: **match play, team, partners.** That is *exactly* what high-school and college golf is. It is also exactly what a four-ball with your friends is (Lesson 14). **The most thrilling golf on television is played in the same format as the most accessible golf available to you.** You can play Ryder Cup golf this weekend, with two friends and a five-dollar bet.
+
+:::reveal What is the difference between the Ryder Cup and the Presidents Cup, and what is unusual about the Presidents Cup's prize money? ||| The Ryder Cup is men's USA v EUROPE, run by the PGA of America. The Presidents Cup is men's USA v an International team from the rest of the world EXCLUDING Europe — excluded precisely because Europe already has the Ryder Cup — and it is run by the PGA TOUR. The Presidents Cup has NO prize money at all; the best players on earth compete for nothing but the result.
+
+## Sources
+- PGA of America. (n.d.). *Ryder Cup*. https://www.rydercup.com/
+- PGA TOUR. (n.d.). *Presidents Cup*. https://www.presidentscup.com/
+- LPGA. (n.d.). *Solheim Cup*. https://www.solheimcup.com/`,
+    },
+    {
+      slug: "golf-liv-and-2026",
+      title: "34 · LIV, the OWGR, and where the game actually stands",
+      section: "Tours & Leagues",
+      recallContent: [
+        {
+          prompt: "Why does the Presidents Cup exclude Europe?",
+          answer:
+            "Because Europe already has the Ryder Cup — which belongs to the PGA of America, not the PGA TOUR. The Presidents Cup is the TOUR's own team event, built in the space left over.",
+        },
+        {
+          prompt: "Why does match play produce comebacks that stroke play cannot?",
+          answer:
+            "Because each hole is a separate battle and a blow-up hole costs only that hole. A player 3 down with 4 to play is not finished.",
+        },
+      ],
+      body: `⚠️ **Read the date on anything you read about this.** Men's professional golf has been in open conflict since 2022, and **most of what is written about it is now out of date — including several things that were true eighteen months ago.** This lesson is written as of **2026**, and it is deliberately built to teach you the *shape* of the dispute, which will outlast the details.
+
+**What LIV Golf is.** A rival men's league, launched in 2022, funded by the **Public Investment Fund (PIF)** of Saudi Arabia. It signed a number of the world's best players with guaranteed contracts far larger than anything the PGA TOUR offered. The PGA TOUR suspended the players who went.
+
+**Four things that are commonly stated about LIV and are now WRONG:**
+
+| The common claim | The 2026 reality |
+| --- | --- |
+| "LIV is a 54-hole league" (hence the name) | ❌ **From the 2026 season, all LIV events are 72 holes over four days.** The "54" branding is obsolete. |
+| "LIV players get no world-ranking points" | ❌ **LIV was accredited by the Official World Golf Ranking on 3 February 2026** (it had been rejected in 2023). Points go to the **top 10 and ties** only. |
+| "PIF will bankroll LIV indefinitely" | ❌ **PIF announced (around 30 April 2026) that it will END its funding of LIV after the 2026 season**, having invested over **$5 billion**. LIV is courting new investors. |
+| "The tours merged in 2023" | ❌ **They did not.** |
+
+**That last one is the big one, so be precise about it.** In **June 2023** the PGA TOUR, the DP World Tour, and PIF announced a **framework agreement** — an agreement to try to reach an agreement. It was reported everywhere as a merger. **It was never consummated.** As of 2026, **men's professional golf is still not reunified.** If someone tells you the tours merged, they are repeating a headline about a document that never became a deal.
+
+**Why the world ranking was the real battleground.** The **Official World Golf Ranking** decides who gets into the **majors** — and the majors, as you now know, are run by **neither** tour. So a LIV player could be one of the best golfers alive, earn a fortune, and still slide down a ranking that decided whether he could play at Augusta. **The fight was never really about prize money. It was about access to the four tournaments that neither side controls.** That is why the February 2026 OWGR accreditation mattered far more than its dry name suggests.
+
+---
+
+**How to think about this without being told what to think.**
+
+You will hear two arguments, and both contain something true:
+
+- **"It's sportswashing."** Critics argue Saudi Arabia is using golf to improve its international image and distract from its human-rights record. **This is what the term means**, and it is a serious charge that players were asked about constantly.
+- **"Players are independent contractors."** Tour players are not salaried employees. They have always been free agents, and golfers have accepted appearance money from foreign governments and corporations for decades. **Why, players asked, is this the moment it became unacceptable?**
+
+**Your job is not to pick the side you were handed.** It is to notice the actual questions underneath, which are worth more than the golf:
+
+1. **Where does an athlete's money come from, and does that make them responsible for it?**
+2. **Does a monopoly league (which is what the PGA TOUR was) deserve to be protected from competition?**
+3. **When a story is reported everywhere as settled — "the tours merged!" — how would you find out it was not?**
+
+That third question is the one this course keeps asking. **You would find out the same way you found out about the *Golfdom* article: by going and looking at the document.** The framework agreement is public. It says what it says. **Read the thing itself.**
+
+:::reveal Name three things commonly said about LIV Golf that are wrong as of 2026. ||| (1) That it is a 54-hole league — from the 2026 season all LIV events are 72 holes over four days. (2) That its players get no world-ranking points — LIV was accredited by the OWGR on 3 February 2026, with points to the top 10 and ties. (3) That the tours merged — the June 2023 framework agreement was never consummated, and men's professional golf is still not reunified. (Also: PIF announced it will end its funding of LIV after the 2026 season.)
+
+## Sources
+- Official World Golf Ranking. (2026, February 3). *OWGR accreditation decision*. https://www.owgr.com/news
+- LIV Golf. (n.d.). *About LIV Golf*. https://www.livgolf.com/
+- PGA TOUR. (2023, June 6). *PGA TOUR, DP World Tour and PIF announce framework agreement*. https://www.pgatour.com/article/news/latest/2023/06/06/pga-tour-dp-world-tour-pif-framework-agreement`,
+    },
+    {
+      slug: "golf-tours-quiz",
+      title: "35 · Check your understanding: tours and leagues",
+      section: "Tours & Leagues",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "Which organization owns the PGA Championship and the Ryder Cup?",
+            options: ["The PGA TOUR", "The PGA of America", "The USGA", "The R&A"],
+            correctIndex: 1,
+            explanation:
+              "The PGA of America (founded 1916) is the body for 30,000+ working club and teaching professionals. It is NOT the PGA TOUR.",
+            sourceLessonSlug: "golf-pga-of-america-vs-pga-tour",
+          },
+          {
+            prompt: "How did the PGA TOUR come into existence?",
+            options: [
+              "It was founded in 1916 alongside the PGA of America",
+              "It was formed in 1968 when a subset of touring professionals broke away from the PGA of America",
+              "The USGA created it",
+              "It was spun out of The R&A in 2004",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The tournament players wanted control of their own tournaments and television money, so they left.",
+            sourceLessonSlug: "golf-pga-of-america-vs-pga-tour",
+          },
+          {
+            prompt: "Which body has roughly 30,000 members, most of whom are NOT tournament players?",
+            options: ["The PGA TOUR", "The PGA of America", "LIV Golf", "The DP World Tour"],
+            correctIndex: 1,
+            explanation:
+              "They are teaching pros, head pros, and directors of golf — the realistic, well-paid, achievable career in golf, and the one nobody televises.",
+            sourceLessonSlug: "golf-pga-of-america-vs-pga-tour",
+          },
+          {
+            prompt: "Which of the four men's majors is run by the PGA TOUR?",
+            options: ["The Masters", "The U.S. Open", "The Open Championship", "None of them"],
+            correctIndex: 3,
+            explanation:
+              "The Masters belongs to Augusta National, the PGA Championship to the PGA of America, the U.S. Open to the USGA, and The Open to The R&A. THE PLAYERS is the TOUR's flagship but is not a major — a real structural limit on the TOUR's power.",
+            sourceLessonSlug: "golf-the-majors",
+          },
+          {
+            prompt: "What is the correct name of the major run by The R&A?",
+            options: ["The British Open", "The Open Championship", "The English Open", "The Royal Open"],
+            correctIndex: 1,
+            explanation:
+              "It is The Open Championship, or simply The Open. It was called The Open before any other tournament existed to be confused with it.",
+            sourceLessonSlug: "golf-the-majors",
+          },
+          {
+            prompt: "How many major championships are there in women's golf?",
+            options: ["Three", "Four", "Five", "Six"],
+            correctIndex: 2,
+            explanation:
+              "Five — a fact most casual fans do not know, because the women's game is routinely described in the men's terms.",
+            sourceLessonSlug: "golf-the-majors",
+          },
+          {
+            prompt: "Which major has a permanent home, played at the same course every year?",
+            options: ["The U.S. Open", "The Open Championship", "The Masters", "The PGA Championship"],
+            correctIndex: 2,
+            explanation: "The Masters is always at Augusta National. The other three rotate.",
+            sourceLessonSlug: "golf-the-majors",
+          },
+          {
+            prompt: "The Presidents Cup is contested between the USA and:",
+            options: [
+              "Europe",
+              "An International team from the rest of the world, EXCLUDING Europe",
+              "Great Britain and Ireland",
+              "Asia only",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Europe is excluded because Europe already has the Ryder Cup — which belongs to the PGA of America. The Presidents Cup is the PGA TOUR's own team event, built in the space left over.",
+            sourceLessonSlug: "golf-team-golf",
+          },
+          {
+            prompt: "What is unusual about the prize money at the Presidents Cup?",
+            options: [
+              "It is the largest purse in golf",
+              "There is none; proceeds go to charity",
+              "Only the winning team is paid",
+              "It is paid in world-ranking points",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The best players on earth compete ferociously for nothing but the result. For one week, professional golf stops being a profession.",
+            sourceLessonSlug: "golf-team-golf",
+          },
+          {
+            prompt: "The Solheim Cup is:",
+            options: [
+              "Men's USA v Europe",
+              "Women's USA v Europe, run by the LPGA",
+              "Women's USA v the rest of the world",
+              "A mixed team event",
+            ],
+            correctIndex: 1,
+            explanation: "Ryder = men, USA v Europe. Solheim = women, USA v Europe. Presidents = men, USA v rest-of-world excluding Europe.",
+            sourceLessonSlug: "golf-team-golf",
+          },
+          {
+            prompt: "How many holes is a LIV Golf event as of the 2026 season?",
+            options: ["54 holes over three days", "72 holes over four days", "36 holes", "18 holes"],
+            correctIndex: 1,
+            explanation:
+              "From 2026 all LIV events are 72 holes over four days. The '54' branding — which gave the league its name — is obsolete.",
+            sourceLessonSlug: "golf-liv-and-2026",
+          },
+          {
+            prompt: "What is the status of LIV Golf in the Official World Golf Ranking?",
+            options: [
+              "Still rejected, as it was in 2023",
+              "Accredited on 3 February 2026, with points to the top 10 and ties",
+              "It has always had full points",
+              "It awards more points than the PGA TOUR",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The ranking mattered enormously because it decides entry to the MAJORS — which neither tour controls. The fight was about access, not prize money.",
+            sourceLessonSlug: "golf-liv-and-2026",
+          },
+          {
+            prompt: "Did the PGA TOUR and LIV/PIF merge?",
+            options: [
+              "Yes, in June 2023",
+              "No — the June 2023 framework agreement was never consummated, and men's golf is still not reunified",
+              "Yes, in February 2026",
+              "Yes, but it was later reversed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A framework agreement is an agreement to try to reach an agreement. It was reported everywhere as a merger. It never became a deal.",
+            sourceLessonSlug: "golf-liv-and-2026",
+          },
+          {
+            prompt: "What did PIF announce around 30 April 2026?",
+            options: [
+              "That it would double its investment in LIV",
+              "That it will END its funding of LIV after the 2026 season, having invested over $5 billion",
+              "That it had bought the PGA TOUR",
+              "That LIV would return to 54 holes",
+            ],
+            correctIndex: 1,
+            explanation: "LIV is now courting new investors. This is why you must read the date on anything written about this dispute.",
+            sourceLessonSlug: "golf-liv-and-2026",
+          },
+          {
+            prompt: "Why did the world ranking become the real battleground in the LIV dispute?",
+            options: [
+              "Because it determines prize money",
+              "Because it decides entry to the majors, which are run by NEITHER tour",
+              "Because it sets television schedules",
+              "Because it determines Ryder Cup captains",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A LIV player could be among the best alive, earn a fortune, and still slide down a ranking that decided whether he could play at Augusta.",
+            sourceLessonSlug: "golf-liv-and-2026",
+          },
+        ],
+      },
+    },
   ],
 };
