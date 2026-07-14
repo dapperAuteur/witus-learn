@@ -1075,5 +1075,712 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 — Strategy. NOTE: break-building vocabulary (pioneer, pivot, leave) is COACHING
+    // vocabulary, not Law vocabulary. The lessons say so explicitly and cite the Law that the
+    // tactic exploits, rather than inventing a law number for the tactic itself.
+    // ══════════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-four-ball-break",
+      title: "14 · Strategy: the four-ball break",
+      section: "4 · Strategy: think like a break-builder",
+      body: `**Code taught in this lesson: ASSOCIATION CROQUET (AC), World Croquet Federation.**
+
+**A vocabulary warning first, because it matters.** The words in this lesson — *break*, *pioneer*, *pivot*, *leave* — are **coaching vocabulary**, not Law vocabulary. They are used by every coach and commentator in the sport, and none of them is a defined term in the WCF Laws. So no lesson in this section will hand you a law number for a *tactic*. What each tactic exploits is a real, citable Law, and that is what gets cited.
+
+## The problem the break solves
+
+You know from Law 2.6.10 that running a hoop renews your right to use all three other balls. So a break is simply this: **arrive at every hoop with the balls you need already sitting where you need them.**
+
+The bad version of croquet is: hit a ball, take croquet, hope. The good version is: **before you run this hoop, you have already sent balls to the next two hoops.**
+
+## The four-ball break, in plain English
+
+Give the three balls that are not yours three jobs:
+
+| Job | Coaching name | Where it sits |
+|---|---|---|
+| The ball waiting at **your next hoop** | **pioneer** | Just beside the next hoop |
+| The ball waiting at **the hoop after that** | **pioneer** (the forward one) | Just beside the hoop after next |
+| The ball parked **in the middle of the court** | **pivot** | Near the peg |
+
+Now the cycle, one hoop at a time:
+
+1. **Roquet** the ball at your current hoop.
+2. **Take croquet**, and use that stroke to do *two* jobs: put yourself in front of the hoop, and send that ball off to become the pioneer for a later hoop.
+3. **Run the hoop** with your continuation stroke. All three balls are now live again (Law 2.6.10).
+4. **Roquet the pivot** in the middle, take croquet off it, and use that stroke to travel to your next hoop — where your pioneer is already waiting.
+5. Repeat.
+
+The pivot near the peg is the trick that makes the whole thing stable: it is close to *everything*, so there is always a ball within reach from the middle of the court.
+
+## Why this is the real skill
+
+Look at what step 2 asks of you. **One stroke, two outcomes.** You must land your own ball in front of a hoop *and* land the other ball twenty yards away next to a different hoop, with the same swing. That is a *croquet stroke* (Law 18.3: your ball starts in contact with theirs, so both move). Learning to control the ratio between the two balls — how far each travels, at what angle — is the single highest-leverage skill in Association Croquet.
+
+Everything else — hitting long shots, running tight hoops — is secondary to this. Long straight shots are the *fallback* when your break falls apart.
+
+## The honest truth about breaks
+
+Most beginners' breaks collapse at hoop 3 or 4, because they took the easy croquet stroke instead of the correct one. The discipline that separates a 5-hoop break from a 12-hoop break is: **never take a croquet stroke that only solves this hoop.**
+
+:::reveal In a four-ball break, what are the three jobs you give the other three balls? ||| A pioneer at your NEXT hoop; a second pioneer at the hoop AFTER that; and a pivot parked near the peg in the middle of the court. The pivot is close to everything, so you can always reach a ball from the centre. (These are coaching terms, not defined terms in the WCF Laws.)
+
+## Sources
+- ${WCF_AC}
+- ${WCF_AC_PAGE}`,
+    },
+    {
+      slug: "leaves-and-wiring",
+      title: "15 · Strategy: the leave — winning while you are not playing",
+      section: "4 · Strategy: think like a break-builder",
+      body: `**Code taught in this lesson: ASSOCIATION CROQUET (AC), World Croquet Federation.**
+
+Your break has to end eventually. What matters enormously — and what beginners never think about — is **what the court looks like when it does**.
+
+The coaching word for that arrangement is a **leave**. (Again: coaching vocabulary, not a defined term in the Laws.) A good leave means your opponent's best available shot is still bad.
+
+## The three questions a leave answers
+
+1. **How far must my opponent shoot to hit anything?** Every extra yard is a bigger chance they miss.
+2. **If they miss, what do I get?** A miss should hand *you* an easy break, not just an ordinary turn.
+3. **Can they even see a target?** — which brings us to wiring.
+
+## Wiring, used properly
+
+Law 16.3 defines a ball as **wired** from another if a hoop or the peg would impede its direct course to the target, or impede the mallet swing, or if it would have to pass through a hoop to hit the target, or if it lies in a hoop's jaws (World Croquet Federation, 2021).
+
+So you can hide behind a hoop. Excellent. But — and this is the bit that catches people — **Law 16.1 gives your opponent a wiring lift** if *you* are responsible for the position of one of their balls, it is not touching another ball, and it is wired from **all** other balls. They may then lift it and play from any unoccupied point on either baulk-line. Borderline cases are decided **as wired** (Law 16.5.3), which means the tie goes *against* the person who did the wiring.
+
+**The practical rule that falls out of this:**
+
+- Wiring an opponent's ball **from your own balls** (so they cannot shoot at you) is a strong idea — right up until you wire it from *everything*, at which point you may have given them a free lift to the baulk-line.
+- The safer, more common leave is **distance plus angle**: put your two balls together, far away, so their only shot is a long one; and if they miss, their ball runs off somewhere useless while your two sit ready.
+
+## The shot they have to take
+
+Here is why leaves decide games. If you leave your opponent a **13-yard shot**, they will miss it most of the time — and if they miss, you have two balls in position and a break waiting. If you leave them a **3-yard shot**, they hit it, and now *they* have the break and you are watching.
+
+The difference between those two leaves is one croquet stroke played thoughtfully at the end of your turn. **That is the game.**
+
+## Golf Croquet has leaves too
+
+In GC there is no croquet stroke, so you cannot arrange the court with a single stroke. But because the colour order is fixed (Rule 1.2.1), you always know exactly who plays next — so the "leave" question becomes: **what is the best thing my opponent can do with their one stroke, and can I make it worse?**
+
+Common GC answers, all of them tactics rather than rules:
+
+- **Block.** Put a ball in the line between their ball and the hoop.
+- **Clear.** Hit their ball away from the hoop. It earns you nothing (one stroke per turn — Rule 1.1.1), but their ball is now twenty yards from where it wanted to be.
+- **Promote.** Hit one ball into another to send *that* ball through the hoop — legal because Rule 7.1.1 allows a ball to run a hoop "directly or **indirectly**."
+- **Jump.** Go over a blocking ball. Legal by omission, bounded by the fault list in Rule 11.2 (see Lesson 8).
+
+:::reveal Your Association Croquet break has ended. What is the single question that should decide where you leave the balls? ||| "What is the best shot my opponent now has, and what do I get when they miss it?" A good leave forces a long, low-percentage shot AND leaves your two balls arranged so that a miss hands you a break. Distance plus angle usually beats clever wiring, because wiring a ball from ALL other balls can hand them a free wiring lift (Law 16.1).
+
+## Sources
+- ${WCF_AC}
+- ${WCF_GC}`,
+      recallContent: [
+        {
+          prompt: "What is the pivot in a four-ball break, and why is it placed near the peg?",
+          answer:
+            "The pivot is the ball parked in the middle of the court. It sits near the peg because the centre is close to everything — so you can always reach a ball from the middle and travel on to your next hoop.",
+        },
+        {
+          prompt: "Why is one croquet stroke expected to do two jobs?",
+          answer:
+            "Because your ball starts in contact with the croqueted ball (Law 18.3), one stroke moves both. The good version puts you in front of your hoop AND sends the other ball ahead to become a pioneer at a later hoop.",
+        },
+      ],
+    },
+    {
+      slug: "practice-your-thinking",
+      title: "16 · Practice: think it through",
+      section: "4 · Strategy: think like a break-builder",
+      body: `Before the drill, one habit worth building — and it is the habit that actually makes people better at this game.
+
+## Keep a match log
+
+Strong croquet players are not the ones with the best swing. They are the ones who **know why they lost**. After every game you play — even a garden game — write four lines:
+
+| Field | What to write |
+|---|---|
+| **Code** | Golf Croquet, Association Croquet, American Six-Wicket, or garden. Always name it. |
+| **Where it turned** | The one moment the game changed hands. Be specific: "3–3 in a 7-point GC game, I was blocked at hoop 4 and cleared instead of jumping." |
+| **The stroke I got wrong** | Not the one you *missed* — the one you **chose** wrong. Those are different, and only one of them is fixable this week. |
+| **What I'll drill** | One thing. "Croquet stroke: send the other ball 15 yards while I travel 5." |
+
+Do that for ten games and you will have a written map of your own weaknesses. That is worth more than ten hours of hitting balls at nothing.
+
+Now the drill.`,
+      exercise: {
+        instructions:
+          "Fill in each blank with the term or number from this course. Spelling and capitalisation are forgiving. Every answer is stated somewhere in Sections 1–4.",
+        items: [
+          {
+            prompt: "In Association Croquet, hitting a live ball with your ball is called a ___.",
+            answer: "roquet",
+            explanation: "Law 17.1. The consequence is compulsory: you must then take croquet (Law 17.3.4).",
+          },
+          {
+            prompt: "After a roquet you must pick your ball up and place it in contact with the ball you hit. That stroke is called the ___ stroke.",
+            answer: "croquet",
+            explanation: "Law 18.3. Because both balls start in contact, one stroke moves both — which is how you arrange the court.",
+          },
+          {
+            prompt: "After a croquet stroke, or after running a hoop, you get one ___ stroke.",
+            answer: "continuation",
+            explanation: "Law 19.1 grants it; Law 19.3 forbids accumulating them.",
+          },
+          {
+            prompt: "In a four-ball break, the ball waiting for you at your next hoop is called a ___.",
+            answer: "pioneer",
+            explanation: "Coaching vocabulary, not a term defined in the WCF Laws.",
+          },
+          {
+            prompt: "In a four-ball break, the ball parked in the middle of the court, near the peg, is the ___.",
+            answer: "pivot",
+            explanation: "The centre is close to everything, so there is always a ball within reach.",
+          },
+          {
+            prompt: "Hiding a ball behind a hoop so it cannot shoot at another ball is called ___.",
+            answer: "wiring",
+            accept: ["wiring it", "to wire"],
+            explanation: "Defined in Law 16.3 — but beware the wiring lift in Law 16.1.",
+          },
+          {
+            prompt: "A side wins Association Croquet by scoring a total of ___ points.",
+            answer: "26",
+            accept: ["twenty-six", "twenty six"],
+            explanation: "12 hoop points plus the peg point, for each of the side's two balls (Law 1.1).",
+          },
+          {
+            prompt: "In Golf Croquet, a turn contains exactly ___ stroke(s).",
+            answer: "one",
+            accept: ["1"],
+            explanation: "Rule 1.1.1. Handicap extra strokes are the main exception.",
+          },
+          {
+            prompt: "The fixed Golf Croquet colour sequence is blue, red, black, and ___.",
+            answer: "yellow",
+            explanation: "Rule 1.2.1. Because it is fixed, you always know who shoots next.",
+          },
+          {
+            prompt: "In Golf Croquet, a ball becomes ___ if all of it is clearly beyond the halfway line at the end of a turn in which a point is scored.",
+            answer: "offside",
+            explanation: "Rule 8.2.1 — and the penalty is not automatic; the opponent may give an offside direction (Rule 8.4.1).",
+          },
+          {
+            prompt: "The law that renews your right to use all the other balls when you score a hoop point is Law 2.6.___.",
+            answer: "10",
+            explanation: "Law 2.6.10 — the one law that makes a long break possible.",
+          },
+          {
+            prompt: "A standard WCF croquet court measures 28 by ___ yards.",
+            answer: "35",
+            accept: ["35 yards", "thirty-five"],
+            explanation: "AC Law 4.1.1 and GC Rule 2.1.1, with a ±6 inch tolerance.",
+          },
+        ],
+      },
+      recallContent: [
+        {
+          prompt: "What is a 'leave', and what question does a good one answer?",
+          answer:
+            "The arrangement of the balls when your turn ends. A good leave answers: what is the best shot my opponent now has, and what do I get when they miss it? Force a long shot, and be positioned to punish a miss.",
+        },
+        {
+          prompt: "Name two Golf Croquet tactics that do not exist as named rules.",
+          answer:
+            "Any two of: blocking (put a ball on their line to the hoop), clearing (hit their ball away), promoting (hit one ball into another to send it through the hoop — legal because Rule 7.1.1 allows 'indirect' running), and jumping (legal by omission, bounded by the fault list in Rule 11.2).",
+        },
+      ],
+    },
+    {
+      slug: "quiz-strategy",
+      title: "17 · Section quiz: strategy",
+      section: "4 · Strategy: think like a break-builder",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "In a four-ball break, what is a 'pioneer'?",
+            options: [
+              "The ball you are currently playing",
+              "A ball sent ahead to wait at a hoop you have not reached yet",
+              "The ball parked near the peg",
+              "A ball that has been pegged out",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You keep pioneers at your next hoop and at the hoop after that, so you always arrive to a ball already in position. It is coaching vocabulary, not a term in the WCF Laws.",
+            sourceLessonSlug: "the-four-ball-break",
+          },
+          {
+            prompt: "Why is the pivot placed near the peg?",
+            options: [
+              "Because the Laws require it",
+              "Because the centre of the court is close to everything, so a ball is always within reach",
+              "Because it scores a point there",
+              "Because it cannot be roqueted there",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The pivot is the stabiliser of the break — from the middle you can reach a ball and travel on to your next hoop.",
+            sourceLessonSlug: "the-four-ball-break",
+          },
+          {
+            prompt: "What makes the croquet stroke the highest-leverage skill in Association Croquet?",
+            options: [
+              "It scores a point directly",
+              "One stroke moves BOTH balls, so it must place your ball in front of the hoop AND send the other ball ahead as a pioneer",
+              "It is the only legal stroke",
+              "It cannot be faulted",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Law 18.3 puts the two balls in contact before the stroke, so a single swing controls where both end up. Controlling the ratio between them is the core skill.",
+            sourceLessonSlug: "the-four-ball-break",
+          },
+          {
+            prompt: "Which of these is coaching vocabulary rather than a defined term in the WCF Laws?",
+            options: ["Roquet", "Croquet stroke", "Pioneer", "Continuation stroke"],
+            correctIndex: 2,
+            explanation:
+              "Roquet (Law 17.1), croquet stroke (Law 18.3) and continuation stroke (Law 19.1) are all defined in the Laws. Pioneer, pivot, leave and even 'break' are coaching terms — no law number exists for them.",
+            sourceLessonSlug: "the-four-ball-break",
+          },
+          {
+            prompt: "What is a 'leave'?",
+            options: [
+              "Conceding the game",
+              "The arrangement of the balls on the court when your turn ends",
+              "The moment your ball leaves the court",
+              "A referee's ruling",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A good leave forces your opponent into a long, low-percentage shot and positions your balls to punish a miss.",
+            sourceLessonSlug: "leaves-and-wiring",
+          },
+          {
+            prompt: "Why can wiring an opponent's ball backfire?",
+            options: [
+              "It is a fault",
+              "If you are responsible for their ball being wired from ALL other balls (and it is not touching one), Law 16.1 may give them a free wiring lift to the baulk-line",
+              "It costs you a continuation stroke",
+              "It scores a point for them",
+            ],
+            correctIndex: 1,
+            explanation:
+              "And Law 16.5.3 decides borderline cases AS WIRED — the tie goes against the player who did the wiring. Wiring is a scalpel, not a hammer.",
+            sourceLessonSlug: "leaves-and-wiring",
+          },
+          {
+            prompt: "Which leave is generally safer than an all-out wiring leave?",
+            options: [
+              "Leaving both your balls in the middle of the court",
+              "Distance plus angle: your two balls together, far away, so their only shot is long — and a miss hands you a break",
+              "Leaving your balls on the boundary next to theirs",
+              "Pegging out one of your balls",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A 13-yard shot is missed most of the time; a 3-yard shot is hit. The difference between those two leaves is one thoughtful croquet stroke.",
+            sourceLessonSlug: "leaves-and-wiring",
+          },
+          {
+            prompt: "In Golf Croquet, what does 'clearing' an opponent's ball earn you?",
+            options: [
+              "An extra stroke",
+              "A point",
+              "No extra strokes at all — a turn is one stroke — but their ball is now far from the hoop it wanted",
+              "A croquet stroke",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Rule 1.1.1. GC tactics work by changing the position of the balls, not by earning strokes.",
+            sourceLessonSlug: "leaves-and-wiring",
+          },
+          {
+            prompt: "What is a 'promotion' in Golf Croquet, and why is it legal?",
+            options: [
+              "Hitting one ball into another so that the second ball runs the hoop — legal because Rule 7.1.1 allows a ball to run a hoop directly or INDIRECTLY",
+              "Moving your ball up the colour sequence",
+              "Being promoted to a lower handicap",
+              "Running two hoops in one stroke",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same rule means you can accidentally score a hoop FOR your opponent by knocking their ball through. Be careful what you push around near a hoop.",
+            sourceLessonSlug: "leaves-and-wiring",
+          },
+          {
+            prompt: "Most beginners' Association Croquet breaks collapse because they...",
+            options: [
+              "hit too hard",
+              "take the easy croquet stroke that only solves the current hoop, instead of the correct one that sets up the next two",
+              "wire themselves",
+              "peg out too early",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The discipline that separates a 5-hoop break from a 12-hoop break: never take a croquet stroke that only solves this hoop.",
+            sourceLessonSlug: "the-four-ball-break",
+          },
+          {
+            prompt: "Which fixed feature of Golf Croquet makes its tactics calculable?",
+            options: [
+              "The offside rule",
+              "The fixed colour sequence (Rule 1.2.1) — you always know exactly who plays next and with which ball",
+              "The 7-point game length",
+              "The penalty areas",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Every stroke can be chosen against a known reply. That is what turns a 'simple' one-stroke game into a hard tactical one.",
+            sourceLessonSlug: "leaves-and-wiring",
+          },
+          {
+            prompt: "In your match log, which stroke should you record?",
+            options: [
+              "The one you physically missed",
+              "The one you CHOSE wrong — a different thing, and the one that is actually fixable",
+              "Every stroke of the game",
+              "Only strokes that scored",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Missing a shot is a mechanical problem; choosing the wrong shot is a thinking problem. Only one of them can be fixed this week.",
+            sourceLessonSlug: "practice-your-thinking",
+          },
+          {
+            prompt: "Which field must every match-log entry begin with?",
+            options: ["The score", "The weather", "The CODE you were playing", "Your handicap"],
+            correctIndex: 2,
+            explanation:
+              "Always name the code. A tactical note from a Golf Croquet game can be actively wrong advice in Association Croquet.",
+            sourceLessonSlug: "practice-your-thinking",
+          },
+          {
+            prompt: "What is the 'fallback' skill in Association Croquet, used when your break has fallen apart?",
+            options: [
+              "The long straight shot (hitting in from distance)",
+              "The croquet stroke",
+              "The wiring lift",
+              "The peg-out",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Long shots and tight hoop-running matter, but they are what you fall back on. Break-building is the primary skill.",
+            sourceLessonSlug: "the-four-ball-break",
+          },
+          {
+            prompt: "In a four-ball break, how many jobs does each of the other three balls have?",
+            options: [
+              "One each: two pioneers (next hoop and the hoop after) and one pivot near the peg",
+              "None — they are obstacles",
+              "They rotate randomly",
+              "Two each",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The whole art is keeping those three jobs filled while you advance — which is what the croquet stroke is for.",
+            sourceLessonSlug: "the-four-ball-break",
+          },
+        ],
+      },
+    },
+
+    // ══════════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 — American Six-Wicket (USCA). NOTE: "carryover deadness" is COACHING SLANG — the
+    // phrase appears ZERO times in the official 2024 rulebook. The concept is real and is what
+    // Rule 7.1 describes. The lesson teaches the concept and cites 7.1, and refuses to attach a
+    // rule number to the slang phrase.
+    // ══════════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "american-six-wicket",
+      title: "18 · American Six-Wicket: the USCA code",
+      section: "5 · American Six-Wicket (USCA)",
+      body: `**Code taught in this lesson: AMERICAN SIX-WICKET, governed by the United States Croquet Association.** Rulebook: *The Official Rules of American Six Wicket Croquet*, **revised 2024**.
+
+If you play tournament croquet in the United States, this is the code you are most likely to meet first. It shares the roquet–croquet–continuation engine with Association Croquet, and it shares the 26-point objective. Then it does two things very differently, and both of them change how the game feels.
+
+## Same objective, same court
+
+Rule 1.1(b): "The object of the game is for a side to make each ball on the side score the **12 wicket points and the stake point, a total of 26 points**, before the opponent" (United States Croquet Association, 2024). Rule 10.4 restates the win condition: score the 24 wicket points and **stake out both balls**, for 26 total — or, in a time-limited game, score the most points.
+
+One side plays **blue and black**, the other **red and yellow** (Rule 1.1(a)). A **coin toss** decides who goes first (Rule 1.1(c)). The 26-point game may be shortened to a **14-point game** (Rule 16.1).
+
+## Difference 1: the order of play is FIXED
+
+Rule 1.3(a): "Play shall begin with the **blue ball followed by red, black, and yellow** (the order of colors descending on the center stake) and that shall be the proper order of play until the game ends or a ball stakes out."
+
+Compare that with Association Croquet, where **you choose which of your two balls to play at the start of each turn** (AC Law 2.3; World Croquet Federation, 2021). In the American game, you do not choose. The rotation tells you.
+
+That single change reshapes the strategy. In AC, a huge part of the thinking is *"which of my balls has the better opportunity right now?"* In the American game that question does not exist — you play the ball whose turn it is, and you must plan **two turns ahead for each of your balls**, because you know exactly when each one comes up.
+
+(The American rules do contain an **experimental** provision, Rule 17.1, allowing a choice of ball in one narrow case — where a ball scores 1-back and 4-back in the same turn. It is explicitly experimental. Do not describe ball choice as part of the standard American game.)
+
+## Difference 2: deadness — see the next lesson
+
+That one is big enough to deserve its own lesson.
+
+## The clock
+
+The American game is the most explicitly **timed** of the three codes, which is one reason it works on television and at clubs with a lot of members and few lawns.
+
+- **Rule 13.7:** a time limit may be set by the tournament director before the first game.
+- **Rule 13.8(a):** "the striker shall have a maximum of **45 seconds** to strike the striker ball following the completion of the previous shot." The timekeeper announces when 15 seconds remain.
+- **Rule 13.9:** "Each side is allotted **three one-minute player time-outs**."
+- **Rule 13.10 / 13.11:** the timekeeper announces 15 minutes and 1 minute remaining, then calls **"match time"** — after which each remaining ball gets one **last turn**, in rotation. Then "the side scoring the most wicket and stake points is declared the winner"; if tied, play continues in full rounds.
+- The rulebook notes games are "normally an hour ten minutes to two hours."
+
+A **45-second shot clock** in croquet. Remember that the next time someone calls this a slow game for retirees.
+
+:::reveal Name the single biggest structural difference between the American Six-Wicket code and Association Croquet in how a turn begins. ||| Order of play. In American Six-Wicket the rotation is FIXED — blue, red, black, yellow (USCA Rule 1.3(a)) — and you play whichever ball's turn it is. In Association Croquet you CHOOSE which of your side's two balls to play at the start of each turn.
+
+## Sources
+- ${USCA_RULES}
+- ${WCF_AC}`,
+    },
+    {
+      slug: "deadness",
+      title: "19 · Deadness, and the board that shows it",
+      section: "5 · American Six-Wicket (USCA)",
+      body: `**Code taught in this lesson: AMERICAN SIX-WICKET, USCA.** Association Croquet has a *related* idea, but it does not work this way and it has no deadness board. Do not mix them.
+
+## The rule
+
+Rule 7.1: "When the striker earns the croquet shot, the striker ball becomes '**dead**' on the roqueted ball and **may not roquet it again until the striker ball scores its next wicket** or is cleared of deadness under rule 7.3 (1-back) or 9.2 (blocking)" (United States Croquet Association, 2024).
+
+Here is what makes the American game different, and it is one word: **deadness persists across turns.** It is not wiped clean when your turn ends. Your ball stays dead on that ball, sitting there, turn after turn, until it runs its next wicket.
+
+So a ball can be **dead on two, or even three, of the other balls** — which means that when its turn comes around, it may have almost nothing it is allowed to hit. A ball that is dead on everything is nearly useless, and your opponent knows it.
+
+**Vocabulary warning, and this one is a good demonstration of how to read a rulebook.** Coaches and players call this "**carryover deadness**." The phrase is real and everyone uses it — but it appears **zero times in the official 2024 USCA rulebook**. There is no "carryover deadness rule." The concept is exactly what **Rule 7.1** describes. So: use the phrase in conversation, cite **Rule 7.1** when it matters, and never quote a rule number for the phrase itself.
+
+## The deadness board
+
+Because deadness is invisible — you cannot look at a ball and see what it is dead on — the American game gives it a physical display. From the rulebook's equipment section:
+
+> "In order to aid the contestants (and spectators) in identifying balls which have deadness, a board approximately **2' high x 3' wide** is used with the four ball colors permanently affixed in proper sequence vertically on the left side and **12 colored squares (three each of the four ball colors)**... The white squares can be moved so as to cover or uncover the colored squares to show a ball's deadness." (United States Croquet Association, 2024)
+
+Three squares per ball, because each ball can be dead on the other three. **The whole state of the game is on a board where everyone — including the crowd — can read it.** That is a genuinely thoughtful piece of sports design, and it is unique to this code.
+
+## Getting clean again
+
+There are three ways out of deadness, and all three are cited:
+
+1. **Score your next wicket.** The default (Rule 7.1). Deadness clears.
+2. **The 1-back clearing (Rule 7.3).** "As each ball of both sides scores its 1-back wicket, the opposing side has the option of clearing the deadness from either of its balls that is eligible for a clearing." You must **declare** which ball before playing the first shot of your next turn, "or no relief shall be given," and Rule 7.3(c) adds that the first colour declared "shall be the one cleared and may not subsequently be changed." Say it once, say it right.
+3. **Blocking relief (Rule 9.2).** If a ball is blocked in a wicket (a stymie), there is deadness relief.
+
+And a fourth, for rover balls: **Rule 10.3.** A rover that is dead on two or more balls clears its deadness by running any wicket in either direction — but remains "last dead" on one ball.
+
+## Why this changes everything strategically
+
+In Association Croquet, your break-building problem is *arranging* the balls. In American Six-Wicket, it is arranging the balls **while managing a resource that runs out**. Every roquet you take spends something. A player who burns all their deadness on a break that then collapses has left a ball on the court that cannot hit anything.
+
+The board tells your opponent exactly how poor you are. Play accordingly.
+
+:::reveal A friend cites "USCA carryover deadness rule" and gives you a rule number. What is wrong, and what is the correct citation? ||| The phrase "carryover deadness" appears ZERO times in the official 2024 USCA rulebook — there is no rule of that name and no rule number for it. The CONCEPT is real: deadness persists across turns until the ball scores its next wicket, and that is what Rule 7.1 says. Cite Rule 7.1; treat "carryover deadness" as coaching slang.
+
+## Sources
+- ${USCA_RULES}`,
+      recallContent: [
+        {
+          prompt: "In American Six-Wicket, what is the order of play, and can you choose your ball?",
+          answer:
+            "Blue, red, black, yellow — a fixed rotation (Rule 1.3(a)). You cannot choose; you play whichever ball's turn it is. (Association Croquet is the opposite: you choose.)",
+        },
+        {
+          prompt: "How long does a striker have to play a shot in the American game?",
+          answer:
+            "A maximum of 45 seconds after the previous shot is completed (Rule 13.8(a)). Each side also gets three one-minute time-outs (Rule 13.9).",
+        },
+      ],
+    },
+    {
+      slug: "quiz-usca",
+      title: "20 · Section quiz: American Six-Wicket",
+      section: "5 · American Six-Wicket (USCA)",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "Which body governs American Six-Wicket, and what is its current rulebook?",
+            options: [
+              "The WCF — the Laws of Association Croquet, 7th ed.",
+              "The USCA — The Official Rules of American Six Wicket Croquet, revised 2024",
+              "Croquet England — the Golf Croquet Rules",
+              "No one — it is an informal code",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Cite the edition as 'revised 2024'. An older 2006 rulebook URL still turns up in search results but now 404s.",
+            sourceLessonSlug: "american-six-wicket",
+          },
+          {
+            prompt: "What is the order of play in American Six-Wicket?",
+            options: [
+              "The striker chooses which of their side's balls to play each turn",
+              "A fixed rotation: blue, red, black, yellow",
+              "Whichever ball is closest to the next wicket",
+              "Alternating sides, but each side chooses its ball",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rule 1.3(a) — the colours descend the centre stake in that order. Choosing your ball each turn is the ASSOCIATION code, not this one.",
+            sourceLessonSlug: "american-six-wicket",
+          },
+          {
+            prompt: "How many points does a side need to win an American Six-Wicket game?",
+            options: ["13", "26 — 12 wicket points plus the stake point, for each of the side's two balls", "7", "24"],
+            correctIndex: 1,
+            explanation:
+              "Rule 1.1(b) and Rule 10.4. The side must stake out BOTH balls (or, in a time-limited game, score the most points).",
+            sourceLessonSlug: "american-six-wicket",
+          },
+          {
+            prompt: "What does USCA Rule 7.1 say happens when the striker earns the croquet shot?",
+            options: [
+              "The striker ball becomes 'dead' on the roqueted ball and may not roquet it again until it scores its next wicket",
+              "The striker ball is removed from the game",
+              "The roqueted ball is removed",
+              "Deadness is cleared at the end of every turn",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And crucially, that deadness PERSISTS across turns — it is not wiped when your turn ends. That is the signature of the American code.",
+            sourceLessonSlug: "deadness",
+          },
+          {
+            prompt: "What is the correct thing to say about the phrase 'carryover deadness'?",
+            options: [
+              "It is USCA Rule 7.2",
+              "It is a term defined in the rulebook's glossary",
+              "It appears ZERO times in the official 2024 rulebook — it is coaching slang for what Rule 7.1 describes",
+              "It is an Association Croquet term",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The concept is completely real; the phrase is not in the rulebook. Cite Rule 7.1 and never attach a rule number to the slang.",
+            sourceLessonSlug: "deadness",
+          },
+          {
+            prompt: "Roughly how big is a deadness board, and what is on it?",
+            options: [
+              "About 2 ft high by 3 ft wide, with the four ball colours down the left and 12 coloured squares — three per ball",
+              "A pocket-sized scorecard carried by the referee",
+              "A digital screen required at every club",
+              "A 6 ft square scoreboard with 26 squares",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three squares per ball, because each ball can be dead on the other three. The full state of the game is public — spectators included.",
+            sourceLessonSlug: "deadness",
+          },
+          {
+            prompt: "What is the 1-back clearing (Rule 7.3)?",
+            options: [
+              "Deadness is cleared automatically for everyone at 1-back",
+              "As each ball scores its 1-back wicket, the OPPOSING side may clear the deadness from one of its eligible balls — and must declare which before playing its next first shot",
+              "A ball at 1-back may roquet any ball twice",
+              "It clears the deadness board at half time",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rule 7.3(c): the first colour declared is the one cleared, and it may not subsequently be changed. Say it once, say it right.",
+            sourceLessonSlug: "deadness",
+          },
+          {
+            prompt: "How long does a striker have to play a shot in the American game?",
+            options: ["No limit", "45 seconds after the previous shot is completed", "10 seconds", "Two minutes"],
+            correctIndex: 1,
+            explanation:
+              "Rule 13.8(a), with the timekeeper announcing when 15 seconds remain. A 45-second shot clock is not a slow game.",
+            sourceLessonSlug: "american-six-wicket",
+          },
+          {
+            prompt: "How many time-outs does each side get in a timed American game?",
+            options: ["None", "Three one-minute player time-outs", "One five-minute time-out", "Unlimited"],
+            correctIndex: 1,
+            explanation: "Rule 13.9.",
+            sourceLessonSlug: "american-six-wicket",
+          },
+          {
+            prompt: "What happens at 'match time' in a timed American game?",
+            options: [
+              "Play stops immediately and the leader wins",
+              "Each remaining ball gets one last turn in rotation; then the side with the most wicket and stake points wins (ties → play continues in full rounds)",
+              "The game is replayed",
+              "The deadness board is cleared",
+            ],
+            correctIndex: 1,
+            explanation: "Rules 13.10 and 13.11(b).",
+            sourceLessonSlug: "american-six-wicket",
+          },
+          {
+            prompt: "How does a rover ball dead on two or more balls clear its deadness (Rule 10.3)?",
+            options: [
+              "It cannot",
+              "By running any wicket in either direction — though it remains 'last dead' on one ball",
+              "By staking out",
+              "By waiting one full rotation",
+            ],
+            correctIndex: 1,
+            explanation: "A rover has no 'next wicket' left in order, so the rules give it a different clearing path.",
+            sourceLessonSlug: "deadness",
+          },
+          {
+            prompt: "Is choosing which of your two balls to play part of the standard American game?",
+            options: [
+              "Yes — it is the core of American strategy",
+              "No — the rotation is fixed. A ball choice exists only as an EXPERIMENTAL rule (17.1) in one narrow case",
+              "Only in doubles",
+              "Only in handicap play",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rule 17.1 is explicitly experimental, and applies only where a ball scores 1-back and 4-back in the same turn. Do not describe ball choice as standard in this code.",
+            sourceLessonSlug: "american-six-wicket",
+          },
+          {
+            prompt: "Strategically, what does deadness add on top of Association Croquet's break-building problem?",
+            options: [
+              "Nothing — it is cosmetic",
+              "A resource that runs out: every roquet spends something, and the board shows your opponent exactly how poor you are",
+              "A time limit",
+              "Extra points",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A player who burns all their deadness on a break that collapses leaves a ball on the court that can hit nothing.",
+            sourceLessonSlug: "deadness",
+          },
+          {
+            prompt: "What decides who plays first in American Six-Wicket?",
+            options: ["A coin toss (Rule 1.1(c))", "The lower handicap", "The home club", "The referee"],
+            correctIndex: 0,
+            explanation: "The winner takes blue and black (first and third) or red and yellow (second and fourth).",
+            sourceLessonSlug: "american-six-wicket",
+          },
+          {
+            prompt: "May an American Six-Wicket game be shortened?",
+            options: [
+              "No",
+              "Yes — Rule 16.1 provides a 14-point game (6 wicket points plus the stake, per ball)",
+              "Yes — down to 7 points, as in Golf Croquet",
+              "Only in juniors' play",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both the WCF and USCA codes offer shortened games; the 7-point game is a GOLF CROQUET length and belongs to a different code.",
+            sourceLessonSlug: "american-six-wicket",
+          },
+        ],
+      },
+    },
   ],
 };
