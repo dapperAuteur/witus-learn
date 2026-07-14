@@ -1932,5 +1932,433 @@ Almost everybody watches the ball. The ball is the least informative object on t
         ],
       },
     },
+
+    // ────────────────── SECTION 5 · HISTORY ──────────────────
+    {
+      slug: "football-before-1863",
+      title: "19 · Before England: the ball games that came first",
+      section: "Section 5 · Where the game came from",
+      body: `**Football was not invented in England.** England **codified** it. Those are different claims, and collapsing them is how a lot of football history gets told badly.
+
+Human beings have been kicking objects at, over, and past each other for a very long time, on every inhabited continent. What England did in 1863 was write **one set of rules** that other people agreed to use — an act of standardisation, not creation. That act was genuinely world-changing. But it was not the beginning of football.
+
+**Cuju.** The oldest ball game FIFA itself recognises is **cuju** (蹴鞠 — literally "kick ball"), played in China. FIFA's position is careful and worth quoting in its own terms: cuju is **"the earliest form of football for which there is scientific evidence"** (FIFA, n.d.). During the **Han dynasty (206 BCE - 220 CE)**, cuju spread from the army to the royal court and the upper classes, and the games were **standardised, with established rules** (FIFA, n.d.).
+
+Notice what that means. **Standardised, ruled ball-kicking is roughly two thousand years older than England.** The English contribution is real — but it is a contribution to a very long story, not the first page of it.
+
+**Other games, honestly stated.** Many cultures played ball games that resemble football to a greater or lesser degree — among them **kemari** in Japan, **episkyros** and **harpastum** in the Greek and Roman worlds, and a family of rough, large-scale **"mob football"** games played across medieval Europe, in which whole villages contested a ball across open country with few rules and frequent injuries.
+
+**Here is the honest caveat, and this course is going to make it rather than hand you a neat lineage:** these games are **not ancestors of modern football in any direct, traceable sense.** There is no documented line of descent from cuju to the Premier League. What the record actually shows is that **ball games are close to a human universal**, that they arose independently in many places, and that the specific game we play today was assembled in nineteenth-century Britain out of local British traditions.
+
+Anyone who draws you a tidy family tree from Han China to Wembley is selling you something. The true claim is both more modest and more interesting: **England did not invent the idea. England invented the rulebook — and the rulebook is what let the game go global.**
+
+**Why England, and why then?** Two specific pressures, and they are unglamorous:
+
+1. **The public schools.** Different English schools played different football games with wildly different rules — some allowed carrying the ball, some allowed **"hacking"** (kicking an opponent in the shins), some did not. When boys from different schools met at university, they could not play each other, because nobody could agree on what the game was. That is a coordination problem, and coordination problems get solved by committees.
+2. **Industrialisation.** Factories, railways, and the six-day working week produced something new: large numbers of urban workers with **Saturday afternoons free**, in **cities**, connected by **trains**. That is the exact recipe for organised, regular, spectator sport — teams that can travel to each other and crowds that can turn up to watch. Football did not spread because it was beautiful. It spread because the railway timetable made it possible.
+
+:::reveal Did England invent football? ||| **No — England CODIFIED it.** Ball games are close to a human universal and arose independently in many cultures; FIFA itself recognises the Chinese game **cuju** (standardised, with rules, during the Han dynasty, 206 BCE-220 CE) as the earliest form of football for which there is scientific evidence. What England did in 1863 was write **one rulebook that others agreed to use** — an act of standardisation, and the thing that let the game go global.
+
+## Sources
+- FIFA. (n.d.). *The origins of football*. Retrieved July 2026, from https://inside.fifa.com/
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
+      recallContent: [
+        {
+          prompt: "What is cuju, and what exactly does FIFA claim about it?",
+          answer:
+            "A Chinese kicking game. FIFA's careful claim is that cuju is 'the earliest form of football for which there is scientific evidence' — standardised with established rules during the Han dynasty (206 BCE-220 CE).",
+        },
+        {
+          prompt: "Is there a traceable line of descent from cuju to modern football?",
+          answer:
+            "No. Ball games arose independently in many cultures. Modern football was assembled in nineteenth-century Britain out of local British traditions. Anyone drawing a tidy family tree from Han China to Wembley is selling you something.",
+        },
+      ],
+    },
+    {
+      slug: "football-1863-and-the-fa",
+      title: "20 · 1863: the tavern, the split with rugby, and the birth of the rulebook",
+      section: "Section 5 · Where the game came from",
+      body: `**Monday 26 October 1863. The Freemasons' Tavern, Great Queen Street, London.**
+
+**Ebenezer Morley**, a solicitor and sportsman, met representatives of a dozen London and suburban clubs, having proposed that football should have **one standardised set of rules**. Out of that meeting the **Football Association (The FA)** was formed, and the original Laws of the Game began to take shape (FIFA, n.d.). The first match played under the new FA rules took place on **19 December 1863** (FIFA, n.d.).
+
+That is the founding moment of the sport you are learning. It is not a stadium, a trophy, or a genius. It is **a meeting in a pub about rules**, and it worked because a rulebook is the only thing that lets strangers play each other.
+
+**The split that created two sports.**
+
+The FA's founders did not agree with each other. The arguments were about two things:
+
+1. **Handling.** Should a player be allowed to **run with the ball in their hands**?
+2. **Hacking.** Should a player be allowed to **kick an opponent in the shins**?
+
+The clubs that wanted to keep handling and hacking walked away. **Blackheath** withdrew rather than give them up. The clubs that stayed produced a game of **kicking and dribbling**, with no carrying the ball. The clubs that left eventually organised themselves into **rugby football**.
+
+So **football and rugby are siblings**, not distant relations. They were the same argument until 1863, and they separated over the question of whether you may pick the ball up. The word "soccer" — from *assoc.* — exists **precisely to mark this split** (Lesson 1). Without rugby, nobody would ever have needed the word.
+
+**Then came money, and money changed everything.**
+
+Football began as a game for gentlemen amateurs who could afford not to be paid. But the game spread fast into the **industrial north and midlands of England**, into working-class towns where a talented player was a factory hand who could not afford to take a Saturday off unpaid. Northern clubs started **paying players quietly** — which was, under the rules of the time, cheating.
+
+The FA had a choice: enforce amateurism and split the sport, or admit reality. On **20 July 1885, The FA legalised professionalism.** It is one of the most consequential decisions in sports history: it accepted that football would be a **working-class, paid, competitive** sport rather than a gentlemen's pastime — and it is the reason the game grew the way it did.
+
+Three years later, on **17 April 1888**, twelve clubs meeting in Manchester created **the Football League** — the world's first professional league competition. Once you have professionals, you need a **regular fixture list** so clubs have reliable income, and once you have a fixture list you have a **league table**, and once you have a league table you have everything that follows: promotion, relegation, rivalries, and a hundred and forty years of arguing.
+
+**Then it went international.** On **21 May 1904**, seven European associations founded **FIFA** in Paris — notably **without** the British associations, who did not initially join. The IFAB, remember, already existed (since **1886**) and already owned the Laws. **FIFA joined The IFAB in 1913** (The IFAB, n.d.), which is exactly the arrangement that still stands today: the world body has four votes at a table it did not build.
+
+**Timeline.**
+
+| Year | Event |
+| --- | --- |
+| **1863** | The FA founded at the Freemasons' Tavern; the first Laws of the Game drafted |
+| **1885** | The FA legalises professionalism |
+| **1886** | **The IFAB** founded by the four British associations |
+| **1888** | The Football League founded in Manchester — the world's first professional league |
+| **1904** | **FIFA** founded in Paris |
+| **1913** | FIFA joins The IFAB |
+| **1930** | The first **FIFA World Cup**, in Uruguay |
+
+:::reveal Football and rugby split in 1863 over two specific questions. What were they? ||| **(1) Handling** — should a player be allowed to run with the ball in their hands? And **(2) hacking** — should a player be allowed to kick an opponent in the shins? The clubs that wanted to keep both (including **Blackheath**) walked out and eventually organised rugby football. The clubs that stayed produced a kicking-and-dribbling game — and the word "soccer," from *assoc.*, exists precisely to mark that split.
+
+## Sources
+- FIFA. (n.d.). *London's football history: Laws of the Game*. Retrieved July 2026, from https://inside.fifa.com/news/london-s-football-history-laws-of-the-game-2902981
+- The Football Association. (n.d.). *The history of The FA*. Retrieved July 2026, from https://www.thefa.com/about-football-association/who-we-are/history
+- The IFAB. (n.d.). *The IFAB background*. Retrieved July 2026, from https://www.theifab.com/background/`,
+      recallContent: [
+        {
+          prompt: "Where and when was the Football Association founded, and by whom was it proposed?",
+          answer:
+            "26 October 1863, at the Freemasons' Tavern in London. Ebenezer Morley, a solicitor and sportsman, proposed that football should have one standardised set of rules and met representatives of a dozen clubs.",
+        },
+        {
+          prompt: "When did The FA legalise professionalism, and why does it matter?",
+          answer:
+            "20 July 1885. Northern working-class clubs were already paying players quietly. Legalising it accepted that football would be a paid, working-class, competitive sport rather than a gentlemen's pastime — and that is why it grew the way it did.",
+        },
+        {
+          prompt: "Which came first — FIFA or The IFAB?",
+          answer:
+            "The IFAB (1886). FIFA was founded in 1904 and joined The IFAB in 1913. The world body has four votes at a table it did not build.",
+        },
+      ],
+    },
+    {
+      slug: "football-global-spread",
+      title: "21 · How the game went global — and why the best of it is not European",
+      section: "Section 5 · Where the game came from",
+      body: `Football travelled the world along the routes of **British trade and empire**: sailors, railway engineers, mining companies, bankers, teachers and missionaries carried a ball and a rulebook to every port they worked in. That is the standard story and it is true as far as it goes.
+
+**But it is only half the story, and the second half is the interesting one.**
+
+Everywhere the game landed, **local people took it and made it their own** — and in most places they got very good at it very fast, often specifically by beating the people who brought it. Football did not stay a British export. It became a genuinely global vernacular, and the places it landed in reshaped it:
+
+- **South America** — Argentina, Brazil, Uruguay — did not merely adopt football; it developed a distinct playing culture and then dominated the world stage. **Uruguay won the first World Cup, in 1930**, as hosts, beating Argentina 4-2 in the final (FIFA, n.d.). The idea that the game's centre of gravity has always been European is simply false, and it was false almost immediately.
+- **Africa** has produced generations of world-class players and a fiercely competitive continental game, while remaining, as Section 7 will show, on the wrong end of the sport's economics.
+- **Asia** hosts some of the largest football audiences on Earth and a rapidly growing professional infrastructure.
+
+**Where the money went, and where the players came from.** Here is the modern reality stated plainly: **the richest LEAGUES are concentrated in western Europe; the PLAYERS are not.** European clubs recruit talent from South America, Africa, Asia and North America, and the value created by those players accrues overwhelmingly to European clubs. That is not an accident of geography or a story about talent. It is a **structure**, and it has a history — the same trade routes that carried the ball out now carry the players back. Section 7 takes this apart properly.
+
+**Two things a good football education must not do:**
+
+1. **Treat European football as the "real" game and everything else as a feeder.** The best players in the history of the sport have come from all over the world, and the game's most influential playing cultures are not all European.
+2. **Treat the women's game as an appendix.**
+
+**The women's game is not an appendix. It is a central part of this story — and it has its own, much uglier, history.** That history is the subject of the next lesson, and it is the most important thing in this section.
+
+**The World Cup, briefly.** The first **FIFA World Cup** was played in **Uruguay in 1930**, with the hosts winning. The first **FIFA Women's World Cup** was played in **China in 1991**, with the **United States** beating Norway 2-1 in the final in Guangzhou. Look at those two dates: **1930** and **1991**. A sixty-one-year gap. That gap is not because women did not want to play. As the next lesson shows, it is because they were **stopped**.
+
+**And, for accuracy:** the **2026 FIFA World Cup** is being played across **Canada, Mexico and the United States** with an expanded format — **48 teams** and **104 matches**, replacing the old 32-team, eight-group structure with **12 groups of four** (FIFA, n.d.). It is happening as this course is published, so this course is not going to tell you who won it.
+
+:::reveal Which country won the first FIFA World Cup, in which year, and why does that fact matter to how we tell football's history? ||| **Uruguay**, in **1930**, as hosts — beating Argentina 4-2 in the final. It matters because it demolishes the assumption that the game's centre of gravity has always been European. South America did not merely adopt football; it developed its own playing culture and dominated the world stage **immediately**.
+
+## Sources
+- FIFA. (n.d.). *1930 FIFA World Cup Uruguay*. Retrieved July 2026, from https://www.fifa.com/
+- FIFA. (n.d.). *FIFA Women's World Cup China 1991*. Retrieved July 2026, from https://www.fifa.com/en/tournaments/womens/womensworldcup/fifa-womens-world-cup-china-1991
+- FIFA. (n.d.). *How the FIFA World Cup 26 will work with 48 teams*. Retrieved July 2026, from https://www.fifa.com/en/articles/article-fifa-world-cup-2026-mexico-canada-usa-new-format-tournament-football-soccer`,
+      recallContent: [
+        {
+          prompt: "Who won the first men's World Cup and the first Women's World Cup, and when?",
+          answer:
+            "Men's: Uruguay, 1930, as hosts (beating Argentina 4-2). Women's: the United States, 1991, in China (beating Norway 2-1). The 61-year gap is not because women didn't want to play — they were stopped.",
+        },
+        {
+          prompt: "State the modern structural reality of football's economics in one sentence.",
+          answer:
+            "The richest LEAGUES are concentrated in western Europe; the PLAYERS are not — European clubs recruit worldwide and capture the value those players create.",
+        },
+      ],
+    },
+    {
+      slug: "football-the-fa-ban-on-womens-football",
+      title: "22 · The 50-year ban: how the FA crushed women's football",
+      section: "Section 5 · Where the game came from",
+      body: `This is the most important lesson in this section, and it is one that most football courses skip.
+
+**In 1921, the Football Association banned women from playing on the grounds of its member clubs. The ban lasted fifty years.**
+
+Not because women's football was failing. **Because it was succeeding.**
+
+---
+
+**The context: the First World War.**
+
+With men at the front, women went into the factories — and factory teams played football. The most famous was the **Dick, Kerr Ladies**, from the Dick, Kerr & Co. munitions works in **Preston, Lancashire**. They played from **1917 to 1965** and were, by any measure, one of the most successful football teams of their era. They raised very large sums for charity — for wounded soldiers, for the unemployed — and they drew crowds that clubs today would be delighted with.
+
+**Boxing Day, 26 December 1920. Goodison Park, Liverpool. Dick, Kerr Ladies v St Helens Ladies.**
+
+**Now, the honest treatment of the crowd figure — because this is exactly where football history goes soft.**
+
+The number you will see everywhere is **53,000**, and it is widely reported that **thousands more were locked outside** the ground. But reports **vary**: some accounts give the attendance as **at least 46,000**. This course is going to say what is actually true: **the exact figure is not settled, the range in the sources runs from roughly 46,000 to 53,000, and thousands were turned away.**
+
+And here is why the dispute does not matter to the argument: **at any figure in that range, a women's football match in 1920 drew a crowd that the vast majority of professional MEN'S clubs could not draw today.** That is the fact the FA was looking at.
+
+---
+
+**5 December 1921. The FA Council passes its resolution.**
+
+Less than a year after Goodison, the FA Council **unanimously** passed a resolution on women's football. Its wording has survived, and it is worth reading exactly as written:
+
+> *"Complaints having been made as to football being played by women, the Council feel impelled to express their strong opinion that the game of football is **quite unsuitable for females and ought not to be encouraged.**"* (Dick, Kerr Ladies, n.d.)
+
+The resolution also raised concerns about how the charitable money was being handled, and — the operative part — **requested that clubs belonging to the Association refuse the use of their grounds for women's matches** (Dick, Kerr Ladies, n.d.; National Football Museum, n.d.).
+
+**Understand precisely what that did.** The FA could not make it illegal for women to kick a ball. What it *could* do was **lock them out of every proper stadium in the country** — because virtually every ground worth playing in belonged to an FA member club. No stadiums meant **no crowds, no gate money, no press coverage, no revenue, no pathway, no professional structure.** It did not ban women's football. **It strangled it.**
+
+**And it worked.** For fifty years.
+
+**The FA did not rescind the ban until 1971.**
+
+---
+
+**Sit with the arithmetic for a moment.** 1921 to 1971. Fifty years — **two full generations** of players who never got a stadium, a crowd, a wage, or a career. And the reason that is given in the minute is not tactical, financial, or administrative. It is: *"quite unsuitable for females."*
+
+The gap you noticed in the last lesson — **1930** for the men's World Cup, **1991** for the women's — is not a mystery. **It is a consequence.** The women's game did not start late. It was **stopped**, and then it had to start again from nothing.
+
+**Why this belongs in a football course and not just a history class.**
+
+Because it is the clearest possible demonstration of a thing that is true throughout this sport and, frankly, throughout most institutions: **the size of an audience does not determine who gets to play. The people who control the grounds do.** Access is a governance decision. It was in 1921, and — as Section 7's lesson on pay-to-play will show — **it still is.**
+
+The women's game today is growing fast: the **2023 FIFA Women's World Cup** in Australia and New Zealand drew a total attendance of **1,978,274** across 64 matches, the largest in the tournament's history (FIFA, 2023). It took **a hundred and two years** from that Boxing Day crowd at Goodison to get there.
+
+:::reveal What did the FA's 1921 resolution actually DO — and why was it so effective? ||| It **requested that FA member clubs refuse the use of their grounds for women's matches.** The FA could not stop women kicking a ball, but virtually every proper stadium in England belonged to a member club — so the resolution **locked women out of every ground worth playing in**. No stadiums meant no crowds, no gate money, no press, no revenue, no professional pathway. It did not ban the game; it **strangled** it. And it worked for **fifty years**, until 1971.
+
+## Sources
+- Dick, Kerr Ladies. (n.d.). *The FA ban*. Retrieved July 2026, from https://www.dickkerrladies.com/the-fa-ban
+- FIFA. (2023, August 20). *FIFA Women's World Cup 2023 breaks new records*. https://inside.fifa.com/media-releases/fifa-womens-world-cup-2023-tm-breaks-new-records
+- FourFourTwo. (n.d.). *Why women's football was banned for 50 years — and is only just recovering*. Retrieved July 2026, from https://www.fourfourtwo.com/features/womens-football-banned-england-50-years-fa-world-cup-history
+- National Football Museum. (n.d.). *The FA minute book, 1921*. Retrieved July 2026, from https://nationalfootballmuseum.com/items/the-fa-minute-book-1921/`,
+      recallContent: [
+        {
+          prompt: "What did the FA Council resolve on 5 December 1921, and in what words?",
+          answer:
+            "That 'the game of football is quite unsuitable for females and ought not to be encouraged' — and it requested that member clubs refuse the use of their grounds for women's matches. It was passed unanimously.",
+        },
+        {
+          prompt: "How big was the Boxing Day 1920 crowd at Goodison Park, and how should we state it?",
+          answer:
+            "Honestly: the figure is DISPUTED. The most-cited number is 53,000, but some accounts give at least 46,000, and thousands more were locked out. At any figure in that range it beat what most professional men's clubs draw today.",
+        },
+        {
+          prompt: "How long did the FA ban last?",
+          answer: "Fifty years — from 5 December 1921 until the FA rescinded it in 1971. Two full generations of players.",
+        },
+      ],
+    },
+    {
+      slug: "football-quiz-section-5",
+      title: "Section 5 quiz · Where the game came from",
+      section: "Section 5 · Where the game came from",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Did England invent football?",
+            options: [
+              "Yes — the game did not exist anywhere before 1863",
+              "No — England CODIFIED it. Ball games arose independently in many cultures; England wrote the rulebook others agreed to use",
+              "No — football was invented in China and imported directly to England",
+              "Yes, and FIFA officially recognises 1863 as the invention of ball sport",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The distinction matters. Codifying is not creating. What England did in 1863 was standardise — and standardisation is exactly what let the game go global.",
+            sourceLessonSlug: "football-before-1863",
+          },
+          {
+            prompt: "What is FIFA's actual, carefully-worded claim about cuju?",
+            options: [
+              "That cuju is the direct ancestor of modern football",
+              "That cuju is 'the earliest form of football for which there is scientific evidence'",
+              "That cuju was invented in England and exported to China",
+              "That cuju had no rules",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Note the precision: 'the earliest form for which there is SCIENTIFIC EVIDENCE'. During the Han dynasty (206 BCE-220 CE) cuju was standardised with established rules. That is not the same as claiming a traceable line of descent — and there isn't one.",
+            sourceLessonSlug: "football-before-1863",
+          },
+          {
+            prompt: "Which two practical pressures pushed England to codify football when it did?",
+            options: [
+              "Royal decree and a papal ban",
+              "Public schools that could not play each other because their rules differed, and industrialisation (free Saturday afternoons, cities, railways)",
+              "Television rights and sponsorship",
+              "A shortage of rugby balls",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A coordination problem plus the railway timetable. Football did not spread because it was beautiful — it spread because trains and free Saturdays made regular fixtures between distant towns possible.",
+            sourceLessonSlug: "football-before-1863",
+          },
+          {
+            prompt: "Where and when was the Football Association founded?",
+            options: [
+              "Wembley Stadium, 1888",
+              "The Freemasons' Tavern, London, 26 October 1863",
+              "Manchester, 17 April 1888",
+              "Paris, 21 May 1904",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Ebenezer Morley, a solicitor, met representatives of a dozen clubs there, having proposed one standardised set of rules. The first match under FA rules followed on 19 December 1863.",
+            sourceLessonSlug: "football-1863-and-the-fa",
+          },
+          {
+            prompt: "Football and rugby split in 1863 over which two questions?",
+            options: [
+              "The size of the ball and the number of players",
+              "Handling (may you run with the ball in your hands?) and hacking (may you kick an opponent in the shins?)",
+              "Whether to allow substitutes, and the length of the match",
+              "Professionalism and gate money",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Blackheath and others withdrew rather than give up handling and hacking, and eventually organised rugby football. Football and rugby are siblings — and the word 'soccer' exists precisely to mark that split.",
+            sourceLessonSlug: "football-1863-and-the-fa",
+          },
+          {
+            prompt: "Why did The FA legalise professionalism in 1885?",
+            options: [
+              "Because FIFA required it",
+              "Because working-class northern clubs were already paying players quietly, and the FA had to choose between enforcing amateurism (and splitting the sport) or admitting reality",
+              "To make football more exclusive",
+              "To fund the construction of Wembley",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A talented player in an industrial town was a factory hand who could not afford an unpaid Saturday. Legalising professionalism accepted football as a paid, working-class, competitive sport — and is why the game grew as it did.",
+            sourceLessonSlug: "football-1863-and-the-fa",
+          },
+          {
+            prompt: "Put these in the correct chronological order: FIFA founded · The IFAB founded · The Football League founded · The FA founded.",
+            options: [
+              "FA (1863) → IFAB (1886) → Football League (1888) → FIFA (1904)",
+              "FA (1863) → FIFA (1904) → IFAB (1886) → Football League (1888)",
+              "FIFA (1904) → FA (1863) → IFAB (1886) → Football League (1888)",
+              "IFAB (1886) → FA (1863) → FIFA (1904) → Football League (1888)",
+            ],
+            correctIndex: 0,
+            explanation:
+              "FA 1863 → professionalism legalised 1885 → IFAB 1886 → Football League 1888 → FIFA 1904 → FIFA joins The IFAB 1913. The IFAB predates FIFA by 18 years, which is exactly why FIFA sits at a table it did not build.",
+            sourceLessonSlug: "football-1863-and-the-fa",
+          },
+          {
+            prompt: "Which country won the first FIFA World Cup, and when?",
+            options: ["Brazil, 1950", "Uruguay, 1930, as hosts", "England, 1966", "Italy, 1934"],
+            correctIndex: 1,
+            explanation:
+              "Uruguay beat Argentina 4-2 in the 1930 final in Montevideo. It demolishes the assumption that football's centre of gravity has always been European — South America was dominant almost immediately.",
+            sourceLessonSlug: "football-global-spread",
+          },
+          {
+            prompt: "When and where was the first FIFA Women's World Cup, and who won it?",
+            options: [
+              "1991, China — the United States beat Norway 2-1",
+              "1999, USA — the United States beat China",
+              "1971, Mexico — Denmark won",
+              "1930, Uruguay — held alongside the men's tournament",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1991, in Guangdong, China. The 61-year gap between the men's first World Cup (1930) and the women's (1991) is not because women did not want to play — it is a direct consequence of bans like the FA's.",
+            sourceLessonSlug: "football-global-spread",
+          },
+          {
+            prompt: "State the structural reality of modern football's economics.",
+            options: [
+              "The richest leagues and the best players are both concentrated in Europe",
+              "The richest LEAGUES are concentrated in western Europe; the PLAYERS are not — European clubs recruit globally and capture the value those players create",
+              "Football's wealth is distributed evenly across the six confederations",
+              "South America is the wealthiest football market",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This is a structure with a history — the same trade routes that carried the ball out now carry the players back. Section 7 takes it apart.",
+            sourceLessonSlug: "football-global-spread",
+          },
+          {
+            prompt: "In 1921, why did the FA move against women's football?",
+            options: [
+              "Because nobody was watching it",
+              "Because it was SUCCEEDING — drawing enormous crowds and large charitable revenues",
+              "Because the players demanded professional contracts",
+              "Because The IFAB instructed it to",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Dick, Kerr Ladies were drawing crowds that most professional men's clubs would envy today. The FA moved because the women's game was thriving, not because it was failing.",
+            sourceLessonSlug: "football-the-fa-ban-on-womens-football",
+          },
+          {
+            prompt: "What did the FA's 5 December 1921 resolution actually do?",
+            options: [
+              "Made it illegal for women to play football anywhere in England",
+              "Requested that FA member clubs refuse the use of their grounds for women's matches",
+              "Imposed a fine on any woman who played",
+              "Required women's teams to play with a smaller ball",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The FA could not stop women kicking a ball. It could lock them out of every ground worth playing in — and since virtually every proper stadium belonged to a member club, that meant no crowds, no gate money, no press, no pathway. It strangled the game rather than banning it.",
+            sourceLessonSlug: "football-the-fa-ban-on-womens-football",
+          },
+          {
+            prompt: "What crowd figure is given for the Dick, Kerr Ladies match at Goodison Park on Boxing Day 1920?",
+            options: [
+              "Exactly 53,000 — the figure is settled and undisputed",
+              "The figure is DISPUTED: the most-cited number is 53,000, but some accounts give at least 46,000, with thousands more locked out",
+              "About 5,000",
+              "No attendance was ever recorded",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Honesty about the source range is the point. And note that the dispute does not weaken the argument: at ANY figure in that range, the crowd beat what most professional men's clubs draw today — which is exactly what the FA was looking at.",
+            sourceLessonSlug: "football-the-fa-ban-on-womens-football",
+          },
+          {
+            prompt: "How long did the FA's ban on women playing at member grounds last?",
+            options: ["Five years", "Twenty years", "Fifty years — 1921 until 1971", "It has never been lifted"],
+            correctIndex: 2,
+            explanation:
+              "Two full generations of players who never got a stadium, a crowd, a wage, or a career. The stated reason in the minute was that football is 'quite unsuitable for females'.",
+            sourceLessonSlug: "football-the-fa-ban-on-womens-football",
+          },
+          {
+            prompt: "What was the total attendance at the 2023 FIFA Women's World Cup?",
+            options: [
+              "1,978,274 across 64 matches — the largest in the tournament's history",
+              "About 350,000",
+              "Roughly 5 million",
+              "FIFA has never published the figure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1,978,274, in Australia and New Zealand — a record. It took 102 years from that Boxing Day crowd at Goodison to reach it.",
+            sourceLessonSlug: "football-the-fa-ban-on-womens-football",
+          },
+        ],
+      },
+    },
   ],
 };
