@@ -1004,7 +1004,7 @@ So wiring an opponent's ball on purpose can hand them a free lift. Wiring is a s
             ],
             correctIndex: 0,
             explanation:
-              "Law 2.3. In singles you play BOTH of your side's balls, and you choose which one to play at the start of each turn — a big part of the strategy.",
+              "Law 2.3 allocates the colours. In singles you play BOTH of your side's balls, and — once all four are in the game — you may play either one at the start of each turn (Law 2.6.1, 'Entitlement to play either ball'). That choice is a big part of the strategy.",
             sourceLessonSlug: "ac-objective-and-26-points",
           },
           {
@@ -1516,11 +1516,11 @@ One side plays **blue and black**, the other **red and yellow** (Rule 1.1(a)). A
 
 Rule 1.3(a): "Play shall begin with the **blue ball followed by red, black, and yellow** (the order of colors descending on the center stake) and that shall be the proper order of play until the game ends or a ball stakes out."
 
-Compare that with Association Croquet, where **you choose which of your two balls to play at the start of each turn** (AC Law 2.3; World Croquet Federation, 2021). In the American game, you do not choose. The rotation tells you.
+Compare that with Association Croquet, where **you choose which of your two balls to play at the start of each turn** — AC Law 2.6.1, "Entitlement to play either ball": "Once all of the balls have been played into the game, each turn may be played with either ball of the side until one of them has been pegged out" (World Croquet Federation, 2021). In the American game, you do not choose. The rotation tells you.
 
 That single change reshapes the strategy. In AC, a huge part of the thinking is *"which of my balls has the better opportunity right now?"* In the American game that question does not exist — you play the ball whose turn it is, and you must plan **two turns ahead for each of your balls**, because you know exactly when each one comes up.
 
-(The American rules do contain an **experimental** provision, Rule 17.1, allowing a choice of ball in one narrow case — where a ball scores 1-back and 4-back in the same turn. It is explicitly experimental. Do not describe ball choice as part of the standard American game.)
+(The American rules do contain an **experimental** provision — Rule 17.1, "Option to Play Either Ball" — allowing a choice of ball in one narrow case: where a ball scores the 1-back and 4-back wickets **in the same turn**. It sits in Part 17, "Experimental Rules," and the rulebook says only one of the alternative experimental rules should be in effect in any given tournament. Do not describe ball choice as part of the standard American game.)
 
 ## Difference 2: deadness — see the next lesson
 
@@ -1531,7 +1531,7 @@ That one is big enough to deserve its own lesson.
 The American game is the most explicitly **timed** of the three codes, which is one reason it works on television and at clubs with a lot of members and few lawns.
 
 - **Rule 13.7:** a time limit may be set by the tournament director before the first game.
-- **Rule 13.8(a):** "the striker shall have a maximum of **45 seconds** to strike the striker ball following the completion of the previous shot." The timekeeper announces when 15 seconds remain.
+- **Rule 13.8 ("Shot and Game Clocks"):** "**In a time limit game** the striker shall have a maximum of **45 seconds** to strike the striker ball following the completion of the previous shot." The timekeeper announces when 15 seconds remain. (Note the opening qualifier — the shot clock is a feature of *timed* games, not of every American game. Quoting this rule without those four words is exactly the kind of dropped hedge Section 6 takes apart.)
 - **Rule 13.9:** "Each side is allotted **three one-minute player time-outs**."
 - **Rule 13.10 / 13.11:** the timekeeper announces 15 minutes and 1 minute remaining, then calls **"match time"** — after which each remaining ball gets one **last turn**, in rotation. Then "the side scoring the most wicket and stake points is declared the winner"; if tied, play continues in full rounds.
 - The rulebook notes games are "normally an hour ten minutes to two hours."
@@ -1597,7 +1597,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
         {
           prompt: "How long does a striker have to play a shot in the American game?",
           answer:
-            "A maximum of 45 seconds after the previous shot is completed (Rule 13.8(a)). Each side also gets three one-minute time-outs (Rule 13.9).",
+            "In a TIME LIMIT game, a maximum of 45 seconds after the previous shot is completed (Rule 13.8). Each side also gets three one-minute time-outs (Rule 13.9).",
         },
       ],
     },
@@ -1695,11 +1695,11 @@ The board tells your opponent exactly how poor you are. Play accordingly.
             sourceLessonSlug: "deadness",
           },
           {
-            prompt: "How long does a striker have to play a shot in the American game?",
+            prompt: "In a TIME LIMIT game of American Six-Wicket, how long does a striker have to play a shot?",
             options: ["No limit", "45 seconds after the previous shot is completed", "10 seconds", "Two minutes"],
             correctIndex: 1,
             explanation:
-              "Rule 13.8(a), with the timekeeper announcing when 15 seconds remain. A 45-second shot clock is not a slow game.",
+              "Rule 13.8 ('Shot and Game Clocks'), with the timekeeper announcing when 15 seconds remain. Note the rule's own qualifier — the shot clock applies 'in a time limit game', not to every American game. A 45-second shot clock is not a slow game.",
             sourceLessonSlug: "american-six-wicket",
           },
           {
