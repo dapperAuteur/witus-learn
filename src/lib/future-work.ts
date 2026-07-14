@@ -4,12 +4,15 @@
 // deploy. `pnpm gen:future-work` reads them once at dev time and writes the plain-string modules
 // under `src/lib/future-work-content/` that this file imports. Nothing here touches the filesystem, so
 // /admin/future renders identically in production. To add a proposal: drop the markdown in
-// `plans/future-courses/`, extend the generator if needed, re-run it, and add an entry below.
+// `plans/future-courses/` and re-run the generator. That is the whole procedure — top-level `.md`
+// files are AUTO-DISCOVERED. (They used to be two hardcoded filenames, which meant a note BAM filed
+// was silently invisible in the app until someone edited the script. Never again.) Adding it to
+// PROPOSAL_META below is optional and only curates which group/status it shows under.
 //
 // BAM reviews these at /admin/future and leaves notes per item; the notes go to the
 // `future_work_notes` table and are readable from the CLI with `pnpm future:list`.
 
-import { CIVICS_MORE_PROPOSAL, TRAVEL_ABROAD_PROPOSAL } from "@/lib/future-work-content/proposals";
+import { PROPOSAL_DOCS } from "@/lib/future-work-content/proposals";
 import { SHE_DID_THE_WORK_PROPOSAL, SHE_DID_THE_WORK_SUBJECTS } from "@/lib/future-work-content/she-did-the-work";
 
 export type FutureWorkKind = "course" | "feature";
@@ -93,30 +96,45 @@ const SHE_DID_THE_WORK: FutureWorkItem[] = [
   })),
 ];
 
+/**
+ * Per-doc metadata we can't infer from the markdown: which group it belongs to, and where it is.
+ * A doc with no entry here still shows up — it just lands in "Proposals" as `proposed`. That is the
+ * point: dropping a new note into `plans/future-courses/` must never require a code change to make
+ * it VISIBLE. Curating where it sits is optional; being seen is not.
+ */
+const PROPOSAL_META: Record<
+  string,
+  { group?: string; status?: FutureWorkStatus; kind?: FutureWorkKind; key?: string }
+> = {
+  // `key` overrides exist ONLY to preserve keys that predate auto-discovery. `item_key` is the join
+  // column for `future_work_notes` — renaming a key silently orphans every note filed against it.
+  // Never change an existing key; add an override instead.
+  "civics-more-proposal": { key: "civics-more", group: "Civics" },
+  "travel-abroad-proposal": { key: "travel-abroad", group: "Travel & Living Abroad", status: "building" },
+  "history-of-unions": { group: "Workers' Rights", status: "building" },
+  "workers-rights-track-proposal": { group: "Workers' Rights" },
+  // Not course proposals — a live sales asset and the market research behind it. They're `feature`
+  // so they don't clutter the course list, but they stay visible: BAM asked for one place for
+  // "this type of stuff", and pricing is exactly the kind of thing that goes stale unseen.
+  "home-school-pricing": { group: "Pricing", kind: "feature" },
+  "home-school-pricing-research": { group: "Pricing", kind: "feature" },
+};
+
 export const FUTURE_WORK: FutureWorkItem[] = [
   ...SHE_DID_THE_WORK,
-  {
-    key: "civics-more",
-    title: "More civics courses",
-    kind: "course",
-    status: "proposed",
-    group: "Civics",
-    summary:
-      "Six candidate courses filling gaps in the shipped civics catalog; two are already drafted, four await a pick (Know Your Rights and Voting & Elections 101 recommended next).",
-    body: CIVICS_MORE_PROPOSAL,
-    provenance: "plans/future-courses/civics-more-proposal.md",
-  },
-  {
-    key: "travel-abroad",
-    title: "Travel & Living Abroad — course track",
-    kind: "course",
-    status: "building",
-    group: "Travel & Living Abroad",
-    summary:
-      "A new category: 16 courses from passports and visas (building now) through taxes, healthcare, and retiring abroad — all cited to authoritative government sources.",
-    body: TRAVEL_ABROAD_PROPOSAL,
-    provenance: "plans/future-courses/travel-abroad-proposal.md",
-  },
+  ...PROPOSAL_DOCS.map((p): FutureWorkItem => {
+    const meta = PROPOSAL_META[p.key] ?? {};
+    return {
+      key: meta.key ?? p.key,
+      title: p.title,
+      kind: meta.kind ?? "course",
+      status: meta.status ?? "proposed",
+      group: meta.group ?? "Proposals",
+      summary: p.summary,
+      body: p.body,
+      provenance: p.provenance,
+    };
+  }),
 ];
 
 export function getFutureWorkItem(key: string): FutureWorkItem | undefined {
