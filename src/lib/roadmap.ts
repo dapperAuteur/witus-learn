@@ -419,6 +419,27 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
+- 🔧 **Croquet** (\`content/croquet-course\`, Sports) — 36 lessons across **8 sectioned modules**
+  (28 teaching + 8 section quizzes, each quiz a **15-question bank** so the 10-question attempt cap
+  actually rotates; every question carries \`sourceLessonSlug\`). The load-bearing constraint:
+  **croquet is not one game.** Golf Croquet and Association Croquet (WCF), American Six-Wicket
+  (USCA) and informal garden croquet have different courts, turn structures and scoring, so **every
+  rules lesson names the code it teaches in bold in its first line** and the one lesson that compares
+  them says so explicitly. Handicaps are taught **per code**, incl. the trap that American and
+  Association handicaps are **different scales** (the USCA says add two) — and the course **refuses
+  to quote a numeric range** for the American scale because the USCA publishes no floor.
+  **Every rule number was re-read in the governing body's current rulebook**, not recalled: 42 of 45
+  verified verbatim, three corrected (AC choice-of-ball is **Law 2.6.1**, not 2.3; the USCA shot
+  clock is **Rule 13.8** with its "in a time limit game" qualifier restored, not "13.8(a)"; USCA
+  **17.1 is "Option to Play Either Ball"**, an experimental rule). Where **no** rule number exists the
+  course says so instead of inventing one — "break" is not defined in the AC Laws, "jump" appears
+  **zero** times in the GC Rules, "carryover deadness" appears **zero** times in the USCA rules.
+  Sections 6–8 do the part croquet courses skip: **history you can actually check** (incl. a
+  "stories we cut" lesson that shows its own working — the All England Croquet Club was founded on
+  the **Strand**, not at Wimbledon; the croquet women were **not** the first female Olympians), the
+  club/handicap ladder, and the real openings for an amateur or entrepreneur. Unsourceable folklore
+  (a Boston croquet "ban") was **cut**, not softened. \`pnpm seed:courses\` picks it up; **no
+  migration**.
 - 🔧 **/explore is a landing page now** (\`feat/explore-landing\`) — the Commodity Map page was an
   \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
   now answers **what is this → what will my student learn → why trust it → what next**, for the
