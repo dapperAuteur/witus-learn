@@ -906,5 +906,601 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
         ],
       },
     },
+
+    // ────────────────── SECTION 3 · THE LAWS, AND WHO WRITES THEM ──────────────────
+    {
+      slug: "football-who-writes-the-laws",
+      title: "10 · Who writes the Laws — and why it is not FIFA",
+      section: "Section 3 · The Laws, and who writes them",
+      body: `**Start with the thing almost every football article, textbook and school lesson gets wrong.**
+
+> **FIFA does not write the Laws of the Game. The IFAB does.**
+
+If you learn one fact from this course, make it that one. It is the single most common error in football education, and once you can spot it you will start noticing it everywhere — in newspapers, in commentary, in other people's "complete guides to soccer."
+
+**Who The IFAB is.** The **International Football Association Board (The IFAB)** was founded in **1886** by the four British football associations — The FA (England), the Scottish FA, the FA of Wales and the Irish FA — as the body with sole responsibility for developing and preserving the Laws of the Game. **FIFA joined in 1913** (The IFAB, n.d.-a).
+
+**How the votes work — and this is the detail that makes the point.** The IFAB has five members (The IFAB, n.d.-b):
+
+| Member | Votes |
+| --- | --- |
+| The Football Association (England) | 1 |
+| Scottish Football Association | 1 |
+| Football Association of Wales | 1 |
+| Irish Football Association (Northern Ireland) | 1 |
+| **FIFA** (on behalf of every other national association in the world) | **4** |
+| **Total** | **8** |
+
+A change to the Laws requires a **three-quarters majority** at the Annual General Meeting (The IFAB, 2024, Statutes) — which, with eight votes, means **six**.
+
+**Now do the arithmetic, because it is the whole story.**
+
+FIFA has 4 votes. It needs 6. **So FIFA cannot change a single Law of the Game on its own.** It must persuade at least **two of the four British associations** to vote with it. And the four British associations together have 4 votes — so they cannot change a Law without FIFA either. **Neither side can move without the other.** That deadlock is not a bug; it is the design. It makes the Laws deliberately, stubbornly hard to change.
+
+This is genuinely strange, and worth sitting with: a global sport played by hundreds of millions of people has its rulebook controlled by a committee on which **four small British associations hold half the votes**. It is a colonial artefact of the game's origins that has simply never been dismantled — and it is the actual, current, legal structure of world football.
+
+**The two meetings.**
+- The **Annual Business Meeting (ABM)**, typically in **November**, decides which topics go to the AGM and approves experiments with proposed Law changes.
+- The **Annual General Meeting (AGM)**, normally in **March**, is where binding decisions on the Laws are made (The IFAB, n.d.-b).
+
+**The Laws are revised every year.** The current edition is the **Laws of the Game 2026/27**, effective **1 July 2026** (IFAB, 2026). Editions before that are **superseded**. This matters more than it sounds: the handball law in particular has been rewritten repeatedly, and a great deal of what people confidently "know" about handball is a version of the Law that **no longer exists**.
+
+**There are 17 Laws.** Not 16, not 18. Here they are, in order, exactly as the rulebook lists them (IFAB, 2026):
+
+| # | Law |
+| --- | --- |
+| 1 | The Field of Play |
+| 2 | The Ball |
+| 3 | The Players |
+| 4 | The Players' Equipment |
+| 5 | The Referee |
+| 6 | The Other Match Officials |
+| 7 | The Duration of the Match |
+| 8 | The Start and Restart of Play |
+| 9 | The Ball In and Out of Play |
+| 10 | Determining the Outcome of a Match |
+| 11 | Offside |
+| 12 | Fouls and Misconduct |
+| 13 | Free Kicks |
+| 14 | The Penalty Kick |
+| 15 | The Throw-in |
+| 16 | The Goal Kick |
+| 17 | The Corner Kick |
+
+**So what is FIFA, then?** FIFA is the **world governing body** of football: it runs the World Cup and other global competitions, it has **211 member associations**, it writes the **transfer** regulations (Section 7), and it holds four seats at The IFAB's table. It is enormously powerful. It **does not own the rulebook**.
+
+**One useful habit for the rest of your life:** when a source tells you "FIFA changed the offside rule," you now know it did not — The IFAB did, with FIFA's four votes and at least two British ones. That sentence is a reliable detector of a writer who did not check.
+
+:::reveal FIFA wants to change a Law of the Game and every FIFA representative votes for it. Does it pass? ||| **No.** FIFA holds **4 of The IFAB's 8 votes**, and a change requires a **three-quarters majority — 6 votes**. FIFA must convince at least **two of the four British associations** (England, Scotland, Wales, Northern Ireland) to vote with it. FIFA cannot change a Law alone.
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en
+- The IFAB. (n.d.-a). *The IFAB background*. Retrieved July 2026, from https://www.theifab.com/background/
+- The IFAB. (n.d.-b). *The IFAB organisation*. Retrieved July 2026, from https://www.theifab.com/organisation/
+- The IFAB. (2024). *Statutes* (Version 8). https://downloads.theifab.com/downloads/ifab-statutes`,
+      recallContent: [
+        {
+          prompt: "Who writes the Laws of the Game?",
+          answer:
+            "The IFAB (International Football Association Board) — founded 1886 by the four British associations; FIFA joined in 1913. FIFA does NOT write the Laws.",
+        },
+        {
+          prompt: "How are votes distributed on The IFAB, and what majority changes a Law?",
+          answer:
+            "8 votes: FIFA has 4, and each of the four British associations has 1. A change needs a three-quarters majority — 6 of 8. So neither FIFA nor the British associations can act alone.",
+        },
+        {
+          prompt: "How many Laws of the Game are there, and how often are they revised?",
+          answer: "17 Laws, revised annually. The current edition is the Laws of the Game 2026/27, effective 1 July 2026.",
+        },
+      ],
+    },
+    {
+      slug: "football-law-11-offside",
+      title: "11 · Law 11: offside, taught properly",
+      section: "Section 3 · The Laws, and who writes them",
+      body: `Offside is **Law 11**. It is football's most misunderstood rule, and almost all of the confusion comes from collapsing **two separate questions** into one.
+
+> **Question 1: Is the player in an offside POSITION?**
+> **Question 2: Have they committed an offside OFFENCE?**
+
+The Law is explicit about this and opens with the sentence people forget:
+
+> **"It is not an offence to be in an offside position."** (IFAB, 2026, Law 11)
+
+You can stand in an offside position all afternoon. Nothing happens. The flag only goes up if you *do* something.
+
+---
+
+**Question 1 — offside POSITION.**
+
+A player is in an offside position if (IFAB, 2026, Law 11):
+
+- **any part of the head, body or feet** is in the opponents' half (**excluding the halfway line**), **and**
+- **any part of the head, body or feet** is nearer to the opponents' goal line than **both the ball and the second-last opponent**.
+
+Three details, all of which decide real goals:
+
+1. **The hands and arms of all players, including goalkeepers, are NOT considered.** You cannot be offside by an arm. The Law even defines the boundary: *"the upper boundary of the arm is in line with the bottom of the armpit."* This exists because you may legally score with your shoulder, so the shoulder counts — and you may not score with your hand, so the hand does not.
+2. **"The second-last opponent."** People say "the last defender," and it is *usually* the same thing — because the goalkeeper is usually the last opponent, which makes the last outfield defender the second-last opponent. But if the goalkeeper has come out for a corner, **the second-last opponent might be an outfield player**, and the "last defender" mental model breaks. Say **second-last opponent** and you will never be wrong.
+3. **Level is ONSIDE.** The Law says a player is **not** in an offside position if **level with the second-last opponent, or level with the last two opponents.** Ties go to the attacker.
+
+---
+
+**Question 2 — offside OFFENCE.**
+
+A player in an offside position **at the moment the ball is played or touched by a team-mate** is penalised **only on becoming involved in active play** by (IFAB, 2026, Law 11):
+
+- **Interfering with play** — playing or touching a ball passed or touched by a team-mate.
+- **Interfering with an opponent** — by clearly obstructing their line of vision; or challenging them for the ball; or clearly attempting to play a close ball in a way that impacts on the opponent; or making an obvious action that clearly impacts on the opponent's ability to play the ball.
+- **Gaining an advantage** by playing the ball or interfering with an opponent after it has **rebounded or been deflected off** the goalpost, crossbar, a match official or an opponent — or after it has been **deliberately saved by any opponent**.
+
+Note the timing: the position is judged **at the moment the ball is played by the team-mate**, not when the offside player receives it. This is why an attacker can look "miles offside" when they collect the ball and still be perfectly onside — they were level when the pass was struck and simply ran faster.
+
+---
+
+**The rule people most often get backwards.**
+
+> A player in an offside position who receives the ball **from an opponent who deliberately played the ball** — **including by deliberate handball** — **is NOT considered to have gained an advantage** (IFAB, 2026, Law 11).
+
+**Unless it was a deliberate SAVE by any opponent.** A save resets nothing; a deliberate *play* does.
+
+And the Law goes further, defining what "deliberate play" means: the player had **control** of the ball with the possibility of passing it, gaining possession, or clearing it — and it explicitly adds that **an inaccurate or unsuccessful pass or clearance does not stop it being a deliberate play.** A defender who tries to head the ball clear and shanks it into an offside striker's path has **deliberately played** it. **No offside.** The goal stands. This causes fury in stadiums every week, and it is exactly what the Law says.
+
+The Law even gives the indicators of "control": the ball travelled from a distance and the player had a clear view of it; it was not moving quickly; its direction was not unexpected; the player had time to coordinate their body movement (not an instinctive stretch or jump); and a ball on the ground is easier to play than one in the air.
+
+---
+
+**Where you can never be offside** (IFAB, 2026, Law 11). There is **no offside offence** if a player receives the ball **directly** from:
+
+- a **goal kick**
+- a **throw-in**
+- a **corner kick**
+
+**The restart.** An offside offence is punished with an **indirect free kick where the offence occurred** — including in the offending player's own half, if that is where it happened.
+
+:::reveal A defender, under no pressure, sees a long ball coming, attempts a controlled headed clearance, mistimes it, and the ball loops to an attacker who was in an offside position when the pass was struck. The attacker scores. Goal or offside? ||| **Goal.** Law 11: a player in an offside position who receives the ball from an opponent who **deliberately played** it has not gained an advantage — and the Law explicitly states that an **inaccurate or unsuccessful clearance does not negate the fact that the player deliberately played the ball.** It was a deliberate play, not a deliberate **save**, so there is no offside offence.
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
+      recallContent: [
+        {
+          prompt: "Is it an offence to be in an offside position?",
+          answer:
+            "No. Law 11 opens with exactly that sentence. Being in an offside position is only penalised if you become involved in active play — interfering with play, interfering with an opponent, or gaining an advantage.",
+        },
+        {
+          prompt: "Which parts of the body count for offside?",
+          answer:
+            "Head, body and feet. The hands and arms of ALL players, including goalkeepers, are NOT considered — the upper boundary of the arm is in line with the bottom of the armpit.",
+        },
+        {
+          prompt: "Name the three restarts from which you can never be offside.",
+          answer: "A goal kick, a throw-in, and a corner kick — when received directly.",
+        },
+        {
+          prompt: "Why is 'the last defender' the wrong phrase?",
+          answer:
+            "The Law says 'the second-last opponent.' Usually the goalkeeper is last, making the last outfield defender second-last — but if the keeper is out of position, the second-last opponent can be an outfield player and the 'last defender' model breaks.",
+        },
+      ],
+    },
+    {
+      slug: "football-law-12-handball-and-cards",
+      title: "12 · Law 12: handball (the current version), fouls, and cards",
+      section: "Section 3 · The Laws, and who writes them",
+      body: `**Handball lives inside Law 12 (Fouls and Misconduct).** There is no "Law of handball," and if a source gives you a standalone Law number for it, the source is wrong.
+
+Handball is also the Law that has been **rewritten most often in the last decade**, which means: **most of what people confidently believe about handball is out of date.** So here is the **current** text — the 2026/27 edition, effective 1 July 2026 — and nothing else.
+
+---
+
+**Handball: the actual Law.**
+
+Law 12 opens the section with two framing sentences that people skip and then argue about for ninety minutes (IFAB, 2026, Law 12):
+
+> *"For the purposes of determining handball offences, the upper boundary of the arm is in line with the bottom of the armpit."*
+> **"Not every touch of a player's hand/arm with the ball is an offence."**
+
+Read that second sentence twice. **Ball-to-hand is not automatically a foul.** It never has been, and the Law says so out loud.
+
+**It IS an offence if a player:**
+
+1. **Deliberately touches the ball** with their hand/arm — "for example moving the hand/arm towards the ball."
+2. **Touches the ball with their hand/arm when it has made their body unnaturally bigger.** The Law then defines what that means: *"A player is considered to have made their body unnaturally bigger when the position of their hand/arm is not a consequence of, or justifiable by, the player's body movement for that specific situation. By having their hand/arm in such a position, the player takes a risk of their hand/arm being hit by the ball and being penalised."*
+3. **Scores in the opponents' goal:**
+   - **directly** from their hand/arm — **even if accidental**, including by the goalkeeper; **or**
+   - **immediately after** the ball has touched their hand/arm — **even if accidental**.
+
+**That is the complete list. Note what is NOT on it.**
+
+An earlier version of this Law disallowed a goal if the ball had **accidentally** touched the hand or arm of an **attacking team-mate** anywhere in the build-up. **That clause is gone.** In the current Law, an accidental handball only voids a goal for **the player who scored it** — either directly from their arm, or immediately before scoring. If a team-mate's arm is accidentally hit three passes earlier and you then score, **it is a goal.**
+
+If you have ever been told otherwise, you were told a **superseded** version of Law 12. This is exactly why the edition year matters.
+
+**The goalkeeper.** "The goalkeeper has the same restrictions on handling the ball as any other player **outside the penalty area**" (IFAB, 2026, Law 12). Inside their own area, illegal handling by the goalkeeper is an **indirect free kick**, normally with **no card**.
+
+---
+
+**Fouls: the three-level ladder.** (Also covered in Section 2, and worth knowing cold.)
+
+| Level | Law 12's definition | Sanction |
+| --- | --- | --- |
+| **Careless** | Lack of attention or consideration; acting without precaution | Free kick, **no card** |
+| **Reckless** | Disregard for the **danger to, or consequences for**, an opponent | Free kick + **yellow** |
+| **Excessive force** | Exceeds necessary force **and/or endangers the safety** of an opponent | Free kick + **red** |
+
+**Direct vs. indirect free kick.** A **direct** free kick can be scored straight from the kick. An **indirect** free kick cannot — another player must touch the ball first. Law 12 gives direct free kicks for contact offences (charging, jumping at, kicking, pushing, striking, tackling, tripping) and for handball. It gives **indirect** free kicks for things like **playing in a dangerous manner**, **impeding an opponent without contact**, and **dissent**.
+
+---
+
+**DOGSO — denying a goal or an obvious goal-scoring opportunity.** This is the rule the pundits call "the triple punishment debate," and the current Law is careful (IFAB, 2026, Law 12):
+
+- A player who denies an obvious goal-scoring opportunity **inside their own penalty area** and concedes a penalty is **cautioned (yellow)** if the offence was **an attempt to play the ball or a challenge for the ball** — but **sent off** in all other circumstances (holding, pulling, pushing, or no possibility of playing the ball).
+- A player who denies a goal or an obvious goal-scoring opportunity by **deliberate handball** is **sent off wherever it happens** (except a goalkeeper in their own area).
+- A player who denies a goal or an obvious goal-scoring opportunity by a **non-deliberate** handball and concedes a penalty is **cautioned**.
+
+So the honest attempt to play the ball is treated more leniently than the cynical grab. That is the principle underneath the whole of Law 12: **the Law punishes intent and danger, not merely outcome.**
+
+**Cards.** A **yellow** is a caution. **Two yellows in one match = a red**. A **red** is a sending-off: the player leaves and **is not replaced** — the team plays short. (Some competitions also use **sin bins** / temporary dismissals; The IFAB publishes guidelines for them, and whether they apply is a **competition** decision, not a universal Law.)
+
+:::reveal An attacker's arm is accidentally struck by the ball in midfield. Three passes later, a team-mate scores. Under the CURRENT Law 12, does the goal stand? ||| **Yes, the goal stands.** The current Law only voids a goal for accidental handball when the **scorer** puts the ball in **directly from their own hand/arm**, or **immediately after** it has touched their own hand/arm. The old clause disallowing goals for an accidental handball anywhere in a team-mate's build-up **has been removed.**
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
+      recallContent: [
+        {
+          prompt: "Which Law contains handball, and what is its opening principle?",
+          answer:
+            "Law 12 (Fouls and Misconduct) — there is no standalone handball Law. Its stated principle: 'Not every touch of a player's hand/arm with the ball is an offence.'",
+        },
+        {
+          prompt: "Under the current Law, when does an ACCIDENTAL handball void a goal?",
+          answer:
+            "Only for the scorer: if they score directly from their own hand/arm, or immediately after the ball touched their own hand/arm. Accidental handball earlier in a team-mate's build-up no longer voids a goal.",
+        },
+        {
+          prompt: "What is the difference between a direct and an indirect free kick?",
+          answer:
+            "A direct free kick can be scored straight from the kick. An indirect free kick cannot — another player must touch the ball first.",
+        },
+      ],
+    },
+    {
+      slug: "football-law-5-referee-and-var",
+      title: "13 · Law 5: the referee, and what VAR can and cannot do",
+      section: "Section 3 · The Laws, and who writes them",
+      body: `**Law 5 (The Referee)** is the Law that makes football work, and it is startlingly blunt:
+
+> *"The decisions of the referee regarding facts connected with play, including whether or not a goal is scored and the result of the match, are final."* (IFAB, 2026, Law 5)
+
+The referee is not an umpire adjudicating between two lawyers. The referee **is the authority**, and Law 5 gives them the power to enforce the Laws, act as timekeeper, stop or abandon the match, caution and send off, and — crucially — play **advantage**: allowing play to continue when stopping it for a foul would benefit the offending team.
+
+There are **other match officials** too — assistant referees (the ones with flags), the fourth official, and, where a competition uses them, video match officials. That is **Law 6**.
+
+---
+
+**VAR is in Law 5. Specifically, Law 5 §4.**
+
+And the first sentence of that section is the one that gets skipped:
+
+> *"The use of video assistant referees (VARs) is **only permitted** where the match/competition organiser has fulfilled all the implementation requirements as set out in the VAR Handbook, and has **received written permission from FIFA**."* (IFAB, 2026, Law 5)
+
+So **VAR is not part of football by default.** It is an option a competition must qualify for. Most football on Earth — your high school match, your local league, the vast majority of professional matches worldwide — is played **without** it, and that is entirely lawful.
+
+**The threshold.** VAR may assist the referee **only** in the event of a **"clear and obvious error"** or a **"serious missed incident."** It is explicitly **not** a system for re-refereeing close calls. If the decision was defensible, VAR does not touch it.
+
+**What VAR can review** (IFAB, 2026, Law 5 §4):
+
+| Reviewable category | Notes |
+| --- | --- |
+| **Goal / no goal** | Including offences in the build-up |
+| **Penalty / no penalty** | |
+| **Red card** (direct) | Including a **clearly incorrect second caution** |
+| **Mistaken identity** | When the referee cautions or sends off the **wrong player** |
+| **Clearly incorrectly awarded corner kick** | **NEW in 2026/27** — and a **competition option**, only if the decision can be changed immediately and without delaying the restart |
+
+**That is the complete list.** A second yellow card that the referee *meant* to give is **not** reviewable. A foul in midfield is **not** reviewable. Offside is only reviewable **as part of a goal/no-goal decision**. VAR is a narrow tool, and most of the anger directed at it comes from people expecting it to fix things it was never permitted to touch.
+
+**Who decides?** The referee. Always. Law 5: *"The referee will make the final decision which may be based solely on the information from the VAR and/or the referee reviewing the replay footage directly ('on-field review')."* The VAR **recommends**; the referee **decides**. And except for a "serious missed incident," the on-field officials **must always make a decision first** — including a decision *not* to penalise — and that decision only changes if it was a **clear and obvious error**.
+
+**After the restart.** Once play has restarted, the referee may only review for **mistaken identity**, or for a potential sending-off for **violent conduct, spitting, biting, or extremely offensive/insulting/abusive actions** (IFAB, 2026, Law 5).
+
+---
+
+**Other technology, and who chose it.** Law 5 also states that **competitions MAY use** technology to assist the referee with (IFAB, 2026, Law 5):
+
+- **the VAR protocol**
+- **ball in/out of play**, including **goal-line technology (GLT)**
+- **offside**, including **semi-automated offside technology (SAOT)**
+
+The word doing the work in every case is **may**. **The Law permits; the competition chooses.** This is the structural pattern of the whole rulebook, and if you understand it you understand football's rules better than most commentators: **The IFAB writes one set of Laws with a menu of options, and every competition on Earth picks from the menu.** That is why the World Cup, the Premier League, and your high school conference all play by the same 17 Laws — and still do not play the same game.
+
+**And in 2026/27, one more option appeared:** referees **may** wear **body cameras**, where the competition organiser supplies them and controls the footage (IFAB, 2026, Law 5). Optional. Competition's call.
+
+:::reveal The referee shows a second yellow card, and it is clearly the wrong decision — the player never fouled anyone. Can VAR intervene? What if it was simply a harsh but defensible second yellow? ||| **Yes to the first, no to the second.** VAR may review a **red card resulting from a clearly incorrect second caution**. But the threshold is a **"clear and obvious error"** — a harsh-but-defensible caution is not clearly incorrect, so VAR must leave it alone. VAR does not re-referee close calls.
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
+      recallContent: [
+        {
+          prompt: "Which Law contains VAR, and what is the threshold for intervention?",
+          answer:
+            "Law 5 (The Referee), section 4. VAR may only assist in the event of a 'clear and obvious error' or a 'serious missed incident' — it is not a tool for re-refereeing close calls.",
+        },
+        {
+          prompt: "Is VAR mandatory?",
+          answer:
+            "No. Law 5 permits it only where the competition organiser has met the VAR Handbook requirements AND received written permission from FIFA. Most football is lawfully played without it.",
+        },
+        {
+          prompt: "List the categories VAR may review in 2026/27.",
+          answer:
+            "Goal/no goal; penalty/no penalty; direct red card (including a clearly incorrect second caution); mistaken identity; and — new in 2026/27, as a competition option — a clearly incorrectly awarded corner kick.",
+        },
+      ],
+    },
+    {
+      slug: "football-restarts-and-set-piece-laws",
+      title: "14 · Restarts: free kicks, penalties, throw-ins, corners, goal kicks",
+      section: "Section 3 · The Laws, and who writes them",
+      body: `Every time the ball stops, a **restart** puts it back. Six of the 17 Laws are about restarts, and knowing them is what separates a player who reacts from one who anticipates.
+
+**Law 13 · Free Kicks.** Two types (see Lesson 12): **direct** (can be scored straight from the kick) and **indirect** (cannot — someone else must touch it first). The referee signals an indirect free kick by holding an arm straight up, and keeps it up until the ball is touched by another player or goes out of play. Opponents must be **at least 9.15 m (10 yds)** from the ball until it is in play (unless they are on their own goal line between the posts).
+
+**One rule most fans do not know:** when a defending team forms a **wall of three or more players**, **all attacking players must remain at least 1 m (1 yd) from the wall** until the ball is in play. Sneaking a player into the wall to block the goalkeeper's view is an offence (IFAB, 2026, Law 13).
+
+**Law 14 · The Penalty Kick.** Awarded for a **direct-free-kick offence committed by a player inside their own penalty area** while the ball is in play. Taken from the **penalty mark, 11 m (12 yds)** out.
+
+The details that decide penalties:
+
+- The kicker must be **clearly identified**.
+- **When the ball is kicked, the defending goalkeeper must have at least part of one foot touching, in line with, or BEHIND, the goal line.** Note that last word — the goalkeeper is **allowed to be behind the line**; what they may not do is come **off** it early. Almost everyone states this rule as "one foot on the line," which is only two-thirds of it.
+- **Every other player** must be **outside the penalty area**, **behind the penalty mark**, **inside the field of play**, and **at least 9.15 m (10 yds)** from the penalty mark — which is exactly what the **penalty arc** is for. The arc is not decoration; it is that 10-yard measurement drawn on the grass.
+- The ball must be **kicked forward** — **backheeling is permitted, provided the ball moves forward** — and the kicker **may not play it again** until it has touched another player. (Which is why a kicker who scores off their own rebound from the post has committed an offence.)
+- **Feinting in the run-up is permitted; feinting to kick the ball once the kicker has COMPLETED the run-up is not** — that is an indirect free kick and a caution, **whether or not a goal is scored** (IFAB, 2026, Law 14).
+
+**Law 15 · The Throw-in.** Awarded to the opponents of the player who **last touched the ball** when it wholly crosses the touchline. At the moment of delivery, the thrower must:
+
+- **Stand facing the field of play**
+- Have **part of each foot on the touchline or on the ground outside it**
+- **Throw the ball with both hands, from behind and over the head**, from the point where it left the field of play
+
+All **opponents must stand at least 2 m (2 yds)** from that point (IFAB, 2026, Law 15). If the throw-in is not taken correctly, **the opposing team takes it** — the throw is not simply retaken by you.
+
+**A goal cannot be scored directly from a throw-in.** And — as Law 11 already told us — **there is no offside from a throw-in.**
+
+**Law 16 · The Goal Kick.** Awarded when the ball wholly crosses the goal line, **last touched by an attacker**, without a goal being scored. The ball is kicked from **any point within the goal area**, and it is in play **as soon as it is kicked and clearly moves**. Opponents must be **outside the penalty area** until then — and because the ball is in play the instant it moves, **it does not have to leave the penalty area first.**
+
+That rule change is why you now see goalkeepers passing five yards to a centre-back standing inside the six-yard box — a shape that would have been illegal not long ago. **No offside directly from a goal kick.** A goal *can* be scored directly from a goal kick, but only against the opponents.
+
+**Law 17 · The Corner Kick.** Awarded when the ball wholly crosses the goal line, **last touched by a defender**, without a goal. Taken from the corner arc; **the flagpost must not be moved**. Opponents must be at least **9.15 m (10 yds)** away. **A goal can be scored directly from a corner kick** (against the opponents) — and there is **no offside directly from a corner.**
+
+**Law 8 · The dropped ball.** When play is stopped for a reason not covered by any other restart — an injury, an outside interference, the ball striking a match official — the referee restarts with a **dropped ball** (IFAB, 2026, Law 8):
+
+- If the ball was **inside the penalty area** when play stopped, it is dropped for **the defending team's goalkeeper**.
+- If it was **outside** the penalty area, it is dropped for **one player of the team that would have retained or gained possession** — and only if the referee cannot determine that, for **one player of the team that last touched it**.
+- **All other players of both teams must remain at least 4 m (4.5 yds) from the ball** until it is in play, and the ball is in play **when it touches the ground**.
+
+This is deliberately unglamorous. The old "contested drop ball," where two players squared up over a bouncing ball, was removed because it caused injuries and manufactured chaos.
+
+**Law 10 · Kicks from the penalty mark.** When a competition requires a winner, the shoot-out procedure lives in **Law 10** — and remember from Lesson 4: **goals scored in a shoot-out do not count as goals.** The match itself remains a draw; the shoot-out only decides who advances.
+
+:::reveal Your team is defending a free kick and sets a wall of four. An attacker jogs over and stands shoulder-to-shoulder inside your wall to screen the goalkeeper. Is that legal? ||| **No.** Law 13: when the defending team forms a wall of **three or more** players, **all attacking players must remain at least 1 m (1 yd) from the wall** until the ball is in play. Standing in the wall is an offence.
+
+## Sources
+- International Football Association Board. (2026). *Laws of the game 2026/27*. https://downloads.theifab.com/downloads/laws-of-the-game-202627-single-pages?l=en`,
+      recallContent: [
+        {
+          prompt: "How far must attacking players stay from a defensive wall of three or more?",
+          answer: "At least 1 m (1 yd), until the ball is in play (Law 13). Standing inside the wall is an offence.",
+        },
+        {
+          prompt: "Must a goal kick leave the penalty area to be in play?",
+          answer:
+            "No. Under Law 16 the ball is in play as soon as it is kicked and clearly moves — which is why keepers now pass short to a defender standing inside the box.",
+        },
+        {
+          prompt: "Can a goal be scored directly from a throw-in?",
+          answer: "No (Law 15). And there is no offside directly from a throw-in either.",
+        },
+      ],
+    },
+    {
+      slug: "football-quiz-section-3",
+      title: "Section 3 quiz · The Laws, and who writes them",
+      section: "Section 3 · The Laws, and who writes them",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who writes the Laws of the Game?",
+            options: [
+              "FIFA",
+              "The IFAB (International Football Association Board)",
+              "UEFA and the other confederations jointly",
+              "The Football Association of England alone",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The IFAB, founded in 1886 by the four British associations; FIFA joined in 1913. This is the single most commonly botched fact in football education. FIFA holds four of The IFAB's eight votes — it does not own the rulebook.",
+            sourceLessonSlug: "football-who-writes-the-laws",
+          },
+          {
+            prompt: "How many votes does FIFA hold on The IFAB, and how many are needed to change a Law?",
+            options: [
+              "4 of 8; a change needs 6 (a three-quarters majority)",
+              "8 of 8; FIFA has absolute control",
+              "1 of 5; each member has one vote",
+              "4 of 8; a simple majority of 5 is enough",
+            ],
+            correctIndex: 0,
+            explanation:
+              "FIFA has 4 votes; each of the four British associations has 1, for 8 in total. A change requires a three-quarters majority — 6 votes. So FIFA must persuade at least two British associations, and they cannot act without FIFA either.",
+            sourceLessonSlug: "football-who-writes-the-laws",
+          },
+          {
+            prompt: "How many Laws of the Game are there, and what is the current edition?",
+            options: [
+              "16 Laws; the 2025/26 edition",
+              "17 Laws; the Laws of the Game 2026/27, effective 1 July 2026",
+              "18 Laws; revised every four years before each World Cup",
+              "17 Laws, but they have not been revised since 1997",
+            ],
+            correctIndex: 1,
+            explanation:
+              "17 Laws, revised ANNUALLY. The current edition is the Laws of the Game 2026/27, in force from 1 July 2026. Earlier editions are superseded — which matters enormously for handball.",
+            sourceLessonSlug: "football-who-writes-the-laws",
+          },
+          {
+            prompt: "Which sentence opens Law 11?",
+            options: [
+              "'Offside is judged at the moment the ball is received.'",
+              "'It is not an offence to be in an offside position.'",
+              "'A player level with the last defender is offside.'",
+              "'Offside applies only in the attacking third.'",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Law 11's first principle. Position and OFFENCE are two separate questions — you may stand in an offside position indefinitely, and nothing happens until you become involved in active play.",
+            sourceLessonSlug: "football-law-11-offside",
+          },
+          {
+            prompt: "Which parts of the body are considered when judging offside position?",
+            options: [
+              "Every part of the body, including hands and arms",
+              "Head, body and feet — hands and arms are NOT considered, for any player including goalkeepers",
+              "Only the feet",
+              "Only the part of the body nearest the goal, whatever it is",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Law 11: head, body, feet. Hands and arms are excluded for all players. The Law even sets the boundary — 'the upper boundary of the arm is in line with the bottom of the armpit' — because you may legally score with a shoulder but not a hand.",
+            sourceLessonSlug: "football-law-11-offside",
+          },
+          {
+            prompt: "A defender attempts a controlled headed clearance, mishits it, and it falls to an attacker who was in an offside position when the pass was played. The attacker scores. What is the decision?",
+            options: [
+              "Offside — the attacker gained an advantage",
+              "Goal — the defender deliberately played the ball, and Law 11 says an inaccurate clearance does not negate that",
+              "Indirect free kick to the defending team",
+              "Drop ball",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Law 11: receiving from an opponent who DELIBERATELY PLAYED the ball is not gaining an advantage — and the Law explicitly states that an inaccurate or unsuccessful clearance does not negate the deliberate play. Only a deliberate SAVE would keep the offside alive.",
+            sourceLessonSlug: "football-law-11-offside",
+          },
+          {
+            prompt: "From which restarts can a player NEVER be offside?",
+            options: [
+              "Free kicks and penalties",
+              "Goal kick, throw-in, and corner kick",
+              "Kick-off and dropped ball",
+              "Only the throw-in",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Law 11 lists exactly three: a goal kick, a throw-in, and a corner kick, when received directly.",
+            sourceLessonSlug: "football-law-11-offside",
+          },
+          {
+            prompt: "What does Law 12 state as the framing principle for handball?",
+            options: [
+              "'Any contact between the ball and the hand or arm is an offence.'",
+              "'Not every touch of a player's hand/arm with the ball is an offence.'",
+              "'Handball is always a deliberate act.'",
+              "'Handball is judged only inside the penalty area.'",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Ball-to-hand is not automatically a foul, and the Law says so explicitly. The offences are: deliberately touching it; touching it when the arm has made the body 'unnaturally bigger'; and scoring off your own hand/arm.",
+            sourceLessonSlug: "football-law-12-handball-and-cards",
+          },
+          {
+            prompt: "Under the CURRENT (2026/27) Law 12, when does an accidental handball void a goal?",
+            options: [
+              "Whenever the ball accidentally touches any attacking player's arm anywhere in the build-up",
+              "Only for the scorer — directly off their own hand/arm, or immediately after it touched their own hand/arm",
+              "Never — accidental handball never affects a goal",
+              "Only if the referee judges it deliberate",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The old clause voiding a goal for an accidental handball anywhere in a team-mate's build-up has been REMOVED. Option A is a superseded version of the Law that people still quote — which is exactly why the edition year matters.",
+            sourceLessonSlug: "football-law-12-handball-and-cards",
+          },
+          {
+            prompt: "A defender inside their own penalty area denies an obvious goal-scoring opportunity by making a genuine but mistimed attempt to play the ball. A penalty is given. What card?",
+            options: ["Red", "Yellow", "No card", "Two yellows"],
+            correctIndex: 1,
+            explanation:
+              "Law 12's DOGSO provision: inside their own area, a player is CAUTIONED if the offence was an attempt to play the ball or a challenge for the ball. In all other circumstances — holding, pulling, pushing, no possibility of playing the ball — they are sent off.",
+            sourceLessonSlug: "football-law-12-handball-and-cards",
+          },
+          {
+            prompt: "Which Law contains VAR?",
+            options: ["Law 6 (The Other Match Officials)", "Law 5 (The Referee), section 4", "Its own Law, number 18", "Law 12"],
+            correctIndex: 1,
+            explanation:
+              "VAR is in Law 5 §4, plus a separate VAR protocol section in the same book. There is no Law 18 — there are exactly 17 Laws.",
+            sourceLessonSlug: "football-law-5-referee-and-var",
+          },
+          {
+            prompt: "What is the threshold for a VAR intervention?",
+            options: [
+              "Any decision a team disputes",
+              "A 'clear and obvious error' or a 'serious missed incident'",
+              "Any incident inside the penalty area",
+              "Whenever the broadcaster's replay shows a different angle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "VAR is deliberately narrow. If the on-field decision was defensible, VAR does not touch it — it is not a tool for re-refereeing close calls.",
+            sourceLessonSlug: "football-law-5-referee-and-var",
+          },
+          {
+            prompt: "Which of these is NOT a VAR-reviewable category in 2026/27?",
+            options: [
+              "Goal / no goal",
+              "Penalty / no penalty",
+              "A yellow card for a midfield foul that the referee intended to give",
+              "Mistaken identity when the referee cards the wrong player",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The reviewable categories are goal/no goal, penalty/no penalty, direct red card (including a clearly incorrect second caution), mistaken identity, and — new in 2026/27 and a competition option — a clearly incorrectly awarded corner kick. An ordinary yellow card is not reviewable.",
+            sourceLessonSlug: "football-law-5-referee-and-var",
+          },
+          {
+            prompt: "Is VAR mandatory in football?",
+            options: [
+              "Yes — all competitions must use it",
+              "No — Law 5 permits it only where the organiser meets the VAR Handbook requirements and has written permission from FIFA",
+              "Yes, but only in professional leagues",
+              "It is required by IFAB statute in all matches above under-16 level",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Most football on Earth is lawfully played without VAR. The Law permits; the competition chooses — the structural pattern of the whole rulebook.",
+            sourceLessonSlug: "football-law-5-referee-and-var",
+          },
+          {
+            prompt: "Under Law 16, must a goal kick leave the penalty area before the ball is in play?",
+            options: [
+              "Yes — that has always been the rule",
+              "No — the ball is in play as soon as it is kicked and clearly moves, which is why keepers now pass short to a defender inside the box",
+              "Only in matches with VAR",
+              "Only if the opposition presses",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Law 16: in play as soon as it is kicked and clearly moves. Opponents must be outside the penalty area until then. The old 'must leave the area' requirement is gone.",
+            sourceLessonSlug: "football-restarts-and-set-piece-laws",
+          },
+        ],
+      },
+    },
   ],
 };
