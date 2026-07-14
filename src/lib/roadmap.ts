@@ -185,6 +185,34 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`tests/offline-nav.test.ts\` runs the **real \`public/sw.js\`** against a dead network and proves both
   halves: the hard navigation is served from the precache, and the RSC fetch a \`<Link>\` would have
   issued has nothing to serve. The **page itself stays ungated** — only the link is signed-in.
+- ✅ **Read \`/admin/future\` on a plane** (\`feat/offline-admin-future\`) — the Future classes & features
+  board is 30-odd long proposals to *review*, which is reading you want to do without a connection. It
+  now has the same **Save for offline** treatment as a lesson (page HTML + RSC payload + the
+  \`/_next/static\` chunks it needs to actually **render** — a page cached without them dies with a
+  \`ChunkLoadError\` the first time it's opened offline), and it lists on \`/downloads\` under **Saved
+  pages** — its own heading, not a fake course. The offline manifest gained a \`kind\` discriminant
+  (\`lesson\` | \`page\`) to make that honest; entries written by earlier builds still read as lessons.
+  **It is the only authenticated page the app will cache, and the terms are strict:** it is cached
+  **only on an explicit click** (never auto-saved), the button says in words that a copy of the page
+  *including its notes* lands in this browser's storage unencrypted, **signing out deletes it**, and
+  so does the next online page load under a different (or no) account — the purge sweeps both the
+  manifest and the \`/admin\` path prefix, so a cleared manifest can't strand signed-in HTML on the
+  device. \`requirePlatformOwner()\` is untouched: online the page is network-first, so the server gate
+  runs on every visit. \`tests/offline-admin-page.test.ts\` drives the **real \`public/sw.js\`** over a
+  dead network and proves the page *and its chunks* are served, and that sign-out revokes it while
+  leaving the learner's saved lessons alone.
+- ✅ **Notes written offline aren't lost — they queue and sync** (\`feat/offline-admin-future\`) — the
+  ideas happen on the plane, but notes are DB-backed, so a POST with no network just throws. There's
+  now a general **offline outbox** (\`src/lib/offline-outbox.ts\`, localStorage) behind the
+  \`/admin/future\` note form: write with no connection and the note is **queued**, shown as *waiting to
+  send*, and posted automatically the moment the network is back — from whatever page is open, not
+  just the one that queued it. The rule it enforces is **a queued write is never silently lost**: it
+  survives a reload and a closed tab; it is only ever removed on a **2xx** or an explicit **Discard**;
+  a **401** (session expired while it sat there) keeps it and retries after sign-in; a **400** keeps it,
+  flags it, and shows the error with the text still on screen to copy out. Marking a note done still
+  needs a connection (a queued toggle against a note that may not exist server-side yet is a good way
+  to resurrect a closed one) and says so instead of silently reverting. The queue is deliberately
+  generic — pointing report-a-problem or feedback at it is a \`kind\` string, not a rewrite.
 - ✅ **Every email is mirrored to the WitUS Inbox — with the credentials stripped**
   (\`feat/downloads-link-inbox-mirror\`) — only the pricing form mirrored before; magic-link sign-in,
   certificates, cohort invites and guardian invites left no record. The mirror now happens at the

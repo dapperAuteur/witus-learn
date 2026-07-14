@@ -1,12 +1,7 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
-import {
-  OUTBOX_CHANGED,
-  flushOutbox,
-  outboxFor,
-  type OutboxItem,
-} from "./offline-outbox";
+import { useEffect, useState } from "react";
+import { OUTBOX_CHANGED, flushOutbox, outboxFor, type OutboxItem } from "./offline-outbox";
 
 /**
  * Live connection state.
@@ -22,11 +17,17 @@ export function useOnline(): boolean {
 
   useEffect(() => {
     if (typeof navigator === "undefined") return;
-    const sync = () => setOnline(navigator.onLine !== false);
-    sync();
+    let cancelled = false;
+    const sync = () => {
+      if (!cancelled) setOnline(navigator.onLine !== false);
+    };
+    // Async, not synchronous: the server rendered "online", so correcting it a microtask later
+    // avoids a cascading render against the hydrated tree (repo convention + the lint rule).
+    void Promise.resolve().then(sync);
     window.addEventListener("online", sync);
     window.addEventListener("offline", sync);
     return () => {
+      cancelled = true;
       window.removeEventListener("online", sync);
       window.removeEventListener("offline", sync);
     };
@@ -38,26 +39,34 @@ export function useOnline(): boolean {
 /**
  * The pending items for one `kind`, kept in sync with the queue.
  *
- * Reads on mount (localStorage is synchronous, so the pending rows are there on first paint with
- * no network) and re-reads on OUTBOX_CHANGED — which every mutation fires — plus the cross-tab
- * `storage` event, so queueing a note in one tab shows up in another.
+ * Reads straight after mount and re-reads on OUTBOX_CHANGED — which every mutation fires — plus
+ * the cross-tab `storage` event, so a note queued in one tab shows up in another. It needs no
+ * network, which is the entire point: the queue lives in localStorage, so the pending rows render
+ * on a page the service worker just served from cache.
+ *
+ * Starts EMPTY and fills asynchronously, even though localStorage reads are synchronous. The server
+ * rendered zero pending rows; setting state synchronously in the effect would cascade a render
+ * against that (and the repo's lint rule rightly refuses it). One microtask later is invisible.
  */
-export function useOutbox(kind: string): { items: OutboxItem[]; refresh: () => void } {
+export function useOutbox(kind: string): { items: OutboxItem[] } {
   const [items, setItems] = useState<OutboxItem[]>([]);
 
-  const refresh = useCallback(() => setItems(outboxFor(kind)), [kind]);
-
   useEffect(() => {
-    refresh();
+    let cancelled = false;
+    const refresh = () => {
+      if (!cancelled) setItems(outboxFor(kind));
+    };
+    void Promise.resolve().then(refresh);
     window.addEventListener(OUTBOX_CHANGED, refresh);
     window.addEventListener("storage", refresh);
     return () => {
+      cancelled = true;
       window.removeEventListener(OUTBOX_CHANGED, refresh);
       window.removeEventListener("storage", refresh);
     };
-  }, [refresh]);
+  }, [kind]);
 
-  return { items, refresh };
+  return { items };
 }
 
 /**

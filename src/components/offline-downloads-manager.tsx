@@ -11,7 +11,6 @@ import {
   storageUsage,
   type OfflineInventory,
   type OfflineLessonEntry,
-  type OfflinePageEntry,
 } from "@/lib/offline";
 import { useOfflineReadiness } from "@/lib/use-offline-readiness";
 
