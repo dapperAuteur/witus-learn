@@ -2298,5 +2298,470 @@ The mechanism is not exotic. It is the oldest one there is.
         ],
       },
     },
+
+    // ── Section 7 · The international floor, and the skill you keep ───────────
+    {
+      slug: "the-ilo-and-how-weakly-it-binds",
+      section: "Section 7 · The international floor, and the skill you keep",
+      title: "27 · The ILO: the world's floor, and why it is so low",
+      recallContent: [
+        {
+          prompt: "Which ILO conventions has China not ratified, and what do they cover?",
+          answer: "Convention No. 87 (freedom of association, 1948) and Convention No. 98 (collective bargaining, 1949).",
+        },
+        {
+          prompt: "What did Qatar's Law No. 17 of 2020 introduce?",
+          answer:
+            "A non-discriminatory minimum wage — the first in the region — of QAR 1,000 per month, plus allowances for food and accommodation where the employer does not provide them.",
+        },
+      ],
+      body: `After six countries you have a fair question: **is there any floor at all?**
+
+There is. It is called the **International Labour Organization**, and it is older than the United Nations.
+
+**What it is.** The ILO was created in **1919**, in the treaty that ended the First World War, on the argument that lasting peace was impossible without social justice. It became a specialized agency of the UN in 1946 and won the **Nobel Peace Prize in 1969**.
+
+**And it has one genuinely strange feature you should know.** The ILO is **tripartite**. Its member delegations are not just governments. Each member state sends **government delegates, employer delegates, and worker delegates** — and the employers and the workers vote **independently of their own government**. There is no other body in the UN system built like that. A country's trade unions get a seat and a vote at an international organization, and can vote against their own state.
+
+**How its rules work.**
+
+- A **Convention** is a treaty. It binds a country **only if that country ratifies it.** Ratification is voluntary.
+- A **Recommendation** is guidance. It binds nobody.
+
+Some conventions are designated **fundamental**. There were **eight** for decades; in **June 2022** the International Labour Conference added occupational safety and health, recognizing Conventions **155** (1981) and **187** (2006) as fundamental too — so there are now **ten**, across five principles:
+
+| Principle | Core conventions |
+|---|---|
+| Freedom of association & collective bargaining | **C087** (1948), **C098** (1949) |
+| Elimination of forced labour | C029 (1930), C105 (1957) |
+| Abolition of child labour | C138 (1973), C182 (1999) |
+| Elimination of discrimination at work | C100 (1951), C111 (1958) |
+| A safe and healthy working environment | C155 (1981), C187 (2006) — *added 2022* |
+
+**Now the uncomfortable table, and it is the reason this lesson exists.**
+
+**The United States has ratified only two of the fundamental conventions** — C105 (abolition of forced labour) and C182 (worst forms of child labour). **It has not ratified C087 or C098** — the freedom-of-association and collective-bargaining conventions. Neither has China. Neither has Qatar (ILO NORMLEX, n.d.).
+
+That should stop you. Three countries that could hardly be more different, on the same list, on the two conventions that are the heart of everything this course has been about.
+
+**So does the floor do anything?**
+
+Two things, and be precise about both.
+
+**One: a principle binds even without ratification.** The ILO's **1998 Declaration on Fundamental Principles and Rights at Work** holds that all members, *by virtue of membership alone*, are obliged to respect the fundamental principles — including freedom of association — **whether or not** they have ratified the relevant conventions. The **Committee on Freedom of Association**, a tripartite quasi-judicial body created in 1951, can and does hear complaints against states that have never ratified C087 or C098, including China and the United States (ILO, n.d.).
+
+**Two: and yet.** The ILO has **no police, no fines, no court, and no power to compel anybody.** Its supervisory system reports, examines, publishes, and — at its most severe, through a rarely used **Commission of Inquiry** under Article 26 of its Constitution — investigates and names. That is the maximum. Its ultimate sanction is **embarrassment**.
+
+**Which is the honest answer to "is there a floor?"** Yes, and it is made of paper. It matters — states do respond to ILO findings, Qatar's 2020 reforms came out of a formal ILO engagement that began with an Article 26 complaint, and having an international standard to point at is genuinely useful to workers and to journalists. But it is **not** a law that anyone enforces against a determined government.
+
+**The floor is a floor the way a line painted on the ground is a fence.**
+
+:::reveal Which two of the ILO's ten fundamental conventions has the United States NOT ratified — and who else has not? ||| C087 (freedom of association, 1948) and C098 (the right to organise and bargain collectively, 1949). The US has ratified only two fundamental conventions in total (C105 and C182). China and Qatar have also not ratified C087 or C098.
+
+## Sources
+- International Labour Organization. (n.d.). *Conventions, protocols and recommendations*. https://www.ilo.org/international-labour-standards/conventions-protocols-and-recommendations
+- International Labour Organization. (n.d.). *Committee on Freedom of Association (CFA)*. https://www.ilo.org/international-labour-standards/ilo-supervisory-system-special-procedures/committee-freedom-association-cfa
+- International Labour Organization. (1998). *Declaration on Fundamental Principles and Rights at Work* (as amended 2022). https://www.ilo.org/declaration-fundamental-principles-and-rights-work
+- International Labour Organization. (n.d.). *Ratifications for the United States of America*. NORMLEX. https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:102871
+- International Labour Organization. (2022). *The fundamental conventions on occupational safety and health*. https://www.ilo.org/publications/fundamental-conventions-occupational-safety-and-health`,
+    },
+    {
+      slug: "apply-the-four-questions",
+      section: "Section 7 · The international floor, and the skill you keep",
+      title: "28 · Reading any country: the skill you keep",
+      recallContent: [
+        {
+          prompt: "What makes the ILO structurally unusual among international organizations?",
+          answer:
+            "It is tripartite: member delegations include government, employer AND worker delegates, and the employers and workers vote independently of their own government. A country's unions can vote against their own state.",
+        },
+        {
+          prompt: "What is the ILO's ultimate sanction against a state that violates labour standards?",
+          answer:
+            "Embarrassment. It has no police, no fines, no court and no power to compel. It reports, examines, publishes, and at most convenes a Commission of Inquiry that names what it found.",
+        },
+      ],
+      body: `You are not going to remember the Wiehahn Commission in five years. That is fine. **This is the lesson you keep.**
+
+You now have a tool that works on any country — including ones this course never mentioned, and ones that do not exist yet.
+
+---
+
+## The four questions
+
+**1. Who is allowed to organise?**
+Is forming a union legal? For everyone, or some? Can you found your **own** union, or only join the one that exists? Can there be more than one?
+*(This is what separated Sweden from China. It is also what Solidarity's very first demand was about.)*
+
+**2. Who is excluded?**
+Someone always is. **Who?** And was it an accident or a decision?
+*(This is the NLRA's "agricultural laborer, or in the domestic service" — and it is Qatar's migrant workforce, and it is Japan's non-regular workers, and it is the AFL's apprenticeship. Four countries, one mechanism.)*
+
+**3. Who bargains with whom, and at what level?**
+Company? Sector? Nation? Is there a works council? Are workers on the board?
+*(This is why Germany has the same union membership rate as the US and five times the bargaining coverage. It is the question that looks boring and answers everything.)*
+
+**4. What happens to you if you try?**
+Fired? Sued? Blacklisted? Arrested? Deported? Killed? What does the **law** say, what actually **happens**, and **how do you know?**
+
+---
+
+## Where to actually look it up
+
+Do not take a country's word for it, and do not take an activist's. Triangulate.
+
+| Source | What it gives you |
+|---|---|
+| **ILO NORMLEX** (normlex.ilo.org) | Which conventions a country has ratified. Free, official, unarguable. Start here. |
+| **ILOSTAT** (ilostat.ilo.org) | Union density and collective bargaining coverage, by country and year. |
+| **OECD/AIAS ICTWSS database** | Density, coverage and bargaining structure for OECD countries. |
+| **The country's own labour statute** | The actual text. Boring, and decisive. |
+| **US Dept of State country human rights reports** | Annual, per country, includes a freedom-of-association section. Written by a government — read accordingly. |
+| **ITUC Global Rights Index** | Annual rating of workers' rights. Written by a trade-union federation — read accordingly. |
+| **ILO Committee on Freedom of Association case reports** | Actual complaints, actual findings, against actual governments. |
+
+**Read the last two rows again.** The State Department and the ITUC will often describe the same country very differently. That is not a problem with your research. **That IS your research.** When two motivated sources disagree, the gap between them is where the interesting question lives — and where you go find the statute.
+
+---
+
+## Five habits, stolen from this course
+
+1. **Every number carries a year and a source.** "Union membership is 10%" is not a fact. "10.0% in 2025, per BLS, in an 11-month series that excludes October" is a fact.
+2. **When the record does not settle it, say so.** *Who threw the bomb at Haymarket?* Nobody knows. *What happened to Jimmy Hoffa?* Nobody knows. The pull to resolve an open question is strong, and it is where most bad history comes from.
+3. **Separate the text, the effect, and the motive.** You can prove what a statute *says*. You can measure what it *did*. What was in the author's head is a different and harder claim — flag it as one.
+4. **Look for the plumbing before you reach for the culture.** Nordic density is about who administers unemployment insurance. German coverage is about bargaining level. Institutional design explains more than national character almost every time.
+5. **Notice who benefits from the version you are being told.** Every account in this course — the heroic one, the corrupt one, the one about the Chinese union, the one about the Gulf — is told by somebody who wants something. Including this one. Ask what.
+
+---
+
+## What this course was actually for
+
+Not to make you pro-union. Not to make you anti-union. Those are conclusions, and they are yours to reach.
+
+It was to make you the person in the room who, when everyone else is arguing about whether unions are good, quietly asks: **"Covered, or a member? What year is that number? And who did the law leave out?"**
+
+That person is very hard to fool.
+
+> **Where to go next.** For what your rights are on the job **today** — protected concerted activity, retaliation, at-will employment, and how to read a contract — take the companion course, ***Know Your Rights at Work***. This course told you where those rights came from and who was cut out of them. That one tells you what to do on Monday.
+
+:::reveal What single check would tell you fastest whether a country's stated commitment to workers' rights is more than words? ||| Look up its ratifications in ILO NORMLEX — specifically Conventions 87 and 98 — and then, separately, check what the country's own labour statute actually says about who may form a union. Ratification is free and official; the statute is decisive. Then triangulate two motivated sources (e.g. the State Department and the ITUC) and go looking in the gap between them.
+
+## Sources
+- International Labour Organization. (n.d.). *NORMLEX: Information system on international labour standards*. https://normlex.ilo.org/
+- International Labour Organization. (n.d.). *ILOSTAT: Statistics on union membership and collective bargaining*. https://ilostat.ilo.org/topics/union-membership/
+- OECD. (n.d.). *OECD/AIAS ICTWSS database*. https://www.oecd.org/en/data/datasets/oecdaias-ictwss-database.html
+- U.S. Department of State. (n.d.). *Country reports on human rights practices*. https://www.state.gov/reports-bureau-of-democracy-human-rights-and-labor/country-reports-on-human-rights-practices/
+- International Trade Union Confederation. (n.d.). *ITUC Global Rights Index*. https://www.ituc-csi.org/global-rights-index
+- Bureau of Labor Statistics. (2026, February 18). *Union members — 2025*. U.S. Department of Labor. https://www.bls.gov/news.release/pdf/union2.pdf`,
+    },
+    {
+      slug: "practice-history-of-unions",
+      section: "Section 7 · The international floor, and the skill you keep",
+      title: "29 · Practice: the facts you should be able to produce cold",
+      body: `Fill in each blank, then check. Spelling and capitalization are forgiving.
+
+These are the specific, checkable facts this course wants in your head — the ones that let you catch an error in someone else's argument. Everything else you can look up.`,
+      exercise: {
+        instructions: "Fill in each blank, then check. Spelling and capitalization are forgiving.",
+        items: [
+          {
+            prompt: "The person who threw the bomb at Haymarket Square on May 4, 1886 was ___ (one word).",
+            answer: "unknown",
+            accept: ["never identified", "unidentified", "nobody knows", "unproven"],
+            explanation:
+              "The state never identified or produced the bomb-thrower. The defendants were convicted on a conspiracy theory, and the judge told the jury the bomber's identity did not matter.",
+          },
+          {
+            prompt: "The 1894 Pullman strike was broken not by private guards but by a federal court ___.",
+            answer: "injunction",
+            explanation:
+              "Attorney General Olney obtained it; Debs was jailed for contempt of court; In re Debs (1895) upheld it unanimously.",
+          },
+          {
+            prompt: "The Triangle Waist Company fire of March 25, 1911 killed ___ workers.",
+            answer: "146",
+            explanation: "Most of them young immigrant women and girls. The owners were tried for manslaughter and acquitted.",
+          },
+          {
+            prompt: "Section 7 of the NLRA protects the right to self-organize, to bargain collectively, and to engage in other ___ activities for mutual aid or protection.",
+            answer: "concerted",
+            explanation:
+              "\"Concerted activity\" reaches beyond formal unions — it is the legal root of much of what the companion course, Know Your Rights at Work, teaches.",
+          },
+          {
+            prompt: "The NLRA's definition of \"employee\" (29 U.S.C. § 152(3)) excludes any individual employed as an ___ laborer.",
+            answer: "agricultural",
+            explanation:
+              "Together with domestic service. It is why farmworker organizing had to happen outside the law — and it has never been amended.",
+          },
+          {
+            prompt: "Section 14(b) of the Taft-Hartley Act allows states to pass \"right-to-___\" laws.",
+            answer: "work",
+            explanation: "They ban union-security agreements — the clauses requiring workers covered by a contract to pay dues or fees.",
+          },
+          {
+            prompt: "In 2025 the US union membership rate was ___ percent, per the Bureau of Labor Statistics.",
+            answer: "10.0",
+            accept: ["10", "10 percent", "10.0 percent"],
+            explanation:
+              "10.0% and 14.7 million members — against 20.1% and 17.7 million in 1983, the first year of BLS's comparable series. The 2025 figure is an 11-month average excluding October.",
+          },
+          {
+            prompt: "In 2025 the US PUBLIC-sector union membership rate was 32.9% and the PRIVATE-sector rate was ___ percent.",
+            answer: "5.9",
+            accept: ["5.9 percent", "5.9%"],
+            explanation:
+              "Modern American unionism is overwhelmingly a public-sector phenomenon. That is a completely different labor movement from the one that shut down GM in 1937.",
+          },
+          {
+            prompt: "Martin Luther King Jr. was in Memphis on April 4, 1968 to support a strike by ___ workers.",
+            answer: "sanitation",
+            accept: ["sanitation workers", "garbage", "AFSCME sanitation"],
+            explanation:
+              "Roughly 1,300 Black sanitation workers, striking since February 12 for recognition of AFSCME Local 1733. The city recognized the union on April 16, twelve days after his assassination.",
+          },
+          {
+            prompt: "The Memphis strikers' placards read \"I AM A ___.\"",
+            answer: "man",
+            explanation: "Simultaneously a wage demand and a demand to be recognised as a human being. The strikers understood those were the same demand.",
+          },
+          {
+            prompt: "Permanent replacement of economic strikers was made lawful in the private sector not by Reagan in 1981 but by the Supreme Court in NLRB v. Mackay Radio in ___ (year).",
+            answer: "1938",
+            explanation:
+              "Under FDR, three years after the Wagner Act. What PATCO changed in 1981 was the norm, not the law.",
+          },
+          {
+            prompt: "The system in which unemployment insurance is administered by union-affiliated funds — and which explains high Nordic union density — is called the ___ system.",
+            answer: "Ghent",
+            explanation:
+              "Denmark, Sweden, Finland, Iceland and partly Belgium. Look for the plumbing before you reach for the culture.",
+          },
+          {
+            prompt: "Under Germany's Co-determination Act of 1976, companies with more than 2,000 employees must fill ___ of the supervisory board with employee representatives.",
+            answer: "half",
+            accept: ["50%", "one half", "1/2"],
+            explanation:
+              "Though the chair comes from the shareholder side and holds a casting vote — so it is parity of seats, not parity of power.",
+          },
+          {
+            prompt: "Japan's dominant union form, organized at a single company rather than by craft or industry, is the ___ union.",
+            answer: "enterprise",
+            explanation:
+              "It produces cooperation and very low strike rates — and systematically leaves out non-regular workers, the ones the company does not treat as its own people.",
+          },
+          {
+            prompt: "The two ILO fundamental conventions on freedom of association and collective bargaining, which the US, China and Qatar have all NOT ratified, are C087 and C___.",
+            answer: "098",
+            accept: ["98", "C98", "C098"],
+            explanation:
+              "C087 (1948) and C098 (1949) — the heart of everything this course is about, unratified by three countries that could hardly be more different.",
+          },
+          {
+            prompt: "Solidarity's very first demand at Gdańsk in August 1980 was not about pay. It was the right to form free trade unions ___ of the Communist Party.",
+            answer: "independent",
+            explanation:
+              "In a one-party state, \"who may organise?\" turned out to be the same question as \"who governs?\" Poland's communist government fell in 1989.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "section-7-quiz",
+      section: "Section 7 · The international floor, and the skill you keep",
+      title: "30 · Final check: the floor, and the skill",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "In what year was the International Labour Organization founded?",
+            options: ["1886", "1919", "1945", "1998"],
+            correctIndex: 1,
+            explanation:
+              "1919, in the treaty that ended the First World War, on the argument that lasting peace was impossible without social justice. It is older than the UN, and won the Nobel Peace Prize in 1969.",
+            sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
+          },
+          {
+            prompt: "What makes the ILO structurally unusual among international organizations?",
+            options: [
+              "It has its own police force",
+              "It is TRIPARTITE — member delegations include government, employer and worker delegates, and employers and workers vote independently of their own government",
+              "Only democracies may join",
+              "Its decisions are automatically binding on all members",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A country's trade unions get a seat and a vote at an international organization — and can vote against their own state. There is nothing else like it in the UN system.",
+            sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
+          },
+          {
+            prompt: "What is the difference between an ILO Convention and an ILO Recommendation?",
+            options: [
+              "A Convention binds every member automatically; a Recommendation binds only signatories",
+              "A Convention is a treaty that binds a country only if that country RATIFIES it; a Recommendation is non-binding guidance",
+              "There is no legal difference",
+              "A Recommendation is enforced by the International Court of Justice",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Ratification is voluntary. That is the whole reason the international floor is as low as it is.",
+            sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
+          },
+          {
+            prompt: "How many fundamental ILO conventions are there now, and what changed?",
+            options: [
+              "Eight — unchanged since 1998",
+              "Ten — occupational safety and health was added as a fundamental principle in June 2022, recognizing Conventions 155 and 187",
+              "Four — the number was reduced in 2022",
+              "Twelve — climate standards were added in 2020",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Five principles: freedom of association and collective bargaining; elimination of forced labour; abolition of child labour; elimination of discrimination; and — since 2022 — a safe and healthy working environment.",
+            sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
+          },
+          {
+            prompt: "How many of the ILO's fundamental conventions has the UNITED STATES ratified?",
+            options: ["All ten", "Eight", "Two — C105 and C182", "None"],
+            correctIndex: 2,
+            explanation:
+              "Only two. It has NOT ratified C087 (freedom of association) or C098 (collective bargaining) — putting it, on those two, alongside China and Qatar.",
+            sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
+          },
+          {
+            prompt: "The ILO's Committee on Freedom of Association can hear a complaint against a country that has NOT ratified Convention 87 or 98. Why?",
+            options: [
+              "Because the UN Security Council authorizes it case by case",
+              "Because the 1998 Declaration holds that all members, by virtue of MEMBERSHIP alone, must respect the fundamental principles — including freedom of association — ratified or not",
+              "Because non-ratifying countries automatically lose their vote",
+              "It cannot; ratification is required",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Complaints have been heard against both China and the United States on this basis. Freedom of association is treated as inherent in ILO membership.",
+            sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
+          },
+          {
+            prompt: "What is the ILO's ultimate sanction against a state that violates labour standards?",
+            options: [
+              "Economic sanctions",
+              "Expulsion from the United Nations",
+              "Embarrassment — it reports, examines, publishes, and at most convenes a Commission of Inquiry that names what it found. It has no police, no fines, no court.",
+              "Criminal prosecution of the officials responsible",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The floor is a floor the way a line painted on the ground is a fence. It matters — states do respond — but nobody enforces it against a determined government.",
+            sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
+          },
+          {
+            prompt: "Which single free, official source tells you fastest which labour treaties a country has actually committed to?",
+            options: [
+              "The ITUC Global Rights Index",
+              "ILO NORMLEX",
+              "The country's tourism ministry",
+              "A newspaper archive",
+            ],
+            correctIndex: 1,
+            explanation:
+              "NORMLEX lists every ratification. Start there, then read the country's own labour statute — which is boring, and decisive.",
+            sourceLessonSlug: "apply-the-four-questions",
+          },
+          {
+            prompt: "The US State Department and the ITUC often describe the same country's labour rights very differently. What does the course say to do about that?",
+            options: [
+              "Trust the State Department, because it is a government",
+              "Trust the ITUC, because it represents workers",
+              "Treat the GAP between two motivated sources as where the interesting question lives — and go find the statute",
+              "Discard both and rely on memory",
+            ],
+            correctIndex: 2,
+            explanation:
+              "That disagreement is not a problem with your research. It IS your research.",
+            sourceLessonSlug: "apply-the-four-questions",
+          },
+          {
+            prompt: "Which of the five habits explains why Nordic union density is high and German bargaining coverage is broad?",
+            options: [
+              "Notice who benefits from the version you are told",
+              "Look for the PLUMBING before you reach for the culture — institutional design explains more than national character almost every time",
+              "Every number carries a year and a source",
+              "When the record does not settle it, say so",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Nordic density is about who administers unemployment insurance (Ghent). German coverage is about bargaining level (sectoral). Neither is about national temperament.",
+            sourceLessonSlug: "apply-the-four-questions",
+          },
+          {
+            prompt: "\"Separate the text, the effect, and the motive.\" Which example in this course does that habit come from?",
+            options: [
+              "The PATCO strike",
+              "The NLRA's exclusion of agricultural and domestic workers — the statute's TEXT is undisputed, its EFFECT is measurable, and its MOTIVE is a historical argument",
+              "The founding of the ILO",
+              "The Ghent system",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You can prove what a statute says and measure what it did. What was in a senator's head is a different, harder claim — flag it as one.",
+            sourceLessonSlug: "apply-the-four-questions",
+          },
+          {
+            prompt: "Which question of the four explains why Germany, with a union membership rate close to America's, has roughly five times the bargaining coverage?",
+            options: [
+              "Q1 — who is allowed to organise?",
+              "Q2 — who is excluded?",
+              "Q3 — who bargains with whom, and at what level?",
+              "Q4 — what happens to you if you try?",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The question that looks boring and answers everything. German bargaining is sectoral; American bargaining is workplace by workplace.",
+            sourceLessonSlug: "apply-the-four-questions",
+          },
+          {
+            prompt: "Which question of the four connects the NLRA's \"agricultural laborer\" clause, Qatar's migrant workforce, Japan's non-regular workers, and the AFL's apprenticeships?",
+            options: [
+              "Q1 — who is allowed to organise?",
+              "Q2 — who is excluded?",
+              "Q3 — who bargains with whom?",
+              "Q4 — what happens to you if you try?",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Four countries, four eras, one mechanism: a category of worker defined as outside the protections everyone else gets.",
+            sourceLessonSlug: "apply-the-four-questions",
+          },
+          {
+            prompt: "According to the course, what was this whole course FOR?",
+            options: [
+              "To make you pro-union",
+              "To make you anti-union",
+              "To make you the person who asks \"covered, or a member? what year is that number? and who did the law leave out?\"",
+              "To prepare you for a career in labour law",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Pro- and anti- are conclusions, and they are yours to reach. The course gives you the questions, not the answer — and that person is very hard to fool.",
+            sourceLessonSlug: "apply-the-four-questions",
+          },
+          {
+            prompt: "Where does the course say to go for what your rights are on the job TODAY?",
+            options: [
+              "Back to Section 3 of this course",
+              "The companion course, *Know Your Rights at Work* — protected concerted activity, retaliation, at-will employment, reading your contract",
+              "The ILO's Committee on Freedom of Association",
+              "Nowhere; this course covers it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This course told you where those rights came from and who was cut out of them. That one tells you what to do on Monday.",
+            sourceLessonSlug: "apply-the-four-questions",
+          },
+        ],
+      },
+    },
   ],
 };
