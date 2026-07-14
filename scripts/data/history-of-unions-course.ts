@@ -1378,5 +1378,378 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
         ],
       },
     },
+
+    // ── Section 5 · The parts a comfortable course skips ──────────────────────
+    {
+      slug: "unions-own-exclusion-history",
+      section: "Section 5 · The parts a comfortable course skips",
+      title: "16 · The colour bar: unions' own history of exclusion",
+      recallContent: [
+        {
+          prompt: "What was the US union membership rate in 2025, and what was it in 1983?",
+          answer: "10.0% in 2025; 20.1% in 1983, the first year of BLS's comparable series (BLS, 2026).",
+        },
+        {
+          prompt: "What actually changed after PATCO in 1981 — the law, or the norm?",
+          answer:
+            "The norm. Permanent replacement of economic strikers had been lawful since NLRB v. Mackay Radio (1938). Employers had the power and had largely declined to use it; after PATCO they used it.",
+        },
+      ],
+      body: `Everything you have read has been the story of workers shut out by employers and by the state.
+
+This lesson is about workers shut out **by other workers.**
+
+If a course tells you unions were always the good guys, close the course. This part is documented, it is not marginal, and leaving it out is the single fastest way to lose a student who has heard the real version at home.
+
+**The exclusion was written down.**
+
+It was not a matter of tone or atmosphere. It was in the rulebooks:
+
+- Several **railroad brotherhoods** — among the most powerful unions in America — carried explicit whites-only clauses in their constitutions well into the twentieth century.
+- The AFL's craft unions often kept Black workers out of **apprenticeships**, which were the only door into a skilled trade. If you cannot become an apprentice, you cannot become a journeyman, and the union does not have to say a word about race.
+- Where Black workers *were* admitted, they were frequently placed in **segregated "auxiliary" locals** — a separate local with no vote, no full membership, and no say in the contract that governed their own jobs. During the Second World War, the Boilermakers ran exactly such auxiliaries; in **James v. Marinship Corp. (Cal. 1944)**, the California Supreme Court held that a union with a closed shop could not simultaneously keep Black workers in a subordinate auxiliary — you cannot control who gets hired *and* refuse people full membership.
+- And in **Steele v. Louisville & Nashville Railroad Co., 323 U.S. 192 (1944)**, the Supreme Court dealt with a union that had bargained *against* its own Black workers. Bester Steele was a Black locomotive fireman. His craft's exclusive bargaining representative — a union he was not allowed to join — negotiated with the railroad to push Black firemen out of the better jobs. The Court held that a union which holds the legal power to speak for **all** workers in a craft owes them all a **duty of fair representation**, and may not discriminate by race.
+
+Read that holding carefully. The Supreme Court in 1944 had to *invent a rule* that a union may not use its legal monopoly as a weapon against its own members' race — because a union was doing it.
+
+**And women.**
+
+The pattern is different but the mechanism is the same. Women were kept out of the craft apprenticeships that led to skilled, well-paid trades. Contracts negotiated by unions maintained **separate seniority lines** by sex, so a woman could not bid on a "man's" job no matter how long she had been there. Unions bargained for a "family wage" — a wage for a male breadwinner — which was an argument *for* paying women less. And some of the largest unions in the country were majority-women organizations run almost entirely by men.
+
+**When did this become illegal?** Not in 1935. **Title VII of the Civil Rights Act of 1964** made it an unlawful employment practice for a **labor organization** — expressly, not just an employer — to exclude or segregate members, or to classify them, on the basis of race, colour, religion, sex, or national origin (42 U.S.C. § 2000e-2(c)). Congress had to name unions in the statute.
+
+**And it goes right to the top.** In August 1963, the AFL-CIO's executive council **declined to endorse the March on Washington for Jobs and Freedom.** Walter Reuther of the United Auto Workers moved for a strong endorsement; among the federation's leadership only **A. Philip Randolph** — whom you meet in the next lesson — supported him. AFL-CIO president George Meany would not back the march. The UAW endorsed it anyway, and Reuther spoke from the podium (King Institute, Stanford, n.d.).
+
+**The honest summary.** The industrial unions of the CIO organized Black workers at scale; the craft unions of the AFL were often the mechanism that kept them out. Both are "the labor movement." A student who is told only the first half will, sooner or later, learn the second half from someone who will use it to tell them the whole thing was a fraud. It wasn't. But it also wasn't clean, and you are old enough to hold both.
+
+:::reveal What did Steele v. Louisville & Nashville Railroad Co. (1944) establish, and why did the Court have to establish it? ||| That a union holding the legal power to bargain for everyone in a craft owes all of them a "duty of fair representation" and may not discriminate by race. The Court had to say so because a union — which Black firemen were not even allowed to join — had bargained with the railroad to push them out of the better jobs.
+
+## Sources
+- Steele v. Louisville & Nashville Railroad Co., 323 U.S. 192 (1944). Cornell Law School, Legal Information Institute. https://www.law.cornell.edu/supremecourt/text/323/192
+- James v. Marinship Corp., 25 Cal. 2d 721 (1944). California Courts. https://scocal.stanford.edu/opinion/james-v-marinship-corp-27849
+- Civil Rights Act of 1964, Title VII, 42 U.S.C. § 2000e-2(c). U.S. Equal Employment Opportunity Commission. https://www.eeoc.gov/statutes/title-vii-civil-rights-act-1964
+- Martin Luther King, Jr. Research and Education Institute, Stanford University. (n.d.). *American Federation of Labor and Congress of Industrial Organizations (AFL-CIO)*. https://kinginstitute.stanford.edu/encyclopedia/american-federation-labor-and-congress-industrial-organizations-afl-cio
+- National Archives. (n.d.). *Chinese Exclusion Act (1882)*. Milestone Documents. https://www.archives.gov/milestone-documents/chinese-exclusion-act`,
+    },
+    {
+      slug: "randolph-to-memphis",
+      section: "Section 5 · The parts a comfortable course skips",
+      title: "17 · Randolph to Memphis: the labor half of the civil-rights movement",
+      recallContent: [
+        {
+          prompt: "How did craft unions exclude Black workers without writing a racial rule about jobs?",
+          answer:
+            "By keeping them out of apprenticeships — the only door into a skilled trade — and by placing them in segregated 'auxiliary' locals with no vote and no say in the contract governing their own jobs.",
+        },
+        {
+          prompt: "Which 1964 statute made it illegal for a LABOR ORGANIZATION to exclude or segregate members by race or sex?",
+          answer: "Title VII of the Civil Rights Act of 1964 (42 U.S.C. § 2000e-2(c)). Congress had to name unions in the statute.",
+        },
+      ],
+      body: `Everything in the last lesson is true. So is this.
+
+**A. Philip Randolph** spent his life fighting the exclusion you just read about — from *inside* the labor movement — and in doing so built the bridge between organized labor and the civil-rights movement.
+
+**1925.** Randolph founds the **Brotherhood of Sleeping Car Porters**. Pullman porters were Black men who made up the beds and served the passengers on the sleeping cars of America's railroads. It was one of the largest employers of Black men in the country, and one of the most humiliating jobs available: porters were routinely called "George," after George Pullman, rather than by their names.
+
+**1937.** After twelve years — twelve — the Brotherhood wins a contract with the Pullman Company. It is **the first collective bargaining agreement between a major American corporation and a Black-led union.** It brought pay increases, a shorter work month, and overtime.
+
+**1941.** Randolph threatens to march tens of thousands of Black Americans on Washington to demand jobs in the defense plants gearing up for war, and an end to segregation in the armed forces. Roosevelt does not want that march. On **June 25, 1941**, days before it was to happen, he issues **Executive Order 8802**, barring discrimination in defense industries and government, and creating the **Fair Employment Practice Committee** — the first presidential directive on race since Reconstruction (National Archives, n.d.). Randolph calls off the march.
+
+Notice the mechanism. **He got it by threatening to withhold and to mobilize.** That is a labor tactic, applied to a civil-rights demand, by a union president.
+
+**1963.** Randolph is the chief architect of the **March on Washington for Jobs and Freedom** — and his lieutenant Bayard Rustin organizes it. Look at the name. **"For Jobs and Freedom."** The economic half is in the title, and it is the half that gets dropped. It was a march for a higher minimum wage, for a jobs programme, for the right to work, as much as for the right to vote.
+
+---
+
+**And then Memphis.**
+
+**February 1, 1968.** Two Memphis sanitation workers, **Echol Cole and Robert Walker**, take shelter from the rain in the back of a garbage truck, because Black sanitation workers were not permitted to shelter in white neighbourhoods. The compactor malfunctions and crushes them to death. The city pays their families almost nothing.
+
+**February 12, 1968.** Roughly 1,300 Black sanitation workers walk out. They are asking for union recognition — **AFSCME Local 1733** — for a living wage, and for the city to stop treating them as disposable. Mayor Henry Loeb refuses to recognize the union.
+
+They carry signs that say four words:
+
+> ### I AM A MAN
+
+That is the entire demand. It is a wage demand and it is a demand to be recognised as a human being, and the strikers understood — better than most people who quote them now — that in their lives those were the same demand.
+
+**Martin Luther King Jr. came to Memphis to support that strike.** He came in March. He came back on **April 3, 1968**, and delivered the speech remembered as "I've Been to the Mountaintop" — to a hall of striking sanitation workers.
+
+**On April 4, 1968, he was assassinated on the balcony of the Lorraine Motel in Memphis.**
+
+He was there **for a strike**. He was in the middle of organizing the Poor People's Campaign, an economic campaign. And that fact is severed from his memory with astonishing consistency — the Nobel laureate, the dreamer, the marcher, and then, somehow, a man who happened to be standing on a motel balcony in Tennessee for no stated reason.
+
+He was there because 1,300 garbage collectors wanted a union.
+
+**April 16, 1968**, twelve days after the assassination, the City of Memphis recognized AFSCME Local 1733 and agreed to wage increases (AFSCME, n.d.).
+
+**Hold this next to the previous lesson, and do not resolve it.** The same labor movement whose craft unions kept Black workers out of apprenticeships also produced Randolph, the Brotherhood, and Local 1733. The AFL-CIO would not endorse the 1963 march that A. Philip Randolph — an AFL-CIO vice-president — had designed. **Both of those sentences are true at the same time.** Holding two true and contradictory things is not confusion. It is what history actually feels like.
+
+:::reveal Why was Martin Luther King Jr. in Memphis in April 1968? ||| He was there to support the strike of roughly 1,300 Black sanitation workers, who had walked out on February 12, 1968 seeking recognition of AFSCME Local 1733, a living wage, and safe conditions after two workers were crushed to death by a garbage truck. He was assassinated there on April 4, 1968; the city recognized the union on April 16.
+
+## Sources
+- Martin Luther King, Jr. Research and Education Institute, Stanford University. (n.d.). *Randolph, A. Philip*. https://kinginstitute.stanford.edu/randolph-philip
+- National Archives. (n.d.). *Executive Order 8802: Prohibition of discrimination in the defense industry (1941)*. Milestone Documents. https://www.archives.gov/milestone-documents/executive-order-8802
+- American Federation of State, County and Municipal Employees. (n.d.). *1968 AFSCME Memphis sanitation workers' strike chronology*. https://www.afscme.org/about/history/mlk/1968-afscme-memphis-sanitation-workers-strike-chronology
+- Library of Congress. (n.d.). *A. Philip Randolph papers*. https://hdl.loc.gov/loc.mss/eadmss.ms005004
+- National Park Service. (n.d.). *Martin Luther King, Jr. and the Memphis sanitation strike*. https://www.nps.gov/articles/000/mlk-memphis-sanitation-strike.htm`,
+    },
+    {
+      slug: "corruption-and-the-mob",
+      section: "Section 5 · The parts a comfortable course skips",
+      title: "18 · Corruption, the mob, and how the story got used",
+      recallContent: [
+        {
+          prompt: "What did the Brotherhood of Sleeping Car Porters achieve in 1937?",
+          answer:
+            "The first collective bargaining agreement between a major American corporation (the Pullman Company) and a Black-led union — after twelve years of organizing.",
+        },
+        {
+          prompt: "What is the full name of the 1963 March on Washington, and why does the course insist on it?",
+          answer:
+            "The March on Washington for Jobs and Freedom. The economic half is in the title and is the half routinely dropped — it was a march for a higher minimum wage and a jobs programme as well as for voting rights.",
+        },
+      ],
+      body: `There is one more thing a comfortable course leaves out, and this one is uncomfortable in the other direction.
+
+**Some American unions were genuinely corrupt, and some were genuinely controlled by organized crime.** Not as a smear. As a matter of federal court record.
+
+**What happened.**
+
+In 1957 the Senate created a select committee, chaired by Senator **John McClellan** with **Robert F. Kennedy** as chief counsel, to investigate racketeering in labor and management. It ran for two years, on television. Its central target was the **International Brotherhood of Teamsters** — the truck drivers' union, one of the largest in the country. Its president, Dave Beck, was convicted of embezzlement. His successor, **Jimmy Hoffa**, was convicted in the 1960s of jury tampering and of fraud involving the union's pension fund, and went to prison. In 1975 Hoffa disappeared. He has never been found. **This course is not going to tell you what happened to him, because nobody has established what happened to him** — and the internet is full of people who will.
+
+The AFL-CIO **expelled the Teamsters** in December 1957.
+
+**What it produced legally.** The McClellan hearings led directly to the **Labor-Management Reporting and Disclosure Act of 1959** — the **Landrum-Griffin Act**. It:
+
+- Created a **bill of rights for union members** (Title I): free speech in union meetings, equal voting rights, protection against arbitrary discipline by your own union, and the right to sue it.
+- Required unions to file **public financial reports** with the federal government.
+- Regulated **union elections**, so officers had to face their members.
+
+**And in 1989**, the US government brought a civil racketeering (RICO) case against the Teamsters that ended in a **consent decree**: the union accepted federal court supervision, an Independent Review Board with power to expel corrupt officials, and — this is the important part — **direct, one-member-one-vote election of its international officers**, supervised by a court-appointed monitor. The union operated under that court supervision for decades; a 2015 settlement began winding it down (U.S. Department of Justice, 2015).
+
+**Now the four things you have to hold at once.** This is the whole lesson.
+
+1. **The corruption was real.** People stole pension money that belonged to truck drivers. Some union officials worked with organized crime, and some workers were beaten. Denying it is not solidarity; it is just lying.
+2. **It was not universal.** It was concentrated in specific unions and specific locals, in industries — trucking, longshore, construction, waste — where controlling access to work is enormously valuable to a criminal organization. Most unions were not mobbed up, and the vast majority of union members were being robbed by nobody.
+3. **The story was also a weapon.** "Union boss" as an image — the cigar, the sedan, the shakedown — did a great deal of political work far beyond anything the McClellan Committee found, and it is still doing that work today. Notice when someone reaches for it, and notice whether they have a case or a caricature.
+4. **The cure is being used by the workers.** Landrum-Griffin's union-democracy provisions and the Teamsters' court-ordered direct elections were meant to police corrupt unions. Rank-and-file reformers have used those same rules to take unions back from their own leaderships and run them differently. The tool built to discipline unions became a tool workers used inside them.
+
+That is what a real institution looks like: capable of theft and capable of Memphis, sometimes in the same decade, sometimes in the same building. **Your job is not to decide whether unions are Good. Your job is to be able to look at a specific union, in a specific place, in a specific year, and find out what is actually true about it.**
+
+Which is exactly the skill the rest of this course is going to make you use on six countries.
+
+:::reveal Name the four things this course says you must hold at once about union corruption. ||| (1) It was real — pensions were stolen, some officials worked with organized crime. (2) It was not universal — it concentrated in industries where controlling access to work is valuable to criminals. (3) The story was also used as a political weapon far beyond what was ever proved. (4) The cure — Landrum-Griffin's union-democracy rules and court-ordered direct elections — has been used by rank-and-file members to reform their own unions.
+
+## Sources
+- Labor-Management Reporting and Disclosure Act of 1959, 29 U.S.C. §§ 401–531. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?path=/prelim@title29/chapter11&edition=prelim
+- National Labor Relations Board. (n.d.). *1959 Landrum-Griffin Act*. Our history. https://www.nlrb.gov/about-nlrb/who-we-are/our-history/1959-landrum-griffin-act
+- U.S. Department of Labor, Office of Labor-Management Standards. (n.d.). *Union member rights and officer responsibilities under the LMRDA*. https://www.dol.gov/agencies/olms/compliance-assistance/members
+- U.S. Department of Justice, U.S. Attorney's Office, Southern District of New York. (2015, January 14). *Manhattan U.S. Attorney announces proposed settlement agreement in landmark civil RICO action* [Press release]. https://www.justice.gov/usao-sdny/pr/manhattan-us-attorney-announces-proposed-settlement-agreement-landmark-civil-rico
+- U.S. Senate. (n.d.). *Select Committee on Improper Activities in the Labor or Management Field (McClellan Committee)*. https://www.senate.gov/about/powers-procedures/investigations/mcclellan-committee.htm`,
+    },
+    {
+      slug: "section-5-quiz",
+      section: "Section 5 · The parts a comfortable course skips",
+      title: "19 · Check yourself: the parts that get skipped",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How did AFL craft unions commonly exclude Black workers WITHOUT writing a racial rule about jobs?",
+            options: [
+              "By requiring a college degree",
+              "By keeping them out of apprenticeships — the only door into a skilled trade",
+              "By charging higher dues",
+              "By moving all work out of state",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No apprenticeship, no journeyman. The union never has to say a word about race. Several railroad brotherhoods also carried explicit whites-only clauses in their constitutions.",
+            sourceLessonSlug: "unions-own-exclusion-history",
+          },
+          {
+            prompt: "What was a segregated \"auxiliary\" local?",
+            options: [
+              "A local for retired members",
+              "A separate local for Black workers with no vote, no full membership, and no say in the contract governing their own jobs",
+              "An overseas branch of an American union",
+              "A local for supervisors",
+            ],
+            correctIndex: 1,
+            explanation:
+              "James v. Marinship Corp. (Cal. 1944) held that a union running a closed shop could not simultaneously keep Black workers in a subordinate auxiliary.",
+            sourceLessonSlug: "unions-own-exclusion-history",
+          },
+          {
+            prompt: "What did Steele v. Louisville & Nashville Railroad Co. (1944) establish?",
+            options: [
+              "That unions may not strike against railroads",
+              "That a union with the exclusive legal power to bargain for a craft owes ALL workers in it a duty of fair representation and may not discriminate by race",
+              "That Black workers must form separate unions",
+              "That the Railway Labor Act does not apply to firemen",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Court had to invent the rule because a union — which Bester Steele was not even allowed to join — had bargained with the railroad to push Black firemen out of the better jobs.",
+            sourceLessonSlug: "unions-own-exclusion-history",
+          },
+          {
+            prompt: "Which 1964 statute made it an unlawful employment practice for a LABOR ORGANIZATION to exclude or segregate members by race or sex?",
+            options: [
+              "The National Labor Relations Act",
+              "Title VII of the Civil Rights Act of 1964 (42 U.S.C. § 2000e-2(c))",
+              "The Fair Labor Standards Act",
+              "The Landrum-Griffin Act",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Congress had to name unions expressly in the statute — employers alone were not enough.",
+            sourceLessonSlug: "unions-own-exclusion-history",
+          },
+          {
+            prompt: "What did the AFL-CIO's executive council do about the 1963 March on Washington?",
+            options: [
+              "Organized and funded it",
+              "Declined to endorse it — only A. Philip Randolph supported Walter Reuther's motion for a strong endorsement; the UAW endorsed it anyway",
+              "Voted to oppose it publicly",
+              "Endorsed it unanimously",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The federation would not back a march its own vice-president, A. Philip Randolph, had designed.",
+            sourceLessonSlug: "unions-own-exclusion-history",
+          },
+          {
+            prompt: "What did the Brotherhood of Sleeping Car Porters win in 1937, twelve years after it was founded?",
+            options: [
+              "A seat on the Pullman Company's board",
+              "The first collective bargaining agreement between a major American corporation and a Black-led union",
+              "A federal law banning racial discrimination",
+              "Membership in the CIO",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Twelve years of organizing. It brought pay increases, a shorter work month, and overtime.",
+            sourceLessonSlug: "randolph-to-memphis",
+          },
+          {
+            prompt: "How did A. Philip Randolph obtain Executive Order 8802 in 1941?",
+            options: [
+              "By winning a lawsuit against the federal government",
+              "By threatening to march tens of thousands of Black Americans on Washington — a labor tactic applied to a civil-rights demand",
+              "By lobbying Congress for five years",
+              "By calling a nationwide general strike",
+            ],
+            correctIndex: 1,
+            explanation:
+              "EO 8802 barred discrimination in defense industries and created the Fair Employment Practice Committee — the first presidential directive on race since Reconstruction. Randolph called off the march.",
+            sourceLessonSlug: "randolph-to-memphis",
+          },
+          {
+            prompt: "What is the FULL name of the 1963 March on Washington?",
+            options: [
+              "The March on Washington for Civil Rights",
+              "The March on Washington for Jobs and Freedom",
+              "The March on Washington for Voting Rights",
+              "The National March for Equality",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The economic half is in the title, and it is the half that gets dropped. It was a march for a higher minimum wage and a jobs programme as well as for the vote.",
+            sourceLessonSlug: "randolph-to-memphis",
+          },
+          {
+            prompt: "What triggered the Memphis sanitation strike that began on February 12, 1968?",
+            options: [
+              "A pay cut announced by the mayor",
+              "Two workers, Echol Cole and Robert Walker, were crushed to death by a garbage truck compactor on February 1 — having sheltered inside it because Black sanitation workers were not permitted to shelter in white neighbourhoods",
+              "A federal court order",
+              "The assassination of Martin Luther King Jr.",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The city paid their families almost nothing. Roughly 1,300 workers walked out seeking recognition of AFSCME Local 1733, a living wage, and safe conditions.",
+            sourceLessonSlug: "randolph-to-memphis",
+          },
+          {
+            prompt: "Why was Martin Luther King Jr. in Memphis when he was assassinated on April 4, 1968?",
+            options: [
+              "For a voter-registration rally",
+              "To support the sanitation workers' strike — he had spoken to a hall of strikers the night before",
+              "He was passing through on his way to Atlanta",
+              "To testify before a congressional committee",
+            ],
+            correctIndex: 1,
+            explanation:
+              "He was there for a strike. That fact is severed from his memory with astonishing consistency. The city recognized AFSCME Local 1733 on April 16, twelve days later.",
+            sourceLessonSlug: "randolph-to-memphis",
+          },
+          {
+            prompt: "What did the Memphis strikers' placards say?",
+            options: ["WE SHALL OVERCOME", "I AM A MAN", "UNION NOW", "JOBS AND FREEDOM"],
+            correctIndex: 1,
+            explanation:
+              "Four words that were simultaneously a wage demand and a demand to be recognised as a human being. The strikers understood those were the same demand.",
+            sourceLessonSlug: "randolph-to-memphis",
+          },
+          {
+            prompt: "The McClellan Committee (1957–59), with Robert F. Kennedy as chief counsel, primarily investigated:",
+            options: [
+              "The Congress of Industrial Organizations",
+              "Racketeering in labor and management — centrally, the International Brotherhood of Teamsters",
+              "The National Labor Relations Board",
+              "The United Farm Workers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It ran for two years, on television. The AFL-CIO expelled the Teamsters in December 1957.",
+            sourceLessonSlug: "corruption-and-the-mob",
+          },
+          {
+            prompt: "What did the Landrum-Griffin Act of 1959 create?",
+            options: [
+              "A federal ban on strikes",
+              "A bill of rights for UNION MEMBERS — free speech in meetings, equal voting rights, protection from arbitrary discipline by their own union — plus public financial reporting and regulated union elections",
+              "The National Labor Relations Board",
+              "State right-to-work laws",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It was aimed at corrupt unions. Rank-and-file reformers have since used those same rules to take unions back from their own leaderships.",
+            sourceLessonSlug: "corruption-and-the-mob",
+          },
+          {
+            prompt: "What did the 1989 Teamsters consent decree require?",
+            options: [
+              "That the union dissolve",
+              "Federal court supervision, an Independent Review Board that could expel corrupt officials, and direct one-member-one-vote election of international officers",
+              "That the union rejoin the AFL-CIO",
+              "That all Teamster contracts be renegotiated",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The union operated under court supervision for decades; a 2015 settlement began winding it down.",
+            sourceLessonSlug: "corruption-and-the-mob",
+          },
+          {
+            prompt: "What does the course say about what happened to Jimmy Hoffa?",
+            options: [
+              "He was killed by a rival Teamster faction, as court records show",
+              "It refuses to say — he disappeared in 1975 and nobody has established what happened to him",
+              "He fled to Brazil",
+              "He died of natural causes in prison",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Same rule as Haymarket. The record does not settle it, so the course does not pretend it does — and notes that the internet is full of people who will.",
+            sourceLessonSlug: "corruption-and-the-mob",
+          },
+        ],
+      },
+    },
   ],
 };
