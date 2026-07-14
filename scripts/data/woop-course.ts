@@ -1291,5 +1291,450 @@ Answer with one word unless the item says otherwise. Spelling is forgiving. When
         ],
       },
     },
+
+    // ─────────────── SECTION 4 · THE FOUR STEPS, DONE PROPERLY ───────────────
+    {
+      slug: "mcii-the-four-steps",
+      title: "16 · The four steps: wish, outcome, obstacle, plan",
+      section: "Section 4 · The four steps, done properly",
+      recallContent: [
+        {
+          prompt: "State the two rules for writing an if-then that fires.",
+          answer:
+            "The IF must be detectable (a time, place, object, action, or bodily state you can notice without effort). The THEN must be an action you can start within seconds, not a mood, a quantity, or a direction.",
+        },
+        {
+          prompt: "Where does the IF of your plan come from?",
+          answer:
+            "From the inner obstacle you found by mental contrasting. The obstacle IS the trigger, which is why it has to be inner and detectable.",
+        },
+      ],
+      body: `You now have both halves. Here is the assembled protocol, which is what the intervention studies actually administer.
+
+The clearest published description of the procedure is in the methods of the exercise trial: participants **named their most important wish** in the target domain, **mentally elaborated the most positive aspect** they associated with realising it, then **named and elaborated the most critical obstacle**, and finally **formed three implementation intentions** (Stadler, Oettingen, & Gollwitzer, 2009). That is the four-step protocol, and Oettingen's team teaches the same four steps to the public under the four ordinary words **wish, outcome, obstacle, plan**.
+
+| Step | What you produce | Why it is there |
+| --- | --- | --- |
+| **1. Wish** | One meaningful wish, challenging but feasible, with a time frame you can see | A wish that is impossible produces nothing; a wish that is trivial produces nothing. The method needs a real one. |
+| **2. Outcome** | The single **best** thing about that wish coming true, elaborated vividly | This is the fuel. It is also the step everyone else stops at, which is why everyone else fails. |
+| **3. Obstacle** | The single most critical **inner** obstacle, elaborated vividly | This is the collision. It is also where you harvest your trigger. |
+| **4. Plan** | An if-then plan: **if [obstacle], then I will [action]** | This is the automation. It is what fires on Tuesday when you feel nothing. |
+
+**Four things that are easy to get wrong, and are the difference between running the method and performing a ritual.**
+
+1. **The order is not decorative.** Outcome before obstacle. Reverse it and the effect weakens (Lesson 6). Skip the outcome entirely and you are dwelling. Skip the obstacle and you are indulging, which is worse than doing nothing.
+2. **One wish. One outcome. One obstacle.** Not a list. The method asks for *the most important* and *the most critical*, singular, because the point is to force a choice, and a list is how you avoid one.
+3. **Elaborate, do not label.** "Obstacle: procrastination" is a label. Elaboration means actually going there in your head: seeing the sofa, feeling the specific slump at 6:40 pm, watching your hand reach for the phone. The vividness is not garnish. It is the mechanism.
+4. **The plan is built FROM the obstacle.** If your plan would still make sense without your obstacle, you have not run the method, you have just written a to-do item next to a daydream.
+
+**A worked example, and it is a small ugly one on purpose.** Big inspiring goals make bad demonstrations, because you cannot check them. Here is a freelancer who is not getting paid on time:
+
+- **Wish:** Get paid on time, every month.
+- **Outcome:** The relief of an account that does not dip in the third week. No more chasing.
+- **Obstacle:** I never log my hours as I go, so when invoicing day comes I cannot face reconstructing the month, and I put it off.
+- **Plan:** If I close my laptop at the end of a working day, then I will log that day's hours before I stand up.
+
+Notice what that plan is *not*. It is not "invoice on time." It is not "be more organised." It attacks the **obstacle**, which was never the invoicing at all. It was the logging. That is what the obstacle step is for: it moves the intervention from the place where the pain shows up to the place where the failure actually happens.
+
+(This mapping of the four steps onto getting paid as a freelancer is BAM's, from the *She Clocked In* series, and it is a correct and non-trivial application of the method.)
+
+**How long should this take?** Minutes. The exercise trial's whole self-regulation component was taught in a single session, and the adolescent study's intervention was a **30-minute written exercise** (Duckworth, Grant, Loew, Oettingen, & Gollwitzer, 2011). Once you know the four steps, a single run on a single wish takes about five minutes. It is not a retreat. It is a tool you use on a Tuesday.
+
+:::reveal In the freelancer example, why is the plan about LOGGING HOURS rather than about invoicing, when the wish was to get paid? ||| Because the plan is built from the **obstacle**, not from the wish. The pain showed up at invoicing, but the failure actually happened weeks earlier, at the point where the hours never got logged. The obstacle step is what moves the intervention from where it hurts to where it breaks. A plan that would still make sense without your obstacle ("invoice on time!") is not an MCII plan at all, it is a to-do item written next to a daydream.
+
+## Sources
+- Duckworth, A. L., Grant, H., Loew, B., Oettingen, G., & Gollwitzer, P. M. (2011). Self-regulation strategies improve self-discipline in adolescents: Benefits of mental contrasting and implementation intentions. *Educational Psychology, 31*(1), 17-26. https://doi.org/10.1080/01443410.2010.506003
+- Stadler, G., Oettingen, G., & Gollwitzer, P. M. (2009). Physical activity in women: Effects of a self-regulation intervention. *American Journal of Preventive Medicine, 36*(1), 29-34. https://doi.org/10.1016/j.amepre.2008.09.021`,
+    },
+    {
+      slug: "mcii-run-it-on-your-goal",
+      title: "17 · Your turn: run it, now, on the goal you wrote down in Lesson 1",
+      section: "Section 4 · The four steps, done properly",
+      recallContent: [
+        {
+          prompt: "Name the four steps and what each one produces.",
+          answer:
+            "Wish (one meaningful, challenging but feasible wish with a visible time frame), Outcome (the single best thing about it, elaborated vividly), Obstacle (the single most critical inner obstacle, elaborated vividly), Plan (if [obstacle], then I will [action]).",
+        },
+        {
+          prompt: "What is the difference between labelling an obstacle and elaborating one?",
+          answer:
+            "A label is a word ('procrastination'). Elaboration is actually going there: the room, the time of day, the feeling, the hand reaching for the phone. The vividness is the mechanism, not decoration.",
+        },
+      ],
+      body: `This lesson is not reading. **Get a piece of paper or open a note. You will need about five minutes and you will need to actually write.** The research administers this as a written exercise, and the writing is doing work.
+
+**Step 1. The wish.** Look at the goal you wrote down in Lesson 1. Now sharpen it against two tests:
+
+- **Is it challenging?** If you would achieve it anyway, without any of this, pick a harder one.
+- **Is it feasible?** Could a version of you actually do this in the next four weeks? If genuinely not, shrink it until it is, or pick another one. (If you cannot make it feasible, re-read Lesson 8. That is information, not failure.)
+
+Write it in a handful of words. Not a paragraph. If you cannot say it in one line, you do not have one wish, you have three.
+
+**Step 2. The outcome.** Ask yourself: **what is the single best thing about this wish coming true?** Not a list of benefits. The best one.
+
+Write it down. Then close your eyes and actually go there for thirty seconds or so. What does it look like? What are you doing? Who says what to you? What does your chest feel like? Do not rush this and do not skip it out of embarrassment. This step is the fuel, and if you have ever been told visualization is powerful, this is the grain of truth inside that advice. **The error was never the visualizing. The error was stopping here.**
+
+**Step 3. The obstacle.** Now ask the question that everything turns on: **what is it, in ME, that stops this from happening?**
+
+Apply the Lesson 7 test ruthlessly. Not the world. Not other people. Not a missing purchase. Not an insult like "I'm lazy." A thought, a feeling, a habit, or a state, and concrete enough that you could notice it happening.
+
+Write it down. Then elaborate it for thirty seconds the same way you elaborated the outcome: the room, the hour, the feeling, the exact thing your hands do instead.
+
+If nothing comes, ask "and what stops me from doing that?" over and over until the answer is finally about you. It usually takes three or four rounds, and the last one is usually uncomfortable. That is the one.
+
+**Step 4. The plan.** Write, in this exact shape:
+
+> **If [my obstacle happens], then I will [specific action I can start in five seconds].**
+
+Say it to yourself once, as a decision, not a prediction.
+
+Then, if you want to follow the exercise trial (Stadler, Oettingen, & Gollwitzer, 2009), **write two more**: one more obstacle-triggered plan for the same obstacle in a different situation, and one opportunity-triggered plan for a moment when the obstacle does not even arise. Three plans total. That is what the participants who doubled their physical activity actually wrote.
+
+**What good output looks like.** You should now be holding five short lines: a wish, an outcome, an obstacle, and one to three if-then plans. It should feel slightly deflating rather than inspiring. **That deflation is the method working.** The energy you would have got from the daydream has been converted into an accurate picture of a specific thing you have to walk through this week. That is a worse feeling and a better position.
+
+**Then go and use the free tool.** Oettingen's team maintains a free app and website (WOOP my life, n.d.) that walks you through these four steps and stores them. It is theirs, it is free, and it is better at reminding you than this page is. This course taught you the science and the craft. Their tool is a good place to keep running it. (As Lesson 1 said, we are not affiliated with them in any way.)
+
+:::reveal You finish your first run and feel slightly deflated rather than fired up. Is something wrong? ||| No. **The deflation is the method working.** Indulging in the outcome hands you a hit of the feeling you were after and drains the energy to pursue it (Kappes & Oettingen, 2011). Mental contrasting takes that hit away and hands you something better: an accurate picture of one specific thing you have to walk through this week, and a pre-made decision about what you will do when it shows up. It is a worse feeling and a much better position.
+
+## Sources
+- Kappes, H. B., & Oettingen, G. (2011). Positive fantasies about idealized futures sap energy. *Journal of Experimental Social Psychology, 47*(4), 719-729. https://doi.org/10.1016/j.jesp.2011.02.003
+- Stadler, G., Oettingen, G., & Gollwitzer, P. M. (2009). Physical activity in women: Effects of a self-regulation intervention. *American Journal of Preventive Medicine, 36*(1), 29-34. https://doi.org/10.1016/j.amepre.2008.09.021
+- WOOP my life. (n.d.). *WOOP* [Website]. https://woopmylife.org/`,
+    },
+    {
+      slug: "mcii-when-it-goes-wrong",
+      title: "18 · The six ways people run it wrong",
+      section: "Section 4 · The four steps, done properly",
+      recallContent: [
+        {
+          prompt: "What does the exercise-trial protocol have participants produce at the plan step?",
+          answer:
+            "Three implementation intentions, not one (Stadler, Oettingen, & Gollwitzer, 2009). Those are the participants who ended up twice as physically active as the information-only group.",
+        },
+        {
+          prompt: "You finish a run and feel deflated rather than inspired. What does that mean?",
+          answer:
+            "That it worked. The daydream's hit of borrowed feeling has been replaced by an accurate picture of a specific obstacle and a pre-made decision. Worse feeling, better position.",
+        },
+      ],
+      body: `Almost every failure of this method is one of six things, and five of them happen at the obstacle step.
+
+**1. The obstacle is an excuse wearing an obstacle's coat.** "I don't have time." "The market is bad." "My kids need me." Some of these are entirely true. None of them is usable, because you cannot build a trigger from them (Lesson 7). If your obstacle absolves you, it is the wrong obstacle. **A real inner obstacle is mildly unpleasant to admit.** That discomfort is the signal you have found it.
+
+**2. The obstacle is an insult.** "I'm lazy." "I have no discipline." "I'm just not a morning person." These feel like brutal honesty and they are actually a way of *not* looking. A character judgment cannot be detected at 6:40 pm. A hand reaching for a phone can.
+
+**3. The wish is too big.** "Change careers." "Get healthy." "Be a better person." A wish this size has no single most-critical obstacle, because it has forty, and so the obstacle step produces mush. Shrink the wish until it has a visible time frame and one honest obstacle. You can always run the method again on the next piece.
+
+**4. The plan is not a plan.** Re-read Lesson 13 and check both halves. "If I get the chance, then I will try harder" contains no detectable cue and no startable action. It is a wish with punctuation.
+
+**5. The outcome step gets skipped, or gets skimped.** People rush it because it feels indulgent, or because they have absorbed the message of Lesson 3 as "daydreaming is bad." It is not. **Mental contrasting requires the vivid positive future.** Without it there is no contrast, and you are just dwelling on your own inadequacy, which produces nothing (Oettingen, 2012). Give the outcome its thirty seconds and let yourself enjoy them.
+
+**6. The method is used as a mood-booster.** This is the subtlest failure and it is the one that turns the method against itself. If you run the four steps in order to *feel motivated*, you will unconsciously pick a flattering obstacle, write an easy plan, and finish the exercise with a pleasant glow and no changed behavior. **You will have found a way to indulge in the method itself.** The tell is that it felt good. Run it correctly and it mostly does not.
+
+**And the seventh thing, which is not a mistake.** Sometimes you run it honestly and the goal dies. You look at the obstacle, you consult your actual track record, and the commitment drains out. As Lesson 8 argued, that is the tool doing its job, with the caveat that the expectancy mechanism is less well evidenced than the theory would like (Wang, Wang, & Gai, 2021). Either way the practical advice is the same and it is not mystical: **do not force a goal you have no intention of pursuing. Free the effort and go put it somewhere it will convert.**
+
+:::reveal What is the single best tell that you have found your REAL inner obstacle, and the single best tell that you have run the whole method as a mood-booster? ||| The real obstacle is **mildly unpleasant to admit**. If your obstacle absolves you ("no time", "bad market"), it is an excuse wearing an obstacle's coat; if it insults you ("I'm lazy"), it is a character judgment you cannot detect in the moment. And the tell for the mood-booster failure is that **the exercise felt good**: you picked a flattering obstacle, wrote an easy plan, and got a pleasant glow with no changed behavior, which is indulging in the method itself. Run correctly, it mostly does not feel good.
+
+## Sources
+- Oettingen, G. (2012). Future thought and behaviour change. *European Review of Social Psychology, 23*(1), 1-63. https://doi.org/10.1080/10463283.2011.643698
+- Wang, G., Wang, Y., & Gai, X. (2021). A meta-analysis of the effects of mental contrasting with implementation intentions on goal attainment. *Frontiers in Psychology, 12*, Article 565202. https://doi.org/10.3389/fpsyg.2021.565202`,
+    },
+    {
+      slug: "mcii-exercise-diagnose-the-run",
+      title: "19 · Practice: diagnose the broken run",
+      section: "Section 4 · The four steps, done properly",
+      body: `Below are fragments of real-looking attempts at the method. Each one is broken in exactly one way, and every fault is on the list from Lesson 18. Name the step that is at fault, or the fault itself.
+
+Answer with one word. Spelling is forgiving.`,
+      exercise: {
+        instructions:
+          "For each broken run, answer with the name of the STEP that is at fault (wish, outcome, obstacle, or plan), unless the item asks for something else.",
+        items: [
+          {
+            prompt: "\"Wish: pass the exam. Outcome: relief, and my mum's face. Obstacle: the syllabus is enormous and the lecturer is bad. Plan: if I fall behind, then I will catch up.\" Which step is most at fault?",
+            answer: "obstacle",
+            explanation:
+              "The obstacle names the world (the syllabus, the lecturer), so it produces no trigger. The plan is broken too, but it is broken BECAUSE the obstacle was.",
+          },
+          {
+            prompt: "\"Wish: become a better person. Outcome: everything improves. Obstacle: ...\" Which step is at fault?",
+            answer: "wish",
+            explanation:
+              "A wish this size has forty obstacles, so the obstacle step produces mush. Shrink the wish until it has a visible time frame and one honest obstacle.",
+          },
+          {
+            prompt: "\"Wish: run three times a week. Outcome: I skipped this, it felt silly. Obstacle: I hit snooze and roll over. Plan: if the alarm goes, then I will put my feet on the floor.\" Which step is at fault?",
+            answer: "outcome",
+            explanation:
+              "Without the vivid positive future there is no CONTRAST, and you are just dwelling on your own inadequacy, which produces nothing (Oettingen, 2012).",
+          },
+          {
+            prompt: "\"Wish: write the novel. Outcome: seeing it on a shelf. Obstacle: at 9pm I feel a wave of dread that it will be bad, and I clean the kitchen instead. Plan: if I get a chance, then I will try harder.\" Which step is at fault?",
+            answer: "plan",
+            explanation:
+              "The obstacle is excellent. The plan wastes it: 'if I get a chance' is undetectable and 'try harder' is not a startable action. It is a wish with punctuation.",
+          },
+          {
+            prompt: "\"Obstacle: I'm just not a disciplined person.\" This obstacle is a character judgment rather than a detectable event. In one word, what is it?",
+            answer: "insult",
+            accept: ["an insult", "insulting"],
+            explanation:
+              "It feels like brutal honesty and is actually a way of not looking. 'I'm undisciplined' does not happen at 6:40 pm. Reaching for the phone does.",
+          },
+          {
+            prompt: "\"Obstacle: I genuinely have no time, I work two jobs.\" It may be completely true, and it is still unusable here. In one word, what is it functionally?",
+            answer: "excuse",
+            accept: ["an excuse", "outer", "external"],
+            explanation:
+              "It absolves you, and you cannot build a trigger from it. A real inner obstacle is mildly unpleasant to admit; that discomfort is the signal.",
+          },
+          {
+            prompt: "Someone runs all four steps, finishes feeling great and motivated, and changes nothing. They picked a flattering obstacle and an easy plan. They used the method as a ___ booster.",
+            answer: "mood",
+            explanation:
+              "The subtlest failure: indulging in the method itself. The tell is that it felt good. Run correctly, it mostly does not.",
+          },
+          {
+            prompt: "In a correct run, the IF of the plan must be built out of which earlier step?",
+            answer: "obstacle",
+            explanation:
+              "If your plan would still make sense without your obstacle, you did not run the method. You wrote a to-do item next to a daydream.",
+          },
+          {
+            prompt: "Which step comes second, immediately before the obstacle?",
+            answer: "outcome",
+            explanation:
+              "Wish, outcome, obstacle, plan. Outcome before obstacle: reversing them weakens the effect, and skipping the outcome turns the exercise into dwelling.",
+          },
+          {
+            prompt: "The exercise trial (Stadler et al., 2009) had participants form how many implementation intentions? (a number)",
+            answer: "three",
+            accept: ["3"],
+            explanation:
+              "Three. Those participants ended up roughly twice as physically active as the information-only group over four months.",
+          },
+          {
+            prompt: "\"Obstacle: procrastination.\" This is a label, not an elaboration. Elaborating means making it ___ (one word: what quality does the research require of the mental imagery?).",
+            answer: "vivid",
+            accept: ["concrete", "specific", "detailed"],
+            explanation:
+              "Vividness is the mechanism, not decoration. Go there: the room, the hour, the feeling, the exact thing your hands do instead.",
+          },
+          {
+            prompt: "You run the method honestly and your commitment drains away, because your track record genuinely says this is out of reach. According to Lesson 8, is that a bug or a feature?",
+            answer: "feature",
+            explanation:
+              "It frees effort a lost cause was consuming. Caveat from Section 2: the expectancy mechanism behind this is not confirmed in the pooled evidence (Wang et al., 2021).",
+          },
+        ],
+      },
+    },
+    {
+      slug: "mcii-quiz-the-four-steps",
+      title: "20 · Quiz: the four steps",
+      section: "Section 4 · The four steps, done properly",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What are the four steps, in order?",
+            options: [
+              "Wish, obstacle, outcome, plan",
+              "Wish, outcome, obstacle, plan",
+              "Outcome, wish, plan, obstacle",
+              "Plan, wish, outcome, obstacle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Outcome before obstacle. This mirrors mental contrasting (future first, then obstacle), and the plan is the implementation intention.",
+            sourceLessonSlug: "mcii-the-four-steps",
+          },
+          {
+            prompt: "What did participants in the exercise trial actually do at the plan step?",
+            options: [
+              "Wrote one implementation intention",
+              "Formed THREE implementation intentions",
+              "Wrote a weekly schedule",
+              "Signed a contract with the experimenter",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Named the wish, elaborated the best aspect, named and elaborated the critical obstacle, then formed three implementation intentions (Stadler et al., 2009).",
+            sourceLessonSlug: "mcii-the-four-steps",
+          },
+          {
+            prompt: "Why does the method ask for ONE wish, ONE outcome, and ONE obstacle rather than lists?",
+            options: [
+              "To save time",
+              "Because the point is to force a choice, and a list is how you avoid one",
+              "Because more than one confuses the app",
+              "Because the research only tested one of each",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The protocol asks for the MOST important wish and the MOST critical obstacle, singular. Lists produce mush at the obstacle step.",
+            sourceLessonSlug: "mcii-the-four-steps",
+          },
+          {
+            prompt: "What is the difference between labelling and elaborating an obstacle?",
+            options: [
+              "There is none",
+              "A label is a word (\"procrastination\"); elaboration is going there vividly: the room, the hour, the feeling, the thing your hands do instead",
+              "Labelling is the research-backed method; elaboration is folk advice",
+              "Elaboration means writing at least 500 words",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The vividness is the mechanism, not garnish. A label gives you nothing to detect in the moment.",
+            sourceLessonSlug: "mcii-the-four-steps",
+          },
+          {
+            prompt: "In the freelancer example, the wish was to get paid on time. Why was the PLAN about logging hours?",
+            options: [
+              "Because logging hours is more important than invoicing",
+              "Because the plan is built from the OBSTACLE, and the failure happened at logging even though the pain showed up at invoicing",
+              "Because the wish was wrong",
+              "Because invoicing cannot be automated",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The obstacle step moves the intervention from where it hurts to where it breaks. That is the whole value of the step.",
+            sourceLessonSlug: "mcii-the-four-steps",
+          },
+          {
+            prompt: "How long does a single run of the method take once you know the four steps?",
+            options: [
+              "A weekend retreat",
+              "About five minutes, and the adolescent study's whole intervention was a 30-minute written exercise",
+              "At least two hours",
+              "It must be repeated daily for a month before the first run counts",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Duckworth et al. (2011) delivered it as a single 30-minute written exercise. It is a tool you use on a Tuesday, not a retreat.",
+            sourceLessonSlug: "mcii-the-four-steps",
+          },
+          {
+            prompt: "Your wish should be...",
+            options: [
+              "As ambitious as possible, since aiming high raises performance",
+              "Challenging BUT feasible, with a time frame you can see",
+              "Easy, so that you definitely achieve it",
+              "Vague, so it can adapt as circumstances change",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A wish you would achieve anyway produces nothing; a wish that is impossible produces nothing. If it is not feasible, shrink it or re-read the boundary-condition lesson.",
+            sourceLessonSlug: "mcii-run-it-on-your-goal",
+          },
+          {
+            prompt: "Why should you NOT skip or skimp the outcome step, even after learning that positive fantasies sap energy?",
+            options: [
+              "Because it makes the exercise more enjoyable",
+              "Because mental contrasting REQUIRES the vivid positive future. Without it there is no contrast, and you are merely dwelling",
+              "Because the app will not let you continue",
+              "You should skip it: the research says fantasies are harmful",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The error was never the visualizing. The error was STOPPING there. Remove the future and you get dwelling, which produces nothing.",
+            sourceLessonSlug: "mcii-when-it-goes-wrong",
+          },
+          {
+            prompt: "You finish a run and feel deflated rather than inspired. What does that indicate?",
+            options: [
+              "You did it wrong and should try again",
+              "It worked. The borrowed feeling of the daydream has been replaced by an accurate picture of one specific thing you must walk through",
+              "Your expectations are too low and the goal should be abandoned",
+              "You skipped the plan step",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A worse feeling and a better position. Indulging hands you a hit of the outcome and drains the energy to pursue it (Kappes & Oettingen, 2011).",
+            sourceLessonSlug: "mcii-run-it-on-your-goal",
+          },
+          {
+            prompt: "What is the tell that you have found your REAL inner obstacle?",
+            options: [
+              "It is the first thing that came to mind",
+              "It is mildly unpleasant to admit",
+              "It makes you feel better about yourself",
+              "Other people agree with it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "If your obstacle absolves you, it is an excuse wearing an obstacle's coat. The discomfort is the signal you have arrived.",
+            sourceLessonSlug: "mcii-when-it-goes-wrong",
+          },
+          {
+            prompt: "Why is \"I'm lazy\" specifically called out as a failure mode?",
+            options: [
+              "Because it is unkind",
+              "Because a character judgment cannot be detected at 6:40 pm, whereas a hand reaching for a phone can. It feels like brutal honesty and is actually a way of not looking",
+              "Because laziness has been disproven",
+              "Because it is an external obstacle",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The obstacle must be a detectable event, because it has to serve as a trigger.",
+            sourceLessonSlug: "mcii-when-it-goes-wrong",
+          },
+          {
+            prompt: "What is the subtlest failure mode, in which the method turns against itself?",
+            options: [
+              "Writing the plan before the obstacle",
+              "Using the method as a mood-booster: picking a flattering obstacle and an easy plan, finishing with a pleasant glow and no changed behavior",
+              "Doing it in the morning rather than the evening",
+              "Running it on a work goal rather than a health goal",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You will have found a way to indulge in the method itself. The tell is that it felt good.",
+            sourceLessonSlug: "mcii-when-it-goes-wrong",
+          },
+          {
+            prompt: "\"Wish: become a better person.\" What is wrong with it?",
+            options: [
+              "Nothing: broad wishes work best",
+              "It is too big: a wish that size has forty obstacles, so the obstacle step produces mush",
+              "It is too easy",
+              "It is not positive enough",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Shrink the wish until it has a visible time frame and one honest obstacle. You can always re-run the method on the next piece.",
+            sourceLessonSlug: "mcii-when-it-goes-wrong",
+          },
+          {
+            prompt: "\"If I get a chance, then I will try harder.\" Why is this not a plan?",
+            options: [
+              "It is a fine plan",
+              "Neither half works: \"a chance\" is not a detectable cue, and \"try harder\" is not an action you can start in five seconds",
+              "Because it should be phrased as a goal intention",
+              "Because it does not mention the outcome",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is a wish with punctuation. Build the IF from your actual obstacle and shrink the THEN to a physical move.",
+            sourceLessonSlug: "mcii-when-it-goes-wrong",
+          },
+          {
+            prompt: "This course tells you to go and use the free WOOP app and website. What is the accompanying disclosure?",
+            options: [
+              "That the course earns a commission from it",
+              "That the course has no affiliation with, endorsement from, or licence from Oettingen's team or woopmylife.org, and reproduces none of their materials",
+              "That the app is unreliable",
+              "That using the app is required to pass the course",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The tool is theirs and it is free and good. The science is public and citable. This course teaches the second and points you at the first.",
+            sourceLessonSlug: "mcii-run-it-on-your-goal",
+          },
+        ],
+      },
+    },
   ],
 };
