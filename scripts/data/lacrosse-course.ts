@@ -16,14 +16,21 @@
 //    not, we say so and point the learner to the Nation instead of filling the gap. This is
 //    stated to the learner in Lesson 1 so the silence reads as respect, not omission.
 //
-//  • EVERY RULE IS QUOTED FROM A REAL, CURRENT RULEBOOK. No invented rule numbers. Men's and
-//    women's lacrosse are DIFFERENT GAMES with different codes; every rules lesson names the
-//    discipline AND the code (World Lacrosse vs. NCAA) before it gives a number:
-//      - World Lacrosse. Rules of Men's Field Lacrosse 2025–2027 (Ver. 1.0).
+//  • EVERY RULE IS QUOTED FROM A REAL, CURRENT RULEBOOK. No invented rule numbers. Every rule
+//    number cited in this course was checked against the rulebook PDF itself (July 2026), not
+//    against memory or a secondary source. Men's and women's lacrosse are DIFFERENT GAMES with
+//    different codes; every rules lesson names the discipline AND the code before it gives a
+//    number. Editions verified current against worldlacrosse.sport/the-game/playing-rules/:
+//      - World Lacrosse. Rules of Men's Field Lacrosse 2025–2027 (Ver. 1.1, Jan. 2025).
 //      - World Lacrosse. 2025–2026 Women's Field Lacrosse Rules (v1.1).
-//      - World Lacrosse. 2026–2028 Sixes Lacrosse Official Playing Rules (Ver. 1.0).
+//      - World Lacrosse. 2026–2028 Sixes Lacrosse Official Playing Rules (Ver. 2.0, May 2026).
+//      - World Lacrosse. 2026–2028 Box Lacrosse Official Playing Rules (Ver. 2.0, May 2026).
 //      - NCAA. 2025 and 2026 Men's Lacrosse Rules and Interpretations.
 //      - NCAA. 2026 and 2027 Women's Lacrosse Rules.
+//    NOTE: the Sixes/box books turned over to v2.0 in May 2026 and the men's field book to v1.1
+//    — an earlier draft of this course cited the superseded v1.0s. The course preaches "check
+//    the edition date"; it now passes its own test. One casualty: a draft line citing a specific
+//    ASTM standard number for Sixes women's eyewear was CUT — the rulebook names no number.
 //    Trap we defuse explicitly: the international women's field game is TEN a side (WL 5.A.3);
 //    NCAA women's is TWELVE (NCAA women's rules, Rule 1). Both are true; most of the internet
 //    reports only the second. Same for the shot clock (WL 80s both codes; NCAA women's 90s).
@@ -106,7 +113,7 @@ The other thing every code polices is **pocket depth** — how deep the mesh sag
 - National Collegiate Athletic Association. (2026b). *2025 NCAA women's lacrosse table reference sheet*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/2025PRWLA_NCAAWomensLacrosseTableReferenceSheet.pdf
 - Onondaga Nation. (n.d.). *Lacrosse*. https://www.onondaganation.org/culture/sports/lacrosse/
 - Onondaga Nation. (2023). *'National treasure of the Haudenosaunee' Alfie Jacques dies at 74*. https://www.onondaganation.org/news/2023/national-treasure-of-the-haudenosaunee-alfie-jacques-dies-at-74/
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf`,
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf`,
       recallContent: [
         {
           prompt: "What does the Onondaga Nation call lacrosse, and why?",
@@ -462,7 +469,7 @@ That equipment list exists because **body checking is legal** in the men's game 
 :::reveal In World Lacrosse men's field, what are the ten positions, how long is the shot clock, and how far is the goal from the end line? ||| 1 goalkeeper, 3 defenders, 3 midfielders, 3 attackers (Rule 19.1). The shot clock is 80 seconds (Rule 43.1). The goal sits 12 m from the end line (Rule 2.2) — there is real playing space behind the goal, and the modern attacking game lives there.
 
 ## Sources
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf`,
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf`,
       recallContent: [
         {
           prompt: "Who are the Haudenosaunee Nationals, and what did they give up in 2010?",
@@ -558,11 +565,11 @@ Skip either question and you will confidently state something false. Here is the
 | Field-player eye protection | (helmet/facemask) | **Permitted, not required** | (helmet/facemask) | **Required** |
 | Restart at center | Face-off | Draw | Face-off | Draw |
 
-Sources by cell: World Lacrosse (2025a) Rules 19.1, 1.1, 29.1, 43.1, 17.1; World Lacrosse (2025b) Rules 5.A.3, 1.A.2–1.A.3, 12.A.1, 24.A.1, 6.A.2, 13.A.5; NCAA (2025) Rule 1 Sec. 1–2, Rule 3 Sec. 1; NCAA (2026a) Rule 1, Rule 2 Sec. 18.
+Sources by cell: World Lacrosse (2025a) Rules 19.1, 1.1, 29.1, 43.1, 17.1; World Lacrosse (2025b) Rules 5.A.3, 1.A.2–1.A.3, 12.A.1, 24.A.1, 6.A.2, 13.A.5; NCAA (2025) Rule 1 Sec. 1–2, Rule 3 Sec. 1; NCAA (2026a) Rule 3 Sec. 1, Rule 2 Sec. 18.
 
 ### The three that trip everyone
 
-**1. "Women's lacrosse is 12-a-side."** Half true. NCAA women's: "Twelve players constitute a full team… One of the 12 players on each team may be a goalkeeper" (NCAA, 2026a, Rule 1). World Lacrosse women's: ten (Rule 5.A.3). Both are correct in their own code. Say which one you mean.
+**1. "Women's lacrosse is 12-a-side."** Half true. NCAA women's: "Twelve players constitute a full team… One of the 12 players on each team may be a goalkeeper" (NCAA, 2026a, Rule 3, Sec. 1). World Lacrosse women's: ten (Rule 5.A.3). Both are correct in their own code. Say which one you mean.
 
 **2. "Women don't wear helmets because the game is safer."** Wrong causality, and it gets the rule backwards. Under World Lacrosse women's rules field players are **not permitted** to wear headgear or face masks (Rule 6.A.2). The reasoning that produced the modern women's game runs the other way: because players are *not* armored, the rules remove the actions that armor exists to survive — no body checking, no defenders in the shooting lane (Rule 20.A.19), no crowding the goal (Rule 20.A.20). And under **NCAA** women's rules, **eye protection is mandatory**: "All field players shall wear eye protection properly" (NCAA, 2026a, Rule 2, Sec. 18). Different code, different answer, and neither is "the girls' version."
 
@@ -581,7 +588,7 @@ Sources by cell: World Lacrosse (2025a) Rules 19.1, 1.1, 29.1, 43.1, 17.1; World
 - National Collegiate Athletic Association. (2025). *2025 and 2026 NCAA men's lacrosse rules and interpretations*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/men/PRMLA_RulesBook.pdf
 - National Collegiate Athletic Association. (2026a). *2026 and 2027 NCAA women's lacrosse rules*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/PRWLA_RulesBook.pdf
 - World Lacrosse. (n.d.-c). *Playing rules*. https://worldlacrosse.sport/the-game/playing-rules/
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf
 - World Lacrosse. (2025b). *2025–2026 women's field lacrosse rules* (v1.1). https://worldlacrosse.sport/wp-content/uploads/2025/03/2025_2026-WF-Rulebook_FINALv1.1-1.pdf`,
       recallContent: [
         {
@@ -619,7 +626,7 @@ Why it matters even if you never play it: box is where a huge amount of the fiel
 - **Restart after a goal:** no face-off. "Following any goal, the Goalkeeper must retrieve the ball from the goal and ready it for play," with a five-second count. Possession simply goes to the other team and the game restarts instantly.
 - **One rulebook, two disciplines:** "Generally, the Official Rules of Sixes Lacrosse apply equally to women's and men's games. Where a rule is specific to a discipline, it is denoted with a 'W' (for Women) or 'M' (for Men) as part of the numbering."
 
-Those W/M markers are where the men's and women's games still diverge, and equipment is the clearest case. **Sixes men's (Rule 2.4.1M):** players are required to wear protective gloves and a lacrosse helmet with facemask and chinstrap. **Sixes women's (Rule 2.4.1W):** gloves, nose guards, and eye guards *may* be worn; eye guards must meet the ASTM F3077 standard or comparable. Same discipline, same field, same clock — different protective rules, because the contact rules differ.
+Those W/M markers are where the men's and women's games still diverge, and equipment is the clearest case. **Sixes men's (Rule 2.4.1M):** players are required to wear protective gloves and a lacrosse helmet with facemask and chinstrap. **Sixes women's (Rule 2.4.1W):** "Close-fitting gloves, nose guards, and eyewear **may** be worn by any field Player," and "all eyewear must meet applicable ASTM safety standard or a comparable standard." (The rulebook names no specific ASTM number here — so neither do we. If you see a course or a blog quote a precise standard code for this rule, ask them where they got it.) Same discipline, same field, same clock — different protective rules, because the contact rules differ.
 
 ### Why Sixes exists
 
@@ -628,8 +635,8 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
 :::reveal What is the Olympic lacrosse discipline, and what are its four defining numbers? ||| Sixes. Six players a side (five field players + a goalkeeper), a 70 m × 36 m field, four 8-minute quarters, and a 30-second shot clock (World Lacrosse, 2026b). After a goal there is no face-off — the goalkeeper restarts play.
 
 ## Sources
-- World Lacrosse. (2026a). *2026–2028 box lacrosse official playing rules*. https://worldlacrosse.sport/wp-content/uploads/2026/02/WL-26-28-Box-Rule-Book_Feb26.pdf
-- World Lacrosse. (2026b). *2026–2028 Sixes lacrosse official playing rules* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2026/02/WL-26-28-Sixes-Rule-Book_Feb26.pdf`,
+- World Lacrosse. (2026a). *2026–2028 box lacrosse official playing rules* (Ver. 2.0, May 2026). https://worldlacrosse.sport/wp-content/uploads/2026/05/26-28-Box-Rule-Book_v2_0526.pdf
+- World Lacrosse. (2026b). *2026–2028 Sixes lacrosse official playing rules* (Ver. 2.0, May 2026). https://worldlacrosse.sport/wp-content/uploads/2026/05/26-28-Sixes-Rule-Book_v2_0526.pdf`,
       recallContent: [
         {
           prompt: "Name three rules that differ between NCAA men's and NCAA women's lacrosse.",
@@ -853,7 +860,7 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
 :::reveal Which of the five fundamentals is the one coaches say wins games, and why is that literally true in a shot-clock sport? ||| Ground balls. A loose ball is a possession nobody owns; winning it hands you the ball and takes it from the other team. In a sport with an 80-second shot clock, every ground ball you win is up to 80 seconds of possession you take away from your opponent.
 
 ## Sources
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf`,
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf`,
       recallContent: [
         {
           prompt: "Name the four lacrosse disciplines.",
@@ -900,7 +907,7 @@ In the women's game, a major foul by the defense inside the critical scoring are
 :::reveal What is the real purpose of a dodge, and what is "X"? ||| A dodge's purpose isn't to score — it's to force the defense to move. When your defender is beaten, someone must slide to help, and the moment they do, a teammate is open. "X" is the space directly behind the goal (playable because the goal sits 12 m off the end line), the best attacking real estate on the field: your defender's back is to their own goal and you can attack from either side.
 
 ## Sources
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf
 - World Lacrosse. (2025b). *2025–2026 women's field lacrosse rules* (v1.1). https://worldlacrosse.sport/wp-content/uploads/2025/03/2025_2026-WF-Rulebook_FINALv1.1-1.pdf`,
       recallContent: [
         {
@@ -952,7 +959,7 @@ The goalkeeper is the only player who may touch the ball with a hand, and only i
 
 ## Sources
 - National Collegiate Athletic Association. (2026a). *2026 and 2027 NCAA women's lacrosse rules*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/PRWLA_RulesBook.pdf
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf
 - World Lacrosse. (2025b). *2025–2026 women's field lacrosse rules* (v1.1). https://worldlacrosse.sport/wp-content/uploads/2025/03/2025_2026-WF-Rulebook_FINALv1.1-1.pdf`,
       recallContent: [
         {
@@ -1003,8 +1010,8 @@ The women's game manages this differently — with **cards**. In NCAA women's la
 
 ## Sources
 - National Collegiate Athletic Association. (2026b). *2025 NCAA women's lacrosse table reference sheet*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/2025PRWLA_NCAAWomensLacrosseTableReferenceSheet.pdf
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf
-- World Lacrosse. (2026b). *2026–2028 Sixes lacrosse official playing rules* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2026/02/WL-26-28-Sixes-Rule-Book_Feb26.pdf`,
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf
+- World Lacrosse. (2026b). *2026–2028 Sixes lacrosse official playing rules* (Ver. 2.0, May 2026). https://worldlacrosse.sport/wp-content/uploads/2026/05/26-28-Sixes-Rule-Book_v2_0526.pdf`,
       recallContent: [
         {
           prompt: "What is a \"slide,\" and what does it cost you?",
@@ -1262,7 +1269,7 @@ Doing this once is a genuinely useful life skill and not just a lacrosse one: **
 
 ## Sources
 - World Lacrosse. (n.d.-c). *Playing rules*. https://worldlacrosse.sport/the-game/playing-rules/
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf`,
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf`,
       recallContent: [
         {
           prompt: "In transition, what's the difference between a clear and a ride?",
@@ -1311,7 +1318,7 @@ Learn your own code's fouls the way you'd learn vocabulary, because **the fouls 
 
 ## Sources
 - National Collegiate Athletic Association. (2026b). *2025 NCAA women's lacrosse table reference sheet*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/2025PRWLA_NCAAWomensLacrosseTableReferenceSheet.pdf
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf
 - World Lacrosse. (2025b). *2025–2026 women's field lacrosse rules* (v1.1). https://worldlacrosse.sport/wp-content/uploads/2025/03/2025_2026-WF-Rulebook_FINALv1.1-1.pdf`,
       recallContent: [
         {
@@ -1354,7 +1361,7 @@ Not ready to stand in the middle? Every game also needs a **timekeeper, a shot-c
 ## Sources
 - National Collegiate Athletic Association. (2026b). *2025 NCAA women's lacrosse table reference sheet*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/2025PRWLA_NCAAWomensLacrosseTableReferenceSheet.pdf
 - USA Lacrosse. (n.d.-a). *Officials*. https://www.usalacrosse.com/officials
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf`,
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf`,
       recallContent: [
         {
           prompt: "What is a \"free position\" in women's lacrosse?",
@@ -1675,12 +1682,12 @@ Six teams. That is a very small door.
 
 Here is the state of play, and here is the date attached to it. **As of the most recent reporting verified for this course (March 25, 2026):** the International Olympic Committee's position is that it will **not** allow the Haudenosaunee to compete under their own flag, because IOC eligibility rules require a **National Olympic Committee**, which in turn requires recognition as an independent state — which the Haudenosaunee, recognized by World Lacrosse but not by the United Nations, do not have. IOC officials have also warned that granting an exception might encourage other groups to seek recognition (Laskaris, 2026).
 
-The Haudenosaunee are not asking to be a country. They are asking to play their own game. Their director of lacrosse operations, Claudia Jimerson: **"The barrier is structural, not athletic"** (as quoted in Laskaris, 2026).
+The Haudenosaunee are not asking to be a country. They are asking to play their own game. Claudia Jimerson, the Nationals' director of lacrosse operations, put the whole thing in three sentences: "The Haudenosaunee Confederacy means every real definition of nationhood. We have governance, treaties, identity, land and international participation. But because we do not fit neatly into that imposed framework, we are excluded." And: **"The barrier is structural, not athletic"** (as quoted in Laskaris, 2026).
 
 Some things that have happened:
-- **January 17, 2025:** the outgoing U.S. administration, jointly with Canada, formally called on the IOC to grant the Haudenosaunee an exception. That request has not, as of the reporting above, been reissued by the current administrations (Laskaris, 2026; Onondaga Nation, 2025).
-- The Nationals are **preparing for the 2027 international competition** that any nation must go through to reach LA28 — while the question of whether they would be permitted to accept a place remains open (Laskaris, 2026).
-- Rex Lyons, the men's head coach, on the bureaucratic shape of the problem: "There's not a box for us to check. We are not recognized by the UN as a nation-state" (as quoted in Onondaga Nation, 2025).
+- **January 2025:** in the final week of the Biden administration, the U.S. and Canadian governments released a **joint statement calling on the IOC** to let the Haudenosaunee qualify for the Games under their own flag (Onondaga Nation, 2025). *What we deliberately do not tell you: whether any administration has since renewed that call. We could not verify that either way, so we don't assert it — go check.*
+- As of March 2026 the Nationals were **still pushing for IOC recognition**, and the IOC's position had not changed (Laskaris, 2026).
+- Rex Lyons, the men's head coach, on the bureaucratic shape of the problem: "There's not a box for us to check. We are not recognized by the UN as a nation-state. So politically, we're kind of an outlier. And it makes things challenging" (as quoted in Onondaga Nation, 2025).
 
 ### Your job, as a person who now knows this
 
@@ -1993,7 +2000,7 @@ The romantic version — you start a club, it grows, you turn pro — is rare. T
 - Aspen Institute Project Play. (n.d.). *Youth sports facts: Challenges*. https://projectplay.org/youth-sports/facts/challenges
 - National Collegiate Athletic Association. (2026a). *2026 and 2027 NCAA women's lacrosse rules*. https://ncaaorg.s3.amazonaws.com/championships/sports/lacrosse/rules/women/PRWLA_RulesBook.pdf
 - USA Lacrosse. (n.d.-b). *Coach certification*. https://www.usalacrosse.com/coach-certification
-- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2025/01/WL_Mens-Rules_25-27.pdf`,
+- World Lacrosse. (2025a). *Rules of men's field lacrosse: 2025–2027* (Ver. 1.1). https://worldlacrosse.sport/wp-content/uploads/2026/01/WL_Mens-Rules_25-27_FINAL_1.1.pdf`,
       recallContent: [
         {
           prompt: "At what age can someone hold a USA Lacrosse Junior Coach certification?",
@@ -2098,7 +2105,7 @@ Every barrier in this lesson is also an opening. A sport with an equipment gate 
 - Fultz, M., & Chen, S. (2012). A close look at the diversity of lacrosse. *KAHPERD Journal, 50*(1), 13–18. https://scholarworks.moreheadstate.edu/msu_faculty_research/309/
 - Harlem Lacrosse. (n.d.). *Harlem Lacrosse*. https://www.harlemlacrosse.org/
 - National Collegiate Athletic Association. (n.d.-a). *NCAA demographics database*. https://www.ncaa.org/sports/2018/12/13/ncaa-demographics-database.aspx
-- World Lacrosse. (2026b). *2026–2028 Sixes lacrosse official playing rules* (Ver. 1.0). https://worldlacrosse.sport/wp-content/uploads/2026/02/WL-26-28-Sixes-Rule-Book_Feb26.pdf`,
+- World Lacrosse. (2026b). *2026–2028 Sixes lacrosse official playing rules* (Ver. 2.0, May 2026). https://worldlacrosse.sport/wp-content/uploads/2026/05/26-28-Sixes-Rule-Book_v2_0526.pdf`,
       recallContent: [
         {
           prompt: "What's the rule that governs any lacrosse business idea?",
