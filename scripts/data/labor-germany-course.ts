@@ -366,5 +366,401 @@ Germans call that two-channel structure the **dual system** (*duales System*), a
         ],
       },
     },
+
+    // ────────────── SECTION 2 · CHANNEL ONE: THE WORKS COUNCIL ──────────────
+    {
+      slug: "germany-works-council-what-it-is",
+      title: "4 · The works council is not the union",
+      section: "Section 2 · Channel one — the works council (Betriebsrat)",
+      body: `The **works council** (*Betriebsrat*) is the part of the German system Americans consistently misunderstand, and the misunderstanding is always the same one: **people assume it is the union's branch office inside the company. It is not.**
+
+**What the statute actually says.** The **Works Constitution Act** (*Betriebsverfassungsgesetz*, BetrVG) — which the German Ministry of Justice publishes in an official English translation, so you can read it yourself — opens like this:
+
+> "Works councils are elected in all establishments that normally have **five or more permanent employees** with voting rights, including three who are eligible." (BetrVG, § 1(1))
+
+Five people. Not five hundred. **Any German workplace with five employees can have one.**
+
+**Now the four facts that make it a genuinely different object from anything in US law:**
+
+**1. It is elected by *all* the employees, not by union members.** Every employee in the establishment votes, whether or not they belong to a union — and whether or not any union exists there at all. A works council can be, and often is, entirely composed of people who have never joined anything.
+
+**2. It is a creature of statute, not of a contract.** In the United States, a union's rights inside a workplace come from a contract it had to *win* — an election, then a negotiation. A German works council's rights come from **an Act of Parliament**. Nobody has to win them. They are simply there, in the law, waiting for five employees to hold an election.
+
+**3. It is unpaid, and the employer pays for it anyway.** "The post of member of the works council is **unpaid**" (§ 37(1)) — you don't get a salary for it. But you are "released from your work duties **without loss of pay** to the extent necessary for the proper performance of your functions" (§ 37(2)), and **"the costs of the election are borne by the employer"** (§ 20(3)). Read those together: the law obliges the company to fund the body that will spend the next four years arguing with it. The regular term is **four years** (§ 21).
+
+**4. It cannot strike.** We will come back to this in Section 4, because it is the deal at the heart of the whole design. § 74(2) is blunt: **"Industrial action between the employer and the works council is unlawful."**
+
+**So what *is* the union's relationship to it?** Informal and enormous. Unions run the training, supply the legal support, and put up candidates — and in practice a large share of works councillors in unionised sectors *are* union members. But that is sociology, not law. **Legally, the works council is the workforce's body, not the union's.** The union bargains the sector from outside; the works council governs the workplace from inside. Two channels. Section 4 shows you the seam where they meet.
+
+**And the exclusions, so nobody sells you the fairy-tale version.** **Executive staff** (*leitende Angestellte*) are outside the Act (§ 5(3)) — they get a separate representative committee. And under **§ 118(2)**, the Act **"does not apply to religious communities or to their charitable and educational institutions irrespective of their legal form."** In a country where the churches' welfare arms are among the largest employers, that is not a footnote. § 118(1) also limits the Act's reach in "tendency" establishments — political, union, religious, charitable, educational, scientific, artistic, and news/opinion organisations.
+
+:::reveal An American hears "works council" and pictures the local union chapter. Give the two sharpest reasons that picture is wrong. ||| (1) It is elected by ALL employees, not by union members — it can exist, and frequently does, in a workplace with no union at all. (2) Its powers come from a statute (the BetrVG), not from a contract the union had to win at the bargaining table. It is the workforce's statutory body, not the union's branch.
+
+## Sources
+- Betriebsverfassungsgesetz [Works Constitution Act] (Germany), §§ 1, 5(3), 20(3), 21, 37, 74(2), 118 [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_betrvg/englisch_betrvg.html`,
+    },
+    {
+      slug: "germany-three-tiers",
+      title: "5 · Informed, consulted, or actually consulted? The three tiers",
+      section: "Section 2 · Channel one — the works council (Betriebsrat)",
+      body: `**This is the most important lesson in Section 2, and it turns on a distinction that sloppy writing destroys.** "Information," "consultation," and "co-determination" are **not** three words for the same thing. They are three completely different amounts of power, and the German statute is scrupulous about which is which. If you can hold these apart, you can read any country's labour law and immediately see how much a worker representative body can actually *do*.
+
+Here is the ladder, with the sections that put each rung there.
+
+| Tier | What it means | The test | Where it lives in the BetrVG |
+| --- | --- | --- | --- |
+| **Information** | The employer must **tell** you. | Can it act without telling you? **No.** Can it act after telling you? **Yes.** | § 90(1), § 92(1), § 106 |
+| **Consultation** | The employer must **discuss** it with you, in good time, and genuinely consider your objections. | Can it act over your objection? **Yes** — once it has really consulted. | § 90(2), § 92(1), § 111 |
+| **Co-determination** (*Mitbestimmung*) | The employer **cannot act without your agreement**. | Can it act over your objection? **No.** | **§ 87(1)** |
+
+**Tier 1 — Information.** Under **§ 90(1)** the employer "has to inform the works council **in due time**" of plans concerning premises, technical plants, "working procedures and operations **including the use of artificial intelligence**," and jobs — and hand over the documents. Under **§ 106**, every company with more than 100 permanent employees must have a **finance committee** (*Wirtschaftsausschuss*), which the employer must inform "in full and in good time of the financial affairs of the company." Real, and not nothing: you cannot fight a plan you have never seen. But information is not a veto.
+
+**Tier 2 — Consultation.** **§ 90(2)** requires the employer to "**consult** the works council in good time on the action envisaged and its effects on the employees… **so that suggestions and objections on the part of the works council can be taken into account.**" That is a genuine obligation — it must happen early enough to matter, not after the decision. But read the sentence one more time: *taken into account*. **The employer must listen. The employer may then go ahead.**
+
+**Tier 3 — Co-determination. This is the one with teeth**, and the statute makes you earn it by listing exactly where it applies. **§ 87(1)**: "The works council has a **right of co-determination** in the following matters in so far as they are not prescribed by legislation or collective agreement" — and then **fourteen numbered items**, including:
+
+- **the rules of operation** of the establishment and the conduct of employees in it (§ 87(1) no. 1);
+- **the start and end of the daily working hours**, breaks, and how hours are distributed across the week (no. 2);
+- **temporary reduction or extension of the hours normally worked** — which is how short-time working gets agreed (no. 3);
+- the **time, place and form of payment** of remuneration (no. 4);
+- **holiday principles and the leave schedule** (no. 5);
+- **"the introduction and use of technical devices designed to monitor the behaviour or performance of the employees"** (no. 6) — the surveillance clause, and the reason a German employer cannot simply install monitoring software one morning;
+- **accident prevention and health protection** arrangements (no. 7);
+- **remuneration arrangements in the establishment**, including principles of remuneration and new pay methods (no. 10) and **piece and bonus rates** (no. 11);
+- **principles governing group work** (no. 13);
+- **the structuring of mobile work** performed by information and communication technology (no. 14) — i.e., remote work.
+
+**And here is the sentence that converts it from a nice idea into power.** § 87(2): *"If no agreement can be reached on a matter covered by the preceding paragraph, the **conciliation committee** makes a decision. **The award of the conciliation committee takes the place of an agreement** between the employer and the works council."*
+
+Stop and appreciate what that does. Deadlock does **not** default to the employer. Deadlock goes to a **conciliation committee** (*Einigungsstelle*) — an equal number of assessors from each side plus an impartial chair the parties agree on — and **whatever the committee decides simply *is* the rule**. The employer cannot wait the works council out, and cannot break the tie by being the boss. **That is what makes it co-determination and not consultation.**
+
+**Now read the chapeau of § 87(1) again**, because it is doing quiet work: *"in so far as they are not prescribed by legislation or collective agreement."* If the sectoral collective agreement already fixes a matter, the works council has nothing to co-determine there. **That is the seam between the two channels**, and Section 4 is about it. Note especially what is *not* on the fourteen-item list: **the level of wages**, and **the length of the working week**. Those belong to the union and the employers' association, upstairs. The works council co-determines the *structure* of pay (how bonus rates are set), not the *amount*.
+
+:::reveal An employer wants to install software that logs every keystroke and ranks employees by output. Under the BetrVG, does the works council get to be informed, consulted, or does it get to say no? ||| It gets to say **no**. Technical devices designed to monitor employee behaviour or performance are item 6 on the § 87(1) co-determination list — the employer cannot introduce them without the works council's agreement, and if the two deadlock, the conciliation committee decides and its award REPLACES agreement (§ 87(2)). This is the top tier, not consultation.
+
+## Sources
+- Betriebsverfassungsgesetz [Works Constitution Act] (Germany), §§ 87, 90, 92, 106 [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_betrvg/englisch_betrvg.html`,
+      recallContent: [
+        {
+          prompt: "How many employees does a German establishment need before it can elect a works council?",
+          answer: "Five permanent employees with voting rights, three of whom are eligible to stand (BetrVG § 1(1)).",
+        },
+        {
+          prompt: "What is the difference between a consultation right and a co-determination right?",
+          answer:
+            "With consultation, the employer must genuinely discuss it and consider your objections — and may then act anyway. With co-determination, the employer cannot act without your agreement; deadlock goes to a conciliation committee whose award replaces agreement (§ 87(2)).",
+        },
+      ],
+    },
+    {
+      slug: "germany-dismissal-and-restructuring",
+      title: "6 · Getting fired, and closing the plant",
+      section: "Section 2 · Channel one — the works council (Betriebsrat)",
+      body: `Now apply the three-tier ladder to the two moments that matter most to a worker: **you are being fired**, and **the plant is being closed**. Germany's answers are precise, and they are not what either a cynic or a romantic would predict.
+
+## Being hired, moved, or graded: § 99 — a consent right
+
+In companies with **more than twenty** employees with voting rights, the employer must notify the works council in advance of **any recruitment, grading, regrading or transfer**, supply the documents — and **"obtain its consent to the measure envisaged"** (§ 99(1)). The works council can **refuse consent** on the grounds listed in § 99(2), including that the measure would breach a statute, a collective agreement, or a works agreement, or that there is factual reason to think it will lead to the dismissal of other employees.
+
+So: an American manager can generally hire whoever they want. A German manager of a firm with 21 employees **needs the works council to sign off on the transfer**.
+
+## Being fired: § 102 — consultation, with a very sharp edge
+
+Here is the whole opening of § 102(1), because every word of it is load-bearing:
+
+> "**The works council has to be consulted before every dismissal.** The employer has to inform the works council about the reasons for dismissal. **Any notice of dismissal that is given without consulting the works council is null and void.**"
+
+Read that carefully and you will see something strange. **This is a *consultation* right, not a co-determination right — the works council cannot veto your dismissal.** And yet the penalty for skipping the consultation is not a fine, not a bargaining-order, not back pay. **The dismissal simply does not exist.** *Null and void.* You are still employed.
+
+That is the German trick: **a right that is only "consultation" in strength but nuclear in remedy.** Compare the anchor course's account of how American law handles an unlawful firing — years of NLRB process, reinstatement that arrives late if at all. Germany doesn't reinstate you. Germany never fired you.
+
+What the works council *can* do is **object**, in writing, within **one week**, on the five grounds in § 102(3) — most importantly that the employer **"disregarded or did not take sufficient account of social aspects"** in choosing whom to dismiss (that is *Sozialauswahl* — social selection — and it is why German redundancy decisions have to weigh things like length of service and dependants), or that the employee **could be kept on** in another job, or after retraining, or on changed terms. And then § 102(5) does something with real bite: if the works council objected properly **and** the employee sues under the Protection Against Dismissal Act, **the employer must keep the employee at work, on unchanged conditions, until the case is finally decided.** Not on paper. At the desk. Getting paid.
+
+## Closing the plant: §§ 111–113 — the distinction that teaches the whole system
+
+An "alteration" (*Betriebsänderung*) — closing or shrinking an important department, moving it, merging or splitting the establishment, or introducing "entirely new work methods and production processes" — triggers §§ 111–113 in any company that normally has **more than twenty** employees with voting rights (§ 111). And here Germany splits the response into **two different things**, which look similar and are not:
+
+| | **Reconciliation of interests** (*Interessenausgleich*) | **Social compensation plan** (*Sozialplan*) |
+| --- | --- | --- |
+| The question it answers | **Whether, how and when** the change happens | **What the workers get** for the harm it does |
+| Can the works council block it? | **No.** The employer must genuinely *attempt* to agree. | **It does not have to.** |
+| What happens on deadlock? | Mediation, then the conciliation committee tries to reconcile the parties. If they still don't agree — **the employer may proceed.** | **"If no agreement is reached on the social compensation plan, the conciliation committee makes a decision… The award of the conciliation committee takes the place of an agreement"** (§ 112(4)). |
+| The penalty for skipping it | § 113: dismissed employees can sue the employer for **indemnities**. | — |
+
+**So, in one line: the works council cannot stop the plant from closing. It *can* force a binding, enforceable severance package — and if the employer refuses, an outside committee will write one and impose it.**
+
+That is neither the caricature ("German workers run the company") nor its opposite ("it's all a talking shop"). It is a specific, deliberate settlement: **management keeps the decision; the workforce keeps the price.**
+
+:::reveal Your German employer fires you and never mentioned it to the works council. What is the legal consequence? ||| The dismissal is **null and void** (§ 102(1)) — it has no legal effect at all, and you are still employed. Note the oddity: consulting the works council is only a CONSULTATION right (it cannot veto your dismissal), but the remedy for skipping the consultation is total.
+
+## Sources
+- Betriebsverfassungsgesetz [Works Constitution Act] (Germany), §§ 99, 102, 111, 112, 113 [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_betrvg/englisch_betrvg.html`,
+      recallContent: [
+        {
+          prompt: "Name three of the fourteen matters in BetrVG § 87(1) where the works council has genuine co-determination.",
+          answer:
+            "Any three of: rules of operation and employee conduct; start/end of daily working hours and breaks; temporary short-time or extended hours; time/place/form of pay; holiday principles and the leave schedule; technical devices that monitor employee behaviour or performance; accident prevention and health protection; establishment-level remuneration arrangements; piece and bonus rates; principles of group work; the structuring of mobile (remote) work.",
+        },
+        {
+          prompt: "What happens when the employer and works council deadlock on a § 87(1) matter?",
+          answer:
+            "The conciliation committee (Einigungsstelle) decides, and its award TAKES THE PLACE of an agreement between them (§ 87(2)). Deadlock does not default to the employer — that is what makes it co-determination.",
+        },
+      ],
+    },
+    {
+      slug: "germany-works-council-reach",
+      title: "7 · The right that most German workers don't have",
+      section: "Section 2 · Channel one — the works council (Betriebsrat)",
+      body: `Everything in lessons 4–6 is real German law, in force today, available to any establishment with five employees. Now here is the number that keeps it honest.
+
+**In 2023, only about 7% of German workplaces had a works council** — around 10% of workplaces with five or more employees, and **9% of private-sector establishments**. Because works councils are far more common in *big* workplaces, they cover many more people than that ratio suggests: **41% of all employees** and **34% of private-sector employees** (IAB Establishment Panel, 2023, reported by ETUI/Worker Participation).
+
+Sit with that. **The most powerful workplace-representation statute in the industrialised world reaches fewer than half of German workers — and only about a third in the private sector.**
+
+**It is a size story, and a sharp one.** In 2023, **73% of workplaces with more than 200 employees** had a works council or equivalent — against **16% of workplaces with 21 to 50 employees** (IAB, 2023, via ETUI). If you work at Volkswagen, co-determination is the air you breathe. If you work at a 30-person logistics firm, there is a decent chance you have never met anyone who has seen a works council.
+
+**And there is an east/west gap**, which will follow you through the rest of this course: in 2023 roughly **42% of west German employees** and **37% of east German employees** worked in an establishment with a works or staff council (IAB, 2023, via ETUI).
+
+## So why doesn't every workplace just elect one?
+
+Three honest reasons, in ascending order of discomfort.
+
+**1. Nobody has to.** The BetrVG says works councils "are elected" in establishments with five or more employees — but it does not *impose* one. Somebody inside has to start the process. In a small, informal, reasonably well-run firm, often nobody does, and there is nothing sinister about that.
+
+**2. It's work.** The post is **unpaid** (§ 37(1)). You get released from your duties to do it (§ 37(2)), and then you spend four years in meetings arguing with your boss, and your boss is still your boss on Monday.
+
+**3. And some employers fight it — which brings us to Question 4 from the anchor course: *what happens to you if you try?***
+
+**Germany's formal answer is unusually tough.** Under **§ 20(1)**, "**no person may obstruct the election of a works council**," and any attempt to influence an election "by inflicting or threatening any unfavourable treatment or by granting or promising any advantage" is unlawful (§ 20(2)). **§ 78** protects works councillors from being "disfavoured or favoured" by reason of their office. And then **§ 119** makes it a **crime**:
+
+> "The following offences are **punishable by a term of imprisonment not exceeding one year or a fine**: 1. interfering with an election to the works council… or influencing such elections by inflicting or threatening reprisals or granting or promising incentives, 2. **obstructing or interfering with the activities of the works council**… 3. prejudicing or favouring a member… by reason of his office."
+
+An American student should stop here, because there is nothing like this in US law. Fire a worker for organising in the United States and the employer faces a civil proceeding. Obstruct a works council in Germany and the responsible person faces **prison**.
+
+**And now the part that stops this from being propaganda.** Look at **§ 119(2)**:
+
+> "Proceedings concerning the offence are instituted **only on application** by the works council, the central works council… the electoral board, the employer or a trade union represented in the establishment."
+
+Read that against the reality. The crime is *obstructing the formation of a works council* — and prosecution requires an application from, among a short list, **the works council that does not exist yet**, or **a union represented in the establishment** (in a workplace with no union), or **the employer** (the one doing the obstructing). German unions and legal scholars have complained about this for years: **the offence that protects the body is hardest to prosecute precisely in the workplaces where the body has not been formed.** The tough-looking criminal provision is easiest to use where it is least needed.
+
+**Hold both facts at once, because that is what an educated reader does.** Germany gives workers a strong statutory right that the United States has never given anyone — **and** most German workplaces don't have it, **and** the criminal shield around it has a procedural hole in exactly the wrong place. All three of those are true.
+
+:::reveal Germany makes obstructing a works council a criminal offence carrying up to a year in prison (§ 119). Why does that provision have less bite than it looks like it has? ||| Because § 119(2) says proceedings may be instituted ONLY on application — by the works council, the electoral board, a union represented in the establishment, or the employer. In a workplace where the employer is successfully preventing a works council from forming, there is no works council to apply, often no union present, and the employer is not going to report itself.
+
+## Sources
+- Betriebsverfassungsgesetz [Works Constitution Act] (Germany), §§ 20, 37, 78, 119 [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_betrvg/englisch_betrvg.html
+- ETUI / Worker Participation. (n.d.). *Germany: Workplace representation* [reporting IAB Establishment Panel 2023 data]. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries/germany`,
+      recallContent: [
+        {
+          prompt: "What share of German workplaces had a works council in 2023, and what share of employees did they cover?",
+          answer:
+            "About 7% of all workplaces (10% of those with 5+ employees); covering 41% of all employees and 34% of private-sector employees (IAB Establishment Panel, 2023, via ETUI).",
+        },
+        {
+          prompt: "Under BetrVG § 119, what is the penalty for obstructing a works-council election — and what is the catch?",
+          answer:
+            "Up to one year's imprisonment or a fine. The catch is § 119(2): prosecution only happens on application by the works council, the electoral board, a union represented in the establishment, or the employer — which is hardest to satisfy exactly where no works council exists.",
+        },
+      ],
+    },
+    {
+      slug: "germany-quiz-2",
+      title: "Section 2 quiz · The works council",
+      section: "Section 2 · Channel one — the works council (Betriebsrat)",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who elects a German works council?",
+            options: [
+              "The union's members in the workplace",
+              "All the employees of the establishment, whether or not they belong to a union",
+              "The employer, from a list of candidates",
+              "The Federal Employment Agency",
+            ],
+            correctIndex: 1,
+            explanation:
+              "All employees vote. The works council is a statutory body of the workforce, not the union's branch — it can exist in a workplace with no union at all.",
+            sourceLessonSlug: "germany-works-council-what-it-is",
+          },
+          {
+            prompt: "How many employees must an establishment have before a works council can be elected (BetrVG § 1)?",
+            options: ["5", "20", "50", "500"],
+            correctIndex: 0,
+            explanation:
+              "Five permanent employees with voting rights, three of whom are eligible to stand. Five — not five hundred.",
+            sourceLessonSlug: "germany-works-council-what-it-is",
+          },
+          {
+            prompt: "Where do a German works council's powers come from?",
+            options: [
+              "A collective agreement the union won at the bargaining table",
+              "An Act of Parliament — the Betriebsverfassungsgesetz",
+              "The company's articles of association",
+              "A European Union directive",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They are statutory. Nobody had to win them in a negotiation — that is the deepest difference from the American model.",
+            sourceLessonSlug: "germany-works-council-what-it-is",
+          },
+          {
+            prompt: "An employer must INFORM the works council of a plan. Can it then proceed over the works council's objection?",
+            options: [
+              "No — information rights include a veto",
+              "Yes — information means the employer must tell you; it does not mean you can stop it",
+              "Only with a court order",
+              "Only if the union agrees",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Information (§ 90(1), § 92, § 106) is the bottom rung. You cannot fight a plan you have never seen — but seeing it is not blocking it.",
+            sourceLessonSlug: "germany-three-tiers",
+          },
+          {
+            prompt: "What makes a § 87(1) matter a genuine CO-DETERMINATION right rather than a consultation right?",
+            options: [
+              "The employer has to reply in writing",
+              "The employer cannot act without agreement — and on deadlock the conciliation committee decides, its award REPLACING agreement (§ 87(2))",
+              "The union must be notified",
+              "It only applies in companies over 2,000 employees",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Deadlock does not default to the employer. That single fact is the whole difference between the top rung and the middle one.",
+            sourceLessonSlug: "germany-three-tiers",
+          },
+          {
+            prompt:
+              "An employer wants to install software that monitors employee performance. Which tier of right does the works council have here?",
+            options: [
+              "Information only",
+              "Consultation only",
+              "Co-determination — § 87(1) no. 6 covers technical devices designed to monitor employee behaviour or performance",
+              "No right at all; monitoring is a management prerogative",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Item 6 on the § 87(1) list. The employer cannot introduce workplace surveillance without the works council's agreement.",
+            sourceLessonSlug: "germany-three-tiers",
+          },
+          {
+            prompt: "Which of these is NOT something a works council co-determines under § 87(1)?",
+            options: [
+              "The start and end of the daily working hours",
+              "Piece and bonus rates",
+              "The LEVEL of wages and the length of the working week",
+              "Holiday scheduling principles",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Wage levels and the working week belong to the sectoral collective agreement — the union's channel, upstairs. § 87(1) applies only 'in so far as [matters] are not prescribed by legislation or collective agreement.'",
+            sourceLessonSlug: "germany-three-tiers",
+          },
+          {
+            prompt: "A German employer dismisses a worker without consulting the works council. What happens?",
+            options: [
+              "The employer pays a €10,000 administrative fine",
+              "The dismissal is null and void — it has no legal effect",
+              "The works council may appeal to a labour court within 30 days",
+              "Nothing; consultation is optional",
+            ],
+            correctIndex: 1,
+            explanation:
+              "§ 102(1): 'Any notice of dismissal that is given without consulting the works council is null and void.' A consultation-strength right with a nuclear remedy.",
+            sourceLessonSlug: "germany-dismissal-and-restructuring",
+          },
+          {
+            prompt: "Can a German works council VETO an individual dismissal?",
+            options: [
+              "Yes — dismissal requires its consent",
+              "No — it must be consulted and may object on five statutory grounds, but it cannot block the dismissal",
+              "Yes, but only for union members",
+              "Only in companies with more than 2,000 employees",
+            ],
+            correctIndex: 1,
+            explanation:
+              "§ 102 is a consultation right. The council objects (e.g. that social selection was ignored, or the worker could be redeployed), and § 102(5) can keep the worker employed while they litigate — but there is no veto.",
+            sourceLessonSlug: "germany-dismissal-and-restructuring",
+          },
+          {
+            prompt:
+              "A company is closing a major department. What is the difference between the Interessenausgleich and the Sozialplan?",
+            options: [
+              "They are two names for the same document",
+              "The Interessenausgleich (whether/how/when the change happens) cannot be forced on the employer; the Sozialplan (what workers get) CAN be imposed by the conciliation committee under § 112(4)",
+              "The Sozialplan is voluntary; the Interessenausgleich is binding",
+              "Both can be imposed by the labour court",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Management keeps the decision; the workforce keeps the price. If the employer will not agree a social plan, the conciliation committee writes one and its award replaces agreement.",
+            sourceLessonSlug: "germany-dismissal-and-restructuring",
+          },
+          {
+            prompt: "Under § 99, what does a works council in a firm with more than 20 employees get to do about a hiring or transfer?",
+            options: [
+              "Be informed after the fact",
+              "Give or refuse its CONSENT to the measure, on the grounds listed in § 99(2)",
+              "Interview the candidate",
+              "Nothing — recruitment is a management prerogative",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The employer must 'obtain its consent to the measure envisaged' (§ 99(1)) for recruitment, grading, regrading and transfer.",
+            sourceLessonSlug: "germany-dismissal-and-restructuring",
+          },
+          {
+            prompt: "What share of German workplaces actually had a works council in 2023?",
+            options: ["About 7%", "About 40%", "About 65%", "About 90%"],
+            correctIndex: 0,
+            explanation:
+              "About 7% of all workplaces (10% of those with 5+ employees) — covering 41% of all employees and 34% in the private sector (IAB, 2023, via ETUI). The right exists everywhere; the body does not.",
+            sourceLessonSlug: "germany-works-council-reach",
+          },
+          {
+            prompt: "Works councils are much more common in large workplaces. What were the 2023 figures?",
+            options: [
+              "73% of workplaces with 200+ employees, versus 16% of those with 21–50",
+              "50% of large workplaces, versus 45% of small ones",
+              "Every workplace over 5 employees has one, by law",
+              "20% of large workplaces, versus 19% of small ones",
+            ],
+            correctIndex: 0,
+            explanation:
+              "IAB (2023) via ETUI. Co-determination is the air you breathe at Volkswagen and a rumour at a 30-person logistics firm.",
+            sourceLessonSlug: "germany-works-council-reach",
+          },
+          {
+            prompt: "In Germany, obstructing a works-council election is…",
+            options: [
+              "A civil matter handled by the labour court",
+              "A criminal offence punishable by up to one year's imprisonment or a fine (§ 119)",
+              "Permitted if the employer objects to the union",
+              "Punished by an automatic €10,000 fine",
+            ],
+            correctIndex: 1,
+            explanation:
+              "§ 119 makes it a crime — there is no US equivalent. (The €10,000 administrative fine in § 121 is for failing to supply information, a different and lesser wrong.)",
+            sourceLessonSlug: "germany-works-council-reach",
+          },
+          {
+            prompt: "What is the procedural hole in BetrVG § 119?",
+            options: [
+              "The maximum sentence is too short",
+              "§ 119(2): prosecution happens only on application — from the works council (which may not exist), a union in the establishment (which may not be present), the electoral board, or the employer itself",
+              "It only applies to companies over 500 employees",
+              "It expires after one year",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The offence protecting the body is hardest to prosecute precisely in the workplaces where the body has not been formed.",
+            sourceLessonSlug: "germany-works-council-reach",
+          },
+        ],
+      },
+    },
   ],
 };
