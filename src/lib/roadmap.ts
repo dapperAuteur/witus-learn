@@ -309,7 +309,45 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 
 ## Content
 - ✅ Languages es/fr/pt/it (tense spines); Ed.L.D., Cyber, US Civics 101, "How to Create a Course".
+- ✅ **Pickleball — the first Sports course** (\`content/pickleball-course\`). New **Sports** category.
+  "Play It, Question It, Build With It": **6 sections / 30 lessons / 6 quizzes × 15 questions**
+  (banks >10 so the 10-question attempt cap actually rotates), 24 \`:::reveal\` checks, APA 7 +
+  \`## Sources\` per lesson. Teaches the game (court, serve, kitchen, two-bounce rule, third-shot
+  drop, dinking, doubles), then the parts a generic sports course skips. Two content traps drive
+  the whole design: (1) **the rulebook is revised ANNUALLY** and the **2026** edition renumbered
+  nearly everything, so every rule number is cited to the 2026 rulebook **by year** and none is
+  asserted from memory — where a concept has no verified number, it's taught **without** one
+  (e.g. the recommended court-BUILD area, which lives in USA Pickleball's court-construction
+  guidance, not the rulebook); (2) **the "named after a dog named Pickles" story is DISPUTED**, so
+  the course teaches the **dispute** — Joel Pritchard's own archived oral history says the dog came
+  after the game, co-founder Barney McCallum told the dog story until he died, and the claim that
+  would settle it (the dog's birth year) has **never been documented by anyone** — and turns it into
+  a source-evaluation module. Same discipline on statistics: SFIA's coherent series (4.2M/2020 →
+  24.3M/2025) is the one quoted, and a lesson teaches why SFIA said **8.9M** for 2022 while
+  APP/YouGov said **36.5M** for the same year (different thresholds, neither lying). Rally vs.
+  side-out scoring is presented as an **event-level choice** (Rule 15.C.2 — rally scoring is a
+  *provisional option* a TD may pick, and is barred from Nationals), never as one universal system.
+  The strongest section is the entrepreneur angle: court conversion + the **noise litigation** that
+  actually kills those projects, coaching/certification, leagues and events, the paddle industry's
+  delamination → **PBCoR** arms race, and the pro tours' post-merger contract correction.
+  Re-run \`pnpm seed:courses\`. No migration.
 - ✅ BVC real 21-episode content (lessons + quizzes + maps + Coffee assignment).
+- ✅ **Lacrosse: The Creator's Game** (\`content/lacrosse-course\`) — new **Sports** category. 29
+  lessons across 6 collapsible sections, 6 quizzes × **15 questions** each (90 total, every one
+  carrying \`sourceLessonSlug\`), 22 \`:::reveal\` checks, 1 exercise. **Indigenous origins are
+  foundational, not a footnote:** Section 1 is the Haudenosaunee game, led by the Onondaga Nation's
+  own words and by an Indigenous historian (Allan Downey, Dakelh — *The Creator's Game*, 2018),
+  with Indigenous-owned news (Windspeaker) carrying the current reporting. The course teaches
+  **that** ceremonial medicine games exist, whose they are, and why they matter — and then stops:
+  **no ceremonial procedure, songs, or ritual detail is reproduced**, and it tells the learner that
+  the silence is deliberate. Men's, women's, box and Sixes are taught as the **four different games
+  they are**; every rules lesson names the discipline AND the code before it gives a number, and
+  every rule number was checked against the governing body's own PDF (WL men's field v1.1, women's
+  field v1.1, Sixes/box v2.0, NCAA men's and women's). Haudenosaunee **Olympic eligibility for LA28
+  is dated in-text** (IOC position as of March 25 2026; WL's qualification pathway as of July 1
+  2026) and tells the learner to re-check rather than picking an outcome. Section 6 is the
+  amateur/entrepreneur map — coaching, officiating, stringing, table crew, program-building — and
+  Lesson 27 names the sport's access and equity problems honestly. **Re-run \`pnpm seed:courses\`.**
 - ✅ **FAA Part 107 — sectioned, quizzed, and click-to-reveal** (\`fix/faa-sections-quizzes\`). The
   import had seeded 90+ lessons as ONE flat list (\`seed-faa.ts\` never set \`section\`, so the course
   built zero modules), only 5 of its 14 modules had a quiz, and the audio "[CHECK]" beat rendered as
@@ -419,6 +457,99 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
+- ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
+  (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
+  students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
+  System taught from the verified figures (launched Jan 2020, max Index 54.0, 54 holes for an
+  initial index, Index = average of the **lowest 8 of the last 20** — i.e. potential, not average).
+  The **History** section is the spine: the PGA's Caucasian-only clause (1934–Nov 1961, acknowledged
+  but never apologized for) and the three documented evasions institutions used to stay segregated —
+  rename the tournament an "Invitational," lease the municipal course to a sham "private club," or
+  sell it — plus the statutory reason they worked (**Title II does not list golf courses at all**;
+  42 U.S.C. § 2000a(b), and § 2000a(e) exempts private clubs), which is why desegregation ran
+  through the **Fourteenth Amendment**. Centerpiece is a **primary-source lesson**: students read the
+  **January 1962 *Golfdom*** trade report of the repeal and find it credits "difficulties in making
+  tournament arrangements" and names none of Sifford, Spiller, Rhodes, or Mosk — the article isn't
+  false, it's *emptied*. Corrections carried deliberately against widely published error (incl. the
+  PGA TOUR's own site): *Holmes* was **vacated**, not reversed; the Greensboro Six did **not** lose
+  5–4 (*Wolfe*, 1960, dismissed the appeal); *Palmer v. Thompson* is a **pool** case. **Opportunities**
+  is the payload: the **2022 amateur-status rewrite legalized sponsorship/endorsement/NIL/expenses/
+  free equipment** (paid instruction is the one door still shut, and non-cash payment counts), and
+  the **U.S. Open is genuinely open** — any amateur at a **0.4** Handicap Index may enter, and the
+  USGA accepted a record **10,202 entries** for the 2025 U.S. Open. No unverifiable figure is printed
+  (no NGF standalone Black-participation %, because none exists — the absence is taught as the
+  finding; no U.S. Women's Amateur handicap limit, because it couldn't be verified).
+  \`pnpm seed:courses\` picks it up. First of the five sports courses.
+- 🔧 **Croquet** (\`content/croquet-course\`, Sports) — 36 lessons across **8 sectioned modules**
+  (28 teaching + 8 section quizzes, each quiz a **15-question bank** so the 10-question attempt cap
+  actually rotates; every question carries \`sourceLessonSlug\`). The load-bearing constraint:
+  **croquet is not one game.** Golf Croquet and Association Croquet (WCF), American Six-Wicket
+  (USCA) and informal garden croquet have different courts, turn structures and scoring, so **every
+  rules lesson names the code it teaches in bold in its first line** and the one lesson that compares
+  them says so explicitly. Handicaps are taught **per code**, incl. the trap that American and
+  Association handicaps are **different scales** (the USCA says add two) — and the course **refuses
+  to quote a numeric range** for the American scale because the USCA publishes no floor.
+  **Every rule number was re-read in the governing body's current rulebook**, not recalled: 42 of 45
+  verified verbatim, three corrected (AC choice-of-ball is **Law 2.6.1**, not 2.3; the USCA shot
+  clock is **Rule 13.8** with its "in a time limit game" qualifier restored, not "13.8(a)"; USCA
+  **17.1 is "Option to Play Either Ball"**, an experimental rule). Where **no** rule number exists the
+  course says so instead of inventing one — "break" is not defined in the AC Laws, "jump" appears
+  **zero** times in the GC Rules, "carryover deadness" appears **zero** times in the USCA rules.
+  Sections 6–8 do the part croquet courses skip: **history you can actually check** (incl. a
+  "stories we cut" lesson that shows its own working — the All England Croquet Club was founded on
+  the **Strand**, not at Wimbledon; the croquet women were **not** the first female Olympians), the
+  club/handicap ladder, and the real openings for an amateur or entrepreneur. Unsourceable folklore
+  (a Boston croquet "ban") was **cut**, not softened. \`pnpm seed:courses\` picks it up; **no
+  migration**.
+- ✅ **Tennis: Play It, Read It, Work In It** (Sports) — 41 lessons across **8 sections**, each with
+  its own quiz (banks of **15–16** questions, so the 10-question attempt cap actually rotates):
+  the rules · **hitting the ball** (grips, strokes, footwork) · **strategy** (the First 4 Shots,
+  Serve +1, court geometry, doubles) · origins & amateurism · **the people** · how the sport is
+  organized · opportunities for amateurs · opportunities for entrepreneurs. **Governance is stated
+  correctly**: the **ITF publishes the Rules of Tennis**; the **ATP/WTA tours and the four Slams
+  layer their own conditions on top — and the Slams are run by their national federations and the
+  Grand Slam Board, not by the tours.** Rule numbers are read out of the ITF 2026 PDF, never guessed
+  (tie-break is Rule 5(b), not a rule of its own; service let is Rule 22; No-Ad/No-Let/match
+  tie-breaks are Appendix VI), and formats that **vary by event** are named as varying rather than
+  asserted as universal. The **equal-prize-money timeline is the honest one**: US Open **1973**
+  (first, via a boycott threat + a Bristol-Myers cheque), Australian Open **1984** → **reverted to
+  paying men more by 1996** citing TV ratings → restored **2001**; Wimbledon **2007** (22 Feb, last
+  to offer *any* equal pay); Roland-Garros **2006 champions only → 2007 full draw** (16 Mar, last to
+  *full-draw* equality) — a **34-year** climb, with the WTA's rest-of-tour pathway still pledged for
+  **2027/2033**. Covers the segregated **American Tennis Association**, **Althea Gibson**, **Arthur
+  Ashe**, **Billie Jean King**, the **Original 9**, the founding of the **WTA**, and the **Open era
+  (1968)**. **No invented statistics**: where full per-round prize-money distribution data doesn't
+  exist, the course says so instead of fabricating a table. \`pnpm seed:courses\` picks it up.
+- ✅ **Football: Play It, Read It, Work In It** (Sports) — 42 lessons across **8 sections**, each with
+  its own quiz (banks of **15**, so the 10-question attempt cap actually rotates; 120 questions, every
+  one carrying an \`explanation\` + \`sourceLessonSlug\`). The game the US calls soccer, called
+  **football** throughout at BAM's instruction: the game & the pitch · **how to play** (first touch,
+  dribbling, finishing, defending, goalkeeping) · **the Laws** · **strategy** · **history** · who runs
+  what & the leagues · money & labour · **opportunities for amateurs and entrepreneurs**.
+  **Governance is stated correctly, and this is the load-bearing part**: the **Laws of the Game are
+  written by THE IFAB, not FIFA** — FIFA holds **4 of 8 votes**, a change needs a three-quarters
+  majority (**6**), so FIFA *cannot change a Law alone*. There are **17 Laws**, revised annually, and
+  every Law statement is read out of the official **Laws of the Game 2026/27** PDF (effective 1 July
+  2026) with its Law number — never guessed. **Offside is Law 11** (hands/arms are not considered),
+  **handball sits inside Law 12** (the current text — the old "accidental handball anywhere in the
+  build-up voids the goal" clause is **gone**, and the course says so), and **VAR is Law 5 §4**
+  (including the *new* 2026/27 competition-option corner-kick review). **Contested numbers are taught
+  AS contested, never resolved to a headline**: the Dick, Kerr Ladies' Goodison Park crowd (c.
+  46,000–53,000) and **Qatar 2022**, where four figures are shown to answer four *different* questions
+  — the Guardian's **6,500** (all-cause, five nationalities, a decade), Qatar's **37** (stadium sites
+  only), Al-Thawadi's own **400–500** (tournament-connected projects), and the **ILO's 50** (work-
+  related, 2020) — landing on the honest finding that the toll is unknown *because the deaths were not
+  investigated*. History is told honestly: **ball games long predate England** (FIFA's own careful
+  cuju claim, with **no** fake family tree to Wembley), the **1863** codification, and a full lesson on
+  **the FA's 1921 ban on women's football, which lasted 50 years** — the resolution quoted verbatim
+  ("quite unsuitable for females"). The entrepreneur section is concrete and cited: **refereeing** as a
+  real paid job from age **13** (one association's *published* pay scale, \$30–\$90/game), the coaching
+  licence ladder, the **pay-to-play** problem (Aspen/Project Play: soccer ≈**\$1,188**/child/season;
+  **24% vs 40%** participation by household income), and the honest odds (**NCAA's own** table: **1.4%**
+  of HS boys and **2.8%** of girls reach D-I — and the NCAA publishes **no** HS→pro figure for soccer,
+  which the course explains rather than inventing). **No fabricated statistics, quotes or people**; the
+  "soccer" etymology is verified as a **British** coinage and the undocumented Wreford-Brown
+  attribution is explicitly **not** repeated. \`pnpm seed:courses\` picks it up.
 - 🔧 **/explore is a landing page now** (\`feat/explore-landing\`) — the Commodity Map page was an
   \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
   now answers **what is this → what will my student learn → why trust it → what next**, for the

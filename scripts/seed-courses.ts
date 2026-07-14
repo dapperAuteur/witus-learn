@@ -6,10 +6,14 @@ import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
+import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { KNOTS_COURSE } from "./data/knots-course";
+import { CROQUET_COURSE } from "./data/croquet-course";
 import { SURVIVAL_COURSE } from "./data/survival-course";
+import { FOOTBALL_COURSE } from "./data/football-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
+import { GOLF_COURSE } from "./data/golf-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
 import { HOODOO_COMPLETE_COURSE } from "./data/hoodoo-complete-course";
 import { CIVICS_101_COURSE } from "./data/civics-101-course";
@@ -104,6 +108,8 @@ import { HEALTHCARE_ABROAD_COURSE } from "./data/healthcare-abroad-course";
 import { RETIRING_ABROAD_COURSE } from "./data/retiring-abroad-course";
 import { STUDYING_ABROAD_COURSE } from "./data/studying-abroad-course";
 import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
+import { LACROSSE_COURSE } from "./data/lacrosse-course";
+import { TENNIS_COURSE } from "./data/tennis-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -569,6 +575,7 @@ async function main() {
     { name: "Survival", sortOrder: 9 },
     { name: "Careers & Media", sortOrder: 10 },
     { name: "Culture & History", sortOrder: 11 },
+    { name: "Sports", sortOrder: 12 },
   ]) {
     await db
       .insert(schema.courseCategories)
@@ -577,6 +584,7 @@ async function main() {
   }
   for (const { slug, course, category } of [
     { slug: "knot-tying", course: KNOTS_COURSE, category: "Trade Skills" },
+    { slug: "croquet", course: CROQUET_COURSE, category: "Sports" },
     { slug: "off-grid-survival", course: SURVIVAL_COURSE, category: "Survival" },
     { slug: "broadcasting-break-in", course: BROADCASTING_COURSE, category: "Careers & Media" },
     { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },
@@ -586,6 +594,15 @@ async function main() {
     // green/black/red interactive map at /great-migration-map. See plans/future-courses/
     // great-migration.md (design) and great-migration-facts.md (the fact-check pass).
     { slug: "great-migration", course: GREAT_MIGRATION_COURSE, category: "Culture & History" },
+    // Golf — the first of the sports courses. Six sections: how to play, the Rules (cited to
+    // the 2023 code), strategy + the World Handicap System, history (incl. the documented
+    // record of racial and gender exclusion — students read the January 1962 *Golfdom* trade
+    // report of the repeal of the PGA's Caucasian-only clause and find that the industry's own
+    // account names none of the men who forced it), the tours as of 2026 (men's golf is NOT
+    // reunified), and opportunities for amateurs + entrepreneurs. See plans/future-courses/
+    // sports-courses/golf.md (brief).
+    { slug: "golf-play-know-work", course: GOLF_COURSE, category: "Sports" },
+    { slug: "football", course: FOOTBALL_COURSE, category: "Sports" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
@@ -877,6 +894,63 @@ async function main() {
     slug: "shipping-logistics-abroad",
     course: SHIPPING_LOGISTICS_COURSE,
     category: "Travel & Living Abroad",
+    navigationMode: "linear",
+  });
+
+  // ── Sports ────────────────────────────────────────────────────────────────
+  // Lacrosse: The Creator's Game. Indigenous origins are foundational, not a footnote:
+  // the course leads with the Onondaga Nation's own words and an Indigenous historian
+  // (Downey, 2018), and deliberately does NOT reproduce ceremonial medicine-game
+  // practice. Every rule is quoted from a current, cited rulebook (World Lacrosse
+  // men's/women's field, box, Sixes; NCAA men's and women's) and men's and women's
+  // lacrosse are taught as the different games they are. The Haudenosaunee Olympic
+  // eligibility question is dated in-text (verified July 2026) and tells the learner to
+  // re-check — the authoritative-values rule applied to a live news story.
+  // Sports — on Learn.WitUS. Play-it/question-it/build-with-it courses: the sport itself, the
+  // sourcing discipline behind its folklore, and the amateur/entrepreneur economy around it.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "lacrosse-creators-game",
+    course: LACROSSE_COURSE,
+    category: "Sports",
+    navigationMode: "linear",
+  });
+
+  // Tennis — the court, the scoreboard and the ITF's Rules (the tours and the four Slams layer
+  // their own conditions on top, and the Slams are NOT run by the tours); how points are actually
+  // won; and the history, which is the point: Althea Gibson, Arthur Ashe, the segregated American
+  // Tennis Association that produced them, Billie Jean King and the Original 9. Equal prize money
+  // is taught as a 34-year climb, not a 1973 victory — the Australian Open reached it in 1984,
+  // went BACKWARD by 1996 citing TV ratings, and only restored it in 2001. Equality is reversible,
+  // and that is the lesson. Prize-money distribution is given at field level (the only level
+  // anyone publishes) and the course says so rather than inventing a table.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "tennis",
+    course: TENNIS_COURSE,
+    category: "Sports",
+    navigationMode: "linear",
+  });
+
+  // Pickleball — how to play (court, serve, kitchen, two-bounce rule, strategy), how to read a
+  // rulebook that USA Pickleball revises ANNUALLY (the 2026 edition renumbered nearly everything,
+  // so every rule number here is cited to the 2026 rulebook BY YEAR), why the beloved "named after
+  // a dog named Pickles" origin story is DISPUTED rather than settled (the course teaches the
+  // dispute + source evaluation instead of picking the cute answer), and the real amateur/
+  // entrepreneur opportunity: courts and the noise litigation that kills them, coaching and
+  // certification, leagues and events, the paddle industry and the delamination/PBCoR arms race,
+  // and the pro tours' post-merger contract correction. Authoritative-values rule is load-bearing:
+  // rule numbers change every year, participation counts differ by a factor of four between SFIA
+  // and APP/YouGov depending on the threshold, and rally vs. side-out scoring is presented as an
+  // event-level choice (Rule 15.C.2) rather than one universal system.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "pickleball",
+    course: PICKLEBALL_COURSE,
+    category: "Sports",
     navigationMode: "linear",
   });
 
