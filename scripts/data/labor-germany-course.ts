@@ -1460,5 +1460,326 @@ That is not a criticism. It might be the best bargain any working class ever str
         ],
       },
     },
+
+    // ────────────── SECTION 5 · THE EROSION ──────────────
+    {
+      slug: "germany-erosion-of-coverage",
+      title: "13 · The coverage is falling, and has been for twenty-five years",
+      section: "Section 5 · The erosion — do not tell a fairy tale",
+      body: `Everything so far has been the German system working. **This lesson is the German system leaking**, and if you skip it you will walk away with a postcard instead of an education.
+
+Go back to lesson 2 and the mechanism: **coverage rides on employers staying inside employers' associations.** You were told, at the end of that lesson, that this tells you exactly how the system breaks. Here is how.
+
+## The numbers, and they are not good
+
+Germany's own Federal Statistical Office (**Destatis**) publishes the series. As of **2023**:
+
+| | **West** (old *Länder*) | **East** (new *Länder*) |
+| --- | --- | --- |
+| Covered by a **branch-level (sectoral)** agreement | **44%** | **31%** |
+| Covered by a **company-level** agreement | **7%** | **14%** |
+| **Covered by no collective agreement at all** | **49%** | **56%** |
+
+*(Statistisches Bundesamt, 2023 data.)*
+
+And the trend line, which is the part that matters:
+
+- In the West, coverage has fallen from **76% in 1998** to about **51% in 2023** — **down 25 percentage points in a quarter of a century** (Destatis).
+- In the East, it has fallen from **63% in 1998**, down about **19 percentage points** over the same period (Destatis).
+
+**Nearly half of all German employees, and a clear majority of East German employees, now work in a company with no collective agreement of any kind.** The famous 49% national coverage figure (2024, OECD/AIAS) is not a plateau. **It is a point on a slide.**
+
+**Two more shapes in the data, both from Destatis (2023):**
+- **Coverage is a big-firm phenomenon.** It runs at about **62%** in companies with more than 200 employees, and peaks at only about **31%** in companies with 10 to 20.
+- **And a sector story.** Coverage is around **98% in public administration**, **72%** in finance and insurance, **61%** in mining — and about **11%** in information and communication. **The German tech sector is, in bargaining terms, roughly as uncovered as the American private sector.**
+
+## How employers left without leaving: *OT-Mitgliedschaft*
+
+Now the mechanism, and it is elegant and a little bit ruthless.
+
+Until the 1990s, the rule was simple: if you were a member of an employers' association, the association's collective agreements bound you (TVG § 3(1)). Membership and coverage were the same thing.
+
+Then, facing member firms threatening to walk out over inflexible agreements, the associations invented a way to keep them: **membership *ohne Tarifbindung*** — **"OT membership,"** membership **without collective-bargaining obligation**. You stay in the association. You get the legal advice, the lobbying, the services, the information. **You are simply not bound by the agreement the association signs.**
+
+It was introduced as a stopgap to stop the bleeding. It became the norm. It has been studied extensively — Jirjahn (2022) analyses what drives firms to choose it — and its consequences show up directly in the numbers above: **the employers' association can still look strong while the agreement it negotiates covers fewer and fewer people.** Germany did not lose coverage because workers stopped joining unions. **Coverage was never made of union members.** It is being lost because employers found the exit that did not require them to leave.
+
+## The extension tool Germany won't use
+
+Remember TVG § 5 from lesson 2 — the power to declare an agreement **generally binding**, which would sweep the OT firms and the non-members back in. Germany has it. **Germany barely uses it** ("rather exceptional, used in some industries only" — OECD/AIAS), and Günther and Höpner (2023) wrote a paper whose title is the whole story: *"Why does Germany abstain from statutory bargaining extensions? Explaining the exceptional German erosion of collective wage bargaining."* Part of the answer is structural: the § 5 procedure requires the Ministry to act **in agreement with a committee** made up of three representatives each from the employer and union peak organisations — so **the employers' side sits on the committee that would have to approve binding the employers.**
+
+## And then Germany had to build a floor it never needed
+
+Here is the consequence, and it is the most elegant proof in this whole course that **institutions are plumbing, not culture.**
+
+For most of its post-war history, **Germany had no national minimum wage.** It didn't need one. **The collective agreement *was* the wage floor** — when 76% of West German workers were covered, a legislated minimum would have been redundant for three out of four of them.
+
+Then coverage fell. And a country with no national minimum wage and only half its workers covered has, by definition, **a large and growing hole where the bottom of the labour market used to be.**
+
+So on **1 January 2015**, Germany introduced a **statutory national minimum wage** under the **Mindestlohngesetz (MiLoG)**, at **€8.50 an hour**. It has been raised repeatedly since; it stands at **€13.90 an hour from 1 January 2026**, and is legislated to rise to **€14.60 from 1 January 2027**.
+
+**Read the arc.** The minimum wage is not an *addition* to the German model. **It is a patch on a hole the erosion opened.** The state had to build with law what the collective agreement used to build with contract. That is the same trade the Nordic countries are currently arguing about — and it is the deepest reason the Sweden & Denmark course in this track is worth taking next.
+
+## Brussels has noticed
+
+The EU's **Directive (EU) 2022/2041 on adequate minimum wages** sets a benchmark in **Article 4**: any member state whose collective-bargaining coverage is **below 80%** must draw up an **action plan**, with a timeline and concrete measures, to raise it. Germany, at ~49%, is well below that line.
+
+**Two honest caveats**, because this is live law:
+1. The Commission has been clear that the 80% figure is an **obligation of effort, not of result** — not a mandatory target.
+2. On **11 November 2025**, the Court of Justice of the EU, in **Denmark v Parliament and Council (C-19/23)**, **annulled parts of Article 5** of the Directive (provisions on the criteria for setting statutory minimum wages), as an over-reach into national wage-setting. **Article 4 — the collective-bargaining promotion duty — survived.** So the obligation to raise coverage still stands.
+
+:::reveal German bargaining coverage has collapsed by 25 points in the West since 1998, but union density explains almost none of that. What does explain it? ||| Employers leaving the *agreement* without leaving the *association* — **OT-Mitgliedschaft** (*ohne Tarifbindung*), membership without collective-bargaining obligation, invented by the associations in the 1990s to retain restive members. Coverage was never made of union members (TVG § 3(1) binds through the EMPLOYER), so it was never union membership that could destroy it. And Germany declines to plug the gap with the statutory extension power (TVG § 5) it already has.
+
+## Sources
+- Court of Justice of the European Union. (2025, November 11). *Denmark v Parliament and Council* (C-19/23). https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A62023CJ0019
+- Directive (EU) 2022/2041 of the European Parliament and of the Council of 19 October 2022 on adequate minimum wages in the European Union, Art. 4. https://eur-lex.europa.eu/eli/dir/2022/2041/oj/eng
+- Günther, W., & Höpner, M. (2023). Why does Germany abstain from statutory bargaining extensions? Explaining the exceptional German erosion of collective wage bargaining. *Economic and Industrial Democracy, 44*(1), 88–108. https://doi.org/10.1177/0143831X211065783
+- Jirjahn, U. (2022). On the determinants of bargaining-free membership in German employers' associations. *Industrial Relations Journal, 53*(6), 545–558. https://doi.org/10.1111/irj.12385
+- Mindestlohngesetz [Minimum Wage Act] (Germany). Bundesministerium der Justiz. https://www.gesetze-im-internet.de/milog/
+- OECD/AIAS. (n.d.). *ICTWSS database — country note: Germany*. https://www.oecd.org/content/dam/oecd/en/data/datasets/oecd-aias-ictwss/Germany.pdf
+- Statistisches Bundesamt. (n.d.). *Quality of employment: Branch-specific collective agreements* [2023 data]. https://www.destatis.de/EN/Themes/Labour/Labour-Market/Quality-Employment/Dimension5/5_1_BranchSpecificCollectiveAgreements.html
+- Tarifvertragsgesetz [Collective Agreements Act] (Germany), § 5. https://www.gesetze-im-internet.de/tvg/`,
+    },
+    {
+      slug: "germany-erosion-of-the-board",
+      title: "14 · Forty percent of the companies that owe workers a board seat don't give one",
+      section: "Section 5 · The erosion — do not tell a fairy tale",
+      body: `Channel one is leaking (lesson 13). **Channel two is leaking too**, and this one is stranger, because the law did not change. **The companies did.**
+
+Recall the rule: a German company with **more than 2,000 employees** must give employees **half** the seats on its supervisory board (MitbestG § 1(1)). It is not optional. It is not a target. It is a statutory obligation.
+
+Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and Corporate Management (I.M.U.) has tracked this for decades, and in **Sick (2024)** — *Erosion der Unternehmensmitbestimmung*, Mitbestimmungsreport No. 81 — the numbers are these, for **2022**:
+
+- There were **1,084** German companies with **more than 2,000 domestic employees**.
+- Only about **60%** of them actually had a parity-co-determined supervisory board — **down from about 67% in 2019**.
+- **At least 2.45 million employees** in large enterprises were therefore **denied** the parity co-determination the 1976 Act nominally gives them — roughly **300,000 more** than in 2019.
+
+**Roughly four in ten of the companies big enough to owe their workers half the boardroom do not deliver it.** And it is getting worse, not better.
+
+## How? Three routes, all legal, none accidental
+
+**1. Become a European company (SE).** The **Societas Europaea** is an EU legal form. When a company converts to an SE, the level of employee board representation is **negotiated and then frozen at whatever it was on the day of conversion**. So: convert **before** you cross the 2,000-employee threshold — while you owe workers one third, or nothing at all — and then grow. **You can become a 50,000-person company that never owes a parity board, because you locked the rule in when you were small.** The Hans-Böckler research is blunt about how common this is: **five of the six largest German SEs, together employing nearly half a million people, have no parity co-determination.**
+
+**2. Wear a foreign legal form.** German co-determination statutes attach to German legal forms (AG, KGaA, GmbH, co-operative). Structure the group so the parent is, say, a Dutch **B.V.** sitting on top of a German limited partnership — a *B.V. & Co. KG* — and the German co-determination statutes have nothing to bite on. Sick (2024) counted **at least 72** companies using such hybrid constructions, covering roughly **399,000 employees**.
+
+**3. The one-third gap** (*Drittelbeteiligungslücke*). The One-Third Participation Act, unlike the 1976 Act, has **no automatic attribution of subsidiaries' employees to the parent company**. Structure your group as a parent with subsidiaries and the headcount never adds up at the top. Around **750** enterprises of comparable size escape through this hole (Sick, 2024). **The best-known casualty is Wirecard** — the payments company whose collapse in 2020 was one of the largest frauds in German corporate history — which, because of this gap, **had no employee representatives on its supervisory board at all.** Whatever else was wrong at Wirecard, there was nobody in the boardroom whose job was to be suspicious on the workforce's behalf.
+
+## What this actually tells you
+
+**It tells you that co-determination is contested inside Germany, right now, by people with lawyers.** The picture where German business has made peace with workers in the boardroom is a picture of about 1985. Since then, a steady, well-advised, entirely lawful migration out of the statute has been under way, and it has moved **at least 2.45 million workers** out of a right their employers' size says they should have.
+
+**And it tells you something a student of institutions should never forget: a law that attaches to a legal form can be escaped by changing the legal form.** The 1976 Act asks *what shape is this company?* — and the answer to that question turns out to be something a company can simply decide.
+
+**One counter-fact, in fairness.** The number of parity-co-determined companies is *not* collapsing in absolute terms: it was **670 in 2025**, up from 667 in 2024, though below the peak of **767 in 2002** (Hans-Böckler-Stiftung, 2025). What has fallen is the **share** of eligible companies that comply — which is the number that tells you about intent.
+
+:::reveal A German firm converts to a European Company (SE) while it still has 1,500 employees, then grows to 40,000. How many supervisory-board seats do its workers get? ||| Whatever they had **on the day of conversion** — because an SE's level of board-level participation is negotiated and then **frozen** at conversion. It never crosses into the Co-determination Act 1976's parity requirement, no matter how large it grows. Five of the six largest German SEs, employing nearly half a million people between them, have no parity co-determination (Sick, 2024).
+
+## Sources
+- Hans-Böckler-Stiftung. (2025). *Mitbestimmte Unternehmen: Zahlen und Fakten* [Co-determined companies: figures and facts]. Mitbestimmungsportal. https://www.mitbestimmung.de/html/starke-arbeitnehmerbank-in-635-197.html
+- Mitbestimmungsgesetz [Co-determination Act] of 4 May 1976 (Germany), § 1. https://www.gesetze-im-internet.de/mitbestg/
+- Sick, S. (2024). *Erosion der Unternehmensmitbestimmung* [Erosion of company co-determination] (Mitbestimmungsreport Nr. 81). Institut für Mitbestimmung und Unternehmensführung, Hans-Böckler-Stiftung. https://www.boeckler.de/de/pressemitteilungen-2675-erosion-der-unternehmensmitbestimmung-beschaeftigte-ohne-paritatische-mitbestimmung-61219.htm`,
+      recallContent: [
+        {
+          prompt: "German collective bargaining coverage in the West: 1998 versus 2023?",
+          answer: "76% in 1998, about 51% in 2023 — down 25 percentage points (Destatis). In the East it fell about 19 points from 63%.",
+        },
+        {
+          prompt: "What is OT-Mitgliedschaft and why did it matter?",
+          answer:
+            "Membership of an employers' association 'ohne Tarifbindung' — without collective-bargaining obligation. Invented in the 1990s to retain restive members, it lets a firm stay in the association while escaping the agreement. It is the main engine of Germany's coverage collapse.",
+        },
+        {
+          prompt: "Why did Germany introduce a statutory minimum wage in 2015 when it had never needed one?",
+          answer:
+            "Because the collective agreement used to BE the wage floor. When coverage fell far enough, a hole opened at the bottom of the labour market, and the state had to build with law (MiLoG, €8.50 from 1 Jan 2015; €13.90 from 1 Jan 2026) what the contract used to build on its own.",
+        },
+      ],
+    },
+    {
+      slug: "germany-quiz-5",
+      title: "Section 5 quiz · The erosion",
+      section: "Section 5 · The erosion — do not tell a fairy tale",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What has happened to collective bargaining coverage in West Germany since 1998?",
+            options: [
+              "It has risen from 51% to 76%",
+              "It has fallen from 76% to about 51% — down 25 percentage points",
+              "It has been flat at about 50%",
+              "It has fallen from 90% to 80%",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Destatis. The famous ~49% national coverage figure is not a plateau — it is a point on a slide.",
+            sourceLessonSlug: "germany-erosion-of-coverage",
+          },
+          {
+            prompt: "In 2023, what share of EAST German employees worked in a company with no collective agreement at all?",
+            options: ["14%", "31%", "49%", "56%"],
+            correctIndex: 3,
+            explanation:
+              "56% in the East, against 49% in the West (Destatis, 2023). A clear majority of East German employees are uncovered.",
+            sourceLessonSlug: "germany-erosion-of-coverage",
+          },
+          {
+            prompt: "What is OT-Mitgliedschaft?",
+            options: [
+              "Overtime membership — a union scheme for shift workers",
+              "Membership of an employers' association 'ohne Tarifbindung' — WITHOUT being bound by the collective agreement it signs",
+              "A works council for temporary workers",
+              "A union membership discount",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Introduced in the 1990s as a stopgap to retain restive member firms; it became the norm, and it is the main engine of the coverage collapse.",
+            sourceLessonSlug: "germany-erosion-of-coverage",
+          },
+          {
+            prompt: "Germany's coverage fell by 25 points in the West. Did union density cause that?",
+            options: [
+              "Yes — workers stopped joining unions",
+              "No — coverage was never made of union members (TVG § 3(1) binds through the EMPLOYER). It fell because employers escaped the agreement while staying in the association",
+              "Yes — the government abolished collective agreements",
+              "No — coverage actually rose",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The mechanism that gave Germany its high coverage is the same mechanism that is now losing it. Follow the plumbing.",
+            sourceLessonSlug: "germany-erosion-of-coverage",
+          },
+          {
+            prompt: "Germany could sweep uncovered firms back in by declaring agreements generally binding (TVG § 5). Why doesn't it?",
+            options: [
+              "The power was repealed in 1998",
+              "It is used only exceptionally — partly because § 5 requires the Ministry to act in agreement with a committee on which the employers' peak organisations sit",
+              "The EU forbids it",
+              "German unions oppose it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Günther & Höpner (2023) wrote the paper on exactly this. The employers' side sits on the committee that would have to approve binding the employers.",
+            sourceLessonSlug: "germany-erosion-of-coverage",
+          },
+          {
+            prompt: "Why did Germany introduce a national statutory minimum wage in 2015, having never had one before?",
+            options: [
+              "Because the EU ordered it",
+              "Because the collective agreement used to BE the floor — and as coverage collapsed, a hole opened at the bottom of the labour market that the state had to patch with law",
+              "Because unions demanded it in 1949",
+              "Because inflation rose",
+            ],
+            correctIndex: 1,
+            explanation:
+              "MiLoG, €8.50 from 1 January 2015 — a patch on a hole the erosion opened, not an addition to the model. Institutions are plumbing, not culture.",
+            sourceLessonSlug: "germany-erosion-of-coverage",
+          },
+          {
+            prompt: "What does Article 4 of EU Directive 2022/2041 require of a member state with coverage below 80%?",
+            options: [
+              "It must reach 80% within five years or face fines",
+              "It must draw up an action plan, with a timeline and concrete measures, to raise collective bargaining coverage",
+              "It must abolish its statutory minimum wage",
+              "Nothing — it is purely advisory",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Commission treats 80% as an obligation of EFFORT, not of result. Germany, at ~49%, is well below it.",
+            sourceLessonSlug: "germany-erosion-of-coverage",
+          },
+          {
+            prompt: "In November 2025 the CJEU ruled on the Adequate Minimum Wages Directive (C-19/23). What survived?",
+            options: [
+              "Nothing — the whole Directive was annulled",
+              "Parts of Article 5 (criteria for setting statutory minimum wages) were annulled; ARTICLE 4, the duty to promote collective bargaining, survived",
+              "Article 4 was annulled; Article 5 survived",
+              "The Court upheld the Directive in full",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Denmark v Parliament and Council, 11 November 2025. The obligation on Germany to raise coverage still stands.",
+            sourceLessonSlug: "germany-erosion-of-coverage",
+          },
+          {
+            prompt:
+              "In 2022, what share of the 1,084 German companies with more than 2,000 domestic employees actually had a parity-co-determined supervisory board?",
+            options: ["About 100%", "About 90%", "About 60%", "About 20%"],
+            correctIndex: 2,
+            explanation:
+              "About 60%, down from ~67% in 2019 (Sick, 2024). Roughly four in ten of the companies that owe workers half the boardroom do not deliver it.",
+            sourceLessonSlug: "germany-erosion-of-the-board",
+          },
+          {
+            prompt: "How does converting to a European Company (SE) let a firm avoid parity co-determination?",
+            options: [
+              "SEs are exempt from all labour law",
+              "The level of board-level participation is negotiated and then FROZEN at conversion — so convert while small, then grow past 2,000 employees without ever owing a parity board",
+              "SEs must be registered in Luxembourg",
+              "SEs have no supervisory board",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Five of the six largest German SEs, employing nearly half a million people, have no parity co-determination (Sick, 2024).",
+            sourceLessonSlug: "germany-erosion-of-the-board",
+          },
+          {
+            prompt: "How many employees in large German enterprises were denied parity co-determination as of 2022?",
+            options: ["At least 2.45 million", "About 50,000", "About 300,000", "Nobody — the law is universally complied with"],
+            correctIndex: 0,
+            explanation:
+              "Sick (2024), Mitbestimmungsreport Nr. 81 — roughly 300,000 more than in 2019. The trend is getting worse, not better.",
+            sourceLessonSlug: "germany-erosion-of-the-board",
+          },
+          {
+            prompt: "What is the Drittelbeteiligungslücke ('one-third gap'), and which famous collapse illustrated it?",
+            options: [
+              "A gap in pension funding; Deutsche Bank",
+              "The One-Third Participation Act has no automatic attribution of subsidiaries' employees to the parent, so group structures escape it — which is why WIRECARD had no employee representatives on its supervisory board",
+              "A gap in works-council coverage; Volkswagen",
+              "A gap in the minimum wage; Amazon",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Around 750 enterprises escape through this hole (Sick, 2024). At Wirecard there was nobody in the boardroom whose job was to be suspicious on the workforce's behalf.",
+            sourceLessonSlug: "germany-erosion-of-the-board",
+          },
+          {
+            prompt: "What general lesson about institutions does the board-level erosion teach?",
+            options: [
+              "Laws are always obeyed",
+              "A law that attaches to a LEGAL FORM can be escaped by changing the legal form — and a company can simply decide what shape it is",
+              "German companies are uniquely dishonest",
+              "Co-determination has been repealed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The 1976 Act asks 'what shape is this company?' — and that turns out to be a question with an optional answer.",
+            sourceLessonSlug: "germany-erosion-of-the-board",
+          },
+          {
+            prompt: "Collective bargaining coverage in the German information and communication sector (2023) was about…",
+            options: ["98%", "72%", "31%", "11%"],
+            correctIndex: 3,
+            explanation:
+              "About 11% (Destatis, 2023) — against ~98% in public administration. The German tech sector is, in bargaining terms, roughly as uncovered as the American private sector.",
+            sourceLessonSlug: "germany-erosion-of-coverage",
+          },
+          {
+            prompt: "The number of parity-co-determined German companies was 670 in 2025. Why is that NOT reassuring on its own?",
+            options: [
+              "Because 670 is a made-up number",
+              "Because the absolute count is roughly stable (peak 767 in 2002) while the SHARE of eligible companies complying has fallen — and the share is the number that tells you about intent",
+              "Because it should be zero",
+              "Because it counts coal and steel companies twice",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Absolute counts hide the denominator. The eligible population grew; compliance within it fell from ~67% (2019) to ~60% (2022).",
+            sourceLessonSlug: "germany-erosion-of-the-board",
+          },
+        ],
+      },
+    },
   ],
 };
