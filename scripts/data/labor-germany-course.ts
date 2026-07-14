@@ -1781,5 +1781,328 @@ Now the finding. The Hans-Böckler-Stiftung's Institute for Co-determination and
         ],
       },
     },
+
+    // ────────────── SECTION 6 · THE VERDICT — WHAT IT ACTUALLY DOES ──────────────
+    {
+      slug: "germany-what-the-evidence-says",
+      title: "15 · What the evidence says: real, but modest",
+      section: "Section 6 · The verdict — what co-determination actually does",
+      body: `You have taken the machine apart. You know the two numbers, the two channels, the casting vote, the peace obligation, and the erosion. One question is left, and it is the one people actually argue about at dinner: **does co-determination work?** Does putting workers in the room change what the firm does — pay, jobs, investment, survival?
+
+For most of its history that question got answered with anecdotes and ideology. In the last decade it started getting answered with **data and a natural experiment**, and the answer is not the one either side wanted.
+
+## The problem the economists had to solve
+
+You cannot just compare co-determined firms to non-co-determined firms and call the difference "the effect of co-determination." Big firms have parity boards; small firms don't — so any comparison is really measuring **size**, not co-determination. To find the real effect you need two groups of firms that are alike in every way **except** whether the law put workers on the board. Germany, by accident of legislative history, produced exactly that.
+
+## The boardroom study
+
+Jäger, Schoefer and Heining (2021) — *Labor in the Boardroom*, in the *Quarterly Journal of Economics* — used a sharp cut-off in German company law: firms incorporated in a particular window fell under board-level codetermination while otherwise-identical firms just the other side of the line did **not**. That is as close to a controlled experiment as this subject gets. What they found, comparing the two groups over years:
+
+- **Little to no effect on wages.** Putting worker representatives on the supervisory board did **not** measurably raise (or cut) what the firm paid. The board seat is not a pay-raise machine.
+- **It slightly *increased* capital investment.** The old fear — that workers on the board would vote for wages today and starve the firm of investment (an "underinvestment" or hold-up story) — **did not happen.** If anything the co-determined firms invested a little *more* in capital.
+- **No damage to productivity, profitability, or survival.** The other old fear — that co-determination would make firms sclerotic and drive them under — **also did not show up in the data.**
+
+Read those three together and the headline writes itself: **board-level co-determination is neither the transfer machine its supporters hoped for nor the wrecking ball its opponents feared. Its measurable effects are small.**
+
+## The wider review
+
+That is one institution (the board). Jäger, Noy and Schoefer (2022) — *What Does Codetermination Do?*, in *ILR Review* — stepped back and reviewed the broader empirical literature on German co-determination, works councils included. Their synthesis lands in the same place: the effects on wages, productivity and profits are **modest**, and co-determination is better understood as a set of institutions that **enable long-run cooperation** between labour and management than as a lever that redistributes large amounts of money or power. It coincides with Germany's cooperative, low-conflict industrial relations; it does not, by itself, transform who gets what.
+
+## Why "modest" is the most interesting possible answer
+
+It would be easy to read "modest effects" as "so it doesn't matter." **That is the wrong lesson, and here is why.** The claim that co-determination is a catastrophe for competitiveness is an **empirical** claim — and it fails the test. Firms with workers on the board do not underinvest, do not collapse, do not underperform. So the standard argument *against* co-determination — "it will scare off capital and destroy jobs" — is not supported by the best evidence we have. That is a real finding, and it cuts against the doom-mongers.
+
+But the mirror-image claim — that co-determination is the secret engine of high German wages and equality — **also** fails the same test. The wages were not, mostly, produced in the boardroom. If you want to know where German wage compression came from, the honest answer points back to **Section 1**: the sectoral collective agreement, the channel that is *eroding*. Co-determination sits alongside that system; it is not a substitute for it.
+
+**So the evidence disciplines both sides.** Keep that in your pocket for the last lesson, where you get to form your own verdict — and you now have the thing you need to form one honestly: not a slogan, but a result.
+
+:::reveal Critics say worker board seats will make firms underinvest and collapse; boosters say they are the engine of high German wages. What did the best natural-experiment evidence (Jäger, Schoefer & Heining, 2021) find about both claims? ||| Both are largely wrong. Board-level co-determination had little measurable effect on wages, it slightly *increased* capital investment rather than starving it, and it did no detectable damage to productivity, profitability or firm survival. Its effects are modest — which refutes the doom-mongers (no wrecked competitiveness) and disappoints the boosters (the boardroom is not where the high wages come from) in the same breath.
+
+## Sources
+- Jäger, S., Schoefer, B., & Heining, J. (2021). Labor in the boardroom. *The Quarterly Journal of Economics, 136*(2), 669–725.
+- Jäger, S., Noy, S., & Schoefer, B. (2022). What does codetermination do? *ILR Review, 75*(4), 857–890.`,
+      recallContent: [
+        {
+          prompt: "What did Jäger, Schoefer & Heining (2021) find about board-level co-determination's effect on wages and investment?",
+          answer:
+            "Little to no effect on wages, and a slight INCREASE in capital investment rather than the underinvestment critics predicted — with no detectable harm to productivity, profitability or firm survival. The effects are modest.",
+        },
+        {
+          prompt: "Why is 'modest effects' the finding that disciplines both sides of the co-determination argument?",
+          answer:
+            "It refutes the doom-mongers — no evidence co-determination wrecks investment, productivity or competitiveness — and it disappoints the boosters — the high German wages come mainly from sectoral bargaining (Section 1), not from the boardroom. The boardroom seat is real but is not, by itself, a large lever on who gets what.",
+        },
+      ],
+    },
+    {
+      slug: "germany-two-critiques-and-your-verdict",
+      title: "16 · Two critiques, and your job now",
+      section: "Section 6 · The verdict — what co-determination actually does",
+      body: `A course that ended on "the effects are modest, the end" would be dodging the argument, not settling it. The modest-effects finding is a **fact**; what you make of it is a **judgement**, and educated people make it in two opposite directions. Here are both, stated as fairly as this course can state them, because you should be able to argue either before you pick.
+
+## The critique from the right: it is a cost firms pay to escape
+
+The efficiency critique says co-determination and sectoral bargaining make the German labour market **rigid** — hard to hire, hard to fire, hard to adjust — and split the workforce into protected **insiders** (covered, works-councilled, hard to dismiss) and exposed **outsiders** (the uncovered near-half from Section 5, the temps, the tech sector at ~11% coverage). And it makes an argument the previous section handed it for free: **look at what firms actually do.** They convert to European Companies to freeze board representation. They take *OT-Mitgliedschaft* to escape the agreement. They wear foreign legal forms. A firm that engineers its way out of an institution is telling you, in the only language that never lies — its own behaviour — that it experiences the institution as a **burden**. That is real, and it is the strongest single fact on this side of the table.
+
+**The reply from the evidence (lesson 15) is just as real:** the predicted efficiency *damage* does not show up. Firms may dislike co-determination, but co-determined firms are not less productive, less profitable, or shorter-lived. "They try to avoid it" and "it does measurable harm" are different claims, and only the first survives contact with the data. You are allowed to hold both.
+
+## The critique from the left: it is a golden cage
+
+The opposite critique grants that co-determination is real and says that is exactly the problem. Recall the trade from Section 4: **the body with power inside the firm cannot strike** (BetrVG § 74(2)), and on the board **the shareholders keep the casting vote** (MitbestG § 29(2)). So co-determination, on this view, **incorporates** workers — it buys their cooperation and their quiet with a seat at a table where the owners still decide the close votes. It blunts militancy, ties the union's fate to the firm's competitiveness, and turns worker representatives into co-managers of their own exploitation. And the modest-effects finding is, for this critique, **not a disappointment but a confirmation**: a system that changes the distribution of money and power only a little is a system that has traded the strike for a chair, and got a chair.
+
+**The reply here** is the erosion itself: the parts of the German model now visibly disappearing — coverage, the parity board — are the parts firms are fighting to escape, which is not what you would expect if the whole thing were a toothless management ploy. You do not build elaborate legal machinery to escape a cage that was holding no one.
+
+## Your job now
+
+You came in with two numbers you could not explain. You can now explain them, and a great deal more:
+
+- **Who is allowed to organise, who is excluded, who bargains with whom, and what happens if you try** — the anchor course's four questions, answered for Germany in Section 1. (If you have not taken **The History of Unions: America and the World**, take it next; it is where those four questions come from, and this course did not repeat their derivation.)
+- The difference between **information, consultation and co-determination** — three amounts of power that sloppy writing turns into synonyms, and you will now never misread again.
+- Why **14% density and ~49% coverage** are not a contradiction but a design — and why that design is **eroding**.
+- And now a **verdict you can defend**: co-determination is a real institution with modest measured effects, admired and escaped at the same time, and worth neither a postcard nor a takedown.
+
+That last one is the whole point of the Workers' Rights track. Germany is one answer to "who decides?" — a good one, an eroding one, an argued-over one. **The next country you study will answer it differently**, and the tool for comparing them is the one you now hold. The natural next step in the track is the Nordic model (Sweden and Denmark), where — as lesson 13 flagged — the same fight over whether the *law* or the *contract* should hold up the floor is being had from the other side. Same question. Different plumbing.
+
+:::reveal State the two opposite critiques of German co-determination in one line each, and the fact that answers each. ||| From the right: it is a rigid cost that splits workers into insiders and outsiders — answered by firms' own escape behaviour (SE conversions, OT-membership), but undercut by evidence showing no productivity or survival damage. From the left: it is a golden cage that trades the strike (§ 74(2)) and the casting vote (§ 29(2)) for cooperation and buys industrial peace by incorporating workers — answered by the erosion itself, since firms fight hard to escape an institution the critique calls toothless.
+
+## Sources
+- Betriebsverfassungsgesetz [Works Constitution Act] (Germany), § 74(2) [official English translation]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/englisch_betrvg/englisch_betrvg.html
+- Jäger, S., Noy, S., & Schoefer, B. (2022). What does codetermination do? *ILR Review, 75*(4), 857–890.
+- Mitbestimmungsgesetz [Co-determination Act] of 4 May 1976 (Germany), § 29(2). Bundesministerium der Justiz. https://www.gesetze-im-internet.de/mitbestg/`,
+      recallContent: [
+        {
+          prompt: "What is the single strongest fact behind the 'efficiency' critique of co-determination from the right?",
+          answer:
+            "Revealed preference: firms engineer their way out of it — converting to a Societas Europaea to freeze board representation, taking OT-Mitgliedschaft to escape the agreement, adopting foreign legal forms. A firm that spends effort escaping an institution is signalling it experiences it as a cost. (The reply: the predicted efficiency DAMAGE still does not show up in the data.)",
+        },
+        {
+          prompt: "How does the 'golden cage' critique from the left read the modest-effects finding?",
+          answer:
+            "As confirmation, not disappointment. The works council cannot strike (§ 74(2)) and shareholders keep the casting vote (§ 29(2)), so co-determination incorporates workers and buys industrial peace; a system that redistributes little is a system that traded militancy for a chair. (The reply: firms fight hard to escape it, which is odd for a supposedly toothless institution.)",
+        },
+      ],
+    },
+    {
+      slug: "germany-quiz-6",
+      title: "Section 6 quiz · The verdict",
+      section: "Section 6 · The verdict — what co-determination actually does",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt:
+              "Why can't you measure the effect of co-determination by simply comparing co-determined firms to non-co-determined firms?",
+            options: [
+              "Because co-determined firms refuse to share data",
+              "Because co-determined firms are the big ones and the others are small — so the comparison measures SIZE, not co-determination",
+              "Because co-determination is illegal to study",
+              "Because the two groups are identical, so there is nothing to compare",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Board thresholds are size thresholds. To isolate the effect you need firms alike in everything except whether the law put workers on the board — which a sharp legal cut-off provided.",
+            sourceLessonSlug: "germany-what-the-evidence-says",
+          },
+          {
+            prompt:
+              "In Jäger, Schoefer & Heining (2021), what happened to WAGES when workers were placed on the supervisory board?",
+            options: [
+              "Wages jumped sharply",
+              "Wages collapsed",
+              "There was little to no measurable effect on wages",
+              "Wages doubled within five years",
+            ],
+            correctIndex: 2,
+            explanation:
+              "The board seat is not a pay-raise machine. German wage compression comes mainly from sectoral bargaining (Section 1), not from the boardroom.",
+            sourceLessonSlug: "germany-what-the-evidence-says",
+          },
+          {
+            prompt:
+              "Critics predicted that workers on the board would starve firms of investment ('underinvestment'). What did the evidence actually show about capital investment?",
+            options: [
+              "Investment collapsed, exactly as predicted",
+              "Investment was unaffected",
+              "Investment slightly INCREASED — the opposite of the prediction",
+              "Investment moved entirely abroad",
+            ],
+            correctIndex: 2,
+            explanation:
+              "If anything, co-determined firms invested a little more in capital. The hold-up / underinvestment fear did not materialise.",
+            sourceLessonSlug: "germany-what-the-evidence-says",
+          },
+          {
+            prompt:
+              "What did the boardroom study find about productivity, profitability, and firm survival under co-determination?",
+            options: [
+              "Sharp declines in all three",
+              "No detectable damage to any of them",
+              "Firms survived but became far less profitable",
+              "Productivity rose but survival fell",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The 'co-determination makes firms sclerotic and drives them under' fear did not show up in the data either. The measurable effects are small.",
+            sourceLessonSlug: "germany-what-the-evidence-says",
+          },
+          {
+            prompt:
+              "Jäger, Noy & Schoefer (2022), 'What Does Codetermination Do?', best characterises co-determination's effects as…",
+            options: [
+              "Enormous and redistributive",
+              "Modest — better understood as enabling long-run cooperation than as a large lever on wages, productivity or profits",
+              "Uniformly negative for firms",
+              "Impossible to measure",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The review lands where the boardroom study does: modest measured effects; co-determination coincides with cooperative labour relations rather than transforming distribution.",
+            sourceLessonSlug: "germany-what-the-evidence-says",
+          },
+          {
+            prompt:
+              "How does the 'modest effects' finding cut against the DOOM-MONGERS (co-determination's critics)?",
+            options: [
+              "It shows co-determination doubled German wages",
+              "It shows the predicted damage — wrecked investment, lost productivity, firm collapse — does not appear in the data",
+              "It shows co-determination is unconstitutional",
+              "It shows firms love co-determination",
+            ],
+            correctIndex: 1,
+            explanation:
+              "'It will scare off capital and destroy jobs' is an empirical claim, and it fails the test. Co-determined firms do not underinvest or collapse.",
+            sourceLessonSlug: "germany-what-the-evidence-says",
+          },
+          {
+            prompt:
+              "How does the same 'modest effects' finding cut against the BOOSTERS (co-determination's champions)?",
+            options: [
+              "It proves co-determination should be abolished",
+              "It shows the high German wages come mainly from sectoral bargaining, not the boardroom — so co-determination is not the engine boosters claim",
+              "It shows co-determination raises profits enormously",
+              "It shows works councils are illegal",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The wages were not, mostly, produced in the boardroom. Co-determination sits alongside the sectoral system; it is not a substitute for the channel that is eroding.",
+            sourceLessonSlug: "germany-what-the-evidence-says",
+          },
+          {
+            prompt:
+              "What is the single strongest fact behind the efficiency (right-side) critique of co-determination?",
+            options: [
+              "That co-determination is banned in the United States",
+              "Revealed preference — firms spend real effort engineering their way OUT of it (SE conversions, OT-membership, foreign legal forms), which signals they experience it as a burden",
+              "That works councils go on strike constantly",
+              "That co-determined firms always go bankrupt",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Behaviour is the language that never lies. But note the limit: 'firms try to avoid it' and 'it does measurable harm' are different claims, and only the first survives the data.",
+            sourceLessonSlug: "germany-two-critiques-and-your-verdict",
+          },
+          {
+            prompt:
+              "The efficiency critique says the German labour market splits into 'insiders' and 'outsiders.' Who are the outsiders, in the terms of this course?",
+            options: [
+              "Supervisory-board members",
+              "The uncovered near-half of workers from Section 5 — temps, and low-coverage sectors like tech at ~11%",
+              "Trade union officials",
+              "Executives excluded from the works council",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Protected covered insiders on one side; the eroding, uncovered remainder on the other. The coverage collapse of Section 5 is what gives this critique its bite.",
+            sourceLessonSlug: "germany-two-critiques-and-your-verdict",
+          },
+          {
+            prompt:
+              "The 'golden cage' critique from the left points to two statutory facts to argue co-determination pacifies workers. Which two?",
+            options: [
+              "The five-employee threshold and the four-year term",
+              "The works council cannot strike (BetrVG § 74(2)) and the shareholder chair keeps the casting vote (MitbestG § 29(2))",
+              "The finance committee and the labour director",
+              "The reference clause and the opening clause",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No strike inside the firm, and the owners break the close votes on the board — so co-determination buys cooperation with a seat where shareholders still decide.",
+            sourceLessonSlug: "germany-two-critiques-and-your-verdict",
+          },
+          {
+            prompt:
+              "How does the 'golden cage' critique read the modest-effects evidence?",
+            options: [
+              "As proof co-determination should be expanded",
+              "As confirmation — a system that redistributes little is one that traded militancy for a chair",
+              "As evidence the data are wrong",
+              "As irrelevant to its argument",
+            ],
+            correctIndex: 1,
+            explanation:
+              "For this critique the small effects are the point, not a disappointment: cooperation was bought, and it changed the distribution of money and power only a little.",
+            sourceLessonSlug: "germany-two-critiques-and-your-verdict",
+          },
+          {
+            prompt:
+              "What is the reply to the 'golden cage' (toothless-ploy) critique, drawn from Section 5?",
+            options: [
+              "There is no reply; the critique is unanswerable",
+              "The erosion itself — firms build elaborate legal machinery to ESCAPE co-determination, which is strange behaviour toward an institution that supposedly holds no one",
+              "That works councils actually can strike",
+              "That co-determination raised wages enormously",
+            ],
+            correctIndex: 1,
+            explanation:
+              "You do not spend effort escaping a cage that isn't holding you. The escape routes cut against the claim that co-determination is purely a management ploy.",
+            sourceLessonSlug: "germany-two-critiques-and-your-verdict",
+          },
+          {
+            prompt:
+              "A student says: 'Firms avoid co-determination, therefore it must do them real economic harm.' What is the precise flaw?",
+            options: [
+              "Firms do not actually avoid it",
+              "'Firms try to avoid it' and 'it does measurable harm' are different claims — the evidence supports the first but not the second",
+              "Co-determination is voluntary, so avoidance is impossible",
+              "There is no flaw; the reasoning is correct",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Revealed preference shows firms dislike the institution; the outcome data show co-determined firms are not less productive, profitable or long-lived. Hold both.",
+            sourceLessonSlug: "germany-two-critiques-and-your-verdict",
+          },
+          {
+            prompt:
+              "Which honest one-line verdict on German co-determination does this course arrive at?",
+            options: [
+              "A fairy tale of workers running German industry",
+              "A toothless management ploy with no real content",
+              "A real institution with modest measured effects — admired and escaped at once, worth neither a postcard nor a takedown",
+              "The single cause of high German wages",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Neither cheerleading nor takedown. That defensible, evidence-disciplined verdict is the deliverable of the whole course.",
+            sourceLessonSlug: "germany-two-critiques-and-your-verdict",
+          },
+          {
+            prompt:
+              "The course points you to the Nordic model (Sweden and Denmark) as the next step in the track. What shared question makes that the natural comparison?",
+            options: [
+              "Whether workers should sit on boards at all",
+              "Whether the LAW or the CONTRACT should hold up the wage floor — the same fight Germany's erosion and 2015 minimum wage exposed, argued from the other side",
+              "Whether unions should be legal",
+              "Whether to abolish the supervisory board",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Same question — 'who decides?', and law-versus-contract for the floor — different plumbing. The four questions from the anchor course are the tool for comparing them.",
+            sourceLessonSlug: "germany-two-critiques-and-your-verdict",
+          },
+        ],
+      },
+    },
   ],
 };
