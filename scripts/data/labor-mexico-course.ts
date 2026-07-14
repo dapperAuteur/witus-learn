@@ -313,5 +313,312 @@ Out of those three things, Mexican employers and Mexican union officials built a
         ],
       },
     },
+
+    // ───────────────────── SECTION 2 · THE PROTECTION CONTRACT ─────────────────────
+    {
+      slug: "mexico-protection-contract",
+      section: "Section 2 · The protection contract: a union that exists to prevent unions",
+      title: "4 · The protection contract, explained precisely",
+      body: `This is the lesson the course was built for. Read it slowly, because the object it describes is genuinely counter-intuitive and most people get it slightly wrong.
+
+**A protection contract — *contrato de protección* — is a real, legally registered collective bargaining agreement, signed between a company and a union, which the company's workers have never heard of.**
+
+Not a fake document. Not a forgery. A **valid, enforceable, registered union contract**, filed with the labor authorities, covering the workers at that workplace — negotiated *without their consent or their knowledge* (Gacek, 2019).
+
+Now the detail that turns this from "corrupt" into something genuinely new:
+
+> **It was frequently signed *before the company had hired anybody*.** As Gacek (2019) puts it, "in many cases, these agreements have been signed prior to a business commencing operations, even before the hiring of the workforce."
+
+**Think about what that sentence means.** A factory is being built. There are no workers yet — not one. And the company signs a *collective bargaining agreement on behalf of the workers it has not yet hired*, with a union those future workers will never meet, setting the wages and conditions they will be offered on their first day.
+
+The workers arrive. They have a union. They have a contract. **Nobody asked them anything.**
+
+---
+
+## Why would a company want a union contract?
+
+This is the question that unlocks it. American students are trained to think a company's goal is *no union*. In Mexico, under this system, a company's goal was often **this union** — because a union contract you already have is the most effective possible defense against a union contract you don't want.
+
+Here is the logic, and it is airtight:
+
+1. Mexican law lets one collective bargaining agreement govern a workplace, held by one union — the *titularidad* (title) of the contract.
+2. So if the workplace **already has** a registered agreement, a real union that shows up later cannot simply organize the workers and demand to bargain. **The seat is taken.**
+3. To get in, the real union must first take the title *away* from the incumbent — a legal fight, against an opponent funded by the employer, in front of a tripartite board (remember clause XX) where the incumbent's confederation held the labor seat.
+
+So the employer buys **labor peace**, permanently and cheaply. The protection union collects **dues** from workers who never chose it. And the workers get a contract they didn't negotiate, defended by a union that is being paid — in effect — to make sure nothing changes.
+
+Gacek (2019) describes the arrangement bluntly: it involves unions "that profit from them by **selling 'protection' to employers**," and it "fosters total employer interference and dominance, making any legitimate, authentic and independent collective expression of worker demands at the bargaining table impossible."
+
+---
+
+## The thing to actually learn
+
+Every other course in this track teaches you to ask **"is there a union?"**
+
+Mexico teaches you that the question is worthless, and that the real question is:
+
+> ### **Whose union is it?**
+
+A workplace with 100% union coverage, a signed collective agreement, and dues deducted from every paycheck can be a workplace where the workers have **no voice whatsoever** — and where the union is one of the two things standing on the employer's side of the table.
+
+**This is why the protection contract belongs in a workers' rights course and not just a corruption course.** It is not simply that someone was bribed. It is that *the institutional form of worker power was turned inside out and used as an instrument against workers*. The anchor course showed you unions that were crushed by the state (Poland), unions that were absorbed by the state (China), and unions that were built by workers (the US, Sweden). This is the fourth thing: **a union deployed by the employer.**
+
+:::reveal A company signs a collective bargaining agreement before it has hired a single worker. Why would a company WANT a union contract? ||| Because a union contract it already holds is the best possible defense against one it doesn't want. Mexican law lets one registered agreement govern a workplace, held by one union — so if the seat is already taken by a friendly union, a real union that organizes the workers later cannot simply demand to bargain. It must first win the contract's title away from an incumbent funded by the employer. The company buys permanent labor peace; the protection union collects dues from workers who never chose it.
+
+## Sources
+- Gacek, S. A. (2019). Mexico's ratification of ILO Convention number 98 and the future of protection contracts. *Mexican Law Review, 12*(1), 157–178. https://doi.org/10.22201/iij.24485306e.2019.2.13642
+- Ley Federal del Trabajo. (1970, as amended 2019). Cámara de Diputados. https://www.diputados.gob.mx/LeyesBiblio/pdf/LFT.pdf
+- Constitución Política de los Estados Unidos Mexicanos. (1917, as amended). Cámara de Diputados. https://www.diputados.gob.mx/LeyesBiblio/pdf/CPEUM.pdf`,
+    },
+    {
+      slug: "mexico-how-it-blocked-you",
+      section: "Section 2 · The protection contract: a union that exists to prevent unions",
+      title: "5 · Why you couldn't just vote it out — and how many there were",
+      recallContent: [
+        {
+          prompt: "Define a protection contract in one sentence.",
+          answer: "A real, legally registered collective bargaining agreement signed between a company and a union the workers have never heard of — often before the company has hired anyone — which then blocks a genuine union from bargaining, because the contract's seat is already taken.",
+        },
+        {
+          prompt: "What is the question Mexico teaches you to ask, instead of 'is there a union?'",
+          answer: "Whose union is it?",
+        },
+      ],
+      body: `The obvious objection, and every student raises it: *fine — but the workers outnumber everybody. Why didn't they just vote the fake union out?*
+
+Because of **how the vote worked**. And the cleanest way to prove what was wrong with the old procedure is to read what Mexico's reformers insisted on replacing it with.
+
+## Read the fix, and you can infer the flaw
+
+When Mexico rewrote its labor law in 2019 — and when it committed to that rewrite in the USMCA — the demand was extremely specific. Every vote had to be, in the law's exact words, **personal, free, direct, and secret** (*voto personal, libre, directo y secreto*) (Ley Federal del Trabajo [LFT], 1970/2019).
+
+The United States and Mexico wrote the same requirement into the treaty. Under **USMCA Annex 23-A**, Mexico committed to legislate that before an initial collective agreement can be registered, an independent body must verify — by documents, direct consultation with workers, or **on-site inspection** — that:
+
+> **(A) the worksite is operational,**
+> (B) a copy of the collective bargaining agreement was made readily accessible to individual workers **prior to the vote**, and
+> (C) a majority of workers covered by the agreement demonstrated support through a **personal, free, and secret vote**.
+
+**Now read requirement (A) again.** A trade agreement between two countries contains a clause requiring somebody to go and check **that the factory exists and is running** before its union contract counts.
+
+You do not write that sentence unless contracts were being registered for workplaces that were not operating. **Requirement (A) is the protection contract's fingerprint, preserved in treaty language.** And requirement (C) tells you, just as plainly, that the old vote was not secret.
+
+**That is the answer to "why didn't they just vote it out."** A vote where your employer and the incumbent union can see how you voted is not a vote. It is a list of people to fire — and Article 123 clause XXII, which says you cannot be fired for union activity, is worth exactly as much as your ability to prove *why* you were let go.
+
+Add the rest of the machinery from Section 1: disputes went to a **tripartite board** on which the dominant confederation held the labor seat; a challenger union had to win the contract's title through that board; and delay is itself a weapon, because workers cannot outlast a lawsuit and an employer can.
+
+---
+
+## So how many protection contracts were there? — an honest answer
+
+Here is where this course does something you should demand of every course you take.
+
+**Nobody knows, and this course is not going to make a number up.**
+
+Gacek (2019) — a peer-reviewed article in the *Mexican Law Review*, published by Mexico's national university — says protection contracts are "**believed to** … make up the overwhelming majority of collective agreements in Mexico." *Believed to.* He gives **no figure**, and he is right not to, because there was no honest way to count them. A protection contract does not announce itself. It looks, on paper, exactly like a real one. **That is the entire point of it.**
+
+You will nonetheless see confident numbers quoted. Be careful with them. In Section 3 you will meet a genuinely startling official statistic — that around **139,000** collective agreements were on Mexico's register in January 2023, and that the overwhelming majority of them **died** in 2023 because nobody put them to a worker vote (Secretaría del Trabajo y Previsión Social [STPS], 2023).
+
+It is very tempting to say: *there — that's the count. That's how many protection contracts there were.*
+
+**Don't.** An agreement can fail to be legitimized for reasons that have nothing to do with protection:
+
+- the company **closed** years ago and the paper was never cleaned up;
+- the union **didn't bother**, or couldn't manage the process;
+- the workplace has **three employees** and nobody thought it mattered.
+
+The number of contracts that died is a **ceiling**, not a count. It tells you the scale of the problem was **enormous** — that is beyond dispute, and it is the honest conclusion. It does not tell you the figure, and anybody who converts it into one is doing arithmetic on an assumption.
+
+**Hold two things at once, which is the skill this whole track is teaching:** the practice was pervasive enough that Mexico rewrote its constitution, its labor law, and part of a trade treaty to stop it — *and* the exact number is not knowable, so you should not cite one.
+
+:::reveal USMCA Annex 23-A requires an independent body to verify, before registering an initial collective agreement, that "the worksite is operational." What does the existence of that clause prove? ||| That collective agreements were being registered for workplaces that were not operating — i.e. contracts signed before the factory opened or hired anyone. It is the protection contract's fingerprint, preserved in the text of a trade agreement. (The clause requiring a "personal, free, and secret vote" tells you, just as plainly, that the old vote was not secret.)
+
+## Sources
+- Ley Federal del Trabajo. (1970, as amended by decree published May 1, 2019). Cámara de Diputados. https://www.diputados.gob.mx/LeyesBiblio/ref/lft/LFT_ref30_01may19.pdf
+- Office of the United States Trade Representative. (n.d.). *Agreement between the United States of America, the United Mexican States, and Canada: Chapter 23 — Labor, Annex 23-A (Worker Representation in Collective Bargaining in Mexico)*. https://ustr.gov/sites/default/files/files/agreements/FTA/USMCA/Text/23-Labor.pdf
+- Gacek, S. A. (2019). Mexico's ratification of ILO Convention number 98 and the future of protection contracts. *Mexican Law Review, 12*(1), 157–178. https://doi.org/10.22201/iij.24485306e.2019.2.13642
+- Secretaría del Trabajo y Previsión Social. (2023, January 20). *100 días para concluir el plazo de legitimación de contratos colectivos*. Gobierno de México. https://www.gob.mx/stps/prensa/100-dias-para-concluir-el-plazo-de-legitimacion-de-contratos-colectivos`,
+    },
+    {
+      slug: "mexico-section-2-quiz",
+      section: "Section 2 · The protection contract: a union that exists to prevent unions",
+      title: "6 · Check yourself: whose union is it?",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is a protection contract (contrato de protección)?",
+            options: [
+              "A real, registered collective bargaining agreement signed between a company and a union the workers have never heard of",
+              "A forged document with no legal standing",
+              "An insurance policy a union buys to cover strike pay",
+              "A government contract guaranteeing a factory's workers a minimum wage",
+            ],
+            correctIndex: 0,
+            explanation: "The crucial point is that it is NOT a forgery. It is valid, enforceable and registered — negotiated without the workers' consent or knowledge (Gacek, 2019).",
+            sourceLessonSlug: "mexico-protection-contract",
+          },
+          {
+            prompt: "What was frequently true about WHEN a protection contract was signed?",
+            options: [
+              "Before the company had hired any workers at all — sometimes before it began operations",
+              "Only after a union had won a secret-ballot election",
+              "Only after a strike had already begun",
+              "Exactly five years after the factory opened",
+            ],
+            correctIndex: 0,
+            explanation: "Gacek (2019): 'In many cases, these agreements have been signed prior to a business commencing operations, even before the hiring of the workforce.'",
+            sourceLessonSlug: "mexico-protection-contract",
+          },
+          {
+            prompt: "Why would a company WANT to hold a union contract?",
+            options: [
+              "Because a contract it already holds blocks the one it doesn't want — the seat is taken",
+              "Because Mexican law gives tax breaks to unionized firms",
+              "Because unions pay companies for the right to represent their workers",
+              "Because it is required before a company can export goods",
+            ],
+            correctIndex: 0,
+            explanation: "One registered agreement governs the workplace, held by one union. If a friendly union already holds the title, a real union must first fight to take it away.",
+            sourceLessonSlug: "mexico-protection-contract",
+          },
+          {
+            prompt: "The Spanish term for holding the collective agreement — the thing a real union must take away from an incumbent — is:",
+            options: ["titularidad (the title of the contract)", "constancia (the certificate)", "recuento (the count)", "amparo (the injunction)"],
+            correctIndex: 0,
+            explanation: "Because one union holds the title to the workplace's agreement, a challenger cannot simply organize and demand to bargain — it must win the title.",
+            sourceLessonSlug: "mexico-protection-contract",
+          },
+          {
+            prompt: "In the protection-contract system, who pays the protection union?",
+            options: [
+              "The workers, through dues deducted from workers who never chose that union",
+              "The government, from a labor fund",
+              "The ILO",
+              "Nobody — protection unions are unpaid",
+            ],
+            correctIndex: 0,
+            explanation: "The employer buys labor peace; the union collects dues from workers who never selected it. Gacek describes unions 'that profit from them by selling protection to employers.'",
+            sourceLessonSlug: "mexico-protection-contract",
+          },
+          {
+            prompt: "What question does Mexico teach you to ask, in place of 'is there a union?'",
+            options: ["Whose union is it?", "How big is the union?", "Is the union legal?", "How old is the union?"],
+            correctIndex: 0,
+            explanation: "A workplace can have 100% coverage, a signed agreement and dues deducted from every paycheck — and workers with no voice at all.",
+            sourceLessonSlug: "mexico-protection-contract",
+          },
+          {
+            prompt: "Why is the protection contract a workers' RIGHTS problem and not merely a corruption problem?",
+            options: [
+              "Because the institutional form of worker power was turned inside out and used as an instrument against workers",
+              "Because bribery is not illegal in Mexico",
+              "Because unions are banned in Mexico",
+              "Because it only affects foreign-owned companies",
+            ],
+            correctIndex: 0,
+            explanation: "The anchor showed unions crushed by the state, absorbed by the state, and built by workers. This is a fourth object: a union deployed by the employer.",
+            sourceLessonSlug: "mexico-protection-contract",
+          },
+          {
+            prompt: "Mexico's 2019 reform requires that every union vote be, in the law's words:",
+            options: [
+              "personal, free, direct, and secret",
+              "public, recorded, and witnessed by the employer",
+              "conducted by the union's executive committee",
+              "supervised by the ILO",
+            ],
+            correctIndex: 0,
+            explanation: "Voto personal, libre, directo y secreto. Reading the fix tells you what the flaw was: the old vote was not secret.",
+            sourceLessonSlug: "mexico-how-it-blocked-you",
+          },
+          {
+            prompt: "USMCA Annex 23-A requires an independent body to verify, before an initial collective agreement is registered, that — among other things — what?",
+            options: [
+              "That the worksite is operational",
+              "That the company is profitable",
+              "That the union has at least 1,000 members",
+              "That the agreement has been translated into English",
+            ],
+            correctIndex: 0,
+            explanation: "A trade treaty containing a clause requiring someone to check that the factory actually exists is the protection contract's fingerprint, preserved in treaty language.",
+            sourceLessonSlug: "mexico-how-it-blocked-you",
+          },
+          {
+            prompt: "Why is a vote your employer can watch not really a vote?",
+            options: [
+              "Because it is effectively a list of people to fire, and proving WHY you were dismissed is very hard",
+              "Because the ballots are always miscounted",
+              "Because Mexican law forbids employers from attending",
+              "Because workers cannot read the ballot",
+            ],
+            correctIndex: 0,
+            explanation: "Article 123, clause XXII bans firing a worker for union activity — but that protection is worth only as much as your ability to prove the reason for your dismissal.",
+            sourceLessonSlug: "mexico-how-it-blocked-you",
+          },
+          {
+            prompt: "How many protection contracts existed in Mexico?",
+            options: [
+              "Nobody knows — there is no reliable count, and this course refuses to invent one",
+              "Exactly 139,000",
+              "Exactly 119,000",
+              "Fewer than 5,000",
+            ],
+            correctIndex: 0,
+            explanation: "Gacek (2019) says they are 'believed to' make up the overwhelming majority of collective agreements and gives no figure — because a protection contract looks, on paper, exactly like a real one. That is the point of it.",
+            sourceLessonSlug: "mexico-how-it-blocked-you",
+          },
+          {
+            prompt: "Around 139,000 collective agreements were on Mexico's register in January 2023, and the great majority died in 2023 for want of a worker vote. Why can't you call that the count of protection contracts?",
+            options: [
+              "Because an agreement can also die if the company closed, the union didn't bother, or the workplace was tiny — so it is a ceiling, not a count",
+              "Because the figure was never published",
+              "Because protection contracts were all legitimized successfully",
+              "Because the number is far too small",
+            ],
+            correctIndex: 0,
+            explanation: "The number tells you the scale was enormous — that is beyond dispute. It does not give you a figure, and converting it into one is doing arithmetic on an assumption.",
+            sourceLessonSlug: "mexico-how-it-blocked-you",
+          },
+          {
+            prompt: "What is the source-evaluation habit this section is teaching?",
+            options: [
+              "Hold two things at once: the practice was pervasive AND the exact number is not knowable, so don't cite one",
+              "Always prefer the largest available estimate",
+              "Never cite academic sources",
+              "If an official body publishes a number, it is a fact",
+            ],
+            correctIndex: 0,
+            explanation: "Mexico rewrote its constitution, its labor law and part of a trade treaty to stop the practice. That establishes scale. It does not establish a count.",
+            sourceLessonSlug: "mexico-how-it-blocked-you",
+          },
+          {
+            prompt: "Besides the open vote, what other feature of the old system made a protection contract hard to dislodge?",
+            options: [
+              "Disputes went to a tripartite board on which the dominant confederation held the labor seat — and delay itself favors the employer",
+              "Challenger unions were illegal",
+              "Only the president could authorize a union election",
+              "Workers had no right to strike",
+            ],
+            correctIndex: 0,
+            explanation: "The Junta de Conciliación y Arbitraje (Article 123, clause XX). Workers cannot outlast a lawsuit; an employer can.",
+            sourceLessonSlug: "mexico-how-it-blocked-you",
+          },
+          {
+            prompt: "A protection contract is best described as:",
+            options: [
+              "A union contract whose function is to prevent unionization",
+              "A contract that protects workers from being fired",
+              "A contract between two unions",
+              "A safety agreement covering hazardous workplaces",
+            ],
+            correctIndex: 0,
+            explanation: "That inversion — the form of worker power used as a tool against workers — is why Mexico earns its slot in this track.",
+            sourceLessonSlug: "mexico-protection-contract",
+          },
+        ],
+      },
+    },
   ],
 };
