@@ -213,7 +213,7 @@ too young for their own account.`,
     slug: "learner-feedback-and-reports",
     title: "See learner feedback and problem reports",
     category: "Feedback",
-    keywords: ["feedback", "correction", "comment", "question", "bug", "report", "triage", "inbox"],
+    keywords: ["feedback", "correction", "comment", "question", "bug", "report", "triage", "inbox", "offline", "queued", "pending"],
     body: `# Learner feedback & problem reports
 
 - **Curriculum feedback** (corrections / comments / questions learners leave on lessons) is at
@@ -221,7 +221,20 @@ too young for their own account.`,
 - **Problem reports** (the site-wide "🐞 Report a problem" button: bug / feedback / idea / other)
   are triaged at **Admin → Problem reports**.
 - Both can be read from the command line without copy-paste: \`pnpm feedback:list\` and
-  \`pnpm reports:list\`. Feedback on the owner's courses also mirrors to the WitUS Inbox.`,
+  \`pnpm reports:list\`. Feedback on the owner's courses also mirrors to the WitUS Inbox.
+
+## Both work offline
+
+A learner reading a **saved-for-offline** lesson on a plane or a subway is exactly who spots the
+typo, the wrong date, or the bug — so neither form needs a connection. With no network, the note is
+**held on that device** ("Waiting to send"), and it posts itself the moment the connection is back,
+from whatever page they happen to be on. Nothing is silently lost: a held note survives a reload and
+a closed tab, is only cleared once the server has actually taken it, and if the server rejects it,
+it stays on screen with the reason so the text can be copied out. A learner whose session expired
+while offline is asked to sign in — their note is kept, not dropped.
+
+So reports and feedback can arrive **later than they were written**. The timestamp is when the
+server received it.`,
   },
   {
     slug: "sharing-and-cross-promotion",

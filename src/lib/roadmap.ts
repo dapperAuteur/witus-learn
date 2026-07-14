@@ -213,6 +213,28 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   needs a connection (a queued toggle against a note that may not exist server-side yet is a good way
   to resurrect a closed one) and says so instead of silently reverting. The queue is deliberately
   generic — pointing report-a-problem or feedback at it is a \`kind\` string, not a rewrite.
+- ✅ **Report a problem and lesson feedback work offline too** (\`feat/offline-outbox-everywhere\`) —
+  closes BAM's bug report in full: *"user should be able to submit comment, correction, question, bug,
+  feedback, idea, other when offline and it syncs when back online."* All seven words now do. The
+  moment you most want to file a bug is the moment the app is misbehaving — and "the network died" is
+  one of the ways it misbehaves — while a learner reading a **saved-for-offline** lesson on a plane is
+  exactly who spots the wrong date. Both forms now fall back to the **same outbox** instead of
+  throwing the text away, and it was a \`kind\` string, as promised: \`bug|feedback|idea|other\` →
+  \`POST /api/report\`, \`comment|correction|question\` → \`POST /api/courses/:c/lessons/:l/feedback\`.
+  **The two payloads are kept distinct** (\`message\` vs \`body\` — the APIs' Zod schemas disagree) by
+  deciding the endpoint and body **once, at enqueue time** (\`src/lib/outbox-kinds.ts\`); the flusher
+  stays generic, with no \`switch (kind)\`, so the page a bug was seen on and the lesson a correction is
+  about are **baked in** rather than re-derived from wherever the browser happens to be when the
+  network returns. **Online behaviour is unchanged** — a healthy submit goes straight to its API and is
+  never routed through the queue. Pending items are **visible** (a "N waiting" badge on the collapsed
+  Report button, pending rows in both forms, each with an honest status and a Discard), because
+  someone who files a bug and sees nothing files it again. Signed-out reports queue and flush
+  signed-out (\`/api/report\` takes anonymous reports); a session that expires mid-queue gets "sign in
+  and it'll save", not a deletion. Tenancy is unchanged and unbreakable: no body carries a tenant (the
+  Host decides, server-side), and items are stamped with their origin so a queued write can't be
+  replayed against another brand. Verified against a **real killed server** (a real \`ECONNREFUSED\`,
+  not DevTools throttling — which the last offline agent learned doesn't apply to the SW's own
+  fetches) and across a real process restart. No migration.
 - ✅ **Every email is mirrored to the WitUS Inbox — with the credentials stripped**
   (\`feat/downloads-link-inbox-mirror\`) — only the pricing form mirrored before; magic-link sign-in,
   certificates, cohort invites and guardian invites left no record. The mirror now happens at the
