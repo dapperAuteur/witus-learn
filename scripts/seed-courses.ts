@@ -8,6 +8,7 @@ import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
 import { KNOTS_COURSE } from "./data/knots-course";
+import { CROQUET_COURSE } from "./data/croquet-course";
 import { SURVIVAL_COURSE } from "./data/survival-course";
 import { BROADCASTING_COURSE } from "./data/broadcasting-course";
 import { HOODOO_COURSE } from "./data/hoodoo-course";
@@ -569,6 +570,7 @@ async function main() {
     { name: "Survival", sortOrder: 9 },
     { name: "Careers & Media", sortOrder: 10 },
     { name: "Culture & History", sortOrder: 11 },
+    { name: "Sports", sortOrder: 13 },
   ]) {
     await db
       .insert(schema.courseCategories)
@@ -577,6 +579,7 @@ async function main() {
   }
   for (const { slug, course, category } of [
     { slug: "knot-tying", course: KNOTS_COURSE, category: "Trade Skills" },
+    { slug: "croquet", course: CROQUET_COURSE, category: "Sports" },
     { slug: "off-grid-survival", course: SURVIVAL_COURSE, category: "Survival" },
     { slug: "broadcasting-break-in", course: BROADCASTING_COURSE, category: "Careers & Media" },
     { slug: "hoodoo-tradition-of-resistance", course: HOODOO_COURSE, category: "Culture & History" },

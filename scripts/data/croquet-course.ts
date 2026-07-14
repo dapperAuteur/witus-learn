@@ -2245,5 +2245,1062 @@ Six claims. Three false, two hedged into shape, one only half-checkable. Not one
         ],
       },
     },
+
+    // ══════════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 7 — Clubs, leagues, handicaps, the ladder. Every number here is published by a
+    // governing body. Where two official sources conflict (USCA club/member counts), the course
+    // TEACHES the conflict instead of silently picking one.
+    // ══════════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "handicaps-and-bisques",
+      title: "26 · Handicaps: the system that engineers you a fair game",
+      section: "7 · Clubs, leagues, and the ladder",
+      body: `Croquet's handicap system is the most under-appreciated thing in the sport, and for a young player it is the whole reason the sport is worth entering.
+
+**Here is what it does.** It is designed so that, over time, **you win about half your games — against anybody.** Croquet England states the goal plainly: to "give each player an equal chance of winning half of the games he plays over a period of time" (Croquet England, n.d.-a).
+
+And it is honest about what it is *not*: "Bisques do not transform a poorer player into a better one, just as being given a start does not change a slower runner into a faster one" (Croquet England, n.d.-a). It equalises the *contest*, not the players.
+
+## Reading a handicap
+
+Handicaps run **backwards** from what you might expect. "A **high number indicates a weaker player**, and a low number indicates a stronger player; **zero and negative handicaps indicate very strong players**" (Croquet England, n.d.-b).
+
+A beginner might be a 16 or a 20. A very strong player is a **minus**.
+
+## What the weaker player actually gets
+
+**Association Croquet (WCF):** extra turns, called **bisques**. The AC Laws Glossary defines a bisque as "an extra turn given to a player or side in handicap play," and a **half-bisque** as "a restricted bisque during which no point may be scored for any ball." Law 42.2.1: "The number of bisques given by the lower-handicapped player to the higher is the **difference between their handicaps**." Law 42.2.2: "A bisque may **not** be split into two half-bisques" (World Croquet Federation, 2021).
+
+**Golf Croquet (WCF):** extra **strokes**, not extra turns (Croquet England, n.d.-b; World Croquet Federation, 2022, Rule 20).
+
+**American Six-Wicket (USCA):** bisques again, but of two kinds. Rule 15.1 distinguishes a **replay bisque** (replay the shot you just played) from a **continuation bisque** (an extra shot from where the ball stopped). Rule 15.2 allows **one half-bisque per game**. Rule 15.4: "the lower handicap plays at zero and the higher handicap player receives the difference between the handicaps" (United States Croquet Association, 2024).
+
+## 🚩 The trap: American and Association handicaps are DIFFERENT SCALES
+
+This one bites people constantly, so read it twice.
+
+The USCA's own rankings page states: "**add two to your American Croquet handicap to determine your Association Croquet handicap**" (United States Croquet Association, n.d.-a). They are **not the same number**. A handicap range quoted for one code is meaningless in the other.
+
+For that reason this course will **not** quote you a numeric range for the American scale — the USCA does not publish a floor. What it does publish (Part 15) is: "**Handicaps from 20 to 5 change by whole numbers; below 5 handicaps change by half numbers**," and a "**scratch player**" is one with a zero handicap.
+
+Refusing to state a range is not a gap in this course. It is the course refusing to make one up.
+
+## How your handicap changes — the Automatic Handicap System
+
+Croquet England runs an **Automatic Handicap System (AHS)** — "the principal method by which handicaps are changed" (Croquet England, n.d.-c). It works like a chess rating:
+
+- Every player carries an **index** number.
+- In handicap play, **a win adds 10 to your index; a loss subtracts 10.** (In level play the swing depends on the gap between the handicaps.)
+- Each handicap has a **trigger point**. Cross it, and your handicap moves.
+- A "**step**" is defined precisely: "two bisques from handicap 12 upwards, one bisque between handicaps 5 and 12, and half a bisque between handicaps 0 and 4½."
+- There is **anti-yo-yo protection** so you cannot bounce straight back after one bad game.
+
+**Only qualifying games count**: "singles games in Croquet England Calendar Fixtures, Federation leagues, inter-club contests and designated club competitions." Explicitly excluded: "**Doubles, friendly games within a club, ad-hoc games and abandoned games**" (Croquet England, n.d.-c).
+
+The USCA runs an equivalent: "When a player accumulates a plus or minus of **28 points** total, a handicap change should occur" (United States Croquet Association, 2024, Part 15).
+
+## Why this matters more than it sounds
+
+A 15-year-old beginner can walk into a club and, in their **first tournament**, play a genuinely competitive game against a player with forty years of experience — and have a real chance of winning. Not a participation ribbon. A win, in a game where the maths was arranged so the contest would be close.
+
+Almost no other sport can do that. It is croquet's single best recruiting argument, and hardly anyone outside the sport knows it exists.
+
+:::reveal What is the goal of the croquet handicap system, and what does it explicitly NOT claim to do? ||| The goal is to give each player an equal chance of winning about half their games over time — an even contest against anyone. It explicitly does not claim to make a weaker player better: as Croquet England puts it, "Bisques do not transform a poorer player into a better one, just as being given a start does not change a slower runner into a faster one."
+
+## Sources
+- Croquet England. (n.d.-a). *Handicapping: background*. https://www.croquet.org.uk/?p=games%2Fassociation%2Fhandicapping%2Fbackground
+- Croquet England. (n.d.-b). *Handicapping*. https://www.croquet.org.uk/?p=games/handicapping
+- Croquet England. (n.d.-c). *The Automatic Handicap System*. https://www.croquet.org.uk/?p=games%2Fassociation%2Fhandicapping%2Fautomatic
+- ${WCF_AC}
+- ${WCF_GC}
+- ${USCA_RULES}
+- United States Croquet Association. (n.d.-a). *Rankings*. https://www.croquetamerica.com/content.aspx?page_id=22&club_id=962311&module_id=460005`,
+    },
+    {
+      slug: "the-ladder",
+      title: "27 · The ladder: from a club lawn to a world championship",
+      section: "7 · Clubs, leagues, and the ladder",
+      body: `Now the numbers. Every figure in this lesson is published by a governing body, and several of them are genuinely startling.
+
+## Rung 1: a club
+
+**In England and Wales**, the national governing body is **Croquet England** (which is what the Croquet Association renamed itself to in January 2024). Its published scale: "more than **8,000 subscribers**"; "**200 clubs** are members"; **nine regional Federations** and **10 Federation Development Officers**; and — this is worth noticing — "more than **60 volunteer members** help run our organisation, which only employs **three staff**" (Croquet England, n.d.-a).
+
+**In the United States**, the **USCA** was organised in **1977** and is a 501(c)(3) nonprofit (United States Croquet Association, n.d.-a).
+
+**How big is the USCA? Its own two documents disagree**, and this course is going to tell you so rather than pick one:
+
+| Official USCA source | What it says |
+|---|---|
+| The **2024 rulebook**, p. 4 | "over **200** croquet clubs and **3,500** members" |
+| The **About Us** page | "nearly **300** member clubs and **3,000** members" |
+
+Both are official. They cannot both be exactly right. So the honest statement is: **roughly 200–300 clubs and roughly 3,000–3,500 members, and the USCA's own two sources differ.** If you see a course, a blog or an AI confidently state one of those numbers with no caveat, you now know something they didn't.
+
+(One more, while we are here: a widely-ranked country-club blog claims the USCA has five regions including a "Northwest" and a "Southwest." The USCA's own management page lists **six** regions: **Northeast, Mid-Atlantic, Southeast, Florida, Midwest, Western** — and its districts extend to **Bermuda, Canada and Mexico**. The blog is simply wrong.)
+
+## Rung 2: leagues, in tiers
+
+England's structure is a beautifully explicit ladder, and it is public (Croquet England, n.d.-b). The national inter-club competitions are **banded by handicap**, so a beginner's club team is not thrown at champions:
+
+| Competition | Who it is for |
+|---|---|
+| **AC Tier 1** | Level advanced play, no handicap limit |
+| **AC Tier 2 — the Mary Rose** | Handicaps 0 and above |
+| **AC Inter-Club Handicap — the Longman Trophies** | Handicaps 3.5+, team aggregate ≥ 24 |
+| **GC Tier 1 / Tier 2 (Murphy Shield) / Tier 3 (the Bowl)** | Tier 3 requires a team handicap aggregate ≥ 20 — i.e. it is *for* higher-handicap players |
+| **The All-England Handicap** | Runs club → regional → **national final**, and is explicitly "designed for **newcomers and developing players**" |
+
+Read that last one again. There is a **national final**, played at a national venue, **for beginners**. That is a rung most sports simply do not have.
+
+## Rung 3: the world championship — and here is the number
+
+The **World Croquet Federation** has **29 member countries** — 13 Full members, plus Associates and Recognised Croquet Organisations (World Croquet Federation, n.d.-b). The AC and GC World Championships are each held **every two years** (AC in odd years, GC in even years).
+
+Now the field sizes, from the WCF's own event pages:
+
+- **2025 Association Croquet World Championship** (National Croquet Center, West Palm Beach, 17–26 October 2025): **72 players** in the main event, plus 5 places from a qualifier. Entry fee **£189 per player**. Won by **Reg Bamford** of South Africa — his **sixth** AC world title — beating Mark Avery of England (World Croquet Federation, n.d.-c).
+- **2026 Golf Croquet World Championship** (Cairo, 21–29 November 2026): "**The event capacity is 80 players**." Entry fee **£189** (World Croquet Federation, n.d.-d).
+
+**Seventy-two players. Eighty players. In the world.**
+
+Sit with that. A single regional qualifier in mainstream golf or tennis has a bigger field than the entire croquet world championship. The whole global elite of this sport would not fill a school assembly hall.
+
+**And notice the £189 entry fee.** At croquet's world championship, **the players pay to enter.** That tells you something true and important about the sport's economics, which Section 8 takes apart properly.
+
+## How you actually get in
+
+You do not enter a WCF world championship directly. You are entered **through your national federation**, and the places come in four flavours (World Croquet Federation, n.d.-d):
+
+1. **Federation / membership places** — allocated to member countries.
+2. **World ranking places** — the highest-ranked players over the previous 12 months.
+3. **Wild card places** — nominated by members.
+4. **Qualifier places** — won at a qualifying tournament immediately before the event.
+
+Rankings are collected automatically from results posted on **Croquetscores.com** (World Croquet Federation, n.d.-e). Your results, from ordinary tournaments, feed the world ranking. There is no gatekeeper deciding whether you count.
+
+## An honest fact about which code is growing
+
+The WCF's own 2024 report does not flatter the sport, and that is why it is worth reading: "The number of ranked games in the AC Rankings has **declined by 11% in the past five years**. All Members are reporting a decline. There has been **no reported growth in AC during 2024**." The WCF launched an "**AC Regeneration**" working group in response (World Croquet Federation, 2025).
+
+Meanwhile **Golf Croquet is growing** — the same report notes Spain alone has "more than 2000+ GC players," and the European Club League's second year drew **29 teams from 9 member countries**.
+
+If you are choosing where to put your effort, that is real, published, non-marketing information about which door is opening.
+
+:::reveal How many players are in the main draw of the Association Croquet World Championship, and what does the entry fee tell you? ||| 72 players (2025, West Palm Beach), and the Golf Croquet World Championship has a capacity of 80. The world's entire croquet elite is under a hundred people. The £189 entry fee tells you that at croquet's world championship the PLAYERS PAY TO ENTER — there is no prize-money economy pulling them in, which is exactly why the money in croquet is on the building side, not the winning side.
+
+## Sources
+- ${CE_ABOUT}
+- Croquet England. (n.d.-b). *National inter-club events*. https://www.croquet.org.uk/?p=tournament/caEvents/inter-club
+- ${USCA_ABOUT}
+- ${USCA_RULES}
+- United States Croquet Association. (n.d.). *Management: districts and district presidents by region*. https://www.croquetamerica.com/content.aspx?page_id=22&club_id=962311&module_id=512109
+- World Croquet Federation. (n.d.-b). *Member countries*. https://worldcroquet.org/member-countries/
+- World Croquet Federation. (n.d.-c). *2025 AC World Championship*. https://worldcroquet.org/2025-ac-world-championship-usa/
+- World Croquet Federation. (n.d.-d). *2026 Golf Croquet World Championship*. https://worldcroquet.org/2026-golf-croquet-world-championship/
+- World Croquet Federation. (n.d.-e). *WCF world rankings*. https://worldcroquet.org/wcf-world-rankings/
+- ${WCF_REPORT_2024}`,
+      recallContent: [
+        {
+          prompt: "In croquet handicaps, does a high number mean a strong or a weak player?",
+          answer:
+            "A weak one. High numbers are weaker players; low numbers are stronger; zero and NEGATIVE ('minus') handicaps indicate very strong players.",
+        },
+        {
+          prompt: "Why must you never carry an American Six-Wicket handicap straight over into Association Croquet?",
+          answer:
+            "They are different scales. The USCA's own rankings page says to ADD TWO to your American handicap to get your Association Croquet handicap. A range quoted for one code is meaningless in the other.",
+        },
+      ],
+    },
+    {
+      slug: "school-and-college-croquet",
+      title: "28 · School and college croquet (and the free membership nobody uses)",
+      section: "7 · Clubs, leagues, and the ladder",
+      body: `If you are in high school, this lesson is the one with your name on it.
+
+## USCA membership is FREE for students and schools
+
+Straight from the USCA's published membership rates (United States Croquet Association, n.d.-a):
+
+| Membership | Cost |
+|---|---|
+| Adult (over 25) | **$75** |
+| Junior (25 and under) | **$25** |
+| **Student (full-time, at a USCA-registered school)** | **FREE** |
+| **School** | **FREE** |
+| Club | $125 |
+| Lifetime | $2,000 |
+
+**A full-time student pays nothing, and a school pays nothing.** Membership brings eligibility for sanctioned tournaments (state, regional, national), a handicap and a national ranking, US National Team eligibility, and access to referee and instructor training.
+
+Read that list again and then reread the price. There is a national sports governing body offering a high-school student a ranked competitive pathway **for zero dollars**, and it is barely used.
+
+The USCA also runs a **Juniors Division** (K–12 clubs) and a **Collegiate Division** with "programs in a dozen colleges and universities" (United States Croquet Association, n.d.-b).
+
+## The real collegiate rung: the USCA Collegiate National Championship
+
+It exists, it is annual, and the results are published (United States Croquet Association, n.d.-c):
+
+- **2025:** held **26–27 April 2025** at the **Merion Cricket Club**, Haverford, Pennsylvania. **Oklahoma Wesleyan University won the team title.**
+- **2024:** Golf Croquet team — 1st **St. John's College**, 2nd Oklahoma Wesleyan, 3rd US Naval Academy, 4th Texas A&M.
+
+Notice how few schools are in those results. **That is the opportunity, not the problem.** A high-school student who starts a college croquet club is not joining a crowded field — they are entering one with a national championship and single-digit competition.
+
+## The Annapolis Cup — a tradition, and NOT a rung on the ladder
+
+The most famous croquet event in America is the **Annapolis Cup**: **St. John's College** against the **US Naval Academy**, in Annapolis, every spring, in front of a crowd, with a brass band and boaters and a Navy team in dress uniform.
+
+From St. John's own official fact sheet (St. John's College, n.d.):
+
+- "St. John's has won the Annapolis Cup **32 out of 42 matches**; the Midshipmen have taken the trophy **10 times**."
+- **12 players per side**, in two-person teams.
+- Played under **nine-wicket** rules, on a **100 ft × 50 ft** court.
+- Presenting sponsor: **PNC Bank**.
+
+Two honesty notes, both instructive:
+
+1. **It is played under NINE-WICKET rules** — a different code from everything in Sections 2, 3 and 5. It is a spectacle and a wonderful tradition, but it is **not** a step toward a WCF world championship. Both schools *also* play in the USCA Collegiate Nationals; those are two different things and it is worth not confusing them.
+2. **This course will not tell you the year of the first match.** St. John's own materials date the *origin legend* to 1982 ("according to legend...") but elsewhere describe the series as running "since 1983." When an institution's own page is internally inconsistent, the right move is to say "the early 1980s" and stop — not to pick the more satisfying number.
+
+## In England: schools are paired with clubs
+
+Croquet England runs a **Schools and Juniors Golf Croquet Championship** with **U13 and U11** age groups (Croquet England, n.d.-a). Its published development model is simple and copyable: **pair a school with a nearby croquet club**, and have club members provide the coaching, with schools bringing pupils to the club. It uses **Golf Croquet** deliberately, because GC "proved popular with both athletic and non-athletic children" (Croquet England, n.d.-b).
+
+**One rule you must know if you want to coach kids:** Croquet England requires that "**all coaches who coach children or lead coaching sessions must be CqE U18s Licensed Coaches**" (Croquet England, n.d.-c). Safeguarding is not optional and it is not paperwork theatre. If your plan involves under-18s, that licence is step one, not step five.
+
+:::reveal You are a full-time high-school student in the US. What does USCA membership cost you, and what does it get you? ||| Nothing — student membership is FREE (and school membership is free too). It brings a handicap, a national ranking, eligibility for sanctioned state/regional/national tournaments, US National Team eligibility, and access to referee and instructor training.
+
+## Sources
+- United States Croquet Association. (n.d.-a). *Member benefits and rates*. https://www.croquetamerica.com/content.aspx?page_id=22&club_id=962311&module_id=481592
+- ${USCA_ABOUT}
+- United States Croquet Association. (n.d.-c). *Collegiate national championship results*. https://www.croquetamerica.com/content.aspx?page_id=5&club_id=962311&item_id=117221
+- St. John's College. (n.d.). *Croquet: Facts and history*. https://www.sjc.edu/annapolis/events/croquet/facts
+- Croquet England. (n.d.-a). *Schools and juniors GC championship*. https://croquet.org.uk/?p=press%2Fnews
+- Croquet England. (n.d.-b). *Aiming at the right target* [Recruitment guidance]. https://www.croquet.org.uk/?p=games%2Fclubs%2Finfo%2Frecruitment%2Ftarget
+- Croquet England. (n.d.-c). *Coaching under-18s*. https://croquet.org.uk/?p=games%2Fcoaching%2Fu18`,
+      recallContent: [
+        {
+          prompt: "Why does this course say 'roughly 200–300 clubs and 3,000–3,500 members' for the USCA instead of one number?",
+          answer:
+            "Because the USCA's own two official sources disagree: the 2024 rulebook says over 200 clubs and 3,500 members, while the About Us page says nearly 300 clubs and 3,000 members. When official sources conflict, report the conflict.",
+        },
+        {
+          prompt: "How many players are in the main draw of the AC World Championship, and how do you get in?",
+          answer:
+            "72 (2025); the GC World Championship capacity is 80. You enter through your national federation, via federation places, world-ranking places, wild cards, or a qualifying tournament.",
+        },
+      ],
+    },
+    {
+      slug: "quiz-leagues",
+      title: "29 · Section quiz: clubs, leagues, and the ladder",
+      section: "7 · Clubs, leagues, and the ladder",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "What is the stated goal of the croquet handicap system?",
+            options: [
+              "To make weaker players stronger",
+              "To give each player an equal chance of winning about half their games over time",
+              "To rank players for prize money",
+              "To keep beginners out of tournaments",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Croquet England is explicit that it equalises the CONTEST, not the players: 'Bisques do not transform a poorer player into a better one, just as being given a start does not change a slower runner into a faster one.'",
+            sourceLessonSlug: "handicaps-and-bisques",
+          },
+          {
+            prompt: "In croquet, what does a NEGATIVE ('minus') handicap indicate?",
+            options: ["A beginner", "A very strong player", "A suspended player", "A junior"],
+            correctIndex: 1,
+            explanation:
+              "Handicaps run backwards: high numbers are weaker players, low numbers stronger, and zero or minus handicaps indicate very strong players.",
+            sourceLessonSlug: "handicaps-and-bisques",
+          },
+          {
+            prompt: "What does the weaker player receive in HANDICAP Association Croquet?",
+            options: [
+              "Extra strokes",
+              "Bisques — extra turns; the number is the difference between the two handicaps (Law 42.2.1)",
+              "A head start of six points",
+              "The right to choose the code",
+            ],
+            correctIndex: 1,
+            explanation:
+              "AC gives extra TURNS (bisques). Golf Croquet gives extra STROKES. And Law 42.2.2 forbids splitting a bisque into two half-bisques.",
+            sourceLessonSlug: "handicaps-and-bisques",
+          },
+          {
+            prompt: "Why can't you carry an American Six-Wicket handicap straight into Association Croquet?",
+            options: [
+              "You can — they are the same scale",
+              "They are DIFFERENT scales — the USCA's own rankings page says to add two to your American handicap to get your Association handicap",
+              "Association Croquet has no handicaps",
+              "Only the WCF may issue handicaps",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This is one of the easiest errors to make in croquet. A range quoted for one code is meaningless in the other — which is why this course refuses to quote a numeric range for the American scale at all.",
+            sourceLessonSlug: "handicaps-and-bisques",
+          },
+          {
+            prompt: "In Croquet England's Automatic Handicap System, what happens to your index when you win a handicap game?",
+            options: ["+10", "+1", "It does not change", "-10"],
+            correctIndex: 0,
+            explanation:
+              "Win +10, loss -10 in handicap play. Cross a trigger point and your handicap moves. Anti-yo-yo protection stops you bouncing straight back.",
+            sourceLessonSlug: "handicaps-and-bisques",
+          },
+          {
+            prompt: "Which games count toward your Croquet England handicap?",
+            options: [
+              "Every game you play, including friendlies",
+              "Only qualifying singles games — calendar fixtures, federation leagues, inter-club contests and designated club competitions. Doubles, friendlies and ad-hoc games are excluded",
+              "Only national championships",
+              "Only doubles",
+            ],
+            correctIndex: 1,
+            explanation:
+              "So the handicap reflects real competitive results, not casual play.",
+            sourceLessonSlug: "handicaps-and-bisques",
+          },
+          {
+            prompt: "How many players were in the main event of the 2025 Association Croquet World Championship?",
+            options: ["72", "500", "1,200", "24"],
+            correctIndex: 0,
+            explanation:
+              "Seventy-two, plus five qualifier places. The 2026 Golf Croquet World Championship has a stated capacity of 80. The world's entire croquet elite would not fill a school hall.",
+            sourceLessonSlug: "the-ladder",
+          },
+          {
+            prompt: "What does the £189 entry fee at the croquet world championship tell you?",
+            options: [
+              "That the prize money is enormous",
+              "That the PLAYERS pay to enter — croquet has no prize-money economy, which is why the money in the sport is on the building side, not the winning side",
+              "That entry is restricted to sponsored professionals",
+              "That the WCF is a for-profit company",
+            ],
+            correctIndex: 1,
+            explanation: "It is the single most clarifying economic fact in the sport.",
+            sourceLessonSlug: "the-ladder",
+          },
+          {
+            prompt: "How do you get into a WCF world championship?",
+            options: [
+              "You enter directly online",
+              "Through your national federation — via federation/membership places, world-ranking places, wild cards, or a qualifying tournament",
+              "By invitation from the reigning champion",
+              "By winning a national title only",
+            ],
+            correctIndex: 1,
+            explanation:
+              "And rankings are collected automatically from results posted on Croquetscores.com — your ordinary tournament results feed the world ranking.",
+            sourceLessonSlug: "the-ladder",
+          },
+          {
+            prompt: "What does the WCF's own 2024 report say about Association Croquet?",
+            options: [
+              "It is the fastest-growing code",
+              "Ranked AC games have declined by 11% in five years, with no reported growth in 2024 — prompting an 'AC Regeneration' working group",
+              "It has been discontinued",
+              "It has doubled in size",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Meanwhile Golf Croquet is growing. A governing body publishing unflattering numbers about itself is a source worth trusting.",
+            sourceLessonSlug: "the-ladder",
+          },
+          {
+            prompt: "How does this course report the size of the USCA?",
+            options: [
+              "Exactly 300 clubs and 3,000 members",
+              "As a range — roughly 200–300 clubs and 3,000–3,500 members — because the USCA's own rulebook and About Us page give different figures",
+              "It refuses to say anything",
+              "Exactly 200 clubs and 3,500 members",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two official sources conflict. The honest move is to report the conflict, not to silently pick the number you like.",
+            sourceLessonSlug: "the-ladder",
+          },
+          {
+            prompt: "What is the All-England Handicap?",
+            options: [
+              "The championship for minus-handicap players",
+              "A competition running club → regional → national final that is explicitly designed for NEWCOMERS and developing players",
+              "The national doubles title",
+              "A ranking list",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A national final, at a national venue, for beginners. Very few sports have that rung at all.",
+            sourceLessonSlug: "the-ladder",
+          },
+          {
+            prompt: "What does USCA membership cost a full-time student, and a school?",
+            options: ["$75 each", "$25 each", "Both are FREE", "$125 for a school, $25 for a student"],
+            correctIndex: 2,
+            explanation:
+              "Free student and free school membership — bringing a handicap, a ranking, eligibility for sanctioned tournaments and US National Team eligibility. Barely anybody uses it.",
+            sourceLessonSlug: "school-and-college-croquet",
+          },
+          {
+            prompt: "Why is the Annapolis Cup NOT a rung on the competitive ladder?",
+            options: [
+              "It is not a real event",
+              "It is played under NINE-WICKET rules — a different code — so it leads nowhere near a WCF world championship, however wonderful a tradition it is",
+              "Only Navy may enter",
+              "It has no crowd",
+            ],
+            correctIndex: 1,
+            explanation:
+              "St. John's leads it 32–10 over 42 matches. Both schools ALSO play the USCA Collegiate Nationals — which is the real competitive rung. Do not conflate the two.",
+            sourceLessonSlug: "school-and-college-croquet",
+          },
+          {
+            prompt: "Croquet England requires what of anyone who coaches children?",
+            options: [
+              "Nothing in particular",
+              "That they be a CqE U18s Licensed Coach",
+              "A minus handicap",
+              "A university degree",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Safeguarding is step one, not step five. If your plan involves under-18s, budget for the licence before anything else.",
+            sourceLessonSlug: "school-and-college-croquet",
+          },
+        ],
+      },
+    },
+
+    // ══════════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 8 — Opportunities for amateurs and entrepreneurs. THE WitUS ANGLE, and the section a
+    // generic croquet course would skip. Every number is a PUBLISHED figure from a governing body
+    // or a business's own public rate card. NOTHING here is an earnings estimate — no croquet
+    // coach's, mallet-maker's or club manager's income is published anywhere, so none is invented.
+    // ══════════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-economics-of-croquet",
+      title: "30 · Read the market honestly first",
+      section: "8 · Opportunities: amateurs and entrepreneurs",
+      body: `Before anyone tells you how to make a living in croquet, here is the truth about the money, stated as bluntly as the evidence allows.
+
+## 1. Nobody knows how many croquet players there are
+
+There is **no published global player count**. Not from the World Croquet Federation, not from anyone. This course is not going to estimate one, because an estimate dressed as a fact is a lie with a decimal point.
+
+What *is* published:
+
+| Body | Published figure |
+|---|---|
+| **USCA** | roughly 200–300 clubs; roughly 3,000–3,500 members (its own two sources differ — Section 7) |
+| **Croquet England** | "more than **8,000 subscribers**"; **200** member clubs |
+| **Spain** (via the WCF) | "more than **2000+** GC players" |
+| **WCF** | **29** member countries |
+
+That is close to the whole published picture of the sport's size. If you see a confident "there are X million croquet players worldwide," ask where it came from. There is nowhere for it to have come from.
+
+## 2. There is essentially no prize-money economy
+
+This is the load-bearing fact of the entire section, and it is the one that flips the whole opportunity around.
+
+- **No prize fund is published for either the Association Croquet or the Golf Croquet World Championship.** The WCF's event pages do not mention prize money at all.
+- What the event pages *do* publish is the **entry fee: £189 per player** (World Croquet Federation, n.d.-a, n.d.-b).
+
+**At croquet's world championship, the players pay.**
+
+So if your plan was "get very good, win money," the plan does not exist. Not because croquet is unfair, but because **the sport is not organised around purses at all**.
+
+## 3. Therefore the money is on the BUILD side, not the WIN side
+
+Every real economic opening in croquet is on the *supply* side of the sport:
+
+- **Equipment** — and the approved supply side of championship croquet is astonishingly small (Lesson 34).
+- **Coaching and refereeing** — with published qualification ladders and real rate cards (Lesson 33).
+- **Courts and turf** — a specialist greenkeeping niche with published specs (Lesson 32).
+- **Clubs** — which governing bodies will **lend you money** to start (Lesson 31).
+- **Venues and events** — resorts already charge hundreds of dollars an hour for croquet (Lesson 33).
+
+## 4. What this course refuses to tell you
+
+**Nobody's income from croquet is published anywhere** — not a coach's, not a mallet-maker's, not a club manager's. So this course gives you **rate cards** (what businesses publicly charge) and **published grant figures** (what governing bodies say they have given), and it labels them as exactly that.
+
+If a source tells you "croquet coaches earn $X a year," ask them where they got it. There is no published dataset. There is no survey. That number was invented.
+
+**Rate cards and grant totals are evidence. Earnings claims are not.** Build your plan on the first kind.
+
+:::reveal Why is "get very good at croquet and win prize money" not a viable plan — and what does that fact tell you about where the opportunity IS? ||| Because there is essentially no prize-money economy. No prize fund is published for either world championship, and what IS published is the £189 entry fee — the players pay to compete. So the money in croquet is entirely on the BUILD side: equipment, coaching, courts and turf, club formation, venues and events.
+
+## Sources
+- World Croquet Federation. (n.d.-a). *2025 AC World Championship*. https://worldcroquet.org/2025-ac-world-championship-usa/
+- World Croquet Federation. (n.d.-b). *2026 Golf Croquet World Championship*. https://worldcroquet.org/2026-golf-croquet-world-championship/
+- ${WCF_REPORT_2024}
+- ${CE_ABOUT}
+- ${USCA_ABOUT}`,
+    },
+    {
+      slug: "start-a-club",
+      title: "31 · Start a club (they will lend you the money)",
+      section: "8 · Opportunities: amateurs and entrepreneurs",
+      body: `Most sports want your money. Croquet's governing bodies want **your club to exist**, and they publish what they have paid to make that happen.
+
+## The published grant numbers
+
+From Croquet England's own About Us page (Croquet England, n.d.-a):
+
+> "In the last 10 years we have awarded **grants totalling nearly £200,000 to 80 member clubs** and **interest-free loans of more than £28,000 to 15 clubs**."
+
+> "In the last eight years, **48 new clubs** have benefited from our financial and practical help."
+
+Forty-eight new clubs in eight years, in one country, with the governing body helping to pay for them.
+
+Member clubs also get **free Public Liability Insurance**, and there are **10 Federation Development Officers** whose job is to help (Croquet England, n.d.-a).
+
+**The WCF does it internationally too.** Its Development page states that WCF Members "may **apply for loans or grants from the WCF** for the purpose of developing croquet in their domain," and that the WCF funds coaching and referee training courses and sends volunteer coaches abroad, with "**all transport costs paid via the WCF Development Programme**" (World Croquet Federation, n.d.).
+
+**The USCA has run a grant program too** — and here the course has to be careful with you. The page this course could verify is the **2022** program: a **$15,000** total pot, **up to $1,000 per applicant**, open to **clubs and schools**, funding member-recruitment events, with a USCA representative attending and **20% withheld** pending a final report (United States Croquet Association, n.d.-a). A 2023 round is referenced elsewhere. **A current round could not be confirmed.** So: those figures describe the 2022/2023 rounds, and **your first move is to ask the USCA whether a round is open now** — not to assume it.
+
+## The starter pack already exists
+
+Croquet England publishes a **"Forming a Club"** page offering "advice about creating lawns, legal advice, contacts with other players in your area, **grants or loans**, publicity, [and a] **Starter Pack** (template club rules, membership forms etc.)" (Croquet England, n.d.-b).
+
+Its club-resources index carries **model constitutions** (including CASC and CIO forms — the legal structures a UK amateur sports club actually uses), insurance guidance, safeguarding policy, a communications toolkit, draft press releases, customisable leaflets, an accessibility guide, and a lawn-construction booklet (Croquet England, n.d.-c).
+
+**Honesty note, and it is a useful one:** the "Forming a Club" page itself carries a banner reading *"This page has not been validated recently by its owner."* The governing body is telling you, on its own page, that the page may be stale. **Believe it, and confirm the current position by email before you rely on a figure.** A source that flags its own staleness is being *more* trustworthy, not less.
+
+## How much lawn do you actually need? They published that too
+
+The **Croquet Facility Guide** — written by Croquet Victoria and published by the WCF as an advice sheet — gives real planning numbers (Croquet Victoria, 2019):
+
+- **One court ≈ 1,066 m²** (a 25.6 × 32 m court plus a 4 m buffer).
+- **Two courts ≈ 2,132 m² (0.21 hectares)** — plus pavilion and parking, so realistically **half a hectare to a hectare** for a two-court venue.
+- **One court per 25 members** is the planning ratio; **one court can accommodate up to 8 players at a time**.
+- Their demand estimate: "one 2-court venue per **33,000 people aged over 15 years**."
+
+Do the arithmetic on your own town. Then check how many croquet clubs it has.
+
+## And you do not need a full-size court to start
+
+Remember from Lesson 3: **GC Rule 2.4** explicitly allows a smaller court keeping the 5:4 proportions, and the USCA rulebook gives **50 × 40 ft** as a practical minimum. A school field corner is a legal court.
+
+**The realistic first version of "start a club" is therefore not "buy a hectare."** It is: *one small court, in a space you already have access to, with a school or community partner, playing Golf Croquet because it is the fastest to teach.*
+
+:::reveal Name three concrete forms of support a governing body publishes for people starting a croquet club. ||| Any three of: Croquet England grants (nearly £200,000 to 80 clubs in ten years) and interest-free loans (over £28,000 to 15 clubs); free Public Liability Insurance for member clubs; 10 Federation Development Officers; a "Forming a Club" Starter Pack with template club rules and membership forms; model constitutions and a lawn-construction booklet; WCF loans/grants to member federations plus volunteer coaches with transport costs paid; and the USCA's club/school grant program (verified for its 2022 round — check whether a current round is open).
+
+## Sources
+- ${CE_ABOUT}
+- Croquet England. (n.d.-b). *Forming a club*. https://www.croquet.org.uk/?p=games/clubs/info/NewClub
+- Croquet England. (n.d.-c). *Club resources*. https://www.croquet.org.uk/?p=games/clubs/info
+- World Croquet Federation. (n.d.). *Development*. https://worldcroquet.org/wcf-business/development/
+- United States Croquet Association. (n.d.-a). *Club grant program* [The 2022 round — verify whether a current round is open]. https://www.croquetamerica.com/content.aspx?page_id=22&club_id=962311&module_id=505061
+- ${FACILITY_GUIDE}
+- ${WCF_GC}
+- ${USCA_RULES}`,
+      recallContent: [
+        {
+          prompt: "Why does this course refuse to give you a global croquet player count?",
+          answer:
+            "Because no governing body publishes one. There is nowhere for such a number to have come from — so any confident 'X million players worldwide' figure was invented.",
+        },
+        {
+          prompt: "What is published about prize money at the croquet world championships?",
+          answer:
+            "Nothing — no prize fund is published for either the AC or GC World Championship. What IS published is the £189 entry fee. The players pay to compete.",
+        },
+      ],
+    },
+    {
+      slug: "courts-and-turf",
+      title: "32 · Courts and turf: the specialist trade underneath the sport",
+      section: "8 · Opportunities: amateurs and entrepreneurs",
+      body: `Every croquet club in the world sits on a piece of grass that somebody has to build and somebody has to maintain. That is a trade, it has published specifications, and almost nobody is trained in it.
+
+The source throughout is the **Croquet Facility Guide** (2nd ed., 2019), written by Croquet Victoria and published by the World Croquet Federation as an advice sheet (Croquet Victoria, 2019). It is one of the most useful documents in the sport and hardly anyone reads it.
+
+## The actual specification
+
+| Thing | The published number |
+|---|---|
+| **Mowing height** | **3 mm to 5 mm**, with a cylinder mower, "up to **three times a week** in the growing season" |
+| **Court plus borders** | "each court should measure **39 by 32 yards minimum**" |
+| **Land per court** | ≈ **1,066 m²** (court + 4 m buffer) |
+| **Land per 2-court venue** | ≈ **2,132 m² (0.21 ha)** before pavilion and parking |
+| **Lighting** | **at least 150 lux** — and the guide is explicit that 100 lux (the minimum for bowls) "is insufficient for croquet" |
+| **Surface** | grass only: "**The sport is not currently played on synthetic surfaces**" |
+| **Grass type** | "a hard wearing, preferably drought tolerant grass such as **Santa Ana couch**" — *stated for Australian conditions; your climate will differ, and the guide is an Australian document* |
+
+Maintenance is a real job: **scarification and aeration at least once a year**, plus pest control, top dressing, weed control and rolling.
+
+## ⚠️ A sourcing warning you can use on any technical question
+
+Search the web for "croquet lawn mowing height" and you will get answers like "½ to ¾ inch" or "¼ to 5/8 inch" — from **turf-retailer blogs and backyard-game sites**. They are not governing-body sources, and **they contradict each other**.
+
+This course uses **3–5 mm, from the Croquet Victoria/WCF guide, and tells you where it came from.** When a technical number matters, find the document that a governing body actually stands behind. The blogs are guessing.
+
+## The business insight hiding in one sentence
+
+Here is the best entrepreneurial fact in the whole guide, and you have to read carefully to catch it:
+
+> "The grass height required for competitive croquet is approximately **3 mm**, compared with **4 mm for lawn tennis** and **1 mm for competitive bowls**. Daily sharing with lawn tennis (if played on turf) can therefore be achieved fairly readily." (Croquet Victoria, 2019)
+
+**Croquet's turf requirement sits between tennis and bowls.** That means:
+
+- A croquet lawn **can share a site, and a greenkeeper, with a tennis or bowls club** — and the guide notes that new clubs commonly do exactly that, because "a new club will not have the resources or expertise to maintain its own lawns."
+- Which means the realistic route to a new court is often **not "buy land"** but **"partner with a facility that already has fine turf and a greenkeeper"** — a golf club, a bowls club, a school with a good field, a resort.
+
+That reframes the whole capital problem. The scarce thing is not grass. It is **flat, finely-mown, well-drained grass with someone competent already looking after it** — and those places already exist, under-used, in every town.
+
+## What that makes you
+
+If you learn croquet turf properly, you are one of a very small number of people who can:
+
+- advise a club on building a court to specification,
+- keep a court to 3–5 mm through a season,
+- and tell a resort or a school truthfully what it would cost.
+
+That is a trade skill with a published standard and almost no competition. It also pairs directly with groundskeeping and turf-management careers that exist regardless of croquet.
+
+:::reveal What mowing height does the WCF-published Croquet Facility Guide specify, and why is that number commercially interesting? ||| 3 mm to 5 mm, cut with a cylinder mower up to three times a week in the growing season. It is commercially interesting because croquet's ~3 mm sits between lawn tennis (~4 mm) and competitive bowls (~1 mm) — so a croquet court can share a site and a greenkeeper with an existing tennis or bowls facility. The scarce resource isn't land; it's finely-mown turf with someone competent already maintaining it.
+
+## Sources
+- ${FACILITY_GUIDE}
+- ${WCF_GC}`,
+      recallContent: [
+        {
+          prompt: "How much land does a two-court croquet venue need, before pavilion and parking?",
+          answer:
+            "About 2,132 m² — roughly 0.21 hectares (each court is about 1,066 m² including a 4 m buffer). Realistically half a hectare to a hectare once you add a pavilion and parking.",
+        },
+        {
+          prompt: "What is the planning ratio for courts to members, and how many players fit on one court?",
+          answer:
+            "One court per 25 members; one court can accommodate up to 8 players at a time (Croquet Facility Guide, 2019).",
+        },
+      ],
+    },
+    {
+      slug: "coaching-and-officiating",
+      title: "33 · Coaching, refereeing, and what venues already charge",
+      section: "8 · Opportunities: amateurs and entrepreneurs",
+      body: `## The qualification ladder is published, and it is short
+
+Croquet England publishes its whole coaching ladder (Croquet England, n.d.-a):
+
+| Level | What it takes |
+|---|---|
+| **Club-Level Coach** (yellow badge) | A **two-day course** — lecture plus practical, formal assessment indoors and on the lawn, and an **open-book test on both the GC Rules and the AC Laws**. Qualifies you to coach beginners and high-handicap players **at your own club**. |
+| **Grade 1 Coach** (blue badge) | AC handicap **12 or better**; GC handicap **6 or better** |
+| **Grade 2 Coach** | AC handicap **6 or better** + a Silver merit award + Assistant Referee standard; GC handicap **3 or better** |
+| **Grade 3 Coach** | AC handicap **0 or better** *plus an AC Referee's qualification*; GC **minus handicap** *plus a GC Referee's qualification* |
+| **Examining Coach** | Assesses and recommends candidates |
+
+**A two-day course.** That is the entry qualification to coach croquet at a club in England.
+
+**In the United States**, the USCA has a **Referee & Instructor Committee** that sets testing, certification and re-certification standards, and runs **Croquet Schools** ("Learn From the Pros") at the National Croquet Center — Beginner, Intermediate and Advanced, with a **maximum 8:1 student-to-teacher ratio** and five hours a day on court (United States Croquet Association, n.d.-a, n.d.-b).
+
+**And the WCF built an online route.** In December 2023 it launched **online Golf Croquet rules training and accreditation**, run with Ian Shore of the Chiltern Croquet Academy. The knock-on effect is quietly significant: because candidates arrive having done the pre-study pack, "some UK referee courses have now been reduced to a **one-day course**" (World Croquet Federation, 2025).
+
+**The hard requirement, again:** to coach under-18s in England you must be a **CqE U18s Licensed Coach** (Croquet England, n.d.-b). Do that first.
+
+## What venues already charge — real, public rate cards
+
+These are **published prices from businesses' own websites**. They are *rate cards*, not anyone's income, and this course will not pretend otherwise.
+
+**The Greenbrier** (White Sulphur Springs, West Virginia) publishes (Greenbrier, n.d.):
+
+- Private croquet lesson: **$128** for one person
+- **$80 per person** for groups of 2–6
+- **$802** for groups larger than 6
+- Open play: **$27 per adult per hour**; **$14 per child (13–17) per hour**
+
+**Pinehurst Resort** (North Carolina) publishes, for sessions including instruction, equipment and lawn fees (Pinehurst Resort, n.d.):
+
+- **$100** — up to 3 people, 1 hour
+- **$175** — 4 people, 1.5 hours
+- **$275** — 5–8 people
+- **$550** — 9–16 people
+- **$750** — 17–32 people
+- **$20 per person** for experienced players who don't need instruction
+
+Pinehurst runs all of that on **two croquet courts**, and states that croquet there can handle up to **24 players**.
+
+## Put the two halves together
+
+- The qualification to coach beginners at a club: **a two-day course**.
+- What a resort charges for a croquet session: **$100 to $750**.
+- What a resort needs in order to sell those sessions: **a lawn, some sets, and someone who can teach.**
+
+That is a very short distance between "I know this game" and "someone is paying me to teach it." Croquet is one of the few sports where the coaching qualification is measured in **days** rather than years.
+
+**The honest caveat, and it is the whole reason this course is trustworthy:** those are the *prices the venues charge*, not the money a coach takes home. **No croquet coach's earnings are published anywhere.** If you want to know what a coaching hour is worth in your area, the way to find out is to call three clubs and three resorts and ask — not to read a number off a website that invented it.
+
+:::reveal What qualification does Croquet England require to coach beginners at your own club, and what do two US resorts publicly charge for a croquet session? ||| A Club-Level Coach badge — a TWO-DAY course with a practical assessment and an open-book test on both the GC Rules and the AC Laws. The Greenbrier publishes $128 for a private lesson ($80 per person for groups of 2–6); Pinehurst publishes $100 (up to 3 people, 1 hour) rising to $750 (17–32 people). Those are RATE CARDS, not anyone's earnings — no croquet coach's income is published anywhere.
+
+## Sources
+- Croquet England. (n.d.-a). *Coaching*. https://croquet.org.uk/?p=games%2Fcoaching
+- Croquet England. (n.d.-b). *Coaching under-18s*. https://croquet.org.uk/?p=games%2Fcoaching%2Fu18
+- United States Croquet Association. (n.d.-a). *Referee and instructor committee*. https://www.croquetamerica.com/content.aspx?page_id=22&club_id=962311&module_id=475662
+- United States Croquet Association. (n.d.-b). *Croquet schools*. https://www.croquetamerica.com/content.aspx?page_id=22&club_id=962311&module_id=561773
+- ${WCF_REPORT_2024}
+- Greenbrier. (n.d.). *Croquet* [Published rate card]. https://www.greenbrier.com/activities/croquet/
+- Pinehurst Resort. (n.d.). *Lawn sports* [Published rate card]. https://www.pinehurst.com/activities/lawn-sports/`,
+      recallContent: [
+        {
+          prompt: "Why does this course quote resort rate cards rather than croquet coaches' salaries?",
+          answer:
+            "Because no croquet coach's, mallet-maker's or club manager's income is published anywhere. A rate card is evidence of what a business charges; an earnings figure with no source is an invention.",
+        },
+        {
+          prompt: "What is the sourcing lesson in the 'croquet lawn mowing height' example?",
+          answer:
+            "The numbers you find on turf-retailer and backyard-game blogs contradict each other and are not governing-body sources. Use the 3–5 mm figure from the WCF-published Croquet Facility Guide — and say where it came from.",
+        },
+      ],
+    },
+    {
+      slug: "equipment-and-events",
+      title: "34 · Equipment and events: an unusually small supply side",
+      section: "8 · Opportunities: amateurs and entrepreneurs",
+      body: `## The entire global supply side of championship croquet fits on one page
+
+The WCF publishes a list of **every approved ball and hoop in the world**. As of its 21 October 2024 list (World Croquet Federation, 2024):
+
+**Approved balls — three brands. In the world.**
+
+| Ball | Named supplier |
+|---|---|
+| Dawson 2000 International Mk III | Paul Manwaring |
+| Sunshiny CQ16 | Richard Wu (Taiwan) |
+| **Invictus X** (approved to Nov 2027) | **Robert Fletcher** |
+
+**Approved hoops — nine.** Omega Adjustable · **Jaques Championship** (approved from July 2005) · George Wood Championship (Wood Mallets Ltd) · Hopewell · Atkins Quadway (Michael McClure, NZ) · Aldridge · Holdfast · Ultra (Michael Moore, South Africa) · Cerrajería Artística Borrajo, Spain (approved March 2024).
+
+**And here is how you get on that list:** a manufacturer submits a set to the WCF Equipment Group **with a £100 fee**, and approval runs for a fixed term (World Croquet Federation, 2023).
+
+**One hundred pounds.** That is the published fee to have equipment tested for approval at world-championship level in this sport. It is not a moat. It is a doorstep.
+
+## The example that proves the whole section
+
+**Robert Fletcher** won the **2013 Association Croquet World Championship** at Surbiton, beating Paddy Chapman. At **20 years old** he was the **youngest player ever to win the title**, and the first Australian (Croquet England, 2013).
+
+That same Robert Fletcher is the named supplier of the **WCF-approved Invictus X ball** and runs **Invictus Croquet**, which makes mallets (World Croquet Federation, 2024). And in 2025 he won the **USCA Association Croquet national singles title** (United States Croquet Association, n.d.).
+
+**A world champion who built an equipment company inside his own sport, and whose product is on the governing body's approved list.** Every step of that is checkable in governing-body documents. It is not a motivational anecdote — it is a documented path.
+
+## The oldest name in the sport, and the lesson it teaches
+
+**John Jaques II** is in the WCF Hall of Fame for the 1864 rulebook (Section 6), and the **Jaques Championship hoop is still on the WCF's approved list today**, approved from 1 July 2005 (World Croquet Federation, 2024). A company that shaped the rules in the 1860s is still supplying championship equipment.
+
+Now hold three facts together, because a lazy course would only tell you the first one:
+
+1. **The business dates itself to 1795** and calls itself the oldest games manufacturer in the world — *that is the company's own claim, on its own website*.
+2. **The registered company** — JOHN JAQUES AND SON LIMITED, company no. **00399667** — was **incorporated on 22 October 1945**, per the UK's Companies House register.
+3. As read on Companies House, its status was **"Voluntary Arrangement"** — a formal insolvency procedure, not simply "active" (Companies House, n.d.).
+
+All three can be true at once. The romantic one is the one everybody repeats.
+
+**⚠️ Check this yourself before you repeat it.** Companies House is a **live register** and a voluntary arrangement can conclude. That is precisely why this course tells you *where* it read it instead of just asserting it. **Go and look.** The URL is in the sources.
+
+## Events and venues
+
+- **Equipment makers sponsor championships.** Oakley Woods Croquet (Ontario) is the title sponsor of the Oakley Woods Canadian National GC Championship. That is a business model in one sentence: make the equipment, sponsor the event that showcases it.
+- **A croquet venue can be an events business.** The **National Croquet Center** in West Palm Beach — home of the USCA and host of the 2025 AC World Championship — markets itself as an events venue: on its own site, **twelve full-sized championship lawns** on four acres, plus a **19,000 sq ft clubhouse** (built 2002) with a capacity of **600 guests** (National Croquet Center, n.d.).
+
+  **A discrepancy worth noticing:** the Palm Beach County Sports Commission describes the same venue as **10 acres with 19 lawns** (Palm Beach County Sports Commission, n.d.). The venue's own site says 4 acres and 12 lawns. This course reports both and picks neither, because it cannot resolve them. That is what you do with a conflict you cannot settle.
+
+- **A club can host the national collegiate championship.** Merion Cricket Club has hosted the USCA Collegiate Nationals for several years running (Section 7).
+
+## The shape of the whole opportunity
+
+Put the section together:
+
+- Three approved ball makers in the world; nine approved hoops; **a £100 approval fee**.
+- A world championship whose **entire field is under 100 players** and whose players **pay to enter**.
+- Governing bodies that will **lend you money**, **insure your club**, and **send you a coach with the travel paid**.
+- Resorts already charging **$100–$750** a session for something they need a lawn and a teacher to deliver.
+- A coaching qualification measured in **days**.
+
+**That is not a saturated market. It is an under-built one.** Which is a completely different problem, and a much better one to have.
+
+:::reveal How many ball brands are WCF-approved worldwide, what does approval cost, and who supplies one of them? ||| Three approved ball brands in the world (Dawson, Sunshiny, and Invictus X), and nine approved hoops. A manufacturer submits a set to the WCF Equipment Group with a £100 fee. The Invictus X is supplied by Robert Fletcher — who won the 2013 AC World Championship at age 20, the youngest ever, and runs Invictus Croquet. A world champion who built an equipment company inside his own sport.
+
+## Sources
+- World Croquet Federation. (2024). *WCF approved balls and hoops (21 October 2024)*. https://worldcroquet.org/wp-content/uploads/2024/11/WCF-Approved-Balls-and-Hoops-21-October-2024.pdf
+- World Croquet Federation. (2023). *WCF equipment regulations* (v6.4). https://worldcroquet.org/wp-content/uploads/2023/12/WCFEquipmentRegulations_v6.4published.pdf
+- Croquet England. (2013). *Robert Fletcher wins the World Championship* [News]. https://www.croquet.org.uk/?p=press%2Fnews&NewsID=4683
+- United States Croquet Association. (n.d.). *National champions*. https://www.croquetamerica.com/content.aspx?page_id=22&club_id=962311&module_id=459897
+- Companies House. (n.d.). *John Jaques and Son Limited, company no. 00399667* [Live public register — re-check before repeating]. https://find-and-update.company-information.service.gov.uk/company/00399667
+- National Croquet Center. (n.d.). *Home*. https://www.croquetnational.com/
+- Palm Beach County Sports Commission. (n.d.). *National Croquet Center* [Gives figures that conflict with the venue's own site]. https://www.palmbeachsports.com/facilities/national-croquet-center/`,
+      recallContent: [
+        {
+          prompt: "What does Croquet England require to become a Club-Level Coach?",
+          answer:
+            "A two-day course: lecture plus practical, a formal assessment indoors and on the lawn, and an open-book test on BOTH the GC Rules and the AC Laws.",
+        },
+        {
+          prompt: "Name two published resort rate points for croquet instruction.",
+          answer:
+            "Any two of: the Greenbrier's $128 private lesson, or $80 per person for groups of 2–6; Pinehurst's $100 for up to 3 people for an hour, $275 for 5–8 people, or $750 for 17–32 people.",
+        },
+      ],
+    },
+    {
+      slug: "your-move",
+      title: "35 · Your move: the next ninety days",
+      section: "8 · Opportunities: amateurs and entrepreneurs",
+      body: `You now know more about croquet than almost anyone who has not played it. Here is what to actually do with that, in order, using only things this course has verified.
+
+## Weeks 1–2 — get on a lawn
+
+1. **Find your nearest club.** Both the USCA and Croquet England publish club finders. There are roughly 200–300 USCA clubs and 200 Croquet England member clubs.
+2. **Ask for Golf Croquet.** It is one stroke per turn (Rule 1.1.1), you will be playing a real game in twenty minutes, and it is the code that is actually **growing** (World Croquet Federation, 2025).
+3. **Name the code, every time.** "Which code do you play here?" is the sentence that tells a club you are serious.
+
+## Weeks 3–6 — get a handicap
+
+4. **Join.** If you are a full-time student in the US, **USCA membership is free** — and it brings a handicap, a national ranking, and eligibility for sanctioned tournaments (United States Croquet Association, n.d.).
+5. **Get an initial handicap** and start a **handicap card**. Only qualifying games count (Croquet England, n.d.).
+6. **Enter one handicap tournament.** Not a level-play one. The system is *engineered* to give you an even contest — that is its stated purpose. Use it.
+
+## Weeks 7–12 — pick your lane
+
+Now choose one, and go at it seriously:
+
+| If you want to... | Do this |
+|---|---|
+| **Play** | Drill the croquet stroke, not the long shot. Break-building is the game; hitting in is the fallback. Keep the match log from Lesson 16. |
+| **Coach** | Ask your club about the **Club-Level Coach** course (two days). If you want to coach under-18s in England, the **U18s licence comes first**. |
+| **Build a club** | Read the **Croquet Facility Guide** and Croquet England's **Forming a Club** starter pack. Find a site that already has fine turf and a greenkeeper — a school, a bowls club, a tennis club. Start with a **small court** (GC Rule 2.4 makes it legal). |
+| **Build a business** | Read the **WCF approved-equipment list** and the **Equipment Regulations** (£100 approval fee). Look at what the three approved ball makers and nine approved hoop makers *don't* cover. |
+| **Organise** | Start a school or college club. The **USCA Collegiate National Championship** exists, school membership is **free**, and the results pages show how few schools compete. |
+
+## The thing to hold onto
+
+Croquet's world championship has **fewer than a hundred players in it**, its governing bodies will **lend you money to start a club**, its coaching qualification takes **two days**, and its championship equipment approval costs **£100**.
+
+Almost every sport tells young people the door is narrow. In this one, **the door is standing open and nobody is walking through it.**
+
+And you now have the one habit that matters more than any of it: **when someone tells you a fact about this sport — a rule, a number, a lovely story about Victorian ladies and hidden mallets — you ask which code, and you ask where they read it.**
+
+:::reveal What is the single most efficient first move for a US high-school student who wants to enter competitive croquet, and why? ||| Join the USCA as a student — it is FREE for full-time students, and it brings a handicap, a national ranking, and eligibility for sanctioned state, regional and national tournaments. Then get an initial handicap and enter a HANDICAP tournament, because the handicap system is explicitly designed to give you an even contest against anyone.
+
+## Sources
+- ${WCF_GC}
+- ${WCF_REPORT_2024}
+- United States Croquet Association. (n.d.). *Member benefits and rates*. https://www.croquetamerica.com/content.aspx?page_id=22&club_id=962311&module_id=481592
+- Croquet England. (n.d.). *The Automatic Handicap System*. https://www.croquet.org.uk/?p=games%2Fassociation%2Fhandicapping%2Fautomatic
+- ${FACILITY_GUIDE}`,
+      recallContent: [
+        {
+          prompt: "How many WCF-approved croquet balls exist worldwide, and what is the approval fee?",
+          answer:
+            "Three approved ball brands (Dawson, Sunshiny, Invictus X) and nine approved hoops. A manufacturer submits a set to the WCF Equipment Group with a £100 fee.",
+        },
+        {
+          prompt: "What three facts about Jaques must be held together, rather than repeating only the romantic one?",
+          answer:
+            "(1) The business dates ITSELF to 1795 — its own claim. (2) The registered company, no. 00399667, was incorporated in 1945. (3) As read on Companies House, its status was 'Voluntary Arrangement' — a formal insolvency procedure. All three can be true at once, and the register is live, so re-check before repeating.",
+        },
+      ],
+    },
+    {
+      slug: "quiz-opportunities",
+      title: "36 · Section quiz: amateurs and entrepreneurs",
+      section: "8 · Opportunities: amateurs and entrepreneurs",
+      quiz: {
+        passingScore: 70,
+        questions: [
+          {
+            prompt: "What is published about prize money at the croquet world championships?",
+            options: [
+              "A £50,000 purse for the winner",
+              "Nothing — no prize fund is published for either world championship; what IS published is the £189 entry fee the players pay",
+              "Prize money is shared among the top 8",
+              "The WCF pays travel for all competitors",
+            ],
+            correctIndex: 1,
+            explanation:
+              "That single fact reframes the whole opportunity: the money in croquet is on the build side (equipment, coaching, courts, clubs, venues), not the win side.",
+            sourceLessonSlug: "the-economics-of-croquet",
+          },
+          {
+            prompt: "Why won't this course give you a worldwide croquet player count?",
+            options: [
+              "Because it is a secret",
+              "Because no governing body publishes one — so any confident figure was invented",
+              "Because it changes daily",
+              "Because the WCF forbids publishing it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "An estimate dressed as a fact is a lie with a decimal point. What IS published: USCA ~200–300 clubs, Croquet England 8,000+ subscribers and 200 clubs, WCF 29 member countries.",
+            sourceLessonSlug: "the-economics-of-croquet",
+          },
+          {
+            prompt: "According to Croquet England's own published figures, what has it given clubs over the last decade?",
+            options: [
+              "Nothing — clubs are self-funded",
+              "Grants totalling nearly £200,000 to 80 member clubs, and interest-free loans of more than £28,000 to 15 clubs",
+              "£5 million in prize money",
+              "Free courts to every applicant",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It also reports that 48 new clubs benefited from its financial and practical help over eight years, and it provides member clubs with free Public Liability Insurance.",
+            sourceLessonSlug: "start-a-club",
+          },
+          {
+            prompt: "What does the WCF's Development programme offer its member federations?",
+            options: [
+              "Nothing",
+              "Loans or grants for developing croquet in their domain, plus funded coaching/referee courses and volunteer coaches with transport costs paid",
+              "A share of TV revenue",
+              "Free courts",
+            ],
+            correctIndex: 1,
+            explanation: "A governing body that will lend you money and send you a coach is not a normal sports economy.",
+            sourceLessonSlug: "start-a-club",
+          },
+          {
+            prompt: "What is the published planning ratio of croquet courts to club members?",
+            options: ["One court per 25 members", "One court per 200 members", "Two courts per member", "There is no published ratio"],
+            correctIndex: 0,
+            explanation:
+              "From the WCF-published Croquet Facility Guide, which also notes one court accommodates up to 8 players at a time, and estimates demand at one 2-court venue per 33,000 people aged over 15.",
+            sourceLessonSlug: "start-a-club",
+          },
+          {
+            prompt: "What mowing height does the WCF-published Croquet Facility Guide specify?",
+            options: ["½ to ¾ inch", "3 mm to 5 mm, with a cylinder mower, up to three times a week in the growing season", "1 mm", "It does not say"],
+            correctIndex: 1,
+            explanation:
+              "The imperial figures you find online come from turf-retailer and backyard-game blogs, which contradict each other and are not governing-body sources.",
+            sourceLessonSlug: "courts-and-turf",
+          },
+          {
+            prompt: "Why can a croquet lawn realistically share a site with a tennis or bowls club?",
+            options: [
+              "Because the sports are played at the same time",
+              "Because croquet's turf height (~3 mm) sits between lawn tennis (~4 mm) and competitive bowls (~1 mm), so the facility and the greenkeeper can be shared",
+              "Because croquet needs no maintenance",
+              "Because the courts are the same size",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This reframes the capital problem: the scarce resource isn't land, it's finely-mown turf with someone competent already maintaining it — and those places already exist, under-used, in most towns.",
+            sourceLessonSlug: "courts-and-turf",
+          },
+          {
+            prompt: "What does the Croquet Facility Guide say about synthetic surfaces?",
+            options: [
+              "They are preferred for new clubs",
+              "'The sport is not currently played on synthetic surfaces'",
+              "They are required for tournaments",
+              "They are cheaper and just as good",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Grass only — which is exactly why turf skill is a real and scarce trade in this sport.",
+            sourceLessonSlug: "courts-and-turf",
+          },
+          {
+            prompt: "What does Croquet England's Club-Level Coach qualification require?",
+            options: [
+              "A university degree in sports science",
+              "A two-day course with a practical assessment and an open-book test on BOTH the GC Rules and the AC Laws",
+              "A minus handicap",
+              "Ten years of play",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Higher grades then require playing standards (Grade 1: AC handicap 12 or better, GC 6 or better; Grade 3: AC 0 or better plus a referee's qualification).",
+            sourceLessonSlug: "coaching-and-officiating",
+          },
+          {
+            prompt: "Pinehurst Resort's published croquet rate card runs from...",
+            options: [
+              "$5 to $20",
+              "$100 (up to 3 people, 1 hour) to $750 (17–32 people)",
+              "$1,000 to $5,000",
+              "It does not publish prices",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Greenbrier publishes $128 for a private lesson and $80 per person for groups of 2–6. These are RATE CARDS — what the venue charges — not anyone's earnings.",
+            sourceLessonSlug: "coaching-and-officiating",
+          },
+          {
+            prompt: "Why does this course quote rate cards instead of coaches' salaries?",
+            options: [
+              "Because salaries are confidential by law",
+              "Because no croquet coach's, mallet-maker's or club manager's income is published anywhere — so any earnings figure you see was invented",
+              "Because coaches are unpaid",
+              "Because the USCA forbids it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rate cards and published grant totals are evidence. Earnings claims with no source are not. Build a plan on the first kind.",
+            sourceLessonSlug: "the-economics-of-croquet",
+          },
+          {
+            prompt: "How many ball brands are on the WCF's approved list worldwide, and what does approval cost?",
+            options: [
+              "Three brands (Dawson, Sunshiny, Invictus X); a manufacturer submits a set with a £100 fee",
+              "Fifty brands; approval is free",
+              "One brand; approval costs £50,000",
+              "The WCF does not approve equipment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Nine hoops are approved as well. A £100 approval fee is not a moat — it is a doorstep. That is what an under-built supply side looks like.",
+            sourceLessonSlug: "equipment-and-events",
+          },
+          {
+            prompt: "What makes Robert Fletcher the section's key example?",
+            options: [
+              "He is the richest player in croquet",
+              "He won the 2013 AC World Championship at 20 — the youngest ever — and is the named supplier of the WCF-approved Invictus X ball, running his own equipment company",
+              "He invented Golf Croquet",
+              "He founded the WCF",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A world champion who built an equipment company inside his own sport — and every step of it is checkable in governing-body documents. Not an anecdote: a documented path.",
+            sourceLessonSlug: "equipment-and-events",
+          },
+          {
+            prompt: "Which three facts about the Jaques company must be held together?",
+            options: [
+              "Only that the business dates itself to 1795",
+              "That the business dates ITSELF to 1795 (its own claim); that the registered company was incorporated in 1945; and that its Companies House status was read as 'Voluntary Arrangement' — a formal insolvency procedure",
+              "That it went bankrupt in 1864",
+              "That it no longer makes croquet equipment",
+            ],
+            correctIndex: 1,
+            explanation:
+              "All three can be true at once, and the romantic one is the one everybody repeats. Companies House is a LIVE register — re-check before repeating any of it.",
+            sourceLessonSlug: "equipment-and-events",
+          },
+          {
+            prompt: "What is the most efficient first move for a US high-school student who wants to compete?",
+            options: [
+              "Buy a championship mallet",
+              "Join the USCA — student membership is FREE and brings a handicap, a national ranking and eligibility for sanctioned tournaments — then get a handicap and enter a HANDICAP tournament",
+              "Enter the world championship qualifier",
+              "Build a court",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The handicap system is explicitly engineered to give you an even contest against anyone. Use the thing that was built for you.",
+            sourceLessonSlug: "your-move",
+          },
+        ],
+      },
+    },
   ],
 };
