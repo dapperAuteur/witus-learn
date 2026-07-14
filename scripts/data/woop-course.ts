@@ -1736,5 +1736,367 @@ Answer with one word. Spelling is forgiving.`,
         ],
       },
     },
+
+    // ─────────────── SECTION 5 · READING THE EVIDENCE HONESTLY ───────────────
+    {
+      slug: "mcii-what-the-trials-show",
+      title: "21 · What the trials actually found (and how big each one was)",
+      section: "Section 5 · Reading the evidence honestly",
+      recallContent: [
+        {
+          prompt: "Name three of the six failure modes.",
+          answer:
+            "The obstacle is an excuse; the obstacle is an insult; the wish is too big; the plan is not a plan; the outcome step is skipped; the method is used as a mood-booster.",
+        },
+        {
+          prompt: "Which step must the IF of the plan be built from, and why?",
+          answer:
+            "The obstacle. A plan that would still make sense without your obstacle is not an MCII plan, it is a to-do item written next to a daydream.",
+        },
+      ],
+      body: `You have the method. Now earn the right to believe in it, by looking at the actual studies with their actual sample sizes. This section is the reason this course exists, and it is the part that separates a cited course from a motivational blog post.
+
+**Here is the evidence, laid out honestly, biggest first.**
+
+| Study | What it tested | N | What it found |
+| --- | --- | --- | --- |
+| Stadler, Oettingen, & Gollwitzer (2009) | Physical activity in women aged 30-50, Germany, 4-month RCT | **256** | The MCII group was **twice as physically active** (nearly **1 hour more per week**) as the information-only group. The gap appeared in the **first week** and held for 4 months. |
+| Stadler, Oettingen, & Gollwitzer (2010) | Fruit and vegetable intake in women, **24-month** RCT | **255** | Both groups ate more (0.47 to 1.00 extra daily servings) in the first 4 months. **Two years later**, only the MCII group had maintained it. The information-only group returned to baseline. |
+| Duckworth, Kirby, Gollwitzer, & Oettingen (2013) | 5th graders, MCII vs a Positive Thinking control | **77** | Improved report-card grades, attendance, and conduct. |
+| Duckworth, Grant, Loew, Oettingen, & Gollwitzer (2011) | High schoolers preparing for a high-stakes exam; a **30-minute written** intervention | **66** | The MCII group completed **more than 60% more** practice questions. |
+| Adriaanse et al. (2010) | Unhealthy snacking, two experiments | **51** and **59** | MCII reduced unhealthy snacking, and beat mental contrasting alone and implementation intentions alone. |
+
+**Now read that table like a scientist rather than a customer.**
+
+**The good news is real.** The exercise study (2009) and the diet study (2010) are the strongest things here, and they are strong for specific, nameable reasons: they are **randomized**, they have **respectable samples** (over 250 each), they measure **actual behavior over months and years** rather than intentions on a questionnaire, and the diet study's headline finding is about **maintenance**, which is the thing almost every behavior-change intervention fails at. A two-year effect on real eating behavior is a serious result and you should update on it.
+
+**The academic results are more fragile, and the course is not going to pretend otherwise.** The PSAT study has **66 participants**. The 5th-grade study has **77**. Those are small samples, and small samples produce estimates that bounce around a lot. Two more things you should know about the 2011 study specifically, both of which are in the paper: the effect on practice questions was **statistically significant but modest** once the authors controlled for gender and prep-course attendance, and the finding is about **practice questions completed**, which is effort, **not about the exam score**. "More than 60% more practice questions" is a true and useful sentence. "MCII raises your test scores" is a sentence that study does not support.
+
+**The snacking studies are smaller still.** N = 51 and N = 59. They are informative about *mechanism* (Study 2 is genuinely valuable, because it is one of the few places where MCII is compared against each of its own two halves, and beats both). They are not, on their own, a basis for a confident claim about how much anyone's diet will change.
+
+**The rule you should take away, and use for the rest of your life.** When someone quotes a striking psychological finding at you, ask **"how many people?"** before you ask anything else. Not because small studies are worthless, but because the *size* of an effect in a small study is the least trustworthy number in the room, and the size is exactly the part that gets quoted.
+
+:::reveal The 2011 PSAT study found the MCII group completed "more than 60% more practice questions." Write the sentence that study supports, and the sentence it does not. ||| Supported: **"In a study of 66 high-school students, a 30-minute written MCII exercise led to more than 60% more practice questions completed"** (effort, small sample, modest effect once covariates were controlled). Not supported: **"MCII raises your test scores"** (the study measured practice questions completed, not exam performance). And the first question to ask about any striking finding is **"how many people?"**, because the effect SIZE in a small study is the least trustworthy number in the room, and it is exactly the number that gets quoted.
+
+## Sources
+- Adriaanse, M. A., Oettingen, G., Gollwitzer, P. M., Hennes, E. P., de Ridder, D. T. D., & de Wit, J. B. F. (2010). When planning is not enough: Fighting unhealthy snacking habits by mental contrasting with implementation intentions (MCII). *European Journal of Social Psychology, 40*(7), 1277-1293. https://doi.org/10.1002/ejsp.730
+- Duckworth, A. L., Grant, H., Loew, B., Oettingen, G., & Gollwitzer, P. M. (2011). Self-regulation strategies improve self-discipline in adolescents: Benefits of mental contrasting and implementation intentions. *Educational Psychology, 31*(1), 17-26. https://doi.org/10.1080/01443410.2010.506003
+- Duckworth, A. L., Kirby, T. A., Gollwitzer, A., & Oettingen, G. (2013). From fantasy to action: Mental contrasting with implementation intentions (MCII) improves academic performance in children. *Social Psychological and Personality Science, 4*(6), 745-753. https://doi.org/10.1177/1948550613476307
+- Stadler, G., Oettingen, G., & Gollwitzer, P. M. (2009). Physical activity in women: Effects of a self-regulation intervention. *American Journal of Preventive Medicine, 36*(1), 29-34. https://doi.org/10.1016/j.amepre.2008.09.021
+- Stadler, G., Oettingen, G., & Gollwitzer, P. M. (2010). Intervention effects of information and self-regulation on eating fruits and vegetables over two years. *Health Psychology, 29*(3), 274-283. https://doi.org/10.1037/a0018644`,
+    },
+    {
+      slug: "mcii-effect-sizes-and-publication-bias",
+      title: "22 · The number that matters: g = 0.34, and what it does and does not mean",
+      section: "Section 5 · Reading the evidence honestly",
+      recallContent: [
+        {
+          prompt: "What are the two strongest MCII trials, and why are they the strongest?",
+          answer:
+            "Stadler et al. (2009), N = 256, physical activity doubled over 4 months, and Stadler et al. (2010), N = 255, fruit and vegetable intake maintained at TWO YEARS while the control group returned to baseline. Both are randomized, over 250 people, and measure real behavior over time.",
+        },
+        {
+          prompt: "What claim does the N = 66 PSAT study support, and what claim does it NOT support?",
+          answer:
+            "It supports 'more than 60% more practice questions completed' (effort). It does not support 'MCII raises your test scores', because it never measured exam performance.",
+        },
+      ],
+      body: `Individual studies are anecdotes with statistics attached. The honest question is what happens when you pool them, and somebody has done exactly that.
+
+**Wang, Wang, and Gai (2021)** meta-analyzed the MCII literature: **24 independent effect sizes drawn from 21 articles, with a combined N of 15,907**. The pooled effect on goal attainment was:
+
+> **Hedges' g = 0.336, 95% CI [0.229, 0.443]**
+
+That is the single most important number in this course, and it deserves to be understood rather than repeated.
+
+**What "g = 0.34" means, in plain language.** It is a *standardized* effect size: how far the average treated person moved, measured in standard deviations. By Cohen's rules of thumb (0.2 small, 0.5 medium, 0.8 large, and those are conventions, not laws of nature), **0.34 is small-to-medium**.
+
+Here is a more useful way to feel it. A standard way to translate an effect size of about 0.34 is: **the average person who did MCII ends up doing better than roughly 63% of the people who did not.** If the method did nothing at all, that number would be 50%. So it is a real, meaningful shift, and it is nothing like "everyone who does this succeeds."
+
+**Sit with both halves of that.** Sixty-three versus fifty is a genuine edge, of a size that behavior-change researchers are pleased to find, obtained from a written exercise that takes five minutes and costs nothing. It is also *nowhere near* the transformation implied by the way this method gets marketed. **Both of those sentences are true, and a course that gives you only one of them is selling you something.**
+
+**The confidence interval is doing work too.** The interval runs from 0.229 to 0.443, which means the data are consistent with the true effect being distinctly smaller than the headline (about 0.23) or somewhat bigger (about 0.44). It does **not** include zero, so the effect is unlikely to be nothing. It also does not reach 0.5, so it is unlikely to be large.
+
+**The meta-analysts' own warnings, which you should read before anyone else's enthusiasm.**
+
+- **They flag publication bias.** Their analyses indicated the meta-analysis **might have some publication bias**, while arguing that the main conclusion was nonetheless relatively reliable. Publication bias means that studies which found nothing are less likely to have been published, so the pooled estimate is probably **an over-estimate of the truth**. When authors flag it themselves, believe them.
+- **They flag that the number of studies was small.** Twenty-four effects is not many. It limits what can be concluded about moderators, and they say so explicitly.
+
+**The one moderator that did reach significance is worth your attention, because it is actionable.** How the intervention was *delivered* mattered: **face-to-face with an experimenter, g = 0.465; delivered by document, g = 0.277.** Doing it with a person appears to work better than doing it alone with a worksheet. (Note that this is a comparison *across* studies, not a randomized test of delivery method, so treat it as a strong hint rather than a proof.) If you can run the method with a coach, a teacher, or a friend who will ask you the obstacle question and not accept "no time" as an answer, do that.
+
+**A second, independent meta-analysis agrees on the order of magnitude.** Cross and Sheffield (2019), reviewing mental contrasting for health behavior change, found an adjusted **g = 0.28** at up to 4 weeks and **g = 0.38** at up to 3 months. Different reviewers, different inclusion criteria, same neighbourhood. That convergence is genuinely reassuring, and it is one of the better reasons to take the method seriously.
+
+**So: is it real?** Yes, and the honest sentence is this one. **MCII is a free, five-minute, self-administered intervention with a small-to-medium effect on goal attainment that has been found by two independent meta-analytic teams, in a literature whose own meta-analysts flag probable publication bias and a small number of studies.** That is a good thing to have in your life. It is not a superpower, and anyone who sells it to you as one has stopped reporting the research and started marketing it.
+
+:::reveal Translate "g = 0.34, 95% CI [0.229, 0.443], possible publication bias" into a sentence you would say to a friend. ||| Something like: **"On average, someone who does this ends up doing better than about 63% of people who don't, where 50% would mean it did nothing. That's a real edge from a free five-minute exercise, and it's a long way from a transformation. The pooled estimate is probably a bit generous, because the people who ran the meta-analysis found signs that studies finding nothing were less likely to get published."** Both halves matter: it works, and it works modestly.
+
+## Sources
+- Cross, A., & Sheffield, D. (2019). Mental contrasting for health behaviour change: A systematic review and meta-analysis of effects and moderator variables. *Health Psychology Review, 13*(2), 209-225. https://doi.org/10.1080/17437199.2019.1594332
+- Wang, G., Wang, Y., & Gai, X. (2021). A meta-analysis of the effects of mental contrasting with implementation intentions on goal attainment. *Frontiers in Psychology, 12*, Article 565202. https://doi.org/10.3389/fpsyg.2021.565202`,
+    },
+    {
+      slug: "mcii-the-open-questions",
+      title: "23 · The open questions, and what would change our minds",
+      section: "Section 5 · Reading the evidence honestly",
+      recallContent: [
+        {
+          prompt: "What is the pooled MCII effect, and what did the meta-analysts warn about it?",
+          answer:
+            "Hedges' g = 0.336, 95% CI [0.229, 0.443], from 24 effects across 21 articles, N = 15,907 (Wang et al., 2021). The authors flagged possible publication bias (so the true effect may be smaller) and a small number of studies.",
+        },
+        {
+          prompt: "Which delivery method worked better, and how confident should you be in that?",
+          answer:
+            "Face-to-face with an experimenter (g = 0.465) beat document-based delivery (g = 0.277). It is a comparison across studies rather than a randomized test, so treat it as a strong hint, not a proof.",
+        },
+      ],
+      body: `A method is not a religion, and the most useful thing a course can hand you is not certainty. It is **the list of things that are not yet settled, and what evidence would settle them.** Here is that list.
+
+**Open question 1: Does the expectancy boundary condition actually hold?**
+
+This is the big one, because it is the theory's signature prediction (Lesson 8): mental contrasting is supposed to build commitment **only when expectations are high**, and to produce letting-go when they are low.
+
+- The **original experiments** found exactly that (Oettingen, Pak, & Schnetter, 2001).
+- The **meta-analysis did not find expectation level to be a significant moderator** across the pooled studies (Wang, Wang, & Gai, 2021).
+- An **independent comparison study found no expectancy moderation either** (Abdulla & Woods, 2021), with the authors noting a plausible reason: **84.7% of their participants had moderate-to-high expectancy**, so there may simply not have been enough low-expectancy people for the predicted effect to appear.
+
+**What would settle it:** a large, pre-registered study that deliberately **recruits people with genuinely low expectations** for their goal, and tests whether mental contrasting makes them disengage. Until someone runs it, the boundary condition is a well-motivated theoretical claim with mixed empirical support. Not a fact.
+
+**Open question 2: Is MCII actually better than other ways of planning?**
+
+Almost every study you met in Lesson 21 compares MCII against a **passive control** (information only, or a placebo writing exercise). That answers "is it better than nothing?" It does not answer the question you probably care about, which is **"is it better than the other things I could do with those five minutes?"**
+
+Abdulla and Woods (2021) is one of the few studies to ask directly. They compared MCII against **solution-focused planning** and **autonomous planning** (letting students plan however they liked). The result: commitment was **marginally higher in the MCII group, but the differences were small and not statistically significant.**
+
+That is a genuinely important null result and this course is not going to bury it. One study does not overturn a literature, and a null result with a modest sample is weak evidence of absence. But **the honest position today is that MCII beating "nothing" is well supported, while MCII beating "some other sensible way of planning" is not yet established.**
+
+**What would settle it:** more head-to-head trials against active comparison conditions, with adequate samples.
+
+**Open question 3: How much of this has been shown outside the lab that invented it?**
+
+Look at the author lists in Lesson 21's table. Notice how often the same two names appear. That is not a scandal and it is not an accusation. It is normal in a young research programme: the people who develop a method are the people who first test it, and they are usually the ones who care enough to run the studies.
+
+But it does mean you should ask the standard question, and keep asking it: **has this been replicated by researchers with no stake in the theory?** The best available answers are encouraging rather than conclusive: **Cross and Sheffield (2019)** is an independent meta-analytic team who found effects in the same range, and **Abdulla and Woods (2021)** is an independent group who found the basic effect to be unimpressive against active alternatives. Independent work exists, it does not all point the same way, and that is exactly what a live scientific question looks like from the inside.
+
+**How to hold all of this at once, which is the actual skill.**
+
+You have just learned a method with a **real but modest** pooled effect, **probable publication bias** in its literature, an **unconfirmed signature boundary condition**, and **no established advantage over other planning methods**. And the correct response to that is *not* to throw it away, because look at what it costs you: **five minutes, no money, and no risk.** For an intervention that cheap, an expected effect of g = 0.34 is an outstanding deal. You do not need certainty to justify a five-minute experiment. You would need certainty to justify betting your career on it, and nobody is asking you to.
+
+**That asymmetry is the lesson, and it is worth more than the method.** Match the strength of your commitment to the strength of the evidence, and match the size of your bet to the cost of being wrong. That sentence will serve you long after you have forgotten what Hedges' g is.
+
+:::reveal Someone shows you a study proving a psychological technique "works." Name the three questions this section says to ask. ||| **(1) Compared to what?** Beating a passive control ("nothing") is a much weaker claim than beating an active, sensible alternative, and most of this literature only does the former (Abdulla & Woods, 2021, found MCII was not significantly better than solution-focused or autonomous planning). **(2) How many people, and who ran it?** Small samples give untrustworthy effect sizes, and you should ask whether anyone with no stake in the theory has replicated it. **(3) What would change your mind?** If nothing would, you are not doing science, you are doing loyalty.
+
+## Sources
+- Abdulla, A., & Woods, R. (2021). Comparing mental contrasting with implementation intentions against solution-focused and autonomous planning. *School Psychology International, 42*(4), 398-421. https://doi.org/10.1177/01430343211000399
+- Cross, A., & Sheffield, D. (2019). Mental contrasting for health behaviour change: A systematic review and meta-analysis of effects and moderator variables. *Health Psychology Review, 13*(2), 209-225. https://doi.org/10.1080/17437199.2019.1594332
+- Oettingen, G., Pak, H., & Schnetter, K. (2001). Self-regulation of goal setting: Turning free fantasies about the future into binding goals. *Journal of Personality and Social Psychology, 80*(5), 736-753. https://doi.org/10.1037/0022-3514.80.5.736
+- Wang, G., Wang, Y., & Gai, X. (2021). A meta-analysis of the effects of mental contrasting with implementation intentions on goal attainment. *Frontiers in Psychology, 12*, Article 565202. https://doi.org/10.3389/fpsyg.2021.565202`,
+    },
+    {
+      slug: "mcii-quiz-reading-the-evidence",
+      title: "24 · Quiz: reading the evidence honestly",
+      section: "Section 5 · Reading the evidence honestly",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What did Stadler, Oettingen, and Gollwitzer (2009) find, and with how many participants?",
+            options: [
+              "With 66 participants, better exam scores",
+              "With 256 women, the MCII group was twice as physically active (nearly 1 hour more per week) as the information-only group, sustained over 4 months",
+              "With 15,907 participants, a small effect on goal attainment",
+              "With 51 participants, less snacking",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A randomized trial with a respectable sample, measuring real behavior over months. It is one of the two strongest results in the literature.",
+            sourceLessonSlug: "mcii-what-the-trials-show",
+          },
+          {
+            prompt: "What makes the Stadler et al. (2010) fruit-and-vegetable study especially notable?",
+            options: [
+              "It had the largest sample of any MCII study",
+              "At TWO YEARS, only the MCII group had maintained the increase; the information-only group had returned to baseline",
+              "It proved MCII beats every other planning method",
+              "It was the first study Oettingen ever ran",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Maintenance is the thing almost every behavior-change intervention fails at, which is why a two-year effect on real eating behavior is a serious result.",
+            sourceLessonSlug: "mcii-what-the-trials-show",
+          },
+          {
+            prompt: "The PSAT study (Duckworth et al., 2011) found the MCII group completed more than 60% more practice questions. Which claim does it support?",
+            options: [
+              "MCII raises exam scores",
+              "In 66 high-school students, a 30-minute written MCII exercise led to more practice questions completed (an effort measure)",
+              "MCII works better than any other study technique",
+              "MCII permanently changes academic ability",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It measured practice questions completed, not exam performance, in a small sample, with a modest effect once covariates were controlled.",
+            sourceLessonSlug: "mcii-what-the-trials-show",
+          },
+          {
+            prompt: "What is the first question you should ask when someone quotes a striking psychological finding?",
+            options: [
+              "Who published it?",
+              "How many people?",
+              "Was it in a famous journal?",
+              "Does it match my experience?",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The SIZE of an effect in a small study is the least trustworthy number in the room, and the size is exactly what gets quoted.",
+            sourceLessonSlug: "mcii-what-the-trials-show",
+          },
+          {
+            prompt: "What is the pooled effect of MCII on goal attainment, per Wang, Wang, and Gai (2021)?",
+            options: [
+              "Hedges' g = 0.336, 95% CI [0.229, 0.443], from 24 effects across 21 articles, N = 15,907",
+              "d = 0.65, from 94 independent tests",
+              "d = 1.2, a large effect",
+              "No significant effect at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Small-to-medium. The d = 0.65 figure belongs to implementation intentions ALONE (Gollwitzer & Sheeran, 2006), a different intervention.",
+            sourceLessonSlug: "mcii-effect-sizes-and-publication-bias",
+          },
+          {
+            prompt: "In plain language, what does an effect of about g = 0.34 mean?",
+            options: [
+              "About 34% of people succeed",
+              "The average person who did MCII ends up doing better than roughly 63% of those who did not, where 50% would mean it did nothing",
+              "The method works 34% of the time",
+              "It is a large effect, comparable to a medical breakthrough",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A real edge, and nowhere near the transformation the method's marketing implies. Both halves of that sentence are true.",
+            sourceLessonSlug: "mcii-effect-sizes-and-publication-bias",
+          },
+          {
+            prompt: "The 95% confidence interval was [0.229, 0.443]. What does that tell you?",
+            options: [
+              "That the true effect is definitely 0.336",
+              "That the data are consistent with the true effect being distinctly smaller or somewhat bigger, but it excludes zero (so probably not nothing) and does not reach 0.5 (so probably not large)",
+              "That the study was badly designed",
+              "That 95% of participants improved",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Reading the interval, not just the point estimate, is the difference between understanding a result and repeating it.",
+            sourceLessonSlug: "mcii-effect-sizes-and-publication-bias",
+          },
+          {
+            prompt: "What did the meta-analysts say about publication bias in their own MCII meta-analysis?",
+            options: [
+              "That there was none",
+              "That their analyses indicated the meta-analysis might have SOME publication bias, though they argued the main conclusion was still relatively reliable",
+              "That it made the effect look smaller than it really is",
+              "They did not test for it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Publication bias means null studies are less likely to be published, so the pooled estimate is probably an OVER-estimate. When authors flag it themselves, believe them.",
+            sourceLessonSlug: "mcii-effect-sizes-and-publication-bias",
+          },
+          {
+            prompt: "Which moderator DID reach significance in Wang et al. (2021), and what did it show?",
+            options: [
+              "Age: the method works only for adults",
+              "Intervention delivery: face-to-face with an experimenter (g = 0.465) beat document-based delivery (g = 0.277)",
+              "Goal domain: health goals beat academic goals",
+              "Expectation level: high expectations beat low",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Actionable: run the method with someone who will ask you the obstacle question. But it is a comparison across studies, not a randomized test, so treat it as a strong hint.",
+            sourceLessonSlug: "mcii-effect-sizes-and-publication-bias",
+          },
+          {
+            prompt: "Cross and Sheffield (2019) independently reviewed mental contrasting for health behavior. What did they find?",
+            options: [
+              "No effect at all",
+              "Effects in the same neighbourhood (adjusted g = 0.28 at up to 4 weeks, g = 0.38 at up to 3 months), which is reassuring convergence from an independent team",
+              "A much larger effect, around g = 0.9",
+              "That the method is harmful",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Different reviewers, different inclusion criteria, same order of magnitude. Convergence across independent teams is one of the better reasons to take the method seriously.",
+            sourceLessonSlug: "mcii-effect-sizes-and-publication-bias",
+          },
+          {
+            prompt: "What is the current status of the expectancy boundary condition?",
+            options: [
+              "Settled: it is confirmed by the meta-analysis",
+              "Mixed: the original experiments supported it, but the meta-analysis found no significant moderation by expectation level and an independent study found none either",
+              "Definitively refuted",
+              "Never tested by anyone",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A well-motivated theoretical claim with mixed empirical support. It would be settled by a large pre-registered study that deliberately recruits genuinely low-expectancy participants.",
+            sourceLessonSlug: "mcii-the-open-questions",
+          },
+          {
+            prompt: "What did Abdulla and Woods (2021) find when they compared MCII against solution-focused and autonomous planning?",
+            options: [
+              "MCII was dramatically better",
+              "Commitment was marginally higher in the MCII group, but the differences were small and NOT statistically significant",
+              "MCII was significantly worse",
+              "They did not measure commitment",
+            ],
+            correctIndex: 1,
+            explanation:
+              "An important null result. MCII beating 'nothing' is well supported; MCII beating another sensible planning method is not yet established.",
+            sourceLessonSlug: "mcii-the-open-questions",
+          },
+          {
+            prompt: "Why does it matter that most MCII studies used a PASSIVE control (information only, or a placebo writing exercise)?",
+            options: [
+              "It does not matter; a control is a control",
+              "Because it answers \"is it better than nothing?\" rather than the question you actually care about: \"is it better than the other things I could do with those five minutes?\"",
+              "Because passive controls inflate p-values",
+              "Because it means the studies were unethical",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Comparing against nothing is a much weaker test than comparing against an active, sensible alternative. Always ask: compared to what?",
+            sourceLessonSlug: "mcii-the-open-questions",
+          },
+          {
+            prompt: "Much of the MCII literature involves the researchers who developed the method. How should you read that?",
+            options: [
+              "As a scandal that invalidates the findings",
+              "As normal for a young research programme, but a reason to keep asking whether researchers with no stake in the theory have replicated it",
+              "As proof that the effect is fabricated",
+              "As irrelevant to how much you should believe it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Independent work exists (Cross & Sheffield, 2019; Abdulla & Woods, 2021) and it does not all point the same way, which is what a live scientific question looks like from the inside.",
+            sourceLessonSlug: "mcii-the-open-questions",
+          },
+          {
+            prompt: "Given a modest effect, probable publication bias, and no established advantage over other planning methods, why is running MCII still rational?",
+            options: [
+              "Because belief makes it work",
+              "Because it costs five minutes, no money, and no risk. Match the size of your bet to the cost of being wrong, and the strength of your commitment to the strength of the evidence",
+              "Because the effect is actually large once you account for bias",
+              "It is not rational; the course concludes you should not use it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The asymmetry is the lesson and it outlives the method. You do not need certainty to justify a five-minute experiment; you would need it to bet your career.",
+            sourceLessonSlug: "mcii-the-open-questions",
+          },
+        ],
+      },
+    },
   ],
 };
