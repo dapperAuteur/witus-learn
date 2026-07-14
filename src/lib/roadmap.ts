@@ -501,6 +501,32 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   club/handicap ladder, and the real openings for an amateur or entrepreneur. Unsourceable folklore
   (a Boston croquet "ban") was **cut**, not softened. \`pnpm seed:courses\` picks it up; **no
   migration**.
+- ✅ **Know Your Rights at Work** (Civics) — the **labor-side sibling** of *The Bill of Rights: Know
+  Your Rights*, and the educational layer under Work.WitUS's union-contract product. 19 lessons across
+  **6 sections** (13 teaching · 2 exercise · 6 quizzes, banks of **15** so the 10-question attempt cap
+  actually rotates; every question carries an \`explanation\` + \`sourceLessonSlug\`). Six women, one
+  argument in six movements: **Addie Wyatt** (what a contract *is* — the seniority clause that saved her
+  job at seventeen) · **Dolores Huerta** (building power outside the room) · **Crystal Lee Sutton** (what
+  retaliation *costs* the person who absorbs it) · **Sara Nelson** (leverage) · **Fran Drescher +
+  Meredith Stiehm** (AI likeness, residuals, and an employer restructuring the job so the old contract
+  stops mapping onto it). **The law is quoted, never guessed**: NLRA §7 (29 U.S.C. § 157), the §2(3)
+  exclusions + §2(11) "supervisor" (§ 152), §8(a)(1)/(3)/(4) (§ 158), §10(b)'s **six-month** charge clock
+  and §10(c)'s **make-whole-not-punitive** remedy (§ 160), 29 C.F.R. § 102.9 ("**any person** may file"),
+  and the **Railway Labor Act** (45 U.S.C. § 156 + the NMB's own release/30-day-cooling-off process) —
+  because flight attendants are *excluded* from the NLRA, which is the whole reason Nelson's leverage
+  lesson works. \`NLRB v. Washington Aluminum\`, 370 U.S. 9 (1962) anchors protected concerted activity:
+  **no union required**. At-will employment **varies by state**, so the course says so and names Montana
+  as the statutory exception rather than asserting one state's rule as universal. **Five calendar errors
+  corrected on purpose**: Wyatt was one of **twelve** women on Time's 1975 cover (Time named "American
+  Women" *collectively*), her 1976 election was to the **Amalgamated Meat Cutters** (UFCW didn't exist
+  until 1979), Sutton's mill was **Roanoke Rapids** (and the union was the **TWUA**, not ACTWU), Drescher
+  and Stiehm are **former** presidents (both left office Sept 2025), and Nelson's unverifiable "Time 100"
+  credit is **dropped and said so in-lesson**. **Sutton's court case does not exist** — a published-
+  opinions search returns no case bearing her name, so the course teaches retaliation from the statute and
+  **says so out loud** instead of inventing a citation. The **Huerta/Chavez** record (March 2026) is
+  addressed **directly and cited** (AP/NPR/CalMatters), dated, adjudicating nothing and inventing no
+  quote: *a movement is not a saint; the person who built the power can also be harmed inside it.*
+  \`pnpm seed:courses\` picks it up; **no migration**.
 - ✅ **Tennis: Play It, Read It, Work In It** (Sports) — 41 lessons across **8 sections**, each with
   its own quiz (banks of **15–16** questions, so the 10-question attempt cap actually rotates):
   the rules · **hitting the ball** (grips, strokes, footwork) · **strategy** (the First 4 Shots,
