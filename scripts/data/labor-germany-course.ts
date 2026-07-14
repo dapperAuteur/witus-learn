@@ -762,5 +762,386 @@ Read that against the reality. The crime is *obstructing the formation of a work
         ],
       },
     },
+
+    // ────────────── SECTION 3 · CHANNEL TWO: WORKERS ON THE BOARD ──────────────
+    {
+      slug: "germany-two-tier-board",
+      title: "8 · You cannot understand this without the two-tier board",
+      section: "Section 3 · Channel two — workers on the board",
+      body: `You are about to be told that in large German companies, **workers hold half the seats on the board**. Before you hear that sentence, you need to know what a German board *is* — because if you picture an American board of directors, the sentence will mean something dramatic and **wrong**.
+
+**An American public company has one board.** The board of directors hires and fires the CEO, and it also sits at the top of the decision chain: strategy, major transactions, executive pay. One body, both jobs.
+
+**A German company has two, stacked.**
+
+~~~
+                     ┌─────────────────────────────────────┐
+   THE OWNERS  ──▶   │  HAUPTVERSAMMLUNG (shareholders)    │
+                     └──────────────────┬──────────────────┘
+                                        │ elect the shareholder half
+                                        ▼
+        ┌───────────────────────────────────────────────────────────┐
+        │   AUFSICHTSRAT — the SUPERVISORY board                    │
+        │   Does NOT run the company. It APPOINTS, OVERSEES and     │
+        │   can REMOVE the management board, approves certain big   │
+        │   decisions, and signs off the accounts.                  │
+        │                                                           │
+        │   ◀── THIS is the board workers sit on. ──▶               │
+        └───────────────────────────────┬───────────────────────────┘
+                                        │ appoints / dismisses
+                                        ▼
+        ┌───────────────────────────────────────────────────────────┐
+        │   VORSTAND — the MANAGEMENT board                         │
+        │   RUNS the company day to day. Sets strategy, executes.   │
+        │   (No employee representatives sit here as of right —     │
+        │    with one exception you'll meet in lesson 10.)          │
+        └───────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+        ┌───────────────────────────────────────────────────────────┐
+        │   THE ESTABLISHMENT — where the WORKS COUNCIL lives       │
+        │   (Section 2). Different body, different statute,         │
+        │   different powers.                                       │
+        └───────────────────────────────────────────────────────────┘
+~~~
+
+**Now re-read the claim.** "Workers hold half the seats on the board" means workers hold half the seats on the ***supervisory*** board — the body that **hires, watches and can fire the management**, and approves certain major decisions. It does **not** mean workers are running the company. The *Vorstand* runs the company.
+
+Is that a demotion of the claim? **Partly — and be honest about it.** But do not undersell it either. The supervisory board is the body that:
+
+- **appoints and dismisses the people who run the company** (and in a co-determined company that vote is the one lesson 10 is about);
+- **sees the numbers** — the real ones, before anybody else outside management does;
+- **has to approve certain classes of major transaction**, depending on the company's own articles.
+
+So: workers in a large German company do not decide what the firm makes or where it sells. They **choose, watch, and can remove the people who do** — and they cannot be kept out of the room where those things are discussed. In American corporate law there is no room a worker is entitled to be in. That is the difference, stated exactly.
+
+:::reveal "Workers hold half the seats on the board" — which board, and what does that board actually do? ||| The **supervisory board** (Aufsichtsrat), not the management board (Vorstand). The supervisory board appoints, oversees and can dismiss the management board, sees the company's real numbers, and approves certain major decisions. It does not run the company day to day — the Vorstand does.
+
+## Sources
+- Mitbestimmungsgesetz [Co-determination Act] of 4 May 1976 (Germany), Zweiter und Dritter Teil [Parts Two and Three]. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/mitbestg/
+- ETUI / Worker Participation. (n.d.). *Germany: Board-level representation*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries/germany`,
+    },
+    {
+      slug: "germany-mitbestimmung-1976",
+      title: "9 · The Co-determination Act of 1976: who gets seats, and how many",
+      section: "Section 3 · Channel two — workers on the board",
+      body: `Germany does not have *one* board-level co-determination law. It has **three**, and which one applies to you depends on how big your company is and what it makes.
+
+| Statute | Applies to | Employee share of the supervisory board |
+| --- | --- | --- |
+| **Montan-Mitbestimmungsgesetz 1951** (coal & steel) | Coal, iron-ore and iron-and-steel companies (AG or GmbH) with **more than 1,000 employees** | **Genuine parity**, plus a neutral extra member (lesson 10) |
+| **Mitbestimmungsgesetz 1976** | AG, KGaA, GmbH or co-operative with **more than 2,000 employees** | **Half** — with a catch (lesson 10) |
+| **Drittelbeteiligungsgesetz 2004** | AG, KGaA or GmbH with **more than 500 employees** | **One third** |
+
+*(Read straight out of Montan-MitbestG §§ 1(1)–(2); MitbestG § 1(1); DrittelbG § 1(1). The 1976 Act itself, at § 1(2)–(3), says it does not apply where the coal-and-steel law does, and that everything below its own threshold falls to the One-Third Participation Act.)*
+
+## The 1976 Act, in detail
+
+**Scope (§ 1(1)).** A company run as a public limited company (*Aktiengesellschaft*), a partnership limited by shares, a **GmbH** (the ordinary German private limited company), or a co-operative, which **"in der Regel mehr als 2.000 Arbeitnehmer beschäftigen"** — normally employs **more than 2,000 employees**.
+
+**Size of the board (§ 7(1)).** The supervisory board scales with the workforce, and the two sides are always **equal in number**:
+
+| Company size | Shareholder seats | Employee seats | Total |
+| --- | --- | --- | --- |
+| Not more than 10,000 employees | 6 | 6 | 12 |
+| More than 10,000, up to 20,000 | 8 | 8 | 16 |
+| More than 20,000 | 10 | 10 | 20 |
+
+**Who fills the employee seats (§ 7(2)).** This is where the union finally reappears — and note how *little* of the bench it gets:
+
+| Employee seats | Employees of the company | **Union representatives** |
+| --- | --- | --- |
+| 6 | 4 | **2** |
+| 8 | 6 | **2** |
+| 10 | 7 | **3** |
+
+So on the supervisory board of a 25,000-employee German company, out of **twenty** seats, **three** belong to trade union representatives. The other seven on the employee bench are the company's own workers, elected by the workforce.
+
+**And one seat on the workers' bench is not quite a worker.** **§ 15(1)** of the Act ends with a sentence that is easy to skim and important not to: *"**Dem Aufsichtsrat muss ein leitender Angestellter angehören**"* — **the supervisory board must include a senior executive** (*leitender Angestellter*), and that seat comes out of the *employee* allocation. Remember who leitende Angestellte are: **the people the Works Constitution Act explicitly excludes from the works council** (BetrVG § 5(3)). A senior manager sits on the workers' bench, by law.
+
+**One more thing the 1976 Act does that has no American parallel at all.** **§ 33** requires that the *management* board — the Vorstand, the people who actually run the company — include an **Arbeitsdirektor**, a **labour director**, "as an equal member." Every co-determined German company of this size has, on its executive team, someone whose brief is the workforce, sitting as a full peer of the finance and operations chiefs.
+
+**How many companies are we talking about?** In **2025**, **670** German companies had a parity-co-determined supervisory board under the 1976 Act — up from 667 in 2024, and down from a peak of **767 in 2002** (Hans-Böckler-Stiftung, 2025). Lesson 11 asks why the number went the wrong way.
+
+:::reveal Under the Co-determination Act 1976, a company with 25,000 employees has a 20-seat supervisory board. How many of those seats belong to trade union representatives? ||| **Three.** § 7(1) gives ten seats to each side; § 7(2) splits the ten employee seats into seven employees of the company and **three** union representatives. The workers' bench is mostly the company's own workforce, not the union — and § 15(1) requires one of those seats to go to a senior executive.
+
+## Sources
+- Drittelbeteiligungsgesetz [One-Third Participation Act] of 18 May 2004 (Germany), § 1. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/drittelbg/
+- Hans-Böckler-Stiftung. (2025). *Mitbestimmte Unternehmen: Zahlen und Fakten* [Co-determined companies: figures and facts]. Mitbestimmungsportal. https://www.mitbestimmung.de/html/starke-arbeitnehmerbank-in-635-197.html
+- Mitbestimmungsgesetz [Co-determination Act] of 4 May 1976 (Germany), §§ 1, 7, 15, 33. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/mitbestg/
+- Montan-Mitbestimmungsgesetz [Coal and Steel Co-determination Act] of 21 May 1951 (Germany), § 1. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/montanmitbestg/`,
+      recallContent: [
+        {
+          prompt: "Which German board do employee representatives sit on, and what does it do?",
+          answer:
+            "The Aufsichtsrat (supervisory board). It appoints, oversees and can dismiss the Vorstand (management board), sees the company's numbers and approves certain major decisions — it does not run the company day to day.",
+        },
+        {
+          prompt: "Name the three German board-level co-determination statutes and their thresholds.",
+          answer:
+            "Montan-Mitbestimmungsgesetz 1951 (coal and steel, >1,000 employees — genuine parity); Mitbestimmungsgesetz 1976 (>2,000 employees — half the seats); Drittelbeteiligungsgesetz 2004 (>500 employees — one third).",
+        },
+      ],
+    },
+    {
+      slug: "germany-casting-vote-and-montan",
+      title: "10 · The casting vote — why 'half' overstates it, and where real parity lives",
+      section: "Section 3 · Channel two — workers on the board",
+      body: `Half the seats sounds like half the power. **It isn't**, and the honest version of this course has to say so on the record. There are **two** reasons, both written into the 1976 Act, and then there is one place in German law where the workers really *do* have parity — and it is not where you would guess.
+
+## Catch one: the chair, and his second vote
+
+Walk through the 1976 Act in order.
+
+**Step 1 — the board elects a chair and a deputy (§ 27(1)).** It needs a **two-thirds majority** of all the seats. If both sides agree on a chair, fine: everyone has consented, and there is no problem.
+
+**Step 2 — but what if they don't? (§ 27(2)).** If the two-thirds majority is not reached, there is a second ballot, and in that ballot: **"die Aufsichtsratsmitglieder der Anteilseigner [wählen] den Aufsichtsratsvorsitzenden und die Aufsichtsratsmitglieder der Arbeitnehmer den Stellvertreter"** — the **shareholder** members elect the **chair**, and the **employee** members elect the **deputy**. Each with a simple majority of its own bench.
+
+Read that again. **If the two sides cannot agree, the shareholders get the chair. Automatically. Every time.** The workers get the deputy, as a consolation.
+
+**Step 3 — and now § 29(2), which is the whole ballgame.** If a vote in the supervisory board is **tied**, there is a re-vote on the same matter, and **if that is tied too, the chair has two votes**:
+
+> *"Ergibt eine Abstimmung im Aufsichtsrat Stimmengleichheit, so hat bei einer erneuten Abstimmung über denselben Gegenstand, wenn auch sie Stimmengleichheit ergibt, der Aufsichtsratsvorsitzende **zwei Stimmen**… **Dem Stellvertreter steht die zweite Stimme nicht zu.**"* (MitbestG § 29(2))
+
+**The chair gets two votes. The deputy expressly does not.** The same rule appears again at § 27(4) for the specific, and rather important, question of **appointing the management board**.
+
+Put the three steps together and you have the machine: **equal seats, deadlock, re-vote, deadlock — and the shareholder-appointed chair breaks the tie in the shareholders' favour.** So on any question the two sides genuinely, finally disagree about, **the shareholders win.**
+
+**That is not a loophole. It is a design decision, taken deliberately in 1976** — and it is the reason the Act survived its constitutional challenge. **Nine companies and twenty-nine employer and business associations took the 1976 Act to the Federal Constitutional Court**, arguing it was an unconstitutional invasion of property rights. On **1 March 1979** the Court rejected them (BVerfG, 1 BvR 532/77 and joined cases), holding among other things that the Basic Law is economically neutral — and its reasoning leaned on exactly the machinery above: because the chair breaks the tie, the Act does **not** give the workforce dominance over the owners. **The casting vote is not an oversight. It is the thing that made the law constitutional.**
+
+**Parity of seats; not parity of power.**
+
+## Catch two: one of the workers' seats belongs to a manager
+
+You met this in lesson 9. **MitbestG § 15(1)**: the supervisory board **must include a senior executive** (*leitender Angestellter*), and that seat is carved out of the **employee** allocation. Whether that person votes with the workforce or with management is a question about human beings rather than statutes — but it is one more reason to distrust the arithmetic of "half."
+
+## So where is the real thing? 1951. Coal and steel.
+
+Twenty-five years before the 1976 Act, in the ruins of the Ruhr, the **Montan-Mitbestimmungsgesetz of 21 May 1951** did something the 1976 Act carefully did not. Read **§ 4(1)**:
+
+> The supervisory board consists of **eleven** members: (a) **four shareholder representatives and one further member**; (b) **four employee representatives and one further member**; (c) **one further member**.
+
+There is no shareholder chair with a second vote. There is an **eleventh member** — and § 4(2) says who that person may *not* be: not a representative or employee of a union, an employers' association, or their peak bodies; not someone who held such a post in the last year; not an employee or employer *in the company*; and **not someone with a substantial economic interest in the company**. In other words, a **genuinely neutral** eleventh person, elected by the other ten. **When the board splits 5–5, the tie is broken by someone who belongs to neither side.**
+
+And § 13(1) goes further than the 1976 Act ever did. The *Arbeitsdirektor* — the labour director on the **management** board — **"kann nicht gegen die Stimmen der Mehrheit der nach § 6 gewählten Aufsichtsratsmitglieder bestellt werden"**: he or she **cannot be appointed against the votes of the majority of the employee-elected supervisory board members.** The workers hold a veto over who the labour director is. Under the 1976 Act (§ 33) they do not.
+
+**That is real parity, and it exists in German law, and it applies to coal and steel.** Why there? Because of *when*. In 1951 the coal and steel industries of the Ruhr were the strategic heart of West German reindustrialisation, the Allies were still deciding what to do with them, and the unions had the leverage of that moment. **They got a better deal than anyone got afterwards, because they asked at the only time the answer was going to be yes.** That is a lesson about power, not about Germany.
+
+**A number this course will not give you.** You may want to know how many companies are still co-determined under the 1951 Act. The Hans-Böckler-Stiftung's own tally of co-determined companies **explicitly excludes** the coal-and-steel firms, and this course did not find a current count from a source it trusts. **So it is not going to invent one.** What is safe to say: German coal is finished and German steel is much diminished, so the number is small and falling — and the strongest co-determination law Germany ever wrote is slowly running out of companies to apply to.
+
+:::reveal Workers hold half the seats on a German supervisory board under the 1976 Act. Explain, using the statute, why they still lose a genuine deadlock. ||| Because of the chair. Under § 27(2), if the board cannot elect a chair by a two-thirds majority, the SHAREHOLDER members elect the chair and the employee members get only the deputy. And under § 29(2), on a tied re-vote the chair — not the deputy — has **two votes**. So equal seats, deadlock, re-vote, deadlock: the shareholder-appointed chair breaks the tie for the shareholders. Parity of seats, not of power.
+
+## Sources
+- Bundesverfassungsgericht [Federal Constitutional Court]. (1979, March 1). *Mitbestimmungsurteil*, 1 BvR 532/77 and joined cases. (Constitutional complaints by nine companies and 29 employer and business associations against the Co-determination Act 1976, rejected.) https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=BVerfG&Datum=01.03.1979&Aktenzeichen=1+BvR+532/77
+- Hans-Böckler-Stiftung. (n.d.). *Meilensteine der Mitbestimmung* [Milestones of co-determination]. Mitbestimmungsportal. https://www.mitbestimmung.de/html/meilensteine-der-mitbestimmung-3074.html
+- Mitbestimmungsgesetz [Co-determination Act] of 4 May 1976 (Germany), §§ 15(1), 27, 29(2), 33. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/mitbestg/
+- Montan-Mitbestimmungsgesetz [Coal and Steel Co-determination Act] of 21 May 1951 (BGBl. I p. 347) (Germany), §§ 1, 4, 13. Bundesministerium der Justiz. https://www.gesetze-im-internet.de/montanmitbestg/`,
+      recallContent: [
+        {
+          prompt: "Under the Co-determination Act 1976, who breaks a tie on the supervisory board?",
+          answer:
+            "The chair, who has a second vote on a tied re-vote (§ 29(2)) — and the deputy expressly does not. If the two sides cannot agree a chair by a two-thirds majority, the shareholder bench elects the chair (§ 27(2)). So the shareholders win a genuine deadlock.",
+        },
+        {
+          prompt: "How is the 1951 coal-and-steel supervisory board different?",
+          answer:
+            "Eleven members: 4 shareholder + 1, 4 employee + 1, and a genuinely NEUTRAL eleventh member who may not be tied to either side (§ 4). Ties are broken by someone who belongs to neither camp — and the labour director cannot be appointed against the majority of the employee-elected members (§ 13(1)). That is real parity.",
+        },
+      ],
+    },
+    {
+      slug: "germany-quiz-3",
+      title: "Section 3 quiz · Workers on the board",
+      section: "Section 3 · Channel two — workers on the board",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "German companies have two boards. Which one do employee representatives sit on?",
+            options: [
+              "The Vorstand (management board), which runs the company",
+              "The Aufsichtsrat (supervisory board), which appoints and oversees the management board",
+              "Both, equally",
+              "Neither — they sit on a separate workers' board",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The supervisory board. It hires, watches and can fire the management board — it does not run the company day to day.",
+            sourceLessonSlug: "germany-two-tier-board",
+          },
+          {
+            prompt: "Under the Mitbestimmungsgesetz 1976, which companies must give employees half the supervisory-board seats?",
+            options: [
+              "All companies with more than 500 employees",
+              "AGs, KGaAs, GmbHs and co-operatives that normally employ MORE THAN 2,000",
+              "Only coal and steel companies",
+              "Only publicly listed companies of any size",
+            ],
+            correctIndex: 1,
+            explanation: "MitbestG § 1(1): more than 2,000 employees. Below that, the One-Third Participation Act 2004 takes over at 500.",
+            sourceLessonSlug: "germany-mitbestimmung-1976",
+          },
+          {
+            prompt: "A German company with 700 employees — what board-level representation do its workers get?",
+            options: [
+              "Half the supervisory board",
+              "One third of the supervisory board, under the Drittelbeteiligungsgesetz 2004",
+              "None",
+              "Full parity plus a neutral member",
+            ],
+            correctIndex: 1,
+            explanation: "DrittelbG § 1: more than 500 employees → one third of the supervisory board.",
+            sourceLessonSlug: "germany-mitbestimmung-1976",
+          },
+          {
+            prompt:
+              "On the 20-seat supervisory board of a 25,000-employee German company, how many seats go to trade union representatives?",
+            options: ["Ten", "Seven", "Three", "Zero"],
+            correctIndex: 2,
+            explanation:
+              "§ 7(2): the ten employee seats split into seven employees of the company and three union representatives. The workers' bench is mostly the workforce, not the union.",
+            sourceLessonSlug: "germany-mitbestimmung-1976",
+          },
+          {
+            prompt: "What does MitbestG § 15(1) require about the composition of the employee bench?",
+            options: [
+              "That it be at least half women",
+              "That it include a senior executive (leitender Angestellter) — a person the Works Constitution Act excludes from the works council",
+              "That every member be a union member",
+              "That no member be a manager",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A senior manager sits on the workers' bench, by law, and that seat comes out of the employee allocation — one reason 'half the seats' overstates worker power.",
+            sourceLessonSlug: "germany-mitbestimmung-1976",
+          },
+          {
+            prompt: "Under MitbestG § 27(2), what happens if the supervisory board cannot elect a chair by a two-thirds majority?",
+            options: [
+              "A court appoints a neutral chair",
+              "The shareholder members elect the chair; the employee members elect only the deputy",
+              "The employee members elect the chair",
+              "The seat stays vacant",
+            ],
+            correctIndex: 1,
+            explanation: "The chair goes to the shareholder side automatically, and the workers get the deputy as a consolation.",
+            sourceLessonSlug: "germany-casting-vote-and-montan",
+          },
+          {
+            prompt: "Under MitbestG § 29(2), who has a second vote when the supervisory board deadlocks?",
+            options: [
+              "The chair — and the statute says expressly that the deputy does NOT",
+              "The deputy chair",
+              "The labour director",
+              "Nobody; the motion simply fails",
+            ],
+            correctIndex: 0,
+            explanation:
+              "On a tied re-vote of the same matter the chair casts two votes. Combined with § 27(2), that means the shareholders win any genuine deadlock.",
+            sourceLessonSlug: "germany-casting-vote-and-montan",
+          },
+          {
+            prompt: "What is the accurate one-line summary of German board-level co-determination under the 1976 Act?",
+            options: [
+              "Workers run large German companies",
+              "Parity of seats, not parity of power",
+              "Workers have a veto over all major decisions",
+              "It is purely symbolic and has no legal effect",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Equal seats, but the shareholder-appointed chair breaks ties — a deliberate 1976 design choice, upheld by the Federal Constitutional Court in 1979.",
+            sourceLessonSlug: "germany-casting-vote-and-montan",
+          },
+          {
+            prompt: "How does the 1951 coal-and-steel supervisory board break a tie?",
+            options: [
+              "The shareholder chair casts a second vote",
+              "An eleventh, genuinely NEUTRAL member — who may not be tied to a union, an employers' association, or the company — elected by the other ten",
+              "The government appoints an arbitrator",
+              "It cannot; the board is simply deadlocked",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Montan-MitbestG § 4: 4+1 shareholder, 4+1 employee, plus one neutral. § 4(2) disqualifies anyone with a stake on either side. That is genuine parity.",
+            sourceLessonSlug: "germany-casting-vote-and-montan",
+          },
+          {
+            prompt: "What extra power do workers have under the 1951 Act that they do NOT have under the 1976 Act?",
+            options: [
+              "The right to strike inside the boardroom",
+              "The labour director cannot be appointed against the majority of the employee-elected supervisory board members (§ 13(1))",
+              "The right to veto dividends",
+              "A majority of the supervisory board seats",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A workers' veto over who the Arbeitsdirektor is. The 1976 Act (§ 33) requires a labour director but gives workers no such veto.",
+            sourceLessonSlug: "germany-casting-vote-and-montan",
+          },
+          {
+            prompt: "Why did coal and steel workers get a better deal in 1951 than everyone else got in 1976?",
+            options: [
+              "Coal miners are more skilled",
+              "Timing and leverage — in 1951 the Ruhr's coal and steel were the strategic heart of West German reindustrialisation, and the unions asked at the one moment the answer would be yes",
+              "The 1976 Act was written by unions",
+              "The 1951 Act was imposed by the United Nations",
+            ],
+            correctIndex: 1,
+            explanation: "A lesson about power, not about Germany. Institutions record the balance of forces at the moment they were written.",
+            sourceLessonSlug: "germany-casting-vote-and-montan",
+          },
+          {
+            prompt: "What is an Arbeitsdirektor?",
+            options: [
+              "The head of the works council",
+              "A labour director who sits as an equal member of the MANAGEMENT board (MitbestG § 33; Montan-MitbestG § 13)",
+              "A government inspector",
+              "The chair of the supervisory board",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Every co-determined German company of that size has someone on the executive team whose brief is the workforce, sitting as a full peer of the finance and operations chiefs.",
+            sourceLessonSlug: "germany-mitbestimmung-1976",
+          },
+          {
+            prompt: "How many German companies had a parity-co-determined supervisory board in 2025?",
+            options: ["670 — down from a peak of 767 in 2002", "About 5,000", "About 50", "Every company with over 500 employees"],
+            correctIndex: 0,
+            explanation:
+              "Hans-Böckler-Stiftung (2025). The number peaked in 2002 and has fallen since — lesson 11 asks why.",
+            sourceLessonSlug: "germany-mitbestimmung-1976",
+          },
+          {
+            prompt:
+              "This course refuses to tell you how many companies are still co-determined under the 1951 coal-and-steel Act. Why?",
+            options: [
+              "The number is secret",
+              "Because the Hans-Böckler tally explicitly excludes them and no trustworthy current count was found — so the course will not invent one",
+              "Because the 1951 Act was repealed",
+              "Because it is the same as the 1976 number",
+            ],
+            correctIndex: 1,
+            explanation:
+              "What is safe to say: German coal is finished and steel is much diminished, so the number is small and falling. A number you cannot source is a liability, not a fact.",
+            sourceLessonSlug: "germany-casting-vote-and-montan",
+          },
+          {
+            prompt: "Why does the two-tier board structure matter for reading the claim 'workers are on the board'?",
+            options: [
+              "It doesn't; a board is a board",
+              "Because the board workers sit on is the SUPERVISORY board — it appoints and oversees management rather than running the company, so 'on the board' means something narrower and more precise than an American would assume",
+              "Because German boards have no legal power",
+              "Because workers actually sit on the management board",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Workers choose, watch and can remove the people who run the firm. They do not run it. Stating that precisely is the difference between teaching and cheerleading.",
+            sourceLessonSlug: "germany-two-tier-board",
+          },
+        ],
+      },
+    },
   ],
 };
