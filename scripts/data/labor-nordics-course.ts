@@ -328,5 +328,323 @@ Here are Sweden's and Denmark's answers in advance. Everything after this is the
         ],
       },
     },
+
+    // ────────────── SECTION 2 · THE PLUMBING: THE GHENT SYSTEM ──────────────
+    {
+      slug: "nordic-ghent-system",
+      title: "3 · The Ghent system: who runs the unemployment fund",
+      section: "Section 2 · The plumbing — the Ghent system",
+      body: `Now we hunt the thing that actually produces two-thirds density — and the anchor course already told you where to look: *look for the plumbing before you reach for the culture.* The plumbing here has a name. It is the **Ghent system**, named after the Belgian city where it started around 1901.
+
+Here is the mechanism, and it is almost embarrassingly simple.
+
+**In Sweden and Denmark, unemployment insurance is administered by funds that are linked to the unions.** In Sweden the fund is called an *a-kassa* (short for *arbetslöshetskassa*); in Denmark, an *a-kasse*. When you want to insure yourself against losing your job — a completely ordinary, sensible thing for a worker to do — you sign up with one of these funds. And historically, in most sectors, the fund sits right next to the union, shares its offices and its administration, and signing up for the one puts the paperwork for the other directly in front of you. Joining the union becomes the **default**, the path of least resistance, the thing everyone around you did when they started the job.
+
+That is the whole trick. **The union is bundled with a service people actually want** — income protection against unemployment — and the bundling makes membership the norm rather than the exception.
+
+Compare the American worker's decision. In the U.S., joining a union is a *separate, deliberate, often risky* act: there is usually no union at your workplace, you would have to help *build* one, and (as the anchor course's Question 4 lessons show) you can be fired for trying. In Ghent-system Sweden or Denmark, membership is not a brave act. **It is what you tick on the form when you sort out your unemployment insurance.** Same freedom to organise on paper; a completely different default in practice.
+
+**This is why the anchor course says density in these countries is "not primarily a story about how much workers love unions. It is a story about who runs the unemployment system."** Institutions shape behaviour. If you change *who administers the unemployment cheque*, you change the union numbers — and Section 2's next two lessons prove that with, respectively, a country that never adopted Ghent (Norway) and a year Sweden partly dismantled it (2007).
+
+**Three honest complications, because the simple story is never the whole story.**
+
+1. **The funds are not literally the unions.** They are legally separate bodies, state-subsidised and state-regulated, and you *can* in principle be in a fund without being in a union. The Ghent effect works through the *link* and the *default*, not through a legal requirement. That gap is exactly where the erosion gets in (Section 6).
+2. **Sweden is not Denmark here either.** Both are Ghent countries, but they run the funds and the union link somewhat differently, and Denmark in particular has seen the rise of cross-sector "alternative" funds and unions that sell the a-kasse *without* the traditional union attached — which weakens the bundle. Hold that thought for Section 6.
+3. **Ghent is not the *only* reason density is high** — sectoral bargaining, workplace union presence, and a general norm of membership all matter too. But it is the single biggest lever, and the one that best explains why the Nordics tower over otherwise-similar countries.
+
+:::reveal In one sentence, why does the Ghent system push union density so high? ||| Because unemployment insurance is administered through union-linked funds, so signing up for income protection — something workers actively want — makes joining the union the default, low-effort choice rather than a separate, deliberate, sometimes risky act.
+
+## Sources
+- OECD. (2025). *Membership of unions and employers' organisations, and bargaining coverage*. OECD Publishing. https://www.oecd.org/en/publications/membership-of-unions-and-employers-organisations-and-bargaining-coverage_fe47107c-en.html
+- Kjellberg, A. (2011). The decline in Swedish union density since 2007. *Nordic Journal of Working Life Studies, 1*(1), 67–93. https://doi.org/10.19154/njwls.v1i1.2333
+- Lind, J. (2009). The end of the Ghent system as a trade union recruitment machinery? *Industrial Relations Journal, 40*(6), 510–523. https://doi.org/10.1111/j.1468-2338.2009.00543.x`,
+      recallContent: [
+        {
+          prompt: "What is the Ghent system, and where is it named after?",
+          answer:
+            "A system in which unemployment insurance is administered by union-linked funds (the a-kassa in Sweden, the a-kasse in Denmark), so joining the union is the default when you insure yourself against job loss. Named after Ghent, Belgium, where it began around 1901.",
+        },
+        {
+          prompt: "Give the sharpest reason the same 'freedom to organise' produces ~65% density in Sweden but ~10% in the US.",
+          answer:
+            "The default is opposite. In Sweden joining is what you tick on the unemployment-insurance form; in the US it is a separate, deliberate, sometimes fireable act of helping build a union that usually doesn't exist at your workplace yet.",
+        },
+      ],
+    },
+    {
+      slug: "nordic-norway-experiment",
+      title: "4 · Norway: the Nordic country that skipped Ghent",
+      section: "Section 2 · The plumbing — the Ghent system",
+      body: `If the Ghent system really is the lever, then a Nordic country *without* it should have visibly lower density — same welfare-state culture, same egalitarian reputation, same neighbourhood, but a different unemployment-insurance plumbing. That country exists. It is **Norway**.
+
+**Norway does not have a Ghent system.** Its unemployment insurance is a public, state-run scheme, not administered through union-linked funds. And its union density sits at around **50%** in the early 2020s (OECD/AIAS ICTWSS) — high by world standards, far above the U.S. **10.0%** (2025), but clearly and consistently **below** Sweden's ~65% and Denmark's ~67%.
+
+Line them up, because this is as close to a controlled experiment as comparative labour policy ever gets:
+
+| Country | Ghent system? | Union density (early 2020s) |
+| --- | --- | --- |
+| **Sweden** | **Yes** (a-kassa) | ~65% |
+| **Denmark** | **Yes** (a-kasse) | ~67% |
+| **Norway** | **No** (state-run UI) | ~50% |
+
+Three countries that are otherwise about as similar as three countries can be — comparable wealth, comparable welfare states, comparable histories, a shared regional culture that any tourist would call identical. The biggest institutional difference in how workers relate to unions is *who runs the unemployment fund*. And the density gap tracks it: **the two Ghent countries are ~15 points higher than the non-Ghent one.** That is the natural experiment, and it is why serious economists (OECD, 2025) point at the plumbing rather than the culture.
+
+**Now the honesty, because a course that oversells its natural experiment is doing the thing it warns you against.**
+
+- **Norway's ~50% is still high**, and Norwegian bargaining coverage is also high (~65–70%, OECD/AIAS). So Ghent is not the *only* thing holding Nordic density up — strong sectoral bargaining and a deep norm of membership do real work in all three countries. The claim is that Ghent adds roughly another 15 points on top, not that it explains everything.
+- **This is observational, not a laboratory.** You cannot randomly assign a country to have Ghent. Other differences between Norway and its neighbours exist, and a careful person says "the evidence is *consistent with* a large Ghent effect," not "this proves it." The next lesson is stronger evidence precisely because it watches *one country change its own plumbing* and measures what happened.
+
+Still: hold the table in your head. When someone tells you high union membership is a matter of national character, the right response is a question — *what does that country's unemployment system look like?* Norway's answer is the reason the question is a good one.
+
+:::reveal Norway is a Nordic country with a strong welfare state, yet its union density (~50%) is notably lower than Sweden's (~65%) or Denmark's (~67%). What is the biggest institutional difference the course points to? ||| Norway has no Ghent system — its unemployment insurance is a public, state-run scheme rather than one administered through union-linked funds. Same regional culture, different plumbing, and the density gap tracks the plumbing. (The course also notes ~50% is still high and Ghent is not the only factor — the evidence is consistent with a large Ghent effect, not proof.)
+
+## Sources
+- OECD/AIAS. (n.d.). *ICTWSS database — country notes: Norway; Sweden; Denmark*. Organisation for Economic Co-operation and Development. https://www.oecd.org/en/data/datasets/oecd-aias-ictwss-database.html
+- OECD. (2025). *Membership of unions and employers' organisations, and bargaining coverage*. OECD Publishing. https://www.oecd.org/en/publications/membership-of-unions-and-employers-organisations-and-bargaining-coverage_fe47107c-en.html`,
+      recallContent: [
+        {
+          prompt: "How does Norway serve as a 'natural experiment' for the Ghent system?",
+          answer:
+            "Norway is Nordic and has a strong welfare state but NO Ghent system (state-run unemployment insurance). Its density (~50%, early 2020s) is markedly below Ghent-system Sweden (~65%) and Denmark (~67%). Same culture, different plumbing — and the density gap tracks the plumbing.",
+        },
+        {
+          prompt: "What is the honest caveat on the Norway comparison?",
+          answer:
+            "It is observational, not a lab: ~50% is still high, Norway's bargaining coverage is high too, and other factors matter. The evidence is consistent with a large Ghent effect (roughly +15 points), not proof of it.",
+        },
+      ],
+    },
+    {
+      slug: "nordic-akassa-2007",
+      title: "5 · The year Sweden tested it: the 2007 a-kassa reform",
+      section: "Section 2 · The plumbing — the Ghent system",
+      body: `The Norway comparison is suggestive. This lesson is the closer, because instead of comparing two countries it watches **one country change its own plumbing and measures the result** — and the result is the strongest single piece of evidence for the Ghent effect anywhere.
+
+**What happened.** In January 2007, a new centre-right government in Sweden (the Alliance, under Prime Minister Fredrik Reinfeldt) reformed the *a-kassa*. The core change was to the **membership fees**: fees were raised substantially and, crucially, **differentiated** — funds in sectors with higher unemployment now charged their members more. For workers in some industries the monthly cost of belonging to their unemployment fund jumped sharply, more or less overnight.
+
+Remember what the a-kassa is bundled with. If the price of the unemployment fund spikes, some people do the math and drop the fund — and because the fund is the thing that made union membership the default, **dropping the fund loosens the tie to the union.** So the theory makes a clean prediction: raise a-kassa fees, and union density should fall.
+
+**It did — fast.** According to Anders Kjellberg of Lund University, the leading authority on Swedish union membership, trade-union density fell from about **77% in 2006** to about **71% in 2008** — roughly a **six-percentage-point drop in two years**, the steepest fall in modern Swedish history (Kjellberg, 2011). Membership in the unemployment funds themselves fell even more sharply. And the decline was **uneven in exactly the way the theory predicts**: it hit **blue-collar (LO) unions harder than white-collar ones**, because the fee increases bit hardest in lower-wage, higher-unemployment sectors.
+
+Sit with what that gives you. This is not two different countries with a hundred hidden differences. **It is the same country, the same workers, the same culture — with one institutional dial turned.** And when the dial moved, the number moved, in the predicted direction, by a large amount, in the predicted groups. That is about as good as evidence gets in the social world.
+
+**The coda, which keeps it honest.** The fees were later **cut back** (notably a reform in 2014 that abolished the differentiated part), and density partially stabilised — though it did **not** climb back to its 2006 level, settling in the high-60s in the years after (Kjellberg). Two lessons in that coda: institutions have *momentum* (a habit of membership, once broken, doesn't fully re-form), and the Ghent effect runs in **both** directions — cheapen the fund and you slow the bleed, but you don't automatically undo the damage.
+
+**Why this matters for the whole course.** The wage floor that isn't a law (Section 1) rests on unions strong enough to negotiate and enforce it. Union strength rests substantially on density. Density rests substantially on the Ghent plumbing. So a government that wanted to weaken the negotiated-floor model would not need to abolish it — **it could just make the unemployment funds more expensive.** Sweden ran that experiment in 2007, apparently without that being the stated goal, and you can read the result in the density series. Plumbing is power.
+
+:::reveal What did Sweden's 2007 a-kassa reform do, and what happened to union density — and why is this stronger evidence than the Norway comparison? ||| It raised and differentiated unemployment-fund membership fees (higher fees in higher-unemployment sectors). Density fell from ~77% (2006) to ~71% (2008) — the steepest drop in modern Swedish history, hitting blue-collar (LO) unions hardest (Kjellberg, 2011). It is stronger evidence because it is the SAME country with one institutional dial turned, rather than a comparison across two countries with many hidden differences.
+
+## Sources
+- Kjellberg, A. (2011). The decline in Swedish union density since 2007. *Nordic Journal of Working Life Studies, 1*(1), 67–93. https://doi.org/10.19154/njwls.v1i1.2333
+- Kjellberg, A. (2024). *Kollektivavtalens täckningsgrad samt organisationsgraden hos arbetsgivarförbund och fackförbund* [Coverage of collective agreements and density of employer and union organisations] (Studies in Social Policy, Industrial Relations, Working Life and Mobility, Research Reports). Lund University, Department of Sociology. https://portal.research.lu.se/en/publications/`,
+      recallContent: [
+        {
+          prompt: "What was the core change in Sweden's 2007 a-kassa reform, and the two-year effect on density?",
+          answer:
+            "It raised and differentiated a-kassa membership fees (higher fees where unemployment was higher). Union density fell from ~77% (2006) to ~71% (2008) — the steepest fall in modern Swedish history — and hit blue-collar (LO) unions hardest (Kjellberg, 2011).",
+        },
+        {
+          prompt: "What does the post-2007 'coda' (fees cut in 2014, density only partly recovering) teach?",
+          answer:
+            "Institutions have momentum — a broken habit of membership doesn't fully re-form — and the Ghent effect runs both ways: cheapening the fund slows the bleed but does not automatically undo the damage. Density stabilised in the high-60s, below its 2006 level.",
+        },
+      ],
+    },
+    {
+      slug: "nordic-quiz-2",
+      title: "Section 2 quiz · The Ghent system and the evidence",
+      section: "Section 2 · The plumbing — the Ghent system",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the Ghent system?",
+            options: [
+              "A statutory minimum wage set by the city of Ghent",
+              "A system in which unemployment insurance is administered by union-linked funds, making union membership the default",
+              "A German co-determination law",
+              "An EU directive on bargaining coverage",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Named after Ghent, Belgium (c. 1901). Unemployment insurance runs through union-linked funds (a-kassa/a-kasse), so joining the union is the low-effort default.",
+            sourceLessonSlug: "nordic-ghent-system",
+          },
+          {
+            prompt: "Why does the same legal 'freedom to organise' produce ~65% density in Sweden but ~10% in the US?",
+            options: [
+              "Swedish law forces workers to join unions",
+              "The default is opposite: in Sweden joining is what you tick when you insure against unemployment; in the US it is a separate, deliberate, sometimes fireable act",
+              "US workers are legally barred from unions",
+              "Sweden counts members differently",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Ghent makes membership the path of least resistance. American organising is a brave, separate act with no bundled service attached.",
+            sourceLessonSlug: "nordic-ghent-system",
+          },
+          {
+            prompt: "The anchor course says Nordic density is 'a story about who runs the unemployment system.' What habit does that teach?",
+            options: [
+              "Explain union numbers by national character",
+              "Look for the plumbing (the institutions) before reaching for the culture",
+              "Assume all Nordic countries are identical",
+              "Ignore unemployment insurance entirely",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Institutions shape behaviour. Change who administers the unemployment cheque and you change the union numbers.",
+            sourceLessonSlug: "nordic-ghent-system",
+          },
+          {
+            prompt: "Which is a Ghent country?",
+            options: ["Norway", "Sweden", "The United States", "Germany"],
+            correctIndex: 1,
+            explanation:
+              "Sweden (a-kassa) and Denmark (a-kasse) are Ghent countries. Norway is the Nordic country that runs unemployment insurance publicly instead.",
+            sourceLessonSlug: "nordic-ghent-system",
+          },
+          {
+            prompt: "How does Norway function as a natural experiment for the Ghent effect?",
+            options: [
+              "It has the world's highest density despite no unions",
+              "It is Nordic with a strong welfare state but NO Ghent system, and its density (~50%) sits well below Sweden's and Denmark's (~65–67%)",
+              "It has a statutory minimum wage and no bargaining",
+              "It banned unemployment insurance",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Same regional culture, different plumbing. The ~15-point density gap tracks the presence or absence of Ghent.",
+            sourceLessonSlug: "nordic-norway-experiment",
+          },
+          {
+            prompt: "Roughly what is Norway's union density in the early 2020s (OECD/AIAS)?",
+            options: ["About 10%", "About 50%", "About 67%", "About 90%"],
+            correctIndex: 1,
+            explanation:
+              "About 50% — high by world standards, but clearly below Ghent-system Sweden (~65%) and Denmark (~67%).",
+            sourceLessonSlug: "nordic-norway-experiment",
+          },
+          {
+            prompt: "What is the honest caveat the course attaches to the Norway comparison?",
+            options: [
+              "There is no caveat — it proves Ghent is the only cause",
+              "It is observational, not a lab: ~50% is still high, coverage is high, and Ghent adds roughly 15 points rather than explaining everything",
+              "Norway actually has a Ghent system",
+              "Density in Norway is really 10%",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Careful phrasing: the evidence is consistent with a large Ghent effect, not proof of it. That is why the 2007 reform is the stronger test.",
+            sourceLessonSlug: "nordic-norway-experiment",
+          },
+          {
+            prompt: "What did Sweden's January 2007 a-kassa reform actually change?",
+            options: [
+              "It abolished collective bargaining",
+              "It raised and DIFFERENTIATED unemployment-fund membership fees — charging more in higher-unemployment sectors",
+              "It introduced a statutory minimum wage",
+              "It merged all unions into one federation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Higher, risk-differentiated fees made belonging to the a-kassa more expensive, especially in lower-wage sectors.",
+            sourceLessonSlug: "nordic-akassa-2007",
+          },
+          {
+            prompt: "What happened to Swedish union density after the 2007 reform (Kjellberg)?",
+            options: [
+              "It rose from 65% to 80%",
+              "It fell from about 77% (2006) to about 71% (2008) — the steepest drop in modern Swedish history",
+              "It was completely unchanged",
+              "It fell to 10%, matching the US",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A ~6-point fall in two years, with a-kassa membership dropping even faster — direction and size both as the Ghent theory predicts.",
+            sourceLessonSlug: "nordic-akassa-2007",
+          },
+          {
+            prompt: "The 2007 decline was uneven. Who was hit hardest, and why does that support the theory?",
+            options: [
+              "White-collar unions, because they earn more",
+              "Blue-collar (LO) unions, because the fee increases bit hardest in lower-wage, higher-unemployment sectors",
+              "Only public-sector unions",
+              "Everyone equally, which disproves the theory",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The pattern matches the mechanism: where the differentiated fees rose most, membership fell most.",
+            sourceLessonSlug: "nordic-akassa-2007",
+          },
+          {
+            prompt: "Why is the 2007 reform STRONGER evidence than the Norway comparison?",
+            options: [
+              "Because Sweden is bigger than Norway",
+              "Because it is the same country, same workers, same culture, with one institutional dial turned — rather than two countries with many hidden differences",
+              "Because it was a randomised controlled trial",
+              "Because Norway has no data",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A within-country change over time isolates the variable far better than a cross-country snapshot.",
+            sourceLessonSlug: "nordic-akassa-2007",
+          },
+          {
+            prompt: "What does the post-2007 'coda' (fees cut in 2014, density only partly recovering) show?",
+            options: [
+              "That the Ghent effect is fake",
+              "That institutions have momentum and the effect runs both ways — cheapening the fund slows the bleed but does not automatically restore lost membership",
+              "That density instantly returned to 77%",
+              "That fees never changed again",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Density stabilised in the high-60s, below the 2006 level. A broken habit of membership does not fully re-form.",
+            sourceLessonSlug: "nordic-akassa-2007",
+          },
+          {
+            prompt: "What is the 'plumbing is power' implication for the negotiated wage floor?",
+            options: [
+              "The floor is safe no matter what happens to unions",
+              "A government could weaken the negotiated-floor model without abolishing it — just by making the unemployment funds more expensive, since the floor rests on union strength, which rests on density, which rests on Ghent",
+              "The floor depends only on the EU",
+              "The floor depends only on employers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Section 1's floor → union strength → density → Ghent plumbing. Turn the plumbing and you move the whole chain.",
+            sourceLessonSlug: "nordic-akassa-2007",
+          },
+          {
+            prompt: "The course says the a-kassa funds are 'not literally the unions.' Why does that matter?",
+            options: [
+              "It means the Ghent effect is illegal",
+              "The funds are legally separate, state-subsidised bodies, so you can be in a fund without a union — the effect works through the LINK and the DEFAULT, which is exactly where erosion gets in",
+              "It means unions have no role at all",
+              "It means density is actually zero",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The gap between fund and union is the vulnerability: alternative funds that sell insurance without the union weaken the bundle (Section 6).",
+            sourceLessonSlug: "nordic-ghent-system",
+          },
+          {
+            prompt: "Who is the authority the course leans on for Swedish density figures?",
+            options: [
+              "The US Bureau of Labor Statistics",
+              "Anders Kjellberg (Lund University)",
+              "The European Central Bank",
+              "Tesla's investor relations",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Kjellberg is the leading authority on Swedish union membership and documented the post-2007 decline in detail.",
+            sourceLessonSlug: "nordic-akassa-2007",
+          },
+        ],
+      },
+    },
   ],
 };
