@@ -119,6 +119,7 @@ import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 import { LACROSSE_COURSE } from "./data/lacrosse-course";
 import { TENNIS_COURSE } from "./data/tennis-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
+import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -742,6 +743,24 @@ async function main() {
     // so retries rotate). No migration — pnpm seed:courses. Natural home for BAM's source note
     // plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md.
     { slug: "afrocentricity", course: AFROCENTRICITY_COURSE, category: "Culture & History" },
+    // Asia Before European Colonization — the ANCHOR of the precolonial-Asia track
+    // (plans/future-courses/precolonial-asia-track-proposal.md; from BAM's world.md queue).
+    // ORIENTATION depth by design: the zones (South, East, Southeast, Central, West Asia),
+    // when each flourished, and the connective tissue (Silk Roads land+sea, the Baghdad
+    // translation movement with the House of Wisdom HEDGED per Gutas, the Mongols as neither
+    // only-barbarian nor only-Pax). The economic-center thesis is CITED, NOT ASSERTED:
+    // Maddison (2007) shares taught as attributed reconstructions with caveats; Pomeranz
+    // (2000) vs Broadberry/Guan/Li (2018) taught as a live debate, no winner declared. The
+    // Indus script is taught as UNDECIPHERED (Farmer/Sproat/Witzel vs Parpola dispute named);
+    // zero cited link by link (Aryabhata 499 → Brahmagupta 628 → Gwalior 876; Bakhshali
+    // radiocarbon contested per Plofker et al. 2017). "European colonization" taught
+    // precisely: the Mughals as Central Asian outsiders, intra-Asian conquest (Chola 1025,
+    // Ming-Vietnam 1407-27, Imjin 1592-98) predating Europeans, enclaves 1510-1571 vs
+    // Plassey 1757. No utopia: caste (between the two myths), Joseon nobi (Palais's ~30%
+    // attributed), Khmer temple bondage, the Indian Ocean slave trade. 7 sections ·
+    // 17 teaching lessons · 7 quizzes (15-question banks) · 1 exercise (name the
+    // civilization/person/place). NO migration — pnpm seed:courses.
+    { slug: "asia-before-european-colonization", course: ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE, category: "Culture & History" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
