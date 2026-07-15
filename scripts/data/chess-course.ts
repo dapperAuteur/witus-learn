@@ -782,5 +782,412 @@ Online platforms add **bullet** (under ~3 minutes, often 1) — an internet-nati
         ],
       },
     },
+
+    // ─────────────────────────── SECTION 3 · STRATEGY & TACTICS ───────────────────────────
+    {
+      slug: "chess-opening-principles",
+      title: "12 · The opening: three jobs, not thirty memorized moves",
+      section: "Section 3 · Strategy: openings, tactics, endgames",
+      body: `Beginners think strong players have memorized the opening. Sometimes they have — but memory is the *last* thing they built, not the first. Underneath every respectable opening are three jobs, and if your first ten moves do these three jobs you will leave the opening in decent shape against anyone:
+
+**Job 1 — fight for the center.** Remember the knight math from Lesson 2: a knight in the corner reaches two squares, a knight in the center reaches eight. That ratio holds, less dramatically, for every piece: **central squares radiate more power**. So the opening battle is for d4, d5, e4, e5 — occupy the center with pawns, aim pieces at it, and deny it to the opponent. This is why 1. e4 and 1. d4 are the two most respected first moves: each stakes a pawn in the center and opens lines for pieces to follow.
+
+**Job 2 — develop your minor pieces.** "Develop" means getting knights and bishops off the back rank onto squares where they do work. Every move spent on anything else is a move your opponent can spend building an army that's actually *in the game*. Two classic corollaries: **don't move the same piece twice in the opening** without a concrete reason (it burns development time), and **don't bring your queen out early** — she's so valuable that every enemy developing move that attacks her forces her to run, and your opponent develops *for free* while you shuffle. Look back at the Scholar's Mate from Lesson 5: 2. Qh5 threatens mate, yes — but against a defender who knows the pattern, White's queen becomes a piñata, swatted around the board by Black's developing moves. The trap punishes ignorance; the *idea* behind it loses to competence.
+
+**Job 3 — get your king safe.** Castle early, usually kingside. An uncastled king in the center sits on the very files the opening is busy ripping open. The saddest recurring game in scholastic chess: a player wins material brilliantly, leaves the king on e1, and gets mated through the middle by move 18.
+
+**Openings as vocabulary.** Named openings are just well-trodden road networks through those three jobs, and knowing a few names lets you read chess culture. After 1. e4 e5 2. Nf3 Nc6: 3. Bc4 is the **Italian Game** (bishop eyes f7, the weakest square in Black's camp — sound familiar from the Scholar's Mate?), and 3. Bb5 is the **Ruy López**, named for the sixteenth-century Spanish priest Ruy López de Segura, whose 1561 treatise analyzed it — one of the oldest continuously-played openings on earth (Murray, 1913). After 1. d4 d5, the move 2. c4 is the **Queen's Gambit** — the "sacrificed" pawn is nearly always regainable, which is why it's chess's most famous *fake* gamble, and why a certain 2020 TV series borrowed the name (that story lands in Section 4).
+
+The practical advice this course will stand behind: pick **one** opening setup for White and **one** response to each of 1. e4 and 1. d4 for Black, learn the first six-to-eight moves *with the reasons attached*, and spend the rest of your study time on Sections' 3 tactics and endgames. Openings decide surprisingly few games below master level. Hanging pieces decides thousands.
+
+:::reveal After 1. e4 e5 2. Qh5, White threatens Qxf7# ideas and also attacks the e5 pawn. Why do coaches still call 2. Qh5 a bad habit rather than a weapon? ||| Because Black's best defenses are developing moves that hit the queen — 2...Nc6 guards e5, and after 3. Bc4 g6 the queen must retreat or wander while Black gains time on every move. The early queen turns each of Black's defensive moves into free development; the trap only beats players who haven't seen it, and the habit collapses against everyone else.
+
+## Sources
+- Murray, H. J. R. (1913). *A history of chess*. Clarendon Press.
+- Fédération Internationale des Échecs. (2023). *FIDE laws of chess taking effect from 1 January 2023* (FIDE Handbook E.01). https://handbook.fide.com/chapter/E012023`,
+      recallContent: [
+        {
+          prompt: "Flag-fall (Art. 6.9): when does running out of time NOT lose the game?",
+          answer:
+            "When the opponent couldn't possibly checkmate you by any series of legal moves — then it's a draw. The Laws never award a win the board makes impossible.",
+        },
+        {
+          prompt: "Per Appendices A and B, where do rapid and blitz draw their boundaries?",
+          answer:
+            "Counting base time plus 60× the increment: blitz is 10 minutes or less per player; rapid is more than 10 but less than 60. An hour or more is classical territory.",
+        },
+      ],
+    },
+    {
+      slug: "chess-tactics-fork-pin-skewer",
+      title: "13 · Tactics I: counting material, forks, pins, and skewers",
+      section: "Section 3 · Strategy: openings, tactics, endgames",
+      body: `A **tactic** is a short, forcing sequence that wins something concrete — material or mate. Studies of amateur games agree with every coach who ever lived: below master level, games are overwhelmingly decided by tactics, not by grand plans. This lesson and the next give you the core patterns; there are only a handful, endlessly remixed.
+
+**First, the counting scale.** To "win material" you need to know what things are worth. The traditional values — and remember from Lesson 2, this is **coaching convention, not anything in the FIDE Laws** (FIDE, 2023):
+
+| Piece | Conventional value |
+| --- | --- |
+| Pawn | 1 |
+| Knight | 3 |
+| Bishop | 3 |
+| Rook | 5 |
+| Queen | 9 |
+
+The king has no number — you can't trade him. The scale is a servant, not a master (a knight that dominates the board outworks a rook trapped in a corner), but for reading trades it's indispensable: rook-for-bishop is losing "the exchange" (5 for 3); two minor pieces (3+3) usually outweigh a rook (5); three pawns for a piece is roughly even on paper and usually worse in practice in the middlegame.
+
+**The fork.** One piece attacks **two or more targets at once**; the opponent saves one, you take the other. Every piece can fork — even the king, even a pawn (one pawn attacking two pieces diagonally is the cheapest fork in chess). But the knight is the fork's signature artist, because its jump attacks squares no other piece is watching along the way. The dream version — the **royal fork** — hits king and queen simultaneously: the king *must* step out of check (Lesson 3's triage), and the queen is gone. Knight forks are the single most common way beginners lose queens, which is also to say: the most common way beginners *win* queens, once they start looking for them.
+
+**The pin.** A piece can't — or shouldn't — move because a bigger prize stands **behind it** on the same line. Only line-movers pin: bishops, rooks, queens. Two flavors with legally different teeth:
+
+- **Absolute pin** — the piece is pinned **to its king**. Moving it is *illegal* (it would expose the king to check, forbidden by Art. 3.9). The pinned piece is effectively paralyzed — though remember the rulebook's dark little footnote from Lesson 3: a pinned piece still *gives* check and still supports its own army's threats (FIDE, 2023, Art. 3.9.1).
+- **Relative pin** — the prize behind is merely valuable (say, a queen or rook), so moving the pinned piece is legal but usually terrible. "Usually" is the operative word: relative pins get broken by countertactics, so verify before you lean on one.
+
+The pin's practical power is that a paralyzed defender can be **attacked again**: pile a second attacker on a pinned piece and it often just falls.
+
+**The skewer.** The pin's mirror image: the *big* piece stands in front and is attacked first; it must move, **exposing the smaller prize behind it**. King in front, rook behind, enemy bishop on the diagonal — the king steps aside, the rook dies. Skewers love the endgame, where kings walk around in the open on the same lines as their last remaining pieces.
+
+Train these as *shapes*, not sentences. Your eye needs to fire on "knight two squares from king AND queen," "queen and king on one diagonal," "rook behind king on a file" before your conscious mind arrives. That firing is built one way: volume. Puzzle sets sorted by motif exist on every major platform, and Lesson 16 builds them into a routine.
+
+:::reveal Your bishop pins a knight to the enemy queen; your opponent moves the knight anyway, and it forks your queen and rook. What did you just learn about the two kinds of pin? ||| That was a RELATIVE pin — the prize behind was the queen, not the king, so moving the knight was perfectly legal, just supposedly unwise. Only an absolute pin (piece pinned to its king, Art. 3.9) makes the move illegal. Relative pins are promises the tactics have to keep — check for countertactics before trusting one.
+
+## Sources
+- Fédération Internationale des Échecs. (2023). *FIDE laws of chess taking effect from 1 January 2023* (FIDE Handbook E.01). https://handbook.fide.com/chapter/E012023`,
+      recallContent: [
+        {
+          prompt: "What are the opening's three jobs?",
+          answer:
+            "Fight for the center (d4/d5/e4/e5), develop the minor pieces (knights and bishops off the back rank, queen stays home early), and get the king safe — castle early.",
+        },
+        {
+          prompt: "After 1. e4 e5 2. Nf3 Nc6, what are 3. Bc4 and 3. Bb5 called?",
+          answer:
+            "3. Bc4 is the Italian Game (eyeing f7); 3. Bb5 is the Ruy López, analyzed in Ruy López de Segura's 1561 treatise — one of the oldest openings still in top-level use.",
+        },
+      ],
+    },
+    {
+      slug: "chess-tactics-discovered-attacks",
+      title: "14 · Tactics II: discovered attacks, double check, and removing the defender",
+      section: "Section 3 · Strategy: openings, tactics, endgames",
+      body: `Round two of the pattern library: the tactics where the attack comes from a piece that *didn't move* — and the demolition tools that make other tactics work.
+
+**The discovered attack.** Two of your pieces stand on the same line; the front one moves, and the back one's attack switches on like a floodlight. The move and the discovery are **two threats delivered in one turn** — the moving piece can grab something or make its own threat while the unveiled piece attacks something else, and the opponent gets one move to answer both. That's the family resemblance across the best tactics: **more threats than the opponent has moves.**
+
+**Discovered check** turns the dial up: the unveiled piece gives *check*, which means the opponent's reply is forced to deal with the check (Lesson 3's triage: move, block, or capture) while your moving piece does *anything it wants*. A rampaging pattern from real games: bishop on a diagonal to the enemy king, knight in front; the knight captures a defended pawn *with check behind it*, the king deals with the check, the knight escapes with the loot — sometimes twice.
+
+**Double check** is the nuclear variant: the moving piece gives check *and* the unveiled piece gives check, simultaneously. Now walk the triage. **Block?** You can only block one of the two check-lines; the other still hits. **Capture?** You can only capture one checker per move; the other still hits. So a double check leaves precisely one category of legal reply: **the king must move** (a consequence the Laws' definition of check makes airtight — no single move can neutralize two attackers except by relocating their target; FIDE, 2023, Art. 3.9). Some of the most famous mating attacks in chess history run on this logic: the opponent's entire army becomes spectators because none of it is allowed to help.
+
+**Removing the defender.** Tactics often *almost* work — that knight fork would win the queen, except a bishop guards the fork square. So make the guard disappear:
+
+- **Capture it** — trade off the defender, then execute the tactic.
+- **Deflect it** — attack or check the defender so it must move away from its post (also called *decoy* when you drag a piece *toward* a fatal square rather than away from a duty).
+- **Overload it** — if one defender guards two things, take one; the defender recaptures and abandons the other; take that too. An overworked piece is a promise that can't be kept twice.
+
+**How to actually find all this in a game.** The professional habit is a scan, every move, in this order: **checks, captures, threats** — yours *and* theirs. Checks first because they force the most; captures next; threats last. It sounds mechanical because it is; the magic isn't in the scan, it's in doing it on move 31 with two minutes left, when your hand is itching to play the first idea it saw. The blunders that decide amateur games aren't failures of talent. They're skipped scans.
+
+:::reveal Your opponent's rook and bishop both defend a knight on d5 — but the rook also defends the back rank against your heavy pieces. What's the tactical term for that rook's situation, and what's the recipe? ||| The rook is OVERLOADED — one piece with two jobs. Recipe: cash in one of its duties to break the other. Capture the knight on d5; if the rook recaptures, it has abandoned the back rank — and the back-rank threat lands. An overworked defender can't keep both promises.
+
+## Sources
+- Fédération Internationale des Échecs. (2023). *FIDE laws of chess taking effect from 1 January 2023* (FIDE Handbook E.01). https://handbook.fide.com/chapter/E012023`,
+      recallContent: [
+        {
+          prompt: "Fork, pin, skewer — thirty-second definitions?",
+          answer:
+            "Fork: one piece attacks two targets at once. Pin: a piece can't (absolute — pinned to king, illegal to move) or shouldn't (relative) move because of a prize behind it. Skewer: the big piece is in front, forced to move and expose the smaller one behind.",
+        },
+        {
+          prompt: "Rook for bishop, and two minors for a rook — how does the conventional scale read those trades?",
+          answer:
+            "Rook (5) for bishop (3) is losing 'the exchange.' Two minor pieces (3+3=6) usually outweigh a rook (5). And the scale is coaching convention — the FIDE Laws assign no values.",
+        },
+      ],
+    },
+    {
+      slug: "chess-basic-endgames",
+      title: "15 · Endgames: the part champions study first",
+      section: "Section 3 · Strategy: openings, tactics, endgames",
+      body: `José Raúl Capablanca — world champion from 1921 to 1927, and one of the cleanest players who ever lived — opened his classic primer not with openings but with **elementary endings and simple mates**, on the logic that you must know where the game is going before the earlier stages mean anything (Capablanca, 1921). A century later every serious coach still teaches in that order, and this lesson is the non-negotiable core: the endings you will reach in real games, and the ideas that decide them.
+
+**King and queen versus king.** A won game that Lesson 3 taught you how to *lose* — by stalemate. The safe technique: use the queen alone to shrink the enemy king's world, parking her a **knight's move away** from the enemy king again and again (a knight's-move distance never gives check and never allows escape between the boxes), herding the king to the edge. Then — this is the discipline — **stop**. Leave the king its patch of edge, walk your own king over at leisure, and only when your king stands two ranks away deliver mate with the queen. Every stalemate tragedy in this ending comes from one impulse: giving one more queen move than the position needs.
+
+**King and rook versus king.** Same architecture, less firepower: the rook cuts the board with a wall (the "box"), your king walks up as the muscle, the box shrinks, mate arrives on the edge. Slower than the queen version and completely reliable once drilled. Drill both against a friend or a machine until they're boring; "boring" is what technique feels like from the inside.
+
+**The opposition — kings dueling.** Two kings can never stand on adjacent squares (each would be moving into check). So when kings face each other with **one square between them, the player who does NOT have to move** controls the door: the mover must give ground. That state is called **having the opposition**, and it converts directly into results in pawn endings — the king with the opposition shoulders its rival away from the promotion path, or muscles its own pawn through. If a pawn ending looks like two old men shuffling, watch again: it's a knife fight over a single tempo.
+
+**The square of the pawn.** Passed pawn racing for promotion, enemy king chasing: does it catch it? Draw the mental **square** whose corners are the pawn and its promotion square (from a pawn on a4: a4–a8–e8–e4). **If the defending king can step into that square on its move, it catches the pawn; if not, the pawn queens.** One glance replaces ten moves of counting — and remember the pawn's two-square first move when you draw the square from its home rank.
+
+**Why promotion rules the phase.** Material from Lesson 13's scale gets *converted* here: an extra pawn in a middlegame is a small edge; an extra pawn in a king-and-pawn ending is often simply a new queen (Art. 3.7.3.3) and the game. This is also where underpromotion earns its keep — promoting to a knight with check, or to a rook to avoid a stalemate your new queen would have delivered. And keep the automatic draws from Lesson 9 in your pocket: a defender who can't stop the pawn may still be angling for stalemate, repetition, or a fifty-move fortress. Endgames are where every rule in this course shows up to work at once.
+
+:::reveal White pawn on b5 (moving up the board), White king far away, Black king on f6 with Black to move. Use the square rule: does the king catch the pawn? ||| Draw the square from b5 to the promotion corner: b5–b8–e8–e5. Black's king on f6 stands OUTSIDE it, but it's Black's move: Ke6 (or Ke5) steps INTO the square — so yes, the king catches the pawn. Same position with White to move, b6 redraws a smaller square (b6–b8–d8–d6) the king can never enter, and the pawn queens.
+
+## Sources
+- Capablanca, J. R. (1921). *Chess fundamentals*. Harcourt, Brace.
+- Fédération Internationale des Échecs. (2023). *FIDE laws of chess taking effect from 1 January 2023* (FIDE Handbook E.01). https://handbook.fide.com/chapter/E012023`,
+      recallContent: [
+        {
+          prompt: "Why is double check the one tactic that permits only a king move in reply?",
+          answer:
+            "Blocking or capturing can each neutralize only ONE checker, and two are attacking at once — so the only legal category of reply is relocating the target: the king must move.",
+        },
+        {
+          prompt: "What's the professional every-move scan, in order?",
+          answer:
+            "Checks, captures, threats — yours and your opponent's. Checks force the most, captures next, threats last. Most amateur blunders are skipped scans, not missing talent.",
+        },
+      ],
+    },
+    {
+      slug: "chess-improving",
+      title: "16 · How to actually get better (a plan that fits a school week)",
+      section: "Section 3 · Strategy: openings, tactics, endgames",
+      body: `Chess improvement has a suspicious amount in common with getting stronger at anything: the work that helps is mildly uncomfortable and unglamorous, and the work that feels good mostly doesn't help. Here is a plan built from the standing advice of the coaching tradition — Capablanca's endings-first doctrine included (Capablanca, 1921) — sized for a person with homework.
+
+**The weekly skeleton (about 5 hours):**
+
+| Activity | Time | Why it earns its slot |
+| --- | --- | --- |
+| Tactics puzzles | 20–30 min/day | Builds the pattern-firing from Lessons 13–14; the highest-return minutes in chess |
+| One SLOW game | 1× week, 30+ min/side | Long thinks are where the scan (checks, captures, threats) becomes a habit |
+| Review that game | 30 min, same week | Find the real mistake yourself BEFORE turning the engine on |
+| Endgame technique | 30 min/week | Drill Lesson 15 until boring; boring = owned |
+| Openings | whatever's left | The smallest slice on purpose — see Lesson 12 |
+
+Three of those rows deserve their fine print.
+
+**Slow games, on purpose.** Blitz and bullet are fun, legitimate, and nearly useless for building calculation, because they train your hand to play the first pattern your eye finds — the exact reflex the scan exists to interrupt. Play fast for joy; count only slow games as practice. One thoughtful 30-minute game teaches more than twenty 3-minute ones.
+
+**Review your losses, and write before you engine.** Lesson 5 made you keep notation; here's the payoff. Replay the loss and mark, in your own words, where you think it went wrong — *then* check with an engine or a stronger player. The gap between where you *thought* the game turned and where it actually turned is the most precise map of your blind spots that exists, and it's free. Reviewing only wins feels great and teaches almost nothing; your wins mostly show you your opponents' mistakes.
+
+**Puzzles with intent.** Do them slowly enough to *calculate to the end* before moving — guessing the first move and hoping is blitz in disguise. Motif-sorted sets (all forks, then all pins) build recognition fastest at the start; mixed sets keep you honest later, because real games don't announce the theme.
+
+**Two multipliers, if you can get them.** A **club** — school club, local club, or a team — supplies the two things solo study can't: slightly-stronger opponents on demand, and someone to review games with (Section 5 shows how to find rated events from there). A **coach** accelerates everything but costs money; Section 6 looks at that market from both sides of the table, because coaching is also one of the main ways people who love this game get *paid* — quite possibly including future-you.
+
+One warning label, because you live on the same internet as everyone else: engines are for *checking* your analysis, never for *replacing* it. A phone evaluating at superhuman strength (Section 4 explains just how superhuman) will happily hand you the best move in every position, and doing so builds precisely nothing in the only hardware you're allowed to bring to the board — which, per Article 11.3.2, is your head (FIDE, 2023).
+
+:::reveal Two students study five hours a week. One plays 40 blitz games and reviews none; the other plays one slow game, reviews it before engine-checking it, and does daily motif puzzles. Why does the coaching tradition bet everything on the second student? ||| Because improvement lives in the uncomfortable loop the second student runs: slow calculation (building the scan), self-diagnosis before engine-diagnosis (mapping blind spots), and pattern volume (puzzles). The blitz-only student trains the first-idea reflex — the exact habit that causes amateur blunders — and never finds out where their games are actually turning.
+
+## Sources
+- Capablanca, J. R. (1921). *Chess fundamentals*. Harcourt, Brace.
+- Fédération Internationale des Échecs. (2023). *FIDE laws of chess taking effect from 1 January 2023* (FIDE Handbook E.01). https://handbook.fide.com/chapter/E012023`,
+      recallContent: [
+        {
+          prompt: "What is 'the opposition,' and why does it decide pawn endings?",
+          answer:
+            "Kings one square apart, and the player NOT to move controls the door — the mover must give ground. That single tempo decides who shoulders through to promote.",
+        },
+        {
+          prompt: "How does the 'square of the pawn' rule work?",
+          answer:
+            "Draw the square from the pawn to its promotion square. If the defending king can step inside it on its move, it catches the pawn; outside, the pawn queens. Mind the pawn's two-square first move.",
+        },
+      ],
+    },
+    {
+      slug: "chess-quiz-strategy",
+      title: "17 · Quiz: openings, tactics, and endgames",
+      section: "Section 3 · Strategy: openings, tactics, endgames",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What are the opening's three jobs?",
+            options: [
+              "Center, development, king safety",
+              "Memorize lines, trade queens, attack",
+              "Push rook pawns, develop the queen, avoid castling",
+              "Copy the opponent, then improvise",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Fight for d4/d5/e4/e5, get knights and bishops working, castle early. Do those three jobs and you leave the opening healthy without memorization.",
+            sourceLessonSlug: "chess-opening-principles",
+          },
+          {
+            prompt: "Why is bringing the queen out early a bad habit rather than aggression?",
+            options: [
+              "The queen can't capture in the opening",
+              "Enemy developing moves attack her, so the opponent builds an army for free while she runs",
+              "It's illegal before move 10",
+              "The queen is weaker in the opening than the endgame",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Every move that hits the queen is development with tempo for the opponent. The Scholar's Mate idea collapses against 2...Nc6 and 3...g6 for exactly this reason.",
+            sourceLessonSlug: "chess-opening-principles",
+          },
+          {
+            prompt: "After 1. e4 e5 2. Nf3 Nc6 3. Bb5, which opening is on the board?",
+            options: [
+              "The Ruy López — analyzed in a Spanish priest's 1561 treatise",
+              "The Italian Game",
+              "The Queen's Gambit",
+              "The Sicilian Defense",
+            ],
+            correctIndex: 0,
+            explanation:
+              "3. Bb5 is the Ruy López (Ruy López de Segura, 1561) — one of the oldest openings still played at the top. 3. Bc4 would be the Italian; the Queen's Gambit starts 1. d4 d5 2. c4.",
+            sourceLessonSlug: "chess-opening-principles",
+          },
+          {
+            prompt: "Why is the Queen's Gambit called chess's most famous FAKE gamble?",
+            options: [
+              "Because it loses by force",
+              "Because the offered c-pawn is nearly always regainable — it's not a true sacrifice",
+              "Because the queen itself is sacrificed",
+              "Because it was invented for television",
+            ],
+            correctIndex: 1,
+            explanation:
+              "1. d4 d5 2. c4 offers a pawn White can generally win back. The name outgrew the gamble — and lent itself to a certain 2020 series.",
+            sourceLessonSlug: "chess-opening-principles",
+          },
+          {
+            prompt: "On the conventional scale, trading your rook for the opponent's bishop is called...",
+            options: [
+              "...winning the exchange",
+              "...losing the exchange — giving 5 for 3",
+              "...an even trade",
+              "...a gambit",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rook ≈ 5, bishop ≈ 3 on the coaching scale (which the FIDE Laws don't contain). Giving the rook for a minor piece is 'losing the exchange.'",
+            sourceLessonSlug: "chess-tactics-fork-pin-skewer",
+          },
+          {
+            prompt: "What makes the knight the signature forking piece?",
+            options: [
+              "It's the most valuable piece",
+              "Its jump attacks squares no other piece covers along the way, so its threats appear from nowhere",
+              "It's the only piece allowed to attack the king",
+              "It can move twice per turn",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Any piece can fork, but the knight's L-jump lands threats that line-pieces telegraph. The 'royal fork' — king and queen at once — wins the queen by force.",
+            sourceLessonSlug: "chess-tactics-fork-pin-skewer",
+          },
+          {
+            prompt: "A knight is pinned to its own KING by your bishop. What is legally true?",
+            options: [
+              "The knight may move if it captures something",
+              "Moving the knight is illegal (it would expose the king to check) — but it still gives check and supports threats itself",
+              "The knight must be moved immediately",
+              "Your bishop may not be captured while pinning",
+            ],
+            correctIndex: 1,
+            explanation:
+              "An absolute pin paralyzes the piece (Art. 3.9 forbids exposing your own king), yet Art. 3.9.1 confirms a pinned piece still attacks — it can even deliver check.",
+            sourceLessonSlug: "chess-tactics-fork-pin-skewer",
+          },
+          {
+            prompt: "King in front, queen behind on the same diagonal; your bishop attacks the king. What's the tactic?",
+            options: [
+              "A skewer — the king must move, exposing the queen behind it",
+              "A pin — the king can't move",
+              "A fork — two pieces attacked from one square",
+              "A discovered check",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That's the skewer: the bigger piece in FRONT is forced aside, and the prize behind falls. (A pin is the same geometry with the small piece in front.)",
+            sourceLessonSlug: "chess-tactics-fork-pin-skewer",
+          },
+          {
+            prompt: "Why is a discovered CHECK so much stronger than an ordinary discovered attack?",
+            options: [
+              "It ends the game immediately",
+              "The check forces the reply, so the moving piece gets a free turn to do anything — grab material, make threats",
+              "It can't be blocked",
+              "It doesn't use a second piece",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The unveiled check must be answered (move/block/capture), while the piece that moved does as it pleases — the classic engine of 'windmill' destructions.",
+            sourceLessonSlug: "chess-tactics-discovered-attacks",
+          },
+          {
+            prompt: "Against a DOUBLE check, which replies are possible?",
+            options: [
+              "Block either check",
+              "Capture either checker",
+              "Only a king move — block or capture can each answer just one of the two attackers",
+              "Any of the normal three options",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Two checkers, one move: blocking or capturing neutralizes only one, so the king must relocate. That's why double check powers famous mating attacks.",
+            sourceLessonSlug: "chess-tactics-discovered-attacks",
+          },
+          {
+            prompt: "An enemy rook guards both the back rank and a knight you'd like to take. The tactical label and the recipe?",
+            options: [
+              "Overloaded defender — take one duty, and recapturing forfeits the other",
+              "Absolute pin — the rook can't move",
+              "Zugzwang — any move loses",
+              "Skewer — attack through the rook",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One piece, two jobs: capture the knight, and if the rook recaptures it abandons the back rank. An overworked piece can't keep both promises.",
+            sourceLessonSlug: "chess-tactics-discovered-attacks",
+          },
+          {
+            prompt: "In the K+Q vs K mate, what is the queen's safe herding pattern — and what's the fatal impulse?",
+            options: [
+              "Give check every move; the impulse is moving too slowly",
+              "Keep the queen a knight's-move away from the enemy king to shrink its box; the impulse is one queen move too many — stalemate",
+              "Trade the queen for a rook first",
+              "March the pawn to promote a second queen",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The knight's-move distance shrinks the king's world without checks or escapes; then STOP, bring your king, and mate. Extra 'helpful' queen moves are how Art. 5.2.1 stalemates are born.",
+            sourceLessonSlug: "chess-basic-endgames",
+          },
+          {
+            prompt: "Kings face each other with one empty square between them. Who has 'the opposition'?",
+            options: [
+              "The player who must move",
+              "The player who does NOT have to move — the mover must give ground",
+              "Whoever has more pawns",
+              "White, always",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Kings can't touch, so the obligation to move becomes a weakness: the mover steps aside and the other king gains ground. Pawn endings turn on this single tempo.",
+            sourceLessonSlug: "chess-basic-endgames",
+          },
+          {
+            prompt: "What question does the 'square of the pawn' answer at a glance?",
+            options: [
+              "Whether a defending king can catch a running passed pawn before it promotes",
+              "Whether castling is still legal",
+              "Which squares a knight controls",
+              "Whether a position is a dead draw",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Draw the square from pawn to promotion corner: if the defending king can step inside on its move, it catches the pawn. One glance replaces ten moves of counting.",
+            sourceLessonSlug: "chess-basic-endgames",
+          },
+          {
+            prompt: "Per the study plan, which habit is the highest-return use of daily minutes?",
+            options: [
+              "Memorizing opening lines",
+              "Tactics puzzles, calculated to the end before moving",
+              "Bullet games",
+              "Watching streamers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Pattern volume builds the eye that wins amateur games, and calculating to the end trains the scan. Openings get the smallest slice on purpose; blitz is joy, not practice.",
+            sourceLessonSlug: "chess-improving",
+          },
+        ],
+      },
+    },
   ],
 };
