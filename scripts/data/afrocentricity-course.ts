@@ -348,5 +348,322 @@ These were not fringe cranks. They were mainstream, prestigious scholars, and th
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The Kemet Question: Was Ancient Egypt a Black African Civilization?
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "kemet-diops-case",
+      title: "5 · The Kemet question: Diop's case",
+      section: "The Kemet Question",
+      recallContent: [
+        {
+          prompt: "What different job did each founder do — Diop versus Asante?",
+          answer: "Diop supplied the founding historical claim (Egypt/Kemet as a Black African civilization); Asante turned the impulse into a named scholarly paradigm with its own method and institutions.",
+        },
+        {
+          prompt: "What is Diop's single most consequential and most contested claim?",
+          answer: "That ancient Egypt (Kemet) was a Black African civilization and a source of later Mediterranean culture.",
+        },
+      ],
+      body: `This section takes up the most famous, most consequential, and most contested claim in the whole tradition: **was ancient Egypt — which its own people called *Kemet* — a Black African civilization?** The rule for this section is stated once and kept: **you will read the strongest version of each side, attributed to who argued it, and the course will declare no winner.** The honest answer to "who won?" is that the question is partly empirical and partly about a modern category (race) that the ancient world did not use the way we do — and that is itself one of the lessons.
+
+Start, as always, with the proponent's own case. **Cheikh Anta Diop** did not merely assert that Egypt was Black; he assembled several independent lines of argument and considered that convergence to be his proof (Diop, 1974; Diop, 1981).
+
+- **Physical evidence from the bodies.** Diop ran what he called **melanin-dosage tests** on samples of mummy skin, reporting levels he read as consistent with dark-skinned populations, and pointed to osteological (skeletal) measurements he argued grouped Egyptians with other Africans.
+- **The land's own name.** The Egyptians called their country **Kemet**, which contains the word for "black." Diop read *Kemet* as **"the land of the Black people"** — a self-description.
+- **Ancient eyewitnesses.** Diop leaned on classical Greek writers who saw Egyptians in person. Most famously, **Herodotus** (*Histories*, 2.104) described a people he linked to the Egyptians as dark-skinned and woolly-haired.
+- **Language.** With his collaborator **Théophile Obenga**, Diop argued that ancient Egyptian was genealogically related to other African languages (he drew comparisons to Wolof, his own language), not merely a neighbor of them.
+- **Cultural continuities.** Diop pointed to kinship systems, kingship, cosmology, and customs he said linked Nile-Valley Egypt to the rest of the continent.
+
+**Where this was argued in the open.** In **1974**, UNESCO convened a symposium in Cairo, *The Peopling of Ancient Egypt and the Deciphering of the Meroitic Script*, precisely to test these questions. Diop and Obenga presented the "Black hypothesis" to a room of specialists. **They did not carry the room** — most participants did not accept the strong thesis (UNESCO, 1978) — and when Diop's chapter later appeared in UNESCO's *General History of Africa*, the volume editor **Gamal Mokhtar** attached a note that its views "have not been accepted by all the experts" (Diop, 1981). That transparency is a model: the disagreement was published *alongside* the claim, not buried.
+
+Notice what Diop was doing. He was not sloganeering; he was trying to argue an African-centered conclusion **with the tools of science and classical scholarship** — which is exactly why it has to be weighed as scholarship, not waved away. The next lesson gives the mainstream Egyptological response the same fair hearing.
+
+:::reveal What were the main lines of evidence Diop offered for the claim that ancient Egypt was a Black African civilization? ||| Physical evidence (his melanin-dosage tests on mummy skin and skeletal measurements), the name Kemet read as "land of the Black people," ancient Greek eyewitness testimony (e.g. Herodotus, Histories 2.104), a claimed linguistic kinship between Egyptian and other African languages (with Obenga), and cultural/kinship continuities with the rest of Africa. He treated their convergence as his proof.
+
+## Sources
+- Diop, C. A. (1974). *The African origin of civilization: Myth or reality* (M. Cook, Trans.). Lawrence Hill.
+- Diop, C. A. (1981). Origin of the ancient Egyptians. In G. Mokhtar (Ed.), *General history of Africa II: Ancient civilizations of Africa* (pp. 27–57). UNESCO/Heinemann.
+- UNESCO. (1978). *The peopling of ancient Egypt and the deciphering of the Meroitic script: Proceedings of the symposium held in Cairo, 28 January–3 February 1974*. UNESCO.
+- Herodotus. (2003). *The histories* (A. de Sélincourt, Trans.; rev. ed.). Penguin. (Original work ca. 430 BCE)`,
+    },
+    {
+      slug: "kemet-the-egyptology-response",
+      title: "6 · The Kemet question: the mainstream response",
+      section: "The Kemet Question",
+      recallContent: [
+        {
+          prompt: "Where and when was the 'Black hypothesis' formally debated, and how did it go?",
+          answer: "At the 1974 UNESCO Cairo symposium on the peopling of ancient Egypt. Diop and Obenga presented it, but most specialists in the room did not accept the strong thesis.",
+        },
+        {
+          prompt: "How did UNESCO handle the disagreement when it published Diop's chapter?",
+          answer: "The editor, Gamal Mokhtar, attached a note that Diop's views 'have not been accepted by all the experts' — publishing the dispute alongside the claim.",
+        },
+      ],
+      body: `Now the other side, argued as fairly as Diop's. Mainstream Egyptology does not respond to Diop by re-asserting the old racist picture of a "white" Egypt — that picture is dead, and killing it was partly Diop's achievement. The mainstream response is subtler, and it turns on a distinction the whole question hinges on.
+
+**1. "Race" is a modern category the ancient Egyptians did not use as we do.** The central move of the mainstream reply is that the question "was Egypt Black or white?" imports a **modern American/European racial binary** onto a society that classified people by language, region, culture, and allegiance to the pharaoh — not by the Black/white line drawn much later to justify Atlantic slavery. On this view, asking whether Egyptians were "Black" or "white" is a little like asking whether the ancient Romans were "Democrats or Republicans": the category is real *for us*, but it is being pushed backward onto people who did not sort themselves that way (see the range of positions in UNESCO, 1978).
+
+**2. Egypt was an African civilization — and a diverse one.** Most Egyptologists readily grant that Egypt sits **on the African continent** and was in deep, continuous contact with Nubia and the rest of Africa. But the Nile Valley was also a **corridor** between Africa and the Near East, and its population varied by **region and by period** across three thousand years. The mainstream picture is of an **indigenous northeast-African population**, neither "European" nor identical to the populations of West or Central Africa — which is why neither the old "white Egypt" nor the strong "Black Egypt" thesis fits it cleanly.
+
+**3. The specific evidence is challenged.** Egyptologists and physical anthropologists argue that:
+- **Melanin-dosage tests on mummified skin are unreliable** — embalming chemicals, decomposition, and time alter the tissue, so a "reading" is very hard to trust.
+- **Skeletal measurements** do not sort cleanly into modern racial groups either.
+- **Herodotus is a single, late, secondhand source** (writing centuries after the Old Kingdom, and not always reliable), and the Greek words he used are debated in translation — too thin a reed for a sweeping conclusion.
+- ***Kemet* almost certainly means "the Black *Land*"** — the black, fertile silt of the Nile floodplain, contrasted with *Deshret*, "the Red Land" of the desert — a description of **soil**, not skin, in the mainstream reading.
+
+**Hold the two readings side by side.** Diop reads *Kemet* as a people describing themselves; mainstream Egyptology reads it as farmers describing their dirt. Both readings are defensible from the same three letters, which tells you something important: **the evidence underdetermines the answer.** That is not a dodge. It is the finding. When good-faith experts looking at the same data reach different conclusions, the honest move is to say *why each reads it as they do* — not to pick the one you wish were true.
+
+:::reveal What is the mainstream response's central move against the "was Egypt Black?" question, and how does it read the word Kemet? ||| Its central move is that "race" (the Black/white binary) is a modern category the ancient Egyptians did not use — so the question imports a later framework onto them; Egypt is best described as a diverse, indigenous northeast-African civilization. It reads Kemet as "the Black Land," meaning the dark fertile Nile soil (contrasted with the "Red Land" desert), i.e. a description of soil, not skin.
+
+## Sources
+- UNESCO. (1978). *The peopling of ancient Egypt and the deciphering of the Meroitic script: Proceedings of the symposium held in Cairo, 28 January–3 February 1974*. UNESCO.
+- Diop, C. A. (1981). Origin of the ancient Egyptians. In G. Mokhtar (Ed.), *General history of Africa II: Ancient civilizations of Africa* (pp. 27–57). UNESCO/Heinemann.
+- Howe, S. (1998). *Afrocentrism: Mythical pasts and imagined homes*. Verso.`,
+    },
+    {
+      slug: "kemet-the-dna-evidence",
+      title: "7 · The Kemet question: what DNA can and can't settle",
+      section: "The Kemet Question",
+      recallContent: [
+        {
+          prompt: "Why does mainstream Egyptology say the 'was Egypt Black or white?' question is malformed?",
+          answer: "Because 'race' as a Black/white binary is a modern category; ancient Egyptians classified by language, region, and culture, not by that line. Egypt is better described as a diverse, indigenous northeast-African civilization.",
+        },
+        {
+          prompt: "Give one specific reason critics distrust Diop's melanin-dosage evidence.",
+          answer: "Embalming chemicals, decomposition, and the passage of millennia alter mummified skin, so a melanin 'reading' is very hard to trust.",
+        },
+      ],
+      body: `"Why not just test the DNA and settle it?" It is the obvious modern question, and the honest answer teaches you how science actually works on hard problems: **the DNA is real evidence, it is genuinely informative, and it does not settle the question** — for reasons worth understanding.
+
+**The landmark study.** In **2017**, a team led by Verena Schuenemann and Johannes Krause published the first genome-scale data from ancient Egyptians (Schuenemann et al., 2017). They sampled **151 mummies** from one site, **Abusir el-Meleq** in the north (Lower/Middle Egypt), recovered partial genomes from **90**, and full genome-wide data from **3**. The samples span roughly **1400 BCE to 400 CE** (late New Kingdom through the Roman period). Two headline findings:
+- Those ancient individuals were **most closely related to ancient Near Eastern and Levantine populations** — and to Neolithic Anatolians — rather than clustering with sub-Saharan Africans.
+- **Modern Egyptians carry *more* sub-Saharan African ancestry than these ancient samples did** — an increase the authors link to trans-Saharan trade and mobility over the last ~1,500 years, including the trans-Saharan slave trade.
+
+**Now the limits — and this is the point.** A single study is not a verdict, and this one's authors were careful about its reach:
+- **One site, one region.** Abusir el-Meleq is in the *north*. It cannot speak for Upper (southern) Egypt, closer to Nubia, where the picture may differ.
+- **A narrow time window.** The samples are **New Kingdom and later** — they say little about the **Predynastic** and **Old Kingdom** pyramid-age Egypt that the "African origin" debate most cares about.
+- **Tiny genome-wide sample.** Full data from **three** individuals cannot represent millions of people across three millennia.
+- **DNA degrades in heat.** Egypt's climate is hostile to DNA preservation, so recoverable samples are scarce and may not be representative.
+
+**So what does it establish?** It is real, peer-reviewed evidence that complicates *both* extreme positions: it does not support a Northern-Egyptian population identical to sub-Saharan Africans, and it also shows the population was **not** the "European" caricature of old racist scholarship. It is a data point in a corridor society — not a race card that turns face-up. And notice the deeper trap it exposes: **even a perfect genome cannot tell you whether a person counts as "Black,"** because "Black" is a **social** category, not a strand of DNA. Genetics can describe ancestry and relatedness; it cannot adjudicate a modern racial label. That is why this famous question stays open — and why the course, in good faith, **declares no winner.**
+
+What you *can* carry away is a durable habit: when a live debate meets new science, ask **what exactly the study sampled, how much of it there is, and what question it can and cannot answer** — before you let a headline decide it for you.
+
+:::reveal What did the 2017 ancient-DNA study find, and name two reasons it does not settle whether ancient Egypt was "Black." ||| It found that mummies from one northern site (Abusir el-Meleq, c. 1400 BCE–400 CE) were most closely related to ancient Near Eastern/Levantine populations, and that modern Egyptians carry more sub-Saharan ancestry than those ancient samples did. It doesn't settle the question because: it is one northern site over a narrow, late time window (little on Predynastic/Old Kingdom Egypt), with genome-wide data from only three individuals; and because "Black" is a modern social category that no genome can adjudicate.
+
+## Sources
+- Schuenemann, V. J., et al. (2017). Ancient Egyptian mummy genomes suggest an increase of Sub-Saharan African ancestry in post-Roman periods. *Nature Communications, 8*, 15694. https://doi.org/10.1038/ncomms15694
+- Diop, C. A. (1974). *The African origin of civilization: Myth or reality* (M. Cook, Trans.). Lawrence Hill.
+- Howe, S. (1998). *Afrocentrism: Mythical pasts and imagined homes*. Verso.`,
+    },
+    {
+      slug: "quiz-the-kemet-question",
+      title: "8 · Quiz: The Kemet Question",
+      section: "The Kemet Question",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the course's stated rule for teaching the Kemet debate?",
+            options: [
+              "Present the strongest version of each side, attributed to who argued it, and declare no winner",
+              "Prove that ancient Egypt was a Black African civilization",
+              "Prove that ancient Egypt was not African at all",
+              "Avoid the debate because it is too controversial for students",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The section's rule is stated once and kept: steelman both sides, attribute contested claims, and declare no winner — because the question is partly empirical and partly about a modern category the ancient world did not use.",
+            sourceLessonSlug: "kemet-diops-case",
+          },
+          {
+            prompt: "Which of these was one of Diop's actual lines of evidence?",
+            options: [
+              "Melanin-dosage tests he ran on samples of mummy skin",
+              "Modern DNA sequencing of living Egyptians",
+              "Satellite imaging of the pyramids",
+              "A signed census from the Old Kingdom recording skin color",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Diop reported melanin-dosage tests on mummy skin, alongside skeletal measurements, the meaning of 'Kemet,' Greek eyewitness testimony, linguistics, and cultural continuities. DNA sequencing came decades after his death.",
+            sourceLessonSlug: "kemet-diops-case",
+          },
+          {
+            prompt: "Diop and Obenga presented the 'Black hypothesis' at a formal 1974 gathering. What was it, and how did it go?",
+            options: [
+              "The UNESCO Cairo symposium — most specialists in the room did not accept the strong thesis",
+              "A UNESCO symposium at which every expert agreed with Diop",
+              "A secret meeting whose results were never published",
+              "A Temple University seminar Asante organized",
+            ],
+            correctIndex: 0,
+            explanation:
+              "At the 1974 UNESCO Cairo symposium on the peopling of ancient Egypt, Diop and Obenga argued the case but did not carry the room. The disagreement was published alongside the claim.",
+            sourceLessonSlug: "kemet-diops-case",
+          },
+          {
+            prompt: "When UNESCO published Diop's chapter in the General History of Africa, editor Gamal Mokhtar added a note. What did it say, and why does the course praise it?",
+            options: [
+              "That the views 'have not been accepted by all the experts' — modeling transparency by publishing the dispute alongside the claim",
+              "That Diop's views were now the official UNESCO position",
+              "That Diop should be removed from the volume",
+              "That no disagreement existed among scholars",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Mokhtar's editorial note flagged that the views were contested. The course holds this up as a model: the disagreement was published transparently, not buried.",
+            sourceLessonSlug: "kemet-diops-case",
+          },
+          {
+            prompt: "What is the CENTRAL move of the mainstream Egyptological response to 'was Egypt Black or white?'",
+            options: [
+              "That 'race' as a Black/white binary is a modern category the ancient Egyptians did not use as we do",
+              "That ancient Egypt was obviously a European civilization",
+              "That ancient Egypt had no connection to the African continent",
+              "That the question can be settled by a single DNA test",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The mainstream reply argues the modern racial binary is being pushed backward onto a society that sorted people by language, region, and culture — not by the Black/white line drawn later.",
+            sourceLessonSlug: "kemet-the-egyptology-response",
+          },
+          {
+            prompt: "How do the two sides read the word 'Kemet' differently?",
+            options: [
+              "Diop reads it as 'land of the Black people' (self-description); mainstream Egyptology reads it as 'the Black Land' — the dark fertile Nile soil",
+              "Both sides agree it means 'the White Land'",
+              "Diop says it means the desert; the mainstream says it means the river",
+              "Neither side thinks the word means anything",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same three letters support both readings — people vs. soil (contrasted with 'Deshret,' the Red Land desert). That the evidence underdetermines the answer is itself the finding.",
+            sourceLessonSlug: "kemet-the-egyptology-response",
+          },
+          {
+            prompt: "The course says mainstream Egyptology does NOT respond to Diop by reasserting a 'white Egypt.' Why not?",
+            options: [
+              "Because that old racist picture is dead, and helping to kill it was partly Diop's achievement",
+              "Because Egyptologists secretly agree Egypt was European",
+              "Because the topic is banned from scholarship",
+              "Because no one has studied ancient Egypt since 1974",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The mainstream picture is an indigenous, diverse northeast-African population — neither the old 'white Egypt' nor the strong 'Black Egypt' thesis. Discrediting the racist 'white Egypt' view was part of Diop's legacy.",
+            sourceLessonSlug: "kemet-the-egyptology-response",
+          },
+          {
+            prompt: "Why do critics say Diop's melanin-dosage tests are unreliable?",
+            options: [
+              "Embalming chemicals, decomposition, and millennia of time alter mummified skin",
+              "Melanin does not exist in human skin",
+              "The tests were never actually performed by anyone",
+              "Diop refused to publish his methods",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Mummified tissue is chemically and physically altered over thousands of years, so a melanin 'reading' is hard to trust — one of several specific evidentiary challenges the mainstream raises.",
+            sourceLessonSlug: "kemet-the-egyptology-response",
+          },
+          {
+            prompt: "What did the 2017 Schuenemann et al. ancient-DNA study actually find?",
+            options: [
+              "Mummies from one northern site were most closely related to ancient Near Eastern/Levantine populations, and modern Egyptians carry more sub-Saharan ancestry than those samples did",
+              "Ancient Egyptians were genetically identical to modern West Africans",
+              "Ancient Egyptians were genetically European",
+              "No DNA could be recovered from any Egyptian remains",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The study sampled 151 mummies from Abusir el-Meleq (c. 1400 BCE–400 CE); the ancient samples clustered with Near Eastern/Levantine and Neolithic Anatolian populations, and modern Egyptians showed increased sub-Saharan ancestry.",
+            sourceLessonSlug: "kemet-the-dna-evidence",
+          },
+          {
+            prompt: "Name a reason the 2017 DNA study does NOT settle the Kemet debate.",
+            options: [
+              "It is one northern site, over a late/narrow time window, with genome-wide data from only three individuals",
+              "It sampled every Egyptian who ever lived",
+              "It covered the Predynastic and Old Kingdom in detail",
+              "It proved that race is written directly in DNA",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One site (Abusir el-Meleq, in the north), a late window (New Kingdom onward), and full data from just three people cannot represent millions across three millennia — especially the earlier periods the debate cares about.",
+            sourceLessonSlug: "kemet-the-dna-evidence",
+          },
+          {
+            prompt: "The course argues that 'even a perfect genome cannot tell you whether a person counts as Black.' Why?",
+            options: [
+              "Because 'Black' is a social category, not a strand of DNA — genetics can describe ancestry, not adjudicate a modern racial label",
+              "Because DNA is fictional",
+              "Because all humans have identical genomes",
+              "Because ancestry and race are exactly the same thing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Genetics describes ancestry and relatedness; it cannot decide a socially constructed racial label. That is a core reason the question stays open.",
+            sourceLessonSlug: "kemet-the-dna-evidence",
+          },
+          {
+            prompt: "A student says: 'The DNA study proves Diop was wrong, case closed.' The best correction from this section is:",
+            options: [
+              "One limited study complicates both extremes but can't close a question that is partly about a modern social category",
+              "Agree — one study always settles a historical debate",
+              "The study proves Diop was completely right",
+              "DNA evidence should never be discussed in history",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The section models weighing a study by what it sampled and what it can answer. It complicates both extremes without settling a question that is partly empirical and partly about a social category.",
+            sourceLessonSlug: "kemet-the-dna-evidence",
+          },
+          {
+            prompt: "What durable, transferable habit does the DNA lesson teach for any 'new science meets old debate' moment?",
+            options: [
+              "Ask what the study sampled, how much of it there is, and what question it can and cannot answer — before letting a headline decide",
+              "Trust whichever headline was published most recently",
+              "Assume the newest study overturns everything before it",
+              "Ignore all genetic evidence in historical questions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The lesson generalizes: sample, size, and scope determine what a study can answer. That habit outlasts any single result.",
+            sourceLessonSlug: "kemet-the-dna-evidence",
+          },
+          {
+            prompt: "Why does the course insist Diop's Egypt claim be weighed 'as scholarship, not waved away'?",
+            options: [
+              "Because Diop argued it with the tools of science and classical scholarship, not with slogans",
+              "Because Diop was a politician, not a scholar",
+              "Because the claim is obviously correct",
+              "Because no one has ever disagreed with it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Diop marshaled physical, linguistic, textual, and cultural evidence and treated their convergence as proof. Whether or not it holds, it is a scholarly argument that must be engaged as one.",
+            sourceLessonSlug: "kemet-diops-case",
+          },
+          {
+            prompt: "Which statement best captures the section's overall conclusion about the Kemet question?",
+            options: [
+              "Good-faith experts reading the same evidence reach different conclusions; the evidence underdetermines the answer, so the course declares no winner",
+              "The debate was definitively won by Diop in 1974",
+              "The debate was definitively won by mainstream Egyptology in 2017",
+              "The question has an easy yes-or-no answer that students should memorize",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The section's honest verdict is that the evidence underdetermines the answer and the label is partly a modern social category — so it explains why each side reads the data as it does and declares no winner.",
+            sourceLessonSlug: "kemet-the-dna-evidence",
+          },
+        ],
+      },
+    },
   ],
 };
