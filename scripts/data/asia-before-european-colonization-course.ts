@@ -1019,5 +1019,283 @@ Keep both countries on your Section 6 radar: Joseon Korea ran on a large heredit
         ],
       },
     },
+    // ────────────── SECTION 4 · SOUTHEAST ASIA ──────────────
+    {
+      slug: "asia-angkor",
+      title: "10 · Angkor: the biggest city footprint of the preindustrial world",
+      section: "Section 4 · Southeast Asia: the skipped chapter",
+      body: `Here is a fact that should be famous and is not: the largest preindustrial settlement complex that archaeologists have ever mapped is not in China, Europe, or the Middle East. It is in Cambodia.
+
+The **Khmer Empire** conventionally begins in **802 CE**, when **Jayavarman II** was consecrated as universal monarch in a ceremony we know of from an inscription carved 250 years later, so even the founding date arrives with a hedge attached (Coe, 2003). From the ninth century to the fifteenth, Khmer kings built their capitals around **Angkor**, near the great lake Tonle Sap, and engineered the landscape itself: vast reservoirs called *barays* (the West Baray is roughly eight kilometers long), canals, and embankments that managed the monsoon's feast-or-famine water supply and supported intensive rice agriculture.
+
+How big was it? In **2007**, a team led by Damian Evans published a comprehensive archaeological map, built from ground survey and airborne radar, in the *Proceedings of the National Academy of Sciences*, and its title states the finding: Angkor was "the world's largest preindustrial settlement complex," a low-density urban sprawl of interconnected neighborhoods, ponds, and rice fields covering on the order of a **thousand square kilometers** (Evans et al., 2007). Lidar flights in the 2010s confirmed and extended the picture. Note the phrasing discipline: Angkor was not a million-person Manhattan; it was an enormous dispersed city, and "largest settlement complex mapped" is exactly what the evidence supports, no more.
+
+At its center stands **Angkor Wat**, built under **Suryavarman II** (reigned c. 1113-1150) as a temple to Vishnu and later converted to Buddhist use, and often described as the largest religious monument on earth. A generation later, **Jayavarman VII** (reigned from 1181) built the walled capital Angkor Thom and its face-towered Bayon temple, and his inscriptions record a network of hospitals and rest houses along the empire's roads (Coe, 2003). The whole complex has been a UNESCO World Heritage site since 1992.
+
+We even have an eyewitness. In **1296-97** a Chinese envoy named **Zhou Daguan** lived at Angkor and wrote the only surviving firsthand account of the city in its prime: royal processions, markets run largely by women, houses ranked by status, and, because this course keeps its honest ledger everywhere, **enslaved people in ordinary households**, whom he describes matter-of-factly (Zhou Daguan, 1296-97/2007). Temple inscriptions likewise record thousands of workers bound to temple estates. Section 6 returns to this; the point here is that the record itself refuses the utopia reading.
+
+What ended it? The old story says Angkor "fell" when the Thai kingdom of **Ayutthaya sacked it in 1431**, and a sack is indeed recorded in later chronicles. The fuller, current picture is messier and more interesting: tree-ring studies show decades-scale **megadroughts** punctuated by violent monsoon years in the 1300s-1400s, exactly the stress a giant water-management city handles worst (Buckley et al., 2010), trade patterns were shifting toward the coasts, and the capital migrated toward present-day Phnom Penh. Angkor Wat itself was **never abandoned**; it remained a working shrine. Which is why this course refuses the most repeated Angkor cliché of all: the French naturalist Henri Mouhot, whose 1860s travel writings made Angkor famous in Europe, did not "discover" a lost city. Khmer people were worshipping in it, Portuguese and Spanish visitors had described it in the 1500s, and "discovery" here means only "Europeans started paying attention." You saw this move in the Indus lesson's dead theories, and you will see it again: who gets credited with knowing a place is itself part of the history (Coe, 2003).
+
+:::reveal What exactly did Evans et al. (2007) establish about Angkor, and how does the course phrase it to avoid overclaiming? ||| Using ground survey and airborne radar (later extended by lidar), they mapped Angkor as the world's largest KNOWN preindustrial settlement complex: a low-density sprawl of neighborhoods, ponds, and fields on the order of a thousand square kilometers. The course says "largest settlement complex mapped," not "biggest city ever" or "a million-person metropolis," because the dispersed footprint is what the evidence supports.
+
+## Sources
+- Evans, D., Pottier, C., Fletcher, R., Hensley, S., Tapley, I., Milne, A., & Barbetti, M. (2007). A comprehensive archaeological map of the world's largest preindustrial settlement complex at Angkor, Cambodia. *Proceedings of the National Academy of Sciences, 104*(36), 14277-14282.
+- Zhou Daguan. (2007). *A record of Cambodia: The land and its people* (P. Harris, Trans.). Silkworm Books. (Original work written c. 1296-1297)
+- Coe, M. D. (2003). *Angkor and the Khmer civilization*. Thames & Hudson.
+- Buckley, B. M., Anchukaitis, K. J., Penny, D., Fletcher, R., Cook, E. R., Sano, M., Nam, L. C., Wichienkeeo, A., Minh, T. T., & Hong, T. M. (2010). Climate as a contributing factor in the demise of Angkor, Cambodia. *Proceedings of the National Academy of Sciences, 107*(15), 6748-6752.
+- UNESCO World Heritage Centre. (n.d.). *Angkor*. https://whc.unesco.org/en/list/668/`,
+      recallContent: [
+        {
+          prompt: "Who is Zhou Daguan and why does he matter to this course twice over?",
+          answer:
+            "A Chinese envoy who lived at Angkor in 1296-97 and wrote the only surviving eyewitness account of the city in its prime. He matters once as evidence (processions, women-run markets, daily life) and once for the honest ledger: he matter-of-factly describes enslaved people in Khmer households.",
+        },
+        {
+          prompt: "Why does the course reject 'Henri Mouhot discovered Angkor,' and what is the fuller account of Angkor's end?",
+          answer:
+            "Angkor Wat was never abandoned (Khmer worshippers used it continuously, and Iberian visitors described it in the 1500s); Mouhot's 1860s writings only made it famous in Europe. The end of Angkor as capital combines recorded megadroughts and violent monsoon swings (Buckley et al., 2010), shifting coastal trade, the recorded 1431 Ayutthaya sack, and the court's move toward Phnom Penh.",
+        },
+      ],
+    },
+    {
+      slug: "asia-srivijaya-majapahit",
+      title: "11 · Srivijaya and Majapahit: the empires of the monsoon sea",
+      section: "Section 4 · Southeast Asia: the skipped chapter",
+      body: `The world's most valuable trade corridor in the Middle Ages was a strait. Whoever sat athwart the sea route between India and China, where the monsoon winds force ships to stop and wait for the season to turn, could tax a hemisphere's commerce. Two island empires did exactly that, and most world-history courses never mention either.
+
+**Srivijaya** was a Buddhist maritime power centered, by the standard identification, at **Palembang** in southeastern Sumatra (present-day Indonesia), dominant from the late 600s into the 1000s. It was a **thalassocracy**: an empire of harbors, fleets, and client ports controlling the **Strait of Malacca** and the Sunda Strait, rather than a broad territorial state. We know it from its own Old Malay inscriptions of the 680s, from Chinese court records, and from Arab geographers. The Chinese monk **Yijing** stopped there in **671** on his way to India and returned for years in the 680s-690s, reporting, in his account, a community of more than a thousand Buddhist monks and advising future pilgrims to study Sanskrit there first (Coedès, 1968; Hall, 2011). Sit with that: an island city in Sumatra functioning as a preparatory university for the Buddhist world.
+
+Now the "how we know" twist, one of the best in all of Asian history. Srivijaya was so thoroughly forgotten that **no one even knew it had existed** until the French scholar **George Coedès** reassembled it in **1918** from inscriptions and Chinese records. An empire that lasted centuries vanished from memory because its writing was scattered, its buildings were wood in a wet climate, and its successors told other stories. Forgetting is not evidence of absence; it is evidence about what survives and who is doing the remembering, which is this course's method in one sentence (Coedès, 1968).
+
+Java, meanwhile, produced monuments nobody could forget. Around **800 CE**, under the Sailendra dynasty, central Java raised **Borobudur**, a stepped stone mountain of a monument, commonly described as the largest Buddhist monument in the world, its galleries carrying kilometers of relief carving (UNESCO World Heritage Centre, n.d.). And in **1293**, east Java became the seat of **Majapahit**, the last and largest of the region's Hindu-Buddhist empires, founded in the immediate aftermath of something remarkable: a **Mongol (Yuan) naval expedition sent by Kublai Khan was outmaneuvered and expelled** by the Javanese prince who then took the throne. Majapahit peaked in the mid-1300s under King **Hayam Wuruk** and his formidable chief minister **Gajah Mada**. The court poem *Nagarakretagama*, composed by Mpu Prapanca in **1365**, lists roughly a hundred places across the archipelago as tributaries, sketching a sphere that maps loosely onto modern Indonesia and beyond. Read that list the way this course reads Maddison: it is a **court panegyric**, praise literature, and how much real control it reflects, as opposed to prestige, trade primacy, and wishful geography, is genuinely debated among historians (Hall, 2011; Lockard, 2009). Majapahit's decline in the 1400s-1500s coincided with the rise of Muslim sultanates, above all **Malacca** (founded c. 1400), which inherited the strait-hub role until Portugal seized it in **1511**, the date you already know from Lesson 1.
+
+What made all of this run was the **monsoon**: winds that blow reliably toward Asia's coasts for half the year and away for the other half, setting the rhythm of sailing seasons and forcing the layovers that made entrepôt cities rich. And what made it lucrative was, among much else, spices: until the seventeenth century, **cloves and nutmeg grew on earth only in the small Maluku islands** of eastern Indonesia, so every clove in a Cairo kitchen or a London pie had passed through these sea lanes (Lockard, 2009). When Europeans finally sailed into these waters, they were not opening a new world; they were entering, and then muscling into, a very old and very rich one.
+
+:::reveal Why is Srivijaya's disappearance from memory itself a lesson in method? ||| Because a centuries-long empire can vanish from the record without having been small: Srivijaya's writing was scattered inscriptions, its buildings were wood in a wet climate, and its successors told other stories, so its existence was only reassembled by Coedès in 1918 from inscriptions and Chinese records. Forgetting reflects what survives and who does the remembering, not what mattered; absence of fame is not absence of history.
+
+## Sources
+- Coedès, G. (1968). *The Indianized states of Southeast Asia* (W. F. Vella, Ed.; S. B. Cowing, Trans.). University of Hawaii Press.
+- Hall, K. R. (2011). *A history of early Southeast Asia: Maritime trade and societal development, 100-1500*. Rowman & Littlefield.
+- Lockard, C. A. (2009). *Southeast Asia in world history*. Oxford University Press.
+- UNESCO World Heritage Centre. (n.d.). *Borobudur Temple Compounds*. https://whc.unesco.org/en/list/592/`,
+      recallContent: [
+        {
+          prompt: "What kind of empire was Srivijaya, and what did Yijing report there?",
+          answer:
+            "A Buddhist thalassocracy (empire of harbors and fleets, not broad territory) centered by the standard identification at Palembang, Sumatra, controlling the Malacca and Sunda straits from the late 600s into the 1000s. Yijing, stopping in 671 and again in the 680s-690s, reported (his account) over a thousand monks and advised pilgrims to study Sanskrit there before India.",
+        },
+        {
+          prompt: "How does the course tell you to read the Nagarakretagama's list of a hundred tributaries?",
+          answer:
+            "As a court panegyric of 1365 (Mpu Prapanca praising Hayam Wuruk's Majapahit): evidence of the empire's horizon and prestige, but how much real control it reflects is debated among historians. Same discipline as Maddison's shares: name the source, state what it is, do not upgrade praise into administration.",
+        },
+      ],
+    },
+    {
+      slug: "asia-quiz-4",
+      title: "Section 4 quiz · Southeast Asia",
+      section: "Section 4 · Southeast Asia: the skipped chapter",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What did Evans et al. (2007) establish about Angkor?",
+            options: [
+              "It was the world's largest known preindustrial settlement complex: a low-density urban sprawl on the order of a thousand square kilometers",
+              "It was a walled city of ten million people",
+              "It was purely a ceremonial site with no population",
+              "It was founded by Chinese colonists",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The PNAS map came from ground survey and airborne radar, later extended by lidar. The course phrases it as 'largest complex mapped,' which is what the evidence supports.",
+            sourceLessonSlug: "asia-angkor",
+          },
+          {
+            prompt: "What was the engineering foundation of Angkor's agriculture?",
+            options: [
+              "Monsoon water management: vast baray reservoirs (the West Baray is roughly 8 km long), canals, and embankments supporting intensive rice farming",
+              "Deep wells drilled into the water table",
+              "Terraced mountainside farming",
+              "Imported grain from China",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A giant water-management city is exactly the kind of system that decades-scale droughts punish hardest, which is central to the current account of Angkor's end.",
+            sourceLessonSlug: "asia-angkor",
+          },
+          {
+            prompt: "Who wrote the only surviving eyewitness account of Angkor in its prime?",
+            options: [
+              "Zhou Daguan, a Chinese envoy who lived there in 1296-97",
+              "Henri Mouhot, in the 1860s",
+              "Ibn Battuta, in the 1340s",
+              "Marco Polo, in the 1290s",
+            ],
+            correctIndex: 0,
+            explanation:
+              "His Record of Cambodia describes processions, markets largely run by women, and, matter-of-factly, enslaved people in ordinary households: evidence and honest ledger at once.",
+            sourceLessonSlug: "asia-angkor",
+          },
+          {
+            prompt: "Why does the course reject the claim that Henri Mouhot 'discovered' Angkor?",
+            options: [
+              "Angkor Wat was never abandoned: Khmer worshippers used it continuously and Iberian visitors described it in the 1500s; Mouhot only made it famous in Europe",
+              "Because Mouhot never went to Cambodia",
+              "Because the city was discovered by satellite",
+              "Because Angkor was built after Mouhot's death",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'Discovery' in such stories usually means 'Europeans started paying attention.' Who gets credited with knowing a place is itself part of the history.",
+            sourceLessonSlug: "asia-angkor",
+          },
+          {
+            prompt: "What is the current, fuller account of the end of Angkor as a capital?",
+            options: [
+              "Recorded megadroughts and violent monsoon swings (Buckley et al., 2010), shifting coastal trade, the 1431 Ayutthaya sack recorded in later chronicles, and the court's move toward Phnom Penh",
+              "A single earthquake destroyed it in 1431",
+              "European invaders burned it in the 1500s",
+              "Nothing; it remains Cambodia's capital",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The sack is recorded, but tree-ring climate evidence and trade shifts fill out the picture; single-cause 'falls' rarely survive scrutiny.",
+            sourceLessonSlug: "asia-angkor",
+          },
+          {
+            prompt: "Under which king was Angkor Wat built, and to which god was it first dedicated?",
+            options: [
+              "Suryavarman II (reigned c. 1113-1150), dedicated to Vishnu and later converted to Buddhist use",
+              "Jayavarman VII, dedicated to the Buddha from the start",
+              "Jayavarman II, dedicated to Shiva",
+              "Hayam Wuruk, dedicated to Vishnu",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Jayavarman VII came a generation later, building Angkor Thom and the Bayon and endowing the road network's hospitals and rest houses recorded in his inscriptions.",
+            sourceLessonSlug: "asia-angkor",
+          },
+          {
+            prompt: "What kind of state was Srivijaya?",
+            options: [
+              "A thalassocracy: an empire of harbors, fleets, and client ports controlling the straits, centered by the standard identification at Palembang in Sumatra",
+              "A landlocked mountain kingdom",
+              "A Chinese province",
+              "A nomadic steppe confederation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its power sat on the Malacca and Sunda straits, where monsoon sailing schedules forced ships to stop; it taxed and hosted the India-China trade from the late 600s into the 1000s.",
+            sourceLessonSlug: "asia-srivijaya-majapahit",
+          },
+          {
+            prompt: "What did the monk Yijing report about Srivijaya?",
+            options: [
+              "In his account, a community of more than a thousand Buddhist monks; he advised pilgrims to study Sanskrit there before going on to India",
+              "That it had no religious life at all",
+              "That it was ruled by Chinese governors",
+              "That its people could not read",
+            ],
+            correctIndex: 0,
+            explanation:
+              "He stopped there in 671 and returned in the 680s-690s. The course flags the monk-count as his report: eyewitness numbers get attribution, like all numbers here.",
+            sourceLessonSlug: "asia-srivijaya-majapahit",
+          },
+          {
+            prompt: "What happened to the memory of Srivijaya, and why does the course dwell on it?",
+            options: [
+              "The empire was entirely forgotten until George Coedès reassembled its existence in 1918 from inscriptions and Chinese records; forgetting reflects what survives, not what mattered",
+              "It was remembered continuously in Indonesian schools",
+              "It was a myth invented in 1918",
+              "Its records were destroyed by the Portuguese",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Wooden cities in wet climates, scattered inscriptions, and successors telling other stories can erase a centuries-long power from memory. Absence of fame is not absence of history.",
+            sourceLessonSlug: "asia-srivijaya-majapahit",
+          },
+          {
+            prompt: "What event immediately preceded Majapahit's founding in 1293?",
+            options: [
+              "A Mongol (Yuan) naval expedition sent by Kublai Khan was outmaneuvered and expelled by the Javanese prince who then took the throne",
+              "The Portuguese conquest of Malacca",
+              "The eruption of Krakatoa",
+              "The fall of Srivijaya to the Cholas",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Even at the Mongol Empire's height, its reach had limits; Java's repulse of the expedition is one of the clearest cases.",
+            sourceLessonSlug: "asia-srivijaya-majapahit",
+          },
+          {
+            prompt: "How does the course tell you to read the Nagarakretagama's list of roughly a hundred tributaries?",
+            options: [
+              "As a 1365 court panegyric: evidence of Majapahit's horizon and prestige, while the degree of real control is debated among historians",
+              "As an administrative census proving direct rule of all of modern Indonesia",
+              "As a forgery from the colonial era",
+              "As a Chinese diplomatic record",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Mpu Prapanca was praising King Hayam Wuruk. Do not upgrade praise literature into administration; name the source and state what kind of text it is.",
+            sourceLessonSlug: "asia-srivijaya-majapahit",
+          },
+          {
+            prompt: "What is Borobudur?",
+            options: [
+              "A stepped stone monument raised in central Java around 800 CE under the Sailendra dynasty, commonly described as the world's largest Buddhist monument",
+              "A Khmer temple at Angkor",
+              "A mosque built by the Malacca sultanate",
+              "A Chinese pagoda in Sumatra",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its galleries carry kilometers of relief carving; it is UNESCO-listed. Java built monuments in stone that, unlike Srivijaya's wooden cities, could not be forgotten.",
+            sourceLessonSlug: "asia-srivijaya-majapahit",
+          },
+          {
+            prompt: "Why were the Maluku islands disproportionately important to world trade before the 1600s?",
+            options: [
+              "Cloves and nutmeg grew nowhere else on earth, so every clove anywhere had passed through Southeast Asian sea lanes",
+              "They held the world's only tin mines",
+              "They controlled the Suez route",
+              "They minted the region's only currency",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Botanical monopoly plus monsoon geography made the archipelago's entrepôts rich, and made the straits the most valuable corridor of the medieval world.",
+            sourceLessonSlug: "asia-srivijaya-majapahit",
+          },
+          {
+            prompt: "What role did the monsoon play in the maritime empires' power?",
+            options: [
+              "Its seasonal winds set sailing schedules and forced layovers, so strait-side entrepôts could host, provision, and tax the waiting trade",
+              "It made sailing impossible, so all trade went overland",
+              "It only mattered for agriculture",
+              "It blew constantly in one direction year-round",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Winds toward Asia's coasts half the year and away the other half are the physical engine under Srivijaya, Majapahit, and later Malacca.",
+            sourceLessonSlug: "asia-srivijaya-majapahit",
+          },
+          {
+            prompt: "Which city inherited the strait-hub role in the 1400s, and how did its independence end?",
+            options: [
+              "Malacca, founded c. 1400; Portugal seized it in 1511",
+              "Palembang, seized by Spain in 1571",
+              "Manila, seized by Portugal in 1511",
+              "Singapore, founded by the British in 1819",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Malacca rose as Majapahit declined and Muslim sultanates spread; its 1511 capture is one of the enclave dates from Lesson 1's precise timeline of European colonization.",
+            sourceLessonSlug: "asia-srivijaya-majapahit",
+          },
+        ],
+      },
+    },
   ],
 };
