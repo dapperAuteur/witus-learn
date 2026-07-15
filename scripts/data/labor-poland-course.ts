@@ -1479,5 +1479,388 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
         ],
       },
     },
+
+    // ────────────── SECTION 6 · THE RHYME, AND THE SKILL ──────────────
+    {
+      slug: "poland-junk-contracts",
+      title: "12 · The rhyme: 'junk contracts' and the move you have seen before",
+      section: "Section 6 · The rhyme, and the skill you keep",
+      body: `Here is the lesson that pays off the whole *track*, not just this course. Once you have seen it in Poland, you will recognise it everywhere — and recognising it is the single most useful skill a workers'-rights course can give you.
+
+**The Polish version is called *umowy śmieciowe* — "junk contracts" (literally "trash contracts").** To understand them, you need one distinction in Polish law:
+
+- An **employment contract** — *umowa o pracę* — is governed by the **Labour Code** (*Kodeks pracy*). It comes with the protections you would expect: paid annual leave, notice periods, working-time limits, the minimum wage, sick and maternity entitlements, full social-security contributions, and access to the **labour courts** if something goes wrong.
+- A **civil-law contract** — most commonly the *umowa zlecenie* (a "contract of mandate") or *umowa o dzieło* (a "contract for a specific task") — is governed instead by the **Civil Code** (*Kodeks cywilny*). It is meant for genuinely independent, one-off, or freelance work. Historically it carried **none** of the Labour Code's protections: no paid leave, no notice, limited or no social-security contributions, and no labour-court jurisdiction. (Poland has since bolted on some fixes — a minimum hourly rate for *umowa zlecenie* was introduced in 2017 — but the gap in protection remains wide.)
+
+**Now the move.** For years, large numbers of Polish employers took people who were doing **ordinary, employee-like, day-in-day-out jobs** — and hired them on a **civil-law contract** instead of an employment contract. The worker shows up at the same time every day, uses the company's tools, takes the company's orders, and does the company's core work — every functional test of an "employee" — but on paper they are a "contractor" performing a "task." That paper reclassification lets the employer **escape the Labour Code**: cheaper, more disposable labour, outside much of labour law, and — crucially for this course — **outside the collective-bargaining system**, because those protections and structures attach to *employees*. Poland leaned on this so heavily that economists describe a **"dual" labour market**, and the practice has been a live political fight for over a decade (the term went mainstream around 2011–2012). Reforms to curb it — including giving labour inspectors power to **reclassify** disguised employment — have been debated and staged into the mid-2020s, tied to EU funding conditions; the exact status keeps moving, so treat any single "it's fixed now" claim with caution and check the date.
+
+**And here is why you already understand this, even if you have never heard a Polish word before.** Look at what the move *is*, stripped of the local vocabulary: **an employer uses a legal form to place a worker outside the category that carries the protections.** Now recall the rest of the track:
+
+- **The United States** (the anchor course): **misclassification.** Call a worker an "independent contractor" rather than an "employee," and they fall outside the National Labor Relations Act, the minimum wage, overtime — the same escape, through a different door.
+- **Mexico** (its own course): the **protection contract.** A company signs a collective agreement with a friendly or phantom union before workers even organise, so that a *real* union is legally blocked. Again: a legal form that leaves the worker outside genuine protection while *appearing* to be inside it.
+- **Poland: the junk contract.** A civil-law contract that keeps an employee-in-all-but-name outside the Labour Code.
+
+**Three countries, three names, one structural move.** The details are completely different — a US contractor, a Mexican phantom union, a Polish civil-law contract — but the *shape* is identical: **the fight is not "is there a protection?" but "is this worker inside or outside the category the protection attaches to?"** That question — *whose category is it, and does it actually cover the person doing the work?* — is the thing this whole track has been quietly teaching you to ask. Poland just gives it one of its clearest names.
+
+:::reveal Poland's "junk contracts," US "misclassification," and Mexico's "protection contracts" look completely different. What single structural move do all three share? ||| In each, an employer uses a *legal form* to place a worker outside the category that carries the protections — a civil-law contract in Poland, an "independent contractor" label in the US, a phantom-union agreement in Mexico. The worker does protected-category work but is defined, on paper, as outside it. So the real question in every country is not "is there a protection?" but "is this worker inside or outside the category the protection attaches to?"
+
+## Sources
+- European Trade Union Institute. (n.d.). *The struggle against 'junk contracts' in Poland*. https://www.etui.org/covid-social-impact/poland/the-struggle-against-junk-contracts-in-poland
+- Arak, P., Lewandowski, P., & Żakowiecki, P. (2019). Normalisation of "junk contracts": Public policies towards civil-law employment in Poland. *Problemy Polityki Społecznej, 46*(3). http://cejsh.icm.edu.pl/cejsh/element/bwmeta1.element.desklight-c6ff36fc-d3fb-4c6b-9ac1-485f494328b7
+- Notes from Poland. (2026, April 3). *Poland boosts labour inspector powers to curb precarious work*. https://notesfrompoland.com/2026/04/03/poland-boosts-labour-inspector-powers-to-curb-precarious-work/`,
+      recallContent: [
+        {
+          prompt: "What is a Polish 'junk contract' (umowa śmieciowa), and how does it dodge the Labour Code?",
+          answer:
+            "A civil-law contract (umowa zlecenie or umowa o dzieło, under the Civil Code) used to hire someone doing ordinary employee-like work, instead of an employment contract (umowa o pracę, under the Labour Code). Because labour protections and collective bargaining attach to 'employees,' the paper reclassification puts the worker outside paid leave, notice, full social security, labour courts, and bargaining.",
+        },
+        {
+          prompt: "State the one structural move shared by Polish junk contracts, US misclassification, and Mexican protection contracts.",
+          answer:
+            "In all three, an employer uses a legal form to place a worker outside the category that carries the protections — a civil-law contract, an 'independent contractor' label, or a phantom-union agreement. The real question everywhere is not 'is there a protection?' but 'is this worker inside or outside the category the protection attaches to?'",
+        },
+      ],
+    },
+    {
+      slug: "poland-the-skill",
+      title: "13 · Reading any country: the skill you keep",
+      section: "Section 6 · The rhyme, and the skill you keep",
+      body: `You could forget every date in this course — the 21 Demands, 10 November 1980, 13 December 1981, 4 June 1989 — and still have gotten the valuable thing, if you keep the **method**. So let's make it explicit by running the anchor's four questions across the whole Polish story one last time, and watching the answers move.
+
+**Q1 — Who is allowed to organise?**
+- *1980:* No one independently — which is why demanding a free union was demanding to break the Party's monopoly on power. Question 1 *was* the question of the state.
+- *Today:* Everyone. Poland is a democracy with full freedom of association. And yet density is ~9% (2022). **The right can be secure and barely used at the same time** — a pairing you should now expect, not find surprising.
+
+**Q2 — Who is excluded?**
+- *1980:* Everyone, from independent organisation.
+- *Today:* Workers pushed onto **civil-law "junk contracts,"** outside the Labour Code and the bargaining system — the same *structural* exclusion the US runs through misclassification.
+
+**Q3 — Who bargains with whom, and at what level?**
+- The hinge of the whole comparison with Germany: Poland bargains **company by company**, sectoral agreements have withered, and coverage (~12%, 2023) is therefore chained to low membership. **Always find the *level* of bargaining before you judge the *strength* of a labour movement.**
+
+**Q4 — What happens to you if you try?**
+- *1981:* Martial law, internment, nine dead at Wujek — the most violent answer in the Wave-1 courses.
+- *Today:* An ordinary democratic answer — you may organise; the obstacles are structural, not martial.
+
+**And the transferable habit this course adds to your kit, on top of the four questions:** *when a labour movement looks mysteriously weak, look for the legal form that moves workers out of the protected category, and look for the level at which bargaining happens.* Those two structural facts — the exclusion move and the bargaining level — explain more about a country's real worker power than any amount of rhetoric about culture or national character. You saw the plumbing beat the culture in the Germany and Nordic courses. **In Poland you saw something even sharper: a movement can win the entire state and still, through the structures that come afterward, lose the workplace.** Carry that, and you can walk into a country you have never studied and ask the right questions first.
+
+One last cross-link. This course was **history and structure** — *how did this happen, and why is Poland's labour system shaped this way?* Its companion, **Know Your Rights at Work**, is the present-tense, practical one — *what do I actually do on the job on Monday?* If Poland's story moved you, that is the course that turns the feeling into something you can use.
+
+:::reveal Beyond the four questions, what is the transferable habit this course adds — the two structural facts that explain a country's real worker power better than talk of "culture"? ||| First, the *exclusion move*: look for the legal form that shifts workers out of the protected category (junk contracts, misclassification, phantom unions). Second, the *bargaining level*: find out whether bargaining happens at the sector or only the single firm, because the level caps how far coverage can reach beyond membership. Those two facts — who is defined out, and at what level anyone bargains — tell you more than any amount of rhetoric about national character.
+
+## Sources
+- OECD/AIAS. (n.d.). *ICTWSS database — country note: Poland*. https://www.oecd.org/content/dam/oecd/en/data/datasets/oecd-aias-ictwss/Poland.pdf
+- European Trade Union Institute. (2023). *Poland: Trade unions developing after a decline* (Chapter 22). https://www.etui.org/sites/default/files/2023-06/Chapter22_Poland_Trade%20unions%20developing%20after%20a%20decline_2023.pdf`,
+      recallContent: [
+        {
+          prompt: "Run the four questions on Poland today in one line each.",
+          answer:
+            "Q1 (who may organise?): everyone — yet density is only ~9%. Q2 (who is excluded?): workers on civil-law junk contracts. Q3 (who bargains, at what level?): company by company, so coverage ~12% is chained to membership. Q4 (what if you try?): an ordinary democratic answer now, versus martial law and Wujek in 1981.",
+        },
+        {
+          prompt: "What single sentence captures Poland's place in the whole track?",
+          answer:
+            "A movement can win the entire state and still, through the structures that come afterward, lose the workplace. No other country in the track shows a union as the engine of a national revolution — or the collapse of workplace power that followed.",
+        },
+      ],
+    },
+    {
+      slug: "poland-practice",
+      title: "14 · Practice: the facts you should be able to produce cold",
+      section: "Section 6 · The rhyme, and the skill you keep",
+      body: `Fill in each blank, then check. Spelling and capitalization are forgiving.
+
+These are the specific, checkable facts this course wants in your head — the ones that let you catch an error in someone else's telling of the Solidarność story. Everything else you can look up.`,
+      exercise: {
+        instructions: "Fill in each blank, then check. Spelling and capitalization are forgiving.",
+        items: [
+          {
+            prompt: "The strike that launched Solidarność began in August 1980 at the Lenin Shipyard in the city of ___.",
+            answer: "Gdańsk",
+            accept: ["Gdansk"],
+            explanation:
+              "The Baltic port of Gdańsk. The occupation strike there, and the Inter-factory Strike Committee it spawned, turned a local dispute into a national movement.",
+          },
+          {
+            prompt: "The workers posted ___ demands on the shipyard gate — now on UNESCO's Memory of the World register.",
+            answer: "21",
+            accept: ["twenty-one", "twenty one"],
+            explanation:
+              "The 21 Demands, hand-lettered on two plywood boards at Gate No. 2, inscribed by UNESCO in 2003 — a citable primary artifact.",
+          },
+          {
+            prompt: "Demand number one was not about pay. It was the right to form free trade unions ___ of the Communist Party.",
+            answer: "independent",
+            explanation:
+              "In a one-party state, an independent union is a centre of power outside the Party — which made 'who may organise?' the same question as 'who governs?'",
+          },
+          {
+            prompt: "The agreement conceding independent unions was signed on 31 August 1980. It is known as the ___ Agreement.",
+            answer: "Gdańsk",
+            accept: ["Gdansk"],
+            explanation:
+              "Signed by Lech Wałęsa and deputy PM Mieczysław Jagielski — the first legally tolerated independent union in the Soviet bloc.",
+          },
+          {
+            prompt: "At its 1981 peak, Solidarność had roughly ___ million members.",
+            answer: "10",
+            accept: ["ten", "10 million", "ten million"],
+            explanation:
+              "About a third of Poland's population — the largest membership organisation the communist bloc ever produced.",
+          },
+          {
+            prompt: "On 13 December 1981, General Wojciech ___ declared martial law and banned the union.",
+            answer: "Jaruzelski",
+            explanation:
+              "He held the top Party, government and military posts and ruled through the Military Council of National Salvation (WRON).",
+          },
+          {
+            prompt: "Three days into martial law, police and army killed ___ striking miners at the Wujek coal mine.",
+            answer: "nine",
+            accept: ["9"],
+            explanation:
+              "16 December 1981. The sharpest answer to the anchor's Question 4 — 'what happens to you if you try?' — in the Wave-1 courses.",
+          },
+          {
+            prompt: "The negotiations that ended communist rule in 1989 are named after the shape of the table: the ___ Table talks.",
+            answer: "Round",
+            explanation:
+              "6 February to 5 April 1989. The state's negotiating partner for the future of the country was a trade union.",
+          },
+          {
+            prompt: "In the partly-free election of ___ June 1989, Solidarity won nearly every seat it was allowed to contest.",
+            answer: "4",
+            accept: ["4th", "fourth", "June 4"],
+            explanation:
+              "Every contestable Sejm seat and 99 of 100 Senate seats — a landslide that became a referendum communism lost.",
+          },
+          {
+            prompt: "The 1990 'shock therapy' reform package that freed prices and cut subsidies is named after finance minister Leszek ___.",
+            answer: "Balcerowicz",
+            explanation:
+              "In force 1 January 1990. It broke hyperinflation — and its pain fell hardest on the industrial workers who built Solidarność.",
+          },
+          {
+            prompt: "Registered unemployment, an official zero under communism, rose to about ___ percent by 1993 (Statistics Poland).",
+            answer: "16",
+            accept: ["16.4", "16 percent", "16.4%", "16%"],
+            explanation:
+              "16.4% in 1993 (GUS). Mass joblessness became real as state enterprises shrank — the cost of winning the country.",
+          },
+          {
+            prompt: "Today Poland's trade union density is about ___ percent (2022, OECD/AIAS) — among the lowest in the EU.",
+            answer: "9",
+            accept: ["9.4", "9 percent", "9.4%", "9%", "about 9"],
+            explanation:
+              "9.4% in 2022. A union that enrolled a third of the country now organises fewer than one worker in ten.",
+          },
+          {
+            prompt: "Poland bargains mostly at the ___ level (single firm), not the sector — which is why its coverage barely exceeds its membership.",
+            answer: "company",
+            accept: ["firm", "enterprise", "company level", "firm level"],
+            explanation:
+              "The opposite of Germany's sectoral model. Company-level bargaining chains coverage to low membership.",
+          },
+          {
+            prompt: "Poland's civil-law contracts used to keep workers outside the Labour Code are nicknamed '___ contracts.'",
+            answer: "junk",
+            accept: ["trash", "junk (umowy śmieciowe)", "śmieciowe"],
+            explanation:
+              "Umowy śmieciowe. The same structural move as US misclassification and Mexican protection contracts: a legal form that puts the worker outside the protected category.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "poland-quiz-6",
+      title: "Section 6 quiz · The rhyme, and the skill",
+      section: "Section 6 · The rhyme, and the skill you keep",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "In Polish law, which contract type is governed by the Labour Code and carries the full protections?",
+            options: [
+              "The umowa o pracę (employment contract)",
+              "The umowa zlecenie (contract of mandate)",
+              "The umowa o dzieło (contract for a task)",
+              "None — Poland has no labour code",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The umowa o pracę brings paid leave, notice, minimum wage, social security and labour-court access. Civil-law contracts (zlecenie, o dzieło) sit under the Civil Code instead.",
+            sourceLessonSlug: "poland-junk-contracts",
+          },
+          {
+            prompt: "What is a Polish 'junk contract' (umowa śmieciowa)?",
+            options: [
+              "A contract for hazardous waste disposal",
+              "A civil-law contract used to hire employee-like workers so the employer escapes the Labour Code and the bargaining system",
+              "A short-term employment contract with full benefits",
+              "A collective agreement",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The worker does ordinary employee work but, on paper, is a 'contractor' — outside paid leave, notice, full social security, labour courts and collective bargaining.",
+            sourceLessonSlug: "poland-junk-contracts",
+          },
+          {
+            prompt: "What single structural move do Polish junk contracts, US misclassification, and Mexican protection contracts share?",
+            options: [
+              "They all raise wages",
+              "In each, an employer uses a legal form to place a worker OUTSIDE the category that carries the protections",
+              "They are all illegal everywhere",
+              "They all require a union election",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Different door, same room. The real question is always: is this worker inside or outside the category the protection attaches to?",
+            sourceLessonSlug: "poland-junk-contracts",
+          },
+          {
+            prompt: "The US version of this move, taught in the anchor course, is called…",
+            options: ["co-determination", "misclassification (calling an employee an 'independent contractor')", "the Ghent system", "sectoral extension"],
+            correctIndex: 1,
+            explanation:
+              "Misclassification puts a worker outside the NLRA, minimum wage and overtime — the American door to the same escape Poland reaches through civil-law contracts.",
+            sourceLessonSlug: "poland-junk-contracts",
+          },
+          {
+            prompt: "The Mexican version of the move, from that country's course, is the…",
+            options: ["works council", "protection contract (a friendly/phantom union's agreement that blocks a real union)", "enterprise union", "minimum-service law"],
+            correctIndex: 1,
+            explanation:
+              "A legal form that leaves the worker outside genuine protection while appearing to be inside it — the same family as junk contracts and misclassification.",
+            sourceLessonSlug: "poland-junk-contracts",
+          },
+          {
+            prompt: "Why does the exclusion-move question matter more than 'is there a union/protection here?'",
+            options: [
+              "Because protections never matter",
+              "Because a protection is worthless to a worker who has been defined, on paper, as outside the category it attaches to",
+              "Because unions are always illegal",
+              "Because every worker is automatically covered",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The whole track trains you to ask 'whose category is it, and does it cover the person doing the work?' — the sharpest single diagnostic in labour law.",
+            sourceLessonSlug: "poland-junk-contracts",
+          },
+          {
+            prompt: "Running Question 1 across Poland: what is the striking pairing in the answer 'today'?",
+            options: [
+              "Organising is banned, and density is high",
+              "Everyone may organise, yet density is only ~9% — the right can be secure and barely used at once",
+              "Only farmers may organise",
+              "Organising requires Party approval",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A secure right paired with low use is a pattern the course teaches you to expect rather than find surprising.",
+            sourceLessonSlug: "poland-the-skill",
+          },
+          {
+            prompt: "What is the transferable habit the course adds on top of the four questions?",
+            options: [
+              "Judge a labour movement by its rhetoric",
+              "When a labour movement looks weak, look for the legal form that moves workers out of the protected category, and look for the LEVEL at which bargaining happens",
+              "Assume culture explains everything",
+              "Count only strike days",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The exclusion move and the bargaining level explain real worker power better than any talk of national character.",
+            sourceLessonSlug: "poland-the-skill",
+          },
+          {
+            prompt: "In one sentence, what is Poland's unique place in the whole track?",
+            options: [
+              "A country where workers sit on company boards",
+              "A movement can win the entire state and still, through the structures that come afterward, lose the workplace",
+              "A country where the union runs the unemployment fund",
+              "A country with no labour law at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No other course shows a union as the engine of a national revolution — or the collapse of workplace power that followed it.",
+            sourceLessonSlug: "poland-the-skill",
+          },
+          {
+            prompt: "Which companion course is the practical, present-tense complement to this historical one?",
+            options: [
+              "Know Your Rights at Work",
+              "The History of Unions (the anchor)",
+              "Germany: Workers on the Board",
+              "Learning How to Learn",
+            ],
+            correctIndex: 0,
+            explanation:
+              "This course is 'how did this happen'; Know Your Rights at Work is 'what do I do on the job Monday.' The anchor supplies the four questions both share.",
+            sourceLessonSlug: "poland-the-skill",
+          },
+          {
+            prompt: "Why should any single 'the junk-contract problem is fixed now' claim be treated with caution?",
+            options: [
+              "Because junk contracts don't exist",
+              "Because reforms (e.g. giving inspectors power to reclassify disguised employment) have been staged and debated into the mid-2020s and the status keeps moving — so check the date",
+              "Because Poland has no government",
+              "Because the EU banned the topic",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The authoritative-values habit: a live, changing policy area should be dated and checked, not asserted as settled.",
+            sourceLessonSlug: "poland-junk-contracts",
+          },
+          {
+            prompt: "How does 'find the bargaining level' help you read a country you have never studied?",
+            options: [
+              "It tells you the country's GDP",
+              "Whether bargaining is sectoral or firm-level caps how far coverage can spread beyond union membership — a structural fact that predicts real worker power",
+              "It tells you the strike frequency",
+              "It reveals the minimum wage",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Germany (sectoral) vs Poland (firm-level) with similar density but wildly different coverage is the proof: the level is decisive.",
+            sourceLessonSlug: "poland-the-skill",
+          },
+          {
+            prompt: "A minimum hourly rate was bolted onto the umowa zlecenie in what year, narrowing (not closing) the protection gap?",
+            options: ["2017", "1980", "1990", "2002"],
+            correctIndex: 0,
+            explanation:
+              "2017. Poland has patched some gaps in civil-law contracts, but the difference from a full Labour Code employment contract remains wide.",
+            sourceLessonSlug: "poland-junk-contracts",
+          },
+          {
+            prompt: "What does the term 'dual labour market' describe in the Polish context?",
+            options: [
+              "Two currencies",
+              "A split between workers on protected Labour Code contracts and those on unprotected civil-law 'junk' contracts",
+              "Public vs private sectors",
+              "Two competing minimum wages",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Economists use 'duality' for exactly this divide — one workforce inside the protective category, another paid to stay outside it.",
+            sourceLessonSlug: "poland-junk-contracts",
+          },
+          {
+            prompt: "If you forgot every date in this course, what would still be worth keeping?",
+            options: [
+              "The names of the shipyards",
+              "The METHOD — the four questions plus the two structural facts (the exclusion move and the bargaining level)",
+              "The exchange rate of the złoty",
+              "Nothing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The dates are the illustration; the transferable diagnostic method is the actual payload of the course and the track.",
+            sourceLessonSlug: "poland-the-skill",
+          },
+        ],
+      },
+    },
   ],
 };
