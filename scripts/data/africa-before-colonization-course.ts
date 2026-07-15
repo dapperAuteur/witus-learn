@@ -962,5 +962,367 @@ One deliberate correction before the quiz: these three states were succession IN
         ],
       },
     },
+
+    // ────────────── SECTION 4 · STONE TOWNS AND BRONZE COURTS ──────────────
+    {
+      slug: "africa-great-zimbabwe",
+      title: "8 · Great Zimbabwe, and the men who refused to believe it",
+      section: "Section 4 · Stone towns and bronze courts",
+      body: `South of the Zambezi, on the Zimbabwean plateau, stands the largest of several hundred drystone ruins that give the modern nation its name: **Great Zimbabwe**, from the Shona *dzimbahwe*, houses of stone. This lesson is two stories: the city, and the seventy-year campaign to deny who built it. The second story is why this course exists, so the receipts here are unusually thorough.
+
+**The city.** Built and occupied from roughly **1100 to 1450 CE** by ancestors of the **Shona**, Great Zimbabwe was the center of a state that grew rich coupling the plateau's cattle and gold to the Indian Ocean trade. Its signature is granite walling laid without a drop of mortar: the Great Enclosure's outer wall runs about 250 meters around and rises to roughly 11 meters, and the site is often described as the largest ancient stone construction south of the Sahara (Garlake, 1973; UNESCO inscribed it in 1986). Population estimates for its peak vary widely (commonly cited on the order of 10,000 or more; treat all such figures as estimates). What is not an estimate is what excavators found in it: Chinese celadon, Persian glazed ware, glass beads, and a coin from **Kilwa**, the Swahili port of Lesson 9. This landlocked city sat in a trade web that touched China (Garlake, 1973). Eight carved soapstone birds stood on its walls; one is on Zimbabwe's flag today.
+
+**The denial, from the documents.** The German geologist Karl Mauch reached the ruins in 1871 and decided a local African origin was impossible: he proposed the Queen of Sheba's Ophir, and famously judged a wooden lintel to be Lebanese cedar, hence Solomon's era. In 1891 J. Theodore Bent, sponsored under the patronage of Cecil Rhodes's circle, excavated and pronounced the builders non-African (Phoenician or Arabian). Worse than theories: in 1895 a chartered company, Rhodesia Ancient Ruins Ltd., was licensed to strip goldwork from zimbabwe sites commercially, and the journalist-curator Richard Hall, appointed to Great Zimbabwe in 1902, shoveled out meters of stratified deposit as "Kaffir filth" (his phrase), destroying evidence wholesale (Garlake, 1973; Pikirayi, 2012). Then science arrived: **David Randall-MacIver** (1905), a trained archaeologist, concluded the site was African and medieval. **Gertrude Caton-Thompson**'s 1929 excavation settled it: every datable object and every structural technique pointed to an African origin in the African Middle Ages (Caton-Thompson, 1931). Radiocarbon dating later confirmed the chronology.
+
+**And then the denial became law.** This is the part to memorize, because it is documented, recent, and exactly what Lesson 1 predicted: evidence does not always win quickly when a state needs the opposite conclusion. Under the white-minority Rhodesian Front government (which declared independence in 1965 precisely to prevent majority rule), official censorship from **1970** barred state publications from stating as fact that Great Zimbabwe was an African creation; guidebooks and museum displays were required to present the origins as a mystery. **Peter Garlake**, the country's Inspector of Monuments from 1964, refused to play along and was forced out of the country in 1970 (Pikirayi, 2012; PBS NOVA, n.d.). Sit with that: within living memory, a government censored archaeology because the archaeology proved Africans built a stone city. When Zimbabwe won majority rule in 1980, it named itself after the site.
+
+**Why it matters beyond the walls.** Great Zimbabwe is the cleanest possible test of Trevor-Roper's claim, because it is physical. No documents are needed: the walls, the stratigraphy, the imports, and the dates speak. The deniers understood that too, which is why the site had to be Phoenician, then a mystery, then censored. It was never a mystery. It was inconvenient.
+
+:::reveal A 1970s Rhodesian guidebook says Great Zimbabwe's origins are 'a mystery.' Using this lesson's evidence, explain what that sentence actually documents. ||| Not an evidence gap but a policy: Randall-MacIver (1905) and Caton-Thompson (1929, published 1931) had settled the African, medieval origin decades earlier, and radiocarbon confirmed it. From 1970 the Rhodesian government censored official publications from stating that conclusion as fact, and forced out the Inspector of Monuments (Garlake) who insisted on it. The 'mystery' sentence is a documented artifact of state censorship of archaeology, not of archaeological uncertainty.
+
+## Sources
+- Garlake, P. S. (1973). *Great Zimbabwe*. Thames & Hudson.
+- Caton-Thompson, G. (1931). *The Zimbabwe culture: Ruins and reactions*. Clarendon Press.
+- Pikirayi, I. (2012). Peter Garlake (1934-2011), Great Zimbabwe and the politics of the past in Zimbabwe. *Azania: Archaeological Research in Africa, 47*(2), 223-231. https://doi.org/10.1080/0067270X.2012.682779
+- PBS NOVA. (n.d.). *Mysteries of Great Zimbabwe*. https://www.pbs.org/wgbh/nova/article/mysteries-of-great-zimbabwe/
+- UNESCO World Heritage Centre. (n.d.). *Great Zimbabwe National Monument* [Inscription record, 1986]. https://whc.unesco.org/en/list/364/`,
+      recallContent: [
+        {
+          prompt: "Great Zimbabwe: who built it, when, and name two excavation finds that prove long-distance trade.",
+          answer:
+            "Ancestors of the Shona, c. 1100-1450 CE. Finds include Chinese celadon, Persian glazed ware, glass beads, and a coin from Kilwa on the Swahili coast: a landlocked city wired into Indian Ocean trade.",
+        },
+        {
+          prompt: "The chain of denial and correction at Great Zimbabwe, with dates.",
+          answer:
+            "Mauch 1871 (Sheba/Ophir), Bent 1891 (Phoenician), Rhodesia Ancient Ruins Ltd. 1895 (commercial looting), Hall from 1902 (deposits destroyed); then Randall-MacIver 1905 (African, medieval) and Caton-Thompson 1929/1931 (settled). From 1970 Rhodesia censored official publications from stating the African origin as fact and forced out Inspector of Monuments Peter Garlake.",
+        },
+      ],
+    },
+    {
+      slug: "africa-swahili-coast",
+      title: "9 · The Swahili coast: Kilwa and the Indian Ocean",
+      section: "Section 4 · Stone towns and bronze courts",
+      body: `Now to the coast Great Zimbabwe's gold flowed toward. From Mogadishu (in present-day Somalia) down to Sofala (in present-day Mozambique), a chain of stone-built trading towns (Lamu, Malindi, Mombasa, Zanzibar, Kilwa, and dozens more) faced the monsoon winds of the Indian Ocean. Between roughly the eleventh and fifteenth centuries this was one of the most connected commercial coasts on Earth.
+
+**Start with the language, because it settles an old slander.** Swahili is a **Bantu** language, of the coast's own Sabaki group, enriched with Arabic loanwords the way English is enriched with French. Colonial-era writers routinely described the stone towns as Arab or Persian colonies, foreign implants on a passive shore: the coastal cousin of the Great Zimbabwe denial. Archaeology dismantled it. Excavations at sites like Shanga in the Lamu archipelago traced the stone towns down through their own foundations to African fishing and farming villages, with the first tiny timber mosques growing generation by generation into stone ones on the same spot (Horton & Middleton, 2000; Kusimba, 1999). The Swahili towns were African towns that traded with everyone, and their merchant families intermarried with the ocean world they did business in. Cosmopolitan is not the same thing as foreign.
+
+**Kilwa Kisiwani** (an island off present-day Tanzania) was the jewel. It controlled the southern gold route from Sofala (the outlet for the plateau gold of Great Zimbabwe's world; the two lessons of this section are one economy), and its sultans struck their own **copper coinage** from around the eleventh to fourteenth centuries, coins found up and down the coast and, as Lesson 8 noted, at Great Zimbabwe itself. Its Great Mosque, with its domed and vaulted bays, and the vast fourteenth-century palace complex of **Husuni Kubwa**, with an octagonal bathing pool cut above the sea, still stand in ruin (UNESCO inscribed Kilwa Kisiwani and Songo Mnara in 1981). When **Ibn Battuta** visited in **1331**, he called Kilwa, in the standard English translation of his travels, "one of the most beautiful and well-constructed towns in the world" (Gibb translation; Ibn Battuta, 1331/1962). That sentence was written by the most traveled human being of his century, a man who had seen Cairo, Damascus, and Constantinople.
+
+**The trade itself** ran on the monsoon: northeast winds carrying dhows out toward Arabia and India part of the year, southwest winds bringing them back the other part. Out of Africa: gold, ivory (elephant ivory was prized in India and China for carving), mangrove poles for treeless Gulf cities, ambergris, iron. In: Indian cloth, Chinese porcelain (which coastal elites set into the walls and tombs of their houses, where archaeologists still find it), glass beads. Chinese court records document the connection from the other end: early in the fifteenth century, the Ming admiral **Zheng He**'s fleets reached the coast at Malindi and Mogadishu, and a giraffe from Malindi, presented at the Ming court around 1414-15 (routed via Bengal, in the usual reconstruction), caused a sensation as the auspicious *qilin* (Dreyer, 2007; the episode is documented in Ming sources, with details varying by account).
+
+**The turn.** In 1498 Vasco da Gama rounded the Cape and found this world already old; a Gujarati or Swahili pilot guided him on to India. The Portuguese returned with fleets: Kilwa was sacked in **1505**, forts were planted, and the coast's free trade was forced into a Portuguese protection racket. The stone towns survived, diminished; their history, like Great Zimbabwe's, was then rewritten by their conquerors as someone else's achievement, until the archaeologists arrived.
+
+:::reveal Colonial-era writers called the Swahili stone towns 'Arab colonies.' What evidence overturned that, and what distinction does the course insist on instead? ||| Excavation (e.g., Shanga in the Lamu archipelago) traced the towns down through their own foundations to African fishing and farming villages, with timber mosques rebuilt generation by generation into stone on the same spots, and Swahili itself is a Bantu language of the coast's own Sabaki group with Arabic loanwords. The distinction: cosmopolitan is not foreign. These were African towns that traded and intermarried with the whole Indian Ocean world, which is a description of success, not of someone else's colony.
+
+## Sources
+- Horton, M., & Middleton, J. (2000). *The Swahili: The social landscape of a mercantile society*. Blackwell.
+- Kusimba, C. M. (1999). *The rise and fall of Swahili states*. AltaMira Press.
+- Ibn Battuta. (1962). *The travels of Ibn Battuta, A.D. 1325-1354* (Vol. 2, H. A. R. Gibb, Trans.). Hakluyt Society. (Original account of 1331 visit)
+- Dreyer, E. L. (2007). *Zheng He: China and the oceans in the early Ming dynasty, 1405-1433*. Pearson Longman.
+- UNESCO World Heritage Centre. (n.d.). *Ruins of Kilwa Kisiwani and ruins of Songo Mnara* [Inscription record, 1981]. https://whc.unesco.org/en/list/144/`,
+      recallContent: [
+        {
+          prompt: "What did Ibn Battuta say about Kilwa in 1331, and why does the witness matter?",
+          answer:
+            "In the Gibb translation: 'one of the most beautiful and well-constructed towns in the world.' The witness was the most traveled person of his century, comparing Kilwa against Cairo, Damascus, and Constantinople firsthand.",
+        },
+        {
+          prompt: "How do the Great Zimbabwe and Swahili coast lessons form one economy?",
+          answer:
+            "Plateau gold moved from Great Zimbabwe's world to the coast at Sofala, whose trade Kilwa controlled; Kilwa's own copper coins have been found at Great Zimbabwe, and Chinese and Persian goods moved inland the other way.",
+        },
+      ],
+    },
+    {
+      slug: "africa-benin-bronzes",
+      title: "10 · Benin: the bronzes, and the 1897 looting",
+      section: "Section 4 · Stone towns and bronze courts",
+      body: `First, fix the map, because the names collide. The **Kingdom of Benin** was and is the state of the **Edo** people, centered on Benin City in present-day southern **Nigeria**. It is unrelated to the modern Republic of Benin next door, which renamed itself (from Dahomey) in 1975 after the Bight of Benin. Every "Benin" in this lesson is the Edo kingdom.
+
+**The court and the casting.** Benin's royal dynasty, which tradition ties to the older sacred city of **Ife**, has reigned since about the thirteenth century, and its current Oba sits in Benin City today. Ife deserves its own sentence: its copper-alloy and terracotta heads (commonly dated to about the twelfth through fifteenth centuries) are portraits of such naturalism that when the German ethnographer Leo Frobenius encountered one in 1910, he announced he had found art of the lost civilization of **Atlantis**, a perfect specimen of Lesson 2's erasure trap: faced with African mastery, invent a sunken continent rather than credit the Yoruba (Frobenius's claim and its debunking are standard in the Ife literature; see Blier, 2015). Benin's own court workshops, organized in a hereditary casters' guild that still exists, produced the objects the world now calls the **Benin Bronzes**: mostly leaded brass, cast by the lost-wax process, including over 900 relief plaques (sixteenth to seventeenth centuries) that once sheathed the pillars of the Oba's palace, recording court ritual, warriors, Portuguese traders, and royal history. A 2023 lead-isotope study traced much of the metal to brass manilla rings produced in the German Rhineland for the Atlantic trade: the kingdom melted Europe's trade currency and cast its own history in it (Skowronek et al., 2023).
+
+**Contact, trade, and the honest ledger.** The Portuguese reached Benin in 1485, and the kingdom traded with Europeans for four centuries on its own terms: pepper, cloth, ivory, and enslaved captives. Honesty requires both halves of that sentence's ending. Benin restricted the export of male captives for a long stretch of the sixteenth century (a royal embargo documented in the Portuguese records; Ryder, 1969), and Benin also sold war captives into the Atlantic trade in later centuries. Section 5 takes this up in full; this course does not launder it.
+
+**1897.** In January 1897 a British party under acting consul-general James Phillips, heading for Benin City against explicit warnings to wait (the court was in its annual Igue rites), was ambushed and most of the party killed. The response was ready within weeks: in February 1897 a British naval force of about 1,200 men took Benin City in a "punitive expedition," shelling and burning the town and palace. The Oba, **Ovonramwen**, was deported to Calabar, where he died in 1914. And the palace was stripped: **thousands of objects** were carried off (commonly estimated at 3,000 to 5,000; no complete inventory was ever made), including the roughly 900 plaques found stacked in a palace storehouse. The Admiralty auctioned much of the loot to defray the expedition's costs; within months Benin's royal history hung in European museums, where **the British Museum's holdings (over 900 objects, by its own account) remain the largest single collection** (British Museum, n.d.; Smarthistory, n.d.). European critics marveled at casting that stood comparison with the Renaissance, and some reached for Portuguese tutors or wandering Egyptians to explain it: the same year's newspapers carried both the loot and the disbelief.
+
+**Where it stands now (dated, as this course's rules require).** Nigeria has sought returns for decades. As of this writing: Germany signed over ownership of its museums' Benin holdings in 2022 and physically returned the first group that December; the Smithsonian returned 29 objects in 2022; the Horniman Museum and several university museums followed; and in 2023 Nigeria's president declared the Oba of Benin the owner of returned works. The British Museum, whose trustees are barred from deaccessioning by the British Museum Act 1963, has returned none. The story is live; check the date on anything you read about it, including this.
+
+:::reveal Explain the sentence: 'the kingdom melted Europe's trade currency and cast its own history in it.' What is the evidence, and why does it cut against BOTH of Lesson 2's traps? ||| A 2023 lead-isotope study (Skowronek et al.) traced much of the Benin brasses' metal to manilla rings made in the German Rhineland as Atlantic trade currency. Against erasure: the casting, iconography, and guild were Benin's own, so 'Portuguese tutors' explanations fail; the imported input was raw metal, obtained through trade the kingdom controlled. Against romance: that trade, plainly, included selling captives, so the same evidence that proves Edo mastery also documents the kingdom's participation in the Atlantic economy, both halves taught, neither erased.
+
+## Sources
+- Ryder, A. F. C. (1969). *Benin and the Europeans, 1485-1897*. Longmans.
+- Skowronek, T. B., et al. (2023). German brass for Benin Bronzes: Geochemical analysis insights into the early Atlantic trade. *PLOS ONE, 18*(4), e0283415. https://doi.org/10.1371/journal.pone.0283415
+- British Museum. (n.d.). *The Benin Bronzes* [Contested objects statement]. https://www.britishmuseum.org/about-us/british-museum-story/contested-objects-collection/benin-bronzes
+- Smarthistory. (n.d.). *The Benin "Bronzes": A story of violence, theft, and artistry*. https://smarthistory.org/benin-bronzes-theft-artistry/
+- Blier, S. P. (2015). *Art and risk in ancient Yoruba: Ife history, power, and identity, c. 1300*. Cambridge University Press.
+- Hicks, D. (2020). *The brutish museums: The Benin Bronzes, colonial violence and cultural restitution*. Pluto Press.`,
+      recallContent: [
+        {
+          prompt: "Which kingdom made the Benin Bronzes, what are they materially, and what did the 2023 isotope study show?",
+          answer:
+            "The Edo Kingdom of Benin (present-day southern Nigeria; not the modern Republic of Benin). Mostly leaded brass, lost-wax cast, including 900+ palace plaques of the 16th-17th centuries. Skowronek et al. (2023) traced much of the metal to Rhineland-made manilla trade rings.",
+        },
+        {
+          prompt: "State the 1897 events and the course's hedged loot figures.",
+          answer:
+            "January 1897: the Phillips party, proceeding against warnings, was ambushed and killed. February 1897: a British punitive expedition (~1,200 men) took and burned Benin City; Oba Ovonramwen was exiled to Calabar. Thousands of objects were looted (commonly estimated 3,000-5,000; no complete inventory), including ~900 plaques from a storehouse; the British Museum holds the largest collection (900+ objects).",
+        },
+      ],
+    },
+    {
+      slug: "africa-ethiopia-lalibela-adwa",
+      title: "11 · Ethiopia: Lalibela to Adwa",
+      section: "Section 4 · Stone towns and bronze courts",
+      body: `Return to the highlands where Aksum stood. Ethiopia's medieval and modern record closes this section because it carries the argument into the colonial era itself, to the one battle that made European chancelleries treat an African state as a fact they could not unmake.
+
+**Lalibela.** After Aksum's decline, the **Zagwe** dynasty ruled from the eleventh-to-thirteenth centuries, and its monument is one of the astonishments of world architecture: at the town now called Lalibela, eleven churches were not built but **excavated**, carved top-down out of the living red volcanic rock, complete with windows, vaults, and drainage, connected by trenches and tunnels. Biete Giyorgis, the church of St. George, is a Greek cross sunk whole into the hillside. Tradition attributes the ensemble to King **Lalibela** (reigned around the late twelfth to early thirteenth century) as a "New Jerusalem" after Saladin's capture of Jerusalem in 1187; scholars generally see construction phases spread over a longer span, so the course gives the attribution as tradition with an archaeological hedge (Phillipson, 2009). The churches were on UNESCO's very first World Heritage list in **1978**, and they are not ruins: the liturgy has continued in them for some eight centuries.
+
+**The written tradition, honestly sorted.** The **Solomonic** dynasty that displaced the Zagwe in 1270 grounded its legitimacy in the *Kebra Nagast* (a fourteenth-century compilation), which tells how the Queen of Sheba bore Solomon a son, Menelik, who brought the **Ark of the Covenant** to Ethiopia, where the church of Our Lady Mary of Zion at Aksum holds it still, guarded by a single monk, seen by no one. This course states that exactly as what it is: a foundational **tradition** of the Ethiopian Orthodox Church, central to Ethiopian identity, and not a verified artifact; no scholar has examined the chapel's contents. In the same breath, the verifiable version of the deep written tradition: the **Garima Gospels**, illuminated Ge'ez manuscripts kept at the Abba Garima monastery, produced radiocarbon results (reported in the 2010s) placing them between roughly the fourth and seventh centuries, which would make them among the earliest illuminated Christian manuscripts surviving anywhere (Bausi, 2011; dates reported with laboratory ranges, and the course keeps the hedge).
+
+**Adwa, 1 March 1896.** In the 1880s-90s "Scramble," European powers partitioned essentially the entire continent by treaty among themselves. Italy claimed a protectorate over Ethiopia on the strength of the 1889 **Treaty of Wuchale**, whose Article 17 said, in the Italian text, that Ethiopia's foreign relations ran through Italy, and, in the Amharic text, merely that Ethiopia *could* use Italy's good offices. Emperor **Menelik II** repudiated the Italian reading, and when Italy pressed the claim with an army, Menelik and Empress **Taytu** met it at **Adwa** with a force reported around 100,000, many equipped with modern rifles Menelik had spent years importing. On 1 March 1896 the Italian army was destroyed as a fighting force, with thousands dead and thousands captured (Jonas, 2011). In the Treaty of Addis Ababa that October, **Italy recognized Ethiopia's full independence**. European powers proceeded to open embassies in Addis Ababa. This is why the standard sentence runs that only Ethiopia and Liberia among African states were never colonized during the Scramble.
+
+**And the honest asterisk on that sentence.** In 1935-36 Fascist Italy invaded again, with aircraft and, as documented at the time and since, poison gas; Addis Ababa fell in May 1936, and Italy occupied Ethiopia until 1941, committing massacres including the reprisal killings of February 1937. Haile Selassie's protest to the League of Nations (June 1936) became one of the century's famous speeches, and Ethiopian resistance never stopped; sovereignty was restored in 1941. Whether five years of brutal military occupation, never internationally consolidated and never accepted, counts as "colonization" is a definitional argument you should be able to see both sides of. The course's position is the precise one: **never colonized in the Scramble; invaded and occupied 1936-41; independent before, throughout as a matter of law and resistance, and after.** Say all of it, and the sentence survives scrutiny.
+
+:::reveal The Treaty of Wuchale (1889) had two texts. Explain how a translation discrepancy helped cause the Battle of Adwa, and what that episode teaches about reading sources. ||| Article 17 in Italian made Ethiopia conduct foreign relations THROUGH Italy (a protectorate); the Amharic text said Ethiopia COULD use Italy's good offices (an option). Menelik II repudiated the Italian reading; Italy enforced it with an army and was destroyed at Adwa on 1 March 1896, after which the October treaty recognized full Ethiopian independence. The lesson for source work: always ask which language version you are reading and who benefits from each rendering; a single modal verb's difference was worth a war.
+
+## Sources
+- Jonas, R. (2011). *The Battle of Adwa: African victory in the age of empire*. Harvard University Press.
+- Phillipson, D. W. (2009). *Ancient churches of Ethiopia: Fourth-fourteenth centuries*. Yale University Press.
+- Bausi, A. (2011). The "true story" of the Abba Garima Gospels. *Comparative Oriental Manuscript Studies Newsletter, 1*, 17-20.
+- Marcus, H. G. (1994). *A history of Ethiopia*. University of California Press.
+- UNESCO World Heritage Centre. (n.d.). *Rock-hewn churches, Lalibela* [Inscription record, 1978]. https://whc.unesco.org/en/list/18/`,
+      recallContent: [
+        {
+          prompt: "What happened at Adwa, and what made it diplomatically different from other African victories?",
+          answer:
+            "On 1 March 1896, Menelik II and Empress Taytu's army destroyed the invading Italian force. The Treaty of Addis Ababa (October 1896) made Italy recognize Ethiopia's full independence, and European powers opened embassies: a battlefield result converted into durable international standing.",
+        },
+        {
+          prompt: "State the course's precise formulation of 'Ethiopia was never colonized.'",
+          answer:
+            "Never colonized in the Scramble (Adwa 1896 secured recognized independence); invaded and brutally occupied by Fascist Italy 1936-41 (poison gas, the 1937 massacres), with sovereignty restored in 1941. The precise sentence survives scrutiny; the slogan without the asterisk does not.",
+        },
+      ],
+    },
+    {
+      slug: "africa-quiz-4",
+      title: "Section 4 quiz · Stone towns and bronze courts",
+      section: "Section 4 · Stone towns and bronze courts",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who built Great Zimbabwe, and when?",
+            options: [
+              "Ancestors of the Shona, c. 1100-1450 CE",
+              "Phoenician colonists, c. 900 BCE",
+              "The Queen of Sheba's court, c. 950 BCE",
+              "Portuguese traders, c. 1550 CE",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Settled by Randall-MacIver (1905) and conclusively by Caton-Thompson (1929/1931), later confirmed by radiocarbon. The alternatives are the documented denial theories.",
+            sourceLessonSlug: "africa-great-zimbabwe",
+          },
+          {
+            prompt: "What did the Rhodesian government do about Great Zimbabwe from 1970?",
+            options: [
+              "Censored official publications from stating the African origin as fact, and forced out the Inspector of Monuments who insisted on it",
+              "Funded the largest excavation in African history",
+              "Returned the soapstone birds to the Shona",
+              "Nothing; the site was ignored",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Peter Garlake, Inspector of Monuments from 1964, left the country under pressure in 1970; guidebooks presented a settled question as a 'mystery.' Documented in Pikirayi (2012).",
+            sourceLessonSlug: "africa-great-zimbabwe",
+          },
+          {
+            prompt: "Which finds at Great Zimbabwe prove its place in world trade?",
+            options: [
+              "Chinese celadon, Persian glazed ware, glass beads, and a Kilwa coin",
+              "Roman legionary equipment",
+              "Viking silver",
+              "Aztec obsidian",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A landlocked plateau city holding coastal coinage and Chinese ceramics: the gold-for-goods economy that ran through Sofala and Kilwa.",
+            sourceLessonSlug: "africa-great-zimbabwe",
+          },
+          {
+            prompt: "What is the Swahili language, linguistically?",
+            options: [
+              "A Bantu language of the coast's own Sabaki group, with Arabic loanwords",
+              "A dialect of Arabic",
+              "A Persian creole",
+              "A Portuguese trade pidgin",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The linguistic fact underpins the archaeological one: the stone towns grew from African villages (e.g., the Shanga excavations), cosmopolitan but not foreign.",
+            sourceLessonSlug: "africa-swahili-coast",
+          },
+          {
+            prompt: "What did Ibn Battuta call Kilwa in 1331?",
+            options: [
+              "One of the most beautiful and well-constructed towns in the world",
+              "A miserable village of fishermen",
+              "The capital of Prester John",
+              "A Portuguese fort",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In the Gibb translation of his travels. The praise carries weight because he could compare Kilwa firsthand with Cairo, Damascus, and Constantinople.",
+            sourceLessonSlug: "africa-swahili-coast",
+          },
+          {
+            prompt: "What powered the sailing rhythm of Indian Ocean trade?",
+            options: [
+              "The seasonal monsoon winds, out one part of the year and back the other",
+              "Steam power",
+              "Constant westerlies",
+              "River currents",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Northeast and southwest monsoons made the ocean a predictable highway connecting the Swahili coast with Arabia, India, and beyond.",
+            sourceLessonSlug: "africa-swahili-coast",
+          },
+          {
+            prompt: "What happened to Kilwa in 1505?",
+            options: [
+              "A Portuguese fleet sacked it, part of forcing the coast's trade into Portuguese control",
+              "Zheng He's fleet burned it",
+              "An earthquake destroyed it",
+              "It conquered Great Zimbabwe",
+            ],
+            correctIndex: 0,
+            explanation:
+              "After da Gama's 1498 arrival, Portuguese fleets returned to seize the trade by force; the stone towns survived, diminished.",
+            sourceLessonSlug: "africa-swahili-coast",
+          },
+          {
+            prompt: "The Kingdom of Benin (of the bronzes) is located in:",
+            options: [
+              "Present-day southern Nigeria (the Edo people; Benin City)",
+              "The modern Republic of Benin",
+              "Ghana",
+              "Ethiopia",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The neighboring republic renamed itself (from Dahomey) in 1975 after the Bight of Benin; the kingdom of the Obas is Edo, in Nigeria, and its dynasty continues today.",
+            sourceLessonSlug: "africa-benin-bronzes",
+          },
+          {
+            prompt: "What did Leo Frobenius claim in 1910 when he encountered the naturalistic heads of Ife?",
+            options: [
+              "That he had found art of the lost civilization of Atlantis",
+              "That the Yoruba were master portraitists",
+              "That the heads were modern forgeries",
+              "That the heads were Roman imports",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A textbook case of the erasure trap: faced with African mastery, invent a sunken continent rather than credit the Yoruba artists who made them.",
+            sourceLessonSlug: "africa-benin-bronzes",
+          },
+          {
+            prompt: "What are the Benin 'Bronzes,' materially and technically?",
+            options: [
+              "Mostly leaded brass, cast by the lost-wax process, much of the metal traced to European manilla trade rings (2023 isotope study)",
+              "Solid gold castings",
+              "Carved and painted wood",
+              "Bronze imported ready-made from Portugal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Skowronek et al. (2023) traced much of the metal to Rhineland-made manillas: Benin melted Europe's trade currency and cast its own court history in it.",
+            sourceLessonSlug: "africa-benin-bronzes",
+          },
+          {
+            prompt: "How does the course state the size of the 1897 Benin loot?",
+            options: [
+              "Thousands of objects, commonly estimated 3,000-5,000, with no complete inventory ever made",
+              "Exactly 5,000 objects, per the official inventory",
+              "A few dozen items",
+              "The number is known precisely from Admiralty records: 3,127",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The honest form is a range plus the reason for the range. The documented specifics: ~900 plaques found in a palace storehouse; the British Museum's own account puts its holdings above 900 objects.",
+            sourceLessonSlug: "africa-benin-bronzes",
+          },
+          {
+            prompt: "Why has the British Museum returned none of its Benin holdings, on its own stated account?",
+            options: [
+              "Its trustees are barred from deaccessioning by the British Museum Act 1963",
+              "Nigeria has never asked",
+              "The objects were proven not to come from Benin",
+              "It returned everything in 2022",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The statutory bar is the museum's stated position; meanwhile Germany transferred ownership of its holdings (2022) and the Smithsonian returned 29 objects (2022). The story is live and dated.",
+            sourceLessonSlug: "africa-benin-bronzes",
+          },
+          {
+            prompt: "What are the Lalibela churches?",
+            options: [
+              "Eleven churches carved top-down out of living volcanic rock (c. 12th-13th century tradition, with construction phases debated), still in liturgical use",
+              "Ruined stone towers built by the Portuguese",
+              "Cave churches painted but not carved",
+              "Nineteenth-century reconstructions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Excavated, not built; on UNESCO's first World Heritage list (1978). Tradition credits King Lalibela's 'New Jerusalem'; archaeology sees longer phasing, and the course keeps both labels straight.",
+            sourceLessonSlug: "africa-ethiopia-lalibela-adwa",
+          },
+          {
+            prompt: "How does this course present the Ark of the Covenant at Aksum?",
+            options: [
+              "As a foundational church tradition, central to Ethiopian identity, and not a verified artifact",
+              "As archaeologically confirmed",
+              "As a proven medieval forgery",
+              "It does not mention it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No scholar has examined the chapel's contents. The verifiable deep written tradition is carried instead by the radiocarbon-dated Garima Gospels (roughly 4th-7th century ranges).",
+            sourceLessonSlug: "africa-ethiopia-lalibela-adwa",
+          },
+          {
+            prompt: "What caused the Wuchale Treaty crisis that led to Adwa?",
+            options: [
+              "Article 17 differed between texts: the Italian version imposed a protectorate, the Amharic version offered an option",
+              "A dispute over gold mines",
+              "Ethiopia's refusal to pay an indemnity",
+              "A succession dispute in Italy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Menelik II repudiated the Italian reading; Italy pressed it with an army and lost decisively on 1 March 1896, then recognized Ethiopia's full independence that October.",
+            sourceLessonSlug: "africa-ethiopia-lalibela-adwa",
+          },
+          {
+            prompt: "What is the course's precise formulation about Ethiopia and colonization?",
+            options: [
+              "Never colonized in the Scramble; invaded and occupied by Italy 1936-41; sovereignty restored in 1941",
+              "Never touched by any European army",
+              "Colonized by Italy from 1889 to 1941",
+              "Colonized briefly by Britain in 1868",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The slogan needs the asterisk to survive scrutiny: Adwa (1896) secured recognized independence; the brutal 1936-41 occupation is stated plainly, and so is the restoration.",
+            sourceLessonSlug: "africa-ethiopia-lalibela-adwa",
+          },
+        ],
+      },
+    },
   ],
 };
