@@ -1189,5 +1189,400 @@ One warning label, because you live on the same internet as everyone else: engin
         ],
       },
     },
+
+    // ─────────────────────────── SECTION 4 · HISTORY ───────────────────────────
+    {
+      slug: "chess-origins",
+      title: "18 · Chaturanga to shatranj: chess's first thousand years",
+      section: "Section 4 · History: fifteen centuries in five lessons",
+      body: `The game on your board is roughly **fifteen hundred years old**, and its passport is stamped across three continents. The scholarly bedrock for this story is H. J. R. Murray's *A History of Chess* (1913) — nine hundred pages of sources that a century of later research has adjusted in places but never replaced — and this lesson tells only the parts of the story historians actually agree on.
+
+**India, around the sixth century CE: chaturanga.** The earliest ancestor historians accept emerged in northern India as **chaturanga** — Sanskrit for "four limbs," after the four divisions of a classical Indian army (Murray, 1913). Look at the lineup and you can still see the regiment badges on your own pieces:
+
+| Chaturanga division | Your piece |
+| --- | --- |
+| Infantry (foot soldiers) | Pawns |
+| Cavalry (horses) | Knights |
+| Elephants | Bishops |
+| Chariots | Rooks |
+
+Plus the king and his counselor. Played on the same 8×8 grid, by two players, with victory through the king. It is recognizably the same game — a sentence you can say about almost nothing else from the sixth century.
+
+**Persia: shatranj, and the words you still say.** The game traveled the trade routes west into Persia, where it became **shatranj** — and where it picked up its vocabulary. The king was the **shah**. A threatened king prompted the warning *shah!* — which Europe would eventually wear down into **"check."** A king with no escape was *shah mat* — commonly rendered "the king is helpless" or "the king is defeated" — which is standing on your scoresheet today as **"checkmate"** (Murray, 1913). You have been speaking Persian at the chessboard all along.
+
+**The Islamic world: chess's first golden age.** After the Arab conquest of Persia in the seventh century, shatranj spread throughout the Islamic world, and something remarkable happened: the first true chess *culture*. Court players earned titles and patronage; masters composed *mansubat* — endgame puzzles, ancestors of the ones you solved in Section 3 — and wrote analytical treatises centuries before Europe wrote its own (Murray, 1913). The idea that chess is something you can *study*, not just play, was invented here.
+
+**Into Europe by about 1000.** The game crossed into Europe along the width of the Mediterranean — through Islamic Spain, through Sicily and Italy, along trade routes — and by roughly the year 1000 it was established enough to appear in European wills, sermons, and moral tracts (Murray, 1913). Europe then did what every culture along the route had done: reskinned the army to match its own society. The shah's counselor (the *firz*) became a **queen**; the elephant — an animal most Europeans had never seen — became the **bishop**. But here's the detail that sets up the next lesson: those renamed pieces kept their old, feeble Persian *moves*. The medieval queen crept **one diagonal square at a time**. She was, for five hundred years, one of the weakest pieces on the board.
+
+:::reveal Your opponent announces "checkmate." Trace the word back through two languages — what did it originally mean, and about whom? ||| It comes through Persian: *shah mat* — the shah (king) is helpless/defeated. The warning *shah!* for a threatened king became "check." Every game you play ends in a sixth-to-seventh-century Persian sentence about a king who cannot be saved (Murray, 1913).
+
+## Sources
+- Murray, H. J. R. (1913). *A history of chess*. Clarendon Press.`,
+      recallContent: [
+        {
+          prompt: "Why do slow games and loss-review beat high volumes of blitz for improvement?",
+          answer:
+            "Slow games train the checks-captures-threats scan; reviewing losses (your own diagnosis BEFORE the engine's) maps your real blind spots. Blitz trains the first-idea reflex that causes blunders.",
+        },
+        {
+          prompt: "What are engines for in a training plan — and what are they never for?",
+          answer:
+            "For CHECKING your analysis after you've done it yourself. Never for replacing it — outsourced calculation builds nothing in the only hardware you may bring to the board (Art. 11.3.2).",
+        },
+      ],
+    },
+    {
+      slug: "chess-queens-revolution",
+      title: "19 · The queen's revolution: the modern game is born (c. 1475–1500)",
+      section: "Section 4 · History: fifteen centuries in five lessons",
+      body: `For its first nine centuries, chess was a *slow* game. The medieval European queen stepped one diagonal square at a time; the bishop's ancestor hopped exactly two squares diagonally. Armies took dozens of moves to make contact. Then, in the space of about twenty-five years at the end of the fifteenth century, Europe rebuilt the game into the fastest, most violent version it had ever had — and that version is the one you are learning.
+
+**What changed.** In late-fifteenth-century Spain and Italy — the earliest clear evidence is Valencian, from around 1475, including a poem (the *Scachs d'amor*) that plays out a game under the new rules — the queen acquired her modern powers: **rook plus bishop, the strongest piece on the board**, and the bishop acquired his full diagonals (Murray, 1913; Yalom, 2004). Contemporaries knew exactly how radical this was. In Italy the new game was called **scacchi alla rabiosa** — roughly, "madwoman's chess" (Murray, 1913). The pawn's two-square first move and, with it, the en passant rule you met in Lesson 4, belong to this same era of speed-up renovations — en passant exists *because* the pawns got faster.
+
+**Why then, and why a queen?** The historian Marilyn Yalom's *Birth of the Chess Queen* (2004) argues the timing is no coincidence: the piece exploded in power in the exact decades when **Isabella I of Castile** — a queen who commanded armies and co-ruled one of Europe's rising powers — dominated the Iberian political world where the new rules first appear. Cultural historians debate how direct the influence was; the correlation itself, and the Iberian origin, are well documented (Yalom, 2004). Chess has always reskinned itself to match the society playing it — that's how an elephant became a bishop — and late-medieval Europe evidently found a one-square-per-turn queen implausible.
+
+**Speed changed everything about how the game is studied.** In the old slow game, early moves barely interacted and openings hardly mattered. In the new game, the queen could deliver the Scholar's Mate you met in Lesson 5 **four moves in** — suddenly the opening was a minefield, and *knowing the map* was worth money. Right on cue, and right alongside the printing press, came the world's first printed chess analysis: **Luis Ramírez de Lucena's treatise of 1497**, cataloguing openings of the new game (Murray, 1913). And in **1561**, the Spanish priest **Ruy López de Segura** published the treatise that gave Lesson 12's opening its name (Murray, 1913). Opening theory — the thing modern grandmasters maintain like a second job — is a direct consequence of the queen's new legs plus movable type.
+
+**The result.** Within a generation or two, the old shatranj-style game was effectively extinct in Europe. Faster, sharper, more decisive — the "mad queen's game" out-competed its ancestor in the only tournament that matters: what people chose to play. Every rule you learned in Sections 1 and 2 descends from this renovation; FIDE's Laws of Chess are its maintenance manual.
+
+:::reveal The queen's new powers arrive c. 1475–1500 — and the first PRINTED opening analysis appears in 1497. Why do those two dates travel together? ||| Because the fast queen made the opening dangerous (a four-move mate now existed), so mapped knowledge of the early game suddenly had real value — and the printing press, brand new in Europe, could mass-produce exactly that knowledge. Lucena's 1497 treatise is the ancestor of every opening book, course, and database; opening theory is the mad queen's paperwork.
+
+## Sources
+- Murray, H. J. R. (1913). *A history of chess*. Clarendon Press.
+- Yalom, M. (2004). *Birth of the chess queen: A history*. HarperCollins.`,
+      recallContent: [
+        {
+          prompt: "What does 'chaturanga' mean, and how does the name survive on your board?",
+          answer:
+            "Sanskrit for 'four limbs' — the four divisions of a classical Indian army: infantry (pawns), cavalry (knights), elephants (bishops), chariots (rooks).",
+        },
+        {
+          prompt: "Where did chess's first true study culture — endgame puzzles and analytical treatises — develop?",
+          answer:
+            "In the Islamic world after shatranj spread from conquered Persia: masters composed mansubat (endgame problems) and wrote analysis centuries before Europe did.",
+        },
+      ],
+    },
+    {
+      slug: "chess-championship-century",
+      title: "20 · Steinitz 1886: chess gets a world champion (and the Soviets get a dynasty)",
+      section: "Section 4 · History: fifteen centuries in five lessons",
+      body: `For most of the nineteenth century, "world's best chess player" was a reputation, not a title — argued in coffeehouses, tested in occasional matches, never formalized. London hosted the first great international tournament in 1851; the American prodigy Paul Morphy toured Europe in 1858 and beat everyone worth beating, then quit the game — still with no official crown to show for it (Murray, 1913). The crown had to be invented, and it took a business negotiation to do it.
+
+**1886: the first official World Chess Championship.** **Wilhelm Steinitz** and **Johannes Zukertort**, the era's two dominant players, signed an agreement to play a match explicitly *"for the Championship of the World"* — the first time the title was formally at stake. They played across three American cities — New York, St. Louis, and New Orleans — first to ten wins. **Steinitz won 10–5** and became the first official world chess champion (ChessBase, n.d.). He mattered twice over: beyond the title, Steinitz was the first great *theorist* of positional chess — the idea that positions have permanent features (pawn structure, weak squares, the bishop pair) that accumulate into wins, rather than chess being a sequence of raids. Section 3's "strategy" is his intellectual estate.
+
+**The private-property era.** Here's the structural oddity: for its first sixty years, the world title was the champion's **personal property**. The champion chose challengers, set financial terms, and could simply price an opponent out. No federation ran it — remember from Lesson 7 that FIDE wasn't even founded until 1924 — and the arrangement only ended when the reigning champion, Alexander Alekhine, died in 1946 *holding* the title. Into the vacuum stepped FIDE, which organized a championship tournament at **The Hague and Moscow in 1948**; **Mikhail Botvinnik** won it, and the title has run through federation cycles ever since (FIDE Museum, n.d.). Meanwhile the women's crown was ahead of schedule: FIDE's **first Women's World Championship was held in London in 1927**, won by **Vera Menchik** — who then defended it until her death in 1944 and regularly played (and beat) the leading men, decades before that was considered thinkable (FIDE Museum, n.d.).
+
+**The Soviet dynasty — and the night it broke.** From Botvinnik in 1948 onward, the title lived in the Soviet Union, which had made chess a funded state project: schools, trainers, salaries, a production line of champions. For **twenty-four years**, every world champion was Soviet. Then came **Reykjavik, 1972**: the American **Bobby Fischer** — brilliant, difficult, and playing essentially alone against that entire system — beat defending champion **Boris Spassky 12½–8½** in the "Match of the Century," a Cold War proxy event that put chess on front pages worldwide (ChessBase, 2022). The interruption was brief (Fischer never defended; Anatoly Karpov took the title in 1975), but chess's place in popular culture was never the same.
+
+**1985: the youngest champion.** In Moscow, on 9 November 1985, the 22-year-old **Garry Kasparov** beat Karpov **13–11** to become the youngest world champion in history (ChessBase, 2020) — a record that stood until 2024. Kasparov would dominate for two decades, and Section 4's next lesson is about the opponent who finally beat him: it had no pulse.
+
+:::reveal Before 1948, how did the world championship actually change hands — and what does 1886 mark? ||| By private negotiation: from Steinitz–Zukertort in 1886 (the first match formally played 'for the Championship of the World' — Steinitz won 10–5) until Alekhine's death in 1946, the title was the champion's personal property; champions picked challengers and set the price. Only in 1948 did FIDE take over, running the Hague–Moscow tournament that made Botvinnik champion and putting the title into the federation cycles used ever since.
+
+## Sources
+- ChessBase. (n.d.). *Johannes Zukertort and the first World Chess Championship match*. https://en.chessbase.com/post/johannes-zukertort-and-the-first-world-chess-championship-match
+- ChessBase. (2020). *35 years ago: Kasparov becomes youngest world champion in the history of chess*. https://en.chessbase.com/post/35-years-ago-kasparov-becomes-youngest-world-champion-in-the-history-of-chess
+- ChessBase. (2022). *Fischer vs Spassky – 50 years ago*. https://en.chessbase.com/post/fischer-vs-spassky-50-years-ago
+- FIDE Museum. (n.d.). *The history of FIDE*. https://museum.fide.com/fide-history
+- Murray, H. J. R. (1913). *A history of chess*. Clarendon Press.`,
+      recallContent: [
+        {
+          prompt: "Name the queen's two transformations at the end of the fifteenth century, and the game's new Italian nickname.",
+          answer:
+            "She went from one diagonal step to rook-plus-bishop power (the bishop got full diagonals too), and contemporaries called the new game scacchi alla rabiosa — the mad queen's chess.",
+        },
+        {
+          prompt: "What is Lucena's 1497 treatise the ancestor of?",
+          answer:
+            "All printed opening theory — the first printed chess analysis, arriving right when the fast new queen made mapped openings valuable and the printing press made them distributable.",
+        },
+      ],
+    },
+    {
+      slug: "chess-man-vs-machine",
+      title: "21 · Man versus machine: Deep Blue, the engines, and AlphaZero",
+      section: "Section 4 · History: fifteen centuries in five lessons",
+      body: `Chess was computing's chosen proving ground almost from the beginning — Claude Shannon, the founder of information theory, published the first serious paper on programming chess in 1950, before general-purpose computers could meaningfully play at all (Shannon, 1950). The reasoning: chess was believed to require *intelligence*, so a machine that played it well would teach us something about thinking. Half a century later, the experiment produced an answer nobody fully expected.
+
+**1996, Philadelphia: the champion holds.** IBM's **Deep Blue**, a purpose-built supercomputer, sat across (via a human operator) from world champion **Garry Kasparov** in a six-game match under standard tournament conditions. Deep Blue **won the first game** — the first time a computer had ever beaten a reigning world champion in a classical game under tournament conditions — and the result circled the globe. But Kasparov adapted, found the machine's blind spots, and **won the match 4–2** (Chess.com, n.d.). Humanity's flag still flew. For fourteen months.
+
+**1997, New York: the rematch.** IBM upgraded the machine and brought Kasparov back. Get the two results straight, because the internet loves to smear them into one: **Kasparov won in 1996; Deep Blue won the 1997 rematch**, 3½–2½, taking the decisive sixth game on **11 May 1997** — the first defeat of a reigning world champion by a computer in a match (Chess.com, n.d.; History.com, n.d.). The headlines said humanity lost. What actually happened was narrower and stranger: a team of engineers, using massive brute-force search plus grandmaster-tuned evaluation, had built a machine that was better at *this one thing* than the best human alive. It wrote no poems about it.
+
+**The quiet aftermath is the real story.** Deep Blue was dismantled, but Moore's law kept going. Within a decade, engines running on ordinary consumer computers were beyond the best humans, and the fight simply... ended. Chess didn't die — it *reorganized around the machines*. Engines became the universal training partner and analysis tool (with the discipline flag Lesson 16 planted: they check your thinking; they must not replace it), preparation went digital, and over-the-board integrity became an anti-device problem — the reason Article 11.3.2's electronics ban exists (FIDE, 2023) and the reason fair play is now a profession (Section 6).
+
+**2017: the machines stopped needing us.** Deep Blue and its descendants played from human knowledge — handcrafted evaluation rules, libraries of human openings. In December 2017, DeepMind's **AlphaZero** discarded all of it: given only the rules of chess, it trained **entirely by playing against itself**, then beat **Stockfish** — the strongest traditional engine of the day — in a 100-game match: **28 wins, 72 draws, zero losses** (Chess.com, 2017), a result peer-reviewed and published in *Science* the following year (Silver et al., 2018). And it won *strangely*: long-term piece sacrifices, prowling rook-pawn pushes — less like a calculator, more like a very patient alien. Today's top engines (Stockfish included) have absorbed the neural-network approach, and human professionals study the machines' games for ideas — the exact reverse of 1997's arrangement.
+
+Fifteen hundred years after chaturanga, the strongest chess entities on Earth taught themselves. The humans, undeterred, kept playing each other — in bigger numbers than ever, as the next lesson shows.
+
+:::reveal A video essay says "Deep Blue beat Kasparov in 1996." What's the precise correction, with dates? ||| Deep Blue won *Game 1* in Philadelphia in 1996 — the first classical, tournament-condition win by a computer over a reigning champion — but KASPAROV WON that match 4–2. The MACHINE won the 1997 New York rematch 3½–2½, clinched in Game 6 on 11 May 1997. Two matches, split; the garbled one-match version erases the year humanity held the line.
+
+## Sources
+- Chess.com. (n.d.). *Kasparov vs. Deep Blue | The match that changed history*. https://www.chess.com/article/view/deep-blue-kasparov-chess
+- Chess.com. (2017). *Google's AlphaZero destroys Stockfish in 100-game match*. https://www.chess.com/news/view/google-s-alphazero-destroys-stockfish-in-100-game-match
+- Fédération Internationale des Échecs. (2023). *FIDE laws of chess taking effect from 1 January 2023* (FIDE Handbook E.01). https://handbook.fide.com/chapter/E012023
+- History.com. (n.d.). *Deep Blue defeats Garry Kasparov in chess match (May 11, 1997)*. https://www.history.com/this-day-in-history/may-11/deep-blue-defeats-garry-kasparov-in-chess-match
+- Shannon, C. E. (1950). Programming a computer for playing chess. *Philosophical Magazine*, *41*(314), 256–275.
+- Silver, D., Hubert, T., Schrittwieser, J., Antonoglou, I., Lai, M., Guez, A., Lanctot, M., Sifre, L., Kumaran, D., Graepel, T., Lillicrap, T., Simonyan, K., & Hassabis, D. (2018). A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play. *Science*, *362*(6419), 1140–1144.`,
+      recallContent: [
+        {
+          prompt: "1886, 1948, 1972, 1985 — attach the event to each year.",
+          answer:
+            "1886: Steinitz beats Zukertort 10–5 in the first official world championship. 1948: FIDE takes over the title (Hague–Moscow, Botvinnik). 1972: Fischer beats Spassky 12½–8½ in Reykjavik, breaking 24 years of Soviet reign. 1985: Kasparov, 22, beats Karpov 13–11 — youngest champion (until 2024).",
+        },
+        {
+          prompt: "Who was Vera Menchik?",
+          answer:
+            "Winner of the first Women's World Championship (London, 1927), which she held until her death in 1944 — and a regular competitor against the leading men, decades ahead of her time.",
+        },
+      ],
+    },
+    {
+      slug: "chess-online-boom",
+      title: "22 · The boom: how a pandemic and a TV show made chess bigger than ever",
+      section: "Section 4 · History: fifteen centuries in five lessons",
+      body: `The strangest chapter in chess history is the most recent one: five centuries after the mad queen and two decades after the machines won, the ancient game became — of all things — a growth industry. It took three ingredients, stacked in one year.
+
+**Ingredient one: the game had already moved online.** By 2020, playing chess meant tapping a phone: instant opponents at any strength, any speed, free analysis afterward. The infrastructure for a boom was sitting there, warmed up, waiting for a reason.
+
+**Ingredient two: everyone was suddenly home.** The COVID-19 lockdowns of 2020 pushed the planet toward indoor, online, low-cost pastimes, and chess fit the moment perfectly. Twitch streamers — chess professionals and entertainment personalities alike — turned live games into spectator content, and online amateur showcase events made "watching other people learn chess" a genre of its own.
+
+**Ingredient three: on 23 October 2020, Netflix released *The Queen's Gambit*.** A fictional drama about an orphaned girl who fights her way to the top of 1960s world chess, it became — by Netflix's own announcement — its **most-watched scripted limited series to date: 62 million households in the first 28 days** (Netflix, 2020). What happened next is the best-documented demand shock in the game's history, and the numbers below are Netflix's published ones, not folklore (Netflix, 2020):
+
+- **New players on Chess.com increased fivefold.**
+- Google searches for chess **doubled**; **"how to play chess" hit a nine-year peak**.
+- eBay inquiries for chess sets rose **250%**.
+- Walter Tevis's original 1983 novel entered the *New York Times* bestseller list — **37 years after publication**.
+- FIDE reported significantly higher interest in the upcoming World Championship.
+
+Contemporary reporting filled in the scale: Bloomberg's end-of-2020 analysis chronicled surging chess set sales and millions of new sign-ups on the major platforms in the weeks after release (Bloomberg, 2020).
+
+**Why this boom stuck.** Chess had been "popular" before — 1972 made front pages too. But 1972's fans had nowhere to *play*: you watched Fischer, then maybe found a club, eventually. 2020's viewers finished an episode and were playing rated games on a phone within minutes, watching streamers explain their own games by night, and joining online tournaments by the weekend. The funnel from *curious* to *playing* had collapsed from weeks to minutes, and retention followed. The post-2020 chess world — massive online platforms, chess as watchable entertainment, scholastic waves, celebrity amateur events — is the ecosystem Sections 5 and 6 map, because it's the one you'd actually be playing, and possibly working, in.
+
+One caution the sourcing habit demands: you will meet grander claims online — "chess grew by X hundred million players" — with no year, no source, no definition of "player." You now know what a real figure looks like: it has an owner, a date, and a denominator. Netflix's 62 million households counted a specific thing over a specific 28 days. Hold every chess statistic — every statistic — to that standard.
+
+:::reveal What made the 2020 boom durable when the bigger-headline 1972 Fischer boom faded? ||| The funnel. In 1972 a new fan had no immediate way to play; by 2020 the distance from 'curious' to 'rated game on your phone' was minutes, with streamers and online events to keep you. Same spark, but 2020's spark landed on ready infrastructure — which is why the audience stayed and became the amateur economy Section 6 explores.
+
+## Sources
+- Bloomberg. (2020). *Netflix's 'The Queen's Gambit' drives major boom in chess sales, games*. https://www.bloomberg.com/graphics/2020-chess-boom/
+- Netflix. (2020, November 23). *From 'The Queen's Gambit' to a record-setting checkmate*. https://about.netflix.com/en/news/the-queens-gambit-netflix-most-watched-scripted-limited-series`,
+      recallContent: [
+        {
+          prompt: "Get the Deep Blue story exactly right: who won what, when?",
+          answer:
+            "1996, Philadelphia: Deep Blue won Game 1 but KASPAROV won the match 4–2. 1997, New York: DEEP BLUE won the rematch 3½–2½, clinching Game 6 on 11 May 1997 — the first match defeat of a reigning champion by a computer.",
+        },
+        {
+          prompt: "What made AlphaZero's 2017 result different in kind from Deep Blue's?",
+          answer:
+            "AlphaZero learned chess purely from self-play — no human openings, no handcrafted evaluation — and beat Stockfish +28 =72 −0 over 100 games (peer-reviewed in Science, 2018). Deep Blue ran on human knowledge plus brute force.",
+        },
+      ],
+    },
+    {
+      slug: "chess-quiz-history",
+      title: "23 · Quiz: fifteen centuries of chess",
+      section: "Section 4 · History: fifteen centuries in five lessons",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Where and roughly when did chess's earliest accepted ancestor emerge, and what was it called?",
+            options: [
+              "Northern India, around the sixth century CE — chaturanga",
+              "Ancient Egypt, around 2000 BCE — senet",
+              "China, around the tenth century — xiangqi",
+              "Persia, around 300 BCE — shatranj",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Chaturanga ('four limbs' — the four army divisions) appears in sixth-century India; it became shatranj after traveling to Persia (Murray, 1913).",
+            sourceLessonSlug: "chess-origins",
+          },
+          {
+            prompt: "What does 'checkmate' literally descend from?",
+            options: [
+              "Persian 'shah mat' — the king is helpless/defeated",
+              "Latin 'checcus mattus' — the board is full",
+              "French 'échec du maître' — the master's blow",
+              "Sanskrit 'chatur mat' — four defeats",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The shah (king) gave chess its check vocabulary: 'shah!' for a threatened king became 'check,' and 'shah mat' became 'checkmate.'",
+            sourceLessonSlug: "chess-origins",
+          },
+          {
+            prompt: "Which culture produced chess's first study tradition — endgame problems and written analysis?",
+            options: [
+              "The Islamic world, in the centuries after shatranj arrived from Persia",
+              "Victorian England",
+              "Renaissance Italy",
+              "The Soviet Union",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Masters of the Islamic golden age composed mansubat (endgame puzzles) and analytical treatises centuries before Europe — inventing the idea that chess can be studied.",
+            sourceLessonSlug: "chess-origins",
+          },
+          {
+            prompt: "Before the late fifteenth century, how did the queen move?",
+            options: [
+              "One square diagonally — one of the weakest pieces on the board",
+              "Exactly as she does today",
+              "Like a knight",
+              "She didn't exist in any form",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The medieval queen (from the Persian counselor, the firz) crept one diagonal square at a time for five hundred years — until the c. 1475–1500 revolution gave her rook-plus-bishop power.",
+            sourceLessonSlug: "chess-queens-revolution",
+          },
+          {
+            prompt: "What was 'scacchi alla rabiosa'?",
+            options: [
+              "Italy's name for the new fast game — the 'mad queen's chess' of the late 1400s",
+              "A banned gambling variant",
+              "The first chess clock",
+              "A medieval chess poem",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Contemporaries knew the queen's new powers were radical and named the game for it. The modern rules you're learning are that renovation, maintained.",
+            sourceLessonSlug: "chess-queens-revolution",
+          },
+          {
+            prompt: "Why did opening theory arise almost simultaneously with the queen's new powers?",
+            options: [
+              "The fast queen made early moves dangerous (four-move mates existed), and the new printing press could distribute the analysis — Lucena's treatise came in 1497",
+              "FIDE mandated the study of openings",
+              "Kings began castling, which required memorization",
+              "Coffeehouses demanded faster games",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Speed made the opening a minefield worth mapping; movable type made maps distributable. Printed opening theory (Lucena 1497, Ruy López 1561) is a direct consequence.",
+            sourceLessonSlug: "chess-queens-revolution",
+          },
+          {
+            prompt: "What happened in 1886?",
+            options: [
+              "Steinitz beat Zukertort in the first official World Chess Championship match",
+              "FIDE was founded",
+              "The first chess Olympiad was held",
+              "Morphy toured Europe",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Played across New York, St. Louis, and New Orleans, first to ten wins; Steinitz won 10–5 in the first match formally contested 'for the Championship of the World.'",
+            sourceLessonSlug: "chess-championship-century",
+          },
+          {
+            prompt: "How did the world title operate between 1886 and 1946?",
+            options: [
+              "As the champion's personal property — champions chose challengers and set terms, until Alekhine died holding the title",
+              "FIDE ran qualification cycles from the start",
+              "It rotated among national federations annually",
+              "It was decided by tournament every year",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No federation ran it; a champion could price out a challenger. Only after Alekhine's death did FIDE organize the 1948 Hague–Moscow event Botvinnik won, starting the federation era.",
+            sourceLessonSlug: "chess-championship-century",
+          },
+          {
+            prompt: "Who was Vera Menchik?",
+            options: [
+              "Winner of the first Women's World Championship (London, 1927), who held the title until her death and competed against the leading men",
+              "The first female FIDE president",
+              "The fictional heroine of The Queen's Gambit",
+              "The first woman to earn the GM title in 1978",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Menchik won the inaugural 1927 Women's World Championship and defended it until 1944, playing top men's events decades before that was considered thinkable.",
+            sourceLessonSlug: "chess-championship-century",
+          },
+          {
+            prompt: "What made Reykjavik 1972 'the Match of the Century'?",
+            options: [
+              "American Bobby Fischer beat Soviet champion Boris Spassky 12½–8½, breaking 24 years of Soviet possession of the title at the height of the Cold War",
+              "It was the first televised chess match",
+              "It ended in a tie broken by blitz",
+              "Fischer was the youngest champion in history",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One American against the funded Soviet chess machine, with Cold War symbolism no one could miss. Fischer never defended; Karpov took the title in 1975 — but chess's pop-culture standing was transformed.",
+            sourceLessonSlug: "chess-championship-century",
+          },
+          {
+            prompt: "Which is the CORRECT account of the Kasparov–Deep Blue matches?",
+            options: [
+              "Kasparov won the 1996 Philadelphia match 4–2; Deep Blue won the 1997 New York rematch 3½–2½ on 11 May 1997",
+              "Deep Blue swept both matches",
+              "Kasparov won both; a later machine beat him in 2003",
+              "Deep Blue won in 1996; Kasparov took revenge in 1997",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two matches, split. Deep Blue's Game-1 win in 1996 was the first classical win by a computer over a reigning champion, but Kasparov took that match; the machine won the rematch a year later.",
+            sourceLessonSlug: "chess-man-vs-machine",
+          },
+          {
+            prompt: "Why was the 1997 rematch a genuine historical milestone?",
+            options: [
+              "It was the first defeat of a reigning world champion by a computer in a match under standard conditions",
+              "It proved machines understood chess like humans",
+              "It was the first time a computer won a single game against a champion",
+              "It ended competitive human chess",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The single-game first had already happened (Game 1, 1996). 1997 was the first MATCH defeat — after which engines soon exceeded all humans, and chess reorganized around them rather than dying.",
+            sourceLessonSlug: "chess-man-vs-machine",
+          },
+          {
+            prompt: "What separated AlphaZero (2017) from Deep Blue and the traditional engines?",
+            options: [
+              "It learned entirely from self-play, given only the rules — no human openings or handcrafted evaluation — and beat Stockfish +28 =72 −0 over 100 games",
+              "It was the first computer to beat a world champion",
+              "It searched more positions per second than any machine ever",
+              "It was built by IBM",
+            ],
+            correctIndex: 0,
+            explanation:
+              "DeepMind's December 2017 result (peer-reviewed in Science, 2018) showed a machine discovering chess knowledge from scratch — and today's engines absorbed its neural-network approach.",
+            sourceLessonSlug: "chess-man-vs-machine",
+          },
+          {
+            prompt: "By Netflix's own announcement, what did The Queen's Gambit do in its first 28 days (from 23 October 2020)?",
+            options: [
+              "62 million households watched — its most-watched scripted limited series to date",
+              "10 million households watched",
+              "It won the World Championship broadcast rights",
+              "200 million households watched",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Netflix (Nov. 23, 2020) published the figure — along with a fivefold increase in new Chess.com players, doubled chess searches, +250% eBay chess-set inquiries, and the 1983 novel hitting the NYT bestseller list 37 years late.",
+            sourceLessonSlug: "chess-online-boom",
+          },
+          {
+            prompt: "Why did the 2020 boom retain players when the 1972 Fischer boom faded?",
+            options: [
+              "The funnel had collapsed: a curious viewer could be playing rated games on a phone in minutes, with streamers and online events for retention",
+              "The Queen's Gambit ran for more seasons",
+              "FIDE lowered membership fees worldwide",
+              "Chess became an Olympic sport in 2021",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1972's fans had nowhere immediate to play; 2020's landed on ready infrastructure. Same spark, different kindling — and the resulting ecosystem is the one Sections 5 and 6 map.",
+            sourceLessonSlug: "chess-online-boom",
+          },
+        ],
+      },
+    },
   ],
 };
