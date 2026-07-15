@@ -1324,5 +1324,285 @@ One deliberate correction before the quiz: these three states were succession IN
         ],
       },
     },
+
+    // ────────────── SECTION 5 · THE HONEST RECORD ──────────────
+    {
+      slug: "africa-slavery-within",
+      title: "12 · Slavery within Africa, and across the Sahara",
+      section: "Section 5 · The honest record",
+      body: `Why does a course built to refute anti-African myth spend a whole section on African slavery? Because the course's method is one standard, applied everywhere: cited evidence, including where it is uncomfortable. A version of this history with the slaving removed would be the romance trap of Lesson 2, it would collapse at first contact with the sources (which discuss slavery constantly), and it would hand deniers the easiest possible rebuttal. So: plainly, and with names, places, and periods, as always.
+
+**Slavery existed within many African societies, long before and entirely apart from Europeans.** The forms varied enormously, which is why the anti-flattening rule matters here more than anywhere. In much of West and Central Africa, where land was abundant and labor scarce, wealth and power were measured in people ("wealth in people," in the historians' shorthand), and enslaved people were acquired as war captives, through judicial condemnation, kidnapping, or debt (Thornton, 1998; Lovejoy, 2012). Some forms were absorptive: household and lineage slavery in which the enslaved or their children could marry in and their descendants merge into the community. Some were nothing of the kind: state and plantation slavery could be, and in places was, brutal and hereditary; the nineteenth-century Sokoto Caliphate (in present-day northern Nigeria) ran large slave-worked estates, and royal slaves staffed armies and administrations in several states precisely because they were property without rival lineages (Lovejoy, 2012). The honest summary is that "African slavery" was not one thing, that some of its forms differed deeply from New World chattel slavery, and that the difference is not a comfort to be leaned on: enslaved is enslaved, and the sources record flight, resistance, and grief here as everywhere humans were owned.
+
+**The trans-Saharan, Red Sea, and Indian Ocean trades** carried enslaved Africans northward and eastward for roughly twelve centuries, from at least the eighth century into the late nineteenth (in places the twentieth). The caravans of Lesson 5 that brought salt south took people north, alongside the gold: to North Africa, Egypt, Arabia, the Gulf, and beyond, where demand ran to domestic service, concubinage, soldiers, and eunuchs. How many? Here the course is strict about what numbers are. The surviving evidence (scattered customs figures, travelers' counts, market records) is thin, so all totals are modern reconstructions: the most-cited attempt, Austen's "tentative census" (1979, his own word), put the trans-Saharan trade in the several millions across the whole period, and estimates for all the eastern routes combined commonly run higher. Treat every such figure as an order-of-magnitude reconstruction with wide error bars, not a count (Austen, 1979; Wright, 2007). What the sources support qualitatively without dispute: the trade was large, sustained for centuries, deadly in the crossing, and normal to the societies at both ends of the routes.
+
+**Hold the structural point for Lesson 13.** Enslavement of outsiders was an old, established institution across much of the continent (as it was, in the same centuries, across much of Europe and Asia). When Atlantic buyers arrived in the fifteenth and sixteenth centuries, they did not introduce slavery to African societies; they plugged an existing supply system into a new, insatiable, and different kind of demand, and the scale and character of what followed is the next lesson. Both halves of that sentence are load-bearing, and the course will not let either one carry the whole weight.
+
+One more honesty checkpoint, because a course that only criticizes the long-dead is dodging: slavery within Africa outlasted the Atlantic trade's abolition, and the European colonial powers that advertised abolition as a justification for conquest then tolerated internal slavery in their territories for decades where suppressing it was inconvenient (Lovejoy, 2012). The record embarrasses everyone. That is a mark of its being the record.
+
+:::reveal Why does this course insist on teaching African slavery and the Saharan trades in a course refuting 'Africa has no history'? ||| One standard, applied everywhere, is the course's whole claim to credibility: the sources discuss slavery constantly, so a sanitized version would be the romance trap, would collapse against the evidence, and would hand deniers the easiest rebuttal. The record is taught with the same discipline as the rest: named societies and periods (e.g., Sokoto's estates, the twelve-century Saharan routes), forms distinguished rather than flattened, and all aggregate numbers labeled as reconstructions with wide error bars.
+
+## Sources
+- Lovejoy, P. E. (2012). *Transformations in slavery: A history of slavery in Africa* (3rd ed.). Cambridge University Press.
+- Thornton, J. K. (1998). *Africa and Africans in the making of the Atlantic world, 1400-1800* (2nd ed.). Cambridge University Press.
+- Austen, R. A. (1979). The trans-Saharan slave trade: A tentative census. In H. A. Gemery & J. S. Hogendorn (Eds.), *The uncommon market: Essays in the economic history of the Atlantic slave trade* (pp. 23-76). Academic Press.
+- Wright, J. (2007). *The trans-Saharan slave trade*. Routledge.`,
+      recallContent: [
+        {
+          prompt: "Give two documented, NAMED examples showing that 'African slavery' was not one thing.",
+          answer:
+            "Absorptive household/lineage slavery in parts of West and Central Africa, where descendants could merge into the community ('wealth in people'), versus the nineteenth-century Sokoto Caliphate's large slave-worked estates and hereditary state slavery. Same continent, radically different institutions; neither to be romanticized.",
+        },
+        {
+          prompt: "How does the course present numbers for the trans-Saharan trade?",
+          answer:
+            "As modern reconstructions from thin evidence, not counts: Austen's 1979 'tentative census' (his own word) put it in the several millions over roughly twelve centuries, and all such figures carry wide error bars. Qualitatively undisputed: large, sustained, deadly in the crossing.",
+        },
+      ],
+    },
+    {
+      slug: "africa-atlantic-trade",
+      title: "13 · The Atlantic trade: scale, participation, and the bad-faith gotcha",
+      section: "Section 5 · The honest record",
+      body: `Now the hardest lesson in the course, taught with its best-documented database.
+
+**The scale.** The Trans-Atlantic Slave Trade Database (SlaveVoyages), the standard scholarly reconstruction built from surviving voyage records, documents that from 1501 to 1866 about **12.5 million** enslaved Africans were embarked on Atlantic slave ships, of whom about **10.7 million** survived to be landed in the Americas; the difference, nearly two million people, died at sea (SlaveVoyages, n.d.). Unlike the Saharan figures of Lesson 12, these rest on tens of thousands of individual voyage records; they are estimates, but tight ones.
+
+**The participation, stated plainly.** For most of those four centuries, Europeans did not march inland and seize captives themselves. They could not: disease (malaria and yellow fever killed Europeans inland at catastrophic rates) and African military strength confined them mostly to ships and coastal forts held on African sufferance, often paying rent and customs to African rulers (Thornton, 1998). The captives were overwhelmingly supplied by African states and merchants: prisoners from wars between African polities, victims of raids, people condemned or sold under judicial and debt mechanisms. Name the participants, as the rule requires, each in its period: the kingdom of **Kongo** was entangled in the trade from the early sixteenth century; **Dahomey** (in present-day Benin Republic) and **Asante** (in present-day Ghana) rose in the seventeenth-eighteenth centuries as major suppliers whose royal revenues ran substantially on captives; **Oyo** (in present-day Nigeria) channeled captives to the coast in the eighteenth. Rulers and merchant classes in these states profited enormously; the people caught in the system did not. Whether European demand *created* the wars that fed it, or paid a bounty on wars that would have happened anyway, is a real scholarly debate (the "gun-slave cycle"); that African elites were active, negotiating, price-setting participants is not (Thornton, 1998; Lovejoy, 2012; Green, 2019).
+
+**Now the gotcha, because you will meet it.** "Africans sold their own people, so European guilt is misplaced." Notice what the sentence smuggles in: the word "own." No one in the sixteenth century was "African" to themselves; the identity is a later construction (largely built, in fact, in the diaspora the trade created). An Asante army selling captives from a defeated neighboring state was not selling "its own people" by any definition it recognized, any more than fifteenth-century Venetians and Genoese selling Slavic and Circassian captives into Mediterranean slavery (a documented trade twice as old as the Atlantic one) were betraying "their own." The gotcha applies a pan-African identity backward to Africans while never applying pan-European identity backward to Europeans: that asymmetry is the tell that it is rhetoric, not history (Northrup, 2002; Thornton, 1998). The honest statement needs no gotcha and no absolution in either direction: African elites sold captives; European and American buyers built the racialized, hereditary, industrial-scale plantation system those captives were sold into; both facts are documented; neither cancels the other.
+
+**And the dissent, because it is also documented.** In 1526, **Afonso I**, the Christian king of Kongo, wrote to King João III of Portugal protesting that Portuguese merchants and their local agents were kidnapping and buying away his freeborn subjects, "even nobles and members of our own family," depopulating his country; he demanded controls and set up inspection commissions to examine whether the enslaved had been taken lawfully (the letters survive in the Portuguese archives; Thornton, 1998; Green, 2019). Read carefully, Afonso was objecting to *unlawful* enslavement of his subjects rather than to slavery as such, and the course will not dress him as a modern abolitionist; but his letters prove that the trade's African critics are as old as the trade, and that its costs were visible from inside in real time. Benin's sixteenth-century embargo on exporting male captives (Lesson 10) belongs in the same file.
+
+**Consequences,** flagged at the course's honesty standard: the long-run damage of the trades to African societies (demographic loss, militarization, corrosion of institutions) is the subject of a large and genuinely contested literature, from demographic modeling to econometrics linking historical slave exports to lasting harms; the direction of the findings is broadly negative, the magnitudes are debated, and this course reports that state of play rather than picking a number (Lovejoy, 2012; Nunn, 2008).
+
+:::reveal What is wrong, as history, with the sentence 'Africans sold their own people'? ||| The word 'own' smuggles in a pan-African identity that did not exist for anyone in the era: an Asante army selling captives from a defeated neighboring polity was not selling 'its own' by any definition it recognized, exactly as Venetians selling Circassian captives were not selling 'their own Europeans.' The gotcha applies a collective identity backward to one continent only, which marks it as rhetoric. The honest, documented statement needs no gotcha: African elites sold captives from rival polities; European and American buyers built the racialized hereditary plantation system they were sold into; both are true, and neither cancels the other.
+
+## Sources
+- SlaveVoyages. (n.d.). *Trans-Atlantic slave trade: Estimates*. https://www.slavevoyages.org/assessment/estimates
+- Thornton, J. K. (1998). *Africa and Africans in the making of the Atlantic world, 1400-1800* (2nd ed.). Cambridge University Press.
+- Northrup, D. (2002). *Africa's discovery of Europe, 1450-1850*. Oxford University Press.
+- Lovejoy, P. E. (2012). *Transformations in slavery: A history of slavery in Africa* (3rd ed.). Cambridge University Press.
+- Green, T. (2019). *A fistful of shells: West Africa from the rise of the slave trade to the age of revolution*. University of Chicago Press.
+- Nunn, N. (2008). The long-term effects of Africa's slave trades. *Quarterly Journal of Economics, 123*(1), 139-176.`,
+      recallContent: [
+        {
+          prompt: "The SlaveVoyages headline figures, and why they are firmer than the Saharan ones.",
+          answer:
+            "About 12.5 million embarked and about 10.7 million landed alive, 1501-1866 (nearly two million died at sea). They rest on tens of thousands of surviving individual voyage records, unlike the thin evidence behind Saharan reconstructions.",
+        },
+        {
+          prompt: "What do Afonso I's 1526 letters document, and what does the course refuse to make of them?",
+          answer:
+            "The king of Kongo protesting to João III of Portugal that merchants were kidnapping and buying away his freeborn subjects, depopulating the country, and demanding controls: contemporary African criticism of the trade, from inside, in writing. The course refuses to dress him as a modern abolitionist; he objected to unlawful enslavement of his subjects, not to slavery as such.",
+        },
+      ],
+    },
+    {
+      slug: "africa-quiz-5",
+      title: "Section 5 quiz · The honest record",
+      section: "Section 5 · The honest record",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why does this course teach African slavery at full depth rather than minimizing it?",
+            options: [
+              "One evidentiary standard applied everywhere is the course's claim to credibility; a sanitized version is the romance trap and collapses against the sources",
+              "To argue colonization was deserved",
+              "Because European slavery was worse and needs contrast",
+              "United Nations rules require it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The sources discuss slavery constantly. Omitting it would hand deniers the easiest rebuttal and would erase real people just as the erasure trap does.",
+            sourceLessonSlug: "africa-slavery-within",
+          },
+          {
+            prompt: "What does 'wealth in people' describe?",
+            options: [
+              "Societies where land was abundant and labor scarce, so power was measured in people, including enslaved dependents",
+              "A tax system based on head-counts",
+              "A modern development metric",
+              "The idea that slaves were always treated as kin",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The historians' shorthand for a structural condition of much of West and Central Africa, which shaped why captives were a core form of wealth (Thornton, Lovejoy).",
+            sourceLessonSlug: "africa-slavery-within",
+          },
+          {
+            prompt: "Which named example does the course give of harsh, large-scale slavery WITHIN Africa?",
+            options: [
+              "The nineteenth-century Sokoto Caliphate's slave-worked estates",
+              "The kingdom of Aksum's coin mints",
+              "Great Zimbabwe's cattle herds",
+              "The Kilwa fish markets",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Naming region, people, and period cuts both ways: absorptive lineage slavery existed, and so did brutal hereditary plantation and state slavery, e.g., Sokoto (present-day northern Nigeria).",
+            sourceLessonSlug: "africa-slavery-within",
+          },
+          {
+            prompt: "How should Austen's figure for the trans-Saharan slave trade be treated?",
+            options: [
+              "As a 'tentative census' (his own word): an order-of-magnitude reconstruction from thin evidence, in the several millions over roughly twelve centuries",
+              "As an exact count from customs archives",
+              "As propaganda with no evidentiary basis",
+              "As covering only the twentieth century",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Scattered customs figures and travelers' counts cannot support precision; the course reports the reconstruction with its error bars showing.",
+            sourceLessonSlug: "africa-slavery-within",
+          },
+          {
+            prompt: "What was demand in the Saharan and eastern trades primarily for, per the sources?",
+            options: [
+              "Domestic service, concubinage, soldiers, and eunuchs",
+              "Plantation field labor exclusively",
+              "Mine labor exclusively",
+              "Galley rowers exclusively",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A different demand profile from the Atlantic plantation system, which is part of why the two systems are taught as distinct (and both plainly).",
+            sourceLessonSlug: "africa-slavery-within",
+          },
+          {
+            prompt: "What are the SlaveVoyages headline estimates for the Atlantic trade, 1501-1866?",
+            options: [
+              "About 12.5 million embarked; about 10.7 million landed alive",
+              "About 1 million embarked",
+              "About 100 million embarked",
+              "The database refuses to estimate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Built from tens of thousands of voyage records; the gap of nearly two million is death at sea. Firm estimates, unlike the Saharan reconstructions.",
+            sourceLessonSlug: "africa-atlantic-trade",
+          },
+          {
+            prompt: "Why did Europeans rarely capture slaves inland themselves for most of the trade's four centuries?",
+            options: [
+              "Disease killed Europeans inland at catastrophic rates, and African military strength confined them to ships and coastal forts, often rented from African rulers",
+              "European law forbade it",
+              "They had no interest in the interior",
+              "African coasts had no harbors",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Thornton's structural point: the coastal forts stood on African sufferance, paying rent and customs. Supply ran through African states and merchants.",
+            sourceLessonSlug: "africa-atlantic-trade",
+          },
+          {
+            prompt: "Which of these is a correctly NAMED participation example, per the course?",
+            options: [
+              "Dahomey and Asante rose in the seventeenth-eighteenth centuries as major suppliers whose royal revenues ran substantially on captives",
+              "Great Zimbabwe supplied captives to Portugal in the twelfth century",
+              "Aksum sold captives to Rome in 1897",
+              "The Almoravids ran the Middle Passage",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Named states, named periods: Kongo (from the early 1500s), Dahomey and Asante (17th-18th c.), Oyo (18th c.). Flattened versions in either direction fail the course's rule.",
+            sourceLessonSlug: "africa-atlantic-trade",
+          },
+          {
+            prompt: "What is the 'tell' that 'Africans sold their own people' is rhetoric rather than history?",
+            options: [
+              "It applies a pan-African identity backward to Africans while never applying pan-European identity backward to Europeans selling Slavic and Circassian captives",
+              "It uses a passive verb",
+              "It cites no date",
+              "Nothing; the course endorses the sentence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The asymmetric use of 'own' is the giveaway. The honest statement carries both documented halves without the gotcha: African elites sold captives from rival polities; Euro-American buyers built the racialized plantation system.",
+            sourceLessonSlug: "africa-atlantic-trade",
+          },
+          {
+            prompt: "What do Afonso I of Kongo's 1526 letters show?",
+            options: [
+              "Documented African criticism of the trade from inside and in real time: protests that merchants were taking his freeborn subjects, with demands for controls",
+              "That Kongo never touched the slave trade",
+              "The first abolitionist manifesto in the modern sense",
+              "That Portugal ended the trade in 1526",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course keeps the hedge: Afonso objected to unlawful enslavement of his subjects rather than slavery as such, so he is evidence of contemporary dissent, not a modern abolitionist.",
+            sourceLessonSlug: "africa-atlantic-trade",
+          },
+          {
+            prompt: "What is the 'gun-slave cycle' debate about?",
+            options: [
+              "Whether European demand created the wars that produced captives or paid a bounty on wars that would have happened anyway",
+              "Whether guns were traded at all",
+              "Whether Africans manufactured firearms before 1500",
+              "Naval gunnery tactics",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A real scholarly debate the course reports as open. What is not debated: African elites were active, negotiating, price-setting participants in supply.",
+            sourceLessonSlug: "africa-atlantic-trade",
+          },
+          {
+            prompt: "How does the course handle the long-run consequences of the trades for African societies?",
+            options: [
+              "Direction broadly negative, magnitudes genuinely contested (demography, militarization, econometrics like Nunn 2008), reported as a live debate rather than a picked number",
+              "As fully settled: exactly 30% population loss",
+              "As having no measurable effects",
+              "It skips the question",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The honesty standard applies to harms as well as glories: report the state of scholarship, hedge the magnitudes, cite the debate.",
+            sourceLessonSlug: "africa-atlantic-trade",
+          },
+          {
+            prompt: "Which statement about the timing of slavery in Africa is correct?",
+            options: [
+              "Enslavement of outsiders predates Atlantic demand by centuries, and internal slavery outlasted Atlantic abolition, tolerated for decades by colonial powers",
+              "Slavery in Africa began with the Portuguese in 1444",
+              "Slavery in Africa ended everywhere in 1807",
+              "The Sahara trades began after the Atlantic trades ended",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The record embarrasses everyone, including the colonial powers who advertised abolition as justification for conquest and then tolerated internal slavery where convenient.",
+            sourceLessonSlug: "africa-slavery-within",
+          },
+          {
+            prompt: "Roughly how many people died at sea in the Middle Passage, per SlaveVoyages?",
+            options: [
+              "Nearly two million (the gap between ~12.5M embarked and ~10.7M landed)",
+              "About ten thousand",
+              "About seven million",
+              "The database shows no deaths",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The embarked-versus-landed gap is itself a documented atrocity statistic, resting on voyage-level records.",
+            sourceLessonSlug: "africa-atlantic-trade",
+          },
+          {
+            prompt: "What does the course say the Atlantic buyers did to the existing supply system?",
+            options: [
+              "Plugged it into a new, insatiable, and different kind of demand: racialized, hereditary, industrial-scale plantation chattel slavery",
+              "Left it entirely unchanged",
+              "Abolished it immediately",
+              "Replaced it with wage labor",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both halves are load-bearing: Europeans did not introduce slavery to African societies, and what they built with the captives was a different and vaster system. Neither half carries the sentence alone.",
+            sourceLessonSlug: "africa-atlantic-trade",
+          },
+        ],
+      },
+    },
   ],
 };
