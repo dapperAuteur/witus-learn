@@ -1297,5 +1297,322 @@ What made all of this run was the **monsoon**: winds that blow reliably toward A
         ],
       },
     },
+    // ────────────── SECTION 5 · THE CONNECTIVE TISSUE ──────────────
+    {
+      slug: "asia-silk-roads",
+      title: "12 · The Silk Roads, by land and by sea",
+      section: "Section 5 · The connective tissue",
+      body: `Everything you have met so far, Gupta mathematics, Tang printing, Abbasid Baghdad ahead, was connected. This lesson is about the connections, and it opens by taking apart the very name they carry.
+
+**Nobody in antiquity ever walked a "Silk Road."** The term was coined in **1877** by the German geographer **Ferdinand von Richthofen**, and like "Asia" itself it is a modern label pasted onto older realities (Hansen, 2012). What the label covers is a shifting web of routes: overland tracks hopping oasis to oasis across Central Asia between China, India, Persia, and the Mediterranean, and, carrying far more bulk, the **maritime routes** through the Southeast Asian straits you met in the last lesson and across the Indian Ocean.
+
+The historian Valerie Hansen (2012) spent a career with the documents actually excavated along the land routes, contracts, passes, letters from the sand at Turfan, Dunhuang, and Niya, and her revision is worth stating as hers: most documented overland trade was **local and small-scale**, merchants moving goods between neighboring oases, not caravans hauling Chinese silk nonstop to Rome. What made the routes world-changing was less the freight than the **traffic in people and ideas**: soldiers, refugees, missionaries, technologies, and above all religions. Buddhism traveled these roads from India into Central Asia and China, leaving the painted cave-temple libraries of Dunhuang where the Diamond Sutra slept; Islam, Christianity in its Church-of-the-East form, and Manichaeism traveled them too. The network's signature middlemen for centuries were the **Sogdians**, an Iranian-speaking merchant people from the cities around Samarkand, whose abandoned letters, found in a watchtower near Dunhuang, give us the trade in their own voices (Hansen, 2012; Whitfield, 1999).
+
+Two transfers deserve the course's precision treatment. **Paper** moved west: a famous story credits Chinese papermakers captured at the **Battle of Talas (751)** between Abbasid and Tang forces with bringing the craft to Samarkand. Historians treat that story as a tale, not a record, since paper was present in Central Asia earlier; what is documented is the outcome, paper mills operating in Samarkand and then Baghdad by the late 700s, with enormous consequences in the next lesson (Hansen, 2012). And **silk itself** was never a Chinese monopoly forever: sericulture had reached Byzantium by the 500s, another reminder that technologies leak along exactly the routes that make them valuable.
+
+For the sea lanes, the course again reaches for an artifact you can visit. In 1998, divers off **Belitung Island, Indonesia**, found a ninth-century wreck: a ship of **Arabian-style construction**, sewn-plank rather than nailed, loaded with **tens of thousands** of mass-produced ceramic bowls from China's Changsha kilns, one of them carrying a date corresponding to the **820s CE**. The cargo, now in Singapore's Asian Civilisations Museum, is physical proof of what the texts imply: industrial-scale production in Tang China, filling an Indian Ocean ship bound for the Abbasid world, centuries before any European ship entered these waters (Hansen, 2020). One wreck kills two myths at once: that pre-modern trade was all trinkets, and that intercontinental commerce began with Europeans.
+
+Peter Frankopan's *The Silk Roads* (2015) argues these corridors, not the Mediterranean, were the axis of world history for most of recorded time. You now know enough to read that claim the course's way: as a framing argument by a named historian, sitting on documented traffic, to be weighed rather than recited. UNESCO began inscribing stretches of the land routes on the World Heritage list in 2014; the roads are now heritage. What they were for two millennia was infrastructure.
+
+:::reveal What is Hansen's (2012) documented revision of the Silk Road story, and what does the Belitung wreck add on the maritime side? ||| From excavated documents (Turfan, Dunhuang, Niya), Hansen argues most overland trade was local and small-scale, oasis to oasis; the routes' world-historical cargo was people, religions, and technologies more than nonstop luxury freight. The Belitung wreck (9th-century Arabian-style ship, tens of thousands of Changsha bowls, a date in the 820s) shows the sea route carrying genuinely industrial-scale trade between Tang China and the Abbasid world, centuries before European ships arrived.
+
+## Sources
+- Hansen, V. (2012). *The Silk Road: A new history*. Oxford University Press.
+- Hansen, V. (2020). *The year 1000: When explorers connected the world and globalization began*. Scribner.
+- Whitfield, S. (1999). *Life along the Silk Road*. University of California Press.
+- Frankopan, P. (2015). *The Silk Roads: A new history of the world*. Bloomsbury.
+- UNESCO World Heritage Centre. (2014). *Silk Roads: The routes network of Chang'an-Tianshan corridor*. https://whc.unesco.org/en/list/1442/`,
+      recallContent: [
+        {
+          prompt: "Who coined 'Silk Road,' when, and why does the course lead with that fact?",
+          answer:
+            "Ferdinand von Richthofen, a German geographer, in 1877. The course leads with it because the name, like 'Asia,' is a modern label pasted onto older realities, and knowing a term's origin inoculates against treating the label as the thing.",
+        },
+        {
+          prompt: "How does the course handle the Battle of Talas paper story?",
+          answer:
+            "As a tale, not a record: the story that captured Chinese papermakers brought papermaking to Samarkand after 751 is treated by historians as legend, since paper existed in Central Asia earlier. What is documented is the outcome: paper mills in Samarkand and Baghdad by the late 700s.",
+        },
+      ],
+    },
+    {
+      slug: "asia-islamic-golden-age",
+      title: "13 · Baghdad: the translation movement and the Islamic Golden Age",
+      section: "Section 5 · The connective tissue",
+      body: `West Asia is Asia. This lesson sits at the hinge of the whole course, because Abbasid Baghdad is where the streams you have been following, Indian mathematics, Greek philosophy, Persian statecraft, Chinese paper, ran together and were transformed.
+
+The **Abbasid Caliphate** founded its new capital, the round city of **Baghdad**, in **762 CE**, and within a generation it ranked among the largest and richest cities in the world. What happened there over the next two centuries is called the **translation movement**, and the scholar Dimitri Gutas (1998) has reconstructed it as one of history's great intellectual projects: a **sustained, society-wide, patron-funded effort**, spanning roughly the eighth through tenth centuries, to translate nearly the whole available corpus of Greek science and philosophy, along with Persian and Sanskrit works, into Arabic. Caliphs funded it, but so did families of officials, physicians, and merchants; it was fashion, infrastructure, and policy at once. Two enabling facts: the new **paper mills** (previous lesson) made books radically cheaper than parchment, and the Abbasid realm inherited scholarly communities, Greek-literate Christians prominent among the translators, who did much of the work.
+
+Now the hedge the course owes you. The famous **"House of Wisdom"** (*Bayt al-Hikma*), often described as a grand academy founded by the caliph **al-Ma'mun** (reigned 813-833), is real but its nature is debated: the surviving evidence is thin, and Gutas (1998) argues it was essentially a palace library, with the translation movement happening across the whole society rather than inside one building. Popular accounts inflate the institution; the documented wonder is the movement. This course teaches the hedge on purpose, because "there was a great library" is exactly the kind of claim that hardens into myth when nobody checks its footnotes.
+
+What the movement produced was not just preservation but **new science**, and three names carry the point:
+
+- **Al-Khwarizmi** (c. 780-850), working in Baghdad, wrote the book whose title gave us the word **algebra** (*al-jabr*), systematizing the solving of equations, and the treatise on reckoning with **Indian numerals** you met in the Gupta lesson; Latin corruptions of his name gave us **algorithm**. One scholar, two loanwords deep in your math homework.
+- **Ibn al-Haytham** (965-c. 1040), working later in Cairo, wrote the *Book of Optics* (c. 1011-1021), arguing from constructed experiments that vision happens by light entering the eye; historians of science treat the book as a landmark of experimental method.
+- **Ibn Sina** (Avicenna, 980-1037), a Persian physician-philosopher, completed his medical encyclopedia *al-Qanun* (the **Canon of Medicine**) in **1025**; in Latin translation it served as a standard European medical textbook into the early modern period (Pormann & Savage-Smith, 2007).
+
+Hold on to the transmission geometry, because it completes a loop this course has been drawing since Lesson 5: **Indian numerals reached Europe through Arabic Baghdad; Greek philosophy returned to Europe through Arabic translations** rendered into Latin in places like Toledo. The historian George Saliba (2007) argues the traffic ran deeper still, into the astronomy behind Copernicus; that is a scholarly argument, attributed as one. Either way, the caricature of a "dark age" world where knowledge slept until Europe woke is unsupportable: the lights were on, in Baghdad, Cairo, Samarkand, and Cordoba.
+
+Two honest notes to close. First, the "golden age" frame has its own trap: it can imply that everything after some date was decline, and historians increasingly push back on that story too; science in the Islamic world did not stop in 1258 (Saliba, 2007). Second, the era's end-date icon is real enough: in **1258** a Mongol army under Hulagu sacked Baghdad and killed the last Abbasid caliph of the city. Which brings this course to the empire that could do such a thing, and also ran the safest roads in Eurasia. Next lesson.
+
+:::reveal What is the documented core of the 'Islamic Golden Age,' and what hedge does the course attach to the House of Wisdom? ||| The documented core is the translation movement (Gutas, 1998): a two-century, society-wide, patron-funded project in Abbasid Baghdad translating Greek, Persian, and Sanskrit learning into Arabic on cheap new paper, and the new science it fed (al-Khwarizmi's algebra and numeral treatise, Ibn al-Haytham's optics, Ibn Sina's 1025 Canon). The hedge: the 'House of Wisdom' is real but thinly evidenced, and Gutas argues it was essentially a palace library; the movement, not one building, is the wonder.
+
+## Sources
+- Gutas, D. (1998). *Greek thought, Arabic culture: The Graeco-Arabic translation movement in Baghdad and early ʿAbbāsid society*. Routledge.
+- Saliba, G. (2007). *Islamic science and the making of the European Renaissance*. MIT Press.
+- Pormann, P. E., & Savage-Smith, E. (2007). *Medieval Islamic medicine*. Edinburgh University Press.
+- Plofker, K. (2009). *Mathematics in India*. Princeton University Press.`,
+      recallContent: [
+        {
+          prompt: "Name the three scholars this lesson uses to show the movement produced new science, with their contributions.",
+          answer:
+            "Al-Khwarizmi (algebra, from his book's title al-jabr, plus the treatise on Indian numerals; 'algorithm' from his name), Ibn al-Haytham (Book of Optics, c. 1011-1021, experiment-based theory of vision), and Ibn Sina (Canon of Medicine, 1025, a standard European medical text in Latin translation into the early modern period).",
+        },
+        {
+          prompt: "What two enabling conditions made the Baghdad translation movement possible?",
+          answer:
+            "Paper mills (Samarkand, then Baghdad, by the late 700s) made books far cheaper than parchment, and the Abbasid realm inherited scholarly communities, prominently Greek-literate Christians, who did much of the translating under broad patronage from caliphs down to merchant families.",
+        },
+      ],
+    },
+    {
+      slug: "asia-mongols",
+      title: "14 · The Mongols: destruction and connection, both documented",
+      section: "Section 5 · The connective tissue",
+      body: `In 1206, a steppe assembly proclaimed a leader named Temujin as **Chinggis (Genghis) Khan**, and within three generations his family ruled the largest contiguous land empire in history, from Korea to Hungary. Two cartoon versions of the Mongols circulate, and this course refuses both, because the record documents both halves of the truth.
+
+**Cartoon one: pure barbarians.** The conquests were, in fact, staggeringly violent, and saying so requires no exaggeration. Cities that resisted were made examples: when Hulagu's army took **Baghdad in 1258**, the caliph was killed and the city devastated, and contemporary and later chroniclers report death tolls that range from tens of thousands into the hundreds of thousands and beyond. Persian chroniclers assign figures above a million to the sacks of cities like Merv and Nishapur. This course's number discipline applies to atrocities exactly as it applies to GDP: those chronicle figures are **unverifiable and, at the top end, implausible** for the cities' likely populations, and historians treat them as expressions of catastrophe rather than counts (Morgan, 2007; Jackson, 2017). The catastrophe itself is not in doubt; whole regions' irrigation and urban life took generations to recover, and some scholars argue parts of the Iranian plateau never fully did (Jackson, 2017).
+
+**Cartoon two: pure connectors, the "Pax Mongolica."** Also grounded in evidence, and also incomplete. The unified empire ran the **yam**, a relay post-road system with stations, remounts, and passports that moved messengers and officials across Eurasia at unprecedented speed; it took censuses; it deliberately spared, relocated, and employed artisans and engineers from conquered cities; and it kept its trunk routes safe enough that commercial handbooks and travelers treated trans-Eurasian journeys as routine business (Morgan, 2007). This is the world that put a Venetian merchant family at Kublai Khan's court: **Marco Polo** (traveling 1271-1295), whose account historians debate in its details and broadly accept in its substance, hedge included. Religious policy was pragmatic tolerance: the khans taxed and consulted Buddhist, Muslim, Christian, and Daoist clergy alike, less from principle than from statecraft. Under **Kublai**, the dynasty renamed itself **Yuan (1271)**, completed the conquest of Song China in **1279** (a date you know), and governed China until 1368.
+
+Hold both cartoons up together and the honest synthesis appears: **the Mongols destroyed a connected world's nodes, then ran the connections harder than anyone before them.** Gunpowder and other Chinese technologies moved west in Mongol service; Persian astronomers worked in China and Chinese administrators in Iran; and the same unified routes that carried silk and scholars almost certainly helped carry the **plague** that reached the Black Sea in the 1340s and became Europe's Black Death, a transmission historians link to the Mongol-era circulation system while debating its exact path (Frankopan, 2015; Morgan, 2007). Connection was never automatically benign; the course notes it and moves on, because the point is structural, not moral.
+
+One more thread ties this lesson to three earlier ones. The Mongol imperial family's afterlives run through this whole course: the Yuan in China; the Ilkhanate in Iran and Iraq; the Golden Horde on the steppe; and, centuries later, a Fergana prince proud of his descent from both Timur and Chinggis Khan, whom you met at Panipat in 1526 founding the Mughal ("Mongol") empire. Even the failed expeditions mattered: the storms that broke the invasions of Japan (1274, 1281) and the Javanese reversal that birthed Majapahit (1293) are load-bearing dates in two other lessons. For a century, nearly every story in Asia bent around this empire, in destruction, in connection, usually in both.
+
+:::reveal How does the course's number discipline apply to Mongol atrocity figures, and what synthesis does it teach in place of the two cartoons? ||| Chronicle death tolls (hundreds of thousands at Baghdad 1258; over a million claimed at Merv or Nishapur) are unverifiable and at the top end implausible, so they are read as expressions of catastrophe, not counts; the catastrophe itself is undoubted. The synthesis: the Mongols destroyed a connected world's nodes AND then ran the connections harder than anyone before (yam relay, censuses, spared artisans, safe trunk routes, technology transfer), with the same routes likely carrying the 1340s plague west. Neither only-barbarian nor only-Pax-Mongolica survives the record.
+
+## Sources
+- Morgan, D. (2007). *The Mongols* (2nd ed.). Blackwell.
+- Jackson, P. (2017). *The Mongols and the Islamic world: From conquest to conversion*. Yale University Press.
+- Frankopan, P. (2015). *The Silk Roads: A new history of the world*. Bloomsbury.`,
+      recallContent: [
+        {
+          prompt: "List the documented machinery of the 'Pax Mongolica' side of the ledger.",
+          answer:
+            "The yam post-road relay with stations, remounts, and passports; imperial censuses; deliberate sparing and relocation of artisans and engineers; trunk routes safe enough for routine trans-Eurasian commerce (Marco Polo's 1271-95 journey, debated in detail, accepted in substance); pragmatic religious tolerance; Persian and Chinese experts exchanged across the empire.",
+        },
+        {
+          prompt: "Trace the Mongol threads that connect to other lessons in this course.",
+          answer:
+            "Baghdad 1258 ends the Abbasid lesson's era; Yuan conquest of Song 1279 ends the Song lesson; the failed invasions of Japan (1274, 1281) and the repelled Java expedition (Majapahit's founding, 1293) appear in Sections 3-4; Babur, founder of the Mughals (1526), claimed descent from both Chinggis Khan and Timur.",
+        },
+      ],
+    },
+    {
+      slug: "asia-quiz-5",
+      title: "Section 5 quiz · The connective tissue",
+      section: "Section 5 · The connective tissue",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Where does the term 'Silk Road' come from?",
+            options: [
+              "Coined in 1877 by the German geographer Ferdinand von Richthofen; no ancient trader used it",
+              "It appears in Han dynasty records",
+              "Marco Polo coined it in the 1290s",
+              "It is a translation of a Sogdian phrase",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Like 'Asia,' it is a modern label pasted onto older realities, which is why the course opens the lesson by dating it.",
+            sourceLessonSlug: "asia-silk-roads",
+          },
+          {
+            prompt: "What is Hansen's (2012) documented revision of the overland Silk Road story?",
+            options: [
+              "Excavated documents show mostly local, small-scale, oasis-to-oasis trade; the routes' great cargo was people, religions, and technologies",
+              "There was no overland trade at all",
+              "Caravans regularly hauled silk nonstop from China to Rome",
+              "Only silk ever moved on the routes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Her evidence is the contracts, passes, and letters dug up at Turfan, Dunhuang, and Niya, including the Sogdian merchants' own correspondence.",
+            sourceLessonSlug: "asia-silk-roads",
+          },
+          {
+            prompt: "How does the course treat the story that prisoners from the Battle of Talas (751) brought papermaking to Samarkand?",
+            options: [
+              "As a tale rather than a record, since paper existed in Central Asia earlier; the documented outcome is paper mills in Samarkand and Baghdad by the late 700s",
+              "As a verified event with named prisoners",
+              "As a myth with no underlying truth about paper's spread",
+              "As proof that paper was invented at Talas",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Separate the legend (the prisoners) from the documented outcome (the mills). The mills are what mattered: cheap books fueled Baghdad's translation movement.",
+            sourceLessonSlug: "asia-silk-roads",
+          },
+          {
+            prompt: "What does the Belitung shipwreck prove?",
+            options: [
+              "A 9th-century Arabian-style ship carried tens of thousands of mass-produced Chinese Changsha bowls (one dated to the 820s): industrial-scale Tang-Abbasid sea trade centuries before European ships arrived",
+              "That Europeans reached Indonesia in the 800s",
+              "That sea trade was limited to small luxury cargoes",
+              "That Chinese ships never sailed west",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One wreck kills two myths: pre-modern trade as trinkets, and intercontinental commerce as a European invention. The cargo is in Singapore's Asian Civilisations Museum.",
+            sourceLessonSlug: "asia-silk-roads",
+          },
+          {
+            prompt: "Who were the Sogdians?",
+            options: [
+              "An Iranian-speaking merchant people from the Samarkand region who served for centuries as the overland network's signature middlemen",
+              "A Chinese dynasty",
+              "Mongol tax collectors",
+              "Japanese pirates",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Their abandoned letters, found in a watchtower near Dunhuang, preserve the trade in the traders' own voices.",
+            sourceLessonSlug: "asia-silk-roads",
+          },
+          {
+            prompt: "What was the Baghdad translation movement, per Gutas (1998)?",
+            options: [
+              "A sustained, society-wide, patron-funded effort (roughly 8th-10th centuries) translating Greek, Persian, and Sanskrit learning into Arabic",
+              "A single caliph's one-year project",
+              "A program to translate Arabic works into Latin",
+              "A purely religious effort limited to scripture",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Caliphs, officials, physicians, and merchants all funded it; Greek-literate Christian scholars did much of the translating; cheap paper made it feasible.",
+            sourceLessonSlug: "asia-islamic-golden-age",
+          },
+          {
+            prompt: "What hedge does the course attach to the House of Wisdom?",
+            options: [
+              "It is real but thinly evidenced, and Gutas argues it was essentially a palace library; the documented wonder is the society-wide movement, not one building",
+              "It never existed in any form",
+              "It was the world's first university, fully documented",
+              "It was located in Cairo, not Baghdad",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Popular accounts inflate the institution. 'There was a great library' is the kind of claim that hardens into myth when nobody checks footnotes, so the course checks them.",
+            sourceLessonSlug: "asia-islamic-golden-age",
+          },
+          {
+            prompt: "Which two everyday English words descend from al-Khwarizmi and his book?",
+            options: [
+              "'Algebra' (from al-jabr in his book's title) and 'algorithm' (from Latin corruptions of his name)",
+              "'Chemistry' and 'zenith'",
+              "'Zero' and 'cipher'",
+              "'Compass' and 'almanac'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "He also wrote the treatise on reckoning with Indian numerals that carried the decimal system westward: one scholar, two loanwords, one transmission chain.",
+            sourceLessonSlug: "asia-islamic-golden-age",
+          },
+          {
+            prompt: "What was Ibn Sina's Canon of Medicine (1025)?",
+            options: [
+              "A medical encyclopedia that, in Latin translation, served as a standard European medical textbook into the early modern period",
+              "A book of religious law",
+              "The first book printed with movable type",
+              "A Mongol medical manual",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Its European career (Pormann & Savage-Smith, 2007) is the cleanest single proof that learning flowed from West Asia INTO Europe for centuries.",
+            sourceLessonSlug: "asia-islamic-golden-age",
+          },
+          {
+            prompt: "What honest caution does the course attach to the 'golden age' frame itself?",
+            options: [
+              "It can imply everything afterward was decline, a story historians increasingly push back on; science in the Islamic world did not stop in 1258",
+              "That golden ages never really happen",
+              "That the term is too positive about Baghdad",
+              "That only Europe had golden ages",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Saliba (2007) argues sophisticated work continued long after, possibly feeding Copernican astronomy; that is presented as his attributed argument.",
+            sourceLessonSlug: "asia-islamic-golden-age",
+          },
+          {
+            prompt: "How does the course handle chronicle death tolls from the Mongol conquests?",
+            options: [
+              "As unverifiable and, at the top end, implausible: read as expressions of catastrophe rather than counts, while the catastrophe itself is undoubted",
+              "As precise statistics to memorize",
+              "As proof the conquests were invented",
+              "As undercounts to be tripled",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Number discipline applies to atrocities exactly as to GDP: Persian chroniclers' million-plus figures for Merv or Nishapur exceed the cities' plausible populations.",
+            sourceLessonSlug: "asia-mongols",
+          },
+          {
+            prompt: "What was the yam?",
+            options: [
+              "The Mongol relay post-road system: stations, remounts, and passports moving messengers across Eurasia at unprecedented speed",
+              "A Mongol siege engine",
+              "The Mongol royal clan",
+              "A tax on silk",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the documented machinery behind the 'Pax Mongolica' half of the ledger, alongside censuses, spared artisans, and safe trunk routes.",
+            sourceLessonSlug: "asia-mongols",
+          },
+          {
+            prompt: "Which statement matches the course's synthesis on the Mongols?",
+            options: [
+              "They destroyed a connected world's nodes, then ran the connections harder than anyone before them; neither cartoon survives the record",
+              "They were pure destroyers with no constructive record",
+              "The conquests were bloodless and the Pax total",
+              "They never affected trade either way",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Baghdad 1258 and the yam are both documented. The same unified routes likely helped carry the 1340s plague west: connection is not automatically benign.",
+            sourceLessonSlug: "asia-mongols",
+          },
+          {
+            prompt: "How is Marco Polo's account treated by historians, per the course?",
+            options: [
+              "Debated in its details, broadly accepted in its substance",
+              "Accepted word for word",
+              "Proven to be entirely fabricated",
+              "Lost, and known only by title",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The hedge travels with the source: his journey (1271-1295) is evidence of the Mongol-era circulation system, cited with its scholarly caveats attached.",
+            sourceLessonSlug: "asia-mongols",
+          },
+          {
+            prompt: "Which later dynasty's founder claimed descent from both Chinggis Khan and Timur?",
+            options: [
+              "The Mughals: Babur, who won at Panipat in 1526",
+              "The Ming",
+              "The Tokugawa",
+              "The Abbasids",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'Mughal' is Persian for 'Mongol': the empire's afterlives run through the whole course, from the Yuan in China to the Fergana prince in Delhi.",
+            sourceLessonSlug: "asia-mongols",
+          },
+        ],
+      },
+    },
   ],
 };
