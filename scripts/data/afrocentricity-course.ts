@@ -665,5 +665,330 @@ What you *can* carry away is a durable habit: when a live debate meets new scien
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — Black Athena and Stolen Legacy: Two Different Kinds of Claim
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "black-athena-bernal",
+      title: "9 · Black Athena: Bernal's challenge",
+      section: "Black Athena and Stolen Legacy",
+      recallContent: [
+        {
+          prompt: "Why does the course declare no winner on the Kemet question?",
+          answer: "Because good-faith experts read the same underdetermined evidence differently, and 'Black' is partly a modern social category that no genome can adjudicate.",
+        },
+        {
+          prompt: "What is the transferable habit from the DNA lesson?",
+          answer: "Before a headline decides a debate for you, ask what the study sampled, how much of it there is, and what question it can and cannot answer.",
+        },
+      ],
+      body: `The last section was about **antiquity** — who the Egyptians were. This section is about **the story of our own scholarship** — how the West told the tale of where Greek civilization came from, and whether that telling was shaped by racism. It also draws a distinction you must keep sharp: **there is a careful, credentialed version of the "Greece came from Egypt" argument (Bernal) and a popular version that fails on the specifics (James, next lessons). Treating them as the same thing is a mistake both sides' honest scholars avoid.**
+
+**Who Bernal was.** **Martin Bernal** (1937–2013) was a Cornell professor — trained in Chinese political history, not classics, a fact his critics stressed and he freely admitted. In **1987** he published the first volume of ***Black Athena: The Afroasiatic Roots of Classical Civilization***, subtitled *The Fabrication of Ancient Greece, 1785–1985* (Bernal, 1987). Volume II (1991) laid out archaeological and documentary evidence; Volume III (2006) handled linguistics.
+
+**His core argument, in his own terms.** Bernal said there were two competing models of where Greek civilization came from:
+- The **"Ancient Model."** The Greeks *themselves* believed their culture owed a deep debt to **Egypt and Phoenicia** — that Egyptians and Phoenicians had settled among them and civilized them, and that Greeks kept borrowing from Near Eastern cultures. This was the ordinary Greek view in the Classical age.
+- The **"Aryan Model."** Beginning in the late 1700s and 1800s, European scholars **replaced** the Ancient Model with a new story: Greek civilization was essentially **European and Indo-European ("Aryan")**, springing up on its own or from northern conquerors, with Egyptian and Semitic influence minimized or denied.
+
+**Bernal's provocation was about *why* the story changed.** His claim was not only that the Ancient Model was more accurate, but that the Aryan Model was **constructed** — that eighteenth- and nineteenth-century **racism and anti-Semitism** made European scholars unwilling to credit a Black African civilization (Egypt) and a Semitic people (the Phoenicians) as sources of their cherished Greece. He called for a **"Revised Ancient Model"** that restored the Egyptian and Levantine contribution.
+
+**Why this landed hard.** Bernal was doing something more disciplined than a slogan: he was arguing, with hundreds of pages of citation, that a *bias* had been baked into an entire field's founding assumptions. Even scholars who rejected his specific etymologies took the challenge seriously enough to write whole books answering it — which is the subject of the next lesson. Note the shape of the claim: it is **partly about ancient history and partly about the history of the historians.** Those two halves can, and did, get graded very differently.
+
+:::reveal What are Bernal's "Ancient Model" and "Aryan Model," and what did he argue caused the switch? ||| The Ancient Model is the Greeks' own belief that their culture owed a deep debt to Egypt and Phoenicia. The Aryan Model, built by European scholars in the late 1700s–1800s, recast Greek civilization as essentially European/Indo-European, minimizing Egyptian and Semitic influence. Bernal argued the switch was driven partly by the racism and anti-Semitism of that era's scholars, and called for a "Revised Ancient Model."
+
+## Sources
+- Bernal, M. (1987). *Black Athena: The Afroasiatic roots of classical civilization: Vol. 1. The fabrication of ancient Greece 1785–1985*. Rutgers University Press.
+- Bernal, M. (2001). *Black Athena writes back: Martin Bernal responds to his critics* (D. C. Moore, Ed.). Duke University Press.`,
+    },
+    {
+      slug: "black-athena-lefkowitz",
+      title: "10 · Black Athena: Lefkowitz's response, and what came of it",
+      section: "Black Athena and Stolen Legacy",
+      recallContent: [
+        {
+          prompt: "What was Bernal's provocation about the ORIGIN of the Aryan Model (not just antiquity)?",
+          answer: "That the Aryan Model was constructed — that 18th–19th-century racism and anti-Semitism made European scholars unwilling to credit Egypt (African) and Phoenicia (Semitic) as sources of Greek civilization.",
+        },
+        {
+          prompt: "Why did even hostile scholars take Black Athena seriously?",
+          answer: "Because Bernal argued, with hundreds of pages of citation, that a bias was baked into a whole field's founding assumptions — a disciplined challenge, not a slogan.",
+        },
+      ],
+      body: `Bernal's book provoked one of the most substantial scholarly exchanges of the late twentieth century. Its most prominent critic was the classicist **Mary Lefkowitz** (b. 1935), of Wellesley College — and, as the Kemet section required of Diop, you meet her argument from her own books, not a caricature.
+
+**Two different books, two different targets — keep them straight.** This is where careless summaries go wrong:
+- ***Not Out of Africa*** (1996) is Lefkowitz's **popular** book, and its main target is **not Bernal** — it is the broader **Afrocentric-curriculum claim** (drawn largely from George G. M. James, next lesson) that Greek philosophy was literally **stolen** from Egypt, that Socrates and Cleopatra were Black, and that Aristotle looted the Library of Alexandria. She argued these specific claims were unsupported by evidence and were being taught in schools as fact (Lefkowitz, 1996).
+- ***Black Athena Revisited*** (1996), which she **co-edited with Guy MacLean Rogers**, is the **scholarly** volume — a collection of specialist essays engaging **Bernal's** linguistic, archaeological, and historical claims in detail (Lefkowitz & Rogers, 1996).
+
+**Where Lefkowitz's side pushed back on Bernal specifically.** The essays challenged Bernal's **etymologies** (his proposed Egyptian and Semitic roots for Greek words), his **chronology** (the dating of supposed Egyptian colonization of Greece), and his reading of the ancient sources — arguing that Greek myths of Egyptian founders are not the same as historical evidence of conquest, and that Greek civilization shows deep **local** and **Indo-European** roots the "Revised Ancient Model" underweights.
+
+**Bernal answered back — this was a real exchange, not a one-way verdict.** In ***Black Athena Writes Back*** (2001) he replied point by point, supplying further documentation and arguing his critics had misread both his claims and the evidence (Bernal, 2001). The debate ran for years in journals; it did not end with a surrender.
+
+**So who was right? Here is the honest, dual answer the course will not collapse.** Weigh the two *halves* of Bernal's thesis separately:
+- On the **narrow, specific claims** — particular etymologies, and the claim of large-scale Egyptian/Phoenician *colonization* of Greece — **most classicists did not accept Bernal**, and those specifics remain a minority position.
+- On the **broad, historiographical claim** — that Near Eastern (Egyptian and especially Levantine) cultures **influenced** early Greece far more than the "Aryan Model" allowed, and that nineteenth-century scholarship carried real racial and ethnic bias — **the field moved toward Bernal.** Mainstream classicists now routinely study the "orientalizing" of early Greece (e.g. Burkert, 1992; West, 1997), work that predates and outlives the *Black Athena* fight but shares its direction.
+
+That split is the lesson. A book can be **largely wrong in its particulars and still right about the big thing it forced the field to confront** — and a fair evaluator says *both*, rather than scoring the whole exchange for one team. **The course declares no overall winner; it reports what was conceded and what was not.**
+
+:::reveal Distinguish Lefkowitz's two 1996 books, and give the "dual answer" on how Bernal's thesis fared. ||| "Not Out of Africa" is her popular book targeting the broader Afrocentric "stolen legacy" curriculum claim; "Black Athena Revisited" (co-edited with Guy MacLean Rogers) is the scholarly volume engaging Bernal's specific claims. The dual answer: most classicists rejected Bernal's narrow specifics (his etymologies and the colonization chronology), but the field moved toward his broad point that Near Eastern cultures influenced early Greece more than the "Aryan Model" allowed and that 19th-century scholarship carried real bias. No overall winner is declared.
+
+## Sources
+- Lefkowitz, M. R. (1996). *Not out of Africa: How Afrocentrism became an excuse to teach myth as history*. BasicBooks.
+- Lefkowitz, M. R., & Rogers, G. M. (Eds.). (1996). *Black Athena revisited*. University of North Carolina Press.
+- Bernal, M. (2001). *Black Athena writes back: Martin Bernal responds to his critics* (D. C. Moore, Ed.). Duke University Press.
+- Burkert, W. (1992). *The orientalizing revolution: Near Eastern influence on Greek culture in the early archaic age*. Harvard University Press.
+- West, M. L. (1997). *The East face of Helicon: West Asiatic elements in Greek poetry and myth*. Oxford University Press.`,
+    },
+    {
+      slug: "stolen-legacy-james",
+      title: "11 · Stolen Legacy: a specific claim that fails — and the influence that doesn't",
+      section: "Black Athena and Stolen Legacy",
+      recallContent: [
+        {
+          prompt: "In the Black Athena exchange, what was conceded and what was not?",
+          answer: "Most classicists did not accept Bernal's specific etymologies and colonization chronology, but the field moved toward his broad point about Near Eastern influence on Greece and 19th-century scholarly bias. No overall winner.",
+        },
+        {
+          prompt: "What are the two books Lefkowitz published in 1996, and how do they differ?",
+          answer: "'Not Out of Africa' (popular, aimed at the Afrocentric 'stolen legacy' curriculum) and 'Black Athena Revisited' (scholarly, co-edited with Guy MacLean Rogers, engaging Bernal's specific claims).",
+        },
+      ],
+      body: `Now the hardest discipline in the whole course: **holding two true statements together when it would be easier to pick one.** The two statements are:
+
+1. **The specific thesis of George G. M. James's *Stolen Legacy* fails on the evidence.**
+2. **Ancient Greece really was influenced by Egypt — that part is documented and real.**
+
+Both are true. Most public arguments about this topic go wrong by asserting one and denying the other. Watch how they fit.
+
+**The claim.** In **1954**, **George G. M. James** published ***Stolen Legacy***, arguing that Greek philosophy was not Greek at all — it was **stolen wholesale from an Egyptian "Mystery System,"** and that Greek thinkers, above all **Aristotle**, plundered Egyptian books, some by looting the **Library of Alexandria** (James, 1954).
+
+**Why the specific mechanism fails — on plain chronology and sources, not on politics.**
+- **The dates don't work.** **Aristotle died in 322 BCE.** The **Library of Alexandria was founded later**, under the Ptolemies (around **285 BCE**) — after Aristotle was already dead, and in a city (Alexandria) founded only after Alexander's conquest. **Aristotle could not have looted a library that did not yet exist.** This is not an interpretation; it is a calendar.
+- **The "Egyptian Mystery System" isn't Egyptian.** Scholars who traced James's sources found that the "mysteries" he describes come largely from **later Greco-Roman and even Masonic/Rosicrucian** writings about Egypt — not from ancient Egyptian texts. As one assessment put it, the system James describes is essentially **Greek in its details, not African.**
+- **Greek philosophy has a traceable local development.** The pre-Socratic thinkers in Ionia (6th century BCE) show an argumentative, step-by-step development that the "sudden theft" story cannot account for.
+
+For these reasons, specialists classify *Stolen Legacy*'s central thesis as **pseudohistory** — and, crucially, **so do careful scholars sympathetic to Afrocentricity's larger aims.** Rejecting this book is not an anti-African move; it is a not-inventing-a-library move.
+
+**But do not overcorrect into erasing the real influence.** Here is the part a lazy debunking skips: **Egypt did influence Greece, and the Greeks said so themselves.**
+- **The Greeks credited Egypt openly.** Herodotus reported that the Greeks learned geometry and elements of religion from Egypt; later writers like **Diodorus Siculus** repeated that Greek sages had **studied in Egypt**; traditions place **Thales** and **Pythagoras** there.
+- **Real transmission is documented.** Egyptian and Babylonian mathematics and astronomy fed Greek learning; Egyptian art conventions shaped early Greek sculpture; Near Eastern myth shaped Greek myth (the "orientalizing" scholarship from the last lesson).
+
+**So the precise, defensible statement is this:** *"Greeks were influenced by, traded with, and studied in Egypt"* is **supported**. *"Greek philosophy was a systematic body of thought stolen intact from Egypt by Aristotle looting the Library of Alexandria"* is **not**. The gap between those two sentences is the entire skill this section teaches. **A specific claim can be false while the general truth it exaggerates remains real** — and the honest scholar keeps the real truth *and* drops the false mechanism, instead of swallowing or trashing the whole thing.
+
+:::reveal Why does Stolen Legacy's central claim fail, and what documented truth must NOT be erased along with it? ||| It fails on chronology and sources: Aristotle died in 322 BCE but the Library of Alexandria was founded later (c. 285 BCE), so he could not have looted it; and the "Egyptian Mystery System" James describes traces to later Greco-Roman/Masonic writings, not ancient Egyptian texts. What must not be erased: Egypt genuinely did influence Greece — the Greeks themselves (Herodotus, Diodorus) credited Egyptian learning, and real transmission of mathematics, art, and myth is documented. "Greeks studied in and borrowed from Egypt" is supported; "Aristotle stole Greek philosophy intact by looting the Library" is not.
+
+## Sources
+- James, G. G. M. (1954). *Stolen legacy: The Greeks were not the authors of Greek philosophy, but the people of North Africa, commonly called the Egyptians*. Philosophical Library.
+- Lefkowitz, M. R. (1996). *Not out of Africa: How Afrocentrism became an excuse to teach myth as history*. BasicBooks.
+- Herodotus. (2003). *The histories* (A. de Sélincourt, Trans.; rev. ed.). Penguin. (Original work ca. 430 BCE)
+- Burkert, W. (1992). *The orientalizing revolution: Near Eastern influence on Greek culture in the early archaic age*. Harvard University Press.
+- Howe, S. (1998). *Afrocentrism: Mythical pasts and imagined homes*. Verso.`,
+    },
+    {
+      slug: "quiz-black-athena-stolen-legacy",
+      title: "12 · Quiz: Black Athena and Stolen Legacy",
+      section: "Black Athena and Stolen Legacy",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who was Martin Bernal, and what was Black Athena (1987)?",
+            options: [
+              "A Cornell scholar (trained in Chinese political history) whose book argued Greek civilization owed a suppressed debt to Egypt and Phoenicia",
+              "An Egyptologist who proved ancient Egypt was European",
+              "A classicist who wrote Not Out of Africa",
+              "The author of Stolen Legacy (1954)",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Bernal (1937–2013) was a Cornell professor trained in Chinese political history. Black Athena argued the 'Ancient Model' (Greece indebted to Egypt/Phoenicia) had been replaced by an 'Aryan Model' built partly on 19th-century bias.",
+            sourceLessonSlug: "black-athena-bernal",
+          },
+          {
+            prompt: "In Bernal's terms, what is the difference between the 'Ancient Model' and the 'Aryan Model'?",
+            options: [
+              "Ancient Model = the Greeks' own belief they were indebted to Egypt/Phoenicia; Aryan Model = a later European recasting of Greece as essentially Indo-European",
+              "Ancient Model = the modern DNA view; Aryan Model = Herodotus's view",
+              "They are two names for the same idea",
+              "Ancient Model = Nazi race science; Aryan Model = Greek mythology",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Ancient Model was the ordinary Classical-era Greek view; the Aryan Model was built by scholars in the late 1700s–1800s to minimize Egyptian and Semitic influence.",
+            sourceLessonSlug: "black-athena-bernal",
+          },
+          {
+            prompt: "Bernal's most provocative claim wasn't only about antiquity. What else was it about?",
+            options: [
+              "That the switch to the Aryan Model was driven partly by 19th-century racism and anti-Semitism among scholars",
+              "That the Greeks never existed",
+              "That Egypt never influenced anyone",
+              "That all etymology is worthless",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Bernal argued a bias was baked into a field's founding assumptions — a claim about the history of the historians, which got graded differently from his claims about antiquity.",
+            sourceLessonSlug: "black-athena-bernal",
+          },
+          {
+            prompt: "Lefkowitz's two 1996 books had different targets. Which pairing is correct?",
+            options: [
+              "'Not Out of Africa' = popular, aimed at the 'stolen legacy' curriculum claim; 'Black Athena Revisited' = scholarly, engaging Bernal's specifics (co-edited with Guy MacLean Rogers)",
+              "Both books were about DNA evidence",
+              "'Not Out of Africa' engaged only Bernal; 'Black Athena Revisited' engaged only James",
+              "Both were written by Bernal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Careless summaries blur these. 'Not Out of Africa' mainly targets the broader Afrocentric 'stolen legacy' claim; the scholarly critique of Bernal is in the co-edited 'Black Athena Revisited.'",
+            sourceLessonSlug: "black-athena-lefkowitz",
+          },
+          {
+            prompt: "Did the Bernal–Lefkowitz exchange end with one side surrendering?",
+            options: [
+              "No — Bernal replied in 'Black Athena Writes Back' (2001) and the debate ran for years in the journals",
+              "Yes — Bernal publicly retracted the book",
+              "Yes — Lefkowitz withdrew her criticism",
+              "There was never actually any response to Black Athena",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It was a genuine, multi-year exchange. Bernal answered his critics point by point in 2001; there was no surrender, which is why the course reports concessions rather than a winner.",
+            sourceLessonSlug: "black-athena-lefkowitz",
+          },
+          {
+            prompt: "What is the 'dual answer' on how Bernal's thesis fared in scholarship?",
+            options: [
+              "Most classicists rejected his specific etymologies and colonization chronology, but the field moved toward his broad point about Near Eastern influence and 19th-century bias",
+              "Everything Bernal wrote was accepted",
+              "Everything Bernal wrote was rejected",
+              "Scholars ignored the book entirely",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A book can be largely wrong in its particulars and still right about the big thing it forced the field to confront. The fair evaluator says both.",
+            sourceLessonSlug: "black-athena-lefkowitz",
+          },
+          {
+            prompt: "Who wrote Stolen Legacy, and when?",
+            options: [
+              "George G. M. James, in 1954",
+              "Martin Bernal, in 1987",
+              "Cheikh Anta Diop, in 1974",
+              "Molefi Kete Asante, in 1980",
+            ],
+            correctIndex: 0,
+            explanation:
+              "George G. M. James published Stolen Legacy in 1954, decades before Bernal. Keeping the popular 'stolen' claim distinct from Bernal's scholarly argument is part of the section's point.",
+            sourceLessonSlug: "stolen-legacy-james",
+          },
+          {
+            prompt: "What is the single clearest reason Stolen Legacy's 'Aristotle looted the Library of Alexandria' claim fails?",
+            options: [
+              "Aristotle died in 322 BCE, but the Library was founded later (c. 285 BCE) — he could not loot a library that did not yet exist",
+              "Aristotle never visited any library",
+              "The Library never actually existed",
+              "Aristotle wrote nothing down",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is a calendar problem, not a matter of opinion. Alexandria and its Library postdate Aristotle's death, so the specific mechanism is impossible.",
+            sourceLessonSlug: "stolen-legacy-james",
+          },
+          {
+            prompt: "Scholars who traced James's 'Egyptian Mystery System' found that it actually derives largely from:",
+            options: [
+              "Later Greco-Roman and Masonic/Rosicrucian writings about Egypt, not ancient Egyptian texts",
+              "Original hieroglyphic temple records",
+              "Diop's melanin tests",
+              "The Library of Alexandria's surviving catalog",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 'mysteries' James describes trace to much later European and Greco-Roman sources — which is why the system is essentially Greek in its details, not African.",
+            sourceLessonSlug: "stolen-legacy-james",
+          },
+          {
+            prompt: "The course says rejecting Stolen Legacy is NOT an anti-African move. Why?",
+            options: [
+              "Because careful scholars sympathetic to Afrocentricity's aims also reject it — it fails on chronology and sources, not on politics",
+              "Because Africa has no history",
+              "Because James was not African",
+              "Because the Library of Alexandria was unimportant",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The book is classified as pseudohistory by specialists across the spectrum. Dropping a false mechanism is a not-inventing-a-library move, not an attack on Africa.",
+            sourceLessonSlug: "stolen-legacy-james",
+          },
+          {
+            prompt: "What documented truth must NOT be erased when debunking Stolen Legacy?",
+            options: [
+              "That Egypt genuinely influenced Greece — the Greeks themselves credited Egyptian learning, and transmission of math, art, and myth is documented",
+              "That Aristotle looted the Library after all",
+              "That Greek philosophy was 100% Egyptian",
+              "That Greece and Egypt never had contact",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Overcorrection erases a real influence. Herodotus and Diodorus credited Egypt; real transmission is documented. The false mechanism goes; the real influence stays.",
+            sourceLessonSlug: "stolen-legacy-james",
+          },
+          {
+            prompt: "Which pair of sentences correctly separates 'supported' from 'not supported'?",
+            options: [
+              "Supported: 'Greeks studied in and borrowed from Egypt.' Not supported: 'Aristotle stole Greek philosophy intact by looting the Library.'",
+              "Supported: 'Aristotle looted the Library.' Not supported: 'Greeks ever visited Egypt.'",
+              "Both sentences are equally supported",
+              "Both sentences are equally unsupported",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The gap between those two sentences is the whole skill: a specific claim can be false while the general truth it exaggerates remains real.",
+            sourceLessonSlug: "stolen-legacy-james",
+          },
+          {
+            prompt: "Why does the course insist you keep Bernal and James in separate boxes?",
+            options: [
+              "Because Bernal is a heavily-cited scholarly argument and James's 'stolen' thesis fails on specifics — treating them as the same discredits the careful work by association",
+              "Because they lived in different countries",
+              "Because Bernal agreed with everything James wrote",
+              "Because both were classicists at Wellesley",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Conflating a disciplined (if contested) argument with a debunked popular one is exactly the error honest scholars on both sides avoid.",
+            sourceLessonSlug: "black-athena-bernal",
+          },
+          {
+            prompt: "The 'orientalizing revolution' scholarship (e.g. Burkert, West) is cited to show what?",
+            options: [
+              "That mainstream classicists independently recognize deep Near Eastern influence on early Greece — the direction Bernal's broad point pushed",
+              "That Bernal's etymologies were all correct",
+              "That Greece had no outside influences",
+              "That Stolen Legacy was vindicated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "This mainstream work predates and outlives the Black Athena fight but shares its direction — evidence for the 'broad point conceded, specifics not' verdict.",
+            sourceLessonSlug: "black-athena-lefkowitz",
+          },
+          {
+            prompt: "A classmate says: 'Since Stolen Legacy is debunked, Egypt clearly had zero influence on Greece.' The best correction is:",
+            options: [
+              "That's an overcorrection — the specific 'theft' story fails, but documented Egyptian influence on Greece is real and separate",
+              "Correct — a debunked book means the whole topic is false",
+              "Correct — Greece influenced Egypt, never the reverse",
+              "The question can't be evaluated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Debunking one false mechanism does not delete a documented influence. Keeping the real truth while dropping the false claim is the section's core discipline.",
+            sourceLessonSlug: "stolen-legacy-james",
+          },
+        ],
+      },
+    },
   ],
 };
