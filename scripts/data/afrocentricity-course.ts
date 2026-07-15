@@ -990,5 +990,281 @@ For these reasons, specialists classify *Stolen Legacy*'s central thesis as **ps
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — Rigorous Scholarship vs. Pop-Myth
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "melanin-and-pop-myth",
+      title: "13 · The pop-myth strand: melanin, 'Sun People,' and pseudoscience",
+      section: "Rigorous Scholarship vs. Pop-Myth",
+      recallContent: [
+        {
+          prompt: "State the 'supported vs. not supported' pair from the Stolen Legacy lesson.",
+          answer: "Supported: 'Greeks studied in and borrowed from Egypt.' Not supported: 'Aristotle stole Greek philosophy intact by looting the Library of Alexandria.'",
+        },
+        {
+          prompt: "Why is rejecting Stolen Legacy not an anti-African move?",
+          answer: "Because it fails on chronology and sources, not politics — and scholars sympathetic to Afrocentricity's aims reject it too.",
+        },
+      ],
+      body: `Under the single word "Afrocentrism," two very different things travel. One is the **scholarly paradigm** of Sections 1–3 — Diop's evidence-based arguments, Asante's method, Bernal's contested-but-cited historiography. The other is a body of **pop-myth**: claims that are not merely debatable but are **pseudoscience**, rejected by essentially everyone who checks them, including serious Afrocentric scholars. This section is about telling them apart — and about why that act of sorting is a core intellectual skill, not a betrayal of anyone.
+
+**The clearest example: the "melanin theory."** In its pop form, "melanin theory" claims that the skin pigment **melanin** does far more than color skin — that higher melanin gives Black people **superior intellectual, physical, spiritual, even extrasensory** capacities. Two names are usually attached to this strand:
+- **Frances Cress Welsing** (1935–2016), a psychiatrist, in *The Isis Papers* (1991) and her earlier "Cress Theory," argued that melanin conferred special properties and framed white identity in terms of a "color-confrontation" (Welsing, 1991).
+- **Leonard Jeffries**, a City College professor, popularized a division of humanity into melanin-rich **"Sun People"** (Africans, cast as communal and humane) and melanin-poor **"Ice People"** (Europeans, cast as cold and aggressive).
+
+**Why this is pseudoscience, plainly.** Melanin is a pigment. There is **no scientific evidence** that its concentration produces intelligence, morality, or paranormal ability. Claims like these commit textbook errors — confusing correlation with causation, generalizing from nothing, and making assertions that are **not testable or are simply false**. The anthropologist **Bernard Ortiz de Montellano** documented this in detail, calling the "melanist" strand out by name and showing its claims are unsupported by science (Ortiz de Montellano, 1993). Note the **mirror-image danger**: "Sun People / Ice People" is a **racial-essentialist** theory — it assigns fixed moral traits to people by ancestry. That is the *same logical structure* as the scientific racism the whole tradition set out to oppose, just with the valuations flipped. A corrective that becomes the mirror of the thing it corrects has stopped correcting.
+
+**Where this leaves you.** Melanin pseudoscience is **not** the view of Diop, who argued from physical, linguistic, and textual evidence and submitted it to a UNESCO symposium; it is **not** Asante's paradigm, which is a method about *centering*, not a claim about pigment superpowers; and it is **not** Bernal's historiography. It is a popular, mythic strand that grew up alongside the scholarship and borrows its prestige. Learning to see the seam between them — *this claim is argued from evidence and contested; that claim is pseudoscience and false* — is the single most useful habit this section can give you.
+
+:::reveal What does pop "melanin theory" claim, why is it pseudoscience, and why is "Sun People / Ice People" a mirror of the very thing Afrocentricity opposed? ||| It claims melanin gives Black people superior intellectual, physical, spiritual, or extrasensory powers. It is pseudoscience because melanin is a pigment with no evidence of producing intelligence, morality, or paranormal ability — the claims confuse correlation with causation and are untestable or false (documented by Ortiz de Montellano, 1993). "Sun People / Ice People" (Jeffries) is racial essentialism — assigning fixed moral traits by ancestry — the same logical structure as scientific racism, just with the valuations flipped, so a corrective becomes the mirror of what it opposed.
+
+## Sources
+- Welsing, F. C. (1991). *The Isis papers: The keys to the colors*. Third World Press.
+- Ortiz de Montellano, B. R. (1993). Melanin, Afrocentricity, and pseudoscience. *Yearbook of Physical Anthropology, 36*, 33–58.
+- Howe, S. (1998). *Afrocentrism: Mythical pasts and imagined homes*. Verso.`,
+    },
+    {
+      slug: "drawing-the-line",
+      title: "14 · Drawing the line — and why the critics draw it too",
+      section: "Rigorous Scholarship vs. Pop-Myth",
+      recallContent: [
+        {
+          prompt: "Name the two figures attached to pop 'melanin theory' and the 'Sun/Ice People' framing.",
+          answer: "Frances Cress Welsing (melanin/'Cress Theory,' The Isis Papers) and Leonard Jeffries ('Sun People'/'Ice People').",
+        },
+        {
+          prompt: "Why is melanin pseudoscience 'the mirror' of what Afrocentricity opposed?",
+          answer: "Because 'Sun People/Ice People' is racial essentialism — fixed moral traits assigned by ancestry — the same structure as scientific racism, with the valuations flipped.",
+        },
+      ],
+      body: `Someone will object: "Isn't sorting 'real scholarship' from 'pop-myth' just a sneaky way to keep only the parts you like and dismiss the rest? Who gets to draw the line?" It is a fair challenge, and the answer is what makes this section trustworthy rather than partisan.
+
+**The line is not the course's invention. Afrocentrism's own scholars and its sharpest critics draw it in the same place.** That convergence is the tell that the distinction is real, not a rhetorical trick:
+- **From inside the tradition**, serious scholars work from **evidence and primary sources** and do not stake their case on melanin superpowers or "Ice People." Diop ran tests and published them for expert scrutiny; Asante builds a methodological argument about centering; these are the moves of scholarship, whatever you conclude about them.
+- **From the critics' side**, even the most thorough opponent of Afrocentrism, **Stephen Howe** in *Afrocentrism: Mythical Pasts and Imagined Homes* (1998), is careful to distinguish the **serious** strands from the **mythic** ones — he does not pretend Diop and Welsing are the same kind of thinker. Neither does the anthropologist **Ortiz de Montellano**, who targets the "melanist" pseudoscience *specifically* while leaving evidence-based work alone.
+
+**So the test isn't "whose team is this on?" It's "how is the claim built?"** Ask of any single claim, regardless of who makes it:
+- **Is it argued from evidence that others can check** — sources, dates, artifacts, measurements — or from assertion and vibes?
+- **Is it falsifiable** — could evidence in principle prove it wrong — or is it built so nothing could ever count against it?
+- **Does it survive contact with the specialists**, or does it only circulate where no one checks?
+- **Is it attributed and dated**, or does it float free of any locatable source?
+
+Run those tests and the seam appears on its own. Diop's Egypt argument **passes as scholarship** (you can weigh his evidence and disagree) even where you reject his conclusion; melanin superpowers **fail as pseudoscience** (nothing could test them and the science is against them). **Same tradition, different rigor.** Naming that difference is not picking a side in the Afrocentrism debate — it is refusing to let the debate be conducted at its worst. And it protects the serious work: every time pop-myth is allowed to stand in for the whole tradition, it hands critics a free win and buries Diop's actual arguments under a claim he never made.
+
+:::reveal If someone asks "who gets to draw the line between scholarship and pop-myth?", what is the honest answer, and what four tests sort the two? ||| The honest answer: the line isn't the course's invention — Afrocentrism's own serious scholars and its sharpest critics (Howe, 1998; Ortiz de Montellano, 1993) draw it in the same place, which is the tell that it's real. The test isn't "whose team is this on?" but "how is the claim built?": (1) Is it argued from checkable evidence or from assertion? (2) Is it falsifiable, or built so nothing could disprove it? (3) Does it survive contact with specialists? (4) Is it attributed and dated, or does it float free of any source?
+
+## Sources
+- Howe, S. (1998). *Afrocentrism: Mythical pasts and imagined homes*. Verso.
+- Ortiz de Montellano, B. R. (1993). Melanin, Afrocentricity, and pseudoscience. *Yearbook of Physical Anthropology, 36*, 33–58.
+- Asante, M. K. (1988). *The Afrocentric idea*. Temple University Press.
+- Diop, C. A. (1974). *The African origin of civilization: Myth or reality* (M. Cook, Trans.). Lawrence Hill.`,
+    },
+    {
+      slug: "quiz-scholarship-vs-pop-myth",
+      title: "15 · Quiz: Rigorous Scholarship vs. Pop-Myth",
+      section: "Rigorous Scholarship vs. Pop-Myth",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "The section says two very different things travel under the word 'Afrocentrism.' What are they?",
+            options: [
+              "A scholarly paradigm argued from evidence, and a body of pop-myth/pseudoscience rejected even by serious Afrocentric scholars",
+              "Two identical political parties",
+              "A religion and a language",
+              "A DNA study and a court case",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One strand is the evidence-based scholarship of Diop, Asante, and Bernal; the other is mythic pseudoscience that grew up alongside it and borrows its prestige.",
+            sourceLessonSlug: "melanin-and-pop-myth",
+          },
+          {
+            prompt: "What does pop 'melanin theory' claim?",
+            options: [
+              "That melanin gives Black people superior intellectual, physical, spiritual, or even extrasensory capacities",
+              "That melanin protects skin from ultraviolet light",
+              "That melanin is found only in Europeans",
+              "That melanin is a made-up substance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pop theory claims melanin does far more than pigment skin. (That melanin affects UV response is ordinary biology; the pseudoscience is the leap to intelligence, morality, and paranormal powers.)",
+            sourceLessonSlug: "melanin-and-pop-myth",
+          },
+          {
+            prompt: "Why is pop melanin theory classified as pseudoscience?",
+            options: [
+              "Melanin is a pigment with no evidence of producing intelligence or morality; the claims confuse correlation with causation and are untestable or false",
+              "Because all theories about biology are pseudoscience",
+              "Because melanin has never been studied",
+              "Because only physicists are allowed to study pigment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The claims fail the basic tests of science — no supporting evidence, correlation-for-causation errors, and unfalsifiable or false assertions (documented by Ortiz de Montellano, 1993).",
+            sourceLessonSlug: "melanin-and-pop-myth",
+          },
+          {
+            prompt: "Whose framework divided humanity into melanin-rich 'Sun People' and melanin-poor 'Ice People'?",
+            options: [
+              "Leonard Jeffries",
+              "Cheikh Anta Diop",
+              "Mary Lefkowitz",
+              "Martin Bernal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Jeffries popularized the 'Sun People / Ice People' division. It is a pop-myth strand, distinct from Diop's evidence-based scholarship.",
+            sourceLessonSlug: "melanin-and-pop-myth",
+          },
+          {
+            prompt: "Why does the course call 'Sun People / Ice People' a MIRROR of what Afrocentricity set out to oppose?",
+            options: [
+              "It is racial essentialism — assigning fixed moral traits by ancestry — the same structure as scientific racism, with the valuations flipped",
+              "Because it praises Europeans",
+              "Because it uses the word 'people' twice",
+              "Because it is based on careful evidence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A corrective that adopts the exact logic of the racism it opposes (fixed traits by ancestry) has stopped correcting and become its mirror.",
+            sourceLessonSlug: "melanin-and-pop-myth",
+          },
+          {
+            prompt: "Is melanin pseudoscience the view of Diop and Asante?",
+            options: [
+              "No — Diop argued from physical/linguistic/textual evidence, and Asante's paradigm is about centering, not pigment superpowers",
+              "Yes — it is the core of Diop's work",
+              "Yes — Asante invented the Sun People framework",
+              "Only Asante endorsed it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pop-myth strand is not the scholarly paradigm. Attaching it to Diop or Asante misrepresents both.",
+            sourceLessonSlug: "melanin-and-pop-myth",
+          },
+          {
+            prompt: "A student worries: 'Isn't separating scholarship from pop-myth just cherry-picking the parts you like?' What is the section's answer?",
+            options: [
+              "No — Afrocentrism's own serious scholars and its sharpest critics draw the line in the same place, which shows it's real, not a trick",
+              "Yes, it is pure cherry-picking",
+              "The line can never be drawn by anyone",
+              "Only the government can draw the line",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The convergence of insiders and critics on the same distinction is the tell that it is a real difference in rigor, not a rhetorical convenience.",
+            sourceLessonSlug: "drawing-the-line",
+          },
+          {
+            prompt: "According to the section, the test for a claim is NOT 'whose team is it on?' but:",
+            options: [
+              "'How is the claim built?' — is it argued from checkable evidence, is it falsifiable, does it survive specialists, is it attributed and dated?",
+              "'Is it about Africa?'",
+              "'Is it popular?'",
+              "'Does it feel true?'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The four build-tests (evidence, falsifiability, specialist scrutiny, attribution/dating) sort claims regardless of who makes them.",
+            sourceLessonSlug: "drawing-the-line",
+          },
+          {
+            prompt: "Even Stephen Howe, a thorough critic of Afrocentrism, does what in his 1998 book?",
+            options: [
+              "Distinguishes the serious strands from the mythic ones — he does not treat Diop and Welsing as the same kind of thinker",
+              "Claims all Afrocentric work is pseudoscience",
+              "Endorses melanin theory",
+              "Argues Egypt had no history",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Howe's careful sorting is part of the evidence that the scholarship/pop-myth line is real — even the opposition draws it.",
+            sourceLessonSlug: "drawing-the-line",
+          },
+          {
+            prompt: "Applying the build-tests: how does Diop's Egypt argument fare compared to melanin superpowers?",
+            options: [
+              "Diop's argument passes as scholarship (you can weigh his evidence and disagree); melanin superpowers fail as pseudoscience (untestable, science against them)",
+              "Both pass equally",
+              "Both fail equally",
+              "Diop fails and melanin theory passes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same tradition, different rigor. You can reject Diop's conclusion while still recognizing it as an argument from evidence — which melanin superpowers are not.",
+            sourceLessonSlug: "drawing-the-line",
+          },
+          {
+            prompt: "Why does letting pop-myth 'stand in for the whole tradition' hurt the serious scholarship?",
+            options: [
+              "It hands critics a free win and buries Diop's actual arguments under claims he never made",
+              "It makes the scholarship more popular",
+              "It has no effect at all",
+              "It proves the melanin theory correct",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Conflation lets a debunked myth discredit careful work by association — bad for accuracy and unfair to the actual scholars.",
+            sourceLessonSlug: "drawing-the-line",
+          },
+          {
+            prompt: "'Falsifiable' means a claim:",
+            options: [
+              "Could in principle be shown wrong by evidence — as opposed to being built so nothing could ever count against it",
+              "Is definitely false",
+              "Has already been proven false",
+              "Cannot be tested by anyone",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Falsifiability is a build-test: a claim that no possible evidence could disprove is not doing science. Melanin-superpower claims are built to be unfalsifiable.",
+            sourceLessonSlug: "drawing-the-line",
+          },
+          {
+            prompt: "The section says naming the scholarship/pop-myth difference is NOT picking a side. Why?",
+            options: [
+              "Because it refuses to let the debate be conducted at its worst — it protects the serious work rather than endorsing or attacking the paradigm",
+              "Because sides do not exist",
+              "Because pop-myth is actually correct",
+              "Because it always favors the critics",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Distinguishing rigor from myth is a stance about method, not about who wins the Afrocentrism debate — it keeps the real arguments in view.",
+            sourceLessonSlug: "drawing-the-line",
+          },
+          {
+            prompt: "Who documented the 'melanist' pseudoscience specifically, by name?",
+            options: [
+              "Anthropologist Bernard Ortiz de Montellano (1993)",
+              "Herodotus",
+              "Guy MacLean Rogers",
+              "George G. M. James",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ortiz de Montellano (1993) targeted the melanist strand while leaving evidence-based work alone — an example of the line being drawn from the critical side.",
+            sourceLessonSlug: "melanin-and-pop-myth",
+          },
+          {
+            prompt: "Which best states the section's takeaway?",
+            options: [
+              "Same tradition can contain different levels of rigor; sort by how a claim is built, not by which side it seems to help",
+              "Everything labeled Afrocentric is scholarship",
+              "Everything labeled Afrocentric is pseudoscience",
+              "Rigor cannot be judged at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The durable skill is sorting claims by construction — evidence, falsifiability, scrutiny, attribution — rather than by tribe.",
+            sourceLessonSlug: "drawing-the-line",
+          },
+        ],
+      },
+    },
   ],
 };
