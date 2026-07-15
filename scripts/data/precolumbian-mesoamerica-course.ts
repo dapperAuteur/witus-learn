@@ -1655,5 +1655,297 @@ Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edg
         ],
       },
     },
+    // ────────────── SECTION 6 · THE CONQUEST AND ITS MYTHS ──────────────
+    {
+      slug: "meso-conquest-myths",
+      title: "14 · The conquest without the myths",
+      section: "Section 6 · The conquest and the catastrophe",
+      body: `The fall of Tenochtitlan in 1521 is the most mythologized event in this course, and the historian Matthew Restall gave the myths a checklist. His *Seven Myths of the Spanish Conquest* (2003) is the spine of this lesson: not a defense of the conquest — it was a catastrophe — but an insistence on getting *how* it happened right, because the popular version flatters the Spanish and erases the Indigenous majority who were, in fact, most of the people on the field.
+
+**Myth: a few hundred Spaniards conquered an empire of millions.** The image of Cortés's ~500 men toppling the Aztec state is the founding distortion, and it survives only by deleting the tens of thousands of Indigenous allies without whom nothing happened. **Tlaxcala** — never conquered, and nursing generations of Triple-Alliance enmity (Lesson 10) — allied with Cortés and supplied the armies that actually did the fighting; Texcocan and other defectors joined as the Alliance visibly weakened. Restall's blunt reframing: this was less a Spanish conquest than a **civil war among Mesoamerican powers**, in which a small Spanish contingent was one faction's catalytic ally (Restall, 2003; Townsend, 2019). The Indigenous accounts and the *Lienzo de Tlaxcala* show Tlaxcalan warriors everywhere in the campaign — a fact the Tlaxcalans spent the colonial centuries reminding the crown of, seeking the privileges owed allies rather than the treatment given the conquered.
+
+**Myth: superior technology (steel, horses, guns) was decisive.** Steel swords, crossbows, a few cannon, and horses gave real tactical advantages in open engagements, and the psychological effect of cavalry was genuine at first. But guns were few and slow; the decisive weapons were **alliances, siege, and disease** (below), not a technology gap. The Spanish took Tenochtitlan by besieging an island city — cutting the causeway water supply, building brigantines to control the lake, and starving it over months with a largely Indigenous army — not by out-shooting it (Restall, 2003; Townsend, 2019).
+
+**Myth: Moctezuma mistook Cortés for the returning god Quetzalcoatl, and so the Aztecs surrendered psychologically.** This beloved story has weak roots. The earliest sources are ambiguous; the full "returning god" narrative crystallizes in later colonial texts written under Spanish influence — including Indigenous authors accounting, in hindsight, for a defeat — and Restall argues it served both Spanish self-flattery and a post-hoc Nahua theodicy. Treat the Quetzalcoatl-omen story as **contested at best, probably a colonial-era elaboration**, not as the reason an empire fell (Restall, 2003; Townsend, 2019).
+
+**Myth: the Indigenous side was passive, doomed, and quickly finished.** The opposite is true, and it is the point this course most wants you to keep. The Mexica fought a brutal house-to-house defense of Tenochtitlan; after the **Noche Triste** (June 1520) they *drove the Spanish out* of the city with heavy losses; the final siege took roughly three months of fighting into August 1521, and the last Mexica ruler, **Cuauhtémoc**, led resistance to the end. And 1521 did not end Indigenous America — it began a long, uneven, still-unfinished story of survival and adaptation that Lesson 17 carries to the present.
+
+The single fact that best breaks the "1521 = the end" reflex is this: **the last independent Maya kingdom did not fall until 1697.** The Itza Maya capital of **Nojpetén** (Tayasal), on an island in Lake Petén Itzá in Guatemala, held out against the Spanish for **176 years** after Tenochtitlan fell — through failed missions and a failed early Cortés visit (1525) — until a Spanish assault finally took it on March 13, 1697 (Jones, 1998). Nearly the entire span we call "the colonial period" ran with a sovereign Maya state on the map. "The conquest" was not an event in 1521; it was a scattered, resisted, centuries-long process, and in one corner it lasted almost to the eighteenth century.
+
+:::reveal Restall reframes 1521 as 'less a Spanish conquest than a civil war among Mesoamerican powers.' What is the evidence, and what myth does it break? ||| Tens of thousands of Indigenous allies — above all never-conquered, Alliance-hating Tlaxcala, plus Texcocan and other defectors — supplied the armies that did the fighting and the siege of Tenochtitlan; the Lienzo de Tlaxcala and Nahua accounts show them everywhere. It breaks the 'few hundred Spaniards conquered millions' myth: the ~500 Spaniards were one faction's catalytic ally, not lone conquerors (Restall, 2003; Townsend, 2019).
+
+## Sources
+- Restall, M. (2003). *Seven myths of the Spanish conquest*. Oxford University Press.
+- Townsend, C. (2019). *Fifth sun: A new history of the Aztecs*. Oxford University Press.
+- Jones, G. D. (1998). *The conquest of the last Maya kingdom*. Stanford University Press.
+- Lockhart, J. (Ed. & Trans.). (1993). *We people here: Nahuatl accounts of the conquest of Mexico*. University of California Press.`,
+      recallContent: [
+        {
+          prompt: "List the four conquest myths this lesson dismantles (per Restall).",
+          answer:
+            "(1) A few hundred Spaniards conquered millions — no, tens of thousands of Indigenous allies (esp. Tlaxcala) did the fighting; it was closer to a Mesoamerican civil war. (2) Superior technology was decisive — no, alliances, siege, and disease were. (3) Moctezuma mistook Cortés for Quetzalcoatl — contested, probably a colonial-era elaboration. (4) The Indigenous side was passive and quickly finished — no: Noche Triste, a three-month siege, Cuauhtémoc's resistance, and survival long after.",
+        },
+        {
+          prompt: "What actually took Tenochtitlan, and over what kind of timeframe?",
+          answer:
+            "A months-long siege of an island city by a largely Indigenous army: cutting the aqueduct/causeway supply, building brigantines to control the lake, and starving it — final siege roughly three months into August 1521. Not out-shooting it with steel and guns.",
+        },
+        {
+          prompt: "What is Nojpetén and why does it break '1521 = the end'?",
+          answer:
+            "The Itza Maya capital (Tayasal) on an island in Lake Petén Itzá — the last independent Maya kingdom, which held out 176 years after Tenochtitlan until a Spanish assault took it on March 13, 1697 (Jones, 1998). Nearly the whole colonial period ran with a sovereign Maya state on the map; 'the conquest' was a centuries-long, resisted process.",
+        },
+      ],
+    },
+    {
+      slug: "meso-demographic-catastrophe",
+      title: "15 · The catastrophe: disease, numbers, and how to count honestly",
+      section: "Section 6 · The conquest and the catastrophe",
+      body: `The largest thing that happened in the Americas after 1492 is a demographic collapse so severe it may have altered the planet's climate — and it is also the place where bad history does the most damage in both directions. This lesson teaches the collapse as what it is: **enormous, real, and quantitatively uncertain**, a range with named disputes, never a single confident number.
+
+**The mechanism was mostly microbial, and that matters morally.** Indigenous Americans had been separated from Afro-Eurasian populations for millennia and carried no immunity to smallpox, measles, influenza, typhus, and the other crowd diseases that had co-evolved with Old World cities and livestock. Smallpox reached central Mexico in **1520** — during the war, devastating Tenochtitlan before the final siege — and waves of epidemics rolled across the hemisphere for the following century, including catastrophic Mexican epidemics in 1545 and 1576 that contemporaries called *cocoliztli* (whose exact pathogen is still debated; a 2018 aDNA study implicated a *Salmonella* enterica strain in one 1545 cemetery) (Cook, 1998; Vågene et al., 2018). Because the great dying was largely biological, some tellings slide toward "it was nobody's fault, just germs." That is the trap. Disease was the primary *killer*, but it did its work **inside a system of conquest** — war, enslavement, forced labor in mines and fields, the *encomienda*, displacement, famine, and social collapse — that shattered the societies' capacity to feed, shelter, and reproduce themselves, and made each epidemic deadlier than biology alone would have. Historians call this a *synergy*; the honest sentence is that **germs were the mechanism and colonialism was the context**, and neither alone explains the scale (Cook, 1998; Restall, 2003).
+
+**Now the numbers — and why you will not get one.** How many people lived in the Americas, and in central Mexico specifically, in 1519? The honest answer is a **contested range**, because the pre-contact figure has to be reconstructed from post-collapse tribute records, colonial estimates, carrying-capacity models, and archaeology, each with large error bars and different assumptions.
+
+- For **central Mexico**, the famous high-end reconstruction is the "Berkeley School" of Sherburne Cook and Woodrow Borah, whose tribute-based modeling reached roughly **25 million** on the eve of contact — with some estimates in that tradition running toward 30 million. Skeptics (e.g., the tradition associated with Ángel Rosenblat) argued for figures several times smaller — on the order of a few million. Widely used modern textbook ranges for central Mexico land around **15 to 30 million**, precisely because the discipline has not resolved Cook-Borah versus their critics (Cook, 1998; Denevan, 1992).
+- For the **whole hemisphere**, published estimates range from about 40 million to over 100 million; a much-cited synthesis edited by William Denevan settled near **54 million** as a middle figure, while stressing the uncertainty (Denevan, 1992).
+- The **collapse ratio** is where sources converge even as absolute numbers stay contested: across the sixteenth century, the Indigenous population of central Mexico fell by roughly **90 percent** — the high reconstructions describe a fall from ~25 million toward perhaps **1 to 2 million** within about a century (Cook, 1998). Whatever the starting number, the proportion lost is among the worst demographic catastrophes in recorded human history.
+
+So the disciplined way to say it — the way this course requires — is: *"Central Mexico's population on the eve of contact is estimated in a contested range, commonly cited around 15 to 30 million, and fell by roughly 90 percent — to something like 1 to 2 million — over the following century; the high reconstructions are associated with Cook and Borah, the lower with their critics, and the debate turns on how you model tribute and carrying capacity."* That sentence is longer than "twenty-five million died." It is also **true**, and the extra length is doing honest work — it tells you where the number comes from and how firm it is.
+
+Two guardrails, because this number gets abused from both ends. **Minimizers** cite the low estimates to shrink the catastrophe toward deniability — the reply is that even the low reconstructions describe a ~90% collapse, a civilizational cataclysm on any accounting. **Maximizers** state the highest single figure as fact to sharpen an indictment — the reply is that inventing false precision hands critics an easy target and, per this course's first rule, treats the (already staggering) real record as insufficient. The catastrophe does not need inflating and cannot be honestly deflated. The scale is so large that the "great dying" is a leading candidate for the drop in atmospheric CO2 recorded around 1610, as tens of millions of hectares of Indigenous farmland reforested after the people who worked it were gone — a proposed marker for the start of the Anthropocene (Koch et al., 2019). Whatever one makes of that geological argument, sit with what it implies: the loss was large enough to be a candidate signal in the composition of the air.
+
+:::reveal How does the course require you to state the central-Mexico population collapse, and why is that longer sentence better than 'twenty-five million died'? ||| As a contested range with attribution: central Mexico on the eve of contact is commonly cited around 15-30 million (high reconstructions from Cook & Borah; lower from critics like Rosenblat), falling ~90% — to roughly 1-2 million — within about a century, the dispute turning on how tribute and carrying capacity are modeled. It is better because it is true and it shows where the number comes from and how firm it is; a single confident figure hides the uncertainty and, per the course's first rule, invites easy debunking either way.
+
+## Sources
+- Cook, N. D. (1998). *Born to die: Disease and New World conquest, 1492-1650*. Cambridge University Press.
+- Denevan, W. M. (Ed.). (1992). *The native population of the Americas in 1492* (2nd ed.). University of Wisconsin Press.
+- Vågene, Å. J., Herbig, A., Campana, M. G., Robles García, N. M., Warinner, C., Sabin, S., Spyrou, M. A., Andrades Valtueña, A., & 9 others. (2018). Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico. *Nature Ecology & Evolution, 2*, 520-528.
+- Koch, A., Brierley, C., Maslin, M. M., & Lewis, S. L. (2019). Earth system impacts of the European arrival and Great Dying in the Americas after 1492. *Quaternary Science Reviews, 207*, 13-36.
+- Restall, M. (2003). *Seven myths of the Spanish conquest*. Oxford University Press.`,
+      recallContent: [
+        {
+          prompt: "State the mechanism-vs-context distinction for the demographic collapse.",
+          answer:
+            "Germs were the mechanism, colonialism was the context. Old World crowd diseases (smallpox from 1520, measles, cocoliztli epidemics of 1545/1576) killed populations with no immunity — but did so inside a system of war, enslavement, forced labor, encomienda, displacement, and famine that shattered societies' capacity to survive and made each epidemic deadlier. Neither alone explains the scale.",
+        },
+        {
+          prompt: "Give the central-Mexico numbers as a range with attribution, plus the collapse ratio.",
+          answer:
+            "Commonly cited ~15-30 million on the eve of contact — high end from Cook & Borah (the Berkeley School, ~25M and up), lower from critics (e.g., Rosenblat, a few million) — falling by roughly 90% to about 1-2 million within a century. The proportion is agreed even where absolute numbers are contested.",
+        },
+        {
+          prompt: "How does the course answer both minimizers and maximizers of the death toll?",
+          answer:
+            "Minimizers (cite low estimates toward deniability): even the low reconstructions show a ~90% collapse — a cataclysm on any accounting. Maximizers (state the highest figure as fact): false precision hands critics an easy target and treats the real, staggering record as insufficient. The catastrophe can neither be honestly deflated nor needs inflating.",
+        },
+      ],
+    },
+    {
+      slug: "meso-quiz-6",
+      title: "Section 6 quiz · The conquest and the catastrophe",
+      section: "Section 6 · The conquest and the catastrophe",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is Restall's Seven Myths of the Spanish Conquest, as this course uses it?",
+            options: [
+              "A checklist correcting how the conquest is popularly misremembered — not a defense of it, but an insistence on getting the mechanism right",
+              "A defense arguing the conquest was justified and benign",
+              "A novel dramatizing Cortés's campaign",
+              "A denial that any conquest occurred",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Restall (2003) corrects flattering distortions while affirming the conquest was a catastrophe — accuracy in service of, not against, the gravity of events.",
+            sourceLessonSlug: "meso-conquest-myths",
+          },
+          {
+            prompt: "Why is 'a few hundred Spaniards conquered an empire of millions' a myth?",
+            options: [
+              "It deletes the tens of thousands of Indigenous allies — above all Tlaxcala — who supplied the armies; it was closer to a Mesoamerican civil war with the Spanish as one faction's catalyst",
+              "Because there were actually thousands of Spaniards",
+              "Because no Spaniards were present at all",
+              "Because the Aztecs willingly surrendered",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Lienzo de Tlaxcala and Nahua accounts show allied warriors everywhere; never-conquered, Alliance-hating Tlaxcala did the fighting (Restall, 2003; Townsend, 2019).",
+            sourceLessonSlug: "meso-conquest-myths",
+          },
+          {
+            prompt: "What actually took Tenochtitlan?",
+            options: [
+              "A months-long siege of an island city — cutting its water, controlling the lake with brigantines, starving it — waged by a largely Indigenous army",
+              "A single cavalry charge that scattered the defenders",
+              "Cannon fire that leveled the city in a day",
+              "A negotiated peaceful handover",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Steel and horses gave tactical edges, but alliances, siege, and disease were decisive — not a technology gap (Restall, 2003).",
+            sourceLessonSlug: "meso-conquest-myths",
+          },
+          {
+            prompt: "How should the 'Moctezuma mistook Cortés for Quetzalcoatl' story be treated?",
+            options: [
+              "As contested at best — probably a colonial-era elaboration serving Spanish self-flattery and a Nahua after-the-fact theodicy — not as the reason an empire fell",
+              "As well-documented eyewitness fact",
+              "As proven false by archaeology alone",
+              "As irrelevant and never claimed by anyone",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The full returning-god narrative crystallizes in later sources written under Spanish influence (Restall, 2003; Townsend, 2019). Contested, probably post-hoc.",
+            sourceLessonSlug: "meso-conquest-myths",
+          },
+          {
+            prompt: "Which event shows the Mexica were NOT passive victims?",
+            options: [
+              "The Noche Triste (June 1520), when they drove the Spanish out of the city with heavy losses, before a roughly three-month final siege led by Cuauhtémoc to the end",
+              "Their immediate surrender on first contact",
+              "Their conversion to Christianity before any fighting",
+              "Their abandonment of Tenochtitlan without a fight",
+            ],
+            correctIndex: 0,
+            explanation:
+              "House-to-house defense, a Spanish expulsion, and resistance to the last ruler — the course's most-insisted point against the passivity myth.",
+            sourceLessonSlug: "meso-conquest-myths",
+          },
+          {
+            prompt: "What was Nojpetén (Tayasal), and when did it fall?",
+            options: [
+              "The Itza Maya island capital — the last independent Maya kingdom — which fell to a Spanish assault on March 13, 1697, 176 years after Tenochtitlan",
+              "The Aztec capital, which fell in 1521",
+              "A Spanish fort built in 1600",
+              "A Purépecha city that never fell",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Jones (1998): nearly the whole colonial period ran with a sovereign Maya state on the map — 'the conquest' was a centuries-long, resisted process, not a 1521 event.",
+            sourceLessonSlug: "meso-conquest-myths",
+          },
+          {
+            prompt: "Why does the Nojpetén date (1697) matter for how students think about 'the conquest'?",
+            options: [
+              "It breaks the reflex that 1521 = the end of Indigenous America and reframes conquest as scattered, resisted, and centuries-long",
+              "It proves the Maya were conquered before the Aztecs",
+              "It shows the Spanish never reached Guatemala",
+              "It has no significance beyond trivia",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The last independent Maya kingdom outlived Tenochtitlan by 176 years — a single date that dismantles the tidy end-of-history story.",
+            sourceLessonSlug: "meso-conquest-myths",
+          },
+          {
+            prompt: "Why did Old World diseases kill Indigenous Americans on such a scale?",
+            options: [
+              "Millennia of separation from Afro-Eurasian populations left no immunity to smallpox, measles, influenza, and typhus — crowd diseases co-evolved with Old World cities and livestock",
+              "Because Indigenous people had weaker constitutions",
+              "Because the diseases were deliberately engineered",
+              "Because the Americas had no prior diseases of any kind",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Smallpox reached central Mexico in 1520, devastating Tenochtitlan before the final siege; epidemic waves rolled on for a century (Cook, 1998).",
+            sourceLessonSlug: "meso-demographic-catastrophe",
+          },
+          {
+            prompt: "What is the 'germs were the mechanism, colonialism was the context' point?",
+            options: [
+              "Disease was the primary killer, but it did its work inside war, enslavement, forced labor, and displacement that shattered societies and made each epidemic deadlier — neither alone explains the scale",
+              "That colonialism, not disease, killed almost everyone",
+              "That it was 'nobody's fault, just germs'",
+              "That the epidemics were a myth",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The synergy is the honest account (Cook, 1998; Restall, 2003) — it resists both 'blameless germs' and 'germs were irrelevant.'",
+            sourceLessonSlug: "meso-demographic-catastrophe",
+          },
+          {
+            prompt: "How does the course state central Mexico's pre-contact population?",
+            options: [
+              "As a contested range commonly cited around 15-30 million — high reconstructions from Cook & Borah, lower from critics — never a single confident number",
+              "As exactly 25 million, a settled figure",
+              "As exactly 1 million",
+              "As unknowable to any order of magnitude",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The pre-contact figure is reconstructed from tribute records, colonial estimates, and models with large error bars; the discipline has not resolved Cook-Borah vs. critics (Cook, 1998; Denevan, 1992).",
+            sourceLessonSlug: "meso-demographic-catastrophe",
+          },
+          {
+            prompt: "On what do sources converge, even while absolute numbers stay contested?",
+            options: [
+              "The collapse ratio: central Mexico's Indigenous population fell by roughly 90% — toward 1-2 million — over the sixteenth century",
+              "The exact starting population",
+              "The precise pathogen of every epidemic",
+              "That the population actually grew",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Whatever the starting number, the ~90% proportion is among the worst demographic catastrophes in recorded history.",
+            sourceLessonSlug: "meso-demographic-catastrophe",
+          },
+          {
+            prompt: "How does the course answer someone who cites the LOWEST population estimates to minimize the catastrophe?",
+            options: [
+              "Even the low reconstructions describe a ~90% collapse — a civilizational cataclysm on any accounting",
+              "By agreeing the catastrophe was minor",
+              "By switching to the highest possible figure",
+              "By refusing to discuss numbers at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Minimizers and maximizers both distort; the catastrophe can neither be honestly deflated nor needs inflating.",
+            sourceLessonSlug: "meso-demographic-catastrophe",
+          },
+          {
+            prompt: "How does the course answer a MAXIMIZER who states the single highest death toll as established fact?",
+            options: [
+              "Inventing false precision hands critics an easy target and — per the course's first rule — treats the already-staggering real record as insufficient",
+              "By agreeing that the highest number is proven",
+              "By denying any deaths occurred",
+              "By citing the lowest estimate instead",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same discipline as Mansa Musa's 'richest ever' or the 80,400 sacrifices: refuse false precision; teach the range and the dispute.",
+            sourceLessonSlug: "meso-demographic-catastrophe",
+          },
+          {
+            prompt: "What was cocoliztli, per the lesson?",
+            options: [
+              "The name contemporaries gave catastrophic Mexican epidemics (notably 1545 and 1576) whose exact pathogen is debated — a 2018 aDNA study implicated a Salmonella strain in one 1545 cemetery",
+              "A Nahuatl word for smallpox specifically, now fully identified",
+              "An Aztec festival of the dead",
+              "A Spanish tax on Indigenous towns",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Vågene et al. (2018) found Salmonella enterica in Oaxaca victims — evidence, honestly hedged, that not every great epidemic was a simple Old World import.",
+            sourceLessonSlug: "meso-demographic-catastrophe",
+          },
+          {
+            prompt: "What is the 'Great Dying → 1610 CO2 drop' argument, and how does the course frame it?",
+            options: [
+              "A proposed link between mass reforestation of abandoned Indigenous farmland and a measured atmospheric CO2 dip around 1610 — offered as a striking indicator of scale, whatever one makes of the geology",
+              "A proven fact that ends all debate about the death toll",
+              "A claim that the epidemics were caused by climate change",
+              "A debunked hoax with no scientific basis",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Koch et al. (2019) proposed it as an Anthropocene marker. The course uses it to convey scale — the loss was large enough to be a candidate signal in the air's composition — while flagging it as an argument.",
+            sourceLessonSlug: "meso-demographic-catastrophe",
+          },
+        ],
+      },
+    },
   ],
 };
