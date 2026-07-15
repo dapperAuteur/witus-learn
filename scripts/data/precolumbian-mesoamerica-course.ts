@@ -1367,5 +1367,293 @@ One more correction while the empire is on the table: Postclassic Nahua culture 
         ],
       },
     },
+    // ────────────── SECTION 5 · BEYOND THE AZTEC AND THE MAYA ──────────────
+    {
+      slug: "meso-oaxaca-purepecha",
+      title: "12 · Oaxaca and the West: Zapotec, Mixtec, Purépecha",
+      section: "Section 5 · Beyond the Aztec and the Maya",
+      body: `If a course teaches only the Aztec and the Maya, it repeats at continental scale the mistake of flattening "Africa" into Egypt. This lesson is the antidote, in three acts.
+
+**The Zapotec and Monte Albán.** Around **500 BCE** — while Rome was expelling its kings — Zapotec builders leveled a mountaintop 400 meters above the Valley of Oaxaca and founded **Monte Albán**, one of the earliest true cities and state capitals in the Americas, which then dominated the region for over a millennium before its decline around 700-900 CE (Marcus & Flannery, 1996). Two things to carry from it. First, its most famous monuments teach a lesson in revisable readings: some 300 relief figures of contorted nude men were romantically dubbed **"Danzantes"** — dancers. The current consensus reads them as slain or sacrificed captives, some labeled with name-glyphs — a war memorial, not a ballet (Marcus & Flannery, 1996). The charming first reading was wrong; the evidence-driven one is grimmer and better supported. Second, Oaxaca is a serious contender in the "earliest writing" question: glyphs at Monte Albán and on Monument 3 at San José Mogote may predate everything else in the hemisphere — but the Mogote monument's dating is **contested** (it may have been moved and reused), so the honest verdict, as with the Cascajal Block, is *candidate, debated* (Marcus & Flannery, 1996; Houston, 2004).
+
+**The Mixtec and the painted books.** In the Postclassic, the Mixtec lords of highland Oaxaca produced two things this course cannot skip. One: **codices** — screenfold deerskin books like the Codex Zouche-Nuttall, painted genealogical-historical narratives tracking real dynasties across centuries, including the 11th-century warlord **Lord Eight Deer Jaguar Claw**, whose career of conquests and dynastic murders can be followed scene by scene. Outside the Maya inscriptions, this is the closest thing the pre-Columbian Americas offer to narrative political history in Indigenous hands (Boone, 2000). Two: **goldwork** — when Alfonso Caso excavated **Tomb 7 at Monte Albán** in 1932, a Zapotec tomb reused by Mixtec nobles, its gold, turquoise, jade, and carved-bone treasure ranked among the richest burials ever excavated in the Americas (Caso, 1969). Mixtec goldsmiths' lost-wax casting was the standard the Aztecs themselves prized.
+
+**The Purépecha: the empire that beat the Aztecs.** West, in Michoacán, sat the second-largest empire in Mesoamerica at contact — and almost nobody outside Mexico has heard of it. The **Purépecha** (called "Tarascans" in colonial sources), ruling from **Tzintzuntzan** ("place of hummingbirds") on Lake Pátzcuaro with its distinctive round-cornered *yácata* pyramids, are doubly anomalous. Their language is an **isolate** — unrelated to Nahuatl, to Maya, to anything else known in Mesoamerica, its closest proposed relatives (all contested) lying in South America. And they were Mesoamerica's serious **metallurgists**: copper and bronze not just for bells and ornaments but for axes, needles, and weapons — the technology, like metallurgy generally, apparently arriving via South American maritime contact and pushed furthest here (Pollard, 1993; Hosler, 1994). In the **1470s**, the Aztec ruler Axayacatl invaded with a large army; the Purépecha crushed it — colonial-era sources report catastrophic, possibly majority, Aztec losses (figures reported, not established) — and the Aztecs never seriously tried again, fortifying a militarized frontier instead (Pollard, 1993). Empire met empire, and the famous one lost.
+
+The takeaway is structural, not trivia: Mesoamerica was **polycentric to the end** — multiple states, languages (dozens, from at least ten unrelated families), scripts, technologies, and power centers, right up to 1519. Keep that in mind when the conquest narrative tries to compress everything into "Cortés versus the Aztecs."
+
+:::reveal What makes the Purépecha doubly anomalous in Mesoamerica, and what happened when the Aztecs invaded? ||| Their language is an isolate — related to nothing else in Mesoamerica (contested proposals point to South America) — and they were the region's leading metallurgists, working copper and bronze into tools and weapons, a technology apparently arrived via South American maritime contact. When Axayacatl invaded in the 1470s, the Purépecha crushed the Aztec army (sources report catastrophic losses — reported, not established), and the Aztecs switched permanently to a fortified frontier.
+
+## Sources
+- Marcus, J., & Flannery, K. V. (1996). *Zapotec civilization: How urban society evolved in Mexico's Oaxaca Valley*. Thames & Hudson.
+- Boone, E. H. (2000). *Stories in red and black: Pictorial histories of the Aztecs and Mixtecs*. University of Texas Press.
+- Caso, A. (1969). *El tesoro de Monte Albán*. Instituto Nacional de Antropología e Historia.
+- Pollard, H. P. (1993). *Taríacuri's legacy: The prehispanic Tarascan state*. University of Oklahoma Press.
+- Hosler, D. (1994). *The sounds and colors of power: The sacred metallurgical technology of ancient West Mexico*. MIT Press.
+- Houston, S. D. (Ed.). (2004). *The first writing: Script invention as history and process*. Cambridge University Press.`,
+      recallContent: [
+        {
+          prompt: "What does the 'Danzantes' renaming teach about method?",
+          answer:
+            "The ~300 contorted figures at Monte Albán were romantically read as 'dancers'; the evidence-driven consensus now reads slain/sacrificed captives, some with name-glyphs — a war memorial. Readings must follow evidence even when the correction is grimmer than the charm.",
+        },
+        {
+          prompt: "Why do the Mixtec codices matter beyond their beauty?",
+          answer:
+            "Screenfold books like the Zouche-Nuttall carry painted genealogical-historical narrative — real dynasties across centuries, e.g. Lord Eight Deer Jaguar Claw's 11th-century career — the closest thing to narrative political history in Indigenous hands outside the Maya inscriptions (Boone, 2000). Tomb 7 (Caso, 1932) shows the same civilization's goldwork at world level.",
+        },
+        {
+          prompt: "State the structural takeaway of this lesson in one sentence.",
+          answer:
+            "Mesoamerica was polycentric to the end — multiple states, unrelated language families, scripts, technologies, and power centers (Zapotec, Mixtec, Purépecha, and more) right up to 1519 — so any story compressed to 'Cortés versus the Aztecs' has already erased most of the map.",
+        },
+      ],
+    },
+    {
+      slug: "meso-southern-frontier",
+      title: "13 · Central America beyond Mexico: Cerén, the spheres, and the gold country",
+      section: "Section 5 · Beyond the Aztec and the Maya",
+      body: `Where does Mesoamerica *end*? Not at a border post. Southward through El Salvador, Honduras, and Nicaragua, the culture area fades in a **gradient**: Pacific Nicaragua and Costa Rica's Nicoya peninsula held peoples with strong Mesoamerican ties (including Nahua-related migrant groups like the Nicarao), while most of lower Central America belonged to a *different* civilizational sphere — the **Isthmo-Colombian world**, oriented as much toward Colombia as toward Mexico, dominated by speakers of Chibchan-family languages (Hoopes & Fonseca, 2003). "Not Mesoamerican" never meant "empty" or "backward"; it meant *different* — chiefdoms with their own art, cosmology, and technology. This lesson visits three stops along that gradient, because a course that stops at Mexico's southern border teaches a colonial map, not a pre-Columbian one.
+
+**Stop one, still Maya: Joya de Cerén, El Salvador — the Pompeii of the Americas.** Around **600 CE**, the Loma Caldera volcano buried a small Maya farming village under meters of ash — fast enough to entomb everything, slow enough (the evidence suggests) for the villagers to flee: no bodies have been found. Discovered by a bulldozer crew in 1976 and excavated by Payson Sheets's team, Cerén preserves what royal tombs never show: **ordinary life** — wattle-and-daub houses, a sweat bath, a community building, kitchen gardens, ripening maize fields, even manioc beds — the best-preserved snapshot of Mesoamerican *commoner* daily life anywhere, inscribed by UNESCO in 1993 (Sheets, 2006; UNESCO, 1993). Every other lesson in this course is disproportionately about elites, because elites built in stone and wrote in books; Cerén is the corrective — the seventy-odd percent of every society this record usually renders invisible, living well: solid houses, diverse diets, painted gourds, more possessions than excavators expected.
+
+**Stop two, beyond Mesoamerica: the stone spheres of the Diquís, Costa Rica.** In the Diquís delta of southern Costa Rica, pre-Columbian chiefdoms shaped **hundreds of stone spheres** — mostly granodiorite, from a few centimeters up to about 2.5 meters in diameter and weighing many tons, some approaching near-perfect sphericity — produced, per UNESCO's documentation, roughly between **500 and 1500 CE**, and placed in alignments and sets near chiefly settlements (UNESCO, 2014; Quilter & Hoopes, 2003). Their purpose is honestly **unknown** — rank markers, alignment sets, and plaza monuments are argued; most spheres were moved from their original contexts by banana-plantation clearing in the 1930s-40s, destroying the associations that might have settled it. Unknown purpose has made them, predictably, a pseudo-archaeology magnet (Atlantis, "impossible precision"); the sober record — local stone, known reduction techniques (pecking and grinding), excavated workshop contexts, a dated cultural sequence — needs no lost continents. UNESCO inscribed the sphere settlements as World Heritage in **2014**.
+
+**Stop three: the gold country.** Lower Central America's signature technology was **gold** — lost-wax cast pendants of frogs, eagles, jaguars, and human-animal composites, in a style world shared from Costa Rica through Panama into Colombia. At **Sitio Conte** in Panama, burials of the Coclé culture (c. 700-1000 CE) held gold chest plaques and cuffs of stunning technical command (Quilter & Hoopes, 2003). When Columbus coasted this shore on his fourth voyage (1502) — the first European approach to the region in this course — the gold-wearing chiefdoms of "Veragua" were what convinced Spain the isthmus was worth having. Note the direction of the metallurgy story you have now seen twice: goldworking spread **from South America northward**, reaching Mesoamerica late — a reminder that "advanced" technologies flow along whatever routes exist, in whatever direction, and that the Americas' deepest metalworking traditions were southern.
+
+Why does an anchor course on Mesoamerica spend a lesson beyond Mesoamerica's edge? Because the **frontier teaches the concept**: culture areas are analytic tools with gradient boundaries, not nations with walls — and the peoples of the gradient (whose descendants, from the Ngäbe to the Guna, are very much present in Lesson 17) are not a footnote to Mexico. The follow-on track gives them a full course; consider this the trailhead.
+
+:::reveal Why is Joya de Cerén 'the corrective' to the rest of the course's evidence base? ||| Because everything else disproportionately shows elites — they built in stone and wrote the books. Cerén, buried by ash c. 600 CE (villagers apparently fled; no bodies found), preserves ordinary farmers' actual lives: wattle-and-daub houses, a sweat bath, gardens, maize fields, manioc beds, painted gourds — commoners living better, with more possessions, than excavators expected. It is the best snapshot anywhere of the majority the record usually erases.
+
+## Sources
+- Sheets, P. (2006). *The Cerén site: An ancient village buried by volcanic ash in Central America* (2nd ed.). Cengage.
+- UNESCO World Heritage Centre. (1993). *Joya de Cerén archaeological site* (World Heritage List No. 675).
+- UNESCO World Heritage Centre. (2014). *Precolumbian chiefdom settlements with stone spheres of the Diquís* (World Heritage List No. 1453).
+- Hoopes, J. W., & Fonseca Z., O. M. (2003). Goldwork and Chibchan identity: Endogenous change and diffuse unity in the Isthmo-Colombian area. In J. Quilter & J. W. Hoopes (Eds.), *Gold and power in ancient Costa Rica, Panama, and Colombia* (pp. 49-89). Dumbarton Oaks.
+- Quilter, J., & Hoopes, J. W. (Eds.). (2003). *Gold and power in ancient Costa Rica, Panama, and Colombia*. Dumbarton Oaks.`,
+      recallContent: [
+        {
+          prompt: "Describe Mesoamerica's southern boundary the way the course does.",
+          answer:
+            "A gradient, not a wall: Pacific Nicaragua/Nicoya held Mesoamerican-tied peoples (e.g., the Nahua-related Nicarao), while most of lower Central America belonged to the Isthmo-Colombian sphere — Chibchan-speaking chiefdoms oriented toward Colombia. 'Not Mesoamerican' meant different, not empty or backward.",
+        },
+        {
+          prompt: "Give the honest account of the Diquís spheres.",
+          answer:
+            "Hundreds of stone spheres (mostly granodiorite, up to ~2.5 m, many tons), made roughly 500-1500 CE per UNESCO, placed near chiefly settlements; purpose unknown — rank/alignment/plaza-monument readings argued, original contexts largely destroyed by 1930s-40s plantation clearing. Local stone + known pecking/grinding techniques: no Atlantis required. UNESCO World Heritage 2014.",
+        },
+        {
+          prompt: "Which way did metallurgy flow in the Americas, and why does the course keep pointing at it?",
+          answer:
+            "From South America northward — through the Isthmo-Colombian gold country (Sitio Conte's Coclé burials, c. 700-1000 CE) and by sea to West Mexico, where the Purépecha pushed bronze furthest. It reminds you that technology flows along existing routes in any direction, and the hemisphere's deepest metalworking was southern.",
+        },
+      ],
+    },
+    {
+      slug: "meso-quiz-5",
+      title: "Section 5 quiz · Beyond the Aztec and the Maya",
+      section: "Section 5 · Beyond the Aztec and the Maya",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is Monte Albán?",
+            options: [
+              "The Zapotec capital founded c. 500 BCE on a leveled mountaintop over the Valley of Oaxaca — one of the Americas' earliest cities, dominant for over a millennium",
+              "An Aztec fortress built in the 1400s",
+              "A Maya port on the Caribbean",
+              "A Spanish colonial mining town",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Marcus & Flannery (1996) trace urban state formation there from c. 500 BCE to its decline c. 700-900 CE.",
+            sourceLessonSlug: "meso-oaxaca-purepecha",
+          },
+          {
+            prompt: "The current consensus reading of Monte Albán's 'Danzantes' reliefs is…",
+            options: [
+              "slain or sacrificed captives, some labeled with name-glyphs — a war memorial, replacing the romantic 'dancers' reading",
+              "dancers at a festival, as the name says",
+              "portraits of Zapotec kings at leisure",
+              "gods of the underworld",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The charming first reading was wrong; the evidence-driven one is grimmer and better supported — the lesson's point about revisable readings.",
+            sourceLessonSlug: "meso-oaxaca-purepecha",
+          },
+          {
+            prompt: "What is the honest status of Oaxaca's 'earliest writing' candidates (San José Mogote Monument 3)?",
+            options: [
+              "Candidate, debated — the glyphs may predate everything in the hemisphere, but the monument's dating is contested (possible reuse)",
+              "Confirmed as the hemisphere's first writing",
+              "Proven to be Spanish-era graffiti",
+              "Never seriously proposed as writing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same label as the Cascajal Block: the 'first writing' race has multiple contested runners, and honesty requires saying so.",
+            sourceLessonSlug: "meso-oaxaca-purepecha",
+          },
+          {
+            prompt: "Lord Eight Deer Jaguar Claw is known from…",
+            options: [
+              "Mixtec screenfold codices like the Zouche-Nuttall, which track his 11th-century career of conquests scene by scene",
+              "Maya stelae at Tikal",
+              "The Florentine Codex",
+              "Aztec tribute rolls",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Mixtec painted books are the closest thing to narrative political history in Indigenous hands outside the Maya inscriptions (Boone, 2000).",
+            sourceLessonSlug: "meso-oaxaca-purepecha",
+          },
+          {
+            prompt: "What did Alfonso Caso find in Tomb 7 at Monte Albán (1932)?",
+            options: [
+              "A Zapotec tomb reused by Mixtec nobles, holding gold, turquoise, jade, and carved bone — among the richest burials ever excavated in the Americas",
+              "The sarcophagus of Pakal",
+              "An empty chamber",
+              "Olmec colossal heads",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Mixtec lost-wax goldwork was the standard even the Aztecs prized.",
+            sourceLessonSlug: "meso-oaxaca-purepecha",
+          },
+          {
+            prompt: "Which pair of facts makes the Purépecha 'doubly anomalous' in Mesoamerica?",
+            options: [
+              "A language isolate unrelated to anything in Mesoamerica, and the region's most advanced metallurgy — copper/bronze tools and weapons",
+              "They had no cities and no farming",
+              "They spoke Nahuatl and rejected all technology",
+              "They were a Maya colony with a Maya script",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Contested language proposals point to South America, as does the maritime route by which metallurgy apparently arrived (Pollard, 1993; Hosler, 1994).",
+            sourceLessonSlug: "meso-oaxaca-purepecha",
+          },
+          {
+            prompt: "What happened when Axayacatl's Aztec army invaded Michoacán in the 1470s?",
+            options: [
+              "The Purépecha crushed it — sources report catastrophic Aztec losses (reported, not established) — and the Aztecs permanently switched to a fortified frontier",
+              "The Aztecs conquered the Purépecha easily",
+              "The two empires merged peacefully",
+              "The battle never happened; it is legend",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Empire met empire and the famous one lost — the clearest single proof that 1519 Mesoamerica was polycentric, not an Aztec monolith.",
+            sourceLessonSlug: "meso-oaxaca-purepecha",
+          },
+          {
+            prompt: "The Purépecha capital and its signature architecture were…",
+            options: [
+              "Tzintzuntzan ('place of hummingbirds') on Lake Pátzcuaro, with round-cornered yácata pyramids",
+              "Tulum, with cliff-edge temples",
+              "Teotihuacan, with the Pyramid of the Sun",
+              "Copán, with its hieroglyphic stairway",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The second-largest empire in Mesoamerica at contact, ruling from the Pátzcuaro basin (Pollard, 1993).",
+            sourceLessonSlug: "meso-oaxaca-purepecha",
+          },
+          {
+            prompt: "How does the course describe Mesoamerica's southern boundary?",
+            options: [
+              "A gradient: Mesoamerican-tied peoples in Pacific Nicaragua/Nicoya shading into the different, Chibchan-dominated Isthmo-Colombian sphere oriented toward Colombia",
+              "A fortified wall at the Guatemalan border",
+              "The Panama Canal",
+              "An empty uninhabited buffer zone",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Culture areas are analytic tools with gradient edges, not nations with walls — and 'not Mesoamerican' meant different, not backward (Hoopes & Fonseca, 2003).",
+            sourceLessonSlug: "meso-southern-frontier",
+          },
+          {
+            prompt: "What happened at Joya de Cerén around 600 CE?",
+            options: [
+              "The Loma Caldera eruption buried a Maya farming village in ash — apparently after the villagers fled (no bodies found) — preserving ordinary daily life",
+              "An earthquake destroyed a royal palace",
+              "The village was sacked by Teotihuacan",
+              "Nothing — the site is a natural formation",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Found by a bulldozer crew in 1976, excavated by Sheets's team, UNESCO-inscribed 1993: houses, sweat bath, gardens, maize fields, manioc beds — the Pompeii of the Americas.",
+            sourceLessonSlug: "meso-southern-frontier",
+          },
+          {
+            prompt: "Why is Cerén uniquely valuable to archaeology?",
+            options: [
+              "It preserves commoner daily life — the majority that stone monuments and books render invisible — and shows farmers living better than excavators expected",
+              "It contains the richest royal tomb in the Americas",
+              "It has the oldest writing in the hemisphere",
+              "It proves villages had no possessions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Everything else in the course is disproportionately elite evidence; Cerén is the corrective snapshot of the seventy-odd percent.",
+            sourceLessonSlug: "meso-southern-frontier",
+          },
+          {
+            prompt: "Which statement about the Diquís spheres is accurate?",
+            options: [
+              "Hundreds of stone spheres, up to ~2.5 m and many tons, made roughly 500-1500 CE per UNESCO documentation, purpose honestly unknown; World Heritage 2014",
+              "They were made by Atlantean refugees, per UNESCO",
+              "They are natural formations, not artifacts",
+              "Exactly twelve exist, all in museums",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Local granodiorite, known pecking/grinding techniques, dated cultural sequence — but original contexts were largely wrecked by plantation clearing, so purpose readings (rank, alignments) stay arguments.",
+            sourceLessonSlug: "meso-southern-frontier",
+          },
+          {
+            prompt: "Why are the spheres a 'pseudo-archaeology magnet,' and what defuses the mystery-mongering?",
+            options: [
+              "Unknown purpose invites Atlantis/'impossible precision' claims; the sober record — local stone, excavated workshops, known techniques, dated sequence — needs no lost continents",
+              "Because archaeologists themselves endorse Atlantis",
+              "Because the stone is extraterrestrial",
+              "Nothing defuses it; the mystery is total",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Same pattern as the pyramids: a genuine unknown (purpose) gets inflated into a fake unknown (makers), erasing documented Indigenous craftsmanship.",
+            sourceLessonSlug: "meso-southern-frontier",
+          },
+          {
+            prompt: "What characterizes the Isthmo-Colombian 'gold country'?",
+            options: [
+              "Lost-wax cast gold pendants (frogs, eagles, composites) in a style world from Costa Rica through Panama to Colombia — e.g., the Coclé burials at Sitio Conte (c. 700-1000 CE)",
+              "Iron smelting and steel swords",
+              "A total absence of metalwork",
+              "Silver coinage minted for trade with Spain",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Columbus met gold-wearing chiefdoms on this coast in 1502 — the wealth that convinced Spain the isthmus mattered (Quilter & Hoopes, 2003).",
+            sourceLessonSlug: "meso-southern-frontier",
+          },
+          {
+            prompt: "The direction of metallurgy's spread in the Americas was…",
+            options: [
+              "from South America northward — reaching West Mexico by sea late (c. 600-800 CE), where the Purépecha pushed bronze furthest",
+              "from Mexico southward to Peru",
+              "from Europe westward before Columbus",
+              "invented independently in Yucatán first",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Technology flows along existing routes in whatever direction — the hemisphere's deepest metalworking traditions were southern (Hosler, 1994).",
+            sourceLessonSlug: "meso-southern-frontier",
+          },
+        ],
+      },
+    },
   ],
 };
