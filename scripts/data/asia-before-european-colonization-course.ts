@@ -703,5 +703,321 @@ That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died
         ],
       },
     },
+    // ────────────── SECTION 3 · EAST ASIA ──────────────
+    {
+      slug: "asia-han-tang",
+      title: "7 · Han and Tang China: the census, the paper, the printed book",
+      section: "Section 3 · East Asia: China, Japan, Korea",
+      body: `While Rome ruled the Mediterranean, an empire of comparable scale ruled East Asia, and unlike almost everything in this course so far, we can count its people, because it counted them itself.
+
+The **Han dynasty** (206 BCE-220 CE, with a brief interruption) governed from the Yellow River plain, and its census of **2 CE** survives in the official histories: roughly **57 million registered persons** (Ebrey, 2010). Pause on what kind of evidence that is. Not a modern reconstruction, not an estimate with error bars: an administrative document produced by the state it describes, which is why historians treat early imperial China as one of the best-documented societies of the ancient world. The Han state ran on registered households, salaried officials, and, from **124 BCE**, an imperial academy training men in the Confucian classics for office; the fully developed written examination system came later (under the Sui from 605, expanded under Tang and Song), but the idea that office should rest on tested learning starts here.
+
+Two Han-era items changed the world. First, the westward routes: in **138 BCE** Emperor Wu sent the envoy **Zhang Qian** into Central Asia, and the connections that grew from such missions became the network later called the Silk Roads, Section 5's subject (Hansen, 2012). Second, **paper**. The official history credits the court officer **Cai Lun** with presenting a refined papermaking process in **105 CE**; archaeologists have found paper older than that, so teach it precisely: Cai Lun standardized and spread a technology already emerging, and within a few centuries paper had replaced bamboo and silk as China's writing surface, many hundreds of years before it reached Europe via the Islamic world (Ebrey, 2010).
+
+After the Han fell in 220 CE, China spent over three centuries divided, a reminder this course flags deliberately: Chinese history is not an unbroken imperial escalator; unification is an achievement, not a default. The Sui reunified in the 580s, and the **Tang dynasty** (**618-907**) built on it the empire usually counted among the most cosmopolitan of the entire premodern world. Its capital **Chang'an** (modern Xi'an) was a planned grid city of, by common estimates, about a million people, with markets full of Sogdian, Persian, and other foreign merchants, Buddhist monasteries alongside Daoist temples, and communities of Nestorian Christians and Muslims; a stone stele erected in 781 still records the Christian community's official standing (Benn, 2002). The monk **Xuanzang** left Chang'an in 629 to study at Nalanda in India and returned in 645 with hundreds of scriptures; his journey connects this lesson to the Gupta lesson you already read.
+
+Tang China also gives this course its single most checkable artifact. In 1900, a sealed cave library was discovered at **Dunhuang**, a Silk Road oasis town, containing tens of thousands of manuscripts. Among them was a printed scroll of the **Diamond Sutra**, a Buddhist text, carrying a dated colophon equivalent to **11 May 868**. It is the earliest securely dated complete printed book known anywhere, produced by woodblock, and you can examine it today in the British Library's digital collections (British Library, n.d.; Hansen, 2012). Europe's first printed books are nearly six centuries younger.
+
+The honest ledger, as always: the **An Lushan rebellion** (**755-763**) devastated the Tang state. You will sometimes read that it killed 36 million people, because registered population in the censuses fell by roughly that much. That inference is rejected by historians: the war shattered the census system itself, so millions vanished from the *registers*, not necessarily from the world (Benn, 2002). It is the Maddison lesson again, in Chinese form: know what a number is actually counting before you repeat it.
+
+:::reveal Why is the Diamond Sutra of 868 the course's "most checkable artifact," and what exactly does it prove? ||| It is a physically surviving woodblock-printed scroll with a colophon dated to 11 May 868, found in the Dunhuang cave library and held by the British Library, where anyone can examine it digitally. It proves complete printed books existed in Tang China nearly six centuries before Europe's first, with no reconstruction or estimate involved: the artifact itself carries its date.
+
+## Sources
+- Ebrey, P. B. (2010). *The Cambridge illustrated history of China* (2nd ed.). Cambridge University Press.
+- Benn, C. (2002). *China's golden age: Everyday life in the Tang dynasty*. Oxford University Press.
+- Hansen, V. (2012). *The Silk Road: A new history*. Oxford University Press.
+- British Library. (n.d.). *The Diamond Sutra* (Or.8210/P.2). https://www.bl.uk/`,
+      recallContent: [
+        {
+          prompt: "What makes the Han census of 2 CE a different kind of evidence from Maddison's GDP shares?",
+          answer:
+            "It is an administrative document produced by the state it describes (roughly 57 million registered persons), not a modern reconstruction. Its limits are different too: it counts registered people, so its later collapses can reflect broken registration rather than deaths, as the An Lushan case shows.",
+        },
+        {
+          prompt: "State the paper and printing facts precisely, with dates and hedges.",
+          answer:
+            "Paper: the official history credits Cai Lun with a refined process in 105 CE, but archaeology finds older paper, so he standardized an emerging technology. Printing: the Diamond Sutra, woodblock-printed with a colophon dated 11 May 868, found at Dunhuang and held by the British Library, is the earliest securely dated complete printed book.",
+        },
+      ],
+    },
+    {
+      slug: "asia-song-revolution",
+      title: "8 · The Song economic revolution",
+      section: "Section 3 · East Asia: China, Japan, Korea",
+      body: `If you could visit one economy in the year 1100, the strongest candidate on the evidence would be **Song dynasty China** (960-1279). This lesson is about what is documented there, and it is the heart of the course's economic thesis, so the sourcing discipline is at maximum.
+
+The historian Mark Elvin (1973) called what happened under the Song a **"medieval economic revolution,"** and the label has stuck in the scholarship. The ingredients, each attributable: population growth past, by common estimates, **100 million** (roughly double the Han census world, and probably then the largest polity on earth); fast-ripening Champa rice strains that allowed double-cropping in the south; dense commercial networks of markets and canals; and cities of a scale Europe would not see for centuries. Northern Song **Kaifeng** and Southern Song **Hangzhou** each held, by common estimates, around a million people. When Marco Polo saw Hangzhou a century later under Mongol rule, he called it the finest and noblest city in the world; that is his claim, from a text historians use with care, but the city's documented size makes the awe plausible (Ebrey, 2010; Elvin, 1973).
+
+Now the famous inventions, each with its primary source named, because "China invented X" is exactly the kind of claim this course refuses to leave vague:
+
+- **Printing at scale.** Woodblock printing (Tang, previous lesson) became a mass industry under the Song: the state printed the Confucian canon, and commercial printers sold everything from exam guides to medical manuals. **Movable type** was invented here too: the scholar-official **Shen Kuo**, in his *Dream Pool Essays* (**1088**), describes the artisan **Bi Sheng** making movable type of baked clay in the **1040s**. Movable type remained less practical than woodblock for Chinese's thousands of characters, which is an honest wrinkle worth knowing: an invention can be real and still not dominant in its homeland.
+- **Gunpowder as a weapon.** The earliest surviving printed gunpowder formulas appear in the official military manual *Wujing Zongyao* (**1044**), and Song forces fielded fire lances, bombs, and rockets in their long wars. Gunpowder's later journey west, via the Mongol era, remade every battlefield on earth.
+- **The magnetic compass at sea.** Shen Kuo (1088) describes the magnetized needle; **Zhu Yu's** *Pingzhou Ketan* (early 1100s) records ships' pilots using it in overcast weather, the earliest known account of marine compass navigation anywhere.
+- **Paper money.** In Sichuan in the early **1000s**, merchant promissory notes evolved into **jiaozi**, and from the 1020s the Song state issued them: the world's first government paper currency, four centuries before anything comparable in Europe (Ebrey, 2010; Elvin, 1973).
+
+Add the heavy industry, with its estimate labeled as one: the economic historian Robert Hartwell (1962) estimated Northern Song iron production at roughly **125,000 tons a year by 1078**, coal-fired in part, a figure later scholars have debated and revised but which even skeptics place far beyond anything contemporary in Europe. And add the institutional change: cheap printed books plus expanded civil-service examinations meant the Song bureaucracy drew on a broader pool of tested candidates than any earlier state, though wealthy families still held real advantages, so "meritocracy" deserves its quotation marks (Ebrey, 2010).
+
+The honest ledger. Song China was not a superpower in the military sense: it paid negotiated annual payments to the Khitan Liao state after the treaty of **1005**, lost its north to the Jurchen Jin in **1127**, and fell to the Mongols in **1279**. Wealth and vulnerability coexisted; the course notes it because triumphalism is just romance with a flag. And one social datum belongs in the same ledger: it was during the Song that **foot binding** began spreading among elite women, a documented, centuries-long harm that no account of the era's brilliance may omit (Ebrey, 2010).
+
+:::reveal Name the primary sources, with dates, behind three Song inventions, and the estimate the course labels as an estimate. ||| Movable type: Shen Kuo's Dream Pool Essays (1088) describes Bi Sheng's clay type of the 1040s. Gunpowder: the earliest printed formulas are in the Wujing Zongyao (1044). Marine compass: Zhu Yu's Pingzhou Ketan (early 1100s) records pilots navigating by needle, after Shen Kuo described the magnetized needle. The labeled estimate: Hartwell's (1962) figure of roughly 125,000 tons of iron a year by 1078, debated and revised since.
+
+## Sources
+- Elvin, M. (1973). *The pattern of the Chinese past*. Stanford University Press.
+- Ebrey, P. B. (2010). *The Cambridge illustrated history of China* (2nd ed.). Cambridge University Press.
+- Hartwell, R. (1962). A revolution in the Chinese iron and coal industries during the Northern Sung, 960-1126 A.D. *The Journal of Asian Studies, 21*(2), 153-162.
+- Hansen, V. (2020). *The year 1000: When explorers connected the world and globalization began*. Scribner.`,
+      recallContent: [
+        {
+          prompt: "What did Elvin (1973) mean by the Song 'medieval economic revolution'? List the ingredients.",
+          answer:
+            "Population past a commonly estimated 100 million; Champa rice double-cropping; dense market and canal networks; cities of about a million (Kaifeng, Hangzhou); mass printing; the world's first government paper money (jiaozi, from the 1020s); large-scale, partly coal-fired iron production (Hartwell's estimate ~125,000 tons/year by 1078, labeled an estimate).",
+        },
+        {
+          prompt: "What belongs on the Song lesson's honest ledger?",
+          answer:
+            "Military vulnerability alongside wealth: negotiated payments to the Liao after 1005, loss of the north to the Jin in 1127, conquest by the Mongols in 1279. And foot binding began spreading among elite women during the Song, a documented harm no account of the era may omit.",
+        },
+      ],
+    },
+    {
+      slug: "asia-japan-korea",
+      title: "9 · Japan and Korea: the court, the sword, and the metal type",
+      section: "Section 3 · East Asia: China, Japan, Korea",
+      body: `East Asia is not China with a coastline. Japan and Korea each built distinctive states and cultures in constant, selective conversation with their giant neighbor, borrowing what they wanted and refusing the rest, and each holds a world first that most students never hear about.
+
+**Japan: from the Heian court to the shogunates.** In **794** the imperial court settled at Heian-kyo (modern Kyoto), opening the **Heian period** (794-1185). Its aristocracy produced one of the great literatures of the world, much of it written by women: court ladies wrote in the newly developed *kana* syllabaries while men often wrote in prestige Chinese, and around **1010** the lady-in-waiting **Murasaki Shikibu** completed *The Tale of Genji*, a psychological prose narrative of enormous length and subtlety that is **often called the world's first novel**; the course keeps the "often called" because the label depends on how you define the genre (Totman, 2000). In **1185** the Minamoto warrior clan crushed its rivals, and in **1192** Minamoto no Yoritomo took the title **shogun**: the start of nearly **700 years** in which emperors reigned as sacred figureheads in Kyoto while warrior governments actually ruled. Test that against everything you assume about monarchy; the dual structure lasted until 1868. The Kamakura shogunate repelled two **Mongol invasions (1274 and 1281)**, both broken partly by storms later mythologized as the *kamikaze*, "divine winds" (Totman, 2000). After a long era of civil war, **Tokugawa Ieyasu** won the battle of Sekigahara in **1600** and became shogun in **1603**; the Tokugawa peace lasted two and a half centuries. Its foreign policy, often summarized as *sakoku*, "closed country," deserves this course's precision: Japan expelled most Europeans and banned Christianity, but maintained managed trade with the Dutch at Dejima in Nagasaki harbor, with China, with Korea through Tsushima, and with the Ryukyu kingdom. Managed and narrow is not sealed (Totman, 2000).
+
+**Korea: the peninsula that printed first.** The kingdom of **Silla** unified most of the peninsula by **676**, in alliance with Tang China and then in a successful war to push Tang forces back out, which is Korean history's recurring geometry: absorb from the neighbor, resist the neighbor. The **Goryeo** dynasty (**918-1392**) gave Korea its Western name and two of the world's great book projects. The **Tripitaka Koreana**, the Buddhist canon carved onto more than **81,000 wooden printing blocks** in the mid-1200s (while Mongol armies were ravaging the country), survives complete at Haeinsa temple and is UNESCO-listed (UNESCO World Heritage Centre, n.d.). And in **1377**, a Goryeo temple printed the **Jikji**, an anthology of Zen teachings, using **movable metal type**: it is the oldest extant book printed with movable metal type anywhere, roughly **78 years before Gutenberg's Bible**, a priority UNESCO recognized by inscribing it in the Memory of the World register in 2001. The surviving volume is held today at the Bibliothèque nationale de France (UNESCO, 2001; Seth, 2011). Say it precisely: Gutenberg's system, developed independently with alloy type, a press, and alphabetic script, launched mass printing in Europe; Korea's priority in the technology itself is documented and physical.
+
+The **Joseon** dynasty (**1392-1897**) added the innovation this course finds most striking of all. In **1443**, King **Sejong** and his scholars created **Hangul**, a new alphabet engineered for the Korean language, promulgated in 1446 in a document, the *Hunminjeongeum*, that explains its purpose: so that ordinary people who could not learn classical Chinese characters might easily write. A writing system with a named inventor, a stated design rationale, and a publication date is almost unique in world history (Seth, 2011). Literati resistance kept Chinese characters dominant in elite life for centuries, another honest wrinkle, but the alphabet survived to become modern Korea's script.
+
+Keep both countries on your Section 6 radar: Joseon Korea ran on a large hereditary slave class (the *nobi*), and Japan under Hideyoshi launched a devastating invasion of Korea in the 1590s. The honest record includes them, and this course will get there.
+
+:::reveal What exactly is the Jikji's documented claim to priority, stated with the precision the course demands? ||| Printed at a Goryeo temple in 1377, the Jikji is the oldest EXTANT book printed with movable METAL type, roughly 78 years before Gutenberg's Bible; UNESCO inscribed it in the Memory of the World register (2001) and the surviving volume is at the Bibliothèque nationale de France. The precise claim is priority of the surviving artifact and the technology, not that Gutenberg copied it: his independently developed press-and-alloy system is what launched mass printing in Europe.
+
+## Sources
+- Totman, C. (2000). *A history of Japan*. Blackwell.
+- Seth, M. J. (2011). *A history of Korea: From antiquity to the present*. Rowman & Littlefield.
+- UNESCO. (2001). *Baegun hwasang chorok buljo jikji simche yojeol (vol. II), the second volume of "Anthology of Great Buddhist Priests' Zen Teachings"* (Memory of the World Register). UNESCO.
+- UNESCO World Heritage Centre. (n.d.). *Haeinsa Temple Janggyeong Panjeon, the depositories for the Tripitaka Koreana woodblocks*. https://whc.unesco.org/en/list/737/`,
+      recallContent: [
+        {
+          prompt: "Describe Japan's dual political structure and give its dates.",
+          answer:
+            "From Minamoto no Yoritomo's appointment as shogun in 1192 until 1868, emperors reigned as sacred figureheads in Kyoto while warrior governments (Kamakura, Ashikaga, then Tokugawa from 1603) actually ruled: nearly 700 years of reign without rule.",
+        },
+        {
+          prompt: "What makes Hangul almost unique among the world's writing systems?",
+          answer:
+            "It has a named creator (King Sejong and his scholars, 1443), a stated design rationale (so ordinary people unable to learn Chinese characters could write, per the Hunminjeongeum), and a publication date (1446). Elite resistance kept Chinese characters dominant for centuries, but the alphabet became modern Korea's script.",
+        },
+      ],
+    },
+    {
+      slug: "asia-quiz-3",
+      title: "Section 3 quiz · East Asia",
+      section: "Section 3 · East Asia: China, Japan, Korea",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does the Han census of 2 CE record, and why does the course treat it as special evidence?",
+            options: [
+              "Roughly 57 million registered persons; it is an administrative document from the state itself, not a modern reconstruction",
+              "Exactly 100 million citizens, counted by Roman envoys",
+              "Only the population of the capital",
+              "Nothing; it is legendary",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Early imperial China counted its own people, which is why it ranks among the best-documented ancient societies. Its limit: it counts the registered, which matters for reading later census collapses.",
+            sourceLessonSlug: "asia-han-tang",
+          },
+          {
+            prompt: "How does the course state the paper claim precisely?",
+            options: [
+              "The official history credits Cai Lun with a refined process in 105 CE, but older paper exists archaeologically, so he standardized an emerging technology",
+              "Cai Lun invented paper from nothing in 105 CE",
+              "Paper was invented in Egypt and imported to China",
+              "Paper is a Tang invention of the 700s",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Getting attribution right means separating the documented credit (the Hou Hanshu's account of Cai Lun) from the archaeological record, which shows earlier paper.",
+            sourceLessonSlug: "asia-han-tang",
+          },
+          {
+            prompt: "What is the Diamond Sutra of 868?",
+            options: [
+              "The earliest securely dated complete printed book, a woodblock scroll from Dunhuang with a colophon equivalent to 11 May 868, now in the British Library",
+              "The first book printed with movable metal type",
+              "A Confucian examination manual",
+              "A map of the Silk Roads",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The artifact carries its own date, which is why the course calls it its most checkable object: no reconstruction is involved.",
+            sourceLessonSlug: "asia-han-tang",
+          },
+          {
+            prompt: "Why do historians reject the claim that the An Lushan rebellion killed 36 million people?",
+            options: [
+              "The figure comes from a fall in registered census population, and the war broke the census system itself; missing from the registers is not the same as dead",
+              "Because the rebellion never happened",
+              "Because Tang China had fewer than 36 million people",
+              "Because the figure was invented by European historians",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Know what a number is counting before repeating it: the same discipline the course applies to Maddison's shares and Ashoka's edict figures.",
+            sourceLessonSlug: "asia-han-tang",
+          },
+          {
+            prompt: "What was Chang'an under the Tang?",
+            options: [
+              "A planned grid capital of about a million people (by common estimates), with foreign merchant communities, Buddhist monasteries, and documented Christian and Muslim presence",
+              "A small military outpost on the steppe",
+              "A port city ruled by Persian merchants",
+              "The capital of Heian Japan",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 781 stele recording the Nestorian Christian community's standing still survives; Xuanzang left from here in 629 for Nalanda in India.",
+            sourceLessonSlug: "asia-han-tang",
+          },
+          {
+            prompt: "Which primary source documents Bi Sheng's invention of movable type?",
+            options: [
+              "Shen Kuo's Dream Pool Essays (1088), describing clay movable type made in the 1040s",
+              "The Wujing Zongyao (1044)",
+              "Marco Polo's Travels",
+              "The Hunminjeongeum (1446)",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An honest wrinkle: movable type stayed less practical than woodblock for Chinese's thousands of characters, so the invention was real but not dominant at home.",
+            sourceLessonSlug: "asia-song-revolution",
+          },
+          {
+            prompt: "Where do the earliest surviving printed gunpowder formulas appear?",
+            options: [
+              "In the Song military manual Wujing Zongyao, 1044",
+              "In Roger Bacon's writings, 1267",
+              "In a Mongol chronicle of 1240",
+              "In the Diamond Sutra, 868",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Song forces fielded fire lances, bombs, and rockets; the technology moved west during the Mongol era and remade battlefields everywhere.",
+            sourceLessonSlug: "asia-song-revolution",
+          },
+          {
+            prompt: "What is the earliest known account of marine compass navigation?",
+            options: [
+              "Zhu Yu's Pingzhou Ketan (early 1100s), describing pilots steering by the needle in overcast weather",
+              "A Viking saga of the 900s",
+              "Columbus's log of 1492",
+              "Ibn Battuta's travels of the 1330s",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Shen Kuo had described the magnetized needle in 1088; Zhu Yu records its use at sea, which is the navigational first.",
+            sourceLessonSlug: "asia-song-revolution",
+          },
+          {
+            prompt: "What was jiaozi?",
+            options: [
+              "The world's first government-issued paper money, evolving from Sichuan merchant notes and state-issued from the 1020s",
+              "A Song tax on iron",
+              "The Mongol postal relay system",
+              "A type of movable metal type",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Government paper currency operated in Song China roughly four centuries before anything comparable in Europe.",
+            sourceLessonSlug: "asia-song-revolution",
+          },
+          {
+            prompt: "How does the course present Hartwell's Song iron figure?",
+            options: [
+              "As his estimate (~125,000 tons/year by 1078), debated and revised since, though even skeptics place Song output far beyond contemporary Europe",
+              "As an exact measurement from Song records",
+              "As disproven and worthless",
+              "As a figure for steel, not iron",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Labeled estimates with named authors can be argued with; unattributed 'facts' cannot. That is the course's standing rule for numbers.",
+            sourceLessonSlug: "asia-song-revolution",
+          },
+          {
+            prompt: "What belongs on the Song lesson's honest ledger alongside the economic revolution?",
+            options: [
+              "Payments to the Liao after 1005, loss of the north in 1127, conquest by the Mongols in 1279, and the spread of foot binding among elite women",
+              "Nothing; the Song era had no dark side",
+              "The destruction of all Buddhist temples",
+              "A ban on all foreign trade",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Wealth and vulnerability coexisted, and the era's documented social harms are part of its record. Triumphalism is romance with a flag.",
+            sourceLessonSlug: "asia-song-revolution",
+          },
+          {
+            prompt: "What was the Heian period's most famous literary work, and how does the course label it?",
+            options: [
+              "Murasaki Shikibu's Tale of Genji (c. 1010), 'often called' the world's first novel, with the hedge kept because the label depends on defining the genre",
+              "The Kojiki, definitively the world's first novel",
+              "A war chronicle written by samurai",
+              "A Chinese-language legal code",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Much of Heian literature was written by court women using the kana syllabaries while men wrote prestige Chinese.",
+            sourceLessonSlug: "asia-japan-korea",
+          },
+          {
+            prompt: "What does the course say sakoku ('closed country') actually was?",
+            options: [
+              "Managed, narrow trade: Europeans mostly expelled, but exchange continued with the Dutch at Dejima, China, Korea via Tsushima, and Ryukyu",
+              "Total isolation with zero foreign contact for 250 years",
+              "A ban on Japanese ships only",
+              "An open-ports policy",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Managed and narrow is not sealed. Precision about sakoku is the same habit as precision about 'European colonization.'",
+            sourceLessonSlug: "asia-japan-korea",
+          },
+          {
+            prompt: "What is the Jikji's precise claim to fame?",
+            options: [
+              "Printed in Goryeo Korea in 1377, it is the oldest extant book printed with movable metal type, roughly 78 years before Gutenberg's Bible",
+              "It is the first printed book of any kind",
+              "It proves Gutenberg copied Korean technology",
+              "It is the oldest surviving paper document",
+            ],
+            correctIndex: 0,
+            explanation:
+              "UNESCO inscribed it in the Memory of the World register in 2001; the volume is held at the Bibliothèque nationale de France. Gutenberg's independent press-and-alloy system is what launched mass printing in Europe.",
+            sourceLessonSlug: "asia-japan-korea",
+          },
+          {
+            prompt: "Why does the course call Hangul 'almost unique' among writing systems?",
+            options: [
+              "It has a named creator (Sejong and his scholars, 1443), a stated purpose (literacy for ordinary people), and a promulgation document with a date (Hunminjeongeum, 1446)",
+              "It is the world's oldest alphabet",
+              "It was the first script ever printed",
+              "It descends directly from Chinese characters",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Most scripts evolve anonymously over centuries; Hangul was engineered, documented, and dated, though elite resistance kept Chinese characters dominant for centuries after.",
+            sourceLessonSlug: "asia-japan-korea",
+          },
+        ],
+      },
+    },
   ],
 };
