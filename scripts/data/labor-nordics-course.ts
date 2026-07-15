@@ -646,5 +646,319 @@ Sit with what that gives you. This is not two different countries with a hundred
         ],
       },
     },
+
+    // ────────────── SECTION 3 · SELF-REGULATION: THE STATE STEPS BACK ──────────────
+    {
+      slug: "nordic-saltsjobaden",
+      title: "6 · Sweden, 1938: the state agrees to stay out (Saltsjöbaden)",
+      section: "Section 3 · Self-regulation — the state that stepped back by agreement",
+      body: `You now know *that* Swedish wages are set by contract rather than by law (Section 1) and *why* Swedish unions are strong enough to do the setting (Section 2). This section answers the remaining question: **how did a country decide, on purpose, that the government would stay out of the labour market?** In Sweden, the answer has a place-name attached: **Saltsjöbaden**.
+
+**The background is not gentle.** The 1920s and early 1930s in Sweden were years of hard, sometimes violent industrial conflict. The low point came in May **1931** at **Ådalen**, where soldiers opened fire on a workers' demonstration and **five people were killed** (the Ådalen shootings). Sweden in that decade had, relative to its size, some of the highest strike and lockout figures in the industrialised world. This is important context, because the calm, consensual "Swedish model" people admire today was not a national temperament — **it was a settlement that hard conflict forced.**
+
+**The political pressure.** From 1932 the Social Democrats governed Sweden, and their preference was clear: they would rather the two sides of industry **regulate themselves** than have the state legislate the details of labour relations — but if the parties could not keep the peace, the government was prepared to step in with laws. That threat of legislation hung over the negotiating table. The union confederation (**LO**, *Landsorganisationen*) and the employers' confederation (**SAF**, *Svenska Arbetsgivareföreningen*) each preferred to keep control of their own affairs rather than hand the rulebook to politicians.
+
+**The deal.** In December **1938**, LO and SAF signed the **Basic Agreement** (*Saltsjöbadsavtalet* / *Huvudavtalet*), named after the seaside resort of Saltsjöbaden where they negotiated it. It was not a wage deal. It was a **treaty about how to have disputes**: procedures for negotiation, rules for handling conflicts, limits on industrial action that would harm third parties or essential functions, and a shared commitment to settle things between themselves rather than through the state.
+
+The phrase Swedes use for what came out of it is **"the spirit of Saltsjöbaden"** (*Saltsjöbadsandan*) — a norm of pragmatic, businesslike cooperation between organised labour and organised capital, both strong, both disciplined, both preferring the negotiating table to the legislature *and* to the street.
+
+**Here is why this matters for everything else in the course.** The absence of a minimum-wage law, the absence of an American-style state referee, the whole "self-regulation" answer to Question 3 — none of that is a gap where a law should be. **It is a deliberately maintained space, created by an agreement between two organised sides who both decided they would rather govern the labour market themselves.** Self-regulation only works if *both* sides are strong and organised enough to make and keep bargains. Weaken either side badly enough — say, let union density erode (Section 6) — and the space that self-regulation fills starts to look like a vacuum. Which is when someone reaches for a law.
+
+:::reveal What was the Saltsjöbaden Basic Agreement (1938), and why does the course call the "Swedish model" a settlement rather than a national temperament? ||| It was a 1938 agreement between the union confederation LO and the employers' confederation SAF setting the rules for how to conduct and resolve industrial disputes — the foundation of Swedish self-regulation ("the spirit of Saltsjöbaden"). The course calls it a settlement because it followed a decade of intense, sometimes deadly conflict (the Ådalen shootings, 1931) and a government threat to legislate — the consensus was forced by conflict and a shared preference to keep the state out, not inherited from a calm national character.
+
+## Sources
+- Nycander, S. (2008). *Makten över arbetsmarknaden: Ett perspektiv på Sveriges 1900-tal* [Power over the labour market] (2nd ed.). SNS Förlag.
+- Kjellberg, A. (2017). *The Membership Development of Swedish Trade Unions and Union Confederations Since the End of the Nineteenth Century* (Studies in Social Policy, Industrial Relations, Working Life and Mobility). Lund University, Department of Sociology. https://portal.research.lu.se/en/publications/
+- ETUI / Worker Participation. (n.d.). *Sweden: Collective bargaining*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries/sweden`,
+      recallContent: [
+        {
+          prompt: "Who signed the Saltsjöbaden Basic Agreement, in what year, and what did it actually regulate?",
+          answer:
+            "The union confederation LO and the employers' confederation SAF, in December 1938. It was not a wage deal but a 'treaty about how to have disputes' — procedures for negotiation, handling conflicts, limiting action that harms third parties, and settling matters between the two sides rather than through the state.",
+        },
+        {
+          prompt: "What was the Ådalen event (1931), and why is it in this lesson?",
+          answer:
+            "In May 1931 soldiers fired on a workers' demonstration at Ådalen, Sweden, killing five people. It is in the lesson to show the admired, consensual 'Swedish model' was a settlement forced by a decade of hard, sometimes deadly conflict — not a calm national temperament.",
+        },
+      ],
+    },
+    {
+      slug: "nordic-september-compromise",
+      title: "7 · Denmark, 1899: the constitution of the labour market",
+      section: "Section 3 · Self-regulation — the state that stepped back by agreement",
+      body: `Denmark got to self-regulation the same way Sweden did — through a founding agreement after a brutal fight — but it got there **almost forty years earlier**, and that head start is one of the real differences between the two countries this course keeps insisting on.
+
+**The fight.** In **1899**, Denmark saw one of the largest labour conflicts, relative to the size of the country, in European history: the **Great Lockout of 1899** (*Storlockouten*). Employers, newly organised, locked out tens of thousands of workers across many trades for about **four months** in a trial of strength with the young union movement. Both sides had recently built national organisations — the employers' confederation **DA** (*Dansk Arbejdsgiverforening*, founded 1896) and the union confederation then called **De samvirkende Fagforbund** (DsF, founded 1898, the ancestor of today's Danish LO/FH).
+
+**The deal.** The lockout ended in September 1899 with the **September Compromise** (*Septemberforliget*), signed on **5 September 1899**. It is one of the oldest agreements of its kind anywhere, and Danes call it exactly what it is: **"the constitution of the labour market"** (*arbejdsmarkedets grundlov*). Two reciprocal recognitions sat at its core:
+
+- **The employers recognised the workers' right to organise** — to form and belong to unions and to be represented by them.
+- **The unions recognised the employers' "right to manage and direct work"** (*ledelsesretten*) — the principle that, subject to the agreements, it is the employer who organises and directs the work.
+
+That trade — *we recognise your unions; you recognise our authority to run the business* — plus a framework for how conflicts must be conducted, became the permanent foundation of the Danish system. It has been revised many times since, but it has never been replaced, and it is why Denmark, like Sweden, runs on agreements between organised parties rather than on a labour code handed down by the state.
+
+**Why the forty-year gap matters — Sweden is not Denmark.** Denmark's founding settlement (1899) predates Sweden's (1938) by a generation. Danish self-regulation is therefore older, more deeply habitual, and built even more around the *cross-sectoral* peak organisations (DA and the union confederation) negotiating the ground rules for everyone. It is also part of why Danish flexicurity (Section 4) — a genuinely distinctive Danish invention — could take root: a labour market where dismissal was governed by agreement rather than by protective statute had room to make "easy to fire, but well cushioned" into a deliberate national bargain. Sweden's model, by contrast, grew a stronger statutory layer in the 1970s (including its Employment Protection Act and its Co-determination Act). **Same family, different houses.**
+
+:::reveal What was the September Compromise (Denmark, 1899), and what two reciprocal recognitions did it contain? ||| It was the 1899 agreement between the employers' confederation DA and the union confederation (then De samvirkende Fagforbund) that ended the Great Lockout — "the constitution of the Danish labour market." Its core trade: employers recognised the workers' right to organise, and unions recognised the employers' right to manage and direct work (ledelsesretten), within a framework of rules for conducting disputes.
+
+## Sources
+- Due, J., Madsen, J. S., & Jensen, C. S. (1994). *The Survival of the Danish Model: A Historical Sociological Analysis of the Danish System of Collective Bargaining*. DJØF Publishing.
+- ETUI / Worker Participation. (n.d.). *Denmark: Collective bargaining*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries/denmark
+- Eurofound. (n.d.). *Denmark: Industrial relations and social dialogue*. European Foundation for the Improvement of Living and Working Conditions. https://www.eurofound.europa.eu/en/country/denmark`,
+      recallContent: [
+        {
+          prompt: "What is the September Compromise (1899), and why is it called 'the constitution of the labour market'?",
+          answer:
+            "The 1899 Danish agreement between the employers' confederation DA and the union confederation that ended the Great Lockout. It is the founding, never-replaced framework of Danish self-regulation: employers recognised the right to organise, unions recognised the employer's right to manage and direct work (ledelsesret), within agreed rules for disputes.",
+        },
+        {
+          prompt: "Give one way the timing of the two founding agreements marks Denmark as distinct from Sweden.",
+          answer:
+            "Denmark's settlement (1899) predates Sweden's (1938) by about forty years, so Danish self-regulation is older and built even more around cross-sectoral peak organisations — part of why the distinctively Danish flexicurity bargain (easy dismissal, well cushioned) could take root, while Sweden grew a stronger statutory layer in the 1970s.",
+        },
+      ],
+    },
+    {
+      slug: "nordic-sectoral-wage-setting",
+      title: "8 · So how is the wage floor actually set — with no law?",
+      section: "Section 3 · Self-regulation — the state that stepped back by agreement",
+      body: `Put Section 1 (no minimum-wage law) together with this section (self-regulation) and a practical question falls out: *if there's no statute and no wage board, who actually decides what the floor is this year — and what stops a firm from simply ignoring it?* Here is the machinery.
+
+**1. Bargaining happens at the sector level, and one sector leads.** A union federation and an employers' association negotiate an agreement for a whole industry — metalworking, retail, transport, hotels — including its minimum rates. In Sweden, manufacturing/export industry deliberately settles **first**, and its settlement sets the norm — the **"mark"** (*märket*) — that the other sectors are expected to follow. This norm-setting role was formalised in Sweden's **Industrial Agreement** (*Industriavtalet*) of **1997**. Denmark runs a similar pattern, with industry (organised on the union side around CO-industri and on the employer side around the Confederation of Danish Industry, DI) leading the round. The point of letting the internationally exposed sector go first is discipline: wages across the economy stay tethered to what the country's exporters can actually afford.
+
+**2. There is no legal extension — and that is the deep contrast with Germany and France.** In Germany, coverage rides on employers belonging to employers' associations; in France, the state *extends* agreements by decree to cover everyone. **Sweden and Denmark do neither by law.** There is no government mechanism that automatically stretches a collective agreement to a firm that never signed one. Coverage is high (Section 1) because organisation is high and because signing agreements is the overwhelming norm — **not because a law forces it.**
+
+**3. So what makes a hold-out firm comply? Not a court order — a conflict.** If a company refuses to sign the relevant collective agreement, the union's tool is **industrial action**: a strike by any of its members in the firm, and — this is the Nordic superpower, and the whole of Section 4 — **sympathy action** by *other* unions to pressure the hold-out from every side (blocking its deliveries, refusing to service it, and so on). The aim is to make operating without an agreement more painful than signing one. That is how a contract-based floor is enforced in a country that refuses to legislate it: **collectively, by pressure, not by the state.** Keep this firmly in mind, because Section 5 is one long, real, unfinished example of exactly this machinery being turned on a company (Tesla) that will not sign.
+
+**4. The peace obligation is the price of the deal.** Self-regulation is not a licence for permanent warfare. Once a collective agreement is in force, the parties bound by it owe a **peace obligation** (*fredsplikt* in Swedish) — they may not take industrial action over matters the agreement covers, for the life of the agreement. In Sweden this duty sits in the **Co-determination Act** (*Medbestämmandelagen*, MBL, SFS 1976:580), which governs the right of association, collective bargaining, and industrial action. Sympathy action is permitted as an *exception*, and generally only in support of a **lawful primary conflict** — a crucial limit we will unpack in Section 4. Disputes about whether a party has breached an agreement or the peace obligation are decided by a specialist **Labour Court** (Sweden's *Arbetsdomstolen*, established 1928; Denmark's *Arbejdsretten*), not by ordinary courts or a government agency.
+
+**One line to carry out of Section 3:** the Nordic wage floor is set by organised sectors bargaining under a self-imposed constitution, enforced by collective pressure rather than by statute, and disciplined by a peace obligation and a specialist labour court. No minimum-wage law required — but a great deal of organisation, and a great deal of history, required instead.
+
+:::reveal With no minimum-wage law and no legal extension, what makes a Swedish or Danish firm that refuses to sign a collective agreement actually comply? ||| Collective pressure, not the state. The union takes industrial action — a strike, plus sympathy action by other unions (blocking deliveries, refusing to service the firm) — to make operating without an agreement more costly than signing one. Coverage rides on high organisation and the norm of signing, disciplined by a peace obligation once an agreement is in force and adjudicated by a specialist labour court.
+
+## Sources
+- Lag (1976:580) om medbestämmande i arbetslivet [Employment (Co-determination in the Workplace) Act / MBL] (Sweden). Sveriges riksdag. https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1976580-om-medbestammande-i-arbetslivet_sfs-1976-580
+- Medlingsinstitutet [Swedish National Mediation Office]. (n.d.). *The Swedish model of wage formation and the mark (märket)*. https://www.mi.se/en/
+- ETUI / Worker Participation. (n.d.). *Sweden; Denmark: Collective bargaining*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries`,
+      recallContent: [
+        {
+          prompt: "In Sweden, which sector sets the wage norm ('the mark'/märket), and what formalised that role?",
+          answer:
+            "Internationally exposed manufacturing/export industry settles first and sets the norm ('märket') that other sectors follow. Sweden's Industrial Agreement (Industriavtalet) of 1997 formalised this norm-setting role. The point is to keep economy-wide wages tethered to what exporters can afford.",
+        },
+        {
+          prompt: "What is the peace obligation (fredsplikt), and where does it sit in Swedish law?",
+          answer:
+            "Once a collective agreement is in force, the bound parties may not take industrial action over matters it covers, for the life of the agreement. In Sweden it sits in the Co-determination Act (MBL, SFS 1976:580); sympathy action is an exception, generally only to support a lawful primary conflict. Disputes go to the Labour Court (Arbetsdomstolen).",
+        },
+      ],
+    },
+    {
+      slug: "nordic-quiz-3",
+      title: "Section 3 quiz · Self-regulation and how the floor is set",
+      section: "Section 3 · Self-regulation — the state that stepped back by agreement",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What was the Saltsjöbaden Basic Agreement (1938)?",
+            options: [
+              "A Swedish statutory minimum wage",
+              "A 1938 agreement between LO (unions) and SAF (employers) setting the rules for conducting and resolving industrial disputes — the base of Swedish self-regulation",
+              "An EU directive",
+              "A wage settlement for the metal industry",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not a wage deal but a 'treaty about how to have disputes,' and the origin of 'the spirit of Saltsjöbaden.'",
+            sourceLessonSlug: "nordic-saltsjobaden",
+          },
+          {
+            prompt: "Why does the course call the consensual 'Swedish model' a settlement rather than a national temperament?",
+            options: [
+              "Because Swedes have always been calm",
+              "Because it followed a decade of intense, sometimes deadly conflict (the Ådalen shootings, 1931) and a government threat to legislate",
+              "Because the EU imposed it",
+              "Because employers invented it alone",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The calm was forced by hard conflict and a shared preference to keep the state out — not inherited from national character.",
+            sourceLessonSlug: "nordic-saltsjobaden",
+          },
+          {
+            prompt: "What happened at Ådalen in 1931?",
+            options: [
+              "A collective agreement was signed",
+              "Soldiers fired on a workers' demonstration and five people were killed",
+              "The a-kassa was created",
+              "Sweden introduced a minimum wage",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Ådalen shootings are the low point of the conflict-ridden era that Saltsjöbaden (1938) closed.",
+            sourceLessonSlug: "nordic-saltsjobaden",
+          },
+          {
+            prompt: "In the Swedish model, what does self-regulation require of BOTH sides to function?",
+            options: [
+              "That both sides be weak",
+              "That both sides be strong and organised enough to make and keep bargains",
+              "That the state set all wages",
+              "That unions have no members",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Self-regulation fills a deliberately maintained space; badly weaken either side and that space starts to look like a vacuum someone fills with a law.",
+            sourceLessonSlug: "nordic-saltsjobaden",
+          },
+          {
+            prompt: "What was the September Compromise (Denmark, 1899)?",
+            options: [
+              "A statutory minimum wage",
+              "The 1899 agreement ending the Great Lockout — 'the constitution of the Danish labour market'",
+              "A Swedish law",
+              "An EU treaty",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Signed 5 September 1899 between the employers' confederation DA and the union confederation; the founding, never-replaced framework of Danish self-regulation.",
+            sourceLessonSlug: "nordic-september-compromise",
+          },
+          {
+            prompt: "What two reciprocal recognitions sat at the core of the September Compromise?",
+            options: [
+              "The state recognised unions; unions recognised the state",
+              "Employers recognised the workers' right to organise; unions recognised the employers' right to manage and direct work (ledelsesret)",
+              "Both sides recognised a minimum wage",
+              "Employers recognised the EU; unions recognised NATO",
+            ],
+            correctIndex: 1,
+            explanation:
+              "We recognise your unions; you recognise our authority to run the business — plus agreed rules for how conflicts must be conducted.",
+            sourceLessonSlug: "nordic-september-compromise",
+          },
+          {
+            prompt: "How does the timing of the two founding agreements mark Denmark as distinct from Sweden?",
+            options: [
+              "Denmark's (1899) predates Sweden's (1938) by ~40 years, so Danish self-regulation is older and more deeply habitual",
+              "Sweden's came first, in 1899",
+              "They were signed the same year",
+              "Neither country has a founding agreement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The head start is a real Sweden-vs-Denmark difference and part of why Danish flexicurity could take root.",
+            sourceLessonSlug: "nordic-september-compromise",
+          },
+          {
+            prompt: "In Sweden, which sector settles first and sets the wage norm ('the mark'/märket)?",
+            options: [
+              "Retail",
+              "The public sector",
+              "Internationally exposed manufacturing/export industry",
+              "Agriculture",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Formalised in the Industrial Agreement (Industriavtalet) of 1997, so economy-wide wages stay tethered to what exporters can afford.",
+            sourceLessonSlug: "nordic-sectoral-wage-setting",
+          },
+          {
+            prompt: "How do Sweden and Denmark differ from Germany and France on extending agreements to non-signatory firms?",
+            options: [
+              "They extend agreements by decree, like France",
+              "They have NO legal extension — coverage is high because organisation is high and signing is the norm, not because a law forces it",
+              "They copy the German employer-association mechanism exactly",
+              "They require every firm to sign by statute",
+            ],
+            correctIndex: 1,
+            explanation:
+              "France extends by decree; Germany rides on employer-association membership; Sweden and Denmark rely on organisation and pressure, not legal extension.",
+            sourceLessonSlug: "nordic-sectoral-wage-setting",
+          },
+          {
+            prompt: "With no law and no legal extension, what forces a hold-out firm to sign a collective agreement?",
+            options: [
+              "A government fine",
+              "Industrial action — a strike plus SYMPATHY action by other unions — to make operating without an agreement more costly than signing one",
+              "An EU court order",
+              "Nothing; firms are free to ignore agreements",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Enforcement is collective and by pressure, not by the state — exactly the machinery turned on Tesla in Section 5.",
+            sourceLessonSlug: "nordic-sectoral-wage-setting",
+          },
+          {
+            prompt: "What is the peace obligation (fredsplikt)?",
+            options: [
+              "A ban on all unions",
+              "Once a collective agreement is in force, the bound parties may not take industrial action over matters it covers, for the life of the agreement",
+              "A government promise not to tax unions",
+              "A rule that strikes need police permission",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In Sweden it sits in the Co-determination Act (MBL, 1976:580). Self-regulation is not permanent warfare — the peace obligation is the price of the deal.",
+            sourceLessonSlug: "nordic-sectoral-wage-setting",
+          },
+          {
+            prompt: "Which body adjudicates disputes over collective agreements and the peace obligation in Sweden?",
+            options: [
+              "The National Labor Relations Board",
+              "The Labour Court (Arbetsdomstolen), a specialist court",
+              "The European Central Bank",
+              "The Riksdag (parliament) directly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Sweden's Arbetsdomstolen (established 1928); Denmark has the equivalent Arbejdsretten. Specialist labour courts, not a government agency.",
+            sourceLessonSlug: "nordic-sectoral-wage-setting",
+          },
+          {
+            prompt: "Which Swedish statute is named as governing the right of association, collective bargaining and industrial action?",
+            options: [
+              "The Wagner Act",
+              "The Co-determination Act (Medbestämmandelagen, MBL, SFS 1976:580)",
+              "The September Compromise",
+              "Directive (EU) 2022/2041",
+            ],
+            correctIndex: 1,
+            explanation:
+              "MBL is the named Swedish Act; the course cites it without asserting a specific paragraph it could not verify.",
+            sourceLessonSlug: "nordic-sectoral-wage-setting",
+          },
+          {
+            prompt: "Why let the internationally exposed sector bargain FIRST?",
+            options: [
+              "To pay exporters the least",
+              "For discipline — it tethers economy-wide wage growth to what the country's exporters can actually afford",
+              "Because the law requires it",
+              "To exclude the public sector from bargaining",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The 'mark' set by export industry becomes the norm other sectors follow, keeping wage growth competitive.",
+            sourceLessonSlug: "nordic-sectoral-wage-setting",
+          },
+          {
+            prompt: "What single line summarises how the Nordic wage floor is maintained?",
+            options: [
+              "A statute sets it and the police enforce it",
+              "Organised sectors bargain under a self-imposed constitution, enforced by collective pressure rather than statute, disciplined by a peace obligation and a specialist labour court",
+              "The EU sets it and extends it to all firms",
+              "Employers set it unilaterally",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No minimum-wage law required — but a great deal of organisation and history required instead.",
+            sourceLessonSlug: "nordic-sectoral-wage-setting",
+          },
+        ],
+      },
+    },
   ],
 };
