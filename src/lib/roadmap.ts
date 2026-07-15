@@ -799,6 +799,33 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   which the course explains rather than inventing). **No fabricated statistics, quotes or people**; the
   "soccer" etymology is verified as a **British** coinage and the undocumented Wreford-Brown
   attribution is explicitly **not** repeated. \`pnpm seed:courses\` picks it up.
+- ✅ **Chess: Play It, Study It, Build With It** (Sports, \`content/chess-course\`) — 34 lessons
+  across **6 sections**, each with its own quiz (banks of **15**, so the 10-question attempt cap
+  actually rotates; 90 questions, every one carrying \`explanation\` + \`sourceLessonSlug\`), 28
+  \`:::reveal\` checks (one per teaching lesson), spaced recall cards, APA 7 + \`## Sources\` throughout.
+  How to play (board, the six pieces, check/mate/stalemate, castling, en passant, promotion,
+  algebraic notation) · **the FIDE Laws of Chess with VERIFIED article numbers** — touch-move is
+  **Art. 4.3**, and the claimed-vs-automatic draw distinction most summaries miss is taught
+  head-on (threefold **9.2** / fifty-move **9.3** are CLAIMED; fivefold **9.6.1** / 75-move
+  **9.6.2** are AUTOMATIC; flag-fall **6.9** with its no-possible-mate draw exception; rapid/blitz
+  bounds from **Appendices A/B**; where a sub-claim couldn't be pinned to a number it's taught
+  without one · strategy (opening principles over memorization, forks/pins/skewers, discovered
+  attacks, endgames — piece values flagged as **coaching convention, not law**) · **verified
+  history**: chaturanga (~6th-c. India) → shatranj → the c. 1475 "mad queen" revolution (Murray
+  1913; Yalom 2004), Steinitz–Zukertort **1886**, FIDE takeover **1948**, Menchik **1927**,
+  Fischer **1972**, Kasparov **1985** — and the Deep Blue story kept EXACTLY right (**Kasparov WON
+  1996 Philadelphia 4–2; Deep Blue won the 1997 NYC rematch 3½–2½, Game 6 on 11 May 1997**),
+  AlphaZero **2017** (+28 =72 −0 vs Stockfish; *Science* 2018), and the **2020 boom on Netflix's
+  own numbers** (62M households/28 days; Chess.com new players ×5) · organized chess (FIDE/US
+  Chess pyramid, **Elo explained** — US Chess 1960, FIDE 1970 — GM/IM/FM/CM thresholds + the
+  27-game norm system from Handbook B.01, Olympiad since 1927, Swiss system, **chess.com vs
+  Lichess as a business-model exhibit**) · and an **honest amateur/entrepreneur economy**: almost
+  nobody earns a living *playing* — the course maps coaching + the scholastic pipeline, content,
+  TD/arbiter/organizer work, and **fair play as a new profession**, with the **Carlsen–Niemann
+  case stated precisely** (100+ likely ONLINE games per Chess.com's 2022 report, **no
+  determinative OTB evidence**; suit dismissed June 2023; resolved Aug 2023) and **no invented
+  rates or salaries** — numbers carry a year + source or were cut. Re-run \`pnpm seed:courses\`;
+  **no migration**.
 - 🔧 **/explore is a landing page now** (\`feat/explore-landing\`) — the Commodity Map page was an
   \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
   now answers **what is this → what will my student learn → why trust it → what next**, for the
