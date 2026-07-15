@@ -529,6 +529,89 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   lawful from *Mackay Radio*, **1938**). Registered in \`seed-courses.ts\`; **no migration** —
   \`pnpm seed:courses\`. Cross-links to *Know Your Rights at Work*. Track proposal (11 country
   courses, 3 build waves) at \`/admin/future\`.
+- 🔧 **Germany: Workers on the Board** (Culture & History, \`content/labor-germany\`) — **Wave 1** of
+  the workers'-rights country track, hanging off the anchor above (it does **not** re-tell the
+  anchor's German lesson — it cross-links it). 6 sections · 16 teaching lessons · 6 quizzes
+  (15-question banks, above the 10-question attempt cap) · 16 \`:::reveal\` self-checks. The payload
+  is a pair of numbers a US student misreads without help: union **density ~14.1% (2024, OECD/AIAS)**
+  vs **collective-bargaining coverage ~49% (2024)** — because coverage rides on **employer-association
+  membership** (TVG § 3(1)) and **not** on statutory extension (which Germany barely uses — that is
+  France). Co-determination taken apart with **information / consultation / co-determination** kept
+  strictly distinct (they are not synonyms): works councils under the **Betriebsverfassungsgesetz**,
+  the **Mitbestimmungsgesetz 1976** supervisory board — with the chair's **casting vote** (§ 29(2))
+  that makes "half the seats" overstate it — and the **Montan-Mitbestimmung of 1951**, which really
+  was parity. **No fairy tale:** Section 5 is the erosion (coverage down ~25 points in the West since
+  1998, **OT-Mitgliedschaft**, the east/west gap, ~40% of firms over 2,000 employees engineering out
+  of the parity board — incl. **Wirecard**), and Section 6 is the honest verdict — the natural-
+  experiment evidence that co-determination's measured effects are **modest** (Jäger, Schoefer &
+  Heining 2021, QJE; Jäger, Noy & Schoefer 2022, ILR Review), then the efficiency critique from the
+  right and the "golden cage" critique from the left. Cited to the German statutes themselves,
+  Destatis, IAB, OECD/AIAS, ETUI and the Hans-Böckler-Stiftung. Registered in \`seed-courses.ts\`;
+  **no migration** — \`pnpm seed:courses\`.
+- 🔧 **Mexico: The Protection Contract, and the Trade Deal That Came for It** (Culture & History,
+  \`content/labor-mexico\`) — **Wave 1 of the workers'-rights country track** and the **answer to the
+  anchor's bleak ILO lesson** ("the floor is made of paper"). 5 sections · 10 teaching lessons ·
+  5 quizzes (15–16-question banks, above the 10-question attempt cap so retries rotate) · 1 exercise.
+  Teaches the **protection contract** — a real, registered collective agreement signed between a
+  company and a union the workers never heard of, often before anyone was hired, which then legally
+  **blocked** a genuine union — and rewires the student's core question from "*is there a union?*" to
+  "**whose union is it?**". Then Mexico's **own 2019 labor reform** (personal/free/secret vote; the
+  \`constancia de representatividad\`; the **legitimation** deadline of **1 May 2023**, when the great
+  majority of ~139,000 registered contracts died for want of a worker vote) and the **USMCA Rapid
+  Response Labor Mechanism** — the **only genuinely enforceable international labor tool in the whole
+  track**, taught from the treaty text (**Annex 31-A**, US+Mexico only; a facility-specific **tariff
+  penalty**; priority sectors **exclude agriculture**). Accuracy posture is the point: the RRM is
+  taught as **leverage, not authorship** (Mexico's law came first, 1 May 2019, more than a year before
+  USMCA entered into force 1 July 2020; the treaty text itself grounds the reform in a Mexican
+  electoral mandate), and its **limits** are taught through the cases that went **badly** — the
+  **San Martín / Grupo México mine** panel the US **lost** (13 May 2024: the RRM enforces a right, it
+  cannot create one) and **Manufacturas VU / Piedras Negras**, where remediation was agreed and the
+  company simply **closed the plant** (10 Oct 2023, ~400 workers). **GM Silao** (2021–22, SINTTIA) is
+  the win; the **2026 Faurecia request** (18 May 2026) shows the tool survived a change of US
+  administration; the **1 July 2026 joint review** (US declined the 16-year extension → annual
+  reviews) is dated and left un-predicted. The scale of protection contracts is **deliberately not
+  quantified** (no reliable count exists, and the course says so), and an unverifiable "BBB" petition
+  named in an early draft was **cut rather than cited**. Registered in \`seed-courses.ts\`; **no
+  migration** — \`pnpm seed:courses\`. Cross-links to the anchor and *Know Your Rights at Work*.
+- 🔧 **Sweden & Denmark: The Wage Floor That Isn't a Law** (Culture & History, \`content/labor-nordics\`)
+  — **Wave 1 of the workers'-rights track**, a country course hanging off the anchor, for high school
+  students. 6 sections · 14 teaching lessons · 6 quizzes (14–15-question banks, above the 10-question
+  attempt cap so retries rotate) · 1 exercise (diagnose-the-mechanism). The reframe: **neither country
+  has a statutory national minimum wage — by design**; the floor is a collective agreement. Teaches the
+  **Ghent system** (union-run unemployment funds → ~two-thirds density) with **Norway** as the natural
+  experiment (no Ghent → ~half) and Sweden's **2007 a-kassa fee reform** (density fell ~77%→71%,
+  2006→2008, per **Kjellberg**) as the strongest causal evidence; **self-regulation** (**Saltsjöbaden**
+  1938; the **September Compromise** 1899); Danish **flexicurity** taught as a **trade under strain**
+  (dagpenge cut 4→2 years, 2010); and the track's sharpest single contrast — **sympathy/secondary
+  action is legal here and illegal in the US** (cross-links **Taft-Hartley §8(b)(4)**). The still-
+  unresolved **2023 Tesla dispute** is taught **dated, contested, and with no winner**. Honest limits:
+  falling density, the **Laval** case (CJEU C-341/05, 2007) and migrant/platform outsiders, and the
+  **counterintuitive** payload — the Nordic unions themselves **fought the EU minimum-wage directive**
+  (2022/2041; Denmark's CJEU challenge C-19/23, outcome **not asserted**), because a statutory floor
+  would undercut bargaining. **Sweden is kept distinct from Denmark throughout.** Cited to OECD/AIAS,
+  ETUI, Eurofound, Kjellberg, the national confederations, and the EU directive text. Registered in
+  \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`. Sibling of the (separately branched)
+  Germany course; cross-links the anchor and *Know Your Rights at Work*.
+- 🔧 **Poland: Solidarność — When a Union Brought Down a State** (Culture & History,
+  \`content/labor-poland\`) — Wave 1 of the workers'-rights **country track**, for high school
+  students. **6 sections · 13 teaching lessons · 1 exercise · 6 quizzes** (15-question banks, above
+  the 10-question attempt cap so retries rotate; every question carries \`explanation\` +
+  \`sourceLessonSlug\`). The one course in the track where a **trade union is the primary vehicle of
+  a political revolution**: the 1980 Gdańsk strike, the **21 Demands** (demand #1 = free unions,
+  citing ILO C87 Poland ratified in 1957 and ignored; the boards are on **UNESCO's Memory of the
+  World** register), the Gdańsk Agreement, the **10 Nov 1980 Supreme Court registration fight**
+  (taught precisely — the court's inserted "leading role of the Party" clause, the general-strike
+  threat, the clause struck to a mere appendix), martial law (**13 Dec 1981**, nine miners shot dead
+  at **Wujek**), the **Round Table** and **4 June 1989** landslide. **Told as the honest arc, NOT a
+  triumph**: the union won the country and then **lost the workplace** — its own **Balcerowicz
+  Plan** shock therapy (in force 1 Jan 1990) drove unemployment from an official 0 to **16.4% (1993,
+  GUS)**, and today density is **~9% (2022)** and coverage **~12% (2023)** among the EU's lowest
+  (OECD/AIAS), bargaining fragmented to the single firm. **Neutral + dated on live Polish politics**:
+  states Solidarność's alignment with the national-catholic right (backed PiS, e.g. 2005) and names
+  the contested **Wałęsa security-service file** — adjudicating neither. Teaches the **"junk
+  contracts" (\`umowy śmieciowe\`) rhyme** with US misclassification + Mexican protection contracts —
+  the track's payoff. Cited to UNESCO, the European Solidarity Centre, GUS, OECD/AIAS, ETUI and
+  Eurofound. Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap

@@ -99,6 +99,10 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
+import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
+import { LABOR_MEXICO_COURSE } from "./data/labor-mexico-course";
+import { LABOR_NORDICS_COURSE } from "./data/labor-nordics-course";
+import { LABOR_POLAND_COURSE } from "./data/labor-poland-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
@@ -648,6 +652,52 @@ async function main() {
     // Work" (that course = your rights today; this one = how we got here). Proposal for the
     // country-by-country track: plans/future-courses/workers-rights-track-proposal.md.
     { slug: "history-of-unions", course: HISTORY_OF_UNIONS_COURSE, category: "Culture & History" },
+    // Germany — Wave 1 of the Workers' Rights country track hanging off the anchor above
+    // (plans/future-courses/workers-rights-track-proposal.md). Co-determination taken apart:
+    // works councils under the Betriebsverfassungsgesetz (and the exact, non-synonymous
+    // difference between INFORMATION, CONSULTATION and genuine CO-DETERMINATION rights), the
+    // Mitbestimmungsgesetz 1976 supervisory board — with the chair's casting vote that makes
+    // "half the seats" overstate it — and the Montan-Mitbestimmung of 1951, which really was
+    // parity. The payload is the pair of numbers: density 14.1% (2024) vs bargaining coverage
+    // 49% (2024), because coverage rides on EMPLOYER-association membership, not union
+    // membership (and NOT on statutory extension, which Germany barely uses — that is France).
+    // Section 5 is the erosion: coverage down 25 points in the West since 1998, OT-Mitgliedschaft,
+    // the east/west gap, and ~40% of firms over 2,000 employees engineering out of the parity board.
+    { slug: "labor-germany", course: LABOR_GERMANY_COURSE, category: "Culture & History" },
+    // Mexico — Wave 1 of the Workers' Rights country track, and the ANSWER to the anchor's bleak ILO
+    // lesson ("the floor is made of paper"). Teaches the protection contract (a collective agreement
+    // signed between a company and a union the workers never heard of — sometimes before anyone was
+    // hired — which then legally blocked a real union), Mexico's own 2019 labor reform and the
+    // legitimation deadline of 1 May 2023, and the USMCA Rapid Response Labor Mechanism — the only
+    // genuinely ENFORCEABLE international labor tool in the whole track, taught from the treaty text
+    // (Annex 31-A) rather than from summaries. Deliberately teaches the RRM's LIMITS and the cases the
+    // US LOST (San Martín, 13 May 2024), and refuses the
+    // US-saves-Mexico framing: Mexico's law came first (1 May 2019) and the RRM only enforces it.
+    // Scale of protection contracts is NOT quantified — no reliable count exists and the course says so.
+    { slug: "labor-mexico", course: LABOR_MEXICO_COURSE, category: "Culture & History" },
+    // Sweden & Denmark: The Wage Floor That Isn't a Law — Wave 1 of the Workers' Rights track, a
+    // country course hanging off the anchor (history-of-unions). The reframe: neither country has a
+    // statutory national minimum wage — the floor is a collective agreement, by design. Teaches the
+    // Ghent system (union-run unemployment funds → ~two-thirds density) with Norway as the natural
+    // experiment (no Ghent → ~half), the strongest causal evidence (Sweden's 2007 a-kassa fee reform
+    // → density fell, per Kjellberg), self-regulation (Saltsjöbaden 1938; September Compromise 1899),
+    // Danish flexicurity as a TRADE under strain, and the track's sharpest single contrast — sympathy/
+    // secondary action is LEGAL here and ILLEGAL in the US (cross-links Taft-Hartley §8(b)(4)). The
+    // still-unresolved 2023 Tesla dispute is taught dated and with no winner. Honest limits: falling
+    // density, migrant/platform workers outside the agreements, and the EU minimum-wage directive the
+    // Nordic unions themselves resisted. Sweden is kept distinct from Denmark throughout. See
+    // plans/future-courses/workers-rights-track-proposal.md.
+    { slug: "sweden-denmark-nordic-model", course: LABOR_NORDICS_COURSE, category: "Culture & History" },
+    // Poland: Solidarność — When a Union Brought Down a State. Wave 1 of the workers'-rights
+    // country track, hanging off the anchor (history-of-unions). The case where a TRADE UNION was
+    // the primary vehicle of a political revolution — and, honestly, the case where the union then
+    // LOST the workplace it had freed: density ~9% (2022), coverage ~12% (2023), among the EU's
+    // lowest. Cited to UNESCO Memory of the World (the 21 Demands), the European Solidarity Centre,
+    // Statistics Poland (GUS), OECD/AIAS and ETUI. Neutral + dated on live Polish politics: names
+    // Solidarność's alignment with the national-catholic right and the contested Wałęsa file, and
+    // adjudicates neither. Teaches the "junk contracts" (umowy śmieciowe) rhyme with US
+    // misclassification + Mexican protection contracts. 6 sections · no migration · seed:courses.
+    { slug: "labor-poland", course: LABOR_POLAND_COURSE, category: "Culture & History" },
     // Golf — the first of the sports courses. Six sections: how to play, the Rules (cited to
     // the 2023 code), strategy + the World Handicap System, history (incl. the documented
     // record of racial and gender exclusion — students read the January 1962 *Golfdom* trade
