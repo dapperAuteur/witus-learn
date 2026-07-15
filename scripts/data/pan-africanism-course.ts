@@ -369,5 +369,313 @@ By 1900, then, the parts existed: organized return, a redemption theology, a nam
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2 — The Congress Movement, 1919–1945
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "congresses-1919-1927",
+      title: "5 · Du Bois's Congresses, 1919–1927: petitions in evening dress",
+      section: "The Congress Movement, 1919–1945",
+      recallContent: [
+        {
+          prompt: "What three things did the 1900 London conference leave behind, despite its committees withering within two years?",
+          answer: "The name ('Pan-African' now attached to a real event), the method (an international congress of the diaspora addressing the powers), and the succession — Du Bois, who drafted the closing address, carried the tool forward.",
+        },
+        {
+          prompt: "Complete Du Bois's 1900 warning: 'the problem of the Twentieth Century is…'",
+          answer: "'…the problem of the colour line.' Written first for the 1900 Address to the Nations of the World, reused in The Souls of Black Folk (1903).",
+        },
+      ],
+      body: `In 1919 the victors of the First World War gathered at Versailles to redraw the world. Du Bois decided the world's Black people should be in Paris too — even if they had to meet down the street.
+
+**Paris, February 1919: the First Pan-African Congress.** Du Bois — by now the most prominent Black intellectual in America, a founder of the NAACP and editor of its magazine *The Crisis* — sailed to France as the peace conference convened, and organized a **Pan-African Congress** in Paris with **fifty-seven delegates** from the United States, the Caribbean, and Africa (Du Bois, 1947; Adi, 2018). Getting the room at all was a feat: the US government had refused passports to several intended delegates, and the meeting was only permitted because **Blaise Diagne** — the Senegalese deputy in the French parliament, the first Black African elected to it — used his standing with the French government to authorize it, and presided (Adi, 2018; Geiss, 1974).
+
+Read the 1919 resolutions and notice what they do *not* say. They asked that the former German colonies be held under international supervision rather than simply handed to other empires; that Africans be protected in land, labor, and education; that they *gradually* participate in their own government "as fast as their development permits" — the congress's own cautious phrasing of the era (Du Bois, 1947). **Nobody demanded independence.** This was a petition movement: distinguished men in evening dress asking empires to behave better. Judge it fairly by its context — in 1919 even this was radical enough that governments blocked passports to prevent it — but hold the baseline, because the distance between 1919's "as fast as their development permits" and 1945's demands is how you measure the movement's transformation.
+
+**1921, 1923, 1927: the series, and its limits.** Congresses followed in **1921** (sessions in London, Brussels, and Paris — some 110 delegates), **1923** (London and Lisbon, thinner), and **1927** (New York, the largest, with over two hundred delegates). The 1921 congress produced the *London Manifesto*, declaring "the absolute equality of races" the founding stone of world peace — Du Bois's drafting again — and open friction between Du Bois and Diagne, who found the language dangerously radical and whose loyalty to French colonial policy the radicals found worse (Du Bois, 1947; Geiss, 1974). The 1927 New York congress was financed in large part by Black American women's organizations — Addie W. Hunton and the Circle for Peace and Foreign Relations — a fact worth stating because the movement's money, like much of its organizing, was female more often than its podiums were (Adi, 2018). A planned fifth congress came to nothing for want of funds as the Depression hit; the series stalled for eighteen years.
+
+**The honest audit.** Four congresses, and no colony freer for them. The delegates were overwhelmingly diaspora professionals; the African masses the resolutions spoke *for* were not in the room, and several colonial governments worked to keep it that way. Du Bois himself later wrote candidly about the movement's thinness in these years — a series of meetings held together by his own will and other people's living rooms (Du Bois, 1940). And yet: the congresses kept the instrument alive, built the address book, and trained the argument. When the next generation picked the tool up in 1945, they did not have to invent it — they had to *aim* it.
+
+:::reveal What did the 1919 Paris resolutions ask for, and what did they conspicuously NOT ask for? ||| They asked for international supervision of the former German colonies, protection of Africans in land, labor and education, and gradual participation in government "as fast as their development permits." They did not demand independence — 1919 was a petition movement, and that baseline is how you measure the leap to Manchester 1945.
+
+## Sources
+- Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
+- Du Bois, W. E. B. (1940). *Dusk of dawn: An essay toward an autobiography of a race concept*. Harcourt, Brace.
+- Du Bois, W. E. B. (1947). *The world and Africa*. Viking Press.
+- Geiss, I. (1974). *The Pan-African movement* (A. Keep, Trans.). Africana Publishing.`,
+    },
+    {
+      slug: "ethiopia-1935-and-the-london-radicals",
+      title: "6 · Ethiopia 1935 and the London radicals",
+      section: "The Congress Movement, 1919–1945",
+      recallContent: [
+        {
+          prompt: "Who presided over the 1919 Paris Congress, and why was his involvement indispensable?",
+          answer: "Blaise Diagne, the Senegalese deputy in the French parliament — the first Black African elected to it. The US had refused passports to intended delegates; only Diagne's standing with the French government got the meeting authorized at all.",
+        },
+        {
+          prompt: "Who largely financed the 1927 New York Pan-African Congress?",
+          answer: "Black American women's organizations — Addie W. Hunton and the Circle for Peace and Foreign Relations. The movement's money and organizing were female more often than its podiums were.",
+        },
+      ],
+      body: `Between Du Bois's stalled congresses and the Manchester explosion stands one radicalizing event and one remarkable city block's worth of people.
+
+**October 1935: Italy invades Ethiopia.** Mussolini's armies attacked the one internationally recognized independent state in Black Africa — the empire that had crushed an Italian invasion at Adwa in 1896 (that battle, and the precision required around "never colonized," are taught in this platform's *Africa Before Colonization*). Ethiopia was Ethiopianism's namesake and the diaspora's living symbol, and the invasion detonated protest across the Black world: mass rallies in Harlem, fundraising and volunteer drives, dockworkers refusing Italian cargo (Adi, 2018; Asante, 1977 — the S. K. B. Asante study of West African responses, not the Afrocentricity theorist). The League of Nations' failure to stop Mussolini taught a generation a brutal lesson: **the international system would not protect even an independent African state.** Petitioning it was therefore a dead end; power would have to be built, not requested. Emperor **Haile Selassie**'s own appeal to the League in Geneva (June 1936) — delivered in Amharic, and remembered in its standard English rendering for the warning "It is us today. It will be you tomorrow." — became one of the century's famous prophecies, confirmed three years later by the World War (Selassie, 1936; Barker, 1968). Section 5 returns to Selassie in a very different register.
+
+**The London milieu.** The response organized itself in London, where a small group of Caribbean and African intellectuals turned outrage into infrastructure. The **International African Friends of Abyssinia** (1935) was founded by, among others, the Trinidadian Marxist historian **C. L. R. James**, the Jamaican pan-Africanist and businesswoman **Amy Ashwood Garvey** (co-founder of the UNIA — Section 3), the Guyanese organizer **T. Ras Makonnen**, and a Kenyan student named **Jomo Kenyatta** (James, 1938/1969; Adi, 2018). In 1937 it evolved into the **International African Service Bureau**, chaired by the Trinidadian **George Padmore**, with James editing its journal. Remember these names: this specific address book becomes the organizing committee of the 1945 Congress.
+
+**Padmore: the connector.** Born Malcolm Nurse in Trinidad in 1903, Padmore had risen inside the Communist International to run its Negro workers' bureau — and broke with the Comintern in 1934 when Soviet foreign policy downgraded anti-imperialism to court alliances with the colonial powers (Padmore, 1956; Hooker, 1967). The break mattered doctrinally: Padmore spent the rest of his life arguing that Black liberation had to be **self-organized** — allied with the left but never subordinate to Moscow — the argument of his book *Pan-Africanism or Communism?* (1956). He became the movement's indispensable man: the organizer, correspondent, and strategist through whom the diaspora's radicals and Africa's future presidents found each other.
+
+**The war sharpens everything.** The Second World War then did what no pamphlet could. The Allies declared it a war for freedom and self-determination — the **Atlantic Charter** (1941) said peoples had the right to choose their own governments, and colonial subjects noticed, even as Churchill assured Parliament that the principle was meant for Nazi-occupied Europe, not the British Empire (Adi, 2018). Hundreds of thousands of African and Caribbean men served; empires that had claimed invincibility lost it at Singapore and elsewhere. By 1944 the London group was planning the congress that the moment demanded — and this time, the delegates would not be professionals in evening dress.
+
+:::reveal Why did Italy's 1935 invasion of Ethiopia radicalize the movement more than any previous colonial outrage? ||| Ethiopia was the diaspora's living symbol — the internationally recognized independent African state, Ethiopianism's namesake, Adwa's victor. When the League of Nations let Mussolini take it, the lesson was that the international system would not protect even an independent African state: petitioning was a dead end, and power would have to be built, not requested.
+
+## Sources
+- Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
+- Asante, S. K. B. (1977). *Pan-African protest: West Africa and the Italo-Ethiopian crisis, 1934–1941*. Longman.
+- Barker, A. J. (1968). *The civilizing mission: A history of the Italo-Ethiopian war of 1935–1936*. Dial Press.
+- Hooker, J. R. (1967). *Black revolutionary: George Padmore's path from communism to Pan-Africanism*. Praeger.
+- James, C. L. R. (1969). *A history of Pan-African revolt*. Drum and Spear Press. (Original work published 1938 as *A history of Negro revolt*.)
+- Padmore, G. (1956). *Pan-Africanism or communism? The coming struggle for Africa*. Dennis Dobson.
+- Selassie, H. (1936, June). *Appeal to the League of Nations* [Address]. League of Nations, Geneva. (Delivered in Amharic; quoted in its standard English rendering.)`,
+    },
+    {
+      slug: "manchester-1945",
+      title: "7 · Manchester, 1945: the Congress that demanded independence",
+      section: "The Congress Movement, 1919–1945",
+      recallContent: [
+        {
+          prompt: "Why did George Padmore break with the Comintern in 1934, and what did he argue afterward?",
+          answer: "Soviet foreign policy downgraded anti-imperialism to court alliances with colonial powers. Padmore spent the rest of his life arguing Black liberation must be self-organized — allied with the left but never subordinate to Moscow (Pan-Africanism or Communism?, 1956).",
+        },
+        {
+          prompt: "What did colonial subjects hear in the 1941 Atlantic Charter — and what did Churchill say about that reading?",
+          answer: "That peoples have the right to choose their own governments — a promise they applied to themselves. Churchill assured Parliament the principle was meant for Nazi-occupied Europe, not the British Empire.",
+        },
+      ],
+      body: `Five months after the war in Europe ended, the movement's whole future sat in a town hall in the north of England.
+
+**The meeting.** The **Fifth Pan-African Congress** met **15–21 October 1945** at Chorlton-on-Medlock Town Hall, Manchester. The organizing engine was the London group: **George Padmore** and a 36-year-old Gold Coast student newly arrived from America, **Kwame Nkrumah**, served as joint political secretaries; **T. Ras Makonnen** ran money and logistics; **Amy Ashwood Garvey** chaired the opening session (Adi & Sherwood, 1995). Roughly ninety delegates and observers came — and their composition was the revolution. Where 1919 had gathered professionals, Manchester's delegates were **trade unionists, party organizers, students, and farmers' representatives** from across Africa and the Caribbean: the Congress deliberately built itself on workers' organizations (Adi & Sherwood, 1995; Padmore, 1947). Presiding over key sessions, at seventy-seven, was **W. E. B. Du Bois** — the living link to London 1900, honored by the young radicals even as they retired his method.
+
+**The break.** Manchester dropped the petition. Its resolutions **demanded independence** — not supervision, not gradual participation "as fast as development permits," but an end to colonial rule — and endorsed the weapons the delegates actually possessed: mass organization, the strike, and the boycott, with the declarations drafted by Nkrumah calling on colonial workers, farmers, and intellectuals to organize and resist (Padmore, 1947; Adi & Sherwood, 1995). The tone was new because the theory was new: rights would be **taken by organized peoples**, not granted to eloquent petitioners. Padmore's 1947 report on the Congress — *Colonial and Coloured Unity*, the primary document, still in print — reads less like minutes than like a war plan.
+
+**The roll call.** What makes Manchester pivotal is not only what was said but **who said it, and what they did next**. Among the participants: **Kwame Nkrumah**, who twelve years later led Ghana to independence; **Jomo Kenyatta**, later the first president of Kenya; **Hastings Banda**, later the first president of Malawi; the Sierra Leonean trade-union leader **I. T. A. Wallace-Johnson**; the novelist **Peter Abrahams** for South Africa (Adi & Sherwood, 1995). Manchester is the clearest case in the whole story of a meeting that functioned as a **school for heads of state** — and, as Section 6 will insist, that roll call carries the movement's tragedy inside it too, because more than one of those future presidents ruled the way empires had.
+
+**Honest footnotes, before the legend sets.** Three. First, Manchester did not *cause* decolonization by itself — the war's exhaustion of the empires, mass movements at home, and superpower pressure all mattered; the Congress supplied doctrine, network, and nerve. Second, the gathering that spoke for half the world's colonized was itself thin in places — barely any delegates from francophone Africa (the Négritude world of Section 5 was following a different track through Paris), and only a handful of women among the delegates, Amy Ashwood Garvey and the Jamaican trade unionist **Alma La Badie** among them (Adi & Sherwood, 1995; Adi, 2018). Third, the empire noticed: British intelligence kept files on the organizers, and the men Manchester trained went home to jails before they went home to palaces. Within twelve years of Manchester, the first of those jailed organizers raised a new flag over Accra — Section 4's story.
+
+:::reveal Name the three things that made Manchester 1945 different in kind from the 1919–1927 congresses. ||| (1) Composition: trade unionists, organizers, students and farmers' representatives — a workers' congress, not professionals in evening dress; (2) demands: independence outright, with mass organization, strikes and boycotts endorsed as the means — the petition era ended; (3) consequence: its participants (Nkrumah, Kenyatta, Banda) went home and led their countries to independence — a school for heads of state.
+
+## Sources
+- Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
+- Adi, H., & Sherwood, M. (1995). *The 1945 Manchester Pan-African Congress revisited*. New Beacon Books.
+- Nkrumah, K. (1957). *Ghana: The autobiography of Kwame Nkrumah*. Thomas Nelson.
+- Padmore, G. (Ed.). (1947). *Colonial and coloured unity: A programme of action — History of the Pan-African Congress*. Pan-African Federation.`,
+    },
+    {
+      slug: "quiz-the-congress-movement",
+      title: "8 · Quiz: The Congress Movement",
+      section: "The Congress Movement, 1919–1945",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why did Du Bois convene the First Pan-African Congress in Paris in February 1919?",
+            options: [
+              "The Versailles peace conference was redrawing the world, and he wanted the world's Black people represented in the city where it was happening",
+              "The French government invited the NAACP to help draft the Treaty of Versailles",
+              "It was the scheduled follow-up to the 1900 London conference",
+              "He was barred from the United States and had to meet abroad",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Du Bois organized 57 delegates in Paris as the peace conference convened — a parallel assembly for a people no government represented. It met at all only because Blaise Diagne got it authorized.",
+            sourceLessonSlug: "congresses-1919-1927",
+          },
+          {
+            prompt: "What did the 1919 Paris resolutions conspicuously NOT demand?",
+            options: [
+              "Independence — they asked for international supervision of former German colonies and gradual participation in government 'as fast as their development permits'",
+              "Protection of Africans in land and labor",
+              "International supervision of the former German colonies",
+              "African participation in education",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1919 was a petition movement. The distance between 'as fast as their development permits' and Manchester 1945's outright demand for independence is how the course measures the movement's transformation.",
+            sourceLessonSlug: "congresses-1919-1927",
+          },
+          {
+            prompt: "Who was Blaise Diagne, and what tension did he embody by 1921?",
+            options: [
+              "The Senegalese deputy in the French parliament who authorized and presided over the 1919 congress — and whose loyalty to French colonial policy put him at odds with Du Bois's radicals",
+              "A Jamaican shipping magnate who funded the Black Star Line",
+              "The bishop who presided over the 1900 London conference",
+              "The founder of the International African Service Bureau",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Diagne's standing made 1919 possible; by the 1921 congress he found the London Manifesto's language dangerously radical, while the radicals found his colonial loyalism worse (Geiss, 1974).",
+            sourceLessonSlug: "congresses-1919-1927",
+          },
+          {
+            prompt: "The course's honest audit of the 1919–1927 congresses concludes:",
+            options: [
+              "Four congresses freed no colony and largely excluded the African masses they spoke for — but they kept the instrument alive, built the address book, and trained the argument for 1945",
+              "They achieved immediate independence for several colonies",
+              "They were secretly funded by the colonial powers",
+              "They had no effect of any kind and are taught only as trivia",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Du Bois himself wrote candidly about the movement's thinness in these years (Dusk of Dawn, 1940). The 1945 generation didn't have to invent the tool — they had to aim it.",
+            sourceLessonSlug: "congresses-1919-1927",
+          },
+          {
+            prompt: "Why did Italy's 1935 invasion of Ethiopia teach the movement that petitioning was a dead end?",
+            options: [
+              "The League of Nations failed to stop Mussolini — proving the international system would not protect even an independent African state, so power had to be built, not requested",
+              "The League of Nations expelled all African members in response",
+              "Ethiopia had never been an independent state",
+              "The invasion succeeded because the diaspora ignored it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ethiopia was the diaspora's living symbol — Adwa's victor, Ethiopianism's namesake. The diaspora erupted (Harlem rallies, boycotts of Italian cargo), but the system's failure was the radicalizing lesson.",
+            sourceLessonSlug: "ethiopia-1935-and-the-london-radicals",
+          },
+          {
+            prompt: "Haile Selassie's June 1936 Geneva appeal is remembered for the warning 'It is us today. It will be you tomorrow.' How does the course handle that quote?",
+            options: [
+              "As the standard English rendering of an address delivered in Amharic — quoted with that caveat stated",
+              "As a verbatim English sentence Selassie spoke on the BBC",
+              "As a fabrication invented decades later",
+              "As a quote from Marcus Garvey that was misattributed to Selassie",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course's quote policy: verbatim where verified, flagged where translation or transcription intervenes. The appeal was delivered in Amharic; the famous line is its standard English rendering — and the World War confirmed it three years later.",
+            sourceLessonSlug: "ethiopia-1935-and-the-london-radicals",
+          },
+          {
+            prompt: "Which set of people founded the International African Friends of Abyssinia (1935) in London?",
+            options: [
+              "C. L. R. James, Amy Ashwood Garvey, T. Ras Makonnen, and Jomo Kenyatta, among others",
+              "W. E. B. Du Bois, Booker T. Washington, and Frederick Douglass",
+              "Kwame Nkrumah, Hastings Banda, and Léopold Senghor",
+              "Henry Sylvester Williams and Alexander Walters",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 1935 London response to the Ethiopia invasion built the address book — IAFA, then the International African Service Bureau (1937, chaired by Padmore) — that became the 1945 Manchester organizing committee.",
+            sourceLessonSlug: "ethiopia-1935-and-the-london-radicals",
+          },
+          {
+            prompt: "Why did George Padmore break with the Communist International in 1934?",
+            options: [
+              "Soviet foreign policy downgraded anti-imperialism to court alliances with the colonial powers — convincing him Black liberation must be self-organized, never subordinate to Moscow",
+              "He was offered a colonial governorship by Britain",
+              "He converted to the American Colonization Society's program",
+              "He objected to the Comintern's support for African independence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The break is the doctrinal hinge of his life and of his book Pan-Africanism or Communism? (1956): allied with the left, subordinate to no one — the stance he carried into organizing Manchester.",
+            sourceLessonSlug: "ethiopia-1935-and-the-london-radicals",
+          },
+          {
+            prompt: "What did colonial subjects hear in the Atlantic Charter (1941), and what was Churchill's position?",
+            options: [
+              "They heard that peoples have the right to choose their own governments and applied it to themselves; Churchill assured Parliament it was meant for Nazi-occupied Europe, not the Empire",
+              "They heard a promise of immediate independence that was honored in 1942",
+              "Nothing — the Charter was kept secret until 1960",
+              "They heard that the Empire would be expanded, and Churchill denied saying so",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Charter's self-determination language, read against Churchill's disclaimer, sharpened the contradiction the war created: a war for freedom fought by empires (Adi, 2018).",
+            sourceLessonSlug: "ethiopia-1935-and-the-london-radicals",
+          },
+          {
+            prompt: "When and where did the Fifth Pan-African Congress meet, and who were its joint political secretaries?",
+            options: [
+              "15–21 October 1945, Chorlton-on-Medlock Town Hall, Manchester — George Padmore and Kwame Nkrumah",
+              "February 1919, Paris — Du Bois and Diagne",
+              "July 1900, Westminster Town Hall — Williams and Walters",
+              "May 1963, Addis Ababa — Nkrumah and Selassie",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Manchester, October 1945: Padmore and Nkrumah as joint political secretaries, Makonnen on logistics, Amy Ashwood Garvey chairing the opening session, Du Bois presiding over key sessions at 77 (Adi & Sherwood, 1995).",
+            sourceLessonSlug: "manchester-1945",
+          },
+          {
+            prompt: "What made the COMPOSITION of the Manchester Congress revolutionary?",
+            options: [
+              "Its delegates were trade unionists, party organizers, students, and farmers' representatives — a congress deliberately built on workers' organizations, not professionals in evening dress",
+              "Every delegate was a sitting head of state",
+              "It was the first congress with no African delegates",
+              "Delegates were chosen by the colonial governments",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The shift in who was in the room drove the shift in what the room demanded: people whose weapons were the strike and the boycott endorsed exactly those weapons.",
+            sourceLessonSlug: "manchester-1945",
+          },
+          {
+            prompt: "How did Manchester's demands break with the earlier congresses?",
+            options: [
+              "It demanded independence outright and endorsed mass organization, strikes, and boycotts — dropping the petition for the theory that rights are taken by organized peoples",
+              "It petitioned the new United Nations for gradual reform",
+              "It asked only for better colonial education budgets",
+              "It demanded that the League of Nations administer all colonies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Padmore's 1947 report Colonial and Coloured Unity — the primary document — reads like a war plan, with the declarations drafted by Nkrumah calling colonial workers, farmers, and intellectuals to organize.",
+            sourceLessonSlug: "manchester-1945",
+          },
+          {
+            prompt: "Which trio of Manchester participants later led their countries as heads of state or government?",
+            options: [
+              "Kwame Nkrumah (Ghana), Jomo Kenyatta (Kenya), Hastings Banda (Malawi)",
+              "C. L. R. James (Trinidad), Peter Abrahams (South Africa), George Padmore (Ghana)",
+              "Marcus Garvey (Jamaica), W. E. B. Du Bois (Ghana), Blaise Diagne (Senegal)",
+              "Haile Selassie (Ethiopia), Sékou Touré (Guinea), Patrice Lumumba (Congo)",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Manchester functioned as a school for heads of state — and Section 6 insists that the roll call carries the movement's tragedy too, since more than one of those presidents ruled the way empires had.",
+            sourceLessonSlug: "manchester-1945",
+          },
+          {
+            prompt: "Which honest footnotes does the course attach to Manchester before the legend sets?",
+            options: [
+              "It didn't cause decolonization single-handedly; francophone Africa was barely represented and only a handful of delegates were women; and its organizers went home to jails before palaces",
+              "Its resolutions were written by the Colonial Office",
+              "No one who attended ever held office anywhere",
+              "It met in secret and left no documents",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Doctrine, network, and nerve — not sole cause. Amy Ashwood Garvey and Alma La Badie were among the few women delegates; the Négritude world was following a different track through Paris (Section 5).",
+            sourceLessonSlug: "manchester-1945",
+          },
+          {
+            prompt: "Who presided over key sessions at Manchester at age seventy-seven, linking 1945 back to 1900?",
+            options: [
+              "W. E. B. Du Bois",
+              "Marcus Garvey",
+              "Henry Sylvester Williams",
+              "Edward Wilmot Blyden",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Du Bois — the man who drafted the 1900 closing address — was honored by the young radicals even as they retired his petition method. Garvey had died in 1940; Williams in 1911; Blyden in 1912.",
+            sourceLessonSlug: "manchester-1945",
+          },
+        ],
+      },
+    },
   ],
 };
