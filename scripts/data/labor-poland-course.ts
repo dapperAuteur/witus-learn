@@ -652,5 +652,269 @@ That is what "who may organise?" looks like when the answer is genuinely up for 
         ],
       },
     },
+
+    // ────────────── SECTION 3 · TRIUMPH AND REPRESSION ──────────────
+    {
+      slug: "poland-sixteen-months",
+      title: "6 · The sixteen months: what ten million members felt like",
+      section: "Section 3 · Triumph, and the state's answer",
+      body: `Between the Gdańsk Agreement and what came next lie about **sixteen months** — from **September 1980 to December 1981** — when Solidarność existed **legally**, out in the open, ten million strong. It is worth pausing on this window, because it is the only time in the story when the union got to simply *be* a union in a communist country, and because understanding how alive it was makes what happened next land properly.
+
+**What ten million members actually meant.** Solidarność was never only a labour union in these months. With roughly a third of the population carrying a card, it became something closer to an entire **parallel society**: it ran its own printing presses and bulletins in a country of state media; it debated openly in a country of enforced silence; it organised, argued, and elected its own leaders democratically in a country that had not held a free election in decades. Historians sometimes call this period the **"carnival of Solidarity"** — a burst of self-organisation and free expression that Poles had not experienced in their adult lives.
+
+**But it was not a holiday, and the course will not pretend it was.** Three pressures built through 1981:
+
+1. **The economy was collapsing.** Poland was deep in debt and mismanagement; shortages worsened; rationing spread to basic goods. A union cannot bargain its way out of empty shelves, and the daily reality for members was queues, not victories.
+2. **The state kept testing the limits.** In **March 1981**, in the **Bydgoszcz** crisis, police beat Solidarity activists — nearly triggering a general strike and showing how fragile the settlement was. Farmers had to fight their own battle to register **Rural Solidarity** (*NSZZ Rolników Indywidualnych "Solidarność"*), finally recognised in **May 1981**.
+3. **Moscow was watching.** An independent mass movement in a Warsaw Pact country was exactly the thing the Soviet Union had crushed with tanks in **Hungary (1956)** and **Czechoslovakia (1968)**. The threat of Soviet military intervention hung over every decision Solidarność made, and it shaped the union's caution.
+
+So the sixteen months were exhilarating and precarious at the same time: a genuine democratic explosion happening inside a police state that was going broke, watched by a superpower with a history of sending in the army. Something was going to give. In December 1981, it did — and not from the direction most feared.
+
+:::reveal Why do historians sometimes call the sixteen months of legal Solidarność the "carnival of Solidarity" — and what makes that phrase only half the truth? ||| Because with a third of the country as members, Solidarność became a parallel society — free presses, open debate, democratic elections — things Poles had not known in their adult lives, an exhilarating burst of self-organisation. But it is only half the truth because those same months were shadowed by a collapsing economy and rationing, state provocations like the Bydgoszcz beatings, and the constant threat of Soviet military intervention. It was a democratic explosion inside a bankrupt police state watched by a superpower — thrilling and precarious at once.
+
+## Sources
+- European Solidarity Centre. (n.d.). *How did Solidarność (Solidarity) come to be?* https://ecs.gda.pl/en/how-did-solidarnosc-solidarity-come-to-be/
+- Encyclopædia Britannica. (n.d.). *Solidarity (Polish trade union)*. https://www.britannica.com/topic/Solidarity`,
+      recallContent: [
+        {
+          prompt: "What made Solidarność, in 1980–81, 'more than a union'?",
+          answer:
+            "With ~10 million members it became a parallel society — running independent presses and bulletins, debating openly, and electing its leaders democratically inside a one-party state. The 'carnival of Solidarity' was a burst of free self-organisation Poles had not known in their adult lives.",
+        },
+        {
+          prompt: "What three pressures built during 1981?",
+          answer:
+            "(1) A collapsing, indebted economy with worsening shortages and rationing; (2) state provocations like the March 1981 Bydgoszcz beatings of activists; and (3) the constant threat of Soviet military intervention, as in Hungary 1956 and Czechoslovakia 1968.",
+        },
+      ],
+    },
+    {
+      slug: "poland-martial-law",
+      title: "7 · 13 December 1981: the state answers",
+      section: "Section 3 · Triumph, and the state's answer",
+      body: `This is the lesson the triumphant version leaves out, and it is why this course teaches the repression and not only the victory. **The most important thing a student can carry out of the Poland story is that Solidarność did not win in a straight line. It was crushed first, and stayed crushed for most of a decade.**
+
+**In the early hours of 13 December 1981**, General **Wojciech Jaruzelski** — who by then held all three of the top posts (head of the Party, prime minister, and defence minister) — declared **martial law** (*stan wojenny*). Power passed to a **Military Council of National Salvation** (the **WRON**). Overnight:
+
+- Solidarność was **suspended**, its offices seized, its presses shut, telephones cut, travel between regions banned, a curfew imposed.
+- Roughly **ten thousand** Solidarity activists and advisers were **interned** without trial, including most of the national leadership and **Lech Wałęsa** himself.
+- Tanks and the **ZOMO** riot police took the streets. Workers who occupied their factories in protest were cleared by force.
+
+**And then the killing that the course refuses to round off.** At the **Wujek coal mine** in Katowice, miners occupied the pit and struck against martial law. On **16 December 1981** — three days in — police and army units moved in, and officers **opened fire on the miners, killing nine and wounding many more.** They were unarmed. Name the toll plainly: **nine dead men at Wujek** is the single sharpest answer to the anchor's Question 4 — *what happens to you if you try?* — anywhere in the Wave-1 courses.
+
+**The union did not die, but it went underground.** Formally, Solidarność was not just suspended but **outlawed by statute on 8 October 1982**, when a new trade-union law dissolved it. Martial law itself was **suspended at the end of 1982 and formally lifted on 22 July 1983.** Through those years and beyond, Solidarność survived as an **underground organisation** — clandestine presses, smuggled funds, an entire secret civil society — while its leaders moved in and out of detention. In **1983, Lech Wałęsa was awarded the Nobel Peace Prize** (his wife accepted it; he feared he would not be allowed back into Poland if he travelled). In **October 1984**, the secret police **abducted and murdered Father Jerzy Popiełuszko**, a priest closely associated with the movement — a killing that, unusually, led to a public trial of the officers responsible, and that hardened opposition further.
+
+**Hold the whole shape of this in your head, because it is the honest one.** A union of ten million was defeated by a state willing to use its army against it, and it spent roughly seven years — 1982 to 1989 — banned, hunted, and operating in secret. When Solidarność finally won, it did **not** win because it was never beaten. It won because it **survived being beaten**, and because the state that beat it eventually ran out of money and options. That is a harder and truer story than "the workers marched and freedom came," and it is the one worth knowing.
+
+:::reveal On 13 December 1981 the Polish state answered Solidarność with martial law. Give the single fact that best captures how far the repression went — and how long it lasted. ||| At the Wujek coal mine on 16 December 1981, police and army opened fire on striking miners, killing nine unarmed men. Roughly ten thousand activists (including Wałęsa) were interned, the union was outlawed by statute on 8 October 1982, and Solidarność spent about seven years (1982–1989) banned and operating underground. It won not because it was never beaten, but because it survived being beaten while the state ran out of money and options.
+
+## Sources
+- European Network Remembrance and Solidarity. (n.d.). *The introduction of martial law in Poland*. https://enrs.eu/article/the-introduction-of-martial-law-in-poland
+- Institute of National Remembrance / European Solidarity Centre. (n.d.). *Pacification of Wujek, 16 December 1981*. https://ecs.gda.pl/en/
+- The Nobel Foundation. (n.d.). *Lech Wałęsa — Nobel Peace Prize 1983*. https://www.nobelprize.org/prizes/peace/1983/walesa/facts/`,
+      recallContent: [
+        {
+          prompt: "What happened at the Wujek coal mine on 16 December 1981?",
+          answer:
+            "Three days into martial law, police and army units opened fire on striking miners occupying the pit, killing nine unarmed men and wounding many more. It is the sharpest answer to 'what happens to you if you try?' in the Wave-1 courses.",
+        },
+        {
+          prompt: "Who imposed martial law, and how long was Solidarność banned?",
+          answer:
+            "General Wojciech Jaruzelski, ruling through the Military Council of National Salvation (WRON), imposed it on 13 December 1981. Solidarność was outlawed by statute on 8 October 1982 and operated underground for roughly seven years until 1989.",
+        },
+      ],
+    },
+    {
+      slug: "poland-quiz-3",
+      title: "Section 3 quiz · Triumph and repression",
+      section: "Section 3 · Triumph, and the state's answer",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Roughly how long did Solidarność exist LEGALLY before martial law?",
+            options: ["About sixteen months (September 1980 to December 1981)", "About ten years", "A few weeks", "It was never legal"],
+            correctIndex: 0,
+            explanation:
+              "From the Gdańsk Agreement / registration to 13 December 1981 — the only window in which the union got to operate openly in a communist state.",
+            sourceLessonSlug: "poland-sixteen-months",
+          },
+          {
+            prompt: "What is meant by the 'carnival of Solidarity'?",
+            options: [
+              "A music festival the union sponsored",
+              "The 1980–81 burst of free self-organisation — independent presses, open debate, democratic elections — that made Solidarność a parallel society",
+              "The celebrations after the 1989 election",
+              "A Party propaganda campaign",
+            ],
+            correctIndex: 1,
+            explanation:
+              "With a third of the country as members, the union became far more than a labour organisation — an entire free civil society inside a one-party state.",
+            sourceLessonSlug: "poland-sixteen-months",
+          },
+          {
+            prompt: "Which pressure was NOT building against Solidarność during 1981?",
+            options: [
+              "A collapsing, indebted economy with worsening shortages",
+              "State provocations such as the Bydgoszcz beatings",
+              "The threat of Soviet military intervention",
+              "A flood of foreign investment overheating the economy",
+            ],
+            correctIndex: 3,
+            explanation:
+              "Communist Poland's problem was scarcity and debt, not foreign investment. The real pressures were economic collapse, state provocation, and the Soviet threat.",
+            sourceLessonSlug: "poland-sixteen-months",
+          },
+          {
+            prompt: "Why did the threat of Soviet intervention shape Solidarność's caution?",
+            options: [
+              "Because the USSR funded the union",
+              "Because the USSR had crushed independent movements with tanks in Hungary (1956) and Czechoslovakia (1968), and Poland was a Warsaw Pact country",
+              "Because the union wanted to join the USSR",
+              "Because Moscow controlled the Polish courts directly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "An independent mass movement in a Warsaw Pact state was exactly what Moscow had previously answered with the army. That history hung over every decision.",
+            sourceLessonSlug: "poland-sixteen-months",
+          },
+          {
+            prompt: "Who declared martial law in Poland, and when?",
+            options: [
+              "Lech Wałęsa, August 1980",
+              "General Wojciech Jaruzelski, 13 December 1981",
+              "Pope John Paul II, June 1979",
+              "Mieczysław Jagielski, October 1980",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Jaruzelski held the top Party, government and military posts and ruled through the Military Council of National Salvation (WRON).",
+            sourceLessonSlug: "poland-martial-law",
+          },
+          {
+            prompt: "What happened at the Wujek coal mine on 16 December 1981?",
+            options: [
+              "The miners won a pay rise",
+              "Police and army opened fire on striking miners, killing nine unarmed men",
+              "The mine was closed permanently",
+              "Wałęsa was arrested there",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Three days into martial law. Nine dead at Wujek is the sharpest answer to the anchor's Question 4 in the Wave-1 courses.",
+            sourceLessonSlug: "poland-martial-law",
+          },
+          {
+            prompt: "Roughly how many Solidarity activists were interned under martial law, and was Wałęsa among them?",
+            options: [
+              "About 100; no",
+              "About ten thousand, including Wałęsa and most of the national leadership",
+              "None — they all fled abroad",
+              "About a million",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Internment without trial swept up around 10,000 people, decapitating the union's open leadership overnight.",
+            sourceLessonSlug: "poland-martial-law",
+          },
+          {
+            prompt: "When was Solidarność formally outlawed by statute?",
+            options: [
+              "13 December 1981",
+              "8 October 1982, when a new trade-union law dissolved it",
+              "4 June 1989",
+              "It was never formally banned",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Suspended under martial law in December 1981, then legally dissolved by the October 1982 trade-union law. It went underground.",
+            sourceLessonSlug: "poland-martial-law",
+          },
+          {
+            prompt: "When was martial law formally lifted?",
+            options: ["22 July 1983", "December 1981", "1989", "1980"],
+            correctIndex: 0,
+            explanation:
+              "Suspended at the end of 1982 and formally lifted on 22 July 1983 — but repression and the union's illegality continued for years afterward.",
+            sourceLessonSlug: "poland-martial-law",
+          },
+          {
+            prompt: "What recognition did Lech Wałęsa receive in 1983?",
+            options: [
+              "The Nobel Peace Prize",
+              "The Polish presidency",
+              "A seat in the communist parliament",
+              "Command of the army",
+            ],
+            correctIndex: 0,
+            explanation:
+              "His wife accepted it; he feared he would not be allowed back into Poland if he travelled to collect it himself.",
+            sourceLessonSlug: "poland-martial-law",
+          },
+          {
+            prompt: "What happened to Father Jerzy Popiełuszko in October 1984?",
+            options: [
+              "He became head of Solidarność",
+              "He was abducted and murdered by the secret police — a priest closely associated with the movement",
+              "He was elected to parliament",
+              "He emigrated to Rome",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The killing led, unusually, to a public trial of the officers responsible, and hardened opposition to the regime.",
+            sourceLessonSlug: "poland-martial-law",
+          },
+          {
+            prompt: "The course says Solidarność 'did not win in a straight line.' What is the honest shape of the story?",
+            options: [
+              "It was never defeated",
+              "It was crushed first and spent roughly seven years (1982–1989) banned and underground — it won by surviving defeat while the state ran out of money and options",
+              "It won within a year of forming",
+              "It was defeated permanently",
+            ],
+            correctIndex: 1,
+            explanation:
+              "'The workers marched and freedom came' is false. The true story is defeat, survival underground, and eventual victory as the state collapsed — harder and truer.",
+            sourceLessonSlug: "poland-martial-law",
+          },
+          {
+            prompt: "Which body governed Poland during martial law?",
+            options: [
+              "The Sejm",
+              "The Military Council of National Salvation (WRON)",
+              "The Supreme Court",
+              "The European Union",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Power passed to the WRON, a military junta headed by Jaruzelski, which suspended the union and imposed curfews, travel bans and censorship.",
+            sourceLessonSlug: "poland-martial-law",
+          },
+          {
+            prompt: "Farmers won recognition of their own union, Rural Solidarity, in what year?",
+            options: ["May 1981", "1976", "1989", "1970"],
+            correctIndex: 0,
+            explanation:
+              "NSZZ Rolników Indywidualnych 'Solidarność' was recognised in May 1981, after its own registration struggle — part of the movement's spread beyond industry.",
+            sourceLessonSlug: "poland-sixteen-months",
+          },
+          {
+            prompt: "Why can a union not simply 'bargain its way out' of the 1981 Polish economy?",
+            options: [
+              "Because bargaining was illegal",
+              "Because the economy was collapsing into shortages and rationing — you cannot negotiate goods onto empty shelves",
+              "Because the union had no members",
+              "Because wages were already the highest in Europe",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Deep debt and mismanagement meant the daily member experience was queues, not victories — one reason the settlement was so fragile.",
+            sourceLessonSlug: "poland-sixteen-months",
+          },
+        ],
+      },
+    },
   ],
 };
