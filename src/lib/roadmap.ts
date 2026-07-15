@@ -509,7 +509,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   courses, 3 build waves) at \`/admin/future\`.
 - 🔧 **Mexico: The Protection Contract, and the Trade Deal That Came for It** (Culture & History,
   \`content/labor-mexico\`) — **Wave 1 of the workers'-rights country track** and the **answer to the
-  anchor's bleak ILO lesson** ("the floor is made of paper"). 5 sections · 11 teaching lessons ·
+  anchor's bleak ILO lesson** ("the floor is made of paper"). 5 sections · 10 teaching lessons ·
   5 quizzes (15–16-question banks, above the 10-question attempt cap so retries rotate) · 1 exercise.
   Teaches the **protection contract** — a real, registered collective agreement signed between a
   company and a union the workers never heard of, often before anyone was hired, which then legally
