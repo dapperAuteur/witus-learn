@@ -1,10 +1,18 @@
 import { describe, expect, it } from "vitest";
 import {
   ALIGNMENTS,
+  COURSE_CLAIMS,
   FRAMEWORKS,
+  JURISDICTION_FILES,
+  NEXT_UP,
   STANDARDS_FETCHED_ON,
   allAlignedCourseSlugs,
+  coursesIn,
+  filterGroups,
+  isStateCode,
+  mappedStates,
   scopeAlignments,
+  subjectsIn,
   summarizeStandards,
   toPlainText,
   type AlignedCourseLike,
@@ -49,6 +57,39 @@ const SEASON_2_3 = [
   "full-spectrum",
 ];
 
+// The wider-catalog courses the Indiana pass mapped (civics ladder, history, health, sports,
+// media literacy). Every slug must match its registration in scripts/seed-*.ts exactly — the
+// "unknown slug" test below is the guard against a typo making a standard unreachable.
+const CATALOG = [
+  "us-civics-101",
+  "us-constitution-101",
+  "voting-elections-101",
+  "how-a-bill-becomes-law",
+  "supreme-court-judicial-branch",
+  "state-vs-federal",
+  "us-state-local-government",
+  "state-civics-in",
+  "citizenship-naturalization",
+  "jury-duty-courts",
+  "know-your-rights",
+  "help-a-campaign",
+  "how-to-run-for-office",
+  "spotting-misleading-marketing",
+  "great-migration",
+  "history-of-unions",
+  "labor-mexico",
+  "labor-poland",
+  "dental-health-101",
+  "read-your-bodys-data",
+  "woop-science-of-doing-it",
+  "golf-play-know-work",
+  "tennis",
+  "football",
+  "pickleball",
+  "lacrosse-creators-game",
+  "croquet",
+];
+
 describe("standards data integrity — a wrong code could be filed with a state", () => {
   it("every alignment points at a framework that exists", () => {
     const ids = new Set(FRAMEWORKS.map((f) => f.id));
@@ -88,9 +129,62 @@ describe("standards data integrity — a wrong code could be filed with a state"
     }
   });
 
-  it("the fetch date is a real ISO date (it is rendered to teachers as provenance)", () => {
+  it("every fetch date is a real ISO date (it is rendered to teachers as provenance)", () => {
     expect(STANDARDS_FETCHED_ON).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     expect(Number.isNaN(Date.parse(STANDARDS_FETCHED_ON))).toBe(false);
+    for (const f of FRAMEWORKS) {
+      expect(f.fetchedOn, f.id).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(Number.isNaN(Date.parse(f.fetchedOn)), f.id).toBe(false);
+    }
+  });
+
+  it("every resolved framework carries the state of the file that declared it", () => {
+    for (const j of JURISDICTION_FILES) {
+      for (const f of j.frameworks) {
+        const resolved = FRAMEWORKS.find((r) => r.id === f.id);
+        expect(resolved, f.id).toBeDefined();
+        expect(resolved!.state, f.id).toBe(j.state);
+      }
+      // Adopted shared frameworks expand under a state-prefixed id ("dc-ngss").
+      for (const a of j.adoptions ?? []) {
+        const id = `${j.state.toLowerCase()}-${a.framework.id}`;
+        const resolved = FRAMEWORKS.find((r) => r.id === id);
+        expect(resolved, id).toBeDefined();
+        expect(resolved!.state, id).toBe(j.state);
+        // Verbatim adoption keeps the shared framework's codes; aliases would rename them.
+        for (const s of a.framework.standards) {
+          const local = ALIGNMENTS.find(
+            (x) => x.frameworkId === id && x.code === (a.aliases?.[s.code] ?? s.code),
+          );
+          expect(local, `${id}:${s.code}`).toBeDefined();
+        }
+      }
+    }
+  });
+
+  it("the claims layer is fully wired: every claim is used, every claim has evidence", () => {
+    const used = new Set(ALIGNMENTS.flatMap((a) => a.claimIds));
+    for (const c of COURSE_CLAIMS) {
+      // A claim nothing references is dead data — delete it or map it, don't let it rot.
+      expect(used, `unused claim "${c.id}"`).toContain(c.id);
+      expect(c.claim.length, c.id).toBeGreaterThan(10);
+      expect(c.courseSlugs.length, c.id).toBeGreaterThan(0);
+      expect(c.lessons.length, c.id).toBeGreaterThan(0);
+    }
+    // And every alignment's derived evidence actually came through the join.
+    for (const a of ALIGNMENTS) {
+      expect(a.claimIds.length, `${a.frameworkId}:${a.code} has no claims`).toBeGreaterThan(0);
+      expect(a.courseSlugs.length, a.code).toBeGreaterThan(0);
+      expect(a.lessons.length, a.code).toBeGreaterThan(0);
+    }
+  });
+
+  it("mapped/next-up states are real jurisdiction codes and never overlap", () => {
+    for (const s of mappedStates()) expect(isStateCode(s)).toBe(true);
+    for (const s of NEXT_UP) {
+      expect(isStateCode(s)).toBe(true);
+      expect(mappedStates(), `${s} is both mapped and next-up`).not.toContain(s);
+    }
   });
 });
 
@@ -125,13 +219,53 @@ describe("standards are tenant-scoped — a school can only claim what it actual
     expect(scopeAlignments(catalog("some-other-tenants-course"))).toEqual([]);
   });
 
-  it("the full BVC catalog surfaces every standard, and every course slug resolves", () => {
+  it("the full catalog surfaces every standard, and every course slug resolves", () => {
     const all = allAlignedCourseSlugs();
     const groups = scopeAlignments(catalog(...all));
     expect(summarizeStandards(groups).total).toBe(ALIGNMENTS.length);
 
     // Guard against a typo'd slug in the data file quietly making a standard unreachable.
-    for (const s of all) expect([...SEASON_1, ...SEASON_2_3], `unknown slug "${s}"`).toContain(s);
+    for (const s of all)
+      expect([...SEASON_1, ...SEASON_2_3, ...CATALOG], `unknown slug "${s}"`).toContain(s);
+  });
+
+  it("the per-state view is a strict subset: one jurisdiction's frameworks, same tenant scope", () => {
+    const available = catalog(...allAlignedCourseSlugs());
+    const indiana = scopeAlignments(available, "IN");
+    expect(indiana.length).toBeGreaterThan(0);
+    for (const g of indiana) expect(g.framework.state).toBe("IN");
+
+    // Per-state never surfaces anything the unscoped view wouldn't.
+    const allCodes = new Set(
+      scopeAlignments(available).flatMap((g) => g.alignments.map((a) => `${g.framework.id}:${a.code}`)),
+    );
+    for (const g of indiana)
+      for (const a of g.alignments) expect(allCodes).toContain(`${g.framework.id}:${a.code}`);
+
+    // And the tenant boundary still holds inside a state view.
+    const s1 = scopeAlignments(catalog(...SEASON_1), "IN");
+    const slugs = s1.flatMap((g) => g.alignments.flatMap((a) => a.courses.map((c) => c.slug)));
+    for (const s of slugs) expect(SEASON_1, `leaked ${s}`).toContain(s);
+  });
+
+  it("subject and course filters only narrow — they can never re-admit a dropped course", () => {
+    const groups = scopeAlignments(catalog(...SEASON_1), "IN");
+    const subjects = subjectsIn(groups);
+    expect(subjects.length).toBeGreaterThan(0);
+
+    for (const subject of subjects) {
+      for (const g of filterGroups(groups, { subject })) expect(g.framework.subject).toBe(subject);
+    }
+
+    const courses = coursesIn(groups);
+    expect(courses.map((c) => c.slug).every((s) => SEASON_1.includes(s))).toBe(true);
+    const one = filterGroups(groups, { courseSlug: courses[0]!.slug });
+    for (const g of one)
+      for (const a of g.alignments)
+        expect(a.courses.some((c) => c.slug === courses[0]!.slug)).toBe(true);
+
+    // Filtering by a course the tenant does not have yields nothing, not a leak.
+    expect(filterGroups(groups, { courseSlug: "state-civics-in" })).toEqual([]);
   });
 
   it("full coverage sorts above partial, so a teacher reads the strongest claims first", () => {
@@ -144,8 +278,9 @@ describe("standards are tenant-scoped — a school can only claim what it actual
   });
 
   it("the copyable plain text carries the provenance and only this tenant's courses", () => {
-    const text = toPlainText(scopeAlignments(catalog(...SEASON_1)), "ElementaryMBA");
-    expect(text).toContain(STANDARDS_FETCHED_ON);
+    const groups = scopeAlignments(catalog(...SEASON_1));
+    const text = toPlainText(groups, "ElementaryMBA");
+    for (const g of groups) expect(text).toContain(`Retrieved: ${g.framework.fetchedOn}`);
     expect(text).toContain("confirm against your jurisdiction's current requirements");
     expect(text).not.toContain("tobacco");
     expect(text).not.toContain("opioids");

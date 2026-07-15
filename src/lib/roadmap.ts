@@ -859,6 +859,33 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   **this** tenant's published courses, so a Season-1-only school (Learn.WitUS, ElementaryMBA) can
   never surface a Season 2/3 standard, and a tenant hosting none of the curriculum **404s**.
   Printable + one-click copy-as-plain-text for state filings. **No migration.**
+- 🔧 **State-standards finder + Indiana across the whole catalog**
+  (\`feat/standards-finder-indiana\`) — \`/standards\` is now the tool the note asked for: a teacher,
+  homeschooler, or admin **picks their state** and sees which courses meet which of that state's
+  standards, filterable by **subject** and **course** (server-rendered link filters — shareable,
+  printable), each standard still carrying its exact code, verbatim text, source link, per-framework
+  **retrieved date**, and honest \`full\`|\`partial\` flag. States we haven't mapped render as a real
+  "not mapped yet" page (**Arizona and Arkansas flagged next**), never an empty error. **Indiana is
+  now mapped across the whole catalog, not just the Commodity Map: 64 standards (31 full, 33
+  partial) across 9 frameworks** — U.S. Government 2023 (18 standards; the civics ladder plus
+  \`state-civics-in\`, which was written FROM Indiana's materials — the flagship of the 50-state
+  civics pattern), U.S. History 2023 (Great Migration, History of Unions, labor-Mexico/Poland),
+  World History 2023 (Solidarność → Cold War's end), **Health & Wellness 2023** (dental, Read Your
+  Body's Data, WOOP) and **High School PE 2023** (six sports courses — knowledge indicators only,
+  and each entry says an online course cannot demonstrate motor performance). Everything fetched
+  from IDOE **via the Wayback Machine** (in.gov blocks us; snapshots recorded in \`data/in.ts\`), and
+  the 2026-vs-2023 **two-editions problem is still flagged on the page** — the 2026 U.S. Government
+  edition currently exists only as a Google Drive link, so we cite the durable 2023 PDF and say so.
+  Rejections are published per state under "What we don't claim" (e.g. USG.3.9 Benjamin Harrison,
+  USG.1.6's named principles, deindustrialization for the unions course; AI/languages/study-skills
+  deferred until their Indiana frameworks are fetched). **The data model is now the concept-hub**
+  that makes states 3–51 cheap: \`src/lib/standards/claims.ts\` holds ~100 framework-agnostic
+  **course claims** (the catalog analyzed once, with lesson evidence); each state file
+  (\`data/in.ts\`, \`data/dc.ts\`) maps ITS codes → claim ids; **NGSS and Common Core are mapped once**
+  in \`shared/\` and *adopted* by states (verbatim or with local code aliases — DC demonstrates it);
+  and \`pnpm gen:standards\` auto-discovers state files into a committed generated index, so adding
+  Arizona is one new data file + regenerate, **zero hand-edited code change**. 18 isolation tests
+  incl. claims-fully-wired and filter-never-readmits proofs. **No migration, no seed.**
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`

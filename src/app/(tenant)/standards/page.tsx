@@ -6,38 +6,87 @@ import { brandName } from "@/lib/branding";
 import { ogImageUrl } from "@/lib/og";
 import { getAlignedCourses } from "@/db/queries/standards";
 import {
-  STANDARDS_FETCHED_ON,
+  NEXT_UP,
+  US_JURISDICTIONS,
   allAlignedCourseSlugs,
+  coursesIn,
+  filterGroups,
+  isStateCode,
+  jurisdictionData,
+  jurisdictionName,
+  mappedStates,
   scopeAlignments,
+  subjectsIn,
   summarizeStandards,
   toPlainText,
+  type ScopedFramework,
+  type StateCode,
+  type Subject,
 } from "@/lib/standards";
 import { StandardsActions } from "@/components/standards-actions";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// /standards — what this curriculum actually satisfies, and what it does not.
+// /standards — the state-standards finder: a teacher, homeschooler, or administrator picks
+// their state and sees which courses meet which of that state's standards, filterable by
+// subject and course, printable and copyable for a state filing.
 //
 // THE RULE THIS PAGE LIVES BY: this page makes a claim, to teachers and to homeschooling
 // parents who may file it with a state, about public education requirements. So:
 //   · Every code and every quoted standard was fetched from its publisher and transcribed
-//     verbatim (see the header of src/lib/standards.ts). Nothing here is remembered.
+//     verbatim (see src/lib/standards/index.ts). Nothing here is remembered.
 //   · Every claim links out to the source document, so a teacher can check us in one click.
 //   · "Partially covered" is stated as loudly as "covered", and the reason is given. We would
 //     rather lose a checkbox than have a parent file something that isn't true.
-//   · The fetch date is on the page, above the fold of the disclosure, because standards get
-//     revised and this mapping can go stale.
+//   · Each framework shows the date it was retrieved, because standards get revised and this
+//     mapping can go stale.
+//   · A state we have NOT mapped yet says so plainly — it is a real page with honest guidance,
+//     never an empty error.
 //
 // Multi-tenant: the alignment table is a static file keyed by course SLUG. getAlignedCourses()
 // is the tenant boundary — it returns only THIS tenant's published courses, and scopeAlignments()
-// then drops any standard none of them cover. A tenant that shares only Season 1 therefore sees
-// only the Season 1 standards, and 404s entirely if it hosts none of this curriculum.
+// then drops any standard none of them cover. The state/subject/course filters only ever narrow
+// that scoped set (filterGroups), so no filter combination can leak another tenant's catalog.
 // ─────────────────────────────────────────────────────────────────────────────
 
-export async function generateMetadata(): Promise<Metadata> {
+type SearchParams = Promise<{ state?: string; subject?: string; course?: string }>;
+
+function subjectSlug(s: Subject): string {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+function href(params: { state?: string; subject?: string; course?: string }): string {
+  const qs = new URLSearchParams();
+  if (params.state) qs.set("state", params.state);
+  if (params.subject) qs.set("subject", params.subject);
+  if (params.course) qs.set("course", params.course);
+  const s = qs.toString();
+  return s ? `/standards?${s}` : "/standards";
+}
+
+/** Normalize ?state= to a real code, or null. Anything unrecognizable 404s (never redirects). */
+function parseState(raw: string | undefined): StateCode | null {
+  if (!raw) return null;
+  const up = raw.toUpperCase();
+  return isStateCode(up) ? up : null;
+}
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}): Promise<Metadata> {
   const tenant = await requireTenant();
   const brand = brandName(tenant);
-  const title = "Standards alignment";
-  const description = `Which Indiana and Washington, D.C. high-school standards the ${brand} curriculum covers, which lesson covers each one, and where it only covers them partly.`;
+  const sp = await searchParams;
+  const state = parseState(sp.state);
+
+  const title = state ? `${jurisdictionName(state)} standards alignment` : "Find your state's standards";
+  const description = state
+    ? `Which ${jurisdictionName(state)} standards the ${brand} courses cover — the exact code, the standard's own words, and the lesson that covers it.`
+    : `Pick your state and see which ${brand} courses meet which of its standards — exact codes, verbatim text, and source links, printable for a state filing.`;
   return {
     title,
     description,
@@ -51,27 +100,66 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function StandardsPage() {
+const card =
+  "rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900 print:border-neutral-400";
+const textLink = "font-medium underline focus-visible:outline-2 focus-visible:outline-offset-2";
+const chipBase =
+  "inline-flex min-h-11 items-center rounded-full border px-3.5 py-1.5 text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12";
+const chipIdle = `${chipBase} border-neutral-300 hover:border-current dark:border-neutral-700`;
+const chipActive = `${chipBase} border-current font-semibold`;
+const accent = { color: "var(--accent)" };
+
+export default async function StandardsPage({ searchParams }: { searchParams: SearchParams }) {
   const tenant = await requireTenant();
   const brand = brandName(tenant);
+  const sp = await searchParams;
+
+  // ?state= must be a real jurisdiction. Garbage 404s — never a redirect, never a guess.
+  const state = parseState(sp.state);
+  if (sp.state && !state) notFound();
 
   // Tenant boundary. Everything below is derived from what THIS tenant actually publishes.
   const available = await getAlignedCourses(tenant.id, allAlignedCourseSlugs());
-  const groups = scopeAlignments(available);
+  const allGroups = scopeAlignments(available);
 
-  // A tenant that hosts none of this curriculum gets no standards page at all — better a 404
-  // than a page that implies an alignment for courses it does not have.
-  if (groups.length === 0) notFound();
+  // A tenant that hosts none of the mapped curriculum gets no standards page at all — better a
+  // 404 than a finder that implies an alignment for courses it does not have.
+  if (allGroups.length === 0) notFound();
 
-  const stats = summarizeStandards(groups);
-  const plainText = toPlainText(groups, brand);
+  // Which mapped states have at least one claim THIS tenant's catalog can back. A state whose
+  // data exists but rests entirely on courses this tenant does not publish is treated as
+  // not-yet-available here — an honest empty is better than a page of dropped claims.
+  const statesHere = mappedStates()
+    .map((code) => ({ code, groups: scopeAlignments(available, code) }))
+    .filter((s) => s.groups.length > 0);
 
-  const card =
-    "rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900 print:border-neutral-400";
-  const textLink = "font-medium underline focus-visible:outline-2 focus-visible:outline-offset-2";
-  const accent = { color: "var(--accent)" };
+  if (!state) return <PickerView brand={brand} statesHere={statesHere} />;
 
-  const jurisdictions = [...new Set(groups.map((g) => g.framework.jurisdiction))];
+  const stateEntry = statesHere.find((s) => s.code === state);
+  if (!stateEntry) return <ComingView brand={brand} state={state} statesHere={statesHere} />;
+
+  return (
+    <StateView
+      brand={brand}
+      state={state}
+      groups={stateEntry.groups}
+      subjectParam={sp.subject}
+      courseParam={sp.course}
+    />
+  );
+}
+
+// ── The picker — the finder's front door ─────────────────────────────────────
+
+function PickerView({
+  brand,
+  statesHere,
+}: {
+  brand: string;
+  statesHere: { code: StateCode; groups: ScopedFramework[] }[];
+}) {
+  const mappedCodes = new Set(statesHere.map((s) => s.code));
+  const rest = US_JURISDICTIONS.filter((j) => !mappedCodes.has(j.code));
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-8 sm:py-10">
@@ -79,11 +167,249 @@ export default async function StandardsPage() {
         <p className="text-sm font-semibold uppercase tracking-widest" style={accent}>
           {brand}
         </p>
-        <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">Standards alignment</h1>
+        <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">
+          Find your state&apos;s standards
+        </h1>
         <p className="mt-4 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
-          Designed for high school. Below is every {jurisdictions.join(" and ")} standard this
-          curriculum covers — the exact code, the standard&apos;s own words, and the lesson that
-          covers it. Where we only cover part of a standard, it says so, and says which part.
+          Pick your state to see which {brand} courses meet which of its published standards —
+          the exact code, the standard&apos;s own words, the lesson that covers it, and a link to
+          the source document. Built for teachers, homeschoolers, and administrators; printable
+          and copyable for a state filing.
+        </p>
+      </header>
+
+      <section className="mt-8" aria-labelledby="mapped-heading">
+        <h2 id="mapped-heading" className="text-xl font-bold">
+          Mapped so far
+        </h2>
+        <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {statesHere.map(({ code, groups }) => {
+            const stats = summarizeStandards(groups);
+            return (
+              <li key={code}>
+                <Link
+                  href={href({ state: code })}
+                  className={`${card} block transition-colors hover:border-current focus-visible:outline-2 focus-visible:outline-offset-2`}
+                >
+                  <span className="text-lg font-bold">{jurisdictionName(code)}</span>
+                  <span className="mt-1 block text-sm text-neutral-600 dark:text-neutral-400">
+                    {stats.total} standards mapped · {stats.full} fully covered · {stats.partial}{" "}
+                    partially · {stats.frameworks} frameworks
+                  </span>
+                  <span className="mt-2 inline-block text-sm font-medium" style={accent}>
+                    See the alignment →
+                  </span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+
+      <section
+        className="mt-8 rounded-2xl border-2 p-5 sm:p-6"
+        style={{ borderColor: "var(--accent)" }}
+        aria-labelledby="honesty-short"
+      >
+        <h2 id="honesty-short" className="text-lg font-bold">
+          How this map is made — and why most states aren&apos;t on it yet
+        </h2>
+        <p className="mt-3 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
+          We map a state only after fetching its actual standards documents and checking each
+          standard against actual lesson content. Nothing is cited from memory, partial coverage
+          is labelled as loudly as full coverage, and each framework shows the date it was
+          retrieved. That takes time per state — so states appear here as their mapping is
+          verified, not before. The courses themselves work anywhere; only the paperwork mapping
+          is state-by-state.
+        </p>
+      </section>
+
+      <section className="mt-8" aria-labelledby="coming-heading">
+        <h2 id="coming-heading" className="text-xl font-bold">
+          Not mapped yet
+        </h2>
+        <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+          Next in the queue:{" "}
+          {NEXT_UP.map((code, i) => (
+            <span key={code}>
+              {i > 0 ? " and " : ""}
+              <Link href={href({ state: code })} className={textLink} style={accent}>
+                {jurisdictionName(code)}
+              </Link>
+            </span>
+          ))}
+          . Every other state follows the same fetch-then-verify method.
+        </p>
+        <ul className="mt-4 flex flex-wrap gap-2">
+          {rest.map((j) => (
+            <li key={j.code}>
+              <Link
+                href={href({ state: j.code })}
+                className={`${chipIdle} ${NEXT_UP.includes(j.code as StateCode) ? "border-current font-semibold" : "text-neutral-600 dark:text-neutral-400"}`}
+              >
+                {j.name}
+                {NEXT_UP.includes(j.code as StateCode) ? " · next" : ""}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="mt-12 rounded-2xl border border-neutral-200 p-6 dark:border-neutral-800 print:hidden">
+        <h2 className="text-xl font-bold">The courses don&apos;t wait for the paperwork</h2>
+        <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
+          Every course publishes its sources and can be used in any state today. The state mapping
+          is what turns &ldquo;this is good teaching&rdquo; into &ldquo;this meets standard X&rdquo;
+          for a filing.
+        </p>
+        <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <Link
+            href="/courses"
+            className="inline-flex min-h-11 items-center justify-center rounded-md px-5 py-2.5 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12"
+            style={{ backgroundColor: "var(--accent)" }}
+          >
+            Browse the courses
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+// ── A state we have not mapped yet — a real page, never an empty error ───────
+
+function ComingView({
+  brand,
+  state,
+  statesHere,
+}: {
+  brand: string;
+  state: StateCode;
+  statesHere: { code: StateCode; groups: ScopedFramework[] }[];
+}) {
+  const name = jurisdictionName(state);
+  const isNext = NEXT_UP.includes(state);
+  // Distinguish "we have data for this state, but none of it applies to this tenant's catalog"
+  // from "nobody has mapped this state yet" — the first is about THIS brand's courses.
+  const mappedElsewhere = jurisdictionData(state) !== undefined;
+
+  return (
+    <main className="mx-auto max-w-4xl px-4 py-8 sm:py-10">
+      <nav className="text-sm">
+        <Link href={href({})} className={textLink} style={accent}>
+          ← All states
+        </Link>
+      </nav>
+      <header className="mt-4 max-w-3xl">
+        <p className="text-sm font-semibold uppercase tracking-widest" style={accent}>
+          {brand}
+        </p>
+        <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">
+          {name}: not mapped yet
+        </h1>
+        <p className="mt-4 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
+          {mappedElsewhere
+            ? `${name}'s standards have been mapped, but none of the standards rest on courses ${brand} currently publishes — so there is nothing we can honestly show you here yet.`
+            : isNext
+              ? `${name} is next in the queue. We haven't published its mapping yet because our rule is fetch-then-verify: every code is retrieved from ${name}'s own standards documents and checked against actual lesson content before it appears here.`
+              : `We haven't mapped ${name}'s standards yet. Every state gets the same treatment: fetch the actual standards documents, transcribe each code verbatim, and check it against actual lesson content — we publish nothing before that is done.`}
+        </p>
+      </header>
+
+      <section className="mt-8" aria-labelledby="meanwhile-heading">
+        <h2 id="meanwhile-heading" className="text-xl font-bold">
+          What you can do meanwhile
+        </h2>
+        <ul className="mt-3 list-disc space-y-2.5 pl-5 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
+          <li>
+            The courses work in {name} today — standards mapping changes the paperwork, not the
+            teaching. Every course publishes its sources, so you can check any lesson against your
+            own state&apos;s requirements.
+          </li>
+          <li>
+            The mapped states below show exactly what a finished mapping looks like — codes,
+            verbatim standard text, per-lesson evidence, and honest &ldquo;partial&rdquo; labels.
+            {statesHere.length > 0 ? " Use them as the template for your own crosswalk." : ""}
+          </li>
+          {statesHere.map(({ code, groups }) => {
+            const stats = summarizeStandards(groups);
+            return (
+              <li key={code}>
+                <Link href={href({ state: code })} className={textLink} style={accent}>
+                  {jurisdictionName(code)} — {stats.total} standards mapped
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+
+      <section className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap print:hidden">
+        <Link
+          href="/courses"
+          className="inline-flex min-h-11 items-center justify-center rounded-md px-5 py-2.5 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12"
+          style={{ backgroundColor: "var(--accent)" }}
+        >
+          Browse the courses
+        </Link>
+        <Link
+          href={href({})}
+          className="inline-flex min-h-11 items-center justify-center rounded-md border border-neutral-300 px-5 py-2.5 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 pointer-coarse:min-h-12"
+        >
+          Pick a different state
+        </Link>
+      </section>
+    </main>
+  );
+}
+
+// ── The state view — the alignment itself, filterable ────────────────────────
+
+function StateView({
+  brand,
+  state,
+  groups,
+  subjectParam,
+  courseParam,
+}: {
+  brand: string;
+  state: StateCode;
+  groups: ScopedFramework[];
+  subjectParam?: string;
+  courseParam?: string;
+}) {
+  const name = jurisdictionName(state);
+  const subjects = subjectsIn(groups);
+  const courses = coursesIn(groups);
+
+  // Filters resolve against what THIS tenant may see; anything else is silently no-filter.
+  const subject = subjects.find((s) => subjectSlug(s) === subjectParam);
+  const course = courses.find((c) => c.slug === courseParam);
+  const shown = filterGroups(groups, { subject, courseSlug: course?.slug });
+
+  const stats = summarizeStandards(shown);
+  const plainText = toPlainText(shown, brand);
+  const filtered = Boolean(subject || course);
+
+  return (
+    <main className="mx-auto max-w-4xl px-4 py-8 sm:py-10">
+      <nav className="text-sm print:hidden">
+        <Link href={href({})} className={textLink} style={accent}>
+          ← All states
+        </Link>
+      </nav>
+
+      <header className="mt-4 max-w-3xl">
+        <p className="text-sm font-semibold uppercase tracking-widest" style={accent}>
+          {brand}
+        </p>
+        <h1 className="mt-2 text-3xl font-bold leading-tight sm:text-4xl">
+          {name} standards alignment
+        </h1>
+        <p className="mt-4 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
+          Designed for high school. Below is every {name} standard these courses cover — the
+          exact code, the standard&apos;s own words, and the lesson that covers it. Where we only
+          cover part of a standard, it says so, and says which part.
         </p>
 
         <dl className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
@@ -124,38 +450,127 @@ export default async function StandardsPage() {
         <ul className="mt-3 space-y-2.5 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
           <li>
             <strong>We mapped this ourselves.</strong> This alignment was done by {brand} against
-            the published standards. It has not been reviewed, endorsed, or approved by the Indiana
-            Department of Education, by OSSE, or by any other education authority.
+            the published standards. It has not been reviewed, endorsed, or approved by{" "}
+            {name}&apos;s education authority or by anyone else.
           </li>
           <li>
-            <strong>Retrieved {STANDARDS_FETCHED_ON}.</strong> Every code and every quoted standard
-            on this page was fetched from its publisher on that date and copied word for word.
+            <strong>Every code was fetched, then transcribed word for word.</strong> Each
+            framework below shows the date its codes and text were retrieved from the publisher.
           </li>
           <li>
-            <strong>Standards get revised.</strong> A code can be renumbered or its wording changed
-            without notice — Indiana currently publishes two live editions of its Economics
-            standards, and their text differs. Confirm anything you file against your own
-            jurisdiction&apos;s current requirements, using the source links below.
+            <strong>Standards get revised.</strong> A code can be renumbered or its wording
+            changed without notice — Indiana currently publishes two live editions of several of
+            its high-school standards documents, and their text differs. Confirm anything you file
+            against your own jurisdiction&apos;s current requirements, using the source links
+            below.
           </li>
           <li>
-            <strong>We would rather claim less.</strong> Where the curriculum only partly covers a
+            <strong>We would rather claim less.</strong> Where the courses only partly cover a
             standard, this page says <em>partially covered</em> and explains the gap. Standards we
-            considered and could not honestly claim are not listed at all.
+            considered and could not honestly claim are listed at the bottom, with the reasons.
           </li>
         </ul>
       </section>
 
-      {groups.map(({ framework, alignments }) => (
+      {/* Filters: plain links, so the page stays server-rendered, shareable, and printable. */}
+      <section className="mt-8 print:hidden" aria-label="Filter the alignment">
+        {subjects.length > 1 ? (
+          <div>
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
+              Subject
+            </h2>
+            <ul className="mt-2 flex flex-wrap gap-2">
+              <li>
+                <Link
+                  href={href({ state, course: course?.slug })}
+                  className={subject === undefined ? chipActive : chipIdle}
+                  aria-current={subject === undefined ? "true" : undefined}
+                >
+                  All subjects
+                </Link>
+              </li>
+              {subjects.map((s) => (
+                <li key={s}>
+                  <Link
+                    href={href({ state, subject: subjectSlug(s), course: course?.slug })}
+                    className={subject === s ? chipActive : chipIdle}
+                    aria-current={subject === s ? "true" : undefined}
+                  >
+                    {s}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+
+        {courses.length > 1 ? (
+          <details className="mt-4" open={course !== undefined}>
+            <summary className="inline-flex min-h-11 cursor-pointer list-none items-center text-sm font-medium underline focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12">
+              {course ? `Filtering by course: ${course.title}` : "Filter by course"}
+            </summary>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              <li>
+                <Link
+                  href={href({ state, subject: subject && subjectSlug(subject) })}
+                  className={course === undefined ? chipActive : chipIdle}
+                  aria-current={course === undefined ? "true" : undefined}
+                >
+                  All courses
+                </Link>
+              </li>
+              {courses.map((c) => (
+                <li key={c.slug}>
+                  <Link
+                    href={href({
+                      state,
+                      subject: subject && subjectSlug(subject),
+                      course: c.slug,
+                    })}
+                    className={course?.slug === c.slug ? chipActive : chipIdle}
+                    aria-current={course?.slug === c.slug ? "true" : undefined}
+                  >
+                    {c.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </details>
+        ) : null}
+
+        {filtered ? (
+          <p className="mt-4 text-sm text-neutral-600 dark:text-neutral-400" aria-live="polite">
+            Showing {stats.total} standard{stats.total === 1 ? "" : "s"}
+            {subject ? ` in ${subject}` : ""}
+            {course ? ` covered by ${course.title}` : ""}.{" "}
+            <Link href={href({ state })} className={textLink} style={accent}>
+              Clear filters
+            </Link>
+          </p>
+        ) : null}
+      </section>
+
+      {shown.length === 0 ? (
+        <p className="mt-10 text-neutral-600 dark:text-neutral-400">
+          No standards match that combination of filters.{" "}
+          <Link href={href({ state })} className={textLink} style={accent}>
+            Clear the filters
+          </Link>{" "}
+          to see all {name} standards.
+        </p>
+      ) : null}
+
+      {shown.map(({ framework, alignments }) => (
         <section key={framework.id} className="mt-12" aria-labelledby={`fw-${framework.id}`}>
           <div className="border-b border-neutral-200 pb-4 dark:border-neutral-800">
             <p className="text-xs font-semibold uppercase tracking-widest" style={accent}>
-              {framework.jurisdiction}
+              {framework.jurisdiction} · {framework.subject}
             </p>
             <h2 id={`fw-${framework.id}`} className="mt-1 text-2xl font-bold">
               {framework.name}
             </h2>
             <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-              {framework.version} · {framework.publisher}
+              {framework.version} · {framework.publisher} · retrieved {framework.fetchedOn}
             </p>
             <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
               {framework.adoption}
@@ -200,10 +615,7 @@ export default async function StandardsPage() {
                   <ul className="mt-2 flex flex-wrap gap-2">
                     {a.courses.map((c) => (
                       <li key={c.id}>
-                        <Link
-                          href={`/course/${c.id}`}
-                          className="inline-flex min-h-11 items-center rounded-full border border-neutral-300 px-3.5 py-1.5 text-sm transition-colors hover:border-current focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 pointer-coarse:min-h-12"
-                        >
+                        <Link href={`/course/${c.id}`} className={chipIdle}>
                           {c.title}
                         </Link>
                       </li>
@@ -232,37 +644,7 @@ export default async function StandardsPage() {
         </section>
       ))}
 
-      <section className="mt-12" aria-labelledby="rejected-heading">
-        <h2 id="rejected-heading" className="text-2xl font-bold">
-          What we don&apos;t claim
-        </h2>
-        <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
-          A standards page is only worth reading if the omissions are honest too. We looked at
-          these and left them out:
-        </p>
-        <ul className="mt-4 space-y-2.5 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
-          <li>
-            <strong>Mathematics — nothing.</strong> This curriculum does no mathematics
-            instruction, so it meets no Common Core or Indiana mathematics standard.
-          </li>
-          <li>
-            <strong>Science — almost nothing.</strong> There is no laboratory work, no
-            investigation and no scientific modelling here. We claim a single NGSS performance
-            expectation, partially, and we explain exactly why above. It is not a science course
-            and we will not sell it as one.
-          </li>
-          <li>
-            <strong>Prohibition and mass incarceration, in D.C.</strong> The curriculum teaches
-            both. D.C.&apos;s 2023 social studies standards contain no standard on either, so
-            there is nothing for us to cite. The gap is in the standards, not the lessons.
-          </li>
-          <li>
-            <strong>D.C.&apos;s economics and geography strands.</strong> In the 2023 document
-            these are un-numbered &ldquo;statements of practice&rdquo;, not coded standards. There
-            is no code to cite, so we cite none — even though the economics content lines up well.
-          </li>
-        </ul>
-      </section>
+      <NotClaimed state={state} />
 
       <section className="mt-12 rounded-2xl border border-neutral-200 p-6 dark:border-neutral-800 print:hidden">
         <h2 className="text-xl font-bold">See it for yourself</h2>
@@ -272,20 +654,46 @@ export default async function StandardsPage() {
         </p>
         <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <Link
-            href="/explore"
+            href="/courses"
             className="inline-flex min-h-11 items-center justify-center rounded-md px-5 py-2.5 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12"
             style={{ backgroundColor: "var(--accent)" }}
           >
-            Back to the map
+            Browse the courses
           </Link>
           <Link
-            href="/courses"
+            href={href({})}
             className="inline-flex min-h-11 items-center justify-center rounded-md border border-neutral-300 px-5 py-2.5 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 pointer-coarse:min-h-12"
           >
-            Browse the courses
+            Pick a different state
           </Link>
         </div>
       </section>
     </main>
+  );
+}
+
+// The honest omissions — the evidence the map was not padded. Rendered whole (not filtered):
+// the rejected list is jurisdiction-level context a filer should always see.
+function NotClaimed({ state }: { state: StateCode }) {
+  const data = jurisdictionData(state);
+  if (!data || data.notClaimed.length === 0) return null;
+
+  return (
+    <section className="mt-12" aria-labelledby="rejected-heading">
+      <h2 id="rejected-heading" className="text-2xl font-bold">
+        What we don&apos;t claim
+      </h2>
+      <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
+        A standards page is only worth reading if the omissions are honest too. We looked at these
+        and left them out:
+      </p>
+      <ul className="mt-4 space-y-2.5 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
+        {data.notClaimed.map((n) => (
+          <li key={n.heading}>
+            <strong>{n.heading}</strong> {n.body}
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
