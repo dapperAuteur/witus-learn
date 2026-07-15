@@ -52,14 +52,23 @@ async function main() {
     process.exit(1);
   }
 
-  const instructorId = "seed-emba-instructor";
-  await db
-    .insert(schema.users)
-    .values({ id: instructorId, email: "faculty@emba.witus.online", emailVerified: true, name: "ElementaryMBA Faculty" })
-    .onConflictDoNothing();
+  // BAM instructs every course, on every tenant — the synthetic "emba-faculty" account put
+  // Speedway under /emba-faculty/... and regressed reassign:instructor on every re-seed.
+  const existing = await db
+    .select({ id: schema.users.id })
+    .from(schema.users)
+    .where(eq(schema.users.email, "bam@awews.com"))
+    .limit(1);
+  const instructorId = existing[0]?.id ?? "bam";
+  if (!existing[0]) {
+    await db
+      .insert(schema.users)
+      .values({ id: instructorId, email: "bam@awews.com", emailVerified: true, name: "BAM" })
+      .onConflictDoNothing();
+  }
   await db
     .insert(schema.userProfiles)
-    .values({ userId: instructorId, username: "emba-faculty", displayName: "ElementaryMBA Faculty" })
+    .values({ userId: instructorId, username: "bam", displayName: "BAM" })
     .onConflictDoNothing();
   await db
     .insert(schema.tenantMemberships)

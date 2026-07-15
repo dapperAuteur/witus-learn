@@ -724,14 +724,27 @@ async function main() {
       process.exit(1);
     }
 
-    const instructorId = "seed-trade-faculty";
-    await db
-      .insert(schema.users)
-      .values({ id: instructorId, email: "faculty@trade.witus.online", emailVerified: true, name: "WitUS Trade Faculty" })
-      .onConflictDoNothing();
+    // BAM is the instructor on every Learn.WitUS course (see seed-courses.ts's ensureInstructor).
+    // This used to seed a synthetic "trade-faculty" account, which put the course at
+    // /trade-faculty/faa-part-107 instead of /bam/faa-part-107 — course URLs are
+    // /{instructor-username}/{slug}. Match by email so the real logged-in account (which owns
+    // bam@awews.com) keeps ownership; seedAuthoredCourse updates instructor_id on re-seed, so
+    // one `pnpm seed:faa` re-run moves the live course to /bam/.
+    const existing = await db
+      .select({ id: schema.users.id })
+      .from(schema.users)
+      .where(eq(schema.users.email, "bam@awews.com"))
+      .limit(1);
+    const instructorId = existing[0]?.id ?? "bam";
+    if (!existing[0]) {
+      await db
+        .insert(schema.users)
+        .values({ id: instructorId, email: "bam@awews.com", emailVerified: true, name: "BAM" })
+        .onConflictDoNothing();
+    }
     await db
       .insert(schema.userProfiles)
-      .values({ userId: instructorId, username: "trade-faculty", displayName: "WitUS Trade Faculty" })
+      .values({ userId: instructorId, username: "bam", displayName: "BAM" })
       .onConflictDoNothing();
     await db
       .insert(schema.tenantMemberships)
