@@ -1535,5 +1535,431 @@ And now connect it back to Section 3, because this is not a curiosity — **it i
         ],
       },
     },
+
+    // ────────────── SECTION 6 · HONEST LIMITS AND THE DIRECTIVE THEY FOUGHT ──────────────
+    {
+      slug: "nordic-erosion-outsiders",
+      title: "13 · The honest limits: falling density and the people outside the agreement",
+      section: "Section 6 · Honest limits — erosion, outsiders, and the directive they fought",
+      body: `A course that stopped at Section 5 would be a very good brochure. This lesson is why it isn't one. Three things are true at once about the Nordic model, and an educated reader holds all three: it is genuinely impressive, it is **eroding**, and it has always had **people standing outside it**.
+
+**Erosion, part one: density is falling.** The two-thirds figure you have been carrying is *down from a higher peak.* In Sweden, union density stood around **85% in the mid-1990s** and is around **65%** now (Kjellberg; OECD/AIAS) — the 2007 a-kassa reform (Section 2) is a big part of that fall, but the drift has been long and broad. Denmark has declined from a higher mid-1990s peak to around **67%**. High by world standards, yes. But "Nordic unions are strong" and "Nordic unions are weakening" are **both true**, and a course that gives you only the first has handed you a postcard.
+
+**Erosion, part two: the bundle is coming apart — and here Denmark is the sharper case.** Recall that the Ghent effect works because the unemployment fund is *linked* to the union (Section 2), and that the funds are not *legally* the unions. Denmark has seen the rise of **cross-sector "alternative" unions and unemployment funds** — organisations that sell you the a-kasse and a cheap, no-strings membership **without** the traditional bargaining union attached. They are sometimes called "yellow" unions by the established movement. For a worker who just wants the insurance, they are a rational buy; for the model, they are a slow leak, because they capture the *fund* while detaching it from the *bargaining power* that the fund was quietly financing. This is the erosion mechanism Section 2 predicted, happening in real life, more in Denmark than in Sweden.
+
+**The outsiders: who the contract floor was never covering.** Because the wage floor is a *contract*, it protects the people the contract reaches — and leaves the rest exposed. Three groups sit outside, and they are growing:
+
+1. **Migrant and posted workers.** A worker sent temporarily to Sweden or Denmark by a foreign employer ("posted" from another EU country) may fall outside the local agreement — and the model's usual enforcement tool, collective pressure, collides here with **EU free-movement law**. The landmark is the **Laval** case (*Laval un Partneri Ltd v Svenska Byggnadsarbetareförbundet*, Court of Justice of the EU, C-341/05, judgment 2007): Swedish construction unions blockaded a site over a Latvian firm's posted workers, and the CJEU held the union action an unlawful, disproportionate restriction on the freedom to provide services. Sweden had to change its law in response (the 2010 "Lex Laval"). Read that as a genuine limit: **the same sympathy-and-blockade weapon that enforces the domestic floor can be curbed when it meets a cross-border worker and EU market freedoms.**
+2. **Platform and gig workers.** The model assumes an employer to bargain with. Platform work blurs whether there is one — and where a rider or driver is classed as self-employed, the collective-agreement floor may not reach them at all. This is the same structural gap the India course in this track is built around, showing up at the rich end of the world.
+3. **Workers at firms that simply never signed.** Coverage is ~82–88%, not 100% (Section 1). The uncovered slice is disproportionately small firms, new sectors, and — as Tesla showed at the top end — determined non-signatories.
+
+**Sweden is not Denmark, one last time.** The erosion has a different flavour in each: Denmark's most visible leak is the alternative-union/a-kasse split; Sweden's sharpest shock was the 2007 fee reform and its posted-work reckoning in Laval. Same disease family, different symptoms — which is exactly why the course refused, from lesson 1, to blur them into "Scandinavia."
+
+:::reveal Give the three groups that sit OUTSIDE the Nordic collective-agreement floor, and the case that shows the migrant-worker limit. ||| (1) Migrant/posted workers — with the limit shown by the Laval case (CJEU, C-341/05, 2007), where the CJEU held Swedish union blockade action against a Latvian firm's posted workers a disproportionate restriction on the freedom to provide services (prompting Sweden's 2010 "Lex Laval"); (2) platform/gig workers, where there may be no employer to bargain with; (3) workers at firms that never signed an agreement (coverage is ~82–88%, not 100%).
+
+## Sources
+- Kjellberg, A. (2024). *Kollektivavtalens täckningsgrad samt organisationsgraden hos arbetsgivarförbund och fackförbund*. Lund University, Department of Sociology. https://portal.research.lu.se/en/publications/
+- Court of Justice of the European Union. (2007). *Laval un Partneri Ltd v Svenska Byggnadsarbetareförbundet* (Case C-341/05). https://curia.europa.eu/juris/liste.jsf?num=C-341/05
+- Lind, J. (2009). The end of the Ghent system as a trade union recruitment machinery? *Industrial Relations Journal, 40*(6), 510–523. https://doi.org/10.1111/j.1468-2338.2009.00543.x
+- OECD/AIAS. (n.d.). *ICTWSS database — country notes: Sweden; Denmark*. https://www.oecd.org/en/data/datasets/oecd-aias-ictwss-database.html`,
+      recallContent: [
+        {
+          prompt: "What are the three things simultaneously true about the Nordic model that the course insists on?",
+          answer:
+            "It is genuinely impressive; it is eroding (density has fallen from a higher peak — Sweden ~85% mid-1990s to ~65% now); and it has always had people standing outside it (migrant/posted, platform, and never-signed-firm workers). 'Strong' and 'weakening' are both true.",
+        },
+        {
+          prompt: "How does the Danish 'alternative union / a-kasse' trend erode the model, and what did the Laval case establish?",
+          answer:
+            "Alternative funds sell the a-kasse without the bargaining union attached, capturing the fund while detaching it from the bargaining power it financed — the Section 2 erosion mechanism, sharpest in Denmark. Laval (CJEU C-341/05, 2007) held Swedish union blockade action against a Latvian firm's posted workers a disproportionate restriction on EU freedom to provide services, curbing the enforcement weapon at the border (prompting the 2010 'Lex Laval').",
+        },
+      ],
+    },
+    {
+      slug: "nordic-eu-directive-and-close",
+      title: "14 · The law they fought, and the four questions revisited",
+      section: "Section 6 · Honest limits — erosion, outsiders, and the directive they fought",
+      body: `Here is the most counterintuitive fact in the course, saved for last because you now have everything you need to understand it: **the Nordic unions fought against a European law that would have guaranteed adequate minimum wages.** Unions. Against a minimum wage. Read on.
+
+**The law.** In October **2022** the EU adopted the **Directive on adequate minimum wages** (Directive (EU) 2022/2041). Its aim is to promote adequate statutory minimum wages where they exist and to promote collective bargaining on wage-setting across the EU — a broadly pro-worker instrument, and most of the EU welcomed it.
+
+**The crucial fine print.** The directive was written with the Nordic model explicitly in mind. It **does not require** a country that has no statutory minimum wage to introduce one, and it does **not require** making collective agreements universally applicable, where wage protection is already delivered through collective bargaining (Directive (EU) 2022/2041, Article 1). On its face, then, Sweden and Denmark were carved out.
+
+**And they fought it anyway.** Denmark voted against the directive; Sweden opposed it; and the Nordic union confederations — the people the minimum wage would nominally *help* — lobbied hard against it. Then **Denmark, supported by Sweden, asked the Court of Justice of the EU to annul it** (Case **C-19/23**, *Denmark v Parliament and Council*), arguing the EU had legislated on **"pay,"** which the EU treaties specifically **exclude** from EU competence (Article 153(5) of the Treaty on the Functioning of the EU). *(As this course was written, it does not assert a final outcome of that case — the status is a thing for you to check in your present, not a fact to recall.)*
+
+**Why on earth would unions do this? Because they understood the lesson of this entire course.** Their fear was not the carve-out on the page; it was the **precedent**. If the EU establishes that it may legislate about wages at all, then the thing Sweden and Denmark built — a wage floor that is a *contract*, kept deliberately outside the reach of any legislature (Section 1), defended by self-regulation (Section 3) and collective pressure (Section 4) — has a new legislature reaching toward it. A statutory floor, even a generous one, even an optional one, is a standing invitation to let the *state* (or Brussels) set wages, which over time would hollow out the reason to belong to a union that bargains them. **Remember lesson 1: a floor written into law can become a ceiling, and it can also become a substitute for the union itself.** The Nordic unions were protecting the *mechanism*, not refusing the money — they would rather negotiate a high floor forever than be handed one and lose the bargaining table that produced it.
+
+That is the whole course in one paradox. **The strongest labour movements in the developed world fought a minimum-wage law to protect a labour model in which there is no minimum-wage law — because the law would weaken the movement that makes the no-law model work.** If that sentence makes sense to you now, you have learned the thing this course exists to teach.
+
+---
+
+## The four questions, one last time
+
+**Q1 — Who may organise?** Everyone, and — uniquely — about **two-thirds actually do** (Sweden ~65%, Denmark ~67%, early 2020s), because the **Ghent system** makes joining the default. Norway, without Ghent, sits around half.
+
+**Q2 — Who is excluded?** Whoever the *contract* doesn't reach: migrant/posted workers (see *Laval*), platform workers, and employees of the ~15–18% of workplaces with no agreement. Because the floor is a contract, being outside the contract can mean being outside the floor.
+
+**Q3 — Who bargains, and at what level?** Sectoral bargaining under **self-regulation** (Saltsjöbaden 1938; the September Compromise 1899), with export industry setting the norm and **no statutory minimum wage and no legal extension** — a floor that is a contract, not a law.
+
+**Q4 — What happens if you try?** You are protected, and your side may fight hard: the **legal sympathy strike**, banned in the US under Taft-Hartley §8(b)(4), is the enforcement engine here — as the unfinished **Tesla** dispute (2023– ) shows in real time.
+
+**And the one methodological habit to keep forever:** *look for the plumbing before you reach for the culture.* Nordic density is not a national personality; it is who runs the unemployment fund. That habit will serve you in every other country in this track.
+
+**Where to go next.** Take the sibling country course **"Germany: Workers on the Board"** to see a completely different answer to Q3 (co-determination and works councils). Revisit the anchor, **"The History of Unions: America and the World,"** for the four questions and the US arc. And for your rights on the job *today*, the companion **"Know Your Rights at Work."** This course was the how-did-this-get-built, and why-is-it-different-over-there. The next one is a different country, same four questions.
+
+:::reveal Why did the Nordic unions fight the EU minimum-wage directive (2022/2041), even though it explicitly did NOT force a statutory minimum on Sweden or Denmark? ||| Because they were protecting the mechanism, not refusing the money. Their fear was the precedent: if the EU may legislate about "pay" at all, a new legislature is reaching toward a wage floor they deliberately keep outside any legislature's reach. A statutory floor — even generous, even optional — invites the state to set wages and can become a substitute for the union that bargains them (a floor can become a ceiling). Denmark, backed by Sweden, even asked the CJEU to annul the directive (Case C-19/23) on the ground that the EU treaties exclude "pay" from EU competence. They would rather negotiate a high floor forever than be handed one and lose the bargaining table.
+
+## Sources
+- European Parliament & Council. (2022). *Directive (EU) 2022/2041 of 19 October 2022 on adequate minimum wages in the European Union*, Article 1. EUR-Lex. https://eur-lex.europa.eu/eli/dir/2022/2041/oj
+- Consolidated version of the Treaty on the Functioning of the European Union, Article 153(5) [excluding pay from EU competence]. EUR-Lex. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12016E153
+- Court of Justice of the European Union. (n.d.). *Denmark v Parliament and Council* (Case C-19/23) [annulment action; check current status]. https://curia.europa.eu/juris/liste.jsf?num=C-19/23`,
+      recallContent: [
+        {
+          prompt: "State the paradox this course exists to teach, in one sentence.",
+          answer:
+            "The strongest labour movements in the developed world fought a minimum-wage law (the EU directive 2022/2041) to protect a labour model in which there is no minimum-wage law — because the law would weaken the movement that makes the no-law model work.",
+        },
+        {
+          prompt: "What is the single methodological habit the course wants you to keep for every other country?",
+          answer:
+            "Look for the plumbing before you reach for the culture. Union numbers and labour outcomes are usually explained by institutions (like who runs the unemployment fund) rather than by national character.",
+        },
+      ],
+    },
+    {
+      slug: "nordic-quiz-6",
+      title: "Section 6 quiz · Limits, the directive, and the whole model",
+      section: "Section 6 · Honest limits — erosion, outsiders, and the directive they fought",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What three things does the course insist are simultaneously true about the Nordic model?",
+            options: [
+              "It is perfect, permanent, and universal",
+              "It is genuinely impressive, it is eroding, and it has always had people standing outside it",
+              "It is failing, fraudulent, and finished",
+              "It is identical to the US, German, and French models",
+            ],
+            correctIndex: 1,
+            explanation:
+              "'Strong' and 'weakening' are both true; a course that gives only the first is a postcard.",
+            sourceLessonSlug: "nordic-erosion-outsiders",
+          },
+          {
+            prompt: "Roughly how has Swedish union density changed since the mid-1990s?",
+            options: [
+              "Risen from 65% to 85%",
+              "Fallen from around 85% (mid-1990s) to around 65% now",
+              "Stayed flat at 50%",
+              "Collapsed to 10%",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Down from a higher peak, with the 2007 a-kassa reform a big part of the fall (Kjellberg; OECD/AIAS).",
+            sourceLessonSlug: "nordic-erosion-outsiders",
+          },
+          {
+            prompt: "How do Danish 'alternative' unions and unemployment funds erode the model?",
+            options: [
+              "By raising wages too fast",
+              "They sell the a-kasse without the bargaining union attached — capturing the fund while detaching it from the bargaining power the fund quietly financed",
+              "By banning strikes",
+              "By forcing everyone into one union",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This is exactly the erosion mechanism Section 2 predicted, and it is sharper in Denmark than in Sweden.",
+            sourceLessonSlug: "nordic-erosion-outsiders",
+          },
+          {
+            prompt: "Which three groups sit OUTSIDE the collective-agreement floor?",
+            options: [
+              "Executives, civil servants, and retirees",
+              "Migrant/posted workers, platform/gig workers, and employees of firms that never signed an agreement",
+              "Only foreign tourists",
+              "Nobody — coverage is universal",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Because the floor is a contract, being outside the contract can mean being outside the floor.",
+            sourceLessonSlug: "nordic-erosion-outsiders",
+          },
+          {
+            prompt: "What did the Laval case (CJEU, C-341/05, 2007) establish?",
+            options: [
+              "That Swedish wages must be set by law",
+              "That Swedish union blockade action against a Latvian firm's posted workers was a disproportionate restriction on the EU freedom to provide services",
+              "That posted workers may never be paid",
+              "That Tesla must sign a collective agreement",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A genuine limit: the enforcement weapon can be curbed when it meets a cross-border worker and EU market freedoms (prompting Sweden's 2010 'Lex Laval').",
+            sourceLessonSlug: "nordic-erosion-outsiders",
+          },
+          {
+            prompt: "Why do platform/gig workers pose a structural problem for the model?",
+            options: [
+              "They earn too much to need a union",
+              "The model assumes an employer to bargain with, and where a worker is classed as self-employed the collective-agreement floor may not reach them at all",
+              "They are banned from unions by EU law",
+              "They are all covered automatically",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same gap the India course is built around, appearing at the rich end of the world.",
+            sourceLessonSlug: "nordic-erosion-outsiders",
+          },
+          {
+            prompt: "What was the EU Directive (EU) 2022/2041?",
+            options: [
+              "A ban on collective bargaining",
+              "The 2022 Directive on adequate minimum wages — promoting adequate statutory minimum wages where they exist and promoting collective bargaining on wage-setting",
+              "A directive forcing Sweden to adopt the euro",
+              "A Tesla-specific regulation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Broadly pro-worker, and most of the EU welcomed it — which makes the Nordic resistance so striking.",
+            sourceLessonSlug: "nordic-eu-directive-and-close",
+          },
+          {
+            prompt: "What did the directive's fine print say about countries with no statutory minimum wage?",
+            options: [
+              "It forced them to introduce one immediately",
+              "It does NOT require them to introduce a statutory minimum, nor to make collective agreements universally applicable, where wage protection is delivered through bargaining (Article 1)",
+              "It abolished their collective agreements",
+              "It set their wages directly from Brussels",
+            ],
+            correctIndex: 1,
+            explanation:
+              "On its face Sweden and Denmark were carved out — and yet they fought it.",
+            sourceLessonSlug: "nordic-eu-directive-and-close",
+          },
+          {
+            prompt: "Why did the Nordic unions fight a directive that would nominally HELP low-paid workers?",
+            options: [
+              "Because they oppose higher wages",
+              "To protect the mechanism, not refuse the money — they feared the precedent that the EU may legislate on 'pay,' which invites a legislature toward a floor they keep deliberately outside any legislature",
+              "Because the EU is not democratic",
+              "Because they wanted lower wages",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A statutory floor can become a ceiling and a substitute for the union that bargains it. They protect the bargaining table.",
+            sourceLessonSlug: "nordic-eu-directive-and-close",
+          },
+          {
+            prompt: "On what legal ground did Denmark (backed by Sweden) ask the CJEU to annul the directive (Case C-19/23)?",
+            options: [
+              "That the directive was too generous",
+              "That the EU had legislated on 'pay,' which the EU treaties (Article 153(5) TFEU) specifically exclude from EU competence",
+              "That Sweden had already left the EU",
+              "That the directive violated Tesla's rights",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The course notes the challenge and its ground, and does NOT assert a final outcome — a status for the reader to check.",
+            sourceLessonSlug: "nordic-eu-directive-and-close",
+          },
+          {
+            prompt: "State the course's central paradox.",
+            options: [
+              "Weak unions built a strong minimum wage",
+              "The strongest labour movements fought a minimum-wage law to protect a model with no minimum-wage law — because the law would weaken the movement that makes the no-law model work",
+              "The state set wages and unions vanished",
+              "Employers demanded a minimum wage and unions refused pay",
+            ],
+            correctIndex: 1,
+            explanation:
+              "If that sentence makes sense to you, you have learned what the course exists to teach.",
+            sourceLessonSlug: "nordic-eu-directive-and-close",
+          },
+          {
+            prompt: "What is the single methodological habit the course wants you to keep?",
+            options: [
+              "Explain outcomes by national character",
+              "Look for the plumbing (institutions) before reaching for the culture",
+              "Always trust official sources over independent ones",
+              "Assume all Nordic countries are the same",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Nordic density is who runs the unemployment fund, not a national personality — a habit that transfers to every country in the track.",
+            sourceLessonSlug: "nordic-eu-directive-and-close",
+          },
+          {
+            prompt: "In the four-questions recap, what is the Nordic answer to Q4 (what happens if you try)?",
+            options: [
+              "You are fired with no recourse",
+              "You are protected, and your side may fight hard — the legal sympathy strike (banned in the US under Taft-Hartley §8(b)(4)) is the enforcement engine, as the Tesla dispute shows",
+              "You must get government permission to strike",
+              "Only individual action is allowed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Q4's Nordic answer is the sharpest contrast with US law in the whole track.",
+            sourceLessonSlug: "nordic-eu-directive-and-close",
+          },
+          {
+            prompt: "Which course does the lesson recommend next to see a DIFFERENT answer to Q3?",
+            options: [
+              "The India course",
+              "'Germany: Workers on the Board' — co-determination and works councils",
+              "The China course",
+              "A Tesla investor briefing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Germany answers Q3 with board-level co-determination; the Nordics answer it with self-regulation and sectoral bargaining. Same question, different design.",
+            sourceLessonSlug: "nordic-eu-directive-and-close",
+          },
+          {
+            prompt: "Why does 'a floor written into law can become a ceiling' matter to the directive story?",
+            options: [
+              "It doesn't",
+              "Because a statutory 'adequate' figure gives employers a number to pay and no more — and can substitute for the union that would otherwise keep pushing the floor up, which is what the Nordic unions were guarding against",
+              "Because laws are always better than contracts",
+              "Because ceilings are illegal in the EU",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The lesson-1 idea returns as the key to the paradox: protect the negotiated floor and the bargaining table that raises it.",
+            sourceLessonSlug: "nordic-eu-directive-and-close",
+          },
+        ],
+      },
+    },
+    {
+      slug: "nordic-exercise",
+      title: "Exercise · Diagnose the mechanism",
+      section: "Section 6 · Honest limits — erosion, outsiders, and the directive they fought",
+      body: `A short production drill. For each cue, type a brief answer, then check it against the key. Spelling and accents are graded forgivingly — aim for the right idea. This exercises the course's core habit: naming the *institution* behind an outcome, and keeping Sweden and Denmark distinct.`,
+      exercise: {
+        instructions: "Type a short answer for each. One or a few words is enough unless the prompt asks for a sentence.",
+        items: [
+          {
+            prompt:
+              "The system in which unemployment insurance is run through union-linked funds, making union membership the default. Name it.",
+            answer: "the Ghent system",
+            accept: ["Ghent", "Ghent system", "the Ghent system"],
+            hint: "Named after a Belgian city.",
+            explanation:
+              "The Ghent system (named after Ghent, Belgium, c. 1901) is the plumbing behind Nordic density: the a-kassa (Sweden) / a-kasse (Denmark) are administered through union-linked funds.",
+          },
+          {
+            prompt:
+              "A Nordic country with a strong welfare state but ~50% density and NO Ghent system — the 'natural experiment.' Name it.",
+            answer: "Norway",
+            accept: ["norway"],
+            hint: "It runs unemployment insurance publicly.",
+            explanation:
+              "Norway's ~50% density, below Sweden's ~65% and Denmark's ~67%, tracks its lack of a Ghent system — same culture, different plumbing.",
+          },
+          {
+            prompt:
+              "Fill in with a year: Sweden reformed its a-kassa (raising and differentiating fees) in January ____, after which density fell sharply.",
+            answer: "2007",
+            accept: ["2007"],
+            hint: "Reinfeldt's centre-right Alliance government.",
+            explanation:
+              "After the 2007 reform, density fell from ~77% (2006) to ~71% (2008) — the strongest single evidence for the Ghent effect (Kjellberg).",
+          },
+          {
+            prompt:
+              "Name the 1938 Swedish agreement (LO–SAF) that founded Swedish self-regulation.",
+            answer: "the Saltsjöbaden Agreement",
+            accept: [
+              "Saltsjöbaden",
+              "Saltsjobaden",
+              "the Saltsjöbaden agreement",
+              "Saltsjöbaden Basic Agreement",
+              "Basic Agreement",
+              "Saltsjobadsavtalet",
+            ],
+            hint: "Named after a seaside resort.",
+            explanation:
+              "The Saltsjöbaden Basic Agreement (1938) between LO and SAF set the rules for conducting disputes — 'the spirit of Saltsjöbaden.'",
+          },
+          {
+            prompt:
+              "Name the 1899 Danish agreement, called 'the constitution of the labour market,' that ended the Great Lockout.",
+            answer: "the September Compromise",
+            accept: [
+              "September Compromise",
+              "the September Compromise",
+              "Septemberforliget",
+              "September Settlement",
+            ],
+            hint: "Denmark; a month is in the name.",
+            explanation:
+              "The September Compromise (1899) between DA and the union confederation is the founding, never-replaced framework of Danish self-regulation — 40 years before Sweden's.",
+          },
+          {
+            prompt:
+              "One sentence: in Sweden and Denmark, what sets the minimum wage instead of a statute?",
+            answer: "collective agreements negotiated industry by industry",
+            accept: [
+              "collective agreements",
+              "collective bargaining",
+              "sectoral collective agreements",
+              "collective agreements between unions and employers",
+            ],
+            hint: "A contract, not a law.",
+            explanation:
+              "There is no statutory national minimum wage; the floor is a set of sector collective agreements — the course's core reframe.",
+          },
+          {
+            prompt:
+              "Name the enforcement weapon — legal in Sweden/Denmark, illegal in the US under Taft-Hartley §8(b)(4) — that lets a dispute spread to firms not directly involved.",
+            answer: "the sympathy strike",
+            accept: [
+              "sympathy strike",
+              "sympathy action",
+              "secondary action",
+              "the sympathy action",
+              "sympathy strikes",
+            ],
+            hint: "Also called secondary action.",
+            explanation:
+              "Legal sympathy action is the load-bearing enforcement tool of the self-regulation model — and the sharpest single US/Nordic contrast in the track.",
+          },
+          {
+            prompt:
+              "Which country's model is 'flexicurity' (easy firing + generous benefit + active retraining) — Sweden or Denmark?",
+            answer: "Denmark",
+            accept: ["denmark"],
+            hint: "The 'golden triangle.'",
+            explanation:
+              "Flexicurity is Danish. Sweden has stronger statutory job protection (the Employment Protection Act, LAS, 1982). 'Nordic' is at least two labour markets.",
+          },
+          {
+            prompt:
+              "Fill in a year: IF Metall struck against Tesla in Sweden in October ____ — a dispute still unresolved as this course was written.",
+            answer: "2023",
+            accept: ["2023"],
+            hint: "Over Tesla's refusal to sign a collective agreement.",
+            explanation:
+              "27 October 2023. The course teaches it dated, contested, and with no winner declared — re-check the current status.",
+          },
+          {
+            prompt:
+              "One phrase: the methodological habit the course wants you to keep — look for the ____ before you reach for the ____.",
+            answer: "plumbing before the culture",
+            accept: [
+              "plumbing before culture",
+              "plumbing; culture",
+              "plumbing before the culture",
+              "institutions before culture",
+            ],
+            hint: "Institutions vs. national character.",
+            explanation:
+              "Nordic density is explained by who runs the unemployment fund, not by national personality — a habit that transfers to every country in the track.",
+          },
+        ],
+      },
+    },
   ],
 };
