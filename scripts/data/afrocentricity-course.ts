@@ -1548,5 +1548,292 @@ You can agree with one and reject the others. A student might accept Howe's fact
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — How to Evaluate a Contested Paradigm (the transferable skill)
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-evaluation-toolkit",
+      title: "19 · The toolkit: six moves for any contested paradigm",
+      section: "How to Evaluate a Contested Paradigm",
+      recallContent: [
+        {
+          prompt: "How does the course resolve the critics-vs-defenders exchange, and what does it give you instead of a verdict?",
+          answer: "It declares no winner; it gives you the ability to track which objections were answered fully, partly, or not — holding case, objection, and answer in view at once.",
+        },
+        {
+          prompt: "Why must a fair treatment steelman the proponents' reply and not just the critics?",
+          answer: "Because a paradigm is not refuted by objections it can answer — fairness requires the strongest version of both the objection and the answer.",
+        },
+      ],
+      body: `Everything so far has been practice for this: a portable **toolkit** you can carry into any contested paradigm — not just Afrocentricity, but any big idea that is part legitimate corrective and part overcorrection (a political ideology, a school of economics, a diet science, a theory of history). Six moves, each one already demonstrated earlier in the course.
+
+**1. State it in its proponents' own words first (steelman).** Before you judge, produce the version its smartest defenders would recognize as fair — from primary sources, not from opponents. *We did this with Asante's own definition of "centering" (Lesson 1) and with Diop's own evidence (Lesson 5).* If you can only describe the weak version, you are not ready to evaluate it.
+
+**2. Separate the levels of claim.** A paradigm is never one thing. Sort every claim into a level:
+- the **corrective impulse** (often legitimate — Eurocentrism really did distort Africa);
+- **specific empirical claims** (each stands or falls on its own evidence — Kemet, Black Athena);
+- **pop-myth** (fails outright — melanin theory).
+*Collapsing these levels is the most common error in the whole debate.* A true grievance does not make every proposed correction true; a false pop-claim does not make the grievance false.
+
+**3. Attribute every contested claim to who makes it.** "Diop argued…", "Lefkowitz responded…", "Bernal replied…". Attribution keeps you honest about what is *established* versus what is one scholar's contested position — and it stops you from smuggling a contested claim in as settled fact.
+
+**4. Check sourcing strength, and date live science.** Ask the Section-4 build-tests: evidence, falsifiability, specialist scrutiny, attribution. And when new science bears on an old debate (the 2017 DNA study), ask **what it sampled, how much, and what it can answer** — then date it, because next year's study may refine it.
+
+**5. Ask: corrective, or overcorrection?** The sharpest single question in the kit. A corrective fixes a real distortion; an overcorrection flips into the mirror image of the thing it opposed (recall "Sun People / Ice People" reproducing racial essentialism). Many contested paradigms are **both at once, in different parts** — which is exactly why "all right" and "all wrong" are both lazy.
+
+**6. Refuse the false binary.** You are not required to swallow the whole paradigm or trash the whole paradigm. The adult position is almost always *"this part is a real contribution; this part is unproven; this part is false"* — three verdicts, not one. Discomfort with holding three at once is the feeling of actually thinking.
+
+**The one rule under all six:** your own voice asserts only what is settled; everything contested gets attributed and left open. That is not fence-sitting. Declining to declare a winner where the evidence is genuinely divided is the *most* honest thing a course can do — and it is the opposite of having no standards, because it holds every claim to the same test regardless of which side it helps.
+
+:::reveal List the six toolkit moves for evaluating any contested paradigm. ||| (1) State it in its proponents' own words first (steelman from primary sources). (2) Separate the levels of claim — corrective impulse vs. specific empirical claims vs. pop-myth. (3) Attribute every contested claim to who makes it. (4) Check sourcing strength and date live science (what did it sample / how much / what can it answer). (5) Ask "corrective, or overcorrection?" (6) Refuse the false binary — give three verdicts (real contribution / unproven / false), not one. Under all six: assert only what's settled, attribute and leave open what's contested.
+
+## Sources
+- Asante, M. K. (1988). *The Afrocentric idea*. Temple University Press.
+- Diop, C. A. (1974). *The African origin of civilization: Myth or reality* (M. Cook, Trans.). Lawrence Hill.
+- Howe, S. (1998). *Afrocentrism: Mythical pasts and imagined homes*. Verso.`,
+    },
+    {
+      slug: "putting-it-to-work",
+      title: "20 · Putting it to work: a worked evaluation",
+      section: "How to Evaluate a Contested Paradigm",
+      recallContent: [
+        {
+          prompt: "What are the six toolkit moves for evaluating a contested paradigm?",
+          answer: "Steelman it first; separate the levels of claim; attribute contested claims; check sourcing and date live science; ask corrective-or-overcorrection; refuse the false binary (three verdicts, not one).",
+        },
+        {
+          prompt: "What is the one rule under all six moves?",
+          answer: "Your own voice asserts only what is settled; everything contested is attributed and left open.",
+        },
+      ],
+      body: `Now run the toolkit end to end — first on Afrocentricity, then on a claim from somewhere else, so you can feel that the skill transfers.
+
+**Worked example A: Afrocentricity itself.**
+- **Steelman (Move 1):** Afrocentricity is the methodological stance of centering African people as subjects and agents of their own history, a corrective to a Eurocentrism that genuinely distorted the record (Asante, 1988).
+- **Levels (Move 2):** The *corrective impulse* is largely legitimate (Hegel and Trevor-Roper really did write Africa out of history). The *specific empirical claims* vary — the Kemet thesis is contested and unresolved; Bernal's broad point about Near Eastern influence gained ground while his specific etymologies did not; Stolen Legacy's theft-mechanism fails on the calendar. The *pop-myth* (melanin superpowers) is false.
+- **Attribute (Move 3):** Diop argued the Egypt thesis; mainstream Egyptology reads *Kemet* as soil; Bernal proposed the models; Lefkowitz and Rogers led the scholarly response; Appiah and Gilroy raise essence/purity objections; Asante answers that centering is a location, not an essence.
+- **Sourcing and dates (Move 4):** The 2017 DNA study is real but limited (one northern site, late window, three genomes) and cannot close a question that is partly about a modern social category.
+- **Corrective or overcorrection (Move 5):** Both, in different parts — a real corrective at the level of impulse and method; an overcorrection wherever it slides into essentialism or myth.
+- **Refuse the binary (Move 6):** *Real contribution* (recentering; forcing fields to confront bias); *unproven* (the strong Kemet thesis; Bernal's specific etymologies); *false* (melanin superpowers; Aristotle looting the Library). **Three verdicts. No overall winner declared.**
+
+**Worked example B: the skill transfers.** Take a claim you might meet anywhere — say, *"the education system is completely rigged, so credentials are meaningless."* Run the same moves: **steelman** it (there are real, documented inequities in schooling); **separate levels** (the grievance about inequity ≠ the sweeping claim that *all* credentials are meaningless ≠ any conspiratorial version); **attribute** (who exactly claims what, and on what data?); **check sourcing** (what studies, how measured, how recent?); **corrective or overcorrection?** (a fair critique of inequity can flip into a self-defeating overcorrection that tells a student not to bother); **refuse the binary** (some of it is a real contribution, some unproven, some false). Same six moves. Different topic. That portability is the entire reason this course exists.
+
+**The closing thought.** You will spend your life meeting ideas that are loudly defended and loudly attacked, where the people you trust have already picked sides. The temptation is always to pick a team and inherit its whole package of beliefs. This course asked you to do the harder, better thing: **take the idea apart, weigh each piece on its own evidence, say clearly what is settled and what is not, and be willing to hold a real contribution and a real error in the same hand.** That is not indecision. It is what respect for the truth actually looks like — and it is a skill, which means it gets stronger every time you refuse the easy binary and do the work instead.
+
+:::reveal Run the toolkit on Afrocentricity in one breath: what are the three verdicts, and what is the final call on an overall winner? ||| Real contribution: the recentering method and forcing fields to confront Eurocentric bias. Unproven/contested: the strong Kemet ("Egypt was Black") thesis and Bernal's specific etymologies/colonization chronology. False: melanin superpowers and Stolen Legacy's "Aristotle looted the Library" mechanism. Final call: no overall winner is declared — the contested pieces are attributed and left open, because the evidence is genuinely divided and part of the question turns on a modern social category.
+
+## Sources
+- Asante, M. K. (1988). *The Afrocentric idea*. Temple University Press.
+- Diop, C. A. (1974). *The African origin of civilization: Myth or reality* (M. Cook, Trans.). Lawrence Hill.
+- Lefkowitz, M. R., & Rogers, G. M. (Eds.). (1996). *Black Athena revisited*. University of North Carolina Press.
+- Schuenemann, V. J., et al. (2017). Ancient Egyptian mummy genomes suggest an increase of Sub-Saharan African ancestry in post-Roman periods. *Nature Communications, 8*, 15694. https://doi.org/10.1038/ncomms15694
+- Howe, S. (1998). *Afrocentrism: Mythical pasts and imagined homes*. Verso.`,
+    },
+    {
+      slug: "quiz-evaluating-a-paradigm",
+      title: "21 · Quiz: How to Evaluate a Contested Paradigm",
+      section: "How to Evaluate a Contested Paradigm",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the FIRST move in the evaluation toolkit?",
+            options: [
+              "State the paradigm in its proponents' own words first (steelman from primary sources)",
+              "Decide immediately whether you agree",
+              "Find the weakest version and attack it",
+              "Look up what your friends think",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If you can only describe the weak version, you are not ready to evaluate it. Steelmanning from primary sources comes first.",
+            sourceLessonSlug: "the-evaluation-toolkit",
+          },
+          {
+            prompt: "Move 2 is 'separate the levels of claim.' What are the three levels?",
+            options: [
+              "The corrective impulse, specific empirical claims, and pop-myth",
+              "Past, present, and future",
+              "Left, right, and center",
+              "Introduction, body, and conclusion",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Collapsing these levels is the most common error in the debate. A true grievance doesn't make every correction true; a false pop-claim doesn't make the grievance false.",
+            sourceLessonSlug: "the-evaluation-toolkit",
+          },
+          {
+            prompt: "Why is 'attribute every contested claim to who makes it' (Move 3) important?",
+            options: [
+              "It keeps you honest about what is established versus one scholar's contested position, and stops you smuggling a contested claim in as settled fact",
+              "It makes essays longer",
+              "It lets you avoid reading the sources",
+              "It proves whichever side you prefer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Attribution marks the line between settled and contested — 'Diop argued…', 'Lefkowitz responded…' — so nothing contested masquerades as fact.",
+            sourceLessonSlug: "the-evaluation-toolkit",
+          },
+          {
+            prompt: "When new science bears on an old debate, Move 4 says to ask:",
+            options: [
+              "What it sampled, how much of it there is, and what question it can answer — then date it",
+              "Whether it agrees with your side",
+              "Whether it was published this week",
+              "Nothing — new science always settles the debate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The DNA lesson generalized into a rule: sample, size, and scope determine what a study can answer, and you date it because it may be refined.",
+            sourceLessonSlug: "the-evaluation-toolkit",
+          },
+          {
+            prompt: "Move 5 asks 'corrective, or overcorrection?' What does an overcorrection look like?",
+            options: [
+              "It flips into the mirror image of the thing it opposed — e.g. 'Sun People / Ice People' reproducing racial essentialism",
+              "It fixes a real distortion perfectly",
+              "It ignores all evidence equally",
+              "It is always better than a corrective",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An overcorrection adopts the logic of the thing it opposed. Many paradigms are corrective in one part and overcorrective in another.",
+            sourceLessonSlug: "the-evaluation-toolkit",
+          },
+          {
+            prompt: "Move 6, 'refuse the false binary,' means the adult verdict is usually:",
+            options: [
+              "'This part is a real contribution; this part is unproven; this part is false' — three verdicts, not one",
+              "A single thumbs-up or thumbs-down",
+              "Whatever the majority believes",
+              "Silence, because judgment is impossible",
+            ],
+            correctIndex: 0,
+            explanation:
+              "You are not required to swallow or trash the whole paradigm. Three verdicts is the honest shape; discomfort holding them is the feeling of thinking.",
+            sourceLessonSlug: "the-evaluation-toolkit",
+          },
+          {
+            prompt: "The 'one rule under all six moves' is:",
+            options: [
+              "Assert only what is settled; attribute and leave open everything contested",
+              "Always side with the proponents",
+              "Always side with the critics",
+              "Never cite any sources",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Declining to declare a winner where evidence is divided is the most honest move — and it holds every claim to the same test regardless of which side it helps.",
+            sourceLessonSlug: "the-evaluation-toolkit",
+          },
+          {
+            prompt: "The course insists that declining to declare a winner is NOT the same as 'having no standards.' Why?",
+            options: [
+              "Because it holds every claim to the same test regardless of which side it helps — that is more rigorous, not less",
+              "Because standards don't matter in history",
+              "Because it secretly favors one side",
+              "Because no claim can ever be judged",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Neutrality here is not mushiness; it is applying one consistent evidentiary standard everywhere, which is the opposite of no standards.",
+            sourceLessonSlug: "the-evaluation-toolkit",
+          },
+          {
+            prompt: "In the worked evaluation of Afrocentricity, which claim is sorted as a 'real contribution'?",
+            options: [
+              "The recentering method and forcing fields to confront Eurocentric bias",
+              "Melanin superpowers",
+              "Aristotle looting the Library of Alexandria",
+              "The strong claim that ancient Egypt was definitively Black",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The corrective/method level is the genuine contribution; the strong Kemet thesis is unproven, and melanin superpowers and the Library-looting mechanism are false.",
+            sourceLessonSlug: "putting-it-to-work",
+          },
+          {
+            prompt: "In the worked evaluation, which is sorted as 'unproven/contested' rather than false?",
+            options: [
+              "The strong Kemet thesis and Bernal's specific etymologies",
+              "Melanin superpowers",
+              "The claim that Aristotle looted the Library",
+              "That Eurocentrism distorted African history",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Contested-but-live claims (Kemet; Bernal's etymologies) sit in the 'unproven' bucket — distinct from the outright false (melanin; the Library looting) and the largely established (the erasure).",
+            sourceLessonSlug: "putting-it-to-work",
+          },
+          {
+            prompt: "The 'education system is completely rigged, so credentials are meaningless' example is used to show:",
+            options: [
+              "That the same six moves transfer to any contested claim, not just Afrocentricity",
+              "That all education is worthless",
+              "That credentials are in fact meaningless",
+              "That only history can be evaluated this way",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Portability is the point: steelman, separate levels, attribute, check sourcing, corrective-or-overcorrection, refuse the binary — same moves, different topic.",
+            sourceLessonSlug: "putting-it-to-work",
+          },
+          {
+            prompt: "Running the toolkit on the 'rigged education' claim, how should you handle the grievance versus the sweeping conclusion?",
+            options: [
+              "Separate them — a real, documented grievance about inequity is not the same as the sweeping claim that all credentials are meaningless",
+              "Accept both together as one package",
+              "Reject both together as one package",
+              "Refuse to evaluate either",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Move 2 in action: the legitimate grievance and the overreaching conclusion are different levels of claim and must be weighed separately.",
+            sourceLessonSlug: "putting-it-to-work",
+          },
+          {
+            prompt: "What is the course's final call on an overall winner for Afrocentricity?",
+            options: [
+              "No overall winner is declared — contested pieces are attributed and left open because the evidence is genuinely divided",
+              "Afrocentricity wins on every point",
+              "The critics win on every point",
+              "The question is meaningless and not worth studying",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The verdict is three-part (contribution / unproven / false) with no overall winner — the honest response to genuinely divided evidence and a partly-social question.",
+            sourceLessonSlug: "putting-it-to-work",
+          },
+          {
+            prompt: "According to the closing thought, what is the 'temptation' the course asks you to resist?",
+            options: [
+              "Picking a team and inheriting its whole package of beliefs",
+              "Reading primary sources",
+              "Citing your claims",
+              "Changing your mind when evidence changes",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The harder, better thing is to take an idea apart and weigh each piece, rather than adopting a side's entire package wholesale.",
+            sourceLessonSlug: "putting-it-to-work",
+          },
+          {
+            prompt: "Which sentence best captures what the whole course was really teaching?",
+            options: [
+              "How to evaluate a contested paradigm — hold a real contribution and a real error in the same hand, asserting only what's settled",
+              "That Afrocentricity is correct",
+              "That Afrocentricity is a fraud",
+              "That contested topics should be avoided",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The transferable skill — not a verdict on Afrocentricity — is the deliverable. Respect for the truth means weighing each piece on its own evidence.",
+            sourceLessonSlug: "putting-it-to-work",
+          },
+        ],
+      },
+    },
   ],
 };
