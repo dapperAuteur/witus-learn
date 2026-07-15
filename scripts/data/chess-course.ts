@@ -1942,5 +1942,382 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
         ],
       },
     },
+
+    // ─────────────────────────── SECTION 6 · THE HONEST ECONOMY ───────────────────────────
+    {
+      slug: "chess-honest-math",
+      title: "29 · The honest math: almost nobody earns a living playing chess",
+      section: "Section 6 · The economy around the board: amateurs and entrepreneurs",
+      body: `This section begins with the sentence most chess courses bury: **almost nobody on Earth earns a living playing chess.** Not "it's hard." Not "you have to really want it." Structurally, arithmetically — the job "professional chess player" barely exists, and you deserve the real numbers-shaped truth before anyone sells you the dream. Then, for the rest of the section, the better news: the *economy around the board* is far larger than the playing of it, it grew dramatically after 2020, and most of its doors don't check your rating on the way in.
+
+**Why playing doesn't pay.** Chess prize money is a steep pyramid. At the very top — world championship cycles, elite invitationals — the purses are real. One layer down, the arithmetic turns hostile:
+
+- **Prizes concentrate at first place.** A typical weekend open publishes its prize list in advance: a healthy top prize, thinning fast below it, nothing at all for most of the field. And a Swiss tournament (Lesson 27) guarantees you face your own level — reliably outscoring your section is exactly as hard as being systematically better than people rated like you.
+- **The costs are per-event and unavoidable:** entry fee, travel, lodging, and days of your time — paid by everyone, recouped by almost no one. Run the expected value the way Lesson 25 taught you to think about expectations, using the tournament's own published prize list, and the number is negative for nearly every entrant. That's not cynicism; it's the flyer doing math.
+- **Even the credential chase costs money.** Remember Lesson 26: GM and IM norms require strong international fields across at least 27 games (FIDE, 2022) — which in practice means years of travel to norm-eligible events, an expensive project with no salary attached, undertaken in the *hope* of a title that itself guarantees no income.
+
+The population that clears all of this — living primarily on playing income — is, roughly, the world elite plus a thin band of circuit professionals. Everyone else with "chess" on their tax return is earning from the game some *other* way. Many titled players, grandmasters included, make their actual living from coaching, writing, commentary, and content — the playing career is the credential, not the paycheck.
+
+**The reframe that makes this section hopeful.** Look at what the game demonstrably has, per its own documented boom (Netflix, 2020; Bloomberg, 2020): tens of millions of new and returning players who need someone to *teach* them, *organize* their competitions, *arbitrate* their disputes, *build and run* their clubs and platforms, *make* the content they watch, and *defend* the integrity of their games. Every one of those verbs is a job or a business, most existed for centuries before streaming, and none requires a 2500 rating. The players are the market. The rest of this section walks the map: coaching and the scholastic pipeline (Lesson 30), content (31), organizing and arbitration (32), and the newest profession — fair play (33).
+
+:::reveal A weekend open charges a $60 entry and publishes $2,000 in total prizes across 80 expected entrants, with $700 for first. Without any more data, what does the Lesson 25 habit of thinking in expectations tell you about entering "for the money"? ||| The field pays in $4,800 (80 × $60) to chase $2,000 — the average entrant recovers well under half an entry fee before travel and lodging, and the winner-heavy prize list means the median entrant recovers $0. Enter for rated games, experience, and the norm ladder if that's your path — but as an income proposition, the flyer itself says no. That arithmetic, repeated across the sport, is why "professional tournament player" barely exists as a job.
+
+## Sources
+- Bloomberg. (2020). *Netflix's 'The Queen's Gambit' drives major boom in chess sales, games*. https://www.bloomberg.com/graphics/2020-chess-boom/
+- Fédération Internationale des Échecs. (2022). *International title regulations* (FIDE Handbook B.01). https://handbook.fide.com/chapter/B012022
+- Netflix. (2020, November 23). *From 'The Queen's Gambit' to a record-setting checkmate*. https://about.netflix.com/en/news/the-queens-gambit-netflix-most-watched-scripted-limited-series`,
+      recallContent: [
+        {
+          prompt: "What's the Swiss system's pairing rule, and what does it guarantee about your opposition?",
+          answer:
+            "Each round pairs players on the same score — winners meet winners, nobody is eliminated. By design you always end up facing your own demonstrated level.",
+        },
+        {
+          prompt: "Contrast the business models of the two big online platforms.",
+          answer:
+            "Chess.com: the largest commercial platform — subscriptions, ads, sponsored events. Lichess: free and open-source since 2010, no ads, no data sales, funded by donor 'patrons.' Same product, opposite economics, both sustainable at scale.",
+        },
+      ],
+    },
+    {
+      slug: "chess-coaching-scholastic",
+      title: "30 · Coaching and the scholastic pipeline: chess's biggest real labor market",
+      section: "Section 6 · The economy around the board: amateurs and entrepreneurs",
+      body: `If you want to see where chess money actually changes hands in America, skip the grandmaster invitational and walk into a school cafeteria on a Saturday morning: hundreds of kids, paid coaches, an organizer who rented the space, a TD running pairings, and parents who wrote checks for lessons, club dues, and entry fees. **Scholastic chess is the load-bearing floor of the U.S. chess economy**, and US Chess's own calendar says so — the federation sanctions over twenty national championships a year, a large share of them scholastic (US Chess, n.d.).
+
+**The coaching market, honestly described.** Chess coaching runs from a college student running a lunchtime club program, through after-school enrichment companies that place coaches in dozens of schools, up to titled players charging premium rates for private lessons online. Three honest facts about it:
+
+- **The credential that matters at the entry level is not a title.** A beginning student needs a coach who is a few hundred points stronger, reliably prepared, and good with children — not a grandmaster. (At the *top* of the market, titles and coaching track records set the price; different market, same game.) This is why coaching is realistically open to strong high school players right now: club assistants, camp counselors, and beginner-group coaches are hired every season, and "I run my school's club and hold a US Chess rating" is a legitimate résumé line at sixteen.
+- **Rates vary too much to quote.** By region, format (group vs. private), venue (school program vs. independent), and credential, the spread is enormous — so this course refuses to print "chess coaches make $X," because any such number without a year, place, and definition is folklore (the Lesson 22 standard). What's structural and true: group teaching through schools pays as *employment*; private coaching pays as a *small business*, with everything that implies about finding clients, setting rates, and keeping them.
+- **The product is not "making grandmasters."** Nearly all scholastic coaching sells confidence, focus, sportsmanship, problem-solving practice, and a safe competitive outlet. Schools often buy chess partly on claims that it raises academic performance — and here the sourcing habit matters: the research on academic transfer is genuinely mixed, so the honest pitch stays close to what's directly observable (kids concentrating for an hour, losing gracefully, doing voluntary hard thinking) rather than promising math scores. Sell what you can verify; it's better business *and* better epistemics.
+
+**The pipeline as a system.** School club → local scholastic tournaments → state championships → national scholastics. Every arrow in that chain is staffed: someone teaches the club, someone directs the tournament (Lesson 32), someone organizes travel, someone runs the summer camp that keeps skills warm in July. In most towns those someones are part-time, semi-amateur, and perpetually scarce — scarcity that a competent, rules-literate young person (which, five sections in, is you) can walk straight into. The teenager who can teach a knight fork to a room of fourth-graders, keep score disputes calm using actual Article numbers, and show up twice a week is not waiting for the chess economy to make room. The room is already empty and waiting.
+
+:::reveal A parent asks a 16-year-old club captain: "You're not a master — why should you coach my beginner kid?" What's the honest, correct answer? ||| Because at the beginner level the effective credential is being reliably stronger than the student, prepared, and good with kids — a master's extra 800 points add nothing to teaching how pieces move, and the scholastic market hires exactly this profile every season for club groups and camps. (At elite levels, titles rightly set the price — different market.) The honest coach also sells only what's observable: focus, sportsmanship, real practice — not promised report-card gains, since research on academic transfer is mixed.
+
+## Sources
+- US Chess. (n.d.). *About*. https://new.uschess.org/about`,
+      recallContent: [
+        {
+          prompt: "Why is the expected value of a weekend open's prize pool negative for nearly every entrant?",
+          answer:
+            "Winner-heavy prize lists mean most of the field recovers nothing, entries plus travel are paid by everyone, and the Swiss guarantees you face your own level — so systematically outscoring your section is exactly as hard as being better than your rating peers.",
+        },
+        {
+          prompt: "For most titled players, what role does playing actually serve economically?",
+          answer:
+            "The credential, not the paycheck — many GMs and IMs earn their living from coaching, writing, commentary, and content, with results and titles serving as the storefront.",
+        },
+      ],
+    },
+    {
+      slug: "chess-content-streaming",
+      title: "31 · Content: streaming, video, and writing about a 1,500-year-old game",
+      section: "Section 6 · The economy around the board: amateurs and entrepreneurs",
+      body: `The strangest labor-market fact in modern chess: in the 2020s, some of the game's best-known and best-paid figures are *media businesses* — streamers, video creators, commentators, writers — and the correlation between their income and their Elo is loose at best. This lesson is about why that's true, and how to think about content as a chess business without swallowing the influencer fantasy whole.
+
+**Why chess content works as entertainment.** The 2020 boom (Lesson 22) didn't just add players; it added an *audience* — the documented wave of tens of millions of curious newcomers (Netflix, 2020) who wanted chess explained, performed, and made funny. Live games with running commentary, recap videos of famous matches, celebrity-amateur showcases (Chess.com's *PogChamps* events made "watching beginners learn chess" a headline genre), opening explainers, cheating-drama coverage: the game turned out to be superb raw material for internet video — endless content, zero licensing fees, a fifteen-century back catalog (Bloomberg, 2020).
+
+**The decoupling of Elo and audience.** A 2700 grandmaster and a 1400 club player can both build real audiences — because the products differ. The GM sells *insight and spectacle*: watching mastery in real time. The club player sells *companionship and relatability*: learning in public, one blunder at a time, which a beginner audience often finds more useful than perfection. Teaching, storytelling, humor, consistency, and production quality are the actual inputs; the rating mostly picks which lane you're in. Several of the most-watched chess creators on Earth are not grandmasters — and several grandmasters stream to empty rooms.
+
+**The honest economics of the creator lane.** The same structural honesty as Lesson 29, because the shape is identical:
+
+- **It's a power-law market.** A handful of top channels capture most of the audience; the long tail earns pocket money or nothing. Platform payouts, sponsorships, and subscriptions follow attention, and attention is winner-take-most.
+- **It's a *business*, not a lottery ticket.** The creators who last treat it like one: consistent schedule, a defined niche (chess for absolute beginners; endgames only; chess history; opening traps), multiple small revenue streams (platform revenue, memberships, lesson funnels, affiliate gear), and years of unpaid or underpaid reps before any of it compounds.
+- **The barrier to entry is genuinely low — which cuts both ways.** A phone, free platform accounts (Lesson 27), and a Lichess board can start a channel this weekend. So can everyone else's. Low barriers make starting easy and standing out hard; the moat is showing up for year two.
+
+**The practical version for a student:** content is the rare chess business you can pilot at zero cost and small scale — a school-club recap channel, puzzle explainers for your district's scholastic scene, tournament vlogs. Worst case, you've built editing, speaking, and audience skills that transfer to literally everything. Best case, the niche grows with you. Either way you'll have learned the discipline this whole course keeps teaching: **show your sources, count honestly, and don't quote numbers nobody published** — which applies to view-count daydreams exactly as it did to prize funds.
+
+:::reveal A 1500-rated junior and an IM both want to start chess channels. Why isn't the IM's 1,000-point advantage decisive — and what IS each one's natural product? ||| Because audience buys teaching, personality, consistency, and production — not rating certificates. The IM's lane is insight and spectacle (mastery performed live); the junior's lane is relatable learning-in-public, which beginner audiences often find more instructive than perfection. Elo picks the lane; execution decides the outcome — and in a power-law market, most channels in both lanes stay small, so treat it as a low-cost skills bet, not a income plan.
+
+## Sources
+- Bloomberg. (2020). *Netflix's 'The Queen's Gambit' drives major boom in chess sales, games*. https://www.bloomberg.com/graphics/2020-chess-boom/
+- Netflix. (2020, November 23). *From 'The Queen's Gambit' to a record-setting checkmate*. https://about.netflix.com/en/news/the-queens-gambit-netflix-most-watched-scripted-limited-series`,
+      recallContent: [
+        {
+          prompt: "What's the load-bearing floor of the U.S. chess economy, and what's the evidence?",
+          answer:
+            "Scholastic chess — US Chess sanctions 20+ national championships a year, many scholastic, and the local layer (school programs, camps, lessons, weekend scholastics) is where most chess money actually changes hands.",
+        },
+        {
+          prompt: "Why does this course refuse to print an average chess-coaching rate?",
+          answer:
+            "Because rates vary enormously by region, format, venue, and credential — any single number without a year, place, and definition is folklore by the Lesson 22 standard.",
+        },
+      ],
+    },
+    {
+      slug: "chess-organizing-arbiters",
+      title: "32 · Running the game: directors, arbiters, organizers, and club builders",
+      section: "Section 6 · The economy around the board: amateurs and entrepreneurs",
+      body: `Every rated game you'll ever play happens because somebody did unglamorous work first: booked a room, published a flyer, took entries, built pairings, enforced Article 4.3 calmly at board twelve, and mailed the rating report afterward. That somebody has a set of job titles, a credential ladder, and — this is the part nobody tells students — chronically thin ranks that a rules-literate young person can join early.
+
+**The tournament director / arbiter track.** Running the competition is a skilled role with formal certification on both tiers of Lesson 24's pyramid. Domestically, US Chess certifies **tournament directors (TDs)** in ascending levels — the entry level is built on knowing the rules and procedures, not on your playing strength, and directors advance by accumulating experience at larger events (US Chess, n.d.). Internationally, FIDE licenses **arbiters**, rising to the **International Arbiter** title, with its Arbiters' Commission publishing the manual that trains them (FIDE Arbiters' Commission, 2025). Notice what this ladder prices: *rules knowledge, judgment under pressure, and administrative reliability*. Your rating is irrelevant. A Section-2-literate student who can distinguish a 9.2 claim from a 9.6.1 automatic draw, apply the 7.5.5 illegal-move schedule without drama, and keep a hall of eight-year-olds and their parents calm is most of the way to the entry credential already — and TDs, unlike most people at a chess tournament, are *paid to be there*.
+
+**The organizer: chess's small-business owner.** Distinct from directing the games is *producing the event*: renting the venue, setting the entry fee and prize structure, insurance, equipment, marketing, staffing, refunds when a snowstorm hits. It's a spreadsheet business with real risk — commit to a guaranteed prize fund and a short field, and the organizer personally eats the difference — and real, repeatable reward for whoever does it competently in an underserved area. The same skills scale down beautifully: founding a school or community club (a room, sets, a schedule, dues or a sponsor) is the zero-capital version, and running its ladder tournament is the training wheels for running an open.
+
+**The rest of the room.** Look around a big scholastic and count the economy: coaches warming up teams (Lesson 30), a vendor table selling sets, boards, clocks, and books; camp flyers on every surface; a streamer covering the top boards (Lesson 31). Equipment retail, club supply, chess summer camps, private academies — each is a small business orbiting the same weekend. None of it needs you to beat anyone at chess. All of it needs you to be organized, honest, and there.
+
+**Why this lesson sits in a strategy course.** Because the skills transfer both ways. Organizing forces exactly what Sections 2 and 3 train — procedures, contingency thinking, calm decisions with people watching — and the reverse is true too: the player who understands *why* the fifty-move rule exists makes a better TD than the one who memorized it. In chess's economy, deep rules literacy is a monetizable asset all by itself. You now have it.
+
+:::reveal An organizer guarantees $1,500 in prizes, rents a hall for $400, pays a TD $200, and charges $45 entry. How many entrants just to break even — and what's the lesson about guaranteed prize funds? ||| $2,100 in committed costs ÷ $45 = 47 entrants to break even; fewer, and the organizer personally pays the gap, since the prizes were GUARANTEED. That's the organizer's core risk decision: guaranteed funds attract entries but transfer all shortfall risk to you; 'based on entries' prize funds shift it back to the players. Reading that trade-off is the whole business in one line of the flyer.
+
+## Sources
+- FIDE Arbiters' Commission. (2025). *Arbiters' manual 2025*. https://arbiters.fide.com/wp-content/uploads/Publications/Manual/Arbiters_Manual_2025.pdf
+- US Chess. (n.d.). *About*. https://new.uschess.org/about`,
+      recallContent: [
+        {
+          prompt: "In the creator lane, what does Elo actually determine — and what decides success?",
+          answer:
+            "Elo mostly picks your lane (mastery-spectacle vs. learning-in-public); teaching, personality, consistency, and production decide outcomes — in a power-law market where most channels stay small.",
+        },
+        {
+          prompt: "Why is chess content the rare chess business a student can pilot at zero cost?",
+          answer:
+            "A phone plus free platform accounts starts a channel; worst case you've built editing, speaking, and audience skills that transfer everywhere. Low barriers cut both ways — the moat is consistency into year two.",
+        },
+      ],
+    },
+    {
+      slug: "chess-fair-play",
+      title: "33 · Fair play: the cheating problem, honestly — and the careers it created",
+      section: "Section 6 · The economy around the board: amateurs and entrepreneurs",
+      body: `Every era of chess got the integrity problem its technology deserved. Yours is this: **any phone now carries an engine stronger than any human champion** (Lesson 21), and most chess is played online, where nobody can see your hands. The result is the defining governance issue of modern chess — and, true to this section's theme, a brand-new profession.
+
+**The over-the-board defense** you already know from Lesson 10: Article 11.3.2's ban on unapproved electronic devices in the playing venue, enforceable up to loss of game (FIDE, 2023), plus arbiters, and at elite events, screening and broadcast delays. Crude, physical, largely effective.
+
+**The online defense is statistical.** Platforms can't search pockets, so they search *patterns*: agreement rates between a player's moves and engine choices, accuracy far above rating-appropriate levels, suspicious timing, sudden performance discontinuities — evaluated across many games, the same logic that makes Elo hard to fake (Lesson 25) making cheating hard to hide. Detection teams — analysts, statisticians, engineers — are now permanent staff at the major platforms. **"Fair-play analyst" is a chess career that did not exist when your parents were in high school**, and it sits at the intersection of chess literacy, statistics, and software: a very buildable skill stack for a student reading this.
+
+**The case that showed the whole system working itself out in public.** In September 2022, at the Sinquefield Cup in St. Louis, the 19-year-old American grandmaster **Hans Niemann** defeated world champion **Magnus Carlsen** — who withdrew from the tournament the next day and later made plain he suspected Niemann of cheating. In October 2022, **Chess.com published a report concluding Niemann had likely cheated in more than 100 online games** — including some with prize money — **while finding no determinative evidence of cheating in the over-the-board Sinquefield game itself**; FIDE's investigation likewise found no evidence of over-the-board cheating in that event (CNN, 2023; FIDE, 2023b). Niemann sued Carlsen, Chess.com, and others for $100 million; a federal court **dismissed the suit in June 2023**, and the parties announced a resolution that August, with Niemann returning to the platform (CNN, 2023). FIDE's disciplinary process, for its part, sanctioned Carlsen over the manner of his withdrawal-and-implication while clearing Niemann on the over-the-board allegations (FIDE, 2023b).
+
+Sit with how much that one story teaches. **Past online cheating was real and provable at scale** — the statistical methods worked. **The specific over-the-board accusation was never substantiated** — suspicion, even a world champion's, is not evidence. **Institutions, not vibes, resolved it**: a platform's published methodology, a federation's investigation and ethics process, and a courtroom. And **both directions carried consequences** — for cheating, and for accusing without proof. That's the entire fair-play problem in miniature: the game's currency is trust, and everyone in Section 6's economy — coach, creator, organizer, arbiter, platform — is ultimately in the trust business.
+
+**Which is the note this course ends on.** You've learned the game, the rulebook that structures it, the thinking it trains, the fifteen centuries behind it, the pyramid organizing it, and the economy around it. The through-line was always the same discipline: *claims need sources, numbers need owners, and integrity is what makes the whole system worth playing in.* That habit will out-earn any opening you ever memorize — on the board and everywhere else.
+
+:::reveal "Chess.com's 2022 report proved Niemann cheated against Carlsen." What are the two precise corrections, and why do they matter? ||| The report concluded he LIKELY cheated in 100+ ONLINE games — but found NO determinative evidence in the over-the-board Sinquefield game the accusation was actually about (and FIDE's investigation found none either). Precision matters because the two claims have opposite implications: one shows statistical detection working at scale; the other shows an unsubstantiated accusation — and the aftermath (dismissed $100M suit, an August 2023 resolution, FIDE sanctioning the accuser's conduct while clearing the accused OTB) is the system pricing both.
+
+## Sources
+- CNN. (2023, June 28). *Judge dismisses chess grandmaster's $100 million lawsuit against Magnus Carlsen, among others, in cheating scandal*. https://www.cnn.com/2023/06/28/sport/judge-dismisses-niemann-lawsuit-carlsen-chess-spt-intl
+- Fédération Internationale des Échecs. (2023). *FIDE laws of chess taking effect from 1 January 2023* (FIDE Handbook E.01). https://handbook.fide.com/chapter/E012023
+- Fédération Internationale des Échecs. (2023b). *Decision on the Magnus Carlsen / Hans Niemann case*. https://www.fide.com/decision-on-the-magnus-carlsen-hans-niemann-case/`,
+      recallContent: [
+        {
+          prompt: "What does the TD/arbiter credential ladder price — and what does it ignore?",
+          answer:
+            "It prices rules knowledge, judgment under pressure, and administrative reliability (US Chess TD levels domestically; FIDE arbiter licensing up to International Arbiter). It ignores your playing rating entirely — and directors are paid to be there.",
+        },
+        {
+          prompt: "Guaranteed vs. based-on-entries prize funds — who holds the risk in each?",
+          answer:
+            "Guaranteed: the organizer eats any shortfall if the field is small (that's why the break-even entrant count is THE number on the spreadsheet). Based-on-entries: the risk shifts to players, whose prizes shrink with the field.",
+        },
+      ],
+    },
+    {
+      slug: "chess-quiz-economy",
+      title: "34 · Quiz: the economy around the board",
+      section: "Section 6 · The economy around the board: amateurs and entrepreneurs",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is this course's honest headline about professional chess playing?",
+            options: [
+              "Almost nobody earns a living playing — the population living on playing income is roughly the world elite plus a thin band of circuit pros",
+              "Any master can live on tournament prizes",
+              "Prize money is evenly distributed through the field",
+              "Online blitz prizes sustain most professionals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Winner-heavy prize pyramids, per-event costs paid by everyone, and the Swiss system's level matchmaking make playing income structurally scarce. Most 'chess professionals' earn from teaching, content, organizing — not playing.",
+            sourceLessonSlug: "chess-honest-math",
+          },
+          {
+            prompt: "Why does the norm system (Lesson 26) matter to the ECONOMICS of a playing career?",
+            options: [
+              "Norms require years of travel to strong international events — at least 27 games against titled fields — an expensive project with no salary attached",
+              "Norms pay a stipend from FIDE",
+              "Norms replace entry fees",
+              "Norms guarantee sponsorship",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The credential chase itself costs serious money and years, and the resulting title guarantees no income — the credential is a storefront, not a paycheck.",
+            sourceLessonSlug: "chess-honest-math",
+          },
+          {
+            prompt: "An 80-player open charges $60 entries and pays $2,000 total prizes. What's the field's collective arithmetic?",
+            options: [
+              "The field pays $4,800 to chase $2,000 — the average entrant recovers under half an entry fee, and the median entrant recovers nothing",
+              "The field breaks even",
+              "The field profits if everyone plays well",
+              "Prize money exceeds entries at most opens",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Run the expected value from the flyer's own numbers before entering 'for the money.' Enter for rated games and experience — the math says the income story isn't there.",
+            sourceLessonSlug: "chess-honest-math",
+          },
+          {
+            prompt: "What is the load-bearing floor of the U.S. chess economy?",
+            options: [
+              "Scholastic chess — school programs, camps, lessons, and the tournament circuit serving them",
+              "Elite invitational tournaments",
+              "Chess book publishing",
+              "Casino chess rooms",
+            ],
+            correctIndex: 0,
+            explanation:
+              "US Chess sanctions 20+ national championships annually, many scholastic — and the local layer beneath them is where most chess money actually changes hands.",
+            sourceLessonSlug: "chess-coaching-scholastic",
+          },
+          {
+            prompt: "What's the effective credential for entry-level scholastic coaching?",
+            options: [
+              "Being reliably stronger than the students, prepared, and good with kids — not a master title",
+              "A grandmaster title",
+              "A FIDE rating over 2200",
+              "A college degree in education",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Beginner groups don't consume a master's extra 800 points. That's precisely why coaching is realistically open to strong high schoolers — club assistants and camp coaches are hired every season.",
+            sourceLessonSlug: "chess-coaching-scholastic",
+          },
+          {
+            prompt: "Why won't this course print 'chess coaches make $X per hour'?",
+            options: [
+              "Because rates vary enormously by region, format, venue, and credential — an average without a year, place, and definition is folklore",
+              "Because coaching is unpaid",
+              "Because US Chess forbids publishing rates",
+              "Because rates are identical everywhere, so it's not interesting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Lesson 22 sourcing standard applies to your own economic decisions: numbers need owners, dates, and denominators — or they get cut.",
+            sourceLessonSlug: "chess-coaching-scholastic",
+          },
+          {
+            prompt: "When schools ask whether chess raises academic performance, what's the honest position?",
+            options: [
+              "The research on academic transfer is genuinely mixed — so the honest pitch sells what's observable: focus, sportsmanship, voluntary hard thinking",
+              "Studies uniformly prove large test-score gains",
+              "Chess has been shown to harm academics",
+              "No school has ever asked",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sell what you can verify. It's better business and better epistemics — the course's sourcing discipline applied to your own marketing.",
+            sourceLessonSlug: "chess-coaching-scholastic",
+          },
+          {
+            prompt: "Why can a 1400-rated creator out-earn a grandmaster online?",
+            options: [
+              "Audiences buy teaching, relatability, consistency, and production — Elo mostly picks your lane (mastery-spectacle vs. learning-in-public), not your outcome",
+              "Platforms cap grandmaster earnings",
+              "Ratings are hidden online",
+              "They can't — income tracks Elo exactly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Several of the most-watched chess creators aren't GMs; several GMs stream to empty rooms. The inputs are execution and personality; the market is power-law either way.",
+            sourceLessonSlug: "chess-content-streaming",
+          },
+          {
+            prompt: "What's the realistic framing of starting a chess channel as a student?",
+            options: [
+              "A low-cost skills bet — worst case you build editing, speaking, and audience skills; best case a niche grows with you. Not an income plan",
+              "A reliable path to full-time income within a year",
+              "Pointless unless you're titled",
+              "Forbidden by scholastic rules",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Power-law market, low barriers, moat = consistency into year two. Pilot it at zero cost and let the transferable skills be the guaranteed return.",
+            sourceLessonSlug: "chess-content-streaming",
+          },
+          {
+            prompt: "What does the TD/arbiter credential ladder price?",
+            options: [
+              "Rules knowledge, judgment under pressure, and administrative reliability — playing strength is irrelevant",
+              "Your peak rating",
+              "Tournament victories",
+              "Social media following",
+            ],
+            correctIndex: 0,
+            explanation:
+              "US Chess certifies TDs in ascending levels; FIDE licenses arbiters up to International Arbiter. Deep rules literacy — Section 2 — is a monetizable asset by itself, and directors are paid to be at the tournament.",
+            sourceLessonSlug: "chess-organizing-arbiters",
+          },
+          {
+            prompt: "An organizer guarantees $1,500 in prizes with $600 of venue/staff costs and a $45 entry fee. What's the key risk?",
+            options: [
+              "Below 47 entrants the organizer personally pays the shortfall — guaranteed funds transfer all field-size risk to the organizer",
+              "There is no risk in guaranteed prizes",
+              "Players might demand refunds if they lose",
+              "US Chess collects the surplus",
+            ],
+            correctIndex: 0,
+            explanation:
+              "$2,100 committed ÷ $45 = ~47 to break even. 'Based on entries' prize funds shift that risk to players. Reading this trade-off on a flyer is the organizer's whole business in miniature.",
+            sourceLessonSlug: "chess-organizing-arbiters",
+          },
+          {
+            prompt: "Why did 'fair-play analyst' emerge as a chess profession?",
+            options: [
+              "Engines in every pocket plus the shift online forced statistical, at-scale cheat detection — permanent teams of analysts, statisticians, and engineers at the platforms",
+              "FIDE required one arbiter per board",
+              "Streaming made analysts famous",
+              "It hasn't — cheating detection is fully automated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Online platforms can't search pockets, so they search patterns: engine-agreement rates, timing, discontinuities — across many games. Chess literacy + statistics + software is the stack.",
+            sourceLessonSlug: "chess-fair-play",
+          },
+          {
+            prompt: "What did Chess.com's October 2022 report on Hans Niemann actually conclude?",
+            options: [
+              "He had likely cheated in more than 100 online games — but there was no determinative evidence of cheating in the over-the-board Sinquefield Cup game",
+              "He cheated in the Sinquefield Cup game against Carlsen",
+              "He had never cheated anywhere",
+              "Carlsen had cheated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both halves matter: proven-at-scale online detection AND an unsubstantiated over-the-board accusation (FIDE's investigation also found no OTB evidence). Precision about which claim was proven is the lesson.",
+            sourceLessonSlug: "chess-fair-play",
+          },
+          {
+            prompt: "How did the Carlsen–Niemann affair resolve institutionally?",
+            options: [
+              "A federal court dismissed Niemann's $100M suit (June 2023), the parties announced a resolution that August, and FIDE's process sanctioned Carlsen's conduct while clearing Niemann on the over-the-board allegations",
+              "Niemann won $100 million at trial",
+              "Carlsen was banned from chess",
+              "It remains entirely unresolved with no findings",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Institutions, not vibes: platform methodology, federation investigation and ethics process, and a courtroom — with consequences priced in both directions (for cheating, and for accusing without proof).",
+            sourceLessonSlug: "chess-fair-play",
+          },
+          {
+            prompt: "What is the through-line this course claims connects the rulebook, the history, and the economy?",
+            options: [
+              "Claims need sources, numbers need owners, and integrity is what makes the system worth playing in — trust is the currency of every chess career",
+              "Memorizing openings is the foundation of success",
+              "Only grandmasters matter to the chess economy",
+              "Chess is primarily a spectator business",
+            ],
+            correctIndex: 0,
+            explanation:
+              "From verified article numbers to Netflix's owned-and-dated boom figures to the fair-play economy: the discipline of checking claims is the course's real deliverable — on the board and off it.",
+            sourceLessonSlug: "chess-fair-play",
+          },
+        ],
+      },
+    },
   ],
 };
