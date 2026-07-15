@@ -990,5 +990,320 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 — Independence and Union: Nkrumah, the OAU, and the AU
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "nkrumah-and-ghana",
+      title: "13 · Nkrumah, Ghana 1957, and the year of Accra",
+      section: "Independence and Union: Nkrumah, the OAU, and the AU",
+      recallContent: [
+        {
+          prompt: "State the 'converging irony' at the end of the Du Bois–Garvey feud.",
+          answer: "Du Bois the integrationist died a citizen of Ghana, having renounced America; Garvey the African redemptionist died in London, never having set foot in Africa.",
+        },
+        {
+          prompt: "Where did Garvey's black star end up after his death?",
+          answer: "On Ghana's flag — and on Nkrumah's national shipping line, named the Black Star Line after Garvey's. The symbols crossed the Atlantic without the man.",
+        },
+      ],
+      body: `Twelve years after Manchester, one of its two political secretaries stood at a podium in Accra at midnight and made Pan-Africanism a matter of state.
+
+**From Manchester to Accra.** **Kwame Nkrumah** (1909–1972) was born in the southwest of the British Gold Coast, trained as a teacher, and spent a decade in the United States (Lincoln University and the University of Pennsylvania, 1935–1945), where he absorbed both Du Bois's writing and — by his own account — Garvey's: his autobiography names the *Philosophy and Opinions of Marcus Garvey* among the books that influenced him most (Nkrumah, 1957). In London (1945–1947) he became Padmore's closest collaborator and Manchester's co-secretary (Section 2). In December 1947 he sailed home, invited by the lawyer-led United Gold Coast Convention to be its organizing secretary — and promptly out-organized his hosts, founding the mass-based **Convention People's Party** in 1949 on the demand of "Self-Government NOW." In January 1950 he launched **Positive Action** — Gandhian-inflected strikes and boycotts, straight out of the Manchester playbook — and was jailed for it. Then the empire blinked: in the February 1951 elections the CPP won overwhelmingly, and the British released Nkrumah from prison to lead the government (Nkrumah, 1957; Birmingham, 1998).
+
+**6 March 1957.** After six years of staged transfer, the Gold Coast became **Ghana** — the first sub-Saharan African colony to win independence from a European empire in the postwar wave (Sudan, technically an Anglo-Egyptian condominium, had preceded it in 1956) — taking its name from the medieval West African empire (whose real history is taught in this platform's *Africa Before Colonization*). At the midnight rally Nkrumah declared, in the words of the recorded speech, that "our independence is meaningless unless it is linked up with the total liberation of Africa" — transcriptions vary slightly in the final phrase (some render "of the African continent"), and the course flags rather than hides that (Nkrumah, 1957, 6 March speech; Adi, 2018). The sentence was policy, not poetry: Ghana's constitution-era politics, its diplomacy, and its budget all treated Ghanaian independence as a down payment on continental liberation. The new flag carried **Garvey's black star**; the new national shipping line was named the **Black Star Line**; Padmore moved to Accra to run African affairs; Du Bois would come to die there (Birmingham, 1998; Adi, 2018).
+
+**1958: the year of Accra.** With one independent radical state to host them, the movement's meetings came home to Africa. In **April 1958** Nkrumah convened the **Conference of Independent African States** — eight flags: Egypt, Ethiopia, Ghana, Liberia, Libya, Morocco, Sudan, Tunisia — the first such gathering on African soil (Adi, 2018; Legum, 1962). In **December 1958** came the more consequential one: the **All-African People's Conference**, gathering liberation movements and parties from across the continent — hundreds of delegates, chaired by the Kenyan trade unionist **Tom Mboya**, with **Frantz Fanon** representing Algeria's FLN and a young Congolese organizer named **Patrice Lumumba** among those it electrified (Adi, 2018; Legum, 1962). Nkrumah also pursued union in miniature: the **Ghana–Guinea union** of 1958 (joined by Mali in 1960–61) — more symbol than state, but a declared seed of the United States of Africa he intended.
+
+**Du Bois's ending.** The circle Section 1 opened closes here. Harassed at home in the McCarthy years — indicted in 1951 as an unregistered foreign agent (acquitted), his passport withheld for most of the decade — Du Bois accepted Nkrumah's invitation to Ghana in 1961 to direct the *Encyclopedia Africana*, took Ghanaian citizenship, and died in Accra on **27 August 1963**, aged ninety-five — the night before the March on Washington, where the news was announced to the crowd (Lewis, 2000). The man who drafted the 1900 "colour line" address died a citizen of the first state Pan-Africanism ever produced. Whether that state was becoming what the movement had promised is Section 6's question — and the honest answer starts earlier than most tellings admit.
+
+:::reveal Why does the course call 1958 'the year of Accra'? ||| Because with Ghana independent, the movement's meetings came home to Africa: the April Conference of Independent African States (eight flags, the first such gathering on African soil) and the December All-African People's Conference (liberation movements from across the continent — Mboya chairing, Fanon for the FLN, Lumumba electrified), plus the Ghana–Guinea union as a declared seed of continental union.
+
+## Sources
+- Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
+- Birmingham, D. (1998). *Kwame Nkrumah: The father of African nationalism* (Rev. ed.). Ohio University Press.
+- Legum, C. (1962). *Pan-Africanism: A short political guide*. Frederick A. Praeger.
+- Lewis, D. L. (2000). *W. E. B. Du Bois: The fight for equality and the American century, 1919–1963*. Henry Holt.
+- Nkrumah, K. (1957). *Ghana: The autobiography of Kwame Nkrumah*. Thomas Nelson.`,
+    },
+    {
+      slug: "oau-1963",
+      title: "14 · Addis Ababa, 1963: the OAU and the argument Nkrumah lost",
+      section: "Independence and Union: Nkrumah, the OAU, and the AU",
+      recallContent: [
+        {
+          prompt: "What happened on 6 March 1957, and how did Nkrumah frame it at the midnight rally?",
+          answer: "The Gold Coast became Ghana — the first sub-Saharan colony freed in the postwar wave (Sudan's 1956 condominium case noted). Nkrumah declared, per the recorded speech, that 'our independence is meaningless unless it is linked up with the total liberation of Africa' (final-phrase transcriptions vary, and the course flags that).",
+        },
+        {
+          prompt: "How did Du Bois's life end, and why is it the closing of a circle?",
+          answer: "Invited by Nkrumah to direct the Encyclopedia Africana, he took Ghanaian citizenship and died in Accra on 27 August 1963 — the news announced the next day at the March on Washington. The drafter of the 1900 'colour line' address died a citizen of the first state Pan-Africanism produced.",
+        },
+      ],
+      body: `By 1963, more than thirty African states were independent. The question Manchester never had to answer was now unavoidable: **what, exactly, should unity mean between sovereign governments?** Two camps formed, they fought, and the loser's argument haunts the continent still.
+
+**Casablanca versus Monrovia.** The radicals — the **Casablanca Group** (formed January 1961: Ghana, Guinea, Mali, Morocco, Egypt, Libya, with Algeria's provisional government) — wanted **political union now**: continental institutions with real power, before the new states hardened into permanence. The gradualists — the larger **Monrovia Group** (formed May 1961 around Nigeria, Liberia, and most of the former French colonies) — wanted **cooperation among sovereign states**: economic coordination, mutual respect, no surrender of the sovereignty just won (Legum, 1962; Adi, 2018). Beneath the doctrine sat harder things: the Congo crisis (the camps had backed different sides after Lumumba's overthrow and January 1961 murder), Cold War alignments, and the plain fact that thirty new governments were not eager to dissolve themselves into a union a few charismatic rivals might dominate.
+
+**Addis Ababa, May 1963.** Emperor **Haile Selassie** — the symbol of Section 5, here in his other role as the continent's senior statesman — hosted both camps in Addis Ababa, and on **25 May 1963** thirty-two African states signed the Charter of the **Organisation of African Unity (OAU)** (OAU, 1963). Nkrumah arrived with the maximal case, published that same year as the book *Africa Must Unite*: balkanized micro-states would be playthings of their former masters, so Africa needed a **Union Government** — common defense, common currency, continental planning — and he pressed the summit, in the words of his address, that Africa "must unite now or perish" (Nkrumah, 1963a; Nkrumah, 1963b). **He lost.** The Charter that emerged was the Monrovia Group's document: its principles enshrined **sovereign equality** and **non-interference in internal affairs**, and its machinery could recommend but not compel (OAU, 1963). The next year in Cairo, the OAU locked the map itself in place, resolving that members pledge to "respect the borders existing on their achievement of national independence" (OAU, 1964) — the colonial lines, kept, because opening one border question would open them all.
+
+**What the OAU actually did — both columns.** Credit first, and it is real: the OAU's **Liberation Committee** (headquartered in Dar es Salaam) channeled money, training, and diplomatic standing to the movements fighting Portuguese rule, Rhodesia, and apartheid South Africa; the OAU made those liberation wars a *continental* cause and kept them on the world's agenda until the last of them was won (Adi, 2018; Meredith, 2005). Africa's dictionaries gained a phrase — the "frontline states" — from the members that carried the cost. Now the debit column, which Section 6 details: **non-interference in practice meant silence.** Whatever a member government did *inside* its borders — one-party rule, massacre, famine as policy — was constitutionally none of the OAU's business, and the organization's summits seated and honored the perpetrators. Critics took to calling it a **"dictators' club,"** and the label stuck precisely because the Charter had been built, deliberately, with no tool for judging members (Meredith, 2005). Hold the full thought: **the same non-interference clause** that protected fragile new states from subversion also protected tyrants from scrutiny. It was not a drafting accident; it was the price of getting thirty-two signatures.
+
+**Nkrumah's prophecy, scored honestly.** Was he right? On the diagnosis, substantially: the micro-states *did* stay economically dependent, the borders *did* freeze weakness in place, and every subsequent generation of African integration (Section 15) has crept back toward things he proposed in 1963. On the prescription, his critics had a point the course will not launder: the Union Government he demanded would have needed a central power, and Section 6 shows what Nkrumah was building at home by 1963 — the argument "trust a strong center" was weaker coming from a man constructing one-man rule. Both truths, one man. That is this course's method, and nowhere does it matter more than in Accra.
+
+:::reveal What did Casablanca and Monrovia each want, and which camp's vision became the OAU Charter? ||| Casablanca (Ghana, Guinea, Mali, Morocco, Egypt, Libya + Algeria's provisional government): political union NOW — continental government before the new states hardened. Monrovia (the larger group around Nigeria, Liberia, and most ex-French colonies): cooperation among sovereign states. The 1963 Charter was Monrovia's document — sovereign equality, non-interference, machinery that could recommend but not compel; Nkrumah's union government lost.
+
+## Sources
+- Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
+- Legum, C. (1962). *Pan-Africanism: A short political guide*. Frederick A. Praeger.
+- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs.
+- Nkrumah, K. (1963a). *Africa must unite*. Heinemann.
+- Nkrumah, K. (1963b, May 24). *Address to the Conference of African Heads of State and Government* [Speech]. Addis Ababa.
+- Organisation of African Unity. (1963, May 25). *Charter of the Organisation of African Unity*. Addis Ababa.
+- Organisation of African Unity. (1964, July). *Resolution AHG/Res. 16(I): Border disputes among African states*. Cairo.`,
+    },
+    {
+      slug: "from-oau-to-au",
+      title: "15 · From OAU to AU: non-interference to non-indifference",
+      section: "Independence and Union: Nkrumah, the OAU, and the AU",
+      recallContent: [
+        {
+          prompt: "What double edge did the OAU Charter's non-interference principle carry?",
+          answer: "It protected fragile new states from subversion AND protected tyrants from scrutiny — whatever a member did inside its borders was constitutionally none of the OAU's business, which is why critics called it a 'dictators' club.' It was the price of thirty-two signatures, not a drafting accident.",
+        },
+        {
+          prompt: "How does the course score Nkrumah's 1963 'unite now or perish' argument?",
+          answer: "Substantially right on diagnosis (micro-states stayed dependent; frozen borders froze weakness; later integration crept back toward his proposals) — but weaker on prescription, because 'trust a strong center' rang hollow from a man building one-man rule at home.",
+        },
+      ],
+      body: `Thirty-six years after Addis Ababa, the OAU's members voted to replace it. The story of the successor — who pushed it, what changed on paper, and what has and hasn't changed in practice — is Pan-Africanism's institutional present tense.
+
+**Why replace the OAU?** By the 1990s the organization's founding job — ending colonial and white-minority rule — was finished: Namibia was independent (1990) and apartheid fell (1994). What remained was the record non-interference had produced: the OAU had watched, near-silent, through Amin's Uganda, the Rwandan genocide of 1994, and two Congo wars. Its own members increasingly said so; the genocide in particular became the argument no defender of pure sovereignty could survive (Meredith, 2005; Makinda & Okumu, 2008).
+
+**The awkward midwife.** The push to relaunch came at a summit in **Sirte, Libya, in September 1999**, hosted and driven by **Muammar Gaddafi**, who had adopted Nkrumah's cause — he openly campaigned for a "United States of Africa" — and bankrolled much of the process (the **Sirte Declaration** calling for the new union is dated 9 September 1999) (OAU, 1999; Makinda & Okumu, 2008). The course teaches this plainly rather than around it: the AU's rebirth owes real momentum to an authoritarian ruler seeking a continental stage — patronage and Pan-Africanism have never been strangers, and Section 6 returns to what that pattern costs. The legal instrument followed: the **Constitutive Act of the African Union**, adopted at Lomé on 11 July 2000; the **African Union** formally launched at **Durban in July 2002**, succeeding the OAU (African Union, 2000; Makinda & Okumu, 2008).
+
+**What actually changed on paper.** One clause more than any other. Where the OAU Charter enshrined non-interference, the Constitutive Act's **Article 4(h)** asserts "the right of the Union to intervene in a Member State pursuant to a decision of the Assembly in respect of grave circumstances, namely: war crimes, genocide and crimes against humanity" (African Union, 2000, art. 4(h)). Diplomats and scholars compressed the shift into a slogan: from **non-interference to non-indifference**. The Act also barred governments that seize power unconstitutionally from participating — and unlike much AU paper, that rule has teeth in practice: suspension after coups has been applied repeatedly, including the run of West African and Sahelian coups of the 2020s (African Union, 2000; Makinda & Okumu, 2008). A Peace and Security Council (2004) and AU peace operations (Darfur, Somalia) followed.
+
+**The working machinery — and the honest audit.** The AU's economic flagship is the **African Continental Free Trade Area (AfCFTA)**: agreement signed at Kigali in March 2018, in force May 2019, trading formally begun 1 January 2021 — by number of participating countries, the largest free-trade area created since the WTO's founding (African Union, 2018; UNECA, 2021). Add **Agenda 2063** (the fifty-year development framework adopted in 2015), a diaspora formally embraced as, in common AU usage, the continent's **"sixth region"** (a 2003 amendment invites the diaspora's full participation "as an important part of our Continent"), and the long-promised continental passport (African Union, 2003; Adi, 2018). Now the audit, in the same breath: the AU runs substantially on external donor funding, which is a strange posture for an anti-dependency project; Article 4(h) has never been invoked to force entry against a sitting government committing atrocities; suspension punishes coups far more reliably than stolen elections or presidents-for-life; and intra-African trade, AfCFTA notwithstanding, remains a modest share of the continent's commerce. The gap between text and practice is where the next generation of the argument lives.
+
+**Where the argument stands.** Run the line: 1900, a petition. 1945, a demand. 1957, a state. 1963, a club of states — union rejected. 2002, a union in name, with one revolutionary clause and a familiar respect for sovereignty. Nkrumah's question — federate or stay weak? — remains open and live: you can hear it in every AfCFTA negotiation and every debate over the AU's budget. Pan-Africanism built real institutions; it has not yet built the one its founders imagined. Both clauses of that sentence are true, and this course asks you to carry both.
+
+:::reveal What is Article 4(h) of the AU Constitutive Act, and what slogan captures the shift it made from the OAU Charter? ||| Article 4(h) asserts 'the right of the Union to intervene in a Member State pursuant to a decision of the Assembly in respect of grave circumstances, namely: war crimes, genocide and crimes against humanity.' The slogan: from non-interference to non-indifference. The course's audit notes it has never been invoked to force entry against a sitting government committing atrocities.
+
+## Sources
+- Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
+- African Union. (2000, July 11). *Constitutive Act of the African Union*. Lomé.
+- African Union. (2003, February 3). *Protocol on amendments to the Constitutive Act of the African Union*. Addis Ababa. (Article 3(q), diaspora participation.)
+- African Union. (2018, March 21). *Agreement establishing the African Continental Free Trade Area*. Kigali.
+- Makinda, S. M., & Okumu, F. W. (2008). *The African Union: Challenges of globalization, security, and governance*. Routledge.
+- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs.
+- Organisation of African Unity. (1999, September 9). *Sirte Declaration*. Sirte.
+- United Nations Economic Commission for Africa. (2021). *AfCFTA: Start of trading*. UNECA.`,
+    },
+    {
+      slug: "quiz-independence-and-union",
+      title: "16 · Quiz: Independence and Union",
+      section: "Independence and Union: Nkrumah, the OAU, and the AU",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the documented chain from Manchester 1945 to Accra 1957?",
+            options: [
+              "Manchester's co-secretary Nkrumah went home in 1947, founded the mass-based CPP (1949), launched Positive Action (1950), was jailed, won the 1951 election from prison, and led Ghana to independence on 6 March 1957",
+              "Manchester's resolutions were adopted verbatim by the British Parliament in 1946",
+              "Nkrumah was appointed governor of the Gold Coast by the Colonial Office in 1948",
+              "Ghana's independence was granted spontaneously with no local organizing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Positive Action playbook — strikes and boycotts — is Manchester's doctrine applied: the empire jailed him, then released him to lead the government after the CPP's February 1951 landslide.",
+            sourceLessonSlug: "nkrumah-and-ghana",
+          },
+          {
+            prompt: "How does the course present Nkrumah's famous midnight-speech line?",
+            options: [
+              "Quoted per the recorded speech — 'our independence is meaningless unless it is linked up with the total liberation of Africa' — with the note that transcriptions vary slightly in the final phrase",
+              "As a sentence invented by later biographers",
+              "As a line Nkrumah borrowed word-for-word from Du Bois's 1900 address",
+              "It refuses to mention the speech at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Quote policy in action: the core wording is verified against the recorded speech; the variance in the final phrase ('of the African continent' in some transcriptions) is flagged, not hidden.",
+            sourceLessonSlug: "nkrumah-and-ghana",
+          },
+          {
+            prompt: "Which precision does the course attach to 'Ghana was first'?",
+            options: [
+              "First sub-Saharan African colony to win independence from a European empire in the postwar wave — with Sudan (1956), technically an Anglo-Egyptian condominium, noted as the earlier case",
+              "First African territory ever to be independent in any era",
+              "First member of the United Nations",
+              "First colony to gain independence anywhere in the world",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every date sourced, every superlative fenced: Ethiopia and Liberia were never in the postwar decolonization queue, and Sudan's 1956 case is named rather than ignored.",
+            sourceLessonSlug: "nkrumah-and-ghana",
+          },
+          {
+            prompt: "What were the two Accra conferences of 1958?",
+            options: [
+              "April: the Conference of Independent African States (eight flags, first such gathering on African soil); December: the All-African People's Conference (liberation movements — Mboya chairing, Fanon for the FLN, Lumumba among those electrified)",
+              "Both were meetings of the British Commonwealth",
+              "April: the founding of the OAU; December: the founding of the AU",
+              "Two sessions of the Fifth Pan-African Congress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "1958 is 'the year of Accra': with one independent radical state to host them, the movement's congresses moved from London and Manchester to Africa itself.",
+            sourceLessonSlug: "nkrumah-and-ghana",
+          },
+          {
+            prompt: "What did the Casablanca Group want that the Monrovia Group refused?",
+            options: [
+              "Political union NOW — continental government with real powers, before the new states hardened; Monrovia wanted cooperation among sovereign states with no surrender of sovereignty",
+              "The restoration of colonial rule under international supervision",
+              "A single African monarchy under Haile Selassie",
+              "Immediate war against all former colonial powers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Casablanca (Ghana, Guinea, Mali, Morocco, Egypt, Libya + Algeria's provisional government) vs the larger Monrovia group (around Nigeria and Liberia): union-now versus sovereignty-first. The 1963 Charter was Monrovia's.",
+            sourceLessonSlug: "oau-1963",
+          },
+          {
+            prompt: "What happened on 25 May 1963 in Addis Ababa?",
+            options: [
+              "Thirty-two African states signed the OAU Charter, hosted by Haile Selassie — enshrining sovereign equality and non-interference, and rejecting Nkrumah's union government",
+              "The African Union was launched, replacing the OAU",
+              "The Fifth Pan-African Congress convened",
+              "The AfCFTA agreement was signed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Addis 1963 founded the OAU on the gradualists' terms. The AU launch (Durban) came in 2002; Manchester was 1945; Kigali/AfCFTA was 2018.",
+            sourceLessonSlug: "oau-1963",
+          },
+          {
+            prompt: "What did the OAU's 1964 Cairo resolution pledge, and why?",
+            options: [
+              "That members 'respect the borders existing on their achievement of national independence' — keeping the colonial lines, because opening one border question would open them all",
+              "That all colonial-era borders would be redrawn within ten years",
+              "That the OAU would administer all border disputes as a supreme court",
+              "That borders would be abolished entirely by 1970",
+            ],
+            correctIndex: 0,
+            explanation:
+              "AHG/Res. 16(I) froze the map. It bought stability at the price Nkrumah predicted: locking in micro-states — the diagnosis half of his argument the course scores as substantially right.",
+            sourceLessonSlug: "oau-1963",
+          },
+          {
+            prompt: "What is the OAU's strongest documented credit entry?",
+            options: [
+              "Its Liberation Committee (HQ Dar es Salaam) channeled money, training, and diplomatic standing to the movements fighting Portuguese rule, Rhodesia, and apartheid — making those wars a continental cause until they were won",
+              "It abolished poverty across the continent by 1980",
+              "It successfully created a single African currency",
+              "It prevented all wars between African states",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Credit and debit both taught: the liberation record is real (the 'frontline states' carried the cost), and the same Charter left the OAU near-silent on member atrocities.",
+            sourceLessonSlug: "oau-1963",
+          },
+          {
+            prompt: "Why did critics call the OAU a 'dictators' club'?",
+            options: [
+              "Non-interference meant whatever a member government did inside its borders was constitutionally none of the OAU's business — its summits seated and honored perpetrators",
+              "Because its charter required members to be military governments",
+              "Because it was headquartered in a former prison",
+              "The label was invented by colonial powers with no basis",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The clause protecting fragile states from subversion also protected tyrants from scrutiny — not a drafting accident but the price of thirty-two signatures. Section 6 gives the worked example: Amin chairing the OAU in 1975.",
+            sourceLessonSlug: "oau-1963",
+          },
+          {
+            prompt: "How does the course score Nkrumah's 'Africa must unite now or perish' argument?",
+            options: [
+              "Right on much of the diagnosis (dependence, frozen weakness — later integration crept back toward his proposals); weaker on prescription, since 'trust a strong center' came from a man building one-man rule at home",
+              "Entirely right in every respect",
+              "Entirely wrong in every respect",
+              "The course refuses to evaluate it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both truths, one man — the course's method. The 1963 loss is scored honestly in both directions rather than turned into martyrology or dismissal.",
+            sourceLessonSlug: "oau-1963",
+          },
+          {
+            prompt: "What role did Muammar Gaddafi play in the AU's creation, and how does the course teach it?",
+            options: [
+              "He hosted and drove the September 1999 Sirte summit, campaigned for a 'United States of Africa,' and bankrolled the process — taught plainly as an authoritarian seeking a continental stage, since patronage and Pan-Africanism have never been strangers",
+              "He opposed the AU's creation and boycotted it",
+              "He had no involvement whatsoever",
+              "He founded the OAU in 1963",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Sirte Declaration (9 Sept 1999) began the relaunch; the Constitutive Act followed at Lomé (2000) and the AU launched at Durban (2002). The course teaches the awkward midwife rather than around him.",
+            sourceLessonSlug: "from-oau-to-au",
+          },
+          {
+            prompt: "What does Article 4(h) of the AU Constitutive Act assert?",
+            options: [
+              "The Union's right to intervene in a Member State, by Assembly decision, in respect of grave circumstances: war crimes, genocide and crimes against humanity",
+              "The permanent inviolability of all member governments",
+              "The Union's right to collect taxes directly from African citizens",
+              "The abolition of all national armies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The one-clause revolution: from non-interference to non-indifference — drafted in the shadow of Rwanda 1994. The audit: it has never been invoked to force entry against a sitting government committing atrocities.",
+            sourceLessonSlug: "from-oau-to-au",
+          },
+          {
+            prompt: "Which AU-era instruments and dates are correctly matched?",
+            options: [
+              "AfCFTA signed Kigali March 2018, trading begun 1 January 2021; Agenda 2063 adopted 2015; AU launched Durban July 2002",
+              "AfCFTA signed 1963; Agenda 2063 adopted 1900; AU launched 1945",
+              "AfCFTA signed at Manchester 1945; AU launched at Addis Ababa 1963",
+              "All three were created by the OAU Charter in 1963",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The working machinery is dated from the treaty texts: Kigali 2018 / trading 2021 (the largest free-trade area by country count since the WTO), Agenda 2063 (2015), Durban launch (2002).",
+            sourceLessonSlug: "from-oau-to-au",
+          },
+          {
+            prompt: "Which items appear in the course's honest audit of the AU?",
+            options: [
+              "Heavy reliance on external donor funding; 4(h) never used to force entry against a sitting government; suspensions punish coups more reliably than stolen elections; intra-African trade still a modest share",
+              "The AU has no headquarters, no members, and no treaties",
+              "The AU has achieved full continental federation",
+              "The AU abolished all African borders in 2005",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Text versus practice: real machinery (PSC, peace operations, coup suspensions with actual teeth) alongside the gaps — an anti-dependency project on donor money being the sharpest irony.",
+            sourceLessonSlug: "from-oau-to-au",
+          },
+          {
+            prompt: "In the course's one-line arc — 1900, 1945, 1957, 1963, 2002 — what does each date stand for?",
+            options: [
+              "A petition; a demand; a state; a club of states (union rejected); a union in name with one revolutionary clause",
+              "A war; a treaty; a currency; a passport; a railway",
+              "Five successive Pan-African Congresses in London",
+              "Five failed attempts at continental government",
+            ],
+            correctIndex: 0,
+            explanation:
+              "London petitioned; Manchester demanded; Ghana embodied; Addis federated nothing; Durban renamed the club and added Article 4(h). Nkrumah's question — federate or stay weak? — remains open.",
+            sourceLessonSlug: "from-oau-to-au",
+          },
+        ],
+      },
+    },
   ],
 };
