@@ -592,6 +592,26 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   ETUI, Eurofound, Kjellberg, the national confederations, and the EU directive text. Registered in
   \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`. Sibling of the (separately branched)
   Germany course; cross-links the anchor and *Know Your Rights at Work*.
+- 🔧 **Poland: Solidarność — When a Union Brought Down a State** (Culture & History,
+  \`content/labor-poland\`) — Wave 1 of the workers'-rights **country track**, for high school
+  students. **6 sections · 13 teaching lessons · 1 exercise · 6 quizzes** (15-question banks, above
+  the 10-question attempt cap so retries rotate; every question carries \`explanation\` +
+  \`sourceLessonSlug\`). The one course in the track where a **trade union is the primary vehicle of
+  a political revolution**: the 1980 Gdańsk strike, the **21 Demands** (demand #1 = free unions,
+  citing ILO C87 Poland ratified in 1957 and ignored; the boards are on **UNESCO's Memory of the
+  World** register), the Gdańsk Agreement, the **10 Nov 1980 Supreme Court registration fight**
+  (taught precisely — the court's inserted "leading role of the Party" clause, the general-strike
+  threat, the clause struck to a mere appendix), martial law (**13 Dec 1981**, nine miners shot dead
+  at **Wujek**), the **Round Table** and **4 June 1989** landslide. **Told as the honest arc, NOT a
+  triumph**: the union won the country and then **lost the workplace** — its own **Balcerowicz
+  Plan** shock therapy (in force 1 Jan 1990) drove unemployment from an official 0 to **16.4% (1993,
+  GUS)**, and today density is **~9% (2022)** and coverage **~12% (2023)** among the EU's lowest
+  (OECD/AIAS), bargaining fragmented to the single firm. **Neutral + dated on live Polish politics**:
+  states Solidarność's alignment with the national-catholic right (backed PiS, e.g. 2005) and names
+  the contested **Wałęsa security-service file** — adjudicating neither. Teaches the **"junk
+  contracts" (\`umowy śmieciowe\`) rhyme** with US misclassification + Mexican protection contracts —
+  the track's payoff. Cited to UNESCO, the European Solidarity Centre, GUS, OECD/AIAS, ETUI and
+  Eurofound. Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
