@@ -529,6 +529,25 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   lawful from *Mackay Radio*, **1938**). Registered in \`seed-courses.ts\`; **no migration** —
   \`pnpm seed:courses\`. Cross-links to *Know Your Rights at Work*. Track proposal (11 country
   courses, 3 build waves) at \`/admin/future\`.
+- 🔧 **Sweden & Denmark: The Wage Floor That Isn't a Law** (Culture & History, \`content/labor-nordics\`)
+  — **Wave 1 of the workers'-rights track**, a country course hanging off the anchor, for high school
+  students. 6 sections · 14 teaching lessons · 6 quizzes (14–15-question banks, above the 10-question
+  attempt cap so retries rotate) · 1 exercise (diagnose-the-mechanism). The reframe: **neither country
+  has a statutory national minimum wage — by design**; the floor is a collective agreement. Teaches the
+  **Ghent system** (union-run unemployment funds → ~two-thirds density) with **Norway** as the natural
+  experiment (no Ghent → ~half) and Sweden's **2007 a-kassa fee reform** (density fell ~77%→71%,
+  2006→2008, per **Kjellberg**) as the strongest causal evidence; **self-regulation** (**Saltsjöbaden**
+  1938; the **September Compromise** 1899); Danish **flexicurity** taught as a **trade under strain**
+  (dagpenge cut 4→2 years, 2010); and the track's sharpest single contrast — **sympathy/secondary
+  action is legal here and illegal in the US** (cross-links **Taft-Hartley §8(b)(4)**). The still-
+  unresolved **2023 Tesla dispute** is taught **dated, contested, and with no winner**. Honest limits:
+  falling density, the **Laval** case (CJEU C-341/05, 2007) and migrant/platform outsiders, and the
+  **counterintuitive** payload — the Nordic unions themselves **fought the EU minimum-wage directive**
+  (2022/2041; Denmark's CJEU challenge C-19/23, outcome **not asserted**), because a statutory floor
+  would undercut bargaining. **Sweden is kept distinct from Denmark throughout.** Cited to OECD/AIAS,
+  ETUI, Eurofound, Kjellberg, the national confederations, and the EU directive text. Registered in
+  \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`. Sibling of the (separately branched)
+  Germany course; cross-links the anchor and *Know Your Rights at Work*.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
