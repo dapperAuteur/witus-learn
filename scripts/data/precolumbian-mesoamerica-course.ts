@@ -681,5 +681,342 @@ Why does this course give a whole lesson to ignorance? Because **calibrated igno
         ],
       },
     },
+    // ────────────── SECTION 3 · THE MAYA ──────────────
+    {
+      slug: "meso-maya-world",
+      title: "6 · The Maya world: city-states under the canopy",
+      section: "Section 3 · The Maya: cities, script, and stars",
+      body: `First correction, before anything else: **there was never a "Maya empire."** The Classic Maya world (c. 250-900 CE) — spanning present-day Guatemala, Belize, southern Mexico, and the western edges of Honduras and El Salvador — was a landscape of **dozens of rival city-states**, each ruled by a *k'uhul ajaw* ("holy lord"), warring, allying, intermarrying, and trading like Renaissance Italy in limestone (Martin & Grube, 2008). "The Maya" is a scholarly label for peoples who shared a civilization — related languages, one script, one calendar system, one religious vocabulary — while never sharing a government.
+
+Because the Maya wrote (Lesson 7) and we can now read it (Section 7), this is the one part of pre-Columbian America where history has **names and dates**. The stelae — carved stone slabs erected in plazas — record kings' births, accessions, wars, and deaths against Long Count dates precise to the day. So we can say, without hedging, that **K'inich Janaab' Pakal** acceded at Palenque in 615 CE and reigned sixty-eight years until his death in 683, and that his sarcophagus lies beneath the Temple of the Inscriptions, discovered by Alberto Ruz Lhuillier in 1952 (Martin & Grube, 2008). Compare the anonymous rulers of Teotihuacan: this precision is what a deciphered script buys.
+
+The deciphered texts also revealed the **geopolitics**: much of the Classic period is structured by a long rivalry between two superpowers — **Tikal** and **Calakmul** — each sitting atop a web of client kings, fighting through proxies for centuries. Calakmul's "snake" dynasty engineered the defeat of Tikal in 562; Tikal's king Jasaw Chan K'awiil I returned the favor in 695. That arc — reconstructed from the cities' own monuments — is modern epigraphy's flagship achievement (Martin & Grube, 2008).
+
+Second correction: **the "small ceremonial centers in an empty jungle" picture is dead**, and LiDAR killed it. In 2018 the PACUNAM LiDAR Initiative published laser survey of 2,144 square kilometers of northern Guatemala and identified about **61,480 structures** under the forest canopy — house platforms, terraces, causeways, fortifications — implying, when extrapolated, a Late Classic population of the central lowlands in the range of **7 to 11 million people** (Canuto et al., 2018). The survey revealed wetland field systems, kilometer upon kilometer of agricultural terracing, raised causeways (*sacbeob*) linking sites, and defensive works implying warfare at a scale older models had discounted. A day's flying rewrote a century of settlement estimates — remember Aguada Fénix; this is the same instrument revolution, and Section 7 returns to it.
+
+That population needed engineering to eat and drink. Classic cities in the Petén survive four-to-five-month dry seasons on **reservoir systems** — Tikal's plastered catchment pavements and reservoirs stored water at city scale — while agriculture ran far beyond slash-and-burn: terraced hillsides, drained and raised wetland fields, household orchards and gardens (Canuto et al., 2018; Coe & Houston, 2022). The rainforest that tourists now see as wilderness is substantially a **regrown landscape over engineered countryside**.
+
+Hold the scale in your head as one picture: white causeways running between cities through farmed green; plazas of painted red temples (Maya cities were painted, not bare stone); markets, ballcourts, reservoirs; and over it all, dated stone announcements of which holy lord had captured which. That is the world whose script, calendar, and endgame the next two lessons take up.
+
+:::reveal Why is 'Maya empire' wrong, and what did the deciphered texts reveal instead as the Classic period's political structure? ||| There was no single Maya state: dozens of city-states under *k'uhul ajaw* rulers shared a civilization (script, calendar, religion) but never a government. The texts reveal a centuries-long two-superpower rivalry — Tikal vs. Calakmul's snake dynasty — each heading webs of client kings and fighting largely through proxies (Martin & Grube, 2008).
+
+## Sources
+- Martin, S., & Grube, N. (2008). *Chronicle of the Maya kings and queens: Deciphering the dynasties of the ancient Maya* (2nd ed.). Thames & Hudson.
+- Canuto, M. A., Estrada-Belli, F., Garrison, T. G., Houston, S. D., Acuña, M. J., Kováč, M., Marken, D., Nondédéo, P., Auld-Thomas, L., & 9 others. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137.
+- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson.
+- Ruz Lhuillier, A. (1973). *El Templo de las Inscripciones, Palenque*. Instituto Nacional de Antropología e Historia.`,
+      recallContent: [
+        {
+          prompt: "State the two corrections this lesson opens and closes with.",
+          answer:
+            "(1) There was never a Maya empire — the Classic Maya world was dozens of rival city-states sharing a civilization but not a government. (2) The 'small ceremonial centers in empty jungle' picture is dead: PACUNAM LiDAR (2018) found ~61,480 structures in 2,144 km², implying 7-11 million people in the Late Classic central lowlands over an engineered, farmed landscape.",
+        },
+        {
+          prompt: "What does the Pakal example demonstrate about the value of a readable script?",
+          answer:
+            "Precision without hedging: K'inich Janaab' Pakal of Palenque acceded 615 CE, died 683 after a 68-year reign, and his sarcophagus (found by Ruz Lhuillier, 1952) lies beneath the Temple of the Inscriptions. Deciphered writing turns ruins into named, dated history — the exact thing anonymous Teotihuacan lacks.",
+        },
+        {
+          prompt: "How did Classic Petén cities survive the dry season, and what fed them?",
+          answer:
+            "City-scale water engineering — e.g., Tikal's plastered catchments and reservoirs storing water across 4-5 dry months — and agriculture far beyond slash-and-burn: terraces, drained/raised wetland fields, orchards and gardens, all visible in the LiDAR record.",
+        },
+      ],
+    },
+    {
+      slug: "meso-maya-script-calendar",
+      title: "7 · Script, zero, and the Long Count (and what 2012 actually said)",
+      section: "Section 3 · The Maya: cities, script, and stars",
+      body: `Three intellectual achievements sit at the center of Maya civilization, and one modern embarrassment sits on top of them. Take them in order.
+
+**The script.** Maya writing is a **full writing system** — the only one in the pre-Columbian Americas that demonstrably could record anything its users could say. It is *logosyllabic*: several hundred signs mixing logograms (whole words) with a syllabary (consonant-vowel signs), so the same word could be written multiple ways — a flexibility scribes used playfully (Coe & Houston, 2022). Texts survive on stelae, lintels, stairways, painted ceramics, cave walls, and in the folding books (Section 7 tells the story of the books, and of how the script was lost and cracked again). What matters here: when you read "the Maya wrote," do not picture pictograms gesturing at meaning. Picture prose — names, verbs, dates, quotations — in a script as capable as the one you are reading now.
+
+**Zero and the numbers.** Maya arithmetic is **vigesimal** (base-20), written with dots (1), bars (5), and — the famous part — a **zero**, often drawn as a stylized shell, used as a true placeholder in positional notation. Independent invention of positional zero is one of the rarest events in intellectual history; Mesoamerica achieved it centuries before the concept, traveling from India through the Islamic world, reached European arithmetic (Coe & Houston, 2022; Aveni, 2001). The earliest surviving Long Count dates — which require positional place-keeping — fall in the **first century BCE** (36 and 32 BCE, at Chiapa de Corzo and Tres Zapotes), on the *western edge* of the Maya area, so the system itself predates its Maya florescence and its inventors are, honestly, uncertain.
+
+**The calendars.** Mesoamerica ran on interlocking cycles, and the Maya elaboration is the richest documented: the **tzolk'in**, a 260-day ritual round; the **haab**, a 365-day solar year; their combination repeating every 52 years (the **Calendar Round**); and, for history, the **Long Count** — a running day-tally from a mythological era base in 3114 BCE, written as nested place values (144,000 days; 7,200; 360; 20; 1). A Long Count date nails an event to a single day across millennia, which is why Maya history has a spine that most ancient chronologies envy. (Converting to our calendar uses the GMT correlation — the era base lands on August 11, 3114 BCE in its most-used variant, with rival variants a couple of days off. Even the conversion constant is a documented scholarly argument, which is exactly how this course likes its facts.) Astronomy rode on the arithmetic: the Dresden Codex — one of the four surviving books — carries a **Venus table** tracking the planet's 584-day cycle with correction mechanisms accurate over centuries, plus eclipse-warning tables (Aveni, 2001).
+
+**Now the embarrassment — ours, not theirs.** In the years before December 2012, a global industry announced that "the Maya calendar predicts the end of the world": bestselling books, a Hollywood disaster film, enough public anxiety that NASA published reassurance pages. Here is the entire ancient evidentiary basis for that panic. On **December 21 (or 23), 2012**, the Long Count completed its 13th **b'ak'tun** — an odometer rollover, the kind of period ending Maya kings celebrated with monuments the way we hold centennials. Exactly **one** securely known ancient inscription clearly references that future date: **Monument 6 from Tortuguero** (Tabasco, Mexico), a 7th-century text commemorating a local building dedication, which ends by fast-forwarding to the far-off 13th-b'ak'tun completion — the passage is damaged, mentions the god **Bolon Yokte'** in some connection with that station, and prophesies precisely nothing about endings (Stuart, 2011). That's it. That is the whole "prophecy." Meanwhile Maya texts routinely project *past* 2012: at Palenque, texts anticipate calendar stations in **4772 CE** — awkward scheduling for a civilization supposedly expecting cancellation (Stuart, 2011).
+
+The 2012 affair earns its place in this course as a **specimen**: watch how it worked. A real artifact (Monument 6), a real calendar (the Long Count), a damaged passage, near-total public ignorance of the reading — and onto that thin substrate, outsiders projected an apocalypse that said everything about *their* anxieties and nothing about Maya thought. Living Maya communities spent 2012 explaining, with varying patience, that no such doom figured in their tradition. Keep the pattern: it is the spectacle trap from Lesson 1, industrialized — and the antidote was, as always, someone who could actually read the text.
+
+:::reveal What is the complete ancient evidence behind the 2012 'Maya apocalypse,' and what does it actually say? ||| One inscription: Tortuguero Monument 6, a 7th-century building-dedication text that ends by projecting forward to the 13th-b'ak'tun period ending of December 2012 — a calendar station like an odometer rollover. The passage is damaged, mentions Bolon Yokte' in some connection with the station, and prophesies no ending; other Maya texts (Palenque) schedule dates out to 4772 CE. The apocalypse was projected onto the calendar by moderns (Stuart, 2011).
+
+## Sources
+- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson.
+- Stuart, D. (2011). *The order of days: The Maya world and the truth about 2012*. Harmony Books.
+- Aveni, A. F. (2001). *Skywatchers: A revised and updated version of Skywatchers of ancient Mexico*. University of Texas Press.
+- Houston, S. D. (Ed.). (2004). *The first writing: Script invention as history and process*. Cambridge University Press.`,
+      recallContent: [
+        {
+          prompt: "What kind of writing system is Maya script, and why does that classification matter?",
+          answer:
+            "A full logosyllabic system — several hundred signs mixing logograms with a consonant-vowel syllabary — capable of recording anything its users could say: the only demonstrated full writing system in the pre-Columbian Americas. It matters because it means Maya texts are prose (names, verbs, dates, quotations), not gesturing pictograms.",
+        },
+        {
+          prompt: "Lay out the Maya calendar toolkit.",
+          answer:
+            "Tzolk'in (260-day ritual round) + haab (365-day year), meshing every 52 years as the Calendar Round; and the Long Count, a positional day-count from an era base in 3114 BCE (GMT correlation; most-used variant = Aug 11), which fixes events to a single day. The Dresden Codex adds a Venus table (584-day cycle, with corrections) and eclipse tables.",
+        },
+        {
+          prompt: "Where and when do the earliest surviving Long Count dates appear, and what does that imply?",
+          answer:
+            "36 and 32 BCE, at Chiapa de Corzo and Tres Zapotes — on the western edge of the Maya area. The positional system (and its zero-requiring place-keeping) predates the Maya florescence, and its actual inventors are honestly uncertain.",
+        },
+      ],
+    },
+    {
+      slug: "meso-maya-collapse",
+      title: "8 · The Classic collapse: real, specific, and still argued",
+      section: "Section 3 · The Maya: cities, script, and stars",
+      body: `Something real happened in the southern Maya lowlands between roughly **760 and 910 CE**, and this lesson owes you both halves: the event, stated precisely, and the explanation, labeled honestly as a live argument. What it does *not* owe you — because it is false — is the version where "the Maya mysteriously vanished."
+
+**What actually ended.** Across the Petén and neighboring southern lowlands, over about a century and a half, the institution at the center of Classic society — the *k'uhul ajaw*, the divine king with his stelae, his court, his monumental building program — **shut down, city by city**. Dated monuments stop: Tikal's last Long Count stela is from 869 CE; Toniná erected one of the very last known, in 909. Royal construction ceases; palaces are occupied by squatters or abandoned; populations of the great southern cities decline steeply over generations (not overnight), and much of the region's countryside eventually empties (Demarest, 2004; Martin & Grube, 2008). This was a genuine civilizational catastrophe *for that region and that institution* — one of the touchstone cases in the study of societal collapse.
+
+**What did not end.** Zoom out and the word "collapse" starts needing asterisks. While the south declined, the **northern Yucatán rose**: **Chichén Itzá** grew into one of the largest, most cosmopolitan cities Mesoamerica ever produced precisely in the Terminal Classic (c. 800-1000 CE); after it, **Mayapán** headed a confederation into the 1400s; coastal trading towns like Tulum were thriving when the Spanish first coasted Yucatán in 1517-1519. In the Guatemalan highlands, the **K'iche' and Kaqchikel kingdoms** were expanding powers when Pedro de Alvarado attacked in 1524 — and it is the K'iche' court tradition that gives us the *Popol Vuh* (Section 7). Maya farmers, nobles, scribes, and merchants continued being Maya, in Maya polities, for another six centuries after Tikal fell silent — and roughly seven million of their descendants are alive today (Lesson 17). Scholars like McAnany and Yoffee have argued the very word "collapse" misleads here: **institutions collapsed; a people adapted, moved, and continued** (McAnany & Yoffee, 2010).
+
+**Why it happened: the honest scoreboard.** No single-cause account has won, but the argument is now unusually evidence-rich:
+
+- **Drought, from the geology.** Sediment cores from Lake Chichancanab (Yucatán) identified the period c. 800-1000 CE as among the driest of the past several thousand years in the region (Hodell, Curtis, & Brenner, 1995); a Belizean stalagmite record later resolved a sequence of severe multi-year droughts across the 9th century, tracking the staggered pattern of political failure (Kennett et al., 2012). The paleoclimate signal is real and repeatedly replicated; how much explanatory weight it can carry — the north got dry too, yet Chichén Itzá boomed — is the debated part.
+- **Warfare, from the ground and the texts.** Endemic Late Classic warfare visibly escalated in regions like the Petexbatun, where cities like Dos Pilas ended behind hastily built fortification walls (Demarest, 2004); LiDAR has since revealed fortifications more widespread than once believed (Canuto et al., 2018).
+- **Overshoot and environment.** Populations at the 7-to-11-million scale (Lesson 6) pressed hard on thin tropical soils; erosion and deforestation signals appear in the cores — capacity stress that made everything else worse (Demarest, 2004).
+- **Political failure.** The divine-king institution itself may have been the fragile part: a system premised on the king delivering rain and victory has no graceful failure mode when drought and defeat arrive together. The pattern — royal institutions dying while commoner populations persist longest — fits this reading (Martin & Grube, 2008; Demarest, 2004).
+
+The emerging mainstream is a **conjunction**: multi-decade droughts hitting an overpopulated, war-torn landscape governed by an institution that could not survive missed promises — with the mix differing city by city, which is why the endings are staggered across 150 years. But hold it as a weighted-evidence debate, not a verdict; the literature still argues loudly about the weights.
+
+Last thing, because it is the point of the lesson: notice that **"specific and debated" and "mysterious" are opposites.** The collapse has dates, cores, walls, and last stelae — an evidence trail generations deep. "Mysteriously vanished" erases both the evidence and the seven million people, and it prepares the ground for every "lost race" fantasy this course keeps meeting. The Maya did not vanish. A political system did.
+
+:::reveal Give the 'both halves' of the Classic collapse: what precisely ended, and what the main candidate explanations are. ||| Ended, c. 760-910 CE, in the southern lowlands: the divine-king (k'uhul ajaw) institution — dated monuments cease (Tikal 869, Toniná 909), royal building stops, the great southern cities depopulate over generations. Candidate causes, argued in conjunction: replicated megadrought records (Chichancanab cores, Belize stalagmite), escalating warfare (Petexbatun fortifications), population/environmental overshoot, and the brittleness of divine kingship itself. Meanwhile the north (Chichén Itzá, Mayapán) flourished and Maya polities persisted to the Spanish invasion — institutions collapsed; the people did not vanish.
+
+## Sources
+- Demarest, A. (2004). *Ancient Maya: The rise and fall of a rainforest civilization*. Cambridge University Press.
+- Hodell, D. A., Curtis, J. H., & Brenner, M. (1995). Possible role of climate in the collapse of Classic Maya civilization. *Nature, 375*, 391-394.
+- Kennett, D. J., Breitenbach, S. F. M., Aquino, V. V., Asmerom, Y., Awe, J., Baldini, J. U. L., Bartlein, P., Culleton, B. J., Ebert, C., & 8 others. (2012). Development and disintegration of Maya political systems in response to climate change. *Science, 338*(6108), 788-791.
+- Martin, S., & Grube, N. (2008). *Chronicle of the Maya kings and queens* (2nd ed.). Thames & Hudson.
+- McAnany, P. A., & Yoffee, N. (Eds.). (2010). *Questioning collapse: Human resilience, ecological vulnerability, and the aftermath of empire*. Cambridge University Press.
+- Canuto, M. A., et al. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137.`,
+      recallContent: [
+        {
+          prompt: "What are the last dated monuments the lesson cites, and what do they mark?",
+          answer:
+            "Tikal's last Long Count stela, 869 CE, and one of the very last known anywhere, Toniná's of 909 CE. They mark the city-by-city shutdown of the divine-king institution in the southern lowlands across roughly 760-910 CE — staggered over 150 years, not overnight.",
+        },
+        {
+          prompt: "Summarize the drought evidence and its acknowledged limit.",
+          answer:
+            "Lake Chichancanab sediment cores (Hodell et al., 1995) put c. 800-1000 CE among the region's driest intervals in millennia; a Belize stalagmite (Kennett et al., 2012) resolves repeated severe 9th-century droughts tracking political failures. Limit: the north also got dry, yet Chichén Itzá boomed — so drought can't be the whole story, and the causal weights remain argued.",
+        },
+        {
+          prompt: "Why does the course insist 'specific and debated' is the opposite of 'mysterious'?",
+          answer:
+            "The collapse has an evidence trail — dates, sediment cores, fortification walls, last stelae — and a live multi-causal argument. 'Mysteriously vanished' erases that evidence and the ~7 million living Maya, clearing ground for lost-race fantasies. A political system died; a people did not.",
+        },
+      ],
+    },
+    {
+      slug: "meso-quiz-3",
+      title: "Section 3 quiz · The Maya",
+      section: "Section 3 · The Maya: cities, script, and stars",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "The political structure of the Classic Maya world was…",
+            options: [
+              "dozens of rival city-states under 'holy lords,' sharing a civilization but never a single government",
+              "one centralized Maya empire ruled from Tikal",
+              "a democracy of village councils with no kings",
+              "a province of Teotihuacan throughout",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'Maya empire' is a myth: the shared script, calendar, and religion spanned polities that warred and allied like Renaissance Italian states (Martin & Grube, 2008).",
+            sourceLessonSlug: "meso-maya-world",
+          },
+          {
+            prompt: "What long geopolitical arc did decipherment reveal in the Classic inscriptions?",
+            options: [
+              "A centuries-long superpower rivalry between Tikal and Calakmul's snake dynasty, fought largely through client kings",
+              "A single war against the Olmec",
+              "Peaceful centuries with no recorded conflict",
+              "Annual wars against the Aztecs",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Calakmul engineered Tikal's defeat in 562; Tikal's Jasaw Chan K'awiil I struck back in 695 — history reconstructed from the cities' own monuments.",
+            sourceLessonSlug: "meso-maya-world",
+          },
+          {
+            prompt: "Why can the course give Pakal's dates (acceded 615, died 683) without hedging?",
+            options: [
+              "Because Maya stelae record royal biographies against Long Count dates precise to the day, and the script is deciphered",
+              "Because Spanish chroniclers interviewed him",
+              "Because radiocarbon dating is precise to the year",
+              "It can't — those dates are guesses",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Readable dated texts make the Maya the one pre-Columbian civilization with named, day-dated political history — the contrast with anonymous Teotihuacan.",
+            sourceLessonSlug: "meso-maya-world",
+          },
+          {
+            prompt: "The 2018 PACUNAM LiDAR survey of northern Guatemala found…",
+            options: [
+              "about 61,480 structures in 2,144 km², implying roughly 7-11 million people in the Late Classic central lowlands",
+              "that the jungle was mostly empty of ruins",
+              "about 600 structures, confirming small populations",
+              "only ceremonial centers, no houses",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Canuto et al. (2018, Science): house platforms, terraces, wetland fields, causeways, and fortifications under the canopy — a day's flying rewrote a century of settlement estimates.",
+            sourceLessonSlug: "meso-maya-world",
+          },
+          {
+            prompt: "How did Petén cities like Tikal survive four-to-five-month dry seasons?",
+            options: [
+              "City-scale water engineering: plastered catchments feeding reservoirs",
+              "They relocated to the coast every winter",
+              "Deep wells drilled with metal tools",
+              "They didn't — cities emptied each dry season",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reservoir systems stored a city's water across the dry months; agriculture ran on terraces, raised wetland fields, and orchards — an engineered countryside now regrown as forest.",
+            sourceLessonSlug: "meso-maya-world",
+          },
+          {
+            prompt: "Maya writing is best described as…",
+            options: [
+              "a full logosyllabic system — hundreds of signs mixing word-signs and syllables — able to record anything its users could say",
+              "simple pictures with guessable meanings",
+              "an alphabet borrowed from Phoenician traders",
+              "pure decoration with no linguistic content",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the only demonstrated full writing system of the pre-Columbian Americas: prose with names, verbs, dates, and quotations (Coe & Houston, 2022).",
+            sourceLessonSlug: "meso-maya-script-calendar",
+          },
+          {
+            prompt: "What makes the Mesoamerican zero historically remarkable?",
+            options: [
+              "Positional zero was independently invented — one of the rarest events in intellectual history — centuries before the India-derived zero reached European arithmetic",
+              "It was the first zero anywhere on Earth, full stop",
+              "It was borrowed from Roman numerals",
+              "It was purely decorative and never used in math",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Bar-and-dot vigesimal notation used a shell-sign zero as a true placeholder. The course claims independence, not absolute priority — Babylonian placeholders and the Indian zero have their own histories.",
+            sourceLessonSlug: "meso-maya-script-calendar",
+          },
+          {
+            prompt: "The earliest surviving Long Count dates (36 and 32 BCE) appear…",
+            options: [
+              "at Chiapa de Corzo and Tres Zapotes, on the western edge of the Maya area — so the system predates its Maya florescence and its inventors are uncertain",
+              "at Tikal, proving Maya invention",
+              "at Tenochtitlan",
+              "in the Dresden Codex",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An honest attribution: the Maya elaborated the Long Count most richly, but the earliest monuments carrying it sit outside the heartland.",
+            sourceLessonSlug: "meso-maya-script-calendar",
+          },
+          {
+            prompt: "Which set correctly lists the Maya calendar components?",
+            options: [
+              "Tzolk'in (260-day), haab (365-day), Calendar Round (52-year mesh), Long Count (running day-tally from a 3114 BCE era base)",
+              "A 300-day year, a 700-day cycle, and a week of 13 days",
+              "Only the Long Count — the Maya had no other cycles",
+              "The Julian and Gregorian calendars",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Long Count's positional day-count is why Maya events can be fixed to a single day; conversion to our calendar runs through the GMT correlation (itself a documented scholarly argument).",
+            sourceLessonSlug: "meso-maya-script-calendar",
+          },
+          {
+            prompt: "What does the Dresden Codex's Venus table demonstrate?",
+            options: [
+              "Maya astronomers tracked the 584-day Venus cycle with correction mechanisms accurate over centuries, plus eclipse-warning tables",
+              "That the Maya believed Venus was the Sun",
+              "That the codex is a modern forgery",
+              "That Maya astronomy never used numbers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Arithmetic in service of the sky (Aveni, 2001) — in one of only four surviving pre-conquest Maya books.",
+            sourceLessonSlug: "meso-maya-script-calendar",
+          },
+          {
+            prompt: "The complete ancient evidentiary basis for the 2012 'Maya apocalypse' was…",
+            options: [
+              "one damaged inscription — Tortuguero Monument 6 — commemorating a 7th-century building dedication and projecting ahead to the 13th-b'ak'tun period ending, prophesying no ending",
+              "dozens of prophecy texts across many cities",
+              "a warning in the Popol Vuh",
+              "an Aztec codex describing the world's end in 2012",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The passage mentions Bolon Yokte' in some connection with the calendar station (Stuart, 2011). A period ending is an odometer rollover — celebrated, not feared; Palenque texts schedule dates to 4772 CE.",
+            sourceLessonSlug: "meso-maya-script-calendar",
+          },
+          {
+            prompt: "Which statement about the Classic collapse is accurate?",
+            options: [
+              "In the southern lowlands, c. 760-910 CE, the divine-king institution shut down city by city — while northern Yucatán (Chichén Itzá, later Mayapán) flourished",
+              "All Maya everywhere died out around 900 CE",
+              "It happened in a single year",
+              "Archaeologists deny anything happened",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Real and regional: last stelae at Tikal 869, Toniná 909; steep southern depopulation over generations — and simultaneous northern boom. 'Institutions collapsed; a people adapted' (McAnany & Yoffee, 2010).",
+            sourceLessonSlug: "meso-maya-collapse",
+          },
+          {
+            prompt: "What does the paleoclimate record contribute to the collapse debate?",
+            options: [
+              "Replicated evidence (Chichancanab lake cores; a Belize stalagmite) of severe multi-year 9th-century droughts tracking the staggered political failures — with weight still debated, since the dry north boomed",
+              "Proof that climate alone caused everything",
+              "Evidence that the period was unusually wet",
+              "Nothing — no climate data exists for the period",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hodell et al. (1995) and Kennett et al. (2012) anchor the drought case; the mainstream reads collapse as a conjunction — drought + warfare + overshoot + a brittle royal institution — with argued weights.",
+            sourceLessonSlug: "meso-maya-collapse",
+          },
+          {
+            prompt: "Which Maya polities did the Spanish actually encounter, centuries after the Classic collapse?",
+            options: [
+              "Thriving coastal towns like Tulum (1517-1519) and the expanding K'iche' and Kaqchikel highland kingdoms (attacked 1524), among others",
+              "None — the land was uninhabited",
+              "Only Tikal, still at full power",
+              "Teotihuacan's successor state",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Six centuries of continued Maya history separate Tikal's last stela from Alvarado's invasion — the plainest refutation of 'they vanished.'",
+            sourceLessonSlug: "meso-maya-collapse",
+          },
+          {
+            prompt: "Why does the course say 'mysteriously vanished' is worse than wrong?",
+            options: [
+              "It erases both the rich evidence trail (dates, cores, walls, last stelae) and the ~7 million Maya alive today, preparing the ground for lost-race fantasies",
+              "Because the collapse never happened at all",
+              "Because the truth is that aliens intervened",
+              "Because mystery makes for boring television",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'Specific and debated' is the opposite of 'mysterious.' A political system died in one region; the people continued — and continue.",
+            sourceLessonSlug: "meso-maya-collapse",
+          },
+        ],
+      },
+    },
   ],
 };
