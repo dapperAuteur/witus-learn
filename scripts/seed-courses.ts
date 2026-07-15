@@ -99,6 +99,7 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
+import { LABOR_POLAND_COURSE } from "./data/labor-poland-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
@@ -648,6 +649,16 @@ async function main() {
     // Work" (that course = your rights today; this one = how we got here). Proposal for the
     // country-by-country track: plans/future-courses/workers-rights-track-proposal.md.
     { slug: "history-of-unions", course: HISTORY_OF_UNIONS_COURSE, category: "Culture & History" },
+    // Poland: Solidarność — When a Union Brought Down a State. Wave 1 of the workers'-rights
+    // country track, hanging off the anchor (history-of-unions). The case where a TRADE UNION was
+    // the primary vehicle of a political revolution — and, honestly, the case where the union then
+    // LOST the workplace it had freed: density ~9% (2022), coverage ~12% (2023), among the EU's
+    // lowest. Cited to UNESCO Memory of the World (the 21 Demands), the European Solidarity Centre,
+    // Statistics Poland (GUS), OECD/AIAS and ETUI. Neutral + dated on live Polish politics: names
+    // Solidarność's alignment with the national-catholic right and the contested Wałęsa file, and
+    // adjudicates neither. Teaches the "junk contracts" (umowy śmieciowe) rhyme with US
+    // misclassification + Mexican protection contracts. 6 sections · no migration · seed:courses.
+    { slug: "labor-poland", course: LABOR_POLAND_COURSE, category: "Culture & History" },
     // Golf — the first of the sports courses. Six sections: how to play, the Rules (cited to
     // the 2023 code), strategy + the World Handicap System, history (incl. the documented
     // record of racial and gender exclusion — students read the January 1962 *Golfdom* trade
