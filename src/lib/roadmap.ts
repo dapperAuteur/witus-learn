@@ -507,6 +507,25 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   lawful from *Mackay Radio*, **1938**). Registered in \`seed-courses.ts\`; **no migration** —
   \`pnpm seed:courses\`. Cross-links to *Know Your Rights at Work*. Track proposal (11 country
   courses, 3 build waves) at \`/admin/future\`.
+- 🔧 **Germany: Workers on the Board** (Culture & History, \`content/labor-germany\`) — **Wave 1** of
+  the workers'-rights country track, hanging off the anchor above (it does **not** re-tell the
+  anchor's German lesson — it cross-links it). 6 sections · 16 teaching lessons · 6 quizzes
+  (15-question banks, above the 10-question attempt cap) · 16 \`:::reveal\` self-checks. The payload
+  is a pair of numbers a US student misreads without help: union **density ~14.1% (2024, OECD/AIAS)**
+  vs **collective-bargaining coverage ~49% (2024)** — because coverage rides on **employer-association
+  membership** (TVG § 3(1)) and **not** on statutory extension (which Germany barely uses — that is
+  France). Co-determination taken apart with **information / consultation / co-determination** kept
+  strictly distinct (they are not synonyms): works councils under the **Betriebsverfassungsgesetz**,
+  the **Mitbestimmungsgesetz 1976** supervisory board — with the chair's **casting vote** (§ 29(2))
+  that makes "half the seats" overstate it — and the **Montan-Mitbestimmung of 1951**, which really
+  was parity. **No fairy tale:** Section 5 is the erosion (coverage down ~25 points in the West since
+  1998, **OT-Mitgliedschaft**, the east/west gap, ~40% of firms over 2,000 employees engineering out
+  of the parity board — incl. **Wirecard**), and Section 6 is the honest verdict — the natural-
+  experiment evidence that co-determination's measured effects are **modest** (Jäger, Schoefer &
+  Heining 2021, QJE; Jäger, Noy & Schoefer 2022, ILR Review), then the efficiency critique from the
+  right and the "golden cage" critique from the left. Cited to the German statutes themselves,
+  Destatis, IAB, OECD/AIAS, ETUI and the Hans-Böckler-Stiftung. Registered in \`seed-courses.ts\`;
+  **no migration** — \`pnpm seed:courses\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
