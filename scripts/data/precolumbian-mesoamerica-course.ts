@@ -384,5 +384,302 @@ A note on how this discovery should calibrate you for the rest of the course: Ag
         ],
       },
     },
+    // ────────────── SECTION 2 · TEOTIHUACAN: THE HUMILITY LESSON ──────────────
+    {
+      slug: "meso-teotihuacan-city",
+      title: "4 · Teotihuacan: a metropolis of apartments",
+      section: "Section 2 · Teotihuacan: the humility lesson",
+      body: `About 40 kilometers northeast of modern Mexico City lie the remains of a city that, at its height around 100-550 CE, was by most estimates **among the largest cities on Earth** — commonly put at 100,000 inhabitants or more, with some estimates running higher (Cowgill, 2015; Millon, 1973). We call it **Teotihuacan**. Keep the quotation marks in your head: as the next lesson explains, that is not its name.
+
+Its rise has a plausible push: around the turn of the era, the eruption of the Xitle volcano devastated Cuicuilco, the Basin of Mexico's other major center (the dating of the eruption is itself debated), and population concentrated at Teotihuacan on a scale Mesoamerica had never seen (Cowgill, 2015).
+
+What makes this city astonishing is not only size but **form**:
+
+- **It is planned.** The city is organized on a grid — nearly unique in pre-modern urbanism at this scale — oriented to a consistent axis a few degrees east of north, around a ceremonial spine later peoples called the **Avenue of the Dead**. Even the San Juan river was canalized to conform to the grid (Millon, 1973).
+- **The monuments are enormous.** The **Pyramid of the Sun**, roughly 65 meters high on a base of about 220 meters per side, is among the largest ancient structures in the Americas; the **Pyramid of the Moon** anchors the avenue's north end; the **Ciudadela** compound at the center encloses the **Feathered Serpent Pyramid**, its facade studded with sculpted serpent heads (Cowgill, 2015).
+- **Most of the population lived in apartment compounds.** From roughly 200 CE, the city rebuilt its housing stock into on the order of two thousand single-story, windowless-walled, multi-family masonry compounds — each with interior patios, drains, and plastered walls, very many of them painted with murals. Ordinary residents lived in solid, decorated, planned housing: an urban standard of living with few premodern parallels anywhere (Millon, 1973; Cowgill, 2015). Teotihuacan has been called a city of murals; its painting survives by the square meter where most Mesoamerican cities keep only fragments.
+- **It was multiethnic.** Excavated neighborhoods include a **Oaxaca barrio**, whose residents kept Zapotec-style tombs and funerary urns for generations, and a "**merchants' barrio**" rich in Gulf-coast and Maya-region ceramics. Isotope studies confirm migrants raised elsewhere lived and died in the city (Manzanilla, 2015). People moved to Teotihuacan the way people move to capitals.
+
+Its economic reach ran on **obsidian**, among other goods: the city controlled the green-gold obsidian of the Pachuca source, and its workshops supplied blades and cores that turn up across Mesoamerica (Cowgill, 2015). Teotihuacan-style architecture, ceramics, and imagery appear from northern Mexico to the Maya lowlands — Section 3 will show its agents arriving, datably, at Tikal, a thousand kilometers away.
+
+One more feature must be stated plainly, because this course does not save the uncomfortable material for villains: **the Feathered Serpent Pyramid was dedicated with mass human sacrifice.** Excavations directed by Saburo Sugiyama and Rubén Cabrera found more than 200 individuals buried in and around its foundations — many young men with warrior regalia, hands positioned as if bound — apparently killed for the building's consecration around 200 CE (Sugiyama, 2005). Ritual killing in Mesoamerica is not an Aztec invention or a Spanish slander; it is archaeologically real, centuries before the Mexica existed. What it meant, at what scale it happened where and when, and how sources exaggerated it are questions this course takes up carefully in Section 4.
+
+:::reveal What made Teotihuacan's housing stock nearly unique in the premodern world? ||| From c. 200 CE most of the population lived in roughly two thousand planned, single-story masonry apartment compounds — multi-family, with patios, drains, plastered and very often mural-painted walls. Solid, decorated, planned housing for ordinary residents at metropolitan scale has few premodern parallels anywhere.
+
+## Sources
+- Cowgill, G. L. (2015). *Ancient Teotihuacan: Early urbanism in central Mexico*. Cambridge University Press.
+- Millon, R. (1973). *Urbanization at Teotihuacan, Mexico: Vol. 1. The Teotihuacan map*. University of Texas Press.
+- Sugiyama, S. (2005). *Human sacrifice, militarism, and rulership: Materialization of state ideology at the Feathered Serpent Pyramid, Teotihuacan*. Cambridge University Press.
+- Manzanilla, L. R. (2015). Cooperation and tensions in multiethnic corporate societies using Teotihuacan, central Mexico, as a case study. *PNAS, 112*(30), 9210-9215.`,
+      recallContent: [
+        {
+          prompt: "Give Teotihuacan's scale claims the way the course hedges them: population, rank, and the headline monuments.",
+          answer:
+            "At its height (c. 100-550 CE) commonly estimated at 100,000+ inhabitants, by most estimates among the largest cities on Earth at the time. Pyramid of the Sun (~65 m high, ~220 m base), Pyramid of the Moon, and the Feathered Serpent Pyramid inside the Ciudadela, all on the gridded Avenue of the Dead axis.",
+        },
+        {
+          prompt: "What is the evidence that Teotihuacan was multiethnic?",
+          answer:
+            "Excavated neighborhoods: the Oaxaca barrio with generations of Zapotec-style tombs and urns, and a merchants' barrio rich in Gulf-coast and Maya-region ceramics — plus isotope studies (Manzanilla, 2015) showing residents raised elsewhere lived and died in the city.",
+        },
+        {
+          prompt: "What did the Feathered Serpent Pyramid excavations find, and why does the course put it here rather than saving it for the Aztecs?",
+          answer:
+            "More than 200 sacrificed individuals — many young men in warrior regalia, hands as if bound — dedicating the building c. 200 CE (Sugiyama & Cabrera excavations). It shows ritual killing is archaeologically real centuries before the Mexica: not an Aztec invention, not a Spanish slander.",
+        },
+      ],
+    },
+    {
+      slug: "meso-teotihuacan-unknowns",
+      title: "5 · What we don't know about Teotihuacan (the humility lesson)",
+      section: "Section 2 · Teotihuacan: the humility lesson",
+      body: `Here is the sentence this whole course pivots on: **one of the largest cities on the planet ran for four centuries, projected power a thousand kilometers, housed its people better than most of the ancient world — and we do not know who its people were, what language they spoke, what they called their city, or who governed it.** Not "scholars quibble." *Unknown.*
+
+Take those one at a time, because the shape of each unknown is instructive.
+
+**The name.** "Teotihuacan" is **Nahuatl** — the language of the Aztecs, who rose to power some eight centuries *after* the city's fall and knew it only as awe-inspiring ruins. The name is usually translated along the lines of "the place where the gods were made" or "where one becomes a god" (the translation itself is debated). The Mexica wove the ruins into their own cosmology — in their central myth, the current era of the world, the Fifth Sun, begins with the gods gathering in darkness *at Teotihuacan* — and their kings left offerings there. Every name on the site map (Avenue of the Dead, Pyramid of the Sun, Pyramid of the Moon) is likewise a later label. The builders' own name for their city: unknown (Cowgill, 2015).
+
+**The language.** Proposals exist — Nahua, Totonac, Otomanguean and Mixe-Zoquean candidates have all been argued — but none has won. The deeper problem: Teotihuacan, unlike the Maya cities in Section 3, left **no long texts we can read**. There are painted and carved signs, and scholars debate whether they constitute a writing system, a notation, or an emblem code; whatever they are, no Rosetta Stone pairs them with a known language (Cowgill, 2015). Compare the Maya, whose script's decipherment (Section 7) turned anonymous ruins into named kings with dated biographies. Writing that can be read gives a civilization a voice; its absence leaves even a superpower anonymous.
+
+**The government.** Maya cities blanket themselves in ruler portraits with name-glyphs and accession dates. Teotihuacan — a vastly bigger polity — has yielded **no securely identified image or tomb of any named ruler**. Some scholars posit powerful kings whose portraiture conventions we fail to recognize; others, notably René Millon and later Linda Manzanilla, argue for something rarer — collective or corporate governance, perhaps rule by councils of lineage or district heads (Manzanilla, 2015; Cowgill, 2015). *Contested; unresolved.* Sit with how remarkable that is: for one of antiquity's great cities we cannot answer "monarchy or not?"
+
+**What we do know is how far its hand reached.** In the Maya inscriptions — readable, dated — a figure named **Sihyaj K'ahk'** ("Fire Is Born") arrives at the city of Tikal in **January 378 CE**; on the same date, Tikal's reigning king "entered the water" (died); a new king, son of a figure whose glyph-name is read "Spearthrower Owl" and whose iconography is strongly Teotihuacan-flavored, is installed shortly after. David Stuart's reading of these texts — that this records a Teotihuacan-connected intervention, an *entrada*, that replaced Tikal's dynasty — is now the mainstream account, with the usual debates about how direct Teotihuacan's control was (Stuart, 2000; Martin & Grube, 2008). Note the epistemological irony: the clearest dated political event in Teotihuacan's history is known **only because the Maya wrote it down**.
+
+**The fall is a genuine whodunit.** Around the mid-500s CE (dates cited run c. 550-650), the ceremonial core along the Avenue of the Dead was **burned** — selectively: temples, pyramids, and elite structures torched, sculptures smashed and scattered, while most apartment compounds show no such destruction. That pattern reads less like foreign sacking than like targeted destruction of the symbols of authority — an uprising? a civil conflict? — but external attack, drought stress, and combinations remain argued; the city's population dispersed over the following decades, though the area was never wholly abandoned (Cowgill, 2015). *Cause: contested.*
+
+Why does this course give a whole lesson to ignorance? Because **calibrated ignorance is a skill** — the one that separates history from mythology. The honest sentence "we do not know who ruled Teotihuacan" is a *finding*, extracted by a century of excavation that eliminated easier answers. Pseudo-history abhors that vacuum: where knowledge is missing, aliens, Atlanteans, and secret races rush in. The discipline of saying "unknown — here is what would settle it" (a readable bilingual text; a royal tomb; a deciphered sign system) is exactly the discipline you will watch *succeed* in Section 7, when the Maya script cracks open and a silent civilization starts speaking. Teotihuacan is the control case: this is what history looks like when the writing never speaks.
+
+:::reveal Name the four basic facts about Teotihuacan that remain unknown, and the one clearly dated political event in its history — plus why we know that one. ||| Unknown: its people's identity/ethnicity, their language, the city's real name ("Teotihuacan" is later Nahuatl), and its form of government (no named-ruler image or tomb; kings vs. collective rule is contested). The dated event: the entrada of January 378 CE — Sihyaj K'ahk' arrives at Tikal, the king dies the same day, a Teotihuacan-linked dynasty is installed — known only because the literate Maya recorded it.
+
+## Sources
+- Cowgill, G. L. (2015). *Ancient Teotihuacan: Early urbanism in central Mexico*. Cambridge University Press.
+- Stuart, D. (2000). "The arrival of strangers": Teotihuacan and Tollan in Classic Maya history. In D. Carrasco, L. Jones, & S. Sessions (Eds.), *Mesoamerica's classic heritage: From Teotihuacan to the Aztecs* (pp. 465-513). University Press of Colorado.
+- Martin, S., & Grube, N. (2008). *Chronicle of the Maya kings and queens: Deciphering the dynasties of the ancient Maya* (2nd ed.). Thames & Hudson.
+- Manzanilla, L. R. (2015). Cooperation and tensions in multiethnic corporate societies using Teotihuacan, central Mexico, as a case study. *PNAS, 112*(30), 9210-9215.
+- Sahagún, B. de. (1950-1982). *Florentine Codex: General history of the things of New Spain* (A. J. O. Anderson & C. E. Dibble, Trans.; Books 1-12). School of American Research / University of Utah. (Original work compiled c. 1545-1590; Book 7 carries the Fifth Sun narrative located at Teotihuacan)`,
+      recallContent: [
+        {
+          prompt: "What does the name 'Teotihuacan' actually tell us, and what doesn't it?",
+          answer:
+            "It tells us what the Aztecs — arriving eight centuries after the fall — thought of the ruins: Nahuatl for roughly 'where the gods were made'/'where one becomes a god' (translation debated); their Fifth Sun creation story is set there. It tells us nothing about the builders: their name for the city is unknown, as are all the monument names on the map.",
+        },
+        {
+          prompt: "Describe the burn pattern of Teotihuacan's fall and why it matters for the 'whodunit.'",
+          answer:
+            "Around the mid-500s CE (cited range c. 550-650), the destruction is selective: temples and elite structures along the Avenue of the Dead burned and sculptures smashed, while most apartment compounds are untouched. That pattern suggests targeted destruction of symbols of authority (uprising/civil conflict) more than foreign sacking — but the cause remains contested.",
+        },
+        {
+          prompt: "Why does the course call calibrated ignorance a skill?",
+          answer:
+            "Because 'unknown' is itself a finding earned by eliminating easier answers, and stating it honestly — with what evidence would settle it — is what separates history from mythology. Pseudo-history fills such vacuums with aliens and lost races; Teotihuacan is the control case for what happens when writing never speaks.",
+        },
+      ],
+    },
+    {
+      slug: "meso-quiz-2",
+      title: "Section 2 quiz · Teotihuacan",
+      section: "Section 2 · Teotihuacan: the humility lesson",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How does the course state Teotihuacan's peak population — and why that phrasing?",
+            options: [
+              "Commonly estimated at 100,000 or more, among the largest cities on Earth at the time — a hedged range, because the figures are estimates, not censuses",
+              "Exactly 250,000, per the city's own records",
+              "About 5,000 — it was a ceremonial center, not a city",
+              "Unknown to the nearest million",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Population figures come from mapped residential area and density assumptions (Millon 1973; Cowgill 2015). The course's method: ranges and attribution, not false precision.",
+            sourceLessonSlug: "meso-teotihuacan-city",
+          },
+          {
+            prompt: "Which feature of Teotihuacan's urban form was nearly unique at its scale in the premodern world?",
+            options: [
+              "A planned grid city where most residents lived in ~2,000 masonry apartment compounds, very many painted with murals",
+              "Stone skyscrapers of ten stories",
+              "A defensive wall circuit twenty kilometers long",
+              "Suburbs connected by canals with locks",
+            ],
+            correctIndex: 0,
+            explanation:
+              "From c. 200 CE the housing stock was rebuilt into planned multi-family compounds with patios, drains, and plastered, painted walls — an urban standard of living for ordinary residents with few ancient parallels.",
+            sourceLessonSlug: "meso-teotihuacan-city",
+          },
+          {
+            prompt: "What event plausibly fed Teotihuacan's early growth?",
+            options: [
+              "The Xitle eruption devastating rival Cuicuilco around the turn of the era (eruption dating itself debated), concentrating the Basin's population",
+              "The fall of the Olmec heartland",
+              "A gold rush in the Basin of Mexico",
+              "The arrival of Cortés",
+            ],
+            correctIndex: 0,
+            explanation:
+              "With Cuicuilco crippled, Teotihuacan absorbed population on an unprecedented scale (Cowgill, 2015).",
+            sourceLessonSlug: "meso-teotihuacan-city",
+          },
+          {
+            prompt: "The evidence for Teotihuacan as a multiethnic city includes…",
+            options: [
+              "a Oaxaca barrio with Zapotec-style tombs, a merchants' barrio with Gulf and Maya ceramics, and isotope studies showing migrants raised elsewhere",
+              "a census carved on the Pyramid of the Sun",
+              "Spanish colonial tax rolls",
+              "nothing — the claim is speculative",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Whole neighborhoods kept foreign burial customs for generations, and bone chemistry (Manzanilla, 2015) confirms in-migration. People moved to Teotihuacan the way people move to capitals.",
+            sourceLessonSlug: "meso-teotihuacan-city",
+          },
+          {
+            prompt: "What did Sugiyama and Cabrera's excavations at the Feathered Serpent Pyramid establish?",
+            options: [
+              "A dedicatory mass sacrifice of more than 200 individuals c. 200 CE — ritual killing centuries before the Aztecs existed",
+              "That the pyramid was a tomb for a named king",
+              "That no sacrifice ever occurred at Teotihuacan",
+              "That the victims were Spanish prisoners",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Many were young men with warrior regalia, hands positioned as if bound (Sugiyama, 2005). The course states it plainly: sacrifice is archaeologically real and is not an Aztec invention or Spanish slander.",
+            sourceLessonSlug: "meso-teotihuacan-city",
+          },
+          {
+            prompt: "The city's economic reach is traced in part through…",
+            options: [
+              "green Pachuca obsidian, worked in city workshops and distributed across Mesoamerica",
+              "silver coinage stamped with the city's emblem",
+              "iron ingots from state foundries",
+              "wheat exports to the Maya lowlands",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Teotihuacan controlled the Pachuca source; its blades and cores — plus its architectural style and imagery — appear from northern Mexico to the Maya area.",
+            sourceLessonSlug: "meso-teotihuacan-city",
+          },
+          {
+            prompt: "Who named 'Teotihuacan,' and when?",
+            options: [
+              "The Aztecs (in Nahuatl), roughly eight centuries after the city's fall, when they knew it as ruins",
+              "The city's own founders, in their records",
+              "The Spanish, in 1521",
+              "Archaeologists, in 1905",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The name — translated along the lines of 'where the gods were made' (translation debated) — and every monument label on the map are later Nahuatl. The builders' own name for the city is unknown.",
+            sourceLessonSlug: "meso-teotihuacan-unknowns",
+          },
+          {
+            prompt: "What is the state of knowledge about Teotihuacan's language?",
+            options: [
+              "Unknown — Nahua, Totonac, and other candidates are argued, but the city left no long readable texts, and its signs may or may not be writing",
+              "Proven to be an early form of Nahuatl",
+              "Proven to be Zapotec",
+              "Deciphered in 1952 from a bilingual stone",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No Rosetta-equivalent exists; scholars debate whether the painted/carved signs are script, notation, or emblem code (Cowgill, 2015).",
+            sourceLessonSlug: "meso-teotihuacan-unknowns",
+          },
+          {
+            prompt: "How does Teotihuacan's rulership record compare with the Maya cities'?",
+            options: [
+              "Maya cities blanket themselves in named, dated ruler portraits; Teotihuacan has yielded no securely identified image or tomb of any named ruler",
+              "Both are equally rich in royal portraits",
+              "Teotihuacan's king list is complete; the Maya kept none",
+              "Neither region ever depicted rulers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Hence the live debate: unrecognized kings vs. collective/corporate governance (Millon; Manzanilla). For one of antiquity's great cities, 'monarchy or not?' is unanswered.",
+            sourceLessonSlug: "meso-teotihuacan-unknowns",
+          },
+          {
+            prompt: "What happened at Tikal in January 378 CE, per the Maya inscriptions as read by Stuart?",
+            options: [
+              "Sihyaj K'ahk' ('Fire Is Born') arrived; Tikal's king died the same day; a new dynasty tied to Teotihuacan-flavored 'Spearthrower Owl' was installed — the entrada",
+              "Tikal conquered Teotihuacan",
+              "The city was abandoned to drought",
+              "The first Long Count date was carved",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Stuart (2000) read the entrada texts; the Teotihuacan-connected intervention is now the mainstream account (with debate about how direct the control was).",
+            sourceLessonSlug: "meso-teotihuacan-unknowns",
+          },
+          {
+            prompt: "What is the 'epistemological irony' of the 378 entrada?",
+            options: [
+              "The clearest dated political event in Teotihuacan's history is known only because the literate Maya wrote it down",
+              "It happened on a leap day",
+              "Teotihuacan recorded it but the Maya did not",
+              "It was discovered by accident",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Teotihuacan's own signs can't be read; readable Maya glyphs supply Teotihuacan's political biography — the lesson's point about writing giving a civilization a voice.",
+            sourceLessonSlug: "meso-teotihuacan-unknowns",
+          },
+          {
+            prompt: "What does the burn pattern at Teotihuacan's fall look like?",
+            options: [
+              "Selective: temples and elite structures along the Avenue of the Dead burned and sculptures smashed, while most apartment compounds show no destruction",
+              "Total: every structure in the city leveled",
+              "There is no evidence of burning at all",
+              "Only the apartment compounds burned",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That selectivity is why targeted destruction of the symbols of authority (uprising/civil conflict) is argued — though external attack and drought stress remain in play. Cause: contested.",
+            sourceLessonSlug: "meso-teotihuacan-unknowns",
+          },
+          {
+            prompt: "When did Teotihuacan's ceremonial core burn?",
+            options: [
+              "Around the mid-500s CE, with cited dates running c. 550-650",
+              "Exactly 476 CE",
+              "In 1521, during the Spanish siege",
+              "Around 100 BCE, before the city's rise",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course gives the range rather than a false-precision year; the population dispersed over decades and the area was never wholly abandoned.",
+            sourceLessonSlug: "meso-teotihuacan-unknowns",
+          },
+          {
+            prompt: "Why does the course devote a full lesson to what is NOT known about Teotihuacan?",
+            options: [
+              "Because calibrated ignorance is a skill: 'unknown' is a finding earned by excavation, and stating it honestly is what blocks aliens-and-Atlantis pseudo-history",
+              "Because nothing at all is known about the city",
+              "To discourage students from studying it",
+              "Because the unknowns will never be resolved",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pseudo-history rushes into vacuums. The honest 'unknown — and here is what would settle it' is the discipline that Section 7's decipherment story shows succeeding.",
+            sourceLessonSlug: "meso-teotihuacan-unknowns",
+          },
+          {
+            prompt: "How did the Aztecs relate to Teotihuacan's ruins?",
+            options: [
+              "With reverence: they named the site in Nahuatl, set their Fifth Sun creation story there, and their kings left offerings",
+              "They demolished them for building stone and left nothing",
+              "They never knew the ruins existed",
+              "They rebuilt the city and lived in it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Eight centuries after the fall, the Mexica treated the city as the place 'where the gods were made' — which is why our map labels are Aztec, not Teotihuacano.",
+            sourceLessonSlug: "meso-teotihuacan-unknowns",
+          },
+        ],
+      },
+    },
   ],
 };
