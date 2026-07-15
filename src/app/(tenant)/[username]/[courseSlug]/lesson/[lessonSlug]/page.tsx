@@ -117,8 +117,11 @@ export default async function LessonPage({ params }: Params) {
 
   return (
     <div>
-      {/* Sticky progress header — course context + position always visible. */}
-      <div className="sticky top-0 z-10 border-b border-neutral-200 bg-white/90 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/90">
+      {/* Sticky progress header — course context + position always visible. Offsets by the
+          sticky site header's height (--site-header-h, measured by StickyHeader) so the two
+          bars STACK — site nav on top, progress bar under it — instead of fighting for top-0.
+          z-10 keeps it under the z-40 header, so the header's dropdowns open over it. */}
+      <div className="sticky top-(--site-header-h) z-10 border-b border-neutral-200 bg-white/90 backdrop-blur dark:border-neutral-800 dark:bg-neutral-950/90">
         <div className="mx-auto max-w-6xl px-4 py-3">
           <div className="flex items-center justify-between gap-3 text-sm">
             <Link href={base} className="flex min-w-0 items-center gap-2 font-medium text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100">

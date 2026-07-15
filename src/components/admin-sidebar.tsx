@@ -57,9 +57,11 @@ export function AdminSidebar({ items, heading }: { items: AdminNavItem[]; headin
         <div className="mb-4 rounded-lg border border-neutral-200 p-2 md:hidden dark:border-neutral-800">{nav}</div>
       ) : null}
 
-      {/* Desktop rail — pt-10 matches each page's own py-10 so the rail top-aligns with content. */}
+      {/* Desktop rail — pt-10 matches each page's own py-10 so the rail top-aligns with content.
+          The sticky offset clears the now-sticky site header (top-6 alone would pin the rail's
+          first links underneath it). */}
       <aside className="hidden w-56 shrink-0 pt-10 md:block">
-        <div className="sticky top-6">
+        <div className="sticky top-[calc(var(--site-header-h)+1.5rem)]">
           <p className="px-3 pb-2 text-xs font-semibold uppercase tracking-wide text-neutral-400">{heading}</p>
           {nav}
         </div>
