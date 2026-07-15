@@ -89,7 +89,7 @@ export default async function FutureWorkPage() {
         }}
       />
 
-      {KINDS.map(({ kind, title, blurb }) => {
+      {KINDS.map(({ kind, title, blurb }, kindIdx) => {
         const groups = futureWorkGroups(kind);
         return (
           <section key={kind} className="mt-10">
@@ -102,12 +102,25 @@ export default async function FutureWorkPage() {
               </p>
             ) : null}
 
-            {groups.map((group) => (
-              <div key={group.title} className="mt-6">
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
-                  {group.title}{" "}
-                  <span className="font-normal normal-case">({group.items.length})</span>
-                </h3>
+            {/* Each group is a native <details> (the same house pattern as a course page's
+                Sections), so 40+ proposals collapse to a screenful of headings with counts.
+                Only the very first group on the page starts open — it's the 1-item "She Did
+                the Work" overview; opening the 29-subject research group by default would
+                recreate the exact scroll this collapse exists to kill. Native <details> also
+                keeps the saved-offline copy working with zero extra JS. NOT `group`-classed:
+                the item cards inside use bare `group-open:` for their proposal toggles, and an
+                open ancestor carrying `.group` would flip every card's label. */}
+            {groups.map((group, groupIdx) => (
+              <details key={group.title} open={kindIdx === 0 && groupIdx === 0} className="group/fw mt-6">
+                <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 rounded-md text-sm font-semibold uppercase tracking-wide text-neutral-500 focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12">
+                  <span aria-hidden className="text-xs transition-transform group-open/fw:rotate-90">
+                    ▸
+                  </span>
+                  <h3 className="min-w-0 flex-1 wrap-break-word">
+                    {group.title}{" "}
+                    <span className="font-normal normal-case">({group.items.length})</span>
+                  </h3>
+                </summary>
 
                 <ul className="mt-3 space-y-4">
                   {group.items.map((item) => {
@@ -159,7 +172,7 @@ export default async function FutureWorkPage() {
                     );
                   })}
                 </ul>
-              </div>
+              </details>
             ))}
           </section>
         );
