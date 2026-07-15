@@ -916,5 +916,283 @@ So the sixteen months were exhilarating and precarious at the same time: a genui
         ],
       },
     },
+
+    // ────────────── SECTION 4 · 1989 ──────────────
+    {
+      slug: "poland-round-table",
+      title: "8 · 1989: a union negotiates a state out of existence",
+      section: "Section 4 · 1989 — the union at the table",
+      body: `By the late 1980s the Polish state was **exhausted and broke.** The economy that martial law was supposed to stabilise had not recovered; foreign debt was crushing; and a fresh **wave of strikes in 1988** — this time led partly by a younger generation — showed that repression had bought time, not peace. The regime faced a choice it had spent a decade avoiding: keep suppressing a movement it could not kill, or **talk to it.** It chose to talk. That decision is the most remarkable thing about Poland's transition, and Solidarność's role in it is why this course exists.
+
+**The Round Table.** From **6 February to 5 April 1989**, the government sat across an actual round table from the still-technically-illegal Solidarność — the union it had banned seven years earlier — and negotiated the terms of sharing power. Think about how strange that is: the state's designated negotiating partner for the future of the country was **a trade union.** Not an army, not a rival party, not a foreign power. A union of workers was the institution with enough legitimacy and organisation to speak for the society against the state.
+
+**The deal.** The Round Table produced two headline outcomes:
+
+1. **Solidarność was relegalised** — allowed to exist and organise again.
+2. **Partly-free elections** were scheduled. The compromise was carefully rigged in the Party's favour: in the lower house (the **Sejm**), only **35% of the seats** would be openly contested — the Party and its allies reserved the other 65% for themselves. But a brand-new upper house, the **Senate**, would be **entirely freely elected.** The Party expected to manage the outcome.
+
+**The election, 4 June 1989.** It did not go as the Party expected. Voting for Solidarity's Citizens' Committee candidates, Poles delivered a landslide so total it broke the arrangement: Solidarność won **every single one** of the 35% of Sejm seats it was allowed to contest, and **99 of the 100 seats** in the freely-elected Senate. The communist candidates, even running unopposed on the reserved list, were humiliated when voters crossed their names off. The "managed" election had become a **referendum on communist rule, and communism lost.**
+
+**What followed came fast.** The rigged arithmetic could not hold against a result that lopsided. In **August 1989**, **Tadeusz Mazowiecki**, a Solidarity adviser, became **prime minister — the first non-communist head of government in the Soviet bloc** in over four decades. Within months the other communist states of Central and Eastern Europe fell in turn; the Berlin Wall opened in November 1989. In **December 1990**, Lech Wałęsa — the electrician who had climbed the shipyard wall — was elected **President of Poland** in a fully free vote.
+
+**Now say clearly what just happened, in the vocabulary of this course.** A **trade union** was the primary vehicle that negotiated a communist state out of power and formed the government that replaced it. That is Question 1 — "who may organise?" — resolved at the scale of an entire nation. **No other course in this track can show you that.** In Germany a union wins a seat on a board; in the Nordics it runs the unemployment fund; in Mexico it can be a tool of the boss. In Poland, for one extraordinary stretch, the union *was* the opposition, and then it *was* the state.
+
+And that, precisely, is where its troubles began. Winning the country turned out to be the easy part. Lesson 9 is the bill.
+
+:::reveal In 1989 the Polish communist government needed a negotiating partner to arrange a transition. Why is it so striking that the partner was a trade union? ||| Because in most transitions the state bargains with an army, a rival party, or a foreign power. In Poland the institution with enough legitimacy and organisation to speak for the whole society against the state was a *union of workers* — Solidarność. It negotiated partly-free elections at the Round Table, won them in a landslide on 4 June 1989, and formed the first non-communist government in the Soviet bloc. A trade union was the primary vehicle of a national political revolution — which no other country in this track can show.
+
+## Sources
+- European Solidarity Centre. (n.d.). *How did Solidarność (Solidarity) come to be?* https://ecs.gda.pl/en/how-did-solidarnosc-solidarity-come-to-be/
+- Encyclopædia Britannica. (n.d.). *Solidarity (Polish trade union)*. https://www.britannica.com/topic/Solidarity
+- Chancellery of the President of the Republic of Poland. (n.d.). *1989 — Freedom Day*. https://www.president.pl/archives/bronislaw-komorowski/freedom-day/1989`,
+      recallContent: [
+        {
+          prompt: "What did the Round Table (6 Feb–5 Apr 1989) and the 4 June 1989 election produce?",
+          answer:
+            "The Round Table relegalised Solidarność and scheduled partly-free elections (35% of the Sejm contestable; the Senate fully free). On 4 June 1989 Solidarity won every contestable Sejm seat and 99 of 100 Senate seats — a landslide that became a referendum communism lost, leading to Mazowiecki as the bloc's first non-communist PM in August 1989.",
+        },
+        {
+          prompt: "In the vocabulary of the four questions, what did Poland 1989 resolve?",
+          answer:
+            "Question 1 — 'who may organise?' — resolved at national scale. A trade union was the primary vehicle that negotiated a communist state out of power and formed the government that replaced it. No other course in the track shows a union as the engine of a national political revolution.",
+        },
+      ],
+    },
+    {
+      slug: "poland-shock-therapy",
+      title: "9 · What winning cost: shock therapy",
+      section: "Section 4 · 1989 — the union at the table",
+      body: `Here is the turn that makes Poland the most honest course in the track. **The union won the country — and then the government the union formed did something to Polish workers that no communist government had dared.**
+
+The Mazowiecki government inherited an economy in freefall: hyperinflation, empty shelves, a worthless currency, unpayable debt. Its finance minister, **Leszek Balcerowicz**, chose the most radical possible cure — a package of reforms, passed at the end of 1989 and in force from **1 January 1990**, that came to be called the **Balcerowicz Plan**, or more bluntly, **"shock therapy."** In one stroke it **freed prices, cut subsidies, tightened money and credit, and opened the economy to the market and to competition.** The logic was that a slow transition would fail, so the pain should be taken all at once.
+
+**It worked, in the way its designers meant.** Hyperinflation was broken; the shelves filled; after a deep initial slump the economy began, from the mid-1990s, a long run of growth that eventually made Poland one of the transition's success stories. Economists still argue about whether a gentler path was possible, but few dispute that the plan stabilised a collapsing economy.
+
+**And here is the cost, and why you must not skip it.** Shock therapy fell hardest on exactly the people who had built Solidarność — the industrial workers of the state factories, mines and shipyards. When subsidies ended and firms faced real competition overnight, the great state enterprises that had been the union's heartland began to shrink and close. **Unemployment, which communism had officially reported as zero, went from essentially nothing to 6.5% within 1990 and to 16.4% by 1993** (Statistics Poland). For the first time in living memory, millions of Polish workers could lose their jobs — and the government presiding over it was **their** government, staffed by **their** movement's advisers.
+
+**Read that as the mechanism it is, not just an irony.** The very shipyard that produced Solidarność — the Gdańsk yard — faced restructuring and decline in the years after the movement it birthed took power. A union that had promised workers dignity and security found itself, in office, administering insecurity to them. Many members felt betrayed, and the movement began to **fracture**: the moral authority of "Solidarity" splintered into competing camps almost immediately, in a 1990 feud between the Wałęsa and Mazowiecki wings that Poles called the **"war at the top"** (*wojna na górze*).
+
+**This is the deepest lesson in the course, so let it sit.** It is possible for a union to win the largest political victory a union has ever won and, by that very victory, be placed in the position of hurting the workers it represents. Solidarność was not corrupt and it was not stupid; it faced a genuinely broken economy with no painless options. But **the workplace and the country are different battlefields, and winning one can cost you the other.** Poland won its freedom and, in the same decade, began losing the dense, organised, bargaining labour movement that had delivered it. Section 5 counts what was lost.
+
+:::reveal Solidarność won the country in 1989. Why is the "shock therapy" that followed the most uncomfortable — and most important — part of the whole story? ||| Because the government the union formed adopted the Balcerowicz Plan (in force 1 January 1990), which freed prices and cut subsidies overnight — and the pain fell hardest on the industrial workers who had built Solidarność. Unemployment went from an official zero to 16.4% by 1993 (GUS) as the state factories and shipyards shrank. A union that promised workers security found itself, in office, administering insecurity to them. Winning the country and holding the workplace turned out to be different battles — and Poland shows you can win one and lose the other.
+
+## Sources
+- Statistics Poland (GUS). (n.d.). *Registered unemployment rate 1990–2025*. https://stat.gov.pl/en/topics/labour-market/registered-unemployment/unemployment-rate-1990-2025,3,1.html
+- Encyclopædia Britannica. (n.d.). *Leszek Balcerowicz* / *Poland: Economy after 1989*. https://www.britannica.com/biography/Leszek-Balcerowicz
+- Eurofound. (2002). *The dynamics of unemployment 1990–2002*. https://www.eurofound.europa.eu/en/resources/article/2002/dynamics-unemployment-1990-2002`,
+      recallContent: [
+        {
+          prompt: "What was the Balcerowicz Plan, and when did it take effect?",
+          answer:
+            "The 'shock therapy' package (in force 1 January 1990) that freed prices, cut subsidies, tightened money, and opened Poland's economy to the market all at once. It broke hyperinflation and eventually restored growth, but caused a deep transitional recession.",
+        },
+        {
+          prompt: "How did shock therapy affect the workers who had built Solidarność, and what does that teach?",
+          answer:
+            "It fell hardest on the industrial workers of the state factories, mines and shipyards, as those enterprises shrank and closed; unemployment rose from an official zero to 16.4% by 1993 (GUS). The union's own government administered insecurity to its own base — teaching that winning the country and holding the workplace are different battles.",
+        },
+      ],
+    },
+    {
+      slug: "poland-quiz-4",
+      title: "Section 4 quiz · 1989 and its price",
+      section: "Section 4 · 1989 — the union at the table",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why did the Polish regime agree to negotiate with Solidarność in 1989?",
+            options: [
+              "It had defeated the union and wanted to celebrate",
+              "The economy was exhausted and broke, and a 1988 strike wave showed repression had bought time, not peace",
+              "The Soviet Union ordered it to hand over power",
+              "The union had won an election already",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A decade of repression had not killed the movement, and the state could no longer afford the stalemate. So it chose to talk.",
+            sourceLessonSlug: "poland-round-table",
+          },
+          {
+            prompt: "Who was the communist state's negotiating partner at the 1989 Round Table?",
+            options: [
+              "A foreign government",
+              "The still-technically-illegal trade union Solidarność",
+              "The army",
+              "The Catholic Church alone",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The institution with enough legitimacy and organisation to speak for society against the state was a union of workers — which is the whole point of the course.",
+            sourceLessonSlug: "poland-round-table",
+          },
+          {
+            prompt: "How were the June 1989 elections deliberately limited in the Party's favour?",
+            options: [
+              "Only men could vote",
+              "Only 35% of the Sejm's seats were openly contested; the Party reserved 65% for itself (though the new Senate was fully free)",
+              "Solidarność candidates were banned",
+              "The results were secret",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The compromise was rigged so the Party expected to keep control — an expectation the voters demolished.",
+            sourceLessonSlug: "poland-round-table",
+          },
+          {
+            prompt: "What was the result of the 4 June 1989 election?",
+            options: [
+              "The communists won comfortably",
+              "Solidarity won every contestable Sejm seat and 99 of 100 Senate seats — a landslide that became a referendum communism lost",
+              "A narrow Solidarity win in one region",
+              "The election was cancelled",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Even unopposed communist candidates were crossed off ballots. The 'managed' election turned into a verdict on the regime.",
+            sourceLessonSlug: "poland-round-table",
+          },
+          {
+            prompt: "Who became prime minister in August 1989, and why was it historic?",
+            options: [
+              "Wojciech Jaruzelski — he kept power",
+              "Tadeusz Mazowiecki — the first non-communist head of government in the Soviet bloc in over four decades",
+              "Leszek Balcerowicz — the first union president",
+              "Lech Wałęsa — immediately after the election",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A Solidarity adviser became PM, and within months the other communist states of the region fell in turn.",
+            sourceLessonSlug: "poland-round-table",
+          },
+          {
+            prompt: "In the vocabulary of the four questions, what did Poland 1989 uniquely demonstrate?",
+            options: [
+              "That unions should stay out of politics",
+              "That a trade union could be the primary vehicle that negotiates a state out of power and forms the next government — Question 1 at national scale",
+              "That co-determination works",
+              "That the Ghent system raises density",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No other course in the track shows a union as the engine of a national political revolution. That is why Poland earns its slot.",
+            sourceLessonSlug: "poland-round-table",
+          },
+          {
+            prompt: "What was the 'Balcerowicz Plan'?",
+            options: [
+              "A plan to nationalise all industry",
+              "The 'shock therapy' package (in force 1 January 1990) that freed prices, cut subsidies, tightened money and opened the economy all at once",
+              "A Soviet aid programme",
+              "A plan to ban private business",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Radical, all-at-once market reform, on the theory that a slow transition would fail. It broke hyperinflation but caused a deep slump.",
+            sourceLessonSlug: "poland-shock-therapy",
+          },
+          {
+            prompt: "How did registered unemployment change in Poland after 1989 (GUS)?",
+            options: [
+              "It stayed at zero",
+              "It rose from an official zero to 6.5% within 1990 and to 16.4% by 1993",
+              "It fell steadily",
+              "It reached 50%",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Communism had reported zero unemployment; shock therapy made mass joblessness real as state enterprises shrank and closed.",
+            sourceLessonSlug: "poland-shock-therapy",
+          },
+          {
+            prompt: "Why is the shock-therapy chapter the 'most uncomfortable' part of the Poland story?",
+            options: [
+              "Because the union refused to govern",
+              "Because the government the union formed imposed reforms whose pain fell hardest on the industrial workers who had built Solidarność",
+              "Because the reforms failed completely",
+              "Because foreign powers imposed the plan",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A union that promised workers security found itself, in office, administering insecurity to its own base. That is the honest core of the course.",
+            sourceLessonSlug: "poland-shock-therapy",
+          },
+          {
+            prompt: "What does the course mean by 'the workplace and the country are different battlefields'?",
+            options: [
+              "Unions should never enter politics",
+              "Winning national political power (the country) and maintaining a dense, organised bargaining movement (the workplace) are separate achievements — and winning one can cost you the other",
+              "Factories and parliaments are in different cities",
+              "Strikes are illegal in Poland",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Poland won its freedom and, in the same decade, began losing the organised labour movement that delivered it. That is the deepest lesson here.",
+            sourceLessonSlug: "poland-shock-therapy",
+          },
+          {
+            prompt: "What was the 'war at the top' (wojna na górze)?",
+            options: [
+              "A Soviet invasion",
+              "A 1990 feud between the Wałęsa and Mazowiecki wings, as the moral authority of 'Solidarity' fractured into competing camps",
+              "A miners' strike",
+              "A dispute with the Catholic Church",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The unified movement splintered almost as soon as it took power — an early sign of the fragmentation Section 5 examines.",
+            sourceLessonSlug: "poland-shock-therapy",
+          },
+          {
+            prompt: "Did shock therapy ultimately 'work,' by its designers' measure?",
+            options: [
+              "No — hyperinflation continued forever",
+              "Broadly yes — it broke hyperinflation and Poland later became a growth success story, though economists still debate whether a gentler path was possible and the transitional pain was severe",
+              "It was never actually implemented",
+              "It made Poland the poorest country in Europe",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The course is honest both ways: the plan stabilised a collapsing economy AND it inflicted real, concentrated harm on the union's own base.",
+            sourceLessonSlug: "poland-shock-therapy",
+          },
+          {
+            prompt: "When was Lech Wałęsa elected President of Poland?",
+            options: ["December 1990", "June 1989", "August 1980", "1983"],
+            correctIndex: 0,
+            explanation:
+              "The electrician who climbed the shipyard wall in 1980 was elected head of state in a fully free vote in December 1990.",
+            sourceLessonSlug: "poland-round-table",
+          },
+          {
+            prompt: "Which enterprise — the very birthplace of Solidarność — faced restructuring and decline after the movement took power?",
+            options: [
+              "The Gdańsk shipyard",
+              "A German car plant",
+              "A Warsaw bank",
+              "The Wieliczka salt mine",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The yard that produced the movement faced the same market forces the movement's government unleashed — a vivid image of winning the country and losing the workplace.",
+            sourceLessonSlug: "poland-shock-therapy",
+          },
+          {
+            prompt: "Why does the course stress that Solidarność 'was not corrupt and was not stupid' about shock therapy?",
+            options: [
+              "To excuse the union of any responsibility",
+              "To make clear the harm came not from bad faith but from a genuinely broken economy with no painless options — the tragedy is structural, not a moral failing",
+              "Because the union opposed the plan entirely",
+              "Because the plan was secretly designed by Moscow",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The point is not to blame the union but to show that even good actors can be trapped: the workplace and the country are different battlefields.",
+            sourceLessonSlug: "poland-shock-therapy",
+          },
+        ],
+      },
+    },
   ],
 };
