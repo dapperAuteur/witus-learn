@@ -1018,5 +1018,354 @@ Last thing, because it is the point of the lesson: notice that **"specific and d
         ],
       },
     },
+    // ────────────── SECTION 4 · THE MEXICA (AZTEC) ──────────────
+    {
+      slug: "meso-tenochtitlan",
+      title: "9 · Tenochtitlan: the city on the lake",
+      section: "Section 4 · The Mexica (Aztec) and the tribute empire",
+      body: `Names first, because the famous one is a latecomer. The people this section covers called themselves the **Mexica** (meh-SHEE-kah) — the name survives in "Mexico" — and, with allied lake peoples, spoke **Nahuatl**. "Aztec" derives from Aztlan, the legendary homeland of their migration story, and was popularized as an ethnic label mainly by writers of the nineteenth century; it is standard, and this course uses it, but "Mexica" is the more precise word for the people of Tenochtitlan (Smith, 2012).
+
+The Mexica were **late arrivals** — in their own annals, the last of the Nahua migrant groups to enter the crowded Basin of Mexico, reduced to serving older powers as mercenaries and squatting on land nobody wanted. The date their tradition gives for the founding of **Tenochtitlan** — on a marshy island in Lake Texcoco, at the sign of an eagle perched on a cactus (the image on the Mexican flag today) — is, traditionally, **1325 CE** (Smith, 2012). Treat the origin story as their own sacred history, not GPS-verified fact; treat what they built on that island over the next two centuries as one of the world's urban wonders, because that part is documented from every direction.
+
+By 1519, Tenochtitlan (with its twin city Tlatelolco) held a population **commonly estimated between about 150,000 and 200,000, with some estimates higher** — by most estimates larger than any city in Spain, and among the largest anywhere (Smith, 2012). The infrastructure that made a metropolis on a lake livable:
+
+- **Chinampas** — the misnamed "floating gardens" (they do not float): rectangular plots built up from lake mud and vegetation between grids of canals, anchored by willows, among the most productive farming systems ever engineered anywhere. Chinampa agriculture fed a large share of the city, with multiple harvests a year; a remnant survives at Xochimilco, inscribed with the historic center on UNESCO's World Heritage list in 1987 (Smith, 2012; UNESCO, 1987).
+- **Three great causeways** ran to the mainland, cut by removable bridges; canals served as streets (the Spanish repeatedly reached for Venice comparisons); fresh water arrived by a **twin-channeled aqueduct from Chapultepec** (two channels, so one could flow while the other was cleaned).
+- The kilometers-long **dike attributed to Nezahualcoyotl** of Texcoco separated the brackish east lake from the fresh, spring-fed water around the city — hydraulic engineering at landscape scale (Smith, 2012).
+
+At Tlatelolco sat **the market** that stunned the invaders. Cortés reported (his own claim, in his second letter to the king) that more than 60,000 people bought and sold there daily, in ordered rows by trade — goldsmiths, feather-workers, food from across the empire, barbers, apothecaries — under courts that policed measures and prices (Cortés, 1520/1986). Bernal Díaz del Castillo — writing decades later as an old man, a caveat his book always deserves — recalled soldiers who had seen Rome and Constantinople saying they had never seen a market so large, so orderly, so full of people (Díaz del Castillo, 1632/1963). Read those as what they are: **hostile witnesses conceding magnificence**. The men describing the city came to take it, had every motive to flatter their own deeds by praising the prize, but none to invent its sewers, its street-sweepers, or its price courts.
+
+Two more institutions round out the picture the conquistadors' awe tends to crowd out. Mexica sources describe **compulsory schooling**: noble children attended the *calmecac* (temple schools training priests, officials, and commanders), while commoner boys — and, in the sources' description, girls in parallel institutions — attended the *telpochcalli*, "houses of youth," for training in work, arms, ritual, and the moral discourses preserved in Book 6 of the Florentine Codex (Sahagún, 1950-1982; Smith, 2012). And the city was *clean*: nightly sweeping, waste collected by canoe for use as fertilizer, public latrines — details the Spanish recorded precisely because their own cities lacked them.
+
+:::reveal Why does the course call the Spanish descriptions of Tenochtitlan 'hostile witnesses conceding magnificence,' and what caveats does it attach? ||| Cortés and Díaz came to conquer, so their awe (the 60,000-person market claim, the Rome/Constantinople comparison) is testimony against interest — they had motive to praise the prize but none to invent sewers, street-sweepers, and price courts. Caveats: Cortés's figures are his own claims in letters justifying himself to the king, and Díaz wrote decades later as an old man — so the course attributes their numbers rather than asserting them.
+
+## Sources
+- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell.
+- Cortés, H. (1986). *Letters from Mexico* (A. Pagden, Trans. & Ed.). Yale University Press. (Second letter originally written 1520)
+- Díaz del Castillo, B. (1963). *The conquest of New Spain* (J. M. Cohen, Trans.). Penguin. (Original work published 1632)
+- Sahagún, B. de. (1950-1982). *Florentine Codex: General history of the things of New Spain* (A. J. O. Anderson & C. E. Dibble, Trans.). School of American Research / University of Utah.
+- UNESCO World Heritage Centre. (1987). *Historic Centre of Mexico City and Xochimilco* (World Heritage List No. 412).`,
+      recallContent: [
+        {
+          prompt: "Sort the names: Mexica, Aztec, Nahuatl, Tenochtitlan.",
+          answer:
+            "Mexica: the people's own name (→ 'Mexico'). Aztec: a later label from legendary Aztlan, popularized by 19th-century writers — standard but less precise. Nahuatl: their language, shared with other Nahua peoples. Tenochtitlan: their island capital in Lake Texcoco, traditionally founded 1325 at the eagle-on-cactus sign now on Mexico's flag.",
+        },
+        {
+          prompt: "What are chinampas — and what are they not?",
+          answer:
+            "Raised rectangular field-plots built from lake mud and vegetation between canal grids, anchored by willows — among the most productive farming systems ever engineered, yielding multiple harvests a year. They are NOT floating gardens (they don't float). A remnant survives at Xochimilco (UNESCO, 1987).",
+        },
+        {
+          prompt: "Name three pieces of hydraulic/urban engineering that made a lake metropolis livable.",
+          answer:
+            "The twin-channeled Chapultepec aqueduct (one channel flows while the other is cleaned); the kilometers-long dike attributed to Nezahualcoyotl separating brackish from fresh water; three causeways with removable bridges plus canal-streets — with nightly sweeping, canoe-collected waste used as fertilizer, and market courts policing measures.",
+        },
+      ],
+    },
+    {
+      slug: "meso-triple-alliance",
+      title: "10 · The Triple Alliance: an empire made of tribute",
+      section: "Section 4 · The Mexica (Aztec) and the tribute empire",
+      body: `The thing we call the "Aztec Empire" has a birth year and a legal form, and knowing both changes how you read its fall. In **1428**, three lakeside city-states — **Tenochtitlan**, **Texcoco**, and **Tlacopan** — allied to overthrow their overlord, the Tepanec city of Azcapotzalco, and constituted themselves as the **Triple Alliance** (*Excan Tlatoloyan*), splitting future tribute by formula, with Tenochtitlan first among equals and increasingly dominant (Smith, 2012). Ninety-one years separate that founding from Cortés's landing. The empire the Spanish met was **younger than the printing press**.
+
+Under Itzcoatl, Moctezuma I, and their successors down to **Moctezuma II** (r. 1502-1520), the Alliance expanded until it took tribute from several hundred subject towns across central and southern Mexico — a subject population plausibly in the **several millions** (estimates vary widely; Lesson 15 explains why every such number is a range). But its *form* matters more than its size: this was a **hegemonic, tribute-taking empire, not a territorial one**. With few exceptions, conquered towns kept their own rulers, gods, languages, and laws. What changed was an obligation: the tribute list. We can still read those lists, item by item, because colonial administrators had them copied — the **Codex Mendoza** (c. 1541) records, town by painted town, the cloaks, maize, cacao, feathers, jade, paper, and warriors' costumes owed to the Alliance capitals (Berdan & Anawalt, 1992). Professional merchants, the *pochteca*, doubled as imperial eyes abroad. Garrisons were few; compliance ran on the credible threat of the armies returning.
+
+Read that design cynically and correctly: it is **cheap to run and quick to shatter**. The empire banked obedience, not loyalty; it left its subjects organized, armed, resentful, and self-governing — pre-assembled rebel coalitions awaiting a coordinator. Hold that thought two lessons.
+
+Inside the ring of subject towns sat holes the Alliance never closed, and two matter enormously:
+
+- **Tlaxcala**, a Nahua confederation east of the lakes: never conquered, wholly encircled, cut off from imports like cotton and salt, and locked with Tenochtitlan in the strange institution of the **"flower wars"** (*xochiyaoyotl*) — arranged battles whose purpose is genuinely debated. The sources frame them as chivalric-religious exercises yielding sacrificial captives; analysts like Ross Hassig read them as low-cost attrition and containment of an enemy too costly to finish; sixteenth-century Tlaxcalan and Mexica informants themselves gave conflicting accounts. *Contested* — but the enmity they cultivated is not (Hassig, 1988; Smith, 2012).
+- The **Purépecha (Tarascan) empire** of Michoacán — Section 5 introduces them properly — which inflicted on the Aztecs their worst recorded defeat and stood as an unbreached western wall.
+
+One more correction while the empire is on the table: Postclassic Nahua culture was not a barracks. The lake cities sustained schools of oratory, sculpture that ranks with anything in the ancient world (the Coyolxauhqui relief, the Sun Stone), botanical gardens at Texcotzingo, and a poetic tradition in Nahuatl — *in xochitl in cuicatl*, "flower and song" — preserved in colonial-era compilations like the *Cantares Mexicanos*. Poems in those manuscripts are attributed to named rulers, most famously **Nezahualcoyotl of Texcoco**; scholars debate how much is truly his and how much later attribution — the honest label is "attributed" (León-Portilla, 1992). The empire that took tribute in feathers also graded its students on the elegance of their speech.
+
+:::reveal Why does the course call the Triple Alliance's design 'cheap to run and quick to shatter'? ||| It was hegemonic, not territorial: subject towns kept their rulers, gods, and arms, owing only tribute (the painted lists survive in the Codex Mendoza), with few garrisons — so control cost little but bought obedience, not loyalty. That left the empire ringed with organized, resentful, self-governing peoples — with unconquered Tlaxcala embedded in the middle — pre-assembled coalitions for any coordinator who arrived. In 1519, one did.
+
+## Sources
+- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell.
+- Berdan, F. F., & Anawalt, P. R. (Eds.). (1992). *The Codex Mendoza* (4 vols.). University of California Press.
+- Hassig, R. (1988). *Aztec warfare: Imperial expansion and political control*. University of Oklahoma Press.
+- León-Portilla, M. (1992). *Fifteen poets of the Aztec world*. University of Oklahoma Press.`,
+      recallContent: [
+        {
+          prompt: "Give the Triple Alliance's founding facts and why its age matters.",
+          answer:
+            "1428: Tenochtitlan, Texcoco, and Tlacopan overthrew Tepanec Azcapotzalco and split future tribute by formula, Tenochtitlan increasingly dominant. Only 91 years separate that founding from Cortés — the empire the Spanish met was younger than the printing press, still expanding, with unhealed holes (Tlaxcala, the Purépecha).",
+        },
+        {
+          prompt: "What is the Codex Mendoza and why is it a historian's gift?",
+          answer:
+            "A colonial compilation (c. 1541) copying imperial tribute rolls: town by painted town, the cloaks, maize, cacao, feathers, jade, paper, and warrior costumes owed to the Alliance. It lets us read the empire's fiscal machinery item by item (Berdan & Anawalt, 1992).",
+        },
+        {
+          prompt: "What were the flower wars, and what label does the course attach to their purpose?",
+          answer:
+            "Xochiyaoyotl: arranged battles between the Alliance and enemies like Tlaxcala. Purpose CONTESTED — sources frame chivalric-religious captive-taking; Hassig reads low-cost attrition/containment; period informants conflict. What's not contested is the enmity they cultivated.",
+        },
+      ],
+    },
+    {
+      slug: "meso-sacrifice",
+      title: "11 · Human sacrifice: the honest version",
+      section: "Section 4 · The Mexica (Aztec) and the tribute empire",
+      body: `This lesson exists because both easy versions of its subject are false, and this course promised you neither. Version one — the lurid one — makes Mesoamerica a slaughterhouse with architecture, defined by sacrifice the way a caricature defines a face. Version two — the apologetic one — waves sacrifice away as Spanish slander invented to justify conquest. The record refutes both, and the method for handling it is the same one this course uses everywhere: **archaeology first, numbers audited, motives of every source on the table.**
+
+**It was real. Archaeology has closed that question.** Spanish accounts described an enormous rack of skulls — a *tzompantli* — near the Templo Mayor. For centuries that description could be suspected of propaganda. Then, beginning in **2015**, INAH archaeologists under Raúl Barrera Rodríguez, excavating beneath a colonial building on Guatemala Street in downtown Mexico City, uncovered the **Huei Tzompantli** itself: the platform of the great skull rack, plus two towers of human skulls mortared into circular structures — **hundreds of skulls of men, women, and children** documented as excavation proceeded (INAH, 2017; Matos Moctezuma & López Luján, 2017). The dig confirmed the *existence and substance* of what the invaders described. Sacrifice at Tenochtitlan was public, architectural, state-organized, and — remember Teotihuacan's Feathered Serpent Pyramid, three centuries of Maya captive stelae, and offerings back to Preclassic times — **very old and very Mesoamerican**, not a Mexica invention (Sugiyama, 2005; López Austin & López Luján, 2008).
+
+**Why, in their own terms.** In Mexica cosmology as recorded in the Florentine Codex and read by scholars like Alfredo López Austin, the present world — the Fifth Sun — exists because gods sacrificed *themselves* to set the sun moving, incurring a debt that humans repay in kind: blood and hearts as *nextlahualli*, "debt-payment," keeping the cosmos running (López Austin & López Luján, 2008; Sahagún, 1950-1982). Sacrifice was embedded in a total system — most captives came from war, dying "for the sun" paralleled a warrior's death, and self-sacrifice (bloodletting from one's own body) was universal, from kings down. Understanding this framework is not endorsing it; it is the difference between history and a horror movie. The practice also did political work — imperial theater staged before invited enemy dignitaries — and Mexica sources themselves record it scaling up under the imperial state of the 1400s (Smith, 2012).
+
+**Now audit the numbers, both directions.** The figure that launched a thousand documentaries — **80,400 victims** at the 1487 rededication of the Templo Mayor — comes from **later chronicles, not eyewitnesses** (it appears in sources like Durán, written generations after); scholars have long noted the logistical impossibility of the implied per-minute kill rate, and the suspiciously round cosmological bookkeeping of such totals. The honest label is **"reported, not established"** — a number to be studied as imperial and colonial rhetoric, not recited as a body count (Restall, 2003; Smith, 2012). The same audit runs the other way: conquistador Andrés de Tapia's claimed count of 136,000 skulls on the rack is likewise unverifiable self-justifying testimony — the Spanish had every incentive to inflate Mexica cruelty, since "rescuing the Indians from tyranny" was their legal-moral case for conquest and encomienda. And the pseudo-scientific floor of the genre — Michael Harner's 1977 theory that sacrifice existed to supply dietary protein — was dismantled in detail by Bernard Ortiz de Montellano (1978): the numbers, the nutrition, and the ethnography all fail. What archaeology actually supports: sacrifice was real, substantial, and central; the five- and six-figure single-event totals are unsupported; a real annual scale remains genuinely uncertain — a range, not a number.
+
+**Context, without exoneration.** The Europe that was horrified by Tenochtitlan burned heretics in public squares, broke prisoners on the wheel, and would soon fill decades with religious wars and witch executions — public, ritualized, state-sanctioned killing framed as necessary for cosmic order (there, "justice" and "salvation"). That parallel does not excuse the tzompantli; it dissolves the claim that ritualized public killing marks Mesoamericans as uniquely other. The honest position holds everything at once: the skull tower is real; the 80,400 is rhetoric; the practice had an internal logic its practitioners could articulate; and the people who ended it replaced it with their own repertoire of public death. History owes you all four clauses, not your favorite one.
+
+:::reveal How does the course audit the two famous sacrifice numbers — 80,400 and 136,000 — and what does archaeology actually establish? ||| Both fail the audit: 80,400 (the 1487 rededication) comes from later chronicles, not eyewitnesses, with impossible implied logistics — 'reported, not established'; 136,000 (Tapia's skull count) is unverifiable conquistador testimony from men whose legal case for conquest required Mexica tyranny. What archaeology (Huei Tzompantli, excavated from 2015; Templo Mayor offerings; Teotihuacan's FSP) establishes: sacrifice was real, public, state-organized, substantial, and anciently Mesoamerican — with true annual scale honestly uncertain.
+
+## Sources
+- Matos Moctezuma, E., & López Luján, L. (2017). El Huei Tzompantli de Tenochtitlan. *Arqueología Mexicana, 25*(148), 60-67.
+- Instituto Nacional de Antropología e Historia. (2017). *Huei Tzompantli de Tenochtitlan* [excavation reporting, Programa de Arqueología Urbana]. INAH.
+- López Austin, A., & López Luján, L. (2008). Aztec human sacrifice. In E. M. Brumfiel & G. M. Feinman (Eds.), *The Aztec world* (pp. 137-152). Abrams.
+- Sahagún, B. de. (1950-1982). *Florentine Codex* (A. J. O. Anderson & C. E. Dibble, Trans.). School of American Research / University of Utah.
+- Ortiz de Montellano, B. R. (1978). Aztec cannibalism: An ecological necessity? *Science, 200*(4342), 611-617.
+- Restall, M. (2003). *Seven myths of the Spanish conquest*. Oxford University Press.
+- Smith, M. E. (2012). *The Aztecs* (3rd ed.). Wiley-Blackwell.
+- Sugiyama, S. (2005). *Human sacrifice, militarism, and rulership: Materialization of state ideology at the Feathered Serpent Pyramid, Teotihuacan*. Cambridge University Press.`,
+      recallContent: [
+        {
+          prompt: "What did the excavations beginning in 2015 on Guatemala Street find, and what question did they close?",
+          answer:
+            "The Huei Tzompantli: the great skull rack's platform and two towers of mortared human skulls — hundreds documented, men, women, and children (INAH, Barrera Rodríguez team). It closed the question of whether the Spanish descriptions of the rack were pure propaganda: the structure existed, in substance as described.",
+        },
+        {
+          prompt: "State the Mexica rationale for sacrifice in their own terms, and why the course explains it.",
+          answer:
+            "Fifth Sun cosmology: the gods sacrificed themselves to set the sun moving; humans repay the debt (nextlahualli) in blood to keep the cosmos running — embedded with war-captive ideology and universal self-bloodletting. The course explains it because understanding a framework is not endorsing it: it is the difference between history and a horror movie.",
+        },
+        {
+          prompt: "Why do BOTH the sensational and the denialist versions fail?",
+          answer:
+            "Sensational: relies on unverifiable five-/six-figure chronicle numbers (80,400; 136,000) and treats one practice as the whole civilization. Denialist ('Spanish slander'): refuted by archaeology — the tzompantli is excavated, and sacrifice is documented at Teotihuacan and among the Maya centuries before the Mexica. The honest account holds the real skull tower, the audited numbers, the internal logic, and the conquerors' own public-killing repertoire, all at once.",
+        },
+      ],
+    },
+    {
+      slug: "meso-quiz-4",
+      title: "Section 4 quiz · The Mexica and the tribute empire",
+      section: "Section 4 · The Mexica (Aztec) and the tribute empire",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Which naming statement is correct?",
+            options: [
+              "The people of Tenochtitlan called themselves Mexica; 'Aztec' (from legendary Aztlan) was popularized as an ethnic label mainly by 19th-century writers",
+              "'Aztec' was the people's own everyday name for themselves",
+              "'Mexica' was invented by the Spanish",
+              "Nahuatl is a city, not a language",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'Mexica' survives in 'Mexico'; Nahuatl was their language. 'Aztec' is standard and usable — but the course flags its history.",
+            sourceLessonSlug: "meso-tenochtitlan",
+          },
+          {
+            prompt: "How does the course treat the 1325 founding date and eagle-on-cactus story?",
+            options: [
+              "As the Mexica's own sacred tradition — their annals' date, not GPS-verified fact — while what they demonstrably built is documented from every direction",
+              "As archaeologically proven to the day",
+              "As Spanish fabrication",
+              "As irrelevant legend not worth teaching",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Origin story labeled as tradition; the engineered city labeled as evidence. That division of labels is the course's method in miniature.",
+            sourceLessonSlug: "meso-tenochtitlan",
+          },
+          {
+            prompt: "What are chinampas?",
+            options: [
+              "Raised field-plots built from lake mud between canal grids, anchored by willows — extraordinarily productive, and not actually floating",
+              "Rafts of flowers that drifted around the lake",
+              "Fishing platforms with no agricultural role",
+              "Spanish-introduced gardens of the 1530s",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 'floating gardens' misnomer persists, but the plots are anchored constructions; a remnant survives at Xochimilco (UNESCO, 1987).",
+            sourceLessonSlug: "meso-tenochtitlan",
+          },
+          {
+            prompt: "The course reads Cortés's 60,000-person market claim and Díaz's Rome/Constantinople comparison as…",
+            options: [
+              "hostile witnesses conceding magnificence — attributed claims (a self-justifying letter; an old man's memoir), yet testimony against interest on the city's order and scale",
+              "exact censuses to be repeated as fact",
+              "worthless because all Spaniards lied about everything",
+              "descriptions of Chichén Itzá, not Tenochtitlan",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Men who came to take the city had motive to praise the prize, none to invent its street-sweepers, sewers, and price courts. The course attributes their numbers instead of asserting them.",
+            sourceLessonSlug: "meso-tenochtitlan",
+          },
+          {
+            prompt: "Which infrastructure list for Tenochtitlan is accurate?",
+            options: [
+              "Three causeways with removable bridges; canal-streets; a twin-channeled aqueduct from Chapultepec; the long dike separating brackish from fresh water",
+              "A stone bridge to Spain; windmills; a subway",
+              "No fresh water source — residents drank lake water untreated",
+              "City walls forty meters high",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The twin aqueduct channels alternated for cleaning; the dike attributed to Nezahualcoyotl managed salinity at landscape scale (Smith, 2012).",
+            sourceLessonSlug: "meso-tenochtitlan",
+          },
+          {
+            prompt: "What was the Triple Alliance?",
+            options: [
+              "The 1428 pact of Tenochtitlan, Texcoco, and Tlacopan — formed by overthrowing Azcapotzalco — that became the 'Aztec Empire,' with Tenochtitlan increasingly dominant",
+              "An alliance of Maya city-states against Spain",
+              "A trade league with the Inca",
+              "A trio of gods in the Mexica pantheon",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Only 91 years old when Cortés landed — younger than the printing press, still expanding, with unhealed enemies.",
+            sourceLessonSlug: "meso-triple-alliance",
+          },
+          {
+            prompt: "The Aztec empire's characteristic form of control was…",
+            options: [
+              "hegemonic tribute-taking: subject towns kept rulers, gods, and laws but owed scheduled tribute, with few garrisons and compliance resting on the threat of returning armies",
+              "direct territorial administration with imperial governors everywhere",
+              "religious conversion of all subjects to Huitzilopochtli alone",
+              "mass enslavement and deportation of all conquered peoples",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cheap to run, quick to shatter: it banked obedience, not loyalty — leaving organized, armed, resentful subjects. The design is legible in the Codex Mendoza's tribute rolls.",
+            sourceLessonSlug: "meso-triple-alliance",
+          },
+          {
+            prompt: "What is the Codex Mendoza?",
+            options: [
+              "A colonial compilation (c. 1541) copying imperial tribute lists town by painted town — cloaks, cacao, feathers, warrior costumes owed to the Alliance",
+              "A pre-conquest Maya astronomy book",
+              "Moctezuma's private diary",
+              "A Spanish law code for the colonies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Berdan & Anawalt's edition makes the empire's fiscal machinery readable item by item — the primary window on how tribute empire actually worked.",
+            sourceLessonSlug: "meso-triple-alliance",
+          },
+          {
+            prompt: "Which is the accurate, honestly-labeled account of the 'flower wars'?",
+            options: [
+              "Arranged battles with Tlaxcala and others whose purpose is contested — religious captive-taking per the sources, low-cost attrition/containment per Hassig — with the cultivated enmity not contested at all",
+              "Fully understood ceremonial games with no casualties",
+              "A Spanish invention with no Indigenous sources",
+              "Battles fought with flowers instead of weapons",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Period informants themselves conflict. The course labels the purpose contested and banks the consequence: Tlaxcala's enmity, which 1519 weaponized.",
+            sourceLessonSlug: "meso-triple-alliance",
+          },
+          {
+            prompt: "Why does the course mention Nezahualcoyotl's poetry with the label 'attributed'?",
+            options: [
+              "The poems survive in colonial-era compilations like the Cantares Mexicanos, and scholars debate how much is truly his versus later attribution",
+              "Because he certainly wrote every line",
+              "Because no Nahuatl poetry exists",
+              "Because poetry was illegal in the empire",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'Attributed' is the honest label (León-Portilla, 1992) — and the tradition itself, in xochitl in cuicatl, corrects the barracks caricature of Nahua culture either way.",
+            sourceLessonSlug: "meso-triple-alliance",
+          },
+          {
+            prompt: "What did the excavations beginning in 2015 beneath Guatemala Street uncover?",
+            options: [
+              "The Huei Tzompantli — the great skull rack's platform and towers of mortared skulls, hundreds documented — confirming the substance of Spanish descriptions",
+              "Proof that no skull rack ever existed",
+              "The tomb of Moctezuma II",
+              "A Roman coin hoard",
+            ],
+            correctIndex: 0,
+            explanation:
+              "INAH's Programa de Arqueología Urbana (Barrera Rodríguez team) settled the existence question archaeologically: real, public, architectural, state-organized.",
+            sourceLessonSlug: "meso-sacrifice",
+          },
+          {
+            prompt: "Why does the course teach the Fifth Sun 'debt-payment' cosmology behind sacrifice?",
+            options: [
+              "Because understanding a practice's internal logic is not endorsing it — it is the difference between history and a horror movie",
+              "To argue that the practice was justified",
+              "Because the cosmology is the course's own belief",
+              "To prove the Mexica had no reasons at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Gods' self-sacrifice set the sun moving; humans repay in kind (nextlahualli). Explanation is a tool of accuracy, not apology — and the practice also did visible political work as imperial theater.",
+            sourceLessonSlug: "meso-sacrifice",
+          },
+          {
+            prompt: "The honest label for the 80,400-victims figure (1487 rededication) is…",
+            options: [
+              "'reported, not established' — a later-chronicle number with impossible implied logistics, to be studied as rhetoric rather than recited as a body count",
+              "an eyewitness census, reliable as stated",
+              "an archaeological count from excavated remains",
+              "a number invented by 20th-century historians",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same audit cuts against Tapia's 136,000-skull claim — unverifiable testimony from men whose case for conquest required Mexica tyranny. Real scale: substantial, and honestly uncertain.",
+            sourceLessonSlug: "meso-sacrifice",
+          },
+          {
+            prompt: "How does the course use the comparison with 16th-century European public killing?",
+            options: [
+              "As context without exoneration: it dissolves the claim that ritualized public killing made Mesoamericans uniquely other, while excusing nothing",
+              "To argue the conquest was therefore justified",
+              "To argue sacrifice was therefore acceptable",
+              "To claim Europe never practiced public execution",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Heretic-burnings and the wheel were public, ritualized, state-sanctioned killing framed as cosmic necessity ('justice,' 'salvation'). The honest position holds all four clauses at once.",
+            sourceLessonSlug: "meso-sacrifice",
+          },
+          {
+            prompt: "What happened to Michael Harner's theory that sacrifice existed to supply dietary protein?",
+            options: [
+              "It was dismantled in detail by Ortiz de Montellano (1978) — the numbers, nutrition, and ethnography all fail",
+              "It became the scholarly consensus",
+              "It was confirmed by the Huei Tzompantli dig",
+              "It was never evaluated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A cautionary specimen of numbers-driven pseudo-explanation — exactly the genre the course's auditing method exists to catch.",
+            sourceLessonSlug: "meso-sacrifice",
+          },
+          {
+            prompt: "Sacrifice in Mesoamerica is best described chronologically as…",
+            options: [
+              "ancient and widespread — documented at Teotihuacan's Feathered Serpent Pyramid (c. 200 CE), in Classic Maya captive rituals, and back into the Preclassic — with the Mexica state scaling it up, not inventing it",
+              "invented by the Mexica in the 1400s",
+              "invented by Spanish propagandists in the 1520s",
+              "practiced only at Tenochtitlan and nowhere else",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sugiyama's FSP burials and centuries of Maya evidence predate the Mexica by a millennium. Neither an Aztec invention nor a Spanish slander — the course's whole point.",
+            sourceLessonSlug: "meso-sacrifice",
+          },
+        ],
+      },
+    },
   ],
 };
