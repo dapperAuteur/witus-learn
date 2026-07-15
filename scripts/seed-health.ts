@@ -58,16 +58,26 @@ const COURSES: HealthCourse[] = [
 ];
 
 async function ensureInstructor(tenantId: string): Promise<string> {
-  // BAM owns + instructs every course (see MEMORY: BAM identity). Reuse a stable
-  // seed instructor id so this is idempotent and never collides on the unique email.
-  const id = "seed-health-instructor";
-  await db
-    .insert(schema.users)
-    .values({ id, email: "faculty@health.witus.online", emailVerified: true, name: "WitUS Health Faculty" })
-    .onConflictDoNothing();
+  // BAM owns + instructs every course — for real, not just in this comment. This used to
+  // create a synthetic "witus-health" account, which put every health course under
+  // /witus-health/... (course URLs are /{instructor-username}/{slug}) and REGRESSED the
+  // data each re-seed even after `reassign:instructor --apply` had fixed it. Match the
+  // real account by email, like seed-courses.ts's ensureInstructor.
+  const existing = await db
+    .select({ id: schema.users.id })
+    .from(schema.users)
+    .where(eq(schema.users.email, "bam@awews.com"))
+    .limit(1);
+  const id = existing[0]?.id ?? "bam";
+  if (!existing[0]) {
+    await db
+      .insert(schema.users)
+      .values({ id, email: "bam@awews.com", emailVerified: true, name: "BAM" })
+      .onConflictDoNothing();
+  }
   await db
     .insert(schema.userProfiles)
-    .values({ userId: id, username: "witus-health", displayName: "WitUS Health Faculty" })
+    .values({ userId: id, username: "bam", displayName: "BAM" })
     .onConflictDoNothing();
   await db
     .insert(schema.tenantMemberships)
