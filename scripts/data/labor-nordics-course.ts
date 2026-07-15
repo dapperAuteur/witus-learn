@@ -960,5 +960,298 @@ That trade — *we recognise your unions; you recognise our authority to run the
         ],
       },
     },
+
+    // ────────────── SECTION 4 · THE BARGAIN AND THE WEAPON ──────────────
+    {
+      slug: "nordic-flexicurity",
+      title: "9 · Danish flexicurity: easy to fire, hard to fall (a trade)",
+      section: "Section 4 · The Danish bargain and the Nordic weapon",
+      body: `Here is a bargain most Americans have never heard anyone propose, and it is **Danish**, not Swedish — this is one of the clearest places the two countries diverge, so watch the label.
+
+**Denmark makes it relatively easy for an employer to fire you.** Job-protection rules are light by European standards; there is no thicket of statutory hurdles a Danish employer must clear to let a worker go. To an American that sounds like the bad news, and to most Europeans it sounds shocking. But it is only one leg of a three-legged deal that the Danes call, in English, **flexicurity** — and researchers call the **"golden triangle."**
+
+**Leg 1 — Flexibility.** Easy hiring and firing. Employers can adjust their workforce to conditions quickly, which (the theory goes) makes them more willing to *hire* in the first place, because hiring is not a near-permanent commitment.
+
+**Leg 2 — Security (of income, not of the specific job).** If you lose your job, you land on a relatively **generous unemployment benefit** (*dagpenge*), historically replacing a high share of a lower earner's previous wage (up to a cap). The security is not "you keep this job"; it is "losing this job does not wreck you."
+
+**Leg 3 — Active labour-market policy.** The state spends heavily on **activation**: retraining, guidance, job-search support, and requirements to take part. The point is to move you from the old job to a new one quickly rather than parking you on benefits.
+
+Put the three together and you get the pitch: **workers give up job security and get employment security instead** — the confidence that if this job ends, there is a cushion and a fast route to the next one. The number Danes point to is **mobility**: a large share of the Danish workforce changes jobs in any given year, and unemployment spells have historically been short. It is a genuinely different answer to "how do you protect a worker?" — *not by making the job hard to lose, but by making job loss survivable and temporary.*
+
+**Now teach it as a trade, because it is one — and it is under strain.** Flexicurity only protects workers if legs 2 and 3 stay strong. Weaken the benefit or the retraining and all that is left is the easy-firing leg — which is just deregulation wearing a Scandinavian sweater. And legs 2 and 3 *have* been trimmed:
+
+- In a **2010 reform**, Denmark **cut the maximum period you can draw dagpenge from four years to two** (phased in from around 2012–2013), and roughly **doubled the amount of prior employment needed to requalify**. That is a real reduction in leg 2.
+- Over the longer run, the benefit's **replacement rate has drifted down** for many workers (the cap has not kept pace with wages), so "generous" is less true for a middle earner today than it was a generation ago.
+
+So the honest verdict, dated: flexicurity is a real and coherent bargain, not a free lunch and not a fairy tale — and the security side of it has been quietly thinning, which is exactly the thing that would turn a good trade into a bad one. Whether it still delivers what it promises is a live Danish argument, and you should treat anyone who tells you it is simply a triumph *or* simply a con as selling you something.
+
+**The Sweden-is-not-Denmark footnote, so you don't overgeneralise.** Sweden does **not** run classic Danish flexicurity. Sweden has meaningfully **stronger statutory job protection** — its Employment Protection Act (*Lagen om anställningsskydd*, LAS, 1982), with "last in, first out" seniority rules at its core — though even that was loosened in a 2022 reform that made dismissals somewhat easier in exchange for stronger retraining rights. "Nordic" is not one labour market. It is at least two.
+
+:::reveal What is Danish "flexicurity," and why must it be taught as a trade rather than a free lunch? ||| The "golden triangle": (1) easy hiring and firing, (2) a relatively generous unemployment benefit (dagpenge), and (3) heavy active labour-market policy (retraining/activation). Workers trade job security for employment security — a cushion plus a fast route to the next job. It must be taught as a trade because it only protects workers if the benefit and retraining legs stay strong; weaken them and only easy-firing remains. And they have been trimmed — the 2010 reform cut the dagpenge period from four years to two.
+
+## Sources
+- Madsen, P. K. (2004). The Danish model of "flexicurity": Experiences and lessons. *Transfer: European Review of Labour and Research, 10*(2), 187–207. https://doi.org/10.1177/102425890401000205
+- Andersen, T. M., & Svarer, M. (2007). Flexicurity — labour market performance in Denmark. *CESifo Economic Studies, 53*(3), 389–429. https://doi.org/10.1093/cesifo/ifm015
+- Eurofound. (n.d.). *Denmark: Individual dismissal and unemployment benefits (dagpenge)*. European Foundation for the Improvement of Living and Working Conditions. https://www.eurofound.europa.eu/en/country/denmark
+- Lag (1982:80) om anställningsskydd [Employment Protection Act / LAS] (Sweden). Sveriges riksdag. https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-198280-om-anstallningsskydd_sfs-1982-80`,
+      recallContent: [
+        {
+          prompt: "Name the three legs of Danish flexicurity (the 'golden triangle') and the trade it offers workers.",
+          answer:
+            "(1) Easy hiring and firing; (2) a relatively generous unemployment benefit (dagpenge); (3) heavy active labour-market policy (retraining/activation). Workers trade JOB security for EMPLOYMENT security — losing a job is survivable and temporary rather than wrecking.",
+        },
+        {
+          prompt: "Give the clearest evidence that flexicurity's 'security' side has thinned.",
+          answer:
+            "The 2010 reform cut the maximum dagpenge period from four years to two (phased ~2012–13) and roughly doubled the requalification requirement; the benefit's replacement rate has also drifted down for many workers as the cap lagged wages.",
+        },
+        {
+          prompt: "How does Sweden differ from Denmark on job protection?",
+          answer:
+            "Sweden does not run classic Danish flexicurity; it has stronger statutory job protection via the Employment Protection Act (LAS, 1982) with 'last in, first out' seniority — though a 2022 reform loosened dismissals somewhat in exchange for stronger retraining rights. 'Nordic' is at least two different labour markets.",
+        },
+      ],
+    },
+    {
+      slug: "nordic-sympathy-action",
+      title: "10 · The weapon US law bans: the legal sympathy strike",
+      section: "Section 4 · The Danish bargain and the Nordic weapon",
+      body: `This is the sharpest single comparison in the entire Workers' Rights track, so slow down for it.
+
+**In the United States, the sympathy strike and the secondary boycott are illegal.** The anchor course teaches this directly: the **Taft-Hartley Act of 1947** added **§ 8(b)(4)** to the National Labor Relations Act, which bars a union from pressuring a **neutral** business — one that is not the employer the union actually has its dispute with — to force it to stop dealing with that employer. If autoworkers have a fight with Company A, they may not lawfully strike or boycott **Company B** to squeeze A. The anchor calls that ban the removal of "one of labor's most powerful weapons," and notes the strange exception it created: farm workers, excluded from the NLRA in 1935, were *also* outside its secondary-boycott ban, which is exactly why the United Farm Workers' grape boycott was lawful when the same tactic would have been illegal for a steelworkers' union.
+
+**In Sweden and Denmark, that weapon is legal.** A union whose members are *not* themselves in dispute with a company may lawfully take **sympathy action** (*sympatiåtgärder*) to support another union's **lawful primary conflict** — refusing to make deliveries to the targeted firm, refusing to service its equipment, refusing to handle its goods. In Sweden the framework sits in the **Co-determination Act** (MBL, 1976:580): parties bound by a collective agreement owe a peace obligation, **but sympathy action in support of a lawful primary dispute is a recognised exception** to it. Denmark's system permits sympathy conflict on the same broad logic.
+
+**Feel the size of this difference.** The American ban confines a labour dispute to the two parties directly involved: the union and its own employer, in a ring, and everyone else must be left alone. The Nordic rule lets a dispute **radiate**. If a company refuses to sign an agreement, it is not just facing the one union whose members it employs — it can find its trucks unloaded by nobody, its mail undelivered, its machines unserviced, because *other* workers, in *other* companies, in *other* unions, are lawfully refusing to touch anything connected to it. **The neutral party the American statute protects is, in the Nordic model, precisely the pressure point.**
+
+And now connect it back to Section 3, because this is not a curiosity — **it is load-bearing.** Remember the puzzle: with no minimum-wage law and no legal extension of agreements, what actually forces a hold-out firm to sign? The answer was "collective pressure, not the state." **The legal sympathy strike is what makes that pressure strong enough to work.** A self-regulating system that refuses to legislate the wage floor needs a way to bring a refusing employer to the table, and sympathy action is that way. Ban it — as U.S. law does — and the whole self-regulation model loses the teeth that make signing an agreement the rational choice. This is why the same countries that keep the state *out* of wage-setting keep sympathy action *in*: the second is what makes the first enforceable.
+
+**Two honesties.** First, "legal" does not mean "unlimited": the primary conflict being supported must itself be lawful, essential-services and proportionality limits apply, and the peace obligation still binds parties to their own agreements. Sympathy action is a regulated weapon, not a free-for-all. Second, this is a genuinely contested policy choice, not a self-evident good — employers and their associations argue that letting a dispute spread to neutral firms is disproportionate and damages bystanders. The course's job is not to tell you they are wrong. It is to make sure you see that **the U.S. and the Nordics drew the line in opposite places, on purpose** — and Section 5 is what it looks like when that line is tested by a company that will not sign.
+
+:::reveal Sympathy strikes are illegal in the US but legal in Sweden and Denmark. Why is that legality LOAD-BEARING for the Nordic model rather than just a curiosity? ||| Because the Nordic wage floor is enforced by collective pressure, not by statute (there's no minimum-wage law and no legal extension of agreements). The legal sympathy strike is what makes that pressure strong enough to bring a hold-out employer to the table — other unions can lawfully refuse to handle the firm's goods, deliveries and servicing. Ban it, as US §8(b)(4) does, and the self-regulation model loses the teeth that make signing an agreement the rational choice.
+
+## Sources
+- Labor Management Relations Act (Taft-Hartley Act), § 8(b)(4), 29 U.S.C. § 158(b)(4) (1947). Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?path=/prelim@title29/chapter7&edition=prelim
+- Lag (1976:580) om medbestämmande i arbetslivet [Co-determination Act / MBL] (Sweden). Sveriges riksdag. https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1976580-om-medbestammande-i-arbetslivet_sfs-1976-580
+- ETUI / Worker Participation. (n.d.). *Sweden; Denmark: Industrial action*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries`,
+      recallContent: [
+        {
+          prompt: "What does US Taft-Hartley § 8(b)(4) do, and how does the Nordic rule on sympathy action differ?",
+          answer:
+            "§ 8(b)(4) (1947) bans US unions from pressuring a NEUTRAL business to force it to stop dealing with the employer the union actually disputes — outlawing secondary boycotts/sympathy strikes. In Sweden and Denmark, sympathy action in support of a LAWFUL primary conflict is legal (an exception to the peace obligation in Sweden's MBL), so a dispute can lawfully radiate to firms not directly involved.",
+        },
+        {
+          prompt: "Why is the legality of sympathy action essential to Nordic self-regulation?",
+          answer:
+            "Because the wage floor is enforced by collective pressure rather than by law; the sympathy strike is what makes that pressure strong enough to bring a hold-out employer to sign. Ban it and the self-regulation model loses its teeth.",
+        },
+      ],
+    },
+    {
+      slug: "nordic-quiz-4",
+      title: "Section 4 quiz · Flexicurity and the sympathy strike",
+      section: "Section 4 · The Danish bargain and the Nordic weapon",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Which country's model is 'flexicurity,' and what are its three legs?",
+            options: [
+              "Sweden's: high job protection, low benefits, no retraining",
+              "Denmark's: easy hiring/firing, a relatively generous unemployment benefit (dagpenge), and heavy active labour-market policy",
+              "Norway's: statutory minimum wage, high tariffs, no unions",
+              "A US federal program",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Flexicurity is Danish — the 'golden triangle.' Watch the label: Sweden does not run it.",
+            sourceLessonSlug: "nordic-flexicurity",
+          },
+          {
+            prompt: "What trade does flexicurity offer workers?",
+            options: [
+              "Job security in exchange for lower pay",
+              "JOB security is given up for EMPLOYMENT security — a cushion if the job ends plus a fast route to the next one",
+              "Higher wages in exchange for banning strikes",
+              "Lifetime employment at one firm",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not 'you keep this job' but 'losing this job doesn't wreck you, and you'll be helped into the next one quickly.'",
+            sourceLessonSlug: "nordic-flexicurity",
+          },
+          {
+            prompt: "Why must flexicurity be taught as a trade rather than a free lunch?",
+            options: [
+              "Because it is illegal under EU law",
+              "Because it only protects workers if the benefit and retraining legs stay strong — weaken them and only easy-firing remains ('deregulation in a Scandinavian sweater')",
+              "Because it applies only to managers",
+              "Because Denmark abolished it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Legs 2 and 3 are what make leg 1 tolerable. Thin them out and the bargain turns bad.",
+            sourceLessonSlug: "nordic-flexicurity",
+          },
+          {
+            prompt: "What concrete change shows flexicurity's 'security' side thinning?",
+            options: [
+              "The 2010 reform cut the maximum dagpenge period from four years to two and roughly doubled the requalification requirement",
+              "Denmark abolished unemployment benefits entirely",
+              "Denmark introduced a statutory minimum wage",
+              "Denmark banned firing workers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A real reduction in leg 2 (phased in ~2012–13), plus a long-run drift down in the replacement rate for many workers.",
+            sourceLessonSlug: "nordic-flexicurity",
+          },
+          {
+            prompt: "How does Sweden differ from Denmark on job protection?",
+            options: [
+              "Sweden has weaker protection than Denmark",
+              "Sweden has stronger statutory job protection via the Employment Protection Act (LAS, 1982), with 'last in, first out' seniority — it does not run classic Danish flexicurity",
+              "Sweden and Denmark are identical here",
+              "Sweden has no employment law at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "'Nordic' is at least two labour markets. LAS (1982) was itself loosened somewhat in a 2022 reform in exchange for stronger retraining rights.",
+            sourceLessonSlug: "nordic-flexicurity",
+          },
+          {
+            prompt: "What does US Taft-Hartley § 8(b)(4) (1947) prohibit?",
+            options: [
+              "All strikes by any union",
+              "A union pressuring a NEUTRAL business to force it to stop dealing with the employer the union actually disputes (secondary boycotts / sympathy action)",
+              "Collective bargaining",
+              "Unemployment insurance",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It confines a dispute to the union and its own employer; everyone else must be left alone. The anchor course teaches this in its Taft-Hartley lesson.",
+            sourceLessonSlug: "nordic-sympathy-action",
+          },
+          {
+            prompt: "What is the Nordic rule on sympathy action?",
+            options: [
+              "It is banned, exactly as in the US",
+              "A union not itself in dispute may lawfully take sympathy action to support another union's LAWFUL primary conflict — an exception to the peace obligation",
+              "It requires the government's permission each time",
+              "It is allowed only for public-sector workers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In Sweden the framework sits in the Co-determination Act (MBL, 1976:580); Denmark permits it on the same broad logic.",
+            sourceLessonSlug: "nordic-sympathy-action",
+          },
+          {
+            prompt: "What is the vivid structural difference between the US ban and the Nordic rule?",
+            options: [
+              "The US lets disputes radiate; the Nordics confine them",
+              "The US confines a dispute to the two direct parties; the Nordic rule lets it RADIATE, so the neutral party the US statute protects is the Nordic pressure point",
+              "Both confine disputes identically",
+              "Neither allows any industrial action",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Trucks unloaded by nobody, mail undelivered, machines unserviced — because other workers in other unions lawfully refuse to touch anything connected to the target.",
+            sourceLessonSlug: "nordic-sympathy-action",
+          },
+          {
+            prompt: "Why is the legal sympathy strike LOAD-BEARING for Nordic self-regulation?",
+            options: [
+              "It isn't — it's just a historical curiosity",
+              "Because the wage floor is enforced by collective pressure, not statute; sympathy action is what makes that pressure strong enough to bring a hold-out employer to sign",
+              "Because it replaces the unemployment fund",
+              "Because it sets the minimum wage directly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Keep the state out of wage-setting, keep sympathy action in — the second is what makes the first enforceable.",
+            sourceLessonSlug: "nordic-sympathy-action",
+          },
+          {
+            prompt: "Does 'legal sympathy action' mean 'unlimited'?",
+            options: [
+              "Yes — anything goes",
+              "No — the primary conflict must be lawful, essential-services and proportionality limits apply, and the peace obligation still binds parties to their own agreements",
+              "Yes, but only in Denmark",
+              "No — it is actually banned",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is a regulated weapon, not a free-for-all.",
+            sourceLessonSlug: "nordic-sympathy-action",
+          },
+          {
+            prompt: "How does the course frame the US-vs-Nordic choice on sympathy action?",
+            options: [
+              "The Nordics are simply right and the US simply wrong",
+              "As a genuinely contested policy choice — the two systems drew the line in opposite places on purpose, and employers argue spreading a dispute to neutral firms is disproportionate",
+              "As an accident of history with no real disagreement",
+              "As identical in both systems",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The course's job is to show the deliberate opposite choices, not to adjudicate which is correct.",
+            sourceLessonSlug: "nordic-sympathy-action",
+          },
+          {
+            prompt: "In the anchor course, why was the United Farm Workers' grape boycott lawful when the same tactic was illegal for a steelworkers' union?",
+            options: [
+              "Because grapes are exempt",
+              "Because farm workers were excluded from the NLRA in 1935, so they were also outside its secondary-boycott ban",
+              "Because the UFW got special permission",
+              "Because Taft-Hartley did not exist yet",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The exclusion that stripped farm workers of protection also placed them outside the law's biggest restriction — a link this course draws from the anchor.",
+            sourceLessonSlug: "nordic-sympathy-action",
+          },
+          {
+            prompt: "Which Swedish statute frames sympathy action as an exception to the peace obligation?",
+            options: [
+              "The Employment Protection Act (LAS)",
+              "The Co-determination Act (Medbestämmandelagen, MBL, 1976:580)",
+              "The Taft-Hartley Act",
+              "Directive (EU) 2022/2041",
+            ],
+            correctIndex: 1,
+            explanation:
+              "MBL governs association, bargaining and industrial action in Sweden, including the peace obligation and its sympathy-action exception.",
+            sourceLessonSlug: "nordic-sympathy-action",
+          },
+          {
+            prompt: "Why does the same country keep the state OUT of wage-setting but keep sympathy action IN?",
+            options: [
+              "For no particular reason",
+              "Because sympathy action is what makes a non-legislated wage floor enforceable — the enforcement tool substitutes for a law",
+              "Because the EU requires both",
+              "Because employers demanded both",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Self-regulation needs a credible way to bring refusers to the table; the sympathy strike is that mechanism.",
+            sourceLessonSlug: "nordic-sympathy-action",
+          },
+          {
+            prompt: "The Danish golden triangle's 'security' leg is best described as security of…",
+            options: [
+              "the specific job you currently hold",
+              "income and employment — a cushion if the job ends and a fast route to a new one, not a guarantee you keep this job",
+              "the employer's profits",
+              "the union's finances",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Flexicurity protects the worker, not the particular job — by making job loss survivable and temporary.",
+            sourceLessonSlug: "nordic-flexicurity",
+          },
+        ],
+      },
+    },
   ],
 };
