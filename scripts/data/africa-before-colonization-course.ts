@@ -1604,5 +1604,295 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
         ],
       },
     },
+
+    // ────────────── SECTION 6 · HOW WE KNOW ──────────────
+    {
+      slug: "africa-written-record",
+      title: "14 · Reading the written record",
+      section: "Section 6 · How we know",
+      body: `Everything you have learned so far rests on evidence, and the last full section of this course opens the toolbox, because the skill transfers: once you can ask "how do we know this?" about Mali, you can ask it about anything. Start with writing.
+
+**The outsider accounts.** For West Africa before 1500, the richest written sources are in Arabic, produced by the Muslim world the trade routes connected. Learn the main names as a chain, each with its method:
+
+- **Al-Fazari** (late eighth century): the earliest surviving Arabic mention of Ghana, "the land of gold." Catch: his original work is lost, and we have the line only because later writers quoted it. Much of the early record is like this, texts surviving inside other texts, like fossils in rock.
+- **Al-Masudi** (tenth century) actually sailed to East Africa and wrote about the land of Zanj from experience.
+- **Al-Bakri** (1068): the great account of Ghana from Lesson 5, compiled in al-Andalus by a scholar who never crossed the Sahara, from merchants' and travelers' reports. Secondhand, but administrative in its detail, and checkable against archaeology.
+- **Al-Idrisi** (1154) wrote his geography at the Norman court of Roger II of Sicily: Muslim scholarship, Christian patron, African subject matter, one book. The medieval Mediterranean was like that.
+- **Al-Umari** (1330s, Mamluk Cairo/Damascus): the interview-based account of Mali behind Lesson 6.
+- **Ibn Battuta** (East African coast 1331; Mali 1352-53): the only one of these who walked the ground at both ends, and the most detailed surviving eyewitness. Even here, source criticism applies: he dictated his travels years later to the literary editor Ibn Juzayy, and scholars have long debated whether every leg of the itinerary is firsthand. Eyewitness is a claim to be tested, not a magic word.
+- **Ibn Khaldun** (late fourteenth century): the historian's historian, whose king lists and synchronisms for Mali let us hang approximate dates on the oral record.
+
+**Read them in scholarly translation.** This course cites these authors through **Levtzion and Hopkins' Corpus of Early Arabic Sources for West African History** (1981/2000), and that is a method point, not a bibliographic nicety. Translation is interpretation: word choices ("king" or "chief"? "town" or "encampment"?) tilt everything downstream, and older translations made in the colonial era sometimes tilted hard. Citing a critical edition tells the reader which choices you inherited.
+
+**The insider record.** The claim "Africa produced no documents" was false on its face, and you have already met the proof: the **Ge'ez** manuscript tradition running from Aksum's fourth-century inscriptions through the radiocarbon-dated Garima Gospels to the present; **Meroitic**, an African script awaiting its decipherer; the **Timbuktu manuscripts** and the *Tarikh al-Sudan*, an African-written history of an African empire; **ajami** traditions writing African languages (Hausa, Fulfulde, Swahili, Wolof, and more) in Arabic script; the **Kilwa Chronicle** (sixteenth century), which survives both in an Arabic version and in the Portuguese historian João de Barros's rendering, so historians can watch two transmissions of one tradition diverge. And the caution runs both ways: the *Tarikh al-fattash* interpolations of Lesson 7 show that insider documents get source-criticized too.
+
+**Where writing is absent, history is not.** Benin kept no indigenous script, and its royal history is among the best-attested in the region: cast in brass plaques (a court record in metal, keyed to reign and ritual), carried by the court's professional remembrancers, and cross-checkable against four centuries of European trade records. Absence of writing is a fact about the medium, not about the past. Trevor-Roper's premise failed twice over: the documents existed, and documents were never the only admissible evidence, which is the next lesson.
+
+:::reveal Al-Bakri (never left al-Andalus) and Ibn Battuta (walked the ground) both describe West African states. Why does the course teach BOTH 'secondhand' and 'eyewitness' as labels to be tested rather than verdicts? ||| Because each label is the start of source criticism, not the end. Al-Bakri's compilation is secondhand but administratively specific (customs schedules, court protocol) and checkable against archaeology; a careful compiler of merchants' reports can beat a careless tourist. Ibn Battuta is an eyewitness, but he dictated the rihla years later to Ibn Juzayy and scholars debate whether every leg is firsthand, so even 'eyewitness' is a claim requiring testing. Method beats labels: ask what the source could know, how it reached you, and what checks against it.
+
+## Sources
+- Levtzion, N., & Hopkins, J. F. P. (Eds.). (2000). *Corpus of early Arabic sources for West African history*. Markus Wiener. (Original work published 1981)
+- Hunwick, J. O. (1999). *Timbuktu and the Songhay Empire: Al-Sa'di's Ta'rikh al-Sudan down to 1613*. Brill.
+- Dunn, R. E. (2012). *The adventures of Ibn Battuta: A Muslim traveler of the 14th century* (3rd ed.). University of California Press.
+- Nobili, M., & Mathee, M. S. (2015). Towards a new study of the so-called Tarikh al-fattash. *History in Africa, 42*, 37-73.
+- UNESCO. (1981-1993). *General history of Africa* (Vol. I: Methodology and African prehistory, J. Ki-Zerbo, Ed.). UNESCO Publishing / Heinemann.`,
+      recallContent: [
+        {
+          prompt: "Name four Arabic-language sources for West Africa, each with its method and its catch.",
+          answer:
+            "Al-Fazari (8th c.): earliest mention of Ghana, but survives only as quotations in later writers. Al-Bakri (1068): administratively detailed but compiled secondhand in al-Andalus. Al-Umari (1330s): interviews in Cairo a dozen years after Musa's hajj. Ibn Battuta (1331/1352-53): eyewitness, but dictated years later to Ibn Juzayy, with debated legs.",
+        },
+        {
+          prompt: "Give three examples of the INSIDER African written record.",
+          answer:
+            "The Ge'ez tradition (Aksumite inscriptions to the radiocarbon-dated Garima Gospels), the Timbuktu manuscripts and Tarikh al-Sudan, ajami writing of African languages in Arabic script, plus the Kilwa Chronicle (and Meroitic, still unread).",
+        },
+      ],
+    },
+    {
+      slug: "africa-ground-truth",
+      title: "15 · Digging, listening, comparing: the other toolkits",
+      section: "Section 6 · How we know",
+      body: `Documents are one leg of the stool. African history was rebuilt in the twentieth century on three more, and each carries its own rules of evidence.
+
+**Archaeology, with radiocarbon as the game-changer.** Radiocarbon dating (developed by Willard Libby's group from 1949) did something quietly revolutionary for this field: it let sites be dated **without any documents at all**, which dissolved Trevor-Roper's premise wholesale. Three excavations you have already met or should meet:
+
+- **Jenne-jeno** (Mali): the McIntosh excavations from 1977 dated urban growth on the Niger to centuries before trans-Saharan Islamic trade (Lesson 7). Cities without outside tutors.
+- **Igbo-Ukwu** (in present-day southeastern Nigeria): Thurstan Shaw's excavations (1959, 1964) uncovered a burial and regalia in leaded bronze of dazzling technical sophistication, and the radiocarbon dates said **ninth-tenth century CE**, far earlier than anyone had guessed for such casting in the region, with glass beads showing long-distance trade connections. The dates were so surprising that scholars spent years testing them; they held (Shaw, 1970).
+- **Great Zimbabwe**: stratigraphy plus radiocarbon confirmed what Caton-Thompson concluded from artifacts alone: African, medieval (Lesson 8).
+
+**Oral tradition, treated as evidence with rules.** Much of African history was carried by professional rememberers: the **jeliw (griots)** of the Mande world, dynastic reciters elsewhere, whose training was long, formal, and consequential. The Belgian historian **Jan Vansina**, in *Oral Tradition as History* (1985), built the working method: an oral tradition is a chain of transmission, and the historian's job is to study the chain, not just the tale. Its strengths are real: king lists, institutional origins, place names, migration accounts (the Epic of Sundiata, recorded in versions such as Niane's from the jeli Mamadou Kouyaté, preserves the founding tradition of Mali that Ibn Khaldun's lists then anchor in time). Its limits are equally real, and Vansina names them: **telescoping** (chronology compresses; middle generations drop out), **feedback** (written accounts leak back into oral ones and masquerade as independent), and **present function** (traditions are performed for living patrons, and content bends toward what the present needs; a praise-singer's king list is not a neutral database). The method is the same as for any source: ask what it could know, how it was transmitted, and what independent evidence checks it.
+
+**Historical linguistics.** Languages are archives. By comparing related languages and reconstructing their family trees, historians like **Christopher Ehret** read migrations and technologies out of vocabulary: the **Bantu expansion**, one of the great demographic events of world history, in which Bantu-speaking farming communities spread over roughly three millennia from the Nigeria-Cameroon borderlands across most of central, eastern, and southern Africa, is reconstructed primarily from the language map and its loanwords (which words for crops, iron, and cattle were carried, which were borrowed en route), cross-checked against archaeology (Ehret, 2016). No document records the Bantu expansion. We know it anyway.
+
+**The rule that makes the stool stand: convergence.** Any single method can mislead: a chronicle can lie, a tradition can telescope, a date can be contaminated, a translation can tilt. Confidence comes when **independent** lines agree. Great Zimbabwe is the model case: stratigraphy, radiocarbon, imported datable ceramics, Shona oral tradition, and sixteenth-century Portuguese trade reports all point to the same African, medieval answer. When you meet a claim about any past, on any continent, the audit is now yours: *which people, which place, which century, which sources, and do independent lines converge?*
+
+:::reveal Vansina says to study the chain of transmission, not just the tale. Apply that to the Epic of Sundiata: what makes it usable evidence, and for what exactly? ||| The epic is carried by trained professional jeliw whose versions (e.g., Mamadou Kouyate's, recorded by Niane) can be compared, and its core (a founder named Sundiata, a victory over the Soso, the founding of Mali) is anchored externally by Ibn Khaldun's fourteenth-century king lists. So it is good evidence for the founding TRADITION and institutional memory of Mali, usable for dynastic sequence and institutions, but weak evidence for precise chronology (telescoping) and vulnerable to feedback and present-function bias, which is why the course dates Kirina 'traditionally c. 1235' rather than flatly.
+
+## Sources
+- Vansina, J. (1985). *Oral tradition as history*. University of Wisconsin Press.
+- Ehret, C. (2016). *The civilizations of Africa: A history to 1800* (2nd ed.). University of Virginia Press.
+- Shaw, T. (1970). *Igbo-Ukwu: An account of archaeological discoveries in eastern Nigeria*. Faber & Faber.
+- McIntosh, S. K., & McIntosh, R. J. (1981). West African prehistory. *American Scientist, 69*(6), 602-613.
+- Niane, D. T. (1965). *Sundiata: An epic of old Mali* (G. D. Pickett, Trans.). Longman.`,
+      recallContent: [
+        {
+          prompt: "Why did radiocarbon dating matter SPECIFICALLY for the 'no documents, no history' argument?",
+          answer:
+            "It lets sites be dated without any documents at all, so history could be written wherever people left material traces: Jenne-jeno's pre-Islamic urbanism, Igbo-Ukwu's ninth-tenth-century bronzes, Great Zimbabwe's medieval dates. The premise 'history requires documents' dissolved.",
+        },
+        {
+          prompt: "Vansina's three named limits of oral tradition.",
+          answer:
+            "Telescoping (chronology compresses, middle generations drop), feedback (written accounts leak back into oral ones and pose as independent confirmation), and present function (performance bends content toward living patrons' needs).",
+        },
+      ],
+    },
+    {
+      slug: "africa-quiz-6",
+      title: "Section 6 quiz · How we know",
+      section: "Section 6 · How we know",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is the catch with al-Fazari's eighth-century mention of Ghana?",
+            options: [
+              "His original work is lost; the line survives only as quotations inside later writers",
+              "He wrote in a cipher never solved",
+              "He described the wrong continent",
+              "There is no catch; the manuscript survives complete",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Texts surviving inside other texts are common in the early record, which is why transmission history is part of reading them.",
+            sourceLessonSlug: "africa-written-record",
+          },
+          {
+            prompt: "Why does this course cite the Arabic sources via Levtzion & Hopkins' Corpus?",
+            options: [
+              "Translation is interpretation: a critical scholarly edition documents its choices, where colonial-era translations sometimes tilted hard",
+              "Because the Arabic originals are illegal to quote",
+              "Because it is the only translation ever made",
+              "For copyright reasons only",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Word choices like 'king' versus 'chief' tilt everything downstream; citing the edition tells readers which choices you inherited.",
+            sourceLessonSlug: "africa-written-record",
+          },
+          {
+            prompt: "What source-criticism caution applies even to Ibn Battuta's eyewitness account?",
+            options: [
+              "He dictated it years later to the editor Ibn Juzayy, and scholars debate whether every leg of the itinerary is firsthand",
+              "He could not write at all",
+              "He never existed",
+              "He visited only Europe",
+            ],
+            correctIndex: 0,
+            explanation:
+              "'Eyewitness' is a claim to be tested, not a magic word. He remains the most detailed surviving eyewitness for both coasts he described.",
+            sourceLessonSlug: "africa-written-record",
+          },
+          {
+            prompt: "Which of these belongs to the INSIDER African written record?",
+            options: [
+              "The Tarikh al-Sudan, an African-written history of Songhai, plus Ge'ez manuscripts and ajami traditions",
+              "Al-Umari's encyclopedia",
+              "The Catalan Atlas",
+              "The Periplus of the Erythraean Sea",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The others are outsider sources (valuable ones). The insider record alone falsifies the 'no documents' premise.",
+            sourceLessonSlug: "africa-written-record",
+          },
+          {
+            prompt: "Why is the Kilwa Chronicle's double survival (Arabic version and Portuguese rendering) methodologically useful?",
+            options: [
+              "Historians can watch two transmissions of one tradition diverge, exposing how texts change in the telling",
+              "It proves the Portuguese wrote Swahili history first",
+              "It makes the chronicle twice as long",
+              "It settles Kilwa's foundation date exactly",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Parallel transmissions are a natural experiment in how sources mutate, the same reason the Tarikh al-fattash interpolations matter.",
+            sourceLessonSlug: "africa-written-record",
+          },
+          {
+            prompt: "How does the course use Benin to argue 'absence of writing is not absence of history'?",
+            options: [
+              "Benin's royal history is cast in brass plaques, carried by professional court remembrancers, and cross-checkable against four centuries of European trade records",
+              "Benin actually had a secret alphabet",
+              "Benin's history is unknowable",
+              "Benin's history comes only from British sources",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Absence of writing is a fact about the medium, not the past: record-keeping can run in metal, ritual office, and memory, checked against external documents.",
+            sourceLessonSlug: "africa-written-record",
+          },
+          {
+            prompt: "Why was radiocarbon dating 'quietly revolutionary' for African history?",
+            options: [
+              "It dates sites without documents, dissolving the premise that history requires written records",
+              "It made excavation unnecessary",
+              "It works only in deserts",
+              "It reads inscriptions chemically",
+            ],
+            correctIndex: 0,
+            explanation:
+              "From 1949 on, material traces alone could carry chronology: exactly the evidence class Trevor-Roper's argument excluded by assumption.",
+            sourceLessonSlug: "africa-ground-truth",
+          },
+          {
+            prompt: "What did Thurstan Shaw's excavations at Igbo-Ukwu establish?",
+            options: [
+              "Technically dazzling leaded-bronze casting and long-distance trade in southeastern Nigeria by the ninth-tenth century CE, dates so surprising they were re-tested for years and held",
+              "The first Portuguese fort in Nigeria",
+              "That the bronzes were cast in Egypt",
+              "A Roman settlement on the Niger",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Igbo-Ukwu (excavated 1959 and 1964) pushed sophisticated regional metallurgy centuries earlier than anyone had guessed.",
+            sourceLessonSlug: "africa-ground-truth",
+          },
+          {
+            prompt: "In Vansina's method, what is 'telescoping'?",
+            options: [
+              "Oral chronology compressing over generations, with middle generations dropping out",
+              "Using lenses to read manuscripts",
+              "Combining two traditions into one",
+              "Extending a king list to flatter a patron",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One of his three named limits, with feedback (written accounts leaking back into oral ones) and present function (content bending toward living patrons).",
+            sourceLessonSlug: "africa-ground-truth",
+          },
+          {
+            prompt: "What is 'feedback' as a limit of oral tradition?",
+            options: [
+              "Written accounts leaking back into oral traditions and masquerading as independent confirmation",
+              "Audience applause changing a performance",
+              "Microphone interference in recordings",
+              "Griots correcting each other",
+            ],
+            correctIndex: 0,
+            explanation:
+              "If the 'independent' oral version absorbed the written one a century ago, agreement between them proves nothing. Chains of transmission must be studied.",
+            sourceLessonSlug: "africa-ground-truth",
+          },
+          {
+            prompt: "What does the Epic of Sundiata reliably evidence, per the course?",
+            options: [
+              "Mali's founding tradition, dynastic sequence, and institutions, anchored by Ibn Khaldun's lists; NOT precise chronology, which is why Kirina is dated 'traditionally c. 1235'",
+              "The exact date and casualty count of the Battle of Kirina",
+              "Nothing; epics are not evidence",
+              "The gold output of the Bure fields",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Oral tradition is evidence with rules: strong on sequence and institutions, weak on absolute dates (telescoping).",
+            sourceLessonSlug: "africa-ground-truth",
+          },
+          {
+            prompt: "How is the Bantu expansion primarily reconstructed?",
+            options: [
+              "From historical linguistics (language family trees and loanwords for crops, iron, cattle), cross-checked against archaeology",
+              "From Roman travel diaries",
+              "From a medieval Bantu chronicle",
+              "From colonial census records",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No document records it; the language map does: a spread over roughly three millennia from the Nigeria-Cameroon borderlands across central, eastern, and southern Africa (Ehret).",
+            sourceLessonSlug: "africa-ground-truth",
+          },
+          {
+            prompt: "What is the convergence rule?",
+            options: [
+              "Confidence comes when INDEPENDENT lines of evidence agree; any single method can mislead",
+              "The majority of historians voting settles a question",
+              "Newer sources always beat older ones",
+              "Physical evidence always beats writing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Great Zimbabwe is the model: stratigraphy, radiocarbon, datable imports, Shona oral tradition, and Portuguese trade reports converge on African and medieval.",
+            sourceLessonSlug: "africa-ground-truth",
+          },
+          {
+            prompt: "Which question is NOT part of the course's five-part audit for any historical claim?",
+            options: [
+              "Does the claim flatter the right side?",
+              "Which people and which place?",
+              "Which century?",
+              "Which sources, and do independent lines converge?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The audit is people, place, century, sources, convergence. Whether a claim flatters anyone is exactly what the method exists to ignore.",
+            sourceLessonSlug: "africa-ground-truth",
+          },
+          {
+            prompt: "Who were the jeliw?",
+            options: [
+              "Professional, formally trained oral historians and praise-singers of the Mande world (griots)",
+              "Songhai cavalry officers",
+              "Swahili ship pilots",
+              "Aksumite coin engravers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Their training was long and their office consequential; their testimony is evidence, to be handled with Vansina's rules like any other source.",
+            sourceLessonSlug: "africa-ground-truth",
+          },
+        ],
+      },
+    },
   ],
 };
