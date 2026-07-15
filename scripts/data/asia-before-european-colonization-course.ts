@@ -1614,5 +1614,289 @@ One more thread ties this lesson to three earlier ones. The Mongol imperial fami
         ],
       },
     },
+    // ────────────── SECTION 6 · NO UTOPIA ──────────────
+    {
+      slug: "asia-hierarchy-bondage",
+      title: "15 · No utopia: hierarchy and bondage across Asia",
+      section: "Section 6 · No utopia: the honest record",
+      body: `A course built to refute one distortion must not manufacture the opposite one. Precolonial Asia was not a paradise that Europeans interrupted; it contained steep hereditary hierarchy and outright slavery, documented in its own sources. Omitting that record would be its own kind of flattening, and it would hand ammunition to anyone who wants to dismiss this whole course as advertising. So here it is, named to region and period, like everything else.
+
+**South Asia: caste.** Textual hierarchy is ancient: the four-fold *varna* scheme appears in a late hymn of the Rigveda, and the *Manusmriti* (compiled roughly between 200 BCE and 200 CE) codifies a legal order of ranked, birth-assigned groups, including people treated as polluting and excluded, the groups later called "untouchable." The lived system, thousands of endogamous *jati* communities, was regionally varied and changed over time, and historians such as Susan Bayly (1999) argue that colonial-era institutions later hardened and reorganized it. Hold both halves with precision, because two opposite myths circulate: caste is neither an eternal, unchanging essence of India, nor a British invention. It is a documented precolonial hierarchy that later rulers, indigenous and colonial, reworked (Bayly, 1999; Thapar, 2002).
+
+**Korea: the nobi.** Joseon Korea, the same state that gave you Sejong's alphabet, ran for centuries on a hereditary unfree class, the **nobi**, who could be bought, sold, inherited, and given as gifts, with status passing to children. The historian James Palais (1996) estimated that nobi amounted to roughly **30 percent of the population in some periods**, an estimate attributed as his, from registers that permit only rough shares, and he argued on that basis that Korea should be counted among history's genuine slave societies. Scholars debate whether "slave" or "serf" better translates nobi status, since many lived semi-independently and paid tribute; the debate is real, and so is the hereditary unfreedom (Palais, 1996; Seth, 2011).
+
+**Southeast Asia: temple and household bondage.** You already met this record through an eyewitness: Zhou Daguan matter-of-factly describes enslaved people in Angkor's households in 1296-97, and Khmer temple inscriptions list thousands of bound workers attached to temple estates (Zhou Daguan, 1296-97/2007; Coe, 2003). Across much of Southeast Asia, historians describe bondage for debt as a central labor institution, with a spectrum from short-term debt peonage to permanent hereditary slavery.
+
+**East and West Asia: the legal and commercial record.** Tang China's law code regulated slavery as a routine institution, with enslaved people bought and sold. And the **Indian Ocean slave trade**, moving people from East Africa and elsewhere into Asian ports and households, ran for many centuries before the Atlantic trade began and continued alongside it; its forms varied enormously, from plantation labor to soldiers and administrators, which is a difference from the Atlantic system worth teaching but not a euphemism (Campbell, 2004). One documented life makes the complexity vivid: **Malik Ambar** (1548-1626), born in Ethiopia, enslaved and sold across the Indian Ocean world, ended his life as the effective ruler of the Ahmadnagar sultanate in India's Deccan and one of the Mughals' most stubborn military opponents. His story is not redemption arithmetic; it is evidence that Asian slavery was real, large, and structurally different from the plantation model most students picture (Campbell, 2004).
+
+Why does an orientation course spend a lesson on this? Three reasons, and they echo a rule you have now seen applied to golden ages and conquerors alike. First, the record demands it: these institutions are in the inscriptions, law codes, and eyewitness accounts, not in hostile propaganda. Second, honesty here protects everything else: a course that hid the nobi could not be trusted on the Jikji. Third, precision matters even in indictment: "Asia practiced caste" is as false as "Asia was casteless," because caste is South Asian, nobi Korean, temple bondage Khmer. Name the system, the place, and the period, in the hard parts exactly as in the proud ones.
+
+:::reveal Why does the course insist on naming hierarchy and bondage system by system instead of either skipping them or generalizing them? ||| Skipping them would flatten the record (they are documented in Asia's own law codes, inscriptions, and eyewitness accounts) and would make the course untrustworthy on everything else. Generalizing them ("Asia practiced caste") fails the same precision test as flattery: caste is South Asian with its own contested history, nobi is Joseon Korean (Palais's ~30 percent estimate, attributed), temple bondage is Khmer, and the Indian Ocean trade had its own structure. Honesty and precision apply to the hard parts exactly as to the proud ones.
+
+## Sources
+- Bayly, S. (1999). *Caste, society and politics in India from the eighteenth century to the modern age*. Cambridge University Press.
+- Palais, J. B. (1996). *Confucian statecraft and Korean institutions: Yu Hyŏngwŏn and the late Chosŏn dynasty*. University of Washington Press.
+- Campbell, G. (Ed.). (2004). *The structure of slavery in Indian Ocean Africa and Asia*. Frank Cass.
+- Zhou Daguan. (2007). *A record of Cambodia: The land and its people* (P. Harris, Trans.). Silkworm Books. (Original work written c. 1296-1297)
+- Thapar, R. (2002). *Early India: From the origins to AD 1300*. University of California Press.
+- Seth, M. J. (2011). *A history of Korea: From antiquity to the present*. Rowman & Littlefield.`,
+      recallContent: [
+        {
+          prompt: "State the two opposite myths about caste that the course rejects, and the documented position between them.",
+          answer:
+            "Myth one: caste as an eternal, unchanging essence of India. Myth two: caste as a British invention. Documented position: textual hierarchy is ancient (varna in a late Rigveda hymn; the Manusmriti's codified ranks c. 200 BCE-200 CE), the lived jati system varied by region and changed over time, and colonial institutions later hardened and reorganized it (Bayly, 1999).",
+        },
+        {
+          prompt: "What were the nobi, and how does the course present Palais's figure?",
+          answer:
+            "Joseon Korea's hereditary unfree class: bought, sold, inherited, status passing to children. Palais (1996) estimated roughly 30 percent of the population in some periods; the course attributes the estimate to him, notes the registers permit only rough shares, and reports the scholarly debate over 'slave' versus 'serf' while keeping the hereditary unfreedom itself undisputed.",
+        },
+      ],
+    },
+    {
+      slug: "asia-conquest-before-europe",
+      title: "16 · Conquest before colonization: empire was already here",
+      section: "Section 6 · No utopia: the honest record",
+      body: `The second half of the honest record: war, conquest, and empire between Asian states. This lesson matters because a lazy version of this course's title implies that domination arrived in Asia on European ships. The documented record says otherwise, loudly, and getting it right sharpens rather than weakens the analysis of what European colonization actually was.
+
+Walk back through your own lessons and count the conquests that had nothing to do with Europe. The **Chola** kingdom of south India launched a naval expedition against **Srivijaya in 1025**, raiding its ports across the Bay of Bengal: an Asian maritime power projecting force against another Asian maritime power, five centuries before Portugal reached the strait (Hall, 2011). The **Mongol conquests** you met in Section 5 subjugated more of Asia than any European empire ever ruled. The **Mughals** were a conquest state from Panipat onward. **Ming China occupied Vietnam** from **1407 to 1427**, imposing direct administration until Le Loi's resistance expelled the occupiers, an episode Vietnamese historiography remembers vividly (Taylor, 2013). And in the **Imjin War (1592-1598)**, Toyotomi Hideyoshi's newly unified Japan invaded Joseon Korea with armies over 150,000 strong (by the standard accounts of a well-documented war), aiming through Korea at China itself; the invasions were fought to a bloody stalemate by Korean armies and irregulars, Admiral **Yi Sun-sin's** navy, and Ming intervention, and they devastated the peninsula. A memorial in Kyoto, the Mimizuka mound, holds the noses and ears taken from tens of thousands of Korean dead as trophies; the war's brutality is not a matter of interpretation (Swope, 2009; Seth, 2011).
+
+So "empire" and "conquest" were not European imports; they were the ordinary weather of Asian statecraft, as they were of European, African, and American statecraft. What, then, actually distinguishes **European colonization**, the thing this course's title dates everything "before"? Lesson 6 gave you the working answer for India, and it generalizes:
+
+- **Where sovereignty sat.** The Mughals, Ming, and Tokugawa ruled from inside the lands they ruled and became local powers; their revenues were largely spent and reinvested there. Company and colonial rule answered to owners and ministries on another continent, and profits, careers, and final authority flowed there.
+- **The global system.** European colonization plugged Asian economies into a worldwide extractive network, with policy set to the metropole's advantage: the classic documented example is Bengal's textile industry, the pride of Lesson 6, declining under Company rule while Britain's mechanized industry rose, a linkage whose precise causes economic historians still argue about and which the track's Great Divergence course examines in depth.
+- **The dates.** Enclaves from 1510, territory from 1757, the high tide in the 1800s, and the end within living memory's reach: India's independence came in 1947, Indonesia's was declared in 1945. On this course's timeline, European rule over Asia's heartlands lasted roughly two centuries out of four and a half millennia of documented urban history.
+
+One more precision, and it may be the most useful one in the lesson: the last empire to colonize a major Asian nation before 1945 was **Asian**. Japan, having escaped colonization itself, annexed **Korea in 1910** and ruled it until 1945, with documented severity. History does not sort perpetrators and victims by continent, and a course that taught otherwise would be doing propaganda with better footnotes.
+
+None of this dilutes what European colonization did; scale, integration, and ideology made it a rupture, not just another conquest, and the follow-on courses document exactly how. What this lesson removes is the waiting-room picture of Asia: four millennia of states that fought, conquered, taxed, enslaved, built, printed, and calculated, on their own terms, for their own reasons, long before and long after the first European sail appeared.
+
+:::reveal What distinguishes European colonization from the intra-Asian conquests the course has documented, and why does the distinction strengthen rather than weaken the course? ||| The distinguishing marks are structural, not the mere arrival of outsiders: sovereignty seated on another continent (with profits and final authority flowing there), integration into a global extractive system run for the metropole (Bengal's textile decline as the classic argued case), and specific dates (enclaves 1510, territory 1757, ended by the mid-1900s). The distinction strengthens the course because it survives the documented record of Chola raids, Mongol conquest, Ming-occupied Vietnam, the Imjin War, and Japan's 1910 annexation of Korea, whereas 'domination arrived on European ships' collapses on first contact with the evidence.
+
+## Sources
+- Swope, K. M. (2009). *A dragon's head and a serpent's tail: Ming China and the first great East Asian war, 1592-1598*. University of Oklahoma Press.
+- Taylor, K. W. (2013). *A history of the Vietnamese*. Cambridge University Press.
+- Seth, M. J. (2011). *A history of Korea: From antiquity to the present*. Rowman & Littlefield.
+- Hall, K. R. (2011). *A history of early Southeast Asia: Maritime trade and societal development, 100-1500*. Rowman & Littlefield.
+- Richards, J. F. (1993). *The Mughal Empire* (The New Cambridge History of India, I.5). Cambridge University Press.`,
+      recallContent: [
+        {
+          prompt: "List four documented intra-Asian conquests or invasions from before or apart from European rule, with dates.",
+          answer:
+            "The Chola naval raid on Srivijaya (1025); the Mongol conquests (1200s, including Baghdad 1258 and Song China by 1279); Ming China's occupation of Vietnam (1407-1427, expelled by Le Loi's resistance); Hideyoshi's Imjin War invasions of Korea (1592-1598). Japan's annexation of Korea (1910-1945) completes the point that the last pre-1945 colonizer of a major Asian nation was Asian.",
+        },
+        {
+          prompt: "Roughly how long did European rule over Asia's heartlands last, against the course's full timeline?",
+          answer:
+            "About two centuries (territorial rule from Plassey 1757; independence movements succeeding by the mid-1900s, e.g. Indonesia 1945, India 1947) out of roughly four and a half millennia of documented urban history since the Indus cities.",
+        },
+      ],
+    },
+    {
+      slug: "asia-quiz-6",
+      title: "Section 6 quiz · The honest record",
+      section: "Section 6 · No utopia: the honest record",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why does the course include a section on hierarchy, slavery, and conquest at all?",
+            options: [
+              "Because the record demands it (it is in Asia's own law codes, inscriptions, and eyewitness accounts), and hiding it would make the course untrustworthy on everything else",
+              "To argue that precolonial Asia was worse than everywhere else",
+              "Because European sources require it",
+              "To justify later colonization",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A course that hid the nobi could not be trusted on the Jikji. The romance trap is the erasure trap's mirror image.",
+            sourceLessonSlug: "asia-hierarchy-bondage",
+          },
+          {
+            prompt: "Which two opposite myths about caste does the course reject?",
+            options: [
+              "That caste is an eternal, unchanging essence of India, and that caste was a British invention",
+              "That caste existed, and that it was hierarchical",
+              "That the Manusmriti is old, and that jatis exist",
+              "That caste is South Asian, and that it changed over time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The documented position: ancient textual hierarchy (varna; the Manusmriti c. 200 BCE-200 CE), a varied and changing lived jati system, and colonial-era hardening argued by Bayly (1999).",
+            sourceLessonSlug: "asia-hierarchy-bondage",
+          },
+          {
+            prompt: "What does Palais (1996) estimate about the nobi, and how does the course present it?",
+            options: [
+              "Roughly 30 percent of Joseon Korea's population in some periods; presented as his attributed estimate from registers that permit only rough shares",
+              "An exact census figure of 30 percent for all of Korean history",
+              "That the nobi were free wage laborers",
+              "That nobi status ended in the 1400s",
+            ],
+            correctIndex: 0,
+            explanation:
+              "He argued Korea belongs among history's genuine slave societies; scholars debate 'slave' vs 'serf' as translations, while the hereditary unfreedom is undisputed.",
+            sourceLessonSlug: "asia-hierarchy-bondage",
+          },
+          {
+            prompt: "How does the course use Malik Ambar's life?",
+            options: [
+              "As documented evidence that Indian Ocean slavery was real, large, and structurally different from the plantation model: born in Ethiopia, enslaved, he ended as effective ruler of Ahmadnagar and a stubborn Mughal opponent",
+              "As proof that slavery in Asia was benign",
+              "As a legend with no documentation",
+              "As an example of European plantation slavery",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Not redemption arithmetic: one man's rise does not offset an institution. His documented career shows the trade's reach and its difference in form from the Atlantic system (Campbell, 2004).",
+            sourceLessonSlug: "asia-hierarchy-bondage",
+          },
+          {
+            prompt: "Which eyewitness and epigraphic evidence documents bondage at Angkor?",
+            options: [
+              "Zhou Daguan's 1296-97 account describes enslaved people in households, and temple inscriptions list thousands of bound workers on temple estates",
+              "Portuguese court records from the 1500s",
+              "Henri Mouhot's 1860s diaries",
+              "There is no evidence of bondage at Angkor",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same sources that document Angkor's grandeur document its unfreedom, which is why the course reads sources whole rather than quarrying them for compliments.",
+            sourceLessonSlug: "asia-hierarchy-bondage",
+          },
+          {
+            prompt: "Why is 'Asia practiced caste' as false as 'Asia was casteless,' per the course?",
+            options: [
+              "Because both flatten: caste is South Asian, nobi bondage is Korean, temple bondage is Khmer; precision applies to the hard parts exactly as to the proud ones",
+              "Because caste never existed anywhere",
+              "Because only Europe had social hierarchy",
+              "Because the word 'caste' is untranslatable",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The anti-flattening rule is not a politeness rule; it is an accuracy rule, and it cuts in every direction.",
+            sourceLessonSlug: "asia-hierarchy-bondage",
+          },
+          {
+            prompt: "What happened between the Chola kingdom and Srivijaya in 1025?",
+            options: [
+              "A Chola naval expedition raided Srivijaya's ports across the Bay of Bengal: Asian power projected against Asian power, five centuries before Portugal arrived",
+              "They signed a permanent alliance",
+              "Srivijaya conquered south India",
+              "Portugal mediated a peace between them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One of the course's cleanest proofs that maritime force projection was an intra-Asian reality long before European ships entered these waters.",
+            sourceLessonSlug: "asia-conquest-before-europe",
+          },
+          {
+            prompt: "What was the Ming occupation of Vietnam?",
+            options: [
+              "Direct Chinese administration of Vietnam from 1407 to 1427, ended by Le Loi's resistance",
+              "A trade agreement signed in 1407",
+              "A Mongol invasion of the 1280s",
+              "A French protectorate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An Asian great power annexing and administering an Asian neighbor, remembered vividly in Vietnamese historiography (Taylor, 2013).",
+            sourceLessonSlug: "asia-conquest-before-europe",
+          },
+          {
+            prompt: "What was the Imjin War?",
+            options: [
+              "Hideyoshi's Japan invaded Joseon Korea (1592-1598), aiming through Korea at China; Korean forces, Yi Sun-sin's navy, and Ming intervention fought it to a devastating stalemate",
+              "A Korean invasion of Japan",
+              "A civil war inside Ming China",
+              "A war between Japan and Portugal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Mimizuka mound in Kyoto, holding trophies taken from tens of thousands of Korean dead, makes the war's brutality a matter of record, not interpretation (Swope, 2009).",
+            sourceLessonSlug: "asia-conquest-before-europe",
+          },
+          {
+            prompt: "Which power annexed Korea in 1910?",
+            options: [
+              "Japan, which ruled it until 1945",
+              "Britain",
+              "Russia",
+              "The United States",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The last empire to colonize a major Asian nation before 1945 was Asian. History does not sort perpetrators and victims by continent.",
+            sourceLessonSlug: "asia-conquest-before-europe",
+          },
+          {
+            prompt: "Which of these does the course list as a structural mark of European colonization, beyond 'outsiders arrived'?",
+            options: [
+              "Sovereignty seated on another continent, with profits, careers, and final authority flowing to the metropole",
+              "The use of cavalry in battle",
+              "Taxation of peasants",
+              "Religious difference between rulers and ruled",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cavalry, taxation, and religious difference all describe the Mughals too. The seat of sovereignty and the global extractive system are what the definition needs.",
+            sourceLessonSlug: "asia-conquest-before-europe",
+          },
+          {
+            prompt: "How long did European rule over Asia's heartlands last, on the course's timeline?",
+            options: [
+              "Roughly two centuries (from Plassey 1757 to the mid-1900s) out of some four and a half millennia of documented urban history",
+              "Over a thousand years",
+              "From 1510 continuously to the present",
+              "Less than a decade",
+            ],
+            correctIndex: 0,
+            explanation:
+              "India's independence came in 1947 and Indonesia declared in 1945; the enclave era from 1510 was earlier but was not heartland rule. Proportion is part of precision.",
+            sourceLessonSlug: "asia-conquest-before-europe",
+          },
+          {
+            prompt: "What is the 'waiting-room picture' the course removes?",
+            options: [
+              "The idea that Asian history was a prelude spent waiting for Europeans to arrive and matter",
+              "The idea that Asia had large cities",
+              "The idea that trade existed before 1500",
+              "The idea that empires kept archives",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Four millennia of states fought, taxed, built, printed, and calculated on their own terms; European colonization was a late, real, datable rupture, not the start of the story.",
+            sourceLessonSlug: "asia-conquest-before-europe",
+          },
+          {
+            prompt: "Does documenting intra-Asian conquest dilute what European colonization did, per the course?",
+            options: [
+              "No: scale, integration, and ideology made European colonization a rupture, and the precise definition survives the evidence, unlike the slogan version",
+              "Yes: it proves colonization was harmless",
+              "Yes: all empires are identical in every respect",
+              "No, because European colonization never happened",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A definition that collapses when it meets the Chola raid or the Imjin War was a bad definition. The one the course teaches gets stronger under the same test.",
+            sourceLessonSlug: "asia-conquest-before-europe",
+          },
+          {
+            prompt: "What does the course say about Bengal's textile industry under Company rule?",
+            options: [
+              "It declined while Britain's mechanized industry rose, a documented linkage whose precise causes economic historians still argue about",
+              "It grew without interruption into the 1900s",
+              "It never existed",
+              "It was destroyed by the Mughals",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The claim is stated with its debate attached and handed to the track's Great Divergence course for depth, which is the course's standing procedure for contested causation.",
+            sourceLessonSlug: "asia-conquest-before-europe",
+          },
+        ],
+      },
+    },
   ],
 };
