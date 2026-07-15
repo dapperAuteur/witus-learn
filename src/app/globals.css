@@ -7,11 +7,25 @@
 
 :root {
   color-scheme: light dark;
+  /* Height of the sticky site header — the offset for anything that must stick BELOW it
+     (the lesson page's progress sub-header, the admin sidebar). Static fallback for the
+     normal one-row bar: 2.75rem tallest nav item (min-h-11) + 1.5rem py-3 + 1px border-b.
+     StickyHeader (src/components/sticky-header.tsx) overwrites it with the measured height
+     once JS runs, so a wrapped two-row header still gets an exact offset. */
+  --site-header-h: calc(4.25rem + 1px);
 }
 
 body {
   font-family:
     ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Anchor jumps (skip-to-content #main-content, /explore's #map + #pricing, heading links)
+   must land BELOW the sticky site header, not underneath it. Scoped with :has() to pages
+   that actually render the header — /downloads, /offline, /kids and /embed/* have no site
+   header, so their anchor math stays untouched. */
+html:has([data-site-header]) {
+  scroll-padding-top: calc(var(--site-header-h) + 0.5rem);
 }
 
 /* a11y: a visible focus ring for EVERY keyboard-focused element — a global fallback so
