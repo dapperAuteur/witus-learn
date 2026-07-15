@@ -1584,5 +1584,363 @@ One caution the sourcing habit demands: you will meet grander claims online — 
         ],
       },
     },
+
+    // ─────────────────────────── SECTION 5 · ORGANIZED CHESS ───────────────────────────
+    {
+      slug: "chess-how-organized-chess-works",
+      title: "24 · The pyramid: FIDE, national federations, and the Olympiad",
+      section: "Section 5 · Organized chess: ratings, titles, and where you fit",
+      body: `Suppose you get good. Where does "good" go? This section maps the machine that turns casual players into rated players, rated players into titled players, and national teams into a world championship — because unlike most of what you'll do in high school, chess has a single pyramid that runs from your first club night to the world title, and you can locate yourself on it precisely.
+
+**The apex: FIDE.** You met the federation in Lesson 7 as the rulebook's author; here's the rest of the job. Founded in Paris in 1924 under the motto *Gens una sumus* ("we are one family"), FIDE today counts **204 national federations** as members and has been recognized by the International Olympic Committee since 1999 (FIDE, n.d.-a). It runs the **world championship cycles** — the open title you followed through Section 4, plus women's, junior, and senior world championships and the World Rapid & Blitz — maintains the **international rating list** (next lesson), and awards the **titles** that Lesson 26 explains (Lesson 7's arbiters get their titles from FIDE too).
+
+**The middle: your national federation.** Every FIDE member country has one governing body. In the United States it's **US Chess** (the United States Chess Federation), founded in **1939** from the merger of two rival national organizations; it administers the national rating system, sanctions national championships — over twenty of them annually, many scholastic — and represents American chess inside FIDE (US Chess, n.d.). Almost every serious American player's first rated game is a US Chess-rated game, not a FIDE-rated one; internationally rated events are a layer you reach later.
+
+**The base: clubs and schools.** Below the federations sits the layer you can join this week: school chess clubs, community clubs, library programs, and weekend tournaments. This is not a minor-league footnote — it's where nearly all of organized chess actually happens, and Lesson 27 is a practical guide to entering it.
+
+**The Olympiad: nations, four boards at a time.** Chess's flagship team event predates almost everything else on the calendar: FIDE organized the **first official Chess Olympiad in London in 1927**, with sixteen national teams contesting the gold-plated **Hamilton-Russell Cup** — Hungary took the first one (FIDE Museum, n.d.). Held roughly every two years since (regularly biennial after 1950), the modern Olympiad brings well over a hundred nations' teams — an open section and a women's section — to one hall for eleven rounds of four-board team matches. It is the closest thing chess has to a World Cup, and its scale is the best single exhibit for the claim stitched into FIDE's motto: everyone in this game, from your club to the medal stand, is playing inside one connected system.
+
+And one more 1927 landmark belongs in this map: the same London gathering hosted the **first Women's World Championship**, won by Vera Menchik (FIDE Museum, n.d.) — the women's title is as old as the Olympiad itself.
+
+:::reveal Trace the full pyramid: a ninth-grader wins her school club championship in Ohio. What are the organizational layers between that game and the World Chess Championship? ||| Club/school events feed US Chess (the national federation, founded 1939) — rated weekend tournaments, state and national scholastic championships. US Chess is one of FIDE's 204 member federations, and FIDE runs the international layer: FIDE-rated events, titles, the Olympiad (national teams), and the world championship cycles. One unbroken ladder — every rung is enterable.
+
+## Sources
+- Fédération Internationale des Échecs. (n.d.-a). *About FIDE*. https://www.fide.com/about-fide
+- FIDE Museum. (n.d.). *The history of FIDE*. https://museum.fide.com/fide-history
+- US Chess. (n.d.). *About*. https://new.uschess.org/about`,
+      recallContent: [
+        {
+          prompt: "What five documented effects did Netflix report from The Queen's Gambit's first weeks?",
+          answer:
+            "62M households in 28 days; Chess.com new players up fivefold; chess searches doubled ('how to play chess' at a nine-year peak); eBay chess-set inquiries +250%; the 1983 novel on the NYT bestseller list 37 years later.",
+        },
+        {
+          prompt: "What does a trustworthy statistic look like, per the boom lesson?",
+          answer:
+            "It has an owner, a date, and a denominator — like Netflix's '62 million households in the first 28 days.' A number with no year, source, or definition gets treated as folklore.",
+        },
+      ],
+    },
+    {
+      slug: "chess-elo-explained",
+      title: "25 · Elo: the number that follows you around",
+      section: "Section 5 · Organized chess: ratings, titles, and where you fit",
+      body: `Chess solved a problem most fields still fumble: how do you measure skill objectively, when skill can only be observed through wins and losses against other people whose skill you also don't know? The answer is the **Elo rating system**, designed by **Arpad Elo**, a Hungarian-American physics professor and master-level player. **US Chess implemented his system in 1960; FIDE adopted it in 1970**, publishing its first official international rating list the following year (FIDE, n.d.-b). Versions of it now rank everything from esports players to dating profiles — chess exported the idea to the world.
+
+**The core logic, no heavy math required.** Your rating is a number that moves with your results:
+
+- The rating **gap** between two players predicts an **expected score**. Roughly equal ratings → expect about 50%. A couple hundred points of advantage → expect roughly three wins in four. A vast gap → expect nearly everything.
+- After you play, your actual score is compared to the expected score. **Beat expectations, gain points; fall short, lose points.** How many depends on the size of the surprise: beating an equal nudges you up a little, beating someone far above you pays out a lot, and losing to them costs almost nothing — the system already assumed you'd lose.
+- A multiplier (the *K-factor*) scales the movement, set higher for new and developing players — youth ratings move fast on purpose, because the system is still learning who you are (and, at your age, because who you are keeps improving).
+
+Two properties make Elo genuinely fair in a way that should raise your standards for every other ranking you meet. It is **self-correcting**: an overrated player leaks points until the number matches reality, an underrated one climbs. And it is **opponent-aware**: nobody farms a high rating by beating beginners, because expected wins pay nearly nothing. The number is hard to fake over any real sample of games — which is exactly why the cheating economics in Section 6 target it.
+
+**Reading the scale.** FIDE ratings for active players run from the floor of 1400 up past 2800 for the handful of best humans alive. Useful landmarks you've already met or soon will: **2200** is the threshold tied to the Candidate Master title, **2300** FIDE Master, **2400** International Master, **2500** Grandmaster (FIDE, 2022) — Lesson 26 explains what *else* those titles take. There is no absolute meaning to any single number; the scale is relational, anchored by the pool. Which leads to the misunderstanding that trips up every new player:
+
+**Ratings from different pools don't translate.** Your FIDE rating, your US Chess rating, and your ratings on each online platform are computed inside **separate populations with separate formulas, floors, and starting points** — so the same person routinely carries several ratings hundreds of points apart, and none of them is "wrong." A rating is a coordinate inside one pool, not a universal skill certificate. Compare your blitz rating on one site to a friend's FIDE classical rating and you have said, precisely, nothing.
+
+:::reveal You're rated 1300. Tuesday you lose to a 1900; Thursday you beat a different 1900. Why is the combined effect on your rating strongly positive rather than a wash? ||| Because Elo pays by surprise, not by result. The loss was expected — a 600-point favorite should win — so it costs you a point or two. The win is a large violation of the expected score and pays out heavily. Beat expectations across the two games (one win where ~zero were expected) and the system moves you up: it's evidence 1300 underestimates you.
+
+## Sources
+- Fédération Internationale des Échecs. (n.d.-b). *Anniversary of Arpad Elo — rating system that changed chess world*. https://www.fide.com/anniversary-of-arpad-elo-rating-system-that-changed-chess-world/
+- Fédération Internationale des Échecs. (2022). *International title regulations* (FIDE Handbook B.01). https://handbook.fide.com/chapter/B012022`,
+      recallContent: [
+        {
+          prompt: "When was the first official Chess Olympiad, and what's the event's modern shape?",
+          answer:
+            "London, 1927 — 16 national teams playing for the Hamilton-Russell Cup (Hungary won). Now roughly biennial, with open and women's sections and well over a hundred national teams playing four-board matches.",
+        },
+        {
+          prompt: "Who founded US Chess and when — and what does it actually run?",
+          answer:
+            "Formed in 1939 by the merger of two rival national bodies. It administers the U.S. national rating system, sanctions 20+ national championships a year (many scholastic), and represents the U.S. in FIDE.",
+        },
+      ],
+    },
+    {
+      slug: "chess-titles",
+      title: "26 · Grandmaster: what the letters actually take",
+      section: "Section 5 · Organized chess: ratings, titles, and where you fit",
+      body: `"Grandmaster" may be the most casually misused word in chess journalism, so let's install the real definitions. FIDE awards a ladder of **titles** — earned once, held **for life** — under regulations published in its handbook (FIDE, 2022). They are the game's permanent credentials, recognized identically in every one of FIDE's 204 member countries.
+
+**The open titles** (any player, any gender, may earn them):
+
+| Title | Rating requirement | Plus |
+| --- | --- | --- |
+| **Grandmaster (GM)** | Reach 2500 | Norms |
+| **International Master (IM)** | Reach 2400 | Norms |
+| **FIDE Master (FM)** | Reach 2300 | — |
+| **Candidate Master (CM)** | Reach 2200 | — |
+
+**So what's a norm?** For GM and IM, the rating alone isn't enough — you must also prove you can produce title-level chess **against title-level fields, repeatedly**. A norm is a tournament performance meeting strict conditions: a high performance rating (for a GM norm, on the order of **2600**, achieved against opposition averaging **2380+**), in events with required mixes of titled players and multiple federations, with norms accumulating across **at least 27 games** — in practice, usually three strong 9-round tournaments (FIDE, 2022). One hot weekend can't make you a grandmaster; the system is engineered so the title certifies a *sustained* level, not a spike. That engineering is why roughly speaking the GM title means the same thing in Lagos, Lima, and London — and why earning one typically consumes years of expensive travel to norm-eligible events. Remember that cost; Section 6 does the math on it.
+
+**The women's titles.** In parallel, FIDE awards **WGM (2300), WIM (2200)**, and further steps, each set 200 points below the corresponding open title (FIDE, 2022). Note the design carefully: these are *additional* titles reserved for women — women earn the open titles by exactly the same standards as everyone else, and the strongest women hold both sets. Whether separate women's titles help participation or undersell women's chess is a live, genuinely contested debate inside the game; this course's job is that you know what the letters mean when you see them.
+
+**Titles you'll actually encounter locally.** National federations award their own (US Chess crowns *national* masters via its own rating system, for instance) — remember Lesson 25: different pool, different rules; a national title is not a FIDE title. And arbiters and trainers carry FIDE credentials of their own — the licensed referees from Lesson 7 climb to **International Arbiter**, a fact that matters in Section 6 because it's a *career ladder you can climb without being a 2500 player*.
+
+**How rare is the summit?** Millions play rated chess; the world's population of grandmasters has never exceeded a few thousand *in total, ever awarded*. The precise count shifts monthly with FIDE's lists, so this course won't pretend to one — but the shape is what matters: the GM title sits past the 99.9th percentile of the people who were already serious enough to get rated. In 2024, an 18-year-old — **Gukesh Dommaraju** — became the youngest *world champion* in history, breaking the record Kasparov had held since 1985 (ChessBase, 2020). Prodigies are real. They are also, statistically, not the plan — and the next section is about all the ways into chess that don't require being one.
+
+:::reveal A news story calls a strong local player 'a chess grandmaster' because she dominates city tournaments with a 2210 national rating. Name two distinct reasons the label is wrong — and what she plausibly IS. ||| First, pool: a national rating isn't a FIDE rating (Lesson 25 — different population, different formula). Second, requirements: GM demands reaching FIDE 2500 PLUS norms — repeated ~2600-level performances against strong titled, multi-federation fields across at least 27 games (FIDE, 2022). At FIDE 2200 she'd plausibly be a Candidate Master; 'grandmaster' is a specific lifetime credential, not a compliment.
+
+## Sources
+- ChessBase. (2020). *35 years ago: Kasparov becomes youngest world champion in the history of chess*. https://en.chessbase.com/post/35-years-ago-kasparov-becomes-youngest-world-champion-in-the-history-of-chess
+- Fédération Internationale des Échecs. (2022). *International title regulations* (FIDE Handbook B.01). https://handbook.fide.com/chapter/B012022`,
+      recallContent: [
+        {
+          prompt: "Who designed the chess rating system, and when did the big federations adopt it?",
+          answer:
+            "Arpad Elo, a Hungarian-American physics professor. US Chess implemented it in 1960; FIDE adopted it in 1970 and published its first international list in 1971.",
+        },
+        {
+          prompt: "Why can't you farm a high Elo rating by beating weaker players?",
+          answer:
+            "Because Elo pays by surprise: wins you were expected to score move your rating almost nothing, while upsets pay heavily. The system is opponent-aware and self-correcting.",
+        },
+      ],
+    },
+    {
+      slug: "chess-where-to-play",
+      title: "27 · Where you actually play: clubs, tournaments, and the two big platforms",
+      section: "Section 5 · Organized chess: ratings, titles, and where you fit",
+      body: `Everything so far becomes real the day you play a game that counts. Here's the practical geography of organized chess, from tonight to your first rated tournament.
+
+**Start where the boards already are.** A school chess club, a public library program, a community club: this layer costs little or nothing, and it supplies the two things Lesson 16 said solo study can't — live opponents slightly better than you, and people to review games with. No school club? Starting one is a two-person project: a faculty sponsor, a room, a few sets. (File that thought; Section 6 counts club-founding as entrepreneurship, because it is.)
+
+**Your first rated tournament.** In the U.S., rated play runs through **US Chess**: you join the federation, and any sanctioned event you enter — a Saturday scholastic, a weekend open — reports results into the national rating system, and your number is born (US Chess, n.d.). Most open tournaments use the **Swiss system**: nobody is eliminated, and each round pairs players with the same score against each other — winners meet winners, so by the last round you're facing exactly your level, whatever your level turns out to be. Expect **sections** grouped by rating so novices aren't fed to experts, published **time controls** (Lesson 10 lets you read them now), scoresheets (Lesson 5), and touch-move enforced for real (Lesson 8). A scholastic tournament is one of the friendlier competitive environments in youth sports — but it is a real one, with an arbiter or tournament director applying the actual rules from Section 2.
+
+**The two big online platforms.** Both give unlimited opponents, puzzles, and analysis; know how they differ, because the difference is a business-model lesson:
+
+- **Chess.com** is the largest commercial platform — a company with subscriptions, ads, sponsored events, and hired streamers and writers. Its scale is why the boom statistics from Lesson 22 ran through it (Netflix, 2020).
+- **Lichess** is the philosophical counterweight: begun in **2010** by the French programmer **Thibault Duplessis** as a hobby project, it is **free and open-source, carries no ads, sells no data, and runs on donations** — "patrons" who voluntarily fund the servers (Lichess, n.d.). Everything is free for everyone, full stop.
+
+The pair is a live economics exhibit you'll revisit in Section 6: the same product — online chess — sustainably delivered by a venture-scale subscription business *and* by a donation-funded open-source project. Neither model is a charity case; both have run for years at massive scale.
+
+**Practical online defaults for a student:** play rapid (10+ minutes) when you're practicing, not just bullet (Lesson 16); do the daily puzzles; use each site's free analysis on your finished games — self-diagnosis first, remember. And set your expectations about numbers now: your online rating will not match your future US Chess rating, which will not match your future FIDE rating (Lesson 25). All three can be true about the same you.
+
+:::reveal It's round 4 of a Swiss-system tournament. You've lost every game, and your friend has won every game. Whom does each of you face this round — and why do organizers love this design? ||| The Swiss pairs by score: your friend plays another 3-0, and you play another 0-3. Nobody is eliminated, everyone plays every round, and the field self-sorts — by the final round, both of you are facing opponents of exactly your demonstrated level that weekend. Fair games for the whole hall, decisive standings at the top, no one sent home Friday night.
+
+## Sources
+- Lichess. (n.d.). *About lichess.org*. https://lichess.org/about
+- Netflix. (2020, November 23). *From 'The Queen's Gambit' to a record-setting checkmate*. https://about.netflix.com/en/news/the-queens-gambit-netflix-most-watched-scripted-limited-series
+- US Chess. (n.d.). *About*. https://new.uschess.org/about`,
+      recallContent: [
+        {
+          prompt: "GM and IM require more than a rating. What's the extra requirement, in one breath?",
+          answer:
+            "Norms: repeated title-level tournament performances (for GM, ~2600 performance against ~2380+ average opposition) in events with titled, multi-federation fields, totaling at least 27 games — usually three 9-round events (FIDE Handbook B.01).",
+        },
+        {
+          prompt: "Are FIDE titles temporary rankings?",
+          answer:
+            "No — titles are earned once and held for life, recognized in all 204 FIDE member federations. Ratings float; the letters don't.",
+        },
+      ],
+    },
+    {
+      slug: "chess-quiz-organized",
+      title: "28 · Quiz: ratings, titles, and the pyramid",
+      section: "Section 5 · Organized chess: ratings, titles, and where you fit",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What are the three layers of organized chess, bottom to top?",
+            options: [
+              "Clubs/schools → national federations (like US Chess) → FIDE",
+              "Online platforms → sponsors → the world champion",
+              "Cities → states → the United Nations",
+              "Players → streamers → engines",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One connected pyramid: local clubs feed nationally rated events run under US Chess (or your country's federation), which is one of FIDE's 204 members; FIDE runs titles, the Olympiad, and the world championship cycles.",
+            sourceLessonSlug: "chess-how-organized-chess-works",
+          },
+          {
+            prompt: "What is the Chess Olympiad?",
+            options: [
+              "FIDE's flagship national-team event — first held officially in London in 1927, now roughly biennial with open and women's sections",
+              "The Olympic Games' chess event",
+              "An annual online blitz championship",
+              "The world championship match itself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sixteen teams contested the 1927 Hamilton-Russell Cup (Hungary won); today well over a hundred nations send four-board teams. Chess's World Cup, in effect.",
+            sourceLessonSlug: "chess-how-organized-chess-works",
+          },
+          {
+            prompt: "How old is the Women's World Championship?",
+            options: [
+              "As old as the Olympiad — first held in London in 1927, won by Vera Menchik",
+              "It began in the 1990s",
+              "It began after The Queen's Gambit aired",
+              "There has never been a separate women's world title",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same 1927 London gathering that hosted the first official Olympiad crowned Menchik the first Women's World Champion.",
+            sourceLessonSlug: "chess-how-organized-chess-works",
+          },
+          {
+            prompt: "Who created the chess rating system, and what was his day job?",
+            options: [
+              "Arpad Elo — physics professor (and master-level player)",
+              "Wilhelm Steinitz — world champion",
+              "Claude Shannon — information theorist",
+              "Thibault Duplessis — programmer",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Elo's system was implemented by US Chess in 1960 and adopted by FIDE in 1970 (first international list, 1971). Versions of it now rank esports and more.",
+            sourceLessonSlug: "chess-elo-explained",
+          },
+          {
+            prompt: "In Elo, what determines how many points a single game moves your rating?",
+            options: [
+              "The size of the surprise — how far your result deviates from the expected score, scaled by your K-factor",
+              "A flat 10 points per win",
+              "The length of the game in moves",
+              "The tournament's prize fund",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Expected results pay almost nothing; upsets pay heavily. That's what makes the system self-correcting and impossible to farm against weak opposition.",
+            sourceLessonSlug: "chess-elo-explained",
+          },
+          {
+            prompt: "Your friend's blitz rating on one website is 1980; your FIDE classical rating is 1610. What do these numbers say about who's stronger?",
+            options: [
+              "Essentially nothing — they're coordinates in separate pools with different formulas, floors, and populations",
+              "Your friend is 370 points stronger",
+              "You are stronger, because FIDE ratings run higher",
+              "Whoever played more games is stronger",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ratings don't translate across pools. The same person routinely holds several ratings hundreds of points apart, none of them 'wrong.'",
+            sourceLessonSlug: "chess-elo-explained",
+          },
+          {
+            prompt: "Why do developing young players have a higher K-factor?",
+            options: [
+              "So their ratings move quickly — the system is still learning who they are, and they're improving fast",
+              "As a reward for joining young",
+              "To protect adults from losing points to them",
+              "It's a typo in the regulations",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The K-factor scales rating movement. High K for new/young players makes the number converge on reality faster during the years skill changes fastest.",
+            sourceLessonSlug: "chess-elo-explained",
+          },
+          {
+            prompt: "Match the FIDE rating requirement to the title: 2500, 2400, 2300, 2200.",
+            options: [
+              "GM, IM, FM, CM",
+              "CM, FM, IM, GM",
+              "GM, FM, IM, CM",
+              "IM, GM, CM, FM",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Grandmaster 2500, International Master 2400, FIDE Master 2300, Candidate Master 2200 (FIDE Handbook B.01) — with GM and IM additionally requiring norms.",
+            sourceLessonSlug: "chess-titles",
+          },
+          {
+            prompt: "What is a GM norm?",
+            options: [
+              "A tournament performance around 2600 against strong (avg. 2380+) titled, multi-federation opposition — accumulated across at least 27 games, typically three 9-round events",
+              "Any tournament victory",
+              "A 2500 rating held for one year",
+              "A certificate purchased from FIDE",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Norms force the title to certify a sustained level against title-level fields — one hot weekend can't make a grandmaster (FIDE, 2022).",
+            sourceLessonSlug: "chess-titles",
+          },
+          {
+            prompt: "How long does a FIDE title last, and where is it recognized?",
+            options: [
+              "For life, in every FIDE member federation — all 204 of them",
+              "One year, renewable",
+              "Until your rating drops below the threshold",
+              "Only in your home country",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Titles are permanent credentials; ratings float. That's why 'GM' means the same thing in Lagos, Lima, and London.",
+            sourceLessonSlug: "chess-titles",
+          },
+          {
+            prompt: "How do the women's titles (WGM, WIM) relate to the open titles?",
+            options: [
+              "They're additional titles set 200 rating points below the corresponding open titles — women also earn open titles by the identical standards",
+              "They replace the open titles for women",
+              "They require higher ratings than open titles",
+              "They expire unless defended annually",
+            ],
+            correctIndex: 0,
+            explanation:
+              "WGM = 2300, WIM = 2200 (FIDE Handbook B.01). The strongest women hold both sets; whether separate women's titles help or hurt is a live debate inside chess.",
+            sourceLessonSlug: "chess-titles",
+          },
+          {
+            prompt: "What happened in world championship history in 2024?",
+            options: [
+              "Gukesh Dommaraju, 18, became the youngest world champion ever, breaking Kasparov's 1985 record",
+              "Kasparov returned and reclaimed the title",
+              "The title was abolished",
+              "A computer was allowed to compete",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Kasparov's youngest-champion record (age 22, Moscow 1985) stood for 39 years until an 18-year-old broke it in 2024.",
+            sourceLessonSlug: "chess-titles",
+          },
+          {
+            prompt: "In a Swiss-system tournament, how are players paired each round?",
+            options: [
+              "Against opponents with the same current score — winners meet winners, and nobody is eliminated",
+              "Randomly every round",
+              "Single elimination — lose and you're out",
+              "By age group",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The field self-sorts: by the last round you face your demonstrated level. Everyone plays all rounds; the top decides the standings.",
+            sourceLessonSlug: "chess-where-to-play",
+          },
+          {
+            prompt: "How does a U.S. student's game become nationally rated?",
+            options: [
+              "Join US Chess and play in a sanctioned event — results report into the national rating system",
+              "Submit a video of the game to FIDE",
+              "Win three casual games at any club",
+              "Reach 1500 online first",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Rated play runs through the federation (US Chess, founded 1939): sanctioned events feed the national system. FIDE-rated events are a later, international layer.",
+            sourceLessonSlug: "chess-where-to-play",
+          },
+          {
+            prompt: "Chess.com and Lichess deliver a similar product with opposite economics. Which description is accurate?",
+            options: [
+              "Chess.com is the largest commercial platform (subscriptions, ads, sponsored events); Lichess (founded 2010 by Thibault Duplessis) is free, open-source, ad-free, and donation-funded",
+              "Both are owned by FIDE",
+              "Lichess charges subscriptions; Chess.com is a nonprofit",
+              "Chess.com is open-source; Lichess sells user data",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Two sustainable models for one product — a business-model exhibit Section 6 returns to. Lichess's about page: no ads, no data sales, patrons fund the servers.",
+            sourceLessonSlug: "chess-where-to-play",
+          },
+        ],
+      },
+    },
   ],
 };
