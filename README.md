@@ -112,8 +112,9 @@ pnpm test        # Vitest — unit + the isolation suite
 
 Owner-only review surface for everything proposed but not yet built — the *She Did the Work* course
 proposals plus a research seed per subject, the extra civics courses, and the Travel & Living Abroad
-track. Leave a note on any item and it lands in `future_work_notes`; read the notes back from a
-terminal, no copy-paste:
+track. Groups render as collapsible sections (item count in the heading; only the first starts
+open), so 40+ proposals scan as a screenful of headings. Leave a note on any item and it lands in
+`future_work_notes`; read the notes back from a terminal, no copy-paste:
 
 ```bash
 pnpm future:list                  # open notes, all schools (--tenant <slug> · --status open|done|all

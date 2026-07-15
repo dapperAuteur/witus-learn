@@ -269,6 +269,19 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   on purpose (Neon egress): 30s server-side debounce + a client guard on the ping, one player write
   per ~20s and on pause/leave (never on the timeupdate tick), and the course page reads completion +
   last-viewed + positions in ONE query that *replaces* the old completed-ids query.
+- ✅ **Sticky site header** (\`fix/ui-sticky-header-collapsible-future\`) — the header now stays at the
+  top on every (tenant) page (BAM: "header should be sticky … so it's usable"), so nav is reachable
+  mid-way through a long lesson. A client shell (\`StickyHeader\`) owns the stuck-state shadow and
+  publishes the measured height as \`--site-header-h\`; the lesson page's progress sub-header and the
+  admin sidebar rail offset by it so the bars **stack** instead of fighting, and anchor jumps (skip
+  link, \`/explore#map\`) get matching \`scroll-padding\` — scoped so \`/downloads\`, \`/offline\`, \`/kids\`
+  and \`/embed/*\` (no site header) are untouched. The acting-as banner deliberately scrolls away: the
+  "Studying as" switcher pinned in the bar already carries that signal.
+- ✅ **\`/admin/future\` collapses** (\`fix/ui-sticky-header-collapsible-future\`) — each group heading
+  (She Did the Work, subject research, proposals, Mansa Gold, …) is now a native \`<details>\` with an
+  item count, all collapsed by default except the first (the 1-item overview) — BAM: "the list and
+  scroll is too long". 40+ proposals scan as a screenful of headings; item cards, notes, and the
+  saved-for-offline copy work unchanged (native \`<details>\` needs no JS).
 - ⚪ **Resume for multi-part audio + embeds** — the position is remembered for direct-media
   audio/video only. \`MultiPartPlayer\` (a long recording split into parts) would additionally need the
   part index, and YouTube/Vimeo embeds expose no time to us without their iframe APIs. Not started.
