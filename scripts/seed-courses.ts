@@ -100,6 +100,7 @@ import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
+import { LABOR_MEXICO_COURSE } from "./data/labor-mexico-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
@@ -661,6 +662,17 @@ async function main() {
     // Section 5 is the erosion: coverage down 25 points in the West since 1998, OT-Mitgliedschaft,
     // the east/west gap, and ~40% of firms over 2,000 employees engineering out of the parity board.
     { slug: "labor-germany", course: LABOR_GERMANY_COURSE, category: "Culture & History" },
+    // Mexico — Wave 1 of the Workers' Rights country track, and the ANSWER to the anchor's bleak ILO
+    // lesson ("the floor is made of paper"). Teaches the protection contract (a collective agreement
+    // signed between a company and a union the workers never heard of — sometimes before anyone was
+    // hired — which then legally blocked a real union), Mexico's own 2019 labor reform and the
+    // legitimation deadline of 1 May 2023, and the USMCA Rapid Response Labor Mechanism — the only
+    // genuinely ENFORCEABLE international labor tool in the whole track, taught from the treaty text
+    // (Annex 31-A) rather than from summaries. Deliberately teaches the RRM's LIMITS and the cases the
+    // US LOST (San Martín, 13 May 2024), and refuses the
+    // US-saves-Mexico framing: Mexico's law came first (1 May 2019) and the RRM only enforces it.
+    // Scale of protection contracts is NOT quantified — no reliable count exists and the course says so.
+    { slug: "labor-mexico", course: LABOR_MEXICO_COURSE, category: "Culture & History" },
     // Golf — the first of the sports courses. Six sections: how to play, the Rules (cited to
     // the 2023 code), strategy + the World Handicap System, history (incl. the documented
     // record of racial and gender exclusion — students read the January 1962 *Golfdom* trade

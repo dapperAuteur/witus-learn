@@ -548,6 +548,31 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   right and the "golden cage" critique from the left. Cited to the German statutes themselves,
   Destatis, IAB, OECD/AIAS, ETUI and the Hans-Böckler-Stiftung. Registered in \`seed-courses.ts\`;
   **no migration** — \`pnpm seed:courses\`.
+- 🔧 **Mexico: The Protection Contract, and the Trade Deal That Came for It** (Culture & History,
+  \`content/labor-mexico\`) — **Wave 1 of the workers'-rights country track** and the **answer to the
+  anchor's bleak ILO lesson** ("the floor is made of paper"). 5 sections · 10 teaching lessons ·
+  5 quizzes (15–16-question banks, above the 10-question attempt cap so retries rotate) · 1 exercise.
+  Teaches the **protection contract** — a real, registered collective agreement signed between a
+  company and a union the workers never heard of, often before anyone was hired, which then legally
+  **blocked** a genuine union — and rewires the student's core question from "*is there a union?*" to
+  "**whose union is it?**". Then Mexico's **own 2019 labor reform** (personal/free/secret vote; the
+  \`constancia de representatividad\`; the **legitimation** deadline of **1 May 2023**, when the great
+  majority of ~139,000 registered contracts died for want of a worker vote) and the **USMCA Rapid
+  Response Labor Mechanism** — the **only genuinely enforceable international labor tool in the whole
+  track**, taught from the treaty text (**Annex 31-A**, US+Mexico only; a facility-specific **tariff
+  penalty**; priority sectors **exclude agriculture**). Accuracy posture is the point: the RRM is
+  taught as **leverage, not authorship** (Mexico's law came first, 1 May 2019, more than a year before
+  USMCA entered into force 1 July 2020; the treaty text itself grounds the reform in a Mexican
+  electoral mandate), and its **limits** are taught through the cases that went **badly** — the
+  **San Martín / Grupo México mine** panel the US **lost** (13 May 2024: the RRM enforces a right, it
+  cannot create one) and **Manufacturas VU / Piedras Negras**, where remediation was agreed and the
+  company simply **closed the plant** (10 Oct 2023, ~400 workers). **GM Silao** (2021–22, SINTTIA) is
+  the win; the **2026 Faurecia request** (18 May 2026) shows the tool survived a change of US
+  administration; the **1 July 2026 joint review** (US declined the 16-year extension → annual
+  reviews) is dated and left un-predicted. The scale of protection contracts is **deliberately not
+  quantified** (no reliable count exists, and the course says so), and an unverifiable "BBB" petition
+  named in an early draft was **cut rather than cited**. Registered in \`seed-courses.ts\`; **no
+  migration** — \`pnpm seed:courses\`. Cross-links to the anchor and *Know Your Rights at Work*.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
