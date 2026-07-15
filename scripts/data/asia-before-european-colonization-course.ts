@@ -352,5 +352,356 @@ So here is the course's claim, stated with the discipline it will demand of ever
         ],
       },
     },
+    // ────────────── SECTION 2 · SOUTH ASIA ──────────────
+    {
+      slug: "asia-indus-cities",
+      title: "3 · The Indus cities, and the script nobody can read",
+      section: "Section 2 · South Asia: Indus to the Mughals",
+      body: `South Asia's story opens with a civilization that has no named kings, no readable words, and some of the best municipal engineering of the ancient world.
+
+The **Indus (or Harappan) civilization** flourished in its mature urban phase from roughly **2600 to 1900 BCE**, along the Indus River and the now-dry Ghaggar-Hakra system, in present-day Pakistan and northwest India. Its best-known cities are **Mohenjo-daro** and **Harappa** in Pakistan, and **Dholavira** and **Rakhigarhi** in India. Archaeologists have recorded well over a thousand settlements, spread across an area larger, by common estimates, than ancient Egypt and Mesopotamia combined (Kenoyer, 1998; Possehl, 2002). This was one of the world's first urban civilizations, contemporary with Old Kingdom Egypt and the cities of Sumer, and it traded with the latter: Mesopotamian texts record goods from a land called **Meluhha**, usually identified with the Indus region (Possehl, 2002).
+
+What the cities are famous for is **planning**. Mohenjo-daro's streets run in broadly regular alignments; houses were built of fired brick in standardized proportions; and, most striking to modern eyes, the cities were plumbed. Covered drains ran down the streets, private houses connected to them, and many houses had dedicated bathing platforms. Mohenjo-daro's **Great Bath**, a watertight brick tank about 12 meters long, is among the earliest known public water structures anywhere (Kenoyer, 1998; UNESCO World Heritage Centre, n.d.). Weights recovered across Indus sites follow a single standardized system, which tells you commerce over a huge area ran on shared rules.
+
+Now the part every honest course must say plainly. **The Indus script is undeciphered.** Roughly four to seven hundred distinct signs, by the main catalogs, appear on seals, tablets, and pottery. The inscriptions are short: most are only a few signs long, and even the longest run to just a few dozen. There is no bilingual text, no Rosetta Stone. We do not know what language its makers spoke, and after more than a century of attempts, no proposed decipherment has won scholarly acceptance. The dispute goes even deeper: Farmer, Sproat, and Witzel (2004) argued that the signs may not encode language at all, while specialists like Parpola (1994) maintain that they do. Both positions are live; this course asserts neither. What that means in practice is humbling: a civilization of perhaps a million or more people is known to us **entirely through archaeology**, with no names, no dates in its own voice, no stories.
+
+Notice what is also missing from the digs, because the absence is evidence too. No grand royal tombs. No monumental palaces or unambiguous temples on the Egyptian or Mesopotamian model have been identified (Possehl, 2002). Whether that reflects a genuinely different political order or simply the limits of what survives, archaeologists still debate.
+
+Around **1900 BCE** the urban system faded: cities shrank, writing and the weight system fell out of use, and settlement shifted eastward. The causes are debated (shifting rivers, a weakening monsoon, declining trade), and the old story that invading "Aryans" destroyed the cities is **rejected**: the famous "massacre" once claimed at Mohenjo-daro did not withstand re-examination, and the urban decline predates the period associated with Indo-Aryan migration (Possehl, 2002; Kenoyer, 1998). When a claim dies in the evidence, the course says so.
+
+:::reveal What is the honest, current state of the Indus script, stated with both layers of uncertainty? ||| It is undeciphered: several hundred distinct signs, short inscriptions (the longest only a few dozen signs), no bilingual text, no accepted decipherment, unknown underlying language. And beneath that, scholars actively dispute whether the signs encode language at all (Farmer, Sproat & Witzel 2004 say maybe not; Parpola 1994 says they do). The course asserts neither side.
+
+## Sources
+- Kenoyer, J. M. (1998). *Ancient cities of the Indus Valley civilization*. Oxford University Press.
+- Possehl, G. L. (2002). *The Indus civilization: A contemporary perspective*. AltaMira Press.
+- Farmer, S., Sproat, R., & Witzel, M. (2004). The collapse of the Indus-script thesis: The myth of a literate Harappan civilization. *Electronic Journal of Vedic Studies, 11*(2), 19-57.
+- Parpola, A. (1994). *Deciphering the Indus script*. Cambridge University Press.
+- UNESCO World Heritage Centre. (n.d.). *Archaeological ruins at Moenjodaro*. https://whc.unesco.org/en/list/138/`,
+      recallContent: [
+        {
+          prompt: "Give the Indus civilization's mature dates, two cities in each modern country, and its scale.",
+          answer:
+            "Mature urban phase c. 2600-1900 BCE. Mohenjo-daro and Harappa (present-day Pakistan); Dholavira and Rakhigarhi (present-day India). Well over a thousand recorded settlements, covering an area larger by common estimates than Egypt and Mesopotamia combined.",
+        },
+        {
+          prompt: "What physical evidence shows Indus cities were planned, and what is notably absent from the digs?",
+          answer:
+            "Regular street alignments, standardized fired bricks, a single weight system across sites, covered street drains with house connections, bathing platforms, and the Great Bath at Mohenjo-daro. Absent: readable texts, named rulers, grand royal tombs, and unambiguous palaces or temples.",
+        },
+      ],
+    },
+    {
+      slug: "asia-maurya-ashoka",
+      title: "4 · Maurya: the emperor who published his conscience",
+      section: "Section 2 · South Asia: Indus to the Mughals",
+      body: `About fifteen centuries after the Indus cities faded, South Asia produced its first documented empire, and with it one of the strangest royal documents in world history: an emperor's public statement of remorse, carved on rocks across a subcontinent.
+
+**Chandragupta Maurya** seized power in the Ganges kingdom of Magadha around **321 BCE**, in the turbulence after Alexander of Macedon's armies withdrew from the Indus region, and built an empire from his capital at **Pataliputra** (near modern Patna). A Greek ambassador, **Megasthenes**, lived at that court and wrote an account of it; his book survives only in fragments quoted by later authors, so historians use it carefully (Thapar, 2002). Note what this already tells you: large-scale empire, professional armies, and diplomatic exchange with the Hellenistic world are features of South Asian history from the fourth century BCE, two thousand years before any European power ruled an acre of it.
+
+The empire's most famous ruler is Chandragupta's grandson, **Ashoka** (reigned c. 268-232 BCE). Early in his reign he conquered **Kalinga**, on India's east coast. Then he did something no other ancient conqueror is known to have done: he had his reaction inscribed on stone, in public, across his empire. In his 13th Major Rock Edict, Ashoka states, in the edict's own figures, that a hundred and fifty thousand people were deported from Kalinga, a hundred thousand were killed, and many times that number perished, and that the killing "weighed heavily on his mind." Treat the numbers as Ashoka's claim rather than a verified census; ancient royal figures are rhetoric as much as arithmetic. But the document itself is real and datable, and its content is unique: a king advertising his own war's cost as a moral failure (Thapar, 2012).
+
+The **edicts** are the earliest substantial body of readable royal writing from South Asia: inscriptions on rocks and polished stone pillars, mostly in **Prakrit** written in the **Brahmi** script (with **Kharosthi** in the northwest, and at Kandahar, in present-day Afghanistan, a bilingual edict in **Greek and Aramaic**, addressed to the region's Hellenistic and Aramaic-reading population). In them Ashoka promotes what he calls *dhamma*: non-injury, truthfulness, respect across sects, provision of medical care and wells along roads. He also patronized Buddhism, and the Sri Lankan chronicles credit missions in his era, including his son Mahinda's to Sri Lanka, with carrying it beyond India; per the chronicles, note, which are later and devotional (Thapar, 2012). The lion capital of his pillar at Sarnath is today the national emblem of India.
+
+Here is the detail that connects this lesson to the whole course's method. After the Maurya empire ended, the Brahmi script was gradually forgotten in India itself. For centuries, people lived among Ashoka's pillars and could not read them. The script was deciphered in **1837** by **James Prinsep**, an East India Company mint official working with Indian pandits and accumulated scholarship, and only then did Ashoka re-emerge from legend into documented history (Thapar, 2012). Records get lost, and recovered, and the recovery is itself work you can date and attribute.
+
+One caution against the romance trap. Ashoka's remorse did not dissolve his empire: the edicts announce that he retained Kalinga, and they warn the forest peoples that he has power to punish. The Mauryan state ran on taxation, an army, and, per the political manual tradition associated with it, surveillance. An empire with a conscience is still an empire. This course will say the same about every state it admires.
+
+:::reveal What makes Ashoka's 13th Major Rock Edict unique among ancient royal inscriptions, and how should its casualty figures be read? ||| It is a conqueror's public, carved admission that his own war was a moral failure: it reports (in its own figures) 150,000 deported and 100,000 killed at Kalinga and says this weighed on the king's mind. The numbers should be read as Ashoka's claim, royal rhetoric rather than a verified census; what is solid is the datable document and its unprecedented content.
+
+## Sources
+- Thapar, R. (2012). *Aśoka and the decline of the Mauryas* (3rd ed.). Oxford University Press.
+- Thapar, R. (2002). *Early India: From the origins to AD 1300*. University of California Press.
+- Dhammika, S. (Trans.). (1993). *The edicts of King Asoka: An English rendering*. Buddhist Publication Society.`,
+      recallContent: [
+        {
+          prompt: "Date the Maurya empire's founding and Ashoka's reign, and name the capital.",
+          answer:
+            "Chandragupta Maurya took power in Magadha c. 321 BCE, after Alexander's withdrawal from the Indus region; capital Pataliputra (near modern Patna). Ashoka reigned c. 268-232 BCE.",
+        },
+        {
+          prompt: "In what languages and scripts were Ashoka's edicts written, and who read them again after they were forgotten?",
+          answer:
+            "Mostly Prakrit in the Brahmi script, Kharosthi in the northwest, plus a Greek-and-Aramaic bilingual at Kandahar. Brahmi was forgotten for centuries and deciphered in 1837 by James Prinsep, building on Indian pandits' and earlier scholars' work.",
+        },
+      ],
+    },
+    {
+      slug: "asia-gupta-zero",
+      title: "5 · Gupta India and the numerals you are using right now",
+      section: "Section 2 · South Asia: Indus to the Mughals",
+      body: `Look at any number on your screen. The system you are reading it in, ten digits, place value, a zero, was worked out in India, and this lesson traces exactly what is documented about that, because few claims in world history are misstated more often in both directions.
+
+The **Gupta empire** (c. **320-550 CE**) united much of northern India from, again, Magadha. Historians often label its era a "classical age" of Sanskrit culture, a convention worth a hedge (golden-age labels always are; this was also a society of hardening caste hierarchy, which Section 6 takes up). What is concrete: courtly Sanskrit literature reached a peak associated with the poet **Kalidasa**; and the Buddhist monastery-university at **Nalanda**, founded in this period, would draw students from across Asia for centuries, including the Chinese pilgrim Xuanzang in the 600s (Thapar, 2002).
+
+Now the mathematics, stated link by documented link (Plofker, 2009):
+
+- **Place value.** The astronomer **Aryabhata**, writing his *Aryabhatiya* in **499 CE**, computed with a decimal place-value system, gave a value of pi accurate to four decimal places, built early trigonometric tables, and proposed that the earth rotates. Place-value notation is in confident use in Indian mathematics from at least this period.
+- **Zero as a number.** Several ancient systems, Babylonian and Maya among them, used a placeholder for an empty position. The documented Indian contribution is bigger: treating zero as a **number you can calculate with**. **Brahmagupta**, in his *Brahmasphutasiddhanta* (**628 CE**), states rules for arithmetic with zero and with negative numbers, the earliest known text to do so systematically. (He also ruled that zero divided by zero is zero, which is wrong, and the honesty of recording a great mathematician's error is part of this course's method.)
+- **The oldest physical zeros.** A dot-zero appears in a Khmer inscription in Cambodia dated **683 CE**, and the **Gwalior temple inscription** of **876 CE** is the classic securely dated zero in India, written much as we write it. The **Bakhshali manuscript**, a birch-bark mathematical text with hundreds of dot-zeros, made headlines in 2017 when radiocarbon tests at the Bodleian Library returned dates spanning roughly the third to tenth centuries CE; specialist historians of Indian mathematics immediately disputed the library's "oldest zero" framing, arguing the manuscript's text is a unified later composition (Plofker et al., 2017). So: the headline is contested; Gwalior 876 is safe; Brahmagupta 628 is textual bedrock.
+- **Transmission.** In Abbasid Baghdad around the **820s CE**, the mathematician **al-Khwarizmi** wrote a treatise on calculating with the Indian numerals; Arabic mathematicians themselves called the system "Hindi" reckoning. Latin translations of such works, and Fibonacci's *Liber Abaci* (**1202**), carried the digits into Europe, which is why Europeans called them "Arabic numerals." The label records the messenger, not the origin, and both deserve credit: Indian invention, Arabic transmission and development, European adoption (Plofker, 2009). That chain, India to Baghdad to Europe, is this course's connective tissue in miniature, and you will see it again in Section 5.
+
+Why does this lesson matter beyond trivia? Because it models how to make a "who invented it" claim survive scrutiny: name the text, name the date, separate placeholder from number, flag the contested manuscript, and credit the transmission chain. "India invented our numbers" done sloppily invites debunking; done precisely, it is one of the best-documented facts in the history of science.
+
+:::reveal Lay out the documented chain for zero and the decimal numerals, with dates, including the contested link. ||| Place value in use by Aryabhata's Aryabhatiya (499 CE); zero treated as a number with arithmetic rules in Brahmagupta's Brahmasphutasiddhanta (628 CE); physical zeros in a Khmer inscription (683 CE) and the Gwalior inscription (876 CE). The Bakhshali manuscript's radiocarbon dates (3rd-10th centuries) are CONTESTED as evidence for an earlier zero (Plofker et al., 2017). Transmission: al-Khwarizmi in Baghdad (c. 820s) wrote on the Indian numerals; Fibonacci's Liber Abaci (1202) helped carry them into Europe, hence the misnomer "Arabic numerals."
+
+## Sources
+- Plofker, K. (2009). *Mathematics in India*. Princeton University Press.
+- Plofker, K., Keller, A., Hayashi, T., Montelle, C., & Wujastyk, D. (2017). The Bakhshālī manuscript: A response to the Bodleian Library's radiocarbon dating. *History of Science in South Asia, 5*(1), 134-150.
+- Thapar, R. (2002). *Early India: From the origins to AD 1300*. University of California Press.`,
+      recallContent: [
+        {
+          prompt: "What exactly did Brahmagupta do in 628 CE, and what error of his does the course record?",
+          answer:
+            "In the Brahmasphutasiddhanta he stated systematic rules for arithmetic with zero and with negative numbers, the earliest known text to treat zero as a number to calculate with. He also ruled that zero divided by zero equals zero, which is wrong; the course records the error deliberately.",
+        },
+        {
+          prompt: "Why are 'our numbers' called Arabic numerals, and what does the course say the label records?",
+          answer:
+            "Because Europe received them via the Arabic world: al-Khwarizmi wrote on calculation with the Indian numerals in Baghdad c. 820s, and Latin translations plus Fibonacci's Liber Abaci (1202) spread them in Europe. The label records the messenger, not the origin; Arabic mathematicians themselves called it Hindi reckoning.",
+        },
+      ],
+    },
+    {
+      slug: "asia-mughals",
+      title: "6 · The Mughals: an empire of outsiders, before the Europeans",
+      section: "Section 2 · South Asia: Indus to the Mughals",
+      body: `The last South Asian empire before British rule was founded by a Central Asian prince who wrote poetry in Turkic, traced his ancestry to both Timur and Genghis Khan, and had never seen India until he invaded it. Getting the Mughals right is the fastest way to get "European colonization" right, so this lesson does both.
+
+**Babur**, a Timurid ruler from the Fergana valley in present-day Uzbekistan, defeated the Delhi sultan Ibrahim Lodi at the **First Battle of Panipat in 1526** and founded the dynasty Europeans came to call **"Mughal," a Persian form of "Mongol."** Even the name is an outsiders' label for outsiders. Babur's own memoir, the *Baburnama*, is refreshingly frank about what he was doing: conquering, and not always admiring what he found. The empire he founded was Muslim-ruled, Persian-speaking at court, and governed a population that remained mostly non-Muslim throughout (Richards, 1993; Eaton, 2019).
+
+His grandson **Akbar** (reigned **1556-1605**) built the machine that made the dynasty durable: a graded imperial service (the *mansabdar* system) that folded Rajput and other Hindu elites into the ruling class, systematic land-revenue measurement associated with his minister Todar Mal, abolition of the tax on non-Muslim pilgrims and then of the *jizya* poll tax, and a court policy of *sulh-i kul*, "peace with all," that staged debates among Muslim, Hindu, Jain, Zoroastrian, and Christian scholars (Richards, 1993). Hedge where the record demands it: Akbar's much-cited "new religion," the *Din-i Ilahi*, was a small court discipleship circle, not a mass faith, and historians debate whether "religion" is even the right word for it (Eaton, 2019).
+
+The Mughal economy is where this course's central thesis gets concrete. In Maddison's (2007) reconstruction, read with the caveats from Lesson 2, the subcontinent under the Mughals was roughly a **quarter of world output around 1700**, and Mughal **Bengal's** cotton weavers supplied textiles to buyers from Southeast Asia to Europe. When England's ambassador **Sir Thomas Roe** reached Emperor Jahangir's court in **1615**, he came as a supplicant asking trade permission, and European trading companies operated for the next century-plus at the empire's sufferance, from coastal footholds (Richards, 1993). Shah Jahan's **Taj Mahal** (completed mid-1600s; UNESCO World Heritage since 1983) is the era's best-known monument, built at the center of that wealth.
+
+Now the teaching point the course title depends on. **The Mughals were themselves outsiders who conquered and ruled India for two centuries before any European power ruled any of it.** Conquest, foreign dynasties, religious difference between rulers and ruled, extraction of revenue: all of it was present in South Asia long before 1757. So "European colonization" cannot mean "the arrival of outsiders"; it names something more specific, and the difference is worth stating carefully. The Mughals settled where they ruled; Delhi and Agra were the empire's centers, its wealth was largely spent and reinvested inside the subcontinent, and the dynasty became a South Asian dynasty. British rule, by contrast, was run by a company and then a distant crown, with sovereignty, profits, and final decisions seated in London. Historians argue about how much weight each difference carries, and the follow-on Great Divergence course takes that up; what this course asserts is only the datable sequence.
+
+That sequence, precisely: **Aurangzeb**, the last of the powerful emperors, died in **1707**; the empire fragmented into successor states over the following decades; and the East India Company's victory at **Plassey (1757)** and its acquisition of the **diwani** (revenue rights) of Bengal in **1765** began territorial European rule, with a Mughal emperor surviving as a figurehead in Delhi until the British deposed the last one in 1857 (Richards, 1993). European colonization of India was real, datable, and transformative. It was not the beginning of Indian contact with conquest, and a course that taught it that way would flatten two millennia of documented South Asian statecraft into a waiting room.
+
+:::reveal Why do the Mughals prove that "European colonization" cannot simply mean "outsiders arrived," and what does the course say it does mean here? ||| Because the Mughals WERE outsiders: a Central Asian, Persian-speaking, Muslim dynasty (Babur, descended from Timur and Genghis Khan, took Delhi in 1526) ruling a mostly non-Muslim subcontinent for two centuries before Plassey (1757). "European colonization" names something more specific and datable: rule seated abroad, with sovereignty and profits flowing to a distant company and crown, beginning territorially with Plassey and the 1765 Bengal diwani, whereas the Mughals settled, spent, and became a South Asian dynasty.
+
+## Sources
+- Richards, J. F. (1993). *The Mughal Empire* (The New Cambridge History of India, I.5). Cambridge University Press.
+- Eaton, R. M. (2019). *India in the Persianate Age, 1000-1765*. University of California Press.
+- Maddison, A. (2007). *Contours of the world economy, 1-2030 AD: Essays in macro-economic history*. Oxford University Press.
+- UNESCO World Heritage Centre. (n.d.). *Taj Mahal*. https://whc.unesco.org/en/list/252/`,
+      recallContent: [
+        {
+          prompt: "Who founded the Mughal empire, when, from where, and what does the dynasty's name mean?",
+          answer:
+            "Babur, a Timurid prince from the Fergana valley (present-day Uzbekistan), descended from Timur and Genghis Khan, defeated Ibrahim Lodi at the First Battle of Panipat in 1526. 'Mughal' is a Persian form of 'Mongol,' an outsiders' label for an outsider dynasty.",
+        },
+        {
+          prompt: "Give the datable sequence from Mughal peak to European territorial rule.",
+          answer:
+            "Akbar's consolidation 1556-1605; Roe arrives as a supplicant at Jahangir's court 1615; Maddison's estimate puts the subcontinent at roughly a quarter of world output c. 1700; Aurangzeb dies 1707 and the empire fragments; Plassey 1757; the Company takes Bengal's diwani 1765; the last Mughal is deposed 1857.",
+        },
+      ],
+    },
+    {
+      slug: "asia-quiz-2",
+      title: "Section 2 quiz · South Asia",
+      section: "Section 2 · South Asia: Indus to the Mughals",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What are the dates of the Indus civilization's mature urban phase?",
+            options: [
+              "Roughly 2600-1900 BCE",
+              "Roughly 1500-1000 BCE",
+              "Roughly 3500-3000 BCE",
+              "Roughly 800-400 BCE",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Contemporary with Old Kingdom Egypt and Sumer's cities; Mesopotamian texts record trade with a land called Meluhha, usually identified with the Indus region.",
+            sourceLessonSlug: "asia-indus-cities",
+          },
+          {
+            prompt: "What is the current scholarly status of the Indus script?",
+            options: [
+              "Undeciphered, with no accepted reading; scholars even dispute whether it encodes language at all",
+              "Deciphered in 1837 by James Prinsep",
+              "Readable but only partially translated",
+              "Proven to be an early form of Sanskrit",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No bilingual text exists, inscriptions are short, and no decipherment has won acceptance. Farmer, Sproat & Witzel (2004) argue the signs may not encode language; Parpola (1994) maintains they do.",
+            sourceLessonSlug: "asia-indus-cities",
+          },
+          {
+            prompt: "Which feature is the Indus cities' engineering signature?",
+            options: [
+              "Municipal water infrastructure: covered street drains, house connections, bathing platforms, the Great Bath",
+              "Stone pyramids over royal tombs",
+              "Massive city walls with chariot gates",
+              "Aqueducts on arched bridges",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Standardized bricks and weights point to shared rules over a huge area; what is missing (readable texts, named kings, unambiguous palaces or temples) is evidence too.",
+            sourceLessonSlug: "asia-indus-cities",
+          },
+          {
+            prompt: "What happened to the old claim that invading 'Aryans' destroyed the Indus cities?",
+            options: [
+              "It is rejected: the claimed massacre evidence did not withstand re-examination, and the urban decline predates the migration period",
+              "It was confirmed by radiocarbon dating",
+              "It remains the leading explanation",
+              "It was replaced by proof of a volcanic eruption",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The decline c. 1900 BCE is real; its causes (river shifts, weakening monsoon, trade decline) are debated. When a claim dies in the evidence, the course says so.",
+            sourceLessonSlug: "asia-indus-cities",
+          },
+          {
+            prompt: "What is unique about Ashoka's 13th Major Rock Edict?",
+            options: [
+              "A conqueror publicly inscribed remorse for his own war, reporting its deportations and deaths as a moral failure",
+              "It is the oldest writing found in India",
+              "It abolished the Mauryan army",
+              "It was written in Latin",
+            ],
+            correctIndex: 0,
+            explanation:
+              "No other ancient conqueror is known to have published such a statement. Its figures (150,000 deported, 100,000 killed, in the edict's own numbers) are Ashoka's claim, not a verified census.",
+            sourceLessonSlug: "asia-maurya-ashoka",
+          },
+          {
+            prompt: "How should the casualty figures in Ashoka's Kalinga edict be treated?",
+            options: [
+              "As the king's own reported figures, royal rhetoric rather than verified statistics",
+              "As exact counts from an imperial census",
+              "As a later forgery",
+              "As referring to animals, not people",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The document is real and datable; the numbers are its author's. Separating the two is the same discipline the course applies to Maddison's percentages.",
+            sourceLessonSlug: "asia-maurya-ashoka",
+          },
+          {
+            prompt: "What happened to the Brahmi script of Ashoka's edicts after the Mauryas?",
+            options: [
+              "It was gradually forgotten in India and deciphered only in 1837, by James Prinsep working with Indian pandits' scholarship",
+              "It remained in continuous use until today",
+              "It was banned by the Guptas",
+              "It was never written down",
+            ],
+            correctIndex: 0,
+            explanation:
+              "For centuries people lived among pillars they could not read. Records get lost and recovered, and the recovery is datable, attributable work.",
+            sourceLessonSlug: "asia-maurya-ashoka",
+          },
+          {
+            prompt: "Which languages appear on Ashoka's Kandahar edict, and why does that matter?",
+            options: [
+              "Greek and Aramaic, showing the Mauryan state addressed its Hellenistic and Aramaic-reading subjects in their own languages",
+              "Sanskrit and Tamil, showing a north-south divide",
+              "Chinese and Prakrit, showing Silk Road contact",
+              "Latin and Greek, showing Roman influence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The empire's northwest reached into present-day Afghanistan, where Alexander's successors had settled Greek speakers; most edicts elsewhere are Prakrit in Brahmi or Kharosthi.",
+            sourceLessonSlug: "asia-maurya-ashoka",
+          },
+          {
+            prompt: "What is the earliest known text to state systematic rules for arithmetic with zero?",
+            options: [
+              "Brahmagupta's Brahmasphutasiddhanta, 628 CE",
+              "Aryabhata's Aryabhatiya, 499 CE",
+              "Fibonacci's Liber Abaci, 1202",
+              "Euclid's Elements, c. 300 BCE",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Aryabhata computed with place value; Brahmagupta treated zero (and negatives) as numbers with stated rules, though he wrongly ruled that zero divided by zero is zero.",
+            sourceLessonSlug: "asia-gupta-zero",
+          },
+          {
+            prompt: "Why is the Bakhshali manuscript's 'world's oldest zero' claim taught as contested?",
+            options: [
+              "Its 2017 radiocarbon dates span roughly the 3rd to 10th centuries, and specialist historians dispute the oldest-folio framing (Plofker et al., 2017)",
+              "The manuscript was proven to be a modern forgery",
+              "It contains no zeros at all",
+              "Radiocarbon dating cannot be applied to birch bark",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The safe anchors are textual and epigraphic: Brahmagupta 628 CE, the Khmer inscription of 683 CE, and the Gwalior inscription of 876 CE.",
+            sourceLessonSlug: "asia-gupta-zero",
+          },
+          {
+            prompt: "Why are the decimal digits called 'Arabic numerals' in Europe?",
+            options: [
+              "Europe received them via the Arabic world (al-Khwarizmi c. 820s; Fibonacci 1202); the label records the messenger, not the Indian origin",
+              "They were invented in Baghdad",
+              "Arab traders invented them for bookkeeping",
+              "The name was chosen at random",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Arabic mathematicians themselves called the system Hindi reckoning. Indian invention, Arabic transmission and development, European adoption: all three links deserve credit.",
+            sourceLessonSlug: "asia-gupta-zero",
+          },
+          {
+            prompt: "Who founded the Mughal empire, and where was he from?",
+            options: [
+              "Babur, a Timurid prince from the Fergana valley in Central Asia, who won at Panipat in 1526",
+              "Akbar, a Rajput king from Gujarat",
+              "Aurangzeb, a Persian shah",
+              "Ashoka, from Magadha",
+            ],
+            correctIndex: 0,
+            explanation:
+              "He traced descent from both Timur and Genghis Khan; 'Mughal' is a Persian form of 'Mongol.' The dynasty was outsiders by origin and became South Asian by settlement.",
+            sourceLessonSlug: "asia-mughals",
+          },
+          {
+            prompt: "What did Akbar's statecraft include?",
+            options: [
+              "Folding Hindu elites into the imperial service, revenue reform, abolishing the jizya, and staged interfaith debate at court",
+              "Forced conversion of the whole population",
+              "Abolition of taxation",
+              "Closing India to all foreign trade",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The mansabdar system and sulh-i kul made a minority-led dynasty durable. His Din-i Ilahi is hedged as a small court circle, not a mass religion.",
+            sourceLessonSlug: "asia-mughals",
+          },
+          {
+            prompt: "What was Sir Thomas Roe's position when he reached Jahangir's court in 1615?",
+            options: [
+              "A supplicant ambassador asking trade permission from a far richer empire",
+              "A conqueror dictating terms",
+              "A colonial governor taking office",
+              "A missionary banned from court",
+            ],
+            correctIndex: 0,
+            explanation:
+              "For a century-plus after Roe, European companies operated at Mughal sufferance from coastal footholds; Maddison's (2007) estimate puts the subcontinent at roughly a quarter of world output c. 1700.",
+            sourceLessonSlug: "asia-mughals",
+          },
+          {
+            prompt: "Which sequence correctly orders the end of Mughal power and the start of British territorial rule?",
+            options: [
+              "Aurangzeb dies 1707 → fragmentation → Plassey 1757 → Bengal diwani 1765 → last emperor deposed 1857",
+              "Plassey 1757 → Aurangzeb dies 1707 → diwani 1765",
+              "Diwani 1765 → Panipat 1526 → Plassey 1757",
+              "Last emperor deposed 1857 → Plassey 1757 → Aurangzeb dies 1707",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Company's rule began territorially in Bengal after Plassey and the 1765 revenue grant, amid the fragmentation that followed Aurangzeb's death in 1707.",
+            sourceLessonSlug: "asia-mughals",
+          },
+        ],
+      },
+    },
   ],
 };
