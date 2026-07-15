@@ -628,5 +628,339 @@ And the pyramids: the royal cemeteries of Kush, at El-Kurru, Nuri, and Meroë, h
         ],
       },
     },
+
+    // ────────────── SECTION 3 · WEST AFRICA: GOLD, SALT, AND BOOKS ──────────────
+    {
+      slug: "africa-gold-roads",
+      title: "5 · Ghana, Mali, Songhai: three empires on the gold roads",
+      section: "Section 3 · West Africa: gold, salt, and books",
+      body: `Cross the Sahara. Between roughly the eighth and sixteenth centuries CE, the savanna belt where the desert meets the Niger River hosted a succession of large states that grew rich on one of the medieval world's great trade systems.
+
+**The trade first, because the empires ride on it.** The camel, established in Saharan use by the early centuries CE, made regular desert crossing possible; from about the eighth century, Muslim North African merchants ran caravans south. Southbound: salt above all, mined in slabs at desert sites like **Taghaza**, where Ibn Battuta stopped in 1352 and reported buildings and a mosque built of salt blocks (Levtzion & Hopkins, 2000). Northbound: **gold** from the Bambuk and Bure fields on the upper Senegal and Niger, worked by local producers and moved by Wangara merchant networks, plus ivory, and, plainly stated here and taught fully in Section 5, enslaved people. West African gold mattered far beyond the region: it fed the mints of North Africa and, through them, medieval Europe. Salt going the other way was not a quaint curiosity; in a hot savanna economy salt is a physiological necessity, storable, divisible, and in places it functioned as money. (You will meet a famous story about "silent trade," gold and salt exchanged by traders who never meet or speak. Travelers and geographers repeated it for centuries; no observer ever documented it firsthand, so this course tells it as what it is: a story merchants told about a trade they were not allowed to see up close.)
+
+**Ghana (Wagadu).** The first of the big states in the record: a **Soninke** kingdom, in present-day southeastern Mauritania and western Mali, and no relation to the modern country that borrowed its name in 1957. One of the earliest surviving Arabic mentions, attributed to the eighth-century astronomer al-Fazari and preserved by later writers, already calls it "the land of gold." Our best account is **al-Bakri** (1068), and Lesson 14 will make much of the fact that he compiled it in Muslim Spain from travelers' reports without ever going himself. What he describes is not a "tribe with gold" but an administration: a capital of two towns (a Muslim merchants' town with twelve mosques, and the royal town with the king's court); a king, pre-Islamic in religion, presiding over formal audiences; interpreters, a treasury, officials; and a customs system that taxed each donkey-load of salt one gold dinar coming in and two going out. Al-Bakri also records the royal monopoly rule: nuggets belong to the king, gold dust to the people (Levtzion & Hopkins, 2000). You may read elsewhere that the **Almoravids sacked Ghana in 1076**. Treat that as contested: the claim comes from later Arabic historians, and Conrad and Fisher (1982) argued the evidence for any conquest is thin; many specialists now describe Almoravid pressure and commercial reorientation rather than a sack. Ghana declined across the twelfth and thirteenth centuries; the region's power moved south.
+
+**Mali.** A **Mande** (Malinke) empire on the upper Niger, from the thirteenth century. Its founding story, Sundiata's victory at Kirina over Sumanguru of the Soso around 1235, comes to us mainly through the **oral epic** performed by jeliw (griots) and recorded in writing only in modern times, cross-checked against the fourteenth-century king lists of Ibn Khaldun; the course flags the date as traditional (Niane, 1965; Gomez, 2018). At its fourteenth-century height Mali controlled the goldfields and the desert ports, from the Atlantic coast to beyond Timbuktu. It is the best-documented state of the three, because visitors wrote it down: Lesson 6 is devoted to its most famous ruler, and in 1352-53 **Ibn Battuta traveled through Mali itself** and left an eyewitness account, praising above all the security of the roads, that a traveler had no more to fear from robbers than in any land he knew, while also complaining freely about customs that offended him. An honest witness, worth more than a flattering one (Levtzion & Hopkins, 2000).
+
+**Songhai.** Centered at **Gao** on the Niger bend. Under **Sunni Ali** (r. 1464-1492), who took Timbuktu in 1468, and then **Askia Muhammad** (r. 1493-1528), who seized the throne, made the hajj, and built a provincial administration with appointed governors, judges, and inspectors, Songhai became the largest of the three empires. It ended abruptly: in **1591**, a Moroccan force of a few thousand men crossed the Sahara with firearms and broke the Songhai army at **Tondibi**. The lesson usually drawn, gunpowder beats cavalry, is real but incomplete: the Moroccans could destroy the empire yet could not govern it, and the region fragmented. The scholars of Timbuktu recorded the whole catastrophe in their own chronicles, which is how we know it (Hunwick, 1999).
+
+One deliberate correction before the quiz: these three states were succession IN TIME, not a relay of one "kingdom of Africa." Different peoples (Soninke, Malinke, Songhai), different capitals, overlapping territories, three different languages. The gold roads are the continuity; the states are distinct, and this course keeps them so.
+
+:::reveal Al-Bakri never set foot in West Africa, yet his 1068 account is treated as prime evidence for the kingdom of Ghana. What in the CONTENT of his description makes it credible evidence of a real administration? ||| Its details are the boring, checkable kind that legends do not bother inventing: a two-town capital with counted mosques, formal court audiences with interpreters and officials, a customs schedule (one dinar per donkey-load of salt in, two out), and a royal-monopoly rule splitting nuggets from gold dust. Administrative plumbing of that specificity, gathered from merchants who had to deal with it, is evidence of a functioning state, though Lesson 14 teaches why secondhand compilation still demands caution.
+
+## Sources
+- Levtzion, N., & Hopkins, J. F. P. (Eds.). (2000). *Corpus of early Arabic sources for West African history*. Markus Wiener. (Original work published 1981)
+- Gomez, M. A. (2018). *African dominion: A new history of empire in early and medieval West Africa*. Princeton University Press.
+- Conrad, D., & Fisher, H. (1982). The conquest that never was: Ghana and the Almoravids, 1076. *History in Africa, 9*, 21-59.
+- Hunwick, J. O. (1999). *Timbuktu and the Songhay Empire: Al-Sa'di's Ta'rikh al-Sudan down to 1613*. Brill.
+- Niane, D. T. (1965). *Sundiata: An epic of old Mali* (G. D. Pickett, Trans.). Longman.
+- Green, T. (2019). *A fistful of shells: West Africa from the rise of the slave trade to the age of revolution*. University of Chicago Press.`,
+      recallContent: [
+        {
+          prompt: "Three empires, three peoples, three (approximate) periods.",
+          answer:
+            "Ghana/Wagadu: Soninke, documented from the eighth century, described by al-Bakri 1068, declining by the twelfth to thirteenth. Mali: Mande (Malinke), thirteenth to fifteenth centuries, founding dated traditionally to Sundiata c. 1235. Songhai: from Gao, dominant fifteenth to sixteenth centuries, destroyed at Tondibi 1591 by a Moroccan force with firearms.",
+        },
+        {
+          prompt: "What is contested about the 'Almoravid sack of Ghana in 1076'?",
+          answer:
+            "The conquest claim comes from later Arabic historians; Conrad and Fisher (1982) argued the evidence for an actual sack is thin. Many specialists now describe Almoravid pressure and commercial reorientation instead. Older textbooks assert the sack as fact; this course does not.",
+        },
+      ],
+    },
+    // Cross-link: BAM's Mansa Gold research files (Ghana cocoa/coffee brand research) live in
+    // plans/future-courses/mansa-gold/ and surface on the Future board at /admin/future.
+    {
+      slug: "africa-mansa-musa",
+      title: "6 · Mansa Musa's hajj: what the sources actually say",
+      section: "Section 3 · West Africa: gold, salt, and books",
+      body: `You have probably met Mansa Musa as a superlative: "the richest human being who ever lived," with a dollar figure attached. This lesson is going to do something more useful than repeat that. It will show you exactly what the sources say, what they cannot say, and how a famous claim gets inflated, because learning to run that audit is worth more than any single fact in this course.
+
+**What is solidly attested.** Musa was *mansa* (ruler) of Mali, reigning from about 1312 to about 1337 (the dates are approximate, reconstructed from Ibn Khaldun's fourteenth-century synchronisms). In **1324-25 he made the pilgrimage to Mecca**, passing through Cairo, and the journey is attested by multiple written sources close to the events, none of them Malian: above all **al-Umari**, a Mamluk official and encyclopedist who visited Cairo about a dozen years later and interviewed people who had dealt with Musa, plus Ibn Khaldun and the fifteenth-century historian al-Maqrizi (Levtzion & Hopkins, 2000; Gomez, 2018).
+
+**The famous gold story, from the source itself.** Al-Umari reports that Musa and his caravan spent and gave away so much gold in Cairo that the market price of gold fell: the mithqal, which had exchanged at 25 dirhams, dropped to about 22, and, he says, stayed depressed for about twelve years (Levtzion & Hopkins, 2000). That is the entire documentary basis of every "he crashed Egypt's economy" headline you have ever seen. Now the audit:
+
+- **What it supports:** an enormous, real expenditure of gold, striking enough that Cairo's officialdom still talked about it a decade later. Musa was, by any reading, spectacularly rich.
+- **What it does not support:** a net-worth figure. No source records Mali's revenues, reserves, or production in any form that permits computation. The viral "richest ever" number traces to a 2012 pop-media listicle, not to any scholarly estimate, and historians' actual position is that his wealth is not quantifiable (Gomez, 2018). This course refuses the number entirely.
+- **What has been re-examined:** the "crash" itself. The numismatist Warren Schultz (2006) went back to Mamluk exchange-rate records and found that swings of the reported size fall within the normal fluctuation of Cairo's gold-silver market in that era. Al-Umari's report may be true as far as it goes; the strongest versions built on it (a wrecked national economy, a decade of ruin caused by one visit) exceed what the evidence shows. "Contested" is the honest label.
+- **The caravan statistics** you see quoted (60,000 people, 12,000 slaves, 80 to 100 camel-loads of gold) come from later or secondhand compilations, and they disagree with one another. Reported, not established. Note also what those numbers include: thousands of enslaved people in the pilgrimage train is part of the same record, stated here and taught fully in Section 5.
+
+**Why the hajj matters beyond the gold.** Within fifty years, Mali's wealth was on European maps: the **Catalan Atlas** (1375, from the Majorcan workshop of Abraham Cresques, now in the Bibliothèque nationale de France) shows a West African king enthroned, crowned, holding up a lump of gold, labeled as the lord of the gold of Guinea. Remember Trevor-Roper's "darkness": a century and a half before Columbus sailed, Europe's finest mapmakers were drawing Mali's king in gold, because merchants needed to know. Musa also came home with scholars and, tradition holds, the Andalusi poet-architect al-Sahili; later tradition credits al-Sahili with buildings including Timbuktu's Djinguereber mosque, an attribution the course labels traditional rather than documented (Hunwick, 1999; Gomez, 2018).
+
+**The takeaway is the method.** One superlative ("richest ever") is unquantifiable and refused. One dramatic claim ("crashed Egypt") is contested and labeled. The documented core (a real hajj, real gold on a spectacular scale, real diplomatic and scholarly consequences, real enslaved people in the caravan) is plenty. The record did not need the inflation, and the inflation is precisely what a denier would attack first.
+
+:::reveal A friend says: 'Mansa Musa was the richest person in history, worth $400 billion.' Run this course's audit on that sentence. ||| The hajj, the Cairo gold spending, and al-Umari's report of the mithqal falling from 25 to about 22 dirhams for about twelve years are documented (Levtzion & Hopkins). But no source records Mali's revenues or reserves, so no net-worth figure is computable: the dollar number traces to a 2012 pop listicle, and historians call the wealth unquantifiable. Even the 'crash' is contested (Schultz 2006: the swing is within normal Mamluk exchange-rate fluctuation). Verdict: spectacularly rich, yes; 'richest ever, $400B,' unsupportable.
+
+## Sources
+- Levtzion, N., & Hopkins, J. F. P. (Eds.). (2000). *Corpus of early Arabic sources for West African history*. Markus Wiener. (Original work published 1981)
+- Gomez, M. A. (2018). *African dominion: A new history of empire in early and medieval West Africa*. Princeton University Press.
+- Schultz, W. C. (2006). Mansa Musa's gold in Mamluk Cairo: A reappraisal of a world civilizations anecdote. In J. Pfeiffer & S. A. Quinn (Eds.), *History and historiography of post-Mongol Central Asia and the Middle East* (pp. 428-447). Harrassowitz.
+- Bibliothèque nationale de France. (n.d.). *Atlas catalan* [1375; Espagnol 30]. https://gallica.bnf.fr/ark:/12148/btv1b55002481n
+- Hunwick, J. O. (1999). *Timbuktu and the Songhay Empire: Al-Sa'di's Ta'rikh al-Sudan down to 1613*. Brill.`,
+      recallContent: [
+        {
+          prompt: "What does al-Umari actually report about Mansa Musa's gold in Cairo, and via which scholarly translation does this course cite it?",
+          answer:
+            "That Musa's 1324-25 spending drove the gold mithqal down from 25 dirhams to about 22, depressed for about twelve years; al-Umari gathered this in Cairo roughly a dozen years after the visit. Cited via Levtzion & Hopkins, Corpus of Early Arabic Sources for West African History.",
+        },
+        {
+          prompt: "Name the two hedges this course applies to the Mansa Musa story.",
+          answer:
+            "'Richest person ever' is refused as unquantifiable (no revenue or reserve data exists; the viral figure traces to a 2012 listicle). The 'crashed Egypt's economy' framing is labeled contested: Schultz (2006) showed the reported price swing is within normal Mamluk exchange-rate fluctuation.",
+        },
+      ],
+    },
+    {
+      slug: "africa-timbuktu-books",
+      title: "7 · Timbuktu and Djenné: the book trade",
+      section: "Section 3 · West Africa: gold, salt, and books",
+      body: `Trevor-Roper's argument had one load-bearing premise: no documents. This lesson is about a city whose most famous export, by the sixteenth century, was documents.
+
+**Timbuktu** sits where the Niger's great bend comes closest to the Sahara: the port where camel meets canoe. By tradition recorded in the seventeenth-century *Tarikh al-Sudan*, it began around 1100 as a Tuareg seasonal camp; it entered Mali's orbit in the fourteenth century (Mansa Musa returned from Mecca through it in 1325), and reached its peak under Songhai in the fifteenth and sixteenth. When the Granada-born traveler known as **Leo Africanus** saw it around the 1510s, his description (published 1550) made a point of the market that surprised him most: books, he wrote, sold better than any other merchandise (Hunwick, 1999).
+
+**What the scholarship actually was.** You will see Timbuktu's Sankore mosque called "the University of Sankore," sometimes with an enrollment figure like 25,000 students attached. This course flags both. There was no chartered university in the medieval European sense; there were mosques (Djinguereber, Sankore, Sidi Yahya) and around them a dense, real world of independent scholars who taught students individually and granted an *ijaza*, a personal license certifying mastery of specific texts. The enrollment statistics circulating online have no reliable source. The scholarship itself, though, is documented to the bone: the jurist **Ahmad Baba al-Timbukti** (1556-1627), the city's most famous scholar, wrote dozens of works still cited in Maliki law; when Morocco conquered Songhai he was deported to Marrakesh (1594), where he taught to acclaim and protested his exile in writing, remarking that his own confiscated library of some 1,600 volumes was smaller than those of several kinsmen. The figure is his own report, so treat it as testimony rather than inventory, but it tells you what a private library meant in his city (Hunwick, 1999).
+
+**The manuscripts are the point.** Family libraries in and around Timbuktu preserve manuscripts in Arabic and in African languages written in Arabic script (*ajami*): law, theology, astronomy, mathematics, medicine, grammar, poetry, contracts, letters. How many? Reported estimates for the wider region run into the hundreds of thousands, and this course labels them exactly that: reported, never audited. What is documented is what happened in 2012-13, when jihadist groups occupied Timbuktu: they wrecked saints' mausoleums, burned manuscripts at the Ahmed Baba Institute (about 4,200 lost there by the institute's account), and were denied the rest by a smuggling operation, run by the librarian **Abdel Kader Haidara** and dozens of families, that moved a reported several hundred thousand manuscripts to safety in Bamako in trunks, by road and by river. In 2016 the International Criminal Court convicted **Ahmad al-Faqi al-Mahdi** for directing attacks on Timbuktu's protected buildings, the ICC's first conviction treating cultural destruction as the core war crime (International Criminal Court, 2016; UNESCO listed Timbuktu in 1988).
+
+**And the chronicles.** Timbuktu's scholars wrote their region's own history: the *Tarikh al-Sudan* of al-Sadi (c. 1655, translated by Hunwick, 1999) narrates Songhai's rise and the Moroccan catastrophe from the inside. Its companion, the so-called *Tarikh al-fattash*, is taught here with a flag: its textual history is tangled, and scholars have shown that the version long in circulation contains nineteenth-century interpolations serving a later ruler's legitimacy (Nobili & Mathee, 2015). Even the good news gets source-checked; that is the course's whole method.
+
+**Djenné, downstream,** completes the picture, twice. Its Great Mosque, the world's largest mud-brick building, is a city icon rebuilt in **1907** on the site of a mosque tradition dates to the thirteenth century; admire it, but do not caption it "medieval," because the building you photograph is twentieth-century Malian masonry in a deep local tradition (UNESCO, 1988 inscription). And two kilometers away lies the real bombshell: **Jenne-jeno**, excavated by Susan and Roderick McIntosh from 1977, a settlement occupied from around 250 BCE that grew into a substantial urban cluster by the middle of the first millennium CE, centuries before the trans-Saharan Islamic trade. Cities on the Niger did not arrive with Arab merchants or anyone else; they grew there (McIntosh & McIntosh, 1981).
+
+:::reveal Why does this course refuse to call Sankore a 'university with 25,000 students' while still claiming Timbuktu refutes Trevor-Roper's 'no documents' premise? ||| Because each half is judged on its evidence. The 'university' frame is anachronistic (teaching ran through individual scholars granting ijazas, not a chartered institution) and the enrollment figure has no reliable source: asserting them would be the romance trap. But the documents themselves are physical and countable in the hundreds of thousands (reported), the book trade is attested by Leo Africanus around the 1510s, Ahmad Baba's career is documented on two continents, and the Tarikh al-Sudan is an African-written history of an African empire. The real record does the refuting without the inflation.
+
+## Sources
+- Hunwick, J. O. (1999). *Timbuktu and the Songhay Empire: Al-Sa'di's Ta'rikh al-Sudan down to 1613*. Brill.
+- McIntosh, S. K., & McIntosh, R. J. (1981). West African prehistory. *American Scientist, 69*(6), 602-613.
+- Nobili, M., & Mathee, M. S. (2015). Towards a new study of the so-called Tarikh al-fattash. *History in Africa, 42*, 37-73.
+- International Criminal Court. (2016). *The Prosecutor v. Ahmad Al Faqi Al Mahdi* [Judgment, ICC-01/12-01/15]. https://www.icc-cpi.int/mali/al-mahdi
+- UNESCO World Heritage Centre. (n.d.). *Timbuktu* [Inscription record, 1988]. https://whc.unesco.org/en/list/119/
+- Gomez, M. A. (2018). *African dominion: A new history of empire in early and medieval West Africa*. Princeton University Press.`,
+      recallContent: [
+        {
+          prompt: "What did Leo Africanus report about Timbuktu's market around the 1510s?",
+          answer:
+            "That books sold better than any other merchandise: the famous line documenting a mass book trade in a West African city, published in 1550.",
+        },
+        {
+          prompt: "Why does Jenne-jeno matter so much to this course's argument?",
+          answer:
+            "The McIntosh excavations (from 1977) showed a settlement from c. 250 BCE growing into an urban cluster by the mid-first millennium CE, centuries before trans-Saharan Islamic trade: cities on the Niger were homegrown, not imported, which kills the claim that urbanism arrived with outsiders.",
+        },
+      ],
+    },
+    {
+      slug: "africa-quiz-3",
+      title: "Section 3 quiz · West Africa",
+      section: "Section 3 · West Africa: gold, salt, and books",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What flowed SOUTH across the Sahara in the caravan trade, above all?",
+            options: ["Salt, mined in slabs at desert sites like Taghaza", "Gold", "Ivory", "Manuscripts"],
+            correctIndex: 0,
+            explanation:
+              "Salt was the great southbound cargo (a physiological necessity in the savanna, and in places near-money); gold, ivory, and enslaved people moved north.",
+            sourceLessonSlug: "africa-gold-roads",
+          },
+          {
+            prompt: "The kingdom of Ghana described by al-Bakri in 1068 was:",
+            options: [
+              "A Soninke state in present-day Mauritania and Mali, unrelated territorially to the modern country of Ghana",
+              "Located in the territory of the modern Republic of Ghana",
+              "A Berber colony",
+              "A province of Mali",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Modern Ghana borrowed the name at independence in 1957; the medieval Soninke state (Wagadu) lay far to the northwest. Naming precisely is the course's core rule.",
+            sourceLessonSlug: "africa-gold-roads",
+          },
+          {
+            prompt: "Which administrative detail does al-Bakri record about Ghana's customs system?",
+            options: [
+              "One gold dinar tax per donkey-load of salt entering, two per load leaving",
+              "A flat 10% tithe on all goods",
+              "No taxation at all",
+              "Taxes payable only in cowrie shells",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That boring, specific schedule (plus the nuggets-to-the-king rule) is exactly the kind of administrative plumbing that marks a functioning state, not a legend.",
+            sourceLessonSlug: "africa-gold-roads",
+          },
+          {
+            prompt: "How does this course teach the '1076 Almoravid sack of Ghana'?",
+            options: [
+              "As contested: Conrad and Fisher (1982) argued the evidence for a conquest is thin",
+              "As established fact",
+              "As a myth invented in the twentieth century",
+              "It does not mention it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Later Arabic historians assert a conquest; the case against it (pressure and reorientation, not a sack) is strong enough that the course labels the claim contested.",
+            sourceLessonSlug: "africa-gold-roads",
+          },
+          {
+            prompt: "How is the founding of Mali (Sundiata, c. 1235) primarily known?",
+            options: [
+              "Through the oral epic of the jeliw (griots), recorded in modern times and cross-checked against Ibn Khaldun's king lists",
+              "Through a contemporary Malian royal archive",
+              "Through Roman records",
+              "Through Portuguese chronicles",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That is why the course labels the date traditional: oral tradition is real evidence (Section 6 teaches how), but its chronology is approximate.",
+            sourceLessonSlug: "africa-gold-roads",
+          },
+          {
+            prompt: "What did Ibn Battuta praise most in his eyewitness account of Mali (1352-53)?",
+            options: [
+              "The security of the roads: travelers had nothing to fear from robbers",
+              "The gold mines, which he toured",
+              "The emperor's navy",
+              "The university enrollment",
+            ],
+            correctIndex: 0,
+            explanation:
+              "He also complained freely about customs that offended him, which makes him a more credible witness, not less: he was no flatterer.",
+            sourceLessonSlug: "africa-gold-roads",
+          },
+          {
+            prompt: "What ended the Songhai empire in 1591?",
+            options: [
+              "A Moroccan force that crossed the Sahara with firearms and won at Tondibi",
+              "A Portuguese naval invasion up the Niger",
+              "The Almoravid conquest",
+              "A succession war with Mali",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A few thousand men with arquebuses broke the Songhai army; but the Moroccans could destroy the empire, not govern it, and the region fragmented.",
+            sourceLessonSlug: "africa-gold-roads",
+          },
+          {
+            prompt: "What is the documentary basis of the 'Mansa Musa crashed Egypt's gold market' story?",
+            options: [
+              "Al-Umari's report that the mithqal fell from 25 to about 22 dirhams and stayed depressed about twelve years",
+              "Mali's own treasury records",
+              "A Venetian banker's ledger",
+              "Egyptian tax rolls listing Musa by name",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Al-Umari gathered accounts in Cairo about a dozen years after the 1324-25 hajj. That single report, via Levtzion & Hopkins' translation, is the whole basis of every headline version.",
+            sourceLessonSlug: "africa-mansa-musa",
+          },
+          {
+            prompt: "Why does the course refuse the claim that Mansa Musa was 'the richest person in history'?",
+            options: [
+              "No source records Mali's revenues or reserves, so no net-worth figure is computable; the viral number traces to a 2012 pop listicle",
+              "Because he was actually poor",
+              "Because other African kings were provably richer",
+              "Because wealth comparisons across time are always exact but forbidden",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Historians' position is that the wealth is unquantifiable. 'Spectacularly rich' is documented; a rank and a dollar figure are inventions.",
+            sourceLessonSlug: "africa-mansa-musa",
+          },
+          {
+            prompt: "What did Schultz (2006) conclude about the Cairo gold 'crash'?",
+            options: [
+              "The reported price swing falls within the normal fluctuation of Mamluk exchange rates, so the strongest 'wrecked economy' versions exceed the evidence",
+              "That al-Umari invented the entire visit",
+              "That the crash lasted fifty years, not twelve",
+              "That Musa paid in silver, not gold",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Re-examining the numismatic record led Schultz to a hedged verdict: the report may be true as far as it goes, but 'contested' is the honest label for the crash framing.",
+            sourceLessonSlug: "africa-mansa-musa",
+          },
+          {
+            prompt: "What does the Catalan Atlas of 1375 show, and why does the course cite it?",
+            options: [
+              "A crowned West African king holding gold, labeled lord of the gold of Guinea: Mali's wealth on Europe's best maps within fifty years of the hajj",
+              "The first accurate coastline of southern Africa",
+              "A portrait of Ibn Battuta",
+              "The route of the Moroccan invasion of 1591",
+            ],
+            correctIndex: 0,
+            explanation:
+              "From Abraham Cresques's Majorcan workshop (now in the BnF): mapmakers drew what merchants needed to know, a century and a half before Columbus. So much for 'darkness.'",
+            sourceLessonSlug: "africa-mansa-musa",
+          },
+          {
+            prompt: "Which caravan statistics does the course label 'reported, not established'?",
+            options: [
+              "The head-counts like 60,000 people, 12,000 slaves, and 80-100 camel-loads of gold, which come from later compilations that disagree",
+              "The existence of the hajj itself",
+              "The year 1324",
+              "The route through Cairo",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The hajj, the route, and the gold spending are well attested; the precise head-counts are secondhand and inconsistent, so they are stated as reports, not facts.",
+            sourceLessonSlug: "africa-mansa-musa",
+          },
+          {
+            prompt: "What did Leo Africanus single out about Timbuktu's market (c. 1510s, published 1550)?",
+            options: [
+              "Books sold better than any other merchandise",
+              "Gold was worthless there",
+              "No foreigners were admitted",
+              "Only salt was traded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The book trade is the direct answer to Trevor-Roper's 'no documents' premise: documents were the city's celebrity commodity.",
+            sourceLessonSlug: "africa-timbuktu-books",
+          },
+          {
+            prompt: "How does the course handle the phrase 'the University of Sankore'?",
+            options: [
+              "As an anachronistic frame: real, documented scholarship (ijaza system, Ahmad Baba, the chronicles) but no chartered university, and no reliable enrollment figures",
+              "As literally accurate, with 25,000 enrolled students",
+              "As a colonial invention with no scholarship behind it",
+              "It does not discuss Sankore",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both traps avoided at once: the scholarship is documented to the bone, and the inflated framing is flagged rather than repeated.",
+            sourceLessonSlug: "africa-timbuktu-books",
+          },
+          {
+            prompt: "What was the ICC's 2016 al-Mahdi judgment about?",
+            options: [
+              "Directing attacks on Timbuktu's protected mausoleums and buildings in 2012: the ICC's first conviction centered on cultural destruction as a war crime",
+              "The theft of the Benin bronzes",
+              "The 1591 Moroccan invasion",
+              "Manuscript forgery",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ahmad al-Faqi al-Mahdi pleaded guilty; the case, with the Haidara-led evacuation of a reported several hundred thousand manuscripts to Bamako, is the modern chapter of the record's survival.",
+            sourceLessonSlug: "africa-timbuktu-books",
+          },
+          {
+            prompt: "Why is the Great Mosque of Djenné a caption-check exercise?",
+            options: [
+              "The current building dates to 1907 (in a deep local tradition, on a site whose mosque tradition dates to the thirteenth century), so calling the photo 'medieval' is false",
+              "It is actually in Timbuktu",
+              "It is a colonial French design with no local tradition",
+              "It is built of granite",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Honest captioning cuts both ways: the mud-brick masterpiece is twentieth-century Malian masonry, and two kilometers away Jenne-jeno's mounds are genuinely ancient (c. 250 BCE onward).",
+            sourceLessonSlug: "africa-timbuktu-books",
+          },
+        ],
+      },
+    },
   ],
 };
