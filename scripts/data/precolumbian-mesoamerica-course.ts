@@ -1947,5 +1947,396 @@ Two guardrails, because this number gets abused from both ends. **Minimizers** c
         ],
       },
     },
+    // ────────────── SECTION 7 · HOW WE KNOW — AND WHO IS STILL HERE ──────────────
+    {
+      slug: "meso-how-we-know",
+      title: "16 · How we know: burned books, a cracked code, and lasers",
+      section: "Section 7 · How we know — and who is still here",
+      body: `This is the lesson the whole course has been saving up for, because its skill transfers to every subject you will ever study: **how does anyone know any of this?** For Mesoamerica the answer is a three-act story — a destruction, a decipherment, and an instrument — and each act changes what "we know" means.
+
+**Act one: the burning.** Mesoamerican civilizations wrote **books** — screenfold codices of bark paper or deerskin, painted on both sides. Then came the friars. On **July 12, 1562**, at **Maní** in Yucatán, the Franciscan **Diego de Landa** held an *auto-da-fé* — an inquisitorial ceremony, accompanied by interrogations and torture of Maya "idolaters" — at which Maya codices and thousands of ritual objects were destroyed. Landa's own account is the indictment: he wrote that the books "contained nothing in which there was not superstition and falsehoods of the devil," so "we burned them all, which [the Maya] regretted to an amazing degree, and which caused them much affliction" (Landa, c. 1566/1941). Between Maní, other destructions, and the tropics' own appetite for bark paper, the result is one of the great information catastrophes in human history: of the entire literary output of Maya civilization, exactly **four** pre-conquest codices survive today — the **Dresden**, **Madrid**, and **Paris** codices (named, tellingly, for the European cities holding them) and the **Maya Codex of Mexico** (formerly "Grolier"), whose authenticity was long doubted until INAH's technical review authenticated it in **2018** (Coe & Houston, 2022; INAH, 2018). Four books, from a civilization of scribes. When Lesson 7 told you the Dresden Codex tracks Venus for centuries, understand: that is a glimpse through a keyhole of a burned library.
+
+And here is the story's brutal irony: **the arsonist accidentally saved the key.** Landa's manuscript *Relación de las cosas de Yucatán* — written partly in self-defense after his methods got him shipped back to Spain — includes his attempt to record the Maya "alphabet": he asked literate Maya informants to write the letters A, B, C… and transcribed the signs they produced. What he recorded was garbled — the script has no alphabet — but the garble preserved real sign-sound pairings, because his informants had written the *syllables* of the Spanish letter-names. Landa's error became the closest thing Maya studies has to a Rosetta Stone (Coe, 1992).
+
+**Act two: the decipherment — a scientific drama in three generations.** By the early twentieth century scholars could read Maya *numbers and dates* (the calendar yielded to pattern analysis), and a consensus hardened — enforced by the field's dominant figure, the Englishman **J. Eric S. Thompson** — that that was all there was: the glyphs were mystical calendar-symbols, not phonetic writing, and the texts contained no history. Two outsiders broke it. In **1952**, **Yuri Knorozov** — a Soviet linguist working in Leningrad, who never excavated a Maya site — published the syllabic principle: using Landa's "alphabet" as sound evidence, he showed glyphs spell words syllable by syllable, reading words like "turkey" and "dog" where the codex pictures showed exactly those animals. Thompson ridiculed him for decades, and the Cold War made "the Russian is right" a hard sentence to publish. Then in **1960 Tatiana Proskouriakoff** — a Russian-born American architect-turned-epigrapher — showed from date patterns at Piedras Negras that the monuments record the *births, accessions, wars, and deaths of human rulers*: the texts were **history**. After Thompson's death in 1975, the dam broke: workshops around Linda Schele, Floyd Lounsbury, Peter Mathews, and later David Stuart read the dynasties of Palenque and beyond, and today the large majority of Maya texts can be read — the recovered voice this course has been quoting since Section 3. Michael Coe's *Breaking the Maya Code* (1992) tells the whole story, including the field's embarrassment: the truth was delayed a generation substantially because the discipline's most powerful man said no (Coe, 1992). Method lesson: **authority is not evidence, and fields self-correct on evidence — eventually.**
+
+**Act three: the instrument.** You have met it twice already. Airborne **LiDAR** — laser pulses that map the ground surface beneath forest canopy — found Aguada Fénix (Lesson 3), and in the **2018 PACUNAM survey** revealed about **61,480 structures** in 2,144 km² of the Petén, with the terraces, causeways, and fortifications that rewrote Maya demography (Canuto et al., 2018). Decipherment made the texts speak; LiDAR made the *landscape* speak. Different instrument, same epistemological event: evidence that was always there became readable, and the field rebuilt its picture around it.
+
+Put the three acts together and you have this course's transferable method for any historical claim: ask **what kinds of evidence** stand behind it (their texts? hostile witnesses? excavation? instruments?), **who is asserting it** and with what motive, and **what would change it**. Knowledge built that way bends when new evidence lands — Landa's paradox, Knorozov's vindication, LiDAR's census — and that bending is not fragility. It is exactly what being right in the long run looks like.
+
+:::reveal What is Landa's paradox, and what did each half of it cost or give? ||| The man who burned the Maya libraries also preserved the decipherment key. His 1562 Maní auto-da-fé (plus other destructions and the climate) left only ~4 pre-conquest Maya codices on Earth — an information catastrophe. But his Relación's garbled 'alphabet' — Maya informants writing syllable signs for Spanish letter-names — preserved real sign-sound pairings, which Knorozov used in 1952 as the Rosetta-like evidence that cracked the script.
+
+## Sources
+- Landa, D. de. (1941). *Landa's Relación de las cosas de Yucatán* (A. M. Tozzer, Trans. & Ed.). Peabody Museum, Harvard University. (Original manuscript c. 1566)
+- Coe, M. D. (1992). *Breaking the Maya code*. Thames & Hudson.
+- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson.
+- Instituto Nacional de Antropología e Historia. (2018). *El Códice Maya de México, auténtico y el más antiguo* [announcement of the technical authentication]. INAH.
+- Canuto, M. A., et al. (2018). Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala. *Science, 361*(6409), eaau0137.
+- Proskouriakoff, T. (1960). Historical implications of a pattern of dates at Piedras Negras, Guatemala. *American Antiquity, 25*(4), 454-475.`,
+      recallContent: [
+        {
+          prompt: "Tell the decipherment story in three names and what each contributed.",
+          answer:
+            "Knorozov (1952, Leningrad): the syllabic principle — glyphs spell sounds, proven via Landa's 'alphabet.' Proskouriakoff (1960): the texts are history — Piedras Negras date patterns record rulers' births, accessions, and deaths. Thompson: the cautionary name — the field's dominant figure, who insisted the script was non-phonetic and history-free, delaying the truth a generation until after his death (Coe's Breaking the Maya Code chronicles it).",
+        },
+        {
+          prompt: "Name the four surviving pre-conquest Maya codices and the detail that makes the names themselves a lesson.",
+          answer:
+            "Dresden, Madrid, Paris — named for the European cities that hold them — and the Maya Codex of Mexico (ex-'Grolier'), authenticated by INAH in 2018. Four books are the entire surviving pre-conquest literature of a civilization of scribes.",
+        },
+        {
+          prompt: "What parallel does the course draw between decipherment and LiDAR?",
+          answer:
+            "Same epistemological event via different instruments: evidence that was always present became readable — texts spoke after the code cracked; the landscape spoke when lasers stripped the canopy (PACUNAM 2018: ~61,480 structures in 2,144 km²) — and the field rebuilt its picture around the new evidence.",
+        },
+      ],
+    },
+    {
+      slug: "meso-still-here",
+      title: "17 · They are still here",
+      section: "Section 7 · How we know — and who is still here",
+      body: `Every previous lesson has been past tense. This one is not, because the single most damaging myth in this entire subject — more than aliens, more than 2012 — is the quiet assumption baked into the phrase "the ancient Maya": **that the peoples of Mesoamerica are gone.** They are not gone. Say the numbers out loud.
+
+Roughly **seven million Maya** live today, in Guatemala, southern Mexico, Belize, Honduras, and El Salvador — and in diaspora communities across North America. Around **six million people speak one of the roughly thirty Mayan languages** — K'iche', Q'eqchi', Kaqchikel, Mam, Yucatec Maya, Tzotzil, Tzeltal, and more — as their daily language (Coe & Houston, 2022). In Guatemala, Maya people are over **40 percent of the national population** by the 2018 census — by some measures a near-majority. In Mexico, the 2020 INEGI census counted about **1.65 million speakers of Nahuatl** — the language of this course's Section 4, alive in hundreds of communities — among more than **seven million** speakers of Indigenous languages nationally (INEGI, 2020). In the highlands of Guatemala, Maya **daykeepers still keep the 260-day count** — the tzolk'in from Lesson 7, in continuous use for well over two millennia (B. Tedlock, 1992). The chinampas of Xochimilco still grow food. This is not heritage in a case; it is Tuesday.
+
+The centuries between 1697 and now were not quiet, and their history destroys the passivity myth as thoroughly as the conquest lessons did:
+
+- The **Caste War of Yucatán** (beginning 1847) was one of the largest and most sustained Indigenous risings in the hemisphere's history: Yucatec Maya rebels came close to taking the entire peninsula, then held an autonomous polity in the east — centered on **Chan Santa Cruz** — for half a century; the Mexican army did not take its capital until 1901, and pacification bled into the 1910s (Reed, 2001).
+- In **Guatemala's civil war** (1960-1996), the state's counterinsurgency of the early 1980s fell overwhelmingly on Maya communities. The UN-sponsored truth commission (CEH, 1999) documented some 200,000 dead or disappeared across the conflict (a commission estimate), found that 83 percent of identified victims were Maya, and concluded that state forces committed **"acts of genocide"** against Maya groups. This happened within living memory; survivors are alive now (CEH, 1999).
+- Out of that fire came, among much else, **Rigoberta Menchú**, the K'iche' activist awarded the **1992 Nobel Peace Prize** — pointedly, on the Columbus quincentennial — for work on Indigenous rights (Nobel Foundation, 1992). (Her testimonial memoir later drew a documented factual controversy — the anthropologist David Stoll challenged details; the Nobel committee stood by the award. This course, being this course, tells you that rather than airbrushing it.)
+- Across the isthmus, Indigenous Central America is present tense: the **Guna** of Panama won territorial autonomy — the Comarca **Guna Yala** — after their 1925 revolution, a rare outright Indigenous political victory in the twentieth century; the **Ngäbe**, **Bribri**, **Miskito**, **Lenca**, and others maintain territories and polities from Honduras to Panama. The Lenca environmental leader **Berta Cáceres** won the 2015 Goldman Environmental Prize for leading the fight against the Agua Zarca dam and was assassinated for it in 2016 — employees of the dam company were among those convicted. Indigenous Central Americans are not historical figures; they are litigants, legislators, land defenders, and casualties in this decade's news (Goldman Environmental Foundation, 2015).
+- The languages are being fought *for*: Guatemala's **Academia de Lenguas Mayas** (chartered 1990) standardizes and promotes the twenty-plus Mayan languages of the country; Mexico's 2003 linguistic-rights law and INALI recognize Indigenous languages as national languages; Maya- and Nahuatl-language schooling, broadcasting, and film (a Kaqchimel-language feature, *Ixcanul*, carried Guatemala to international festivals in 2015) are ordinary facts of the region's cultural life.
+
+Now connect this lesson to everything before it, because the connection is the point. **Who owns the deep past this course has walked through? The people it belongs to are alive.** The "vanished civilization" trope is not a harmless romantic flourish; it does specific work. It turns living communities into ghosts guarding someone else's museum pieces — archaeology about them without them. It makes the Petén and the Yucatán read as empty stages for foreign adventure. It underwrote policies — land seizure, forced assimilation, language suppression — premised on the idea that the "real" Maya or Mexica were safely extinct and their descendants were merely *indios* with no standing to inherit. And it feeds the pseudo-history this course keeps debunking: a "mysteriously vanished" people can be assigned any origin a crank prefers, but a living people with seven million members, thirty languages, and their own epigraphers — there are Maya scholars reading Classic glyphs today — can answer back. When you finish this course, the sentence to carry out the door is the one this lesson is named for: *the civilizations of Mesoamerica are not lost; parts of them were stolen, parts were burned, parts were buried — and the people are still here.*
+
+:::reveal What specific work does the 'vanished civilization' trope do — and what are the present-tense numbers that refute it? ||| The trope turns living communities into ghosts: it licenses archaeology-without-the-descendants, renders their lands 'empty stages,' underwrote dispossession and assimilation policies premised on extinction, and feeds pseudo-history (a 'vanished' people can be assigned any origin; a living one answers back). Refutation: ~7 million Maya today, ~6 million speakers of ~30 Mayan languages, Maya >40% of Guatemala (2018 census), ~1.65 million Nahuatl speakers (INEGI 2020), daykeepers still running the 260-day count, chinampas still farmed.
+
+## Sources
+- Coe, M. D., & Houston, S. D. (2022). *The Maya* (10th ed.). Thames & Hudson.
+- Instituto Nacional de Estadística y Geografía. (2020). *Censo de Población y Vivienda 2020: Lenguas indígenas*. INEGI.
+- Tedlock, B. (1992). *Time and the highland Maya* (Rev. ed.). University of New Mexico Press.
+- Reed, N. (2001). *The Caste War of Yucatán* (Rev. ed.). Stanford University Press.
+- Comisión para el Esclarecimiento Histórico. (1999). *Guatemala: Memoria del silencio*. CEH / United Nations Office for Project Services.
+- Nobel Foundation. (1992). *The Nobel Peace Prize 1992: Rigoberta Menchú Tum* [press release].
+- Goldman Environmental Foundation. (2015). *Berta Cáceres, 2015 Goldman Prize recipient, South and Central America*.`,
+      recallContent: [
+        {
+          prompt: "Recite the present-tense numbers this lesson insists on, with their hedges.",
+          answer:
+            "~7 million Maya alive today; ~6 million speakers of ~30 Mayan languages; Maya over 40% of Guatemala per the 2018 census; ~1.65 million Nahuatl speakers and 7+ million Indigenous-language speakers in Mexico per INEGI 2020; the tzolk'in still kept by highland Guatemalan daykeepers; Xochimilco's chinampas still farmed.",
+        },
+        {
+          prompt: "What happened in Guatemala in the early 1980s, per the UN-sponsored truth commission?",
+          answer:
+            "The civil war's counterinsurgency fell overwhelmingly on Maya communities: the CEH (1999) documented ~200,000 dead or disappeared across the conflict (commission estimate), found 83% of identified victims were Maya, and concluded state forces committed 'acts of genocide' — within living memory.",
+        },
+        {
+          prompt: "Name three post-1697 events or institutions that refute Indigenous passivity in the region.",
+          answer:
+            "The Caste War of Yucatán (1847-1901+; the autonomous Chan Santa Cruz polity); the Guna revolution of 1925 winning the autonomous Comarca Guna Yala; and the modern movement layer — Menchú's 1992 Nobel, Berta Cáceres's dam fight (Goldman Prize 2015; assassinated 2016), the Academia de Lenguas Mayas (1990) and Mexico's linguistic-rights framework.",
+        },
+      ],
+    },
+    {
+      slug: "meso-exercise-name-it",
+      title: "Exercise · Name the people, place, and period",
+      section: "Section 7 · How we know — and who is still here",
+      body: `The anti-flattening rule one last time: no claim about "ancient Mexico" or "the Indians" — name the people, the place, the period. This drill hardens the habit. For each cue, type the missing name. Spelling is checked forgivingly; common variant spellings are accepted.`,
+      exercise: {
+        instructions: "Fill in the missing name (a people, city, person, artifact, or method). Variants and common alternate spellings are accepted.",
+        items: [
+          {
+            prompt: "The people of Tenochtitlan called themselves the ___ (the name survives in 'Mexico').",
+            answer: "Mexica",
+            accept: ["mexicas"],
+            hint: "'Aztec' is the later label, from legendary Aztlan.",
+            explanation: "The Mexica of Tenochtitlan, Nahuatl-speaking founders of the Triple Alliance's dominant city.",
+          },
+          {
+            prompt: "The grid-planned metropolis whose builders' language and real name are unknown — its Nahuatl label means roughly 'where the gods were made': ___.",
+            answer: "Teotihuacan",
+            accept: ["teotihuacán"],
+            hint: "Pyramid of the Sun; apartment compounds; the 378 CE entrada at Tikal.",
+            explanation: "The Aztecs named the ruins eight centuries after the fall; the humility lesson of Section 2.",
+          },
+          {
+            prompt: "The 2012 'doomsday' traces to a single damaged inscription: Monument 6 from ___.",
+            answer: "Tortuguero",
+            accept: [],
+            hint: "A 7th-century site in Tabasco, Mexico.",
+            explanation: "A building-dedication text projecting to the 13th-b'ak'tun period ending — an odometer rollover, not a prophecy (Stuart, 2011).",
+          },
+          {
+            prompt: "The Franciscan who burned Maya codices at Maní in 1562 — and whose garbled 'alphabet' later helped crack the script: Diego de ___.",
+            answer: "Landa",
+            accept: ["de landa"],
+            hint: "His Relación is both indictment and Rosetta.",
+            explanation: "Landa's paradox: destroyer of the libraries, accidental preserver of the decipherment key.",
+          },
+          {
+            prompt: "The Soviet linguist whose 1952 paper established that Maya glyphs spell syllables: Yuri ___.",
+            answer: "Knorozov",
+            accept: ["knorosov", "knorozof"],
+            hint: "He worked in Leningrad and never dug a Maya site.",
+            explanation: "Ridiculed by Thompson for decades; vindicated completely. Coe's Breaking the Maya Code tells the story.",
+          },
+          {
+            prompt: "The empire of Michoacán that crushed the Aztec invasion of the 1470s — a language isolate with bronze technology: the ___.",
+            answer: "Purépecha",
+            accept: ["purepecha", "tarascan", "tarascans", "purhepecha"],
+            hint: "Capital: Tzintzuntzan, 'place of hummingbirds.'",
+            explanation: "The second-largest Mesoamerican empire at contact; the Aztecs never beat them.",
+          },
+          {
+            prompt: "The largest and oldest known monumental construction in the Maya area, found by LiDAR in Tabasco and announced in 2020: ___.",
+            answer: "Aguada Fénix",
+            accept: ["aguada fenix"],
+            hint: "A 1.4-km platform you can stand on without seeing.",
+            explanation: "Built c. 1000-800 BCE, apparently by collective labor without entrenched kings (Inomata et al., 2020).",
+          },
+          {
+            prompt: "The K'iche' Maya narrative of creation and the Hero Twins, surviving via Francisco Ximénez's copy: the ___.",
+            answer: "Popol Vuh",
+            accept: ["popol wuj", "popul vuh"],
+            hint: "Its K'iche' authors wrote it out alphabetically in the mid-1500s.",
+            explanation: "One of the great works of world literature, preserved through the colonial bottleneck.",
+          },
+          {
+            prompt: "The Maya farming village in El Salvador buried by volcanic ash c. 600 CE — the 'Pompeii of the Americas': ___.",
+            answer: "Joya de Cerén",
+            accept: ["joya de ceren", "ceren", "cerén"],
+            hint: "UNESCO World Heritage, 1993; no bodies found.",
+            explanation: "The best-preserved snapshot of Mesoamerican commoner daily life (Sheets's excavations).",
+          },
+          {
+            prompt: "The never-conquered Nahua confederation whose warriors supplied much of the army that besieged Tenochtitlan: ___.",
+            answer: "Tlaxcala",
+            accept: ["tlaxcalans", "tlaxcallan"],
+            hint: "Encircled by the Triple Alliance; enemies through the 'flower wars.'",
+            explanation: "Restall's reframing turns on them: less a Spanish conquest than a Mesoamerican civil war.",
+          },
+          {
+            prompt: "The last independent Maya kingdom's island capital, taken by Spain only in 1697: ___.",
+            answer: "Nojpetén",
+            accept: ["nojpeten", "tayasal", "noh peten"],
+            hint: "On Lake Petén Itzá, Guatemala; the Itza held it 176 years past Tenochtitlan.",
+            explanation: "The date that breaks 'the conquest ended in 1521' (Jones, 1998).",
+          },
+          {
+            prompt: "The excavated skull rack of Tenochtitlan, uncovered beneath Guatemala Street from 2015: the Huei ___.",
+            answer: "Tzompantli",
+            accept: ["tzompantli"],
+            hint: "INAH's urban-archaeology program found the towers of mortared skulls.",
+            explanation: "The find that closed the 'Spanish slander' question while the chronicle numbers (80,400; 136,000) stay refused.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "meso-quiz-7",
+      title: "Section 7 quiz · How we know — and who is still here",
+      section: "Section 7 · How we know — and who is still here",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What happened at Maní on July 12, 1562?",
+            options: [
+              "Diego de Landa's auto-da-fé: Maya codices and thousands of ritual objects destroyed, amid interrogations and torture — by Landa's own account, 'we burned them all'",
+              "The founding of the first Maya printing press",
+              "The fall of the last Maya kingdom",
+              "The signing of a Spanish-Maya peace treaty",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Landa's Relación records the burning and the Maya's 'amazing' grief — the indictment is in the arsonist's own hand (Tozzer translation, 1941).",
+            sourceLessonSlug: "meso-how-we-know",
+          },
+          {
+            prompt: "How many pre-conquest Maya codices survive, and which are they?",
+            options: [
+              "Four: Dresden, Madrid, Paris, and the Maya Codex of Mexico (ex-Grolier), authenticated by INAH in 2018",
+              "Four hundred, held in Guatemala City",
+              "None — all were burned",
+              "Forty, all in Mexico",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three carry the names of the European cities that hold them — itself a lesson. Four books are the surviving pre-conquest literature of a civilization of scribes.",
+            sourceLessonSlug: "meso-how-we-know",
+          },
+          {
+            prompt: "What is 'Landa's paradox'?",
+            options: [
+              "The man who burned the Maya books also recorded the garbled 'alphabet' — real sign-sound pairings — that became the key to decipherment",
+              "That Landa was secretly Maya",
+              "That the codices were never actually burned",
+              "That Landa deciphered the script himself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "His informants wrote syllable signs for Spanish letter-names; the 'error' preserved phonetic evidence Knorozov exploited in 1952 (Coe, 1992).",
+            sourceLessonSlug: "meso-how-we-know",
+          },
+          {
+            prompt: "What did Knorozov (1952) and Proskouriakoff (1960) respectively establish?",
+            options: [
+              "Knorozov: the script is syllabic-phonetic (via Landa's 'alphabet'); Proskouriakoff: the monuments record human history — rulers' births, accessions, wars, deaths",
+              "Knorozov: the script is pure pictures; Proskouriakoff: the texts are only astronomy",
+              "Both proved the script unreadable",
+              "Both worked under Thompson's direction",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The syllabic principle plus the historical hypothesis (from Piedras Negras date patterns) are the decipherment's two hinges.",
+            sourceLessonSlug: "meso-how-we-know",
+          },
+          {
+            prompt: "What role does J. Eric S. Thompson play in the decipherment story, as the course tells it?",
+            options: [
+              "The cautionary one: the field's dominant figure insisted the script was non-phonetic and history-free, ridiculed Knorozov, and delayed the truth roughly a generation",
+              "The hero who cracked the code in 1935",
+              "A minor figure with no influence",
+              "The discoverer of the Dresden Codex",
+            ],
+            correctIndex: 0,
+            explanation:
+              "After his death in 1975 the dam broke (Schele, Lounsbury, Mathews, Stuart). Method lesson: authority is not evidence; fields self-correct on evidence — eventually.",
+            sourceLessonSlug: "meso-how-we-know",
+          },
+          {
+            prompt: "Why does the course treat decipherment and LiDAR as the same kind of event?",
+            options: [
+              "Each made evidence that was always there readable — texts spoke, then the landscape spoke (PACUNAM 2018: ~61,480 structures) — and the field rebuilt its picture around it",
+              "Both were achieved by the same person",
+              "Both happened in 1952",
+              "Neither changed anything important",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Instrument revolutions are epistemological events: what 'we know' expands when a new class of evidence opens.",
+            sourceLessonSlug: "meso-how-we-know",
+          },
+          {
+            prompt: "The course's transferable three-question method for any historical claim is…",
+            options: [
+              "What kinds of evidence stand behind it? Who asserts it, with what motive? What would change it?",
+              "Is it exciting? Is it old? Is it famous?",
+              "Does it flatter my side? Can it go viral? Is it simple?",
+              "Was it on television? Is the source confident? Is it long?",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Knowledge built that way bends when new evidence lands — and that bending is what being right in the long run looks like.",
+            sourceLessonSlug: "meso-how-we-know",
+          },
+          {
+            prompt: "Which set of present-tense numbers does the course insist on?",
+            options: [
+              "~7 million Maya; ~6 million speakers of ~30 Mayan languages; Maya >40% of Guatemala (2018 census); ~1.65 million Nahuatl speakers (INEGI 2020)",
+              "About 50,000 Maya total, all in Belize",
+              "Zero — the peoples are extinct",
+              "Exactly 12 million Maya, a census figure",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Plus the practices: daykeepers still keep the 260-day count in highland Guatemala; Xochimilco's chinampas still grow food. Not heritage in a case — Tuesday.",
+            sourceLessonSlug: "meso-still-here",
+          },
+          {
+            prompt: "What was the Caste War of Yucatán?",
+            options: [
+              "One of the hemisphere's largest sustained Indigenous risings (from 1847): Yucatec Maya rebels nearly took the peninsula, then held the autonomous Chan Santa Cruz polity until the army took its capital in 1901",
+              "A brief tax riot of 1847, over in weeks",
+              "A war between Spain and Mexico",
+              "A fictional event from a novel",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reed (2001): a half-century of Maya sovereignty in eastern Yucatán, within the modern era — the passivity myth's post-colonial refutation.",
+            sourceLessonSlug: "meso-still-here",
+          },
+          {
+            prompt: "What did Guatemala's UN-sponsored truth commission (CEH, 1999) conclude?",
+            options: [
+              "Some 200,000 dead or disappeared across the 1960-96 conflict (commission estimate), 83% of identified victims Maya, and state forces committed 'acts of genocide' against Maya groups",
+              "That no violence occurred in Guatemala",
+              "That the conflict had no ethnic dimension",
+              "That the death toll was under 1,000",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Within living memory — the course cites the commission's own findings and labels the figures as its estimates.",
+            sourceLessonSlug: "meso-still-here",
+          },
+          {
+            prompt: "How does the course handle Rigoberta Menchú's 1992 Nobel Peace Prize?",
+            options: [
+              "It reports the award (pointedly given on the Columbus quincentennial) AND the documented Stoll controversy over her memoir's details — telling you rather than airbrushing",
+              "It omits the controversy as inconvenient",
+              "It claims the Nobel was revoked",
+              "It presents the memoir as error-free",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course's standard applies to figures it admires: report the record, including the dispute, and note the Nobel committee stood by the award.",
+            sourceLessonSlug: "meso-still-here",
+          },
+          {
+            prompt: "Which twentieth-century event gave the Guna of Panama territorial autonomy?",
+            options: [
+              "The 1925 Guna revolution, leading to the autonomous Comarca Guna Yala — a rare outright Indigenous political victory of its era",
+              "A 1925 Spanish royal decree",
+              "The Panama Canal treaty",
+              "No such autonomy exists",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Indigenous Central America is present tense: comarcas, litigation, land defense — not museum exhibits.",
+            sourceLessonSlug: "meso-still-here",
+          },
+          {
+            prompt: "Who was Berta Cáceres?",
+            options: [
+              "A Lenca environmental leader in Honduras — 2015 Goldman Prize winner for fighting the Agua Zarca dam — assassinated in 2016, with dam-company employees among those convicted",
+              "A 16th-century Maya queen",
+              "A Spanish colonial governor",
+              "A fictional character in the Popol Vuh",
+            ],
+            correctIndex: 0,
+            explanation:
+              "This decade's news, not history: the lesson's point that Indigenous Central Americans are litigants, legislators, land defenders — and casualties — now.",
+            sourceLessonSlug: "meso-still-here",
+          },
+          {
+            prompt: "What specific harms does the 'vanished civilization' trope do, per the course?",
+            options: [
+              "It licenses archaeology-without-descendants, frames Indigenous lands as empty stages, underwrote dispossession premised on extinction, and feeds pseudo-history that a living people could answer back",
+              "None — it is a harmless romantic flourish",
+              "It only affects museum labeling",
+              "It harms only tourists",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A 'mysteriously vanished' people can be assigned any origin a crank prefers; seven million living Maya — including Maya epigraphers reading Classic glyphs — cannot.",
+            sourceLessonSlug: "meso-still-here",
+          },
+          {
+            prompt: "The closing sentence the course asks you to carry out the door is…",
+            options: [
+              "'The civilizations of Mesoamerica are not lost; parts were stolen, parts were burned, parts were buried — and the people are still here.'",
+              "'The Maya vanished mysteriously, and that is their charm.'",
+              "'Nothing can be known about the pre-Columbian past.'",
+              "'The conquest ended everything in 1521.'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every clause is load-bearing: stolen (looted objects, seized land), burned (Maní, 1562), buried (excavations from the FSP to the Huei Tzompantli) — and present-tense survival.",
+            sourceLessonSlug: "meso-still-here",
+          },
+        ],
+      },
+    },
   ],
 };
