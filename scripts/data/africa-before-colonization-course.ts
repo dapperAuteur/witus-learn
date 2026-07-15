@@ -1894,5 +1894,346 @@ One more honesty checkpoint, because a course that only criticizes the long-dead
         ],
       },
     },
+
+    // ────────────── SECTION 7 · THE MAP REDRAWN ──────────────
+    {
+      slug: "africa-map-redrawn",
+      title: "16 · The map redrawn",
+      section: "Section 7 · The map redrawn",
+      body: `Go back to the two documents you started with, and read them one more time with everything you now know.
+
+Hegel: "no historical part of the World... no movement or development to exhibit." You have now met, in the documented record: a Kushite dynasty ruling Egypt, its king named in the Hebrew Bible; an Aksumite mint striking gold under kings whose conversion is stamped into the coins themselves; a customs schedule for the kingdom of Ghana written down in 1068; a Malian emperor whose gold moved Cairo's market and whose portrait Europe's best mapmakers painted within fifty years; a book trade that outsold every other business in Timbuktu; a granite city south of the Zambezi wired by coin and porcelain to China; a coastal civilization whose beauty stunned the most traveled man of the fourteenth century; brass court records in Benin City; churches carved whole out of Ethiopian rock, and a battlefield at Adwa where an African state made the age of empire blink. Movement and development were never absent. They were unexamined, and then, when examined, denied.
+
+That last step deserves its final restatement, because it is this course's sharpest finding: **the "darkness" was manufactured, and we can watch it being manufactured, in the documents of the deniers themselves.** Mauch reaching for Solomon in 1871. Bent's Phoenicians in 1891. A chartered company licensed in 1895 to strip evidence for gold. Frobenius inventing Atlantis in 1910 rather than credit Yoruba artists. Seligman's Hamites in 1930, in a standard textbook. Rhodesia, in 1970, censoring a settled archaeological conclusion by law and forcing out the official who would not repeat the lie. Trevor-Roper's "darkness" in 1963, three decades after Caton-Thompson. The claim of "no history" was never a neutral report of missing evidence. It was work: expensive, sustained, institutional work, performed because empires needed the conclusion.
+
+And the correction was also work, and it is worth naming who did it. Decolonization built the institutions: the *Journal of African History* began publishing in 1960; the UNESCO **General History of Africa** was launched in 1964 and its eight volumes (1981-1993) were written mostly by African scholars; university departments across Africa and the diaspora trained the field. Individuals mattered too, and this course names them the way it names kings: Caton-Thompson and Randall-MacIver, who followed the artifacts; Garlake, who chose exile over a censored caption; Vansina, who turned oral tradition into a discipline; Hunwick, who spent a career on Timbuktu's texts; the Senegalese scholar **Cheikh Anta Diop**, who forced open the question of ancient Egypt's African context a generation before the establishment would touch it (some of his specific claims remain contested, and this course flags that with its usual label, but the questions he forced are now normal science); the McIntoshes and Shaw with their trowels; Haidara and the Timbuktu families with their footlockers. The record survived because people carried it.
+
+**What you take with you** is the audit, one last time: *which people, which place, which century, which sources, and do independent lines converge?* Plus its two guard rails: refuse erasure, and refuse romance, because both replace evidence with need. This works on every history you will ever meet, including the ones you want to believe.
+
+**Where to go deeper.** This course is a survey; each of its sections compresses a literature that deserves its own course, and follow-on courses in this track (the Nile corridor; the West African empires; Great Zimbabwe and the southern states; the Swahili coast; Benin, Ife, and the forest kingdoms; Ethiopia; and a full methods course) are proposed on this platform's future-work board. Meanwhile, the single best starting shelf: the UNESCO General History of Africa (free online through UNESCO), Fauvelle's *The Golden Rhinoceros* for the medieval centuries in vivid short chapters, and Thornton, Green, and Gomez for the Atlantic age and the empires.
+
+:::reveal The course claims the 'darkness' was manufactured rather than a neutral report of missing evidence. Give the strongest three pieces of documentation for that claim. ||| Best three: (1) Rhodesia's 1970 censorship law barring official publications from stating Great Zimbabwe's African origin as fact, plus Garlake's forced departure, i.e., the state suppressing a conclusion archaeology had settled in 1929-1931; (2) the succession of outsider attributions each invented AFTER evidence of African achievement appeared (Bent's Phoenicians 1891, Frobenius's Atlantis 1910, Seligman's Hamites 1930), showing denial adapting to survive evidence; (3) Trevor-Roper's 1963 'darkness' delivered three decades after Caton-Thompson published and a century after the Arabic sources were in European print, proving the information was available and unexamined by choice.
+
+## Sources
+- UNESCO. (1981-1993). *General history of Africa* (Vols. I-VIII). UNESCO Publishing / Heinemann.
+- Fauvelle, F.-X. (2018). *The golden rhinoceros: Histories of the African Middle Ages* (T. L. Fagan, Trans.). Princeton University Press.
+- Pikirayi, I. (2012). Peter Garlake (1934-2011), Great Zimbabwe and the politics of the past in Zimbabwe. *Azania: Archaeological Research in Africa, 47*(2), 223-231.
+- Diop, C. A. (1974). *The African origin of civilization: Myth or reality* (M. Cook, Trans.). Lawrence Hill.
+- Vansina, J. (1985). *Oral tradition as history*. University of Wisconsin Press.
+- Thornton, J. K. (1998). *Africa and Africans in the making of the Atlantic world, 1400-1800* (2nd ed.). Cambridge University Press.`,
+      recallContent: [
+        {
+          prompt: "Recite the five-part audit and its two guard rails.",
+          answer:
+            "Which people, which place, which century, which sources, and do independent lines converge? Guard rails: refuse erasure and refuse romance, because both replace evidence with need.",
+        },
+        {
+          prompt: "How does the course treat Cheikh Anta Diop?",
+          answer:
+            "By its usual standard: he forced open the question of ancient Egypt's African context a generation early, and the questions he forced are now normal science, while some of his specific claims remain contested and are labeled so.",
+        },
+      ],
+    },
+    {
+      slug: "africa-exercise-name-it",
+      title: "Exercise · Name the people, place, and period",
+      section: "Section 7 · The map redrawn",
+      body: `The single most transferable skill in this course is the anti-flattening rule: no claim about "Africa," only claims about named peoples, places, and periods. This drill hardens the habit. For each cue, type the missing name. Spelling is checked forgivingly; common variant spellings are accepted.`,
+      exercise: {
+        instructions: "Fill in the missing name (a people, state, city, person, or site). Variants and common alternate spellings are accepted.",
+        items: [
+          {
+            prompt: "The 'bronzes' looted by British forces in 1897 came from the palace of ___ City, capital of an Edo kingdom in present-day Nigeria.",
+            answer: "Benin",
+            accept: ["benin city"],
+            hint: "Not the modern republic next door, which took the name in 1975.",
+            explanation: "The Kingdom of Benin, of the Edo people, in present-day southern Nigeria; its Oba dynasty continues today.",
+          },
+          {
+            prompt: "The 25th Dynasty pharaohs of Egypt (c. 747-656 BCE) came from the kingdom of ___, in present-day Sudan.",
+            answer: "Kush",
+            accept: ["kush", "cush", "nubia"],
+            hint: "Piye and Taharqa were its kings.",
+            explanation: "Kush, centered at Napata and later Meroe; Taharqa appears in the Hebrew Bible as 'Tirhakah king of Cush.'",
+          },
+          {
+            prompt: "King Ezana, whose coins switch mid-reign to the cross around the 340s CE, ruled the kingdom of ___.",
+            answer: "Aksum",
+            accept: ["axum"],
+            hint: "Its port was Adulis; its stelae still stand in the Ethiopian highlands.",
+            explanation: "Aksum minted its own gold coinage from c. 270 CE; Ezana's conversion is stamped into the coins themselves.",
+          },
+          {
+            prompt: "In 1331, Ibn Battuta called ___ 'one of the most beautiful and well-constructed towns in the world.'",
+            answer: "Kilwa",
+            accept: ["kilwa kisiwani"],
+            hint: "A Swahili island port in present-day Tanzania; its sultans minted copper coins.",
+            explanation: "Kilwa Kisiwani controlled the Sofala gold trade; its coins have been found at Great Zimbabwe.",
+          },
+          {
+            prompt: "Mansa Musa's 1324-25 pilgrimage set out from the empire of ___, on the upper Niger.",
+            answer: "Mali",
+            accept: [],
+            hint: "Founded, by tradition, by Sundiata around 1235.",
+            explanation: "Mali, the Mande empire whose gold and hajj put it on the Catalan Atlas of 1375.",
+          },
+          {
+            prompt: "From 1970, the Rhodesian government censored official publications from stating that ___ was built by Africans.",
+            answer: "Great Zimbabwe",
+            accept: ["zimbabwe"],
+            hint: "Drystone walls, soapstone birds, a Kilwa coin in its ruins.",
+            explanation: "The African, medieval origin had been settled by Randall-MacIver (1905) and Caton-Thompson (1929/1931); the censorship was policy, not uncertainty.",
+          },
+          {
+            prompt: "The empire destroyed at the Battle of Tondibi in 1591 by a Moroccan force with firearms was ___.",
+            answer: "Songhai",
+            accept: ["songhay"],
+            hint: "Its great rulers were Sunni Ali and Askia Muhammad, from Gao.",
+            explanation: "Songhai, the largest of the three West African empires; Timbuktu's own chroniclers recorded its fall.",
+          },
+          {
+            prompt: "Al-Bakri's 1068 account describes the twin-town capital and customs system of the kingdom of ___, a Soninke state (not the modern country of the same name).",
+            answer: "Ghana",
+            accept: ["wagadu"],
+            hint: "Al-Fazari had already called it 'the land of gold' in the eighth century.",
+            explanation: "The Soninke state of Ghana/Wagadu, in present-day Mauritania and Mali; the modern republic borrowed the name in 1957.",
+          },
+          {
+            prompt: "The eleven rock-hewn churches of ___, carved down into living volcanic rock around the 12th-13th centuries, are still in liturgical use in the Ethiopian highlands.",
+            answer: "Lalibela",
+            accept: [],
+            hint: "On UNESCO's very first World Heritage list (1978).",
+            explanation: "Traditionally King Lalibela's 'New Jerusalem' under the Zagwe dynasty; archaeologists see longer construction phasing.",
+          },
+          {
+            prompt: "The founding of Mali is preserved in the griot-carried epic of ___, victor (by tradition) at Kirina c. 1235.",
+            answer: "Sundiata",
+            accept: ["sunjata", "sundjata"],
+            hint: "Recorded versions include Niane's, from the jeli Mamadou Kouyate.",
+            explanation: "The epic evidences Mali's founding tradition and institutions; the date is traditional, anchored by Ibn Khaldun's king lists.",
+          },
+          {
+            prompt: "The ninth-tenth-century leaded-bronze regalia that stunned archaeologists in southeastern Nigeria was excavated at ___.",
+            answer: "Igbo-Ukwu",
+            accept: ["igbo ukwu"],
+            hint: "Thurstan Shaw's excavations, 1959 and 1964; the radiocarbon dates held.",
+            explanation: "Igbo-Ukwu pushed sophisticated casting in the region centuries earlier than anyone had guessed.",
+          },
+          {
+            prompt: "The urban settlement on the Niger occupied from c. 250 BCE, proving cities predate trans-Saharan Islamic trade, is ___.",
+            answer: "Jenne-jeno",
+            accept: ["jenne jeno", "djenne-djeno", "jenne-jeno"],
+            hint: "Two kilometers from the famous 1907 mud-brick mosque.",
+            explanation: "Excavated by Susan and Roderick McIntosh from 1977: urbanism on the Niger was homegrown.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "africa-quiz-7",
+      title: "Final quiz · The record, whole",
+      section: "Section 7 · The map redrawn",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is this course's sharpest overall finding about the 'Africa has no history' claim?",
+            options: [
+              "The 'darkness' was manufactured: denial was sustained institutional work, documentable in the deniers' own publications and laws",
+              "The claim was true until 1960",
+              "The claim was an innocent error corrected as soon as evidence appeared",
+              "The claim was never actually made by anyone",
+            ],
+            correctIndex: 0,
+            explanation:
+              "From Bent's Phoenicians (1891) to Rhodesia's 1970 censorship law, the denial adapted to survive each new piece of evidence, because empires needed the conclusion.",
+            sourceLessonSlug: "africa-map-redrawn",
+          },
+          {
+            prompt: "Which sequence of corrective institutions is right?",
+            options: [
+              "Journal of African History (1960); UNESCO General History of Africa launched (1964), its 8 volumes published 1981-1993",
+              "UNESCO GHA (1837); JAH (1897)",
+              "Both were founded in the 1990s",
+              "Neither exists",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Decolonization built the field's institutions; the GHA volumes were written mostly by African scholars.",
+            sourceLessonSlug: "africa-map-redrawn",
+          },
+          {
+            prompt: "How does the course handle Cheikh Anta Diop?",
+            options: [
+              "Credits him with forcing open questions (ancient Egypt's African context) a generation early, while labeling some of his specific claims contested",
+              "Endorses every claim he made",
+              "Dismisses him entirely",
+              "Does not mention him",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One standard, applied to allies too: pioneering questions, contested specifics, both stated.",
+            sourceLessonSlug: "africa-map-redrawn",
+          },
+          {
+            prompt: "Which pairing of evidence to claim is correct?",
+            options: [
+              "Ezana's conversion: contemporary coins switching to the cross mid-reign",
+              "Mansa Musa's exact net worth: al-Umari's ledgers",
+              "Great Zimbabwe's Phoenician origin: Caton-Thompson 1931",
+              "The Ark of the Covenant at Aksum: radiocarbon-verified",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The others invert the course: no net-worth figure is computable, Caton-Thompson settled the AFRICAN origin, and the Ark is a church tradition, not a verified artifact.",
+            sourceLessonSlug: "africa-map-redrawn",
+          },
+          {
+            prompt: "A blog post says: 'Africans never developed writing.' Which single lesson-fact most efficiently falsifies it?",
+            options: [
+              "The Ge'ez tradition: an African script in continuous use from Aksum's fourth-century inscriptions to today's liturgy",
+              "The monsoon winds",
+              "The 1505 sack of Kilwa",
+              "The Battle of Tondibi",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Meroitic, ajami, and the Timbuktu manuscripts pile on, but seventeen centuries of continuous Ge'ez literacy is the one-sentence refutation. (And absence of script, as at Benin, is still not absence of history.)",
+            sourceLessonSlug: "africa-written-record",
+          },
+          {
+            prompt: "A different post says: 'Precolonial Africa was a paradise without war or slavery.' What is the course's response?",
+            options: [
+              "That is the romance trap: African states fought wars and held and sold slaves (Section 5 teaches it plainly), and sanitizing the record concedes the deniers' premise",
+              "Correct, and the course proves it",
+              "Unknowable either way",
+              "True for the whole continent except Egypt",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One standard everywhere: the documented record includes Sokoto's estates, the Saharan trades, and Atlantic participation by named states. Romance erases real people too.",
+            sourceLessonSlug: "africa-map-redrawn",
+          },
+          {
+            prompt: "Which claim does this course itself refuse to assert, on its own rules?",
+            options: [
+              "That Mansa Musa was the richest person in history",
+              "That Kush ruled Egypt as the 25th Dynasty",
+              "That about 12.5 million people were embarked in the Atlantic trade",
+              "That Rhodesia censored Great Zimbabwe's origin from 1970",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The others are documented (inscriptions and chronology; SlaveVoyages; Pikirayi 2012). The 'richest ever' figure is unquantifiable and traces to a 2012 listicle.",
+            sourceLessonSlug: "africa-mansa-musa",
+          },
+          {
+            prompt: "Which three-part chain correctly connects Great Zimbabwe to China?",
+            options: [
+              "Plateau gold to Sofala; Sofala's trade controlled by Kilwa; Kilwa in the monsoon network that carried Chinese porcelain (found in Great Zimbabwe's ruins)",
+              "A Chinese fleet sailed up the Zambezi to the city",
+              "Zheng He built the Great Enclosure",
+              "There is no connection; the porcelain finds are fake",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One economy across Lessons 8-9: the Kilwa coin and celadon in the ruins are its receipts.",
+            sourceLessonSlug: "africa-swahili-coast",
+          },
+          {
+            prompt: "What made Adwa (1896) diplomatically unique in the Scramble era?",
+            options: [
+              "The victory was converted into treaty recognition of full independence, and European powers opened embassies",
+              "It was the only battle Africans won",
+              "It ended colonialism continent-wide",
+              "It was fought without weapons",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Other African forces won battles (Isandlwana, for one); Ethiopia converted its victory into durable, recognized statehood, which is the difference the course teaches.",
+            sourceLessonSlug: "africa-ethiopia-lalibela-adwa",
+          },
+          {
+            prompt: "Which of these is a correct application of the five-part audit?",
+            options: [
+              "'The bronzes were cast by the Edo casters' guild of Benin City, mostly 16th-17th centuries, per court tradition, trade records, and the 2023 isotope study, which converge'",
+              "'Africa made bronzes at some point'",
+              "'Bronzes prove Atlantis traded with Africa'",
+              "'All African art is anonymous and undatable'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "People (Edo casters), place (Benin City), period (16th-17th c.), sources (court tradition, trade records, isotope study), convergence: all five, in one sentence.",
+            sourceLessonSlug: "africa-map-redrawn",
+          },
+          {
+            prompt: "Why does the course insist on naming individuals (Caton-Thompson, Garlake, Vansina, Hunwick, Diop, Haidara) in its closing lesson?",
+            options: [
+              "Because the record survived through people's documented work and risk, and naming them is the same precision the course applies to kings",
+              "To pad the bibliography",
+              "Because they were all African",
+              "Because institutions played no role",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The correction was work, like the denial was work: exile chosen over a censored caption (Garlake), footlockers to Bamako (Haidara), careers on the texts (Hunwick).",
+            sourceLessonSlug: "africa-map-redrawn",
+          },
+          {
+            prompt: "Which claim below would this course label 'tradition, not verified fact'?",
+            options: [
+              "The Ark of the Covenant rests in the chapel at Aksum",
+              "Kilwa minted copper coins",
+              "Meroitic can be sounded out but not read",
+              "The Great Mosque of Djenne standing today was built in 1907",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Ark is a foundational church tradition no scholar has examined; the other three are documented (coin finds; Griffith's transliteration; the 1907 rebuilding).",
+            sourceLessonSlug: "africa-ethiopia-lalibela-adwa",
+          },
+          {
+            prompt: "What, per the course, is the correct one-sentence response to Trevor-Roper's 'history requires documents'?",
+            options: [
+              "The documents existed (Ge'ez, the chronicles, the Arabic corpus), and documents were never the only admissible evidence (radiocarbon, oral tradition with rules, linguistics)",
+              "Documents are colonial constructs",
+              "He was right, but Africa is an exception",
+              "Oral tradition is superior to writing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "His premise failed twice over: factually (the written record exists) and methodologically (convergent non-written evidence is standard historical practice everywhere).",
+            sourceLessonSlug: "africa-written-record",
+          },
+          {
+            prompt: "Which reading list does the course recommend as the starting shelf?",
+            options: [
+              "UNESCO General History of Africa; Fauvelle's Golden Rhinoceros; Thornton, Green, and Gomez",
+              "Hegel, Trevor-Roper, and Seligman",
+              "Only nineteenth-century travel diaries",
+              "Social media threads, curated for engagement",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The GHA is free online via UNESCO; Fauvelle covers the medieval centuries in short cited chapters; Thornton, Green, and Gomez carry the empires and the Atlantic age.",
+            sourceLessonSlug: "africa-map-redrawn",
+          },
+          {
+            prompt: "The final habit this course wants you to keep is:",
+            options: [
+              "Run the audit (people, place, century, sources, convergence) on every historical claim, especially the ones you want to believe",
+              "Trust museum labels",
+              "Prefer the most dramatic version of any story",
+              "Assume all old sources are worthless",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The guard rails cut both ways by design: refuse erasure, refuse romance. Evidence over need, on every continent, including for claims that flatter your own side.",
+            sourceLessonSlug: "africa-map-redrawn",
+          },
+        ],
+      },
+    },
   ],
 };
