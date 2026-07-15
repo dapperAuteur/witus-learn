@@ -612,6 +612,38 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   contracts" (\`umowy śmieciowe\`) rhyme** with US misclassification + Mexican protection contracts —
   the track's payoff. Cited to UNESCO, the European Solidarity Centre, GUS, OECD/AIAS, ETUI and
   Eurofound. Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+- 🔧 **Africa Before Colonization: The Documented Record** (Culture & History,
+  \`content/africa-precolonial\`) — the **anchor of the precolonial-Africa track** (from BAM's
+  \`world.md\` queue). **7 sections · 16 teaching lessons · 7 quizzes** (15-16-question banks, above
+  the 10-question attempt cap so retries rotate; every question carries \`explanation\` +
+  \`sourceLessonSlug\`) **· 1 exercise** (name the people/place/period — the anti-flattening drill).
+  **Opens with the claim in the deniers' own words** — Hegel 1837 ("no historical part of the
+  World") and Trevor-Roper 1965 ("darkness is not a subject for history"), both quotes verified —
+  then walks the record: **Kush** (Kerma, the 25th Dynasty c. 747-656 BCE, Meroë, Meroitic's
+  read-but-not-understood script), **Aksum** (gold coinage c. 270 CE, Ezana's cross coins ~340s,
+  Ge'ez, the 1937→2005 stele), **Ghana→Mali→Songhai** + Timbuktu's book trade, **Great Zimbabwe
+  with the documented denial** (Mauch/Bent/Ancient Ruins Ltd → Randall-MacIver 1905 →
+  Caton-Thompson 1929 → **Rhodesia's 1970 censorship law and Garlake forced out**, per Pikirayi
+  2012), the **Swahili coast** (African towns, per the Shanga archaeology; Ibn Battuta on Kilwa,
+  1331), **Benin** (Ife/Frobenius-Atlantis as the erasure pattern; the 2023 manilla isotope study;
+  the **1897 looting with hedged counts** + dated restitution status) and **Ethiopia** (Lalibela;
+  Wuchale Art. 17 → **Adwa 1896**; "never colonized" taught precisely WITH the 1936-41 occupation).
+  **Accuracy posture is the point:** **Mansa Musa is taught as a source audit** — al-Umari's actual
+  mithqal report via Levtzion & Hopkins, "richest ever" **refused** as unquantifiable (traces to a
+  2012 listicle), the Cairo gold "crash" labeled **contested** (Schultz 2006), caravan head-counts
+  "reported, not established"; the 1076 "Almoravid sack of Ghana" is contested (Conrad & Fisher
+  1982); Timbuktu manuscript counts are reported estimates; "University of Sankore" is flagged as
+  anachronistic; the Ark of the Covenant is church tradition, not artifact. **African participation
+  in slavery and the slave trades is taught plainly** (Thornton, Lovejoy, Northrup; SlaveVoyages
+  ~12.5M embarked / ~10.7M landed; Afonso I's 1526 letters as contemporary dissent WITHOUT
+  dressing him as an abolitionist; the "sold their own people" gotcha corrected as anachronism) —
+  and **romantic overcorrection is taught as a trap equal to erasure**. Section 6 is the
+  transferable "how we know" toolkit (radiocarbon/Jenne-jeno/Igbo-Ukwu, the Arabic corpus in
+  scholarly translation, Vansina's oral-tradition rules, Ehret's linguistics, the convergence
+  audit). Cited to the UNESCO General History of Africa, Gomez, Green, Fauvelle, Hunwick, museum
+  records and UNESCO World Heritage documentation. Registered in \`seed-courses.ts\`; **no
+  migration** — \`pnpm seed:courses\`. Track proposal (7 follow-on courses + build order) at
+  \`plans/future-courses/africa-precolonial-track-proposal.md\` → \`/admin/future\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap

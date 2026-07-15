@@ -103,6 +103,7 @@ import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
 import { LABOR_MEXICO_COURSE } from "./data/labor-mexico-course";
 import { LABOR_NORDICS_COURSE } from "./data/labor-nordics-course";
 import { LABOR_POLAND_COURSE } from "./data/labor-poland-course";
+import { AFRICA_BEFORE_COLONIZATION_COURSE } from "./data/africa-before-colonization-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
@@ -698,6 +699,21 @@ async function main() {
     // adjudicates neither. Teaches the "junk contracts" (umowy śmieciowe) rhyme with US
     // misclassification + Mexican protection contracts. 6 sections · no migration · seed:courses.
     { slug: "labor-poland", course: LABOR_POLAND_COURSE, category: "Culture & History" },
+    // Africa Before Colonization — the ANCHOR of the precolonial-Africa track
+    // (plans/future-courses/africa-precolonial-track-proposal.md; from BAM's world.md queue).
+    // Opens with the verified Hegel (1837) and Trevor-Roper (1965) "no history" quotes as the
+    // artifact, then the documented record: Kush/25th Dynasty, Aksum (coins, Ezana, Ge'ez),
+    // Ghana→Mali→Songhai + Timbuktu (Mansa Musa taught as a SOURCE AUDIT — al-Umari via
+    // Levtzion & Hopkins; "richest ever" refused; the Cairo "crash" contested per Schultz 2006),
+    // Great Zimbabwe WITH Rhodesia's documented 1970 censorship, the Swahili coast, Benin +
+    // the 1897 looting (hedged counts), Ethiopia (Lalibela; Adwa 1896 + the 1936-41 asterisk).
+    // African participation in slavery and the slave trades is taught plainly (Thornton,
+    // Lovejoy, Northrup, SlaveVoyages), and the romance trap is taught as equal to erasure.
+    // Ends with the "how we know" methods section (archaeology, the Arabic corpus in scholarly
+    // translation, Vansina's oral-tradition rules, linguistics) and an anti-flattening exercise.
+    // 7 sections · 16 teaching lessons · 7 quizzes (15-16-question banks) · 1 exercise.
+    // Mansa Gold research cross-linked at /admin/future. NO migration — pnpm seed:courses.
+    { slug: "africa-before-colonization", course: AFRICA_BEFORE_COLONIZATION_COURSE, category: "Culture & History" },
     // Golf — the first of the sports courses. Six sections: how to play, the Rules (cited to
     // the 2023 code), strategy + the World Handicap System, history (incl. the documented
     // record of racial and gender exclusion — students read the January 1962 *Golfdom* trade
