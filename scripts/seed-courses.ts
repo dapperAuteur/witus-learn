@@ -101,6 +101,7 @@ import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
 import { LABOR_MEXICO_COURSE } from "./data/labor-mexico-course";
+import { LABOR_NORDICS_COURSE } from "./data/labor-nordics-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
@@ -673,6 +674,19 @@ async function main() {
     // US-saves-Mexico framing: Mexico's law came first (1 May 2019) and the RRM only enforces it.
     // Scale of protection contracts is NOT quantified — no reliable count exists and the course says so.
     { slug: "labor-mexico", course: LABOR_MEXICO_COURSE, category: "Culture & History" },
+    // Sweden & Denmark: The Wage Floor That Isn't a Law — Wave 1 of the Workers' Rights track, a
+    // country course hanging off the anchor (history-of-unions). The reframe: neither country has a
+    // statutory national minimum wage — the floor is a collective agreement, by design. Teaches the
+    // Ghent system (union-run unemployment funds → ~two-thirds density) with Norway as the natural
+    // experiment (no Ghent → ~half), the strongest causal evidence (Sweden's 2007 a-kassa fee reform
+    // → density fell, per Kjellberg), self-regulation (Saltsjöbaden 1938; September Compromise 1899),
+    // Danish flexicurity as a TRADE under strain, and the track's sharpest single contrast — sympathy/
+    // secondary action is LEGAL here and ILLEGAL in the US (cross-links Taft-Hartley §8(b)(4)). The
+    // still-unresolved 2023 Tesla dispute is taught dated and with no winner. Honest limits: falling
+    // density, migrant/platform workers outside the agreements, and the EU minimum-wage directive the
+    // Nordic unions themselves resisted. Sweden is kept distinct from Denmark throughout. See
+    // plans/future-courses/workers-rights-track-proposal.md.
+    { slug: "sweden-denmark-nordic-model", course: LABOR_NORDICS_COURSE, category: "Culture & History" },
     // Golf — the first of the sports courses. Six sections: how to play, the Rules (cited to
     // the 2023 code), strategy + the World Handicap System, history (incl. the documented
     // record of racial and gender exclusion — students read the January 1962 *Golfdom* trade
