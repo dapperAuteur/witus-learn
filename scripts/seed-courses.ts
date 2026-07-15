@@ -118,6 +118,7 @@ import { STUDYING_ABROAD_COURSE } from "./data/studying-abroad-course";
 import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 import { LACROSSE_COURSE } from "./data/lacrosse-course";
 import { TENNIS_COURSE } from "./data/tennis-course";
+import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -723,6 +724,24 @@ async function main() {
     // sports-courses/golf.md (brief).
     { slug: "golf-play-know-work", course: GOLF_COURSE, category: "Sports" },
     { slug: "football", course: FOOTBALL_COURSE, category: "Sports" },
+    // Afrocentricity: How to Evaluate a Contested Paradigm (Culture & History) — the ANCHOR of a
+    // proposed Afrocentricity track (plans/future-courses/afrocentricity-track-proposal.md). For high
+    // school students. Teaches Afrocentricity (Asante's paradigm; roots in Diop) AS ITS PROPONENTS
+    // DEFINE IT, presents its strongest claims from their own books, AND the substantive academic
+    // criticism from the critics' own books — WITHOUT the course taking a side. The real deliverable
+    // is the transferable skill: how to evaluate a contested paradigm. Two live debates are taught
+    // with NO WINNER DECLARED and both sides cited from primary sources: the Kemet / "was ancient
+    // Egypt Black?" question (Diop vs. mainstream Egyptology, with the 2017 aDNA evidence dated and
+    // its limits stated) and the Black Athena exchange (Bernal vs. Lefkowitz). Stolen Legacy (James)
+    // is taught as academically rejected on specifics (the Library of Alexandria postdates Aristotle)
+    // WITHOUT erasing the documented Egypt→Greece influence. Rigorous scholarship is distinguished
+    // from pop-Afrocentric myth (the melanin pseudoscience of Welsing/Jeffries) — a line Afrocentrism's
+    // own critics draw, so it is not a partisan move. Every contested claim is attributed to who makes
+    // it; the course's own voice asserts only what is settled. No invented citations or quotes. 6
+    // sections · 15 teaching lessons · 6 quizzes (15-question banks, above the 10-question attempt cap
+    // so retries rotate). No migration — pnpm seed:courses. Natural home for BAM's source note
+    // plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md.
+    { slug: "afrocentricity", course: AFROCENTRICITY_COURSE, category: "Culture & History" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,

@@ -644,6 +644,29 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   records and UNESCO World Heritage documentation. Registered in \`seed-courses.ts\`; **no
   migration** — \`pnpm seed:courses\`. Track proposal (7 follow-on courses + build order) at
   \`plans/future-courses/africa-precolonial-track-proposal.md\` → \`/admin/future\`.
+- 🔧 **Afrocentricity: How to Evaluate a Contested Paradigm** (Culture & History, \`content/afrocentricity\`)
+  — the **anchor of a proposed Afrocentricity track** (\`plans/future-courses/afrocentricity-track-proposal.md\`,
+  renders at \`/admin/future\`), for high school students. **6 sections · 15 teaching lessons · 6 quizzes**
+  (15-question banks, above the 10-question attempt cap so retries rotate; 90 questions) · 15 \`:::reveal\`
+  self-checks; every question carries \`explanation\` + \`sourceLessonSlug\`. Afrocentricity is a **specific,
+  named, genuinely contested** academic paradigm (**Asante** coined the term; roots in **Diop**), and the
+  course does the hard thing: it teaches it **as its proponents define it**, presents the strongest claims
+  **from their own books**, AND the substantive academic criticism **from the critics' own books** —
+  **without the course taking a side**, asserting in its own voice only what is settled. The real
+  deliverable is the transferable skill: **how to evaluate a contested paradigm.** The two live debates are
+  taught with **no winner declared** and both sides cited from primary sources: the **Kemet / "was ancient
+  Egypt Black?"** question (Diop vs. mainstream Egyptology, with the **2017 Schuenemann et al. ancient-DNA**
+  study **dated and its limits stated** — one northern site, late window, three genomes) and the **Black
+  Athena** exchange (Bernal vs. Lefkowitz + Bernal's 2001 reply; the concede/don't-concede split reported).
+  **Stolen Legacy** (James) is taught as **academically rejected on specifics** (the Library of Alexandria
+  postdates Aristotle's death) **without erasing** the documented Egypt→Greece influence. **Rigorous
+  scholarship is distinguished from pop-Afrocentric myth** (the melanin pseudoscience of **Welsing/Jeffries**)
+  — a line Afrocentrism's **own** critics (**Howe**, **Ortiz de Montellano**) draw, so naming it is not
+  partisan. Critics (**Howe/Appiah/Gilroy**) are steelmanned from their own books, then the proponents'
+  replies, with honest scorekeeping. **No invented citations or quotes.** Cited to Asante, Diop, Bernal,
+  Lefkowitz, Howe, Appiah, Gilroy, mainstream Egyptology and the 2017 aDNA paper (APA 7 + a \`## Sources\`
+  list on every lesson). Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`. The
+  natural home for BAM's source note \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
