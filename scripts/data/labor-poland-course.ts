@@ -1194,5 +1194,290 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
         ],
       },
     },
+
+    // ────────────── SECTION 5 · WON THE COUNTRY, LOST THE WORKPLACE ──────────────
+    {
+      slug: "poland-density-collapse",
+      title: "10 · The workplace it lost: bargaining in Poland today",
+      section: "Section 5 · Won the country, lost the workplace",
+      body: `Now we close the circle back to Lesson 1. The union won the country in 1989. Here is the workplace it has today, in numbers, each with a year and a source.
+
+| Poland today | Figure |
+| --- | --- |
+| Trade union **density** (members as a share of employees) | **9.4%** (2022) |
+| Collective bargaining **coverage** | **11.6%** (2023) |
+| **Employer-organisation** density | **56.3%** (2022) |
+
+*(All three: OECD/AIAS ICTWSS database, country note for Poland. Other bodies put coverage a little higher — ETUI reports around 13% — but the picture is the same wherever you look.)*
+
+**Start with the comparison this whole track is built to let you make.** Go back to the Germany course's opening table. Germany: density ~14%, coverage ~49% — coverage more than three times membership. Poland: density ~9%, coverage ~12% — coverage barely above membership. **Same rough density; completely different coverage.** Why?
+
+**Because Poland answers Question 3 the opposite way from Germany, and you now know exactly what that means.** Recall the German machine: employers join an employers' association → the association signs a *sectoral* agreement → every member firm is bound → the terms reach all their workers. That is why German coverage floats free of German membership. Poland has the employers' side of that machine — employer-organisation density is a respectable **56.3%** — but it has almost none of the **sectoral bargaining** that would turn it into coverage. **Sector-level agreements in Poland have dwindled to a handful.** Bargaining happens, when it happens at all, **company by company.**
+
+**And company-level bargaining has a built-in ceiling that sectoral bargaining does not.** In Poland, a company collective agreement generally requires a **trade union to exist inside that particular company** (ETUI, 2023). Now layer on a fact about the Polish economy: around **70% of employees work in small and medium-sized firms, and nearly half of those in micro-enterprises** (ETUI). Unions are rare in small firms — they are hard to organise and easy to discourage. So the bargaining mechanism Poland relies on simply **cannot reach most of the workforce**, because most of the workforce is in firms too small to have a union in the first place. Coverage is chained to membership, and membership is low.
+
+**This is the structural reason the two numbers in Lesson 1 sit so far apart.** It is not that Poles are apathetic or that Solidarność "gave up." It is that the transition rebuilt Polish industrial relations on a **decentralised, firm-by-firm** model — the opposite of the sectoral model that lets a country like Germany protect half its workers with a seventh of them as members. Coverage that was around **30% in the 1990s has fallen to roughly 12–13% today** (ETUI). The revolution delivered democracy and, eventually, prosperity. It did not deliver a strong bargaining system, and by the design that emerged, it almost could not.
+
+**So the answer to "who bargains with whom, and at what level?" in Poland is: mostly no one, at the level of the single firm.** That is the workplace a union of ten million left behind.
+
+:::reveal Poland and Germany have roughly the same union density (~9% vs ~14%), but Germany's bargaining coverage (~49%) dwarfs Poland's (~12%). Using Question 3, explain the gap. ||| It is the *level* of bargaining. Germany bargains at the sectoral level — employers' associations sign agreements that bind every member firm, so coverage floats free of union membership. Poland bargains company by company, sectoral agreements have nearly vanished, and a company agreement generally needs a union inside that firm — but ~70% of Polish workers are in SMEs too small to have one. So Polish coverage is chained to its low membership, while Germany's is not.
+
+## Sources
+- OECD/AIAS. (n.d.). *ICTWSS database — country note: Poland*. https://www.oecd.org/content/dam/oecd/en/data/datasets/oecd-aias-ictwss/Poland.pdf
+- European Trade Union Institute. (2023). *Poland: Trade unions developing after a decline* (Chapter 22). https://www.etui.org/sites/default/files/2023-06/Chapter22_Poland_Trade%20unions%20developing%20after%20a%20decline_2023.pdf
+- European Trade Union Institute. (2025). *Poland: Collective bargaining and minimum wage regime*. https://www.etui.org/sites/default/files/2025-06/Poland_Collective%20bargaining%20and%20minimum%20wage%20regime_2025_0.pdf`,
+      recallContent: [
+        {
+          prompt: "Give Poland's union density, bargaining coverage, and employer-organisation density, with years and source.",
+          answer:
+            "Density 9.4% (2022), bargaining coverage 11.6% (2023), employer-organisation density 56.3% (2022) — all OECD/AIAS ICTWSS. Coverage is barely above membership, unlike Germany where it is over three times membership.",
+        },
+        {
+          prompt: "Why is Polish coverage 'chained to' its low membership, when Germany's is not?",
+          answer:
+            "Poland bargains company by company (sectoral agreements have nearly vanished), and a company agreement generally needs a union inside that firm — but ~70% of workers are in SMEs too small to have one. Germany's sectoral bargaining, by contrast, binds whole industries through employer-association membership, so its coverage floats free of membership.",
+        },
+      ],
+    },
+    {
+      slug: "poland-solidarnosc-today",
+      title: "11 · Solidarność today, and a legacy Poland argues about",
+      section: "Section 5 · Won the country, lost the workplace",
+      body: `The Solidarność of 2026 is not the Solidarność of 1980, and one of the things this course owes you is an honest, careful account of the difference — including the parts that are politically contested in Poland right now. The rule for this lesson is the same one the anchor course uses for Hoffa and for Marikana: **state what is documented, date it, and do not adjudicate what is genuinely disputed.**
+
+**First, the landscape. Poland does not have one union movement; it has a fragmented one.** There are three nationally representative union confederations (Eurofound; ETUI, 2023):
+
+- **NSZZ "Solidarność"** — the direct descendant of the 1980 movement, founded 1980.
+- **OPZZ** (the All-Poland Alliance of Trade Unions) — the **second** major confederation, and here is an irony worth holding: it was **created in 1984 by the communist regime** as an official alternative *after* Solidarność was banned. The union the state built to replace the one it crushed is now a legitimate, independent confederation of its own, generally on the political left.
+- **FZZ** (the Trade Unions Forum) — a third confederation, established in 2002.
+
+That three-way split is itself part of the weakness Lesson 10 described: bargaining power that might be concentrated is instead divided among rival federations that do not always cooperate.
+
+**Second, the politics, stated as fact and dated.** Since the 1990s, NSZZ "Solidarność" has been openly aligned with the **national-catholic right** in Polish politics. It has publicly backed candidates and parties of that camp — for example, it campaigned for the **Law and Justice (PiS)** party's candidate, Lech Kaczyński, in the **2005** presidential election, and it has cooperated with PiS since (Eurofound). A union that was founded as a broad, cross-ideological movement of *the whole society* against the state has, in the democratic era, become a **partisan actor** identified with one side of a bitterly divided politics. You do not have to have an opinion about Polish politics to see that this is a very different institution from the ten-million-strong national movement of 1980 — and to understand why some Poles who revere the 1980 Solidarność feel estranged from the organisation that carries its name today.
+
+**Third — and this is the paragraph the proposal for this course specifically asked for — the contested legacy, which the course will name and then leave to Poland.** The meaning of Solidarność's history is **actively fought over in Polish public life.** In particular, the personal record of **Lech Wałęsa** is the subject of a long-running and fierce dispute: there are contested allegations, which Wałęsa denies, that in the early 1970s — before the movement — he was a paid informer for the communist security service under the codename "Bolek." Polish historians, courts, and institutions have argued about the authenticity and meaning of the relevant files for years, and it remains a live, polarising controversy. **This course does not adjudicate it.** It is not our place, from the outside, to declare who is right about a disputed chapter of another country's national memory. What you should carry away is only this: **the facts of 1980–1989 in this course are firmly established and sourced; the *meaning and personal reckonings* of that era are still being argued in Poland, and honest teaching says so rather than pretending the argument is settled.**
+
+**Put the whole section together.** Poland is a democracy where anyone may organise, and where — measured by density, coverage, fragmentation, and the drift of its most famous union into partisan politics — the organised labour movement is weak and divided. The country that a union set free is not, today, a country of strong unions. That is not a paradox to be explained away. **It is the honest ending, and it is the most important thing this course has to teach: a movement can win the state and still lose the workplace, and winning the first does not guarantee keeping the second.**
+
+:::reveal How should a careful course handle the fierce Polish dispute over Lech Wałęsa's alleged 1970s security-service file? ||| It should name that the dispute exists, note that the allegations are contested and that Wałęsa denies them, and then decline to adjudicate — because the facts of 1980–1989 are well established and sourced, but the personal reckonings and the meaning of that era are still being argued in Poland today. Honest teaching states plainly what is settled and what is contested, rather than pretending an active national controversy has a verdict.
+
+## Sources
+- European Trade Union Institute. (2023). *Poland: Trade unions developing after a decline* (Chapter 22). https://www.etui.org/sites/default/files/2023-06/Chapter22_Poland_Trade%20unions%20developing%20after%20a%20decline_2023.pdf
+- Eurofound. (n.d.). *Poland: Actors and institutions*. European Foundation for the Improvement of Living and Working Conditions. https://www.eurofound.europa.eu/en/countries/poland/actors-and-institutions
+- Encyclopædia Britannica. (n.d.). *Lech Wałęsa*. https://www.britannica.com/biography/Lech-Walesa`,
+      recallContent: [
+        {
+          prompt: "Name Poland's three nationally representative union confederations — and the irony about one of them.",
+          answer:
+            "NSZZ 'Solidarność' (1980), OPZZ (the All-Poland Alliance of Trade Unions), and FZZ (Trade Unions Forum, 2002). The irony: OPZZ was created in 1984 by the communist regime as an official alternative after Solidarność was banned, and is now a legitimate independent confederation of its own.",
+        },
+        {
+          prompt: "How does the course handle Solidarność's contemporary politics and the Wałęsa dispute?",
+          answer:
+            "It states as dated fact that NSZZ 'Solidarność' has since the 1990s been aligned with the national-catholic right and backed PiS (e.g. Lech Kaczyński in 2005). On Wałęsa's contested 1970s security-service allegations, it names the dispute, notes he denies them, and declines to adjudicate — settled facts vs. still-argued meaning.",
+        },
+      ],
+    },
+    {
+      slug: "poland-quiz-5",
+      title: "Section 5 quiz · The workplace, and today",
+      section: "Section 5 · Won the country, lost the workplace",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is Poland's collective bargaining coverage today (2023, OECD/AIAS)?",
+            options: ["About 12%", "About 49%", "About 80%", "About 30%"],
+            correctIndex: 0,
+            explanation:
+              "11.6% in 2023 (OECD/AIAS); ETUI puts it around 13%. Either way, barely above the ~9% membership rate.",
+            sourceLessonSlug: "poland-density-collapse",
+          },
+          {
+            prompt: "Poland and Germany have similar union density but very different coverage. What explains the gap?",
+            options: [
+              "Germans are more loyal to unions",
+              "The LEVEL of bargaining — Germany bargains sectorally (binding whole industries), Poland bargains company by company with almost no sectoral agreements",
+              "Poland has no collective bargaining law",
+              "Germany forces every worker to join a union",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Sectoral bargaining lets German coverage float free of membership; Poland's firm-by-firm model chains coverage to its low membership.",
+            sourceLessonSlug: "poland-density-collapse",
+          },
+          {
+            prompt: "Poland's employer-organisation density is 56.3% (2022) — fairly high. Why doesn't that produce high coverage as it does in Germany?",
+            options: [
+              "Because Polish employers refuse to sign anything",
+              "Because Poland lacks the sectoral bargaining that turns employer organisation into coverage — bargaining is company-level",
+              "Because the figure is fake",
+              "Because employers' associations are banned",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Poland has the employers' side of the German machine but not the sectoral agreements, so the organisation doesn't convert into coverage.",
+            sourceLessonSlug: "poland-density-collapse",
+          },
+          {
+            prompt: "Why does company-level bargaining have a built-in ceiling in Poland?",
+            options: [
+              "Companies are forbidden to bargain",
+              "A company agreement generally needs a union inside that firm — but ~70% of workers are in SMEs too small to have one",
+              "Only the government can sign agreements",
+              "Workers must pay to bargain",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The mechanism can't reach most of the workforce, because most of the workforce is in firms too small to organise. Coverage is chained to membership.",
+            sourceLessonSlug: "poland-density-collapse",
+          },
+          {
+            prompt: "How has Polish bargaining coverage changed since the 1990s (ETUI)?",
+            options: [
+              "It rose from 12% to 30%",
+              "It fell from around 30% in the 1990s to roughly 12–13% today",
+              "It has stayed flat at 50%",
+              "It reached 80%",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The transition rebuilt industrial relations on a decentralised model, and coverage has more than halved since the 1990s.",
+            sourceLessonSlug: "poland-density-collapse",
+          },
+          {
+            prompt: "What is the honest ending the course draws from Poland's numbers?",
+            options: [
+              "That unions always win in the end",
+              "That a movement can win the state and still lose the workplace — winning the first does not guarantee keeping the second",
+              "That democracy makes unions strong automatically",
+              "That Poland has the strongest unions in the EU",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The country a union set free is not, today, a country of strong unions. That is the central lesson, not a paradox to explain away.",
+            sourceLessonSlug: "poland-density-collapse",
+          },
+          {
+            prompt: "Which are Poland's three nationally representative trade union confederations?",
+            options: [
+              "AFL, CIO, and Teamsters",
+              "NSZZ 'Solidarność', OPZZ, and FZZ",
+              "IG Metall, ver.di, and IG BCE",
+              "CGT, CFDT, and FO",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Solidarność (1980), the All-Poland Alliance of Trade Unions (OPZZ), and the Trade Unions Forum (FZZ, 2002). The movement is fragmented among rivals.",
+            sourceLessonSlug: "poland-solidarnosc-today",
+          },
+          {
+            prompt: "What is the irony about OPZZ, Poland's second-largest confederation?",
+            options: [
+              "It was founded by the Catholic Church",
+              "It was created in 1984 by the communist regime as an official alternative after Solidarność was banned — and is now a legitimate independent confederation",
+              "It is secretly controlled by Solidarność",
+              "It represents only managers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The union the state built to replace the one it crushed is now a rival confederation in its own right, generally on the political left.",
+            sourceLessonSlug: "poland-solidarnosc-today",
+          },
+          {
+            prompt: "How does the course describe NSZZ 'Solidarność's' contemporary politics?",
+            options: [
+              "As strictly non-political",
+              "As openly aligned since the 1990s with the national-catholic right, having backed PiS candidates (e.g. Lech Kaczyński in 2005) — stated as dated fact, with the course taking no side",
+              "As a branch of the Communist Party",
+              "As allied with the political left",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A movement founded as a cross-ideological front of the whole society has become a partisan actor. The course reports this neutrally and dated.",
+            sourceLessonSlug: "poland-solidarnosc-today",
+          },
+          {
+            prompt: "How does the course handle the dispute over Lech Wałęsa's alleged 1970s security-service file?",
+            options: [
+              "It declares him guilty",
+              "It declares him innocent",
+              "It names the dispute, notes the allegations are contested and that he denies them, and declines to adjudicate",
+              "It ignores the subject entirely",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Settled facts (1980–89) vs. still-argued meaning. Honest teaching states what is disputed rather than pretending an active controversy is resolved.",
+            sourceLessonSlug: "poland-solidarnosc-today",
+          },
+          {
+            prompt: "Why does the fragmentation into three confederations matter for worker power?",
+            options: [
+              "It makes unions stronger by competition",
+              "Bargaining power that might be concentrated is instead divided among rival federations that do not always cooperate",
+              "It has no effect",
+              "It is required by EU law",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Division is part of the weakness described in Lesson 10 — a fragmented movement bargains less effectively than a unified one.",
+            sourceLessonSlug: "poland-solidarnosc-today",
+          },
+          {
+            prompt: "What editorial rule does this lesson borrow from the anchor course (Hoffa, Marikana)?",
+            options: [
+              "Always take the union's side",
+              "State what is documented, date it, and do not adjudicate what is genuinely disputed",
+              "Avoid all contemporary politics",
+              "Only cite government sources",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same posture the whole platform uses for contested chapters: name the dispute, cite the record, refuse to invent a verdict.",
+            sourceLessonSlug: "poland-solidarnosc-today",
+          },
+          {
+            prompt: "Why might some Poles who revere the 1980 movement feel estranged from today's NSZZ 'Solidarność'?",
+            options: [
+              "Because it grew too large",
+              "Because a movement founded as a broad, cross-ideological front of the whole society has become a partisan actor identified with one side of a divided politics",
+              "Because it merged with OPZZ",
+              "Because it left Poland",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The 1980 union and the 2026 union are genuinely different institutions — which is why the course distinguishes them so carefully.",
+            sourceLessonSlug: "poland-solidarnosc-today",
+          },
+          {
+            prompt: "True or false: the FACTS of Poland's 1980–1989 history are well established, even though the MEANING of that era is still contested in Poland.",
+            options: [
+              "True",
+              "False — the facts are as disputed as the meaning",
+              "False — nothing about the period is documented",
+              "True, but only the meaning is documented",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course draws exactly this line: settled, sourced facts vs. an ongoing national argument over their meaning and personal reckonings.",
+            sourceLessonSlug: "poland-solidarnosc-today",
+          },
+          {
+            prompt: "What is the single best summary of Poland's answer to 'who bargains, at what level?' today?",
+            options: [
+              "The whole economy, at national level",
+              "Mostly no one, at the level of the single firm",
+              "Every sector, by ministerial decree",
+              "Only the government, for all workers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Decentralised, firm-by-firm bargaining that reaches only a small minority — the workplace a ten-million-member union left behind.",
+            sourceLessonSlug: "poland-density-collapse",
+          },
+        ],
+      },
+    },
   ],
 };
