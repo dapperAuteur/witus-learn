@@ -1253,5 +1253,287 @@ And now connect it back to Section 3, because this is not a curiosity — **it i
         ],
       },
     },
+
+    // ────────────── SECTION 5 · THE STRESS TEST: TESLA IN SWEDEN ──────────────
+    {
+      slug: "nordic-tesla-strike",
+      title: "11 · The stress test: Tesla in Sweden (2023– )",
+      section: "Section 5 · The stress test — Tesla in Sweden",
+      body: `**Read this whole lesson as dated, contested, and unfinished.** It is about a dispute that was still going on as this course was written in **2026**, more than two years after it began. Nothing here is settled history. Every claim carries a date, the course declares **no winner**, and you should **re-check the current state before you rely on any of it.** The dispute is valuable precisely because it is the Nordic model being tested in real time — not a museum piece.
+
+**The set-up.** Tesla sells and services cars in Sweden, but does not manufacture there; the Swedish operation is service centres and sales. Tesla, as a matter of company policy worldwide, does not sign collective agreements. That policy ran straight into the machinery you learned in Sections 3 and 4: in Sweden, a firm that will not sign gets brought to the table not by a law — there is none — but by industrial action, including **legal sympathy action**.
+
+**The primary conflict.** On **27 October 2023**, the metalworkers' union **IF Metall** put its members who service Tesla vehicles — roughly 130 mechanics — **on strike**, after Tesla declined to sign a collective agreement covering them. On its own, a strike by ~130 mechanics is not much leverage against a global company. So the rest of the model switched on.
+
+**The sympathy actions (from November 2023 onward), and this is the part to watch, because it is Section 4 made real:**
+- **Dockworkers** refused to **unload Tesla cars** arriving at Swedish ports (reported from around mid-November 2023).
+- **PostNord**, the postal service, stopped delivering mail to Tesla — **including the licence plates** that newly registered cars legally require (from around **20 November 2023**). In Sweden, plates are issued through official channels and physically distributed by post; stop the post, and you have found a genuine choke point.
+- **Electricians** (the union Elektrikerna) refused to do service and repair work at Tesla sites and, reportedly, on some charging infrastructure; **cleaners** stopped cleaning Tesla premises; **painters** and other trades added their own blockades over the following weeks.
+- The action **spread across the Nordics**: transport and dockworker unions in **Denmark, Norway and Finland** announced they would refuse to handle Tesla vehicles bound for Sweden (from around December 2023) — turning a Swedish dispute into a regional one.
+
+**The counter-moves, dated and described carefully.** Tesla did not simply absorb it. The company went to court over the **licence plates**, arguing it was unlawful for the state's distribution to be blocked, and sued both the postal service and the Swedish Transport Agency (from late November 2023). The licence-plate question produced **conflicting interim court rulings** in late 2023 — the course will not walk you through a blow-by-blow it cannot fully verify, and simply notes that the plate fight became a legal sub-battle in its own right. Tesla's CEO publicly called the situation "insane" (November 2023). Tesla continued to operate, sourcing services and workarounds where it could.
+
+**Where it stood at this course's writing (2026).** More than two years in, **the dispute was unresolved.** Tesla had **not** signed a collective agreement; the strike and various sympathy actions were, in different forms, **still active or intermittently renewed**; and **neither side had "won."** That is the honest status, and it is deliberately the status this course leaves you with. If you want to know how it turned out, that is a research task for *you*, in your present, not a fact this course will pretend to have.
+
+:::reveal Summarise the Tesla dispute in Sweden — and state its status the way this course insists you must. ||| On 27 October 2023, IF Metall struck over Tesla's refusal to sign a collective agreement for its ~130 Swedish service mechanics; from November 2023 legal sympathy actions spread — dockworkers refused to unload Tesla cars, PostNord stopped delivering mail including licence plates, electricians/cleaners/painters joined, and transport unions in Denmark, Norway and Finland blocked Tesla vehicles bound for Sweden. Status (as of this course's writing in 2026, and to be re-checked): unresolved — Tesla had not signed, actions continued, and neither side had won. Every claim is dated; the course declares no winner.
+
+## Sources
+- IF Metall. (2023–). *Conflict with Tesla / Tesla-konflikten* [union party to the dispute — read as an interested primary source, not a neutral one]. Industrifacket Metall. https://www.ifmetall.se/
+- Reuters. (2023, November–December). *Coverage of the IF Metall–Tesla dispute and Nordic sympathy actions* [dated news reporting; verify specific articles and later developments before relying on them]. https://www.reuters.com/
+- Financial Times. (2023–2024). *Reporting on Tesla's Swedish labour dispute* [dated news reporting; contested and evolving — re-check]. https://www.ft.com/`,
+      recallContent: [
+        {
+          prompt: "When and why did IF Metall strike against Tesla, and why was a ~130-mechanic strike enough to matter?",
+          answer:
+            "On 27 October 2023, over Tesla's refusal to sign a collective agreement for its Swedish service mechanics. The small primary strike mattered because legal sympathy action multiplied it — dockworkers, PostNord (mail and licence plates), electricians, cleaners and painters, plus transport unions across the Nordics refusing to handle Tesla vehicles.",
+        },
+        {
+          prompt: "What is the course's required way of stating the Tesla dispute's status?",
+          answer:
+            "As dated, contested and unfinished: as of the course's 2026 writing, unresolved — Tesla had not signed, actions continued, neither side had won — and the learner should re-check the current state. No winner is declared.",
+        },
+      ],
+    },
+    {
+      slug: "nordic-tesla-lessons",
+      title: "12 · What Tesla is actually testing",
+      section: "Section 5 · The stress test — Tesla in Sweden",
+      body: `Strip away the celebrity and the electric cars, and the Tesla dispute is a clean experiment on the exact machinery this course has been describing. Here is what it puts under load.
+
+**Test 1 — Can a self-regulation model compel a firm that simply refuses?** Remember the structural fact from Section 3: Sweden has **no minimum-wage law and no legal extension of agreements.** So there is no statute anyone can point Tesla to that says "sign this." The *only* route is pressure. That is a feature in normal times — it keeps the state out and the parties in charge. But it means the model's power is exactly as strong as the pressure the unions can generate, and no stronger. Against a domestic firm, that pressure is usually decisive. Against a global company that can absorb losses in one country, run workarounds, and wait, **the model's central assumption — that no serious employer can hold out indefinitely — is precisely what is being tested.**
+
+**Test 2 — Does the legal sympathy strike still have teeth in a globalised economy?** Section 4 argued that sympathy action is the load-bearing weapon of the whole system. Tesla is the check on that argument. Sympathy action is devastating when the target *needs* the local network — the deliveries, the plates, the servicing. But a company that can re-route logistics internationally, that is not dependent on any single local supplier, and whose owner is willing to take the fight publicly, tests whether radiating a dispute across firms still translates into leverage the way it did in the 20th century. **This is not a rhetorical question in the course; it is an open empirical one in the world.**
+
+**Test 3 — Whose problem is a global non-signatory?** The dispute is also a story about **coordination**, which is why it spread to Denmark, Norway and Finland. A single national union movement may not be able to move a multinational; a coordinated Nordic (and potentially European) one has a better chance. Watch, in your own present, whether the response stays national or becomes genuinely cross-border — because that tells you something about the future of the whole model in a world of multinational employers.
+
+**Why this belongs at the end of the "how it works" story and right before the "honest limits" section.** Everything in Sections 1–4 explains a system that was built for, and largely by, an economy of nationally rooted firms and organised employers who accepted the rules of the game. Tesla is what it looks like when a very large, very mobile firm **declines to accept those rules** and the model has to decide whether its 20th-century tools still work. Section 6 then widens that same worry: it is not only defiant multinationals who sit outside the agreements — so do migrant workers, platform workers, and the employees of the growing number of firms that never signed. **The Tesla dispute is the dramatic version of the quiet problem Section 6 is about.**
+
+**The discipline this section is really teaching.** Notice what the course did *not* do: it did not tell you who wins, did not predict an outcome, and did not turn a live, contested dispute into a tidy morality tale. That restraint is the point. When you write or argue about an ongoing event, **date every claim, name what is contested, cite interested parties as interested, and refuse to declare a winner the record has not yet produced.** The parallel courses in this very track shipped a fabricated quote and a mis-copied court outcome that were caught only by checking. On a live story, the temptation to tidy is strongest and the cost of being wrong is highest. **Check; don't recall; don't tidy.**
+
+:::reveal What is the Tesla dispute fundamentally testing about the Nordic model, and what discipline does the course model in refusing to call it? ||| It tests whether a self-regulation model with no minimum-wage law and no legal extension — which can only compel a firm through pressure, above all the legal sympathy strike — can still move a large, mobile, globally-financed employer that refuses the rules and can wait, re-route logistics, and fight publicly. The discipline: date every claim, name what is contested, cite interested parties as interested, and refuse to declare a winner the record has not produced — because on a live story the temptation to tidy is strongest and the cost of error highest.
+
+## Sources
+- ETUI / Worker Participation. (n.d.). *Sweden: Industrial action and collective bargaining* [structural context: no statutory minimum wage, no legal extension]. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries/sweden
+- OECD/AIAS. (n.d.). *ICTWSS database — country note: Sweden*. Organisation for Economic Co-operation and Development. https://www.oecd.org/en/data/datasets/oecd-aias-ictwss-database.html
+- IF Metall. (2023–). *Tesla-konflikten* [interested primary source — treat accordingly; re-check for current status]. Industrifacket Metall. https://www.ifmetall.se/`,
+      recallContent: [
+        {
+          prompt: "What are the three things the Tesla dispute puts under load?",
+          answer:
+            "(1) Whether a self-regulation model with no minimum-wage law and no legal extension can compel a firm that simply refuses; (2) whether the legal sympathy strike still has teeth against a globally mobile company that can re-route logistics and wait; (3) whether the response stays national or becomes coordinated across the Nordics/Europe.",
+        },
+        {
+          prompt: "How does Tesla connect to Section 6's 'honest limits'?",
+          answer:
+            "Tesla is the dramatic version of a quiet problem: it is not only defiant multinationals who sit outside the collective agreements, but also migrant workers, platform workers, and employees of the growing number of firms that never signed. The model was built for nationally rooted firms that accept the rules.",
+        },
+      ],
+    },
+    {
+      slug: "nordic-quiz-5",
+      title: "Section 5 quiz · The Tesla stress test",
+      section: "Section 5 · The stress test — Tesla in Sweden",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What triggered the Swedish Tesla dispute, and when did the primary strike begin?",
+            options: [
+              "A factory safety scandal, in 2019",
+              "Tesla's refusal to sign a collective agreement for its Swedish service mechanics; IF Metall struck on 27 October 2023",
+              "A wage cut imposed by the Swedish government",
+              "A merger between Tesla and Volvo",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Tesla does not sign collective agreements as a matter of global policy; that ran straight into the Swedish model's machinery.",
+            sourceLessonSlug: "nordic-tesla-strike",
+          },
+          {
+            prompt: "Why could a strike by only ~130 Tesla mechanics exert real pressure?",
+            options: [
+              "Because the mechanics were highly paid",
+              "Because legal SYMPATHY action multiplied it — dockworkers, PostNord, electricians, cleaners and painters, and Nordic transport unions all refused to handle Tesla",
+              "Because the government joined the strike",
+              "Because Tesla had only 130 employees worldwide",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This is Section 4 made real: the sympathy strike is what turns a small primary conflict into broad leverage.",
+            sourceLessonSlug: "nordic-tesla-strike",
+          },
+          {
+            prompt: "What was the significance of PostNord halting deliveries to Tesla (from ~20 November 2023)?",
+            options: [
+              "It stopped Tesla's advertising",
+              "It cut off mail INCLUDING the licence plates newly registered cars legally require — a genuine choke point",
+              "It was purely symbolic with no effect",
+              "It raised Tesla's shipping costs slightly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Plates are distributed by post in Sweden; blocking the post created a concrete legal-logistical pressure point (and a court sub-battle).",
+            sourceLessonSlug: "nordic-tesla-strike",
+          },
+          {
+            prompt: "How did the dispute become regional?",
+            options: [
+              "The EU ordered all members to boycott Tesla",
+              "Transport and dockworker unions in Denmark, Norway and Finland announced they would refuse to handle Tesla vehicles bound for Sweden (from ~December 2023)",
+              "Tesla closed all European operations",
+              "It never spread beyond Sweden",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Cross-border sympathy action turned a Swedish dispute into a Nordic one.",
+            sourceLessonSlug: "nordic-tesla-strike",
+          },
+          {
+            prompt: "What is the course's stated status of the Tesla dispute?",
+            options: [
+              "Tesla signed in early 2024; the unions won",
+              "The unions were crushed and the model failed",
+              "As of the course's 2026 writing, unresolved — Tesla had not signed, actions continued, neither side had won — and the reader should re-check",
+              "It was settled by the Swedish parliament with a new law",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Dated, contested, unfinished, no winner. That is deliberately the status the course leaves you with.",
+            sourceLessonSlug: "nordic-tesla-strike",
+          },
+          {
+            prompt: "Test 1: what does Tesla probe about Sweden's self-regulation model?",
+            options: [
+              "Whether Sweden's minimum-wage law is high enough",
+              "Whether a model with NO minimum-wage law and NO legal extension can compel a firm that simply refuses — since its only tool is pressure",
+              "Whether Tesla can build a factory in Sweden",
+              "Whether the EU can set Swedish wages",
+            ],
+            correctIndex: 1,
+            explanation:
+              "There is no statute to point Tesla to; the model's power equals the pressure the unions can generate, and no more.",
+            sourceLessonSlug: "nordic-tesla-lessons",
+          },
+          {
+            prompt: "Test 2: what does Tesla probe about the sympathy strike?",
+            options: [
+              "Whether it is legal at all",
+              "Whether it still has teeth against a globally mobile firm that can re-route logistics internationally, avoid dependence on any single local supplier, and wait",
+              "Whether workers support it",
+              "Whether it violates the peace obligation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Sympathy action is devastating when the target needs the local network; a multinational tests whether that leverage survives globalisation.",
+            sourceLessonSlug: "nordic-tesla-lessons",
+          },
+          {
+            prompt: "Test 3: what does the Nordic spread of the dispute reveal?",
+            options: [
+              "That the dispute was illegal",
+              "A coordination problem — a single national movement may not move a multinational, but a coordinated Nordic (or European) one has a better chance",
+              "That Tesla had already won",
+              "That sympathy action is banned across the Nordics",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Whether the response stays national or becomes cross-border signals the model's future against multinational employers.",
+            sourceLessonSlug: "nordic-tesla-lessons",
+          },
+          {
+            prompt: "How does the Tesla dispute connect to Section 6's 'honest limits'?",
+            options: [
+              "It doesn't — they are unrelated",
+              "It is the dramatic version of a quiet problem: migrant, platform, and never-signed-firm workers also sit outside the agreements the model was built for",
+              "It proves the model has no limits",
+              "It shows the model only fails with car companies",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A defiant multinational and an excluded migrant worker are two faces of the same structural gap.",
+            sourceLessonSlug: "nordic-tesla-lessons",
+          },
+          {
+            prompt: "What reporting discipline does Section 5 deliberately model?",
+            options: [
+              "Predict the winner confidently",
+              "Date every claim, name what is contested, cite interested parties as interested, and refuse to declare a winner the record has not produced",
+              "Rely on memory rather than checking",
+              "Turn the dispute into a tidy morality tale",
+            ],
+            correctIndex: 1,
+            explanation:
+              "On a live story the temptation to tidy is strongest and the cost of error highest. Check; don't recall; don't tidy.",
+            sourceLessonSlug: "nordic-tesla-lessons",
+          },
+          {
+            prompt: "Why should IF Metall's own account of the dispute be read as an 'interested primary source'?",
+            options: [
+              "Because unions are always wrong",
+              "Because IF Metall is a party to the dispute, so its account is authoritative on its own actions but not neutral — a careful reader cites it accordingly and cross-checks",
+              "Because it is a government agency",
+              "Because it is fabricated",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Naming a source's interest is part of the same discipline: authoritative on some things, motivated on others.",
+            sourceLessonSlug: "nordic-tesla-strike",
+          },
+          {
+            prompt: "Why does the course refuse to walk through the licence-plate court rulings blow-by-blow?",
+            options: [
+              "Because courts are irrelevant",
+              "Because the interim rulings were conflicting and evolving and the author could not fully verify them — so it notes the plate fight became a legal sub-battle without asserting a chain of outcomes",
+              "Because Tesla won every ruling",
+              "Because the unions won every ruling",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The authoritative-values and check-don't-recall rules applied to a live, contested legal thread.",
+            sourceLessonSlug: "nordic-tesla-strike",
+          },
+          {
+            prompt: "Tesla operates in Sweden as…",
+            options: [
+              "A large car factory with thousands of assembly workers",
+              "Sales and service centres — it does not manufacture in Sweden",
+              "A bank",
+              "A government contractor",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Swedish operation is service and sales, which is why the primary bargaining unit (the mechanics) is relatively small.",
+            sourceLessonSlug: "nordic-tesla-strike",
+          },
+          {
+            prompt: "What is the model's 'central assumption' that Tesla puts under load?",
+            options: [
+              "That the government will always intervene",
+              "That no serious employer can hold out against coordinated collective pressure indefinitely",
+              "That workers will never strike",
+              "That wages must be set by law",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A global firm able to absorb losses in one country, run workarounds, and wait is exactly the case that assumption did not anticipate.",
+            sourceLessonSlug: "nordic-tesla-lessons",
+          },
+          {
+            prompt: "Why is an ongoing, unresolved dispute still valuable to teach?",
+            options: [
+              "It isn't — only settled history should be taught",
+              "Because it is the Nordic model being tested in real time, and teaching it dated-and-open trains the exact judgment students need for live events",
+              "Because the outcome is obvious",
+              "Because it lets the course predict the future",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The unfinished status is the lesson, not a defect — provided every claim is dated and no winner is declared.",
+            sourceLessonSlug: "nordic-tesla-lessons",
+          },
+        ],
+      },
+    },
   ],
 };
