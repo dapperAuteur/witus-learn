@@ -1305,5 +1305,287 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5 — The Cultural Movements
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "negritude",
+      title: "17 · Négritude: Césaire, Senghor, and the Harlem bridge",
+      section: "The Cultural Movements",
+      recallContent: [
+        {
+          prompt: "Run the course's one-line arc: what do 1900, 1945, 1957, 1963, and 2002 each stand for?",
+          answer: "1900 a petition (London); 1945 a demand (Manchester); 1957 a state (Ghana); 1963 a club of states with union rejected (the OAU); 2002 a union in name with one revolutionary clause, Article 4(h) (the AU).",
+        },
+        {
+          prompt: "Why was Manchester 1945 thin on francophone Africa?",
+          answer: "The French-colonial world was following a different track through Paris — the cultural movement of Négritude, which Section 5 teaches as part of the Pan-African family.",
+        },
+      ],
+      body: `While the anglophone movement built congresses, the francophone movement built a poetics. Négritude is Pan-Africanism in its cultural register — and its origin story runs through Harlem.
+
+**The Harlem bridge.** In 1920s Paris, the sisters **Paulette and Jane Nardal** — Martinican intellectuals; Paulette was among the first Black women to study at the Sorbonne — hosted a salon in suburban Clamart where African, Caribbean, and African American writers met, and co-animated *La Revue du monde noir* (1931–32), a bilingual journal that put the **Harlem Renaissance** into French circulation (Sharpley-Whiting, 2002). The students who became Négritude's founders read **Langston Hughes**, **Countee Cullen**, and above all **Claude McKay** — whose novel *Banjo* (1929) they treated almost as a manifesto — and drew the lesson that Blackness could be written *as itself*, not as apprentice Frenchness (Kesteloot, 1991; Sharpley-Whiting, 2002). Per this course's habit of crediting the uncredited: Paulette Nardal later observed, with documented tartness, that the young men took up ideas the salon's women had been airing and won the glory for them (Sharpley-Whiting, 2002).
+
+**The three founders.** In 1930s Paris three colonial students found each other: **Aimé Césaire** of Martinique, **Léopold Sédar Senghor** of Senegal, and **Léon-Gontran Damas** of French Guiana. Around their student journal *L'Étudiant noir* (1935), Césaire coined a word from a slur: **négritude** — reclaiming *nègre* the way later movements reclaimed other weapons. Damas struck first in verse (*Pigments*, 1937 — banned by the French state in 1939); Césaire's book-length poem *Cahier d'un retour au pays natal* (*Notebook of a Return to the Native Land*, 1939) became the movement's monument (Césaire, 1939/2001; Kesteloot, 1991). What was négritude? In Senghor's formulation, the sum of the cultural values of the Black world — a civilization to be affirmed, not a lack to be remedied; in Césaire's, a defiant solidarity with the despised and enslaved. Against France's **assimilation** doctrine — become French, forget the rest — négritude answered: we will take your language and write ourselves in it.
+
+**From poetics to politics.** The movement refused to stay literary. Césaire's *Discourse on Colonialism* (1950) turned the poetry into prosecution — colonization, he argued, "decivilizes" the **colonizer** — and his 1956 letter resigning from the French Communist Party insisted Black struggle must not be an annex of anyone else's (Césaire, 1950/2000; Césaire, 1956). The publishing house and journal **Présence Africaine** (founded 1947 by **Alioune Diop**) gave the movement an institution, and convened the **First International Congress of Black Writers and Artists** at the Sorbonne in **September 1956** — Césaire, Senghor, Fanon, Richard Wright and James Baldwin in the same hall; Du Bois, his passport again withheld by Washington, could send only a message (Présence Africaine, 1956; Adi, 2018). Senghor went furthest into the state: first president of independent **Senegal** (1960), host of the **First World Festival of Negro Arts** in Dakar (1966, answered by Lagos's colossal **FESTAC '77**), first African elected to the Académie française (1983) — and, rare among this course's presidents, a leader who **stepped down voluntarily** (1980). Note what the course is *not* claiming: Senghor's Senegal was for years effectively single-party, and his prime minister Mamadou Dia was imprisoned for over a decade after a contested 1962 crisis — even the gentlest of the founding presidents doesn't escape Section 6's questions unasked (Meredith, 2005).
+
+**The critics — from inside the family.** Négritude drew fire almost immediately, and the fire is part of the curriculum. **Jean-Paul Sartre**, in his famous preface "Black Orpheus" (1948), praised it as an "anti-racist racism" — a dialectical stage that would dissolve into universal struggle — a compliment that read to some as a burial. **Frantz Fanon**, Césaire's own student, warned that celebrating a timeless Black essence could become a museum exhibit — a detour from the actual work of liberation (Fanon, 1952/2008; Fanon, 1961/2004). And the anglophone jab that every survey quotes: **Wole Soyinka**'s quip that a tiger does not proclaim its *tigritude* — it acts. The remark, made around the 1962 African writers' gathering at Makerere, survives in several near-identical versions, so this course paraphrases rather than fixes a wording; Soyinka himself later glossed and softened it (Soyinka, 1976; Jahn, 1968). Senghor's defenders answered that people whose humanity had been systematically denied do not get the luxury of skipping self-affirmation. The debate — affirm the essence, or refuse essences altogether? — is the cultural twin of the political arguments in Sections 3 and 4, and it is still running.
+
+:::reveal What did the Nardal sisters' salon and La Revue du monde noir transmit to the future founders of Négritude — and what does the course credit alongside it? ||| The Harlem Renaissance in French circulation: Hughes, Cullen, and above all McKay's Banjo taught Césaire, Senghor, and Damas that Blackness could be written as itself, not as apprentice Frenchness. The course also credits Paulette Nardal's documented complaint that the young men took up ideas the salon's women had aired — and won the glory.
+
+## Sources
+- Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
+- Césaire, A. (2000). *Discourse on colonialism* (J. Pinkham, Trans.). Monthly Review Press. (Original work published 1950)
+- Césaire, A. (2001). *Notebook of a return to the native land* (C. Eshleman & A. Smith, Trans.). Wesleyan University Press. (Original work published 1939)
+- Césaire, A. (1956). *Lettre à Maurice Thorez*. Présence Africaine.
+- Fanon, F. (2008). *Black skin, white masks* (R. Philcox, Trans.). Grove Press. (Original work published 1952)
+- Fanon, F. (2004). *The wretched of the earth* (R. Philcox, Trans.). Grove Press. (Original work published 1961)
+- Jahn, J. (1968). *A history of neo-African literature* (O. Coburn & U. Lehrburger, Trans.). Faber & Faber.
+- Kesteloot, L. (1991). *Black writers in French: A literary history of negritude* (E. C. Kennedy, Trans.). Howard University Press.
+- Meredith, M. (2005). *The fate of Africa*. PublicAffairs.
+- Sartre, J.-P. (1948). Orphée noir. In L. S. Senghor (Ed.), *Anthologie de la nouvelle poésie nègre et malgache de langue française*. Presses Universitaires de France.
+- Sharpley-Whiting, T. D. (2002). *Negritude women*. University of Minnesota Press.
+- Soyinka, W. (1976). *Myth, literature and the African world*. Cambridge University Press.`,
+    },
+    {
+      slug: "rastafari-and-ethiopia",
+      title: "18 · Rastafari and Ethiopia: symbol versus fact",
+      section: "The Cultural Movements",
+      recallContent: [
+        {
+          prompt: "Who coined the word 'négritude,' in what venue, and what was the word doing?",
+          answer: "Aimé Césaire, around the Paris student journal L'Étudiant noir (1935) — coining a proud identity out of the slur nègre. His Cahier d'un retour au pays natal (1939) became the movement's monument.",
+        },
+        {
+          prompt: "Name two critiques of Négritude taught from inside the family.",
+          answer: "Fanon: celebrating a timeless Black essence risks becoming a museum exhibit, a detour from liberation. Soyinka: the 'tigritude' quip (paraphrased — its wording survives in several versions) — a tiger doesn't proclaim its nature, it acts. (Sartre's 'anti-racist racism' praise-burial also counts.)",
+        },
+      ],
+      body: `On 2 November 1930, Ras Tafari Makonnen was crowned Emperor of Ethiopia as **Haile Selassie I**. In Jamaica, some readers of that news concluded that Psalm 68:31 had been fulfilled — and a new religion began. This lesson teaches the most instructive case study this course owns in **symbol versus fact**: what a movement needs its symbols to be, versus what the documented record shows they were.
+
+**The symbol assembles.** Every piece was ready before the coronation. Ethiopianism (Lesson 2) had spent a century teaching that "Ethiopia shall soon stretch out her hands unto God" (Psalm 68:31, KJV). Ethiopia was Adwa's victor — the African empire that had defeated a European army (taught in *Africa Before Colonization*). And Garveyism had saturated Jamaica — Garvey's homeland — with African redemption. When an African king was crowned amid worldwide press, street preachers in Kingston — **Leonard Howell**, Joseph Hibbert, Archibald Dunkley, Robert Hinds — began proclaiming, independently of each other, that the redeemer had come: Selassie was divine, and Africa was home (Chevannes, 1994; Edmonds, 2012). The famous connective tissue — the prophecy attributed to Garvey, "Look to Africa, where a black king shall be crowned…" — is this course's set-piece **quote-audit**: it appears in none of Garvey's located writings, and researchers trace "black king" preaching to others in the period, notably the itinerant preacher **James Morris Webb** (Hill, 1983; Chevannes, 1994). The movement needed Garvey to be its Baptist; the record does not oblige. **And the record goes further:** after Italy's invasion, Garvey — feeling Selassie had failed the test of resistance — attacked the emperor in his London journal *The Black Man*, in a 1937 essay calling him a "great coward" who abandoned his country (Garvey, 1937; Grant, 2008). Sit with that: **the man Rastafari reveres as prophet publicly savaged the man Rastafari reveres as God.** Symbols and facts run on different rails.
+
+**The movement endures the facts.** Colonial Jamaica answered the new faith with force: Howell was jailed for sedition in the 1930s; his commune at **Pinnacle** (founded 1940) was raided repeatedly; Rastafari spent decades as a persecuted movement of the poor (Chevannes, 1994). The facts kept complicating the symbol. Selassie ruled as an absolute monarch over a feudal empire; formal abolition of slavery in Ethiopia came only in 1942 (Zewde, 2001). He never claimed divinity — he remained a devout Ethiopian Orthodox Christian, and in his rare recorded engagements with the question he deflected it (Edmonds, 2012). Yet when he landed in Kingston on **21 April 1966** — the state visit Rastafari commemorates as **Grounation Day** — the crowd that engulfed the airport tarmac was so vast the emperor initially could not leave the plane (Edmonds, 2012). Ethiopia had even given the symbol soil: through the **Ethiopian World Federation** (founded 1937 in New York by Selassie's envoy), land at **Shashamane** — commonly dated to a 1948 grant of some 500 acres — was set aside for diaspora settlers, and a small Rastafari community lives there to this day (Edmonds, 2012; Chevannes, 1994). Then history stripped the symbol bare: the **Derg** deposed Selassie in September 1974; he died in custody in August 1975 (the circumstances remain contested — the official "natural causes" was widely disbelieved, and his remains were found years later buried on the palace grounds) (Zewde, 2001; Meredith, 2005). Rastafari absorbed even this — many adherents simply denied the death — and the movement globalized anyway, carried not least by **Bob Marley** and reggae into every country on earth.
+
+**How to think about it — the transferable skill.** It would be easy, and lazy, to score this lesson as "religion got the facts wrong." The course asks for something harder. *As documented fact*: Selassie was a mortal autocrat, Garvey never prophesied him and later reviled him, and redemption did not arrive by coronation. *As documented function*: Rastafari took the poorest people in a colonial society and gave them dignity, discipline, a homeland of the mind, and eventually a global culture — real effects, visible in the record, produced by a symbol the record won't certify. Pan-Africanism runs on such symbols — Ethiopia itself, the black star, the red-black-green — and the honest method is neither to worship them nor to debunk them into dust, but to keep two ledgers and read both. That is the skill you will need in Section 6, where the symbols get conscripted by men with prisons.
+
+:::reveal What is the double quote-audit at the heart of the Rastafari lesson? ||| (1) The 'Look to Africa, where a black king shall be crowned' prophecy attributed to Garvey appears in none of his located writings — researchers trace 'black king' preaching to others, notably James Morris Webb; (2) the documented record runs the other way: in a 1937 Black Man essay Garvey attacked Selassie as a 'great coward.' The man revered as the movement's prophet publicly savaged the man revered as its God — symbols and facts run on different rails.
+
+## Sources
+- Chevannes, B. (1994). *Rastafari: Roots and ideology*. Syracuse University Press.
+- Edmonds, E. B. (2012). *Rastafari: A very short introduction*. Oxford University Press.
+- Garvey, M. (1937). The failure of Haile Selassie as Emperor. *The Black Man* (London).
+- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press.
+- Hill, R. A. (1983). Leonard P. Howell and millenarian visions in early Rastafari. *Jamaica Journal, 16*(1), 24–39.
+- Meredith, M. (2005). *The fate of Africa*. PublicAffairs.
+- Zewde, B. (2001). *A history of modern Ethiopia, 1855–1991* (2nd ed.). Ohio University Press.`,
+    },
+    {
+      slug: "quiz-the-cultural-movements",
+      title: "19 · Quiz: The Cultural Movements",
+      section: "The Cultural Movements",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What role did the Nardal sisters play in the origin of Négritude?",
+            options: [
+              "Their Clamart salon and the bilingual La Revue du monde noir (1931–32) put the Harlem Renaissance into French circulation for the students who founded the movement",
+              "They wrote the Cahier d'un retour au pays natal under a pseudonym",
+              "They funded the Black Star Line",
+              "They organized the Manchester Congress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Paulette Nardal — among the first Black women at the Sorbonne — later observed with documented tartness that the young men took up the salon's ideas and won the glory (Sharpley-Whiting, 2002).",
+            sourceLessonSlug: "negritude",
+          },
+          {
+            prompt: "Which Harlem Renaissance novel did the future Négritude founders treat almost as a manifesto?",
+            options: [
+              "Claude McKay's Banjo (1929)",
+              "Ralph Ellison's Invisible Man",
+              "Richard Wright's Native Son",
+              "Zora Neale Hurston's Their Eyes Were Watching God",
+            ],
+            correctIndex: 0,
+            explanation:
+              "McKay — with Hughes and Cullen — taught the Paris students that Blackness could be written as itself. Ellison, Wright's Native Son, and Hurston's novel all postdate the moment (and Wright appears later, at the 1956 Sorbonne congress).",
+            sourceLessonSlug: "negritude",
+          },
+          {
+            prompt: "Who were Négritude's three founders, and what did each contribute first?",
+            options: [
+              "Césaire (coined the word; the 1939 Cahier), Senghor (the civilizational formulation; later Senegal's presidency), Damas (struck first in verse with Pigments, 1937, banned in 1939)",
+              "Fanon, Sartre, and Camus",
+              "Du Bois, Garvey, and Padmore",
+              "Hughes, Cullen, and McKay",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Three colonial students around L'Étudiant noir (1935): Césaire of Martinique, Senghor of Senegal, Damas of French Guiana — a word coined from the slur nègre, against France's assimilation doctrine.",
+            sourceLessonSlug: "negritude",
+          },
+          {
+            prompt: "What was Césaire's argument in Discourse on Colonialism (1950)?",
+            options: [
+              "That colonization 'decivilizes' the colonizer — turning the poetry into prosecution",
+              "That colonization should be extended to more territories",
+              "That literature must never address politics",
+              "That France had no colonies",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The Discourse marked Négritude's refusal to stay literary; Césaire's 1956 resignation letter to the French Communist Party then insisted Black struggle must not be an annex of anyone else's.",
+            sourceLessonSlug: "negritude",
+          },
+          {
+            prompt: "What happened at the Sorbonne in September 1956?",
+            options: [
+              "Présence Africaine convened the First International Congress of Black Writers and Artists — Césaire, Senghor, Fanon, Wright, and Baldwin present; Du Bois, passport withheld, could only send a message",
+              "The OAU was founded",
+              "The first Pan-African Conference met",
+              "Senghor was elected president of France",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Alioune Diop's Présence Africaine (founded 1947) gave the cultural movement an institution; the 1956 congress was its summit — with Washington's passport denial of Du Bois a documented cameo of the era.",
+            sourceLessonSlug: "negritude",
+          },
+          {
+            prompt: "Which set of facts about Senghor does the course teach TOGETHER, per its both-hands rule?",
+            options: [
+              "First president of Senegal (1960), Dakar festival host (1966), first African in the Académie française (1983), voluntary retirement (1980) — AND years of effective single-party rule with his prime minister Mamadou Dia imprisoned over a decade",
+              "Only his literary honors, since his politics are irrelevant",
+              "Only the Dia imprisonment, since his honors are propaganda",
+              "That he led Ghana to independence",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Even the gentlest founding president doesn't escape Section 6's questions unasked — the rare voluntary handover (1980) and the Dia case are both in the record.",
+            sourceLessonSlug: "negritude",
+          },
+          {
+            prompt: "How does the course present Soyinka's famous 'tigritude' remark?",
+            options: [
+              "Paraphrased — a tiger does not proclaim its nature, it acts — because the remark survives in several near-identical versions from the 1962 Makerere gathering, so no single wording is fixed as verbatim",
+              "As an exact verbatim sentence with a page citation",
+              "As a remark by Senghor about Soyinka",
+              "The course denies the remark was ever made",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Quote policy again: real remark, variant wordings, so paraphrase and say why. Soyinka himself later glossed and softened it (Myth, Literature and the African World, 1976).",
+            sourceLessonSlug: "negritude",
+          },
+          {
+            prompt: "What did Sartre's 'Black Orpheus' (1948) call Négritude, and why did the compliment trouble some readers?",
+            options: [
+              "An 'anti-racist racism' — a dialectical stage destined to dissolve into universal struggle, which read to some as a burial dressed as praise",
+              "A permanent and complete philosophy needing no development",
+              "A plagiarism of French symbolism",
+              "A movement with no political significance",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Sartre's preface made the movement famous and subordinated it in the same gesture — the debate (affirm the essence, or refuse essences?) is the cultural twin of the course's political arguments.",
+            sourceLessonSlug: "negritude",
+          },
+          {
+            prompt: "Which pieces were already in place BEFORE 1930 that let Selassie's coronation ignite a religion in Jamaica?",
+            options: [
+              "A century of Ethiopianism (Psalm 68:31), Ethiopia's standing as Adwa's victor, and Jamaica saturated with Garveyism's African redemption",
+              "A Vatican decree, a UN resolution, and a BBC documentary",
+              "Nothing — the movement began without any prior context",
+              "The founding of the OAU and the AU",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The symbol assembled from ready parts: prophecy (Ethiopianism), proof (Adwa), and preparation (Garveyism in Garvey's homeland). Street preachers — Howell, Hibbert, Dunkley, Hinds — then proclaimed independently that the redeemer had come.",
+            sourceLessonSlug: "rastafari-and-ethiopia",
+          },
+          {
+            prompt: "What does the course's quote-audit find about the 'Look to Africa, where a black king shall be crowned' prophecy?",
+            options: [
+              "It appears in none of Garvey's located writings; researchers trace 'black king' preaching to others in the period, notably James Morris Webb",
+              "It is verbatim from Philosophy and Opinions of Marcus Garvey",
+              "Garvey delivered it at the 1920 Madison Square Garden rally, on film",
+              "It was written by Haile Selassie about himself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The set-piece example of the course's rule: famous but unverifiable quotes are taught AS unverifiable (Hill, 1983; Chevannes, 1994). The movement needed Garvey to be its Baptist; the record does not oblige.",
+            sourceLessonSlug: "rastafari-and-ethiopia",
+          },
+          {
+            prompt: "What did Garvey actually write about Selassie in 1937?",
+            options: [
+              "An essay in his London journal The Black Man attacking the emperor as a 'great coward' who abandoned his country after Italy's invasion",
+              "A hymn proclaiming Selassie's divinity",
+              "Nothing — Garvey died before Selassie was crowned",
+              "A formal apology for earlier criticism",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The documented record runs opposite the legend: the man Rastafari reveres as prophet publicly savaged the man it reveres as God. Symbols and facts run on different rails — the lesson's core skill.",
+            sourceLessonSlug: "rastafari-and-ethiopia",
+          },
+          {
+            prompt: "Which facts about Haile Selassie does the course put in the 'fact' ledger against the symbol?",
+            options: [
+              "Absolute monarch over a feudal empire; formal abolition of slavery in Ethiopia only in 1942; never claimed divinity (he remained Ethiopian Orthodox and deflected the question)",
+              "He was elected democratically and served two four-year terms",
+              "He founded the Rastafari movement personally in Kingston",
+              "He was never actually emperor of Ethiopia",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The fact ledger (Zewde, 2001; Edmonds, 2012) coexists with the function ledger: the 21 April 1966 Kingston visit — Grounation Day — drew a crowd so vast he initially couldn't leave the plane.",
+            sourceLessonSlug: "rastafari-and-ethiopia",
+          },
+          {
+            prompt: "What is Shashamane?",
+            options: [
+              "Land in Ethiopia — commonly dated to a 1948 grant of some 500 acres via the Ethiopian World Federation — set aside for diaspora settlers, where a small Rastafari community lives to this day",
+              "The prison where Marcus Garvey was held",
+              "The hall where the OAU Charter was signed",
+              "A ship of the Black Star Line",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The symbol given soil: repatriation made literal, at small scale — taught with hedged dating and acreage per the course's number policy.",
+            sourceLessonSlug: "rastafari-and-ethiopia",
+          },
+          {
+            prompt: "How did Haile Selassie's reign end, and how does the course date and hedge it?",
+            options: [
+              "The Derg deposed him in September 1974; he died in custody in August 1975 — the official 'natural causes' widely disbelieved and the circumstances taught as contested; his remains were found years later on the palace grounds",
+              "He reigned until a peaceful retirement in 1990",
+              "He was restored to the throne in 1980",
+              "He abdicated to become secretary-general of the OAU",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every date sourced, contested circumstances labeled contested (Zewde, 2001; Meredith, 2005). Rastafari absorbed even this — many adherents denied the death — and globalized anyway, carried not least by Marley and reggae.",
+            sourceLessonSlug: "rastafari-and-ethiopia",
+          },
+          {
+            prompt: "What 'two ledgers' does the course ask you to keep on Rastafari — the transferable skill of the lesson?",
+            options: [
+              "Documented fact (a mortal autocrat; an unverified prophecy; no redemption by coronation) AND documented function (dignity, discipline, a homeland of the mind, a global culture for the colonized poor) — read both, worship neither, debunk neither into dust",
+              "One ledger for believers and one for police files",
+              "Assets and liabilities of the Ethiopian treasury",
+              "The course asks you to pick one ledger and discard the other",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pan-Africanism runs on symbols — Ethiopia, the black star, the red-black-green. The honest method keeps the fact ledger and the function ledger open at once; Section 6 shows what happens when symbols get conscripted by men with prisons.",
+            sourceLessonSlug: "rastafari-and-ethiopia",
+          },
+        ],
+      },
+    },
   ],
 };
