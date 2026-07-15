@@ -1,8 +1,9 @@
 import { describe, expect, it } from "vitest";
 import {
   ALIGNMENTS,
+  COURSE_CLAIMS,
   FRAMEWORKS,
-  JURISDICTION_DATA,
+  JURISDICTION_FILES,
   NEXT_UP,
   STANDARDS_FETCHED_ON,
   allAlignedCourseSlugs,
@@ -137,11 +138,44 @@ describe("standards data integrity — a wrong code could be filed with a state"
     }
   });
 
-  it("every framework belongs to its jurisdiction file's state — no cross-filed frameworks", () => {
-    for (const j of JURISDICTION_DATA) {
-      for (const f of j.frameworks) expect(f.state, f.id).toBe(j.state);
-      const ids = new Set(j.frameworks.map((f) => f.id));
-      for (const a of j.alignments) expect(ids, `${a.code} filed outside its state`).toContain(a.frameworkId);
+  it("every resolved framework carries the state of the file that declared it", () => {
+    for (const j of JURISDICTION_FILES) {
+      for (const f of j.frameworks) {
+        const resolved = FRAMEWORKS.find((r) => r.id === f.id);
+        expect(resolved, f.id).toBeDefined();
+        expect(resolved!.state, f.id).toBe(j.state);
+      }
+      // Adopted shared frameworks expand under a state-prefixed id ("dc-ngss").
+      for (const a of j.adoptions ?? []) {
+        const id = `${j.state.toLowerCase()}-${a.framework.id}`;
+        const resolved = FRAMEWORKS.find((r) => r.id === id);
+        expect(resolved, id).toBeDefined();
+        expect(resolved!.state, id).toBe(j.state);
+        // Verbatim adoption keeps the shared framework's codes; aliases would rename them.
+        for (const s of a.framework.standards) {
+          const local = ALIGNMENTS.find(
+            (x) => x.frameworkId === id && x.code === (a.aliases?.[s.code] ?? s.code),
+          );
+          expect(local, `${id}:${s.code}`).toBeDefined();
+        }
+      }
+    }
+  });
+
+  it("the claims layer is fully wired: every claim is used, every claim has evidence", () => {
+    const used = new Set(ALIGNMENTS.flatMap((a) => a.claimIds));
+    for (const c of COURSE_CLAIMS) {
+      // A claim nothing references is dead data — delete it or map it, don't let it rot.
+      expect(used, `unused claim "${c.id}"`).toContain(c.id);
+      expect(c.claim.length, c.id).toBeGreaterThan(10);
+      expect(c.courseSlugs.length, c.id).toBeGreaterThan(0);
+      expect(c.lessons.length, c.id).toBeGreaterThan(0);
+    }
+    // And every alignment's derived evidence actually came through the join.
+    for (const a of ALIGNMENTS) {
+      expect(a.claimIds.length, `${a.frameworkId}:${a.code} has no claims`).toBeGreaterThan(0);
+      expect(a.courseSlugs.length, a.code).toBeGreaterThan(0);
+      expect(a.lessons.length, a.code).toBeGreaterThan(0);
     }
   });
 

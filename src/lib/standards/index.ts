@@ -1,7 +1,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // Standards alignment for the catalog — the data behind /standards (the state-standards finder).
 //
-// ⚠️ THE RULE THIS MODULE LIVES BY — read before editing any jurisdiction file.
+// ⚠️ THE RULE THIS MODULE LIVES BY — read before editing claims.ts, shared/*, or data/*.
 //
 // Every entry is a claim, made to teachers and to homeschooling parents who may file it with a
 // state, about what a public education standard requires. A wrong or invented code is worse
@@ -10,8 +10,9 @@
 //   1. Every `code` and every `text` was FETCHED FROM THE PUBLISHER and transcribed verbatim.
 //      `text` is the standard's own words — not a paraphrase, not a summary, not a memory.
 //      If you cannot fetch it, you do not cite it. There is no "close enough".
-//   2. Every alignment was checked against the ACTUAL LESSON CONTENT (content/bvc/*.csv and
-//      scripts/data/*-course.ts), not against a lesson title. A title is not evidence.
+//   2. Every course claim (claims.ts) was checked against the ACTUAL LESSON CONTENT
+//      (content/bvc/*.csv and scripts/data/*-course.ts), not against a lesson title. A title
+//      is not evidence.
 //   3. `coverage: "partial"` is not a weaker "full" — it is a promise that we looked and the
 //      match is genuinely incomplete. Say WHY in `note`. Never round a partial up.
 //   4. Standards get revised. Each framework's `fetchedOn` is the day it was retrieved from the
@@ -21,11 +22,14 @@
 //   5. Standards considered and REJECTED go in the jurisdiction's `notClaimed` list — published
 //      as loudly as the claims. That list is the evidence the map was not padded.
 //
-// HOW THIS SCALES TO 50 STATES: one file per jurisdiction (indiana.ts, washington-dc.ts, …),
-// each exporting a single `JurisdictionData`. Register it in JURISDICTION_DATA below and the
-// finder picks it up — the picker, the per-state pages, the filters, and the isolation tests all
-// derive from this registry. Nothing else needs to change. States not in the registry render as
-// "not mapped yet" in the finder (with AZ/AR flagged as next), never as errors.
+// HOW THIS SCALES TO 51 JURISDICTIONS (the concept-hub model):
+//   · claims.ts — the catalog analyzed ONCE into framework-agnostic course claims.
+//   · shared/   — frameworks published by multi-state bodies (NGSS, Common Core), mapped ONCE;
+//     a state ADOPTS them (verbatim or with local code aliases) instead of re-mapping.
+//   · data/<state>.ts — that state's codes, verbatim text, and coverage, referencing claims.
+//     Discovered by the committed, generated data/index.generated.ts (`pnpm gen:standards`) —
+//     adding a state is one new file plus a regenerate, zero hand-edited code change.
+// So mapping state #3..#51 means reading THAT STATE'S documents, never re-reading the catalog.
 //
 // THE TENANT BOUNDARY IS UNCHANGED: this table knows course SLUGS, not tenant ids. The page
 // resolves slugs against the tenant's own published catalog via db/queries/standards.ts (the
@@ -33,8 +37,8 @@
 // catalog cannot back. A tenant that hosts none of a standard's courses can never surface it.
 // ─────────────────────────────────────────────────────────────────────────────
 
-import { INDIANA } from "./indiana";
-import { WASHINGTON_DC } from "./washington-dc";
+import { COURSE_CLAIMS, getClaim } from "./claims";
+import { JURISDICTION_FILES } from "./data/index.generated";
 import {
   NEXT_UP,
   US_JURISDICTIONS,
@@ -45,22 +49,33 @@ import {
 } from "./jurisdictions";
 import type {
   AlignedCourseLike,
+  CourseClaim,
   Coverage,
-  JurisdictionData,
+  JurisdictionFile,
   NotClaimedItem,
   ScopedAlignment,
   ScopedFramework,
+  SharedAdoption,
   StandardAlignment,
+  StandardRef,
   StandardsFramework,
   Subject,
 } from "./types";
 
-export { NEXT_UP, US_JURISDICTIONS, isStateCode, jurisdictionName };
+export {
+  COURSE_CLAIMS,
+  JURISDICTION_FILES,
+  NEXT_UP,
+  US_JURISDICTIONS,
+  isStateCode,
+  jurisdictionName,
+};
 export type {
   AlignedCourseLike,
+  CourseClaim,
   Coverage,
   Jurisdiction,
-  JurisdictionData,
+  JurisdictionFile,
   NotClaimedItem,
   ScopedAlignment,
   ScopedFramework,
@@ -70,20 +85,92 @@ export type {
   Subject,
 };
 
-// ── The registry — add a state's file here and the finder grows by one state ──
+// ── Resolution: expand adoptions, join standards to their course claims ───────
 
-export const JURISDICTION_DATA: JurisdictionData[] = [INDIANA, WASHINGTON_DC];
+function resolveStandard(frameworkId: string, s: StandardRef): StandardAlignment {
+  const claims = s.claimIds.map(getClaim); // throws on a typo'd id — tests import this module
+  return {
+    ...s,
+    frameworkId,
+    courseSlugs: [...new Set(claims.flatMap((c) => c.courseSlugs))],
+    lessons: [...new Set(claims.flatMap((c) => c.lessons))],
+  };
+}
 
-export const FRAMEWORKS: StandardsFramework[] = JURISDICTION_DATA.flatMap((j) => j.frameworks);
-export const ALIGNMENTS: StandardAlignment[] = JURISDICTION_DATA.flatMap((j) => j.alignments);
+function expandAdoption(
+  state: StateCode,
+  a: SharedAdoption,
+): {
+  framework: StandardsFramework;
+  alignments: StandardAlignment[];
+} {
+  const id = `${state.toLowerCase()}-${a.framework.id}`;
+  for (const canonical of Object.keys(a.aliases ?? {})) {
+    if (!a.framework.standards.some((s) => s.code === canonical)) {
+      throw new Error(`standards: ${state} aliases unknown ${a.framework.id} code "${canonical}"`);
+    }
+  }
+  return {
+    framework: {
+      id,
+      state,
+      jurisdiction: jurisdictionName(state),
+      adoption: a.adoption,
+      name: a.framework.name,
+      publisher: a.framework.publisher,
+      version: a.framework.version,
+      sourceUrl: a.framework.sourceUrl,
+      fetchedOn: a.framework.fetchedOn,
+      subject: a.framework.subject,
+    },
+    alignments: a.framework.standards.map((s) =>
+      resolveStandard(id, { ...s, code: a.aliases?.[s.code] ?? s.code }),
+    ),
+  };
+}
+
+function resolveJurisdiction(j: JurisdictionFile): {
+  frameworks: StandardsFramework[];
+  alignments: StandardAlignment[];
+} {
+  const frameworks: StandardsFramework[] = [];
+  const alignments: StandardAlignment[] = [];
+
+  for (const f of j.frameworks) {
+    frameworks.push({
+      id: f.id,
+      state: j.state,
+      jurisdiction: jurisdictionName(j.state),
+      adoption: f.adoption,
+      name: f.name,
+      publisher: f.publisher,
+      version: f.version,
+      sourceUrl: f.sourceUrl,
+      fetchedOn: f.fetchedOn,
+      subject: f.subject,
+    });
+    for (const s of f.standards) alignments.push(resolveStandard(f.id, s));
+  }
+  for (const a of j.adoptions ?? []) {
+    const expanded = expandAdoption(j.state, a);
+    frameworks.push(expanded.framework);
+    alignments.push(...expanded.alignments);
+  }
+  return { frameworks, alignments };
+}
+
+const RESOLVED = JURISDICTION_FILES.map((j) => ({ file: j, ...resolveJurisdiction(j) }));
+
+export const FRAMEWORKS: StandardsFramework[] = RESOLVED.flatMap((r) => r.frameworks);
+export const ALIGNMENTS: StandardAlignment[] = RESOLVED.flatMap((r) => r.alignments);
 
 /** States that actually have mapped data — derived, never hand-maintained. */
 export function mappedStates(): StateCode[] {
-  return JURISDICTION_DATA.map((j) => j.state);
+  return JURISDICTION_FILES.map((j) => j.state);
 }
 
-export function jurisdictionData(state: StateCode): JurisdictionData | undefined {
-  return JURISDICTION_DATA.find((j) => j.state === state);
+export function jurisdictionData(state: StateCode): JurisdictionFile | undefined {
+  return JURISDICTION_FILES.find((j) => j.state === state);
 }
 
 /**
