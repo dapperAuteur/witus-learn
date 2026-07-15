@@ -677,5 +677,318 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 — Garvey and Du Bois
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "garvey-and-the-unia",
+      title: "9 · Garvey and the UNIA: the largest movement",
+      section: "Garvey and Du Bois",
+      recallContent: [
+        {
+          prompt: "What made Manchester 1945 a 'school for heads of state'?",
+          answer: "Its participants went home and led their countries: Nkrumah (Ghana), Kenyatta (Kenya), Banda (Malawi), with Wallace-Johnson leading Sierra Leonean labor — the congress trained the generation that decolonized the continent.",
+        },
+        {
+          prompt: "Who chaired the opening session at Manchester — a name that also co-founded the UNIA?",
+          answer: "Amy Ashwood Garvey, the Jamaican pan-Africanist who had co-founded the UNIA with Marcus Garvey in 1914.",
+        },
+      ],
+      body: `While Du Bois was holding congresses for dozens, a Jamaican printer built a movement of masses. No honest history of Pan-Africanism can skip Marcus Garvey — and no honest history can sand him smooth. This lesson is the rise; the next is the fall; both are true.
+
+**The making.** **Marcus Mosiah Garvey** was born 17 August 1887 in St. Ann's Bay, Jamaica, apprenticed as a printer, and educated himself in motion — working in Costa Rica and Panama among Caribbean migrant laborers, then in London (1912–14), where he read widely, worked around the African diaspora press, and encountered Booker T. Washington's *Up from Slavery* (Grant, 2008). In 1914, back in Kingston, he and **Amy Ashwood** founded the **Universal Negro Improvement Association (UNIA)** — motto: **"One God! One Aim! One Destiny!"** In 1916 he moved to Harlem, and there the organization detonated.
+
+**The scale.** Garvey's newspaper, the ***Negro World*** (founded 1918), circulated across the Americas, the Caribbean, and — smuggled past colonial bans — Africa. UNIA divisions appeared in the hundreds across dozens of countries. In **August 1920** the UNIA convened its First International Convention in New York: a month of sessions, a parade through Harlem in full regalia, and an opening rally at **Madison Square Garden** with a reported crowd of some 25,000 (Grant, 2008; Cronon, 1955). The convention adopted the **Declaration of the Rights of the Negro Peoples of the World** (13 August 1920) — a bill of rights for a scattered nation — named Garvey "Provisional President of Africa," and adopted the **red, black, and green** flag you can still see echoed across the African world (Hill, 1983–1990; UNIA, 1920). How many members did the UNIA have? **Teach the number as contested:** Garvey claimed millions — figures up to six million circulated by 1923 — while skeptical historians count far fewer *paid* members. What no serious historian disputes is the comparative claim: it was the **largest mass movement of Black people the world had yet seen** (Cronon, 1955; Grant, 2008; Martin, 1976).
+
+**The idea.** Garveyism ran on three propositions. **Race pride** — Garvey preached Black beauty, Black history, and Black self-respect to people drowning in the opposite, and eyewitnesses consistently describe the psychological effect as electric. **Economic self-reliance** — the UNIA built businesses: groceries, restaurants, a printing house, and above all the **Black Star Line** (incorporated 1919), a Black-owned steamship company selling shares at five dollars each, only to Black buyers — designed to knit the Black Atlantic together commercially and to prove, in steel and smoke, that Black people could run the machinery of the modern world (Grant, 2008). **Africa for the Africans** — the UNIA's political horizon was a redeemed and self-governing Africa, with a concrete (and ultimately doomed) plan to establish a settlement foothold in **Liberia**. Where Du Bois petitioned empires to reform, Garvey organized a nation-in-waiting with its own flag, anthem, nobility, and merchant marine — a state waiting for its territory.
+
+**Why the establishment feared him.** Every colonial power banned or surveilled the *Negro World*; the young **J. Edgar Hoover**, building his career in the Bureau of Investigation, fixed on Garvey early. In an October 1919 memo Hoover called him a "notorious negro agitator" and — the revealing part — lamented that Garvey had *not yet violated any federal law* that would support deportation (Hoover memo, quoted in Hill, 1983–1990, Vol. 2; Grant, 2008). File that memo away: it is dated **four years before** the conviction the next lesson covers, and it is why the honest version of Garvey's fall has two halves.
+
+:::reveal Why does the course teach UNIA membership as a contested number, and what comparative claim stands regardless? ||| Garvey claimed millions (figures up to six million circulated by 1923); skeptical historians count far fewer paid members — so no single figure is asserted. What no serious historian disputes: the UNIA was the largest mass movement of Black people the world had yet seen.
+
+## Sources
+- Cronon, E. D. (1955). *Black Moses: The story of Marcus Garvey and the Universal Negro Improvement Association*. University of Wisconsin Press.
+- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press.
+- Hill, R. A. (Ed.). (1983–1990). *The Marcus Garvey and Universal Negro Improvement Association papers* (Vols. 1–7). University of California Press.
+- Martin, T. (1976). *Race first: The ideological and organizational struggles of Marcus Garvey and the Universal Negro Improvement Association*. Greenwood Press.
+- Universal Negro Improvement Association. (1920, August 13). *Declaration of the rights of the Negro peoples of the world*. New York.`,
+    },
+    {
+      slug: "black-star-line-and-the-fall",
+      title: "10 · The Black Star Line, the trial, and the fall",
+      section: "Garvey and Du Bois",
+      recallContent: [
+        {
+          prompt: "What were Garveyism's three core propositions?",
+          answer: "Race pride (Black beauty, history, self-respect), economic self-reliance (UNIA businesses, above all the Black Star Line), and 'Africa for the Africans' (a redeemed, self-governing Africa — a nation-in-waiting with its own flag and institutions).",
+        },
+        {
+          prompt: "What did J. Edgar Hoover's October 1919 memo about Garvey say, and why does its date matter?",
+          answer: "It called Garvey a 'notorious negro agitator' and lamented that he had not yet violated any federal law that would support deportation. It is dated four years before his conviction — evidence the prosecution was sought before any crime existed.",
+        },
+      ],
+      body: `A movement that sells its followers a fleet had better buy seaworthy ships. This lesson is the half of the Garvey story his admirers skip and his enemies distort. The course's rule: **both halves, documented.**
+
+**The collapse of the Black Star Line.** The line bought three ships — the *Yarmouth*, the *Shadyside*, and the *Kanawha* — and every one was a disaster: aging vessels bought at inflated prices, plagued by breakdowns, insurance losses, and officers who ranged from unlucky to incompetent to corrupt. A fourth ship, promoted to investors as the *Phyllis Wheatley*, was **never acquired at all** — and UNIA promotional material showing a ship the line did not own became the legal hinge of everything that followed. By early 1922 the line had suspended operations, having consumed the five-dollar shares of tens of thousands of Black investors (Grant, 2008; Cronon, 1955). Two things are true and must be held together: the Black Star Line was **real economic self-determination attempted at unprecedented scale**, and it was **run into the ground** — Garvey was a spellbinding organizer and a poor executive who trusted badly and audited nothing (Grant, 2008).
+
+**The trial — both halves.** In January 1922 Garvey was arrested for **mail fraud**: using the postal service to sell stock in a line whose true condition its promotions misrepresented — the *Phyllis Wheatley* flyer at the center. In **June 1923** a jury convicted Garvey **on a single count** while acquitting his co-defendants; he was sentenced to five years (Grant, 2008; Hill, 1983–1990). Half one: the financial wreckage was real, the promotions did misrepresent, and the money of poor Black investors was really gone — a course that calls the conviction *nothing but* persecution is not telling the truth. Half two: the prosecution was **politically sought**. Hoover's 1919 memo predates any alleged crime; the Bureau had planted informants inside the UNIA (its first Black agents were hired substantially for that purpose); and the government pursued the movement's leader, not the line's worst-managed books (Hill, 1983–1990; Grant, 2008; Kornweibel, 1998). **Both halves are documented. Neither cancels the other.** Learning to hold them together — a real offense *and* a targeted prosecution — is precisely the kind of thinking this platform teaches.
+
+**The self-inflicted wound.** In June 1922 — between arrest and trial — Garvey met in Atlanta with **Edward Young Clarke**, a senior leader of the **Ku Klux Klan**. Garvey's stated logic was separatist realism: the Klan, he argued, was at least honest about white America's intentions, and since the UNIA sought a separate Black destiny rather than integration, they were not competing for the same future (Grant, 2008; Martin, 1976). The reaction was volcanic. Black leaders across the spectrum united under the slogan **"Garvey Must Go"**; A. Philip Randolph and Chandler Owen's *Messenger* led the campaign, and eight prominent figures wrote the Attorney General urging the government to press its case (Grant, 2008). Judge it as history, not gossip: the meeting was strategy, not secret sympathy — and it was a catastrophic misjudgment that handed his enemies, state and civilian, exactly what they needed.
+
+**Prison, deportation, afterlife.** Appeals exhausted, Garvey entered **Atlanta Federal Penitentiary in February 1925**. His wife **Amy Jacques Garvey** — the movement's under-credited second engine — kept the organization and the message alive, publishing the two volumes of *Philosophy and Opinions of Marcus Garvey* (1923, 1925) partly to fund the defense. President Coolidge **commuted the sentence in November 1927**, and Garvey — never a citizen — was **deported to Jamaica**. He rebuilt in Kingston and later London, but the UNIA's American engine never restarted. The Liberia plan had already collapsed — Monrovia, under diplomatic and commercial pressure, repudiated the UNIA in 1924, and within two years leased a vast concession to the Firestone Rubber Company instead (Grant, 2008). Garvey died in London on **10 June 1940**, having **never set foot in Africa**. And here the symbols outran the man: Ghana's national shipping line, founded under Nkrumah, was named the **Black Star Line**, and the black star sits at the center of Ghana's flag to this day — Section 4 completes that circle.
+
+:::reveal The course insists the Garvey trial be taught in two documented halves — what are they? ||| Half one: the Black Star Line's wreckage was real — misleading promotions (the never-acquired Phyllis Wheatley), tens of thousands of poor investors' money gone, genuine mismanagement; the June 1923 single-count mail-fraud conviction was not a fabrication from nothing. Half two: the prosecution was politically sought — Hoover's 'notorious negro agitator' memo predates any alleged crime by four years, informants were planted, and the government hunted the movement's leader. Neither half cancels the other.
+
+## Sources
+- Cronon, E. D. (1955). *Black Moses: The story of Marcus Garvey and the Universal Negro Improvement Association*. University of Wisconsin Press.
+- Garvey, A. J. (Ed.). (1923–1925). *Philosophy and opinions of Marcus Garvey* (Vols. 1–2). Universal Publishing House.
+- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press.
+- Hill, R. A. (Ed.). (1983–1990). *The Marcus Garvey and Universal Negro Improvement Association papers* (Vols. 1–7). University of California Press.
+- Kornweibel, T., Jr. (1998). *Seeing red: Federal campaigns against Black militancy, 1919–1925*. Indiana University Press.
+- Martin, T. (1976). *Race first*. Greenwood Press.`,
+    },
+    {
+      slug: "du-bois-vs-garvey",
+      title: "11 · Du Bois vs. Garvey: the feud and what it was really about",
+      section: "Garvey and Du Bois",
+      recallContent: [
+        {
+          prompt: "What happened to the promised fourth Black Star Line ship, the Phyllis Wheatley?",
+          answer: "It was never acquired at all — and UNIA promotional material showing a ship the line did not own became the legal hinge of the mail-fraud case.",
+        },
+        {
+          prompt: "Why was Garvey's June 1922 meeting with the Klan's Edward Young Clarke so damaging?",
+          answer: "Whatever its separatist-realism logic, it united Black leadership against him — the 'Garvey Must Go' campaign, with the Messenger leading and eight prominent figures urging the Attorney General to prosecute. Strategy or not, it handed his enemies exactly what they needed.",
+        },
+      ],
+      body: `The two greatest pan-Africanists of their generation spent the 1920s trying to destroy each other in print. The feud is ugly, quotable, and — once you see what it was actually about — one of the most instructive episodes in the whole movement.
+
+**The combatants could not have been designed more differently.** **W. E. B. Du Bois** (1868–1963): born free in Great Barrington, Massachusetts; the first African American to take a Harvard doctorate (1895); author of *The Souls of Black Folk* (1903); co-founder of the NAACP and editor of *The Crisis*; the congress movement's architect (Section 2); light-skinned, patrician, integrationist by strategy, elitist by temperament — the man who had argued that a college-trained "Talented Tenth" would lift the race. **Marcus Garvey** (1887–1940): born poor in colonial Jamaica; self-educated printer; dark-skinned and proudly so; contemptuous of integration; master of the mass meeting Du Bois never held. Class, color, nationality, strategy — every fault line in the Black Atlantic ran between these two men personally.
+
+**The exchange of fire.** Du Bois's early Crisis coverage of Garvey (December 1920–January 1921) was actually measured — an assessment that took the movement seriously while doubting its business methods (Du Bois, 1920–1921). As the Black Star Line sank and the Klan meeting detonated, measure vanished. In May 1924, in a Crisis essay titled "A Lunatic or a Traitor," Du Bois wrote that Garvey was "without doubt, the most dangerous enemy of the Negro race in America and in the world" (Du Bois, 1924) — from the movement's senior statesman, about its largest organizer, that sentence is as extraordinary now as it was then. Garvey gave as good as he got: for years the *Negro World* derided Du Bois as a mulatto elitist, a beggar at white philanthropy's table, a man ashamed of his African blood — attacks that were explicitly and repeatedly colorist, mocking Du Bois's mixed ancestry (the exchanges are collected in Hill, 1983–1990; per this course's quote policy the insults are paraphrased here rather than reconstructed). Neither man's conduct in the feud honors him; the course declines to award it to either.
+
+**What it was really about.** Strip the invective and a real strategic question emerges, one the movement never stopped arguing:
+
+- **Integration or separate destiny?** Du Bois fought for full citizenship *inside* multiracial states while organizing internationally; Garvey judged that bid hopeless and organized for a separate Black future anchored in Africa.
+- **Elites or masses?** Du Bois's congresses gathered credentialed dozens; Garvey's conventions filled arenas with laundresses and longshoremen. Garvey proved the masses were organizable; Du Bois's heirs proved the institutions were capturable. The movement needed both and got them as enemies.
+- **Whose money, whose risk?** Du Bois's work ran on white philanthropy and NAACP budgets; Garvey's on the five-dollar shares of the Black poor — which made Garvey's financial failures a betrayal of exactly the people he championed, and made Du Bois's dependence a leash his critics never let him forget.
+
+**The verdict history delivered: both, partially.** Garvey was right that Du Bois underestimated the hunger for race pride and mass organization — nothing Du Bois built ever touched ordinary Black lives at UNIA scale, and Garveyism's afterlives (Rastafari in Section 5; the flags and names across Section 4's independent Africa) outlived every sneer. Du Bois was right that the Black Star Line was doomed as a business and that Garvey's theatrical improvisation invited catastrophe — it came. And the deeper irony the course asks you to sit with: **the archenemies converged.** Du Bois, the integrationist, died in 1963 having renounced America — a citizen of Nkrumah's Ghana (Section 4 tells that ending). Garvey, the African redemptionist, died in London never having seen Africa. The century used them both and vindicated neither cleanly.
+
+:::reveal Beneath the insults, what three strategic questions actually divided Du Bois and Garvey? ||| (1) Integration into multiracial states vs. a separate Black destiny anchored in Africa; (2) organizing credentialed elites vs. organizing the masses; (3) whose money and risk — white philanthropy and NAACP budgets vs. the five-dollar shares of the Black poor. The feud personalized fault lines (class, color, strategy) the movement never stopped arguing.
+
+## Sources
+- Du Bois, W. E. B. (1920, December–1921, January). Marcus Garvey. *The Crisis, 21*(2–3).
+- Du Bois, W. E. B. (1924, May). A lunatic or a traitor. *The Crisis, 28*(1), 8–9.
+- Grant, C. (2008). *Negro with a hat: The rise and fall of Marcus Garvey*. Oxford University Press.
+- Hill, R. A. (Ed.). (1983–1990). *The Marcus Garvey and Universal Negro Improvement Association papers* (Vols. 1–7). University of California Press.
+- Lewis, D. L. (2000). *W. E. B. Du Bois: The fight for equality and the American century, 1919–1963*. Henry Holt.`,
+    },
+    {
+      slug: "quiz-garvey-and-du-bois",
+      title: "12 · Quiz: Garvey and Du Bois",
+      section: "Garvey and Du Bois",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What did the UNIA's August 1920 convention in New York produce?",
+            options: [
+              "The Declaration of the Rights of the Negro Peoples of the World, the red-black-green flag, and Garvey's title 'Provisional President of Africa' — after an opening rally at Madison Square Garden with a reported 25,000",
+              "The founding charter of the NAACP",
+              "The resolutions of the Fifth Pan-African Congress",
+              "The incorporation papers of the Firestone Rubber Company",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The 1920 convention was a bill of rights for a scattered nation — a nation-in-waiting with flag, anthem, and titles. The crowd figure is taught as 'reported,' per the course's number policy.",
+            sourceLessonSlug: "garvey-and-the-unia",
+          },
+          {
+            prompt: "How does the course handle the question of how many members the UNIA had?",
+            options: [
+              "As contested — Garvey claimed millions (up to six million circulated by 1923), skeptical historians count far fewer paid members; what stands is that it was the largest Black mass movement the world had yet seen",
+              "It asserts exactly six million members as verified fact",
+              "It asserts the UNIA had almost no members",
+              "It refuses to discuss membership at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Contested numbers are presented as contested, with the claim and the skepticism both named — while the undisputed comparative claim (unprecedented scale) is asserted plainly.",
+            sourceLessonSlug: "garvey-and-the-unia",
+          },
+          {
+            prompt: "What was the Black Star Line designed to prove and to do?",
+            options: [
+              "To knit the Black Atlantic together commercially and prove Black people could run the machinery of the modern world — a Black-owned steamship line selling $5 shares only to Black buyers",
+              "To transport the entire US Black population to Liberia within one year",
+              "To carry mail for the US Post Office under federal contract",
+              "To compete with the Cunard Line for white passengers",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The line was economic self-determination in steel and smoke — which is exactly why its collapse (aging overpriced ships, bad officers, suspended operations by early 1922) was so devastating.",
+            sourceLessonSlug: "garvey-and-the-unia",
+          },
+          {
+            prompt: "What is the significance of J. Edgar Hoover's October 1919 memo on Garvey?",
+            options: [
+              "It called him a 'notorious negro agitator' and lamented that he had not yet violated any federal law — four years BEFORE the conviction, evidence the prosecution was sought before any crime existed",
+              "It cleared Garvey of all suspicion",
+              "It was written after the 1923 trial as a justification",
+              "It praised the Black Star Line's management",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The memo (quoted in Hill's Garvey Papers) is the documented anchor of the trial's second half: a targeted prosecution — which coexists with the first half, the real financial wreckage.",
+            sourceLessonSlug: "garvey-and-the-unia",
+          },
+          {
+            prompt: "On what was Garvey convicted in June 1923?",
+            options: [
+              "A single count of mail fraud — centered on promotional material for the Phyllis Wheatley, a ship the Black Star Line never acquired",
+              "Treason against the United States",
+              "Tax evasion on UNIA convention revenue",
+              "Sedition for the Negro World's editorials",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One count, co-defendants acquitted, five-year sentence. The misrepresentation was real AND the prosecution was politically driven — the course requires both halves.",
+            sourceLessonSlug: "black-star-line-and-the-fall",
+          },
+          {
+            prompt: "Why does the course reject teaching Garvey's conviction as 'nothing but persecution'?",
+            options: [
+              "Because the wreckage was real: promotions misrepresented the line's condition, and the money of tens of thousands of poor Black investors was really gone",
+              "Because Garvey confessed to inventing the UNIA's membership rolls",
+              "Because the FBI had no interest in Garvey",
+              "Because the jury was composed entirely of UNIA members",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A celebration-only account would erase the Black investors who lost their five-dollar shares. Real offense AND targeted prosecution — documented, simultaneous, non-canceling.",
+            sourceLessonSlug: "black-star-line-and-the-fall",
+          },
+          {
+            prompt: "What was Garvey's stated logic for meeting KKK leader Edward Young Clarke in June 1922, and what did it cost him?",
+            options: [
+              "Separatist realism — the Klan was 'honest' about white intentions and the UNIA wasn't competing for integration; it cost him a united 'Garvey Must Go' campaign across Black leadership",
+              "He was infiltrating the Klan for the Bureau of Investigation",
+              "He sought Klan investment in the Black Star Line, which he received",
+              "There is no evidence the meeting occurred",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The meeting is documented and taught as strategy, not secret sympathy — and as a catastrophic misjudgment: Randolph and Owen's Messenger led the campaign, and eight prominent figures urged the Attorney General to prosecute.",
+            sourceLessonSlug: "black-star-line-and-the-fall",
+          },
+          {
+            prompt: "What ended Garvey's American career, and where did he die?",
+            options: [
+              "Atlanta penitentiary from February 1925, sentence commuted by Coolidge in November 1927, deportation to Jamaica — he died in London in June 1940, never having set foot in Africa",
+              "He was acquitted on appeal and retired to Harlem, dying there in 1960",
+              "He escaped to Liberia and governed the UNIA colony until his death",
+              "He was assassinated at the 1927 Pan-African Congress",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The man who preached Africa for the Africans never saw Africa — while his symbols (the black star on Ghana's flag, Nkrumah's Black Star Line) crossed without him.",
+            sourceLessonSlug: "black-star-line-and-the-fall",
+          },
+          {
+            prompt: "What happened to Garvey's Liberia plan?",
+            options: [
+              "Monrovia repudiated the UNIA in 1924 under diplomatic and commercial pressure — and within two years leased a vast concession to the Firestone Rubber Company instead",
+              "It succeeded, and the UNIA governed Liberia until 1945",
+              "The League of Nations formally adopted and funded it",
+              "Garvey canceled it personally after visiting Monrovia",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The contrast — the Black nation-in-waiting rebuffed, the rubber company welcomed — is one of the era's bitterest documented ironies. Garvey never visited; he was never able to.",
+            sourceLessonSlug: "black-star-line-and-the-fall",
+          },
+          {
+            prompt: "Who kept the UNIA's message alive during Garvey's imprisonment, publishing Philosophy and Opinions of Marcus Garvey?",
+            options: [
+              "Amy Jacques Garvey, his wife — the movement's under-credited second engine",
+              "W. E. B. Du Bois, as a gesture of reconciliation",
+              "J. Edgar Hoover, to use as evidence",
+              "Booker T. Washington",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Amy Jacques Garvey edited the two volumes (1923, 1925) partly to fund the defense — one of several places this course notes the movement's women doing uncredited structural work.",
+            sourceLessonSlug: "black-star-line-and-the-fall",
+          },
+          {
+            prompt: "What did Du Bois write about Garvey in The Crisis in May 1924?",
+            options: [
+              "That Garvey was 'without doubt, the most dangerous enemy of the Negro race in America and in the world' — in an essay titled 'A Lunatic or a Traitor'",
+              "That Garvey deserved the Nobel Peace Prize",
+              "That the Black Star Line was a sound investment",
+              "Nothing — Du Bois never mentioned Garvey in print",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A verbatim-verified quote, and an extraordinary one: the movement's senior statesman anathematizing its largest organizer. Du Bois's 1920–21 coverage had been far more measured before the Line sank and the Klan meeting detonated.",
+            sourceLessonSlug: "du-bois-vs-garvey",
+          },
+          {
+            prompt: "How does the course handle Garvey's attacks on Du Bois, per its quote policy?",
+            options: [
+              "It paraphrases them (mulatto elitist, beggar at white philanthropy's table, ashamed of his African blood) with citation to Hill's Garvey Papers, rather than reconstructing exact insults",
+              "It quotes them verbatim from memory",
+              "It denies Garvey ever attacked Du Bois",
+              "It invents representative quotes and labels them authentic",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The attacks are documented (and explicitly colorist), but where exact wording isn't verified against a locatable text, the course paraphrases and attributes — never reconstructs.",
+            sourceLessonSlug: "du-bois-vs-garvey",
+          },
+          {
+            prompt: "Which pair correctly states the strategic disagreement beneath the Du Bois–Garvey feud?",
+            options: [
+              "Du Bois: full citizenship inside multiracial states, organized through credentialed elites; Garvey: a separate Black destiny anchored in Africa, organized through the masses",
+              "Du Bois: armed revolution; Garvey: strict pacifism",
+              "Du Bois: African emigration for all; Garvey: total assimilation",
+              "They had no actual disagreement — the feud was purely personal",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The insults were personal; the questions (integration vs. separate destiny, elites vs. masses, whose money and risk) were structural — and the movement kept arguing them long after both men died.",
+            sourceLessonSlug: "du-bois-vs-garvey",
+          },
+          {
+            prompt: "What 'converging irony' does the course ask you to sit with at the end of the feud?",
+            options: [
+              "Du Bois the integrationist died a citizen of Ghana, having renounced America; Garvey the African redemptionist died in London, never having seen Africa",
+              "Both men ended their lives as officers of the same organization",
+              "Both men retired from politics in 1930 and reconciled publicly",
+              "Both men were deported from the United States in 1927",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The century used both men and vindicated neither cleanly — Garvey was right about mass organization and race pride; Du Bois was right about the Line's doom; both were wrong in the feud's conduct.",
+            sourceLessonSlug: "du-bois-vs-garvey",
+          },
+          {
+            prompt: "What financial asymmetry made the two men's failures cut differently?",
+            options: [
+              "Garvey's movement ran on the five-dollar shares of the Black poor (so his business failures betrayed his own base); Du Bois's work ran on white philanthropy and NAACP budgets (a leash his critics never let him forget)",
+              "Both movements were funded by the same foundation",
+              "Garvey was independently wealthy; Du Bois was penniless",
+              "Neither movement handled any money",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Whose money, whose risk — the third structural question under the feud. It explains why the Black Star Line's collapse was experienced as betrayal, not mere bankruptcy.",
+            sourceLessonSlug: "du-bois-vs-garvey",
+          },
+        ],
+      },
+    },
   ],
 };
