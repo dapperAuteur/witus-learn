@@ -99,6 +99,7 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
+import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
@@ -648,6 +649,18 @@ async function main() {
     // Work" (that course = your rights today; this one = how we got here). Proposal for the
     // country-by-country track: plans/future-courses/workers-rights-track-proposal.md.
     { slug: "history-of-unions", course: HISTORY_OF_UNIONS_COURSE, category: "Culture & History" },
+    // Germany — Wave 1 of the Workers' Rights country track hanging off the anchor above
+    // (plans/future-courses/workers-rights-track-proposal.md). Co-determination taken apart:
+    // works councils under the Betriebsverfassungsgesetz (and the exact, non-synonymous
+    // difference between INFORMATION, CONSULTATION and genuine CO-DETERMINATION rights), the
+    // Mitbestimmungsgesetz 1976 supervisory board — with the chair's casting vote that makes
+    // "half the seats" overstate it — and the Montan-Mitbestimmung of 1951, which really was
+    // parity. The payload is the pair of numbers: density 14.1% (2024) vs bargaining coverage
+    // 49% (2024), because coverage rides on EMPLOYER-association membership, not union
+    // membership (and NOT on statutory extension, which Germany barely uses — that is France).
+    // Section 5 is the erosion: coverage down 25 points in the West since 1998, OT-Mitgliedschaft,
+    // the east/west gap, and ~40% of firms over 2,000 employees engineering out of the parity board.
+    { slug: "labor-germany", course: LABOR_GERMANY_COURSE, category: "Culture & History" },
     // Golf — the first of the sports courses. Six sections: how to play, the Rules (cited to
     // the 2023 code), strategy + the World Handicap System, history (incl. the documented
     // record of racial and gender exclusion — students read the January 1962 *Golfdom* trade
