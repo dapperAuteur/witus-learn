@@ -1898,5 +1898,346 @@ None of this dilutes what European colonization did; scale, integration, and ide
         ],
       },
     },
+    // ────────────── SECTION 7 · THE DIVERGENCE, AND HOW WE KNOW ──────────────
+    {
+      slug: "asia-great-divergence",
+      title: "17 · The Great Divergence: a live debate, and the toolkit you leave with",
+      section: "Section 7 · The divergence, and how we know",
+      body: `You now know the map. Time to face the question the whole course has been building toward, and to face it the way historians actually do: as an open argument between named scholars, on evidence you now know how to weigh.
+
+**The question.** If, on the standard reconstructions, China and India together were roughly half the world economy as late as 1820 (Maddison, 2007), and if Song China ran a partly coal-fired iron industry, printed money, and compass-guided shipping seven centuries before industrial Britain, then why did the industrial breakthrough happen in northwestern Europe, and when did Europe's lead actually begin? Economic historians call this **the Great Divergence** question, after the book that reframed it.
+
+**Pomeranz's argument (2000).** Kenneth Pomeranz's move was methodological before it was historical: stop comparing "Europe" with "China," a continent-sized flattening this course has trained you to distrust, and compare **like with like**, England against the Yangzi River delta, the two most commercially advanced regions of their worlds. On his reading of the evidence, the two looked broadly comparable as late as about **1750** in life expectancy, consumption, market institutions, and agricultural sophistication, and both faced the same ecological wall: land running out. What broke the tie, he argued, was **contingency**: Britain's coal lay close to its industrial regions, and the New World supplied land-intensive calories and cotton that lifted the ecological constraint, resources no Yangzi merchant could reach. On this view Europe's lead is late, narrow at first, and lucky in its geography. Pomeranz and allied scholars (Wong, Frank, Marks) are often grouped as the "California School" (Pomeranz, 2000; Frank, 1998).
+
+**The pushback (2018).** Stephen Broadberry, Hanhui Guan, and David Daokui Li rebuilt GDP-per-capita series for China back to 980 using historical national accounting, and their reconstruction tells a different story: China's leading regions, on their figures, had already fallen behind the leading edge of Europe **well before 1750**, with the gap opening progressively rather than suddenly (Broadberry et al., 2018). Real-wage studies by Robert Allen and collaborators likewise found early modern silver wages in Asian cities below northwestern European levels, though comparing rice-and-wheat living standards across continents is exactly as hard as it sounds (Allen, 2009). If the revisionists are right, the divergence has deeper institutional or economic roots; if Pomeranz is right, it was late and contingent. **This course declares no winner**, because the professionals have not: the debate continues, dataset by dataset, in the journals.
+
+**What no side disputes.** Read the debate's boundaries carefully, because they are the course's final factual payload. Nobody argues Europe led the world economy in 1000, or 1500. Nobody disputes that the divergence, whenever it began, was **complete and enormous by the mid-1800s**, when British gunboats, not British textiles, set terms in Asian ports. And nobody disputes that the lead has been narrowing again within living memory. Whether "the West's" clear economic dominance lasted two centuries or three, on this course's four-and-a-half-millennium timeline it is a **recent episode**, and the burden of the word "contingent" is precisely what the scholars are still fighting about.
+
+**The toolkit, one last time.** Look back at what you actually used in this course, because it is the transferable part. You weighed **state documents** (the Han census of 2 CE, Ashoka's edicts) that count only what states count. **Dated artifacts** (the Diamond Sutra's colophon, the Jikji, the Belitung cargo) that carry their own proof. **Eyewitnesses** (Zhou Daguan, Yijing, Marco Polo) read with their limits attached. **Reconstructions** (Maddison's shares, Hartwell's tonnage) treated as attributed estimates with error bars. **Archaeology** (the Indus drains, Evans's Angkor map) that speaks where texts are silent, and **silences** (Srivijaya's four forgotten centuries) that testify about survival, not absence. Every future claim you meet about any place's past can be put through the same audit: *who says, in what kind of source, about which people, where, when, and does anything independent converge?* Run it on the claims you want to believe hardest. That habit, more than any date in this course, is what you should walk out with.
+
+:::reveal State the Great Divergence debate's two positions with their named scholars, and what neither side disputes. ||| Pomeranz (2000, with the California School): comparing like regions (England vs the Yangzi delta), rough comparability until c. 1750, then a late, contingent breakout riding on accessible coal and New World resources. Broadberry, Guan & Li (2018, with Allen's wage studies): reconstructed accounts show Europe's leading edge pulling ahead well before 1750, implying deeper roots. Neither side disputes that Europe did not lead in 1000 or 1500, that the divergence was complete and enormous by the mid-1800s, and that on a millennia-long timeline the West's clear lead is a recent episode.
+
+## Sources
+- Pomeranz, K. (2000). *The Great Divergence: China, Europe, and the making of the modern world economy*. Princeton University Press.
+- Broadberry, S., Guan, H., & Li, D. D. (2018). China, Europe, and the Great Divergence: A study in historical national accounting, 980-1850. *The Journal of Economic History, 78*(4), 955-1000.
+- Allen, R. C. (2009). *The British industrial revolution in global perspective*. Cambridge University Press.
+- Maddison, A. (2007). *Contours of the world economy, 1-2030 AD: Essays in macro-economic history*. Oxford University Press.
+- Bolt, J., & van Zanden, J. L. (2020). *Maddison style estimates of the evolution of the world economy: A new 2020 update* (Maddison Project Working Paper WP-15). University of Groningen.
+- Frank, A. G. (1998). *ReOrient: Global economy in the Asian age*. University of California Press.`,
+      recallContent: [
+        {
+          prompt: "What was Pomeranz's methodological move, and why does this course consider it kin to its own first rule?",
+          answer:
+            "He refused the continent-sized comparison ('Europe' vs 'China') and compared like with like: England against the Yangzi delta, the most advanced regions of each world. It is the anti-flattening rule applied to economic history: name the region before you compare, or the comparison is meaningless.",
+        },
+        {
+          prompt: "List the six evidence types in the course's closing toolkit, each with one example from the course.",
+          answer:
+            "State documents (Han census, 2 CE); dated artifacts (Diamond Sutra 868, Jikji 1377, Belitung cargo); eyewitnesses with limits (Zhou Daguan, Yijing, Marco Polo); attributed reconstructions with error bars (Maddison's shares, Hartwell's iron); archaeology (Indus drains, Evans's Angkor map); and silences read as evidence about survival (Srivijaya, forgotten until Coedès 1918).",
+        },
+      ],
+    },
+    {
+      slug: "asia-exercise-name-it",
+      title: "Exercise · Name the civilization, the person, the place",
+      section: "Section 7 · The divergence, and how we know",
+      body: `The course's first rule was: never say "Asia did X"; name the civilization, the period, the region. This drill checks that the names actually stuck. Each prompt describes something you met in the course; type the missing name. Spelling is checked forgivingly, and common alternate forms are accepted.`,
+      exercise: {
+        instructions:
+          "Fill in the missing name (a civilization, dynasty, person, city, or empire). Common alternate spellings are accepted.",
+        items: [
+          {
+            prompt: "The urban civilization of c. 2600-1900 BCE whose script remains undeciphered: the ___ civilization.",
+            answer: "Indus",
+            accept: ["harappan", "indus valley"],
+            hint: "Named for a river in present-day Pakistan.",
+            explanation: "The Indus (Harappan) civilization: planned cities, standardized weights, covered drains, and several hundred signs no one can read.",
+          },
+          {
+            prompt: "The Mauryan emperor who inscribed his remorse for the Kalinga war on rocks across South Asia: ___.",
+            answer: "Ashoka",
+            accept: ["asoka"],
+            hint: "Reigned c. 268-232 BCE; his lion capital is India's national emblem.",
+            explanation: "Ashoka's edicts, in Prakrit, Greek, and Aramaic, are the earliest substantial readable royal writing from South Asia.",
+          },
+          {
+            prompt: "The mathematician whose 628 CE treatise first stated systematic rules for arithmetic with zero: ___.",
+            answer: "Brahmagupta",
+            accept: [],
+            hint: "His Brahmasphutasiddhanta also handled negative numbers.",
+            explanation: "Brahmagupta treated zero as a number to calculate with; Aryabhata (499 CE) had already computed with place value.",
+          },
+          {
+            prompt: "The Central Asian founder of the Mughal empire, victor at Panipat in 1526: ___.",
+            answer: "Babur",
+            accept: [],
+            hint: "He claimed descent from both Timur and Genghis Khan.",
+            explanation: "A Timurid prince from Fergana; 'Mughal' is a Persian form of 'Mongol,' an outsiders' label for an outsider dynasty.",
+          },
+          {
+            prompt: "The scholar-official whose Dream Pool Essays (1088) recorded Bi Sheng's movable type: ___ ___.",
+            answer: "Shen Kuo",
+            accept: ["shen gua"],
+            hint: "He also described the magnetized needle.",
+            explanation: "Shen Kuo's notebook is the primary source for clay movable type (1040s) and an early account of the compass.",
+          },
+          {
+            prompt: "The court lady who wrote The Tale of Genji around 1010: ___ ___.",
+            answer: "Murasaki Shikibu",
+            accept: ["murasaki"],
+            hint: "Heian Japan; the work is often called the world's first novel.",
+            explanation: "Heian court women, writing in kana while men wrote prestige Chinese, produced much of classical Japan's greatest literature.",
+          },
+          {
+            prompt: "The Korean dynasty that printed the Jikji with movable metal type in 1377: ___.",
+            answer: "Goryeo",
+            accept: ["koryo", "goryeo korea", "koryŏ"],
+            hint: "The dynasty's name gave Korea its Western name.",
+            explanation: "Goryeo (918-1392) also carved the 81,000-block Tripitaka Koreana; the Jikji predates Gutenberg's Bible by roughly 78 years.",
+          },
+          {
+            prompt: "The Khmer capital mapped as the world's largest preindustrial settlement complex: ___.",
+            answer: "Angkor",
+            accept: [],
+            hint: "Evans et al. (2007), in present-day Cambodia.",
+            explanation: "A low-density engineered landscape on the order of a thousand square kilometers, centered on Angkor Wat and Angkor Thom.",
+          },
+          {
+            prompt: "The Sumatra-based maritime empire, forgotten until Coedès reassembled it in 1918: ___.",
+            answer: "Srivijaya",
+            accept: ["sriwijaya"],
+            hint: "It controlled the Strait of Malacca; Yijing studied there in 671.",
+            explanation: "A Buddhist thalassocracy centered by the standard identification at Palembang, dominant from the late 600s into the 1000s.",
+          },
+          {
+            prompt: "The Abbasid capital of the translation movement, founded in 762: ___.",
+            answer: "Baghdad",
+            accept: [],
+            hint: "Sacked by Hulagu's Mongol army in 1258.",
+            explanation: "Its two-century, society-wide translation movement (Gutas, 1998) turned Greek, Persian, and Sanskrit learning into Arabic science.",
+          },
+          {
+            prompt: "The steppe leader proclaimed supreme khan in 1206, founder of history's largest contiguous land empire: ___ Khan.",
+            answer: "Genghis",
+            accept: ["chinggis", "chingis", "genghis khan", "chinggis khan"],
+            hint: "Born Temujin.",
+            explanation: "His family's empire ran from Korea to Hungary within three generations: destroyer and connector at once, per the documented record.",
+          },
+          {
+            prompt: "The historian whose book The Great Divergence (2000) argued Europe's breakout was late and contingent: ___.",
+            answer: "Pomeranz",
+            accept: ["kenneth pomeranz"],
+            hint: "He compared England with the Yangzi delta, not 'Europe' with 'China.'",
+            explanation: "Kenneth Pomeranz; the named pushback is Broadberry, Guan & Li (2018), and the course declares no winner because the field has not.",
+          },
+        ],
+      },
+    },
+    {
+      slug: "asia-quiz-7",
+      title: "Section 7 quiz · The divergence, and the whole map",
+      section: "Section 7 · The divergence, and how we know",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What was Pomeranz's methodological innovation in The Great Divergence?",
+            options: [
+              "Comparing like with like: England against the Yangzi delta, the most advanced regions of each world, instead of 'Europe' against 'China'",
+              "Using only European sources",
+              "Ignoring economic data entirely",
+              "Comparing modern nations' borders backward in time",
+            ],
+            correctIndex: 0,
+            explanation:
+              "It is the course's anti-flattening rule applied to economic history: name the region before you compare, or the comparison is meaningless.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "What broke the England-Yangzi tie, in Pomeranz's argument?",
+            options: [
+              "Contingency: coal near Britain's industrial regions, plus New World land, calories, and cotton lifting the shared ecological constraint",
+              "Inherent European cultural superiority",
+              "China's abolition of markets",
+              "A Chinese ban on iron production",
+            ],
+            correctIndex: 0,
+            explanation:
+              "On his reading both regions faced the same wall (land running out) as late as c. 1750; geography and colonies, not deep superiority, opened Europe's escape hatch.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "What did Broadberry, Guan, and Li (2018) conclude?",
+            options: [
+              "Reconstructed GDP-per-capita series show China's leading regions falling behind Europe's leading edge well before 1750, with the gap opening progressively",
+              "That the divergence never happened",
+              "That China led the world economy until 1900",
+              "That Pomeranz was right in every particular",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Their historical national accounting reaches back to 980. If they are right, the divergence has deeper roots; the debate continues in the journals.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "Why does the course declare no winner in the Great Divergence debate?",
+            options: [
+              "Because the professionals have not: the datasets and arguments are still contested in the journals, and the course's voice asserts only what is settled",
+              "Because the question is unanswerable in principle",
+              "Because both sides retracted their books",
+              "Because the course has no opinion on anything",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The same posture as the Indus script and the House of Wisdom: attribute the live positions, assert the settled boundaries.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "Which of these is a boundary of the debate that NO serious side disputes?",
+            options: [
+              "Europe did not lead the world economy in 1000 or 1500, and the divergence was complete and enormous by the mid-1800s",
+              "The divergence began with the fall of Rome",
+              "Asia never had advanced economies",
+              "The divergence is still widening today",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Whether the West's clear lead lasted two centuries or three, on a four-and-a-half-millennium timeline it is a recent episode. That boundary is the course's final factual payload.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "What do Allen's (2009) real-wage studies contribute, and with what caveat?",
+            options: [
+              "Early modern silver wages in Asian cities measured below northwestern European levels, with the caveat that cross-continental living-standard comparisons are genuinely hard",
+              "Proof that wages were identical everywhere",
+              "Evidence that wages cannot be studied historically",
+              "A finding that Asian wages were the world's highest in 1800",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Comparing rice-based and wheat-based consumption baskets across continents is exactly as hard as it sounds, so the wage evidence is weighed, not worshipped.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "In the course's toolkit, what is the limit of state documents like the Han census?",
+            options: [
+              "They count only what states count: registered people, so a collapse in the registers is not automatically a collapse in the population",
+              "They are always deliberate forgeries",
+              "They cover only religious matters",
+              "They cannot be dated",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The An Lushan '36 million dead' error came from reading a census collapse as a body count. Every evidence type in the toolkit carries its own failure mode.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "Which evidence type does the course call 'artifacts that carry their own proof'?",
+            options: [
+              "Dated objects like the Diamond Sutra's 868 colophon, the Jikji of 1377, and the Belitung cargo",
+              "Modern textbook summaries",
+              "Court poetry like the Nagarakretagama",
+              "GDP reconstructions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A colophon or a dated bowl needs no reconstruction; that is why the course anchors its biggest claims to such objects wherever it can.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "How should court poetry like the Nagarakretagama be classified in the toolkit?",
+            options: [
+              "As a source whose genre must be named: praise literature, evidence of horizon and prestige, not an administrative record of control",
+              "As equivalent to a census",
+              "As worthless fabrication",
+              "As an eyewitness travel account",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Knowing what kind of text you are reading is the audit's second question. Upgrading panegyric into administration was the Majapahit trap.",
+            sourceLessonSlug: "asia-srivijaya-majapahit",
+          },
+          {
+            prompt: "What does the course's final audit ask of any historical claim?",
+            options: [
+              "Who says it, in what kind of source, about which people, where, when, and whether anything independent converges",
+              "Whether it appears in more than one textbook",
+              "Whether it sounds plausible",
+              "Whether it flatters the right side",
+            ],
+            correctIndex: 0,
+            explanation:
+              "And the standing instruction: run it hardest on the claims you most want to believe, in either direction.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "Which single sentence best states the course's central, hedged thesis?",
+            options: [
+              "On the standard reconstructions (Maddison, 2007, as revised), China and India together were roughly half of world output as late as 1820; the timing and causes of the reversal are contested (Pomeranz, 2000; Broadberry et al., 2018)",
+              "Asia was always richer than everywhere else and always will be",
+              "China was exactly 32.9 percent of world GDP in 1820, a measured fact",
+              "The West has led the world economy since antiquity",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Attribution, rounding, and named disagreement make the sentence stronger, not weaker: every part of it survives a hostile fact-check.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "Why does the course treat Srivijaya's four forgotten centuries as evidence rather than as absence?",
+            options: [
+              "Because what survives depends on materials, climate, and who does the remembering; forgetting testifies about survival, not about what mattered",
+              "Because forgotten states never existed",
+              "Because Chinese records are always wrong",
+              "Because oral tradition is superior to writing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Wooden cities in wet climates leave thin records; Coedès reassembled the empire in 1918 from inscriptions and Chinese accounts. Silences are data about preservation.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+          {
+            prompt: "A friend says: 'Asia was rich until Europeans showed up in 1500 and ruined it.' Using this course, what is the precise correction?",
+            options: [
+              "European power in Asia was coastal enclaves for two centuries after 1510; territorial rule began at Plassey (1757); and Asia's own record includes conquest, hierarchy, and slavery, so neither the utopia nor the 1500 turning point survives the evidence",
+              "Asia was actually poor throughout history",
+              "Europeans never affected Asia at all",
+              "The friend is right in every detail",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course's dates and honest record cut against both romantic and dismissive slogans at once: that is what precision is for.",
+            sourceLessonSlug: "asia-conquest-before-europe",
+          },
+          {
+            prompt: "A website claims: 'Song China had 30 percent of world GDP in 1100.' What does the course's method require before repeating this?",
+            options: [
+              "Attribution and hedging: identify whose reconstruction it is, treat it as an estimate with error bars, round rather than assert decimals, and check the Maddison Project's current revision",
+              "Nothing; percentages are always safe to repeat",
+              "Rejecting it because GDP did not exist in 1100",
+              "Doubling it to correct for Western bias",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Pre-modern GDP shares are reconstructions. Unattributed precision is the tell; the fix is a name, a hedge, and a range.",
+            sourceLessonSlug: "asia-center-of-gravity",
+          },
+          {
+            prompt: "What does the course say you should walk out with, above any single date?",
+            options: [
+              "The audit habit: name the civilization, period, and region; classify the source; attribute the numbers; and run the check hardest on claims you want to believe",
+              "A ranked list of history's greatest empires",
+              "The conviction that no historical claim can ever be trusted",
+              "A complete chronology of every Asian dynasty",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The map matters, but the method transfers: it works on every continent's history and it is the fastest way to detect nonsense about any of them.",
+            sourceLessonSlug: "asia-great-divergence",
+          },
+        ],
+      },
+    },
   ],
 };
