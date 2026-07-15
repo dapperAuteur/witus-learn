@@ -1587,5 +1587,283 @@ Read the 1919 resolutions and notice what they do *not* say. They asked that the
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6 — The Reckoning
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "tensions-and-strongmen",
+      title: "20 · The tensions, and the strongmen who wore the language",
+      section: "The Reckoning",
+      recallContent: [
+        {
+          prompt: "State the Rastafari lesson's 'two ledgers' method in one sentence.",
+          answer: "Keep the fact ledger (a mortal autocrat, an unverified prophecy) and the function ledger (dignity, discipline, a global culture for the colonized poor) open at once — worship nothing, debunk nothing into dust.",
+        },
+        {
+          prompt: "Why does the course paraphrase Soyinka's 'tigritude' remark instead of quoting it?",
+          answer: "The remark is real but survives in several near-identical versions from the 1962 Makerere gathering — so no single wording can honestly be fixed as verbatim. Real remark, variant wordings: paraphrase and say why.",
+        },
+      ],
+      body: `Here is the lesson this course exists to teach honestly, because most tellings skip it. The movement that freed a continent also produced — and long shielded — men who ruled it by fear, in its name. A course that only celebrated would be advertising. This one opens the files.
+
+**First, the internal tensions — old, structural, unresolved.** Before the strongmen, know the fault lines, because every one of them predates independence: **Diaspora versus continent** — who leads whom? Du Bois's congresses spoke *for* Africa from Paris and New York; Manchester shifted the weight; after 1958, continental leaders ran the movement and diaspora thinkers had to decide whether to advise, follow, or emigrate (Padmore and Du Bois chose Accra). **Communism versus self-organization** — Padmore's 1934 break (Section 2) never stopped being argued; Moscow's support was real and came with strings. **Anglophone versus francophone** — Manchester and Négritude barely met for a generation (Sections 2, 5). **Elites versus masses** — the evening-dress problem never fully died; the OAU became, structurally, a heads-of-state club. **Men versus the movement's women** — from Anna Julia Cooper (1900) through the 1927 financing, Amy Ashwood Garvey, Amy Jacques Garvey, Alma La Badie, and the Nardals: the record shows women doing foundation-work and men holding podiums, and this course has flagged it in every section (Adi, 2018; Sharpley-Whiting, 2002). Hold these five tensions; the follow-on courses in this track dig into each.
+
+**Nkrumah, completed honestly.** Section 4 gave you the liberator; here is the rest of the file, because both are true. In 1958 — one year after independence — Ghana passed the **Preventive Detention Act**, allowing imprisonment **without trial** for up to five years. Among those detained: **J. B. Danquah**, the veteran nationalist who had invited Nkrumah home in 1947 — he died in **Nsawam prison in February 1965** (Birmingham, 1998; Meredith, 2005). A January **1964 referendum** — with an official yes-vote of 99.9 percent that no serious historian treats as a real count — made Ghana a **one-party state** with Nkrumah, already president-for-life in effect, empowered to dismiss judges (Meredith, 2005). The army overthrew him on **24 February 1966** while he flew to Hanoi; crowds celebrated in Accra; he died in exile in 1972, still writing Pan-African theory. The man who told Addis Ababa to trust a continental government had given Africa its first great demonstration of how liberation credentials could license unaccountable rule.
+
+**The pattern, with names and hedged numbers.** **Sékou Touré** of Guinea entered legend in 1958 by leading the only colony to vote "No" to de Gaulle's Community — declaring, in the standard translation of his Conakry speech, that Guinea preferred "poverty in freedom to riches in slavery" (Touré, 1958, as quoted in Schmidt, 2007). France withdrew overnight, taking everything down to the telephones; Nkrumah lent Guinea millions; the courage was real. Then Touré built **Camp Boiro**, the detention camp through which his real and imagined opponents disappeared for a quarter century — estimates of the dead are contested and run into the thousands and beyond (Meredith, 2005; Schmidt, 2007). Among those who died there, of enforced starvation, in 1977: **Diallo Telli** — the OAU's **own first secretary-general** (Meredith, 2005). Read that sentence twice; it is the whole problem in one man's fate. **Idi Amin** — whose regime's dead are estimated in ranges from roughly 100,000 to 500,000 (figures attributed to the International Commission of Jurists and Amnesty International; the course asserts no single count) — was seated, honored, and made **chairman of the OAU in 1975** when the summit met in Kampala (Meredith, 2005). **Mobutu Sese Seko** dressed kleptocracy in pan-African clothes: his *authenticité* campaign (Congo renamed Zaire in 1971, European names banned) borrowed the movement's cultural language while he looted the state on a scale estimated in billions — the estimates vary and are taught as estimates (Meredith, 2005; Wrong, 2001). And **Gaddafi** — the AU's midwife (Section 4) — ran a police state at home while financing the union abroad. The OAU's non-interference clause (Section 4) meant that none of this, constitutionally, was anyone's business.
+
+**How to hold it — the course's discipline, stated plainly.** Three rules. *One:* the crimes do not un-free the continent — decolonization was right, and the movement's case against empire stands untouched by what came after; empires do not get retroactive vindication from Camp Boiro. *Two:* the rhetoric does not excuse the crimes — "African unity," "neo-colonial plots," and the liberator's biography were used, documented and often, as a license and a silencer; using the language of liberation is not liberation. *Three:* the critics were there all along — it was African writers, lawyers, and exiles (Soyinka jailed in Nigeria; Ngũgĩ detained in Kenya; Guinean survivors' memoirs; Kenyan and Ghanaian oppositions) who named these crimes first and paid for it, so honesty about the strongmen is not an attack on Pan-Africanism; **it is the pan-African tradition's own dissident half**, and this course stands in it (Meredith, 2005; Adi, 2018).
+
+:::reveal What single biographical fact in this lesson most concentrates the OAU-era failure, and why? ||| Diallo Telli — the OAU's own first secretary-general — died of enforced starvation in Sékou Touré's Camp Boiro in 1977. The organization built to unite free Africa could not protect even its own founding officer from a member government, because non-interference made member atrocities constitutionally nobody's business.
+
+## Sources
+- Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
+- Birmingham, D. (1998). *Kwame Nkrumah: The father of African nationalism* (Rev. ed.). Ohio University Press.
+- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs.
+- Schmidt, E. (2007). *Cold War and decolonization in Guinea, 1946–1958*. Ohio University Press.
+- Sharpley-Whiting, T. D. (2002). *Negritude women*. University of Minnesota Press.
+- Wrong, M. (2001). *In the footsteps of Mr. Kurtz: Living on the brink of disaster in Mobutu's Congo*. Fourth Estate.`,
+    },
+    {
+      slug: "what-endures",
+      title: "21 · The balance sheet: what Pan-Africanism built",
+      section: "The Reckoning",
+      recallContent: [
+        {
+          prompt: "Name the five structural tensions inside Pan-Africanism that predate independence.",
+          answer: "Diaspora vs continent (who leads); communism vs self-organization (Padmore's question); anglophone vs francophone (Manchester vs Négritude); elites vs masses (the evening-dress problem); and men vs the movement's women (foundation-work vs podiums).",
+        },
+        {
+          prompt: "State the course's three rules for holding the strongman record honestly.",
+          answer: "(1) The crimes do not un-free the continent — the case against empire stands; (2) the rhetoric does not excuse the crimes — liberation language was used as license and silencer; (3) the critics were African all along — naming the crimes is the pan-African tradition's own dissident half.",
+        },
+      ],
+      body: `End where an honest auditor ends: with both columns totaled. One hundred and twenty-five years after a few dozen people met in a London town hall, what did the idea actually build?
+
+**Column one: the wins, which are enormous.** *Decolonization* — not the movement's work alone, but unimaginable without it: Manchester's doctrine and address book (Section 2) became the governments of Ghana, Kenya, Malawi and beyond, and the OAU's Liberation Committee carried the last wars — against Portuguese rule, Rhodesia, and apartheid — to victory as a continental cause (Sections 2, 4). *Institutions* — a movement that began with no members now runs a union of fifty-plus states with a working trade area (AfCFTA), a security council, and a coup-suspension rule with actual teeth (Section 4). *The culture* — Négritude cracked French assimilation open; Rastafari and reggae carried African redemption into every country on earth; the red-black-green and the black star fly on flags and march in streets Garvey never saw (Sections 3, 5). And a detail worth teaching on its own: when **Malcolm X** founded his Organization of Afro-American Unity in 1964, he **named and modeled it on the OAU** and flew to Cairo to petition the OAU summit itself — the diaspora borrowing the continent's institution back, the 1900 current reversing direction (Marable, 2011). The traffic between Black America and Africa — Black Power, the anti-apartheid divestment campaigns, Kwanzaa, the streams of art and music down to Afrobeats — runs in both directions on rails this movement laid.
+
+**Column two: the unbuilt and the betrayed.** The union government does not exist; Nkrumah's question is still open (Section 4). The borders froze weakness in place, as he predicted. Non-interference shielded a generation of strongmen, and some of the movement's own heroes headed the list (Section 6, Lesson 20). Intra-African trade remains a modest share of the continent's commerce; the AU runs substantially on donor money; the "sixth region" — the diaspora — has a designation and, as yet, no vote. And the movement's memory itself stays contested terrain: every state and party curates its own heroes, which is exactly why this course keeps insisting on documents over slogans.
+
+**The method you should walk away with.** This course has made you audit quotes (the Garvey "prophecy" that isn't; the Nkrumah transcription that varies), hold two documented truths at once (Garvey's ambition and his conviction; Nkrumah's liberation and his prisons; the OAU's liberation wars and its silence), hedge contested numbers (UNIA membership; Amin's dead), and keep symbol and fact in separate ledgers (Ethiopia; the black star). That is not a debunking posture — notice that every one of those audits left the movement's real achievements *standing*. It is the only posture that can: pride built on checked facts cannot be embarrassed by an archive.
+
+**Where to go from here.** On this platform: *Africa Before Colonization: The Documented Record* teaches the deep history the movement invoked — Kush, Aksum, Mali, Great Zimbabwe — and how we know it; *Afrocentricity: How to Evaluate a Contested Paradigm* teaches the scholarly debate that shares this course's surname but not its subject. This course is the anchor of a **Pan-Africanism track**: deeper courses are proposed on the Congresses, Garvey and the UNIA, Du Bois, Nkrumah and the OAU-to-AU arc, Négritude, Rastafari and Ethiopia, the diaspora-continent tension, and the post-independence reckoning — each one taking a section of this course and giving it the room it deserves.
+
+**The last word belongs to the record.** In 1900 the movement could fit in a photograph, and its address to the world was a petition nobody answered. Within one long lifetime — Du Bois's own, 1868 to 1963, London to Accra — the petitioners' heirs governed a continent. The failures documented in this section are real, and the movement's own dissidents named them first. Both columns are true. Carry both.
+
+:::reveal What does the course mean by 'pride built on checked facts cannot be embarrassed by an archive'? ||| Every audit the course ran — the unverifiable Garvey prophecy, the contested membership counts, the strongman files, the symbol-vs-fact ledgers — left the movement's real achievements standing: decolonization, institutions, a global culture. Celebration-only history collapses when the archive opens; documented history doesn't, because the checking already happened.
+
+## Sources
+- Adi, H. (2018). *Pan-Africanism: A history*. Bloomsbury Academic.
+- African Union. (2018, March 21). *Agreement establishing the African Continental Free Trade Area*. Kigali.
+- Marable, M. (2011). *Malcolm X: A life of reinvention*. Viking.
+- Meredith, M. (2005). *The fate of Africa: A history of fifty years of independence*. PublicAffairs.
+- Padmore, G. (Ed.). (1947). *Colonial and coloured unity: A programme of action — History of the Pan-African Congress*. Pan-African Federation.`,
+    },
+    {
+      slug: "quiz-the-reckoning",
+      title: "22 · Quiz: The Reckoning",
+      section: "The Reckoning",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Which five structural tensions does the course identify inside Pan-Africanism — all predating independence?",
+            options: [
+              "Diaspora vs continent; communism vs self-organization; anglophone vs francophone; elites vs masses; men vs the movement's women",
+              "North vs South America; cricket vs football; print vs radio; poetry vs prose; tea vs coffee",
+              "Only one tension: rich vs poor",
+              "The course says the movement had no internal tensions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every fault line is documented across the earlier sections — Du Bois's congresses vs Manchester's shift; Padmore's 1934 break; Manchester barely meeting Négritude; the evening-dress problem; foundation-work vs podiums.",
+            sourceLessonSlug: "tensions-and-strongmen",
+          },
+          {
+            prompt: "What was Ghana's Preventive Detention Act (1958), and who is its most famous victim?",
+            options: [
+              "A law allowing imprisonment without trial for up to five years — J. B. Danquah, the nationalist who had invited Nkrumah home in 1947, died detained in Nsawam prison in February 1965",
+              "A law abolishing the death penalty — with no victims",
+              "A British colonial law repealed at independence",
+              "A trade regulation on cocoa exports",
+            ],
+            correctIndex: 0,
+            explanation:
+              "One year after independence, the liberator built the instrument; his own political patron died inside it. The course teaches Section 4's Nkrumah and this one as the same documented man.",
+            sourceLessonSlug: "tensions-and-strongmen",
+          },
+          {
+            prompt: "How does the course report Ghana's January 1964 referendum?",
+            options: [
+              "An official yes-vote of 99.9 percent that no serious historian treats as a real count — making Ghana a one-party state with Nkrumah empowered to dismiss judges",
+              "A narrow, internationally certified free vote",
+              "A referendum that Nkrumah lost and accepted",
+              "The course does not mention it",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Reported number, stated distrust, named consequence — the same number-hygiene the course applies to UNIA membership and Amin's dead. The army removed Nkrumah on 24 February 1966.",
+            sourceLessonSlug: "tensions-and-strongmen",
+          },
+          {
+            prompt: "What is the documented arc of Sékou Touré taught in this course?",
+            options: [
+              "The real courage of 1958 (the only 'No' to de Gaulle — 'poverty in freedom' over 'riches in slavery,' in the standard translation) AND Camp Boiro, where his opponents disappeared for a quarter century, with contested death estimates running into the thousands and beyond",
+              "Only the 1958 heroism, since the rest is disputed",
+              "Only Camp Boiro, since the 1958 vote is a myth",
+              "That he was a Belgian colonial governor",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Both hands: France stripped Guinea overnight and the defiance was real; the camp was also real. Quote given as 'standard translation' per policy; numbers hedged and attributed (Schmidt, 2007; Meredith, 2005).",
+            sourceLessonSlug: "tensions-and-strongmen",
+          },
+          {
+            prompt: "Why does the course say Diallo Telli's fate 'is the whole problem in one man's fate'?",
+            options: [
+              "The OAU's own first secretary-general died of enforced starvation in a member state's detention camp (Camp Boiro, 1977) — and non-interference made even that constitutionally nobody's business",
+              "He embezzled the OAU's treasury and fled",
+              "He was the last colonial governor of Guinea",
+              "He founded Camp Boiro himself",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The organization built to unite free Africa could not protect its own founding officer from a member government. One biography concentrates the entire structural failure.",
+            sourceLessonSlug: "tensions-and-strongmen",
+          },
+          {
+            prompt: "How does the course handle the death toll of Idi Amin's regime — the ruler the OAU made its 1975 chairman?",
+            options: [
+              "As a range — roughly 100,000 to 500,000 — with the figures attributed (International Commission of Jurists, Amnesty International) and no single count asserted",
+              "As exactly 250,000, asserted as fact",
+              "It denies there were any deaths",
+              "It refuses to name Amin at all",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Contested numbers are presented as contested, with sources named — while the uncontested institutional fact stands plainly: the OAU summit met in Kampala in 1975 and made him chairman.",
+            sourceLessonSlug: "tensions-and-strongmen",
+          },
+          {
+            prompt: "What does the course say Mobutu's authenticité campaign demonstrates?",
+            options: [
+              "That the movement's cultural language could be worn as a costume — Congo renamed Zaire (1971), European names banned — while the state was looted on a scale estimated in billions (taught as estimates)",
+              "That Mobutu was Pan-Africanism's most faithful practitioner",
+              "That cultural policy always produces good government",
+              "That Zaire achieved the union government Nkrumah wanted",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Aesthetic Pan-Africanism plus kleptocracy: the sharpest case of rhetoric worn as license. Numbers hedged per policy (Meredith, 2005; Wrong, 2001).",
+            sourceLessonSlug: "tensions-and-strongmen",
+          },
+          {
+            prompt: "State the course's three rules for holding the strongman record.",
+            options: [
+              "The crimes don't un-free the continent; the rhetoric doesn't excuse the crimes; the critics were African all along — honesty is the tradition's own dissident half",
+              "Never criticize heroes; never cite numbers; never name names",
+              "All independence was a mistake; all rhetoric was sincere; all critics were foreign",
+              "Only foreigners may judge; only leaders may speak; only silence is safe",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Empires get no retroactive vindication from Camp Boiro; liberation language is not liberation; and Soyinka, Ngũgĩ, and the survivors' memoirs named the crimes first and paid for it.",
+            sourceLessonSlug: "tensions-and-strongmen",
+          },
+          {
+            prompt: "What did Malcolm X's Organization of Afro-American Unity (1964) demonstrate about the movement's direction of travel?",
+            options: [
+              "The current reversed: he named and modeled the OAAU on the OAU and flew to Cairo to petition the OAU summit — the diaspora borrowing the continent's institution back",
+              "That the diaspora had abandoned Africa entirely by 1964",
+              "That the OAU was founded in Harlem",
+              "Nothing — the OAAU had no connection to Africa",
+            ],
+            correctIndex: 0,
+            explanation:
+              "In 1900 the idea traveled from diaspora to continent; by 1964 it ran both ways on the same rails (Marable, 2011) — down to divestment campaigns, Kwanzaa, and Afrobeats.",
+            sourceLessonSlug: "what-endures",
+          },
+          {
+            prompt: "Which entries stand in the course's WINS column?",
+            options: [
+              "Decolonization (Manchester's alumni + the Liberation Committee's wars won), working institutions (AU, AfCFTA, coup suspensions), and a global culture (Négritude, Rastafari/reggae, the red-black-green and black star)",
+              "A completed union government and a single African currency",
+              "The permanent elimination of all African political conflict",
+              "Nothing — the course concludes the movement achieved nothing",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The wins are enormous and documented — and none of them required hiding the debit column to survive scrutiny.",
+            sourceLessonSlug: "what-endures",
+          },
+          {
+            prompt: "Which entries stand in the course's UNBUILT-AND-BETRAYED column?",
+            options: [
+              "No union government (Nkrumah's question still open); frozen borders freezing weakness; non-interference shielding strongmen; modest intra-African trade; donor-funded AU; a 'sixth region' with no vote",
+              "The failure to invent the telephone",
+              "The absence of any African literature",
+              "The lack of any African flags",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The audit's debit column, each entry taught earlier with its documentation — Sections 4 and 6 in summary form.",
+            sourceLessonSlug: "what-endures",
+          },
+          {
+            prompt: "What is the transferable method this course claims to have taught?",
+            options: [
+              "Audit quotes, hold two documented truths at once, hedge contested numbers, and keep symbol and fact in separate ledgers — a posture under which real achievements survive the archive",
+              "Trust every inspiring quote, since checking is disloyal",
+              "Reject all symbols as lies",
+              "Prefer slogans to documents when the cause is good",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every audit in the course left the movement's real achievements standing. Pride built on checked facts cannot be embarrassed by an archive; celebration-only history can.",
+            sourceLessonSlug: "what-endures",
+          },
+          {
+            prompt: "How does this anchor course relate to the two shipped sibling courses it names?",
+            options: [
+              "Africa Before Colonization teaches the deep history the movement invoked (and how we know it); Afrocentricity teaches the contested scholarly paradigm — this course cross-links both and re-teaches neither",
+              "It replaces both of them",
+              "It contradicts both of them",
+              "It has no relationship to them",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Cross-links, not duplication: Kush, Aksum, Mali, and Great Zimbabwe live in one sibling; the Diop/Asante paradigm debate in the other; this course is the political movement's anchor.",
+            sourceLessonSlug: "what-endures",
+          },
+          {
+            prompt: "Why does the course insist that naming the strongmen is NOT an attack on Pan-Africanism?",
+            options: [
+              "Because African writers, lawyers, and exiles — Soyinka jailed, Ngũgĩ detained, Guinean survivors' memoirs — named these crimes first and paid for it: honesty is the pan-African tradition's own dissident half",
+              "Because the strongmen were not really African",
+              "Because the crimes were invented by colonial propaganda",
+              "The course does in fact treat it as an attack",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The dissident lineage is internal to the tradition. A course standing in that lineage criticizes from inside, with documents — which is why the criticism strengthens rather than undermines the history.",
+            sourceLessonSlug: "tensions-and-strongmen",
+          },
+          {
+            prompt: "The course's closing frame: what happened 'within one long lifetime — Du Bois's own, 1868 to 1963'?",
+            options: [
+              "The movement went from a petition nobody answered (London 1900) to the petitioners' heirs governing a continent — with real, dissident-documented failures carried in the same ledger",
+              "Nothing changed between 1868 and 1963",
+              "The movement achieved a full continental federation",
+              "The movement dissolved permanently in 1945",
+            ],
+            correctIndex: 0,
+            explanation:
+              "London to Accra, petition to statehood, inside one biography — and the course's last instruction is to carry both columns, because both are true.",
+            sourceLessonSlug: "what-endures",
+          },
+        ],
+      },
+    },
   ],
 };
