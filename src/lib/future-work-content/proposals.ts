@@ -682,3 +682,1717 @@ country's statute.
     provenance: "plans/future-courses/world.md",
   },
 ];
+
+export interface SubdirDoc extends ProposalDoc {
+  /** The subdir it came from — used as the /admin/future group. */
+  group: string;
+}
+
+export const SUBDIR_DOCS: SubdirDoc[] = [
+  {
+    key: "he-did-the-work-Molefi-Kete-Asante",
+    title: "Molefi Kete Asante",
+    group: "He Did The Work",
+    summary: "course on him or a course about things he taught and wrote about.",
+    body: `course on him or a course about things he taught and wrote about.
+
+Molefi Kete Asante (/əˈsænteɪ/ ə-SAN-tay; born Arthur Lee Smith Jr.; August 14, 1942) is an American philosopher who is involved in the fields of African-American studies, African studies, and communication studies.[1] He is currently a professor in the Department of Africology at Temple University,[2][3] where he founded the PhD program in African-American Studies. He is president of the Molefi Kete Asante Institute for Afrocentric Studies.[4][5][6]
+
+Asante advocates for Afrocentricity.[7][8] He is the author of more than 90 books and the founding editor of the Journal of Black Studies.[9][10] He is the father of author and filmmaker M. K. Asante.`,
+    provenance: "plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md",
+  },
+  {
+    key: "mansa-gold-interview-prep",
+    title: "Mansa Gold — Interview Prep",
+    group: "Mansa Gold",
+    summary: "For: BAM · Interviewee: Preba Arkaah, founder, Mansa Gold (https://mansa.gold/)",
+    body: `# Mansa Gold — Interview Prep
+
+**For:** BAM · **Interviewee:** Preba Arkaah, founder, Mansa Gold (https://mansa.gold/)
+**Purpose:** Better Vice Club (BVC) Commodity Map — cocoa (and coffee) episode material for high school students
+**Compiled:** 13 July 2026
+
+---
+
+## How to read this document
+
+Everything here is either **cited** or **flagged as unknown**. There is no middle category, on purpose. BVC's whole promise is that a claim ties to a source, and a live interview is exactly where a confident-sounding half-memory turns into a mistake on camera.
+
+Three labels appear throughout:
+
+| Label | Meaning |
+|---|---|
+| **VERIFIED** | Fetched from a named source. Cite it, say it on camera. |
+| **SINGLE-SOURCE** | One outlet says it; I could not corroborate. Say "reportedly," or better — ask her. |
+| **CONFIRM IN INTERVIEW** | Nobody has published it. Do not assume it. Ask. |
+
+**The companion files:**
+
+- **[\`01-ghana-cocoa-background.md\`](01-ghana-cocoa-background.md)** — COCOBOD, the fixed farmgate price, the purchase ban, the 2023–26 price spike and crash, child labour, certification, EUDR, disease and galamsey.
+- **[\`02-ghana-coffee-background.md\`](02-ghana-coffee-background.md)** — the smaller, stranger, and (for teaching) possibly better story.
+- **[\`03-women-in-cocoa-and-coffee.md\`](03-women-in-cocoa-and-coffee.md)** — including a **myth audit** of the widely repeated statistics in this space, several of which do not survive contact with their sources.
+
+**One structural warning before anything else.** Preba Arkaah is a woman founder in a sector where "women in cocoa" is a heavily sloganised topic. The fastest way to waste this interview is to ask her to *confirm a statistic*. Her experience is hers and only she can give it to you. The sector-wide numbers are in file 03 and they are yours to cite. **Keep the two apart.** More on this in the questions section.
+
+---
+
+## 1. Mansa Gold — what is actually knowable
+
+### 1.1 VERIFIED — from their own website
+
+All of the following is on https://mansa.gold/ as of 13 July 2026 (Mansa Gold, n.d.).
+
+**Positioning.** The tagline is *"Because Ghana's heart belongs to chocolate…"* The mission line is *"At Mansa Gold each gram of chocolate is infused with the spirit of the country and people. When you eat our chocolate, know who we are."* They describe themselves as *"Beyond 'Bean to Bar' we are 'Tree to Bar'"* (Mansa Gold, n.d., *Home*; *Bean to Bar*).
+
+**Address and phone.** 10 Tabon Loop, North Ridge, Accra · +233 54 189 6568 (Mansa Gold, n.d., *About Us*).
+
+**The product line.** Six bars, each named for a place, each tied to a Ghanaian bird species.
+
+| Bar | Cocoa content | What it is |
+|---|---|---|
+| **Mankese** | 42% | Milk bar. "Rich and creamy… overlaid with caramel notes." |
+| **Mampong** | 50% | Dark milk. "More intense chocolate flavour with fruity notes." |
+| **Simpa** | 48% | Coconut milk chocolate — **vegan and lactose free**. |
+| **Bono** | 71% | Dark. "The pure taste of Ghana's cocoa." |
+| **Cabo Corso** | 35% cocoa butter | "White" chocolate — muscovado sugar and **Ghanaian vanilla**. |
+| **Afi** | not stated | Seasonal. |
+
+(Mansa Gold, n.d., *Products*.)
+
+**Sourcing, as they describe it.** They say they do *not* use *"a homogeneous mix of beans from unidentified sources"* but instead take *"the highest quality beans from a limited number of known farms"* in the **Oti, Central and Eastern regions**. They state that one of their **Eastern Region beans won a 2019 International Cocoa Award**. Beans are *"fermented to perfection and dried in the golden sunshine of Ghana"*; they *"roast, grind, process with quality inputs, conch and mould"* themselves, calibrating the process to each region's flavour profile (Mansa Gold, n.d., *Bean to Bar*).
+
+**Conservation.** The *Our Land* page argues that *"the production of any cash crop carries potential cost in the loss of bio-diversity and degradation of natural resources,"* asserts that environmental degradation costs Ghana *"at least ten percent of… economic income,"* notes that *"the cocoa tree requires the shade of larger species to thrive, providing opportunity to maintain biodiversity,"* and commits that *"a set percentage of Mansa Gold profits after tax will be donated to the Ghana Wildlife Society and other similar projects"* (Mansa Gold, n.d., *Our Land*). The bird-species naming scheme is the design expression of this.
+
+**The logo** is three interlinked cocoa pods in a circle, described as *"the full completion of our golden journey"* (Mansa Gold, n.d., *About Us*).
+
+### 1.2 VERIFIED — from citable outside coverage
+
+**She is publicly on record against the law that bans direct purchase from farmers.** This is the most valuable thing in the entire prep file. In February 2021, Asaase Radio reported her calling for review of the policy barring cocoa-product manufacturers from buying beans directly from farmers. Her words:
+
+> *"The law actually says that nobody can buy directly from the farmer."*
+>
+> *"If you are not growing the item yourself the only way you can experiment is if you can acquire that item."*
+>
+> *"**It is the only reason we don't have an indigenous chocolate industry in this country. It is because we have legislated against it.**"*
+>
+> — Arkaah, quoted in Dzakpata (2021a)
+
+**COCOBOD publicly answered her, six days later.** Fiifi Boafo, speaking for COCOBOD, defended the rule: *"when there are rules and regulation guiding the sector it helps shape it,"* and *"to also ensure we maintain quality there must be a rule guiding the entire process"* (Dzakpata, 2021b).
+
+**She is legally correct.** The Ghana Cocoa Board Act 1984 (PNDCL 81), s.4, provides that *"No person shall purchase cocoa except: (a) the Board through its wholly-owned subsidiary buying company; or (b) a person or organisation authorised in writing by the Board"* — and s.4(7) binds the *farmer* too. Penalty under s.4(9): **five to ten years' imprisonment, with no option of a fine** (Ghana, 1984). See file 01 §3.
+
+**Her background** (Setrana, 2022, *Yen.com.gh*): she worked roughly **ten years as a lawyer** for a fast-moving-consumer-goods company that owns Guinness Ghana Company Limited; after retiring she started the chocolate company because *"she realized that Ghana does not have a decent premium chocolate brand that can rival those in Europe."* The article states the **factory operates in her garden**, with a dedicated shed for storing and processing beans.
+
+⚠️ **Two caveats on the employer.** Yen names the company as "Azure." A separate profile summary describes her as **Corporate Relations Director of Guinness Ghana Breweries, a subsidiary of Diageo**. These are not obviously the same claim, and I could not reconcile them. **Do not state her former employer or job title on camera without asking her.** Get it from her mouth.
+
+**Mansa Gold sponsors women's professional tennis in Ghana.** The Mansa Gold Tennis Championship / Holiday Tournament runs at the Accra Lawn Tennis Club and has featured **32 female professional players**; Mansa Gold's marketing head said the aim is to grow tennis "in the girl child" because it can create jobs. The tournament organiser and *"Chief Executive of Mansa Gold Chocolate"* is named in this coverage as **"Miss Preba Arkaah Greenstreet"** (GhanaWeb, 2023; News Ghana, n.d.).
+
+⚠️ **Name note.** BAM supplied the name **Preba Arkaah**, and she is quoted as "Arkaah" by Asaase Radio and Yen. Tennis coverage gives **"Preba Arkaah Greenstreet."** The match is solid (same person, same company, same role), but **ask her how she wants to be named and credited on screen.** That is a courtesy and a fact-check in one question.
+
+### 1.3 SINGLE-SOURCE — say "reportedly," or just ask her
+
+An AMAKA Studio founder profile (Makhokha, n.d.) is the most detailed piece written about her. **I could not retrieve the article body** — the page renders client-side and returned only navigation to me. The following comes from search-index summaries of that article and is therefore **second-hand**:
+
+- Mansa Gold was **founded in 2020**.
+- In **2018** she took a **chocolate-making course in Switzerland**.
+- She is an **avid bird-watcher**, which is where the bird-species naming came from; the packaging was designed with two collaborators named **Awo** and **Annertey**.
+- The brand is stocked in **major supermarkets and cafés across Accra**.
+- Her legal and corporate background shaped how she **negotiates with farmers directly on price**.
+
+**Every one of these is a great question rather than a great fact.** Ask her; she will tell it better than the summary does.
+
+### 1.4 CONFIRM IN INTERVIEW — nobody has published this
+
+- **Prices.** Not on the site. Not anywhere I could find. You need a price to teach economics.
+- **Volume.** How many bars a week/year? How many tonnes of beans a year? Unknown.
+- **Coffee.** **The Mansa Gold website contains no coffee product, no coffee page, and no mention of coffee.** Searches for "Mansa Gold coffee" return only chocolate. If BAM has been told this interview covers coffee, **that is information he has and the public record does not.** Ask early: *do you do anything with coffee?* If she does not, the coffee angle still works — but as a **contrast** episode (see file 02), not as her business.
+- **How she legally sources.** Her site says "known farms"; the law says only Board-authorised buyers may purchase. **This tension is unresolved in public.** It is the single best question in this document (see Q2.1).
+- **Certifications.** None claimed on the site. No Fairtrade or Rainforest Alliance mark visible.
+- **Employees, ownership, funding.** Nothing published.
+- **Whether the "garden factory" (2022) is still the setup**, or whether she has scaled into a real facility.
+- **Whether the 2019 International Cocoa Award bean is still in her supply.**
+- **Export.** Does she sell outside Ghana? Nothing published says she does.
+
+---
+
+## 2. The questions
+
+Grouped by theme. Ordered inside each group from easy to hard. **Bold** = the ones I would not leave the room without.
+
+### 2.1 The question I would build the whole episode around
+
+> **Your website says you buy from "a limited number of known farms." But you've said publicly that "the law actually says that nobody can buy directly from the farmer." So walk me through it — when a bean leaves a farm in the Eastern Region and arrives in your factory, whose hands does it pass through, and what does each of them charge?**
+
+Why this is the one: it is **specific to her**, it is **rooted in her own published words** (Dzakpata, 2021a), it produces a **supply-chain map** — a teachable artifact — and it forces a real answer to a real contradiction that nobody has printed. Whatever she says (she uses a licensed buying company; she has a special authorisation; the rule is unevenly enforced; she buys her tonne from COCOBOD and knows the farm anyway) is a lesson.
+
+Follow-ups:
+- *Who is the licensed buyer you go through, and what does that intermediation cost you?*
+- *COCOBOD is reported to sell in minimum lots of one tonne. Is that a problem at your scale?* (This "one-tonne minimum" claim appears only in Ghanaian trade press; I could not verify it in a COCOBOD document — see file 01. **She can settle it.**)
+- *Five years after you said that on the radio — has anything changed?*
+
+### 2.2 Money and the math (these produce numbers students can compute with)
+
+- **What does a Mansa Gold bar sell for in Accra, and what does it weigh?**
+- **Take that bar and break it down for me. Of the cedis a customer hands over, how much goes to the farmer, the beans, the sugar and milk, the packaging, the electricity, the labour, the retailer, the tax?** (This is the artifact. Even her rough numbers beat any published estimate — and see file 01 §4 on why the famous "farmers get 6%" figure is a 2015 estimate being quoted as if it were current.)
+- **The world cocoa price went from about $2,500 a tonne to nearly $13,000 in December 2024, and it's around $5,800 now (Trading Economics, 2026). What did that actually do to your business?** (Note the trap this avoids: many people assume the spike enriched Ghanaian farmers. It largely did not, because COCOBOD had forward-sold the crop — file 01 §5. She lives on the other side of that: her *input* cost spiked.)
+- **In February 2026 COCOBOD cut the farmgate price by 28.6%, from GH¢3,625 to GH¢2,587 a bag, mid-season (COCOBOD, 2026). What did the farmers you know say to you about that?**
+- *What was the single biggest cost you did not see coming?*
+- *Is imported sugar, milk powder, or packaging a bigger problem for you than cocoa?* (A sneaky-good question: a Ghanaian chocolate maker may be undone by the *non*-cocoa inputs.)
+- *What does the cedi do to you?* (Currency risk: she buys some inputs in hard currency, sells in cedis.)
+
+### 2.3 Making chocolate in the country that grows the cocoa
+
+- **Ghana exports its cocoa mostly as beans and semi-finished paste, butter and powder — finished chocolate is under 1.5% of its cocoa exports (USDA FAS, 2025). Why? What actually stops a country that grows the bean from making the bar?**
+- **You said it's the law. Is it only the law? What else?** (Push her. Electricity, cold chain, packaging, machinery imports, financing, the taste of the domestic market, competing with imported brands.)
+- **What breaks first when you try to make chocolate in a country where it's 30°C?** (Tempering and cold chain — a genuinely vivid, physical, teachable problem.)
+- *You trained abroad, reportedly in Switzerland. What did you have to un-learn to make chocolate in Ghana?*
+- *What does Ghana lose by shipping the bean instead of the bar? Put a number on it if you can.*
+- *Who is your customer — Ghanaians, tourists, exports? Has that changed?*
+
+### 2.4 Where she disagrees with the conventional story (best classroom material)
+
+The standard chocolate narrative students arrive with is: *poor farmers, child labour, buy Fairtrade, feel better.* Nearly every part of that is more complicated, and she is positioned to say so.
+
+- **The usual story about chocolate is "farmers are exploited by big companies, so buy certified." You're a Ghanaian buying Ghanaian cocoa. Does that story describe your world?**
+- **Do you certify? Why not?** (No certification is claimed on her site. If she says the premium isn't worth the audit cost, that is a *far* more honest lesson than a Fairtrade logo — and it's backed by research: the Fairtrade premium for Ghana is US$240/t on a ~$5,800/t market, roughly 4%, and the sector's own leading watchdog says *"certified is not the same as sustainable"* (Fairtrade International, 2025; Fountain & Huetz-Adams, 2022). See file 01 §7.)
+- **When Americans hear "Ghana" and "cocoa," they think child labour. What do they get wrong?** (Do not soften this and do not accept a soft answer. The real data: 55% of children aged 5–17 in agricultural households in Ghana's cocoa areas were in child labour in 2018/19, and 83% of children working in cocoa were working for their own parents (NORC, 2020). Both facts are true at once. She will have a view.)
+- **Is COCOBOD good for Ghana or bad for Ghana?** (She has already answered half of this in public. Let her answer the other half. The steelman is real: COCOBOD guarantees the farmer a price, so the farmer does not eat the crash — until, as in February 2026, they do.)
+- *If you could change one law tomorrow, which one, and what would break as a result?*
+- *Who disagrees with you in Ghana, and what's their best argument?*
+
+### 2.5 Her story — the questions only she can answer
+
+Note the framing rule here: **ask for her experience, never for her to confirm a statistic.**
+
+- **You were a lawyer for about ten years. What was the moment you decided to make chocolate instead?**
+- **What was the first bar you made, and what was wrong with it?**
+- **You started, reportedly, in your own garden. What was in that shed?**
+- **What did you get wrong in the first year that you would warn someone else about?**
+- **Which of your bars nearly didn't happen, and why?**
+- *You name the bars after places and birds. Tell me about one bird and why that bar is that bird.* (Her bird-watching is the seam between the brand and the person — and it hands you your conservation thread and your visual material at the same time.)
+- *What does the name "Mansa Gold" mean to you?* (See §3.1 — the Mansa Musa hook.)
+- *When a farmer you buy from tastes your bar, what do they say?*
+
+### 2.6 Women in the sector — asked properly
+
+**The wrong question:** *"Women are 45% of the cocoa workforce — what's that like?"* (That statistic traces to an **unpublished internal consultancy memo** from 2012 and is contradicted by the largest primary survey in the sector — file 03 §0. If BAM quotes it to her, he is quoting a ghost.)
+
+**The right questions:**
+
+- **When you walk into a room of Ghanaian cocoa people, who else is in it?**
+- **You buy from farms. Who do you actually negotiate with — the man who holds the passbook, or the woman doing the work?** (This is the crux. In Ghana, "cocoa farmer" legally means *the recognised landholder who holds the passbook*, and 25.2% of cocoa holders are women (Ghana Statistical Service, 2020). The woman working her husband's farm is in no statistic at all. She will know exactly what this means in practice.)
+- **Was being a woman ever the reason a door didn't open — and did you go through it anyway?**
+- **You sponsor a professional tennis tournament for women. Why tennis? What does that have to do with chocolate?** (Verified: GhanaWeb, 2023.)
+- *Who taught you? Who are you teaching?*
+- *Do you buy differently because you're a woman? Do you pay differently?*
+- *There are other Ghanaian women in chocolate — the Addison sisters at '57 Chocolate, Selassie Atadika at Midunu (Cuisine Noir, 2026; Cuisine Noir, n.d.). Do you know each other? Is there a scene, or are you all alone?*
+
+### 2.7 Coffee (ask early whether it applies)
+
+If she does coffee, everything below is live. If she does not, ask her the last two anyway — they are good.
+
+- **Do you touch coffee at all?**
+- *Ghana grows about 736 tonnes of coffee a year and about 600,000 tonnes of cocoa (FAO, via Our World in Data, 2024; ICCO, 2025). Coffee is roughly an 800th of cocoa. Why did coffee die here?*
+- *Coffee has no COCOBOD — no guaranteed price, no guaranteed buyer, no grading. Cocoa has all three. Which farmer would you rather be?* (This is the sharpest structural question in the whole project. See file 02 §5.)
+- *Do Ghanaians drink Ghanaian coffee?*
+
+### 2.8 Questions a high school student would actually ask
+
+Give these to students to ask, or ask them yourself. They are not filler — the naive question often gets the best answer.
+
+- **What does a cocoa pod smell like when you open it?**
+- **Have you ever eaten a raw cocoa bean? What does it taste like?** (It is not chocolate. That surprise is a whole lesson.)
+- **How many bars do you eat a week? Honestly.**
+- **What's your favourite of your own bars, and is that embarrassing to admit?**
+- **Do the farmers you buy from eat chocolate?** (Ask this one. The answer is often *no, not really* — and it is the most quietly devastating fact in the entire commodity chain.)
+- **How long from the tree to the bar in my hand?**
+- **How much money would I need to start what you started?**
+- **What's the worst-tasting chocolate you've ever made?**
+- **If I'm 16 and in Ghana and I want to do what you did, what's step one?**
+
+---
+
+## 3. Other information that would be beneficial — my own thinking
+
+BAM asked what else would help. This is the part I would fight for.
+
+### 3.1 The name is a history lesson sitting in plain sight
+
+**"Mansa"** is the title of the ruler of the Mali Empire — *Mansa* Musa, who ruled c. 1312–1337 and whose 1324 hajj to Mecca is the origin of the "richest man who ever lived" claim that circulates constantly online. The company is called **Mansa *Gold***.
+
+That is a gift. Ghana was called **the Gold Coast**. The Mali Empire's wealth was gold. And the argument Arkaah makes — that Ghana grows the raw material and someone else captures the value — is a **direct rhyme with the gold trade**: the raw commodity leaves, the value is added elsewhere.
+
+⚠️ **But do not put words in her mouth.** I have no source saying she named it after Mansa Musa. Ask: *"What does 'Mansa' mean to you?"* If she confirms it, you have a spine for the whole episode. If she says it means something else entirely, that is even better, because it is a surprise.
+
+**Teaching note on Mansa Musa:** the "richest person in history" figure is not a real calculation — it is an internet-native claim with no defensible methodology. Use it as a **media-literacy hook** ("here's a number everyone repeats — where did it come from?") rather than as a fact. That move is on-brand for BVC.
+
+### 3.2 The economics a student can actually compute
+
+Build the episode around a worksheet. Every number below is real and sourced, so students can check the teacher.
+
+**The farmgate price, and what it is a share of.**
+
+| Season | Farmgate price per 64 kg bag | Source |
+|---|---|---|
+| 2022/23 | GH¢800 | COCOBOD (2022) |
+| 2023/24 (revised Apr 2024) | GH¢2,070 | COCOBOD (2024a) |
+| 2024/25 | GH¢3,000 | COCOBOD (2024b) |
+| 2025/26 (Oct 2025) | GH¢3,625 | MoFEP (2025) |
+| **2025/26 (cut, 12 Feb 2026)** | **GH¢2,587** | COCOBOD (2026) |
+
+**The exercises that fall straight out of this:**
+
+1. **The bag is not a tonne.** COCOBOD publishes a per-bag price *and* a per-tonne price, and the per-tonne figure is the bag price × 16. But 16 × 64 kg = **1,024 kg**, not 1,000. COCOBOD's headline "per tonne" number therefore **overstates the true per-metric-tonne price by about 2.4%.** Have students catch that. It is a beautiful, real, unit-analysis lesson hiding inside a government press release.
+2. **The February 2026 cut.** GH¢3,625 → GH¢2,587 is a **28.6% cut, four months into the season**, after farmers had already planted and hired. Compute what that does to a farmer with a 1.3-hectare farm yielding ~450 kg.
+3. **The living-income line, crossed in one announcement.** Fairtrade's Living Income Reference Price for Ghana is **GH¢45.40/kg** (Fairtrade International, 2026). The February 2026 farmgate price of GH¢2,587 per 64 kg bag works out to **GH¢40.42/kg** — about **11% below** the living-income line. In October 2025, at GH¢3,625/bag (GH¢56.64/kg), it was comfortably *above* it. **Ghana crossed from above to below the living income line in a single press release.** Students can compute both sides of that themselves. This is the best single quantitative lesson I found in the entire research.
+4. **Why the price spike didn't reach the farmer.** World price hit ~$12,900/t in December 2024 (Trading Economics, 2026). COCOBOD had forward-sold much of the crop at roughly **$2,500/t** eighteen months earlier (Fountain & Huetz-Adams, 2025). Ask students: *is a guaranteed price a good deal?* Then show them February 2026, when the price fell and the cut arrived within weeks. The Cocoa Barometer names the asymmetry directly: when prices rise, farmers feel it late; *"when prices fall, producers feel the impact very quickly, as stakeholders, including governments, do not wait to lower farmgate prices"* (Fountain & Huetz-Adams, 2025, p. 16).
+5. **The percentage game.** The Fairtrade premium for Ghana is **US$240/tonne** (Fairtrade International, 2025). The world price on 13 July 2026 was **US$5,817/tonne** (Trading Economics, 2026). Have them compute the premium as a percentage. It is about **4%**. Rainforest Alliance's minimum differential is **US$70/tonne** — about **1.2%**. Then ask them what they *thought* the certification label meant.
+
+### 3.3 A tasting is a lesson, and it is cheap
+
+Students can *taste* the argument. Get bars at three cocoa percentages and, if possible, from three origins.
+
+- **Percentage flight.** Mansa Gold themselves offer 42% / 48% / 50% / 71%. Same maker, same country, four points on a curve. What changes? (Sugar falls, bitterness rises, the bean gets louder.)
+- **Origin flight.** Ghanaian vs. Ivorian vs. Ecuadorian chocolate. Ghana's beans are prized for a classic, deep "chocolatey" flavour; Ecuador's for floral/fruity notes. Ecuador is also, not coincidentally, the country now challenging Ghana for the #2 producer spot — with **higher yields (~800 kg/ha vs Ghana's ~500)** and farmers reportedly capturing **~90% of the world price vs Ghana's ~70%** (Ecofin Agency, 2025 — secondary; see file 01 §1). **Taste and structure are the same lesson.**
+- **The raw bean.** Give them a raw cocoa bean. It is astringent, sour, nothing like chocolate. Fermentation and roasting *make* the flavour. Students think chocolate is a plant; it is a **process**.
+- **Read the wrapper.** Have them find who made it, where the beans came from, and what the certification mark actually promises. Most wrappers will not answer question two — and that is the finding.
+
+### 3.4 The colonial spine of the story
+
+Cocoa is not indigenous to Africa. It is Amazonian. It was introduced to the Gold Coast in the late 19th century, and the country became the world's largest producer under British colonial rule. The **entire architecture of Ghanaian cocoa — a state marketing board buying the whole crop at a fixed price and selling it abroad** — is a *colonial* institution (the West African Produce Control Board / Cocoa Marketing Board) that independent Ghana **kept**, because it was a superb machine for extracting revenue from farmers to fund the state.
+
+That is the deep version of Arkaah's complaint. When she says *"we have legislated against"* an indigenous chocolate industry, the legislation she is talking about descends from a system built to make sure the value was added somewhere else. **A country can inherit its own extraction.** For high schoolers, that reframing — that the problem is not a villain but a *structure*, and one their own government now owns — is more durable than any villain story.
+
+### 3.5 Cross-links to the rest of the Commodity Map
+
+- **Gold.** Same country, same land, and they are now in direct conflict: *galamsey* (illegal small-scale gold mining) is eating cocoa farms. Farmers are paid cash to let miners cut the trees, and the resulting pollution damages neighbouring farms — *"forcing the owners of surrounding farms to also consider selling their land for gold"* (Fountain & Huetz-Adams, 2025, p. 28). COCOBOD figures reported in Ghanaian press went from **>19,000 ha destroyed (2022)** to **~30,000 ha (2024–25)**, with ~50,000 ha more at risk. **Two commodities, one hectare, and the more valuable one is winning.** This is the strongest cross-episode link in the whole map.
+- **Sugar.** A 42% bar is 58% *other things*, and most of that is sugar. Where does Ghana's sugar come from? (Largely imported.) The chocolate bar is a **multi-commodity object**.
+- **Coffee.** The control group. Same country, same farmers, same soil — minus the institution. See file 02.
+- **Palm oil / vanilla.** Cabo Corso uses **Ghanaian vanilla** — a rare and specific detail worth pulling on.
+
+### 3.6 What makes a bean-to-bar business survive
+
+Worth asking her, and worth teaching as a business lesson: the graveyard is full of origin-country chocolate makers. The survivors seem to share some combination of a **domestic premium customer** (Accra's supermarkets, hotels, tourists), a **diaspora/export channel**, **low fixed costs** (a garden shed beats a factory), and **a story that carries the price**. Have students build the P&L.
+
+The uncomfortable counter-example is worth teaching too: **Divine Chocolate**, the famous farmer-owned brand, is no longer majority farmer-owned. In June 2020 the German manufacturer Ludwig Weinrich acquired **80%**, and Kuapa Kokoo's stake fell from ~44–45% to **20%** — yet Divine's own "Our Story" page still tells the 45% story and does not mention Weinrich (see file 03 §5). **A ninety-second, student-verifiable media-literacy exercise: read the marketing page, then find the ownership.**
+
+---
+
+## 4. Research for BAM to do himself
+
+Things I cannot do and he can, plus the threads worth pulling. **⏰ = time-sensitive.**
+
+### 4.1 Things only a human with access can get
+
+- **⏰ Ask Preba Arkaah who else he should talk to.** The single highest-leverage question in the interview, and it costs nothing. Ask it at the end, when she is warm.
+- **The other Ghanaian women in chocolate.** '57 Chocolate (**Kimberly and Priscilla Addison** — Ghanaian-American sisters, founded 2016, ~20 employees, ~1,000 bars/week; Cuisine Noir, 2026) and **Midunu** (**Selassie Atadika**, chef, ex-UN, named to the 2025 TIME Earth Awards; Cuisine Noir, n.d.). Three women-led Ghanaian chocolate makers is not an anecdote, it is a **cohort** — and a genuinely strong BVC episode.
+- **Ghanaian coffee, if he wants the coffee thread to be real:** **Benedicta Tamakloe** of **Bean Masters** (Accra, founded 2018) sources **exclusively from a collective of ~200 women growers — reportedly the largest of its kind in Ghana** — who produced ~10 tonnes in a year (Reuters, 2023). And **Emi-Beth Aku Quantson** of **Kawa Moka**. Either would give BVC the coffee episode that Mansa Gold cannot.
+- **A cooperative.** **ABOCFA** (Suhum, Eastern Region) is billed as Ghana's only organic Fairtrade-certified cocoa cooperative and sells to Tony's Chocolonely, Taza, TCHO and Dr. Bronner's. Roughly 26% of its ~1,100 members are women; **Sarah Larweh** is on the board. A cooperative will talk about price in a way a brand will not.
+- **A US importer/distributor.** Whoever brings Ghanaian bars into the US can show BAM a **landed-cost sheet** — the single most teachable document in this entire subject.
+- **Diaspora and trade bodies that can open doors:** the Ghana Export Promotion Authority; the Ghana Chocolate Hub (which lists Mansa Gold in its directory); the Ghana embassy's trade section.
+
+### 4.2 Primary sources that no one publishes — the gold
+
+These are the artifacts that turn a claim into evidence. They exist only inside a relationship, which is why the interview matters more than the research.
+
+- **⭐ A price sheet or invoice.** What Mansa Gold pays per kilo of beans, and what a bar wholesales for. **Nothing published anywhere gives this.**
+- **⭐ A cost breakdown of one bar.** Even scrawled on paper. This is the worksheet.
+- **A shipping/export document** — a bill of lading, a customs form, a landed-cost calculation. Students have never seen one, and it makes global trade *physical*.
+- **A COCOBOD purchase receipt or an LBC document** showing how she legally acquires beans. This would **settle the sourcing question** that no journalist has resolved.
+- **A cooperative's payout record** — what a farmer actually received, per bag, on a date.
+- **Photos:** the pod, the fermentation, the drying, the roast, the mould, the shed. And **a farmer's face, with their name and permission.**
+
+Ask for these **explicitly and specifically**. "Any data you can share" gets nothing. "Could I photograph one invoice with the customer name blacked out?" gets an invoice.
+
+### 4.3 Things I genuinely could not verify — where the silence is
+
+Do not read these silences as "there's nothing there." Each is a real gap.
+
+| Gap | What I searched | Who or what would settle it |
+|---|---|---|
+| **Whether Mansa Gold does anything with coffee** | Site (no coffee page), web search | **Ask her.** BAM may know something the record doesn't. |
+| **How she legally buys beans** | Site, press, COCOBOD, PNDCL 81 | **Ask her.** No journalist has resolved this. |
+| **Her exact former employer and job title** | Yen says "Azure"; another profile says Guinness Ghana Breweries / Diageo | **Ask her.** Sources conflict. |
+| **The AMAKA Studio profile's contents** | Page renders client-side; body unretrievable | Her, or a browser with JS |
+| **Whether Ghana Cocoa Board (Amendment) Act 2020 (Act 1035) touches the s.4 purchase ban** | GhaLII, Dennislaw, FAOLEX — could not retrieve text | **A Ghanaian lawyer** (she is one), or Dennislaw with a subscription |
+| **The "COCOBOD minimum lot = one tonne" claim** | Trade press only, no primary COCOBOD document | **Ask her** — she is exactly the person it would bind |
+| **"91% of Ghanaian cocoa households below the living income benchmark" (2024)** | Secondary reporting only; could not identify the publisher | The original study — worth chasing before quoting |
+| **CSSVD infected area** | Sources give **90,000 ha** (USDA FAS, 2025) and **592,230 ha** (survey via trade press) — a 6.5× gap | COCOBOD/CRIG directly. Likely "targeted for rehabilitation" vs "any infection" — **do not conflate them** |
+| **Galamsey hectares destroyed** | COCOBOD statements via press; no primary dataset | COCOBOD directly |
+| **The "$100bn industry, $6bn to Africa" claim** | Widely repeated, attributed to Akufo-Addo; **no published arithmetic exists behind it** | Nobody. **Treat it as rhetoric, not data** |
+| **Any impact evaluation of a gender programme in cocoa** | Searched hard. **Found none — not one** | Nobody has done it. **That absence is the finding** (file 03 §3) |
+
+### 4.4 First-hand research BAM can do without anyone's permission
+
+- **⏰ Track the cocoa futures price with students across a semester.** It was ~$12,900/t in Dec 2024 and ~$5,817/t on 13 July 2026 — down ~30% year-on-year (Trading Economics, 2026). A live, volatile, real number. Have them predict, then check. **Time-sensitive in the good way: the volatility is the curriculum.**
+- **The comparative tasting** (§3.3). Ghana vs. Côte d'Ivoire vs. Ecuador. Cheap, physical, memorable.
+- **The wrapper audit.** Every bar in one supermarket aisle: who made it, where are the beans from, what does the certification actually promise? Most will fail question two.
+- **Visit an importer or a US bean-to-bar maker.** Many will happily show a cost sheet — they are proud of it.
+- **The Divine Chocolate exercise** (§3.6). Read the marketing page, then find the ownership. Ninety seconds, and students will never read a brand story the same way again.
+
+### 4.5 Threads worth pulling — each is its own BVC episode
+
+| Thread | Why it's an episode | What BAM needs |
+|---|---|---|
+| **⏰ Cocoa vs. gold on the same hectare** | Two Commodity Map episodes literally colliding. Galamsey is destroying cocoa farms *now* | A farmer or COCOBOD officer who will talk about it |
+| **The control group: Ghana's dead coffee industry** | Same country, same farmers, minus the institution. Output fell from 6,700 t (1967) to ~736 t. **The best pure-economics story in the whole project** | Bean Masters or Kawa Moka (file 02) |
+| **⏰ EUDR: the rule that could cut smallholders out** | ~75% of Ghana's cocoa goes to the EU. Compliance for large operators: **30 Dec 2026** — inside this school year | The regulation text; a Ghanaian exporter's view |
+| **Who owns the "farmer-owned" chocolate?** | Divine/Kuapa/Weinrich. A perfect media-literacy episode | Nothing — it's all public. **Just do it** |
+| **The statistic that came from nowhere** | The "45% of cocoa labour is women" figure traces to an **unpublished internal consultancy memo** (file 03). A whole lesson on how a number becomes "true" | Nothing. It's documented |
+
+**Triage:** the EUDR deadline (**30 Dec 2026**) and the current price cycle are the time-sensitive ones. Everything else is evergreen — and the Divine/Weinrich and phantom-statistic episodes need **no access at all** and could be built this month.
+
+---
+
+## 5. Capture checklist — what to physically collect
+
+An interview becomes course content only if the assets come home with you. Print this.
+
+### Before the interview
+
+- [ ] **Send the media release in advance.** Do not spring a consent form on someone at the end of a warm conversation. See \`plans/user-tasks/83-mansa-gold-interview.md\`.
+- [ ] Confirm **how she wants to be named and credited** (Preba Arkaah / Preba Arkaah Greenstreet — sources differ) and her **title**.
+- [ ] Send **3–4 questions in advance** — specifically the ones that need her to *look something up* (the price breakdown, the bean cost). She cannot recall an invoice on the spot.
+- [ ] Ask in advance for **permission to use the Mansa Gold logo and product images**, and whether she has a **press kit**.
+
+### Audio (the thing that ruins interviews)
+
+- [ ] **Record two devices.** Always. One dies.
+- [ ] **Lav mic or a mic close to her mouth.** Laptop mics are unusable for course audio.
+- [ ] If remote: record **locally on her end** too (Riverside/Zoom local recording), not just the compressed stream. Ask her to use **headphones** to kill echo.
+- [ ] **30 seconds of room tone** at the end. Silent. It saves the edit.
+- [ ] Test, then **listen back to 10 seconds before you start the real thing.**
+
+### Video and photo
+
+- [ ] **B-roll is the course.** Ask for: cocoa pods, wet beans, fermentation boxes, drying beans in the sun, the roaster, the grinder/melanger, the conche, the moulds, the wrapped bar, the shelf in the shop, her hands working.
+- [ ] **Her at work**, not just her talking.
+- [ ] **The farm**, if she can get you there or has footage.
+- [ ] **Vertical clips** as well as horizontal — the shares are vertical.
+- [ ] Get **high-res product photos** and the **logo file** (SVG/PNG).
+
+### Data and documents (ask, explicitly, by name)
+
+- [ ] Retail **price** and **weight** of a bar.
+- [ ] **Cost breakdown** of one bar — even approximate.
+- [ ] What she **pays per kilo/bag for beans**, and to whom.
+- [ ] **Region and, if she'll give it, farm names**.
+- [ ] **Any document**: invoice, price list, export paperwork, COCOBOD/LBC receipt. Offer to redact.
+- [ ] The **2019 International Cocoa Award** documentation.
+- [ ] **Production volume** (bars/week, tonnes/year).
+
+### Consent — do not skip this
+
+- [ ] **Signed media release**, covering: audio, video, stills, name, likeness, logo, and company name; used in **educational course content**, marketing of that content, and on **learn.witus.online**; **worldwide**, **perpetual**, **royalty-free**.
+- [ ] Explicit line on **logo and trademark use**.
+- [ ] Explicit line on **third-party images** she supplies — *does she have the right to grant them?* (If she hands you a farmer's photo taken by someone else, her permission is not enough.)
+- [ ] **Consent for any farmer or employee** who appears identifiably. Their permission is theirs, not hers.
+- [ ] Agree **what is off the record** *before* you start, especially on prices and on COCOBOD.
+- [ ] Offer her a **review of any direct quote used in the course** — it costs little and it is how you get invited back.
+
+---
+
+## References
+
+Cocoa Barometer. See Fountain & Huetz-Adams.
+
+COCOBOD. (2022, October). *Cocoa producer price goes up 21% to GH₵800 per bag*. Ghana Cocoa Board. https://cocobod.gh/news/cocoa-producer-price-goes-up-21-to-gh800-per-bag
+
+COCOBOD. (2024a, April). *Review of the producer price of cocoa for the 2023/24 cocoa season*. Ghana Cocoa Board. https://cocobod.gh/news/review-of-the-producer-price-of-cocoa-for-the-202324-cocoa-season
+
+COCOBOD. (2024b, September 11). *Review of the producer price of cocoa for the 2024/2025 cocoa season*. Ghana Cocoa Board. https://cocobod.gh/news/review-of-the-producer-price-of-cocoa-for-the-20242025-cocoa-season-wednesday-11th-september-2024
+
+COCOBOD. (2026, February 12). *Press release on cocoa sector reforms for financial viability and long-term sustainability*. Ghana Cocoa Board. https://cocobod.gh/news/press-release-on-cocoa-sector-reforms-for-financial-viability-and-long-term-sustainability
+
+Cuisine Noir. (n.d.). *Selassie Atadika shifts the story of chocolate from Ghana*. https://www.cuisinenoir.com/selassie-atadika-story-of-chocolate-from-ghana/
+
+Cuisine Noir. (2026, April). *Sisters raise the bar with '57 Chocolate's pan-African vision*. https://www.cuisinenoir.com/owners-of-57-chocolates-pan-african-vision/
+
+Dzakpata, F. (2021a, February 3). *Arkaah: Review policy banning businesses from buying cocoa directly from farmers*. Asaase Radio. https://www.asaaseradio.com/arkaah-review-policy-banning-businesses-from-buying-cocoa-directly-from-farmers/
+
+Dzakpata, F. (2021b, February 9). *Fiifi Boafo: Regulating cocoa processing firms in best interest of sector*. Asaase Radio. https://www.asaaseradio.com/fiifi-boafo-regulating-cocoa-processing-firms-in-best-interest-of-sector/
+
+Ecofin Agency. (2025). *Ecuador on track to overtake Ghana as world's second-largest cocoa producer*. [Secondary source; see file 01 §1.]
+
+Fairtrade International. (2025, December 11). *Cocoa price announcement*. https://www.fairtrade.net/
+
+Fairtrade International. (2026, April). *Living income reference prices for cocoa from Ghana & Côte d'Ivoire — Explanatory note*. https://www.fairtrade.net/
+
+Food and Agriculture Organization of the United Nations. (2024). *Green coffee bean production* [Data set]. Via Our World in Data. https://ourworldindata.org/grapher/coffee-bean-production
+
+Fountain, A. C., & Huetz-Adams, F. (2022). *Cocoa Barometer 2022*. VOICE Network. https://voicenetwork.cc/cocoa-barometer/
+
+Fountain, A. C., & Huetz-Adams, F. (2025). *Cocoa Barometer 2025*. VOICE Network. https://voicenetwork.cc/cocoa-barometer/
+
+Ghana. (1984). *Ghana Cocoa Board Act 1984 (PNDCL 81)*. https://faolex.fao.org/docs/pdf/gha132746.pdf
+
+Ghana Statistical Service. (2020). *Ghana Census of Agriculture 2017/18*. [Table 9.1, p. 145.]
+
+GhanaWeb. (2023). *32 female professional tennis players participate in Mansa Gold Tennis Championship*. https://www.ghanaweb.com/GhanaHomePage/SportsArchive/32-female-professional-tennis-players-participate-in-Mansa-Gold-Tennis-Championship-1895036
+
+International Cocoa Organization. (2025, February 28). *Production of cocoa beans* (Quarterly Bulletin of Cocoa Statistics, Vol. LI, No. 1). https://www.icco.org/wp-content/uploads/Production_QBCS-LI-No.-1.pdf
+
+Makhokha, N. (n.d.). *How Mansa Gold, a Ghana-made chocolate brand, is encouraging Ghanaians to take ownership*. AMAKA Studio. https://amaka.studio/u/@nthabisengAMAKA/how-mansa-gold-a-ghana-made-chocolate-brand-is-encouraging-ghanaians-to-take-ownership-W0ThBqr2fD5vYwkjfsyvB [**Article body could not be retrieved; cited details are from search-index summaries and must be confirmed.**]
+
+Mansa Gold. (n.d.). *Home; About Us; Bean to Bar; Our Land; Products*. Retrieved July 13, 2026, from https://mansa.gold/
+
+Ministry of Finance, Ghana (MoFEP). (2025, October 2). *Review of producer price for the 2025/26 cocoa season*. https://mofep.gov.gh/news-and-events/2025-10-02/review-of-producer-price-for-the-2025-26-cocoa-season
+
+News Ghana. (n.d.). *Mansa Gold Holiday Tennis Tournament begins at Accra Lawn Tennis Club*. https://newsghana.com.gh/mansa-gold-holiday-tennis-tournament-begins-at-accra-lawn-tennis-club/
+
+NORC at the University of Chicago. (2020). *Assessing progress in reducing child labor in cocoa production in cocoa growing areas of Côte d'Ivoire and Ghana* (Final report, 2018/19 survey round). U.S. Department of Labor.
+
+Reuters. (2023, February 23). *Female-owned farms and companies are growing Ghana's taste for coffee*. Via CNBC Africa. https://www.cnbcafrica.com/2023/female-owned-farms-and-companies-are-growing-ghanas-taste-for-coffee
+
+Setrana, R. (2022, July 25). *Retired Ghanaian woman starts chocolate factory in her garden*. Yen.com.gh. https://yen.com.gh/real-estate/211922-retired-ghanaian-woman-starts-chocolate-factory-garden/
+
+Taylor, J., Beillard, M. J., & Galloway, J. D. (2025, March 31). *Ghana — Cocoa sector overview 2025* (GAIN Report GH2025-0008). USDA Foreign Agricultural Service. https://apps.fas.usda.gov/newgainapi/api/Report/DownloadReportByFileName?fileName=Ghana+-+Cocoa+Sector+Overview+-+2025_Accra_Ghana_GH2025-0008.pdf
+
+Trading Economics. (2026, July 13). *Cocoa — price, chart, historical data*. https://tradingeconomics.com/commodity/cocoa`,
+    provenance: "plans/future-courses/mansa-gold/00-interview-prep.md",
+  },
+  {
+    key: "mansa-gold-ghana-cocoa-background",
+    title: "Ghana Cocoa — Background Brief",
+    group: "Mansa Gold",
+    summary: "Companion to [`00-interview-prep.md`](00-interview-prep.md) · Compiled 13 July 2026",
+    body: `# Ghana Cocoa — Background Brief
+
+**Companion to [\`00-interview-prep.md\`](00-interview-prep.md)** · Compiled 13 July 2026
+Every figure carries its year. Where authoritative sources disagree, **both are given**. Where nothing credible exists, it says so.
+
+---
+
+## Six things that are true and surprising
+
+1. **The famous "Côte d'Ivoire and Ghana grow over 60% of the world's cocoa" line is out of date.** On ICCO's own numbers the pair is now at roughly **50%** (ICCO, 2025).
+2. **A Ghanaian farmer who sells cocoa to anyone but a licensed buyer commits a criminal offence** punishable by **5–10 years in prison, with no option of a fine** (Ghana, 1984, s.4).
+3. **When the world cocoa price nearly quintupled, Ghanaian farmers largely did not benefit** — because the government had already sold the crop forward, up to 18 months in advance (Fountain & Huetz-Adams, 2025).
+4. **When the price fell, the cut reached farmers within weeks.** On 12 February 2026 the farmgate price was cut **28.6% mid-season** (COCOBOD, 2026).
+5. **Ghana's child-labour rate in cocoa areas did not fall over a decade — it rose**, from 44% to 55% (NORC, 2020). And **83% of children working in cocoa in Ghana were working for their own parents.** Both facts are true.
+6. **Finished chocolate is less than 1.5% of Ghana's cocoa exports** (USDA FAS, 2025). The country that grows the bean does not make the bar.
+
+---
+
+## 1. Ghana's place in world production
+
+**The last publicly released ICCO country table** (ICCO, 2025; thousand tonnes):
+
+| | 2022/23 | 2023/24 | 2024/25 (fcst) |
+|---|---|---|---|
+| Côte d'Ivoire | 2,241 | 1,674 | 1,850 |
+| **Ghana** | **654** | **530** | **600** |
+| Ecuador | 454 | 430 | 480 |
+| Nigeria | 315 | 350 | 350 |
+| **World** | **5,043** | **4,489** | **4,840** |
+
+Ghana's share: **13.0% → 11.8% → 12.4%**. Côte d'Ivoire + Ghana combined: **57.4% → 49.1% → 50.6%**.
+
+> ⚠️ **Correction to teach:** the "over 60%" figure — still printed by USDA FAS (2025) — was true *before* 2022. Since the 2023/24 collapse the pair is at about **50%**. Teach 60% as a **historical** statistic.
+
+**Ghana's own numbers disagree with each other.** For 2023/24:
+
+- **530,873 t** — COCOBOD's official season figure, as reported by USDA FAS (2025), described as *"Ghana's worst performing cocoa bean production season over the past 15 years."*
+- **432,145 t** — the figure the Ghanaian government itself used in its February 2026 cocoa-reform briefing, stating COCOBOD had forward-sold **786,672 t** against a projection of 800,000 t, leaving a **333,767 t rollover** and a loss *"of over US$1 billion"* (COCOBOD, 2026).
+
+The 432,145 t figure is probably *graded-and-sealed purchases* rather than farm-level production — but the government presents it as production. **Report both.**
+
+**Is Ghana still #2?** **Contested.** Ecuador is projected to export **over 623,000 t in 2026** and multiple outlets report it overtaking Ghana (Ecofin Agency, 2025 — secondary). Ecuador's yields are cited at ~800 kg/ha vs Ghana's ~500. **Do not teach "Ghana is the world's second-largest producer" as settled fact in 2026.**
+
+**Context:** ~**800,000 farm families**; ~**US$2 billion** in annual foreign exchange; ~**1.27 million ha** harvested; yields **0.41–0.55 t/ha** (USDA FAS, 2025).
+
+---
+
+## 2. COCOBOD and the fixed farmgate price
+
+This is the genuinely unusual thing about Ghanaian cocoa, and the best teaching material in the file.
+
+### How it works
+
+1. **A committee sets the price.** The **Producer Price Review Committee**, chaired since 2025 by the **Minister for Finance** (MoFEP, 2025).
+2. **The law backs it.** PNDCL 81 s.3(a): the Board shall *"determine… the prices to be paid from time to time to producers for their cocoa"* (Ghana, 1984). Farmers are paid by cheque under the **Akuafo Cheque System**.
+3. **The crop is sold before it grows.** COCOBOD's Cocoa Marketing Company **forward-sells** most of the crop, up to ~18 months ahead. Farmgate prices are therefore *"based on sales that were effected up to 18 months previously"* (Fountain & Huetz-Adams, 2025, p. 30).
+4. **Licensed Buying Companies (LBCs)** buy from farmers at the fixed price and deliver to COCOBOD. Of 62 registered LBCs only ~20 are active, and **five foreign-owned firms control ~60% of purchases** (secondary reporting, 2026).
+5. **The Quality Control Company grades and seals every bag.** Ghana's grading reputation is *why* its beans earn a premium — and it is the thing coffee never had (see file 02).
+
+### The price series
+
+| Season | GH¢ / 64 kg bag | Source |
+|---|---|---|
+| 2022/23 (Oct 2022) | 800 | COCOBOD (2022) |
+| 2023/24 opening | 1,308 | COCOBOD (2024a) |
+| 2023/24 revised (Apr 2024) | 2,070 | COCOBOD (2024a) |
+| 2024/25 (Sep 2024) | 3,000 | COCOBOD (2024b) |
+| 2025/26 (Aug 2025) | 3,228.75 | COCOBOD (2025) |
+| 2025/26 (Oct 2025) | 3,625 | MoFEP (2025) |
+| **2025/26 CUT (12 Feb 2026)** | **2,587** | COCOBOD (2026) |
+
+**February 2026 is the first producer-price cut in this series** — GH¢1,038 off a bag, **−28.6%, four months into the season.** Farmers from Western North picketed COCOBOD's Accra headquarters on 20 February 2026 and demanded reciprocal cuts to COCOBOD staff salaries (Ghanaian press, 2026).
+
+### 🔥 The number everyone gets wrong: what share does the farmer get?
+
+**Sources disagree sharply, and the disagreement is the lesson.**
+
+| Claim | Source |
+|---|---|
+| Government *targets* **70%** of the FOB price for farmers | USDA FAS (2025) |
+| In 2023/24 the producer price was **83%** of the $2,600 FOB price | USDA FAS (2025) |
+| In 2024/25 the farmer's share was **63.9%** — below the target | COCOBOD (2025) |
+| Since Feb 2026, farmers receive **90% of achieved gross FOB** | COCOBOD (2026) |
+| Ghana's farmgate price sits roughly **72% *below* the ICCO world price** — the worst of nine countries charted | Fountain & Huetz-Adams (2025, p. 33) |
+
+**How can "70% of FOB" and "72% below world price" both be true?**
+
+Because the "70%" is 70% of **the price COCOBOD actually sold at** — which, thanks to forward selling, was around **US$2,500/t** while the spot market was near **US$10,000/t**.
+
+> **This is the single most important thing to explain correctly in the curriculum.** The farmer gets a fair share *of a stale price*.
+
+Note also the arithmetic trap: COCOBOD publishes a per-bag price **and** a per-tonne price, where per-tonne = bag × 16. But 16 × 64 kg = **1,024 kg**, not 1,000. **COCOBOD's headline "per tonne" figure overstates the true per-metric-tonne price by ~2.4%.** Use the per-bag figure. (Verify it yourself: 3,625 × 16 = 58,000 ✓.)
+
+---
+
+## 3. Is it really illegal to buy cocoa directly from a farmer? **Yes.**
+
+Mansa Gold's founder said publicly: *"The law actually says that nobody can buy directly from the farmer"* (Dzakpata, 2021a). **She is right.**
+
+**Ghana Cocoa Board Act 1984 (PNDCL 81), s.4** (Ghana, 1984):
+
+> **s.4(1)** *"No person shall purchase cocoa except: (a) the Board through its wholly-owned subsidiary buying company; or (b) a person or organisation authorised in writing by the Board to purchase cocoa for sale to the Board."*
+>
+> **s.4(7)** *"…no person shall sell cocoa other than to the Board or the Board's wholly-owned subsidiary buying company or any other person authorised in writing by the Board so to do."*
+>
+> **s.4(9)** *"Any person who contravenes any of the provisions of this section is guilty of an offence and shall, on summary conviction, be liable to imprisonment for a term of not less than five years and not exceeding ten years, **without the option of a fine**."*
+
+**Note the symmetry.** s.4(1) binds the buyer; **s.4(7) binds the farmer.** A farmer selling his own beans to an unlicensed chocolate maker is himself committing the offence.
+
+**Corroborated by:** USDA FAS (2025) — *"Only COCOBOD, or persons or organizations authorized by the board, can purchase cocoa"*; ClientEarth (2022); Chambers & Partners (2026). **COCOBOD has publicly warned artisanal chocolate makers to stop buying directly from farmers.**
+
+**And COCOBOD's answer to her**, from Fiifi Boafo: *"to also ensure we maintain quality there must be a rule guiding the entire process"* (Dzakpata, 2021b). **Give students both sides.** The steelman for COCOBOD is real: the grading system that the monopoly funds is *why* Ghanaian beans command a premium.
+
+### ⚠️ Gaps here
+
+- **Ghana Cocoa Board (Amendment) Act 2020 (Act 1035)** exists. **I could not retrieve its text**, so I cannot certify s.4 is unamended — only that FAO's consolidated text and USDA's March 2025 description both present it as operative. **Preba Arkaah is a lawyer. Ask her.**
+- The claim that **COCOBOD's minimum sale lot is one tonne**, while Ghana's largest artisanal maker buys less than that, appears **only in trade press**. Unverified. **She is exactly the person it would bind.**
+
+---
+
+## 4. The value-addition problem
+
+- **Installed grinding capacity: 504,780 MT.** Processors run at **below 50%** of it, for lack of beans (USDA FAS, 2025).
+- **Beans delivered to Ghanaian processors have collapsed:** 431,795 t (2020/21) → 214,551 t (2022/23) → **178,665 t (2023/24)** (COCOBOD data, in USDA FAS, 2025).
+- **The headline fact:** *"Processed cocoa beans, cocoa butter, cocoa powder, cocoa shells, and cocoa liquor represent over 98 percent of Ghanaian cocoa product exports. **Finished chocolate products represent… less than 1.5 percent of exports**"* (USDA FAS, 2025, p. 8).
+
+**Ghana exports semi-finished goods, not chocolate.** That is Arkaah's entire argument, in one statistic.
+
+### 🔍 The "farmers get 6% of a chocolate bar" figure — verified, with provenance
+
+**Origin: Cocoa Barometer 2015**, "Value Distribution" table (Fountain & Huetz-Adams, 2015, p. 33):
+
+| Stage | Share of final sale |
+|---|---|
+| **Farmers** | **6.6%** |
+| Taxes / marketing board | 4.2% |
+| Processors & grinders | 7.6% |
+| **Manufacturer** | **35.2%** |
+| **Retail & taxes** | **44.2%** |
+| (transport, ports, traders) | ~2.1% |
+
+**Say it accurately:** *"the farmer's share of the value added in a chocolate bar was estimated at **6.6%** by the Cocoa Barometer **in 2015**."* Not "6% of the price," and **not a current figure**.
+
+The same authors restated it in 2025 with a crucial caveat: *"**Before the current price crisis**, the farm gate price is only about 5%–6% of the cost of a bar of chocolate at final sale"* (Fountain & Huetz-Adams, 2025, p. 133).
+
+**Two honest caveats students should hear:**
+1. It measures **value added**, not profit. The manufacturer's 35.2% is gross. The Barometer itself notes *"none of the average margins in the supply chain are exorbitant."*
+2. **UNCTAD's "less than 6.6%" figure is almost certainly the same Barometer number recycled** — do not present them as two independent sources.
+
+### ⚠️ The claim to *avoid*
+
+The widely repeated line — *"Ghana and Côte d'Ivoire grow ~65% of the world's cocoa but get $6bn from a $100bn industry"* — is attributed to then-President Akufo-Addo and circulates in several mutually incompatible versions ($120bn/<10%; $165bn/6%). **I could not find published arithmetic behind any of them.** It is **advocacy rhetoric, not data**.
+
+**Teach the verifiable pair instead:** Africa grows **~71.5%** of world cocoa (ICCO, 2025), and finished chocolate is **<1.5%** of Ghana's cocoa exports (USDA FAS, 2025). That says the same thing, and it is true.
+
+---
+
+## 5. The 2023–2026 price shock
+
+### The peak and the fall
+
+| Date | Price | Source |
+|---|---|---|
+| 2022–23 (pre-crisis norm) | ~US$2,500/t | Fountain & Huetz-Adams (2025) |
+| **December 2024 (all-time high)** | **~US$12,900–12,931/t** | Trading Economics (2026) |
+| Mid-2025 | below US$8,000/t | J.P. Morgan (Allen et al., 2025) |
+| **13 July 2026** | **US$5,817/t** (−29.8% y/y) | Trading Economics (2026) |
+
+For scale: the **previous** all-time high was **$5,104/t in 1977**. December 2024 was ~2.5× that.
+
+### What caused it
+
+The Cocoa Barometer names them together (Fountain & Huetz-Adams, 2025, p. 27):
+
+> *"Crop disease, ageing trees and farmers, low yields, incursion of gold mining; these are all direct and indirect consequences of decades of a combination of **underpaying farmers, high risk for farmers, and lacking government policies and support**. Add to the mix climate change, bad weather, a cost-of-living crisis, and rampant inflation… and a perfect storm is created."*
+
+Specifically: **El Niño rains** (rotting pods bred disease), **swollen shoot virus** and **black pod**, an **agrochemical price shock after the Ukraine war** (farmers could not afford inputs, so disease compounded), **galamsey** taking farmland, **ageing trees and ageing farmers**, and **smuggling** to higher-paying neighbours.
+
+> ⚠️ **On speculation:** it is widely blamed, but **I found no quantified attribution of the spike to speculation in any authoritative source.** Do not assert a percentage.
+
+### 🔥 Did Ghanaian farmers benefit? **Largely no.**
+
+- *"farm gate price increases did not follow suit in Ghana and Côte d'Ivoire, **largely due to the forward selling system**… prices only significantly went up almost a year and a half after the rest of the world… **Income for Ivorian and Ghanaian farmers plummeted in the 2023/2024 crop season**"* (Fountain & Huetz-Adams, 2025, pp. 14, 30).
+- *"Farmers in other cocoa producing countries, where cocoa is not forward sold by government marketing agencies, have **profited greatly** from the exploding prices"* (p. 32).
+- **The asymmetry, in their words:** *"when prices rise… effects are less noticeable and less directly for producers. But when prices fall, producers feel the impact very quickly, as stakeholders, including governments, **do not wait to lower farmgate prices**"* (p. 16).
+
+**February 2026 confirmed it.** The −28.6% cut landed four months into the season.
+
+**Smuggling is the arbitrage.** When the August 2025 farmgate price was set at US$5,040/t equivalent, the world price averaged **US$7,592/t**. That gap, plus payment delays of up to a month, is the entire smuggling incentive.
+
+> ⚠️ A widely circulated finding — *"91% of 600 surveyed Ghanaian cocoa households earned below the living income benchmark"* (2024 Cocoa Household Income Study) — appears **only in secondary reporting**. **I could not identify the publisher.** Do not quote it.
+
+---
+
+## 6. Child labour — the real numbers, without the slogan
+
+**Primary source: NORC at the University of Chicago (2020),** funded by the U.S. Department of Labor. Survey round 2018/19.
+
+### The counts
+
+- **1.56 million children** in child labour in cocoa across Côte d'Ivoire and Ghana — **~770,000 in Ghana**.
+- **1.48 million** exposed to **hazardous** child labour — **~710,000 in Ghana**.
+
+### The prevalence — and Ghana is worse than Côte d'Ivoire
+
+Among children aged 5–17 in agricultural households in cocoa-growing areas:
+
+| | Côte d'Ivoire | **Ghana** |
+|---|---|---|
+| Child labour in cocoa, 2008/09 → 2018/19 | 23% → **38%** | 44% → **55%** |
+| Hazardous child labour, 2008/09 → 2018/19 | 23% → **37%** | 43% → **51%** |
+
+Over the same decade **production rose 62%**. NORC's own verdict: *"despite the efforts made by the governments, Industry, and other key stakeholders… during the past 10 years, **the child labor and hazardous child labor prevalence rates did not go down**"* (NORC, 2020, p. 12).
+
+### Get the distinctions right — this is where the slogan breaks
+
+- **Child labour** is defined by **ILO Conventions 138 and 182**. **Hazardous child labour** in cocoa means sharp tools, land clearing, heavy loads, agrochemicals, long hours, night work.
+- **Forced labour / child slavery is a different thing** (ILO C29) and **NORC explicitly did not measure it**: *"This research focuses on child labor and hazardous child labor, **not forced child labor/child slavery**"* (p. 5).
+- **The children are overwhelmingly working for their own families.** In Ghana, **83%** of children working in cocoa were working **for their parents**, and **97%** for parents or relatives; **99%** lived with a parent or relative (NORC, 2020, p. 9). Median Ghanaian farm: **~3 ha**.
+
+> **Hold both facts at once.** This is overwhelmingly *smallholder household labour that crosses into hazardous work* — not trafficked plantation slavery. That is not an excuse. It is a different problem, and it has a different solution.
+
+### Why price is the root cause
+
+- **The Cocoa Barometer's arithmetic:** a working Child Labour Monitoring and Remediation System costs **US$75–95 per household per year** — *"only about **6% of the costs of purchasing the cocoa at farm gate price**."* And even a well-run one *"can only stop around **30%** of child labourers from engaging in hazardous activities."* Their conclusion: *"**Tackling child labour will also require less price pressure at farm gate level**"* (Fountain & Huetz-Adams, 2025, p. 133).
+- The 2022 Barometer is blunter: with a living wage at **US$13.50/day in Ghana**, hired labour is unaffordable — so child labour *"could be cynically seen as **a supply of free/cheap labour**"* (Fountain & Huetz-Adams, 2022, p. 10).
+
+### The Harkin-Engel Protocol
+
+Signed **September 2001**. A **voluntary industry agreement** — not a treaty, not law. Its central pledge was a **70% reduction** in the worst forms of child labour in the two countries. **It was missed at every deadline: 2005 → 2008 → 2010 → 2015 → 2020.** The NORC data above is the terminal verdict on the 2020 deadline.
+
+### *Nestlé USA, Inc. v. Doe* (2021)
+
+**593 U.S. 628**, decided 17 June 2021. Six Malians alleged they were trafficked into Côte d'Ivoire as children and enslaved on cocoa farms. **Held, 8–1** (Thomas, J.): the suit impermissibly sought **extraterritorial application of the Alien Tort Statute**; allegations of "general corporate activity" in the US are insufficient.
+
+> **The precise, non-sloganeering framing:** the Court did **not** find the companies innocent or the allegations false. It closed a US **jurisdictional** door. Students should learn the difference between "you cannot sue here" and "it did not happen."
+
+---
+
+## 7. Certification — what the premium actually is
+
+### Fairtrade, current figures (Fairtrade International, 2025)
+
+| Origin | Minimum Price | **Premium** | Valid |
+|---|---|---|---|
+| **Ghana** | US$2,400/t FOB | **US$240/t** | until 1 Oct 2026 |
+| **Ghana (from 1 Oct 2026)** | US$3,500/t FOB | **US$275/t** | — |
+| Côte d'Ivoire | €2,206/t FOB | €221/t | until 1 Oct 2026 |
+
+**Three things a curriculum must say about this table:**
+
+1. **These are FOB prices, not farmgate prices.** They are paid at the export dock, to the exporter/cooperative — not to the farmer at the buying centre.
+2. **The Minimum Price is a floor, and right now it is not binding.** With cocoa at **US$5,817/t**, a floor of $2,400 (or even $3,500) is far below market. **The only thing Fairtrade currently adds in Ghana is the Premium.**
+3. **Do the division.** US$240/t on a ~US$5,800/t market is **about 4%**. And from October 2026, a new rule mandates that only **40% of the premium** be paid in cash to cooperative members.
+
+**Rainforest Alliance:** minimum Sustainability Differential of **US$70/t** for cocoa. On a US$5,800/t market that is **about 1.2%**. State it plainly.
+
+### 🔥 The living-income line, and the day Ghana crossed it
+
+**Fairtrade's Living Income Reference Price for Ghana: GH¢45.40/kg** at farmgate, effective Sept/Oct 2026 (Fairtrade International, 2026).
+
+- October 2025 farmgate: GH¢3,625/bag ÷ 64 kg = **GH¢56.64/kg** → **above** the line.
+- February 2026 farmgate: GH¢2,587/bag ÷ 64 kg = **GH¢40.42/kg** → **~11% below** the line.
+
+**Ghana crossed from above to below the living-income line in a single press release.** Students can compute both sides. It is the best self-contained quantitative lesson in this brief.
+
+Fairtrade's own honesty, from the same document: *"it is no guarantee that all farmers will earn a living income… **The LIRP is not a standalone solution**."*
+
+### The honest critiques — from the sector's own watchdog
+
+**Fountain & Huetz-Adams, Cocoa Barometer 2022** (pp. 43–44):
+
+> *"The race for certified volumes in the past decade **has not led to the bar being raised**."*
+>
+> *"**Certified is not the same as sustainable.** Claiming sustainability off the back of a certification system is misleading."*
+>
+> *"**Standards focussed on farmers, not the multinationals.** Thinking that farming standards are the answer implies that bad farming is the problem… For chocolate companies to be able to sell a product as certified requires **very little fundamental change in the way they operate**."*
+>
+> **And their own fair rebuttal:** *"There are several ways in which certification plays an important role… it is, at the moment, **one of the few ways by which higher prices and premiums can potentially be delivered to the farm gate**."*
+
+Executive summary, same report: *"**Without significantly higher farm gate prices, sustainability in the cocoa sector is a pipe dream.**"*
+
+> **The classroom move:** do not teach "Fairtrade good" or "Fairtrade bad." Teach the arithmetic, then let students argue. 4% is a real number, and so is "one of the few mechanisms that exists."
+
+---
+
+## 8. EUDR — the rule that could cut smallholders out ⏰
+
+**Instrument:** Regulation (EU) **2023/1115**, as amended by Regulation (EU) **2025/2650**.
+
+**What it requires:** cocoa and chocolate placed on (or exported from) the EU market must be **deforestation-free** — not grown on land deforested after **31 December 2020** — produced legally in the country of origin, and covered by a **due-diligence statement backed by GPS coordinates of the plot of production**. Penalties up to **4% of annual EU turnover**.
+
+**⏰ Current compliance dates — it has been delayed twice:**
+
+| Who | Deadline |
+|---|---|
+| **Large and medium operators** | **30 December 2026** |
+| Micro/small enterprises and natural persons | 30 June 2027 |
+
+(European Commission, 2026.)
+
+> **A teaching gift:** USDA FAS's March 2025 report was written when the deadlines were **30 Dec 2025 / 30 June 2026**. It is now wrong. **Show students a real, authoritative, out-of-date document** and ask them how they'd know. That is media literacy with teeth.
+
+**Ghana's exposure is not marginal — it is the market.** In 2024 Ghana sent ~**292,755 MT** of cocoa and cocoa products to the EU: about **75% of its total reported export volume** (USDA FAS, 2025).
+
+**What researchers say about the smallholder burden.** The EU's own Joint Research Centre (Boysen, 2025) models *"large shifts in trade flows and a reduction in global cocoa production, while farmer welfare increases,"* but names the opponents' case: **high transaction costs**, and *"the possible exclusion of some farmers, **especially small and remote farmers and indigenous peoples**, from EUDR-compliant supply chains as compliance costs are likely higher."* Plus **leakage** — non-compliant cocoa simply diverted to non-EU markets.
+
+**And the sting in the tail:** the regulation's *recital* asks for *"a fair price… to producers, in particular smallholders, so as to enable a living income"* — but, as the JRC paper notes, **that requirement "is not repeated in the regulation itself."** The traceability is binding. The fair price is not.
+
+**Cost estimate:** Fairtrade producer networks put the cost of geolocation data collection at **€5,000–€15,000 per producer organisation**.
+
+**Where Ghana actually is:** COCOBOD is registering GPS coordinates; ~**250,000 farms mapped by 2020**, and by 2023 **82%** of cocoa sourced by companies with sustainability agreements was traceable to the producer (World Cocoa Foundation, via USDA FAS, 2025).
+
+---
+
+## 9. Disease, climate, and gold
+
+### Cocoa Swollen Shoot Virus Disease (CSSVD)
+
+- **Mortality is total.** *"The mortality rate of CSSV is 100%"* — up to complete tree loss within three years, *"potentially making the land unfit for cocoa cultivation from then on"* (Fountain & Huetz-Adams, 2025, pp. 27–28). Peer-reviewed work puts yield loss at **30–50%** and tree death within **2–3 years** of infection (Ameyaw et al., 2023).
+- **Prevalence in Ghana: "over 30%"** (Ameyaw et al., 2023).
+
+> ⚠️ **Area infested — sources disagree by 6.5×, and you must not conflate them:**
+> - **90,000 ha** — *"targeted for rehabilitation"* (USDA FAS, 2025)
+> - **592,230 ha** — total area with *any* infection, per Ghana's third country-wide survey (2023), up from 315,000 ha in 2017 (**trade press; I could not open a primary COCOBOD/CRIG document**)
+>
+> These are almost certainly measuring **different things**. Say which you mean.
+
+**Rehabilitation:** COCOBOD cuts out diseased trees, replants with tolerant hybrids, and pays the farmer **GH¢1,000/ha (~US$65)** compensation while maintaining the farm for two years (USDA FAS, 2025).
+
+### Black pod
+
+Losses *"up to ca. 10% per year"* (Fountain & Huetz-Adams, 2025) — far less lethal than CSSVD per farm, but recurrent. USDA FAS attributes part of the 2023/24 collapse to a black-pod uptick *"coincid[ing] with a cutback in government-supplied insecticides."*
+
+### 🔥 Galamsey — where two Commodity Map episodes collide
+
+**The mechanism** (Fountain & Huetz-Adams, 2025, p. 28):
+
+> *"Farmers are paid cash sums for the miners to use the farmers' land, cut down the trees, and create open mines where once a farm was… it also heavily **pollutes groundwater and soil**, damaging surrounding plantations, **forcing the owners of surrounding farms to also consider selling their land for gold**."*
+
+**That contagion is the point.** It is not a static loss — one sale poisons the neighbours into selling.
+
+**And it takes the labour too:** *"more lucrative galamsey activities have **enticed younger laborers away from farming**"* (USDA FAS, 2025).
+
+**The hectares — COCOBOD statements via press, escalating:**
+
+| Figure | Year | Attributed to |
+|---|---|---|
+| >19,000 ha destroyed | 2022 | COCOBOD CEO Joseph Boahen Aidoo |
+| ~30,000 ha destroyed, ~50,000 ha more at risk | 2024–25 | COCOBOD CEO Dr Randy Abbey |
+
+> ⚠️ **All of these reach me through Ghanaian press, not a primary COCOBOD dataset.** Present them as *COCOBOD statements reported in the press, with the year attached*. **The 19,000 → 30,000 trajectory is itself the story**, and the escalation is the honest thing to teach.
+
+Over **90%** of Ghana's cocoa comes from the Eastern, Western and Ashanti regions — the same regions worst hit by galamsey.
+
+### Climate
+
+**Schroth, Läderach, Martinez-Valle, Bunn & Jassogne (2016)**, using 19 climate models under RCP 6.0 for the 2050s, project *"a potential loss of approximately **50% of current climatically suitable area by 2050**"* — but with **strong regional variation**. Some areas become unsuitable; some need adaptation; and **some become *more* suitable** (the Kwahu Plateau in Ghana; south-western Côte d'Ivoire).
+
+> ⚠️ **Do not teach "cocoa will be gone by 2050."** The literature says **the map moves**, and roughly half the currently suitable area is at risk. That is serious, and it is a different claim — and it is the one the researchers actually make.
+
+---
+
+## What I could not verify
+
+State these as gaps; do not paper over them.
+
+1. **Ghana Cocoa Board (Amendment) Act 2020 (Act 1035)** and **PNDCL 265 (1991)** — could not retrieve either text. I cannot certify s.4 is unamended, only that FAO's consolidated text and USDA (March 2025) both present it as operative.
+2. The **COCOBOD "one-tonne minimum lot"** obstacle for artisanal makers — **trade press only**.
+3. The **"91% of Ghanaian cocoa households below the living income benchmark"** study — could not identify the publisher.
+4. **CSSVD area figures** (592,230 ha; 81% of Western North affected; 17% annual loss) — **secondary only**.
+5. **Galamsey hectare figures** — COCOBOD statements via press; **no primary dataset**.
+6. The **"$100bn industry / $6bn to Africa"** family of claims — **no published arithmetic exists behind any version**.
+7. **Any quantified attribution of the 2024 price spike to speculation.**
+8. **ICCO country-level production for 2025/26** — ICCO put country tables behind a paid subscription; the last free country table is February 2025.
+
+---
+
+## References
+
+Allen, T., Pannuti, C., & Hockin, E. (2025, August 5). *Why are cocoa prices falling?* J.P. Morgan Global Research. https://www.jpmorgan.com/insights/global-research/commodities/cocoa-prices
+
+Ameyaw, G. A., Domfeh, O., & Gyamera, E. A. (2023). Cocoa swollen shoot virus disease situation in Ghana. *Viruses*.
+
+Boysen, O. (2025, July). *The impact of the EU Deforestation Regulation on cocoa: Markets, trade and forest conservation* (JRC Working Papers on Economic Analysis of Policies in Africa). European Commission Joint Research Centre.
+
+ClientEarth. (2022). *Ghana's cocoa sector: Legal and governance analysis*.
+
+COCOBOD. (2022, October). *Cocoa producer price goes up 21% to GH₵800 per bag*. https://cocobod.gh/news/cocoa-producer-price-goes-up-21-to-gh800-per-bag
+
+COCOBOD. (2024a, April). *Review of the producer price of cocoa for the 2023/24 cocoa season*. https://cocobod.gh/news/review-of-the-producer-price-of-cocoa-for-the-202324-cocoa-season
+
+COCOBOD. (2024b, September 11). *Review of the producer price of cocoa for the 2024/2025 cocoa season*. https://cocobod.gh/news/review-of-the-producer-price-of-cocoa-for-the-20242025-cocoa-season-wednesday-11th-september-2024
+
+COCOBOD. (2025, August 12). *Cocoa producer price adjustment: Progress amid complex realities*. https://cocobod.gh/news/cocoa-producer-price-adjustment-progress-amid-complex-realities
+
+COCOBOD. (2026, February 12). *Press release on cocoa sector reforms for financial viability and long-term sustainability*. https://cocobod.gh/news/press-release-on-cocoa-sector-reforms-for-financial-viability-and-long-term-sustainability
+
+Dzakpata, F. (2021a, February 3). *Arkaah: Review policy banning businesses from buying cocoa directly from farmers*. Asaase Radio. https://www.asaaseradio.com/arkaah-review-policy-banning-businesses-from-buying-cocoa-directly-from-farmers/
+
+Dzakpata, F. (2021b, February 9). *Fiifi Boafo: Regulating cocoa processing firms in best interest of sector*. Asaase Radio. https://www.asaaseradio.com/fiifi-boafo-regulating-cocoa-processing-firms-in-best-interest-of-sector/
+
+European Commission. (2026, January 28). *Delay until December 2026 and other developments in the implementation of the EUDR*. https://trade.ec.europa.eu/access-to-markets/en/news/delay-until-december-2026-and-other-developments-implementation-eudr-regulation
+
+European Union. (2023). *Regulation (EU) 2023/1115 on deforestation-free products*. https://eur-lex.europa.eu/eli/reg/2023/1115/oj
+
+Fairtrade International. (2025, December 11). *Cocoa price announcement*. https://www.fairtrade.net/
+
+Fairtrade International. (2026, April). *Living income reference prices for cocoa from Ghana & Côte d'Ivoire — Explanatory note*. https://www.fairtrade.net/
+
+Fountain, A. C., & Huetz-Adams, F. (2015). *Cocoa Barometer 2015*. VOICE Network.
+
+Fountain, A. C., & Huetz-Adams, F. (2022). *Cocoa Barometer 2022*. VOICE Network. https://voicenetwork.cc/cocoa-barometer/
+
+Fountain, A. C., & Huetz-Adams, F. (2025). *Cocoa Barometer 2025*. VOICE Network. https://voicenetwork.cc/cocoa-barometer/
+
+Ghana. (1984). *Ghana Cocoa Board Act 1984 (PNDCL 81)*. https://faolex.fao.org/docs/pdf/gha132746.pdf
+
+International Cocoa Organization. (2025, February 28). *Production of cocoa beans* (Quarterly Bulletin of Cocoa Statistics, Vol. LI, No. 1). https://www.icco.org/wp-content/uploads/Production_QBCS-LI-No.-1.pdf
+
+Ministry of Finance, Ghana. (2025, October 2). *Review of producer price for the 2025/26 cocoa season*. https://mofep.gov.gh/news-and-events/2025-10-02/review-of-producer-price-for-the-2025-26-cocoa-season
+
+NORC at the University of Chicago. (2020). *Assessing progress in reducing child labor in cocoa production in cocoa growing areas of Côte d'Ivoire and Ghana* (Final report, 2018/19 survey round). U.S. Department of Labor.
+
+Nestlé USA, Inc. v. Doe, 593 U.S. 628 (2021). https://www.supremecourt.gov/opinions/20pdf/19-416_i4dj.pdf
+
+Schroth, G., Läderach, P., Martinez-Valle, A. I., Bunn, C., & Jassogne, L. (2016). Vulnerability to climate change of cocoa in West Africa: Patterns, opportunities and limits to adaptation. *Science of the Total Environment*, 556, 231–241.
+
+Taylor, J., Beillard, M. J., & Galloway, J. D. (2025, March 31). *Ghana — Cocoa sector overview 2025* (GAIN Report GH2025-0008). USDA Foreign Agricultural Service.
+
+Trading Economics. (2026, July 13). *Cocoa — price, chart, historical data*. https://tradingeconomics.com/commodity/cocoa`,
+    provenance: "plans/future-courses/mansa-gold/01-ghana-cocoa-background.md",
+  },
+  {
+    key: "mansa-gold-ghana-coffee-background",
+    title: "Ghana Coffee — Background Brief",
+    group: "Mansa Gold",
+    summary: "Companion to [`00-interview-prep.md`](00-interview-prep.md) · Compiled 13 July 2026",
+    body: `# Ghana Coffee — Background Brief
+
+**Companion to [\`00-interview-prep.md\`](00-interview-prep.md)** · Compiled 13 July 2026
+
+---
+
+## Read this first: Mansa Gold does not appear to sell coffee
+
+**The Mansa Gold website has no coffee product, no coffee page, and no mention of coffee** (Mansa Gold, n.d.). Searches for "Mansa Gold coffee" return only chocolate.
+
+If BAM has been told the interview covers coffee, **that is information he has and the public record does not** — ask her directly and early.
+
+**But do not drop the coffee thread.** It may be the single best pure-economics story in this entire project — just not as *her* business. As a **contrast** to cocoa, Ghanaian coffee is close to a natural experiment, and it is more teachable than anything in the cocoa file.
+
+---
+
+## The one-sentence version
+
+**Ghana's coffee sector is what happens to a smallholder tree crop when the state withdraws completely — and the answer, measured over 35 years, is that the crop nearly disappears.**
+
+Same country. Same farmers. Same soil. Same cocoa belt. **Minus the institution.**
+
+---
+
+## 1. ⚠️ Before any number: Ghana's coffee data is genuinely bad
+
+This is not a caveat. **It is the finding**, and it belongs in the lesson.
+
+The flagship source — the **ICO/COCOBOD *Country Coffee Profile: Ghana*** (ICO & Ghana Cocoa Board, 2018), co-authored by Ghana's own cocoa board — **contradicts itself within a single document:**
+
+| Claim in the same 2018 document | Implied 2015 production |
+|---|---|
+| Table 3: 9,380 × 64-kg bags | **~600 t** |
+| §16: "gradual increase in production to 6,000 tonnes by 2015" | **6,000 t** |
+| §3: "estimated production level of 12,650 tonnes at the end of 2015" | **12,650 t** |
+
+**A 20-fold spread, for the same year, in the same report.** Area under coffee is likewise given as both **400–470 ha** and **17,000 ha** — a 36-fold spread.
+
+Meanwhile **FAO reports Ghana's coffee production as 736 tonnes — identically, for 2018, 2019, 2020, 2021, 2022, 2023 and 2024** (FAO, via Our World in Data, 2024). A perfectly flat seven-year series is the signature of a **carried-forward estimate**, not a measurement. FAO is almost certainly imputing, because Ghana is not reporting.
+
+> 🔥 **The teaching point, and it is a good one:**
+> **Cocoa is counted to the bag, because COCOBOD buys every bag. Coffee is barely counted at all, because nobody official buys it.**
+> **When the state stops buying, the state stops counting.** The statistical invisibility *is* the structural story.
+
+Use the numbers below as **orders of magnitude, not precision.**
+
+---
+
+## 2. How tiny is tiny?
+
+**Best available figure: 736 t (FAO, nominally 2024 — treat as imputed).** FAO ranks Ghana **#52 in the world**, at "0.0%" of global output.
+
+### Against Ghana's own cocoa — the killer comparison
+
+| | Volume | Year |
+|---|---|---|
+| Ghana **coffee** | **~736 t** | 2024 (est.; FAO) |
+| Ghana **cocoa** | **~600,000 t** | 2024/25 (ICCO, 2025) |
+
+> **Ghana grows roughly 800 times more cocoa than coffee by weight.**
+> Put another way: **Ghana's entire annual coffee crop is about one day's worth of its cocoa crop.**
+
+### In money, the gap is even more brutal
+
+- Ghana's recorded **green coffee exports in 2022: US$242,380.** Two hundred forty-two *thousand* dollars (UN Comtrade, via World Bank WITS, 2022).
+- Ghana's **cocoa export earnings in 2024: US$1.73 billion** (Bank of Ghana data, via the Auditor-General's report).
+
+> **By export value, cocoa out-earns coffee by roughly 7,000 to 1.** (Different years — 2022 coffee vs 2024 cocoa — because that is the best data that exists.)
+
+Coffee's share of Ghana's GDP *"has always been less than 0.2%"* and was **0.12% in 2015** (ICO & Ghana Cocoa Board, 2018).
+
+### Against other African producers (FAO, 2024, like-for-like)
+
+| Country | Green coffee (t) | Multiple of Ghana |
+|---|---|---|
+| **Ethiopia** | 575,696 | **~780×** |
+| **Côte d'Ivoire** | 72,133 | **~98×** |
+| Kenya | 49,500 | ~67× |
+| Cameroon | 29,774 | ~40× |
+| **Ghana** | **736** | **1×** |
+
+**Uganda**, landlocked and next door in continental terms, exported **8.78 million 60-kg bags worth US$2.38 billion** in the year to April 2026 (Uganda Coffee Development Authority, 2026).
+
+> **Uganda earns more from coffee than Ghana earns from the crop that defines it.**
+
+**The sharpest framing for students:** Ghana's 736 t is about **12,270 × 60-kg bags**. The world drank about **176 million bags** in 2024 (ICO). **Ghana produces roughly 0.007% of what the world drinks** — seven thousandths of one percent.
+
+---
+
+## 3. What's actually grown
+
+**Robusta, essentially entirely.** *"Robusta coffee is the main variety grown in Ghana due to ecological limitations"* (ICO & Ghana Cocoa Board, 2018).
+
+**Why not arabica? Altitude.** Ghana sits mostly at **400–800 m**, and its highest peak — **Mount Afadja (Afadjato) — reaches only 885 m**, beneath the band arabica commercially wants (Perfect Daily Grind, 2021; Sprudge, 2025). A Ghanaian roaster adds a second reason: *"insect infestation and diseases also mean arabica isn't worthwhile"* (Walsh, in Perfect Daily Grind, 2021).
+
+**How it's grown and processed:** under shade (*"an average of 16 shade trees per hectare"*), and dry/natural processed — sun-dried on mats, **often on repurposed cocoa drying beds** (ICO & Ghana Cocoa Board, 2018; Perfect Daily Grind, 2021).
+
+**Where:** the **cocoa belt**. COCOBOD (2022) lists nine regions: Eastern, Central, Ashanti, Western North, Western, Bono, Ahafo, **Volta and Oti**. Coffee *"grows where cocoa grows well, as well as in areas marginal to cocoa cultivation."*
+
+> **Note the overlap with Mansa Gold.** Her cocoa comes from **Oti, Central and Eastern** — all three are coffee regions too. **Ask her whether she has ever seen coffee growing on or near the farms she buys from.**
+
+---
+
+## 4. The history — and the story is NOT the one you'd guess
+
+### The timeline (ICO & Ghana Cocoa Board, 2018, unless noted)
+
+| Year | What happened |
+|---|---|
+| **1967/68** | **Peak: 6,700 tonnes.** |
+| 1970–80 | 13,346 ha under coffee. |
+| **1983/84** | **Drought and bush fires.** Area collapses from 13,346 ha to ~3,170 ha by 1985. Production hits an all-time low of **123 tonnes**. |
+| 1980s | Government establishes **19 state coffee plantations**. |
+| **1991** | **Under the Agricultural Diversification Project, "the coffee sector was completely liberalized and COCOBOD left the sector and all services were discontinued."** The 19 plantations were divested; most were *"abandoned or grubbed to pave way for other crops."* Extension *"totally collapsed"*; *"coffee farmers were left on their own."* |
+| **1999** | **Second peak: 5,700 tonnes**, under improved pricing. |
+| **2001–04** | World coffee price crash reaches Ghana. *"Most coffee farmers responded by switching to other cash crop farming, especially cocoa."* |
+| 2009 | Low of 1,140 tonnes. |
+| 2024 | ~736 tonnes (FAO estimate). |
+
+### 🔥 The correction that makes this a real lesson
+
+The obvious story is: *"Ghana's coffee died when the International Coffee Agreement's quota system collapsed in 1989."* **That story is wrong**, and catching it is the lesson.
+
+The ICA quota system *was* suspended in July 1989, and it *did* trigger the worst coffee crisis in history — producing countries' export earnings fell from **US$10–12 billion/year to ~US$5.5 billion** while retail sales in consuming countries rose from ~$30bn to ~$80bn (Osorio, 2004, ICO).
+
+**But look at the dates.** Ghana's coffee had **already peaked in 1967/68** and **already collapsed to 123 t in 1983/84** — *six years before* the ICA fell. And Ghana's **second peak came in 1999 — a decade *after* it.**
+
+**The honest causal chain for Ghana:**
+
+1. **1983: fire and drought** physically destroyed ~75% of the coffee area. *(Climate shock.)*
+2. **1991: liberalization** removed the state entirely — no buyer, no extension, no inputs, no credit, no grading. *(Institutional shock.)*
+3. **The price gap** made switching to cocoa rational. *(Opportunity cost — see below.)*
+4. **2001–04: the global crash** (which *is* the ICA aftermath) killed the fragile recovery. *(Market shock.)*
+
+> **A curriculum that says "Ghana's coffee died because the ICA quotas ended in 1989" is wrong.** Ghana's coffee died mainly because **fire took the trees in 1983 and the state walked away in 1991.**
+
+### The table that explains everything
+
+**Average farmgate price per 64-kg bag, in cedis** (COCOBOD data, in ICO & Ghana Cocoa Board, 2018, Table 5):
+
+| Year | 2011 | 2012 | 2013 | 2014 | 2015 | 2016 |
+|---|---|---|---|---|---|---|
+| **Coffee** | 40 | 60 | 55 | 100 | 200 | 250 |
+| **Cocoa** | 205 | 212 | 212 | 310 | 425 | 475 |
+
+**Cocoa paid ~5× more per bag than coffee in 2011.** A rational farmer in the cocoa belt plants cocoa.
+
+**That is the whole decline in one table** — and it is a **policy-made** gap, because the cocoa number is a state-guaranteed price and the coffee number is not.
+
+---
+
+## 5. 🔥 The structural difference — the analytical core
+
+This is the strongest material in the file. The contrast is documented, stark, and explains everything else.
+
+| Feature | **Cocoa** | **Coffee** |
+|---|---|---|
+| **Guaranteed farmgate price** | **YES.** 2025/26: GH¢58,000/t (GH¢3,625/bag), set at ~70% of assumed FOB (COCOBOD, 2025) | **NO.** *"Currently, there is **no pricing regime for coffee** in Ghana. Farmers and buyers negotiate the farm gate price"* (ICO & Ghana Cocoa Board, 2018, §7.1). COCOBOD announces only an ***indicative*** price — a non-binding suggestion |
+| **Who sets it** | Producer Price Review Committee, chaired by the Finance Minister | Nobody |
+| **Guaranteed buyer** | **YES.** LBCs buy at the fixed price; COCOBOD's CMC is the sole external marketer | **NO.** Bought by *"local processors, private exporters and **even foreigners from neighbouring countries who buy directly from farmers**"* |
+| **Legal mandate** | Yes, and exercised | **YES on paper, NO in practice.** COCOBOD Act 1984 (PNDCL 81) covers cocoa, **coffee AND shea** — but COCOBOD *"has no capacity or structures to take delivery"* of coffee |
+| **Forward selling / risk absorption** | **YES** — COCOBOD absorbs price swings | **NO.** World-price volatility passes **straight through to the farmer** |
+| **Quality grading** | **YES.** Quality Control Company grades and seals every bag — *this is why Ghanaian cocoa earns a premium* | **NOMINALLY YES, EFFECTIVELY NO.** *"Due to the liberalization of the coffee sector, it has become difficult to undertake this activity."* A Ghanaian roaster, bluntly: *"**there is no quality standardisation in the country**"* (Walsh, in Perfect Daily Grind, 2021) |
+| **Extension services** | Yes | ***"Total collapse."*** *"Coffee farmers were left on their own"* |
+| **Credit** | Seed funds, input credit | **NO.** Farmers *"borrow from private lenders who charge exorbitant interest rates"* |
+
+### The institutional orphan problem
+
+Ghana created the **Tree Crops Development Authority** under **Act 1010 (2019)** precisely to give non-cocoa tree crops a COCOBOD-like regulator. Its mandate covers **six crops: rubber, cashew, shea, mango, coconut, oil palm.**
+
+**Coffee is not among them** — because coffee is *legally* still COCOBOD's, under PNDCL 81.
+
+> **So coffee sits in a gap: too small to command COCOBOD's attention, and legally fenced out of the agency built to help crops exactly like it.** It has a regulator on paper that does not regulate it, and is excluded from the regulator that might.
+
+### What the absence of a COCOBOD means
+
+**The downside is dominant and well-evidenced:**
+
+- **No price floor.** When the world price falls, the farmer falls with it. That is exactly what happened in 2001–04 — and **farmers responded by cutting the trees down.**
+- **No guaranteed buyer**, so no reason to invest in a tree that takes 3–4 years to bear.
+- **No quality system → no reputation → no premium.** Ghana cannot sell "Ghana coffee" as a differentiated origin the way it sells Ghana cocoa, because nobody guarantees what is in the bag.
+- **No aggregation → no export scale.** *"Ghana is not internationally known as a coffee producer… **we don't have the volumes yet**"* (Tamakloe, Bean Masters, in Perfect Daily Grind, 2021).
+- **The value leaks across the border, uncounted.** *"The processed products are mainly exported to neighbouring countries such as **Burkina Faso and Mali without any records at the ports and borders**"* (ICO & Ghana Cocoa Board, 2018). Over the six years to 2018, **57% of recorded Ghanaian coffee exports went to Togo** — a transit destination, not a consumer market.
+
+**But the upside is real, and students should have to wrestle with it:**
+
+- **The farmer keeps what they negotiate.** No board levy, no state marketing margin, no mandated deduction.
+- **Direct trade is legal.** A Ghanaian roaster can buy from a Ghanaian farmer without a licence and a state auction in between. **In cocoa, that is a criminal offence** (see file 01 §3).
+- **In a boom, the coffee farmer can capture the spike.** The cocoa farmer is stuck with a price set months earlier at ~70% of a stale FOB. *(The corollary — that the coffee farmer eats the whole crash — is why this "upside" has historically not been worth it.)*
+
+> ### 🔥 The discussion prompt
+> **Ghana's cocoa farmers get a guaranteed price deliberately set at ~70% of the world price. The state captures ~30% of the value in exchange for certainty.**
+> **Ghana's coffee farmers get 100% of whatever they can negotiate, and nothing to catch them when it falls.**
+>
+> **Which deal would you take?**
+>
+> That is a genuinely open, genuinely arguable question — and a far better prompt than "state good / market bad."
+
+---
+
+## 6. Revival — a great deal announced, considerably less delivered
+
+### What actually happened
+
+**Coffee Rehabilitation Project (2011–2015)** — the one real, completed programme (ICO & Ghana Cocoa Board, 2018):
+
+- Budget **GH¢4.2 million**, 13 operational areas.
+- **Target:** raise production from 1,760 t (2011) to **10,000 t by 2014**.
+- **Delivered:** 2,714 ha rehabilitated, ~4,567 farmers (**22% women**), 22 community nurseries, 1.8m hybrid seedlings.
+- **Result:** claimed 12,650 t — a figure **the same document contradicts twice**. If its own Table 3 is right (~600 t in 2015), **the project missed its target by ~94%.**
+
+**Ghana Coffee Week** — first ever, **21–22 October 2024**, Accra. Organised by the **International Trade Centre** with the **Coffee Federation of Ghana** and **COCOBOD**, funded via the EU/OACPS ACP Business-Friendly Programme. COCOBOD's Deputy Chief Executive said coffee *"holds enormous potential to generate as much foreign exchange as cocoa"* — **and the announcement cited no current production figure at all**, which tells you plenty (COCOBOD, 2024).
+
+**Seedlings:** 2 million hybrid seedlings mandated; **630,000 raised for distribution in 2022** (MyJoyOnline, 2022).
+
+### What was announced and did NOT happen
+
+The 2018 ICO/COCOBOD profile announced, in the future tense: production of **100,000 t** in the short-to-medium term, **200,000 t** and **200,000 ha within a decade**, a **coffee unit inside COCOBOD** growing into a **Ghana Coffee Development Board**, **district coffee marketing centres**, and **a minimum farmgate price for coffee enforced through licensed buyers.**
+
+**Reality check, July 2026:**
+
+- Actual output: **~736 t.** The 100,000 t target was **missed by ~99.3%.**
+- **I found no evidence a Ghana Coffee Development Board was ever created.**
+- **No evidence of district coffee marketing centres.**
+- **No evidence that a minimum farmgate price for coffee was ever announced, in any season.** My most recent verified coffee price is **GH¢250/bag — from 2016.** A decade old.
+
+> **The gap between announcement and delivery is, by itself, one of the most instructive facts in this brief** — and a genuinely useful media-literacy lesson: *a press release is not an outcome.*
+
+### Roasters actually operating in Ghana
+
+- **Kawa Moka Coffee Company** — founder/CEO **Emi-Beth Aku Quantson**. Has trained **600+ women, men and youth across four coffee enclaves**, reaching 4,000+ households; **250+ jobs created** (Lionesses of Africa, 2025; Sprudge, 2025).
+- **Bean Masters** (Accra, founded 2018) — founder **Benedicta Tamakloe**. See §7.
+- **Jamestown Coffee Company** (est. 2018) — roasts **5–6 tonnes annually** (Sprudge, 2025). *Note: one roaster's annual output is ~0.8% of the entire national crop.*
+- **Gold Coast Roasters** — Cillian Walsh.
+
+---
+
+## 7. Women in Ghanaian coffee
+
+**Baseline: women are 22% of Ghana's coffee farmers** (Ghana Statistical Service, 2014, in ICO & Ghana Cocoa Board, 2018). The Coffee Rehabilitation Project's beneficiaries were likewise **22% women**.
+
+**The binding constraint is land, not coffee.** The ICO profile is explicit: *"few women in farming communities own farm lands big enough to cultivate cash crops. **The lands are usually owned by their husbands**."* (See file 03 for the full treatment.)
+
+### The one BAM should actually call
+
+**⭐ Bean Masters — Benedicta Tamakloe** (Accra, founded 2018). A former computer-science teacher. Bean Masters **sources exclusively from female farmers**, organised as a collective of **~200 women growers — reportedly the largest of its kind in Ghana** — which also helps members harvest. The collective produced **~10 tonnes** in the year before reporting. Tamakloe roasts much of it herself **at a chocolate factory in Accra**. (Reuters, 2023.)
+
+> **Do the arithmetic with students: ~10 tonnes across ~200 women is about 50 kg each.** That single division tells you more about the scale of Ghanaian coffee than any chart.
+>
+> And note the detail that writes itself: **she roasts her coffee in a chocolate factory.** Ghana's coffee industry is, quite literally, borrowing cocoa's infrastructure.
+
+**Also:** the **International Women's Coffee Alliance has a Ghana chapter**, described on IWCA's own site as *"newly launched"* (IWCA, 2026). ⚠️ No launch date or membership number is given.
+
+**And a finding worth stating:** **I found no COCOBOD or Government-of-Ghana women-in-coffee programme.** Every women-focused coffee initiative I could verify is **private-sector or NGO-led.** That rhymes exactly with §5 — where the state is absent, private and civil-society actors do the institution-building.
+
+---
+
+## 8. Does Ghana drink coffee?
+
+**Hard data is nearly non-existent.** The only primary figure: *"around 2,000 bags are consumed per annum by Ghana"* (ICO & Ghana Cocoa Board, 2018) — and **the document does not even specify the bag size.** If 60 kg, that is ~120 t/year for ~29 million people: about **0.004 kg per person per year**, against a world average of roughly 1.3 kg.
+
+> ⚠️ **That per-capita figure is my arithmetic on ICO's ambiguous number, not a published statistic.** Treat any per-capita coffee figure for Ghana with deep suspicion — the ones circulating online (Helgi Library, Statista) are paywalled market-research *models*, not measurements.
+
+**The qualitative direction is consistently upward.** A specialty café scene is real and growing in **Accra, Kumasi and Takoradi**, with single-origin beans and curated spaces (Sprudge, 2025). Bean Masters sells in bulk to Accra restaurants and hotels (Reuters, 2023). And tellingly, **the entire strategic rationale of Ghana Coffee Week (2024) was to promote *domestic* consumption** — a sign the sector believes local demand, not export, is the realistic near-term market.
+
+**But the volume is trivial.** Ghana's most productive specialty roaster roasts 5–6 tonnes a year. The mass market drinks **instant coffee**.
+
+---
+
+## What I searched for and could NOT find
+
+Silence here is a finding, not a gap in effort.
+
+- ❌ **Any Ghanaian government or COCOBOD publication of an annual coffee production figure after 2016.** COCOBOD's own 2024 statements about coffee's potential **cite no current production number at all.**
+- ❌ **A reconciliation between FAO's 736 t and the trade-press figure of ~2,220 t.** Neither is traceable to a Ghanaian primary measurement.
+- ❌ **Any explanation of the internal contradictions inside ICC-122-8** (600 t vs 6,000 t vs 12,650 t for the same year).
+- ⚠️ **The claim that coffee arrived in Ghana in the "mid-eighteenth century" with "early missionaries" is UNVERIFIED and probably wrong.** It predates the Basel and Wesleyan missions by ~80 years. It traces to a single COCOBOD sentence recycled across ICO, COCOBOD's site and trade press — which makes it *look* well-sourced while being one unverified assertion. **Do not state the 18th-century date as fact without a historian's source.**
+- ❌ **Any Ghana-specific academic paper analysing the coffee collapse.** None in open access. A university library search would likely find one — worth doing before publishing.
+- ❌ **Any evidence the Ghana Coffee Development Board was ever created**, that district marketing centres exist, or that a **minimum farmgate price for coffee** was ever set.
+- ❌ **A current (2025/26) coffee farmgate price in Ghana, in any unit.** The most recent I could verify is **GH¢250/bag, from 2016.**
+- ❌ **The Coffee Federation of Ghana's founding date, membership or governance.** Its website (coffeefederationofghana.com) **does not resolve** (DNS failure, July 2026). Its existence is confirmed only indirectly, via ITC and COCOBOD naming it as a partner.
+- ❌ **Confirmation of whether the Tree Crops Development Authority has since added coffee** to its six-crop mandate.
+- ❌ **A credible, primary, recent per-capita coffee consumption figure for Ghana.**
+- ❌ **The IWCA Ghana chapter's launch date and membership.**
+
+---
+
+## References
+
+COCOBOD. (2022, July 9). *Coffee: Production, consumption & potential health benefits*. Ghana Cocoa Board. https://cocobod.gh/news/coffee-production-consumption-potential-health-benefits
+
+COCOBOD. (2024, October 23). *Coffee holds potential to complement cocoa gains — Deputy CE*. Ghana Cocoa Board. https://cocobod.gh/news/coffee-holds-potential-to-complement-cocoa-gains-deputy-ce
+
+COCOBOD. (2025). *Review of producer price for the 2025/26 cocoa season*. Ghana Cocoa Board. https://cocobod.gh/news/review-of-producer-price-for-the-202526-cocoa-season
+
+Food and Agriculture Organization of the United Nations. (2024). *Green coffee bean production* [Data set]. Via Our World in Data. https://ourworldindata.org/grapher/coffee-bean-production
+
+Ghana. (2019). *Tree Crops Development Authority Act, 2019 (Act 1010)*. https://ghalii.org/akn/gh/act/2019/1010/eng@2019-12-30/source.pdf
+
+International Cocoa Organization. (2025, February 28). *Production of cocoa beans* (QBCS Vol. LI, No. 1). https://www.icco.org/wp-content/uploads/Production_QBCS-LI-No.-1.pdf
+
+International Coffee Organization & Ghana Cocoa Board. (2018, September 12). *Country coffee profile: Ghana* (ICC-122-8). 122nd Session of the International Coffee Council, London. https://www.ico.org/documents/cy2017-18/icc-122-8e-country-profile-ghana.pdf
+
+International Women's Coffee Alliance. (2026). *Chapter list*. https://www.womenincoffee.org/chapter-list
+
+Lionesses of Africa. (2025, January 19). *Brewing change: 6 inspiring women-led coffee brands redefining Africa's coffee culture*. https://www.lionessesofafrica.com/blog/2025/1/19/brewing-change-6-inspiring-women-led-coffee-brands-redefining-africas-coffee-culture
+
+Mansa Gold. (n.d.). Retrieved July 13, 2026, from https://mansa.gold/
+
+MyJoyOnline. (2022). *630k coffee seedlings ready for distribution to farmers — COCOBOD*. https://www.myjoyonline.com/630k-coffee-seedlings-ready-for-distribution-to-farmers-cocobod/
+
+Osorio, N. (2004, June 18). *Lessons from the world coffee crisis: A serious problem for sustainable development* (ED-1922/04). International Coffee Organization, submission to UNCTAD XI. https://www.ico.org/documents/ed1922e.pdf
+
+Perfect Daily Grind. (2021, November 17). *Exploring coffee production in Ghana*. https://perfectdailygrind.com/2021/11/exploring-coffee-production-in-ghana/
+
+Reuters. (2023, February 23). *Female-owned farms and companies are growing Ghana's taste for coffee*. Via CNBC Africa. https://www.cnbcafrica.com/2023/female-owned-farms-and-companies-are-growing-ghanas-taste-for-coffee
+
+Sprudge Special Projects. (2025, December 4). *Why coffee from Ghana matters*. https://specialprojects.sprudge.com/?p=829
+
+Uganda Coffee Development Authority. (2026). *Monthly export reports*. https://ugandacoffee.go.ug/
+
+UN Comtrade. (2022). *Ghana coffee (HS 090111) exports by partner* [Data set]. Via World Bank WITS. https://wits.worldbank.org/trade/comtrade/en/country/GHA/year/2022/tradeflow/Exports/partner/ALL/product/090111`,
+    provenance: "plans/future-courses/mansa-gold/02-ghana-coffee-background.md",
+  },
+  {
+    key: "mansa-gold-women-in-cocoa-and-coffee",
+    title: "Women in Cocoa and Coffee — Background Brief",
+    group: "Mansa Gold",
+    summary: "Companion to [`00-interview-prep.md`](00-interview-prep.md) · Focus: Ghana / West Africa · Compiled 13 July 2026",
+    body: `# Women in Cocoa and Coffee — Background Brief
+
+**Companion to [\`00-interview-prep.md\`](00-interview-prep.md)** · Focus: Ghana / West Africa · Compiled 13 July 2026
+
+---
+
+## Read this first
+
+This is the section most likely to attract lazy, uncited statistics — so it is the one that had to be hardest on itself.
+
+**Several of the most-repeated numbers in this space do not survive contact with their sources.** One of them originates in an **unpublished internal consultancy memo**. Another is a 1970s "zombie statistic" that FAO-linked researchers formally dismantled. A third is contradicted by the very study it is attributed to.
+
+> ⚠️ **The interview warning, repeated from file 00 because it matters most here:**
+> **Do not ask Preba Arkaah to confirm a statistic.** Ask her what she has seen. Her experience is hers and only she can give it to you. The sector-wide numbers are below, and they are yours to cite. **Keep the two apart** — that seam is exactly where an interview goes wrong.
+
+---
+
+## 0. 🔥 The myth audit — do this before you quote anything
+
+| Widely repeated claim | Verdict |
+|---|---|
+| **"Women are 45–50% of the cocoa labour force"** | **UNSOURCED AT ORIGIN.** Traces to a **Dalberg Global Development Advisors *internal document* (2012)** — never published. Contradicted by the largest primary survey in the sector. |
+| **"Women do 70% of the work but own 1% of the land"** | **DEBUNKED.** Not a cocoa statistic at all — a 1970s-era UN "zombie statistic," formally dismantled by FAO-linked researchers in 2018. Women's share of individually-owned land in Africa ranges from **4% (Nigeria) to 40% (Malawi)**. |
+| **FAO's "close the gender gap → +20–30% yields, feed 100–150 million more people"** | **SUPERSEDED, and routinely inverted.** FAO's own text called those estimates *"admittedly very rough."* FAO's **2023** flagship replaced them with better-evidenced numbers. **Use the 2023 ones.** |
+| **"Only 2% of cocoa land is owned by women"** | **The study it is attributed to says the opposite.** See §1.3. |
+
+### The 45% figure, traced
+
+KIT's *Demystifying the Cocoa Sector* (Bymolt, Laven & Tyszler, 2018) — **~1,500 household surveys per country plus 37 focus groups per country, the largest primary dataset in the sector** — traced the claim and then tested it:
+
+> *"An often cited study by Dalberg (2012) reports that, in West-Africa, women provide 45% of the labour for cocoa production."*
+> **Footnote 22:** *"Dalberg Global Development Advisors (2012) Analysis of IFPRI (2002)… **Dalberg Global Development Advisors Internal Document**."*
+
+**An unpublished internal consultancy memo is the origin of the sector's most-cited gender statistic.** It was then laundered into respectability by a 2014 **report to Mars**, which is what Oxfam, the Fairtrade Foundation, and even the **Cocoa Barometer 2025** now cite.
+
+**What KIT's own data found:**
+
+- **Ghana:** men participate in *virtually all* cocoa activities at **98–100%**. Women participate at *"much lower rates,"* concentrated in planting, fertiliser application, pod-breaking, transporting and drying — *"almost always done alongside men."*
+- **Côte d'Ivoire:** KIT is blunt — *"**The narrative that, in Côte d'Ivoire, women provide an important share of the labour in cocoa does not seem to be correct.**"*
+
+**But KIT is also honest about its own limit:** *"Our data does not allow us to measure the actual labour days worked on the cocoa farm by men and women."*
+
+> **So the correct statement is not "women do less than 45%."** It is: **nobody has ever measured it, and the number in circulation is an unpublished estimate.**
+>
+> 🎓 **This is a whole media-literacy lesson on its own.** A number gets a citation, the citation gets cited, and twelve years later a watchdog report repeats a memo nobody has read. *How does a number become "true"?*
+
+### FAO's actual current numbers (use these)
+
+From **FAO's *The status of women in agrifood systems* (2023)** — replacing the 2010–11 estimates:
+
+- A **24% productivity gap** between male- and female-managed farms of equal size.
+- Women in agrifood systems earn **82 cents for every dollar** men earn.
+- Closing the gender gap in farm productivity and the agrifood wage gap would add **~US$1 trillion to global GDP** and reduce food insecurity by **45 million people**.
+
+---
+
+## 1. What the evidence actually says about Ghana
+
+### 1.1 Share of cocoa farmers: **25.2%** — and this one is census-grade
+
+The authoritative figure is not from an NGO. It is from **Ghana's national agricultural census** (Ghana Statistical Service, 2020, *Ghana Census of Agriculture 2017/18*, Table 9.1):
+
+| Ghana cocoa holders, 15+ | Number | Share |
+|---|---|---|
+| Male | 463,662 | **74.8%** |
+| **Female** | **156,204** | **25.2%** |
+| **Total** | **619,866** | 100% |
+
+This finally gives a **real, citable source** to the widely quoted "about 25% of Ghana's cocoa farmers are women," which Oxfam had attributed only to vague "official figures."
+
+**The caveat is the heart of the whole topic.** "Cocoa farmer" in Ghana means **the recognised landholder who holds the passbook**. A woman working her husband's farm full-time **is not counted at all.**
+
+> Oxfam states it directly: *"there is significant underreporting… due to a bias towards farmers being defined by land ownership, from which women are often excluded."*
+
+### 1.2 The invisible labour is real — it is just not measured as "cocoa"
+
+- Ghanaian women spend **26 hours/week on domestic chores; men, 10** (Vargas Hill & Vigneri, 2011, in KIT 2018).
+- Counting household + farm + non-farm work together, **women's total working hours exceed men's by 29%** (Skalidou / Fairtrade Foundation, 2020).
+
+### 1.3 Land — the evidence flatly contradicts the popular story
+
+This is where the research gets genuinely surprising, and where a teacher can look very good.
+
+**KIT (2018):**
+- In Ghana, **91% of female-headed households reported owning land vs 85% of male-headed households** — statistically significant, and *in women's favour*.
+- KIT's verdict: *"**Our findings suggest that the narrative 'women typically don't own land' is not accurate for female-headed households**."*
+- **But** female-headed households own **less** land (3.49 ha vs 4.28 ha). For *cocoa* land specifically, **no statistically significant difference in amount**.
+- KIT's own crucial caveat: female household heads *"are typically single, divorced or widowed"* and are **not** the same as **married women living inside male-headed households**. *"These findings should not be interpreted more broadly in terms of 'female land ownership'."*
+
+**Hiscox & Goldstein (2014)** — Harvard, **2,809 cocoa households** — the study most often cited for *"only 2% of cocoa land is owned by women"* — **says the opposite:**
+
+| | Male farmers | **Female farmers** |
+|---|---|---|
+| Owns land | 0.68 | **0.79** |
+| Total cocoa acreage | 5.96 | **3.65** |
+
+Their own text: *"**Female farmers are actually more likely than male farmers to report that they own farm land**, but are also much more likely to farm an area of less than one acre."*
+
+> ⚠️ **I searched the full report. The strings "2 percent" and "2%" do not appear anywhere in it.** The statistic attributed to this study is not in this study.
+
+### 🎓 The honest framing for a classroom
+
+It is **not** that Ghanaian women own no cocoa land. It is that:
+
+1. **Far fewer women than men are *recognised* as farmers at all** (25.2%);
+2. Those who are hold **smaller, more marginal plots**;
+3. And **the women who do most of the invisible labour — wives inside male-headed households — appear in *none* of these statistics.**
+
+That is a subtler claim than the slogan, and it is true.
+
+### 1.4 Income and productivity — the estimates genuinely conflict
+
+| Source | Finding |
+|---|---|
+| Hiscox & Goldstein (2014), n=2,809 | Female farmers' income/productivity **25–30% below** men's (regression-adjusted). ⚠️ **The raw differences in their own table are not statistically significant (p = 0.20).** The 25–30% is a *modelled* result. |
+| Vigneri & Holmes (2009), ODI | **No significant difference** in land productivity between male and female cocoa farmers in Ghana; women used **hired labour more efficiently**. |
+| Danso-Abbeam, Baiyegunhi & Ojo (2020), n=505 | Technical efficiency **0.77 (male) vs 0.64 (female)**; output **1,484.6 kg vs 1,023.5 kg** (p<0.01). |
+| KIT (2018) | **No statistically significant difference** in poverty index between male- and female-headed households. |
+
+> **Teach the conflict, not a single number.** The defensible synthesis: **women are not worse farmers** — they consistently farm **smaller plots with fewer inputs**, and therefore earn less in absolute terms.
+
+### 1.5 Decision-making — and Ghana is *not* Côte d'Ivoire
+
+**KIT (2018), who makes cocoa decisions:**
+
+| | **Ghana, male-headed HH** | **Côte d'Ivoire, male-headed HH** |
+|---|---|---|
+| Men make decisions | 97% | 99% |
+| **Women contribute to decisions** | **68%** | **13%** |
+
+> **In Ghanaian male-headed households, women contribute to cocoa decisions 68% of the time. In Ivorian ones, 13%.**
+>
+> **Ghana is genuinely different**, and a curriculum that lumps "West Africa" together loses the most interesting fact in the data. Ghana's matrilineal Akan majority is a plausible part of the explanation (§2.1).
+
+**And the switch that turns on women's control of the money:** Oxfam's Ghana fieldwork found *"most women exercise little agency and voice in decision-making regarding… income earned from cocoa"* — **except** that *"**women who own land in their own right** (through outright purchase or inheritance) **do not consult anyone** before using the income earned from cocoa"* (Dery & Dongzagla / Oxfam, 2020).
+
+> **Land title is the switch.** Everything else is downstream of it.
+
+---
+
+## 2. The structural barriers
+
+### 2.1 Land tenure — and the Akan nuance that complicates the simple story
+
+**The landscape.** ~**80% of Ghana's land is under customary authority.** Statutory reform exists on paper:
+
+- **Intestate Succession Law, 1985 (PNDCL 111)** — gives widows and children rights to the matrimonial home and shares of the estate.
+- **Land Act, 2020 (Act 1036)** — property acquired jointly in marriage **must be registered in both spouses' names**; **§47** bars a spouse from selling, mortgaging or gifting marital land **without the other's written consent**.
+
+**But** FAO/ECOWAS (2018) is clear: *"Despite these provisions in the legal frameworks, **in practice discriminatory customary law often prevails**."*
+
+**The Akan matrilineal nuance — this is the genuinely interesting part.** Under classical Akan (Ashanti) matrilineal custom, land passes through the *abusua* (matriclan) — from a man to his brother or his sister's son. **A wife inherits nothing from her husband; her sons inherit nothing from their father.** So matrilineality does **not** automatically help wives.
+
+**And yet:** Quisumbing, Payongayong, Aidoo & Otsuka (2001), studying western Ghana's cocoa belt, found something counter-intuitive — as tenure individualised to create tree-planting incentives, **women's land rights were *strengthened***, through ***inter vivos* gifts** from husbands and fathers. Barrientos & Bobie (2016) confirm the mechanism: *"Kuapa is encouraging male farmers to gift land to their female spouse"* — and in one of their focus groups **4 of 14 women had been gifted land by their husband**, while in a second community **zero of 19 had**.
+
+> **The honest story:** Ghanaian women *can* acquire cocoa land — by purchase, by matrilineal inheritance, and increasingly by spousal gift. **The barrier is not a legal prohibition.** It is that these routes are **discretionary, uneven, and unenforced**, and the default is still male.
+
+### 2.2 Credit, inputs, and services — the gaps that are real
+
+**Arhin, Kwarteng & Fredua Antoh (2026)**, 532 Ghanaian cocoa farmers — the most recent peer-reviewed evidence:
+
+| | Men | Women | p |
+|---|---|---|---|
+| Secured credit for production | **12.4%** | **6.6%** | 0.016 |
+| Accessed input credit | 21.9% | 14.3% | 0.016 |
+| Benefited from Cocoa Disease & Pest Control Programme | **70.8%** | **56.2%** | 0.001 |
+| Accessed pruning services | 65.0% | 52.7% | 0.003 |
+| **Received agronomic training** | **84.7%** | **84.1%** | **not significant** |
+
+> 🎓 **Note that last row.** **Training reach is now roughly equal in Ghana's cocoa sector.** The gaps are in **credit, inputs and services** — not in whether anyone shows up to teach.
+>
+> That is a meaningful **update** to the older "women never get extension" narrative, and a good lesson in *checking whether the problem you were taught is still the problem.*
+
+**Inputs** (Hiscox & Goldstein, 2014): female cocoa farmers are **25% less likely to use fertilizer**, **20% less likely to use insecticide**, **66% less likely to use herbicide**.
+
+**Banking** (same study): women are **20% less likely to have received a loan** in the past year and **50% less likely to hold a bank account**.
+
+### 2.3 🔥 Cooperative membership requires land title — the load-bearing barrier
+
+This is the mechanism that **structurally caps every gender programme in the sector.**
+
+**Barrientos & Bobie (2016):**
+
+> *"Traditional systems of land tenure mean that men constitute the majority of recognised farmers… they possess **the passbooks required for sale of cocoa to licensed buying companies**… **Where cooperatives are formed, only the recognised farmer/landowner can become a member.**"*
+>
+> *"Women are normally unable to join cooperative societies in their own right unless they own land or are gifted land by their spouse."*
+
+**The Cocoa Barometer 2025 says the same thing nine years later:** *"The absence of legal access to land or land title registration effectively **blocks women from key opportunities** such as achieving financial access or admission into cooperatives"* (Fountain & Huetz-Adams, 2025, p. 127).
+
+**And here is the sector's central self-criticism:**
+
+> *"The way most sustainability programmes so far have approached gender and income is primarily through Village Savings and Loans Associations (VSLAs) and/or alternative income generating activities focused on women. Though these approaches are an important part of the mix, **very little is done to strengthen the position of women as landowners and cocoa farmers themselves**."* (Fountain & Huetz-Adams, 2025, p. 126)
+
+> **The precise diagnosis:** the barrier is **not** the exclusion of women *farmers* from co-ops. Hiscox & Goldstein found **no gender gap in organization membership among *recognised* farmers** (38% men / 39% women).
+>
+> **The barrier is the exclusion of women from *being farmers*.**
+
+### 2.4 The insight that reframes everything
+
+**The Fairtrade Foundation's *Women and Cocoa*** (Skalidou, 2020) makes the strongest analytical point in the entire literature:
+
+> *"Male farmers are able to **intensify** their cocoa farming, and expand and upgrade as farmers, **because they rely on women**… growing food crops and doing the household work, while also undertaking certain cocoa farming tasks."*
+
+And a male sharecropper, quoted in the same study:
+
+> *"if you become a sharecropper **you need a wife to help you**. It's one of the characteristics farm owners look out [for]."*
+
+> ### 🔥 **Cocoa is not a male crop that women help with. Cocoa is a crop that requires an unpaid woman to be viable — and the accounting records only the man.**
+>
+> If one sentence from this brief makes it into the course, make it that one. It is cited, it is defensible, and it is far more powerful than any percentage.
+
+**Where women *do* control income: food crops.** KIT's focus groups: *"Food crops belong to the women while cash crops belong to the men."* Women grow, sell and process cassava, plantain and pepper — and control that money. But it is earmarked for **household expenditure**, while cocoa money is the household's **capital**.
+
+---
+
+## 3. What has actually worked — with the nulls reported honestly
+
+### 3.0 🔥 The headline finding: there is essentially no rigorous evidence base
+
+> **I could not locate a single randomized or quasi-experimental impact evaluation of a gender programme delivered inside the cocoa sector in Ghana or Côte d'Ivoire. Not one.**
+
+Every cocoa-specific gender intervention — Fairtrade's Women's School of Leadership, Cocoa Life's gender action plans, Rainforest Alliance gender modules, women's cocoa cooperatives — is documented through **qualitative assessment, contribution analysis, or corporate reporting**.
+
+The **Cocoa Barometer 2025** — 204 pages by the sector's leading critical watchdog — **cites no impact evaluation of any cocoa gender programme.** It says only:
+
+> *"Gender equality is a topic that gets mentioned regularly. Progress, however, is **frustratingly slow**. It is time, as a sector, that we **stopped talking about it and started acting on it** instead."* (p. 124)
+
+**That absence is itself the finding.** Report it as one.
+
+### 3.1 Land documentation — the best-evidenced lever, and the one cocoa hasn't pulled
+
+| Study | Design | Finding for women |
+|---|---|---|
+| Goldstein, Houngbedji, Kondylis, O'Sullivan & Selod (2018), Benin | **RCT** | Female-headed households **fully offset the gender gap** in fallowing. ⚠️ **But** women shifted labour and fertilizer **away from secure demarcated land onto less secure plots, to protect their claim there.** **Partial titling can push women onto their worst land.** |
+| Ali, Deininger & Goldstein (2014), Rwanda | Pilot IE | Improved land access for legally married women; inheritance recorded **without gender bias**; big rise in soil conservation, *"particularly pronounced for female-headed households."* |
+| MCC Ghana Land Tenure Facilitation | Regression discontinuity | Women **~3× more likely** to have land registered; tenure security **+7.4pp**. **But: no rise in agricultural investment, no credit-taking, no productivity change.** Instead women were **~19% more likely to take off-farm work**, and their **off-farm business profits more than doubled.** |
+
+> **The pattern across all three:** titling reliably raises tenure security and **changes what women do** — but does **not** reliably raise farm productivity or unlock credit. In Ghana it functioned as an **exit ramp out of agriculture**.
+>
+> Good for women's incomes. **Not "closing the gender gap in cocoa."** Say so.
+
+### 3.2 VSLAs — a good financial tool being oversold as an empowerment tool
+
+**Karlan, Savonitto, Thuysbaert & Udry (2017)**, *PNAS* — **pre-registered RCT, 561 village clusters, 15,221 households**, Ghana/Malawi/Uganda, with CARE:
+
+- Women's savings **+34%**; loan access 42% vs 31%; **+4pp** on women's control over household decisions.
+- **But: *"No evidence of impacts on average consumption or other welfare outcomes."***
+
+**The Ghana arm is blunter.** J-PAL's summary of the 175-village Northern Ghana trial: *"VSLAs did **not** lead to improvements in households' financial well-being, livelihoods, **women's empowerment**, or microenterprise outcomes."*
+
+### ⭐ 3.3 What *did* work — the most actionable finding in this brief
+
+**Gupta, Falb, Lehmann et al. (2013)**, IRC — **24 villages in Côte d'Ivoire, 934 partnered women, village-level randomization.** The design pitted **VSLA alone (control)** against **VSLA + 8 "Gender Dialogue Group" sessions *with couples*** (treatment):
+
+| Outcome | Result |
+|---|---|
+| Physical/sexual IPV | null (p = 0.72) |
+| **Economic abuse** | **significantly reduced** (OR 0.39, p < 0.0001) |
+| **Justification of wife-beating** | **significantly reduced** (p = 0.006) |
+| Physical IPV among high-adherence couples | **significantly reduced** (OR 0.45, p = 0.04) |
+
+> **Read the design carefully: the savings group was the *control* arm.**
+> **What moved the needle was adding structured dialogue that included men.**
+>
+> **Programmes that hand women a savings box and stop are, in effect, running the control condition.**
+
+**Sector context** (Cocoa Barometer 2025, p. 124): a study of **660 VSLAs in Ghana with 16,651 members** found women were **~60% of membership but only ~13% of leadership.**
+
+### 3.4 Gender-focused extension — female agents work; the cascade model does not
+
+- **Kondylis, Mueller, Sheriff & Zhu (2016)**, RCT, Mozambique: assigning a **female extension messenger** raised women's awareness **+9pp** and adoption **+5pp**. **Targeting women with female agents works.**
+- **Kondylis, Mueller & Zhu (2017)**, same team: training "contact farmers" raised **their own** adoption substantially, but had *"limited impact on the behavior of other farmers."* **The cascade / lead-farmer / "ambassador" diffusion model failed.**
+
+> ⚠️ **This matters directly**, because **Fairtrade's Women's School of Leadership is built on a cascade model** — train ~50 "ambassadors," who diffuse empowerment onward.
+
+### 3.5 Fairtrade's Women's School of Leadership — read the evaluation, not the press release
+
+Launched by Fairtrade Africa in **2017** in Côte d'Ivoire's Abengourou zone across 7 certified producer organisations.
+
+**Prospective and Cooperation (2022)**, commissioned by Max Havelaar France & Fairtrade Africa. ⚠️ **Despite being titled an "Impact Assessment," it is not a causal impact evaluation** — no control group, no baseline, no quantitative outcome measurement. Côte d'Ivoire Phase 1: **n = 44**.
+
+**What the evaluators themselves conclude:**
+
+- *"the impact of the intervention is **limited** in terms of transforming gender relations"* (p. 31)
+- Women's presence on boards *"remains low"*
+- Income-generating activities are *"not very stable and do not appear to be fully sustainable"*
+- **The killer:** *"If the leadership school aims to improve women's leadership **but does not measure its evolution of it**, it can be said that a certain lack of effectiveness and coherence can be observed."*
+
+> **The programme does not measure the outcome it exists to produce.**
+
+**And the Fairtrade Gender Strategy 2016–2020's own damning baseline:** women were **25%** of Fairtrade farmers and workers, and **"close to zero percent"** of Fairtrade Premium was reinvested in projects focused exclusively on women's needs in small-producer organisations. It even concedes: *"due to its focus on export or 'cash' crops, **Fairtrade may even be unintentionally reinforcing existing gender inequalities**."*
+
+⚠️ **A post-2020 successor strategy: I could not find one. Do not assert one exists.**
+
+### 3.6 Women's cocoa cooperatives — an evidence vacuum
+
+**No counterfactual-based evidence exists** that women's cocoa cooperatives raise women's income, land access, or decision-making power. I searched directly and found only promotional material from buyers and lenders. **This is a genuine gap, not a search failure.**
+
+---
+
+## 4. Women-owned and women-led businesses
+
+| Business | Verdict | Detail |
+|---|---|---|
+| **Mansa Gold** (Ghana) | ✅ **Woman-founded** | **Preba Arkaah.** See file 00 for everything verifiable. |
+| **'57 Chocolate** (Ghana) | ✅ **VERIFIED — women-led** | Founded **2016** by sisters **Kimberly and Priscilla Addison**. Ghana's **first bean-to-bar** company; "'57" = 1957, independence. **~20 employees, ~1,000 bars/week** (Cuisine Noir, 2026). ⚠️ **Nationality precision:** born in the USA to Ghanaian parents, raised across Senegal/Switzerland/North America, moved to Accra ~2016. Say **"Ghanaian-American sisters,"** not "born in Ghana." |
+| **Midunu Chocolates** (Ghana) | ✅ **VERIFIED — women-led** | Founder **Selassie Atadika**, Ghanaian chef and former UN humanitarian worker. **Not** a bean-to-bar factory — an artisanal **truffle** line (2015), grown out of her Accra "nomadic dinners." Truffles named for African women. Named to the **2025 TIME Earth Awards** (Cuisine Noir, n.d.). |
+| **Bean Masters** (Ghana, coffee) | ✅ **VERIFIED — women-led** | **Benedicta Tamakloe**, founded 2018. Sources **exclusively from ~200 women growers**. See file 02 §7. |
+| **Kawa Moka** (Ghana, coffee) | ✅ **VERIFIED — women-led** | **Emi-Beth Aku Quantson.** 600+ people trained across four coffee enclaves. |
+| **fairafric** | ⚠️ **NOT women-led** | Ghana-**producing**, **German-founded and German-owned** — founded 2016 by **Hendrik Reimers**; fairafric AG, Munich; solar-powered factory at Amanase, Suhum; ~300 Ghanaian employees. Frequently miscast as a Ghanaian company. |
+| **Niche Cocoa** (Ghana) | ❌ **NOT women-led** | Founded by **Edmund Poku** (male, ex-Goldman Sachs). A genuinely notable wholly-Ghanaian processor — **but not a women's story.** |
+| **ABOCFA** (Ghana) | ✅ Real — but **~26% women, not women-led** | Aponoapono Biakoye Organic Cocoa Farmers Association, Suhum. Billed as **Ghana's only organic Fairtrade-certified cocoa cooperative.** Buyers: Tony's Chocolonely, Taza, TCHO, Dr. Bronner's. **Sarah Larweh** is treasurer/board member. |
+| **MonChoco** (Côte d'Ivoire) | ✅ Verified | **Dana Mroueh** — organic raw bean-to-bar, Abidjan. |
+| **"Kokoa Kollection"** | ❌ **NO EVIDENCE IT EXISTS. Drop it.** | Three targeted searches found nothing. Likely confusion with **Kokoa Collection** (UK, male founder), **Kokoa Kamili** (Tanzania, two male founders), or **Koa** (Swiss-Ghanaian, male MD). |
+
+> 🎓 **Three women-led Ghanaian chocolate makers — Mansa Gold, '57 Chocolate, Midunu — is not an anecdote. It is a cohort, and it is a BVC episode.** Add Bean Masters and Kawa Moka in coffee and you have five.
+
+---
+
+## 5. 🔥 Kuapa Kokoo and Divine Chocolate — the story most people get wrong
+
+### 5.1 Kuapa Kokoo
+
+- **Founded 1993** with **2,000 farmers in 22 villages**, with support from Twin Trading, SNV and Christian Aid.
+- **2024: "over 100,000 farmers,"** 57 co-operative societies.
+- It is the **only Fairtrade-certified cooperative in Ghana licensed to buy cocoa on behalf of COCOBOD.**
+
+**Women's share of membership: use 32%.**
+
+> Barrientos & Bobie (2016): *"Women increased from **26% of the coop's membership in 1996 to 32% in 2013**."*
+>
+> **Twenty years of dedicated gender programming moved membership by six points.** That is the honest measure of what cooperative-based gender programming achieves **when membership requires being the recognised landholder** (§2.3).
+
+⚠️ **A "nearly half are women" claim circulates on a Fairtrade Canada page. It contradicts the academic source and could not be verified. Do not use it.**
+
+### 5.2 Divine Chocolate — **the ownership changed in 2020**
+
+**Correction to a premise almost everyone still carries:** Divine is **no longer 44% farmer-owned.**
+
+| Year | Structure |
+|---|---|
+| 1998 | Founded as **The Day Chocolate Company** — Kuapa Kokoo, Twin Trading and The Body Shop. Kuapa: **33%**. |
+| ~2007 | The Body Shop **donated** its shares to Kuapa → **Kuapa 45%**. |
+| 2015 | After the UK–US merger: **Kuapa 44%**. |
+| **June 2020** | **Ludwig Weinrich GmbH & Co. KG (a German manufacturer) acquired 80% of Divine Chocolate Ltd. Kuapa Kokoo fell from ~44–45% to 20%.** Weinrich had manufactured Divine's chocolate since 1998. CEO Sophi Tranchell departed after 21 years. |
+| April 2024 | Divine is *"ultimately controlled by German confectionery group Ludwig Weinrich"* (The Grocer, 2024). **Weinrich ~80% / Kuapa ~20%.** |
+
+### 🎓 A ninety-second, student-verifiable media-literacy exercise
+
+**Divine's own "Our Story" page (fetched July 2026) still tells the 45% story and never mentions the 20%.** It says *"Kuapa initially owns 33% of the shares"* and *"This donation gave the farmers' cooperative an even bigger stake: 45% of the company"* — **and stops.** No Weinrich. No 20%.
+
+**The flagship origin page has presented an out-of-date shareholding for six years.**
+
+> **Have students read the marketing page, then find the ownership.** Ninety seconds. They will never read a brand story the same way again.
+
+⚠️ **And an honest negative finding:** I found **no published, argued critique** of the 2020 sale as undermining the farmer-ownership story. Every trade piece carried company statements only. **The event that most directly complicates Divine's central marketing claim passed with essentially no published criticism.** That absence is itself teachable.
+
+### 5.3 Does Fairtrade actually reach the Ghanaian cocoa farmer?
+
+**Nelson, Opoku, Martin, Bugri & Posthumus (2013)** — Natural Resources Institute with KNUST, **DFID-funded, four years, insider access to Kuapa Kokoo**:
+
+> *"There was **no significant difference in household income** between non certified and certified farmers… **There is no evidence of positive income impacts attributable to Fairtrade**."*
+>
+> *"the Fairtrade Minimum Price was **below the Cocobod price** and had been for some time."*
+>
+> Over ~15 years only **~7% of Kuapa's cocoa was sold on Fairtrade terms** — a premium worth **US$6.50–8.30 per member per year.**
+>
+> **On gender specifically:** *"**There has been no marked change in gender relations**… although women's representation has increased."*
+
+**Donovan, Stoian, Foundjem & Degrande (2016)** — 322 members of four Fairtrade Ghanaian co-ops, **commissioned by Fairtrade Africa**: women were **37% of members but only 20% of board directors and 17% of general-assembly attendees.** Average premium per member, 2013–14: **US$36.**
+
+### ⭐ The structural explanation for all of it
+
+**Ghana's farmgate price is fixed by COCOBOD's Producer Price Review Committee. Fairtrade's Minimum Price applies at the point of export (FOB).**
+
+Fairtrade International concedes this in its own **April 2026** FAQ: *"In regulated markets where internal farmgate prices are set by the local government authorities, Fairtrade calculates a Living Income Reference Price **differential**."*
+
+> **In one sentence: Fairtrade's price floor operates at the export dock. The farmer is paid at the farm gate, by a state-fixed price.**
+>
+> **Fairtrade cannot set what the Ghanaian farmer receives.** That is not a scandal — it is a structure. And it explains why two decades of certification produced a premium worth tens of dollars a year.
+
+### 5.4 🎓 The best assignment in this entire brief
+
+**Doherty (2018)** concludes the Divine/Kuapa partnership *"has made a positive contribution to reducing inequality, empowering women cocoa farmers and improving their rights."*
+
+**Nelson et al. (2013)** and **Barrientos & Bobie (2016)**, doing independent fieldwork, found the opposite on **material** outcomes.
+
+**Doherty has published on Divine for two decades and has co-authored with Divine's own CEO.**
+
+> **Same subject. Opposite conclusions. Different funders and different access.**
+>
+> **Give students both papers and ask them how they would decide.** That is the lesson — not the answer.
+
+---
+
+## What I could not verify
+
+- **Any impact evaluation of a gender programme inside the cocoa sector.** None exists. **(§3.0 — the most important gap here.)**
+- **Any counterfactual-based evidence** that women's cocoa cooperatives raise income, land access or decision-making power.
+- **A post-2020 Fairtrade Gender Strategy.**
+- **The "45% of cocoa labour"** figure at origin — the Dalberg document is **unpublished**.
+- **The "2% of cocoa land"** figure — **the study it is attributed to says the opposite.**
+- Fairtrade's flagship gender evidence study (CIFOR/Gallagher, 2020) states its own comparators *"do not represent true counterfactuals"* — and its six case studies are **all coffee, in Guatemala, Indonesia and Kenya. Zero cocoa. Zero West Africa.**
+- Widely circulated Ghanaian extension figures ("only 15–30% of women farmers reached"; "9.5% of women vs 34.4% of men") are **weakly sourced.** The peer-reviewed number is **1.61 extension visits for men vs 0.82 for women** (Danso-Abbeam et al., 2020).
+
+---
+
+## References
+
+Ali, D. A., Deininger, K., & Goldstein, M. (2014). Environmental and gender impacts of land tenure regularization in Africa: Pilot evidence from Rwanda. *Journal of Development Economics*, 110, 262–275.
+
+Arhin, I., Kwarteng, A., & Fredua Antoh, E. (2026). Gender disparities in access to productive resources among cocoa farmers in Ghana. *Journal of Sustainable Development*, 19(2), 71.
+
+Barrientos, S., & Bobie, A. O. (2016). *Promoting gender equality in the cocoa-chocolate value chain: Opportunities and challenges in Ghana* (GDI Working Paper 2016-006). University of Manchester.
+
+Bymolt, R., Laven, A., & Tyszler, M. (2018). *Demystifying the cocoa sector in Ghana and Côte d'Ivoire*. KIT Royal Tropical Institute. https://www.kit.nl/project/demystifying-cocoa-sector/
+
+Cuisine Noir. (n.d.). *Selassie Atadika shifts the story of chocolate from Ghana*. https://www.cuisinenoir.com/selassie-atadika-story-of-chocolate-from-ghana/
+
+Cuisine Noir. (2026, April). *Sisters raise the bar with '57 Chocolate's pan-African vision*. https://www.cuisinenoir.com/owners-of-57-chocolates-pan-african-vision/
+
+Danso-Abbeam, G., Baiyegunhi, L. J. S., & Ojo, T. O. (2020). Gender differentials in technical efficiency of Ghanaian cocoa farms. *Heliyon*, 6(5), e04012.
+
+Doherty, B. (2018). Gender equality and women's empowerment through fair trade social enterprise: Case of Divine Chocolate and Kuapa Kokoo. Emerald.
+
+Donovan, J., Stoian, D., Foundjem, D., & Degrande, A. (2016). *Assessing Fairtrade's impact in Ghanaian cocoa cooperatives*. Commissioned by Fairtrade Africa.
+
+Fairtrade Foundation. (2020). *Women and cocoa* (Skalidou, D.).
+
+Fairtrade International. (2016). *Fairtrade gender strategy 2016–2020*. https://www.fairtrade.net/
+
+Food and Agriculture Organization of the United Nations. (2023). *The status of women in agrifood systems*. https://www.fao.org/documents/card/en/c/cc5343en
+
+Food and Agriculture Organization of the United Nations & ECOWAS. (2018). *Country gender assessment: Ghana*.
+
+Fountain, A. C., & Huetz-Adams, F. (2025). *Cocoa Barometer 2025*. VOICE Network. https://voicenetwork.cc/cocoa-barometer/
+
+Ghana Statistical Service. (2020). *Ghana census of agriculture 2017/18* [Table 9.1, p. 145].
+
+Goldstein, M., Houngbedji, K., Kondylis, F., O'Sullivan, M., & Selod, H. (2018). Formalization without certification? Experimental evidence on property rights and investment. *Journal of Development Economics*, 132, 57–74.
+
+Gupta, J., Falb, K. L., Lehmann, H., Kpebo, D., Xuan, Z., Hossain, M., Zimmerman, C., Watts, C., & Annan, J. (2013). Gender norms and economic empowerment intervention to reduce intimate partner violence against women in rural Côte d'Ivoire: A randomized controlled pilot study. *BMC International Health and Human Rights*, 13, 46.
+
+Hiscox, M. J., & Goldstein, R. (2014). *Gender inequality in the Ghanaian cocoa sector*. Harvard University.
+
+Karlan, D., Savonitto, B., Thuysbaert, B., & Udry, C. (2017). Impact of savings groups on the lives of the poor. *PNAS*, 114(12), 3079–3084.
+
+Kondylis, F., Mueller, V., Sheriff, G., & Zhu, S. (2016). Do female instructors reduce gender bias in diffusion of sustainable land management techniques? Experimental evidence from Mozambique. *World Development*, 78, 436–449.
+
+Kondylis, F., Mueller, V., & Zhu, J. (2017). Seeing is believing? Evidence from an extension network experiment. *Journal of Development Economics*, 125, 1–20.
+
+Nelson, V., Opoku, K., Martin, A., Bugri, J., & Posthumus, H. (2013). *Assessing the poverty impact of sustainability standards: Fairtrade in Ghanaian cocoa*. Natural Resources Institute, University of Greenwich (DFID-funded).
+
+Oxfam. (2020). *Women's rights in the cocoa sector in Ghana* (Dery, I., & Dongzagla, A.).
+
+Prospective and Cooperation. (2022). *Impact assessment of the Fairtrade Africa Women School of Leadership — Phases 1 and 2*. Commissioned by Max Havelaar France & Fairtrade Africa.
+
+Quisumbing, A. R., Payongayong, E., Aidoo, J. B., & Otsuka, K. (2001). Women's land rights in the transition to individualized ownership: Implications for tree-resource management in western Ghana. *Economic Development and Cultural Change*, 50(1), 157–182.
+
+The Grocer. (2024, April). *Divine Chocolate financial results*.
+
+Vigneri, M., & Holmes, R. (2009). *When being more productive still doesn't pay: Gender inequality and socio-economic constraints in Ghana's cocoa sector*. Overseas Development Institute.`,
+    provenance: "plans/future-courses/mansa-gold/03-women-in-cocoa-and-coffee.md",
+  },
+  {
+    key: "sports-courses-chess",
+    title: "chess",
+    group: "Sports Courses",
+    summary: "how to play chess, strategy, history, rules, leagues, opportunities for amateurs, entrepreneurs",
+    body: `how to play chess, strategy, history, rules, leagues, opportunities for amateurs, entrepreneurs`,
+    provenance: "plans/future-courses/sports-courses/chess.md",
+  },
+];

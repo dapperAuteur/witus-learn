@@ -122,6 +122,35 @@ function main() {
     out2 += `  {\n    key: ${JSON.stringify(key)},\n    title: ${JSON.stringify(title)},\n    summary: ${JSON.stringify(summarize(body))},\n    body: \`${lit(body)}\`,\n    provenance: ${JSON.stringify(`plans/future-courses/${f}`)},\n  },\n`;
   }
   out2 += `];\n`;
+
+  // ── Subdirectory bundles (auto-discovered) ───────────────────────────────────────────────────
+  // A subdir of `plans/future-courses/` is a multi-file bundle (e.g. mansa-gold/ = an interview-prep
+  // doc + its background research). Every `.md` in it becomes one item, grouped by the subdir. Same
+  // deal as the top-level files: drop a folder in, re-run, it appears — no code change. (she-did-the-
+  // work has its own richer block above, so it's skipped here.) `*-FULL.md` is skipped by convention:
+  // it's a concatenation of the sibling files for PDF export, and including it would duplicate them.
+  const subdirs = readdirSync(dir, { withFileTypes: true })
+    .filter((e) => e.isDirectory() && e.name !== "she-did-the-work" && e.name !== "completed")
+    .map((e) => e.name)
+    .sort();
+
+  out2 += `\nexport interface SubdirDoc extends ProposalDoc {\n  /** The subdir it came from — used as the /admin/future group. */\n  group: string;\n}\n\n`;
+  out2 += `export const SUBDIR_DOCS: SubdirDoc[] = [\n`;
+  for (const sub of subdirs) {
+    const files = readdirSync(join(dir, sub))
+      .filter((f) => f.endsWith(".md") && !f.endsWith("-FULL.md"))
+      .sort();
+    for (const f of files) {
+      const body = readFileSync(join(dir, sub, f), "utf8").trim();
+      if (!body) continue;
+      const key = `${sub}-${f.replace(/\.md$/, "").replace(/^\d+-/, "")}`;
+      const h1 = body.match(/^#\s+(.+)$/m)?.[1]?.trim();
+      const title = h1 ?? f.replace(/\.md$/, "").replace(/^\d+-/, "").replace(/-/g, " ");
+      const group = sub.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+      out2 += `  {\n    key: ${JSON.stringify(key)},\n    title: ${JSON.stringify(title)},\n    group: ${JSON.stringify(group)},\n    summary: ${JSON.stringify(summarize(body))},\n    body: \`${lit(body)}\`,\n    provenance: ${JSON.stringify(`plans/future-courses/${sub}/${f}`)},\n  },\n`;
+    }
+  }
+  out2 += `];\n`;
   writeFileSync(join(OUT_DIR, "proposals.ts"), out2);
 
   console.log(`Wrote src/lib/future-work-content/she-did-the-work.ts (${subjects.length} subjects) + proposals.ts`);

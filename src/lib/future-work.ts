@@ -12,7 +12,7 @@
 // BAM reviews these at /admin/future and leaves notes per item; the notes go to the
 // `future_work_notes` table and are readable from the CLI with `pnpm future:list`.
 
-import { PROPOSAL_DOCS } from "@/lib/future-work-content/proposals";
+import { PROPOSAL_DOCS, SUBDIR_DOCS } from "@/lib/future-work-content/proposals";
 import { SHE_DID_THE_WORK_PROPOSAL, SHE_DID_THE_WORK_SUBJECTS } from "@/lib/future-work-content/she-did-the-work";
 
 export type FutureWorkKind = "course" | "feature";
@@ -138,6 +138,20 @@ export const FUTURE_WORK: FutureWorkItem[] = [
       provenance: p.provenance,
     };
   }),
+  // Subdirectory bundles (mansa-gold/, …) — multi-file research packs. `feature`, not course
+  // proposals: they're reference material you read, grouped by their folder. Auto-discovered.
+  ...SUBDIR_DOCS.map(
+    (d): FutureWorkItem => ({
+      key: d.key,
+      title: d.title,
+      kind: "feature",
+      status: "researching",
+      group: d.group,
+      summary: d.summary,
+      body: d.body,
+      provenance: d.provenance,
+    }),
+  ),
 ];
 
 export function getFutureWorkItem(key: string): FutureWorkItem | undefined {
