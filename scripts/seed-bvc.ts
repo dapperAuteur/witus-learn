@@ -35,19 +35,31 @@ async function ensureInstructor(
   username: string,
   displayName: string,
   tenantId: string,
-) {
-  await db
-    .insert(schema.users)
-    .values({ id, email, emailVerified: true, name: displayName })
-    .onConflictDoNothing();
+): Promise<string> {
+  // Match by email first: if the real account already owns it (BAM has logged in), inserting
+  // the synthetic id would no-op on the unique email and the profile/membership FKs would
+  // then point at a user row that doesn't exist.
+  const existing = await db
+    .select({ id: schema.users.id })
+    .from(schema.users)
+    .where(eq(schema.users.email, email))
+    .limit(1);
+  const userId = existing[0]?.id ?? id;
+  if (!existing[0]) {
+    await db
+      .insert(schema.users)
+      .values({ id, email, emailVerified: true, name: displayName })
+      .onConflictDoNothing();
+  }
   await db
     .insert(schema.userProfiles)
-    .values({ userId: id, username, displayName })
+    .values({ userId, username, displayName })
     .onConflictDoNothing();
   await db
     .insert(schema.tenantMemberships)
-    .values({ tenantId, userId: id, role: "instructor" })
+    .values({ tenantId, userId, role: "instructor" })
     .onConflictDoNothing();
+  return userId;
 }
 
 async function ensureCategory(tenantId: string, name: string, sortOrder: number) {
@@ -82,11 +94,13 @@ async function main() {
   }
 
   // ── BVC ──
-  await ensureInstructor("seed-bvc-instructor", "faculty@bettervice.club", "bvc-faculty", "BVC Faculty", bvc);
+  // BAM instructs every course (the synthetic bvc-faculty byline put these under
+  // /bvc-faculty/ and regressed reassign:instructor on every re-seed).
+  const bvcInstructor = await ensureInstructor("bam", "bam@awews.com", "bam", "BAM", bvc);
   await ensureCategory(bvc, "Daily Rituals", 1);
   await ensureCategory(bvc, "The Forbidden Leaf", 3);
   console.log("BVC courses:");
-  await ensureCourse(bvc, "seed-bvc-instructor", {
+  await ensureCourse(bvc, bvcInstructor, {
     title: "Coffee",
     slug: "coffee",
     description:
@@ -100,7 +114,7 @@ async function main() {
     isFeatured: true,
     featuredOrder: 1,
   });
-  await ensureCourse(bvc, "seed-bvc-instructor", {
+  await ensureCourse(bvc, bvcInstructor, {
     title: "Tea",
     slug: "tea",
     description:
@@ -112,7 +126,7 @@ async function main() {
     isPublished: true,
     publishedAt: new Date(),
   });
-  await ensureCourse(bvc, "seed-bvc-instructor", {
+  await ensureCourse(bvc, bvcInstructor, {
     title: "Cannabis",
     slug: "cannabis",
     description:
@@ -129,10 +143,10 @@ async function main() {
   });
 
   // ── Acme (isolation tenant) ──
-  await ensureInstructor("seed-acme-instructor", "faculty@acme.test", "acme-faculty", "Acme Faculty", acme);
+  const acmeInstructor = await ensureInstructor("seed-acme-instructor", "faculty@acme.test", "acme-faculty", "Acme Faculty", acme);
   await ensureCategory(acme, "General", 1);
   console.log("Acme courses:");
-  await ensureCourse(acme, "seed-acme-instructor", {
+  await ensureCourse(acme, acmeInstructor, {
     title: "Introduction to Acme",
     slug: "intro",
     description: "A dummy Acme course. It must never appear on the BVC domain.",

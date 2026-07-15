@@ -103,6 +103,7 @@ import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
 import { LABOR_MEXICO_COURSE } from "./data/labor-mexico-course";
 import { LABOR_NORDICS_COURSE } from "./data/labor-nordics-course";
 import { LABOR_POLAND_COURSE } from "./data/labor-poland-course";
+import { AFRICA_BEFORE_COLONIZATION_COURSE } from "./data/africa-before-colonization-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
@@ -117,6 +118,7 @@ import { STUDYING_ABROAD_COURSE } from "./data/studying-abroad-course";
 import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 import { LACROSSE_COURSE } from "./data/lacrosse-course";
 import { TENNIS_COURSE } from "./data/tennis-course";
+import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -698,6 +700,21 @@ async function main() {
     // adjudicates neither. Teaches the "junk contracts" (umowy śmieciowe) rhyme with US
     // misclassification + Mexican protection contracts. 6 sections · no migration · seed:courses.
     { slug: "labor-poland", course: LABOR_POLAND_COURSE, category: "Culture & History" },
+    // Africa Before Colonization — the ANCHOR of the precolonial-Africa track
+    // (plans/future-courses/africa-precolonial-track-proposal.md; from BAM's world.md queue).
+    // Opens with the verified Hegel (1837) and Trevor-Roper (1965) "no history" quotes as the
+    // artifact, then the documented record: Kush/25th Dynasty, Aksum (coins, Ezana, Ge'ez),
+    // Ghana→Mali→Songhai + Timbuktu (Mansa Musa taught as a SOURCE AUDIT — al-Umari via
+    // Levtzion & Hopkins; "richest ever" refused; the Cairo "crash" contested per Schultz 2006),
+    // Great Zimbabwe WITH Rhodesia's documented 1970 censorship, the Swahili coast, Benin +
+    // the 1897 looting (hedged counts), Ethiopia (Lalibela; Adwa 1896 + the 1936-41 asterisk).
+    // African participation in slavery and the slave trades is taught plainly (Thornton,
+    // Lovejoy, Northrup, SlaveVoyages), and the romance trap is taught as equal to erasure.
+    // Ends with the "how we know" methods section (archaeology, the Arabic corpus in scholarly
+    // translation, Vansina's oral-tradition rules, linguistics) and an anti-flattening exercise.
+    // 7 sections · 16 teaching lessons · 7 quizzes (15-16-question banks) · 1 exercise.
+    // Mansa Gold research cross-linked at /admin/future. NO migration — pnpm seed:courses.
+    { slug: "africa-before-colonization", course: AFRICA_BEFORE_COLONIZATION_COURSE, category: "Culture & History" },
     // Golf — the first of the sports courses. Six sections: how to play, the Rules (cited to
     // the 2023 code), strategy + the World Handicap System, history (incl. the documented
     // record of racial and gender exclusion — students read the January 1962 *Golfdom* trade
@@ -707,6 +724,24 @@ async function main() {
     // sports-courses/golf.md (brief).
     { slug: "golf-play-know-work", course: GOLF_COURSE, category: "Sports" },
     { slug: "football", course: FOOTBALL_COURSE, category: "Sports" },
+    // Afrocentricity: How to Evaluate a Contested Paradigm (Culture & History) — the ANCHOR of a
+    // proposed Afrocentricity track (plans/future-courses/afrocentricity-track-proposal.md). For high
+    // school students. Teaches Afrocentricity (Asante's paradigm; roots in Diop) AS ITS PROPONENTS
+    // DEFINE IT, presents its strongest claims from their own books, AND the substantive academic
+    // criticism from the critics' own books — WITHOUT the course taking a side. The real deliverable
+    // is the transferable skill: how to evaluate a contested paradigm. Two live debates are taught
+    // with NO WINNER DECLARED and both sides cited from primary sources: the Kemet / "was ancient
+    // Egypt Black?" question (Diop vs. mainstream Egyptology, with the 2017 aDNA evidence dated and
+    // its limits stated) and the Black Athena exchange (Bernal vs. Lefkowitz). Stolen Legacy (James)
+    // is taught as academically rejected on specifics (the Library of Alexandria postdates Aristotle)
+    // WITHOUT erasing the documented Egypt→Greece influence. Rigorous scholarship is distinguished
+    // from pop-Afrocentric myth (the melanin pseudoscience of Welsing/Jeffries) — a line Afrocentrism's
+    // own critics draw, so it is not a partisan move. Every contested claim is attributed to who makes
+    // it; the course's own voice asserts only what is settled. No invented citations or quotes. 6
+    // sections · 15 teaching lessons · 6 quizzes (15-question banks, above the 10-question attempt cap
+    // so retries rotate). No migration — pnpm seed:courses. Natural home for BAM's source note
+    // plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md.
+    { slug: "afrocentricity", course: AFROCENTRICITY_COURSE, category: "Culture & History" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,

@@ -1,0 +1,913 @@
+// ─────────────────────────────────────────────────────────────────────────────
+// COURSE CLAIMS — the course-side half of the standards map, analyzed ONCE.
+//
+// Each entry states one thing the catalog genuinely teaches, with the lessons as evidence.
+// Jurisdiction files (data/<state>.ts) map their codes onto these ids; they never restate
+// course evidence. That is what makes state #3 through #51 cheap: mapping Arizona is reading
+// ARIZONA'S documents, not re-reading the catalog.
+//
+// Rules (same spirit as index.ts):
+//   · A claim was verified against ACTUAL lesson content (content/bvc/*.csv and
+//     scripts/data/*-course.ts), not lesson titles. A title is not evidence.
+//   · Course slugs must match their seed registration exactly (the test suite guards this).
+//   · Keep claims small and specific. A state standard that is only partly backed should say
+//     so in ITS coverage/note — never widen a claim to make a standard look fuller.
+// ─────────────────────────────────────────────────────────────────────────────
+
+import type { CourseClaim } from "./types";
+
+export const COURSE_CLAIMS: CourseClaim[] = [
+  // ══ BVC Commodity Map curriculum ════════════════════════════════════════════
+  {
+    id: "bvc.value-chain-earnings",
+    claim: "Traces who is paid what along commodity value chains, and names the smile-curve pattern.",
+    courseSlugs: ["coffee", "tea", "chocolate", "tequila-mezcal", "the-toast", "full-spectrum"],
+    lessons: [
+      "Ep 1 · Follow the Money: Bean to Cup",
+      "Ep 2 · Who Gets Paid, Tea and Coffee Compared",
+      "Ep 3 · The Commodity Trap",
+      "Ep 12 · The Jimador's Share",
+      "Ep 14 · Pattern 3: Labor Captures the Smallest Share (the smile curve)",
+      "Ep 21 · The Smile Curve, Confirmed",
+    ],
+  },
+  {
+    id: "bvc.sugar-program-trade-barriers",
+    claim: "Works the U.S. sugar program: import quotas, price supports, tariffs, and their cost.",
+    courseSlugs: ["sugar"],
+    lessons: ["Ep 4 · The Hidden Costs of Cheap Sugar"],
+  },
+  {
+    id: "bvc.traditional-vs-market-economies",
+    claim: "Contrasts traditional (reciprocity) and market economies directly and at length.",
+    courseSlugs: ["forest-wisdom", "kava", "synthesis"],
+    lessons: [
+      "Ep 5 · The Reciprocity Economy",
+      "Ep 6 · Ceremony Meets the Market",
+      "Ep 7 · Two Ways of Doing Economics",
+    ],
+  },
+  {
+    id: "bvc.price-elasticity-demand",
+    claim: "Teaches price elasticity of demand explicitly (inelastic coffee demand under a price spike).",
+    courseSlugs: ["coffee", "sugar"],
+    lessons: [
+      "Ep 1 · Price Shocks and Why You Keep Buying",
+      "Ep 4 · From Luxury to the Cheapest Calorie",
+    ],
+  },
+  {
+    id: "bvc.growing-belts-resource-maps",
+    claim: "Maps where commodities grow and why, and how that distribution drives trade.",
+    courseSlugs: ["coffee", "tea", "chocolate", "sugar", "forest-wisdom", "kava"],
+    lessons: [
+      "The Commodity Map itself — every episode pinned at its origin",
+      "The Growing Belts map — production regions by latitude band and country",
+      "Ep 1 · The Coffee Belt: Where Coffee Grows and Why",
+      "Ep 3 · The Cacao Tree and the Narrowest Belt",
+      "Ep 6 · Why Volcanic Soil Only",
+    ],
+  },
+  {
+    id: "bvc.agricultural-hearths",
+    claim: "Teaches agricultural hearths and the exchange of crops among regions.",
+    courseSlugs: ["coffee", "tea", "chocolate", "sugar"],
+    lessons: [
+      "Ep 1 · The Coffee Belt: Where Coffee Grows and Why",
+      "Ep 2 · The Tea Plant and Its Climate Zones",
+      "Ep 3 · The Big Producers and the Cacao Varieties",
+      "Ep 4 · From New Guinea to the New World",
+    ],
+  },
+  {
+    id: "bvc.climate-change-forecasts",
+    claim: "Analyzes published climate-change forecasts and their implications for growers.",
+    courseSlugs: ["coffee", "chocolate", "kava", "beer"],
+    lessons: [
+      "Ep 1 · Climate Change Is Redrawing the Map",
+      "Ep 3 · A Two-Degree Threat",
+      "Ep 6 · Islands Under Pressure",
+      "Ep 8 · Beer Geography Is Shifting",
+    ],
+  },
+  {
+    id: "bvc.colonialism-persists-today",
+    claim: "Shows how colonialism and imperialism persist and evolve in the present.",
+    courseSlugs: ["chocolate", "forest-wisdom", "synthesis", "rum"],
+    lessons: [
+      "Ep 3 · Conquest and the Great Reversal",
+      "Ep 5 · How Coca-Cola Got Its Name (biopiracy)",
+      "Ep 7 · The Same Story, Six Times",
+      "Ep 11 · The Debt of Freedom (the 1825 French indemnity and Haiti's modern poverty)",
+    ],
+  },
+  {
+    id: "bvc.scott-county-epidemic",
+    claim: "Works one epidemic in depth: the 2015 Scott County, Indiana HIV outbreak and harm reduction.",
+    courseSlugs: ["opioids"],
+    lessons: ["Ep 17 · The Scott County Lesson", "Ep 17 · Treatment Versus Punishment"],
+  },
+  {
+    id: "bvc.coffee-project-mapping",
+    claim: "Has the student prepare maps and data tables (the Coffee episode's graded project).",
+    courseSlugs: ["coffee"],
+    lessons: [
+      "Ep 1 · Assignment, Option A — map the supply chain of 3 items from your morning routine",
+      "Ep 1 · Assignment, Option B — Coffee Belt climate report, with maps and data tables",
+    ],
+  },
+  {
+    id: "bvc.commodity-trap",
+    claim: "Explains the economic processes keeping commodity producers poor while value accrues downstream.",
+    courseSlugs: ["chocolate", "synthesis", "full-spectrum"],
+    lessons: [
+      "Ep 3 · The Commodity Trap",
+      "Ep 7 · Who Captures the Value",
+      "Ep 21 · The Smile Curve, Confirmed",
+    ],
+  },
+  {
+    id: "bvc.conquest-columbian-exchange",
+    claim: "Teaches the consequences of conquest and colonization: the transatlantic slave trade, the Columbian Exchange, effects on native populations.",
+    courseSlugs: ["chocolate", "sugar", "rum", "tequila-mezcal", "tobacco"],
+    lessons: [
+      "Ep 3 · Conquest and the Great Reversal",
+      "Ep 4 · The Triangular Trade and the Middle Passage",
+      "Ep 11 · The Triangular Trade",
+      "Ep 12 · Burning the Books (the destruction of the Mesoamerican codices)",
+      "Ep 15 · From Sacred to Commodity",
+    ],
+  },
+  {
+    id: "bvc.imperialism-africa-asia-oceania",
+    claim: "Analyzes European imperialism upon indigenous peoples in Africa, Asia, and Oceania.",
+    courseSlugs: ["tea", "forest-wisdom", "kava", "opioids", "khat"],
+    lessons: [
+      "Ep 2 · Who Grows the Tea (colonial and plantation labour)",
+      "Ep 5 · Whose Knowledge Is It",
+      "Ep 6 · Kava Governs",
+      "Ep 17 · The Opium Wars",
+      "Ep 20 · The Ban Against the Evidence",
+    ],
+  },
+  {
+    id: "bvc.tea-trade-networks",
+    claim: "Maps and analyzes the Tea Horse Road and the Maritime Silk Road through one commodity.",
+    courseSlugs: ["tea"],
+    lessons: ["Ep 2 · The Roads Tea Traveled"],
+  },
+  {
+    id: "bvc.beer-first-cities",
+    claim: "Makes the grain-to-cities argument for the transition to civilization, via the Code of Hammurabi.",
+    courseSlugs: ["beer"],
+    lessons: ["Ep 8 · Liquid Bread and the First Cities (the Code of Hammurabi, c. 1754 BCE, legislates beer)"],
+  },
+  {
+    id: "bvc.wine-power-sacred",
+    claim: "Teaches wine's role in early complex societies, power, and ritual.",
+    courseSlugs: ["wine"],
+    lessons: ["Ep 9 · Wine, Power, and the Sacred"],
+  },
+  {
+    id: "bvc.prohibition",
+    claim: "Teaches Prohibition: its causes, its rhetoric, and its results.",
+    courseSlugs: ["beer"],
+    lessons: [
+      "Ep 8 · Prohibition, the Experiment That Failed",
+      "Ep 8 · Selling Prohibition (the rhetoric that drove the movement)",
+    ],
+  },
+  {
+    id: "bvc.reading-ads-for-omission",
+    claim: "Teaches reading media for bias via inclusion/exclusion of information and source reliability.",
+    courseSlugs: ["coffee", "tea", "chocolate", "sugar", "rum", "tobacco"],
+    lessons: [
+      "Ep 1 · Reading a Coffee Ad",
+      "Ep 2 · Reading a Tea Ad",
+      "Ep 3 · Reading a Chocolate Ad",
+      "Ep 4 · Whose Voice Tells the Story (reading a text for what it leaves out)",
+      "Ep 11 · Tiki and the Tropical Paradise",
+      "Ep 15 · The Language of Doubt",
+    ],
+  },
+  {
+    id: "bvc.author-rhetoric-primary-texts",
+    claim: "Analyzes author perspective and rhetoric in effective primary texts.",
+    courseSlugs: ["sugar", "beer", "tobacco", "opioids"],
+    lessons: [
+      "Ep 4 · Blood-Sweetened Luxury (the abolitionist sugar boycott)",
+      "Ep 8 · Selling Prohibition",
+      "Ep 15 · Torches of Freedom",
+      "Ep 17 · Lin Zexu's Letter (using Britain's own values against its opium policy)",
+    ],
+  },
+  {
+    id: "bvc.evaluate-claims-fallacies",
+    claim: "Evaluates arguments and evidence, identifying false statements and fallacious reasoning.",
+    courseSlugs: ["tobacco", "psychedelics", "khat"],
+    lessons: [
+      "Ep 15 · Doubt Is Our Product",
+      "Ep 19 · Peer Review Versus Press Release",
+      "Ep 20 · The Ban Against the Evidence (the UK banning khat against its own scientific advice)",
+    ],
+  },
+  {
+    id: "bvc.reefer-madness-language-of-fear",
+    claim: "Analyzes fear-based rhetoric and fallacies in drug-policy media.",
+    courseSlugs: ["cannabis"],
+    lessons: ["Ep 16 · Reefer Madness and the Language of Fear"],
+  },
+  {
+    id: "bvc.source-evaluation-modelled",
+    claim: "Models multi-source evaluation constantly and publishes a checkable bibliography.",
+    courseSlugs: ["psychedelics", "coffee"],
+    lessons: [
+      "Ep 19 · Peer Review Versus Press Release",
+      "Every course's Sources bibliography, with per-claim verification",
+    ],
+  },
+  {
+    id: "bvc.media-fallacies-recurring",
+    claim: "Runs a media-literacy lesson in every episode: ads, labels, and campaign language.",
+    courseSlugs: ["coffee", "chocolate", "beer", "tobacco", "cannabis", "coca"],
+    lessons: [
+      "Ep 1 · Reading a Coffee Ad",
+      "Ep 3 · Reading a Chocolate Ad",
+      "Ep 8 · Reading a Craft Beer Label",
+      "Ep 15 · Torches of Freedom",
+      "Ep 16 · Reefer Madness and the Language of Fear",
+      "Ep 18 · Just Say No",
+    ],
+  },
+  {
+    id: "bvc.nearest-green-oral-history",
+    claim: "Teaches oral history as a scholarly method for resolving discrepancies among sources.",
+    courseSlugs: ["whiskey"],
+    lessons: ["Ep 10 · The Oral History That Survived (recovering Nathan “Nearest” Green's erased role)"],
+  },
+  {
+    id: "bvc.whose-voice-differing-accounts",
+    claim: "Puts authors' differing accounts of the same events side by side and assesses their evidence.",
+    courseSlugs: ["sugar", "chocolate", "forest-wisdom", "coca"],
+    lessons: [
+      "Ep 4 · Whose Voice Tells the Story — Beckford (1790) against Equiano (1789) and Mary Prince (1831) on the same plantation world",
+      "Ep 3 · Two Ways of Seeing a Bean",
+      "Ep 5 · Two Ways of Knowing",
+      "Ep 18 · Whose Voice",
+    ],
+  },
+  {
+    id: "bvc.whose-voice-absence",
+    claim: "Teaches reading a text for what it leaves out, against first-person accounts.",
+    courseSlugs: ["sugar"],
+    lessons: ["Ep 4 · Whose Voice Tells the Story"],
+  },
+  {
+    id: "bvc.rhetoric-power-persuasion",
+    claim: "Analyzes how style and content make particular texts persuasive.",
+    courseSlugs: ["sugar", "tobacco", "opioids", "cannabis"],
+    lessons: [
+      "Ep 4 · Blood-Sweetened Luxury",
+      "Ep 15 · Torches of Freedom",
+      "Ep 17 · Lin Zexu's Letter",
+      "Ep 16 · Three Sentences, Three Policies",
+    ],
+  },
+  {
+    id: "bvc.coffee-project-synthesis",
+    claim: "Ships a graded 2–3 week research project requiring synthesis across sources.",
+    courseSlugs: ["coffee"],
+    lessons: ["Ep 1 · Assignment — all four options are 2–3 week research projects requiring synthesis across sources"],
+  },
+  {
+    id: "bvc.coffee-project-argument-paper",
+    claim: "Requires an argument paper with a counterargument section (project Option D).",
+    courseSlugs: ["coffee"],
+    lessons: [
+      "Ep 1 · Assignment, Option D — a 1,200–1,500 word research paper with a required counterargument section",
+    ],
+  },
+  {
+    id: "bvc.coffee-project-research-process",
+    claim: "Requires a real research process with peer-reviewed sources and APA citation.",
+    courseSlugs: ["coffee"],
+    lessons: [
+      "Ep 1 · Assignment, Option B — climate-vulnerability report, 3+ peer-reviewed sources, APA bibliography",
+      "Ep 1 · Assignment, Option D — primary-source research paper with an APA bibliography",
+    ],
+  },
+  {
+    id: "bvc.coffee-project-sources-ethics",
+    claim: "Requires gathering authoritative sources and practicing interview ethics (project Options B/C).",
+    courseSlugs: ["coffee"],
+    lessons: [
+      "Ep 1 · Assignment, Option B — 3+ peer-reviewed sources and an APA bibliography",
+      "Ep 1 · Assignment, Option C — interview ethics: informed consent, right to review",
+    ],
+  },
+  {
+    id: "bvc.climate-resources-shape-humans",
+    claim: "Supplies the evidence for how resources, hazards, and climate shape human activity.",
+    courseSlugs: ["coffee", "chocolate", "kava", "whiskey"],
+    lessons: [
+      "Ep 1 · Climate Change Is Redrawing the Map",
+      "Ep 3 · A Two-Degree Threat",
+      "Ep 6 · Why Volcanic Soil Only",
+      "Ep 10 · Karst Limestone and Bourbon",
+      "Ep 1 · Assignment, Option B — assess a producing country's climate viability and defend the assessment",
+    ],
+  },
+  {
+    id: "bvc.plantation-economy-resistance",
+    claim: "Teaches the plantation economy and the resistance to it, both halves.",
+    courseSlugs: ["sugar", "rum"],
+    lessons: [
+      "Ep 4 · The Triangular Trade and the Middle Passage",
+      "Ep 4 · Resistance and Revolution",
+      "Ep 11 · The Maroons",
+      "Ep 11 · The Haitian Revolution",
+    ],
+  },
+  {
+    id: "bvc.haitian-revolution",
+    claim: "Teaches the Haitian Revolution including the 1825 indemnity and its modern consequences.",
+    courseSlugs: ["rum"],
+    lessons: [
+      "Ep 11 · The Haitian Revolution",
+      "Ep 11 · The Debt of Freedom",
+      "Ep 11 · The Black Jacobins (C.L.R. James)",
+    ],
+  },
+  {
+    id: "bvc.opium-wars",
+    claim: "Teaches the Opium Wars, their impact on China, and their global consequences.",
+    courseSlugs: ["opioids"],
+    lessons: ["Ep 17 · The Opium Wars", "Ep 17 · Lin Zexu's Letter"],
+  },
+  {
+    id: "bvc.sugar-industry-impact",
+    claim: "Evaluates the sugar industry's impact on societies and individuals, 16th–18th centuries.",
+    courseSlugs: ["sugar", "rum"],
+    lessons: [
+      "Ep 4 · The Sugar Islands",
+      "Ep 4 · From New Guinea to the New World",
+      "Ep 11 · Waste-Product Economics",
+    ],
+  },
+  {
+    id: "bvc.mesoamerica-colonization",
+    claim: "Covers Maya and Aztec society and the impact of European colonization, through the plants those societies governed.",
+    courseSlugs: ["chocolate", "tequila-mezcal"],
+    lessons: [
+      "Ep 3 · Food of the Gods (cacao as Maya/Aztec currency and sacrament)",
+      "Ep 3 · Conquest and the Great Reversal",
+      "Ep 12 · The Sacred Plant (Aztec governance of pulque)",
+      "Ep 12 · Burning the Books",
+    ],
+  },
+  {
+    id: "bvc.middle-passage-primary-sources",
+    claim: "Teaches the Middle Passage and evaluates primary-source accounts by formerly enslaved writers.",
+    courseSlugs: ["sugar"],
+    lessons: [
+      "Ep 4 · The Triangular Trade and the Middle Passage",
+      "Ep 4 · Whose Voice Tells the Story (Equiano, 1789; Mary Prince, 1831)",
+    ],
+  },
+  {
+    id: "bvc.war-on-drugs-foreign-policy",
+    claim: "Covers the War on Drugs in depth, including its foreign-policy arm.",
+    courseSlugs: ["coca", "opioids", "cannabis"],
+    lessons: [
+      "Ep 18 · Bolivia's Bet (Bolivia's legal coca model against U.S.-funded eradication)",
+      "Ep 18 · The Balloon Effect",
+      "Ep 17 · Where the Poppy Grows (Afghanistan and the Golden Crescent)",
+      "Ep 16 · The Justice Gap",
+    ],
+  },
+
+  // ══ Civics & government catalog ═══════════════════════════════════════════
+  {
+    id: "civics.preamble-purposes",
+    claim: "Works the Preamble clause by clause as the purposes of government.",
+    courseSlugs: ["us-constitution-101"],
+    lessons: ["US Constitution 101, Lesson 2 · The Preamble: who, and why"],
+  },
+  {
+    id: "civics.articles-to-constitution",
+    claim: "Teaches why the Articles of Confederation failed and how that led to the 1787 Constitution.",
+    courseSlugs: ["us-constitution-101"],
+    lessons: ["US Constitution 101, Lesson 1 · Why a constitution? From the Articles of Confederation"],
+  },
+  {
+    id: "civics.bill-of-rights-origin",
+    claim: "Teaches the Bill of Rights (Amendments I–X) as a document.",
+    courseSlugs: ["us-constitution-101"],
+    lessons: ["US Constitution 101, Lesson 8 · The Bill of Rights (Amendments I to X)"],
+  },
+  {
+    id: "civics.constitution-article-by-article",
+    claim: "Analyzes the Constitution article by article for ideas on government, rights, and the common good.",
+    courseSlugs: ["us-constitution-101"],
+    lessons: ["US Constitution 101, Lessons 2-9 · the Constitution analyzed article by article"],
+  },
+  {
+    id: "civics.bill-of-rights-overview",
+    claim: "Introduces what the Bill of Rights is and what it protects.",
+    courseSlugs: ["know-your-rights"],
+    lessons: ["The Bill of Rights: Know Your Rights, Lesson 1 · What is the Bill of Rights?"],
+  },
+  {
+    id: "civics.separation-checks-balances",
+    claim: "Teaches separation of powers, checks and balances, and federalism in the U.S. Constitution.",
+    courseSlugs: ["us-constitution-101"],
+    lessons: [
+      "US Constitution 101, Lesson 6 · Separation of powers and checks & balances",
+      "US Constitution 101, Lesson 7 · Federalism: state and federal power",
+    ],
+  },
+  {
+    id: "civics.federalism-why-split-power",
+    claim: "Teaches federalism and why power is divided, with the founding cases.",
+    courseSlugs: ["state-vs-federal"],
+    lessons: ["State vs Federal Power, Lesson 1 · What is federalism, and why split power at all?"],
+  },
+  {
+    id: "civics.in-three-branches",
+    claim: "Teaches Indiana's three branches, including its deliberately weak governor.",
+    courseSlugs: ["state-civics-in"],
+    lessons: ["Indiana Civics, Lesson 2 · The three branches, and Indiana's deliberately weak governor"],
+  },
+  {
+    id: "civics.three-branches-federal",
+    claim: "Teaches the purpose of government and the three federal branches.",
+    courseSlugs: ["us-civics-101"],
+    lessons: ["US Civics 101, Lesson 1 · Purpose of government and the three branches"],
+  },
+  {
+    id: "civics.federal-articles-i-iii",
+    claim: "Teaches Articles I–III and the branch relationships they create.",
+    courseSlugs: ["us-constitution-101"],
+    lessons: ["US Constitution 101, Lessons 3-6 · Articles I-III and checks & balances"],
+  },
+  {
+    id: "civics.federal-bill-process",
+    claim: "Teaches the complete federal lawmaking process, committees through veto override.",
+    courseSlugs: ["how-a-bill-becomes-law", "us-civics-101"],
+    lessons: [
+      "How a Bill Becomes Law (Federal) · the whole course, introduction to public law",
+      "US Civics 101, Lesson 3 · How a bill becomes a law",
+    ],
+  },
+  {
+    id: "civics.in-bill-process",
+    claim: "Teaches how a bill becomes an Indiana law in the General Assembly.",
+    courseSlugs: ["state-civics-in"],
+    lessons: ["Indiana Civics, Lesson 4 · How a bill becomes an Indiana law"],
+  },
+  {
+    id: "civics.article-v-amendment",
+    claim: "Teaches Article V amendment procedure and why the federal bar is so high.",
+    courseSlugs: ["us-constitution-101"],
+    lessons: ["US Constitution 101, Lesson 9 · Changing the Constitution: Article V and key later amendments"],
+  },
+  {
+    id: "civics.in-constitution-amendment",
+    claim: "Teaches who may propose Indiana constitutional amendments (the General Assembly only; no citizen initiative).",
+    courseSlugs: ["state-civics-in"],
+    lessons: [
+      "Indiana Civics, Lesson 1 · Indiana's constitution: the 1851 rulebook",
+      "Indiana Civics, Lesson 6 · Elections in Indiana (no statewide citizen initiative)",
+    ],
+  },
+  {
+    id: "civics.federal-judiciary-structure",
+    claim: "Teaches the federal judiciary's structure, independence, and the checks on it.",
+    courseSlugs: ["supreme-court-judicial-branch"],
+    lessons: [
+      "The Supreme Court & the Judicial Branch, Lesson 1 · The federal judiciary: from district courts to the Supreme Court",
+      "The Supreme Court & the Judicial Branch, Lesson 7 · Checks on the Court",
+    ],
+  },
+  {
+    id: "civics.judicial-review-marbury",
+    claim: "Teaches judicial review by name, through Marbury v. Madison.",
+    courseSlugs: ["us-civics-101"],
+    lessons: ["US Civics 101, Lesson 4 · The courts and judicial review (Marbury v. Madison)"],
+  },
+  {
+    id: "civics.in-courts-merit-selection",
+    claim: "Teaches Indiana's merit-selection-plus-retention court design.",
+    courseSlugs: ["state-civics-in"],
+    lessons: ["Indiana Civics, Lesson 3 · Indiana's courts: merit selection + retention"],
+  },
+  {
+    id: "civics.election-mechanics",
+    claim: "Teaches election law and systems: registration, primaries, voting methods, counting and certifying.",
+    courseSlugs: ["voting-elections-101"],
+    lessons: [
+      "Voting & Elections 101, Lessons 1-3 · registration, primaries and caucuses, how you vote",
+      "Voting & Elections 101, Lesson 7 · Counting, canvassing, and certifying the vote",
+      "Voting & Elections 101, Lesson 8 · Verify your own registration and rules",
+    ],
+  },
+  {
+    id: "civics.in-election-law",
+    claim: "Teaches Indiana's election specifics: photo ID (Crawford), excuse-required mail voting.",
+    courseSlugs: ["state-civics-in"],
+    lessons: ["Indiana Civics, Lesson 6 · Elections in Indiana: strict photo ID, excuse-required mail voting"],
+  },
+  {
+    id: "civics.electoral-college",
+    claim: "Teaches the Electoral College's mechanics AND its original purpose and modern relevance.",
+    courseSlugs: ["voting-elections-101"],
+    lessons: [
+      "Voting & Elections 101, Lesson 4 · The Electoral College: how it works",
+      "Voting & Elections 101, Lesson 5 · Why the Electoral College exists",
+    ],
+  },
+  {
+    id: "civics.in-local-government",
+    claim: "Teaches Indiana's local government as Indiana's: 92 counties, 1,000+ townships.",
+    courseSlugs: ["state-civics-in"],
+    lessons: [
+      "Indiana Civics, Lesson 5 · Local government in Indiana: 92 counties and 1,000+ townships",
+      "Indiana Civics, Lesson 8 · Get involved where you live in Indiana",
+    ],
+  },
+  {
+    id: "civics.local-government-layers",
+    claim: "Teaches what local government handles, why it varies, and the special districts people forget.",
+    courseSlugs: ["us-state-local-government"],
+    lessons: [
+      "US, State & Local Government, Lesson 5 · What LOCAL government handles (and why it VARIES)",
+      "US, State & Local Government, Lesson 7 · The governments you forget: special districts & boards",
+    ],
+  },
+  {
+    id: "civics.us-citizenship-law",
+    claim: "Teaches the legal meaning of U.S. citizenship: the 14th Amendment, jus soli, naturalization eligibility.",
+    courseSlugs: ["citizenship-naturalization"],
+    lessons: [
+      "Citizenship & Naturalization Basics, Lesson 1 · Who is a U.S. citizen? Birthright and the 14th Amendment",
+      "Citizenship & Naturalization Basics, Lesson 3 · Becoming a citizen: naturalization eligibility",
+    ],
+  },
+  {
+    id: "civics.citizenship-responsibilities",
+    claim: "Teaches the rights and responsibilities of citizenship.",
+    courseSlugs: ["citizenship-naturalization"],
+    lessons: ["Citizenship & Naturalization Basics, Lesson 7 · Rights and responsibilities of citizenship"],
+  },
+  {
+    id: "civics.jury-service",
+    claim: "Teaches jury service end to end, as the citizen's side of the court system.",
+    courseSlugs: ["jury-duty-courts"],
+    lessons: ["Jury Duty & the Courts · the whole course (the citizen's side of the court system)"],
+  },
+  {
+    id: "civics.voter-registration",
+    claim: "Teaches registering to vote as a practiced responsibility.",
+    courseSlugs: ["voting-elections-101"],
+    lessons: ["Voting & Elections 101, Lesson 1 · Registering to vote"],
+  },
+  {
+    id: "rights.landmark-cases",
+    claim: "Teaches the landmark rights cases as rules a student can apply: Tinker, Brandenburg, Mapp, Terry, T.L.O., Riley, Carpenter.",
+    courseSlugs: ["know-your-rights"],
+    lessons: [
+      "Know Your Rights, Lessons 2-5 · speech, religion, press, assembly — including at school and online",
+      "Know Your Rights, Lessons 6-8 · the 4th Amendment: searches, stops, and your digital life",
+    ],
+  },
+  {
+    id: "rights.scotus-precedent",
+    claim: "Teaches how Supreme Court precedent works and expands rights over time.",
+    courseSlugs: ["supreme-court-judicial-branch"],
+    lessons: [
+      "The Supreme Court & the Judicial Branch, Lesson 5 · Writing the opinion: majority, concurrence, dissent, and precedent",
+    ],
+  },
+  {
+    id: "rights.limits-on-rights",
+    claim: "Teaches when government may constitutionally limit rights, and why: time-place-manner, incitement, school speech, reasonable suspicion.",
+    courseSlugs: ["know-your-rights"],
+    lessons: [
+      "Know Your Rights, Lesson 2 · Freedom of speech: what's protected, and what isn't",
+      "Know Your Rights, Lesson 5 · Speech and religion at school, and online",
+      "Know Your Rights, Lesson 7 · Police stops, reasonable suspicion, and your privacy",
+    ],
+  },
+  {
+    id: "civics.campaign-help",
+    claim: "Teaches supporting a campaign lawfully: volunteering, donating, canvassing, the guardrails.",
+    courseSlugs: ["help-a-campaign"],
+    lessons: [
+      "How to Help a Campaign · the whole course (volunteering, donating, canvassing — with the legal guardrails)",
+    ],
+  },
+  {
+    id: "civics.ballot-measures-local-causes",
+    claim: "Teaches helping ballot measures and local causes.",
+    courseSlugs: ["help-a-campaign"],
+    lessons: ["How to Help a Campaign, Lesson 10 · Helping ballot measures and local causes"],
+  },
+  {
+    id: "civics.show-up-every-level",
+    claim: "Teaches where and how to be heard at every level of government.",
+    courseSlugs: ["us-state-local-government"],
+    lessons: ["US, State & Local Government, Lesson 8 · Where to show up and be heard, at every level"],
+  },
+  {
+    id: "civics.track-a-bill",
+    claim: "Teaches tracking a live bill and making your voice heard on it.",
+    courseSlugs: ["how-a-bill-becomes-law"],
+    lessons: ["How a Bill Becomes Law, Lesson 8 · Tracking a bill and making your voice heard"],
+  },
+  {
+    id: "civics.in-get-involved",
+    claim: "Teaches getting involved where you live, Indiana edition.",
+    courseSlugs: ["state-civics-in"],
+    lessons: ["Indiana Civics, Lesson 8 · Get involved where you live in Indiana"],
+  },
+  {
+    id: "civics.run-for-office",
+    claim: "Teaches running for office: eligibility, ballot access, money rules, and after Election Day.",
+    courseSlugs: ["how-to-run-for-office"],
+    lessons: [
+      "How to Run for Office · the whole course (eligibility, ballot access, money rules, and after Election Day)",
+    ],
+  },
+
+  // ══ History catalog ═════════════════════════════════════════════════════════
+  {
+    id: "history.gilded-age-labor",
+    claim: "Teaches the Gilded Age labor movement: the Knights, the AFL, Haymarket, Homestead, Pullman.",
+    courseSlugs: ["history-of-unions"],
+    lessons: [
+      "The History of Unions, Lesson 4 · Two ideas about who a union is for: the Knights and the AFL",
+      "The History of Unions, Lesson 5 · Haymarket, 1886",
+      "The History of Unions, Lesson 6 · Homestead, Pullman, and the weapon that actually broke strikes",
+    ],
+  },
+  {
+    id: "history.jim-crow-and-long-shadow",
+    claim: "Teaches the Jim Crow South — the denial of rights people fled — and its effects in future years.",
+    courseSlugs: ["great-migration"],
+    lessons: [
+      "The Great Migration, Lesson 2 · The Jim Crow South: what people were fleeing",
+      "The Great Migration, Lesson 12 · The long shadow — and the return",
+    ],
+  },
+  {
+    id: "history.harlem-renaissance-black-press",
+    claim: "Teaches the Harlem Renaissance, the New Negro, and the Black press as an engine of the Migration.",
+    courseSlugs: ["great-migration"],
+    lessons: [
+      "The Great Migration, Lesson 6 · The Black press as engine: the Chicago Defender",
+      "The Great Migration, Lesson 7 · The Harlem Renaissance & the New Negro",
+    ],
+  },
+  {
+    id: "history.triangle-fire-debs",
+    claim: "Teaches Progressive-Era labor: the Triangle fire and Debs' socialist movement.",
+    courseSlugs: ["history-of-unions"],
+    lessons: [
+      "The History of Unions, Lesson 8 · The Triangle fire, 1911 — and what it actually changed",
+      "The History of Unions, Lesson 6 · Homestead, Pullman (Eugene Debs and the socialist movement)",
+    ],
+  },
+  {
+    id: "history.migration-streams-arrival",
+    claim: "Teaches the Great Migration's routes, arrival cities, and community institutions.",
+    courseSlugs: ["great-migration"],
+    lessons: [
+      "The Great Migration, Lesson 4 · Routes and railroads: the three streams",
+      "The Great Migration, Lesson 5 · Arrival: Chicago, Detroit, New York, and the Pacific Northwest",
+      "The Great Migration, Lesson 9 · Faith, family & mutual aid",
+    ],
+  },
+  {
+    id: "history.wagner-act",
+    claim: "Teaches the Wagner Act, what it created, and precisely who it excluded.",
+    courseSlugs: ["history-of-unions"],
+    lessons: [
+      "The History of Unions, Lesson 9 · 1935: the year organizing became a right (the Wagner Act)",
+      "The History of Unions, Lesson 10 · The hole in the law: who the Wagner Act left out",
+    ],
+  },
+  {
+    id: "history.migration-civil-rights-politics",
+    claim: "Teaches the Black urban vote the Migration created and its civil-rights politics.",
+    courseSlugs: ["great-migration"],
+    lessons: ["The Great Migration, Lesson 11 · Politics & civil rights"],
+  },
+  {
+    id: "history.labor-civil-rights",
+    claim: "Teaches the labor half of the civil-rights movement: Randolph to Memphis, and unions' own colour bar.",
+    courseSlugs: ["history-of-unions"],
+    lessons: [
+      "The History of Unions, Lesson 16 · The colour bar: unions' own history of exclusion",
+      "The History of Unions, Lesson 17 · Randolph to Memphis: the labor half of the civil-rights movement",
+    ],
+  },
+  {
+    id: "history.nafta-usmca-labor",
+    claim: "Teaches NAFTA→USMCA from the labor side, including the Rapid Response Mechanism and its limits.",
+    courseSlugs: ["labor-mexico"],
+    lessons: [
+      "Mexico, Lesson 7 · Mexico rewrites its labor law — and the 68-year gap that explains why",
+      "Mexico, Lesson 10 · The Rapid Response Mechanism: an international labor rule with teeth",
+      "Mexico, Lesson 12 · The limits, honestly: the cases the United States lost",
+    ],
+  },
+  {
+    id: "history.taft-hartley-patco",
+    claim: "Teaches the rollback of New Deal labor law: Taft-Hartley 1947 and PATCO 1981.",
+    courseSlugs: ["history-of-unions"],
+    lessons: [
+      "The History of Unions, Lesson 13 · Taft-Hartley, 1947: what the law took back",
+      "The History of Unions, Lesson 14 · PATCO, 1981 — and reading the decline honestly",
+    ],
+  },
+  {
+    id: "history.migration-primary-sources",
+    claim: "Points every lesson to a real archive and turns an unsupported statistic into a limitations-of-evidence lesson.",
+    courseSlugs: ["great-migration"],
+    lessons: [
+      "The Great Migration · every lesson carries a primary-source pointer to its real archive",
+      "The Great Migration, Lesson 5 · Arrival (the Philadelphia “500% growth” claim, checked against the raw census figures it fails)",
+    ],
+  },
+  {
+    id: "history.solidarnosc-cold-war",
+    claim: "Teaches the Cold War's end in Eastern Europe through Poland: Solidarność, martial law, 1989.",
+    courseSlugs: ["labor-poland"],
+    lessons: [
+      "Poland: Solidarność, Lesson 3 · A workers' state with a worker problem",
+      "Poland: Solidarność, Lesson 7 · 13 December 1981: the state answers (martial law)",
+      "Poland: Solidarność, Lesson 8 · 1989: a union negotiates a state out of existence",
+    ],
+  },
+  {
+    id: "history.poland-1989-democratization",
+    claim: "Teaches Poland's 1989 democratization and its economic price (shock therapy).",
+    courseSlugs: ["labor-poland"],
+    lessons: [
+      "Poland: Solidarność, Lesson 8 · 1989: a union negotiates a state out of existence",
+      "Poland: Solidarność, Lesson 9 · What winning cost: shock therapy",
+    ],
+  },
+
+  // ══ Health & wellness catalog ═══════════════════════════════════════════════
+  {
+    id: "health.oral-health-behaviors",
+    claim: "Teaches oral-health behaviors tied to their measured effects, with the evidence graded honestly.",
+    courseSlugs: ["dental-health-101"],
+    lessons: [
+      "Dental Health 101, Lessons 2-5 · brushing, flossing, fluoride, and diet — each tied to its measured effect",
+    ],
+  },
+  {
+    id: "health.tracker-behavior-metrics",
+    claim: "Teaches reading behaviors against your own resting heart rate, steps, sleep, and activity.",
+    courseSlugs: ["read-your-bodys-data"],
+    lessons: [
+      "Read Your Body's Data · the whole course: behaviors read against your own resting heart rate, steps, sleep, and activity",
+    ],
+  },
+  {
+    id: "health.dental-care-access",
+    claim: "Analyzes what regular dental care catches, and the mouth-body evidence, honestly bounded.",
+    courseSlugs: ["dental-health-101"],
+    lessons: [
+      "Dental Health 101, Lesson 6 · Regular dental visits: what a checkup actually catches",
+      "Dental Health 101, Lessons 7-9 · the mouth-body connection: gum disease, diabetes, and heart disease",
+    ],
+  },
+  {
+    id: "health.evaluate-dental-evidence",
+    claim: "Teaches evaluating health information: evidence hierarchies, Cochrane reviews, myths debunked.",
+    courseSlugs: ["dental-health-101"],
+    lessons: [
+      "Dental Health 101, Lesson 3 · Flossing and interdental cleaning: what the evidence actually shows",
+      "Dental Health 101, Lesson 10 · Common dental myths, debunked",
+    ],
+  },
+  {
+    id: "health.health-product-claims",
+    claim: "Teaches evaluating health-product and supplement marketing, and verifying claims yourself.",
+    courseSlugs: ["spotting-misleading-marketing"],
+    lessons: [
+      "Spotting Misleading Marketing, Lesson 7 · Health, supplements, and “structure/function” claims",
+      "Spotting Misleading Marketing, Lesson 10 · How to verify a claim (and follow the money)",
+    ],
+  },
+  {
+    id: "health.blueprint-goal-plan",
+    claim: "Has the learner build a data-grounded 90-day personal health blueprint as the capstone.",
+    courseSlugs: ["read-your-bodys-data"],
+    lessons: [
+      "Read Your Body's Data · The Capstone: My Health Blueprint (a 90-day plan built from five weeks of your own data)",
+    ],
+  },
+  {
+    id: "health.woop-goal-setting",
+    claim: "Walks the learner through setting a goal and writing the plan with mental contrasting + implementation intentions.",
+    courseSlugs: ["woop-science-of-doing-it"],
+    lessons: [
+      "WOOP, Lesson 16 · The four steps: wish, outcome, obstacle, plan",
+      "WOOP, Lesson 17 · Your turn: run it, now, on the goal you wrote down in Lesson 1",
+    ],
+  },
+  {
+    id: "health.woop-obstacle-strategies",
+    claim: "Teaches obstacle-first strategies (mental contrasting, if-then plans) with trial evidence including health behaviors.",
+    courseSlugs: ["woop-science-of-doing-it"],
+    lessons: [
+      "WOOP, Lesson 7 · The obstacle is inside you (this is where most people fail)",
+      "WOOP, Lesson 13 · How to write an if-then that actually fires",
+      "WOOP, Lesson 18 · The six ways people run it wrong",
+    ],
+  },
+  {
+    id: "health.n-of-1-implement-adjust",
+    claim: "Has the learner implement, analyze, and adjust a plan via an N-of-1 experiment on their own data.",
+    courseSlugs: ["read-your-bodys-data"],
+    lessons: [
+      "Read Your Body's Data · What an N-of-1 Experiment Is / Designing Your N-of-1",
+      "Read Your Body's Data · Analyzing Results and Iterating",
+      "Read Your Body's Data · Your System Architecture: Triggers, Logging, Review",
+    ],
+  },
+
+  // ══ Physical education catalog ══════════════════════════════════════════════
+  {
+    id: "pe.sport-strategy-knowledge",
+    claim: "Teaches sport concepts, principles, strategies, terminology, and tactics in depth, sport by sport.",
+    courseSlugs: [
+      "golf-play-know-work",
+      "tennis",
+      "football",
+      "pickleball",
+      "lacrosse-creators-game",
+      "croquet",
+    ],
+    lessons: [
+      "Golf, Lessons 16-21 · course management, reading the shot, the World Handicap System",
+      "Tennis, Lessons 13-17 · the first four shots, Serve +1, court geometry",
+      "Football, Lessons 15-18 · formations, pressing, and watching a match like an analyst",
+      "Pickleball, Lessons 11-14 · geometry, the third shot, dinking",
+      "Lacrosse, Lessons 11-15 · the five fundamentals, offense, defense, transition",
+      "Croquet, Lessons 14-15 · the four-ball break and the leave",
+    ],
+  },
+  {
+    id: "pe.wearable-tech-activity",
+    claim: "Has the learner apply wearables and a daily log to support their own activity habits.",
+    courseSlugs: ["read-your-bodys-data"],
+    lessons: [
+      "Read Your Body's Data · Pick Your Device and Where to Log It",
+      "Read Your Body's Data · Setting Up Your Device and a Baseline Protocol",
+      "Read Your Body's Data · Intensity Minutes: The Strongest Longevity Metric",
+    ],
+  },
+  {
+    id: "pe.fitness-plan-blueprint",
+    claim: "Has the learner design and implement a fitness plan: assessment, goals, activities, log, 90-day timeline.",
+    courseSlugs: ["read-your-bodys-data"],
+    lessons: [
+      "Read Your Body's Data · Designing Your N-of-1",
+      "Read Your Body's Data · The Capstone: My Health Blueprint (assessment, goals, activities, log, 90-day timeline)",
+    ],
+  },
+
+  // ══ Media literacy catalog ══════════════════════════════════════════════════
+  {
+    id: "media.marketing-omissions",
+    claim: "Teaches omission, disclosure, and source reliability as everyday consumer skills.",
+    courseSlugs: ["spotting-misleading-marketing"],
+    lessons: [
+      "Spotting Misleading Marketing, Lesson 3 · Weasel words and what the fine print takes back",
+      "Spotting Misleading Marketing, Lesson 5 · Fake reviews, astroturfing, and undisclosed #ads",
+    ],
+  },
+  {
+    id: "media.misleading-statistics",
+    claim: "Teaches named persuasion tactics, cherry-picked statistics, and truncated charts.",
+    courseSlugs: ["spotting-misleading-marketing"],
+    lessons: [
+      "Spotting Misleading Marketing, Lesson 8 · Misleading statistics and charts",
+      "Spotting Misleading Marketing, Lesson 4 · Fake urgency, fake scarcity, and fake discounts",
+    ],
+  },
+];
+
+const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
+
+/** Look up a claim; throwing on a bad id makes a typo'd reference fail loudly at load time. */
+export function getClaim(id: string): CourseClaim {
+  const c = byId.get(id);
+  if (!c) throw new Error(`standards: unknown course claim "${id}"`);
+  return c;
+}

@@ -13,6 +13,7 @@ import { NavMenu } from "./nav-menu";
 import type { NavItem } from "./nav-types";
 import { ProfileSwitcher } from "./profile-switcher";
 import { ActingAsBanner } from "./acting-as-banner";
+import { StickyHeader } from "./sticky-header";
 
 // Brand-aware academy header. Nav is driven by the tenant's feature flags — not a
 // fixed CentOS module nav. Accent color comes from the --accent CSS var set by the
@@ -90,7 +91,14 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
 
   return (
     <>
-      <header className="border-b border-neutral-200 dark:border-neutral-800">
+      {/* Sticky (StickyHeader, a client shell) so the nav is reachable from anywhere on a long
+          lesson page. Only the bar itself sticks — the acting-as banner below stays OUTSIDE it
+          on purpose: the parent it addresses already has a persistent "Studying as <child>"
+          signal pinned in the bar (the ProfileSwitcher renders for exactly the people who see
+          the banner), so pinning the banner too would only spend scarce vertical space on small
+          screens and make the header's height vary, which the lesson page's sub-header offset
+          (--site-header-h) would then have to chase. */}
+      <StickyHeader>
         <nav className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3">
           <Link
             href="/"
@@ -178,7 +186,7 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
             </div>
           </div>
         </nav>
-      </header>
+      </StickyHeader>
       {activeLearner?.isChild ? (
         <ActingAsBanner childName={activeLearner.name ?? "your child"} />
       ) : null}

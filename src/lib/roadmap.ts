@@ -269,6 +269,19 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   on purpose (Neon egress): 30s server-side debounce + a client guard on the ping, one player write
   per ~20s and on pause/leave (never on the timeupdate tick), and the course page reads completion +
   last-viewed + positions in ONE query that *replaces* the old completed-ids query.
+- ✅ **Sticky site header** (\`fix/ui-sticky-header-collapsible-future\`) — the header now stays at the
+  top on every (tenant) page (BAM: "header should be sticky … so it's usable"), so nav is reachable
+  mid-way through a long lesson. A client shell (\`StickyHeader\`) owns the stuck-state shadow and
+  publishes the measured height as \`--site-header-h\`; the lesson page's progress sub-header and the
+  admin sidebar rail offset by it so the bars **stack** instead of fighting, and anchor jumps (skip
+  link, \`/explore#map\`) get matching \`scroll-padding\` — scoped so \`/downloads\`, \`/offline\`, \`/kids\`
+  and \`/embed/*\` (no site header) are untouched. The acting-as banner deliberately scrolls away: the
+  "Studying as" switcher pinned in the bar already carries that signal.
+- ✅ **\`/admin/future\` collapses** (\`fix/ui-sticky-header-collapsible-future\`) — each group heading
+  (She Did the Work, subject research, proposals, Mansa Gold, …) is now a native \`<details>\` with an
+  item count, all collapsed by default except the first (the 1-item overview) — BAM: "the list and
+  scroll is too long". 40+ proposals scan as a screenful of headings; item cards, notes, and the
+  saved-for-offline copy work unchanged (native \`<details>\` needs no JS).
 - ⚪ **Resume for multi-part audio + embeds** — the position is remembered for direct-media
   audio/video only. \`MultiPartPlayer\` (a long recording split into parts) would additionally need the
   part index, and YouTube/Vimeo embeds expose no time to us without their iframe APIs. Not started.
@@ -612,6 +625,61 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   contracts" (\`umowy śmieciowe\`) rhyme** with US misclassification + Mexican protection contracts —
   the track's payoff. Cited to UNESCO, the European Solidarity Centre, GUS, OECD/AIAS, ETUI and
   Eurofound. Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+- 🔧 **Africa Before Colonization: The Documented Record** (Culture & History,
+  \`content/africa-precolonial\`) — the **anchor of the precolonial-Africa track** (from BAM's
+  \`world.md\` queue). **7 sections · 16 teaching lessons · 7 quizzes** (15-16-question banks, above
+  the 10-question attempt cap so retries rotate; every question carries \`explanation\` +
+  \`sourceLessonSlug\`) **· 1 exercise** (name the people/place/period — the anti-flattening drill).
+  **Opens with the claim in the deniers' own words** — Hegel 1837 ("no historical part of the
+  World") and Trevor-Roper 1965 ("darkness is not a subject for history"), both quotes verified —
+  then walks the record: **Kush** (Kerma, the 25th Dynasty c. 747-656 BCE, Meroë, Meroitic's
+  read-but-not-understood script), **Aksum** (gold coinage c. 270 CE, Ezana's cross coins ~340s,
+  Ge'ez, the 1937→2005 stele), **Ghana→Mali→Songhai** + Timbuktu's book trade, **Great Zimbabwe
+  with the documented denial** (Mauch/Bent/Ancient Ruins Ltd → Randall-MacIver 1905 →
+  Caton-Thompson 1929 → **Rhodesia's 1970 censorship law and Garlake forced out**, per Pikirayi
+  2012), the **Swahili coast** (African towns, per the Shanga archaeology; Ibn Battuta on Kilwa,
+  1331), **Benin** (Ife/Frobenius-Atlantis as the erasure pattern; the 2023 manilla isotope study;
+  the **1897 looting with hedged counts** + dated restitution status) and **Ethiopia** (Lalibela;
+  Wuchale Art. 17 → **Adwa 1896**; "never colonized" taught precisely WITH the 1936-41 occupation).
+  **Accuracy posture is the point:** **Mansa Musa is taught as a source audit** — al-Umari's actual
+  mithqal report via Levtzion & Hopkins, "richest ever" **refused** as unquantifiable (traces to a
+  2012 listicle), the Cairo gold "crash" labeled **contested** (Schultz 2006), caravan head-counts
+  "reported, not established"; the 1076 "Almoravid sack of Ghana" is contested (Conrad & Fisher
+  1982); Timbuktu manuscript counts are reported estimates; "University of Sankore" is flagged as
+  anachronistic; the Ark of the Covenant is church tradition, not artifact. **African participation
+  in slavery and the slave trades is taught plainly** (Thornton, Lovejoy, Northrup; SlaveVoyages
+  ~12.5M embarked / ~10.7M landed; Afonso I's 1526 letters as contemporary dissent WITHOUT
+  dressing him as an abolitionist; the "sold their own people" gotcha corrected as anachronism) —
+  and **romantic overcorrection is taught as a trap equal to erasure**. Section 6 is the
+  transferable "how we know" toolkit (radiocarbon/Jenne-jeno/Igbo-Ukwu, the Arabic corpus in
+  scholarly translation, Vansina's oral-tradition rules, Ehret's linguistics, the convergence
+  audit). Cited to the UNESCO General History of Africa, Gomez, Green, Fauvelle, Hunwick, museum
+  records and UNESCO World Heritage documentation. Registered in \`seed-courses.ts\`; **no
+  migration** — \`pnpm seed:courses\`. Track proposal (7 follow-on courses + build order) at
+  \`plans/future-courses/africa-precolonial-track-proposal.md\` → \`/admin/future\`.
+- 🔧 **Afrocentricity: How to Evaluate a Contested Paradigm** (Culture & History, \`content/afrocentricity\`)
+  — the **anchor of a proposed Afrocentricity track** (\`plans/future-courses/afrocentricity-track-proposal.md\`,
+  renders at \`/admin/future\`), for high school students. **6 sections · 15 teaching lessons · 6 quizzes**
+  (15-question banks, above the 10-question attempt cap so retries rotate; 90 questions) · 15 \`:::reveal\`
+  self-checks; every question carries \`explanation\` + \`sourceLessonSlug\`. Afrocentricity is a **specific,
+  named, genuinely contested** academic paradigm (**Asante** coined the term; roots in **Diop**), and the
+  course does the hard thing: it teaches it **as its proponents define it**, presents the strongest claims
+  **from their own books**, AND the substantive academic criticism **from the critics' own books** —
+  **without the course taking a side**, asserting in its own voice only what is settled. The real
+  deliverable is the transferable skill: **how to evaluate a contested paradigm.** The two live debates are
+  taught with **no winner declared** and both sides cited from primary sources: the **Kemet / "was ancient
+  Egypt Black?"** question (Diop vs. mainstream Egyptology, with the **2017 Schuenemann et al. ancient-DNA**
+  study **dated and its limits stated** — one northern site, late window, three genomes) and the **Black
+  Athena** exchange (Bernal vs. Lefkowitz + Bernal's 2001 reply; the concede/don't-concede split reported).
+  **Stolen Legacy** (James) is taught as **academically rejected on specifics** (the Library of Alexandria
+  postdates Aristotle's death) **without erasing** the documented Egypt→Greece influence. **Rigorous
+  scholarship is distinguished from pop-Afrocentric myth** (the melanin pseudoscience of **Welsing/Jeffries**)
+  — a line Afrocentrism's **own** critics (**Howe**, **Ortiz de Montellano**) draw, so naming it is not
+  partisan. Critics (**Howe/Appiah/Gilroy**) are steelmanned from their own books, then the proponents'
+  replies, with honest scorekeeping. **No invented citations or quotes.** Cited to Asante, Diop, Bernal,
+  Lefkowitz, Howe, Appiah, Gilroy, mainstream Egyptology and the 2017 aDNA paper (APA 7 + a \`## Sources\`
+  list on every lesson). Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`. The
+  natural home for BAM's source note \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
@@ -791,6 +859,33 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   **this** tenant's published courses, so a Season-1-only school (Learn.WitUS, ElementaryMBA) can
   never surface a Season 2/3 standard, and a tenant hosting none of the curriculum **404s**.
   Printable + one-click copy-as-plain-text for state filings. **No migration.**
+- 🔧 **State-standards finder + Indiana across the whole catalog**
+  (\`feat/standards-finder-indiana\`) — \`/standards\` is now the tool the note asked for: a teacher,
+  homeschooler, or admin **picks their state** and sees which courses meet which of that state's
+  standards, filterable by **subject** and **course** (server-rendered link filters — shareable,
+  printable), each standard still carrying its exact code, verbatim text, source link, per-framework
+  **retrieved date**, and honest \`full\`|\`partial\` flag. States we haven't mapped render as a real
+  "not mapped yet" page (**Arizona and Arkansas flagged next**), never an empty error. **Indiana is
+  now mapped across the whole catalog, not just the Commodity Map: 64 standards (31 full, 33
+  partial) across 9 frameworks** — U.S. Government 2023 (18 standards; the civics ladder plus
+  \`state-civics-in\`, which was written FROM Indiana's materials — the flagship of the 50-state
+  civics pattern), U.S. History 2023 (Great Migration, History of Unions, labor-Mexico/Poland),
+  World History 2023 (Solidarność → Cold War's end), **Health & Wellness 2023** (dental, Read Your
+  Body's Data, WOOP) and **High School PE 2023** (six sports courses — knowledge indicators only,
+  and each entry says an online course cannot demonstrate motor performance). Everything fetched
+  from IDOE **via the Wayback Machine** (in.gov blocks us; snapshots recorded in \`data/in.ts\`), and
+  the 2026-vs-2023 **two-editions problem is still flagged on the page** — the 2026 U.S. Government
+  edition currently exists only as a Google Drive link, so we cite the durable 2023 PDF and say so.
+  Rejections are published per state under "What we don't claim" (e.g. USG.3.9 Benjamin Harrison,
+  USG.1.6's named principles, deindustrialization for the unions course; AI/languages/study-skills
+  deferred until their Indiana frameworks are fetched). **The data model is now the concept-hub**
+  that makes states 3–51 cheap: \`src/lib/standards/claims.ts\` holds ~100 framework-agnostic
+  **course claims** (the catalog analyzed once, with lesson evidence); each state file
+  (\`data/in.ts\`, \`data/dc.ts\`) maps ITS codes → claim ids; **NGSS and Common Core are mapped once**
+  in \`shared/\` and *adopted* by states (verbatim or with local code aliases — DC demonstrates it);
+  and \`pnpm gen:standards\` auto-discovers state files into a committed generated index, so adding
+  Arizona is one new data file + regenerate, **zero hand-edited code change**. 18 isolation tests
+  incl. claims-fully-wired and filter-never-readmits proofs. **No migration, no seed.**
 
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`

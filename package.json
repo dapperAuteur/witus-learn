@@ -33,6 +33,7 @@
     "feedback:list": "tsx --env-file=.env.local scripts/feedback-list.ts",
     "future:list": "tsx --env-file=.env.local scripts/future-list.ts",
     "gen:future-work": "tsx scripts/gen-future-work.ts",
+    "gen:standards": "tsx scripts/gen-standards-index.ts",
     "tracker:show": "tsx --env-file=.env.local scripts/tracker-show.ts",
     "reveal:audit": "tsx scripts/reveal-audit.ts",
     "reveal:convert": "tsx scripts/reveal-convert.ts",

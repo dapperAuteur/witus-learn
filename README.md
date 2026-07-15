@@ -43,6 +43,27 @@ field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.
 consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
 `/embed/course/[id]` iframe view is also available for embedding without calling the API directly.
 
+## State-standards finder (`/standards`)
+
+A teacher, homeschooler, or administrator picks their **state** and sees which courses meet which
+of that state's published standards — exact code, the standard's **verbatim text**, the lessons
+that cover it, a link to the publisher's document, the date it was retrieved, and an honest
+`full` | `partial` flag (partials must say what's missing; a test enforces it). Filterable by
+subject and course, printable, and copyable as plain text for a state filing. States without a
+verified mapping render as "not mapped yet" (Arizona and Arkansas are next), never as errors, and
+each mapped state publishes its **"What we don't claim"** rejections alongside the claims.
+
+The data model is a concept hub built to reach all 51 jurisdictions without repeating work:
+[src/lib/standards/claims.ts](src/lib/standards/claims.ts) analyzes the catalog **once** into
+framework-agnostic course claims; each state file under
+[src/lib/standards/data/](src/lib/standards/data/) maps its own codes onto those claims;
+multi-state frameworks (NGSS, Common Core) are mapped once in
+[src/lib/standards/shared/](src/lib/standards/shared/) and *adopted* per state. Adding a state =
+add `data/<state>.ts` + `pnpm gen:standards` (regenerates the committed index) — no other code
+changes. Tenant-scoped end to end: standards are keyed by course slug and resolved against the
+requesting tenant's own published catalog, so a brand can never surface a standard its courses
+don't back.
+
 ## Self-serve custom domains
 
 At `/admin/domains`, a school's **brand_admin** maps a domain to their tenant entirely self-serve —
@@ -112,8 +133,9 @@ pnpm test        # Vitest — unit + the isolation suite
 
 Owner-only review surface for everything proposed but not yet built — the *She Did the Work* course
 proposals plus a research seed per subject, the extra civics courses, and the Travel & Living Abroad
-track. Leave a note on any item and it lands in `future_work_notes`; read the notes back from a
-terminal, no copy-paste:
+track. Groups render as collapsible sections (item count in the heading; only the first starts
+open), so 40+ proposals scan as a screenful of headings. Leave a note on any item and it lands in
+`future_work_notes`; read the notes back from a terminal, no copy-paste:
 
 ```bash
 pnpm future:list                  # open notes, all schools (--tenant <slug> · --status open|done|all

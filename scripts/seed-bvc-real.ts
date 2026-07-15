@@ -123,12 +123,15 @@ async function main() {
     process.exit(1);
   }
 
-  // Reuse the BVC instructor the sample seed uses (same id/email/username), so this
-  // is idempotent and never collides on the unique email.
-  const instructorId = "seed-bvc-instructor";
-  await db.insert(schema.users).values({ id: instructorId, email: "faculty@bettervice.club", emailVerified: true, name: "BVC Faculty" }).onConflictDoNothing();
-  await db.insert(schema.userProfiles).values({ userId: instructorId, username: "bvc-faculty", displayName: "BVC Faculty" }).onConflictDoNothing();
-  await db.insert(schema.tenantMemberships).values({ tenantId, userId: instructorId, role: "instructor" }).onConflictDoNothing();
+  // BAM instructs every course on every tenant. The synthetic "bvc-faculty" account put the
+  // BVC episodes under /bvc-faculty/... (course URLs are /{instructor-username}/{slug}) and
+  // regressed reassign:instructor on every re-seed.
+  const instructorId = await ensureInstructor(tenantId, {
+    id: "bam",
+    email: "bam@awews.com",
+    username: "bam",
+    displayName: "BAM",
+  });
 
   const files = readdirSync(CONTENT)
     .filter((f) => /^bvc-episode-\d+-.+-lessons\.csv$/.test(f))
@@ -171,7 +174,9 @@ async function main() {
     },
     {
       slug: "elementary-mba",
-      instructor: { id: "seed-emba-instructor", email: "faculty@emba.witus.online", username: "emba-faculty", displayName: "ElementaryMBA Faculty" },
+      // Same real account as everywhere else — a synthetic "emba-faculty" here would strand
+      // the shared S1 episodes under /emba-faculty/ on that tenant.
+      instructor: { id: "bam", email: "bam@awews.com", username: "bam", displayName: "BAM" },
       collection: "Commodity: Origin Stories. Canon Events.",
       keepBvcBranding: false,
     },
