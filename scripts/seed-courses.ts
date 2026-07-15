@@ -118,6 +118,7 @@ import { STUDYING_ABROAD_COURSE } from "./data/studying-abroad-course";
 import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 import { LACROSSE_COURSE } from "./data/lacrosse-course";
 import { TENNIS_COURSE } from "./data/tennis-course";
+import { CHESS_COURSE } from "./data/chess-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
@@ -1089,6 +1090,26 @@ async function main() {
     instructorId,
     slug: "pickleball",
     course: PICKLEBALL_COURSE,
+    category: "Sports",
+    navigationMode: "linear",
+  });
+
+  // Chess — how to play (board, pieces, check/mate/stalemate, castling, en passant, promotion,
+  // algebraic notation), the FIDE Laws with VERIFIED article numbers (touch-move 4.3; claimed
+  // draws 9.2/9.3 vs automatic 9.6.1/9.6.2; clock 6.9; rapid/blitz per Appendices A/B), strategy
+  // (opening principles, forks/pins/skewers, discovered attacks, endgames), verified history
+  // (chaturanga→shatranj→the c.1475 mad queen; Steinitz 1886; KASPAROV won 1996 4–2 and DEEP BLUE
+  // won the 1997 rematch 3½–2½ — kept exactly right; AlphaZero 2017; the Netflix-sourced 2020
+  // boom), organized chess (FIDE/US Chess pyramid, Elo, GM/IM/FM/CM norms, Olympiad, Swiss
+  // system, chess.com vs Lichess economics), and an HONEST amateur/entrepreneur economy: almost
+  // nobody earns a living playing — coaching/scholastic, content, TD/arbiter/organizer, and
+  // fair-play work (Carlsen–Niemann stated precisely) are the real map. No invented rates;
+  // numbers carry a year + source or were cut.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "chess",
+    course: CHESS_COURSE,
     category: "Sports",
     navigationMode: "linear",
   });
