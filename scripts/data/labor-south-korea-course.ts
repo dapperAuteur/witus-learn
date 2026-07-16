@@ -648,5 +648,279 @@ Do not overclaim the chain — historians debate the exact weights — but the s
         ],
       },
     },
+
+    // ────────────── SECTION 3 · 1987 ──────────────
+    {
+      slug: "korea-great-workers-struggle",
+      title: "6 · The Great Workers' Struggle: three thousand strikes in one summer",
+      section: "Section 3 · 1987 — democracy and the unions arrive together",
+      body: `Park Chung-hee's assassination in October 1979 did not end the dictatorship — it changed the dictator. Within months, another general, **Chun Doo-hwan**, seized power; in May 1980 his regime drowned the **Gwangju uprising** in blood; and the labor regime of the 1970s continued into the 1980s essentially intact. The breakthrough came seven years later, and it came twice in one year — first in the streets, then on the shop floor.
+
+**June 1987: the political dam breaks.** Millions of Koreans — students, office workers, the middle class — filled the streets of the **June Democratic Uprising**, demanding direct presidential elections. On **29 June 1987**, the regime's designated successor capitulated in the **June 29 Declaration**: direct elections, restored civil liberties. This is the moment Korean democratization textbooks celebrate. But for this course, the June uprising is the *fuse*. What it detonated came next, and is far less often taught outside Korea.
+
+**July–September 1987: the Great Workers' Struggle** (*nodongja daetujaeng*). With the police state suddenly hesitant and the old rules visibly suspended, Korean workers did in three months what they had been prevented from doing for three decades. Beginning in the vast **Hyundai** complexes of **Ulsan** — the southeastern heavy-industry city the dictatorship had built as its showcase — and rolling through Masan, Changwon, Busan and the whole industrial map, workers struck, occupied, marched, and above all **founded unions**. The commonly cited tallies: **more than 3,300 labor disputes in about three months, involving roughly 1.2 million workers** — in a country whose *entire* union membership had been about a million. Nothing on this scale had ever happened in Korean history; little on this scale has happened anywhere. For comparison inside this track: Poland's August 1980 produced one negotiated agreement and one union; Korea's 1987 produced thousands of strikes and thousands of unions, plant by plant, in a single season.
+
+**What they won, immediately.** Wage settlements commonly in the range of **25–30%**; the end of the military-style discipline of the developmental factory (compulsory morning drills, hair and uniform inspections, managers empowered to slap); and, above all, **the union itself** — by the end of 1988, over **3,400 new unions** had been founded, and total union membership roughly doubled toward its historic peak (just under one wage worker in five) by 1989.
+
+**Who struck, and why it matters.** 1987's strikers were centrally the **men of heavy industry** — shipyards, auto plants, steel — a different workforce from the female light-industry unions of the 1970s (Lesson 5). This is where the Korean labor movement acquired the shape it has today: massive, militant, concentrated **enterprise unions inside the chaebol** — and it is also where the seed of Section 4's problem was planted, because a movement built on the strongest workers of the biggest firms will one day have to answer for everyone else.
+
+**The Poland cross-link, precisely.** In the Poland course, a union forced open a one-party state: the union came first, democratization followed. Korea ran the arrow the other way: **the democratic opening came first — by weeks — and workers poured through it.** Two sequences, one lesson, and it is one of the most important findings in this whole track: whichever direction the causality runs, *mass worker organization and democratization arrive together*. Authoritarian states understand this, which is exactly why both regimes had treated independent unions as regime threats.
+
+:::reveal Poland 1980 and Korea 1987 both pair mass unionization with democratization — but the causal arrow points in opposite directions. Explain, and state the shared lesson. ||| In Poland the union came first: Solidarność (1980) forced concessions from a one-party state, and democratization followed in 1989. In Korea the democratic opening came first: the June 1987 uprising won direct elections on 29 June, and within weeks workers poured through the opened door — 3,300+ strikes and thousands of new unions by September. The shared lesson: mass worker organization and democratization arrive together, whichever leads — which is why authoritarian states in both countries treated independent unions as threats to the regime itself.
+
+## Sources
+- The Korea Times. (2017, August 2). *Great labor uprising of summer 1987*. https://www.koreatimes.co.kr/opinion/20170802/great-labor-uprising-of-summer-1987
+- libcom.org. (n.d.). *1987: The Great Workers' Struggle in South Korea*. https://libcom.org/article/1987-great-workers-struggle-south-korea
+- Chang, D. (2021). Korean labour movement: The birth, rise and transformation of the democratic trade union movement. In *Routledge Handbook of Contemporary South Korea*. https://labourschool.org/wp-content/uploads/2024/09/Chang-2021-Korean-Labour-Movement-Routledge-Handbook-of-Contemporary-South-Korea.pdf`,
+      recallContent: [
+        {
+          prompt: "What was the Great Workers' Struggle, in numbers?",
+          answer:
+            "July–September 1987: more than 3,300 labor disputes involving roughly 1.2 million workers in about three months — in a country whose entire union membership had been about a million. By the end of 1988 over 3,400 new unions existed, wage settlements commonly ran 25–30%, and membership roughly doubled toward its 1989 peak of just under one wage worker in five.",
+        },
+        {
+          prompt: "Where did the 1987 strike wave begin, and which workforce led it?",
+          answer:
+            "In the Hyundai complexes of Ulsan, the dictatorship's showcase heavy-industry city, spreading through Masan, Changwon and Busan. The strikers were centrally the men of heavy industry — shipyards, autos, steel — a different workforce from the women of the 1970s light-industry unions, and the origin of today's chaebol enterprise-union movement.",
+        },
+      ],
+    },
+    {
+      slug: "korea-two-federations",
+      title: "7 · Two federations, the chaebol, and the enterprise union",
+      section: "Section 3 · 1987 — democracy and the unions arrive together",
+      body: `The unions born in 1987 needed a national home, and the story of where they found one explains almost everything about how Korean labor politics works today — including why Korean union news so often features two federations denouncing each other.
+
+**First, the employer side of the equation: the chaebol.** A *chaebol* is a family-controlled conglomerate — Samsung, Hyundai, LG, SK and their kin — typically sprawling across dozens of legally separate subsidiaries under one founding family's control. The developmental state built them deliberately, channeling credit and export licenses to national champions. They are why Korean bargaining is so concentrated: a single chaebol assembly complex can employ tens of thousands, so **one enterprise union at one subsidiary can be an army — while the economy-wide structure stays fragmented**, because each union stops at its own company's gate. If you took the anchor course, this should ring a bell: it is the **Japanese enterprise union** pattern — the anchor's Japan lesson is the nearest relative — but bolted onto bigger, more confrontational firms, without Japan's tradition of labor–management accommodation. One chaebol deserves its own sentence: **Samsung**, the largest of them all, maintained an explicit no-union management policy for most of its existence; its chairman publicly apologized for union-busting and renounced "union-less Samsung" only in **May 2020** (UPI). Let that date sit next to 1987 for a moment.
+
+**The old house: FKTU.** The Federation of Korean Trade Unions — the single legal federation of the dictatorship years (Lesson 3) — survived democratization and remade itself as a more genuine, if habitually moderate and negotiation-oriented, labor center. It never fully escaped its history in the eyes of the militants, who through the 1970s–80s had a name for state-tamed company unionism: *eoyong* — roughly, "kept" unions.
+
+**The new house: KCTU.** The democratic unions of 1987 refused to join the federation they associated with the state, and after years of semi-clandestine coordination founded the **Korean Confederation of Trade Unions (KCTU)** in **November 1995**. Here is the fact worth pausing on: the KCTU was **illegal at birth** — Korean law then permitted only one national center, and the FKTU held the slot. The confederation that today co-governs Korea's tripartite bodies operated **outside the law until November 1999**, when it finally won legal recognition. A democracy, eight years old, took another eight years to legalize its second union federation. (File that beside the 2021 ILO ratification from Lesson 1 — the same slow-motion pattern.)
+
+**The two-federation reality today.** The two centers are nearly the same size — each organizes roughly 1.1 million workers (the KCTU counted 1,086,618 members at end-2023, per Ministry of Employment and Labor organization-status figures) — but they are culturally distinct: the FKTU more moderate and deal-making, the KCTU more militant, more political, more likely to call the general strike and fill the plaza. Most of the strikes, arrests and damages suits you will meet in Section 5 involve KCTU affiliates. When you read Korean labor news, the federation named in the second paragraph usually tells you what kind of story it is.
+
+**One more date, because the statute matters later.** In December 1996, the government rammed a package of labor-law revisions through a dawn parliamentary session with no opposition present — including easier layoffs. The answer was the biggest strike wave since 1987, led by the then-still-illegal KCTU, and in **March 1997** the laws were re-passed in negotiated form as the **Trade Union and Labor Relations Adjustment Act (TULRAA)** — the statute that still governs Korean unions, strikes, and (crucially for Section 5) what counts as a *lawful* dispute and a *worker*. Learn the acronym; the rest of this course keeps returning to it.
+
+:::reveal The KCTU — today one of Korea's two great union federations — was illegal from its founding in November 1995 until November 1999. Why, and what does the course want you to file this fact next to? ||| Korean law then allowed only one national labor center, and the FKTU — the federation inherited from the dictatorship — held the slot, so the democratic unions' new confederation operated outside the law for four years inside a democracy. The course files it beside Korea's 2021 ratification of ILO Convention 87: the same slow-motion pattern of a democratic Korea taking years or decades to legalize basic freedom-of-association machinery that its own constitution and the world's paper floor already promised.
+
+## Sources
+- Korean Confederation of Trade Unions. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/Korean_Confederation_of_Trade_Unions
+- Federation of Korean Trade Unions. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/Federation_of_Korean_Trade_Unions
+- Chang, D. (2021). Korean labour movement: The birth, rise and transformation of the democratic trade union movement. In *Routledge Handbook of Contemporary South Korea*. https://labourschool.org/wp-content/uploads/2024/09/Chang-2021-Korean-Labour-Movement-Routledge-Handbook-of-Contemporary-South-Korea.pdf
+- UPI. (2020, May 6). *Samsung heir apologizes for no-union policy*. https://www.upi.com/Top_News/World-News/2020/05/06/Samsung-heir-apologies-for-no-union-policy/4521588766924/`,
+      recallContent: [
+        {
+          prompt: "What is a chaebol, and how does it shape Korean union structure?",
+          answer:
+            "A family-controlled conglomerate (Samsung, Hyundai, LG, SK…) spanning dozens of legally separate subsidiaries, deliberately built by the developmental state. Because one complex can employ tens of thousands, a single enterprise union can be an army while the economy-wide structure stays fragmented — each union stops at its own company's gate. It is the Japanese enterprise-union pattern on bigger, more confrontational firms.",
+        },
+        {
+          prompt: "Distinguish the FKTU and the KCTU.",
+          answer:
+            "FKTU: the older federation, the dictatorship era's single legal center, today the more moderate and negotiation-oriented house. KCTU: founded November 1995 by the democratic unions of 1987, illegal until November 1999 (the law allowed one center and FKTU held the slot), today the more militant and political federation. Each organizes roughly 1.1 million workers (KCTU: 1,086,618 at end-2023, MOEL figures).",
+        },
+      ],
+    },
+    {
+      slug: "korea-quiz-3",
+      title: "Section 3 quiz · 1987 and the two federations",
+      section: "Section 3 · 1987 — democracy and the unions arrive together",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What did the June 29 Declaration of 1987 concede?",
+            options: [
+              "Korea's exit from the UN",
+              "Direct presidential elections and restored civil liberties, capitulating to the June Democratic Uprising",
+              "The dissolution of the chaebol",
+              "An immediate 30% national wage rise",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Millions in the streets forced the regime's designated successor to concede direct elections. For this course, June is the fuse; the labor explosion came in July–September.",
+            sourceLessonSlug: "korea-great-workers-struggle",
+          },
+          {
+            prompt: "What are the commonly cited tallies of the Great Workers' Struggle?",
+            options: [
+              "About 100 strikes involving 10,000 workers",
+              "More than 3,300 labor disputes involving roughly 1.2 million workers in about three months (July–September 1987)",
+              "One general strike lasting one day",
+              "Ten thousand strikes over ten years",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In a country whose entire union membership had been about a million, 1.2 million workers joined disputes in a single season — with over 3,400 new unions by the end of 1988.",
+            sourceLessonSlug: "korea-great-workers-struggle",
+          },
+          {
+            prompt: "Where did the 1987 strike wave ignite?",
+            options: [
+              "The Peace Market in Seoul",
+              "The Hyundai complexes of Ulsan, the dictatorship's showcase heavy-industry city",
+              "Jeju Island's tourist hotels",
+              "The Busan fish markets",
+            ],
+            correctIndex: 1,
+            explanation:
+              "From Ulsan it rolled through Masan, Changwon, Busan and the whole industrial map — heavy industry leading, unlike the female-led light industry of the 1970s.",
+            sourceLessonSlug: "korea-great-workers-struggle",
+          },
+          {
+            prompt: "Besides wage rises of commonly 25–30%, what did 1987's strikers win that the course weights most heavily?",
+            options: [
+              "Stock options",
+              "The union itself — thousands of new plant-level unions — plus the end of military-style factory discipline",
+              "A four-day work week",
+              "Free housing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Over 3,400 new unions by end-1988 and membership roughly doubling toward the 1989 peak. The organizational gain outlasted any single wage settlement.",
+            sourceLessonSlug: "korea-great-workers-struggle",
+          },
+          {
+            prompt: "How do the causal arrows of Poland 1980 and Korea 1987 differ?",
+            options: [
+              "They are identical",
+              "Poland: union first, democratization followed (1989). Korea: democratic opening first (June 1987), then workers poured through it within weeks",
+              "Poland: democracy first; Korea: union first",
+              "Neither involved unions",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Opposite arrows, one lesson: mass worker organization and democratization arrive together — which is why authoritarian states treat independent unions as regime threats.",
+            sourceLessonSlug: "korea-great-workers-struggle",
+          },
+          {
+            prompt: "What happened between Park's assassination (1979) and the 1987 breakthrough?",
+            options: [
+              "Immediate democratization",
+              "Another general — Chun Doo-hwan — seized power, crushed the May 1980 Gwangju uprising, and continued the labor regime of the 1970s",
+              "A decade of union-led government",
+              "Korea left the export economy behind",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The dictatorship changed dictators, not character. The dam held until June 1987.",
+            sourceLessonSlug: "korea-great-workers-struggle",
+          },
+          {
+            prompt: "What is a chaebol?",
+            options: [
+              "A government ministry",
+              "A family-controlled conglomerate spanning dozens of legally separate subsidiaries — Samsung, Hyundai, LG, SK — deliberately built by the developmental state",
+              "A type of labor union",
+              "A Buddhist monastery",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The chaebol's scale is why one enterprise union can be an army while the economy-wide structure stays fragmented at the company gate.",
+            sourceLessonSlug: "korea-two-federations",
+          },
+          {
+            prompt: "Which anchor-course pattern is the Korean chaebol enterprise union closest to?",
+            options: [
+              "The Nordic sectoral union",
+              "The Japanese enterprise union — but on bigger, more confrontational firms without Japan's accommodation tradition",
+              "The German works council",
+              "The Polish inter-factory committee",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The anchor's Japan lesson is the nearest relative: unions organized within, and stopping at, the single company.",
+            sourceLessonSlug: "korea-two-federations",
+          },
+          {
+            prompt: "When did Samsung's chairman publicly renounce the group's no-union policy?",
+            options: ["1987", "1999", "May 2020", "1961"],
+            correctIndex: 2,
+            explanation:
+              "Samsung, the largest chaebol, maintained explicit union-free management for most of its existence; the public apology and pledge came only in May 2020 (UPI) — a date the course asks you to sit beside 1987.",
+            sourceLessonSlug: "korea-two-federations",
+          },
+          {
+            prompt: "Why was the KCTU illegal from its founding in 1995 until 1999?",
+            options: [
+              "Its leaders were foreign nationals",
+              "Korean law then permitted only one national labor center, and the FKTU held the slot",
+              "It refused to register paperwork",
+              "It advocated the violent overthrow of the state",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A democracy took until November 1999 to legalize its second union federation — the same slow-motion pattern as the 2021 ILO ratification.",
+            sourceLessonSlug: "korea-two-federations",
+          },
+          {
+            prompt: "How do the FKTU and KCTU compare in size and character today?",
+            options: [
+              "The FKTU is ten times larger and more militant",
+              "They are nearly equal — each roughly 1.1 million members (KCTU: 1,086,618 at end-2023, MOEL) — with the FKTU more moderate and the KCTU more militant and political",
+              "The KCTU absorbed the FKTU in 2005",
+              "Both dissolved in the 1997 crisis",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two houses of similar size, different cultures. Most of Section 5's strikes and damages suits involve KCTU affiliates.",
+            sourceLessonSlug: "korea-two-federations",
+          },
+          {
+            prompt: "What was 'eoyong' unionism?",
+            options: [
+              "A militant strike tactic",
+              "The militants' term for state-tamed, 'kept' company unionism — the charge long aimed at the dictatorship-era FKTU",
+              "A form of profit-sharing",
+              "A Japanese management import",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The vocabulary of the 1970s–80s democratic union movement: unions that formally existed but served management and state.",
+            sourceLessonSlug: "korea-two-federations",
+          },
+          {
+            prompt: "What provoked the winter 1996–97 general strike, and what came of it?",
+            options: [
+              "A pay dispute at one bakery; nothing changed",
+              "The government rammed labor-law revisions (including easier layoffs) through a dawn session with no opposition present; the biggest strike wave since 1987 forced renegotiation, and the laws were re-passed in March 1997 as TULRAA",
+              "An oil shock; the government fell",
+              "A soccer defeat; a national holiday was created",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Trade Union and Labor Relations Adjustment Act of March 1997 still governs Korean unions, lawful disputes, and the definition of 'worker' — the statute at the center of Section 5.",
+            sourceLessonSlug: "korea-two-federations",
+          },
+          {
+            prompt: "Who led the 1996–97 general strike?",
+            options: [
+              "The then-still-illegal KCTU",
+              "The employers' federation",
+              "The national police",
+              "The Ministry of Labor",
+            ],
+            correctIndex: 0,
+            explanation:
+              "An illegal federation led the country's biggest strike wave since 1987 and forced a sitting government to renegotiate legislation — two years before it was itself legalized.",
+            sourceLessonSlug: "korea-two-federations",
+          },
+          {
+            prompt: "Why does the course say 1987 'planted the seed' of the problem taught in Section 4?",
+            options: [
+              "Because 1987's unions banned women from membership by statute",
+              "Because the movement was rebuilt around the strongest workers of the biggest firms — chaebol enterprise unions — and would one day have to answer for everyone outside those gates",
+              "Because the strikes bankrupted the country",
+              "Because the unions abolished the minimum wage",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A movement anchored in regular employees of giant firms structurally struggles to cover the fragmented, outsourced, non-regular workforce that came after 1997 — Section 4's subject.",
+            sourceLessonSlug: "korea-great-workers-struggle",
+          },
+        ],
+      },
+    },
   ],
 };
