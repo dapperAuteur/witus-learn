@@ -375,5 +375,293 @@ Keep the four questions in hand. Sections 2 through 5 are India's long answers; 
         ],
       },
     },
+
+    // ────────────── SECTION 2 · THE FEDERATIONS AND THEIR PARTIES ──────────────
+    {
+      slug: "india-federations-and-parties",
+      title: "4 · Every federation has a party",
+      section: "Section 2 · The unions that exist — and the parties that own them",
+      body: `Before this course reaches the workers the law cannot see, meet the unions the law *can* see — because they are strange in their own way, and the strangeness is a third data point in a pattern this track has been building.
+
+**The landscape.** India's union movement is organised into **central trade union organisations (CTUOs)** — national federations that pull together thousands of registered enterprise- and industry-level unions. The big ones, with founding dates and the detail that matters:
+
+| Federation | Founded | Political family |
+| --- | --- | --- |
+| **AITUC** — All India Trade Union Congress | 1920 | The Communist Party of India (CPI) |
+| **INTUC** — Indian National Trade Union Congress | 1947 | The Indian National Congress |
+| **HMS** — Hind Mazdoor Sabha | 1948 | The socialist stream of the independence movement |
+| **BMS** — Bharatiya Mazdoor Sangh | 1955 | The RSS (Rashtriya Swayamsevak Sangh), the ideological parent of the governing BJP |
+| **CITU** — Centre of Indian Trade Unions | 1970 | The Communist Party of India (Marxist), after the communist split |
+
+Read the right-hand column again. **Every major federation is tied to a political party or political family.** AITUC predates independence — Indian unionism is older than the Indian state — and INTUC was founded in 1947, the year of independence, precisely so that the Congress party would have a labour wing that communists did not control. When India's communists split in 1964, the union movement split with them (CITU, 1970). And the BMS was built by the RSS as an explicitly non-Marxist, "nationalist" labour organisation — today aligned with the family of the governing party, which puts it in the extraordinary position of being a union federation whose political parent runs the government it must bargain against.
+
+**Now place this on the track's map, because you have seen politics-and-unions entangled twice before, and neither time looked like this.** In **Poland**, the union came first and *created* a political force: Solidarność brought down the party-state. In **China**, the party came first and *owns* the union: the ACFTU is an organ of the party-state, and no second federation may exist. **India is a third arrangement: many parties, each with its own union.** The union movement is free, plural, competitive — and *divided along party lines*, so that workers in the same factory may belong to rival federations whose first loyalty runs to rival parties. Competition guarantees independence from the state; it also guarantees fragmentation.
+
+**How big are they? Honest answer: nobody currently knows.** Federations report membership claims in the tens of millions each, and the claims are self-declared. The Ministry of Labour runs periodic **membership verification** exercises — but the last one *completed*, whose results were formally used (for things like allocating seats at the ILO and on tripartite bodies), dates to **2002**, when the BMS was verified as the largest federation at about **6.2 million members**, with INTUC (~3.9m), AITUC (~3.3m) and CITU (~2.7m) behind it. A verification begun around 2011 was never brought to a clean, accepted conclusion. So this course does what it always does with contested numbers: gives you the last verified figure with its date, tells you the claims are claims, and refuses to average them. **A country of nine-tenths informal workers does not even have a current official count of its formal union members** — sit with that for a second; it is not an accident, it is a symptom.
+
+*(One more federation belongs in this picture, and it fits no row of the table above: a union of self-employed women, tied to no party, that grew from a 1972 registration fight into millions of members. It gets its own section — Section 3.)*
+
+:::reveal Poland, China, India — three entanglements of unions and political power. State each in one line. ||| Poland: the union came first and destroyed the party-state (Solidarność). China: the party came first and owns the single permitted federation (ACFTU). India: many parties, each with its own union federation — free and plural, but fragmented along party lines, with rival federations competing inside the same workforce.
+
+## Sources
+- Ministry of Labour & Employment, Government of India. (n.d.). *Verification of membership of trade unions* [2002 general verification results as reported]. https://labour.gov.in/
+- Bharatiya Mazdoor Sangh. (n.d.). *History of trade union movement and BMS*. https://www.bms.org.in/history-of-trade-union-movement-and-bms/
+- Centre of Indian Trade Unions. (n.d.). *About CITU*. https://www.citucentre.org/
+- International Labour Organization & Institute for Human Development. (2024). *India Employment Report 2024*. ILO. https://www.ilo.org/sites/default/files/2024-08/India%20Employment%20-%20web_8%20April.pdf`,
+      recallContent: [
+        {
+          prompt: "Name the five major Indian union federations, their founding years, and their political families.",
+          answer:
+            "AITUC (1920, Communist Party of India), INTUC (1947, Indian National Congress), HMS (1948, the socialist stream), BMS (1955, the RSS — the BJP's ideological parent), CITU (1970, CPI(M)). Every major federation has a party.",
+        },
+        {
+          prompt: "What is the last completed government verification of union membership, and what did it find?",
+          answer:
+            "The 2002 verification: BMS largest at about 6.2 million, then INTUC (~3.9m), AITUC (~3.3m), CITU (~2.7m). Later claims are self-declared and a subsequent verification was never cleanly completed — so no current official count exists.",
+        },
+      ],
+    },
+    {
+      slug: "india-general-strikes",
+      title: "5 · The 250-million-worker strike (and what that number is)",
+      section: "Section 2 · The unions that exist — and the parties that own them",
+      body: `On **9 July 2025**, a forum of **ten central trade union federations** — INTUC, AITUC, HMS, CITU, and six others, along with **SEWA** (Section 3) — called a one-day nationwide general strike, a *Bharat bandh*. Banking, insurance, postal services, coal mining and public transport were disrupted across much of the country. The organisers' first demand: **repeal of the four Labour Codes** (Section 4). Their headline claim: **over 250 million participants** (ITUC-Asia Pacific, 2025; Business Standard, 2025).
+
+Stop at that number and do to it what this course did to the 90% in lesson 1.
+
+**What "250 million" is:** the organisers' own estimate, announced around the strike. **What it is not:** a turnstile count. Nobody counts a one-day strike across a country of 1.4 billion; there is no register of strikers, no independent audit, and much of the claimed participation is in sectors — agricultural labour, construction, street vending — where "on strike" and "not working today" cannot be told apart from outside. Similar claims accompanied earlier general strikes (2016, 2019, 2020, 2022), each billed at 150–250 million. **This course neither repeats the number as fact nor dismisses it as fiction: it attributes it.** "The unions claimed over 250 million" is a true sentence; "250 million struck" is an unverifiable one. That is not pedantry — it is the difference between reporting and amplifying, and you now know to apply it to every "largest strike in history" headline you will ever read.
+
+**Even discounted heavily, though, something real is happening — and it is worth seeing what.** These strikes reliably shut down banks, mines, ports and state transport across whole regions; even skeptical coverage concedes participation in the tens of millions. That would make them among the largest coordinated work stoppages anywhere on earth. So hold both facts at once: Indian unions represent a *small verified fraction* of a workforce that is 90% informal — and they can produce, at intervals, the biggest strikes in the world.
+
+**How can both be true? Because the Indian general strike is a different instrument from the strikes in the anchor course.** Homestead, Pullman, the Flint sit-down — those were strikes *against an employer*, aimed at a contract. The Indian *bharat bandh* is a strike **against a government, aimed at policy**: labour codes, privatisation, minimum-wage demands, social-security coverage. It is bargaining conducted at the only table where India's fragmented, party-tied federations all sit on the same side — and, crucially, it is the one form of industrial action an **informal worker can join**, because you need no employer to stay home, shut your stall, or march. The paradox of lesson 4 resolves: federations too divided to bargain jointly with any employer, representing a workforce mostly outside employment, converge once every year or two on the single act that requires neither unity of contract nor an employer at all.
+
+**Note the irony in the target.** The unions' central demand in 2025 was repeal of the Labour Codes — laws whose stated purpose includes *extending* rights (a universal minimum wage, social security for gig workers) to the informal majority. Why would unions strike against that? Section 4 lays out what the Codes actually say, what the federations object to, and why the honest answer is "both sides have a case" — dated, as always.
+
+:::reveal "Over 250 million workers joined the 9 July 2025 general strike." What is the epistemically careful version of that sentence, and why? ||| "The organising unions claimed over 250 million participants." The figure is the organisers' own estimate — there is no independent count of a one-day strike across a country of 1.4 billion, and in informal sectors striking is indistinguishable from not working that day. Attribute the number; don't assert or dismiss it.
+
+## Sources
+- ITUC-Asia Pacific. (2025, July). *Bharat Bandh: India's workers rise in unprecedented unity against anti-labour policies*. https://www.ituc-ap.org/news-and-updates/bharat-bandh-indias-workers-rise-in-unprecedented-unity-against-anti-labour-policies
+- Business Standard. (2025, July 8). *Bharat Bandh on July 9: Over 250 million workers to join nationwide strike*. https://www.business-standard.com/india-news/bharat-bandh-july-9-250-million-workers-strike-public-sector-privatisation-125070800273_1.html
+- British Safety Council India. (2025, July). *Bharat Bandh sees over 250 million workers join nationwide strike against 'anti-worker' policies*. https://www.britsafe.in/safety-management-news/2025/bharat-bandh-sees-over-250-million-workers-join-nationwide-strike-against-anti-worker-policies`,
+      recallContent: [
+        {
+          prompt: "Why is the nationwide general strike the one industrial action an informal worker can join?",
+          answer:
+            "Because it requires no employer: you stay home, shut your stall, or march. Enterprise strikes need an employment relationship; the bharat bandh is aimed at the government and at policy, so the informal nine-tenths can take part.",
+        },
+        {
+          prompt: "How do Indian general strikes differ in TARGET from the strikes in the anchor course (Homestead, Pullman, Flint)?",
+          answer:
+            "Anchor-course strikes ran against an employer, aimed at a contract. The Indian bharat bandh runs against the government, aimed at policy — labour codes, privatisation, social security. It is bargaining with the state, by the only means available to a fragmented movement.",
+        },
+      ],
+    },
+    {
+      slug: "india-quiz-2",
+      title: "Section 2 quiz · Federations, parties, and the general strike",
+      section: "Section 2 · The unions that exist — and the parties that own them",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is a CTUO in the Indian labour landscape?",
+            options: [
+              "A government wage board",
+              "A central trade union organisation — a national federation of thousands of registered unions",
+              "A type of collective agreement",
+              "A labour court",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The CTUOs (AITUC, INTUC, BMS, CITU, HMS and others) are the national federations; each major one is tied to a political party or family.",
+            sourceLessonSlug: "india-federations-and-parties",
+          },
+          {
+            prompt: "Which federation is the oldest, and what does its 1920 founding date tell you?",
+            options: [
+              "INTUC — unions began at independence",
+              "AITUC — Indian unionism is older than the Indian state itself",
+              "BMS — unions began with the RSS",
+              "CITU — unions began with the communist split",
+            ],
+            correctIndex: 1,
+            explanation:
+              "AITUC was founded in 1920, twenty-seven years before independence. The Indian union movement predates the Indian state.",
+            sourceLessonSlug: "india-federations-and-parties",
+          },
+          {
+            prompt: "Why was INTUC founded in 1947?",
+            options: [
+              "To merge all existing unions",
+              "So the Congress party would have a labour wing not controlled by communists",
+              "To represent government employees only",
+              "As a condition of ILO membership",
+            ],
+            correctIndex: 1,
+            explanation:
+              "INTUC gave the Congress its own union federation in the year of independence — party-tied unionism was built into the new state from day one.",
+            sourceLessonSlug: "india-federations-and-parties",
+          },
+          {
+            prompt: "What is politically extraordinary about the BMS's position today?",
+            options: [
+              "It is banned",
+              "It is a union federation whose ideological parent (the RSS) is also the parent of the governing party it must bargain against",
+              "It has no members",
+              "It is run by the ILO",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The BMS (founded 1955) belongs to the RSS family, as does the governing BJP — a labour wing and a government grown from the same root.",
+            sourceLessonSlug: "india-federations-and-parties",
+          },
+          {
+            prompt: "What happened to the union movement when India's Communist Party split in 1964?",
+            options: [
+              "Nothing — unions stayed united",
+              "The union movement split with the party: CITU was founded in 1970 alongside AITUC",
+              "All communist unions were dissolved",
+              "The BMS absorbed both wings",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Party splits become union splits when every federation has a party — CITU (CPI(M)) split off from the AITUC (CPI) orbit.",
+            sourceLessonSlug: "india-federations-and-parties",
+          },
+          {
+            prompt: "Poland, China, India — how does this course distinguish their three union-politics entanglements?",
+            options: [
+              "They are identical",
+              "Poland: union created a political force that destroyed the party-state; China: the party owns the one permitted union; India: many parties, each with its own union",
+              "Poland: party owns union; China: union owns party; India: no unions",
+              "All three have a single state-run federation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Three different orderings of union and party. India's version is free and plural — and fragmented along party lines.",
+            sourceLessonSlug: "india-federations-and-parties",
+          },
+          {
+            prompt: "What is the trade-off of India's many-parties-many-unions arrangement?",
+            options: [
+              "Independence from the state, at the price of fragmentation — rival federations compete inside the same workforce",
+              "Unity, at the price of state control",
+              "High membership, at the price of illegality",
+              "There is no trade-off",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Competition guarantees no single party-state can own labour; it also means workers in one factory may belong to federations loyal to rival parties.",
+            sourceLessonSlug: "india-federations-and-parties",
+          },
+          {
+            prompt: "When was the last completed, formally used government verification of union membership, and who was largest?",
+            options: [
+              "2019 — INTUC",
+              "2002 — BMS, at about 6.2 million verified members",
+              "2011 — CITU",
+              "There has never been one",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The 2002 verification (BMS ~6.2m, INTUC ~3.9m, AITUC ~3.3m, CITU ~2.7m) is the last completed one; later claims are self-declared and a 2011-era exercise was never cleanly concluded.",
+            sourceLessonSlug: "india-federations-and-parties",
+          },
+          {
+            prompt: "Why does this course refuse to state current membership figures for the federations?",
+            options: [
+              "Membership is a state secret",
+              "Because current claims are self-declared and no completed verification supports them — the course gives the last verified figure (2002) with its date instead",
+              "Because membership is zero",
+              "Because the ILO forbids publishing them",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Same discipline as the informality statistic: a number needs a source and a date, and 'the union says so' is an attribution, not a verification.",
+            sourceLessonSlug: "india-federations-and-parties",
+          },
+          {
+            prompt: "What was the organisers' first demand in the 9 July 2025 general strike?",
+            options: [
+              "A four-day work week",
+              "Repeal of the four Labour Codes",
+              "Nationalisation of all industry",
+              "India's exit from the ILO",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The forum of ten federations demanded repeal of the Codes — the laws Section 4 examines. Ten rival federations converging on one demand is itself the story.",
+            sourceLessonSlug: "india-general-strikes",
+          },
+          {
+            prompt: "What exactly is the '250 million' figure attached to the 9 July 2025 strike?",
+            options: [
+              "A government census of strikers",
+              "The organising unions' own claimed participation figure — attributed by this course, not asserted",
+              "An ILO-audited count",
+              "The number of union members in India",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No independent count of a one-day strike across 1.4 billion people exists. 'The unions claimed over 250 million' is true; '250 million struck' is unverifiable.",
+            sourceLessonSlug: "india-general-strikes",
+          },
+          {
+            prompt: "Why can't strike participation be verified in India's informal sectors?",
+            options: [
+              "Strikes are illegal there",
+              "Because from outside, 'on strike' and 'not working today' are indistinguishable for a street vendor or day labourer",
+              "Because informal workers never stop working",
+              "Because the government hides the data",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No employer, no shift roster, no picket line to cross — participation in the informal economy is unobservable, which is exactly why claims must be attributed.",
+            sourceLessonSlug: "india-general-strikes",
+          },
+          {
+            prompt: "How does the Indian bharat bandh differ from the anchor course's strikes in its target?",
+            options: [
+              "It does not differ",
+              "It is aimed at the government and its policies, not at an employer and a contract",
+              "It is aimed at foreign companies",
+              "It is aimed at the courts",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Homestead and Pullman ran against employers. The general strike is bargaining with the state — the one table where all federations sit on the same side.",
+            sourceLessonSlug: "india-general-strikes",
+          },
+          {
+            prompt: "Why is the general strike the one industrial action open to informal workers?",
+            options: [
+              "Because the law exempts them from strike notice",
+              "Because it requires no employer — staying home, shutting a stall, or marching needs no employment relationship",
+              "Because unions pay them to participate",
+              "Because it happens on public holidays",
+            ],
+            correctIndex: 1,
+            explanation:
+              "An enterprise strike presupposes an employer; a political general strike does not. That is why a 90%-informal workforce can still produce world-scale stoppages.",
+            sourceLessonSlug: "india-general-strikes",
+          },
+          {
+            prompt:
+              "The unions struck in 2025 against Labour Codes that extend a universal minimum wage and gig-worker social security. What does the course say about this apparent irony?",
+            options: [
+              "The unions misread the laws",
+              "That both sides have a case, and Section 4 lays out the Codes' text and the objections — dated, as always",
+              "The Codes secretly abolish unions",
+              "The strike was actually in support of the Codes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Codes give with one hand (coverage) and take with the other (thresholds, notice rules) — the honest treatment is the statute text plus both arguments, not a verdict by headline.",
+            sourceLessonSlug: "india-general-strikes",
+          },
+        ],
+      },
+    },
   ],
 };
