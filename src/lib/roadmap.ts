@@ -90,6 +90,17 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   **Quick-recall** cards: click-to-reveal answer + "I got it / Missed it" **self-grade**
   (\`lessons.recall_content\` + authoring in the lesson editor). Grades land in \`recall_attempts\`;
   the teacher course page shows **recall accuracy** (in-lesson signal vs quiz). Migration 0022.
+- ✅ **Check-yourself self-grading + history** (\`feat/reveal-self-grading\`) — every inline
+  \`:::reveal\` **Check yourself** card (1,045 across the catalog — the FAA course's end-of-lesson
+  checks included) now offers the same "I got it / Missed it" self-grade as the quick-recall cards;
+  fixed at the COMPONENT level, so it covers every course at once. Grades reuse \`recall_attempts\`
+  with **no migration**: reveals store a negative, prompt-hashed \`prompt_index\` (identity survives
+  reorders; sign discriminates check vs card — \`src/lib/reveals.ts\`), verified server-side against
+  the lesson body and attributed to the ACTIVE learner (act-as safe). Signed-out reveals still work
+  (sign-in nudge, never an error); offline grades queue in the outbox and sync on reconnect.
+  \`/dashboard\` grows a **Check-yourself history** section: **review again** (spaced-recall assist —
+  last-missed or stale-missed items), **recently missed** (with lesson links), and **miss-rate per
+  course**. (check-yourself-tracking.md)
 - ✅ **Course-experience batch** (\`feat/course-experience\`) — **mark-complete** no longer jumps the
   page (flips in place + offers "Next lesson" on linear courses); **curriculum feedback** mirrors to
   the WitUS Inbox for the owner's courses + \`pnpm feedback:list\` CLI + each teacher sees only their
