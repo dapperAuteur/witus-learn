@@ -819,6 +819,27 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Arizona is one new data file + regenerate, **zero hand-edited code change**. 18 isolation tests
   incl. claims-fully-wired and filter-never-readmits proofs. **No migration, no seed.**
 
+- 🔧 **Arizona + Arkansas mapped — states #3 and #4, proving the concept-hub price**
+  (\`feat/standards-az-ar\`) — \`/standards?state=AZ\` and \`?state=AR\` now render real pages: two new
+  data files + \`pnpm gen:standards\`, zero code change, exactly as the model promised. **Arizona: 46
+  standards (22 full, 24 partial) across 6 ADE frameworks** — the 2018 History & Social Science
+  anchor standards (\`state-civics-az\` is the 1:1 civics flagship; HS.G1.1 is near-verbatim what the
+  Commodity Map is for), Arizona's own 2016 ELA (not Common Core), the 2018 Science Standards
+  (**verified NOT NGSS** — NRC-Framework-based, so the shared NGSS file correctly does not apply),
+  Health (Spring 2010 Strand/Concept/PO), and PE (May 2015). All five documents fetched via the
+  **Wayback Machine** (azed.gov 403s us; snapshots recorded in \`data/az.ts\`). **Arkansas: 59
+  standards (28 full, 31 partial) across 11 DESE frameworks** — the December 2022 course-based
+  social studies revision (Civics, U.S. Government, Economics, World Geography, World History,
+  U.S. History Since 1929, **African-American History** — the AR course that actually names the
+  Great Migration), the 2023 K-12 ELA, the 2016 Earth Science (NGSS-derived, Arkansas's own codes
+  and clarification statements), and the PFL/Recreational Sports PE course frameworks — all fetched
+  from dese.ade.arkansas.gov directly. Honesty highlights published on the pages: Arkansas's 2022
+  civics standards are **overwhelmingly federal**, so the Arkansas flagship's structure lessons
+  (1874 constitution, seven elected executives, elected Supreme Court) have **no code to cite** and
+  say so; Arizona's HS.C2.5 (AZ-vs-US rights comparison) is rejected despite being the flagship's
+  home framework; U.S. History Since 1929 starts too late for the Gilded Age labor units. **No
+  migration, no seed.**
+
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
   → regen embeddings. Set \`PLATFORM_OWNER_EMAIL=bam@awews.com\`.

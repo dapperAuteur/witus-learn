@@ -697,6 +697,60 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Arizona Civics, Lesson 8 · Get involved where you live in Arizona"],
   },
 
+  // ── State civics: Arkansas (state-civics-ar was written FROM Arkansas's own sources) ──
+  // NOTE: Arkansas's 2022 Civics and U.S. Government standards are overwhelmingly FEDERAL.
+  // The flagship's Arkansas-structure lessons (the 1874 constitution, the seven elected
+  // executives, the nonpartisan elected Supreme Court) have no Arkansas standard to cite, so
+  // they carry no claim here — data/ar.ts publishes that gap in its notClaimed list.
+  {
+    id: "civics.ar-bill-process",
+    claim: "Teaches how a bill becomes an Arkansas law in the General Assembly, and the Amendment 7 petition route beside it.",
+    courseSlugs: ["state-civics-ar"],
+    lessons: ["Arkansas Civics, Lesson 4 · How a bill becomes an Arkansas law"],
+  },
+  {
+    id: "civics.ar-local-government",
+    claim: "Teaches Arkansas local government as Arkansas's: 75 counties run by a county judge and a quorum court of JPs, no townships.",
+    courseSlugs: ["state-civics-ar"],
+    lessons: [
+      "Arkansas Civics, Lesson 5 · Local government in Arkansas: 75 counties, quorum courts, no townships",
+      "Arkansas Civics, Lesson 8 · Get involved where you live in Arkansas (quorum court and city council)",
+    ],
+  },
+  {
+    id: "civics.ar-election-law",
+    claim: "Teaches Arkansas's election specifics: photo ID, no-excuse early voting but excuse-required mail voting, and the 30-day registration deadline.",
+    courseSlugs: ["state-civics-ar"],
+    lessons: ["Arkansas Civics, Lesson 6 · Elections in Arkansas: ID, early voting, and a 30-day deadline"],
+  },
+  {
+    id: "civics.ar-initiative-flux",
+    claim: "Teaches Amendment 7's initiative and referendum, and that Arkansas's petition rules were recently tightened and remain in flux.",
+    courseSlugs: ["state-civics-ar"],
+    lessons: [
+      "Arkansas Civics, Lesson 7 · The citizen initiative: recently tightened & in flux (flagged)",
+    ],
+  },
+  {
+    id: "civics.ar-get-involved",
+    claim: "Teaches getting involved where you live, Arkansas edition.",
+    courseSlugs: ["state-civics-ar"],
+    lessons: ["Arkansas Civics, Lesson 8 · Get involved where you live in Arkansas"],
+  },
+
+  // ── Federalism powers taxonomy (used by states whose standards name it) ──
+  {
+    id: "civics.federal-powers-taxonomy",
+    claim: "Teaches the powers taxonomy by name: enumerated/delegated, implied (Necessary and Proper Clause), reserved (Tenth Amendment), and concurrent powers — with McCulloch v. Maryland.",
+    courseSlugs: ["state-vs-federal"],
+    lessons: [
+      "State vs Federal Power, Lesson 2 · Three kinds of power: enumerated, implied, reserved",
+      "State vs Federal Power, Lesson 3 · The enumerated powers: Article I, § 8 (the Necessary and Proper Clause)",
+      "State vs Federal Power, Lesson 6 · Concurrent powers: what both levels share",
+      "State vs Federal Power, Lesson 7 · McCulloch v. Maryland (1819): implied powers and supremacy",
+    ],
+  },
+
   // ══ History catalog ═════════════════════════════════════════════════════════
   {
     id: "history.gilded-age-labor",

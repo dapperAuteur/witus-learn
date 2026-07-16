@@ -49,9 +49,11 @@ A teacher, homeschooler, or administrator picks their **state** and sees which c
 of that state's published standards — exact code, the standard's **verbatim text**, the lessons
 that cover it, a link to the publisher's document, the date it was retrieved, and an honest
 `full` | `partial` flag (partials must say what's missing; a test enforces it). Filterable by
-subject and course, printable, and copyable as plain text for a state filing. States without a
-verified mapping render as "not mapped yet" (Arizona and Arkansas are next), never as errors, and
-each mapped state publishes its **"What we don't claim"** rejections alongside the claims.
+subject and course, printable, and copyable as plain text for a state filing. **Mapped so far:
+Indiana, Washington D.C., Arizona, and Arkansas** — each with its state-civics flagship course
+mapped 1:1 where the state's own standards allow. States without a verified mapping render as
+"not mapped yet", never as errors, and each mapped state publishes its **"What we don't claim"**
+rejections alongside the claims.
 
 The data model is a concept hub built to reach all 51 jurisdictions without repeating work:
 [src/lib/standards/claims.ts](src/lib/standards/claims.ts) analyzes the catalog **once** into
