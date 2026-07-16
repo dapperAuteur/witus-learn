@@ -1052,7 +1052,7 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
             prompt: "What happened on 3 December 1997?",
             options: [
               "Korea hosted the Olympics",
-              "Korea signed onto an IMF-led rescue package of roughly $58 billion — then the largest in IMF history — with labor-flexibility conditions attached",
+              "Korea signed its letter of intent for an IMF-led rescue package of roughly $58 billion — then the largest ever assembled — with labor-flexibility conditions attached",
               "The KCTU was founded",
               "Korea left the OECD",
             ],
@@ -1242,6 +1242,325 @@ Register the pattern: the growth sector of Korean labor organizing in this centu
             explanation:
               "The through-line of the whole track — who is outside the protected category? — at its most statistically developed: the census bureau publishes the divide's exact size every August.",
             sourceLessonSlug: "korea-non-regular-divide",
+          },
+        ],
+      },
+    },
+
+    // ────────────── SECTION 5 · THE LAWSUIT AS A WEAPON ──────────────
+    {
+      slug: "korea-ssangyong",
+      title: "11 · Ssangyong, 2009: seventy-seven days, then the bill",
+      section: "Section 5 · Question 4 today — the lawsuit as a weapon",
+      body: `Now the mechanism this course exists to teach — the one the track proposal flagged as something you will not see anywhere else: **destroying a striker financially, through the civil courts, without ever criminalizing the strike.** It is best taught through the case that made it a national issue.
+
+**The strike.** In early 2009, Ssangyong Motor — a mid-sized automaker in Pyeongtaek, south of Seoul, then in bankruptcy protection — announced restructuring that would shed roughly 2,600 workers, over a third of its workforce. In **May 2009**, workers of the Korean Metal Workers' Union occupied the paint shop and held the plant for **77 days**. The end, in August 2009, looked like a small war and was broadcast live: **police commandos rappelling from helicopters onto the factory roof**, tear gas, taser guns, workers with metal pipes on one side and shield walls on the other. The occupation was broken; the layoffs stood.
+
+**Then came the part this lesson is about — the bill.** The strike had been ruled illegal. So the company sued the union **and individual workers** for the production it had lost; the **state sued too** — the national police sought damages for injured officers and destroyed equipment, including a damaged helicopter; and the company's insurer joined with its own claim. Reported claims ran to the tens of billions of won. Courts ordered **provisional seizure** (*gapryu*) against defendants while the litigation ran — the freezing of wages, severance pay, even homes, **before any final judgment**. In 2013–14, courts ordered strikers and their union to pay roughly **4.7 billion won** (then about $4.3 million) to the company. Individual assembly-line workers were now personally, jointly liable for corporate-scale sums that no wage could ever repay — with their pay packets garnished in the meantime.
+
+**What that does to human beings.** In the decade after the strike, Korean media and the workers' own association counted, one by one, the deaths of laid-off and reinstated-pending Ssangyong workers and their family members — suicides prominent among them, alongside stress-linked illness. **By 2018 the widely reported count stood around thirty** (counts vary with the period and definition used; Korean outlets reported the "30th death" that year). Medical surveys of the dismissed workers found post-traumatic stress at rates researchers compared to combat veterans. When Korean unionists say a damages suit is a weapon, this is the decade they mean: a worker who will never see a courtroom verdict can still live under a frozen bank account, a garnished severance, and a debt with eleven digits.
+
+**The long legal coda — dated, because it is still moving.** Korean high courts spent the 2010s and 2020s trimming these awards without abolishing the mechanism. In **June 2023**, Korea's Supreme Court overturned the damages award against the metalworkers' union and sent it back down, ruling the company's payments to returning workers could not be counted as strike losses — cutting the principal by about a third (Korea Times). In late 2022 the Court had similarly pared back the state's helicopter claims. Note the shape of these rulings: **relief arrived, at the highest court, more than thirteen years after the strike** — after the seizures, the garnishments, and the funerals. The mechanism's power was never mainly the final judgment. It was the years in between.
+
+**File this precisely.** Under the anchor's Question 4, the dictatorship's answer was the policeman (Sections 2–3). The democracy's answer became the plaintiff. It is a colder instrument, and — as the yellow-envelope fight two lessons from now shows — it proved far harder to abolish, because it wears the clothes of ordinary civil law: who could object to a company recovering its losses?
+
+:::reveal The course says the power of Korea's anti-strike damages suits "was never mainly the final judgment. It was the years in between." What does that mean, concretely, in the Ssangyong case? ||| Courts ordered provisional seizure (gapryu) — freezing wages, severance and homes — while litigation ran, before any final judgment. Individual workers ordered in 2013–14 to pay ~4.7 billion won lived for years under garnished pay and eleven-digit joint debt; by 2018 media counted around thirty deaths among laid-off workers and family members, suicides prominent among them. When the Supreme Court finally trimmed the awards in June 2023 — thirteen-plus years after the strike — the seizures, the poverty and the funerals had already happened. The process, not the verdict, is the punishment; that is what makes the lawsuit a weapon.
+
+## Sources
+- The Korea Times. (2023, June 15). *Top court orders reduction in union's compensation to SsangYong over strike*. https://www.koreatimes.co.kr/www/nation/2023/08/113_353048.html
+- Labor Notes. (2021, October). *The real-life auto strike behind the runaway Netflix hit Squid Game*. https://labornotes.org/blogs/2021/10/real-life-auto-strike-behind-runaway-netflix-hit-squid-game
+- The Korea Times. (2018). *21 fired Ssangyong employees, family members dead since 2009*. http://www.koreatimes.co.kr/www/tech/2021/04/693_107378.html
+- Peoples Dispatch. (2020, January 13). *For the dismissed workers of the 2009 Ssangyong Motors strike, the struggle continues*. https://peoplesdispatch.org/2020/01/13/for-the-dismissed-workers-of-the-2009-ssangyong-motors-strike-the-struggle-continues/`,
+      recallContent: [
+        {
+          prompt: "What is provisional seizure (gapryu), and why does it make the damages suit so potent?",
+          answer:
+            "A court order freezing a defendant's assets — wages, severance pay, homes — while litigation runs, before any final judgment. Because anti-strike damages cases can run a decade or more (Ssangyong's reached the Supreme Court in June 2023, 13+ years after the 2009 strike), workers live for years under garnished pay and corporate-scale joint debt regardless of the eventual verdict. The process is the punishment.",
+        },
+        {
+          prompt: "Summarize the Ssangyong 2009 strike and its human aftermath.",
+          answer:
+            "Facing ~2,600 layoffs, metalworkers occupied the Pyeongtaek plant for 77 days until police commandos rappelling from helicopters broke it in August 2009. The company, its insurer and the state then sued the union and individual workers; courts ordered ~4.7 billion won in damages (2013–14) with provisional seizures. By 2018 media counted around thirty deaths among laid-off workers and family members (counts vary by period and definition), suicides prominent among them.",
+        },
+      ],
+    },
+    {
+      slug: "korea-truckers",
+      title: "12 · The truckers: when the striker is not legally a worker",
+      section: "Section 5 · Question 4 today — the lawsuit as a weapon",
+      body: `Section 4 introduced Korea's "specially employed" workers — people the law treats as self-employed businesses. This lesson is what Question 4 looks like for them, through the biggest labor confrontation of Korea's 2020s.
+
+**The setup.** Most Korean freight moves behind an **owner-operator**: a driver who owns (and owes payments on) his own truck and hauls under contract for logistics firms. In law he is a one-man business — **not a "worker" under the Trade Union and Labor Relations Adjustment Act** — so the organization that represents tens of thousands of these drivers, **TruckSol** (Cargo Truckers' Solidarity, a division of the KCTU-affiliated public-service and transport union), is in the government's eyes not a union bargaining, but an association of businesses colluding. Same men, same trucks, same grievances — but the legal category decides whether their collective action is a protected strike or something with no protection at all.
+
+**What they wanted.** The **Safe Trucking Freight Rates System** — a minimum-rate scheme introduced in 2020 for container and cement haulage, on the logic that rock-bottom freight rates force drivers into overloading and dangerously long hours (the name is literal: safe *rates*, so drivers need not drive unsafely to eat). The system carried a **three-year sunset — expiry at the end of 2022** — and the truckers' demands were to make it permanent and extend it to more cargo types.
+
+**The confrontation, dated.** TruckSol struck for eight days in **June 2022** (ending with a promise of extension talks), then again from **24 November 2022** — over 9,000 drivers by industry counts, choking container ports, cement plants and fuel depots, with losses employers put in the trillions of won. On **29 November 2022**, the government did something no Korean government had ever done: it invoked the **return-to-work order** provision of the **Trucking Transport Business Act** — on the books since 2004, never before used — against roughly 2,500 cement haulers, with a second order for steel and petrochemical drivers on 8 December. Defiance carried up to **three years in prison or a 30 million won fine**, plus license suspension. Ministers publicly framed the strike as holding the economy hostage; drivers who stayed out risked prosecution *as individuals*, and prosecutors and regulators opened parallel inquiries against the union. On **9 December 2022**, TruckSol's members voted to end the strike, having won none of their demands. The safe-rates system **lapsed on 31 December 2022.**
+
+**The international echo — presented both ways.** The KCTU and global union federations complained to the **ILO**, arguing that ordering individual strikers back to work under criminal penalty violates the freedom-of-association conventions Korea had ratified the previous year; ILO bodies took the matter up and communicated with Seoul (The Diplomat). The government's position was that the orders were lawful emergency powers over a critical industry, applied to business operators rather than to workers — which is, note carefully, **the legal category doing the work again**: classify the striker as a business, and a strike-breaking order becomes market regulation. This dispute over Korea's compliance remained a live matter before ILO supervisory bodies as of this course's writing (mid-2026); check current status before citing an outcome.
+
+**Why this lesson matters beyond trucking.** Put the two halves of Question 4 side by side now. A *worker* who strikes illegally in Korea faces the Ssangyong mechanism — the damages suit. A *non-worker* who strikes faces this one — criminalized defiance of an administrative order, because his strike was never a strike at all. Between them, the two mechanisms bracket exactly the people Section 4 taught you about: the category "worker" decides which weapon you face, and for four in ten it was never certain the category included them. That is why the statute's definitions — TULRAA's two opening articles — became the most fought-over sentences in Korean politics. The next lesson is that fight.
+
+:::reveal In the 2022 truckers' strike, the government insisted its return-to-work orders were not strike-breaking but regulation of businesses. Explain how the legal category of the driver does the work in that argument. ||| Owner-operator truckers are classed as self-employed businesses, not "workers" under TULRAA — so TruckSol's stoppage was, legally, not a strike by workers (which the constitution and ILO conventions protect) but a collective refusal by transport operators. Reclassified that way, an order forcing individuals back to driving under threat of three years' prison or a 30 million won fine becomes 'emergency market regulation' rather than compelled strike-breaking. The whole dispute — including the ILO complaints under the conventions Korea ratified in 2021 — turns on whether the category, or the reality of dependent work, controls.
+
+## Sources
+- Al Jazeera. (2022, November 29). *South Korea orders striking truckers back to work*. https://www.aljazeera.com/economy/2022/11/29/south-korea-weighs-ordering-striking-truckers-back-to-work
+- Al Jazeera. (2022, December 9). *South Korean truck drivers vote to end nationwide strike*. https://www.aljazeera.com/economy/2022/12/9/south-korean-truck-drivers-vote-to-end-strike
+- The Diplomat. (2022, December). *South Korea's government accused of violating labor rights amid truckers' strike*. https://thediplomat.com/2022/12/south-koreas-government-accused-of-violating-labor-rights-amid-truckers-strike/
+- Jacobin. (2023, February). *South Korean truckers provide a model for labor organizing among independent contractors*. https://jacobin.com/2023/02/south-korean-trucker-contractor-strike-trucksol`,
+      recallContent: [
+        {
+          prompt: "What was the Safe Trucking Freight Rates System, and what happened to it?",
+          answer:
+            "A minimum freight-rate scheme introduced in 2020 for container and cement haulage, on the logic that rock-bottom rates force owner-operators into overloading and dangerous hours. It carried a three-year sunset; the 2022 strikes sought to make it permanent and extend it, but after the November–December strike ended in defeat (9 December 2022), the system lapsed on 31 December 2022.",
+        },
+        {
+          prompt: "What was unprecedented about the government's response on 29 November 2022?",
+          answer:
+            "It invoked the return-to-work order provision of the Trucking Transport Business Act — on the books since 2004, never before used — against ~2,500 cement haulers (a second order followed 8 December for steel/petrochemical drivers). Defiance carried up to three years in prison or a 30 million won fine plus license suspension, applied to drivers as individuals — legally 'business operators,' not workers.",
+        },
+      ],
+    },
+    {
+      slug: "korea-yellow-envelope",
+      title: "13 · The yellow envelope",
+      section: "Section 5 · Question 4 today — the lawsuit as a weapon",
+      body: `In the winter of 2013–14, after courts ordered Ssangyong workers and their union to pay roughly 4.7 billion won, a reader sent a Korean weekly a donation for the workers: **47,000 won — a hundred-thousandth of the debt — in a yellow envelope**, the kind Korean wages used to be paid in. The gesture went viral. Some fifty thousand people eventually gave about 1.5 billion won, envelope by envelope, and Korean politics acquired a name for the demand that workers stop being sued into oblivion: the **yellow envelope law**. This lesson is the decade-long fight over it — taught **dated**, because parts of it are still live.
+
+**What the bill actually does.** The "yellow envelope law" is a package of amendments to **Articles 2 and 3 of TULRAA** — the definitions and the damages rules you have now seen weaponized. Its main moves (Korea Times explainer; Baker McKenzie client alert):
+
+1. **Broaden "employer"** to include anyone who "substantially and specifically controls" working conditions — so in-house subcontract workers (Lesson 9) can lawfully bargain with the *principal* firm that really sets their conditions, not just the shell that signs their paychecks.
+2. **Broaden the lawful scope of disputes** — so strikes over restructuring-type management decisions that determine working conditions (a Ssangyong-style layoff, say) are less automatically "illegal," and less automatically damages-eligible.
+3. **Rein in the damages weapon** — courts must apportion liability **individually, by each person's actual contribution**, ending the blanket joint-and-several liability that let a company hold every striker liable for everything, which is what made the provisional-seizure squeeze so crushing.
+
+Notice what the package is: **a point-by-point answer to this course's Section 5.** Each clause targets one component of the mechanism you have just studied.
+
+**The fight, dated.** The National Assembly passed versions of the bill **twice** — in November 2023 and again in August 2024 — and President Yoon Suk-yeol **vetoed it both times**, siding with employer groups who argued it would legalize chronic strikes and unravel subcontracting. Then Korean politics convulsed: Yoon's December 2024 martial-law declaration, his impeachment, and a June 2025 election that brought in a government backed by the bill's supporters. On **24 August 2025**, the National Assembly passed the yellow envelope law a third time, 183–3 (most of the conservative opposition boycotted the vote), and this time it was signed, **taking effect in March 2026** — six months after promulgation (Korea Times; Baker McKenzie; DLA Piper).
+
+**Where that leaves things — the honest, dated close.** As this course ships (mid-2026), the law has been in force for a few months. That means: the *statutory* fight is, for now, decided — a twenty-year union demand became law, eleven years after the first envelope. But **nothing about its real-world effect can honestly be asserted yet.** Employers' associations warned of investment flight and endless bargaining disputes; unions promised a transformed landscape for subcontracted labor; courts have only begun interpreting the new definitions, and the first big test cases — who counts as a "substantially controlling" employer, what a court does with individualized apportionment — were still working through the system. **This course states the law's text and its dates, and asserts no outcomes. If you are reading this even a year from now, check the current status before you repeat any claim about how it worked out.** That discipline — date the claim, name the source, refuse the prediction — is the single most transferable habit this track can leave you with.
+
+:::reveal Each of the yellow envelope law's three main amendments answers one part of the repression mechanism taught in this section. Match them. ||| (1) Broadening "employer" to whoever substantially controls working conditions answers the in-house subcontracting dodge — the periphery workforce could never bargain with the firm that actually set its conditions. (2) Broadening the lawful scope of disputes answers the "illegal strike" trigger — strikes over restructuring decisions like Ssangyong's layoffs were near-automatically unlawful, which is what armed the damages claim. (3) Individualized apportionment of liability answers the joint-and-several damages weapon itself — no more holding every striker liable for everything, which was what made provisional seizure so crushing. Passed 24 August 2025 (after 2023 and 2024 vetoes), in force March 2026; its real-world effects were untested as of this course's writing.
+
+## Sources
+- The Korea Times. (2025, July 30). *Explainer: What's in Korea's 'yellow envelope law'?* https://www.koreatimes.co.kr/southkorea/politics/20250730/explainer-whats-in-koreas-yellow-envelope-law
+- Baker McKenzie. (2025, August 26). *National Assembly passes Yellow Envelope Act* [Client alert]. https://www.bakermckenzie.com/-/media/files/insight/publications/alerts/08/national_assembly_passes_yellow_envelope_act_20560.pdf
+- Korea Bizwire. (2025). *From a 47,000-won donation to national law: Korea's yellow envelope saga ends in passage*. http://koreabizwire.com/from-a-47000-won-donation-to-national-law-koreas-yellow-envelope-saga-ends-in-passage/330582
+- DLA Piper. (2025). *Key implications of the 'Yellow Envelope Act' on labour-management relations*. https://knowledge.dlapiper.com/dlapiperknowledge/globalemploymentlatestdevelopments/2025/key-implications-of-yellow-envelope-act-on-labour-management-relations
+- The Korea Herald. (2025). *How will 'Yellow Envelope' bill reshape Korea's labor landscape?* https://www.koreaherald.com/article/10564042`,
+      recallContent: [
+        {
+          prompt: "Where does the name 'yellow envelope law' come from?",
+          answer:
+            "From a 2013–14 citizens' campaign: after courts ordered Ssangyong workers to pay ~4.7 billion won, a reader sent 47,000 won in a yellow envelope — the kind wages used to be paid in — to help. Around fifty thousand people gave about 1.5 billion won, and the envelope became the emblem of the demand to rein in damages suits against strikers.",
+        },
+        {
+          prompt: "Give the dated legislative history of the yellow envelope law.",
+          answer:
+            "Passed by the National Assembly November 2023 — vetoed by President Yoon. Passed again August 2024 — vetoed again. After Yoon's December 2024 martial-law crisis, impeachment, and the June 2025 election, passed a third time on 24 August 2025 (183–3, opposition boycotting), signed, and effective March 2026. As of mid-2026 its real-world effects are untested — check current status before asserting outcomes.",
+        },
+      ],
+    },
+    {
+      slug: "korea-quiz-5",
+      title: "Section 5 quiz · The lawsuit as a weapon",
+      section: "Section 5 · Question 4 today — the lawsuit as a weapon",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How did the 77-day Ssangyong plant occupation of 2009 end?",
+            options: [
+              "With a negotiated win for the union",
+              "With police commandos rappelling from helicopters onto the factory roof in August 2009 — the occupation broken, the ~2,600 layoffs standing",
+              "With the government nationalizing the company",
+              "With the strike simply fading out",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The broadcast images of the assault made Pyeongtaek a national reference point — but the course's real subject is what came after: the bill.",
+            sourceLessonSlug: "korea-ssangyong",
+          },
+          {
+            prompt: "Who sued the Ssangyong strikers after 2009?",
+            options: [
+              "No one — the matter ended with the strike",
+              "The company, its insurer, AND the state (police damages, including a helicopter) — against the union and individual workers",
+              "Only foreign shareholders",
+              "Only the city of Pyeongtaek",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Multiple plaintiffs, individual defendants, joint liability: courts ordered roughly 4.7 billion won against strikers and their union in 2013–14.",
+            sourceLessonSlug: "korea-ssangyong",
+          },
+          {
+            prompt: "What is provisional seizure (gapryu)?",
+            options: [
+              "A criminal sentence after conviction",
+              "A court order freezing wages, severance and homes while litigation runs — before any final judgment",
+              "A tax audit",
+              "A form of workplace suspension",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Because anti-strike damages cases can run a decade, the freeze — not the verdict — is the punishment. It is what makes the lawsuit a weapon.",
+            sourceLessonSlug: "korea-ssangyong",
+          },
+          {
+            prompt: "What human toll did Korean media count among Ssangyong's laid-off workers and families by 2018?",
+            options: [
+              "None",
+              "Around thirty deaths — suicides prominent among them, alongside stress-linked illness (counts vary with period and definition)",
+              "Three injuries",
+              "Exactly one hundred deaths, officially certified",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The course reports the widely cited count and names the variance rather than asserting a precise figure — the standard for contested numbers.",
+            sourceLessonSlug: "korea-ssangyong",
+          },
+          {
+            prompt: "What did Korea's Supreme Court do in June 2023 regarding Ssangyong?",
+            options: [
+              "It increased the damages award tenfold",
+              "It overturned the award against the metalworkers' union — ruling payments to returning workers couldn't count as strike losses, cutting the principal by about a third — thirteen-plus years after the strike",
+              "It jailed the union's leadership",
+              "It abolished damages suits entirely",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Relief arrived at the highest court long after the seizures and funerals — proof that the mechanism's power was the years in between, not the final judgment.",
+            sourceLessonSlug: "korea-ssangyong",
+          },
+          {
+            prompt: "Why are Korea's owner-operator truckers outside TULRAA's protections?",
+            options: [
+              "Because trucking is a state secret",
+              "Because they are legally classed as self-employed businesses, not 'workers' — so their collective action is not legally a strike",
+              "Because they refused to register their union",
+              "Because they are mostly foreign nationals",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Same men, same grievances — but the legal category decides whether collective action is a protected strike or unprotected collusion. The category is the weapon's selector switch.",
+            sourceLessonSlug: "korea-truckers",
+          },
+          {
+            prompt: "What was the Safe Trucking Freight Rates System?",
+            options: [
+              "A speed-limit law",
+              "A 2020 minimum freight-rate scheme for container and cement haulage — so drivers needn't overload and overdrive to survive — with a three-year sunset at end-2022",
+              "A fuel subsidy",
+              "A truck-safety inspection regime",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The truckers' 2022 demands were to make it permanent and extend it to more cargo types. After the strike's defeat, it lapsed on 31 December 2022.",
+            sourceLessonSlug: "korea-truckers",
+          },
+          {
+            prompt: "What unprecedented step did the government take on 29 November 2022?",
+            options: [
+              "It nationalized the ports",
+              "It issued the first-ever return-to-work orders under the Trucking Transport Business Act (on the books since 2004) — ~2,500 cement haulers, with up to 3 years' prison or a 30 million won fine for defiance",
+              "It granted all the strikers' demands",
+              "It dissolved the KCTU",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A second order followed 8 December for steel and petrochemical drivers. TruckSol members voted to end the strike 9 December, having won none of their demands.",
+            sourceLessonSlug: "korea-truckers",
+          },
+          {
+            prompt: "How does the course present the ILO dispute over the truckers' return-to-work orders?",
+            options: [
+              "As settled in the government's favor",
+              "As settled in the unions' favor",
+              "Both positions stated — union complaints under the newly ratified conventions vs. the government's 'regulation of business operators' defense — with the matter live before ILO bodies as of mid-2026, status to be checked",
+              "As a hoax",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Neutral and dated on live disputes: both arguments taught, no winner declared, check-before-citing flagged.",
+            sourceLessonSlug: "korea-truckers",
+          },
+          {
+            prompt: "Where does the name 'yellow envelope law' come from?",
+            options: [
+              "The color of the National Assembly's voting slips",
+              "A 2013–14 campaign in which citizens — starting with one 47,000-won donation in a yellow pay envelope — gave ~1.5 billion won to help Ssangyong workers pay court-ordered damages",
+              "A postal regulation",
+              "The uniform color of delivery riders",
+            ],
+            correctIndex: 1,
+            explanation:
+              "About fifty thousand donors, envelope by envelope — the wage packet as a symbol against the damages suit. Eleven years later the demand became law.",
+            sourceLessonSlug: "korea-yellow-envelope",
+          },
+          {
+            prompt: "Which THREE changes make up the yellow envelope law's core package?",
+            options: [
+              "A minimum wage rise, a pension reform, and a tax credit",
+              "Broadened 'employer' (substantial control test), broadened lawful dispute scope, and individualized apportionment of strike damages ending blanket joint-and-several liability",
+              "A strike ban, a union subsidy, and a tariff",
+              "Nationalization of subcontractors",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A point-by-point answer to this section: the subcontracting dodge, the 'illegal strike' trigger, and the damages weapon itself — one amendment each (TULRAA Articles 2 and 3).",
+            sourceLessonSlug: "korea-yellow-envelope",
+          },
+          {
+            prompt: "What is the dated legislative history of the yellow envelope law?",
+            options: [
+              "Passed once in 1997 and never contested",
+              "Passed Nov 2023 (vetoed), passed Aug 2024 (vetoed), passed 24 Aug 2025 by 183–3 after Korea's political crisis and change of government — signed, effective March 2026",
+              "Rejected by every National Assembly vote to date",
+              "Adopted by referendum in 2010",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two Yoon vetoes, then passage after the December 2024 martial-law crisis, impeachment and June 2025 election. Dates are the course's discipline on live politics.",
+            sourceLessonSlug: "korea-yellow-envelope",
+          },
+          {
+            prompt: "What does the course assert about the yellow envelope law's real-world effects?",
+            options: [
+              "That it destroyed the Korean economy",
+              "That it ended all labor disputes",
+              "Nothing — as of mid-2026 the law had been in force only months, courts had barely begun interpreting it, and the course states text and dates while refusing predictions",
+              "That it was repealed immediately",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Date the claim, name the source, refuse the prediction — the single most transferable habit the track teaches. Check current status before repeating any outcome claim.",
+            sourceLessonSlug: "korea-yellow-envelope",
+          },
+          {
+            prompt: "How do Korea's two modern repression mechanisms bracket the workforce, per the course?",
+            options: [
+              "Both apply only to civil servants",
+              "A 'worker' striking illegally faces the damages suit (Ssangyong); a 'non-worker' striking faces criminalized defiance of administrative orders (truckers) — the legal category selects the weapon",
+              "Neither mechanism still exists",
+              "Both were invented by the dictatorship in 1972",
+            ],
+            correctIndex: 1,
+            explanation:
+              "TULRAA's definitions decide which instrument you face — which is why Articles 2 and 3 became the most fought-over sentences in Korean politics.",
+            sourceLessonSlug: "korea-truckers",
+          },
+          {
+            prompt: "Why does the course call the damages suit 'a colder instrument' than the dictatorship's policeman — and harder to abolish?",
+            options: [
+              "Because it is faster than a police raid",
+              "Because it ruins without jailing and wears the clothes of ordinary civil law — 'who could object to a company recovering its losses?' — so dismantling it took a decade-long political fight",
+              "Because judges are colder people than police officers",
+              "Because it only applies in winter",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Question 4's democratic form hides inside neutral-looking private law. That disguise is exactly what made the yellow-envelope fight take eleven years from first envelope to statute.",
+            sourceLessonSlug: "korea-ssangyong",
           },
         ],
       },
