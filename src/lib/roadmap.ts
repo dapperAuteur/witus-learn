@@ -680,6 +680,48 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Lefkowitz, Howe, Appiah, Gilroy, mainstream Egyptology and the 2017 aDNA paper (APA 7 + a \`## Sources\`
   list on every lesson). Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`. The
   natural home for BAM's source note \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\`.
+- 🔧 **Pre-Columbian Mesoamerica: Cities, Calendars, and the People Who Are Still Here** (Culture &
+  History, \`content/precolumbian-mesoamerica\`) — the **anchor of the Pre-Columbian Mesoamerica
+  track** (7 follow-on courses proposed at
+  \`plans/future-courses/precolumbian-mesoamerica-track-proposal.md\`). **7 sections · 17 teaching
+  lessons · 7 quizzes** (15-question banks, above the 10-question attempt cap so retries rotate;
+  105 questions; every question carries \`explanation\` + \`sourceLessonSlug\`) **· 1 exercise** (name
+  the people/place/period — the anti-flattening drill) · one \`:::reveal\` per teaching lesson.
+  The spread: the **Olmec** with the mother-vs-sister-culture question taught **as a live debate**
+  (Diehl/Coe vs. Flannery & Marcus; Cascajal Block labeled unprovenienced/contested); **Aguada
+  Fénix** (Inomata 2020 — the oldest Maya monument is also the largest, found by LiDAR, read by its
+  excavators as collective labor without kings and hedged as their argument); **Teotihuacan as the
+  humility lesson** (builders, language, real name, and government all stated as UNKNOWN; the 378
+  CE Tikal entrada known only via Maya writing; the selective burning c. mid-500s contested);
+  the **Maya** (no empire — city-states; Tikal vs. Calakmul from the deciphered record; script +
+  positional zero + Long Count; **the 2012 "doomsday" traced to Tortuguero Monument 6** — a
+  damaged period-ending passage, an odometer rollover, no prophecy, per Stuart 2011; the **Classic
+  collapse taught specific AND debated** — last stelae Tikal 869/Toniná 909, Chichancanab +
+  Kennett drought cores, Petexbatun fortifications, brittle divine kingship — while the north
+  flourished); the **Mexica** (Tenochtitlan's engineering with Cortés/Díaz market claims
+  ATTRIBUTED as hostile witnesses; the Triple Alliance as a tribute empire "cheap to run, quick to
+  shatter" read from the Codex Mendoza; **sacrifice taught honestly** — the excavated **Huei
+  Tzompantli** (INAH, 2015–) is real, the Fifth Sun logic explained-not-endorsed, and the 80,400
+  / 136,000 chronicle figures **refused** as "reported, not established," with Harner's protein
+  theory dismantled per Ortiz de Montellano 1978); **Oaxaca + the Purépecha** (the empire that
+  beat the Aztecs; language isolate; bronze); **Central America beyond Mexico** (Joya de Cerén as
+  the commoner-life corrective; the **Diquís spheres** with purpose honestly unknown and the
+  Atlantis-mongering defused; the Isthmo-Colombian gold country); the **conquest per Restall's
+  Seven Myths** (Indigenous-ally armies — "a civil war among Mesoamerican powers"; siege not
+  technology; Quetzalcoatl-story labeled a probable colonial elaboration; **Nojpetén fell 1697** —
+  the completion myth broken); the **demographic catastrophe as a RANGE** (~15–30M central-Mexico
+  estimates, Cook & Borah vs. critics, → ~90% collapse to ~1–2M within a century — never one
+  number, with guardrails against both minimizers and maximizers); and the **"how we know"
+  methods lesson** (Landa's 1562 Maní burning quoted from his own Relación + the **~4 surviving
+  codices**; the **Knorozov → Proskouriakoff → Coe** decipherment drama with Thompson as the
+  authority-is-not-evidence caution; **PACUNAM LiDAR ~61,480 structures**). Closes with **"They
+  are still here"**: ~7M Maya, ~6M speakers of ~30 Mayan languages, >40% of Guatemala (2018
+  census), ~1.65M Nahuatl speakers (INEGI 2020), Caste War, CEH 1999 findings, Menchú's Nobel
+  WITH the Stoll controversy reported, Guna Yala, Berta Cáceres — and why the "vanished
+  civilization" trope harms living people. Cited to Coe & Houston, Miller-adjacent art-history
+  sources, Martin & Grube, Cowgill, Smith, Restall, Townsend, INAH reporting, Nature/Science
+  papers, the Popol Vuh and Florentine Codex in scholarly translation, and UNESCO. Registered in
+  \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\` (task 109).
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
