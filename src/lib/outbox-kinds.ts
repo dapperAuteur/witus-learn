@@ -18,6 +18,7 @@
  *   "problem-report"       → /api/report                                       → { kind, message,
  *                                                                                  pageUrl?, email? }
  *   "curriculum-feedback"  → /api/courses/:courseId/lessons/:lessonId/feedback → { kind, body }
+ *   "recall-grade"         → /api/courses/:courseId/lessons/:lessonId/recall   → { prompt, gotIt }
  *
  * The two bodies are NOT interchangeable and are not merged into a common shape: `/api/report` reads
  * `message`, the feedback API reads `body`, and both have their own `kind` enum (bug|feedback|idea|
@@ -41,6 +42,8 @@
 export const PROBLEM_REPORT = "problem-report";
 /** Suggest a correction/comment/question on a lesson. Signed-in (the API 401s otherwise). */
 export const CURRICULUM_FEEDBACK = "curriculum-feedback";
+/** A "Check yourself" self-grade on a `:::reveal` card. Signed-in (the API 401s otherwise). */
+export const RECALL_GRADE = "recall-grade";
 
 /** `/api/report`'s enum — what KIND of problem, not the outbox kind. */
 export type ProblemKind = "bug" | "feedback" | "idea" | "other";
@@ -116,5 +119,35 @@ export function curriculumFeedbackDraft(input: {
     method: "POST",
     body,
     label: input.body,
+  };
+}
+
+/** The reveal-shaped body the recall API parses. Mirrors its Zod schema — keep them in step.
+ *  (`prompt`, not an index: the server re-derives the stable identity from the question text.) */
+export type RecallGradeBody = {
+  prompt: string;
+  gotIt: boolean;
+};
+
+export function recallUrl(courseId: string, lessonId: string): string {
+  return `/api/courses/${courseId}/lessons/${lessonId}/recall`;
+}
+
+/** A check-yourself self-grade, ready to queue or to POST. Lesson in the URL; question in the
+ *  body — both captured at grade time, so a grade queued on lesson 4 is still about lesson 4's
+ *  question when it sends from somewhere else after the network returns. */
+export function recallGradeDraft(input: {
+  courseId: string;
+  lessonId: string;
+  prompt: string;
+  gotIt: boolean;
+}): OutboxDraft {
+  const body: RecallGradeBody = { prompt: input.prompt, gotIt: input.gotIt };
+  return {
+    kind: RECALL_GRADE,
+    url: recallUrl(input.courseId, input.lessonId),
+    method: "POST",
+    body,
+    label: `${input.gotIt ? "Got it" : "Missed"}: ${input.prompt}`,
   };
 }

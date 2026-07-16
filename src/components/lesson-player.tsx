@@ -16,7 +16,19 @@ import { isDirectMediaFile, parseChapters, parseTranscript, toEmbed } from "@/li
 //
 // `resumeAt` is the ACTIVE learner's saved playback position for this lesson (0 when signed
 // out, or when they've never played it) — direct-media audio/video picks up from there.
-export function LessonPlayer({ lesson, resumeAt = 0, trackPlayback = false }: { lesson: Lesson; resumeAt?: number; trackPlayback?: boolean }) {
+// `trackRecall` marks the viewer as a signed-in learner so `:::reveal` check-yourself cards
+// offer their "I got it / Missed it" self-grade (signed out, the reveal still works untracked).
+export function LessonPlayer({
+  lesson,
+  resumeAt = 0,
+  trackPlayback = false,
+  trackRecall = false,
+}: {
+  lesson: Lesson;
+  resumeAt?: number;
+  trackPlayback?: boolean;
+  trackRecall?: boolean;
+}) {
   // Only a signed-in learner has a position worth saving; signed out, the player is untracked.
   const track = trackPlayback ? { courseId: lesson.courseId, lessonId: lesson.id, resumeAt } : {};
   switch (lesson.lessonType) {
@@ -71,7 +83,7 @@ export function LessonPlayer({ lesson, resumeAt = 0, trackPlayback = false }: { 
     case "text":
     case "assignment":
       return lesson.textContent ? (
-        <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} />
+        <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} />
       ) : (
         <Empty />
       );
@@ -91,7 +103,7 @@ export function LessonPlayer({ lesson, resumeAt = 0, trackPlayback = false }: { 
       return (
         <div className="space-y-4">
           {lesson.textContent ? (
-            <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} />
+            <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} />
           ) : null}
           <ExercisePlayer content={ex} />
           <SentenceEvaluator courseId={lesson.courseId} />
@@ -116,7 +128,7 @@ export function LessonPlayer({ lesson, resumeAt = 0, trackPlayback = false }: { 
           ) : null}
           {lesson.textContent ? (
             <div className="mt-4">
-              <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} />
+              <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} />
             </div>
           ) : mc ? null : (
             <Empty />
