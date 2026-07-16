@@ -1565,5 +1565,296 @@ Notice what the package is: **a point-by-point answer to this course's Section 5
         ],
       },
     },
+
+    // ────────────── SECTION 6 · THE SCORECARD ──────────────
+    {
+      slug: "korea-ilo-2021",
+      title: "14 · 2021: signing the floor, thirty years late",
+      section: "Section 6 · The scorecard, and the skill you keep",
+      body: `Return now to the fact this course opened with, because you can finally read it properly: **on 20 April 2021, South Korea deposited its ratifications of ILO Conventions 87 and 98** (freedom of association; the right to organise and bargain collectively), together with Convention 29 on forced labour. They entered into force on **20 April 2022**, and — a detail worth knowing — under Article 6(1) of Korea's constitution, ratified treaties carry **the same effect as domestic statute** (Kim & Chang). Thirty years after joining the ILO in 1991 with a promise to ratify, the promise was kept.
+
+**Why did it take thirty years?** Not forgetfulness. Ratifying would have meant admitting that specific, defended features of Korean labor law contradicted the conventions — and each was somebody's fortress:
+
+- **The membership bars.** Korean law long required that union members be *employees* — so a **dismissed worker lost union membership**, which conveniently meant that firing an organizer also removed him from the union he led. Teachers' and public officials' unions spent years derecognized on exactly this ground (the teachers' union was stripped of legal status in the 2010s over a handful of dismissed members — restored by the courts in 2020).
+- **The category gates** you now know intimately: "specially employed" workers outside the definition of *worker* altogether (Lesson 12).
+- **The dispute limits and their enforcement** — the narrow lawful scope of strikes, criminal "obstruction of business" charges, and the damages machinery of Section 5, all of which ILO supervisory bodies had criticized for years.
+
+**What ratification forced, and what it didn't.** To ratify, the National Assembly amended **TULRAA in early 2021**: most prominently, dismissed and unemployed workers may now join unions, and several restrictions on union office and public-sector organizing were loosened. That is real movement — the membership-bar fortress fell. But the course you have just taken is the evidence for the other half: **the truckers' return-to-work orders (November 2022) and the damages fights came *after* ratification.** Unions immediately took both to ILO supervisory bodies under the newly binding conventions; the government defended both as lawful. Those proceedings, and the first court tests of what the conventions' domestic-statute status means in practice, were **still unfolding as of this course's writing (mid-2026)** — dated, unresolved, check before citing.
+
+**How to think about it — the track's ILO lesson, Korean edition.** The anchor taught you that the ILO floor is "made of paper": near-universal on parchment, weakly enforced everywhere. Korea adds the sharpest known illustration of the *other* face of that lesson: the paper floor **matters enough that a rich democracy spent thirty years refusing to sign it.** States do not spend three decades avoiding meaningless documents. The conventions' value was never that they enforce themselves — it is that they give every domestic fight (the yellow envelope debates cited them constantly; so do the truckers' complaints) a fixed, external standard to argue from. Paper, yes. But load-bearing paper.
+
+:::reveal Korea's thirty-year delay in ratifying ILO Conventions 87 and 98 is presented as proof that the "paper floor" matters. Reconstruct the argument. ||| If the conventions were meaningless parchment, ratification would have been costless and immediate. Instead Korea delayed from 1991 to 2021 precisely because ratifying meant dismantling defended features of its law — the rule stripping dismissed workers of union membership (which made firing an organizer a union-expulsion tool), the category gates around 'worker,' and the narrow strike-scope-plus-damages machinery the ILO had long criticized. Ratification forced real 2021 TULRAA amendments, and the conventions now anchor live ILO proceedings over the 2022 return-to-work orders. States don't spend thirty years avoiding documents that bind nothing — the paper is weak as enforcement but load-bearing as a standard.
+
+## Sources
+- Ministry of Foreign Affairs, Republic of Korea. (2021, April 20). *Ratification of three fundamental ILO conventions marked in virtual ceremony with ILO* [Press release]. https://www.mofa.go.kr/eng/brd/m_5676/view.do?seq=321641
+- Kim & Chang. (2022). *Implementation and implications of the ILO fundamental conventions*. https://www.kimchang.com/en/insights/detail.kc?sch_section=4&idx=24986
+- International Labour Organization. (n.d.). *Ratifications for the Republic of Korea*. NORMLEX. https://www.ilo.org/dyn/normlex/en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:103123
+- The Diplomat. (2022, December). *South Korea's government accused of violating labor rights amid truckers' strike*. https://thediplomat.com/2022/12/south-koreas-government-accused-of-violating-labor-rights-amid-truckers-strike/`,
+      recallContent: [
+        {
+          prompt: "What did Korea have to change in its own law to ratify ILO Conventions 87 and 98?",
+          answer:
+            "The 2021 TULRAA amendments — most prominently allowing dismissed and unemployed workers to join unions (ending the rule that made firing an organizer a union-expulsion tool), plus loosened restrictions on union office and public-sector organizing. The conventions were deposited 20 April 2021, entered into force 20 April 2022, and carry the same effect as domestic statute under Article 6(1) of the constitution.",
+        },
+        {
+          prompt: "What post-ratification events show the fight didn't end in 2021?",
+          answer:
+            "The November 2022 truckers' return-to-work orders and the continuing damages-suit battles both came after ratification; unions took them to ILO supervisory bodies under the newly binding conventions, the government defended them as lawful, and those proceedings — plus the first court tests of the conventions' domestic effect — were still unfolding as of mid-2026.",
+        },
+      ],
+    },
+    {
+      slug: "korea-scorecard",
+      title: "15 · The scorecard, and the skill you keep",
+      section: "Section 6 · The scorecard, and the skill you keep",
+      body: `Close with the honest numbers, because Korea's are the most misread in this track. Korean labor's *image* — the headbands, the plaza rallies, the general strikes, the most militant union movement in the rich world — is real. Now put the scorecard next to it:
+
+| Measure | Korea | For comparison |
+| --- | --- | --- |
+| Union density | **13.1%** (2022, Ministry of Employment and Labor; 14.2% in 2021, 12.5% in 2019) | Germany ~14% — Sweden ~65% |
+| Collective bargaining coverage | **~14.8%** (2018, OECD/AIAS ICTWSS) | Germany ~49% — France ~90%+ |
+| Predominant bargaining level | **Enterprise** (company by company) | Germany/Nordics: sector |
+| Extension of agreements to non-signers | **None** — no legal mechanism or functional equivalent (OECD/AIAS) | France/Germany: extension exists |
+| Non-regular share of wage workers | **38.2%** (August 2025, Statistics Korea) | — |
+
+Three readings, and then the skill.
+
+**Reading one: militancy is not density.** The most strike-prone labor movement in the OECD organizes about one worker in eight — down from a peak of just under one in five at the post-1987 high-water mark (1989), and below one in ten around 2010 before a partial recovery (Ministry of Employment and Labor series). The rallies you see on the news are the mobilization of a militant *minority*, concentrated in the chaebol plants and the public sector. If the Poland course taught you that a right can be secure and barely used, Korea teaches the sibling lesson: **a movement can be loud and small at the same time.**
+
+**Reading two: density is not coverage — the Germany lesson, inverted.** Korea and Germany have nearly the same density. Germany's agreements cover about half its workers; Korea's cover barely more than its members, because bargaining is enterprise-level and **nothing extends an agreement beyond the firm that signed it**. Every union victory in Korea is won inside one company's walls and stays there. (One structural consequence you can now predict: since agreements can't spread, the wage floor for everyone else has to be statutory — which is why Korea's **minimum wage**, unlike the Nordic countries', is set by law and fought over nationally every summer.)
+
+**Reading three: the walls have a population.** Whatever the insiders win, 38.2% of wage workers stand structurally outside it (August 2025, Statistics Korea) — and the sharpest edge of them, the "specially employed," stand outside the word *worker* itself. Korea's labor question in the 2020s is not "will the unions win?" It is **"who is inside the category?"** — which is precisely why the yellow envelope law aimed its first clause at the definition of *employer* and why every count in this course keeps returning to the boundary line.
+
+**The four questions, answered one last time.** *Who may organise?* Anyone the law calls a worker — a category fought over sentence by sentence. *Who is excluded?* The non-regular 38.2%, above all the specially employed. *Who bargains, at what level?* Enterprise unions, company by company, nothing extending. *What happens if you try?* For workers: the damages suit — now curbed on paper by a March 2026 law whose real effect is unproven. For non-workers: administrative orders with criminal teeth. **Every answer runs through a definition.** That is Korea's signature.
+
+**The skill you keep.** From Germany you took *find the bargaining level*. From Poland, *find the legal form that moves workers out of the protected category*. Korea gives you the third tool, and it may be the sharpest: **find out what happens after the strike ends.** Not the confrontation — the paperwork. Who gets sued, for how much, under what liability rule; whose assets can be frozen while the case runs; which strikers were ever legally "on strike" at all. A country's labor law shows you its true face not on the day workers walk out, but in the years of consequences afterward. Ask that question of any country — including your own — and you will see past both the headbands and the press releases.
+
+*Where to go next in this track:* the anchor's Japan lesson (the enterprise-union family Korea belongs to), **Poland** (the democratization twin, arrow reversed), **Germany** (the coverage machine Korea lacks), and — for your own workplace, today — **Know Your Rights at Work**.
+
+:::reveal Korea hands you the track's third diagnostic tool: "find out what happens after the strike ends." What, concretely, should you look up — and why does it reveal more than the strike itself? ||| Look up the aftermath machinery: who can be sued for strike losses and under what liability rule (blanket joint-and-several vs individually apportioned); whether assets can be frozen by provisional seizure while cases run; whether criminal charges like obstruction-of-business attach; and whether the strikers were even inside the legal category 'worker,' which decides if it was legally a strike at all. The confrontation is theater that every system permits occasionally; the years of consequences are policy. Korea's decade — Ssangyong's seizures and funerals, truckers prosecuted as 'business operators,' the eleven-year yellow-envelope fight over Articles 2 and 3 — shows the true answer to 'what happens to you if you try?' lives in the paperwork, not the plaza.
+
+## Sources
+- Statista. (2024). *Trade union membership rate South Korea 1977–2023* [Reporting Ministry of Employment and Labor figures]. https://www.statista.com/statistics/648966/south-korea-union-membership-rate/
+- OECD & AIAS. (2021). *ICTWSS database — country note: Korea*. OECD Publishing. https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/10/main-indicators-and-characteristics-of-collective-bargaining-2021-country-notes_4b5553c9/korea_a03553b6/ae3e1cc3-en.pdf
+- Statistics Korea. (2025, October). *Supplementary results of the Economically Active Population Survey by employment type in August 2025* [Press release]. https://mods.go.kr/board.es?act=view&bid=11735&list_no=439078&mid=a20105010000`,
+      recallContent: [
+        {
+          prompt: "Give Korea's scorecard numbers with years and sources.",
+          answer:
+            "Density 13.1% (2022, MOEL; 14.2% in 2021, 12.5% in 2019; below 10% around 2010; peak just under one in five in 1989). Coverage ~14.8% (2018, OECD/AIAS ICTWSS). Bargaining: enterprise-level, with no mechanism extending agreements to non-signers. Non-regular share: 38.2% of wage workers (August 2025, Statistics Korea).",
+        },
+        {
+          prompt: "What is the third diagnostic tool this course adds to the track's toolkit?",
+          answer:
+            "Find out what happens after the strike ends: who gets sued and under what liability rule, whether provisional seizure freezes assets during litigation, what criminal charges attach, and whether the strikers were inside the legal category 'worker' at all. A labor system's true face is the years of consequences, not the day of confrontation. (Germany contributed 'find the bargaining level'; Poland 'find the form that moves workers out of the category.')",
+        },
+      ],
+    },
+    {
+      slug: "korea-quiz-6",
+      title: "Section 6 quiz · The scorecard",
+      section: "Section 6 · The scorecard, and the skill you keep",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Under Article 6(1) of Korea's constitution, what legal force do the ratified ILO conventions carry?",
+            options: [
+              "None — they are symbolic",
+              "The same effect as domestic statute",
+              "They override the constitution itself",
+              "They apply only to foreign companies",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Ratified treaties have domestic-statute effect — which is why the first court tests of the conventions' meaning matter, and why unions cite them in live proceedings.",
+            sourceLessonSlug: "korea-ilo-2021",
+          },
+          {
+            prompt: "What rule long made firing a Korean union organizer doubly effective?",
+            options: [
+              "Organizers had to repay their training costs",
+              "Union members had to be employees — so a dismissed worker lost union membership, and firing an organizer expelled him from the union he led",
+              "Organizers were banned from re-employment for life",
+              "Unions had to disband if any member was fired",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The membership bar — the fortress that fell in the 2021 TULRAA amendments so Korea could ratify C87. The teachers' union spent years derecognized on this ground.",
+            sourceLessonSlug: "korea-ilo-2021",
+          },
+          {
+            prompt: "What did the early-2021 TULRAA amendments change?",
+            options: [
+              "They abolished the minimum wage",
+              "Dismissed and unemployed workers may join unions, with loosened restrictions on union office and public-sector organizing — aligning the law enough to ratify the ILO conventions",
+              "They banned enterprise unions",
+              "They privatized the railways",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Real movement forced by ratification — while the truckers' orders and damages fights of 2022+ show which fortresses still stood.",
+            sourceLessonSlug: "korea-ilo-2021",
+          },
+          {
+            prompt: "How does the course read Korea's thirty-year ratification delay?",
+            options: [
+              "As bureaucratic forgetfulness",
+              "As proof the paper floor matters: states don't spend three decades avoiding meaningless documents — ratifying meant dismantling defended features of Korean law",
+              "As an ILO clerical error",
+              "As irrelevant trivia",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The anchor's 'floor made of paper' lesson, Korean edition: weak as enforcement, load-bearing as a standard that every domestic fight now argues from.",
+            sourceLessonSlug: "korea-ilo-2021",
+          },
+          {
+            prompt: "What is Korea's union density, dated and sourced?",
+            options: [
+              "13.1% (2022, Ministry of Employment and Labor)",
+              "38.2% (2025, Statistics Korea)",
+              "49% (2024, OECD)",
+              "65% (2022, ILO)",
+            ],
+            correctIndex: 0,
+            explanation:
+              "13.1% in 2022 (14.2% in 2021, 12.5% in 2019, below 10% around 2010, peak just under one in five in 1989). The 38.2% figure is the non-regular share — a different statistic.",
+            sourceLessonSlug: "korea-scorecard",
+          },
+          {
+            prompt: "Korea and Germany have similar union density. Why is Korea's bargaining coverage (~14.8%, 2018, OECD/AIAS) a third of Germany's?",
+            options: [
+              "Korean unions refuse to bargain",
+              "Enterprise-level bargaining plus no extension mechanism: every agreement stays inside the company that signed it",
+              "German workers strike more often",
+              "Korea has no written labor law",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Germany lesson inverted: without sectoral bargaining or extension, coverage cannot outrun membership. Every Korean union victory stays inside one company's walls.",
+            sourceLessonSlug: "korea-scorecard",
+          },
+          {
+            prompt: "Why does Korea, unlike the Nordic countries, fight a national statutory minimum-wage battle every year?",
+            options: [
+              "Because Korean unions demanded the abolition of contracts",
+              "Because agreements can't spread beyond the signing firm, so the wage floor for everyone outside must be statutory",
+              "Because the IMF sets Korean wages",
+              "Because the constitution forbids collective agreements",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A structural consequence you can predict from the scorecard: no extension mechanism → the law, not the contract, must be the floor. The Nordics run the opposite design.",
+            sourceLessonSlug: "korea-scorecard",
+          },
+          {
+            prompt: "What does the course mean by 'a movement can be loud and small at the same time'?",
+            options: [
+              "Korean unions have no members at all",
+              "The OECD's most strike-prone movement organizes about one worker in eight — headline militancy is the mobilization of a concentrated minority in chaebol plants and the public sector",
+              "Korean strikes are silent",
+              "Density is above 60%",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The sibling of Poland's lesson (a right can be secure and barely used): image and scorecard must be read together.",
+            sourceLessonSlug: "korea-scorecard",
+          },
+          {
+            prompt: "What is Korea's 'signature,' per the course's final answer to the four questions?",
+            options: [
+              "Every answer runs through a definition — worker, employer, lawful dispute — fought over sentence by sentence",
+              "Every answer runs through the monarchy",
+              "Every answer runs through foreign treaties alone",
+              "The four questions don't apply to Korea",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Who may organise, who is excluded, who bargains, and what happens after — in Korea each one is decided by a statutory category's boundary line.",
+            sourceLessonSlug: "korea-scorecard",
+          },
+          {
+            prompt: "What third diagnostic tool does Korea add to the track's toolkit?",
+            options: [
+              "Count the strike days per year",
+              "Find out what happens AFTER the strike ends — the lawsuits, liability rules, seizures, and whether the strikers were legally 'workers' at all",
+              "Measure the size of rallies",
+              "Read only the union's press releases",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Germany: find the bargaining level. Poland: find the category-moving form. Korea: the aftermath paperwork is the system's true face.",
+            sourceLessonSlug: "korea-scorecard",
+          },
+          {
+            prompt: "Which post-ratification disputes went to ILO supervisory bodies under the newly binding conventions?",
+            options: [
+              "None — all disputes ended in 2021",
+              "The 2022 truckers' return-to-work orders and the anti-strike damages machinery — with proceedings still unfolding as of mid-2026",
+              "A dispute over K-pop royalties",
+              "A dispute over rice tariffs",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Ratification moved the fight to a new arena rather than ending it; the course leaves the outcome dated and open, to be checked.",
+            sourceLessonSlug: "korea-ilo-2021",
+          },
+          {
+            prompt: "Roughly how has Korean union density moved since 1989?",
+            options: [
+              "Steadily up to 50%",
+              "From just under one in five (1989 peak) to below one in ten around 2010, then a partial recovery to 13.1% by 2022 (MOEL series)",
+              "Flat at 40% throughout",
+              "Down to 1%",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The arc mirrors the story: the 1987 explosion, the post-1997 erosion, and a partial 2010s recovery concentrated in the public sector.",
+            sourceLessonSlug: "korea-scorecard",
+          },
+          {
+            prompt: "The course says Korea's labor question in the 2020s is not 'will the unions win?' What is it?",
+            options: [
+              "'Who is inside the category?' — which is why the yellow envelope law aimed first at the definition of employer",
+              "'Which federation has the better logo?'",
+              "'Will strikes be replaced by robots?'",
+              "'Should Korea leave the ILO?'",
+            ],
+            correctIndex: 0,
+            explanation:
+              "With 38.2% of wage workers non-regular and the sharpest-edge workers outside the word 'worker,' the boundary line is the battlefield.",
+            sourceLessonSlug: "korea-scorecard",
+          },
+          {
+            prompt: "Which courses does this one point you toward next, and why?",
+            options: [
+              "The anchor's Japan lesson (Korea's enterprise-union family), Poland (democratization twin, arrow reversed), Germany (the coverage machine Korea lacks), and Know Your Rights at Work (your own workplace, today)",
+              "Only courses about East Asia",
+              "No other courses — Korea stands alone",
+              "The golf course",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The track compounds by cross-linking: each country is a tool, and Korea's connects to Japan's form, Poland's arrow, and Germany's missing machinery.",
+            sourceLessonSlug: "korea-scorecard",
+          },
+          {
+            prompt: "What does the course assert about the March 2026 damages-law reform's effect on Question 4?",
+            options: [
+              "It has already ended all damages suits",
+              "It curbs the weapon on paper, but its real effect is unproven as of this course's writing — dated, to be checked",
+              "It was repealed in April 2026",
+              "It doubled the damages available",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The final answer to Question 4 stays honest: 'now curbed on paper by a March 2026 law whose real effect is unproven.' Date the claim; refuse the prediction.",
+            sourceLessonSlug: "korea-scorecard",
+          },
+        ],
+      },
+    },
   ],
 };
