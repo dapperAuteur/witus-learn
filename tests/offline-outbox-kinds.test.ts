@@ -95,6 +95,7 @@ function routingServer(routes: Record<string, number>) {
 
 const REPORT_URL = "/api/report";
 const FEEDBACK_URL = "/api/courses/course-1/lessons/lesson-4/feedback";
+const RECALL_URL = "/api/courses/course-1/lessons/lesson-4/recall";
 
 describe("what each kind means", () => {
   it("a problem report goes to /api/report with `message` — not `body`", async () => {
@@ -140,6 +141,66 @@ describe("what each kind means", () => {
     expect(draft.url).toBe(FEEDBACK_URL); // the lesson is in the URL, so it cannot drift
     expect(draft.body).toEqual({ kind: "correction", body: "Wells was born in 1862, not 1863." });
     expect(draft.body).not.toHaveProperty("message");
+  });
+
+  it("a check-yourself grade goes to the LESSON's recall endpoint with the question text", async () => {
+    const { kinds } = await load();
+    const draft = kinds.recallGradeDraft({
+      courseId: "course-1",
+      lessonId: "lesson-4",
+      prompt: "What does METAR stand for?",
+      gotIt: false,
+    });
+
+    expect(draft.kind).toBe("recall-grade");
+    expect(draft.url).toBe(RECALL_URL); // the lesson is in the URL; the question is in the body
+    expect(draft.method).toBe("POST");
+    // The server derives the stable identity from the prompt — no client-picked index.
+    expect(draft.body).toEqual({ prompt: "What does METAR stand for?", gotIt: false });
+    expect(draft.body).not.toHaveProperty("promptIndex");
+    expect(draft.label).toContain("Missed");
+    expect(draft.label).toContain("What does METAR stand for?");
+  });
+});
+
+describe("a self-grade queued offline is never silently lost", () => {
+  it("holds a reveal grade with no network, then posts it to that lesson's recall endpoint", async () => {
+    const { outbox, kinds } = await load();
+    vi.stubGlobal("navigator", { onLine: false });
+
+    outbox.enqueue(
+      kinds.recallGradeDraft({ courseId: "course-1", lessonId: "lesson-4", prompt: "Class G day VFR vis?", gotIt: true }),
+    );
+
+    // Nothing sends while offline; the pending row is visible to the reveal that queued it.
+    server(200);
+    await outbox.flushOutbox();
+    expect(seen).toEqual([]);
+    expect(outbox.outboxFor("recall-grade")).toHaveLength(1);
+
+    // The network returns.
+    vi.stubGlobal("navigator", { onLine: true });
+    await outbox.flushOutbox();
+    expect(seen).toEqual([{ url: RECALL_URL, body: { prompt: "Class G day VFR vis?", gotIt: true } }]);
+    expect(outbox.readOutbox()).toHaveLength(0);
+  });
+
+  it("KEEPS a grade through a 401 (session died in the queue) and sends it after sign-in", async () => {
+    const { outbox, kinds } = await load();
+    outbox.enqueue(
+      kinds.recallGradeDraft({ courseId: "course-1", lessonId: "lesson-4", prompt: "Class G day VFR vis?", gotIt: false }),
+    );
+    server(401, { error: "Sign in first" });
+
+    await outbox.flushOutbox();
+    const [pending] = outbox.outboxFor("recall-grade");
+    expect(pending.failed).toBe(false); // retryable — the grade is fine, the session isn't
+
+    seen = [];
+    server(200);
+    await outbox.flushOutbox();
+    expect(seen).toEqual([{ url: RECALL_URL, body: { prompt: "Class G day VFR vis?", gotIt: false } }]);
+    expect(outbox.readOutbox()).toHaveLength(0);
   });
 });
 

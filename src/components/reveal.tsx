@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { enqueue } from "@/lib/offline-outbox";
 import { recallGradeDraft, recallUrl } from "@/lib/outbox-kinds";
@@ -80,9 +81,9 @@ export function RevealAnswerPanel({
         <RevealGrade courseId={courseId as string} lessonId={lessonId as string} question={question} />
       ) : inLesson ? (
         <p className="mt-3 text-xs text-neutral-500">
-          <a href="/login" className="underline">
+          <Link href="/login" className="underline">
             Sign in
-          </a>{" "}
+          </Link>{" "}
           to track which checks you get right — they show up in your dashboard history.
         </p>
       ) : null}
