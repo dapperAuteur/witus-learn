@@ -922,5 +922,329 @@ Do not overclaim the chain — historians debate the exact weights — but the s
         ],
       },
     },
+
+    // ────────────── SECTION 4 · THE DUAL LABOR MARKET ──────────────
+    {
+      slug: "korea-imf-crisis",
+      title: "8 · December 1997: the crisis that redrew the workforce",
+      section: "Section 4 · Regular and non-regular — the divide that defines Korea",
+      body: `Every country in this track has a hinge year — the moment its labor system took the shape you now see. Germany's is 1976, Poland's 1989, Mexico's 2019. Korea's is **1997**, and Koreans still call what followed simply "the IMF era" — a period so traumatic it functions in the national memory the way "the Depression" does in America's.
+
+**The crash.** In late 1997 the Asian financial crisis reached Korea. The chaebol had gorged on short-term foreign debt; when confidence broke, the currency collapsed and the state faced default. On **3 December 1997**, Korea signed its letter of intent to the **International Monetary Fund**, unlocking an IMF-led international rescue of **roughly $58 billion — at the time the largest ever assembled** (the IMF's own stand-by credit was about $21 billion, approved 4 December 1997; the World Bank, the Asian Development Bank and bilateral lenders made up the rest). The money came with conditions, and one of them mattered more for this course than all the others combined: **labor market flexibility.** In plain language, the IMF and Korea's creditors wanted it to become legally easier for Korean firms to shed workers.
+
+**The bargain.** In February 1998, the incoming government of Kim Dae-jung — a former dissident, elected in the crisis's depths — convened a **Tripartite Commission**: government, employers, and both federations, the KCTU included, at a national table for the first time. The pact they signed traded, in essence, security for voice:
+
+- **Employers and the state got:** legalized **layoffs for "urgent managerial necessity"** (the dismissal-for-business-reasons power the 1996–97 general strike had delayed), and a new **Dispatch Workers Act** legalizing temporary-agency employment — hiring a worker *through* a middleman firm rather than *as* your employee.
+- **Labor got:** legal recognition of the teachers' union, rights of political participation for unions, and a seat at the tripartite table — recognition, in exchange for flexibility.
+
+Note the honest footnote: when the KCTU's leadership signed, its **rank and file revolted**, voted the pact down, and forced the leadership's resignation — the confederation's members understood immediately what they had traded. But the deal stood, the laws passed, and the door was open.
+
+**What walked through the door.** Mass layoffs arrived within months — you will meet the most famous one, Ssangyong Motor, in Section 5. But the deeper change was slower and structural: Korean firms rebuilt their workforces around the new legal tools. Why employ a worker directly, with severance obligations and a chaebol union contract, when you can hire her on a **fixed-term contract**, through a **dispatch agency**, or via an **in-house subcontractor** — a nominally separate company whose employees work on your assembly line, in your uniform colors, at lower pay, outside your union? Layer by layer, hire by hire, Korea grew a **second workforce** alongside the protected one.
+
+That second workforce is the next lesson's subject, and it is not a fringe: it is **38.2% of all wage workers** (August 2025, Statistics Korea). Before you turn the page, register what this means for the story so far. The unions of 1987 fought the state and won. The restructuring of 1998 did not frontally attack them at all — it **grew a new workforce around them**, outside the walls they had built. It is the most effective answer to worker power in this course, and no one was ever beaten or jailed to accomplish it.
+
+:::reveal The course calls the post-1997 restructuring "the most effective answer to worker power in this course," more effective than the dictatorship's police. What was the mechanism? ||| The February 1998 tripartite bargain — struck under a ~$58 billion IMF rescue with 'labor market flexibility' conditions — legalized layoffs for urgent managerial necessity and dispatch (temp-agency) work. Firms then rebuilt employment around the new tools: fixed-term contracts, dispatch agencies, in-house subcontractors. Rather than attacking the 1987 unions frontally, employers grew a second, cheaper, largely un-unionized workforce around them — 38.2% of wage workers by August 2025 — no beatings or jailings required. The walls the unions had built still stood; the economy was simply rebuilt outside them.
+
+## Sources
+- International Monetary Fund. (1997, December 4). *IMF approves SDR 15.5 billion stand-by credit for Korea* [Press release No. 97/55]. https://www.imf.org/external/np/sec/pr/1997/pr9755.htm
+- International Monetary Fund. (1997, December 3). *Korea — letter of intent*. https://www.imf.org/external/np/loi/120397.HTM
+- Chang, D. (2021). Korean labour movement: The birth, rise and transformation of the democratic trade union movement. In *Routledge Handbook of Contemporary South Korea*. https://labourschool.org/wp-content/uploads/2024/09/Chang-2021-Korean-Labour-Movement-Routledge-Handbook-of-Contemporary-South-Korea.pdf
+- Statistics Korea. (2025, October). *Supplementary results of the Economically Active Population Survey by employment type in August 2025* [Press release]. https://mods.go.kr/board.es?act=view&bid=11735&list_no=439078&mid=a20105010000`,
+      recallContent: [
+        {
+          prompt: "What did each side get in the February 1998 tripartite bargain?",
+          answer:
+            "Employers and the state got legalized layoffs for 'urgent managerial necessity' and the Dispatch Workers Act legalizing temp-agency employment. Labor got recognition: teachers'-union legalization, union political-participation rights, and a seat at the tripartite table. The KCTU rank and file revolted and voted it down, forcing their leadership's resignation — but the deal stood.",
+        },
+        {
+          prompt: "Why is 1997 Korea's hinge year for this course?",
+          answer:
+            "The IMF-led ~$58 billion international rescue (letter of intent signed 3 December 1997, then the largest ever assembled) came with labor-flexibility conditions. The resulting 1998 legal tools — business-reason layoffs, dispatch work, and the outsourcing wave that followed — grew today's non-regular workforce (38.2% of wage workers, August 2025) around the unions of 1987 rather than through them.",
+        },
+      ],
+    },
+    {
+      slug: "korea-non-regular-divide",
+      title: "9 · Regular and non-regular: the divide, in numbers",
+      section: "Section 4 · Regular and non-regular — the divide that defines Korea",
+      body: `Here is the single most important fact about work in South Korea today, and it comes with a year and a source, as every number in this track must:
+
+> **As of August 2025, 8,568,000 South Korean wage workers — 38.2% of all wage workers — were "non-regular"** (Statistics Korea, Economically Active Population Survey, supplementary results by employment type; the share was unchanged from August 2024).
+
+Nearly four in ten. Now unpack what the label means, because "non-regular" (*bijeonggyujik*) is not one arrangement but a family of them, and each member of the family is a different way of doing the same thing — **moving the person who does the work away from the protected core**:
+
+- **Fixed-term workers** — employed on contracts with an end date, renewed (or not) at the employer's option. Korea's 2007 fixed-term law limits such contracts to two years, after which the worker must be treated as permanent — which in practice also created a rhythm of **terminations at month 23**.
+- **Part-time workers** — shorter hours, and usually thinner benefits, than the statutory norm.
+- **Dispatched workers** — employed by a staffing agency, working under another firm's direction: two companies, and neither fully your employer.
+- **In-house subcontract workers** — the Korean specialty. A nominally independent contractor company supplies crews who work *inside* the principal firm's plant — same shipyard, same assembly line, often literally alongside regular employees — at lower pay, under separate (or no) union representation. The giant shipyards and auto plants run on this arrangement, and much of it sits at the edge of, or over, the legal line: Korean courts have repeatedly found major manufacturers' in-house subcontracting to be disguised illegal dispatch.
+- **"Specially employed" workers** — the sharpest edge: people treated in law as **self-employed businesses** rather than workers at all. Truck drivers who own their vehicles, delivery riders, golf caddies, insurance agents, many freelancers. They have no employer to bargain with by definition — remember the India course's question, *what happens when there is no employer?* — and when they act collectively, the law may not recognize it as a strike. Section 5's truckers live here.
+
+**What the divide costs.** Non-regular status is not a technicality. Statistics Korea's own supplementary survey documents, release after release, large gaps in monthly wages, social-insurance enrollment, severance coverage and bonus eligibility between the two groups (check the current release for the year's exact figures — they move, the gap persists). And the divide is not distributed randomly: non-regular work falls disproportionately on **women** — recall who built this movement in the 1970s — on the **young**, and on the **old**.
+
+**The track's through-line, one more time.** The anchor taught you the Wagner Act's farm-and-domestic carve-out. Poland taught you the civil-law "junk contract." Mexico taught you the contract signed over workers' heads. Korea's version is the most statistically developed in the whole track: a wealthy democracy where nearly four in ten wage earners hold a status designed, in one way or another, to cost less and owe less — and where the census bureau publishes the divide's exact size every August. **When a labor system looks strong but four workers in ten stand outside its walls, the walls are the story.**
+
+:::reveal Name the five main categories of Korean "non-regular" work, and the one design feature they share. ||| Fixed-term workers (contracts with end dates — with terminations clustering before the two-year conversion rule); part-time workers; dispatched workers (employed by a staffing agency, directed by another firm); in-house subcontract workers (contractor crews inside the principal's own plant, sometimes ruled disguised illegal dispatch); and "specially employed" workers legally classed as self-employed businesses with no employer at all. The shared feature: each arrangement moves the person doing the work away from the protected core — same work, thinner obligations — the track's oldest move at a scale of 8.57 million people, 38.2% of wage workers (August 2025, Statistics Korea).
+
+## Sources
+- Statistics Korea. (2025, October). *Supplementary results of the Economically Active Population Survey by employment type in August 2025* [Press release]. https://mods.go.kr/board.es?act=view&bid=11735&list_no=439078&mid=a20105010000
+- HR Asia. (2025). *Non-regular workers comprise 38.2% of South Korea's wage earners*. https://hr.asia/asia-2/non-regular-workers-comprise-38-2-of-south-koreas-wage-earners/
+- International Labour Organization. (n.d.). *Republic of Korea — country profile*. ILOSTAT. https://ilostat.ilo.org/data/country-profiles/kor/`,
+      recallContent: [
+        {
+          prompt: "What is the size of Korea's non-regular workforce, with year and source?",
+          answer:
+            "8,568,000 workers — 38.2% of all wage workers — as of August 2025, per Statistics Korea's Economically Active Population Survey supplementary results by employment type (unchanged in share from August 2024). Nearly four in ten wage earners.",
+        },
+        {
+          prompt: "What is in-house subcontracting, and why does the course call it 'the Korean specialty'?",
+          answer:
+            "A nominally independent contractor company supplies crews who work inside the principal firm's own plant — same shipyard or assembly line as regular employees — at lower pay and outside the enterprise union. Korea's giant shipyards and auto plants run on it, and courts have repeatedly found major manufacturers' versions to be disguised illegal dispatch.",
+        },
+      ],
+    },
+    {
+      slug: "korea-movements-blind-spot",
+      title: "10 · The movement's own blind spot",
+      section: "Section 4 · Regular and non-regular — the divide that defines Korea",
+      body: `This is the lesson a promotional history of Korean labor would omit, and this track's standing rule is that the omitted lesson is usually the load-bearing one. The question: **where were the unions while the non-regular workforce grew to four in ten?** The honest answer has three parts, and the first is uncomfortable.
+
+**Part one: the structure made the movement complicit.** Recall what 1987 built: **enterprise unions of regular employees at large firms**. An enterprise union bargains for its members — the regular workers of one company. The in-house subcontract crews on the same line are, legally, employees of *someone else*; the fixed-term workers are, definitionally, temporary; none of them are in the bargaining unit. So when restructuring came, the structurally rational move for an enterprise union was to **defend its members' security first — even when the price was agreeing, or acquiescing, as the company filled the next vacancy with a subcontractor.** In more than a few documented bargaining rounds, protecting the regular core and conceding the outsourced periphery was the deal on the table, and it was taken. No conspiracy is needed; the incentive is built into the union form itself. (This is the dark twin of the anchor's Japan lesson — the enterprise union protects the inside, and the inside only.)
+
+**Part two: the excluded organized anyway — and their fights are the era's defining ones.** Just as the 1970s belonged to the factory women, the 2000s' most emblematic labor struggles belonged to irregular workers, disproportionately women, usually fighting *without* — sometimes against the indifference of — the big federations' core unions:
+
+- The **KTX train attendants**: around 280 women hired for Korea's new high-speed rail through a subsidiary, dismissed in 2006 when they demanded the direct employment they said they had been promised. Their fight — court cases won and then reversed, years on picket lines and rooftops — ran **twelve years**, until a 2018 agreement finally returned them to direct employment.
+- The **Kiryung Electronics women** — dispatched and contract workers at a Seoul electronics maker whose struggle for direct employment lasted the better part of six years in the late 2000s and became a national symbol before ending in a direct-employment agreement (2010).
+
+Register the pattern: the growth sector of Korean labor organizing in this century has been **irregular and 'specially employed' workers building their own unions** — often as direct-membership or industrial unions precisely because the enterprise-union form had no room for them.
+
+**Part three: the federations have been changing — datedly, partially, and under pressure from below.** The KCTU in particular has, since the mid-2000s, made irregular workers' organizing a stated priority, chartered industrial and regional unions open to them, and supplied the era's most visible solidarity campaigns (you will meet the "Hope Buses" in Section 5). By the 2020s several of the KCTU's fastest-growing affiliates were unions of platform, delivery, subcontract and specially-employed workers. That is real. It is also incomplete — union density among non-regular workers remains a small fraction of that among regular workers (Statistics Korea's supplementary survey and ILOSTAT both document the gap in their current releases) — and the change was driven substantially by the excluded organizing themselves and forcing the door.
+
+**Why this lesson matters beyond Korea.** Every labor movement in this track eventually faces its version of this test — the anchor taught you American unions' own exclusion history (Black workers, women, the 1935 carve-outs). Korea's version is distinctive because it happened *fast* and *recently*, inside living memory, to a movement whose founding martyrs were teenage factory girls. The measuring stick from Lesson 5 comes due here: **a movement founded by the excluded rebuilt itself around the included** — and the excluded, once again, had to organize themselves.
+
+:::reveal Why does the course say "no conspiracy is needed" to explain how Korea's unions ended up defending the regular core while the non-regular periphery grew? ||| Because the incentive lives in the union form itself: an enterprise union legally bargains only for its members — the regular employees of one firm. Subcontract crews belong to another employer, fixed-term workers are temporary by definition, and none are in the bargaining unit. So under restructuring pressure, the structurally rational move was to defend members' security even at the price of acquiescing in outsourcing the next vacancy. The exclusion was a property of the structure 1987 built — the enterprise union protects the inside, and the inside only — which is why the excluded had to build their own unions to force the door.
+
+## Sources
+- Korea Policy Institute. (2021). *Women workers and the fight to eradicate precarious labor in South Korea*. https://www.kpolicy.org/post/women-workers-and-the-fight-to-eradicate-precarious-labor-in-south-korea
+- Chang, D. (2021). Korean labour movement: The birth, rise and transformation of the democratic trade union movement. In *Routledge Handbook of Contemporary South Korea*. https://labourschool.org/wp-content/uploads/2024/09/Chang-2021-Korean-Labour-Movement-Routledge-Handbook-of-Contemporary-South-Korea.pdf
+- Statistics Korea. (2025, October). *Supplementary results of the Economically Active Population Survey by employment type in August 2025* [Press release]. https://mods.go.kr/board.es?act=view&bid=11735&list_no=439078&mid=a20105010000`,
+      recallContent: [
+        {
+          prompt: "Who were the KTX attendants, and how long did their fight run?",
+          answer:
+            "About 280 women hired through a subsidiary for Korea's new high-speed rail, dismissed in 2006 after demanding the direct employment they said was promised. Through reversed court victories, picket lines and rooftop protests, the fight ran twelve years, ending with a 2018 agreement returning them to direct employment — an emblematic irregular-workers' struggle fought largely outside the big federations' core unions.",
+        },
+        {
+          prompt: "What is the three-part honest answer to 'where were the unions while non-regular work grew?'",
+          answer:
+            "(1) The enterprise-union structure made defending the regular core rational, even at the price of acquiescing in outsourcing — no conspiracy needed; (2) the excluded organized anyway (KTX attendants, Kiryung Electronics), creating the era's defining struggles; (3) the federations — especially the KCTU — have since made irregular organizing a priority, but the change is partial, recent, and was forced substantially from below.",
+        },
+      ],
+    },
+    {
+      slug: "korea-quiz-4",
+      title: "Section 4 quiz · The divide",
+      section: "Section 4 · Regular and non-regular — the divide that defines Korea",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What happened on 3 December 1997?",
+            options: [
+              "Korea hosted the Olympics",
+              "Korea signed onto an IMF-led rescue package of roughly $58 billion — then the largest in IMF history — with labor-flexibility conditions attached",
+              "The KCTU was founded",
+              "Korea left the OECD",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Asian financial crisis reached a chaebol economy gorged on short-term foreign debt. Koreans still call the period 'the IMF era.'",
+            sourceLessonSlug: "korea-imf-crisis",
+          },
+          {
+            prompt: "What two legal tools did the February 1998 tripartite bargain hand employers?",
+            options: [
+              "Layoffs for 'urgent managerial necessity' and legalized dispatch (temp-agency) work",
+              "A strike ban and wage controls",
+              "Import tariffs and tax cuts",
+              "Nothing — employers got no concessions",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Security traded for voice: labor got teachers'-union recognition, political rights and a tripartite seat; employers got the tools around which the non-regular economy grew.",
+            sourceLessonSlug: "korea-imf-crisis",
+          },
+          {
+            prompt: "How did the KCTU's rank and file respond to their leadership signing the 1998 pact?",
+            options: [
+              "With a celebration rally",
+              "They revolted, voted the pact down, and forced the leadership's resignation — though the deal stood and the laws passed",
+              "They ignored it",
+              "They defected to the FKTU en masse",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The members understood immediately what had been traded. The course keeps this footnote because it shows the bargain was contested inside labor from day one.",
+            sourceLessonSlug: "korea-imf-crisis",
+          },
+          {
+            prompt: "Why does the course rate the post-1997 restructuring as more effective against worker power than the dictatorship's police?",
+            options: [
+              "It wasn't — the police were more effective",
+              "Because it never attacked the 1987 unions frontally: it grew a second, cheaper workforce around them, outside their walls, with no one beaten or jailed",
+              "Because it abolished unions by statute",
+              "Because it deported union leaders",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Fixed-term hiring, dispatch and in-house subcontracting rebuilt the workforce around the protected core — the most effective answer to worker power in the course.",
+            sourceLessonSlug: "korea-imf-crisis",
+          },
+          {
+            prompt: "What share and number of Korean wage workers were non-regular in August 2025?",
+            options: [
+              "38.2% — 8.57 million (Statistics Korea)",
+              "10% — 2 million",
+              "62% — 14 million",
+              "25% — 5 million",
+            ],
+            correctIndex: 0,
+            explanation:
+              "8,568,000 workers, 38.2% of wage workers — unchanged in share from August 2024. Every number in this track carries a year and a source.",
+            sourceLessonSlug: "korea-non-regular-divide",
+          },
+          {
+            prompt: "What rhythm did Korea's 2007 two-year conversion rule for fixed-term contracts create in practice?",
+            options: [
+              "Automatic permanent conversion for everyone",
+              "Terminations clustering around month 23, just before conversion would be owed",
+              "Ten-year contracts",
+              "The abolition of fixed-term work",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A protection with a threshold invites management to the threshold's edge — a pattern to look for in any country's fixed-term rules.",
+            sourceLessonSlug: "korea-non-regular-divide",
+          },
+          {
+            prompt: "What is distinctive about 'specially employed' workers like owner-operator truck drivers?",
+            options: [
+              "They earn the highest wages in Korea",
+              "They are treated in law as self-employed businesses — no employer to bargain with by definition, and collective action that may not legally count as a strike",
+              "They are all foreign nationals",
+              "They are automatically union members",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The sharpest edge of the divide: exclusion not from a benefit but from the legal category 'worker' itself. Section 5's truckers live here.",
+            sourceLessonSlug: "korea-non-regular-divide",
+          },
+          {
+            prompt: "What have Korean courts repeatedly found about major manufacturers' in-house subcontracting?",
+            options: [
+              "That it is always lawful",
+              "That much of it amounts to disguised illegal dispatch — contractor crews working inside the principal's plant under its direction",
+              "That it does not exist",
+              "That it only occurs in agriculture",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Same line, same work, different employer on paper — and courts have repeatedly pierced the paper at Korea's giant shipyards and auto plants.",
+            sourceLessonSlug: "korea-non-regular-divide",
+          },
+          {
+            prompt: "On whom does non-regular work fall disproportionately?",
+            options: [
+              "Mid-career male chaebol engineers",
+              "Women, the young, and the old",
+              "Government ministers",
+              "It is distributed perfectly evenly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The demographics rhyme darkly with Lesson 5: the movement's founding constituency — working women — is over-represented outside today's walls.",
+            sourceLessonSlug: "korea-non-regular-divide",
+          },
+          {
+            prompt: "Why does the course say 'no conspiracy is needed' to explain the unions' role in the divide?",
+            options: [
+              "Because there was a proven conspiracy",
+              "Because the enterprise-union form itself makes defending the regular core rational — subcontract and fixed-term workers simply aren't in the bargaining unit",
+              "Because unions had no role at all",
+              "Because the government ordered unions to exclude the non-regular workforce",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The incentive is structural: an enterprise union bargains for its members, and the periphery belongs, legally, to someone else. The dark twin of the anchor's Japan lesson.",
+            sourceLessonSlug: "korea-movements-blind-spot",
+          },
+          {
+            prompt: "How did the KTX attendants' twelve-year fight end?",
+            options: [
+              "In defeat, with no jobs recovered",
+              "With a 2018 agreement returning the dismissed women to direct employment",
+              "With criminal convictions of the attendants",
+              "With the abolition of Korea's railways",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Dismissed in 2006 after demanding promised direct employment; through reversed court wins and years of protest, they finally returned in 2018 — an emblem of irregular workers organizing for themselves.",
+            sourceLessonSlug: "korea-movements-blind-spot",
+          },
+          {
+            prompt: "What organizational forms have irregular and specially-employed workers used to organize, and why?",
+            options: [
+              "Enterprise unions, because the form suited them",
+              "Direct-membership, industrial and regional unions — because the enterprise-union form had no room for workers whose employer is absent, temporary or nominal",
+              "Political parties only",
+              "They have never organized",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The growth sector of Korean organizing this century: unions built by the excluded, outside the company-gate form — several now among the KCTU's fastest-growing affiliates.",
+            sourceLessonSlug: "korea-movements-blind-spot",
+          },
+          {
+            prompt: "How does the course characterize the federations' turn toward irregular workers?",
+            options: [
+              "Complete and finished decades ago",
+              "Real but partial and recent — union density among non-regular workers remains far below that of regular workers, and the change was forced substantially from below",
+              "Nonexistent",
+              "Imposed by the employers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The honest, dated verdict: stated priority since the mid-2000s, visible growth in platform/subcontract/special-employment affiliates by the 2020s, and a persistent density gap documented in each year's official releases.",
+            sourceLessonSlug: "korea-movements-blind-spot",
+          },
+          {
+            prompt: "Which anchor-course chapter does Korea's blind-spot lesson parallel?",
+            options: [
+              "The anchor's lesson on American unions' own exclusion history — Black workers, women, the 1935 carve-outs",
+              "The anchor's Haymarket lesson",
+              "The anchor's ILO lesson",
+              "The anchor's PATCO lesson",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Every movement in the track faces this test. Korea's version is distinctive for happening fast, recently, and to a movement founded by teenage factory girls.",
+            sourceLessonSlug: "korea-movements-blind-spot",
+          },
+          {
+            prompt: "What single sentence does the course offer as the summary of Section 4?",
+            options: [
+              "When a labor system looks strong but four workers in ten stand outside its walls, the walls are the story",
+              "Non-regular work is a myth",
+              "The IMF saved Korean unions",
+              "Enterprise unions cover everyone eventually",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The through-line of the whole track — who is outside the protected category? — at its most statistically developed: the census bureau publishes the divide's exact size every August.",
+            sourceLessonSlug: "korea-non-regular-divide",
+          },
+        ],
+      },
+    },
   ],
 };
