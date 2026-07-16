@@ -103,6 +103,7 @@ import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
 import { LABOR_MEXICO_COURSE } from "./data/labor-mexico-course";
 import { LABOR_NORDICS_COURSE } from "./data/labor-nordics-course";
 import { LABOR_POLAND_COURSE } from "./data/labor-poland-course";
+import { LABOR_SOUTH_KOREA_COURSE } from "./data/labor-south-korea-course";
 import { AFRICA_BEFORE_COLONIZATION_COURSE } from "./data/africa-before-colonization-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
@@ -700,6 +701,19 @@ async function main() {
     // adjudicates neither. Teaches the "junk contracts" (umowy śmieciowe) rhyme with US
     // misclassification + Mexican protection contracts. 6 sections · no migration · seed:courses.
     { slug: "labor-poland", course: LABOR_POLAND_COURSE, category: "Culture & History" },
+    // South Korea: Democracy, the Chaebol, and the Lawsuit as a Weapon — Wave 2 of the
+    // workers'-rights country track, off the anchor (history-of-unions; the anchor has NO Korea
+    // lesson — its Japan enterprise-union lesson is the cross-link). The compressed century:
+    // labor control as explicit Park-era development policy, Jeon Tae-il (13 Nov 1970, quote
+    // sourced to the Cho Young-rae biography, not asserted as transcript), the 1987 Great
+    // Workers' Struggle (3,300+ strikes), FKTU vs KCTU, and the regular/non-regular divide —
+    // 38.2% of wage workers (Aug 2025, Statistics Korea). Question 4's modern form: damages
+    // suits + provisional seizure (Ssangyong 2009), first-ever trucker return-to-work orders
+    // (Nov 2022), and the yellow envelope law (passed 24 Aug 2025 after two vetoes, effective
+    // Mar 2026) taught DATED with no outcomes asserted. Density 13.1% (2022 MOEL), coverage
+    // 14.8% (2018 OECD/AIAS). 6 sections · 15 teaching lessons · 6 quizzes (15-question banks).
+    // NO migration — pnpm seed:courses.
+    { slug: "labor-south-korea", course: LABOR_SOUTH_KOREA_COURSE, category: "Culture & History" },
     // Africa Before Colonization — the ANCHOR of the precolonial-Africa track
     // (plans/future-courses/africa-precolonial-track-proposal.md; from BAM's world.md queue).
     // Opens with the verified Hegel (1837) and Trevor-Roper (1965) "no history" quotes as the

@@ -625,6 +625,32 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   contracts" (\`umowy śmieciowe\`) rhyme** with US misclassification + Mexican protection contracts —
   the track's payoff. Cited to UNESCO, the European Solidarity Centre, GUS, OECD/AIAS, ETUI and
   Eurofound. Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+- 🔧 **South Korea: Democracy, the Chaebol, and the Lawsuit as a Weapon** (Culture & History,
+  \`content/labor-south-korea\`) — **Wave 2 of the workers'-rights country track**, for high school
+  students. **6 sections · 15 teaching lessons · 6 quizzes** (14–15-question banks, above the
+  10-question attempt cap so retries rotate; every question carries \`explanation\` +
+  \`sourceLessonSlug\`). The compressed century: **labor suppression as explicit development
+  policy** under Park Chung-hee (the supervised FKTU, the Dec 1971 special-measures freeze, the
+  Peace Market's teenage "sida"); **Jeon Tae-il's self-immolation (13 Nov 1970** — date verified;
+  his reported last words *"We are not machines"* are **sourced to witness accounts via Cho
+  Young-rae's biography (pub. 1983), not asserted as transcript**; Lee So-sun + the Cheonggye
+  union); the women's unions of the 1970s (Dongil 1978, **YH → Bu-Ma → Park's assassination**,
+  chain taught with hedged weights); the **1987 Great Workers' Struggle** (3,300+ strikes, ~1.2M
+  workers — the **Poland cross-link with the causal arrow reversed**); FKTU vs **KCTU (founded
+  1995, illegal until Nov 1999)** and chaebol **enterprise unions** (anchor's Japan lesson
+  cross-linked); the **1997 IMF hinge** (letter of intent 3 Dec 1997, ~$58B package; Feb 1998
+  layoffs + dispatch legalized) → the **regular/non-regular divide: 38.2% of wage workers /
+  8.568M (Aug 2025, Statistics Korea)**, incl. **the movement's own blind spot** taught
+  structurally (enterprise-union form; KTX attendants, Kiryung). **Question 4's modern form**:
+  damages suits + **provisional seizure** (Ssangyong 2009 — 77 days, ~4.7bn won awards, ~30
+  deaths by 2018 with variance named, **Supreme Court June 2023** remand), the 2022 truckers'
+  strike (**first-ever return-to-work orders, 29 Nov 2022**; ILO dispute taught both ways,
+  **live**), and the **yellow envelope law** (passed 24 Aug 2025 after two vetoes, **effective
+  Mar 2026 — text + dates stated, no outcomes asserted**). Honest scorecard: **density 13.1%
+  (2022, MOEL)** — the brief's "~10%" corrected — **coverage 14.8% (2018, OECD/AIAS)**,
+  enterprise bargaining with **no extension mechanism**; ILO **C87/C98 ratified only 20 Apr
+  2021**. Cited to Statistics Korea, MOEL, OECD/AIAS, ILO/NORMLEX, MOFA and the Korean + legal
+  press. Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
 - 🔧 **Africa Before Colonization: The Documented Record** (Culture & History,
   \`content/africa-precolonial\`) — the **anchor of the precolonial-Africa track** (from BAM's
   \`world.md\` queue). **7 sections · 16 teaching lessons · 7 quizzes** (15-16-question banks, above
