@@ -1598,5 +1598,217 @@ Both sentences can be true at once, and seeing how is a skill this course has be
         ],
       },
     },
+
+    // ────────────── SECTION 6 · THE FOUR ANSWERS ──────────────
+    {
+      slug: "india-four-answers",
+      title: "14 · The four answers — and what India teaches the track",
+      section: "Section 6 · The verdict — what India teaches everyone else",
+      body: `Lesson 3 promised that Section 6 would ask you to give the four answers back, short. Here they are — India's answers first, then the three things this course adds to everything else you will study in this track.
+
+**Q1 — Who is allowed to organise?** Nearly anyone, genuinely: Article 19(1)(c) plus seven members (1926 Act) — a floor low enough that in 1972 it admitted a union of women with no employer at all. But the right is thinner than its paper: no ILO 87/98 ratification, no fundamental right to strike (Rangarajan, 2003), and under the IR Code a lawful strike now needs 14 days' notice everywhere.
+
+**Q2 — Who is excluded?** Formally almost nobody; structurally, roughly nine in ten. India's great exclusion is written in no statute because the statutes' *vocabulary* — employer, establishment, industry — never reaches the informal worker. And the exclusion is not neutral: it has a caste geography (lesson 12) and it runs through childhood (lesson 13).
+
+**Q3 — Who bargains with whom?** The organised tenth bargains enterprise-by-enterprise, through party-tied federations too fragmented for a 51% sole negotiator to be common. The informal nine-tenths, where they bargain at all, bargain with **substituted counterparties**: the middleman, the municipality, above all the state — welfare boards, e-Shram, aggregator-funded schemes. SEWA invented the method; the state has begun nationalising it.
+
+**Q4 — What happens to you if you try?** Three answers in one country: the rulebook (formal private sector), Rangarajan's dismissal-without-remedy (government employees), and informal punishment — eviction, confiscation, the contractor who stops calling — for the majority, against which the working counter-tools are a membership card and an organisation that answers for you.
+
+**Now the three things India teaches the track — the reasons this course exists:**
+
+**1. "Worker" and "employee" are different categories, and the difference is most of the world.** Every other course in this track studies variations on the employment relationship. India is the reminder that globally, per the ILO, informal employment is the majority experience of work — India is the largest case, not an exotic one. Any theory of labor rights that starts "when you get a job with an employer…" has skipped most of the people it claims to be about. Test everything you learned in the anchor against a street vendor; whatever survives is the real core.
+
+**2. Institutions can be rebuilt around the missing employer — at a price that must be stated honestly.** SEWA proves organising the employer-less works: identity, substituted counterparties, member-built institutions. The Social Security Code and e-Shram prove the state can run the same logic at national scale — registration and welfare attached to the person, not the job. And lesson 8's limit stands at both scales: none of it produces a collective agreement, because **no counterparty, no contract.** What replaces bargaining, when the employer is missing, is *politics* — which is why India's biggest labor events are general strikes against governments (claimed at 250 million, attributed, never verified), not contract fights against firms.
+
+**3. Date every claim, define every number.** This course's method was its content. The 90% came with a source, year and definition; the 250 million stayed attributed; the Labour Codes carried an "as of" at every threshold (enacted 2019/20 → in force 21 November 2025 → Central Rules 8 May 2026 → state rules still uneven, mid-2026); the sewer deaths were counted honestly only once you saw the definitional seam; the child-labour count stops in 2011 and says so. Where the anchor course gave you four questions to ask of any country, India adds the discipline for hearing the answers: **no number without a definition, no law without a date, no claim without an owner.** Carry all three tools to the next course — and back into your own.
+
+:::reveal Name the three things this course says India teaches the whole track. ||| (1) 'Worker' and 'employee' are different categories — and the informal majority, not the employed minority, is most of the world's experience of work. (2) Institutions can be rebuilt around a missing employer (SEWA's method; the state's e-Shram version) — but no counterparty, no contract: what replaces bargaining is politics. (3) The sourcing discipline itself: no number without a definition, no law without a date, no claim without an owner.
+
+## Sources
+- International Labour Organization & Institute for Human Development. (2024). *India Employment Report 2024*. ILO. https://www.ilo.org/sites/default/files/2024-08/India%20Employment%20-%20web_8%20April.pdf
+- International Labour Organization. (2023). *Women and men in the informal economy: A statistical update*. https://www.ilo.org/publications/women-and-men-informal-economy-statistical-update
+- T.K. Rangarajan v. Government of Tamil Nadu & Others, Supreme Court of India (2003, August 6). https://indiankanoon.org/doc/88909580/
+- The Industrial Relations Code, 2020 (India), No. 35 of 2020. India Code. https://www.indiacode.nic.in/bitstream/123456789/22040/1/A2020-35.pdf`,
+      recallContent: [
+        {
+          prompt: "Give India's four answers, one line each.",
+          answer:
+            "Q1: nearly anyone may organise (Art. 19(1)(c), seven members) — but no 87/98 ratification and no right to strike. Q2: excluded formally almost nobody, structurally ~90% — with a caste geography. Q3: the formal tenth bargains enterprise-level through party-tied federations; the informal rest bargain with substituted counterparties, above all the state. Q4: the rulebook, Rangarajan, or informal punishment — depending on which India you work in.",
+        },
+        {
+          prompt: "Why does this course say politics replaces bargaining where the employer is missing?",
+          answer:
+            "Bargaining needs a counterparty who can sign; the informal majority has none — so demands aim at the state instead. That is why India's biggest labor events are general strikes against governments over policy (attributed at 250M), not contract fights against firms, and why welfare boards and e-Shram are the informal economy's 'agreements.'",
+        },
+      ],
+    },
+    {
+      slug: "india-quiz-6",
+      title: "Section 6 quiz · The four answers",
+      section: "Section 6 · The verdict — what India teaches everyone else",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "India's answer to 'Who is allowed to organise?' is 'nearly anyone — but…' But what?",
+            options: [
+              "But only through the state federation",
+              "But the right is thinner than its paper: no ILO 87/98 ratification, no fundamental right to strike, and a universal 14-day strike notice under the IR Code",
+              "But only in factories",
+              "But unions must register with a political party",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The floor for forming is low (seven members, Art. 19(1)(c)); the ceiling on acting is what Rangarajan and the IR Code set.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "Summarise India's answer to 'Who is excluded?'",
+            options: [
+              "Nobody at all",
+              "Formally almost nobody; structurally roughly nine in ten — via the statutes' vocabulary, with a caste geography, running through childhood",
+              "Only government employees",
+              "Only agricultural workers, by name",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No carve-out clause exists because none was needed: employer/establishment/industry never reach the informal worker — and who lands in the worst informal work is not caste-neutral.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "For the informal nine-tenths, who fills the employer's chair at the bargaining table?",
+            options: [
+              "The largest federation",
+              "Substituted counterparties: the middleman, the municipality, and above all the state (welfare boards, e-Shram, aggregator-funded schemes)",
+              "The ILO",
+              "Nobody — bargaining is illegal for them",
+            ],
+            correctIndex: 1,
+            explanation:
+              "SEWA invented the substitution method (lesson 7); the SS Code and e-Shram are the state running the same logic at national scale.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "Why does the course say Question 4 has three answers in one country?",
+            options: [
+              "Because there are three federations",
+              "Because retaliation differs by which India you work in: a rulebook for the formal private sector, Rangarajan's remedy-less dismissal for government employees, and informal punishment for the informal majority",
+              "Because the Constitution has three articles on strikes",
+              "Because there are three Labour Codes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One legal system, three experiences of 'what happens if you try' — the tripartite answer is itself the picture of a segmented labour market.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "Why does this course insist India is 'the largest case, not an exotic one'?",
+            options: [
+              "Because India has the world's largest verified union membership",
+              "Because per the ILO, informal employment is the majority experience of work globally — theories of labor rights that assume an employer skip most of the world's workers",
+              "Because every country is 90% informal",
+              "Because the ILO is headquartered in India",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The track's other courses study variations on employment; India is the reminder that the employment relationship itself is the minority case worldwide.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "What replaces bargaining where the employer is missing, per this course's verdict?",
+            options: [
+              "Arbitration",
+              "Politics — demands aimed at the state, which is why India's biggest labor events are general strikes against governments over policy, not contract fights against firms",
+              "Litigation",
+              "Nothing at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No counterparty, no contract — so the pressure goes where a counterparty exists: government. The 250M-claimed bharat bandh is that logic at maximum scale.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "State the course's three-part sourcing discipline.",
+            options: [
+              "Trust official sources, distrust unions, ignore the press",
+              "No number without a definition, no law without a date, no claim without an owner",
+              "Always use the largest available figure",
+              "Only cite the ILO",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The 90% (defined), the Codes (dated at four thresholds), the 250 million and the membership claims (attributed to their owners) — the method was the content.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "Apply the discipline: a headline says 'India's Labour Codes guarantee every worker a minimum wage.' What must you ask before repeating it?",
+            options: [
+              "Nothing — statutes are self-executing",
+              "Which threshold the claim refers to (enacted 2019/20, in force 21 Nov 2025, Central Rules 8 May 2026, state rules uneven as of mid-2026) — and how 'worker' and enforcement reach the informal majority",
+              "Only whether the number is in crores or millions",
+              "Whether the headline is from a union or an employer",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A law protects nobody until it crosses enacted → in force → rules framed → enforced, and 'every worker' is doing heavy lifting in a 90%-informal economy.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "SEWA's method and e-Shram share one design principle. Which?",
+            options: [
+              "Attach identity, registration and protection to the PERSON rather than to a job or employer",
+              "Fund everything through union dues",
+              "Organise only formal-sector workers",
+              "Replace the state with cooperatives",
+            ],
+            correctIndex: 0,
+            explanation:
+              "When the employer is missing, protections that attach at the employer fail — so both attach them to the worker herself: card, register, welfare fund.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "What single structural limit stands at both SEWA scale and national scale?",
+            options: [
+              "Lack of members",
+              "No counterparty, no contract — organising and welfare are achievable without an employer; a collective agreement is not",
+              "Lack of laws",
+              "The census delay",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Fifty years of SEWA and a 309-million-registration portal both stop at the same wall: nothing can sign terms for the informal economy as a class.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt:
+              "The course closes by asking you to test the anchor course's machinery against one figure. Who — and why?",
+            options: [
+              "A factory manager, because factories are typical",
+              "A street vendor — whatever survives contact with a worker who has no employer is the real core of labor rights",
+              "A judge, because courts decide everything",
+              "A federation president, because unions speak for all workers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The election, the contract, the grievance procedure all fail the street-vendor test; the right to organise, identity, and person-attached protection survive. That residue is the point of the course.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "Which pairing correctly matches the track's three union-politics entanglements to their countries?",
+            options: [
+              "India: party owns the single union; China: many parties, many unions; Poland: union destroyed the party-state",
+              "Poland: the union destroyed the party-state; China: the party owns the one permitted union; India: many parties, each with its own union",
+              "Poland: many parties, many unions; China: union came first; India: single state federation",
+              "All three: single state-run federation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Three orderings of union and party — and India's plural, fragmented version is why a 51% sole negotiating union is rare and general strikes are the unifying act.",
+            sourceLessonSlug: "india-four-answers",
+          },
+        ],
+      },
+    },
   ],
 };
