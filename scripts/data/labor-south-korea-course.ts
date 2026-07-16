@@ -329,5 +329,324 @@ Here are Korea's answers in advance. Everything after this lesson is the detail.
         ],
       },
     },
+
+    // ────────────── SECTION 2 · THE DEVELOPMENTAL DICTATORSHIP ──────────────
+    {
+      slug: "korea-growth-first",
+      title: "3 · The miracle had a wage bill",
+      section: "Section 2 · The developmental dictatorship (1961–1979)",
+      body: `In 1961, South Korea was one of the poorest countries on earth — poorer, by most measures, than much of sub-Saharan Africa — a war-shattered, aid-dependent state barely eight years past the armistice that froze the Korean War. Forty years later it was an OECD industrial power. That transformation is usually called the **Miracle on the Han River**, and it is real. This lesson is about the part of the invoice that the word "miracle" hides.
+
+**The regime.** On 16 May 1961, Major General **Park Chung-hee** seized power in a military coup. He ruled for eighteen years — first as junta leader, then as elected president, and after 1972 as something close to a legal dictator, when his **Yushin Constitution** dissolved the existing order, ended direct presidential elections and gave him effectively unlimited terms and emergency powers. His government planned the economy the way a general staff plans a campaign: five-year plans from 1962, state-directed credit, and a bet that a country with no oil, no minerals and no capital had exactly one export to build on — **inexpensive, disciplined, educated labor.**
+
+**The strategy.** Korea's climb started with **export-led light manufacturing**: textiles, garments, wigs, plywood, footwear. Factories in Seoul's Guro district and the Peace Market garment quarter, and later the heavy-industry cities of the southeast, sold to the world on one advantage — price. And the price advantage *was* the wage bill. Keeping labor cheap, plentiful and quiet was therefore not a regrettable by-product of the development model. **It was a load-bearing component of it.** Cheap exports required cheap labor; cheap labor required that workers not be able to bid up its price; and making sure they couldn't was the state's job.
+
+**The machinery of quiet.** Three interlocking parts:
+
+- **A single, supervised labor federation.** Unions were not banned — that is a common misreading. The Federation of Korean Trade Unions (**FKTU**) existed legally through the whole period, and the state kept it close: leadership vetted, militancy filtered out, grievances channeled into paperwork. (Keep this pattern in mind from the Poland course — a one-federation system whose job runs downward is a tool of the state, whatever it is called.)
+- **Emergency law.** In December 1971, a special national-security measures law effectively **suspended collective bargaining and collective action** — and the 1972 Yushin system deepened the freeze. For most of the 1970s, the legal answer to "may we strike?" was in substance *no*.
+- **The intelligence services.** Labor disputes were treated as security matters. The Korean Central Intelligence Agency (KCIA) surveilled, infiltrated and broke independent worker organizing — you will see its hand directly in the Dongil Textile story two lessons from now.
+
+**Who paid.** The workforce of the light-industry export machine was overwhelmingly **young women** — teenagers and women in their early twenties, recruited off the countryside, living in dormitories or crammed rooms, remitting wages home to pay school fees for brothers. In the Peace Market's subdivided attic workshops, garment workers — many of them **"sida,"** teenage assistant seamstresses — worked days that routinely ran thirteen to fifteen hours in spaces too low to stand up in, breathing fabric dust, for some of the lowest industrial wages in Asia. A **Labor Standards Act** existed — enacted in 1953, on paper guaranteeing working hours, rest days and safe conditions — and in the export quarters it was simply not enforced. The law was real; its enforcement was not part of the plan.
+
+Hold that gap — a real statute, deliberately left dead — because the next lesson is about a 22-year-old tailor who read that statute and decided the country was going to hear about it.
+
+:::reveal The course insists that cheap labor under Park Chung-hee was "a load-bearing component" of the development model, not a side effect. What is the difference, and what evidence does the lesson give? ||| A side effect is something a policy tolerates; a component is something it requires and maintains. Korea's export-led strategy sold on price, the price advantage was the wage bill, and the state actively maintained it: a single supervised federation (FKTU) channeling grievances, 1971 emergency law suspending bargaining and strikes through the Yushin era, and the KCIA treating labor organizing as a security threat. The state did not merely fail to protect workers — it organized their quiet, because worker power would have bid up the one input the model depended on.
+
+## Sources
+- Chang, D. (2021). Korean labour movement: The birth, rise and transformation of the democratic trade union movement. In *Routledge Handbook of Contemporary South Korea*. https://labourschool.org/wp-content/uploads/2024/09/Chang-2021-Korean-Labour-Movement-Routledge-Handbook-of-Contemporary-South-Korea.pdf
+- Federation of Korean Trade Unions. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/Federation_of_Korean_Trade_Unions
+- The Korea Times. (2011, January 23). *Labor activist Chon Tae-il's death: A wake-up call*. https://www.koreatimes.co.kr/southkorea/20110123/century-labor-activist-chon-tae-ils-death-a-wake-up-call`,
+      recallContent: [
+        {
+          prompt: "What three mechanisms did the Park regime use to keep labor cheap and quiet?",
+          answer:
+            "(1) A single legal, state-supervised federation (the FKTU) with vetted leadership channeling grievances downward; (2) emergency law — the December 1971 special measures and the 1972 Yushin system — suspending effective bargaining and strike rights; (3) the KCIA treating labor organizing as a security matter: surveillance, infiltration, and breaking of independent unions.",
+        },
+        {
+          prompt: "Who staffed Korea's light-industry export machine, and under what conditions?",
+          answer:
+            "Overwhelmingly young women — teenagers and women in their early twenties from the countryside — including the 'sida' assistant seamstresses of Seoul's Peace Market: thirteen-to-fifteen-hour days in attic workshops too low to stand in, fabric dust, dormitory living, wages remitted home. The 1953 Labor Standards Act guaranteed hours and conditions on paper and was simply not enforced there.",
+        },
+      ],
+    },
+    {
+      slug: "korea-jeon-tae-il",
+      title: "4 · 13 November 1970: Jeon Tae-il",
+      section: "Section 2 · The developmental dictatorship (1961–1979)",
+      body: `Every labor movement has a founding story. Korea's is a specific young man on a specific street, and this lesson tells it soberly, because it deserves better than legend.
+
+**The man.** **Jeon Tae-il** was born in 1948 into deep poverty in Daegu. From his mid-teens he worked in the garment workshops of Seoul's **Pyeonghwa Market** — "Peace Market" — first as a sida (assistant), later a sewing-machine operator, eventually a tailor. He was not, at first, an activist of any kind. What changed him, by the accounts of those who knew him, was watching the sida — girls of fourteen, fifteen, sixteen — cough blood from fabric dust, get fired when they got sick, and work fifteen-hour days for less than the price of a coffee. His biography records that he sometimes gave his bus fare to buy food for the youngest workers and walked hours home.
+
+**The discovery.** In 1968 Jeon learned something that reorganized his life: **the law was already on the workers' side.** The **Labor Standards Act**, enacted in 1953, set maximum hours, mandated paid rest, and regulated the employment of minors. It applied, on paper, to the Peace Market. Barely schooled, he bought a guidebook to the Act and taught himself to read it — famously wishing aloud for "a friend who could read the difficult words." He formed a small group of fellow tailors (they called themselves the **Fools' Society**, *Babohoe* — fools, for having worked all those years without knowing they had rights), surveyed hundreds of Peace Market workers about their hours and health, and carried the results to the Labor Office, to newspapers, to anyone official who would take the file. The answer everywhere was the one the previous lesson taught you to expect from a state whose growth model needed the Peace Market cheap: nothing.
+
+**The day.** On **13 November 1970**, during a small workers' demonstration at the Peace Market that police were breaking up, Jeon Tae-il, aged 22, soaked his body in flammable liquid, set himself alight, and burned as a protest — alongside a copy of the Labor Standards Act, the dead statute consigned to the fire with him. He died in a hospital that evening, after asking his mother to finish what he could not.
+
+**What he said.** His reported last cries — shouted as he burned, remembered by fellow workers who were there — were: **"Comply with the Labor Standards Act!"**, **"We are not machines!"**, and **"Do not let my death be in vain!"** Be precise about the sourcing, because this course does not launder legend into transcript: these words come down through witness accounts, assembled most influentially in **Cho Young-rae's biography of Jeon** — written clandestinely under the dictatorship in the 1970s and published in 1983 (in English, *A Single Spark*). The exact wording varies slightly across tellings, as shouted last words always do. The substance does not: he died demanding not revolution, but that the government **obey its own law** — the same move you saw in Poland's Demand #1 citing an ILO convention Poland had already ratified. The floor existed on paper; the fight was to make it real.
+
+**What it did.** Jeon's death detonated something the regime could not put back. Within days, his funeral became a rallying point; within two weeks, the Peace Market had the beginnings of its first real union (next lesson). Beyond the market, his death fused two groups the dictatorship had carefully kept apart: **workers and students.** University students — many of whom would later say they carried "a debt to Jeon Tae-il" — began going into factories through night schools and church labor missions; a generation of intellectuals turned toward labor. The modern Korean labor movement dates itself from this day. When you meet the KCTU in Section 3, remember its ancestry runs here.
+
+:::reveal Jeon Tae-il's reported last words are among the most famous sentences in Korean history — "We are not machines! Comply with the Labor Standards Act!" How does this course source them, and why does the precision matter? ||| They are witness-remembered last cries, not a recording: shouted as he burned on 13 November 1970 and passed down through fellow workers' accounts, assembled most influentially in Cho Young-rae's biography (written clandestinely in the 1970s, published 1983; English title *A Single Spark*), with slight wording variations across tellings. The precision matters because this course's trust rests on never presenting legend as transcript — and because the verified substance is even sharper than the legend: he died demanding the state enforce its own existing statute, not utopia.
+
+## Sources
+- Jeon Tae-il. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/Jeon_Tae-il
+- The Korea Times. (2011, January 23). *Labor activist Chon Tae-il's death: A wake-up call*. https://www.koreatimes.co.kr/southkorea/20110123/century-labor-activist-chon-tae-ils-death-a-wake-up-call
+- Working Class History. (2020). *E51: Jeon Tae-il and Lee So-sun* [Podcast episode notes]. https://workingclasshistory.com/podcast/e51-jeon-tae-il-and-lee-so-sun/
+- Cho, Y. (2003). *A single spark: The biography of Chun Tae-il* (Dolbegae, publisher; original Korean edition 1983).`,
+      recallContent: [
+        {
+          prompt: "What did Jeon Tae-il discover in 1968, and what did he do about it before his death?",
+          answer:
+            "That the 1953 Labor Standards Act already guaranteed, on paper, the hours, rest and protections the Peace Market denied — the law existed but was unenforced. He taught himself the statute from a guidebook, formed the 'Fools' Society' of fellow tailors, surveyed hundreds of workers about hours and health, and took the evidence to the Labor Office and the press. Officialdom did nothing.",
+        },
+        {
+          prompt: "What happened on 13 November 1970, and what were its two immediate legacies?",
+          answer:
+            "Jeon Tae-il, 22, self-immolated at Seoul's Peace Market beside a burning copy of the Labor Standards Act, dying that evening after asking his mother to continue the work. Legacies: the Peace Market's first real union within two weeks (founded with his mother Lee So-sun presiding), and the fusing of workers and students — the alliance that became the backbone of the democratic labor movement.",
+        },
+      ],
+    },
+    {
+      slug: "korea-women-of-the-seventies",
+      title: "5 · The mother, the union, and the women who shook the state",
+      section: "Section 2 · The developmental dictatorship (1961–1979)",
+      body: `The 1970s democratic labor movement in Korea has a feature that every honest telling must put in the center, because the movement's own later history will try to push it to the edge: **it was built overwhelmingly by women.** The heavy-industry men of Ulsan enter this story in 1987. The people who kept independent unionism alive through the worst decade of the dictatorship were the young women of the textile, garment, electronics and wig factories — and one bereaved mother in her forties.
+
+**The mother.** Jeon Tae-il's dying request to his mother, **Lee So-sun**, was that she carry on what he had started. She did — for the next forty years. Barely a week after her son's funeral, she presided over the founding ceremony of the **Cheonggye Garment Workers' Union**, the Peace Market union her son had died asking for and one of the first genuinely democratic unions of the era. She was jailed repeatedly under the dictatorship, kept organizing anyway, and by the time she died in 2011, at 82, the whole Korean labor movement called her **"the mother of workers"** (Korea Herald obituary). Learn her name alongside her son's; Korean workers do.
+
+**Dongil Textile — and the price of a woman-led union.** At the Dongil textile plant in Incheon, women workers built one of the era's flagship democratic unions — in 1972 electing a woman to lead the local, in an industry where women did the work and men had always held the union offices. The company, backed by the state's security apparatus, spent years trying to break it: mass firings, beatings, a notorious 1976 episode in which police dragged away semi-clad women strikers. The episode to remember — taught here exactly because of how ugly it is — came on **22 February 1978**, when company-side men attacked women unionists arriving to vote in a union election, **smearing them with buckets of human excrement** — into faces, mouths, clothing — to humiliate them out of the union. Over a hundred women who kept resisting were fired and **blacklisted** across the industry. When some of them burst into a nationally broadcast event shouting that they could not eat excrement, they were beaten and arrested. Remember this scene when someone tells you Korea's labor peace was consensual.
+
+**YH Trading — the strike that toppled a dictator.** In August 1979, the YH Trading Company — a wig and garment exporter — announced it was closing and dismissing its remaining workforce, mostly young women. About two hundred of them staged a sit-in at the headquarters of the **New Democratic Party**, the parliamentary opposition, asking politicians to witness their case. Before dawn on **11 August 1979**, roughly a thousand riot police stormed the building. Lawmakers and journalists were beaten; the workers were dragged out; and a 21-year-old union officer named **Kim Kyung-suk** fell from the building to her death during the raid. The regime then **expelled opposition leader Kim Young-sam from the National Assembly** for championing the workers — which detonated mass protests in his home region, the **Busan–Masan uprising** of October 1979. Within weeks, amid the crisis the uprising opened inside the regime, Park Chung-hee was **assassinated by his own intelligence chief on 26 October 1979.**
+
+Do not overclaim the chain — historians debate the exact weights — but the sequence itself is documented and taught in Korea: **a garment workers' sit-in → a police raid and a young woman's death → an opposition leader's expulsion → a regional uprising → the end of the eighteen-year dictatorship.** The women of the light-industry unions did not just endure the developmental state. They were the proximate trigger of its terminal crisis.
+
+**Why this lesson sits here.** When this course reaches the male-dominated federations of the 1990s and the non-regular workforce of today — which is disproportionately female — you will need this lesson as the measuring stick. The Korean labor movement's founding generation was female. What the movement later did with that inheritance is one of the honesty tests of Section 4.
+
+:::reveal The course claims the women of Korea's 1970s light-industry unions were "the proximate trigger" of the dictatorship's terminal crisis. Trace the documented chain of events from August to October 1979. ||| YH Trading announced closure and layoffs; about two hundred women workers staged a sit-in at the opposition New Democratic Party headquarters; ~1,000 riot police stormed it on 11 August 1979 and 21-year-old unionist Kim Kyung-suk fell to her death; the regime expelled opposition leader Kim Young-sam from the National Assembly for backing the workers; his home region exploded in the Busan–Masan uprising of October 1979; and amid the crisis it opened inside the regime, Park Chung-hee was assassinated by his own KCIA chief on 26 October 1979. Historians debate the weights, not the sequence.
+
+## Sources
+- The Korea Herald. (2011, September 4). *Lee So-sun, mother of labor activist Jeon Tae-il, dies at 82*. http://www.koreaherald.com/view.php?ud=20110904000260
+- Global Nonviolent Action Database. (n.d.). *Korean women textile workers fight for fair union election, 1976–1978*. Swarthmore College. https://nvdatabase.swarthmore.edu/content/korean-women-textile-workers-fight-fair-union-election-1976-1978
+- Monash University Korean Studies Research Hub. (n.d.). *8.11 The YH Trading Company incident*. https://www.monash.edu/arts/languages-literatures-cultures-linguistics/korean-studies-research-hub/research/on-this-day-in-korean-history/15-8.11-the-yh-trading-company-incident-yh-incident
+- Global Nonviolent Action Database. (n.d.). *South Korean women labourers protest closing of YH wig manufacturing company, 1979*. Swarthmore College. https://nvdatabase.swarthmore.edu/content/south-korean-women-labourers-protest-closing-yh-wig-manufacturing-company-1979`,
+      recallContent: [
+        {
+          prompt: "Who was Lee So-sun, and what did she do after 13 November 1970?",
+          answer:
+            "Jeon Tae-il's mother. Honoring his dying request, she presided over the founding of the Cheonggye Garment Workers' Union barely a week after his funeral, was jailed repeatedly under the dictatorship, and organized for four more decades. When she died in 2011 at 82, the movement called her 'the mother of workers.'",
+        },
+        {
+          prompt: "What happened at Dongil Textile on 22 February 1978, and what followed for the women involved?",
+          answer:
+            "Company-side men attacked women unionists arriving to vote in a union election, smearing them with buckets of human excrement to humiliate them out of their woman-led democratic union. Over a hundred who kept resisting were fired and blacklisted across the industry; women who protested at a broadcast event were beaten and arrested.",
+        },
+      ],
+    },
+    {
+      slug: "korea-quiz-2",
+      title: "Section 2 quiz · The developmental dictatorship",
+      section: "Section 2 · The developmental dictatorship (1961–1979)",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why does the course call cheap labor a 'load-bearing component' of Park Chung-hee's development model?",
+            options: [
+              "Because Korea's exports sold on price, the price advantage was the wage bill, and the state actively organized workers' quiet to protect it",
+              "Because Korea had abundant oil wealth to fund wages",
+              "Because unions set national wage policy",
+              "Because labor costs were irrelevant to exports",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Export-led light manufacturing (textiles, garments, wigs) competed on price; suppressing labor's bargaining power was policy, maintained through the supervised FKTU, emergency law, and the KCIA.",
+            sourceLessonSlug: "korea-growth-first",
+          },
+          {
+            prompt: "How did Park Chung-hee come to power, and what was the Yushin system?",
+            options: [
+              "He won a free election in 1961; Yushin was a welfare program",
+              "He seized power in a military coup on 16 May 1961; the 1972 Yushin Constitution ended direct presidential elections and gave him effectively unlimited rule",
+              "He inherited power from his father; Yushin was a trade treaty",
+              "He was appointed by the UN; Yushin was a union federation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Eighteen years of rule: junta leader, then president, then — after the 1972 Yushin Constitution — something close to a legal dictator with emergency powers.",
+            sourceLessonSlug: "korea-growth-first",
+          },
+          {
+            prompt: "Were unions banned outright under the developmental dictatorship?",
+            options: [
+              "Yes — no union existed legally until 1987",
+              "No — the FKTU existed legally throughout, kept close to the state, while independent organizing was treated as subversion and 1971 emergency law suspended effective bargaining and strikes",
+              "No — all unions operated freely",
+              "Yes — union membership was a capital crime",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The pattern is 'no unions the state didn't control,' not 'no unions' — the same distinction the Poland course teaches about Party-run federations.",
+            sourceLessonSlug: "korea-growth-first",
+          },
+          {
+            prompt: "Who were the 'sida' of the Peace Market?",
+            options: [
+              "Factory owners' sons in management training",
+              "Teenage assistant seamstresses — girls of roughly 14 to 16 working thirteen-to-fifteen-hour days in attic workshops",
+              "Government labor inspectors",
+              "Union shop stewards",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The youngest, cheapest layer of the garment workforce — the workers whose condition transformed Jeon Tae-il from tailor to organizer.",
+            sourceLessonSlug: "korea-growth-first",
+          },
+          {
+            prompt: "What legal discovery reorganized Jeon Tae-il's life in 1968?",
+            options: [
+              "That strikes were legal under the constitution",
+              "That the Labor Standards Act of 1953 already guaranteed on paper the hours, rest and protections the Peace Market denied — the law existed but went unenforced",
+              "That the Peace Market was foreign-owned",
+              "That minors could not legally work at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "He taught himself the statute from a guidebook, wished for 'a friend who could read the difficult words,' and built the Fools' Society to survey workers and demand enforcement.",
+            sourceLessonSlug: "korea-jeon-tae-il",
+          },
+          {
+            prompt: "What happened on 13 November 1970?",
+            options: [
+              "The Peace Market burned down in an accidental fire",
+              "Jeon Tae-il, 22, self-immolated at the Peace Market beside a burning copy of the Labor Standards Act, dying that evening",
+              "Park Chung-hee was assassinated",
+              "The FKTU was founded",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The founding moment of the modern Korean labor movement — a protest demanding the state enforce its own dead statute.",
+            sourceLessonSlug: "korea-jeon-tae-il",
+          },
+          {
+            prompt: "How does the course source Jeon Tae-il's famous last words ('We are not machines!')?",
+            options: [
+              "From a police audio recording",
+              "As witness-remembered cries passed down through fellow workers' accounts, assembled in Cho Young-rae's clandestinely written biography (published 1983), with wording varying slightly across tellings",
+              "From Jeon's own published memoir",
+              "From a live television broadcast",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The course refuses to launder legend into transcript: reported last words, sourced to the biography and witness accounts — while noting the substance (enforce the existing law) is beyond dispute.",
+            sourceLessonSlug: "korea-jeon-tae-il",
+          },
+          {
+            prompt: "What was the 'Fools' Society' (Babohoe)?",
+            options: [
+              "A government propaganda troupe",
+              "Jeon Tae-il's small group of fellow tailors — 'fools' for having worked years without knowing their legal rights — who surveyed Peace Market workers and petitioned officials",
+              "A student drama club",
+              "An employers' association",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The name is the lesson: the discovery that rights already existed on paper, unknown and unenforced, is what turned a tailor into an organizer.",
+            sourceLessonSlug: "korea-jeon-tae-il",
+          },
+          {
+            prompt: "What did Jeon Tae-il's death fuse together that the dictatorship had kept apart?",
+            options: [
+              "The army and the police",
+              "Workers and students — a generation of students turned toward factories and labor organizing, citing a 'debt to Jeon Tae-il'",
+              "The two Koreas",
+              "Business and government",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The worker-student alliance became the backbone of the democratic labor movement that resurfaces in 1987 — and the ancestry of the KCTU.",
+            sourceLessonSlug: "korea-jeon-tae-il",
+          },
+          {
+            prompt: "Who founded the Cheonggye Garment Workers' Union, and when?",
+            options: [
+              "The government, in 1953",
+              "Peace Market workers with Jeon Tae-il's mother Lee So-sun presiding, within about two weeks of his November 1970 death",
+              "The FKTU, in 1961",
+              "Foreign missionaries, in 1980",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Jeon's dying request to his mother was to carry on the work. She did, for forty years, becoming 'the mother of workers' (d. 2011, age 82).",
+            sourceLessonSlug: "korea-women-of-the-seventies",
+          },
+          {
+            prompt: "Which workers kept independent unionism alive through the 1970s, per the course?",
+            options: [
+              "Heavy-industry men in Ulsan",
+              "The young women of the textile, garment, electronics and wig factories",
+              "Civil servants",
+              "Bank clerks",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The founding generation of Korea's democratic labor movement was female — the measuring stick the course applies when the movement's later, male-dominated era appears.",
+            sourceLessonSlug: "korea-women-of-the-seventies",
+          },
+          {
+            prompt: "What happened at Dongil Textile on 22 February 1978?",
+            options: [
+              "The union won a landmark wage agreement",
+              "Company-side men attacked women unionists arriving to vote, smearing them with human excrement; over a hundred resisters were later fired and blacklisted",
+              "The factory closed for renovation",
+              "The women's union merged with the FKTU by choice",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One of the ugliest documented episodes of the era — deliberate humiliation as union-busting, with the state's security apparatus behind the company.",
+            sourceLessonSlug: "korea-women-of-the-seventies",
+          },
+          {
+            prompt: "Who was Kim Kyung-suk?",
+            options: [
+              "Park Chung-hee's intelligence chief",
+              "A 21-year-old YH Trading union officer who fell to her death during the 11 August 1979 police raid on the opposition party headquarters sit-in",
+              "Korea's first female labor minister",
+              "The founder of the FKTU",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Her death during the raid on the YH women's sit-in set off the chain — Kim Young-sam's expulsion, the Busan–Masan uprising — that ended in Park's assassination on 26 October 1979.",
+            sourceLessonSlug: "korea-women-of-the-seventies",
+          },
+          {
+            prompt: "How does the course handle the claim that the YH strike 'toppled the dictator'?",
+            options: [
+              "It asserts the strike single-handedly caused the assassination",
+              "It teaches the documented sequence — sit-in, raid, death, expulsion, uprising, assassination — while noting historians debate the exact causal weights",
+              "It denies any connection between the events",
+              "It says the CIA organized the strike",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The sequence is documented; the weights are debated. Teaching both is the course's standard for live or contested history.",
+            sourceLessonSlug: "korea-women-of-the-seventies",
+          },
+          {
+            prompt: "Why does the course insist on placing the women's history of the 1970s at the center rather than the edge?",
+            options: [
+              "Because no men worked in Korean factories",
+              "Because the movement's founding generation was female — and that inheritance becomes the measuring stick for judging the movement's later treatment of today's disproportionately female non-regular workforce",
+              "Because the government mandated gender quotas in unions",
+              "Because women's wages were higher than men's",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Section 4's honesty test — how the movement treated irregular workers — lands only if you know who built the movement in the first place.",
+            sourceLessonSlug: "korea-women-of-the-seventies",
+          },
+        ],
+      },
+    },
   ],
 };
