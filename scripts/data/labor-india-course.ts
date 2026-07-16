@@ -663,5 +663,332 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
         ],
       },
     },
+
+    // ────────────── SECTION 3 · SEWA ──────────────
+    {
+      slug: "india-sewa-1972",
+      title: "6 · Ahmedabad, 1972: a union with no employer to name",
+      section: "Section 3 · SEWA — the union with no employer to strike against",
+      body: `Here is the lesson the whole track has been waiting for — the one institutional invention built for exactly the place where "worker = employee" breaks.
+
+**The setting.** Ahmedabad, in the state of Gujarat: one of the historic centres of Indian textile manufacturing, and home to the **Textile Labour Association (TLA)** — the mill-workers' union that grew out of the 1918 Ahmedabad mill strike in which Mohandas Gandhi was an adviser, and whose first president was Anasuya Sarabhai. A completely conventional union: mills, employers, members, disputes.
+
+**The person.** **Ela Bhatt (1933–2022)**, a young labour lawyer on the TLA's staff, who came to head its women's wing. Doing that job, she kept meeting women the union had no category for: head-loaders carrying cloth between wholesale markets for per-trip payments; cart-pullers; used-garment dealers; home-based stitchers paid by the piece through middlemen. They worked in and around the textile trade the TLA existed to organise — and not one of them was anyone's employee. No mill on their pay records, no pay records at all.
+
+**The move.** In 1972 Bhatt and these workers founded the **Self-Employed Women's Association — SEWA** — and applied to register it as a **trade union** under the Trade Unions Act, 1926. The Labour Department's objection was the entire subject of this course stated as bureaucracy: *a union, surely, requires an employer to struggle against — against whom would this union be directed?* SEWA's answer, which its members have repeated for fifty years: **a union is not defined by its adversary but by its purpose — organising workers, as workers, for their own development.** The registration went through: SEWA records its registration as a trade union on **12 April 1972** (SEWA, n.d.). Remember lesson 2: the 1926 Act asks for seven members; **it nowhere requires that they share an employer.** A colonial-era statute written for a world of mills turned out to contain, unnoticed for half a century, the legal space for a union of the employer-less.
+
+**What it became.** SEWA today reports **3.78 million members across 20 states** (SEWA, n.d.) — street vendors, home-based workers, waste pickers, agricultural labourers, domestic workers, construction workers. Treat that figure with the discipline this course has drilled: it is **SEWA's own count**, not an audited one. But even discounted, hold it against lesson 4's landscape — the last *verified* membership of India's largest conventional federation was about 6.2 million (2002), and every conventional federation's verified base is dwarfed by its claims. By any honest reading, **a union of women who have no employers is one of the largest workers' organisations in India** — and, unlike every federation in lesson 4's table, **it belongs to no political party.**
+
+**Why this matters beyond India.** Every model in this track so far — Wagner elections, German works councils, Nordic Ghent funds, even Solidarność — organises people *through their employment*. SEWA is the track's one working answer to the question the other eleven courses never have to ask: *how do you organise workers when there is no employer in the picture at all?* The next lesson takes the machine apart.
+
+:::reveal The Labour Department's 1972 objection to registering SEWA states this course's central theme as bureaucracy. What was the objection, and what was SEWA's answer? ||| Objection: a union needs an employer to struggle against — against whom would a union of the self-employed be directed? Answer: a union is defined by its purpose, not its adversary — organising workers, as workers, for their own development. The Trade Unions Act, 1926 requires seven members, not a shared employer, and SEWA registered on 12 April 1972.
+
+## Sources
+- Self-Employed Women's Association. (n.d.). *About us*. https://www.sewa.org/about-us/
+- Self-Employed Women's Association. (n.d.). *SEWA's membership*. https://www.sewa.org/membership-and-affiliations/sewa-membership/
+- The Trade Unions Act, 1926 (India), § 4. India Code. https://www.indiacode.nic.in/bitstream/123456789/20965/1/the_trade_unions_act,_1926.pdf`,
+      recallContent: [
+        {
+          prompt: "SEWA — who founded it, when, where, and under what law did it register?",
+          answer:
+            "Ela Bhatt (1933–2022), a labour lawyer from the Textile Labour Association's women's wing, founded the Self-Employed Women's Association in Ahmedabad in 1972. It registered as a trade union under the Trade Unions Act, 1926 (SEWA records 12 April 1972) after arguing a union needs a purpose, not an employer.",
+        },
+        {
+          prompt: "How big is SEWA, and how should that figure be treated?",
+          answer:
+            "SEWA reports 3.78 million members across 20 states — its own count, attributed not audited. Even discounted, it is one of India's largest workers' organisations, and unlike the major federations it is tied to no political party.",
+        },
+      ],
+    },
+    {
+      slug: "india-sewa-how",
+      title: "7 · How do you bargain with nobody? The SEWA method",
+      section: "Section 3 · SEWA — the union with no employer to strike against",
+      body: `A union's toolkit, as the anchor course taught it: organise, certify, bargain, strike, grieve. Every verb aims at an employer. SEWA had to rebuild the toolkit for workers who have none — and the rebuild is the most instructive piece of labour-institution engineering in this track.
+
+**SEWA's own formulation is "struggle and development"** — a union *and* a web of member-owned institutions, because for the self-employed, half of what a contract would provide has to be built instead.
+
+**Tool 1 — the identity card.** The most underrated object in this course. A SEWA membership card is often the first document a member has ever held that names her as a *worker*. For a street vendor facing a policeman confiscating her cart, or a head-loader disputing a payment, a card — an organisation that will answer for her — converts an invisible person into a represented one. Recall lesson 3: informal retaliation (eviction, confiscation, harassment) is Question 4 for the informal worker. The card is the counter-tool.
+
+**Tool 2 — replace the missing counterparty.** No employer? Then find the entity that actually controls the member's livelihood, and bargain *there*:
+- For **piece-rate home workers**, the counterparty is the middleman and the trader chain — SEWA runs campaigns over piece rates, the informal economy's version of a wage claim.
+- For **street vendors**, it is the **municipality** that controls the street. SEWA has fought vendors' eviction battles from city offices up into the courts, and that decades-long fight fed into a national statute: the **Street Vendors (Protection of Livelihood and Regulation of Street Vending) Act, 2014**, which for the first time gave vendors a statutory framework — including town vending committees with mandated vendor representation (the Act sets it at 40 per cent of members). A law, note, that regulates *cities*, not employers: labour law with the employer deleted.
+- For **everyone**, the residual counterparty is **the state** — lobbying workers onto welfare boards and social-security schemes. When lesson 12 reaches e-Shram, India's national registry of informal workers, you will recognise whose logic it borrows.
+
+**Tool 3 — build what the contract would have contained.** A formal job carries credit-worthiness, insurance, childcare, a pension. SEWA builds each as a member-owned institution: the **SEWA Cooperative Bank**, founded in 1974 out of thousands of members' tiny share contributions, because no commercial bank would lend to an undocumented vegetable seller; insurance (VimoSEWA), childcare cooperatives, producer and vendor cooperatives that let members bypass the middleman entirely. This is the piece with no equivalent anywhere else in the track: **the union as a substitute for the employment relationship itself**, not just a party to it. (Nearest cousin: the Nordic Ghent funds — services binding members to the union — but those top up a formal system; SEWA's institutions stand in for an absent one.)
+
+**Tool 4 — export the category.** SEWA took "the self-employed are workers" to the international level: Ela Bhatt co-founded **WIEGO** (Women in Informal Employment: Globalizing and Organizing, 1997), SEWA helped build **HomeNet**, the international alliance of home-based workers' organisations, and that alliance's campaigning contributed to the ILO's **Home Work Convention, 1996 (No. 177)** — the first ILO convention recognising home-based workers, and the ILO's **Recommendation 204 (2015)** on formalising the informal economy now frames the issue globally. The definitional fight a Gujarat labour department lost in 1972 has since been fought, and largely won, at the ILO.
+
+**What the method costs.** Note what is absent from all four tools: a collective *agreement*. SEWA wins rates, laws, seats and services — it cannot win a contract, because there is no counterparty capable of signing one for its members as a class. That gap is the honest subject of the next lesson.
+
+:::reveal SEWA cannot bargain with an employer, so it re-aims each tool. For a home-based piece-rate worker, a street vendor, and the membership at large — who is the counterparty in each case? ||| The home-based worker's counterparty is the middleman/trader chain (piece-rate campaigns). The street vendor's is the municipality that controls the street — a fight that fed the Street Vendors Act, 2014. For members at large it is the state: welfare boards, social-security schemes, registration. Where none of those suffice, SEWA builds the missing institution itself (bank, insurance, cooperatives).
+
+## Sources
+- Self-Employed Women's Association. (n.d.). *About us; SEWA's structure*. https://www.sewa.org/about-us/
+- The Street Vendors (Protection of Livelihood and Regulation of Street Vending) Act, 2014 (India). India Code. https://www.indiacode.nic.in/
+- International Labour Organization. (1996). *Home Work Convention, 1996 (No. 177)*. https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:12100:0::NO::P12100_INSTRUMENT_ID:312322
+- International Labour Organization. (2015). *Transition from the Informal to the Formal Economy Recommendation, 2015 (No. 204)*. https://www.ilo.org/`,
+      recallContent: [
+        {
+          prompt: "SEWA's 'struggle and development' — what does each half mean?",
+          answer:
+            "Struggle: the union half — piece-rate campaigns against middlemen, eviction fights with municipalities, lobbying the state for welfare boards and laws. Development: member-owned institutions that build what a contract would have contained — the SEWA Cooperative Bank (1974), insurance, childcare, producer cooperatives.",
+        },
+        {
+          prompt: "Name the 2014 statute SEWA's vendor battles helped produce, and what is odd about it as labour law.",
+          answer:
+            "The Street Vendors (Protection of Livelihood and Regulation of Street Vending) Act, 2014 — with town vending committees whose membership must be 40% vendors. It is labour law with the employer deleted: it regulates cities, not employers.",
+        },
+      ],
+    },
+    {
+      slug: "india-sewa-lesson",
+      title: "8 · What SEWA proves — and what it doesn't",
+      section: "Section 3 · SEWA — the union with no employer to strike against",
+      body: `Time to do to SEWA what this course did to the 90% and the 250 million: state precisely what it establishes, and refuse to romanticise past that line.
+
+**What SEWA proves.**
+
+**1. "Worker" and "employee" are different categories — as a matter of demonstrated fact, not theory.** Three-plus million self-employed women organised, registered, banked, insured and represented for five decades is an existence proof. The anchor course's machinery assumes the two categories coincide; SEWA is the standing demonstration that they need not.
+
+**2. The four questions still work — they just return different answers.** Who may organise? Anyone with seven members and a purpose (the 1972 registration). Who is excluded? Nobody by statute — but note honestly who the model reaches less well: SEWA organises women, by design, rooted in the reality that informal work is disproportionately women's work; parallel organising of informal men has been thinner everywhere. Who bargains with whom? Middlemen, municipalities, the state — lesson 7. What happens if you try? Harassment and eviction still, but now with a card, a lawyer, and three million co-members behind you.
+
+**3. Services build unions where statutes don't.** The Nordic course showed the Ghent effect: unions that administer unemployment funds keep members. SEWA is the same law operating at the opposite end of the world's income distribution: the bank, the insurance, the childcare are why members stay. **Where the law gives a union nothing to deliver, a union that wants members must deliver something itself.**
+
+**What SEWA does not prove.**
+
+**1. It has not produced a collective agreement — because it cannot.** There is no employer-side entity capable of binding itself to pay every head-loader in Ahmedabad a set rate. SEWA wins *rates* in specific markets, *laws* like the 2014 Street Vendors Act, *seats* on boards, *services* — but nothing in its toolkit does what the German sectoral agreement or even a single Wagner-Act contract does: create enforceable terms that attach to the work itself. The absence is structural, and you should hear in it lesson 3's theme again: **no counterparty, no contract.**
+
+**2. Membership is not coverage.** 3.78 million (self-reported) is vast as organising and small as arithmetic: India's informal workforce is measured in the hundreds of millions. SEWA changes its members' lives; it has not changed the *aggregate* condition of Indian informal labour, and fifty years in, the model's spread — real, and international — is still nowhere near the scale of the problem.
+
+**3. It is not a substitute for the state.** SEWA's own strategy concedes this: half its energy goes into pushing the state to build what only the state can — social security, registries, statutory protections. The Labour Codes of Section 4, whatever else they are, are the state finally moving on that terrain: a social-security code that claims to cover the unorganised, a registry (e-Shram) with over 300 million workers on it. Whether that is the SEWA logic scaled up, or a thin imitation of it, is a question you will be equipped to argue in three lessons.
+
+**The one-line verdict to carry forward:** SEWA proves organising the employer-less is possible and shows the working method — identity, substituted counterparties, member-built institutions — while proving, by its own hardest limit, that *bargaining* in the anchor course's sense still requires the one thing nine-tenths of India's workers do not have.
+
+:::reveal SEWA has never signed a collective agreement in fifty years. Why not — and why does this course treat that as a finding rather than a failure? ||| Because no counterparty exists that could bind itself to terms for its members as a class — no employer, no employers' association. No counterparty, no contract: the absence is structural, not a strategic shortfall. It is the cleanest single demonstration of what informality removes — which is exactly the finding this course exists to teach.
+
+## Sources
+- Self-Employed Women's Association. (n.d.). *About us; SEWA's membership*. https://www.sewa.org/about-us/
+- International Labour Organization & Institute for Human Development. (2024). *India Employment Report 2024*. ILO. https://www.ilo.org/sites/default/files/2024-08/India%20Employment%20-%20web_8%20April.pdf
+- International Labour Organization. (2015). *Transition from the Informal to the Formal Economy Recommendation, 2015 (No. 204)*. https://www.ilo.org/`,
+      recallContent: [
+        {
+          prompt: "State SEWA's existence proof and its structural limit in one line each.",
+          answer:
+            "Proof: workers without employers can be organised at scale — three-plus million members, five decades, a working method. Limit: they cannot be brought under a collective agreement, because no counterparty exists to sign one — no counterparty, no contract.",
+        },
+        {
+          prompt: "How does SEWA illustrate the same law as the Nordic Ghent system?",
+          answer:
+            "Both show services build unions: Nordic unions keep members by administering unemployment funds; SEWA keeps members through its bank, insurance, and childcare. Where the statute gives a union nothing to deliver, the union must deliver something itself.",
+        },
+      ],
+    },
+    {
+      slug: "india-quiz-3",
+      title: "Section 3 quiz · SEWA and the employer-less union",
+      section: "Section 3 · SEWA — the union with no employer to strike against",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who founded SEWA, and from inside what organisation?",
+            options: [
+              "Anasuya Sarabhai, from inside the Congress party",
+              "Ela Bhatt, a labour lawyer heading the women's wing of the Textile Labour Association in Ahmedabad",
+              "A committee of the ILO",
+              "The Gujarat Labour Department",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Bhatt (1933–2022) kept meeting women who worked in and around the textile trade — head-loaders, cart-pullers, home stitchers — whom the mill union had no category for.",
+            sourceLessonSlug: "india-sewa-1972",
+          },
+          {
+            prompt: "What was the Labour Department's objection to registering SEWA in 1972?",
+            options: [
+              "SEWA had too few members",
+              "A union needs an employer to struggle against — and SEWA's members had none",
+              "Women could not legally form unions",
+              "The Trade Unions Act had expired",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The objection is this course's theme stated as bureaucracy. SEWA's answer: a union is defined by its purpose — organising workers for their own development — not by its adversary.",
+            sourceLessonSlug: "india-sewa-1972",
+          },
+          {
+            prompt: "What feature of the Trade Unions Act, 1926 made SEWA's registration legally possible?",
+            options: [
+              "A special exemption for women's organisations",
+              "The Act requires seven members but nowhere requires that they share an employer",
+              "A 1971 amendment covering the self-employed",
+              "The Act does not apply in Gujarat",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A colonial statute written for a world of mills contained, unnoticed for fifty years, the legal space for a union of the employer-less.",
+            sourceLessonSlug: "india-sewa-1972",
+          },
+          {
+            prompt: "How does this course treat SEWA's reported membership of 3.78 million across 20 states?",
+            options: [
+              "As an audited government figure",
+              "As SEWA's own count — attributed, and still, even discounted, evidence of one of India's largest workers' organisations",
+              "As an ILO estimate",
+              "As deliberately falsified",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Same discipline as the 90% and the 250 million: name the source. It is SEWA's count — and no political party owns SEWA, unlike every federation in lesson 4's table.",
+            sourceLessonSlug: "india-sewa-1972",
+          },
+          {
+            prompt: "Why does this course call the SEWA membership card 'the most underrated object' it teaches?",
+            options: [
+              "It doubles as a credit card",
+              "It is often a member's first document naming her as a worker — converting an invisible person into a represented one when facing police or municipal harassment",
+              "It is required by the Trade Unions Act",
+              "It guarantees a minimum wage",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Question 4 for informal workers is confiscation, eviction, harassment. An identity backed by an organisation that will answer for you is the counter-tool.",
+            sourceLessonSlug: "india-sewa-how",
+          },
+          {
+            prompt: "For SEWA's home-based piece-rate workers, who replaces the employer as bargaining counterparty?",
+            options: [
+              "The ILO",
+              "The middleman and trader chain, in piece-rate campaigns",
+              "The police",
+              "Nobody — they cannot bargain at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Find the entity that actually controls the livelihood and bargain there. Piece-rate campaigns are the informal economy's wage claims.",
+            sourceLessonSlug: "india-sewa-how",
+          },
+          {
+            prompt: "What is legally odd about the Street Vendors Act, 2014 as a piece of labour law?",
+            options: [
+              "It has no penalties",
+              "It regulates municipalities rather than employers — labour law with the employer deleted",
+              "It applies only to Gujarat",
+              "It was written by SEWA",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The vendor's adversary is the city that controls the street, so the statute disciplines town vending committees (with 40% vendor membership) — not any employer.",
+            sourceLessonSlug: "india-sewa-how",
+          },
+          {
+            prompt: "Why did SEWA found its own cooperative bank in 1974?",
+            options: [
+              "To speculate in currency markets",
+              "Because no commercial bank would lend to undocumented informal workers — so the union built the institution a formal job would have given access to",
+              "Because the government required unions to run banks",
+              "To pay strike benefits",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Tool 3: build what the contract would have contained — credit, insurance (VimoSEWA), childcare, cooperatives. The union as substitute for the missing employment relationship.",
+            sourceLessonSlug: "india-sewa-how",
+          },
+          {
+            prompt: "Which international instruments carry the definitional fight SEWA started in 1972?",
+            options: [
+              "The USMCA Rapid Response Mechanism",
+              "The ILO Home Work Convention, 1996 (No. 177) and Recommendation 204 (2015) on formalising the informal economy",
+              "The Geneva Conventions",
+              "The Paris Agreement",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Via HomeNet and WIEGO (co-founded by Ela Bhatt, 1997), 'the self-employed are workers' was argued and largely won at the ILO.",
+            sourceLessonSlug: "india-sewa-how",
+          },
+          {
+            prompt: "What is the one classic union deliverable missing from SEWA's toolkit, and why?",
+            options: [
+              "Strikes — they are illegal for women",
+              "A collective agreement — no counterparty exists that could bind itself to terms for its members as a class",
+              "Membership dues",
+              "Legal representation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "SEWA wins rates, laws, seats and services — but no contract. No counterparty, no contract: the absence is structural, and it is the course's cleanest demonstration of what informality removes.",
+            sourceLessonSlug: "india-sewa-lesson",
+          },
+          {
+            prompt: "How is SEWA 'the Ghent effect at the other end of the income distribution'?",
+            options: [
+              "It administers Denmark's unemployment funds",
+              "Like Nordic unions, it binds members through services — but its bank and insurance stand in for an absent formal system rather than topping up an existing one",
+              "It was founded by Scandinavian unions",
+              "It pays unemployment benefits from state funds",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Same law — services build unions — operating where the statute gives the union nothing to deliver, so the union delivers it itself.",
+            sourceLessonSlug: "india-sewa-lesson",
+          },
+          {
+            prompt: "What does this course concede when it says 'membership is not coverage' about SEWA?",
+            options: [
+              "That SEWA's members are not real workers",
+              "That 3.78 million is vast as organising but small against an informal workforce in the hundreds of millions — SEWA changes members' lives, not the aggregate condition",
+              "That SEWA's membership is falling",
+              "That coverage requires a political party",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Refusing to romanticise is part of the method: the model is real, international — and still nowhere near the scale of the problem, fifty years in.",
+            sourceLessonSlug: "india-sewa-lesson",
+          },
+          {
+            prompt: "Whose logic does India's e-Shram registry of informal workers borrow, per this course?",
+            options: [
+              "The German works council's",
+              "SEWA's — the state substituting itself as counterparty: registration, identity, welfare boards for workers with no employer",
+              "The Wagner Act's",
+              "China's ACFTU's",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Registering and naming informal workers so the state can attach protections to them is the SEWA playbook (identity, welfare boards) scaled to national machinery — well or badly, Section 4 examines.",
+            sourceLessonSlug: "india-sewa-how",
+          },
+          {
+            prompt: "SEWA organises women, by design. What honest observation does the course attach to that?",
+            options: [
+              "Men are legally barred from informal work",
+              "Informal work is disproportionately women's work, and parallel organising of informal men has been thinner everywhere",
+              "Women are a small minority of informal workers",
+              "The design was imposed by the government",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The gendered design is rooted in the gendered reality of informality — and the model's replication for informal men remains comparatively weak.",
+            sourceLessonSlug: "india-sewa-lesson",
+          },
+          {
+            prompt: "What one-line verdict on SEWA does this course ask you to carry forward?",
+            options: [
+              "SEWA failed because it never signed a contract",
+              "Organising the employer-less is possible and SEWA shows the method — but bargaining in the anchor course's sense still requires the employer nine-tenths of Indian workers lack",
+              "SEWA is a political party in waiting",
+              "SEWA's model only works in Gujarat",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Existence proof and structural limit, held together — the same both-hands honesty the Germany course applied to co-determination.",
+            sourceLessonSlug: "india-sewa-lesson",
+          },
+        ],
+      },
+    },
   ],
 };
