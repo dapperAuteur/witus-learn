@@ -69,6 +69,7 @@ const CATALOG = [
   "state-vs-federal",
   "us-state-local-government",
   "state-civics-in",
+  "state-civics-az",
   "citizenship-naturalization",
   "jury-duty-courts",
   "know-your-rights",

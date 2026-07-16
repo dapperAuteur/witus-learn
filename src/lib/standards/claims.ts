@@ -639,6 +639,64 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Arizona (state-civics-az was written FROM Arizona's own sources) ──
+  {
+    id: "civics.az-constitution-direct-democracy",
+    claim: "Teaches Arizona's 1912 constitution and its strong direct democracy: initiative, referendum, and recall.",
+    courseSlugs: ["state-civics-az"],
+    lessons: [
+      "Arizona Civics, Lesson 1 · Arizona's constitution and its strong direct democracy",
+      "Arizona Civics, Lesson 4 · How voters make law directly (the initiative route)",
+      "Arizona Civics, Lesson 6 · The Voter Protection Act (Prop 105, 1998)",
+    ],
+  },
+  {
+    id: "civics.az-three-branches",
+    claim: "Teaches Arizona's three branches: 30 shared districts (one senator, two representatives each), the two-thirds veto override, and the Prop 131 Lieutenant Governor transition.",
+    courseSlugs: ["state-civics-az"],
+    lessons: [
+      "Arizona Civics, Lesson 2 · The three branches of Arizona government",
+      "Arizona Civics, Lesson 7 · The Lieutenant Governor: a change in progress (Prop 131, 2022)",
+    ],
+  },
+  {
+    id: "civics.az-courts-county-size",
+    claim: "Teaches Arizona's split judicial selection: merit selection plus retention in large counties, elected judges in small ones.",
+    courseSlugs: ["state-civics-az"],
+    lessons: ["Arizona Civics, Lesson 3 · Arizona's courts: merit selection depends on county size"],
+  },
+  {
+    id: "civics.az-bill-process",
+    claim: "Teaches how a bill becomes an Arizona law, and the voter initiative as Arizona's second lawmaking route.",
+    courseSlugs: ["state-civics-az"],
+    lessons: [
+      "Arizona Civics, Lesson 4 · How a bill becomes an Arizona law (and how voters do it directly)",
+    ],
+  },
+  {
+    id: "civics.az-local-government",
+    claim: "Teaches Arizona local government as Arizona's: 15 counties under elected Boards of Supervisors, cities and towns, no townships.",
+    courseSlugs: ["state-civics-az"],
+    lessons: [
+      "Arizona Civics, Lesson 5 · Local government in Arizona: 15 counties, no townships",
+      "Arizona Civics, Lesson 8 · Get involved where you live in Arizona (county and city/town)",
+    ],
+  },
+  {
+    id: "civics.az-election-law",
+    claim: "Teaches Arizona's election specifics: the Active Early Voting List and the Voter Protection Act (Prop 105, 1998).",
+    courseSlugs: ["state-civics-az"],
+    lessons: [
+      "Arizona Civics, Lesson 6 · Elections in Arizona: early voting and the Voter Protection Act",
+    ],
+  },
+  {
+    id: "civics.az-get-involved",
+    claim: "Teaches getting involved where you live, Arizona edition — including the direct-democracy tools.",
+    courseSlugs: ["state-civics-az"],
+    lessons: ["Arizona Civics, Lesson 8 · Get involved where you live in Arizona"],
+  },
+
   // ══ History catalog ═════════════════════════════════════════════════════════
   {
     id: "history.gilded-age-labor",
