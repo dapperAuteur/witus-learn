@@ -326,5 +326,278 @@ The CLT financed the system with a tax: **one day's wage per year, deducted from
         ],
       },
     },
+
+    // ───────── SECTION 2 · THE DICTATORSHIP, AND THE STRIKES THAT WEREN'T SUPPOSED TO HAPPEN ─────────
+    {
+      slug: "brazil-dictatorship-arrocho",
+      section: "Section 2 · The dictatorship, and the strikes that weren't supposed to happen",
+      title: "4 · 1964–1977: the machine changes hands, and a lie is found in the index",
+      recallContent: [
+        {
+          prompt: "Name the three locks of the CLT's union system.",
+          answer: "Unicidade sindical (one union per category per territory — now in the 1988 Constitution, art. 8, II); the ministry charter (state recognition, with the power to intervene and remove leaders); and the imposto sindical (a compulsory tax of one day's wage per year from every worker in the category, member or not).",
+        },
+        {
+          prompt: "Why has Brazil never ratified ILO Convention 87?",
+          answer: "C87 protects workers' right to form organizations 'of their own choosing,' and Brazilian scholarship is blunt that a constitution mandating one union per category per territory (unicidade) cannot promise a choice. As of 2026 the rule is still in Article 8, so Brazil still cannot ratify.",
+        },
+      ],
+      body: `Here is the danger of a labor system built as a machine of state: **machines change hands.**
+
+On **31 March–1 April 1964**, Brazil's military overthrew the elected government and ruled for the next **twenty-one years** (1964–1985). The generals did not need to build an apparatus for controlling labor. **Vargas had already built it.** They simply turned the keys that were lying in the CLT:
+
+- **The intervention power (Lock 2).** The Labor Ministry could remove a union's elected leadership and install its own trustees — so, after the coup, it did, across hundreds of unions. A leadership that displeased the regime was *cassada* — stripped — and replaced.
+- **The tax kept flowing (Lock 3).** Here is the detail to underline: **interventions did not bankrupt a union, because the union's money never came from its members.** The imposto sindical arrived by law regardless. A captured union was a *funded* captured union.
+- Strikes were smothered by statute and by fear. Wage increases were no longer bargained at all: the government **set them centrally, by decree, using an official formula** — a policy Brazilians called the ***arrocho salarial***, the "wage squeeze" (Memorial da Democracia, n.d.).
+
+Brazilian workers have a word for the union officer who thrived in this world: ***pelego*** — literally the sheepskin pad that sits between the saddle and the horse's back, softening the ride **for the rider**. A pelego held office in the workers' union and served the state. The word is an entire labor history in two syllables, and it is Brazil's answer to a question the Mexico course taught you to ask: *whose union is it?*
+
+## 1977: the number that broke the spell
+
+The arrocho formula adjusted wages using the **official inflation index**. Which gave the regime an obvious temptation — and in 1977, proof surfaced that it had given in.
+
+Economists at **DIEESE** — a statistics institute the unions themselves had founded in the 1950s, led at the time by **Walter Barelli** — showed, using findings that traced back to World Bank data and the Getúlio Vargas Foundation, that the official inflation figure for **1973** had been **manipulated**: announced as **12.6%** when the real figure was around **22.5%**. Because each year's wage adjustment compounded on the last, the understatement had quietly eaten workers' pay for years. For the metalworkers of São Bernardo do Campo and Diadema, DIEESE put the accumulated loss at **34.1%** of purchasing power (Confederação Nacional dos Trabalhadores Metalúrgicos [CNTM], n.d.; Sindicato dos Metalúrgicos do ABC [SMABC], n.d.-a).
+
+In **September 1977**, those metalworkers held assemblies and launched a campaign with a demand of surgical simplicity: ***reposição* — give back the 34.1% you took** (SMABC, n.d.-a).
+
+**Notice what kind of weapon this was.** Not an uprising — an *audit*. The regime's own machinery said wages tracked inflation; the unions' own statisticians proved the inflation number was false. The campaign did not yet break any law. It simply made the state's arithmetic indefensible — and it handed a young union president in São Bernardo, a lathe operator named **Luiz Inácio da Silva**, known as **Lula**, the issue that the next lesson turns into the biggest strikes in Brazilian history.
+
+> **Source note.** The histories cited here are kept by the metalworkers' union (SMABC), the CUT, and allied institutes — **parties to this story**, useful for dates and sequence, and proud of their own role. The course uses them for the record of events and flags the interest, exactly as the Mexico course does with the CTM's official history. DIEESE's 1977 finding, however, was confirmed against World Bank–derived data at the time — that is *why* it worked.
+
+:::reveal Why did intervening in a Brazilian union not bankrupt it — and why does that detail matter so much? ||| Because of Lock 3: the union's budget came from the compulsory imposto sindical, collected by law from every worker in the category, not from members' dues. So a union whose elected leaders had been removed and replaced with regime trustees kept its full revenue — a captured union was a funded captured union. It matters because it shows the corporatist design working exactly as built: a funding system that never depended on workers' consent could not be withdrawn by workers when the union stopped serving them.
+
+## Sources
+- Memorial da Democracia. (n.d.). *Novo Sindicalismo (1978–1983)*. https://memorialdademocracia.com.br/card/novo-sindicalismo
+- Confederação Nacional dos Trabalhadores Metalúrgicos. (n.d.). *Os 60 anos do Dieese*. https://cntm.org.br/os-60-anos-do-dieese/
+- Sindicato dos Metalúrgicos do ABC. (n.d.-a). *1977*. https://smabc.org.br/1977-2/ [The union's own history — a party to this story, used for dates and sequence.]
+- Decreto-Lei nº 5.452, de 1º de maio de 1943 (Consolidação das Leis do Trabalho). Presidência da República. https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm`,
+    },
+    {
+      slug: "brazil-abc-strikes",
+      section: "Section 2 · The dictatorship, and the strikes that weren't supposed to happen",
+      title: "5 · 1978–1980: the ABC strikes — a stadium, 41 days, and a union taken back",
+      recallContent: [
+        {
+          prompt: "What was the arrocho salarial?",
+          answer: "The 'wage squeeze' — under the military regime (1964–1985), wages were not bargained but set centrally by government decree using the official inflation index.",
+        },
+        {
+          prompt: "What did DIEESE prove in 1977, and what campaign did it ignite?",
+          answer: "That the official 1973 inflation figure had been manipulated — announced at 12.6% versus a real figure around 22.5% — costing São Bernardo/Diadema metalworkers an accumulated 34.1% of purchasing power. In September 1977 they launched the 'reposição' campaign: give back the 34.1%.",
+        },
+        {
+          prompt: "What is a pelego?",
+          answer: "A union officer who serves the state or employer rather than the workers — literally the sheepskin pad between saddle and horse, softening the ride for the rider.",
+        },
+      ],
+      body: `On the morning of **12 May 1978**, workers at the **Scania** truck plant in São Bernardo do Campo received their pay slips, saw the government-fixed adjustment, and **stopped the machines** (SMABC, n.d.-b). No march, no barricade — they stood at their stations with their arms crossed, demanding a 20% raise. In a country where wages were set by decree and strikes had been smothered for over a decade, the stoppage was not supposed to be possible. Within days it spread across the industrial suburbs of São Paulo known as the **ABC** (Santo André, São **B**ernardo, São **C**aetano).
+
+What followed came in three waves, each bigger than the last (Memorial da Democracia, n.d.; SMABC, n.d.-b):
+
+| Year | What happened |
+| --- | --- |
+| **1978** | The Scania stoppage (12 May) spreads factory to factory across the ABC. |
+| **1979** | Mass strikes return; on May Day, more than **150,000** people fill the **Vila Euclides stadium** in São Bernardo — the union hall could never have held the movement, so the movement met in a stadium. |
+| **1980** | A **41-day** strike; over **300,000** metalworkers out across São Paulo state. The government **intervenes in the union**, strips its elected leadership, and jails **Lula and more than a dozen other leaders** under the **National Security Law**. They are released only on the strike's 41st day. |
+
+**Now place this inside the course's architecture, because that is the point of teaching it.**
+
+The strikes were led from **inside the official structure**. Lula had been elected president of the **state-chartered** São Bernardo and Diadema metalworkers' union in **1975** — a Lock-1 union, financed by the Lock-3 tax. The movement the press called the ***novo sindicalismo*** ("new unionism") captured Vargas's machine from within and made it do the one thing it was never designed to do: **obey its members.** Assemblies in a stadium, votes by raised hands in front of everyone, bargaining aimed directly at the employers instead of at the government's formula — the corporatist shell, filled with actual workers' democracy.
+
+**Compare Poland, deliberately** (labor-poland). In the very same season — Gdańsk, August 1980 — Polish workers facing a one-party state made the opposite structural choice: they built **Solidarność** *outside* the official unions, and their first demand was the right to unions free of the state. Brazil's metalworkers **took over** the official union; Poland's shipyard workers **walked around** it. Two authoritarian corporatisms, two escape routes — and in both countries, the labor movement became the training ground of the democratic opposition. When Brazil's dictatorship finally ended in **1985**, the strikes of the ABC were part of how the ending had begun.
+
+And the regime's counterattack proved the anchor course's fourth question still had teeth. *What happens to you if you try?* In Brazil in 1980: **intervention, cassation, and prison under a national-security statute** — for leading a wage strike.
+
+The movement's leaders drew an institutional conclusion you will meet in the next section: winning inside one factory, or even one union, was not enough. They founded a party (1980) and a national union central (1983) — and one of them, eventually, became president of the Republic.
+
+:::reveal Brazil's ABC metalworkers (1978–80) and Poland's Solidarność (1980) both fought authoritarian corporatist union systems — but with opposite structural strategies. What were the two strategies? ||| The ABC metalworkers captured the official structure from within: Lula led the state-chartered São Bernardo metalworkers' union itself, and the novo sindicalismo made Vargas's machine obey its members. Solidarność went outside the structure: Polish workers built a brand-new union independent of the party-state, and its first demand was the right to unions free of it. Same enemy — state-controlled labor channels — two escape routes; in both countries the labor movement became a training ground of the democratic opposition.
+
+## Sources
+- Sindicato dos Metalúrgicos do ABC. (n.d.-b). *Scania, 1978: a greve metalúrgica que acendeu a luta pela democracia*. https://smabc.org.br/scania-1978-a-greve-metalurgica-que-acendeu-a-luta-pela-democracia/ [The union's own history — a party to this story.]
+- Memorial da Democracia. (n.d.). *Novo Sindicalismo (1978–1983)*. https://memorialdademocracia.com.br/card/novo-sindicalismo
+- Fundação Perseu Abramo. (2018, May 12). *40 anos da greve na Scania: braços cruzados contra a ditadura*. https://fpabramo.org.br/2018/05/12/40-anos-da-greve-na-scania-bracos-cruzados-contra-ditadura/ [Maintained by a foundation linked to the PT — a party to this story.]`,
+    },
+    {
+      slug: "brazil-section-2-quiz",
+      section: "Section 2 · The dictatorship, and the strikes that weren't supposed to happen",
+      title: "6 · Check yourself: the machine changes hands",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "When the military took power in 1964, what did it have to build in order to control organized labor?",
+            options: [
+              "Nothing — Vargas's CLT machinery (intervention power, monopoly unions, the compulsory tax) was already there to be used",
+              "An entirely new labor code, written from scratch in 1965",
+              "A network of secret unions loyal to the army",
+              "A national wage-bargaining council with union majorities",
+            ],
+            correctIndex: 0,
+            explanation: "That is the lesson's core: a labor system built as a machine of state changes hands with the state. The generals turned keys that were already in the CLT.",
+            sourceLessonSlug: "brazil-dictatorship-arrocho",
+          },
+          {
+            prompt: "How long did Brazil's military regime last?",
+            options: ["Twenty-one years — 1964 to 1985", "Five years — 1964 to 1969", "Ten years — 1964 to 1974", "Two years — 1964 to 1966"],
+            correctIndex: 0,
+            explanation: "From the coup of 31 March–1 April 1964 to the return of civilian government in 1985.",
+            sourceLessonSlug: "brazil-dictatorship-arrocho",
+          },
+          {
+            prompt: "Why did a government intervention not bankrupt the union it captured?",
+            options: [
+              "Because the union's revenue was the compulsory tax, which arrived by law regardless of what workers thought — a captured union was a funded captured union",
+              "Because the government paid captured unions a special subsidy",
+              "Because members always kept paying dues out of loyalty",
+              "Because unions held large stock portfolios",
+            ],
+            correctIndex: 0,
+            explanation: "Lock 3 working exactly as designed: funding that never depended on workers' consent could not be withdrawn by workers when the union stopped serving them.",
+            sourceLessonSlug: "brazil-dictatorship-arrocho",
+          },
+          {
+            prompt: "What was the arrocho salarial?",
+            options: [
+              "The 'wage squeeze' — wages set centrally by government decree using the official inflation index, not bargained",
+              "A minimum-wage increase decreed every May Day",
+              "A strike fund administered by DIEESE",
+              "The overtime premium in the CLT",
+            ],
+            correctIndex: 0,
+            explanation: "Under the military regime, collective bargaining over pay effectively ceased; the state's formula decided. That made the official inflation index the whole ballgame — and the index was manipulated.",
+            sourceLessonSlug: "brazil-dictatorship-arrocho",
+          },
+          {
+            prompt: "What is a pelego?",
+            options: [
+              "A union officer who serves the state or employer rather than the workers — from the sheepskin pad that softens the ride for the rider",
+              "A worker who refuses to join a strike",
+              "A government labor inspector",
+              "The president of a union federation",
+            ],
+            correctIndex: 0,
+            explanation: "Two syllables of labor history — Brazil's answer to the Mexico course's question, 'whose union is it?'",
+            sourceLessonSlug: "brazil-dictatorship-arrocho",
+          },
+          {
+            prompt: "What did DIEESE's economists prove in 1977?",
+            options: [
+              "That the official 1973 inflation figure had been manipulated — announced at 12.6% versus a real figure around 22.5% — quietly eating workers' pay through compounding",
+              "That Brazilian wages were the highest in Latin America",
+              "That the union tax was being embezzled by the Labor Ministry",
+              "That strikes had increased every year of the dictatorship",
+            ],
+            correctIndex: 0,
+            explanation: "The finding traced back to World Bank data and the Getúlio Vargas Foundation. For São Bernardo/Diadema metalworkers, DIEESE put the accumulated loss at 34.1% of purchasing power.",
+            sourceLessonSlug: "brazil-dictatorship-arrocho",
+          },
+          {
+            prompt: "What made the 1977 'reposição' campaign such an effective weapon?",
+            options: [
+              "It was an audit, not an uprising — it used the state's own arithmetic and the unions' own statisticians to make the official wage formula indefensible",
+              "It called for a nationwide general strike on day one",
+              "It was secretly funded by foreign governments",
+              "It demanded the abolition of the CLT",
+            ],
+            correctIndex: 0,
+            explanation: "The demand was surgical: give back the 34.1% the manipulated index took. It broke no law — and it handed the São Bernardo union president, Lula, the issue that became the ABC strikes.",
+            sourceLessonSlug: "brazil-dictatorship-arrocho",
+          },
+          {
+            prompt: "Why does this course flag that SMABC, CUT and PT-linked foundations are 'parties to this story'?",
+            options: [
+              "Their histories are useful for dates and sequence but proud of their own role — label your sources and notice who is talking",
+              "Because their accounts are always false",
+              "Because Brazilian law forbids unions from publishing history",
+              "Because they wrote the CLT",
+            ],
+            correctIndex: 0,
+            explanation: "The same habit the Mexico course applies to the CTM's official history. Interested sources can be used — labeled.",
+            sourceLessonSlug: "brazil-dictatorship-arrocho",
+          },
+          {
+            prompt: "What happened at the Scania plant on 12 May 1978?",
+            options: [
+              "Workers saw the government-fixed adjustment on their pay slips and stopped the machines — the stoppage spread across the ABC within days",
+              "The plant closed permanently and moved to Argentina",
+              "The army occupied the factory before any strike began",
+              "Workers voted to accept the government formula",
+            ],
+            correctIndex: 0,
+            explanation: "Arms crossed at their stations, demanding a 20% raise — in a country where wages were set by decree, a stoppage that was not supposed to be possible.",
+            sourceLessonSlug: "brazil-abc-strikes",
+          },
+          {
+            prompt: "What does 'ABC' refer to in the ABC strikes?",
+            options: [
+              "The industrial suburbs of São Paulo — Santo André, São Bernardo, São Caetano",
+              "The initials of the three union leaders who called the strike",
+              "The Brazilian Labor Code's first three articles",
+              "A television network that covered the strikes",
+            ],
+            correctIndex: 0,
+            explanation: "The metalworking belt around São Paulo — home of the truck and auto plants, and of the São Bernardo metalworkers' union Lula led.",
+            sourceLessonSlug: "brazil-abc-strikes",
+          },
+          {
+            prompt: "Why did the 1979 and 1980 May Day assemblies meet in the Vila Euclides stadium?",
+            options: [
+              "The movement had outgrown any union hall — more than 150,000 people attended, voting by raised hands in the open",
+              "The union hall had been burned down",
+              "Stadium meetings were required by the CLT",
+              "The government offered the stadium to keep strikers off the streets",
+            ],
+            correctIndex: 0,
+            explanation: "Stadium assemblies became the emblem of the novo sindicalismo: the corporatist shell filled with actual workers' democracy.",
+            sourceLessonSlug: "brazil-abc-strikes",
+          },
+          {
+            prompt: "What happened during the 41-day strike of 1980?",
+            options: [
+              "Over 300,000 metalworkers struck across São Paulo state; the government intervened in the union, stripped its leadership, and jailed Lula and more than a dozen leaders under the National Security Law",
+              "The government granted the 34.1% reposição in full",
+              "The strike collapsed after three days without support",
+              "Employers locked out workers for a full year",
+            ],
+            correctIndex: 0,
+            explanation: "The jailed leaders were released only on the strike's 41st day. The anchor's fourth question — what happens to you if you try? — answered: intervention, cassation, prison, for leading a wage strike.",
+            sourceLessonSlug: "brazil-abc-strikes",
+          },
+          {
+            prompt: "What was structurally distinctive about the novo sindicalismo, compared with Poland's Solidarność?",
+            options: [
+              "It captured the official state-chartered union from within — Lula led the legal São Bernardo union — while Solidarność built a new union outside the official structure",
+              "It was organized by the Catholic Church, while Solidarność was secular",
+              "It rejected strikes, while Solidarność embraced them",
+              "It was funded by the government, while Solidarność was funded by dues",
+            ],
+            correctIndex: 0,
+            explanation: "Two authoritarian corporatisms, two escape routes: Brazil's workers took over the official machine; Poland's walked around it. In both countries the labor movement trained the democratic opposition.",
+            sourceLessonSlug: "brazil-abc-strikes",
+          },
+          {
+            prompt: "When had Lula become president of the São Bernardo and Diadema metalworkers' union?",
+            options: ["1975 — three years before the Scania stoppage", "1964 — the year of the coup", "1980 — during the 41-day strike", "1943 — the year of the CLT"],
+            correctIndex: 0,
+            explanation: "A lathe operator elected to lead a state-chartered, tax-funded Lock-1 union — which the novo sindicalismo then made do the one thing it was never designed to do: obey its members.",
+            sourceLessonSlug: "brazil-abc-strikes",
+          },
+          {
+            prompt: "What institutional conclusion did the ABC movement's leaders draw from the strikes?",
+            options: [
+              "Winning inside one factory or union was not enough — they founded a party (1980) and a national union central (1983)",
+              "That strikes should never be attempted under a dictatorship",
+              "That the CLT should be re-signed by a new dictator",
+              "That wage bargaining should return to the government's formula",
+            ],
+            correctIndex: 0,
+            explanation: "The PT (February 1980) and the CUT (August 1983) — Section 3's subject. One of the movement's leaders eventually became president of the Republic.",
+            sourceLessonSlug: "brazil-abc-strikes",
+          },
+        ],
+      },
+    },
   ],
 };
