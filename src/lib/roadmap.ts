@@ -625,6 +625,32 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   contracts" (\`umowy śmieciowe\`) rhyme** with US misclassification + Mexican protection contracts —
   the track's payoff. Cited to UNESCO, the European Solidarity Centre, GUS, OECD/AIAS, ETUI and
   Eurofound. Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+- 🔧 **India: When Most Workers Have No Employer** (Culture & History, \`content/labor-india\`) —
+  **Wave 2 of the workers'-rights country track**, and the proposal's "single most important course
+  in the track": the course where **"worker = employee with an employer" breaks**. **6 sections ·
+  14 teaching lessons · 6 quizzes** (15-question banks, above the 10-question attempt cap so
+  retries rotate; every question carries \`explanation\` + \`sourceLessonSlug\`; a \`:::reveal\` per
+  teaching lesson). The headline number is **named, dated and defined**: **~90% informal
+  employment / ~82% informal sector** (India Employment Report 2024, ILO + Institute for Human
+  Development, on the government's own PLFS) — the 82-vs-90 definitional split is itself taught.
+  **Party-tied federations** (AITUC 1920 / INTUC 1947 / BMS 1955 / CITU 1970 — last completed
+  membership verification **2002**, stated as such) as a **third politics-and-labor entanglement**
+  against Poland and China; the **9 July 2025 general strike's "over 250 million" attributed to
+  its organisers, never asserted**. **SEWA** (Ela Bhatt, Ahmedabad, registered 12 April 1972) as
+  the track's one **employer-less union model** — the 1972 registration fight, the method
+  (identity card, substituted counterparties, member-built institutions), and the honest limit
+  (**no counterparty, no contract**). The **four Labour Codes taught dated at every threshold**:
+  enacted 2019/2020 (29 laws → 4) → **in force 21 Nov 2025** → Central Rules 8 May 2026 → **state
+  rules uneven as of mid-2026** (labour is Concurrent-List); first statutory **gig/platform
+  recognition** (SS Code 2020 § 2; aggregator 1–2%-of-turnover funding; Rajasthan 2023 and
+  Karnataka 2025 state laws; e-Shram 309M+ registrations by July 2025 — registrations, not
+  benefits). **Caste and labor via parliamentary data**: 377 sewer/septic deaths 2019–23 (Rajya
+  Sabha, July 2024) beside "no manual scavenging as defined by the 2013 Act" — the definitional
+  artifact taught as such; NAMASTE profiling **67.9% SC** (Lok Sabha, Dec 2024); child labor
+  **dated** (census 12.7M 2001 → 10.1M 2011; the 2016 amendment's family-enterprise exception and
+  83→3 hazardous list; no current count asserted — the 2021 census was postponed). Cited to the
+  ILO/PLFS, the Codes' text, parliamentary answers, Supreme Court judgments and SEWA's own record.
+  Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
 - 🔧 **Africa Before Colonization: The Documented Record** (Culture & History,
   \`content/africa-precolonial\`) — the **anchor of the precolonial-Africa track** (from BAM's
   \`world.md\` queue). **7 sections · 16 teaching lessons · 7 quizzes** (15-16-question banks, above

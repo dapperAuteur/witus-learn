@@ -1807,6 +1807,46 @@ Both sentences can be true at once, and seeing how is a skill this course has be
               "Three orderings of union and party — and India's plural, fragmented version is why a 51% sole negotiating union is rare and general strikes are the unifying act.",
             sourceLessonSlug: "india-four-answers",
           },
+          {
+            prompt:
+              "Apply the discipline to '250 million workers struck on 9 July 2025.' Who owns that number, and what may you honestly repeat?",
+            options: [
+              "The government owns it; repeat it freely",
+              "The organising unions own it; you may repeat 'the organisers claimed over 250 million' — attribution, not assertion",
+              "The ILO owns it; it is audited",
+              "Nobody owns it; numbers need no owners",
+            ],
+            correctIndex: 1,
+            explanation:
+              "No claim without an owner: there is no independent count of a one-day strike across 1.4 billion people, so the honest sentence names whose estimate it is.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "e-Shram recorded over 309 million registrations by July 2025. What is the careful reading of that figure?",
+            options: [
+              "309 million workers now receive benefits",
+              "It counts registrations on a self-declaration portal — a measure of who raised their hand, not of benefits delivered",
+              "It counts union members",
+              "It is the number of formal-sector employees",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Registration is the state's version of the SEWA card — identity attached to the person. It is staggering as a count of the invisible made visible, and it is not yet protection.",
+            sourceLessonSlug: "india-four-answers",
+          },
+          {
+            prompt: "Why is India called this track's most important stress test of the anchor course?",
+            options: [
+              "Because India has the strictest labour laws",
+              "Because every anchor tool assumes an employer, and India is the largest case where most workers have none — what survives that test is the real core of labor rights",
+              "Because India ratified every ILO convention first",
+              "Because Indian unions are the world's oldest",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The election, the contract, the grievance procedure all presuppose an employment relationship; a ~90%-informal workforce is where that presupposition — and any theory built on it — gets tested.",
+            sourceLessonSlug: "india-four-answers",
+          },
         ],
       },
     },

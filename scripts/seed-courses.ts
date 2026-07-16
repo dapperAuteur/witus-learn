@@ -103,6 +103,7 @@ import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
 import { LABOR_MEXICO_COURSE } from "./data/labor-mexico-course";
 import { LABOR_NORDICS_COURSE } from "./data/labor-nordics-course";
 import { LABOR_POLAND_COURSE } from "./data/labor-poland-course";
+import { LABOR_INDIA_COURSE } from "./data/labor-india-course";
 import { AFRICA_BEFORE_COLONIZATION_COURSE } from "./data/africa-before-colonization-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
@@ -700,6 +701,19 @@ async function main() {
     // adjudicates neither. Teaches the "junk contracts" (umowy śmieciowe) rhyme with US
     // misclassification + Mexican protection contracts. 6 sections · no migration · seed:courses.
     { slug: "labor-poland", course: LABOR_POLAND_COURSE, category: "Culture & History" },
+    // India: When Most Workers Have No Employer — Wave 2 of the workers'-rights country track,
+    // hanging off the anchor (history-of-unions). The course where "worker = employee with an
+    // employer" BREAKS: ~90% informal employment (India Employment Report 2024, ILO/IHD on PLFS —
+    // taught WITH the 82%-sector vs 90%-employment definitional split). Party-tied federations
+    // (AITUC/INTUC/BMS/CITU — a third politics-and-labor entanglement vs Poland/China) and the
+    // 9 July 2025 general strike ("over 250 million" ATTRIBUTED to organisers, never asserted);
+    // SEWA (Ela Bhatt, 1972) as the track's one employer-less union model; the four Labour Codes
+    // taught DATED (enacted 2019/20 → in force 21 Nov 2025 → Central Rules 8 May 2026 → state
+    // rules uneven as of mid-2026) + first gig/platform recognition (SS Code § 2, Rajasthan 2023,
+    // Karnataka 2025); caste and labor via parliamentary data (377 sewer deaths 2019–23, Rajya
+    // Sabha July 2024, vs "no manual scavenging as defined"; NAMASTE 67.9% SC) and child labor
+    // dated (census 2001→2011, the 2016 fine print). 6 sections · no migration · seed:courses.
+    { slug: "labor-india", course: LABOR_INDIA_COURSE, category: "Culture & History" },
     // Africa Before Colonization — the ANCHOR of the precolonial-Africa track
     // (plans/future-courses/africa-precolonial-track-proposal.md; from BAM's world.md queue).
     // Opens with the verified Hegel (1837) and Trevor-Roper (1965) "no history" quotes as the
