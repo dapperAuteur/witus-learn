@@ -1308,5 +1308,295 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
         ],
       },
     },
+
+    // ────────────── SECTION 5 · CASTE, THE SEWER, AND THE CHILD ──────────────
+    {
+      slug: "india-caste-and-labor",
+      title: "12 · Caste and labor: who is in the sewer",
+      section: "Section 5 · The honest part — caste, the sewer, and the child",
+      body: `Every course in this track has an honest part — the chapter the brochure version leaves out. Germany's was the coverage collapse; Mexico's was the protection contract. India's honest part is that its labour market is not only divided into formal and informal. It is also divided by **caste** — and the division runs *through* the informal economy, not alongside it.
+
+**The one paragraph of background this course needs.** Caste is a hereditary system of social ranking in South Asia that historically assigned not just status but **occupation** — including a category of communities forced into work others deemed "polluting": sanitation, leatherwork, the removal of human waste and animal carcasses. B.R. Ambedkar — the economist and jurist who chaired the drafting of India's Constitution, and who was born into one of these communities — put the labour point in one line this course cannot improve on: caste "is not merely a division of labour. It is also a division of labourers" (Ambedkar, 1936). India's Constitution outlaws the system's sharpest edge — **Article 17: "Untouchability" is abolished and its practice in any form is forbidden** — and its schedules give the historically excluded communities their administrative names: **Scheduled Castes (SC)**, about 16.6% of the population, and **Scheduled Tribes (ST)**, about 8.6% (Census of India, 2011).
+
+**Now watch what the data does when the state finally counts.** Manual removal of human excreta — "manual scavenging" — has been banned twice: by the **Employment of Manual Scavengers and Construction of Dry Latrines (Prohibition) Act, 1993**, and again, with rehabilitation duties added, by the **Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013**, which also prohibits hazardous cleaning of sewers and septic tanks without protective equipment. Two prohibitions, thirty years apart — so is it over? In **July 2024**, the Ministry of Social Justice and Empowerment told the **Rajya Sabha** (Parliament's upper house) two things in the same breath, and you should hold them side by side:
+
+- There are **no reports of the practice of manual scavenging** *as defined by the 2013 Act*.
+- **377 people died cleaning sewers and septic tanks between 2019 and 2023** (Rajya Sabha, July 2024).
+
+Both sentences can be true at once, and seeing how is a skill this course has been building since lesson 1: **the Act's definition of "manual scavenger" centres on human excreta in insanitary latrines — a person who dies inside a sewer or septic tank is counted under a different label, "hazardous cleaning."** The practice persists; the definition files it elsewhere. This is the same lesson as the 82%-versus-90% and the 250 million: *a number without its definition is a vibe* — and here the definitional gap is not an academic point. It is 377 deaths reported to Parliament by the same ministry reporting the practice extinguished. The Supreme Court has twice put money on the reality: **Safai Karamchari Andolan v. Union of India (2014)** ordered ₹10 lakh compensation for every sewer death since 1993, and **Dr. Balram Singh v. Union of India (2023)** directed that compensation for sewer deaths rise to **₹30 lakh** (about US$36,000).
+
+**And who is in the sewer?** In 2023–24 the government launched **NAMASTE** (National Action for Mechanised Sanitation Ecosystem), a scheme to profile, equip and rehabilitate sewer and septic-tank workers. Its own profiling data, reported to the **Lok Sabha in December 2024**: of **54,574** sewer and septic-tank workers profiled and validated by that date, **67.9% were Scheduled Castes** — and roughly **92% were SC, ST or OBC (Other Backward Classes) combined** (Lok Sabha, December 2024). Set 67.9% against the SC population share of 16.6% and the point makes itself: **this is not a random draw of poor workers. It is occupational assignment by descent, surviving inside the informal economy two constitutional generations after Article 17.**
+
+**Connect it to the course's spine.** Lesson 3 called India's great exclusion *structural* — the law's vocabulary never reaches the informal worker. This lesson adds the map: **the structural exclusion has a caste geography.** Who ends up in the informal economy's worst work — the sewer, the waste heap, the tannery — is not caste-neutral, which means "formalise the economy" and "annihilate caste-assigned work" are related but *not identical* projects. A universal minimum wage (Section 4) prices the work; it does not reassign who is compelled by descent and lack of alternatives to do it. The 2013 Act's own architecture concedes this: half the statute is prohibition, the other half is **rehabilitation** — alternative livelihoods, because banning the work without replacing the income only criminalises the worker.
+
+:::reveal In July 2024 the same ministry told Parliament there were 'no reports of manual scavenging as defined by the 2013 Act' AND that 377 people died cleaning sewers and septic tanks in 2019–2023. How are both sentences true at once? ||| Because of the definition: the Act's 'manual scavenger' centres on removing human excreta from insanitary latrines, while deaths inside sewers and septic tanks are filed under a different label — 'hazardous cleaning.' The practice persists; the definitional boundary files it elsewhere. Same discipline as the 90% and the 250 million: a number means nothing without its definition — here the gap is 377 deaths wide.
+
+## Sources
+- Ambedkar, B. R. (1936). *Annihilation of caste*. Self-published address. https://ccnmtl.columbia.edu/projects/mmt/ambedkar/
+- Constitution of India, art. 17. https://www.indiacode.nic.in/
+- The Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013 (India), No. 25 of 2013. India Code. https://www.indiacode.nic.in/handle/123456789/2091
+- Rajya Sabha, Parliament of India. (2024, July). *Deaths due to hazardous cleaning of sewers and septic tanks* [Unstarred question, Ministry of Social Justice and Empowerment answer]. https://sansad.in/rs/questions
+- Lok Sabha, Parliament of India. (2024, December). *NAMASTE scheme — profiling of sewer and septic tank workers* [Question answer, Ministry of Social Justice and Empowerment]. https://sansad.in/ls/questions
+- Safai Karamchari Andolan v. Union of India, Supreme Court of India (2014, March 27). https://indiankanoon.org/doc/71304530/
+- Dr. Balram Singh v. Union of India, Supreme Court of India (2023, October 20). https://indiankanoon.org/doc/59089239/
+- Census of India. (2011). *Primary census abstract: Scheduled Castes and Scheduled Tribes*. Office of the Registrar General & Census Commissioner. https://censusindia.gov.in/`,
+      recallContent: [
+        {
+          prompt: "The two 2024 parliamentary data points on manual scavenging, and the definitional artifact between them.",
+          answer:
+            "Rajya Sabha, July 2024: 'no reports of manual scavenging as defined by the 2013 Act' — and 377 deaths cleaning sewers and septic tanks, 2019–2023, from the same ministry. The Act's definition centres on insanitary latrines; sewer and septic-tank deaths are filed under 'hazardous cleaning,' so the practice persists while the defined category reads as empty.",
+        },
+        {
+          prompt: "What did NAMASTE profiling data (Lok Sabha, December 2024) show about who does sewer and septic-tank work?",
+          answer:
+            "Of 54,574 workers profiled and validated, 67.9% were Scheduled Castes and roughly 92% were SC/ST/OBC combined — against an SC population share of about 16.6% (Census 2011). Occupational assignment by descent, persisting inside the informal economy despite Article 17 and two statutory bans (1993, 2013).",
+        },
+      ],
+    },
+    {
+      slug: "india-child-labour",
+      title: "13 · Child labor: real progress, and where the count stops",
+      section: "Section 5 · The honest part — caste, the sewer, and the child",
+      body: `The second honest chapter is child labor — and here the honest version cuts both ways: the progress is real, and so are the limits. This course refuses both the horror-story version (nothing has changed) and the brochure version (it is solved). As always: numbers with dates, laws with thresholds.
+
+**The progress, dated.** India's census — the only full count there is — recorded **12.7 million working children aged 5–14 in 2001** and **10.1 million in 2011** (Census of India, 2011): a decline of roughly a fifth in a decade in which the child population grew. Behind the decline sits a real policy architecture. The **Right of Children to Free and Compulsory Education Act, 2009 (RTE)** made schooling ages 6–14 a legal entitlement from April 2010 — and a child in school is the single most reliable non-worker there is. In **2017**, India ratified both ILO child-labour conventions — **No. 138** (minimum age) and **No. 182** (worst forms) — the two core conventions lesson 2 noted it *had* signed, in the same breath as the two it has not. And in **2016**, Parliament amended the 1986 child-labour statute into the **Child and Adolescent Labour (Prohibition and Regulation) Act**: employment of children **under 14 is now prohibited in all occupations**, and adolescents (14–18) are barred from hazardous work. On paper — you know this course's next move — that is a complete ban, aligned with the RTE age.
+
+**Now the limits, equally dated.** Read the 2016 amendment's fine print, because both of its most criticised features live there:
+
+- **The family-enterprise exception.** A child under 14 may "help" in a **family or family enterprise** — after school hours and in non-hazardous work (child artists get a parallel carve-out). Critics, including UNICEF India at the time, made the obvious objection: in an economy that is roughly 90% informal (lesson 1), *the family enterprise is precisely where child labor lives* — the farm plot, the home-based piece-work of lesson 6, the roadside stall. The exception writes the informal economy's children out of the ban's reach — and unlike the anchor course's statutory exclusions, this one is genuinely hard to police even in good faith, because the workplace is a home.
+- **The shrunken hazardous list.** The same amendment cut the list of hazardous occupations barred to adolescents from **83 items to 3 broad categories** — mines, inflammable substances and explosives, and hazardous processes under the Factories Act — moving everything else off the statutory schedule (Child and Adolescent Labour (Prohibition and Regulation) Amendment Act, 2016).
+
+**And where the count stops.** The honest limit under everything above: **the last full count is 2011.** India's decennial census due in 2021 was postponed, and as of mid-2026 no new census child-labour tables exist — so every current figure you will meet is a survey estimate or a projection, and this course declines to headline any of them. Notice that this is the same epistemic hole as lesson 4's union-membership verification (last completed: 2002): **on the two questions where India's labour story is hardest — how many union members, how many working children — the official count is a decade or more old.** When the new census publishes, check it; do not trust a 2011 number recited as a present-tense fact, including by us.
+
+**Connect it to the spine, one last time.** Child labor in India is overwhelmingly **informal-economy** labor: family farms, home-based work, small workshops — the places with no employer of record for an inspector to serve notice on. Which is why the machinery that has moved the number is mostly *not* labour-law machinery: it is **schools** (RTE), midday meals, household income growth. Where the employment relationship is invisible, the effective child-labour law turns out to be an education law. That is this course's thesis in miniature: **where "worker = employee with an employer" fails, protections that attach to the employer fail with it — and protections that attach to the person are what actually reach people.**
+
+:::reveal The 2016 amendment banned all work by children under 14 — with an exception for 'helping in family enterprises.' Why do critics call that exception the ban's biggest hole, in this course's terms? ||| Because in a ~90%-informal economy, the family enterprise — the farm, the home workshop, the stall — is exactly where most child labor happens. The exception carves the informal economy's children out of the ban, and it is structurally hard to police because the workplace is a home. A ban that attaches at the employer fails where there is no employer — the course's thesis applied to children.
+
+## Sources
+- Census of India. (2011). *Working children in the age group 5–14* [Census tables, as compiled]. Office of the Registrar General & Census Commissioner. https://censusindia.gov.in/
+- The Child and Adolescent Labour (Prohibition and Regulation) Act, 1986, as amended by the Child Labour (Prohibition and Regulation) Amendment Act, 2016 (India). India Code. https://www.indiacode.nic.in/handle/123456789/1985
+- The Right of Children to Free and Compulsory Education Act, 2009 (India), No. 35 of 2009. India Code. https://www.indiacode.nic.in/
+- International Labour Organization. (2017, June 13). *India ratifies both fundamental ILO conventions on child labour* [Press release]. https://www.ilo.org/resource/news/india-ratifies-both-fundamental-ilo-conventions-child-labour
+- UNICEF India. (2016, July). *Statement on the Child Labour (Prohibition and Regulation) Amendment Act, 2016*. https://www.unicef.org/india/`,
+      recallContent: [
+        {
+          prompt: "India's child-labour count, dated — and why no current figure is headlined.",
+          answer:
+            "Census 2001: 12.7 million working children aged 5–14; Census 2011: 10.1 million — a real decline. The 2021 census was postponed, so as of mid-2026 the last full count is fifteen years old; everything newer is a survey estimate, and the course attributes rather than asserts those.",
+        },
+        {
+          prompt: "The 2016 amendment's two most criticised features.",
+          answer:
+            "(1) The family-enterprise exception: children under 14 may 'help' in family enterprises after school, non-hazardous — carving out exactly the informal settings where most child labour lives. (2) The hazardous-occupations list for adolescents was cut from 83 items to 3 broad categories (mines, inflammables/explosives, Factories Act hazardous processes).",
+        },
+      ],
+    },
+    {
+      slug: "india-quiz-5",
+      title: "Section 5 quiz · Caste, the sewer, and the child",
+      section: "Section 5 · The honest part — caste, the sewer, and the child",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What does Article 17 of India's Constitution do?",
+            options: [
+              "Guarantees a minimum wage",
+              "Abolishes 'untouchability' and forbids its practice in any form",
+              "Creates the caste system",
+              "Establishes the census",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Article 17 outlaws the caste system's sharpest edge. The NAMASTE data shows how far practice lags the text two constitutional generations later.",
+            sourceLessonSlug: "india-caste-and-labor",
+          },
+          {
+            prompt: "Complete Ambedkar's line: caste 'is not merely a division of labour. It is also a…'",
+            options: [
+              "…division of labourers",
+              "…division of wages",
+              "…division of land",
+              "…division of parties",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Ambedkar (Annihilation of Caste, 1936): the system ranks and assigns the WORKERS by descent, not just the work — which is why formalising the economy and ending caste-assigned work are related but not identical projects.",
+            sourceLessonSlug: "india-caste-and-labor",
+          },
+          {
+            prompt: "How many times has manual scavenging been banned by central statute, and when?",
+            options: [
+              "Once, in 1950",
+              "Twice — the 1993 Act and the 2013 Prohibition of Employment as Manual Scavengers and their Rehabilitation Act",
+              "It has never been banned",
+              "Three times, most recently in the Labour Codes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "1993 (dry latrines) and 2013 (with rehabilitation duties and a ban on hazardous sewer/septic cleaning without protective equipment). Two prohibitions, thirty years apart — and 377 deaths reported for 2019–2023 anyway.",
+            sourceLessonSlug: "india-caste-and-labor",
+          },
+          {
+            prompt:
+              "In July 2024 the Ministry of Social Justice told the Rajya Sabha there were 'no reports of manual scavenging as defined by the 2013 Act' — and also reported what?",
+            options: [
+              "That the 2013 Act had been repealed",
+              "377 deaths cleaning sewers and septic tanks between 2019 and 2023",
+              "That all sanitation work was now mechanised",
+              "That the census had resumed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both statements came from the same ministry. The definitional gap — latrine-centred 'manual scavenging' vs 'hazardous cleaning' of sewers — is what lets both be simultaneously true.",
+            sourceLessonSlug: "india-caste-and-labor",
+          },
+          {
+            prompt: "Why can 'no manual scavenging' and '377 sewer deaths' both be true at once?",
+            options: [
+              "The deaths occurred abroad",
+              "Because the 2013 Act's definition centres on insanitary latrines, so sewer and septic-tank deaths are filed under a different label — 'hazardous cleaning'",
+              "Because the deaths were not workers",
+              "They cannot both be true",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The practice persists; the definition files it elsewhere. A number without its definition is a vibe — this course's oldest lesson, at its highest stakes.",
+            sourceLessonSlug: "india-caste-and-labor",
+          },
+          {
+            prompt: "What did NAMASTE profiling data (Lok Sabha, December 2024) show about sewer and septic-tank workers?",
+            options: [
+              "They are drawn evenly from all communities",
+              "Of 54,574 profiled and validated workers, 67.9% were Scheduled Castes and roughly 92% SC/ST/OBC combined",
+              "Most are recent migrants from abroad",
+              "No caste data was collected",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Against an SC population share of ~16.6% (Census 2011), 67.9% is not a random draw of poor workers — it is occupational assignment by descent surviving inside the informal economy.",
+            sourceLessonSlug: "india-caste-and-labor",
+          },
+          {
+            prompt: "What have India's Supreme Court rulings ordered for sewer deaths?",
+            options: [
+              "Nothing — the cases were dismissed",
+              "Compensation: ₹10 lakh per death since 1993 (Safai Karamchari Andolan, 2014), raised to ₹30 lakh (Balram Singh, 2023)",
+              "Criminal penalties only",
+              "Nationalisation of sanitation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two judgments put money on the reality the definitions obscure — compensation orders premised on the deaths the category 'manual scavenging' does not count.",
+            sourceLessonSlug: "india-caste-and-labor",
+          },
+          {
+            prompt: "Why is half of the 2013 Act devoted to rehabilitation rather than prohibition?",
+            options: [
+              "As a drafting error",
+              "Because banning caste-assigned work without replacing the income only criminalises the worker — alternative livelihoods are the other half of ending it",
+              "Because prohibition was already complete",
+              "To fund the census",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A universal wage floor prices the work; it does not reassign who is compelled by descent and lack of alternatives to do it. Prohibition without rehabilitation punishes the person it claims to free.",
+            sourceLessonSlug: "india-caste-and-labor",
+          },
+          {
+            prompt: "What does this course mean by 'the structural exclusion has a caste geography'?",
+            options: [
+              "That informality only exists in some states",
+              "That who ends up in the informal economy's worst work — the sewer, the waste heap — is not caste-neutral; the exclusion from labour law's vocabulary falls hardest along lines of descent",
+              "That caste is a regional phenomenon",
+              "That formal workers have no caste",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Lesson 3's structural exclusion, plus this lesson's map: formalising the economy and annihilating caste-assigned work are related but not identical projects.",
+            sourceLessonSlug: "india-caste-and-labor",
+          },
+          {
+            prompt: "What do India's census figures show about child labour between 2001 and 2011?",
+            options: [
+              "An increase from 10.1 to 12.7 million",
+              "A decline from about 12.7 million to about 10.1 million working children aged 5–14, while the child population grew",
+              "No change",
+              "The census does not count working children",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Real, dated progress — driven less by labour inspection than by schools (RTE, 2009), midday meals, and rising household incomes.",
+            sourceLessonSlug: "india-child-labour",
+          },
+          {
+            prompt: "What did the 2016 amendment do to child employment law?",
+            options: [
+              "Legalised all child work",
+              "Banned employment of children under 14 in all occupations and barred adolescents (14–18) from hazardous work — with a family-enterprise exception",
+              "Only raised the working age to 12",
+              "Applied only to factories",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A complete ban on paper, aligned with the RTE schooling age — with its two most criticised features in the fine print (the family-enterprise exception and the shrunken hazardous list).",
+            sourceLessonSlug: "india-child-labour",
+          },
+          {
+            prompt: "Why do critics call the family-enterprise exception the 2016 ban's biggest hole?",
+            options: [
+              "Because family enterprises are always hazardous",
+              "Because in a ~90%-informal economy, the family farm, home workshop and stall are exactly where most child labour lives — and a home workplace is structurally hard to inspect",
+              "Because it applies to adolescents only",
+              "Because it expired in 2020",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A ban that attaches at the employer fails where there is no employer — the course's thesis, applied to children.",
+            sourceLessonSlug: "india-child-labour",
+          },
+          {
+            prompt: "What happened to the hazardous-occupations list for adolescents in the 2016 amendment?",
+            options: [
+              "It was expanded from 3 to 83 items",
+              "It was cut from 83 items to 3 broad categories — mines, inflammable substances and explosives, and hazardous processes under the Factories Act",
+              "It was left unchanged",
+              "It was moved into the Constitution",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same amendment that completed the under-14 ban narrowed the adolescent protections — both halves live in the 2016 fine print.",
+            sourceLessonSlug: "india-child-labour",
+          },
+          {
+            prompt: "Why does this course decline to give a current child-labour figure for India?",
+            options: [
+              "Because child labour has ended",
+              "Because the last full count is the 2011 census — the 2021 census was postponed — so every newer number is a survey estimate, which the course attributes rather than headlines",
+              "Because the data is classified",
+              "Because the ILO forbids it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same epistemic hole as union membership (last verified 2002): on India's hardest labour questions, the official count is a decade or more old. Check the new census when it publishes.",
+            sourceLessonSlug: "india-child-labour",
+          },
+          {
+            prompt: "What 'effective child-labour law' has actually moved India's numbers, per this course?",
+            options: [
+              "The Industrial Disputes Act",
+              "Education law — the RTE Act's compulsory-schooling entitlement — plus household income growth, because inspection cannot reach workplaces with no employer of record",
+              "The Trade Unions Act",
+              "The Street Vendors Act",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Where the employment relationship is invisible, protections that attach to the PERSON (a school place) reach further than protections that attach to an employer. The course's thesis in miniature.",
+            sourceLessonSlug: "india-child-labour",
+          },
+        ],
+      },
+    },
   ],
 };
