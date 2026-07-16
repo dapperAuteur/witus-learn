@@ -990,5 +990,323 @@ Stop at that number and do to it what this course did to the 90% in lesson 1.
         ],
       },
     },
+
+    // ────────────── SECTION 4 · THE LABOUR CODES ──────────────
+    {
+      slug: "india-codes-what",
+      title: "9 · Twenty-nine laws, four Codes",
+      section: "Section 4 · The Labour Codes — 29 laws, four Codes, one long wait",
+      body: `Lesson 2 showed you the cathedral: a century's accumulation of labour statutes — the 1926 Act, the 1947 Act, the 1948 Acts, and dozens more, each with its own definitions, thresholds, registers and inspectors. Between 2019 and 2020, India's Parliament did something governments had discussed for decades: it repealed **29 central labour laws** and folded them into **four Codes**. Whatever you end up thinking of them, they are the largest rewrite of labour law in Indian history, and you should first meet them as text.
+
+**1 · The Code on Wages, 2019** (passed August 2019) — absorbs the Minimum Wages Act 1948, the Payment of Wages Act 1936, the Payment of Bonus Act 1965 and the Equal Remuneration Act 1976. Its headline change answers lesson 2 directly: the minimum wage becomes **universal**. The "scheduled employments" gate is gone — every wage worker, in listed occupations or not, is entitled to a minimum wage, and the Code adds a national **floor wage** below which no state's minimum may fall. On paper, this is the single largest extension of a labour right toward the informal workforce in the country's history. (Keep the italics on *on paper* — lesson 10 is about the gap between enactment and reach.)
+
+**2 · The Industrial Relations Code, 2020** — absorbs the Trade Unions Act 1926, the Industrial Employment (Standing Orders) Act 1946 and the Industrial Disputes Act 1947. Three changes carry most of the controversy:
+- **The 100 becomes 300.** Establishments needing **prior government permission** for lay-offs, retrenchment or closure: the threshold rises from 100 workers to **300**, with governments empowered to raise it further. Employers' case: the 100-worker rule froze hiring — firms stayed small or hired contract labour to duck it. Unions' case: it strips job-security review from every factory between 100 and 300.
+- **The strike notice goes universal.** A **14-day advance notice** before any strike — previously required only in public utility services — now applies to **all establishments**, with wide no-strike windows while conciliation and adjudication are pending. Unions read this as making the lawful lightning strike impossible.
+- **The negotiating union.** A union with **51% of workers** on the muster roll becomes the **sole negotiating union** — India's first general statutory recognition rule (before this, recognition was largely a matter of state laws and codes of practice). With multiple party-tied rivals in one plant (lesson 4), a 51% single winner is rare — failing that, the Code provides a negotiating *council* of the larger unions.
+
+**3 · The Occupational Safety, Health and Working Conditions Code, 2020** — absorbs 13 laws including the Factories Act 1948, the Contract Labour Act 1970 and the Inter-State Migrant Workmen Act 1979: one licensing-and-safety regime for factories, contractors and migrant labour.
+
+**4 · The Code on Social Security, 2020** — absorbs nine laws including the provident fund and state-insurance Acts and the Unorganised Workers' Social Security Act 2008 — and, for the first time in any Indian statute, defines and covers **gig workers and platform workers**. That is lesson 11's story.
+
+**Why unions struck against this (lesson 5) while the government calls it historic:** the Codes genuinely extend *floors* (universal minimum wage, social-security ambitions) while genuinely raising *thresholds* (300 workers, 14-day notice, longer no-strike windows). Whether that trade reads as modernisation or as de-fanging depends on which half of the package reaches you — a universal wage floor means most to the informal nine-tenths; the threshold changes cost most to the organised tenth that actually strikes. Hold both halves; refuse the headline versions of either.
+
+:::reveal The IR Code raised the prior-permission threshold from 100 to 300 workers. Give the employers' argument and the unions' argument for and against — both in one line each. ||| Employers: the 100-worker rule froze firms below the threshold and pushed them into contract labour — raising it unfreezes hiring. Unions: every establishment between 100 and 300 workers loses government review of lay-offs and closure — job security shrinks for exactly the plants where unions exist.
+
+## Sources
+- The Code on Wages, 2019 (India), No. 29 of 2019. India Code. https://www.indiacode.nic.in/
+- The Industrial Relations Code, 2020 (India), No. 35 of 2020. India Code. https://www.indiacode.nic.in/bitstream/123456789/22040/1/A2020-35.pdf
+- The Occupational Safety, Health and Working Conditions Code, 2020 (India), No. 37 of 2020. India Code. https://www.indiacode.nic.in/
+- The Code on Social Security, 2020 (India), No. 36 of 2020. India Code. https://www.indiacode.nic.in/
+- Press Information Bureau. (n.d.). *Industrial Relations Code, 2020: Promoting harmony and ease of doing business* [Factsheet]. Government of India. https://www.pib.gov.in/FactsheetDetails.aspx?Id=150483`,
+      recallContent: [
+        {
+          prompt: "The four Labour Codes, with years and one headline change each.",
+          answer:
+            "Code on Wages (2019): universal minimum wage plus a national floor wage. Industrial Relations Code (2020): 300-worker permission threshold, universal 14-day strike notice, 51% sole negotiating union. OSH Code (2020): one safety/licensing regime absorbing 13 laws. Code on Social Security (2020): first statutory coverage of gig and platform workers. Together they replace 29 central laws.",
+        },
+        {
+          prompt: "What did the Code on Wages, 2019 do to the 'scheduled employments' gap?",
+          answer:
+            "Closed it: the minimum wage became universal instead of applying only to occupations a government had listed, with a national floor wage below which no state minimum may fall — on paper, the largest extension of a labour right toward the informal workforce in Indian history.",
+        },
+      ],
+    },
+    {
+      slug: "india-codes-when",
+      title: "10 · Passed in 2020, in force in 2025: always date the status",
+      section: "Section 4 · The Labour Codes — 29 laws, four Codes, one long wait",
+      body: `Now the part of the story that most summaries flatten, and that this course refuses to: **when** any of lesson 9 became real. Watch the dates — the gap between them is itself the lesson.
+
+**The timeline, dated at every step:**
+- **August 2019:** the Code on Wages is passed by Parliament.
+- **September 2020:** the other three Codes are passed.
+- **2020 → 2025:** the Codes sit on the books, enacted but **not brought into force**. No commencement notification; the old 29 laws keep operating. Five years.
+- **21 November 2025:** the central government brings all four Codes **into force** (Ministry of Labour & Employment notification).
+- **December 2025 – May 2026:** draft central *rules* published (30 December 2025); **final Central Rules notified 8 May 2026**.
+- **As of mid-2026:** state rules remain **uneven** — a majority of states and union territories have notified rules for at least one Code, several large states are still at the draft stage, and there is no single common commencement date for every state-dependent provision.
+
+**Why did a government with a parliamentary majority wait five years to switch on its own flagship reform?** Several forces, all documented and none sufficient alone. The Codes were politically contested from birth — the union federations, including at times the **BMS, the federation aligned with the governing party's own family** (lesson 4), demanded changes or repeal, and lesson 5's general strikes kept the pressure public. The COVID-19 pandemic consumed the machinery's first years. And structurally: **labour sits on the Concurrent List of India's Constitution** — both the central government and every state legislate on it, and the Codes are built to run on *rules* that each state must write for itself. Switching on the Codes before states wrote rules would have produced a vacuum where the repealed laws had been. The federal plumbing, not any single villain, explains most of the five years — and explains why even now "in force" means different things in different states.
+
+**Extract the method, because you will use it on every country you ever study.** Between "passed" and "protecting an actual worker" a law crosses at least four thresholds — **enacted → in force → rules framed → enforced** — and a claim about the law is meaningless until you know which threshold it refers to. "India has a universal minimum wage" was false-in-practice from 2019 to 2025 despite being on the statute book, and its truth **today** varies by state rule-making. Compare the track's siblings: Mexico's 2019 reform came with a hard deadline (all contracts legitimised by May 2023) and an external enforcer (the USMCA mechanism); India's reform had neither, and took five years to cross threshold two. **A dated claim is the only honest kind.** This course was written in mid-2026 and says so; if you are reading it later, the state-rules map has almost certainly moved — check it, don't trust us.
+
+**And who does the wait fall on?** Notice the asymmetry: the organised tenth kept its old protections through the gap (the old laws stayed in force). The informal nine-tenths, whose universal minimum wage and social-security coverage existed only inside the un-commenced Codes, absorbed the entire five-year delay. The workers with the least were the ones waiting on the plumbing.
+
+:::reveal 'India enacted a universal minimum wage in 2019.' Walk that claim through the four thresholds — enacted, in force, rules framed, enforced — with dates. ||| Enacted: August 2019 (Code on Wages passed). In force: not until 21 November 2025 — a five-year gap in which the old scheduled-employments regime kept operating. Rules framed: final Central Rules 8 May 2026, with STATE rules still uneven as of mid-2026 (labour is a concurrent subject). Enforced: varies by state and is the threshold to check at the time you read this. The claim is true or false depending on which threshold — which is why undated claims about the Codes are worthless.
+
+## Sources
+- Ministry of Labour & Employment, Government of India. (2025, November 21). Commencement of the four Labour Codes [Notification, as reported]. https://labour.gov.in/
+- KPMG. (2025, December). *India — Government of India announces implementation of four labour codes* (GMS Flash Alert 2025-267). https://kpmg.com/xx/en/our-insights/gms-flash-alert/flash-alert-2025-267.html
+- EY India. (2025, November 21). *New labour codes implemented across the country effective 21 November 2025* [Alert]. https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/alerts-hub/2025/11/new-labour-codes-implemented-across-the-country-effective-21-november-2025.pdf
+- Ministry of Labour & Employment, Government of India. (2026, January). *FAQ on myths and realities of the Industrial Relations Code 2020*. https://www.labour.gov.in/static/uploads/2026/01/b9f5b3916c042a5597f9cb4f3cc9f0fd.pdf`,
+      recallContent: [
+        {
+          prompt: "The Labour Codes' four-threshold timeline, dated.",
+          answer:
+            "Enacted 2019 (Wages) and 2020 (the other three); brought into force 21 November 2025; final Central Rules 8 May 2026; state rules still uneven as of mid-2026 because labour is on the Concurrent List and every state writes its own rules. 'In force' means different things in different states.",
+        },
+        {
+          prompt: "Who absorbed the five-year commencement delay, and why is that asymmetric?",
+          answer:
+            "The informal nine-tenths. The organised tenth kept its old-law protections through the gap; the universal minimum wage and gig social security existed only inside the un-commenced Codes — so the workers with the least did all the waiting.",
+        },
+      ],
+    },
+    {
+      slug: "india-gig-workers",
+      title: "11 · The gig worker enters the statute",
+      section: "Section 4 · The Labour Codes — 29 laws, four Codes, one long wait",
+      body: `Inside the Code on Social Security, 2020 sits a first — not just for India but for this entire track: **the first time a national statute anywhere in these twelve courses names the gig worker as a legal category.**
+
+**The definitions (Code on Social Security, 2020, § 2).** A **"gig worker"** is a person who earns from work arrangements **"outside of traditional employer-employee relationship."** A **"platform worker"** is a gig worker whose arrangement runs through an online platform. An **"aggregator"** is the digital intermediary — the app — connecting buyers of a service with its providers. Read the gig-worker definition twice, because something remarkable is happening in it: **the statute defines the worker by the absence of an employer.** Everything lesson 2's cathedral assumed, this definition negates — and instead of pretending the category doesn't exist, the law finally names it. It is lesson 1's ~90%, or rather its app-mediated sliver, written into § 2.
+
+**The money.** The Code directs that schemes for gig and platform workers be funded in part by the aggregators themselves: a contribution of **1–2% of an aggregator's annual turnover, capped at 5% of the amount paid or payable to its gig and platform workers**, into a social-security fund. Registration runs through **e-Shram**, the national database of unorganised workers launched in **August 2021** — which by **July 2025** recorded **over 30.9 crore (309 million) registered workers** (Press Information Bureau, 2025). Pause on that number the way this course has taught you to: it is a count of *registrations on a self-declaration portal*, not of benefits delivered — but as a measure of how many people raised their hand when the state finally asked who works informally, it is staggering. Recognise the playbook, too: registration, identity, a welfare fund attached to the worker rather than to any employer — **the SEWA logic of lesson 7, run at national scale by the state.**
+
+**What the recognition is not.** The Code gives gig workers *social security schemes* — not a minimum wage (that lives in the Code on Wages, keyed to employment), not working-time limits, not collective-bargaining rights. India has, in effect, answered the question the United States has litigated for a decade — *is a gig worker an employee?* — by statute, and the answer is **"no, but they get a third category with welfare attached."** Compare the anchor's misclassification wars: the American fight is over pushing gig workers *into* the employee box; India built a box *between* employee and invisible. Advocates of the approach call it realism — coverage without a definitional war. Critics call it entrenchment — informality, now with a statutory blessing and a discount social-security rate. Both readings are live; this course holds them open.
+
+**And because the Codes idled for five years (lesson 10), the states moved first.** **Rajasthan** passed the first state gig-worker law in the country — the **Rajasthan Platform Based Gig Workers (Registration and Welfare) Act, 2023**: a state welfare board, a register of gig workers, and a **welfare cess of 1–2% per transaction** on aggregators. **Karnataka** followed with the **Karnataka Platform Based Gig Workers (Social Security and Welfare) Act, 2025** — a welfare fee of **1–5% of the payout per transaction**, graded by aggregator category, plus grievance and termination-protection provisions that go beyond welfare into something like employment rights. Federalism as laboratory, again: while the Centre's scheme-making under the SS Code is still being operationalised **(status as of mid-2026 — check before relying)**, two states already run their own regimes, and every platform operating nationally now navigates a patchwork.
+
+:::reveal India's SS Code defines a gig worker as earning 'outside of traditional employer-employee relationship.' Why does this course call that definition both a landmark and a warning? ||| Landmark: the statute finally names the employer-less worker instead of pretending the category doesn't exist — the first legal recognition of gig work in this track, with aggregator-funded social security attached. Warning: it creates a third category BETWEEN employee and invisible — welfare without minimum wage, working-time or bargaining rights — so it can be read as realism (coverage without a definitional war) or as entrenchment (informality with statutory blessing). Both readings are live.
+
+## Sources
+- The Code on Social Security, 2020 (India), No. 36 of 2020, § 2. India Code. https://www.indiacode.nic.in/
+- Press Information Bureau. (2025, July). *Over 30.95 crore unorganised workers registered on e-Shram portal*. Government of India. https://www.pib.gov.in/PressReleasePage.aspx?PRID=2149351
+- The Rajasthan Platform Based Gig Workers (Registration and Welfare) Act, 2023 (India), Act 29 of 2023. https://prsindia.org/files/bills_acts/acts_states/rajasthan/2023/Act29of2023Rajasthan.pdf
+- PRS Legislative Research. (2025). *The Karnataka Platform Based Gig Workers (Social Security and Welfare) Bill, 2025*. https://prsindia.org/bills/states/the-karnataka-platform-based-gig-workers-social-security-and-welfare-bill-2025
+- Press Information Bureau. (2025). *Labour reforms: Formalising and safeguarding India's gig & platform workforce*. Government of India. https://www.pib.gov.in/PressReleasePage.aspx?PRID=2200767`,
+      recallContent: [
+        {
+          prompt: "The SS Code 2020's three gig-economy definitions and the funding rule.",
+          answer:
+            "Gig worker: earns outside a traditional employer-employee relationship. Platform worker: a gig worker working through an online platform. Aggregator: the digital intermediary (the app). Funding: aggregators contribute 1–2% of annual turnover, capped at 5% of payments to their gig/platform workers, to a social-security fund; registration runs through e-Shram (309M+ registrations by July 2025).",
+        },
+        {
+          prompt: "Which two states legislated on gig work before the central Codes were operational, and how do their levies differ?",
+          answer:
+            "Rajasthan (2023, first in India): welfare cess of 1–2% per transaction. Karnataka (2025): welfare fee of 1–5% of per-transaction payout, graded by aggregator category, plus grievance and termination protections. The states moved during the Centre's five-year commencement gap.",
+        },
+      ],
+    },
+    {
+      slug: "india-quiz-4",
+      title: "Section 4 quiz · The Codes, dated",
+      section: "Section 4 · The Labour Codes — 29 laws, four Codes, one long wait",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What did India's four Labour Codes do to the existing body of central labour law?",
+            options: [
+              "Added four new laws on top of it",
+              "Repealed and consolidated 29 central labour laws into four Codes",
+              "Transferred it all to the states",
+              "Abolished labour law entirely",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Wages (2019), Industrial Relations, OSH, and Social Security (2020) — the largest rewrite of labour law in Indian history, replacing 29 statutes.",
+            sourceLessonSlug: "india-codes-what",
+          },
+          {
+            prompt: "What is the headline change of the Code on Wages, 2019?",
+            options: [
+              "It abolished the minimum wage",
+              "The minimum wage became universal — no more 'scheduled employments' gate — plus a national floor wage",
+              "It doubled all wages",
+              "It applies only to factories",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Under the 1948 Act, no listing meant no wage floor. The Code universalises the entitlement — on paper the largest extension of a labour right toward the informal workforce ever.",
+            sourceLessonSlug: "india-codes-what",
+          },
+          {
+            prompt: "Under the IR Code 2020, which establishments need prior government permission for lay-offs, retrenchment or closure?",
+            options: [
+              "All establishments",
+              "Those with 300 or more workers — raised from the previous threshold of 100",
+              "Those with 50 or more workers",
+              "None — the requirement was abolished",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The 100→300 change is the Codes' most contested single number: employers say 100 froze hiring; unions say plants of 100–300 lose job-security review.",
+            sourceLessonSlug: "india-codes-what",
+          },
+          {
+            prompt: "What did the IR Code do to strike notice requirements?",
+            options: [
+              "Abolished them",
+              "Extended the 14-day advance notice from public utility services to ALL establishments, with wide no-strike windows during proceedings",
+              "Reduced notice to 24 hours",
+              "Made all strikes illegal",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Unions read the universal 14-day notice as ending the lawful lightning strike; the government frames it as orderly dispute resolution.",
+            sourceLessonSlug: "india-codes-what",
+          },
+          {
+            prompt: "What share of workers must a union have to become the sole negotiating union under the IR Code?",
+            options: ["10%", "25%", "51% of workers on the muster roll", "75%"],
+            correctIndex: 2,
+            explanation:
+              "India's first general statutory recognition rule. With party-tied rivals in one plant, a 51% winner is rare — failing that, a negotiating council of larger unions.",
+            sourceLessonSlug: "india-codes-what",
+          },
+          {
+            prompt: "Why does the course insist you 'hold both halves' of the Codes?",
+            options: [
+              "Because the Codes are secret",
+              "Because they extend floors (universal minimum wage, social security) while raising thresholds (300 workers, universal strike notice) — the halves fall on different workers",
+              "Because half the Codes were repealed",
+              "Because unions and employers agree on everything",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The floor extensions mean most to the informal nine-tenths; the threshold changes cost most to the organised tenth. Headline versions of either half mislead.",
+            sourceLessonSlug: "india-codes-what",
+          },
+          {
+            prompt: "When were the four Codes brought into force?",
+            options: [
+              "Immediately on passage in 2019–2020",
+              "21 November 2025 — five years after enactment",
+              "They are not yet in force",
+              "1 January 2022",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Enacted 2019/2020, commenced 21 November 2025, final Central Rules 8 May 2026 — with state rules still uneven as of mid-2026.",
+            sourceLessonSlug: "india-codes-when",
+          },
+          {
+            prompt: "What structural feature of India's constitution explains most of the five-year commencement gap?",
+            options: [
+              "The President's veto",
+              "Labour is on the Concurrent List — both Centre and states legislate, and the Codes run on rules every state must write itself",
+              "Labour law requires a referendum",
+              "The Supreme Court suspended the Codes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Commencing the Codes before states wrote rules would have left a vacuum where the repealed laws had been. Federal plumbing, plus political contest and COVID, ate the five years.",
+            sourceLessonSlug: "india-codes-when",
+          },
+          {
+            prompt: "The course's four thresholds every law must cross before it protects anyone are…",
+            options: [
+              "Drafted, debated, amended, printed",
+              "Enacted, in force, rules framed, enforced",
+              "Proposed, passed, signed, celebrated",
+              "State, national, ILO, court",
+            ],
+            correctIndex: 1,
+            explanation:
+              "'India has a universal minimum wage' was false-in-practice for six years despite being on the books — a claim is meaningless until you know which threshold it refers to.",
+            sourceLessonSlug: "india-codes-when",
+          },
+          {
+            prompt: "Who absorbed the cost of the five-year gap between enactment and commencement?",
+            options: [
+              "The organised tenth, who lost their old protections",
+              "The informal nine-tenths — their universal wage floor and social security existed only inside the un-commenced Codes, while the old laws kept protecting the organised",
+              "Employers, who paid double compliance",
+              "Nobody — the gap had no cost",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The asymmetry is the point: the workers with the least did all the waiting.",
+            sourceLessonSlug: "india-codes-when",
+          },
+          {
+            prompt: "How does the Code on Social Security, 2020 define a 'gig worker'?",
+            options: [
+              "Any part-time worker",
+              "A person earning from work arrangements outside of traditional employer-employee relationship",
+              "Anyone paid in cash",
+              "A worker under age 30",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The statute defines the worker by the ABSENCE of an employer — the first legal naming of the category in this track, and lesson 1's theme written into § 2.",
+            sourceLessonSlug: "india-gig-workers",
+          },
+          {
+            prompt: "How are gig-worker social-security schemes funded under the SS Code?",
+            options: [
+              "Entirely by general taxation",
+              "By aggregator contributions of 1–2% of annual turnover, capped at 5% of payments to their gig and platform workers",
+              "By worker dues of 10% of earnings",
+              "By the ILO",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The app pays into the fund; registration runs through e-Shram, which recorded over 309 million registrations by July 2025 — registrations, note, not benefits delivered.",
+            sourceLessonSlug: "india-gig-workers",
+          },
+          {
+            prompt: "What did the SS Code's gig recognition deliberately NOT give gig workers?",
+            options: [
+              "Social-security schemes",
+              "A statutory definition",
+              "Minimum wage, working-time limits, and collective-bargaining rights — the recognition is welfare, not employment status",
+              "e-Shram registration",
+            ],
+            correctIndex: 2,
+            explanation:
+              "India answered 'is a gig worker an employee?' by statute: no — a third category with welfare attached. Realism to advocates; entrenchment of informality to critics.",
+            sourceLessonSlug: "india-gig-workers",
+          },
+          {
+            prompt: "Which state passed India's first gig-worker law, and what does it levy?",
+            options: [
+              "Karnataka, a 10% payroll tax",
+              "Rajasthan (2023) — a welfare cess of 1–2% per transaction on aggregators, with a board and register",
+              "Kerala, a flat licence fee",
+              "Gujarat, no levy",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rajasthan moved first (2023) during the Centre's commencement gap; Karnataka (2025) followed with a 1–5% graded fee and protections reaching beyond welfare.",
+            sourceLessonSlug: "india-gig-workers",
+          },
+          {
+            prompt: "Why does the course say e-Shram 'borrows the SEWA logic'?",
+            options: [
+              "SEWA built the portal",
+              "It attaches identity, registration and welfare to the WORKER rather than to any employer — the counterparty-substitution playbook, run by the state at national scale",
+              "It only registers women",
+              "It is headquartered in Ahmedabad",
+            ],
+            correctIndex: 1,
+            explanation:
+              "When no employer exists to hang protections on, you register the worker and attach them to the state — SEWA's method (lesson 7), nationalised.",
+            sourceLessonSlug: "india-gig-workers",
+          },
+        ],
+      },
+    },
   ],
 };
