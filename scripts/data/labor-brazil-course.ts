@@ -1467,5 +1467,261 @@ Place it in the architecture. The anchor's Question 2 — *who is excluded?* —
         ],
       },
     },
+
+    // ───────── SECTION 6 · THE WHOLE ARC: BRAZIL AND THE FOUR QUESTIONS ─────────
+    {
+      slug: "brazil-four-questions",
+      section: "Section 6 · The whole arc: Brazil and the four questions",
+      title: "16 · What Brazil gives the track: follow the money that funds the union",
+      recallContent: [
+        {
+          prompt: "What are the four art. 149 conditions, and what is the lista suja?",
+          answer: "Forced labor, jornada exaustiva, degrading conditions, and debt-bondage restriction of movement — conditions, not chains. The lista suja is the public federal register (since 2004) of employers caught subjecting workers to slavery-like conditions; the October 2025 update added 159 employers tied to 1,530 rescued workers.",
+        },
+        {
+          prompt: "What is the status of app-driver employment in Brazil as of July 2026?",
+          answer: "Pending. STF Tema 1291 (whose thesis will bind all courts) was removed from the docket on 24 June 2026 pending analysis of the new ILO platform-work instrument; PLP 12/2024, a drivers-only regulation excluding couriers, is also pending in Congress. The course refuses to predict either.",
+        },
+      ],
+      body: `You will not remember every date in this course five years from now. That is fine. **This is the lesson you keep.**
+
+## Put the whole course in one line
+
+Brazil ran the controlled experiment nobody could have designed: **it funded its unions by law for seventy-four years, then stopped, at a stroke, on a known date.** The result was not subtle — more than 90% of the money gone within a few years (Section 4), density drifting to a series low of 8.4% (2023) before the first uptick in twelve years (8.9%, 2024, IBGE). And the honest reading is not the tidy one in either direction: the decline predated the reform, part of what starved was paper, and part of what starved was real.
+
+## The question you keep
+
+Mexico gave you *whose union is it?* Brazil's gift is its financial twin:
+
+> ### **Who pays the union — and what does the payer get?**
+
+Follow the funding and every act of this course explains itself. Vargas's tax bought unions that answered to the state that collected it (Sections 1–2: a captured union was a *funded* captured union). The novo sindicalismo filled the shell with members, but the shell's revenue still never depended on them (Section 3). When the tax died, what had been holding unions up was revealed with experimental precision (Section 4). A union funded **without workers' consent** serves whoever guarantees the funding; a union that must **earn** its budget — Ghent-style, dues-by-choice — has no one to serve but the people who can stop paying. Carry the question everywhere: into US agency-fee debates, into any country's subsidy schemes, into every headline that says "union" as if the word settled anything.
+
+## The four questions, applied to Brazil
+
+The track's reusable spine (from the anchor), answered for the country you just studied:
+
+| Question | Brazil's answer |
+| --- | --- |
+| **1. Who may organize?** | Formal workers — into **the** union for their category and territory. Unicidade (1943 → art. 8, II, 1988) means you are assigned, not asked; Brazil still cannot ratify ILO C87. |
+| **2. Who is excluded?** | The informal **~4 in 10** (39.0% in 2024, 38.1% in 2025, IBGE) — no carteira, no category; app workers, pending Tema 1291; and at the extreme, workers in art. 149 conditions, rescued by the GEFM at thousands per year. |
+| **3. Who bargains, at what level?** | Category unions, employer counterparts, and a dedicated labor judiciary — with the state's formula replacing bargaining outright under the dictatorship (the arrocho), and *negociado sobre legislado* letting agreements override parts of the statute since 2017. |
+| **4. What happens if you try?** | 1980: intervention, cassation, prison under the National Security Law. 1988 on: the strike is a constitutional right (art. 9). And the arc the track has seen nowhere else: the jailed strike leader was later elected president — twice, with a conviction and an annulment in between, both taught as dated facts. |
+
+## Cross-links: where to go from here
+
+- **The anchor** (*The History of Unions*) gave you the four questions and the US misclassification move Brazil rhymes with.
+- **Mexico** (labor-mexico) is the sibling corporatism where the *party*, not the statute, was the cage — and where a trade deal, not a funding cut, forced the reckoning.
+- **Poland** (labor-poland) is the mirror image of Section 2: workers who went *around* the official structure instead of capturing it — and whose union also produced a president.
+- **Sweden & Denmark** (the Nordic course) is the counterfactual to Vargas's bargain: unions that earn membership through the Ghent system, and keep it.
+- **Know Your Rights at Work** is the companion for your own workplace, today, in the US: protected activity, retaliation, what to do on Monday.
+
+## What you can actually do with this
+
+- **The lista suja is public.** Anyone — including you — can search Brazil's dirty list of employers caught using slavery-like labor. Supply-chain screening is not a specialist's power.
+- **The data is public.** IBGE's PNAD Contínua (density, informality) and the STF's own case-tracking pages (Tema 1291) are open; every load-bearing number in this course can be re-checked by a student with a browser.
+- **The habit is portable.** Twice in this course, verified numbers beat power: DIEESE's audit broke the arrocho in 1977, and the GEFM's inspections put names on a public list. When you meet a labor claim anywhere, do what this course did — ask for the year, the source, and the scope.
+
+:::reveal What is the one-line verdict of Brazil's controlled experiment, stated with all three honest complications? ||| When the state stopped funding unions it had funded by law for 74 years (Lei 13.467, effective November 2017), union revenue collapsed by more than 90% within a few years — but the honest verdict carries three complications: density was already falling before 2017 (16.1% in 2012 → 9.2% in 2022, IBGE); part of what starved was paper 'cartorial' unions that existed to collect the tax; and part was real unions that lost most of their budgets in a year. The durable lesson: a union funded without workers' consent serves whoever guarantees the funding — so always ask who pays the union, and what the payer gets.
+
+## Sources
+- Decreto-Lei nº 5.452, de 1º de maio de 1943 (Consolidação das Leis do Trabalho). Presidência da República. https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm
+- Constituição da República Federativa do Brasil. (1988). Presidência da República. https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+- Lei nº 13.467, de 13 de julho de 2017. Presidência da República. https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm
+- Instituto Brasileiro de Geografia e Estatística. (2025, 2026). *PNAD Contínua* (union density 2012–2024; informality 2024–2025). https://www.ibge.gov.br/
+- Ministério do Trabalho e Emprego. (n.d.). *Cadastro de Empregadores* ("lista suja"). https://www.gov.br/trabalho-e-emprego/`,
+    },
+    {
+      slug: "brazil-final-quiz",
+      section: "Section 6 · The whole arc: Brazil and the four questions",
+      title: "17 · Final check: the whole arc",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How did enforceable labor law arrive in Brazil, and in what document?",
+            options: [
+              "Handed down from above: the dictator Getúlio Vargas signed the CLT (Decreto-Lei 5.452) on 1 May 1943, during the Estado Novo",
+              "Won from below through a general strike in 1917",
+              "Imposed by the ILO in 1950",
+              "Written by the military junta in 1964",
+            ],
+            correctIndex: 0,
+            explanation: "A gift from above, with the giver's strings: the same statute that granted protections decided who would speak for workers.",
+            sourceLessonSlug: "brazil-vargas-clt",
+          },
+          {
+            prompt: "Name the three locks of the CLT's union system.",
+            options: [
+              "Unicidade (one union per category per territory), the ministry charter (recognition + intervention power), and the compulsory imposto sindical",
+              "Minimum wage, maximum hours, paid vacations",
+              "Strikes, boycotts, and pickets",
+              "Federations, confederations, and centrais",
+            ],
+            correctIndex: 0,
+            explanation: "The whole course is what happens when each lock is tested: by a dictatorship, by a democracy, and by a 2017 statute.",
+            sourceLessonSlug: "brazil-three-locks",
+          },
+          {
+            prompt: "Why has Brazil never ratified ILO Convention 87?",
+            options: [
+              "Because unicidade — one union per category per territory — cannot promise workers organizations 'of their own choosing,' and since 1988 the rule is constitutional (art. 8, II)",
+              "Because Brazil left the ILO",
+              "Because ratification requires unanimity in Congress",
+              "It did ratify it, in 1950",
+            ],
+            correctIndex: 0,
+            explanation: "Mexico ratified C87 in 1950; even communist Poland ratified it in 1957. Democratic Brazil, as of 2026, still cannot.",
+            sourceLessonSlug: "brazil-three-locks",
+          },
+          {
+            prompt: "Why did the military regime (1964–85) not need to build a labor-control apparatus?",
+            options: [
+              "Vargas had already built it — the generals turned the CLT's existing keys: intervention, monopoly unions, and a tax that kept funding captured unions",
+              "It abolished all unions instead",
+              "It had no interest in controlling labor",
+              "The ILO administered Brazilian unions in that period",
+            ],
+            correctIndex: 0,
+            explanation: "The danger of a labor system built as a machine of state: machines change hands.",
+            sourceLessonSlug: "brazil-dictatorship-arrocho",
+          },
+          {
+            prompt: "What did DIEESE prove in 1977, and why did it matter?",
+            options: [
+              "That the official 1973 inflation figure was manipulated (12.6% announced vs ~22.5% real) — an audit that made the arrocho's arithmetic indefensible and ignited the reposição campaign",
+              "That strikes were legal under the constitution",
+              "That the union tax was too small",
+              "That wages had risen faster than inflation",
+            ],
+            correctIndex: 0,
+            explanation: "Not an uprising — an audit. It handed the São Bernardo union president, Lula, the issue that became the ABC strikes.",
+            sourceLessonSlug: "brazil-dictatorship-arrocho",
+          },
+          {
+            prompt: "What was structurally distinctive about the ABC strikes of 1978–80?",
+            options: [
+              "They were led from INSIDE the official state-chartered union — the novo sindicalismo captured Vargas's machine and made it obey its members, unlike Solidarność, which built outside",
+              "They were organized by a secret union with no legal existence",
+              "They were called by the Labor Ministry",
+              "They never involved more than one factory",
+            ],
+            correctIndex: 0,
+            explanation: "Two authoritarian corporatisms, two escape routes — and in both countries, the labor movement trained the democratic opposition.",
+            sourceLessonSlug: "brazil-abc-strikes",
+          },
+          {
+            prompt: "Audit the 1988 Constitution against the three locks.",
+            options: [
+              "Broke Lock 2 (no state authorization or intervention — art. 8, I); kept Lock 1 (unicidade, art. 8, II) and Lock 3 (the statutory contribution, art. 8, IV); added the strike as a constitutional right (art. 9)",
+              "Broke all three locks",
+              "Kept all three locks unchanged",
+              "Abolished unions entirely",
+            ],
+            correctIndex: 0,
+            explanation: "Democracy removed the state's key and kept the machine — which is also why C87 remains out of reach.",
+            sourceLessonSlug: "brazil-cut-pt-1988",
+          },
+          {
+            prompt: "State the Lula record of 2017–2023 the way this course teaches it.",
+            options: [
+              "Convicted 2017–18; imprisoned April 2018; released November 2019 on a procedural ruling; convictions annulled March 2021 on jurisdictional grounds (neither acquittal nor conviction on the merits); elected president 30 Oct 2022 with 50.89%; inaugurated 1 Jan 2023",
+              "Acquitted on the merits in 2021, proving innocence",
+              "Convicted, and the conviction still stands today",
+              "Never convicted and never imprisoned",
+            ],
+            correctIndex: 0,
+            explanation: "Both facts taught — the conviction and the annulment — and neither adjudicated: no court issued a merits verdict after the annulment.",
+            sourceLessonSlug: "brazil-lula-record",
+          },
+          {
+            prompt: "What did Lei 13.467/2017 do to Vargas's third lock, and how could a mere statute do it?",
+            options: [
+              "It made the union tax conditional on the worker's prior and express authorization — possible because the tax lived in the CLT (a statute), unlike unicidade, which is constitutional",
+              "It doubled the tax — possible because taxes are executive decrees",
+              "It abolished unicidade — possible because the constitution had expired",
+              "Nothing — the tax survives today",
+            ],
+            correctIndex: 0,
+            explanation: "Effective 11 November 2017; upheld by the STF in June 2018 (ADI 5794).",
+            sourceLessonSlug: "brazil-lei-13467",
+          },
+          {
+            prompt: "What happened to union revenue after the tax became voluntary?",
+            options: [
+              "It collapsed by more than 90% within a few years — R$2.0bn (2017) → R$282.9M (2018) → R$88.2M (Jan–Nov 2019) for unions; R$3bn (2017) → R$65.6M (2021) for the whole structure",
+              "It fell about 5% and recovered",
+              "It rose as workers donated voluntarily",
+              "No one measured it",
+            ],
+            correctIndex: 0,
+            explanation: "Two official-data series, two scopes (unions only vs unions + federations + confederations + centrais), one shape.",
+            sourceLessonSlug: "brazil-revenue-collapse",
+          },
+          {
+            prompt: "Which complication cuts AGAINST the tidy story that the 2017 reform killed Brazilian unionism?",
+            options: [
+              "Union density was already falling before 2017 (16.1% in 2012 → 9.2% in 2022, IBGE), and part of what starved was paper 'cartorial' unions",
+              "Union density rose after 2017",
+              "The tax was never actually abolished",
+              "The reform applied only to São Paulo",
+            ],
+            correctIndex: 0,
+            explanation: "The course refuses both tidy framings: the reform neither killed a healthy movement nor culled only fakes — real unions lost most of their budgets too.",
+            sourceLessonSlug: "brazil-revenue-collapse",
+          },
+          {
+            prompt: "Who stands outside the CLT's door, by the numbers?",
+            options: [
+              "Roughly four in ten employed workers — 39.0% (2024) and 38.1% (2025) informality per IBGE — no carteira, no category, no chartered union of their own",
+              "Almost no one — informality is under 2%",
+              "Only foreign workers",
+              "Only workers in agriculture",
+            ],
+            correctIndex: 0,
+            explanation: "The corporatist system's unit of membership — the category — is defined so that they are not in it.",
+            sourceLessonSlug: "brazil-informality-apps",
+          },
+          {
+            prompt: "How does this course handle the app-driver question, and why?",
+            options: [
+              "As pending, dated July 2026: STF Tema 1291 was removed from the docket on 24 June 2026 pending the new ILO platform-work instrument, and PLP 12/2024 is pending in Congress — predicting either would be editorializing, not teaching",
+              "It states that drivers are definitively employees",
+              "It states that drivers are definitively autonomous",
+              "It ignores the question",
+            ],
+            correctIndex: 0,
+            explanation: "A paragraph claiming to know how Tema 1291 comes out is telling you about its author, not about Brazilian law.",
+            sourceLessonSlug: "brazil-informality-apps",
+          },
+          {
+            prompt: "What are Brazil's two internationally cited tools against trabalho análogo à escravidão?",
+            options: [
+              "The GEFM mobile inspection teams (68,000+ workers rescued since 1995; 2,772 in 2025) and the public 'lista suja' of employers — the audit and the record",
+              "A national referendum and a hotline",
+              "The union tax and unicidade",
+              "Tariffs and trade sanctions",
+            ],
+            correctIndex: 0,
+            explanation: "The ILO cites the SYSTEM as a reference; the problem's persistence is why it still rescues thousands a year (Repórter Brasil, reporting MTE data).",
+            sourceLessonSlug: "brazil-slave-labor-dirty-list",
+          },
+          {
+            prompt: "What is the portable question Brazil adds to the track's toolkit?",
+            options: [
+              "Who pays the union — and what does the payer get? A union funded without workers' consent serves whoever guarantees the funding",
+              "Whose union is it? (that one is Mexico's)",
+              "Is there a union at all?",
+              "How large is the strike fund?",
+            ],
+            correctIndex: 0,
+            explanation: "Follow the funding and every act of the course explains itself — from the captured-but-funded unions of 1964 to the collapse of 2018.",
+            sourceLessonSlug: "brazil-four-questions",
+          },
+        ],
+      },
+    },
   ],
 };
