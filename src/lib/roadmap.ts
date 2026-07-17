@@ -636,6 +636,108 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   contracts" (\`umowy śmieciowe\`) rhyme** with US misclassification + Mexican protection contracts —
   the track's payoff. Cited to UNESCO, the European Solidarity Centre, GUS, OECD/AIAS, ETUI and
   Eurofound. Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+- 🔧 **India: When Most Workers Have No Employer** (Culture & History, \`content/labor-india\`) —
+  **Wave 2 of the workers'-rights country track**, and the proposal's "single most important course
+  in the track": the course where **"worker = employee with an employer" breaks**. **6 sections ·
+  14 teaching lessons · 6 quizzes** (15-question banks, above the 10-question attempt cap so
+  retries rotate; every question carries \`explanation\` + \`sourceLessonSlug\`; a \`:::reveal\` per
+  teaching lesson). The headline number is **named, dated and defined**: **~90% informal
+  employment / ~82% informal sector** (India Employment Report 2024, ILO + Institute for Human
+  Development, on the government's own PLFS) — the 82-vs-90 definitional split is itself taught.
+  **Party-tied federations** (AITUC 1920 / INTUC 1947 / BMS 1955 / CITU 1970 — last completed
+  membership verification **2002**, stated as such) as a **third politics-and-labor entanglement**
+  against Poland and China; the **9 July 2025 general strike's "over 250 million" attributed to
+  its organisers, never asserted**. **SEWA** (Ela Bhatt, Ahmedabad, registered 12 April 1972) as
+  the track's one **employer-less union model** — the 1972 registration fight, the method
+  (identity card, substituted counterparties, member-built institutions), and the honest limit
+  (**no counterparty, no contract**). The **four Labour Codes taught dated at every threshold**:
+  enacted 2019/2020 (29 laws → 4) → **in force 21 Nov 2025** → Central Rules 8 May 2026 → **state
+  rules uneven as of mid-2026** (labour is Concurrent-List); first statutory **gig/platform
+  recognition** (SS Code 2020 § 2; aggregator 1–2%-of-turnover funding; Rajasthan 2023 and
+  Karnataka 2025 state laws; e-Shram 309M+ registrations by July 2025 — registrations, not
+  benefits). **Caste and labor via parliamentary data**: 377 sewer/septic deaths 2019–23 (Rajya
+  Sabha, July 2024) beside "no manual scavenging as defined by the 2013 Act" — the definitional
+  artifact taught as such; NAMASTE profiling **67.9% SC** (Lok Sabha, Dec 2024); child labor
+  **dated** (census 12.7M 2001 → 10.1M 2011; the 2016 amendment's family-enterprise exception and
+  83→3 hazardous list; no current count asserted — the 2021 census was postponed). Cited to the
+  ILO/PLFS, the Codes' text, parliamentary answers, Supreme Court judgments and SEWA's own record.
+  Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+- 🔧 **South Korea: Democracy, the Chaebol, and the Lawsuit as a Weapon** (Culture & History,
+  \`content/labor-south-korea\`) — **Wave 2 of the workers'-rights country track**, for high school
+  students. **6 sections · 15 teaching lessons · 6 quizzes** (14–15-question banks, above the
+  10-question attempt cap so retries rotate; every question carries \`explanation\` +
+  \`sourceLessonSlug\`). The compressed century: **labor suppression as explicit development
+  policy** under Park Chung-hee (the supervised FKTU, the Dec 1971 special-measures freeze, the
+  Peace Market's teenage "sida"); **Jeon Tae-il's self-immolation (13 Nov 1970** — date verified;
+  his reported last words *"We are not machines"* are **sourced to witness accounts via Cho
+  Young-rae's biography (pub. 1983), not asserted as transcript**; Lee So-sun + the Cheonggye
+  union); the women's unions of the 1970s (Dongil 1978, **YH → Bu-Ma → Park's assassination**,
+  chain taught with hedged weights); the **1987 Great Workers' Struggle** (3,300+ strikes, ~1.2M
+  workers — the **Poland cross-link with the causal arrow reversed**); FKTU vs **KCTU (founded
+  1995, illegal until Nov 1999)** and chaebol **enterprise unions** (anchor's Japan lesson
+  cross-linked); the **1997 IMF hinge** (letter of intent 3 Dec 1997, ~$58B package; Feb 1998
+  layoffs + dispatch legalized) → the **regular/non-regular divide: 38.2% of wage workers /
+  8.568M (Aug 2025, Statistics Korea)**, incl. **the movement's own blind spot** taught
+  structurally (enterprise-union form; KTX attendants, Kiryung). **Question 4's modern form**:
+  damages suits + **provisional seizure** (Ssangyong 2009 — 77 days, ~4.7bn won awards, ~30
+  deaths by 2018 with variance named, **Supreme Court June 2023** remand), the 2022 truckers'
+  strike (**first-ever return-to-work orders, 29 Nov 2022**; ILO dispute taught both ways,
+  **live**), and the **yellow envelope law** (passed 24 Aug 2025 after two vetoes, **effective
+  Mar 2026 — text + dates stated, no outcomes asserted**). Honest scorecard: **density 13.1%
+  (2022, MOEL)** — the brief's "~10%" corrected — **coverage 14.8% (2018, OECD/AIAS)**,
+  enterprise bargaining with **no extension mechanism**; ILO **C87/C98 ratified only 20 Apr
+  2021**. Cited to Statistics Korea, MOEL, OECD/AIAS, ILO/NORMLEX, MOFA and the Korean + legal
+  press. Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+- 🔧 **Brazil: State-Chartered Unions, a Union-Made President, and the 2017 Rupture** (Culture &
+  History, \`content/labor-brazil\`) — **Wave 2** of the workers'-rights country track, hanging off
+  the anchor. **6 sections · 11 teaching lessons · 6 quizzes** (15-question banks, above the
+  10-question attempt cap so retries rotate; every question carries \`explanation\` +
+  \`sourceLessonSlug\`). **Corporatism written into the law**: the 1943 CLT's three locks
+  (**unicidade** — still in art. 8, II of the 1988 Constitution, which is why Brazil **still cannot
+  ratify ILO C87**; the ministry charter; the **compulsory union tax**), the dictatorship turning
+  the machine's keys (arrocho, pelego, DIEESE's 1977 audit of the faked inflation index), the **ABC
+  strikes 1978–80** capturing the official union from within (vs Solidarność going outside — the
+  matched pair), and 1988 breaking one lock while keeping two. Then the track's cleanest natural
+  experiment: **Lei 13.467/2017** made the tax voluntary → revenue collapse taught **with figures
+  and scopes flagged** (unions: R$2.0bn 2017 → R$88.2M Jan–Nov 2019, Secretaria do Trabalho via
+  Gazeta do Povo; whole structure: R$3bn 2017 → R$65.6M 2021, via Poder360; density 16.1% 2012 →
+  8.9% 2024, IBGE — falling **before** 2017, and 'cartorial' paper unions named, so both tidy
+  framings are refused). **Lula taught neutral + dated**: the 2017–18 conviction AND the 8 Mar 2021
+  jurisdictional annulment (neither an acquittal nor a conviction on the merits — the course
+  adjudicates neither), 50.89% runoff win 30 Oct 2022 (Agência Brasil). **Informality 39.0% (2024)
+  / 38.1% (2025, IBGE)** with the definition; **STF Tema 1291 (app drivers) taught as PENDING**
+  (pulled from the docket 24 Jun 2026 pending the new ILO platform-work instrument; PLP 12/2024's
+  exclusions named); the **outside-the-category rhyme** named across US misclassification / Mexican
+  protection contracts / Polish junk contracts. Honesty section: **trabalho análogo à escravidão**
+  (Penal Code art. 149 — conditions, not chains), the **GEFM** (68,000+ rescued since 1995; 2,772
+  in 2025, +38%, Repórter Brasil reporting MTE data) and the public **"lista suja"** (Oct 2025:
+  +159 employers). Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+- 🔧 **Chile: A Labor System Designed to Be Weak** (Culture & History, \`content/labor-chile\`) —
+  **Wave 2** of the workers'-rights country track, and the learner's recommended **LAST** country
+  course. **6 sections · 14 teaching lessons · 6 quizzes** (15-question banks; every question
+  carries \`explanation\` + \`sourceLessonSlug\`) **· 1 exercise** ("name the design"). The one course
+  where a labor system is **DESIGNED, by a named author, with a stated goal**: the **1979 Plan
+  Laboral** (DL 2756 unions / DL 2758 bargaining; eight decree laws, one 1978 + seven July 1979;
+  José Piñera, appointed late 1978 amid the **AFL-CIO boycott threat**) — bargaining locked to the
+  **firm**, federations barred, pluralism-as-fragmentation, non-union \`grupos negociadores\`, and
+  the strike engineered not to paralyse (replacement + the **59-day deemed-resignation trapdoor**,
+  mirrored against *Mackay Radio* 1938). Before it: Iquique 1907 (toll taught **as contested** —
+  official ~126 vs the Cantata's 3,600), the CUT (1953), the **34% density peak (1973,
+  Fundación Sol)**; the destruction told from **Rettig Commission findings** (3,000+ killed or
+  disappeared; CUT dissolved by **DL 12**, Sept 1973). The designers' case is **steelmanned in
+  Piñera's own published words, then measured**: density **~16% (2023)** ≈ OECD average, coverage
+  **~19.3% (2023)** among the OECD's lowest (avg ~33.5%) — the **~3-point coverage–density gap as
+  the firm-level fingerprint** (OECD/AIAS, in OECD 2025). Democracy keeps the design: 1990–91
+  (Ley 19.069 — trapdoor out, replacement kept) → **Ley 20.940** (in force 1 Apr 2017 — replacement
+  banned, \`huelga efectiva\`; **titularidad struck by the TC, Rol 3016-16**; level untouched).
+  **Subcontratación** (Ley 20.123, 2007; the 2007 CTC/Codelco 37-day strike → Acuerdo Marco) named
+  as Chile's **put-them-outside move** (rhymes: US misclassification, Mexican protection contracts,
+  Polish junk contracts). Set **against the Nordics course**: same statutory silence on sectoral
+  bargaining, **opposite cause** — the referee's silence vs the wall's. 2019 estallido + **both
+  constitutional rejections dated, outcomes only** (4 Sep 2022: 61.86% Rechazo; 17 Dec 2023: 55.76%
+  En contra; Servel). Cited to OECD/AIAS, BCN/LeyChile, Dirección del Trabajo, Memoria Chilena,
+  Servel, Fundación Sol, Álvarez (2012) and Piñera (1990). Registered in \`seed-courses.ts\`;
+  **no migration** — \`pnpm seed:courses\`.
 - 🔧 **Africa Before Colonization: The Documented Record** (Culture & History,
   \`content/africa-precolonial\`) — the **anchor of the precolonial-Africa track** (from BAM's
   \`world.md\` queue). **7 sections · 16 teaching lessons · 7 quizzes** (15-16-question banks, above
@@ -691,6 +793,118 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Lefkowitz, Howe, Appiah, Gilroy, mainstream Egyptology and the 2017 aDNA paper (APA 7 + a \`## Sources\`
   list on every lesson). Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`. The
   natural home for BAM's source note \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\`.
+- 🔧 **Pan-Africanism: The Idea, the Movement, the Reckoning** (Culture & History,
+  \`content/pan-africanism\`) — the **anchor of the Pan-Africanism track**
+  (\`plans/future-courses/pan-africanism-track-proposal.md\`, renders at \`/admin/future\`), for high
+  school students. **6 sections · 16 teaching lessons · 6 quizzes** (15-question banks, above the
+  10-question attempt cap so retries rotate; 90 questions) · a \`:::reveal\` self-check per teaching
+  lesson; every question carries \`explanation\` + \`sourceLessonSlug\`. The full arc: 19th-century
+  roots (Cuffe vs the ACS, the 1817 Bethel AME rejection, Delany, Ethiopianism, **Blyden's "African
+  personality"** with his documented flaws) → **Williams's 1900 London conference** (Du Bois's
+  verbatim "colour line" address) → the Congresses (1919's "as fast as their development permits"
+  baseline vs **Manchester 1945**, taught as the pivot: workers' composition, independence demanded,
+  the Nkrumah/Kenyatta/Banda roll call, honest footnotes) → **Garvey taught honestly** (UNIA scale
+  with membership as a CONTESTED number; the Black Star Line collapse, the never-acquired *Phyllis
+  Wheatley*, the single-count 1923 conviction AND Hoover's 1919 "notorious negro agitator" memo
+  predating any crime — both halves, neither canceling; the KKK meeting; Du Bois's May 1924
+  "lunatic or a traitor" verbatim, Garvey's colorist counterattacks paraphrased per quote policy) →
+  **Nkrumah, Ghana 1957** (midnight-speech transcription variance flagged), the year of Accra 1958,
+  **OAU 1963** (Casablanca vs Monrovia; "unite now or perish" scored honestly both ways;
+  non-interference + Cairo 1964 borders from treaty text; Liberation Committee credit AND
+  "dictators' club" debit) → **AU 2002** (Sirte 1999 with **Gaddafi taught plainly as the awkward
+  midwife**; Article 4(h) verbatim — non-interference → non-indifference; AfCFTA/Agenda 2063 dated
+  from the instruments; the text-vs-practice audit) → **Négritude** (the Nardal-salon Harlem bridge;
+  Césaire/Senghor/Damas; Sartre's "anti-racist racism"; Soyinka's tigritude PARAPHRASED because
+  wording varies) → **Rastafari/Ethiopia as the symbol-vs-fact set piece** (the "Look to Africa"
+  prophecy audited as UNVERIFIABLE and traced toward James Morris Webb per Hill 1983; Garvey's
+  documented 1937 "great coward" attack on Selassie; the two-ledgers method) → **the reckoning**:
+  five structural tensions + the strongmen named with hedged, attributed numbers (Nkrumah's PDA and
+  Danquah's death in Nsawam; Touré's Camp Boiro, where **OAU first secretary-general Diallo Telli**
+  starved in 1977; **Amin chairing the OAU in 1975**; Mobutu; Gaddafi) — because a celebration-only
+  course isn't credible, and the dissident half of the tradition (Soyinka, Ngũgĩ, the survivors)
+  named the crimes first. **Quote policy: verbatim-verified or explicitly flagged, never
+  reconstructed; every date sourced; contested numbers taught as contested.** Cross-links (never
+  duplicates) the shipped *Africa Before Colonization* and *Afrocentricity* anchors. Cited to Adi
+  (2018), Adi & Sherwood (1995), Padmore's 1947 Manchester report, Hill's Garvey Papers, Grant,
+  Cronon, Lewis, Nkrumah's and Du Bois's and Garvey's own writings, the OAU Charter and AU
+  Constitutive Act, Meredith, Schmidt, Chevannes, Edmonds, Kesteloot, and Sharpley-Whiting (APA 7 +
+  a \`## Sources\` list on every lesson). Registered in \`seed-courses.ts\`; **no migration** —
+  \`pnpm seed:courses\`.
+- 🔧 **Pre-Columbian Mesoamerica: Cities, Calendars, and the People Who Are Still Here** (Culture &
+  History, \`content/precolumbian-mesoamerica\`) — the **anchor of the Pre-Columbian Mesoamerica
+  track** (7 follow-on courses proposed at
+  \`plans/future-courses/precolumbian-mesoamerica-track-proposal.md\`). **7 sections · 17 teaching
+  lessons · 7 quizzes** (15-question banks, above the 10-question attempt cap so retries rotate;
+  105 questions; every question carries \`explanation\` + \`sourceLessonSlug\`) **· 1 exercise** (name
+  the people/place/period — the anti-flattening drill) · one \`:::reveal\` per teaching lesson.
+  The spread: the **Olmec** with the mother-vs-sister-culture question taught **as a live debate**
+  (Diehl/Coe vs. Flannery & Marcus; Cascajal Block labeled unprovenienced/contested); **Aguada
+  Fénix** (Inomata 2020 — the oldest Maya monument is also the largest, found by LiDAR, read by its
+  excavators as collective labor without kings and hedged as their argument); **Teotihuacan as the
+  humility lesson** (builders, language, real name, and government all stated as UNKNOWN; the 378
+  CE Tikal entrada known only via Maya writing; the selective burning c. mid-500s contested);
+  the **Maya** (no empire — city-states; Tikal vs. Calakmul from the deciphered record; script +
+  positional zero + Long Count; **the 2012 "doomsday" traced to Tortuguero Monument 6** — a
+  damaged period-ending passage, an odometer rollover, no prophecy, per Stuart 2011; the **Classic
+  collapse taught specific AND debated** — last stelae Tikal 869/Toniná 909, Chichancanab +
+  Kennett drought cores, Petexbatun fortifications, brittle divine kingship — while the north
+  flourished); the **Mexica** (Tenochtitlan's engineering with Cortés/Díaz market claims
+  ATTRIBUTED as hostile witnesses; the Triple Alliance as a tribute empire "cheap to run, quick to
+  shatter" read from the Codex Mendoza; **sacrifice taught honestly** — the excavated **Huei
+  Tzompantli** (INAH, 2015–) is real, the Fifth Sun logic explained-not-endorsed, and the 80,400
+  / 136,000 chronicle figures **refused** as "reported, not established," with Harner's protein
+  theory dismantled per Ortiz de Montellano 1978); **Oaxaca + the Purépecha** (the empire that
+  beat the Aztecs; language isolate; bronze); **Central America beyond Mexico** (Joya de Cerén as
+  the commoner-life corrective; the **Diquís spheres** with purpose honestly unknown and the
+  Atlantis-mongering defused; the Isthmo-Colombian gold country); the **conquest per Restall's
+  Seven Myths** (Indigenous-ally armies — "a civil war among Mesoamerican powers"; siege not
+  technology; Quetzalcoatl-story labeled a probable colonial elaboration; **Nojpetén fell 1697** —
+  the completion myth broken); the **demographic catastrophe as a RANGE** (~15–30M central-Mexico
+  estimates, Cook & Borah vs. critics, → ~90% collapse to ~1–2M within a century — never one
+  number, with guardrails against both minimizers and maximizers); and the **"how we know"
+  methods lesson** (Landa's 1562 Maní burning quoted from his own Relación + the **~4 surviving
+  codices**; the **Knorozov → Proskouriakoff → Coe** decipherment drama with Thompson as the
+  authority-is-not-evidence caution; **PACUNAM LiDAR ~61,480 structures**). Closes with **"They
+  are still here"**: ~7M Maya, ~6M speakers of ~30 Mayan languages, >40% of Guatemala (2018
+  census), ~1.65M Nahuatl speakers (INEGI 2020), Caste War, CEH 1999 findings, Menchú's Nobel
+  WITH the Stoll controversy reported, Guna Yala, Berta Cáceres — and why the "vanished
+  civilization" trope harms living people. Cited to Coe & Houston, Miller-adjacent art-history
+  sources, Martin & Grube, Cowgill, Smith, Restall, Townsend, INAH reporting, Nature/Science
+  papers, the Popol Vuh and Florentine Codex in scholarly translation, and UNESCO. Registered in
+  \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\` (task 109).
+- 🔧 **Asia Before European Colonization: The Center of Gravity** (Culture & History,
+  \`content/precolonial-asia\`) — the **anchor of the precolonial-Asia track** (from BAM's
+  \`world.md\` queue), for high school students. **7 sections · 17 teaching lessons · 7 quizzes**
+  (15-question banks, above the 10-question attempt cap so retries rotate; 105 questions, every one
+  carrying \`explanation\` + \`sourceLessonSlug\`) **· 1 exercise** (name the civilization/person/place
+  — the anti-flattening drill) · a \`:::reveal\` per teaching lesson. **Orientation depth by design**
+  (a map and a frame; depth belongs to the track's 8 proposed follow-ons): the zones — South Asia
+  (Indus with the script taught as **UNDECIPHERED**, incl. the Farmer/Sproat/Witzel-vs-Parpola
+  dispute over whether it encodes language at all; Ashoka's Kalinga edict with its figures flagged
+  as the king's own; **zero cited link by link** — Aryabhata 499, Brahmagupta 628, Khmer 683,
+  Gwalior 876, Bakhshali radiocarbon **contested** per Plofker et al. 2017; the Mughals as Central
+  Asian **outsiders**), East Asia (Han census 2 CE as a different KIND of evidence; the An Lushan
+  "36 million dead" **rejected** as a census artifact; Diamond Sutra 868; the Song revolution with
+  primary sources named and Hartwell's iron figure labeled his estimate; Genji "often called" the
+  first novel; sakoku as managed trade; **Jikji 1377 metal movable type before Gutenberg** stated
+  precisely; Hangul's named inventor), **Southeast Asia given a full section** (Angkor per Evans et
+  al. 2007 "largest preindustrial settlement complex," the Mouhot "discovery" refused; Srivijaya
+  reassembled by Coedès 1918 as a lesson in what forgetting proves; Majapahit's Nagarakretagama
+  read as court panegyric), and the connective tissue (Silk Roads per Hansen's revision + the
+  Belitung wreck; the Baghdad translation movement with the **House of Wisdom hedged** per Gutas;
+  the Mongols **neither only-barbarian nor only-Pax**, chronicle death tolls read as expressions of
+  catastrophe, not counts). 🔴 **The thesis is cited, not asserted**: Maddison's (2007) shares
+  (China+India ≈ **roughly half of world output as late as 1820**) taught as attributed
+  reconstructions with caveats and NO false precision; **Pomeranz (2000) vs Broadberry/Guan/Li
+  (2018)** taught as a live debate, **no winner declared**. **No utopia**: caste between the two
+  myths (neither eternal essence nor British invention, per Bayly), Joseon **nobi** (Palais's ~30%
+  attributed as his estimate), Khmer temple bondage (Zhou Daguan eyewitness), the Indian Ocean
+  slave trade (Campbell; Malik Ambar), and **conquest before colonization** (Chola 1025, Ming-
+  Vietnam 1407-27, Imjin 1592-98, Japan's 1910 annexation of Korea) — "European colonization"
+  taught precisely (enclaves 1510-1571 vs **Plassey 1757**; Japan/Korea/Siam/most of China never
+  European colonies). Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+  Track proposal (8 follow-on courses + build order) at
+  \`plans/future-courses/precolonial-asia-track-proposal.md\` → \`/admin/future\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
@@ -810,6 +1024,33 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   which the course explains rather than inventing). **No fabricated statistics, quotes or people**; the
   "soccer" etymology is verified as a **British** coinage and the undocumented Wreford-Brown
   attribution is explicitly **not** repeated. \`pnpm seed:courses\` picks it up.
+- ✅ **Chess: Play It, Study It, Build With It** (Sports, \`content/chess-course\`) — 34 lessons
+  across **6 sections**, each with its own quiz (banks of **15**, so the 10-question attempt cap
+  actually rotates; 90 questions, every one carrying \`explanation\` + \`sourceLessonSlug\`), 28
+  \`:::reveal\` checks (one per teaching lesson), spaced recall cards, APA 7 + \`## Sources\` throughout.
+  How to play (board, the six pieces, check/mate/stalemate, castling, en passant, promotion,
+  algebraic notation) · **the FIDE Laws of Chess with VERIFIED article numbers** — touch-move is
+  **Art. 4.3**, and the claimed-vs-automatic draw distinction most summaries miss is taught
+  head-on (threefold **9.2** / fifty-move **9.3** are CLAIMED; fivefold **9.6.1** / 75-move
+  **9.6.2** are AUTOMATIC; flag-fall **6.9** with its no-possible-mate draw exception; rapid/blitz
+  bounds from **Appendices A/B**; where a sub-claim couldn't be pinned to a number it's taught
+  without one · strategy (opening principles over memorization, forks/pins/skewers, discovered
+  attacks, endgames — piece values flagged as **coaching convention, not law**) · **verified
+  history**: chaturanga (~6th-c. India) → shatranj → the c. 1475 "mad queen" revolution (Murray
+  1913; Yalom 2004), Steinitz–Zukertort **1886**, FIDE takeover **1948**, Menchik **1927**,
+  Fischer **1972**, Kasparov **1985** — and the Deep Blue story kept EXACTLY right (**Kasparov WON
+  1996 Philadelphia 4–2; Deep Blue won the 1997 NYC rematch 3½–2½, Game 6 on 11 May 1997**),
+  AlphaZero **2017** (+28 =72 −0 vs Stockfish; *Science* 2018), and the **2020 boom on Netflix's
+  own numbers** (62M households/28 days; Chess.com new players ×5) · organized chess (FIDE/US
+  Chess pyramid, **Elo explained** — US Chess 1960, FIDE 1970 — GM/IM/FM/CM thresholds + the
+  27-game norm system from Handbook B.01, Olympiad since 1927, Swiss system, **chess.com vs
+  Lichess as a business-model exhibit**) · and an **honest amateur/entrepreneur economy**: almost
+  nobody earns a living *playing* — the course maps coaching + the scholastic pipeline, content,
+  TD/arbiter/organizer work, and **fair play as a new profession**, with the **Carlsen–Niemann
+  case stated precisely** (100+ likely ONLINE games per Chess.com's 2022 report, **no
+  determinative OTB evidence**; suit dismissed June 2023; resolved Aug 2023) and **no invented
+  rates or salaries** — numbers carry a year + source or were cut. Re-run \`pnpm seed:courses\`;
+  **no migration**.
 - 🔧 **/explore is a landing page now** (\`feat/explore-landing\`) — the Commodity Map page was an
   \`<h1>\`, one sentence, and the map: a tool page that explained nothing and asked for nothing. It
   now answers **what is this → what will my student learn → why trust it → what next**, for the

@@ -99,11 +99,16 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
+import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
 import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
 import { LABOR_MEXICO_COURSE } from "./data/labor-mexico-course";
 import { LABOR_NORDICS_COURSE } from "./data/labor-nordics-course";
 import { LABOR_POLAND_COURSE } from "./data/labor-poland-course";
+import { LABOR_INDIA_COURSE } from "./data/labor-india-course";
+import { LABOR_SOUTH_KOREA_COURSE } from "./data/labor-south-korea-course";
+import { LABOR_BRAZIL_COURSE } from "./data/labor-brazil-course";
 import { AFRICA_BEFORE_COLONIZATION_COURSE } from "./data/africa-before-colonization-course";
+import { PRECOLUMBIAN_MESOAMERICA_COURSE } from "./data/precolumbian-mesoamerica-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
@@ -118,7 +123,10 @@ import { STUDYING_ABROAD_COURSE } from "./data/studying-abroad-course";
 import { SHIPPING_LOGISTICS_COURSE } from "./data/shipping-logistics-course";
 import { LACROSSE_COURSE } from "./data/lacrosse-course";
 import { TENNIS_COURSE } from "./data/tennis-course";
+import { CHESS_COURSE } from "./data/chess-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
+import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
+import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -700,6 +708,51 @@ async function main() {
     // adjudicates neither. Teaches the "junk contracts" (umowy śmieciowe) rhyme with US
     // misclassification + Mexican protection contracts. 6 sections · no migration · seed:courses.
     { slug: "labor-poland", course: LABOR_POLAND_COURSE, category: "Culture & History" },
+    // India: When Most Workers Have No Employer — Wave 2 of the workers'-rights country track,
+    // hanging off the anchor (history-of-unions). The course where "worker = employee with an
+    // employer" BREAKS: ~90% informal employment (India Employment Report 2024, ILO/IHD on PLFS —
+    // taught WITH the 82%-sector vs 90%-employment definitional split). Party-tied federations
+    // (AITUC/INTUC/BMS/CITU — a third politics-and-labor entanglement vs Poland/China) and the
+    // 9 July 2025 general strike ("over 250 million" ATTRIBUTED to organisers, never asserted);
+    // SEWA (Ela Bhatt, 1972) as the track's one employer-less union model; the four Labour Codes
+    // taught DATED (enacted 2019/20 → in force 21 Nov 2025 → Central Rules 8 May 2026 → state
+    // rules uneven as of mid-2026) + first gig/platform recognition (SS Code § 2, Rajasthan 2023,
+    // Karnataka 2025); caste and labor via parliamentary data (377 sewer deaths 2019–23, Rajya
+    // Sabha July 2024, vs "no manual scavenging as defined"; NAMASTE 67.9% SC) and child labor
+    // dated (census 2001→2011, the 2016 fine print). 6 sections · no migration · seed:courses.
+    { slug: "labor-india", course: LABOR_INDIA_COURSE, category: "Culture & History" },
+    // South Korea: Democracy, the Chaebol, and the Lawsuit as a Weapon — Wave 2 of the
+    // workers'-rights country track, off the anchor (history-of-unions; the anchor has NO Korea
+    // lesson — its Japan enterprise-union lesson is the cross-link). The compressed century:
+    // labor control as explicit Park-era development policy, Jeon Tae-il (13 Nov 1970, quote
+    // sourced to the Cho Young-rae biography, not asserted as transcript), the 1987 Great
+    // Workers' Struggle (3,300+ strikes), FKTU vs KCTU, and the regular/non-regular divide —
+    // 38.2% of wage workers (Aug 2025, Statistics Korea). Question 4's modern form: damages
+    // suits + provisional seizure (Ssangyong 2009), first-ever trucker return-to-work orders
+    // (Nov 2022), and the yellow envelope law (passed 24 Aug 2025 after two vetoes, effective
+    // Mar 2026) taught DATED with no outcomes asserted. Density 13.1% (2022 MOEL), coverage
+    // 14.8% (2018 OECD/AIAS). 6 sections · 15 teaching lessons · 6 quizzes (15-question banks).
+    // NO migration — pnpm seed:courses.
+    { slug: "labor-south-korea", course: LABOR_SOUTH_KOREA_COURSE, category: "Culture & History" },
+    // Brazil: State-Chartered Unions, a Union-Made President, and the 2017 Rupture — Wave 2 of the
+    // workers'-rights country track (plans/future-courses/workers-rights-track-proposal.md), hanging
+    // off the anchor (history-of-unions). Corporatism written into LAW: the 1943 CLT's three locks
+    // (unicidade, ministry charter, compulsory tax), the dictatorship using the machine, the ABC
+    // strikes capturing it from within, 1988 keeping two locks (why C87 is still unratifiable), and
+    // the controlled experiment: Lei 13.467/2017 switched the tax off → >90% revenue collapse taught
+    // with figures (two official-data series, scopes flagged). Lula taught NEUTRAL AND DATED — the
+    // conviction AND the jurisdictional annulment, adjudicating neither. Informality 39.0% (2024,
+    // IBGE), STF Tema 1291 taught as PENDING (pulled from docket 24 Jun 2026), trabalho análogo à
+    // escravidão + the lista suja (MTE/Repórter Brasil). 6 sections · no migration · seed:courses.
+    { slug: "labor-brazil", course: LABOR_BRAZIL_COURSE, category: "Culture & History" },
+    // Chile: A Labor System Designed to Be Weak — Wave 2 of the workers'-rights country track, and
+    // the learner's recommended LAST country course: the 1979 Plan Laboral (DL 2756/2758, José
+    // Piñera) as a labor system DESIGNED to atomise — steelmanned in its author's own words, then
+    // measured (density ~16%, coverage ~19.3%, 2023 OECD/AIAS — the ~3-point gap as the firm-level
+    // fingerprint). Set deliberately AGAINST the Nordics course: same statutory silence on sectoral
+    // bargaining, opposite cause. Subcontratación (Ley 20.123) named as Chile's put-them-outside
+    // move. 2022/2023 constitutional rejections dated, outcomes only. 6 sections · seed:courses.
+    { slug: "labor-chile", course: LABOR_CHILE_COURSE, category: "Culture & History" },
     // Africa Before Colonization — the ANCHOR of the precolonial-Africa track
     // (plans/future-courses/africa-precolonial-track-proposal.md; from BAM's world.md queue).
     // Opens with the verified Hegel (1837) and Trevor-Roper (1965) "no history" quotes as the
@@ -742,6 +795,45 @@ async function main() {
     // so retries rotate). No migration — pnpm seed:courses. Natural home for BAM's source note
     // plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md.
     { slug: "afrocentricity", course: AFROCENTRICITY_COURSE, category: "Culture & History" },
+    // Pan-Africanism: The Idea, the Movement, the Reckoning — the ANCHOR of the Pan-Africanism
+    // track (plans/future-courses/pan-africanism-track-proposal.md). 6 sections · 16 teaching
+    // lessons · 6 quizzes (15-question banks). Garvey taught honestly (UNIA scale + Black Star
+    // Line collapse + the 1923 conviction + Hoover's 1919 memo); strongmen named with hedged
+    // numbers; quotes verbatim-verified or flagged. No migration — pnpm seed:courses.
+    { slug: "pan-africanism", course: PAN_AFRICANISM_COURSE, category: "Culture & History" },
+    // Pre-Columbian Mesoamerica — the ANCHOR of the Mesoamerica track
+    // (plans/future-courses/precolumbian-mesoamerica-track-proposal.md). Olmec (mother-vs-sister
+    // taught AS a live debate; Cascajal contested), Aguada Fénix (2020, largest/oldest Maya
+    // monument), Teotihuacan (builders/language UNKNOWN — the humility lesson), the Maya (script,
+    // zero, Long Count; 2012 traced to Tortuguero Monument 6 = period ending, not prophecy; the
+    // Classic collapse specific AND debated; ~7M Maya today — they did not vanish), the Mexica
+    // (Tenochtitlan, Triple Alliance, chinampas; sacrifice honest — Huei Tzompantli real, the
+    // 80,400 chronicle figure refused), Oaxaca + Purépecha, Central America beyond Mexico (Joya
+    // de Cerén, Diquís spheres), conquest per Restall's Seven Myths (Indigenous allies, not
+    // passive victims; Nojpetén fell 1697), demographic collapse as a RANGE (~15-30M → ~2M,
+    // contested, never one number), and a "how we know" methods lesson (Landa's 1562 Maní
+    // burning + ~4 surviving codices, Knorozov→Coe decipherment, PACUNAM LiDAR ~61,480
+    // structures). 7 sections · 17 teaching lessons · 7 quizzes (15-question banks) · 1 exercise.
+    // NO migration — pnpm seed:courses.
+    { slug: "precolumbian-mesoamerica", course: PRECOLUMBIAN_MESOAMERICA_COURSE, category: "Culture & History" },
+    // Asia Before European Colonization — the ANCHOR of the precolonial-Asia track
+    // (plans/future-courses/precolonial-asia-track-proposal.md; from BAM's world.md queue).
+    // ORIENTATION depth by design: the zones (South, East, Southeast, Central, West Asia),
+    // when each flourished, and the connective tissue (Silk Roads land+sea, the Baghdad
+    // translation movement with the House of Wisdom HEDGED per Gutas, the Mongols as neither
+    // only-barbarian nor only-Pax). The economic-center thesis is CITED, NOT ASSERTED:
+    // Maddison (2007) shares taught as attributed reconstructions with caveats; Pomeranz
+    // (2000) vs Broadberry/Guan/Li (2018) taught as a live debate, no winner declared. The
+    // Indus script is taught as UNDECIPHERED (Farmer/Sproat/Witzel vs Parpola dispute named);
+    // zero cited link by link (Aryabhata 499 → Brahmagupta 628 → Gwalior 876; Bakhshali
+    // radiocarbon contested per Plofker et al. 2017). "European colonization" taught
+    // precisely: the Mughals as Central Asian outsiders, intra-Asian conquest (Chola 1025,
+    // Ming-Vietnam 1407-27, Imjin 1592-98) predating Europeans, enclaves 1510-1571 vs
+    // Plassey 1757. No utopia: caste (between the two myths), Joseon nobi (Palais's ~30%
+    // attributed), Khmer temple bondage, the Indian Ocean slave trade. 7 sections ·
+    // 17 teaching lessons · 7 quizzes (15-question banks) · 1 exercise (name the
+    // civilization/person/place). NO migration — pnpm seed:courses.
+    { slug: "asia-before-european-colonization", course: ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE, category: "Culture & History" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
@@ -1089,6 +1181,26 @@ async function main() {
     instructorId,
     slug: "pickleball",
     course: PICKLEBALL_COURSE,
+    category: "Sports",
+    navigationMode: "linear",
+  });
+
+  // Chess — how to play (board, pieces, check/mate/stalemate, castling, en passant, promotion,
+  // algebraic notation), the FIDE Laws with VERIFIED article numbers (touch-move 4.3; claimed
+  // draws 9.2/9.3 vs automatic 9.6.1/9.6.2; clock 6.9; rapid/blitz per Appendices A/B), strategy
+  // (opening principles, forks/pins/skewers, discovered attacks, endgames), verified history
+  // (chaturanga→shatranj→the c.1475 mad queen; Steinitz 1886; KASPAROV won 1996 4–2 and DEEP BLUE
+  // won the 1997 rematch 3½–2½ — kept exactly right; AlphaZero 2017; the Netflix-sourced 2020
+  // boom), organized chess (FIDE/US Chess pyramid, Elo, GM/IM/FM/CM norms, Olympiad, Swiss
+  // system, chess.com vs Lichess economics), and an HONEST amateur/entrepreneur economy: almost
+  // nobody earns a living playing — coaching/scholastic, content, TD/arbiter/organizer, and
+  // fair-play work (Carlsen–Niemann stated precisely) are the real map. No invented rates;
+  // numbers carry a year + source or were cut.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "chess",
+    course: CHESS_COURSE,
     category: "Sports",
     navigationMode: "linear",
   });
