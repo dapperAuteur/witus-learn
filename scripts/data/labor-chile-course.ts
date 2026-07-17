@@ -337,5 +337,283 @@ That is what stood on 10 September 1973. Keep the shape of it in mind — centra
         ],
       },
     },
+
+    // ────────────── SECTION 2 · THE DESTRUCTION, 1973–1979 ──────────────
+    {
+      slug: "chile-coup-and-repression",
+      title: "3 · 11 September 1973: the movement is destroyed",
+      section: "Section 2 · The destruction, 1973–1979",
+      body: `On the morning of **11 September 1973**, the Chilean armed forces overthrew the elected government. Jets bombed the presidential palace; President Salvador Allende died in it; a four-man military junta under General **Augusto Pinochet** took power and held it for the next sixteen and a half years.
+
+What happened next to the labor movement was not a side effect of the coup. It was one of its objects.
+
+**The head was cut off within days.** By **Decree Law No. 12**, in September 1973, the junta cancelled the legal status of the **CUT** — the national union center you met in the last lesson, with its roughly 940,000 affiliated workers — outlawed it, and seized its assets (CUT, n.d.; Memoria Chilena, n.d.). Collective bargaining was suspended. Union elections were banned. Union meetings required permission and could be attended by police. Wages, which sectors like copper had negotiated, were now set by government decree. The labor relations system that had taken seventy years to build stopped existing in about two weeks — and for the next six years, Chile simply had **no functioning collective bargaining at all** (a vacuum that becomes important in the next lesson).
+
+**The people were next, and this must be said plainly.** Chile's National Commission on Truth and Reconciliation — the **Rettig Commission**, created after the return to democracy — and its successor body documented more than **3,000 people killed or disappeared** by agents of the dictatorship over its span (Comisión Nacional de Verdad y Reconciliación, 1991, and the follow-up Corporation's consolidated findings). Union officers, shop-floor delegates, and labor activists were heavily represented among the victims, especially in the first months: being a union leader in a mine, a factory, or a farm in late 1973 was, in itself, enough to put a person on a list. Two named cases stand for thousands. **Víctor Jara** — the singer-songwriter whose music was woven through the labor and student movements — was detained in the days after the coup, tortured, and killed in the Estadio Chile; Chilean courts convicted former officers for his murder decades later. And in **1982**, **Tucapel Jiménez**, president of the public employees' association **ANEF** and by then an open critic of the regime's labor policy, was murdered by state intelligence agents — a crime for which Chilean courts, again decades later, convicted the men responsible.
+
+Two disciplines for reading this lesson, because this is the most painful material in the course:
+
+- **These are findings, not allegations.** The numbers above come from Chile's own official truth commissions, created by Chile's own democracy, and the named cases ended in criminal convictions in Chilean courts. This is about as far from contested history as the twentieth century gets. Chileans dispute much about the Allende years and the dictatorship's economics; the fact of the killings is documented by the Chilean state itself.
+- **Do not let the numbers do the flattening.** The dictatorship's repression fell on the whole society, not only on unionists — and the labor movement was not merely a victim organization; it later became one of the first forces to organise open resistance (the copper miners' confederation called the first mass national protest against the regime in **May 1983**, which grew into the protest cycle of the mid-1980s). Both halves are true and this course will hold both.
+
+Here is the point to carry into the next lesson. **By 1978, Chile's old labor system had been physically and legally annihilated — but nothing had been built in its place.** A dictatorship that presented itself abroad as modernizing could not indefinitely run a labor market with no labor law. Something would have to be written. The only question was what, and by whom.
+
+:::reveal What happened to the CUT after the coup, and what do Chile's own truth commissions document about the human toll of the dictatorship? ||| The junta cancelled the CUT's legal status by Decree Law No. 12 (September 1973), outlawed it and seized its assets; collective bargaining was suspended and union elections banned. The Rettig Commission (1991) and its successor documented more than 3,000 people killed or disappeared by the dictatorship — with union officers and labor activists heavily represented, especially in the first months — findings of the Chilean state itself, not allegations.
+
+## Sources
+- Comisión Nacional de Verdad y Reconciliación. (1991). *Informe de la Comisión Nacional de Verdad y Reconciliación* [Rettig Report]. Gobierno de Chile. https://bibliotecadigital.indh.cl/handle/123456789/170
+- Memoria Chilena, Biblioteca Nacional de Chile. (n.d.). *Central Única de Trabajadores (CUT, 1953–1973)*. https://www.memoriachilena.gob.cl/602/w3-article-96204.html
+- Central Unitaria de Trabajadores de Chile. (n.d.). *La historia de la CUT*. https://cut.cl/web/la-historia-de-la-cut/
+- Museo de la Memoria y los Derechos Humanos. (n.d.). *Archivo: Central Unitaria de Trabajadores (CUT)*. https://www.archivommdh.cl/index.php/central-unitaria-de-trabajadores-cut`,
+      recallContent: [
+        {
+          prompt: "By what instrument and when was the CUT dissolved, and what else was shut down with it?",
+          answer:
+            "Decree Law No. 12, September 1973 — the junta cancelled the CUT's legal status, outlawed it, and seized its assets. Collective bargaining was suspended, union elections banned, meetings put under police supervision, and wages set by decree. Chile then had no functioning collective bargaining for six years.",
+        },
+        {
+          prompt: "Name the two documented cases the course uses to stand for the repression of labor figures, and why they are 'findings, not allegations.'",
+          answer:
+            "Víctor Jara, detained, tortured and killed in the Estadio Chile days after the coup; and Tucapel Jiménez, ANEF president, murdered by state intelligence agents in 1982. Both cases ended in criminal convictions in Chilean courts, and the overall toll (3,000+ killed or disappeared) is documented by Chile's own truth commissions.",
+        },
+      ],
+    },
+    {
+      slug: "chile-boycott-to-plan",
+      title: "4 · Six years of nothing — then a boycott forces a labor code",
+      section: "Section 2 · The destruction, 1973–1979",
+      body: `Between 1973 and 1979, Chilean workers lived in a legal vacuum: unions existed on paper but could not bargain, could not strike, could not hold elections. Why did the dictatorship write a labor code at all — and why in **1979**, six years in? The answer is one of the strangest details in this whole track: **the Plan Laboral exists, in significant part, because of a threatened boycott by foreign unions.**
+
+**The pressure.** Inside Chile, a group of union leaders who had survived the repression — known as the **Grupo de los Diez** ("Group of Ten") — kept pressing the regime over labor rights and reached out to the international labor movement. Abroad, the case built: the ILO's supervisory machinery was engaged, and by 1978 the **AFL-CIO** — the American union federation you know from the anchor course — together with international transport unions was preparing a **commercial boycott of Chilean goods**: longshoremen refusing to load or unload Chilean cargo, demanding an end to the violation of labor rights (Álvarez, 2012). For an export economy — copper, fruit, fishmeal — moving through foreign, heavily unionised ports, this was not a symbolic threat.
+
+**The response.** At the end of 1978, Pinochet appointed the young economist **José Piñera** Minister of Labor, with — as the scholarship on the episode puts it — the mission of stopping the boycott and building new labor institutions (Álvarez, 2012). Piñera moved fast. In mid-1979 the government issued the decree laws of the **Plan Laboral**; once the framework restoring legal union activity and collective bargaining was announced, **the AFL-CIO suspended the boycott**.
+
+Read that sequence carefully, because both of its halves matter and honest people emphasise different ones:
+
+- **Half one: international labor solidarity worked.** A dictatorship that had annihilated its labor movement was forced, by pressure from workers in *other countries*, to restore legal unions and legal bargaining. If the anchor course's ILO lesson left you bleak about international enforcement — here is a case where the informal kind, a boycott threat, moved a military government in months. File it next to the USMCA mechanism from the Mexico course as the track's rare good news about cross-border leverage.
+- **Half two: the regime turned compliance into architecture.** The junta did not concede the old system back. It used the moment to write a *new* one — a labor code that satisfied the formal demand ("unions and bargaining must be legal again") while deliberately engineering the result it wanted ("...and organised labor must never again be what it was in 1973"). The boycott forced *a* labor law into existence; the dictatorship decided *which* labor law.
+
+One more piece of context you need before Section 3, because it is part of the honest picture: **within the regime, the argument was not between the Plan Laboral and something more generous — it was between the Plan Laboral and nothing.** The junta contained hardliners who wanted no independent unions at all, indefinitely. Piñera's design, which legalised unions but atomised them, won that internal argument. Keep this in mind when you hear his defense steelmanned in Section 3: measured against 1973, the Plan was a cage; measured against 1976, it was a door — a door built by a regime that controlled exactly how far it would open.
+
+:::reveal Why did the Pinochet dictatorship, six years after destroying the labor movement, suddenly write a labor code in 1979? ||| Because international union pressure — Chile's Grupo de los Diez plus the AFL-CIO and transport unions preparing a boycott of Chilean exports in foreign ports — made the legal vacuum untenable for an export economy. Pinochet appointed José Piñera (late 1978) to stop the boycott and build new institutions; the Plan Laboral restored legal unions and bargaining, the AFL-CIO suspended the boycott — and the regime used the moment to write the rules to its own design.
+
+## Sources
+- Álvarez, R. (2012). El Plan Laboral y la negociación colectiva: ¿origen de un nuevo sindicalismo en Chile? 1979–1985. *Boletín del Instituto de Historia Argentina y Americana "Dr. Emilio Ravignani"*, (35/36). https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S0524-97672012000200004
+- Piñera, J. (1990). *La revolución laboral en Chile*. Zig-Zag. https://www.economiaysociedad.cl/
+- Memoria Chilena, Biblioteca Nacional de Chile. (n.d.). *Sindicalismo en Chile durante la dictadura militar*. https://www.memoriachilena.gob.cl/`,
+      recallContent: [
+        {
+          prompt: "What was the Grupo de los Diez, and what international pressure did the labor vacuum provoke by 1978?",
+          answer:
+            "A group of surviving Chilean union leaders who kept pressing the regime and reached out abroad. By 1978 the AFL-CIO and international transport unions were preparing a commercial boycott of Chilean exports — longshoremen refusing Chilean cargo — demanding an end to labor-rights violations. For an export economy, that threat had teeth.",
+        },
+        {
+          prompt: "State both halves of the boycott-to-Plan sequence that 'honest people emphasise differently.'",
+          answer:
+            "Half one: international solidarity worked — foreign union pressure forced a dictatorship to restore legal unions and bargaining within months. Half two: the regime turned compliance into architecture — it wrote a new code that met the formal demand while engineering organised labor's permanent weakness. The boycott forced A labor law; the dictatorship chose WHICH one.",
+        },
+      ],
+    },
+    {
+      slug: "chile-quiz-2",
+      title: "Section 2 quiz · The destruction, 1973–1979",
+      section: "Section 2 · The destruction, 1973–1979",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What happened on 11 September 1973 in Chile?",
+            options: [
+              "The Plan Laboral was announced",
+              "The armed forces overthrew the elected government; President Allende died in the bombed presidential palace; a junta under Pinochet took power",
+              "The CUT was founded",
+              "Chile joined the OECD",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The coup of 11 September 1973 began a dictatorship that lasted sixteen and a half years — and destroying the labor movement was one of its objects, not a side effect.",
+            sourceLessonSlug: "chile-coup-and-repression",
+          },
+          {
+            prompt: "By what instrument was the CUT dissolved?",
+            options: [
+              "A plebiscite",
+              "Decree Law No. 12 (September 1973), which cancelled its legal status, outlawed it, and seized its assets",
+              "The Plan Laboral of 1979",
+              "A ruling of the Supreme Court",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The junta dissolved the national union center within about two weeks of the coup and took its property.",
+            sourceLessonSlug: "chile-coup-and-repression",
+          },
+          {
+            prompt: "What was the state of collective bargaining in Chile from 1973 to 1979?",
+            options: [
+              "It continued normally at the firm level",
+              "It did not function at all — bargaining was suspended, union elections banned, and wages set by government decree",
+              "It moved to the sectoral level",
+              "It was administered by the ILO",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Six years of legal vacuum: unions existed on paper but could not bargain, strike, or elect leaders.",
+            sourceLessonSlug: "chile-coup-and-repression",
+          },
+          {
+            prompt: "What did Chile's Rettig Commission and its successor document?",
+            options: [
+              "That no one was killed under the dictatorship",
+              "More than 3,000 people killed or disappeared by agents of the dictatorship — findings of the Chilean state's own truth commissions",
+              "Only economic statistics",
+              "The results of the 1988 plebiscite",
+            ],
+            correctIndex: 1,
+            explanation:
+              "These are findings, not allegations — documented by commissions Chile's own democracy created, with union officers and labor activists heavily represented among the victims.",
+            sourceLessonSlug: "chile-coup-and-repression",
+          },
+          {
+            prompt: "Who was Tucapel Jiménez?",
+            options: [
+              "The author of the Plan Laboral",
+              "The president of the public employees' association ANEF, murdered by state intelligence agents in 1982 — a crime for which Chilean courts later convicted the perpetrators",
+              "The general who led the 1973 coup",
+              "Chile's first labor minister after 1990",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Jiménez, an open critic of the regime's labor policy, is one of the named, court-adjudicated cases the course uses to stand for thousands.",
+            sourceLessonSlug: "chile-coup-and-repression",
+          },
+          {
+            prompt: "Why does the course warn 'do not let the numbers do the flattening'?",
+            options: [
+              "Because the numbers are invented",
+              "Because repression fell on the whole society, and the labor movement was not merely a victim — copper miners called the first mass national protest against the regime in May 1983",
+              "Because statistics are always misleading",
+              "Because the union movement collaborated with the regime",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both halves are true: heavy victimisation, and early, brave resistance — the mid-1980s protest cycle began with a miners' call.",
+            sourceLessonSlug: "chile-coup-and-repression",
+          },
+          {
+            prompt: "What foreign pressure pushed the dictatorship toward writing a labor code in 1979?",
+            options: [
+              "A United Nations invasion",
+              "A threatened commercial boycott of Chilean exports by the AFL-CIO and international transport unions — longshoremen refusing Chilean cargo",
+              "An OECD membership requirement",
+              "Pressure from the Soviet Union",
+            ],
+            correctIndex: 1,
+            explanation:
+              "For an export economy moving copper and fruit through foreign unionised ports, the boycott threat was material, not symbolic.",
+            sourceLessonSlug: "chile-boycott-to-plan",
+          },
+          {
+            prompt: "What was the Grupo de los Diez?",
+            options: [
+              "The military junta's economic team",
+              "A group of surviving Chilean union leaders who kept pressing the regime on labor rights and connected with the international labor movement",
+              "Ten companies exempted from the labor code",
+              "The drafting committee of the 1980 Constitution",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Internal persistence plus international solidarity produced the pressure that forced a labor code into existence.",
+            sourceLessonSlug: "chile-boycott-to-plan",
+          },
+          {
+            prompt: "What was José Piñera's mission when appointed Minister of Labor at the end of 1978?",
+            options: [
+              "To restore the 1973 labor system",
+              "To stop the boycott and build new labor institutions — which became the 1979 Plan Laboral, after whose announcement the AFL-CIO suspended the boycott",
+              "To negotiate Chile's entry into the ILO",
+              "To dissolve the remaining unions permanently",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The scholarship on the episode is direct: stop the boycott, build new institutions. The Plan restored legal unionism — on the regime's terms.",
+            sourceLessonSlug: "chile-boycott-to-plan",
+          },
+          {
+            prompt: "What is 'half one' of the boycott story — the part that is genuinely good news?",
+            options: [
+              "The boycott failed completely",
+              "International labor solidarity worked: pressure from workers in other countries forced a dictatorship to restore legal unions and bargaining within months",
+              "The regime voluntarily liberalised",
+              "The ILO imposed sanctions",
+            ],
+            correctIndex: 1,
+            explanation:
+              "File it next to the USMCA mechanism (Mexico course) as the track's rare good news about cross-border leverage.",
+            sourceLessonSlug: "chile-boycott-to-plan",
+          },
+          {
+            prompt: "What is 'half two' — the catch?",
+            options: [
+              "The boycott was never real",
+              "The regime turned compliance into architecture: it wrote a NEW code that met the formal demand while deliberately engineering organised labor's weakness — the boycott forced A labor law; the dictatorship chose WHICH one",
+              "The AFL-CIO wrote the Plan Laboral",
+              "The old system was restored unchanged",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Satisfying 'unions must be legal again' while designing 'labor must never be what it was in 1973' is the Plan Laboral in one sentence.",
+            sourceLessonSlug: "chile-boycott-to-plan",
+          },
+          {
+            prompt: "Within the regime, what was the actual alternative to the Plan Laboral?",
+            options: [
+              "A Nordic-style sectoral system",
+              "Nothing — junta hardliners wanted no independent unions at all, indefinitely; Piñera's legalise-but-atomise design won that internal argument",
+              "Restoring the CUT",
+              "Joining a US-style NLRB system",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Measured against 1973 the Plan was a cage; measured against 1976 it was a door the regime controlled. Both framings are needed to read the steelman honestly.",
+            sourceLessonSlug: "chile-boycott-to-plan",
+          },
+          {
+            prompt: "Who was Víctor Jara?",
+            options: [
+              "A junta economist",
+              "The singer-songwriter of the labor and student movements, detained, tortured, and killed in the Estadio Chile days after the coup — with former officers convicted decades later",
+              "The leader of the Grupo de los Diez",
+              "The first president of the new CUT in 1988",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A named, court-adjudicated case that stands for the first months of repression.",
+            sourceLessonSlug: "chile-coup-and-repression",
+          },
+          {
+            prompt: "Why could the dictatorship not simply keep the labor-law vacuum forever?",
+            options: [
+              "The 1980 Constitution forbade it",
+              "It presented itself abroad as modernizing, ran an export economy exposed to foreign union action, and by 1978 faced a concrete boycott threat — a labor market with no labor law was untenable",
+              "The junta lost a plebiscite on the question",
+              "The ILO expelled Chile",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Exposure — reputational and commercial — is what converted six years of nothing into the 1979 design.",
+            sourceLessonSlug: "chile-boycott-to-plan",
+          },
+          {
+            prompt: "When the copper miners' confederation called the first mass national protest against the regime, what year was it?",
+            options: ["1974", "1983", "1990", "2006"],
+            correctIndex: 1,
+            explanation:
+              "May 1983 — the call that grew into the mid-1980s protest cycle, and proof the movement was an actor in the story, not only a victim.",
+            sourceLessonSlug: "chile-coup-and-repression",
+          },
+        ],
+      },
+    },
   ],
 };
