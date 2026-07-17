@@ -931,5 +931,325 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
         ],
       },
     },
+    // ────────────── SECTION 4 · THE PAPER AND THE REALITY ──────────────
+    {
+      slug: "sa-lra-1995",
+      title: "8 · The most worker-friendly law on paper: LRA 66 of 1995",
+      section: "Section 4 · After 1994 — the paper and the reality",
+      body: `What does a labour law look like when the people who write it have just won a liberation struggle led, in large part, by unions? South Africa is the world's cleanest answer, because that is literally what happened. The post-1994 labour framework was negotiated at **NEDLAC** — the National Economic Development and Labour Council, launched in **February 1995** — a statutory chamber where organised labour, organised business, government and community organisations negotiate social and economic legislation **before** it reaches parliament. The unions were not lobbying from the corridor. They were at the drafting table.
+
+**Start at the top: the Constitution.** Section 23 of the **Constitution of the Republic of South Africa, 1996** guarantees everyone the right to fair labour practices; every worker the right to form and join a union, to organise, and **to strike**. Constitutionalising the strike itself is rare anywhere on earth — the direct imprint of a movement whose only ballot, for decades, had been the strike.
+
+**Then the machine: the Labour Relations Act 66 of 1995**, in force November 1996, which replaced the apartheid framework wholesale. Its architecture answers each of the anchor's questions in the most worker-friendly register in this track:
+
+- **One law for everyone.** The racial definitions are gone; the Act covers nearly all employees, with *no* carve-out of farm or domestic workers — a deliberate refusal, by drafters who knew exactly what the anchor's NLRA lesson teaches, to repeat the American move.
+- **Organisational rights** for representative unions: access to the workplace, stop-order dues deduction, elected shop stewards with statutory standing — FOSATU's shop-floor design, written into national law.
+- **Bargaining councils** by sector, whose agreements can be extended to non-parties; and **protected strikes** — follow the procedure and you cannot be dismissed for striking.
+- **The CCMA** — the Commission for Conciliation, Mediation and Arbitration — a free, fast, informal tribunal for dismissal and rights disputes. It is used on a staggering scale: its annual reports in the 2020s record on the order of 150,000+ referrals a year (CCMA annual reports).
+
+Add the **Basic Conditions of Employment Act 75 of 1997** (hours, leave, notice) and the **Employment Equity Act 55 of 1998** (anti-discrimination and redress), and South Africa's paper framework became — and remains — one of the most progressive on earth. The ILO's core conventions were ratified (C87 and C98 in February 1996, as Lesson 2 noted). If the anchor course taught you to grade countries by their statutes, South Africa would sit at the top of this track's table.
+
+**But the anchor taught you the opposite habit — and so does the rest of this section.** A statute is a floor for the people standing inside the building. The next two lessons are about the people who are not: the roughly one in three with no job at all, and the workers whose employer, on paper, is not the company they work for. Read this lesson as the setup of a deliberate tension, not as a happy ending: **the gap between this law and the next two lessons is the post-1994 story.**
+
+:::reveal In what specific, structural way did the drafters of the LRA 66 of 1995 refuse to repeat the US Wagner Act's most consequential move — and why were they, of all drafters, positioned to know better? ||| The Wagner Act excluded agricultural and domestic workers — a facially neutral carve-out with racially targeted effects, as the anchor teaches. The LRA covers nearly all employees, farm and domestic workers included, with no such carve-out. Its drafters knew the trick intimately because South Africa's own 1924 Act had run the same move undisguised — defining African workers out of "employee" — and many of the drafters came from the union movement that exclusion had been aimed at.
+
+## Sources
+- Republic of South Africa. (1995). *Labour Relations Act 66 of 1995*. https://www.gov.za/documents/labour-relations-act
+- Republic of South Africa. (1996). *Constitution of the Republic of South Africa, 1996* (s 23). https://www.gov.za/documents/constitution-republic-south-africa-1996
+- Commission for Conciliation, Mediation and Arbitration. (n.d.). *Annual reports*. https://www.ccma.org.za/
+- National Economic Development and Labour Council. (n.d.). *About NEDLAC*. https://nedlac.org.za/`,
+      recallContent: [
+        {
+          prompt: "Name four worker-facing features of the LRA 66 of 1995.",
+          answer:
+            "(1) Coverage of nearly all employees — no farm/domestic carve-out; (2) organisational rights including statutory shop stewards; (3) sectoral bargaining councils with extension, plus protected strikes; (4) the CCMA, a free and informal disputes tribunal handling on the order of 150,000+ referrals a year (CCMA annual reports).",
+        },
+        {
+          prompt: "What is NEDLAC, and why does it matter for Question 3?",
+          answer:
+            "The National Economic Development and Labour Council (launched February 1995): a statutory chamber where labour, business, government and community negotiate legislation before parliament. It puts unions at the drafting table itself — the highest bargaining 'level' anywhere in this track.",
+        },
+      ],
+    },
+    {
+      slug: "sa-unemployment-outsiders",
+      title: "9 · The queue outside: unemployment, and the insider/outsider fight",
+      section: "Section 4 · After 1994 — the paper and the reality",
+      body: `Now the number that shadows everything the last lesson said. In the first quarter of 2025, South Africa's **official unemployment rate was 32.9%** — and on the **expanded definition**, which counts people who want work but have given up actively searching, **43.1%** (Statistics South Africa, Quarterly Labour Force Survey, Q1 2025). For young people aged 15–24 the official rate was around **62%** (same survey). These are not recession spikes; South Africa's unemployment has sat at crisis levels for decades and is regularly the highest official rate among the economies the World Bank and ILO track (mid-2020s). Date any unemployment figure you ever quote about South Africa — it moves quarterly — but it has not been *low* in living memory.
+
+**Sit with what a third means for this course.** Every mechanism Lesson 8 celebrated — the bargaining council, the protected strike, the CCMA — attaches to a person who **has a job**. Roughly one South African in three who wants work stands outside all of it. Under apartheid, the excluded were defined by race, in the statute. Under democracy, the largest excluded class is defined by **having no employment at all** — the queue outside the building the LRA built. That is Question 2's modern answer, and it is bleaker than any clause.
+
+**And it has produced South Africa's sharpest post-1994 argument — the insider/outsider critique.** This course steelmans both sides, because both are made seriously, and it adjudicates neither.
+
+**The critique**, pressed by many economists — including the international growth panel that advised the National Treasury in the late 2000s (Centre for International Development, Harvard, 2008) — runs: South Africa's bargaining system protects employed **insiders** at the expense of unemployed **outsiders**. Bargaining-council agreements negotiated by large firms and strong unions are **extended** to small firms that never sat at the table, raising their costs; strong dismissal protection makes hiring a risk; the whole apparatus, on this view, prices low-skilled outsiders out of their first job. On this reading, the LRA's very strengths help keep the queue outside long.
+
+**The unions' answer**, from COSATU's own submissions and congress documents, runs: mass unemployment predates the LRA and tracks causes no labour statute created — apartheid's deliberate destruction of Black education and its spatial planning that stranded workers far from work, capital-intensive industry, an economy still concentrated around the old mineral core. Wages at the bottom are too **low** to live on, not too high (Lesson 13's minimum-wage fight returns here); cutting protections would not conjure jobs, only cheapen the ones that exist — and the state's own experiments with wage subsidies and exemptions have not dented the queue. On this reading, blaming the LRA for unemployment mistakes the crime scene for the culprit.
+
+**What should a student of this track do with a fight like this?** Exactly what you did with contested figures: refuse the false comfort of picking a side by temperament. Notice instead what **both** sides concede: that the queue is real, that it is enormous, and that the constituency of the unemployed sits outside the bargaining system — and largely outside the federation whose alliance governs. Hold that last clause. It is the quiet structural fact under everything in Sections 5 and 6.
+
+:::reveal The insider/outsider critique and COSATU's rebuttal disagree about almost everything. What do both sides concede — and why does the course call that concession "the quiet structural fact" under Sections 5 and 6? ||| Both concede that mass unemployment is real and enormous (32.9% official, 43.1% expanded, Q1 2025, Stats SA) and that the unemployed stand outside the bargaining system — no bargaining council, protected strike or CCMA case attaches to a person without a job. It is the quiet structural fact because the federation inside the governing alliance speaks, by definition, for the employed; the largest excluded class in democratic South Africa is thus unrepresented in the very system built by its liberators — pressure that surfaces at Marikana and in the alliance's fractures.
+
+## Sources
+- Statistics South Africa. (2025). *Quarterly Labour Force Survey, Q1 2025* (P0211). https://www.statssa.gov.za/?page_id=1854&PPN=P0211
+- Centre for International Development, Harvard University. (2008). *Final recommendations of the international panel on ASGISA* (International Panel on Growth, advising the National Treasury of South Africa). https://www.hks.harvard.edu/centers/cid
+- Congress of South African Trade Unions. (n.d.). *Congress resolutions and policy submissions*. https://cosatu.org.za/`,
+      recallContent: [
+        {
+          prompt: "Give South Africa's unemployment figures with definitions, source and date.",
+          answer:
+            "Q1 2025, Stats SA Quarterly Labour Force Survey: 32.9% official (actively searching), 43.1% expanded (includes discouraged work-seekers), and roughly 62% official for ages 15–24. Always date these — they move quarterly — but they have not been low in living memory.",
+        },
+        {
+          prompt: "Summarise the insider/outsider critique and the unions' rebuttal in one sentence each.",
+          answer:
+            "Critique (e.g. the Harvard-led growth panel advising the Treasury, 2008): extended bargaining agreements and strong protections raise hiring costs and price unemployed outsiders out of work. Rebuttal (COSATU's own submissions): unemployment tracks apartheid's education and spatial legacies and the economy's structure, not the LRA — bottom wages are too low to live on, and cheapening jobs would not create them.",
+        },
+      ],
+    },
+    {
+      slug: "sa-labour-broking",
+      title: "10 · Labour broking: the outside-the-category move returns",
+      section: "Section 4 · After 1994 — the paper and the reality",
+      body: `By now you can smell this track's signature move from a page away. The United States does it with **misclassification** — call the worker an "independent contractor" and the NLRA no longer sees her. Mexico did it with the **protection contract** — a union that belongs to the employer. Poland does it with the **junk contract** — a civil-law form that is not "employment." Here is South Africa's version, and the rhyme is exact: **labour broking**.
+
+**The mechanics.** The LRA's own **section 198** recognises the **"temporary employment service"** (TES) — the labour broker. A broker supplies workers to a client company; the workers do the client's work, on the client's premises, under the client's supervision — but in law, **the broker, not the client, is the employer**. Feel what that single designation moves:
+
+- The client's **bargaining council agreement**, its union recognition, its negotiated wages? They attach to the client's *employees* — and on paper, you are not one.
+- Dismissal protection? The client does not have to dismiss you; it just **ends the assignment** and the broker "has nothing for you this week."
+- Strike at the client? Your employer — the broker — is a company you may never have seen, with no power over the workplace that actually controls your life.
+
+The same building the LRA built, with a side door that lets the work in while leaving the worker outside. **How many workers?** Here the course does what it did for Durban's crowds and the 1987 strike: refuses to invent a number. Industry and union estimates in the early 2010s ranged from several hundred thousand to around a million placed workers, and the count was itself a weapon in the political fight — the biggest private estimates came from the industry's own consultants (contested figures, presented as contested).
+
+**The fight.** COSATU campaigned from the late 2000s for the **total banning** of labour broking, describing it in its own campaign language as a modern form of slavery — that is the federation's characterisation, quoted here as its position, not adopted as this course's. Business and the broking industry defended the TES model as flexibility that creates entry-level jobs. The compromise arrived as the **Labour Relations Amendment Act 6 of 2014**: its new **section 198A** provides that a placed worker earning **below a statutory earnings threshold** who works for a client for more than **three months** is **deemed to be the employee of the client**. Not a ban — a time-and-income fuse on the side door.
+
+**Then the courts closed a loophole in the fuse.** Employers argued the deeming created a *dual* employment — broker and client both — leaving brokers usefully in the chain. In ***Assign Services (Pty) Ltd v NUMSA*** [2018] ZACC 22 (26 July 2018), the **Constitutional Court** held that after three months the client is the **sole** employer for LRA purposes. Note who took that case to the top court and won: **NUMSA** — the union you are about to watch be expelled from COSATU in Section 6. Outside-the-category workers were being defended most aggressively by the federation's most rebellious affiliate; that is not a coincidence, and Section 6 explains why.
+
+**The honest limits, dated.** The deeming applies only *below* the earnings threshold and only *after* three months; enforcement runs worker by worker through the CCMA; broking persists above the threshold, inside the three-month window, and wherever workers do not know or cannot afford to claim their rights (status as of the mid-2020s). The side door is narrower than it was in 2010. It is not closed.
+
+:::reveal Name the track's four-country rhyme that this lesson completes, and state what single legal designation does the work in the South African version. ||| The rhyme: US misclassification ("independent contractor"), Mexico's protection contract (the employer's own union), Poland's junk contracts (civil-law forms outside the Labour Code), and South Africa's labour broking. In the SA version the work is done by LRA s 198's designation of the temporary employment service — the broker — as the employer: the worker does the client's work on the client's premises, but the client's agreements, wages and dismissal protections attach to "employees," which on paper she is not. The 2014 s 198A deeming (below-threshold, 3 months) and Assign Services (ZACC, 2018, sole-employer) narrowed the door without closing it.
+
+## Sources
+- Republic of South Africa. (2014). *Labour Relations Amendment Act 6 of 2014* (s 198A). https://www.gov.za/documents/labour-relations-amendment-act
+- Constitutional Court of South Africa. (2018). *Assign Services (Pty) Ltd v National Union of Metalworkers of South Africa and Others* [2018] ZACC 22. https://www.saflii.org/za/cases/ZACC/2018/22.html
+- Congress of South African Trade Unions. (n.d.). *Campaign statements on labour broking*. https://cosatu.org.za/`,
+      recallContent: [
+        {
+          prompt: "How does labour broking move a worker outside the LRA's protections?",
+          answer:
+            "Under LRA s 198 the temporary employment service (broker) is the employer, not the client whose work the worker actually does — so the client's bargaining agreements, wages and dismissal protections don't attach; the client can simply end the assignment. Same room, different door: the track's outside-the-category move.",
+        },
+        {
+          prompt: "What did the 2014 amendment and the 2018 Assign Services judgment each do?",
+          answer:
+            "The Labour Relations Amendment Act 6 of 2014 (s 198A) deems a below-threshold placed worker the client's employee after three months. Assign Services v NUMSA [2018] ZACC 22 held the client becomes the SOLE employer — closing the 'dual employer' loophole. NUMSA, the federation's most rebellious affiliate, litigated it to the top court.",
+        },
+      ],
+    },
+    {
+      slug: "sa-quiz-4",
+      title: "Section 4 quiz · The paper and the reality",
+      section: "Section 4 · After 1994 — the paper and the reality",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is NEDLAC?",
+            options: [
+              "A mining safety regulator",
+              "A statutory council where labour, business, government and community negotiate social and economic legislation before it reaches parliament",
+              "South Africa's largest labour broker",
+              "The ANC's economics committee",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Launched February 1995 — the unions at the drafting table itself, the highest bargaining 'level' in this track.",
+            sourceLessonSlug: "sa-lra-1995",
+          },
+          {
+            prompt: "What is constitutionally unusual about section 23 of South Africa's 1996 Constitution?",
+            options: [
+              "It sets a numerical minimum wage",
+              "It entrenches the right to strike itself — rare among the world's constitutions",
+              "It bans trade unions in essential services",
+              "It requires arbitration of all disputes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The imprint of a movement whose only ballot, for decades, was the strike.",
+            sourceLessonSlug: "sa-lra-1995",
+          },
+          {
+            prompt: "How did the LRA 66 of 1995 answer the US Wagner Act's farm/domestic carve-out?",
+            options: [
+              "It copied the carve-out",
+              "It refused the move: nearly all employees are covered, farm and domestic workers included — drafters who had lived the 1924 exclusion did not repeat it",
+              "It excluded mineworkers instead",
+              "It left coverage to the provinces",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The anchor's NLRA lesson, answered deliberately by people the exclusion move had been aimed at.",
+            sourceLessonSlug: "sa-lra-1995",
+          },
+          {
+            prompt: "What is the CCMA?",
+            options: [
+              "A commission that licenses mines",
+              "The Commission for Conciliation, Mediation and Arbitration — a free, fast disputes tribunal handling on the order of 150,000+ referrals a year (its annual reports)",
+              "COSATU's internal court",
+              "A wage-setting board for agriculture",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The LRA's everyday machine — used on a staggering scale.",
+            sourceLessonSlug: "sa-lra-1995",
+          },
+          {
+            prompt: "What were South Africa's unemployment rates in Q1 2025 (Stats SA QLFS)?",
+            options: [
+              "32.9% official; 43.1% expanded; roughly 62% official for ages 15–24",
+              "12% official; 15% expanded",
+              "50% official; 70% expanded",
+              "8% official; 10% expanded",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Dated figures from the Quarterly Labour Force Survey — they move quarterly, but have not been low in living memory.",
+            sourceLessonSlug: "sa-unemployment-outsiders",
+          },
+          {
+            prompt: "What does the 'expanded' unemployment definition add to the official one?",
+            options: [
+              "Part-time workers",
+              "People who want work but have given up actively searching (discouraged work-seekers)",
+              "Students and pensioners",
+              "Informal traders",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Official = actively searching (32.9%, Q1 2025); expanded adds the discouraged (43.1%). Knowing which definition a number uses is part of quoting it honestly.",
+            sourceLessonSlug: "sa-unemployment-outsiders",
+          },
+          {
+            prompt: "Why does mass unemployment shadow every protection in the LRA?",
+            options: [
+              "Because the LRA expires in a recession",
+              "Because every LRA mechanism — council, protected strike, CCMA — attaches to a person who has a job; roughly one in three who wants work stands outside all of it",
+              "Because unemployed people cannot vote",
+              "Because the CCMA charges fees",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Question 2's modern answer: the largest excluded class is defined by having no employment at all.",
+            sourceLessonSlug: "sa-unemployment-outsiders",
+          },
+          {
+            prompt: "State the insider/outsider critique fairly.",
+            options: [
+              "Unions cause inflation by striking",
+              "Extended bargaining agreements and strong protections raise costs for firms that never sat at the table and make hiring risky — protecting employed insiders while pricing unemployed outsiders out of a first job",
+              "The unemployed are insufficiently educated to deserve jobs",
+              "The LRA is unconstitutional",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Pressed seriously, e.g. by the Harvard-led growth panel advising the Treasury (2008). The course steelmans it — and its rebuttal — without picking a side.",
+            sourceLessonSlug: "sa-unemployment-outsiders",
+          },
+          {
+            prompt: "State COSATU's rebuttal to the insider/outsider critique fairly.",
+            options: [
+              "Unemployment statistics are fabricated",
+              "Unemployment tracks apartheid's education and spatial legacies and the economy's structure, not the LRA; bottom wages are too low to live on, and cheapening jobs would not create them",
+              "The unemployed should join unions to get jobs",
+              "Only foreign competition matters",
+            ],
+            correctIndex: 1,
+            explanation:
+              "From the federation's own submissions and congress documents — blaming the LRA, on this view, mistakes the crime scene for the culprit.",
+            sourceLessonSlug: "sa-unemployment-outsiders",
+          },
+          {
+            prompt: "What do both sides of the insider/outsider fight concede?",
+            options: [
+              "That the LRA should be repealed",
+              "That the queue is real and enormous, and that the unemployed stand outside the bargaining system — and largely outside the federation whose alliance governs",
+              "That unemployment is falling fast",
+              "That bargaining councils set perfect wages",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The quiet structural fact under Sections 5 and 6: the system's largest excluded class is unrepresented within it.",
+            sourceLessonSlug: "sa-unemployment-outsiders",
+          },
+          {
+            prompt: "Under LRA s 198, who is a placed worker's employer on paper?",
+            options: [
+              "The client company whose work she does",
+              "The temporary employment service — the labour broker — not the client",
+              "The bargaining council",
+              "The Department of Labour",
+            ],
+            correctIndex: 1,
+            explanation:
+              "That single designation moves the worker outside the client's agreements, wages and dismissal protections — the track's rhyming move, South African verse.",
+            sourceLessonSlug: "sa-labour-broking",
+          },
+          {
+            prompt: "Which four devices make up the track's outside-the-category rhyme?",
+            options: [
+              "US misclassification, Mexico's protection contract, Poland's junk contract, South Africa's labour broking",
+              "Germany's works council, Sweden's Ghent fund, Poland's MKS, COSATU's stayaway",
+              "The NLRA, the LRA, the CLT, the Labour Code",
+              "Strikes, boycotts, stayaways, go-slows",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Different doors, same room: a legal form that moves the worker outside the category the protections attach to.",
+            sourceLessonSlug: "sa-labour-broking",
+          },
+          {
+            prompt: "What did section 198A (Labour Relations Amendment Act 6 of 2014) provide?",
+            options: [
+              "A total ban on labour broking",
+              "That a placed worker earning below a statutory threshold who works for a client more than three months is deemed the client's employee",
+              "That brokers must pay double wages",
+              "That broking is limited to mining",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not the ban COSATU campaigned for — a time-and-income fuse on the side door. The honest limits: threshold, three-month window, worker-by-worker enforcement.",
+            sourceLessonSlug: "sa-labour-broking",
+          },
+          {
+            prompt: "What did the Constitutional Court hold in Assign Services v NUMSA (2018)?",
+            options: [
+              "That labour broking is unconstitutional",
+              "That after three months the client is the SOLE employer of a deemed worker — not a dual employer alongside the broker",
+              "That the CCMA lacks jurisdiction over brokers",
+              "That the earnings threshold is invalid",
+            ],
+            correctIndex: 1,
+            explanation:
+              "[2018] ZACC 22 (26 July 2018) — the loophole of 'dual employment' closed. NUMSA litigated it to the top court.",
+            sourceLessonSlug: "sa-labour-broking",
+          },
+          {
+            prompt: "How does the course handle the question 'how many workers are placed by labour brokers?'",
+            options: [
+              "It gives an exact count of 1,032,000",
+              "It refuses to invent a number: early-2010s estimates ranged from several hundred thousand to around a million, the count was itself a weapon in the political fight, and the biggest estimates came from the industry's own consultants",
+              "It says the number is zero since 2018",
+              "It cites the CCMA's official census",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Contested figures presented as contested, with the range and the motivated sources named — the track's standing rule.",
+            sourceLessonSlug: "sa-labour-broking",
+          },
+        ],
+      },
+    },
   ],
 };
