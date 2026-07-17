@@ -1190,6 +1190,28 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   home framework; U.S. History Since 1929 starts too late for the Gilded Age labor units. **No
   migration, no seed.**
 
+- 🔧 **New York + Pennsylvania mapped — states #6 and #7** (\`feat/standards-ny-pa\`) —
+  \`/standards?state=NY\` and \`?state=PA\` now render real pages: two new data files +
+  \`pnpm gen:standards\`, zero code change. Every document fetched **directly from the DOEs** (no
+  Wayback — nysed.gov and pdesas.org both served us). **New York: 43 standards (16 full, 27 partial)
+  across 7 frameworks** — the K-12 Social Studies Framework mapped as five grade-level courses (Global
+  History I & II, U.S. History & Government, Participation in Government, Economics), NY's own **Next
+  Generation Literacy Standards** (RH/WHST, revised 2017), and **NGSS** (adopted as NYSSLS).
+  **Pennsylvania: 29 standards (8 full, 21 partial) across 5 frameworks** — the June 2009 Academic
+  Standards for Civics & Government,
+  Economics, Geography, and History, plus **PA Core** literacy (8.5/8.6). The **inherit-vs-bespoke
+  call was the whole job, made per framework and documented in each file header:** NY ELA is
+  **bespoke** (NY renumbered RH.11-12.6→RH6 and revised it — dropped "differing" — so aliasing the
+  shared Common Core file would misrepresent it); NY science **inherits NGSS** (HS-ESS3-1 verbatim);
+  PA ELA is **bespoke** even though PA Core 8.5/8.6 is *verbatim* Common Core (PA kept "differing"),
+  because PA renamed every code and the shared file bundles an RI standard PA revised; PA has **no
+  NGSS** (STEELS is its own), so PA science is unclaimed and the climate/resource content maps to PA
+  Geography instead. Rejections published per state (NY: the Opium Wars and Haitian Revolution — NY's
+  framework names neither; PA: science, and the flagship's uncoded structure). PA's civics standards
+  **name the Pennsylvania Constitution** (5.1.12.D/E), giving that flagship a better home than CA/NY.
+  \`state-civics-ny\`/\`state-civics-pa\` flagship claims added to \`claims.ts\`. Gates green
+  (tsc/lint/test/build all 0). **No migration, no seed.** Next up flagged: **Texas, Florida.**
+
 ## Operator
 - 🟡 Merge open branches → \`db:migrate:prod\` → \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\`
   → regen embeddings. Set \`PLATFORM_OWNER_EMAIL=bam@awews.com\`.
