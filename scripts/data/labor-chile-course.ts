@@ -615,5 +615,336 @@ One more piece of context you need before Section 3, because it is part of the h
         ],
       },
     },
+
+    // ────────────── SECTION 3 · THE PLAN LABORAL, 1979 ──────────────
+    {
+      slug: "chile-plan-laboral-architecture",
+      title: "5 · The architecture: DL 2756 and DL 2758",
+      section: "Section 3 · The Plan Laboral, 1979",
+      body: `Now read the blueprint. The **Plan Laboral** arrived as a package of **eight decree laws** — one in 1978 and seven in July 1979 (Álvarez, 2012). Two of them carry the architecture, and they are worth knowing by number, the way an American student knows "Wagner" and "Taft-Hartley":
+
+- **Decree Law 2756 (1979)** — union organisations: who may form a union, of what kind, funded how.
+- **Decree Law 2758 (1979)** — collective bargaining: who bargains with whom, over what, and what a strike is allowed to be.
+
+(The 1978 piece, **Decree Law 2200**, had already rewritten *individual* employment law — contracts and dismissal — in the direction of flexibility. Keep your eye on the two 1979 laws; they are the collective architecture.)
+
+**Design move 1: bargaining is locked to the single firm.** Under DL 2758, collective bargaining happens between **one employer** and a union **within that firm**. Industry-wide bargaining — copper as a sector, construction as a sector, the kind of bargaining that built the pre-1973 movement and that runs the Nordic model — was simply **not part of the legal machinery**: federations and confederations of unions were barred from bargaining on behalf of their members (Álvarez, 2012). Remember the anchor's Question 3 — *who bargains with whom, at what level?* The Plan Laboral answers it with a wall: at the firm. Only at the firm.
+
+**Design move 2: pluralism as fragmentation.** DL 2756 permitted — this will sound generous until you think about it — **multiple competing unions inside a single firm**, with voluntary membership and funding only from voluntary dues. The same firm could face several unions, each bargaining separately, potentially producing **as many negotiations as there were unions in one workplace** (Álvarez, 2012). Where the Wagner Act model channels workers into one exclusive bargaining agent, and the Nordic model concentrates them into strong sector federations, the Chilean design *multiplies* worker organisations while *dividing* what each can do. More unions, less union.
+
+**Design move 3: the non-union competitor.** DL 2758 also allowed **"negotiating groups"** (*grupos negociadores*) — ad hoc groups of workers, not unions at all — to bargain collectively with the employer. So even inside the firm, the union has a competitor the employer may prefer to deal with. Hold this one in your mind: it will still be alive in 2016, when a reform tries to kill it and Chile's Constitutional Court keeps it breathing (Section 4).
+
+**Design move 4: desynchronisation.** Bargaining timing was staggered firm by firm, so that negotiations across an industry never came due together (Álvarez, 2012). No common expiry, no common fight — a design detail that quietly forecloses even *informal* sectoral coordination.
+
+Step back and look at the whole. The scholarship summarises the Plan's declared pillars as: **bargaining at the firm level; strikes that do not paralyse; union "freedom" (pluralism); and union depoliticisation** (Álvarez, 2012). Every one of those pillars is the negation of a property the 1973 movement had. Centralised? Now atomised. Sectoral? Now firm-locked. Political? Now confined to "matters within the firm." That is what it means to say this system was *designed*: the correspondence is not a coincidence you infer — it is a specification you can read.
+
+One fairness note before the strike lesson. **None of these moves reads as shocking to an American.** The United States also bargains firm by firm (mostly), also lacks sectoral bargaining, and also permits striker replacement (anchor course, PATCO lesson). Part of what the Plan Laboral did was import familiar decentralised, adversarial machinery. The difference — and Section 6 turns this into the course's final argument — is *provenance and purpose*: in Chile the machinery was chosen, all at once, by a dictatorship that had just physically destroyed the alternative, with the stated aim of preventing its return. Same furniture; very different architect.
+
+:::reveal Name the four design moves of the Plan Laboral's collective architecture (DL 2756 / DL 2758). ||| (1) Bargaining locked to the single firm — federations and confederations barred from bargaining, no sectoral level; (2) pluralism as fragmentation — multiple competing unions allowed inside one firm, voluntary dues, many parallel negotiations; (3) the non-union competitor — ad hoc "negotiating groups" allowed to bargain instead of unions; (4) desynchronisation — staggered bargaining timing so an industry's negotiations never come due together.
+
+## Sources
+- Álvarez, R. (2012). El Plan Laboral y la negociación colectiva: ¿origen de un nuevo sindicalismo en Chile? 1979–1985. *Boletín del Instituto de Historia Argentina y Americana "Dr. Emilio Ravignani"*, (35/36). https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S0524-97672012000200004
+- Biblioteca del Congreso Nacional de Chile. (1979). *Decreto Ley 2758: Establece normas sobre negociación colectiva*. LeyChile. https://www.bcn.cl/leychile/navegar?idNorma=6993
+- International Labour Organization. (n.d.). *Chile — Decreto-ley núm. 2758 por el que se establecen normas sobre negociación colectiva* (NATLEX). https://www.ilo.org/dyn/natlex/natlex4.detail?p_isn=12535`,
+      recallContent: [
+        {
+          prompt: "Which two decree laws carry the Plan Laboral's collective architecture, and what does each govern?",
+          answer:
+            "DL 2756 (1979) governs union organisations — union types, voluntary membership, multiple unions per firm, voluntary dues. DL 2758 (1979) governs collective bargaining — firm-level only, federations barred from bargaining, negotiating groups permitted, and the strike rules. (DL 2200 of 1978 had already flexibilised individual contracts.)",
+        },
+        {
+          prompt: "Why does the course call the Plan's union pluralism 'fragmentation' rather than freedom?",
+          answer:
+            "Because permitting multiple competing unions inside one firm — each bargaining separately, funded only by voluntary dues, with non-union negotiating groups as competitors — multiplies worker organisations while dividing their power: as many parallel negotiations as unions in a workplace. More unions, less union.",
+        },
+      ],
+    },
+    {
+      slug: "chile-strike-that-cannot-win",
+      title: "6 · The strike that must not paralyse",
+      section: "Section 3 · The Plan Laboral, 1979",
+      body: `The anchor's Question 4 — *what happens to you if you try?* — gets the Plan Laboral's most explicit engineering. The designers said it themselves, as a pillar: strikes should be legal, and strikes should **not paralyse** (Álvarez, 2012). Here is how DL 2758 built a strike that cannot win.
+
+**Move 1: the struck firm keeps running.** DL 2758 expressly allowed the employer to **hire replacement workers during a strike** (Álvarez, 2012). A strike whose work is being done by someone else is a demonstration, not a stoppage. The economic clock that a strike is supposed to start — every day costs the employer output — barely ticks.
+
+**Move 2: the strikers' clock, by contrast, ticks loudly.** Strike days were unpaid (standard almost everywhere, but combined with replacement it becomes decisive), and the employer could respond with a **lockout** — a temporary closure turning the pressure back on the workforce (Álvarez, 2012).
+
+**Move 3: the sixty-day trapdoor.** Under the original DL 2758, a strike had a legal time limit with a penalty attached that students usually refuse to believe until they see it sourced: **after 59 days on strike, a worker was deemed to have voluntarily resigned** (Álvarez, 2012). Read that again. Not "fired" — *resigned*, as a matter of law, with everything that classification implies. A strike was a fuse that burned toward the strikers.
+
+Put the three together and run the game out in your head. You strike; the firm hires replacements and production continues; you earn nothing; the firm may lock you out; and at day 59 the law converts your persistence into your resignation. **The rational move is almost never to strike — which was the design.** The strike is not banned (banning it was what the boycott was about); it is *permitted and defeated in advance*. This is a theme you have seen throughout the track: the sophisticated modern way to remove a right is not to prohibit it, but to keep it formally available while engineering its failure.
+
+**Now the American mirror, because you should feel this one land close to home.** The anchor course taught you *NLRB v. Mackay Radio* (1938): permanently replacing economic strikers has been lawful in the United States for most of a century, and after PATCO (1981) employers actually used it. So striker replacement is not some exotic dictatorship invention — **the world's oldest continuous democracy runs a version of the same rule.** What Chile shows you is the same mechanism with its intent printed on the label. In the US, replacement law *accreted* — a Supreme Court aside, decades of dormancy, a norm shift. In Chile, replacement was *drawn* — one clause in a coherent design whose author stated the goal: strikes that do not paralyse. Mechanically similar; forensically, night and day. And that is precisely why this course keeps insisting on provenance: **when you find a rule like this in any country's law — including yours — the question is not just "what does it do?" but "who put it there, and what did they want?"**
+
+*(Where did the rules go from here? The 59-day trapdoor did not survive democracy — and striker replacement itself was finally banned by Ley 20.940, in force April 2017, nearly forty years after it was drawn. Section 4 tells that story, including how much of the surrounding architecture the ban left standing.)*
+
+:::reveal How did DL 2758 engineer 'a strike that does not paralyse' — three moves? ||| (1) Employers could hire replacement workers during the strike, so production continued; (2) strike days were unpaid and the employer could answer with a lockout, so the cost fell on the strikers; (3) after 59 days on strike a worker was deemed by law to have voluntarily resigned. The strike stayed legal — and was defeated in advance by design.
+
+## Sources
+- Álvarez, R. (2012). El Plan Laboral y la negociación colectiva: ¿origen de un nuevo sindicalismo en Chile? 1979–1985. *Boletín del Instituto de Historia Argentina y Americana "Dr. Emilio Ravignani"*, (35/36). https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S0524-97672012000200004
+- Biblioteca del Congreso Nacional de Chile. (1979). *Decreto Ley 2758: Establece normas sobre negociación colectiva*. LeyChile. https://www.bcn.cl/leychile/navegar?idNorma=6993
+- NLRB v. Mackay Radio & Telegraph Co., 304 U.S. 333 (1938). Library of Congress. https://www.loc.gov/item/usrep304333/`,
+      recallContent: [
+        {
+          prompt: "What was the '59-day trapdoor' in the original DL 2758?",
+          answer:
+            "A strike's legal time limit with a penalty: after 59 days on strike, a worker was deemed by law to have VOLUNTARILY RESIGNED — not fired, resigned. Combined with legal replacement and possible lockout, the fuse burned toward the strikers.",
+        },
+        {
+          prompt: "How does Chile's 1979 replacement rule compare with US law, and why does the course say the difference is 'provenance'?",
+          answer:
+            "Mechanically they rhyme: NLRB v. Mackay Radio (1938) made permanent replacement of economic strikers lawful in the US, and post-PATCO employers used it. But the US rule accreted through doctrine and norm shifts; Chile's was drawn deliberately, one clause in a coherent design whose author stated the goal — strikes that do not paralyse. Same furniture, different architect — so always ask who put the rule there and why.",
+        },
+      ],
+    },
+    {
+      slug: "chile-steelman",
+      title: "7 · The designers' case, steelmanned — then measured",
+      section: "Section 3 · The Plan Laboral, 1979",
+      body: `This course promised you the defense before the verdict. Here it is, in its strongest honest form — most of it in the designer's own words, all of it in his own published terms.
+
+**José Piñera's own summary** of what the Plan Laboral achieved, from his own writing (translated from his site and his 1990 book *La revolución laboral en Chile*): it *"restored union freedom and democracy in Chile, introduced firm-level collective bargaining, depoliticised the union world, achieved social peace in the private sector, and established the conditions for reaching full employment."* Unpack that into the four claims a fair opponent must actually answer:
+
+1. **"It legalised, when the alternative was nothing."** Recall Section 2: inside the junta, the live alternative to the Plan was indefinite prohibition. Piñera's design restored legal unions, legal bargaining, and even a legal (if hobbled) strike, over hardliner objection, in a dictatorship. Judged against 1976 rather than 1973, every one of those was a real, non-trivial restoration.
+2. **"Firm-level bargaining is economics, not oppression."** The serious version of this argument: wages negotiated at the firm track what *that firm* can actually pay. Sectoral deals, defenders argue, impose the strongest firms' wages on the weakest, pricing marginal firms — and their workers — out of existence; firm-level deals let a struggling firm and its workers make their own bargain. (You have met the respectable cousin of this argument: it is why even the Nordic model lets exporters set the wage norm first.) On this view, decentralised bargaining is not anti-worker — it is anti-unemployment.
+3. **"Depoliticisation protects workers too."** Pre-1973 Chilean unionism was profoundly entangled with political parties, up to and including a national crisis that ended in catastrophe for everyone — most of all for workers. A union confined to workplace economics, the argument runs, cannot be weaponised by any party, and its members cannot be purged when the political wind reverses.
+4. **"It worked — look at the economy."** Defenders point at the arc after the mid-1980s: strong growth, falling unemployment, and one of Latin America's great poverty declines, and argue a flexible labor market was part of the machine that produced it.
+
+That is a real case. It is made by serious people, it contains true statements, and you should be able to repeat it fairly before you answer it. Now measure it.
+
+**Against claim 1:** true as far as it goes — and it goes exactly as far as the regime wanted. "Better than nothing" is a fact about the *junta's menu*, not about the design's fairness. The workers whose system this became never voted on it; no Chilean did, until the dictatorship ended.
+
+**Against claim 2:** firm-level bargaining *as a choice available to workers* is one thing — as a **legal ceiling workers may not bargain past**, it is another. The Nordic exporters set the norm first because their unions *chose* that discipline and can revisit it; Chilean workers were *forbidden* the sectoral level outright. And the promised firm-level vitality did not arrive: the OECD's 2025 review describes Chilean bargaining as **atomised, fragmented, and uncoordinated**, with **coverage of 19.3% (2023)** — among the lowest in the OECD (average ~33.5%, 2023/24). Four and a half decades is a long time to wait for a design to start delivering its advertised benefits to the people it governs.
+
+**Against claim 3:** the depoliticisation was **asymmetric**. Unions were confined to the firm; employers and their associations remained free to organise nationally, fund politics, and shape legislation — and did. A rule that depoliticises one side of a power relationship does not produce apolitical outcomes; it produces the other side's politics.
+
+**Against claim 4:** "social peace in the private sector," achieved 1979–1990, was peace under a dictatorship that had recently killed union leaders — suppression reads as peace in any ledger. And the growth argument faces an attribution problem its defenders rarely engage: Chile's post-1985 boom followed massive reforms across the whole economy plus a copper cycle; isolating the labor code's contribution is somewhere between hard and impossible, and the code's *measurable* legacy — density 16%, coverage 19.3% (2023, OECD/AIAS) — is not a labor market working well for labor.
+
+**The honest bottom line** — and notice it is not a symmetric shrug: the Plan Laboral was a genuine legalisation, built with genuine economic reasoning, *and* it did exactly what its structure was shaped to do — atomise worker power — because that is what its author, in a position to specify outcomes, specified. The defense explains why the design was arguable. The record shows what it produced. You are allowed to hold both.
+
+:::reveal State the strongest version of the Plan Laboral's defense in one breath — and the single strongest reply. ||| Defense: it legalised unions when the junta's alternative was nothing; firm-level bargaining ties wages to what each firm can pay (protecting employment); depoliticised unions can't be weaponised or purged; and Chile's later growth vindicates flexibility. Reply: every plank describes a CHOICE imposed by a dictatorship as if workers had made it — firm-level as a forbidden ceiling rather than an option, asymmetric depoliticisation, peace that was suppression — and the measurable outcome (16% density, 19.3% coverage, 2023 OECD/AIAS; bargaining the OECD calls atomised) is precisely the weakness the structure was shaped to produce.
+
+## Sources
+- Piñera, J. (1990). *La revolución laboral en Chile*. Zig-Zag. https://www.economiaysociedad.cl/
+- OECD. (2025). *Enhancing sectoral collective bargaining in Chile* (OECD Reviews of Labour Market and Social Policies). OECD Publishing. https://www.oecd.org/en/publications/enhancing-sectoral-collective-bargaining-in-chile_454f4167-en/
+- Álvarez, R. (2012). El Plan Laboral y la negociación colectiva: ¿origen de un nuevo sindicalismo en Chile? 1979–1985. *Boletín del Instituto de Historia Argentina y Americana "Dr. Emilio Ravignani"*, (35/36). https://www.scielo.org.ar/scielo.php?script=sci_arttext&pid=S0524-97672012000200004`,
+      recallContent: [
+        {
+          prompt: "List the four claims of the steelmanned defense of the Plan Laboral.",
+          answer:
+            "(1) It legalised unions when the junta's real alternative was nothing; (2) firm-level bargaining ties wages to firm productivity and protects employment at marginal firms; (3) depoliticised unions protect workers from being weaponised or purged by parties; (4) Chile's post-1985 growth and poverty decline vindicate labor flexibility.",
+        },
+        {
+          prompt: "What is the asymmetry problem with the 'depoliticisation' claim?",
+          answer:
+            "Only one side was depoliticised: unions were confined to firm-level economics while employers and their associations remained free to organise nationally, fund politics, and shape legislation. Depoliticising one side of a power relationship doesn't remove politics — it hands the politics to the other side.",
+        },
+      ],
+    },
+    {
+      slug: "chile-quiz-3",
+      title: "Section 3 quiz · The Plan Laboral, 1979",
+      section: "Section 3 · The Plan Laboral, 1979",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Which two 1979 decree laws carry the Plan Laboral's collective architecture?",
+            options: [
+              "DL 2756 (union organisations) and DL 2758 (collective bargaining)",
+              "DL 12 and DL 2200",
+              "Ley 20.940 and Ley 20.123",
+              "The Wagner Act and Taft-Hartley",
+            ],
+            correctIndex: 0,
+            explanation:
+              "DL 2756 governs unions; DL 2758 governs bargaining and the strike. The package totalled eight decree laws — one in 1978 (DL 2200, individual contracts) and seven in July 1979.",
+            sourceLessonSlug: "chile-plan-laboral-architecture",
+          },
+          {
+            prompt: "At what level did DL 2758 lock collective bargaining?",
+            options: [
+              "The national level",
+              "The single firm — with federations and confederations barred from bargaining for their members",
+              "The industry level",
+              "The regional level",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Firm-level only. Sectoral bargaining — the form that built the pre-1973 movement — was excluded from the legal machinery entirely.",
+            sourceLessonSlug: "chile-plan-laboral-architecture",
+          },
+          {
+            prompt: "How did the Plan Laboral use union PLURALISM?",
+            options: [
+              "It banned having more than one union per firm",
+              "It allowed multiple competing unions inside one firm, with voluntary dues — multiplying organisations while dividing their power",
+              "It required all unions to join one confederation",
+              "It made union membership mandatory",
+            ],
+            correctIndex: 1,
+            explanation:
+              "'Freedom' as fragmentation: one workplace could hold as many separate negotiations as it had unions. More unions, less union.",
+            sourceLessonSlug: "chile-plan-laboral-architecture",
+          },
+          {
+            prompt: "What are 'grupos negociadores'?",
+            options: [
+              "Government mediators",
+              "Ad hoc groups of workers — not unions — allowed by DL 2758 to bargain collectively, giving the union a non-union competitor inside the firm",
+              "Employer associations",
+              "The junta's economic advisors",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The non-union competitor is a 1979 design move that survived even the 2016 reform, thanks to a Constitutional Court ruling (Section 4).",
+            sourceLessonSlug: "chile-plan-laboral-architecture",
+          },
+          {
+            prompt: "Why was bargaining timing staggered firm by firm?",
+            options: [
+              "To reduce paperwork at the labor inspectorate",
+              "So negotiations across an industry never came due together — foreclosing even informal sectoral coordination",
+              "To align all contracts with the fiscal year",
+              "It was an accident of drafting",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Desynchronisation: no common expiry, no common fight. A quiet design detail with loud consequences.",
+            sourceLessonSlug: "chile-plan-laboral-architecture",
+          },
+          {
+            prompt: "What were the Plan Laboral's declared pillars, per the scholarship?",
+            options: [
+              "Sectoral bargaining, strike pay, union monopoly, political unions",
+              "Firm-level bargaining; strikes that do not paralyse; union pluralism ('freedom'); union depoliticisation",
+              "Nationalisation, indexation, central planning, full employment",
+              "Co-determination, works councils, Ghent funds, flexicurity",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Each pillar negates a property the 1973 movement had: centralised → atomised, sectoral → firm-locked, political → confined to the firm.",
+            sourceLessonSlug: "chile-plan-laboral-architecture",
+          },
+          {
+            prompt: "Under the original DL 2758, what could the employer do during a legal strike?",
+            options: [
+              "Nothing — operations had to stop",
+              "Hire replacement workers so production continued, and answer with a lockout",
+              "Only negotiate through the Labor Ministry",
+              "Pay double wages to strikers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Replacement plus lockout meant the struck firm kept running while the strikers' costs mounted — a strike engineered not to paralyse.",
+            sourceLessonSlug: "chile-strike-that-cannot-win",
+          },
+          {
+            prompt: "What was the '59-day rule' in the original DL 2758?",
+            options: [
+              "Strikes had to be announced 59 days in advance",
+              "After 59 days on strike, a worker was deemed by law to have voluntarily resigned",
+              "Employers had 59 days to respond to demands",
+              "Contracts lasted 59 months",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The trapdoor: the law converted persistence into resignation. The strike stayed formally legal — and was defeated in advance.",
+            sourceLessonSlug: "chile-strike-that-cannot-win",
+          },
+          {
+            prompt: "What is the American mirror of Chile's striker-replacement rule?",
+            options: [
+              "There is none — replacement is unlawful in the US",
+              "NLRB v. Mackay Radio (1938): permanent replacement of economic strikers has been lawful in the US for most of a century, used in earnest after PATCO (1981)",
+              "The Wagner Act banned strikes entirely",
+              "The US requires strikes to end after 59 days",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Same mechanism — but in the US it accreted via doctrine and norm shift, while in Chile it was drawn deliberately with the goal stated. Provenance is the lesson.",
+            sourceLessonSlug: "chile-strike-that-cannot-win",
+          },
+          {
+            prompt: "What is 'the sophisticated modern way to remove a right,' per this section?",
+            options: [
+              "Prohibit it in the constitution",
+              "Keep it formally available while engineering its failure — the strike stays legal and cannot win",
+              "Delegate it to the courts",
+              "Put it to a referendum",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Plan did not ban the strike (the boycott was about legality); it permitted a strike designed to lose.",
+            sourceLessonSlug: "chile-strike-that-cannot-win",
+          },
+          {
+            prompt: "Which of these is Piñera's OWN summary of the Plan Laboral's achievements?",
+            options: [
+              "It restored union freedom and democracy, introduced firm-level bargaining, depoliticised the union world, achieved social peace, and set conditions for full employment",
+              "It abolished unions permanently",
+              "It created Nordic-style sectoral bargaining",
+              "It was written by the AFL-CIO",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The course quotes the designer's own published claims (Piñera, 1990; economiaysociedad.cl) — the steelman starts from his terms.",
+            sourceLessonSlug: "chile-steelman",
+          },
+          {
+            prompt: "What is the serious economic argument FOR firm-level bargaining?",
+            options: [
+              "It maximises strike frequency",
+              "Wages negotiated at the firm track what that firm can pay, so marginal firms and their workers aren't priced out by sector-wide deals struck by the strongest firms",
+              "It guarantees equal pay across an industry",
+              "It requires no unions at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The anti-unemployment case for decentralisation — whose respectable cousin appears even in the Nordic model, where exporters set the norm first.",
+            sourceLessonSlug: "chile-steelman",
+          },
+          {
+            prompt: "What is the course's key reply to that economic argument, as applied to Chile?",
+            options: [
+              "Firm-level bargaining is always wrong",
+              "Firm-level as an option workers choose is one thing; as a legal ceiling workers were FORBIDDEN to bargain past — imposed by a dictatorship, never voted on — it is another. And the OECD (2025) finds the result atomised, with coverage ~19.3% (2023)",
+              "Sectoral bargaining has no downsides anywhere",
+              "The Nordic model also forbids sectoral bargaining",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The difference between a discipline unions chose (Nordic exporters' norm) and a level workers are legally barred from reaching is the whole point.",
+            sourceLessonSlug: "chile-steelman",
+          },
+          {
+            prompt: "Why does the course reject 'social peace in the private sector, 1979–1990' as vindication?",
+            options: [
+              "Because there were constant strikes in the 1980s",
+              "Because peace under a dictatorship that had recently killed union leaders is suppression, which reads as peace in any ledger",
+              "Because social peace is undesirable",
+              "Because the claim is about the public sector",
+            ],
+            correctIndex: 1,
+            explanation:
+              "An outcome achieved while the other side is repressed cannot be scored as consent.",
+            sourceLessonSlug: "chile-steelman",
+          },
+          {
+            prompt: "What is the 'attribution problem' with crediting the labor code for Chile's post-1985 boom?",
+            options: [
+              "Chile had no growth after 1985",
+              "The boom followed sweeping reforms across the whole economy plus a copper cycle, so isolating the labor code's contribution is somewhere between hard and impossible",
+              "The OECD refuses to publish Chilean GDP",
+              "Growth statistics are secret",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Defenders' claim 4 rests on an inference the evidence can't isolate — while the code's measurable legacy (16% density, 19.3% coverage, 2023) is directly observable.",
+            sourceLessonSlug: "chile-steelman",
+          },
+        ],
+      },
+    },
   ],
 };
