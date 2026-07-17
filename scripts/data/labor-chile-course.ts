@@ -1522,5 +1522,442 @@ You have seen this move before, in country after country, and now it has a famil
         ],
       },
     },
+
+    // ────────────── SECTION 6 · CHILE AGAINST THE NORDICS — AND YOUR OWN STATUTE ──────────────
+    {
+      slug: "chile-vs-nordics",
+      title: "12 · The same surface, the opposite cause",
+      section: "Section 6 · Chile against the Nordics — and your own statute",
+      body: `Now the comparison this whole track has been building toward — the reason the proposal wants Chile taught *last*, and taught *against* Sweden and Denmark.
+
+Start with a fact that should bother you. Ask of both systems: **does the statute establish sectoral bargaining?** Sweden and Denmark: **no.** Chile: **no.** Ask: **is there a legal mechanism extending agreements to non-signatory firms?** Sweden and Denmark: **no** (that was the deep contrast with Germany and France in the Nordics course). Chile: **no.** On paper — on this axis — the wage-setting architecture of the strongest labor systems in the OECD and one of the weakest are *the same*: the state declines to mandate bargaining above the firm, and coverage is left to whatever the parties themselves can build.
+
+And the outcomes could not be further apart:
+
+| | Sweden | Denmark | Chile |
+| --- | --- | --- | --- |
+| Density | ~65% (early 2020s) | ~67% (early 2020s) | ~16% (2023) |
+| Coverage | ~88% (~2018–19) | ~82% (~2018–19) | ~19.3% (2023) |
+| Sectoral bargaining | The norm — by contract | The norm — by contract | Essentially none |
+
+*(OECD/AIAS ICTWSS figures, as used in the Nordics course and OECD, 2025.)*
+
+**Same statutory surface. Opposite worlds. The difference is who made the statute silent, and why.**
+
+In **Sweden and Denmark**, the state is absent from the bargaining table because the organised parties **pushed it out and locked the door from the inside**. Saltsjöbaden (1938) and the September Compromise (1899) were treaties between two strong sides who preferred to govern the labor market themselves; sectoral bargaining exists not because law commands it but because ~two-thirds-density unions and near-universally organised employers *choose* it, enforce it with legal sympathy action, and renew it every bargaining round. The statute is silent the way a referee is silent at a chess match between grandmasters.
+
+In **Chile**, the state is absent from the *sectoral* level because it **stood in the doorway and barred it**. DL 2758 did not neglect to provide industry bargaining — it locked bargaining to the firm, barred federations from the table, and (until 2017) armed employers with replacement. The statute is "silent" above the firm the way a wall is silent: it has nothing to say because it exists to stop movement. And the enforcement weapon that makes the Nordic contract-floor work — **sympathy action, spreading a dispute to pressure a hold-out from every side** — has no Chilean counterpart: Chile's lawful strike lives only *inside* a firm's own regulated bargaining round, precisely where the Nordic weapon lives *outside* it.
+
+Even the membership plumbing points opposite ways. The Nordics run **default-in**: the Ghent system bundles union membership with unemployment insurance, so joining is the path of least resistance. The Plan Laboral built **default-out**: voluntary dues, competing unions splitting the workplace, a non-union bargaining alternative — and, until 2017, employers extending union-won gains to non-members for free, making membership economically irrational on purpose.
+
+**Here is the methodological payload, and it is the most transferable sentence in the track:** *you cannot read a labor statute — anyone's — by its text alone.* Two systems with the same textual silence are opposites, because one silence was won by workers strong enough not to need the law, and the other was imposed to keep workers too weak to use it. To know which you are looking at, you must ask the historian's questions: who wrote this, against what background, over whose objection, and who has the organised power today. Text tells you the rules. Only provenance tells you the game.
+
+:::reveal Sweden/Denmark and Chile share the same statutory surface — no sectoral bargaining mandated, no extension mechanism — with opposite outcomes. State the opposite causes, precisely. ||| In Sweden and Denmark the statute is silent because strong organised parties pushed the state out by treaty (September Compromise 1899, Saltsjöbaden 1938) and built sectoral bargaining themselves — by contract, enforced with legal sympathy action, sustained by Ghent-driven ~two-thirds density. In Chile the statute confines because a dictatorship's designer locked bargaining to the firm (DL 2758), barred federations from the table, and built default-out membership plumbing. One silence was won by strength; the other was imposed to prevent it — text tells you the rules, provenance tells you the game.
+
+## Sources
+- OECD. (2025). *Enhancing sectoral collective bargaining in Chile* (OECD Reviews of Labour Market and Social Policies). OECD Publishing. https://www.oecd.org/en/publications/enhancing-sectoral-collective-bargaining-in-chile_454f4167-en/
+- OECD/AIAS. (n.d.). *ICTWSS database — country notes: Sweden; Denmark; Chile*. Organisation for Economic Co-operation and Development. https://www.oecd.org/en/data/datasets/oecd-aias-ictwss-database.html
+- Biblioteca del Congreso Nacional de Chile. (1979). *Decreto Ley 2758: Establece normas sobre negociación colectiva*. LeyChile. https://www.bcn.cl/leychile/navegar?idNorma=6993`,
+      recallContent: [
+        {
+          prompt: "In what sense do Sweden/Denmark and Chile have the SAME wage-setting architecture on paper — and what are the numbers that show the opposite outcomes?",
+          answer:
+            "Neither mandates sectoral bargaining by statute nor has a legal extension mechanism — coverage is left to what the parties build. Outcomes: Sweden ~65% density / ~88% coverage, Denmark ~67% / ~82%, Chile ~16% / ~19.3% (OECD/AIAS; Chile 2023).",
+        },
+        {
+          prompt: "Explain the two metaphors: the referee's silence vs the wall's silence.",
+          answer:
+            "The Nordic statute is silent like a referee at a grandmasters' match — the strong parties govern themselves and asked the state out (1899, 1938). The Chilean statute is silent above the firm like a wall — DL 2758 exists to stop movement to the sectoral level. Same textual silence, opposite provenance and purpose.",
+        },
+      ],
+    },
+    {
+      slug: "chile-constitution-attempts",
+      title: "13 · Two rewrites, two rejections (2019–2023)",
+      section: "Section 6 · Chile against the Nordics — and your own statute",
+      body: `One chapter remains, and it is recent enough that this course tightens its rules: **dated facts and vote totals only**, from Chile's electoral service and Congress library, with no adjudication of a politics that is still in motion.
+
+**October 2019.** Protests that began in Santiago over a metro-fare increase widened, within days, into the largest demonstrations since the return to democracy — the *estallido social*, an eruption over inequality, pensions, health, and the cost of living. In November 2019, Chile's parties across the spectrum agreed to open the question the transition had never reopened: whether to replace the dictatorship's 1980 Constitution — the document whose locks you met in Section 4.
+
+**The first attempt.** In an entry plebiscite on **25 October 2020**, Chileans voted **78.27% Apruebo** ("approve" — i.e., write a new constitution), and chose an elected convention to draft it (Servel, 2020). The Constitutional Convention produced a long, transformative draft — on labor, it moved in the direction of stronger collective rights, among many other sweeping changes across every domain of Chilean life. On **4 September 2022**, with voting mandatory and turnout at **85.7%** — the highest-participation vote in Chilean history — the draft was **rejected: 61.86% Rechazo to 38.14% Apruebo** (Servel; BCN, 2022).
+
+**The second attempt.** A new process followed, run through an elected Constitutional Council in which the political right held the majority — producing a draft widely characterised as more conservative than the existing constitution. On **17 December 2023**, that draft was **also rejected: 55.76% En contra to 44.24% A favor** (Servel, 2023).
+
+Two drafts, from opposite ends of the political spectrum, three years, two rejections. **What may be concluded from this, and what may not:**
+
+- **May not:** that Chileans endorsed the Plan Laboral's architecture, or rejected it. Both proposals were rejected *as wholes* — hundreds of articles spanning every subject — for reasons voters never itemise. Reading a labor-policy verdict into either result is exactly the kind of inference this track has taught you to refuse.
+- **May:** the institutional fact. **The 1980 Constitution — heavily amended, its designated senators long since abolished, but the same document — remains in force.** And the labor architecture of 1979 remains beneath it. The design has now outlived the dictatorship that decreed it (1990), survived the reform that disarmed its sharpest rule (2017), and stood through two consecutive attempts to rebuild Chile's foundations from scratch (2022, 2023).
+
+That durability — whatever one thinks of it, and Chileans think everything of it — is the final data point in the course's argument. **A well-built design does not need its designer.** It persists through the veto points it was born with, through the caution of its inheritors, through the atomisation of its opponents, and even through moments when a large majority wants *something* to change but cannot converge on *what*. If the course's question was "what does a labor system look like when it is designed to be weak?" — the last part of the answer is: **it looks permanent.**
+
+*(This is where the course's clock stops. Chilean politics did not — treat any claim about what happened after 2023 as your homework to verify, not this course's to assert.)*
+
+:::reveal What happened in Chile's two constitutional plebiscites of 2022 and 2023 — and what does the course say those results do NOT tell you about labor? ||| On 4 September 2022, the Constitutional Convention's draft was rejected 61.86% to 38.14% (mandatory voting, 85.7% turnout); on 17 December 2023, the Constitutional Council's more conservative draft was also rejected, 55.76% to 44.24% (Servel). They do NOT tell you Chileans endorsed or rejected the Plan Laboral's architecture — both drafts were rejected as wholes, spanning every domain. What they DO establish: the amended 1980 Constitution, and the 1979 labor architecture beneath it, remain in force.
+
+## Sources
+- Servicio Electoral de Chile. (2020, October 26). *Plebiscito Nacional 2020 fue la mayor votación de la historia de Chile*. https://www.servel.cl/2020/10/26/plebiscito-nacional-2020-fue-la-mayor-votacion-de-la-historia-de-chile/
+- Biblioteca del Congreso Nacional de Chile. (2022). *Con histórica participación electoral propuesta de nueva Constitución fue rechazada*. https://www.bcn.cl/portal/
+- Servicio Electoral de Chile. (n.d.). *Resultados plebiscitos* (Archivo Histórico). https://archivo.servel.cl/index.php/resultados-plebiscitos`,
+      recallContent: [
+        {
+          prompt: "Give the three plebiscite results, dated, with source.",
+          answer:
+            "25 October 2020: 78.27% Apruebo to begin a rewrite. 4 September 2022: the Convention's draft rejected, 61.86% Rechazo / 38.14% Apruebo, mandatory voting, 85.7% turnout — Chile's highest-participation vote. 17 December 2023: the Council's draft rejected, 55.76% En contra / 44.24% A favor. All per Servel (with BCN reporting).",
+        },
+        {
+          prompt: "Why does the course refuse to read the 2022/2023 results as verdicts on labor policy?",
+          answer:
+            "Both proposals — one transformative, one more conservative than the status quo — were rejected as wholes: hundreds of articles spanning every subject, with voters' reasons never itemised. Inferring a labor verdict from a whole-document rejection is exactly the kind of overreach the track teaches you to refuse. The safe conclusion is institutional: the amended 1980 Constitution and the 1979 labor architecture remain in force.",
+        },
+      ],
+    },
+    {
+      slug: "chile-last-course-close",
+      title: "14 · The last country course: now re-read your own statute",
+      section: "Section 6 · Chile against the Nordics — and your own statute",
+      body: `This is the final teaching lesson of the Chile course — and, if you have followed the track's recommended order, the final country lesson of the whole Workers' Rights track. So let it do the two jobs a last lesson owes you: close Chile, and hand you the tool you leave with.
+
+**Chile, closed — the four questions, final answers:**
+
+1. **Who is allowed to organise?** Nearly everyone, freely, in as many competing unions per firm as workers care to form — a pluralism designed in 1979 to fragment, and still fragmenting: thousands of small unions, atomised bargaining (OECD, 2025).
+2. **Who is excluded?** The subcontracted, whose lawful bargaining counterparty is a firm without power over them; the informal; and every worker whose employer's shape puts them past the edge of a firm-sized bargaining unit.
+3. **Who bargains with whom, at what level?** A union — or a non-union group the Constitutional Tribunal kept alive in 2016 — with a single employer, at the firm, on staggered clocks. No sectoral table exists in law; the one approximation of it (Codelco, 2007) was built outside the law by the excluded.
+4. **What happens to you if you try?** Since April 2017: you may strike, and you may no longer be replaced — the design's sharpest tooth, drawn after 38 years. What remains is the cage the tooth defended: a strike confined to one firm's bargaining round, in a system where the firm may not be where power lives.
+
+**And the tool.** You have now read a labor system whose intent is printed on the label — named author, stated goals, measurable results. Here is why that was worth a whole course: **it calibrates you.** Every other system you will ever encounter — including the one you live under — presents itself as nobody's decision: accreted, natural, just-how-things-are. Chile teaches you what design *looks like* in the wild: rules that all lean the same direction; "freedoms" that fragment; procedures that desynchronise; penalties that make a right unusable without banning it; political locks that protect the whole arrangement from revision. Once you have seen those patterns where they were confessed, you can recognise them where they are denied.
+
+So here is the assignment the entire track has been building to. **Go re-read your own country's labor law** — for most students on this platform, that means going back to the anchor course's American arc — and interrogate it like a Chilean statute:
+
+- Bargaining level: who fixed it there, and when, and against whose preference?
+- Striker replacement: *Mackay Radio* wrote Chile's rule into American law in 1938, and no Congress has deleted it. Chile deleted its copy in 2016. What does that comparison do to "just how things are"?
+- Exclusions: who is your system's subcontracted-Codelco-miner — formally free to organise, structurally unable to reach the party with power?
+- And the Chilean question, the one this course exists to install: **if this system had a named author, what would you say they wanted?**
+
+A labor system is an answer to the question "how much organised power should working people have?" Chile's was written by a man who answered *less*, said so, and built well. Whatever your country's answer is, someone gave it — in statutes, court rulings, and quiet structural choices, whether or not they signed their work the way José Piñera signed his. You now know how to find them. That is what this track was for.
+
+*(Where to from here: the anchor's closing lesson, "Apply the four questions," pairs with this one; "Know Your Rights at Work" covers what you can do on Monday. And this course's numbers will age — the OECD updates density and coverage regularly, Chilean politics is live, and the 40-hour phase-in completes in 2028. Re-check before you quote.)*
+
+:::reveal What does the course mean by saying Chile 'calibrates' you for reading every other labor system? ||| Chile is the system where design is confessed — named author, stated goals, measurable results — so it teaches you what engineered weakness looks like: rules leaning one direction, freedoms that fragment, desynchronised procedures, rights kept legal but unusable, political locks against revision. Systems that present themselves as nobody's decision ('just how things are') hide the same kinds of choices; having read one labeled example, you can now recognise the patterns unlabeled — starting with your own country's statute.
+
+## Sources
+- OECD. (2025). *Enhancing sectoral collective bargaining in Chile* (OECD Reviews of Labour Market and Social Policies). OECD Publishing. https://www.oecd.org/en/publications/enhancing-sectoral-collective-bargaining-in-chile_454f4167-en/
+- Piñera, J. (1990). *La revolución laboral en Chile*. Zig-Zag. https://www.economiaysociedad.cl/
+- NLRB v. Mackay Radio & Telegraph Co., 304 U.S. 333 (1938). Library of Congress. https://www.loc.gov/item/usrep304333/`,
+      recallContent: [
+        {
+          prompt: "Answer Question 4 for Chile as of today, in two sentences.",
+          answer:
+            "Since Ley 20.940 took effect (1 April 2017), workers may strike and may not be replaced, externally or internally — the 1979 design's sharpest tooth, drawn after 38 years. But the strike remains confined to a single firm's regulated bargaining round, in a system where the firm you may pressure is often not where power over your conditions lives.",
+        },
+        {
+          prompt: "What are the design patterns Chile teaches you to recognise in systems that 'deny having authors'?",
+          answer:
+            "Rules that all lean one direction; 'freedoms' that fragment (pluralism, negotiating groups); procedures that desynchronise; penalties that make a right legal but unusable (replacement, the 59-day trapdoor); and political locks protecting the arrangement from revision (the 1980 Constitution's veto points). Seen once where confessed, they become recognisable where denied.",
+        },
+      ],
+    },
+    {
+      slug: "chile-quiz-6",
+      title: "Section 6 quiz · The comparison, the rewrites, the close",
+      section: "Section 6 · Chile against the Nordics — and your own statute",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "On paper, what do Sweden/Denmark and Chile share in their wage-setting architecture?",
+            options: [
+              "A statutory national minimum wage",
+              "Neither mandates sectoral bargaining by statute, and neither has a legal mechanism extending agreements to non-signatory firms",
+              "Ghent-system unemployment funds",
+              "A ban on all strikes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same textual silence — which is exactly why text alone cannot tell you which system you are looking at.",
+            sourceLessonSlug: "chile-vs-nordics",
+          },
+          {
+            prompt: "Why is the Nordic statute silent about sectoral bargaining?",
+            options: [
+              "Because sectoral bargaining is banned there",
+              "Because strong organised parties pushed the state out by treaty (1899, 1938) and built sectoral bargaining themselves, by contract, enforced with legal sympathy action",
+              "Because the EU forbids it",
+              "Because unions are too weak to demand it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The referee's silence: two-thirds-density unions and organised employers govern the labor market themselves and renew that choice every round.",
+            sourceLessonSlug: "chile-vs-nordics",
+          },
+          {
+            prompt: "Why is the Chilean statute silent above the firm?",
+            options: [
+              "Because workers chose decentralisation in a referendum",
+              "Because DL 2758 locked bargaining to the firm and barred federations from the table — the wall's silence: it exists to stop movement",
+              "Because sectoral bargaining was never invented in Latin America",
+              "Because the ILO required it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One silence was won by strength; the other was imposed to prevent strength. Same surface, opposite provenance.",
+            sourceLessonSlug: "chile-vs-nordics",
+          },
+          {
+            prompt: "How do the membership 'defaults' differ between the two systems?",
+            options: [
+              "Both are default-in",
+              "Nordic Ghent plumbing makes joining the path of least resistance (default-in); the Plan Laboral built default-out — voluntary dues, competing unions, a non-union alternative, and (until 2017) free extension of union wins to non-members",
+              "Both are default-out",
+              "Chile has a Ghent system",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Plumbing points opposite ways: one design makes membership the norm, the other made it economically irrational on purpose.",
+            sourceLessonSlug: "chile-vs-nordics",
+          },
+          {
+            prompt: "What is 'the most transferable sentence in the track'?",
+            options: [
+              "All labor law converges over time",
+              "You cannot read a labor statute by its text alone — text tells you the rules; only provenance tells you the game",
+              "Density always predicts coverage",
+              "Strikes are always counterproductive",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two identical silences can be opposites. Ask who wrote it, against what background, over whose objection, and who holds organised power now.",
+            sourceLessonSlug: "chile-vs-nordics",
+          },
+          {
+            prompt: "Where does Chile's lawful strike live, compared with the Nordic sympathy weapon?",
+            options: [
+              "Anywhere, any time, for any cause",
+              "Only inside a firm's own regulated bargaining round — precisely where Nordic sympathy action lives OUTSIDE the primary dispute, spreading pressure to hold-outs",
+              "Only in the public sector",
+              "Only with government authorisation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The enforcement weapon that makes the Nordic contract-floor work has no Chilean counterpart.",
+            sourceLessonSlug: "chile-vs-nordics",
+          },
+          {
+            prompt: "What began Chile's constitutional process in 2019?",
+            options: [
+              "An OECD directive",
+              "Protests that began over a Santiago metro-fare increase and widened into the largest demonstrations since the return to democracy — the estallido social",
+              "A military coup",
+              "A petition by employers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The eruption over inequality led to the November 2019 cross-party agreement to reopen the 1980 Constitution.",
+            sourceLessonSlug: "chile-constitution-attempts",
+          },
+          {
+            prompt: "What did Chileans decide on 25 October 2020?",
+            options: [
+              "To reject any new constitution",
+              "78.27% voted Apruebo — to write a new constitution, via an elected convention (Servel)",
+              "To restore the 1925 constitution",
+              "To leave the OECD",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The entry plebiscite opened the first rewrite attempt.",
+            sourceLessonSlug: "chile-constitution-attempts",
+          },
+          {
+            prompt: "What happened on 4 September 2022?",
+            options: [
+              "The Convention's draft was approved narrowly",
+              "The Convention's draft was rejected 61.86% to 38.14%, with mandatory voting and 85.7% turnout — Chile's highest-participation vote",
+              "The plebiscite was cancelled",
+              "The 1980 Constitution was abolished",
+            ],
+            correctIndex: 1,
+            explanation:
+              "First attempt, rejected (Servel; BCN).",
+            sourceLessonSlug: "chile-constitution-attempts",
+          },
+          {
+            prompt: "What happened on 17 December 2023?",
+            options: [
+              "A second, more conservative draft was approved",
+              "The Constitutional Council's draft — widely characterised as more conservative than the existing constitution — was also rejected, 55.76% to 44.24%",
+              "Sectoral bargaining became constitutional",
+              "A third convention was elected",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two drafts from opposite ends of the spectrum, two rejections (Servel).",
+            sourceLessonSlug: "chile-constitution-attempts",
+          },
+          {
+            prompt: "What may NOT be concluded from the two constitutional rejections, per the course?",
+            options: [
+              "That the 1980 Constitution remains in force",
+              "That Chileans endorsed — or rejected — the Plan Laboral's labor architecture: both drafts were rejected as wholes, for unitemised reasons spanning every subject",
+              "That turnout was high in 2022",
+              "That two processes occurred",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Reading a labor verdict into a whole-document vote is the kind of inference the track teaches you to refuse.",
+            sourceLessonSlug: "chile-constitution-attempts",
+          },
+          {
+            prompt: "What is the institutional bottom line after 2019–2023?",
+            options: [
+              "Chile has a new constitution",
+              "The amended 1980 Constitution remains in force, and the 1979 labor architecture remains beneath it — the design has outlived its regime, a major reform, and two rebuild attempts",
+              "The labor code was abolished",
+              "Sectoral bargaining was established",
+            ],
+            correctIndex: 1,
+            explanation:
+              "'A well-built design does not need its designer' — the course's final data point: it looks permanent.",
+            sourceLessonSlug: "chile-constitution-attempts",
+          },
+          {
+            prompt: "Why was reading ONE confessed design worth a whole course, per the closing lesson?",
+            options: [
+              "Because Chile is the largest economy in the track",
+              "Because it calibrates you: having seen engineered weakness where it was confessed — named author, stated goals — you can recognise the same patterns in systems that present themselves as nobody's decision",
+              "Because designed systems are rare and unimportant",
+              "Because all other systems are identical to Chile's",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rules leaning one way, freedoms that fragment, rights kept legal but unusable, locks against revision — patterns you can now spot unlabeled.",
+            sourceLessonSlug: "chile-last-course-close",
+          },
+          {
+            prompt: "What comparison does the closing assignment ask American students to sit with?",
+            options: [
+              "Chile has a minimum wage and the US does not",
+              "Mackay Radio (1938) wrote Chile's replacement rule into US law and no Congress has deleted it — while Chile deleted its copy in 2016",
+              "The US has sectoral bargaining and Chile does not",
+              "Both countries ban strikes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The course's provenance question turned homeward: what does that comparison do to 'just how things are'?",
+            sourceLessonSlug: "chile-last-course-close",
+          },
+          {
+            prompt: "What is 'the Chilean question' the course exists to install?",
+            options: [
+              "How high should the minimum wage be?",
+              "If this system had a named author, what would you say they wanted?",
+              "Should unions exist?",
+              "Is GDP growth good?",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Every labor system answers 'how much organised power should working people have?' — someone gave your country's answer, signed or unsigned. Now you know how to find them.",
+            sourceLessonSlug: "chile-last-course-close",
+          },
+        ],
+      },
+    },
+    {
+      slug: "chile-exercise",
+      title: "Exercise · Name the design",
+      section: "Section 6 · Chile against the Nordics — and your own statute",
+      body: `A short production drill. For each cue, type a brief answer, then check it against the key. Spelling and accents are graded forgivingly — aim for the right idea. This exercises the course's core habit: naming the *design choice* behind an outcome, with its date and, where it has one, its author.`,
+      exercise: {
+        instructions: "Type a short answer for each. One or a few words is enough unless the prompt asks for a sentence.",
+        items: [
+          {
+            prompt: "Name the 1979 package of decree laws that designed Chile's labor system, written under the Pinochet dictatorship.",
+            answer: "the Plan Laboral",
+            accept: ["Plan Laboral", "the Plan Laboral", "labor plan", "the labor plan"],
+            hint: "Two words, Spanish.",
+            explanation:
+              "The Plan Laboral — eight decree laws (one in 1978, seven in July 1979), with DL 2756 (unions) and DL 2758 (bargaining) at the core.",
+          },
+          {
+            prompt: "Who was its author — Pinochet's Minister of Labor, appointed at age 30?",
+            answer: "José Piñera",
+            accept: ["Piñera", "Jose Pinera", "José Piñera", "Pinera"],
+            hint: "He later published La revolución laboral en Chile (1990).",
+            explanation:
+              "José Piñera designed the Plan Laboral, stated its goals, and still defends it — the reason Chile is the track's clearest case of design.",
+          },
+          {
+            prompt: "At what level — and only that level — does Chilean law locate collective bargaining, from 1979 to today?",
+            answer: "the firm",
+            accept: ["firm", "the firm", "firm level", "the firm level", "company", "company level", "enterprise", "enterprise level"],
+            hint: "Not the sector, not the industry.",
+            explanation:
+              "Firm-level only: federations were barred from bargaining, and no reform since — including Ley 20.940 — has established a sectoral table.",
+          },
+          {
+            prompt: "Under the original DL 2758, after how many days on strike was a worker deemed to have voluntarily resigned?",
+            answer: "59",
+            accept: ["59", "59 days", "fifty-nine", "sixty", "60"],
+            hint: "Just short of two months.",
+            explanation:
+              "The 59-day trapdoor: the law converted persistence into resignation. Removed in the 1991 reform (Ley 19.069), which made strikes indefinite.",
+          },
+          {
+            prompt: "Name the 2016 law (in force April 2017) that finally banned striker replacement in Chile.",
+            answer: "Ley 20.940",
+            accept: ["20.940", "20940", "Ley 20.940", "ley 20940", "Law 20.940"],
+            hint: "Published 8 September 2016.",
+            explanation:
+              "Ley 20.940 recognised the 'huelga efectiva' — no external or internal replacement — while leaving the firm-level architecture intact.",
+          },
+          {
+            prompt: "Which body struck down union titularity on 9 May 2016, keeping non-union 'negotiating groups' alive?",
+            answer: "the Constitutional Tribunal",
+            accept: ["Constitutional Tribunal", "the Constitutional Tribunal", "Tribunal Constitucional", "constitutional court", "the constitutional court", "TC"],
+            hint: "Rol 3016-16.",
+            explanation:
+              "Chile's Constitutional Tribunal voided the titularity chapter on freedom-of-association grounds before Ley 20.940 took effect — 1979's design move 3 survives.",
+          },
+          {
+            prompt: "Give Chile's 2023 union density and bargaining coverage (OECD/AIAS), rounded.",
+            answer: "16% density, 19.3% coverage",
+            accept: ["16 and 19", "16% and 19%", "16 19", "16% density 19.3% coverage", "16/19.3", "16 and 19.3", "about 16% and about 19%"],
+            hint: "Density near the OECD average; coverage among its lowest.",
+            explanation:
+              "~16% density (slightly above the OECD average of 15.1%) and ~19.3% coverage (against ~33.5% average) — the ~3-point gap is the firm-level fingerprint.",
+          },
+          {
+            prompt: "Name Chile's version of the put-them-outside move — the practice regulated (not empowered) by Ley 20.123 in 2007.",
+            answer: "subcontratación",
+            accept: ["subcontratacion", "subcontratación", "subcontracting", "outsourcing"],
+            hint: "Your legal employer is a thin contractor; the mine belongs to someone else.",
+            explanation:
+              "Subcontratación: the principal firm's power sits outside your firm-sized bargaining unit. Ley 20.123 made principals liable for obligations — but gave no bargaining rights toward them.",
+          },
+          {
+            prompt: "Which workers won Chile's first sectoral-type agreement since the dictatorship — in 2007, after a 37-day strike?",
+            answer: "Codelco's subcontracted copper workers (the CTC)",
+            accept: ["subcontracted workers", "Codelco subcontractors", "the CTC", "CTC", "copper subcontractors", "Codelco's subcontracted workers", "subcontratistas"],
+            hint: "The workers the architecture most excluded.",
+            explanation:
+              "Some 30,000 subcontracted workers under the Confederación de Trabajadores del Cobre won the Acuerdo Marco — sectoral-style bargaining built entirely outside the legal machinery.",
+          },
+          {
+            prompt: "One sentence: why do Sweden and Chile — with the SAME statutory silence on sectoral bargaining — have opposite systems?",
+            answer: "Sweden's silence was won by strong parties who govern the labor market themselves; Chile's was imposed by a design that locked bargaining to the firm to keep unions weak",
+            accept: [
+              "opposite causes",
+              "one silence won by strength, one imposed to prevent strength",
+              "Sweden's unions are strong so the state stays out; Chile's law confines bargaining to keep unions weak",
+              "provenance",
+              "the referee vs the wall",
+            ],
+            hint: "The referee's silence vs the wall's silence.",
+            explanation:
+              "Text tells you the rules; provenance tells you the game. One statute is silent because workers didn't need it; the other because its author wanted them unable to use it.",
+          },
+        ],
+      },
+    },
   ],
 };
