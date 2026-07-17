@@ -999,6 +999,67 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Florida Civics, Lesson 9 · Get involved where you live in Florida"],
   },
 
+  // ── State civics: Ohio (state-civics-oh was written FROM Ohio's own sources) ──
+  // NOTE: unlike Arkansas and California, Ohio's high-school AMERICAN GOVERNMENT standards NAME
+  // Ohio's own government explicitly — Content Statement 16 ("the Ohio Constitution ... was changed
+  // in 1851") and Content Statement 17 (individuals assist state and local governments) — so the
+  // Ohio flagship's structure lessons have a genuine 1:1 home, mapped as full. Ohio's high-school
+  // science standards, by contrast, gave the climate/resource content NO home (Ohio publishes its
+  // high-school science courses as bare topic outlines, not citable content statements — see
+  // data/oh.ts notClaimed), so that content maps to Ohio social studies instead.
+  {
+    id: "civics.oh-constitution-direct-democracy",
+    claim: "Teaches Ohio's 1851 constitution and the strong direct democracy its 1912 amendments added — the citizen initiative and referendum, with a citizen constitutional amendment still passing on a simple majority after voters rejected the 2023 Issue 1 attempt to raise the bar to 60%.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: [
+      "Ohio Civics, Lesson 1 · Ohio's constitution: the 1851 rulebook and its 1912 makeover (the initiative and referendum)",
+      "Ohio Civics, Lesson 6 · Elections in Ohio (the citizen initiative/referendum and the failed 2023 Issue 1)",
+      "Ohio Civics, Lesson 7 · Four Ohio rules that recently changed (the simple-majority amendment bar survived)",
+    ],
+  },
+  {
+    id: "civics.oh-three-branches",
+    claim: "Teaches Ohio's three branches: a 99-member House and 33-member Senate, and a plural executive whose Governor and Lieutenant Governor run on a joint ticket while the Attorney General, Secretary of State, Auditor, and Treasurer are elected separately.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: ["Ohio Civics, Lesson 2 · The three branches, and Ohio's plural executive"],
+  },
+  {
+    id: "civics.oh-courts",
+    claim: "Teaches Ohio's elected judiciary — Supreme Court and Court of Appeals judges chosen in popular elections — and the 2021 change (SB 80) that put party labels on the general-election ballot for the top courts starting in 2022.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: ["Ohio Civics, Lesson 3 · Ohio's courts: elected judges, and a 2021 ballot change"],
+  },
+  {
+    id: "civics.oh-bill-process",
+    claim: "Teaches how a bill becomes an Ohio law, including Ohio's distinctive three-fifths (not two-thirds) veto override.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: ["Ohio Civics, Lesson 4 · How a bill becomes an Ohio law: the 3/5 override"],
+  },
+  {
+    id: "civics.oh-local-government",
+    claim: "Teaches Ohio local government as Ohio's: 88 counties, strong municipal home rule (Article XVIII, 1912), an active township layer, and special districts.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: [
+      "Ohio Civics, Lesson 5 · Local government in Ohio: 88 counties, home rule, townships",
+      "Ohio Civics, Lesson 8 · Get involved where you live in Ohio",
+    ],
+  },
+  {
+    id: "civics.oh-elections",
+    claim: "Teaches Ohio's election specifics: photo voter ID since 2023 (HB 458), no-excuse early and absentee voting, a roughly 30-day registration deadline, and the citizen initiative/referendum — including the August 2023 Issue 1 that failed to raise the amendment bar to 60%.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: [
+      "Ohio Civics, Lesson 6 · Elections in Ohio: photo ID (2023), early voting, and the ballot initiative",
+      "Ohio Civics, Lesson 7 · Four Ohio rules that recently changed",
+    ],
+  },
+  {
+    id: "civics.oh-get-involved",
+    claim: "Teaches getting involved where you live, Ohio edition — legislators and bill-tracking, the citizen initiative and referendum, county/city/village/township and special-district boards, and voting Ohio's now party-labeled judicial races.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: ["Ohio Civics, Lesson 8 · Get involved where you live in Ohio"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
