@@ -599,5 +599,288 @@ The movement's leaders drew an institutional conclusion you will meet in the nex
         ],
       },
     },
+
+    // ───────── SECTION 3 · DEMOCRATIZATION: A PARTY, A CENTRAL, AND THE CAGE KEPT ─────────
+    {
+      slug: "brazil-cut-pt-1988",
+      section: "Section 3 · Democratization: a party, a central, and the cage kept",
+      title: "7 · 1980–1988: the PT, the CUT, and the constitution that kept two locks",
+      recallContent: [
+        {
+          prompt: "What happened during the 41-day strike of 1980?",
+          answer: "Over 300,000 metalworkers struck across São Paulo state. The government intervened in the union, stripped its elected leadership, and jailed Lula and more than a dozen leaders under the National Security Law — they were released only on the strike's 41st day.",
+        },
+        {
+          prompt: "How did the novo sindicalismo's strategy differ structurally from Solidarność's?",
+          answer: "Brazil's metalworkers captured the official state-chartered union from within and made Vargas's machine obey its members; Poland's workers built Solidarność outside the official structure entirely. Two authoritarian corporatisms, two escape routes.",
+        },
+      ],
+      body: `The ABC movement's leaders concluded that winning inside one union was not enough, and they built two institutions to prove it.
+
+**February 1980 — a party.** The **Partido dos Trabalhadores** (Workers' Party, **PT**) was founded in São Paulo by unionists of the novo sindicalismo, together with intellectuals, Catholic base communities, and activists returning from exile (Fundação Perseu Abramo, n.d.). A party built *out of* a union movement — the direction matters. In most of the world's labor history, parties built unions or captured them; here the metalworkers built the party.
+
+**August 1983 — a central.** The **Central Única dos Trabalhadores** (**CUT**) was founded at a congress in São Bernardo do Campo (CUT, n.d.). Now notice something the corporatist architecture makes strange: under the CLT's design there was **no legal place for a central** at all. Unicidade chartered one union per *category*; a cross-category national federation of the workers' own choosing sat entirely outside the diagram. The CUT simply existed anyway — a fact before it was a legal fact. Brazilian law only formally recognized the *centrais sindicais* in **2008** (Lei nº 11.648, 2008) — and here is the detail this course wants you to sit with: recognition came **with a 10% share of the compulsory union tax** (Lei nº 11.648, 2008, amending CLT art. 589). The central born from the fight against the corporatist machine was, twenty-five years later, written into the machine's revenue line. Hold that thought until Section 4.
+
+**1985 — the dictatorship ends.** Mass campaigning for direct elections (the **Diretas Já** movement, 1984) fell short of its amendment, but the regime's chosen succession failed anyway, and in 1985 a civilian took office after twenty-one years of military rule. The strikes of the ABC were part of how that ending had begun — the anchor course's pattern, again: the labor movement as the training ground of a democratic opposition.
+
+## 1988: the new constitution — audit it against the three locks
+
+Brazil's democratic constitution of **5 October 1988** rewrote the labor rules. Here is the honest audit, lock by lock:
+
+| Lock | What 1988 did |
+| --- | --- |
+| **Lock 2 — the ministry charter** | **BROKEN.** Article 8, item I: the state may not demand authorization for founding a union and is **forbidden from interfering or intervening** in union organization (CF, 1988, art. 8º, I). The power the dictatorship used against the ABC metalworkers — cassation, trustees — was abolished. |
+| **Lock 1 — unicidade** | **KEPT.** Article 8, item II — one union per category per territorial base, now with constitutional rank (CF, 1988, art. 8º, II). |
+| **Lock 3 — the compulsory tax** | **KEPT.** Article 8, item IV preserves the statutory contribution — the assembly-fixed dues are collected *"independentemente da contribuição prevista em lei,"* independently of the contribution provided by law, i.e. the imposto sindical survived alongside them (CF, 1988, art. 8º, IV). |
+
+And one addition: **Article 9 made the right to strike a constitutional right** (CF, 1988, art. 9º) — the workers deciding *"on the opportunity of exercising it and on the interests to be defended by it."* For the people jailed in 1980 for leading a strike, that sentence was the point.
+
+**So read the scoreboard carefully, because it is stranger than a victory.** The movement that had fought the corporatist machine from inside won a constitution that took away the *state's key* to the machine — and kept the machine. No more ministry intervention; still one chartered union per category, still a tax collected from every worker, member or not. Why a constituent assembly full of unionists kept unicidade and the tax is a debated question of motives, and this course does not psychoanalyze; what is **documented** is the outcome — the corporatist architecture of 1943, minus state intervention, is what Brazilian democracy constitutionalized. That is why (as you learned in Section 1) Brazil **still cannot ratify ILO Convention 87**: the obstacle is not a dictatorship-era statute a congress could repeal, but Article 8 of the democratic constitution itself (ILO, n.d.).
+
+:::reveal Audit the 1988 Constitution against the CLT's three locks: what did it break, and what did it keep? ||| It broke Lock 2 — Article 8, I forbids the state from requiring authorization for unions or intervening in them, abolishing the ministry's cassation power. It kept Lock 1 — unicidade sindical, now constitutional at Article 8, II — and Lock 3 — Article 8, IV preserved the statutory compulsory contribution. Democracy removed the state's key but kept the corporatist machine: one chartered union per category, funded by a tax from every worker — which is also why Brazil still cannot ratify ILO Convention 87.
+
+## Sources
+- Constituição da República Federativa do Brasil. (1988). Presidência da República. https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
+- Lei nº 11.648, de 31 de março de 2008. Presidência da República. https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11648.htm
+- Central Única dos Trabalhadores. (n.d.). *Histórico*. https://www.cut.org.br/conteudo/historico [The central's own history — a party to this story, used for dates and sequence.]
+- Fundação Perseu Abramo. (n.d.). *História do PT*. https://fpabramo.org.br/ [Maintained by a foundation linked to the PT — a party to this story.]
+- International Labour Organization. (n.d.). *Ratifications for Brazil*. NORMLEX. https://normlex.ilo.org/dyn/nrmlx_en/f?p=NORMLEXPUB:11200:0::NO::P11200_COUNTRY_ID:102571`,
+    },
+    {
+      slug: "brazil-lula-record",
+      section: "Section 3 · Democratization: a party, a central, and the cage kept",
+      title: "8 · The Lula record, stated as dated fact",
+      recallContent: [
+        {
+          prompt: "Audit: which of the three locks did the 1988 Constitution break, and which did it keep?",
+          answer: "Broke Lock 2 (no state authorization or intervention in unions — art. 8, I). Kept Lock 1 (unicidade, art. 8, II) and Lock 3 (the compulsory contribution, art. 8, IV). It also made the strike a constitutional right (art. 9).",
+        },
+        {
+          prompt: "When were the PT and the CUT founded, and what happened to the CUT's legal status in 2008?",
+          answer: "PT: February 1980. CUT: August 1983 — with no legal place under the corporatist design until Lei 11.648/2008 recognized the centrais sindicais and gave them a 10% share of the compulsory union tax.",
+        },
+      ],
+      body: `One person in this story went from a union hall to the presidency, to a prison cell, and back to the presidency. Brazilian politics is brutally polarized around him, so this course applies its strictest rule here: **dates, courts, and official records — nothing else.** You will not learn what to think about Lula from this lesson. You will learn what happened, when, and according to whom, so that no one can tell you a half of it and call it the whole.
+
+| Date | Event, per the record |
+| --- | --- |
+| **1975** | Luiz Inácio da Silva ("Lula"), a lathe operator, is elected president of the São Bernardo and Diadema metalworkers' union (Section 2). |
+| **1980** | Jailed under the National Security Law during the 41-day strike; co-founds the PT the same year. |
+| **1989, 1994, 1998** | Runs for president three times; loses three times. |
+| **30 Oct 2002 → 1 Jan 2003** | Elected president; takes office. Re-elected 2006; leaves office 1 Jan 2011 at the end of two terms. |
+| **12 Jul 2017** | Convicted of corruption and money laundering by a federal trial judge in **Curitiba**, in a case from the *Lava Jato* (Car Wash) investigation. |
+| **24 Jan 2018** | The regional appellate court (TRF-4) upholds and increases the sentence. |
+| **7 Apr 2018** | Imprisoned in Curitiba. |
+| **Aug–Sep 2018** | The electoral court (TSE) bars his presidential candidacy under the **Ficha Limpa** ("Clean Record") law, which disqualifies candidates convicted by a collegiate court (Lei Complementar nº 135, 2010). |
+| **8 Nov 2019** | Released — because the STF ruled, for **all** defendants, that imprisonment before appeals are exhausted is unconstitutional. A procedural ruling; **not** a ruling on his case's merits. |
+| **8 Mar 2021** | An STF justice **annuls the convictions** on **jurisdictional** grounds: the Curitiba court lacked jurisdiction over the cases (STF, HC 193.726). The STF's full bench confirms in April 2021. His political rights are restored. |
+| **2021** | Separately, an STF panel rules that the trial judge had not been impartial toward him (*suspeição*) — another procedural ruling, also not a merits judgment. The trial judge had, after convicting him, accepted appointment as justice minister in the government elected in 2018 — a fact cited in that litigation. |
+| **30 Oct 2022 → 1 Jan 2023** | Elected president with **50.89%** of the runoff vote (Agência Brasil, 2022); inaugurated. |
+
+## What an annulment on jurisdiction is — and is not
+
+This is the part most retellings get wrong, in both directions, so learn it precisely.
+
+The 2021 annulment held that the **wrong court** had tried the cases. It did **not** find Lula innocent, and it did not find him guilty — a jurisdictional annulment is **neither an acquittal nor a conviction on the merits**. As of this course's writing (July 2026), the two facts stand side by side in the record: he **was convicted** in 2017–18, and those convictions **were annulled** in 2021 by the country's highest court. Anyone who tells you only "he was convicted" is deleting the annulment; anyone who tells you the annulment "proved his innocence" is claiming a merits judgment that no court issued. **This course teaches both facts and adjudicates neither** — because there is nothing left standing to adjudicate, and refusing to invent a verdict is what sourcing discipline looks like when the subject is radioactive.
+
+## Why this lesson is in a labor course at all
+
+Not because of the politics — despite them. The anchor course's fourth question is *what happens to you if you try?* Section 2 gave Brazil's 1980 answer: intervention, cassation, prison. This lesson completes the arc: the strike leader that answer was aimed at was later elected head of state — **twice**, with a conviction and an annulment in between. Whatever any Brazilian thinks of Lula, the uncontested spine of the record is a thing this track has seen nowhere else: **the corporatist union system Vargas built to contain labor ended up producing a president of the Republic from inside a union hall.** Poland's union produced a president too (Wałęsa, 1990) — from *outside* the official structure. Brazil's came from within it. The two courses are a matched pair; keep them side by side.
+
+:::reveal What exactly did the STF's 8 March 2021 decision do — and name the two mistakes people make about it. ||| It annulled Lula's convictions on jurisdictional grounds: the Curitiba court lacked jurisdiction to try the cases (HC 193.726; confirmed by the full bench in April 2021), restoring his political rights. Mistake one: deleting the annulment and saying only "he was convicted." Mistake two: calling the annulment proof of innocence — a jurisdictional annulment is neither an acquittal nor a conviction on the merits, and no court has issued a merits verdict since. The course teaches both facts and adjudicates neither.
+
+## Sources
+- Supremo Tribunal Federal. (2021). *Habeas Corpus 193.726* (decisão de 8 de março de 2021; referendada pelo Plenário em abril de 2021). https://portal.stf.jus.br/
+- Lei Complementar nº 135, de 4 de junho de 2010 (Lei da Ficha Limpa). Presidência da República. https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp135.htm
+- Agência Brasil. (2022, October 30). [Official public news agency's reporting of the certified runoff result: 50.89%.] https://agenciabrasil.ebc.com.br/
+- Sindicato dos Metalúrgicos do ABC. (n.d.-a). *1977*. https://smabc.org.br/1977-2/ [For the union-career dates — a party to this story.]`,
+    },
+    {
+      slug: "brazil-section-3-quiz",
+      section: "Section 3 · Democratization: a party, a central, and the cage kept",
+      title: "9 · Check yourself: democratization, and the record",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What two institutions did the ABC movement's leaders found, and when?",
+            options: [
+              "The PT (Workers' Party) in February 1980 and the CUT (Central Única dos Trabalhadores) in August 1983",
+              "The CLT in 1943 and the TST in 1946",
+              "DIEESE in 1955 and the Ficha Limpa in 2010",
+              "Solidarność in 1980 and the Round Table in 1989",
+            ],
+            correctIndex: 0,
+            explanation: "A party and a central, built out of a union movement — the metalworkers built the party, not the other way around.",
+            sourceLessonSlug: "brazil-cut-pt-1988",
+          },
+          {
+            prompt: "What was legally strange about the CUT when it was founded in 1983?",
+            options: [
+              "The corporatist design had no legal place for a cross-category central at all — the CUT existed as a fact before the law recognized centrais in 2008",
+              "It was founded by the Labor Ministry itself",
+              "It was a foreign union operating under US law",
+              "It was the one union allowed to compete inside other unions' territories",
+            ],
+            correctIndex: 0,
+            explanation: "Unicidade chartered one union per category; a national central of the workers' own choosing sat outside the diagram entirely.",
+            sourceLessonSlug: "brazil-cut-pt-1988",
+          },
+          {
+            prompt: "What did Lei 11.648/2008 do?",
+            options: [
+              "Formally recognized the centrais sindicais — and gave them a 10% share of the compulsory union tax",
+              "Abolished the union tax",
+              "Ratified ILO Convention 87",
+              "Dissolved the CUT",
+            ],
+            correctIndex: 0,
+            explanation: "The irony the course flags: the central born fighting the corporatist machine was written into the machine's revenue line twenty-five years later.",
+            sourceLessonSlug: "brazil-cut-pt-1988",
+          },
+          {
+            prompt: "Which of the three locks did the 1988 Constitution BREAK?",
+            options: [
+              "Lock 2 — the ministry charter: Article 8, I forbids state authorization requirements and state interference or intervention in unions",
+              "Lock 1 — unicidade sindical",
+              "Lock 3 — the compulsory tax",
+              "All three locks",
+            ],
+            correctIndex: 0,
+            explanation: "The power the dictatorship used against the ABC metalworkers — cassation, trustees — was abolished. The other two locks survived.",
+            sourceLessonSlug: "brazil-cut-pt-1988",
+          },
+          {
+            prompt: "Which locks did the 1988 Constitution KEEP?",
+            options: [
+              "Lock 1 (unicidade, art. 8, II) and Lock 3 (the compulsory contribution, art. 8, IV)",
+              "Only Lock 2 (the ministry charter)",
+              "None — all three were abolished",
+              "Only the labor courts",
+            ],
+            correctIndex: 0,
+            explanation: "Democracy removed the state's key and kept the machine: one chartered union per category, funded by a tax from every worker, member or not.",
+            sourceLessonSlug: "brazil-cut-pt-1988",
+          },
+          {
+            prompt: "What does Article 9 of the 1988 Constitution establish?",
+            options: [
+              "The right to strike as a constitutional right, with workers deciding when to exercise it and which interests to defend",
+              "The right of the ministry to intervene in unions",
+              "A ban on strikes in essential services, with no exceptions",
+              "The compulsory union tax",
+            ],
+            correctIndex: 0,
+            explanation: "For the people jailed in 1980 for leading a strike, that article was the point.",
+            sourceLessonSlug: "brazil-cut-pt-1988",
+          },
+          {
+            prompt: "After 1988, why can Brazil STILL not ratify ILO Convention 87?",
+            options: [
+              "Because unicidade is now in the democratic constitution itself (art. 8, II) — the obstacle is not a repealable dictatorship-era statute",
+              "Because the ILO expelled Brazil in 1988",
+              "Because ratification requires a national referendum",
+              "Because the labor courts vetoed it",
+            ],
+            correctIndex: 0,
+            explanation: "C87 protects organizations 'of their own choosing'; a constitutional one-union-per-category rule cannot promise a choice — and constitutions are harder to change than statutes.",
+            sourceLessonSlug: "brazil-cut-pt-1988",
+          },
+          {
+            prompt: "According to the record, what happened to Lula in 1975 and in 1980?",
+            options: [
+              "Elected president of the São Bernardo/Diadema metalworkers' union in 1975; jailed under the National Security Law during the 41-day strike in 1980",
+              "Elected president of Brazil in 1975; exiled in 1980",
+              "Appointed to the Labor Ministry in 1975; dismissed in 1980",
+              "Convicted in 1975; pardoned in 1980",
+            ],
+            correctIndex: 0,
+            explanation: "A lathe operator leading a state-chartered union — the arc this course teaches begins in a union hall, not in a party office.",
+            sourceLessonSlug: "brazil-lula-record",
+          },
+          {
+            prompt: "Before winning in 2002, how many times had Lula run for president and lost?",
+            options: ["Three — 1989, 1994, and 1998", "None — he won on his first attempt", "One — 1994", "Five — every election since 1985"],
+            correctIndex: 0,
+            explanation: "Elected 30 October 2002; took office 1 January 2003; re-elected 2006; left office 1 January 2011 after two terms.",
+            sourceLessonSlug: "brazil-lula-record",
+          },
+          {
+            prompt: "What happened on 12 July 2017?",
+            options: [
+              "Lula was convicted of corruption and money laundering by a federal trial judge in Curitiba, in a Lava Jato case",
+              "Lula was acquitted of all charges",
+              "The STF annulled Lula's convictions",
+              "Lula was inaugurated for a third term",
+            ],
+            correctIndex: 0,
+            explanation: "The appellate court (TRF-4) upheld and increased the sentence on 24 January 2018; he was imprisoned on 7 April 2018.",
+            sourceLessonSlug: "brazil-lula-record",
+          },
+          {
+            prompt: "Why was Lula barred from the 2018 presidential ballot?",
+            options: [
+              "The Ficha Limpa (Clean Record) law disqualifies candidates convicted by a collegiate court, and the TRF-4 had upheld his conviction",
+              "A constitutional two-term lifetime limit",
+              "He withdrew voluntarily",
+              "The PT had been dissolved",
+            ],
+            correctIndex: 0,
+            explanation: "Lei Complementar 135/2010. The electoral court (TSE) applied it in August–September 2018.",
+            sourceLessonSlug: "brazil-lula-record",
+          },
+          {
+            prompt: "What was the legal basis of Lula's release on 8 November 2019?",
+            options: [
+              "The STF ruled — for all defendants — that imprisonment before appeals are exhausted is unconstitutional; a procedural ruling, not a merits ruling on his case",
+              "A presidential pardon",
+              "An acquittal on the merits",
+              "Completion of his full sentence",
+            ],
+            correctIndex: 0,
+            explanation: "The decision changed when any convicted defendant may be imprisoned; it said nothing about whether his conviction was correct.",
+            sourceLessonSlug: "brazil-lula-record",
+          },
+          {
+            prompt: "On what grounds did the STF annul Lula's convictions on 8 March 2021?",
+            options: [
+              "Jurisdiction — the Curitiba court lacked jurisdiction over the cases (HC 193.726); the full bench confirmed in April 2021",
+              "New DNA evidence",
+              "A finding of factual innocence on the merits",
+              "A statute of limitations that expired in 2019",
+            ],
+            correctIndex: 0,
+            explanation: "The annulment restored his political rights. Separately, an STF panel ruled in 2021 that the trial judge had not been impartial — also a procedural ruling.",
+            sourceLessonSlug: "brazil-lula-record",
+          },
+          {
+            prompt: "What is a jurisdictional annulment NOT?",
+            options: [
+              "It is neither an acquittal nor a conviction on the merits — it says the wrong court tried the case, not whether the defendant was guilty",
+              "It is not appealable",
+              "It is not issued by courts",
+              "It is not applicable to criminal cases",
+            ],
+            correctIndex: 0,
+            explanation: "The course's rule: teach the conviction and the annulment as dated facts, and refuse to invent the merits verdict that no court issued.",
+            sourceLessonSlug: "brazil-lula-record",
+          },
+          {
+            prompt: "What is the outcome of the 30 October 2022 runoff, per Agência Brasil?",
+            options: [
+              "Lula elected president with 50.89% of the runoff vote; inaugurated 1 January 2023",
+              "Lula lost with 49.11%",
+              "The election was annulled",
+              "Lula won with 89% of the vote",
+            ],
+            correctIndex: 0,
+            explanation: "The completed arc the track has seen nowhere else: union hall → presidency → prison → annulment → presidency again, every step dated and sourced.",
+            sourceLessonSlug: "brazil-lula-record",
+          },
+        ],
+      },
+    },
   ],
 };
