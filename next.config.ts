@@ -10,6 +10,17 @@ const nextConfig: NextConfig = {
     // instead of silently redirecting. Requires this flag in Next 16.
     authInterrupts: true,
   },
+  // The state-standards finder moved from /standards to /academic-standards (and its explorer
+  // sub-route with it). This 308 keeps every existing bookmark, external link, and OG share
+  // resolving. It is a same-app route move, NOT a cross-tenant by-id/slug lookup, so a permanent
+  // redirect is correct here — the isolation "never redirect" rule is about existence-leaking
+  // tenant lookups, which this is not.
+  async redirects() {
+    return [
+      { source: "/standards", destination: "/academic-standards", permanent: true },
+      { source: "/standards/:path*", destination: "/academic-standards/:path*", permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

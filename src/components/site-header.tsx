@@ -60,10 +60,15 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
     { href: "/instructors", label: "Instructors" },
   ];
 
-  // Only rendered for instructors/brand admins/the platform owner (canTeach).
+  // Only rendered for instructors/brand admins/the platform owner (canTeach). The two
+  // standards links point at the same shared dataset from opposite ends: the per-state finder
+  // (pick a state) and the cross-state explorer (one searchable table across every state). One
+  // array feeds both the desktop dropdown (NavMenu) and the mobile drawer (MobileNav).
   const teachItems: NavItem[] = [
     ...(session && canTeach ? [{ href: "/teach", label: "Teach", accent: true }] : []),
     ...(session && canTeach ? [{ href: "/help", label: "Help" }] : []),
+    ...(session && canTeach ? [{ href: "/academic-standards", label: "Standards by state" }] : []),
+    ...(session && canTeach ? [{ href: "/academic-standards/matrix", label: "Standards explorer" }] : []),
     ...(session && canAdmin ? [{ href: "/admin", label: "Admin", accent: true }] : []),
   ];
   const showTeachMenu = Boolean(session) && canTeach && teachItems.length > 0;

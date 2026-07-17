@@ -26,7 +26,7 @@ import {
 import { StandardsActions } from "@/components/standards-actions";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// /standards — the state-standards finder: a teacher, homeschooler, or administrator picks
+// /academic-standards — the state-standards finder: a teacher, homeschooler, or administrator picks
 // their state and sees which courses meet which of that state's standards, filterable by
 // subject and course, printable and copyable for a state filing.
 //
@@ -63,7 +63,7 @@ function href(params: { state?: string; subject?: string; course?: string }): st
   if (params.subject) qs.set("subject", params.subject);
   if (params.course) qs.set("course", params.course);
   const s = qs.toString();
-  return s ? `/standards?${s}` : "/standards";
+  return s ? `/academic-standards?${s}` : "/academic-standards";
 }
 
 /** Normalize ?state= to a real code, or null. Anything unrecognizable 404s (never redirects). */
@@ -85,8 +85,8 @@ export async function generateMetadata({
 
   const title = state ? `${jurisdictionName(state)} standards alignment` : "Find your state's standards";
   const description = state
-    ? `Which ${jurisdictionName(state)} standards the ${brand} courses cover — the exact code, the standard's own words, and the lesson that covers it.`
-    : `Pick your state and see which ${brand} courses meet which of its standards — exact codes, verbatim text, and source links, printable for a state filing.`;
+    ? `Which ${jurisdictionName(state)} standards the ${brand} courses cover: the exact code, the standard's own words, and the lesson that covers it.`
+    : `Pick your state and see which ${brand} courses meet which of its standards. Exact codes, verbatim text, and source links, printable for a state filing.`;
   return {
     title,
     description,
@@ -171,10 +171,15 @@ function PickerView({
           Find your state&apos;s standards
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
-          Pick your state to see which {brand} courses meet which of its published standards —
+          Pick your state to see which {brand} courses meet which of its published standards:
           the exact code, the standard&apos;s own words, the lesson that covers it, and a link to
           the source document. Built for teachers, homeschoolers, and administrators; printable
           and copyable for a state filing.
+        </p>
+        <p className="mt-4 text-base">
+          <Link href="/academic-standards/matrix" className={textLink} style={accent}>
+            Prefer one searchable table across every state? Open the standards explorer →
+          </Link>
         </p>
       </header>
 
@@ -212,13 +217,13 @@ function PickerView({
         aria-labelledby="honesty-short"
       >
         <h2 id="honesty-short" className="text-lg font-bold">
-          How this map is made — and why most states aren&apos;t on it yet
+          How this map is made, and why most states aren&apos;t on it yet
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
           We map a state only after fetching its actual standards documents and checking each
           standard against actual lesson content. Nothing is cited from memory, partial coverage
           is labelled as loudly as full coverage, and each framework shows the date it was
-          retrieved. That takes time per state — so states appear here as their mapping is
+          retrieved. That takes time per state, so states appear here as their mapping is
           verified, not before. The courses themselves work anywhere; only the paperwork mapping
           is state-by-state.
         </p>
@@ -309,10 +314,10 @@ function ComingView({
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
           {mappedElsewhere
-            ? `${name}'s standards have been mapped, but none of the standards rest on courses ${brand} currently publishes — so there is nothing we can honestly show you here yet.`
+            ? `${name}'s standards have been mapped, but none of the standards rest on courses ${brand} currently publishes, so there is nothing we can honestly show you here yet.`
             : isNext
               ? `${name} is next in the queue. We haven't published its mapping yet because our rule is fetch-then-verify: every code is retrieved from ${name}'s own standards documents and checked against actual lesson content before it appears here.`
-              : `We haven't mapped ${name}'s standards yet. Every state gets the same treatment: fetch the actual standards documents, transcribe each code verbatim, and check it against actual lesson content — we publish nothing before that is done.`}
+              : `We haven't mapped ${name}'s standards yet. Every state gets the same treatment: fetch the actual standards documents, transcribe each code verbatim, and check it against actual lesson content, and we publish nothing before that is done.`}
         </p>
       </header>
 
@@ -322,12 +327,12 @@ function ComingView({
         </h2>
         <ul className="mt-3 list-disc space-y-2.5 pl-5 text-sm leading-relaxed text-neutral-700 dark:text-neutral-300">
           <li>
-            The courses work in {name} today — standards mapping changes the paperwork, not the
+            The courses work in {name} today. Standards mapping changes the paperwork, not the
             teaching. Every course publishes its sources, so you can check any lesson against your
             own state&apos;s requirements.
           </li>
           <li>
-            The mapped states below show exactly what a finished mapping looks like — codes,
+            The mapped states below show exactly what a finished mapping looks like: codes,
             verbatim standard text, per-lesson evidence, and honest &ldquo;partial&rdquo; labels.
             {statesHere.length > 0 ? " Use them as the template for your own crosswalk." : ""}
           </li>
@@ -336,7 +341,7 @@ function ComingView({
             return (
               <li key={code}>
                 <Link href={href({ state: code })} className={textLink} style={accent}>
-                  {jurisdictionName(code)} — {stats.total} standards mapped
+                  {jurisdictionName(code)}: {stats.total} standards mapped
                 </Link>
               </li>
             );
@@ -407,7 +412,7 @@ function StateView({
           {name} standards alignment
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-neutral-700 dark:text-neutral-300">
-          Designed for high school. Below is every {name} standard these courses cover — the
+          Designed for high school. Below is every {name} standard these courses cover: the
           exact code, the standard&apos;s own words, and the lesson that covers it. Where we only
           cover part of a standard, it says so, and says which part.
         </p>
@@ -459,10 +464,9 @@ function StateView({
           </li>
           <li>
             <strong>Standards get revised.</strong> A code can be renumbered or its wording
-            changed without notice — Indiana currently publishes two live editions of several of
-            its high-school standards documents, and their text differs. Confirm anything you file
-            against your own jurisdiction&apos;s current requirements, using the source links
-            below.
+            changed without notice, and some states publish more than one live edition of the same
+            document. Confirm anything you file against your own jurisdiction&apos;s current
+            requirements, using the source links below.
           </li>
           <li>
             <strong>We would rather claim less.</strong> Where the courses only partly cover a
@@ -649,7 +653,7 @@ function StateView({
       <section className="mt-12 rounded-2xl border border-neutral-200 p-6 dark:border-neutral-800 print:hidden">
         <h2 className="text-xl font-bold">See it for yourself</h2>
         <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
-          Don&apos;t take the mapping on trust — open the lesson and check it against the standard.
+          Don&apos;t take the mapping on trust. Open the lesson and check it against the standard.
           Every course publishes its sources too.
         </p>
         <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">

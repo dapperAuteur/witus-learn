@@ -1460,7 +1460,7 @@ magnet below is priced at exactly $3, not $2.
 answer keys, sub plans, test prep, bell ringers, primary-source analysis sets. Teachers search by
 **grade band + subject + specific topic** ("Great Migration unit 8th grade", "Constitution
 worksheets high school", "Indiana government") and, for the serious buyers, **by standard code** —
-which is exactly the search our \`/standards\` work was built to win.
+which is exactly the search our \`/academic-standards\` work was built to win.
 
 **Who buys:** classroom teachers spending their own money or small school allotments,
 homeschool parents (a large and underserved TpT segment — our catalog's actual design center), and
@@ -1503,7 +1503,7 @@ Machine (same method the standards work uses for in.gov/azed.gov), fetched 2026-
 | --- | --- |
 | Credits/copyright/attribution page inside the PDF naming Learn.WitUS.Online as the source curriculum | "Buy the full course at learn.witus.online" anywhere on TpT |
 | APA 7 citations and a \`## Sources\` bibliography (some references naturally live at learn.witus.online) | Hyperlinks to any page whose job is to sell (course sales pages, pricing pages) |
-| Links to **free supplemental content** that genuinely supports the printed lesson (the free \`/standards\` finder, the free Great Migration interactive map) — provided those pages are verifiably accessible without login | Requiring a Learn.WitUS account to use any part of the packet |
+| Links to **free supplemental content** that genuinely supports the printed lesson (the free \`/academic-standards\` finder, the free Great Migration interactive map) — provided those pages are verifiably accessible without login | Requiring a Learn.WitUS account to use any part of the packet |
 | Brand identity: store name, logo, "From the Learn.WitUS.Online cited-curriculum catalog" tagline on covers and in descriptions | Selling Learn.WitUS subscriptions or course access through TpT listings |
 | Same-or-higher pricing elsewhere for the same PDF | Selling the identical packet cheaper on learn.witus.online |
 
@@ -1570,7 +1570,7 @@ as the template*
   \`feat/standards-az-ar\` branch (user-task 115) — their listings can cite codes **after BAM merges
   it**. The other 47 states' listings ship with NO standards claims and a truthful line: "Standards
   alignment for <state> is in progress — see our verified-alignment methodology." Never imply more.
-- **Funnels toward:** neighboring-state units, the general civics courses, and the live \`/standards\`
+- **Funnels toward:** neighboring-state units, the general civics courses, and the live \`/academic-standards\`
   finder (free, supplemental, compliant to link).
 - **Effort note:** with the Indiana packet as template, each additional state is a content-swap, not
   a redesign — realistic at ~2–3 hours per state from the existing course files.
@@ -1648,7 +1648,7 @@ Standard TpT practice: bundle at ~25–30% off the sum of parts, list only after
 1. **Standards claims: 2 states live, 2 pending, 47 absent.** Indiana (\`in.ts\`) and D.C. (\`dc.ts\`,
    Commodity-Map-only — irrelevant to these packets) are in main. Arizona + Arkansas are complete
    but sit on un-merged \`feat/standards-az-ar\` (user-task 115). Every packet's standards page names
-   Indiana only, links the free \`/standards\` finder for currency, and says the coverage grade
+   Indiana only, links the free \`/academic-standards\` finder for currency, and says the coverage grade
    (full/partial) out loud — including the partial-coverage notes verbatim. **No packet may imply
    alignment beyond the mapped states.** (D.C.'s civics/history mapping hasn't been done at all —
    \`dc.ts\` says so — so D.C. is not cited in these packets either.)
@@ -1660,7 +1660,7 @@ Standard TpT practice: bundle at ~25–30% off the sum of parts, list only after
    learn.witus.online (or anywhere). Simplest compliant posture: the PDFs are TpT-exclusive; the
    website sells the interactive courses, which are a different product.
 4. **Link liveness is a seller obligation.** Any URL inside a PDF (archives, .gov sources, the
-   /standards finder, the migration map) must stay live or TpT can refund + deactivate the product.
+   /academic-standards finder, the migration map) must stay live or TpT can refund + deactivate the product.
    The supplemental Learn.WitUS links must be verified publicly accessible **without login** before
    upload — flagged in task 122.
 5. **Effort per packet:** the four built packets averaged 7–9 markdown files each; converting to

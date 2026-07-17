@@ -164,3 +164,35 @@ export interface ScopedFramework {
   framework: StandardsFramework;
   alignments: ScopedAlignment[];
 }
+
+/**
+ * One flattened (state x standard x course) cell of the cross-state matrix — the row shape the
+ * /standards/matrix explorer browses. Produced by flattenAlignments() from the SAME scoped groups
+ * the per-state finder renders, so the tenant boundary is inherited, not re-implemented: a row can
+ * only exist for a course this tenant publishes. One standard covered by three of a tenant's
+ * courses becomes three rows.
+ */
+export interface MatrixRow {
+  /** Stable, unique key: `${frameworkId}::${code}::${courseSlug}`. */
+  id: string;
+  state: StateCode;
+  /** The jurisdiction as displayed (e.g. "New York"). */
+  stateName: string;
+  frameworkId: string;
+  /** The framework's published title. */
+  frameworkName: string;
+  subject: Subject;
+  /** The standard's code, exactly as printed. */
+  code: string;
+  /** The standard's verbatim text (never altered — display only). */
+  text: string;
+  coverage: Coverage;
+  /** Present when coverage is "partial": exactly what is and is not covered. */
+  note?: string;
+  /** Deep link to the source document a teacher can open to check the claim. */
+  sourceUrl: string;
+  /** The day this framework's codes and text were retrieved from the publisher. */
+  fetchedOn: string;
+  /** The single course (this tenant's) that this row claims coverage for. */
+  course: AlignedCourseLike;
+}
