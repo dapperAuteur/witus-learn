@@ -898,6 +898,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches getting involved where you live, Pennsylvania edition — legislators, and especially the township supervisors, borough or city council, and county commissioners, because Pennsylvania has no citizen initiative.",
     courseSlugs: ["state-civics-pa"],
     lessons: ["Pennsylvania Civics, Lesson 7 · Get involved where you live in Pennsylvania"],
+  },
   // ── State civics: Texas (state-civics-tx was written FROM Texas's own sources) ──
   // NOTE: Texas's high-school civics anchor is the United States Government course (§113.44),
   // whose standards are overwhelmingly about the FEDERAL system. Two of them, however, name state
