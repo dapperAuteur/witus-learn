@@ -1189,6 +1189,30 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   say so; Arizona's HS.C2.5 (AZ-vs-US rights comparison) is rejected despite being the flagship's
   home framework; U.S. History Since 1929 starts too late for the Gilded Age labor units. **No
   migration, no seed.**
+- 🔧 **Texas + Florida mapped — states #8 and #9, both fully bespoke** (\`feat/standards-tx-fl\`) —
+  \`/standards?state=TX\` and \`?state=FL\` flip from "not mapped yet" to real pages. **Texas: 56
+  standards (31 full, 25 partial) across 8 TEKS frameworks** — Texas writes its own TEKS for every
+  subject and has **never** adopted Common Core or NGSS. Confirmed the current social-studies TEKS
+  are the **Nov-2022 SB3-aligned "Adopted 2022"** version (effective Aug 1, 2024 — each section's
+  TexReg source line checked): US Government §113.44 (the \`state-civics-tx\` flagship maps to
+  (d)(7)(H)/(d)(9)(A), which name state & local govt), World Geography §113.43 (the Commodity Map's
+  strongest home), World History §113.42, US History §113.41, Economics §113.31, English II §110.37,
+  Health I §115.38, and PE §116.62/64 (knowledge-side only), all from the **TEA "currently in effect"
+  rule PDFs**. **Florida: 42 standards (25 full, 17 partial) across 7 frameworks** — Florida is
+  bespoke twice over: **B.E.S.T.** (ELA/math, 2020) and **NGSSS** (🔴 NGSSS ≠ NGSS) for
+  science/social studies. Civics & Government SS.912.CG (2023; \`state-civics-fl\` flagship maps to
+  CG.3.15/3.10/2.9; CG.2.11 "bias, omission, emotional appeal" is the media-literacy home), World
+  History SS.912.W (Opium Wars via W.6.7; the trans-Atlantic slave trade; fall of communism),
+  American History SS.912.A (the labor movement A.3.9), **African American History SS.912.AA — the
+  politically live 2023-added strand, cited factually and dated** (triangular trade, Great Migration,
+  Harlem Renaissance), Geography SS.912.G, Economics SS.912.E, and B.E.S.T. ELA Grade 10 (2020).
+  flrules/CPALMS are bot-walled and fldoe.org Akamai-blocks tooling, so both docs were transcribed
+  from **Wayback** captures (snapshots recorded in \`data/fl.ts\`); **every benchmark retrieved
+  verbatim — none excluded**. Honest gaps published per state: neither state's science standards
+  fetched (fetch-or-don't-cite); TX Grade 7 Texas History §113.20 and FL Grade 7 Civics SS.7.CG (the
+  flagships' fullest homes) deferred; TX has no citizen-initiative standard and FL no
+  direct-democracy benchmark. **NEXT_UP advanced NY/PA → OH/GA** (⚠️ merge-coordinates with
+  \`feat/standards-ny-pa\`, which also edits that line). **No migration, no seed.**
 
 - 🔧 **New York + Pennsylvania mapped — states #6 and #7** (\`feat/standards-ny-pa\`) —
   \`/standards?state=NY\` and \`?state=PA\` now render real pages: two new data files +
