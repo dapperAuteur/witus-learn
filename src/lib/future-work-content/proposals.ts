@@ -662,6 +662,1071 @@ for young students without email._`,
     provenance: "plans/future-courses/home-school-pricing.md",
   },
   {
+    key: "pan-africanism-track-proposal",
+    title: "Pan-Africanism — course track proposal",
+    summary: "A proposed \"Pan-Africanism\" track: one built anchor course plus eight follow-on courses, each",
+    body: `# Pan-Africanism — course track proposal
+
+A proposed **"Pan-Africanism"** track: one built anchor course plus eight follow-on courses, each
+taking a section of the anchor and giving it the room it deserves. From BAM's direction: each
+World-History topic becomes a SERIES — the anchor is the movement's overview/entry point; the
+follow-ons go deep.
+
+**Nothing below is built except the anchor.** These are proposals — pick which to author, and in
+what order.
+
+---
+
+## The anchor (built, \`content/pan-africanism\`)
+
+**Pan-Africanism: The Idea, the Movement, the Reckoning** (Culture & History) — 6 sections,
+16 teaching lessons, 6 quizzes (15-question banks, 90 questions). The full arc: 19th-century roots
+(Cuffe vs the ACS, Ethiopianism, Blyden) → Williams's 1900 London conference → Du Bois's
+Congresses and Manchester 1945 → Garvey and Du Bois taught honestly (both halves of the trial;
+the feud's structural questions) → Nkrumah, Ghana 1957, OAU 1963 → AU 2002 → Négritude and
+Rastafari (symbol vs fact) → the reckoning (five structural tensions; the strongmen named with
+hedged numbers).
+
+**The anchor's real payload is a reusable audit method** — every course in this track should keep
+it, so the track compounds instead of being eight disconnected biographies:
+
+1. **Quotes: verbatim-verified or explicitly flagged, never reconstructed.** (The anchor's
+   set pieces: the "Look to Africa" prophecy that appears in none of Garvey's located writings;
+   Nkrumah's midnight-speech transcription variance; Soyinka's variously-worded tigritude quip.)
+2. **Contested numbers taught as contested, with the range and the source named.** (UNIA
+   membership; Amin's dead; Camp Boiro's dead.)
+3. **Two documented truths held at once, neither canceling.** (Garvey's ambition AND his
+   conviction; Nkrumah's liberation AND his prisons; the OAU's liberation wars AND its silence.)
+4. **Symbol and fact in separate ledgers, both read.** (Ethiopia; the black star; the
+   red-black-green.)
+
+A student who has done the anchor plus any three follow-ons should be able to pick up any new
+pan-African claim — a viral quote, a membership figure, a hero narrative — and audit it unassisted.
+
+**Cross-links, not duplication.** Two sibling anchors are already shipped and the track must not
+re-teach them: **Africa Before Colonization: The Documented Record**
+(\`scripts/data/africa-before-colonization-course.ts\` — the deep history the movement invoked:
+Kush, Aksum, Mali, Great Zimbabwe, Adwa, and the "how we know" toolkit) and **Afrocentricity: How
+to Evaluate a Contested Paradigm** (\`scripts/data/afrocentricity-course.ts\` — the Diop/Asante
+scholarly paradigm debate). Every follow-on that touches deep history or the Kemet debate points
+at those courses instead of duplicating them.
+
+---
+
+## The follow-ons (proposed, in recommended build order)
+
+### 1. The Pan-African Congresses, 1900–1945 (and 1974/2014)
+**Teaches uniquely:** the movement's institutional spine as a *documents course* — the 1900
+Address, the 1919/1921/1923/1927 resolutions, Padmore's 1947 Manchester report read as primary
+sources, plus the post-independence congresses the anchor skips (Dar es Salaam 1974, Accra 2014)
+where the diaspora/continent power balance visibly inverts. The anchor gives the arc; this course
+teaches students to *read the resolutions themselves* and watch the demands escalate decade by
+decade — the single best primary-source close-reading exercise the whole track offers.
+**Sourcing strength:** excellent — the strongest in the track. The congress documents are
+published (Padmore's *Colonial and Coloured Unity* is in print; the 1919–27 resolutions are
+reprinted in Du Bois collections and in Adi & Sherwood's *The 1945 Manchester Pan-African Congress
+Revisited*, which includes delegate lists and session minutes). No translation needed.
+**What's contested:** attendance figures and delegate counts for 1921–27 vary by source (report
+ranges); how much causal weight Manchester deserves for decolonization (historians differ —
+supply the doctrine-network-nerve framing, not sole causation); the status of the 1974 and 2014
+congresses as "real" successors is argued inside the movement itself.
+
+### 2. Garvey and the UNIA: Rise, Fall, Afterlives
+**Teaches uniquely:** the largest Black mass movement ever built, at full depth — the UNIA's
+actual business operations and organizational machinery (Negro Factories Corporation, the
+divisions system, Liberty Hall), the complete Black Star Line record from ship purchase to
+suspension, the trial transcript, Amy Ashwood AND Amy Jacques Garvey as principals rather than
+footnotes, and the afterlives (Rastafari, the Nation of Islam's debts to Garveyism, Ghana's black
+star, hip-hop's Garvey revivals). The anchor's two lessons become a full forensic case study in
+holding "real offense" and "targeted prosecution" simultaneously.
+**Sourcing strength:** excellent — Hill's *Marcus Garvey and UNIA Papers* (multi-volume,
+documentary) is the gold standard; Grant (2008) and Cronon (1955) give narrative spine; the FBI
+files (Hoover's 1919 memo) are published. The trial record exists.
+**What's contested:** membership numbers (claims to six million vs far lower paid-member counts —
+teach as the anchor does); how to weigh the KKK meeting (strategy vs betrayal — present the
+documented reactions, don't adjudicate motive); posthumous exoneration campaigns (a US pardon
+push exists in recent years — date any claim about its status; verify before asserting anything
+happened).
+
+### 3. Du Bois: The Long Arc (1868–1963)
+**Teaches uniquely:** the one biography that spans the entire movement — 1900 London to Accra
+1963 in a single life. Full treatment of what the anchor compresses: the Talented Tenth and its
+later self-revision, *The Crisis* years, the congress diplomacy, the 1951 indictment and passport
+war, the late Marxist turn and CPUSA membership at 93, the Encyclopedia Africana, Ghanaian
+citizenship. Also the honest ledger: his elitism (self-admitted), the Garvey feud's conduct, his
+documented late defenses of Stalin — the course must not sand its own subject smooth.
+**Sourcing strength:** excellent — Lewis's two-volume Pulitzer biography, Du Bois's three
+autobiographies (which contradict each other in documented ways — itself a teachable
+source-criticism exercise), the complete Crisis archive online.
+**What's contested:** interpretation of the late-Soviet alignment (naïveté, conviction, or
+despair — attribute readings to their holders); the Washington–Du Bois debate's fairness to
+Washington; whether his renunciation of America was final or contextual.
+
+### 4. Nkrumah and the Union That Wasn't: Ghana, the OAU, and the AU
+**Teaches uniquely:** the state-power chapter at full depth — CPP organizing and Positive Action
+as a decolonization method; Ghana as pan-African HQ (Padmore's office, the 1958 conferences,
+support for liberation movements); the Congo crisis and Lumumba (the anchor's one-line mention
+becomes a full lesson: the murder, the 2001 Belgian inquiry and 2002 apology); Casablanca vs
+Monrovia in documents; the OAU's actual mechanics; the AU's architecture (Article 4(h), PSC,
+AfCFTA) with the text-vs-practice audit run properly. And the PDA/one-party/coup file, complete.
+**Sourcing strength:** strong — Nkrumah's own books (autobiography 1957, *Africa Must Unite*
+1963), Birmingham and Biney on the biography, Meredith for the debit column, OAU/AU treaty texts
+free online, the Belgian parliamentary inquiry on Lumumba published.
+**What's contested:** Nkrumah's overthrow (CIA involvement is argued — documented declassified
+material exists but is partial; state what the documents show and stop); responsibility
+apportionment for the Congo crisis; AU effectiveness claims (date everything — the institution is
+a moving target; the anchor's audit frame transfers directly).
+
+### 5. Négritude and the Black Atlantic of Letters
+**Teaches uniquely:** the cultural-movement chapter as a literature course — actual close reading
+of the *Cahier*, *Pigments*, Senghor's poems and prose, *Discourse on Colonialism*, and the
+Nardal-salon/Harlem-Renaissance transmission (Hughes, McKay's *Banjo*) in both directions. Then
+the full critique sequence (Sartre's praise-burial, Fanon's museum warning, Soyinka's tigritude,
+the créolité generation's later break with Césaire) as a live intellectual debate students can
+join rather than a settled verdict. Présence Africaine, the 1956/1959 congresses, Dakar 1966 and
+FESTAC '77 as institutional history.
+**Sourcing strength:** strong — the primary texts are all in good English translations; Kesteloot,
+Sharpley-Whiting, and Wilder are solid scholarship. One caveat: some Nardal-circle material and
+*L'Étudiant noir* itself are French-only — a translation pass is required for primary-source
+lessons beyond the canonical texts.
+**What's contested:** what négritude *is* (Senghor's essentialism vs Césaire's solidarity reading —
+the founders themselves diverge; teach the divergence); Senghor's presidency (the Dia case);
+Soyinka-quip wording (paraphrase, as the anchor does); how much the Harlem Renaissance "caused"
+négritude (influence documented, arithmetic not — avoid overclaiming).
+
+### 6. Rastafari and Ethiopia: The Symbol and the State
+**Teaches uniquely:** the anchor's best lesson expanded into the track's methods course —
+symbol-vs-fact at book length. Early Rastafari (Howell, Pinnacle, colonial persecution, the 1960
+UWI report and the 1961 mission to Africa), Ethiopia the actual state (Adwa's afterlife, the
+1935–41 occupation and diaspora mobilization, Selassie's absolutism and the 1942 abolition,
+the Derg), Shashamane and repatriation as lived practice, Grounation 1966, and the globalization
+via reggae. The Garvey-prophecy audit and the 1937 "great coward" essay get full primary-source
+treatment.
+**Sourcing strength:** strong on both halves — Chevannes, Edmonds, and Hill (1983) on Rastafari;
+Zewde on Ethiopia; Garvey's *Black Man* essays are locatable. The UWI 1960 report is published.
+**What's contested:** Selassie's death circumstances (contested — teach as the anchor does);
+Shashamane grant details (dates/acreage vary — hedge); insider/outsider tension in teaching a
+living faith respectfully while auditing its founding claims (the platform's Hoodoo posture — a
+knowledgeable-reviewer pass before publishing — is the right model here; this is the one
+follow-on that may warrant holding from publication pending review).
+
+### 7. The Diaspora and the Continent: Who Speaks for Africa?
+**Teaches uniquely:** the track's through-line tension as its own subject — the only course that
+is an *argument map* rather than a chronology. Emigration debates (1817 Philadelphia through
+Delany), the congress-era diaspora leadership, the 1958 inversion (continental leaders take the
+wheel), Malcolm X and the OAU, the AU's "sixth region" designation and its practical emptiness,
+dual citizenship and Ghana's Year of Return (2019) / Beyond the Return, diaspora remittances vs
+representation, and Afro-descendant movements in Latin America (the track's chance to break the
+US-centric frame — Colombia, Brazil, the Garifuna).
+**Sourcing strength:** moderate — the historical halves are well-sourced from the same corpus as
+courses 1–4; the contemporary half (Year of Return figures, sixth-region mechanics, remittance
+data) needs primary AU documents and dated statistics, and Latin American Afro-descendant
+material is thinner in English.
+**What's contested:** almost everything contemporary — Year of Return economic-impact figures are
+government claims (attribute); "sixth region" status is aspirational text vs practice; who counts
+as diaspora (the AU definition vs lived identities). Build AFTER the historical courses so the
+audit method is second nature.
+
+### 8. After Independence: The Strongmen, the Critics, and the Reckoning
+**Teaches uniquely:** Section 6 of the anchor at full depth — the hardest and most valuable
+course in the track. Case files: Nkrumah's Ghana (PDA, Danquah, the 1964 referendum, the coup),
+Touré's Guinea (1958 heroism → Camp Boiro → Diallo Telli), Amin's OAU chairmanship, Mobutu's
+authenticité, Mengistu (the Derg as Ethiopia's own reckoning), Mugabe's liberation-credential
+shield. Against each file, the dissident tradition that named it: Soyinka, Ngũgĩ, Achebe's
+essays, the survivors' memoirs, the lawyers and oppositions. The course's thesis is the anchor's
+rule 3: honesty about the strongmen IS the pan-African tradition — its dissident half.
+**Sourcing strength:** adequate but demanding — Meredith and Schmidt are solid; Amnesty/ICJ
+reports exist for Amin; Camp Boiro documentation leans on survivor memoirs (French) and needs
+careful attribution. Every number in this course must carry a source and a range.
+**What's contested:** nearly every death toll (present ranges, attribute); CIA/foreign-hand
+claims in the coups (document what's declassified, refuse the rest); Mugabe and Mengistu remain
+politically live in their countries — date claims, attribute judgments, and expect strong
+learner reactions. **Build LAST: it inherits the audit method from every course before it, and a
+celebration-conditioned audience needs the earlier courses first.**
+
+---
+
+## Two deliberate omissions, so the reasoning is on the record
+
+- **A standalone "Kemet/ancient-origins" course.** The Diop/Asante material and the "was ancient
+  Egypt Black?" debate are already taught, with a no-winner-declared posture, in the shipped
+  **Afrocentricity** anchor — and the deep precolonial record is in **Africa Before Colonization**.
+  A third course here would duplicate, not deepen. Cross-link instead.
+- **A "Pan-Africanism today" news course.** AfCFTA implementation, AU reform, and
+  sixth-region politics move faster than course maintenance; the contemporary material lives as
+  dated lessons inside courses 4 and 7 rather than as a standalone that rots. Revisit if the AU
+  undergoes a structural change worth a course.
+
+---
+
+## Recommended build order, and why
+
+**1 → The Congresses. 2 → Garvey & the UNIA. 3 → Du Bois. 4 → Nkrumah & OAU→AU. 5 → Négritude.
+6 → Rastafari & Ethiopia. 7 → Diaspora vs Continent. 8 → After Independence.**
+
+The reasoning:
+
+- **Start with the Congresses** because it is the best-sourced course in the track (published
+  primary documents, no translation, no living-politics risk) and it teaches the close-reading
+  habit every later course leans on. Cheapest credibility, highest method-transfer.
+- **Garvey second, Du Bois third** — the two biographies extend the anchor's most gripping
+  section while the sourcing is still gold-standard (Hill's Papers; Lewis's biography). Garvey
+  before Du Bois because the UNIA course is the bigger draw and its forensic both-halves
+  structure is the track's signature move.
+- **Nkrumah fourth** completes the political spine to the present-day AU while the treaty texts
+  and the audit frame are fresh.
+- **Négritude fifth and Rastafari sixth** widen from politics to culture once the political
+  chronology is fixed; Rastafari waits for its reviewer arrangement (see above).
+- **Diaspora-vs-continent seventh** because it is an argument map across everything prior — it
+  reads as review-plus-extension if built late, and as confusion if built early.
+- **After Independence last**, for the same reason the workers-rights track holds China and the
+  Gulf to the end: it is where a sourcing failure would be most damaging, and it lands hardest
+  on an audience that has already learned to hold two truths at once.
+
+**Track sequencing for the learner** matches the build order, with one swap: a learner who wants
+culture first can take Négritude/Rastafari immediately after the anchor without loss — the
+political courses don't depend on them.
+
+---
+
+## What BAM would need to build these responsibly
+
+1. **Nothing external for courses 1–5** — published sources and authoring time only. That is the
+   argument for starting there.
+2. **A Rastafari reviewer** (course 6) — the platform's existing Hoodoo posture applied again: a
+   knowledgeable member of the tradition reads before publishing.
+3. **A translation pass** for French material: *L'Étudiant noir* and Nardal-circle primary
+   sources (course 5), Camp Boiro survivor memoirs (course 8).
+4. **A dated-claims regime for courses 4 and 7** (AU mechanics, Year of Return, AfCFTA status):
+   every contemporary assertion carries its as-of date, per the anchor's method.
+
+---
+
+## Cross-links
+
+- Anchor course: \`scripts/data/pan-africanism-course.ts\` (branch \`content/pan-africanism\`).
+- Shipped sibling anchors (cross-link, never duplicate):
+  \`scripts/data/africa-before-colonization-course.ts\` (deep history; its own track proposal at
+  \`plans/future-courses/africa-precolonial-track-proposal.md\`) and
+  \`scripts/data/afrocentricity-course.ts\` (the paradigm debate; proposal at
+  \`plans/future-courses/afrocentricity-track-proposal.md\`).
+- Category: **Culture & History** (the anchor ships there). If the World-History series grows,
+  consider a "World History" grouping with per-topic tracks — this is the second topic after the
+  precolonial-Africa track to follow the anchor+series pattern.
+- Seed task: \`plans/user-tasks/107-seed-pan-africanism.md\`.`,
+    provenance: "plans/future-courses/pan-africanism-track-proposal.md",
+  },
+  {
+    key: "precolonial-asia-track-proposal",
+    title: "Asia Before European Colonization — course track proposal",
+    summary: "A proposed precolonial-Asia track: one built anchor course plus eight follow-on courses, each",
+    body: `# Asia Before European Colonization — course track proposal
+
+A proposed **precolonial-Asia track**: one built anchor course plus eight follow-on courses, each
+going deep where the anchor deliberately stays at orientation depth. From BAM's \`world.md\` queue,
+sibling to the Africa-precolonial track (\`africa-precolonial-track-proposal.md\`), and built on the
+same editorial spine: every claim names a civilization, a period, and a region; every number is
+attributed; hedges are explicit; the romance trap is treated as equal to the erasure trap.
+
+**Nothing below is built.** These are proposals — pick which to author, and in what order.
+
+---
+
+## The anchor (built, \`content/precolonial-asia\`)
+
+**Asia Before European Colonization: The Center of Gravity** (Culture & History) — 7 sections,
+17 teaching lessons, 7 quizzes (15-question banks), 1 exercise. Deliberately an ORIENTATION course:
+the zone map (South, East, Southeast, Central, West Asia), when each civilization flourished, the
+connective tissue (Silk Roads land + sea, the Baghdad translation movement, the Mongols), a
+dedicated no-utopia section (caste, nobi, temple bondage, the Indian Ocean slave trade, intra-Asian
+conquest), and the Great Divergence taught as a live debate.
+
+**The anchor's real payload is a reusable audit** — *who says it, in what kind of source, about
+which people, where, when, and does anything independent converge?* — plus four standing rules
+every follow-on course should inherit:
+
+1. **Never flatten.** No "Asia did X"; name the civilization, period, and region.
+2. **Attribute every number.** Maddison's shares, Hartwell's tonnage, Palais's nobi percentage —
+   estimates carry their author's name and their error bars.
+3. **Hedge the beloved claims.** The Indus script is undeciphered (and may not encode language);
+   the House of Wisdom is thinly evidenced; Genji is "often called" the first novel; chronicle
+   death tolls are expressions of catastrophe, not counts.
+4. **No utopia, no waiting room.** Hierarchy, slavery, and conquest are taught plainly; "European
+   colonization" is dated precisely (enclaves 1510–1571; territorial rule from Plassey 1757) and
+   is an escalation, not the arrival of domination.
+
+The anchor cross-links the shipped **Africa Before Colonization** anchor (same method, sibling
+track) and should cross-link each follow-on as it ships.
+
+---
+
+## Selection criteria (why these eight, and not others)
+
+A course earns a slot only if it teaches something **no other course in the track can teach**, and
+the set has to cover the anchor's whole map — not just the famous empires. The test is "does
+removing it leave a hole," and the holes each one fills:
+
+| What the track must cover | Course that anchors it |
+|---|---|
+| Deep time + the founding evidence problems (undeciphered script, text-vs-archaeology) | Ancient India |
+| The premodern economic frontier at its peak | Imperial China (Tang–Song) |
+| West Asia IS Asia; the transmission engine | Islamic Golden Age |
+| The connective tissue as its own subject; source-criticism at its best | Silk Roads |
+| Empire at maximum scale; steppe perspective; both cartoons refused | Mongol Empire |
+| The zone every survey skips; maritime/monsoon logic; how empires get forgotten | SE-Asian maritime empires |
+| Selective borrowing; states that were never colonized by Europe | Japan & Korea |
+| The capstone debate; how economic history is actually argued | The Great Divergence |
+
+Deliberate omissions, so the reasoning is on the record:
+
+- **A dedicated Central Asia / steppe course.** Genuinely tempting (Sogdians, Turkic khaganates,
+  Timur), but its best material is already load-bearing inside Silk Roads and Mongol Empire, and
+  splitting it would spread thin sourcing thinner. **Fold it into those two; revisit if the track
+  proves out.**
+- **A dedicated Southeast Asia mainland course (Pagan, Ayutthaya, Dai Viet).** Real hole, but the
+  maritime-empires course must ship first and can carry Dai Viet's resistance story (Ming
+  occupation 1407–27) meanwhile. **Build as a second SE-Asia course only if the first performs.**
+- **Persia/Iran as its own course.** The Safavids and earlier Persian empires deserve one, but the
+  Islamic Golden Age course carries the Persian intellectual world, and the anchor's scope was
+  "before European colonization," where Iran's story (never formally colonized, heavily
+  interfered with) rhymes with the Japan/Korea/Siam lesson. **Optional later.**
+
+---
+
+## Wave 1 — build first (best sourcing, widest reuse)
+
+### 1. Ancient India: From the Indus Cities to the Guptas
+**Teaches uniquely:** the evidence problems that make deep-time history honest — an entire
+civilization known only through archaeology (Indus, script undeciphered, with the
+Farmer/Sproat/Witzel vs. Parpola dispute taught as live), the text-vs-archaeology gap for the
+Vedic period, why "Aryan invasion" died and what the migration evidence actually says (incl. the
+aDNA studies, dated and hedged), Ashoka as the first ruler whose own words survive, and the full
+zero/place-value chain the anchor could only sketch (Aryabhata → Brahmagupta → Gwalior; Bakhshali
+contested per Plofker et al. 2017).
+**Sourcing:** excellent — Kenoyer, Possehl, Thapar (2002; 2012), Plofker (2009), the edicts in
+translation (Dhammika), UNESCO site documentation.
+**Hard parts:** the Indus script and Indo-Aryan migration questions are politically charged in
+present-day India (Hindutva historiography claims both). The course must teach the evidence and
+name the dispute without adjudicating modern politics — same posture as the Afrocentricity course.
+Caste's ancient history must be taught between the two myths (neither eternal essence nor British
+invention, per Bayly 1999).
+
+### 2. Imperial China: Tang and Song
+**Teaches uniquely:** the premodern economic frontier in full — the Song "medieval economic
+revolution" (Elvin) with its primary sources (Shen Kuo 1088, Wujing Zongyao 1044, Zhu Yu, jiaozi),
+Tang cosmopolitanism (Chang'an, Dunhuang, the 781 stele), the examination system's reality vs.
+its "meritocracy" myth, and the honest ledger (Chanyuan tribute 1005, the 1127 fall of the north,
+foot binding's spread).
+**Sourcing:** excellent — Ebrey, Benn, Elvin, Hartwell (1962), Kuhn, the British Library's
+Dunhuang collections, primary texts in translation.
+**Hard parts:** resisting the "four great inventions" listicle frame (each invention needs its
+primary source and its wrinkle — movable type was real but woodblock stayed dominant); keeping
+Tang/Song distinct instead of blurring into "medieval China"; the An Lushan census-collapse
+number (36M "dead") must be taught as the anchor teaches it — a lesson in what registers count.
+
+### 3. The Islamic Golden Age: Baghdad and the Translation Movement
+**Teaches uniquely:** West Asia as Asia, and the transmission engine that moved Indian numerals
+and Greek philosophy into and through the Arabic world (al-Khwarizmi, Ibn Sina, Ibn al-Haytham,
+al-Biruni). The methodological centerpiece is the **House of Wisdom hedge**: the documented wonder
+is the two-century, society-wide movement (Gutas 1998), not one inflated building — a perfect
+whole-course case study in how institutions harden into myth.
+**Sourcing:** excellent — Gutas, Saliba (2007), Pormann & Savage-Smith (2007), primary texts in
+translation.
+**Hard parts:** the "golden age then eternal decline" frame is itself contested (Saliba) and must
+be taught as such; the era's religious politics (which caliphs patronized what, the mihna) need
+care; and the course must not become a "Muslims invented everything" listicle — same discipline as
+the inventions rule in the China course, with the transmission chain (credit the origin AND the
+messenger) as the standing pattern.
+
+---
+
+## Wave 2 — build second (the connective tissue, after the nodes exist)
+
+### 4. The Silk Roads: Land, Sea, and the Traffic in Ideas
+**Teaches uniquely:** connection as a subject in its own right, and the best source-criticism
+material in the whole track: Richthofen's 1877 coinage, Hansen's documents-first revision (most
+overland trade was local; the great cargo was religions and technologies), the Sogdian letters,
+the Belitung wreck as industrial-scale maritime proof, the Talas-751 paper story as legend vs. the
+documented mills, and plague transmission along the unified routes.
+**Sourcing:** excellent — Hansen (2012; 2020), Whitfield, Frankopan, UNESCO's 2014 corridor
+listing, museum collections (British Library Dunhuang, Asian Civilisations Museum Belitung).
+**Hard parts:** the romance pressure is enormous (the Silk Road is the most romanticized topic in
+world history); Frankopan's "axis of world history" framing should be taught as an attributed
+argument, not recited. Build AFTER China + Islamic Golden Age so the endpoints exist.
+
+### 5. The Mongol Empire: Destruction and Connection
+**Teaches uniquely:** empire at maximum scale seen from the steppe rather than from its victims'
+capitals only — and the track's hardest both-cartoons-refused problem. Chronicle death tolls read
+as expressions of catastrophe, not counts; the yam, censuses, spared artisans, and technology
+transfer taught as equally documented; Marco Polo with his hedges; the successor khanates and the
+Timurid→Mughal afterlife.
+**Sourcing:** good — Morgan (2007), Jackson (2017), May, the Secret History of the Mongols in
+scholarly translation (de Rachewiltz), Rashid al-Din in translation.
+**Hard parts:** popular sources are polluted in both directions (Weatherford's rehabilitation is
+as distorting as the barbarian cartoon); the Secret History is court literature and must be
+genre-labeled like the Nagarakretagama; atrocity numbers will tempt every quiz author toward
+false precision — the bank must test the METHOD (how to read chronicle figures), not fake counts.
+
+### 6. The Maritime Empires of Southeast Asia
+**Teaches uniquely:** the zone every survey skips, at full depth: Srivijaya (and the
+Coedès-1918 reassembly as the track's best "how history gets forgotten" case), Borobudur and the
+Sailendras, Angkor as engineered landscape (Evans 2007/2013 lidar; Zhou Daguan; Buckley's
+droughts), Majapahit and the panegyric problem, Malacca and the monsoon entrepôt logic, the Maluku
+spice monopoly, and mainland resistance (Dai Viet expelling the Ming, 1427) until a dedicated
+mainland course exists.
+**Sourcing:** good but more specialist — Coedès (1968), Hall (2011), Lockard, Coe (2003), Zhou
+Daguan (Harris trans.), the PNAS papers, UNESCO documentation.
+**Hard parts:** chronology is inscription-dependent and genuinely uncertain in places (say so);
+"Indianization" is a contested frame (older scholarship overstated Indian agency; newer work
+stresses local agency in borrowing — teach the historiography); modern nationalisms (Indonesian,
+Malaysian, Cambodian, Thai) all claim these empires, so keep the naming precise and the politics
+out.
+
+---
+
+## Wave 3 — build last (the capstones)
+
+### 7. Japan and Korea: Borrowing, Refusing, Never Colonized (by Europe)
+**Teaches uniquely:** selective adaptation as a strategy — two states in constant conversation
+with China that engineered their own courts, scripts, and institutions (Heian court culture and
+women's literature; the 700-year shogunal dual structure; Goryeo's Jikji and the Tripitaka
+Koreana; Sejong's Hangul as the world's best-documented script invention) — and the fact that
+neither was ever a European colony, which completes the anchor's precision about what "European
+colonization" was and wasn't. Ends with the Imjin War and Japan's 1910 annexation of Korea: the
+last pre-1945 colonizer of a major Asian nation was Asian.
+**Sourcing:** excellent — Totman, Seth, Palais (1996) for nobi, Swope (2009) for Imjin, UNESCO
+Memory of the World (Jikji), the Hunminjeongeum itself.
+**Hard parts:** Japan–Korea history is a live diplomatic wound (textbook wars, colonial-era
+disputes); the course must date claims, attribute estimates (nobi shares, Imjin casualties), and
+adjudicate nothing. Sakoku must be taught as managed trade, not the sealed-country myth. The
+"often called the first novel" hedge on Genji is non-negotiable.
+
+### 8. The Great Divergence: When and Why "the West" Pulled Ahead
+**Teaches uniquely:** the capstone — how economic history is actually argued. Pomeranz (2000) at
+full depth (the like-with-like method, the ecological bottleneck, coal + colonies), the named
+pushback (Broadberry/Guan/Li 2018; Allen's wage series with the rice-vs-wheat basket problem),
+Maddison and the Maddison Project as method (how you reconstruct GDP for 1700, and why the error
+bars are wide), Frank's ReOrient and Abu-Lughod's 13th-century world system, and the
+colonialism-and-deindustrialization debates (Bengal's textiles) taught with the causation
+disputes named. **No winner declared** — the deliverable is the student's ability to read a
+contested quantitative literature.
+**Sourcing:** excellent and entirely in print — the debate IS the reading list.
+**Hard parts:** this is the track's most intellectually demanding course and assumes the anchor
+plus ideally the China course; numbers will tempt false precision at every turn (the course
+should teach the Maddison Project's revision history as content, not embarrassment); it must not
+collapse into either "the West cheated" or "the West earned it" — both are slogans, and the
+scholarship is better than both.
+
+---
+
+## Recommended build order, and why
+
+**1 → Ancient India. 2 → Imperial China (Tang–Song). 3 → Islamic Golden Age. 4 → Silk Roads.
+5 → Mongol Empire. 6 → SE-Asian maritime empires. 7 → Japan & Korea. 8 → The Great Divergence.**
+
+- **Start with Ancient India and China** because they are the best-sourced, they deepen the
+  anchor's two longest sections, and each teaches a method module the rest reuse (India: evidence
+  problems and charged historiography; China: primary-sourced invention claims and register-vs-
+  reality numbers).
+- **Islamic Golden Age third**, because it is the transmission hub the two connective-tissue
+  courses need in place.
+- **Silk Roads and Mongols in the middle** — they connect nodes, so the nodes should exist first;
+  each also leans on the other (the Pax runs on the roads; the roads' unification is Mongol).
+- **SE Asia sixth** rather than earlier only because its sourcing is the most specialist; its
+  content is the track's most distinctive and it must not be cut.
+- **Japan & Korea seventh** as the counter-case course (never colonized by Europe; colonizer in
+  1910), landing hardest once the student has the whole map.
+- **The Great Divergence last, always.** It is the anchor's Section 7 grown into a full course,
+  and it only works after the student has seen the economies it argues about.
+
+**Learner sequencing** differs from build order: anchor first, then any of 1–7 in any order, then
+**The Great Divergence last**, because "how do we even know who was richer?" is the right final
+question before a student re-reads every confident claim they have ever heard about why the
+modern world looks the way it does.
+
+---
+
+## What BAM would need to build these responsibly
+
+1. **A standing editorial rule for politically live historiography** (Indus/Aryan questions in
+   Indian politics; Japan–Korea colonial disputes; modern nationalist claims on SE-Asian empires):
+   *teach the evidence, name the dispute, date every claim, adjudicate nothing.* The anchor and
+   the Afrocentricity course already model this — a proven pattern in this repo.
+2. **Translation-dependence awareness**: the primary sources for Mongols (Persian, Chinese),
+   SE Asia (Old Malay, Khmer, Chinese), and Korea/Japan are used in scholarly translation; cite
+   the translation used, as the anchor does (Harris's Zhou Daguan, de Rachewiltz's Secret
+   History).
+3. **No reviewer requirements** for Waves 1–2 (unlike the workers-rights track's South Africa
+   course) — the contested material here is historiographical, not living-community-sensitive.
+   Japan & Korea (Wave 3) would benefit from a sensitivity read on the Imjin/1910 lessons.
+4. **Nothing else.** Every course above is buildable from published scholarship already cited in
+   the anchor's bibliographies. That is the argument for this track: the anchor did the source
+   auditing once, and the follow-ons inherit it.
+
+---
+
+## Cross-links
+
+- Anchor course: \`scripts/data/asia-before-european-colonization-course.ts\` (branch
+  \`content/precolonial-asia\`, slug \`asia-before-european-colonization\`, Culture & History).
+- Sibling track: \`africa-precolonial-track-proposal.md\` (anchor shipped) — same method, and the
+  two anchors should cross-reference each other's "two traps" / "no utopia" lessons.
+- Seed task: \`plans/user-tasks/110-seed-precolonial-asia.md\`.
+- Category: **Culture & History**. If the track grows past ~4 courses, consider a "World Before
+  Colonization" learning path pairing it with the Africa track.
+- Source note: BAM's \`plans/future-courses/world.md\` queue (original ask).`,
+    provenance: "plans/future-courses/precolonial-asia-track-proposal.md",
+  },
+  {
+    key: "precolumbian-mesoamerica-track-proposal",
+    title: "Pre-Columbian Mesoamerica — course track proposal",
+    summary: "A proposed Pre-Columbian Mesoamerica track: one built anchor course plus seven follow-on",
+    body: `# Pre-Columbian Mesoamerica — course track proposal
+
+A proposed **Pre-Columbian Mesoamerica** track: one built anchor course plus seven follow-on
+courses that go deep where the anchor goes wide. The anchor surveys the whole region and installs
+the method; each follow-on earns its slot only if it teaches something no other course in the
+track can.
+
+**Nothing below is built except the anchor.** These are proposals — pick which to author, and in
+what order.
+
+---
+
+## The anchor (built, \`content/precolumbian-mesoamerica\`)
+
+**Pre-Columbian Mesoamerica: Cities, Calendars, and the People Who Are Still Here** (Culture &
+History) — 7 sections, 17 teaching lessons, 7 quizzes (15-question banks; 105 questions), 1
+exercise. Olmec (mother-vs-sister as a live debate) → Aguada Fénix → Teotihuacan (the humility
+lesson: builders/language unknown) → the Maya (script, zero, Long Count; 2012 = Tortuguero
+Monument 6, a period ending, not a prophecy; the Classic collapse specific AND debated; they did
+not vanish) → the Mexica (Tenochtitlan, Triple Alliance, chinampas; sacrifice honest — the Huei
+Tzompantli real, the 80,400 refused) → Oaxaca/Purépecha + Central America beyond Mexico → the
+conquest per Restall + the demographic catastrophe as a range → "how we know" (Landa's 1562
+burning + ~4 codices, Knorozov→Coe decipherment, PACUNAM LiDAR) → "They are still here."
+
+**The anchor's real payload is a reusable audit — five moves the whole track should reuse:**
+
+1. **Name the people, place, and period** (never "ancient Mexico did X").
+2. **Ranges, not false precision** (population, sacrifice counts, dates).
+3. **Contested = say so, with a name on each side** (mother culture, collapse causes, Quetzalcoatl).
+4. **Ask what evidence class a claim stands on** — their texts / hostile witnesses / excavation /
+   instruments — and what would change it.
+5. **Present tense matters**: descendants are alive; "vanished" is a harm, not a flourish.
+
+A student who has done the anchor plus any two follow-ons should be able to hear a claim about any
+ancient civilization — Mesoamerican or not — and run the audit unprompted.
+
+---
+
+## Selection criteria (why these seven, and not others)
+
+A course earns a slot only if removing it leaves a hole the anchor cannot cover in one lesson. The
+test is depth the anchor had to compress:
+
+| What the anchor could only gesture at | Course that carries it |
+|---|---|
+| 3,000 years of Maya history compressed into 3 lessons | **The Maya** (deep) |
+| The Mexica state, economy, daily life, and their own literature | **The Aztec/Mexica** |
+| The Classic-era central-Mexican world beyond one city profile | **Teotihuacan & the Classic cities** |
+| Formative Mesoamerica before and beside the Olmec | **The Olmec & early Mesoamerica** |
+| The intellectual systems as systems, not highlights | **Writing, calendars & astronomy** |
+| The conquest as a full course with the sources read closely | **The Conquest & its myths** |
+| The living peoples — the anchor's final lesson, expanded to a course | **Indigenous Central America today** |
+
+Two deliberate omissions, so the reasoning is on the record:
+
+- **The Inca / South America.** Constantly requested alongside Mesoamerica, but it is a different
+  culture area with different sources (khipu, no deciphered script, Spanish chronicles) — it
+  deserves its own track, not a bolt-on course that would blur exactly the culture-area concept the
+  anchor teaches.
+- **A "Mesoamerican mythology" course.** The gods sell, but decontextualized mythology is the
+  spectacle trap with better production values. Religion is taught inside each culture course
+  (Fifth Sun in the Mexica course, the Hero Twins in the Maya course) where it stays anchored to
+  sources and practices.
+
+---
+
+## Wave 1 — build first (highest teaching value per unit of sourcing pain)
+
+### 1. The Maya: Three Thousand Years — *the deep course*
+**Teaches uniquely:** the full arc the anchor compressed: Preclassic origins (Aguada Fénix, El
+Mirador) → Classic city-states with the Tikal/Calakmul geopolitics told campaign by campaign from
+the inscriptions → Terminal Classic transformations → Postclassic Chichén Itzá/Mayapán → the
+colonial centuries (Landa, the Caste War) → the 20th-century genocide and today's language
+movement. The only course where students read translated primary Maya texts at length (stelae,
+the Popol Vuh, the Books of Chilam Balam).
+**Why it earns a slot:** the Maya are the best-documented Indigenous civilization in the hemisphere
+— the one place the track can do *history from Indigenous written sources*, which is the skill
+nothing else teaches.
+**Hard parts:** scope discipline (this could swallow the track); the temptation to teach only the
+Classic. Sourcing is excellent: Martin & Grube, Coe & Houston, Christenson's *Popol Vuh*, Restall's
+*Maya Conquistador* for the colonial Maya voice.
+
+### 2. The Aztec/Mexica: An Empire in One Century
+**Teaches uniquely:** a complete anatomy of one Indigenous state: Mexica history from migration to
+1521 told primarily from Nahua sources (Codex Mendoza, Florentine Codex, the annals tradition,
+Nahuatl poetry); the economy (markets, pochteca, tribute, chinampas); law, education, gender, and
+slavery in Mexica society; religion including sacrifice with the anchor's honesty at full depth;
+and the historiography problem — almost everything we "know" passed through colonial filters, so
+the course doubles as a lab in reading filtered sources.
+**Why it earns a slot:** the anchor gave the Mexica three lessons; the sources could sustain thirty.
+This is also where Townsend's *Fifth Sun* approach — Aztec history from Nahuatl annals — can be
+taught as a method.
+**Hard parts:** the sacrifice material must keep the anchor's calibration (real, audited, neither
+lurid nor laundered). Sourcing is superb and mostly in English translation: Smith, Berdan,
+Townsend, León-Portilla, Sahagún (Anderson & Dibble), Durán.
+
+### 3. The Conquest & Its Myths
+**Teaches uniquely:** the anchor's Section 6 as a full source-critical course: Cortés's letters,
+Díaz, and the Nahua accounts (Lockhart's *We People Here*, the Florentine Codex Book 12, the
+Lienzo de Tlaxcala) read **against each other**, myth by myth through Restall; then the forgotten
+sequels — the Purépecha submission and Tarascan colonial deal, Alvarado in Guatemala, the Mixtón
+war, northern resistance, and Nojpetén 1697. Ends with the demographic-catastrophe debate taught
+as a numbers-literacy unit (Cook & Borah vs. Henige, *Numbers from Nowhere*).
+**Why it earns a slot:** it is the track's methods-capstone — the one course whose whole subject is
+"how do you know what happened when every source is motivated?" That skill transfers to reading
+the news.
+**Hard parts:** none severe; the literature is rich and the debates are mapped. Keep the
+Quetzalcoatl-myth treatment labeled contested, as the anchor does.
+
+---
+
+## Wave 2 — build second (widens the track; needs more care)
+
+### 4. Teotihuacan & the Classic Cities of Central Mexico
+**Teaches uniquely:** urbanism as a subject — what a city *is*, taught from the hemisphere's most
+startling one: Millon's mapping project, apartment-compound life, the multiethnic barrios, the
+obsidian economy, the state-without-portraits governance debate (kings vs. collective rule), the
+378 entrada and Teotihuacan's Maya shadow, the fall, and the afterlife of the ruins (Aztec
+pilgrimage → Porfirian excavation → the 1960s reconstruction the modern visitor actually sees,
+taught honestly as reconstruction). Extends to Cholula, Cacaxtla, Xochicalco, and Tula — and the
+"Toltec problem" (history vs. Aztec political mythology) as a named debate.
+**Why it earns a slot:** the anchor's humility lesson at course length: an entire course where the
+honest answer to central questions is "unknown, and here is how we'd find out" — the best
+epistemology training in the track.
+**Hard parts:** the unknowns must stay load-bearing, not padding; the Toltec historiography is
+genuinely confusing and needs careful staging. Sourcing: Cowgill, Manzanilla, Sugiyama, Nichols;
+all major claims have recent syntheses.
+
+### 5. Writing, Calendars & Astronomy: Mesoamerican Science
+**Teaches uniquely:** the intellectual systems as systems: how the script actually works (students
+learn to sound out real glyphs — the track's only hands-on decipherment unit), bar-and-dot
+arithmetic and the zero, the tzolk'in/haab/Long Count machinery (students compute a Long Count
+date), the Dresden Venus table as applied mathematics, Mixtec and Aztec pictorial systems as a
+*different solution* to recording, and the decipherment story at full length (Knorozov,
+Proskouriakoff, Schele, Stuart — with Thompson as the authority-vs-evidence case study).
+**Why it earns a slot:** it converts the anchor's most-cited wonders from trivia into working
+knowledge, and it is the track's STEM crossover — usable in a math or astronomy classroom.
+**Hard parts:** difficulty calibration (real glyph exercises need careful scaffolding); the
+correlation-constant debate should be taught, not hidden. Sourcing: Coe & Van Stone (*Reading the
+Maya Glyphs*), Aveni, Stuart, Boone (*Stories in Red and Black*).
+
+### 6. The Olmec & Early Mesoamerica: Before the Famous Names
+**Teaches uniquely:** how civilizations *start* — the Archaic-to-Formative transition: maize
+domestication as a millennia-long Indigenous science project, village-to-city dynamics, San
+Lorenzo and La Venta in depth, the mother/sister debate with the actual evidence (sourcing
+studies, iconography) laid out for students to weigh, Aguada Fénix and the collective-labor
+argument, early Oaxaca (San José Mogote → Monte Albán's founding), and the "firsts race"
+(writing, calendar, kingship) as a case study in how new instruments keep moving the answers.
+**Why it earns a slot:** it is the track's origins course and its best "science in motion" course —
+the one where students watch a debate move in real time (the 2020-2021 LiDAR papers postdate most
+textbooks).
+**Hard parts:** the evidence is more technical (radiocarbon, sourcing chemistry) and the narrative
+thinner than the later courses; needs strong visual material. Sourcing: Diehl, Pool, Flannery &
+Marcus, the Inomata papers.
+
+---
+
+## Wave 3 — build with a reviewer (present-tense stakes)
+
+### 7. Indigenous Central America Today
+**Teaches uniquely:** the anchor's closing lesson as a full course, and the only course in the
+track set mainly after 1900: the Maya movement in Guatemala (the civil war and CEH findings taught
+carefully; the language academies; Maya epigraphers reading their ancestors' script), Yucatec and
+Chiapas Mexico (including the Zapatista autonomy experiment, taught neutrally and dated), the
+comarca systems of Panama (Guna Yala's 1925 revolution and its self-government), the Ngäbe, Bribri,
+Miskito, and Lenca presents, land and water defense (Berta Cáceres; the documented risks to
+defenders), language revitalization and Indigenous media, and repatriation/heritage politics (who
+owns the codices? the museum question).
+**Why it earns a slot:** without it the track performs the exact erasure the anchor names — teaching
+seven courses of past tense and calling it respect. It is also the course most likely to matter to
+a learner's civic life (heritage law, Indigenous rights, development conflicts are live issues).
+**Hard parts — and this is Wave 3 on purpose:** the subject is living politics. The CEH/genocide
+material, Zapatismo, and defender killings must be taught dated, attributed, and adjudicating
+nothing beyond what commissions and courts found. **Recommendation: build it with a reviewer from
+or close to the communities covered** — the same posture the repo takes on the Hoodoo courses —
+and privilege Indigenous-authored sources (community media, the language academies' own
+publications, Menchú and her critics both on the record).
+
+---
+
+## Recommended build order, and why
+
+**1 → The Maya. 2 → The Aztec/Mexica. 3 → The Conquest & Its Myths. 4 → Teotihuacan & the Classic
+cities. 5 → Writing, Calendars & Astronomy. 6 → The Olmec & early Mesoamerica. 7 → Indigenous
+Central America today.**
+
+- **Maya and Mexica first**: they carry the most learner demand, the best sources, and each deepens
+  the anchor's two biggest sections. Either can ship independently.
+- **The Conquest third**, once both protagonist courses exist — it reads their sources against each
+  other, so it lands hardest with them in place.
+- **Teotihuacan and Writing/Calendars** in the middle: methods courses that reward students who
+  already have the survey; the glyph course can also be marketed standalone to math/astro teachers.
+- **Olmec sixth**: richest in method, thinnest in narrative — better once learners are invested.
+- **Indigenous Central America last not because it matters least but because it must be built
+  right**: with a reviewer, with Indigenous-authored sources, once the track's editorial pattern is
+  proven. If a reviewer materializes earlier, move it earlier.
+
+**Learner sequencing** differs from build order: anchor → any culture course → the Conquest →
+Indigenous Central America today as the intended finish, so every learner ends in the present
+tense, exactly as the anchor does.
+
+---
+
+## What BAM would need to build these responsibly
+
+1. **Nothing external for Waves 1-2** — the sources are published, mostly in English translation,
+   and the debates are mapped. Authoring time only.
+2. **A reviewer for course 7** (Indigenous Central America today) — community-connected, per the
+   Hoodoo precedent.
+3. **Visual assets** matter more here than in most tracks (maps, site plans, glyph charts). Public-
+   domain and Creative Commons material exists (INAH, museum open-access programs, FAMSI/Mesoweb
+   drawings) but needs a licensing pass before lessons embed images.
+4. **A standing editorial rule inherited from the anchor**: ranges not false precision; contested
+   claims named on both sides; sacrifice and conquest neither sensationalized nor erased; the
+   present tense of the peoples stated in every course, not just course 7.
+
+---
+
+## Cross-links
+
+- Anchor course: \`scripts/data/precolumbian-mesoamerica-course.ts\` (branch
+  \`content/precolumbian-mesoamerica\`; seed task \`plans/user-tasks/109-seed-precolumbian-mesoamerica.md\`).
+- Method siblings: \`africa-before-colonization\` (the documented-record pattern this anchor
+  follows), \`afrocentricity\` (evaluating contested paradigms — the mother-culture and Kemet
+  debates rhyme), \`great-migration\` (Culture & History mapping conventions).
+- Category: **Culture & History** (the anchor ships there). If the track grows past ~4 courses,
+  consider a learning path ("The Americas Before 1492") pairing it with any future Andes/North
+  America tracks.`,
+    provenance: "plans/future-courses/precolumbian-mesoamerica-track-proposal.md",
+  },
+  {
+    key: "teacher-pay-teachers",
+    title: "Teacher pay teachers",
+    summary: "I want to put some of the courses on teachers pay teachers to promote Learn.WitUS.Online and the other courses here.",
+    body: `I want to put some of the courses on teachers pay teachers to promote Learn.WitUS.Online and the other courses here.
+- show me your proposed list of courses to put on teachers pay teachers 
+- which courses do you propose would be best to use to sell courses and inform teachers about the other courses to get them to come here to buy more?
+
+- then create content packets for those courses for me to put on teachers pay teachers`,
+    provenance: "plans/future-courses/teacher-pay-teachers.md",
+  },
+  {
+    key: "teachers-pay-teachers-proposal",
+    title: "Teachers Pay Teachers strategy — proposal",
+    summary: "Status: proposal for BAM review · 2026-07-17",
+    body: `# Teachers Pay Teachers strategy — proposal
+
+**Status:** proposal for BAM review · 2026-07-17
+**Source note:** \`plans/future-courses/teacher-pay-teachers.md\` (BAM: "put some of the courses on
+teachers pay teachers to promote Learn.WitUS.Online and the other courses here")
+**Packets built:** \`plans/future-courses/tpt-packets/\` (4 upload-ready packets, see §6)
+**Operator task:** \`plans/user-tasks/122-tpt-launch.md\`
+
+---
+
+## 1. How TpT actually works (verified 2026-07-17)
+
+**Seller tiers & fees** (TpT help center, "Seller Fees and Payout Rates" / "What membership types
+are available", surfaced via web search 2026-07-17):
+
+| | Basic Seller | Premium Seller |
+| --- | --- | --- |
+| Cost | $29 one-time | $59.95/year |
+| Payout | 55% of list price | 80% of list price |
+| Per-resource fee | $0.30 per resource sold | $0 on items ≥ $3; $0.15 on items under $3 |
+
+Premium pays for itself at roughly 25 sales of a $3 item. **Recommendation: start Premium** — the
+55% Basic rate makes every price band below unattractive, and the under-$3 fee is why the paid lead
+magnet below is priced at exactly $3, not $2.
+
+**Two structural rules that shape the plan:**
+- **A new seller's first posted resource must be free.** That's not a growth hack, it's a platform
+  requirement — so the free lead magnet is product #1 by necessity as well as strategy.
+- **TpT sets a minimum price for paid items** (shown on the upload page; confirm at upload).
+
+**What sells:** self-contained, printable/PDF classroom material — full units, worksheet packs with
+answer keys, sub plans, test prep, bell ringers, primary-source analysis sets. Teachers search by
+**grade band + subject + specific topic** ("Great Migration unit 8th grade", "Constitution
+worksheets high school", "Indiana government") and, for the serious buyers, **by standard code** —
+which is exactly the search our \`/standards\` work was built to win.
+
+**Who buys:** classroom teachers spending their own money or small school allotments,
+homeschool parents (a large and underserved TpT segment — our catalog's actual design center), and
+CTE/elective teachers hunting niche content (drone/aviation, media literacy, financial literacy).
+
+## 2. The linking policy — what is actually allowed (verified, with provenance)
+
+This is the load-bearing compliance question, verified against TpT's own help-center text.
+help.teacherspayteachers.com 403s our tooling, so the articles were retrieved via the Wayback
+Machine (same method the standards work uses for in.gov/azed.gov), fetched 2026-07-17:
+
+- **"Guidelines around utilizing other sites"** (article 360044219551, updated 2024-09-09;
+  snapshot 2025-10-09): *"Don't link to stores outside of TPT or advertise stores outside of TPT
+  from TPT. (Another variation of this: Don't push folks who have come to you through TPT to other
+  places to buy outside of TPT.)"* Also: **keep prices consistent** if the same resource is offered
+  on other platforms.
+- **"Seller Guidelines"** (article 360042579132; snapshot 2020-11-26): *"Don't direct Users to
+  alternative sales channels. TpT should not be used as a way to drive traffic to another website
+  or business. You may not include hyperlinks to alternative sales channels such as another online
+  marketplace or e-commerce site where your resources can be purchased."* And: *"You may not
+  require the purchase, subscription, or registration of an account with any other websites or
+  services to access your full resource."*
+- **"Can I sell subscriptions to my website on TPT?"** (article 360042199912; snapshot
+  2024-02-28): *"Subscriptions to external websites are not permitted."*
+- **"Can I offer resources that are hosted on a third party site?"** (article 360042199032;
+  snapshot 2024-02-22): third-party hosting is allowed for >4GB files, streaming, and online
+  courses, but buyers may not be required to create an account on the third-party system — and:
+  *"You can include your TPT store and credits/copyright information in the file as well."*
+- **"Is it ok to include hyperlinks or QR codes to other websites in my resources?"** (article
+  360043004671, surfaced via web search 2026-07-17): hyperlinks/QR codes **to content that
+  supplements the resource** (a blog post, an article, a video on the publisher's own site) are
+  acceptable; the seller is responsible for keeping links live.
+
+(Local copies of the retrieved policy pages are in the session scratchpad: \`tpt-other-sites.html\`,
+\`tpt-seller-guidelines.html\`, \`tpt-3p.html\`, \`tpt-subs.html\`.)
+
+**What this means in practice:**
+
+| Compliant ✅ | Prohibited 🚫 |
+| --- | --- |
+| Credits/copyright/attribution page inside the PDF naming Learn.WitUS.Online as the source curriculum | "Buy the full course at learn.witus.online" anywhere on TpT |
+| APA 7 citations and a \`## Sources\` bibliography (some references naturally live at learn.witus.online) | Hyperlinks to any page whose job is to sell (course sales pages, pricing pages) |
+| Links to **free supplemental content** that genuinely supports the printed lesson (the free \`/standards\` finder, the free Great Migration interactive map) — provided those pages are verifiably accessible without login | Requiring a Learn.WitUS account to use any part of the packet |
+| Brand identity: store name, logo, "From the Learn.WitUS.Online cited-curriculum catalog" tagline on covers and in descriptions | Selling Learn.WitUS subscriptions or course access through TpT listings |
+| Same-or-higher pricing elsewhere for the same PDF | Selling the identical packet cheaper on learn.witus.online |
+
+**The funnel is therefore the brand, not a hyperlink.** A teacher who trusts the packet googles
+the name on its cover. The packets are engineered for exactly that: the differentiators (verified
+standards with exact codes, every claim cited, no AI tells, answer keys that explain) are visible
+on every page, and the attribution page says *who we are* without saying *go buy*. Free
+supplemental links (standards finder, interactive map) land the teacher on Learn.WitUS legitimately
+— as supplements to what they already bought, which is precisely what TpT's hyperlink guidance
+permits.
+
+**One deliberate safety margin:** the packets sold on TpT are **print adaptations**, not the
+courses themselves. The interactive courses (reveals, rotating 15-question quiz banks, progress
+tracking) remain a *different product* that exists only on Learn.WitUS. That keeps the
+price-consistency rule from ever binding course pricing, and it gives the teacher a real reason to
+visit: the thing on the website is not the thing they already own, it's the living version of it.
+
+## 3. Proposed product list
+
+### Tier A — lead magnets (free or $3)
+
+**A1 · Wish · Outcome · Obstacle · Plan — research-based goal-setting (FREE)** — *packet built*
+- **Why it sells:** goal-setting/SEL printables are evergreen TpT staples (advisory, New Year,
+  September). Ours is the only one whose every claim carries a DOI, and whose honest hook
+  ("visualizing success makes you less likely to get it — here's the trial evidence") is a
+  pattern-interrupt in a category full of vision-board fluff. First-resource-must-be-free rule
+  makes this product #1 regardless.
+- **Search terms:** goal setting worksheet, SEL high school, executive function, if-then planning,
+  new year goals, advisory activities, research-based goal setting, growth mindset alternative.
+- **Grade band:** 8–12 + adult ed. **Price:** FREE.
+- **Standards:** Indiana Health & Wellness HS.6.2 and HS.6.3 (both **full**, verified). Only IN is
+  live-verified for this course; say nothing beyond that.
+- **Funnels toward:** the WOOP course, Learning How to Learn, the Study Skills category; shows off
+  the citation discipline to the broadest possible teacher audience.
+
+**A2 · US Constitution mini-unit ($3)** — *packet built*
+- **Why it sells:** Constitution Day (Sept 17) is a compliance event — federally funded schools
+  must program on the Constitution that week, and teachers buy ready-made mini-units for it every
+  August/September. Ours quotes the document verbatim, cites the National Archives transcript, and
+  ships a 10-question quiz keyed to lessons.
+- **Search terms:** Constitution Day activity, US Constitution unit, Bill of Rights worksheet,
+  three branches of government, checks and balances, civics test prep, government sub plan.
+- **Grade band:** 8–12 (readable at 7). **Price:** $3 (at the no-fee threshold).
+- **Standards:** IN USG.1.3 (full), USG.2.1/2.3/3.2/3.6 (partial — the packet says exactly which
+  halves). Only IN live-verified.
+- **Funnels toward:** the whole Civics catalog — 12+ general civics courses and the 50-state
+  series. The natural next purchase is the buyer's own state's civics unit.
+
+### Tier B — catalog products ($5–10 each)
+
+**B1 · The 50-state civics series as 50 individual listings ($6–8 each)** — *Indiana packet built
+as the template*
+- **Why it sells:** this is the strategic centerpiece. "State government unit" is a required topic
+  in nearly every state's middle/high-school civics sequence, and TpT search is starved for
+  state-specific material beyond the big states. 50 listings each targeting one state's teachers =
+  50 doors into the same storefront, each with zero national competition on specificity ("Indiana's
+  simple-majority veto override", "merit selection + retention").
+- **Search terms (per state):** "<state> government unit", "<state> civics", "<state> constitution
+  worksheet", "<state> studies", plus state-specific hooks (Indiana: Crawford v. Marion County,
+  township government).
+- **Grade band:** 6–12. **Price:** $6–8.
+- **Standards — the honest line:** ONLY Indiana's listing may cite standards today (live in
+  \`src/lib/standards/data/in.ts\`). Arizona and Arkansas are mapped on the un-merged
+  \`feat/standards-az-ar\` branch (user-task 115) — their listings can cite codes **after BAM merges
+  it**. The other 47 states' listings ship with NO standards claims and a truthful line: "Standards
+  alignment for <state> is in progress — see our verified-alignment methodology." Never imply more.
+- **Funnels toward:** neighboring-state units, the general civics courses, and the live \`/standards\`
+  finder (free, supplemental, compliant to link).
+- **Effort note:** with the Indiana packet as template, each additional state is a content-swap, not
+  a redesign — realistic at ~2–3 hours per state from the existing course files.
+
+**B2 · The Great Migration unit ($8–10)** — *packet built*
+- **Why it sells:** Black History Month (February) is TpT's single biggest social-studies buying
+  season, and most Great Migration material there is thin (a reading + questions). Ours is a
+  12-lesson unit with primary-source pointers to real archives (Schomburg, National Archives,
+  Mapping Inequality), a capstone project menu, and a built-in media-literacy lesson (the
+  Philadelphia "500%" claim checked against the census numbers it fails). List by early January for
+  February discovery.
+- **Search terms:** Great Migration unit, Black History Month high school, Harlem Renaissance,
+  Jim Crow lesson, primary source analysis, redlining lesson, African American history.
+- **Grade band:** 6–12 + homeschool. **Price:** $8–10.
+- **Standards:** IN USH.2.5, 3.4, 3.6, 7.1, 10.2 (all **partial** — the packet quotes each
+  coverage note verbatim; the honesty is the differentiator). Arkansas's African-American History
+  course standards are mapped on the pending AZ/AR branch — add after merge.
+- **Funnels toward:** the free interactive migration map on Learn.WitUS (compliant supplemental
+  link), Africa Before Colonization, History of Unions, the Civics catalog.
+
+**B3 · History of Unions — labor-history primary-source unit ($8–12)**
+- **Why it sells:** labor history is chronically under-served on TpT; the course's honest angles
+  (Haymarket taught as an unresolved dispute, the Wagner Act's deliberate exclusions, unions' own
+  colour bar, Randolph→Memphis) give an AP US History / US History teacher exactly the
+  document-based nuance the exam rewards.
+- **Search terms:** labor history unit, Gilded Age labor movement, Haymarket, Triangle fire,
+  Wagner Act, APUSH period 6, labor unions lesson.
+- **Grade band:** 9–12. **Price:** $8–12 (29 lessons; could split into two volumes).
+- **Standards:** IN USH.2.4, 3.4, 4.7, 9.1 + WH.6.6/6.10 (all partial, notes quoted).
+- **Funnels toward:** Know Your Rights at Work, the six country labor courses, Great Migration.
+
+**B4 · "Reading a source against the record": the PGA's Caucasian-only clause ($3–4)**
+- **Why it sells:** a self-contained one-lesson primary-source-audit exercise from the Golf
+  course — students read the actual January 1962 *Golfdom* trade-magazine report of the repeal
+  (free scan, MSU Turfgrass Information Center) and discover the industry's own account names none
+  of the men who forced the change (Sifford, Spiller, Rhodes, Mosk). Media literacy + Black history
+  + sports hook in one printable period. Cheap, sharp, extremely shareable.
+- **Search terms:** primary source analysis, media literacy history, sports history, Black History
+  Month activity, historiography lesson, critical thinking history.
+- **Grade band:** 8–12. **Price:** $3–4.
+- **Funnels toward:** Golf course, media-literacy courses, Great Migration.
+
+**B5 · FAA Part 107 ground-school study packs ($5–8)**
+- **Why it sells:** drone/aviation CTE programs are growing fast and TpT's Part 107 shelf is
+  nearly empty; the repo already carries a large Part 107 quiz bank (\`faa-part-107-quizzes.ts\`) to
+  adapt into printable practice tests with explained answer keys. CTE teachers buy per-program, not
+  per-classroom — less price sensitivity.
+- **Search terms:** drone curriculum, FAA Part 107 test prep, UAS ground school, aviation CTE,
+  remote pilot practice test.
+- **Grade band:** 9–12 CTE + adult. **Price:** $5–8 per pack (regulations / weather / airspace /
+  operations packs). **Standards:** none claimed (FAA ACS-referenced instead — that's the aligned
+  authority for this content).
+- **Funnels toward:** the FAA Part 107 course with its rotating quiz banks — the strongest "the
+  online version does something paper can't" pitch in the catalog.
+
+**B6 · Media-literacy pair: Spotting Misleading Marketing / Detecting AI ($5–7 each)**
+- **Why it sells:** AI-detection and media-literacy lessons are among 2025–26's fastest-growing
+  TpT searches; ours are cited to C2PA/NIST/FTC rather than vibes, and IN ELA 9-10.CC.8 /
+  11-12.CC.8 are **full-coverage** verified claims.
+- **Grade band:** 9–12. **Price:** $5–7. **Funnels toward:** the AI Literacy ladder.
+
+### Tier C — premium bundles ($15–35)
+
+Standard TpT practice: bundle at ~25–30% off the sum of parts, list only after the parts exist.
+- **C1 · Civics Complete** — Constitution mini-unit + a state unit + Voting & Elections + How a
+  Bill Becomes Law ($15–20).
+- **C2 · Black History Month mega-bundle** — Great Migration + Golfdom lesson + (later) Africa
+  Before Colonization adaptation ($18–25).
+- **C3 · Labor History bundle** — History of Unions volumes + Know Your Rights at Work ($20–25).
+- **C4 · Study Skills starter** — Learning How to Learn adaptation + the free WOOP printable's
+  paid big-sibling (full 24-lesson adaptation) ($12–15).
+
+## 4. The honest constraints
+
+1. **Standards claims: 2 states live, 2 pending, 47 absent.** Indiana (\`in.ts\`) and D.C. (\`dc.ts\`,
+   Commodity-Map-only — irrelevant to these packets) are in main. Arizona + Arkansas are complete
+   but sit on un-merged \`feat/standards-az-ar\` (user-task 115). Every packet's standards page names
+   Indiana only, links the free \`/standards\` finder for currency, and says the coverage grade
+   (full/partial) out loud — including the partial-coverage notes verbatim. **No packet may imply
+   alignment beyond the mapped states.** (D.C.'s civics/history mapping hasn't been done at all —
+   \`dc.ts\` says so — so D.C. is not cited in these packets either.)
+2. **TpT license vs. ownership.** BAM keeps copyright; TpT takes a non-exclusive license to host
+   and sell. Buyers get a single-classroom license (TpT's standard); the packets' attribution page
+   states the license plainly. Because the packets are derivative print adaptations, the courses
+   themselves are never licensed to TpT.
+3. **Price consistency cuts both ways.** The same PDFs must never appear cheaper on
+   learn.witus.online (or anywhere). Simplest compliant posture: the PDFs are TpT-exclusive; the
+   website sells the interactive courses, which are a different product.
+4. **Link liveness is a seller obligation.** Any URL inside a PDF (archives, .gov sources, the
+   /standards finder, the migration map) must stay live or TpT can refund + deactivate the product.
+   The supplemental Learn.WitUS links must be verified publicly accessible **without login** before
+   upload — flagged in task 122.
+5. **Effort per packet:** the four built packets averaged 7–9 markdown files each; converting to
+   branded PDF (fonts, cover art, TpT preview images) is BAM-side work, est. 2–4 hours per packet
+   the first time, less once a template exists.
+6. **Needs BAM (task 122):** seller account + $59.95 Premium, storefront branding (name, banner,
+   logo, bio), final pricing sign-off, PDF conversion/branding, public-accessibility check on the
+   two supplemental URLs, and the AZ/AR merge decision before any AZ/AR standards claims go live.
+
+## 5. Recommended launch order (first 5)
+
+1. **WOOP goal-setting printable (FREE)** — required first-free-product; broadest audience;
+   plants the "every claim has a DOI" brand flag; September advisory season.
+2. **US Constitution mini-unit ($3)** — Constitution Day (Sept 17) buying wave starts in August;
+   cheap enough for impulse purchase + review velocity; feeds every other civics listing.
+3. **Indiana Civics unit ($7)** — the standards-verified flagship and the template for the other
+   49; Indiana teachers searching "Indiana government unit" find near-zero competition; proves the
+   state-by-state model before scaling it.
+4. **Great Migration unit ($9)** — the premium anchor; listed early (fall) so reviews accumulate
+   before the January–February Black History Month surge.
+5. **Golfdom primary-source lesson ($3–4)** — fast to build (one lesson already written), sharp
+   hook, low price → review velocity; cross-promotes both the media-literacy and Black-history
+   shelves and rides the Great Migration unit's February traffic.
+
+Then: the AZ + AR civics units the moment task 115 merges (their standards pages are the launch
+asset), FAA packs, History of Unions volumes, and the first bundles.
+
+## 6. What was built this pass
+
+Four upload-ready packet folders under \`plans/future-courses/tpt-packets/\`, each containing cover
+copy, teacher guide, print-adapted student reader (reveals → worksheet Q&A with separate answer
+keys), quiz worksheet + key, the state standards page, a compliant attribution/pointer page, and a
+paste-ready TpT listing (description + keywords):
+
+- \`woop-goal-setting-printable/\` (free lead magnet)
+- \`us-constitution-mini-unit/\` ($3 lead magnet)
+- \`indiana-civics-unit/\` ($7 catalog flagship / 50-state template)
+- \`great-migration-unit/\` ($9 premium anchor)
+
+All content is adapted from the shipped course files (\`scripts/data/*.ts\`); nothing was invented.
+Citations and \`## Sources\` sections carry over intact — that is the brand.
+
+## Sources
+
+- TPT Help Center. (2024, September 9). *Guidelines around utilizing other sites* (art. 360044219551). Retrieved via Wayback Machine snapshot 2025-10-09, fetched 2026-07-17. https://help.teacherspayteachers.com/hc/en-us/articles/360044219551
+- TPT Help Center. (2020, May 13). *Seller Guidelines* (art. 360042579132). Retrieved via Wayback Machine snapshot 2020-11-26, fetched 2026-07-17. https://help.teacherspayteachers.com/hc/en-us/articles/360042579132
+- TPT Help Center. (2023, June 14). *Can I offer resources that are hosted on a third party site?* (art. 360042199032). Retrieved via Wayback Machine snapshot 2024-02-22, fetched 2026-07-17. https://help.teacherspayteachers.com/hc/en-us/articles/360042199032
+- TPT Help Center. (2022, August 1). *Can I sell subscriptions to my website on TPT?* (art. 360042199912). Retrieved via Wayback Machine snapshot 2024-02-28, fetched 2026-07-17. https://help.teacherspayteachers.com/hc/en-us/articles/360042199912
+- TPT Help Center. (n.d.). *Is it ok to include hyperlinks or QR codes to other websites in my resources?* (art. 360043004671). Surfaced via web search 2026-07-17. https://help.teacherspayteachers.com/hc/en-us/articles/360043004671
+- TPT Help Center. (n.d.). *Seller Fees and Payout Rates*; *What membership types are available?*; *How do I sell on TPT?* Surfaced via web search 2026-07-17. https://help.teacherspayteachers.com/`,
+    provenance: "plans/future-courses/teachers-pay-teachers-proposal.md",
+  },
+  {
+    key: "training-the-colonizer",
+    title: "Training the colonizer",
+    summary: "Training the colonizer",
+    body: `Training the colonizer
+what did the people stolen during the Atlantic Slave trade teach their enslavers?
+- how to plant the crops
+- build
+- etcs
+
+another course about how multiple civilizations tried to introduce europeans to soap and regular bathing`,
+    provenance: "plans/future-courses/training-the-colonizer.md",
+  },
+  {
     key: "travel-abroad-proposal",
     title: "Travel & Living Abroad — course track proposal (from the US)",
     summary: "A new \"Travel & Living Abroad\" category. Two courses are building now; the rest are proposals —",
@@ -2794,13 +3859,5 @@ The Grocer. (2024, April). *Divine Chocolate financial results*.
 
 Vigneri, M., & Holmes, R. (2009). *When being more productive still doesn't pay: Gender inequality and socio-economic constraints in Ghana's cocoa sector*. Overseas Development Institute.`,
     provenance: "plans/future-courses/mansa-gold/03-women-in-cocoa-and-coffee.md",
-  },
-  {
-    key: "sports-courses-chess",
-    title: "chess",
-    group: "Sports Courses",
-    summary: "how to play chess, strategy, history, rules, leagues, opportunities for amateurs, entrepreneurs",
-    body: `how to play chess, strategy, history, rules, leagues, opportunities for amateurs, entrepreneurs`,
-    provenance: "plans/future-courses/sports-courses/chess.md",
   },
 ];
