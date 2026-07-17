@@ -799,6 +799,107 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["California Civics, Lesson 8 · Get involved where you live in California"],
   },
 
+  // ── State civics: New York (state-civics-ny was written FROM New York's own sources) ──
+  // NOTE: like California, New York's Grade 12 Participation in Government framework is largely
+  // FEDERAL. The flagship's structure lessons (the inverted court NAMES — "Supreme Court" is the
+  // trial court — the plural executive, the 62 counties with New York City's five borough-counties,
+  // the automatic 20-year constitutional-convention question, and the absence of a statewide
+  // citizen initiative) have no New York Social Studies code to cite, so they carry no claim here —
+  // data/ny.ts publishes that gap in its notClaimed list. New York's framework reaches state
+  // government through 12.G1b/12.G1c (state constitutions and checks and balances "at all levels"),
+  // 12.G4d (which names New York's party system explicitly), and the public-policy standards.
+  {
+    id: "civics.ny-constitution-amendment",
+    claim: "Teaches New York's 1894 constitution and its demanding amendment path (Article XIX: passage by two successive, separately-elected Legislatures then a voter referendum), the automatic 20-year constitutional-convention question, and the absence of any statewide citizen initiative.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: [
+      "New York Civics, Lesson 1 · New York's constitution: the 1894 rulebook (Article XIX amendment path and the 20-year convention question)",
+      "New York Civics, Lesson 6 · Elections in New York (no statewide citizen initiative)",
+    ],
+  },
+  {
+    id: "civics.ny-three-branches",
+    claim: "Teaches New York's three branches as New York's: a 150-member Assembly and 63-member Senate, and a plural executive whose Attorney General and Comptroller are elected separately from the Governor.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 2 · The three branches, and New York's plural executive"],
+  },
+  {
+    id: "civics.ny-courts",
+    claim: "Teaches New York's inverted court names (the “Supreme Court” is the trial court; the “Court of Appeals” is the highest court) and the appointment of Court of Appeals judges by the Governor from the Commission on Judicial Nomination's list, with State Senate confirmation.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 3 · New York's courts: the inverted-names gotcha"],
+  },
+  {
+    id: "civics.ny-bill-process",
+    claim: "Teaches how a bill becomes a New York law: the committee filter, the two-thirds veto override, and New York's unusually powerful executive budget.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 4 · How a bill becomes a New York law"],
+  },
+  {
+    id: "civics.ny-local-government",
+    claim: "Teaches New York local government as New York's: 62 counties (five of them the boroughs of New York City), strong home rule, and cities, towns, villages, and special districts.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: [
+      "New York Civics, Lesson 5 · Local government in New York: 62 counties and strong home rule",
+      "New York Civics, Lesson 8 · Get involved where you live in New York",
+    ],
+  },
+  {
+    id: "civics.ny-elections",
+    claim: "Teaches New York's election specifics: early in-person voting, no-excuse early mail voting (Early Mail Voter Act, in effect for 2024) alongside excuse-required absentee ballots, closed party primaries, and no statewide citizen initiative.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: [
+      "New York Civics, Lesson 6 · Elections in New York: early voting, closed primaries, no initiative",
+      "New York Civics, Lesson 7 · Two New York rules that recently changed (no-excuse early mail voting; the Governor/Lieutenant-Governor joint ticket)",
+    ],
+  },
+  {
+    id: "civics.ny-get-involved",
+    claim: "Teaches getting involved where you live, New York edition — state legislators, county/city/town/village boards, and the statewide ballot proposals including the 20-year convention question.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 8 · Get involved where you live in New York"],
+  },
+
+  // ── State civics: Pennsylvania (state-civics-pa was written FROM Pennsylvania's own sources) ──
+  // NOTE: Pennsylvania's 2009 Civics and Government standards reach the Commonwealth's own
+  // government better than most — 5.1.12.D and 5.1.12.E explicitly name the "Pennsylvania
+  // Constitution" — so the flagship's constitution and rights lessons have a genuine code. But the
+  // rest of its distinctive structure (the nation's largest full-time legislature, the elected-
+  // then-retained judiciary, the 67 counties with an ACTIVE township layer Pennsylvania does not
+  // abolish, and Act 77 no-excuse mail voting) has no Pennsylvania-specific code — data/pa.ts
+  // publishes that gap in its notClaimed list.
+  {
+    id: "civics.pa-constitution",
+    claim: "Teaches Pennsylvania's 1968 constitution and its two-consecutive-sessions amendment path with no citizen initiative, and its strong Article I Declaration of Rights (which in places protects more than the federal Bill of Rights, including the Environmental Rights Amendment).",
+    courseSlugs: ["state-civics-pa"],
+    lessons: [
+      "Pennsylvania Civics, Lesson 1 · Pennsylvania's constitution: the 1968 rulebook and a two-session amendment path (Article XI; the Declaration of Rights)",
+    ],
+  },
+  {
+    id: "civics.pa-three-branches",
+    claim: "Teaches Pennsylvania's three branches as Pennsylvania's: a 203-member House and 50-member Senate (the largest full-time state legislature in the nation), the elected-then-retained judiciary (Superior and Commonwealth intermediate courts), and a partly-plural executive (joint-ticket Governor/Lieutenant Governor; separately elected Attorney General, Auditor General, and Treasurer).",
+    courseSlugs: ["state-civics-pa"],
+    lessons: [
+      "Pennsylvania Civics, Lesson 2 · The three branches: the joint-ticket Governor and the biggest legislature in the nation",
+      "Pennsylvania Civics, Lesson 3 · Pennsylvania's courts: elected, then retained",
+    ],
+  },
+  {
+    id: "civics.pa-elections",
+    claim: "Teaches Pennsylvania's election specifics: Act 77 no-excuse mail-in voting (struck down then upheld in McLinko, 2022), closed primaries, voter ID for first-time voters, a 15-day registration deadline with no same-day registration, and no citizen initiative.",
+    courseSlugs: ["state-civics-pa"],
+    lessons: [
+      "Pennsylvania Civics, Lesson 6 · Elections in Pennsylvania: Act 77 mail-in voting, closed primaries, voter ID",
+    ],
+  },
+  {
+    id: "civics.pa-get-involved",
+    claim: "Teaches getting involved where you live, Pennsylvania edition — legislators, and especially the township supervisors, borough or city council, and county commissioners, because Pennsylvania has no citizen initiative.",
+    courseSlugs: ["state-civics-pa"],
+    lessons: ["Pennsylvania Civics, Lesson 7 · Get involved where you live in Pennsylvania"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
