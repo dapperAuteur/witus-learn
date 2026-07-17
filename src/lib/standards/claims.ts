@@ -799,6 +799,67 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["California Civics, Lesson 8 · Get involved where you live in California"],
   },
 
+  // ── State civics: New York (state-civics-ny was written FROM New York's own sources) ──
+  // NOTE: like California, New York's Grade 12 Participation in Government framework is largely
+  // FEDERAL. The flagship's structure lessons (the inverted court NAMES — "Supreme Court" is the
+  // trial court — the plural executive, the 62 counties with New York City's five borough-counties,
+  // the automatic 20-year constitutional-convention question, and the absence of a statewide
+  // citizen initiative) have no New York Social Studies code to cite, so they carry no claim here —
+  // data/ny.ts publishes that gap in its notClaimed list. New York's framework reaches state
+  // government through 12.G1b/12.G1c (state constitutions and checks and balances "at all levels"),
+  // 12.G4d (which names New York's party system explicitly), and the public-policy standards.
+  {
+    id: "civics.ny-constitution-amendment",
+    claim: "Teaches New York's 1894 constitution and its demanding amendment path (Article XIX: passage by two successive, separately-elected Legislatures then a voter referendum), the automatic 20-year constitutional-convention question, and the absence of any statewide citizen initiative.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: [
+      "New York Civics, Lesson 1 · New York's constitution: the 1894 rulebook (Article XIX amendment path and the 20-year convention question)",
+      "New York Civics, Lesson 6 · Elections in New York (no statewide citizen initiative)",
+    ],
+  },
+  {
+    id: "civics.ny-three-branches",
+    claim: "Teaches New York's three branches as New York's: a 150-member Assembly and 63-member Senate, and a plural executive whose Attorney General and Comptroller are elected separately from the Governor.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 2 · The three branches, and New York's plural executive"],
+  },
+  {
+    id: "civics.ny-courts",
+    claim: "Teaches New York's inverted court names (the “Supreme Court” is the trial court; the “Court of Appeals” is the highest court) and the appointment of Court of Appeals judges by the Governor from the Commission on Judicial Nomination's list, with State Senate confirmation.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 3 · New York's courts: the inverted-names gotcha"],
+  },
+  {
+    id: "civics.ny-bill-process",
+    claim: "Teaches how a bill becomes a New York law: the committee filter, the two-thirds veto override, and New York's unusually powerful executive budget.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 4 · How a bill becomes a New York law"],
+  },
+  {
+    id: "civics.ny-local-government",
+    claim: "Teaches New York local government as New York's: 62 counties (five of them the boroughs of New York City), strong home rule, and cities, towns, villages, and special districts.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: [
+      "New York Civics, Lesson 5 · Local government in New York: 62 counties and strong home rule",
+      "New York Civics, Lesson 8 · Get involved where you live in New York",
+    ],
+  },
+  {
+    id: "civics.ny-elections",
+    claim: "Teaches New York's election specifics: early in-person voting, no-excuse early mail voting (Early Mail Voter Act, in effect for 2024) alongside excuse-required absentee ballots, closed party primaries, and no statewide citizen initiative.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: [
+      "New York Civics, Lesson 6 · Elections in New York: early voting, closed primaries, no initiative",
+      "New York Civics, Lesson 7 · Two New York rules that recently changed (no-excuse early mail voting; the Governor/Lieutenant-Governor joint ticket)",
+    ],
+  },
+  {
+    id: "civics.ny-get-involved",
+    claim: "Teaches getting involved where you live, New York edition — state legislators, county/city/town/village boards, and the statewide ballot proposals including the 20-year convention question.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 8 · Get involved where you live in New York"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
