@@ -799,6 +799,55 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["California Civics, Lesson 8 · Get involved where you live in California"],
   },
 
+  // ── State civics: Texas (state-civics-tx was written FROM Texas's own sources) ──
+  // NOTE: Texas's high-school civics anchor is the United States Government course (§113.44),
+  // whose standards are overwhelmingly about the FEDERAL system. Two of them, however, name state
+  // and local government explicitly — (d)(7)(H) "compare the structures, functions, and processes
+  // of national, state, and local governments" and (d)(9)(A) filling elected and appointed offices
+  // at the local, state, and national levels — so unlike Arkansas and California, the Texas
+  // flagship's Texas-structure lessons DO have a home, mapped there as partial. Texas's dedicated
+  // state-government instruction lives in Grade 7 Texas History (§113.20, middle school), which we
+  // have not fetched this pass; data/tx.ts publishes that gap in its notClaimed list.
+  {
+    id: "civics.tx-state-structure",
+    claim: "Teaches Texas's long, much-amended 1876 constitution; its distinctive plural executive (a deliberately limited governor sharing power with a separately-elected Lieutenant Governor, Attorney General, Comptroller, Land Commissioner, and Agriculture Commissioner); a part-time legislature meeting only in odd-numbered years (a 150-member House and a 31-member Senate); and how a bill becomes a Texas law, including the two-thirds veto override.",
+    courseSlugs: ["state-civics-tx"],
+    lessons: [
+      "Texas Civics, Lesson 1 · Texas's constitution: the long, much-amended 1876 rulebook",
+      "Texas Civics, Lesson 2 · The three branches and Texas's plural executive",
+      "Texas Civics, Lesson 4 · How a bill becomes a Texas law and the biennial session",
+    ],
+  },
+  {
+    id: "civics.tx-courts-elected",
+    claim: "Teaches Texas's bifurcated high courts (a Supreme Court for civil cases and a Court of Criminal Appeals for criminal cases) and its partisan election of judges to six-year terms.",
+    courseSlugs: ["state-civics-tx"],
+    lessons: ["Texas Civics, Lesson 3 · Texas's courts: two high courts, partisan-elected judges"],
+  },
+  {
+    id: "civics.tx-local-government",
+    claim: "Teaches Texas local government as Texas's: 254 counties (the most of any state) run by a commissioners court, no townships, and home-rule versus general-law cities.",
+    courseSlugs: ["state-civics-tx"],
+    lessons: [
+      "Texas Civics, Lesson 5 · Local government in Texas: 254 counties, no townships",
+      "Texas Civics, Lesson 7 · Get involved where you live in Texas",
+    ],
+  },
+  {
+    id: "civics.tx-elections",
+    claim: "Teaches Texas's election specifics: strict photo voter ID with a Reasonable Impediment Declaration fallback, no same-day registration (a ~30-day deadline), and no statewide citizen initiative.",
+    courseSlugs: ["state-civics-tx"],
+    lessons: [
+      "Texas Civics, Lesson 6 · Elections in Texas: strict photo ID, no same-day registration, no initiative",
+    ],
+  },
+  {
+    id: "civics.tx-get-involved",
+    claim: "Teaches getting involved where you live, Texas edition — mindful of the biennial legislative clock and the absence of a statewide citizen initiative.",
+    courseSlugs: ["state-civics-tx"],
+    lessons: ["Texas Civics, Lesson 7 · Get involved where you live in Texas"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
