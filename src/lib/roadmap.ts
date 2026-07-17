@@ -738,6 +738,36 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   En contra; Servel). Cited to OECD/AIAS, BCN/LeyChile, Dirección del Trabajo, Memoria Chilena,
   Servel, Fundación Sol, Álvarez (2012) and Piñera (1990). Registered in \`seed-courses.ts\`;
   **no migration** — \`pnpm seed:courses\`.
+- 🔧 **South Africa: The Union That Helped End Apartheid — Then Joined the Government** (Culture &
+  History, \`content/labor-south-africa\`) — **Wave 2** of the workers'-rights **country track**, for
+  high school students. ⚠️ **NEEDS A SOUTH AFRICAN REVIEWER BEFORE PROMOTION** (per the track
+  proposal): Marikana is still litigated and the ANC–SACP–COSATU alliance is a live domestic
+  political fight — seeding is fine, but BAM must have the Marikana lessons checked by a South
+  African reviewer before promoting (same posture as the Hoodoo courses; see
+  \`plans/user-tasks/123-seed-labor-south-africa.md\`). **6 sections · 14 teaching lessons ·
+  6 quizzes** (15-question banks; every question carries \`explanation\` + \`sourceLessonSlug\`).
+  The spine: the union movement that helped end apartheid **then joined the government it once
+  fought**. Exclusion **by race, by statute** — the track's outside-the-category move undisguised
+  (ICA 1924's "employee" definition excluding pass-bearers, the 1953 strike ban and "works
+  committees", the 1926 Colour Bar Act that white labour itself demanded — the Rand Revolt taught
+  honestly). Durban 1973's leaderless strikes (documented RANGE: ~61,000 per the IIE study /
+  ~100,000 per SAHO), Wiehahn's control gamble, **Joe Foster's 1982 independence warning** planted
+  as "a prediction whose test results come later", COSATU's 1985 launch (~460,000, SAHO), the 1987
+  miners' strike (both sides' numbers), the Tripartite Alliance into 1994. Post-94: **LRA 66 of
+  1995** (no farm/domestic carve-out — the anchor's NLRA move deliberately refused) vs **32.9%
+  official / 43.1% expanded unemployment (Q1 2025, Stats SA QLFS)**, the insider/outsider critique
+  steelmanned BOTH ways, and **labour broking** as the track's rhyme (s 198, s 198A of 2014,
+  *Assign Services* [2018] ZACC 22). 🔴 **Marikana taught from the Farlam Commission's published
+  findings** (report released 25 Jun 2015): what it FOUND (defective operation, materially
+  untruthful police account, Lonmin/NUM/AMCU failures, Ramaphosa accusation rejected) vs what it
+  did NOT find (no political-order finding, no convictions, no compensation award), scene 1/scene 2
+  kept distinct, accountability dated **"as of 2026" and left open** — no adjudication beyond the
+  record. NUMSA expelled 8 Nov 2014 (33–24) / Vavi Mar 2015 / SAFTU Apr 2017, steelmanned from
+  each side's own documents (minimum wage Act 9 of 2018 vs Marikana as rival exhibits, no verdict);
+  the Poland cross-link ("won the state — lost the workplace?") offered as a QUESTION with the
+  counter-case stated. Cited to SAHO, the O'Malley Archives, the statutes, Stats SA, the ILO,
+  Wilson (1972) and the Marikana Commission report. Registered in \`seed-courses.ts\`; **no
+  migration** — \`pnpm seed:courses\` (after review sign-off for promotion).
 - 🔧 **Africa Before Colonization: The Documented Record** (Culture & History,
   \`content/africa-precolonial\`) — the **anchor of the precolonial-Africa track** (from BAM's
   \`world.md\` queue). **7 sections · 16 teaching lessons · 7 quizzes** (15-16-question banks, above

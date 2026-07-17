@@ -107,6 +107,7 @@ import { LABOR_POLAND_COURSE } from "./data/labor-poland-course";
 import { LABOR_INDIA_COURSE } from "./data/labor-india-course";
 import { LABOR_SOUTH_KOREA_COURSE } from "./data/labor-south-korea-course";
 import { LABOR_BRAZIL_COURSE } from "./data/labor-brazil-course";
+import { LABOR_SOUTH_AFRICA_COURSE } from "./data/labor-south-africa-course";
 import { AFRICA_BEFORE_COLONIZATION_COURSE } from "./data/africa-before-colonization-course";
 import { PRECOLUMBIAN_MESOAMERICA_COURSE } from "./data/precolumbian-mesoamerica-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
@@ -753,6 +754,16 @@ async function main() {
     // bargaining, opposite cause. Subcontratación (Ley 20.123) named as Chile's put-them-outside
     // move. 2022/2023 constitutional rejections dated, outcomes only. 6 sections · seed:courses.
     { slug: "labor-chile", course: LABOR_CHILE_COURSE, category: "Culture & History" },
+    // South Africa — Wave 2 of the workers'-rights country track. The union movement that helped
+    // end apartheid, then JOINED the government it fought: exclusion by race BY STATUTE (ICA 1924's
+    // "employee" definition; the 1953 strike ban), Durban 1973 → FOSATU → COSATU 1985 and the
+    // Tripartite Alliance, LRA 66 of 1995 on paper vs 32.9% unemployment (Q1 2025, Stats SA) and
+    // labour broking (the track's outside-the-category rhyme), Marikana taught from the Farlam
+    // Commission's published findings (dated; litigation open as of 2026), NUMSA expelled 2014 /
+    // SAFTU 2017 steelmanned from each side's own statements. ⚠️ NEEDS-REVIEW-BEFORE-PROMOTION:
+    // a South African reviewer must check the Marikana lesson before this course is promoted —
+    // see plans/user-tasks/123-seed-labor-south-africa.md. Seeding is fine; promotion waits.
+    { slug: "labor-south-africa", course: LABOR_SOUTH_AFRICA_COURSE, category: "Culture & History" },
     // Africa Before Colonization — the ANCHOR of the precolonial-Africa track
     // (plans/future-courses/africa-precolonial-track-proposal.md; from BAM's world.md queue).
     // Opens with the verified Hegel (1837) and Trevor-Roper (1965) "no history" quotes as the
