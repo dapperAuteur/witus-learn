@@ -1122,7 +1122,28 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
-- 🔧 **Standards alignment** (\`feat/explore-standards\`) — a \`/standards\` page, linked from
+- 🔧 **Cross-state standards explorer + route rename** (\`feat/standards-matrix\`). The per-state
+  finder moved from \`/standards\` to **\`/academic-standards\`** (a 308 redirect keeps old links and
+  shares working), and a companion **\`/academic-standards/matrix\`** now flattens **every
+  (state x standard x course)** alignment this tenant can back into one browsable table. It answers
+  the question the per-state page cannot: *across ALL mapped states, which course meets the most
+  standards, and where?* One **fuzzy search** box (a compact, dependency-free subsequence+substring
+  matcher, no new library) covers code, standard text, course, state, and subject; multi-select
+  **state / subject / coverage** filters plus a **course** dropdown; **sort by any column**; and
+  **per-course and per-state rollup counts** ("course X meets N standards across M states"). The
+  table **scrolls inside its own container** and **degrades to stacked cards below \`sm\`** (44px
+  targets throughout), and reuses the finder's **print + copy-as-plain-text** for filings. Same
+  tenant boundary, reused not re-implemented: \`flattenAlignments()\` consumes the output of
+  \`scopeAlignments()\`, so a row can only exist for a course THIS tenant publishes; a new
+  \`tests/isolation/standards-matrix.test.ts\` proves a course another tenant owns never appears and
+  that a multi-course standard splits into rows for only the tenant's courses. A tenant with zero
+  mapped-catalog overlap gets an **honest empty state**, not a 404. Both routes are linked from the
+  **Teach** menu (instructors / admins). Also stripped the **em/en dashes** from the finder's own
+  copy and fixed a real cross-state bleed: a hardcoded "Indiana publishes two editions" example that
+  rendered on **every** state's shared framing box is now state-generic (the Indiana specifics still
+  live on Indiana's own page, in \`data/in.ts\`). Nothing hardcoded per state, so OH/GA appear the
+  moment their data files land. **No migration, no seed.**
+- 🔧 **Standards alignment** (\`feat/explore-standards\`) — a \`/academic-standards\` page, linked from
   \`/explore\`, answering the one question a teacher or a reporting homeschooler asks first: *which
   requirements does this meet, and which lesson meets them?* **41 standards (21 fully covered, 20
   partially) across 9 frameworks in 2 jurisdictions**, each with its **exact code**, the
@@ -1142,7 +1163,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   never surface a Season 2/3 standard, and a tenant hosting none of the curriculum **404s**.
   Printable + one-click copy-as-plain-text for state filings. **No migration.**
 - 🔧 **State-standards finder + Indiana across the whole catalog**
-  (\`feat/standards-finder-indiana\`) — \`/standards\` is now the tool the note asked for: a teacher,
+  (\`feat/standards-finder-indiana\`) — \`/academic-standards\` is now the tool the note asked for: a teacher,
   homeschooler, or admin **picks their state** and sees which courses meet which of that state's
   standards, filterable by **subject** and **course** (server-rendered link filters — shareable,
   printable), each standard still carrying its exact code, verbatim text, source link, per-framework
@@ -1170,7 +1191,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   incl. claims-fully-wired and filter-never-readmits proofs. **No migration, no seed.**
 
 - 🔧 **Arizona + Arkansas mapped — states #3 and #4, proving the concept-hub price**
-  (\`feat/standards-az-ar\`) — \`/standards?state=AZ\` and \`?state=AR\` now render real pages: two new
+  (\`feat/standards-az-ar\`) — \`/academic-standards?state=AZ\` and \`?state=AR\` now render real pages: two new
   data files + \`pnpm gen:standards\`, zero code change, exactly as the model promised. **Arizona: 46
   standards (22 full, 24 partial) across 6 ADE frameworks** — the 2018 History & Social Science
   anchor standards (\`state-civics-az\` is the 1:1 civics flagship; HS.G1.1 is near-verbatim what the
@@ -1190,7 +1211,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   home framework; U.S. History Since 1929 starts too late for the Gilded Age labor units. **No
   migration, no seed.**
 - 🔧 **Texas + Florida mapped — states #8 and #9, both fully bespoke** (\`feat/standards-tx-fl\`) —
-  \`/standards?state=TX\` and \`?state=FL\` flip from "not mapped yet" to real pages. **Texas: 56
+  \`/academic-standards?state=TX\` and \`?state=FL\` flip from "not mapped yet" to real pages. **Texas: 56
   standards (31 full, 25 partial) across 8 TEKS frameworks** — Texas writes its own TEKS for every
   subject and has **never** adopted Common Core or NGSS. Confirmed the current social-studies TEKS
   are the **Nov-2022 SB3-aligned "Adopted 2022"** version (effective Aug 1, 2024 — each section's
@@ -1215,7 +1236,7 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`feat/standards-ny-pa\`, which also edits that line). **No migration, no seed.**
 
 - 🔧 **New York + Pennsylvania mapped — states #6 and #7** (\`feat/standards-ny-pa\`) —
-  \`/standards?state=NY\` and \`?state=PA\` now render real pages: two new data files +
+  \`/academic-standards?state=NY\` and \`?state=PA\` now render real pages: two new data files +
   \`pnpm gen:standards\`, zero code change. Every document fetched **directly from the DOEs** (no
   Wayback — nysed.gov and pdesas.org both served us). **New York: 43 standards (16 full, 27 partial)
   across 7 frameworks** — the K-12 Social Studies Framework mapped as five grade-level courses (Global
