@@ -64,12 +64,12 @@ export const US_JURISDICTIONS = [
 export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 
 /** States whose mapping is actively next in the queue (rendered as "next up" in the finder). */
-// OH is now mapped (task 130), so it is dropped from the queue; GA is mapped next on this same
-// branch, after which NEXT_UP advances to the next two uncovered states. NEXT_UP must never name a
-// state that mappedStates() already contains — the isolation suite enforces it. NOTE for the merge:
-// the parallel feat/standards-matrix branch may also edit this line; resolve any conflict to a
-// value that names NEITHER a mapped state NOR OH/GA — e.g. the two the GA commit sets below.
-export const NEXT_UP: StateCode[] = ["GA"];
+// OH and GA are now mapped (task 130), so the queue advances to the next two uncovered states:
+// Michigan and Illinois. NEXT_UP must never name a state that mappedStates() already contains — the
+// isolation suite enforces it. NOTE for the merge: the parallel feat/standards-matrix branch may
+// also edit this line; resolve any conflict to a value that names NEITHER a mapped state (currently
+// AR AZ CA DC FL GA IN NY OH PA TX) NOR a state another in-flight branch is actively mapping.
+export const NEXT_UP: StateCode[] = ["MI", "IL"];
 
 export function jurisdictionName(code: StateCode): string {
   return US_JURISDICTIONS.find((j) => j.code === code)?.name ?? code;

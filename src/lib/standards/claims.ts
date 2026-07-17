@@ -1060,6 +1060,64 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Ohio Civics, Lesson 8 · Get involved where you live in Ohio"],
   },
 
+  // ── State civics: Georgia (state-civics-ga was written FROM Georgia's own sources) ──
+  // NOTE: like Ohio, Georgia's high-school American Government/Civics standards NAME Georgia's own
+  // government — SSCG17 "the organization and powers of state and local government described in the
+  // Georgia Constitution" — so the Georgia flagship's structure lessons have a genuine home. The
+  // catch Georgia's own standard writes in: SSCG17e names "the initiative, referendum, and recall"
+  // as citizen limitations on government, and the honest Georgia answer the flagship teaches is that
+  // Georgia has NO statewide citizen initiative — change runs through the legislature, then the voters.
+  {
+    id: "civics.ga-constitution-no-initiative",
+    claim: "Teaches Georgia's 1983 constitution and why Georgia has NO statewide citizen initiative — a constitutional amendment is proposed only by a two-thirds vote of each house of the General Assembly (or a constitutional convention) and then ratified by the voters, never by citizen petition.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: [
+      "Georgia Civics, Lesson 1 · Georgia's constitution: the 1983 rulebook, and no citizen initiative",
+      "Georgia Civics, Lesson 7 · Why Georgia has no ballot initiative, and how change actually happens",
+    ],
+  },
+  {
+    id: "civics.ga-three-branches",
+    claim: "Teaches Georgia's three branches: a 180-member House and 56-member Senate, and a plural executive whose Lieutenant Governor is elected independently of the Governor (can be from a different party) and presides over the State Senate, alongside a separately-elected Attorney General, Secretary of State, and several commissioners.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: ["Georgia Civics, Lesson 2 · The three branches, and Georgia's plural executive"],
+  },
+  {
+    id: "civics.ga-courts",
+    claim: "Teaches Georgia's appellate courts — a nine-justice Supreme Court and a fifteen-judge Court of Appeals — chosen in NONPARTISAN statewide elections to six-year terms, with the Governor filling mid-term vacancies.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: ["Georgia Civics, Lesson 3 · Georgia's courts: nonpartisan elections for the appellate bench"],
+  },
+  {
+    id: "civics.ga-bill-process",
+    claim: "Teaches how a bill becomes a Georgia law — including the constitutional-majority floor vote and the two-thirds veto override — and that a constitutional amendment skips the Governor's desk and goes straight to the voters.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: ["Georgia Civics, Lesson 4 · How a bill becomes a Georgia law"],
+  },
+  {
+    id: "civics.ga-local-government",
+    claim: "Teaches Georgia local government as Georgia's: 159 counties (the second-most of any state, after Texas), home rule, consolidated city-county governments like Columbus-Muscogee and Athens-Clarke, and NO townships.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: [
+      "Georgia Civics, Lesson 5 · Local government in Georgia: 159 counties (2nd-most), home rule, NO townships",
+      "Georgia Civics, Lesson 8 · Get involved where you live in Georgia",
+    ],
+  },
+  {
+    id: "civics.ga-elections",
+    claim: "Teaches Georgia's election specifics: photo voter ID, in-person early (advance) voting, no-excuse absentee-by-mail with the SB 202 (2021) changes, and the distinctive majority-vote RUNOFF that sends the top two candidates to a second election when no one wins an outright majority.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: [
+      "Georgia Civics, Lesson 6 · Elections in Georgia: photo ID, early voting, absentee-by-mail, and the majority runoff",
+    ],
+  },
+  {
+    id: "civics.ga-get-involved",
+    claim: "Teaches getting involved where you live, Georgia edition — because Georgia has no citizen initiative, persuading legislators is the key lever, alongside county commissions and city councils, the nonpartisan judicial races, and coming back to vote the runoff.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: ["Georgia Civics, Lesson 8 · Get involved where you live in Georgia"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
