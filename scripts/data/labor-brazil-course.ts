@@ -882,5 +882,298 @@ Not because of the politics — despite them. The anchor course's fourth questio
         ],
       },
     },
+
+    // ───────── SECTION 4 · 2017: THE RUPTURE — LAW 13.467 SWITCHES OFF THE TAX ─────────
+    {
+      slug: "brazil-lei-13467",
+      section: "Section 4 · 2017: the rupture — Law 13.467 switches off the tax",
+      title: "10 · Lei 13.467: the reform that switched off the tax",
+      recallContent: [
+        {
+          prompt: "State the two facts of the Lula record that most retellings cut in half.",
+          answer: "He was convicted in 2017–18 (Curitiba trial court, upheld by the TRF-4), AND those convictions were annulled by the STF on 8 March 2021 on jurisdictional grounds. A jurisdictional annulment is neither an acquittal nor a conviction on the merits — the course teaches both facts and adjudicates neither.",
+        },
+        {
+          prompt: "Which lock did the 1988 Constitution leave in a STATUTE rather than in the constitution itself?",
+          answer: "Lock 3, the compulsory union tax — the constitution's art. 8, IV merely preserved 'the contribution provided by law,' so the tax itself continued to live in the CLT (arts. 578–610). Unicidade, by contrast, is constitutional (art. 8, II).",
+        },
+      ],
+      body: `Brazil entered its deepest recorded recession in 2015–16; a presidential impeachment in 2016 put vice-president **Michel Temer** in office; and his government passed the biggest rewrite of the CLT since 1943: **Lei nº 13.467, of 13 July 2017** — in force from **11 November 2017** — marketed as the *reforma trabalhista*, the labor reform (Lei nº 13.467, 2017).
+
+It changed more than a hundred articles of the CLT. This course teaches the handful that matter to its argument, and the biggest one first.
+
+## The tax, switched off
+
+The reform rewrote CLT articles 578–579 with two words that undid 1943: the union contribution became conditional on the worker's ***prévia e expressa*** **authorization** — prior and express (Lei nº 13.467, 2017). No authorization, no deduction. **Lock 3 — the compulsory imposto sindical that had financed every chartered union, federation, confederation, and (since 2008) central for seventy-four years — became voluntary overnight.**
+
+Now recall your constitutional audit from Section 3, because it explains *how this was even possible*. **Unicidade** lives in the constitution (art. 8, II) — killing it takes a constitutional amendment. **The tax** lived in the CLT — an ordinary statute, which an ordinary statute could rewrite. Of Vargas's three locks, the one that guarded the money was the one left within a simple majority's reach. Unions challenged the change at the Supreme Court; in **June 2018 the STF upheld it as constitutional** (ADI 5794). The tax was dead, and the highest court had signed the certificate.
+
+## The rest of the reform, briefly
+
+- **Negotiated over legislated** (*negociado sobre legislado*): a new CLT art. 611-A lets collective agreements **prevail over the statute** on a listed set of subjects (hours arrangements, breaks, and more), with art. 611-B listing what may never be bargained away (Lei nº 13.467, 2017). A corporatist code that had always answered "who bargains?" with "the state already decided" now lets the bargaining table overwrite parts of the code itself.
+- **Intermittent work** (*trabalho intermitente*): a new contract form in which the worker is on the books but paid only for hours actually summoned — formal employment, with the schedule risk moved onto the worker.
+- **Union sign-off on dismissals ended:** terminations no longer require homologation at the union — removing one of the routine moments where every departing worker met their union.
+- **Litigation costs:** the reform made losing labor-court claimants — including poor ones — liable for costs in some circumstances; filings dropped sharply in the first year afterward (TST data), and in 2021 the STF struck down parts of the cost rules as unconstitutional. Taught here in one line for what it is: the reform also raised the price of reaching the one court system built for workers.
+
+## Frame the experiment before you see the results
+
+Every course in this track eventually hands you a natural experiment. Here is Brazil's, and it is the cleanest in the whole track: **a union system financed for 74 years by a compulsory tax has the tax switched off, at a stroke, on a known date.** If the corporatist bargain built real worker power, revenue should dip and recover as unions convert assigned members into willing payers. If it built dependence, the floor should simply drop. The next lesson shows you the numbers — and teaches you how to read two official-looking numbers that disagree.
+
+:::reveal Why could an ordinary 2017 statute kill the compulsory union tax, when it could not have killed unicidade? ||| Because the two locks live at different legal altitudes: unicidade was written into the 1988 Constitution itself (art. 8, II) and would take a constitutional amendment to remove, while the tax lived in the CLT — an ordinary statute — which the constitution's art. 8, IV merely referenced as 'the contribution provided by law.' Lei 13.467 simply rewrote CLT arts. 578–579 to require the worker's prior and express authorization, and in June 2018 the STF upheld the change (ADI 5794).
+
+## Sources
+- Lei nº 13.467, de 13 de julho de 2017. Presidência da República. https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm
+- Decreto-Lei nº 5.452, de 1º de maio de 1943 (Consolidação das Leis do Trabalho, arts. 578–579, 611-A, 611-B, as amended). Presidência da República. https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm
+- Supremo Tribunal Federal. (2018). *Ação Direta de Inconstitucionalidade 5794* (julgada em junho de 2018). https://portal.stf.jus.br/`,
+    },
+    {
+      slug: "brazil-revenue-collapse",
+      section: "Section 4 · 2017: the rupture — Law 13.467 switches off the tax",
+      title: "11 · The collapse, by the numbers — and how to read two numbers that disagree",
+      recallContent: [
+        {
+          prompt: "What did Lei 13.467/2017 do to the imposto sindical, exactly?",
+          answer: "It rewrote CLT arts. 578–579 to make the contribution conditional on the worker's prior and express (prévia e expressa) authorization — compulsory became voluntary, effective 11 November 2017. The STF upheld the change in June 2018 (ADI 5794).",
+        },
+        {
+          prompt: "What is 'negociado sobre legislado'?",
+          answer: "The reform's rule (CLT art. 611-A) that collective agreements prevail over the statute on a listed set of subjects, with art. 611-B listing what can never be bargained away.",
+        },
+      ],
+      body: `Here are the results of the experiment. Two sets of official figures, and then — because this course is also a course in reading sources — the discrepancy between them, taught instead of hidden.
+
+## Series A — unions' tax receipts (Secretaria do Trabalho data, reported by Gazeta do Povo, 13 Jan 2020)
+
+| Year | Compulsory-tax revenue |
+| --- | --- |
+| 2017 (last compulsory year) | **R$ 2.0 billion** |
+| 2018 (first voluntary year) | **R$ 282.9 million** |
+| 2019 (Jan–Nov) | **R$ 88.2 million** |
+
+A fall of roughly **86% in the first year**; by 2019 the flow was around **4%** of what it had been.
+
+## Series B — the whole corporatist structure (official data, reported by Poder360, 18 Jan 2023)
+
+| Year | Revenue |
+| --- | --- |
+| 2017 | **R$ 3 billion** |
+| 2021 | **R$ 65.6 million** |
+
+A fall of roughly **98%** across four years.
+
+## Wait — was 2017 R$2 billion or R$3 billion?
+
+Both. **The scopes differ.** Series A counts the tax received by *unions*; Series B counts the tax received by the entire structure the tax fed — **unions + federations + confederations + centrais** (remember Lei 11.648/2008 cutting the centrais in for 10%). Neither number is wrong; they are answers to different questions. **This is the single most useful source-reading habit this course can give you:** when two credible figures disagree, check the *denominator and the scope* before you cry error or fraud — and notice that on the thing that matters, the two series agree completely: **more than 90% of the money vanished within a few years of the switch.**
+
+## Now the harder question: what died?
+
+Resist the tidy story in both directions.
+
+**Complication 1 — the decline predates 2017.** Union density, per IBGE's PNAD Contínua: **16.1% (2012) → 9.2% (2022) → 8.4% (2023, the series low) → 8.9% (2024, the first rise since 2012)** (IBGE, 2025). Membership was falling for five years *before* the tax ended. The reform did not start the decline; it defunded a structure that was already hollowing.
+
+**Complication 2 — some of what died was never alive.** Brazilian labor debate has a name for unions that existed mainly to receive the tax: *sindicatos cartoriais* — "registry-office unions," paper entities with a charter, a category, a bank account, and no members to speak of. Guaranteed revenue for seventy-four years had made founding a union a business model. Some of the collapse is those entities starving — which even many unionists do not mourn.
+
+**So the course refuses both framings.** "The reform killed healthy unions" ignores that density was already falling and that the tax propped up paper unions. "The reform only killed fake unions" ignores that real, functioning unions — including the ABC metalworkers' heirs — lost the bulk of their budgets in a single year and cut staff, services, and bargaining capacity accordingly. What the experiment actually demonstrates is the price of the original bargain: **a union that never had to ask workers for money never built the habit of earning it.** When the tax vanished, seventy-four years of that dependence came due at once. Compare the Nordic course: Ghent-system unions, which must continuously *earn* membership by administering benefits workers value, held densities near two-thirds. Brazil's assigned, tax-fed unions could not convert assigned members into willing payers on two years' notice — and the small 2024 uptick (8.9%) is the first data point that any of them are learning to.
+
+:::reveal One source says Brazil's union tax brought in R$2 billion in 2017; another says R$3 billion for the same year. Is one of them wrong, and what should you check first? ||| Neither is necessarily wrong — check the scope. The R$2bn series (Secretaria do Trabalho data via Gazeta do Povo, 2020) counts what UNIONS received; the R$3bn series (via Poder360, 2023) counts the whole structure the tax fed — unions plus federations, confederations, and centrais. Different denominators, different answers, same shape: after Lei 13.467 made the tax voluntary, more than 90% of the revenue vanished within a few years (to R$282.9M in 2018, R$88.2M in Jan–Nov 2019, and R$65.6M for the whole structure in 2021).
+
+## Sources
+- Secretaria do Trabalho (Ministério da Economia). (2020). [Union-tax collection figures 2017–2019, as reported by Gazeta do Povo, 2020, January 13.]
+- Poder360. (2023, January 18). [Report on official union-tax revenue: R$3 billion (2017) to R$65.6 million (2021), covering unions, federations, confederations and centrais.] https://www.poder360.com.br/
+- Instituto Brasileiro de Geografia e Estatística. (2025). *PNAD Contínua — Características adicionais do mercado de trabalho* (union-density series 2012–2024). https://www.ibge.gov.br/
+- Lei nº 13.467, de 13 de julho de 2017. Presidência da República. https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13467.htm`,
+    },
+    {
+      slug: "brazil-section-4-quiz",
+      section: "Section 4 · 2017: the rupture — Law 13.467 switches off the tax",
+      title: "12 · Check yourself: the rupture and the numbers",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Under which government was Lei 13.467 passed, and when did it take effect?",
+            options: [
+              "Michel Temer's government — signed 13 July 2017, in force 11 November 2017",
+              "Lula's first government, in 2003",
+              "The military regime, in 1967",
+              "Getúlio Vargas's Estado Novo, in 1943",
+            ],
+            correctIndex: 0,
+            explanation: "Passed after the 2015–16 recession and the 2016 impeachment, and marketed as the reforma trabalhista — the biggest rewrite of the CLT since 1943.",
+            sourceLessonSlug: "brazil-lei-13467",
+          },
+          {
+            prompt: "What did Lei 13.467 do to the compulsory union tax?",
+            options: [
+              "Made it voluntary — the deduction now requires the worker's prior and express (prévia e expressa) authorization",
+              "Doubled it to two days' wages per year",
+              "Transferred it entirely to the government",
+              "Left it unchanged",
+            ],
+            correctIndex: 0,
+            explanation: "CLT arts. 578–579 as rewritten. Lock 3 — the funding lock that had held since 1943 — was switched off overnight.",
+            sourceLessonSlug: "brazil-lei-13467",
+          },
+          {
+            prompt: "Why could an ordinary statute abolish the tax but not unicidade?",
+            options: [
+              "The tax lived in the CLT (an ordinary statute), while unicidade is in the constitution (art. 8, II) and would require a constitutional amendment",
+              "Because taxes can never be constitutional",
+              "Because unicidade had already been abolished in 1988",
+              "It could not — the tax abolition was struck down",
+            ],
+            correctIndex: 0,
+            explanation: "The three locks live at different legal altitudes. The one guarding the money was the one within a simple majority's reach.",
+            sourceLessonSlug: "brazil-lei-13467",
+          },
+          {
+            prompt: "What did the STF decide in ADI 5794 (June 2018)?",
+            options: [
+              "It upheld the end of the compulsory union tax as constitutional",
+              "It restored the compulsory tax",
+              "It abolished unicidade sindical",
+              "It annulled the entire 2017 reform",
+            ],
+            correctIndex: 0,
+            explanation: "Unions had challenged the change; the highest court signed the tax's death certificate.",
+            sourceLessonSlug: "brazil-lei-13467",
+          },
+          {
+            prompt: "What is 'negociado sobre legislado'?",
+            options: [
+              "The reform's rule that collective agreements prevail over the statute on a listed set of subjects (CLT art. 611-A), with art. 611-B listing what can never be bargained away",
+              "The rule that statutes always beat agreements",
+              "A ban on collective bargaining",
+              "The compulsory arbitration of all disputes",
+            ],
+            correctIndex: 0,
+            explanation: "A code that had always answered 'who bargains?' with 'the state already decided' now lets the bargaining table overwrite parts of the code itself.",
+            sourceLessonSlug: "brazil-lei-13467",
+          },
+          {
+            prompt: "What is trabalho intermitente (intermittent work), created by the 2017 reform?",
+            options: [
+              "A contract in which the worker is formally employed but paid only for hours actually summoned — schedule risk moved onto the worker",
+              "A ban on part-time work",
+              "Seasonal agricultural work only",
+              "Work performed exclusively from home",
+            ],
+            correctIndex: 0,
+            explanation: "Formal employment — a signed carteira — with none of the income predictability the signed card used to imply.",
+            sourceLessonSlug: "brazil-lei-13467",
+          },
+          {
+            prompt: "Per Secretaria do Trabalho data reported by Gazeta do Povo (2020), what happened to unions' tax revenue after the switch?",
+            options: [
+              "R$2.0 billion (2017) → R$282.9 million (2018) → R$88.2 million (Jan–Nov 2019)",
+              "It rose from R$2 billion to R$3 billion",
+              "It fell by about 10% and recovered",
+              "It was exactly zero from 2018 on",
+            ],
+            correctIndex: 0,
+            explanation: "Roughly −86% in the first voluntary year; by 2019 the flow was around 4% of the 2017 level.",
+            sourceLessonSlug: "brazil-revenue-collapse",
+          },
+          {
+            prompt: "Per official data reported by Poder360 (2023), what did the WHOLE corporatist structure receive in 2017 and in 2021?",
+            options: [
+              "R$3 billion (2017) → R$65.6 million (2021) — a fall of roughly 98%",
+              "R$65.6 million (2017) → R$3 billion (2021)",
+              "R$3 billion in both years",
+              "R$100 billion (2017) → R$50 billion (2021)",
+            ],
+            correctIndex: 0,
+            explanation: "This series counts unions plus federations, confederations and centrais — the entire structure the tax fed.",
+            sourceLessonSlug: "brazil-revenue-collapse",
+          },
+          {
+            prompt: "Why do the two sources give different figures (R$2bn vs R$3bn) for the same year, 2017?",
+            options: [
+              "Their scopes differ — one counts unions only, the other the whole structure (unions + federations + confederations + centrais); neither is wrong",
+              "One of them fabricated its number",
+              "Inflation between the two reports",
+              "A currency conversion error",
+            ],
+            correctIndex: 0,
+            explanation: "The course's source-reading habit: when two credible figures disagree, check the denominator and the scope before crying error or fraud.",
+            sourceLessonSlug: "brazil-revenue-collapse",
+          },
+          {
+            prompt: "On what do both revenue series agree?",
+            options: [
+              "More than 90% of the money vanished within a few years of the 2017 switch",
+              "Revenue was unaffected by the reform",
+              "Revenue doubled after 2017",
+              "The tax was never actually collected",
+            ],
+            correctIndex: 0,
+            explanation: "Different scopes, same shape. The cleanest natural experiment in the track produced an unambiguous result.",
+            sourceLessonSlug: "brazil-revenue-collapse",
+          },
+          {
+            prompt: "What is Brazil's union-density series, per IBGE's PNAD Contínua?",
+            options: [
+              "16.1% (2012) → 9.2% (2022) → 8.4% (2023, series low) → 8.9% (2024, first rise since 2012)",
+              "Steady at 30% throughout",
+              "16.1% (2012) rising to 25% (2024)",
+              "Zero after 2017",
+            ],
+            correctIndex: 0,
+            explanation: "The detail that complicates the tidy story: membership was falling for five years BEFORE the tax ended.",
+            sourceLessonSlug: "brazil-revenue-collapse",
+          },
+          {
+            prompt: "What are 'sindicatos cartoriais'?",
+            options: [
+              "Paper 'registry-office' unions that existed mainly to receive the compulsory tax — a charter, a category, a bank account, and few real members",
+              "Unions of notaries and registry workers",
+              "Unions founded before 1943",
+              "Foreign unions operating in Brazil",
+            ],
+            correctIndex: 0,
+            explanation: "Guaranteed revenue had made founding a union a business model. Part of the post-2017 collapse is those entities starving.",
+            sourceLessonSlug: "brazil-revenue-collapse",
+          },
+          {
+            prompt: "Why does the course refuse the framing 'the reform killed healthy unions'?",
+            options: [
+              "Because density was falling before 2017 and the tax also propped up paper unions — the structure was already hollowing",
+              "Because no union lost any revenue",
+              "Because the reform was annulled in 2018",
+              "Because unions kept the tax until 2021",
+            ],
+            correctIndex: 0,
+            explanation: "And it equally refuses 'the reform only killed fake unions' — real unions, including the ABC metalworkers' heirs, lost the bulk of their budgets in a year.",
+            sourceLessonSlug: "brazil-revenue-collapse",
+          },
+          {
+            prompt: "What does the 2017 experiment actually demonstrate, per this course?",
+            options: [
+              "The price of the corporatist bargain: a union that never had to ask workers for money never built the habit of earning it, and 74 years of dependence came due at once",
+              "That unions cannot exist without state funding anywhere",
+              "That voluntary funding always strengthens unions immediately",
+              "That the tax had no effect on union behavior",
+            ],
+            correctIndex: 0,
+            explanation: "Contrast the Ghent-system unions of the Nordic course, which continuously earn membership by administering benefits — and held densities near two-thirds.",
+            sourceLessonSlug: "brazil-revenue-collapse",
+          },
+          {
+            prompt: "What happened to labor-court litigation costs under the reform?",
+            options: [
+              "Losing claimants — including poor ones — became liable for costs in some circumstances; filings dropped sharply, and in 2021 the STF struck down parts of the cost rules",
+              "All litigation became free",
+              "The labor courts were abolished",
+              "Filing fees were unchanged",
+            ],
+            correctIndex: 0,
+            explanation: "The reform also raised the price of reaching the one court system built for workers — taught in one line for what it is.",
+            sourceLessonSlug: "brazil-lei-13467",
+          },
+        ],
+      },
+    },
   ],
 };
