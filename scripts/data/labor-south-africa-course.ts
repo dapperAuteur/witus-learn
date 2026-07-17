@@ -1537,5 +1537,283 @@ The same building the LRA built, with a side door that lets the work in while le
         ],
       },
     },
+    // ────────────── SECTION 6 · THE FRACTURES, AND THE QUESTION ──────────────
+    {
+      slug: "sa-fractures",
+      title: "13 · NUMSA out, SAFTU born: what an alliance costs",
+      section: "Section 6 · The fractures, and the question",
+      body: `Joe Foster's 1982 question — *what happens to workers' independent voice inside a multi-class alliance in power?* — stopped being a seminar topic in the decades after 1994, and this lesson shows you its test running in real time. Everything here is a live fight in South African politics. The course's job is to give you **each side's case, from its own documents**, and no verdict.
+
+**The friction, in brief.** From inside the Tripartite Alliance, COSATU fought its own government repeatedly: it opposed the market-oriented **GEAR** macroeconomic strategy the government adopted in 1996 without alliance consensus (COSATU congress resolutions of the period), and mounted general strikes over privatisation and, later, labour broking and road tolls. The federation backed **Jacob Zuma's** rise to the ANC presidency at Polokwane in 2007 — then spent his presidency increasingly divided over corruption and, after Marikana, over what the alliance was for. **Marikana radicalised the argument**: the killings happened under an ANC-led government; the union bleeding members at Marikana (NUM) was COSATU's anchor affiliate; and the federation's metalworkers drew the conclusion out loud.
+
+**The rupture, dated.** In **December 2013**, the National Union of Metalworkers of South Africa — **NUMSA**, by then COSATU's largest affiliate with around 340,000 members — resolved at a special national congress that it would **not campaign for the ANC** in the 2014 elections, called on COSATU to break from the alliance, and set out to build a "united front" of workers and communities (NUMSA special national congress resolutions, December 2013). For a federation whose constitution and practice were built on the alliance, this was secession in place. On **8 November 2014**, COSATU's central executive committee voted **33 to 24** to **expel NUMSA**. The federation's general secretary, **Zwelinzima Vavi** — who had opposed the expulsion — was himself expelled in **March 2015**. In **April 2017**, NUMSA, Vavi and others launched a rival federation: the **South African Federation of Trade Unions (SAFTU)**, claiming roughly **700,000 members across about two dozen unions** at its founding congress (SAFTU founding documents, 2017), on a declared platform of independence from political parties — "independent but not apolitical," in its own founding formula.
+
+**Now the steelman, both ways — from their own statements.**
+
+**COSATU's case for staying in** (from its congress documents and public positions): the alliance is not capture but **leverage**. The LRA itself, NEDLAC's standing seat at the legislative table, and the **National Minimum Wage Act 9 of 2018** — in force 1 January 2019 at R20 an hour, covering some six million workers previously below it, negotiated through NEDLAC with a former NUM general secretary, by then deputy president, chairing the process — are, on this account, what a federation gets **because** it is inside. Walk out, and you trade a seat at the table for a placard outside the window. Better to fight — as COSATU says it does — *within*.
+
+**NUMSA and SAFTU's case for leaving** (from the December 2013 resolutions and SAFTU's founding declaration): the alliance has made the federation **an amen corner of the governing party** — Foster's warning realised. Exhibit one is **Marikana**: a massacre of striking mineworkers under an ANC government, with the alliance federation, on this account, unable to say plainly whose side it was on. The workers COSATU now speaks for are disproportionately public servants — the composition of the federation has shifted toward public-sector unions, whose employer is the very state the alliance runs — while the platinum belt, the brokered, and the unemployed drifted outside. Independence, on this account, is not a luxury; it is the precondition of being a union at all.
+
+**And notice what each side's strongest evidence is.** The minimum wage is a real statute with a real date; Marikana is a real massacre with a real commission report. **Both exhibits are genuine.** That is why this fight is live, why serious people stand on both sides of it — and why this course, which is not South African, tells you the arguments and refuses to hand you the answer as if it owned one.
+
+:::reveal COSATU's best exhibit is the National Minimum Wage Act of 2018; NUMSA/SAFTU's best exhibit is Marikana. Why does the course present both exhibits as genuine rather than declaring a winner? ||| Because each is exactly the kind of evidence its side claims: the minimum wage (Act 9 of 2018, in force 1 January 2019, ~six million workers affected) is a concrete gain plausibly won by being inside the alliance's rooms; Marikana is a concrete catastrophe that happened on the alliance's watch and exposed what a federation tied to the governing party could not say or stop. The two facts do not cancel; they weigh differently depending on what you think a union is for — which is a judgment the course leaves to the student, and, ultimately, to South Africans.
+
+## Sources
+- National Union of Metalworkers of South Africa. (2013, December). *Special national congress declaration and resolutions*. https://numsa.org.za/
+- South African Federation of Trade Unions. (2017). *Founding congress declaration*. https://saftu.org.za/
+- Congress of South African Trade Unions. (n.d.). *Congress resolutions and statements on the Alliance*. https://cosatu.org.za/
+- Republic of South Africa. (2018). *National Minimum Wage Act 9 of 2018*. https://www.gov.za/documents/national-minimum-wage-act-9-2018-27-nov-2018-0000`,
+      recallContent: [
+        {
+          prompt: "Date the rupture: NUMSA's resolutions, the expulsion, Vavi, and SAFTU.",
+          answer:
+            "December 2013: NUMSA's special national congress resolves not to campaign for the ANC and calls on COSATU to leave the alliance. 8 November 2014: COSATU's CEC expels NUMSA, 33–24. March 2015: general secretary Zwelinzima Vavi expelled. April 2017: SAFTU launches — roughly 700,000 claimed members, about two dozen unions, 'independent but not apolitical.'",
+        },
+        {
+          prompt: "Give each side's strongest exhibit in the alliance debate.",
+          answer:
+            "COSATU (stay in): the National Minimum Wage Act 9 of 2018 (in force 1 Jan 2019, ~six million workers), won through NEDLAC from inside the alliance. NUMSA/SAFTU (get out): Marikana — a massacre of strikers under an ANC-led government, read as proof the alliance neutered the federation. Both exhibits are genuine; the course declares no winner.",
+        },
+      ],
+    },
+    {
+      slug: "sa-the-question",
+      title: "14 · Won the state — lost the workplace? The Poland question, offered",
+      section: "Section 6 · The fractures, and the question",
+      body: `If you have taken this track's Poland course, you know its spine in five words: **won the country, lost the workplace.** Solidarność brought down a state, formed the next government — and then watched union density collapse to among Europe's lowest while its own ministers ran the reforms that hurt its members. South Africa is the track's other case of a union movement that helped win a state. So the question asks itself, and this lesson's entire job is to ask it **properly — as a question, not a verdict.**
+
+**The case that South Africa rhymes with Poland.** A liberation-era federation entered government's orbit; its most famous unionist became the country's president by way of a boardroom; its anchor mining affiliate was gutted from below at Marikana by workers who no longer felt spoken for; its rivals now include a federation founded on the accusation that the alliance swallowed the movement. Meanwhile the largest class of excluded people — the unemployed third — stands outside every structure the movement built. Squint, and you can see Gdańsk: the movement won the state, and the workplace slipped.
+
+**The case that it does not rhyme — read it just as carefully.** South African union density has not collapsed Polish-style: measured density has moved between roughly **a quarter and three in ten** of employees since the 1990s, with figures varying by survey and year (ILO and OECD/AIAS compilations) — several times Poland's ~9%, and the course flags the variance rather than pretending a decimal. Bargaining councils still set wages across whole sectors; NEDLAC still gives federations a statutory seat in lawmaking no Polish union ever held; the minimum wage of 2018 is a workplace victory won *from* the state, thirty years after the transition. And where Solidarność's successor unions faded from the shop floor, South Africa's fracture produced not decline into irrelevance but **rival federations competing to organise** — AMCU on the platinum belt, SAFTU beside COSATU — which is conflict, but conflict is not absence. A fair reader can hold that South Africa's movement remains among the strongest in the global South.
+
+**So the honest answer is: the question is open — and the four questions are how you keep watching it.** Q1 (*who may organise?*): everyone, constitutionally — the struggle's cleanest win. Q2 (*who is excluded?*): the unemployed and the brokered — the queue outside, growing. Q3 (*who bargains, at what level?*): councils, NEDLAC — and a federation bargaining with a government it helps elect, the arrangement whose price and payoff Sections 5 and 6 laid out without settling. Q4 (*what happens if you try?*): protected strikes on paper; Marikana on the record; watch this one hardest of all.
+
+**What you take with you.** From South Africa, the track's bluntest lesson about categories: **a right belongs to a category, and whoever writes the category decides who has the right** — whether the category is "employee, not pass-bearing" in 1924 or "employee of the client, after three months, below the threshold" in 2015. And a discipline: when a movement's history is still being fought over — in courtrooms, at party congresses, in election seasons — teach the record, date the claims, steelman the sides, and leave the verdict to the people who must live it. For what to do about *your own* workplace on Monday, take **Know Your Rights at Work**; for the frame this course ran on, the anchor; for the mirror, Poland. The track's next stops widen the lens again.
+
+:::reveal Apply the Poland question to South Africa and give the strongest single fact on each side — then say what the course concludes. ||| Rhymes with Poland: Marikana — the liberation federation's own alliance governed while police killed 34 strikers, and the workers had already left its anchor union, suggesting the movement won the state and lost the shop floor. Against the rhyme: density between roughly a quarter and three in ten (ILO/OECD-AIAS, survey-varying) — several times Poland's ~9% — plus sectoral councils, NEDLAC's statutory seat and the 2018 minimum wage, a workplace victory won from inside, decades after the transition. The course concludes nothing: it teaches the question as open and hands the student the four questions to keep watching it with.
+
+## Sources
+- International Labour Organization. (n.d.). *Statistics on union membership and collective bargaining coverage — South Africa*. ILOSTAT. https://ilostat.ilo.org/
+- OECD/AIAS. (n.d.). *ICTWSS database*. Organisation for Economic Co-operation and Development. https://www.oecd.org/employment/ictwss-database.htm
+- Republic of South Africa. (2018). *National Minimum Wage Act 9 of 2018*. https://www.gov.za/documents/national-minimum-wage-act-9-2018-27-nov-2018-0000`,
+      recallContent: [
+        {
+          prompt: "Why does the course refuse to conclude that South Africa 'won the state and lost the workplace' like Poland?",
+          answer:
+            "Because the counter-evidence is real: density several times Poland's (roughly a quarter to three in ten, survey-varying — ILO/OECD-AIAS), living sectoral bargaining councils, a statutory seat in lawmaking via NEDLAC, the 2018 minimum wage won from inside, and rival federations still competing to organise. The rhyme is offered as an open question, not forced as a verdict.",
+        },
+        {
+          prompt: "What is the single bluntest lesson South Africa adds to the track?",
+          answer:
+            "A right belongs to a category, and whoever writes the category decides who has the right — from 'employee, not pass-bearing' (1924) to 'employee of the client, after three months, below the threshold' (2015). Read definitions before rights, in any country.",
+        },
+      ],
+    },
+    {
+      slug: "sa-quiz-6",
+      title: "Section 6 quiz · The fractures, and the question",
+      section: "Section 6 · The fractures, and the question",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What was GEAR, and why does it matter to the alliance story?",
+            options: [
+              "A mining safety code COSATU wrote",
+              "The market-oriented macroeconomic strategy government adopted in 1996 without alliance consensus — which COSATU publicly opposed, fighting its own government from inside the alliance",
+              "A COSATU recruitment drive",
+              "A 2018 wage law",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The first big demonstration that alliance membership did not mean policy agreement — the friction that later fractures grew from.",
+            sourceLessonSlug: "sa-fractures",
+          },
+          {
+            prompt: "What did NUMSA resolve in December 2013?",
+            options: [
+              "To merge with NUM",
+              "Not to campaign for the ANC in 2014, to call on COSATU to break from the alliance, and to build a united front",
+              "To dissolve itself",
+              "To support the Democratic Alliance",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The special national congress resolutions — secession in place, for a federation built on the alliance.",
+            sourceLessonSlug: "sa-fractures",
+          },
+          {
+            prompt: "How and when was NUMSA expelled from COSATU?",
+            options: [
+              "By a court order in 2016",
+              "By a central executive committee vote of 33 to 24 on 8 November 2014",
+              "By presidential decree in 2013",
+              "It left voluntarily in 2017",
+            ],
+            correctIndex: 1,
+            explanation:
+              "COSATU's largest affiliate (~340,000 members) expelled by vote; general secretary Zwelinzima Vavi, who opposed the expulsion, was himself expelled in March 2015.",
+            sourceLessonSlug: "sa-fractures",
+          },
+          {
+            prompt: "What is SAFTU?",
+            options: [
+              "A government department",
+              "The rival federation launched in April 2017 by NUMSA, Vavi and others — roughly 700,000 claimed members, about two dozen unions, declaring itself 'independent but not apolitical'",
+              "COSATU's youth wing",
+              "An employers' association",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Founded on the accusation that the alliance had swallowed the movement — Foster's 1982 warning, claimed as vindicated.",
+            sourceLessonSlug: "sa-fractures",
+          },
+          {
+            prompt: "What is COSATU's strongest exhibit for staying in the alliance?",
+            options: [
+              "The GEAR strategy",
+              "The National Minimum Wage Act 9 of 2018 — in force 1 January 2019 at R20/hour, reaching some six million workers, negotiated through NEDLAC from inside",
+              "The 1987 miners' strike",
+              "The Marikana settlement",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A real statute with a real date: leverage, on COSATU's account, is what the seat at the table buys.",
+            sourceLessonSlug: "sa-fractures",
+          },
+          {
+            prompt: "What is NUMSA/SAFTU's strongest exhibit for leaving?",
+            options: [
+              "The 2018 minimum wage",
+              "Marikana — a massacre of striking mineworkers under an ANC-led government, read as proof of what an alliance federation could not say or stop",
+              "The Durban strikes",
+              "The Wiehahn Commission",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A real catastrophe with a real commission report. Both sides' exhibits are genuine — which is why the fight is live.",
+            sourceLessonSlug: "sa-fractures",
+          },
+          {
+            prompt: "What compositional shift inside COSATU do its critics point to?",
+            options: [
+              "A shift toward farm workers",
+              "A shift toward public-sector unions — members whose employer is the state the alliance runs — while the platinum belt, the brokered and the unemployed drifted outside",
+              "A shift toward foreign members",
+              "A shift toward managers",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Part of the leavers' case that the federation's centre of gravity moved away from the workers who broke at Marikana.",
+            sourceLessonSlug: "sa-fractures",
+          },
+          {
+            prompt: "How does the course adjudicate the alliance debate?",
+            options: [
+              "It rules for COSATU",
+              "It rules for SAFTU",
+              "It doesn't: it steelmans both cases from their own documents, notes both exhibits are genuine, and leaves the verdict to the student and to South Africans",
+              "It says the debate is meaningless",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Live, contested domestic politics: teach the record, date the claims, steelman the sides, hand over no verdict.",
+            sourceLessonSlug: "sa-fractures",
+          },
+          {
+            prompt: "What is 'the Poland question' as applied to South Africa?",
+            options: [
+              "Whether South Africa should join the EU",
+              "Whether a union movement that helped win the state has, like Solidarność's Poland, lost the workplace — offered as an open question, not a verdict",
+              "Whether Poland should adopt the LRA",
+              "Whether martial law could happen in South Africa",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The track's two liberation-union cases held up to each other — and deliberately not resolved.",
+            sourceLessonSlug: "sa-the-question",
+          },
+          {
+            prompt: "Which fact most complicates the claim that South Africa rhymes with Poland?",
+            options: [
+              "South Africa has no constitution",
+              "Measured union density of roughly a quarter to three in ten employees (survey-varying; ILO/OECD-AIAS) — several times Poland's ~9% — plus living sectoral councils, NEDLAC and the 2018 minimum wage",
+              "Poland never had a union",
+              "South African strikes are illegal",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The workplace has not emptied Polish-style; the course flags the density variance rather than asserting a decimal.",
+            sourceLessonSlug: "sa-the-question",
+          },
+          {
+            prompt: "How does the course handle South African union density figures?",
+            options: [
+              "It states 31.45% exactly",
+              "It gives the documented range (roughly a quarter to three in ten employees since the 1990s), names the sources (ILO, OECD/AIAS), and flags that figures vary by survey and year",
+              "It says density cannot be measured",
+              "It uses Poland's figure as a proxy",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Contested and survey-dependent figures are presented as such — the course's standing rule for numbers.",
+            sourceLessonSlug: "sa-the-question",
+          },
+          {
+            prompt: "Run Question 4 for democratic South Africa, as the course leaves it.",
+            options: [
+              "Strikes are banned",
+              "Protected strikes on paper — and Marikana on the record; the course says to watch this question hardest of all",
+              "Strikers are always compensated",
+              "The question no longer applies",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The paper answer and the record's answer differ — holding both is the course's final discipline.",
+            sourceLessonSlug: "sa-the-question",
+          },
+          {
+            prompt: "What is the 'bluntest lesson about categories' this course adds to the track?",
+            options: [
+              "Categories never matter",
+              "A right belongs to a category, and whoever writes the category decides who has the right — from 'not pass-bearing' (1924) to 'below the threshold, after three months' (2015)",
+              "All categories are unconstitutional",
+              "Only judges may write categories",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Read definitions before rights — in 1924, in 2015, and in whatever statute you read next.",
+            sourceLessonSlug: "sa-the-question",
+          },
+          {
+            prompt: "Which companion courses does the final lesson point to, and for what?",
+            options: [
+              "No other courses exist",
+              "Know Your Rights at Work (your own job, Monday), the anchor (the four-questions frame), and Poland (the mirror case)",
+              "Only the Germany course",
+              "A course on South African cuisine",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The track compounds: present-tense rights, the analytical frame, and the comparative mirror.",
+            sourceLessonSlug: "sa-the-question",
+          },
+          {
+            prompt: "What discipline does the course say to apply when a movement's history is still being fought over?",
+            options: [
+              "Wait fifty years before teaching it",
+              "Teach the record, date the claims, steelman the sides, and leave the verdict to the people who must live it",
+              "Teach only the government's version",
+              "Teach only the opposition's version",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The method this course used for Marikana and the alliance — and the reason it ships flagged for South African review before promotion.",
+            sourceLessonSlug: "sa-the-question",
+          },
+        ],
+      },
+    },
   ],
 };
