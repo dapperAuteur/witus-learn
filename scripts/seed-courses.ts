@@ -99,6 +99,7 @@ import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-cours
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
+import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
 import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
 import { LABOR_MEXICO_COURSE } from "./data/labor-mexico-course";
 import { LABOR_NORDICS_COURSE } from "./data/labor-nordics-course";
@@ -700,6 +701,14 @@ async function main() {
     // adjudicates neither. Teaches the "junk contracts" (umowy śmieciowe) rhyme with US
     // misclassification + Mexican protection contracts. 6 sections · no migration · seed:courses.
     { slug: "labor-poland", course: LABOR_POLAND_COURSE, category: "Culture & History" },
+    // Chile: A Labor System Designed to Be Weak — Wave 2 of the workers'-rights country track, and
+    // the learner's recommended LAST country course: the 1979 Plan Laboral (DL 2756/2758, José
+    // Piñera) as a labor system DESIGNED to atomise — steelmanned in its author's own words, then
+    // measured (density ~16%, coverage ~19.3%, 2023 OECD/AIAS — the ~3-point gap as the firm-level
+    // fingerprint). Set deliberately AGAINST the Nordics course: same statutory silence on sectoral
+    // bargaining, opposite cause. Subcontratación (Ley 20.123) named as Chile's put-them-outside
+    // move. 2022/2023 constitutional rejections dated, outcomes only. 6 sections · seed:courses.
+    { slug: "labor-chile", course: LABOR_CHILE_COURSE, category: "Culture & History" },
     // Africa Before Colonization — the ANCHOR of the precolonial-Africa track
     // (plans/future-courses/africa-precolonial-track-proposal.md; from BAM's world.md queue).
     // Opens with the verified Hegel (1837) and Trevor-Roper (1965) "no history" quotes as the
