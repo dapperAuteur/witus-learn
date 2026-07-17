@@ -1251,5 +1251,291 @@ The same building the LRA built, with a side door that lets the work in while le
         ],
       },
     },
+    // ────────────── SECTION 5 · MARIKANA ──────────────
+    // 🔴 REVIEWER FOCUS: these two lessons are the ones the South African reviewer most needs to
+    // check. Every sentence is written to be verifiable against the Farlam Commission's published
+    // report (2015) or named contemporaneous reporting; open litigation is dated "as of 2026" and
+    // NOT adjudicated. Do not promote this course until a South African reviewer has signed off.
+    {
+      slug: "sa-marikana-what-happened",
+      title: "11 · Marikana, 16 August 2012: what happened",
+      section: "Section 5 · Marikana — taught from the record",
+      body: `This lesson and the next are taught under the strictest sourcing rule in this course. What follows comes from the published report of the **Marikana Commission of Inquiry** (the "Farlam Commission," 2015) and from reputable contemporaneous reporting. Where the record is disputed, the dispute is named. Where courts had not finished, this course says so and stops. Nothing here is anyone's slogan.
+
+**The place and the dispute.** In August 2012, **Lonmin plc** operated platinum mines at **Marikana**, near Rustenburg in North West province; it was then the world's third-largest platinum producer. On **9 August 2012**, thousands of **rock drill operators** — the men who hold the drills at the rock face, among the hardest jobs underground — began an **unprotected (wildcat) strike**, outside any union's authorisation, demanding a take-home wage of **R12,500 a month**.
+
+**The union context — essential, and easy to get wrong.** The recognised majority union at Lonmin was the **National Union of Mineworkers (NUM)** — COSATU's founding giant, the union of Section 3. But NUM's standing among Lonmin's lowest-paid underground workers had collapsed; many saw it as too close to management and too far from the rock face. The **Association of Mineworkers and Construction Union (AMCU)** — a rival founded in 1998 by **Joseph Mathunjwa** after his expulsion from NUM — was recruiting hard on the platinum belt. The strikers, though, had launched the strike **themselves**, initially outside both unions; the two organisations then contested furiously for the strikers' allegiance. Within a year AMCU had displaced NUM as the majority union across much of the platinum belt — the first major crack in COSATU's world, and Section 6 begins there.
+
+**The week before, told plainly.** Between **10 and 15 August**, ten people were killed around Marikana: among them **two Lonmin security guards**, **two police officers**, and **six others**, including striking and non-striking workers and NUM members (Marikana Commission report, 2015 — the report documents each death). On **11 August**, shots were fired when strikers marched on the NUM office and two strikers were wounded; the commission found that this event pushed many strikers to arm themselves with traditional weapons — spears, clubs, machetes — and to gather on a rocky hill near the Nkaneng shack settlement: **the koppie**. By mid-week, thousands were camped there. Police negotiations, and separate approaches by both unions' leaders, failed to end the standoff.
+
+**16 August.** On the evening of **15 August**, police commanders decided that if the strikers did not disarm and disperse the next day, the police would implement what they called the **"tactical option"** — forcibly disarming and dispersing the gathering. On the afternoon of 16 August, police deployed razor wire, armoured vehicles, water cannon, and lines that included the paramilitary **Tactical Response Team** carrying R5 assault rifles. As a group of strikers moved out from the koppie — whether advancing on the police or channelled toward them by the wire and the gas remained disputed before the commission, and this course does not resolve what it could not — police opened fire at what became known as **scene 1**, killing **17 men** in roughly twelve seconds, in front of television cameras. In the following minutes, several hundred metres away at a smaller outcrop — **scene 2**, with no cameras present — police killed **17 more**, many of them shot while hiding among the rocks or, on the evidence heard by the commission, while trying to surrender or flee. In total: **34 dead, at least 78 wounded**, and about **270 arrested** (Marikana Commission report, 2015).
+
+**Two aftermath facts, dated.** First: prosecutors initially charged the **arrested strikers** with the murder of their own colleagues, under the apartheid-era "common purpose" doctrine — a decision so widely condemned that the charges were provisionally withdrawn within days (September 2012). Second: the strike itself continued and **ended on 18 September 2012**, when workers accepted a settlement including increases of up to around 22% (BBC News, 2012). The next lesson is what the commission found — and what it did not.
+
+:::reveal At Marikana on 16 August 2012, the killings happened at two scenes. State the difference between them — and why the course is careful to keep them distinct. ||| At scene 1, police shot 17 men in about twelve seconds in front of television cameras as a group of strikers came toward or was channelled toward the police lines — whether they were advancing or fleeing the gas and wire was disputed before the commission. At scene 2, a smaller outcrop minutes later with no cameras, police killed 17 more, many shot while hiding among rocks or, on evidence the commission heard, surrendering or fleeing. The course keeps them distinct because the record does: the commission treated the scenes separately, found the police account of scene 2 particularly untenable, and referred both for criminal investigation — still unresolved as of 2026.
+
+## Sources
+- Republic of South Africa. (2015). *Report of the Marikana Commission of Inquiry*. https://www.gov.za/documents/marikana-commission-inquiry-report
+- BBC News. (2012, September 18). *South Africa's Marikana miners end strike after pay deal*. https://www.bbc.com/news/world-africa-19634440
+- South African History Online. (n.d.). *The Marikana massacre, 16 August 2012*. https://sahistory.org.za/`,
+      recallContent: [
+        {
+          prompt: "Who was striking at Marikana, for what, and under whose authorisation?",
+          answer:
+            "Rock drill operators at Lonmin's platinum mines began an unprotected (wildcat) strike on 9 August 2012, demanding R12,500 a month take-home — launched by the workers themselves, initially outside both NUM (the recognised majority union, whose standing had collapsed) and the rival AMCU, which was recruiting hard.",
+        },
+        {
+          prompt: "What is the documented toll of the Marikana events, per the commission's report?",
+          answer:
+            "Ten people killed between 10 and 15 August (including two police officers and two Lonmin security guards); then on 16 August, 34 strikers killed by police — 17 at scene 1, 17 at scene 2 — with at least 78 wounded and about 270 arrested (Marikana Commission of Inquiry report, 2015).",
+        },
+      ],
+    },
+    {
+      slug: "sa-farlam",
+      title: "12 · What the Farlam Commission found — and what it did not",
+      section: "Section 5 · Marikana — taught from the record",
+      body: `A week after the shootings, President Jacob Zuma appointed a judicial commission of inquiry under retired judge **Ian Farlam**. It sat for nearly **300 hearing days**, and its report was handed to the President on **31 March 2015** and released publicly on **25 June 2015**. That report is the closest thing to an authoritative record that exists, and this lesson is organised around a distinction the commentary constantly blurs: what the commission **found**, and what it **did not find**. Learn the distinction itself — it is how you should read every official inquiry you ever meet.
+
+**What the commission found** (Marikana Commission of Inquiry report, 2015):
+
+- **On the police operation:** the decision, taken on the evening of 15 August, to disarm and disperse the strikers by force the next day if they did not comply was a **defective decision**, taken without proper planning and against expert advice available to the police; the operation should not have been launched as and when it was. The commission also found that the police account given afterwards was in material respects **not truthful**, and that SAPS had withheld and, in part, constructed evidence — a finding about the *cover-up*, distinct from the shootings themselves. It recommended that a team of investigators and the Directorate for Priority Crime Investigation determine **individual criminal liability** at scenes 1 and 2, and that an inquiry be held into the **fitness for office of the National Commissioner of Police**, Riah Phiyega.
+- **On Lonmin:** the company failed to use its best endeavours to resolve the dispute, failed to respond appropriately to the escalating danger to its employees — and had failed to meet housing commitments made under its social and labour plan, a failure the commission linked to the conditions from which the strike grew.
+- **On the unions:** both **NUM and AMCU** failed to exercise effective control over their members, and both contributed, in different ways, to an environment in which the confrontation grew — findings each union rejects in whole or in part, which this course simply records.
+- **On Cyril Ramaphosa:** by 2012 the former NUM general secretary was a Lonmin non-executive director; in the days before 16 August he had sent emails urging that the violence (ten people were already dead) be treated as **"dastardly criminal"** conduct requiring **"concomitant action"** by the authorities. Families and political critics accused him of procuring the massacre. The commission **rejected that accusation**: it found the attacks on him groundless on the evidence, reading his intervention as an attempt to get the authorities to prevent further deaths, and recommended no action against him. The accusation has remained alive in South African politics ever since — repeated in election seasons, denied by him, unresolved in public argument — and this course neither revives nor buries it: **the commission's finding is the record, and the record is what is taught.**
+
+**What the commission did NOT find** — read this list as carefully as the first:
+
+- It did **not** find that any minister or politician ordered the shootings, and it did **not** find a political conspiracy — while critics note, accurately, that a commission's not finding something is not the same as proving its absence.
+- It did **not** convict anyone of anything: a commission of inquiry is not a court. It **referred** criminal questions onward.
+- It did **not** award compensation; it recommended processes through which claims could be pursued.
+
+**What has happened since — dated, and left open, because it is open.** The board of inquiry into Commissioner Phiyega found her unfit for office; she had been suspended in 2015 and her term expired in 2017. Civil claims by the families of the dead, the wounded and the arrested were brought against the state; the state has settled many of the families' claims (payments reported from 2018 onward), while other claims were still being litigated or settled piecemeal into the mid-2020s. On the criminal side: **no one had been convicted of any of the August 2012 killings when this course was written (2026).** No police officer has stood trial for the 34 deaths of 16 August itself; the prosecutions brought so far have concerned deaths earlier in that week and alleged obstruction afterwards, and they have ended in acquittal or were still before the courts. A South African reading this lesson years from now should check what has changed; the course states the position honestly as of its writing and expects to be updated.
+
+:::reveal The Farlam Commission both criticised the police operation severely and rejected the accusation against Cyril Ramaphosa. Why does this course insist you hold both findings at once? ||| Because using only one of them turns the record into a slogan. The commission found the operation defectively planned, the police account materially untruthful, and criminal liability worth investigating — the state's conduct stands condemned in the record. The same record found the accusation that Ramaphosa procured the massacre groundless on the evidence, reading his emails as pressure to prevent further deaths. A reader who cites the first finding and hides the second (or the reverse) is editing the commission to fit a politics — exactly what this course's sourcing rule exists to prevent.
+
+## Sources
+- Republic of South Africa. (2015). *Report of the Marikana Commission of Inquiry*. https://www.gov.za/documents/marikana-commission-inquiry-report
+- The Presidency, Republic of South Africa. (2015, June 25). *Statement on the release of the report of the Marikana Commission of Inquiry*. https://www.gov.za/
+- BBC News. (2015, June 25). *Marikana commission: Key findings*. https://www.bbc.com/news/world-africa-33269205`,
+      recallContent: [
+        {
+          prompt: "List three things the Farlam Commission found and three it did not find.",
+          answer:
+            "Found: the 15–16 August police operation was defectively decided and planned; the police account was materially untruthful (evidence withheld/constructed); Lonmin, NUM and AMCU each bore documented failures — and the accusation against Ramaphosa was rejected as groundless. Did NOT find: any political order or conspiracy behind the shootings; any criminal conviction (commissions refer, they don't convict); any compensation award (it recommended processes).",
+        },
+        {
+          prompt: "What was the state of Marikana accountability when this course was written (2026)?",
+          answer:
+            "Phiyega found unfit for office (suspended 2015, term expired 2017); many family civil claims settled from 2018 onward, others still in progress into the mid-2020s; and no one convicted of any August 2012 killing — no officer tried for 16 August itself; prosecutions so far concern the earlier deaths and alleged obstruction, ended in acquittal or still before the courts. Dated, open, to be re-checked.",
+        },
+      ],
+    },
+    {
+      slug: "sa-quiz-5",
+      title: "Section 5 quiz · Marikana, from the record",
+      section: "Section 5 · Marikana — taught from the record",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What sourcing rule governs this course's Marikana lessons?",
+            options: [
+              "Teach from the strikers' statements only",
+              "Teach from the Farlam Commission's published findings and named contemporaneous reporting; name disputes; date open litigation; adjudicate nothing beyond the record",
+              "Teach from the police press releases",
+              "Avoid the topic entirely",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The track's standing editorial rule at maximum strictness — these are the lessons the course's South African reviewer most needs to check.",
+            sourceLessonSlug: "sa-marikana-what-happened",
+          },
+          {
+            prompt: "Who began the Marikana strike, and what was the demand?",
+            options: [
+              "AMCU's national office, demanding recognition",
+              "The rock drill operators themselves — a wildcat strike outside both unions — demanding R12,500 a month take-home",
+              "NUM, demanding a closed shop",
+              "Lonmin management, locking workers out",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The strike was unprotected and worker-launched; NUM and AMCU then contested furiously for the strikers' allegiance.",
+            sourceLessonSlug: "sa-marikana-what-happened",
+          },
+          {
+            prompt: "What was the union situation at Lonmin in August 2012?",
+            options: [
+              "No unions were present",
+              "NUM was the recognised majority union but had lost standing with the lowest-paid underground workers; the rival AMCU was recruiting hard; within a year AMCU displaced NUM across much of the platinum belt",
+              "AMCU held a closed-shop agreement",
+              "COSATU had expelled NUM",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The NUM/AMCU rivalry is essential context — and the first major crack in COSATU's world, where Section 6 begins.",
+            sourceLessonSlug: "sa-marikana-what-happened",
+          },
+          {
+            prompt: "What happened between 10 and 15 August 2012, before the massacre?",
+            options: [
+              "Nothing — 16 August came without warning",
+              "Ten people were killed, including two police officers and two Lonmin security guards; after shots near the NUM office wounded two strikers on 11 August, many strikers armed themselves and gathered on the koppie",
+              "Lonmin agreed to the wage demand and then reneged",
+              "The army occupied the mine",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The commission's report documents each of the ten deaths. The week's violence — on all sides — is part of the record, not an excuse for what followed.",
+            sourceLessonSlug: "sa-marikana-what-happened",
+          },
+          {
+            prompt: "What was the police 'tactical option'?",
+            options: [
+              "A negotiation strategy",
+              "The forcible disarming and dispersal of the gathered strikers, decided on the evening of 15 August for execution on the 16th if strikers did not comply",
+              "A plan to arrest union leaders only",
+              "Aerial surveillance of the koppie",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The commission found this decision defective, taken without proper planning and against available expert advice.",
+            sourceLessonSlug: "sa-marikana-what-happened",
+          },
+          {
+            prompt: "State the toll of 16 August 2012 as the commission's report records it.",
+            options: [
+              "34 strikers killed (17 at scene 1, 17 at scene 2), at least 78 wounded, about 270 arrested",
+              "10 killed, 20 wounded",
+              "50 killed, all at one scene",
+              "34 police officers killed",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Scene 1 fell in roughly twelve seconds before television cameras; scene 2, minutes later at a smaller outcrop, had no cameras.",
+            sourceLessonSlug: "sa-marikana-what-happened",
+          },
+          {
+            prompt: "Why does the course refuse to state whether the scene 1 strikers were attacking the police line?",
+            options: [
+              "Because no one has ever asked",
+              "Because that question was disputed before the commission — advancing versus channelled toward police by wire and gas — and the course does not resolve what the record could not",
+              "Because the commission proved they were attacking",
+              "Because the commission proved they were fleeing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Where the record holds a dispute, the course teaches the dispute — not a resolution it does not possess.",
+            sourceLessonSlug: "sa-marikana-what-happened",
+          },
+          {
+            prompt: "What happened to the roughly 270 arrested strikers immediately after the massacre?",
+            options: [
+              "They were released with compensation",
+              "Prosecutors initially charged them with the murder of their own colleagues under the apartheid-era 'common purpose' doctrine — charges provisionally withdrawn within days after widespread condemnation (September 2012)",
+              "They were deported",
+              "They were rehired at higher wages",
+            ],
+            correctIndex: 1,
+            explanation:
+              "One of the most widely condemned prosecutorial decisions of democratic South Africa — and a documented, dated fact of the aftermath.",
+            sourceLessonSlug: "sa-marikana-what-happened",
+          },
+          {
+            prompt: "How did the strike itself end?",
+            options: [
+              "It collapsed with no gains",
+              "On 18 September 2012, with a settlement including increases of up to around 22% (BBC, 2012)",
+              "With nationalisation of Lonmin",
+              "It never ended",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Five weeks after it began, and a month after the massacre, the wildcat strike won a substantial raise — a fact any honest telling includes.",
+            sourceLessonSlug: "sa-marikana-what-happened",
+          },
+          {
+            prompt: "What did the Farlam Commission find about the police operation?",
+            options: [
+              "That it was well planned and lawfully executed",
+              "That the decision to proceed was defective and improperly planned, and that the police account afterwards was in material respects untruthful, with evidence withheld and in part constructed",
+              "That the police never fired",
+              "That the operation was ordered by parliament",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two distinct condemnations: the operation, and the cover-up. It referred individual criminal liability to investigators.",
+            sourceLessonSlug: "sa-farlam",
+          },
+          {
+            prompt: "What did the commission find regarding Lonmin?",
+            options: [
+              "That it bore no responsibility",
+              "That it failed to use its best endeavours to resolve the dispute, failed to respond appropriately to the danger, and had not met housing commitments under its social and labour plan",
+              "That it ordered the police operation",
+              "That it paid the strikers' wage demand secretly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The housing failure mattered: the commission linked the conditions at Marikana to the ground the strike grew from.",
+            sourceLessonSlug: "sa-farlam",
+          },
+          {
+            prompt: "What did the commission conclude about Cyril Ramaphosa's role?",
+            options: [
+              "It found him guilty of murder",
+              "It rejected the accusation that he procured the massacre as groundless on the evidence, reading his 'concomitant action' emails as pressure on the authorities to prevent further deaths — a finding his critics continue to contest politically",
+              "It made no mention of him",
+              "It recommended his prosecution",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The commission's finding is the record; the accusation's afterlife in electoral politics is noted, not adjudicated, by this course.",
+            sourceLessonSlug: "sa-farlam",
+          },
+          {
+            prompt: "Which of these is something the commission did NOT do?",
+            options: [
+              "Criticise the police operation",
+              "Convict individuals or award compensation — a commission of inquiry is not a court; it referred criminal questions and recommended claims processes",
+              "Recommend an inquiry into the National Commissioner's fitness",
+              "Make findings about NUM and AMCU",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Learning what an inquiry cannot do is as important as learning what this one found.",
+            sourceLessonSlug: "sa-farlam",
+          },
+          {
+            prompt: "What was the accountability position when this course was written (2026)?",
+            options: [
+              "All officers involved had been convicted",
+              "Phiyega found unfit for office; many family civil claims settled from 2018 onward, others continuing; no one convicted of any August 2012 killing, and no officer tried for 16 August itself",
+              "The state refused to pay any claims",
+              "The commission's report remains secret",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Dated and left open — the course expects a future reader to check what has changed since.",
+            sourceLessonSlug: "sa-farlam",
+          },
+          {
+            prompt: "Why does the course teach 'found' and 'did not find' as separate lists?",
+            options: [
+              "To make the lesson longer",
+              "Because citing only the findings that fit a politics — the operation's defects without the Ramaphosa exoneration, or the reverse — edits the record into a slogan; holding both lists is how to read any official inquiry",
+              "Because the commission required it",
+              "Because the lists are identical",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The distinction is itself the transferable skill of Section 5.",
+            sourceLessonSlug: "sa-farlam",
+          },
+        ],
+      },
+    },
   ],
 };
