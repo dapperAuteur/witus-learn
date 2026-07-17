@@ -691,6 +691,43 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Lefkowitz, Howe, Appiah, Gilroy, mainstream Egyptology and the 2017 aDNA paper (APA 7 + a \`## Sources\`
   list on every lesson). Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`. The
   natural home for BAM's source note \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\`.
+- 🔧 **Pan-Africanism: The Idea, the Movement, the Reckoning** (Culture & History,
+  \`content/pan-africanism\`) — the **anchor of the Pan-Africanism track**
+  (\`plans/future-courses/pan-africanism-track-proposal.md\`, renders at \`/admin/future\`), for high
+  school students. **6 sections · 16 teaching lessons · 6 quizzes** (15-question banks, above the
+  10-question attempt cap so retries rotate; 90 questions) · a \`:::reveal\` self-check per teaching
+  lesson; every question carries \`explanation\` + \`sourceLessonSlug\`. The full arc: 19th-century
+  roots (Cuffe vs the ACS, the 1817 Bethel AME rejection, Delany, Ethiopianism, **Blyden's "African
+  personality"** with his documented flaws) → **Williams's 1900 London conference** (Du Bois's
+  verbatim "colour line" address) → the Congresses (1919's "as fast as their development permits"
+  baseline vs **Manchester 1945**, taught as the pivot: workers' composition, independence demanded,
+  the Nkrumah/Kenyatta/Banda roll call, honest footnotes) → **Garvey taught honestly** (UNIA scale
+  with membership as a CONTESTED number; the Black Star Line collapse, the never-acquired *Phyllis
+  Wheatley*, the single-count 1923 conviction AND Hoover's 1919 "notorious negro agitator" memo
+  predating any crime — both halves, neither canceling; the KKK meeting; Du Bois's May 1924
+  "lunatic or a traitor" verbatim, Garvey's colorist counterattacks paraphrased per quote policy) →
+  **Nkrumah, Ghana 1957** (midnight-speech transcription variance flagged), the year of Accra 1958,
+  **OAU 1963** (Casablanca vs Monrovia; "unite now or perish" scored honestly both ways;
+  non-interference + Cairo 1964 borders from treaty text; Liberation Committee credit AND
+  "dictators' club" debit) → **AU 2002** (Sirte 1999 with **Gaddafi taught plainly as the awkward
+  midwife**; Article 4(h) verbatim — non-interference → non-indifference; AfCFTA/Agenda 2063 dated
+  from the instruments; the text-vs-practice audit) → **Négritude** (the Nardal-salon Harlem bridge;
+  Césaire/Senghor/Damas; Sartre's "anti-racist racism"; Soyinka's tigritude PARAPHRASED because
+  wording varies) → **Rastafari/Ethiopia as the symbol-vs-fact set piece** (the "Look to Africa"
+  prophecy audited as UNVERIFIABLE and traced toward James Morris Webb per Hill 1983; Garvey's
+  documented 1937 "great coward" attack on Selassie; the two-ledgers method) → **the reckoning**:
+  five structural tensions + the strongmen named with hedged, attributed numbers (Nkrumah's PDA and
+  Danquah's death in Nsawam; Touré's Camp Boiro, where **OAU first secretary-general Diallo Telli**
+  starved in 1977; **Amin chairing the OAU in 1975**; Mobutu; Gaddafi) — because a celebration-only
+  course isn't credible, and the dissident half of the tradition (Soyinka, Ngũgĩ, the survivors)
+  named the crimes first. **Quote policy: verbatim-verified or explicitly flagged, never
+  reconstructed; every date sourced; contested numbers taught as contested.** Cross-links (never
+  duplicates) the shipped *Africa Before Colonization* and *Afrocentricity* anchors. Cited to Adi
+  (2018), Adi & Sherwood (1995), Padmore's 1947 Manchester report, Hill's Garvey Papers, Grant,
+  Cronon, Lewis, Nkrumah's and Du Bois's and Garvey's own writings, the OAU Charter and AU
+  Constitutive Act, Meredith, Schmidt, Chevannes, Edmonds, Kesteloot, and Sharpley-Whiting (APA 7 +
+  a \`## Sources\` list on every lesson). Registered in \`seed-courses.ts\`; **no migration** —
+  \`pnpm seed:courses\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap

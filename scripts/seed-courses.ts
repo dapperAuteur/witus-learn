@@ -120,6 +120,7 @@ import { LACROSSE_COURSE } from "./data/lacrosse-course";
 import { TENNIS_COURSE } from "./data/tennis-course";
 import { CHESS_COURSE } from "./data/chess-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
+import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -743,6 +744,12 @@ async function main() {
     // so retries rotate). No migration — pnpm seed:courses. Natural home for BAM's source note
     // plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md.
     { slug: "afrocentricity", course: AFROCENTRICITY_COURSE, category: "Culture & History" },
+    // Pan-Africanism: The Idea, the Movement, the Reckoning — the ANCHOR of the Pan-Africanism
+    // track (plans/future-courses/pan-africanism-track-proposal.md). 6 sections · 16 teaching
+    // lessons · 6 quizzes (15-question banks). Garvey taught honestly (UNIA scale + Black Star
+    // Line collapse + the 1923 conviction + Hoover's 1919 memo); strongmen named with hedged
+    // numbers; quotes verbatim-verified or flagged. No migration — pnpm seed:courses.
+    { slug: "pan-africanism", course: PAN_AFRICANISM_COURSE, category: "Culture & History" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
