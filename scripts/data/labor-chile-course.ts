@@ -946,5 +946,293 @@ That is a real case. It is made by serious people, it contains true statements, 
         ],
       },
     },
+
+    // ────────────── SECTION 4 · DEMOCRACY KEEPS THE DESIGN, 1990–2017 ──────────────
+    {
+      slug: "chile-transition-margins",
+      title: "8 · 1990: democracy returns; the design stays",
+      section: "Section 4 · Democracy keeps the design, 1990–2017",
+      body: `In October 1988, Chileans voted **No** in the plebiscite the regime's own constitution had scheduled, and the dictatorship's end date was set. Labor was in that fight from the start — a new national center, today's **CUT** (*Central Unitaria de Trabajadores*), had been founded in **1988**, reclaiming the dissolved confederation's initials. In March **1990**, the elected government of Patricio Aylwin took office.
+
+So here is the question this section exists to answer, and it is the more interesting half of the whole Chilean story: **why didn't democracy repeal the dictatorship's labor code?**
+
+Because — this is the uncomfortable, load-bearing fact — **it largely couldn't, and then it largely didn't.** The Plan Laboral's architecture, folded into the Código del Trabajo, is *still* the skeleton of Chilean labor law today. Four reasons, in roughly the order they operated:
+
+**1. The outgoing regime locked the doors on its way out.** The dictatorship's **1980 Constitution** — which democratic Chile inherited whole — came with institutional safety bolts: **designated (non-elected) senators**, an electoral system engineered so the right could hold a blocking position in the Senate with a minority of votes, and a Constitutional Tribunal to police the boundaries. For the transition's first decade and a half, a government that wanted to restructure the labor code could pass bills in the lower house and watch them die or shrink in the Senate. This was not bad luck. It was the same designer's hand: the labor system and the political system that protected it were parts of one project.
+
+**2. The first reforms were real — and marginal by design.** The Aylwin government did what it could get through. The **1991 reform (Ley 19.069)** rewrote the rules on unions and bargaining: the strike's fixed time limit — the 59-day trapdoor you met in Section 3 — was gone, and strikes became **indefinite**. Dismissal protections were strengthened in a parallel 1990 law. These mattered. But look at what survived: **striker replacement remained lawful** (the 1991 law itself regulated the conditions under which employers could hire replacements from day one), bargaining stayed **locked to the single firm**, and the negotiating-group competitor stayed in place. A further round in **2001** tightened some screws and loosened others. The cage got more humane. It stayed a cage.
+
+**3. The governing coalition chose caution.** The center-left *Concertación* governed for twenty straight years (1990–2010), and its economic teams — governing in the shadow of both the dictatorship and hyperinflationary neighbors — prized stability, investment, and growth, and treated the flexible labor market as part of that machine. The Chile that entered the OECD in 2010 did so with the Plan Laboral's skeleton intact not only because the right defended it, but because much of the center had made its peace with it.
+
+**4. And the movement that might have forced the issue had been remade small.** This is the design closing its own loop. The labor movement that could have mobilised to demand structural reform was, by 1990, a movement organised in firm-sized fragments under exactly the rules that make mass sectoral mobilisation hardest. A system designed to atomise had, among its products, the weakness of the constituency for un-designing it. The CUT never regained anything near its pre-1973 weight (the numbers are in Section 5).
+
+**The habit to take from this lesson:** when you see an institution outlive the regime that created it, don't reach first for "consensus" or "inertia" as explanations. Ask **what was constitutionally locked, who benefited from the lock, and whether the people harmed by it retained the organised power to force it open.** In Chile, the answers were: a great deal; a coherent coalition; and — by design — no.
+
+:::reveal Give the four reasons the Plan Laboral's architecture survived the return to democracy in 1990. ||| (1) The 1980 Constitution locked the doors — designated senators and an engineered electoral system gave the right a Senate veto for the transition's first 15+ years; (2) the reforms that could pass (1990–91's Ley 19.069, then 2001) were real but marginal — the 59-day trapdoor died and strikes became indefinite, but replacement stayed lawful and bargaining stayed firm-locked; (3) the governing Concertación itself chose caution, treating the flexible labor market as part of the growth machine; (4) the movement that might have forced structural change had been remade small by the very rules it needed to change — the design closed its own loop.
+
+## Sources
+- Fundación Patricio Aylwin. (2021). *Un día como hoy hace 30 años: La reforma laboral*. http://fundacionaylwin.cl/un-dia-como-hoy-hace-30-anos-la-reforma-laboral/
+- Biblioteca del Congreso Nacional de Chile. (1991). *Ley 19.069: Establece normas sobre organizaciones sindicales y negociación colectiva*. LeyChile. https://www.bcn.cl/leychile/navegar?idNorma=30436
+- Central Unitaria de Trabajadores de Chile. (n.d.). *La historia de la CUT*. https://cut.cl/web/la-historia-de-la-cut/
+- OECD. (2025). *Enhancing sectoral collective bargaining in Chile* (OECD Reviews of Labour Market and Social Policies). OECD Publishing. https://www.oecd.org/en/publications/enhancing-sectoral-collective-bargaining-in-chile_454f4167-en/`,
+      recallContent: [
+        {
+          prompt: "What did the 1991 reform (Ley 19.069) change about the strike — and what did it preserve?",
+          answer:
+            "It removed the fixed strike time limit (the 59-day deemed-resignation trapdoor), making strikes indefinite, and came alongside strengthened dismissal protections. It preserved striker replacement — itself regulating the conditions for hiring replacements from day one — the firm-level lock, and the negotiating-group competitor.",
+        },
+        {
+          prompt: "How did the 1980 Constitution protect the Plan Laboral after 1990?",
+          answer:
+            "Designated (non-elected) senators and an engineered electoral system let the right hold a Senate blocking position with minority support, so structural labor reforms died or shrank there for the transition's first fifteen-plus years. The labor code and the political system shielding it were parts of one project, by the same designer's hand.",
+        },
+      ],
+    },
+    {
+      slug: "chile-ley-20940",
+      title: "9 · Ley 20.940 (2016): what finally changed — and what didn't",
+      section: "Section 4 · Democracy keeps the design, 1990–2017",
+      body: `Thirty-seven years after the Plan Laboral, Chile passed the biggest labor reform of its democratic era: **Ley 20.940**, "modernising the system of labor relations" — published **8 September 2016**, in force **1 April 2017** (Dirección del Trabajo, n.d.). It is the right place to end this section, because it shows with unusual clarity both what democratic reform *can* reach and what, in Chile, it so far *has not*.
+
+**What changed — and one change is genuinely big.**
+
+- **Striker replacement was banned.** The rule you have tracked since 1979 — the employer keeps producing while you strike — was finally reversed: Ley 20.940 **prohibits replacing striking workers**, whether with external hires or by shuffling internal personnel, recognising what Chilean lawyers call the **"huelga efectiva"** — the effective strike (Dirección del Trabajo, n.d.). Thirty-eight years after DL 2758 drew the replacement clause, and 79 years after *Mackay Radio* blessed the American version, Chile deleted its copy. On the anchor's Question 4, this is the largest single improvement in the course.
+- **Bargaining rights were extended and proceduralised** — expanded rights to information from the employer, a floor for negotiations (the expiring agreement as the baseline for a new one, in defined circumstances), mandatory mediation options, and rules requiring **union agreement before union-won benefits are extended to non-members** — ending the old practice of employers unilaterally handing the union's wins to everyone, which had made membership look pointless.
+
+**What didn't change — the architecture.**
+
+- **Bargaining stayed at the firm.** Ley 20.940 did **not** establish sectoral bargaining. The level question — the design's heart since 1979 — was left where José Piñera put it. The OECD's 2025 review, written nearly a decade after the reform, still describes Chilean bargaining as **firm-level, fragmented, and uncoordinated**, with no mechanisms binding negotiations together (OECD, 2025).
+- **The non-union competitor survived — by court ruling.** The reform as passed tried to establish **union titularity** (*titularidad sindical*): where a union exists, *it* is the bargaining agent — closing the 1979 loophole of ad hoc negotiating groups. Chile's **Constitutional Tribunal**, in its judgment of **9 May 2016** (Rol 3016-16), struck that chapter down before the law even took effect, on freedom-of-association grounds (the freedom *not* to be represented by the union). The grupos negociadores — design move 3 from Section 3 — breathe on.
+
+Read the 2016 story at the altitude this course has been teaching. A center-left government with, at last, majorities, spent enormous political capital on labor reform — and secured a real, historic win on the *strike* while leaving the *level* untouched and losing *titularity* to a constitutional body. The pattern is the same one you saw in 1991 and 2001, now at higher resolution: **democratic Chile has repeatedly been able to soften the Plan Laboral's penalties, and so far unable to touch its architecture.** The walls of the firm-level cage have proven harder than any single rule inside it.
+
+*(Since then, dated for the record: a 2023 law — Ley 21.561, published 26 April 2023 — is phasing the standard workweek down from 45 to 40 hours by 2028. Real, and again: hours, not architecture.)*
+
+:::reveal What did Ley 20.940 (in force 1 April 2017) change, and in what two ways did the 1979 architecture survive it? ||| It banned striker replacement — external or internal — recognising the "effective strike," extended information/procedural rights, and required union agreement before union-won benefits go to non-members. But (1) bargaining stayed locked at the firm level — no sectoral bargaining was established, and the OECD in 2025 still calls the system fragmented and uncoordinated; and (2) the Constitutional Tribunal (9 May 2016, Rol 3016-16) struck down union titularity before the law took effect, keeping the 1979 non-union "negotiating groups" alive.
+
+## Sources
+- Dirección del Trabajo (Chile). (n.d.). *Reforma al sistema de relaciones laborales: Ley 20.940*. https://www.dt.gob.cl/legislacion/1624/w3-propertyvalue-160691.html
+- Biblioteca del Congreso Nacional de Chile. (2016). *Ley 20.940: Moderniza el sistema de relaciones laborales*. LeyChile. https://www.bcn.cl/leychile/
+- OECD. (2025). *Enhancing sectoral collective bargaining in Chile* (OECD Reviews of Labour Market and Social Policies). OECD Publishing. https://www.oecd.org/en/publications/enhancing-sectoral-collective-bargaining-in-chile_454f4167-en/
+- Ministerio del Trabajo y Previsión Social (Chile). (2023). *Ley que reduce la jornada laboral a 40 horas semanales es publicada en el Diario Oficial*. https://www.mintrab.gob.cl/ley-que-reduce-la-jornada-laboral-a-40-horas-semanales-es-publicada-en-el-diario-oficial/`,
+      recallContent: [
+        {
+          prompt: "What is the 'huelga efectiva,' and when did Chile get it?",
+          answer:
+            "The effective strike: Ley 20.940 (published 8 September 2016, in force 1 April 2017) prohibited replacing striking workers with external hires or internal reshuffling — reversing the 1979 replacement rule after 38 years. The struck firm now actually stops.",
+        },
+        {
+          prompt: "What happened to 'titularidad sindical,' and why does it matter?",
+          answer:
+            "The reform tried to make the union the sole bargaining agent where one exists, closing the 1979 negotiating-groups loophole — but Chile's Constitutional Tribunal struck that chapter down on 9 May 2016 (Rol 3016-16), on freedom-of-association grounds, before the law took effect. The non-union competitor from the original design survives.",
+        },
+      ],
+    },
+    {
+      slug: "chile-quiz-4",
+      title: "Section 4 quiz · Democracy keeps the design",
+      section: "Section 4 · Democracy keeps the design, 1990–2017",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What happened in Chile's October 1988 plebiscite?",
+            options: [
+              "The Plan Laboral was approved by voters",
+              "Chileans voted No, setting the dictatorship's end date — with the new CUT (founded 1988) part of the campaign",
+              "A new constitution was adopted",
+              "Pinochet was re-elected for life",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The regime's own constitutional calendar produced the plebiscite; the No victory led to elections and the March 1990 transition.",
+            sourceLessonSlug: "chile-transition-margins",
+          },
+          {
+            prompt: "What is 'the more interesting half of the Chilean story,' per this course?",
+            options: [
+              "That the dictatorship wrote a labor code at all",
+              "That the Plan Laboral's architecture SURVIVED the return to democracy — largely intact to this day",
+              "That Chile joined the OECD",
+              "That copper prices rose",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A designed system outliving its designer's regime by three-plus decades is the phenomenon the whole second half of the course explains.",
+            sourceLessonSlug: "chile-transition-margins",
+          },
+          {
+            prompt: "How did the 1980 Constitution protect the labor code after 1990?",
+            options: [
+              "It explicitly forbade any labor legislation",
+              "Designated senators and an engineered electoral system gave the right a Senate blocking position, where structural labor reforms died or shrank for 15+ years",
+              "It required ILO approval for reforms",
+              "It did not — the code was unprotected",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The labor system and the political system shielding it were one project: the same designer's hand locked the doors on the way out.",
+            sourceLessonSlug: "chile-transition-margins",
+          },
+          {
+            prompt: "What did the 1991 reform (Ley 19.069) do to the 59-day trapdoor?",
+            options: [
+              "Extended it to 90 days",
+              "Removed it — strikes became indefinite — while striker replacement remained lawful under regulated conditions",
+              "Nothing changed until 2016",
+              "It abolished strikes entirely",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The first democratic round removed the deemed-resignation rule but preserved replacement and the firm-level lock: a more humane cage, still a cage.",
+            sourceLessonSlug: "chile-transition-margins",
+          },
+          {
+            prompt: "Why does the course say the design 'closed its own loop' after 1990?",
+            options: [
+              "Because the junta remained in power secretly",
+              "Because the movement that might have forced structural reform had been remade small by the very rules it needed to change — atomised unions couldn't mass-mobilise for de-atomisation",
+              "Because workers preferred the Plan Laboral",
+              "Because the ILO endorsed the design",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A system designed to atomise produces, among its outputs, a weakened constituency for un-designing it.",
+            sourceLessonSlug: "chile-transition-margins",
+          },
+          {
+            prompt: "Which was a reason the Concertación governments (1990–2010) left the architecture largely alone?",
+            options: [
+              "They were banned from legislating on labor",
+              "Their own economic teams prized stability and growth and treated the flexible labor market as part of that machine — the center had made its peace with it",
+              "The CUT asked them not to reform",
+              "The OECD forbade reform",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Not only the right's veto: much of the governing center chose caution. Both facts are needed for the honest account.",
+            sourceLessonSlug: "chile-transition-margins",
+          },
+          {
+            prompt: "When was Ley 20.940 published, and when did it take effect?",
+            options: [
+              "Published 8 September 2016; in force 1 April 2017",
+              "Published in 1991; in force 1992",
+              "Published 11 September 1973; in force immediately",
+              "Published 2023; in force 2028",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The biggest labor reform of Chile's democratic era — 37 years after the Plan Laboral.",
+            sourceLessonSlug: "chile-ley-20940",
+          },
+          {
+            prompt: "What is the 'huelga efectiva' that Ley 20.940 recognised?",
+            options: [
+              "A strike limited to 59 days",
+              "The effective strike: replacing strikers is prohibited — externally or by internal reshuffling — so the struck firm actually stops",
+              "A strike that requires government permission",
+              "A symbolic one-hour strike",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The largest single Question-4 improvement in the course: the 1979 replacement clause was deleted after 38 years.",
+            sourceLessonSlug: "chile-ley-20940",
+          },
+          {
+            prompt: "What did Ley 20.940 change about extending union-won benefits to non-members?",
+            options: [
+              "Nothing",
+              "Extension now requires the union's agreement — ending employers' unilateral practice of handing the union's wins to everyone, which had made membership look pointless",
+              "Extension became automatic and mandatory",
+              "Non-members were banned from receiving benefits forever",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A free-rider fix: if the union's gains flow to non-members automatically, joining looks pointless — the reform gave the union a say.",
+            sourceLessonSlug: "chile-ley-20940",
+          },
+          {
+            prompt: "What happened to 'titularidad sindical' in 2016?",
+            options: [
+              "It became law and remains in force",
+              "The Constitutional Tribunal (9 May 2016, Rol 3016-16) struck it down before the law took effect — so non-union negotiating groups survive",
+              "The unions rejected it",
+              "It was never proposed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The attempt to make the union the sole bargaining agent where one exists was voided on freedom-of-association grounds — design move 3 from 1979 breathes on.",
+            sourceLessonSlug: "chile-ley-20940",
+          },
+          {
+            prompt: "Did Ley 20.940 establish sectoral bargaining?",
+            options: [
+              "Yes — Chile now bargains by industry",
+              "No — bargaining stayed at the firm level, and the OECD's 2025 review still describes the system as firm-level, fragmented, and uncoordinated",
+              "Yes, but only for mining",
+              "Sectoral bargaining was already legal since 1979",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The level question — the design's heart — was left where Piñera put it in 1979.",
+            sourceLessonSlug: "chile-ley-20940",
+          },
+          {
+            prompt: "What is the repeating pattern across 1991, 2001, and 2016?",
+            options: [
+              "Each reform abolished and then restored the labor code",
+              "Democratic Chile has repeatedly softened the Plan Laboral's PENALTIES while proving unable, so far, to touch its ARCHITECTURE — the firm-level cage outlasts every rule inside it",
+              "Each reform strengthened the dictatorship's rules",
+              "No reform ever passed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Trapdoor removed (1991), replacement banned (2017) — and the level of bargaining unchanged since 1979.",
+            sourceLessonSlug: "chile-ley-20940",
+          },
+          {
+            prompt: "What does the 2023 workweek law (Ley 21.561) illustrate, in this course's framing?",
+            options: [
+              "That the architecture has finally changed",
+              "That reform continues at the margins — hours phased from 45 to 40 by 2028 — while the bargaining architecture remains untouched: hours, not architecture",
+              "That Chile abolished the Código del Trabajo",
+              "That strikes are banned again",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Published 26 April 2023, phasing to 40 hours by 2028 — real, dated, and another marginal (if welcome) change.",
+            sourceLessonSlug: "chile-ley-20940",
+          },
+          {
+            prompt: "On what grounds did the Constitutional Tribunal strike union titularity?",
+            options: [
+              "Fiscal cost",
+              "Freedom of association — including the freedom NOT to be represented by the union",
+              "Conflict with the ILO constitution",
+              "A drafting typo",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same vocabulary of freedom that framed the 1979 pluralism rules resurfaced in 2016 to preserve the union's non-union competitor.",
+            sourceLessonSlug: "chile-ley-20940",
+          },
+          {
+            prompt: "What habit does Section 4 teach for reading institutions that outlive their creators?",
+            options: [
+              "Assume consensus explains survival",
+              "Ask what was constitutionally locked, who benefited from the lock, and whether the people harmed retained the organised power to force it open",
+              "Assume inertia explains everything",
+              "Check only economic statistics",
+            ],
+            correctIndex: 1,
+            explanation:
+              "In Chile the answers were: a great deal; a coherent coalition; and — by design — no.",
+            sourceLessonSlug: "chile-transition-margins",
+          },
+        ],
+      },
+    },
   ],
 };
