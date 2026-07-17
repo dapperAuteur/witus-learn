@@ -3,9 +3,10 @@
 
 import { JURISDICTION as j_ar } from "./ar";
 import { JURISDICTION as j_az } from "./az";
+import { JURISDICTION as j_ca } from "./ca";
 import { JURISDICTION as j_dc } from "./dc";
 import { JURISDICTION as j_in } from "./in";
 
 import type { JurisdictionFile } from "../types";
 
-export const JURISDICTION_FILES: JurisdictionFile[] = [j_ar, j_az, j_dc, j_in];
+export const JURISDICTION_FILES: JurisdictionFile[] = [j_ar, j_az, j_ca, j_dc, j_in];

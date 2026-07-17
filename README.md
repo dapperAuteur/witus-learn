@@ -50,8 +50,8 @@ of that state's published standards — exact code, the standard's **verbatim te
 that cover it, a link to the publisher's document, the date it was retrieved, and an honest
 `full` | `partial` flag (partials must say what's missing; a test enforces it). Filterable by
 subject and course, printable, and copyable as plain text for a state filing. **Mapped so far:
-Indiana, Washington D.C., Arizona, and Arkansas** — each with its state-civics flagship course
-mapped 1:1 where the state's own standards allow. States without a verified mapping render as
+Indiana, Washington D.C., Arizona, Arkansas, and California** — each with its state-civics
+flagship course mapped 1:1 where the state's own standards allow. States without a verified mapping render as
 "not mapped yet", never as errors, and each mapped state publishes its **"What we don't claim"**
 rejections alongside the claims.
 

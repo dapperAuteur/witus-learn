@@ -64,7 +64,7 @@ export const US_JURISDICTIONS = [
 export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 
 /** States whose mapping is actively next in the queue (rendered as "next up" in the finder). */
-export const NEXT_UP: StateCode[] = [];
+export const NEXT_UP: StateCode[] = ["NY", "PA"];
 
 export function jurisdictionName(code: StateCode): string {
   return US_JURISDICTIONS.find((j) => j.code === code)?.name ?? code;
