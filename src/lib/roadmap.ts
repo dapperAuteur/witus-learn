@@ -770,6 +770,39 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, Martin & Grube, Cowgill, Smith, Restall, Townsend, INAH reporting, Nature/Science
   papers, the Popol Vuh and Florentine Codex in scholarly translation, and UNESCO. Registered in
   \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\` (task 109).
+- 🔧 **Asia Before European Colonization: The Center of Gravity** (Culture & History,
+  \`content/precolonial-asia\`) — the **anchor of the precolonial-Asia track** (from BAM's
+  \`world.md\` queue), for high school students. **7 sections · 17 teaching lessons · 7 quizzes**
+  (15-question banks, above the 10-question attempt cap so retries rotate; 105 questions, every one
+  carrying \`explanation\` + \`sourceLessonSlug\`) **· 1 exercise** (name the civilization/person/place
+  — the anti-flattening drill) · a \`:::reveal\` per teaching lesson. **Orientation depth by design**
+  (a map and a frame; depth belongs to the track's 8 proposed follow-ons): the zones — South Asia
+  (Indus with the script taught as **UNDECIPHERED**, incl. the Farmer/Sproat/Witzel-vs-Parpola
+  dispute over whether it encodes language at all; Ashoka's Kalinga edict with its figures flagged
+  as the king's own; **zero cited link by link** — Aryabhata 499, Brahmagupta 628, Khmer 683,
+  Gwalior 876, Bakhshali radiocarbon **contested** per Plofker et al. 2017; the Mughals as Central
+  Asian **outsiders**), East Asia (Han census 2 CE as a different KIND of evidence; the An Lushan
+  "36 million dead" **rejected** as a census artifact; Diamond Sutra 868; the Song revolution with
+  primary sources named and Hartwell's iron figure labeled his estimate; Genji "often called" the
+  first novel; sakoku as managed trade; **Jikji 1377 metal movable type before Gutenberg** stated
+  precisely; Hangul's named inventor), **Southeast Asia given a full section** (Angkor per Evans et
+  al. 2007 "largest preindustrial settlement complex," the Mouhot "discovery" refused; Srivijaya
+  reassembled by Coedès 1918 as a lesson in what forgetting proves; Majapahit's Nagarakretagama
+  read as court panegyric), and the connective tissue (Silk Roads per Hansen's revision + the
+  Belitung wreck; the Baghdad translation movement with the **House of Wisdom hedged** per Gutas;
+  the Mongols **neither only-barbarian nor only-Pax**, chronicle death tolls read as expressions of
+  catastrophe, not counts). 🔴 **The thesis is cited, not asserted**: Maddison's (2007) shares
+  (China+India ≈ **roughly half of world output as late as 1820**) taught as attributed
+  reconstructions with caveats and NO false precision; **Pomeranz (2000) vs Broadberry/Guan/Li
+  (2018)** taught as a live debate, **no winner declared**. **No utopia**: caste between the two
+  myths (neither eternal essence nor British invention, per Bayly), Joseon **nobi** (Palais's ~30%
+  attributed as his estimate), Khmer temple bondage (Zhou Daguan eyewitness), the Indian Ocean
+  slave trade (Campbell; Malik Ambar), and **conquest before colonization** (Chola 1025, Ming-
+  Vietnam 1407-27, Imjin 1592-98, Japan's 1910 annexation of Korea) — "European colonization"
+  taught precisely (enclaves 1510-1571 vs **Plassey 1757**; Japan/Korea/Siam/most of China never
+  European colonies). Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+  Track proposal (8 follow-on courses + build order) at
+  \`plans/future-courses/precolonial-asia-track-proposal.md\` → \`/admin/future\`.
 - ✅ **Golf: Play It, Know It, Work In It** (**Sports** — a new category) — 42 lessons in 6 sections
   (How to Play · The Rules · Strategy · History · Tours & Leagues · Opportunities), for high school
   students. Rules cited to the 2023 code the USGA and The R&A write jointly; the World Handicap
