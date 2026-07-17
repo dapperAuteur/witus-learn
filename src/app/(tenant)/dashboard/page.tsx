@@ -4,9 +4,11 @@ import { requireTenant } from "@/lib/tenant";
 import { getSession } from "@/lib/session";
 import { getActiveLearner } from "@/lib/active-learner";
 import { getLearnerDashboard, getLearnerStats } from "@/db/queries/dashboard";
+import { getRecallHistory } from "@/db/queries/recall";
 import { ProgressBar, WeekBars } from "@/components/progress-bits";
 import { DashboardProfileForm } from "@/components/dashboard-profile-form";
 import { OfflineDownloadsSummary } from "@/components/offline-downloads-manager";
+import { RecallHistoryView } from "@/components/recall-history";
 
 export const metadata: Metadata = { title: "Your dashboard" };
 
@@ -62,9 +64,10 @@ export default async function DashboardPage() {
   // section below stays on the signed-in account regardless (see "Manage your profile").
   const learner = await getActiveLearner(session);
   const activeLearnerId = learner?.id ?? session.user.id;
-  const [dashboard, stats] = await Promise.all([
+  const [dashboard, stats, recallHistory] = await Promise.all([
     getLearnerDashboard(tenant.id, activeLearnerId),
     getLearnerStats(tenant.id, activeLearnerId),
+    getRecallHistory(tenant.id, activeLearnerId),
   ]);
   const { streak, bestStreak, week, courses, xp, level, xpIntoLevel, xpForLevel, badges } = dashboard;
   const lessonsCompleted = courses.reduce((sum, c) => sum + c.completed, 0);
@@ -105,6 +108,14 @@ export default async function DashboardPage() {
         <div className="mt-3">
           <WeekBars week={week} />
         </div>
+      </section>
+
+      {/* Check-yourself / quick-recall history: what was missed, when, how often — plus the
+          "review again" spaced-recall list. Covers BOTH the inline :::reveal checks and the
+          recall cards, since both grade into recall_attempts. */}
+      <section aria-label="Check-yourself history" className="mt-8">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">Check-yourself history</h2>
+        <RecallHistoryView history={recallHistory} />
       </section>
 
       {full ? (

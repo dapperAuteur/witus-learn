@@ -152,8 +152,13 @@ courses and choosing **Publish / Unpublish**.`,
 In the lesson editor, add **Quick recall prompts** — question/answer pairs. In the lesson, learners
 see click-to-reveal cards and self-grade **"I got it / Missed it"** before the quiz.
 
+Inline **Check yourself** cards (a \`:::reveal question ||| answer\` line anywhere in a lesson body)
+work the same way: after revealing the answer, a signed-in learner self-grades it too.
+
 Their self-grades roll up into **Recall accuracy** on your course page — your signal for whether it's
-sticking in the lesson versus only at quiz time.`,
+sticking in the lesson versus only at quiz time. Learners see their own side of it on
+**/dashboard → Check-yourself history**: what they missed, when, how often, and which items are due
+for another try.`,
   },
   {
     slug: "live-sessions",
@@ -301,7 +306,9 @@ responsive and lazy-loaded.
 Add **Quick recall** prompts (question/answer pairs) to a lesson. They render at the START of the
 lesson as click-to-reveal cards, so learners test themselves on the PREVIOUS lesson before the new
 material. Self-grades ("I got it" / "Missed it") feed the **Recall accuracy** panel on your course
-dashboard, so you can compare in-lesson recall against quiz results.`,
+dashboard, so you can compare in-lesson recall against quiz results. Inline **Check yourself**
+(\`:::reveal\`) cards self-grade the same way, and learners can review everything they missed on
+**/dashboard → Check-yourself history**.`,
   },
   {
     slug: "recording-long-lessons",

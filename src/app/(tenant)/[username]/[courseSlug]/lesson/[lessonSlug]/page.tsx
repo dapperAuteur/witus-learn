@@ -229,6 +229,7 @@ export default async function LessonPage({ params }: Params) {
             <LessonPlayer
               lesson={lesson}
               trackPlayback={Boolean(view.session)}
+              trackRecall={Boolean(view.session)}
               resumeAt={view.watchSeconds.get(lesson.id) ?? 0}
             />
             <SaveOfflineButton
