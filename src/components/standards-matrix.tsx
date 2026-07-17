@@ -417,7 +417,7 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
           {/* Per-course: BAM's exact question. */}
           <details className="rounded-2xl border border-neutral-200 p-4 dark:border-neutral-800" open>
             <summary className="cursor-pointer text-sm font-semibold">
-              By course — how many standards each course meets, across how many states
+              By course: how many standards each course meets, across how many states
             </summary>
             <ul className="mt-3 max-h-72 space-y-1.5 overflow-y-auto pr-1 text-sm">
               {rollups.perCourse.map((c) => (
@@ -443,7 +443,7 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
           {/* Per-state rollup. */}
           <details className="rounded-2xl border border-neutral-200 p-4 dark:border-neutral-800" open>
             <summary className="cursor-pointer text-sm font-semibold">
-              By state — standards mapped and courses that meet them
+              By state: standards mapped and courses that meet them
             </summary>
             <ul className="mt-3 max-h-72 space-y-1.5 overflow-y-auto pr-1 text-sm">
               {rollups.perState.map((s) => (
@@ -484,7 +484,7 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
         <>
           {/* Desktop / tablet: a real table that scrolls INSIDE its own container. */}
           <div className="mt-8 hidden overflow-x-auto rounded-2xl border border-neutral-200 dark:border-neutral-800 sm:block">
-            <table className="w-full min-w-[52rem] border-collapse text-sm">
+            <table className="w-full min-w-208 border-collapse text-sm">
               <caption className="sr-only">
                 Standards by state and course. {rollups.matches} matches shown.
               </caption>
@@ -535,7 +535,7 @@ export function StandardsMatrix({ rows, brand }: { rows: MatrixRow[]; brand: str
                       </td>
                       <td className="px-3 py-3 whitespace-nowrap">{r.subject}</td>
                       <td className="px-3 py-3">
-                        <span className="block max-w-[14rem] wrap-break-word">{r.frameworkName}</span>
+                        <span className="block max-w-56 wrap-break-word">{r.frameworkName}</span>
                       </td>
                       <td className="px-3 py-3">
                         <Link href={`/course/${r.course.id}`} className={`${textLink}`}>
