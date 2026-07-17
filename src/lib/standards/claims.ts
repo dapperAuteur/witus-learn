@@ -490,6 +490,14 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
   {
+    id: "civics.scotus-nomination-confirmation",
+    claim: "Teaches how federal judges and Supreme Court justices are nominated and confirmed: Article II advice-and-consent, the Judiciary Committee, and the simple-majority rule after 2013/2017.",
+    courseSlugs: ["supreme-court-judicial-branch"],
+    lessons: [
+      "The Supreme Court & the Judicial Branch, Lesson 2 · How a judge gets there: nomination and confirmation",
+    ],
+  },
+  {
     id: "civics.judicial-review-marbury",
     claim: "Teaches judicial review by name, through Marbury v. Madison.",
     courseSlugs: ["us-civics-101"],
@@ -736,6 +744,59 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches getting involved where you live, Arkansas edition.",
     courseSlugs: ["state-civics-ar"],
     lessons: ["Arkansas Civics, Lesson 8 · Get involved where you live in Arkansas"],
+  },
+
+  // ── State civics: California (state-civics-ca was written FROM California's own sources) ──
+  // NOTE: like Arkansas, California's Grade 12 Principles of American Democracy standards are
+  // overwhelmingly FEDERAL. The flagship's structure lessons (the plural executive, the 120-seat
+  // Legislature, the top-two primary, AB 37's universal mail ballots) have no California standard
+  // to cite, so they carry no claim here — data/ca.ts publishes that gap in its notClaimed list.
+  // California's standards reach state government only through the comparative 12.7 lens
+  // (lawmaking, courts, local responsibilities) and direct democracy through 12.6.5.
+  {
+    id: "civics.ca-constitution-direct-democracy",
+    claim: "Teaches California's 1879 constitution and its Article II direct democracy — the initiative, referendum, and recall added in 1911 — in working detail, including the turnout-dependent signature thresholds.",
+    courseSlugs: ["state-civics-ca"],
+    lessons: [
+      "California Civics, Lesson 1 · California's constitution: the 1879 rulebook and direct democracy",
+      "California Civics, Lesson 6 · Elections in California (the citizen initiative and its thresholds)",
+      "California Civics, Lesson 7 · Direct democracy in depth: initiative, referendum, recall",
+    ],
+  },
+  {
+    id: "civics.ca-courts",
+    claim: "Teaches California's appoint-confirm-retain selection for appellate justices (Governor, Commission on Judicial Appointments, yes/no retention elections) and the three-tier court system with Superior Courts in all 58 counties.",
+    courseSlugs: ["state-civics-ca"],
+    lessons: ["California Civics, Lesson 3 · California's courts: appoint, confirm, then retention"],
+  },
+  {
+    id: "civics.ca-bill-process",
+    claim: "Teaches how a bill becomes a California law: the committee filter, the two-thirds veto override, and the Governor's line-item veto on appropriations.",
+    courseSlugs: ["state-civics-ca"],
+    lessons: ["California Civics, Lesson 4 · How a bill becomes a California law"],
+  },
+  {
+    id: "civics.ca-local-government",
+    claim: "Teaches California local government as California's: 58 counties under elected Boards of Supervisors, charter versus general-law cities (home rule), thousands of special districts, and no townships.",
+    courseSlugs: ["state-civics-ca"],
+    lessons: [
+      "California Civics, Lesson 5 · Local government in California: 58 counties, charter cities, NO townships",
+      "California Civics, Lesson 8 · Get involved where you live in California (county, city, special district)",
+    ],
+  },
+  {
+    id: "civics.ca-election-law",
+    claim: "Teaches California's election specifics: automatic (Motor Voter) and same-day registration, a mail ballot for every active voter (AB 37, 2021), and the top-two primary (Prop 14, 2010).",
+    courseSlugs: ["state-civics-ca"],
+    lessons: [
+      "California Civics, Lesson 6 · Elections in California: automatic & same-day registration, mail ballots for all",
+    ],
+  },
+  {
+    id: "civics.ca-get-involved",
+    claim: "Teaches getting involved where you live, California edition — including the direct-democracy tools.",
+    courseSlugs: ["state-civics-ca"],
+    lessons: ["California Civics, Lesson 8 · Get involved where you live in California"],
   },
 
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
