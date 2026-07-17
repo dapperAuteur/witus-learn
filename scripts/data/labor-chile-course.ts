@@ -1234,5 +1234,293 @@ Read the 2016 story at the altitude this course has been teaching. A center-left
         ],
       },
     },
+
+    // ────────────── SECTION 5 · THE NUMBERS, AND THE OUTSIDE MOVE ──────────────
+    {
+      slug: "chile-numbers",
+      title: "10 · Reading the design in the numbers",
+      section: "Section 5 · The numbers, and the outside move",
+      body: `Time to read the instrument panel. Every figure below carries its year and source, and — as with every course in this track — treat the numbers as rounded and the definitions as load-bearing. (Chile's Dirección del Trabajo publishes its own union statistics, whose rates run somewhat differently because the denominator differs; for cross-country comparability this course uses the OECD/AIAS ICTWSS figures as reported in OECD, 2025.)
+
+**Union density: about 16% of employees (2023).** Roughly one worker in six is a union member — against the historic peak of ~34% in 1973 (Fundación Sol, 2015), and far below Ghent-system Sweden (~65%) and Denmark (~67%) from the Nordics course. But here is the first surprise: 16% is actually *slightly above* the OECD average density of **15.1% (2023)** (OECD, 2025). If you stopped at density, Chile would look... ordinary. Don't stop at density.
+
+**Bargaining coverage: about 19.3% of employees (2023) — among the lowest in the OECD**, against an OECD average of **33.5% (2023/24)** (OECD, 2025). And now line the two numbers up, because their *relationship* is the course's whole argument turned into arithmetic:
+
+| Country | Density | Coverage | Gap |
+| --- | --- | --- | --- |
+| **Sweden** | ~65% (early 2020s, OECD/AIAS) | ~88% (~2018–19, OECD/AIAS) | **+23** |
+| **Germany** | 14.1% (2024) | ~49% (2024) | **+35** |
+| **Chile** | ~16% (2023) | ~19.3% (2023) | **~+3** |
+| **United States** | 10.0% (2025, BLS) | barely above density | **~+1–2** |
+
+In most of the OECD, coverage towers over membership, because bargaining happens at the **sector** and agreements reach workers who never joined anything — that is the anchor's Question 3, and it is why Germany covers half its workforce with one-seventh of it unionised. **Chile's gap is barely three points.** In a firm-level-only system with no extension mechanism, an agreement covers (roughly) the workplaces that fought for it, and nobody else. *The coverage–density gap is the fingerprint of bargaining level* — and Chile's near-zero gap is the Plan Laboral's signature, still legible in 2023 data, forty-four years on. Notice which democracy Chile's line most resembles.
+
+**Two honest complications, because a dashboard without caveats is a sales brochure:**
+
+- **Chilean density has been rising.** The OECD notes that only **Iceland, Chile and Spain** have seen density *increase* since 1985 (OECD, 2025). Startling — until you notice the baseline: 1985 is mid-dictatorship, near the movement's repressed trough. Measured from its own 1973 peak, Chilean density is down by more than half; measured from its 1985 valley, it climbs. Both statements are true. Whoever picks the baseline picks the story — a trick you should now catch reflexively.
+- **The aggregate hides an archipelago.** Membership concentrates in big firms and specific sectors — in **mining, 42% of employees were unionised (2023)** (OECD, 2025) — while the OECD documents *great fragmentation*: many, many small unions (the 1979 pluralism design at work), bargaining alone, uncoordinated, atomised. Chile does not so much have a labor movement as thousands of firm-sized labor movements.
+
+Carry the fingerprint idea into the next lesson, because the design has one more trick: if bargaining power is locked inside the firm's walls, then the cheapest way to defeat it is not to fight the union inside — it is to move the workers *outside the walls*.
+
+:::reveal Chile's union density (~16%, 2023) is close to the OECD average — so why is its bargaining coverage (~19.3%, 2023) among the OECD's lowest, and what does the tiny gap between the two numbers prove? ||| Because coverage exceeds density only where bargaining happens above the firm — sectoral agreements reach non-members, which is how Germany turns 14.1% density into ~49% coverage. Chile bargains at the firm only, with no extension mechanism, so agreements cover little more than the workplaces that fought for them: a ~3-point gap. The coverage–density gap is the fingerprint of bargaining level, and Chile's near-zero gap is the Plan Laboral's signature still legible in 2023 data.
+
+## Sources
+- OECD. (2025). *Enhancing sectoral collective bargaining in Chile* (OECD Reviews of Labour Market and Social Policies). OECD Publishing. https://www.oecd.org/en/publications/enhancing-sectoral-collective-bargaining-in-chile_454f4167-en/
+- OECD/AIAS. (n.d.). *ICTWSS database — country note: Chile*. Organisation for Economic Co-operation and Development. https://www.oecd.org/en/data/datasets/oecd-aias-ictwss-database.html
+- Bureau of Labor Statistics. (2026, February 18). *Union members — 2025* (USDL-26-0200). U.S. Department of Labor. https://www.bls.gov/news.release/pdf/union2.pdf
+- Fundación Sol. (2015). *Sindicatos y negociación colectiva: Panorama estadístico nacional y evidencia comparada*. https://fundacionsol.cl/`,
+      recallContent: [
+        {
+          prompt: "Give Chile's density and coverage (year + source), and the OECD averages they compare against.",
+          answer:
+            "Density ~16% (2023) — slightly ABOVE the OECD average of 15.1% (2023); coverage ~19.3% (2023) — among the OECD's lowest, against an average of 33.5% (2023/24). All OECD/AIAS ICTWSS figures via OECD (2025).",
+        },
+        {
+          prompt: "Why is 'Chilean density has RISEN since 1985' true but misleading — and what habit does it teach?",
+          answer:
+            "Because 1985 is the mid-dictatorship trough: only Iceland, Chile and Spain show increases from that baseline (OECD, 2025), yet from the 1973 peak (~34%) density is down by more than half. Whoever picks the baseline picks the story — always ask what the starting point is doing.",
+        },
+      ],
+    },
+    {
+      slug: "chile-subcontratacion",
+      title: "11 · Subcontratación: the put-them-outside move",
+      section: "Section 5 · The numbers, and the outside move",
+      body: `Here is the design's second act. The Plan Laboral locked bargaining inside the walls of the firm. So Chilean employers discovered — as employers everywhere discover — that the cheapest countermove is to relocate the workers **outside the walls**: *subcontratación*.
+
+**The mechanics.** A principal company (*empresa principal*) — the mine, the supermarket chain, the forestry giant — contracts out chunks of its own operation to contractor firms. The workers dig the principal's copper, stock the principal's shelves, cut the principal's timber — but their **legal employer is the contractor**. Now run the Plan Laboral's rules over them. With whom may they bargain? *Their employer* — the contractor: a thin company that does not set the budget, does not own the mine, and can be swapped for another contractor at renewal time. The entity with the actual power over their conditions — the principal — is, legally, a stranger to them. **In a firm-level-only system, defining which firm employs you decides whether your bargaining rights mean anything.** Subcontracting turns Question 3 (*who bargains with whom?*) into a shell game.
+
+You have seen this move before, in country after country, and now it has a family name. **The put-them-outside move:** when beating organised workers inside the system is expensive, redefine the workers so the system no longer applies. The anchor taught it as the NLRA's farm-and-domestic carve-out and modern **misclassification** ("you're not an employee, you're an independent contractor"). Mexico did it with **protection contracts** (the union exists — it just isn't yours). Poland does it with **junk contracts** (a civil-law contract instead of an employment one). Across the Global South it appears as **informality** — no employer of record at all. Chile's version is distinctive because it interlocks with the 1979 architecture: *the narrower the legal bargaining unit, the more you can achieve by nudging workers just past its edge.* A design that confines power to the firm makes "which firm?" the whole fight.
+
+**Chile regulated it — after it had already reshaped the labor market.** **Ley 20.123** (published 14 October 2006, in force 14 January 2007) defined subcontracted work, regulated temporary-services firms, and made the principal company **jointly or subsidiarily liable** for contractors' labor and social-security obligations (Dirección del Trabajo, n.d.; BCN). Real protections — pay claims against a vanished contractor can now reach the principal. But note precisely what the law did *not* do: it did not give subcontracted workers bargaining rights **toward the principal**. The liability follows the money; the bargaining table does not.
+
+**And then the excluded broke the script.** In **2007**, subcontracted workers across **Codelco** — the state copper giant, employing on the order of 30,000 workers through contractors — struck for **37 days** under the **Confederación de Trabajadores del Cobre (CTC)** and won a **framework agreement** (*Acuerdo Marco*) covering contractor workers across Codelco's divisions. The CTC itself describes it as the first sectoral-type bargaining experience in Chile since before the dictatorship (CTC, n.d.; Aravena, 2016). Sit with the irony, because it is the sharpest in the course: **Chile's first post-1979 approximation of sectoral bargaining was won by the workers the architecture most completely excluded — from outside the legal machinery entirely**, through a strike the Código del Trabajo did not contemplate, producing an agreement the Código does not name. The law channeled bargaining into the firm; the workers with no meaningful firm to bargain with went around the law and bargained with reality. Design constrains; it does not conclude.
+
+:::reveal Why is subcontracting more devastating in Chile's system than in most — and what does Ley 20.123 (2007) fix and not fix? ||| Because bargaining is locked to the single firm, so making a thin contractor your legal employer strips your bargaining rights of their target — the principal that actually controls your conditions is legally a stranger. Ley 20.123 (in force 14 January 2007) made principals jointly/subsidiarily liable for contractors' labor and social-security obligations — the liability follows the money — but gave subcontracted workers no bargaining rights toward the principal: the table stays at the contractor.
+
+## Sources
+- Biblioteca del Congreso Nacional de Chile. (2006). *Ley 20.123: Regula trabajo en régimen de subcontratación, el funcionamiento de las empresas de servicios transitorios y el contrato de trabajo de servicios transitorios*. LeyChile. https://www.bcn.cl/leychile/navegar?idNorma=254080
+- Dirección del Trabajo (Chile). (n.d.). *Subcontratación*. https://www.dt.gob.cl/portal/1626/w3-article-93827.html
+- Confederación de Trabajadores del Cobre. (n.d.). *Historia*. https://www.confederaciondelcobre.cl/index.php/historia/
+- Aravena, A. (2016). Oportunidad, conflicto y reconocimiento: El movimiento de trabajadores subcontratados de CODELCO y el gobierno de Michelle Bachelet, 2006–2007. *Polis (Santiago)*. https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0718-50492016000400004`,
+      recallContent: [
+        {
+          prompt: "Name the 'put-them-outside move' variants across the track, including Chile's.",
+          answer:
+            "US: the NLRA farm/domestic carve-out and modern misclassification. Mexico: protection contracts (a union that isn't yours). Poland: junk contracts (civil-law instead of employment contracts). Global South broadly: informality. Chile: subcontratación — a thin contractor becomes your legal employer, and in a firm-level-only system that empties your bargaining rights of their target.",
+        },
+        {
+          prompt: "What happened at Codelco in 2007, and why does the course call it the course's sharpest irony?",
+          answer:
+            "Some 30,000 subcontracted workers struck for 37 days under the CTC and won a framework agreement (Acuerdo Marco) across Codelco's divisions — described by the CTC as Chile's first sectoral-type bargaining since before the dictatorship. The workers the 1979 architecture most excluded produced its first post-1979 approximation of sectoral bargaining, entirely outside the legal machinery.",
+        },
+      ],
+    },
+    {
+      slug: "chile-quiz-5",
+      title: "Section 5 quiz · The numbers, and the outside move",
+      section: "Section 5 · The numbers, and the outside move",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What was Chile's union density in 2023 (OECD/AIAS), and how does it compare to the OECD average?",
+            options: [
+              "About 16% — slightly ABOVE the OECD average of 15.1%",
+              "About 34% — double the OECD average",
+              "About 5% — the OECD's lowest",
+              "About 65% — Nordic levels",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The density number alone makes Chile look ordinary — which is exactly why the course says: don't stop at density.",
+            sourceLessonSlug: "chile-numbers",
+          },
+          {
+            prompt: "What was Chile's collective bargaining coverage in 2023, and where does it rank?",
+            options: [
+              "About 19.3% — among the lowest in the OECD (average ~33.5%, 2023/24)",
+              "About 49% — near Germany's",
+              "About 88% — near Sweden's",
+              "About 33.5% — exactly the OECD average",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Coverage, not density, is where the design shows: among the OECD's lowest (OECD, 2025).",
+            sourceLessonSlug: "chile-numbers",
+          },
+          {
+            prompt: "What is the 'fingerprint of bargaining level'?",
+            options: [
+              "The absolute number of unions in a country",
+              "The GAP between coverage and density — sectoral systems show coverage towering over membership (Germany: 14.1% vs ~49%); firm-only Chile shows a ~3-point gap",
+              "The number of strikes per year",
+              "The minimum wage level",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Agreements reach non-members only where bargaining happens above the firm. Chile's near-zero gap is the Plan Laboral's signature in the data.",
+            sourceLessonSlug: "chile-numbers",
+          },
+          {
+            prompt: "Which democracy does Chile's density/coverage line most resemble in the comparison table?",
+            options: [
+              "Sweden",
+              "The United States — low density with coverage barely above it, the profile of firm-level-only bargaining",
+              "Germany",
+              "Denmark",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The US (10.0% density, 2025 BLS; coverage barely above) shares the firm-locked profile — a resemblance the course keeps asking you to notice.",
+            sourceLessonSlug: "chile-numbers",
+          },
+          {
+            prompt: "'Chilean union density has risen since 1985' — what makes this true statement misleading?",
+            options: [
+              "The data is fabricated",
+              "1985 is the mid-dictatorship trough; from the 1973 peak (~34%) density is down by more than half. Whoever picks the baseline picks the story",
+              "Density actually fell since 1985",
+              "The OECD doesn't track Chile",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Only Iceland, Chile and Spain show increases since 1985 (OECD, 2025) — a fact that teaches baseline-checking, not union strength.",
+            sourceLessonSlug: "chile-numbers",
+          },
+          {
+            prompt: "Which sector shows Chile's highest unionisation, at what rate?",
+            options: [
+              "Retail, at 80%",
+              "Mining, at 42% of employees (2023)",
+              "Agriculture, at 60%",
+              "Banking, at 90%",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Membership concentrates in big firms and specific sectors; the aggregate hides an archipelago of thousands of small, uncoordinated unions.",
+            sourceLessonSlug: "chile-numbers",
+          },
+          {
+            prompt: "In subcontratación, who is the subcontracted worker's LEGAL employer?",
+            options: [
+              "The principal company whose work they do",
+              "The contractor firm — while the principal that actually controls their conditions is, legally, a stranger to them",
+              "The state",
+              "The union",
+            ],
+            correctIndex: 1,
+            explanation:
+              "They dig the principal's copper or stock its shelves, but the bargaining counterparty the law gives them is the thin contractor.",
+            sourceLessonSlug: "chile-subcontratacion",
+          },
+          {
+            prompt: "Why does subcontracting interact so powerfully with Chile's firm-level-only rule?",
+            options: [
+              "It doesn't — the two are unrelated",
+              "Because the narrower the legal bargaining unit, the more an employer gains by nudging workers just past its edge — 'which firm employs you' decides whether bargaining rights mean anything",
+              "Because subcontractors pay higher wages",
+              "Because sectoral bargaining covers subcontractors automatically",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A design that confines power inside the firm's walls makes moving workers outside the walls the cheapest countermove.",
+            sourceLessonSlug: "chile-subcontratacion",
+          },
+          {
+            prompt: "What is the 'put-them-outside move,' and what is Chile's version?",
+            options: [
+              "Banning unions outright; Chile's version is a union ban",
+              "Redefining workers so the system no longer applies — US misclassification, Mexican protection contracts, Polish junk contracts, informality — with subcontratación as Chile's version",
+              "Deporting union organisers",
+              "Moving factories abroad",
+            ],
+            correctIndex: 1,
+            explanation:
+              "When beating organised workers inside the system is expensive, move them outside it. The family resemblance across the track now has a Chilean member.",
+            sourceLessonSlug: "chile-subcontratacion",
+          },
+          {
+            prompt: "What did Ley 20.123 (in force 14 January 2007) actually do?",
+            options: [
+              "It banned subcontracting",
+              "It defined and regulated subcontracted work and temp-services firms, and made the principal jointly or subsidiarily liable for contractors' labor and social-security obligations",
+              "It gave subcontracted workers the right to bargain with the principal",
+              "It privatised Codelco",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The liability follows the money — but the bargaining table stays at the contractor. Protection, not power.",
+            sourceLessonSlug: "chile-subcontratacion",
+          },
+          {
+            prompt: "What crucial thing did Ley 20.123 NOT do?",
+            options: [
+              "It did not define subcontracting",
+              "It did not give subcontracted workers bargaining rights toward the principal company",
+              "It did not regulate temp agencies",
+              "It did not create any liability",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Claims can reach the principal's pocket; the collective bargaining table cannot reach the principal's chair.",
+            sourceLessonSlug: "chile-subcontratacion",
+          },
+          {
+            prompt: "What happened at Codelco in 2007?",
+            options: [
+              "The mine was privatised",
+              "Around 30,000 subcontracted workers struck for 37 days under the CTC and won a framework agreement (Acuerdo Marco) across Codelco's divisions",
+              "The government banned mining strikes",
+              "Codelco abolished subcontracting",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The CTC describes it as Chile's first sectoral-type bargaining experience since before the dictatorship.",
+            sourceLessonSlug: "chile-subcontratacion",
+          },
+          {
+            prompt: "Why does the course call the 2007 Acuerdo Marco the sharpest irony in the course?",
+            options: [
+              "Because it was negotiated by the government",
+              "Because Chile's first post-1979 approximation of SECTORAL bargaining was won by the workers the architecture most completely excluded — from outside the legal machinery entirely",
+              "Because it lasted only one week",
+              "Because it lowered wages",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The law channeled bargaining into the firm; workers with no meaningful firm to bargain with went around the law. Design constrains; it does not conclude.",
+            sourceLessonSlug: "chile-subcontratacion",
+          },
+          {
+            prompt: "Why does this course use OECD/AIAS figures rather than Chile's Dirección del Trabajo statistics?",
+            options: [
+              "The Dirección del Trabajo publishes no statistics",
+              "For cross-country comparability — the DT's own rates run somewhat differently because the denominator differs, and the course says which measure it is using",
+              "OECD numbers are always higher",
+              "Chilean statistics are secret",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Definitions are load-bearing: same country, different denominators, different rates. Name your measure — a track-wide habit.",
+            sourceLessonSlug: "chile-numbers",
+          },
+          {
+            prompt: "Chile 'does not so much have a labor movement as thousands of firm-sized labor movements.' What produced that shape?",
+            options: [
+              "Worker preference for small unions",
+              "The 1979 design — pluralism-as-fragmentation plus firm-locked bargaining — whose fragmentation the OECD still documents in 2025",
+              "A 2023 law requiring small unions",
+              "The Ghent system",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Many small unions bargaining alone, uncoordinated and atomised: the archipelago is the design's intended topology.",
+            sourceLessonSlug: "chile-numbers",
+          },
+        ],
+      },
+    },
   ],
 };
