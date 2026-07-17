@@ -104,6 +104,7 @@ import { LABOR_MEXICO_COURSE } from "./data/labor-mexico-course";
 import { LABOR_NORDICS_COURSE } from "./data/labor-nordics-course";
 import { LABOR_POLAND_COURSE } from "./data/labor-poland-course";
 import { AFRICA_BEFORE_COLONIZATION_COURSE } from "./data/africa-before-colonization-course";
+import { PRECOLUMBIAN_MESOAMERICA_COURSE } from "./data/precolumbian-mesoamerica-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
 import { TRAVEL_VISAS_101_COURSE } from "./data/travel-visas-101-course";
 import { TRAVEL_BASICS_COURSE } from "./data/travel-basics-course";
@@ -750,6 +751,21 @@ async function main() {
     // Line collapse + the 1923 conviction + Hoover's 1919 memo); strongmen named with hedged
     // numbers; quotes verbatim-verified or flagged. No migration — pnpm seed:courses.
     { slug: "pan-africanism", course: PAN_AFRICANISM_COURSE, category: "Culture & History" },
+    // Pre-Columbian Mesoamerica — the ANCHOR of the Mesoamerica track
+    // (plans/future-courses/precolumbian-mesoamerica-track-proposal.md). Olmec (mother-vs-sister
+    // taught AS a live debate; Cascajal contested), Aguada Fénix (2020, largest/oldest Maya
+    // monument), Teotihuacan (builders/language UNKNOWN — the humility lesson), the Maya (script,
+    // zero, Long Count; 2012 traced to Tortuguero Monument 6 = period ending, not prophecy; the
+    // Classic collapse specific AND debated; ~7M Maya today — they did not vanish), the Mexica
+    // (Tenochtitlan, Triple Alliance, chinampas; sacrifice honest — Huei Tzompantli real, the
+    // 80,400 chronicle figure refused), Oaxaca + Purépecha, Central America beyond Mexico (Joya
+    // de Cerén, Diquís spheres), conquest per Restall's Seven Myths (Indigenous allies, not
+    // passive victims; Nojpetén fell 1697), demographic collapse as a RANGE (~15-30M → ~2M,
+    // contested, never one number), and a "how we know" methods lesson (Landa's 1562 Maní
+    // burning + ~4 surviving codices, Knorozov→Coe decipherment, PACUNAM LiDAR ~61,480
+    // structures). 7 sections · 17 teaching lessons · 7 quizzes (15-question banks) · 1 exercise.
+    // NO migration — pnpm seed:courses.
+    { slug: "precolumbian-mesoamerica", course: PRECOLUMBIAN_MESOAMERICA_COURSE, category: "Culture & History" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
