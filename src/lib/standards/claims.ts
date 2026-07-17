@@ -860,6 +860,46 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["New York Civics, Lesson 8 · Get involved where you live in New York"],
   },
 
+  // ── State civics: Pennsylvania (state-civics-pa was written FROM Pennsylvania's own sources) ──
+  // NOTE: Pennsylvania's 2009 Civics and Government standards reach the Commonwealth's own
+  // government better than most — 5.1.12.D and 5.1.12.E explicitly name the "Pennsylvania
+  // Constitution" — so the flagship's constitution and rights lessons have a genuine code. But the
+  // rest of its distinctive structure (the nation's largest full-time legislature, the elected-
+  // then-retained judiciary, the 67 counties with an ACTIVE township layer Pennsylvania does not
+  // abolish, and Act 77 no-excuse mail voting) has no Pennsylvania-specific code — data/pa.ts
+  // publishes that gap in its notClaimed list.
+  {
+    id: "civics.pa-constitution",
+    claim: "Teaches Pennsylvania's 1968 constitution and its two-consecutive-sessions amendment path with no citizen initiative, and its strong Article I Declaration of Rights (which in places protects more than the federal Bill of Rights, including the Environmental Rights Amendment).",
+    courseSlugs: ["state-civics-pa"],
+    lessons: [
+      "Pennsylvania Civics, Lesson 1 · Pennsylvania's constitution: the 1968 rulebook and a two-session amendment path (Article XI; the Declaration of Rights)",
+    ],
+  },
+  {
+    id: "civics.pa-three-branches",
+    claim: "Teaches Pennsylvania's three branches as Pennsylvania's: a 203-member House and 50-member Senate (the largest full-time state legislature in the nation), the elected-then-retained judiciary (Superior and Commonwealth intermediate courts), and a partly-plural executive (joint-ticket Governor/Lieutenant Governor; separately elected Attorney General, Auditor General, and Treasurer).",
+    courseSlugs: ["state-civics-pa"],
+    lessons: [
+      "Pennsylvania Civics, Lesson 2 · The three branches: the joint-ticket Governor and the biggest legislature in the nation",
+      "Pennsylvania Civics, Lesson 3 · Pennsylvania's courts: elected, then retained",
+    ],
+  },
+  {
+    id: "civics.pa-elections",
+    claim: "Teaches Pennsylvania's election specifics: Act 77 no-excuse mail-in voting (struck down then upheld in McLinko, 2022), closed primaries, voter ID for first-time voters, a 15-day registration deadline with no same-day registration, and no citizen initiative.",
+    courseSlugs: ["state-civics-pa"],
+    lessons: [
+      "Pennsylvania Civics, Lesson 6 · Elections in Pennsylvania: Act 77 mail-in voting, closed primaries, voter ID",
+    ],
+  },
+  {
+    id: "civics.pa-get-involved",
+    claim: "Teaches getting involved where you live, Pennsylvania edition — legislators, and especially the township supervisors, borough or city council, and county commissioners, because Pennsylvania has no citizen initiative.",
+    courseSlugs: ["state-civics-pa"],
+    lessons: ["Pennsylvania Civics, Lesson 7 · Get involved where you live in Pennsylvania"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
