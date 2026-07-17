@@ -799,6 +799,206 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["California Civics, Lesson 8 · Get involved where you live in California"],
   },
 
+  // ── State civics: New York (state-civics-ny was written FROM New York's own sources) ──
+  // NOTE: like California, New York's Grade 12 Participation in Government framework is largely
+  // FEDERAL. The flagship's structure lessons (the inverted court NAMES — "Supreme Court" is the
+  // trial court — the plural executive, the 62 counties with New York City's five borough-counties,
+  // the automatic 20-year constitutional-convention question, and the absence of a statewide
+  // citizen initiative) have no New York Social Studies code to cite, so they carry no claim here —
+  // data/ny.ts publishes that gap in its notClaimed list. New York's framework reaches state
+  // government through 12.G1b/12.G1c (state constitutions and checks and balances "at all levels"),
+  // 12.G4d (which names New York's party system explicitly), and the public-policy standards.
+  {
+    id: "civics.ny-constitution-amendment",
+    claim: "Teaches New York's 1894 constitution and its demanding amendment path (Article XIX: passage by two successive, separately-elected Legislatures then a voter referendum), the automatic 20-year constitutional-convention question, and the absence of any statewide citizen initiative.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: [
+      "New York Civics, Lesson 1 · New York's constitution: the 1894 rulebook (Article XIX amendment path and the 20-year convention question)",
+      "New York Civics, Lesson 6 · Elections in New York (no statewide citizen initiative)",
+    ],
+  },
+  {
+    id: "civics.ny-three-branches",
+    claim: "Teaches New York's three branches as New York's: a 150-member Assembly and 63-member Senate, and a plural executive whose Attorney General and Comptroller are elected separately from the Governor.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 2 · The three branches, and New York's plural executive"],
+  },
+  {
+    id: "civics.ny-courts",
+    claim: "Teaches New York's inverted court names (the “Supreme Court” is the trial court; the “Court of Appeals” is the highest court) and the appointment of Court of Appeals judges by the Governor from the Commission on Judicial Nomination's list, with State Senate confirmation.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 3 · New York's courts: the inverted-names gotcha"],
+  },
+  {
+    id: "civics.ny-bill-process",
+    claim: "Teaches how a bill becomes a New York law: the committee filter, the two-thirds veto override, and New York's unusually powerful executive budget.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 4 · How a bill becomes a New York law"],
+  },
+  {
+    id: "civics.ny-local-government",
+    claim: "Teaches New York local government as New York's: 62 counties (five of them the boroughs of New York City), strong home rule, and cities, towns, villages, and special districts.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: [
+      "New York Civics, Lesson 5 · Local government in New York: 62 counties and strong home rule",
+      "New York Civics, Lesson 8 · Get involved where you live in New York",
+    ],
+  },
+  {
+    id: "civics.ny-elections",
+    claim: "Teaches New York's election specifics: early in-person voting, no-excuse early mail voting (Early Mail Voter Act, in effect for 2024) alongside excuse-required absentee ballots, closed party primaries, and no statewide citizen initiative.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: [
+      "New York Civics, Lesson 6 · Elections in New York: early voting, closed primaries, no initiative",
+      "New York Civics, Lesson 7 · Two New York rules that recently changed (no-excuse early mail voting; the Governor/Lieutenant-Governor joint ticket)",
+    ],
+  },
+  {
+    id: "civics.ny-get-involved",
+    claim: "Teaches getting involved where you live, New York edition — state legislators, county/city/town/village boards, and the statewide ballot proposals including the 20-year convention question.",
+    courseSlugs: ["state-civics-ny"],
+    lessons: ["New York Civics, Lesson 8 · Get involved where you live in New York"],
+  },
+
+  // ── State civics: Pennsylvania (state-civics-pa was written FROM Pennsylvania's own sources) ──
+  // NOTE: Pennsylvania's 2009 Civics and Government standards reach the Commonwealth's own
+  // government better than most — 5.1.12.D and 5.1.12.E explicitly name the "Pennsylvania
+  // Constitution" — so the flagship's constitution and rights lessons have a genuine code. But the
+  // rest of its distinctive structure (the nation's largest full-time legislature, the elected-
+  // then-retained judiciary, the 67 counties with an ACTIVE township layer Pennsylvania does not
+  // abolish, and Act 77 no-excuse mail voting) has no Pennsylvania-specific code — data/pa.ts
+  // publishes that gap in its notClaimed list.
+  {
+    id: "civics.pa-constitution",
+    claim: "Teaches Pennsylvania's 1968 constitution and its two-consecutive-sessions amendment path with no citizen initiative, and its strong Article I Declaration of Rights (which in places protects more than the federal Bill of Rights, including the Environmental Rights Amendment).",
+    courseSlugs: ["state-civics-pa"],
+    lessons: [
+      "Pennsylvania Civics, Lesson 1 · Pennsylvania's constitution: the 1968 rulebook and a two-session amendment path (Article XI; the Declaration of Rights)",
+    ],
+  },
+  {
+    id: "civics.pa-three-branches",
+    claim: "Teaches Pennsylvania's three branches as Pennsylvania's: a 203-member House and 50-member Senate (the largest full-time state legislature in the nation), the elected-then-retained judiciary (Superior and Commonwealth intermediate courts), and a partly-plural executive (joint-ticket Governor/Lieutenant Governor; separately elected Attorney General, Auditor General, and Treasurer).",
+    courseSlugs: ["state-civics-pa"],
+    lessons: [
+      "Pennsylvania Civics, Lesson 2 · The three branches: the joint-ticket Governor and the biggest legislature in the nation",
+      "Pennsylvania Civics, Lesson 3 · Pennsylvania's courts: elected, then retained",
+    ],
+  },
+  {
+    id: "civics.pa-elections",
+    claim: "Teaches Pennsylvania's election specifics: Act 77 no-excuse mail-in voting (struck down then upheld in McLinko, 2022), closed primaries, voter ID for first-time voters, a 15-day registration deadline with no same-day registration, and no citizen initiative.",
+    courseSlugs: ["state-civics-pa"],
+    lessons: [
+      "Pennsylvania Civics, Lesson 6 · Elections in Pennsylvania: Act 77 mail-in voting, closed primaries, voter ID",
+    ],
+  },
+  {
+    id: "civics.pa-get-involved",
+    claim: "Teaches getting involved where you live, Pennsylvania edition — legislators, and especially the township supervisors, borough or city council, and county commissioners, because Pennsylvania has no citizen initiative.",
+    courseSlugs: ["state-civics-pa"],
+    lessons: ["Pennsylvania Civics, Lesson 7 · Get involved where you live in Pennsylvania"],
+  },
+  // ── State civics: Texas (state-civics-tx was written FROM Texas's own sources) ──
+  // NOTE: Texas's high-school civics anchor is the United States Government course (§113.44),
+  // whose standards are overwhelmingly about the FEDERAL system. Two of them, however, name state
+  // and local government explicitly — (d)(7)(H) "compare the structures, functions, and processes
+  // of national, state, and local governments" and (d)(9)(A) filling elected and appointed offices
+  // at the local, state, and national levels — so unlike Arkansas and California, the Texas
+  // flagship's Texas-structure lessons DO have a home, mapped there as partial. Texas's dedicated
+  // state-government instruction lives in Grade 7 Texas History (§113.20, middle school), which we
+  // have not fetched this pass; data/tx.ts publishes that gap in its notClaimed list.
+  {
+    id: "civics.tx-state-structure",
+    claim: "Teaches Texas's long, much-amended 1876 constitution; its distinctive plural executive (a deliberately limited governor sharing power with a separately-elected Lieutenant Governor, Attorney General, Comptroller, Land Commissioner, and Agriculture Commissioner); a part-time legislature meeting only in odd-numbered years (a 150-member House and a 31-member Senate); and how a bill becomes a Texas law, including the two-thirds veto override.",
+    courseSlugs: ["state-civics-tx"],
+    lessons: [
+      "Texas Civics, Lesson 1 · Texas's constitution: the long, much-amended 1876 rulebook",
+      "Texas Civics, Lesson 2 · The three branches and Texas's plural executive",
+      "Texas Civics, Lesson 4 · How a bill becomes a Texas law and the biennial session",
+    ],
+  },
+  {
+    id: "civics.tx-courts-elected",
+    claim: "Teaches Texas's bifurcated high courts (a Supreme Court for civil cases and a Court of Criminal Appeals for criminal cases) and its partisan election of judges to six-year terms.",
+    courseSlugs: ["state-civics-tx"],
+    lessons: ["Texas Civics, Lesson 3 · Texas's courts: two high courts, partisan-elected judges"],
+  },
+  {
+    id: "civics.tx-local-government",
+    claim: "Teaches Texas local government as Texas's: 254 counties (the most of any state) run by a commissioners court, no townships, and home-rule versus general-law cities.",
+    courseSlugs: ["state-civics-tx"],
+    lessons: [
+      "Texas Civics, Lesson 5 · Local government in Texas: 254 counties, no townships",
+      "Texas Civics, Lesson 7 · Get involved where you live in Texas",
+    ],
+  },
+  {
+    id: "civics.tx-elections",
+    claim: "Teaches Texas's election specifics: strict photo voter ID with a Reasonable Impediment Declaration fallback, no same-day registration (a ~30-day deadline), and no statewide citizen initiative.",
+    courseSlugs: ["state-civics-tx"],
+    lessons: [
+      "Texas Civics, Lesson 6 · Elections in Texas: strict photo ID, no same-day registration, no initiative",
+    ],
+  },
+  {
+    id: "civics.tx-get-involved",
+    claim: "Teaches getting involved where you live, Texas edition — mindful of the biennial legislative clock and the absence of a statewide citizen initiative.",
+    courseSlugs: ["state-civics-tx"],
+    lessons: ["Texas Civics, Lesson 7 · Get involved where you live in Texas"],
+  },
+
+  // ── State civics: Florida (state-civics-fl was written FROM Florida's own sources) ──
+  // NOTE: Florida's high-school civics anchor is the United States Government course, which uses
+  // the SS.912.CG (Civics & Government) benchmarks. Like Texas's, they are overwhelmingly about
+  // the FEDERAL system; three name state and local government explicitly — CG.3.15 (how citizens
+  // are affected by local, state, and national governments), CG.3.10 (levels and responsibilities
+  // of state and federal courts), and CG.2.9 (elections at the state and national levels) — and
+  // that is where the Florida flagship is mapped, as partial. Florida's dedicated state-and-local
+  // civics is concentrated in Grade 7 Civics (SS.7.CG, middle school), not fetched this pass;
+  // data/fl.ts publishes that in its notClaimed list.
+  {
+    id: "civics.fl-state-structure",
+    claim: "Teaches Florida's 1968-revision constitution and its many amendment paths (including the once-every-20-years Constitution Revision Commission that places proposals directly on the ballot, and the 60% supermajority added in 2006); its plural executive (a Governor plus a separately-elected Cabinet — Attorney General, Chief Financial Officer, and Commissioner of Agriculture); a 120-member House and a 40-member Senate; and how a bill becomes a Florida law in a 60-day session, with a two-thirds veto override.",
+    courseSlugs: ["state-civics-fl"],
+    lessons: [
+      "Florida Civics, Lesson 1 · Florida's constitution: the 1968 rewrite and its many amendment paths",
+      "Florida Civics, Lesson 2 · The Constitution Revision Commission: Florida's once-in-20-years wildcard",
+      "Florida Civics, Lesson 3 · The three branches, and Florida's plural executive (Governor + Cabinet)",
+      "Florida Civics, Lesson 5 · How a bill becomes a Florida law",
+    ],
+  },
+  {
+    id: "civics.fl-courts",
+    claim: "Teaches Florida's split judicial selection: merit selection plus yes/no retention votes for the Supreme Court and District Courts of Appeal, and nonpartisan contested elections for circuit and county (trial) judges.",
+    courseSlugs: ["state-civics-fl"],
+    lessons: ["Florida Civics, Lesson 4 · Florida's courts: merit selection + retention for the top courts"],
+  },
+  {
+    id: "civics.fl-local-government",
+    claim: "Teaches Florida local government as Florida's: 67 counties split into charter (broad home rule) and non-charter counties, municipalities (city/town/village), and no townships.",
+    courseSlugs: ["state-civics-fl"],
+    lessons: [
+      "Florida Civics, Lesson 6 · Local government in Florida: 67 counties, charter vs. non-charter, and NO townships",
+      "Florida Civics, Lesson 9 · Get involved where you live in Florida",
+    ],
+  },
+  {
+    id: "civics.fl-elections",
+    claim: "Teaches Florida's election specifics: closed primaries (with the universal-primary exception), voter ID, vote-by-mail rules tightened by SB 90 (2021) and SB 524 (2022), a 29-day registration deadline, and the citizen initiative (about 8% of the last presidential vote spread across half the congressional districts, Florida Supreme Court review, then 60% at the polls).",
+    courseSlugs: ["state-civics-fl"],
+    lessons: [
+      "Florida Civics, Lesson 7 · Elections in Florida: closed primaries, voter ID, and recently tightened mail voting",
+      "Florida Civics, Lesson 8 · The citizen initiative: putting an amendment on the ballot yourself",
+    ],
+  },
+  {
+    id: "civics.fl-get-involved",
+    claim: "Teaches getting involved where you live, Florida edition — the Legislature's 60-day session, the ballot (initiatives and amendments), and county and municipal government.",
+    courseSlugs: ["state-civics-fl"],
+    lessons: ["Florida Civics, Lesson 9 · Get involved where you live in Florida"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
