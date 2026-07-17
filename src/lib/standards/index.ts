@@ -52,6 +52,7 @@ import type {
   CourseClaim,
   Coverage,
   JurisdictionFile,
+  MatrixRow,
   NotClaimedItem,
   ScopedAlignment,
   ScopedFramework,
@@ -76,6 +77,7 @@ export type {
   Coverage,
   Jurisdiction,
   JurisdictionFile,
+  MatrixRow,
   NotClaimedItem,
   ScopedAlignment,
   ScopedFramework,
@@ -277,6 +279,43 @@ export function summarizeStandards(groups: ScopedFramework[]): {
     frameworks: groups.length,
     jurisdictions: new Set(groups.map((g) => g.framework.jurisdiction)).size,
   };
+}
+
+/**
+ * Flatten scoped framework groups into one row per (standard x course) — the cross-state matrix.
+ *
+ * TENANT BOUNDARY: this takes the OUTPUT of scopeAlignments(), which has already dropped every
+ * standard no in-catalog course backs and rewritten each standard to name only THIS tenant's
+ * courses. flattenAlignments never reaches back to the raw ALIGNMENTS table, so it cannot re-admit
+ * a course the tenant does not publish. Pass scopeAlignments(available) with NO state to get every
+ * mapped jurisdiction at once (the explorer's default view); the row's own `state` field is how the
+ * client narrows back down. Adding a state (OH/GA next) needs zero change here — the rows are
+ * derived from mappedStates()/the registry via scopeAlignments.
+ */
+export function flattenAlignments(groups: ScopedFramework[]): MatrixRow[] {
+  const rows: MatrixRow[] = [];
+  for (const { framework, alignments } of groups) {
+    for (const a of alignments) {
+      for (const course of a.courses) {
+        rows.push({
+          id: `${framework.id}::${a.code}::${course.slug}`,
+          state: framework.state,
+          stateName: framework.jurisdiction,
+          frameworkId: framework.id,
+          frameworkName: framework.name,
+          subject: framework.subject,
+          code: a.code,
+          text: a.text,
+          coverage: a.coverage,
+          note: a.note,
+          sourceUrl: framework.sourceUrl,
+          fetchedOn: framework.fetchedOn,
+          course,
+        });
+      }
+    }
+  }
+  return rows;
 }
 
 /** A plain-text rendering a reporting homeschooler can paste into a filing. */

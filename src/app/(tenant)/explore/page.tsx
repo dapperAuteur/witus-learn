@@ -30,7 +30,7 @@ import { PricingContactForm } from "@/components/pricing-contact-form";
 // If you add a claim, bring its receipt.
 //
 // Standards alignment DOES now have its receipt, and so it is linked (section 5b): every code
-// and every quoted standard on /standards was fetched from its publisher and transcribed
+// and every quoted standard on /academic-standards was fetched from its publisher and transcribed
 // verbatim, with partial coverage flagged as partial. See src/lib/standards.ts before touching
 // it — a wrong standard code is the one defect on this page that could do a family real harm.
 //
@@ -438,7 +438,7 @@ export default async function ExplorePage() {
       </section>
 
       {/* 5b. Standards. Teachers and reporting homeschoolers need this before they need anything
-             else on this page. The claims themselves live on /standards, where each one carries
+             else on this page. The claims themselves live on /academic-standards, where each one carries
              its verbatim standard text, its source link, and an honest "partially covered" flag —
              see src/lib/standards.ts. Nothing is asserted here that isn't backed there. */}
       <section className="mt-14" aria-labelledby="standards-heading">
@@ -454,7 +454,7 @@ export default async function ExplorePage() {
           so plainly when we only cover part of it.
         </p>
         <Link
-          href="/standards"
+          href="/academic-standards"
           className={`${textLink} mt-2 inline-flex min-h-11 items-center pointer-coarse:min-h-12`}
           style={accent}
         >

@@ -43,17 +43,25 @@ field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.
 consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
 `/embed/course/[id]` iframe view is also available for embedding without calling the API directly.
 
-## State-standards finder (`/standards`)
+## State-standards finder (`/academic-standards`) and explorer (`/academic-standards/matrix`)
 
 A teacher, homeschooler, or administrator picks their **state** and sees which courses meet which
-of that state's published standards — exact code, the standard's **verbatim text**, the lessons
+of that state's published standards: exact code, the standard's **verbatim text**, the lessons
 that cover it, a link to the publisher's document, the date it was retrieved, and an honest
 `full` | `partial` flag (partials must say what's missing; a test enforces it). Filterable by
 subject and course, printable, and copyable as plain text for a state filing. **Mapped so far:
-Indiana, Washington D.C., Arizona, Arkansas, and California** — each with its state-civics
-flagship course mapped 1:1 where the state's own standards allow. States without a verified mapping render as
-"not mapped yet", never as errors, and each mapped state publishes its **"What we don't claim"**
-rejections alongside the claims.
+Arkansas, Arizona, California, Washington D.C., Florida, Indiana, New York, Pennsylvania, and
+Texas** (9 states), each with its state-civics flagship course mapped 1:1 where the state's own
+standards allow. States without a verified mapping render as "not mapped yet", never as errors,
+and each mapped state publishes its **"What we don't claim"** rejections alongside the claims.
+
+The companion **standards explorer** (`/academic-standards/matrix`) flattens every
+(state x standard x course) alignment into one table you can fuzzy-search (code, standard text,
+course, state, subject), filter (state / subject / coverage / course), and sort by any column, with
+per-course and per-state rollup counts ("course X meets N standards across M states"). It degrades
+to stacked cards on small screens and reuses the exact same tenant boundary as the finder. Both
+routes are linked from the **Teach** menu (instructors / admins), and `/standards` 308-redirects to
+`/academic-standards` for old links.
 
 The data model is a concept hub built to reach all 51 jurisdictions without repeating work:
 [src/lib/standards/claims.ts](src/lib/standards/claims.ts) analyzes the catalog **once** into
