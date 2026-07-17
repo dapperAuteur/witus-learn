@@ -631,5 +631,305 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
         ],
       },
     },
+    // ────────────── SECTION 3 · DURBAN TO COSATU ──────────────
+    {
+      slug: "sa-durban-1973",
+      title: "5 · Durban, 1973: the strike with no leaders",
+      section: "Section 3 · Durban 1973 to COSATU 1985 — rebuilding from the shop floor",
+      body: `For twenty years after the 1953 strike ban, mass African worker action all but disappeared from South Africa. The state had every reason to believe the walls would hold. Then, in the first months of **1973**, they cracked — not in a political campaign, but over pay.
+
+**On 9 January 1973**, workers at the **Coronation Brick and Tile** works outside **Durban** stopped work demanding higher wages. The strike leapt from factory to factory across Durban and the surrounding region — textiles, docks, municipal services. The most careful contemporary study, by the Institute for Industrial Education, counted **about 61,000 workers striking in and around Durban between January and March 1973**; counting the wave as it spread nationally through the year, South African History Online puts participation at **around 100,000**. Both numbers are honest; they measure different things, and this course gives you the range rather than inventing precision.
+
+**The tactical genius of Durban was an absence: the strikes had no leaders.** Workers had learned exactly what Lesson 4 taught you — a leader is a person the police can arrest, an employer can victimise, a court can prosecute under the 1953 Act. So strikers refused, workplace after workplace, to elect negotiating committees or name spokesmen. Managers who came out to ask "who are your leaders?" faced a crowd that answered, in effect: *all of us*. Demands were shouted collectively; offers were accepted or rejected by roar. The state could not decapitate a movement that had no head.
+
+**And it worked — that is the part that changed history.** Employers, desperate to restart production and facing workers they could not lawfully bargain with, simply **raised wages**. Most strikers went back within days with increases; dismissals and prosecutions, by the standards of 1946, were remarkably few. After decades in which the lesson of every strike had been *you will be crushed*, Durban taught a different one: **mass action, held inside the workplace, could win.** (Notice the family resemblance to Poland's occupation strikes of 1980 — a repressed workforce redesigning the strike itself so the state's usual answer would not work. The two movements discovered it independently, seven years apart.)
+
+**What Durban left behind mattered more than the raises.** Around the strikes grew a new infrastructure: wage-advice offices, worker education projects, and a generation of new **unregistered** unions — organisations that could not sign legal agreements but organised anyway, factory by factory. The state's official answer was to offer, once again, **works committees** — the toothless bodies of the 1953 Act. Workers used them where useful and built real unions in their shadow. By the late 1970s these unions were large enough that the state faced the choice Section 3's next lesson describes: keep pretending the category "employee" could hold, or open it and try to control what came in.
+
+:::reveal The Durban strikers of 1973 refused to elect any leaders or negotiating committees. Why — and what did that refusal accomplish? ||| Because under the 1953 Act an African strike was a crime, a named leader was a target: arrestable, dismissable, prosecutable. By bargaining as a crowd — demands shouted collectively, offers answered by roar — the strikers gave the state no head to cut off, and employers desperate to restart production simply raised wages. After 1946's lesson ("you will be crushed"), Durban proved mass action inside the workplace could win, and the unregistered unions it spawned became the seed of everything that followed.
+
+## Sources
+- South African History Online. (n.d.). *The Durban strikes of 1973*. https://sahistory.org.za/
+- Institute for Industrial Education. (1974). *The Durban strikes 1973: "Human beings with souls"*. Ravan Press.
+- Friedman, S. (1987). *Building tomorrow today: African workers in trade unions, 1970–1984*. Ravan Press.`,
+      recallContent: [
+        {
+          prompt: "How large were the 1973 Durban strikes, and why does the course give a range?",
+          answer:
+            "About 61,000 strikers in and around Durban between January and March 1973 (Institute for Industrial Education, 1974); around 100,000 counting the wave nationally through the year (SAHO). The two figures measure different things, so the course reports the documented range instead of inventing one number.",
+        },
+        {
+          prompt: "What was the 'no leaders' tactic, and what echo does it have elsewhere in this track?",
+          answer:
+            "Strikers refused to elect committees or spokesmen because a named leader could be arrested or victimised under the 1953 strike ban; crowds bargained collectively and the state had no head to cut off. It rhymes with Poland's occupation strikes of 1980 — a repressed workforce redesigning the strike so the state's usual answer fails.",
+        },
+      ],
+    },
+    {
+      slug: "sa-wiehahn-fosatu",
+      title: "6 · Wiehahn's gamble, and FOSATU's warning",
+      section: "Section 3 · Durban 1973 to COSATU 1985 — rebuilding from the shop floor",
+      body: `By the late 1970s the state faced a fact it could not prosecute away: African unions existed, were growing, and sat entirely **outside** the legal machinery — unregulated precisely because they were unrecognised. Its response is one the anchor course already taught you, and this course will not re-teach it at length: the **Wiehahn Commission**, whose 1979 report recommended that African workers be admitted to the registered industrial-relations system. The reasoning was **control** — a registered union files its constitution, discloses its finances, becomes subject to the law's discipline. Parliament obliged with the **Industrial Conciliation Amendment Act 94 of 1979**, and for the first time African workers could belong to registered unions. *(If you want Wiehahn's logic in full, re-read the anchor's lesson "Poland and South Africa: when a union is the opposition" — this course picks up where it stops: with what the unions did with the opening.)*
+
+**What they did was take the machine and keep their own engine.** The unions that entered the system had already, in April 1979, federated as **FOSATU — the Federation of South African Trade Unions** — a dozen unions built out of the post-Durban organising drive (South African History Online). FOSATU's signature was **shop-floor democracy**: power vested in elected **shop stewards**, mandated and recallable by the workers of a specific factory, with paid officials kept on a short leash. Registration, on this model, was a tool — you used the industrial council when it served your members and struck when it did not — but the union's strength lived in the workplace, not in the statute book. Hold that design; it is the answer to Question 3 that COSATU inherits, and it is why South African unions became formidable rather than captured, which is what Wiehahn's authors had gambled on.
+
+**And then, in April 1982, FOSATU's general secretary said something this course quotes because Section 6 cannot be understood without it.** In a keynote address to FOSATU's congress — published as *"The Workers' Struggle — Where Does FOSATU Stand?"* (South African Labour Bulletin, 1982) — **Joe Foster** argued that workers must of course fight apartheid alongside the broader popular movement, but that they needed their **own independent organisation**, because a mass liberation movement is led by many classes at once, and without an independent base workers' interests would be spoken *for* rather than *by* them — and could be set aside after victory. This position, tagged **"workerism"** by its critics, was fiercely contested by unionists who argued the opposite — that the factory could not be separated from the township, and that standing apart from the national struggle while people were being shot was a moral and strategic absurdity. That rival current, **"populism"** to *its* critics, carried the day in the end.
+
+**Read Foster's warning the way this course reads Wiehahn: as a prediction whose test results come later.** In 1982 it was a debate about strategy. After 1994 — when the federation Foster's federation helped build had entered a formal alliance with a governing party — the question *"what happens to workers' independent voice inside a multi-class alliance in power?"* stopped being theoretical. Section 6 shows you both sides claiming vindication, from their own documents. This course tells you now, so you can watch for it: **it does not declare a winner.**
+
+:::reveal Joe Foster's 1982 FOSATU address is quoted in this course as "a prediction whose test results come later." What did he argue, and what later events test it? ||| Foster argued workers should fight apartheid with the popular movement but keep an independent workers' organisation — because a liberation movement is multi-class, and without their own base workers would be spoken for rather than by themselves, and could be set aside after victory. The test comes after 1994, when COSATU sat inside a formal alliance with the governing ANC: NUMSA and SAFTU later claimed Marikana and the alliance's record proved Foster right; COSATU points to the LRA and the minimum wage as proof the alliance delivered. The course shows both cases and declares no winner.
+
+## Sources
+- South African History Online. (n.d.). *The Federation of South African Trade Unions (FOSATU)*. https://sahistory.org.za/
+- Foster, J. (1982). The workers' struggle — where does FOSATU stand? *South African Labour Bulletin, 7*(8).
+- South African History Online. (n.d.). *Wiehahn Commission report tabled in parliament*. https://sahistory.org.za/dated-event/wiehahn-commission-report-tabled-parliament`,
+      recallContent: [
+        {
+          prompt: "What was the Wiehahn opening, and what was the state's gamble?",
+          answer:
+            "The Wiehahn Commission (1979) recommended admitting African workers to the registered union system — enacted by the Industrial Conciliation Amendment Act 94 of 1979. The gamble was control: a registered union is a regulable union. The unions took the machinery and kept shop-floor power, and the gamble failed.",
+        },
+        {
+          prompt: "What organisational design did FOSATU (founded April 1979) run on?",
+          answer:
+            "Shop-floor democracy: elected, mandated, recallable shop stewards holding the power, officials on a short leash, registration used as a tool rather than a leash. COSATU inherited this design — it is why the unions became formidable rather than captured.",
+        },
+      ],
+    },
+    {
+      slug: "sa-cosatu-ungovernable",
+      title: "7 · COSATU, 1985: one federation, and a country made ungovernable",
+      section: "Section 3 · Durban 1973 to COSATU 1985 — rebuilding from the shop floor",
+      body: `By the mid-1980s South Africa was in open crisis: the townships had risen after the 1984 constitution excluded the Black majority yet again; the **United Democratic Front (UDF)** — a coalition of hundreds of civic, church, student and community organisations aligned with the banned ANC — was coordinating resistance; the state answered with **states of emergency** (1985, renewed 1986) that put soldiers in the townships and tens of thousands in detention. Into this, on **1 December 1985**, after four years of unity talks, walked a new federation.
+
+**COSATU — the Congress of South African Trade Unions — launched in Durban with 33 unions and about 460,000 paid-up members** (South African History Online), on three organising principles: **one industry, one union; one country, one federation**; worker control (the FOSATU steward tradition); and — the decisive break with FOSATU's caution — **open engagement in the political struggle**. Its first president, **Elijah Barayi**, used the launch rally to give the government an ultimatum on the pass laws; its general secretary, **Jay Naidoo**, came from the FOSATU tradition. The largest affiliate was the **National Union of Mineworkers (NUM)** — founded in 1982, led by its founding general secretary **Cyril Ramaphosa**. Keep both of those names: NUM is one of the two unions at Marikana in Section 5, and Ramaphosa — by then a Lonmin director — is a figure the Farlam Commission had to make findings about, before he became the country's president.
+
+**What "engagement in the political struggle" meant in practice was scale.** COSATU turned the strike and the **stayaway** — a coordinated day when workers simply do not appear, across a whole city or country — into instruments no emergency decree could suppress: you can detain organisers, but you cannot arrest an absence, any more than Durban's managers could arrest a crowd. In **August 1987**, NUM led around **340,000 miners** (the union's figure; the Chamber of Mines counted fewer — the course gives you both sides' numbers) into a **three-week strike**, the largest in South African history to that point; it ended in defeat, with **tens of thousands dismissed** (SAHO). The state understood exactly what the federation was: in **May 1987, COSATU House, the federation's Johannesburg headquarters, was bombed** — an attack security police later confessed to in amnesty proceedings before the **Truth and Reconciliation Commission**. Political funerals, consumer boycotts, stayaways, strikes: by the late 1980s the resistance's slogan — make South Africa **ungovernable** — ran in large part on organised workers.
+
+**And the alliance became formal.** COSATU aligned with the UDF and, in 1987, adopted the **Freedom Charter** — the ANC-aligned movement's founding document — settling the Foster debate, at least officially, in favour of full political engagement. When the ANC and SACP were unbanned on **2 February 1990**, the relationship took its lasting shape: the **Tripartite Alliance** — ANC, South African Communist Party, COSATU — which negotiated the transition and contested the **27 April 1994** election as one bloc. Union leaders moved wholesale into the new state: Ramaphosa chaired the constitutional negotiations; Naidoo entered Mandela's cabinet to run the Reconstruction and Development Programme. The federation that had been the hammer of the old state was now **inside** the new one.
+
+**Close this section by asking the anchor's Question 1 one more time.** Under a state where Black workers could not vote, COSATU's answer had been the anchor's line: *withdrawing your labour is the ballot you have.* After 27 April 1994 every worker had an actual ballot — and the federation had a seat at the government's own table. What that seat cost, and what it bought, is the rest of this course.
+
+:::reveal COSATU launched in 1985 with the principle of open political engagement, adopted the Freedom Charter in 1987, and entered the Tripartite Alliance with the ANC and SACP. What did the federation gain by 1994, and what open question did it carry into the new era? ||| It gained the victory itself — its strikes and stayaways helped make apartheid ungovernable — plus a formal seat inside the new order: alliance partner of the governing party, its leaders (Ramaphosa, Naidoo) moving into the constitutional talks and cabinet. The open question was Joe Foster's from 1982: inside a multi-class alliance that now holds state power, who speaks for workers when the government their federation helped elect is also their bargaining counterpart — and, at Marikana, their police?
+
+## Sources
+- South African History Online. (n.d.). *The Congress of South African Trade Unions (COSATU)*. https://sahistory.org.za/article/congress-south-african-trade-unions-cosatu
+- South African History Online. (n.d.). *The 1987 mineworkers' strike*. https://sahistory.org.za/
+- Truth and Reconciliation Commission of South Africa. (1998–2003). *Amnesty proceedings: the bombing of COSATU House (May 1987)*. https://www.justice.gov.za/trc/
+- Baskin, J. (1991). *Striking back: A history of COSATU*. Ravan Press.`,
+      recallContent: [
+        {
+          prompt: "Name COSATU's founding principles and its decisive break with FOSATU.",
+          answer:
+            "One industry, one union; one country, one federation; worker control through shop stewards — plus the break: open engagement in the political struggle, sealed by adopting the Freedom Charter in 1987 and entering the Tripartite Alliance (ANC–SACP–COSATU) after the 1990 unbannings.",
+        },
+        {
+          prompt: "What was the August 1987 miners' strike, and how does the course handle its numbers?",
+          answer:
+            "A three-week NUM-led strike — the largest in South African history to that point. NUM claimed about 340,000 participants; the Chamber of Mines counted fewer; the course reports both sides' figures. It ended in defeat with tens of thousands dismissed (SAHO).",
+        },
+      ],
+    },
+    {
+      slug: "sa-quiz-3",
+      title: "Section 3 quiz · Durban to COSATU",
+      section: "Section 3 · Durban 1973 to COSATU 1985 — rebuilding from the shop floor",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Where and when did the 1973 strike wave begin?",
+            options: [
+              "At the Coronation Brick and Tile works outside Durban, on 9 January 1973",
+              "At a Johannesburg gold mine in 1976",
+              "At the Cape Town docks in 1970",
+              "At a Pretoria steel plant in 1979",
+            ],
+            correctIndex: 0,
+            explanation:
+              "A pay strike at one brickworks leapt across Durban's factories, docks and services — and ended two decades of enforced quiet.",
+            sourceLessonSlug: "sa-durban-1973",
+          },
+          {
+            prompt: "How many workers struck in the 1973 wave?",
+            options: [
+              "Exactly 12,000",
+              "About 61,000 in and around Durban (Jan–Mar, Institute for Industrial Education) and around 100,000 nationally through 1973 (SAHO) — the course reports the documented range",
+              "Over a million",
+              "The number is unknowable",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Two honest figures measuring different things — the course gives the range rather than inventing precision.",
+            sourceLessonSlug: "sa-durban-1973",
+          },
+          {
+            prompt: "Why did the Durban strikers elect no leaders?",
+            options: [
+              "They could not agree on candidates",
+              "Because under the 1953 strike ban a named leader could be arrested, victimised or prosecuted — a crowd bargaining by roar gave the state no head to cut off",
+              "The law required anonymous bargaining",
+              "Employers refused to meet leaders",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The 'no leaders' tactic was a designed answer to Question 4, exactly as Poland's occupation strikes were — discovered independently, seven years apart.",
+            sourceLessonSlug: "sa-durban-1973",
+          },
+          {
+            prompt: "What made Durban 1973 a turning point rather than another 1946?",
+            options: [
+              "The army refused to deploy",
+              "It won — employers raised wages, dismissals were few, and the strikes left behind unregistered unions, proving mass action inside the workplace could succeed",
+              "The government fell immediately",
+              "The United Nations intervened",
+            ],
+            correctIndex: 1,
+            explanation:
+              "After decades in which every strike taught 'you will be crushed,' Durban taught the opposite lesson — and built the organising infrastructure that grew into FOSATU.",
+            sourceLessonSlug: "sa-durban-1973",
+          },
+          {
+            prompt: "What did the Wiehahn Commission (1979) recommend, and why?",
+            options: [
+              "Banning African unions permanently, for security",
+              "Admitting African workers to the registered union system — because unregistered unions were growing anyway and a registered union can be regulated",
+              "Abolishing all unions",
+              "Handing the mines to the unions",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The control gamble, enacted as the Industrial Conciliation Amendment Act 94 of 1979 — taught in the anchor; this course teaches what the unions did with the opening.",
+            sourceLessonSlug: "sa-wiehahn-fosatu",
+          },
+          {
+            prompt: "What was FOSATU's signature organisational design?",
+            options: [
+              "Power concentrated in a charismatic president",
+              "Shop-floor democracy — elected, mandated, recallable shop stewards holding power, with paid officials on a short leash",
+              "Control by international federations",
+              "Government-appointed administrators",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Strength lived in the workplace, not the statute book — why registration became a tool rather than a leash, and why Wiehahn's gamble failed.",
+            sourceLessonSlug: "sa-wiehahn-fosatu",
+          },
+          {
+            prompt: "In his 1982 address, Joe Foster argued that workers should…",
+            options: [
+              "stay out of the anti-apartheid struggle entirely",
+              "fight apartheid with the popular movement but keep an independent workers' organisation, lest workers be spoken for and set aside after victory",
+              "merge the unions into the ANC immediately",
+              "focus only on wages and never on politics",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Published as 'The Workers' Struggle — Where Does FOSATU Stand?' (South African Labour Bulletin, 1982) — the 'workerist' position, and the course's planted prediction for Section 6.",
+            sourceLessonSlug: "sa-wiehahn-fosatu",
+          },
+          {
+            prompt: "What was the rival position to Foster's 'workerism' in the 1980s union debates?",
+            options: [
+              "'Populism' (its critics' tag): the factory cannot be separated from the township, and standing apart from the national struggle was absurd while people were being shot",
+              "'Monetarism': unions should focus on inflation",
+              "'Legalism': unions should only litigate",
+              "'Isolationism': unions should leave South Africa",
+            ],
+            correctIndex: 0,
+            explanation:
+              "That current carried the day: COSATU launched with open political engagement and adopted the Freedom Charter in 1987. The course declares no winner in the debate.",
+            sourceLessonSlug: "sa-wiehahn-fosatu",
+          },
+          {
+            prompt: "Which principles did COSATU launch on in December 1985?",
+            options: [
+              "One industry, one union; one country, one federation; worker control; open political engagement",
+              "Craft unionism and political neutrality",
+              "Company unions and works councils",
+              "State charters and compulsory dues",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The FOSATU steward tradition plus the decisive break: full engagement in the political struggle.",
+            sourceLessonSlug: "sa-cosatu-ungovernable",
+          },
+          {
+            prompt: "Who was NUM's founding general secretary — a name that recurs at Marikana and beyond?",
+            options: ["Elijah Barayi", "Cyril Ramaphosa", "Jay Naidoo", "Joe Foster"],
+            correctIndex: 1,
+            explanation:
+              "Ramaphosa led NUM from 1982, chaired the constitutional negotiations, was a Lonmin director in 2012 (the Farlam Commission made findings about him), and later became president.",
+            sourceLessonSlug: "sa-cosatu-ungovernable",
+          },
+          {
+            prompt: "Why was the stayaway so hard for the emergency state to suppress?",
+            options: [
+              "It was constitutionally protected",
+              "You can detain organisers, but you cannot arrest an absence — a coordinated no-show has no head and no crowd to disperse",
+              "The police supported it",
+              "It only happened on Sundays",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The same design logic as Durban's leaderless crowds: build the action so the state's usual answer has nothing to grab.",
+            sourceLessonSlug: "sa-cosatu-ungovernable",
+          },
+          {
+            prompt: "How does the course report the size of the August 1987 miners' strike?",
+            options: [
+              "Exactly 500,000, per the government",
+              "NUM's figure (~340,000) alongside the Chamber of Mines' lower count — both sides' numbers, since they disagree",
+              "It refuses to give any number",
+              "Ten thousand",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Contested figures are presented as contested — the three-week strike was the largest to that point and ended with tens of thousands dismissed (SAHO).",
+            sourceLessonSlug: "sa-cosatu-ungovernable",
+          },
+          {
+            prompt: "What happened to COSATU House in May 1987, and how do we know who did it?",
+            options: [
+              "It burned down accidentally; insurance records show it",
+              "It was bombed; security police later confessed in amnesty proceedings before the Truth and Reconciliation Commission",
+              "It was sold to developers; deeds show it",
+              "Nothing happened to it",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The state understood exactly what the federation was — and the TRC record, not rumour, is how the course sources the attack.",
+            sourceLessonSlug: "sa-cosatu-ungovernable",
+          },
+          {
+            prompt: "What is the Tripartite Alliance, and when did it take its lasting shape?",
+            options: [
+              "ANC–SACP–COSATU, formalised after the unbannings of 2 February 1990, contesting the 1994 election as one bloc",
+              "A 1950s pact between mining houses",
+              "A UN oversight body from 1994",
+              "COSATU–FOSATU–NUM, formed in 1985",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The federation that hammered the old state moved inside the new one — Ramaphosa to the constitutional talks, Naidoo to cabinet.",
+            sourceLessonSlug: "sa-cosatu-ungovernable",
+          },
+          {
+            prompt: "With the vote won in 1994, what new version of Question 1 did COSATU carry into democracy?",
+            options: [
+              "Whether strikes would remain legal",
+              "What a workers' independent voice costs and buys inside a multi-class alliance that now holds state power",
+              "Whether to admit white workers",
+              "Whether to register with the ILO",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Foster's 1982 question stopped being theoretical the day the alliance became the government — it is the axis of Sections 4 through 6.",
+            sourceLessonSlug: "sa-cosatu-ungovernable",
+          },
+        ],
+      },
+    },
   ],
 };
