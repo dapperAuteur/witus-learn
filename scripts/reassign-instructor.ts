@@ -77,22 +77,80 @@ async function main() {
     return;
   }
 
-  // 1) Move stray-tenant courses into Learn.WitUS. Owner must be an instructor there (they are).
+  // After this script every course on Learn.WitUS ends up keyed (lw, owner, slug) — so any slug
+  // that exists BOTH on a stray tenant and on Learn.WitUS is a stale duplicate (the catalog was
+  // re-seeded onto Learn.WitUS long ago; the stranded copy is the leftover). A blind bulk UPDATE
+  // hits courses_tenant_instructor_slug_uq and aborts the whole run (that's the failure BAM hit
+  // on `cybersecurity-get-the-job`). Move course-by-course, skip duplicates, and REPORT them —
+  // never delete: the stranded copy could still hold enrollments/progress, and destroying data
+  // is a human decision.
+  const lwSlugs = new Set(
+    (
+      await db
+        .select({ slug: schema.courses.slug })
+        .from(schema.courses)
+        .where(eq(schema.courses.tenantId, lw.id))
+    ).map((r) => r.slug),
+  );
+
+  // 1) Move stray-tenant courses into Learn.WitUS, one at a time, slug-guarded.
   if (mergeIds.length) {
-    const moved = await db
-      .update(schema.courses)
-      .set({ tenantId: lw.id })
-      .where(inArray(schema.courses.tenantId, mergeIds))
-      .returning({ id: schema.courses.id });
-    console.log(`Moved ${moved.length} course(s) into learn-witus.`);
+    const strays = await db
+      .select({ id: schema.courses.id, slug: schema.courses.slug, tenantId: schema.courses.tenantId })
+      .from(schema.courses)
+      .where(inArray(schema.courses.tenantId, mergeIds));
+    let moved = 0;
+    const dupes: { id: string; slug: string | null }[] = [];
+    for (const c of strays) {
+      if (c.slug !== null && lwSlugs.has(c.slug)) {
+        dupes.push({ id: c.id, slug: c.slug });
+        continue;
+      }
+      await db.update(schema.courses).set({ tenantId: lw.id, instructorId: owner.id }).where(eq(schema.courses.id, c.id));
+      if (c.slug !== null) lwSlugs.add(c.slug);
+      moved++;
+    }
+    console.log(`Moved ${moved} course(s) into learn-witus.`);
+    if (dupes.length) {
+      console.log(`SKIPPED ${dupes.length} stranded duplicate(s) — the same slug already lives on learn-witus:`);
+      for (const d of dupes) console.log(`  - ${d.slug} (stranded course id ${d.id})`);
+      console.log(
+        "These are stale leftovers from the old per-tenant seeds. Verify each has no enrollments you care about, then delete by id — this script deliberately never deletes courses.",
+      );
+    }
   }
-  // 2) Set the owner as instructor on every Learn.WitUS course.
-  const fixed = await db
-    .update(schema.courses)
-    .set({ instructorId: owner.id })
-    .where(and(eq(schema.courses.tenantId, lw.id), ne(schema.courses.instructorId, owner.id)))
-    .returning({ id: schema.courses.id });
-  console.log(`Reassigned ${fixed.length} course(s) to ${OWNER_EMAIL}. Done.`);
+
+  // 2) Set the owner as instructor on every Learn.WitUS course — same guard, per course: if the
+  // owner already has a course with this slug on Learn.WitUS, flipping this one would collide.
+  const wrong = await db
+    .select({ id: schema.courses.id, slug: schema.courses.slug })
+    .from(schema.courses)
+    .where(and(eq(schema.courses.tenantId, lw.id), ne(schema.courses.instructorId, owner.id)));
+  const ownerSlugs = new Set(
+    (
+      await db
+        .select({ slug: schema.courses.slug })
+        .from(schema.courses)
+        .where(and(eq(schema.courses.tenantId, lw.id), eq(schema.courses.instructorId, owner.id)))
+    ).map((r) => r.slug),
+  );
+  let fixed = 0;
+  const instructorDupes: { id: string; slug: string | null }[] = [];
+  for (const c of wrong) {
+    if (c.slug !== null && ownerSlugs.has(c.slug)) {
+      instructorDupes.push(c);
+      continue;
+    }
+    await db.update(schema.courses).set({ instructorId: owner.id }).where(eq(schema.courses.id, c.id));
+    if (c.slug !== null) ownerSlugs.add(c.slug);
+    fixed++;
+  }
+  console.log(`Reassigned ${fixed} course(s) to ${OWNER_EMAIL}.`);
+  if (instructorDupes.length) {
+    console.log(`SKIPPED ${instructorDupes.length} duplicate(s) — ${OWNER_EMAIL} already owns a course with the same slug:`);
+    for (const d of instructorDupes) console.log(`  - ${d.slug} (course id ${d.id})`);
+  }
+  console.log("Done.");
 
   await pool.end();
 }

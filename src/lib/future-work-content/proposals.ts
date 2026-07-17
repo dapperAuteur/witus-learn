@@ -15,6 +15,414 @@ export interface ProposalDoc {
 
 export const PROPOSAL_DOCS: ProposalDoc[] = [
   {
+    key: "africa-precolonial-track-proposal",
+    title: "Precolonial Africa — course track proposal",
+    summary: "A proposed \"Africa Before Colonization\" track: one built anchor course plus seven follow-on",
+    body: `# Precolonial Africa — course track proposal
+
+A proposed **"Africa Before Colonization"** track: one built anchor course plus seven follow-on
+courses, each going survey-to-depth on a region or method the anchor could only give one or two
+lessons. From BAM's note (\`plans/future-courses/world.md\`): "Africa before colonization" — sibling
+queue entries (Pan-Africanism, Afrocentricity, Central America Pre-Columbian, Asia pre-colonization)
+are separate courses on parallel branches, and this track deliberately does NOT overlap them: this
+track is the precolonial documented record; Pan-Africanism/Afrocentricity are modern intellectual
+and political movements ABOUT that record.
+
+**Nothing below is built.** These are proposals — pick which to author, and in what order.
+
+---
+
+## The anchor (built, \`content/africa-precolonial\`)
+
+**Africa Before Colonization: The Documented Record** (Culture & History) — 7 sections, 16 teaching
+lessons, 7 quizzes (15-16-question banks), 1 exercise. Opens with the claim in the deniers' own
+words (Hegel 1837; Trevor-Roper 1965, both verified) and answers it with the record: Kush/25th
+Dynasty, Aksum, Ghana→Mali→Songhai + Timbuktu, Great Zimbabwe (with Rhodesia's documented 1970
+censorship), the Swahili coast, Benin (with the 1897 looting), Ethiopia (Lalibela → Adwa). African
+participation in slavery and the slave trades is taught plainly; romantic overcorrection is taught
+as a trap equal to erasure; every shaky beloved claim (Mansa Musa's "richest ever," the 1076
+Almoravid "sack," Sankore "university," manuscript counts, the Ark) is hedged or refused on the
+record.
+
+**The anchor's reusable analytical spine is the five-part audit + two guard rails.** Every course in
+this track should use it as its skeleton so the track compounds:
+
+1. **Which people?** 2. **Which place?** 3. **Which century?** 4. **Which sources?**
+5. **Do independent lines converge?** Guard rails: **refuse erasure, refuse romance.**
+
+Cross-links: the **Mansa Gold** research (Ghana cocoa/coffee; \`plans/future-courses/mansa-gold/\`,
+surfaced at \`/admin/future\`) pairs naturally with any West-Africa follow-on and with the
+Documentarian program's Ghana case study. The Great Migration and Hoodoo courses are downstream
+diaspora companions.
+
+---
+
+## Selection criteria
+
+A follow-on earns a slot only if it teaches something the anchor could not: either a **regional
+literature deep enough for its own sections** (the anchor gave Kush two lessons; the literature
+supports twenty) or a **transferable method** (the "How We Know" course). The test is the same as
+the workers-rights track: does removing it leave a hole?
+
+---
+
+## The seven follow-on courses
+
+### 1. Kush & Aksum: The Nile Beyond Egypt
+**Uniquely teaches:** the deepest time depth in the track (Kerma c. 2500 BCE → Aksum's 7th-c. CE
+decline); a full treatment of the 25th Dynasty (Piye's stela as a readable primary source in
+translation), Meroë (Kandakes, the Rome war, ironworking), and Aksum (coin sequence as a datable
+king list; Ezana's inscriptions; Adulis and the Periplus). The undeciphered-Meroitic thread is a
+standing "how evidence works" lesson.
+**Sourcing strength:** excellent. Welsby, Phillipson, Munro-Hay, Bonnet's Kerma reports, the
+British Museum and Sudanese corpus, UNESCO GHA vol. II. Coins and inscriptions are primary sources
+students can see.
+**What's hard:** chronology conventions differ between references (regnal dates vary by decades);
+Sudan's current conflict makes site-status claims perishable — date everything. Avoid the
+"Black pharaohs" framing wars by teaching the naming debate itself.
+
+### 2. The West African Empires: Ghana, Mali, Songhai
+**Uniquely teaches:** state administration in the Arabic sources read closely (al-Bakri's customs
+schedule, al-Umari's Cairo interviews, Ibn Battuta's Mali as a full primary-source lesson in
+Levtzion & Hopkins); the Sundiata epic taught WITH Vansina's rules; Songhai's provincial
+administration under Askia Muhammad; Tondibi and the historiography of collapse. The Mansa Musa
+source-audit from the anchor expands into a full unit.
+**Sourcing strength:** the best documentary base in the track (Levtzion & Hopkins; Gomez's
+*African Dominion* as the modern spine; Hunwick's Tarikh al-Sudan).
+**What's hard:** popular myth pressure is highest here (net-worth figures, "Abubakari II crossed
+the Atlantic" — teach as unsupported); Koumbi Saleh's identification is debated; the
+Ghana-modern-Ghana naming trap needs constant policing.
+
+### 3. Great Zimbabwe & the Southern States
+**Uniquely teaches:** an archaeology-first course (the only track member where texts are marginal):
+Mapungubwe → Great Zimbabwe → Khami/Mutapa sequence; drystone building technique; the
+gold-and-cattle economy; and the FULL denial-and-censorship file (Mauch → Bent → Ancient Ruins Ltd
+→ Hall → Randall-MacIver → Caton-Thompson → Rhodesia 1970 → Garlake) as a documented case study in
+politicized archaeology — the strongest single "evidence vs ideology" unit the platform could own.
+**Sourcing strength:** strong and citable (Garlake, Pikirayi, Caton-Thompson's own report, Huffman
+with his critics, UNESCO). The censorship chapter is unusually well documented (Pikirayi 2012).
+**What's hard:** population and trade-volume figures are all estimates — hedge everything;
+Mapungubwe's gold rhino involves South African heritage politics; texts are so thin that lessons
+must teach FROM material evidence, which is harder to write engagingly (lean on the anchor's
+convergence lesson).
+
+### 4. The Swahili Coast: Kilwa and the Indian Ocean World
+**Uniquely teaches:** Africa in world-trade history: monsoon economics, coinage (Kilwa's mint),
+Shanga/Kilwa excavation sequences as the refutation of the "Arab colony" claim, Ibn Battuta's 1331
+eyewitness, Zheng He's fleets from the Ming end, and the Portuguese rupture (1498-1505) as the
+hinge into the colonial era. Natural map-content course (\`mapContent\` support already exists).
+**Sourcing strength:** good: Horton & Middleton, Kusimba, LaViolette, the Periplus for deep
+background, Gibb's Ibn Battuta, UNESCO Kilwa documentation.
+**What's hard:** the Kilwa Chronicle's two divergent versions demand careful handling (also an
+opportunity — it IS the methods lesson); Swahili identity is a live modern debate (coastal
+communities' own histories vs archaeological narratives); Zanzibar-era slave-trade history must be
+kept distinct in period from the medieval trade to avoid flattening.
+
+### 5. Benin, Ife & the Forest Kingdoms
+**Uniquely teaches:** art as historical record (Ife naturalism, the Benin plaque corpus as a court
+archive in brass, the casters' guild continuity); the manilla economy and the 2023 isotope study as
+a "follow the metal" methods unit; Benin's 16th-c. slave-export embargo and later participation —
+the track's most concrete case of an African state setting trade terms; the 1897 expedition,
+dispersal, and the live restitution ledger (dated). Oyo, Dahomey and Asante as the political
+context of the forest belt.
+**Sourcing strength:** strong: Ryder's *Benin and the Europeans* (from the Portuguese/Dutch
+records), Blier on Ife, Hicks and the British Museum's own statements for 1897 and after,
+Skowronek et al. 2023.
+**What's hard:** restitution moves monthly — every status line needs an as-of date; loot counts
+have no complete inventory (ranges only); Dahomey's slave-trade centrality must be taught at the
+anchor's honesty standard without letting it swallow the art-historical spine.
+
+### 6. Ethiopia: The Unconquered Highland
+**Uniquely teaches:** the longest continuous statehood story in the track (Aksum → Zagwe/Lalibela
+→ Solomonic restoration → Gondar → Adwa), the Ge'ez manuscript tradition (Garima Gospels,
+radiocarbon-dated) as Africa's deepest insider written record, the Kebra Nagast as legitimating
+TRADITION taught as such, and Adwa 1896 as diplomatic history (Wuchale's Article 17 as a
+translation-criticism lesson). The "never colonized" formulation taught precisely, WITH 1936-41.
+**Sourcing strength:** excellent: Phillipson, Munro-Hay, Marcus, Jonas's *Battle of Adwa*, Bausi on
+the manuscripts, UNESCO (Lalibela 1978, Aksum 1980).
+**What's hard:** the Ark and Solomonic traditions are identity-bearing for living communities —
+teach as tradition without either endorsing or sneering; modern Ethiopian/Eritrean politics
+(Tigray war; heritage sites in conflict zones) makes site-status claims perishable; church
+chronology vs archaeological phasing at Lalibela must stay visibly separate.
+
+### 7. How We Know: The Historian's Toolkit (Africa Edition)
+**Uniquely teaches:** the track's methods capstone, expanding anchor Section 6 into a full course:
+source criticism on the Arabic corpus (translation comparison exercises), Vansina's oral-tradition
+method with recorded epic excerpts, radiocarbon + stratigraphy walkthroughs (Jenne-jeno, Igbo-Ukwu
+as case studies), historical linguistics (Bantu expansion), archival survivorship (what burned,
+what was looted, what was never written), and a final "audit a viral claim" capstone exercise.
+This is the platform's most TRANSFERABLE course — it generalizes to every history track WitUS ever
+builds (the anchor's five-part audit becomes a reusable cross-course tool).
+**Sourcing strength:** excellent and stable (Vansina 1985, Ehret 2016, Levtzion & Hopkins, the GHA
+methodology volume I, published site reports).
+**What's hard:** methods courses risk dryness — every unit must run on a concrete African case the
+learner already met in the track; exercise design (translation comparison, claim audits) is more
+build-intensive than narrative lessons.
+
+---
+
+## Recommended build order + reasoning
+
+1. **The West African Empires** — highest learner demand (Mansa Musa is the track's celebrity),
+   best documentary base, and the anchor's most compressed section (three empires in one lesson
+   block). The myth-pressure is exactly where the platform's hedging house style shines.
+2. **Great Zimbabwe & the Southern States** — the strongest thesis course (evidence vs ideology,
+   with the censorship file), and zero overlap with anything else on the platform. Pairs with #1
+   to cover both a text-rich and a text-poor methodology.
+3. **How We Know (Africa Edition)** — build third, once two deep regional courses exist for its
+   case studies to point back into; it then multiplies the value of everything after it, and its
+   audit tooling gets reused by every later WitUS history course.
+4. **Benin, Ife & the Forest Kingdoms** — the restitution news cycle keeps it current; the
+   honesty-standard slavery treatment is already modeled by the anchor; art-as-record extends the
+   platform's "documents aren't the only evidence" argument.
+5. **Ethiopia** — rich, stable sourcing; strongest continuity story; benefits from the methods
+   course existing first (tradition-vs-record framing is its spine).
+6. **The Swahili Coast** — excellent map-course potential; slots after Ethiopia so the Indian
+   Ocean context (Aksum → Adulis → Kilwa) reads as one arc.
+7. **Kush & Aksum** — last not because it is weakest but because the anchor already covers it
+   proportionally best (two full lessons), and Sudan's conflict makes fieldwork-fresh sourcing
+   hardest right now; by building last it can absorb whatever the war has done to site status.
+
+**Track-wide rules** (inherited from the anchor, non-negotiable): the five-part audit as skeleton;
+APA 7 + \`## Sources\` per teaching lesson; every shaky beloved claim labeled contested/estimated or
+refused; African participation in slavery taught plainly wherever it touches a course's period;
+never flatten "Africa" — name people, place, period; quiz banks ~15 with \`explanation\` +
+\`sourceLessonSlug\` on every question.`,
+    provenance: "plans/future-courses/africa-precolonial-track-proposal.md",
+  },
+  {
+    key: "afrocentricity-track-proposal",
+    title: "Afrocentricity — course track proposal",
+    summary: "A proposed \"Afrocentricity\" track: one built anchor course plus a set of deep-dive courses, each",
+    body: `# Afrocentricity — course track proposal
+
+A proposed **"Afrocentricity"** track: one built anchor course plus a set of deep-dive courses, each
+taking one strand the anchor teaches as a single section and expanding it into a full, primary-source
+course. The track's unifying deliverable is **not** "here is the truth about Afrocentricity" — it is a
+transferable skill: **how to evaluate a contested academic paradigm** that is part legitimate corrective
+and part overcorrection.
+
+The design rule the whole track inherits from the anchor is non-negotiable and load-bearing:
+
+> **Teach it as its proponents define it · present the strongest claims from their own books · present
+> the substantive academic criticism from the critics' own books · attribute every contested claim to
+> who makes it · assert in the course's own voice only what is genuinely settled · declare no winner on
+> live debates · distinguish rigorous scholarship from pop-myth · never invent a citation or a quote.**
+
+**Nothing below is built.** These are proposals — pick which to author, and in what order. Several
+require BAM's explicit editorial sign-off before authoring begins (flagged per course).
+
+---
+
+## The anchor (built, \`content/afrocentricity\`)
+
+**Afrocentricity: How to Evaluate a Contested Paradigm** (Culture & History, slug \`afrocentricity\`) —
+6 sections, 15 teaching lessons, 6 quizzes (15-question banks, above the 10-question attempt cap so
+retries rotate; 90 questions total), for high school students. Registered in \`scripts/seed-courses.ts\`;
+no migration — \`pnpm seed:courses\`.
+
+- **S1 — What Afrocentricity Is (and Isn't):** Asante's own definition (centering African agency); the
+  *real* Eurocentric erasure (Hegel, Trevor-Roper) that makes the corrective legitimate; the two
+  founders (Diop = the founding historical claim, Asante = the named method).
+- **S2 — The Kemet Question:** Diop's evidence-based case (melanin tests, *Kemet*, Herodotus,
+  linguistics, the 1974 UNESCO Cairo symposium), the mainstream Egyptological response ("race" is a
+  modern category; *Kemet* = "the Black **Land**," i.e. soil), and the 2017 ancient-DNA study
+  (Schuenemann et al.) taught **dated and with its limits stated**. **No winner declared.**
+- **S3 — Black Athena and Stolen Legacy:** Bernal's Ancient/Aryan Model challenge; Lefkowitz's
+  response across her two 1996 books (\`Not Out of Africa\`; \`Black Athena Revisited\`, co-ed. Rogers)
+  plus Bernal's 2001 reply — the concede/don't-concede split reported, **no winner**; George G. M.
+  James's *Stolen Legacy* taught as failing on specifics (the Library of Alexandria postdates
+  Aristotle) **without erasing** the documented Egypt→Greece influence.
+- **S4 — Rigorous Scholarship vs. Pop-Myth:** the melanin pseudoscience (Welsing; Jeffries's "Sun
+  People / Ice People") named as a distinct pop strand, shown to be pseudoscience **and** a mirror of
+  the racism the tradition opposed — with the point that Afrocentrism's **own** critics (Howe, Ortiz de
+  Montellano) draw the same line, so naming it is not partisan.
+- **S5 — The Critics, and the Answers:** Howe (empirical), Appiah (essentialism), Gilroy
+  (anti-purity, from the **left** — not all critics are conservatives), each steelmanned from their
+  own books, then the proponents' strongest reply to each, with honest scorekeeping.
+- **S6 — How to Evaluate a Contested Paradigm:** the six-move toolkit (steelman → separate the levels
+  of claim → attribute → check sourcing + date live science → corrective-or-overcorrection → refuse
+  the false binary), applied end-to-end to Afrocentricity **and** to an unrelated claim to prove the
+  skill transfers.
+
+**The anchor's real payload is a reusable analytical spine — "the six moves" (S6).** Every deep-dive
+course in this track should be built on that spine, so the track compounds instead of being six
+unrelated arguments. A student who has done the anchor plus any two deep-dive courses should be able to
+walk into a paradigm they have never studied and produce a defensible first-pass evaluation.
+
+The anchor is also the natural home for BAM's source note
+\`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\` (move it to \`completed/\` once the anchor
+ships).
+
+---
+
+## Selection criteria (why these six, and not others)
+
+A deep-dive course earns a slot only if it teaches something **the anchor's single section on it could
+not** — more primary text, a fuller cast, a live sub-debate the section had to compress. The test is
+not "is it important"; it is "does the extra depth change what a student can *do*."
+
+Every course also has a **contestedness rating** and a **public-risk rating** — because two different
+things make a course hard:
+
+- **Contestedness** = how divided the scholarship is (does the course have to declare no winner?).
+- **Public risk** = how likely the course is to be weaponized, misread, or to defame a living person —
+  independent of how well it is sourced. A course can be superbly sourced *and* high public risk (a
+  whole course on "was Egypt Black" is the type case).
+
+The safe/sign-off split below is driven mostly by **public risk**, not by sourcing — every course here
+is sourceable from material already in print.
+
+---
+
+## The proposed deep-dive courses
+
+### SAFE TO BUILD (author with the anchor's method; no reviewer, no sign-off needed)
+
+#### 1. Diop and the Origins of the Paradigm
+**Teaches uniquely (beyond S1's founders lesson):** the full intellectual biography of the argument —
+Diop's training in Paris, the rejected then re-submitted doctoral thesis, *Nations nègres et culture*
+(1954), the two English books (*The African Origin of Civilization*, 1974; *Civilization or Barbarism*,
+1991), Obenga's linguistic work, and the **reception history** (why the 1974 UNESCO symposium mattered,
+and how the "Black hypothesis" was argued *and answered* in the room). It teaches how a paradigm is
+*born* — one scholar, one grievance, a body of evidence, and a fight for a hearing.
+**Sourcing strength:** strong. Diop's own translated books; the UNESCO *General History of Africa* Vol.
+II and the 1974 symposium proceedings; standard biographical scholarship.
+**Contestedness:** high (Diop's specific claims are contested), but the course teaches the *arguments
+and their reception*, not a verdict — so it stays inside the no-winner rule comfortably.
+**Public risk:** low-to-moderate. It is a history-of-scholarship course; it does not have to re-litigate
+Egypt's "race" in its own voice.
+
+#### 2. Black Athena: Anatomy of a Scholarly Fight
+**Teaches uniquely (beyond S3):** the exchange at full length — Bernal's three volumes (1987, 1991,
+2006) taken model-by-model; the specialist essays in *Black Athena Revisited* engaged individually;
+Bernal's *Black Athena Writes Back* (2001) reply; and the **independent** "orientalizing" scholarship
+(Burkert, 1992; West, 1997) that shows where the field actually moved. The payload is a rare, fully
+in-print case study of **how a discipline argues with itself over years** — and how "largely wrong in
+the particulars, right about the big thing" can both be true.
+**Sourcing strength:** excellent. Everything is published and in print, on both sides.
+**Contestedness:** high on specifics, but the concede/don't-concede split is now well-documented — the
+course reports it rather than adjudicating.
+**Public risk:** low. This is an academic-historiography fight; the participants published to be argued
+with. Keep it about the scholarship, not about "who was really Black."
+
+#### 3. The Critics: Howe, Appiah, Gilroy (and the Answers)
+**Teaches uniquely (beyond S5):** each critic given a full treatment from their own book — Howe's
+*Afrocentrism* (1998) on the empirical record; Appiah's *In My Father's House* (1992) on racial
+essence; Gilroy's *The Black Atlantic* (1993) on routes-over-roots — plus the proponents' developed
+replies, plus the **internal-to-Black-studies** critics the anchor only gestured at (e.g. Clarence
+Walker, *We Can't Go Home Again*, 2001; Wilson Jeremiah Moses, *Afrotopia*, 1998). The point students
+carry away: **critique of a paradigm is not the same as opposition to its cause** — Gilroy and Appiah
+are anti-racist critics, and that is the most misunderstood fact in the whole debate.
+**Sourcing strength:** excellent; all in print.
+**Contestedness:** these are live philosophical disagreements — perfect no-winner material.
+**Public risk:** low-to-moderate. Handled as steelmanned scholarship it is defensible; the only risk is
+a reader mistaking "we teach the critics" for "we endorse the critics," which the framing must prevent.
+
+### NEEDS BAM'S EDITORIAL SIGN-OFF BEFORE AUTHORING
+
+#### 4. The Kemet Debate (deep): Was Ancient Egypt a Black African Civilization?
+**Teaches uniquely (beyond S2):** the whole evidentiary landscape — the classical testimony in full
+(Herodotus 2.104 in context, Diodorus, the debates over translation), the physical-anthropology
+history, the *Kemet*/*Deshret* philology, Nubia and the Nile-Valley population continuum, and the
+**post-2017 ancient-DNA literature** as it continues to develop (each study dated and bounded).
+**Sourcing strength:** strong on all sides — but this is precisely the problem.
+**Contestedness:** maximal.
+**Public risk: HIGH — this is the single highest-risk course in the track.** A whole course (vs. one
+carefully bounded section) on "was Egypt Black?" is a lightning rod that **both** sides will try to
+weaponize as a verdict no matter how scrupulously it declares none. **Why sign-off:** BAM should
+approve the *scope and framing* (how much aDNA; how the "race is a modern category" move is weighted;
+whether it ships published or gated) before a line is written. It is buildable and would be excellent —
+but it must be a deliberate editorial decision, not a default.
+
+#### 5. Scholarship vs. Pop-Myth: How to Tell Rigor From Pseudoscience
+**Teaches uniquely (beyond S4):** the full anatomy of the pop-myth strand as a *case study in
+pseudoscience detection* — melanin theory, "Sun People / Ice People," and the ancient-astronaut-adjacent
+claims — set against the rigorous scholarship, using the build-tests as the through-line. Genuinely
+valuable as a media-literacy course.
+**Sourcing strength:** good (Ortiz de Montellano, 1993; Howe, 1998; Moses, 1998; the primary pop texts).
+**Contestedness:** low on the science (the pseudoscience really is pseudoscience) — but that is the
+risk.
+**Public risk: HIGH.** A whole course that names **living or recently-living people** (e.g. Leonard
+Jeffries) as purveyors of pseudoscience is defamation-adjacent and racially charged in a way one
+carefully-worded section is not. **Why sign-off:** BAM should approve the naming policy (name
+individuals, or critique claims without naming?), the tone, and legal comfort before authoring. The
+*idea* is safe; the *execution* around named living people is not automatically safe.
+
+#### 6. Afrocentric Education and the Curriculum Debates
+**Teaches uniquely:** the applied, contemporary fight — the Portland African-American Baseline Essays
+(1987), New York State's "A Curriculum of Inclusion" (1989), Asa Hilliard's role, the multiculturalism
+wars of the 1990s, and how all of it rhymes with **today's** curriculum battles. The most
+present-tense, most "relevant to a student's own school" course in the track.
+**Sourcing strength:** good, but **needs a careful verification pass** — the curriculum documents and
+their reception are real and locatable, but the retellings are highly polarized, so each claim must be
+sourced to a primary document and dated.
+**Contestedness:** high, and **entangled with live present-day politics** (it maps directly onto current
+curriculum/CRT fights).
+**Public risk: HIGH.** This is the course most likely to be read as a stance on a current political
+fight. **Why sign-off:** BAM should decide whether the platform wants a course adjacent to today's
+curriculum wars at all, and if so, approve the framing that keeps it historical and non-partisan.
+
+---
+
+## Recommended build order, and why
+
+**1 → Diop and the Origins. 2 → Black Athena. 3 → The Critics.** *(then, only with sign-off)*
+**4 → Scholarship vs. Pop-Myth. 5 → The Kemet Debate. 6 → Afrocentric Education.**
+
+The reasoning:
+
+- **Start with the three SAFE courses**, because they establish the track's credibility on
+  fully-in-print, low-public-risk material and let the anchor's no-winner method prove itself at course
+  length before anything higher-risk is attempted. **Diop first** (it is the origin story everything
+  else refers back to), then **Black Athena** (a self-contained academic fight with a clean concede/
+  don't-concede structure), then **The Critics** (which only fully lands once a student has seen the
+  paradigm defended at length).
+- **Then, and only with BAM's sign-off, the three high-public-risk courses.** Among them,
+  **Scholarship vs. Pop-Myth before The Kemet Debate**, because the pseudoscience-detection skill is the
+  cleaner build and inoculates the student against the pop version *before* the hardest course asks them
+  to weigh contested real scholarship. **The Kemet Debate is the capstone** — it should be attempted
+  last, when the method is proven and the framing has been signed off, because it is the one most likely
+  to be misread as a verdict. **Afrocentric Education** is last of all, or deferred indefinitely,
+  because its entanglement with present-day politics is the hardest editorial call in the set.
+
+**Track sequencing for the learner** is different from the build order. As a learning path:
+**Afrocentricity** (the anchor and the six moves) → any deep-dive courses in any order → **The Kemet
+Debate last**, because "the hardest contested question, weighed without a verdict" is the right final
+test before a student goes and evaluates a paradigm of their own.
+
+---
+
+## What BAM would need to build the sign-off courses responsibly
+
+1. **An editorial decision on the three high-public-risk courses' *scope and framing*** — not their
+   sourcing (all are sourceable), but how far each goes, whether it ships published or gated, and how
+   the most inflammatory move in each is weighted. The anchor already models the discipline; these
+   courses raise the stakes from one section to a whole course.
+2. **A naming policy for the pop-myth course** — name individuals as purveyors of specific claims, or
+   critique the claims without naming living people? This is a legal-comfort and tone decision, not a
+   research one.
+3. **A verification pass for the curriculum course** — every claim about the Portland Baseline Essays,
+   the New York task force, and the 1990s multiculturalism debates sourced to a primary document and
+   dated, because the retellings are polarized.
+4. **Nothing else.** The three SAFE courses need no permissions, no reviewer, and no sign-off — only
+   authoring time. That is the argument for starting there.
+
+---
+
+## Cross-links
+
+- Anchor course: \`scripts/data/afrocentricity-course.ts\` (branch \`content/afrocentricity\`).
+- Registration: \`scripts/seed-courses.ts\` (import + Culture & History entry) — verified.
+- Category: **Culture & History** (the anchor ships there). If the track grows past ~4 courses, consider
+  promoting it to its own learning path within Culture & History.
+- Source note: \`plans/future-courses/he-did-the-work/Molefi-Kete-Asante.md\` (Asante bio — the anchor is
+  its home; move to \`completed/\` once the anchor ships).
+- Model for this proposal: \`plans/future-courses/workers-rights-track-proposal.md\` (the built-anchor +
+  waves + safe/needs-care structure this file mirrors).`,
+    provenance: "plans/future-courses/afrocentricity-track-proposal.md",
+  },
+  {
     key: "civics-more-proposal",
     title: "More civics courses — proposal (topic choice is BAM's to redirect)",
     summary: "Six high-value topics that fill gaps in the existing civics catalog (civics-101, us-constitution,",
