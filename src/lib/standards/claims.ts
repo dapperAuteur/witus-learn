@@ -848,6 +848,57 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Texas Civics, Lesson 7 · Get involved where you live in Texas"],
   },
 
+  // ── State civics: Florida (state-civics-fl was written FROM Florida's own sources) ──
+  // NOTE: Florida's high-school civics anchor is the United States Government course, which uses
+  // the SS.912.CG (Civics & Government) benchmarks. Like Texas's, they are overwhelmingly about
+  // the FEDERAL system; three name state and local government explicitly — CG.3.15 (how citizens
+  // are affected by local, state, and national governments), CG.3.10 (levels and responsibilities
+  // of state and federal courts), and CG.2.9 (elections at the state and national levels) — and
+  // that is where the Florida flagship is mapped, as partial. Florida's dedicated state-and-local
+  // civics is concentrated in Grade 7 Civics (SS.7.CG, middle school), not fetched this pass;
+  // data/fl.ts publishes that in its notClaimed list.
+  {
+    id: "civics.fl-state-structure",
+    claim: "Teaches Florida's 1968-revision constitution and its many amendment paths (including the once-every-20-years Constitution Revision Commission that places proposals directly on the ballot, and the 60% supermajority added in 2006); its plural executive (a Governor plus a separately-elected Cabinet — Attorney General, Chief Financial Officer, and Commissioner of Agriculture); a 120-member House and a 40-member Senate; and how a bill becomes a Florida law in a 60-day session, with a two-thirds veto override.",
+    courseSlugs: ["state-civics-fl"],
+    lessons: [
+      "Florida Civics, Lesson 1 · Florida's constitution: the 1968 rewrite and its many amendment paths",
+      "Florida Civics, Lesson 2 · The Constitution Revision Commission: Florida's once-in-20-years wildcard",
+      "Florida Civics, Lesson 3 · The three branches, and Florida's plural executive (Governor + Cabinet)",
+      "Florida Civics, Lesson 5 · How a bill becomes a Florida law",
+    ],
+  },
+  {
+    id: "civics.fl-courts",
+    claim: "Teaches Florida's split judicial selection: merit selection plus yes/no retention votes for the Supreme Court and District Courts of Appeal, and nonpartisan contested elections for circuit and county (trial) judges.",
+    courseSlugs: ["state-civics-fl"],
+    lessons: ["Florida Civics, Lesson 4 · Florida's courts: merit selection + retention for the top courts"],
+  },
+  {
+    id: "civics.fl-local-government",
+    claim: "Teaches Florida local government as Florida's: 67 counties split into charter (broad home rule) and non-charter counties, municipalities (city/town/village), and no townships.",
+    courseSlugs: ["state-civics-fl"],
+    lessons: [
+      "Florida Civics, Lesson 6 · Local government in Florida: 67 counties, charter vs. non-charter, and NO townships",
+      "Florida Civics, Lesson 9 · Get involved where you live in Florida",
+    ],
+  },
+  {
+    id: "civics.fl-elections",
+    claim: "Teaches Florida's election specifics: closed primaries (with the universal-primary exception), voter ID, vote-by-mail rules tightened by SB 90 (2021) and SB 524 (2022), a 29-day registration deadline, and the citizen initiative (about 8% of the last presidential vote spread across half the congressional districts, Florida Supreme Court review, then 60% at the polls).",
+    courseSlugs: ["state-civics-fl"],
+    lessons: [
+      "Florida Civics, Lesson 7 · Elections in Florida: closed primaries, voter ID, and recently tightened mail voting",
+      "Florida Civics, Lesson 8 · The citizen initiative: putting an amendment on the ballot yourself",
+    ],
+  },
+  {
+    id: "civics.fl-get-involved",
+    claim: "Teaches getting involved where you live, Florida edition — the Legislature's 60-day session, the ballot (initiatives and amendments), and county and municipal government.",
+    courseSlugs: ["state-civics-fl"],
+    lessons: ["Florida Civics, Lesson 9 · Get involved where you live in Florida"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
