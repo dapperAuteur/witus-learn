@@ -105,6 +105,7 @@ import { LABOR_NORDICS_COURSE } from "./data/labor-nordics-course";
 import { LABOR_POLAND_COURSE } from "./data/labor-poland-course";
 import { LABOR_INDIA_COURSE } from "./data/labor-india-course";
 import { LABOR_SOUTH_KOREA_COURSE } from "./data/labor-south-korea-course";
+import { LABOR_BRAZIL_COURSE } from "./data/labor-brazil-course";
 import { AFRICA_BEFORE_COLONIZATION_COURSE } from "./data/africa-before-colonization-course";
 import { PRECOLUMBIAN_MESOAMERICA_COURSE } from "./data/precolumbian-mesoamerica-course";
 import { TRAVEL_PASSPORT_COURSE } from "./data/travel-passport-course";
@@ -732,6 +733,17 @@ async function main() {
     // 14.8% (2018 OECD/AIAS). 6 sections · 15 teaching lessons · 6 quizzes (15-question banks).
     // NO migration — pnpm seed:courses.
     { slug: "labor-south-korea", course: LABOR_SOUTH_KOREA_COURSE, category: "Culture & History" },
+    // Brazil: State-Chartered Unions, a Union-Made President, and the 2017 Rupture — Wave 2 of the
+    // workers'-rights country track (plans/future-courses/workers-rights-track-proposal.md), hanging
+    // off the anchor (history-of-unions). Corporatism written into LAW: the 1943 CLT's three locks
+    // (unicidade, ministry charter, compulsory tax), the dictatorship using the machine, the ABC
+    // strikes capturing it from within, 1988 keeping two locks (why C87 is still unratifiable), and
+    // the controlled experiment: Lei 13.467/2017 switched the tax off → >90% revenue collapse taught
+    // with figures (two official-data series, scopes flagged). Lula taught NEUTRAL AND DATED — the
+    // conviction AND the jurisdictional annulment, adjudicating neither. Informality 39.0% (2024,
+    // IBGE), STF Tema 1291 taught as PENDING (pulled from docket 24 Jun 2026), trabalho análogo à
+    // escravidão + the lista suja (MTE/Repórter Brasil). 6 sections · no migration · seed:courses.
+    { slug: "labor-brazil", course: LABOR_BRAZIL_COURSE, category: "Culture & History" },
     // Africa Before Colonization — the ANCHOR of the precolonial-Africa track
     // (plans/future-courses/africa-precolonial-track-proposal.md; from BAM's world.md queue).
     // Opens with the verified Hegel (1837) and Trevor-Roper (1965) "no history" quotes as the

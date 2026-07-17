@@ -688,6 +688,30 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   enterprise bargaining with **no extension mechanism**; ILO **C87/C98 ratified only 20 Apr
   2021**. Cited to Statistics Korea, MOEL, OECD/AIAS, ILO/NORMLEX, MOFA and the Korean + legal
   press. Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+- 🔧 **Brazil: State-Chartered Unions, a Union-Made President, and the 2017 Rupture** (Culture &
+  History, \`content/labor-brazil\`) — **Wave 2** of the workers'-rights country track, hanging off
+  the anchor. **6 sections · 11 teaching lessons · 6 quizzes** (15-question banks, above the
+  10-question attempt cap so retries rotate; every question carries \`explanation\` +
+  \`sourceLessonSlug\`). **Corporatism written into the law**: the 1943 CLT's three locks
+  (**unicidade** — still in art. 8, II of the 1988 Constitution, which is why Brazil **still cannot
+  ratify ILO C87**; the ministry charter; the **compulsory union tax**), the dictatorship turning
+  the machine's keys (arrocho, pelego, DIEESE's 1977 audit of the faked inflation index), the **ABC
+  strikes 1978–80** capturing the official union from within (vs Solidarność going outside — the
+  matched pair), and 1988 breaking one lock while keeping two. Then the track's cleanest natural
+  experiment: **Lei 13.467/2017** made the tax voluntary → revenue collapse taught **with figures
+  and scopes flagged** (unions: R$2.0bn 2017 → R$88.2M Jan–Nov 2019, Secretaria do Trabalho via
+  Gazeta do Povo; whole structure: R$3bn 2017 → R$65.6M 2021, via Poder360; density 16.1% 2012 →
+  8.9% 2024, IBGE — falling **before** 2017, and 'cartorial' paper unions named, so both tidy
+  framings are refused). **Lula taught neutral + dated**: the 2017–18 conviction AND the 8 Mar 2021
+  jurisdictional annulment (neither an acquittal nor a conviction on the merits — the course
+  adjudicates neither), 50.89% runoff win 30 Oct 2022 (Agência Brasil). **Informality 39.0% (2024)
+  / 38.1% (2025, IBGE)** with the definition; **STF Tema 1291 (app drivers) taught as PENDING**
+  (pulled from the docket 24 Jun 2026 pending the new ILO platform-work instrument; PLP 12/2024's
+  exclusions named); the **outside-the-category rhyme** named across US misclassification / Mexican
+  protection contracts / Polish junk contracts. Honesty section: **trabalho análogo à escravidão**
+  (Penal Code art. 149 — conditions, not chains), the **GEFM** (68,000+ rescued since 1995; 2,772
+  in 2025, +38%, Repórter Brasil reporting MTE data) and the public **"lista suja"** (Oct 2025:
+  +159 employers). Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
 - 🔧 **Africa Before Colonization: The Documented Record** (Culture & History,
   \`content/africa-precolonial\`) — the **anchor of the precolonial-Africa track** (from BAM's
   \`world.md\` queue). **7 sections · 16 teaching lessons · 7 quizzes** (15-16-question banks, above
