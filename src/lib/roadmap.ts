@@ -712,6 +712,32 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   (Penal Code art. 149 — conditions, not chains), the **GEFM** (68,000+ rescued since 1995; 2,772
   in 2025, +38%, Repórter Brasil reporting MTE data) and the public **"lista suja"** (Oct 2025:
   +159 employers). Registered in \`seed-courses.ts\`; **no migration** — \`pnpm seed:courses\`.
+- 🔧 **Chile: A Labor System Designed to Be Weak** (Culture & History, \`content/labor-chile\`) —
+  **Wave 2** of the workers'-rights country track, and the learner's recommended **LAST** country
+  course. **6 sections · 14 teaching lessons · 6 quizzes** (15-question banks; every question
+  carries \`explanation\` + \`sourceLessonSlug\`) **· 1 exercise** ("name the design"). The one course
+  where a labor system is **DESIGNED, by a named author, with a stated goal**: the **1979 Plan
+  Laboral** (DL 2756 unions / DL 2758 bargaining; eight decree laws, one 1978 + seven July 1979;
+  José Piñera, appointed late 1978 amid the **AFL-CIO boycott threat**) — bargaining locked to the
+  **firm**, federations barred, pluralism-as-fragmentation, non-union \`grupos negociadores\`, and
+  the strike engineered not to paralyse (replacement + the **59-day deemed-resignation trapdoor**,
+  mirrored against *Mackay Radio* 1938). Before it: Iquique 1907 (toll taught **as contested** —
+  official ~126 vs the Cantata's 3,600), the CUT (1953), the **34% density peak (1973,
+  Fundación Sol)**; the destruction told from **Rettig Commission findings** (3,000+ killed or
+  disappeared; CUT dissolved by **DL 12**, Sept 1973). The designers' case is **steelmanned in
+  Piñera's own published words, then measured**: density **~16% (2023)** ≈ OECD average, coverage
+  **~19.3% (2023)** among the OECD's lowest (avg ~33.5%) — the **~3-point coverage–density gap as
+  the firm-level fingerprint** (OECD/AIAS, in OECD 2025). Democracy keeps the design: 1990–91
+  (Ley 19.069 — trapdoor out, replacement kept) → **Ley 20.940** (in force 1 Apr 2017 — replacement
+  banned, \`huelga efectiva\`; **titularidad struck by the TC, Rol 3016-16**; level untouched).
+  **Subcontratación** (Ley 20.123, 2007; the 2007 CTC/Codelco 37-day strike → Acuerdo Marco) named
+  as Chile's **put-them-outside move** (rhymes: US misclassification, Mexican protection contracts,
+  Polish junk contracts). Set **against the Nordics course**: same statutory silence on sectoral
+  bargaining, **opposite cause** — the referee's silence vs the wall's. 2019 estallido + **both
+  constitutional rejections dated, outcomes only** (4 Sep 2022: 61.86% Rechazo; 17 Dec 2023: 55.76%
+  En contra; Servel). Cited to OECD/AIAS, BCN/LeyChile, Dirección del Trabajo, Memoria Chilena,
+  Servel, Fundación Sol, Álvarez (2012) and Piñera (1990). Registered in \`seed-courses.ts\`;
+  **no migration** — \`pnpm seed:courses\`.
 - 🔧 **Africa Before Colonization: The Documented Record** (Culture & History,
   \`content/africa-precolonial\`) — the **anchor of the precolonial-Africa track** (from BAM's
   \`world.md\` queue). **7 sections · 16 teaching lessons · 7 quizzes** (15-16-question banks, above
