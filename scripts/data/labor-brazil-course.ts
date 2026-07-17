@@ -1175,5 +1175,297 @@ Resist the tidy story in both directions.
         ],
       },
     },
+
+    // ───────── SECTION 5 · OUTSIDE THE DOOR: INFORMALITY, THE APPS, AND SLAVERY-LIKE LABOR ─────────
+    {
+      slug: "brazil-informality-apps",
+      section: "Section 5 · Outside the door: informality, the apps, and the rhyme",
+      title: "13 · Four in ten without the signed card — and the drivers the Court hasn't answered",
+      recallContent: [
+        {
+          prompt: "State the two revenue series for the post-2017 collapse, with scopes.",
+          answer: "Unions only (Secretaria do Trabalho data via Gazeta do Povo, 2020): R$2.0bn (2017) → R$282.9M (2018) → R$88.2M (Jan–Nov 2019). Whole structure — unions + federations + confederations + centrais (via Poder360, 2023): R$3bn (2017) → R$65.6M (2021). Different scopes, same shape: >90% gone.",
+        },
+        {
+          prompt: "Why does the course refuse both tidy framings of the collapse?",
+          answer: "Density was falling before 2017 (16.1% in 2012 → 9.2% in 2022, IBGE) and the tax propped up paper 'cartorial' unions — so 'the reform killed healthy unions' overclaims; but real unions also lost most of their budgets in a year — so 'it only killed fake unions' overclaims too.",
+        },
+      ],
+      body: `Everything this course has taught so far — the chartered union, the category, the tax, the labor courts, the reform — applies to workers **inside** the CLT's door: the ones with a **carteira assinada**, the signed work card from Lesson 1. This lesson counts the people outside it, because they are not an edge case. They are around **four workers in every ten**.
+
+## Informality, measured
+
+Per IBGE's continuous national household survey (PNAD Contínua), the **informality rate** among employed Brazilians was **39.0% in 2024**, easing to **38.1% in 2025** (IBGE, 2025, 2026). Know what the statistic contains, because "informal" is a defined term, not a vibe — IBGE counts, principally: employees and domestic workers **without a signed carteira**, self-employed workers and employers **without business registration (CNPJ)**, and unpaid family workers (IBGE, 2025).
+
+Now walk the consequences through the machinery you already understand. No signed card means: no CLT floor of rights as an employee; **no occupational category**, so no chartered union is *yours* (unicidade assigns you by category — no category, no assignment); much weaker access in practice to the Justiça do Trabalho, whose docket is built on the employment relationship. The corporatist system does not merely *underserve* the informal four-in-ten. **Its basic unit of membership — the category — is defined so that they are not in it.** In 1943 the CLT drew a door, and eighty years later roughly 40% of the country's workers stand on the wrong side of it.
+
+## The apps: the newest way to stand outside
+
+The 2020s version of the question is a person driving for a ride-hailing app. Employee (CLT, category, union, labor courts) — or autonomous contractor (none of the above)? Brazil's answer, as of this course's writing, is: **pending, at the highest level.**
+
+- **In the labor courts**, app-driver cases produced years of conflicting rulings — some panels finding employment, others autonomy.
+- **At the Supreme Court**, the question became **Tema 1291** — a *repercussão geral* case, meaning the STF's eventual thesis will bind every court in the country on the employment status of app drivers.
+- **On 24 June 2026**, the case was **removed from the docket** — pulled from the judgment calendar — pending analysis of the **new ILO instrument on platform work** (STF, 2026). As of **July 2026**, no thesis has been fixed.
+- **In Congress**, the executive's bill **PLP 12/2024** would regulate app **drivers** as a new category of "autonomous worker" with an earnings floor and social-security inclusion — while **excluding delivery couriers**, and settling nothing about employment status generally. As of July 2026 it, too, is **pending** (Câmara dos Deputados, 2024).
+
+**This course teaches pending as pending.** It will not predict the STF, and neither should anything you read — a paragraph claiming to know how Tema 1291 comes out is telling you about its author, not about Brazilian law. What you *can* know now is the shape of the stakes: a binding thesis either walks millions of platform workers through the CLT's door, or fixes them permanently outside it, or — like PLP 12/2024 — builds them a separate, smaller door.
+
+## Name the rhyme — you have seen this move in every country in the track
+
+The mechanisms differ; the move is identical: **put the worker outside the category the protections attach to.**
+
+| Country | The outside-the-door move |
+| --- | --- |
+| **United States** (anchor) | **Misclassification** — call the worker an independent contractor and the NLRA, minimum wage, and overtime never attach. |
+| **Mexico** (labor-mexico) | The **protection contract** — the worker is nominally *inside* everything, but the union at the table is the employer's, so the protections are hollow. |
+| **Poland** (labor-poland) | ***Umowy śmieciowe*** — "junk" civil-law contracts instead of employment contracts; labor law never attaches. |
+| **Brazil** | **Informality and app work** — no carteira assinada, no category: the corporatist system's own unit of membership excludes you. |
+
+Once you see the move, you cannot unsee it. The most important question about any labor-law system is not what it gives the workers inside — it is **who counts as inside**. That is the anchor's Question 2, and Brazil states it at national scale: the answer decides four in ten people.
+
+:::reveal What is STF Tema 1291, and what is its status as of July 2026? ||| It is the Supreme Court case — with repercussão geral, meaning the eventual thesis will bind all Brazilian courts — on whether app drivers are employees or autonomous contractors. On 24 June 2026 it was removed from the judgment docket pending analysis of the new ILO instrument on platform work, and no thesis has been fixed as of July 2026. The course teaches it as pending and refuses to predict; separately, PLP 12/2024 (a drivers-only regulation with an earnings floor, excluding delivery couriers) also remains pending in Congress.
+
+## Sources
+- Instituto Brasileiro de Geografia e Estatística. (2025, 2026). *PNAD Contínua* (informality rate: 39.0% in 2024; 38.1% in 2025; definition of informal employment). https://www.ibge.gov.br/
+- Supremo Tribunal Federal. (2026). *Tema 1291 da repercussão geral* (retirado de pauta em 24 de junho de 2026). https://portal.stf.jus.br/
+- Câmara dos Deputados. (2024). *Projeto de Lei Complementar nº 12/2024*. https://www.camara.leg.br/`,
+    },
+    {
+      slug: "brazil-slave-labor-dirty-list",
+      section: "Section 5 · Outside the door: informality, the apps, and the rhyme",
+      title: "14 · The hardest lesson: trabalho análogo à escravidão, and the list that names names",
+      recallContent: [
+        {
+          prompt: "What is Brazil's informality rate, per IBGE, and what does the statistic contain?",
+          answer: "39.0% of employed workers in 2024, easing to 38.1% in 2025 (IBGE PNAD Contínua). It counts employees and domestic workers without a signed carteira, self-employed and employers without CNPJ registration, and unpaid family workers.",
+        },
+        {
+          prompt: "Name the outside-the-door rhyme across the track's four countries.",
+          answer: "US: misclassification as independent contractors. Mexico: the protection contract (inside on paper, hollow in fact). Poland: junk civil-law contracts (umowy śmieciowe). Brazil: informality and app work — no carteira, no category. Same move everywhere: put the worker outside the category the protections attach to.",
+        },
+      ],
+      body: `A workers'-rights course that stops at unions has not described the country. At the far edge of Brazil's labor market — past the informal four-in-ten, past the app drivers awaiting their ruling — is a reality Brazilian law names with unusual directness: ***trabalho análogo à escravidão***, work analogous to slavery. This lesson teaches what the law says, what the state does about it, and the numbers, sourced.
+
+## What the law says: conditions, not chains
+
+Article 149 of Brazil's Penal Code — sharpened by a 2003 amendment — criminalizes reducing someone to a *condição análoga à de escravo*, and defines it by **four conditions**: **forced labor**; ***jornada exaustiva*** (a workday so exhausting it endangers health); **degrading conditions**; and **restriction of movement by debt** — debt bondage (Código Penal, art. 149). Read the definition again, because its breadth is the point: Brazilian law does **not** require chains, locks, or an owner. A worker recruited to a remote ranch, housed without sanitation or drinkable water, charged for his own tools and food against wages he never quite receives, is — in the statute's terms — in a condition analogous to slavery, even if the gate stands open. The law reaches **conditions**, not just captivity.
+
+## What the state does: the mobile teams and the list
+
+Two institutions, both internationally distinctive:
+
+**The GEFM** — *Grupo Especial de Fiscalização Móvel*, the mobile inspection group created in **1995**: task forces of labor inspectors, prosecutors, and police that travel to remote worksites — ranches, charcoal camps, plantations, and increasingly urban sites — and **rescue** workers found in art. 149 conditions. Since 1995, the mobile teams have rescued **more than 68,000 workers** (Ministério do Trabalho e Emprego [MTE] data). In **2025 alone, 2,772 workers were rescued — up 38% from 2024** (Repórter Brasil, 2026, reporting MTE data). Read that rising number with the source-discipline this course has drilled: **more rescues can mean more slavery, more enforcement, or both** — the figure counts what inspectors *found*, not all that exists.
+
+**The "lista suja"** — the **dirty list**, a public federal register (created in 2004) of employers caught subjecting workers to slavery-like conditions after their cases conclude administratively. It is publicly searchable, updated periodically, and consequential: being listed carries reputational cost and, in practice, restrictions on credit from public banks and on sales to companies that screen their supply chains against it. The **October 2025 update added 159 employers — 101 individuals and 58 companies — tied to 1,530 workers rescued in cases from 2020–2025** (MTE data, as reported by Repórter Brasil, 2025). The ILO has repeatedly pointed to Brazil's mobile-inspection-plus-public-list system as an international reference in fighting forced labor (ILO, n.d.) — which is worth stating precisely: the *system* is the reference; the persistence of the problem it fights is the reason the system still rescues thousands a year.
+
+## Where, and who
+
+The historical core is **rural**: cattle ranching, charcoal for pig iron, coffee, sugarcane — concentrated along the **Amazon deforestation frontier**, where land is cleared far from any inspector and workers are recruited from poor regions with debts attached before they arrive. Recent years' case files also include **urban** work: construction, textile workshops, and domestic labor. The victims are overwhelmingly informal, often internal migrants — the same people Lesson 13 counted outside the CLT's door, at the door-less extreme.
+
+## Why this lesson is in this course
+
+Place it in the architecture. The anchor's Question 2 — *who is excluded?* — has run through this whole section: the informal four-in-ten (excluded from the category system), the app drivers (exclusion pending adjudication), and here, workers excluded from something far more basic than a union: wages actually paid, exit actually possible. And notice what the state's two best tools have in common with the unions' 1977 weapon (Section 2): **the audit and the record.** DIEESE beat a dictatorship's wage formula with verified numbers; the GEFM and the lista suja fight slavery-like labor with inspections and a public list of names. In Brazil's labor history, the ledger keeps turning out to be mightier than the manifesto.
+
+:::reveal What are the four conditions in Penal Code art. 149, and why does 'the gate stands open' not defeat the charge? ||| Forced labor; jornada exaustiva (a health-endangering, exhausting workday); degrading conditions; and restriction of movement through debt bondage. Any of these can constitute trabalho análogo à escravidão — the 2003 amendment defined the crime by CONDITIONS, not captivity, so no chains, locks, or physical imprisonment are required. A worker on a remote ranch, unpaid behind manufactured debts, in degrading conditions, is within the statute even if free in principle to walk out the open gate.
+
+## Sources
+- Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), art. 149. Presidência da República. https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm
+- Repórter Brasil. (2026, January). [Report of MTE data: 2,772 workers rescued in 2025, +38% vs 2024; 68,000+ rescued since the GEFM's creation in 1995.] https://reporterbrasil.org.br/ [An investigative-journalism NGO focused on labor abuses — an advocacy source, used here for its reporting of official MTE figures.]
+- Repórter Brasil. (2025, October). [Report of the lista suja update: 159 employers added — 101 individuals, 58 companies; 1,530 workers rescued in the underlying 2020–2025 cases.] https://reporterbrasil.org.br/
+- Ministério do Trabalho e Emprego. (n.d.). *Cadastro de Empregadores que tenham submetido trabalhadores a condições análogas à de escravo* ("lista suja"). https://www.gov.br/trabalho-e-emprego/
+- International Labour Organization. (n.d.). *Forced labour in Brazil* (recognition of the mobile inspection units and public list as reference practices). https://www.ilo.org/`,
+    },
+    {
+      slug: "brazil-section-5-quiz",
+      section: "Section 5 · Outside the door: informality, the apps, and the rhyme",
+      title: "15 · Check yourself: outside the door",
+      quiz: {
+        passingScore: 70,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What was Brazil's informality rate in 2024 and 2025, per IBGE's PNAD Contínua?",
+            options: [
+              "39.0% (2024), easing to 38.1% (2025) — around four employed workers in ten",
+              "10% in both years",
+              "75% (2024), rising to 80% (2025)",
+              "IBGE does not measure informality",
+            ],
+            correctIndex: 0,
+            explanation: "Not an edge case: roughly 40% of the employed stand outside the CLT's door.",
+            sourceLessonSlug: "brazil-informality-apps",
+          },
+          {
+            prompt: "What does IBGE's informality statistic principally count?",
+            options: [
+              "Employees and domestic workers without a signed carteira, self-employed and employers without CNPJ registration, and unpaid family workers",
+              "Anyone earning below the minimum wage",
+              "Only street vendors",
+              "All workers outside São Paulo",
+            ],
+            correctIndex: 0,
+            explanation: "'Informal' is a defined term, not a vibe — know what is inside a statistic before you use it.",
+            sourceLessonSlug: "brazil-informality-apps",
+          },
+          {
+            prompt: "Why does informality exclude a worker from Brazil's union system specifically?",
+            options: [
+              "Unicidade assigns workers to unions by occupational category — without formal employment there is no category, so no chartered union is theirs",
+              "Informal workers are banned from joining any association",
+              "Union dues are too expensive for informal workers",
+              "It doesn't — informal workers are automatically union members",
+            ],
+            correctIndex: 0,
+            explanation: "The corporatist system's basic unit of membership — the category — is defined so that the informal four-in-ten are not in it.",
+            sourceLessonSlug: "brazil-informality-apps",
+          },
+          {
+            prompt: "What is STF Tema 1291?",
+            options: [
+              "The Supreme Court case, with repercussão geral, on whether app drivers are employees or autonomous contractors — its eventual thesis will bind all Brazilian courts",
+              "A law that made all app drivers employees in 2024",
+              "The case that abolished the union tax",
+              "A tax dispute about app companies' revenue",
+            ],
+            correctIndex: 0,
+            explanation: "Years of conflicting labor-court rulings pushed the question to the top. Repercussão geral means the answer, once fixed, binds every court.",
+            sourceLessonSlug: "brazil-informality-apps",
+          },
+          {
+            prompt: "What happened to Tema 1291 on 24 June 2026?",
+            options: [
+              "It was removed from the judgment docket pending analysis of the new ILO instrument on platform work — no thesis has been fixed as of July 2026",
+              "The STF ruled that all app drivers are employees",
+              "The STF ruled that no app driver can ever be an employee",
+              "The case was dismissed permanently",
+            ],
+            correctIndex: 0,
+            explanation: "The course teaches pending as pending, and refuses to predict the outcome — as should anything you read.",
+            sourceLessonSlug: "brazil-informality-apps",
+          },
+          {
+            prompt: "What is PLP 12/2024, and whom does it leave out?",
+            options: [
+              "A pending bill regulating app DRIVERS as autonomous workers with an earnings floor and social security — it excludes delivery couriers and settles nothing about employment status generally",
+              "A law granting all platform workers CLT employment",
+              "A ban on ride-hailing apps",
+              "A constitutional amendment on unicidade",
+            ],
+            correctIndex: 0,
+            explanation: "A separate, smaller door — proposed, not yet built: still pending in Congress as of July 2026.",
+            sourceLessonSlug: "brazil-informality-apps",
+          },
+          {
+            prompt: "Name the outside-the-door move in each of the track's four countries.",
+            options: [
+              "US: misclassification; Mexico: the protection contract; Poland: junk civil-law contracts; Brazil: informality and app work — no carteira, no category",
+              "All four countries use identical misclassification statutes",
+              "Only Brazil has workers outside labor-law protections",
+              "US: protection contracts; Brazil: junk contracts; Poland: misclassification; Mexico: informality",
+            ],
+            correctIndex: 0,
+            explanation: "The mechanisms differ; the move is identical: put the worker outside the category the protections attach to.",
+            sourceLessonSlug: "brazil-informality-apps",
+          },
+          {
+            prompt: "Per this course, what is the most important question about any labor-law system?",
+            options: [
+              "Not what it gives the workers inside, but who counts as inside",
+              "How high its minimum wage is",
+              "How many unions it has",
+              "Whether it has labor courts",
+            ],
+            correctIndex: 0,
+            explanation: "The anchor's Question 2, stated at national scale: in Brazil the answer decides four in ten people.",
+            sourceLessonSlug: "brazil-informality-apps",
+          },
+          {
+            prompt: "How does Penal Code art. 149 define trabalho análogo à escravidão?",
+            options: [
+              "By four conditions — forced labor, jornada exaustiva, degrading conditions, and debt-bondage restriction of movement — with no requirement of chains or captivity",
+              "Only as physically chaining a worker",
+              "Only as non-payment of the minimum wage",
+              "Only as employing workers without a carteira",
+            ],
+            correctIndex: 0,
+            explanation: "The 2003 amendment defined the crime by CONDITIONS, not captivity — a worker can be within the statute even if the gate stands open.",
+            sourceLessonSlug: "brazil-slave-labor-dirty-list",
+          },
+          {
+            prompt: "What is the GEFM?",
+            options: [
+              "The mobile inspection group created in 1995 — task forces of labor inspectors, prosecutors, and police that travel to remote worksites and rescue workers from art. 149 conditions",
+              "A union federation for rural workers",
+              "The STF panel that hears labor cases",
+              "A private certification agency",
+            ],
+            correctIndex: 0,
+            explanation: "Since 1995 the mobile teams have rescued more than 68,000 workers (MTE data).",
+            sourceLessonSlug: "brazil-slave-labor-dirty-list",
+          },
+          {
+            prompt: "How many workers were rescued in 2025, and how should the rising number be read?",
+            options: [
+              "2,772 — up 38% from 2024 (Repórter Brasil, reporting MTE data); with care: more rescues can mean more slavery, more enforcement, or both",
+              "27 — proving the problem is solved",
+              "One million — counted by satellite",
+              "The government stopped counting in 2020",
+            ],
+            correctIndex: 0,
+            explanation: "The figure counts what inspectors FOUND, not all that exists — the same source-discipline the course applies everywhere.",
+            sourceLessonSlug: "brazil-slave-labor-dirty-list",
+          },
+          {
+            prompt: "What is the 'lista suja'?",
+            options: [
+              "The public federal register (created 2004) of employers caught subjecting workers to slavery-like conditions — searchable, periodically updated, with reputational and credit consequences",
+              "A secret police file on union leaders",
+              "The list of unions that lost their charters",
+              "A ranking of the best employers in Brazil",
+            ],
+            correctIndex: 0,
+            explanation: "Naming names, publicly — the October 2025 update added 159 employers (101 individuals, 58 companies) tied to 1,530 workers rescued in 2020–2025 cases.",
+            sourceLessonSlug: "brazil-slave-labor-dirty-list",
+          },
+          {
+            prompt: "Where has slavery-like labor historically concentrated in Brazil?",
+            options: [
+              "Rural frontiers — cattle, charcoal, coffee, sugarcane, especially along the Amazon deforestation frontier — with recent cases also in urban construction, textiles, and domestic work",
+              "Only in government offices",
+              "Only in the auto plants of the ABC",
+              "Exclusively in fishing",
+            ],
+            correctIndex: 0,
+            explanation: "Land cleared far from any inspector, workers recruited from poor regions with debts attached before they arrive.",
+            sourceLessonSlug: "brazil-slave-labor-dirty-list",
+          },
+          {
+            prompt: "What does the ILO's recognition of Brazil's system mean — precisely?",
+            options: [
+              "The mobile-inspection-plus-public-list SYSTEM is cited as an international reference; the persistence of the problem is exactly why it still rescues thousands a year",
+              "That slavery-like labor no longer exists in Brazil",
+              "That Brazil has ratified ILO Convention 87",
+              "That the ILO runs the inspections itself",
+            ],
+            correctIndex: 0,
+            explanation: "State recognition precisely: the tool is the reference, not the situation it fights.",
+            sourceLessonSlug: "brazil-slave-labor-dirty-list",
+          },
+          {
+            prompt: "What do the GEFM/lista suja share with DIEESE's 1977 weapon against the wage squeeze?",
+            options: [
+              "The audit and the record — verified numbers and a public list, not manifestos: in Brazil's labor history the ledger keeps beating the manifesto",
+              "Both were created by the military regime",
+              "Both are funded by the union tax",
+              "Nothing — they are unrelated",
+            ],
+            correctIndex: 0,
+            explanation: "DIEESE beat a dictatorship's formula with verified numbers; the GEFM and the dirty list fight slavery-like labor with inspections and named names.",
+            sourceLessonSlug: "brazil-slave-labor-dirty-list",
+          },
+        ],
+      },
+    },
   ],
 };
