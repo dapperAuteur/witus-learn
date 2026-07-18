@@ -1116,6 +1116,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches getting involved where you live, Georgia edition — because Georgia has no citizen initiative, persuading legislators is the key lever, alongside county commissions and city councils, the nonpartisan judicial races, and coming back to vote the runoff.",
     courseSlugs: ["state-civics-ga"],
     lessons: ["Georgia Civics, Lesson 8 · Get involved where you live in Georgia"],
+  },
   // ── State civics: Illinois (state-civics-il was written FROM Illinois's own sources) ──
   // NOTE: Illinois's high-school Social Science Standards (2017) are DISCIPLINARY-CONCEPT
   // standards (SS.CV.1-10), not course benchmarks — they name "constitutions", "institutions",
@@ -1219,6 +1220,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches getting involved where you live, Michigan edition — registering and voting with the state's full menu of options, contacting your legislators while bills are in committee, showing up at local boards, using citizen initiative/referendum/recall petitions, applying to serve on boards (including the redistricting commission), and running for local office.",
     courseSlugs: ["state-civics-mi"],
     lessons: ["Michigan Civics, Lesson 8 · How to take part where you live"],
+  },
   // ── State civics: North Carolina (state-civics-nc was written FROM North Carolina's own sources) ──
   // NOTE: North Carolina's high-school civics anchor is the graduation-required "Founding Principles
   // of the United States of America and North Carolina: Civic Literacy" course (NCDPI 4318), whose
@@ -1332,6 +1334,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches getting involved where you live, Virginia edition — the short Richmond session, county boards of supervisors, city councils, and Dillon's-Rule advocacy at both the local and state levels.",
     courseSlugs: ["state-civics-va"],
     lessons: ["Virginia Civics, Lesson 7 · Elections, redistricting, and how to take part"],
+  },
   // ── State civics: Washington (state-civics-wa was written FROM Washington's own sources) ──
   // Unlike California or Arkansas, Washington's HIGH-SCHOOL Civics standard C2.11-12.2 explicitly
   // names "Washington state" constitutions, so the flagship's Washington-structure lessons have a

@@ -69,26 +69,26 @@ export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 // isolation suite enforces it. NOTE for the merge: the parallel feat/standards-matrix branch may
 // also edit this line; resolve any conflict to a value that names NEITHER a mapped state (currently
 // AR AZ CA DC FL GA IN NY OH PA TX) NOR a state another in-flight branch is actively mapping.
-export const NEXT_UP: StateCode[] = ["MI", "IL"];
+export const NEXT_UP: StateCode[] = ["MA", "TN"];
 // IL/MI are mapped here (task 131); OH/GA are mapped on a parallel branch. NEXT_UP must never name
 // a state that mappedStates() already contains — the isolation suite enforces it — so we advance
 // past all of {AR,AZ,CA,DC,FL,IN,NY,PA,TX,OH,GA,IL,MI}. NOTE for the merge: the parallel OH/GA and
 // matrix branches also edit this line; resolve the conflict to a value that names NO already-mapped
 // state (NC/VA below are safe against every state mapped across the in-flight branches).
-export const NEXT_UP: StateCode[] = ["NC", "VA"];
+
 // This branch (feat/standards-nc-va) maps North Carolina and Virginia, so the queue advances past
 // them. NEXT_UP must never name a state that mappedStates() already contains — the isolation suite
 // enforces it. NOTE for the merge: several parallel standards branches also edit this one line
 // (OH/GA, IL/MI, etc.); resolve the conflict to a value that names two states NOT in
 // {AR,AZ,CA,DC,FL,IN,NY,PA,TX,OH,GA,IL,MI,NC,VA} — WA/NJ below, or BAM's preferred next two.
-export const NEXT_UP: StateCode[] = ["WA", "NJ"];
+
 // WA/NJ are mapped on this branch (feat/standards-wa-nj); the queue advances past them. NEXT_UP must
 // never name a state that mappedStates() already contains — the isolation suite enforces it. This
 // value is deliberately chosen to sit outside EVERY state mapped or in-flight across the parallel
 // branches ({AR,AZ,CA,DC,FL,IN,NY,PA,TX,OH,GA,IL,MI,NC,VA,WA,NJ}), so it stays valid after the
 // bundle merge. NOTE for the merge: sibling branches also edit this line; resolve the conflict to a
 // value containing none of those states (MA/TN below, or BAM's preferred next two).
-export const NEXT_UP: StateCode[] = ["MA", "TN"];
+
 
 export function jurisdictionName(code: StateCode): string {
   return US_JURISDICTIONS.find((j) => j.code === code)?.name ?? code;
