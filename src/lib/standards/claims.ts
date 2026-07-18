@@ -1047,6 +1047,63 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Illinois Civics, Lesson 6 · Elections and how to take part"],
   },
 
+  // ── State civics: Michigan (state-civics-mi was written FROM Michigan's own sources) ──
+  // NOTE: Michigan's 2019 Social Studies Standards DO include a High School Civics course with a
+  // dedicated "Structure and Functions of State, Local, and Tribal Governments" cluster (C3.2),
+  // so unlike Illinois's abstract concept standards, the Michigan flagship's Michigan-structure
+  // lessons have a genuine home: C3.2.3 (how state/local governments are organized) and C3.2.6
+  // (referendums, initiatives, and recall) are near-1:1. See data/mi.ts.
+  {
+    id: "civics.mi-state-structure",
+    claim: "Teaches Michigan's Constitution of 1963 (effective January 1, 1964); a Legislature of 38 senators (4-year terms) and 110 representatives (2-year terms) under the 12-year combined term limit of Proposal 1 of 2022; an executive of a Governor and joint-ticket Lieutenant Governor, a separately elected Secretary of State and Attorney General, and a Governor-appointed Treasurer; how a bill becomes a Michigan law; and the line-item veto with a two-thirds override.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: [
+      "Michigan Civics, Lesson 1 · Michigan's Constitution of 1963 and its direct democracy",
+      "Michigan Civics, Lesson 2 · The three branches of Michigan government",
+      "Michigan Civics, Lesson 4 · How a bill becomes a Michigan law",
+    ],
+  },
+  {
+    id: "civics.mi-courts",
+    claim: "Teaches Michigan's distinctive judicial selection: a seven-justice Supreme Court elected to 8-year terms on a NONPARTISAN ballot, yet nominated by the political parties at their conventions — a 'partisan nomination, nonpartisan election' hybrid — with nonpartisan-ballot Court of Appeals and trial judges and gubernatorial appointment to fill mid-term vacancies.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: ["Michigan Civics, Lesson 3 · How Michigan chooses its judges (the nonpartisan-ballot quirk)"],
+  },
+  {
+    id: "civics.mi-redistricting",
+    claim: "Teaches Michigan's Independent Citizens Redistricting Commission — created by Proposal 2 of 2018 to draw the state House, state Senate, and U.S. Congressional maps — a body of 13 randomly selected citizens (four Democratic, four Republican, five affiliated with neither) that excludes politicians and lobbyists and works in public, a national first that moved map-drawing out of the Legislature.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: ["Michigan Civics, Lesson 5 · Redistricting: Michigan's Independent Citizens Redistricting Commission"],
+  },
+  {
+    id: "civics.mi-direct-democracy",
+    claim: "Teaches Michigan's strong direct democracy — the constitutional initiative (including the quirk that a citizen 'initiated law' goes to the Legislature first, which may enact it as written before it would reach the ballot), the referendum to reject a statute, and the recall of most elected officials — as tools that make the voters themselves a lawmaking body.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: [
+      "Michigan Civics, Lesson 1 · Michigan's Constitution of 1963 and its direct democracy",
+      "Michigan Civics, Lesson 4 · How a bill becomes a Michigan law",
+      "Michigan Civics, Lesson 8 · How to take part where you live",
+    ],
+  },
+  {
+    id: "civics.mi-elections",
+    claim: "Teaches Michigan's voter-approved election access: no-reason absentee voting and automatic and same-day registration (Proposal 3 of 2018), and nine days of early in-person voting, state-funded absentee postage, secure drop boxes, and a photo-ID-or-affidavit rule (Proposal 2 of 2022), run by more than 1,500 local city and township clerks, with a standing flag to confirm current rules at michigan.gov/sos.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: ["Michigan Civics, Lesson 6 · Elections and voting in Michigan"],
+  },
+  {
+    id: "civics.mi-local-government",
+    claim: "Teaches Michigan local government as Michigan's: 83 counties run by an elected Board of Commissioners with separately elected sheriff, clerk, treasurer, prosecutor, and register of deeds; strong general-law and charter townships governing every area outside a city; home-rule cities under the Home Rule City Act of 1909; villages; and special and school districts.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: ["Michigan Civics, Lesson 7 · Local government: counties, cities, villages, and townships"],
+  },
+  {
+    id: "civics.mi-get-involved",
+    claim: "Teaches getting involved where you live, Michigan edition — registering and voting with the state's full menu of options, contacting your legislators while bills are in committee, showing up at local boards, using citizen initiative/referendum/recall petitions, applying to serve on boards (including the redistricting commission), and running for local office.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: ["Michigan Civics, Lesson 8 · How to take part where you live"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",

@@ -1122,6 +1122,30 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Illinois + Michigan mapped — states #10 and #11, both heavy inheriters** (\`feat/standards-il-mi\`) —
+  \`/academic-standards?state=IL\` and \`?state=MI\` flip from "not mapped yet" to real pages. Both
+  states adopted the shared multi-state frameworks, so we **INHERIT** rather than re-map: Illinois
+  adopted the Common Core for ELA (June 24, 2010) and the NGSS for science (Jan 2014, an NGSS lead
+  state) — both **verbatim, no aliases**; Michigan adopted the NGSS as the Michigan Science
+  Standards (Nov 10, 2015, **verbatim**) and the Common Core for ELA (2010). **Michigan is the
+  ALIAS case**: its ELA document reproduces the CCSS wording word-for-word but prints the strands
+  under the **bare codes** (\`RH.11-12.6\`, \`WHST.11-12.7\`) with no \`CCSS.ELA-Literacy\` namespace,
+  so each shared code is aliased to Michigan's printed form (compared against Michigan's own doc,
+  Wayback 2025-04-30, before aliasing). **Illinois: 32 standards (16 full, 16 partial) across 7
+  frameworks** — the bespoke work is the 2017 **Illinois Social Science Standards** (isbe.net),
+  which are disciplinary CONCEPTS not course benchmarks, so all five strands are mapped: Civics
+  (SS.CV), History (SS.H), Economics (SS.EC), Geography (SS.G), and Inquiry Skills (SS.IS);
+  \`state-civics-il\` is the 1:1 flagship (the 1970 Constitution, the plural executive with BOTH a
+  Comptroller and a Treasurer, the uniquely narrow Legislative-Article initiative and 1980 Cutback
+  Amendment, strong home rule). **Michigan: 22 standards (17 full, 5 partial) across 3 frameworks**
+  — the bespoke work is the 2019 **Michigan Social Studies Standards** High School Civics (C
+  strand), whose C3.2 cluster gives \`state-civics-mi\` a genuine home (C3.2.3 state/local structure,
+  C3.2.6 initiative/referendum/recall — the Independent Citizens Redistricting Commission is the
+  standard's own "case study"). Honesty published on the pages: Illinois's concept standards name
+  no state's structure (so the flagship maps to abstract institution/participation standards);
+  Michigan's era-based World/US History and Economics strands are **deferred** (their multi-column
+  PDF layout risks non-verbatim transcription — verbatim-or-nothing), and tribal governments are
+  not taught (C3.2.3 partial, C3.2.4 not claimed). \`NEXT_UP\` advances to **NC/VA**.
 - 🔧 **Cross-state standards explorer + route rename** (\`feat/standards-matrix\`). The per-state
   finder moved from \`/standards\` to **\`/academic-standards\`** (a 308 redirect keeps old links and
   shares working), and a companion **\`/academic-standards/matrix\`** now flattens **every
