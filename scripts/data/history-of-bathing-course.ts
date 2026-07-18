@@ -1890,5 +1890,359 @@ So honor the encounter honestly. The record does show Indigenous Americans docum
         ],
       },
     },
+
+    // ───────────── SECTION 8 · MYTHS ON TRIAL: WHAT THE EVIDENCE ACTUALLY SAYS ─────────────
+    {
+      slug: "bathing-myth-on-trial",
+      title: "22 · The myth on trial: 'medieval Europeans never bathed'",
+      section: "Section 8 · Myths on trial: what the evidence actually says",
+      body: `This is the lesson the whole course was built to reach. We are going to put the most famous myth in this subject in the dock and try it against the evidence you have gathered. The charge is the sentence you have heard a hundred times:
+
+**"Medieval Europeans never bathed, and had to be introduced to washing by cleaner civilizations."**
+
+Let us take it apart clause by clause, honestly, giving it every bit of truth it actually has and no more.
+
+**Clause 1: "never bathed." Verdict: false as stated, with a real fact buried inside.** Medieval Europe bathed. It had the *stews*, the common public bathhouses of Section 6, and people took tub baths at home. What is true is that later, in the early modern period of roughly the 1500s and 1600s, much of western and urban Europe pulled back from water bathing. But notice the two errors the myth makes with that real fact. It gets the **timing** wrong, dragging an early modern change back across the entire Middle Ages, and it gets the **completeness** wrong, turning a partial retreat, hardest on public water bathing, into a total absence of all washing (Ashenburg, 2007; Smith, 2007).
+
+**Clause 2: the cause was "ignorance." Verdict: false.** Early modern Europeans did not stop bathing in water because they were too stupid to know about it. They pulled back for **reasons that made sense inside their own world**: terror of epidemic disease, especially syphilis from the 1490s; a serious medical theory that warm water opened the pores to disease; a new ideal of cleanliness built on fresh linen rather than water; and the plain cost of fuel. Wrong theory, real reasoning. That is a very different thing from ignorance (Ashenburg, 2007; Smith, 2007; Brown, 2009).
+
+**Clause 3: "had to be introduced to washing by cleaner civilizations." Verdict: false, and this is the important one.** You cannot introduce someone to a thing they already have. Europe had its own bathhouses and its own tub baths. Contact with other traditions, the hammam during the Crusades, fine soaps along the trade routes, was real and mattered, but it was **influence on an already-bathing culture, not a first lesson in washing**. And soap itself, as Sections 2 and 3 showed, was never one civilization's gift to another; it was a long arc developed and traded across many cultures, with the medieval Islamic world doing the decisive hard-soap work (Smith, 2007; Ashenburg, 2007).
+
+**So where does the myth come from?** From two very human moves. First, later storytellers took a genuine, dated, partial event, the early modern retreat, and smeared it backward to color a thousand years they were not describing. Second, they took a "different standards meeting" story, which is what Section 7's encounters really are, and rewrote it as a satisfying "civilized versus dirty" morality tale. Both moves trade an accurate, complicated picture for a tidy, flattering, wrong one. Recognizing that trade is the single most useful skill this course can leave you with (Ashenburg, 2007).
+
+**The honest replacement sentence,** the one you should be able to say in your sleep: *Medieval Europeans did bathe; a partial retreat from public water bathing came later, in the early modern period, for specific reasons; and no one had to teach Europe to wash.*
+
+:::reveal Put the myth "medieval Europeans never bathed and had to be taught to wash" on trial. What is the accurate verdict? ||| It is a distortion. Medieval Europeans did bathe (the stews and home tub baths). A real retreat from public water bathing came later, in the early modern period (roughly the 1500s-1600s), and it was partial, not total, and driven by specific reasons (fear of syphilis and plague, the open-pores medical theory, the shift to clean linen, and fuel cost), not ignorance. No one "introduced" Europe to washing, because Europe already bathed; outside contact was influence, not a first lesson. The myth wrongly drags an early modern, partial change back over the whole Middle Ages and rewrites "different standards meeting" as "civilized versus dirty."
+
+## Sources
+- Ashenburg, K. (2007). *The dirt on clean: An unsanitized history*. North Point Press.
+- Brown, K. M. (2009). *Foul bodies: Cleanliness in early America*. Yale University Press.
+- Smith, V. (2007). *Clean: A history of personal hygiene and purity*. Oxford University Press.`,
+      recallContent: [
+        {
+          prompt: "In the Crusader Levant, was contact with the hammam an 'introduction to bathing' for Europeans? Explain.",
+          answer:
+            "No. Europe already had its own public bathhouses (the stews) and home tub baths, so it was not being introduced to bathing. Contact with the more elaborate hammam and with fine soaps was an influence on an already-bathing culture, not a first lesson in washing.",
+        },
+        {
+          prompt: "How do you honor the documented Columbian-exchange evidence without the 'clean natives civilized dirty Europe' fairy tale?",
+          answer:
+            "Attribute and hedge each outsider report, note that the timing (Spain mid-retreat in the 1500s) sharpened the contrast, and remember Ashenburg's point that every society assumes its own habits are natural, so mutual disgust reflects different standards meeting rather than a single universal ladder.",
+        },
+      ],
+    },
+    {
+      slug: "bathing-verdict",
+      title: "23 · The verdict: different traditions, one retreat and return",
+      section: "Section 8 · Myths on trial: what the evidence actually says",
+      body: `Step back and look at the whole map you have crossed.
+
+You met the Roman thermae, where a city organized its social life around the bath and got clean with oil and a scraper, no soap on the body. You met the Islamic world, where washing was written into daily prayer, the hammam inherited and adapted the Roman bath, and soapmakers turned oil and alkali into the first true hard body soap in Aleppo and Nablus. You stood at the Great Bath of Mohenjo-daro, a masterpiece of waterproof engineering whose exact purpose we must honestly leave as an inference, because its people's writing cannot be read. You saw Japan braid Shinto purity and Buddhist merit into the clean-water soak of the ofuro. You sweated in the Finnish sauna and the Mesoamerican temazcal, the same brilliant idea invented twice by peoples who never met. And you watched Europe bathe in its medieval stews, retreat from water in the early modern centuries for reasons that made sense to them, and then return.
+
+**The first verdict is about the past.** There was never one ladder of cleanliness with the clean at the top and the dirty at the bottom. There were many different, richly developed traditions, each sophisticated on its own terms and each defining "clean" in its own way, plus one specific, dated, partial European retreat from public water bathing and its slow return. Say that sentence, and you have said something true about the whole history of getting clean. Say "civilized people versus dirty people," and you have said something false (Smith, 2007; Ashenburg, 2007).
+
+**The second verdict is about you, and it is the one that will outlast the details.** This course was never only about bathing. It was a training ground in how to think about the past without being fooled. You practiced three habits over and over:
+
+- **Weigh things against words.** A watertight tank or a heated floor is strong evidence; a traveler's insult tells you mainly about the traveler. Prefer what survives and is hard to fake, and treat vivid written claims with care.
+- **Attribute and hedge single witnesses.** "Andres de Tapia reported that Moctezuma bathed twice a day" is history. "Moctezuma bathed twice a day" is a myth being born. One witness is a claim, not a measurement.
+- **Refuse the tidy stereotype.** When a story flatters one group and flattens a thousand years, or rewrites "different standards" as "civilized versus dirty," slow down. The comfortable version is usually the wrong one.
+
+Those three habits work on far more than soap. They work on any confident story anyone ever tells you about how people used to live. That, more than any single date, is what you take with you.
+
+:::reveal State the course's two-part verdict: one sentence about the history of cleanliness, and the transferable thinking skill it trained. ||| The history: not one ladder from dirty to clean, but many different, richly developed traditions, each sophisticated on its own terms, plus one specific, dated, partial European retreat from public water bathing and its slow return, never "civilized versus dirty." The skill: think about the past without being fooled, by weighing things against words, attributing and hedging single-witness claims, and refusing tidy, flattering stereotypes.
+
+## Sources
+- Ashenburg, K. (2007). *The dirt on clean: An unsanitized history*. North Point Press.
+- Smith, V. (2007). *Clean: A history of personal hygiene and purity*. Oxford University Press.`,
+      recallContent: [
+        {
+          prompt: "What is the accurate replacement sentence for the myth 'medieval Europeans never bathed'?",
+          answer:
+            "Medieval Europeans did bathe; a partial retreat from public water bathing came later, in the early modern period, for specific reasons (disease fear, the open-pores theory, clean linen, fuel cost); and no one had to teach Europe to wash.",
+        },
+        {
+          prompt: "Name the three evidence-handling habits the course trained.",
+          answer:
+            "Weigh things (physical evidence) against words (written claims); attribute and hedge single-witness claims rather than stating them as fact; and refuse tidy, flattering stereotypes that flatten whole peoples or eras.",
+        },
+      ],
+    },
+    {
+      slug: "bathing-exercise",
+      title: "24 · Exercise: name the tradition, and catch the myth",
+      section: "Section 8 · Myths on trial: what the evidence actually says",
+      body: `A quick production drill to lock in the vocabulary and the reasoning. For each clue, type the term, the tradition, or the honest correction. Spelling does not have to be perfect; you are checking that you can recall the idea. Answers cover the whole course, from Rome to the myth on trial.`,
+      exercise: {
+        instructions: "Type the term, tradition, or correction each clue points to. Accents and small spelling differences are fine.",
+        items: [
+          {
+            prompt: "The curved metal scraper a Roman used with oil to clean the skin, using no soap.",
+            answer: "strigil",
+            explanation: "The oil-and-strigil method cleaned the body with no soap at all (Section 2).",
+          },
+          {
+            prompt: "The Roman underfloor heating system that warmed the baths from below.",
+            answer: "hypocaust",
+            explanation: "Hot furnace air flowed under a raised floor and up wall flues, an early central heating (Section 2).",
+          },
+          {
+            prompt: "The public steam bathhouse of the Islamic world, descended from Roman and Byzantine baths.",
+            answer: "hammam",
+            accept: ["the hammam", "hamam"],
+            explanation: "The hammam adapted the Roman bath to Islamic norms and was a major social center (Section 3).",
+          },
+          {
+            prompt: "The Islamic ritual washing performed before each of the five daily prayers.",
+            answer: "wudu",
+            accept: ["wudhu", "ablution", "wuduu"],
+            explanation: "Wudu (with ghusl for fuller washing) built a daily, society-wide demand for washing (Section 3).",
+          },
+          {
+            prompt: "The Palestinian olive-oil hard soap whose making tradition UNESCO inscribed in 2024.",
+            answer: "Nabulsi soap",
+            accept: ["nabulsi", "nablus soap", "nabulsi soap making"],
+            explanation: "Nabulsi (Nablus) soap: olive oil, water, and lye, cured for months in towers (Section 3).",
+          },
+          {
+            prompt: "The oldest known public water tank, on the citadel mound at Mohenjo-daro.",
+            answer: "the Great Bath",
+            accept: ["great bath"],
+            explanation: "We can measure it precisely but must infer its purpose, since the Indus script is undeciphered (Section 4).",
+          },
+          {
+            prompt: "The Japanese home or public bath (tub) you enter only after washing and rinsing outside it.",
+            answer: "ofuro",
+            accept: ["furo", "the ofuro"],
+            explanation: "Washing before the soak keeps the shared soaking water clean (Section 4).",
+          },
+          {
+            prompt: "The Finnish sweat bath heated by a stone-topped stove.",
+            answer: "sauna",
+            accept: ["the sauna"],
+            explanation: "Water on the hot stones releases löyly; UNESCO inscribed Finnish sauna culture in 2020 (Section 5).",
+          },
+          {
+            prompt: "The Mesoamerican sweat bath, from a Nahuatl word meaning 'bath house.'",
+            answer: "temazcal",
+            accept: ["temascal", "the temazcal", "temazcalli"],
+            explanation: "The temazcal and the sauna are the same idea invented independently (Section 5).",
+          },
+          {
+            prompt: "The English name for the common public bathhouses of medieval European towns.",
+            answer: "stews",
+            accept: ["stew", "the stews"],
+            explanation: "The stews are the direct evidence that medieval Europeans bathed (Section 6).",
+          },
+          {
+            prompt: "Fill in the honest correction: the European retreat from water bathing happened mainly in the ______ period, not the medieval one.",
+            answer: "early modern",
+            accept: ["early modern period", "earlymodern", "early-modern"],
+            explanation: "Roughly the 1500s-1600s. Getting the timing right is half of dismantling the myth (Section 6).",
+          },
+          {
+            prompt: "One word: contact with the hammam during the Crusades was an ______ on European bathing, not a first introduction.",
+            answer: "influence",
+            accept: ["an influence"],
+            explanation: "Europe already bathed, so outside contact was influence, not introduction (Section 7).",
+          },
+        ],
+      },
+    },
+    {
+      slug: "bathing-quiz-myths",
+      title: "25 · Quiz: myths on trial and the verdict",
+      section: "Section 8 · Myths on trial: what the evidence actually says",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Put the claim 'medieval Europeans never bathed' on trial. What is the accurate verdict?",
+            options: [
+              "True: they never bathed",
+              "A distortion: medieval Europeans did bathe (the stews), and the retreat from water bathing came later, was partial, and was caused, not from ignorance",
+              "True, but only for peasants",
+              "Impossible to evaluate",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Medieval Europe bathed; the early modern retreat was partial and caused (Ashenburg, 2007; Smith, 2007).",
+            sourceLessonSlug: "bathing-myth-on-trial",
+          },
+          {
+            prompt: "The myth makes two errors about the real European retreat from water bathing. They are:",
+            options: [
+              "The country and the century",
+              "The timing (it was early modern, not medieval) and the completeness (it was partial, not total)",
+              "The soap and the linen",
+              "The names of the kings",
+            ],
+            correctIndex: 1,
+            explanation: "It misdates a partial early modern retreat as a total medieval one (Section 6, Section 8).",
+            sourceLessonSlug: "bathing-myth-on-trial",
+          },
+          {
+            prompt: "Why is 'had to be introduced to washing by cleaner civilizations' false?",
+            options: [
+              "Because no other civilizations existed",
+              "Because Europe already had its own bathhouses and tub baths, so outside contact was influence, not a first introduction",
+              "Because Europeans invented all bathing",
+              "Because soap did not exist",
+            ],
+            correctIndex: 1,
+            explanation: "You cannot introduce someone to a thing they already have (Smith, 2007; Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-myth-on-trial",
+          },
+          {
+            prompt: "Early modern Europeans pulled back from water bathing for reasons that included all of the following EXCEPT:",
+            options: [
+              "Fear of epidemic disease such as syphilis",
+              "A medical theory that warm water opened the pores to disease",
+              "A new ideal of cleanliness based on clean linen",
+              "A religious ban on all forms of washing anywhere",
+            ],
+            correctIndex: 3,
+            explanation:
+              "There was no blanket religious ban on washing; the real causes were disease fear, the pores theory, linen, and fuel cost (Ashenburg, 2007; Smith, 2007).",
+            sourceLessonSlug: "bathing-myth-on-trial",
+          },
+          {
+            prompt: "Where does the 'dirty Middle Ages' myth come from?",
+            options: [
+              "From medieval writers themselves",
+              "From later storytellers smearing an early modern, partial retreat backward over the whole Middle Ages, and rewriting 'different standards' as 'civilized versus dirty'",
+              "From archaeological measurements",
+              "From the Islamic world",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The myth trades an accurate, complicated picture for a tidy, flattering, wrong one (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-myth-on-trial",
+          },
+          {
+            prompt: "What is the course's honest replacement sentence for the myth?",
+            options: [
+              "Everyone was filthy until modern plumbing",
+              "Medieval Europeans did bathe; a partial retreat from public water bathing came later, in the early modern period, for specific reasons; and no one had to teach Europe to wash",
+              "Europe taught the world to bathe",
+              "The Aztecs were the only clean people",
+            ],
+            correctIndex: 1,
+            explanation: "This is the precise, defensible statement the whole course builds toward (Section 8).",
+            sourceLessonSlug: "bathing-myth-on-trial",
+          },
+          {
+            prompt: "The course's first verdict, about the history of cleanliness, is:",
+            options: [
+              "One ladder from dirty to clean, with a winner at the top",
+              "Many different, richly developed traditions, each sophisticated on its own terms, plus one specific, partial European retreat from public water bathing and its slow return",
+              "That soap made everyone identical",
+              "That only Rome mattered",
+            ],
+            correctIndex: 1,
+            explanation: "Many parallel traditions plus a specific European retreat and return, not a single ladder (Smith, 2007; Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-verdict",
+          },
+          {
+            prompt: "The course's second verdict, the transferable skill, is to think about the past by:",
+            options: [
+              "Believing the most entertaining story",
+              "Weighing things against words, attributing and hedging single-witness claims, and refusing tidy stereotypes",
+              "Trusting only one source",
+              "Assuming the present is always cleaner and better",
+            ],
+            correctIndex: 1,
+            explanation: "These three habits work on any confident story about how people used to live (Section 8).",
+            sourceLessonSlug: "bathing-verdict",
+          },
+          {
+            prompt: "'Weigh things against words' means:",
+            options: [
+              "Ignore all writing",
+              "Prefer physical evidence that is hard to fake (like a watertight tank or heated floor), and treat vivid written claims, especially insults about strangers, with care",
+              "Trust travelers' insults over buildings",
+              "Only use written sources",
+            ],
+            correctIndex: 1,
+            explanation: "Physical evidence is strong; written claims need scrutiny (Section 1, Section 8).",
+            sourceLessonSlug: "bathing-verdict",
+          },
+          {
+            prompt: "Which sentence is 'history' rather than 'a myth being born'?",
+            options: [
+              "'Moctezuma bathed twice a day.'",
+              "'The conquistador Andres de Tapia reported that Moctezuma bathed twice a day.'",
+              "'Everyone in Mexico bathed exactly twice a day.'",
+              "'Moctezuma never bathed.'",
+            ],
+            correctIndex: 1,
+            explanation: "Attributing and hedging the single-witness claim keeps it honest (Section 8).",
+            sourceLessonSlug: "bathing-verdict",
+          },
+          {
+            prompt: "The Roman bath, the hammam, and the Japanese ofuro together best demonstrate that:",
+            options: [
+              "Every culture bathed exactly the same way",
+              "'Clean' was reached by several different, complete methods, so no single tradition sits above the others on one ladder",
+              "Only one of them was truly clean",
+              "Bathing was rare everywhere",
+            ],
+            correctIndex: 1,
+            explanation: "Different sophisticated methods, not a single ranking (Smith, 2007).",
+            sourceLessonSlug: "bathing-verdict",
+          },
+          {
+            prompt: "Why does 'refuse the tidy stereotype' matter beyond the history of bathing?",
+            options: [
+              "It does not; it only applies to soap",
+              "Because the habit works on any confident story that flatters one group and flattens a whole era or people, which is a very common way to be misled",
+              "Because stereotypes are always true",
+              "Because history has no other lessons",
+            ],
+            correctIndex: 1,
+            explanation: "The comfortable, flattering version of a story is often the wrong one (Section 8).",
+            sourceLessonSlug: "bathing-verdict",
+          },
+          {
+            prompt: "A classmate confidently says 'other civilizations had to teach filthy medieval Europe how to wash.' Your best corrected reply is:",
+            options: [
+              "'You're right, Europe never washed.'",
+              "'Medieval Europe already bathed in its stews; the pullback from water bathing was early modern, partial, and caused, and outside contact was influence, not a first lesson in washing.'",
+              "'Only the Romans ever bathed.'",
+              "'Soap was invented in France.'",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This corrects the timing, completeness, cause, and the 'introduction' error all at once (Section 6, Section 8).",
+            sourceLessonSlug: "bathing-myth-on-trial",
+          },
+          {
+            prompt: "The sauna and the temazcal, invented independently, support the course's verdict by showing:",
+            options: [
+              "That one culture copied the other",
+              "That different peoples developed sophisticated cleanliness traditions on their own, which fits 'many parallel traditions,' not one ladder",
+              "That sweat bathing does not clean",
+              "That only Europe innovated",
+            ],
+            correctIndex: 1,
+            explanation: "Independent invention supports the many-traditions verdict (Section 5, Section 8).",
+            sourceLessonSlug: "bathing-verdict",
+          },
+          {
+            prompt: "What is the single most useful skill the course says it can leave you with?",
+            options: [
+              "Memorizing every bathing date",
+              "Recognizing when a story trades an accurate, complicated picture for a tidy, flattering, wrong one",
+              "Reciting the soap recipe",
+              "Naming every Roman emperor",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Spotting that trade, the tidy-but-wrong story, is the durable skill (Section 8).",
+            sourceLessonSlug: "bathing-myth-on-trial",
+          },
+        ],
+      },
+    },
   ],
 };
