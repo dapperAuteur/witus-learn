@@ -1332,6 +1332,91 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches getting involved where you live, Virginia edition — the short Richmond session, county boards of supervisors, city councils, and Dillon's-Rule advocacy at both the local and state levels.",
     courseSlugs: ["state-civics-va"],
     lessons: ["Virginia Civics, Lesson 7 · Elections, redistricting, and how to take part"],
+  // ── State civics: Washington (state-civics-wa was written FROM Washington's own sources) ──
+  // Unlike California or Arkansas, Washington's HIGH-SCHOOL Civics standard C2.11-12.2 explicitly
+  // names "Washington state" constitutions, so the flagship's Washington-structure lessons have a
+  // genuine state code to cite (see data/wa.ts). Washington is a strong direct-democracy, all-mail,
+  // top-two-primary, plural-executive state; the flagship teaches all four.
+  {
+    id: "civics.wa-constitution-direct-democracy",
+    claim: "Teaches Washington's Constitution of 1889 and its strong direct democracy — the Initiative to the People and the Initiative to the Legislature (a distinction unique to a handful of states), the referendum, and the recall — as the through-line that makes voters a lawmaking body.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: [
+      "Washington Civics, Lesson 1 · Washington's Constitution of 1889 and its direct democracy",
+    ],
+  },
+  {
+    id: "civics.wa-plural-executive",
+    claim: "Teaches Washington's 'plural' executive: nine separately elected statewide officials (Governor, Lieutenant Governor, Secretary of State, Attorney General, Treasurer, Auditor, Superintendent of Public Instruction, Commissioner of Public Lands, and Insurance Commissioner), so executive power is divided rather than concentrated in the Governor.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: [
+      "Washington Civics, Lesson 2 · Washington's 'plural' executive: nine elected statewide officials",
+    ],
+  },
+  {
+    id: "civics.wa-courts-legislature",
+    claim: "Teaches Washington's nonpartisan elected judiciary (a nine-justice Supreme Court elected to 6-year terms) and its Legislature — 49 senators and 98 representatives from 49 shared districts, each electing one senator and two representatives — plus the Governor's line-item veto and the two-thirds override.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: ["Washington Civics, Lesson 3 · The courts and the Legislature"],
+  },
+  {
+    id: "civics.wa-bill-process",
+    claim: "Teaches Washington's two roads to law: a bill through the Legislature, or the voters directly via an Initiative to the People, an Initiative to the Legislature, or a referendum.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: ["Washington Civics, Lesson 4 · How a bill becomes a Washington law"],
+  },
+  // NOTE: Washington's all-mail voting and top-two primary (flagship Lesson 5) are the state's most
+  // distinctive civics content, but Washington's HS Civics standards have no discrete
+  // election-administration standard, so — like the Arkansas/California flagships' uncited structure
+  // — that lesson carries NO claim here; data/wa.ts publishes the gap in its notClaimed list.
+  {
+    id: "civics.wa-local-and-taxes",
+    claim: "Teaches Washington's local government (39 counties, home-rule charter counties and code cities, special districts) and its distinctive, contested tax structure (no personal state income tax under the constitution's uniformity clause; the 2021 capital-gains tax upheld in 2023), flagging the tax question as actively litigated.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: ["Washington Civics, Lesson 6 · Taxes, local government, and how to take part"],
+  },
+  {
+    id: "civics.wa-get-involved",
+    claim: "Teaches taking part in Washington: voting the ballot mailed to you, using the state's unusually open initiative and referendum on-ramps, showing up at county/city/school-board/port-district meetings, contacting your one senator and two representatives, and running locally.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: ["Washington Civics, Lesson 6 · Taxes, local government, and how to take part"],
+  },
+
+  // ── State civics: New Jersey (state-civics-nj was written FROM New Jersey's own sources) ──
+  // Unlike California or Arkansas, New Jersey's 2020 Social Studies standards NAME the New Jersey
+  // Constitution (of 1776 and of 1947), so the flagship's constitutional-history lessons have a
+  // genuine state code to cite (6.1.12.CivicsPI.2.a and .13.a — see data/nj.ts). New Jersey's
+  // signature is a deliberately STRONG governor and the ABSENCE of direct democracy.
+  {
+    id: "civics.nj-constitution",
+    claim: "Teaches New Jersey's Constitution of 1947 — its third, after 1776 and 1844 — whose signature achievement was to streamline and strengthen the executive branch, the through-line of New Jersey civics.",
+    courseSlugs: ["state-civics-nj"],
+    lessons: ["New Jersey Civics, Lesson 1 · New Jersey's Constitution of 1947"],
+  },
+  {
+    id: "civics.nj-strong-governor",
+    claim: "Teaches why New Jersey's Governor is considered one of the strongest in the nation — the Governor APPOINTS the Attorney General, Secretary of State, Treasurer, and most top officials (with Senate confirmation) rather than voters electing them — and why New Jersey had no Lieutenant Governor until 2010 (now a joint ticket).",
+    courseSlugs: ["state-civics-nj"],
+    lessons: [
+      "New Jersey Civics, Lesson 2 · New Jersey's powerful Governor (and the 2010 Lieutenant Governor)",
+    ],
+  },
+  {
+    id: "civics.nj-legislature-courts",
+    claim: "Teaches New Jersey's Legislature (40 senators and 80 Assembly members from 40 shared districts, each electing one senator and two Assembly members, on the '2-year, 4-year, 4-year' Senate cycle) and its APPOINTED judiciary — Governor nominates, Senate confirms, an initial 7-year term then tenure to age 70 — with the seven-member Supreme Court and the 'senatorial courtesy' custom.",
+    courseSlugs: ["state-civics-nj"],
+    lessons: ["New Jersey Civics, Lesson 3 · The Legislature and the appointed judiciary"],
+  },
+  // NOTE: New Jersey's state lawmaking process and no-initiative rule (flagship Lesson 4) and its
+  // 21-county / Faulkner-Act home-rule structure (Lesson 5) are taught, but New Jersey's 2020
+  // Social Studies standards have no state-lawmaking or local-government-structure code at grade 12,
+  // so — like the Arkansas/California flagships' uncited structure — those lessons carry NO claim
+  // here; data/nj.ts publishes the gap in its notClaimed list.
+  {
+    id: "civics.nj-elections-involved",
+    claim: "Teaches New Jersey's odd-year gubernatorial elections (like Virginia, separate from the presidential cycle), its expanded access (in-person early voting added 2021 alongside vote-by-mail), county-administered rules, and how to take part where you live.",
+    courseSlugs: ["state-civics-nj"],
+    lessons: ["New Jersey Civics, Lesson 6 · Elections and how to take part"],
   },
 
   // ── Federalism powers taxonomy (used by states whose standards name it) ──

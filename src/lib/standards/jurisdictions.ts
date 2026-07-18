@@ -82,6 +82,13 @@ export const NEXT_UP: StateCode[] = ["NC", "VA"];
 // (OH/GA, IL/MI, etc.); resolve the conflict to a value that names two states NOT in
 // {AR,AZ,CA,DC,FL,IN,NY,PA,TX,OH,GA,IL,MI,NC,VA} — WA/NJ below, or BAM's preferred next two.
 export const NEXT_UP: StateCode[] = ["WA", "NJ"];
+// WA/NJ are mapped on this branch (feat/standards-wa-nj); the queue advances past them. NEXT_UP must
+// never name a state that mappedStates() already contains — the isolation suite enforces it. This
+// value is deliberately chosen to sit outside EVERY state mapped or in-flight across the parallel
+// branches ({AR,AZ,CA,DC,FL,IN,NY,PA,TX,OH,GA,IL,MI,NC,VA,WA,NJ}), so it stays valid after the
+// bundle merge. NOTE for the merge: sibling branches also edit this line; resolve the conflict to a
+// value containing none of those states (MA/TN below, or BAM's preferred next two).
+export const NEXT_UP: StateCode[] = ["MA", "TN"];
 
 export function jurisdictionName(code: StateCode): string {
   return US_JURISDICTIONS.find((j) => j.code === code)?.name ?? code;
