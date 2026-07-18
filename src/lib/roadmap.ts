@@ -1138,6 +1138,30 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Maryland + Colorado mapped** (\`feat/standards-md-co\`); the standards finder now covers 22
+  jurisdictions, and \`/academic-standards?state=MD\` and \`?state=CO\` flip from "not mapped yet" to
+  real pages. **Maryland (bespoke civics, inherited ELA and science):** the **High School American
+  Government Framework** (MSDE, revised June 2025), transcribed verbatim from MSDE's own PDF via a
+  browser-user-agent fetch (the site returns 403 to a plain fetch). GOV.2.1.a names the **Maryland
+  General Assembly**, and the structure indicators name "Federal and Maryland State Government," so
+  the \`state-civics-md\` flagship's own-government lessons get a real home: the nation-strongest
+  executive budget power, the compact plural executive, the 2022 Supreme Court of Maryland renaming,
+  the petition-to-referendum-with-no-initiative, and the independent City of Baltimore. ELA adopts
+  the **Common Core** (Maryland College and Career Ready Standards) with codes aliased to Maryland's
+  printed bare form, verified word-for-word against MSDE's June 2023 Disciplinary Literacy Framework;
+  science adopts **NGSS** verbatim (Maryland was an NGSS lead state); math is unclaimed.
+  **Colorado (bespoke, concept-based civics):** the **2020 Colorado Academic Standards**, Social
+  Studies Standard 4 (Civics), transcribed verbatim from CDE's P-12 booklet. Colorado's civics
+  standard names "American government," not Colorado's own institutions, so the \`state-civics-co\`
+  flagship's Colorado-specific lessons (TABOR, the initiative/referendum/recall, the GAVEL amendment,
+  merit-selection judges, all-mail elections, the Denver/Broomfield city-counties) map as genuine
+  instances of the generic outcomes. Colorado writes its OWN ELA (Reading, Writing, and
+  Communicating) and its OWN science (NGSS-influenced, not adopted verbatim), so both are deferred
+  rather than blind-aliased. Honest gaps published per state: Maryland's budget power and Colorado's
+  TABOR have no state code of their own (each claimed through the nearest structure outcome and
+  published in its \`notClaimed\`); Maryland's US and World History and Colorado's History, Geography,
+  and Economics standards are deferred (fetch-and-verify-or-don't-cite). **\`NEXT_UP\` advanced past
+  MD/CO to AL/LA.** No migration, no seed.
 - 🔧 **Missouri mapped, fully bespoke** (\`feat/standards-mo-md\`). \`/academic-standards?state=MO\`
   flips from "not mapped yet" to a real page. Missouri withdrew from the Common Core, so its ELA and
   math are Missouri's own and its science is Missouri's own (not NGSS); the mapped codes are all

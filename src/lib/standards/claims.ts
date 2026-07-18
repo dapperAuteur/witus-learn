@@ -1566,6 +1566,140 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Missouri Civics, Lesson 5 · Elections and how to take part in Missouri"],
   },
 
+  // ── State civics: Maryland (state-civics-md was written FROM Maryland's own sources) ──
+  // NOTE: Maryland's required High School American Government course (Maryland Social Studies
+  // Framework, June 2025) reaches Maryland's OWN government explicitly — GOV.2.1.a names "the
+  // Maryland General Assembly," and the legislative/executive/judicial structure indicators name
+  // "Federal and Maryland State Government" in their assessment limits — so the Maryland flagship's
+  // structure lessons have a genuine home, mapped there rather than to abstract concepts. Maryland
+  // adopted the Common Core (as the Maryland College and Career Ready Standards) for ELA and, as an
+  // NGSS lead state, the NGSS for science; data/md.ts adopts both from ../shared and publishes math
+  // as unclaimed. The flagship's most distinctive fact — Maryland's nation-strongest executive
+  // budget power — has no code of its own; it is claimed through the executive-comparison indicator
+  // (GOV.3.3.a) and published in md.ts's notClaimed list.
+  {
+    id: "civics.md-budget-power",
+    claim:
+      "Teaches Maryland's most distinctive civic feature — the extraordinary budget power of its Governor, widely described as the strongest gubernatorial budget authority in the nation: under Maryland's executive-budget system (in the Constitution since 1916) the Governor proposes the budget and the General Assembly can generally only CUT or reduce items, not add new spending or move money to new purposes, which makes the Governor unusually dominant over state finances.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 1 · Maryland's Governor: the strongest budget power in the nation",
+    ],
+  },
+  {
+    id: "civics.md-state-structure",
+    claim:
+      "Teaches Maryland's three branches as Maryland's: the Constitution of 1867 (its fourth); a compact plural executive (a joint-ticket Governor and Lieutenant Governor with a separately elected Attorney General and Comptroller, while the Secretary of State is appointed by the Governor and the Treasurer is elected by the General Assembly); a bicameral General Assembly of a 141-member House of Delegates and a 47-member Senate serving 4-year terms in a fixed 90-day annual session; and the three-fifths veto override.",
+    courseSlugs: ["state-civics-md"],
+    lessons: ["Maryland Civics, Lesson 2 · The executive and the General Assembly"],
+  },
+  {
+    id: "civics.md-courts",
+    claim:
+      "Teaches Maryland's courts as Maryland's, including the 2022 renaming voters approved: the highest court became the “Supreme Court of Maryland” (before 2022 the Court of Appeals) and the intermediate court the “Appellate Court of Maryland”; appellate judges are appointed by the Governor (advised by a nominating commission) with Senate confirmation and then face yes/no retention elections, while Circuit Court trial judges run in contested elections — a blend of merit appointment and election.",
+    courseSlugs: ["state-civics-md"],
+    lessons: ["Maryland Civics, Lesson 3 · Maryland's courts and a 2022 name change"],
+  },
+  {
+    id: "civics.md-referendum",
+    claim:
+      "Teaches Maryland's distinctive citizen check — the “petition to referendum,” by which voters gather signatures to suspend a law the General Assembly just passed and put it to a statewide vote — and that Maryland has NO citizen initiative to propose new laws, so the citizen power here is a veto (reject a law), not an initiative (start one); taught alongside how a bill becomes a Maryland law and the three-fifths veto override.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 4 · How a bill becomes law, and Maryland's referendum (but no initiative)",
+    ],
+  },
+  {
+    id: "civics.md-local-government",
+    claim:
+      "Teaches Maryland local government as Maryland's: 23 counties (many of them home-rule “charter” counties like Montgomery and Baltimore County, with elected councils and county executives) PLUS the independent City of Baltimore, which belongs to no county and is a county-equivalent with its own government — so Baltimore City and Baltimore County are two separate governments.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 5 · Local government, independent Baltimore, and how to take part",
+    ],
+  },
+  {
+    id: "civics.md-get-involved",
+    claim:
+      "Teaches taking part where you live, Maryland edition — registering and voting with Maryland's early in-person voting, no-excuse mail-in ballots, and same-day registration; joining a petition to referendum to challenge a new law; showing up at county councils, city councils, and school boards; contacting your Annapolis Delegates and Senator; and running for local office — flagged as time-sensitive and pointing to elections.maryland.gov.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 5 · Local government, independent Baltimore, and how to take part",
+    ],
+  },
+
+  // ── State civics: Colorado (state-civics-co was written FROM Colorado's own sources) ──
+  // NOTE: Colorado's High School Civics standard (2020 Colorado Academic Standards, Social Studies
+  // Standard 4) is CONCEPT-based — like Illinois's and Ohio's abstract standards, it names "American
+  // government" and "various levels of government" rather than Colorado's own, so the Colorado
+  // flagship's Colorado-specific lessons (TABOR, the initiative/referendum/recall, the GAVEL
+  // amendment, merit-selection judges, all-mail elections, Denver/Broomfield city-counties) map as
+  // genuine INSTANCES of those generic outcomes (e.g. SS.HS.4.1.b "use the structure and functions
+  // of various levels of government to shape policy" is exactly what Colorado's direct democracy
+  // does). Colorado writes its OWN ELA (Reading, Writing, and Communicating) and its OWN science
+  // (NGSS-influenced, not adopted verbatim), so — unlike Maryland — there is no shared framework to
+  // adopt; both are deferred in data/co.ts's notClaimed, fetch-and-verify-or-don't-cite. The
+  // flagship's signature fact, TABOR, has no code of its own and is claimed through SS.HS.4.1.b.
+  {
+    id: "civics.co-direct-democracy",
+    claim:
+      "Teaches Colorado as a state where the voters are themselves a lawmaking body: the Constitution of 1876 (Colorado is the “Centennial State,” admitted in the nation's 100th year) and the direct-democracy tools added in 1910 — the initiative (used to enact a statute OR a constitutional amendment straight at the ballot, making Colorado's constitution one of the most frequently amended in the nation), the referendum (to reject a law the Legislature passed), and the recall (to remove an elected official before the term ends).",
+    courseSlugs: ["state-civics-co"],
+    lessons: [
+      "Colorado Civics, Lesson 1 · Colorado's Constitution of 1876 and its direct democracy",
+    ],
+  },
+  {
+    id: "civics.co-tabor",
+    claim:
+      "Teaches Colorado's signature constitutional rule, the Taxpayer's Bill of Rights (TABOR, passed by citizen initiative in 1992): state and local governments cannot raise a tax, impose a new tax, or increase a rate without a direct vote of the people, and revenue collected above a formula-based cap (roughly inflation plus population growth) must generally be refunded to taxpayers unless voters agree to keep it (“de-Brucing”) — making the voters the gatekeepers of taxation and spending.",
+    courseSlugs: ["state-civics-co"],
+    lessons: [
+      "Colorado Civics, Lesson 4 · TABOR: the Taxpayer's Bill of Rights (Colorado's signature rule)",
+      "Colorado Civics, Lesson 5 · How a bill becomes a Colorado law",
+    ],
+  },
+  {
+    id: "civics.co-state-structure",
+    claim:
+      "Teaches Colorado's three branches as Colorado's: a General Assembly of a 35-member Senate (4-year terms) and a 65-member House (2-year terms), each capped at 8 consecutive years, under the distinctive “GAVEL” amendment (1988) that guarantees every bill a committee hearing; a joint-ticket Governor and Lieutenant Governor with a separately elected Secretary of State, Attorney General, and Treasurer; a two-thirds veto override plus the line-item veto on appropriations; and how a bill becomes a Colorado law by two routes — the Legislature, or the voters directly.",
+    courseSlugs: ["state-civics-co"],
+    lessons: [
+      "Colorado Civics, Lesson 2 · The three branches of Colorado government",
+      "Colorado Civics, Lesson 5 · How a bill becomes a Colorado law",
+    ],
+  },
+  {
+    id: "civics.co-courts",
+    claim:
+      "Teaches how Colorado chooses its judges — merit selection followed by retention (often called the “Missouri Plan”): a nonpartisan nominating commission sends the Governor a short list of the most qualified, the Governor must appoint from that list, and the judge then faces the voters in nonpartisan yes/no retention elections (Colorado Supreme Court justices on 10-year terms), blending professional vetting with public accountability and avoiding big-money contested judicial races.",
+    courseSlugs: ["state-civics-co"],
+    lessons: [
+      "Colorado Civics, Lesson 3 · How Colorado chooses its judges (merit selection + retention)",
+    ],
+  },
+  {
+    id: "civics.co-elections",
+    claim:
+      "Teaches Colorado's elections as Colorado's: since 2013 a ballot is mailed to every registered voter for every election, paired with same-day and automatic voter registration and 16/17-year-old pre-registration, returnable by mail, drop box, or voter service center; and the independent redistricting commissions (Amendments Y and Z of 2018, made of Democrats, Republicans, and unaffiliated members) that draw Colorado's congressional and legislative maps instead of the Legislature.",
+    courseSlugs: ["state-civics-co"],
+    lessons: ["Colorado Civics, Lesson 6 · Elections, local government, and how to take part"],
+  },
+  {
+    id: "civics.co-local-government",
+    claim:
+      "Teaches Colorado local government as Colorado's: 64 counties governed by elected boards of county commissioners, home-rule cities and counties that write their own charters, the unusual consolidated city-and-county governments of Denver and Broomfield, and special districts (schools, water, fire, transit) — each of which, under TABOR, needs voter approval to raise taxes.",
+    courseSlugs: ["state-civics-co"],
+    lessons: ["Colorado Civics, Lesson 6 · Elections, local government, and how to take part"],
+  },
+  {
+    id: "civics.co-get-involved",
+    claim:
+      "Teaches taking part where you live, Colorado edition — voting the ballot mailed to you (tracking it at sos.state.co.us), signing, circulating, or filing an initiative or referendum, showing up at county commissions, city councils, and school boards (where TABOR tax questions come to you on the ballot), testifying on a bill the GAVEL rule guarantees will be heard, and running for local office.",
+    courseSlugs: ["state-civics-co"],
+    lessons: ["Colorado Civics, Lesson 6 · Elections, local government, and how to take part"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
