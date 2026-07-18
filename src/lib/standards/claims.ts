@@ -1049,6 +1049,37 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Tennessee (state-civics-tn was written FROM Tennessee's own sources) ──
+  // NOTE: Tennessee's 2019 Academic Standards for Social Studies include a dedicated "Tennessee
+  // State and Local Government" strand in the required United States Government and Civics course
+  // (GC.28–GC.30), so the flagship's Tennessee-structure lessons have genuine codes to cite. But
+  // the flagship's most distinctive facts — the Attorney General appointed by the state Supreme
+  // Court (unique in the nation), the Senate Speaker who holds the title "Lieutenant Governor," the
+  // Secretary of State/Treasurer/Comptroller elected by the Legislature, the weak simple-majority
+  // veto override, the "Tennessee Plan" judiciary, the ABSENCE of a citizen initiative, and
+  // Tennessee's photo-ID / excuse-required-absentee voting rules — are not separately coded, so
+  // data/tn.ts publishes that gap in its notClaimed list.
+  {
+    id: "civics.tn-state-structure",
+    claim:
+      "Teaches Tennessee's three branches as Tennessee's: the General Assembly (a 99-member House and a 33-member Senate); a highly unusual executive in which the Governor is the only statewide-elected official, the Senate Speaker holds the title “Lieutenant Governor,” the Secretary of State, Treasurer, and Comptroller are elected by the Legislature, and — uniquely in the nation — the Attorney General is appointed by the state Supreme Court; the weak simple-majority veto override; and the “Tennessee Plan” appointment-then-retention judiciary.",
+    courseSlugs: ["state-civics-tn"],
+    lessons: [
+      "Tennessee Civics, Lesson 1 · Tennessee's Constitution of 1870 (and its hard-to-amend rule)",
+      "Tennessee Civics, Lesson 2 · Tennessee's unusual executive: one elected officer, and a Speaker called 'Lieutenant Governor'",
+      "Tennessee Civics, Lesson 3 · The General Assembly and the 'Tennessee Plan' for judges",
+    ],
+  },
+  {
+    id: "civics.tn-local-government",
+    claim:
+      "Teaches Tennessee local government as Tennessee's: 95 counties under an elected county commission and a county mayor, cities and towns with optional home rule, and the consolidated metropolitan city-county governments (most famously Metro Nashville-Davidson County).",
+    courseSlugs: ["state-civics-tn"],
+    lessons: [
+      "Tennessee Civics, Lesson 5 · Local government: 95 counties, cities, and metro government",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",

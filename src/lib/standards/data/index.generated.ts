@@ -10,8 +10,9 @@ import { JURISDICTION as j_in } from "./in";
 import { JURISDICTION as j_ma } from "./ma";
 import { JURISDICTION as j_ny } from "./ny";
 import { JURISDICTION as j_pa } from "./pa";
+import { JURISDICTION as j_tn } from "./tn";
 import { JURISDICTION as j_tx } from "./tx";
 
 import type { JurisdictionFile } from "../types";
 
-export const JURISDICTION_FILES: JurisdictionFile[] = [j_ar, j_az, j_ca, j_dc, j_fl, j_in, j_ma, j_ny, j_pa, j_tx];
+export const JURISDICTION_FILES: JurisdictionFile[] = [j_ar, j_az, j_ca, j_dc, j_fl, j_in, j_ma, j_ny, j_pa, j_tn, j_tx];
