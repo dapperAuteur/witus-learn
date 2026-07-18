@@ -553,5 +553,273 @@ Hold onto one fact as you leave this lesson, because the next one turns on it: t
         ],
       },
     },
+
+    // ───────────── SECTION 3 · THE ISLAMIC HAMMAM AND THE AGE OF HARD SOAP ─────────────
+    {
+      slug: "bathing-islam-hammam",
+      title: "7 · The hammam and the washing built into a religion",
+      section: "Section 3 · The Islamic hammam and the age of hard soap",
+      body: `In the Roman bath, cleanliness was social and medical. In the Islamic world, washing was also woven directly into religious practice, and that changed how much washing a whole society did.
+
+**Cleanliness as an act of faith.** Islam requires ritual washing before the five daily prayers, a practice called *wudu*, in which a Muslim washes the hands, mouth, nose, face, arms, head, and feet in a set order. A fuller ritual washing of the whole body, *ghusl*, is required in certain circumstances. These are religious obligations, performed by ordinary believers every day, across a civilization that at its height stretched from Spain to Central Asia (Smith, 2007). The effect is easy to miss and hard to overstate: a religion that commands washing before every prayer builds a constant, society-wide demand for clean water and for washing, independent of fashion or mood.
+
+**The hammam.** On top of this religious washing sat the *hammam*, the public bathhouse of the Islamic world. In its architecture it inherited a great deal from the Roman and Byzantine bath: heated rooms, steam, and warmth moving through the building. But it was adapted to Islamic norms. Bathers preferred to rinse under running or poured water rather than sit in a shared soaking pool, a scrubber used a rough mitt to exfoliate the skin, and the sexes were strictly separated, usually by dedicating different hours or different buildings to women and to men (Smith, 2007; Ashenburg, 2007).
+
+**A social world, especially for women.** Like the Roman bath, the hammam was far more than a place to get clean. For women in particular it was a major center of social life, a place to meet, talk, celebrate events like weddings, and be among other women, in societies where public space was often otherwise limited to men (Ashenburg, 2007). When you read, in a later section, that European Crusaders encountered the hammam in the Levant, keep this in mind: they were not meeting a crude foreign washroom. They were meeting a mature, centuries-deep institution.
+
+The hammam is half of this section's story. The other half is what people increasingly used in it, and washed with at home: a genuinely new kind of soap, hard enough to hold in your hand. That is Lesson 8.
+
+:::reveal How did religious practice in the Islamic world create a steady, society-wide demand for washing that fashion could not easily switch off? ||| Islam requires ritual washing (wudu) before each of the five daily prayers, and a fuller washing (ghusl) in certain circumstances. Because these are daily religious obligations performed by ordinary believers, they built a constant demand for clean water and washing across the whole civilization, independent of trend or mood.
+
+## Sources
+- Ashenburg, K. (2007). *The dirt on clean: An unsanitized history*. North Point Press.
+- Smith, V. (2007). *Clean: A history of personal hygiene and purity*. Oxford University Press.`,
+      recallContent: [
+        {
+          prompt: "How did a Roman get clean, and what does the absence of body soap in that method teach us?",
+          answer:
+            "By rubbing the skin with oil and scraping it off with a strigil. It teaches that 'clean' is a standard reached by a method: a rich, sophisticated hygiene culture can contain no body soap at all.",
+        },
+        {
+          prompt: "In Pliny, what was 'sapo,' and why is the 'Mount Sapo' story unreliable?",
+          answer:
+            "Sapo was a preparation of tallow and ash that Pliny calls a Gaulish invention used to redden hair, not a Roman body wash. 'Mount Sapo' is almost certainly a legend: there is no evidence such a mountain existed, and the word likely came from a Germanic root related to sebum (tallow).",
+        },
+      ],
+    },
+    {
+      slug: "bathing-islam-hard-soap",
+      title: "8 · The hard-soap breakthrough: Aleppo and Nablus",
+      section: "Section 3 · The Islamic hammam and the age of hard soap",
+      body: `Now we can finish the soap story that Rome left hanging. Remember where Lesson 5 left it: soap existed in the ancient world, but as a hair preparation or a way to clean wool, not as a bar you washed your body with. The step to purpose-made **hard body soap** is, above all, an achievement of the medieval Islamic world (Smith, 2007).
+
+**The chemistry, in plain terms.** Soap is what you get when you combine a fat or oil with a strong alkali. Islamic-world soapmakers combined olive oil with an alkali they made from plant and wood ash, called *al-qali*, and boiled the mixture until it set into a solid. That Arabic word *al-qali* is the direct root of the English word **alkali**, a small piece of language that records where this knowledge was refined (Smith, 2007). The result was different from anything before it: a firm, storable, often scented bar, easy to handle and to trade, and made specifically to wash people.
+
+**Two famous names, still made today.** Two cities became bywords for fine hard soap:
+
+- **Aleppo**, in present-day Syria, gave its name to a hard soap made from olive oil and **laurel** (bay) berry oil cooked with lye. It is one of the oldest hard soaps still produced by the traditional method, and it is the ancestor of the type of olive-oil soap Europe later called "Castile."
+- **Nablus**, in Palestine, produced *Nabulsi* soap from just three local ingredients, olive oil, water, and lye, boiled and then poured out and cut into bars that were stacked in tall drying towers and cured for months. By the fourteenth century Nablus had a significant soap industry that exported across the Middle East and into Europe. In 2024, UNESCO added the tradition of Nabulsi soap making to its Representative List of the Intangible Cultural Heritage of Humanity (UNESCO, 2024).
+
+**Europe's own hard soaps belong to the same family.** The prized European hard soaps, Castile from Spain and Marseille from France, are also olive-oil soaps, part of the same Mediterranean tradition rather than a separate European invention. This matters for the argument of the whole course: soap is not a trophy that one civilization handed to another. It is a technology that several connected cultures developed and traded, with the medieval Islamic world doing the decisive work of turning it into hard body soap (Smith, 2007). There is still no single inventor to crown, only an arc, now one step further along.
+
+:::reveal What was the "breakthrough" in Islamic-world soapmaking, and what everyday English word records where the knowledge was refined? ||| The breakthrough was purpose-made hard body soap: combining olive oil with an alkali (al-qali, made from plant and wood ash) and boiling it into a firm, storable, scented bar meant for washing people. The Arabic al-qali is the root of the English word "alkali."
+
+## Sources
+- Smith, V. (2007). *Clean: A history of personal hygiene and purity*. Oxford University Press.
+- UNESCO. (2024). *Tradition of Nabulsi soap making in Palestine*. Representative List of the Intangible Cultural Heritage of Humanity. https://ich.unesco.org/en/RL/tradition-of-nabulsi-soap-making-in-palestine-02112`,
+      recallContent: [
+        {
+          prompt: "What two forms did washing take in the Islamic world, and how did they differ?",
+          answer:
+            "Religious ritual washing (wudu before each of the five daily prayers, and fuller ghusl when required), done by ordinary believers everywhere; and the hammam, a public steam bathhouse adapted from Roman and Byzantine baths, which was also a major social center, especially for women.",
+        },
+        {
+          prompt: "Why were European Crusaders not encountering a 'crude foreign washroom' when they met the hammam?",
+          answer:
+            "Because the hammam was a mature, centuries-deep institution: architecturally descended from Roman and Byzantine baths, adapted to Islamic norms (running water, exfoliating scrub, strict separation of the sexes), and a central place of social life.",
+        },
+      ],
+    },
+    {
+      slug: "bathing-quiz-islam",
+      title: "9 · Quiz: the hammam and hard soap",
+      section: "Section 3 · The Islamic hammam and the age of hard soap",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is wudu?",
+            options: [
+              "A public steam bath",
+              "The Islamic ritual washing (hands, face, arms, head, feet, in order) performed before each of the five daily prayers",
+              "A type of hard soap from Nablus",
+              "A Roman scraping tool",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Wudu is the ritual ablution before prayer; ghusl is the fuller whole-body ritual washing (Smith, 2007).",
+            sourceLessonSlug: "bathing-islam-hammam",
+          },
+          {
+            prompt: "Why does the course say religious washing created a demand for cleanliness that 'fashion could not easily switch off'?",
+            options: [
+              "Because bathing was legally taxed",
+              "Because wudu before every prayer and ghusl when required are daily religious obligations for ordinary believers, independent of trend",
+              "Because only kings were allowed to bathe",
+              "Because soap was free",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Daily obligatory washing builds a steady, society-wide demand for water and washing regardless of mood or fashion (Smith, 2007).",
+            sourceLessonSlug: "bathing-islam-hammam",
+          },
+          {
+            prompt: "The hammam's architecture (heated rooms, steam) was mainly inherited from which earlier tradition?",
+            options: [
+              "The Japanese sento",
+              "The Roman and Byzantine bath",
+              "The Mesoamerican temazcal",
+              "The Finnish sauna",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The hammam adapted the Roman and Byzantine bath to Islamic norms rather than inventing bathing from scratch (Smith, 2007; Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-islam-hammam",
+          },
+          {
+            prompt: "How was the hammam adapted to Islamic norms compared with a Roman bath?",
+            options: [
+              "It removed all heating",
+              "Bathers rinsed under running or poured water rather than sharing a soaking pool, used an exfoliating mitt, and the sexes were strictly separated by hours or buildings",
+              "It admitted only foreigners",
+              "It banned soap",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Running water, a scrub mitt, and strict gender separation distinguished the hammam (Smith, 2007; Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-islam-hammam",
+          },
+          {
+            prompt: "For whom was the hammam an especially important center of social life?",
+            options: [
+              "Only for soldiers",
+              "For women, as a major place to gather, talk, and celebrate in societies where public space was often otherwise limited to men",
+              "Only for foreign visitors",
+              "Only for children",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The women's hammam was a key social institution, not merely a washroom (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-islam-hammam",
+          },
+          {
+            prompt: "What was the medieval Islamic world's decisive contribution to soap?",
+            options: [
+              "Inventing soap from nothing",
+              "Turning soap into purpose-made hard body soap, a firm, storable, scented bar made to wash people",
+              "Banning soap for religious reasons",
+              "Using soap only to dye hair",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Earlier soap was for hair or textiles; the Islamic-world advance was hard body soap (Smith, 2007).",
+            sourceLessonSlug: "bathing-islam-hard-soap",
+          },
+          {
+            prompt: "Islamic-world soapmakers combined olive oil with an alkali called al-qali. Which English word comes directly from that Arabic term?",
+            options: ["Alcohol", "Alkali", "Almanac", "Algebra"],
+            correctIndex: 1,
+            explanation:
+              "Al-qali (alkali from plant and wood ash) is the root of the English word 'alkali,' recording where the chemistry was refined (Smith, 2007).",
+            sourceLessonSlug: "bathing-islam-hard-soap",
+          },
+          {
+            prompt: "What distinguishes Aleppo soap?",
+            options: [
+              "It is a liquid hair dye",
+              "It is a hard soap of olive oil and laurel (bay) berry oil cooked with lye, and an ancestor of the olive-oil soap Europe called 'Castile'",
+              "It contains no oil at all",
+              "It was invented in Rome",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Aleppo soap adds laurel berry oil to an olive-oil-and-lye hard soap; it is among the oldest still made traditionally (Smith, 2007).",
+            sourceLessonSlug: "bathing-islam-hard-soap",
+          },
+          {
+            prompt: "Nabulsi (Nablus) soap is made from which three local ingredients, and how is it finished?",
+            options: [
+              "Animal fat, sand, and salt, dried in the sun for a day",
+              "Olive oil, water, and lye, boiled then cut into bars and cured for months in tall drying towers",
+              "Laurel oil, honey, and ash, frozen overnight",
+              "Palm oil, milk, and perfume, baked in an oven",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Nabulsi soap uses olive oil, water, and lye, cured for months in stacked towers (UNESCO, 2024).",
+            sourceLessonSlug: "bathing-islam-hard-soap",
+          },
+          {
+            prompt: "What recognition did the tradition of Nabulsi soap making receive in 2024?",
+            options: [
+              "It was banned",
+              "UNESCO added it to the Representative List of the Intangible Cultural Heritage of Humanity",
+              "It was patented by a single company",
+              "It was declared the origin of all soap",
+            ],
+            correctIndex: 1,
+            explanation:
+              "UNESCO inscribed the tradition of Nabulsi soap making in Palestine on its Representative List in 2024 (UNESCO, 2024).",
+            sourceLessonSlug: "bathing-islam-hard-soap",
+          },
+          {
+            prompt: "How does the course describe the relationship between Aleppo/Nablus soap and Europe's Castile and Marseille soaps?",
+            options: [
+              "They are unrelated inventions",
+              "They belong to the same Mediterranean olive-oil-soap family, not a separate European invention",
+              "Castile and Marseille came first and taught the Islamic world",
+              "None of them use olive oil",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Castile and Marseille are olive-oil hard soaps in the same tradition, with the Islamic world doing the decisive hard-soap work (Smith, 2007).",
+            sourceLessonSlug: "bathing-islam-hard-soap",
+          },
+          {
+            prompt: "Even after the hard-soap breakthrough, why does the course still refuse to name a single 'inventor of soap'?",
+            options: [
+              "Because soap does not exist",
+              "Because soap is a technology several connected cultures developed and traded over a long arc, not one person's eureka moment",
+              "Because the Islamic world never used soap",
+              "Because Rome invented it first",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Islamic world's hard-soap advance is one decisive step in a long, shared arc, not a single origin point (Smith, 2007).",
+            sourceLessonSlug: "bathing-islam-hard-soap",
+          },
+          {
+            prompt: "Chemically, what is soap?",
+            options: [
+              "Pure olive oil",
+              "The product of combining a fat or oil with a strong alkali",
+              "Wood ash by itself",
+              "Scented water",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Soap forms when a fat or oil reacts with an alkali such as lye made from ash (Smith, 2007).",
+            sourceLessonSlug: "bathing-islam-hard-soap",
+          },
+          {
+            prompt: "A classmate says 'Europe invented real soap and brought it to everyone.' What is the accurate correction from this section?",
+            options: [
+              "That is exactly right",
+              "Purpose-made hard body soap was above all a medieval Islamic-world advance; Europe's Castile and Marseille soaps are part of the same shared Mediterranean tradition",
+              "Nobody used soap until the 1900s",
+              "Soap was invented in Japan",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The decisive hard-soap work was done in the Islamic world; European hard soaps belong to the same olive-oil family (Smith, 2007).",
+            sourceLessonSlug: "bathing-islam-hard-soap",
+          },
+          {
+            prompt: "Why should you keep the maturity of the hammam in mind before reading about the Crusades later in the course?",
+            options: [
+              "Because the hammam was a recent invention at the time",
+              "Because Crusaders who met the hammam in the Levant were encountering a mature, centuries-deep institution, not a crude foreign washroom",
+              "Because Crusaders built the first hammams",
+              "Because the hammam had already disappeared by then",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Setting up the encounters section: the hammam was a deep, sophisticated institution when Crusaders met it (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-islam-hammam",
+          },
+        ],
+      },
+    },
   ],
 };
