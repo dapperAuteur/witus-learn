@@ -999,6 +999,54 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Florida Civics, Lesson 9 · Get involved where you live in Florida"],
   },
 
+  // ── State civics: Illinois (state-civics-il was written FROM Illinois's own sources) ──
+  // NOTE: Illinois's high-school Social Science Standards (2017) are DISCIPLINARY-CONCEPT
+  // standards (SS.CV.1-10), not course benchmarks — they name "constitutions", "institutions",
+  // "elections", and "participation" in the abstract rather than any state's structure. So the
+  // Illinois flagship's Illinois-specific lessons map onto the civics-institution and
+  // participation concept standards (SS.CV.1, SS.CV.2, SS.CV.3), honestly as partial where the
+  // standard reaches past what one state's structure covers. See data/il.ts.
+  {
+    id: "civics.il-state-structure",
+    claim: "Teaches Illinois's modern Constitution of 1970 (in effect July 1, 1971); its plural executive of six separately elected statewide officers — uniquely BOTH a Comptroller and a Treasurer, plus a Governor and Lieutenant Governor who since 2014 run on a joint ticket; a General Assembly of 118 representatives and 59 senators; and the Governor's amendatory and line-item vetoes with a three-fifths override.",
+    courseSlugs: ["state-civics-il"],
+    lessons: [
+      "Illinois Civics, Lesson 1 · Illinois's modern Constitution of 1970",
+      "Illinois Civics, Lesson 2 · Illinois's plural executive: six statewide officers",
+      "Illinois Civics, Lesson 3 · The General Assembly and the partisan-elected Supreme Court",
+    ],
+  },
+  {
+    id: "civics.il-courts",
+    claim: "Teaches Illinois's openly PARTISAN elected judiciary: a seven-justice Supreme Court elected from judicial districts (three from Cook County) to 10-year terms, then kept by a nonpartisan retention vote needing 60% to stay, with appellate and circuit judges elected the same way.",
+    courseSlugs: ["state-civics-il"],
+    lessons: ["Illinois Civics, Lesson 3 · The General Assembly and the partisan-elected Supreme Court"],
+  },
+  {
+    id: "civics.il-initiative",
+    claim: "Teaches Illinois's uniquely NARROW citizen initiative — usable only to amend the Legislative Article (the structure of the General Assembly), not ordinary laws or other amendments — and its model case, the 1980 Cutback Amendment that shrank the House from 177 to 118 and ended cumulative voting in multi-member districts.",
+    courseSlugs: ["state-civics-il"],
+    lessons: ["Illinois Civics, Lesson 4 · The limited citizen initiative and the 1980 Cutback Amendment"],
+  },
+  {
+    id: "civics.il-home-rule",
+    claim: "Teaches Illinois as one of the strongest HOME-RULE states — the deliberate opposite of Dillon's Rule, where units over 25,000 people are automatically home rule and start with broad power unless the state limits them — across 102 counties, including a home-rule Cook County, plus townships and among the most special districts of any state.",
+    courseSlugs: ["state-civics-il"],
+    lessons: ["Illinois Civics, Lesson 5 · Home rule and local government (the opposite of Dillon's Rule)"],
+  },
+  {
+    id: "civics.il-elections",
+    claim: "Teaches Illinois's expanded voter access — same-day (Election-Day) registration, automatic registration, no-excuse vote-by-mail with a permanent list, early voting, and online registration — administered locally by county clerks and some city election boards, with a standing flag to confirm current rules at elections.il.gov.",
+    courseSlugs: ["state-civics-il"],
+    lessons: ["Illinois Civics, Lesson 6 · Elections and how to take part"],
+  },
+  {
+    id: "civics.il-get-involved",
+    claim: "Teaches getting involved where you live, Illinois edition — registering and voting (even on Election Day), showing up at home-rule local meetings, contacting your Springfield legislators, using the state's one narrow initiative lever, and running for local office.",
+    courseSlugs: ["state-civics-il"],
+    lessons: ["Illinois Civics, Lesson 6 · Elections and how to take part"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
