@@ -1162,6 +1162,23 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   published in its \`notClaimed\`); Maryland's US and World History and Colorado's History, Geography,
   and Economics standards are deferred (fetch-and-verify-or-don't-cite). **\`NEXT_UP\` advanced past
   MD/CO to AL/LA.** No migration, no seed.
+- 🔧 **Minnesota and Wisconsin mapped, both fully bespoke** (\`feat/standards-mn-wi\`).
+  \`/academic-standards?state=MN\` and \`?state=WI\` flip from "not mapped yet" to real pages.
+  **Minnesota (16 standards, 10 full, 6 partial)** maps the **2021 Minnesota Academic Standards in
+  Social Studies**, Citizenship and Government strand, high school, transcribed verbatim from MDE's
+  own learning-progression PDF: 9.1.4.7 (the powers and operations of Minnesota's own government)
+  and 9.1.4.8 (local government in Minnesota) host the \`state-civics-mn\` flagship, with the general
+  civics ladder on 9.1.4.1 through 9.1.4.5 and the media/source-literacy method on 9.1.1.3.
+  Minnesota is the notable framework case: it did NOT adopt the Common Core for math (it kept its
+  own), and its once-Common-Core ELA has since been replaced by Minnesota's own 2020 ELA standards,
+  so ELA is deferred rather than aliased. **Wisconsin (13 standards, 5 full, 8 partial)** maps the
+  **2018 Wisconsin Standards for Social Studies** Political Science, Inquiry, and History strands
+  (verbatim from DPI): SS.PS3.c.h (the structure and functions of Wisconsin's own government) hosts
+  the \`state-civics-wi\` flagship (the Wisconsin Idea, the "Frankenstein" partial veto, nonpartisan
+  spring court elections, the strong recall, and no citizen initiative), and the source-literacy
+  method maps to the Inquiry and History source-analysis indicators. Wisconsin's science (2017,
+  NGSS-based but its own reorganization) and its own ELA are published as honest deferred gaps, not
+  aliased. \`NEXT_UP\` advances to **AL/LA**.
 - 🔧 **Missouri mapped, fully bespoke** (\`feat/standards-mo-md\`). \`/academic-standards?state=MO\`
   flips from "not mapped yet" to a real page. Missouri withdrew from the Common Core, so its ELA and
   math are Missouri's own and its science is Missouri's own (not NGSS); the mapped codes are all
