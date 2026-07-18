@@ -1566,6 +1566,68 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Missouri Civics, Lesson 5 · Elections and how to take part in Missouri"],
   },
 
+  // ── State civics: Maryland (state-civics-md was written FROM Maryland's own sources) ──
+  // NOTE: Maryland's required High School American Government course (Maryland Social Studies
+  // Framework, June 2025) reaches Maryland's OWN government explicitly — GOV.2.1.a names "the
+  // Maryland General Assembly," and the legislative/executive/judicial structure indicators name
+  // "Federal and Maryland State Government" in their assessment limits — so the Maryland flagship's
+  // structure lessons have a genuine home, mapped there rather than to abstract concepts. Maryland
+  // adopted the Common Core (as the Maryland College and Career Ready Standards) for ELA and, as an
+  // NGSS lead state, the NGSS for science; data/md.ts adopts both from ../shared and publishes math
+  // as unclaimed. The flagship's most distinctive fact — Maryland's nation-strongest executive
+  // budget power — has no code of its own; it is claimed through the executive-comparison indicator
+  // (GOV.3.3.a) and published in md.ts's notClaimed list.
+  {
+    id: "civics.md-budget-power",
+    claim:
+      "Teaches Maryland's most distinctive civic feature — the extraordinary budget power of its Governor, widely described as the strongest gubernatorial budget authority in the nation: under Maryland's executive-budget system (in the Constitution since 1916) the Governor proposes the budget and the General Assembly can generally only CUT or reduce items, not add new spending or move money to new purposes, which makes the Governor unusually dominant over state finances.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 1 · Maryland's Governor: the strongest budget power in the nation",
+    ],
+  },
+  {
+    id: "civics.md-state-structure",
+    claim:
+      "Teaches Maryland's three branches as Maryland's: the Constitution of 1867 (its fourth); a compact plural executive (a joint-ticket Governor and Lieutenant Governor with a separately elected Attorney General and Comptroller, while the Secretary of State is appointed by the Governor and the Treasurer is elected by the General Assembly); a bicameral General Assembly of a 141-member House of Delegates and a 47-member Senate serving 4-year terms in a fixed 90-day annual session; and the three-fifths veto override.",
+    courseSlugs: ["state-civics-md"],
+    lessons: ["Maryland Civics, Lesson 2 · The executive and the General Assembly"],
+  },
+  {
+    id: "civics.md-courts",
+    claim:
+      "Teaches Maryland's courts as Maryland's, including the 2022 renaming voters approved: the highest court became the “Supreme Court of Maryland” (before 2022 the Court of Appeals) and the intermediate court the “Appellate Court of Maryland”; appellate judges are appointed by the Governor (advised by a nominating commission) with Senate confirmation and then face yes/no retention elections, while Circuit Court trial judges run in contested elections — a blend of merit appointment and election.",
+    courseSlugs: ["state-civics-md"],
+    lessons: ["Maryland Civics, Lesson 3 · Maryland's courts and a 2022 name change"],
+  },
+  {
+    id: "civics.md-referendum",
+    claim:
+      "Teaches Maryland's distinctive citizen check — the “petition to referendum,” by which voters gather signatures to suspend a law the General Assembly just passed and put it to a statewide vote — and that Maryland has NO citizen initiative to propose new laws, so the citizen power here is a veto (reject a law), not an initiative (start one); taught alongside how a bill becomes a Maryland law and the three-fifths veto override.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 4 · How a bill becomes law, and Maryland's referendum (but no initiative)",
+    ],
+  },
+  {
+    id: "civics.md-local-government",
+    claim:
+      "Teaches Maryland local government as Maryland's: 23 counties (many of them home-rule “charter” counties like Montgomery and Baltimore County, with elected councils and county executives) PLUS the independent City of Baltimore, which belongs to no county and is a county-equivalent with its own government — so Baltimore City and Baltimore County are two separate governments.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 5 · Local government, independent Baltimore, and how to take part",
+    ],
+  },
+  {
+    id: "civics.md-get-involved",
+    claim:
+      "Teaches taking part where you live, Maryland edition — registering and voting with Maryland's early in-person voting, no-excuse mail-in ballots, and same-day registration; joining a petition to referendum to challenge a new law; showing up at county councils, city councils, and school boards; contacting your Annapolis Delegates and Senator; and running for local office — flagged as time-sensitive and pointing to elections.maryland.gov.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 5 · Local government, independent Baltimore, and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
