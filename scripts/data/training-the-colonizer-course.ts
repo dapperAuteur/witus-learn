@@ -1193,5 +1193,268 @@ So the honest claim credits the documented skill without inventing the transfer.
         ],
       },
     },
+    // ──────────────── SECTION 5 · MEDICINE: ONESIMUS AND THE HEALERS ────────────────
+    {
+      slug: "ttc-onesimus",
+      title: "14 · Onesimus and the inoculation that saved Boston",
+      section: "Section 5 · Medicine: Onesimus and the healers",
+      body: `This is the cleanest, best-documented case in the whole course, and it is worth slowing down for. It is the story of how an enslaved African man's knowledge saved lives in colonial Boston, and how little that knowledge bought him.
+
+In 1706 a congregation in Boston gave their minister, **Cotton Mather**, an enslaved African man as a gift. Mather named him **Onesimus**. Around 1716 Mather, curious, asked Onesimus whether he had ever had smallpox, the disease that periodically swept through colonial towns and killed a large share of everyone it touched. Onesimus answered, in Mather's own written account, "both, Yes, and No." He then explained that as a boy in Africa he had undergone an operation: someone had deliberately put a small amount of matter from a smallpox sore into a cut in his arm. He had gotten a little sick, recovered, and was now immune for life. He showed Mather the scar.
+
+Mather wrote it down in a 1716 letter to the Royal Society in London. In his words, Onesimus told him the operation "was often used among the Guramantese, & whoever had the Courage to use it, was forever free from the Fear of the Contagion." What Onesimus was describing is **variolation**, sometimes called inoculation: a real, effective folk practice known in parts of West Africa, as well as in the Middle East and Asia. It came decades before Edward Jenner's cowpox vaccine of 1796. (A note on honesty: Onesimus's exact origin is uncertain. "Guramantese" is Mather's word, and scholars have read it different ways. We do not pretend to know more than the record does.)
+
+The test came in 1721, when smallpox hit Boston hard. Mather urged the town's doctors to try inoculation. Only one, **Dr. Zabdiel Boylston**, was willing. Boylston inoculated **247 people**. **Six** of them died, about **two percent**. Among Bostonians who caught smallpox the natural way that year, roughly **fourteen percent** died (Boylston, 1726). The gap is enormous, and it is the first careful statistical demonstration of inoculation by an American doctor. The knowledge worked.
+
+You might expect Boston to be grateful. Instead there was fury. Inoculation was attacked as dangerous and ungodly, and, this is the part that belongs in this course, it was attacked in part **because of where it came from**. To critics, taking medical advice that traced to an enslaved African was itself a scandal. The historian **Margot Minardi** has shown that the 1721 controversy was, among other things, an argument about race: about whether knowledge from a Black African could be trusted at all (Minardi, 2004). The anger turned violent; someone threw a firebomb into Mather's house.
+
+Now hold the whole thing together, because the irony is the lesson. The knowledge that gave Boston its first real defense against its deadliest disease came from Onesimus. And Onesimus got almost nothing. Mather kept enslaving him even while using his knowledge, and described him in print with a slaveholder's condescension, "a pretty Intelligent Fellow." Onesimus eventually arranged a kind of partial freedom around 1716 by paying toward the purchase of another man to replace him, under conditions Mather set. His expertise saved strangers' lives. It did not make him free, and Boston did not put his name on anything.
+
+:::reveal What did Onesimus teach Cotton Mather, what did Boylston's 1721 results show, and what did that knowledge win for Onesimus himself? ||| Onesimus taught Mather variolation (inoculation): deliberately introducing a little smallpox matter into a cut to produce a mild case and lifelong immunity, a practice he knew from Africa. In 1721 Dr. Zabdiel Boylston inoculated 247 people and about 2 percent died, versus roughly 14 percent among those who caught smallpox naturally, the first careful American demonstration that it worked. For Onesimus it won almost nothing: he remained enslaved, was described with condescension, and only arranged a partial, conditional freedom by helping pay for a replacement.
+
+## Sources
+- Boylston, Z. (1726). *An historical account of the small-pox inoculated in New England*. S. Chandler.
+- Minardi, M. (2004). The Boston inoculation controversy of 1721-1722: An incident in the history of race. *The William and Mary Quarterly, 61*(1), 47-76.`,
+      recallContent: [
+        {
+          prompt: "What is variolation, and how did Cotton Mather learn about it?",
+          answer:
+            "Deliberately introducing a small amount of smallpox matter into a cut in a healthy person, producing a mild case and lifelong immunity. Mather learned it around 1716 from the enslaved African man he called Onesimus, who had undergone it as a boy in Africa and showed Mather the scar. Mather recorded it in a 1716 letter to the Royal Society.",
+        },
+        {
+          prompt: "What did Boylston's 1721 Boston results show, and why did the inoculation face fury?",
+          answer:
+            "Of 247 people Boylston inoculated, about 2 percent died, versus roughly 14 percent among those who caught smallpox naturally, the first careful American demonstration that inoculation worked. It faced fury partly because of race: Margot Minardi (2004) shows critics distrusted medical knowledge that traced to an enslaved African. Someone even firebombed Mather's house.",
+        },
+        {
+          prompt: "How is Onesimus's story the through-line of the course?",
+          answer:
+            "His knowledge gave Boston its first real defense against smallpox, yet he stayed enslaved, was described with a slaveholder's condescension, and only gained a partial, conditional freedom. Life-saving expertise bought him almost nothing.",
+        },
+      ],
+    },
+    {
+      slug: "ttc-healers-botany",
+      title: "15 · Healers, midwives, and plant knowledge",
+      section: "Section 5 · Medicine: Onesimus and the healers",
+      body: `Onesimus is famous, but he was not alone. Across the plantation South, enslaved people carried a large body of medical and botanical knowledge, and much of the daily doctoring on plantations was done by them.
+
+The historian **Sharla Fett**, in *Working Cures*, reconstructed this world (Fett, 2002). Enslaved healers, herb doctors, and especially **midwives** cared for the sick, delivered babies, and made medicines from plants, and they did this for **both** Black and white households. Their knowledge drew on African precedents and on hard-won experience with local plants. Fett makes a sharp point that fits this whole course: enslaved people understood health and the body in ways that clashed with the slaveholder's view of a body as **property**. Healing could be a quiet form of authority and resistance inside a system built to deny both.
+
+Occasionally the record shows white society openly paying for that knowledge, which tells you they knew its worth. In South Carolina in 1750, an enslaved man known as **Caesar** was famous for an antidote he used against poison and snakebite. The colonial assembly did something revealing: it **bought** his knowledge. Caesar was granted his freedom and an annual payment of one hundred pounds for life, in exchange for making his remedy public, and it was printed in the *South-Carolina Gazette* (Fett, 2002; South Carolina Encyclopedia, n.d.). He is often called the first African American to have a medical remedy published in print.
+
+It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A government decided this knowledge was valuable enough to purchase and publish, and the price of freedom for the man who held it was that he **hand the knowledge over**. One man was freed; the institution of slavery did not budge an inch. Caesar's case is the exception that measures the rule: expertise was recognized, even rewarded, in a single life, precisely because in every other case it was taken for nothing. The knowledge was worth a fortune. The knower was worth, to the system, one annuity and a paragraph in the newspaper.
+
+:::reveal What did Sharla Fett's Working Cures show about enslaved healers, and what does the 1750 case of Caesar reveal about how that knowledge was valued? ||| Fett (2002) showed that enslaved healers, herb doctors, and especially midwives did much of the doctoring on plantations, caring for both Black and white households, drawing on African precedents, and using healing as a quiet form of authority and resistance against a system that treated bodies as property. Caesar, an enslaved South Carolinian, was granted freedom and a yearly payment in 1750 in exchange for making his poison-and-snakebite antidote public, which shows white society knew the knowledge was valuable, yet the case was a rare exception: one man freed while slavery continued unchanged.
+
+## Sources
+- Fett, S. M. (2002). *Working cures: Healing, health, and power on southern slave plantations*. University of North Carolina Press.
+- South Carolina Encyclopedia. (n.d.). *Caesar*. https://www.scencyclopedia.org`,
+      recallContent: [
+        {
+          prompt: "What roles did enslaved healers and midwives play, according to Fett (2002)?",
+          answer:
+            "They did much of the everyday doctoring on plantations, caring for the sick, delivering babies, and making plant medicines for both Black and white households, drawing on African precedents. Fett shows healing gave them authority and could be a form of resistance against a system that treated bodies as property.",
+        },
+        {
+          prompt: "Why is the 1750 case of Caesar the 'exception that measures the rule'?",
+          answer:
+            "The South Carolina assembly freed him and paid him an annuity in exchange for publishing his poison-and-snakebite antidote, showing the knowledge was recognized as valuable. But only one man was freed while slavery continued unchanged; the reward was exceptional precisely because in every other case such expertise was taken for nothing.",
+        },
+      ],
+    },
+    {
+      slug: "ttc-quiz-medicine",
+      title: "16 · Quiz: medicine and healing",
+      section: "Section 5 · Medicine: Onesimus and the healers",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Who was Onesimus?",
+            options: [
+              "A Boston doctor",
+              "An enslaved African man in Cotton Mather's household who taught Mather about inoculation",
+              "A European scientist",
+              "A fictional figure",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Given to Mather in 1706, Onesimus described the African practice of variolation and showed Mather his inoculation scar.",
+            sourceLessonSlug: "ttc-onesimus",
+          },
+          {
+            prompt: "What is variolation (inoculation), as Onesimus described it?",
+            options: [
+              "Drinking a herbal tea to prevent disease",
+              "Deliberately introducing a small amount of smallpox matter into a cut, producing a mild case and lifelong immunity",
+              "Avoiding all contact with the sick",
+              "A European invention of the 1800s",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It was a real, effective folk practice known in parts of West Africa, the Middle East, and Asia, decades before Jenner's 1796 cowpox vaccine.",
+            sourceLessonSlug: "ttc-onesimus",
+          },
+          {
+            prompt: "How did Cotton Mather record learning of the practice?",
+            options: [
+              "He never wrote it down",
+              "In a 1716 letter to the Royal Society, quoting Onesimus that it was 'often used among the Guramantese'",
+              "In a novel",
+              "In a painting",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Mather's own 1716 letter is the primary record; 'Guramantese' is his word, and its exact meaning is debated.",
+            sourceLessonSlug: "ttc-onesimus",
+          },
+          {
+            prompt: "Why does the course say Onesimus's exact origin is uncertain?",
+            options: [
+              "Because he was not really African",
+              "Because 'Guramantese' is Mather's term and scholars read it different ways, so the record does not pin down a precise origin",
+              "Because origins never matter",
+              "Because Mather lied about everything",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The course refuses to claim more than the record supports about Onesimus's specific background.",
+            sourceLessonSlug: "ttc-onesimus",
+          },
+          {
+            prompt: "What were the results of Dr. Zabdiel Boylston's 1721 Boston inoculations?",
+            options: [
+              "Everyone he inoculated died",
+              "Of 247 people inoculated, about 2 percent died, versus roughly 14 percent among those who caught smallpox naturally",
+              "The results were never recorded",
+              "Inoculation made the epidemic worse",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Boylston's carefully documented results (1726) were the first American statistical demonstration that inoculation worked.",
+            sourceLessonSlug: "ttc-onesimus",
+          },
+          {
+            prompt: "According to Margot Minardi (2004), the 1721 inoculation controversy was partly an argument about what?",
+            options: [
+              "Taxes",
+              "Race: whether medical knowledge traced to an enslaved African could be trusted",
+              "The weather",
+              "Shipping routes",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Minardi shows the backlash was tied to the knowledge's origin in an enslaved African; the fury even turned violent.",
+            sourceLessonSlug: "ttc-onesimus",
+          },
+          {
+            prompt: "What did Onesimus's life-saving knowledge win for him personally?",
+            options: [
+              "Immediate freedom and wealth",
+              "Almost nothing: he stayed enslaved, was described with condescension, and only arranged a partial, conditional freedom",
+              "A statue in Boston",
+              "A seat in the legislature",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The knowledge protected a city; it did not free the man who carried it. That gap is the course's through-line.",
+            sourceLessonSlug: "ttc-onesimus",
+          },
+          {
+            prompt: "What did Sharla Fett's Working Cures (2002) document?",
+            options: [
+              "That enslaved people did no medical work",
+              "That enslaved healers, herb doctors, and midwives did much of the doctoring on plantations for both Black and white households",
+              "That all plantation medicine was done by European doctors",
+              "That healing was illegal",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Fett reconstructs enslaved healing knowledge drawn from African precedents, and healing as authority and resistance.",
+            sourceLessonSlug: "ttc-healers-botany",
+          },
+          {
+            prompt: "Which group did Fett highlight as central to plantation health culture?",
+            options: [
+              "Enslaved women, especially as midwives and medicine-makers",
+              "European ship captains",
+              "Only enslaved men",
+              "Colonial governors",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Enslaved women made medicines, cared for the sick, and served as midwives in both Black and white households.",
+            sourceLessonSlug: "ttc-healers-botany",
+          },
+          {
+            prompt: "What happened to the enslaved South Carolina healer Caesar in 1750?",
+            options: [
+              "He was executed",
+              "The colonial assembly freed him and paid him an annuity in exchange for making his poison-and-snakebite antidote public",
+              "He was sold to another colony",
+              "Nothing is known about him",
+            ],
+            correctIndex: 1,
+            explanation:
+              "His remedy was printed in the South-Carolina Gazette; he is often called the first African American to have a remedy published in print.",
+            sourceLessonSlug: "ttc-healers-botany",
+          },
+          {
+            prompt: "Why does the course call Caesar's freedom 'the exception that measures the rule'?",
+            options: [
+              "Because his cure did not work",
+              "Because one man was freed for his knowledge while slavery itself continued unchanged, and such rewards were rare precisely because expertise was usually taken for nothing",
+              "Because everyone with medical knowledge was freed",
+              "Because Caesar was never actually enslaved",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The single purchased freedom highlights how, in every other case, valuable knowledge was extracted without payment.",
+            sourceLessonSlug: "ttc-healers-botany",
+          },
+          {
+            prompt: "What does Caesar's case show about how white society valued enslaved medical knowledge?",
+            options: [
+              "That they thought it was worthless",
+              "That they knew it was valuable, valuable enough for a government to buy and publish it",
+              "That they ignored it entirely",
+              "That only Europeans had useful cures",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Paying for and printing the remedy is an admission of its worth, even as the system that enslaved the healer went on.",
+            sourceLessonSlug: "ttc-healers-botany",
+          },
+          {
+            prompt: "How do the medicine lessons reinforce the course's central tension?",
+            options: [
+              "They show enslaved knowledge was always fairly rewarded",
+              "They show life-saving expertise flowed from enslaved people to society while buying the knowers little or no freedom",
+              "They show enslaved people had no medical knowledge",
+              "They show medicine was unrelated to slavery",
+            ],
+            correctIndex: 1,
+            explanation:
+              "From Onesimus to the plantation midwives to Caesar, the value went outward while the people stayed bound.",
+            sourceLessonSlug: "ttc-onesimus",
+          },
+          {
+            prompt: "Why is Onesimus's story described as the course's clearest documented case?",
+            options: [
+              "Because it rests on Mather's own writing and Boylston's careful published results, not on speculation",
+              "Because there are no records of it",
+              "Because it is a legend with no evidence",
+              "Because it is contested like the Black Rice debate",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Mather's 1716 letter and Boylston's 1726 account make this an unusually well-sourced case of transferred knowledge.",
+            sourceLessonSlug: "ttc-onesimus",
+          },
+        ],
+      },
+    },
   ],
 };
