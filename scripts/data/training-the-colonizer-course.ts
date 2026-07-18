@@ -934,5 +934,264 @@ So the honest statement is narrower than the exciting one, and still worth sayin
         ],
       },
     },
+    // ──────────────── SECTION 4 · BUILDING AND IRONWORK ────────────────
+    {
+      slug: "ttc-building",
+      title: "11 · The builders: skilled hands, uncredited",
+      section: "Section 4 · Building and ironwork",
+      body: `Walk through an old Southern city, or through the middle of Washington, D.C., and you are often looking at work done by enslaved hands. Not just the heavy hauling, though there was plenty of that, but the skilled trades: carpentry, joinery, sawing, brickmaking, bricklaying, stone masonry, plastering, roofing. Remember the runaway advertisements from the start of this course. Planters described the people they were hunting by trade, "a good carpenter," "a sawyer," "a bricklayer," because that skill was valuable and identifying. Those ads are a paper trail of enslaved craftsmanship.
+
+The scale reaches the center of the country. **Enslaved laborers helped build the United States Capitol and the White House** in Washington. They quarried and hauled the stone, sawed the timber, made and laid the brick. The record of their names and their hours survives in construction accounts (White House Historical Association, n.d.).
+
+Now the discipline, and it matters here, because this is exactly the kind of claim that gets inflated. What the record documents is **labor** and, in many cases, **skilled craft**. It does not usually document **design**. The architects and engineers who designed the Capitol were, in the record, white professionals. So the honest sentence is: enslaved artisans built these structures with real skill; the drawings on which they worked were mostly not theirs, and we should not hand a named enslaved person the design of a famous building unless a source actually says so. Claiming otherwise would be the romantic overcorrection again, and it is not necessary, because the documented truth is already remarkable.
+
+And sometimes the record does reach an individual, which lets us be precise instead of vague. **Horace King** (1807 to 1885) was born enslaved in South Carolina and became one of the most respected bridge builders in the Deep South. Working in the Chattahoochee River valley, he built and supervised the great **Town lattice truss** covered bridges across rivers from Georgia into Mississippi (Encyclopedia of Alabama, n.d.; New Georgia Encyclopedia, n.d.). Hold onto the timeline, because it is the whole point of this course in one life: King was the best bridge man in the region **while he was still enslaved**. His skill did not free him. He was freed only in **1846**, by a special act of the Alabama legislature, after years of building the infrastructure of states that owned him. Later he grew wealthy, built the curving staircases of the Alabama capitol, and served in the legislature during Reconstruction. But for the years that matter most to this course, he is the exact picture of the through-line: indispensable, uncredited in the ordinary sense, and unfree.
+
+:::reveal What does the record usually document about enslaved people and famous buildings (like the U.S. Capitol), and what does the life of Horace King show about skill and freedom? ||| The record documents enslaved LABOR and often skilled CRAFT (quarrying, sawing, bricklaying, masonry), but usually not DESIGN, which was credited to white architects, so we should not attribute a building's design to a named enslaved person without a source. Horace King, one of the Deep South's best bridge builders, shows that skill did not buy freedom: he built major bridges while enslaved and was freed only in 1846 by a special act of the Alabama legislature.
+
+## Sources
+- White House Historical Association. (n.d.). *Enslaved labor and the construction of the U.S. Capitol*. https://www.whitehousehistory.org
+- Encyclopedia of Alabama. (n.d.). *Horace King*. https://encyclopediaofalabama.org
+- New Georgia Encyclopedia. (n.d.). *Horace King (1807-1885)*. https://www.georgiaencyclopedia.org`,
+      recallContent: [
+        {
+          prompt: "What is the honest way to describe enslaved people's role in building the U.S. Capitol and Southern architecture?",
+          answer:
+            "As documented labor and, in many cases, skilled craft (quarrying, sawing, brickmaking and laying, masonry, plastering, carpentry). The design was usually credited to white architects, so it is overreach to attribute a famous building's design to a named enslaved person without a source.",
+        },
+        {
+          prompt: "Why is Horace King the through-line of the course in one life?",
+          answer:
+            "He was one of the most respected bridge builders in the Deep South, building major Town lattice truss bridges, yet he did this while enslaved. His skill did not free him; he gained freedom only in 1846 by a special act of the Alabama legislature. Indispensable, and unfree.",
+        },
+      ],
+    },
+    {
+      slug: "ttc-ironwork",
+      title: "12 · Iron: the smiths, and a myth to retire",
+      section: "Section 4 · Building and ironwork",
+      body: `Iron ran the plantation and the farm: hoes, plows, chains, nails, hinges, tools, wheel rims, the hardware of a whole economy. Making and mending all of it took blacksmiths, and a great many of those smiths were enslaved.
+
+The documentation here is unusually good. The historian **Charles Dew**, in *Bond of Iron*, reconstructed the working lives of enslaved ironworkers at Buffalo Forge, an ironworks in the Shenandoah Valley of Virginia (Dew, 1994). These were not casual laborers. They were skilled forgemen, founders, colliers, and blacksmiths who ran the forge and the furnace, men whose expertise the operation depended on, and Dew was able to name them and follow their work through the records. Enslaved smiths also produced the decorative wrought iron, the gates, railings, and balconies, that cities like Charleston and New Orleans are still known for.
+
+Now a hard turn, because this lesson has a **myth to retire**, and retiring a beloved claim is part of the honesty this course demands.
+
+You will sometimes read that enslaved Africans brought African **iron-smelting** technology to the Americas. Be careful. There are two separate true things and one shaky bridge between them:
+- **True:** West Africa had ancient, sophisticated ironworking. West African smiths were smelting iron in furnaces centuries before the Atlantic slave trade, a real and important history you can meet in this platform's **Africa Before Colonization** course.
+- **True:** enslaved smiths in the Americas were expert ironworkers, as Dew documents in detail.
+- **Shaky:** that African **smelting** technology (the furnaces that make iron from ore) was transferred to and used on American plantations. The documented American ironwork is **forging and casting**: enslaved smiths worked iron that came from European-style furnaces and imports. There is not good evidence that they built West African bloomery furnaces here.
+
+So the honest claim credits the documented skill without inventing the transfer. West African metallurgy was real, in Africa. Enslaved American ironwork was real, and skilled, at the forge. Gluing them into "Africans brought iron smelting to America" is a claim the record does not support, and the course will not make it. This is the same muscle you built in the rice debate: keep what is documented, drop what is not, and do not let a good story outrun its evidence.
+
+:::reveal What does Charles Dew's Bond of Iron document, and what is the "myth to retire" about African iron in the Americas? ||| Dew (1994) documents enslaved ironworkers at Buffalo Forge in Virginia as skilled forgemen, founders, colliers, and blacksmiths who ran the forge and furnace and can be named from the records. The myth to retire: that African iron-SMELTING technology transferred to American plantations. West African smelting was real (in Africa) and enslaved American ironwork was real and skilled (forging and casting European-style/imported iron), but there is no good evidence enslaved people built West African smelting furnaces in the Americas, so the "Africans brought iron smelting to America" claim is not supported.
+
+## Sources
+- Dew, C. B. (1994). *Bond of iron: Master and slave at Buffalo Forge*. W. W. Norton.`,
+      recallContent: [
+        {
+          prompt: "What did Charles Dew's Bond of Iron (1994) show about enslaved ironworkers?",
+          answer:
+            "At Buffalo Forge in Virginia, enslaved people were skilled forgemen, founders, colliers, and blacksmiths who ran the forge and furnace. Dew could name them and trace their work through the records; the operation depended on their expertise.",
+        },
+        {
+          prompt: "What is the 'myth to retire' about African iron in the Americas, and why?",
+          answer:
+            "The claim that African iron-smelting technology was transferred to American plantations. West African smelting was real in Africa, and enslaved American ironwork (forging and casting) was real and skilled, but there is no good evidence enslaved people built West African smelting furnaces here. The 'Africans brought iron smelting to America' claim outruns the evidence.",
+        },
+      ],
+    },
+    {
+      slug: "ttc-quiz-building",
+      title: "13 · Quiz: building and ironwork",
+      section: "Section 4 · Building and ironwork",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Beyond heavy hauling, what skilled building trades did enslaved people commonly practice?",
+            options: [
+              "Only field labor, never a trade",
+              "Carpentry, sawing, brickmaking and laying, masonry, plastering, and roofing",
+              "Only office work",
+              "None; all building was done by Europeans",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Runaway ads that named a person's trade ('a good carpenter,' 'a sawyer') are a paper trail of enslaved craftsmanship.",
+            sourceLessonSlug: "ttc-building",
+          },
+          {
+            prompt: "What famous federal buildings were built partly with enslaved labor?",
+            options: [
+              "The United States Capitol and the White House",
+              "The Eiffel Tower",
+              "Buckingham Palace",
+              "No government buildings used enslaved labor",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Enslaved laborers quarried and hauled stone, sawed timber, and made and laid brick; their hours survive in construction accounts.",
+            sourceLessonSlug: "ttc-building",
+          },
+          {
+            prompt: "What is the key distinction the course draws about enslaved people and famous buildings?",
+            options: [
+              "Between labor and craft, which are the same thing",
+              "Between documented labor and skilled craft (yes) and documented design (usually not, credited to white architects)",
+              "Between real and imaginary buildings",
+              "Between cheap and expensive materials",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The record documents skilled labor; it does not usually document design. Attributing a building's design to a named enslaved person needs a source.",
+            sourceLessonSlug: "ttc-building",
+          },
+          {
+            prompt: "Why does the course refuse to attribute a famous building's DESIGN to a named enslaved person without a source?",
+            options: [
+              "Because enslaved people had no skills",
+              "Because doing so would be a romantic overcorrection unsupported by the record, when the documented truth is already remarkable",
+              "Because design does not matter",
+              "Because no records survive at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Inflating labor into design repeats the overcorrection the course warns against; the documented skilled craft stands on its own.",
+            sourceLessonSlug: "ttc-building",
+          },
+          {
+            prompt: "Who was Horace King?",
+            options: [
+              "A European architect",
+              "A man born enslaved who became one of the most respected bridge builders in the Deep South",
+              "A cotton planter",
+              "A fictional character",
+            ],
+            correctIndex: 1,
+            explanation:
+              "King built and supervised major Town lattice truss covered bridges across the Chattahoochee valley and beyond.",
+            sourceLessonSlug: "ttc-building",
+          },
+          {
+            prompt: "What does Horace King's life show about skill and freedom?",
+            options: [
+              "That being highly skilled quickly earned freedom",
+              "That his skill did not free him: he built major bridges while enslaved and was freed only in 1846 by a special act of the Alabama legislature",
+              "That he was never actually enslaved",
+              "That skill and freedom are unrelated to slavery",
+            ],
+            correctIndex: 1,
+            explanation:
+              "King is the through-line in one life: indispensable and unfree until a special legislative act freed him in 1846.",
+            sourceLessonSlug: "ttc-building",
+          },
+          {
+            prompt: "What kind of bridges is Horace King known for building?",
+            options: [
+              "Steel suspension bridges",
+              "Town lattice truss covered bridges",
+              "Concrete highway overpasses",
+              "Rope footbridges",
+            ],
+            correctIndex: 1,
+            explanation:
+              "He built and supervised Town lattice truss covered bridges over rivers from Georgia into Mississippi.",
+            sourceLessonSlug: "ttc-building",
+          },
+          {
+            prompt: "What did Charles Dew's Bond of Iron (1994) document?",
+            options: [
+              "That enslaved people did no ironwork",
+              "Skilled enslaved forgemen, founders, colliers, and blacksmiths who ran Buffalo Forge in Virginia",
+              "That all ironworkers were European",
+              "The invention of steel",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Dew named enslaved ironworkers and traced their skilled work through the ironworks' records.",
+            sourceLessonSlug: "ttc-ironwork",
+          },
+          {
+            prompt: "What decorative ironwork are cities like Charleston and New Orleans known for, partly made by enslaved smiths?",
+            options: [
+              "Plastic fencing",
+              "Wrought-iron gates, railings, and balconies",
+              "Glass windows",
+              "Brick chimneys",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Enslaved smiths produced skilled decorative wrought iron still visible in those cities.",
+            sourceLessonSlug: "ttc-ironwork",
+          },
+          {
+            prompt: "What is the 'myth to retire' in the ironwork lesson?",
+            options: [
+              "That West Africa had ironworking at all",
+              "That African iron-smelting technology was transferred to and used on American plantations",
+              "That enslaved people worked iron",
+              "That iron was important to the plantation economy",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The transfer of African smelting furnaces to the Americas is not supported by the record.",
+            sourceLessonSlug: "ttc-ironwork",
+          },
+          {
+            prompt: "Which two things ARE true, even as the 'smelting transfer' claim is not supported?",
+            options: [
+              "West Africa had no metallurgy, and enslaved smiths were unskilled",
+              "West Africa had ancient iron-smelting, and enslaved American smiths were expert at forging and casting",
+              "Europeans invented all ironwork, and Africans learned it from them",
+              "Iron was unimportant, and smiths were rare",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both facts stand; what fails is gluing them into a documented smelting-technology transfer.",
+            sourceLessonSlug: "ttc-ironwork",
+          },
+          {
+            prompt: "What did enslaved American ironworkers mostly do with iron, according to the record?",
+            options: [
+              "Smelt it from ore in West African bloomery furnaces",
+              "Forge and cast iron that came from European-style furnaces and imports",
+              "Only mine the ore",
+              "Nothing; they did not work iron",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The documented American ironwork is forging and casting, not the West African smelting process.",
+            sourceLessonSlug: "ttc-ironwork",
+          },
+          {
+            prompt: "What thinking skill does retiring the iron-smelting myth reinforce?",
+            options: [
+              "Believing the most exciting version of a story",
+              "Keeping what is documented, dropping what is not, and not letting a good story outrun its evidence",
+              "Ignoring African history",
+              "Accepting any claim about Africa",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is the same discipline as the rice debate, applied to a claim that flatters rather than erases.",
+            sourceLessonSlug: "ttc-ironwork",
+          },
+          {
+            prompt: "How do the building and ironwork lessons connect to the course's through-line?",
+            options: [
+              "They show enslaved skill made owners and nations wealthy while the skilled workers stayed unfree and uncredited",
+              "They show enslaved people were paid well for their crafts",
+              "They show only Europeans had building skills",
+              "They show skill always led to freedom",
+            ],
+            correctIndex: 0,
+            explanation:
+              "From the Capitol to Horace King's bridges to the forge, expertise built value it did not buy back as freedom.",
+            sourceLessonSlug: "ttc-building",
+          },
+        ],
+      },
+    },
   ],
 };
