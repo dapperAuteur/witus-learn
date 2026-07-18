@@ -1210,6 +1210,32 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   say so; Arizona's HS.C2.5 (AZ-vs-US rights comparison) is rejected despite being the flagship's
   home framework; U.S. History Since 1929 starts too late for the Gilded Age labor units. **No
   migration, no seed.**
+- 🔧 **Massachusetts + Tennessee mapped — states #10 and #11, both fully bespoke** (\`feat/standards-ma-tn\`) —
+  \`/academic-standards?state=MA\` and \`?state=TN\` flip from "not mapped yet" to real pages: two new
+  data files + \`pnpm gen:standards\`, zero code change. **Massachusetts: 35 standards (18 full, 17
+  partial) across 7 frameworks** from the **2018 History and Social Science Framework** — Massachusetts
+  writes its own social studies and revised Common Core into its **2017 ELA & Literacy Framework**
+  (verified: the grades 11–12 Reading literacy standards RCA-H.6/.8/.9 are word-for-word CCSS but MA
+  relabels the codes and revised the writing standards, so mapped as MA's own). The \`state-civics-ma\`
+  flagship's fullest home is real: the **grade 8 Civics** course "United States and Massachusetts
+  Government and Civic Life" (Topic 6 names the General Court, the Supreme Judicial Court, open town
+  meeting, and the Massachusetts Constitution) plus the **US Government & Politics elective** (Topic 2).
+  Also Economics, US History I & II, World History II (the Opium-trade imperialism standard), and the
+  grades 11–12 literacy standards. **Tennessee: 34 standards (18 full, 16 partial) across 4 frameworks**
+  from the **2019 Tennessee Academic Standards for Social Studies** — Tennessee withdrew from Common
+  Core and writes its own K-12 standards. The \`state-civics-tn\` flagship maps to the **US Government and
+  Civics** course's dedicated **"Tennessee State and Local Government" strand (GC.28–GC.30)**, plus
+  Economics, World History (the Opium Wars), and US History (labor movement, the Great Migration,
+  Prohibition, the Harlem Renaissance). doe.mass.edu (403) and tn.gov both block tooling, so both
+  documents were transcribed from **Wayback byte-faithful mirrors** of the DOEs' own titled PDFs
+  (mirror URLs in \`data/ma.ts\` / \`data/tn.ts\`; \`sourceUrl\` is the canonical DOE link); TN's
+  two-column bulleted standards were de-interleaved deterministically. Honest gaps published per state:
+  neither state's own science standards were fetched (fetch-or-don't-cite); TN's ELA/math are its own
+  (not Common Core) and deferred; and the flagships' most distinctive facts with no state code — MA's
+  Governor's Council / indirect initiative / VOTES Act / abolished counties, TN's Attorney-General-by-
+  Supreme-Court / weak veto / no-initiative / voting rules — are published loudly in each \`notClaimed\`
+  list. **NEXT_UP advanced past MA/TN → MO/MD** (⚠️ merge-coordinates with the other in-flight standards
+  branches, which also edit that line). **No migration, no seed.**
 - 🔧 **Texas + Florida mapped — states #8 and #9, both fully bespoke** (\`feat/standards-tx-fl\`) —
   \`/academic-standards?state=TX\` and \`?state=FL\` flip from "not mapped yet" to real pages. **Texas: 56
   standards (31 full, 25 partial) across 8 TEKS frameworks** — Texas writes its own TEKS for every
