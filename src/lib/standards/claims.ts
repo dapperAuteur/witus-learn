@@ -1639,6 +1639,70 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: South Carolina (state-civics-sc was written FROM SC's own sources) ──
+  // NOTE: South Carolina's grade-12 United States Government course (SC Social Studies College- and
+  // Career-Ready Standards, 2019) reaches South Carolina's OWN government explicitly through USG.2.CC
+  // ("Explain how governments in South Carolina are organized and how they function in the American
+  // constitutional government"), so — unlike the abstract-concept states — the South Carolina
+  // flagship's structure lessons have a genuine home, mapped there. South Carolina withdrew from the
+  // Common Core (2015), so its ELA/Math are South Carolina's own (SC College- and Career-Ready
+  // Standards) and its science is South Carolina's own (2021, not NGSS); data/sc.ts publishes those
+  // as deferred gaps, not denials. South Carolina is BESPOKE-heavy.
+  {
+    id: "civics.sc-legislative-state",
+    claim:
+      "Teaches South Carolina as the classic 'legislative state': the Constitution of 1895 (its seventh) deliberately created a very weak Governor and concentrated authority in the General Assembly, a legacy still visible today — most strikingly that the Legislature elects the state's judges (South Carolina and Virginia are the only two states that do). South Carolina became the 8th state on May 23, 1788.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 1 · The 'legislative state': where the General Assembly long ruled",
+    ],
+  },
+  {
+    id: "civics.sc-plural-executive",
+    claim:
+      "Teaches South Carolina's unusually large plural executive as a legacy of the weak-governor design: voters separately elect the Governor (with the Lieutenant Governor on the same ticket since 2018), Attorney General, Secretary of State, State Treasurer, Comptroller General, Superintendent of Education, and Commissioner of Agriculture, so the Governor has historically not controlled the executive branch; recent reforms (the joint ticket, making the Adjutant General a gubernatorial appointment) have strengthened the office, with a two-thirds veto override.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 2 · A large plural executive (a legacy of the weak governor)",
+    ],
+  },
+  {
+    id: "civics.sc-legislature-elects-judges",
+    claim:
+      "Teaches South Carolina's defining judicial feature: the General Assembly ELECTS the state's judges (South Carolina and Virginia are the only two states that do) after a Judicial Merit Selection Commission screens candidates for qualifications, with a 5-justice South Carolina Supreme Court elected to 10-year terms — so South Carolina's judges answer to the legislators for re-election, not to the voters or the Governor.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 3 · How South Carolina picks its judges (the Legislature elects them)",
+    ],
+  },
+  {
+    id: "civics.sc-lawmaking-no-initiative",
+    claim:
+      "Teaches how a bill becomes a South Carolina law (introduction, committee, floor votes in both chambers — with the Senate's strong filibuster tradition — and the Governor's signature/veto/line-item veto with a two-thirds override), that the General Assembly is a 124-member House on 2-year terms and a 46-member Senate on 4-year terms, and that South Carolina has NO citizen initiative: amendments run through the General Assembly (proposed by a two-thirds vote), are ratified by voters, and then RE-RATIFIED by the Legislature, a distinctive extra step.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 4 · How a bill becomes a South Carolina law",
+    ],
+  },
+  {
+    id: "civics.sc-local-government",
+    claim:
+      "Teaches South Carolina local government as South Carolina's: 46 counties governed by elected county councils (which gained self-governing power under the Home Rule Act of 1975, easing the legislative-state control of local matters) plus separately elected sheriff, clerk, auditor, and treasurer; municipalities with council forms; and a legacy of many school and special-purpose districts from the legislative-state era.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.sc-get-involved",
+    claim:
+      "Teaches getting involved where you live, South Carolina edition — registering and voting with photo ID, early in-person voting, and qualifying-reason absentee voting administered by county election offices (scvotes.gov), showing up at county councils, city councils, and school boards (which decide more locally since Home Rule), contacting your one Representative and one Senator in Columbia, watching the General Assembly's judicial elections, and running for local office.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",

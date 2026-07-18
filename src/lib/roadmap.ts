@@ -1148,6 +1148,21 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   City of St. Louis) plus the civics ladder; ELA and science are published as honest deferred gaps.
   **Maryland was deferred** (the pass ended before MD) and re-queued at the front of \`NEXT_UP\`. No
   migration, no seed.
+- 🔧 **Connecticut + South Carolina mapped** (\`feat/standards-ct-sc\`). \`/academic-standards?state=CT\`
+  and \`?state=SC\` flip from "not mapped yet" to real pages. **Connecticut is inherit-heavy**: it kept
+  the Common Core (as the CT Core Standards, 2010) for ELA and adopted the NGSS (2015) for science, so
+  both shared frameworks are adopted verbatim, and its one bespoke frame is the 2015 Social Studies
+  Frameworks High School Civics and Government course (CIV 9-12, transcribed verbatim from the CT SDE
+  PDF). **14 standards (5 full, 9 partial)** onto the \`state-civics-ct\` flagship (abolished counties,
+  the town as the local workhorse, legislative appointment of judges, no citizen initiative) plus the
+  Common Core ELA and NGSS strands. **South Carolina is bespoke-heavy**: it withdrew from the Common
+  Core (2015), so its ELA and math are its own and its science is its own (2021, not NGSS); the mapped
+  codes are the grade-12 **United States Government** indicators (USG.1.ER to USG.4.IP) from the **SC
+  Social Studies College- and Career-Ready Standards** (2019), transcribed verbatim from the SC DOE PDF.
+  **11 standards (4 full, 7 partial)** onto the \`state-civics-sc\` flagship (the legislative state, the
+  Legislature electing judges, the large plural executive, Home Rule counties) plus the civics ladder,
+  with ELA and science published as honest deferred gaps. \`NEXT_UP\` advances to Alabama and Louisiana.
+  No migration, no seed.
 - 🔧 **Illinois + Michigan mapped — states #10 and #11, both heavy inheriters** (\`feat/standards-il-mi\`) —
   \`/academic-standards?state=IL\` and \`?state=MI\` flip from "not mapped yet" to real pages. Both
   states adopted the shared multi-state frameworks, so we **INHERIT** rather than re-map: Illinois

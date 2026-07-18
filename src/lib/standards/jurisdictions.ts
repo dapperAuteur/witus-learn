@@ -69,7 +69,15 @@ export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 // isolation suite enforces it. NOTE for the merge: the parallel feat/standards-matrix branch may
 // also edit this line; resolve any conflict to a value that names NEITHER a mapped state (currently
 // AR AZ CA DC FL GA IN NY OH PA TX) NOR a state another in-flight branch is actively mapping.
-export const NEXT_UP: StateCode[] = ["MD", "CO"];
+export const NEXT_UP: StateCode[] = ["AL", "LA"];
+// This branch (feat/standards-ct-sc) maps Connecticut and South Carolina, so the queue advances past
+// them to two states no branch has mapped: Alabama and Louisiana. NEXT_UP must never name a state
+// that mappedStates() already contains — the isolation suite enforces it — so AL/LA are safe against
+// every state mapped across the in-flight branches
+// (AR AZ CA DC FL GA IL IN MA MI MO NC NJ NY OH PA TN TX VA WA, plus CT and SC here) and against the
+// MD/CO/MN/WI queue the sibling branches advance to. NOTE for the merge: sibling branches also edit
+// this one line; resolve the conflict to a value naming NEITHER a mapped state NOR a state an
+// in-flight branch is actively mapping.
 // This branch (feat/standards-mo-md) mapped Missouri; Maryland was deferred (the mapping pass ended
 // before MD's frameworks were transcribed verbatim), so MD stays at the front of the queue. NEXT_UP
 // must never name a state that mappedStates() already contains — the isolation suite enforces it —
