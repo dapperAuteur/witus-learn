@@ -64,12 +64,13 @@ export const US_JURISDICTIONS = [
 export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 
 /** States whose mapping is actively next in the queue (rendered as "next up" in the finder). */
-// NY/PA are mapped by the parallel feat/standards-ny-pa branch (task 127), and TX/FL are mapped
-// here (task 126), so the queue advances past all four. NEXT_UP must never name a state that
-// mappedStates() already contains — the isolation suite enforces it. NOTE for the merge: task 127
-// also edits this line (it set it to TX/FL before TX/FL were done); resolve the conflict to a value
-// that contains NEITHER {NY,PA} NOR {TX,FL} — these two below, or BAM's preferred next two.
-export const NEXT_UP: StateCode[] = ["OH", "GA"];
+// WA/NJ are mapped on this branch (feat/standards-wa-nj); the queue advances past them. NEXT_UP must
+// never name a state that mappedStates() already contains — the isolation suite enforces it. This
+// value is deliberately chosen to sit outside EVERY state mapped or in-flight across the parallel
+// branches ({AR,AZ,CA,DC,FL,IN,NY,PA,TX,OH,GA,IL,MI,NC,VA,WA,NJ}), so it stays valid after the
+// bundle merge. NOTE for the merge: sibling branches also edit this line; resolve the conflict to a
+// value containing none of those states (MA/TN below, or BAM's preferred next two).
+export const NEXT_UP: StateCode[] = ["MA", "TN"];
 
 export function jurisdictionName(code: StateCode): string {
   return US_JURISDICTIONS.find((j) => j.code === code)?.name ?? code;
