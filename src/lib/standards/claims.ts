@@ -999,6 +999,56 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Florida Civics, Lesson 9 · Get involved where you live in Florida"],
   },
 
+  // ── State civics: Massachusetts (state-civics-ma was written FROM Massachusetts's own sources) ──
+  // NOTE: Massachusetts's 2018 History and Social Science Framework is one of the strongest in the
+  // nation for reaching a state's OWN government: the grade 8 Civics course (Topic 6) and the US
+  // Government and Politics elective (Topic 2) name the "Massachusetts Constitution," the
+  // "Commonwealth of Massachusetts," the General Court, the Supreme Judicial Court, and open town
+  // meeting EXPLICITLY, so the flagship's Massachusetts-structure lessons have genuine codes to
+  // cite. But the flagship's most distinctive facts — the elected Governor's Council's confirmation
+  // role, the appoint-and-serve-to-70 judiciary with no judicial elections, the INDIRECT initiative
+  // and the right of free petition, the 2022 VOTES Act, and the counties whose governments were
+  // abolished around 1997–2000 — have no Massachusetts-specific code, and data/ma.ts publishes that
+  // gap in its notClaimed list.
+  {
+    id: "civics.ma-constitution",
+    claim:
+      "Teaches Massachusetts's Constitution of 1780 — the oldest functioning written constitution in the world, principally drafted by John Adams and still in force — and that the Commonwealth's own constitution (with its Article I Declaration of Rights) sits alongside the U.S. Constitution as a source of powers and rights.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 1 · The Constitution of 1780, the world's oldest functioning one",
+    ],
+  },
+  {
+    id: "civics.ma-state-structure",
+    claim:
+      "Teaches Massachusetts's three branches as Massachusetts's: the bicameral General Court (a 160-member House and a 40-member Senate), a plural executive (a joint-ticket Governor and Lieutenant Governor with a separately elected Attorney General, Secretary of the Commonwealth, Treasurer, and Auditor, plus the elected Governor's Council), the two-thirds veto override, and the Supreme Judicial Court.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 2 · The three branches and the 'General Court'",
+      "Massachusetts Civics, Lesson 3 · The Governor's Council and how Massachusetts picks judges",
+    ],
+  },
+  {
+    id: "civics.ma-courts-appointed",
+    claim:
+      "Teaches Massachusetts's distinctive judicial selection: the Governor nominates, the elected eight-member Governor's Council confirms, and a judge then serves until mandatory retirement at age 70 — with no judicial elections and no fixed re-appointment.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 3 · The Governor's Council and how Massachusetts picks judges",
+    ],
+  },
+  {
+    id: "civics.ma-local-government",
+    claim:
+      "Teaches Massachusetts local government as Massachusetts's: the town-meeting tradition (open town meeting, where any registered voter votes directly on the town budget and bylaws), strong home rule, cities and towns, and the state's 14 counties — several of whose county governments were abolished around 1997–2000.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 5 · Local government: towns, cities, and Massachusetts's shrinking counties",
+      "Massachusetts Civics, Lesson 6 · Elections and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
