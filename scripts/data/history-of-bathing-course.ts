@@ -1615,5 +1615,280 @@ So the medieval reality is not a filthy people who had never heard of washing. I
         ],
       },
     },
+
+    // ───────────── SECTION 7 · ENCOUNTERS: CRUSADES AND THE COLUMBIAN EXCHANGE ─────────────
+    {
+      slug: "bathing-encounters-crusades",
+      title: "19 · The Crusades: when Europeans met the hammam",
+      section: "Section 7 · Encounters: the Crusades and the Columbian exchange",
+      body: `This section is where the popular idea behind this course, that other civilizations "introduced" Europeans to bathing, meets the actual record. The record is richer and stranger than the slogan, and handling it well requires every habit you have practiced.
+
+**The setting.** Beginning in 1096, waves of western European Christians, whom Arabic writers called the *Franks*, poured into the eastern Mediterranean during the Crusades and set up states in the Levant. There they lived alongside a Muslim society with the mature hammam bathing culture you met in Section 3. Europeans in the Crusader states encountered public steam baths, fine soaps, and a whole grammar of washing that was more elaborate than what most of them had known at home.
+
+**The source everyone quotes: Usama ibn Munqidh.** Our most vivid Arabic window onto Frankish manners is the memoir of *Usama ibn Munqidh* (1095 to 1188), a Syrian nobleman, warrior, and writer. His book, known in English as *The Book of Contemplation*, written around 1183 and translated by Paul M. Cobb, is full of anecdotes about the Franks, including scenes set in the public baths, told to highlight what Usama saw as their strange and crude manners (Usama ibn Munqidh, ca. 1183/2008).
+
+**Now the discipline.** Usama's memoir is a delight and a genuine treasure, and it is also exactly the kind of source Lesson 2 warned you about: a witness describing foreigners in a way that flatters his own side. Modern historians, including his translator, caution that Usama chose and shaped his Frankish stories to entertain his readers and to underline how foreign and unpolished the Franks were. So we read him for two things at once: as real evidence that Europeans and the hammam met, and mixed, in the Crusader Levant, and as a reminder that even a charming eyewitness is arguing a case, not filing a neutral report (Usama ibn Munqidh, ca. 1183/2008; Ashenburg, 2007).
+
+**The correction that matters.** It is tempting to conclude "so the Crusaders learned to bathe from the Muslims." Resist the tidy version. Europe already had its stews, as Section 6 showed, so this was not an introduction to bathing by a people who had none. What contact with the Islamic world did was expose Europeans to a **more elaborate** bathing culture and to goods like fine hard soap, and it fed European tastes and trade. That is influence, and influence is real. It is just not the same as a filthy Europe being taught to wash for the first time (Smith, 2007; Ashenburg, 2007).
+
+:::reveal Usama ibn Munqidh's memoir is a treasure AND a trap. Why must we read his stories about the Franks in the baths critically? ||| Because Usama was a witness describing foreigners in a way that flattered his own side. Historians, including his translator, note that he chose and shaped his Frankish anecdotes to entertain and to stress how crude and foreign the Franks were. So we use him as real evidence that Europeans and the hammam met and mixed, while remembering that even a charming eyewitness is arguing a case, not filing a neutral report.
+
+## Sources
+- Ashenburg, K. (2007). *The dirt on clean: An unsanitized history*. North Point Press.
+- Smith, V. (2007). *Clean: A history of personal hygiene and purity*. Oxford University Press.
+- Usama ibn Munqidh. (2008). *The book of contemplation: Islam and the Crusades* (P. M. Cobb, Trans.). Penguin Classics. (Original work ca. 1183)`,
+      recallContent: [
+        {
+          prompt: "Name two real reasons much of early modern Europe pulled back from water bathing.",
+          answer:
+            "Any two of: fear of epidemic disease (especially syphilis from the 1490s and recurring plague); the medical theory that warm water opened the pores to disease-bearing bad air; the rise of clean linen as a substitute for washing with water; and the rising cost of wood fuel to heat water.",
+        },
+        {
+          prompt: "What two things does the 'dirty Middle Ages' myth get wrong?",
+          answer:
+            "Timing (the retreat from water bathing was early modern, roughly the 1500s-1600s, not medieval) and completeness (it was partial, falling hardest on public water bathing, never a total end to all washing).",
+        },
+      ],
+    },
+    {
+      slug: "bathing-encounters-columbian",
+      title: "20 · The Columbian exchange: mutual disgust, documented",
+      section: "Section 7 · Encounters: the Crusades and the Columbian exchange",
+      body: `The second great encounter runs the opposite way around the world. After 1492, Spanish colonizers and the Indigenous peoples of the Americas met, and among the many things they exchanged and recorded were opinions about each other's smell.
+
+**What the record actually contains.** On one side, Spanish observers noted Indigenous bathing habits: you already met Andres de Tapia's report that Moctezuma bathed twice a day, and other colonial accounts describe frequent bathing, including steam bathing in the temazcal, as ordinary in the Nahua world. On the other side, Indigenous accounts and later histories record that the arriving Spanish struck Native people as **dirty and foul-smelling**. Both directions of this are in the documented record, and this is the moment where the idea behind this course, that Europeans looked unwashed to others, is genuinely supported by evidence (Ashenburg, 2007).
+
+**But keep your discipline.** Notice three things before you turn this into a slogan.
+
+First, **every one of these reports is an outsider describing strangers**, exactly the kind of evidence Lesson 2 told you to attribute and hedge. "A Spanish soldier reported X" and "a Nahua account said Y" are honest sentences; "the Aztecs were clean and the Spanish were filthy" as a flat civilizational fact is not.
+
+Second, **timing sharpened the contrast**. The Spanish arriving in the 1500s came from precisely the part of the world, and precisely the century, that was in the middle of its early-modern retreat from water bathing. So a Nahua noble accustomed to daily bathing and the temazcal really might have found a party of early modern Spaniards rank. That is a specific historical collision, not proof that "Europeans" in general or forever were the dirtiest people on Earth.
+
+Third, and most important, **this is Ashenburg's core point made flesh**: every society quietly assumes that its own way of being clean is the natural, obvious, correct one, so when two societies with different standards meet, each tends to find the other disgusting. The Spanish found Nahua practices strange; the Nahua found the Spanish filthy. Neither reaction measures a rung on a single universal ladder of cleanliness, because there is no such ladder. There are standards, meeting (Ashenburg, 2007).
+
+So honor the encounter honestly. The record does show Indigenous Americans documenting unwashed Spaniards, and that is worth knowing and teaching. What the record does **not** support is the tidy morality tale in which clean natives set out to civilize a dirty Europe. Keep the evidence; drop the fairy tale. (This course's companion, *Pre-Columbian Mesoamerica*, covers the Nahua and the conquest in depth.)
+
+:::reveal The record shows Indigenous Americans describing the Spanish as filthy. How do you honor that evidence without turning it into the fairy tale "clean natives civilized a dirty Europe"? ||| Keep three checks. Attribute and hedge each report, because all of them are outsiders describing strangers. Note that timing sharpened the contrast, since the Spanish of the 1500s came from Europe's early-modern retreat from water bathing, so it is a specific collision, not a permanent ranking. And recognize Ashenburg's point that every society assumes its own habits are the natural ones, so mutual disgust reflects different standards meeting, not a single universal ladder with clean natives above dirty Europeans.
+
+## Sources
+- Ashenburg, K. (2007). *The dirt on clean: An unsanitized history*. North Point Press.`,
+      recallContent: [
+        {
+          prompt: "In the Crusader Levant, what did contact with the Islamic world actually do for European bathing, and what did it NOT do?",
+          answer:
+            "It exposed Europeans to a more elaborate bathing culture (the hammam) and to goods like fine hard soap, feeding European tastes and trade: real influence. It did NOT introduce bathing to a Europe that had none, because Europe already had its public bathhouses (the stews).",
+        },
+        {
+          prompt: "Why must Usama ibn Munqidh's memoir be read as an argument rather than a neutral report?",
+          answer:
+            "Because he was a witness describing foreigners in a way that flattered his own side, and historians note he shaped his Frankish anecdotes to entertain and to stress Frankish crudeness. It is real evidence of contact, but it is making a case, not measuring reality.",
+        },
+      ],
+    },
+    {
+      slug: "bathing-quiz-encounters",
+      title: "21 · Quiz: the Crusades and the Columbian exchange",
+      section: "Section 7 · Encounters: the Crusades and the Columbian exchange",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "During the Crusades, what bathing culture did western European 'Franks' encounter in the Levant?",
+            options: [
+              "The Japanese sento",
+              "The mature Islamic hammam, with public steam baths and fine hard soaps",
+              "The Finnish sauna",
+              "Nothing; there was no bathing there",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Crusaders in the Levant met the hammam and Islamic soaps (Smith, 2007; Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-crusades",
+          },
+          {
+            prompt: "Who was Usama ibn Munqidh?",
+            options: [
+              "A Roman senator",
+              "A 12th-century Syrian nobleman and writer whose memoir records vivid anecdotes about the Franks, including in the baths",
+              "A Spanish conquistador",
+              "A Finnish sauna master",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Usama (1095-1188) wrote The Book of Contemplation, a key Arabic source on the Franks (Usama ibn Munqidh, ca. 1183/2008).",
+            sourceLessonSlug: "bathing-encounters-crusades",
+          },
+          {
+            prompt: "Why must Usama's stories about the Franks be read critically?",
+            options: [
+              "Because he never met any Franks",
+              "Because he shaped his anecdotes to entertain and to stress how crude and foreign the Franks were, flattering his own side",
+              "Because the memoir is a modern forgery",
+              "Because he wrote in Latin",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Even a charming eyewitness is arguing a case; historians, including his translator, flag Usama's shaping (Usama ibn Munqidh, ca. 1183/2008).",
+            sourceLessonSlug: "bathing-encounters-crusades",
+          },
+          {
+            prompt: "What did contact with the Islamic world during the Crusades actually do for European bathing?",
+            options: [
+              "It introduced bathing to a Europe that had never washed",
+              "It exposed Europeans to a more elaborate bathing culture and to goods like fine soap, an influence, not a first introduction",
+              "It ended European bathing entirely",
+              "It had no effect at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Europe already had the stews; contact was influence, not introduction (Smith, 2007; Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-crusades",
+          },
+          {
+            prompt: "Which slogan does the course tell you to resist about the Crusades?",
+            options: [
+              "'The hammam was a sophisticated institution'",
+              "'The Crusaders learned to bathe from the Muslims because Europe had no bathing'",
+              "'Usama's memoir is a valuable source'",
+              "'Soap traveled along trade routes'",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Europe had bathhouses already, so 'introduced to bathing' is false; the accurate word is influence (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-crusades",
+          },
+          {
+            prompt: "After 1492, what did the documented record contain about Spanish and Indigenous American perceptions of each other?",
+            options: [
+              "Only Spanish praise for their own cleanliness",
+              "Reports in both directions: Spanish notes on Indigenous bathing, and Indigenous accounts that the arriving Spanish were dirty and foul-smelling",
+              "Nothing was ever written down",
+              "Only Indigenous praise for the Spanish",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both directions of perception are documented, including Native accounts of unwashed Spaniards (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-columbian",
+          },
+          {
+            prompt: "Why did the timing of 1492 sharpen the hygiene contrast between the Spanish and the Nahua?",
+            options: [
+              "Because the Spanish had just invented soap",
+              "Because the Spanish of the 1500s came from the very century of Europe's early-modern retreat from water bathing",
+              "Because the Nahua had stopped bathing",
+              "Because it was winter",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The contrast reflects a specific collision with early modern Europe mid-retreat, not a permanent ranking (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-columbian",
+          },
+          {
+            prompt: "How should each report of mutual disgust between Spanish and Nahua be handled?",
+            options: [
+              "As a flat civilizational fact",
+              "Attributed and hedged, because every one of them is an outsider describing strangers",
+              "Ignored completely",
+              "Exaggerated for effect",
+            ],
+            correctIndex: 1,
+            explanation:
+              "All are outsider accounts and need attribution and hedging (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-columbian",
+          },
+          {
+            prompt: "The mutual disgust between two societies with different hygiene standards best illustrates which of Ashenburg's points?",
+            options: [
+              "That soap solves everything",
+              "That every society assumes its own way of being clean is the natural, correct one, so different standards meeting produces mutual disgust",
+              "That only Europeans had standards",
+              "That cleanliness is purely genetic",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Different standards meeting produces mutual disgust; there is no single universal ladder (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-columbian",
+          },
+          {
+            prompt: "Which conclusion does the record support, and which does it NOT support?",
+            options: [
+              "It supports 'clean natives civilized a dirty Europe'; it does not support any contact",
+              "It supports that Indigenous Americans documented unwashed Spaniards; it does NOT support the fairy tale that clean natives set out to civilize a dirty Europe",
+              "It supports nothing at all",
+              "It supports that Europeans were the cleanest people on Earth",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Keep the evidence of documented perception; drop the tidy morality tale (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-columbian",
+          },
+          {
+            prompt: "How is the 'Moctezuma bathed twice a day' report used in this section?",
+            options: [
+              "As undisputed proof the Aztecs were cleanest",
+              "As one attributed, hedged report (from Andres de Tapia) that fits a broader, better-supported pattern of regular Nahua bathing",
+              "As a modern invention",
+              "As evidence the Spanish never washed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "It is a single-witness claim that fits a broader documented pattern; keep the distinction (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-columbian",
+          },
+          {
+            prompt: "Which companion course does this module cross-link for the Nahua and the conquest?",
+            options: [
+              "Asia Before European Colonization",
+              "Pre-Columbian Mesoamerica",
+              "Africa Before Colonization",
+              "The History of Unions",
+            ],
+            correctIndex: 1,
+            explanation: "Pre-Columbian Mesoamerica covers the Nahua and the conquest in depth.",
+            sourceLessonSlug: "bathing-encounters-columbian",
+          },
+          {
+            prompt: "The two great encounters in this section (Crusades, Columbian exchange) share which lesson?",
+            options: [
+              "That one civilization was objectively cleanest",
+              "That cross-cultural contact is real and worth studying, but the vivid witness accounts must be attributed and hedged, not flattened into 'clean people versus dirty people'",
+              "That nobody ever bathed",
+              "That soap was never traded",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both encounters demand the same discipline: keep the evidence, refuse the tidy stereotype.",
+            sourceLessonSlug: "bathing-encounters-columbian",
+          },
+          {
+            prompt: "What is the accurate way to describe the Islamic world's effect on European bathing through the Crusades?",
+            options: [
+              "It taught a bathless Europe to bathe for the first time",
+              "It was an influence, exposing Europeans to a more elaborate bathing culture and finer soaps that fed their tastes and trade",
+              "It had no measurable effect",
+              "It forced Europeans to stop bathing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Influence on an already-bathing Europe, not a first introduction (Smith, 2007; Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-crusades",
+          },
+          {
+            prompt: "A friend says the Columbian encounter proves 'Europeans were just the dirtiest people in history.' What is the accurate correction?",
+            options: [
+              "They are exactly right",
+              "The record shows a specific collision: Spaniards from Europe's early-modern retreat met a daily-bathing Nahua world, and each found the other strange; it is different standards meeting, not a permanent universal ranking",
+              "Europeans were actually the cleanest",
+              "Nothing about hygiene was ever recorded",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A dated, specific contrast between differing standards, not a cosmic ranking (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-encounters-columbian",
+          },
+        ],
+      },
+    },
   ],
 };
