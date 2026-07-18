@@ -129,6 +129,7 @@ import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
 import { TRAINING_THE_COLONIZER_COURSE } from "./data/training-the-colonizer-course";
+import { HISTORY_OF_BATHING_COURSE } from "./data/history-of-bathing-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -853,6 +854,17 @@ async function main() {
     // building attributions given as documented LABOR not design; through-line = knowledge
     // coerced, uncredited, uncompensated. NO migration — pnpm seed:courses.
     { slug: "training-the-colonizer", course: TRAINING_THE_COLONIZER_COURSE, category: "Culture & History" },
+    // Clean: A Global History of Bathing and Soap (Culture & History). Organized by tradition, not
+    // as a ladder: Indus Great Bath, Rome (oil+strigil, no soap), the hammam and hard soap
+    // (Aleppo/Nablus), Japan (misogi + Buddhist merit), the Finnish sauna, the Mesoamerican
+    // temazcal, Europe's LATER retreat from bathing (~16th-17th c.) and slow return, the Crusade
+    // and Columbian encounters, and a payoff lesson that names and refutes the "medieval Europeans
+    // never bathed" myth (a :::reveal + quiz items test the nuance). Vivid-but-thin claims
+    // (Moctezuma "twice a day" per Andres de Tapia; Nahua finding the Spanish filthy) are
+    // attributed and hedged. Sources: Ashenburg (2007), Smith (2007), Brown (2009), plus Britannica
+    // (Great Bath) and UNESCO ICH (Nabulsi soap 2024, Finnish sauna 2020). 8 sections ·
+    // 16 teaching lessons · 8 quizzes (15-question banks) · 1 exercise. NO migration — pnpm seed:courses.
+    { slug: "history-of-bathing", course: HISTORY_OF_BATHING_COURSE, category: "Culture & History" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
