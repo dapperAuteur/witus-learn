@@ -335,5 +335,353 @@ The answer is that historians triangulate. No single source proves a transfer; a
         ],
       },
     },
+    // ──────── SECTION 2 · RICE: THE ANCHOR CASE AND THE BLACK RICE DEBATE ────────
+    {
+      slug: "ttc-rice-coast",
+      title: "4 · The Rice Coast: a West African rice civilization",
+      section: "Section 2 · Rice: the anchor case and the Black Rice debate",
+      body: `Before we can talk about rice in South Carolina, we have to go to West Africa, because that is where the expertise came from, and it was old.
+
+Rice was farmed in West Africa long before any European colony existed. There are two rice species in the world. The one most people know, *Oryza sativa*, was domesticated in Asia. But there is a second, entirely separate one, *Oryza glaberrima*, African rice, which West Africans domesticated on their own, in the inland delta of the Niger River, some two to three thousand years ago (Carney, 2001). This is not a small footnote. It means that a whole civilization of rice, its own crop, its own tools, its own body of knowledge, grew up in West Africa independently of Asia.
+
+The stretch of coast from Senegal down to present-day Sierra Leone and Liberia was known to European traders as the **Rice Coast** (also the Grain Coast), and it earned the name. Farmers there, among them the Baga and the Jola (Diola), grew rice in three different environments at once, each demanding a different skill (Carney, 2001; Hawthorne, 2003):
+
+| System | Where | What it takes |
+| --- | --- | --- |
+| Upland (rain-fed) | higher, drier ground | timing the planting to the rains |
+| Inland swamp | freshwater wetlands | managing standing water and soil |
+| Tidal mangrove | coastal estuaries where salt and fresh water meet | the hardest: building embankments and sluice gates to let fresh river water in and flush salt water out, twice a day, with the tide |
+
+That last system, **tidal mangrove rice**, is the one to remember. It is not simple farming. It means reading the tides, building earthen dikes to hold back the ocean, cutting sluices to control the flow, transplanting seedlings by hand, and choosing which seed to save. Growing rice this way is a body of engineering and agronomy that takes a lifetime to learn and a community to run.
+
+Three techniques in particular are worth naming now, because you will meet them again on the far side of the Atlantic:
+- **Sowing by heel.** Pressing each seed into the wet soil with a practiced press of the heel, so it takes hold and the birds do not get it.
+- **The mortar and pestle.** Hulling rice by hand, with a long wooden pestle, in a rhythm that strips the husk without crushing the grain. This was skilled work, and in West Africa it was largely **women's** work and women's knowledge.
+- **The fanner basket.** A wide, flat coiled basket used to toss milled rice into the air so the wind carries off the chaff.
+
+None of this is contested. West Africa was a rice civilization with deep expertise long before Carolina existed, and you can read the wider story of West African states, cities, and technology in this platform's **Africa Before Colonization** course. Hold that fact steady, because the argument in the next two lessons is not about whether the expertise existed. It is about exactly how much of it crossed the ocean, and in whose hands.
+
+:::reveal Name the African rice species, and name the hardest of the three West African rice-growing systems and one thing it requires. ||| The species is *Oryza glaberrima* (African rice), domesticated in West Africa independently of Asian rice. The hardest system is tidal mangrove rice, which requires building embankments and sluice gates to let fresh water in and flush salt water out with the tides (also acceptable: transplanting seedlings, reading the tide, seed selection).
+
+## Sources
+- Carney, J. A. (2001). *Black rice: The African origins of rice cultivation in the Americas*. Harvard University Press.
+- Carney, J. A., & Rosomoff, R. N. (2011). *In the shadow of slavery: Africa's botanical legacy in the Atlantic world*. University of California Press.
+- Hawthorne, W. (2003). *Planting rice and harvesting slaves: Transformations along the Guinea-Bissau coast, 1400-1900*. Heinemann.`,
+      recallContent: [
+        {
+          prompt: "What is Oryza glaberrima, and why does it matter to this course?",
+          answer:
+            "African rice, a rice species West Africans domesticated on their own in the inland Niger delta, separate from Asian rice. It shows West Africa had its own full rice civilization (crop, tools, and knowledge) long before any European colony.",
+        },
+        {
+          prompt: "What was tidal mangrove rice, and why was it the hardest system?",
+          answer:
+            "Growing rice in coastal estuaries where salt and fresh water meet. It required building earthen embankments and sluice gates to admit fresh river water and flush salt water out with the tides, plus transplanting seedlings and selecting seed. It is engineering as much as farming.",
+        },
+        {
+          prompt: "Name three West African rice techniques that reappear in the Carolina story.",
+          answer:
+            "Sowing seed by pressing it into the mud with the heel; hulling rice with a wooden mortar and pestle (largely women's knowledge); and winnowing with a wide coiled fanner basket.",
+        },
+      ],
+    },
+    {
+      slug: "ttc-black-rice-thesis",
+      title: "5 · The Black Rice thesis: what Judith Carney argued",
+      section: "Section 2 · Rice: the anchor case and the Black Rice debate",
+      body: `Now the Atlantic. In the late 1600s and 1700s, South Carolina and later Georgia became astonishingly rich growing rice in tidal swamps along the coast. By the 1700s Carolina rice was a major export and the colony had a **Black majority**: more enslaved people than free colonists. Where did the knowledge to build that come from?
+
+The historian **Peter Wood** asked that question first, in a 1974 book called *Black Majority*. Wood argued that enslaved Africans were not just the muscle of the Carolina rice economy but a source of its know-how: many came from rice-growing regions, and their skill (along with cattle-herding skill and a hard-won ability to survive the swampy, malarial coast) helped make the colony work (Wood, 1974).
+
+A generation later, the geographer **Judith Carney** made the fullest version of the argument in a 2001 book whose title gave the whole idea its name: *Black Rice*. Carney's claim goes further than "Africans knew how to grow rice." She argued that an entire **knowledge system** crossed the Atlantic in the memories of enslaved people (Carney, 2001):
+- the **technology** of tidal rice: the flooded fields, the water control, the embankments and floodgates that Carolina planters used look strikingly like the West African tidal system;
+- the **agronomy**: seed selection, sowing by heel, transplanting;
+- the **processing**: the mortar and pestle and the fanner basket, and with them the **gendered** division of labor, since in West Africa this was largely women's expertise.
+
+Carney also pointed to the slave trade itself. **Daniel Littlefield** had shown in *Rice and Slaves* (1981) that Carolina planters expressed **preferences**: they associated captives from the Rice Coast with rice skill and paid accordingly. A buyer who pays extra for people from rice country is telling you, in the cold language of a price, that he is buying knowledge he does not have.
+
+Put together, this is the **Black Rice thesis**: that the Carolina rice economy was, to a substantial degree, built on West African expertise carried across the ocean by the enslaved. It was a powerful reframing. For a long time the textbooks had said planters figured rice out; Carney said look again, the record points to Africa.
+
+Notice the word **thesis**. It is a strong, carefully argued interpretation, hugely influential, and it is also a claim that other historians tested, which is exactly what the next lesson is about. But hold the through-line no matter how the testing comes out: if this expertise built one of the richest economies in colonial America, it bought the people who carried it nothing. They grew the rice that made the fortune, and they remained property.
+
+:::reveal In one sentence, what did Judith Carney argue crossed the Atlantic, and how is that more than just "Africans knew how to grow rice"? ||| Carney argued that an entire knowledge system crossed the Atlantic in enslaved people's memories: not only the crop but the tidal-field technology, the agronomy (seed selection, heel-sowing, transplanting), and the processing knowledge (mortar and pestle, fanner basket), including the gendered division of labor. It is more than "they knew rice" because it claims a whole integrated system of technique and labor transferred, not just a skill.
+
+## Sources
+- Wood, P. H. (1974). *Black majority: Negroes in colonial South Carolina from 1670 through the Stono Rebellion*. Knopf.
+- Carney, J. A. (2001). *Black rice: The African origins of rice cultivation in the Americas*. Harvard University Press.
+- Littlefield, D. C. (1981). *Rice and slaves: Ethnicity and the slave trade in colonial South Carolina*. Louisiana State University Press.
+- Carney, J. A., & Rosomoff, R. N. (2011). *In the shadow of slavery: Africa's botanical legacy in the Atlantic world*. University of California Press.`,
+      recallContent: [
+        {
+          prompt: "Who first argued (in 1974) that enslaved Africans' knowledge, not just their labor, helped build the Carolina rice economy?",
+          answer:
+            "Peter Wood, in Black Majority (1974). He argued enslaved Africans supplied rice-growing and cattle-herding skill and swamp survival knowledge, which helped the colony work and gave it a Black majority.",
+        },
+        {
+          prompt: "What does the Black Rice thesis (Carney, 2001) claim, and what did Littlefield's work add?",
+          answer:
+            "That an entire African knowledge system (tidal-field technology, agronomy, and processing, including women's expertise) crossed the Atlantic and substantially built Carolina rice. Littlefield (1981) added that planters preferred and paid more for captives from rice-growing regions.",
+        },
+        {
+          prompt: "Why keep calling it a 'thesis'?",
+          answer:
+            "Because it is a strong, argued interpretation, not a settled fact. It was hugely influential and it was also tested and challenged by other historians, which is the subject of the next lesson.",
+        },
+      ],
+    },
+    {
+      slug: "ttc-black-rice-debate",
+      title: "6 · How to hold a contested claim: the Black Rice debate",
+      section: "Section 2 · Rice: the anchor case and the Black Rice debate",
+      body: `This is the most important lesson in the course, and it is not really about rice. It is about how to hold a claim that serious historians disagree about, without lying in either direction. The Black Rice thesis is the perfect place to practice, because it is strong, it is famous, and it got tested hard.
+
+**The challenge (2007).** Three historians, **David Eltis, Philip Morgan, and David Richardson**, wrote a direct response in the *American Historical Review* (Eltis, Morgan, & Richardson, 2007). They are not fringe skeptics; they are principal builders of the transatlantic slave-trade database that historians now use to count who was shipped from where. Using that data, they raised hard questions about the transfer story. Presented fairly, their argument was:
+- **Presence is not the same as transfer.** You cannot prove a whole knowledge system moved just because some people from rice regions were in Carolina. Someone being present is not the same as their expertise being adopted.
+- **The demographics are awkward.** By their reading, the Rice Coast supplied only a share of early Carolina captives, and the sex ratios of the trade (more men shipped than women) sit uneasily with a thesis that leans heavily on **women's** milling and processing knowledge.
+- **Planters had agency too.** Rich planters with capital, land, and the power to coerce made decisions about what to plant and how; the environment of the Carolina lowcountry shaped the crop as well.
+
+Their conclusion was not "Africans knew nothing about rice." It was that the strong version of the thesis, a largely intact African knowledge system driving the whole enterprise, was **overstated** and under-documented.
+
+**The reply (2010).** This is what a healthy argument looks like. The *American Historical Review* ran a formal **Exchange** titled "The Question of Black Rice" (*AHR*, 2010). **S. Max Edelson** ("Beyond Black Rice") pressed for reconstructing the physical and economic context of the plantations rather than assuming a clean transfer (Edelson, 2010). **Walter Hawthorne** ("From Black Rice to Brown") defended a substantial African role but reframed it: not a single one-way transfer and not a European achievement, but a **creolized**, co-produced knowledge, "brown rice," shaped by Africans working alongside others under coercion (Hawthorne, 2010). Eltis, Morgan, and Richardson replied again ("Black, Brown, or White?"), holding their ground on the data (Eltis, Morgan, & Richardson, 2010). And Carney, with Richard Rosomoff, restated the case for African agency (Carney & Rosomoff, 2011). No one "won." The journal did not print a verdict, and neither will this course.
+
+**Now the discipline. Separate what is settled from what is fought over.**
+
+| Not in dispute | Genuinely contested |
+| --- | --- |
+| West Africans had deep, old rice expertise. | Whether a whole knowledge system transferred largely intact. |
+| Enslaved people from rice regions were in Carolina. | How much of Lowcountry rice was African-driven versus creolized or planter-directed. |
+| African rice (*glaberrima*) was grown early in the Lowcountry, and some techniques and processing knowledge were African. | The exact mechanism: who taught whom, when, and how much. |
+
+Look at what that table does. It refutes **both** lies at once. The old erasure ("planters invented Carolina rice, Africans just dug") is dead: no serious historian in this debate believes it. And the romantic overcorrection ("Africans single-handedly built it, and anyone who asks how is a denier") is also wrong: the people who ask "how, exactly?" are careful scholars doing their job. The truth lives in the contested middle, and saying so is not weakness. It is what honesty looks like when the evidence is partial.
+
+One thing the debate does **not** touch, and the reason this course refuses to let the argument become the whole point: whichever way you read it, the human fact does not move. The people who carried the rice expertise, however much of it, were enslaved. They were not credited in the ledgers, they were not paid, and being the ones who knew did not make them free.
+
+:::reveal Name the three historians who challenged the Black Rice thesis in 2007, give one of their arguments, and name one thing about African rice that is NOT in dispute. ||| The challengers were David Eltis, Philip Morgan, and David Richardson (2007). One argument: presence is not the same as transfer (people from rice regions being present does not prove a whole knowledge system moved); also acceptable, the demographics/sex ratios complicate the women's-knowledge emphasis, or planters had agency. Not in dispute: West Africans had deep rice expertise; enslaved people from rice regions were in Carolina; African rice and some techniques and processing knowledge were African.
+
+## Sources
+- Eltis, D., Morgan, P., & Richardson, D. (2007). Agency and diaspora in Atlantic history: Reassessing the African contribution to rice cultivation in the Americas. *The American Historical Review, 112*(5), 1329-1358.
+- Edelson, S. M. (2010). Beyond "Black Rice": Reconstructing material and cultural contexts for early plantation agriculture. *The American Historical Review, 115*(1), 125-135.
+- Hawthorne, W. (2010). From "Black Rice" to "Brown": Rethinking the history of risiculture in the seventeenth- and eighteenth-century Atlantic. *The American Historical Review, 115*(1), 151-163.
+- Eltis, D., Morgan, P., & Richardson, D. (2010). Black, brown, or white? Color-coding American commercial rice cultivation with slave labor. *The American Historical Review, 115*(1), 164-171.
+- Carney, J. A., & Rosomoff, R. N. (2011). *In the shadow of slavery: Africa's botanical legacy in the Atlantic world*. University of California Press.`,
+      recallContent: [
+        {
+          prompt: "What was the core of the 2007 Eltis, Morgan, and Richardson challenge to the Black Rice thesis?",
+          answer:
+            "That the strong transfer claim was overstated and under-documented. Their points: presence is not the same as transfer; the demographics and sex ratios of the slave trade complicate the emphasis on women's knowledge; and planters and the environment shaped the crop too. They did not deny African rice expertise existed.",
+        },
+        {
+          prompt: "In the Black Rice debate, what is NOT in dispute versus what IS contested?",
+          answer:
+            "Not disputed: West Africans had deep rice expertise, enslaved people from rice regions were in Carolina, and some techniques and processing knowledge were African. Contested: whether a whole knowledge system transferred largely intact, how African-driven versus creolized or planter-directed Lowcountry rice was, and the exact mechanism of transfer.",
+        },
+        {
+          prompt: "How does teaching the debate refute both the erasure and the romantic overcorrection at once?",
+          answer:
+            "The erasure ('planters invented Carolina rice') is dead because no serious scholar in the debate believes it. The overcorrection ('Africans single-handedly built it, no questions allowed') is also wrong, because the scholars asking 'how exactly?' are doing careful work. The honest answer lives in the contested middle.",
+        },
+      ],
+    },
+    {
+      slug: "ttc-quiz-rice",
+      title: "7 · Quiz: rice and the Black Rice debate",
+      section: "Section 2 · Rice: the anchor case and the Black Rice debate",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What is Oryza glaberrima?",
+            options: [
+              "The Asian rice species grown worldwide",
+              "African rice, a species West Africans domesticated independently of Asian rice",
+              "A type of fanner basket",
+              "A South Carolina plantation",
+            ],
+            correctIndex: 1,
+            explanation:
+              "African rice was domesticated in the inland Niger delta some two to three thousand years ago, separate from Asian rice, showing West Africa had its own full rice civilization.",
+            sourceLessonSlug: "ttc-rice-coast",
+          },
+          {
+            prompt: "Why was the coast from Senegal to Sierra Leone and Liberia called the Rice Coast?",
+            options: [
+              "Europeans planted rice there in the 1800s",
+              "It was the only place rice grew in the world",
+              "West Africans there had long grown rice across upland, inland-swamp, and tidal systems",
+              "The name was a European mistake with no basis",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Farmers there, including the Baga and Jola, grew rice in three different environments, each requiring a different skill. The name recorded a real expertise.",
+            sourceLessonSlug: "ttc-rice-coast",
+          },
+          {
+            prompt: "Which West African rice system was the most technically demanding?",
+            options: [
+              "Upland rain-fed rice",
+              "Inland swamp rice",
+              "Tidal mangrove rice, which required embankments and sluice gates to manage salt and fresh water",
+              "Container gardening",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Tidal mangrove rice meant reading the tides and building dikes and sluices to admit fresh water and flush salt water. It is engineering as much as farming.",
+            sourceLessonSlug: "ttc-rice-coast",
+          },
+          {
+            prompt: "The mortar and pestle used to hull rice, and the fanner basket used to winnow it, carried what additional significance in West Africa?",
+            options: [
+              "They were used only by European overseers",
+              "This processing was largely women's work and women's knowledge",
+              "They were purely decorative",
+              "They had no connection to rice",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Hulling and winnowing were skilled tasks that in West Africa were largely women's expertise, which matters later in the debate over the thesis.",
+            sourceLessonSlug: "ttc-rice-coast",
+          },
+          {
+            prompt: "Which historian first argued, in Black Majority (1974), that enslaved Africans' knowledge helped build the Carolina rice economy?",
+            options: ["Judith Carney", "Peter Wood", "David Eltis", "Daniel Littlefield"],
+            correctIndex: 1,
+            explanation:
+              "Peter Wood's Black Majority (1974) argued enslaved Africans supplied rice and cattle skill and swamp survival knowledge, not just labor.",
+            sourceLessonSlug: "ttc-black-rice-thesis",
+          },
+          {
+            prompt: "What is the core of Judith Carney's Black Rice thesis (2001)?",
+            options: [
+              "That Europeans taught Africans to grow rice",
+              "That rice was never grown in South Carolina",
+              "That an entire African knowledge system (technology, agronomy, and processing) crossed the Atlantic in enslaved people's memories",
+              "That only the crop, and no knowledge, crossed the Atlantic",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Carney argued that a whole integrated system of tidal-field technology, agronomy, and processing knowledge transferred, not just the seed.",
+            sourceLessonSlug: "ttc-black-rice-thesis",
+          },
+          {
+            prompt: "What did Daniel Littlefield's Rice and Slaves (1981) show about Carolina planters?",
+            options: [
+              "They had no preferences among captives",
+              "They preferred captives from regions with no farming",
+              "They associated captives from the Rice Coast with rice skill and paid accordingly",
+              "They grew no rice at all",
+            ],
+            correctIndex: 2,
+            explanation:
+              "A buyer paying extra for people from rice country is admitting, in the language of price, that he is buying knowledge he lacks.",
+            sourceLessonSlug: "ttc-black-rice-thesis",
+          },
+          {
+            prompt: "Who challenged the Black Rice thesis in a 2007 American Historical Review article?",
+            options: [
+              "Judith Carney and Peter Wood",
+              "David Eltis, Philip Morgan, and David Richardson",
+              "Walter Hawthorne and S. Max Edelson",
+              "No one; the thesis was never challenged",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Eltis, Morgan, and Richardson, principal builders of the transatlantic slave-trade database, argued the strong transfer claim was overstated and under-documented.",
+            sourceLessonSlug: "ttc-black-rice-debate",
+          },
+          {
+            prompt: "What did the challengers mean by 'presence is not the same as transfer'?",
+            options: [
+              "That no Africans were present in Carolina",
+              "That people from rice regions being present does not by itself prove a whole knowledge system was adopted",
+              "That transfer always happens automatically",
+              "That planters were absent from their plantations",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The point is a discipline about evidence: you have to show adoption, not just infer it from who was in the colony.",
+            sourceLessonSlug: "ttc-black-rice-debate",
+          },
+          {
+            prompt: "The 2010 AHR Exchange 'The Question of Black Rice' is an example of what?",
+            options: [
+              "A single historian declaring the final answer",
+              "A healthy scholarly argument where several historians publicly test and reframe a claim",
+              "Proof that the thesis was a hoax",
+              "A court trial",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Edelson, Hawthorne, and Eltis/Morgan/Richardson exchanged arguments in print; the journal printed no verdict.",
+            sourceLessonSlug: "ttc-black-rice-debate",
+          },
+          {
+            prompt: "What did Walter Hawthorne mean by reframing the story from 'black rice' to 'brown'?",
+            options: [
+              "That rice turned brown in Carolina",
+              "That the African role was a creolized, co-produced knowledge, not a single one-way transfer and not a European achievement",
+              "That Africans played no part",
+              "That Europeans invented rice farming",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Hawthorne (2010) defended a substantial but co-produced African role, knowledge shaped by Africans working with others under coercion.",
+            sourceLessonSlug: "ttc-black-rice-debate",
+          },
+          {
+            prompt: "Which statement about African rice knowledge is NOT in dispute among the historians in the debate?",
+            options: [
+              "That a whole knowledge system transferred perfectly intact",
+              "That West Africans had deep, old rice expertise and enslaved people from rice regions were in Carolina",
+              "That Africans single-handedly ran the entire economy with no coercion",
+              "That planters invented Carolina rice with no African input",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The existence of African expertise and the presence of rice-region captives are settled. What is contested is the mechanism and degree of transfer.",
+            sourceLessonSlug: "ttc-black-rice-debate",
+          },
+          {
+            prompt: "How does teaching the Black Rice debate refute the old erasure story?",
+            options: [
+              "It proves Europeans invented Carolina rice",
+              "It shows no serious historian in the debate believes planters did it alone with Africans as mere muscle",
+              "It ignores African expertise",
+              "It declares Carney the winner",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Even the skeptics affirm real African rice expertise; the erasure that says Africans supplied only muscle is dead.",
+            sourceLessonSlug: "ttc-black-rice-debate",
+          },
+          {
+            prompt: "Why does the course refuse to let the Black Rice debate become the whole point?",
+            options: [
+              "Because the debate is boring",
+              "Because whichever way the evidence reads, the people who carried the expertise were still enslaved, uncredited, and unpaid",
+              "Because the debate was settled long ago",
+              "Because the experts were all freed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The human fact does not move with the scholarship: expertise did not buy freedom, credit, or pay.",
+            sourceLessonSlug: "ttc-black-rice-debate",
+          },
+          {
+            prompt: "What skill is the Black Rice lesson really teaching?",
+            options: [
+              "How to grow rice",
+              "How to separate what is settled from what is genuinely contested, and hold the difference honestly",
+              "How to win an argument by picking the loudest side",
+              "How to ignore historians who disagree",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The point is a habit of mind: name the undisputed core, name the contested mechanism, and do not fake a verdict the evidence does not support.",
+            sourceLessonSlug: "ttc-black-rice-debate",
+          },
+        ],
+      },
+    },
   ],
 };
