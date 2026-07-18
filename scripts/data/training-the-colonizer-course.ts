@@ -1456,5 +1456,244 @@ It is tempting to end there, on a win. Do not, quite. Look at the shape of it. A
         ],
       },
     },
+    // ──────────────── SECTION 6 · FOOD AND WATER ────────────────
+    {
+      slug: "ttc-foodways",
+      title: "17 · Foodways: the crops and cooking that crossed the ocean",
+      section: "Section 6 · Food and water",
+      body: `Some of the knowledge that crossed the Atlantic you can still taste. A great deal of what gets called "Southern food," and through it a great deal of American food, was shaped by enslaved Africans, their crops, and their cooking.
+
+Start with the crops. Judith Carney and Richard Rosomoff traced Africa's botanical legacy across the Atlantic world, and it is long (Carney & Rosomoff, 2011). Some plants came as ship provisions or in the memory of the people forced aboard, and took root in the Americas:
+- **Okra**, a West African vegetable. Its influence is stamped right into the language: the word **gumbo** comes from a West and Central African word for okra (*ki ngombo* in Bantu languages).
+- **Black-eyed peas** (the cowpea), a crop domesticated in West Africa thousands of years ago.
+- **Sorghum**, **sesame** (known in the South as **benne**, from a West African word), and other grains and greens.
+
+Then the cooking, which is knowledge too. In plantation kitchens the cooks were overwhelmingly enslaved, and the techniques they brought and developed, the one-pot stew, rice and beans cooked together (the dish that becomes Hoppin' John), deep frying, slow-cooked greens, careful seasoning, are the backbone of the cuisine. The food historians **Jessica B. Harris** and **Michael W. Twitty** have traced this culinary genealogy in detail, following specific dishes from West Africa through slavery into the American table (Harris, 2011; Twitty, 2017).
+
+Here the through-line takes a particular, modern shape, so watch for it. This knowledge was not only uncredited in the past. It stays uncredited now. The cooking that enslaved people created became "Southern cuisine," beloved and profitable, sold in restaurants and on grocery shelves, and for a long time its Black origins were quietly erased, the credit drifting to the plantation household rather than the enslaved cook who actually ran the kitchen. Part of what Twitty's work does is give the credit back by name and by dish. The pattern is exactly the one you have seen all course: expertise that made something valuable and enduring, separated from the people who created it. The difference is that this one is still on the menu.
+
+:::reveal Name two crops and one cooking practice enslaved Africans brought or shaped in American food, and explain the modern twist on the through-line here. ||| Crops: okra (the source of the word gumbo, from a West and Central African word for okra), black-eyed peas (cowpea), sorghum, or sesame (benne). A cooking practice: the one-pot stew, rice and beans cooked together (Hoppin' John), deep frying, slow-cooked greens, or seasoning technique. The modern twist: this knowledge became celebrated, profitable "Southern cuisine" while its Black origins were long erased, so the expertise is still being separated from its creators today (work Harris and Twitty push back against).
+
+## Sources
+- Carney, J. A., & Rosomoff, R. N. (2011). *In the shadow of slavery: Africa's botanical legacy in the Atlantic world*. University of California Press.
+- Harris, J. B. (2011). *High on the hog: A culinary journey from Africa to America*. Bloomsbury.
+- Twitty, M. W. (2017). *The cooking gene: A journey through African American culinary history in the Old South*. Amistad.`,
+      recallContent: [
+        {
+          prompt: "What African crops and food words show up in American foodways?",
+          answer:
+            "Okra (the word 'gumbo' comes from a West and Central African word for okra), black-eyed peas (the cowpea, a West African domesticate), sorghum, and sesame (called benne, from a West African word), among others. Carney and Rosomoff (2011) trace Africa's botanical legacy across the Atlantic.",
+        },
+        {
+          prompt: "What is the modern twist on the through-line in the foodways lesson?",
+          answer:
+            "The cooking enslaved Africans created became celebrated, profitable 'Southern cuisine,' but its Black origins were long erased, with credit drifting to the plantation household rather than the enslaved cooks. The expertise is still being separated from its creators, which historians like Harris and Twitty work to correct.",
+        },
+      ],
+    },
+    {
+      slug: "ttc-watercraft",
+      title: "18 · Water: swimming, canoes, and the pilots of the coast",
+      section: "Section 6 · Food and water",
+      body: `Here is a piece of knowledge that surprises people, because it cuts against a stereotype: on the water, enslaved Africans were often the experts, and Europeans the amateurs.
+
+The historian **Kevin Dawson** documents this in *Undercurrents of Power* (Dawson, 2018). Across West and West-Central Africa, aquatic skill was ordinary and highly developed: people learned to **swim** and **dive** as children, built and handled **dugout canoes** with great skill, and moved confidently in surf, river, and sea. This mattered because many Europeans of the era, including sailors, **could not swim at all**. When observers from Europe watched African and African-descended people swim, dive, and paddle, they often recorded amazement.
+
+In the Americas, that expertise did real work, and the enslaved who held it did jobs that depended on trust and skill:
+- They built and paddled **canoes** that carried people, goods, and messages through the marshes, rivers, and coastal waters of places like the Carolina and Georgia Lowcountry, where boats did what roads could not.
+- They served as **pilots**, guiding boats and even ships through dangerous water, over shifting sandbars and treacherous tides that a stranger could not read. A pilot who could bring a vessel safely across the bar was holding lives and cargo in his hands.
+- They **dived** for salvage and underwater work.
+
+Because these skills were valuable and hard to supervise, water work sometimes bought a sliver of something: wages, time out from under an overseer's eye, a degree of autonomy, and in rare cases a path toward freedom. Dawson also shows the flip side. Enslavers understood that a person who could swim could also **escape**, so swimming was often discouraged, and aquatic skill became, quietly, a tool of resistance passed from parent to child.
+
+But hold the pattern one more time, because it does not break. The pilot who alone could read the water, whose judgment the whole voyage depended on, was, when he stepped back onto land, still property. The most skilled person on the boat was the least free person on the boat. That is the course, on the water.
+
+:::reveal According to Kevin Dawson, what aquatic skills did enslaved Africans bring, what jobs did those skills do in the Americas, and how does the through-line hold on the water? ||| Dawson (2018) documents that West and West-Central Africans were expert swimmers, divers, and canoe-makers and handlers, often far more skilled than Europeans (many of whom could not swim). In the Americas the enslaved built and paddled canoes to move people and goods through marshes and rivers, served as pilots guiding boats and ships over dangerous sandbars and tides, and dived for salvage. The through-line holds: the pilot whose skill the whole voyage depended on was still enslaved, the most skilled person on the boat and the least free.
+
+## Sources
+- Dawson, K. (2018). *Undercurrents of power: Aquatic culture in the African diaspora*. University of Pennsylvania Press.`,
+      recallContent: [
+        {
+          prompt: "What does Kevin Dawson's Undercurrents of Power (2018) show about enslaved Africans and water?",
+          answer:
+            "That West and West-Central Africans were expert swimmers, divers, and canoe-makers and handlers, often more skilled than Europeans (many of whom could not swim). In the Americas they built and paddled canoes, served as pilots over dangerous water, and dived for salvage.",
+        },
+        {
+          prompt: "How was aquatic skill both a source of privilege and a tool of resistance?",
+          answer:
+            "Because water work was valuable and hard to supervise, it sometimes brought wages, autonomy, or rarely a path toward freedom. But enslavers also knew a swimmer could escape, so swimming was often discouraged, and the skill, passed parent to child, became a quiet form of resistance.",
+        },
+      ],
+    },
+    {
+      slug: "ttc-quiz-food-water",
+      title: "19 · Quiz: food and water",
+      section: "Section 6 · Food and water",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "The word 'gumbo' comes from what?",
+            options: [
+              "A French word for soup",
+              "A West and Central African word for okra (ki ngombo in Bantu languages)",
+              "A Native American word for corn",
+              "An English word for stew",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Okra's African name is stamped into the dish's name, one mark of African influence on American food.",
+            sourceLessonSlug: "ttc-foodways",
+          },
+          {
+            prompt: "Which of these is a West African crop that crossed into American foodways?",
+            options: ["Potatoes", "Black-eyed peas (the cowpea)", "Apples", "Wheat"],
+            correctIndex: 1,
+            explanation:
+              "The cowpea (black-eyed pea) was domesticated in West Africa thousands of years ago; okra, sorghum, and sesame (benne) also crossed.",
+            sourceLessonSlug: "ttc-foodways",
+          },
+          {
+            prompt: "Who did most of the cooking in plantation kitchens?",
+            options: [
+              "European chefs hired from abroad",
+              "Enslaved cooks, overwhelmingly, who brought and developed the techniques",
+              "The planters themselves",
+              "No one; food was imported ready-made",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Enslaved cooks ran the kitchens and shaped the one-pot stews, rice and beans, frying, and seasoning at the backbone of Southern cuisine.",
+            sourceLessonSlug: "ttc-foodways",
+          },
+          {
+            prompt: "What have food historians Jessica Harris and Michael Twitty documented?",
+            options: [
+              "That Southern food has no African roots",
+              "The culinary genealogy tracing specific dishes from West Africa through slavery to the American table",
+              "That enslaved people did not cook",
+              "That all American food came from Europe",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Harris (2011) and Twitty (2017) follow dishes and techniques from Africa into American cuisine, restoring the credit.",
+            sourceLessonSlug: "ttc-foodways",
+          },
+          {
+            prompt: "What is the modern twist on the through-line in the foodways lesson?",
+            options: [
+              "The food's Black origins are fully credited today",
+              "The cuisine became celebrated and profitable while its Black origins were long erased, so the expertise is still being separated from its creators",
+              "The food is no longer eaten",
+              "Enslaved cooks were always paid royalties",
+            ],
+            correctIndex: 1,
+            explanation:
+              "This uncredited-expertise pattern is not only historical; it is 'still on the menu,' which Twitty's work pushes back against.",
+            sourceLessonSlug: "ttc-foodways",
+          },
+          {
+            prompt: "What is Hoppin' John an example of?",
+            options: [
+              "A European dessert",
+              "A dish built on the African-rooted technique of cooking rice and beans (cowpeas) together",
+              "A modern fast food",
+              "A crop, not a dish",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rice and beans cooked together reflects African cooking knowledge carried into Southern food.",
+            sourceLessonSlug: "ttc-foodways",
+          },
+          {
+            prompt: "According to Kevin Dawson (2018), how did enslaved Africans' water skills compare to Europeans' at the time?",
+            options: [
+              "Europeans were the expert swimmers",
+              "Enslaved Africans were often expert swimmers, divers, and canoeists, while many Europeans, even sailors, could not swim",
+              "Neither group could swim",
+              "Water skills did not matter",
+            ],
+            correctIndex: 1,
+            explanation:
+              "African aquatic skill often astonished European observers, cutting against a modern stereotype.",
+            sourceLessonSlug: "ttc-watercraft",
+          },
+          {
+            prompt: "What skilled water job did enslaved people do that required reading dangerous sandbars and tides?",
+            options: ["Piloting boats and ships through treacherous water", "Building roads", "Weaving baskets", "Growing tobacco"],
+            correctIndex: 0,
+            explanation:
+              "A pilot who could bring a vessel safely over the bar held lives and cargo in his hands, a trusted, skilled role.",
+            sourceLessonSlug: "ttc-watercraft",
+          },
+          {
+            prompt: "Why were canoes so important in places like the Carolina and Georgia Lowcountry?",
+            options: [
+              "They were purely decorative",
+              "Boats did what roads could not, moving people, goods, and messages through marshes, rivers, and coastal waters",
+              "They were never actually used",
+              "They were only used for racing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Enslaved canoe-builders and paddlers were essential to transport in a watery landscape.",
+            sourceLessonSlug: "ttc-watercraft",
+          },
+          {
+            prompt: "How was aquatic skill sometimes rewarded, and why did enslavers also discourage swimming?",
+            options: [
+              "It brought instant freedom for all; swimming was encouraged",
+              "It sometimes brought wages, autonomy, or rarely a path to freedom, but enslavers discouraged swimming because a swimmer could escape",
+              "It was never rewarded and never discouraged",
+              "Swimming was required of everyone",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Water skill was valuable and hard to supervise, but it also enabled escape, so it became a quiet tool of resistance.",
+            sourceLessonSlug: "ttc-watercraft",
+          },
+          {
+            prompt: "What is the through-line 'on the water'?",
+            options: [
+              "The most skilled person on the boat was often the least free person on the boat",
+              "Pilots were always free men",
+              "Water work had nothing to do with slavery",
+              "Europeans did all the piloting",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The indispensable pilot, back on land, was still property, the course's tension carried onto the water.",
+            sourceLessonSlug: "ttc-watercraft",
+          },
+          {
+            prompt: "What does the foodways lesson add to the course's argument about credit?",
+            options: [
+              "That credit for enslaved knowledge was always given",
+              "That some of this uncredited expertise is still celebrated and sold today under names that hide its creators",
+              "That food knowledge is trivial",
+              "That Europeans invented Southern cuisine",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The foodways case shows the erasure is ongoing, not just a matter of the distant past.",
+            sourceLessonSlug: "ttc-foodways",
+          },
+          {
+            prompt: "Which statement best fits both the foodways and watercraft lessons?",
+            options: [
+              "Enslaved people contributed nothing to food or water skills",
+              "Enslaved people held expertise that shaped cuisine and coastal transport, while remaining uncredited or unfree",
+              "All this knowledge was European in origin",
+              "These skills earned enslaved people full freedom",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both lessons repeat the pattern: real, valuable expertise, separated from the people who held it.",
+            sourceLessonSlug: "ttc-watercraft",
+          },
+        ],
+      },
+    },
   ],
 };
