@@ -999,6 +999,62 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Florida Civics, Lesson 9 · Get involved where you live in Florida"],
   },
 
+  // ── State civics: North Carolina (state-civics-nc was written FROM North Carolina's own sources) ──
+  // NOTE: North Carolina's high-school civics anchor is the graduation-required "Founding Principles
+  // of the United States of America and North Carolina: Civic Literacy" course (NCDPI 4318), whose
+  // 2021 standards weave North Carolina explicitly through several otherwise federal-facing objectives —
+  // CL.C&G.4.1 and CL.C&G.4.3 name "the United States and North Carolina" judicial systems and
+  // constitutions, CL.C&G.2.2 / CL.C&G.2.3 reach federalism and the types of local government, and
+  // CL.C&G.3.7 reaches elections "at the national, state, and local levels" — so unlike Arkansas and
+  // California, the North Carolina flagship's structure lessons DO have a home, mapped there as partial
+  // (the North Carolina half is taught; the federal half lives in the general civics catalog).
+  {
+    id: "civics.nc-constitution",
+    claim: "Teaches North Carolina's 1971 (third) constitution and its amendment path — the General Assembly proposes by a three-fifths vote of each house, then the voters ratify — and that North Carolina has no citizen initiative.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 1 · North Carolina's 1971 constitution, and no citizen initiative",
+    ],
+  },
+  {
+    id: "civics.nc-council-of-state",
+    claim: "Teaches North Carolina's plural elected executive — the Council of State, ten separately-elected statewide officers — and a General Assembly of a 120-member House and a 50-member Senate.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: ["North Carolina Civics, Lesson 2 · The three branches, and the Council of State"],
+  },
+  {
+    id: "civics.nc-courts",
+    claim: "Teaches that North Carolina elects its appellate judges (the Supreme Court and the Court of Appeals) in PARTISAN statewide races to 8-year terms, not by merit selection and not in nonpartisan races.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 3 · North Carolina's courts: appellate judges elected in PARTISAN races",
+    ],
+  },
+  {
+    id: "civics.nc-local-government",
+    claim: "Teaches North Carolina local government as North Carolina's: 100 counties under elected Boards of Commissioners, limited home rule (a Dillon's Rule state), municipalities, and no townships.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 5 · Local government: 100 counties, limited home rule, no townships",
+      "North Carolina Civics, Lesson 8 · Get involved where you live in North Carolina",
+    ],
+  },
+  {
+    id: "civics.nc-elections",
+    claim: "Teaches North Carolina's election specifics: early one-stop voting with same-day registration, no-excuse absentee voting, a 25-day regular registration deadline, and the heavily-litigated photo voter-ID requirement (SB 824).",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 6 · Elections in NC: early one-stop voting, no-excuse absentee, 25-day deadline",
+      "North Carolina Civics, Lesson 7 · Photo voter ID: recently in effect after litigation",
+    ],
+  },
+  {
+    id: "civics.nc-get-involved",
+    claim: "Teaches getting involved where you live, North Carolina edition — and why the General Assembly is the main lever for changing state law (no citizen initiative and a comparatively limited veto).",
+    courseSlugs: ["state-civics-nc"],
+    lessons: ["North Carolina Civics, Lesson 8 · Get involved where you live in North Carolina"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
