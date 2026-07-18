@@ -1566,6 +1566,77 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Missouri Civics, Lesson 5 · Elections and how to take part in Missouri"],
   },
 
+  // ── State civics: Minnesota (state-civics-mn was written FROM Minnesota's own sources) ──
+  // NOTE: Minnesota's 2021 K-12 Academic Standards in Social Studies (Citizenship and Government
+  // strand, high school) name Minnesota's OWN government explicitly — 9.1.4.7 ("the powers and
+  // operations of the State of Minnesota government as defined in its constitution") and 9.1.4.8
+  // ("the powers and operations of local government in Minnesota") — so, like Michigan and Missouri
+  // and unlike the abstract-concept states, the Minnesota flagship's structure lessons have a
+  // genuine home. Minnesota is a notable framework case: it did NOT adopt the Common Core for MATH
+  // (it kept its own math standards), and its once-Common-Core ELA has since been replaced by
+  // Minnesota's own 2020 ELA standards; data/mn.ts publishes those as deferred gaps, not denials.
+  {
+    id: "civics.mn-turnout-registration",
+    claim:
+      "Teaches Minnesota's participatory signature: it frequently leads the nation in voter turnout, powered by being an early adopter of Election-Day (same-day) voter registration (adopted 1974), which lets an eligible Minnesotan register and vote at the polls on the same day, paired with no-excuse early/absentee voting.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 1 · Why Minnesota leads the nation in voter turnout"],
+  },
+  {
+    id: "civics.mn-dfl-nonpartisan",
+    claim:
+      "Teaches two Minnesota political distinctives: the uniquely named Democratic-Farmer-Labor Party (DFL), the main left-of-center party, formed by a 1944 merger of the Minnesota Democratic Party and the Farmer-Labor Party; and that Minnesota ran an officially NONPARTISAN Legislature for 60 years (1913 to 1973), with legislators serving without party labels, before returning to a partisan Legislature in 1973.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: [
+      "Minnesota Civics, Lesson 2 · Two Minnesota distinctives: the DFL and a nonpartisan legislature (1913 to 1973)",
+    ],
+  },
+  {
+    id: "civics.mn-state-structure",
+    claim:
+      "Teaches Minnesota's three branches as Minnesota's: the Constitution of 1858; a plural executive of a joint-ticket Governor and Lieutenant Governor plus a separately elected Attorney General, Secretary of State, and State Auditor; a Legislature of a 134-member House (2-year terms) and a 67-member Senate (mostly 4-year terms); and the Governor's veto and line-item veto with a two-thirds override.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 3 · The executive and the Legislature"],
+  },
+  {
+    id: "civics.mn-courts",
+    claim:
+      "Teaches Minnesota's judiciary — district courts up through the Court of Appeals and a seven-justice Minnesota Supreme Court, with judges elected on a NONPARTISAN ballot to 6-year terms, yet in practice most first reach the bench by gubernatorial appointment to fill a vacancy and then run as incumbents.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 3 · The executive and the Legislature"],
+  },
+  {
+    id: "civics.mn-lawmaking",
+    claim:
+      "Teaches how a bill becomes a Minnesota law and that Minnesota has NO statewide citizen initiative — the Legislature and Governor make the law, and citizens only ratify amendments the Legislature refers, under Minnesota's strict rule that an amendment needs a majority of everyone voting in the election, so leaving the question blank effectively counts as a 'no.'",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 4 · How a bill becomes a Minnesota law"],
+  },
+  {
+    id: "civics.mn-local-government",
+    claim:
+      "Teaches Minnesota local government as Minnesota's: 87 counties governed by elected county boards of commissioners plus separately elected officials; active rural townships alongside incorporated cities (larger cities under home-rule charters); school and special districts; and the distinctive Metropolitan Council governing regional planning and transit in the Twin Cities area.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 5 · Local government and how to take part"],
+  },
+  {
+    id: "civics.mn-elections",
+    claim:
+      "Teaches Minnesota's election specifics — same-day (Election-Day) registration, no-excuse absentee/early voting, and (unlike some states) no strict photo-ID requirement — administered by county and city election officials, with a standing flag to confirm current rules at sos.mn.gov.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: [
+      "Minnesota Civics, Lesson 1 · Why Minnesota leads the nation in voter turnout",
+      "Minnesota Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.mn-get-involved",
+    claim:
+      "Teaches getting involved where you live, Minnesota edition — registering and voting even on Election Day, taking part in Minnesota's precinct caucuses, showing up at county boards, city councils, township meetings, and (in the Twin Cities) the Metropolitan Council, contacting your one Representative and one Senator in St. Paul, and running for local office.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 5 · Local government and how to take part"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
