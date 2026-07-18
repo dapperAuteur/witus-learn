@@ -1081,5 +1081,273 @@ This is Lesson 2's warning in stone. Physical evidence is powerful and hard to f
         ],
       },
     },
+
+    // ───────────── SECTION 5 · SWEAT AND STEAM: THE SAUNA AND THE TEMAZCAL ─────────────
+    {
+      slug: "bathing-sauna",
+      title: "13 · The Finnish sauna: sweat, steam, and a way of life",
+      section: "Section 5 · Sweat and steam: the sauna and the temazcal",
+      body: `Not every great bathing tradition is about immersing in water. Some of the oldest are about heat and sweat, and the most famous of these is the Finnish sauna.
+
+**What it is.** A sauna is a wooden room heated by a stove, the *kiuas*, topped with stones. Bathers throw water on the hot stones to release a burst of intense, moist heat that the Finns call *löyly*. You sit, you sweat, and traditionally you cool off, sometimes by rolling in snow or plunging into a lake, and then heat up again. Sweating opens and cleans the skin; the sauna does with heat much of what a Roman did with oil and a strigil, by a completely different route (UNESCO, 2020).
+
+**More than washing.** In Finland the sauna was never only a place to get clean. For centuries it was one of the most important rooms a family had. Because it was warm, private, and considered an especially clean, almost sacred space, it was where women traditionally gave birth, where the sick were tended, and where the bodies of the dead were washed and prepared. It was a place of quiet and equality, where social rank was left at the door (UNESCO, 2020). This is a whole hygiene tradition that owes nothing to Rome or the hammam. It grew up on its own in the north.
+
+**Still central today.** The sauna is not a museum piece. Finland, a country of about 5.5 million people, has an estimated 3.3 million saunas, in homes, apartment buildings, offices, and by summer lakes. In 2020, UNESCO added *sauna culture in Finland* to its Representative List of the Intangible Cultural Heritage of Humanity, Finland's first inscription on that list (UNESCO, 2020).
+
+The sauna belongs to a wider northern and eastern European family of sweat bathing, which includes traditions like the Russian *banya*. But it makes the same point on its own: getting clean by sweating in heat is not a poor substitute for "real" bathing. It is a full, sophisticated tradition, sacred, social, and healthful all at once. And on the other side of the world, entirely independently, another people built something remarkably similar.
+
+:::reveal Beyond getting clean, what roles did the sauna traditionally play in Finnish life, and what does that tell us about it? ||| Because it was warm, private, and considered an especially clean, almost sacred space, the sauna was traditionally where women gave birth, where the sick were tended, and where the dead were washed and prepared. It was a place of equality where rank was left at the door. This shows sweat bathing was a complete social, sacred, and healthful tradition, not a crude substitute for washing in water.
+
+## Sources
+- UNESCO. (2020). *Sauna culture in Finland*. Representative List of the Intangible Cultural Heritage of Humanity. https://ich.unesco.org/en/RL/sauna-culture-in-finland-01596`,
+      recallContent: [
+        {
+          prompt: "Why is the Japanese ofuro soak taken in clean water, and what larger point does it make?",
+          answer:
+            "Because bathers wash and rinse fully outside the tub first, so the shared soaking water stays clean; the soak is for warming and relaxing, not scrubbing. It shows 'clean' was reached by yet another distinct method, a complete tradition of its own.",
+        },
+        {
+          prompt: "What religious ideas shaped Japanese bathing?",
+          answer:
+            "Shinto purification (misogi, washing the body, linked to spiritual purity and the Izanagi story) and Buddhism, which brought ritual bathing and the idea that giving baths to others (including the poor and sick) earned religious merit.",
+        },
+      ],
+    },
+    {
+      slug: "bathing-temazcal",
+      title: "14 · The Mesoamerican temazcal, and a story to handle with care",
+      section: "Section 5 · Sweat and steam: the sauna and the temazcal",
+      body: `Across ancient Mesoamerica, in the world of the Maya, the Nahua (the people often called the Aztecs), and their neighbors, people cleaned, healed, and purified themselves in a sweat bath called the *temazcal*, from a Nahuatl word meaning "bath house." Its principle would be instantly familiar to a Finn: a small, enclosed chamber, heated, with water poured over hot stones to fill it with steam. It was used for ordinary hygiene, for healing, especially by women recovering after childbirth, and for ritual purification (Ashenburg, 2007). Sweat baths are attested in the archaeological record of Mesoamerica; this course's companion, *Pre-Columbian Mesoamerica*, describes an excavated sweat bath at the buried farming village of Joya de Cerén and covers the Nahua world in detail.
+
+Two peoples on opposite sides of the planet, with no contact, built the same good idea. That, on its own, would be a fine lesson. But the temazcal also brings us to the exact kind of vivid story this course warned you about in Lesson 2, so let us practice the discipline now, before Section 7 needs it.
+
+**The claim.** You will often read that the Mexica ruler **Moctezuma bathed twice a day**, offered as proof that the Aztecs were far cleaner than the Spanish who conquered them.
+
+**The honest handling.** That specific claim comes from a single source: the Spanish conquistador **Andrés de Tapia**, who was there, and whose report reaches us today largely through historians like Katherine Ashenburg (2007). One eyewitness, often writing years after the events and with reasons to portray things a certain way, is a **claim, not a measurement**. So the honest sentence is "the conquistador Andrés de Tapia reported that Moctezuma bathed twice a day," not "Moctezuma bathed twice a day." The number might be exact; it might be rounded, exaggerated, or misremembered. We cannot know from one witness.
+
+**What we can say more confidently.** Several colonial-era accounts, taken together, describe regular bathing as an ordinary part of Nahua life, and steam bathing in the temazcal is independently supported by physical remains and by the survival of the practice into modern times. A pattern reported by many sources and backed by archaeology is much sturdier than one man's number. So the careful conclusion is not the crisp headline "Moctezuma bathed twice a day," but the well-supported "regular bathing, including steam bathing in the temazcal, was clearly important in the Nahua world," with the specific twice-a-day detail flagged as a single observer's report. Hold that distinction. In Section 7 it is the whole game.
+
+:::reveal Why should you write "the conquistador Andres de Tapia reported that Moctezuma bathed twice a day" rather than simply "Moctezuma bathed twice a day"? ||| Because the specific claim rests on a single eyewitness, often writing years later and with his own motives, which is a claim rather than a neutral measurement. Attributing and hedging it keeps it honest. What is better supported, by several accounts plus archaeology and the surviving practice, is the broader point that regular bathing and the temazcal steam bath were clearly important in the Nahua world.
+
+## Sources
+- Ashenburg, K. (2007). *The dirt on clean: An unsanitized history*. North Point Press.`,
+      recallContent: [
+        {
+          prompt: "What is a Finnish sauna, in terms of how it is heated and what löyly is?",
+          answer:
+            "A wooden room heated by a stove (the kiuas) topped with stones. Bathers throw water on the hot stones to release löyly, a burst of intense moist heat. Sweating cleans the skin, and cooling off (in snow or a lake) alternates with reheating.",
+        },
+        {
+          prompt: "What recognition did Finnish sauna culture receive in 2020, and what scale shows how central it remains?",
+          answer:
+            "UNESCO inscribed sauna culture in Finland on its Representative List of the Intangible Cultural Heritage of Humanity in 2020 (Finland's first such inscription). Finland has about 3.3 million saunas for roughly 5.5 million people.",
+        },
+      ],
+    },
+    {
+      slug: "bathing-quiz-sweat",
+      title: "15 · Quiz: the sauna and the temazcal",
+      section: "Section 5 · Sweat and steam: the sauna and the temazcal",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "In a Finnish sauna, what is löyly?",
+            options: [
+              "The wooden bench",
+              "The burst of intense moist heat released when water is thrown on the hot stones",
+              "A bar of soap",
+              "The cold lake used for cooling off",
+            ],
+            correctIndex: 1,
+            explanation: "Löyly is the steam-heat from water on the sauna stones (UNESCO, 2020).",
+            sourceLessonSlug: "bathing-sauna",
+          },
+          {
+            prompt: "How does a sauna get a person clean, compared with the Roman method?",
+            options: [
+              "By soaking in soapy water",
+              "By heat and sweating, which opens and cleans the skin, doing by a different route much of what the Roman oil-and-strigil method did",
+              "By scraping with a strigil",
+              "By ritual ablution before prayer",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Sweat bathing cleans through heat, a distinct method from oiling and scraping (UNESCO, 2020).",
+            sourceLessonSlug: "bathing-sauna",
+          },
+          {
+            prompt: "Which traditional roles show the sauna was 'more than washing' in Finnish life?",
+            options: [
+              "It was used only by soldiers",
+              "It was where women gave birth, the sick were tended, and the dead were washed and prepared, a clean, almost sacred, equal space",
+              "It was a place to store food",
+              "It was reserved for royalty",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The sauna was a sacred, egalitarian family space for birth, healing, and preparing the dead (UNESCO, 2020).",
+            sourceLessonSlug: "bathing-sauna",
+          },
+          {
+            prompt: "About how many saunas does Finland have, and what does that number illustrate?",
+            options: [
+              "A few hundred, showing the tradition is dying",
+              "About 3.3 million for roughly 5.5 million people, showing the tradition remains central",
+              "Exactly one, a national monument",
+              "None; saunas are only historical",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Around 3.3 million saunas for 5.5 million people shows a living tradition (UNESCO, 2020).",
+            sourceLessonSlug: "bathing-sauna",
+          },
+          {
+            prompt: "What happened to Finnish sauna culture in 2020?",
+            options: [
+              "It was banned",
+              "UNESCO inscribed it on the Representative List of the Intangible Cultural Heritage of Humanity, Finland's first such inscription",
+              "It was invented",
+              "It was declared a Roman import",
+            ],
+            correctIndex: 1,
+            explanation: "UNESCO added sauna culture in Finland to its Representative List in 2020 (UNESCO, 2020).",
+            sourceLessonSlug: "bathing-sauna",
+          },
+          {
+            prompt: "What is a temazcal?",
+            options: [
+              "A Mesoamerican sweat bath: a small enclosed chamber filled with steam by pouring water on hot stones",
+              "A type of Aztec soap",
+              "A Roman cold plunge",
+              "A Japanese hot spring",
+            ],
+            correctIndex: 0,
+            explanation:
+              "The temazcal is a Mesoamerican steam sweat bath, from a Nahuatl word for 'bath house' (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-temazcal",
+          },
+          {
+            prompt: "The sauna and the temazcal, built by peoples with no contact, are used in the course to show what?",
+            options: [
+              "That one culture must have copied the other",
+              "That different peoples independently developed the same good idea, sweat bathing, as a complete tradition of their own",
+              "That sweat bathing does not really clean anyone",
+              "That only Europe had real bathing",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Independent invention of steam sweat bathing on opposite sides of the world reinforces the 'many parallel traditions' verdict.",
+            sourceLessonSlug: "bathing-temazcal",
+          },
+          {
+            prompt: "For what purposes was the temazcal used?",
+            options: [
+              "Only for cooking",
+              "Ordinary hygiene, healing (especially women recovering after childbirth), and ritual purification",
+              "Only for punishment",
+              "Only for storing water",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The temazcal served hygiene, medicine, and ritual, much like the sauna (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-temazcal",
+          },
+          {
+            prompt: "The claim 'Moctezuma bathed twice a day' comes from which source?",
+            options: [
+              "A modern textbook with no citation",
+              "A single Spanish conquistador, Andres de Tapia, whose report reaches us largely through historians like Ashenburg",
+              "An Aztec codex written by Moctezuma himself",
+              "Archaeological measurement of his palace",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The specific claim rests on one eyewitness, Andres de Tapia (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-temazcal",
+          },
+          {
+            prompt: "What is the honest way to state the Moctezuma bathing claim?",
+            options: [
+              "'Moctezuma bathed twice a day,' as a plain fact",
+              "'The conquistador Andres de Tapia reported that Moctezuma bathed twice a day,' attributing and hedging the single-witness claim",
+              "Ignore it entirely because it is Spanish",
+              "'Moctezuma bathed at least three times a day,' rounding up",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Attribute and hedge a single-observer claim rather than laundering it into a fact (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-temazcal",
+          },
+          {
+            prompt: "What can be said MORE confidently than the exact 'twice a day' number?",
+            options: [
+              "Nothing at all can be said",
+              "That regular bathing, including steam bathing in the temazcal, was clearly important in the Nahua world, since several accounts plus archaeology and the surviving practice agree",
+              "That the Aztecs never bathed",
+              "That only Moctezuma ever bathed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "A pattern backed by many sources and archaeology is sturdier than one witness's number.",
+            sourceLessonSlug: "bathing-temazcal",
+          },
+          {
+            prompt: "Which companion course does this module cross-link for the excavated sweat bath at Joya de Cerén and the Nahua world?",
+            options: [
+              "Asia Before European Colonization",
+              "Pre-Columbian Mesoamerica",
+              "Africa Before Colonization",
+              "The History of Unions",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Pre-Columbian Mesoamerica covers the Joya de Cerén sweat bath and the Nahua in depth.",
+            sourceLessonSlug: "bathing-temazcal",
+          },
+          {
+            prompt: "The sauna belongs to a wider family of sweat bathing that also includes which tradition?",
+            options: [
+              "The Roman strigil",
+              "The Russian banya",
+              "The Japanese onsen",
+              "The Islamic wudu",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Northern and eastern European sweat bathing includes traditions like the Russian banya (UNESCO, 2020).",
+            sourceLessonSlug: "bathing-sauna",
+          },
+          {
+            prompt: "Why does the course practice the attribute-and-hedge discipline on the Moctezuma claim now, before Section 7?",
+            options: [
+              "To fill space",
+              "Because Section 7's encounters between Europeans and other peoples turn entirely on handling single-observer claims honestly",
+              "Because the claim is unimportant",
+              "Because Section 7 has no sources",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The encounters section depends on the same discipline: attribute and hedge vivid single-witness reports.",
+            sourceLessonSlug: "bathing-temazcal",
+          },
+          {
+            prompt: "What is the best one-sentence summary of the sauna and temazcal lessons together?",
+            options: [
+              "Sweat bathing is a crude substitute for washing in water",
+              "Getting clean by sweating in heat is a full, sophisticated tradition that several peoples developed independently",
+              "Only Finland ever used a sweat bath",
+              "The temazcal was copied from the sauna",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Both are complete, independently developed sweat-bathing traditions, not lesser forms of bathing.",
+            sourceLessonSlug: "bathing-sauna",
+          },
+        ],
+      },
+    },
   ],
 };
