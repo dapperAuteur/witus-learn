@@ -1566,6 +1566,404 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Missouri Civics, Lesson 5 · Elections and how to take part in Missouri"],
   },
 
+  // ── State civics: Maryland (state-civics-md was written FROM Maryland's own sources) ──
+  // NOTE: Maryland's required High School American Government course (Maryland Social Studies
+  // Framework, June 2025) reaches Maryland's OWN government explicitly — GOV.2.1.a names "the
+  // Maryland General Assembly," and the legislative/executive/judicial structure indicators name
+  // "Federal and Maryland State Government" in their assessment limits — so the Maryland flagship's
+  // structure lessons have a genuine home, mapped there rather than to abstract concepts. Maryland
+  // adopted the Common Core (as the Maryland College and Career Ready Standards) for ELA and, as an
+  // NGSS lead state, the NGSS for science; data/md.ts adopts both from ../shared and publishes math
+  // as unclaimed. The flagship's most distinctive fact — Maryland's nation-strongest executive
+  // budget power — has no code of its own; it is claimed through the executive-comparison indicator
+  // (GOV.3.3.a) and published in md.ts's notClaimed list.
+  {
+    id: "civics.md-budget-power",
+    claim:
+      "Teaches Maryland's most distinctive civic feature — the extraordinary budget power of its Governor, widely described as the strongest gubernatorial budget authority in the nation: under Maryland's executive-budget system (in the Constitution since 1916) the Governor proposes the budget and the General Assembly can generally only CUT or reduce items, not add new spending or move money to new purposes, which makes the Governor unusually dominant over state finances.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 1 · Maryland's Governor: the strongest budget power in the nation",
+    ],
+  },
+  {
+    id: "civics.md-state-structure",
+    claim:
+      "Teaches Maryland's three branches as Maryland's: the Constitution of 1867 (its fourth); a compact plural executive (a joint-ticket Governor and Lieutenant Governor with a separately elected Attorney General and Comptroller, while the Secretary of State is appointed by the Governor and the Treasurer is elected by the General Assembly); a bicameral General Assembly of a 141-member House of Delegates and a 47-member Senate serving 4-year terms in a fixed 90-day annual session; and the three-fifths veto override.",
+    courseSlugs: ["state-civics-md"],
+    lessons: ["Maryland Civics, Lesson 2 · The executive and the General Assembly"],
+  },
+  {
+    id: "civics.md-courts",
+    claim:
+      "Teaches Maryland's courts as Maryland's, including the 2022 renaming voters approved: the highest court became the “Supreme Court of Maryland” (before 2022 the Court of Appeals) and the intermediate court the “Appellate Court of Maryland”; appellate judges are appointed by the Governor (advised by a nominating commission) with Senate confirmation and then face yes/no retention elections, while Circuit Court trial judges run in contested elections — a blend of merit appointment and election.",
+    courseSlugs: ["state-civics-md"],
+    lessons: ["Maryland Civics, Lesson 3 · Maryland's courts and a 2022 name change"],
+  },
+  {
+    id: "civics.md-referendum",
+    claim:
+      "Teaches Maryland's distinctive citizen check — the “petition to referendum,” by which voters gather signatures to suspend a law the General Assembly just passed and put it to a statewide vote — and that Maryland has NO citizen initiative to propose new laws, so the citizen power here is a veto (reject a law), not an initiative (start one); taught alongside how a bill becomes a Maryland law and the three-fifths veto override.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 4 · How a bill becomes law, and Maryland's referendum (but no initiative)",
+    ],
+  },
+  {
+    id: "civics.md-local-government",
+    claim:
+      "Teaches Maryland local government as Maryland's: 23 counties (many of them home-rule “charter” counties like Montgomery and Baltimore County, with elected councils and county executives) PLUS the independent City of Baltimore, which belongs to no county and is a county-equivalent with its own government — so Baltimore City and Baltimore County are two separate governments.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 5 · Local government, independent Baltimore, and how to take part",
+    ],
+  },
+  {
+    id: "civics.md-get-involved",
+    claim:
+      "Teaches taking part where you live, Maryland edition — registering and voting with Maryland's early in-person voting, no-excuse mail-in ballots, and same-day registration; joining a petition to referendum to challenge a new law; showing up at county councils, city councils, and school boards; contacting your Annapolis Delegates and Senator; and running for local office — flagged as time-sensitive and pointing to elections.maryland.gov.",
+    courseSlugs: ["state-civics-md"],
+    lessons: [
+      "Maryland Civics, Lesson 5 · Local government, independent Baltimore, and how to take part",
+    ],
+  },
+
+  // ── State civics: Colorado (state-civics-co was written FROM Colorado's own sources) ──
+  // NOTE: Colorado's High School Civics standard (2020 Colorado Academic Standards, Social Studies
+  // Standard 4) is CONCEPT-based — like Illinois's and Ohio's abstract standards, it names "American
+  // government" and "various levels of government" rather than Colorado's own, so the Colorado
+  // flagship's Colorado-specific lessons (TABOR, the initiative/referendum/recall, the GAVEL
+  // amendment, merit-selection judges, all-mail elections, Denver/Broomfield city-counties) map as
+  // genuine INSTANCES of those generic outcomes (e.g. SS.HS.4.1.b "use the structure and functions
+  // of various levels of government to shape policy" is exactly what Colorado's direct democracy
+  // does). Colorado writes its OWN ELA (Reading, Writing, and Communicating) and its OWN science
+  // (NGSS-influenced, not adopted verbatim), so — unlike Maryland — there is no shared framework to
+  // adopt; both are deferred in data/co.ts's notClaimed, fetch-and-verify-or-don't-cite. The
+  // flagship's signature fact, TABOR, has no code of its own and is claimed through SS.HS.4.1.b.
+  {
+    id: "civics.co-direct-democracy",
+    claim:
+      "Teaches Colorado as a state where the voters are themselves a lawmaking body: the Constitution of 1876 (Colorado is the “Centennial State,” admitted in the nation's 100th year) and the direct-democracy tools added in 1910 — the initiative (used to enact a statute OR a constitutional amendment straight at the ballot, making Colorado's constitution one of the most frequently amended in the nation), the referendum (to reject a law the Legislature passed), and the recall (to remove an elected official before the term ends).",
+    courseSlugs: ["state-civics-co"],
+    lessons: [
+      "Colorado Civics, Lesson 1 · Colorado's Constitution of 1876 and its direct democracy",
+    ],
+  },
+  {
+    id: "civics.co-tabor",
+    claim:
+      "Teaches Colorado's signature constitutional rule, the Taxpayer's Bill of Rights (TABOR, passed by citizen initiative in 1992): state and local governments cannot raise a tax, impose a new tax, or increase a rate without a direct vote of the people, and revenue collected above a formula-based cap (roughly inflation plus population growth) must generally be refunded to taxpayers unless voters agree to keep it (“de-Brucing”) — making the voters the gatekeepers of taxation and spending.",
+    courseSlugs: ["state-civics-co"],
+    lessons: [
+      "Colorado Civics, Lesson 4 · TABOR: the Taxpayer's Bill of Rights (Colorado's signature rule)",
+      "Colorado Civics, Lesson 5 · How a bill becomes a Colorado law",
+    ],
+  },
+  {
+    id: "civics.co-state-structure",
+    claim:
+      "Teaches Colorado's three branches as Colorado's: a General Assembly of a 35-member Senate (4-year terms) and a 65-member House (2-year terms), each capped at 8 consecutive years, under the distinctive “GAVEL” amendment (1988) that guarantees every bill a committee hearing; a joint-ticket Governor and Lieutenant Governor with a separately elected Secretary of State, Attorney General, and Treasurer; a two-thirds veto override plus the line-item veto on appropriations; and how a bill becomes a Colorado law by two routes — the Legislature, or the voters directly.",
+    courseSlugs: ["state-civics-co"],
+    lessons: [
+      "Colorado Civics, Lesson 2 · The three branches of Colorado government",
+      "Colorado Civics, Lesson 5 · How a bill becomes a Colorado law",
+    ],
+  },
+  {
+    id: "civics.co-courts",
+    claim:
+      "Teaches how Colorado chooses its judges — merit selection followed by retention (often called the “Missouri Plan”): a nonpartisan nominating commission sends the Governor a short list of the most qualified, the Governor must appoint from that list, and the judge then faces the voters in nonpartisan yes/no retention elections (Colorado Supreme Court justices on 10-year terms), blending professional vetting with public accountability and avoiding big-money contested judicial races.",
+    courseSlugs: ["state-civics-co"],
+    lessons: [
+      "Colorado Civics, Lesson 3 · How Colorado chooses its judges (merit selection + retention)",
+    ],
+  },
+  {
+    id: "civics.co-elections",
+    claim:
+      "Teaches Colorado's elections as Colorado's: since 2013 a ballot is mailed to every registered voter for every election, paired with same-day and automatic voter registration and 16/17-year-old pre-registration, returnable by mail, drop box, or voter service center; and the independent redistricting commissions (Amendments Y and Z of 2018, made of Democrats, Republicans, and unaffiliated members) that draw Colorado's congressional and legislative maps instead of the Legislature.",
+    courseSlugs: ["state-civics-co"],
+    lessons: ["Colorado Civics, Lesson 6 · Elections, local government, and how to take part"],
+  },
+  {
+    id: "civics.co-local-government",
+    claim:
+      "Teaches Colorado local government as Colorado's: 64 counties governed by elected boards of county commissioners, home-rule cities and counties that write their own charters, the unusual consolidated city-and-county governments of Denver and Broomfield, and special districts (schools, water, fire, transit) — each of which, under TABOR, needs voter approval to raise taxes.",
+    courseSlugs: ["state-civics-co"],
+    lessons: ["Colorado Civics, Lesson 6 · Elections, local government, and how to take part"],
+  },
+  {
+    id: "civics.co-get-involved",
+    claim:
+      "Teaches taking part where you live, Colorado edition — voting the ballot mailed to you (tracking it at sos.state.co.us), signing, circulating, or filing an initiative or referendum, showing up at county commissions, city councils, and school boards (where TABOR tax questions come to you on the ballot), testifying on a bill the GAVEL rule guarantees will be heard, and running for local office.",
+    courseSlugs: ["state-civics-co"],
+    lessons: ["Colorado Civics, Lesson 6 · Elections, local government, and how to take part"],
+  },
+  // ── State civics: Minnesota (state-civics-mn was written FROM Minnesota's own sources) ──
+  // NOTE: Minnesota's 2021 K-12 Academic Standards in Social Studies (Citizenship and Government
+  // strand, high school) name Minnesota's OWN government explicitly — 9.1.4.7 ("the powers and
+  // operations of the State of Minnesota government as defined in its constitution") and 9.1.4.8
+  // ("the powers and operations of local government in Minnesota") — so, like Michigan and Missouri
+  // and unlike the abstract-concept states, the Minnesota flagship's structure lessons have a
+  // genuine home. Minnesota is a notable framework case: it did NOT adopt the Common Core for MATH
+  // (it kept its own math standards), and its once-Common-Core ELA has since been replaced by
+  // Minnesota's own 2020 ELA standards; data/mn.ts publishes those as deferred gaps, not denials.
+  {
+    id: "civics.mn-turnout-registration",
+    claim:
+      "Teaches Minnesota's participatory signature: it frequently leads the nation in voter turnout, powered by being an early adopter of Election-Day (same-day) voter registration (adopted 1974), which lets an eligible Minnesotan register and vote at the polls on the same day, paired with no-excuse early/absentee voting.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 1 · Why Minnesota leads the nation in voter turnout"],
+  },
+  {
+    id: "civics.mn-dfl-nonpartisan",
+    claim:
+      "Teaches two Minnesota political distinctives: the uniquely named Democratic-Farmer-Labor Party (DFL), the main left-of-center party, formed by a 1944 merger of the Minnesota Democratic Party and the Farmer-Labor Party; and that Minnesota ran an officially NONPARTISAN Legislature for 60 years (1913 to 1973), with legislators serving without party labels, before returning to a partisan Legislature in 1973.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: [
+      "Minnesota Civics, Lesson 2 · Two Minnesota distinctives: the DFL and a nonpartisan legislature (1913 to 1973)",
+    ],
+  },
+  {
+    id: "civics.mn-state-structure",
+    claim:
+      "Teaches Minnesota's three branches as Minnesota's: the Constitution of 1858; a plural executive of a joint-ticket Governor and Lieutenant Governor plus a separately elected Attorney General, Secretary of State, and State Auditor; a Legislature of a 134-member House (2-year terms) and a 67-member Senate (mostly 4-year terms); and the Governor's veto and line-item veto with a two-thirds override.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 3 · The executive and the Legislature"],
+  },
+  {
+    id: "civics.mn-courts",
+    claim:
+      "Teaches Minnesota's judiciary — district courts up through the Court of Appeals and a seven-justice Minnesota Supreme Court, with judges elected on a NONPARTISAN ballot to 6-year terms, yet in practice most first reach the bench by gubernatorial appointment to fill a vacancy and then run as incumbents.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 3 · The executive and the Legislature"],
+  },
+  {
+    id: "civics.mn-lawmaking",
+    claim:
+      "Teaches how a bill becomes a Minnesota law and that Minnesota has NO statewide citizen initiative — the Legislature and Governor make the law, and citizens only ratify amendments the Legislature refers, under Minnesota's strict rule that an amendment needs a majority of everyone voting in the election, so leaving the question blank effectively counts as a 'no.'",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 4 · How a bill becomes a Minnesota law"],
+  },
+  {
+    id: "civics.mn-local-government",
+    claim:
+      "Teaches Minnesota local government as Minnesota's: 87 counties governed by elected county boards of commissioners plus separately elected officials; active rural townships alongside incorporated cities (larger cities under home-rule charters); school and special districts; and the distinctive Metropolitan Council governing regional planning and transit in the Twin Cities area.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 5 · Local government and how to take part"],
+  },
+  {
+    id: "civics.mn-elections",
+    claim:
+      "Teaches Minnesota's election specifics — same-day (Election-Day) registration, no-excuse absentee/early voting, and (unlike some states) no strict photo-ID requirement — administered by county and city election officials, with a standing flag to confirm current rules at sos.mn.gov.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: [
+      "Minnesota Civics, Lesson 1 · Why Minnesota leads the nation in voter turnout",
+      "Minnesota Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.mn-get-involved",
+    claim:
+      "Teaches getting involved where you live, Minnesota edition — registering and voting even on Election Day, taking part in Minnesota's precinct caucuses, showing up at county boards, city councils, township meetings, and (in the Twin Cities) the Metropolitan Council, contacting your one Representative and one Senator in St. Paul, and running for local office.",
+    courseSlugs: ["state-civics-mn"],
+    lessons: ["Minnesota Civics, Lesson 5 · Local government and how to take part"],
+  },
+
+  // ── State civics: Wisconsin (state-civics-wi was written FROM Wisconsin's own sources) ──
+  // NOTE: Wisconsin writes its OWN social studies standards (the 2018 Wisconsin Standards for
+  // Social Studies, informed by the C3 Framework — not Common Core). Its Political Science (PS)
+  // strand names the structure and functions of state government explicitly at high school:
+  // SS.PS3.c.h ("Evaluate the structure and functions of governments at the local, state, tribal,
+  // national, and global levels") is a genuine home for the Wisconsin flagship's own-structure
+  // lessons, and the strand's Inquiry (Inq) and History (Hist) source-analysis indicators carry the
+  // catalog's media/source-literacy method. data/wi.ts publishes the ELA/science/math gaps.
+  {
+    id: "civics.wi-wisconsin-idea",
+    claim:
+      "Teaches Wisconsin's Progressive-Era civic identity — a 'laboratory of democracy' under its Constitution of 1848 that pioneered reforms later copied nationwide (an early state income tax in 1911, workers' compensation, the direct primary) — and 'the Wisconsin Idea': the principle that the boundaries of the university are the boundaries of the state, so state government and the University of Wisconsin put expertise to work for all residents.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 1 · The 'Wisconsin Idea': a laboratory of democracy"],
+  },
+  {
+    id: "civics.wi-partial-veto",
+    claim:
+      "Teaches Wisconsin's plural executive (a Governor and Lieutenant Governor, plus a separately elected Attorney General, Secretary of State, State Treasurer, and the nonpartisan Superintendent of Public Instruction) and its uniquely powerful PARTIAL (line-item) VETO, which historically let the Governor strike individual parts of spending items — even words, letters, or digits (the 'Frankenstein' / 'Vanna White' veto) — a power since narrowed by constitutional amendments.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 2 · The executive and Wisconsin's uniquely powerful partial veto"],
+  },
+  {
+    id: "civics.wi-legislature-courts",
+    claim:
+      "Teaches Wisconsin's Legislature (a 99-member Assembly on 2-year terms and a 33-member Senate on 4-year terms, with no term limits) and its judiciary: a seven-justice Supreme Court and the lower courts elected on a NONPARTISAN ballot in low-turnout SPRING elections (10-year terms, one seat most years) that have become some of the most expensive and closely watched in the country.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 3 · The Legislature and Wisconsin's high-profile Supreme Court elections"],
+  },
+  {
+    id: "civics.wi-lawmaking-recall",
+    claim:
+      "Teaches how a bill becomes a Wisconsin law and Wisconsin's unusual mix of direct-democracy powers: NO statewide citizen initiative (amendments are proposed by the Legislature in two consecutive sessions, then ratified by voters), but a strong RECALL that lets voters petition to force a recall election of elected officials — used in a nationally famous 2012 gubernatorial recall.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 4 · How a bill becomes law, the strong recall, and no initiative"],
+  },
+  {
+    id: "civics.wi-local-government",
+    claim:
+      "Teaches Wisconsin local government as Wisconsin's: 72 counties governed by elected county boards of supervisors (larger counties, like Milwaukee, also with an elected county executive); a distinction between rural general-purpose 'towns' and incorporated villages and cities under a strong home-rule tradition; and school and special districts.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 5 · Local government and how to take part"],
+  },
+  {
+    id: "civics.wi-elections",
+    claim:
+      "Teaches Wisconsin's election specifics — same-day (Election-Day) registration, early in-person absentee voting, and a photo-ID requirement — administered at the municipal level by more than 1,800 city, village, and town clerks, with a standing flag to confirm current rules at elections.wi.gov, and a reminder not to skip the consequential spring elections.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 5 · Local government and how to take part"],
+  },
+  {
+    id: "civics.wi-get-involved",
+    claim:
+      "Teaches getting involved where you live, Wisconsin edition — registering and voting (including on Election Day, with photo ID) and not skipping the spring elections where judicial and local races are decided, using Wisconsin's strong recall, showing up at county boards and city/village/town and school-board meetings, contacting your one Assembly member and one Senator in Madison, and running for local office.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 5 · Local government and how to take part"],
+  },
+  // ── State civics: Connecticut (state-civics-ct was written FROM Connecticut's own sources) ──
+  // NOTE: Connecticut's Social Studies Frameworks (2015) High School Civics and Government course is
+  // built on the C3 inquiry arc, but its lead standard CIV 9–12.1 names "local, state, tribal,
+  // national, and international" institutions explicitly — so, unlike the abstract-concept states,
+  // the Connecticut flagship's own-government lessons (its abolished counties, its town-based local
+  // layer, its legislative appointment of judges) have a genuine home, mapped there. Connecticut is
+  // INHERIT-heavy: it adopted the Common Core (as the "CT Core Standards", 2010) for ELA and the
+  // NGSS (2015) for science, so data/ct.ts adopts the two shared frameworks and maps only the
+  // bespoke social-studies frame here.
+  {
+    id: "civics.ct-constitution-state",
+    claim:
+      "Teaches Connecticut as 'The Constitution State' — the Fundamental Orders of 1639 (often called one of the first written constitutions to frame a government by the consent of the governed), the modern Constitution of 1965 (following the colonial charter and an 1818 constitution), and that Connecticut became the 5th state on January 9, 1788.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 1 · 'The Constitution State' and the Fundamental Orders of 1639",
+    ],
+  },
+  {
+    id: "civics.ct-no-counties",
+    claim:
+      "Teaches Connecticut's most distinctive structural feature: it ABOLISHED county government entirely in 1960, leaving a two-tier system of the state plus 169 towns, with the eight historic counties surviving only as geographic reference areas and nine 'planning regions' serving as county-equivalents for federal statistical purposes only (never as general-purpose governments).",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 2 · Connecticut abolished county government (1960)",
+    ],
+  },
+  {
+    id: "civics.ct-executive-legislature",
+    claim:
+      "Teaches Connecticut's executive and legislative branches as Connecticut's: a plural executive (the Governor and Lieutenant Governor nominated separately but running together, plus a separately elected Secretary of the State, Treasurer, Comptroller, and Attorney General, all on 4-year terms with no term limits) and the General Assembly (a 151-member House and a 36-member Senate, both on 2-year terms), with a two-thirds veto override.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 3 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ct-courts-legislative-appointment",
+    claim:
+      "Teaches Connecticut's distinctive judicial selection: judges are NOT elected in campaigns — a Judicial Selection Commission screens candidates, the Governor nominates from that list, and the General Assembly (the Legislature) appoints the judge to an 8-year renewable term, with a 7-justice Connecticut Supreme Court at the top.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 4 · How Connecticut picks its judges, and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ct-lawmaking-no-initiative",
+    claim:
+      "Teaches how a bill becomes a Connecticut law (introduction, Connecticut's efficiency-minded joint committees shared by both chambers, floor votes, and the Governor's signature/veto/line-item veto) and that Connecticut has NO statewide citizen initiative: amendments are proposed by the General Assembly and ratified by the voters, so the citizen role is ratification, not initiation.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 4 · How Connecticut picks its judges, and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ct-towns",
+    claim:
+      "Teaches Connecticut local government as Connecticut's: because there are no counties, the TOWN is the workhorse — 169 towns, many small ones still governed by a town meeting and a board of selectmen, larger ones by mayor-council or council-manager forms, handling schools, police, roads, and zoning, with regional councils of governments coordinating some services but never acting as general-purpose governments.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 5 · Town government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ct-get-involved",
+    claim:
+      "Teaches getting involved where you live, Connecticut edition — using Connecticut's newly expanded voting access (early in-person voting used starting in 2024 and no-excuse absentee voting, administered by town registrars), showing up at the town meeting, board of selectmen or town/city council and the local board of education, contacting your one Representative and one Senator in Hartford, weighing in on amendments and constitutional conventions, and running for local office.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 5 · Town government and how to take part",
+    ],
+  },
+
+  // ── State civics: South Carolina (state-civics-sc was written FROM SC's own sources) ──
+  // NOTE: South Carolina's grade-12 United States Government course (SC Social Studies College- and
+  // Career-Ready Standards, 2019) reaches South Carolina's OWN government explicitly through USG.2.CC
+  // ("Explain how governments in South Carolina are organized and how they function in the American
+  // constitutional government"), so — unlike the abstract-concept states — the South Carolina
+  // flagship's structure lessons have a genuine home, mapped there. South Carolina withdrew from the
+  // Common Core (2015), so its ELA/Math are South Carolina's own (SC College- and Career-Ready
+  // Standards) and its science is South Carolina's own (2021, not NGSS); data/sc.ts publishes those
+  // as deferred gaps, not denials. South Carolina is BESPOKE-heavy.
+  {
+    id: "civics.sc-legislative-state",
+    claim:
+      "Teaches South Carolina as the classic 'legislative state': the Constitution of 1895 (its seventh) deliberately created a very weak Governor and concentrated authority in the General Assembly, a legacy still visible today — most strikingly that the Legislature elects the state's judges (South Carolina and Virginia are the only two states that do). South Carolina became the 8th state on May 23, 1788.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 1 · The 'legislative state': where the General Assembly long ruled",
+    ],
+  },
+  {
+    id: "civics.sc-plural-executive",
+    claim:
+      "Teaches South Carolina's unusually large plural executive as a legacy of the weak-governor design: voters separately elect the Governor (with the Lieutenant Governor on the same ticket since 2018), Attorney General, Secretary of State, State Treasurer, Comptroller General, Superintendent of Education, and Commissioner of Agriculture, so the Governor has historically not controlled the executive branch; recent reforms (the joint ticket, making the Adjutant General a gubernatorial appointment) have strengthened the office, with a two-thirds veto override.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 2 · A large plural executive (a legacy of the weak governor)",
+    ],
+  },
+  {
+    id: "civics.sc-legislature-elects-judges",
+    claim:
+      "Teaches South Carolina's defining judicial feature: the General Assembly ELECTS the state's judges (South Carolina and Virginia are the only two states that do) after a Judicial Merit Selection Commission screens candidates for qualifications, with a 5-justice South Carolina Supreme Court elected to 10-year terms — so South Carolina's judges answer to the legislators for re-election, not to the voters or the Governor.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 3 · How South Carolina picks its judges (the Legislature elects them)",
+    ],
+  },
+  {
+    id: "civics.sc-lawmaking-no-initiative",
+    claim:
+      "Teaches how a bill becomes a South Carolina law (introduction, committee, floor votes in both chambers — with the Senate's strong filibuster tradition — and the Governor's signature/veto/line-item veto with a two-thirds override), that the General Assembly is a 124-member House on 2-year terms and a 46-member Senate on 4-year terms, and that South Carolina has NO citizen initiative: amendments run through the General Assembly (proposed by a two-thirds vote), are ratified by voters, and then RE-RATIFIED by the Legislature, a distinctive extra step.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 4 · How a bill becomes a South Carolina law",
+    ],
+  },
+  {
+    id: "civics.sc-local-government",
+    claim:
+      "Teaches South Carolina local government as South Carolina's: 46 counties governed by elected county councils (which gained self-governing power under the Home Rule Act of 1975, easing the legislative-state control of local matters) plus separately elected sheriff, clerk, auditor, and treasurer; municipalities with council forms; and a legacy of many school and special-purpose districts from the legislative-state era.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.sc-get-involved",
+    claim:
+      "Teaches getting involved where you live, South Carolina edition — registering and voting with photo ID, early in-person voting, and qualifying-reason absentee voting administered by county election offices (scvotes.gov), showing up at county councils, city councils, and school boards (which decide more locally since Home Rule), contacting your one Representative and one Senator in Columbia, watching the General Assembly's judicial elections, and running for local office.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",

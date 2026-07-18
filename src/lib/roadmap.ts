@@ -1138,6 +1138,47 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Maryland + Colorado mapped** (\`feat/standards-md-co\`); the standards finder now covers 22
+  jurisdictions, and \`/academic-standards?state=MD\` and \`?state=CO\` flip from "not mapped yet" to
+  real pages. **Maryland (bespoke civics, inherited ELA and science):** the **High School American
+  Government Framework** (MSDE, revised June 2025), transcribed verbatim from MSDE's own PDF via a
+  browser-user-agent fetch (the site returns 403 to a plain fetch). GOV.2.1.a names the **Maryland
+  General Assembly**, and the structure indicators name "Federal and Maryland State Government," so
+  the \`state-civics-md\` flagship's own-government lessons get a real home: the nation-strongest
+  executive budget power, the compact plural executive, the 2022 Supreme Court of Maryland renaming,
+  the petition-to-referendum-with-no-initiative, and the independent City of Baltimore. ELA adopts
+  the **Common Core** (Maryland College and Career Ready Standards) with codes aliased to Maryland's
+  printed bare form, verified word-for-word against MSDE's June 2023 Disciplinary Literacy Framework;
+  science adopts **NGSS** verbatim (Maryland was an NGSS lead state); math is unclaimed.
+  **Colorado (bespoke, concept-based civics):** the **2020 Colorado Academic Standards**, Social
+  Studies Standard 4 (Civics), transcribed verbatim from CDE's P-12 booklet. Colorado's civics
+  standard names "American government," not Colorado's own institutions, so the \`state-civics-co\`
+  flagship's Colorado-specific lessons (TABOR, the initiative/referendum/recall, the GAVEL amendment,
+  merit-selection judges, all-mail elections, the Denver/Broomfield city-counties) map as genuine
+  instances of the generic outcomes. Colorado writes its OWN ELA (Reading, Writing, and
+  Communicating) and its OWN science (NGSS-influenced, not adopted verbatim), so both are deferred
+  rather than blind-aliased. Honest gaps published per state: Maryland's budget power and Colorado's
+  TABOR have no state code of their own (each claimed through the nearest structure outcome and
+  published in its \`notClaimed\`); Maryland's US and World History and Colorado's History, Geography,
+  and Economics standards are deferred (fetch-and-verify-or-don't-cite). **\`NEXT_UP\` advanced past
+  MD/CO to AL/LA.** No migration, no seed.
+- 🔧 **Minnesota and Wisconsin mapped, both fully bespoke** (\`feat/standards-mn-wi\`).
+  \`/academic-standards?state=MN\` and \`?state=WI\` flip from "not mapped yet" to real pages.
+  **Minnesota (16 standards, 10 full, 6 partial)** maps the **2021 Minnesota Academic Standards in
+  Social Studies**, Citizenship and Government strand, high school, transcribed verbatim from MDE's
+  own learning-progression PDF: 9.1.4.7 (the powers and operations of Minnesota's own government)
+  and 9.1.4.8 (local government in Minnesota) host the \`state-civics-mn\` flagship, with the general
+  civics ladder on 9.1.4.1 through 9.1.4.5 and the media/source-literacy method on 9.1.1.3.
+  Minnesota is the notable framework case: it did NOT adopt the Common Core for math (it kept its
+  own), and its once-Common-Core ELA has since been replaced by Minnesota's own 2020 ELA standards,
+  so ELA is deferred rather than aliased. **Wisconsin (13 standards, 5 full, 8 partial)** maps the
+  **2018 Wisconsin Standards for Social Studies** Political Science, Inquiry, and History strands
+  (verbatim from DPI): SS.PS3.c.h (the structure and functions of Wisconsin's own government) hosts
+  the \`state-civics-wi\` flagship (the Wisconsin Idea, the "Frankenstein" partial veto, nonpartisan
+  spring court elections, the strong recall, and no citizen initiative), and the source-literacy
+  method maps to the Inquiry and History source-analysis indicators. Wisconsin's science (2017,
+  NGSS-based but its own reorganization) and its own ELA are published as honest deferred gaps, not
+  aliased. \`NEXT_UP\` advances to **AL/LA**.
 - 🔧 **Missouri mapped, fully bespoke** (\`feat/standards-mo-md\`). \`/academic-standards?state=MO\`
   flips from "not mapped yet" to a real page. Missouri withdrew from the Common Core, so its ELA and
   math are Missouri's own and its science is Missouri's own (not NGSS); the mapped codes are all
@@ -1148,6 +1189,21 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   City of St. Louis) plus the civics ladder; ELA and science are published as honest deferred gaps.
   **Maryland was deferred** (the pass ended before MD) and re-queued at the front of \`NEXT_UP\`. No
   migration, no seed.
+- 🔧 **Connecticut + South Carolina mapped** (\`feat/standards-ct-sc\`). \`/academic-standards?state=CT\`
+  and \`?state=SC\` flip from "not mapped yet" to real pages. **Connecticut is inherit-heavy**: it kept
+  the Common Core (as the CT Core Standards, 2010) for ELA and adopted the NGSS (2015) for science, so
+  both shared frameworks are adopted verbatim, and its one bespoke frame is the 2015 Social Studies
+  Frameworks High School Civics and Government course (CIV 9-12, transcribed verbatim from the CT SDE
+  PDF). **14 standards (5 full, 9 partial)** onto the \`state-civics-ct\` flagship (abolished counties,
+  the town as the local workhorse, legislative appointment of judges, no citizen initiative) plus the
+  Common Core ELA and NGSS strands. **South Carolina is bespoke-heavy**: it withdrew from the Common
+  Core (2015), so its ELA and math are its own and its science is its own (2021, not NGSS); the mapped
+  codes are the grade-12 **United States Government** indicators (USG.1.ER to USG.4.IP) from the **SC
+  Social Studies College- and Career-Ready Standards** (2019), transcribed verbatim from the SC DOE PDF.
+  **11 standards (4 full, 7 partial)** onto the \`state-civics-sc\` flagship (the legislative state, the
+  Legislature electing judges, the large plural executive, Home Rule counties) plus the civics ladder,
+  with ELA and science published as honest deferred gaps. \`NEXT_UP\` advances to Alabama and Louisiana.
+  No migration, no seed.
 - 🔧 **Illinois + Michigan mapped — states #10 and #11, both heavy inheriters** (\`feat/standards-il-mi\`) —
   \`/academic-standards?state=IL\` and \`?state=MI\` flip from "not mapped yet" to real pages. Both
   states adopted the shared multi-state frameworks, so we **INHERIT** rather than re-map: Illinois
@@ -1285,7 +1341,6 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   say so; Arizona's HS.C2.5 (AZ-vs-US rights comparison) is rejected despite being the flagship's
   home framework; U.S. History Since 1929 starts too late for the Gilded Age labor units. **No
   migration, no seed.**
-<<<<<<< HEAD
 - 🔧 **Ohio + Georgia mapped — states #10 and #11** (\`feat/standards-oh-ga\`, task 130) —
   \`/standards?state=OH\` and \`?state=GA\` flip from "not mapped yet" to real pages: two new data
   files + \`pnpm gen:standards\`, zero code change. **Ohio: 50 standards (25 full, 25 partial) across
@@ -1312,7 +1367,6 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   standard is genuine verbatim text**. **NEXT_UP advanced OH/GA → MI/IL** (⚠️ one-line conflict risk
   vs the parallel \`feat/standards-matrix\` branch, which may also edit that line). **No migration,
   no seed.**
-=======
 - 🔧 **Massachusetts + Tennessee mapped — states #10 and #11, both fully bespoke** (\`feat/standards-ma-tn\`) —
   \`/academic-standards?state=MA\` and \`?state=TN\` flip from "not mapped yet" to real pages: two new
   data files + \`pnpm gen:standards\`, zero code change. **Massachusetts: 35 standards (18 full, 17
@@ -1339,7 +1393,6 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Supreme-Court / weak veto / no-initiative / voting rules — are published loudly in each \`notClaimed\`
   list. **NEXT_UP advanced past MA/TN → MO/MD** (⚠️ merge-coordinates with the other in-flight standards
   branches, which also edit that line). **No migration, no seed.**
->>>>>>> origin/feat/standards-ma-tn
 - 🔧 **Texas + Florida mapped — states #8 and #9, both fully bespoke** (\`feat/standards-tx-fl\`) —
   \`/academic-standards?state=TX\` and \`?state=FL\` flip from "not mapped yet" to real pages. **Texas: 56
   standards (31 full, 25 partial) across 8 TEKS frameworks** — Texas writes its own TEKS for every
