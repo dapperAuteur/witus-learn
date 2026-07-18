@@ -1349,5 +1349,271 @@ Two peoples on opposite sides of the planet, with no contact, built the same goo
         ],
       },
     },
+
+    // ───────────── SECTION 6 · EUROPE BATHED, THEN STOPPED, THEN STARTED AGAIN ─────────────
+    {
+      slug: "bathing-europe-stews",
+      title: "16 · Medieval Europe bathed: the stews",
+      section: "Section 6 · Europe bathed, then stopped, then started again",
+      body: `We have arrived at the heart of the matter, the belief this whole course was built to correct. You have heard that medieval Europeans never bathed, that they feared and loathed water, that they were filthy from cradle to grave. This lesson gives you the evidence that the medieval part of that story is simply **false** (Ashenburg, 2007).
+
+**The stews.** Medieval European towns had public bathhouses. In English they were often called *stews*, a word that comes from the steam and heated rooms inside them, though the same word later drifted to mean a brothel, which tells you something about where the story is heading. These bathhouses were common. Records from medieval Paris, for example, list dozens of them, and many other towns across Europe had their own. People also bathed at home, in wooden tubs lined with cloth, and a wealthy household might heat water for a proper soak (Ashenburg, 2007; Smith, 2007).
+
+**A social pleasure.** The medieval bathhouse, like the Roman thermae and the hammam before it, was a place of sociability. Bathers might eat and drink in the water; some bathhouses offered food, music, and company. In many places men and women bathed together or in close quarters, an ordinary custom at the time that would, within a couple of centuries, become one of the reasons the whole institution was attacked (Ashenburg, 2007).
+
+So the medieval reality is not a filthy people who had never heard of washing. It is towns dotted with steamy, sociable public baths, plus tub baths at home. Whatever happened to European bathing, and something real did happen, it did not happen in the Middle Ages, and it was not simple ignorance of washing.
+
+**Then why the myth?** Because something genuinely did change afterward, in the early modern centuries, and later storytellers smeared that change backward over the entire medieval past, turning a specific, dated, partial retreat into a cartoon of a thousand filthy years. Fixing that is the next lesson, and it is the payoff of the course.
+
+:::reveal What single piece of evidence most directly disproves the claim that "medieval Europeans never bathed"? ||| The public bathhouses, called "stews," that were common in medieval European towns (records from medieval Paris alone list dozens), alongside tub baths taken at home. Medieval Europe had a sociable public bathing culture, so whatever changed European bathing happened later, in the early modern period, and was not medieval ignorance of washing.
+
+## Sources
+- Ashenburg, K. (2007). *The dirt on clean: An unsanitized history*. North Point Press.
+- Smith, V. (2007). *Clean: A history of personal hygiene and purity*. Oxford University Press.`,
+      recallContent: [
+        {
+          prompt: "The sauna and the temazcal were built by peoples with no contact. What does that independent invention illustrate?",
+          answer:
+            "That different peoples developed the same good idea, sweat bathing, on their own, each as a complete, sophisticated tradition. It reinforces the verdict of many parallel traditions rather than one ladder of progress.",
+        },
+        {
+          prompt: "How should a single-observer claim like 'Moctezuma bathed twice a day' be handled?",
+          answer:
+            "Attribute it and hedge it ('the conquistador Andres de Tapia reported that...'), because one eyewitness is a claim, not a measurement. Lean instead on what several sources plus archaeology support: that regular bathing and the temazcal were clearly important in the Nahua world.",
+        },
+      ],
+    },
+    {
+      slug: "bathing-europe-retreat-return",
+      title: "17 · The retreat: pox, pores, and linen, and the slow return",
+      section: "Section 6 · Europe bathed, then stopped, then started again",
+      body: `So Europe bathed. Then, across roughly the sixteenth and seventeenth centuries, much of western and urban Europe pulled back from bathing in water, especially the public, water-filled bath. This really happened. The mistake the myth makes is not that it happened; it is *when* it happened, *why*, and *how completely*. Here is the honest version (Ashenburg, 2007; Smith, 2007; Brown, 2009).
+
+**Cause 1: terrifying disease.** Recurring outbreaks of plague, and above all the arrival of a horrifying new epidemic, syphilis, the "Great Pox," which spread across Europe from the 1490s, made crowded, naked, communal bathhouses look like death traps. Because many bathhouses were also linked to prostitution, they were doubly suspect. Bathhouses closed in town after town. The scholar Erasmus remarked in the 1520s that the once-busy bathhouses of Brabant had largely emptied, and in England, authorities moved against the "stews" of London in the 1540s (Ashenburg, 2007).
+
+**Cause 2: a medical theory that turned water into a threat.** Physicians of the era came to believe that warm water **opened the pores of the skin**, and that open pores let disease-bearing bad air, what they called miasma, soak into the body. In that framework, a hot bath was not cleansing; it was flinging open the doors to plague. The best medical advice of the day was, quite literally, to avoid bathing in water (Ashenburg, 2007; Smith, 2007).
+
+**Cause 3: a replacement that felt cleaner, not dirtier.** People did not simply give up on cleanliness. They redefined it. Cleanliness came to mean **clean linen**: a fresh, white linen shirt was believed to draw sweat and dirt out of the body, so changing your linen often was washing, done with cloth instead of water. A person of fashion could feel, and be judged, impeccably clean while almost never getting wet. The court of Louis XIV became the emblem of this linen-and-perfume cleanliness, where frequent immersion in water was rare and considered medically risky. (You will also hear dramatic claims that this or that king "bathed only twice in his life." Treat exact numbers like that as the single-witness anecdotes this course keeps warning you about, and hold onto the well-documented part: the *system* had shifted from water to linen.) (Ashenburg, 2007; Brown, 2009).
+
+**Cause 4: the price of hot water.** Heating bathwater took fuel, and wood was growing scarce and expensive in many regions, which made the communal hot bath costlier to run just as fear was emptying it (Smith, 2007).
+
+**The two things the myth gets wrong.** First, timing: this is an early modern retreat, roughly 1500s to 1600s, not a medieval one. Second, completeness: it was **partial**. It fell hardest on public, water-filled bathing among western and urban populations; it never meant that literally no one ever washed, and other parts of Europe and the world kept their own habits.
+
+**The slow return.** From the 1700s and especially the 1800s, water bathing came back. New enthusiasms for cold water and health, then the great nineteenth-century sanitary movement, public baths built for crowded industrial cities, and above all the triumph of **germ theory**, which replaced the old miasma-and-pores model with an understanding of actual microbes, rebuilt washing on a new foundation. Indoor plumbing eventually carried the bath into the ordinary home. The wheel came back around, which is exactly why the honest verdict is a retreat *and a return*, not a permanent fall (Smith, 2007; Brown, 2009).
+
+:::reveal Give two of the real reasons much of early modern Europe pulled back from water bathing, and name the two things the "dirty Middle Ages" myth gets wrong. ||| Real reasons (any two): fear of epidemic disease, especially syphilis from the 1490s and recurring plague; a medical theory that warm water opened the pores to disease-bearing bad air; the rise of clean linen as a substitute for washing with water; and the rising cost of fuel to heat water. The myth gets two things wrong: the timing (the retreat was early modern, roughly the 1500s-1600s, not medieval) and the completeness (it was partial, hitting public water bathing hardest, never a total end to all washing).
+
+## Sources
+- Ashenburg, K. (2007). *The dirt on clean: An unsanitized history*. North Point Press.
+- Brown, K. M. (2009). *Foul bodies: Cleanliness in early America*. Yale University Press.
+- Smith, V. (2007). *Clean: A history of personal hygiene and purity*. Oxford University Press.`,
+      recallContent: [
+        {
+          prompt: "What is the single strongest piece of evidence that medieval Europeans DID bathe?",
+          answer:
+            "The public bathhouses called 'stews' that were common in medieval towns (records from medieval Paris list dozens), plus tub baths taken at home. Medieval Europe had a sociable public bathing culture.",
+        },
+        {
+          prompt: "Why did later storytellers turn a real early-modern change into the myth of a 'thousand filthy years'?",
+          answer:
+            "Because a genuine, dated, partial retreat from water bathing happened in the early modern period (roughly the 1500s-1600s), and later tellers smeared that change backward over the entire Middle Ages, turning a specific event into a cartoon of the whole medieval past.",
+        },
+      ],
+    },
+    {
+      slug: "bathing-quiz-europe",
+      title: "18 · Quiz: Europe bathed, then stopped, then started again",
+      section: "Section 6 · Europe bathed, then stopped, then started again",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What were 'stews' in medieval Europe?",
+            options: [
+              "Thick soups sold at market",
+              "Public bathhouses (the word comes from the steam), common in medieval towns",
+              "Prisons",
+              "Churches",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Stews were medieval public bathhouses; the word later also came to mean a brothel (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-europe-stews",
+          },
+          {
+            prompt: "What do the medieval stews prove about the claim 'medieval Europeans never bathed'?",
+            options: [
+              "They confirm it",
+              "They disprove the medieval part of it: medieval towns had common public bathhouses, plus tub baths at home",
+              "They prove only nobles bathed",
+              "They prove bathing was illegal",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Widespread bathhouses and home tub baths show medieval Europe had a bathing culture (Ashenburg, 2007; Smith, 2007).",
+            sourceLessonSlug: "bathing-europe-stews",
+          },
+          {
+            prompt: "Like the Roman thermae and the hammam, the medieval bathhouse was also:",
+            options: [
+              "A place of sociability, where people might eat, drink, and gather",
+              "A silent, solitary place",
+              "Only ever used by doctors",
+              "A place where washing was forbidden",
+            ],
+            correctIndex: 0,
+            explanation:
+              "Medieval bathhouses were social spaces, sometimes with food, drink, and mixed bathing (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-europe-stews",
+          },
+          {
+            prompt: "When did much of western and urban Europe actually retreat from water bathing?",
+            options: [
+              "During the Middle Ages (roughly 500-1400)",
+              "Roughly the sixteenth and seventeenth centuries (the early modern period)",
+              "In the twentieth century",
+              "It never happened",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The retreat was early modern, about the 1500s-1600s, not medieval (Ashenburg, 2007; Smith, 2007).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "Which disease, spreading from the 1490s, especially frightened people away from communal bathhouses?",
+            options: ["Measles", "Syphilis, the 'Great Pox'", "Smallpox alone", "Scurvy"],
+            correctIndex: 1,
+            explanation:
+              "Syphilis spread across Europe from the 1490s and made crowded bathhouses look dangerous (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "What did early modern physicians believe warm water did to the body?",
+            options: [
+              "That it strengthened the bones",
+              "That it opened the skin's pores, letting disease-bearing bad air (miasma) into the body",
+              "That it cured all disease instantly",
+              "That it had no effect at all",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The open-pores theory made a hot bath seem like an invitation to disease (Ashenburg, 2007; Smith, 2007).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "As water bathing declined, how did fashionable Europeans redefine cleanliness?",
+            options: [
+              "By bathing in cold rivers daily",
+              "By changing clean white linen often, which was believed to draw sweat and dirt out of the body, plus perfume",
+              "By using more soap than ever",
+              "By shaving their heads",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Clean linen became 'washing' done with cloth instead of water (Ashenburg, 2007; Brown, 2009).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "Whose court became the emblem of 'linen-and-perfume' cleanliness with rare water immersion?",
+            options: ["The court of Louis XIV", "The Roman Senate", "The Ottoman court", "The Japanese imperial court"],
+            correctIndex: 0,
+            explanation:
+              "Louis XIV's court exemplified cleanliness by linen change rather than by immersion (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "How should you treat a dramatic claim that a particular king 'bathed only twice in his life'?",
+            options: [
+              "As a proven fact",
+              "As the kind of single-witness anecdote to attribute and hedge, while holding onto the documented part: the system had shifted from water to linen",
+              "As evidence all Europeans were filthy forever",
+              "As certainly false and not worth mentioning",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Hedge the vivid number; keep the well-documented shift from water bathing to clean linen (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "Besides disease and medical theory, what practical factor made the communal hot bath costlier to run?",
+            options: [
+              "A shortage of soap",
+              "The rising cost of wood fuel needed to heat the water",
+              "A ban on towels",
+              "A tax on steam",
+            ],
+            correctIndex: 1,
+            explanation: "Scarce, pricey wood made heating bathwater more expensive (Smith, 2007).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "The 'dirty Middle Ages' myth gets two things wrong. What are they?",
+            options: [
+              "The place and the language",
+              "The timing (the retreat was early modern, not medieval) and the completeness (it was partial, hitting public water bathing hardest, not a total end to washing)",
+              "The number of bathhouses and their names",
+              "Nothing; the myth is basically correct",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The retreat was later and more partial than the myth claims (Ashenburg, 2007; Smith, 2007).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "What eventually brought water bathing back and replaced the old miasma-and-pores model?",
+            options: [
+              "A return to Roman religion",
+              "The 1800s sanitary movement, public baths, indoor plumbing, and above all germ theory (real microbes replacing 'bad air')",
+              "The banning of linen",
+              "The closing of all hospitals",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The sanitary movement and germ theory rebuilt washing on a new foundation (Smith, 2007; Brown, 2009).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "Why is the honest phrase a 'retreat AND a return' rather than a 'fall'?",
+            options: [
+              "Because nothing ever changed",
+              "Because water bathing declined in early modern Europe and then came back from the 1700s-1800s, so it is a wheel that turned, not a permanent collapse",
+              "Because Europe never bathed again",
+              "Because the return happened in the Middle Ages",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The decline was followed by a documented return, so 'retreat and return' is accurate (Smith, 2007).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "A classmate says 'people in the Middle Ages were too ignorant to wash.' Using this section, what is the accurate correction?",
+            options: [
+              "They are right",
+              "Medieval Europeans bathed (the stews); the pullback from water bathing came later, in the early modern period, for specific reasons (disease fear, the open-pores theory, linen, fuel cost), and was partial",
+              "Nobody in history ever washed",
+              "Only the Romans ever bathed",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The retreat was early modern, caused, and partial, not medieval ignorance (Ashenburg, 2007; Smith, 2007; Brown, 2009).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+          {
+            prompt: "Erasmus, writing in the 1520s, observed what about the bathhouses of Brabant?",
+            options: [
+              "That they were newly built and packed",
+              "That the once-busy bathhouses had largely emptied",
+              "That they had never existed",
+              "That they were reserved for royalty",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Erasmus noted the bathhouses had emptied, a snapshot of the retreat underway (Ashenburg, 2007).",
+            sourceLessonSlug: "bathing-europe-retreat-return",
+          },
+        ],
+      },
+    },
   ],
 };
