@@ -1421,6 +1421,86 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: ["state-civics-nj"],
     lessons: ["New Jersey Civics, Lesson 6 · Elections and how to take part"],
   },
+  // ── State civics: Massachusetts (state-civics-ma was written FROM Massachusetts's own sources) ──
+  // NOTE: Massachusetts's 2018 History and Social Science Framework is one of the strongest in the
+  // nation for reaching a state's OWN government: the grade 8 Civics course (Topic 6) and the US
+  // Government and Politics elective (Topic 2) name the "Massachusetts Constitution," the
+  // "Commonwealth of Massachusetts," the General Court, the Supreme Judicial Court, and open town
+  // meeting EXPLICITLY, so the flagship's Massachusetts-structure lessons have genuine codes to
+  // cite. But the flagship's most distinctive facts — the elected Governor's Council's confirmation
+  // role, the appoint-and-serve-to-70 judiciary with no judicial elections, the INDIRECT initiative
+  // and the right of free petition, the 2022 VOTES Act, and the counties whose governments were
+  // abolished around 1997–2000 — have no Massachusetts-specific code, and data/ma.ts publishes that
+  // gap in its notClaimed list.
+  {
+    id: "civics.ma-constitution",
+    claim:
+      "Teaches Massachusetts's Constitution of 1780 — the oldest functioning written constitution in the world, principally drafted by John Adams and still in force — and that the Commonwealth's own constitution (with its Article I Declaration of Rights) sits alongside the U.S. Constitution as a source of powers and rights.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 1 · The Constitution of 1780, the world's oldest functioning one",
+    ],
+  },
+  {
+    id: "civics.ma-state-structure",
+    claim:
+      "Teaches Massachusetts's three branches as Massachusetts's: the bicameral General Court (a 160-member House and a 40-member Senate), a plural executive (a joint-ticket Governor and Lieutenant Governor with a separately elected Attorney General, Secretary of the Commonwealth, Treasurer, and Auditor, plus the elected Governor's Council), the two-thirds veto override, and the Supreme Judicial Court.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 2 · The three branches and the 'General Court'",
+      "Massachusetts Civics, Lesson 3 · The Governor's Council and how Massachusetts picks judges",
+    ],
+  },
+  {
+    id: "civics.ma-courts-appointed",
+    claim:
+      "Teaches Massachusetts's distinctive judicial selection: the Governor nominates, the elected eight-member Governor's Council confirms, and a judge then serves until mandatory retirement at age 70 — with no judicial elections and no fixed re-appointment.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 3 · The Governor's Council and how Massachusetts picks judges",
+    ],
+  },
+  {
+    id: "civics.ma-local-government",
+    claim:
+      "Teaches Massachusetts local government as Massachusetts's: the town-meeting tradition (open town meeting, where any registered voter votes directly on the town budget and bylaws), strong home rule, cities and towns, and the state's 14 counties — several of whose county governments were abolished around 1997–2000.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 5 · Local government: towns, cities, and Massachusetts's shrinking counties",
+      "Massachusetts Civics, Lesson 6 · Elections and how to take part",
+    ],
+  },
+
+  // ── State civics: Tennessee (state-civics-tn was written FROM Tennessee's own sources) ──
+  // NOTE: Tennessee's 2019 Academic Standards for Social Studies include a dedicated "Tennessee
+  // State and Local Government" strand in the required United States Government and Civics course
+  // (GC.28–GC.30), so the flagship's Tennessee-structure lessons have genuine codes to cite. But
+  // the flagship's most distinctive facts — the Attorney General appointed by the state Supreme
+  // Court (unique in the nation), the Senate Speaker who holds the title "Lieutenant Governor," the
+  // Secretary of State/Treasurer/Comptroller elected by the Legislature, the weak simple-majority
+  // veto override, the "Tennessee Plan" judiciary, the ABSENCE of a citizen initiative, and
+  // Tennessee's photo-ID / excuse-required-absentee voting rules — are not separately coded, so
+  // data/tn.ts publishes that gap in its notClaimed list.
+  {
+    id: "civics.tn-state-structure",
+    claim:
+      "Teaches Tennessee's three branches as Tennessee's: the General Assembly (a 99-member House and a 33-member Senate); a highly unusual executive in which the Governor is the only statewide-elected official, the Senate Speaker holds the title “Lieutenant Governor,” the Secretary of State, Treasurer, and Comptroller are elected by the Legislature, and — uniquely in the nation — the Attorney General is appointed by the state Supreme Court; the weak simple-majority veto override; and the “Tennessee Plan” appointment-then-retention judiciary.",
+    courseSlugs: ["state-civics-tn"],
+    lessons: [
+      "Tennessee Civics, Lesson 1 · Tennessee's Constitution of 1870 (and its hard-to-amend rule)",
+      "Tennessee Civics, Lesson 2 · Tennessee's unusual executive: one elected officer, and a Speaker called 'Lieutenant Governor'",
+      "Tennessee Civics, Lesson 3 · The General Assembly and the 'Tennessee Plan' for judges",
+    ],
+  },
+  {
+    id: "civics.tn-local-government",
+    claim:
+      "Teaches Tennessee local government as Tennessee's: 95 counties under an elected county commission and a county mayor, cities and towns with optional home rule, and the consolidated metropolitan city-county governments (most famously Metro Nashville-Davidson County).",
+    courseSlugs: ["state-civics-tn"],
+    lessons: [
+      "Tennessee Civics, Lesson 5 · Local government: 95 counties, cities, and metro government",
+    ],
+  },
 
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {

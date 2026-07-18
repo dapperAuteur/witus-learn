@@ -69,7 +69,7 @@ export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 // isolation suite enforces it. NOTE for the merge: the parallel feat/standards-matrix branch may
 // also edit this line; resolve any conflict to a value that names NEITHER a mapped state (currently
 // AR AZ CA DC FL GA IN NY OH PA TX) NOR a state another in-flight branch is actively mapping.
-export const NEXT_UP: StateCode[] = ["MA", "TN"];
+export const NEXT_UP: StateCode[] = ["MO", "MD"];
 // IL/MI are mapped here (task 131); OH/GA are mapped on a parallel branch. NEXT_UP must never name
 // a state that mappedStates() already contains — the isolation suite enforces it — so we advance
 // past all of {AR,AZ,CA,DC,FL,IN,NY,PA,TX,OH,GA,IL,MI}. NOTE for the merge: the parallel OH/GA and
@@ -88,6 +88,12 @@ export const NEXT_UP: StateCode[] = ["MA", "TN"];
 // branches ({AR,AZ,CA,DC,FL,IN,NY,PA,TX,OH,GA,IL,MI,NC,VA,WA,NJ}), so it stays valid after the
 // bundle merge. NOTE for the merge: sibling branches also edit this line; resolve the conflict to a
 // value containing none of those states (MA/TN below, or BAM's preferred next two).
+
+// MA and TN are mapped here (feat/standards-ma-tn), so the queue advances past them. NEXT_UP must
+// never name a state that mappedStates() already contains — the isolation suite enforces it. NOTE
+// for the merge: this one line conflicts with the other in-flight standards branches (each advances
+// the queue to its own next two). Resolve the conflict to a value that names NONE of the states any
+// branch has mapped — MO and MD (below) are mapped by no branch, or use BAM's preferred next two.
 
 
 export function jurisdictionName(code: StateCode): string {
