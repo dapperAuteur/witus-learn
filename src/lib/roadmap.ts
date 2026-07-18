@@ -1122,6 +1122,30 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Illinois + Michigan mapped — states #10 and #11, both heavy inheriters** (\`feat/standards-il-mi\`) —
+  \`/academic-standards?state=IL\` and \`?state=MI\` flip from "not mapped yet" to real pages. Both
+  states adopted the shared multi-state frameworks, so we **INHERIT** rather than re-map: Illinois
+  adopted the Common Core for ELA (June 24, 2010) and the NGSS for science (Jan 2014, an NGSS lead
+  state) — both **verbatim, no aliases**; Michigan adopted the NGSS as the Michigan Science
+  Standards (Nov 10, 2015, **verbatim**) and the Common Core for ELA (2010). **Michigan is the
+  ALIAS case**: its ELA document reproduces the CCSS wording word-for-word but prints the strands
+  under the **bare codes** (\`RH.11-12.6\`, \`WHST.11-12.7\`) with no \`CCSS.ELA-Literacy\` namespace,
+  so each shared code is aliased to Michigan's printed form (compared against Michigan's own doc,
+  Wayback 2025-04-30, before aliasing). **Illinois: 32 standards (16 full, 16 partial) across 7
+  frameworks** — the bespoke work is the 2017 **Illinois Social Science Standards** (isbe.net),
+  which are disciplinary CONCEPTS not course benchmarks, so all five strands are mapped: Civics
+  (SS.CV), History (SS.H), Economics (SS.EC), Geography (SS.G), and Inquiry Skills (SS.IS);
+  \`state-civics-il\` is the 1:1 flagship (the 1970 Constitution, the plural executive with BOTH a
+  Comptroller and a Treasurer, the uniquely narrow Legislative-Article initiative and 1980 Cutback
+  Amendment, strong home rule). **Michigan: 22 standards (17 full, 5 partial) across 3 frameworks**
+  — the bespoke work is the 2019 **Michigan Social Studies Standards** High School Civics (C
+  strand), whose C3.2 cluster gives \`state-civics-mi\` a genuine home (C3.2.3 state/local structure,
+  C3.2.6 initiative/referendum/recall — the Independent Citizens Redistricting Commission is the
+  standard's own "case study"). Honesty published on the pages: Illinois's concept standards name
+  no state's structure (so the flagship maps to abstract institution/participation standards);
+  Michigan's era-based World/US History and Economics strands are **deferred** (their multi-column
+  PDF layout risks non-verbatim transcription — verbatim-or-nothing), and tribal governments are
+  not taught (C3.2.3 partial, C3.2.4 not claimed). \`NEXT_UP\` advances to **NC/VA**.
 - 🔧 **Cross-state standards explorer + route rename** (\`feat/standards-matrix\`). The per-state
   finder moved from \`/standards\` to **\`/academic-standards\`** (a 308 redirect keeps old links and
   shares working), and a companion **\`/academic-standards/matrix\`** now flattens **every
@@ -1190,6 +1214,31 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Arizona is one new data file + regenerate, **zero hand-edited code change**. 18 isolation tests
   incl. claims-fully-wired and filter-never-readmits proofs. **No migration, no seed.**
 
+- 🔧 **North Carolina + Virginia mapped — both fully bespoke** (\`feat/standards-nc-va\`) —
+  \`/academic-standards?state=NC\` and \`?state=VA\` flip from "not mapped yet" to real pages: two new
+  data files + \`pnpm gen:standards\`, zero code change. **North Carolina: 31 standards (7 full, 24
+  partial)** — the NC Standard Course of Study is North Carolina's OWN framework (not Common Core, not
+  NGSS). The one framework is the **graduation-required "Founding Principles of the United States of
+  America and North Carolina: Civic Literacy"** course (NCDPI 4318, approved Feb 4 2021; CL.* codes
+  across Behavioral Sciences, Civics & Government, Economics, Geography, History, and a content-neutral
+  Inquiry strand). CL.C&G.4.1/4.3 name "the United States **and North Carolina**" judicial systems and
+  constitutions, and CL.C&G.2.2/2.3/3.7 reach federalism, local government, and elections — so the
+  \`state-civics-nc\` flagship has a genuine home (mapped partial). **Virginia: 38 standards (15 full, 23
+  partial)** — the Virginia SOL are famously Virginia's OWN (never Common Core / never NGSS). The one
+  framework is **"Virginia and United States Government" (2023 SOL, Board-approved 4/20/2023; Skills +
+  GOVT.1–GOVT.14)**; **GOVT.10** ("the state and local governments as described in the Constitution of
+  Virginia") is where a state SOL names Virginia's structure squarely, so \`state-civics-va\` maps
+  **FULL** there (the one-consecutive-term governor, legislature-elected judges, 95 counties + 38
+  independent cities). Both DOEs block tooling (dpi.nc.gov/files.nc.gov 403; VDOE portal refused), so
+  each was transcribed from a **byte-faithful mirror of the DOE's own titled PDF** (App State for NC;
+  the Board-approved 4/20/23 doc for VA), \`sourceUrl\` set to the canonical DOE page. Honest gaps
+  published per state: NC's Civic Literacy standards have **no lawmaking-process objective**, so the
+  flagship's signature bill-becomes-law lesson (veto only since 1997, 3/5 override) has no code to cite;
+  VA's GOVT.3g ("the amendment process") is a real match but under the isolation suite's ~40-char floor,
+  so VA's amendment path is cited via GOVT.10b/1c; **both states' ELA and Science standards were not
+  retrievable from an acceptable source this pass** (fetch-or-don't-cite). **NEXT_UP advanced OH/GA →
+  WA/NJ** (⚠️ merge-coordinates with the other in-flight standards branches, which also edit that line).
+  **No migration, no seed.**
 - 🔧 **Arizona + Arkansas mapped — states #3 and #4, proving the concept-hub price**
   (\`feat/standards-az-ar\`) — \`/academic-standards?state=AZ\` and \`?state=AR\` now render real pages: two new
   data files + \`pnpm gen:standards\`, zero code change, exactly as the model promised. **Arizona: 46
@@ -1210,6 +1259,32 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   say so; Arizona's HS.C2.5 (AZ-vs-US rights comparison) is rejected despite being the flagship's
   home framework; U.S. History Since 1929 starts too late for the Gilded Age labor units. **No
   migration, no seed.**
+- 🔧 **Ohio + Georgia mapped — states #10 and #11** (\`feat/standards-oh-ga\`, task 130) —
+  \`/standards?state=OH\` and \`?state=GA\` flip from "not mapped yet" to real pages: two new data
+  files + \`pnpm gen:standards\`, zero code change. **Ohio: 50 standards (25 full, 25 partial) across
+  7 frameworks** — all six of Ohio's Adopted-2018 high-school social-studies courses as their own
+  frameworks (American Government — the \`state-civics-oh\` flagship's 1:1 home, because Ohio's
+  Content Statements 16/17 NAME Ohio's own government, unlike AR/CA; American History; Modern World
+  History; Economics & Financial Literacy — **CS 4 is the economic-systems standard AZ/CA lacked**;
+  Contemporary World Issues — CS 3 is the media-literacy home; World Geography — the Commodity Map),
+  plus Ohio's own Adopted-2017 ELA (RI.9-10/11-12, bespoke, NOT Common Core). **Ohio science
+  EXCLUDED and documented**: Ohio publishes its HS science courses as bare topic outlines
+  ("ENV.GP.3: Climate change"), not citable content statements, so the climate/resource content maps
+  to Ohio social studies instead. **Georgia: 40 standards (13 full, 27 partial) across 6 frameworks**
+  — the current GSE social studies (Approved 2016, **Updated Nov 2, 2023**): American
+  Government/Civics SSCG (the \`state-civics-ga\` flagship maps to **SSCG17**, "state and local
+  government described in the Georgia Constitution"), World History SSWH (names the **Opium Wars**
+  SSWH16c and **Haiti** SSWH14b), U.S. History SSUSH (Great Migration + Debs named in SSUSH15b),
+  World Geography SSWG (SSWG5e names "plantation farming in Africa and Central/South America"),
+  and Economics (SSEIN1 trade / SSEF3 systems) — plus Georgia's **NEW K-12 ELA Standards (Approved
+  May 2023, in force SY2025-26**, which retired the Common Core-derived GSE ELA), mapped bespoke.
+  **Georgia science deferred** (GA's own GSE Science, verified NOT NGSS, not fetched this pass, like
+  TX/FL). education.ohio.gov and gadoe.org/georgiastandards.org all refuse our tooling (DNS/redirect)
+  and web.archive.org was down, so every document was transcribed from **faithful district mirrors**
+  of the states' own PDFs (provenance recorded in \`data/oh.ts\`/\`data/ga.ts\`); **every cited
+  standard is genuine verbatim text**. **NEXT_UP advanced OH/GA → MI/IL** (⚠️ one-line conflict risk
+  vs the parallel \`feat/standards-matrix\` branch, which may also edit that line). **No migration,
+  no seed.**
 - 🔧 **Texas + Florida mapped — states #8 and #9, both fully bespoke** (\`feat/standards-tx-fl\`) —
   \`/academic-standards?state=TX\` and \`?state=FL\` flip from "not mapped yet" to real pages. **Texas: 56
   standards (31 full, 25 partial) across 8 TEKS frameworks** — Texas writes its own TEKS for every
