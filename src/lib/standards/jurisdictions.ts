@@ -70,6 +70,12 @@ export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 // also edit this line; resolve any conflict to a value that names NEITHER a mapped state (currently
 // AR AZ CA DC FL GA IN NY OH PA TX) NOR a state another in-flight branch is actively mapping.
 export const NEXT_UP: StateCode[] = ["MI", "IL"];
+// IL/MI are mapped here (task 131); OH/GA are mapped on a parallel branch. NEXT_UP must never name
+// a state that mappedStates() already contains — the isolation suite enforces it — so we advance
+// past all of {AR,AZ,CA,DC,FL,IN,NY,PA,TX,OH,GA,IL,MI}. NOTE for the merge: the parallel OH/GA and
+// matrix branches also edit this line; resolve the conflict to a value that names NO already-mapped
+// state (NC/VA below are safe against every state mapped across the in-flight branches).
+export const NEXT_UP: StateCode[] = ["NC", "VA"];
 
 export function jurisdictionName(code: StateCode): string {
   return US_JURISDICTIONS.find((j) => j.code === code)?.name ?? code;
