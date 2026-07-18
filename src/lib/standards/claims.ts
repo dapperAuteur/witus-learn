@@ -1566,6 +1566,79 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Missouri Civics, Lesson 5 · Elections and how to take part in Missouri"],
   },
 
+  // ── State civics: Connecticut (state-civics-ct was written FROM Connecticut's own sources) ──
+  // NOTE: Connecticut's Social Studies Frameworks (2015) High School Civics and Government course is
+  // built on the C3 inquiry arc, but its lead standard CIV 9–12.1 names "local, state, tribal,
+  // national, and international" institutions explicitly — so, unlike the abstract-concept states,
+  // the Connecticut flagship's own-government lessons (its abolished counties, its town-based local
+  // layer, its legislative appointment of judges) have a genuine home, mapped there. Connecticut is
+  // INHERIT-heavy: it adopted the Common Core (as the "CT Core Standards", 2010) for ELA and the
+  // NGSS (2015) for science, so data/ct.ts adopts the two shared frameworks and maps only the
+  // bespoke social-studies frame here.
+  {
+    id: "civics.ct-constitution-state",
+    claim:
+      "Teaches Connecticut as 'The Constitution State' — the Fundamental Orders of 1639 (often called one of the first written constitutions to frame a government by the consent of the governed), the modern Constitution of 1965 (following the colonial charter and an 1818 constitution), and that Connecticut became the 5th state on January 9, 1788.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 1 · 'The Constitution State' and the Fundamental Orders of 1639",
+    ],
+  },
+  {
+    id: "civics.ct-no-counties",
+    claim:
+      "Teaches Connecticut's most distinctive structural feature: it ABOLISHED county government entirely in 1960, leaving a two-tier system of the state plus 169 towns, with the eight historic counties surviving only as geographic reference areas and nine 'planning regions' serving as county-equivalents for federal statistical purposes only (never as general-purpose governments).",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 2 · Connecticut abolished county government (1960)",
+    ],
+  },
+  {
+    id: "civics.ct-executive-legislature",
+    claim:
+      "Teaches Connecticut's executive and legislative branches as Connecticut's: a plural executive (the Governor and Lieutenant Governor nominated separately but running together, plus a separately elected Secretary of the State, Treasurer, Comptroller, and Attorney General, all on 4-year terms with no term limits) and the General Assembly (a 151-member House and a 36-member Senate, both on 2-year terms), with a two-thirds veto override.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 3 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ct-courts-legislative-appointment",
+    claim:
+      "Teaches Connecticut's distinctive judicial selection: judges are NOT elected in campaigns — a Judicial Selection Commission screens candidates, the Governor nominates from that list, and the General Assembly (the Legislature) appoints the judge to an 8-year renewable term, with a 7-justice Connecticut Supreme Court at the top.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 4 · How Connecticut picks its judges, and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ct-lawmaking-no-initiative",
+    claim:
+      "Teaches how a bill becomes a Connecticut law (introduction, Connecticut's efficiency-minded joint committees shared by both chambers, floor votes, and the Governor's signature/veto/line-item veto) and that Connecticut has NO statewide citizen initiative: amendments are proposed by the General Assembly and ratified by the voters, so the citizen role is ratification, not initiation.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 4 · How Connecticut picks its judges, and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ct-towns",
+    claim:
+      "Teaches Connecticut local government as Connecticut's: because there are no counties, the TOWN is the workhorse — 169 towns, many small ones still governed by a town meeting and a board of selectmen, larger ones by mayor-council or council-manager forms, handling schools, police, roads, and zoning, with regional councils of governments coordinating some services but never acting as general-purpose governments.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 5 · Town government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ct-get-involved",
+    claim:
+      "Teaches getting involved where you live, Connecticut edition — using Connecticut's newly expanded voting access (early in-person voting used starting in 2024 and no-excuse absentee voting, administered by town registrars), showing up at the town meeting, board of selectmen or town/city council and the local board of education, contacting your one Representative and one Senator in Hartford, weighing in on amendments and constitutional conventions, and running for local office.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 5 · Town government and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
