@@ -531,6 +531,22 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
+- 🔧 **Training the Colonizer: The Knowledge That Was Taken** (Culture & History,
+  \`content/training-the-colonizer\`). What enslaved and colonized people taught their enslavers, for
+  high school students. 6 sections: rice and the **Black Rice debate** (Carney 2001 taught AS a debate
+  beside Eltis, Morgan & Richardson 2007, no winner), indigo and cattle, building and ironwork,
+  **Onesimus** and West African variolation in Boston's 1721 smallpox epidemic, and foodways and
+  watercraft. The through-line, stated plainly: the knowledge was coerced, uncredited, and
+  uncompensated. Cited (Carney, Wood, Littlefield, Dawson, Harris, Twitty); building attributions
+  given as documented labor, not design. \`pnpm seed:courses\` picks it up.
+- 🔧 **Clean: A Global History of Bathing and Soap** (Culture & History, \`content/history-of-bathing\`).
+  Bathing and soap across traditions, for high school students. 8 sections: Rome (oil and strigil, no
+  body soap), the Islamic hammam and hard soap (Aleppo and Nablus), the Indus Great Bath and Japan,
+  the Finnish sauna and the Mesoamerican temazcal, Europe's LATER retreat from bathing and slow
+  return, the Crusade and Columbian encounters, and a payoff that puts the "medieval Europeans never
+  bathed" myth on trial and refutes it (a \`:::reveal\` and quiz items test the nuance). Vivid-but-thin
+  claims (Moctezuma "twice a day" per Andres de Tapia) are attributed and hedged. Cited (Ashenburg
+  2007, Smith 2007, Brown 2009, UNESCO ICH). \`pnpm seed:courses\` picks it up.
 - 🔧 **The History of Unions: America and the World** (Culture & History, \`content/history-of-unions\`)
   — the **anchor of the workers'-rights track**, for high school students. 7 sections · 22 teaching
   lessons · 7 quizzes (15–18-question banks, above the 10-question attempt cap so retries rotate) ·
@@ -1122,6 +1138,16 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Missouri mapped, fully bespoke** (\`feat/standards-mo-md\`). \`/academic-standards?state=MO\`
+  flips from "not mapped yet" to a real page. Missouri withdrew from the Common Core, so its ELA and
+  math are Missouri's own and its science is Missouri's own (not NGSS); the mapped codes are all
+  **High School Government** Grade Level Expectations from the **Missouri Learning Standards for
+  Social Studies** (2016), transcribed verbatim from DESE's machine-readable export and cross-checked
+  against the 6-12 GLE PDF. **13 standards (11 full, 2 partial)** onto the \`state-civics-mo\` flagship
+  (the Missouri Plan for judges, the plural executive, initiative and referendum, the independent
+  City of St. Louis) plus the civics ladder; ELA and science are published as honest deferred gaps.
+  **Maryland was deferred** (the pass ended before MD) and re-queued at the front of \`NEXT_UP\`. No
+  migration, no seed.
 - 🔧 **Illinois + Michigan mapped — states #10 and #11, both heavy inheriters** (\`feat/standards-il-mi\`) —
   \`/academic-standards?state=IL\` and \`?state=MI\` flip from "not mapped yet" to real pages. Both
   states adopted the shared multi-state frameworks, so we **INHERIT** rather than re-map: Illinois

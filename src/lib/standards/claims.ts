@@ -1502,6 +1502,70 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Missouri (state-civics-mo was written FROM Missouri's own sources) ──
+  // NOTE: Missouri's high-school Government course (Missouri Learning Standards for Social Studies,
+  // 2016) reaches Missouri's OWN government explicitly through 9-12.GV.3.GS.F ("Compare the
+  // structure and functions of local, state and federal governments"), so — unlike the abstract-
+  // concept states — the Missouri flagship's structure lessons have a genuine home, mapped there.
+  // Missouri withdrew from the Common Core, so its ELA/Math are Missouri-specific and its science is
+  // Missouri's own (not NGSS); data/mo.ts publishes those as deferred gaps, not denials.
+  {
+    id: "civics.mo-missouri-plan",
+    claim:
+      "Teaches the 'Missouri Plan' — Missouri's nationally-copied merit-selection-plus-retention method of choosing judges (a nonpartisan nominating commission sends the Governor a short list of the most qualified, the Governor appoints from that list, and the judge then faces voters in periodic nonpartisan yes/no retention elections), adopted by Missouri voters in 1940 and since copied in some form by many states.",
+    courseSlugs: ["state-civics-mo"],
+    lessons: [
+      "Missouri Civics, Lesson 1 · The 'Missouri Plan': merit selection plus retention (adopted 1940)",
+      "Missouri Civics, Lesson 5 · The yes/no retention vote you cast on many Missouri judges",
+    ],
+  },
+  {
+    id: "civics.mo-state-structure",
+    claim:
+      "Teaches Missouri's three branches as Missouri's: the Constitution of 1945 (its fourth); a plural executive of six separately-elected statewide officers (Governor, Lieutenant Governor, Secretary of State, State Auditor, State Treasurer, and Attorney General, who can be of different parties and check one another); a General Assembly of a 163-member House (2-year terms) and a 34-member Senate (4-year terms) under an 8-year-per-chamber term limit; how a bill becomes a Missouri law; and the two-thirds veto override.",
+    courseSlugs: ["state-civics-mo"],
+    lessons: [
+      "Missouri Civics, Lesson 2 · Missouri's plural executive: six statewide officers",
+      "Missouri Civics, Lesson 3 · The General Assembly and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.mo-direct-democracy",
+    claim:
+      "Teaches Missouri's citizen tools of direct democracy — the initiative (used to place a statute OR a constitutional amendment on the ballot) and the referendum (used to reject a law the General Assembly passed) — as a real, regularly-used second lawmaking route beside the Legislature.",
+    courseSlugs: ["state-civics-mo"],
+    lessons: [
+      "Missouri Civics, Lesson 3 · Initiative and referendum: the citizen's second lawmaking route",
+      "Missouri Civics, Lesson 5 · Using the initiative and referendum where you live",
+    ],
+  },
+  {
+    id: "civics.mo-local-government",
+    claim:
+      "Teaches Missouri local government as Missouri's: 114 counties (governed by an elected county commission plus separately-elected sheriff, clerk, collector, assessor, and prosecutor, some under home-rule charters) PLUS the independent City of St. Louis, which belongs to no county (it separated from St. Louis County in 1876), so 'the City' and 'the County' of St. Louis are two separate governments.",
+    courseSlugs: ["state-civics-mo"],
+    lessons: [
+      "Missouri Civics, Lesson 4 · Local government: 114 counties and the independent City of St. Louis",
+      "Missouri Civics, Lesson 5 · Show up locally (remember St. Louis City and County are separate)",
+    ],
+  },
+  {
+    id: "civics.mo-elections",
+    claim:
+      "Teaches Missouri's election specifics — a photo-ID requirement for in-person voting (with provisional-ballot fallbacks), in-person absentee/early voting, and absentee voting under certain conditions, all administered by county clerks and election boards — flagged as time-sensitive and pointing to sos.mo.gov for the current rules.",
+    courseSlugs: ["state-civics-mo"],
+    lessons: [
+      "Missouri Civics, Lesson 5 · Elections in Missouri: photo ID, absentee/early voting, county administration",
+    ],
+  },
+  {
+    id: "civics.mo-get-involved",
+    claim:
+      "Teaches getting involved where you live, Missouri edition — registering and voting, circulating an initiative or referendum, showing up at county commissions, city councils, and school boards, contacting your one Representative and one Senator in Jefferson City, researching the judicial retention votes on your ballot, and running for local office.",
+    courseSlugs: ["state-civics-mo"],
+    lessons: ["Missouri Civics, Lesson 5 · Elections and how to take part in Missouri"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
