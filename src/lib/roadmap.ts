@@ -1210,6 +1210,32 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   say so; Arizona's HS.C2.5 (AZ-vs-US rights comparison) is rejected despite being the flagship's
   home framework; U.S. History Since 1929 starts too late for the Gilded Age labor units. **No
   migration, no seed.**
+- 🔧 **Ohio + Georgia mapped — states #10 and #11** (\`feat/standards-oh-ga\`, task 130) —
+  \`/standards?state=OH\` and \`?state=GA\` flip from "not mapped yet" to real pages: two new data
+  files + \`pnpm gen:standards\`, zero code change. **Ohio: 50 standards (25 full, 25 partial) across
+  7 frameworks** — all six of Ohio's Adopted-2018 high-school social-studies courses as their own
+  frameworks (American Government — the \`state-civics-oh\` flagship's 1:1 home, because Ohio's
+  Content Statements 16/17 NAME Ohio's own government, unlike AR/CA; American History; Modern World
+  History; Economics & Financial Literacy — **CS 4 is the economic-systems standard AZ/CA lacked**;
+  Contemporary World Issues — CS 3 is the media-literacy home; World Geography — the Commodity Map),
+  plus Ohio's own Adopted-2017 ELA (RI.9-10/11-12, bespoke, NOT Common Core). **Ohio science
+  EXCLUDED and documented**: Ohio publishes its HS science courses as bare topic outlines
+  ("ENV.GP.3: Climate change"), not citable content statements, so the climate/resource content maps
+  to Ohio social studies instead. **Georgia: 40 standards (13 full, 27 partial) across 6 frameworks**
+  — the current GSE social studies (Approved 2016, **Updated Nov 2, 2023**): American
+  Government/Civics SSCG (the \`state-civics-ga\` flagship maps to **SSCG17**, "state and local
+  government described in the Georgia Constitution"), World History SSWH (names the **Opium Wars**
+  SSWH16c and **Haiti** SSWH14b), U.S. History SSUSH (Great Migration + Debs named in SSUSH15b),
+  World Geography SSWG (SSWG5e names "plantation farming in Africa and Central/South America"),
+  and Economics (SSEIN1 trade / SSEF3 systems) — plus Georgia's **NEW K-12 ELA Standards (Approved
+  May 2023, in force SY2025-26**, which retired the Common Core-derived GSE ELA), mapped bespoke.
+  **Georgia science deferred** (GA's own GSE Science, verified NOT NGSS, not fetched this pass, like
+  TX/FL). education.ohio.gov and gadoe.org/georgiastandards.org all refuse our tooling (DNS/redirect)
+  and web.archive.org was down, so every document was transcribed from **faithful district mirrors**
+  of the states' own PDFs (provenance recorded in \`data/oh.ts\`/\`data/ga.ts\`); **every cited
+  standard is genuine verbatim text**. **NEXT_UP advanced OH/GA → MI/IL** (⚠️ one-line conflict risk
+  vs the parallel \`feat/standards-matrix\` branch, which may also edit that line). **No migration,
+  no seed.**
 - 🔧 **Texas + Florida mapped — states #8 and #9, both fully bespoke** (\`feat/standards-tx-fl\`) —
   \`/academic-standards?state=TX\` and \`?state=FL\` flip from "not mapped yet" to real pages. **Texas: 56
   standards (31 full, 25 partial) across 8 TEKS frameworks** — Texas writes its own TEKS for every
