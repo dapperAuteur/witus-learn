@@ -821,5 +821,265 @@ The hammam is half of this section's story. The other half is what people increa
         ],
       },
     },
+
+    // ───────────── SECTION 4 · WATER IN ASIA: THE INDUS AND JAPAN ─────────────
+    {
+      slug: "bathing-asia-indus",
+      title: "10 · The Great Bath of Mohenjo-daro, and the limits of what a thing can tell you",
+      section: "Section 4 · Water in Asia: the Indus and Japan",
+      body: `Go back further than Rome, further than the earliest soap recipes, to one of the world's first great urban civilizations: the Indus, or Harappan, civilization, whose cities flourished in their mature phase from about 2600 to 1900 BCE along the Indus River in what is now Pakistan and northwest India. Its best-known cities are Mohenjo-daro and Harappa. (This course's companion, *Asia Before European Colonization*, covers the Indus cities and their still-unreadable script in more depth; here we zoom in on a single structure.)
+
+**The Great Bath.** On the raised mound at the center of Mohenjo-daro sits a structure that has no older rival: a large, watertight brick tank, commonly measured at about 12 meters long, 7 meters wide, and up to 2.4 meters deep, with brick steps leading down into it at each end. Its builders made it hold water with real skill: finely fitted bricks set in gypsum plaster, sealed with a thick layer of *bitumen*, natural tar, along the sides. A corridor and rooms surrounded it. It is often described as the earliest known public water tank anywhere in the world, built in the third millennium BCE (Encyclopaedia Britannica, n.d.).
+
+**Now the honesty.** Here is where this lesson earns its place in a course about evidence. We can describe the Great Bath with great precision, because it is a *thing*, and things survive. But we do not actually know what it was **for**. There are no captions, because the Indus script has never been deciphered, so no Indus text can tell us. Scholars generally infer that a structure this deliberate, this central, and this watertight was used for ritual or ceremonial bathing, and they point to the deep importance of ritual bathing in later South Asian traditions as a plausible echo. That inference is reasonable. It is still an inference, and an honest course labels it as one rather than stating "the Indus people used it for religious purification" as a fact (Encyclopaedia Britannica, n.d.).
+
+This is Lesson 2's warning in stone. Physical evidence is powerful and hard to fake, but it does not speak. A magnificent building can tell you exactly how it was made and leave you guessing why. The Indus water engineering went well beyond this one pool, wells, drains, and bathing platforms appear across the cities, so we can say confidently that clean water mattered enormously to these people. What we cannot honestly do is read their minds from their plumbing.
+
+:::reveal Why can we describe the Great Bath of Mohenjo-daro precisely but only guess what it was used for? ||| Because it is a physical thing, so its size, materials, and waterproofing survive to be measured, but the Indus script has never been deciphered, so no text explains its purpose. A ritual or ceremonial use is a reasonable scholarly inference from its design and from later South Asian bathing traditions, but it is an inference, not a documented fact.
+
+## Sources
+- Encyclopaedia Britannica. (n.d.). *Great Bath, Mohenjo-daro*. https://www.britannica.com/place/Great-Bath-Mohenjo-daro`,
+      recallContent: [
+        {
+          prompt: "What was the medieval Islamic world's decisive contribution to soap, and what word records the chemistry?",
+          answer:
+            "Turning soap into purpose-made hard body soap: olive oil combined with an alkali (al-qali, from plant and wood ash), boiled into a firm, storable, scented bar. The Arabic al-qali is the root of the English word 'alkali.'",
+        },
+        {
+          prompt: "Name the two famous hard-soap cities and one thing that makes each notable.",
+          answer:
+            "Aleppo (Syria): a hard olive-oil soap with laurel berry oil, ancestor of European 'Castile.' Nablus (Palestine): Nabulsi soap from olive oil, water, and lye, cured for months in towers; its tradition was inscribed by UNESCO in 2024.",
+        },
+      ],
+    },
+    {
+      slug: "bathing-japan",
+      title: "11 · Japan: purity, merit, and the clean-water soak",
+      section: "Section 4 · Water in Asia: the Indus and Japan",
+      body: `Japan built one of the world's most distinctive bathing traditions, and it grew out of two ideas braided together: religious purity and physical pleasure.
+
+**The religious root: purification.** In Shinto, the indigenous religion of Japan, physical cleanliness and spiritual purity are closely linked. A practice called *misogi* purifies a person by washing the body, sometimes standing under a cold waterfall or in a river or the sea. Japanese tradition traces the idea to a very old story, recorded in the early chronicles, in which the deity Izanagi washes himself to purify his body after a journey to the land of the dead (Government of Japan, 2019). Whatever you make of the myth, its lesson for our subject is that in Japan, washing carried a spiritual meaning from early on.
+
+**The Buddhist layer: bathing as merit.** When Buddhism reached Japan, from about the sixth century CE, it brought its own tradition of ritual bathing, and something more socially interesting: the idea that providing baths to others could earn religious merit. Temples built bath halls, and some offered bathing not only to monks but to the poor and the sick as an act of charity (Government of Japan, 2019). Bathing was thus, at once, a religious duty, a kindness, and a public service, well before it was a business.
+
+**From temple to town: the sento and the onsen.** Over the centuries these temple baths gave rise to the public bathhouse, the *sento*, which became a fixture of Japanese town life, especially during the Edo period. Japan's volcanic geography also gave it abundant natural hot springs, and bathing in them, the *onsen*, became, and remains, both a health practice and a beloved pastime (Government of Japan, 2019).
+
+**The logic of the Japanese bath.** The home or public bath, the *ofuro*, follows a rule that captures the whole tradition in one habit: **you wash and rinse your body thoroughly outside the tub first, and only then get in to soak.** The tub is not for cleaning off dirt; it is for warming and relaxing in clean, often shared, hot water, which stays clean precisely because everyone washed before entering. A Roman felt clean after oil and a scraper; a Muslim after ablution; a Japanese bather is clean before the soak even begins, and the soak is the reward. Same word, "clean," reached a fourth different way.
+
+:::reveal In the Japanese ofuro tradition, why do bathers wash and rinse fully before getting into the tub? ||| Because the tub is not for scrubbing off dirt but for soaking, warming, and relaxing in clean hot water that is often shared. Washing thoroughly outside the tub first keeps the soaking water clean for everyone. The bather is already clean before the soak, which is the reward rather than the cleaning.
+
+## Sources
+- Government of Japan. (2019, March). *Rediscovering the multifaceted attractions of Japanese bathing culture*. Highlighting Japan. https://www.gov-online.go.jp/eng/publicity/book/hlj/html/201903/201903_01_en.html`,
+      recallContent: [
+        {
+          prompt: "Why is the Great Bath of Mohenjo-daro a good example of the 'things versus words' problem?",
+          answer:
+            "We can measure the thing precisely (about 12 by 7 meters, up to 2.4 meters deep, waterproofed with bitumen and gypsum-set brick), but the Indus script is undeciphered, so no words survive to tell us its purpose. A ritual use is a reasonable inference, not a documented fact.",
+        },
+        {
+          prompt: "Roughly when did the Indus (Harappan) civilization's cities flourish, and what are two of its best-known cities?",
+          answer:
+            "Its mature urban phase ran from about 2600 to 1900 BCE, along the Indus River in present-day Pakistan and northwest India. Two of its best-known cities are Mohenjo-daro and Harappa.",
+        },
+      ],
+    },
+    {
+      slug: "bathing-quiz-asia",
+      title: "12 · Quiz: the Indus and Japan",
+      section: "Section 4 · Water in Asia: the Indus and Japan",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Roughly when did the mature cities of the Indus (Harappan) civilization flourish?",
+            options: [
+              "About 500 to 1500 CE",
+              "About 2600 to 1900 BCE",
+              "About 100 BCE to 400 CE",
+              "About 10,000 BCE",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Indus civilization's mature urban phase ran roughly 2600 to 1900 BCE (Encyclopaedia Britannica, n.d.).",
+            sourceLessonSlug: "bathing-asia-indus",
+          },
+          {
+            prompt: "The Great Bath sits at the center of which Indus city?",
+            options: ["Harappa", "Mohenjo-daro", "Dholavira", "Babylon"],
+            correctIndex: 1,
+            explanation: "The Great Bath is on the raised mound at Mohenjo-daro (Encyclopaedia Britannica, n.d.).",
+            sourceLessonSlug: "bathing-asia-indus",
+          },
+          {
+            prompt: "How did the Great Bath's builders make the tank hold water?",
+            options: [
+              "With a plastic liner",
+              "With finely fitted bricks set in gypsum plaster and sealed with a thick layer of bitumen (natural tar)",
+              "With loose sand",
+              "They did not; it leaked constantly",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Fine brickwork, gypsum plaster, and a bitumen seal made the tank watertight (Encyclopaedia Britannica, n.d.).",
+            sourceLessonSlug: "bathing-asia-indus",
+          },
+          {
+            prompt: "Why can archaeologists NOT simply state what the Great Bath was used for?",
+            options: [
+              "The building was destroyed before study",
+              "The Indus script has never been deciphered, so no surviving text explains its purpose; a ritual use is a reasonable inference, not a documented fact",
+              "Archaeologists never studied it",
+              "It was clearly a swimming pool, so there is no question",
+            ],
+            correctIndex: 1,
+            explanation:
+              "With an undeciphered script, purpose must be inferred and labeled as inference (Encyclopaedia Britannica, n.d.).",
+            sourceLessonSlug: "bathing-asia-indus",
+          },
+          {
+            prompt: "The Great Bath is often described as:",
+            options: [
+              "The world's largest swimming pool",
+              "The earliest known public water tank anywhere",
+              "A Roman invention",
+              "A natural hot spring",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Built in the third millennium BCE, it is commonly called the earliest known public water tank (Encyclopaedia Britannica, n.d.).",
+            sourceLessonSlug: "bathing-asia-indus",
+          },
+          {
+            prompt: "Besides the Great Bath, what other evidence shows clean water mattered greatly to Indus cities?",
+            options: [
+              "Nothing else survives",
+              "Wells, covered drains, and household bathing platforms appear across the cities",
+              "Written bathing manuals",
+              "Giant soap factories",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Widespread water infrastructure (wells, drains, bathing platforms) shows the importance of clean water, even without readable texts.",
+            sourceLessonSlug: "bathing-asia-indus",
+          },
+          {
+            prompt: "In Shinto, what is misogi?",
+            options: [
+              "A hard soap",
+              "A purification practice of washing the body, sometimes under a cold waterfall or in a river or the sea",
+              "A public bathhouse",
+              "A Roman scraper",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Misogi links physical washing to spiritual purity in Shinto (Government of Japan, 2019).",
+            sourceLessonSlug: "bathing-japan",
+          },
+          {
+            prompt: "What socially notable idea did Buddhism add to Japanese bathing?",
+            options: [
+              "That bathing was sinful",
+              "That providing baths to others, including the poor and sick, could earn religious merit, so temples built bath halls and offered charity bathing",
+              "That only monks could ever bathe",
+              "That bathing required soap imported from Rome",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Buddhist temples offered bathing as merit and charity, making it a public service before a business (Government of Japan, 2019).",
+            sourceLessonSlug: "bathing-japan",
+          },
+          {
+            prompt: "What is a sento?",
+            options: [
+              "A natural hot spring",
+              "A public bathhouse that became a fixture of Japanese town life, especially in the Edo period",
+              "A Shinto shrine",
+              "A type of soap",
+            ],
+            correctIndex: 1,
+            explanation: "The sento is Japan's public bathhouse, descended from temple baths (Government of Japan, 2019).",
+            sourceLessonSlug: "bathing-japan",
+          },
+          {
+            prompt: "What is an onsen?",
+            options: [
+              "A bathing platform",
+              "Bathing at a natural hot spring, popular in volcanic Japan as both a health practice and a pastime",
+              "A cold-water purification ritual",
+              "A soap-making town",
+            ],
+            correctIndex: 1,
+            explanation: "Onsen are hot-spring baths, a beloved part of Japanese bathing culture (Government of Japan, 2019).",
+            sourceLessonSlug: "bathing-japan",
+          },
+          {
+            prompt: "In the ofuro tradition, why do bathers wash and rinse fully BEFORE entering the tub?",
+            options: [
+              "Because the tub water is toxic",
+              "Because the tub is for soaking and warming in clean, often shared, hot water, so washing outside first keeps that water clean",
+              "Because soap is banned in the tub for religious reasons only",
+              "Because the tub is too small to wash in",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Washing before the soak keeps the shared soaking water clean; the soak is the reward, not the scrub (Government of Japan, 2019).",
+            sourceLessonSlug: "bathing-japan",
+          },
+          {
+            prompt: "The Japanese bather being 'clean before the soak begins' is used in the course to make what point?",
+            options: [
+              "That Japan copied the Roman bath exactly",
+              "That 'clean' was reached by yet another distinct method, a fourth complete tradition alongside Rome, Islam, and others",
+              "That soaking is the only real way to be clean",
+              "That the Japanese did not value cleanliness",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Japan is another sophisticated, self-contained way of being clean, not a rung above or below the others.",
+            sourceLessonSlug: "bathing-japan",
+          },
+          {
+            prompt: "Japanese tradition traces misogi to an old story about which figure washing to purify himself?",
+            options: [
+              "The Buddha",
+              "The deity Izanagi, who washes after a journey to the land of the dead in the early chronicles",
+              "A Roman emperor",
+              "A Portuguese sailor",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The early Japanese chronicles describe Izanagi purifying himself by washing, an origin story for misogi (Government of Japan, 2019).",
+            sourceLessonSlug: "bathing-japan",
+          },
+          {
+            prompt: "Which course this data module cross-links for a deeper treatment of the Indus cities and their undeciphered script?",
+            options: [
+              "Pre-Columbian Mesoamerica",
+              "Asia Before European Colonization",
+              "Africa Before Colonization",
+              "The History of Unions",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The Indus cities and the unreadable Indus script are treated at length in the companion course Asia Before European Colonization.",
+            sourceLessonSlug: "bathing-asia-indus",
+          },
+          {
+            prompt: "What is the safest honest summary of what the Great Bath proves?",
+            options: [
+              "That the Indus people worshipped water gods",
+              "That clean water and deliberate bathing infrastructure mattered greatly to the Indus cities, even though the exact purpose of the Bath must be inferred",
+              "That the Indus people had no interest in cleanliness",
+              "That Rome built the first baths",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The physical evidence proves water and bathing mattered; the specific ritual meaning is a careful inference, not a fact.",
+            sourceLessonSlug: "bathing-asia-indus",
+          },
+        ],
+      },
+    },
   ],
 };
