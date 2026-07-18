@@ -128,6 +128,7 @@ import { CHESS_COURSE } from "./data/chess-course";
 import { AFROCENTRICITY_COURSE } from "./data/afrocentricity-course";
 import { PAN_AFRICANISM_COURSE } from "./data/pan-africanism-course";
 import { ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE } from "./data/asia-before-european-colonization-course";
+import { TRAINING_THE_COLONIZER_COURSE } from "./data/training-the-colonizer-course";
 
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
@@ -845,6 +846,13 @@ async function main() {
     // 17 teaching lessons · 7 quizzes (15-question banks) · 1 exercise (name the
     // civilization/person/place). NO migration — pnpm seed:courses.
     { slug: "asia-before-european-colonization", course: ASIA_BEFORE_EUROPEAN_COLONIZATION_COURSE, category: "Culture & History" },
+    // Training the Colonizer — what enslaved and colonized people taught their enslavers
+    // (rice, indigo, cattle, foodways, building, ironwork, medicine, navigation). The Black
+    // Rice thesis (Carney 2001) taught AS a debate with Eltis/Morgan/Richardson 2007 + the
+    // 2010 AHR Exchange, no winner; Onesimus/Mather/Boylston 1721 as the clean medical case;
+    // building attributions given as documented LABOR not design; through-line = knowledge
+    // coerced, uncredited, uncompensated. NO migration — pnpm seed:courses.
+    { slug: "training-the-colonizer", course: TRAINING_THE_COLONIZER_COURSE, category: "Culture & History" },
   ]) {
     await seedAuthoredCourse(db, {
       tenantId: learnWitus,
