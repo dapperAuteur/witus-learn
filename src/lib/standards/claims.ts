@@ -1637,6 +1637,64 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Minnesota Civics, Lesson 5 · Local government and how to take part"],
   },
 
+  // ── State civics: Wisconsin (state-civics-wi was written FROM Wisconsin's own sources) ──
+  // NOTE: Wisconsin writes its OWN social studies standards (the 2018 Wisconsin Standards for
+  // Social Studies, informed by the C3 Framework — not Common Core). Its Political Science (PS)
+  // strand names the structure and functions of state government explicitly at high school:
+  // SS.PS3.c.h ("Evaluate the structure and functions of governments at the local, state, tribal,
+  // national, and global levels") is a genuine home for the Wisconsin flagship's own-structure
+  // lessons, and the strand's Inquiry (Inq) and History (Hist) source-analysis indicators carry the
+  // catalog's media/source-literacy method. data/wi.ts publishes the ELA/science/math gaps.
+  {
+    id: "civics.wi-wisconsin-idea",
+    claim:
+      "Teaches Wisconsin's Progressive-Era civic identity — a 'laboratory of democracy' under its Constitution of 1848 that pioneered reforms later copied nationwide (an early state income tax in 1911, workers' compensation, the direct primary) — and 'the Wisconsin Idea': the principle that the boundaries of the university are the boundaries of the state, so state government and the University of Wisconsin put expertise to work for all residents.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 1 · The 'Wisconsin Idea': a laboratory of democracy"],
+  },
+  {
+    id: "civics.wi-partial-veto",
+    claim:
+      "Teaches Wisconsin's plural executive (a Governor and Lieutenant Governor, plus a separately elected Attorney General, Secretary of State, State Treasurer, and the nonpartisan Superintendent of Public Instruction) and its uniquely powerful PARTIAL (line-item) VETO, which historically let the Governor strike individual parts of spending items — even words, letters, or digits (the 'Frankenstein' / 'Vanna White' veto) — a power since narrowed by constitutional amendments.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 2 · The executive and Wisconsin's uniquely powerful partial veto"],
+  },
+  {
+    id: "civics.wi-legislature-courts",
+    claim:
+      "Teaches Wisconsin's Legislature (a 99-member Assembly on 2-year terms and a 33-member Senate on 4-year terms, with no term limits) and its judiciary: a seven-justice Supreme Court and the lower courts elected on a NONPARTISAN ballot in low-turnout SPRING elections (10-year terms, one seat most years) that have become some of the most expensive and closely watched in the country.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 3 · The Legislature and Wisconsin's high-profile Supreme Court elections"],
+  },
+  {
+    id: "civics.wi-lawmaking-recall",
+    claim:
+      "Teaches how a bill becomes a Wisconsin law and Wisconsin's unusual mix of direct-democracy powers: NO statewide citizen initiative (amendments are proposed by the Legislature in two consecutive sessions, then ratified by voters), but a strong RECALL that lets voters petition to force a recall election of elected officials — used in a nationally famous 2012 gubernatorial recall.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 4 · How a bill becomes law, the strong recall, and no initiative"],
+  },
+  {
+    id: "civics.wi-local-government",
+    claim:
+      "Teaches Wisconsin local government as Wisconsin's: 72 counties governed by elected county boards of supervisors (larger counties, like Milwaukee, also with an elected county executive); a distinction between rural general-purpose 'towns' and incorporated villages and cities under a strong home-rule tradition; and school and special districts.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 5 · Local government and how to take part"],
+  },
+  {
+    id: "civics.wi-elections",
+    claim:
+      "Teaches Wisconsin's election specifics — same-day (Election-Day) registration, early in-person absentee voting, and a photo-ID requirement — administered at the municipal level by more than 1,800 city, village, and town clerks, with a standing flag to confirm current rules at elections.wi.gov, and a reminder not to skip the consequential spring elections.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 5 · Local government and how to take part"],
+  },
+  {
+    id: "civics.wi-get-involved",
+    claim:
+      "Teaches getting involved where you live, Wisconsin edition — registering and voting (including on Election Day, with photo ID) and not skipping the spring elections where judicial and local races are decided, using Wisconsin's strong recall, showing up at county boards and city/village/town and school-board meetings, contacting your one Assembly member and one Senator in Madison, and running for local office.",
+    courseSlugs: ["state-civics-wi"],
+    lessons: ["Wisconsin Civics, Lesson 5 · Local government and how to take part"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
