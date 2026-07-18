@@ -999,6 +999,509 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["Florida Civics, Lesson 9 · Get involved where you live in Florida"],
   },
 
+  // ── State civics: Ohio (state-civics-oh was written FROM Ohio's own sources) ──
+  // NOTE: unlike Arkansas and California, Ohio's high-school AMERICAN GOVERNMENT standards NAME
+  // Ohio's own government explicitly — Content Statement 16 ("the Ohio Constitution ... was changed
+  // in 1851") and Content Statement 17 (individuals assist state and local governments) — so the
+  // Ohio flagship's structure lessons have a genuine 1:1 home, mapped as full. Ohio's high-school
+  // science standards, by contrast, gave the climate/resource content NO home (Ohio publishes its
+  // high-school science courses as bare topic outlines, not citable content statements — see
+  // data/oh.ts notClaimed), so that content maps to Ohio social studies instead.
+  {
+    id: "civics.oh-constitution-direct-democracy",
+    claim: "Teaches Ohio's 1851 constitution and the strong direct democracy its 1912 amendments added — the citizen initiative and referendum, with a citizen constitutional amendment still passing on a simple majority after voters rejected the 2023 Issue 1 attempt to raise the bar to 60%.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: [
+      "Ohio Civics, Lesson 1 · Ohio's constitution: the 1851 rulebook and its 1912 makeover (the initiative and referendum)",
+      "Ohio Civics, Lesson 6 · Elections in Ohio (the citizen initiative/referendum and the failed 2023 Issue 1)",
+      "Ohio Civics, Lesson 7 · Four Ohio rules that recently changed (the simple-majority amendment bar survived)",
+    ],
+  },
+  {
+    id: "civics.oh-three-branches",
+    claim: "Teaches Ohio's three branches: a 99-member House and 33-member Senate, and a plural executive whose Governor and Lieutenant Governor run on a joint ticket while the Attorney General, Secretary of State, Auditor, and Treasurer are elected separately.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: ["Ohio Civics, Lesson 2 · The three branches, and Ohio's plural executive"],
+  },
+  {
+    id: "civics.oh-courts",
+    claim: "Teaches Ohio's elected judiciary — Supreme Court and Court of Appeals judges chosen in popular elections — and the 2021 change (SB 80) that put party labels on the general-election ballot for the top courts starting in 2022.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: ["Ohio Civics, Lesson 3 · Ohio's courts: elected judges, and a 2021 ballot change"],
+  },
+  {
+    id: "civics.oh-bill-process",
+    claim: "Teaches how a bill becomes an Ohio law, including Ohio's distinctive three-fifths (not two-thirds) veto override.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: ["Ohio Civics, Lesson 4 · How a bill becomes an Ohio law: the 3/5 override"],
+  },
+  {
+    id: "civics.oh-local-government",
+    claim: "Teaches Ohio local government as Ohio's: 88 counties, strong municipal home rule (Article XVIII, 1912), an active township layer, and special districts.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: [
+      "Ohio Civics, Lesson 5 · Local government in Ohio: 88 counties, home rule, townships",
+      "Ohio Civics, Lesson 8 · Get involved where you live in Ohio",
+    ],
+  },
+  {
+    id: "civics.oh-elections",
+    claim: "Teaches Ohio's election specifics: photo voter ID since 2023 (HB 458), no-excuse early and absentee voting, a roughly 30-day registration deadline, and the citizen initiative/referendum — including the August 2023 Issue 1 that failed to raise the amendment bar to 60%.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: [
+      "Ohio Civics, Lesson 6 · Elections in Ohio: photo ID (2023), early voting, and the ballot initiative",
+      "Ohio Civics, Lesson 7 · Four Ohio rules that recently changed",
+    ],
+  },
+  {
+    id: "civics.oh-get-involved",
+    claim: "Teaches getting involved where you live, Ohio edition — legislators and bill-tracking, the citizen initiative and referendum, county/city/village/township and special-district boards, and voting Ohio's now party-labeled judicial races.",
+    courseSlugs: ["state-civics-oh"],
+    lessons: ["Ohio Civics, Lesson 8 · Get involved where you live in Ohio"],
+  },
+
+  // ── State civics: Georgia (state-civics-ga was written FROM Georgia's own sources) ──
+  // NOTE: like Ohio, Georgia's high-school American Government/Civics standards NAME Georgia's own
+  // government — SSCG17 "the organization and powers of state and local government described in the
+  // Georgia Constitution" — so the Georgia flagship's structure lessons have a genuine home. The
+  // catch Georgia's own standard writes in: SSCG17e names "the initiative, referendum, and recall"
+  // as citizen limitations on government, and the honest Georgia answer the flagship teaches is that
+  // Georgia has NO statewide citizen initiative — change runs through the legislature, then the voters.
+  {
+    id: "civics.ga-constitution-no-initiative",
+    claim: "Teaches Georgia's 1983 constitution and why Georgia has NO statewide citizen initiative — a constitutional amendment is proposed only by a two-thirds vote of each house of the General Assembly (or a constitutional convention) and then ratified by the voters, never by citizen petition.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: [
+      "Georgia Civics, Lesson 1 · Georgia's constitution: the 1983 rulebook, and no citizen initiative",
+      "Georgia Civics, Lesson 7 · Why Georgia has no ballot initiative, and how change actually happens",
+    ],
+  },
+  {
+    id: "civics.ga-three-branches",
+    claim: "Teaches Georgia's three branches: a 180-member House and 56-member Senate, and a plural executive whose Lieutenant Governor is elected independently of the Governor (can be from a different party) and presides over the State Senate, alongside a separately-elected Attorney General, Secretary of State, and several commissioners.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: ["Georgia Civics, Lesson 2 · The three branches, and Georgia's plural executive"],
+  },
+  {
+    id: "civics.ga-courts",
+    claim: "Teaches Georgia's appellate courts — a nine-justice Supreme Court and a fifteen-judge Court of Appeals — chosen in NONPARTISAN statewide elections to six-year terms, with the Governor filling mid-term vacancies.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: ["Georgia Civics, Lesson 3 · Georgia's courts: nonpartisan elections for the appellate bench"],
+  },
+  {
+    id: "civics.ga-bill-process",
+    claim: "Teaches how a bill becomes a Georgia law — including the constitutional-majority floor vote and the two-thirds veto override — and that a constitutional amendment skips the Governor's desk and goes straight to the voters.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: ["Georgia Civics, Lesson 4 · How a bill becomes a Georgia law"],
+  },
+  {
+    id: "civics.ga-local-government",
+    claim: "Teaches Georgia local government as Georgia's: 159 counties (the second-most of any state, after Texas), home rule, consolidated city-county governments like Columbus-Muscogee and Athens-Clarke, and NO townships.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: [
+      "Georgia Civics, Lesson 5 · Local government in Georgia: 159 counties (2nd-most), home rule, NO townships",
+      "Georgia Civics, Lesson 8 · Get involved where you live in Georgia",
+    ],
+  },
+  {
+    id: "civics.ga-elections",
+    claim: "Teaches Georgia's election specifics: photo voter ID, in-person early (advance) voting, no-excuse absentee-by-mail with the SB 202 (2021) changes, and the distinctive majority-vote RUNOFF that sends the top two candidates to a second election when no one wins an outright majority.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: [
+      "Georgia Civics, Lesson 6 · Elections in Georgia: photo ID, early voting, absentee-by-mail, and the majority runoff",
+    ],
+  },
+  {
+    id: "civics.ga-get-involved",
+    claim: "Teaches getting involved where you live, Georgia edition — because Georgia has no citizen initiative, persuading legislators is the key lever, alongside county commissions and city councils, the nonpartisan judicial races, and coming back to vote the runoff.",
+    courseSlugs: ["state-civics-ga"],
+    lessons: ["Georgia Civics, Lesson 8 · Get involved where you live in Georgia"],
+  },
+  // ── State civics: Illinois (state-civics-il was written FROM Illinois's own sources) ──
+  // NOTE: Illinois's high-school Social Science Standards (2017) are DISCIPLINARY-CONCEPT
+  // standards (SS.CV.1-10), not course benchmarks — they name "constitutions", "institutions",
+  // "elections", and "participation" in the abstract rather than any state's structure. So the
+  // Illinois flagship's Illinois-specific lessons map onto the civics-institution and
+  // participation concept standards (SS.CV.1, SS.CV.2, SS.CV.3), honestly as partial where the
+  // standard reaches past what one state's structure covers. See data/il.ts.
+  {
+    id: "civics.il-state-structure",
+    claim: "Teaches Illinois's modern Constitution of 1970 (in effect July 1, 1971); its plural executive of six separately elected statewide officers — uniquely BOTH a Comptroller and a Treasurer, plus a Governor and Lieutenant Governor who since 2014 run on a joint ticket; a General Assembly of 118 representatives and 59 senators; and the Governor's amendatory and line-item vetoes with a three-fifths override.",
+    courseSlugs: ["state-civics-il"],
+    lessons: [
+      "Illinois Civics, Lesson 1 · Illinois's modern Constitution of 1970",
+      "Illinois Civics, Lesson 2 · Illinois's plural executive: six statewide officers",
+      "Illinois Civics, Lesson 3 · The General Assembly and the partisan-elected Supreme Court",
+    ],
+  },
+  {
+    id: "civics.il-courts",
+    claim: "Teaches Illinois's openly PARTISAN elected judiciary: a seven-justice Supreme Court elected from judicial districts (three from Cook County) to 10-year terms, then kept by a nonpartisan retention vote needing 60% to stay, with appellate and circuit judges elected the same way.",
+    courseSlugs: ["state-civics-il"],
+    lessons: ["Illinois Civics, Lesson 3 · The General Assembly and the partisan-elected Supreme Court"],
+  },
+  {
+    id: "civics.il-initiative",
+    claim: "Teaches Illinois's uniquely NARROW citizen initiative — usable only to amend the Legislative Article (the structure of the General Assembly), not ordinary laws or other amendments — and its model case, the 1980 Cutback Amendment that shrank the House from 177 to 118 and ended cumulative voting in multi-member districts.",
+    courseSlugs: ["state-civics-il"],
+    lessons: ["Illinois Civics, Lesson 4 · The limited citizen initiative and the 1980 Cutback Amendment"],
+  },
+  {
+    id: "civics.il-home-rule",
+    claim: "Teaches Illinois as one of the strongest HOME-RULE states — the deliberate opposite of Dillon's Rule, where units over 25,000 people are automatically home rule and start with broad power unless the state limits them — across 102 counties, including a home-rule Cook County, plus townships and among the most special districts of any state.",
+    courseSlugs: ["state-civics-il"],
+    lessons: ["Illinois Civics, Lesson 5 · Home rule and local government (the opposite of Dillon's Rule)"],
+  },
+  {
+    id: "civics.il-elections",
+    claim: "Teaches Illinois's expanded voter access — same-day (Election-Day) registration, automatic registration, no-excuse vote-by-mail with a permanent list, early voting, and online registration — administered locally by county clerks and some city election boards, with a standing flag to confirm current rules at elections.il.gov.",
+    courseSlugs: ["state-civics-il"],
+    lessons: ["Illinois Civics, Lesson 6 · Elections and how to take part"],
+  },
+  {
+    id: "civics.il-get-involved",
+    claim: "Teaches getting involved where you live, Illinois edition — registering and voting (even on Election Day), showing up at home-rule local meetings, contacting your Springfield legislators, using the state's one narrow initiative lever, and running for local office.",
+    courseSlugs: ["state-civics-il"],
+    lessons: ["Illinois Civics, Lesson 6 · Elections and how to take part"],
+  },
+
+  // ── State civics: Michigan (state-civics-mi was written FROM Michigan's own sources) ──
+  // NOTE: Michigan's 2019 Social Studies Standards DO include a High School Civics course with a
+  // dedicated "Structure and Functions of State, Local, and Tribal Governments" cluster (C3.2),
+  // so unlike Illinois's abstract concept standards, the Michigan flagship's Michigan-structure
+  // lessons have a genuine home: C3.2.3 (how state/local governments are organized) and C3.2.6
+  // (referendums, initiatives, and recall) are near-1:1. See data/mi.ts.
+  {
+    id: "civics.mi-state-structure",
+    claim: "Teaches Michigan's Constitution of 1963 (effective January 1, 1964); a Legislature of 38 senators (4-year terms) and 110 representatives (2-year terms) under the 12-year combined term limit of Proposal 1 of 2022; an executive of a Governor and joint-ticket Lieutenant Governor, a separately elected Secretary of State and Attorney General, and a Governor-appointed Treasurer; how a bill becomes a Michigan law; and the line-item veto with a two-thirds override.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: [
+      "Michigan Civics, Lesson 1 · Michigan's Constitution of 1963 and its direct democracy",
+      "Michigan Civics, Lesson 2 · The three branches of Michigan government",
+      "Michigan Civics, Lesson 4 · How a bill becomes a Michigan law",
+    ],
+  },
+  {
+    id: "civics.mi-courts",
+    claim: "Teaches Michigan's distinctive judicial selection: a seven-justice Supreme Court elected to 8-year terms on a NONPARTISAN ballot, yet nominated by the political parties at their conventions — a 'partisan nomination, nonpartisan election' hybrid — with nonpartisan-ballot Court of Appeals and trial judges and gubernatorial appointment to fill mid-term vacancies.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: ["Michigan Civics, Lesson 3 · How Michigan chooses its judges (the nonpartisan-ballot quirk)"],
+  },
+  {
+    id: "civics.mi-redistricting",
+    claim: "Teaches Michigan's Independent Citizens Redistricting Commission — created by Proposal 2 of 2018 to draw the state House, state Senate, and U.S. Congressional maps — a body of 13 randomly selected citizens (four Democratic, four Republican, five affiliated with neither) that excludes politicians and lobbyists and works in public, a national first that moved map-drawing out of the Legislature.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: ["Michigan Civics, Lesson 5 · Redistricting: Michigan's Independent Citizens Redistricting Commission"],
+  },
+  {
+    id: "civics.mi-direct-democracy",
+    claim: "Teaches Michigan's strong direct democracy — the constitutional initiative (including the quirk that a citizen 'initiated law' goes to the Legislature first, which may enact it as written before it would reach the ballot), the referendum to reject a statute, and the recall of most elected officials — as tools that make the voters themselves a lawmaking body.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: [
+      "Michigan Civics, Lesson 1 · Michigan's Constitution of 1963 and its direct democracy",
+      "Michigan Civics, Lesson 4 · How a bill becomes a Michigan law",
+      "Michigan Civics, Lesson 8 · How to take part where you live",
+    ],
+  },
+  {
+    id: "civics.mi-elections",
+    claim: "Teaches Michigan's voter-approved election access: no-reason absentee voting and automatic and same-day registration (Proposal 3 of 2018), and nine days of early in-person voting, state-funded absentee postage, secure drop boxes, and a photo-ID-or-affidavit rule (Proposal 2 of 2022), run by more than 1,500 local city and township clerks, with a standing flag to confirm current rules at michigan.gov/sos.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: ["Michigan Civics, Lesson 6 · Elections and voting in Michigan"],
+  },
+  {
+    id: "civics.mi-local-government",
+    claim: "Teaches Michigan local government as Michigan's: 83 counties run by an elected Board of Commissioners with separately elected sheriff, clerk, treasurer, prosecutor, and register of deeds; strong general-law and charter townships governing every area outside a city; home-rule cities under the Home Rule City Act of 1909; villages; and special and school districts.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: ["Michigan Civics, Lesson 7 · Local government: counties, cities, villages, and townships"],
+  },
+  {
+    id: "civics.mi-get-involved",
+    claim: "Teaches getting involved where you live, Michigan edition — registering and voting with the state's full menu of options, contacting your legislators while bills are in committee, showing up at local boards, using citizen initiative/referendum/recall petitions, applying to serve on boards (including the redistricting commission), and running for local office.",
+    courseSlugs: ["state-civics-mi"],
+    lessons: ["Michigan Civics, Lesson 8 · How to take part where you live"],
+  },
+  // ── State civics: North Carolina (state-civics-nc was written FROM North Carolina's own sources) ──
+  // NOTE: North Carolina's high-school civics anchor is the graduation-required "Founding Principles
+  // of the United States of America and North Carolina: Civic Literacy" course (NCDPI 4318), whose
+  // 2021 standards weave North Carolina explicitly through several otherwise federal-facing objectives —
+  // CL.C&G.4.1 and CL.C&G.4.3 name "the United States and North Carolina" judicial systems and
+  // constitutions, CL.C&G.2.2 / CL.C&G.2.3 reach federalism and the types of local government, and
+  // CL.C&G.3.7 reaches elections "at the national, state, and local levels" — so unlike Arkansas and
+  // California, the North Carolina flagship's structure lessons DO have a home, mapped there as partial
+  // (the North Carolina half is taught; the federal half lives in the general civics catalog).
+  {
+    id: "civics.nc-constitution",
+    claim: "Teaches North Carolina's 1971 (third) constitution and its amendment path — the General Assembly proposes by a three-fifths vote of each house, then the voters ratify — and that North Carolina has no citizen initiative.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 1 · North Carolina's 1971 constitution, and no citizen initiative",
+    ],
+  },
+  {
+    id: "civics.nc-council-of-state",
+    claim: "Teaches North Carolina's plural elected executive — the Council of State, ten separately-elected statewide officers — and a General Assembly of a 120-member House and a 50-member Senate.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: ["North Carolina Civics, Lesson 2 · The three branches, and the Council of State"],
+  },
+  {
+    id: "civics.nc-courts",
+    claim: "Teaches that North Carolina elects its appellate judges (the Supreme Court and the Court of Appeals) in PARTISAN statewide races to 8-year terms, not by merit selection and not in nonpartisan races.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 3 · North Carolina's courts: appellate judges elected in PARTISAN races",
+    ],
+  },
+  {
+    id: "civics.nc-local-government",
+    claim: "Teaches North Carolina local government as North Carolina's: 100 counties under elected Boards of Commissioners, limited home rule (a Dillon's Rule state), municipalities, and no townships.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 5 · Local government: 100 counties, limited home rule, no townships",
+      "North Carolina Civics, Lesson 8 · Get involved where you live in North Carolina",
+    ],
+  },
+  {
+    id: "civics.nc-elections",
+    claim: "Teaches North Carolina's election specifics: early one-stop voting with same-day registration, no-excuse absentee voting, a 25-day regular registration deadline, and the heavily-litigated photo voter-ID requirement (SB 824).",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 6 · Elections in NC: early one-stop voting, no-excuse absentee, 25-day deadline",
+      "North Carolina Civics, Lesson 7 · Photo voter ID: recently in effect after litigation",
+    ],
+  },
+  {
+    id: "civics.nc-get-involved",
+    claim: "Teaches getting involved where you live, North Carolina edition — and why the General Assembly is the main lever for changing state law (no citizen initiative and a comparatively limited veto).",
+    courseSlugs: ["state-civics-nc"],
+    lessons: ["North Carolina Civics, Lesson 8 · Get involved where you live in North Carolina"],
+  },
+
+  // ── State civics: Virginia (state-civics-va was written FROM Virginia's own sources) ──
+  // NOTE: Virginia's high-school civics anchor is the "Virginia and United States Government" course
+  // (GOVT), whose 2023 SOL reach Virginia's own government squarely through GOVT.10 ("the state and
+  // local governments as described in the Constitution of Virginia") — so, better than most, the
+  // Virginia flagship's structure lessons have a genuine home there (GOVT.10a-d, GOVT.10f), mapped
+  // full. The rest of the GOVT course is federal, mapped to the general civics catalog; data/va.ts
+  // publishes the gaps.
+  {
+    id: "civics.va-constitution",
+    claim: "Teaches Virginia's Constitution of 1971 (its seventh), the meaning of 'Commonwealth,' and its deliberately slow amendment path — passage by two separately-elected General Assemblies then a voter referendum — with no citizen initiative.",
+    courseSlugs: ["state-civics-va"],
+    lessons: [
+      "Virginia Civics, Lesson 1 · Virginia's constitution and 'the Commonwealth'",
+      "Virginia Civics, Lesson 5 · How a bill becomes a Virginia law (and why there's no citizen initiative)",
+    ],
+  },
+  {
+    id: "civics.va-three-branches",
+    claim: "Teaches Virginia's General Assembly (a 100-member House of Delegates and a 40-member Senate, the oldest continuous law-making body in the New World) and its three separately-elected statewide executives — Governor, Lieutenant Governor, and Attorney General.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 2 · The three branches of Virginia government"],
+  },
+  {
+    id: "civics.va-governor-one-term",
+    claim: "Teaches Virginia's unique rule that the Governor may not serve two consecutive terms — the only state with this bar — though a former Governor may return after sitting out.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 3 · The Governor who cannot serve two terms in a row"],
+  },
+  {
+    id: "civics.va-courts-legislature",
+    claim: "Teaches that Virginia's judges are elected by the General Assembly (the Legislature) — Supreme Court of Virginia justices to 12-year terms — one of only two states (with South Carolina) to choose judges this way.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 4 · How Virginia chooses its judges (elected by the Legislature)"],
+  },
+  {
+    id: "civics.va-bill-process",
+    claim: "Teaches how a bill becomes a Virginia law, including the Governor's distinctive power to propose amendments and send a bill back to the Assembly, and the two-thirds veto override.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 5 · How a bill becomes a Virginia law (and why there's no citizen initiative)"],
+  },
+  {
+    id: "civics.va-local-government",
+    claim: "Teaches Virginia local government as Virginia's: a Dillon's Rule state of 95 counties PLUS 38 independent cities that belong to no county (most of the nation's independent cities), with the town-versus-city distinction.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 6 · Local government: Dillon's Rule and Virginia's independent cities"],
+  },
+  {
+    id: "civics.va-elections",
+    claim: "Teaches Virginia's election specifics: odd-year statewide races (the year after each presidential election), no-excuse early voting, changing voter-ID rules, and the bipartisan Virginia Redistricting Commission.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 7 · Elections, redistricting, and how to take part"],
+  },
+  {
+    id: "civics.va-get-involved",
+    claim: "Teaches getting involved where you live, Virginia edition — the short Richmond session, county boards of supervisors, city councils, and Dillon's-Rule advocacy at both the local and state levels.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 7 · Elections, redistricting, and how to take part"],
+  },
+  // ── State civics: Washington (state-civics-wa was written FROM Washington's own sources) ──
+  // Unlike California or Arkansas, Washington's HIGH-SCHOOL Civics standard C2.11-12.2 explicitly
+  // names "Washington state" constitutions, so the flagship's Washington-structure lessons have a
+  // genuine state code to cite (see data/wa.ts). Washington is a strong direct-democracy, all-mail,
+  // top-two-primary, plural-executive state; the flagship teaches all four.
+  {
+    id: "civics.wa-constitution-direct-democracy",
+    claim: "Teaches Washington's Constitution of 1889 and its strong direct democracy — the Initiative to the People and the Initiative to the Legislature (a distinction unique to a handful of states), the referendum, and the recall — as the through-line that makes voters a lawmaking body.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: [
+      "Washington Civics, Lesson 1 · Washington's Constitution of 1889 and its direct democracy",
+    ],
+  },
+  {
+    id: "civics.wa-plural-executive",
+    claim: "Teaches Washington's 'plural' executive: nine separately elected statewide officials (Governor, Lieutenant Governor, Secretary of State, Attorney General, Treasurer, Auditor, Superintendent of Public Instruction, Commissioner of Public Lands, and Insurance Commissioner), so executive power is divided rather than concentrated in the Governor.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: [
+      "Washington Civics, Lesson 2 · Washington's 'plural' executive: nine elected statewide officials",
+    ],
+  },
+  {
+    id: "civics.wa-courts-legislature",
+    claim: "Teaches Washington's nonpartisan elected judiciary (a nine-justice Supreme Court elected to 6-year terms) and its Legislature — 49 senators and 98 representatives from 49 shared districts, each electing one senator and two representatives — plus the Governor's line-item veto and the two-thirds override.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: ["Washington Civics, Lesson 3 · The courts and the Legislature"],
+  },
+  {
+    id: "civics.wa-bill-process",
+    claim: "Teaches Washington's two roads to law: a bill through the Legislature, or the voters directly via an Initiative to the People, an Initiative to the Legislature, or a referendum.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: ["Washington Civics, Lesson 4 · How a bill becomes a Washington law"],
+  },
+  // NOTE: Washington's all-mail voting and top-two primary (flagship Lesson 5) are the state's most
+  // distinctive civics content, but Washington's HS Civics standards have no discrete
+  // election-administration standard, so — like the Arkansas/California flagships' uncited structure
+  // — that lesson carries NO claim here; data/wa.ts publishes the gap in its notClaimed list.
+  {
+    id: "civics.wa-local-and-taxes",
+    claim: "Teaches Washington's local government (39 counties, home-rule charter counties and code cities, special districts) and its distinctive, contested tax structure (no personal state income tax under the constitution's uniformity clause; the 2021 capital-gains tax upheld in 2023), flagging the tax question as actively litigated.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: ["Washington Civics, Lesson 6 · Taxes, local government, and how to take part"],
+  },
+  {
+    id: "civics.wa-get-involved",
+    claim: "Teaches taking part in Washington: voting the ballot mailed to you, using the state's unusually open initiative and referendum on-ramps, showing up at county/city/school-board/port-district meetings, contacting your one senator and two representatives, and running locally.",
+    courseSlugs: ["state-civics-wa"],
+    lessons: ["Washington Civics, Lesson 6 · Taxes, local government, and how to take part"],
+  },
+
+  // ── State civics: New Jersey (state-civics-nj was written FROM New Jersey's own sources) ──
+  // Unlike California or Arkansas, New Jersey's 2020 Social Studies standards NAME the New Jersey
+  // Constitution (of 1776 and of 1947), so the flagship's constitutional-history lessons have a
+  // genuine state code to cite (6.1.12.CivicsPI.2.a and .13.a — see data/nj.ts). New Jersey's
+  // signature is a deliberately STRONG governor and the ABSENCE of direct democracy.
+  {
+    id: "civics.nj-constitution",
+    claim: "Teaches New Jersey's Constitution of 1947 — its third, after 1776 and 1844 — whose signature achievement was to streamline and strengthen the executive branch, the through-line of New Jersey civics.",
+    courseSlugs: ["state-civics-nj"],
+    lessons: ["New Jersey Civics, Lesson 1 · New Jersey's Constitution of 1947"],
+  },
+  {
+    id: "civics.nj-strong-governor",
+    claim: "Teaches why New Jersey's Governor is considered one of the strongest in the nation — the Governor APPOINTS the Attorney General, Secretary of State, Treasurer, and most top officials (with Senate confirmation) rather than voters electing them — and why New Jersey had no Lieutenant Governor until 2010 (now a joint ticket).",
+    courseSlugs: ["state-civics-nj"],
+    lessons: [
+      "New Jersey Civics, Lesson 2 · New Jersey's powerful Governor (and the 2010 Lieutenant Governor)",
+    ],
+  },
+  {
+    id: "civics.nj-legislature-courts",
+    claim: "Teaches New Jersey's Legislature (40 senators and 80 Assembly members from 40 shared districts, each electing one senator and two Assembly members, on the '2-year, 4-year, 4-year' Senate cycle) and its APPOINTED judiciary — Governor nominates, Senate confirms, an initial 7-year term then tenure to age 70 — with the seven-member Supreme Court and the 'senatorial courtesy' custom.",
+    courseSlugs: ["state-civics-nj"],
+    lessons: ["New Jersey Civics, Lesson 3 · The Legislature and the appointed judiciary"],
+  },
+  // NOTE: New Jersey's state lawmaking process and no-initiative rule (flagship Lesson 4) and its
+  // 21-county / Faulkner-Act home-rule structure (Lesson 5) are taught, but New Jersey's 2020
+  // Social Studies standards have no state-lawmaking or local-government-structure code at grade 12,
+  // so — like the Arkansas/California flagships' uncited structure — those lessons carry NO claim
+  // here; data/nj.ts publishes the gap in its notClaimed list.
+  {
+    id: "civics.nj-elections-involved",
+    claim: "Teaches New Jersey's odd-year gubernatorial elections (like Virginia, separate from the presidential cycle), its expanded access (in-person early voting added 2021 alongside vote-by-mail), county-administered rules, and how to take part where you live.",
+    courseSlugs: ["state-civics-nj"],
+    lessons: ["New Jersey Civics, Lesson 6 · Elections and how to take part"],
+  },
+  // ── State civics: Massachusetts (state-civics-ma was written FROM Massachusetts's own sources) ──
+  // NOTE: Massachusetts's 2018 History and Social Science Framework is one of the strongest in the
+  // nation for reaching a state's OWN government: the grade 8 Civics course (Topic 6) and the US
+  // Government and Politics elective (Topic 2) name the "Massachusetts Constitution," the
+  // "Commonwealth of Massachusetts," the General Court, the Supreme Judicial Court, and open town
+  // meeting EXPLICITLY, so the flagship's Massachusetts-structure lessons have genuine codes to
+  // cite. But the flagship's most distinctive facts — the elected Governor's Council's confirmation
+  // role, the appoint-and-serve-to-70 judiciary with no judicial elections, the INDIRECT initiative
+  // and the right of free petition, the 2022 VOTES Act, and the counties whose governments were
+  // abolished around 1997–2000 — have no Massachusetts-specific code, and data/ma.ts publishes that
+  // gap in its notClaimed list.
+  {
+    id: "civics.ma-constitution",
+    claim:
+      "Teaches Massachusetts's Constitution of 1780 — the oldest functioning written constitution in the world, principally drafted by John Adams and still in force — and that the Commonwealth's own constitution (with its Article I Declaration of Rights) sits alongside the U.S. Constitution as a source of powers and rights.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 1 · The Constitution of 1780, the world's oldest functioning one",
+    ],
+  },
+  {
+    id: "civics.ma-state-structure",
+    claim:
+      "Teaches Massachusetts's three branches as Massachusetts's: the bicameral General Court (a 160-member House and a 40-member Senate), a plural executive (a joint-ticket Governor and Lieutenant Governor with a separately elected Attorney General, Secretary of the Commonwealth, Treasurer, and Auditor, plus the elected Governor's Council), the two-thirds veto override, and the Supreme Judicial Court.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 2 · The three branches and the 'General Court'",
+      "Massachusetts Civics, Lesson 3 · The Governor's Council and how Massachusetts picks judges",
+    ],
+  },
+  {
+    id: "civics.ma-courts-appointed",
+    claim:
+      "Teaches Massachusetts's distinctive judicial selection: the Governor nominates, the elected eight-member Governor's Council confirms, and a judge then serves until mandatory retirement at age 70 — with no judicial elections and no fixed re-appointment.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 3 · The Governor's Council and how Massachusetts picks judges",
+    ],
+  },
+  {
+    id: "civics.ma-local-government",
+    claim:
+      "Teaches Massachusetts local government as Massachusetts's: the town-meeting tradition (open town meeting, where any registered voter votes directly on the town budget and bylaws), strong home rule, cities and towns, and the state's 14 counties — several of whose county governments were abolished around 1997–2000.",
+    courseSlugs: ["state-civics-ma"],
+    lessons: [
+      "Massachusetts Civics, Lesson 5 · Local government: towns, cities, and Massachusetts's shrinking counties",
+      "Massachusetts Civics, Lesson 6 · Elections and how to take part",
+    ],
+  },
+
+  // ── State civics: Tennessee (state-civics-tn was written FROM Tennessee's own sources) ──
+  // NOTE: Tennessee's 2019 Academic Standards for Social Studies include a dedicated "Tennessee
+  // State and Local Government" strand in the required United States Government and Civics course
+  // (GC.28–GC.30), so the flagship's Tennessee-structure lessons have genuine codes to cite. But
+  // the flagship's most distinctive facts — the Attorney General appointed by the state Supreme
+  // Court (unique in the nation), the Senate Speaker who holds the title "Lieutenant Governor," the
+  // Secretary of State/Treasurer/Comptroller elected by the Legislature, the weak simple-majority
+  // veto override, the "Tennessee Plan" judiciary, the ABSENCE of a citizen initiative, and
+  // Tennessee's photo-ID / excuse-required-absentee voting rules — are not separately coded, so
+  // data/tn.ts publishes that gap in its notClaimed list.
+  {
+    id: "civics.tn-state-structure",
+    claim:
+      "Teaches Tennessee's three branches as Tennessee's: the General Assembly (a 99-member House and a 33-member Senate); a highly unusual executive in which the Governor is the only statewide-elected official, the Senate Speaker holds the title “Lieutenant Governor,” the Secretary of State, Treasurer, and Comptroller are elected by the Legislature, and — uniquely in the nation — the Attorney General is appointed by the state Supreme Court; the weak simple-majority veto override; and the “Tennessee Plan” appointment-then-retention judiciary.",
+    courseSlugs: ["state-civics-tn"],
+    lessons: [
+      "Tennessee Civics, Lesson 1 · Tennessee's Constitution of 1870 (and its hard-to-amend rule)",
+      "Tennessee Civics, Lesson 2 · Tennessee's unusual executive: one elected officer, and a Speaker called 'Lieutenant Governor'",
+      "Tennessee Civics, Lesson 3 · The General Assembly and the 'Tennessee Plan' for judges",
+    ],
+  },
+  {
+    id: "civics.tn-local-government",
+    claim:
+      "Teaches Tennessee local government as Tennessee's: 95 counties under an elected county commission and a county mayor, cities and towns with optional home rule, and the consolidated metropolitan city-county governments (most famously Metro Nashville-Davidson County).",
+    courseSlugs: ["state-civics-tn"],
+    lessons: [
+      "Tennessee Civics, Lesson 5 · Local government: 95 counties, cities, and metro government",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
