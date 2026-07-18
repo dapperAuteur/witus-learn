@@ -1214,6 +1214,31 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Arizona is one new data file + regenerate, **zero hand-edited code change**. 18 isolation tests
   incl. claims-fully-wired and filter-never-readmits proofs. **No migration, no seed.**
 
+- 🔧 **North Carolina + Virginia mapped — both fully bespoke** (\`feat/standards-nc-va\`) —
+  \`/academic-standards?state=NC\` and \`?state=VA\` flip from "not mapped yet" to real pages: two new
+  data files + \`pnpm gen:standards\`, zero code change. **North Carolina: 31 standards (7 full, 24
+  partial)** — the NC Standard Course of Study is North Carolina's OWN framework (not Common Core, not
+  NGSS). The one framework is the **graduation-required "Founding Principles of the United States of
+  America and North Carolina: Civic Literacy"** course (NCDPI 4318, approved Feb 4 2021; CL.* codes
+  across Behavioral Sciences, Civics & Government, Economics, Geography, History, and a content-neutral
+  Inquiry strand). CL.C&G.4.1/4.3 name "the United States **and North Carolina**" judicial systems and
+  constitutions, and CL.C&G.2.2/2.3/3.7 reach federalism, local government, and elections — so the
+  \`state-civics-nc\` flagship has a genuine home (mapped partial). **Virginia: 38 standards (15 full, 23
+  partial)** — the Virginia SOL are famously Virginia's OWN (never Common Core / never NGSS). The one
+  framework is **"Virginia and United States Government" (2023 SOL, Board-approved 4/20/2023; Skills +
+  GOVT.1–GOVT.14)**; **GOVT.10** ("the state and local governments as described in the Constitution of
+  Virginia") is where a state SOL names Virginia's structure squarely, so \`state-civics-va\` maps
+  **FULL** there (the one-consecutive-term governor, legislature-elected judges, 95 counties + 38
+  independent cities). Both DOEs block tooling (dpi.nc.gov/files.nc.gov 403; VDOE portal refused), so
+  each was transcribed from a **byte-faithful mirror of the DOE's own titled PDF** (App State for NC;
+  the Board-approved 4/20/23 doc for VA), \`sourceUrl\` set to the canonical DOE page. Honest gaps
+  published per state: NC's Civic Literacy standards have **no lawmaking-process objective**, so the
+  flagship's signature bill-becomes-law lesson (veto only since 1997, 3/5 override) has no code to cite;
+  VA's GOVT.3g ("the amendment process") is a real match but under the isolation suite's ~40-char floor,
+  so VA's amendment path is cited via GOVT.10b/1c; **both states' ELA and Science standards were not
+  retrievable from an acceptable source this pass** (fetch-or-don't-cite). **NEXT_UP advanced OH/GA →
+  WA/NJ** (⚠️ merge-coordinates with the other in-flight standards branches, which also edit that line).
+  **No migration, no seed.**
 - 🔧 **Arizona + Arkansas mapped — states #3 and #4, proving the concept-hub price**
   (\`feat/standards-az-ar\`) — \`/academic-standards?state=AZ\` and \`?state=AR\` now render real pages: two new
   data files + \`pnpm gen:standards\`, zero code change, exactly as the model promised. **Arizona: 46

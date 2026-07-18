@@ -76,6 +76,12 @@ export const NEXT_UP: StateCode[] = ["MI", "IL"];
 // matrix branches also edit this line; resolve the conflict to a value that names NO already-mapped
 // state (NC/VA below are safe against every state mapped across the in-flight branches).
 export const NEXT_UP: StateCode[] = ["NC", "VA"];
+// This branch (feat/standards-nc-va) maps North Carolina and Virginia, so the queue advances past
+// them. NEXT_UP must never name a state that mappedStates() already contains — the isolation suite
+// enforces it. NOTE for the merge: several parallel standards branches also edit this one line
+// (OH/GA, IL/MI, etc.); resolve the conflict to a value that names two states NOT in
+// {AR,AZ,CA,DC,FL,IN,NY,PA,TX,OH,GA,IL,MI,NC,VA} — WA/NJ below, or BAM's preferred next two.
+export const NEXT_UP: StateCode[] = ["WA", "NJ"];
 
 export function jurisdictionName(code: StateCode): string {
   return US_JURISDICTIONS.find((j) => j.code === code)?.name ?? code;

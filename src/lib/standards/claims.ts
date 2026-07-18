@@ -1219,6 +1219,119 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     claim: "Teaches getting involved where you live, Michigan edition — registering and voting with the state's full menu of options, contacting your legislators while bills are in committee, showing up at local boards, using citizen initiative/referendum/recall petitions, applying to serve on boards (including the redistricting commission), and running for local office.",
     courseSlugs: ["state-civics-mi"],
     lessons: ["Michigan Civics, Lesson 8 · How to take part where you live"],
+  // ── State civics: North Carolina (state-civics-nc was written FROM North Carolina's own sources) ──
+  // NOTE: North Carolina's high-school civics anchor is the graduation-required "Founding Principles
+  // of the United States of America and North Carolina: Civic Literacy" course (NCDPI 4318), whose
+  // 2021 standards weave North Carolina explicitly through several otherwise federal-facing objectives —
+  // CL.C&G.4.1 and CL.C&G.4.3 name "the United States and North Carolina" judicial systems and
+  // constitutions, CL.C&G.2.2 / CL.C&G.2.3 reach federalism and the types of local government, and
+  // CL.C&G.3.7 reaches elections "at the national, state, and local levels" — so unlike Arkansas and
+  // California, the North Carolina flagship's structure lessons DO have a home, mapped there as partial
+  // (the North Carolina half is taught; the federal half lives in the general civics catalog).
+  {
+    id: "civics.nc-constitution",
+    claim: "Teaches North Carolina's 1971 (third) constitution and its amendment path — the General Assembly proposes by a three-fifths vote of each house, then the voters ratify — and that North Carolina has no citizen initiative.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 1 · North Carolina's 1971 constitution, and no citizen initiative",
+    ],
+  },
+  {
+    id: "civics.nc-council-of-state",
+    claim: "Teaches North Carolina's plural elected executive — the Council of State, ten separately-elected statewide officers — and a General Assembly of a 120-member House and a 50-member Senate.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: ["North Carolina Civics, Lesson 2 · The three branches, and the Council of State"],
+  },
+  {
+    id: "civics.nc-courts",
+    claim: "Teaches that North Carolina elects its appellate judges (the Supreme Court and the Court of Appeals) in PARTISAN statewide races to 8-year terms, not by merit selection and not in nonpartisan races.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 3 · North Carolina's courts: appellate judges elected in PARTISAN races",
+    ],
+  },
+  {
+    id: "civics.nc-local-government",
+    claim: "Teaches North Carolina local government as North Carolina's: 100 counties under elected Boards of Commissioners, limited home rule (a Dillon's Rule state), municipalities, and no townships.",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 5 · Local government: 100 counties, limited home rule, no townships",
+      "North Carolina Civics, Lesson 8 · Get involved where you live in North Carolina",
+    ],
+  },
+  {
+    id: "civics.nc-elections",
+    claim: "Teaches North Carolina's election specifics: early one-stop voting with same-day registration, no-excuse absentee voting, a 25-day regular registration deadline, and the heavily-litigated photo voter-ID requirement (SB 824).",
+    courseSlugs: ["state-civics-nc"],
+    lessons: [
+      "North Carolina Civics, Lesson 6 · Elections in NC: early one-stop voting, no-excuse absentee, 25-day deadline",
+      "North Carolina Civics, Lesson 7 · Photo voter ID: recently in effect after litigation",
+    ],
+  },
+  {
+    id: "civics.nc-get-involved",
+    claim: "Teaches getting involved where you live, North Carolina edition — and why the General Assembly is the main lever for changing state law (no citizen initiative and a comparatively limited veto).",
+    courseSlugs: ["state-civics-nc"],
+    lessons: ["North Carolina Civics, Lesson 8 · Get involved where you live in North Carolina"],
+  },
+
+  // ── State civics: Virginia (state-civics-va was written FROM Virginia's own sources) ──
+  // NOTE: Virginia's high-school civics anchor is the "Virginia and United States Government" course
+  // (GOVT), whose 2023 SOL reach Virginia's own government squarely through GOVT.10 ("the state and
+  // local governments as described in the Constitution of Virginia") — so, better than most, the
+  // Virginia flagship's structure lessons have a genuine home there (GOVT.10a-d, GOVT.10f), mapped
+  // full. The rest of the GOVT course is federal, mapped to the general civics catalog; data/va.ts
+  // publishes the gaps.
+  {
+    id: "civics.va-constitution",
+    claim: "Teaches Virginia's Constitution of 1971 (its seventh), the meaning of 'Commonwealth,' and its deliberately slow amendment path — passage by two separately-elected General Assemblies then a voter referendum — with no citizen initiative.",
+    courseSlugs: ["state-civics-va"],
+    lessons: [
+      "Virginia Civics, Lesson 1 · Virginia's constitution and 'the Commonwealth'",
+      "Virginia Civics, Lesson 5 · How a bill becomes a Virginia law (and why there's no citizen initiative)",
+    ],
+  },
+  {
+    id: "civics.va-three-branches",
+    claim: "Teaches Virginia's General Assembly (a 100-member House of Delegates and a 40-member Senate, the oldest continuous law-making body in the New World) and its three separately-elected statewide executives — Governor, Lieutenant Governor, and Attorney General.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 2 · The three branches of Virginia government"],
+  },
+  {
+    id: "civics.va-governor-one-term",
+    claim: "Teaches Virginia's unique rule that the Governor may not serve two consecutive terms — the only state with this bar — though a former Governor may return after sitting out.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 3 · The Governor who cannot serve two terms in a row"],
+  },
+  {
+    id: "civics.va-courts-legislature",
+    claim: "Teaches that Virginia's judges are elected by the General Assembly (the Legislature) — Supreme Court of Virginia justices to 12-year terms — one of only two states (with South Carolina) to choose judges this way.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 4 · How Virginia chooses its judges (elected by the Legislature)"],
+  },
+  {
+    id: "civics.va-bill-process",
+    claim: "Teaches how a bill becomes a Virginia law, including the Governor's distinctive power to propose amendments and send a bill back to the Assembly, and the two-thirds veto override.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 5 · How a bill becomes a Virginia law (and why there's no citizen initiative)"],
+  },
+  {
+    id: "civics.va-local-government",
+    claim: "Teaches Virginia local government as Virginia's: a Dillon's Rule state of 95 counties PLUS 38 independent cities that belong to no county (most of the nation's independent cities), with the town-versus-city distinction.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 6 · Local government: Dillon's Rule and Virginia's independent cities"],
+  },
+  {
+    id: "civics.va-elections",
+    claim: "Teaches Virginia's election specifics: odd-year statewide races (the year after each presidential election), no-excuse early voting, changing voter-ID rules, and the bipartisan Virginia Redistricting Commission.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 7 · Elections, redistricting, and how to take part"],
+  },
+  {
+    id: "civics.va-get-involved",
+    claim: "Teaches getting involved where you live, Virginia edition — the short Richmond session, county boards of supervisors, city councils, and Dillon's-Rule advocacy at both the local and state levels.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 7 · Elections, redistricting, and how to take part"],
   },
 
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
