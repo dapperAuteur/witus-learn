@@ -683,5 +683,256 @@ One thing the debate does **not** touch, and the reason this course refuses to l
         ],
       },
     },
+    // ──────────────── SECTION 3 · THE FIELDS: INDIGO AND CATTLE ────────────────
+    {
+      slug: "ttc-indigo",
+      title: "8 · Indigo: the blue that needed African knowledge",
+      section: "Section 3 · The fields: indigo and cattle",
+      body: `After rice, South Carolina's second great money crop was **indigo**, the plant that makes a deep blue dye. In the 1700s, before synthetic dyes existed, blue was expensive, and European textile mills wanted all the indigo they could get. For a few decades indigo made Carolina planters a second fortune.
+
+Here is the thing about indigo: growing the plant is the easy part. Turning it into dye is chemistry, and it is unforgiving. You cut the plants and pack them into vats of water to ferment. You have to judge, by smell and color and feel, the exact moment the fermentation is ready, then move the liquid to a second vat and beat it with paddles to force air in so the dye forms. Then you drain, settle, and dry the blue sludge into cakes. Misjudge any step, the temperature, the timing, the beating, and the whole batch is ruined. This is expert work.
+
+The story you may have heard credits one teenager. **Eliza Lucas Pinckney**, the daughter of a planter, is often celebrated for establishing indigo as a Carolina crop in the 1740s. She was real, she was capable, and she did run the experiments. But look who is standing just outside the frame of that story.
+- By her own letters, the first person sent to teach her the process was a hired indigo maker from the Caribbean island of **Montserrat**, Nicholas Cromwell, who (she believed) deliberately spoiled the dye to protect his home island's market.
+- And the people doing the actual vat work, and carrying practical knowledge of the plant and the fermentation, were **enslaved**. The historian **Andrea Feeser** shows that many enslaved people in South Carolina came from West African and Caribbean regions where indigo was grown and dyed, and that their knowledge and labor were central to making the crop succeed (Feeser, 2013).
+
+Indigo dyeing was not new to West Africa. It was old and sophisticated there: the Yoruba resist-dyeing tradition, the famous dye pits of Kano in what is now northern Nigeria (in use since the fifteenth century), and more. West Africans knew this blue intimately. You can read about those West African craft traditions in this platform's **Africa Before Colonization** course.
+
+Now the honesty, the same discipline as the rice lesson. Making dye cakes for export is not identical to dyeing cloth, and the exact line of transmission (who taught which step to whom) is not fully documented, so we do not claim a clean, total transfer. What the record does show is this: the credited name on the Carolina indigo story is a young white woman, and beneath that name sits a stack of uncredited expertise, Caribbean and African and enslaved. The dye made the money. The people who knew the dye did not keep it.
+
+:::reveal Who usually gets credit for South Carolina indigo, and what two sources of uncredited expertise does the scholarship put beneath that name? ||| Eliza Lucas Pinckney usually gets the credit. Beneath her sit a hired Caribbean (Montserrat) indigo maker, Nicholas Cromwell, and, most importantly, the enslaved people from West African and Caribbean indigo regions whose knowledge and labor (documented by Andrea Feeser) actually made the crop work.
+
+## Sources
+- Feeser, A. (2013). *Red, white, and black make blue: Indigo in the fabric of colonial South Carolina life*. University of Georgia Press.
+- Carney, J. A., & Rosomoff, R. N. (2011). *In the shadow of slavery: Africa's botanical legacy in the Atlantic world*. University of California Press.`,
+      recallContent: [
+        {
+          prompt: "Why was making indigo dye (not just growing the plant) expert work?",
+          answer:
+            "Turning the plant into dye is an unforgiving fermentation: you ferment the cut plants in vats, judge by smell and color the exact moment to move the liquid, beat it to add air so the dye forms, then drain and dry it into cakes. A misjudgment at any step ruins the whole batch.",
+        },
+        {
+          prompt: "How does Andrea Feeser complicate the Eliza Lucas Pinckney indigo story?",
+          answer:
+            "Feeser (2013) shows that many enslaved people in South Carolina came from West African and Caribbean indigo regions, and that their knowledge and labor (along with a hired Caribbean expert) were central to the crop's success. The celebrated name sits atop uncredited enslaved and Caribbean expertise.",
+        },
+      ],
+    },
+    {
+      slug: "ttc-cattle-herding",
+      title: "9 · Cattle and the open range: a smaller, hedged claim",
+      section: "Section 3 · The fields: indigo and cattle",
+      body: `Before rice took over, colonial Carolina's first big export was not a crop at all. It was **cattle**, and hides, and salted beef, much of it shipped to feed the sugar islands of the Caribbean. Someone had to manage those herds in the open woods, and in early Carolina that someone was very often an enslaved African.
+
+Peter Wood, in *Black Majority*, pointed out that the Carolina way of running cattle looked less like English farming and more like West African herding (Wood, 1974). English husbandry fenced animals into small enclosed fields. The Carolina "cow pen" system let cattle range freely in the woods, penned them at night for protection, burned the pasture seasonally to freshen the grass, and used herders and dogs to manage the animals across large distances. Several West African societies (among them cattle-keeping peoples like the Fulbe) practiced open-range herding of exactly this kind. Wood suggested that enslaved Africans, drawing on that background, were among the **earliest American cowboys**, and he even raised the possibility that the very word "cowboy" found early use in South Carolina.
+
+This is a good place to practice a different move than the rice lesson. There the debate was loud and well documented. Here the claim is **smaller and thinner**, and the honest thing to do is to hedge it, out loud.
+- Wood himself offered the cattle-and-cowboy idea as a **suggestion**, not a proven fact. Words like "it is even possible" are doing real work in his argument, and we keep them.
+- The origins of open-range herding in the Americas are genuinely **contested**. The geographer **Terry Jordan** argued that American cattle ranching had **several** roots braided together, West African, but also Iberian (Spanish) and British Isles traditions, and that you cannot hand the whole thing to any one source (Jordan, 1993).
+- The "cowboy" etymology in particular is a plausible suggestion, not a settled fact, and this course will not upgrade it into one.
+
+So the honest statement is narrower than the exciting one, and still worth saying: enslaved Africans did much of the skilled cattle work in early Carolina, their herding methods resembled West African open-range practice more than English husbandry, and one respected historian thinks the American cowboy has partly African roots. That is a real, cited claim. "Black people invented the cowboy, full stop" is not; it flattens a contested question into a slogan, which is exactly the romantic overcorrection this course refuses. Naming the difference is the skill.
+
+:::reveal What did Peter Wood suggest about enslaved Africans, cattle, and the word "cowboy," and why does the course present it as a hedge rather than a fact? ||| Wood (1974) suggested that enslaved Africans did much of the skilled open-range cattle work in early Carolina (free grazing, night penning, seasonal burning), that this resembled West African herding more than English husbandry, and that enslaved Africans were among the earliest American cowboys, possibly even the source of the word. The course hedges it because Wood offered it as a suggestion ("it is even possible"), and the origins of American ranching are contested (Terry Jordan (1993) traces West African, Iberian, and British roots), so a flat "Africans invented the cowboy" would overstate a thin, debated claim.
+
+## Sources
+- Wood, P. H. (1974). *Black majority: Negroes in colonial South Carolina from 1670 through the Stono Rebellion*. Knopf.
+- Jordan, T. G. (1993). *North American cattle-ranching frontiers: Origins, diffusion, and differentiation*. University of New Mexico Press.`,
+      recallContent: [
+        {
+          prompt: "How did the Carolina open-range 'cow pen' system resemble West African herding more than English farming?",
+          answer:
+            "It let cattle range freely in the woods, penned them at night for protection, burned pasture seasonally to freshen the grass, and used herders and dogs across large distances, closer to West African open-range pastoralism (as among cattle-keeping peoples like the Fulbe) than to enclosed English husbandry.",
+        },
+        {
+          prompt: "Why is the cattle-and-cowboy claim a good example of hedging a thin claim?",
+          answer:
+            "Because Wood offered it as a suggestion, not proof ('it is even possible'), and the origins of American ranching are contested. Terry Jordan (1993) traced West African, Iberian, and British roots. The honest statement (enslaved Africans did skilled herding resembling West African practice, with a possibly African-rooted cowboy) is narrower than the slogan 'Africans invented the cowboy.'",
+        },
+      ],
+    },
+    {
+      slug: "ttc-quiz-fields",
+      title: "10 · Quiz: indigo and cattle",
+      section: "Section 3 · The fields: indigo and cattle",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why was turning the indigo plant into dye considered expert work?",
+            options: [
+              "The plant was hard to grow but the dye made itself",
+              "It is an unforgiving fermentation where misjudging the timing, temperature, or beating ruins the whole batch",
+              "It required no special skill",
+              "The dye was made in a single easy step",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Fermenting, judging the exact moment, beating in air, then draining and drying the dye into cakes is chemistry that fails at any misstep.",
+            sourceLessonSlug: "ttc-indigo",
+          },
+          {
+            prompt: "What was indigo's role in the colonial South Carolina economy?",
+            options: [
+              "A worthless weed",
+              "The colony's second great money crop after rice, producing a valuable blue dye for European textiles",
+              "A food staple with no export value",
+              "A crop grown only in Africa",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Before synthetic dyes, blue was expensive; for a few decades indigo made Carolina planters a second fortune.",
+            sourceLessonSlug: "ttc-indigo",
+          },
+          {
+            prompt: "Who is usually credited with establishing indigo as a South Carolina crop in the 1740s?",
+            options: ["Peter Wood", "Eliza Lucas Pinckney", "Nicholas Cromwell", "Judith Carney"],
+            correctIndex: 1,
+            explanation:
+              "Eliza Lucas Pinckney is the celebrated name, but the scholarship shows uncredited Caribbean and enslaved African expertise beneath that story.",
+            sourceLessonSlug: "ttc-indigo",
+          },
+          {
+            prompt: "According to Andrea Feeser (2013), what does the popular Eliza Lucas Pinckney story leave out?",
+            options: [
+              "That indigo was never actually grown in South Carolina",
+              "That many enslaved people came from West African and Caribbean indigo regions and their knowledge and labor were central to the crop",
+              "That Europeans invented indigo dyeing",
+              "That indigo required no labor",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Feeser documents the enslaved and Caribbean expertise (including a hired Montserrat indigo maker) beneath the credited name.",
+            sourceLessonSlug: "ttc-indigo",
+          },
+          {
+            prompt: "Indigo dyeing in West Africa was:",
+            options: [
+              "Unknown until Europeans introduced it",
+              "An old and sophisticated tradition, including the Yoruba and the centuries-old dye pits of Kano",
+              "Practiced only after the slave trade ended",
+              "A modern invention",
+            ],
+            correctIndex: 1,
+            explanation:
+              "West Africans knew indigo intimately, from Yoruba resist-dyeing to the Kano dye pits in use since the fifteenth century.",
+            sourceLessonSlug: "ttc-indigo",
+          },
+          {
+            prompt: "Why does the course NOT claim a clean, total transfer of indigo knowledge from Africa to Carolina?",
+            options: [
+              "Because West Africans knew nothing about indigo",
+              "Because making dye cakes for export differs from dyeing cloth, and the exact line of transmission is not fully documented",
+              "Because Eliza Lucas Pinckney invented indigo",
+              "Because there is no evidence enslaved people worked with indigo",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The course keeps the same discipline as the rice lesson: it credits documented enslaved expertise without overstating an undocumented one-to-one transfer.",
+            sourceLessonSlug: "ttc-indigo",
+          },
+          {
+            prompt: "What was colonial Carolina's first big export, before rice took over?",
+            options: ["Cotton", "Cattle, hides, and salted beef", "Tobacco", "Sugar"],
+            correctIndex: 1,
+            explanation:
+              "Cattle products, much of it shipped to feed the Caribbean sugar islands, came first, and enslaved Africans often managed the herds.",
+            sourceLessonSlug: "ttc-cattle-herding",
+          },
+          {
+            prompt: "How did the Carolina 'cow pen' system differ from English husbandry?",
+            options: [
+              "It fenced cattle into small enclosed fields",
+              "It let cattle range freely in the woods, penned them at night, and burned pasture seasonally, resembling West African open-range herding",
+              "It kept no cattle at all",
+              "It used only European herding dogs",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Open grazing, night penning, and seasonal burning looked more like West African pastoralism than enclosed English farming (Wood, 1974).",
+            sourceLessonSlug: "ttc-cattle-herding",
+          },
+          {
+            prompt: "What did Peter Wood suggest about the word 'cowboy'?",
+            options: [
+              "That it is definitely of English origin",
+              "That it may have found early use in South Carolina, tied to enslaved African herders, though he offered this as a suggestion",
+              "That it was invented in Hollywood",
+              "That it has no connection to Carolina",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Wood raised the cowboy idea as a possibility ('it is even possible'), not a proven fact, and the course keeps that hedge.",
+            sourceLessonSlug: "ttc-cattle-herding",
+          },
+          {
+            prompt: "What did the geographer Terry Jordan (1993) argue about the origins of American cattle ranching?",
+            options: [
+              "That it was purely West African",
+              "That it was purely English",
+              "That it had several braided roots, West African, Iberian, and British Isles, not a single source",
+              "That cattle ranching had no history worth studying",
+            ],
+            correctIndex: 2,
+            explanation:
+              "Jordan's multiple-origins argument is why the course treats the herding claim as genuinely contested.",
+            sourceLessonSlug: "ttc-cattle-herding",
+          },
+          {
+            prompt: "Why does the course hedge the cattle claim instead of stating 'Africans invented the cowboy'?",
+            options: [
+              "Because enslaved Africans did no cattle work",
+              "Because the claim is thinner and contested, and flattening it into a slogan is the romantic overcorrection the course refuses",
+              "Because Wood never studied cattle",
+              "Because the cowboy is unimportant",
+            ],
+            correctIndex: 1,
+            explanation:
+              "The honest statement (skilled enslaved herding resembling West African practice, with a possibly African-rooted cowboy) is real; the slogan overstates a debated question.",
+            sourceLessonSlug: "ttc-cattle-herding",
+          },
+          {
+            prompt: "What is the narrower, honest, cited version of the cattle claim?",
+            options: [
+              "Black people invented the cowboy, full stop",
+              "Enslaved Africans did much of the skilled cattle work in early Carolina, their methods resembled West African open-range herding, and one historian sees partly African roots for the cowboy",
+              "Europeans did all the herding",
+              "Cattle were unimportant to Carolina",
+            ],
+            correctIndex: 1,
+            explanation:
+              "That statement is documented and hedged; it credits real expertise without claiming more than the contested evidence supports.",
+            sourceLessonSlug: "ttc-cattle-herding",
+          },
+          {
+            prompt: "What common thread links the indigo and cattle lessons to the rice lesson?",
+            options: [
+              "All three prove Europeans did the real work",
+              "All three show credited names and slogans sitting atop uncredited enslaved expertise, taught with careful hedging where the record is thin",
+              "All three are fully settled with no debate",
+              "None of them involve enslaved people",
+            ],
+            correctIndex: 1,
+            explanation:
+              "Rice, indigo, and cattle all follow the pattern: real African and enslaved expertise, uncredited and unpaid, taught at the exact confidence the evidence allows.",
+            sourceLessonSlug: "ttc-indigo",
+          },
+          {
+            prompt: "In the indigo trade, who kept the wealth the dye produced?",
+            options: [
+              "The enslaved workers who knew the process",
+              "The planters and merchants, while the enslaved experts remained property",
+              "The dye was given away for free",
+              "The Caribbean expert alone",
+            ],
+            correctIndex: 1,
+            explanation:
+              "As with rice, the value flowed to the owners; the people whose knowledge made the blue kept none of it. The through-line holds.",
+            sourceLessonSlug: "ttc-indigo",
+          },
+        ],
+      },
+    },
   ],
 };
