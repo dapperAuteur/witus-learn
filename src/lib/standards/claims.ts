@@ -1698,6 +1698,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Teaches taking part where you live, Colorado edition — voting the ballot mailed to you (tracking it at sos.state.co.us), signing, circulating, or filing an initiative or referendum, showing up at county commissions, city councils, and school boards (where TABOR tax questions come to you on the ballot), testifying on a bill the GAVEL rule guarantees will be heard, and running for local office.",
     courseSlugs: ["state-civics-co"],
     lessons: ["Colorado Civics, Lesson 6 · Elections, local government, and how to take part"],
+  },
   // ── State civics: Minnesota (state-civics-mn was written FROM Minnesota's own sources) ──
   // NOTE: Minnesota's 2021 K-12 Academic Standards in Social Studies (Citizenship and Government
   // strand, high school) name Minnesota's OWN government explicitly — 9.1.4.7 ("the powers and
@@ -1825,6 +1826,142 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Teaches getting involved where you live, Wisconsin edition — registering and voting (including on Election Day, with photo ID) and not skipping the spring elections where judicial and local races are decided, using Wisconsin's strong recall, showing up at county boards and city/village/town and school-board meetings, contacting your one Assembly member and one Senator in Madison, and running for local office.",
     courseSlugs: ["state-civics-wi"],
     lessons: ["Wisconsin Civics, Lesson 5 · Local government and how to take part"],
+  },
+  // ── State civics: Connecticut (state-civics-ct was written FROM Connecticut's own sources) ──
+  // NOTE: Connecticut's Social Studies Frameworks (2015) High School Civics and Government course is
+  // built on the C3 inquiry arc, but its lead standard CIV 9–12.1 names "local, state, tribal,
+  // national, and international" institutions explicitly — so, unlike the abstract-concept states,
+  // the Connecticut flagship's own-government lessons (its abolished counties, its town-based local
+  // layer, its legislative appointment of judges) have a genuine home, mapped there. Connecticut is
+  // INHERIT-heavy: it adopted the Common Core (as the "CT Core Standards", 2010) for ELA and the
+  // NGSS (2015) for science, so data/ct.ts adopts the two shared frameworks and maps only the
+  // bespoke social-studies frame here.
+  {
+    id: "civics.ct-constitution-state",
+    claim:
+      "Teaches Connecticut as 'The Constitution State' — the Fundamental Orders of 1639 (often called one of the first written constitutions to frame a government by the consent of the governed), the modern Constitution of 1965 (following the colonial charter and an 1818 constitution), and that Connecticut became the 5th state on January 9, 1788.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 1 · 'The Constitution State' and the Fundamental Orders of 1639",
+    ],
+  },
+  {
+    id: "civics.ct-no-counties",
+    claim:
+      "Teaches Connecticut's most distinctive structural feature: it ABOLISHED county government entirely in 1960, leaving a two-tier system of the state plus 169 towns, with the eight historic counties surviving only as geographic reference areas and nine 'planning regions' serving as county-equivalents for federal statistical purposes only (never as general-purpose governments).",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 2 · Connecticut abolished county government (1960)",
+    ],
+  },
+  {
+    id: "civics.ct-executive-legislature",
+    claim:
+      "Teaches Connecticut's executive and legislative branches as Connecticut's: a plural executive (the Governor and Lieutenant Governor nominated separately but running together, plus a separately elected Secretary of the State, Treasurer, Comptroller, and Attorney General, all on 4-year terms with no term limits) and the General Assembly (a 151-member House and a 36-member Senate, both on 2-year terms), with a two-thirds veto override.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 3 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ct-courts-legislative-appointment",
+    claim:
+      "Teaches Connecticut's distinctive judicial selection: judges are NOT elected in campaigns — a Judicial Selection Commission screens candidates, the Governor nominates from that list, and the General Assembly (the Legislature) appoints the judge to an 8-year renewable term, with a 7-justice Connecticut Supreme Court at the top.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 4 · How Connecticut picks its judges, and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ct-lawmaking-no-initiative",
+    claim:
+      "Teaches how a bill becomes a Connecticut law (introduction, Connecticut's efficiency-minded joint committees shared by both chambers, floor votes, and the Governor's signature/veto/line-item veto) and that Connecticut has NO statewide citizen initiative: amendments are proposed by the General Assembly and ratified by the voters, so the citizen role is ratification, not initiation.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 4 · How Connecticut picks its judges, and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ct-towns",
+    claim:
+      "Teaches Connecticut local government as Connecticut's: because there are no counties, the TOWN is the workhorse — 169 towns, many small ones still governed by a town meeting and a board of selectmen, larger ones by mayor-council or council-manager forms, handling schools, police, roads, and zoning, with regional councils of governments coordinating some services but never acting as general-purpose governments.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 5 · Town government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ct-get-involved",
+    claim:
+      "Teaches getting involved where you live, Connecticut edition — using Connecticut's newly expanded voting access (early in-person voting used starting in 2024 and no-excuse absentee voting, administered by town registrars), showing up at the town meeting, board of selectmen or town/city council and the local board of education, contacting your one Representative and one Senator in Hartford, weighing in on amendments and constitutional conventions, and running for local office.",
+    courseSlugs: ["state-civics-ct"],
+    lessons: [
+      "Connecticut Civics, Lesson 5 · Town government and how to take part",
+    ],
+  },
+
+  // ── State civics: South Carolina (state-civics-sc was written FROM SC's own sources) ──
+  // NOTE: South Carolina's grade-12 United States Government course (SC Social Studies College- and
+  // Career-Ready Standards, 2019) reaches South Carolina's OWN government explicitly through USG.2.CC
+  // ("Explain how governments in South Carolina are organized and how they function in the American
+  // constitutional government"), so — unlike the abstract-concept states — the South Carolina
+  // flagship's structure lessons have a genuine home, mapped there. South Carolina withdrew from the
+  // Common Core (2015), so its ELA/Math are South Carolina's own (SC College- and Career-Ready
+  // Standards) and its science is South Carolina's own (2021, not NGSS); data/sc.ts publishes those
+  // as deferred gaps, not denials. South Carolina is BESPOKE-heavy.
+  {
+    id: "civics.sc-legislative-state",
+    claim:
+      "Teaches South Carolina as the classic 'legislative state': the Constitution of 1895 (its seventh) deliberately created a very weak Governor and concentrated authority in the General Assembly, a legacy still visible today — most strikingly that the Legislature elects the state's judges (South Carolina and Virginia are the only two states that do). South Carolina became the 8th state on May 23, 1788.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 1 · The 'legislative state': where the General Assembly long ruled",
+    ],
+  },
+  {
+    id: "civics.sc-plural-executive",
+    claim:
+      "Teaches South Carolina's unusually large plural executive as a legacy of the weak-governor design: voters separately elect the Governor (with the Lieutenant Governor on the same ticket since 2018), Attorney General, Secretary of State, State Treasurer, Comptroller General, Superintendent of Education, and Commissioner of Agriculture, so the Governor has historically not controlled the executive branch; recent reforms (the joint ticket, making the Adjutant General a gubernatorial appointment) have strengthened the office, with a two-thirds veto override.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 2 · A large plural executive (a legacy of the weak governor)",
+    ],
+  },
+  {
+    id: "civics.sc-legislature-elects-judges",
+    claim:
+      "Teaches South Carolina's defining judicial feature: the General Assembly ELECTS the state's judges (South Carolina and Virginia are the only two states that do) after a Judicial Merit Selection Commission screens candidates for qualifications, with a 5-justice South Carolina Supreme Court elected to 10-year terms — so South Carolina's judges answer to the legislators for re-election, not to the voters or the Governor.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 3 · How South Carolina picks its judges (the Legislature elects them)",
+    ],
+  },
+  {
+    id: "civics.sc-lawmaking-no-initiative",
+    claim:
+      "Teaches how a bill becomes a South Carolina law (introduction, committee, floor votes in both chambers — with the Senate's strong filibuster tradition — and the Governor's signature/veto/line-item veto with a two-thirds override), that the General Assembly is a 124-member House on 2-year terms and a 46-member Senate on 4-year terms, and that South Carolina has NO citizen initiative: amendments run through the General Assembly (proposed by a two-thirds vote), are ratified by voters, and then RE-RATIFIED by the Legislature, a distinctive extra step.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 4 · How a bill becomes a South Carolina law",
+    ],
+  },
+  {
+    id: "civics.sc-local-government",
+    claim:
+      "Teaches South Carolina local government as South Carolina's: 46 counties governed by elected county councils (which gained self-governing power under the Home Rule Act of 1975, easing the legislative-state control of local matters) plus separately elected sheriff, clerk, auditor, and treasurer; municipalities with council forms; and a legacy of many school and special-purpose districts from the legislative-state era.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.sc-get-involved",
+    claim:
+      "Teaches getting involved where you live, South Carolina edition — registering and voting with photo ID, early in-person voting, and qualifying-reason absentee voting administered by county election offices (scvotes.gov), showing up at county councils, city councils, and school boards (which decide more locally since Home Rule), contacting your one Representative and one Senator in Columbia, watching the General Assembly's judicial elections, and running for local office.",
+    courseSlugs: ["state-civics-sc"],
+    lessons: [
+      "South Carolina Civics, Lesson 5 · Local government and how to take part",
+    ],
   },
 
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
