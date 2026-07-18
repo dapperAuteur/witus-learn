@@ -1285,7 +1285,6 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   say so; Arizona's HS.C2.5 (AZ-vs-US rights comparison) is rejected despite being the flagship's
   home framework; U.S. History Since 1929 starts too late for the Gilded Age labor units. **No
   migration, no seed.**
-<<<<<<< HEAD
 - 🔧 **Ohio + Georgia mapped — states #10 and #11** (\`feat/standards-oh-ga\`, task 130) —
   \`/standards?state=OH\` and \`?state=GA\` flip from "not mapped yet" to real pages: two new data
   files + \`pnpm gen:standards\`, zero code change. **Ohio: 50 standards (25 full, 25 partial) across
@@ -1312,7 +1311,6 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   standard is genuine verbatim text**. **NEXT_UP advanced OH/GA → MI/IL** (⚠️ one-line conflict risk
   vs the parallel \`feat/standards-matrix\` branch, which may also edit that line). **No migration,
   no seed.**
-=======
 - 🔧 **Massachusetts + Tennessee mapped — states #10 and #11, both fully bespoke** (\`feat/standards-ma-tn\`) —
   \`/academic-standards?state=MA\` and \`?state=TN\` flip from "not mapped yet" to real pages: two new
   data files + \`pnpm gen:standards\`, zero code change. **Massachusetts: 35 standards (18 full, 17
@@ -1339,7 +1337,6 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   Supreme-Court / weak veto / no-initiative / voting rules — are published loudly in each \`notClaimed\`
   list. **NEXT_UP advanced past MA/TN → MO/MD** (⚠️ merge-coordinates with the other in-flight standards
   branches, which also edit that line). **No migration, no seed.**
->>>>>>> origin/feat/standards-ma-tn
 - 🔧 **Texas + Florida mapped — states #8 and #9, both fully bespoke** (\`feat/standards-tx-fl\`) —
   \`/academic-standards?state=TX\` and \`?state=FL\` flip from "not mapped yet" to real pages. **Texas: 56
   standards (31 full, 25 partial) across 8 TEKS frameworks** — Texas writes its own TEKS for every
