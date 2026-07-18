@@ -1055,6 +1055,65 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: ["North Carolina Civics, Lesson 8 · Get involved where you live in North Carolina"],
   },
 
+  // ── State civics: Virginia (state-civics-va was written FROM Virginia's own sources) ──
+  // NOTE: Virginia's high-school civics anchor is the "Virginia and United States Government" course
+  // (GOVT), whose 2023 SOL reach Virginia's own government squarely through GOVT.10 ("the state and
+  // local governments as described in the Constitution of Virginia") — so, better than most, the
+  // Virginia flagship's structure lessons have a genuine home there (GOVT.10a-d, GOVT.10f), mapped
+  // full. The rest of the GOVT course is federal, mapped to the general civics catalog; data/va.ts
+  // publishes the gaps.
+  {
+    id: "civics.va-constitution",
+    claim: "Teaches Virginia's Constitution of 1971 (its seventh), the meaning of 'Commonwealth,' and its deliberately slow amendment path — passage by two separately-elected General Assemblies then a voter referendum — with no citizen initiative.",
+    courseSlugs: ["state-civics-va"],
+    lessons: [
+      "Virginia Civics, Lesson 1 · Virginia's constitution and 'the Commonwealth'",
+      "Virginia Civics, Lesson 5 · How a bill becomes a Virginia law (and why there's no citizen initiative)",
+    ],
+  },
+  {
+    id: "civics.va-three-branches",
+    claim: "Teaches Virginia's General Assembly (a 100-member House of Delegates and a 40-member Senate, the oldest continuous law-making body in the New World) and its three separately-elected statewide executives — Governor, Lieutenant Governor, and Attorney General.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 2 · The three branches of Virginia government"],
+  },
+  {
+    id: "civics.va-governor-one-term",
+    claim: "Teaches Virginia's unique rule that the Governor may not serve two consecutive terms — the only state with this bar — though a former Governor may return after sitting out.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 3 · The Governor who cannot serve two terms in a row"],
+  },
+  {
+    id: "civics.va-courts-legislature",
+    claim: "Teaches that Virginia's judges are elected by the General Assembly (the Legislature) — Supreme Court of Virginia justices to 12-year terms — one of only two states (with South Carolina) to choose judges this way.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 4 · How Virginia chooses its judges (elected by the Legislature)"],
+  },
+  {
+    id: "civics.va-bill-process",
+    claim: "Teaches how a bill becomes a Virginia law, including the Governor's distinctive power to propose amendments and send a bill back to the Assembly, and the two-thirds veto override.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 5 · How a bill becomes a Virginia law (and why there's no citizen initiative)"],
+  },
+  {
+    id: "civics.va-local-government",
+    claim: "Teaches Virginia local government as Virginia's: a Dillon's Rule state of 95 counties PLUS 38 independent cities that belong to no county (most of the nation's independent cities), with the town-versus-city distinction.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 6 · Local government: Dillon's Rule and Virginia's independent cities"],
+  },
+  {
+    id: "civics.va-elections",
+    claim: "Teaches Virginia's election specifics: odd-year statewide races (the year after each presidential election), no-excuse early voting, changing voter-ID rules, and the bipartisan Virginia Redistricting Commission.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 7 · Elections, redistricting, and how to take part"],
+  },
+  {
+    id: "civics.va-get-involved",
+    claim: "Teaches getting involved where you live, Virginia edition — the short Richmond session, county boards of supervisors, city councils, and Dillon's-Rule advocacy at both the local and state levels.",
+    courseSlugs: ["state-civics-va"],
+    lessons: ["Virginia Civics, Lesson 7 · Elections, redistricting, and how to take part"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",

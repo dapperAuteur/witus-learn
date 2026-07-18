@@ -77,6 +77,7 @@ const CATALOG = [
   "state-civics-tx",
   "state-civics-fl",
   "state-civics-nc",
+  "state-civics-va",
   "citizenship-naturalization",
   "jury-duty-courts",
   "know-your-rights",
