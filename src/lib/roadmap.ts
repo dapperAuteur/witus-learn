@@ -1138,6 +1138,25 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Alabama + Louisiana mapped, both bespoke-heavy** (\`feat/standards-al-la\`); the standards
+  finder now covers 28 jurisdictions, and \`/academic-standards?state=AL\` and \`?state=LA\` flip from
+  "not mapped yet" to real pages. **Alabama (16 standards, 3 full, 13 partial)** writes its own
+  standards and adopts neither Common Core nor NGSS: the mapped codes are the two required grade-12
+  courses of the **2010 Alabama Course of Study: Social Studies** (ALSDE), United States Government
+  and Economics, transcribed verbatim from ALSDE's own PDF. Standard USG.5 names "the Constitution of
+  Alabama of 1901" and the comparison of state and local government, so the \`state-civics-al\`
+  flagship gets a 1:1 home: the world-longest constitution and its 2022 recompile, weak home rule, the
+  large plural executive, the partisan-elected judiciary, and the 67 counties. **Louisiana (26
+  standards, 8 full, 18 partial)** replaced Common Core with its own standards: the mapped codes are
+  the **2022 Louisiana Student Standards for Social Studies** High School Civics course, transcribed
+  verbatim from the LDOE PDF. Louisiana names its own government in three expectations and the
+  \`state-civics-la\` flagship maps 1:1 onto each: C.9.i (the Louisiana State Constitution), C.9.j
+  (Civil Law and the Napoleonic Code), and C.11.k (parishes, police juries, and home rule charters),
+  alongside the jungle primary, the 1974 constitution, and the seven-officer plural executive. Honest
+  gaps published per state: Alabama's ELA (2021), math (2019), and science (2015, NOT NGSS) and
+  Louisiana's ELA, math, and science (2017, NGSS-based but Louisiana's own) are deferred rather than
+  blind-aliased, because the rule is compare-before-aliasing and those documents were not fetched this
+  pass. \`NEXT_UP\` advances to **Iowa and Mississippi**. No migration, no seed.
 - 🔧 **Maryland + Colorado mapped** (\`feat/standards-md-co\`); the standards finder now covers 22
   jurisdictions, and \`/academic-standards?state=MD\` and \`?state=CO\` flip from "not mapped yet" to
   real pages. **Maryland (bespoke civics, inherited ELA and science):** the **High School American

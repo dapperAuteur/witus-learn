@@ -2239,6 +2239,135 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Spotting Misleading Marketing, Lesson 4 · Fake urgency, fake scarcity, and fake discounts",
     ],
   },
+
+  // ── State civics: Alabama (state-civics-al was written FROM Alabama's own sources) ──
+  // NOTE: Alabama's grade-12 United States Government course (2010 Alabama Course of Study:
+  // Social Studies) reaches Alabama's OWN government explicitly through Standard 5, which directs
+  // students to compare state and local governments and, by name, to analyze "the Constitution of
+  // Alabama of 1901" — so, unlike the abstract-concept states, the Alabama flagship's structure
+  // lessons have a genuine home, mapped there. Alabama writes its OWN ELA, mathematics, and science
+  // standards (it is NOT a Common Core or NGSS state); data/al.ts publishes those subjects as
+  // deferred gaps (fetch-or-don't-cite), not denials. Alabama is BESPOKE-heavy.
+  {
+    id: "civics.al-constitution-home-rule",
+    claim:
+      "Teaches Alabama's Constitution of 1901 — which grew into the longest constitution in the world, with more than 900 (often local) amendments — and the 2022 recompiled 'Constitution of Alabama 2022' that removed racist language and reorganized the text, explaining that Alabama's weak-home-rule tradition centralized power in the Montgomery Legislature so that even local matters often required statewide constitutional amendments.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 1 · The longest constitution in the world (and the 2022 recompile)",
+      "Alabama Civics, Lesson 2 · Weak home rule and Alabama's large plural executive",
+    ],
+  },
+  {
+    id: "civics.al-plural-executive",
+    claim:
+      "Teaches Alabama's large plural executive — the Governor, a separately elected Lieutenant Governor (who can be of a different party), Attorney General, Secretary of State, Treasurer, Auditor, and Commissioner of Agriculture and Industries, plus the elected Public Service Commission and State Board of Education — and its comparatively weak governor's veto, which the Legislature can override with only a simple majority.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 2 · Weak home rule and Alabama's large plural executive",
+    ],
+  },
+  {
+    id: "civics.al-legislature-courts",
+    claim:
+      "Teaches Alabama's Legislature (a 105-member House of Representatives and a 35-member Senate, all on 4-year terms) and its openly PARTISAN elected judiciary: the 9-justice Supreme Court of Alabama and two separate intermediate appellate courts (the Court of Civil Appeals and the Court of Criminal Appeals), all elected statewide with party labels on the ballot to 6-year terms.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 3 · The Legislature and Alabama's partisan-elected judiciary",
+    ],
+  },
+  {
+    id: "civics.al-lawmaking-amendments",
+    claim:
+      "Teaches how a bill becomes an Alabama law (introduction, committee, floor votes in both chambers, then the Governor's signature or weak veto) and that Alabama has no statewide citizen initiative, so constitutional amendments are proposed by the Legislature and ratified by voters — which, given weak home rule, is why Alabamians vote on so many (often local) amendments.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 3 · The Legislature and Alabama's partisan-elected judiciary",
+    ],
+  },
+  {
+    id: "civics.al-local-government",
+    claim:
+      "Teaches Alabama local government as Alabama's: 67 counties governed by elected county commissions (plus separately elected sheriff, probate judge, and tax officials), cities and towns, and school systems — but limited by weak home rule, so counties often need state legislative action or a constitutional amendment for many local decisions.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 4 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.al-elections-involved",
+    claim:
+      "Teaches Alabama's election specifics (a photo-ID requirement and comparatively restrictive, generally excuse-required absentee voting, administered by county officials and confirmed at sos.alabama.gov) and how to take part where you live: watching your legislative delegation because weak home rule sends local matters to Montgomery, reading the many amendments on the ballot, and showing up at county commissions, city councils, and school boards.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 4 · Local government and how to take part",
+    ],
+  },
+
+  // ── State civics: Louisiana (state-civics-la was written FROM Louisiana's own sources) ──
+  // NOTE: Louisiana's High School Civics course (2022 Louisiana Student Standards for Social
+  // Studies) reaches Louisiana's OWN government explicitly and in three places — C.9.i (the
+  // Louisiana State Constitution over time, compared with the U.S. Constitution), C.9.j (the
+  // historical connection between Civil Law, the Napoleonic Code, and Louisiana's system of laws),
+  // and C.11.k (local and parish governments, police juries, and home rule charters) — so the
+  // Louisiana flagship's most distinctive lessons map 1:1. Louisiana replaced Common Core with its
+  // own Louisiana Student Standards for ELA and Mathematics, and its science is Louisiana's own
+  // (2017, NGSS-BASED but Louisiana's own document); data/la.ts publishes those as deferred gaps —
+  // NOT blind-aliased to any shared framework without a text comparison. Louisiana is BESPOKE-heavy.
+  {
+    id: "civics.la-civil-law",
+    claim:
+      "Teaches Louisiana's defining difference: it is the only U.S. state whose legal system is built on CIVIL LAW (the French and Spanish, ultimately Roman/Napoleonic, tradition organized in a Civil Code) rather than English common law, with distinctive vocabulary — parishes, usufruct, forced heirship — that traces to its French and Spanish colonial past. Louisiana became the 18th state on April 30, 1812.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 1 · Louisiana's defining difference: a civil-law state",
+    ],
+  },
+  {
+    id: "civics.la-constitution-branches",
+    claim:
+      "Teaches Louisiana's Constitution of 1974 (its eleventh) and its three branches: a bicameral Legislature of 105 representatives and 39 senators on 4-year terms with a three-consecutive-term (12-year) limit, a plural executive of seven separately elected statewide officials (Governor, Lieutenant Governor, Secretary of State, Attorney General, Treasurer, and the Commissioners of Agriculture and Forestry and of Insurance), and a Governor whose veto the Legislature overrides by a two-thirds vote of each chamber.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 2 · The Constitution of 1974 and the three branches",
+    ],
+  },
+  {
+    id: "civics.la-jungle-primary",
+    claim:
+      "Teaches Louisiana's 'jungle primary' (the open primary): all candidates of every party appear on one ballot in the first round, a candidate who wins an outright majority takes the office with no runoff, and otherwise the top two finishers advance to a runoff even if they belong to the same party — unlike Washington's or California's top-two, where two candidates always advance.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 3 · Louisiana's 'jungle primary' (the open primary)",
+    ],
+  },
+  {
+    id: "civics.la-lawmaking-amendments",
+    claim:
+      "Teaches how a bill becomes a Louisiana law (introduction, committee, floor votes in both chambers, then the Governor's signature, veto, or line-item veto, with a two-thirds override and even a veto-override session) and that Louisiana has no general citizen initiative, so only constitutional amendments — proposed by a two-thirds vote of each chamber — reach voters for ratification, which they do often.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 4 · How a bill becomes a Louisiana law",
+    ],
+  },
+  {
+    id: "civics.la-parishes",
+    claim:
+      "Teaches Louisiana local government as Louisiana's: 64 PARISHES rather than counties (the only state to use the term, a legacy of its French and Spanish Catholic colonial past), governed by a traditional Police Jury or by a parish president and council under a home-rule charter, with consolidated city-parish governments such as New Orleans and Baton Rouge.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 5 · Parishes: Louisiana's counties by another name",
+    ],
+  },
+  {
+    id: "civics.la-courts-elections-involved",
+    claim:
+      "Teaches how Louisiana elects its judges (including a 7-justice Supreme Court elected from geographic districts to 10-year terms, using the same open-primary format) and its voting rules (ID with a fallback affidavit, early in-person voting, and qualifying-reason absentee voting administered by the Secretary of State and parish Registrars of Voters), and how to take part where you live through police juries, parish councils, city councils, and school boards.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 6 · Judges, voting, and how to take part",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
