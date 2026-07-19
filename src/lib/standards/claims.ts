@@ -2646,6 +2646,160 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Louisiana Civics, Lesson 6 · Judges, voting, and how to take part",
     ],
   },
+  // ── State civics: Iowa (state-civics-ia was written FROM Iowa's own sources) ──
+  // NOTE: Iowa writes its OWN social studies standards (the Iowa Academic Standards for Social
+  // Studies, current January 2026 revision, C3-informed — not Common Core). Its High School
+  // Civics/Government course names Iowa's own government explicitly and in three places —
+  // SS.9-12.Gov.18 (the government of the State of Iowa), SS.9-12.Gov.20 (Iowa's local governments),
+  // and SS.9-12.Gov.13 (Iowa election law, absentee voting, the Iowa Caucuses, and redistricting) —
+  // so the Iowa flagship's most distinctive lessons map 1:1. data/ia.ts gives them a home and also
+  // transcribes Iowa's own literacy (ELA) standards VERBATIM (Iowa revised some Common Core codes, so
+  // they are NOT blind-aliased to the shared framework). Iowa is INHERIT-heavy with a bespoke frame.
+  {
+    id: "civics.ia-caucuses",
+    claim:
+      "Teaches Iowa's precinct caucuses — neighborhood party meetings (not ballot primaries) that traditionally opened the presidential nominating season 'first in the nation,' giving a small farm state outsized, face-to-face retail-campaign influence — while flagging that the nominating calendar has recently shifted, so exact 'first' status varies by party and year (confirm at sos.iowa.gov). Iowa governs under its Constitution of 1857 and became the 29th state on December 28, 1846.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 1 · The Iowa caucuses: going first in presidential politics",
+    ],
+  },
+  {
+    id: "civics.ia-redistricting",
+    claim:
+      "Teaches Iowa's nationally admired nonpartisan redistricting: the nonpartisan Legislative Services Agency (LSA) draws Iowa's legislative and congressional maps on neutral criteria (equal population, compact districts, respect for county and city lines) and is forbidden from considering past election results, incumbents' addresses, or party registration; the Legislature then votes the maps up or down — a model widely cited for reducing gerrymandering.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 2 · Iowa's nonpartisan redistricting: a national model",
+    ],
+  },
+  {
+    id: "civics.ia-executive-legislature",
+    claim:
+      "Teaches Iowa's plural executive (the Governor and Lieutenant Governor on a joint ticket, plus a separately elected Secretary of State, Attorney General, State Treasurer, State Auditor, and Secretary of Agriculture — a fitting office for a major farm state, all on 4-year terms) and the Iowa General Assembly (a 100-member House on 2-year terms and a 50-member Senate on 4-year terms), with the Governor's strong item veto on appropriations and a two-thirds override.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 3 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ia-judiciary",
+    claim:
+      "Teaches Iowa's merit-selection judiciary (the 'Missouri Plan'): a State Judicial Nominating Commission screens applicants and sends the Governor a list, the Governor appoints, and the judge later faces voters in a nonpartisan yes/no retention election; the Iowa Supreme Court has 7 justices, and Iowa's 2010 removal of three justices showed retention votes are real.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 3 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ia-lawmaking",
+    claim:
+      "Teaches how a bill becomes an Iowa law (introduction, committee, floor votes in both chambers, then the Governor's signature, veto with a two-thirds override, or item veto of appropriations) and that Iowa has NO statewide citizen initiative for general laws — an unusual gap: constitutional amendments must be passed by two consecutive General Assemblies and then ratified by the voters.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ia-local-government",
+    claim:
+      "Teaches Iowa local government as Iowa's: 99 counties (a famously large number for the state's size) governed by elected boards of supervisors and other elected county officials, cities under a strong home-rule tradition, townships and special districts, and locally run school districts.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ia-elections",
+    claim:
+      "Teaches Iowa's election specifics — early/absentee voting and a voter-ID requirement, administered by county auditors, with early-voting windows and deadlines adjusted in recent years — and a standing flag to confirm the current rules at sos.iowa.gov before voting.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ia-get-involved",
+    claim:
+      "Teaches getting involved where you live, Iowa edition — attending your precinct caucus (a hands-on way to shape party business and, in presidential years, register a preference), registering and voting under current sos.iowa.gov rules, showing up at county boards of supervisors, city councils, and school boards, contacting your one Representative and one Senator in Des Moines, and running for local office.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  // ── State civics: Mississippi (state-civics-ms was written FROM Mississippi's own sources) ──
+  // NOTE: Mississippi's College- and Career-Readiness Standards for the Social Studies (2018) reach
+  // Mississippi's OWN government explicitly in the Mississippi Studies course: MS.10 ("Analyze the
+  // structure and function of local and state government in Mississippi") is a genuine 1:1 home for
+  // the Mississippi flagship's own-structure lessons (the 1890 constitution, the powerful Lieutenant
+  // Governor, the 82-county board-of-supervisors layer, the nonpartisan elected judiciary). The
+  // required US Government course (USG.1-7) is FEDERAL and carries the general civics ladder, with a
+  // media-literacy home at USG.6.7/6.8. data/ms.ts also transcribes Mississippi's own literacy (ELA)
+  // standards VERBATIM (Common-Core-derived, but MS revised RH.11-12.6, so NOT blind-aliased). MS is
+  // BESPOKE-leaning.
+  {
+    id: "civics.ms-recent-changes",
+    claim:
+      "Teaches that Mississippi's rules and symbols changed recently: in 2020 voters approved a constitutional amendment removing an 1890 Jim Crow-era rule that required a candidate for Governor or statewide office to win BOTH a majority of the popular vote AND a majority of the 122 state House districts (or the House would choose the winner), replacing it with a popular-majority-or-runoff system; and in 2020 Mississippi retired the last U.S. state flag carrying the Confederate battle emblem and voters approved a new 'In God We Trust'/Magnolia flag. Mississippi became the 20th state on December 10, 1817, and still governs under its much-amended Constitution of 1890.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 1 · A state that changed: the 2020 election rule and the new flag",
+    ],
+  },
+  {
+    id: "civics.ms-executive",
+    claim:
+      "Teaches Mississippi's large plural executive (a Governor and a separately elected Lieutenant Governor — who can be from a different party — plus a separately elected Secretary of State, Attorney General, Treasurer, Auditor, Insurance Commissioner, and Commissioner of Agriculture and Commerce, and the elected Public Service and Transportation Commissions) and that Mississippi's Lieutenant Governor is one of the most powerful in the nation, presiding over the state Senate and strongly controlling its committees, calendar, and which bills advance; statewide officers serve 4-year terms elected in odd-numbered years (for example 2023 and 2027).",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 2 · A large plural executive and an unusually powerful Lieutenant Governor",
+    ],
+  },
+  {
+    id: "civics.ms-legislature-initiative",
+    claim:
+      "Teaches Mississippi's Legislature (a 122-member House of Representatives and a 52-member Senate, all on 4-year terms, with the Lieutenant Governor wielding strong influence over the Senate) and how a bill becomes a Mississippi law, and that Mississippi's citizen ballot-initiative process is currently NOT in effect: its formula required signatures gathered equally from five congressional districts, but Mississippi dropped to four U.S. House seats after the 2000 census, so in May 2021 the Mississippi Supreme Court ruled the entire initiative process invalid until the Legislature and voters adopt a fix.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 3 · The Legislature, and why Mississippi's initiative doesn't work right now",
+    ],
+  },
+  {
+    id: "civics.ms-judiciary",
+    claim:
+      "Teaches how Mississippi picks its judges: it ELECTS them on a NONPARTISAN ballot (no party label appears next to their names), with a 9-justice Mississippi Supreme Court elected from districts to 8-year terms, and Court of Appeals, Circuit, and Chancery judges likewise elected nonpartisan; when a seat opens mid-term the Governor appoints a replacement who then stands for election.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ms-local-government",
+    claim:
+      "Teaches Mississippi local government as Mississippi's: 82 counties, each governed by an elected board of supervisors from five supervisor districts (or 'beats'), plus other elected county officials (sheriff, chancery and circuit clerks, tax officials), with cities and towns providing municipal services and school and special districts rounding out local government.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ms-elections",
+    claim:
+      "Teaches Mississippi's election specifics — a photo-ID requirement and comparatively limited early/absentee options (an excuse is generally required for absentee, and Mississippi has been slower than many states to adopt no-excuse early voting), administered by county election officials, with big elections falling in odd years — and a standing flag to confirm the current rules at sos.ms.gov before voting.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ms-get-involved",
+    claim:
+      "Teaches getting involved where you live, Mississippi edition — registering and voting with photo ID (checking absentee eligibility and Mississippi's odd-year calendar at sos.ms.gov), showing up at your county board of supervisors, city council, and school board, contacting your one Representative and one Senator in Jackson, watching for a legislative fix that would restore the citizen initiative, and running for local office.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
