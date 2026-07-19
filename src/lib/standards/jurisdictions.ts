@@ -89,7 +89,7 @@ export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 // on their own branches; naming Wyoming keeps the "never name a mapped state" invariant, since WY is
 // mapped by no branch merged into this base). The bundle owner collapses NEXT_UP to [] once all 51
 // jurisdictions are mapped.
-export const NEXT_UP: StateCode[] = ["WY"];
+export const NEXT_UP: StateCode[] = []; // all 51 jurisdictions (50 states + DC) mapped — fan-out complete
 // This bundle maps six more states (MD, CO, MN, WI, CT, SC), so the queue advances to two
 // still-unmapped states, Alabama and Louisiana. NEXT_UP must never name a state that
 // mappedStates() already contains (the isolation suite enforces it); AL and LA are mapped by

@@ -3904,6 +3904,86 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: ["state-civics-sd"],
     lessons: ["South Dakota Civics, Lesson 8 · Get involved where you live in South Dakota"],
   },
+  // ── State civics: Wyoming (state-civics-wy was written FROM Wyoming's own sources) ──
+  // NOTE: unlike Arkansas / California / New York, whose civics standards are overwhelmingly
+  // federal and leave the flagship's state-structure lessons homeless, Wyoming's SS12.1.5
+  // explicitly requires students to "demonstrate an understanding of the structures of both the
+  // United States and Wyoming Constitutions" — so the Wyoming flagship's structure lessons (the
+  // 1889 constitution, the five-officer plural executive with NO lieutenant governor, the
+  // part-time 62/31 Legislature, the Missouri-Plan judiciary, direct democracy) have a genuine
+  // home. See data/wy.ts.
+  {
+    id: "civics.wy-equality-state",
+    claim:
+      "Teaches Wyoming as 'The Equality State' — the first place in America to grant women the vote (as a territory in 1869), the nation's first woman governor (Nellie Tayloe Ross, 1925), and the 1889 Constitution's equal-political-rights guarantee that Wyoming refused to drop to gain statehood in 1890.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 1 · 'The Equality State': first to grant women the vote",
+    ],
+  },
+  {
+    id: "civics.wy-executive",
+    claim:
+      "Teaches Wyoming's plural executive: five separately elected statewide officers (Governor, Secretary of State, State Auditor, State Treasurer, and Superintendent of Public Instruction) and NO Lieutenant Governor, with the Secretary of State first in line to succeed the Governor.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 2 · Wyoming's executive: five elected officers, and no Lieutenant Governor",
+    ],
+  },
+  {
+    id: "civics.wy-legislature-tax",
+    claim:
+      "Teaches Wyoming's part-time citizen Legislature — a 62-member House on 2-year terms and a 31-member Senate on 4-year terms, meeting in short general (odd-year) and budget (even-year) sessions — and its lack of a state personal income tax, funded heavily through mineral and energy revenue.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 3 · The part-time Legislature and how Wyoming picks its judges",
+    ],
+  },
+  {
+    id: "civics.wy-courts",
+    claim:
+      "Teaches Wyoming's merit-selection judiciary — the Missouri Plan: a judicial nominating commission sends the Governor a list, the Governor appoints, and the judge later faces a nonpartisan yes/no retention election — and the five-justice Wyoming Supreme Court.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 3 · The part-time Legislature and how Wyoming picks its judges",
+    ],
+  },
+  {
+    id: "civics.wy-bill-process",
+    claim:
+      "Teaches how a bill becomes a Wyoming law across the biennial general and budget sessions, and the Governor's veto — overridden by a two-thirds vote of each chamber — and line-item veto on appropriations.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wy-direct-democracy",
+    claim:
+      "Teaches that Wyoming has the citizen initiative and referendum but with comparatively high signature and distribution requirements, so statewide measures reach the ballot less often than in neighboring initiative states.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wy-local-government",
+    claim:
+      "Teaches Wyoming local government as Wyoming's: 23 counties governed by elected boards of county commissioners, cities and towns, special and school districts, and the Wind River Reservation (the Eastern Shoshone and Northern Arapaho) as sovereign tribal governments within the state.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wy-get-involved",
+    claim:
+      "Teaches getting involved where you live, Wyoming edition — registering and voting (Wyoming offers Election-Day registration and requires ID; rules are administered by county clerks and change, so verify at sos.wyo.gov), showing up at accessible county commissions, city and town councils, and school boards, contacting your one Representative and one Senator in Cheyenne, and running for local office.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
