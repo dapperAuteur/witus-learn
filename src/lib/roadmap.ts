@@ -1138,6 +1138,29 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Oklahoma + Utah mapped** (\`feat/standards-ok-ut\`); the standards finder now covers **28
+  jurisdictions**, and \`/academic-standards?state=OK\` and \`?state=UT\` flip from "not mapped yet" to
+  real pages. **Oklahoma (bespoke-heavy, 36 standards across 5 frameworks, 12 full):** the **Oklahoma
+  Academic Standards for Social Studies (adopted 2019)**, transcribed verbatim from OSDE's own PDF.
+  The grade-12 **United States Government (USG)** course anchors the \`state-civics-ok\` flagship and
+  reaches Oklahoma's OWN government: USG.3.3 names the national, state, tribal, and local
+  relationships and USG.3.4 names tribal sovereignty and the Major Crimes Act (the constitutional
+  question in McGirt v. Oklahoma), so the flagship's two-high-courts, plural-executive, initiative,
+  and tribal lessons get a real home. The World History, U.S. History, Economics, and World Human
+  Geography courses map the Commodity Map plus the labor and Great Migration catalog. Oklahoma
+  withdrew from the Common Core in 2014, so its ELA, its math, and its 2020 science (NGSS-influenced,
+  not verbatim) are Oklahoma's own and are deferred fetch-or-don't-cite rather than blind-aliased.
+  **Utah (mixed inherit and bespoke, 17 standards across 3 frameworks, 5 full):** the **United States
+  Government and Citizenship** course (Utah Core Standards for Social Studies, revised September
+  2016), transcribed from USBE's standards via the Utah Education Network and cross-checked against
+  the subset-font-encoded canonical PDF. U.S. GOV Standard 3.3 (how people organize to participate)
+  is a genuine home for Utah's distinctive dual-path (caucus-convention or signature) nomination
+  system, and the flagship also teaches the 45-day citizen Legislature, the plural executive, merit
+  selection with a Judicial Performance Evaluation Commission, and all-mail elections. Utah adopted
+  the Common Core for ELA, and its disciplinary-literacy strands (RH.11-12.6/8/9 and WHST.11-12.7/8)
+  are verbatim, mapped as OWN frameworks; but its 2023 ELA revision reworded RI.11-12.6, so the
+  shared Common Core file is not adopted wholesale, and Utah's SEEd science is not verbatim NGSS and
+  is deferred. **NEXT_UP advances to Iowa and Mississippi.**
 - 🔧 **Maryland + Colorado mapped** (\`feat/standards-md-co\`); the standards finder now covers 22
   jurisdictions, and \`/academic-standards?state=MD\` and \`?state=CO\` flip from "not mapped yet" to
   real pages. **Maryland (bespoke civics, inherited ELA and science):** the **High School American
