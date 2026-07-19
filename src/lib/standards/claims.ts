@@ -1964,6 +1964,76 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Kentucky (state-civics-ky was written FROM Kentucky's own sources) ──
+  // Kentucky's KAS for Social Studies (2019) carries a dedicated "Kentucky Government" strand whose
+  // HS.C.KGO.1-3 indicators name Kentucky's OWN constitution and government explicitly, so — unlike
+  // the abstract-concept states — the Kentucky flagship's Kentucky-structure lessons have a genuine
+  // 1:1 home, mapped in data/ky.ts. state-civics-ky was written from legislature.ky.gov, sos.ky.gov,
+  // kycourts.gov, and the Kentucky Constitution of 1891.
+  {
+    id: "civics.ky-commonwealth",
+    claim:
+      "Teaches Kentucky's civic identity: it is one of only four states officially called a 'Commonwealth' (with Virginia, Massachusetts, and Pennsylvania), became the 15th state on June 1, 1792 (the first west of the Appalachians), and governs under its Constitution of 1891 (its fourth); it elects its Governor and statewide officers in ODD-numbered years off the presidential cycle (like Virginia and New Jersey); and it has 120 counties, the third-most of any state (behind only Texas and Georgia), so county government is an unusually large part of Kentucky civic life.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 1 · A Commonwealth of odd-year elections and 120 counties",
+    ],
+  },
+  {
+    id: "civics.ky-plural-executive",
+    claim:
+      "Teaches Kentucky's large plural executive: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State (who runs elections), the Attorney General, the State Treasurer, the State Auditor, and the Commissioner of Agriculture, each to 4-year terms — so, like many states, Kentucky can end up with a Governor of one party and other statewide officers of another, checking one another.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 2 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ky-general-assembly",
+    claim:
+      "Teaches the Kentucky General Assembly: a part-time citizen legislature meeting in Frankfort — a 100-member House on 2-year terms and a 38-member Senate on 4-year terms, with short annual sessions (a longer 60-day session in even years, a shorter 30-day session in odd years) — and Kentucky's comparatively WEAK gubernatorial veto, which the General Assembly can override with a simple majority (like Tennessee, Alabama, and West Virginia), plus the Governor's line-item veto on appropriations.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 2 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ky-nonpartisan-judiciary",
+    claim:
+      "Teaches how Kentucky picks its judges: on a NONPARTISAN ballot, with no party label next to their names (a contrast with, say, Alabama's partisan judicial elections) — the Supreme Court of Kentucky has 7 justices elected from districts to 8-year terms, and Court of Appeals, Circuit, and District judges are likewise elected nonpartisan; mid-term vacancies are filled by the Governor from a Judicial Nominating Commission's list, and that appointee then stands for election.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 3 · How Kentucky picks its judges, and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ky-lawmaking-no-initiative",
+    claim:
+      "Teaches how a bill becomes a Kentucky law (introduction in the House or Senate during the short annual session, committee review, floor votes in both chambers, then the Governor's signature, weak simple-majority-override veto, or line-item veto) and that Kentucky has NO statewide citizen initiative: citizens cannot put a statute or amendment on the ballot by petition; constitutional amendments are proposed by the General Assembly (by a three-fifths vote) and then ratified by the voters, so the citizen's role is ratification, not initiation.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 3 · How Kentucky picks its judges, and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ky-local-government",
+    claim:
+      "Teaches Kentucky local government as Kentucky's: 120 counties (the third-most of any state), each run by an elected county judge/executive and a fiscal court of magistrates or commissioners, plus other elected county officials (sheriff, clerk, jailer, property valuation administrator); size-classified cities providing municipal services; and Louisville's consolidation with Jefferson County into a single 'Louisville Metro' government — with so many counties, county government is unusually prominent in daily life.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 4 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ky-get-involved",
+    claim:
+      "Teaches getting involved where you live, Kentucky edition — registering and voting (bringing photo ID with alternatives, using recently expanded early in-person voting, checking status at sos.ky.gov/elect.ky.gov, and remembering Kentucky's big statewide races fall in ODD years), showing up at the fiscal court, county judge/executive, city council, and school board (county government is especially reachable in Kentucky), contacting your one Representative and one Senator in Frankfort during the short session, and running for local office.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 4 · Local government and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
