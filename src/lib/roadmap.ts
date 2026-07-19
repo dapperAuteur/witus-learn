@@ -1162,6 +1162,24 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   framework (Maine reorganized and reworded the Common Core into its own strands, so it is mapped
   bespoke rather than aliased). Maine's Economics and Geography strands are deferred to a later pass.
   \`NEXT_UP\` advances to **North Dakota and South Dakota**. No migration, no seed.
+- 🔧 **Rhode Island + Alaska mapped** (\`feat/standards-ri-ak\`); the standards finder now covers **43
+  jurisdictions**, and \`/academic-standards?state=RI\` and \`?state=AK\` flip from "not mapped yet" to
+  real pages. **Rhode Island (19 civics standards, 5 full, 14 partial)** is inherit-heavy: it adopts
+  the shared Common Core ELA (adopted July 1, 2010) and NGSS (Rhode Island was the first state to
+  adopt NGSS, spring 2013) verbatim, and maps the bespoke **Rhode Island Social Studies Standards
+  (2023)** High School Civics frame (SSHS.CVC), transcribed verbatim from RIDE. SSHS.CVC.4.5 (state,
+  local, and tribal governments) is the \`state-civics-ri\` flagship's home for the
+  no-county-governments, 2004 separation-of-powers, life-tenure Supreme Court, and 2020 name-change
+  lessons, while SSHS.CVC.3.2/2.4 (ratification) and SSHS.CVC.6.3 (the Dorr Rebellion) carry Rhode
+  Island's own history. **Alaska (5 Government and Citizenship standards + 6 bespoke ELA standards, 6
+  full)** is bespoke-heavy because Alaska is a notable non-adopter of the Common Core: its **Government
+  and Citizenship** content standards (A to G) anchor the \`state-civics-ak\` flagship at Standard C
+  ("the character of government of the state") for boroughs and the Unorganized Borough, the strong
+  governor, the Permanent Fund, merit-selection courts, and the top-four/ranked-choice election
+  system; its **2012 ELA** standards are Alaska's own (its informational-text strand is edited away
+  from the Common Core), so they are mapped as an own framework, not an alias; and its **2019 science**
+  standards reproduce NGSS HS-ESS3-1 verbatim, so NGSS is adopted. Both states publish honest reject
+  lists (tribal governance, international affairs). NEXT_UP advances to North Dakota + South Dakota.
 - 🔧 **Iowa + Mississippi mapped** (\`feat/standards-ia-ms\`); the standards finder now covers **34
   jurisdictions**, and \`/academic-standards?state=IA\` and \`?state=MS\` flip from "not mapped yet" to
   real pages. **Iowa (23 standards, 14 full, 9 partial)** is inherit-heavy with a bespoke

@@ -3469,6 +3469,137 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Maine Civics, Lesson 6 · How to take part where you live",
     ],
   },
+  // ── State civics: Rhode Island (state-civics-ri was written FROM Rhode Island's own sources) ──
+  // The Rhode Island Social Studies Standards (2023, C3-based; HS Civics codes SSHS.CVC.<topic>.<n>)
+  // are bespoke and, unusually, name RHODE ISLAND explicitly in several places — SSHS.CVC.4.5 (state,
+  // local, and tribal governments, and the powers of "the state of Rhode Island" and the Narragansett),
+  // SSHS.CVC.2.4/3.2 (Rhode Island's refusal to send a delegate to, and reluctance to ratify from, the
+  // Constitutional Convention), and SSHS.CVC.6.3 (the Dorr Rebellion in Rhode Island as a change in
+  // voting requirements) — so the Rhode Island flagship's own-government lessons (no county governments,
+  // the 2004 separation-of-powers reform, a Supreme Court with life tenure, the 2020 name change) have a
+  // genuine home, mapped in data/ri.ts. Rhode Island is INHERIT-heavy: it adopted the Common Core
+  // (July 1, 2010) for ELA/math and was the FIRST state to adopt the NGSS (spring 2013), so data/ri.ts
+  // adopts the two shared frameworks and maps the bespoke 2023 civics frame here.
+  {
+    id: "civics.ri-name-founding",
+    claim:
+      "Teaches Rhode Island as the smallest state, founded by Roger Williams in 1636 as a haven for religious freedom and the separation of church and state, and the last of the original 13 colonies to ratify the U.S. Constitution (the 13th state, May 29, 1790), holding out until a Bill of Rights was assured; teaches that Rhode Island governs under a constitution first adopted in 1843 — which ended a property-restricted franchise after the Dorr Rebellion expanded suffrage — and that in 2020 its voters removed “and Providence Plantations” from the official name.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 1 · The smallest state, its founding, and its 2020 name change",
+    ],
+  },
+  {
+    id: "civics.ri-no-counties",
+    claim:
+      "Teaches Rhode Island local government as Rhode Island's: 5 counties that exist only as geographic and judicial reference areas with NO county governments (no commissioners, councils, budgets, or services), so its 39 cities and towns are the workhorse of local government — schools, police, roads, zoning — with some smaller towns still using a town meeting or financial town meeting, a two-tier state-and-municipality structure shared with only a handful of New England states.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 2 · Counties on the map, but no county governments",
+    ],
+  },
+  {
+    id: "civics.ri-separation-powers",
+    claim:
+      "Teaches Rhode Island's long tradition of legislative supremacy — a General Assembly so dominant that legislators sat on and controlled the executive boards and commissions that ran state agencies — and the landmark 2004 constitutional “separation of powers” amendment that removed legislators from those boards and strengthened the Governor and the executive branch; teaches Rhode Island's plural executive (the Governor, a separately elected Lieutenant Governor, the Secretary of State, the Attorney General, and the General Treasurer, each on a 4-year term).",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 3 · From legislative supremacy to the 2004 separation-of-powers reform",
+    ],
+  },
+  {
+    id: "civics.ri-general-assembly",
+    claim:
+      "Teaches Rhode Island's Legislature — the General Assembly — as Rhode Island's: a 75-member House of Representatives and a 38-member Senate on 2-year terms; how a bill becomes a Rhode Island law; the comparatively weak gubernatorial veto (overridden by only a three-fifths vote, with no line-item veto, a legacy of legislative supremacy); and that Rhode Island has NO statewide citizen initiative, so constitutional amendments are proposed by the General Assembly and ratified by the voters (as with the 2020 name change and the 2004 reform).",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 4 · The General Assembly and a Supreme Court that serves for life",
+    ],
+  },
+  {
+    id: "civics.ri-life-tenure-court",
+    claim:
+      "Teaches a genuine Rhode Island distinctive: its Supreme Court justices serve for LIFE (during good behavior) — the only state whose highest-court justices have life tenure, like federal judges — chosen by merit selection (a Judicial Nominating Commission sends names to the Governor, who appoints with legislative confirmation), keeping Rhode Island's judges entirely out of elections.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 4 · The General Assembly and a Supreme Court that serves for life",
+    ],
+  },
+  {
+    id: "civics.ri-get-involved",
+    claim:
+      "Teaches getting involved where you live, Rhode Island edition — registering and voting (early in-person voting, mail ballots, online/automatic registration, and voter ID, with the current rules confirmed at the Secretary of State), showing up at your city or town council (or the town meeting / financial town meeting in smaller towns) and school committee, contacting your one Representative and one Senator at the State House in Providence, weighing in on the constitutional amendments Rhode Island voters ratify, and running for local office.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 5 · How to take part where you live",
+    ],
+  },
+
+  // ── State civics: Alaska (state-civics-ak was written FROM Alaska's own sources) ──
+  // Alaska is a notable NON-adopter of the Common Core; its standards are Alaska's own. Its civics
+  // frame is the bespoke Alaska Content Standards for Government and Citizenship (lettered A-G),
+  // whose Standard C — "understand the character of government of the state" — names the Constitution
+  // of Alaska, the state's local governments, and land/resource-ownership obligations, so the Alaska
+  // flagship's own-government lessons (boroughs and the Unorganized Borough, the strong governor, the
+  // Permanent Fund, merit-selection courts, the top-four/ranked-choice election system) have a genuine
+  // home, mapped in data/ak.ts. Alaska is BESPOKE-heavy: data/ak.ts maps the Government and Citizenship
+  // frame AND a bespoke Alaska English/Language Arts frame (Alaska's own 2012 ELA standards, not
+  // Common Core), and adopts the shared NGSS (Alaska's 2019 science standards reproduce HS-ESS3-1
+  // verbatim, same code and text).
+  {
+    id: "civics.ak-constitution-boroughs",
+    claim:
+      "Teaches Alaska's Constitution of 1959 — adopted as Alaska became the 49th state on January 3, 1959, and often praised as one of the best-designed modern state constitutions — and Alaska's most distinctive structural feature: it has NO counties but BOROUGHS (one of only two states, with Louisiana's parishes, that avoids the word “county”), divided into about 19 organized boroughs plus a single, gigantic Unorganized Borough covering roughly half the state, where there is no borough-level government and the STATE (with cities and census areas) provides the county-type services.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 1 · Alaska's 1959 Constitution, and boroughs instead of counties",
+    ],
+  },
+  {
+    id: "civics.ak-executive-legislature",
+    claim:
+      "Teaches Alaska's deliberately strong Governor and small, streamlined executive — Alaskans elect only two statewide officials, the Governor and Lieutenant Governor on a joint ticket, while the Attorney General and department heads are APPOINTED by the Governor (with legislative confirmation) — and Alaska's Legislature (a 40-member House on 2-year terms and a 20-member Senate on 4-year terms, meeting in Juneau, with no term limits and a habit of bipartisan coalitions), plus the Governor's strong veto, including a line-item veto, overridable only by two-thirds (three-quarters for appropriations), one of the highest override bars in the country.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 2 · A strong Governor, a small executive, and the Legislature",
+    ],
+  },
+  {
+    id: "civics.ak-top-four-rcv",
+    claim:
+      "Teaches Alaska's distinctive election system — a “top-four” open primary paired with a ranked-choice general election, adopted by ballot measure in 2020 and first used in 2022 — in which all candidates of every party appear on one primary ballot and the top four advance, then voters rank the finalists in November and last-place candidates are eliminated until someone has a majority; distinguishes it from Washington's top-two, Louisiana's jungle primary, and Maine's plain ranked-choice, and flags it as new and contested (confirm at the Division of Elections).",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 3 · Alaska's “top-four” primary and ranked-choice general election",
+    ],
+  },
+  {
+    id: "civics.ak-permanent-fund",
+    claim:
+      "Teaches how Alaska funds its government from oil wealth: the Alaska Permanent Fund, a state savings-and-investment fund created by a 1976 constitutional amendment into which a share of oil and mineral revenue is deposited and invested; the Permanent Fund Dividend, an annual cash payment to virtually every eligible resident (an amount that changes each year); and that Alaska levies NO state personal income tax and NO statewide sales tax (though local governments may levy local sales taxes), which makes the size of the dividend and how much oil money to spend versus save central civic questions.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 4 · The Permanent Fund Dividend, and why Alaska has no income or sales tax",
+    ],
+  },
+  {
+    id: "civics.ak-courts",
+    claim:
+      "Teaches how Alaska picks its judges — merit selection under the “Missouri Plan”: the nonpartisan Alaska Judicial Council screens applicants and sends the Governor a list of the most qualified, the Governor appoints from that list, and each judge later faces a nonpartisan yes/no retention election — with a 5-justice Alaska Supreme Court at the top, keeping judges out of partisan campaigns while preserving public accountability.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 5 · Judges, direct democracy, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ak-direct-democracy-involved",
+    claim:
+      "Teaches Alaska's strong tools of direct democracy — the citizen initiative (which can enact statutes but not directly amend the constitution; Alaska's own top-four/ranked-choice system came this way in 2020), the referendum, and the recall — and how to take part where you live, Alaska edition: registering and voting under the open top-four primary and ranked-choice general (with broad absentee/by-mail options given Alaska's geography), showing up at the borough assembly and city council (or, in the Unorganized Borough, the city and the state), contacting your one Representative and one Senator in Juneau, and running for local office.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 5 · Judges, direct democracy, and how to take part",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
