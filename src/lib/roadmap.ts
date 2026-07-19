@@ -1138,6 +1138,33 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Iowa + Mississippi mapped** (\`feat/standards-ia-ms\`); the standards finder now covers **34
+  jurisdictions**, and \`/academic-standards?state=IA\` and \`?state=MS\` flip from "not mapped yet" to
+  real pages. **Iowa (23 standards, 14 full, 9 partial)** is inherit-heavy with a bespoke
+  social-studies frame: the mapped codes are the High School Civics/Government (SS.9-12.Gov) and
+  Inquiry (SS.9-12) standards of the current **Iowa Academic Standards for Social Studies (January
+  2026)**, transcribed verbatim from the Iowa DOE. SS.9-12.Gov.18 (the government of the State of
+  Iowa), Gov.20 (Iowa's local governments), and Gov.13 (Iowa election law, the Iowa Caucuses, and
+  redistricting) give the \`state-civics-ia\` flagship a near 1:1 home for its caucuses, nonpartisan
+  Legislative Services Agency redistricting, Missouri-Plan judiciary, 99 counties, and
+  no-citizen-initiative lessons, while the Inquiry source-evaluation anchors (SS.9-12.3, SS.9-12.4)
+  carry the media-literacy method. Iowa's 2024 ELA standards are Common-Core-derived but Iowa revised
+  RI.11-12.6 ("artistry" not "beauty") and WHST.11-12.8 ("credible... recognition of bias" not
+  "authoritative"), so the six RH/RI/WHST grade 11-12 codes are transcribed from Iowa's own document
+  rather than aliased. **Mississippi (12 standards, 7 full, 5 partial)** is bespoke-leaning: the
+  mapped codes are the **2018 MS College- and Career-Readiness Standards for the Social Studies** US
+  Government course (USG) plus the Mississippi Studies course's MS.10, transcribed verbatim from MDE
+  (a browser-user-agent fetch; the site returns 403 to a plain fetch). MS.10 (the structure and
+  function of local and state government in Mississippi) gives the \`state-civics-ms\` flagship a 1:1
+  home for its 1890 constitution, unusually powerful Lieutenant Governor, struck-down 2021 citizen
+  initiative, 82-county board-of-supervisors layer, and nonpartisan elected judiciary, while
+  USG.6.7/6.8 host the media-literacy method. MS's 2025 literacy standards are Common-Core-derived but
+  MS revised RH.11-12.6 ("author's" singular, not "authors'"), so the five RH/WHST grade 11-12 codes
+  are transcribed from MS's own document rather than aliased. Honest gaps published per state: Iowa's
+  science (NGSS as a 2015 lead state, but documented Iowa revisions, so HS-ESS3-1 not confirmed
+  verbatim) and math, and Mississippi's science (its own 2018 standards, NOT NGSS), math, and
+  RI.11-12.6 (in MS's separate ELA document) are deferred rather than blind-aliased. \`NEXT_UP\`
+  advances to **Idaho and West Virginia**. No migration, no seed.
 - 🔧 **Alabama + Louisiana mapped, both bespoke-heavy** (\`feat/standards-al-la\`); the standards
   finder now covers 28 jurisdictions, and \`/academic-standards?state=AL\` and \`?state=LA\` flip from
   "not mapped yet" to real pages. **Alabama (16 standards, 3 full, 13 partial)** writes its own
