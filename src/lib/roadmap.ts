@@ -1138,6 +1138,71 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **West Virginia + Maine mapped** (\`feat/standards-wv-me\`); the standards finder now covers **43
+  jurisdictions**, and \`/academic-standards?state=WV\` and \`?state=ME\` flip from "not mapped yet" to
+  real pages. **West Virginia** is mixed and mostly bespoke: it adopted THEN repealed the Common Core
+  (2015 to 2016), so its ELA is now West Virginia's own (codes ELA.11.x, mapped bespoke and never
+  aliased to the shared Common Core file). Mapped: the WVCCRS **Civics** course (WVBE Policy 2520.4,
+  SS.C.1 through SS.C.22 plus two Economics standards), transcribed verbatim from the WVDE Social
+  Studies resource booklet, where SS.C.20 (state and local government) and SS.C.13 (state judicial
+  systems) host West Virginia's own government (Constitution of 1872, plural executive with no
+  Lieutenant Governor, 100 Delegates and 34 Senators, the 2015 switch to nonpartisan judicial
+  elections and the 2022 Intermediate Court of Appeals, 55 counties), and SS.C.17 hosts the BVC
+  media-literacy method; plus a bespoke **Grade 11 ELA** framework (Policy 2520.1A). West Virginia
+  **science** is deferred honestly (its NGSS-derived standards are only available as image-only scans,
+  so verbatim-or-nothing keeps it in "what we don't claim"). **Maine** is mixed: it adopted the
+  **NGSS** verbatim in 2019 (LD 283), so the shared NGSS file is adopted with no aliases, but its ELA
+  and social studies are Maine's own. Mapped: the **Maine Learning Results** Civics and Government
+  (Civics and Government 1 and 2) and History (History 1 and 2) strands, Grades 9 to Diploma,
+  transcribed verbatim from the 2019 Maine DOE strand PDFs, hosting Maine's own government (Constitution
+  of 1820 and the split from Massachusetts, the Governor as the only statewide-elected official with
+  the Attorney General, Secretary of State, and Treasurer elected by the Legislature, first-in-nation
+  ranked-choice voting, the citizen initiative and people's veto, the appointed Law Court, town
+  meeting, and Nebraska-style split electoral votes); plus a bespoke **Grade 9 to Diploma ELA**
+  framework (Maine reorganized and reworded the Common Core into its own strands, so it is mapped
+  bespoke rather than aliased). Maine's Economics and Geography strands are deferred to a later pass.
+  \`NEXT_UP\` advances to **North Dakota and South Dakota**. No migration, no seed.
+- 🔧 **Rhode Island + Alaska mapped** (\`feat/standards-ri-ak\`); the standards finder now covers **43
+  jurisdictions**, and \`/academic-standards?state=RI\` and \`?state=AK\` flip from "not mapped yet" to
+  real pages. **Rhode Island (19 civics standards, 5 full, 14 partial)** is inherit-heavy: it adopts
+  the shared Common Core ELA (adopted July 1, 2010) and NGSS (Rhode Island was the first state to
+  adopt NGSS, spring 2013) verbatim, and maps the bespoke **Rhode Island Social Studies Standards
+  (2023)** High School Civics frame (SSHS.CVC), transcribed verbatim from RIDE. SSHS.CVC.4.5 (state,
+  local, and tribal governments) is the \`state-civics-ri\` flagship's home for the
+  no-county-governments, 2004 separation-of-powers, life-tenure Supreme Court, and 2020 name-change
+  lessons, while SSHS.CVC.3.2/2.4 (ratification) and SSHS.CVC.6.3 (the Dorr Rebellion) carry Rhode
+  Island's own history. **Alaska (5 Government and Citizenship standards + 6 bespoke ELA standards, 6
+  full)** is bespoke-heavy because Alaska is a notable non-adopter of the Common Core: its **Government
+  and Citizenship** content standards (A to G) anchor the \`state-civics-ak\` flagship at Standard C
+  ("the character of government of the state") for boroughs and the Unorganized Borough, the strong
+  governor, the Permanent Fund, merit-selection courts, and the top-four/ranked-choice election
+  system; its **2012 ELA** standards are Alaska's own (its informational-text strand is edited away
+  from the Common Core), so they are mapped as an own framework, not an alias; and its **2019 science**
+  standards reproduce NGSS HS-ESS3-1 verbatim, so NGSS is adopted. Both states publish honest reject
+  lists (tribal governance, international affairs). NEXT_UP advances to North Dakota + South Dakota.
+- 🔧 **Delaware + Montana mapped** (\`feat/standards-de-mt\`); the standards finder now covers **43
+  jurisdictions**, and \`/academic-standards?state=DE\` and \`?state=MT\` flip from "not mapped yet" to
+  real pages. **Delaware (20 standards, 8 full)** is inherit-heavy with a bespoke social-studies
+  frame: the mapped codes are the Grades 9-12 End of Cluster Expectations of the **Delaware Social
+  Studies Standards** (Civics, Economics, Geography, and History strands), transcribed verbatim from
+  the University of Delaware DSSEP mirror (education.delaware.gov is JavaScript-rendered and returns
+  no benchmark text). The Civics strand's four anchor standards (Government, Politics, Citizenship,
+  Participation) give the \`state-civics-de\` flagship a home for Delaware's signature civics: the
+  only state that amends its constitution with no public vote, the Court of Chancery corporate
+  capital, the constitutional major-party balance on its bench, and its three counties. Delaware also
+  adopts the Common Core for ELA (2010; text verbatim, canonical CCSS codes, code-print style
+  unverified and labeled as a fallback) and the NGSS (7th state to adopt, September 2013; verbatim).
+  **Montana (23 standards, 5 full)** is bespoke across the board and shaped by **Indian Education for
+  All**: the mapped codes are the Grades 9-12 civics/economics/geography/history standards of the
+  **Montana Content Standards for Social Studies** (adopted November 2020, effective July 2021),
+  Montana's own IEFA-rewritten Grades 11-12 ELA/literacy standards (Common Core numbering but
+  Montana's own text, so cited bespoke rather than aliased), and Montana's own 2016 Earth and Space
+  Science standards. Civics-and-government (1)(e), (1)(i), and (1)(j) host the \`state-civics-mt\`
+  flagship's 1972 constitution (clean-and-healthful-environment, privacy, and right-to-know rights),
+  its biennial 90-day citizen Legislature, and its strong direct democracy. Every tribal-sovereignty
+  and American Indian standard and clause is faithfully rejected, because the catalog teaches neither
+  tribal governments nor American Indian history, and published loudly under "What we don't claim."
+  **NEXT_UP advances to North Dakota and South Dakota.**
 - 🔧 **Iowa + Mississippi mapped** (\`feat/standards-ia-ms\`); the standards finder now covers **34
   jurisdictions**, and \`/academic-standards?state=IA\` and \`?state=MS\` flip from "not mapped yet" to
   real pages. **Iowa (23 standards, 14 full, 9 partial)** is inherit-heavy with a bespoke

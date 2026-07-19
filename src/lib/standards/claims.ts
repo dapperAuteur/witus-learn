@@ -3314,6 +3314,400 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "New Hampshire Civics, Lesson 5 · Town meeting, local government, and how to take part",
     ],
   },
+
+  // ── State civics: West Virginia (state-civics-wv was written FROM West Virginia's own sources) ──
+  // West Virginia's Civics course standards (WVBE Policy 2520.4, the WVCCRS for Social Studies, SS.C.1
+  // to SS.C.43) are, like most states', pitched at the U.S. system — there is no standard that names
+  // the West Virginia Constitution the way New Hampshire's SS:CV:12:2.1 names New Hampshire's. But two
+  // of West Virginia's standards are explicitly STATE-AND-LOCAL: SS.C.13 (the "local, state and
+  // national judicial systems") and SS.C.20 (the "structure of local government" and how "state and
+  // local government impact the lives of citizens"), and SS.C.1 asks students to "actively participate
+  // ... through community service." Those give the West Virginia flagship's own-government lessons a
+  // genuine home, mapped in data/wv.ts. West Virginia is a MIXED/BESPOKE state: it adopted then
+  // REPEALED the Common Core (2015-16), so its ELA is now West Virginia's own (WV codes ELA.11.x, not
+  // the CCSS codes — so it is mapped bespoke, never aliased to the shared Common Core file), and its
+  // Civics course is West Virginia's own. Each state-specific claim below teaches WEST VIRGINIA'S
+  // version of state government from its own official sources (wvlegislature.gov, sos.wv.gov,
+  // courtswv.gov, and the West Virginia Constitution of 1872).
+  {
+    id: "civics.wv-origin-constitution",
+    claim:
+      "Teaches West Virginia's singular origin — the ONLY U.S. state created by breaking away from another state, its pro-Union western counties splitting from Virginia and joining the Union on June 20, 1863, a birth out of the Civil War itself (the U.S. Constitution normally forbids carving a new state out of an existing one without its consent) — and that West Virginia governs today under its Constitution of 1872 (its second, replacing the 1863 founding constitution).",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 1 · The only state born by breaking away from another",
+    ],
+  },
+  {
+    id: "civics.wv-executive",
+    claim:
+      "Teaches West Virginia's plural executive as West Virginia's: voters elect several statewide officers to 4-year terms — the Governor, the Secretary of State (who runs elections), the Attorney General, the State Auditor, the State Treasurer, and the Commissioner of Agriculture — and there is NO Lieutenant Governor: by statute the President of the Senate carries that title and is first in line to succeed the Governor (as in Tennessee), and the Governor's veto is weak, overridden on most bills by a simple majority (budget and supplementary-appropriations bills require a two-thirds override).",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 2 · The executive and the Legislature",
+    ],
+  },
+  {
+    id: "civics.wv-legislature",
+    claim:
+      "Teaches West Virginia's Legislature as West Virginia's: a bicameral body meeting in Charleston with a 100-member House of Delegates (2-year terms) and a 34-member Senate (4-year terms), a part-time citizen legislature with a fixed annual session of 60 days in most years.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 2 · The executive and the Legislature",
+    ],
+  },
+  {
+    id: "civics.wv-courts",
+    claim:
+      "Teaches West Virginia's judiciary as West Virginia's, including two recent changes worth knowing: West Virginia elects its judges but SWITCHED FROM PARTISAN TO NONPARTISAN judicial elections in 2015 (judges now run without party labels), and in 2022 it CREATED a new Intermediate Court of Appeals, having long been one of the few states with no intermediate appellate court; its highest court is the distinctively named Supreme Court of Appeals of West Virginia (5 justices, elected nonpartisan to 12-year terms).",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 3 · How West Virginia picks its judges (a recent switch to nonpartisan)",
+    ],
+  },
+  {
+    id: "civics.wv-lawmaking",
+    claim:
+      "Teaches how a bill becomes a West Virginia law (introduction in the House of Delegates or Senate during the 60-day session, committee review, floor votes in both chambers, then the Governor's signature, veto with a simple-majority override for most bills or two-thirds for budget bills, or line-item veto of appropriations) and that West Virginia has NO statewide citizen initiative: constitutional amendments are proposed by a two-thirds vote of the Legislature and ratified by the voters.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wv-local-government",
+    claim:
+      "Teaches West Virginia local government as West Virginia's: 55 counties governed by elected county commissions alongside other elected county officials (sheriff, clerk, assessor, prosecuting attorney), plus cities and towns that provide municipal services (some larger cities holding home-rule charters under West Virginia's recently expanded municipal home rule), county school systems, and special districts.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wv-get-involved",
+    claim:
+      "Teaches getting involved where you live, West Virginia edition — registering and voting (early in-person and absentee voting, with ID, administered by county clerks, so confirm current rules at sos.wv.gov), showing up at county commissions, city and town councils, and county boards of education, contacting your Delegate-district team and Senator in Charleston during the short 60-day session, researching candidates in the now-nonpartisan judicial elections where party labels no longer guide you, and running for county board of education, city council, or county commission.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+
+  // ── State civics: Maine (state-civics-me was written FROM Maine's own sources) ──
+  // Maine's Learning Results for Social Studies (Civics & Government strand, Grades 9-Diploma)
+  // explicitly name Maine — the strand Standard is about "the role of citizens in the community,
+  // Maine, the United States, and world," and Civics & Government 3 names "the political structures
+  // and civic responsibilities of the diverse historic and current cultures of Maine." So Maine's own
+  // government (the Constitution of 1820, the Governor-only statewide executive, ranked-choice voting,
+  // the citizen initiative and people's veto, the appointed judiciary, town meeting) has a genuine home,
+  // mapped in data/me.ts. Maine is a MIXED state: it ADOPTED the NGSS verbatim in 2019 (data/me.ts
+  // adopts the shared NGSS file), its ELA is Common-Core-DERIVED but REORGANIZED into Maine's own
+  // strands/standards and reworded (so it is mapped BESPOKE, never aliased to the shared Common Core
+  // file — the text and codes differ), and its Social Studies is Maine's own. Each state-specific claim
+  // below teaches MAINE'S version of state government from its own official sources
+  // (legislature.maine.gov, maine.gov/sos, courts.maine.gov, and the Maine Constitution of 1820).
+  {
+    id: "civics.me-constitution",
+    claim:
+      "Teaches Maine's Constitution of 1820 and its origin: until 1820 Maine was the “District of Maine” within Massachusetts, and it separated to be admitted as the 23rd state on March 15, 1820, as part of the Missouri Compromise (Maine entering as a free state to balance Missouri as a slave state), giving Maine New England traditions (like the town meeting) it shares with Massachusetts alongside its own distinctive constitutional design.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 1 · Maine's Constitution of 1820 (and its split from Massachusetts)",
+    ],
+  },
+  {
+    id: "civics.me-executive",
+    claim:
+      "Teaches Maine's distinctive executive: the Governor is the ONLY official Mainers elect statewide (a 4-year term limited to two consecutive terms), there is NO Lieutenant Governor (the President of the Senate is next in line to succeed), and the Attorney General, Secretary of State, and Treasurer — plus the State Auditor — are elected BY THE LEGISLATURE rather than by the voters, Maine being one of only a handful of states where the Legislature elects the Attorney General.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 2 · Maine's executive: the Governor is the only statewide-elected official",
+    ],
+  },
+  {
+    id: "civics.me-ranked-choice",
+    claim:
+      "Teaches ranked-choice voting as Maine's signature election reform: Maine was the FIRST state to adopt ranked-choice voting statewide (by citizen initiative in 2016), how it works (voters rank candidates; if no one has a majority of first choices the last-place candidate is eliminated and those ballots transfer to each voter's next choice, round by round, until a candidate has a majority), and the constitutional nuance that limits it — Maine's constitution requires a plurality for state general elections, so ranked-choice voting applies to all primaries and to federal general elections but NOT to the general election for Governor or the state Legislature.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 3 · Ranked-choice voting: Maine went first",
+    ],
+  },
+  {
+    id: "civics.me-direct-democracy",
+    claim:
+      "Teaches Maine's two roads to law: through the Legislature — a part-time citizen legislature of a 151-member House and a 35-member Senate (2-year terms, limited to four consecutive terms), using joint standing committees shared by both chambers, with a two-thirds veto override — and directly by the voters, through the citizen initiative (an indirect initiative, since the Legislature gets first look and may enact it or offer a competing measure) and the “people's veto,” a citizen petition to suspend a law the Legislature just passed and send it to the voters to accept or reject.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 4 · How a bill becomes law, plus the initiative and 'people's veto'",
+    ],
+  },
+  {
+    id: "civics.me-courts",
+    claim:
+      "Teaches how Maine picks its judges — appointment, not election: the Governor nominates, the Legislature confirms, and judges serve renewable 7-year terms (the New England pattern Maine shares with Massachusetts, keeping judges out of campaigns), with the Supreme Judicial Court at the top, called the “Law Court” when it hears appeals.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 5 · Appointed judges, town meetings, and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.me-local-electoral",
+    claim:
+      "Teaches Maine local government and its split presidential vote as Maine's: a town-based state where many communities still govern by open town meeting (any registered voter may attend, speak, and vote on the town budget and ordinances), 16 counties that handle courts, jails, sheriffs, and registries, large stretches of “unorganized territory” with no municipal government where the state and county provide services directly, and Maine's practice (with Nebraska) of splitting its presidential electoral votes by congressional district — two electors to the statewide winner and one to the winner of each of Maine's two districts, so its electors can divide between candidates.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 5 · Appointed judges, town meetings, and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.me-get-involved",
+    claim:
+      "Teaches getting involved where you live, Maine edition — registering and voting (with same-day, Election-Day registration) and ranking candidates in the elections that use ranked-choice voting, going to open town meeting to vote directly on the budget and local ordinances, using Maine's direct-democracy levers (signing or circulating a citizen initiative or a people's veto petition), contacting your one Representative and one Senator in Augusta (a famously accessible citizen legislature), and running for select board, school board, town or city council, or county office.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 6 · How to take part where you live",
+    ],
+  },
+  // ── State civics: Rhode Island (state-civics-ri was written FROM Rhode Island's own sources) ──
+  // The Rhode Island Social Studies Standards (2023, C3-based; HS Civics codes SSHS.CVC.<topic>.<n>)
+  // are bespoke and, unusually, name RHODE ISLAND explicitly in several places — SSHS.CVC.4.5 (state,
+  // local, and tribal governments, and the powers of "the state of Rhode Island" and the Narragansett),
+  // SSHS.CVC.2.4/3.2 (Rhode Island's refusal to send a delegate to, and reluctance to ratify from, the
+  // Constitutional Convention), and SSHS.CVC.6.3 (the Dorr Rebellion in Rhode Island as a change in
+  // voting requirements) — so the Rhode Island flagship's own-government lessons (no county governments,
+  // the 2004 separation-of-powers reform, a Supreme Court with life tenure, the 2020 name change) have a
+  // genuine home, mapped in data/ri.ts. Rhode Island is INHERIT-heavy: it adopted the Common Core
+  // (July 1, 2010) for ELA/math and was the FIRST state to adopt the NGSS (spring 2013), so data/ri.ts
+  // adopts the two shared frameworks and maps the bespoke 2023 civics frame here.
+  {
+    id: "civics.ri-name-founding",
+    claim:
+      "Teaches Rhode Island as the smallest state, founded by Roger Williams in 1636 as a haven for religious freedom and the separation of church and state, and the last of the original 13 colonies to ratify the U.S. Constitution (the 13th state, May 29, 1790), holding out until a Bill of Rights was assured; teaches that Rhode Island governs under a constitution first adopted in 1843 — which ended a property-restricted franchise after the Dorr Rebellion expanded suffrage — and that in 2020 its voters removed “and Providence Plantations” from the official name.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 1 · The smallest state, its founding, and its 2020 name change",
+    ],
+  },
+  {
+    id: "civics.ri-no-counties",
+    claim:
+      "Teaches Rhode Island local government as Rhode Island's: 5 counties that exist only as geographic and judicial reference areas with NO county governments (no commissioners, councils, budgets, or services), so its 39 cities and towns are the workhorse of local government — schools, police, roads, zoning — with some smaller towns still using a town meeting or financial town meeting, a two-tier state-and-municipality structure shared with only a handful of New England states.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 2 · Counties on the map, but no county governments",
+    ],
+  },
+  {
+    id: "civics.ri-separation-powers",
+    claim:
+      "Teaches Rhode Island's long tradition of legislative supremacy — a General Assembly so dominant that legislators sat on and controlled the executive boards and commissions that ran state agencies — and the landmark 2004 constitutional “separation of powers” amendment that removed legislators from those boards and strengthened the Governor and the executive branch; teaches Rhode Island's plural executive (the Governor, a separately elected Lieutenant Governor, the Secretary of State, the Attorney General, and the General Treasurer, each on a 4-year term).",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 3 · From legislative supremacy to the 2004 separation-of-powers reform",
+    ],
+  },
+  {
+    id: "civics.ri-general-assembly",
+    claim:
+      "Teaches Rhode Island's Legislature — the General Assembly — as Rhode Island's: a 75-member House of Representatives and a 38-member Senate on 2-year terms; how a bill becomes a Rhode Island law; the comparatively weak gubernatorial veto (overridden by only a three-fifths vote, with no line-item veto, a legacy of legislative supremacy); and that Rhode Island has NO statewide citizen initiative, so constitutional amendments are proposed by the General Assembly and ratified by the voters (as with the 2020 name change and the 2004 reform).",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 4 · The General Assembly and a Supreme Court that serves for life",
+    ],
+  },
+  {
+    id: "civics.ri-life-tenure-court",
+    claim:
+      "Teaches a genuine Rhode Island distinctive: its Supreme Court justices serve for LIFE (during good behavior) — the only state whose highest-court justices have life tenure, like federal judges — chosen by merit selection (a Judicial Nominating Commission sends names to the Governor, who appoints with legislative confirmation), keeping Rhode Island's judges entirely out of elections.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 4 · The General Assembly and a Supreme Court that serves for life",
+    ],
+  },
+  {
+    id: "civics.ri-get-involved",
+    claim:
+      "Teaches getting involved where you live, Rhode Island edition — registering and voting (early in-person voting, mail ballots, online/automatic registration, and voter ID, with the current rules confirmed at the Secretary of State), showing up at your city or town council (or the town meeting / financial town meeting in smaller towns) and school committee, contacting your one Representative and one Senator at the State House in Providence, weighing in on the constitutional amendments Rhode Island voters ratify, and running for local office.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 5 · How to take part where you live",
+    ],
+  },
+
+  // ── State civics: Alaska (state-civics-ak was written FROM Alaska's own sources) ──
+  // Alaska is a notable NON-adopter of the Common Core; its standards are Alaska's own. Its civics
+  // frame is the bespoke Alaska Content Standards for Government and Citizenship (lettered A-G),
+  // whose Standard C — "understand the character of government of the state" — names the Constitution
+  // of Alaska, the state's local governments, and land/resource-ownership obligations, so the Alaska
+  // flagship's own-government lessons (boroughs and the Unorganized Borough, the strong governor, the
+  // Permanent Fund, merit-selection courts, the top-four/ranked-choice election system) have a genuine
+  // home, mapped in data/ak.ts. Alaska is BESPOKE-heavy: data/ak.ts maps the Government and Citizenship
+  // frame AND a bespoke Alaska English/Language Arts frame (Alaska's own 2012 ELA standards, not
+  // Common Core), and adopts the shared NGSS (Alaska's 2019 science standards reproduce HS-ESS3-1
+  // verbatim, same code and text).
+  {
+    id: "civics.ak-constitution-boroughs",
+    claim:
+      "Teaches Alaska's Constitution of 1959 — adopted as Alaska became the 49th state on January 3, 1959, and often praised as one of the best-designed modern state constitutions — and Alaska's most distinctive structural feature: it has NO counties but BOROUGHS (one of only two states, with Louisiana's parishes, that avoids the word “county”), divided into about 19 organized boroughs plus a single, gigantic Unorganized Borough covering roughly half the state, where there is no borough-level government and the STATE (with cities and census areas) provides the county-type services.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 1 · Alaska's 1959 Constitution, and boroughs instead of counties",
+    ],
+  },
+  {
+    id: "civics.ak-executive-legislature",
+    claim:
+      "Teaches Alaska's deliberately strong Governor and small, streamlined executive — Alaskans elect only two statewide officials, the Governor and Lieutenant Governor on a joint ticket, while the Attorney General and department heads are APPOINTED by the Governor (with legislative confirmation) — and Alaska's Legislature (a 40-member House on 2-year terms and a 20-member Senate on 4-year terms, meeting in Juneau, with no term limits and a habit of bipartisan coalitions), plus the Governor's strong veto, including a line-item veto, overridable only by two-thirds (three-quarters for appropriations), one of the highest override bars in the country.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 2 · A strong Governor, a small executive, and the Legislature",
+    ],
+  },
+  {
+    id: "civics.ak-top-four-rcv",
+    claim:
+      "Teaches Alaska's distinctive election system — a “top-four” open primary paired with a ranked-choice general election, adopted by ballot measure in 2020 and first used in 2022 — in which all candidates of every party appear on one primary ballot and the top four advance, then voters rank the finalists in November and last-place candidates are eliminated until someone has a majority; distinguishes it from Washington's top-two, Louisiana's jungle primary, and Maine's plain ranked-choice, and flags it as new and contested (confirm at the Division of Elections).",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 3 · Alaska's “top-four” primary and ranked-choice general election",
+    ],
+  },
+  {
+    id: "civics.ak-permanent-fund",
+    claim:
+      "Teaches how Alaska funds its government from oil wealth: the Alaska Permanent Fund, a state savings-and-investment fund created by a 1976 constitutional amendment into which a share of oil and mineral revenue is deposited and invested; the Permanent Fund Dividend, an annual cash payment to virtually every eligible resident (an amount that changes each year); and that Alaska levies NO state personal income tax and NO statewide sales tax (though local governments may levy local sales taxes), which makes the size of the dividend and how much oil money to spend versus save central civic questions.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 4 · The Permanent Fund Dividend, and why Alaska has no income or sales tax",
+    ],
+  },
+  {
+    id: "civics.ak-courts",
+    claim:
+      "Teaches how Alaska picks its judges — merit selection under the “Missouri Plan”: the nonpartisan Alaska Judicial Council screens applicants and sends the Governor a list of the most qualified, the Governor appoints from that list, and each judge later faces a nonpartisan yes/no retention election — with a 5-justice Alaska Supreme Court at the top, keeping judges out of partisan campaigns while preserving public accountability.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 5 · Judges, direct democracy, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ak-direct-democracy-involved",
+    claim:
+      "Teaches Alaska's strong tools of direct democracy — the citizen initiative (which can enact statutes but not directly amend the constitution; Alaska's own top-four/ranked-choice system came this way in 2020), the referendum, and the recall — and how to take part where you live, Alaska edition: registering and voting under the open top-four primary and ranked-choice general (with broad absentee/by-mail options given Alaska's geography), showing up at the borough assembly and city council (or, in the Unorganized Borough, the city and the state), contacting your one Representative and one Senator in Juneau, and running for local office.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 5 · Judges, direct democracy, and how to take part",
+    ],
+  },
+  // ── State civics: Delaware (state-civics-de was written FROM Delaware's own sources) ──
+  // NOTE: Delaware's Social Studies Standards are a bespoke four-strand frame (Civics, Economics,
+  // Geography, History); the Civics strand's four anchor standards — Government, Politics,
+  // Citizenship, Participation — host the Delaware flagship at the Grades 9-12 cluster level.
+  // Delaware is INHERIT-heavy: it adopted the Common Core (2010) for ELA and the NGSS (7th state,
+  // September 19, 2013) for science, so data/de.ts adopts the two shared frameworks and maps the
+  // bespoke social-studies strands there. See data/de.ts.
+  {
+    id: "civics.de-constitution-unique",
+    claim:
+      "Teaches Delaware as “The First State” (first to ratify the U.S. Constitution, December 7, 1787), governed under its Constitution of 1897, and the ONLY state that can amend its constitution WITHOUT a public vote — the General Assembly alone amends it by a two-thirds vote of each chamber in two consecutive sessions (with an intervening legislative election) and no referendum, making the elected Legislature unusually powerful over the state's fundamental law.",
+    courseSlugs: ["state-civics-de"],
+    lessons: [
+      "Delaware Civics, Lesson 1 · The only state that amends its constitution without a public vote",
+    ],
+  },
+  {
+    id: "civics.de-chancery",
+    claim:
+      "Teaches Delaware as the corporate capital of America — most of the Fortune 500 and a large share of publicly traded companies are incorporated in Delaware — and its distinctive Court of Chancery, a court of equity with NO juries whose Chancellor and Vice Chancellors are experts in corporate and business law, producing a deep body of precedent that resolves shareholder, merger, and governance disputes and gives a small state outsized influence over how American businesses are governed (and major incorporation-fee revenue).",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 2 · The corporate capital of America and the Court of Chancery"],
+  },
+  {
+    id: "civics.de-executive-legislature",
+    claim:
+      "Teaches Delaware's plural executive (a Governor and separately elected Lieutenant Governor who may be of different parties, plus a separately elected Attorney General, Treasurer, Auditor, and Insurance Commissioner; the Governor serves a 4-year term limited to two) and its small, part-time bicameral General Assembly in Dover — a 41-member House on 2-year terms and a 21-member Senate on 4-year terms — with the Governor's veto overridden by a three-fifths vote of each chamber.",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 3 · The executive and the General Assembly"],
+  },
+  {
+    id: "civics.de-courts",
+    claim:
+      "Teaches Delaware's appointed judiciary — the Governor nominates and the Senate confirms judges for 12-year terms — with a rare constitutional “major-party balance” requirement that no more than a bare majority of judges on its major courts may belong to one political party and the rest must belong to the other major party, making the bench roughly bipartisan by constitution (a rule that has been litigated), topped by a 5-justice Delaware Supreme Court, and flags learners to confirm current details at courts.delaware.gov.",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 4 · A politically balanced bench, and how a bill becomes law"],
+  },
+  {
+    id: "civics.de-lawmaking",
+    claim:
+      "Teaches how a bill becomes a Delaware law (introduction in the House or Senate, committee review, floor votes in both chambers, then the Governor's signature, veto with a three-fifths override, or passive enactment) and that Delaware has NO citizen initiative — Delawareans cannot petition a statute or amendment onto the ballot, and do not even vote on constitutional amendments — so lawmaking is channeled through the elected General Assembly more completely than almost anywhere else.",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 4 · A politically balanced bench, and how a bill becomes law"],
+  },
+  {
+    id: "civics.de-local-government",
+    claim:
+      "Teaches Delaware local government as Delaware's: the fewest counties of any state — just three (New Castle, Kent, and Sussex), each governed by an elected county council or Levy Court handling land use, some services, and property assessment — plus cities and towns (such as Wilmington and Dover) providing municipal services and locally operated school districts, with much handled at the state level because Delaware is small and its state government strong.",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 5 · Local government (just three counties) and how to take part"],
+  },
+  {
+    id: "civics.de-get-involved",
+    claim:
+      "Teaches getting involved where you live, Delaware edition — registering and voting (with a standing flag to confirm current early-voting and same-day-registration rules, which have been litigated under Delaware's constitution, at elections.delaware.gov), attending county council/Levy Court, city or town council, and school-board meetings, contacting your one Representative and one Senator in Dover (whose power to amend the constitution alone gives such contact real weight), and running for local office.",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 5 · Local government (just three counties) and how to take part"],
+  },
+  // ── State civics: Montana (state-civics-mt was written FROM Montana's own sources) ──
+  // NOTE: Montana's Content Standards for Social Studies (2020/2021, ARM New Rule IX) are a bespoke
+  // four-area frame (civics and government, economics, geography, history) saturated with Indian
+  // Education for All. Montana is BESPOKE across ELA (Common Core numbering but IEFA-rewritten
+  // text), science (Montana's own 2016 standards), and social studies — data/mt.ts adopts NO shared
+  // framework. The flagship's Montana-structure lessons (the 1972 Constitution, the biennial 90-day
+  // Legislature, the plural executive, the nonpartisan judiciary, direct democracy, 56 counties) map
+  // where the federal/comparative 9-12 civics standards reach — (1)(e), (1)(i), (1)(j). See data/mt.ts.
+  {
+    id: "civics.mt-constitution",
+    claim:
+      "Teaches Montana's Constitution of 1972 — rewritten by an elected citizens' constitutional convention (not sitting politicians) from the 1889 constitution — and its distinctive guarantees: the right to a clean and healthful environment (one of the strongest environmental-rights clauses in any U.S. constitution, enforced in real cases), unusually strong individual privacy rights that go beyond the federal Constitution, and an express right to know and right of participation in government.",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 1 · Montana's remarkable 1972 constitution"],
+  },
+  {
+    id: "civics.mt-legislature",
+    claim:
+      "Teaches Montana's citizen Legislature — 100 representatives on 2-year terms and 50 senators on 4-year terms — that meets only every other year, in odd-numbered years, for 90 legislative days, so lawmakers live and work in their communities most of the time; with voter-imposed term limits (generally 8 years in a 16-year period for an office) and a two-thirds veto override that can even be conducted by a mail poll of legislators after the session ends.",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 2 · A citizen Legislature that meets 90 days every other year"],
+  },
+  {
+    id: "civics.mt-executive-courts",
+    claim:
+      "Teaches Montana's plural executive — a Governor and Lieutenant Governor on a joint ticket, plus a separately elected Secretary of State, Attorney General, State Auditor (who also serves as Commissioner of Securities and Insurance), and Superintendent of Public Instruction, all on 4-year terms with term limits — and its nonpartisan elected judiciary: a seven-justice Supreme Court elected to 8-year terms and district judges to 6-year terms, with the Governor filling mid-term vacancies from a Judicial Nomination Commission list (Senate-confirmed) before the appointee must stand for election.",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 3 · The executive and how Montana picks its judges"],
+  },
+  {
+    id: "civics.mt-direct-democracy",
+    claim:
+      "Teaches Montana's strong direct democracy — the initiative (citizens gather signatures to put a statute OR a constitutional amendment on the ballot, as Montanans did for term limits) and the referendum to reject a law the Legislature passed — and how a bill becomes a Montana law in the biennial 90-day session (public committee hearings under the right to participate, floor votes, and the Governor's signature, a veto with a two-thirds override, or an amendatory veto returning a bill with suggested changes).",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 4 · Direct democracy and how a bill becomes law"],
+  },
+  {
+    id: "civics.mt-local-government",
+    claim:
+      "Teaches Montana local government as Montana's: 56 geographically huge, sparsely populated counties governed by elected boards of county commissioners; cities and towns, some under self-government (home-rule) charters the constitution encourages; school and special districts; and the 1972 constitution's distinctive requirement of periodic local “voter review” of government structure, letting communities revisit how they are organized.",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 5 · Local government and how to take part"],
+  },
+  {
+    id: "civics.mt-get-involved",
+    claim:
+      "Teaches getting involved where you live, Montana edition — registering and voting (absentee/mail voting, useful given Montana's distances, and ID rules to confirm at sosmt.gov, since they have changed and been litigated), signing or circulating an initiative or referendum, exercising the constitutional right to know to follow government documents and meetings, showing up at county commissions, city and town councils, and school boards, contacting your legislators in Helena, and running for local office.",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 5 · Local government and how to take part"],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
