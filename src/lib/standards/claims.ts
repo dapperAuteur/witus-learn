@@ -3314,6 +3314,72 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "New Hampshire Civics, Lesson 5 · Town meeting, local government, and how to take part",
     ],
   },
+
+  // ── State civics: Rhode Island (state-civics-ri was written FROM Rhode Island's own sources) ──
+  // The Rhode Island Social Studies Standards (2023, C3-based; HS Civics codes SSHS.CVC.<topic>.<n>)
+  // are bespoke and, unusually, name RHODE ISLAND explicitly in several places — SSHS.CVC.4.5 (state,
+  // local, and tribal governments, and the powers of "the state of Rhode Island" and the Narragansett),
+  // SSHS.CVC.2.4/3.2 (Rhode Island's refusal to send a delegate to, and reluctance to ratify from, the
+  // Constitutional Convention), and SSHS.CVC.6.3 (the Dorr Rebellion in Rhode Island as a change in
+  // voting requirements) — so the Rhode Island flagship's own-government lessons (no county governments,
+  // the 2004 separation-of-powers reform, a Supreme Court with life tenure, the 2020 name change) have a
+  // genuine home, mapped in data/ri.ts. Rhode Island is INHERIT-heavy: it adopted the Common Core
+  // (July 1, 2010) for ELA/math and was the FIRST state to adopt the NGSS (spring 2013), so data/ri.ts
+  // adopts the two shared frameworks and maps the bespoke 2023 civics frame here.
+  {
+    id: "civics.ri-name-founding",
+    claim:
+      "Teaches Rhode Island as the smallest state, founded by Roger Williams in 1636 as a haven for religious freedom and the separation of church and state, and the last of the original 13 colonies to ratify the U.S. Constitution (the 13th state, May 29, 1790), holding out until a Bill of Rights was assured; teaches that Rhode Island governs under a constitution first adopted in 1843 — which ended a property-restricted franchise after the Dorr Rebellion expanded suffrage — and that in 2020 its voters removed “and Providence Plantations” from the official name.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 1 · The smallest state, its founding, and its 2020 name change",
+    ],
+  },
+  {
+    id: "civics.ri-no-counties",
+    claim:
+      "Teaches Rhode Island local government as Rhode Island's: 5 counties that exist only as geographic and judicial reference areas with NO county governments (no commissioners, councils, budgets, or services), so its 39 cities and towns are the workhorse of local government — schools, police, roads, zoning — with some smaller towns still using a town meeting or financial town meeting, a two-tier state-and-municipality structure shared with only a handful of New England states.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 2 · Counties on the map, but no county governments",
+    ],
+  },
+  {
+    id: "civics.ri-separation-powers",
+    claim:
+      "Teaches Rhode Island's long tradition of legislative supremacy — a General Assembly so dominant that legislators sat on and controlled the executive boards and commissions that ran state agencies — and the landmark 2004 constitutional “separation of powers” amendment that removed legislators from those boards and strengthened the Governor and the executive branch; teaches Rhode Island's plural executive (the Governor, a separately elected Lieutenant Governor, the Secretary of State, the Attorney General, and the General Treasurer, each on a 4-year term).",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 3 · From legislative supremacy to the 2004 separation-of-powers reform",
+    ],
+  },
+  {
+    id: "civics.ri-general-assembly",
+    claim:
+      "Teaches Rhode Island's Legislature — the General Assembly — as Rhode Island's: a 75-member House of Representatives and a 38-member Senate on 2-year terms; how a bill becomes a Rhode Island law; the comparatively weak gubernatorial veto (overridden by only a three-fifths vote, with no line-item veto, a legacy of legislative supremacy); and that Rhode Island has NO statewide citizen initiative, so constitutional amendments are proposed by the General Assembly and ratified by the voters (as with the 2020 name change and the 2004 reform).",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 4 · The General Assembly and a Supreme Court that serves for life",
+    ],
+  },
+  {
+    id: "civics.ri-life-tenure-court",
+    claim:
+      "Teaches a genuine Rhode Island distinctive: its Supreme Court justices serve for LIFE (during good behavior) — the only state whose highest-court justices have life tenure, like federal judges — chosen by merit selection (a Judicial Nominating Commission sends names to the Governor, who appoints with legislative confirmation), keeping Rhode Island's judges entirely out of elections.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 4 · The General Assembly and a Supreme Court that serves for life",
+    ],
+  },
+  {
+    id: "civics.ri-get-involved",
+    claim:
+      "Teaches getting involved where you live, Rhode Island edition — registering and voting (early in-person voting, mail ballots, online/automatic registration, and voter ID, with the current rules confirmed at the Secretary of State), showing up at your city or town council (or the town meeting / financial town meeting in smaller towns) and school committee, contacting your one Representative and one Senator at the State House in Providence, weighing in on the constitutional amendments Rhode Island voters ratify, and running for local office.",
+    courseSlugs: ["state-civics-ri"],
+    lessons: [
+      "Rhode Island Civics, Lesson 5 · How to take part where you live",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
