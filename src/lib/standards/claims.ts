@@ -3314,6 +3314,84 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "New Hampshire Civics, Lesson 5 · Town meeting, local government, and how to take part",
     ],
   },
+
+  // ── State civics: West Virginia (state-civics-wv was written FROM West Virginia's own sources) ──
+  // West Virginia's Civics course standards (WVBE Policy 2520.4, the WVCCRS for Social Studies, SS.C.1
+  // to SS.C.43) are, like most states', pitched at the U.S. system — there is no standard that names
+  // the West Virginia Constitution the way New Hampshire's SS:CV:12:2.1 names New Hampshire's. But two
+  // of West Virginia's standards are explicitly STATE-AND-LOCAL: SS.C.13 (the "local, state and
+  // national judicial systems") and SS.C.20 (the "structure of local government" and how "state and
+  // local government impact the lives of citizens"), and SS.C.1 asks students to "actively participate
+  // ... through community service." Those give the West Virginia flagship's own-government lessons a
+  // genuine home, mapped in data/wv.ts. West Virginia is a MIXED/BESPOKE state: it adopted then
+  // REPEALED the Common Core (2015-16), so its ELA is now West Virginia's own (WV codes ELA.11.x, not
+  // the CCSS codes — so it is mapped bespoke, never aliased to the shared Common Core file), and its
+  // Civics course is West Virginia's own. Each state-specific claim below teaches WEST VIRGINIA'S
+  // version of state government from its own official sources (wvlegislature.gov, sos.wv.gov,
+  // courtswv.gov, and the West Virginia Constitution of 1872).
+  {
+    id: "civics.wv-origin-constitution",
+    claim:
+      "Teaches West Virginia's singular origin — the ONLY U.S. state created by breaking away from another state, its pro-Union western counties splitting from Virginia and joining the Union on June 20, 1863, a birth out of the Civil War itself (the U.S. Constitution normally forbids carving a new state out of an existing one without its consent) — and that West Virginia governs today under its Constitution of 1872 (its second, replacing the 1863 founding constitution).",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 1 · The only state born by breaking away from another",
+    ],
+  },
+  {
+    id: "civics.wv-executive",
+    claim:
+      "Teaches West Virginia's plural executive as West Virginia's: voters elect several statewide officers to 4-year terms — the Governor, the Secretary of State (who runs elections), the Attorney General, the State Auditor, the State Treasurer, and the Commissioner of Agriculture — and there is NO Lieutenant Governor: by statute the President of the Senate carries that title and is first in line to succeed the Governor (as in Tennessee), and the Governor's veto is weak, overridden on most bills by a simple majority (budget and supplementary-appropriations bills require a two-thirds override).",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 2 · The executive and the Legislature",
+    ],
+  },
+  {
+    id: "civics.wv-legislature",
+    claim:
+      "Teaches West Virginia's Legislature as West Virginia's: a bicameral body meeting in Charleston with a 100-member House of Delegates (2-year terms) and a 34-member Senate (4-year terms), a part-time citizen legislature with a fixed annual session of 60 days in most years.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 2 · The executive and the Legislature",
+    ],
+  },
+  {
+    id: "civics.wv-courts",
+    claim:
+      "Teaches West Virginia's judiciary as West Virginia's, including two recent changes worth knowing: West Virginia elects its judges but SWITCHED FROM PARTISAN TO NONPARTISAN judicial elections in 2015 (judges now run without party labels), and in 2022 it CREATED a new Intermediate Court of Appeals, having long been one of the few states with no intermediate appellate court; its highest court is the distinctively named Supreme Court of Appeals of West Virginia (5 justices, elected nonpartisan to 12-year terms).",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 3 · How West Virginia picks its judges (a recent switch to nonpartisan)",
+    ],
+  },
+  {
+    id: "civics.wv-lawmaking",
+    claim:
+      "Teaches how a bill becomes a West Virginia law (introduction in the House of Delegates or Senate during the 60-day session, committee review, floor votes in both chambers, then the Governor's signature, veto with a simple-majority override for most bills or two-thirds for budget bills, or line-item veto of appropriations) and that West Virginia has NO statewide citizen initiative: constitutional amendments are proposed by a two-thirds vote of the Legislature and ratified by the voters.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wv-local-government",
+    claim:
+      "Teaches West Virginia local government as West Virginia's: 55 counties governed by elected county commissions alongside other elected county officials (sheriff, clerk, assessor, prosecuting attorney), plus cities and towns that provide municipal services (some larger cities holding home-rule charters under West Virginia's recently expanded municipal home rule), county school systems, and special districts.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wv-get-involved",
+    claim:
+      "Teaches getting involved where you live, West Virginia edition — registering and voting (early in-person and absentee voting, with ID, administered by county clerks, so confirm current rules at sos.wv.gov), showing up at county commissions, city and town councils, and county boards of education, contacting your Delegate-district team and Senator in Charleston during the short 60-day session, researching candidates in the now-nonpartisan judicial elections where party labels no longer guide you, and running for county board of education, city council, or county commission.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
