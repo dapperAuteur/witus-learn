@@ -1138,6 +1138,87 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Iowa + Mississippi mapped** (\`feat/standards-ia-ms\`); the standards finder now covers **34
+  jurisdictions**, and \`/academic-standards?state=IA\` and \`?state=MS\` flip from "not mapped yet" to
+  real pages. **Iowa (23 standards, 14 full, 9 partial)** is inherit-heavy with a bespoke
+  social-studies frame: the mapped codes are the High School Civics/Government (SS.9-12.Gov) and
+  Inquiry (SS.9-12) standards of the current **Iowa Academic Standards for Social Studies (January
+  2026)**, transcribed verbatim from the Iowa DOE. SS.9-12.Gov.18 (the government of the State of
+  Iowa), Gov.20 (Iowa's local governments), and Gov.13 (Iowa election law, the Iowa Caucuses, and
+  redistricting) give the \`state-civics-ia\` flagship a near 1:1 home for its caucuses, nonpartisan
+  Legislative Services Agency redistricting, Missouri-Plan judiciary, 99 counties, and
+  no-citizen-initiative lessons, while the Inquiry source-evaluation anchors (SS.9-12.3, SS.9-12.4)
+  carry the media-literacy method. Iowa's 2024 ELA standards are Common-Core-derived but Iowa revised
+  RI.11-12.6 ("artistry" not "beauty") and WHST.11-12.8 ("credible... recognition of bias" not
+  "authoritative"), so the six RH/RI/WHST grade 11-12 codes are transcribed from Iowa's own document
+  rather than aliased. **Mississippi (12 standards, 7 full, 5 partial)** is bespoke-leaning: the
+  mapped codes are the **2018 MS College- and Career-Readiness Standards for the Social Studies** US
+  Government course (USG) plus the Mississippi Studies course's MS.10, transcribed verbatim from MDE
+  (a browser-user-agent fetch; the site returns 403 to a plain fetch). MS.10 (the structure and
+  function of local and state government in Mississippi) gives the \`state-civics-ms\` flagship a 1:1
+  home for its 1890 constitution, unusually powerful Lieutenant Governor, struck-down 2021 citizen
+  initiative, 82-county board-of-supervisors layer, and nonpartisan elected judiciary, while
+  USG.6.7/6.8 host the media-literacy method. MS's 2025 literacy standards are Common-Core-derived but
+  MS revised RH.11-12.6 ("author's" singular, not "authors'"), so the five RH/WHST grade 11-12 codes
+  are transcribed from MS's own document rather than aliased. Honest gaps published per state: Iowa's
+  science (NGSS as a 2015 lead state, but documented Iowa revisions, so HS-ESS3-1 not confirmed
+  verbatim) and math, and Mississippi's science (its own 2018 standards, NOT NGSS), math, and
+  RI.11-12.6 (in MS's separate ELA document) are deferred rather than blind-aliased. \`NEXT_UP\`
+  advances to **Idaho and West Virginia**. No migration, no seed.
+- 🔧 **New Mexico + Nevada mapped** (\`feat/standards-nm-nv\`); the standards finder now covers **34
+  jurisdictions**, and \`/academic-standards?state=NM\` and \`?state=NV\` flip from "not mapped yet" to
+  real pages. Both states INHERIT Common Core ELA (adopted 2010) and NGSS (New Mexico's 2018 NM STEM
+  Ready!, Nevada's 2014 NVACSS), mapped once in \`shared/\`, and add bespoke social-studies frames.
+  **New Mexico (34 standards across 5 frameworks, 11 full):** the **2022 New Mexico Social Studies
+  Standards** (adopted February 2022, effective 2023) supply three bespoke courses (High School
+  Civics, Economics, World History); three civics standards are specifically about New Mexico
+  (9-12.Civ.29 its constitution, 9-12.Civ.30 its diverse populations, 9-12.Civ.31 its government
+  entities), giving the \`state-civics-nm\` flagship a genuine home for the bilingual 1912
+  constitution and the only unpaid state legislature in the nation. **Nevada (38 standards across 5
+  frameworks, 8 full):** the **2018 Nevada Academic Content Standards for Social Studies** fold
+  civics into one Grade 9-12 Civics & Economics course, plus U.S. History (1877-Present) and World
+  History (1300-Present); SS.9-12.CE.19 (compare the U.S. and Nevada constitutions) and CE.18
+  (Nevada politics) host the \`state-civics-nv\` flagship's 1864 "Battle Born" constitution, the
+  "None of These Candidates" ballot, gaming regulation and the no-income-tax structure, and the
+  two-election amendment rule. Provenance: New Mexico's PED site is captcha-blocked and Nevada's DOE
+  now serves a single-page-app shell, so both social-studies documents were transcribed verbatim
+  from byte-faithful government/district mirrors (recorded in each file header; \`sourceUrl\` is the
+  canonical DOE link). Coverage is honest full/partial with a per-state "What we don't claim" reject
+  list. \`NEXT_UP\` advances to **Idaho and West Virginia**. No migration, no seed.
+- 🔧 **Nebraska mapped** (\`feat/standards-ks-ne\`); the standards finder now covers 34 jurisdictions,
+  and \`/academic-standards?state=NE\` flips from "not mapped yet" to a real page (8 standards in 1
+  bespoke framework, 5 full, 3 partial). Nebraska is a notable NON-adopter of the Common Core, so it
+  is bespoke-heavy: no shared framework is adopted. The mapped codes are the **High School Civics**
+  standards of the **Nebraska Social Studies Standards (2019)** (approved by the State Board of
+  Education on November 8, 2019), transcribed verbatim from NDE's own PDF. Unlike Kansas's skills-only
+  design, Nebraska's civics standards NAME government content: **SS HS.1.1.e** (state government) even
+  lists "bicameral/unicameral" in its own example set, so the \`state-civics-ne\` flagship's headline
+  gets a 1:1 home, Nebraska's one-house, officially nonpartisan **Unicameral** of 49 senators (with
+  its guaranteed public hearing for every bill, three-stage debate, and no conference committee),
+  plus its merit-selection judiciary, its status as the only all-public-power state, and its
+  Maine-style split of presidential electoral votes by congressional district (the Omaha "blue dot").
+  SS HS.1.1.d hosts Nebraska's local government (93 counties, natural resources districts, and elected
+  public-power boards) and the SS HS.1.2 standards host civic participation and the BVC media-literacy
+  method (SS HS.1.2.f). Honest gaps published: Nebraska's ELA and math (Nebraska's own, not Common
+  Core) and its 2017 science (Nebraska's own, NGSS-influenced but not verbatim) are deferred rather
+  than blind-aliased. \`NEXT_UP\` advances to **Idaho and West Virginia**. No migration, no seed.
+- 🔧 **Kansas mapped** (\`feat/standards-ks-ne\`); the standards finder now covers 33 jurisdictions,
+  and \`/academic-standards?state=KS\` flips from "not mapped yet" to a real page (15 standards across
+  3 frameworks, 7 full, 8 partial). Kansas is UNUSUAL: the **Kansas Standards for History,
+  Government, and Social Studies (2013)** are deliberately skills, not content. Five thematic
+  Standards (1 "Choices have consequences" through 5 "Relationships are dynamic"), each with four
+  benchmarks, and KSDE states outright that assessments focus on the Standards and Benchmarks, not
+  specific content. So Kansas publishes no code that names its own government. The **High School
+  United States Government** course (Kansas Course Code 04151) applies those benchmarks, so the
+  \`state-civics-ks\` flagship teaches Kansas's structure (its plural executive, its 125 and 40
+  Legislature, its merit-selection Supreme Court, its lack of a citizen initiative, its strong home
+  rule, and its 105 counties, all rooted in Bleeding Kansas and the still-in-force free-state
+  Wyandotte Constitution of 1859) as the content that exercises the benchmark skills. Eight benchmarks
+  are mapped verbatim (Standards 1, 2, 4, 5). Unlike Oklahoma, Kansas KEPT the Common Core: its ELA is
+  the Kansas College and Career Ready Standards (verbatim Common Core, printed under bare RH and WHST
+  codes, so the shared file is adopted with Kansas aliases), and its science is the NGSS, adopted
+  verbatim in 2013 (one claim, HS-ESS3-1, partial). Math is not taught, and a 2020 revision of the
+  social-studies standards is flagged for teachers to confirm current codes. No migration, no seed.
 - 🔧 **Alabama + Louisiana mapped, both bespoke-heavy** (\`feat/standards-al-la\`); the standards
   finder now covers 28 jurisdictions, and \`/academic-standards?state=AL\` and \`?state=LA\` flip from
   "not mapped yet" to real pages. **Alabama (16 standards, 3 full, 13 partial)** writes its own

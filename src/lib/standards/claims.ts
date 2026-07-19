@@ -2242,6 +2242,187 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Kansas (state-civics-ks was written FROM Kansas's own sources) ──
+  // NOTE: Kansas's standards are UNUSUAL. The Kansas Standards for History, Government, and Social
+  // Studies (2013) are deliberately SKILLS-not-content: five thematic Standards (1 Choices have
+  // consequences … 5 Relationships … are dynamic), each with four benchmarks (x.1 recognize/evaluate,
+  // x.2 analyze/draw conclusions, x.3 investigate/connect to contemporary issues, x.4 use/apply). The
+  // HS United States Government course (Kansas Course Code 04151) applies those same benchmarks; its
+  // document says outright that "state assessments will focus on the Standards and Benchmarks, not
+  // specific content." So Kansas's OWN structural facts (its plural executive, 125/40 Legislature,
+  // merit-selection Supreme Court, absence of a citizen initiative, strong home rule, 105 counties)
+  // are the CONTENT through which the benchmarks are exercised, not standards in their own right —
+  // the flagship teaches them in depth as the vehicle for the benchmark skills. Kansas KEPT the
+  // Common Core (unlike Oklahoma): its ELA/Math are the Kansas College and Career Ready Standards
+  // (KCCRS = Common Core, verbatim) and its science is NGSS, verbatim (adopted 2013). data/ks.ts
+  // adopts the shared Common Core ELA (aliased to Kansas's bare codes) and the shared NGSS. MIXED.
+  {
+    id: "civics.ks-bleeding-kansas-wyandotte",
+    claim:
+      "Teaches Kansas's dramatic founding: 'Bleeding Kansas,' the violent 1850s struggle (touched off by the Kansas-Nebraska Act of 1854 and 'popular sovereignty') over whether Kansas would enter the Union free or slave, an era that helped spark the Civil War; that Kansans wrote four rival constitutions during the fight and the free-state Wyandotte Constitution of 1859 prevailed, admitting Kansas as a free state (the 34th) on January 29, 1861; and that this same Wyandotte Constitution is still in force today (heavily amended), so Kansas's founding document is a direct product of the fight over slavery.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 1 · 'Bleeding Kansas' and the free-state Wyandotte Constitution",
+    ],
+  },
+  {
+    id: "civics.ks-plural-executive",
+    claim:
+      "Teaches Kansas's plural executive: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State (who runs elections), the Attorney General, the State Treasurer, and the Commissioner of Insurance — so Kansas can have a Governor of one party and other statewide officers of another, and they can check one another; statewide officers serve four-year terms.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 2 · The executive and the Legislature",
+    ],
+  },
+  {
+    id: "civics.ks-legislature",
+    claim:
+      "Teaches the Kansas Legislature — a part-time citizen body meeting in Topeka with a 125-member House (two-year terms) and a 40-member Senate (four-year terms) — and how a bill becomes a Kansas law (introduction, committee, floor votes in both chambers, and the Governor's signature, veto with a two-thirds override of each chamber, or line-item veto of appropriations).",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 2 · The executive and the Legislature",
+      "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
+    ],
+  },
+  {
+    id: "civics.ks-courts-merit-selection",
+    claim:
+      "Teaches how Kansas chooses its seven-justice Supreme Court: the 'Missouri Plan' merit selection, in which a Supreme Court Nominating Commission of lawyers and citizens sends the Governor a short list, the Governor appoints from it, and the justice later faces voters in a nonpartisan yes/no retention election — flagged as time-sensitive because Kansas has repeatedly debated changing the method (e.g., to Senate-confirmed appointments or partisan elections), with Court of Appeals judges appointed by the Governor with Senate confirmation and many district (trial) judges elected.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
+    ],
+  },
+  {
+    id: "civics.ks-no-initiative",
+    claim:
+      "Teaches Kansas's distinctive absence of direct democracy: unlike its plains and western neighbors (Colorado, Nebraska, the Dakotas), Kansas has NO statewide citizen initiative — citizens cannot put a statute or amendment on the ballot by petition; constitutional amendments are proposed by the Legislature (a two-thirds vote of each chamber) and then ratified by the voters, so the citizen role is ratification, not initiation, and the ballot questions Kansans see are ones the Legislature chose to refer.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
+    ],
+  },
+  {
+    id: "civics.ks-home-rule",
+    claim:
+      "Teaches Kansas's strong home rule: the Kansas Constitution grants cities and counties substantial authority to manage their own local affairs without asking the Legislature for permission on every matter, making Kansas localities comparatively self-governing (a contrast with weak-home-rule states).",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ks-local-government",
+    claim:
+      "Teaches Kansas local government as Kansas's own: 105 counties governed by elected boards of county commissioners (plus other elected county officials — sheriff, clerk, treasurer, register of deeds), cities classified by size providing municipal services under home rule, townships in rural areas, and school and special districts.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ks-get-involved",
+    claim:
+      "Teaches getting involved where you live, Kansas edition — registering and voting with photo ID and advance/early voting administered by county election officers (flagged time-sensitive, pointing to sos.ks.gov), showing up at the county commission, city council, and school board that home rule empowers to decide much without Topeka, reading the Legislature-referred amendments carefully (since Kansans cannot start ballot measures), contacting your one Representative and one Senator, and running for reachable local office.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
+    ],
+  },
+
+  // ── State civics: Nebraska (state-civics-ne was written FROM Nebraska's own sources) ──
+  // NOTE: Nebraska is a notable NON-adopter of the Common Core — its ELA and Math College and Career
+  // Ready Standards are Nebraska's OWN, and its 2017 science standards are Nebraska's own (NGSS-
+  // influenced, not verbatim NGSS) — so unlike Kansas we adopt NO shared framework here (data/ne.ts
+  // publishes ELA/Math/Science as deferred gaps, not denials). Nebraska is BESPOKE-heavy. The
+  // Nebraska Social Studies Standards (2019, approved Nov 8, 2019) ARE content-bearing (unlike
+  // Kansas's skills-only design): the High School Civics standard SS HS.1.1.e ("Analyze the
+  // foundation, structures, and functions of state government and its outcomes") explicitly names
+  // "bicameral/unicameral" in its own example list, so the state-civics-ne flagship's headline —
+  // Nebraska's one-house, officially nonpartisan Unicameral — gets a genuine 1:1 home, alongside its
+  // local-government (SS HS.1.1.d) and civic-participation (SS HS.1.2.a/c) standards.
+  {
+    id: "civics.ne-unicameral",
+    claim:
+      "Teaches the fact that defines Nebraska government: it has the ONLY unicameral (single-house) legislature in the United States, and the only OFFICIALLY NONPARTISAN one — its 49 members are called Senators (one per district, four-year terms, limited to two consecutive terms), they appear on the ballot with no party label, and leadership and committee chairs are chosen by the members rather than by party; Nebraskans adopted 'the Unicameral' by ballot initiative in 1934 (championed by U.S. Senator George W. Norris, who argued a single nonpartisan house would be cheaper, more transparent, and less prone to backroom deals), effective 1937.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 1 · The Unicameral: one house, no party labels",
+    ],
+  },
+  {
+    id: "civics.ne-lawmaking",
+    claim:
+      "Teaches how a bill becomes law in a one-house legislature: a distinctive Nebraska rule guarantees EVERY bill introduced a public hearing where any citizen may testify; because there is no second chamber, each bill is debated in three separate stages (General File, Select File, Final Reading); there is no conference committee to reconcile two versions; and the Governor may sign, veto, or line-item veto appropriations, with the Unicameral overriding a veto by a three-fifths vote (30 of 49 senators) — single-house deliberation that replaces the role a second chamber would play.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 2 · How a bill becomes law in a one-house legislature",
+    ],
+  },
+  {
+    id: "civics.ne-direct-democracy",
+    claim:
+      "Teaches Nebraska's strong direct democracy, the citizen backstop paired with its one-house Legislature (tools added in 1912): the initiative (put a statute or constitutional amendment on the ballot by petition), the referendum (veto a law the Legislature passed), and recall for many local offices.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 2 · How a bill becomes law in a one-house legislature",
+    ],
+  },
+  {
+    id: "civics.ne-executive",
+    claim:
+      "Teaches Nebraska's executive branch: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State, Attorney General, State Treasurer, and State Auditor, and Nebraska also directly elects several boards — the Public Service Commission, the State Board of Education, and the University Board of Regents.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 3 · The executive and how Nebraska picks its judges",
+    ],
+  },
+  {
+    id: "civics.ne-courts-merit-selection",
+    claim:
+      "Teaches how Nebraska chooses its judges: the 'Missouri Plan' merit selection followed by retention — a nonpartisan judicial nominating commission vets applicants and sends the Governor a short list, the Governor appoints from it, and the judge later faces voters in a nonpartisan yes/no retention election; the Nebraska Supreme Court has seven members (a Chief Justice plus six justices from districts), keeping judges out of partisan campaigns.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 3 · The executive and how Nebraska picks its judges",
+    ],
+  },
+  {
+    id: "civics.ne-public-power",
+    claim:
+      "Teaches a Nebraska first: it is the ONLY state in the nation where ALL electricity is publicly owned — there are no private, for-profit electric utilities; power is delivered by public power districts, municipal utilities, and cooperatives governed by ELECTED boards (a legacy of Nebraska's early-20th-century public-power movement associated with George Norris), so a Nebraskan's electricity provider is a government or cooperative body whose board they can vote for, and rates and policy are set by boards they elect.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 4 · Two more Nebraska firsts: public power and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.ne-split-electoral",
+    claim:
+      "Teaches that Nebraska is one of only two states (with Maine) that SPLITS its presidential electoral votes by congressional district rather than winner-take-all: two electors go to the statewide winner and one elector goes to the winner of each congressional district, which is why Nebraska's Omaha-based 'blue dot' district can send a single electoral vote to a different candidate than the rest of the state — flagged time-sensitive because proposals to switch to winner-take-all surface periodically.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 4 · Two more Nebraska firsts: public power and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.ne-local-government",
+    claim:
+      "Teaches Nebraska local government as Nebraska's own: 93 counties, most governed by an elected county board (of commissioners or supervisors) plus separately elected officials (sheriff, clerk, treasurer, attorney, assessor); cities and villages classified by size (Omaha and Lincoln hold home-rule charters); elected public-power district boards; natural resources districts (NRDs), a Nebraska innovation for managing water and soil by watershed; and school districts.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ne-get-involved",
+    claim:
+      "Teaches getting involved where you live, Nebraska edition — registering and voting (including for the public-power and NRD boards that set electricity and water policy, with a voter photo-ID requirement added by initiative in 2022, flagged time-sensitive and pointing to sos.nebraska.gov), testifying at the Unicameral (where every bill gets a public hearing, an unusually open door), using the strong initiative and referendum, contacting your single state senator, and running for reachable local office (school board, city council, county board, NRD, and public-power boards).",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
@@ -2644,6 +2825,323 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: ["state-civics-la"],
     lessons: [
       "Louisiana Civics, Lesson 6 · Judges, voting, and how to take part",
+    ],
+  },
+  // ── State civics: Iowa (state-civics-ia was written FROM Iowa's own sources) ──
+  // NOTE: Iowa writes its OWN social studies standards (the Iowa Academic Standards for Social
+  // Studies, current January 2026 revision, C3-informed — not Common Core). Its High School
+  // Civics/Government course names Iowa's own government explicitly and in three places —
+  // SS.9-12.Gov.18 (the government of the State of Iowa), SS.9-12.Gov.20 (Iowa's local governments),
+  // and SS.9-12.Gov.13 (Iowa election law, absentee voting, the Iowa Caucuses, and redistricting) —
+  // so the Iowa flagship's most distinctive lessons map 1:1. data/ia.ts gives them a home and also
+  // transcribes Iowa's own literacy (ELA) standards VERBATIM (Iowa revised some Common Core codes, so
+  // they are NOT blind-aliased to the shared framework). Iowa is INHERIT-heavy with a bespoke frame.
+  {
+    id: "civics.ia-caucuses",
+    claim:
+      "Teaches Iowa's precinct caucuses — neighborhood party meetings (not ballot primaries) that traditionally opened the presidential nominating season 'first in the nation,' giving a small farm state outsized, face-to-face retail-campaign influence — while flagging that the nominating calendar has recently shifted, so exact 'first' status varies by party and year (confirm at sos.iowa.gov). Iowa governs under its Constitution of 1857 and became the 29th state on December 28, 1846.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 1 · The Iowa caucuses: going first in presidential politics",
+    ],
+  },
+  {
+    id: "civics.ia-redistricting",
+    claim:
+      "Teaches Iowa's nationally admired nonpartisan redistricting: the nonpartisan Legislative Services Agency (LSA) draws Iowa's legislative and congressional maps on neutral criteria (equal population, compact districts, respect for county and city lines) and is forbidden from considering past election results, incumbents' addresses, or party registration; the Legislature then votes the maps up or down — a model widely cited for reducing gerrymandering.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 2 · Iowa's nonpartisan redistricting: a national model",
+    ],
+  },
+  {
+    id: "civics.ia-executive-legislature",
+    claim:
+      "Teaches Iowa's plural executive (the Governor and Lieutenant Governor on a joint ticket, plus a separately elected Secretary of State, Attorney General, State Treasurer, State Auditor, and Secretary of Agriculture — a fitting office for a major farm state, all on 4-year terms) and the Iowa General Assembly (a 100-member House on 2-year terms and a 50-member Senate on 4-year terms), with the Governor's strong item veto on appropriations and a two-thirds override.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 3 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ia-judiciary",
+    claim:
+      "Teaches Iowa's merit-selection judiciary (the 'Missouri Plan'): a State Judicial Nominating Commission screens applicants and sends the Governor a list, the Governor appoints, and the judge later faces voters in a nonpartisan yes/no retention election; the Iowa Supreme Court has 7 justices, and Iowa's 2010 removal of three justices showed retention votes are real.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 3 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ia-lawmaking",
+    claim:
+      "Teaches how a bill becomes an Iowa law (introduction, committee, floor votes in both chambers, then the Governor's signature, veto with a two-thirds override, or item veto of appropriations) and that Iowa has NO statewide citizen initiative for general laws — an unusual gap: constitutional amendments must be passed by two consecutive General Assemblies and then ratified by the voters.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ia-local-government",
+    claim:
+      "Teaches Iowa local government as Iowa's: 99 counties (a famously large number for the state's size) governed by elected boards of supervisors and other elected county officials, cities under a strong home-rule tradition, townships and special districts, and locally run school districts.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ia-elections",
+    claim:
+      "Teaches Iowa's election specifics — early/absentee voting and a voter-ID requirement, administered by county auditors, with early-voting windows and deadlines adjusted in recent years — and a standing flag to confirm the current rules at sos.iowa.gov before voting.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ia-get-involved",
+    claim:
+      "Teaches getting involved where you live, Iowa edition — attending your precinct caucus (a hands-on way to shape party business and, in presidential years, register a preference), registering and voting under current sos.iowa.gov rules, showing up at county boards of supervisors, city councils, and school boards, contacting your one Representative and one Senator in Des Moines, and running for local office.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  // ── State civics: Mississippi (state-civics-ms was written FROM Mississippi's own sources) ──
+  // NOTE: Mississippi's College- and Career-Readiness Standards for the Social Studies (2018) reach
+  // Mississippi's OWN government explicitly in the Mississippi Studies course: MS.10 ("Analyze the
+  // structure and function of local and state government in Mississippi") is a genuine 1:1 home for
+  // the Mississippi flagship's own-structure lessons (the 1890 constitution, the powerful Lieutenant
+  // Governor, the 82-county board-of-supervisors layer, the nonpartisan elected judiciary). The
+  // required US Government course (USG.1-7) is FEDERAL and carries the general civics ladder, with a
+  // media-literacy home at USG.6.7/6.8. data/ms.ts also transcribes Mississippi's own literacy (ELA)
+  // standards VERBATIM (Common-Core-derived, but MS revised RH.11-12.6, so NOT blind-aliased). MS is
+  // BESPOKE-leaning.
+  {
+    id: "civics.ms-recent-changes",
+    claim:
+      "Teaches that Mississippi's rules and symbols changed recently: in 2020 voters approved a constitutional amendment removing an 1890 Jim Crow-era rule that required a candidate for Governor or statewide office to win BOTH a majority of the popular vote AND a majority of the 122 state House districts (or the House would choose the winner), replacing it with a popular-majority-or-runoff system; and in 2020 Mississippi retired the last U.S. state flag carrying the Confederate battle emblem and voters approved a new 'In God We Trust'/Magnolia flag. Mississippi became the 20th state on December 10, 1817, and still governs under its much-amended Constitution of 1890.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 1 · A state that changed: the 2020 election rule and the new flag",
+    ],
+  },
+  {
+    id: "civics.ms-executive",
+    claim:
+      "Teaches Mississippi's large plural executive (a Governor and a separately elected Lieutenant Governor — who can be from a different party — plus a separately elected Secretary of State, Attorney General, Treasurer, Auditor, Insurance Commissioner, and Commissioner of Agriculture and Commerce, and the elected Public Service and Transportation Commissions) and that Mississippi's Lieutenant Governor is one of the most powerful in the nation, presiding over the state Senate and strongly controlling its committees, calendar, and which bills advance; statewide officers serve 4-year terms elected in odd-numbered years (for example 2023 and 2027).",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 2 · A large plural executive and an unusually powerful Lieutenant Governor",
+    ],
+  },
+  {
+    id: "civics.ms-legislature-initiative",
+    claim:
+      "Teaches Mississippi's Legislature (a 122-member House of Representatives and a 52-member Senate, all on 4-year terms, with the Lieutenant Governor wielding strong influence over the Senate) and how a bill becomes a Mississippi law, and that Mississippi's citizen ballot-initiative process is currently NOT in effect: its formula required signatures gathered equally from five congressional districts, but Mississippi dropped to four U.S. House seats after the 2000 census, so in May 2021 the Mississippi Supreme Court ruled the entire initiative process invalid until the Legislature and voters adopt a fix.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 3 · The Legislature, and why Mississippi's initiative doesn't work right now",
+    ],
+  },
+  {
+    id: "civics.ms-judiciary",
+    claim:
+      "Teaches how Mississippi picks its judges: it ELECTS them on a NONPARTISAN ballot (no party label appears next to their names), with a 9-justice Mississippi Supreme Court elected from districts to 8-year terms, and Court of Appeals, Circuit, and Chancery judges likewise elected nonpartisan; when a seat opens mid-term the Governor appoints a replacement who then stands for election.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ms-local-government",
+    claim:
+      "Teaches Mississippi local government as Mississippi's: 82 counties, each governed by an elected board of supervisors from five supervisor districts (or 'beats'), plus other elected county officials (sheriff, chancery and circuit clerks, tax officials), with cities and towns providing municipal services and school and special districts rounding out local government.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ms-elections",
+    claim:
+      "Teaches Mississippi's election specifics — a photo-ID requirement and comparatively limited early/absentee options (an excuse is generally required for absentee, and Mississippi has been slower than many states to adopt no-excuse early voting), administered by county election officials, with big elections falling in odd years — and a standing flag to confirm the current rules at sos.ms.gov before voting.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ms-get-involved",
+    claim:
+      "Teaches getting involved where you live, Mississippi edition — registering and voting with photo ID (checking absentee eligibility and Mississippi's odd-year calendar at sos.ms.gov), showing up at your county board of supervisors, city council, and school board, contacting your one Representative and one Senator in Jackson, watching for a legislative fix that would restore the citizen initiative, and running for local office.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
+
+  // ── State civics: New Mexico (state-civics-nm was written FROM New Mexico's own sources) ──
+  // New Mexico's 2022 Social Studies Standards (bespoke, effective 2023) give the flagship a
+  // genuine home: 9-12.Civ.29 ("Explain the unique features and processes of New Mexico's
+  // constitution"), 9-12.Civ.30 (the contributions of New Mexico's diverse populations to its
+  // government), and 9-12.Civ.31 (challenges and opportunities among New Mexico's government
+  // entities) are near-1:1 with the flagship's bilingual-constitution, diverse-populations, and
+  // state-structure lessons. The federal ladder + citizenship standards carry the general civics
+  // claims. All mapped in data/nm.ts.
+  {
+    id: "civics.nm-bilingual-constitution",
+    claim:
+      "Teaches New Mexico's 1912 constitution and its special protections for Spanish-speaking citizens — the right to vote, hold office, serve on juries, and receive an equal education regardless of ability to read or write English or Spanish — making New Mexico effectively the most bilingual state.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 1 · New Mexico's bilingual constitution and its cultures",
+    ],
+  },
+  {
+    id: "civics.nm-tribal-nations",
+    claim:
+      "Teaches the sovereign tribal nations within New Mexico — 19 Pueblos plus the Navajo Nation and Apache tribes — as governments with their own laws and courts, an essential part of the state's civic landscape.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 1 · New Mexico's bilingual constitution and its cultures",
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.nm-unpaid-legislature",
+    claim:
+      "Teaches New Mexico's Legislature — the only fully volunteer (unpaid) state legislature in the nation — with a 70-member House and 42-member Senate that alternates a 60-day session in odd years and a 30-day budget session in even years.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 2 · The only unpaid legislature in the nation",
+    ],
+  },
+  {
+    id: "civics.nm-executive",
+    claim:
+      "Teaches New Mexico's plural executive: the Governor and Lieutenant Governor, the Secretary of State, the Attorney General, the State Treasurer, the State Auditor, and the Commissioner of Public Lands, all serving 4-year terms with term limits.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 3 · The executive and how New Mexico picks its judges",
+    ],
+  },
+  {
+    id: "civics.nm-courts",
+    claim:
+      "Teaches New Mexico's distinctive hybrid judicial selection — a nominating commission and gubernatorial appointment, then a partisan election, then nonpartisan yes/no retention — and its 5-justice Supreme Court.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 3 · The executive and how New Mexico picks its judges",
+    ],
+  },
+  {
+    id: "civics.nm-lawmaking",
+    claim:
+      "Teaches how a bill becomes a New Mexico law, the Governor's line-item veto and the two-thirds override, and that New Mexico has no statewide citizen initiative — constitutional amendments are referred by the Legislature to the voters, with the language-rights provisions especially hard to amend.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.nm-local-government",
+    claim:
+      "Teaches New Mexico local government as New Mexico's: 33 counties governed by elected county commissions, plus cities, towns, and villages, alongside the sovereign tribal nations that govern their own lands.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.nm-get-involved",
+    claim:
+      "Teaches getting involved where you live, New Mexico edition — registering and voting (including same-day registration), serving in the unpaid Legislature as civic volunteering, and showing up at county commissions, councils, school boards, and tribal governments.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+
+  // ── State civics: Nevada (state-civics-nv was written FROM Nevada's own sources) ──
+  // Nevada's 2018 Social Studies Standards fold civics into ONE Grade 9-12 "Civics & Economics"
+  // course (codes SS.9-12.CE.<n>). Two standards are specifically about Nevada — SS.9-12.CE.19
+  // ("Compare and contrast the U.S. and Nevada constitutions") and SS.9-12.CE.18 (Nevada politics)
+  // — plus SS.9-12.CE.51 (Nevada's economy), giving the flagship its own-state home for the 1864
+  // "Battle Born" constitution, the "None of These Candidates" ballot, gaming regulation and the
+  // no-income-tax structure, the biennial Legislature, and the two-election amendment rule. The
+  // federal C-ladder standards carry the general civics claims. All mapped in data/nv.ts.
+  {
+    id: "civics.nv-none-of-these-candidates",
+    claim:
+      "Teaches Nevada's “None of These Candidates” — a statewide-ballot protest option (since 1976) found in no other state, and the fact that it is non-binding: even if it wins the most votes, the highest-finishing actual candidate still takes office. Also teaches Nevada's Constitution of 1864 and the “Battle Born” story.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 1 · “None of These Candidates”: a ballot option found only in Nevada",
+    ],
+  },
+  {
+    id: "civics.nv-gaming-taxes",
+    claim:
+      "Teaches Nevada's gaming (casino) regulation — the Gaming Control Board and the Gaming Commission — and how gaming taxes and tourism revenue let Nevada operate with no state personal income tax.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 2 · Gaming regulation and why Nevada has no income tax",
+    ],
+  },
+  {
+    id: "civics.nv-executive-legislature",
+    claim:
+      "Teaches Nevada's plural executive (a separately elected Governor and Lieutenant Governor, Secretary of State, Attorney General, Treasurer, and Controller) and its part-time, biennial Legislature — a 42-member Assembly and 21-member Senate that meets only in odd-numbered years for a constitutionally limited 120 days, with term limits.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 3 · The executive and a Legislature that meets every other year",
+    ],
+  },
+  {
+    id: "civics.nv-courts",
+    claim:
+      "Teaches Nevada's elected judiciary — judges chosen on a nonpartisan ballot to 6-year terms — with a Court of Appeals and a 7-justice Nevada Supreme Court.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 3 · The executive and a Legislature that meets every other year",
+    ],
+  },
+  {
+    id: "civics.nv-direct-democracy",
+    claim:
+      "Teaches Nevada's initiative and referendum, and its distinctive two-election rule: a citizen-initiated constitutional amendment must be approved by the voters in two consecutive general elections before it takes effect.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 4 · Direct democracy: the two-election rule for citizen amendments",
+    ],
+  },
+  {
+    id: "civics.nv-lawmaking",
+    claim:
+      "Teaches how a bill becomes a Nevada law in the biennial session — introduction, committee, floor votes, and the Governor's sign/veto with a two-thirds override — alongside the citizen initiative and referendum as a lawmaking backstop.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 4 · Direct democracy: the two-election rule for citizen amendments",
+    ],
+  },
+  {
+    id: "civics.nv-local-government",
+    claim:
+      "Teaches Nevada local government as Nevada's: 16 counties plus Carson City (an independent consolidated city-county), county-based school districts, and municipal cities and towns.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.nv-get-involved",
+    claim:
+      "Teaches getting involved where you live, Nevada edition — registering and voting (including same-day and automatic registration and mailed ballots to active voters), using the initiative and referendum, showing up at county commissions and city councils, and running for local office.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 5 · Local government and how to take part",
     ],
   },
 ];
