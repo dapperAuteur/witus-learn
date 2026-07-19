@@ -296,60 +296,87 @@ This is why the tradition is often described, in the title of one study in the p
 - Hazzard-Donald, K. (2013). *Mojo workin': The old African American Hoodoo system*. University of Illinois Press.`,
     },
 
-    // ── Section 9: Practice (fill in the blanks) ─────────────────────────
+    // ── Section 9: Practice (multiple-choice quiz) ───────────────────────
     {
       slug: "hoodoo-exercise",
       title: "9 · Practice: check your understanding",
       section: "Practice",
-      exercise: {
-        instructions:
-          "Fill in each blank about Hoodoo history and culture, then check. Spelling and capitalization are forgiving.",
-        items: [
+      quiz: {
+        passingScore: 70,
+        questions: [
           {
-            prompt: "Hoodoo is an African American folk-spiritual practice also called conjure or ___.",
-            answer: "rootwork",
-            accept: ["root work", "conjure"],
+            prompt:
+              "Hoodoo is an African American folk-spiritual practice also known by which other name?",
+            options: ["Rootwork (or conjure)", "Vodou", "Santería", "Obeah"],
+            correctIndex: 0,
             explanation:
               "Hoodoo, conjure, and rootwork name the same African American folk-spiritual tradition of healing, protection, and power.",
+            sourceLessonSlug: "hoodoo-what-it-is",
           },
           {
             prompt:
-              "Hoodoo is often confused with, but is DISTINCT from, the organized religion ___ (Haitian/West African).",
-            answer: "Vodou",
-            accept: ["voodoo", "vodun", "Voodoo", "Vodun"],
+              "Hoodoo is often confused with, but is DISTINCT from, which organized religion?",
+            options: ["Vodou/Vodun", "Methodism", "Catholicism", "Buddhism"],
+            correctIndex: 0,
             explanation:
               "Vodou/Vodun are organized religions with deities and clergy; Hoodoo is an African American folk PRACTICE, a common but important distinction.",
+            sourceLessonSlug: "hoodoo-what-it-is",
           },
           {
             prompt:
-              "Scholars trace the Hoodoo mojo bag to the Central African (Kongo) tradition of the ___ (power object).",
-            answer: "nkisi",
-            accept: ["minkisi", "nkisi/minkisi"],
+              "Scholars trace the Hoodoo mojo bag to which Central African (Kongo) power object?",
+            options: [
+              "The nkisi/minkisi",
+              "The ankh",
+              "The scarab amulet",
+              "The rosary",
+            ],
+            correctIndex: 0,
             explanation:
               "The nkisi/minkisi, Kongo consecrated power objects, are considered likely ancestors of the mojo bag.",
+            sourceLessonSlug: "hoodoo-african-roots",
           },
           {
             prompt:
-              "Under slavery, the community healer and herbalist who also worked conjure was called the ___ doctor.",
-            answer: "root",
-            accept: ["conjure"],
+              "Under slavery, the community healer and herbalist who also worked conjure was known as the…",
+            options: [
+              "Root (or conjure) doctor",
+              "Circuit preacher",
+              "Overseer",
+              "Field driver",
+            ],
+            correctIndex: 0,
             explanation:
               "The root (or conjure) doctor healed, delivered babies, and worked conjure, a figure of real authority in the quarters.",
+            sourceLessonSlug: "hoodoo-resistance",
           },
           {
             prompt:
-              "Many Hoodoo practitioners were Christians who used the ___ (a book) and specific Psalms as sources of power.",
-            answer: "Bible",
-            accept: ["bible"],
+              "Most historical Hoodoo practitioners were Christians who drew spiritual power from which book and its Psalms?",
+            options: [
+              "The Bible",
+              "The Quran",
+              "The Book of Mormon",
+              "A European grimoire",
+            ],
+            correctIndex: 0,
             explanation:
               "Hoodoo is deeply intertwined with Christianity; the Bible and particular Psalms feature in scriptural work.",
+            sourceLessonSlug: "hoodoo-christianity",
           },
           {
             prompt:
-              "TRUE or FALSE: Hoodoo and 'Voodoo' are two names for exactly the same thing.",
-            answer: "false",
+              "Are Hoodoo and 'Voodoo' two names for exactly the same thing?",
+            options: [
+              "No — Vodou/Vodun are organized religions, while Hoodoo is a distinct African American folk practice",
+              "Yes, they are identical",
+              "Yes, but only in Louisiana",
+              "No — Hoodoo is the clergy branch of Vodou",
+            ],
+            correctIndex: 0,
             explanation:
-              "False. Vodou/Vodun are organized religions; Hoodoo is a distinct African American folk practice. Conflating them is a category error.",
+              "Vodou/Vodun are organized religions; Hoodoo is a distinct African American folk practice. Conflating them is a category error.",
+            sourceLessonSlug: "hoodoo-what-it-is",
           },
         ],
       },
