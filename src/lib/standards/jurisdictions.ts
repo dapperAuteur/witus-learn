@@ -80,7 +80,11 @@ export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 // pairs). Their partners West Virginia, Maine, and Rhode Island were not finished, so the queue
 // points at two of them to resume. NEXT_UP must never name a state that mappedStates() already
 // contains (the isolation suite enforces it); WV and ME are unmapped, so they stay valid.
-export const NEXT_UP: StateCode[] = ["WV", "ME"];
+// This branch (feat/standards-de-mt) maps Delaware and Montana, so the queue advances past them to
+// two states that are still unmapped and belong to no in-flight branch: North Dakota and South
+// Dakota. NEXT_UP must never name a state that mappedStates() already contains — the isolation suite
+// enforces it — and ND/SD are mapped by no branch, so they stay valid after this branch merges.
+export const NEXT_UP: StateCode[] = ["ND", "SD"];
 // This bundle maps six more states (MD, CO, MN, WI, CT, SC), so the queue advances to two
 // still-unmapped states, Alabama and Louisiana. NEXT_UP must never name a state that
 // mappedStates() already contains (the isolation suite enforces it); AL and LA are mapped by

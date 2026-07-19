@@ -3372,6 +3372,56 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: ["state-civics-de"],
     lessons: ["Delaware Civics, Lesson 5 · Local government (just three counties) and how to take part"],
   },
+  // ── State civics: Montana (state-civics-mt was written FROM Montana's own sources) ──
+  // NOTE: Montana's Content Standards for Social Studies (2020/2021, ARM New Rule IX) are a bespoke
+  // four-area frame (civics and government, economics, geography, history) saturated with Indian
+  // Education for All. Montana is BESPOKE across ELA (Common Core numbering but IEFA-rewritten
+  // text), science (Montana's own 2016 standards), and social studies — data/mt.ts adopts NO shared
+  // framework. The flagship's Montana-structure lessons (the 1972 Constitution, the biennial 90-day
+  // Legislature, the plural executive, the nonpartisan judiciary, direct democracy, 56 counties) map
+  // where the federal/comparative 9-12 civics standards reach — (1)(e), (1)(i), (1)(j). See data/mt.ts.
+  {
+    id: "civics.mt-constitution",
+    claim:
+      "Teaches Montana's Constitution of 1972 — rewritten by an elected citizens' constitutional convention (not sitting politicians) from the 1889 constitution — and its distinctive guarantees: the right to a clean and healthful environment (one of the strongest environmental-rights clauses in any U.S. constitution, enforced in real cases), unusually strong individual privacy rights that go beyond the federal Constitution, and an express right to know and right of participation in government.",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 1 · Montana's remarkable 1972 constitution"],
+  },
+  {
+    id: "civics.mt-legislature",
+    claim:
+      "Teaches Montana's citizen Legislature — 100 representatives on 2-year terms and 50 senators on 4-year terms — that meets only every other year, in odd-numbered years, for 90 legislative days, so lawmakers live and work in their communities most of the time; with voter-imposed term limits (generally 8 years in a 16-year period for an office) and a two-thirds veto override that can even be conducted by a mail poll of legislators after the session ends.",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 2 · A citizen Legislature that meets 90 days every other year"],
+  },
+  {
+    id: "civics.mt-executive-courts",
+    claim:
+      "Teaches Montana's plural executive — a Governor and Lieutenant Governor on a joint ticket, plus a separately elected Secretary of State, Attorney General, State Auditor (who also serves as Commissioner of Securities and Insurance), and Superintendent of Public Instruction, all on 4-year terms with term limits — and its nonpartisan elected judiciary: a seven-justice Supreme Court elected to 8-year terms and district judges to 6-year terms, with the Governor filling mid-term vacancies from a Judicial Nomination Commission list (Senate-confirmed) before the appointee must stand for election.",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 3 · The executive and how Montana picks its judges"],
+  },
+  {
+    id: "civics.mt-direct-democracy",
+    claim:
+      "Teaches Montana's strong direct democracy — the initiative (citizens gather signatures to put a statute OR a constitutional amendment on the ballot, as Montanans did for term limits) and the referendum to reject a law the Legislature passed — and how a bill becomes a Montana law in the biennial 90-day session (public committee hearings under the right to participate, floor votes, and the Governor's signature, a veto with a two-thirds override, or an amendatory veto returning a bill with suggested changes).",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 4 · Direct democracy and how a bill becomes law"],
+  },
+  {
+    id: "civics.mt-local-government",
+    claim:
+      "Teaches Montana local government as Montana's: 56 geographically huge, sparsely populated counties governed by elected boards of county commissioners; cities and towns, some under self-government (home-rule) charters the constitution encourages; school and special districts; and the 1972 constitution's distinctive requirement of periodic local “voter review” of government structure, letting communities revisit how they are organized.",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 5 · Local government and how to take part"],
+  },
+  {
+    id: "civics.mt-get-involved",
+    claim:
+      "Teaches getting involved where you live, Montana edition — registering and voting (absentee/mail voting, useful given Montana's distances, and ID rules to confirm at sosmt.gov, since they have changed and been litigated), signing or circulating an initiative or referendum, exercising the constitutional right to know to follow government documents and meetings, showing up at county commissions, city and town councils, and school boards, contacting your legislators in Helena, and running for local office.",
+    courseSlugs: ["state-civics-mt"],
+    lessons: ["Montana Civics, Lesson 5 · Local government and how to take part"],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
