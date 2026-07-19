@@ -2423,6 +2423,40 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Hawaii (state-civics-hi was written FROM Hawaii's own sources) ──
+  // NOTE: like California, Hawaii's high-school civics course — Participation in a Democracy, in the
+  // Hawaiʻi Core Standards in Social Studies (HCSSS, C3-based) — is almost entirely FEDERAL/general:
+  // its content standards name the U.S. Constitution, the national institutions, landmark Supreme
+  // Court cases, and public policy, with NO standard for Hawaii's own government structure. So the
+  // flagship's Hawaii-specific STRUCTURE lessons (four counties and one statewide school system, the
+  // 1959 constitution, the commission-decides-retention judiciary, the Office of Hawaiian Affairs,
+  // the official Hawaiian language) have no Hawaii code to cite and carry no claim — data/hi.ts
+  // publishes that gap in its notClaimed list. Hawaii's civic-ENGAGEMENT standard (SS.PID.5.7.1,
+  // effecting change in the community/state) is the one genuine home for the flagship, so the two
+  // claims below map the Hawaii-specific civic ACTIONS (vote by mail, elect the OHA trustees, show up
+  // at your county, advocate on statewide schools, run) there, alongside the general civics ladder.
+  {
+    id: "civics.hi-get-involved",
+    claim:
+      "Teaches getting involved where you live, Hawaii edition, in the most centralized state government in the nation: voting the ballot mailed to you (Hawaii runs its elections by mail, with same-day registration at voter service centers), showing up at your COUNTY — essentially the only layer of local government there is (Honolulu, Hawaiʻi, Maui, or Kauaʻi, with no city or town councils below it) — contacting your one Representative and one Senator in Honolulu, and running for county council, the Board of Education, the Office of Hawaiian Affairs, or the Legislature.",
+    courseSlugs: ["state-civics-hi"],
+    lessons: [
+      "Hawaii Civics, Lesson 5 · Elections, county government, and how to take part",
+      "Hawaii Civics, Lesson 1 · The most centralized state: four counties, no cities, one school system",
+    ],
+  },
+  {
+    id: "civics.hi-oha-and-schools",
+    claim:
+      "Teaches two civic-participation distinctives of Hawaii's centralized government: that ALL Hawaii voters elect the trustees of the Office of Hawaiian Affairs (a semi-autonomous state agency, created by the 1978 constitutional convention, that manages ceded-land revenues in trust for Native Hawaiians), an often-overlooked statewide race; and that because Hawaii is the only state with a single, statewide school system (no local school districts or boards), public-education advocacy runs through the statewide Board of Education and the Legislature rather than a local district.",
+    courseSlugs: ["state-civics-hi"],
+    lessons: [
+      "Hawaii Civics, Lesson 4 · The Office of Hawaiian Affairs and an official second language",
+      "Hawaii Civics, Lesson 5 · Elections, county government, and how to take part",
+      "Hawaii Civics, Lesson 1 · The most centralized state: four counties, no cities, one school system",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
