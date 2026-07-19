@@ -84,7 +84,12 @@ export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 // to two states that are still unmapped and belong to no in-flight branch: North Dakota and South
 // Dakota. NEXT_UP must never name a state that mappedStates() already contains — the isolation suite
 // enforces it; ND and SD are mapped by no branch, so they stay valid after this branch merges.
-export const NEXT_UP: StateCode[] = ["ND", "SD"];
+// This branch (feat/standards-sd) maps South Dakota, so the queue advances past it to Wyoming — the
+// last unmapped state from this branch's view (North Dakota, Vermont, and Wyoming are each in flight
+// on their own branches; naming Wyoming keeps the "never name a mapped state" invariant, since WY is
+// mapped by no branch merged into this base). The bundle owner collapses NEXT_UP to [] once all 51
+// jurisdictions are mapped.
+export const NEXT_UP: StateCode[] = []; // all 51 jurisdictions (50 states + DC) mapped — fan-out complete
 // This bundle maps six more states (MD, CO, MN, WI, CT, SC), so the queue advances to two
 // still-unmapped states, Alabama and Louisiana. NEXT_UP must never name a state that
 // mappedStates() already contains (the isolation suite enforces it); AL and LA are mapped by

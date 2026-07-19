@@ -3708,6 +3708,282 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: ["state-civics-mt"],
     lessons: ["Montana Civics, Lesson 5 · Local government and how to take part"],
   },
+
+  // ── State civics: North Dakota (state-civics-nd was written FROM North Dakota's own sources) ──
+  // NOTE: North Dakota's Social Studies Content Standards (August 2019) band grades 6-12 and use
+  // broad ANCHOR standards with numbered benchmarks (C.6_12.*, E.6_12.*, G.6_12.*, US.6_12.*,
+  // WH.6_12.*). There is no single "North Dakota state government" benchmark, so the flagship's
+  // North-Dakota-structure lessons (the Constitution of 1889, the two national "onlys" — no voter
+  // registration and the state-owned Bank of North Dakota + Mill and Elevator — the Nonpartisan
+  // League, the biennial 94-Rep/47-Senator Legislative Assembly, the elected nonpartisan Supreme
+  // Court, direct democracy, and the 53 counties) map onto the federal/comparative civics benchmarks
+  // that name STATE and LOCAL government (C.6_12.2.4, C.6_12.2.5) and citizen influence and
+  // participation (C.6_12.4.1, C.6_12.4.3, C.6_12.4.5). The Bank of North Dakota is North Dakota's
+  // own answer to "the role of government in a market economy" (E.6_12.4.2). See data/nd.ts.
+  {
+    id: "civics.nd-no-registration",
+    claim:
+      "Teaches North Dakota's singular election feature: it is the ONLY state in the nation with no voter registration (abolished 1951), so eligible residents just show up with acceptable ID proving identity and residence, and the ID rules — which have been litigated and adjusted — do the work of confirming eligibility (verify current rules at sos.nd.gov).",
+    courseSlugs: ["state-civics-nd"],
+    lessons: ["North Dakota Civics, Lesson 1 · The only state with no voter registration"],
+  },
+  {
+    id: "civics.nd-bank-mill-npl",
+    claim:
+      "Teaches North Dakota's second national 'only': the state-owned Bank of North Dakota (the only state-owned bank in the U.S.) and the state-owned North Dakota Mill and Elevator, both created in 1919 by the farmer-populist Nonpartisan League — a distinctive answer to what government is for, holding that certain economic functions should be run by the public through elected accountability.",
+    courseSlugs: ["state-civics-nd"],
+    lessons: ["North Dakota Civics, Lesson 2 · The only state-owned bank (and a state-owned mill)"],
+  },
+  {
+    id: "civics.nd-direct-democracy",
+    claim:
+      "Teaches North Dakota's strong direct democracy — a Nonpartisan League legacy: the initiative (citizens put a statute OR a constitutional amendment on the ballot, at comparatively low signature thresholds so measures reach the ballot regularly), the referendum (voters reject a law the Legislature passed), and recall (North Dakota recalled its governor in 1921) — alongside one of the country's larger plural executives.",
+    courseSlugs: ["state-civics-nd"],
+    lessons: [
+      "North Dakota Civics, Lesson 3 · Strong direct democracy and a large plural executive",
+    ],
+  },
+  {
+    id: "civics.nd-legislature-courts",
+    claim:
+      "Teaches North Dakota's own state structure: its Constitution of 1889, a large plural executive of many independently elected statewide officials, the part-time biennial Legislative Assembly (94 Representatives and 47 Senators on 4-year terms, meeting only in odd years and capped at 80 days per two-year biennium), how a North Dakota bill becomes law, and an elected nonpartisan Supreme Court of five justices serving 10-year terms.",
+    courseSlugs: ["state-civics-nd"],
+    lessons: [
+      "North Dakota Civics, Lesson 3 · Strong direct democracy and a large plural executive",
+      "North Dakota Civics, Lesson 4 · A Legislature that meets every other year, and the courts",
+    ],
+  },
+  {
+    id: "civics.nd-local-government",
+    claim:
+      "Teaches North Dakota local government as North Dakota's: 53 counties governed by elected county commissions (plus separately elected sheriff, auditor, treasurer, and state's attorney), active townships in rural areas alongside incorporated cities, and school and special districts.",
+    courseSlugs: ["state-civics-nd"],
+    lessons: ["North Dakota Civics, Lesson 5 · Local government and how to take part"],
+  },
+  {
+    id: "civics.nd-get-involved",
+    claim:
+      "Teaches getting involved where you live, North Dakota edition — voting with no registration (just show up with valid ID; early and absentee options), using North Dakota's low-threshold initiative and referendum, showing up at county commissions, city councils, township meetings, and school boards, contacting legislators in Bismarck (noting the Legislature meets mainly in odd years), and running for local office.",
+    courseSlugs: ["state-civics-nd"],
+    lessons: ["North Dakota Civics, Lesson 5 · Local government and how to take part"],
+  },
+  // ── State civics: Vermont (state-civics-vt was written FROM Vermont's own sources) ──
+  // NOTE: Vermont is the SOCIAL-STUDIES EDGE CASE of this whole map. Vermont does NOT publish its
+  // own detailed social-studies standards or codes — in 2017 the Vermont State Board of Education
+  // ADOPTED the national College, Career, and Civic Life (C3) Framework (NCSS, 2013) as Vermont's
+  // social-studies standards. So there is NO Vermont-specific SS code to cite: the flagship's
+  // Vermont-structure lessons map onto the C3 Framework's GENERAL civics indicators (D2.Civ.1,
+  // D2.Civ.5, D2.Civ.11), which name "local" and "state" institutions but are not Vermont-specific.
+  // data/vt.ts is INHERIT-heavy across the board — Common Core ELA (2010), NGSS (2013, Vermont was
+  // an NGSS Lead State), and the adopted C3 Framework — and is explicit about the Vermont-specific
+  // SS gap. Each state-specific claim below teaches VERMONT'S version of state government from its
+  // own official sources (legislature.vermont.gov, sos.vermont.gov, vermontjudiciary.org, and the
+  // Vermont Constitution).
+  {
+    id: "civics.vt-republic-constitution",
+    claim:
+      "Teaches Vermont's singular origin — an INDEPENDENT REPUBLIC (the Vermont Republic, 1777-1791) before it joined the Union as the 14th state on March 4, 1791, the first state admitted after the original 13 — and that its 1777 constitution was the FIRST in what became the United States to prohibit adult slavery and did not limit voting to property owners; Vermont governs today under its Constitution of 1793.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 1 · The independent republic that banned adult slavery first"],
+  },
+  {
+    id: "civics.vt-general-assembly",
+    claim:
+      "Teaches Vermont's Legislature — the General Assembly — as Vermont's: a 150-member House of Representatives and a 30-member Senate, BOTH serving 2-year terms with NO term limits, a part-time citizen legislature that meets in Montpelier (the smallest state capital in the nation) and traditionally pauses for Town Meeting Day, so legislators live and work in their communities the rest of the year.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 2 · A part-time citizen Legislature in the smallest capital"],
+  },
+  {
+    id: "civics.vt-executive",
+    claim:
+      "Teaches Vermont's plural executive and its unusually short terms: the Governor serves a 2-YEAR term (Vermont and New Hampshire are the only two states that still elect a governor every two years) with NO term limits, and voters separately elect the Lieutenant Governor (who may be of a different party than the Governor), the Secretary of State, the Treasurer, the Auditor of Accounts, and the Attorney General, each to 2-year terms; plus a rare constitutional provision — if no candidate for Governor, Lieutenant Governor, or Treasurer wins a MAJORITY of the popular vote, the General Assembly chooses the winner by joint ballot.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 3 · Two-year terms, a plural executive, and the majority rule"],
+  },
+  {
+    id: "civics.vt-courts",
+    claim:
+      "Teaches how Vermont picks its judges — appointment with a distinctive LEGISLATIVE retention: the Judicial Nominating Board screens candidates, the Governor appoints, and the Senate confirms, and then, at the end of each 6-year term, the GENERAL ASSEMBLY (not the voters) decides by joint ballot whether to retain each judge — with a 5-justice Vermont Supreme Court at the top, keeping Vermont's judges out of election campaigns.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 4 · Appointed judges the Legislature votes to keep"],
+  },
+  {
+    id: "civics.vt-lawmaking-no-initiative",
+    claim:
+      "Teaches how a bill becomes a Vermont law in the General Assembly (introduction, committee, floor votes in both chambers, then the Governor's signature, a veto overridable by two-thirds of each chamber, or passage without signature) and that Vermont has NO statewide citizen initiative or referendum — Vermonters cannot petition a law or a constitutional amendment onto the ballot, so statewide lawmaking runs entirely through the elected General Assembly, while direct democracy lives at the LOCAL level in town meeting.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 5 · How a bill becomes law, and why there is no ballot initiative"],
+  },
+  {
+    id: "civics.vt-town-meeting",
+    claim:
+      "Teaches Vermont local government as Vermont's, built around TOWN MEETING: on Town Meeting Day (the first Tuesday in March) residents gather to debate and vote directly on the town budget, elect town officers, and decide local questions — one of the purest surviving forms of direct democracy in the country — with the TOWN as Vermont's primary unit of local government and its 14 counties reduced to a very limited role (mainly the courts, the sheriff, and the state's attorney, with no county-wide legislative body).",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 6 · Town Meeting Day and the town as the unit of government"],
+  },
+  {
+    id: "civics.vt-get-involved",
+    claim:
+      "Teaches getting involved where you live, Vermont edition — registering and voting (Vermont offers same-day, Election-Day registration and, since 2021, mails a ballot to every active registered voter for general elections) and taking part in Town Meeting Day, showing up at the selectboard and the school board, contacting your representatives in Montpelier (with 150 House members, among the most accessible legislators in the country), and running for local office, including Vermont's elected Justices of the Peace.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 6 · Town Meeting Day and the town as the unit of government"],
+  },
+  // ── State civics: South Dakota (state-civics-sd was written FROM South Dakota's own sources) ──
+  // NOTE: South Dakota's revised (2023) Social Studies Standards carry a full 9th-12th grade United
+  // States Government/American Civics course, and its anchor 9-12.C.17 is entirely about SOUTH DAKOTA
+  // and Native American government and politics — so unlike Arkansas or California the flagship's
+  // South Dakota-structure lessons have a genuine, near-1:1 home: 9-12.C.17.B (state government), .C
+  // (local government), .D (state and local elections), .E (the constitutions and structure of the
+  // nine federally recognized tribal governments), and .F (the federal-state-local-tribal
+  // relationship), alongside 9-12.C.16.B (the federal election process "based on South Dakota law")
+  // and 9-12.C.1.A (identify the state's own current officeholders and local tribal leaders). See
+  // data/sd.ts.
+  {
+    id: "civics.sd-constitution-direct-democracy",
+    claim:
+      "Teaches South Dakota's 1889 constitution and the direct democracy South Dakota pioneered: in 1898 it became the first state in the nation to amend its constitution to give citizens the initiative and the referendum, on a signature threshold set at no more than five percent of the state's voters, so a citizen route to make and repeal law has run alongside the Legislature in South Dakota for more than a century.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: [
+      "South Dakota Civics, Lesson 1 · South Dakota's constitution and the first citizen initiative in America (1898)",
+      "South Dakota Civics, Lesson 6 · Elections in South Dakota (the initiative and referendum)",
+    ],
+  },
+  {
+    id: "civics.sd-three-branches",
+    claim:
+      "Teaches South Dakota's three branches as South Dakota's: 35 legislative districts that each elect one senator and two representatives, making a 35-seat Senate and a 70-seat House, and a plural executive in which the Governor and Lieutenant Governor run on a joint ticket while the Attorney General, Secretary of State, Auditor, Treasurer, and Commissioner of School and Public Lands are elected separately.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: ["South Dakota Civics, Lesson 2 · The three branches, and South Dakota's plural executive"],
+  },
+  {
+    id: "civics.sd-courts",
+    claim:
+      "Teaches South Dakota's split judicial selection: the five justices of the South Dakota Supreme Court are appointed by the Governor from a Judicial Qualifications Commission list and then face yes/no retention elections (a merit or “Missouri” plan), while circuit judges are chosen in nonpartisan elections to eight-year terms.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: ["South Dakota Civics, Lesson 3 · South Dakota's courts: merit selection for the Supreme Court, elected circuit judges"],
+  },
+  {
+    id: "civics.sd-bill-process",
+    claim:
+      "Teaches how a bill becomes a South Dakota law in the Legislature, and, beside it, the citizen initiative and referendum as South Dakota's first-in-the-nation second route to making and unmaking law directly.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: ["South Dakota Civics, Lesson 4 · How a bill becomes a South Dakota law (and how voters do it directly)"],
+  },
+  {
+    id: "civics.sd-local-government",
+    claim:
+      "Teaches South Dakota local government as South Dakota's: 66 counties, the organized civil townships that survive across much of the eastern part of the state, and the cities and towns whose layered local government the standards ask students to trace in their own community.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: [
+      "South Dakota Civics, Lesson 5 · Local and tribal government in South Dakota: 66 counties, townships, and the nine tribes",
+      "South Dakota Civics, Lesson 8 · Get involved where you live in South Dakota",
+    ],
+  },
+  {
+    id: "civics.sd-tribal-governments",
+    claim:
+      "Teaches the constitutions, structure, and function of the nine federally recognized tribal governments within South Dakota, and the historical and present relationship among federal, state, local, and tribal governments in the state — a distinctive South Dakota civics topic the 2023 standards single out.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: [
+      "South Dakota Civics, Lesson 5 · Local and tribal government in South Dakota: 66 counties, townships, and the nine tribes",
+    ],
+  },
+  {
+    id: "civics.sd-elections",
+    claim:
+      "Teaches South Dakota's elections as South Dakota's: the first-in-the-nation citizen initiative and referendum, no-excuse absentee voting, and a photo-ID request at the polls with a signed-affidavit fallback — with the standing advice to confirm current rules and deadlines with the South Dakota Secretary of State, since election law changes.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: [
+      "South Dakota Civics, Lesson 6 · Elections in South Dakota: the initiative and referendum, absentee voting, and voter ID",
+    ],
+  },
+  {
+    id: "civics.sd-get-involved",
+    claim:
+      "Teaches getting involved where you live, South Dakota edition — registering and voting, signing or circulating an initiative or referendum (the tool South Dakotans invented), showing up at the county commission, city or town council, and school board, contacting your legislators in Pierre, and running for local office.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: ["South Dakota Civics, Lesson 8 · Get involved where you live in South Dakota"],
+  },
+  // ── State civics: Wyoming (state-civics-wy was written FROM Wyoming's own sources) ──
+  // NOTE: unlike Arkansas / California / New York, whose civics standards are overwhelmingly
+  // federal and leave the flagship's state-structure lessons homeless, Wyoming's SS12.1.5
+  // explicitly requires students to "demonstrate an understanding of the structures of both the
+  // United States and Wyoming Constitutions" — so the Wyoming flagship's structure lessons (the
+  // 1889 constitution, the five-officer plural executive with NO lieutenant governor, the
+  // part-time 62/31 Legislature, the Missouri-Plan judiciary, direct democracy) have a genuine
+  // home. See data/wy.ts.
+  {
+    id: "civics.wy-equality-state",
+    claim:
+      "Teaches Wyoming as 'The Equality State' — the first place in America to grant women the vote (as a territory in 1869), the nation's first woman governor (Nellie Tayloe Ross, 1925), and the 1889 Constitution's equal-political-rights guarantee that Wyoming refused to drop to gain statehood in 1890.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 1 · 'The Equality State': first to grant women the vote",
+    ],
+  },
+  {
+    id: "civics.wy-executive",
+    claim:
+      "Teaches Wyoming's plural executive: five separately elected statewide officers (Governor, Secretary of State, State Auditor, State Treasurer, and Superintendent of Public Instruction) and NO Lieutenant Governor, with the Secretary of State first in line to succeed the Governor.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 2 · Wyoming's executive: five elected officers, and no Lieutenant Governor",
+    ],
+  },
+  {
+    id: "civics.wy-legislature-tax",
+    claim:
+      "Teaches Wyoming's part-time citizen Legislature — a 62-member House on 2-year terms and a 31-member Senate on 4-year terms, meeting in short general (odd-year) and budget (even-year) sessions — and its lack of a state personal income tax, funded heavily through mineral and energy revenue.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 3 · The part-time Legislature and how Wyoming picks its judges",
+    ],
+  },
+  {
+    id: "civics.wy-courts",
+    claim:
+      "Teaches Wyoming's merit-selection judiciary — the Missouri Plan: a judicial nominating commission sends the Governor a list, the Governor appoints, and the judge later faces a nonpartisan yes/no retention election — and the five-justice Wyoming Supreme Court.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 3 · The part-time Legislature and how Wyoming picks its judges",
+    ],
+  },
+  {
+    id: "civics.wy-bill-process",
+    claim:
+      "Teaches how a bill becomes a Wyoming law across the biennial general and budget sessions, and the Governor's veto — overridden by a two-thirds vote of each chamber — and line-item veto on appropriations.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wy-direct-democracy",
+    claim:
+      "Teaches that Wyoming has the citizen initiative and referendum but with comparatively high signature and distribution requirements, so statewide measures reach the ballot less often than in neighboring initiative states.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wy-local-government",
+    claim:
+      "Teaches Wyoming local government as Wyoming's: 23 counties governed by elected boards of county commissioners, cities and towns, special and school districts, and the Wind River Reservation (the Eastern Shoshone and Northern Arapaho) as sovereign tribal governments within the state.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wy-get-involved",
+    claim:
+      "Teaches getting involved where you live, Wyoming edition — registering and voting (Wyoming offers Election-Day registration and requires ID; rules are administered by county clerks and change, so verify at sos.wyo.gov), showing up at accessible county commissions, city and town councils, and school boards, contacting your one Representative and one Senator in Cheyenne, and running for local office.",
+    courseSlugs: ["state-civics-wy"],
+    lessons: [
+      "Wyoming Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
