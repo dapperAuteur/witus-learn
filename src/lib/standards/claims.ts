@@ -2646,6 +2646,87 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Louisiana Civics, Lesson 6 · Judges, voting, and how to take part",
     ],
   },
+  // ── State civics: Iowa (state-civics-ia was written FROM Iowa's own sources) ──
+  // NOTE: Iowa writes its OWN social studies standards (the Iowa Academic Standards for Social
+  // Studies, current January 2026 revision, C3-informed — not Common Core). Its High School
+  // Civics/Government course names Iowa's own government explicitly and in three places —
+  // SS.9-12.Gov.18 (the government of the State of Iowa), SS.9-12.Gov.20 (Iowa's local governments),
+  // and SS.9-12.Gov.13 (Iowa election law, absentee voting, the Iowa Caucuses, and redistricting) —
+  // so the Iowa flagship's most distinctive lessons map 1:1. data/ia.ts gives them a home and also
+  // transcribes Iowa's own literacy (ELA) standards VERBATIM (Iowa revised some Common Core codes, so
+  // they are NOT blind-aliased to the shared framework). Iowa is INHERIT-heavy with a bespoke frame.
+  {
+    id: "civics.ia-caucuses",
+    claim:
+      "Teaches Iowa's precinct caucuses — neighborhood party meetings (not ballot primaries) that traditionally opened the presidential nominating season 'first in the nation,' giving a small farm state outsized, face-to-face retail-campaign influence — while flagging that the nominating calendar has recently shifted, so exact 'first' status varies by party and year (confirm at sos.iowa.gov). Iowa governs under its Constitution of 1857 and became the 29th state on December 28, 1846.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 1 · The Iowa caucuses: going first in presidential politics",
+    ],
+  },
+  {
+    id: "civics.ia-redistricting",
+    claim:
+      "Teaches Iowa's nationally admired nonpartisan redistricting: the nonpartisan Legislative Services Agency (LSA) draws Iowa's legislative and congressional maps on neutral criteria (equal population, compact districts, respect for county and city lines) and is forbidden from considering past election results, incumbents' addresses, or party registration; the Legislature then votes the maps up or down — a model widely cited for reducing gerrymandering.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 2 · Iowa's nonpartisan redistricting: a national model",
+    ],
+  },
+  {
+    id: "civics.ia-executive-legislature",
+    claim:
+      "Teaches Iowa's plural executive (the Governor and Lieutenant Governor on a joint ticket, plus a separately elected Secretary of State, Attorney General, State Treasurer, State Auditor, and Secretary of Agriculture — a fitting office for a major farm state, all on 4-year terms) and the Iowa General Assembly (a 100-member House on 2-year terms and a 50-member Senate on 4-year terms), with the Governor's strong item veto on appropriations and a two-thirds override.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 3 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ia-judiciary",
+    claim:
+      "Teaches Iowa's merit-selection judiciary (the 'Missouri Plan'): a State Judicial Nominating Commission screens applicants and sends the Governor a list, the Governor appoints, and the judge later faces voters in a nonpartisan yes/no retention election; the Iowa Supreme Court has 7 justices, and Iowa's 2010 removal of three justices showed retention votes are real.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 3 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ia-lawmaking",
+    claim:
+      "Teaches how a bill becomes an Iowa law (introduction, committee, floor votes in both chambers, then the Governor's signature, veto with a two-thirds override, or item veto of appropriations) and that Iowa has NO statewide citizen initiative for general laws — an unusual gap: constitutional amendments must be passed by two consecutive General Assemblies and then ratified by the voters.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ia-local-government",
+    claim:
+      "Teaches Iowa local government as Iowa's: 99 counties (a famously large number for the state's size) governed by elected boards of supervisors and other elected county officials, cities under a strong home-rule tradition, townships and special districts, and locally run school districts.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ia-elections",
+    claim:
+      "Teaches Iowa's election specifics — early/absentee voting and a voter-ID requirement, administered by county auditors, with early-voting windows and deadlines adjusted in recent years — and a standing flag to confirm the current rules at sos.iowa.gov before voting.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ia-get-involved",
+    claim:
+      "Teaches getting involved where you live, Iowa edition — attending your precinct caucus (a hands-on way to shape party business and, in presidential years, register a preference), registering and voting under current sos.iowa.gov rules, showing up at county boards of supervisors, city councils, and school boards, contacting your one Representative and one Senator in Des Moines, and running for local office.",
+    courseSlugs: ["state-civics-ia"],
+    lessons: [
+      "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
