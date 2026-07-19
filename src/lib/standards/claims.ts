@@ -2038,6 +2038,79 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Utah (state-civics-ut was written FROM Utah's own sources) ──
+  // NOTE: Utah's United States Government and Citizenship course (Utah Core Standards for Social
+  // Studies, revised September 2016) reaches Utah's own government mainly through its DISTRIBUTION
+  // OF POWER strand — U.S. GOV Standard 3.1 (power among national/state/tribal/local) and 3.2 (local
+  // elected officers) — plus the civic-responsibilities standard (2.3) and the "how people organize
+  // to participate" standard (3.3), which is a genuine home for Utah's distinctive dual-path
+  // (caucus-convention OR signature) nomination system. Utah is MIXED inherit+bespoke: it adopted
+  // the Common Core for ELA/Math (its disciplinary-literacy strands are verbatim; see data/ut.ts),
+  // while its Social Studies and its SEEd science are Utah's own.
+  {
+    id: "civics.ut-dual-path",
+    claim:
+      "Teaches Utah's most distinctive election feature: since 2014 a candidate reaches the party primary ballot by a 'dual path' — EITHER the traditional caucus-and-convention route (precinct caucuses elect delegates who vote at a party convention) OR by gathering a set number of voter signatures, or both — a compromise (the 'Count My Vote' citizen effort and the Legislature's SB54) that few states use and that has been litigated ever since, so the flagship points learners to vote.utah.gov for current rules.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 1 · Utah's dual-path ballot access: caucus-convention OR signatures",
+    ],
+  },
+  {
+    id: "civics.ut-statehood-executive",
+    claim:
+      "Teaches Utah's 1896 statehood (admitted only after its constitution permanently banned polygamy and affirmed separation of church and state, religious freedom, and — from the start — women's suffrage) and its plural executive: the Governor and Lieutenant Governor run together on a joint ticket (the Lieutenant Governor also serving as Utah's chief elections officer), with the Attorney General, State Auditor, and State Treasurer separately elected to four-year terms.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 2 · Statehood, and Utah's plural executive",
+    ],
+  },
+  {
+    id: "civics.ut-legislature",
+    claim:
+      "Teaches Utah's part-time citizen Legislature — a 75-member House on two-year terms and a 29-member Senate on four-year terms that meets for a short annual session of just 45 calendar days — how a bill becomes a Utah law (introduction, committee, floor votes, and the Governor's signature, two-thirds override, or line-item veto of appropriations), and Utah's citizen initiative and referendum, whose balance with the Legislature is an active civic question.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 3 · A 45-day citizen Legislature and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ut-courts-merit",
+    claim:
+      "Teaches how Utah chooses its judges: the 'Missouri Plan' merit selection in which a Judicial Nominating Commission sends the Governor a list, the Governor appoints, the Senate confirms, and the judge later faces a nonpartisan yes/no retention election — with Utah's distinctive Judicial Performance Evaluation Commission publishing evaluations to aid retention voters, and a five-justice Utah Supreme Court on ten-year terms.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 4 · How Utah picks its judges, and its all-mail elections",
+    ],
+  },
+  {
+    id: "civics.ut-elections-mail",
+    claim:
+      "Teaches Utah's all-mail elections: every active registered voter is mailed a ballot, returnable by mail or drop box, with in-person options and same-day registration also available, administered by county clerks — flagged as time-sensitive and pointing to vote.utah.gov for current deadlines and rules.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 4 · How Utah picks its judges, and its all-mail elections",
+    ],
+  },
+  {
+    id: "civics.ut-local-government",
+    claim:
+      "Teaches Utah local government as Utah's: 29 counties governed by elected commissions or councils (some restructured by charter) with other elected county officers, cities and towns providing municipal services under mayor-council or council-manager forms, and school and special districts.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ut-get-involved",
+    claim:
+      "Teaches getting involved where you live, Utah edition — registering and voting by Utah's mailed ballot (with same-day registration), attending your neighborhood precinct caucus to become a delegate, gathering or signing nominating-petition signatures, using the initiative and referendum, showing up at county commissions, city councils, and school boards, contacting your one Representative and one Senator (timed to the short 45-day session), and running for reachable local office.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
