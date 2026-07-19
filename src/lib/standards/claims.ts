@@ -2242,6 +2242,187 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Kansas (state-civics-ks was written FROM Kansas's own sources) ──
+  // NOTE: Kansas's standards are UNUSUAL. The Kansas Standards for History, Government, and Social
+  // Studies (2013) are deliberately SKILLS-not-content: five thematic Standards (1 Choices have
+  // consequences … 5 Relationships … are dynamic), each with four benchmarks (x.1 recognize/evaluate,
+  // x.2 analyze/draw conclusions, x.3 investigate/connect to contemporary issues, x.4 use/apply). The
+  // HS United States Government course (Kansas Course Code 04151) applies those same benchmarks; its
+  // document says outright that "state assessments will focus on the Standards and Benchmarks, not
+  // specific content." So Kansas's OWN structural facts (its plural executive, 125/40 Legislature,
+  // merit-selection Supreme Court, absence of a citizen initiative, strong home rule, 105 counties)
+  // are the CONTENT through which the benchmarks are exercised, not standards in their own right —
+  // the flagship teaches them in depth as the vehicle for the benchmark skills. Kansas KEPT the
+  // Common Core (unlike Oklahoma): its ELA/Math are the Kansas College and Career Ready Standards
+  // (KCCRS = Common Core, verbatim) and its science is NGSS, verbatim (adopted 2013). data/ks.ts
+  // adopts the shared Common Core ELA (aliased to Kansas's bare codes) and the shared NGSS. MIXED.
+  {
+    id: "civics.ks-bleeding-kansas-wyandotte",
+    claim:
+      "Teaches Kansas's dramatic founding: 'Bleeding Kansas,' the violent 1850s struggle (touched off by the Kansas-Nebraska Act of 1854 and 'popular sovereignty') over whether Kansas would enter the Union free or slave, an era that helped spark the Civil War; that Kansans wrote four rival constitutions during the fight and the free-state Wyandotte Constitution of 1859 prevailed, admitting Kansas as a free state (the 34th) on January 29, 1861; and that this same Wyandotte Constitution is still in force today (heavily amended), so Kansas's founding document is a direct product of the fight over slavery.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 1 · 'Bleeding Kansas' and the free-state Wyandotte Constitution",
+    ],
+  },
+  {
+    id: "civics.ks-plural-executive",
+    claim:
+      "Teaches Kansas's plural executive: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State (who runs elections), the Attorney General, the State Treasurer, and the Commissioner of Insurance — so Kansas can have a Governor of one party and other statewide officers of another, and they can check one another; statewide officers serve four-year terms.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 2 · The executive and the Legislature",
+    ],
+  },
+  {
+    id: "civics.ks-legislature",
+    claim:
+      "Teaches the Kansas Legislature — a part-time citizen body meeting in Topeka with a 125-member House (two-year terms) and a 40-member Senate (four-year terms) — and how a bill becomes a Kansas law (introduction, committee, floor votes in both chambers, and the Governor's signature, veto with a two-thirds override of each chamber, or line-item veto of appropriations).",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 2 · The executive and the Legislature",
+      "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
+    ],
+  },
+  {
+    id: "civics.ks-courts-merit-selection",
+    claim:
+      "Teaches how Kansas chooses its seven-justice Supreme Court: the 'Missouri Plan' merit selection, in which a Supreme Court Nominating Commission of lawyers and citizens sends the Governor a short list, the Governor appoints from it, and the justice later faces voters in a nonpartisan yes/no retention election — flagged as time-sensitive because Kansas has repeatedly debated changing the method (e.g., to Senate-confirmed appointments or partisan elections), with Court of Appeals judges appointed by the Governor with Senate confirmation and many district (trial) judges elected.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
+    ],
+  },
+  {
+    id: "civics.ks-no-initiative",
+    claim:
+      "Teaches Kansas's distinctive absence of direct democracy: unlike its plains and western neighbors (Colorado, Nebraska, the Dakotas), Kansas has NO statewide citizen initiative — citizens cannot put a statute or amendment on the ballot by petition; constitutional amendments are proposed by the Legislature (a two-thirds vote of each chamber) and then ratified by the voters, so the citizen role is ratification, not initiation, and the ballot questions Kansans see are ones the Legislature chose to refer.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
+    ],
+  },
+  {
+    id: "civics.ks-home-rule",
+    claim:
+      "Teaches Kansas's strong home rule: the Kansas Constitution grants cities and counties substantial authority to manage their own local affairs without asking the Legislature for permission on every matter, making Kansas localities comparatively self-governing (a contrast with weak-home-rule states).",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ks-local-government",
+    claim:
+      "Teaches Kansas local government as Kansas's own: 105 counties governed by elected boards of county commissioners (plus other elected county officials — sheriff, clerk, treasurer, register of deeds), cities classified by size providing municipal services under home rule, townships in rural areas, and school and special districts.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ks-get-involved",
+    claim:
+      "Teaches getting involved where you live, Kansas edition — registering and voting with photo ID and advance/early voting administered by county election officers (flagged time-sensitive, pointing to sos.ks.gov), showing up at the county commission, city council, and school board that home rule empowers to decide much without Topeka, reading the Legislature-referred amendments carefully (since Kansans cannot start ballot measures), contacting your one Representative and one Senator, and running for reachable local office.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
+    ],
+  },
+
+  // ── State civics: Nebraska (state-civics-ne was written FROM Nebraska's own sources) ──
+  // NOTE: Nebraska is a notable NON-adopter of the Common Core — its ELA and Math College and Career
+  // Ready Standards are Nebraska's OWN, and its 2017 science standards are Nebraska's own (NGSS-
+  // influenced, not verbatim NGSS) — so unlike Kansas we adopt NO shared framework here (data/ne.ts
+  // publishes ELA/Math/Science as deferred gaps, not denials). Nebraska is BESPOKE-heavy. The
+  // Nebraska Social Studies Standards (2019, approved Nov 8, 2019) ARE content-bearing (unlike
+  // Kansas's skills-only design): the High School Civics standard SS HS.1.1.e ("Analyze the
+  // foundation, structures, and functions of state government and its outcomes") explicitly names
+  // "bicameral/unicameral" in its own example list, so the state-civics-ne flagship's headline —
+  // Nebraska's one-house, officially nonpartisan Unicameral — gets a genuine 1:1 home, alongside its
+  // local-government (SS HS.1.1.d) and civic-participation (SS HS.1.2.a/c) standards.
+  {
+    id: "civics.ne-unicameral",
+    claim:
+      "Teaches the fact that defines Nebraska government: it has the ONLY unicameral (single-house) legislature in the United States, and the only OFFICIALLY NONPARTISAN one — its 49 members are called Senators (one per district, four-year terms, limited to two consecutive terms), they appear on the ballot with no party label, and leadership and committee chairs are chosen by the members rather than by party; Nebraskans adopted 'the Unicameral' by ballot initiative in 1934 (championed by U.S. Senator George W. Norris, who argued a single nonpartisan house would be cheaper, more transparent, and less prone to backroom deals), effective 1937.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 1 · The Unicameral: one house, no party labels",
+    ],
+  },
+  {
+    id: "civics.ne-lawmaking",
+    claim:
+      "Teaches how a bill becomes law in a one-house legislature: a distinctive Nebraska rule guarantees EVERY bill introduced a public hearing where any citizen may testify; because there is no second chamber, each bill is debated in three separate stages (General File, Select File, Final Reading); there is no conference committee to reconcile two versions; and the Governor may sign, veto, or line-item veto appropriations, with the Unicameral overriding a veto by a three-fifths vote (30 of 49 senators) — single-house deliberation that replaces the role a second chamber would play.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 2 · How a bill becomes law in a one-house legislature",
+    ],
+  },
+  {
+    id: "civics.ne-direct-democracy",
+    claim:
+      "Teaches Nebraska's strong direct democracy, the citizen backstop paired with its one-house Legislature (tools added in 1912): the initiative (put a statute or constitutional amendment on the ballot by petition), the referendum (veto a law the Legislature passed), and recall for many local offices.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 2 · How a bill becomes law in a one-house legislature",
+    ],
+  },
+  {
+    id: "civics.ne-executive",
+    claim:
+      "Teaches Nebraska's executive branch: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State, Attorney General, State Treasurer, and State Auditor, and Nebraska also directly elects several boards — the Public Service Commission, the State Board of Education, and the University Board of Regents.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 3 · The executive and how Nebraska picks its judges",
+    ],
+  },
+  {
+    id: "civics.ne-courts-merit-selection",
+    claim:
+      "Teaches how Nebraska chooses its judges: the 'Missouri Plan' merit selection followed by retention — a nonpartisan judicial nominating commission vets applicants and sends the Governor a short list, the Governor appoints from it, and the judge later faces voters in a nonpartisan yes/no retention election; the Nebraska Supreme Court has seven members (a Chief Justice plus six justices from districts), keeping judges out of partisan campaigns.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 3 · The executive and how Nebraska picks its judges",
+    ],
+  },
+  {
+    id: "civics.ne-public-power",
+    claim:
+      "Teaches a Nebraska first: it is the ONLY state in the nation where ALL electricity is publicly owned — there are no private, for-profit electric utilities; power is delivered by public power districts, municipal utilities, and cooperatives governed by ELECTED boards (a legacy of Nebraska's early-20th-century public-power movement associated with George Norris), so a Nebraskan's electricity provider is a government or cooperative body whose board they can vote for, and rates and policy are set by boards they elect.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 4 · Two more Nebraska firsts: public power and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.ne-split-electoral",
+    claim:
+      "Teaches that Nebraska is one of only two states (with Maine) that SPLITS its presidential electoral votes by congressional district rather than winner-take-all: two electors go to the statewide winner and one elector goes to the winner of each congressional district, which is why Nebraska's Omaha-based 'blue dot' district can send a single electoral vote to a different candidate than the rest of the state — flagged time-sensitive because proposals to switch to winner-take-all surface periodically.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 4 · Two more Nebraska firsts: public power and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.ne-local-government",
+    claim:
+      "Teaches Nebraska local government as Nebraska's own: 93 counties, most governed by an elected county board (of commissioners or supervisors) plus separately elected officials (sheriff, clerk, treasurer, attorney, assessor); cities and villages classified by size (Omaha and Lincoln hold home-rule charters); elected public-power district boards; natural resources districts (NRDs), a Nebraska innovation for managing water and soil by watershed; and school districts.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ne-get-involved",
+    claim:
+      "Teaches getting involved where you live, Nebraska edition — registering and voting (including for the public-power and NRD boards that set electricity and water policy, with a voter photo-ID requirement added by initiative in 2022, flagged time-sensitive and pointing to sos.nebraska.gov), testifying at the Unicameral (where every bill gets a public hearing, an unusually open door), using the strong initiative and referendum, contacting your single state senator, and running for reachable local office (school board, city council, county board, NRD, and public-power boards).",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",

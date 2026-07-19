@@ -49,10 +49,11 @@ A teacher, homeschooler, or administrator picks their **state** and sees which c
 of that state's published standards: exact code, the standard's **verbatim text**, the lessons
 that cover it, a link to the publisher's document, the date it was retrieved, and an honest
 `full` | `partial` flag (partials must say what's missing; a test enforces it). Filterable by
-subject and course, printable, and copyable as plain text for a state filing. **Mapped so far:
-Arkansas, Arizona, California, Washington D.C., Florida, Illinois, Indiana, Michigan, New York,
-Pennsylvania, and Texas** (11 states), each with its state-civics flagship course mapped 1:1 where
-the state's own standards allow. States without a verified mapping render as "not mapped yet", never as errors,
+subject and course, printable, and copyable as plain text for a state filing. **34 jurisdictions
+are mapped so far** (most recently Kansas and Nebraska), each with its state-civics flagship course
+mapped 1:1 where the state's own standards allow; the live list is derived from the data files, so
+the picker and the in-app roadmap (`/admin/roadmap`) are the authoritative sources for exactly which
+states are covered. States without a verified mapping render as "not mapped yet", never as errors,
 and each mapped state publishes its **"What we don't claim"** rejections alongside the claims.
 
 The companion **standards explorer** (`/academic-standards/matrix`) flattens every
