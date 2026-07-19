@@ -3767,6 +3767,67 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: ["state-civics-nd"],
     lessons: ["North Dakota Civics, Lesson 5 · Local government and how to take part"],
   },
+  // ── State civics: Vermont (state-civics-vt was written FROM Vermont's own sources) ──
+  // NOTE: Vermont is the SOCIAL-STUDIES EDGE CASE of this whole map. Vermont does NOT publish its
+  // own detailed social-studies standards or codes — in 2017 the Vermont State Board of Education
+  // ADOPTED the national College, Career, and Civic Life (C3) Framework (NCSS, 2013) as Vermont's
+  // social-studies standards. So there is NO Vermont-specific SS code to cite: the flagship's
+  // Vermont-structure lessons map onto the C3 Framework's GENERAL civics indicators (D2.Civ.1,
+  // D2.Civ.5, D2.Civ.11), which name "local" and "state" institutions but are not Vermont-specific.
+  // data/vt.ts is INHERIT-heavy across the board — Common Core ELA (2010), NGSS (2013, Vermont was
+  // an NGSS Lead State), and the adopted C3 Framework — and is explicit about the Vermont-specific
+  // SS gap. Each state-specific claim below teaches VERMONT'S version of state government from its
+  // own official sources (legislature.vermont.gov, sos.vermont.gov, vermontjudiciary.org, and the
+  // Vermont Constitution).
+  {
+    id: "civics.vt-republic-constitution",
+    claim:
+      "Teaches Vermont's singular origin — an INDEPENDENT REPUBLIC (the Vermont Republic, 1777-1791) before it joined the Union as the 14th state on March 4, 1791, the first state admitted after the original 13 — and that its 1777 constitution was the FIRST in what became the United States to prohibit adult slavery and did not limit voting to property owners; Vermont governs today under its Constitution of 1793.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 1 · The independent republic that banned adult slavery first"],
+  },
+  {
+    id: "civics.vt-general-assembly",
+    claim:
+      "Teaches Vermont's Legislature — the General Assembly — as Vermont's: a 150-member House of Representatives and a 30-member Senate, BOTH serving 2-year terms with NO term limits, a part-time citizen legislature that meets in Montpelier (the smallest state capital in the nation) and traditionally pauses for Town Meeting Day, so legislators live and work in their communities the rest of the year.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 2 · A part-time citizen Legislature in the smallest capital"],
+  },
+  {
+    id: "civics.vt-executive",
+    claim:
+      "Teaches Vermont's plural executive and its unusually short terms: the Governor serves a 2-YEAR term (Vermont and New Hampshire are the only two states that still elect a governor every two years) with NO term limits, and voters separately elect the Lieutenant Governor (who may be of a different party than the Governor), the Secretary of State, the Treasurer, the Auditor of Accounts, and the Attorney General, each to 2-year terms; plus a rare constitutional provision — if no candidate for Governor, Lieutenant Governor, or Treasurer wins a MAJORITY of the popular vote, the General Assembly chooses the winner by joint ballot.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 3 · Two-year terms, a plural executive, and the majority rule"],
+  },
+  {
+    id: "civics.vt-courts",
+    claim:
+      "Teaches how Vermont picks its judges — appointment with a distinctive LEGISLATIVE retention: the Judicial Nominating Board screens candidates, the Governor appoints, and the Senate confirms, and then, at the end of each 6-year term, the GENERAL ASSEMBLY (not the voters) decides by joint ballot whether to retain each judge — with a 5-justice Vermont Supreme Court at the top, keeping Vermont's judges out of election campaigns.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 4 · Appointed judges the Legislature votes to keep"],
+  },
+  {
+    id: "civics.vt-lawmaking-no-initiative",
+    claim:
+      "Teaches how a bill becomes a Vermont law in the General Assembly (introduction, committee, floor votes in both chambers, then the Governor's signature, a veto overridable by two-thirds of each chamber, or passage without signature) and that Vermont has NO statewide citizen initiative or referendum — Vermonters cannot petition a law or a constitutional amendment onto the ballot, so statewide lawmaking runs entirely through the elected General Assembly, while direct democracy lives at the LOCAL level in town meeting.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 5 · How a bill becomes law, and why there is no ballot initiative"],
+  },
+  {
+    id: "civics.vt-town-meeting",
+    claim:
+      "Teaches Vermont local government as Vermont's, built around TOWN MEETING: on Town Meeting Day (the first Tuesday in March) residents gather to debate and vote directly on the town budget, elect town officers, and decide local questions — one of the purest surviving forms of direct democracy in the country — with the TOWN as Vermont's primary unit of local government and its 14 counties reduced to a very limited role (mainly the courts, the sheriff, and the state's attorney, with no county-wide legislative body).",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 6 · Town Meeting Day and the town as the unit of government"],
+  },
+  {
+    id: "civics.vt-get-involved",
+    claim:
+      "Teaches getting involved where you live, Vermont edition — registering and voting (Vermont offers same-day, Election-Day registration and, since 2021, mails a ballot to every active registered voter for general elections) and taking part in Town Meeting Day, showing up at the selectboard and the school board, contacting your representatives in Montpelier (with 150 House members, among the most accessible legislators in the country), and running for local office, including Vermont's elected Justices of the Peace.",
+    courseSlugs: ["state-civics-vt"],
+    lessons: ["Vermont Civics, Lesson 6 · Town Meeting Day and the town as the unit of government"],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
