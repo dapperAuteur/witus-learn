@@ -2034,6 +2034,68 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Oregon (state-civics-or was written FROM Oregon's own sources) ──
+  // Oregon's 2024 Social Science Standards (State Board Adopted, the current revision of the
+  // 2018/2021 standards) carry a High School Civics strand whose HS.C.PI.3 and HS.C.IR.8 name the
+  // government of Oregon explicitly and whose HS.C.IR.9/DP.16/CE.17 cover Oregon's own civic
+  // participation (vote-by-mail, the Oregon System), so the Oregon flagship's Oregon-structure
+  // lessons have a genuine home, mapped in data/or.ts. state-civics-or was written from
+  // oregonlegislature.gov, sos.oregon.gov, courts.oregon.gov, and the Oregon Constitution of 1859.
+  {
+    id: "civics.or-oregon-system",
+    claim:
+      "Teaches 'the Oregon System': Oregon governs under its Constitution of 1859 (statehood February 14, 1859, the 33rd state) and in 1902 amended it to add the citizen INITIATIVE and REFERENDUM — the power for citizens to make and repeal laws directly at the ballot — a package so influential that states across the country copied it in the Progressive Era; Oregon's direct-democracy tools are the initiative (a statute or constitutional amendment), the referendum (reject a law the Legislature passed, or vote on one it refers), and the recall.",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 1 · The 'Oregon System': how Oregon gave the nation direct democracy",
+    ],
+  },
+  {
+    id: "civics.or-vote-by-mail",
+    claim:
+      "Teaches Oregon's two national 'firsts' in how people vote: it was the FIRST state to conduct all its elections entirely by mail (approved by initiative in 1998, the model Washington and Colorado later followed), and in 2016 it became the first state to launch automatic voter registration ('Oregon Motor Voter'), which registers eligible residents when they interact with the DMV, with a chance to opt out; both spread to other states and are administered by county clerks (confirm current rules at sos.oregon.gov).",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 2 · Oregon went first: all-mail voting and automatic registration",
+    ],
+  },
+  {
+    id: "civics.or-executive-legislature",
+    claim:
+      "Teaches Oregon's plural executive and Legislative Assembly: voters elect the Governor, Secretary of State, State Treasurer, and Attorney General separately, but Oregon has NO Lieutenant Governor, so the separately elected Secretary of State is first in line to succeed the Governor (and has become Governor on a vacancy); the Legislature is a citizen body meeting in Salem — a 60-member House on 2-year terms and a 30-member Senate on 4-year terms — and the Governor's veto (including a line-item veto on appropriations) is overridden by a two-thirds vote of each chamber.",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 3 · The executive (no Lieutenant Governor) and the Legislature",
+    ],
+  },
+  {
+    id: "civics.or-lawmaking-walkout",
+    claim:
+      "Teaches that Oregon makes law two ways — through the Legislature (introduction, committee, floor votes in both chambers, and the Governor's signature or veto) or directly by the voters through the Oregon System (initiative and referendum) — and a distinctive Oregon wrinkle: because Oregon requires a two-thirds quorum to do business, a minority of legislators can block action by WALKING OUT and denying quorum, a high-profile tactic (a 2022 ballot measure now disqualifies legislators with many unexcused absences from re-election).",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 4 · How a bill becomes an Oregon law",
+    ],
+  },
+  {
+    id: "civics.or-courts-local",
+    claim:
+      "Teaches how Oregon picks its judges and governs locally: judges are elected on a NONPARTISAN ballot (the 7-justice Oregon Supreme Court to 6-year terms, with the Governor filling mid-term vacancies), and local government runs through 36 counties governed by elected boards of commissioners (many under home-rule charters), cities, and special districts; Oregon is also nationally known for its statewide LAND-USE PLANNING system (Senate Bill 100, 1973), which requires cities to draw urban growth boundaries that concentrate development inside cities and protect surrounding farmland and forests from sprawl.",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 5 · Nonpartisan judges, counties, and Oregon's famous land-use planning",
+    ],
+  },
+  {
+    id: "civics.or-get-involved",
+    claim:
+      "Teaches getting involved where you live, Oregon edition — voting (a ballot is mailed to every registered voter, and most residents are already automatically registered, so participating means marking and returning the ballot by mail or drop box by Election Day), reading the many initiatives and referendums on each ballot, starting a measure by signing or circulating an initiative or referendum, showing up at county commissions, city councils, and school boards (land-use and growth decisions are especially active), contacting your one Representative and one Senator in Salem, and running for local office.",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 6 · How to take part where you live",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
