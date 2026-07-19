@@ -3380,6 +3380,72 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Rhode Island Civics, Lesson 5 · How to take part where you live",
     ],
   },
+
+  // ── State civics: Alaska (state-civics-ak was written FROM Alaska's own sources) ──
+  // Alaska is a notable NON-adopter of the Common Core; its standards are Alaska's own. Its civics
+  // frame is the bespoke Alaska Content Standards for Government and Citizenship (lettered A-G),
+  // whose Standard C — "understand the character of government of the state" — names the Constitution
+  // of Alaska, the state's local governments, and land/resource-ownership obligations, so the Alaska
+  // flagship's own-government lessons (boroughs and the Unorganized Borough, the strong governor, the
+  // Permanent Fund, merit-selection courts, the top-four/ranked-choice election system) have a genuine
+  // home, mapped in data/ak.ts. Alaska is BESPOKE-heavy: data/ak.ts maps the Government and Citizenship
+  // frame AND a bespoke Alaska English/Language Arts frame (Alaska's own 2012 ELA standards, not
+  // Common Core), and adopts the shared NGSS (Alaska's 2019 science standards reproduce HS-ESS3-1
+  // verbatim, same code and text).
+  {
+    id: "civics.ak-constitution-boroughs",
+    claim:
+      "Teaches Alaska's Constitution of 1959 — adopted as Alaska became the 49th state on January 3, 1959, and often praised as one of the best-designed modern state constitutions — and Alaska's most distinctive structural feature: it has NO counties but BOROUGHS (one of only two states, with Louisiana's parishes, that avoids the word “county”), divided into about 19 organized boroughs plus a single, gigantic Unorganized Borough covering roughly half the state, where there is no borough-level government and the STATE (with cities and census areas) provides the county-type services.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 1 · Alaska's 1959 Constitution, and boroughs instead of counties",
+    ],
+  },
+  {
+    id: "civics.ak-executive-legislature",
+    claim:
+      "Teaches Alaska's deliberately strong Governor and small, streamlined executive — Alaskans elect only two statewide officials, the Governor and Lieutenant Governor on a joint ticket, while the Attorney General and department heads are APPOINTED by the Governor (with legislative confirmation) — and Alaska's Legislature (a 40-member House on 2-year terms and a 20-member Senate on 4-year terms, meeting in Juneau, with no term limits and a habit of bipartisan coalitions), plus the Governor's strong veto, including a line-item veto, overridable only by two-thirds (three-quarters for appropriations), one of the highest override bars in the country.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 2 · A strong Governor, a small executive, and the Legislature",
+    ],
+  },
+  {
+    id: "civics.ak-top-four-rcv",
+    claim:
+      "Teaches Alaska's distinctive election system — a “top-four” open primary paired with a ranked-choice general election, adopted by ballot measure in 2020 and first used in 2022 — in which all candidates of every party appear on one primary ballot and the top four advance, then voters rank the finalists in November and last-place candidates are eliminated until someone has a majority; distinguishes it from Washington's top-two, Louisiana's jungle primary, and Maine's plain ranked-choice, and flags it as new and contested (confirm at the Division of Elections).",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 3 · Alaska's “top-four” primary and ranked-choice general election",
+    ],
+  },
+  {
+    id: "civics.ak-permanent-fund",
+    claim:
+      "Teaches how Alaska funds its government from oil wealth: the Alaska Permanent Fund, a state savings-and-investment fund created by a 1976 constitutional amendment into which a share of oil and mineral revenue is deposited and invested; the Permanent Fund Dividend, an annual cash payment to virtually every eligible resident (an amount that changes each year); and that Alaska levies NO state personal income tax and NO statewide sales tax (though local governments may levy local sales taxes), which makes the size of the dividend and how much oil money to spend versus save central civic questions.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 4 · The Permanent Fund Dividend, and why Alaska has no income or sales tax",
+    ],
+  },
+  {
+    id: "civics.ak-courts",
+    claim:
+      "Teaches how Alaska picks its judges — merit selection under the “Missouri Plan”: the nonpartisan Alaska Judicial Council screens applicants and sends the Governor a list of the most qualified, the Governor appoints from that list, and each judge later faces a nonpartisan yes/no retention election — with a 5-justice Alaska Supreme Court at the top, keeping judges out of partisan campaigns while preserving public accountability.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 5 · Judges, direct democracy, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ak-direct-democracy-involved",
+    claim:
+      "Teaches Alaska's strong tools of direct democracy — the citizen initiative (which can enact statutes but not directly amend the constitution; Alaska's own top-four/ranked-choice system came this way in 2020), the referendum, and the recall — and how to take part where you live, Alaska edition: registering and voting under the open top-four primary and ranked-choice general (with broad absentee/by-mail options given Alaska's geography), showing up at the borough assembly and city council (or, in the Unorganized Borough, the city and the state), contacting your one Representative and one Senator in Juneau, and running for local office.",
+    courseSlugs: ["state-civics-ak"],
+    lessons: [
+      "Alaska Civics, Lesson 5 · Judges, direct democracy, and how to take part",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
