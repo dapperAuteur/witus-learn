@@ -2239,6 +2239,70 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Spotting Misleading Marketing, Lesson 4 · Fake urgency, fake scarcity, and fake discounts",
     ],
   },
+
+  // ── State civics: Alabama (state-civics-al was written FROM Alabama's own sources) ──
+  // NOTE: Alabama's grade-12 United States Government course (2010 Alabama Course of Study:
+  // Social Studies) reaches Alabama's OWN government explicitly through Standard 5, which directs
+  // students to compare state and local governments and, by name, to analyze "the Constitution of
+  // Alabama of 1901" — so, unlike the abstract-concept states, the Alabama flagship's structure
+  // lessons have a genuine home, mapped there. Alabama writes its OWN ELA, mathematics, and science
+  // standards (it is NOT a Common Core or NGSS state); data/al.ts publishes those subjects as
+  // deferred gaps (fetch-or-don't-cite), not denials. Alabama is BESPOKE-heavy.
+  {
+    id: "civics.al-constitution-home-rule",
+    claim:
+      "Teaches Alabama's Constitution of 1901 — which grew into the longest constitution in the world, with more than 900 (often local) amendments — and the 2022 recompiled 'Constitution of Alabama 2022' that removed racist language and reorganized the text, explaining that Alabama's weak-home-rule tradition centralized power in the Montgomery Legislature so that even local matters often required statewide constitutional amendments.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 1 · The longest constitution in the world (and the 2022 recompile)",
+      "Alabama Civics, Lesson 2 · Weak home rule and Alabama's large plural executive",
+    ],
+  },
+  {
+    id: "civics.al-plural-executive",
+    claim:
+      "Teaches Alabama's large plural executive — the Governor, a separately elected Lieutenant Governor (who can be of a different party), Attorney General, Secretary of State, Treasurer, Auditor, and Commissioner of Agriculture and Industries, plus the elected Public Service Commission and State Board of Education — and its comparatively weak governor's veto, which the Legislature can override with only a simple majority.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 2 · Weak home rule and Alabama's large plural executive",
+    ],
+  },
+  {
+    id: "civics.al-legislature-courts",
+    claim:
+      "Teaches Alabama's Legislature (a 105-member House of Representatives and a 35-member Senate, all on 4-year terms) and its openly PARTISAN elected judiciary: the 9-justice Supreme Court of Alabama and two separate intermediate appellate courts (the Court of Civil Appeals and the Court of Criminal Appeals), all elected statewide with party labels on the ballot to 6-year terms.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 3 · The Legislature and Alabama's partisan-elected judiciary",
+    ],
+  },
+  {
+    id: "civics.al-lawmaking-amendments",
+    claim:
+      "Teaches how a bill becomes an Alabama law (introduction, committee, floor votes in both chambers, then the Governor's signature or weak veto) and that Alabama has no statewide citizen initiative, so constitutional amendments are proposed by the Legislature and ratified by voters — which, given weak home rule, is why Alabamians vote on so many (often local) amendments.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 3 · The Legislature and Alabama's partisan-elected judiciary",
+    ],
+  },
+  {
+    id: "civics.al-local-government",
+    claim:
+      "Teaches Alabama local government as Alabama's: 67 counties governed by elected county commissions (plus separately elected sheriff, probate judge, and tax officials), cities and towns, and school systems — but limited by weak home rule, so counties often need state legislative action or a constitutional amendment for many local decisions.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 4 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.al-elections-involved",
+    claim:
+      "Teaches Alabama's election specifics (a photo-ID requirement and comparatively restrictive, generally excuse-required absentee voting, administered by county officials and confirmed at sos.alabama.gov) and how to take part where you live: watching your legislative delegation because weak home rule sends local matters to Montgomery, reading the many amendments on the ballot, and showing up at county commissions, city councils, and school boards.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 4 · Local government and how to take part",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
