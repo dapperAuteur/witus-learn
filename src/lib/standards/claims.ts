@@ -2242,6 +2242,94 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Kansas (state-civics-ks was written FROM Kansas's own sources) ──
+  // NOTE: Kansas's standards are UNUSUAL. The Kansas Standards for History, Government, and Social
+  // Studies (2013) are deliberately SKILLS-not-content: five thematic Standards (1 Choices have
+  // consequences … 5 Relationships … are dynamic), each with four benchmarks (x.1 recognize/evaluate,
+  // x.2 analyze/draw conclusions, x.3 investigate/connect to contemporary issues, x.4 use/apply). The
+  // HS United States Government course (Kansas Course Code 04151) applies those same benchmarks; its
+  // document says outright that "state assessments will focus on the Standards and Benchmarks, not
+  // specific content." So Kansas's OWN structural facts (its plural executive, 125/40 Legislature,
+  // merit-selection Supreme Court, absence of a citizen initiative, strong home rule, 105 counties)
+  // are the CONTENT through which the benchmarks are exercised, not standards in their own right —
+  // the flagship teaches them in depth as the vehicle for the benchmark skills. Kansas KEPT the
+  // Common Core (unlike Oklahoma): its ELA/Math are the Kansas College and Career Ready Standards
+  // (KCCRS = Common Core, verbatim) and its science is NGSS, verbatim (adopted 2013). data/ks.ts
+  // adopts the shared Common Core ELA (aliased to Kansas's bare codes) and the shared NGSS. MIXED.
+  {
+    id: "civics.ks-bleeding-kansas-wyandotte",
+    claim:
+      "Teaches Kansas's dramatic founding: 'Bleeding Kansas,' the violent 1850s struggle (touched off by the Kansas-Nebraska Act of 1854 and 'popular sovereignty') over whether Kansas would enter the Union free or slave, an era that helped spark the Civil War; that Kansans wrote four rival constitutions during the fight and the free-state Wyandotte Constitution of 1859 prevailed, admitting Kansas as a free state (the 34th) on January 29, 1861; and that this same Wyandotte Constitution is still in force today (heavily amended), so Kansas's founding document is a direct product of the fight over slavery.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 1 · 'Bleeding Kansas' and the free-state Wyandotte Constitution",
+    ],
+  },
+  {
+    id: "civics.ks-plural-executive",
+    claim:
+      "Teaches Kansas's plural executive: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State (who runs elections), the Attorney General, the State Treasurer, and the Commissioner of Insurance — so Kansas can have a Governor of one party and other statewide officers of another, and they can check one another; statewide officers serve four-year terms.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 2 · The executive and the Legislature",
+    ],
+  },
+  {
+    id: "civics.ks-legislature",
+    claim:
+      "Teaches the Kansas Legislature — a part-time citizen body meeting in Topeka with a 125-member House (two-year terms) and a 40-member Senate (four-year terms) — and how a bill becomes a Kansas law (introduction, committee, floor votes in both chambers, and the Governor's signature, veto with a two-thirds override of each chamber, or line-item veto of appropriations).",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 2 · The executive and the Legislature",
+      "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
+    ],
+  },
+  {
+    id: "civics.ks-courts-merit-selection",
+    claim:
+      "Teaches how Kansas chooses its seven-justice Supreme Court: the 'Missouri Plan' merit selection, in which a Supreme Court Nominating Commission of lawyers and citizens sends the Governor a short list, the Governor appoints from it, and the justice later faces voters in a nonpartisan yes/no retention election — flagged as time-sensitive because Kansas has repeatedly debated changing the method (e.g., to Senate-confirmed appointments or partisan elections), with Court of Appeals judges appointed by the Governor with Senate confirmation and many district (trial) judges elected.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
+    ],
+  },
+  {
+    id: "civics.ks-no-initiative",
+    claim:
+      "Teaches Kansas's distinctive absence of direct democracy: unlike its plains and western neighbors (Colorado, Nebraska, the Dakotas), Kansas has NO statewide citizen initiative — citizens cannot put a statute or amendment on the ballot by petition; constitutional amendments are proposed by the Legislature (a two-thirds vote of each chamber) and then ratified by the voters, so the citizen role is ratification, not initiation, and the ballot questions Kansans see are ones the Legislature chose to refer.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 3 · How Kansas picks its Supreme Court, and why there's no initiative",
+    ],
+  },
+  {
+    id: "civics.ks-home-rule",
+    claim:
+      "Teaches Kansas's strong home rule: the Kansas Constitution grants cities and counties substantial authority to manage their own local affairs without asking the Legislature for permission on every matter, making Kansas localities comparatively self-governing (a contrast with weak-home-rule states).",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ks-local-government",
+    claim:
+      "Teaches Kansas local government as Kansas's own: 105 counties governed by elected boards of county commissioners (plus other elected county officials — sheriff, clerk, treasurer, register of deeds), cities classified by size providing municipal services under home rule, townships in rural areas, and school and special districts.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ks-get-involved",
+    claim:
+      "Teaches getting involved where you live, Kansas edition — registering and voting with photo ID and advance/early voting administered by county election officers (flagged time-sensitive, pointing to sos.ks.gov), showing up at the county commission, city council, and school board that home rule empowers to decide much without Topeka, reading the Legislature-referred amendments carefully (since Kansans cannot start ballot measures), contacting your one Representative and one Senator, and running for reachable local office.",
+    courseSlugs: ["state-civics-ks"],
+    lessons: [
+      "Kansas Civics, Lesson 4 · Home rule, local government, and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",

@@ -1138,6 +1138,23 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Kansas mapped** (\`feat/standards-ks-ne\`); the standards finder now covers 33 jurisdictions,
+  and \`/academic-standards?state=KS\` flips from "not mapped yet" to a real page (15 standards across
+  3 frameworks, 7 full, 8 partial). Kansas is UNUSUAL: the **Kansas Standards for History,
+  Government, and Social Studies (2013)** are deliberately skills, not content. Five thematic
+  Standards (1 "Choices have consequences" through 5 "Relationships are dynamic"), each with four
+  benchmarks, and KSDE states outright that assessments focus on the Standards and Benchmarks, not
+  specific content. So Kansas publishes no code that names its own government. The **High School
+  United States Government** course (Kansas Course Code 04151) applies those benchmarks, so the
+  \`state-civics-ks\` flagship teaches Kansas's structure (its plural executive, its 125 and 40
+  Legislature, its merit-selection Supreme Court, its lack of a citizen initiative, its strong home
+  rule, and its 105 counties, all rooted in Bleeding Kansas and the still-in-force free-state
+  Wyandotte Constitution of 1859) as the content that exercises the benchmark skills. Eight benchmarks
+  are mapped verbatim (Standards 1, 2, 4, 5). Unlike Oklahoma, Kansas KEPT the Common Core: its ELA is
+  the Kansas College and Career Ready Standards (verbatim Common Core, printed under bare RH and WHST
+  codes, so the shared file is adopted with Kansas aliases), and its science is the NGSS, adopted
+  verbatim in 2013 (one claim, HS-ESS3-1, partial). Math is not taught, and a 2020 revision of the
+  social-studies standards is flagged for teachers to confirm current codes. No migration, no seed.
 - 🔧 **Alabama + Louisiana mapped, both bespoke-heavy** (\`feat/standards-al-la\`); the standards
   finder now covers 28 jurisdictions, and \`/academic-standards?state=AL\` and \`?state=LA\` flip from
   "not mapped yet" to real pages. **Alabama (16 standards, 3 full, 13 partial)** writes its own
