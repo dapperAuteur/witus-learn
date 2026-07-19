@@ -2646,6 +2646,88 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Louisiana Civics, Lesson 6 · Judges, voting, and how to take part",
     ],
   },
+
+  // ── State civics: New Mexico (state-civics-nm was written FROM New Mexico's own sources) ──
+  // New Mexico's 2022 Social Studies Standards (bespoke, effective 2023) give the flagship a
+  // genuine home: 9-12.Civ.29 ("Explain the unique features and processes of New Mexico's
+  // constitution"), 9-12.Civ.30 (the contributions of New Mexico's diverse populations to its
+  // government), and 9-12.Civ.31 (challenges and opportunities among New Mexico's government
+  // entities) are near-1:1 with the flagship's bilingual-constitution, diverse-populations, and
+  // state-structure lessons. The federal ladder + citizenship standards carry the general civics
+  // claims. All mapped in data/nm.ts.
+  {
+    id: "civics.nm-bilingual-constitution",
+    claim:
+      "Teaches New Mexico's 1912 constitution and its special protections for Spanish-speaking citizens — the right to vote, hold office, serve on juries, and receive an equal education regardless of ability to read or write English or Spanish — making New Mexico effectively the most bilingual state.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 1 · New Mexico's bilingual constitution and its cultures",
+    ],
+  },
+  {
+    id: "civics.nm-tribal-nations",
+    claim:
+      "Teaches the sovereign tribal nations within New Mexico — 19 Pueblos plus the Navajo Nation and Apache tribes — as governments with their own laws and courts, an essential part of the state's civic landscape.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 1 · New Mexico's bilingual constitution and its cultures",
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.nm-unpaid-legislature",
+    claim:
+      "Teaches New Mexico's Legislature — the only fully volunteer (unpaid) state legislature in the nation — with a 70-member House and 42-member Senate that alternates a 60-day session in odd years and a 30-day budget session in even years.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 2 · The only unpaid legislature in the nation",
+    ],
+  },
+  {
+    id: "civics.nm-executive",
+    claim:
+      "Teaches New Mexico's plural executive: the Governor and Lieutenant Governor, the Secretary of State, the Attorney General, the State Treasurer, the State Auditor, and the Commissioner of Public Lands, all serving 4-year terms with term limits.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 3 · The executive and how New Mexico picks its judges",
+    ],
+  },
+  {
+    id: "civics.nm-courts",
+    claim:
+      "Teaches New Mexico's distinctive hybrid judicial selection — a nominating commission and gubernatorial appointment, then a partisan election, then nonpartisan yes/no retention — and its 5-justice Supreme Court.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 3 · The executive and how New Mexico picks its judges",
+    ],
+  },
+  {
+    id: "civics.nm-lawmaking",
+    claim:
+      "Teaches how a bill becomes a New Mexico law, the Governor's line-item veto and the two-thirds override, and that New Mexico has no statewide citizen initiative — constitutional amendments are referred by the Legislature to the voters, with the language-rights provisions especially hard to amend.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.nm-local-government",
+    claim:
+      "Teaches New Mexico local government as New Mexico's: 33 counties governed by elected county commissions, plus cities, towns, and villages, alongside the sovereign tribal nations that govern their own lands.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.nm-get-involved",
+    claim:
+      "Teaches getting involved where you live, New Mexico edition — registering and voting (including same-day registration), serving in the unpaid Legislature as civic volunteering, and showing up at county commissions, councils, school boards, and tribal governments.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
