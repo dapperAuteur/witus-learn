@@ -3314,6 +3314,64 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "New Hampshire Civics, Lesson 5 · Town meeting, local government, and how to take part",
     ],
   },
+  // ── State civics: Delaware (state-civics-de was written FROM Delaware's own sources) ──
+  // NOTE: Delaware's Social Studies Standards are a bespoke four-strand frame (Civics, Economics,
+  // Geography, History); the Civics strand's four anchor standards — Government, Politics,
+  // Citizenship, Participation — host the Delaware flagship at the Grades 9-12 cluster level.
+  // Delaware is INHERIT-heavy: it adopted the Common Core (2010) for ELA and the NGSS (7th state,
+  // September 19, 2013) for science, so data/de.ts adopts the two shared frameworks and maps the
+  // bespoke social-studies strands there. See data/de.ts.
+  {
+    id: "civics.de-constitution-unique",
+    claim:
+      "Teaches Delaware as “The First State” (first to ratify the U.S. Constitution, December 7, 1787), governed under its Constitution of 1897, and the ONLY state that can amend its constitution WITHOUT a public vote — the General Assembly alone amends it by a two-thirds vote of each chamber in two consecutive sessions (with an intervening legislative election) and no referendum, making the elected Legislature unusually powerful over the state's fundamental law.",
+    courseSlugs: ["state-civics-de"],
+    lessons: [
+      "Delaware Civics, Lesson 1 · The only state that amends its constitution without a public vote",
+    ],
+  },
+  {
+    id: "civics.de-chancery",
+    claim:
+      "Teaches Delaware as the corporate capital of America — most of the Fortune 500 and a large share of publicly traded companies are incorporated in Delaware — and its distinctive Court of Chancery, a court of equity with NO juries whose Chancellor and Vice Chancellors are experts in corporate and business law, producing a deep body of precedent that resolves shareholder, merger, and governance disputes and gives a small state outsized influence over how American businesses are governed (and major incorporation-fee revenue).",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 2 · The corporate capital of America and the Court of Chancery"],
+  },
+  {
+    id: "civics.de-executive-legislature",
+    claim:
+      "Teaches Delaware's plural executive (a Governor and separately elected Lieutenant Governor who may be of different parties, plus a separately elected Attorney General, Treasurer, Auditor, and Insurance Commissioner; the Governor serves a 4-year term limited to two) and its small, part-time bicameral General Assembly in Dover — a 41-member House on 2-year terms and a 21-member Senate on 4-year terms — with the Governor's veto overridden by a three-fifths vote of each chamber.",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 3 · The executive and the General Assembly"],
+  },
+  {
+    id: "civics.de-courts",
+    claim:
+      "Teaches Delaware's appointed judiciary — the Governor nominates and the Senate confirms judges for 12-year terms — with a rare constitutional “major-party balance” requirement that no more than a bare majority of judges on its major courts may belong to one political party and the rest must belong to the other major party, making the bench roughly bipartisan by constitution (a rule that has been litigated), topped by a 5-justice Delaware Supreme Court, and flags learners to confirm current details at courts.delaware.gov.",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 4 · A politically balanced bench, and how a bill becomes law"],
+  },
+  {
+    id: "civics.de-lawmaking",
+    claim:
+      "Teaches how a bill becomes a Delaware law (introduction in the House or Senate, committee review, floor votes in both chambers, then the Governor's signature, veto with a three-fifths override, or passive enactment) and that Delaware has NO citizen initiative — Delawareans cannot petition a statute or amendment onto the ballot, and do not even vote on constitutional amendments — so lawmaking is channeled through the elected General Assembly more completely than almost anywhere else.",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 4 · A politically balanced bench, and how a bill becomes law"],
+  },
+  {
+    id: "civics.de-local-government",
+    claim:
+      "Teaches Delaware local government as Delaware's: the fewest counties of any state — just three (New Castle, Kent, and Sussex), each governed by an elected county council or Levy Court handling land use, some services, and property assessment — plus cities and towns (such as Wilmington and Dover) providing municipal services and locally operated school districts, with much handled at the state level because Delaware is small and its state government strong.",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 5 · Local government (just three counties) and how to take part"],
+  },
+  {
+    id: "civics.de-get-involved",
+    claim:
+      "Teaches getting involved where you live, Delaware edition — registering and voting (with a standing flag to confirm current early-voting and same-day-registration rules, which have been litigated under Delaware's constitution, at elections.delaware.gov), attending county council/Levy Court, city or town council, and school-board meetings, contacting your one Representative and one Senator in Dover (whose power to amend the constitution alone gives such contact real weight), and running for local office.",
+    courseSlugs: ["state-civics-de"],
+    lessons: ["Delaware Civics, Lesson 5 · Local government (just three counties) and how to take part"],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
