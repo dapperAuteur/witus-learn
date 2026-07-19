@@ -2727,6 +2727,79 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Iowa Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
     ],
   },
+  // ── State civics: Mississippi (state-civics-ms was written FROM Mississippi's own sources) ──
+  // NOTE: Mississippi's College- and Career-Readiness Standards for the Social Studies (2018) reach
+  // Mississippi's OWN government explicitly in the Mississippi Studies course: MS.10 ("Analyze the
+  // structure and function of local and state government in Mississippi") is a genuine 1:1 home for
+  // the Mississippi flagship's own-structure lessons (the 1890 constitution, the powerful Lieutenant
+  // Governor, the 82-county board-of-supervisors layer, the nonpartisan elected judiciary). The
+  // required US Government course (USG.1-7) is FEDERAL and carries the general civics ladder, with a
+  // media-literacy home at USG.6.7/6.8. data/ms.ts also transcribes Mississippi's own literacy (ELA)
+  // standards VERBATIM (Common-Core-derived, but MS revised RH.11-12.6, so NOT blind-aliased). MS is
+  // BESPOKE-leaning.
+  {
+    id: "civics.ms-recent-changes",
+    claim:
+      "Teaches that Mississippi's rules and symbols changed recently: in 2020 voters approved a constitutional amendment removing an 1890 Jim Crow-era rule that required a candidate for Governor or statewide office to win BOTH a majority of the popular vote AND a majority of the 122 state House districts (or the House would choose the winner), replacing it with a popular-majority-or-runoff system; and in 2020 Mississippi retired the last U.S. state flag carrying the Confederate battle emblem and voters approved a new 'In God We Trust'/Magnolia flag. Mississippi became the 20th state on December 10, 1817, and still governs under its much-amended Constitution of 1890.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 1 · A state that changed: the 2020 election rule and the new flag",
+    ],
+  },
+  {
+    id: "civics.ms-executive",
+    claim:
+      "Teaches Mississippi's large plural executive (a Governor and a separately elected Lieutenant Governor — who can be from a different party — plus a separately elected Secretary of State, Attorney General, Treasurer, Auditor, Insurance Commissioner, and Commissioner of Agriculture and Commerce, and the elected Public Service and Transportation Commissions) and that Mississippi's Lieutenant Governor is one of the most powerful in the nation, presiding over the state Senate and strongly controlling its committees, calendar, and which bills advance; statewide officers serve 4-year terms elected in odd-numbered years (for example 2023 and 2027).",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 2 · A large plural executive and an unusually powerful Lieutenant Governor",
+    ],
+  },
+  {
+    id: "civics.ms-legislature-initiative",
+    claim:
+      "Teaches Mississippi's Legislature (a 122-member House of Representatives and a 52-member Senate, all on 4-year terms, with the Lieutenant Governor wielding strong influence over the Senate) and how a bill becomes a Mississippi law, and that Mississippi's citizen ballot-initiative process is currently NOT in effect: its formula required signatures gathered equally from five congressional districts, but Mississippi dropped to four U.S. House seats after the 2000 census, so in May 2021 the Mississippi Supreme Court ruled the entire initiative process invalid until the Legislature and voters adopt a fix.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 3 · The Legislature, and why Mississippi's initiative doesn't work right now",
+    ],
+  },
+  {
+    id: "civics.ms-judiciary",
+    claim:
+      "Teaches how Mississippi picks its judges: it ELECTS them on a NONPARTISAN ballot (no party label appears next to their names), with a 9-justice Mississippi Supreme Court elected from districts to 8-year terms, and Court of Appeals, Circuit, and Chancery judges likewise elected nonpartisan; when a seat opens mid-term the Governor appoints a replacement who then stands for election.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ms-local-government",
+    claim:
+      "Teaches Mississippi local government as Mississippi's: 82 counties, each governed by an elected board of supervisors from five supervisor districts (or 'beats'), plus other elected county officials (sheriff, chancery and circuit clerks, tax officials), with cities and towns providing municipal services and school and special districts rounding out local government.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ms-elections",
+    claim:
+      "Teaches Mississippi's election specifics — a photo-ID requirement and comparatively limited early/absentee options (an excuse is generally required for absentee, and Mississippi has been slower than many states to adopt no-excuse early voting), administered by county election officials, with big elections falling in odd years — and a standing flag to confirm the current rules at sos.ms.gov before voting.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.ms-get-involved",
+    claim:
+      "Teaches getting involved where you live, Mississippi edition — registering and voting with photo ID (checking absentee eligibility and Mississippi's odd-year calendar at sos.ms.gov), showing up at your county board of supervisors, city council, and school board, contacting your one Representative and one Senator in Jackson, watching for a legislative fix that would restore the citizen initiative, and running for local office.",
+    courseSlugs: ["state-civics-ms"],
+    lessons: [
+      "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

@@ -20,6 +20,7 @@ import { JURISDICTION as j_md } from "./md";
 import { JURISDICTION as j_mi } from "./mi";
 import { JURISDICTION as j_mn } from "./mn";
 import { JURISDICTION as j_mo } from "./mo";
+import { JURISDICTION as j_ms } from "./ms";
 import { JURISDICTION as j_nc } from "./nc";
 import { JURISDICTION as j_nj } from "./nj";
 import { JURISDICTION as j_ny } from "./ny";
@@ -37,4 +38,4 @@ import { JURISDICTION as j_wi } from "./wi";
 
 import type { JurisdictionFile } from "../types";
 
-export const JURISDICTION_FILES: JurisdictionFile[] = [j_al, j_ar, j_az, j_ca, j_co, j_ct, j_dc, j_fl, j_ga, j_ia, j_il, j_in, j_ky, j_la, j_ma, j_md, j_mi, j_mn, j_mo, j_nc, j_nj, j_ny, j_oh, j_ok, j_or, j_pa, j_sc, j_tn, j_tx, j_ut, j_va, j_wa, j_wi];
+export const JURISDICTION_FILES: JurisdictionFile[] = [j_al, j_ar, j_az, j_ca, j_co, j_ct, j_dc, j_fl, j_ga, j_ia, j_il, j_in, j_ky, j_la, j_ma, j_md, j_mi, j_mn, j_mo, j_ms, j_nc, j_nj, j_ny, j_oh, j_ok, j_or, j_pa, j_sc, j_tn, j_tx, j_ut, j_va, j_wa, j_wi];
