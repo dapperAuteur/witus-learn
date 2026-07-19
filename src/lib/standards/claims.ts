@@ -3314,6 +3314,161 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "New Hampshire Civics, Lesson 5 · Town meeting, local government, and how to take part",
     ],
   },
+
+  // ── State civics: West Virginia (state-civics-wv was written FROM West Virginia's own sources) ──
+  // West Virginia's Civics course standards (WVBE Policy 2520.4, the WVCCRS for Social Studies, SS.C.1
+  // to SS.C.43) are, like most states', pitched at the U.S. system — there is no standard that names
+  // the West Virginia Constitution the way New Hampshire's SS:CV:12:2.1 names New Hampshire's. But two
+  // of West Virginia's standards are explicitly STATE-AND-LOCAL: SS.C.13 (the "local, state and
+  // national judicial systems") and SS.C.20 (the "structure of local government" and how "state and
+  // local government impact the lives of citizens"), and SS.C.1 asks students to "actively participate
+  // ... through community service." Those give the West Virginia flagship's own-government lessons a
+  // genuine home, mapped in data/wv.ts. West Virginia is a MIXED/BESPOKE state: it adopted then
+  // REPEALED the Common Core (2015-16), so its ELA is now West Virginia's own (WV codes ELA.11.x, not
+  // the CCSS codes — so it is mapped bespoke, never aliased to the shared Common Core file), and its
+  // Civics course is West Virginia's own. Each state-specific claim below teaches WEST VIRGINIA'S
+  // version of state government from its own official sources (wvlegislature.gov, sos.wv.gov,
+  // courtswv.gov, and the West Virginia Constitution of 1872).
+  {
+    id: "civics.wv-origin-constitution",
+    claim:
+      "Teaches West Virginia's singular origin — the ONLY U.S. state created by breaking away from another state, its pro-Union western counties splitting from Virginia and joining the Union on June 20, 1863, a birth out of the Civil War itself (the U.S. Constitution normally forbids carving a new state out of an existing one without its consent) — and that West Virginia governs today under its Constitution of 1872 (its second, replacing the 1863 founding constitution).",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 1 · The only state born by breaking away from another",
+    ],
+  },
+  {
+    id: "civics.wv-executive",
+    claim:
+      "Teaches West Virginia's plural executive as West Virginia's: voters elect several statewide officers to 4-year terms — the Governor, the Secretary of State (who runs elections), the Attorney General, the State Auditor, the State Treasurer, and the Commissioner of Agriculture — and there is NO Lieutenant Governor: by statute the President of the Senate carries that title and is first in line to succeed the Governor (as in Tennessee), and the Governor's veto is weak, overridden on most bills by a simple majority (budget and supplementary-appropriations bills require a two-thirds override).",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 2 · The executive and the Legislature",
+    ],
+  },
+  {
+    id: "civics.wv-legislature",
+    claim:
+      "Teaches West Virginia's Legislature as West Virginia's: a bicameral body meeting in Charleston with a 100-member House of Delegates (2-year terms) and a 34-member Senate (4-year terms), a part-time citizen legislature with a fixed annual session of 60 days in most years.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 2 · The executive and the Legislature",
+    ],
+  },
+  {
+    id: "civics.wv-courts",
+    claim:
+      "Teaches West Virginia's judiciary as West Virginia's, including two recent changes worth knowing: West Virginia elects its judges but SWITCHED FROM PARTISAN TO NONPARTISAN judicial elections in 2015 (judges now run without party labels), and in 2022 it CREATED a new Intermediate Court of Appeals, having long been one of the few states with no intermediate appellate court; its highest court is the distinctively named Supreme Court of Appeals of West Virginia (5 justices, elected nonpartisan to 12-year terms).",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 3 · How West Virginia picks its judges (a recent switch to nonpartisan)",
+    ],
+  },
+  {
+    id: "civics.wv-lawmaking",
+    claim:
+      "Teaches how a bill becomes a West Virginia law (introduction in the House of Delegates or Senate during the 60-day session, committee review, floor votes in both chambers, then the Governor's signature, veto with a simple-majority override for most bills or two-thirds for budget bills, or line-item veto of appropriations) and that West Virginia has NO statewide citizen initiative: constitutional amendments are proposed by a two-thirds vote of the Legislature and ratified by the voters.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wv-local-government",
+    claim:
+      "Teaches West Virginia local government as West Virginia's: 55 counties governed by elected county commissions alongside other elected county officials (sheriff, clerk, assessor, prosecuting attorney), plus cities and towns that provide municipal services (some larger cities holding home-rule charters under West Virginia's recently expanded municipal home rule), county school systems, and special districts.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.wv-get-involved",
+    claim:
+      "Teaches getting involved where you live, West Virginia edition — registering and voting (early in-person and absentee voting, with ID, administered by county clerks, so confirm current rules at sos.wv.gov), showing up at county commissions, city and town councils, and county boards of education, contacting your Delegate-district team and Senator in Charleston during the short 60-day session, researching candidates in the now-nonpartisan judicial elections where party labels no longer guide you, and running for county board of education, city council, or county commission.",
+    courseSlugs: ["state-civics-wv"],
+    lessons: [
+      "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+
+  // ── State civics: Maine (state-civics-me was written FROM Maine's own sources) ──
+  // Maine's Learning Results for Social Studies (Civics & Government strand, Grades 9-Diploma)
+  // explicitly name Maine — the strand Standard is about "the role of citizens in the community,
+  // Maine, the United States, and world," and Civics & Government 3 names "the political structures
+  // and civic responsibilities of the diverse historic and current cultures of Maine." So Maine's own
+  // government (the Constitution of 1820, the Governor-only statewide executive, ranked-choice voting,
+  // the citizen initiative and people's veto, the appointed judiciary, town meeting) has a genuine home,
+  // mapped in data/me.ts. Maine is a MIXED state: it ADOPTED the NGSS verbatim in 2019 (data/me.ts
+  // adopts the shared NGSS file), its ELA is Common-Core-DERIVED but REORGANIZED into Maine's own
+  // strands/standards and reworded (so it is mapped BESPOKE, never aliased to the shared Common Core
+  // file — the text and codes differ), and its Social Studies is Maine's own. Each state-specific claim
+  // below teaches MAINE'S version of state government from its own official sources
+  // (legislature.maine.gov, maine.gov/sos, courts.maine.gov, and the Maine Constitution of 1820).
+  {
+    id: "civics.me-constitution",
+    claim:
+      "Teaches Maine's Constitution of 1820 and its origin: until 1820 Maine was the “District of Maine” within Massachusetts, and it separated to be admitted as the 23rd state on March 15, 1820, as part of the Missouri Compromise (Maine entering as a free state to balance Missouri as a slave state), giving Maine New England traditions (like the town meeting) it shares with Massachusetts alongside its own distinctive constitutional design.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 1 · Maine's Constitution of 1820 (and its split from Massachusetts)",
+    ],
+  },
+  {
+    id: "civics.me-executive",
+    claim:
+      "Teaches Maine's distinctive executive: the Governor is the ONLY official Mainers elect statewide (a 4-year term limited to two consecutive terms), there is NO Lieutenant Governor (the President of the Senate is next in line to succeed), and the Attorney General, Secretary of State, and Treasurer — plus the State Auditor — are elected BY THE LEGISLATURE rather than by the voters, Maine being one of only a handful of states where the Legislature elects the Attorney General.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 2 · Maine's executive: the Governor is the only statewide-elected official",
+    ],
+  },
+  {
+    id: "civics.me-ranked-choice",
+    claim:
+      "Teaches ranked-choice voting as Maine's signature election reform: Maine was the FIRST state to adopt ranked-choice voting statewide (by citizen initiative in 2016), how it works (voters rank candidates; if no one has a majority of first choices the last-place candidate is eliminated and those ballots transfer to each voter's next choice, round by round, until a candidate has a majority), and the constitutional nuance that limits it — Maine's constitution requires a plurality for state general elections, so ranked-choice voting applies to all primaries and to federal general elections but NOT to the general election for Governor or the state Legislature.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 3 · Ranked-choice voting: Maine went first",
+    ],
+  },
+  {
+    id: "civics.me-direct-democracy",
+    claim:
+      "Teaches Maine's two roads to law: through the Legislature — a part-time citizen legislature of a 151-member House and a 35-member Senate (2-year terms, limited to four consecutive terms), using joint standing committees shared by both chambers, with a two-thirds veto override — and directly by the voters, through the citizen initiative (an indirect initiative, since the Legislature gets first look and may enact it or offer a competing measure) and the “people's veto,” a citizen petition to suspend a law the Legislature just passed and send it to the voters to accept or reject.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 4 · How a bill becomes law, plus the initiative and 'people's veto'",
+    ],
+  },
+  {
+    id: "civics.me-courts",
+    claim:
+      "Teaches how Maine picks its judges — appointment, not election: the Governor nominates, the Legislature confirms, and judges serve renewable 7-year terms (the New England pattern Maine shares with Massachusetts, keeping judges out of campaigns), with the Supreme Judicial Court at the top, called the “Law Court” when it hears appeals.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 5 · Appointed judges, town meetings, and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.me-local-electoral",
+    claim:
+      "Teaches Maine local government and its split presidential vote as Maine's: a town-based state where many communities still govern by open town meeting (any registered voter may attend, speak, and vote on the town budget and ordinances), 16 counties that handle courts, jails, sheriffs, and registries, large stretches of “unorganized territory” with no municipal government where the state and county provide services directly, and Maine's practice (with Nebraska) of splitting its presidential electoral votes by congressional district — two electors to the statewide winner and one to the winner of each of Maine's two districts, so its electors can divide between candidates.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 5 · Appointed judges, town meetings, and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.me-get-involved",
+    claim:
+      "Teaches getting involved where you live, Maine edition — registering and voting (with same-day, Election-Day registration) and ranking candidates in the elections that use ranked-choice voting, going to open town meeting to vote directly on the budget and local ordinances, using Maine's direct-democracy levers (signing or circulating a citizen initiative or a people's veto petition), contacting your one Representative and one Senator in Augusta (a famously accessible citizen legislature), and running for select board, school board, town or city council, or county office.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 6 · How to take part where you live",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

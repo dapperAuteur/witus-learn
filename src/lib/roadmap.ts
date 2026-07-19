@@ -1138,6 +1138,30 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **West Virginia + Maine mapped** (\`feat/standards-wv-me\`); the standards finder now covers **43
+  jurisdictions**, and \`/academic-standards?state=WV\` and \`?state=ME\` flip from "not mapped yet" to
+  real pages. **West Virginia** is mixed and mostly bespoke: it adopted THEN repealed the Common Core
+  (2015 to 2016), so its ELA is now West Virginia's own (codes ELA.11.x, mapped bespoke and never
+  aliased to the shared Common Core file). Mapped: the WVCCRS **Civics** course (WVBE Policy 2520.4,
+  SS.C.1 through SS.C.22 plus two Economics standards), transcribed verbatim from the WVDE Social
+  Studies resource booklet, where SS.C.20 (state and local government) and SS.C.13 (state judicial
+  systems) host West Virginia's own government (Constitution of 1872, plural executive with no
+  Lieutenant Governor, 100 Delegates and 34 Senators, the 2015 switch to nonpartisan judicial
+  elections and the 2022 Intermediate Court of Appeals, 55 counties), and SS.C.17 hosts the BVC
+  media-literacy method; plus a bespoke **Grade 11 ELA** framework (Policy 2520.1A). West Virginia
+  **science** is deferred honestly (its NGSS-derived standards are only available as image-only scans,
+  so verbatim-or-nothing keeps it in "what we don't claim"). **Maine** is mixed: it adopted the
+  **NGSS** verbatim in 2019 (LD 283), so the shared NGSS file is adopted with no aliases, but its ELA
+  and social studies are Maine's own. Mapped: the **Maine Learning Results** Civics and Government
+  (Civics and Government 1 and 2) and History (History 1 and 2) strands, Grades 9 to Diploma,
+  transcribed verbatim from the 2019 Maine DOE strand PDFs, hosting Maine's own government (Constitution
+  of 1820 and the split from Massachusetts, the Governor as the only statewide-elected official with
+  the Attorney General, Secretary of State, and Treasurer elected by the Legislature, first-in-nation
+  ranked-choice voting, the citizen initiative and people's veto, the appointed Law Court, town
+  meeting, and Nebraska-style split electoral votes); plus a bespoke **Grade 9 to Diploma ELA**
+  framework (Maine reorganized and reworded the Common Core into its own strands, so it is mapped
+  bespoke rather than aliased). Maine's Economics and Geography strands are deferred to a later pass.
+  \`NEXT_UP\` advances to **North Dakota and South Dakota**. No migration, no seed.
 - 🔧 **Iowa + Mississippi mapped** (\`feat/standards-ia-ms\`); the standards finder now covers **34
   jurisdictions**, and \`/academic-standards?state=IA\` and \`?state=MS\` flip from "not mapped yet" to
   real pages. **Iowa (23 standards, 14 full, 9 partial)** is inherit-heavy with a bespoke
