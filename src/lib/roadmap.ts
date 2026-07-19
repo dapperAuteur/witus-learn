@@ -1138,6 +1138,68 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Alabama + Louisiana mapped, both bespoke-heavy** (\`feat/standards-al-la\`); the standards
+  finder now covers 28 jurisdictions, and \`/academic-standards?state=AL\` and \`?state=LA\` flip from
+  "not mapped yet" to real pages. **Alabama (16 standards, 3 full, 13 partial)** writes its own
+  standards and adopts neither Common Core nor NGSS: the mapped codes are the two required grade-12
+  courses of the **2010 Alabama Course of Study: Social Studies** (ALSDE), United States Government
+  and Economics, transcribed verbatim from ALSDE's own PDF. Standard USG.5 names "the Constitution of
+  Alabama of 1901" and the comparison of state and local government, so the \`state-civics-al\`
+  flagship gets a 1:1 home: the world-longest constitution and its 2022 recompile, weak home rule, the
+  large plural executive, the partisan-elected judiciary, and the 67 counties. **Louisiana (26
+  standards, 8 full, 18 partial)** replaced Common Core with its own standards: the mapped codes are
+  the **2022 Louisiana Student Standards for Social Studies** High School Civics course, transcribed
+  verbatim from the LDOE PDF. Louisiana names its own government in three expectations and the
+  \`state-civics-la\` flagship maps 1:1 onto each: C.9.i (the Louisiana State Constitution), C.9.j
+  (Civil Law and the Napoleonic Code), and C.11.k (parishes, police juries, and home rule charters),
+  alongside the jungle primary, the 1974 constitution, and the seven-officer plural executive. Honest
+  gaps published per state: Alabama's ELA (2021), math (2019), and science (2015, NOT NGSS) and
+  Louisiana's ELA, math, and science (2017, NGSS-based but Louisiana's own) are deferred rather than
+  blind-aliased, because the rule is compare-before-aliasing and those documents were not fetched this
+  pass. \`NEXT_UP\` advances to **Iowa and Mississippi**. No migration, no seed.
+- 🔧 **Kentucky + Oregon mapped** (\`feat/standards-ky-or\`); \`/academic-standards?state=KY\` and
+  \`?state=OR\` flip from "not mapped yet" to real pages. **Kentucky (14 standards, 7 full, 7
+  partial):** the **Kentucky Academic Standards (KAS) for Social Studies (2019)**, Kentucky's own
+  inquiry and C3-based framework, transcribed verbatim from KDE's document. Its High School Civics
+  strand carries a dedicated **Kentucky Government** cluster (HS.C.KGO.1-3) naming Kentucky's own
+  Constitution of 1891 and government, so the \`state-civics-ky\` flagship's structure lessons (the
+  large plural executive, the simple-majority-override veto, the nonpartisan elected judiciary, no
+  citizen initiative, 120 counties) have a genuine home. Kentucky was an NGSS lead state and adopted
+  the NGSS verbatim, so one science claim (HS-ESS3-1, partial) comes through the shared NGSS mapping;
+  Kentucky's own 2019 reading and writing standards replaced its Common Core adoption and are
+  deferred rather than blind-aliased. **Oregon (16 standards, 6 full, 10 partial):** the **2024
+  Oregon Social Science Standards** (State Board Adopted June 7, 2024, the current revision of the
+  2018 and 2021 ethnic-studies-integrated standards), transcribed verbatim. Its High School Civics
+  indicators HS.C.PI.3 and HS.C.IR.8 name the government of the United States and Oregon, so the
+  \`state-civics-or\` flagship's Oregon lessons (the Oregon System, vote-by-mail with automatic
+  registration, no Lieutenant Governor, the 30 and 60 day Legislature, nonpartisan judges, and
+  land-use planning) have a real home. Oregon adopted the Common Core for ELA in 2010 (kept through
+  its June 2019 literacy revision, four strands verbatim and 11-12.RH.6 carrying Oregon's asterisk
+  revision to "differing perspectives") and the NGSS for science as a lead state (one aliased claim,
+  HS.ESS3.1, partial). No migration, no seed.
+- 🔧 **Oklahoma + Utah mapped** (\`feat/standards-ok-ut\`); the standards finder now covers **28
+  jurisdictions**, and \`/academic-standards?state=OK\` and \`?state=UT\` flip from "not mapped yet" to
+  real pages. **Oklahoma (bespoke-heavy, 36 standards across 5 frameworks, 12 full):** the **Oklahoma
+  Academic Standards for Social Studies (adopted 2019)**, transcribed verbatim from OSDE's own PDF.
+  The grade-12 **United States Government (USG)** course anchors the \`state-civics-ok\` flagship and
+  reaches Oklahoma's OWN government: USG.3.3 names the national, state, tribal, and local
+  relationships and USG.3.4 names tribal sovereignty and the Major Crimes Act (the constitutional
+  question in McGirt v. Oklahoma), so the flagship's two-high-courts, plural-executive, initiative,
+  and tribal lessons get a real home. The World History, U.S. History, Economics, and World Human
+  Geography courses map the Commodity Map plus the labor and Great Migration catalog. Oklahoma
+  withdrew from the Common Core in 2014, so its ELA, its math, and its 2020 science (NGSS-influenced,
+  not verbatim) are Oklahoma's own and are deferred fetch-or-don't-cite rather than blind-aliased.
+  **Utah (mixed inherit and bespoke, 17 standards across 3 frameworks, 5 full):** the **United States
+  Government and Citizenship** course (Utah Core Standards for Social Studies, revised September
+  2016), transcribed from USBE's standards via the Utah Education Network and cross-checked against
+  the subset-font-encoded canonical PDF. U.S. GOV Standard 3.3 (how people organize to participate)
+  is a genuine home for Utah's distinctive dual-path (caucus-convention or signature) nomination
+  system, and the flagship also teaches the 45-day citizen Legislature, the plural executive, merit
+  selection with a Judicial Performance Evaluation Commission, and all-mail elections. Utah adopted
+  the Common Core for ELA, and its disciplinary-literacy strands (RH.11-12.6/8/9 and WHST.11-12.7/8)
+  are verbatim, mapped as OWN frameworks; but its 2023 ELA revision reworded RI.11-12.6, so the
+  shared Common Core file is not adopted wholesale, and Utah's SEEd science is not verbatim NGSS and
+  is deferred. **NEXT_UP advances to Iowa and Mississippi.**
 - 🔧 **Maryland + Colorado mapped** (\`feat/standards-md-co\`); the standards finder now covers 22
   jurisdictions, and \`/academic-standards?state=MD\` and \`?state=CO\` flip from "not mapped yet" to
   real pages. **Maryland (bespoke civics, inherited ELA and science):** the **High School American

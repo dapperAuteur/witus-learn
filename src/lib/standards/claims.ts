@@ -1964,6 +1964,284 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Kentucky (state-civics-ky was written FROM Kentucky's own sources) ──
+  // Kentucky's KAS for Social Studies (2019) carries a dedicated "Kentucky Government" strand whose
+  // HS.C.KGO.1-3 indicators name Kentucky's OWN constitution and government explicitly, so — unlike
+  // the abstract-concept states — the Kentucky flagship's Kentucky-structure lessons have a genuine
+  // 1:1 home, mapped in data/ky.ts. state-civics-ky was written from legislature.ky.gov, sos.ky.gov,
+  // kycourts.gov, and the Kentucky Constitution of 1891.
+  {
+    id: "civics.ky-commonwealth",
+    claim:
+      "Teaches Kentucky's civic identity: it is one of only four states officially called a 'Commonwealth' (with Virginia, Massachusetts, and Pennsylvania), became the 15th state on June 1, 1792 (the first west of the Appalachians), and governs under its Constitution of 1891 (its fourth); it elects its Governor and statewide officers in ODD-numbered years off the presidential cycle (like Virginia and New Jersey); and it has 120 counties, the third-most of any state (behind only Texas and Georgia), so county government is an unusually large part of Kentucky civic life.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 1 · A Commonwealth of odd-year elections and 120 counties",
+    ],
+  },
+  {
+    id: "civics.ky-plural-executive",
+    claim:
+      "Teaches Kentucky's large plural executive: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State (who runs elections), the Attorney General, the State Treasurer, the State Auditor, and the Commissioner of Agriculture, each to 4-year terms — so, like many states, Kentucky can end up with a Governor of one party and other statewide officers of another, checking one another.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 2 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ky-general-assembly",
+    claim:
+      "Teaches the Kentucky General Assembly: a part-time citizen legislature meeting in Frankfort — a 100-member House on 2-year terms and a 38-member Senate on 4-year terms, with short annual sessions (a longer 60-day session in even years, a shorter 30-day session in odd years) — and Kentucky's comparatively WEAK gubernatorial veto, which the General Assembly can override with a simple majority (like Tennessee, Alabama, and West Virginia), plus the Governor's line-item veto on appropriations.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 2 · The executive and the General Assembly",
+    ],
+  },
+  {
+    id: "civics.ky-nonpartisan-judiciary",
+    claim:
+      "Teaches how Kentucky picks its judges: on a NONPARTISAN ballot, with no party label next to their names (a contrast with, say, Alabama's partisan judicial elections) — the Supreme Court of Kentucky has 7 justices elected from districts to 8-year terms, and Court of Appeals, Circuit, and District judges are likewise elected nonpartisan; mid-term vacancies are filled by the Governor from a Judicial Nominating Commission's list, and that appointee then stands for election.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 3 · How Kentucky picks its judges, and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ky-lawmaking-no-initiative",
+    claim:
+      "Teaches how a bill becomes a Kentucky law (introduction in the House or Senate during the short annual session, committee review, floor votes in both chambers, then the Governor's signature, weak simple-majority-override veto, or line-item veto) and that Kentucky has NO statewide citizen initiative: citizens cannot put a statute or amendment on the ballot by petition; constitutional amendments are proposed by the General Assembly (by a three-fifths vote) and then ratified by the voters, so the citizen's role is ratification, not initiation.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 3 · How Kentucky picks its judges, and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ky-local-government",
+    claim:
+      "Teaches Kentucky local government as Kentucky's: 120 counties (the third-most of any state), each run by an elected county judge/executive and a fiscal court of magistrates or commissioners, plus other elected county officials (sheriff, clerk, jailer, property valuation administrator); size-classified cities providing municipal services; and Louisville's consolidation with Jefferson County into a single 'Louisville Metro' government — with so many counties, county government is unusually prominent in daily life.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 4 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ky-get-involved",
+    claim:
+      "Teaches getting involved where you live, Kentucky edition — registering and voting (bringing photo ID with alternatives, using recently expanded early in-person voting, checking status at sos.ky.gov/elect.ky.gov, and remembering Kentucky's big statewide races fall in ODD years), showing up at the fiscal court, county judge/executive, city council, and school board (county government is especially reachable in Kentucky), contacting your one Representative and one Senator in Frankfort during the short session, and running for local office.",
+    courseSlugs: ["state-civics-ky"],
+    lessons: [
+      "Kentucky Civics, Lesson 4 · Local government and how to take part",
+    ],
+  },
+
+  // ── State civics: Oregon (state-civics-or was written FROM Oregon's own sources) ──
+  // Oregon's 2024 Social Science Standards (State Board Adopted, the current revision of the
+  // 2018/2021 standards) carry a High School Civics strand whose HS.C.PI.3 and HS.C.IR.8 name the
+  // government of Oregon explicitly and whose HS.C.IR.9/DP.16/CE.17 cover Oregon's own civic
+  // participation (vote-by-mail, the Oregon System), so the Oregon flagship's Oregon-structure
+  // lessons have a genuine home, mapped in data/or.ts. state-civics-or was written from
+  // oregonlegislature.gov, sos.oregon.gov, courts.oregon.gov, and the Oregon Constitution of 1859.
+  {
+    id: "civics.or-oregon-system",
+    claim:
+      "Teaches 'the Oregon System': Oregon governs under its Constitution of 1859 (statehood February 14, 1859, the 33rd state) and in 1902 amended it to add the citizen INITIATIVE and REFERENDUM — the power for citizens to make and repeal laws directly at the ballot — a package so influential that states across the country copied it in the Progressive Era; Oregon's direct-democracy tools are the initiative (a statute or constitutional amendment), the referendum (reject a law the Legislature passed, or vote on one it refers), and the recall.",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 1 · The 'Oregon System': how Oregon gave the nation direct democracy",
+    ],
+  },
+  {
+    id: "civics.or-vote-by-mail",
+    claim:
+      "Teaches Oregon's two national 'firsts' in how people vote: it was the FIRST state to conduct all its elections entirely by mail (approved by initiative in 1998, the model Washington and Colorado later followed), and in 2016 it became the first state to launch automatic voter registration ('Oregon Motor Voter'), which registers eligible residents when they interact with the DMV, with a chance to opt out; both spread to other states and are administered by county clerks (confirm current rules at sos.oregon.gov).",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 2 · Oregon went first: all-mail voting and automatic registration",
+    ],
+  },
+  {
+    id: "civics.or-executive-legislature",
+    claim:
+      "Teaches Oregon's plural executive and Legislative Assembly: voters elect the Governor, Secretary of State, State Treasurer, and Attorney General separately, but Oregon has NO Lieutenant Governor, so the separately elected Secretary of State is first in line to succeed the Governor (and has become Governor on a vacancy); the Legislature is a citizen body meeting in Salem — a 60-member House on 2-year terms and a 30-member Senate on 4-year terms — and the Governor's veto (including a line-item veto on appropriations) is overridden by a two-thirds vote of each chamber.",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 3 · The executive (no Lieutenant Governor) and the Legislature",
+    ],
+  },
+  {
+    id: "civics.or-lawmaking-walkout",
+    claim:
+      "Teaches that Oregon makes law two ways — through the Legislature (introduction, committee, floor votes in both chambers, and the Governor's signature or veto) or directly by the voters through the Oregon System (initiative and referendum) — and a distinctive Oregon wrinkle: because Oregon requires a two-thirds quorum to do business, a minority of legislators can block action by WALKING OUT and denying quorum, a high-profile tactic (a 2022 ballot measure now disqualifies legislators with many unexcused absences from re-election).",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 4 · How a bill becomes an Oregon law",
+    ],
+  },
+  {
+    id: "civics.or-courts-local",
+    claim:
+      "Teaches how Oregon picks its judges and governs locally: judges are elected on a NONPARTISAN ballot (the 7-justice Oregon Supreme Court to 6-year terms, with the Governor filling mid-term vacancies), and local government runs through 36 counties governed by elected boards of commissioners (many under home-rule charters), cities, and special districts; Oregon is also nationally known for its statewide LAND-USE PLANNING system (Senate Bill 100, 1973), which requires cities to draw urban growth boundaries that concentrate development inside cities and protect surrounding farmland and forests from sprawl.",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 5 · Nonpartisan judges, counties, and Oregon's famous land-use planning",
+    ],
+  },
+  {
+    id: "civics.or-get-involved",
+    claim:
+      "Teaches getting involved where you live, Oregon edition — voting (a ballot is mailed to every registered voter, and most residents are already automatically registered, so participating means marking and returning the ballot by mail or drop box by Election Day), reading the many initiatives and referendums on each ballot, starting a measure by signing or circulating an initiative or referendum, showing up at county commissions, city councils, and school boards (land-use and growth decisions are especially active), contacting your one Representative and one Senator in Salem, and running for local office.",
+    courseSlugs: ["state-civics-or"],
+    lessons: [
+      "Oregon Civics, Lesson 6 · How to take part where you live",
+    ],
+  },
+  // ── State civics: Oklahoma (state-civics-ok was written FROM Oklahoma's own sources) ──
+  // NOTE: Oklahoma's grade-12 United States Government course (Oklahoma Academic Standards for
+  // Social Studies, adopted 2019) reaches Oklahoma's OWN government explicitly — USG.3.3 names the
+  // relationships among "national, state, tribal, and local governments" and USG.3.4 names tribal
+  // sovereignty and the Major Crimes Act (the constitutional question at the heart of McGirt, 2020) —
+  // so, unlike the abstract-concept states, the Oklahoma flagship's structure AND tribal-sovereignty
+  // lessons have a genuine home. Oklahoma withdrew from the Common Core (2014), so its ELA/Math are
+  // Oklahoma's own (Oklahoma Academic Standards) and its science is Oklahoma's own (2020, NGSS-
+  // influenced, not verbatim NGSS); data/ok.ts publishes those as deferred gaps, not denials.
+  // Oklahoma is BESPOKE-heavy.
+  {
+    id: "civics.ok-two-high-courts",
+    claim:
+      "Teaches Oklahoma's most distinctive structural choice: it is one of only TWO states (with Texas) with two separate courts of last resort — the nine-justice Oklahoma Supreme Court is final for CIVIL cases and the five-judge Court of Criminal Appeals is final for CRIMINAL cases, with no appeal from one to the other — under Oklahoma's long, Progressive-Era Constitution of 1907 (Oklahoma became the 46th state on November 16, 1907).",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 1 · Two highest courts: Oklahoma's split top bench",
+    ],
+  },
+  {
+    id: "civics.ok-plural-executive",
+    claim:
+      "Teaches Oklahoma's large plural executive as a legacy of its Progressive-Era distrust of concentrated power: voters separately elect the Governor and Lieutenant Governor (who can be of different parties), the Attorney General, State Treasurer, State Auditor and Inspector, Superintendent of Public Instruction, Commissioner of Labor, Insurance Commissioner, and the three-member elected Corporation Commission that regulates utilities (and historically oil and gas) — so executive power is widely divided among independently elected officers, with the Secretary of State a notable Governor-appointed exception; statewide officers serve four-year terms with term limits.",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 2 · One of the largest elected executives in the nation",
+    ],
+  },
+  {
+    id: "civics.ok-legislature-initiative",
+    claim:
+      "Teaches how a bill becomes an Oklahoma law (introduction, committee, floor votes in both chambers, and the Governor's signature, veto with a two-thirds override, or line-item veto of appropriations), that the Oklahoma Legislature is a 101-member House on two-year terms and a 48-member Senate on four-year terms meeting in limited annual sessions with a combined 12-year term limit, and Oklahoma's strong direct democracy: Oklahoma was the FIRST state to include the initiative and referendum in its original constitution (1907), letting citizens put a statute or a constitutional amendment on the ballot or reject a law the Legislature passed.",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 3 · The Legislature and Oklahoma's strong direct democracy",
+    ],
+  },
+  {
+    id: "civics.ok-courts-merit-selection",
+    claim:
+      "Teaches how Oklahoma picks its appellate judges: the 'Missouri Plan' merit selection, in which a Judicial Nominating Commission sends the Governor a list, the Governor appoints, and the judge later faces nonpartisan yes/no retention elections (many district trial judges, by contrast, are elected on nonpartisan ballots).",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ok-tribal-nations",
+    claim:
+      "Teaches that Oklahoma's civic landscape is inseparable from sovereign tribal nations: much of the state was 'Indian Territory' before statehood, it today includes 38+ federally recognized tribal nations with their own constitutions, courts, and laws, and — flagged as time-sensitive and still being worked out — the U.S. Supreme Court's McGirt v. Oklahoma (2020) held that a large part of eastern Oklahoma remains a tribal reservation for purposes of certain criminal jurisdiction, so tribal sovereignty is a central, active question of Oklahoma governance.",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ok-local-government",
+    claim:
+      "Teaches Oklahoma local government as Oklahoma's: 77 counties running local services alongside municipalities (city councils) and school boards, with the flagship pointing learners to their own county's public meetings.",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ok-get-involved",
+    claim:
+      "Teaches getting involved where you live, Oklahoma edition — registering and voting (early in-person and absentee voting with ID, administered by county election boards, flagged time-sensitive and pointing to elections.ok.gov), using Oklahoma's strong and frequently used initiative, showing up at county commissions, city councils, and school boards, learning tribal governance where a nation's boundaries reach, contacting legislators in Oklahoma City, and running for reachable local office.",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",
+    ],
+  },
+
+  // ── State civics: Utah (state-civics-ut was written FROM Utah's own sources) ──
+  // NOTE: Utah's United States Government and Citizenship course (Utah Core Standards for Social
+  // Studies, revised September 2016) reaches Utah's own government mainly through its DISTRIBUTION
+  // OF POWER strand — U.S. GOV Standard 3.1 (power among national/state/tribal/local) and 3.2 (local
+  // elected officers) — plus the civic-responsibilities standard (2.3) and the "how people organize
+  // to participate" standard (3.3), which is a genuine home for Utah's distinctive dual-path
+  // (caucus-convention OR signature) nomination system. Utah is MIXED inherit+bespoke: it adopted
+  // the Common Core for ELA/Math (its disciplinary-literacy strands are verbatim; see data/ut.ts),
+  // while its Social Studies and its SEEd science are Utah's own.
+  {
+    id: "civics.ut-dual-path",
+    claim:
+      "Teaches Utah's most distinctive election feature: since 2014 a candidate reaches the party primary ballot by a 'dual path' — EITHER the traditional caucus-and-convention route (precinct caucuses elect delegates who vote at a party convention) OR by gathering a set number of voter signatures, or both — a compromise (the 'Count My Vote' citizen effort and the Legislature's SB54) that few states use and that has been litigated ever since, so the flagship points learners to vote.utah.gov for current rules.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 1 · Utah's dual-path ballot access: caucus-convention OR signatures",
+    ],
+  },
+  {
+    id: "civics.ut-statehood-executive",
+    claim:
+      "Teaches Utah's 1896 statehood (admitted only after its constitution permanently banned polygamy and affirmed separation of church and state, religious freedom, and — from the start — women's suffrage) and its plural executive: the Governor and Lieutenant Governor run together on a joint ticket (the Lieutenant Governor also serving as Utah's chief elections officer), with the Attorney General, State Auditor, and State Treasurer separately elected to four-year terms.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 2 · Statehood, and Utah's plural executive",
+    ],
+  },
+  {
+    id: "civics.ut-legislature",
+    claim:
+      "Teaches Utah's part-time citizen Legislature — a 75-member House on two-year terms and a 29-member Senate on four-year terms that meets for a short annual session of just 45 calendar days — how a bill becomes a Utah law (introduction, committee, floor votes, and the Governor's signature, two-thirds override, or line-item veto of appropriations), and Utah's citizen initiative and referendum, whose balance with the Legislature is an active civic question.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 3 · A 45-day citizen Legislature and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ut-courts-merit",
+    claim:
+      "Teaches how Utah chooses its judges: the 'Missouri Plan' merit selection in which a Judicial Nominating Commission sends the Governor a list, the Governor appoints, the Senate confirms, and the judge later faces a nonpartisan yes/no retention election — with Utah's distinctive Judicial Performance Evaluation Commission publishing evaluations to aid retention voters, and a five-justice Utah Supreme Court on ten-year terms.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 4 · How Utah picks its judges, and its all-mail elections",
+    ],
+  },
+  {
+    id: "civics.ut-elections-mail",
+    claim:
+      "Teaches Utah's all-mail elections: every active registered voter is mailed a ballot, returnable by mail or drop box, with in-person options and same-day registration also available, administered by county clerks — flagged as time-sensitive and pointing to vote.utah.gov for current deadlines and rules.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 4 · How Utah picks its judges, and its all-mail elections",
+    ],
+  },
+  {
+    id: "civics.ut-local-government",
+    claim:
+      "Teaches Utah local government as Utah's: 29 counties governed by elected commissions or councils (some restructured by charter) with other elected county officers, cities and towns providing municipal services under mayor-council or council-manager forms, and school and special districts.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ut-get-involved",
+    claim:
+      "Teaches getting involved where you live, Utah edition — registering and voting by Utah's mailed ballot (with same-day registration), attending your neighborhood precinct caucus to become a delegate, gathering or signing nominating-petition signatures, using the initiative and referendum, showing up at county commissions, city councils, and school boards, contacting your one Representative and one Senator (timed to the short 45-day session), and running for reachable local office.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
@@ -2237,6 +2515,135 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     lessons: [
       "Spotting Misleading Marketing, Lesson 8 · Misleading statistics and charts",
       "Spotting Misleading Marketing, Lesson 4 · Fake urgency, fake scarcity, and fake discounts",
+    ],
+  },
+
+  // ── State civics: Alabama (state-civics-al was written FROM Alabama's own sources) ──
+  // NOTE: Alabama's grade-12 United States Government course (2010 Alabama Course of Study:
+  // Social Studies) reaches Alabama's OWN government explicitly through Standard 5, which directs
+  // students to compare state and local governments and, by name, to analyze "the Constitution of
+  // Alabama of 1901" — so, unlike the abstract-concept states, the Alabama flagship's structure
+  // lessons have a genuine home, mapped there. Alabama writes its OWN ELA, mathematics, and science
+  // standards (it is NOT a Common Core or NGSS state); data/al.ts publishes those subjects as
+  // deferred gaps (fetch-or-don't-cite), not denials. Alabama is BESPOKE-heavy.
+  {
+    id: "civics.al-constitution-home-rule",
+    claim:
+      "Teaches Alabama's Constitution of 1901 — which grew into the longest constitution in the world, with more than 900 (often local) amendments — and the 2022 recompiled 'Constitution of Alabama 2022' that removed racist language and reorganized the text, explaining that Alabama's weak-home-rule tradition centralized power in the Montgomery Legislature so that even local matters often required statewide constitutional amendments.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 1 · The longest constitution in the world (and the 2022 recompile)",
+      "Alabama Civics, Lesson 2 · Weak home rule and Alabama's large plural executive",
+    ],
+  },
+  {
+    id: "civics.al-plural-executive",
+    claim:
+      "Teaches Alabama's large plural executive — the Governor, a separately elected Lieutenant Governor (who can be of a different party), Attorney General, Secretary of State, Treasurer, Auditor, and Commissioner of Agriculture and Industries, plus the elected Public Service Commission and State Board of Education — and its comparatively weak governor's veto, which the Legislature can override with only a simple majority.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 2 · Weak home rule and Alabama's large plural executive",
+    ],
+  },
+  {
+    id: "civics.al-legislature-courts",
+    claim:
+      "Teaches Alabama's Legislature (a 105-member House of Representatives and a 35-member Senate, all on 4-year terms) and its openly PARTISAN elected judiciary: the 9-justice Supreme Court of Alabama and two separate intermediate appellate courts (the Court of Civil Appeals and the Court of Criminal Appeals), all elected statewide with party labels on the ballot to 6-year terms.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 3 · The Legislature and Alabama's partisan-elected judiciary",
+    ],
+  },
+  {
+    id: "civics.al-lawmaking-amendments",
+    claim:
+      "Teaches how a bill becomes an Alabama law (introduction, committee, floor votes in both chambers, then the Governor's signature or weak veto) and that Alabama has no statewide citizen initiative, so constitutional amendments are proposed by the Legislature and ratified by voters — which, given weak home rule, is why Alabamians vote on so many (often local) amendments.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 3 · The Legislature and Alabama's partisan-elected judiciary",
+    ],
+  },
+  {
+    id: "civics.al-local-government",
+    claim:
+      "Teaches Alabama local government as Alabama's: 67 counties governed by elected county commissions (plus separately elected sheriff, probate judge, and tax officials), cities and towns, and school systems — but limited by weak home rule, so counties often need state legislative action or a constitutional amendment for many local decisions.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 4 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.al-elections-involved",
+    claim:
+      "Teaches Alabama's election specifics (a photo-ID requirement and comparatively restrictive, generally excuse-required absentee voting, administered by county officials and confirmed at sos.alabama.gov) and how to take part where you live: watching your legislative delegation because weak home rule sends local matters to Montgomery, reading the many amendments on the ballot, and showing up at county commissions, city councils, and school boards.",
+    courseSlugs: ["state-civics-al"],
+    lessons: [
+      "Alabama Civics, Lesson 4 · Local government and how to take part",
+    ],
+  },
+
+  // ── State civics: Louisiana (state-civics-la was written FROM Louisiana's own sources) ──
+  // NOTE: Louisiana's High School Civics course (2022 Louisiana Student Standards for Social
+  // Studies) reaches Louisiana's OWN government explicitly and in three places — C.9.i (the
+  // Louisiana State Constitution over time, compared with the U.S. Constitution), C.9.j (the
+  // historical connection between Civil Law, the Napoleonic Code, and Louisiana's system of laws),
+  // and C.11.k (local and parish governments, police juries, and home rule charters) — so the
+  // Louisiana flagship's most distinctive lessons map 1:1. Louisiana replaced Common Core with its
+  // own Louisiana Student Standards for ELA and Mathematics, and its science is Louisiana's own
+  // (2017, NGSS-BASED but Louisiana's own document); data/la.ts publishes those as deferred gaps —
+  // NOT blind-aliased to any shared framework without a text comparison. Louisiana is BESPOKE-heavy.
+  {
+    id: "civics.la-civil-law",
+    claim:
+      "Teaches Louisiana's defining difference: it is the only U.S. state whose legal system is built on CIVIL LAW (the French and Spanish, ultimately Roman/Napoleonic, tradition organized in a Civil Code) rather than English common law, with distinctive vocabulary — parishes, usufruct, forced heirship — that traces to its French and Spanish colonial past. Louisiana became the 18th state on April 30, 1812.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 1 · Louisiana's defining difference: a civil-law state",
+    ],
+  },
+  {
+    id: "civics.la-constitution-branches",
+    claim:
+      "Teaches Louisiana's Constitution of 1974 (its eleventh) and its three branches: a bicameral Legislature of 105 representatives and 39 senators on 4-year terms with a three-consecutive-term (12-year) limit, a plural executive of seven separately elected statewide officials (Governor, Lieutenant Governor, Secretary of State, Attorney General, Treasurer, and the Commissioners of Agriculture and Forestry and of Insurance), and a Governor whose veto the Legislature overrides by a two-thirds vote of each chamber.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 2 · The Constitution of 1974 and the three branches",
+    ],
+  },
+  {
+    id: "civics.la-jungle-primary",
+    claim:
+      "Teaches Louisiana's 'jungle primary' (the open primary): all candidates of every party appear on one ballot in the first round, a candidate who wins an outright majority takes the office with no runoff, and otherwise the top two finishers advance to a runoff even if they belong to the same party — unlike Washington's or California's top-two, where two candidates always advance.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 3 · Louisiana's 'jungle primary' (the open primary)",
+    ],
+  },
+  {
+    id: "civics.la-lawmaking-amendments",
+    claim:
+      "Teaches how a bill becomes a Louisiana law (introduction, committee, floor votes in both chambers, then the Governor's signature, veto, or line-item veto, with a two-thirds override and even a veto-override session) and that Louisiana has no general citizen initiative, so only constitutional amendments — proposed by a two-thirds vote of each chamber — reach voters for ratification, which they do often.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 4 · How a bill becomes a Louisiana law",
+    ],
+  },
+  {
+    id: "civics.la-parishes",
+    claim:
+      "Teaches Louisiana local government as Louisiana's: 64 PARISHES rather than counties (the only state to use the term, a legacy of its French and Spanish Catholic colonial past), governed by a traditional Police Jury or by a parish president and council under a home-rule charter, with consolidated city-parish governments such as New Orleans and Baton Rouge.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 5 · Parishes: Louisiana's counties by another name",
+    ],
+  },
+  {
+    id: "civics.la-courts-elections-involved",
+    claim:
+      "Teaches how Louisiana elects its judges (including a 7-justice Supreme Court elected from geographic districts to 10-year terms, using the same open-primary format) and its voting rules (ID with a fallback affidavit, early in-person voting, and qualifying-reason absentee voting administered by the Secretary of State and parish Registrars of Voters), and how to take part where you live through police juries, parish councils, city councils, and school boards.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 6 · Judges, voting, and how to take part",
     ],
   },
 ];
