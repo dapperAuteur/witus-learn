@@ -3828,6 +3828,82 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: ["state-civics-vt"],
     lessons: ["Vermont Civics, Lesson 6 · Town Meeting Day and the town as the unit of government"],
   },
+  // ── State civics: South Dakota (state-civics-sd was written FROM South Dakota's own sources) ──
+  // NOTE: South Dakota's revised (2023) Social Studies Standards carry a full 9th-12th grade United
+  // States Government/American Civics course, and its anchor 9-12.C.17 is entirely about SOUTH DAKOTA
+  // and Native American government and politics — so unlike Arkansas or California the flagship's
+  // South Dakota-structure lessons have a genuine, near-1:1 home: 9-12.C.17.B (state government), .C
+  // (local government), .D (state and local elections), .E (the constitutions and structure of the
+  // nine federally recognized tribal governments), and .F (the federal-state-local-tribal
+  // relationship), alongside 9-12.C.16.B (the federal election process "based on South Dakota law")
+  // and 9-12.C.1.A (identify the state's own current officeholders and local tribal leaders). See
+  // data/sd.ts.
+  {
+    id: "civics.sd-constitution-direct-democracy",
+    claim:
+      "Teaches South Dakota's 1889 constitution and the direct democracy South Dakota pioneered: in 1898 it became the first state in the nation to amend its constitution to give citizens the initiative and the referendum, on a signature threshold set at no more than five percent of the state's voters, so a citizen route to make and repeal law has run alongside the Legislature in South Dakota for more than a century.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: [
+      "South Dakota Civics, Lesson 1 · South Dakota's constitution and the first citizen initiative in America (1898)",
+      "South Dakota Civics, Lesson 6 · Elections in South Dakota (the initiative and referendum)",
+    ],
+  },
+  {
+    id: "civics.sd-three-branches",
+    claim:
+      "Teaches South Dakota's three branches as South Dakota's: 35 legislative districts that each elect one senator and two representatives, making a 35-seat Senate and a 70-seat House, and a plural executive in which the Governor and Lieutenant Governor run on a joint ticket while the Attorney General, Secretary of State, Auditor, Treasurer, and Commissioner of School and Public Lands are elected separately.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: ["South Dakota Civics, Lesson 2 · The three branches, and South Dakota's plural executive"],
+  },
+  {
+    id: "civics.sd-courts",
+    claim:
+      "Teaches South Dakota's split judicial selection: the five justices of the South Dakota Supreme Court are appointed by the Governor from a Judicial Qualifications Commission list and then face yes/no retention elections (a merit or “Missouri” plan), while circuit judges are chosen in nonpartisan elections to eight-year terms.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: ["South Dakota Civics, Lesson 3 · South Dakota's courts: merit selection for the Supreme Court, elected circuit judges"],
+  },
+  {
+    id: "civics.sd-bill-process",
+    claim:
+      "Teaches how a bill becomes a South Dakota law in the Legislature, and, beside it, the citizen initiative and referendum as South Dakota's first-in-the-nation second route to making and unmaking law directly.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: ["South Dakota Civics, Lesson 4 · How a bill becomes a South Dakota law (and how voters do it directly)"],
+  },
+  {
+    id: "civics.sd-local-government",
+    claim:
+      "Teaches South Dakota local government as South Dakota's: 66 counties, the organized civil townships that survive across much of the eastern part of the state, and the cities and towns whose layered local government the standards ask students to trace in their own community.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: [
+      "South Dakota Civics, Lesson 5 · Local and tribal government in South Dakota: 66 counties, townships, and the nine tribes",
+      "South Dakota Civics, Lesson 8 · Get involved where you live in South Dakota",
+    ],
+  },
+  {
+    id: "civics.sd-tribal-governments",
+    claim:
+      "Teaches the constitutions, structure, and function of the nine federally recognized tribal governments within South Dakota, and the historical and present relationship among federal, state, local, and tribal governments in the state — a distinctive South Dakota civics topic the 2023 standards single out.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: [
+      "South Dakota Civics, Lesson 5 · Local and tribal government in South Dakota: 66 counties, townships, and the nine tribes",
+    ],
+  },
+  {
+    id: "civics.sd-elections",
+    claim:
+      "Teaches South Dakota's elections as South Dakota's: the first-in-the-nation citizen initiative and referendum, no-excuse absentee voting, and a photo-ID request at the polls with a signed-affidavit fallback — with the standing advice to confirm current rules and deadlines with the South Dakota Secretary of State, since election law changes.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: [
+      "South Dakota Civics, Lesson 6 · Elections in South Dakota: the initiative and referendum, absentee voting, and voter ID",
+    ],
+  },
+  {
+    id: "civics.sd-get-involved",
+    claim:
+      "Teaches getting involved where you live, South Dakota edition — registering and voting, signing or circulating an initiative or referendum (the tool South Dakotans invented), showing up at the county commission, city or town council, and school board, contacting your legislators in Pierre, and running for local office.",
+    courseSlugs: ["state-civics-sd"],
+    lessons: ["South Dakota Civics, Lesson 8 · Get involved where you live in South Dakota"],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
