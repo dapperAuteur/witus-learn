@@ -1138,6 +1138,26 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **New Mexico + Nevada mapped** (\`feat/standards-nm-nv\`); the standards finder now covers **34
+  jurisdictions**, and \`/academic-standards?state=NM\` and \`?state=NV\` flip from "not mapped yet" to
+  real pages. Both states INHERIT Common Core ELA (adopted 2010) and NGSS (New Mexico's 2018 NM STEM
+  Ready!, Nevada's 2014 NVACSS), mapped once in \`shared/\`, and add bespoke social-studies frames.
+  **New Mexico (34 standards across 5 frameworks, 11 full):** the **2022 New Mexico Social Studies
+  Standards** (adopted February 2022, effective 2023) supply three bespoke courses (High School
+  Civics, Economics, World History); three civics standards are specifically about New Mexico
+  (9-12.Civ.29 its constitution, 9-12.Civ.30 its diverse populations, 9-12.Civ.31 its government
+  entities), giving the \`state-civics-nm\` flagship a genuine home for the bilingual 1912
+  constitution and the only unpaid state legislature in the nation. **Nevada (38 standards across 5
+  frameworks, 8 full):** the **2018 Nevada Academic Content Standards for Social Studies** fold
+  civics into one Grade 9-12 Civics & Economics course, plus U.S. History (1877-Present) and World
+  History (1300-Present); SS.9-12.CE.19 (compare the U.S. and Nevada constitutions) and CE.18
+  (Nevada politics) host the \`state-civics-nv\` flagship's 1864 "Battle Born" constitution, the
+  "None of These Candidates" ballot, gaming regulation and the no-income-tax structure, and the
+  two-election amendment rule. Provenance: New Mexico's PED site is captcha-blocked and Nevada's DOE
+  now serves a single-page-app shell, so both social-studies documents were transcribed verbatim
+  from byte-faithful government/district mirrors (recorded in each file header; \`sourceUrl\` is the
+  canonical DOE link). Coverage is honest full/partial with a per-state "What we don't claim" reject
+  list. \`NEXT_UP\` advances to **Idaho and West Virginia**. No migration, no seed.
 - 🔧 **Alabama + Louisiana mapped, both bespoke-heavy** (\`feat/standards-al-la\`); the standards
   finder now covers 28 jurisdictions, and \`/academic-standards?state=AL\` and \`?state=LA\` flip from
   "not mapped yet" to real pages. **Alabama (16 standards, 3 full, 13 partial)** writes its own

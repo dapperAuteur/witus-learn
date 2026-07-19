@@ -72,7 +72,11 @@ export type StateCode = (typeof US_JURISDICTIONS)[number]["code"];
 // feat/standards-al-la and feat/standards-ky-or map AL, LA, KY, OR, so the queue advances past
 // them. NEXT_UP must never name a state that mappedStates() already contains (the isolation
 // suite enforces it). Iowa and Mississippi are both unmapped and belong to no in-flight branch.
-export const NEXT_UP: StateCode[] = ["IA", "MS"];
+// This branch (feat/standards-nm-nv) maps New Mexico and Nevada, so the queue advances past them.
+// NEXT_UP must never name a state that mappedStates() already contains — the isolation suite
+// enforces it. Idaho and West Virginia are both unmapped and belong to no in-flight batch
+// (IA/MS/KS/NE remain queued elsewhere), so they stay valid.
+export const NEXT_UP: StateCode[] = ["ID", "WV"];
 // This bundle maps six more states (MD, CO, MN, WI, CT, SC), so the queue advances to two
 // still-unmapped states, Alabama and Louisiana. NEXT_UP must never name a state that
 // mappedStates() already contains (the isolation suite enforces it); AL and LA are mapped by

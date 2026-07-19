@@ -2728,6 +2728,87 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
     ],
   },
+
+  // ── State civics: Nevada (state-civics-nv was written FROM Nevada's own sources) ──
+  // Nevada's 2018 Social Studies Standards fold civics into ONE Grade 9-12 "Civics & Economics"
+  // course (codes SS.9-12.CE.<n>). Two standards are specifically about Nevada — SS.9-12.CE.19
+  // ("Compare and contrast the U.S. and Nevada constitutions") and SS.9-12.CE.18 (Nevada politics)
+  // — plus SS.9-12.CE.51 (Nevada's economy), giving the flagship its own-state home for the 1864
+  // "Battle Born" constitution, the "None of These Candidates" ballot, gaming regulation and the
+  // no-income-tax structure, the biennial Legislature, and the two-election amendment rule. The
+  // federal C-ladder standards carry the general civics claims. All mapped in data/nv.ts.
+  {
+    id: "civics.nv-none-of-these-candidates",
+    claim:
+      "Teaches Nevada's “None of These Candidates” — a statewide-ballot protest option (since 1976) found in no other state, and the fact that it is non-binding: even if it wins the most votes, the highest-finishing actual candidate still takes office. Also teaches Nevada's Constitution of 1864 and the “Battle Born” story.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 1 · “None of These Candidates”: a ballot option found only in Nevada",
+    ],
+  },
+  {
+    id: "civics.nv-gaming-taxes",
+    claim:
+      "Teaches Nevada's gaming (casino) regulation — the Gaming Control Board and the Gaming Commission — and how gaming taxes and tourism revenue let Nevada operate with no state personal income tax.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 2 · Gaming regulation and why Nevada has no income tax",
+    ],
+  },
+  {
+    id: "civics.nv-executive-legislature",
+    claim:
+      "Teaches Nevada's plural executive (a separately elected Governor and Lieutenant Governor, Secretary of State, Attorney General, Treasurer, and Controller) and its part-time, biennial Legislature — a 42-member Assembly and 21-member Senate that meets only in odd-numbered years for a constitutionally limited 120 days, with term limits.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 3 · The executive and a Legislature that meets every other year",
+    ],
+  },
+  {
+    id: "civics.nv-courts",
+    claim:
+      "Teaches Nevada's elected judiciary — judges chosen on a nonpartisan ballot to 6-year terms — with a Court of Appeals and a 7-justice Nevada Supreme Court.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 3 · The executive and a Legislature that meets every other year",
+    ],
+  },
+  {
+    id: "civics.nv-direct-democracy",
+    claim:
+      "Teaches Nevada's initiative and referendum, and its distinctive two-election rule: a citizen-initiated constitutional amendment must be approved by the voters in two consecutive general elections before it takes effect.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 4 · Direct democracy: the two-election rule for citizen amendments",
+    ],
+  },
+  {
+    id: "civics.nv-lawmaking",
+    claim:
+      "Teaches how a bill becomes a Nevada law in the biennial session — introduction, committee, floor votes, and the Governor's sign/veto with a two-thirds override — alongside the citizen initiative and referendum as a lawmaking backstop.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 4 · Direct democracy: the two-election rule for citizen amendments",
+    ],
+  },
+  {
+    id: "civics.nv-local-government",
+    claim:
+      "Teaches Nevada local government as Nevada's: 16 counties plus Carson City (an independent consolidated city-county), county-based school districts, and municipal cities and towns.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.nv-get-involved",
+    claim:
+      "Teaches getting involved where you live, Nevada edition — registering and voting (including same-day and automatic registration and mailed ballots to active voters), using the initiative and referendum, showing up at county commissions and city councils, and running for local office.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
