@@ -2095,6 +2095,152 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Oregon Civics, Lesson 6 · How to take part where you live",
     ],
   },
+  // ── State civics: Oklahoma (state-civics-ok was written FROM Oklahoma's own sources) ──
+  // NOTE: Oklahoma's grade-12 United States Government course (Oklahoma Academic Standards for
+  // Social Studies, adopted 2019) reaches Oklahoma's OWN government explicitly — USG.3.3 names the
+  // relationships among "national, state, tribal, and local governments" and USG.3.4 names tribal
+  // sovereignty and the Major Crimes Act (the constitutional question at the heart of McGirt, 2020) —
+  // so, unlike the abstract-concept states, the Oklahoma flagship's structure AND tribal-sovereignty
+  // lessons have a genuine home. Oklahoma withdrew from the Common Core (2014), so its ELA/Math are
+  // Oklahoma's own (Oklahoma Academic Standards) and its science is Oklahoma's own (2020, NGSS-
+  // influenced, not verbatim NGSS); data/ok.ts publishes those as deferred gaps, not denials.
+  // Oklahoma is BESPOKE-heavy.
+  {
+    id: "civics.ok-two-high-courts",
+    claim:
+      "Teaches Oklahoma's most distinctive structural choice: it is one of only TWO states (with Texas) with two separate courts of last resort — the nine-justice Oklahoma Supreme Court is final for CIVIL cases and the five-judge Court of Criminal Appeals is final for CRIMINAL cases, with no appeal from one to the other — under Oklahoma's long, Progressive-Era Constitution of 1907 (Oklahoma became the 46th state on November 16, 1907).",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 1 · Two highest courts: Oklahoma's split top bench",
+    ],
+  },
+  {
+    id: "civics.ok-plural-executive",
+    claim:
+      "Teaches Oklahoma's large plural executive as a legacy of its Progressive-Era distrust of concentrated power: voters separately elect the Governor and Lieutenant Governor (who can be of different parties), the Attorney General, State Treasurer, State Auditor and Inspector, Superintendent of Public Instruction, Commissioner of Labor, Insurance Commissioner, and the three-member elected Corporation Commission that regulates utilities (and historically oil and gas) — so executive power is widely divided among independently elected officers, with the Secretary of State a notable Governor-appointed exception; statewide officers serve four-year terms with term limits.",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 2 · One of the largest elected executives in the nation",
+    ],
+  },
+  {
+    id: "civics.ok-legislature-initiative",
+    claim:
+      "Teaches how a bill becomes an Oklahoma law (introduction, committee, floor votes in both chambers, and the Governor's signature, veto with a two-thirds override, or line-item veto of appropriations), that the Oklahoma Legislature is a 101-member House on two-year terms and a 48-member Senate on four-year terms meeting in limited annual sessions with a combined 12-year term limit, and Oklahoma's strong direct democracy: Oklahoma was the FIRST state to include the initiative and referendum in its original constitution (1907), letting citizens put a statute or a constitutional amendment on the ballot or reject a law the Legislature passed.",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 3 · The Legislature and Oklahoma's strong direct democracy",
+    ],
+  },
+  {
+    id: "civics.ok-courts-merit-selection",
+    claim:
+      "Teaches how Oklahoma picks its appellate judges: the 'Missouri Plan' merit selection, in which a Judicial Nominating Commission sends the Governor a list, the Governor appoints, and the judge later faces nonpartisan yes/no retention elections (many district trial judges, by contrast, are elected on nonpartisan ballots).",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ok-tribal-nations",
+    claim:
+      "Teaches that Oklahoma's civic landscape is inseparable from sovereign tribal nations: much of the state was 'Indian Territory' before statehood, it today includes 38+ federally recognized tribal nations with their own constitutions, courts, and laws, and — flagged as time-sensitive and still being worked out — the U.S. Supreme Court's McGirt v. Oklahoma (2020) held that a large part of eastern Oklahoma remains a tribal reservation for purposes of certain criminal jurisdiction, so tribal sovereignty is a central, active question of Oklahoma governance.",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ok-local-government",
+    claim:
+      "Teaches Oklahoma local government as Oklahoma's: 77 counties running local services alongside municipalities (city councils) and school boards, with the flagship pointing learners to their own county's public meetings.",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",
+    ],
+  },
+  {
+    id: "civics.ok-get-involved",
+    claim:
+      "Teaches getting involved where you live, Oklahoma edition — registering and voting (early in-person and absentee voting with ID, administered by county election boards, flagged time-sensitive and pointing to elections.ok.gov), using Oklahoma's strong and frequently used initiative, showing up at county commissions, city councils, and school boards, learning tribal governance where a nation's boundaries reach, contacting legislators in Oklahoma City, and running for reachable local office.",
+    courseSlugs: ["state-civics-ok"],
+    lessons: [
+      "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",
+    ],
+  },
+
+  // ── State civics: Utah (state-civics-ut was written FROM Utah's own sources) ──
+  // NOTE: Utah's United States Government and Citizenship course (Utah Core Standards for Social
+  // Studies, revised September 2016) reaches Utah's own government mainly through its DISTRIBUTION
+  // OF POWER strand — U.S. GOV Standard 3.1 (power among national/state/tribal/local) and 3.2 (local
+  // elected officers) — plus the civic-responsibilities standard (2.3) and the "how people organize
+  // to participate" standard (3.3), which is a genuine home for Utah's distinctive dual-path
+  // (caucus-convention OR signature) nomination system. Utah is MIXED inherit+bespoke: it adopted
+  // the Common Core for ELA/Math (its disciplinary-literacy strands are verbatim; see data/ut.ts),
+  // while its Social Studies and its SEEd science are Utah's own.
+  {
+    id: "civics.ut-dual-path",
+    claim:
+      "Teaches Utah's most distinctive election feature: since 2014 a candidate reaches the party primary ballot by a 'dual path' — EITHER the traditional caucus-and-convention route (precinct caucuses elect delegates who vote at a party convention) OR by gathering a set number of voter signatures, or both — a compromise (the 'Count My Vote' citizen effort and the Legislature's SB54) that few states use and that has been litigated ever since, so the flagship points learners to vote.utah.gov for current rules.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 1 · Utah's dual-path ballot access: caucus-convention OR signatures",
+    ],
+  },
+  {
+    id: "civics.ut-statehood-executive",
+    claim:
+      "Teaches Utah's 1896 statehood (admitted only after its constitution permanently banned polygamy and affirmed separation of church and state, religious freedom, and — from the start — women's suffrage) and its plural executive: the Governor and Lieutenant Governor run together on a joint ticket (the Lieutenant Governor also serving as Utah's chief elections officer), with the Attorney General, State Auditor, and State Treasurer separately elected to four-year terms.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 2 · Statehood, and Utah's plural executive",
+    ],
+  },
+  {
+    id: "civics.ut-legislature",
+    claim:
+      "Teaches Utah's part-time citizen Legislature — a 75-member House on two-year terms and a 29-member Senate on four-year terms that meets for a short annual session of just 45 calendar days — how a bill becomes a Utah law (introduction, committee, floor votes, and the Governor's signature, two-thirds override, or line-item veto of appropriations), and Utah's citizen initiative and referendum, whose balance with the Legislature is an active civic question.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 3 · A 45-day citizen Legislature and how a bill becomes law",
+    ],
+  },
+  {
+    id: "civics.ut-courts-merit",
+    claim:
+      "Teaches how Utah chooses its judges: the 'Missouri Plan' merit selection in which a Judicial Nominating Commission sends the Governor a list, the Governor appoints, the Senate confirms, and the judge later faces a nonpartisan yes/no retention election — with Utah's distinctive Judicial Performance Evaluation Commission publishing evaluations to aid retention voters, and a five-justice Utah Supreme Court on ten-year terms.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 4 · How Utah picks its judges, and its all-mail elections",
+    ],
+  },
+  {
+    id: "civics.ut-elections-mail",
+    claim:
+      "Teaches Utah's all-mail elections: every active registered voter is mailed a ballot, returnable by mail or drop box, with in-person options and same-day registration also available, administered by county clerks — flagged as time-sensitive and pointing to vote.utah.gov for current deadlines and rules.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 4 · How Utah picks its judges, and its all-mail elections",
+    ],
+  },
+  {
+    id: "civics.ut-local-government",
+    claim:
+      "Teaches Utah local government as Utah's: 29 counties governed by elected commissions or councils (some restructured by charter) with other elected county officers, cities and towns providing municipal services under mayor-council or council-manager forms, and school and special districts.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ut-get-involved",
+    claim:
+      "Teaches getting involved where you live, Utah edition — registering and voting by Utah's mailed ballot (with same-day registration), attending your neighborhood precinct caucus to become a delegate, gathering or signing nominating-petition signatures, using the initiative and referendum, showing up at county commissions, city councils, and school boards, contacting your one Representative and one Senator (timed to the short 45-day session), and running for reachable local office.",
+    courseSlugs: ["state-civics-ut"],
+    lessons: [
+      "Utah Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
 
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
