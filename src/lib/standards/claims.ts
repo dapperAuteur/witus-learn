@@ -3708,6 +3708,65 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: ["state-civics-mt"],
     lessons: ["Montana Civics, Lesson 5 · Local government and how to take part"],
   },
+
+  // ── State civics: North Dakota (state-civics-nd was written FROM North Dakota's own sources) ──
+  // NOTE: North Dakota's Social Studies Content Standards (August 2019) band grades 6-12 and use
+  // broad ANCHOR standards with numbered benchmarks (C.6_12.*, E.6_12.*, G.6_12.*, US.6_12.*,
+  // WH.6_12.*). There is no single "North Dakota state government" benchmark, so the flagship's
+  // North-Dakota-structure lessons (the Constitution of 1889, the two national "onlys" — no voter
+  // registration and the state-owned Bank of North Dakota + Mill and Elevator — the Nonpartisan
+  // League, the biennial 94-Rep/47-Senator Legislative Assembly, the elected nonpartisan Supreme
+  // Court, direct democracy, and the 53 counties) map onto the federal/comparative civics benchmarks
+  // that name STATE and LOCAL government (C.6_12.2.4, C.6_12.2.5) and citizen influence and
+  // participation (C.6_12.4.1, C.6_12.4.3, C.6_12.4.5). The Bank of North Dakota is North Dakota's
+  // own answer to "the role of government in a market economy" (E.6_12.4.2). See data/nd.ts.
+  {
+    id: "civics.nd-no-registration",
+    claim:
+      "Teaches North Dakota's singular election feature: it is the ONLY state in the nation with no voter registration (abolished 1951), so eligible residents just show up with acceptable ID proving identity and residence, and the ID rules — which have been litigated and adjusted — do the work of confirming eligibility (verify current rules at sos.nd.gov).",
+    courseSlugs: ["state-civics-nd"],
+    lessons: ["North Dakota Civics, Lesson 1 · The only state with no voter registration"],
+  },
+  {
+    id: "civics.nd-bank-mill-npl",
+    claim:
+      "Teaches North Dakota's second national 'only': the state-owned Bank of North Dakota (the only state-owned bank in the U.S.) and the state-owned North Dakota Mill and Elevator, both created in 1919 by the farmer-populist Nonpartisan League — a distinctive answer to what government is for, holding that certain economic functions should be run by the public through elected accountability.",
+    courseSlugs: ["state-civics-nd"],
+    lessons: ["North Dakota Civics, Lesson 2 · The only state-owned bank (and a state-owned mill)"],
+  },
+  {
+    id: "civics.nd-direct-democracy",
+    claim:
+      "Teaches North Dakota's strong direct democracy — a Nonpartisan League legacy: the initiative (citizens put a statute OR a constitutional amendment on the ballot, at comparatively low signature thresholds so measures reach the ballot regularly), the referendum (voters reject a law the Legislature passed), and recall (North Dakota recalled its governor in 1921) — alongside one of the country's larger plural executives.",
+    courseSlugs: ["state-civics-nd"],
+    lessons: [
+      "North Dakota Civics, Lesson 3 · Strong direct democracy and a large plural executive",
+    ],
+  },
+  {
+    id: "civics.nd-legislature-courts",
+    claim:
+      "Teaches North Dakota's own state structure: its Constitution of 1889, a large plural executive of many independently elected statewide officials, the part-time biennial Legislative Assembly (94 Representatives and 47 Senators on 4-year terms, meeting only in odd years and capped at 80 days per two-year biennium), how a North Dakota bill becomes law, and an elected nonpartisan Supreme Court of five justices serving 10-year terms.",
+    courseSlugs: ["state-civics-nd"],
+    lessons: [
+      "North Dakota Civics, Lesson 3 · Strong direct democracy and a large plural executive",
+      "North Dakota Civics, Lesson 4 · A Legislature that meets every other year, and the courts",
+    ],
+  },
+  {
+    id: "civics.nd-local-government",
+    claim:
+      "Teaches North Dakota local government as North Dakota's: 53 counties governed by elected county commissions (plus separately elected sheriff, auditor, treasurer, and state's attorney), active townships in rural areas alongside incorporated cities, and school and special districts.",
+    courseSlugs: ["state-civics-nd"],
+    lessons: ["North Dakota Civics, Lesson 5 · Local government and how to take part"],
+  },
+  {
+    id: "civics.nd-get-involved",
+    claim:
+      "Teaches getting involved where you live, North Dakota edition — voting with no registration (just show up with valid ID; early and absentee options), using North Dakota's low-threshold initiative and referendum, showing up at county commissions, city councils, township meetings, and school boards, contacting legislators in Bismarck (noting the Legislature meets mainly in odd years), and running for local office.",
+    courseSlugs: ["state-civics-nd"],
+    lessons: ["North Dakota Civics, Lesson 5 · Local government and how to take part"],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
