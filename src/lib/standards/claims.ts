@@ -2330,6 +2330,99 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Nebraska (state-civics-ne was written FROM Nebraska's own sources) ──
+  // NOTE: Nebraska is a notable NON-adopter of the Common Core — its ELA and Math College and Career
+  // Ready Standards are Nebraska's OWN, and its 2017 science standards are Nebraska's own (NGSS-
+  // influenced, not verbatim NGSS) — so unlike Kansas we adopt NO shared framework here (data/ne.ts
+  // publishes ELA/Math/Science as deferred gaps, not denials). Nebraska is BESPOKE-heavy. The
+  // Nebraska Social Studies Standards (2019, approved Nov 8, 2019) ARE content-bearing (unlike
+  // Kansas's skills-only design): the High School Civics standard SS HS.1.1.e ("Analyze the
+  // foundation, structures, and functions of state government and its outcomes") explicitly names
+  // "bicameral/unicameral" in its own example list, so the state-civics-ne flagship's headline —
+  // Nebraska's one-house, officially nonpartisan Unicameral — gets a genuine 1:1 home, alongside its
+  // local-government (SS HS.1.1.d) and civic-participation (SS HS.1.2.a/c) standards.
+  {
+    id: "civics.ne-unicameral",
+    claim:
+      "Teaches the fact that defines Nebraska government: it has the ONLY unicameral (single-house) legislature in the United States, and the only OFFICIALLY NONPARTISAN one — its 49 members are called Senators (one per district, four-year terms, limited to two consecutive terms), they appear on the ballot with no party label, and leadership and committee chairs are chosen by the members rather than by party; Nebraskans adopted 'the Unicameral' by ballot initiative in 1934 (championed by U.S. Senator George W. Norris, who argued a single nonpartisan house would be cheaper, more transparent, and less prone to backroom deals), effective 1937.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 1 · The Unicameral: one house, no party labels",
+    ],
+  },
+  {
+    id: "civics.ne-lawmaking",
+    claim:
+      "Teaches how a bill becomes law in a one-house legislature: a distinctive Nebraska rule guarantees EVERY bill introduced a public hearing where any citizen may testify; because there is no second chamber, each bill is debated in three separate stages (General File, Select File, Final Reading); there is no conference committee to reconcile two versions; and the Governor may sign, veto, or line-item veto appropriations, with the Unicameral overriding a veto by a three-fifths vote (30 of 49 senators) — single-house deliberation that replaces the role a second chamber would play.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 2 · How a bill becomes law in a one-house legislature",
+    ],
+  },
+  {
+    id: "civics.ne-direct-democracy",
+    claim:
+      "Teaches Nebraska's strong direct democracy, the citizen backstop paired with its one-house Legislature (tools added in 1912): the initiative (put a statute or constitutional amendment on the ballot by petition), the referendum (veto a law the Legislature passed), and recall for many local offices.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 2 · How a bill becomes law in a one-house legislature",
+    ],
+  },
+  {
+    id: "civics.ne-executive",
+    claim:
+      "Teaches Nebraska's executive branch: the Governor and Lieutenant Governor run together on a joint ticket, while voters separately elect the Secretary of State, Attorney General, State Treasurer, and State Auditor, and Nebraska also directly elects several boards — the Public Service Commission, the State Board of Education, and the University Board of Regents.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 3 · The executive and how Nebraska picks its judges",
+    ],
+  },
+  {
+    id: "civics.ne-courts-merit-selection",
+    claim:
+      "Teaches how Nebraska chooses its judges: the 'Missouri Plan' merit selection followed by retention — a nonpartisan judicial nominating commission vets applicants and sends the Governor a short list, the Governor appoints from it, and the judge later faces voters in a nonpartisan yes/no retention election; the Nebraska Supreme Court has seven members (a Chief Justice plus six justices from districts), keeping judges out of partisan campaigns.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 3 · The executive and how Nebraska picks its judges",
+    ],
+  },
+  {
+    id: "civics.ne-public-power",
+    claim:
+      "Teaches a Nebraska first: it is the ONLY state in the nation where ALL electricity is publicly owned — there are no private, for-profit electric utilities; power is delivered by public power districts, municipal utilities, and cooperatives governed by ELECTED boards (a legacy of Nebraska's early-20th-century public-power movement associated with George Norris), so a Nebraskan's electricity provider is a government or cooperative body whose board they can vote for, and rates and policy are set by boards they elect.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 4 · Two more Nebraska firsts: public power and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.ne-split-electoral",
+    claim:
+      "Teaches that Nebraska is one of only two states (with Maine) that SPLITS its presidential electoral votes by congressional district rather than winner-take-all: two electors go to the statewide winner and one elector goes to the winner of each congressional district, which is why Nebraska's Omaha-based 'blue dot' district can send a single electoral vote to a different candidate than the rest of the state — flagged time-sensitive because proposals to switch to winner-take-all surface periodically.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 4 · Two more Nebraska firsts: public power and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.ne-local-government",
+    claim:
+      "Teaches Nebraska local government as Nebraska's own: 93 counties, most governed by an elected county board (of commissioners or supervisors) plus separately elected officials (sheriff, clerk, treasurer, attorney, assessor); cities and villages classified by size (Omaha and Lincoln hold home-rule charters); elected public-power district boards; natural resources districts (NRDs), a Nebraska innovation for managing water and soil by watershed; and school districts.",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.ne-get-involved",
+    claim:
+      "Teaches getting involved where you live, Nebraska edition — registering and voting (including for the public-power and NRD boards that set electricity and water policy, with a voter photo-ID requirement added by initiative in 2022, flagged time-sensitive and pointing to sos.nebraska.gov), testifying at the Unicameral (where every bill gets a public hearing, an unusually open door), using the strong initiative and referendum, contacting your single state senator, and running for reachable local office (school board, city council, county board, NRD, and public-power boards).",
+    courseSlugs: ["state-civics-ne"],
+    lessons: [
+      "Nebraska Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",

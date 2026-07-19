@@ -1138,6 +1138,23 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   sources, then an explicit "open the episode" second step), keyboard-openable with Escape + focus
   return; and **sharing /explore now previews the actual map** (\`/api/og?map=1\` renders the tenant's
   OWN pins via d3-geo → SVG → data URI, falling back to the branded card if it has no pins).
+- 🔧 **Nebraska mapped** (\`feat/standards-ks-ne\`); the standards finder now covers 34 jurisdictions,
+  and \`/academic-standards?state=NE\` flips from "not mapped yet" to a real page (8 standards in 1
+  bespoke framework, 5 full, 3 partial). Nebraska is a notable NON-adopter of the Common Core, so it
+  is bespoke-heavy: no shared framework is adopted. The mapped codes are the **High School Civics**
+  standards of the **Nebraska Social Studies Standards (2019)** (approved by the State Board of
+  Education on November 8, 2019), transcribed verbatim from NDE's own PDF. Unlike Kansas's skills-only
+  design, Nebraska's civics standards NAME government content: **SS HS.1.1.e** (state government) even
+  lists "bicameral/unicameral" in its own example set, so the \`state-civics-ne\` flagship's headline
+  gets a 1:1 home, Nebraska's one-house, officially nonpartisan **Unicameral** of 49 senators (with
+  its guaranteed public hearing for every bill, three-stage debate, and no conference committee),
+  plus its merit-selection judiciary, its status as the only all-public-power state, and its
+  Maine-style split of presidential electoral votes by congressional district (the Omaha "blue dot").
+  SS HS.1.1.d hosts Nebraska's local government (93 counties, natural resources districts, and elected
+  public-power boards) and the SS HS.1.2 standards host civic participation and the BVC media-literacy
+  method (SS HS.1.2.f). Honest gaps published: Nebraska's ELA and math (Nebraska's own, not Common
+  Core) and its 2017 science (Nebraska's own, NGSS-influenced but not verbatim) are deferred rather
+  than blind-aliased. \`NEXT_UP\` advances to **Idaho and West Virginia**. No migration, no seed.
 - 🔧 **Kansas mapped** (\`feat/standards-ks-ne\`); the standards finder now covers 33 jurisdictions,
   and \`/academic-standards?state=KS\` flips from "not mapped yet" to a real page (15 standards across
   3 frameworks, 7 full, 8 partial). Kansas is UNUSUAL: the **Kansas Standards for History,
