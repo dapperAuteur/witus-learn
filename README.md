@@ -49,8 +49,9 @@ A teacher, homeschooler, or administrator picks their **state** and sees which c
 of that state's published standards: exact code, the standard's **verbatim text**, the lessons
 that cover it, a link to the publisher's document, the date it was retrieved, and an honest
 `full` | `partial` flag (partials must say what's missing; a test enforces it). Filterable by
-subject and course, printable, and copyable as plain text for a state filing. **34 jurisdictions
-are mapped so far** (most recently Kansas and Nebraska), each with its state-civics flagship course
+subject and course, printable, and copyable as plain text for a state filing. **47 jurisdictions
+are mapped so far** (most recently West Virginia, Maine, Rhode Island, Alaska, Delaware, and
+Montana), each with its state-civics flagship course
 mapped 1:1 where the state's own standards allow; the live list is derived from the data files, so
 the picker and the in-app roadmap (`/admin/roadmap`) are the authoritative sources for exactly which
 states are covered. States without a verified mapping render as "not mapped yet", never as errors,

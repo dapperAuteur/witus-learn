@@ -1180,6 +1180,29 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   from the Common Core), so they are mapped as an own framework, not an alias; and its **2019 science**
   standards reproduce NGSS HS-ESS3-1 verbatim, so NGSS is adopted. Both states publish honest reject
   lists (tribal governance, international affairs). NEXT_UP advances to North Dakota + South Dakota.
+- 🔧 **Delaware + Montana mapped** (\`feat/standards-de-mt\`); the standards finder now covers **43
+  jurisdictions**, and \`/academic-standards?state=DE\` and \`?state=MT\` flip from "not mapped yet" to
+  real pages. **Delaware (20 standards, 8 full)** is inherit-heavy with a bespoke social-studies
+  frame: the mapped codes are the Grades 9-12 End of Cluster Expectations of the **Delaware Social
+  Studies Standards** (Civics, Economics, Geography, and History strands), transcribed verbatim from
+  the University of Delaware DSSEP mirror (education.delaware.gov is JavaScript-rendered and returns
+  no benchmark text). The Civics strand's four anchor standards (Government, Politics, Citizenship,
+  Participation) give the \`state-civics-de\` flagship a home for Delaware's signature civics: the
+  only state that amends its constitution with no public vote, the Court of Chancery corporate
+  capital, the constitutional major-party balance on its bench, and its three counties. Delaware also
+  adopts the Common Core for ELA (2010; text verbatim, canonical CCSS codes, code-print style
+  unverified and labeled as a fallback) and the NGSS (7th state to adopt, September 2013; verbatim).
+  **Montana (23 standards, 5 full)** is bespoke across the board and shaped by **Indian Education for
+  All**: the mapped codes are the Grades 9-12 civics/economics/geography/history standards of the
+  **Montana Content Standards for Social Studies** (adopted November 2020, effective July 2021),
+  Montana's own IEFA-rewritten Grades 11-12 ELA/literacy standards (Common Core numbering but
+  Montana's own text, so cited bespoke rather than aliased), and Montana's own 2016 Earth and Space
+  Science standards. Civics-and-government (1)(e), (1)(i), and (1)(j) host the \`state-civics-mt\`
+  flagship's 1972 constitution (clean-and-healthful-environment, privacy, and right-to-know rights),
+  its biennial 90-day citizen Legislature, and its strong direct democracy. Every tribal-sovereignty
+  and American Indian standard and clause is faithfully rejected, because the catalog teaches neither
+  tribal governments nor American Indian history, and published loudly under "What we don't claim."
+  **NEXT_UP advances to North Dakota and South Dakota.**
 - 🔧 **Iowa + Mississippi mapped** (\`feat/standards-ia-ms\`); the standards finder now covers **34
   jurisdictions**, and \`/academic-standards?state=IA\` and \`?state=MS\` flip from "not mapped yet" to
   real pages. **Iowa (23 standards, 14 full, 9 partial)** is inherit-heavy with a bespoke
