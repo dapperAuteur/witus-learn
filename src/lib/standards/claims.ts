@@ -2423,6 +2423,93 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Idaho (state-civics-id was written FROM Idaho's own sources) ──
+  // Idaho's American Government standards (9-12.GOV.*) name Idaho's OWN government explicitly at
+  // 9-12.GOV.45 (state government per the Constitution of the State of Idaho), 9-12.GOV.47 (local
+  // government — county, city, special district), and 9-12.GOV.54 (state administration of
+  // elections), so the Idaho-structure lessons have a genuine home.
+  {
+    id: "civics.id-constitution",
+    claim: "Teaches Idaho's 1889 constitution (statehood 1890) and the direct democracy reserved to the people: the initiative and referendum (added 1912) and the recall of elected officials.",
+    courseSlugs: ["state-civics-id"],
+    lessons: [
+      "Idaho Civics, Lesson 1 · Idaho's constitution: the 1889 rulebook and direct democracy",
+      "Idaho Civics, Lesson 7 · Direct democracy in Idaho: initiative, referendum, recall",
+    ],
+  },
+  {
+    id: "civics.id-legislature-executive",
+    claim: "Teaches Idaho's part-time citizen Legislature (35 districts, each electing one senator and two representatives — 35 senators and 70 representatives) and its plural executive: the Governor, a separately elected Lieutenant Governor, Secretary of State, State Controller, State Treasurer, Attorney General, and Superintendent of Public Instruction.",
+    courseSlugs: ["state-civics-id"],
+    lessons: ["Idaho Civics, Lesson 2 · The three branches and Idaho's plural executive"],
+  },
+  {
+    id: "civics.id-courts",
+    claim: "Teaches Idaho's judiciary: the five-justice Supreme Court, the Court of Appeals, and the district courts, chosen by nonpartisan election, with a midterm vacancy filled by the Governor from Idaho Judicial Council nominees.",
+    courseSlugs: ["state-civics-id"],
+    lessons: ["Idaho Civics, Lesson 3 · Idaho's courts: nonpartisan election, and filling a midterm vacancy"],
+  },
+  {
+    id: "civics.id-lawmaking",
+    claim: "Teaches how a bill becomes an Idaho law in the Legislature, and the citizen initiative as Idaho's second lawmaking route.",
+    courseSlugs: ["state-civics-id"],
+    lessons: ["Idaho Civics, Lesson 4 · How a bill becomes an Idaho law (and how voters do it directly)"],
+  },
+  {
+    id: "civics.id-local-government",
+    claim: "Teaches Idaho local government as Idaho's: 44 counties under three-member Boards of County Commissioners, cities, and special districts — no township government.",
+    courseSlugs: ["state-civics-id"],
+    lessons: [
+      "Idaho Civics, Lesson 5 · Local government in Idaho: 44 counties, cities, special districts, no townships",
+      "Idaho Civics, Lesson 8 · Get involved where you live in Idaho (county commission and city council)",
+    ],
+  },
+  {
+    id: "civics.id-elections",
+    claim: "Teaches Idaho's election specifics: Election Day registration, the closed party primary, and Idaho's administration of its own elections.",
+    courseSlugs: ["state-civics-id"],
+    lessons: ["Idaho Civics, Lesson 6 · Elections in Idaho: Election Day registration and the closed primary"],
+  },
+  {
+    id: "civics.id-get-involved",
+    claim: "Teaches getting involved where you live, Idaho edition — including the direct-democracy tools.",
+    courseSlugs: ["state-civics-id"],
+    lessons: ["Idaho Civics, Lesson 8 · Get involved where you live in Idaho"],
+  },
+  // ── State civics: Hawaii (state-civics-hi was written FROM Hawaii's own sources) ──
+  // NOTE: like California, Hawaii's high-school civics course — Participation in a Democracy, in the
+  // Hawaiʻi Core Standards in Social Studies (HCSSS, C3-based) — is almost entirely FEDERAL/general:
+  // its content standards name the U.S. Constitution, the national institutions, landmark Supreme
+  // Court cases, and public policy, with NO standard for Hawaii's own government structure. So the
+  // flagship's Hawaii-specific STRUCTURE lessons (four counties and one statewide school system, the
+  // 1959 constitution, the commission-decides-retention judiciary, the Office of Hawaiian Affairs,
+  // the official Hawaiian language) have no Hawaii code to cite and carry no claim — data/hi.ts
+  // publishes that gap in its notClaimed list. Hawaii's civic-ENGAGEMENT standard (SS.PID.5.7.1,
+  // effecting change in the community/state) is the one genuine home for the flagship, so the two
+  // claims below map the Hawaii-specific civic ACTIONS (vote by mail, elect the OHA trustees, show up
+  // at your county, advocate on statewide schools, run) there, alongside the general civics ladder.
+  {
+    id: "civics.hi-get-involved",
+    claim:
+      "Teaches getting involved where you live, Hawaii edition, in the most centralized state government in the nation: voting the ballot mailed to you (Hawaii runs its elections by mail, with same-day registration at voter service centers), showing up at your COUNTY — essentially the only layer of local government there is (Honolulu, Hawaiʻi, Maui, or Kauaʻi, with no city or town councils below it) — contacting your one Representative and one Senator in Honolulu, and running for county council, the Board of Education, the Office of Hawaiian Affairs, or the Legislature.",
+    courseSlugs: ["state-civics-hi"],
+    lessons: [
+      "Hawaii Civics, Lesson 5 · Elections, county government, and how to take part",
+      "Hawaii Civics, Lesson 1 · The most centralized state: four counties, no cities, one school system",
+    ],
+  },
+  {
+    id: "civics.hi-oha-and-schools",
+    claim:
+      "Teaches two civic-participation distinctives of Hawaii's centralized government: that ALL Hawaii voters elect the trustees of the Office of Hawaiian Affairs (a semi-autonomous state agency, created by the 1978 constitutional convention, that manages ceded-land revenues in trust for Native Hawaiians), an often-overlooked statewide race; and that because Hawaii is the only state with a single, statewide school system (no local school districts or boards), public-education advocacy runs through the statewide Board of Education and the Legislature rather than a local district.",
+    courseSlugs: ["state-civics-hi"],
+    lessons: [
+      "Hawaii Civics, Lesson 4 · The Office of Hawaiian Affairs and an official second language",
+      "Hawaii Civics, Lesson 5 · Elections, county government, and how to take part",
+      "Hawaii Civics, Lesson 1 · The most centralized state: four counties, no cities, one school system",
+    ],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
@@ -3142,6 +3229,89 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: ["state-civics-nv"],
     lessons: [
       "Nevada Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+
+  // ── State civics: New Hampshire (state-civics-nh was written FROM New Hampshire's own sources) ──
+  // New Hampshire's K-12 Social Studies Curriculum Framework (June 2006) is example-based and
+  // abstract, but its Civics strand names the NEW HAMPSHIRE Constitution and the New Hampshire
+  // judicial system EXPLICITLY (SS:CV:12:2.1, SS:CV:12:2.3) — so, unlike the purely-federal states,
+  // the New Hampshire flagship's own-government lessons (the 400-member citizen House, the elected
+  // Executive Council, the appointed-to-70 judiciary, the town meeting) have a genuine home, mapped
+  // in data/nh.ts. New Hampshire is INHERIT-heavy: it adopted the Common Core (as the "NH College
+  // and Career Ready Standards", 2010) for ELA and the NGSS (2016) for science, so data/nh.ts adopts
+  // the two shared frameworks and maps the bespoke 2006 social-studies frame (Civics, US/NH History,
+  // World History, Economics) here.
+  {
+    id: "civics.nh-constitution",
+    claim:
+      "Teaches New Hampshire as “Live Free or Die” — the Constitution of 1784 (the second-oldest U.S. state constitution still in effect, after Massachusetts), whose Part First is a Bill of Rights — and that New Hampshire was the 9th and DECIDING state to ratify the U.S. Constitution on June 21, 1788, the ratification that put the Constitution into effect.",
+    courseSlugs: ["state-civics-nh"],
+    lessons: [
+      "New Hampshire Civics, Lesson 1 · “Live Free or Die”: the 1784 Constitution and the 9th state",
+    ],
+  },
+  {
+    id: "civics.nh-general-court",
+    claim:
+      "Teaches New Hampshire's Legislature — the General Court — as New Hampshire's: a 400-member House of Representatives (one of the largest legislative bodies in the English-speaking world, roughly one representative per 3,300 residents, the most accessible representation in the nation) and a 24-member Senate, with legislators paid $100 a year, making it a genuinely citizen, near-volunteer legislature; both chambers serve 2-year terms.",
+    courseSlugs: ["state-civics-nh"],
+    lessons: [
+      "New Hampshire Civics, Lesson 2 · The 400-member House: a citizen Legislature",
+    ],
+  },
+  {
+    id: "civics.nh-executive-council",
+    claim:
+      "Teaches New Hampshire's distinctive executive: the Governor serves a 2-year term (one of only two states, with Vermont) and there is NO Lieutenant Governor (the Senate President is next in line), and the Governor SHARES executive power with an elected five-member Executive Council that must approve state contracts, gubernatorial nominations and appointments (including judges), and pardons — a check on the executive found in almost no other state.",
+    courseSlugs: ["state-civics-nh"],
+    lessons: [
+      "New Hampshire Civics, Lesson 3 · The Executive Council and how New Hampshire picks its judges",
+    ],
+  },
+  {
+    id: "civics.nh-courts",
+    claim:
+      "Teaches New Hampshire's judiciary as New Hampshire's: judges are NOT elected — the Governor nominates and the elected Executive Council confirms them, and they serve to a mandatory retirement age of 70 — with a 5-member New Hampshire Supreme Court at the top that also issues advisory opinions to the Legislature and Governor on the constitutionality of proposed action.",
+    courseSlugs: ["state-civics-nh"],
+    lessons: [
+      "New Hampshire Civics, Lesson 3 · The Executive Council and how New Hampshire picks its judges",
+    ],
+  },
+  {
+    id: "civics.nh-first-primary",
+    claim:
+      "Teaches New Hampshire's first-in-the-nation presidential primary — protected by a state law that directs the Secretary of State to set the date at least seven days before any similar contest — as the state's signature civic tradition and a central part of how the nation chooses its presidents.",
+    courseSlugs: ["state-civics-nh"],
+    lessons: [
+      "New Hampshire Civics, Lesson 4 · How a bill becomes law, and the first-in-the-nation primary",
+    ],
+  },
+  {
+    id: "civics.nh-lawmaking",
+    claim:
+      "Teaches how a bill becomes a New Hampshire law in the General Court (introduction, committee, floor votes in both chambers, and the Governor's signature or veto with a two-thirds override) and that New Hampshire has NO statewide citizen initiative or referendum: constitutional amendments are proposed by three-fifths of the Legislature or by a constitutional convention (the voters are asked every ten years whether to hold one) and then ratified by a two-thirds vote of the people.",
+    courseSlugs: ["state-civics-nh"],
+    lessons: [
+      "New Hampshire Civics, Lesson 4 · How a bill becomes law, and the first-in-the-nation primary",
+    ],
+  },
+  {
+    id: "civics.nh-town-meeting",
+    claim:
+      "Teaches New Hampshire local government as New Hampshire's: the annual town meeting — direct democracy in which residents vote the town and school budgets and the warrant articles themselves (with the SB 2 official-ballot referendum as the alternative many towns have adopted) — alongside 10 counties with a limited role, plus cities and school districts, all funded heavily by the local property tax, since New Hampshire levies no broad-based personal income tax on wages and no general sales tax (the “New Hampshire Advantage”).",
+    courseSlugs: ["state-civics-nh"],
+    lessons: [
+      "New Hampshire Civics, Lesson 5 · Town meeting, local government, and how to take part",
+    ],
+  },
+  {
+    id: "civics.nh-get-involved",
+    claim:
+      "Teaches getting involved where you live, New Hampshire edition — registering to vote (including Election-Day registration) and voting in the first-in-the-nation primary, speaking and voting at your annual town meeting, showing up at the select board or city council and the school board, contacting your state representative (with 400 House members, among the easiest legislators in the country to reach), and running for the House yourself.",
+    courseSlugs: ["state-civics-nh"],
+    lessons: [
+      "New Hampshire Civics, Lesson 5 · Town meeting, local government, and how to take part",
     ],
   },
 ];

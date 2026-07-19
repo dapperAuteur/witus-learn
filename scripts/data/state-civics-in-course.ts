@@ -20,8 +20,8 @@
 //     of Education (effective 2021), but the CONSTITUTION still names the office.
 //   • The State Auditor was renamed State COMPTROLLER (effective July 1, 2023).
 //
-// The course is organized into sections (course modules) and ends with a fill-in
-// exercise + a final quiz whose every question links back to the lesson that teaches
+// The course is organized into sections (course modules) and ends with a practice
+// quiz + a final quiz whose every question links back to the lesson that teaches
 // the answer.
 
 import type { AuthoredCourse } from "./authored-course";
@@ -294,54 +294,81 @@ The practical payoff is the same as everywhere: **who provides your service depe
     // ── Section 7: Practice ──────────────────────────────────────────────
     {
       slug: "in-practice",
-      title: "9 · Practice: Indiana civics fill-in",
+      title: "9 · Practice: Indiana civics quiz",
       section: "Practice",
-      exercise: {
-        instructions:
-          "Fill in each blank about Indiana state government, then check. Spelling and capitalization are forgiving.",
-        items: [
+      quiz: {
+        passingScore: 70,
+        questions: [
           {
-            prompt: "Indiana's current constitution was adopted in the year ___.",
-            answer: "1851",
+            prompt: "In what year did Indiana adopt its current constitution?",
+            options: ["1816", "1851", "1901", "1970"],
+            correctIndex: 1,
             explanation:
               "Indiana's second and current constitution dates to 1851, replacing the 1816 statehood constitution.",
+            sourceLessonSlug: "in-constitution",
           },
           {
             prompt:
-              "The Indiana House has 100 members and the Indiana ___ has 50 members.",
-            answer: "senate",
+              "The Indiana General Assembly is bicameral. How large is each chamber?",
+            options: [
+              "A 100-member House and a 50-member Senate",
+              "A 50-member House and a 100-member Senate",
+              "A single 150-member Assembly",
+              "A 100-member Senate and a 50-member House",
+            ],
+            correctIndex: 0,
             explanation:
               "The bicameral General Assembly is a 100-member House (2-year terms) and a 50-member Senate (4-year terms).",
+            sourceLessonSlug: "in-three-branches",
           },
           {
             prompt:
-              "Indiana's legislature can override a governor's veto with a ___ majority (not two-thirds).",
-            answer: "simple",
-            accept: ["majority", "simple majority"],
+              "Indiana's legislature can override a governor's veto with what kind of vote?",
+            options: [
+              "A simple majority",
+              "A two-thirds majority",
+              "A three-fifths majority",
+              "A unanimous vote",
+            ],
+            correctIndex: 0,
             explanation:
               "A simple-majority override is Indiana's 'weak governor' signature: the same majority that passed the bill can override the veto.",
+            sourceLessonSlug: "in-three-branches",
           },
           {
-            prompt: "Indiana is divided into ___ counties.",
-            answer: "92",
-            accept: ["ninety-two", "ninety two"],
+            prompt: "Into how many counties is Indiana divided?",
+            options: ["83", "88", "92", "100"],
+            correctIndex: 2,
             explanation:
               "Indiana has 92 counties, each typically run by a Board of Commissioners plus a County Council.",
+            sourceLessonSlug: "in-local-government",
           },
           {
-            prompt:
-              "To vote in person in Indiana you generally must show a government-issued photo ___.",
-            answer: "id",
-            accept: ["identification"],
+            prompt: "To vote in person in Indiana you generally must show what?",
+            options: [
+              "A government-issued photo ID",
+              "A utility bill only",
+              "Nothing; you just state your name",
+              "A voter registration card without a photo",
+            ],
+            correctIndex: 0,
             explanation:
               "Indiana's strict photo-ID law was upheld by the U.S. Supreme Court in Crawford v. Marion County (2008).",
+            sourceLessonSlug: "in-elections",
           },
           {
             prompt:
-              "TRUE or FALSE: an ordinary Indiana citizen can gather signatures to put a new state law directly on the ballot.",
-            answer: "false",
+              "Can an ordinary Indiana citizen gather signatures to put a new state law directly on the ballot?",
+            options: [
+              "Yes, with 5% of voters' signatures",
+              "Yes, but only in even-numbered years",
+              "No: Indiana has no statewide citizen initiative; only the General Assembly can propose amendments",
+              "Yes, through the county council",
+            ],
+            correctIndex: 2,
             explanation:
-              "False. Indiana has NO statewide citizen initiative; only the General Assembly can propose constitutional amendments.",
+              "Indiana has NO statewide citizen initiative; only the General Assembly can propose constitutional amendments.",
+            sourceLessonSlug: "in-elections",
           },
         ],
       },
