@@ -3392,6 +3392,83 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "West Virginia Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
     ],
   },
+
+  // ── State civics: Maine (state-civics-me was written FROM Maine's own sources) ──
+  // Maine's Learning Results for Social Studies (Civics & Government strand, Grades 9-Diploma)
+  // explicitly name Maine — the strand Standard is about "the role of citizens in the community,
+  // Maine, the United States, and world," and Civics & Government 3 names "the political structures
+  // and civic responsibilities of the diverse historic and current cultures of Maine." So Maine's own
+  // government (the Constitution of 1820, the Governor-only statewide executive, ranked-choice voting,
+  // the citizen initiative and people's veto, the appointed judiciary, town meeting) has a genuine home,
+  // mapped in data/me.ts. Maine is a MIXED state: it ADOPTED the NGSS verbatim in 2019 (data/me.ts
+  // adopts the shared NGSS file), its ELA is Common-Core-DERIVED but REORGANIZED into Maine's own
+  // strands/standards and reworded (so it is mapped BESPOKE, never aliased to the shared Common Core
+  // file — the text and codes differ), and its Social Studies is Maine's own. Each state-specific claim
+  // below teaches MAINE'S version of state government from its own official sources
+  // (legislature.maine.gov, maine.gov/sos, courts.maine.gov, and the Maine Constitution of 1820).
+  {
+    id: "civics.me-constitution",
+    claim:
+      "Teaches Maine's Constitution of 1820 and its origin: until 1820 Maine was the “District of Maine” within Massachusetts, and it separated to be admitted as the 23rd state on March 15, 1820, as part of the Missouri Compromise (Maine entering as a free state to balance Missouri as a slave state), giving Maine New England traditions (like the town meeting) it shares with Massachusetts alongside its own distinctive constitutional design.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 1 · Maine's Constitution of 1820 (and its split from Massachusetts)",
+    ],
+  },
+  {
+    id: "civics.me-executive",
+    claim:
+      "Teaches Maine's distinctive executive: the Governor is the ONLY official Mainers elect statewide (a 4-year term limited to two consecutive terms), there is NO Lieutenant Governor (the President of the Senate is next in line to succeed), and the Attorney General, Secretary of State, and Treasurer — plus the State Auditor — are elected BY THE LEGISLATURE rather than by the voters, Maine being one of only a handful of states where the Legislature elects the Attorney General.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 2 · Maine's executive: the Governor is the only statewide-elected official",
+    ],
+  },
+  {
+    id: "civics.me-ranked-choice",
+    claim:
+      "Teaches ranked-choice voting as Maine's signature election reform: Maine was the FIRST state to adopt ranked-choice voting statewide (by citizen initiative in 2016), how it works (voters rank candidates; if no one has a majority of first choices the last-place candidate is eliminated and those ballots transfer to each voter's next choice, round by round, until a candidate has a majority), and the constitutional nuance that limits it — Maine's constitution requires a plurality for state general elections, so ranked-choice voting applies to all primaries and to federal general elections but NOT to the general election for Governor or the state Legislature.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 3 · Ranked-choice voting: Maine went first",
+    ],
+  },
+  {
+    id: "civics.me-direct-democracy",
+    claim:
+      "Teaches Maine's two roads to law: through the Legislature — a part-time citizen legislature of a 151-member House and a 35-member Senate (2-year terms, limited to four consecutive terms), using joint standing committees shared by both chambers, with a two-thirds veto override — and directly by the voters, through the citizen initiative (an indirect initiative, since the Legislature gets first look and may enact it or offer a competing measure) and the “people's veto,” a citizen petition to suspend a law the Legislature just passed and send it to the voters to accept or reject.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 4 · How a bill becomes law, plus the initiative and 'people's veto'",
+    ],
+  },
+  {
+    id: "civics.me-courts",
+    claim:
+      "Teaches how Maine picks its judges — appointment, not election: the Governor nominates, the Legislature confirms, and judges serve renewable 7-year terms (the New England pattern Maine shares with Massachusetts, keeping judges out of campaigns), with the Supreme Judicial Court at the top, called the “Law Court” when it hears appeals.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 5 · Appointed judges, town meetings, and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.me-local-electoral",
+    claim:
+      "Teaches Maine local government and its split presidential vote as Maine's: a town-based state where many communities still govern by open town meeting (any registered voter may attend, speak, and vote on the town budget and ordinances), 16 counties that handle courts, jails, sheriffs, and registries, large stretches of “unorganized territory” with no municipal government where the state and county provide services directly, and Maine's practice (with Nebraska) of splitting its presidential electoral votes by congressional district — two electors to the statewide winner and one to the winner of each of Maine's two districts, so its electors can divide between candidates.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 5 · Appointed judges, town meetings, and split electoral votes",
+    ],
+  },
+  {
+    id: "civics.me-get-involved",
+    claim:
+      "Teaches getting involved where you live, Maine edition — registering and voting (with same-day, Election-Day registration) and ranking candidates in the elections that use ranked-choice voting, going to open town meeting to vote directly on the budget and local ordinances, using Maine's direct-democracy levers (signing or circulating a citizen initiative or a people's veto petition), contacting your one Representative and one Senator in Augusta (a famously accessible citizen legislature), and running for select board, school board, town or city council, or county office.",
+    courseSlugs: ["state-civics-me"],
+    lessons: [
+      "Maine Civics, Lesson 6 · How to take part where you live",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
