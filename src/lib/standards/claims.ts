@@ -2303,6 +2303,71 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Alabama Civics, Lesson 4 · Local government and how to take part",
     ],
   },
+
+  // ── State civics: Louisiana (state-civics-la was written FROM Louisiana's own sources) ──
+  // NOTE: Louisiana's High School Civics course (2022 Louisiana Student Standards for Social
+  // Studies) reaches Louisiana's OWN government explicitly and in three places — C.9.i (the
+  // Louisiana State Constitution over time, compared with the U.S. Constitution), C.9.j (the
+  // historical connection between Civil Law, the Napoleonic Code, and Louisiana's system of laws),
+  // and C.11.k (local and parish governments, police juries, and home rule charters) — so the
+  // Louisiana flagship's most distinctive lessons map 1:1. Louisiana replaced Common Core with its
+  // own Louisiana Student Standards for ELA and Mathematics, and its science is Louisiana's own
+  // (2017, NGSS-BASED but Louisiana's own document); data/la.ts publishes those as deferred gaps —
+  // NOT blind-aliased to any shared framework without a text comparison. Louisiana is BESPOKE-heavy.
+  {
+    id: "civics.la-civil-law",
+    claim:
+      "Teaches Louisiana's defining difference: it is the only U.S. state whose legal system is built on CIVIL LAW (the French and Spanish, ultimately Roman/Napoleonic, tradition organized in a Civil Code) rather than English common law, with distinctive vocabulary — parishes, usufruct, forced heirship — that traces to its French and Spanish colonial past. Louisiana became the 18th state on April 30, 1812.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 1 · Louisiana's defining difference: a civil-law state",
+    ],
+  },
+  {
+    id: "civics.la-constitution-branches",
+    claim:
+      "Teaches Louisiana's Constitution of 1974 (its eleventh) and its three branches: a bicameral Legislature of 105 representatives and 39 senators on 4-year terms with a three-consecutive-term (12-year) limit, a plural executive of seven separately elected statewide officials (Governor, Lieutenant Governor, Secretary of State, Attorney General, Treasurer, and the Commissioners of Agriculture and Forestry and of Insurance), and a Governor whose veto the Legislature overrides by a two-thirds vote of each chamber.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 2 · The Constitution of 1974 and the three branches",
+    ],
+  },
+  {
+    id: "civics.la-jungle-primary",
+    claim:
+      "Teaches Louisiana's 'jungle primary' (the open primary): all candidates of every party appear on one ballot in the first round, a candidate who wins an outright majority takes the office with no runoff, and otherwise the top two finishers advance to a runoff even if they belong to the same party — unlike Washington's or California's top-two, where two candidates always advance.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 3 · Louisiana's 'jungle primary' (the open primary)",
+    ],
+  },
+  {
+    id: "civics.la-lawmaking-amendments",
+    claim:
+      "Teaches how a bill becomes a Louisiana law (introduction, committee, floor votes in both chambers, then the Governor's signature, veto, or line-item veto, with a two-thirds override and even a veto-override session) and that Louisiana has no general citizen initiative, so only constitutional amendments — proposed by a two-thirds vote of each chamber — reach voters for ratification, which they do often.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 4 · How a bill becomes a Louisiana law",
+    ],
+  },
+  {
+    id: "civics.la-parishes",
+    claim:
+      "Teaches Louisiana local government as Louisiana's: 64 PARISHES rather than counties (the only state to use the term, a legacy of its French and Spanish Catholic colonial past), governed by a traditional Police Jury or by a parish president and council under a home-rule charter, with consolidated city-parish governments such as New Orleans and Baton Rouge.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 5 · Parishes: Louisiana's counties by another name",
+    ],
+  },
+  {
+    id: "civics.la-courts-elections-involved",
+    claim:
+      "Teaches how Louisiana elects its judges (including a 7-justice Supreme Court elected from geographic districts to 10-year terms, using the same open-primary format) and its voting rules (ID with a fallback affidavit, early in-person voting, and qualifying-reason absentee voting administered by the Secretary of State and parish Registrars of Voters), and how to take part where you live through police juries, parish councils, city councils, and school boards.",
+    courseSlugs: ["state-civics-la"],
+    lessons: [
+      "Louisiana Civics, Lesson 6 · Judges, voting, and how to take part",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
