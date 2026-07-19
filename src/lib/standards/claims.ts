@@ -2800,6 +2800,169 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "Mississippi Civics, Lesson 4 · Judges, local government, and how to take part",
     ],
   },
+
+  // ── State civics: New Mexico (state-civics-nm was written FROM New Mexico's own sources) ──
+  // New Mexico's 2022 Social Studies Standards (bespoke, effective 2023) give the flagship a
+  // genuine home: 9-12.Civ.29 ("Explain the unique features and processes of New Mexico's
+  // constitution"), 9-12.Civ.30 (the contributions of New Mexico's diverse populations to its
+  // government), and 9-12.Civ.31 (challenges and opportunities among New Mexico's government
+  // entities) are near-1:1 with the flagship's bilingual-constitution, diverse-populations, and
+  // state-structure lessons. The federal ladder + citizenship standards carry the general civics
+  // claims. All mapped in data/nm.ts.
+  {
+    id: "civics.nm-bilingual-constitution",
+    claim:
+      "Teaches New Mexico's 1912 constitution and its special protections for Spanish-speaking citizens — the right to vote, hold office, serve on juries, and receive an equal education regardless of ability to read or write English or Spanish — making New Mexico effectively the most bilingual state.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 1 · New Mexico's bilingual constitution and its cultures",
+    ],
+  },
+  {
+    id: "civics.nm-tribal-nations",
+    claim:
+      "Teaches the sovereign tribal nations within New Mexico — 19 Pueblos plus the Navajo Nation and Apache tribes — as governments with their own laws and courts, an essential part of the state's civic landscape.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 1 · New Mexico's bilingual constitution and its cultures",
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.nm-unpaid-legislature",
+    claim:
+      "Teaches New Mexico's Legislature — the only fully volunteer (unpaid) state legislature in the nation — with a 70-member House and 42-member Senate that alternates a 60-day session in odd years and a 30-day budget session in even years.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 2 · The only unpaid legislature in the nation",
+    ],
+  },
+  {
+    id: "civics.nm-executive",
+    claim:
+      "Teaches New Mexico's plural executive: the Governor and Lieutenant Governor, the Secretary of State, the Attorney General, the State Treasurer, the State Auditor, and the Commissioner of Public Lands, all serving 4-year terms with term limits.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 3 · The executive and how New Mexico picks its judges",
+    ],
+  },
+  {
+    id: "civics.nm-courts",
+    claim:
+      "Teaches New Mexico's distinctive hybrid judicial selection — a nominating commission and gubernatorial appointment, then a partisan election, then nonpartisan yes/no retention — and its 5-justice Supreme Court.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 3 · The executive and how New Mexico picks its judges",
+    ],
+  },
+  {
+    id: "civics.nm-lawmaking",
+    claim:
+      "Teaches how a bill becomes a New Mexico law, the Governor's line-item veto and the two-thirds override, and that New Mexico has no statewide citizen initiative — constitutional amendments are referred by the Legislature to the voters, with the language-rights provisions especially hard to amend.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.nm-local-government",
+    claim:
+      "Teaches New Mexico local government as New Mexico's: 33 counties governed by elected county commissions, plus cities, towns, and villages, alongside the sovereign tribal nations that govern their own lands.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+  {
+    id: "civics.nm-get-involved",
+    claim:
+      "Teaches getting involved where you live, New Mexico edition — registering and voting (including same-day registration), serving in the unpaid Legislature as civic volunteering, and showing up at county commissions, councils, school boards, and tribal governments.",
+    courseSlugs: ["state-civics-nm"],
+    lessons: [
+      "New Mexico Civics, Lesson 4 · How a bill becomes law, local government, and getting involved",
+    ],
+  },
+
+  // ── State civics: Nevada (state-civics-nv was written FROM Nevada's own sources) ──
+  // Nevada's 2018 Social Studies Standards fold civics into ONE Grade 9-12 "Civics & Economics"
+  // course (codes SS.9-12.CE.<n>). Two standards are specifically about Nevada — SS.9-12.CE.19
+  // ("Compare and contrast the U.S. and Nevada constitutions") and SS.9-12.CE.18 (Nevada politics)
+  // — plus SS.9-12.CE.51 (Nevada's economy), giving the flagship its own-state home for the 1864
+  // "Battle Born" constitution, the "None of These Candidates" ballot, gaming regulation and the
+  // no-income-tax structure, the biennial Legislature, and the two-election amendment rule. The
+  // federal C-ladder standards carry the general civics claims. All mapped in data/nv.ts.
+  {
+    id: "civics.nv-none-of-these-candidates",
+    claim:
+      "Teaches Nevada's “None of These Candidates” — a statewide-ballot protest option (since 1976) found in no other state, and the fact that it is non-binding: even if it wins the most votes, the highest-finishing actual candidate still takes office. Also teaches Nevada's Constitution of 1864 and the “Battle Born” story.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 1 · “None of These Candidates”: a ballot option found only in Nevada",
+    ],
+  },
+  {
+    id: "civics.nv-gaming-taxes",
+    claim:
+      "Teaches Nevada's gaming (casino) regulation — the Gaming Control Board and the Gaming Commission — and how gaming taxes and tourism revenue let Nevada operate with no state personal income tax.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 2 · Gaming regulation and why Nevada has no income tax",
+    ],
+  },
+  {
+    id: "civics.nv-executive-legislature",
+    claim:
+      "Teaches Nevada's plural executive (a separately elected Governor and Lieutenant Governor, Secretary of State, Attorney General, Treasurer, and Controller) and its part-time, biennial Legislature — a 42-member Assembly and 21-member Senate that meets only in odd-numbered years for a constitutionally limited 120 days, with term limits.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 3 · The executive and a Legislature that meets every other year",
+    ],
+  },
+  {
+    id: "civics.nv-courts",
+    claim:
+      "Teaches Nevada's elected judiciary — judges chosen on a nonpartisan ballot to 6-year terms — with a Court of Appeals and a 7-justice Nevada Supreme Court.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 3 · The executive and a Legislature that meets every other year",
+    ],
+  },
+  {
+    id: "civics.nv-direct-democracy",
+    claim:
+      "Teaches Nevada's initiative and referendum, and its distinctive two-election rule: a citizen-initiated constitutional amendment must be approved by the voters in two consecutive general elections before it takes effect.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 4 · Direct democracy: the two-election rule for citizen amendments",
+    ],
+  },
+  {
+    id: "civics.nv-lawmaking",
+    claim:
+      "Teaches how a bill becomes a Nevada law in the biennial session — introduction, committee, floor votes, and the Governor's sign/veto with a two-thirds override — alongside the citizen initiative and referendum as a lawmaking backstop.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 4 · Direct democracy: the two-election rule for citizen amendments",
+    ],
+  },
+  {
+    id: "civics.nv-local-government",
+    claim:
+      "Teaches Nevada local government as Nevada's: 16 counties plus Carson City (an independent consolidated city-county), county-based school districts, and municipal cities and towns.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
+  {
+    id: "civics.nv-get-involved",
+    claim:
+      "Teaches getting involved where you live, Nevada edition — registering and voting (including same-day and automatic registration and mailed ballots to active voters), using the initiative and referendum, showing up at county commissions and city councils, and running for local office.",
+    courseSlugs: ["state-civics-nv"],
+    lessons: [
+      "Nevada Civics, Lesson 5 · Local government and how to take part",
+    ],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));
