@@ -2423,6 +2423,60 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     ],
   },
 
+  // ── State civics: Idaho (state-civics-id was written FROM Idaho's own sources) ──
+  // Idaho's American Government standards (9-12.GOV.*) name Idaho's OWN government explicitly at
+  // 9-12.GOV.45 (state government per the Constitution of the State of Idaho), 9-12.GOV.47 (local
+  // government — county, city, special district), and 9-12.GOV.54 (state administration of
+  // elections), so the Idaho-structure lessons have a genuine home.
+  {
+    id: "civics.id-constitution",
+    claim: "Teaches Idaho's 1889 constitution (statehood 1890) and the direct democracy reserved to the people: the initiative and referendum (added 1912) and the recall of elected officials.",
+    courseSlugs: ["state-civics-id"],
+    lessons: [
+      "Idaho Civics, Lesson 1 · Idaho's constitution: the 1889 rulebook and direct democracy",
+      "Idaho Civics, Lesson 7 · Direct democracy in Idaho: initiative, referendum, recall",
+    ],
+  },
+  {
+    id: "civics.id-legislature-executive",
+    claim: "Teaches Idaho's part-time citizen Legislature (35 districts, each electing one senator and two representatives — 35 senators and 70 representatives) and its plural executive: the Governor, a separately elected Lieutenant Governor, Secretary of State, State Controller, State Treasurer, Attorney General, and Superintendent of Public Instruction.",
+    courseSlugs: ["state-civics-id"],
+    lessons: ["Idaho Civics, Lesson 2 · The three branches and Idaho's plural executive"],
+  },
+  {
+    id: "civics.id-courts",
+    claim: "Teaches Idaho's judiciary: the five-justice Supreme Court, the Court of Appeals, and the district courts, chosen by nonpartisan election, with a midterm vacancy filled by the Governor from Idaho Judicial Council nominees.",
+    courseSlugs: ["state-civics-id"],
+    lessons: ["Idaho Civics, Lesson 3 · Idaho's courts: nonpartisan election, and filling a midterm vacancy"],
+  },
+  {
+    id: "civics.id-lawmaking",
+    claim: "Teaches how a bill becomes an Idaho law in the Legislature, and the citizen initiative as Idaho's second lawmaking route.",
+    courseSlugs: ["state-civics-id"],
+    lessons: ["Idaho Civics, Lesson 4 · How a bill becomes an Idaho law (and how voters do it directly)"],
+  },
+  {
+    id: "civics.id-local-government",
+    claim: "Teaches Idaho local government as Idaho's: 44 counties under three-member Boards of County Commissioners, cities, and special districts — no township government.",
+    courseSlugs: ["state-civics-id"],
+    lessons: [
+      "Idaho Civics, Lesson 5 · Local government in Idaho: 44 counties, cities, special districts, no townships",
+      "Idaho Civics, Lesson 8 · Get involved where you live in Idaho (county commission and city council)",
+    ],
+  },
+  {
+    id: "civics.id-elections",
+    claim: "Teaches Idaho's election specifics: Election Day registration, the closed party primary, and Idaho's administration of its own elections.",
+    courseSlugs: ["state-civics-id"],
+    lessons: ["Idaho Civics, Lesson 6 · Elections in Idaho: Election Day registration and the closed primary"],
+  },
+  {
+    id: "civics.id-get-involved",
+    claim: "Teaches getting involved where you live, Idaho edition — including the direct-democracy tools.",
+    courseSlugs: ["state-civics-id"],
+    lessons: ["Idaho Civics, Lesson 8 · Get involved where you live in Idaho"],
+  },
+
   // ── Federalism powers taxonomy (used by states whose standards name it) ──
   {
     id: "civics.federal-powers-taxonomy",
