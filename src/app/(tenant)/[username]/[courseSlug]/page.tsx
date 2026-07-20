@@ -20,6 +20,7 @@ import {
   OfflineSelectionBar,
 } from "@/components/offline-selection";
 import { listGlossary, listSources } from "@/db/queries/pedagogy";
+import { getPathsForCourse } from "@/db/queries/paths";
 import { listLiveForCourse } from "@/db/queries/live";
 import { LivePlayer } from "@/components/live-player";
 import { GlossaryList } from "@/components/glossary-list";
@@ -115,6 +116,9 @@ export default async function CourseBySlugPage({ params }: Params) {
     resumeLesson != null &&
     resumeLesson.id === view.lastViewedLessonId &&
     !completedLessonIds.has(resumeLesson.id);
+  // Series membership: which learning path(s) this course sits in, so the learner is told it's part
+  // of an ordered track (and where). Empty for a standalone course, so the banner just doesn't show.
+  const coursePaths = await getPathsForCourse(view.tenant.id, course.id);
   // Every lesson the learner may save for offline: page path, direct-media file (when applicable),
   // and the metadata the offline manifest needs so /downloads can name it with no network (a
   // cached URL alone can't tell you its course, section or title — see src/lib/offline-manifest.ts).
@@ -264,6 +268,42 @@ export default async function CourseBySlugPage({ params }: Params) {
       {course.description ? (
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
       ) : null}
+
+      {coursePaths.map((p) => {
+        const next = p.courses[p.position]; // position is 1-based, so this is the course AFTER it
+        return (
+          <aside
+            key={p.id}
+            className="mt-4 rounded-lg border border-neutral-200 bg-neutral-50 p-4 text-sm dark:border-neutral-800 dark:bg-neutral-900"
+          >
+            <p className="font-medium">
+              Part {p.position} of {p.total} in{" "}
+              <Link href={`/paths/${p.slug}`} className="underline" style={{ color: "var(--accent)" }}>
+                {p.title}
+              </Link>{" "}
+              <span className="font-normal text-neutral-500">(recommended order)</span>
+            </p>
+            <ol className="mt-2 list-decimal space-y-0.5 pl-5 text-neutral-600 dark:text-neutral-400">
+              {p.courses.map((c) => (
+                <li key={c.id} className={c.id === course.id ? "font-semibold text-neutral-900 dark:text-neutral-100" : ""}>
+                  {c.id === course.id ? (
+                    c.title
+                  ) : (
+                    <Link href={`/course/${c.id}`} className="hover:underline">
+                      {c.title}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ol>
+            {next ? (
+              <Link href={`/course/${next.id}`} className="mt-2 inline-block font-medium underline" style={{ color: "var(--accent)" }}>
+                Next in this track: {next.title} →
+              </Link>
+            ) : null}
+          </aside>
+        );
+      })}
 
       {resumeLesson && resumeHref ? (
         <section className="mt-5 flex flex-col gap-4 rounded-xl border-2 p-4 sm:flex-row sm:items-center" style={{ borderColor: "var(--accent)" }}>
