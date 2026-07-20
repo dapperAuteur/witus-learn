@@ -491,6 +491,243 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Why they left: the pull
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gmw-wwi-and-jobs",
+      title: "8 · The pull: a war, a labor shortage, and a wage",
+      section: "Section 3 · Why they left: the pull",
+      body: `Push factors explain the pressure. They do not explain the timing. Black Southerners endured Jim Crow for decades before the great surge north. What changed around 1916 was on the other end of the journey: for the first time, the North needed them, and said so with a paycheck.
+
+**World War I created the opening.** Northern factories — steel mills, meatpacking plants, auto works, railroads — had run for decades on a steady supply of European immigrant labor. When war broke out in Europe in 1914, that supply collapsed: immigration to the United States fell sharply, and then the U.S. entered the war in 1917 and pulled millions of men into the military. Industry suddenly faced a severe labor shortage in the middle of a wartime production boom (Grossman, 1989; National Archives, n.d.).
+
+**So industry turned south.** Companies that had never hired Black workers began sending **labor agents** into the South to recruit them, sometimes paying train fare north in exchange for a signed work commitment. Carole Marks (1989) argues this recruitment was so deliberate and organized that the Migration was, in her words, "orchestrated in the board rooms of northern industrial enterprises" — a useful correction to any picture of migrants as simply drifting north on their own. Southern states, alarmed at losing their cheap labor force, passed laws taxing or jailing labor agents to try to stop them (Grossman, 1989).
+
+**The wage did the rest of the arguing.** A job in a Northern factory paid a cash wage, directly to the worker, several times what farm labor earned in the South, and it came without a rigged "settling up" at the end of the year. For a sharecropping family that had never been allowed to get ahead, even a hard, dangerous, low-status factory job was a raise and, more importantly, a wage they actually controlled (Wilkerson, 2010; Grossman, 1989).
+
+**Then World War II did it again, bigger.** The same engine restarted in the 1940s. Wartime defense plants and shipyards, now stretching to the West Coast, created an even larger demand for labor, powering the Second Great Migration (Section 4). The pattern is worth naming: **the Great Migration tracked the labor needs of American industry at war.**
+
+:::reveal Why did the great surge north begin around 1916 specifically, when Jim Crow was decades old? ||| Because World War I cut off European immigrant labor and pulled men into the military, creating a severe labor shortage in Northern industry. For the first time, factories recruited Black Southern workers and paid a cash wage several times what farm labor earned. The timing was set by industry's wartime need for workers.
+
+## Sources
+- Grossman, J. R. (1989). *Land of hope: Chicago, Black Southerners, and the Great Migration*. University of Chicago Press.
+- Marks, C. (1989). *Farewell—We're good and gone: The great Black migration*. Indiana University Press.
+- Wilkerson, I. (2010). *The warmth of other suns: The epic story of America's great migration*. Random House.
+- National Archives. (n.d.). *The Great Migration (1910–1970)*. https://www.archives.gov/research/african-americans/migrations/great-migration`,
+      recallContent: [
+        {
+          prompt: "How did World War I open the door to Northern factory jobs for Black Southerners?",
+          answer: "It cut off European immigrant labor and drafted millions of men, creating a labor shortage. Northern industry recruited Black Southern workers for the first time, at a cash wage several times higher than Southern farm labor.",
+        },
+        {
+          prompt: "What is Carole Marks's argument about how organized the Migration was?",
+          answer: "That it was actively recruited and 'orchestrated in the board rooms of northern industrial enterprises,' not just a spontaneous drift of rural people north.",
+        },
+      ],
+    },
+    {
+      slug: "gmw-defender-and-kin",
+      title: "9 · The Chicago Defender and the kinship chain",
+      section: "Section 3 · Why they left: the pull",
+      body: `Industry supplied the jobs. But how did a sharecropper in Mississippi even learn that those jobs existed, or find the nerve to go? Two forces did that work: a **newspaper** and a **network of relatives**.
+
+**The Chicago Defender was the loudest voice for leaving.** Founded in 1905 by **Robert Sengstacke Abbott**, the *Defender* became the most widely read Black newspaper in the country, and during World War I it campaigned openly for migration. It ran editorials, cartoons, and photographs praising Northern life, printed train schedules and Northern job listings, and even declared a **"Great Northern Drive"** for **May 15, 1917**, a symbolic day to leave (Grossman, 1989). Abbott's paper framed the move not as running away but as a bold claim on freedom and dignity.
+
+**Getting it read in the South was itself an act of defiance.** The *Defender* was dangerous to be caught with in parts of the South, and some towns tried to ban it. It traveled anyway, largely through **Pullman porters** — the Black men who worked the railroad sleeping cars — who carried bundles of the paper south and left them where people would find them (Grossman, 1989). A single copy might be read aloud to a whole community, or passed hand to hand until it fell apart.
+
+**But most people did not move because of a newspaper. They moved because of family.** The single most reliable engine of the Migration was the **kinship chain**: one person went north, found work and a place to stay, wrote home (sometimes tucking a few dollars or a train ticket into the envelope), and then sent for the next relative, who did the same. Wilkerson (2010) shows this pattern in each of her three subjects, and Grossman (1989) documents Chicago neighborhoods that filled up, block by block, with people from the same handful of Southern counties. A letter from a cousin who had actually made it was worth more than any editorial.
+
+**This is why the streams from Section 1 held their shape.** Migration followed the lines of family and acquaintance, so people from one Southern place ended up clustered in one Northern place. The move looked, from a distance, like a flood. Up close, it was a relay.
+
+:::reveal Name the newspaper that campaigned for migration, the men who smuggled it south, and the "engine" that actually moved most families. ||| The Chicago Defender (founded 1905 by Robert Abbott) campaigned for migration and declared a "Great Northern Drive" for May 15, 1917. Pullman porters carried it south past local bans. But the main engine was the kinship chain: one relative went, found work, and sent for the next.
+
+## Sources
+- Grossman, J. R. (1989). *Land of hope: Chicago, Black Southerners, and the Great Migration*. University of Chicago Press.
+- Wilkerson, I. (2010). *The warmth of other suns: The epic story of America's great migration*. Random House.
+- The Chicago Defender (1905–present). [Primary source: Black weekly newspaper, Chicago]. Archived collections, e.g., Library of Congress *Chronicling America*.`,
+    },
+    {
+      slug: "gmw-quiz-pull",
+      title: "10 · Quiz: what pulled them",
+      section: "Section 3 · Why they left: the pull",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why did the great surge north begin around 1916, decades after Jim Crow was in force?",
+            options: [
+              "Because the South suddenly became legal to leave",
+              "Because World War I cut off European immigrant labor and created a Northern factory labor shortage",
+              "Because sharecropping ended in 1916",
+              "Because the boll weevil arrived in 1916",
+            ],
+            correctIndex: 1,
+            explanation: "The timing was set by industry's wartime need for workers, not by any change in Southern law.",
+            sourceLessonSlug: "gmw-wwi-and-jobs",
+          },
+          {
+            prompt: "What did Northern companies send into the South to recruit Black workers?",
+            options: ["Labor agents", "Boll weevils", "Poll taxes", "Pullman cars only"],
+            correctIndex: 0,
+            explanation: "Labor agents recruited workers, sometimes advancing train fare. Southern states passed laws taxing or jailing them to stem the loss of labor.",
+            sourceLessonSlug: "gmw-wwi-and-jobs",
+          },
+          {
+            prompt: "Carole Marks argued the Migration was 'orchestrated in the board rooms of northern industrial enterprises.' Her point is that:",
+            options: [
+              "Migrants had no reasons of their own to leave",
+              "Northern industry actively and deliberately recruited migrants, not just a spontaneous drift",
+              "The Migration never really happened",
+              "Southern landowners organized the move",
+            ],
+            correctIndex: 1,
+            explanation: "Marks (1989) corrects the image of aimless drift: recruitment by Northern industry was organized and intentional.",
+            sourceLessonSlug: "gmw-wwi-and-jobs",
+          },
+          {
+            prompt: "Why did Southern states pass laws taxing or jailing labor agents?",
+            options: [
+              "To protect workers from fraud",
+              "To stop the loss of their cheap Black labor force to the North",
+              "To fund schools",
+              "To encourage migration",
+            ],
+            correctIndex: 1,
+            explanation: "Losing workers threatened the Southern labor economy, so states tried to block the recruiters.",
+            sourceLessonSlug: "gmw-wwi-and-jobs",
+          },
+          {
+            prompt: "Compared with Southern farm labor, a Northern factory wage was:",
+            options: [
+              "Lower, but safer",
+              "Several times higher, and paid in cash directly to the worker",
+              "Paid only in credit at a company store",
+              "The same",
+            ],
+            correctIndex: 1,
+            explanation: "A direct cash wage several times higher, without a rigged 'settling up,' was a genuine exit from the sharecropping trap.",
+            sourceLessonSlug: "gmw-wwi-and-jobs",
+          },
+          {
+            prompt: "The Second Great Migration (1940s onward) was powered by:",
+            options: [
+              "World War II defense plants and shipyards, including on the West Coast",
+              "A return to farming",
+              "The end of all factory work",
+              "The boll weevil's disappearance",
+            ],
+            correctIndex: 0,
+            explanation: "The same wartime-industry engine restarted, bigger, and reached the Pacific coast.",
+            sourceLessonSlug: "gmw-wwi-and-jobs",
+          },
+          {
+            prompt: "Who founded the Chicago Defender, and in what year?",
+            options: ["Robert Abbott, 1905", "James Weldon Johnson, 1919", "Berry Gordy, 1959", "Homer Plessy, 1896"],
+            correctIndex: 0,
+            explanation: "Robert Sengstacke Abbott founded the Defender in 1905; it became the most widely read Black newspaper in the country.",
+            sourceLessonSlug: "gmw-defender-and-kin",
+          },
+          {
+            prompt: "What was the Chicago Defender's 'Great Northern Drive'?",
+            options: [
+              "A fundraising campaign",
+              "A symbolic day (May 15, 1917) the paper set for Black Southerners to leave for the North",
+              "A railroad company",
+              "A cotton-picking contest",
+            ],
+            correctIndex: 1,
+            explanation: "Abbott declared May 15, 1917 a symbolic 'Great Northern Drive,' part of the paper's open campaign for migration.",
+            sourceLessonSlug: "gmw-defender-and-kin",
+          },
+          {
+            prompt: "How did the Chicago Defender reach readers in Southern towns that tried to ban it?",
+            options: [
+              "By radio broadcast",
+              "Pullman porters carried bundles south on the trains",
+              "It was mailed by the government",
+              "It was printed in the South",
+            ],
+            correctIndex: 1,
+            explanation: "Black Pullman porters smuggled the paper south, where a single copy might be read aloud to a whole community.",
+            sourceLessonSlug: "gmw-defender-and-kin",
+          },
+          {
+            prompt: "What was the 'kinship chain,' and why did it matter most?",
+            options: [
+              "A chain-link fence around Northern factories",
+              "The pattern of one relative going north, finding work, and sending for the next — the main engine of the Migration",
+              "A labor union",
+              "A Southern law",
+            ],
+            correctIndex: 1,
+            explanation: "A letter from a relative who had actually made it, sometimes with a ticket enclosed, moved more families than any editorial.",
+            sourceLessonSlug: "gmw-defender-and-kin",
+          },
+          {
+            prompt: "The kinship chain helps explain why:",
+            options: [
+              "Migration was random",
+              "People from one Southern place clustered in one Northern place, keeping the three streams' shape",
+              "Everyone moved to the same city",
+              "The Defender failed",
+            ],
+            correctIndex: 1,
+            explanation: "Because migration followed family lines, Southern regions reassembled in specific Northern neighborhoods.",
+            sourceLessonSlug: "gmw-defender-and-kin",
+          },
+          {
+            prompt: "How did the Defender frame the decision to migrate?",
+            options: [
+              "As cowardly running away",
+              "As a bold claim on freedom and dignity",
+              "As a temporary vacation",
+              "As a government order",
+            ],
+            correctIndex: 1,
+            explanation: "Abbott's paper cast leaving as claiming one's rights, not fleeing — powerful framing for a fearful decision.",
+            sourceLessonSlug: "gmw-defender-and-kin",
+          },
+          {
+            prompt: "The pattern 'the Great Migration tracked the labor needs of American industry at war' is supported by:",
+            options: [
+              "Both surges (WWI and WWII) coinciding with wartime industrial labor shortages",
+              "The Migration happening only in peacetime",
+              "Factories closing during both world wars",
+              "The South industrializing first",
+            ],
+            correctIndex: 0,
+            explanation: "Both great surges lined up with wartime booms that starved industry of its usual labor supply.",
+            sourceLessonSlug: "gmw-wwi-and-jobs",
+          },
+          {
+            prompt: "Which best captures the relationship between push and pull factors?",
+            options: [
+              "Push factors set the timing; pull factors set the pressure",
+              "Push factors (Jim Crow, debt, terror) built the pressure; pull factors (wartime jobs, a wage) set the timing and direction",
+              "Only pull factors mattered",
+              "Only push factors mattered",
+            ],
+            correctIndex: 1,
+            explanation: "Decades of push built the pressure; the wartime pull of jobs decided when and where it was released.",
+            sourceLessonSlug: "gmw-wwi-and-jobs",
+          },
+          {
+            prompt: "Why were Pullman porters well positioned to spread the Defender and news of the North?",
+            options: [
+              "They owned the newspaper",
+              "As Black men who worked the railroad sleeping cars, they traveled constantly between North and South",
+              "They were factory recruiters",
+              "They ran the poll-tax offices",
+            ],
+            correctIndex: 1,
+            explanation: "Their jobs moved them along the rail lines, making them a natural distribution network for news and newspapers.",
+            sourceLessonSlug: "gmw-defender-and-kin",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
