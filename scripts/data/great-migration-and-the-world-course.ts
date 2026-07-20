@@ -234,6 +234,263 @@ Wilkerson (2010) built her entire book on this pattern by choosing one person fo
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 2 · Why they left: the push
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gmw-jim-crow",
+      title: "4 · Jim Crow: the law that made the South a cage",
+      section: "Section 2 · Why they left: the push",
+      body: `People do not uproot their whole lives on a whim. To understand the Migration you have to understand what six million people were leaving, and the first answer is a system of law with a nickname: **Jim Crow**.
+
+**"Separate but equal" was made constitutional in 1896.** In *Plessy v. Ferguson*, the Supreme Court upheld a Louisiana law requiring separate railroad cars for Black and white passengers, ruling 7 to 1 that segregation did not violate the Fourteenth Amendment as long as facilities were "equal" (*Plessy v. Ferguson*, 1896). In practice they were never equal, and everyone knew it. *Plessy* handed the South a green light, and over the next decades states built segregation into schools, streetcars, waiting rooms, drinking fountains, hospitals, cemeteries, and courtrooms.
+
+**The vote was taken away on purpose.** Between the 1890s and the early 1900s, Southern states rewrote their constitutions and election laws to strip Black men of the ballot they had won after the Civil War, using tools designed to disenfranchise Black voters while sounding race-neutral:
+- **Poll taxes** (you had to pay to vote, sometimes cumulatively for past years);
+- **Literacy tests** graded by a white registrar who could pass or fail whomever he chose;
+- **Grandfather clauses** that waived those requirements for men whose grandfathers could vote before Reconstruction (which no Black Southerner's could);
+- the **white primary**, which barred Black voters from the Democratic primary that was the only election that mattered in a one-party South. The Supreme Court did not strike the white primary down until *Smith v. Allwright* in 1944 (*Smith v. Allwright*, 1944).
+
+**And the humiliation was constant and enforceable.** Jim Crow was not only signs and statutes. It was a code of daily behavior that a Black Southerner broke at real risk: stepping off the sidewalk, the wrong tone of voice, meeting a white person's eyes too long. Wilkerson (2010) describes a caste system so total that leaving it felt, to many, less like moving and more like defecting from a country. Grossman (1989), studying Chicago's newcomers, found that migrants themselves described the North in the language of freedom and the South in the language of bondage.
+
+Jim Crow, then, is push factor number one: not poverty alone, but a legal order engineered to keep an entire people poor, voteless, and afraid.
+
+:::reveal Name three legal tools Southern states used to take the vote away from Black men, and the 1896 case that made "separate but equal" the law. ||| Poll taxes, literacy tests (graded by white registrars), grandfather clauses, and the white primary were the disenfranchisement tools. Plessy v. Ferguson (1896) made "separate but equal" constitutional.
+
+## Sources
+- *Plessy v. Ferguson*, 163 U.S. 537 (1896).
+- *Smith v. Allwright*, 321 U.S. 649 (1944).
+- Grossman, J. R. (1989). *Land of hope: Chicago, Black Southerners, and the Great Migration*. University of Chicago Press.
+- Wilkerson, I. (2010). *The warmth of other suns: The epic story of America's great migration*. Random House.`,
+      recallContent: [
+        {
+          prompt: "What 1896 Supreme Court case made 'separate but equal' constitutional?",
+          answer: "Plessy v. Ferguson (1896), decided 7 to 1. In practice, separate facilities were never equal.",
+        },
+        {
+          prompt: "What was the 'white primary,' and when did the Supreme Court strike it down?",
+          answer: "A rule barring Black voters from the Democratic primary (the only election that mattered in the one-party South). Struck down in Smith v. Allwright (1944).",
+        },
+      ],
+    },
+    {
+      slug: "gmw-sharecropping",
+      title: "5 · Sharecropping and debt peonage: an economy built to trap",
+      section: "Section 2 · Why they left: the push",
+      body: `Jim Crow was the law. **Sharecropping** was the economy underneath it, and it was engineered so that hard work rarely led out of debt.
+
+**How the system worked.** After the Civil War, most Southern land stayed in the hands of white owners, while the people who worked it — many of them formerly enslaved and their descendants — had no land and no cash. The solution that emerged was sharecropping: a family farmed an owner's land in exchange for a share of the crop, usually about half. Because the family had no money to live on until harvest, they bought food, seed, tools, and clothing on credit from the landowner or a **furnishing merchant**, at marked-up prices and steep interest, against the crop they had not yet grown (Wilkerson, 2010).
+
+**"Settling up" was where the trap sprang.** At harvest, the owner did the accounting, alone, in a system where the cropper often could not legally challenge a white man's numbers and had been kept from the literacy to check them. Wilkerson (2010) describes croppers who brought in a good cotton crop and were still told, year after year, that they had come out "even" or that they owed more than they had earned. A family could work an entire year and end it deeper in debt than it began.
+
+**When that debt was used to hold people in place, it became debt peonage.** In much of the South it was effectively illegal to leave while you "owed" the landowner, and sheriffs and courts enforced those debts. Historians have documented forms of forced and coerced labor that outlasted slavery by decades (a system the historian Douglas Blackmon called "slavery by another name"). For a sharecropping family, the arithmetic was brutally simple: stay, and you would likely never get ahead; and leaving could itself be treated as a crime.
+
+**This is the economic engine of the Migration.** When Northern factories finally offered a cash wage paid directly to the worker (Section 3), they were not just offering more money. They were offering the first exit most Black Southern families had ever seen from an economy specifically designed to keep them from accumulating anything.
+
+:::reveal In sharecropping, why could a family work hard all year and still end up owing money? ||| Because they bought everything on credit at marked-up prices and interest, and the landowner alone did the "settling up" at harvest, in a system where a cropper could not safely challenge a white man's numbers. When that debt was used to keep them from leaving, it became debt peonage.
+
+## Sources
+- Wilkerson, I. (2010). *The warmth of other suns: The epic story of America's great migration*. Random House.
+- Blackmon, D. A. (2008). *Slavery by another name: The re-enslavement of Black Americans from the Civil War to World War II*. Doubleday.`,
+    },
+    {
+      slug: "gmw-terror-and-weevil",
+      title: "6 · Terror, and the boll weevil: the last straws",
+      section: "Section 2 · Why they left: the push",
+      body: `Law and debt held people in place. **Terror** and a **beetle** helped push them out.
+
+**Racial terror was the enforcement arm of Jim Crow.** Between 1877 and 1950, the Equal Justice Initiative has documented more than **4,400** racial terror lynchings of Black Americans — public killings, often by mobs, meant not only to murder an individual but to terrorize a whole community into submission (Equal Justice Initiative [EJI], 2017). Counts vary between projects and are certainly undercounts, but the scale and purpose are not in doubt. A lynching in the next county was a message to everyone who heard about it, and news of it traveled with families who left.
+
+**The violence did not stop at the Southern border, and 1919 proved it.** In the summer after World War I, white mobs attacked Black communities in more than three dozen cities and towns across the country. The writer and NAACP official James Weldon Johnson named it the **"Red Summer."** In Chicago, riots left 38 people dead; the worst killing was in rural **Elaine, Arkansas**, where estimates of Black dead run from about 100 to 240 (National Archives, n.d.-b). Red Summer is a warning this course will return to: the North was a destination, not a promised land.
+
+**Now the beetle.** The **boll weevil**, a cotton-eating insect, crossed into the United States from Mexico near Brownsville, Texas, around **1892**, and spread east across the cotton South, reaching essentially all cotton-growing regions by the mid-1920s (Britannica, n.d.-b). Where it hit, it could ruin a cotton crop, and cotton was the only thing a sharecropping economy grew. Ruined crops meant ruined croppers, and some landowners responded by pushing tenant families off the land entirely.
+
+**But be careful here — this is a place where popular history oversimplifies.** It is tempting to say "the boll weevil caused the Great Migration," and you will see that claim made. It is too clean. The Migration was already underway before the weevil reached the Deep South, its timing does not line up neatly with the biggest migration surges, and scholars such as Carole Marks argue the pull of Northern industry and the push of Jim Crow and terror mattered more than any single crop failure (Marks, 1989). The honest version: the boll weevil was **one shock among several**, one that made a bad situation worse and gave already-decided families a final reason to buy a train ticket.
+
+:::reveal Was the boll weevil the single cause of the Great Migration? Explain. ||| No. It was one economic shock among several. The Migration was already underway before the weevil reached the Deep South, and scholars argue Jim Crow, terror, and the pull of Northern industry mattered more. It made a bad situation worse rather than starting the movement.
+
+## Sources
+- Equal Justice Initiative. (2017). *Lynching in America: Confronting the legacy of racial terror* (3rd ed.). https://lynchinginamerica.eji.org/report/
+- National Archives. (n.d.-b). *Racial violence and the Red Summer*. https://www.archives.gov/research/african-americans/wwi/red-summer
+- Britannica, T. Editors of Encyclopaedia. (n.d.-b). *Boll weevil*. In *Encyclopædia Britannica*. https://www.britannica.com/animal/boll-weevil
+- Marks, C. (1989). *Farewell—We're good and gone: The great Black migration*. Indiana University Press.`,
+      recallContent: [
+        {
+          prompt: "What did the 'Red Summer' of 1919 show about the North?",
+          answer: "That anti-Black mob violence was national, not only Southern. White mobs attacked Black communities in dozens of cities (38 died in Chicago; the Elaine, Arkansas massacre was the worst). The North was a destination, not a promised land.",
+        },
+        {
+          prompt: "Roughly how many racial terror lynchings has the Equal Justice Initiative documented, and over what years?",
+          answer: "More than 4,400 of Black Americans between 1877 and 1950 (an undercount; counts vary between projects).",
+        },
+      ],
+    },
+    {
+      slug: "gmw-quiz-push",
+      title: "7 · Quiz: why they left",
+      section: "Section 2 · Why they left: the push",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What did the 1896 case Plessy v. Ferguson establish?",
+            options: [
+              "That segregation was unconstitutional",
+              "That 'separate but equal' segregation did not violate the Constitution",
+              "That Black men could not be barred from voting",
+              "That sharecropping was illegal",
+            ],
+            correctIndex: 1,
+            explanation: "Plessy upheld Louisiana's segregated-railcar law 7 to 1, making 'separate but equal' constitutional. Facilities were never actually equal.",
+            sourceLessonSlug: "gmw-jim-crow",
+          },
+          {
+            prompt: "Which of these was NOT a tool used to disenfranchise Black voters in the Jim Crow South?",
+            options: ["Poll taxes", "Literacy tests", "The white primary", "Automatic voter registration"],
+            correctIndex: 3,
+            explanation: "Poll taxes, literacy tests, grandfather clauses, and the white primary were all used to take the vote away. Automatic registration is a modern, opposite idea.",
+            sourceLessonSlug: "gmw-jim-crow",
+          },
+          {
+            prompt: "What was the 'white primary'?",
+            options: [
+              "A school for white children only",
+              "A rule barring Black voters from the Democratic primary — the only election that mattered in the one-party South",
+              "A whites-only railroad car",
+              "The first primary election of the year",
+            ],
+            correctIndex: 1,
+            explanation: "In the one-party South, the Democratic primary decided everything, so barring Black voters from it erased their vote. Struck down in Smith v. Allwright (1944).",
+            sourceLessonSlug: "gmw-jim-crow",
+          },
+          {
+            prompt: "In sharecropping, why could a hardworking family still end a good year in debt?",
+            options: [
+              "They refused to work",
+              "They bought supplies on credit at marked-up prices and the landowner alone did the 'settling up'",
+              "Cotton had no value",
+              "The government taxed all their earnings",
+            ],
+            correctIndex: 1,
+            explanation: "Credit at inflated prices plus a rigged, unchallengeable accounting at harvest meant a family could work all year and still be told it owed money.",
+            sourceLessonSlug: "gmw-sharecropping",
+          },
+          {
+            prompt: "When a family was legally prevented from leaving because they 'owed' a landowner, the system is called:",
+            options: ["A grandfather clause", "Debt peonage", "The white primary", "Redlining"],
+            correctIndex: 1,
+            explanation: "Debt peonage used debt to hold laborers in place, enforced by sheriffs and courts — a form of coerced labor that outlasted slavery by decades.",
+            sourceLessonSlug: "gmw-sharecropping",
+          },
+          {
+            prompt: "What was the main PURPOSE of a lynching, beyond the murder itself?",
+            options: [
+              "To settle a legal dispute",
+              "To terrorize an entire community into submission",
+              "To recruit workers north",
+              "To enforce a debt",
+            ],
+            correctIndex: 1,
+            explanation: "The EJI documents lynching as racial terrorism: public killings meant to frighten a whole community, not only punish an individual.",
+            sourceLessonSlug: "gmw-terror-and-weevil",
+          },
+          {
+            prompt: "About how many racial terror lynchings of Black Americans has the Equal Justice Initiative documented for 1877–1950?",
+            options: ["About 40", "About 400", "More than 4,400", "More than 44,000"],
+            correctIndex: 2,
+            explanation: "More than 4,400 (and considered an undercount). Different projects reach somewhat different totals.",
+            sourceLessonSlug: "gmw-terror-and-weevil",
+          },
+          {
+            prompt: "What was the 'Red Summer' of 1919?",
+            options: [
+              "A record cotton harvest",
+              "A wave of white-mob attacks on Black communities in dozens of U.S. cities after World War I",
+              "A Communist uprising",
+              "A heat wave that ruined crops",
+            ],
+            correctIndex: 1,
+            explanation: "Named by James Weldon Johnson, it saw anti-Black violence in more than three dozen cities. The worst killing was the Elaine, Arkansas massacre.",
+            sourceLessonSlug: "gmw-terror-and-weevil",
+          },
+          {
+            prompt: "What did the Red Summer reveal about the North as a destination?",
+            options: [
+              "That it was completely free of racial violence",
+              "That anti-Black violence was national, not only Southern — the North was a destination, not a promised land",
+              "That migrants were unwelcome only in the South",
+              "That the Migration had ended",
+            ],
+            correctIndex: 1,
+            explanation: "Chicago's 1919 riot left 38 dead. The North offered jobs and the vote, but not safety from racism.",
+            sourceLessonSlug: "gmw-terror-and-weevil",
+          },
+          {
+            prompt: "The boll weevil first entered the United States around 1892 near:",
+            options: ["Brownsville, Texas", "Chicago, Illinois", "Harlem, New York", "Atlanta, Georgia"],
+            correctIndex: 0,
+            explanation: "It crossed from Mexico near Brownsville, Texas, around 1892 and spread east across the cotton South by the mid-1920s.",
+            sourceLessonSlug: "gmw-terror-and-weevil",
+          },
+          {
+            prompt: "Why is it an oversimplification to say 'the boll weevil caused the Great Migration'?",
+            options: [
+              "Because the boll weevil never reached the South",
+              "Because the Migration was already underway before the weevil hit the Deep South, and scholars say Jim Crow, terror, and Northern jobs mattered more",
+              "Because cotton was not important",
+              "Because the weevil helped cotton farmers",
+            ],
+            correctIndex: 1,
+            explanation: "The weevil was one shock among several. Its timing does not line up neatly with the biggest surges, and Marks (1989) stresses industry's pull and Jim Crow's push.",
+            sourceLessonSlug: "gmw-terror-and-weevil",
+          },
+          {
+            prompt: "Which scholar argued that the pull of Northern industry mattered more than any single crop failure?",
+            options: ["Homer Plessy", "Carole Marks", "James Weldon Johnson", "Douglas Blackmon"],
+            correctIndex: 1,
+            explanation: "Marks (1989) argued Northern industry actively recruited and 'orchestrated' migration, a corrective to boll-weevil-only stories.",
+            sourceLessonSlug: "gmw-terror-and-weevil",
+          },
+          {
+            prompt: "Why does this course call cash factory wages a genuine 'exit' for sharecropping families?",
+            options: [
+              "Because factories paid in cotton",
+              "Because a wage paid directly to the worker was the first escape most had from an economy designed to keep them from accumulating anything",
+              "Because factory work was easy",
+              "Because it let them keep farming",
+            ],
+            correctIndex: 1,
+            explanation: "Sharecropping was built to prevent Black families from getting ahead. A direct cash wage broke that trap for the first time.",
+            sourceLessonSlug: "gmw-sharecropping",
+          },
+          {
+            prompt: "Overall, the 'push' factors of Section 2 are best summarized as:",
+            options: [
+              "Only the boll weevil",
+              "A legal order (Jim Crow), a rigged economy (sharecropping/debt peonage), and racial terror, with crop failure as one added shock",
+              "High Northern wages alone",
+              "A shortage of farmland",
+            ],
+            correctIndex: 1,
+            explanation: "Push factors stacked: segregation and disenfranchisement, an economy built to trap, terror, and economic shocks like the weevil.",
+            sourceLessonSlug: "gmw-jim-crow",
+          },
+          {
+            prompt: "Douglas Blackmon's phrase 'slavery by another name' refers to:",
+            options: [
+              "The Harlem Renaissance",
+              "Forms of forced and coerced labor (including debt peonage) that outlasted slavery by decades",
+              "The boll weevil infestation",
+              "The white primary",
+            ],
+            correctIndex: 1,
+            explanation: "Blackmon (2008) documented coerced labor systems that persisted from the Civil War into the twentieth century.",
+            sourceLessonSlug: "gmw-sharecropping",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
