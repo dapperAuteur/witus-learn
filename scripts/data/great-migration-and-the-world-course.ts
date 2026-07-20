@@ -1476,6 +1476,272 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 7 · The costs
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gmw-redlining",
+      title: "22 · Redlining: how a map became a wall",
+      section: "Section 7 · The costs",
+      body: `The North offered a wage and a vote. What it withheld, systematically, was the main way twentieth-century American families built wealth: **owning a home that gained value**. The tool of that denial was **redlining**, and understanding it means being careful, because the popular version gets the details wrong.
+
+**The New Deal reshaped American housing.** During the Depression, the federal government created agencies to rescue and expand home ownership: the **Home Owners' Loan Corporation (HOLC)** in **1933**, and the **Federal Housing Administration (FHA)** in **1934**. These made long-term, low-down-payment mortgages widely available, and they helped build the modern American middle class (Federal Reserve Bank of Chicago, n.d.).
+
+**But they built it with a color line.** The HOLC produced color-coded "residential security" maps of American cities, grading neighborhoods from "best" (green) to "hazardous" (red). Areas where Black people lived were routinely graded **red** ("redlined"), marking them as too risky for lending. More consequentially, the **FHA's own 1934 underwriting manual instructed appraisers to treat the presence of Black residents, and even the risk of their arrival, as a reason to deny a mortgage** (Federal Reserve Bank of Chicago, n.d.). The result: for decades, government-backed home loans flowed to white neighborhoods and were choked off in Black ones.
+
+**Here is where you must slow down and verify.** You will often hear the tidy claim that "the HOLC's redlining maps caused housing segregation." Recent scholarship complicates that. Researchers (including economists at the Federal Reserve Bank of Chicago) debate **how much the HOLC maps caused segregation versus reflected and reinforced discrimination that was already standard practice** among private lenders and the FHA (Federal Reserve Bank of Chicago, n.d.). The honest statement is not "one map ruined everything." It is: **redlining was a whole system, of which the famous maps are the most visible piece, and the FHA's lending rules may have mattered more than the HOLC's maps.** Notice what just happened: a dramatic, shareable story ("the map did it") gave way to a more careful, better-sourced one. That is the move this course keeps asking you to make.
+
+**Why it mattered so much.** A family shut out of a mortgage could not buy a home; a family that could not buy could not build home equity; and home equity was the single biggest asset most American families passed to their children. Redlining did not just segregate space. It **blocked the wealth escalator** for Black families for two generations, and the gap it opened is still measurable today.
+
+:::reveal What was redlining, and why should you be cautious about the claim "the HOLC maps caused segregation"? ||| Redlining was the system of denying government-backed mortgages in Black neighborhoods, using HOLC "residential security" maps (Black areas graded red) and, crucially, the FHA's 1934 underwriting rules that treated Black residents as a lending risk. Be cautious about "the maps caused segregation" because scholars debate how much the maps caused versus reflected existing discrimination; the FHA's lending rules may have mattered more. Redlining was a whole system, not one map.
+
+## Sources
+- Federal Reserve Bank of Chicago. (n.d.). *Revisiting how two federal housing agencies propagated redlining in the 1930s*. https://www.chicagofed.org/research/content-areas/mobility/policy-brief-federal-housing-programs-redlining`,
+      recallContent: [
+        {
+          prompt: "How did redlining block wealth-building for Black families?",
+          answer: "Government-backed mortgages were denied in Black neighborhoods (HOLC 'red' grades; the FHA's 1934 rules treating Black residents as a lending risk). No mortgage meant no home, no home equity, and no main asset to pass to children — blocking the wealth escalator for two generations.",
+        },
+        {
+          prompt: "Why is 'the HOLC maps caused segregation' an oversimplification?",
+          answer: "Scholars debate how much the maps caused versus reflected discrimination already standard among private lenders and the FHA. Redlining was a whole system; the FHA's underwriting rules may have mattered more than the maps.",
+        },
+      ],
+    },
+    {
+      slug: "gmw-covenants-and-second-ghetto",
+      title: "23 · Covenants, Shelley, and the second ghetto",
+      section: "Section 7 · The costs",
+      body: `Redlining starved Black neighborhoods of credit. Two more tools kept Black families *inside* them: **private contracts** and, later, **public policy**.
+
+**Restrictive covenants were segregation written into the deed.** A racially **restrictive covenant** was a clause in a property's deed promising that the home would never be sold to or occupied by Black people (and often other groups). Whole white neighborhoods signed them block by block, building a private legal wall that no anti-discrimination law then touched. If a Black family bought in anyway, neighbors could sue to remove them, and courts would enforce the covenant.
+
+**The Supreme Court closed the courthouse door in 1948.** In *Shelley v. Kraemer*, the Court ruled that while private parties could *write* such covenants, a **state court could not enforce them**, because judicial enforcement would make the government a party to racial discrimination, violating the Fourteenth Amendment (*Shelley v. Kraemer*, 1948). It was a real victory. But notice its limit: the covenants themselves were not banned, only their court enforcement, and segregation simply shifted to other, quieter tools, from realtor practice to violence, until the Fair Housing Act of 1968.
+
+**Then government helped build what the historian Arnold Hirsch called the "second ghetto."** In the postwar years, cities cleared "slums" and built large public-housing projects, and in Chicago these were deliberately sited to keep Black residents concentrated in the existing Black Belt rather than let them disperse. In *Making the Second Ghetto: Race and Housing in Chicago, 1940–1960* (1983), Hirsch showed that midcentury segregation was not a leftover from the past fading away, but a **new structure actively built by public policy and private action together** (Hirsch, 1983).
+
+**And crossing the line could be deadly.** When Black families did move into white blocks, they were often met with mobs, vandalism, and firebombs. This was not only a Southern story: some of the ugliest anti-Black housing violence of the century happened in Northern cities. The "promised land" defended its borders.
+
+:::reveal What did Shelley v. Kraemer (1948) actually decide about restrictive covenants, and what was Arnold Hirsch's "second ghetto"? ||| Shelley v. Kraemer ruled that courts could not ENFORCE racially restrictive covenants (state enforcement would violate the Fourteenth Amendment), though it did not ban the covenants themselves. Hirsch's "second ghetto" is the postwar segregation actively built by public policy (slum clearance and the deliberate siting of public housing) and private action, not a leftover fading from the past.
+
+## Sources
+- *Shelley v. Kraemer*, 334 U.S. 1 (1948).
+- Hirsch, A. R. (1983). *Making the second ghetto: Race and housing in Chicago, 1940–1960*. Cambridge University Press.`,
+    },
+    {
+      slug: "gmw-white-flight-deindustrialization",
+      title: "24 · White flight and the vanishing factory",
+      section: "Section 7 · The costs",
+      body: `The last two costs are the cruelest, because of their timing. Just as Black migrants finished arriving in the industrial cities, two things pulled the ground out from under them: white families left, and the factories left too.
+
+**White flight was subsidized.** After World War II, millions of white urban families moved to new suburbs, helped by exactly the low-cost, government-backed mortgages that redlining denied to Black families. The FHA's rules that starved Black neighborhoods of credit were the same rules that financed white suburbanization. So "white flight" was not simply private choice; it was **public policy paying for one group to leave while trapping another in place** (Federal Reserve Bank of Chicago, n.d.). As the tax base followed white families to the suburbs, the cities migrants had come to were left poorer.
+
+**Then the factories vanished.** The historian **Thomas Sugrue**, studying Detroit, showed that **deindustrialization began in the 1950s**, well before the urban unrest of the 1960s. Employers moved plants to the suburbs, to small towns, and eventually overseas, and automated away many of the jobs that remained (Sugrue, 1996). The engine that had *pulled* the Migration north (Section 3) went into reverse precisely when Black workers, often the "last hired," were most dependent on it. Sugrue argued that this combination, racial discrimination plus disappearing industrial jobs, is the real origin of the late-twentieth-century "urban crisis," and that white flight and deindustrialization were **structural causes of urban decline, not reactions to it** (Sugrue, 1996).
+
+**Put the timing together and the tragedy is clear.** For fifty years, Northern industry advertised for Black Southern labor. Black families uprooted everything and came. And within a generation of arriving, many found the factories closing, the mortgages denied, the neighbors gone, and the tax base with them. The Migration was a triumph of courage and will. It was also, for many, a door that opened onto a room whose far exits were being sealed. Both of those things are true, and an honest course holds them at once.
+
+:::reveal How were "white flight" and deindustrialization especially cruel in their timing for Black migrants? ||| White flight was subsidized by the same FHA-backed mortgages Black families were denied, so public policy paid one group to leave while trapping another and draining the city's tax base. Then, per Sugrue, deindustrialization began in the 1950s: factories moved to suburbs and overseas and automated, so the jobs that had pulled migrants north disappeared just as they arrived, often as the "last hired." These were structural causes of urban decline, not reactions to it.
+
+## Sources
+- Sugrue, T. J. (1996). *The origins of the urban crisis: Race and inequality in postwar Detroit*. Princeton University Press.
+- Federal Reserve Bank of Chicago. (n.d.). *Revisiting how two federal housing agencies propagated redlining in the 1930s*. https://www.chicagofed.org/research/content-areas/mobility/policy-brief-federal-housing-programs-redlining`,
+      recallContent: [
+        {
+          prompt: "Why does this course say 'white flight' was not simply private choice?",
+          answer: "Because it was subsidized by the same FHA-backed mortgages that redlining denied to Black families. Public policy financed white families' move to the suburbs while trapping Black families in the city and draining the urban tax base.",
+        },
+        {
+          prompt: "What did Thomas Sugrue argue about deindustrialization in Detroit?",
+          answer: "That it began in the 1950s (before the 1960s unrest), as employers moved plants to suburbs and overseas and automated. Combined with racial discrimination, it was a structural cause of the urban crisis, not a reaction to 1960s unrest.",
+        },
+      ],
+    },
+    {
+      slug: "gmw-quiz-costs",
+      title: "25 · Quiz: the costs",
+      section: "Section 7 · The costs",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What was 'redlining'?",
+            options: [
+              "A Southern voting law",
+              "The system of denying government-backed mortgages in Black neighborhoods",
+              "A type of blues music",
+              "A union tactic",
+            ],
+            correctIndex: 1,
+            explanation: "Redlining choked off home loans in Black areas (HOLC 'red' grades and the FHA's 1934 underwriting rules), blocking home ownership.",
+            sourceLessonSlug: "gmw-redlining",
+          },
+          {
+            prompt: "Which two New Deal agencies reshaped American housing (with a color line built in)?",
+            options: [
+              "The HOLC (1933) and the FHA (1934)",
+              "The FEPC and the NAACP",
+              "The BSCP and the AFL",
+              "The HOLC and Motown",
+            ],
+            correctIndex: 0,
+            explanation: "The Home Owners' Loan Corporation (1933) and Federal Housing Administration (1934) expanded mortgages, but along racial lines.",
+            sourceLessonSlug: "gmw-redlining",
+          },
+          {
+            prompt: "Why should you be careful with the claim 'the HOLC maps caused housing segregation'?",
+            options: [
+              "Because the maps never existed",
+              "Because scholars debate how much the maps caused versus reflected existing discrimination — the FHA's lending rules may have mattered more",
+              "Because segregation was illegal",
+              "Because the maps were only used in the South",
+            ],
+            correctIndex: 1,
+            explanation: "Redlining was a whole system; recent research questions whether the famous maps caused segregation or codified practice already standard.",
+            sourceLessonSlug: "gmw-redlining",
+          },
+          {
+            prompt: "How did redlining 'block the wealth escalator'?",
+            options: [
+              "By raising factory wages",
+              "No mortgage meant no home, no home equity, and no main asset to pass to children",
+              "By funding Black colleges",
+              "By desegregating suburbs",
+            ],
+            correctIndex: 1,
+            explanation: "Home equity was most families' biggest inherited asset; denying mortgages cut Black families off from it for generations.",
+            sourceLessonSlug: "gmw-redlining",
+          },
+          {
+            prompt: "A racially restrictive covenant was:",
+            options: [
+              "A labor contract",
+              "A clause in a property deed promising the home would never be sold to or occupied by Black people",
+              "A church rule",
+              "A type of mortgage",
+            ],
+            correctIndex: 1,
+            explanation: "Covenants wrote segregation into the deed itself, enforced by neighbors and courts.",
+            sourceLessonSlug: "gmw-covenants-and-second-ghetto",
+          },
+          {
+            prompt: "What did Shelley v. Kraemer (1948) actually decide?",
+            options: [
+              "It banned all restrictive covenants outright",
+              "That courts could not ENFORCE racially restrictive covenants, because state enforcement would violate the Fourteenth Amendment",
+              "That covenants were required by law",
+              "That the FHA must integrate",
+            ],
+            correctIndex: 1,
+            explanation: "The covenants themselves were not banned; only their judicial enforcement was blocked, so segregation shifted to quieter tools.",
+            sourceLessonSlug: "gmw-covenants-and-second-ghetto",
+          },
+          {
+            prompt: "Arnold Hirsch's 'second ghetto' refers to:",
+            options: [
+              "A neighborhood in the South",
+              "Postwar segregation actively built by public policy (slum clearance, deliberate public-housing siting) and private action",
+              "A leftover from slavery fading away",
+              "A Harlem theater",
+            ],
+            correctIndex: 1,
+            explanation: "Hirsch (1983) showed midcentury Chicago segregation was newly constructed, not a fading remnant.",
+            sourceLessonSlug: "gmw-covenants-and-second-ghetto",
+          },
+          {
+            prompt: "What often happened when Black families moved into white blocks in Northern cities?",
+            options: [
+              "They were always welcomed",
+              "They were often met with mobs, vandalism, and firebombs — anti-Black housing violence was not only a Southern story",
+              "The city paid them to leave",
+              "Nothing at all",
+            ],
+            correctIndex: 1,
+            explanation: "Some of the century's ugliest housing violence occurred in the North; the 'promised land' defended its borders.",
+            sourceLessonSlug: "gmw-covenants-and-second-ghetto",
+          },
+          {
+            prompt: "Why does this course say 'white flight' was not simply a private choice?",
+            options: [
+              "Because no one moved",
+              "Because it was subsidized by the same FHA-backed mortgages that redlining denied to Black families",
+              "Because the suburbs were integrated",
+              "Because cities paid people to stay",
+            ],
+            correctIndex: 1,
+            explanation: "Public policy financed white suburbanization while trapping Black families in the city and draining its tax base.",
+            sourceLessonSlug: "gmw-white-flight-deindustrialization",
+          },
+          {
+            prompt: "According to Thomas Sugrue, when did deindustrialization begin in Detroit?",
+            options: [
+              "In the 1980s",
+              "In the 1950s, before the urban unrest of the 1960s",
+              "Never",
+              "During the Civil War",
+            ],
+            correctIndex: 1,
+            explanation: "Sugrue (1996) dated the flight of jobs and investment to the 1950s, with plants moving to suburbs and overseas and automating.",
+            sourceLessonSlug: "gmw-white-flight-deindustrialization",
+          },
+          {
+            prompt: "Why was deindustrialization especially cruel in its timing for Black migrants?",
+            options: [
+              "It happened before they arrived",
+              "The factory jobs that had pulled them north disappeared just as they arrived, often as the 'last hired'",
+              "It only affected white workers",
+              "It raised their wages",
+            ],
+            correctIndex: 1,
+            explanation: "The engine that pulled the Migration north went into reverse right when Black workers most depended on it.",
+            sourceLessonSlug: "gmw-white-flight-deindustrialization",
+          },
+          {
+            prompt: "Sugrue argued that white flight and deindustrialization were:",
+            options: [
+              "Reactions to 1960s urban unrest",
+              "Structural causes of urban decline that came first and helped create the later unrest",
+              "Caused by the boll weevil",
+              "Good for the cities",
+            ],
+            correctIndex: 1,
+            explanation: "He reversed the usual story: the structural changes preceded and helped cause the frustration behind 1960s unrest.",
+            sourceLessonSlug: "gmw-white-flight-deindustrialization",
+          },
+          {
+            prompt: "The FHA's underwriting rules had which double effect?",
+            options: [
+              "They funded both Black and white home buying equally",
+              "They starved Black neighborhoods of credit while financing white suburbanization",
+              "They ended segregation",
+              "They only applied to farms",
+            ],
+            correctIndex: 1,
+            explanation: "The same rules that denied Black families mortgages paid for white families to move out — two sides of one policy.",
+            sourceLessonSlug: "gmw-white-flight-deindustrialization",
+          },
+          {
+            prompt: "Which statement best holds the full truth of the Migration's costs?",
+            options: [
+              "The Migration was a total failure",
+              "The Migration was a triumph of courage AND, for many, a door opening onto a room whose far exits were being sealed — both are true",
+              "The Migration had no costs",
+              "The North was exactly like the South",
+            ],
+            correctIndex: 1,
+            explanation: "An honest course holds the achievement and the structural betrayal at once, without erasing either.",
+            sourceLessonSlug: "gmw-white-flight-deindustrialization",
+          },
+          {
+            prompt: "Racially restrictive covenants finally lost their broader legal footing with which 1968 law?",
+            options: ["The Fair Housing Act", "The poll tax", "The GI Bill", "The Wagner Act"],
+            correctIndex: 0,
+            explanation: "After Shelley (1948) blocked court enforcement, the Fair Housing Act of 1968 outlawed housing discrimination more broadly.",
+            sourceLessonSlug: "gmw-covenants-and-second-ghetto",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
