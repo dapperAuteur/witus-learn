@@ -445,6 +445,10 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`:::reveal\` click-to-reveal, and the 180 recall beats became self-graded recall cards.
   Authored explanations cite 14 CFR only where a real rule governs. Re-run \`pnpm seed:faa\`
   (\`--dry-run\` prints the breakdown without touching the DB).
+- ✅ **Quiz answer review:** the results page (\`/{user}/{course}/results\`) now replays your **latest
+  attempt** per quiz, each question showing the option you chose vs the correct one (and its
+  explanation), under a "Review your answers" toggle. Server-side only, so \`correctIndex\` is never
+  exposed to a live quiz. Answers what learners asked twice ("review my scores AND answers").
 - ✅ **Quizzes cap at 10 questions per attempt and rotate** (\`feat/quiz-rotation-cap\`). No attempt in
   ANY course now serves more than **10** questions: \`toSafeQuiz()\` in \`src/lib/quiz.ts\` is the single
   seam every quiz passes through on its way to a learner, so the cap covers authored quizzes, the
