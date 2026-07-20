@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { loadCourseView } from "@/lib/course-access";
 import { getUserCourseQuizAttempts } from "@/db/queries/quiz-attempts";
 import { getUserCourseRecallStats } from "@/db/queries/recall";
-import { questionKey, type QuizContent } from "@/lib/quiz";
+import { questionKey, type QuizContent, type QuizQuestion } from "@/lib/quiz";
 
 export const metadata: Metadata = { title: "Your results" };
 
@@ -156,12 +156,18 @@ export default async function CourseResultsPage({ params }: Params) {
               // its prompt + display order, so per-question history lines up even after a reorder.
               const promptByKey = new Map<string, string>();
               const orderByKey = new Map<string, number>();
+              // Also keep the whole question (options + correctIndex) so we can replay the learner's
+              // chosen option vs the right one — server-side only, so correctIndex never leaks to a
+              // live quiz; here the attempt is already over.
+              const questionByKey = new Map<string, QuizQuestion>();
               quiz?.questions?.forEach((q, i) => {
                 const k = questionKey(q.prompt);
                 promptByKey.set(k, q.prompt);
                 orderByKey.set(k, i);
+                questionByKey.set(k, q);
                 promptByKey.set(String(i), q.prompt); // fallback: old rows keyed by original index
                 orderByKey.set(String(i), i);
+                questionByKey.set(String(i), q);
               });
               // Per-question hit rate across this lesson's attempts, keyed by stable identity.
               const perQ = new Map<string, { correct: number; total: number; prompt: string }>();
@@ -222,6 +228,37 @@ export default async function CourseResultsPage({ params }: Params) {
                         })}
                       </ul>
                     </div>
+                  ) : null}
+
+                  {latest.responses?.length ? (
+                    <details className="mt-4">
+                      <summary className="cursor-pointer text-xs font-semibold uppercase tracking-wide text-neutral-500">
+                        Review your answers · latest attempt ({latest.createdAt.toLocaleDateString()})
+                      </summary>
+                      <ol className="mt-2 space-y-2 text-sm">
+                        {latest.responses.map((r, ri) => {
+                          // Match the response to the CURRENT question by stable key (falls back to
+                          // the original index for pre-key rows). Skip a question deleted since.
+                          const q =
+                            questionByKey.get(r.questionKey ?? "") ?? questionByKey.get(String(r.questionIndex));
+                          if (!q) return null;
+                          const chosen = q.options[r.optionIndex] ?? "—";
+                          const answer = q.options[q.correctIndex] ?? "—";
+                          return (
+                            <li key={ri} className="rounded-md border border-neutral-200 p-2 dark:border-neutral-800">
+                              <p className="font-medium text-neutral-800 dark:text-neutral-200">{q.prompt}</p>
+                              <p className={r.correct ? "mt-1 text-green-700 dark:text-green-400" : "mt-1 text-red-600"}>
+                                {r.correct ? "✓" : "✗"} You chose: {chosen}
+                              </p>
+                              {!r.correct ? (
+                                <p className="mt-0.5 text-neutral-700 dark:text-neutral-300">Correct answer: {answer}</p>
+                              ) : null}
+                              {q.explanation ? <p className="mt-1 text-xs text-neutral-500">{q.explanation}</p> : null}
+                            </li>
+                          );
+                        })}
+                      </ol>
+                    </details>
                   ) : null}
 
                   {lesson?.slug ? (
