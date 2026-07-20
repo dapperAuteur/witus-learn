@@ -583,11 +583,18 @@ function buildCourse(): { course: AuthoredCourse; stats: BuildStats } {
       ? []
       : AUTHORED_FAA_QUIZZES.filter((q) => q.moduleOrder === m.moduleOrder).map((q, i) => ({
           moduleOrder: q.moduleOrder,
-          lessonOrder: 1000 + i,
+          lessonOrder: 1000 + i, // stable ordering among same-module authored quizzes
           title: q.title,
           origin: "authored" as const,
+          // A SECTION quiz opts in with `afterLessonNumber`; sequenceModuleItems then interleaves
+          // it after that lesson instead of stacking it at the module end.
+          ...(q.afterLessonNumber != null ? { afterLessonNumber: q.afterLessonNumber } : {}),
           quiz: {
             passingScore: q.passingScore ?? 80,
+            // Rotating-pool controls flow straight into the QuizContent so `toSafeQuiz` serves a
+            // fresh random subset (clamped to MAX_QUESTIONS_PER_ATTEMPT) and optionally shuffles.
+            ...(q.questionsPerAttempt != null ? { questionsPerAttempt: q.questionsPerAttempt } : {}),
+            ...(q.shuffleOptions != null ? { shuffleOptions: q.shuffleOptions } : {}),
             questions: q.questions.map((qq) => ({
               prompt: qq.prompt,
               options: qq.options,

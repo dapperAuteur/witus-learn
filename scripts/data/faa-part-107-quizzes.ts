@@ -32,6 +32,17 @@ export interface AuthoredFaaQuiz {
   title: string;
   passingScore?: number;
   questions: AuthoredFaaQuestion[];
+  /** Serve a random subset of this many questions per attempt, turning a large bank into a
+   *  rotating pool so a learner sees different questions on retries. Omitted / >= the pool size
+   *  serves all; always clamped to MAX_QUESTIONS_PER_ATTEMPT (10) at the serving seam. */
+  questionsPerAttempt?: number;
+  /** Shuffle each question's option order per attempt (display only; scoring is by identity, so
+   *  every ported explanation that names an answer by its TEXT stays correct). */
+  shuffleOptions?: boolean;
+  /** Lesson `n` WITHIN this module to place the quiz right after (a SECTION quiz that lands
+   *  mid-module). Passed through to the ModuleQuiz so `sequenceModuleItems` interleaves it.
+   *  Omitted => the quiz stays at the module end (the legacy layout). */
+  afterLessonNumber?: number;
 }
 
 export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
@@ -206,6 +217,686 @@ export const AUTHORED_FAA_QUIZZES: AuthoredFaaQuiz[] = [
         explanation:
           "Treat 80 percent as the floor on every quiz. Seventy is the bare pass on the real test under perfect conditions, and test day is not perfect conditions. Each module also builds on the one before it, so a weak topic carried forward drags down everything after it.",
         sourceLessonNumber: 2,
+      },
+    ],
+  },
+
+  // ---------------------------------------------------------------------------
+  // Module 2 (Regulations) — THREE rotating SECTION pools, placed mid-module after the
+  // section each tests (see plans/user-tasks/171). The CSV's three module-2 rows were removed
+  // so this authored path is used. Each pool is larger than its per-attempt serve count, so a
+  // retake draws a fresh subset. Ported questions (from the old CSV quizzes, already vetted) are
+  // VERBATIM — only `sourceLessonNumber` was added; NEW questions are grounded in one lesson's
+  // stated facts, and every explanation cites the exact 14 CFR section that lesson's Sources name.
+  // ---------------------------------------------------------------------------
+  {
+    moduleOrder: 2,
+    title: "Regulations: Foundations",
+    passingScore: 80,
+    questionsPerAttempt: 8,
+    shuffleOptions: true,
+    afterLessonNumber: 3, // after "Honesty, Inspections & Accident Reports" — covers lessons 1-3
+    questions: [
+      // ---- Ported VERBATIM from CSV "Regulation Quiz" (4) ----
+      {
+        prompt: "Who should you make your documents available to when asked?",
+        options: [
+          "The General Public and any Government Employees.",
+          "Any Government employee.",
+          "The Administrator, authorized representatives from the NTSB or TSA, or any Federal, State, or Local Law enforcement officers.",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR 107.7, you must make your documents available to the FAA Administrator, an authorized NTSB or TSA representative, and any Federal, State, or Local law enforcement officer. The general public is wrong because regular citizens have no right to inspect your records. Any government employee is wrong because the rule names specific officials, not every worker on a government payroll.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt:
+          "A company plans to operate a 33 lb. sUAS to capture aerial imagery over real estate for use in sales listings. Is this sUAS operation subject to 14 CFR Part 107?",
+        options: [
+          "No, this sUAS operation requires a Section 333 exemption.",
+          "No, this sUAS operation is not subject to Part 107.",
+          "Yes, this sUAS operation is subject to Part 107.",
+        ],
+        correctIndex: 2,
+        explanation:
+          "This is a Part 107 operation because it is flown for a business purpose and the 33 lb aircraft is under the 55 lb limit for a small UAS. A Section 333 exemption is wrong because that path is for aircraft that fall outside Part 107, and this one fits inside it. Saying it is not subject to Part 107 is wrong because the flight is commercial, not recreational, so the recreational exception does not apply.",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "According to 14 CFR Part 107, an sUAS is an unmanned aircraft system weighing",
+        options: ["Less than 55 lbs.", "55 lbs. or less.", "55 kg or less."],
+        correctIndex: 0,
+        explanation:
+          'Per 14 CFR 107.3, a small unmanned aircraft weighs less than 55 lbs on takeoff, including everything on board or attached. "55 lbs or less" is wrong because an aircraft weighing exactly 55 lbs is not included; the limit is below 55, not at 55. "55 kg or less" is wrong because the rule is stated in pounds, and 55 kg is roughly 121 lbs, far above the actual limit.',
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "A person whose sole task is watching the sUAS to report hazards to the rest of the crew is called:",
+        options: ["Visual observer.", "Remote PIC.", "Person manipulating the controls."],
+        correctIndex: 0,
+        explanation:
+          "Per 14 CFR 107.3, a visual observer is a crewmember whose sole job is watching the aircraft to help see and avoid traffic and hazards and report them to the crew. The Remote PIC is wrong because that person is in command of the whole operation, not limited to watching. The person manipulating the controls is wrong because that crewmember is actively flying the aircraft, not just observing.",
+        sourceLessonNumber: 2,
+      },
+      // ---- Ported VERBATIM from CSV "Regulation Quiz 1" (5) ----
+      {
+        prompt: "Which of the following types of operations are excluded from the requirements in Part 107?",
+        options: [
+          "Quadcopter capturing aerial imagery for crop monitoring.",
+          "UAS used for motion picture filming.",
+          "Model aircraft for hobby use.",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Model aircraft flown purely as a hobby are excluded from Part 107 because they fall under the recreational exception in 49 USC 44809. A quadcopter capturing imagery for crop monitoring is wrong because that is commercial work covered by Part 107. A UAS used for motion picture filming is wrong because filming for production is also a non-recreational use subject to Part 107.",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "Unmanned aircraft means an aircraft operated",
+        options: [
+          "During search and rescue operations other than public.",
+          "Without the possibility of direct human intervention from within or on the aircraft.",
+          "For hobby and recreational use when not certificated.",
+        ],
+        correctIndex: 1,
+        explanation:
+          'Per 14 CFR 107.3, an unmanned aircraft is one operated without the possibility of direct human intervention from within or on the aircraft. "During search and rescue operations other than public" is wrong because that describes a type of mission, not what makes an aircraft unmanned. "For hobby and recreational use when not certificated" is wrong because the purpose of the flight does not define the aircraft; an aircraft is unmanned based on no one being aboard to control it.',
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "Within how many days must an sUAS accident be reported to the FAA?",
+        options: ["10 days.", "90 days.", "30 days."],
+        correctIndex: 0,
+        explanation:
+          'Per 14 CFR 107.9, an sUAS accident must be reported to the FAA within 10 calendar days. "90 days" is wrong because that is far longer than the rule allows. "30 days" is wrong because it also exceeds the required window; the deadline is 10 days, not 30.',
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt:
+          "A pilot has purchased a new quadcopter that weighs 0.43 lbs (195 grams) to complete roof inspections. Is this operation subject to 14 CFR Part 107?",
+        options: [
+          "No, 14 CFR Part 107 does not apply to aircraft weighting less than 0.55 lbs.",
+          "Yes, there is no lower weight limit for operating under 14 CFR Part 107.",
+          "No, roof inspections don't require operation under 14 CFR Part 107.",
+        ],
+        correctIndex: 1,
+        explanation:
+          'Yes, Part 107 has no lower weight limit, so a 0.43 lb drone flown for commercial roof inspections is still subject to Part 107. "Part 107 does not apply below 0.55 lbs" is wrong because 0.55 lbs is only the threshold for FAA registration, not an exemption from the operating rules. "Roof inspections don\'t require Part 107" is wrong because the inspection is commercial work, which Part 107 covers regardless of the task.',
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "Falsifying records that are required to show compliance with any requirement of Part 107 can lead to",
+        options: [
+          "A required checkride with the FAA",
+          "Jail time of up to 1 year",
+          "Denial of application for Remote Pilot, waivers, or suspension/revocation, or a civil penalty.",
+        ],
+        correctIndex: 2,
+        explanation:
+          'Per 14 CFR 107.5, falsifying, reproducing, or altering records required to show compliance can lead to denial of an application for a Remote Pilot certificate or waiver, suspension or revocation of a certificate, or a civil penalty. "A required checkride with the FAA" is wrong because Part 107 has no checkride and that is not a penalty for falsification. "Jail time of up to 1 year" is wrong because 107.5 lists administrative and civil consequences, not that specific criminal sentence.',
+        sourceLessonNumber: 3,
+      },
+      // ---- NEW, grounded in lessons 1-3 ----
+      {
+        prompt:
+          "What actually decides whether a drone flight is a commercial Part 107 flight or a recreational one?",
+        options: [
+          "Whether money changed hands on the flight",
+          "The takeoff weight of the drone",
+          "The intent of the flight, meaning why you went up",
+          "Whether the pilot already holds a remote pilot certificate",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR 107.1 and the recreational exception in 49 U.S.C. 44809, the test is the intent of the flight, not whether money changed hands. Fly for any purpose other than fun and it is a Part 107 flight, paid or not; a very small drone flown for work is still fully covered.",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "A drone weighs 55 pounds or more at takeoff. Which rules govern it?",
+        options: [
+          "Part 107, the same as any small drone",
+          "Part 91, the general operating rules",
+          "Part 135, the air carrier rules",
+          "No FAA rules apply once a drone is over 55 pounds",
+        ],
+        correctIndex: 1,
+        explanation:
+          "A small unmanned aircraft weighs less than 55 pounds (14 CFR 107.3). At 55 pounds or more you fall out of Part 107 and fly under 14 CFR Part 91, the general operating rules used for crewed aircraft.",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "A company flies packages to customers' doors by drone. Which part of the regulations covers that delivery operation?",
+        options: ["14 CFR Part 107", "14 CFR Part 61", "14 CFR Part 135", "14 CFR Part 91"],
+        correctIndex: 2,
+        explanation:
+          "Package delivery is an air carrier operation and falls under 14 CFR Part 135, not Part 107. Part 107 does not cover air carrier (delivery) operations.",
+        sourceLessonNumber: 1,
+      },
+      {
+        prompt: "Your coworker is holding the controller and flying while you stand beside them, in charge and giving directions. Can you be the remote pilot in command even though you are not touching the sticks?",
+        options: [
+          "No, only the person physically on the controls can be the remote pilot in command",
+          "Yes, the remote pilot in command may supervise the person manipulating the controls and still be in command",
+          "Only if the coworker also holds a certificate",
+          "Only during training flights",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Per 14 CFR 107.3 (and 107.1), the remote pilot in command is in charge of the operation and either flies the aircraft or supervises the person manipulating the controls. The RPIC and the person flying can be two different people; the RPIC still carries responsibility.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt: "What does the term unmanned aircraft system (sUAS) refer to?",
+        options: [
+          "Just the flying aircraft by itself",
+          "The remote pilot together with the aircraft",
+          "The aircraft plus the controller and the equipment that makes it fly",
+          "The aircraft together with its visual observer",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR 107.3, the unmanned aircraft system is the whole package: the aircraft plus the controller and the supporting equipment that makes it fly. The aircraft alone is just the flying part.",
+        sourceLessonNumber: 2,
+      },
+      {
+        prompt:
+          "Your drone clips a stranger's parked car and causes about $700 in damage. No one is hurt. Must you report it, and by when?",
+        options: [
+          "No, damage to property never has to be reported",
+          "Yes, report it to the FAA within 10 calendar days",
+          "Yes, but only within 10 business days",
+          "No, only injuries have to be reported",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Per 14 CFR 107.9, you report an accident within 10 calendar days when property of others is damaged with a repair cost over $500. It is calendar days, not business days, and $700 to someone else's car clears the $500 line.",
+        sourceLessonNumber: 3,
+      },
+      {
+        prompt: "Who is allowed to actually test or inspect your aircraft, your control system, and your crew?",
+        options: [
+          "Any federal, state, or local law enforcement officer",
+          "The NTSB or the TSA",
+          "Only the FAA (the Administrator)",
+          "Any government employee who asks",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR 107.7, only the FAA can test or inspect the aircraft, the system, the remote pilot in command, the person manipulating the controls, and the visual observer. Other officials may request your documents, but the inspect-and-test power belongs to the FAA alone.",
+        sourceLessonNumber: 3,
+      },
+    ],
+  },
+
+  {
+    moduleOrder: 2,
+    title: "Regulations: Certificate, Command & Core Rules",
+    passingScore: 80,
+    questionsPerAttempt: 9,
+    shuffleOptions: true,
+    afterLessonNumber: 8, // after "Right of Way, Careless Operation & No Hazmat" — covers lessons 4-8
+    questions: [
+      // ---- Lesson 4: Getting and Keeping Your Certificate (107.12 / 107.61 / 107.65) ----
+      {
+        prompt: "Once you hold a remote pilot certificate, how often must you complete recurrent training to stay current?",
+        options: [
+          "Every 12 calendar months",
+          "Every 36 calendar months",
+          "Every 24 calendar months",
+          "Only when the FAA changes the rules",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR 107.65, recurrent (aeronautical knowledge) training is required every 24 calendar months to stay current as a pilot in command. Watch the trap answers: 24 without 'calendar', or 36 months, which is registration, not training.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt: "What is the minimum age to apply for a remote pilot certificate with a small UAS rating?",
+        options: ["16 years old", "17 years old", "18 years old", "14 years old"],
+        correctIndex: 0,
+        explanation:
+          "Per 14 CFR 107.61, you must be at least 16 years old to apply for a remote pilot certificate. Do not pick 17 or 18.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt:
+          "A coworker without a remote pilot certificate wants to do the actual flying on a paid job. You hold the certificate. Can the job go ahead legally?",
+        options: [
+          "No, only the certificate holder may touch the controls",
+          "Yes, as long as you directly supervise and can take over the controls immediately",
+          "Yes, but only if the coworker is at least 18",
+          "No, everyone who flies must hold their own certificate",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Per 14 CFR 107.12, you may operate under Part 107 if you hold the certificate OR you fly under the direct supervision of someone who does and who can take over the controls immediately. So the flight is legal with a certificated pilot in command even when someone else touches the sticks.",
+        sourceLessonNumber: 4,
+      },
+      {
+        prompt:
+          "Besides being at least 16 and passing the FAA knowledge test, which is required to be eligible to apply for a remote pilot certificate?",
+        options: [
+          "Hold a valid driver's license",
+          "Own a registered drone",
+          "Complete 20 hours of documented flight training",
+          "Be able to read, speak, write, and understand English, and be in a safe physical and mental condition",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Per 14 CFR 107.61, eligibility requires being at least 16, able to read, speak, write, and understand English, in a physical and mental condition to fly safely, and passing the knowledge test. A driver's license, drone ownership, and flight-hour minimums are not requirements.",
+        sourceLessonNumber: 4,
+      },
+      // ---- Lesson 5: The Remote Pilot in Command (107.19 / 107.21) ----
+      {
+        prompt: "Who is directly responsible for and the final authority over a small unmanned aircraft operation?",
+        options: [
+          "The owner of the drone",
+          "The client who hired the flight",
+          "The remote pilot in command",
+          "The instructor on site",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR 107.19, the remote pilot in command is directly responsible for and the final authority over the operation. No owner, client, or instructor can override that authority.",
+        sourceLessonNumber: 5,
+      },
+      {
+        prompt: "A sudden in-flight emergency requires immediate action. What may the remote pilot in command do?",
+        options: [
+          "Deviate from any Part 107 rule, but only to the extent needed to meet the emergency",
+          "Nothing; every Part 107 rule must be followed at all times",
+          "Deviate from any rule for the rest of the day",
+          "Only deviate from the 400-foot altitude limit",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Per 14 CFR 107.21, in an in-flight emergency requiring immediate action the RPIC may deviate from any rule in Part 107, but only to the extent needed to meet that emergency.",
+        sourceLessonNumber: 5,
+      },
+      {
+        prompt: "After you deviate from a rule to handle an in-flight emergency, when must you send the FAA a written report?",
+        options: [
+          "After every emergency, within 10 days",
+          "Within 24 hours of landing",
+          "Never; no report is ever required",
+          "Only upon request from the Administrator (the FAA)",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Per 14 CFR 107.21, after deviating you must send a written report explaining the deviation only upon request from the Administrator. No request, no report required — the trap is thinking you must file after every emergency.",
+        sourceLessonNumber: 5,
+      },
+      {
+        prompt: "When must the remote pilot in command be designated for a flight?",
+        options: [
+          "Only after the flight, in the logbook",
+          "Before or during the flight",
+          "Only when a visual observer is used",
+          "Within 24 hours of the flight",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Per 14 CFR 107.19, the RPIC must be designated before or during the flight (better before), and the visual observers and crew work under the RPIC's direction.",
+        sourceLessonNumber: 5,
+      },
+      // ---- Lesson 6: The Core Operating Rules (107.23 / 107.25 / 107.29 / 107.31) ----
+      {
+        prompt: "May you operate a small drone from a moving vehicle?",
+        options: [
+          "Never, under any circumstances",
+          "Yes, over a sparsely populated area and not carrying property for hire",
+          "Yes, anywhere as long as you keep the drone in sight",
+          "Only from a boat, never a car",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Per 14 CFR 107.25, flying from a moving vehicle is banned EXCEPT over a sparsely populated area and not while carrying property for hire. The trap answer says you can never fly from a moving vehicle.",
+        sourceLessonNumber: 6,
+      },
+      {
+        prompt: "For night and civil-twilight flight, your drone's anti-collision light must be visible for how far?",
+        options: ["1 statute mile", "3 nautical miles", "5 statute miles", "3 statute miles"],
+        correctIndex: 3,
+        explanation:
+          "Per 14 CFR 107.29, night and civil-twilight operations require an anti-collision light visible for 3 statute miles, flashing fast enough to help other aircraft avoid a collision.",
+        sourceLessonNumber: 6,
+      },
+      {
+        prompt: "Under the visual line of sight rule, which aid is allowed for keeping the drone in sight?",
+        options: [
+          "First-person-view (FPV) goggles",
+          "Binoculars",
+          "Corrective lenses (glasses or contacts)",
+          "A telescope",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR 107.31, the remote pilot (and any visual observer) must see the drone with unaided vision; only corrective lenses are allowed. FPV goggles, binoculars, and telescopes do NOT satisfy visual line of sight.",
+        sourceLessonNumber: 6,
+      },
+      {
+        prompt:
+          "A pilot buzzes a crowd at a park to get a shot. No specific rule is named 'buzzing a crowd.' Which rule can the FAA still cite?",
+        options: [
+          "The careless or reckless operation rule (107.23)",
+          "The visual line of sight rule (107.31)",
+          "The moving-vehicle rule (107.25)",
+          "None; with no specific rule named, there is no violation",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Per 14 CFR 107.23, careless or reckless operation that endangers people or property is the catch-all rule. Even when no specific rule names the act, the FAA can cite 107.23 (which also bans dropping objects that endanger people or property).",
+        sourceLessonNumber: 6,
+      },
+      // ---- Lesson 7: Crew, Observers & Flying More Than One (107.33 / 107.35) ----
+      {
+        prompt: "Is a visual observer required under Part 107?",
+        options: [
+          "Yes, every Part 107 flight requires a visual observer",
+          "No, a visual observer is optional, but if you use one the conditions of 107.33 apply",
+          "Yes, but only at night",
+          "Only when flying over people",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Per 14 CFR 107.33, a visual observer is optional; you may fly Part 107 alone. But if you use one, the three conditions of 107.33 (effective communication, unaided vision, and coordinated scanning) apply. The trap answer is 'yes, always.'",
+        sourceLessonNumber: 7,
+      },
+      {
+        prompt: "How many small unmanned aircraft may one person operate at the same time?",
+        options: ["As many as the pilot can see", "Up to three", "One", "Two, if a visual observer helps"],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR 107.35, one person may not operate, act as remote pilot in command, or act as visual observer for more than one small unmanned aircraft at a time. The answer is one, and that limit covers the observer too.",
+        sourceLessonNumber: 7,
+      },
+      {
+        prompt: "When a visual observer is used, what does 14 CFR 107.33 require of the crew?",
+        options: [
+          "Effective communication among the RPIC, the person flying, and the observer at all times",
+          "The observer must hold a remote pilot certificate",
+          "The observer must stand at least 100 feet from the pilot",
+          "The observer may use binoculars to watch the aircraft",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Per 14 CFR 107.33, when a visual observer is used the remote pilot in command, the person manipulating the controls, and the observer must maintain effective communication at all times.",
+        sourceLessonNumber: 7,
+      },
+      {
+        prompt:
+          "Mid-flight, your visual observer offers to also keep an eye on another pilot's drone nearby. Is that allowed?",
+        options: [
+          "Yes, as long as both drones are close together",
+          "Yes, if the observer uses binoculars",
+          "Only if the observer is certificated",
+          "No, a visual observer may serve only one aircraft and one remote pilot in command at a time",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Per 14 CFR 107.35, a visual observer can serve only one aircraft and one remote pilot in command at a time. Splitting attention across two flights defeats the whole point of the job.",
+        sourceLessonNumber: 7,
+      },
+      // ---- Lesson 8: Right of Way, Careless Operation & No Hazmat (107.37 / 107.36 / 107.23) ----
+      {
+        prompt: "A manned aircraft is approaching your drone's position. Who must yield?",
+        options: [
+          "The manned aircraft, because your drone is more maneuverable",
+          "Your drone, always",
+          "Whoever saw the other one first",
+          "The lower of the two aircraft",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Per 14 CFR 107.37, your drone gives way to all other aircraft, every time. You have no right-of-way priority — the trap answers suggest you can hold position if you saw them first or that the lower aircraft yields.",
+        sourceLessonNumber: 8,
+      },
+      {
+        prompt: "May a small unmanned aircraft system carry a small amount of hazardous material?",
+        options: [
+          "Yes, a small amount is allowed",
+          "Yes, if it is properly labeled",
+          "No, a small unmanned aircraft system may not carry hazardous material at all",
+          "Only over a sparsely populated area",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR 107.36, a small unmanned aircraft system may not carry hazardous material. There is no 'small amount' allowance — that is the trap. The answer is no carriage of hazardous material at all.",
+        sourceLessonNumber: 8,
+      },
+      {
+        prompt: "You drop an object from your drone in a way that could endanger people below. Which rule does that violate?",
+        options: [
+          "The careless or reckless operation rule (107.23)",
+          "The hazardous material rule (107.36)",
+          "The right-of-way rule (107.37)",
+          "No rule addresses dropping objects from a drone",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Per 14 CFR 107.23, you may not drop an object from a drone in a way that creates a danger to people or property, and you may not operate carelessly or recklessly. It is the catch-all rule.",
+        sourceLessonNumber: 8,
+      },
+      {
+        prompt: "Under the right-of-way rule, when may your drone pass over, under, or ahead of another aircraft?",
+        options: [
+          "Whenever you have visual line of sight on it",
+          "Never, under any circumstances",
+          "Only if your drone is below 400 feet",
+          "Only when you are well clear and not forcing the other aircraft to change course",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Per 14 CFR 107.37, you may not pass over, under, or ahead of another aircraft unless you are well clear of it — meaning you are not forcing that aircraft to change where it was going.",
+        sourceLessonNumber: 8,
+      },
+    ],
+  },
+
+  {
+    moduleOrder: 2,
+    title: "Regulations: Operations Over People",
+    passingScore: 80,
+    questionsPerAttempt: 8,
+    shuffleOptions: true,
+    afterLessonNumber: 11, // after "Over Moving Vehicles, Assemblies & Waivers" — covers lessons 9-11
+    questions: [
+      // ---- Ported VERBATIM from CSV "Regulation Quiz 4" (11) ----
+      {
+        prompt:
+          "A remote pilot owns a Category 1 sUAS, and is current. They want to take videos of their friend riding her bike, hovering over her while she rides. The operation is on a busy sidewalk in a city park. Is this legal under Part 107?",
+        options: [
+          "Yes, as long as the park is not busy enough that it would be considered an open-air assembly of human beings.",
+          "No, the other people in the park are not on notice.",
+          "Yes, category 1 can fly over people.",
+        ],
+        correctIndex: 1,
+        explanation:
+          '"No, the other people in the park are not on notice" is right because a bicycle counts as a moving vehicle, and flying over moving vehicles requires either a closed or restricted access site where everyone in the vehicles is on notice, or no sustained flight, and hovering over the rider on a public sidewalk is sustained flight with no notice. The option allowing it if the park is not an open air assembly is wrong because the problem is sustained flight over a moving vehicle, not crowd size. The option saying Category 1 can simply fly over people is wrong because Category 1 still does not allow sustained flight over moving vehicles outside a closed site with notice.',
+        sourceLessonNumber: 11,
+      },
+      {
+        prompt: "A Declaration of Compliance will be issued when...",
+        options: [
+          "After a person or entity submits the MOC paperwork for review.",
+          "The FAA issues an airworthiness certificate for that aircraft.",
+          "The FAA receives the necessary paperwork confirming a drone complies with the associated regulations.",
+        ],
+        correctIndex: 2,
+        explanation:
+          "The correct answer is right because a Declaration of Compliance is accepted once the FAA receives the paperwork showing the drone meets the associated rules, either Remote ID or operations over people. The MOC option is wrong because a Means of Compliance is a separate document that defines a test method, not the declaration itself. The airworthiness certificate option is wrong because that is the path for Category 4 aircraft under Part 21, not what a Declaration of Compliance is.",
+        sourceLessonNumber: 10,
+      },
+      {
+        prompt: "To conduct Category 2 operations, the remote Pilot in Command must use a small Unmanned aircraft that",
+        options: [
+          "must not cause injury to a human being equivalent to 11 ft-lb of kinetic energy.",
+          "must have an approved type certificate issued under Part 21.",
+          "must not cause injury to a human being equivalent to 25 ft-lb of kinetic energy.",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The correct answer is right because a Category 2 small unmanned aircraft must not cause injury to a person greater than the equivalent of 11 foot-pounds of kinetic energy on impact. The type certificate option is wrong because a Part 21 certificate is a Category 4 requirement, not a Category 2 one. The 25 foot-pounds option is wrong because that higher energy limit applies to Category 3, not Category 2.",
+        sourceLessonNumber: 9,
+      },
+      {
+        prompt:
+          "A remote pilot purchased a new sUAS that is labeled as Category 3. After checking the FAA website, they verified it is indeed approved to fly over people. For this mission, the pilot plans to fly over a private race track. What must they do to ensure that the operation is compliant with Part 107?",
+        options: [
+          "Ensure the aircraft is equipped with a parachute.",
+          "Ensure that the area is restricted-access and that everyone inside moving vehicles inside the area are on notice.",
+          "Ensure that everyone inside moving vehicles inside the area are on notice.",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The correct answer is right because flying over moving vehicles with a Category 1 to 3 drone requires staying within a closed or restricted-access site and having everyone in the moving vehicles on notice, which a private race track can satisfy. The parachute option is wrong because Part 107 has no parachute requirement for flight over people or vehicles. The on-notice-only option is wrong because notice alone is not enough; the site must also be closed or restricted-access when you maintain that kind of flight over moving vehicles.",
+        sourceLessonNumber: 11,
+      },
+      {
+        prompt: "To conduct Category 4 operations, the RPIC must use a small UA that:",
+        options: [
+          "does not contain any exposed rotating parts that would lacerate human skins upon impact.",
+          "has an airworthiness certificate issued under Part 21.",
+          "is labeled as Category 4.",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The correct answer is right because Category 4 operations require a small unmanned aircraft that holds an airworthiness certificate issued under Part 21. The exposed rotating parts option is wrong because the no-laceration rule applies to Categories 1 through 3, not Category 4. The Category 4 label option is wrong because labeling is required for Categories 2 and 3, while Category 4 is defined by its airworthiness certificate, not a label.",
+        sourceLessonNumber: 9,
+      },
+      {
+        prompt: "Can a Category 3 aircraft be flown over an open-air assembly of humans while transiting from point to point?",
+        options: [
+          "No, it is not permitted.",
+          "Yes, as long as it meets Remote ID requirements.",
+          "Yes. It is permitted without limitations.",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The correct answer is right because a Category 3 drone may never operate over an open-air assembly of people, and that prohibition includes transiting over the assembly. The Remote ID option is wrong because meeting Remote ID does not lift the Category 3 ban over open-air assemblies. The without-limitations option is wrong because Category 3 operations over people carry strict limits and the open-air assembly is flatly off limits.",
+        sourceLessonNumber: 11,
+      },
+      {
+        prompt: "Can a sUAS weighing .35 lbs be flown over an open-air assembly of human beings if it's equipped with prop guards.",
+        options: [
+          "Yes, as long as the aircraft is equipped with an anti-collision light visible from 3SM.",
+          "No, only transiting flights are allowed.",
+          "Yes, as long as the sUAS is equipped with Remote ID.",
+        ],
+        correctIndex: 2,
+        explanation:
+          "The correct answer is right because a 0.35 pound drone is a Category 1 aircraft, and a Category 1 sUAS may fly over an open-air assembly only if it meets Remote ID requirements. The anti-collision light option is wrong because a light visible for 3 statute miles is a night-operation rule, not the gate for flying over an assembly. The transiting-only option is wrong because Category 1 aircraft that meet the requirements can fly over an assembly, not just transit it; that transit-only limit applies to Category 3.",
+        sourceLessonNumber: 9,
+      },
+      {
+        prompt: "Who must retain maintenance records of category 4 aircraft?",
+        options: ["The FAA.", "The Remote Pilot in Command (RPIC).", "The owner of the aircraft."],
+        correctIndex: 2,
+        explanation:
+          "The correct answer is right because the owner of a Category 4 aircraft must keep and maintain the records of maintenance, preventive maintenance, alterations, and inspection status. The FAA option is wrong because the agency does not hold these records for the operator; it can request them but the duty to retain falls on the owner. The Remote Pilot in Command option is wrong because the recordkeeping duty is tied to ownership of the aircraft, not to whoever happens to fly it.",
+        sourceLessonNumber: 9,
+      },
+      {
+        prompt: "Which best describes a declaration of compliance?",
+        options: [
+          "A document issued by the FAA stating an aircraft is airworthy.",
+          "A document submitted to the FAA stating that a drone complies with either Remote ID requirements or OOP Requirements.",
+          "A document approved by the FAA that details testing methods for remote ID or OOP.",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The correct answer is right because a Declaration of Compliance is a document submitted to the FAA stating that a drone meets either Remote ID requirements or operations over people requirements. The airworthiness option is wrong because that describes an FAA-issued airworthiness statement, while a Declaration of Compliance is submitted to the FAA by the responsible party. The testing methods option is wrong because describing test methods is the role of a Means of Compliance, a different document.",
+        sourceLessonNumber: 10,
+      },
+      {
+        prompt:
+          "While flying at the beach, a remote pilot notices a cruise ship underway and flies over the ship to get a top-down view. Is this legal under Part 107, assuming the remote pilot is certificated and current?",
+        options: [
+          "Yes, the deck is considered a closed site.",
+          "Yes, as long as the aircraft is equipped with remote ID.",
+          "No, the people on the deck are not on notice.",
+        ],
+        correctIndex: 2,
+        explanation:
+          "The correct answer is right because a cruise ship is a moving vehicle, so flying over it requires a closed or restricted-access site with the occupants on notice, and passengers on an open deck are not on notice. The closed-site option is wrong because a public cruise ship deck is not a closed or restricted-access site. The Remote ID option is wrong because equipping Remote ID does not satisfy the separate rules for sustained flight over moving vehicles.",
+        sourceLessonNumber: 11,
+      },
+      {
+        prompt: "Other than the UAS weighing 0.55 lbs or less on takeoff, what are the other requirements to conduct Category 1 operations?",
+        options: [
+          "It must not have safety defects and must be labeled as Category 1.",
+          "It must not contain exposed rotating parts that can lacerate and must not cause injury equivalent to 11 ft-lb of kinetic energy.",
+          "It must not contain exposed rotating parts that can lacerate.",
+        ],
+        correctIndex: 2,
+        explanation:
+          "The correct answer is right because the only other Category 1 requirement, beyond weighing 0.55 pounds or less on takeoff, is that the aircraft must not contain exposed rotating parts that would lacerate human skin on impact. The safety-defect and label option is wrong because no-defect and labeling rules apply to Categories 2 and 3, not Category 1. The 11 foot-pounds option is wrong because the kinetic energy limit is a Category 2 standard, not a Category 1 requirement.",
+        sourceLessonNumber: 9,
+      },
+      // ---- NEW, grounded in lessons 9-11 ----
+      {
+        prompt: "What is the maximum takeoff weight for a Category 1 small unmanned aircraft?",
+        options: ["0.55 pounds (250 grams) or less", "11 pounds or less", "25 pounds or less", "55 pounds or less"],
+        correctIndex: 0,
+        explanation:
+          "Per 14 CFR 107.110, a Category 1 small unmanned aircraft weighs 0.55 pounds (250 grams) or less at takeoff and throughout the flight, and has no exposed rotating parts that could lacerate skin.",
+        sourceLessonNumber: 9,
+      },
+      {
+        prompt: "What is the maximum kinetic energy a Category 3 small unmanned aircraft may transfer to a person on impact?",
+        options: ["11 foot-pounds", "25 foot-pounds", "55 foot-pounds", "There is no energy limit for Category 3"],
+        correctIndex: 1,
+        explanation:
+          "Per 14 CFR 107.125, a Category 3 aircraft must not transfer more than 25 foot-pounds of kinetic energy on impact. The 11 foot-pound cap is the Category 2 limit — that is the trap.",
+        sourceLessonNumber: 9,
+      },
+      {
+        prompt: "Which drone categories require a listed, FAA-accepted Declaration of Compliance to fly over people?",
+        options: ["All four categories", "Category 1 only", "Category 2 and Category 3", "Category 4 only"],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR 107.160, only Category 2 and Category 3 require a listed, FAA-accepted Declaration of Compliance. Category 1 is self-certified, and Category 4 uses an airworthiness certificate under Part 21. The trap answer is 'all four.'",
+        sourceLessonNumber: 10,
+      },
+      {
+        prompt: "What is the difference between a Means of Compliance (MOC) and a Declaration of Compliance (DOC)?",
+        options: [
+          "The MOC is the manufacturer's statement of compliance; the DOC is the test method",
+          "The MOC is the FAA-accepted test method; the DOC is the manufacturer's statement that the drone meets it",
+          "They are two names for the same document",
+          "The MOC is issued by the FAA; the DOC is issued by the remote pilot",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Per 14 CFR 107.155 and 107.160, the Means of Compliance is the FAA-accepted test method (the standard you test against), and the Declaration of Compliance is the manufacturer's statement that the drone was tested by that method and passed. One is the rulebook, the other is the report card.",
+        sourceLessonNumber: 10,
+      },
+      {
+        prompt: "Under Part 107, which drones must broadcast Remote ID?",
+        options: [
+          "Only drones over 0.55 pounds",
+          "Only drones flown over people",
+          "Every drone flown under Part 107, because each one must be registered",
+          "Only Category 2 and Category 3 drones",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Per 14 CFR Part 89, if a drone must be registered it must have Remote ID. Under Part 107 every drone you fly must be registered, so every Part 107 drone needs Remote ID. The trap is thinking a sub-250-gram drone is always exempt.",
+        sourceLessonNumber: 10,
+      },
+      {
+        prompt: "To maintain sustained flight (hovering) over moving vehicles, which two conditions must both be met?",
+        options: [
+          "A Remote ID module and daylight",
+          "A closed or restricted-access site AND everyone in the vehicles on notice",
+          "A parachute and an anti-collision light",
+          "Nothing special, as long as the drone is Category 1",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Per 14 CFR 107.145, sustained flight over a moving vehicle requires a closed or restricted-access site AND everyone in the vehicles on notice (written notice is best). Transiting only requires that you not linger. Either way the drone must be Category 1, 2, or 3.",
+        sourceLessonNumber: 11,
       },
     ],
   },
