@@ -24,6 +24,11 @@ export interface ManagedLesson {
   audioChapters: unknown;
   transcriptContent: unknown;
   recallContent: unknown;
+  /** "Module 2, Lesson 7" numbering, so the instructor can find the lesson the learner reported.
+   *  Null for lessons not assigned to a module. */
+  moduleNumber?: number | null;
+  moduleTitle?: string | null;
+  lessonNumber?: number | null;
 }
 
 interface RecallItem {
@@ -131,6 +136,14 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
         {sorted.map((l, i) => (
           <li key={l.id} className="py-3">
             <div className="flex flex-wrap items-center gap-2">
+              {l.moduleNumber != null && l.lessonNumber != null ? (
+                <span
+                  className="shrink-0 rounded bg-neutral-100 px-1.5 py-0.5 text-xs font-semibold text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300"
+                  title={l.moduleTitle ?? undefined}
+                >
+                  Module {l.moduleNumber} · Lesson {l.lessonNumber}
+                </span>
+              ) : null}
               <span className="font-medium">{l.title}</span>
               <span className="rounded bg-neutral-100 px-1.5 py-0.5 text-xs text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
                 {l.lessonType}

@@ -76,6 +76,10 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   requests an **MP3 rendition** from Cloudinary (\`f_mp3\`, cached after first play) for audio, so
   lessons play on every device — and the remaining-time readout is now accurate (WebM lacked duration
   metadata). \`playableAudioSrc()\` in \`src/lib/media.ts\`, unit-tested.
+- ✅ **Teach page lesson numbering:** the instructor lesson list now labels each lesson with its
+  **"Module N · Lesson M"** position (module order from \`course_modules\`, lesson order within its
+  module), so a lesson a learner reports by number ("Module 2, Lesson 7") is easy to find on the
+  manage-course page. \`teach/[courseId]/page.tsx\` + \`lessons-manager.tsx\`.
 - ✅ **Change course instructor** (\`feat/change-course-instructor\`) — an admin (owner / brand_admin)
   can reassign a course to a different instructor from **Course settings** (validated + slug-collision
   guarded, ensures the new instructor has a username; no migration). \`/teach\` now shows admins
