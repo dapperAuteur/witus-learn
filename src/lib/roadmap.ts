@@ -445,6 +445,11 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`:::reveal\` click-to-reveal, and the 180 recall beats became self-graded recall cards.
   Authored explanations cite 14 CFR only where a real rule governs. Re-run \`pnpm seed:faa\`
   (\`--dry-run\` prints the breakdown without touching the DB).
+- ✅ **Quizzes score offline, integrity intact:** submitting a quiz with no network queues the attempt
+  to the outbox (\`quiz-attempt\` kind) and scores it server-side on reconnect, so an attempt taken on a
+  plane is never lost. The correct answers are still **never** sent to the device (server-scored as
+  always), so nothing is exposed by taking the quiz offline. Instant local scoring for explicitly
+  marked practice quizzes is the deliberate next step (it requires shipping answers, so it stays opt-in).
 - ✅ **Quiz answer review:** the results page (\`/{user}/{course}/results\`) now replays your **latest
   attempt** per quiz, each question showing the option you chose vs the correct one (and its
   explanation), under a "Review your answers" toggle. Server-side only, so \`correctIndex\` is never

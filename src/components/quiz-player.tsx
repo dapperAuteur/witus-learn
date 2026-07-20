@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { enqueue, outboxSupported } from "@/lib/offline-outbox";
+import { quizAttemptDraft } from "@/lib/outbox-kinds";
 
 interface SafeQuestion {
   prompt: string;
@@ -86,6 +88,8 @@ export function QuizPlayer({
   const [answers, setAnswers] = useState<number[]>(() => Array(served.length).fill(-1));
   const [result, setResult] = useState<QuizResult | null>(null);
   const [pending, setPending] = useState(false);
+  // Submitted offline: the attempt is queued to score on reconnect (no answers on the device).
+  const [queued, setQueued] = useState(false);
 
   function setAnswer(si: number, originalOptionIndex: number) {
     setAnswers((a) => {
@@ -106,16 +110,26 @@ export function QuizPlayer({
     e.preventDefault();
     setPending(true);
     const responses = served.map((s, si) => ({ questionIndex: s.qi, optionIndex: answers[si] }));
-    const r = await fetch(`/api/courses/${courseId}/lessons/${lessonId}/quiz`, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ responses }),
-    });
-    setPending(false);
-    if (r.ok) {
-      const d: QuizResult = await r.json();
-      setResult(d);
-      if (d.passed) router.refresh();
+    try {
+      const r = await fetch(`/api/courses/${courseId}/lessons/${lessonId}/quiz`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ responses }),
+      });
+      setPending(false);
+      if (r.ok) {
+        const d: QuizResult = await r.json();
+        setResult(d);
+        if (d.passed) router.refresh();
+      }
+    } catch {
+      // Offline: queue the attempt so it's scored + recorded on reconnect, WITHOUT the answers ever
+      // living on this device — integrity holds (the client never learns which option was right).
+      // No instant score offline; it lands in the learner's results once the outbox flushes.
+      setPending(false);
+      if (outboxSupported() && enqueue(quizAttemptDraft({ courseId, lessonId, responses }))) {
+        setQueued(true);
+      }
     }
   }
 
@@ -198,7 +212,13 @@ export function QuizPlayer({
         );
       })}
 
-      {!result ? (
+      {queued ? (
+        <p role="status" className="rounded-md border-l-4 border-amber-500 bg-amber-50 p-3 text-sm dark:bg-amber-950/30">
+          Saved offline. Your answers will be scored automatically when you&apos;re back online. Look
+          for the result on your <strong>results</strong> page then. Your answers aren&apos;t stored on
+          this device, so the score comes from the server (nothing was revealed here).
+        </p>
+      ) : !result ? (
         <button
           type="submit"
           disabled={pending || answers.includes(-1)}
