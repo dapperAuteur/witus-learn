@@ -158,6 +158,8 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
 - ✅ **Offline support (PWA)** — conservative per-origin service worker (network-first navigation +
   \`/offline\` fallback; cache-first hashed assets; API/cross-origin never cached), tenant-aware
   \`/manifest.webmanifest\`, and a \`NEXT_PUBLIC_DISABLE_SW=1\` kill-switch. Test on a preview first.
+  A stale-deploy \`ChunkLoadError\` (an old tab requesting a chunk hash the new build removed) now
+  auto-recovers with a one-time, loop-guarded hard reload (\`ChunkErrorReloader\`, in the root layout).
 - ✅ **Offline lessons (pages + media)** — "Save for offline" caches the lesson **page itself**
   (HTML + RSC payload, via \`src/lib/offline.ts\`'s \`witus-pages-v1\` Cache), its audio/video
   (\`witus-media-v1\`), **and the JS/CSS the page needs to render** (\`witus-assets-v1\`) — plus the
