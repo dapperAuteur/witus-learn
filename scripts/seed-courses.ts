@@ -98,6 +98,7 @@ import { COURSE_CREATION_COURSE } from "./data/course-creation-course";
 import { LEARNING_HOW_TO_LEARN_COURSE } from "./data/learning-how-to-learn-course";
 import { WOOP_COURSE } from "./data/woop-course";
 import { GREAT_MIGRATION_COURSE } from "./data/great-migration-course";
+import { GREAT_MIGRATION_AND_THE_WORLD_COURSE } from "./data/great-migration-and-the-world-course";
 import { HISTORY_OF_UNIONS_COURSE } from "./data/history-of-unions-course";
 import { LABOR_CHILE_COURSE } from "./data/labor-chile-course";
 import { LABOR_GERMANY_COURSE } from "./data/labor-germany-course";
@@ -653,6 +654,12 @@ async function main() {
     // green/black/red interactive map at /great-migration-map. See plans/future-courses/
     // great-migration.md (design) and great-migration-facts.md (the fact-check pass).
     { slug: "great-migration", course: GREAT_MIGRATION_COURSE, category: "Culture & History" },
+    // The Great Migration (and the World) — high-school-level companion to the homeschool
+    // `great-migration` course above. Built on Wilkerson's three-family frame with an explicit
+    // GLOBAL pillar (how the Migration's culture and moral argument traveled). Distinct slug,
+    // file, and export; cross-links Hoodoo, History of Unions, and Pan-Africanism. NO migration
+    // — pnpm seed:courses.
+    { slug: "great-migration-and-the-world", course: GREAT_MIGRATION_AND_THE_WORLD_COURSE, category: "Culture & History" },
     // The History of Unions — the anchor of the workers'-rights track. The US arc (Knights/AFL,
     // Haymarket, Homestead, Pullman, Triangle, Wagner Act, CIO, Taft-Hartley, Randolph →
     // Memphis, PATCO, the BLS density series) told WITH the parts a comfortable course skips:

@@ -63,3 +63,37 @@ export async function setPathCourses(pathId: string, courseIds: string[]): Promi
 export async function deletePath(id: string): Promise<void> {
   await db.delete(learningPaths).where(eq(learningPaths.id, id));
 }
+
+/** Which learning path(s) a course belongs to, with the course's position and the ordered siblings.
+ *  The reverse of getPathBySlug: it powers the "Part N of M in <track>" banner on the course page, so
+ *  a learner knows the course is part of a series and where it sits. Tenant-scoped (a course's paths
+ *  are only its own brand's). Empty when the course is in no path. */
+export interface CourseInPath {
+  id: string;
+  slug: string;
+  title: string;
+  position: number; // 1-based position of THIS course in the path
+  total: number;
+  courses: { id: string; title: string }[]; // ordered, for the recommended-order list + next link
+}
+
+export async function getPathsForCourse(tenantId: string, courseId: string): Promise<CourseInPath[]> {
+  const memberships = await db
+    .select({ pathId: learningPathCourses.pathId, slug: learningPaths.slug, title: learningPaths.title })
+    .from(learningPathCourses)
+    .innerJoin(learningPaths, eq(learningPaths.id, learningPathCourses.pathId))
+    .where(and(eq(learningPaths.tenantId, tenantId), eq(learningPathCourses.courseId, courseId)));
+
+  const out: CourseInPath[] = [];
+  for (const m of memberships) {
+    const list = await db
+      .select({ id: courses.id, title: courses.title })
+      .from(learningPathCourses)
+      .innerJoin(courses, eq(courses.id, learningPathCourses.courseId))
+      .where(and(eq(learningPathCourses.pathId, m.pathId), eq(courses.tenantId, tenantId)))
+      .orderBy(asc(learningPathCourses.sortOrder));
+    const position = list.findIndex((c) => c.id === courseId) + 1;
+    if (position > 0) out.push({ id: m.pathId, slug: m.slug, title: m.title, position, total: list.length, courses: list });
+  }
+  return out;
+}
