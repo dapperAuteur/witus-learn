@@ -1742,6 +1742,340 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 8 · And the world
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gmw-culture-abroad",
+      title: "26 · The culture that crossed the ocean",
+      section: "Section 8 · And the world",
+      body: `The title of this course promises "and the World," and here is where that promise comes due. The Migration concentrated a Southern-rooted Black culture in a few Northern cities (Section 5). From those cities, it went **global**, and it changed music everywhere it landed.
+
+**Jazz conquered Paris.** Jazz first reached France during **World War I**, carried by Black American army bands, and after the war some Black musicians stayed, finding in Paris audiences and a freedom the United States denied them. In **1925**, *La Revue Nègre* opened at the Théâtre des Champs-Élysées with a young dancer named **Josephine Baker** and the New Orleans clarinetist **Sidney Bechet**, and it made Baker a European star (La Revue Nègre, n.d.). Bechet built a career in France he could never have had at home.
+
+**But tell this part honestly.** Paris was freer than Mississippi, not free. French audiences often embraced Black performers through a lens of exotic fantasy, a fashion the era itself called *négrophilie* ("negrophilia"), which prized Black artists as thrilling and "primitive" rather than simply as artists (La Revue Nègre, n.d.). The welcome was real, and so were its limits. Both are true, which by now should sound familiar.
+
+**And Chicago blues became the sound of the world.** Recall Muddy Waters plugging in on the South Side (Section 5). His electric records on Chess crossed the Atlantic and landed on a group of young British musicians who studied them obsessively. In 1962, one such band needed a name, spotted Muddy's 1950 song **"Rollin' Stone"** on a record sleeve, and became **The Rolling Stones** (Rollin' Stone [Muddy Waters song], n.d.). The Beatles, the Stones, and Eric Clapton all pointed back to Chess artists, then sold that Chicago-blues sound to the entire planet as "rock." Follow the thread all the way: a Delta field holler, carried north by a migrant, electrified in a Chicago club, shipped to London, and beamed back out to the world.
+
+**The pattern of the whole section.** What the Migration built in Bronzeville, Harlem, and Detroit did not stay there. Jazz, blues, gospel, and eventually Motown soul became **America's most successful cultural export**, and a Black export at that. Six million people did not only remake American cities. Through the culture they made, they remade the sound of the modern world.
+
+:::reveal Trace one line by which the Great Migration's culture reached the whole world through popular music. ||| A Delta blues carried north by a migrant (Muddy Waters) was electrified in Chicago and recorded on Chess; young British musicians studied those records, and one band named itself after Muddy's song "Rollin' Stone" (the Rolling Stones, 1962). Through the British Invasion, Chicago blues became global rock. (Earlier, jazz had crossed to Paris with WWI army bands and La Revue Nègre, 1925.)
+
+## Sources
+- *La Revue Nègre*. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/La_Revue_N%C3%A8gre
+- *Rollin' Stone (Muddy Waters song)*. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/Rollin%27_Stone_(Muddy_Waters_song)`,
+      recallContent: [
+        {
+          prompt: "How did jazz reach Paris, and why is 'negrophilia' an important caveat?",
+          answer: "Jazz reached Paris via Black American army bands in World War I; some musicians stayed (La Revue Nègre, 1925, with Josephine Baker and Sidney Bechet). The caveat: French audiences often embraced Black performers as exotic and 'primitive' rather than simply as artists. The welcome was real, and so were its limits.",
+        },
+        {
+          prompt: "How did Chicago blues become global rock music?",
+          answer: "Muddy Waters' electric Chess records reached young British musicians, who built the British Invasion on them. The Rolling Stones took their name from Muddy's 1950 song 'Rollin' Stone.' Delta blues, carried north and electrified, went to London and back out to the world.",
+        },
+      ],
+    },
+    {
+      slug: "gmw-internationalism-and-cold-war",
+      title: "27 · The moral argument goes global",
+      section: "Section 8 · And the world",
+      body: `Culture was one export. A **moral argument** was the other, and it may have mattered even more.
+
+**The Migration helped make Black politics international.** Concentrating millions of Black people, with their newspapers, universities, and organizations, in world cities like New York gave Black thinkers a platform that reached far beyond the United States. Harlem in particular became a hub of **Black internationalism** and **Pan-Africanism**, linking the struggle of Black Americans to anti-colonial movements across Africa and the Caribbean. (This platform's *Pan-Africanism*, *Afrocentricity*, and *Africa Before Colonization* courses follow that thread of ideas in depth; this lesson only shows where it connects to the Migration.)
+
+**The Cold War turned American racism into a global liability.** After World War II, the United States competed with the Soviet Union for the loyalty of a decolonizing world, much of it in Africa and Asia. In that contest, Jim Crow was a disaster for American propaganda: the Soviet Union pointed to lynchings, segregated schools, and the abuse of Black diplomats in the U.S. capital to argue that American "freedom" was a lie. In *Cold War Civil Rights* (2000), the historian **Mary Dudziak** documented how this international embarrassment pushed the federal government, from Truman through Johnson, to support civil-rights reform partly to protect America's image abroad (Dudziak, 2000). In other words, the world was watching, and its gaze became a lever that Black Americans and their allies could pull.
+
+**And the movement they built inspired the world back.** The American civil-rights movement, itself powered by the migrants' Northern votes and Southern courage, became a model studied by activists fighting colonialism and, later, apartheid in South Africa. Ideas of nonviolent mass protest flowed both ways across borders. The moral argument that began in Southern fields and Northern ghettos became part of a global conversation about human rights.
+
+**The legacy, and a surprising turn.** The Migration's demographic tide has even begun to reverse. Since the **1970s**, in what demographers call the **New Great Migration**, many Black Americans, often younger and college-educated, have moved **back to the South**, drawn by New South jobs, family ties, and the perception of lessening discrimination, and repelled by Northern deindustrialization (Section 7). The South's share of the Black population, which had fallen to about half by 1970, rose back to roughly **57% by 2020** (Frey, 2004; U.S. Census data). The people the South drove out, and their descendants, are choosing, on new terms, to return. That is not the Migration failing. It is the Migration's children exercising the very freedom, to live where they choose, that six million people left home to claim.
+
+:::reveal How did the Cold War make American racism a global issue, and what is the "New Great Migration"? ||| During the Cold War, the U.S. competed with the USSR for a decolonizing world, and Soviet propaganda used American racism (lynchings, segregation) to attack U.S. credibility. Dudziak (2000) showed this pushed federal civil-rights reform to protect America's image abroad. The "New Great Migration" is the reversal since the 1970s, in which many Black Americans (often younger, college-educated) have moved back to the South, raising the South's share of the Black population back toward 57% by 2020.
+
+## Sources
+- Dudziak, M. L. (2000). *Cold War civil rights: Race and the image of American democracy*. Princeton University Press.
+- Frey, W. H. (2004). *The new great migration: Black Americans' return to the South, 1965–2000*. Brookings Institution. https://www.brookings.edu/articles/the-new-great-migration-black-americans-return-to-the-south-1965-2000/`,
+    },
+    {
+      slug: "gmw-quiz-world",
+      title: "28 · Quiz: and the world",
+      section: "Section 8 · And the world",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "How did jazz first reach Paris?",
+            options: [
+              "By radio in the 1950s",
+              "Carried by Black American army bands during World War I",
+              "It was invented in France",
+              "By the Rolling Stones",
+            ],
+            correctIndex: 1,
+            explanation: "WWI army bands brought jazz to France; some Black musicians stayed for the audiences and relative freedom they found.",
+            sourceLessonSlug: "gmw-culture-abroad",
+          },
+          {
+            prompt: "Who starred in the 1925 Paris show La Revue Nègre?",
+            options: [
+              "Josephine Baker and Sidney Bechet",
+              "Muddy Waters and Berry Gordy",
+              "Langston Hughes and Zora Neale Hurston",
+              "Louis Armstrong and Duke Ellington",
+            ],
+            correctIndex: 0,
+            explanation: "La Revue Nègre (1925) made dancer Josephine Baker a European star and featured clarinetist Sidney Bechet.",
+            sourceLessonSlug: "gmw-culture-abroad",
+          },
+          {
+            prompt: "What is the honest caveat about Black performers' welcome in 1920s Paris?",
+            options: [
+              "There was no welcome at all",
+              "Paris was freer than the U.S. but not free — audiences often embraced Black artists as exotic and 'primitive' (negrophilia)",
+              "Paris treated them exactly equally",
+              "They were paid nothing",
+            ],
+            correctIndex: 1,
+            explanation: "The welcome was real and so were its limits: a fashion for the 'primitive' framed the embrace.",
+            sourceLessonSlug: "gmw-culture-abroad",
+          },
+          {
+            prompt: "The Rolling Stones took their name from:",
+            options: [
+              "A British folk song",
+              "Muddy Waters' 1950 Chess song 'Rollin' Stone'",
+              "A Motown hit",
+              "A Harlem Renaissance poem",
+            ],
+            correctIndex: 1,
+            explanation: "British 'Chess obsessives' named the band after Muddy Waters' song, carrying Chicago blues worldwide as rock.",
+            sourceLessonSlug: "gmw-culture-abroad",
+          },
+          {
+            prompt: "The full 'thread' of the blues going global runs:",
+            options: [
+              "London to Chicago to Mississippi",
+              "A Delta blues, carried north by a migrant, electrified in Chicago, shipped to London, and beamed back to the world",
+              "Paris to New Orleans only",
+              "Detroit to the South",
+            ],
+            correctIndex: 1,
+            explanation: "Muddy Waters embodies the whole chain: Delta roots, Chicago electricity, British Invasion, global rock.",
+            sourceLessonSlug: "gmw-culture-abroad",
+          },
+          {
+            prompt: "Why does the course call the Migration's music 'America's most successful cultural export, and a Black export at that'?",
+            options: [
+              "Because it stayed in Bronzeville",
+              "Because jazz, blues, gospel, and Motown soul, all built by migrants and their children, spread worldwide",
+              "Because it was made by the government",
+              "Because Europe invented it",
+            ],
+            correctIndex: 1,
+            explanation: "The culture the Migration concentrated in Northern cities became a global export.",
+            sourceLessonSlug: "gmw-culture-abroad",
+          },
+          {
+            prompt: "How did concentrating Black communities in world cities like New York affect Black politics?",
+            options: [
+              "It isolated them from the world",
+              "It gave Black thinkers an international platform, making Harlem a hub of Black internationalism and Pan-Africanism",
+              "It ended all activism",
+              "It had no effect",
+            ],
+            correctIndex: 1,
+            explanation: "The density that produced culture also produced an internationally connected Black politics.",
+            sourceLessonSlug: "gmw-internationalism-and-cold-war",
+          },
+          {
+            prompt: "During the Cold War, why did American racism become a global liability?",
+            options: [
+              "It made no difference internationally",
+              "The U.S. competed with the USSR for a decolonizing world, and Soviet propaganda used U.S. racism to attack American credibility",
+              "The USSR supported segregation",
+              "Racism helped U.S. foreign policy",
+            ],
+            correctIndex: 1,
+            explanation: "Jim Crow undermined the U.S. image among the African and Asian nations both superpowers were courting.",
+            sourceLessonSlug: "gmw-internationalism-and-cold-war",
+          },
+          {
+            prompt: "What did Mary Dudziak's Cold War Civil Rights (2000) argue?",
+            options: [
+              "That civil rights had no international dimension",
+              "That international embarrassment pushed the federal government (Truman to Johnson) to support civil-rights reform partly to protect America's image abroad",
+              "That the Soviet Union ended segregation",
+              "That the Cold War caused the Great Migration",
+            ],
+            correctIndex: 1,
+            explanation: "Dudziak documented the world's gaze as a lever for domestic civil-rights reform.",
+            sourceLessonSlug: "gmw-internationalism-and-cold-war",
+          },
+          {
+            prompt: "How did the American civil-rights movement influence the world?",
+            options: [
+              "It had no influence abroad",
+              "It became a model studied by activists fighting colonialism and apartheid, with nonviolent-protest ideas flowing both ways",
+              "It only affected Canada",
+              "It discouraged other movements",
+            ],
+            correctIndex: 1,
+            explanation: "The movement built on migrants' votes and courage became part of a global human-rights conversation.",
+            sourceLessonSlug: "gmw-internationalism-and-cold-war",
+          },
+          {
+            prompt: "What is the 'New Great Migration'?",
+            options: [
+              "A second move to the North",
+              "The reversal since the 1970s, in which many Black Americans have moved back to the South",
+              "A move to Europe",
+              "The original Migration renamed",
+            ],
+            correctIndex: 1,
+            explanation: "Demographers use the term for the return migration to the South that began in the 1970s.",
+            sourceLessonSlug: "gmw-internationalism-and-cold-war",
+          },
+          {
+            prompt: "By 2020, the South's share of the Black population had risen back to about:",
+            options: ["25%", "40%", "57%", "90%"],
+            correctIndex: 2,
+            explanation: "It fell to about half by 1970, then rose to roughly 57% by 2020 (Frey; U.S. Census).",
+            sourceLessonSlug: "gmw-internationalism-and-cold-war",
+          },
+          {
+            prompt: "What draws many in the New Great Migration back to the South?",
+            options: [
+              "Cheaper cotton",
+              "New South jobs, family ties, and the perception of lessening discrimination, plus Northern deindustrialization pushing the other way",
+              "The return of Jim Crow",
+              "A government order",
+            ],
+            correctIndex: 1,
+            explanation: "Southern opportunity and roots pull, while Northern job losses push — a reversal of the original push-pull.",
+            sourceLessonSlug: "gmw-internationalism-and-cold-war",
+          },
+          {
+            prompt: "How does the course frame the New Great Migration's meaning?",
+            options: [
+              "As proof the Migration failed",
+              "As the Migration's children exercising the freedom to live where they choose — the very freedom six million people left home to claim",
+              "As unrelated to the Great Migration",
+              "As forced removal",
+            ],
+            correctIndex: 1,
+            explanation: "Returning on new terms is an exercise of the freedom the original Migration was about.",
+            sourceLessonSlug: "gmw-internationalism-and-cold-war",
+          },
+          {
+            prompt: "Which best sums up the 'and the World' pillar of this course?",
+            options: [
+              "The Migration only mattered inside the U.S.",
+              "Six million people remade American cities AND, through their culture and moral argument, helped remake the sound and the conscience of the modern world",
+              "The Migration ended in 1940",
+              "Culture cannot cross borders",
+            ],
+            correctIndex: 1,
+            explanation: "The Migration's reach was global in both culture (music) and politics (the Cold War civil-rights lever and Black internationalism).",
+            sourceLessonSlug: "gmw-culture-abroad",
+          },
+        ],
+      },
+    },
+    {
+      slug: "gmw-exercise",
+      title: "29 · Practice: name the concept (whole-course review)",
+      section: "Section 8 · And the world",
+      body: `A capstone drill across the whole course. Fill each blank with the term, name, number, or year, then check. Spelling and capitalization are forgiving; if you are close, you will be told so.`,
+      exercise: {
+        instructions: "Type the missing term, name, or number from the course, then check. Close answers (spelling, capitalization) are counted as 'close,' not wrong.",
+        items: [
+          {
+            prompt: "About ___ million African Americans left the South during the Great Migration (roughly 1916–1970).",
+            answer: "six",
+            accept: ["6", "6 million", "six million"],
+            explanation: "About six million — and it is an estimate, so we say 'about.'",
+          },
+          {
+            prompt: "The system of Southern segregation law and custom that the migrants were leaving is called ___ ___ (two words).",
+            answer: "Jim Crow",
+            accept: ["jim crow"],
+            explanation: "Jim Crow: legal segregation, disenfranchisement, and an economy built to trap.",
+          },
+          {
+            prompt: "In the farming system called ___, a family worked an owner's land for a share of the crop and often ended the year in debt.",
+            answer: "sharecropping",
+            accept: ["share cropping", "share-cropping"],
+            explanation: "When debt was used to keep the family from leaving, it became debt peonage.",
+          },
+          {
+            prompt: "World War ___ cut off European immigrant labor and opened Northern factory jobs to Black Southerners around 1916.",
+            answer: "I",
+            accept: ["1", "one", "world war i", "world war 1"],
+            explanation: "WWI created the labor shortage that set the Migration's timing.",
+          },
+          {
+            prompt: "The Chicago ___, founded by Robert Abbott in 1905, campaigned for migration and declared a 'Great Northern Drive' for May 15, 1917.",
+            answer: "Defender",
+            accept: ["defender", "chicago defender"],
+            explanation: "Pullman porters smuggled it south past local bans.",
+          },
+          {
+            prompt: "Isabel Wilkerson's book that frames this course is 'The Warmth of Other ___.'",
+            answer: "Suns",
+            accept: ["suns", "sons"],
+            explanation: "The Warmth of Other Suns (2010) follows three migrants, one per stream.",
+          },
+          {
+            prompt: "Wilkerson's subject who left Mississippi for Chicago in 1937 was Ida Mae Brandon ___.",
+            answer: "Gladney",
+            accept: ["gladney"],
+            explanation: "Ida Mae represents the Midwestern stream.",
+          },
+          {
+            prompt: "Berry Gordy founded the Detroit record label ___ in 1959; his own parents had migrated there from Georgia in 1922.",
+            answer: "Motown",
+            accept: ["motown", "tamla"],
+            explanation: "Motown was itself a product of the Great Migration.",
+          },
+          {
+            prompt: "A. Philip Randolph organized the Brotherhood of Sleeping Car ___ in 1925, the first major Black-led union.",
+            answer: "Porters",
+            accept: ["porters"],
+            explanation: "He later used the threat of a march to win Executive Order 8802 (1941).",
+          },
+          {
+            prompt: "The practice of denying government-backed mortgages in Black neighborhoods is called ___.",
+            answer: "redlining",
+            accept: ["red-lining", "red lining"],
+            explanation: "It blocked home-equity wealth for Black families for generations.",
+          },
+          {
+            prompt: "In the 1948 case Shelley v. ___, the Supreme Court ruled that courts could not enforce racially restrictive covenants.",
+            answer: "Kraemer",
+            accept: ["kraemer", "kramer"],
+            explanation: "The covenants themselves were not banned, only their court enforcement.",
+          },
+          {
+            prompt: "The 1925 Paris show that made Josephine Baker a star was 'La Revue ___.'",
+            answer: "Nègre",
+            accept: ["negre", "nègre", "negre "],
+            explanation: "Jazz reached Paris with WWI army bands; some musicians, like Sidney Bechet, stayed.",
+          },
+          {
+            prompt: "The British band that took its name from Muddy Waters' 1950 song 'Rollin' Stone' is The Rolling ___.",
+            answer: "Stones",
+            accept: ["stones", "rolling stones"],
+            explanation: "Chicago blues crossed the Atlantic and came back as global rock.",
+          },
+          {
+            prompt: "The reversal since the 1970s, with Black Americans moving back to the South, is called the ___ Great Migration.",
+            answer: "New",
+            accept: ["new"],
+            explanation: "The South's Black population share rose back toward 57% by 2020.",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
