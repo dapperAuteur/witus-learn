@@ -728,6 +728,263 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 4 · The routes and the cities
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gmw-three-travelers",
+      title: "11 · Three travelers: Ida Mae, George, and Robert",
+      section: "Section 4 · The routes and the cities",
+      body: `Six million is a number you cannot picture. Three people, you can. Isabel Wilkerson spent fifteen years and interviewed more than 1,200 people to write *The Warmth of Other Suns* (2010), and she built the book around three real individuals, one for each migration stream. This course does the same. Everything below is as **Wilkerson documented it** — real people, cited, not embellished.
+
+**Ida Mae Brandon Gladney — the Midwestern stream.** A sharecropper's wife in Mississippi, Ida Mae left with her family for **Chicago in 1937**, part of the great corridor that carried Deep-South migrants straight up the map to the Midwest (Wilkerson, 2010). Her life stands in for the majority of migrants: rural people, leaving the cotton economy, headed for a Northern industrial city.
+
+**George Swanson Starling — the Eastern stream.** A sharp, restless man who picked citrus in Florida, George tried to organize his fellow fruit pickers for better pay, which in the Jim Crow South made him a marked man. He left for **New York's Harlem in 1945**, riding the Eastern corridor that ran up the Atlantic seaboard (Wilkerson, 2010). He would spend his working life on the very trains that carried migrants north.
+
+**Robert Joseph Pershing Foster — the Western stream.** A surgeon from Louisiana, Robert left in **1953** to build a medical career in **California**, driving west across the desert on the Western corridor (Wilkerson, 2010). His story is a reminder that the Migration was not only sharecroppers: it carried doctors, teachers, and skilled workers who could not practice or advance under Jim Crow.
+
+**Why this frame teaches so well.** Put the three side by side and the whole Migration comes into focus:
+
+| Person | Left | For | Year | Stream |
+| --- | --- | --- | --- | --- |
+| Ida Mae Brandon Gladney | Mississippi | Chicago | 1937 | Midwestern |
+| George Swanson Starling | Florida | Harlem (New York) | 1945 | Eastern |
+| Robert Joseph Pershing Foster | Louisiana | California | 1953 | Western |
+
+Three people, three streams, three decades. Keep them in mind: the rest of the course is, in a sense, the story of what people like them left, carried, built, and paid.
+
+:::reveal Match Wilkerson's three subjects to their streams: who went to Chicago, who to Harlem, who to California, and from which Southern states? ||| Ida Mae Brandon Gladney left Mississippi for Chicago (Midwestern stream, 1937); George Swanson Starling left Florida for Harlem (Eastern stream, 1945); Robert Joseph Pershing Foster left Louisiana for California (Western stream, 1953).
+
+## Sources
+- Wilkerson, I. (2010). *The warmth of other suns: The epic story of America's great migration*. Random House.`,
+      recallContent: [
+        {
+          prompt: "Who are Wilkerson's three subjects, and which stream does each represent?",
+          answer: "Ida Mae Brandon Gladney (Mississippi to Chicago, Midwestern), George Swanson Starling (Florida to Harlem, Eastern), and Robert Joseph Pershing Foster (Louisiana to California, Western).",
+        },
+        {
+          prompt: "What does Robert Foster (a surgeon) show about who the migrants were?",
+          answer: "That the Migration was not only sharecroppers. It also carried doctors, teachers, and skilled professionals who could not advance under Jim Crow.",
+        },
+      ],
+    },
+    {
+      slug: "gmw-cities",
+      title: "12 · The cities they poured into",
+      section: "Section 4 · The routes and the cities",
+      body: `When the streams reached their Northern ends, they hit a handful of cities with tremendous force. The numbers are the story here, so read the table slowly.
+
+| City | Black population, 1910 | Black population, 1920 | Rough change |
+| --- | --- | --- | --- |
+| Detroit | 5,741 | 40,838 | about +611% |
+| Chicago | ~44,000 | ~109,400 | about +148% |
+| New York City | (large already) | (grew ~66% in the decade) | — |
+
+Detroit's roughly **sixfold** jump in ten years was the largest percentage growth of any big Northern city; Chicago's Black population more than doubled; and by 1930 New York City's Black population had reached about 328,000, with **Harlem** becoming the largest Black urban neighborhood in the country (U.S. Census data, as reported by Encyclopedia of Chicago, n.d.; National Archives, n.d.).
+
+**A caution about one famous statistic.** You will often see it claimed that **Philadelphia's** Black population grew "500%" from 1910 to 1920. Handle that number with care: the raw census counts usually cited alongside it (roughly 84,000 to 134,000) work out to closer to **60%**, not 500%. When a dramatic percentage and the underlying head-count do not agree, trust the head-count and flag the percentage. (This is exactly the kind of "verify, do not repeat" habit this platform is built on.)
+
+**Where did all these people live? In very little space.** Northern cities were segregated too, not by Jim Crow statute but by restrictive covenants, real-estate practice, and violence (Section 7). So arriving migrants were packed into a few districts that took on names of their own: Chicago's **"Black Belt," later Bronzeville** (the "Black Metropolis"); Detroit's **Paradise Valley** and Black Bottom; New York's **Harlem**. Landlords chopped apartments into tiny "kitchenette" units and charged more for them than white tenants paid for whole flats. Overcrowding, high rents, and disease were the immediate price of arrival (Grossman, 1989).
+
+But density has a flip side. Pack tens of thousands of people, their churches, newspapers, clubs, and musicians into a few square miles, and you do not only get overcrowding. You get **Bronzeville and Harlem** — the cultural powerhouses of Section 5.
+
+:::reveal Which Northern city had the largest percentage growth in Black population from 1910 to 1920, and why should you be skeptical of the "Philadelphia grew 500%" claim? ||| Detroit, which grew about 611% (from 5,741 to 40,838). Be skeptical of "Philadelphia 500%" because the raw census counts usually cited (about 84,000 to 134,000) work out to closer to 60%; when the percentage and the head-count disagree, trust the head-count.
+
+## Sources
+- Encyclopedia of Chicago. (n.d.). *Great Migration*. Chicago History Museum. http://www.encyclopedia.chicagohistory.org/pages/545.html
+- National Archives. (n.d.). *The Great Migration (1910–1970)*. https://www.archives.gov/research/african-americans/migrations/great-migration
+- Grossman, J. R. (1989). *Land of hope: Chicago, Black Southerners, and the Great Migration*. University of Chicago Press.`,
+    },
+    {
+      slug: "gmw-second-migration-west",
+      title: "13 · The Second Great Migration goes west",
+      section: "Section 4 · The routes and the cities",
+      body: `The first wave filled the industrial cities of the Northeast and Midwest. The **Second Great Migration** (1940s–1970) did that again and then pushed the Western stream to full flood, all the way to the Pacific coast, on the strength of one thing: **World War II shipbuilding**.
+
+**The shipyards were hiring, fast.** When the U.S. entered the war, West Coast shipyards needed enormous numbers of workers, and for the first time offered Black Southerners skilled, well-paid defense jobs. The industrialist **Henry J. Kaiser** ran shipyards in **Richmond and Oakland, California; Portland, Oregon; and Vancouver, Washington**, and recruited workers from across the South (Kaiser Permanente, n.d.). The demographic effect was staggering: San Francisco's Black population grew from **fewer than 5,000 before the war to about 32,000 by 1945** (Second Great Migration, n.d.). New Black communities appeared almost overnight in the East Bay and in **Vanport, Oregon**, a wartime housing city near Portland.
+
+**But the West was not free of the color line.** Black shipyard workers ran into the same wall that met migrants everywhere: **labor unions that would not admit them as equals.** The powerful Boilermakers union, rather than integrate, forced Black workers into separate, second-class "auxiliary" locals that collected their dues but denied them full membership and job security. Black workers fought back, and in California the case known as **James v. Marinship (1944)** ended with a ruling against the union's practice of demanding dues while denying real membership (Second Great Migration, n.d.). (This platform's *History of Unions* course tells the labor side of this story in detail, including how the wartime *Fair Employment Practice Committee* — see Section 6 — pushed back on shipyard discrimination.)
+
+**The pattern to notice.** Each wave of the Migration followed war industry, and each time migrants found that the North and West offered a paycheck and a vote but not an escape from racism. That double truth, opportunity braided together with new forms of exclusion, is the hinge of this whole course, and Section 7 will follow it into the housing market, where its costs landed hardest.
+
+:::reveal What industry drove the Second Great Migration to the West Coast, and what barrier did Black workers hit even in those good jobs? ||| World War II shipbuilding (Kaiser's yards in Richmond, Oakland, Portland, and Vancouver, WA) drove it — San Francisco's Black population jumped from under 5,000 to about 32,000 by 1945. The barrier was union exclusion: the Boilermakers forced Black workers into second-class "auxiliary" locals, challenged in James v. Marinship (1944).
+
+## Sources
+- Kaiser Permanente. (n.d.). *The World War II Kaiser Richmond shipyard labor force*. https://about.kaiserpermanente.org/who-we-are/our-history/the-world-war-ii-kaiser-richmond-shipyard-labor-force
+- *Second Great Migration (African American)*. (n.d.). In *Wikipedia*. https://en.wikipedia.org/wiki/Second_Great_Migration_(African_American)
+- *James v. Marinship Corp.* (California Supreme Court, 1944).`,
+      recallContent: [
+        {
+          prompt: "What drove the Second Great Migration to the West Coast, and by how much did San Francisco's Black population grow during the war?",
+          answer: "World War II shipbuilding (Henry Kaiser's yards in Richmond, Oakland, Portland, and Vancouver, WA). San Francisco's Black population grew from fewer than 5,000 before the war to about 32,000 by 1945.",
+        },
+        {
+          prompt: "How did the Boilermakers union treat Black shipyard workers, and what case challenged it?",
+          answer: "It forced them into separate, second-class 'auxiliary' locals that took their dues but denied full membership. James v. Marinship (1944) ruled against demanding dues while denying real membership.",
+        },
+      ],
+    },
+    {
+      slug: "gmw-quiz-routes",
+      title: "14 · Quiz: routes and cities",
+      section: "Section 4 · The routes and the cities",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "In Wilkerson's frame, Ida Mae Brandon Gladney left which state for which city, and in what year?",
+            options: ["Florida for Harlem, 1945", "Mississippi for Chicago, 1937", "Louisiana for California, 1953", "Georgia for Detroit, 1916"],
+            correctIndex: 1,
+            explanation: "Ida Mae, a sharecropper's wife, left Mississippi for Chicago in 1937 — the Midwestern stream (Wilkerson, 2010).",
+            sourceLessonSlug: "gmw-three-travelers",
+          },
+          {
+            prompt: "George Swanson Starling represents which stream, and where did he go?",
+            options: ["Western; Los Angeles", "Midwestern; Chicago", "Eastern; Harlem (New York), 1945", "Northern; Boston"],
+            correctIndex: 2,
+            explanation: "George left Florida for Harlem in 1945 after trying to organize fellow citrus pickers — the Eastern stream (Wilkerson, 2010).",
+            sourceLessonSlug: "gmw-three-travelers",
+          },
+          {
+            prompt: "Robert Joseph Pershing Foster, a surgeon, left Louisiana in 1953 for California. What does his story illustrate?",
+            options: [
+              "That only sharecroppers migrated",
+              "That the Migration also carried skilled professionals blocked by Jim Crow",
+              "That doctors were welcomed in the South",
+              "That the Western stream did not exist",
+            ],
+            correctIndex: 1,
+            explanation: "Foster shows the Migration included doctors, teachers, and skilled workers who could not advance under Jim Crow (Wilkerson, 2010).",
+            sourceLessonSlug: "gmw-three-travelers",
+          },
+          {
+            prompt: "Why did Wilkerson build her book around three individuals?",
+            options: [
+              "Because only three people migrated",
+              "Because three real, cited lives make an unimaginable number of six million people concrete, one per stream",
+              "Because she could not find more interviews",
+              "Because the government required it",
+            ],
+            correctIndex: 1,
+            explanation: "She interviewed more than 1,200 people over fifteen years, then chose one per stream so readers could picture the whole.",
+            sourceLessonSlug: "gmw-three-travelers",
+          },
+          {
+            prompt: "Which Northern city had the LARGEST percentage growth in Black population from 1910 to 1920?",
+            options: ["Chicago (~148%)", "Detroit (~611%)", "New York (~66%)", "Boston (~20%)"],
+            correctIndex: 1,
+            explanation: "Detroit grew from 5,741 to 40,838, about +611% — a roughly sixfold jump, the largest of any big Northern city.",
+            sourceLessonSlug: "gmw-cities",
+          },
+          {
+            prompt: "Chicago's Black population went from about 44,000 in 1910 to about 109,400 in 1920, a change of roughly:",
+            options: ["+10%", "+148%", "+611%", "+1,000%"],
+            correctIndex: 1,
+            explanation: "About +148% — Chicago's Black population more than doubled in the decade.",
+            sourceLessonSlug: "gmw-cities",
+          },
+          {
+            prompt: "Why should you be skeptical of the claim that 'Philadelphia grew 500%' from 1910 to 1920?",
+            options: [
+              "Because Philadelphia had no Black population",
+              "Because the raw census counts (roughly 84,000 to 134,000) work out to closer to 60%, not 500%",
+              "Because Philadelphia grew even faster than 500%",
+              "Because the census did not count Philadelphia",
+            ],
+            correctIndex: 1,
+            explanation: "When a dramatic percentage disagrees with the underlying head-count, trust the head-count and flag the percentage.",
+            sourceLessonSlug: "gmw-cities",
+          },
+          {
+            prompt: "What were Bronzeville, Paradise Valley, and Harlem?",
+            options: [
+              "Southern plantations",
+              "The segregated districts where arriving migrants were concentrated in Chicago, Detroit, and New York",
+              "Names of railroads",
+              "Union halls",
+            ],
+            correctIndex: 1,
+            explanation: "Because Northern cities were segregated too (by covenant and practice), migrants were packed into a few districts that became famous in their own right.",
+            sourceLessonSlug: "gmw-cities",
+          },
+          {
+            prompt: "What was a 'kitchenette' apartment?",
+            options: [
+              "A luxury flat",
+              "A larger apartment chopped into tiny units, rented to migrants at high prices",
+              "A restaurant",
+              "A type of railroad car",
+            ],
+            correctIndex: 1,
+            explanation: "Landlords subdivided apartments and charged migrants more for a kitchenette than white tenants paid for a whole flat.",
+            sourceLessonSlug: "gmw-cities",
+          },
+          {
+            prompt: "What industry drove the Second Great Migration to the West Coast?",
+            options: ["Cotton farming", "World War II shipbuilding", "Gold mining", "Railroads only"],
+            correctIndex: 1,
+            explanation: "West Coast defense shipyards (notably Henry Kaiser's) recruited Black Southerners for skilled, well-paid war jobs.",
+            sourceLessonSlug: "gmw-second-migration-west",
+          },
+          {
+            prompt: "San Francisco's Black population during World War II grew from fewer than 5,000 to about:",
+            options: ["6,000", "12,000", "32,000", "200,000"],
+            correctIndex: 2,
+            explanation: "About 32,000 by 1945 — new Black communities appeared almost overnight in the Bay Area.",
+            sourceLessonSlug: "gmw-second-migration-west",
+          },
+          {
+            prompt: "How did the Boilermakers union treat Black shipyard workers?",
+            options: [
+              "It admitted them as full, equal members",
+              "It forced them into separate, second-class 'auxiliary' locals that took dues but denied full membership",
+              "It refused to let them work at all",
+              "It paid them extra",
+            ],
+            correctIndex: 1,
+            explanation: "Auxiliary locals collected dues while denying real membership and job security — challenged in James v. Marinship (1944).",
+            sourceLessonSlug: "gmw-second-migration-west",
+          },
+          {
+            prompt: "The 1944 California case James v. Marinship concerned:",
+            options: [
+              "A restrictive housing covenant",
+              "A union demanding dues from Black workers while denying them real membership",
+              "The white primary",
+              "The boll weevil",
+            ],
+            correctIndex: 1,
+            explanation: "The court ruled against the union's practice of collecting dues while withholding genuine membership.",
+            sourceLessonSlug: "gmw-second-migration-west",
+          },
+          {
+            prompt: "Which pattern held across both waves of the Migration?",
+            options: [
+              "Migrants found the North and West completely free of racism",
+              "Each wave followed war industry, and each time migrants found opportunity braided together with new forms of exclusion",
+              "Migration only happened once",
+              "The West offered no jobs",
+            ],
+            correctIndex: 1,
+            explanation: "Opportunity and exclusion together is the hinge of the course, followed into housing in Section 7.",
+            sourceLessonSlug: "gmw-second-migration-west",
+          },
+          {
+            prompt: "Vanport, Oregon, was:",
+            options: [
+              "A Southern cotton town",
+              "A wartime housing city near Portland where a new Black community formed during the Second Great Migration",
+              "A union headquarters",
+              "A shipyard in New York",
+            ],
+            correctIndex: 1,
+            explanation: "Vanport housed war workers near Portland and became one of the new West Coast Black communities of the 1940s.",
+            sourceLessonSlug: "gmw-second-migration-west",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
