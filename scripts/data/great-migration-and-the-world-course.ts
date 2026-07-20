@@ -1241,6 +1241,241 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 6 · What they built: political power
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gmw-the-vote",
+      title: "19 · The ballot they could finally use",
+      section: "Section 6 · What they built: political power",
+      body: `Remember the single cruelest fact of Section 2: in the South, Black citizens had been stripped of the vote. Now watch what happened when six million of them moved to places where they could cast one.
+
+**In the North, they could vote, and in dense districts that meant they could win.** Because migrants clustered in specific neighborhoods (Section 4), those neighborhoods could elect their own. In **1928**, **Oscar De Priest** won a Chicago district to become the **first African American elected to Congress in the twentieth century, and the first ever from outside the South** (U.S. House of Representatives, n.d.-a). He was followed by **William L. Dawson**, elected from Chicago in **1942** (who in 1949 became the first Black American to chair a congressional committee), and by **Adam Clayton Powell Jr.**, the Harlem pastor elected in **1944** (U.S. House of Representatives, n.d.-b, n.d.-c). Southern disenfranchisement had silenced Black voters for decades; Northern migration gave them a voice in Congress again.
+
+**The Black vote also became a national force that presidents had to court.** During the Great Depression, Black voters made a historic switch: drawn by New Deal relief, about **75%** backed the Democrats in **1936**, leaving the "Party of Lincoln" they had supported since emancipation (Salve Regina University, n.d.). Concentrated in the big cities of populous Northern states, this bloc suddenly had real weight in national elections, and both parties began to notice.
+
+**That leverage produced concrete federal action.** Two presidential orders show the pattern:
+- In **1941**, under pressure from Black organizing (next lesson), President Franklin Roosevelt issued **Executive Order 8802**, banning racial discrimination in the defense industries and creating a **Fair Employment Practice Committee** (Executive Order 8802, 1941).
+- In **1948**, President Harry Truman issued **Executive Order 9981**, ordering the **desegregation of the armed forces** — a decision historians tie in part to pressure from civil-rights leaders and to the growing importance of the Black urban vote (National Archives, n.d.-c).
+
+The lesson is blunt and worth stating plainly: **a vote you can actually cast is power.** The Migration did not create Black political genius, which the South had always had. It moved that genius to ground where it could finally be counted.
+
+:::reveal Who was the first African American elected to Congress in the twentieth century, and what two presidential orders show the Northern Black vote's growing leverage? ||| Oscar De Priest, elected from Chicago in 1928 (also the first from outside the South). Executive Order 8802 (1941, banning defense-industry discrimination, creating the FEPC) and Executive Order 9981 (1948, desegregating the armed forces) show the leverage of the Northern Black vote.
+
+## Sources
+- U.S. House of Representatives, History, Art & Archives. (n.d.-a). *De Priest, Oscar Stanton*. https://history.house.gov/People/Detail/12155
+- U.S. House of Representatives, History, Art & Archives. (n.d.-b). *Dawson, William Levi*. https://history.house.gov/People/Detail/12028
+- U.S. House of Representatives, History, Art & Archives. (n.d.-c). *Powell, Adam Clayton, Jr.* https://history.house.gov/People/Listing/P/POWELL,-Adam-Clayton,-Jr--(P000477)/
+- Executive Order 8802, 3 C.F.R. (1941).
+- National Archives. (n.d.-c). *Executive Order 9981: Desegregation of the Armed Forces (1948)*. https://www.archives.gov/milestone-documents/executive-order-9981
+- Salve Regina University. (n.d.). *How Blacks became Blue: The 1936 African American voting shift*. https://digitalcommons.salve.edu/pell_theses/77/`,
+      recallContent: [
+        {
+          prompt: "Why did moving north give Black Americans political power they lacked in the South?",
+          answer: "In the South they were disenfranchised; in the North they could vote. Clustered in dense districts, they could elect their own (Oscar De Priest, Chicago, 1928 was the first in the twentieth century) and, as a bloc in big Northern states, sway national elections.",
+        },
+        {
+          prompt: "What did Executive Orders 8802 (1941) and 9981 (1948) each do?",
+          answer: "EO 8802 banned racial discrimination in the defense industries and created the Fair Employment Practice Committee. EO 9981 desegregated the armed forces. Both reflected the leverage of the growing Black urban vote and civil-rights pressure.",
+        },
+      ],
+    },
+    {
+      slug: "gmw-randolph-and-middle-class",
+      title: "20 · Randolph, the porters, and a rising middle class",
+      section: "Section 6 · What they built: political power",
+      body: `Electoral power was one engine. **Organized labor and mass protest** were another, and one man sits at the center of both: **A. Philip Randolph**.
+
+**The Pullman porters organized.** The **Pullman porters** you met in Section 3 (the men who staffed the railroad sleeping cars and smuggled the Defender south) held some of the steadiest jobs open to Black men, but under demeaning conditions and low pay. In **1925**, Randolph organized them into the **Brotherhood of Sleeping Car Porters**, the first major Black-led labor union in the United States. After a long fight, it won recognition and a contract in **1937** (AFL-CIO, n.d.). This platform's *History of Unions* course tells that struggle, and the wider story of Black workers and the labor movement, in full.
+
+**Then Randolph turned the union into a political weapon.** In **1941**, angry that Black workers were being shut out of the booming defense industry, Randolph threatened a mass **March on Washington** unless the government acted. To head off the march, Roosevelt issued Executive Order 8802 (last lesson), and Randolph called it off, having won a real concession without a shot fired. He used the same tactic again after the war to help push Truman toward desegregating the military in 1948. Randolph had discovered something the civil-rights movement would use for the next thirty years: **the credible threat of mass, disciplined action by Black Americans could move a president.**
+
+**Meanwhile, a Black middle class was taking shape.** Steady wages, the vote, and dense communities let a broader Black middle class grow in Northern cities than Jim Crow had ever permitted: postal workers, porters, teachers, ministers, nurses, small-business owners, and the professionals who served Black neighborhoods that white businesses would not. Institutions like the **NAACP** and the **National Urban League** grew alongside them. This is a genuine achievement, and you should not shrink it.
+
+**But hold it honestly.** That middle class rose inside walls it did not choose. Its members were still barred from most neighborhoods, many jobs, and much of the wealth-building (especially home equity) that white families used to climb, for reasons Section 7 is about to make painfully concrete. The Migration built real Black power and a real Black middle class. It did not buy equality, because equality was not for sale.
+
+:::reveal Who founded the Brotherhood of Sleeping Car Porters and when, and how did he use the threat of a march to win Executive Order 8802? ||| A. Philip Randolph founded the Brotherhood of Sleeping Car Porters in 1925 (it won its contract in 1937). In 1941 he threatened a mass March on Washington over defense-job discrimination; to head it off, Roosevelt issued Executive Order 8802, and Randolph called off the march, winning the concession.
+
+## Sources
+- AFL-CIO. (n.d.). *A. Philip Randolph*. https://aflcio.org/about/history/labor-history-people/asa-philip-randolph
+- Executive Order 8802, 3 C.F.R. (1941).`,
+    },
+    {
+      slug: "gmw-quiz-power",
+      title: "21 · Quiz: what they built (power)",
+      section: "Section 6 · What they built: political power",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "Why did moving north translate into real political power for Black Americans?",
+            options: [
+              "The North had no elections",
+              "In the North they could vote, and clustered in dense districts they could elect their own and sway national races",
+              "The South restored their vote in 1928",
+              "Northern cities had no white residents",
+            ],
+            correctIndex: 1,
+            explanation: "Disenfranchised in the South, migrants could vote in the North; concentrated districts elected Black representatives and gave the bloc national weight.",
+            sourceLessonSlug: "gmw-the-vote",
+          },
+          {
+            prompt: "Oscar De Priest, elected from Chicago in 1928, was:",
+            options: [
+              "The first Black senator",
+              "The first African American elected to Congress in the twentieth century, and the first from outside the South",
+              "A Southern governor",
+              "The founder of Motown",
+            ],
+            correctIndex: 1,
+            explanation: "His 1928 Chicago victory marked a new era of Northern urban Black political organization.",
+            sourceLessonSlug: "gmw-the-vote",
+          },
+          {
+            prompt: "In 1936, about what share of Black voters backed the Democrats, marking a historic switch?",
+            options: ["About 10%", "About 40%", "About 75%", "About 5%"],
+            correctIndex: 2,
+            explanation: "Drawn by New Deal relief, about 75% backed the Democrats in 1936, leaving the 'Party of Lincoln.'",
+            sourceLessonSlug: "gmw-the-vote",
+          },
+          {
+            prompt: "What did President Roosevelt's Executive Order 8802 (1941) do?",
+            options: [
+              "Desegregated the military",
+              "Banned racial discrimination in the defense industries and created the Fair Employment Practice Committee",
+              "Ended sharecropping",
+              "Created the Chicago Defender",
+            ],
+            correctIndex: 1,
+            explanation: "EO 8802 opened war industries to Black workers and set up the FEPC to enforce it.",
+            sourceLessonSlug: "gmw-the-vote",
+          },
+          {
+            prompt: "What did President Truman's Executive Order 9981 (1948) do?",
+            options: [
+              "Desegregated the armed forces",
+              "Banned labor unions",
+              "Created the poll tax",
+              "Funded the boll-weevil fight",
+            ],
+            correctIndex: 0,
+            explanation: "EO 9981 ordered equality of treatment in the armed forces, tied in part to civil-rights pressure and the Black urban vote.",
+            sourceLessonSlug: "gmw-the-vote",
+          },
+          {
+            prompt: "Who founded the Brotherhood of Sleeping Car Porters in 1925?",
+            options: ["Adam Clayton Powell Jr.", "A. Philip Randolph", "Oscar De Priest", "Thomas Dorsey"],
+            correctIndex: 1,
+            explanation: "A. Philip Randolph organized the porters into the first major Black-led labor union, which won its contract in 1937.",
+            sourceLessonSlug: "gmw-randolph-and-middle-class",
+          },
+          {
+            prompt: "How did Randolph win Executive Order 8802 in 1941?",
+            options: [
+              "By running for president",
+              "By threatening a mass March on Washington over defense-job discrimination, which Roosevelt headed off with the order",
+              "By suing in the Supreme Court",
+              "By buying a newspaper",
+            ],
+            correctIndex: 1,
+            explanation: "The credible threat of mass action forced a concession; Randolph then called off the march.",
+            sourceLessonSlug: "gmw-randolph-and-middle-class",
+          },
+          {
+            prompt: "What tactic did Randolph pioneer that the civil-rights movement later used for decades?",
+            options: [
+              "The credible threat of mass, disciplined action to move a president",
+              "Secret negotiations only",
+              "Armed rebellion",
+              "Boycotting all elections",
+            ],
+            correctIndex: 0,
+            explanation: "He showed that organized, disciplined mass pressure could win federal action without violence.",
+            sourceLessonSlug: "gmw-randolph-and-middle-class",
+          },
+          {
+            prompt: "Which best describes the Black middle class that grew in Northern cities?",
+            options: [
+              "It did not exist",
+              "It was a real achievement — postal workers, porters, teachers, ministers, business owners — but it rose inside walls of segregation it did not choose",
+              "It was fully equal to the white middle class",
+              "It was made up only of musicians",
+            ],
+            correctIndex: 1,
+            explanation: "Steady wages, the vote, and dense communities enabled a real middle class, still constrained by segregation (Section 7).",
+            sourceLessonSlug: "gmw-randolph-and-middle-class",
+          },
+          {
+            prompt: "Which two organizations grew alongside the Northern Black middle class?",
+            options: [
+              "The NAACP and the National Urban League",
+              "The Boilermakers and the Pullman Company",
+              "The FEPC and the HOLC",
+              "Chess Records and Motown",
+            ],
+            correctIndex: 0,
+            explanation: "Civil-rights and social-service organizations like the NAACP and Urban League expanded with the migrant communities.",
+            sourceLessonSlug: "gmw-randolph-and-middle-class",
+          },
+          {
+            prompt: "William L. Dawson, elected from Chicago in 1942, achieved which first in 1949?",
+            options: [
+              "First Black senator",
+              "First African American to chair a congressional committee",
+              "First Black president",
+              "First Black governor",
+            ],
+            correctIndex: 1,
+            explanation: "Dawson built a powerful South Side political base and chaired a House committee, a first for a Black member.",
+            sourceLessonSlug: "gmw-the-vote",
+          },
+          {
+            prompt: "Adam Clayton Powell Jr., elected in 1944, was a pastor of which Harlem church?",
+            options: ["Pilgrim Baptist", "Abyssinian Baptist", "Ebenezer Baptist", "Riverside"],
+            correctIndex: 1,
+            explanation: "Powell used his Abyssinian Baptist pulpit and community activism to win a new majority-Black Harlem seat.",
+            sourceLessonSlug: "gmw-the-vote",
+          },
+          {
+            prompt: "The honest summary of this section is that the Migration:",
+            options: [
+              "Bought full equality",
+              "Built real Black political power and a real Black middle class, but did not buy equality — because equality was not for sale",
+              "Made no political difference",
+              "Only helped musicians",
+            ],
+            correctIndex: 1,
+            explanation: "Genuine gains in power and class standing coexisted with continued, structural exclusion (the subject of Section 7).",
+            sourceLessonSlug: "gmw-randolph-and-middle-class",
+          },
+          {
+            prompt: "What connects the Pullman porters to BOTH the culture and the politics of the Migration?",
+            options: [
+              "They only drove trains",
+              "They smuggled the Chicago Defender south (culture/recruitment) and, organized by Randolph, became the first major Black union (politics)",
+              "They founded Motown",
+              "They wrote The New Negro",
+            ],
+            correctIndex: 1,
+            explanation: "The porters spread the news that fueled migration and then organized into a union that reshaped Black politics.",
+            sourceLessonSlug: "gmw-randolph-and-middle-class",
+          },
+          {
+            prompt: "The deepest point of Section 6 is that:",
+            options: [
+              "Voting does not matter",
+              "A vote you can actually cast is power — the Migration moved Black political genius to ground where it could finally be counted",
+              "The South was better for Black voters",
+              "Only presidents have power",
+            ],
+            correctIndex: 1,
+            explanation: "The South always had Black political talent; the Migration moved it where it could be exercised and counted.",
+            sourceLessonSlug: "gmw-the-vote",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
