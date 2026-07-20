@@ -49,6 +49,10 @@ export const PROGRESS = "progress";
 /** An instructor edit to a lesson (title/body/flags/order). Signed-in + owns the course. Queued so
  *  edits made offline are not silently dropped when the network returns. */
 export const LESSON_EDIT = "lesson-edit";
+/** A quiz attempt: the served responses, POSTed to be scored + recorded server-side. Queued when the
+ *  submit happens offline, so the attempt is scored on reconnect WITHOUT the answers ever living on
+ *  the client. Integrity holds: the client never learns which option was correct. */
+export const QUIZ_ATTEMPT = "quiz-attempt";
 
 /** `/api/report`'s enum — what KIND of problem, not the outbox kind. */
 export type ProblemKind = "bug" | "feedback" | "idea" | "other";
@@ -202,5 +206,26 @@ export function lessonEditDraft(input: {
     method: "PATCH",
     body: input.changes,
     label: input.label,
+  };
+}
+
+export function quizUrl(courseId: string, lessonId: string): string {
+  return `/api/courses/${courseId}/lessons/${lessonId}/quiz`;
+}
+
+/** A quiz attempt, ready to queue or to POST. `responses` are the ORIGINAL question/option indices
+ *  for the served subset (the server scores by identity, exactly as for a live submit). The lesson
+ *  is in the URL, so an attempt queued offline still scores against the right quiz on reconnect. */
+export function quizAttemptDraft(input: {
+  courseId: string;
+  lessonId: string;
+  responses: { questionIndex: number; optionIndex: number }[];
+}): OutboxDraft {
+  return {
+    kind: QUIZ_ATTEMPT,
+    url: quizUrl(input.courseId, input.lessonId),
+    method: "POST",
+    body: { responses: input.responses },
+    label: `Quiz attempt (${input.responses.length} answer${input.responses.length === 1 ? "" : "s"})`,
   };
 }

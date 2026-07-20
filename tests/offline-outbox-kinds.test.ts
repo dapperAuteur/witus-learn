@@ -186,6 +186,29 @@ describe("what each kind means", () => {
     // The changes are stored verbatim — never re-derived at flush time against a stale lesson.
     expect(draft.body).toEqual({ title: "Weather, revised", isPublished: true });
   });
+
+  it("a quiz attempt POSTs only the learner's picks to the lesson's quiz endpoint", async () => {
+    const { kinds } = await load();
+    const draft = kinds.quizAttemptDraft({
+      courseId: "course-1",
+      lessonId: "lesson-4",
+      responses: [
+        { questionIndex: 0, optionIndex: 2 },
+        { questionIndex: 3, optionIndex: 1 },
+      ],
+    });
+    expect(draft.kind).toBe("quiz-attempt");
+    expect(draft.url).toBe("/api/courses/course-1/lessons/lesson-4/quiz");
+    expect(draft.method).toBe("POST");
+    // Only the chosen option indices travel — never a correctIndex; the server scores by identity,
+    // so a queued attempt can't leak the answers to the device it was taken on.
+    expect(draft.body).toEqual({
+      responses: [
+        { questionIndex: 0, optionIndex: 2 },
+        { questionIndex: 3, optionIndex: 1 },
+      ],
+    });
+  });
 });
 
 describe("a self-grade queued offline is never silently lost", () => {
@@ -527,6 +550,30 @@ describe("progress and lesson edits queued offline never lost", () => {
     server(200);
     await outbox.flushOutbox();
     expect(seen).toEqual([{ url: PROGRESS_URL, body: { completed: true } }]);
+    expect(outbox.readOutbox()).toHaveLength(0);
+  });
+
+  it("holds a quiz attempt offline, then POSTs it to be scored on reconnect (no answers on device)", async () => {
+    const { outbox, kinds } = await load();
+    vi.stubGlobal("navigator", { onLine: false });
+    outbox.enqueue(
+      kinds.quizAttemptDraft({
+        courseId: "course-1",
+        lessonId: "lesson-4",
+        responses: [{ questionIndex: 0, optionIndex: 1 }],
+      }),
+    );
+
+    server(200);
+    await outbox.flushOutbox();
+    expect(seen).toEqual([]); // nothing scores offline — but the attempt is NOT lost
+    expect(outbox.outboxFor("quiz-attempt")).toHaveLength(1);
+
+    vi.stubGlobal("navigator", { onLine: true });
+    await outbox.flushOutbox();
+    expect(seen).toEqual([
+      { url: "/api/courses/course-1/lessons/lesson-4/quiz", body: { responses: [{ questionIndex: 0, optionIndex: 1 }] } },
+    ]);
     expect(outbox.readOutbox()).toHaveLength(0);
   });
 });
