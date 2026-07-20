@@ -985,6 +985,262 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
         ],
       },
     },
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    // SECTION 5 · What they built: the culture
+    // ═══════════════════════════════════════════════════════════════════════════════════════
+    {
+      slug: "gmw-harlem-renaissance",
+      title: "15 · The Harlem Renaissance and Jacob Lawrence",
+      section: "Section 5 · What they built: the culture",
+      body: `The Migration did not only move workers into factories. It concentrated a whole people, with its talents and traditions, into a few dense neighborhoods, and out of that concentration came one of the great flowerings of American art: the **Harlem Renaissance** of the 1920s.
+
+**Harlem became a capital.** As the Eastern stream (George Starling's route) filled upper Manhattan, Harlem grew into the largest Black urban neighborhood in the country and a magnet for writers, painters, and musicians. Historians usually date the Renaissance to roughly the **1920s into the mid-1930s**, and describe it as the moment a "New Negro" generation set out to define Black life on its own terms rather than through white stereotypes (National Museum of African American History and Culture [NMAAHC], n.d.).
+
+**One book named the movement.** In 1925, the Howard University philosopher **Alain Locke** edited an anthology, *The New Negro: An Interpretation*, that gathered the era's poetry, fiction, and essays and became its manifesto (Locke, 1925). Its writers included **Langston Hughes**, **Zora Neale Hurston**, **Claude McKay**, and **Countee Cullen**; in music, figures like **Duke Ellington** carried the same spirit. Notice the direct line from Section 2: many of these artists were themselves migrants or the children of migrants, writing about the South they or their parents had left.
+
+**One artist painted the Migration itself.** In 1941, a young painter named **Jacob Lawrence**, the son of migrants, finished *The Migration Series*: **60 small tempera panels** with captions that tell the Migration's whole arc, from the pressures of the South to the crowded promise of the North. It is now owned jointly by the **Museum of Modern Art** and the **Phillips Collection** (Museum of Modern Art [MoMA], n.d.). Lawrence's series is a rare thing for a high-school researcher: a **primary source about the Migration, made by a child of it, that you can actually look at** (search "Jacob Lawrence Migration Series" at either museum). Where this course points you to archives by description, Lawrence points you to images.
+
+**The payoff of density.** Overcrowding (Section 4) and artistic explosion were two faces of the same fact. Pack a people together, and the suffering is real, but so is the collision of talent that produces a renaissance.
+
+:::reveal What 1925 anthology named the Harlem Renaissance, who edited it, and what 1941 artwork tells the Migration's story in 60 panels? ||| Alain Locke edited "The New Negro: An Interpretation" (1925), the movement's manifesto. Jacob Lawrence's "The Migration Series" (1941), 60 tempera panels now shared by the Museum of Modern Art and the Phillips Collection, tells the Migration's arc in pictures.
+
+## Sources
+- Locke, A. (Ed.). (1925). *The New Negro: An interpretation*. Albert and Charles Boni.
+- National Museum of African American History and Culture. (n.d.). *A new African American identity: The Harlem Renaissance*. https://nmaahc.si.edu/explore/stories/new-african-american-identity-harlem-renaissance
+- Museum of Modern Art. (n.d.). *Jacob Lawrence: The Migration Series*. https://www.moma.org/calendar/exhibitions/444`,
+      recallContent: [
+        {
+          prompt: "Who edited The New Negro (1925) and why does it matter?",
+          answer: "Alain Locke. The anthology became the manifesto of the Harlem Renaissance, gathering writers like Langston Hughes, Zora Neale Hurston, Claude McKay, and Countee Cullen.",
+        },
+        {
+          prompt: "What is Jacob Lawrence's Migration Series, and why is it useful to a student?",
+          answer: "A 1941 set of 60 tempera panels telling the Migration's arc, painted by a son of migrants. It is a primary source about the Migration that you can actually look at (shared by MoMA and the Phillips Collection).",
+        },
+      ],
+    },
+    {
+      slug: "gmw-blues-to-motown",
+      title: "16 · From the Delta to Chess and Motown",
+      section: "Section 5 · What they built: the culture",
+      body: `Here is the single clearest way to see the Migration's cultural power: **follow the music.** The sounds that became the soundtrack of twentieth-century America were, over and over, Southern music carried north by migrants and transformed by the city.
+
+**Jazz rode the train from New Orleans to Chicago.** In 1922, a young cornet player named **Louis Armstrong** left New Orleans to join King Oliver's band in Chicago, arriving at the Illinois Central Station in July of that year (Britannica, n.d.-c). He was one migrant among thousands, but he helped turn Chicago into a jazz capital and became one of the most influential musicians in American history. The music followed the people.
+
+**The Delta blues became the Chicago blues, and got louder.** **McKinley Morganfield** — the world knows him as **Muddy Waters** — grew up on Stovall Plantation near Clarksdale, Mississippi, where the folklorist Alan Lomax recorded him for the Library of Congress in 1941. In **1943** he took the train to Chicago, and there he did something the city demanded: he **plugged in**. To be heard over a noisy South Side club, acoustic Delta blues became amplified, electric **Chicago blues** (Britannica, n.d.-d). That electrified sound, recorded on Chicago's Chess Records, is a direct ancestor of rock and roll. Section 8 follows it across an ocean.
+
+**Detroit built a hit factory, and the Migration built Detroit.** In **1959**, **Berry Gordy Jr.** founded a record company in Detroit that he would incorporate as **Motown**, working out of a house he nicknamed **"Hitsville U.S.A."** (Detroit Historical Society, n.d.). Here is the detail that ties it all together: Gordy's own parents had migrated to Detroit from **Sandersville, Georgia, in 1922**, part of the Great Migration (Detroit Historical Society, n.d.). Motown, one of the most successful Black-owned businesses in American history, was itself a **product of the Migration** — built by a migrant family, staffed and sung by the children of migrants, for an audience the Migration had gathered into Northern cities.
+
+**The pattern.** Jazz, blues, gospel (next lesson), and soul were not invented in the North. They were **carried** there and remade there. The Migration did not just relocate people; it relocated, concentrated, and industrialized a culture.
+
+:::reveal Trace one musical line from South to North: who brought the Delta blues to Chicago, what did the city make him do to the sound, and how was Motown itself a product of the Migration? ||| Muddy Waters (McKinley Morganfield) brought Delta blues from Mississippi to Chicago in 1943 and went electric to be heard in loud clubs, creating Chicago blues (recorded on Chess). Motown was founded by Berry Gordy in Detroit in 1959, and Gordy's own parents had migrated there from Georgia in 1922, so the label itself was a product of the Migration.
+
+## Sources
+- Britannica, T. Editors of Encyclopaedia. (n.d.-c). *Louis Armstrong*. In *Encyclopædia Britannica*. https://www.britannica.com/biography/Louis-Armstrong
+- Britannica, T. Editors of Encyclopaedia. (n.d.-d). *Muddy Waters*. In *Encyclopædia Britannica*. https://www.britannica.com/biography/Muddy-Waters
+- Detroit Historical Society. (n.d.). *Motown Records*. Encyclopedia of Detroit. https://detroithistorical.org/learn/encyclopedia-of-detroit/motown-records`,
+      recallContent: [
+        {
+          prompt: "What did Muddy Waters do to the Delta blues when he reached Chicago, and why?",
+          answer: "He amplified it — went electric — to be heard over noisy South Side clubs, creating Chicago blues (recorded on Chess Records), a direct ancestor of rock and roll.",
+        },
+        {
+          prompt: "How was Motown itself a product of the Great Migration?",
+          answer: "Berry Gordy founded it in Detroit in 1959, and his own parents had migrated there from Sandersville, Georgia, in 1922. The label was built by a migrant family for an audience the Migration had gathered north.",
+        },
+      ],
+    },
+    {
+      slug: "gmw-church-and-press",
+      title: "17 · The church, gospel, and the Black press",
+      section: "Section 5 · What they built: the culture",
+      body: `Music and art get the headlines, but two quieter institutions did the daily work of turning strangers into a community: the **church** and the **newspaper**.
+
+**The Black church was the first thing migrants rebuilt.** Newcomers who felt lost in a huge, cold city could find, in a storefront church, people who talked like them, cooked like them, and had come from the same Southern counties. Churches ran employment networks, mutual-aid funds, day care, and burial societies; they were social-service agency, town hall, and concert hall at once. As Section 6 will show, they were also the launch pad for Black political power.
+
+**And the church produced a new sacred music: gospel.** **Thomas A. Dorsey**, a Georgia-born migrant who had played blues and jazz, fused that bluesy feeling with Christian lyrics in 1920s and 1930s Chicago, and is widely called the **"father of gospel music."** He served for decades as music director at Chicago's **Pilgrim Baptist Church**, one of the largest Black churches in the country (Britannica, n.d.-e). Gospel is a perfect emblem of the Migration: **Southern feeling, Northern city, brand-new form.**
+
+**The Black press knit the whole migration together.** You already met the **Chicago Defender** (Section 3). It was not alone. The **Pittsburgh Courier** grew into one of the most powerful Black newspapers in the country, with editions in more than a dozen cities and a peak circulation around **500,000**; the **New York Amsterdam News** and the **Philadelphia Tribune** anchored their cities (New Pittsburgh Courier, 2016). These papers did four jobs at once: they **advertised** the North, **coached** newcomers on city life, **reported** the news white papers ignored, and **campaigned** for civil rights, running the "Double V" campaign in World War II (victory over fascism abroad and racism at home) that the Courier made famous.
+
+**Add it up.** Church, press, music, art, and business turned migrant districts into self-sustaining Black cities-within-cities. That density of institutions is exactly what made the next thing possible: political power.
+
+:::reveal Name the "father of gospel music" and one major Black newspaper besides the Chicago Defender, and say what such institutions did for migrants. ||| Thomas A. Dorsey, a Georgia-born migrant, is called the father of gospel music (long the music director at Chicago's Pilgrim Baptist Church). The Pittsburgh Courier (also the Amsterdam News, Philadelphia Tribune) was another major Black paper. Churches and papers gave migrants community, jobs, mutual aid, news, and a civil-rights voice.
+
+## Sources
+- Britannica, T. Editors of Encyclopaedia. (n.d.-e). *Thomas Andrew Dorsey*. In *Encyclopædia Britannica*. https://www.britannica.com/biography/Thomas-Andrew-Dorsey
+- New Pittsburgh Courier. (2016, May 6). *The Great Migration was a triumph of the Black press*. https://newpittsburghcourier.com/2016/05/06/the-great-migration-was-a-triumph-of-the-black-press/`,
+    },
+    {
+      slug: "gmw-quiz-culture",
+      title: "18 · Quiz: what they built (culture)",
+      section: "Section 5 · What they built: the culture",
+      quiz: {
+        passingScore: 70,
+        shuffleOptions: true,
+        questions: [
+          {
+            prompt: "What was the Harlem Renaissance?",
+            options: [
+              "A housing program",
+              "A 1920s–1930s flowering of Black art, writing, and music centered in Harlem",
+              "A labor union",
+              "A Southern church movement",
+            ],
+            correctIndex: 1,
+            explanation: "As the Eastern stream filled Harlem, a 'New Negro' generation redefined Black life through art on its own terms.",
+            sourceLessonSlug: "gmw-harlem-renaissance",
+          },
+          {
+            prompt: "Who edited the 1925 anthology The New Negro, the movement's manifesto?",
+            options: ["Langston Hughes", "Alain Locke", "Berry Gordy", "W. E. B. Du Bois"],
+            correctIndex: 1,
+            explanation: "Howard University philosopher Alain Locke edited The New Negro (1925), gathering Hughes, Hurston, McKay, Cullen, and others.",
+            sourceLessonSlug: "gmw-harlem-renaissance",
+          },
+          {
+            prompt: "Jacob Lawrence's The Migration Series (1941) is:",
+            options: [
+              "A novel",
+              "A set of 60 painted panels telling the Migration's story, made by a son of migrants",
+              "A jazz album",
+              "A government report",
+            ],
+            correctIndex: 1,
+            explanation: "60 tempera panels, now shared by MoMA and the Phillips Collection — a primary visual source about the Migration.",
+            sourceLessonSlug: "gmw-harlem-renaissance",
+          },
+          {
+            prompt: "Why does this course call Jacob Lawrence's series an unusually useful source for students?",
+            options: [
+              "Because it is very long",
+              "Because it is a primary source about the Migration, made by a child of it, that you can actually look at",
+              "Because it was painted by the government",
+              "Because it is a secret",
+            ],
+            correctIndex: 1,
+            explanation: "Most primary sources here are pointed to by description; Lawrence's panels are viewable images made by a participant's child.",
+            sourceLessonSlug: "gmw-harlem-renaissance",
+          },
+          {
+            prompt: "Louis Armstrong helped make which city a jazz capital after leaving New Orleans in 1922?",
+            options: ["Chicago", "Los Angeles", "Atlanta", "Boston"],
+            correctIndex: 0,
+            explanation: "Armstrong took the train to Chicago in July 1922 to join King Oliver's band — the music followed the migrants.",
+            sourceLessonSlug: "gmw-blues-to-motown",
+          },
+          {
+            prompt: "What did Muddy Waters do to the Delta blues after moving to Chicago in 1943?",
+            options: [
+              "Made it quieter and acoustic",
+              "Amplified it — went electric — to be heard in loud clubs, creating Chicago blues",
+              "Abandoned it for classical music",
+              "Returned it to the plantation",
+            ],
+            correctIndex: 1,
+            explanation: "Electric Chicago blues, recorded on Chess Records, is a direct ancestor of rock and roll.",
+            sourceLessonSlug: "gmw-blues-to-motown",
+          },
+          {
+            prompt: "How was Motown itself a product of the Great Migration?",
+            options: [
+              "It was founded in the South",
+              "Berry Gordy founded it in Detroit in 1959, and his own parents had migrated there from Georgia in 1922",
+              "It only recorded white artists",
+              "It was owned by a railroad",
+            ],
+            correctIndex: 1,
+            explanation: "A migrant family built one of the most successful Black-owned businesses in U.S. history, for an audience the Migration had gathered north.",
+            sourceLessonSlug: "gmw-blues-to-motown",
+          },
+          {
+            prompt: "The broad pattern of the Migration's music is best described as:",
+            options: [
+              "Northern music sent south",
+              "Southern music carried north and remade in the city (jazz, blues, gospel, soul)",
+              "Music invented from scratch in the North",
+              "Music that never changed",
+            ],
+            correctIndex: 1,
+            explanation: "The Migration relocated, concentrated, and industrialized a Southern-rooted culture.",
+            sourceLessonSlug: "gmw-blues-to-motown",
+          },
+          {
+            prompt: "Who is widely called the 'father of gospel music'?",
+            options: ["Louis Armstrong", "Thomas A. Dorsey", "Berry Gordy", "Muddy Waters"],
+            correctIndex: 1,
+            explanation: "Dorsey, a Georgia-born migrant, fused blues feeling with Christian lyrics in Chicago and directed music at Pilgrim Baptist Church.",
+            sourceLessonSlug: "gmw-church-and-press",
+          },
+          {
+            prompt: "Why is gospel music 'a perfect emblem of the Migration'?",
+            options: [
+              "Because it was invented in the South",
+              "Because it combined Southern feeling, a Northern city, and a brand-new form",
+              "Because it had no words",
+              "Because it was only sung in Detroit",
+            ],
+            correctIndex: 1,
+            explanation: "Like the Migration itself, gospel took something Southern, moved it to a Northern city, and made something new.",
+            sourceLessonSlug: "gmw-church-and-press",
+          },
+          {
+            prompt: "Beyond worship, what practical roles did the Black church play for migrants?",
+            options: [
+              "None; it was only for Sundays",
+              "Employment networks, mutual aid, day care, burial societies — social-service agency, town hall, and concert hall at once",
+              "It discouraged newcomers",
+              "It replaced the newspaper",
+            ],
+            correctIndex: 1,
+            explanation: "The church was often the first institution migrants rebuilt, and it did much of the daily work of community.",
+            sourceLessonSlug: "gmw-church-and-press",
+          },
+          {
+            prompt: "Which was a major Black newspaper of the Migration era besides the Chicago Defender?",
+            options: ["The Pittsburgh Courier", "The New York Times", "The Wall Street Journal", "The Boston Globe"],
+            correctIndex: 0,
+            explanation: "The Courier peaked around 500,000 circulation with editions in many cities; the Amsterdam News and Philadelphia Tribune were others.",
+            sourceLessonSlug: "gmw-church-and-press",
+          },
+          {
+            prompt: "The Pittsburgh Courier's World War II 'Double V' campaign called for:",
+            options: [
+              "Two victories in football",
+              "Victory over fascism abroad AND victory over racism at home",
+              "A second world war",
+              "Two newspapers per city",
+            ],
+            correctIndex: 1,
+            explanation: "Double V linked the fight against fascism overseas to the fight against racism in the United States.",
+            sourceLessonSlug: "gmw-church-and-press",
+          },
+          {
+            prompt: "What four jobs did the Black press do at once for migrants?",
+            options: [
+              "Advertised the North, coached newcomers, reported ignored news, and campaigned for civil rights",
+              "Only printed sports scores",
+              "Sold train tickets and nothing else",
+              "Worked only in the South",
+            ],
+            correctIndex: 0,
+            explanation: "These papers were recruiter, guidebook, newsroom, and advocate all at once.",
+            sourceLessonSlug: "gmw-church-and-press",
+          },
+          {
+            prompt: "How did the density of migrant districts relate to the culture they produced?",
+            options: [
+              "Density prevented any culture",
+              "Overcrowding and artistic explosion were two faces of the same fact — packing a people together collided their talent",
+              "The culture came from empty land",
+              "Density only caused disease and nothing else",
+            ],
+            correctIndex: 1,
+            explanation: "The suffering of overcrowding was real, but so was the collision of concentrated talent that produced renaissances.",
+            sourceLessonSlug: "gmw-harlem-renaissance",
+          },
+        ],
+      },
+    },
     // <<< APPEND NEXT SECTION ABOVE THIS LINE >>>
   ],
 };
