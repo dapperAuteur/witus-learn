@@ -53,6 +53,12 @@ export function MediaPlayer({
   const lastSentValue = useRef(-1);
   // Set once we've restored (or decided not to), so a later metadata event can't yank playback back.
   const restored = useRef(false);
+  // webm recorded with MediaRecorder ships no duration in its header, so the browser reports
+  // el.duration === Infinity and the native seek bar can't show how much is left. We fix it once by
+  // seeking past the end (forces the browser to compute the real duration); `fixing` masks that
+  // giant currentTime so it never lands in state or a saved position. See onLoadedMetadata.
+  const durationFixed = useRef(false);
+  const fixing = useRef(false);
 
   // Fire-and-forget position save. `keepalive` lets it survive the page being closed, which is
   // exactly when the last position matters most. Failures are silent — a lost position just
@@ -102,10 +108,9 @@ export function MediaPlayer({
 
   // Restore the saved position once the duration is known (we need it to tell "stopped near the
   // end" — where restarting is right — from "stopped in the middle").
-  const onLoadedMetadata = (e: SyntheticEvent<HTMLMediaElement>) => {
+  const restorePosition = (el: HTMLMediaElement) => {
     if (restored.current) return;
     restored.current = true;
-    const el = e.currentTarget;
     const duration = Number.isFinite(el.duration) ? el.duration : 0;
     if (resumeAt < MIN_RESUME_S) return;
     if (duration > 0 && resumeAt > duration - END_SLACK_S) return; // basically finished → start over
@@ -114,7 +119,29 @@ export function MediaPlayer({
     setResumedFrom(resumeAt);
   };
 
+  const onLoadedMetadata = (e: SyntheticEvent<HTMLMediaElement>) => {
+    const el = e.currentTarget;
+    // A duration-less webm: seek past the end once to make the browser compute the real duration,
+    // then snap back to the start and restore. Until this runs, the native timeline is inaccurate.
+    if (el.duration === Infinity && !durationFixed.current) {
+      durationFixed.current = true;
+      fixing.current = true;
+      const settle = () => {
+        el.removeEventListener("timeupdate", settle);
+        fixing.current = false;
+        el.currentTime = 0;
+        setTime(0);
+        restorePosition(el); // duration is finite now
+      };
+      el.addEventListener("timeupdate", settle);
+      el.currentTime = 1e101; // clamped by the browser; the clamp is what forces duration to resolve
+      return;
+    }
+    restorePosition(el);
+  };
+
   const onTime = (e: SyntheticEvent<HTMLMediaElement>) => {
+    if (fixing.current) return; // ignore the giant currentTime during duration detection
     const t = e.currentTarget.currentTime;
     setTime(t);
     // Throttled: at most one write per SAVE_EVERY_MS, and only once past the "did they really

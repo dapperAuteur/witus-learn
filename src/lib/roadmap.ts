@@ -267,6 +267,11 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   link go out?" without being able to use it. \`form_type\` is per kind
   (\`learn-witus-email:cohort-invite\`) so triage can sort. The mirror runs **after** the delivery
   attempt, no-ops when the Inbox is unconfigured, and is wrapped so it **can never fail a send**.
+- ✅ **Media player: accurate webm timeline + read-along text.** MediaRecorder audio/video ships no
+  duration header, so \`el.duration\` was \`Infinity\` and the native seek bar's "time left" was wrong;
+  the player now seeks past the end once to make the browser resolve the real duration (single and
+  multi-part). Audio/video lessons also keep their written \`textContent\` visible under the player, so
+  the learner can read and follow along, not only the synced transcript.
 - ✅ **Resume where you left off** (\`feat/resume-where-you-left-off\`) — progress already recorded
   **skipping around** faithfully (\`lesson_progress\` is keyed on \`(user, lesson)\`, not a linear
   pointer), but a row was only written on **"Mark complete"** — opening a lesson and reading half of

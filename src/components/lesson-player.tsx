@@ -39,7 +39,7 @@ export function LessonPlayer({
       const transcript = parseTranscript(lesson.transcriptContent);
       // A real media file gets the full player (clickable chapters + synced transcript).
       if (isDirectMediaFile(lesson.contentUrl)) {
-        return (
+        const player = (
           <MediaPlayer
             kind="video"
             src={lesson.contentUrl}
@@ -48,6 +48,15 @@ export function LessonPlayer({
             transcript={transcript}
             {...track}
           />
+        );
+        // Keep the written lesson visible with the video (read-along), when it carries body text.
+        return lesson.textContent ? (
+          <div className="space-y-4">
+            {player}
+            <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} />
+          </div>
+        ) : (
+          player
         );
       }
       // YouTube/Vimeo/other → embed; chapters/transcript shown statically alongside.
@@ -64,19 +73,29 @@ export function LessonPlayer({
     case "audio": {
       // A long recording split into parts plays back in sequence.
       const parts = Array.isArray(lesson.mediaParts) ? lesson.mediaParts : [];
-      if (parts.length > 1) {
-        return <MultiPartPlayer kind="audio" parts={parts.map((p) => p.url)} title={lesson.title} />;
-      }
-      return lesson.contentUrl ? (
-        <MediaPlayer
-          kind="audio"
-          src={lesson.contentUrl}
-          chapters={parseChapters(lesson.audioChapters)}
-          transcript={parseTranscript(lesson.transcriptContent)}
-          {...track}
-        />
+      const player =
+        parts.length > 1 ? (
+          <MultiPartPlayer kind="audio" parts={parts.map((p) => p.url)} title={lesson.title} />
+        ) : lesson.contentUrl ? (
+          <MediaPlayer
+            kind="audio"
+            src={lesson.contentUrl}
+            chapters={parseChapters(lesson.audioChapters)}
+            transcript={parseTranscript(lesson.transcriptContent)}
+            {...track}
+          />
+        ) : (
+          <Empty />
+        );
+      // Keep the written lesson visible WITH the audio so the learner can read and follow along —
+      // many audio lessons carry their text in `textContent`, not a synced transcript.
+      return lesson.textContent ? (
+        <div className="space-y-4">
+          {player}
+          <LessonBody text={lesson.textContent} courseId={lesson.courseId} lessonId={lesson.id} trackRecall={trackRecall} />
+        </div>
       ) : (
-        <Empty />
+        player
       );
     }
 
