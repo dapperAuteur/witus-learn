@@ -445,6 +445,15 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`:::reveal\` click-to-reveal, and the 180 recall beats became self-graded recall cards.
   Authored explanations cite 14 CFR only where a real rule governs. Re-run \`pnpm seed:faa\`
   (\`--dry-run\` prints the breakdown without touching the DB).
+- ✅ **Section quizzes can sit WITHIN a module** (\`fix/faa-section-quizzes\`). The FAA importer no
+  longer forces every quiz to the module end: a quiz row in \`quizzes-import.csv\` may opt in with an
+  \`after_lesson_order\` = the lesson \`n\` it should follow, and \`seed-faa.ts\` interleaves it right
+  after that lesson (the module review still sits last). Untagged quizzes are unchanged, so this is a
+  no-op until the data is tagged. The placement logic is a pure, unit-tested helper
+  (\`scripts/lib/faa-quiz-placement.ts\`) that never drops or duplicates a quiz. Module 2 Regulations
+  (the long one, 12 lessons, 3 quizzes all at the end today) is the intended first user: its
+  Categories quiz maps to lessons 9 to 12. Actual tag values are a content decision for BAM (see
+  \`plans/user-tasks/171\`); no data was retagged. Re-run \`pnpm seed:faa\` after any tagging.
 - ✅ **Quizzes score offline, integrity intact:** submitting a quiz with no network queues the attempt
   to the outbox (\`quiz-attempt\` kind) and scores it server-side on reconnect, so an attempt taken on a
   plane is never lost. The correct answers are still **never** sent to the device (server-scored as

@@ -8,6 +8,7 @@ import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
+import { sequenceModuleItems } from "./lib/faa-quiz-placement";
 import { AUTHORED_FAA_QUIZZES } from "./data/faa-part-107-quizzes";
 import type { AuthoredCourse, AuthoredLesson } from "./data/authored-course";
 import type { QuizContent } from "../src/lib/quiz";
@@ -430,6 +431,11 @@ interface QuizRow {
   lesson_order: string;
   title: string;
   quiz_content: string;
+  /** OPTIONAL, opt-in column. When set to a lesson `n` that exists in the same module,
+   *  the importer places this quiz right AFTER that lesson (mid-module) instead of at the
+   *  module end. Blank / absent / non-numeric / pointing at a missing lesson => the quiz
+   *  keeps the legacy end-of-module placement. See `sequenceModuleItems`. */
+  after_lesson_order?: string;
 }
 interface ModuleQuiz {
   moduleOrder: number;
@@ -437,6 +443,9 @@ interface ModuleQuiz {
   title: string;
   quiz: QuizContent;
   origin: "csv" | "authored";
+  /** Lesson `n` within the module to place this quiz after (opt-in). `undefined` => the
+   *  quiz stays at the module end, which is every quiz today until the CSV is tagged. */
+  afterLessonNumber?: number;
 }
 function readQuizzes(): ModuleQuiz[] {
   let rows: QuizRow[];
@@ -448,13 +457,19 @@ function readQuizzes(): ModuleQuiz[] {
   }
   return rows
     .filter((r) => r.quiz_content?.trim())
-    .map((r) => ({
-      moduleOrder: parseInt(r.module_order, 10),
-      lessonOrder: parseInt(r.lesson_order, 10),
-      title: r.title,
-      quiz: convertQuiz(JSON.parse(r.quiz_content) as CentOSQuiz),
-      origin: "csv" as const,
-    }));
+    .map((r) => {
+      const after = r.after_lesson_order?.trim();
+      return {
+        moduleOrder: parseInt(r.module_order, 10),
+        lessonOrder: parseInt(r.lesson_order, 10),
+        title: r.title,
+        quiz: convertQuiz(JSON.parse(r.quiz_content) as CentOSQuiz),
+        origin: "csv" as const,
+        // Only honour a clean positive integer; the placement helper still validates it
+        // against the module's real lesson numbers and falls back to the end if it misses.
+        ...(after && /^\d+$/.test(after) ? { afterLessonNumber: parseInt(after, 10) } : {}),
+      };
+    });
 }
 
 function readGlossary(): { term: string; definition: string }[] {
@@ -490,7 +505,13 @@ interface BuildStats {
     lessons: number;
     /** The module's review lesson, when the source has one (modules 0/12/13 do not). */
     review: { title: string; reveals: number; recallCards: number } | null;
-    quizzes: { title: string; questions: number; origin: "csv" | "authored" }[];
+    quizzes: {
+      title: string;
+      questions: number;
+      origin: "csv" | "authored";
+      /** Lesson `n` this quiz was interleaved after, or null when it sits at the module end. */
+      placedAfterLesson: number | null;
+    }[];
     reveals: number;
     recallCards: number;
     unconvertedQa: number;
@@ -512,6 +533,9 @@ function buildCourse(): { course: AuthoredCourse; stats: BuildStats } {
     let recallCards = 0;
     let unconvertedQa = 0;
 
+    // Build the lesson entries (keyed by `n`) but hold off pushing — quizzes may need to
+    // interleave between them, so the final push order is decided by sequenceModuleItems below.
+    const lessonEntryByN = new Map<number, AuthoredLesson>();
     for (const l of ordered) {
       const slug = `m${m.moduleOrder}-l${l.n}-${slugify(l.title)}`.slice(0, 100);
       slugByLessonNumber.set(l.n, slug);
@@ -519,7 +543,7 @@ function buildCourse(): { course: AuthoredCourse; stats: BuildStats } {
       reveals += cleaned.reveals;
       recallCards += cleaned.recall.length;
       unconvertedQa += cleaned.unconvertedQa;
-      lessons.push({
+      lessonEntryByN.set(l.n, {
         slug,
         title: l.title,
         section,
@@ -528,28 +552,30 @@ function buildCourse(): { course: AuthoredCourse; stats: BuildStats } {
       });
     }
 
-    // Then the module REVIEW — last lesson of the module, before the quiz: review, then test.
-    // Same `section` as the module's other lessons, so it lands inside the existing collapsible
-    // section rather than orphaning itself into a new one.
+    // The module REVIEW — a recap that sits at the module end, before the end-quizzes: review,
+    // then test. Same `section` as the module's other lessons, so it lands inside the existing
+    // collapsible section rather than orphaning itself into a new one.
     let review: BuildStats["modules"][number]["review"] = null;
+    let reviewEntry: AuthoredLesson | null = null;
     if (m.review?.lessonMarkdown?.trim()) {
       const cleaned = cleanLessonMarkdown(m.review.lessonMarkdown, { review: true });
       reveals += cleaned.reveals;
       recallCards += cleaned.recall.length;
       unconvertedQa += cleaned.unconvertedQa;
       const title = `Module ${m.moduleOrder} Review — ${topicFor(m.moduleOrder)}`;
-      lessons.push({
+      reviewEntry = {
         slug: `m${m.moduleOrder}-review`,
         title,
         section,
         body: cleaned.body,
         ...(cleaned.recall.length > 0 ? { recallContent: cleaned.recall } : {}),
-      });
+      };
       review = { title, reveals: cleaned.reveals, recallCards: cleaned.recall.length };
     }
 
-    // Every module ends with a quiz: the imported ones where the CSV has them, our authored
-    // ones (scripts/data/faa-part-107-quizzes.ts) everywhere else.
+    // Each module's quizzes: the imported ones where the CSV has them, our authored ones
+    // (scripts/data/faa-part-107-quizzes.ts) everywhere else. By default they all sit at the
+    // module end; a CSV quiz tagged with `after_lesson_order` interleaves after that lesson.
     const fromCsv = csvQuizzes
       .filter((q) => q.moduleOrder === m.moduleOrder)
       .sort((a, b) => a.lessonOrder - b.lessonOrder);
@@ -575,13 +601,30 @@ function buildCourse(): { course: AuthoredCourse; stats: BuildStats } {
         }));
 
     const quizzes = [...fromCsv, ...authored];
-    for (const q of quizzes) {
-      lessons.push({
-        slug: `m${m.moduleOrder}-quiz-${q.lessonOrder}`,
-        title: q.title,
-        section,
-        quiz: q.quiz,
-      });
+    const quizEntries = quizzes.map((q) => ({
+      slug: `m${m.moduleOrder}-quiz-${q.lessonOrder}`,
+      title: q.title,
+      section,
+      quiz: q.quiz,
+    }));
+
+    // Interleave: lessons in order, each quiz after the lesson it opts into, review, then any
+    // remaining (untagged) quizzes at the module end. Untagged everywhere => the legacy layout.
+    const plan = sequenceModuleItems(
+      ordered.map((l) => l.n),
+      quizzes.map((q) => q.afterLessonNumber),
+      reviewEntry != null,
+    );
+    const placedAfterByQuiz = new Array<number | null>(quizzes.length).fill(null);
+    for (const item of plan) {
+      if (item.kind === "lesson") {
+        lessons.push(lessonEntryByN.get(item.lessonNumber)!);
+      } else if (item.kind === "review") {
+        if (reviewEntry) lessons.push(reviewEntry);
+      } else {
+        lessons.push(quizEntries[item.quizIndex]);
+        placedAfterByQuiz[item.quizIndex] = item.afterLessonNumber;
+      }
     }
 
     stats.modules.push({
@@ -589,10 +632,11 @@ function buildCourse(): { course: AuthoredCourse; stats: BuildStats } {
       section,
       lessons: ordered.length,
       review,
-      quizzes: quizzes.map((q) => ({
+      quizzes: quizzes.map((q, i) => ({
         title: q.title,
         questions: q.quiz.questions.length,
         origin: q.origin,
+        placedAfterLesson: placedAfterByQuiz[i],
       })),
       reveals,
       recallCards,
@@ -623,7 +667,13 @@ function printBreakdown(course: AuthoredCourse, stats: BuildStats): void {
   let reviews = 0;
   for (const m of stats.modules) {
     const quizLabel = m.quizzes.length
-      ? m.quizzes.map((q) => `${q.title} (${q.questions}q, ${q.origin})`).join(", ")
+      ? m.quizzes
+          .map(
+            (q) =>
+              `${q.title} (${q.questions}q, ${q.origin}` +
+              `${q.placedAfterLesson != null ? `, after lesson ${q.placedAfterLesson}` : ", module end"})`,
+          )
+          .join(", ")
       : "!! NO QUIZ !!";
     console.log(`  ${m.section}`);
     console.log(`    lessons: ${m.lessons}  reveals: ${m.reveals}  recall cards: ${m.recallCards}`);
