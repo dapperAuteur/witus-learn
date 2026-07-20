@@ -568,6 +568,21 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   unverified in fact-checking (Philadelphia's "500%" figure, a Ray Atkeson 1943 photo attribution)
   were cut/softened rather than asserted. Ships with the **Great Migration map** (see Platform
   Maps). \`pnpm seed:courses\` picks it up. Companion to Hoodoo + Civics.
+- 🔧 **The Great Migration: How Six Million People Remade America (and the World)** (Culture &
+  History, \`content/great-migration-world\`). A high-school-level companion to the homeschool
+  Great Migration course above, built on Isabel Wilkerson's three-family frame (Ida Mae Gladney,
+  George Starling, Robert Foster) with an explicit GLOBAL pillar. 8 sections, 29 lessons (20
+  teaching, 8 section quizzes with 15-question banks, 1 whole-course exercise): the push (Jim Crow,
+  sharecropping and debt peonage, racial terror, the boll weevil), the pull (WWI/WWII industry, the
+  Chicago Defender, kinship chains), the routes and cities, the culture (Harlem Renaissance, Chicago
+  blues, Motown, the Black church and press), the political power (A. Philip Randolph and Executive
+  Order 8802, the Northern Black vote), the costs (redlining, Shelley v. Kraemer, the second ghetto,
+  white flight, Sugrue's deindustrialization), and the world (jazz to Paris, Chicago blues to global
+  rock, Dudziak's Cold War civil rights, the New Great Migration reversal). Cited throughout
+  (Wilkerson, Lemann, Grossman, Marks, Hirsch, Dudziak, National Archives, EJI); contested figures
+  hedged, and the Philadelphia "500%" flagged as a verify, do not repeat moment. \`pnpm seed:courses\`
+  picks it up. Distinct slug (\`great-migration-and-the-world\`), file, and export from the course
+  above; cross-links Hoodoo, History of Unions, and Pan-Africanism.
 - 🔧 **Training the Colonizer: The Knowledge That Was Taken** (Culture & History,
   \`content/training-the-colonizer\`). What enslaved and colonized people taught their enslavers, for
   high school students. 6 sections: rice and the **Black Rice debate** (Carney 2001 taught AS a debate
