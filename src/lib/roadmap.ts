@@ -522,6 +522,12 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   quizzes). 79 lessons, 16 quizzes, 158 recall cards total. Seed \`pnpm seed:langchain\` (auto-discovers
   \`scripts/data/langchain/*\`). Pipeline gained \`recallContent\` + \`relatedProducts\` (cross-promo).
   Next: BAM builds the **learning path** Triage → Foundation (wanderlearn) → Project (centenarian).
+- ✅ **Series membership on the course page** (\`feat/series-ordering-banner\`): a course that belongs to
+  a learning path now shows a **"Part N of M in \<track\> (recommended order)"** banner with the ordered
+  course list and a "Next in this track" link, so a learner knows the series exists and where this
+  course sits (\`getPathsForCourse\` + the course page). Learn.WitUS's \`paths\` flag is flipped on
+  (re-run \`pnpm seed:tenants\`); build the track at \`/admin/paths\` and it lights up. Closes the gap
+  where the AI courses read as a loose pile instead of an ordered series.
 - ✅ **Admin-managed stream settings** (\`feat/stream-settings\`) — the persistent per-tenant stream
   (what would've been \`RTMP_STREAM_PLAYBACK_URL\` / \`STREAM_EMBED_CODE\` env vars) is now editable at
   **/admin/live**. Paste a provider embed (iframe-in-div) or a direct URL; the server **extracts the
