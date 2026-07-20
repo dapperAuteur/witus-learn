@@ -7,6 +7,8 @@ import { CloudinaryUpload } from "./cloudinary-upload";
 import { ChapterEditor } from "./chapter-editor";
 import { parseChapters, parseTranscript, type Chapter, type TranscriptSegment } from "@/lib/media";
 import { chaptersFromSegments, parseSrt } from "@/lib/srt";
+import { enqueue, outboxSupported } from "@/lib/offline-outbox";
+import { lessonEditDraft, lessonEditUrl } from "@/lib/outbox-kinds";
 
 export interface ManagedLesson {
   id: string;
@@ -62,8 +64,32 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
     return r.ok;
   }
 
+  // Lesson edits go through their own fetch (not the generic api() helper) so a network failure can
+  // fall back to the offline outbox instead of being silently dropped. On reconnect the queued PATCH
+  // replays verbatim (OfflineOutboxFlusher in the root layout). Only edits are queued — creating and
+  // deleting lessons offline is out of scope (a new lesson has no id yet).
   async function patch(id: string, body: Record<string, unknown>) {
-    return api(`/api/courses/${courseId}/lessons/${id}`, "PATCH", body);
+    setBusy(true);
+    try {
+      const r = await fetch(lessonEditUrl(courseId, id), {
+        method: "PATCH",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      setBusy(false);
+      if (r.ok) router.refresh();
+      return r.ok; // an HTTP error (validation etc.) is not a network problem — don't queue it
+    } catch {
+      // Offline: queue the edit so it syncs on reconnect. Treat as accepted so the UI moves on.
+      setBusy(false);
+      const title = lessons.find((l) => l.id === id)?.title;
+      const label = `Edit ${title ? `"${title}"` : "lesson"}: ${Object.keys(body).join(", ")}`;
+      if (outboxSupported() && enqueue(lessonEditDraft({ courseId, lessonId: id, changes: body, label }))) {
+        router.refresh();
+        return true;
+      }
+      return false;
+    }
   }
 
   async function move(index: number, dir: -1 | 1) {

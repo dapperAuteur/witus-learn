@@ -44,6 +44,11 @@ export const PROBLEM_REPORT = "problem-report";
 export const CURRICULUM_FEEDBACK = "curriculum-feedback";
 /** A "Check yourself" self-grade on a `:::reveal` card. Signed-in (the API 401s otherwise). */
 export const RECALL_GRADE = "recall-grade";
+/** Mark a lesson complete. Signed-in. Queued so completing a lesson on a plane still records. */
+export const PROGRESS = "progress";
+/** An instructor edit to a lesson (title/body/flags/order). Signed-in + owns the course. Queued so
+ *  edits made offline are not silently dropped when the network returns. */
+export const LESSON_EDIT = "lesson-edit";
 
 /** `/api/report`'s enum — what KIND of problem, not the outbox kind. */
 export type ProblemKind = "bug" | "feedback" | "idea" | "other";
@@ -54,7 +59,7 @@ export type FeedbackKind = "correction" | "comment" | "question";
 export type OutboxDraft = {
   kind: string;
   url: string;
-  method: "POST";
+  method: "POST" | "PATCH";
   body: unknown;
   label: string;
 };
@@ -149,5 +154,53 @@ export function recallGradeDraft(input: {
     method: "POST",
     body,
     label: `${input.gotIt ? "Got it" : "Missed"}: ${input.prompt}`,
+  };
+}
+
+/** The body the progress API parses. Mirrors its Zod schema — keep them in step. */
+export type ProgressBody = { completed: boolean };
+
+export function progressUrl(courseId: string, lessonId: string): string {
+  return `/api/courses/${courseId}/lessons/${lessonId}/progress`;
+}
+
+/** Mark-a-lesson-complete, ready to queue or to POST. The lesson is in the URL, so a completion
+ *  queued on lesson 4 offline still records lesson 4 when it sends after the network returns.
+ *  Completing is idempotent server-side, so a replay is harmless. */
+export function progressDraft(input: {
+  courseId: string;
+  lessonId: string;
+  completed: boolean;
+}): OutboxDraft {
+  const body: ProgressBody = { completed: input.completed };
+  return {
+    kind: PROGRESS,
+    url: progressUrl(input.courseId, input.lessonId),
+    method: "POST",
+    body,
+    label: input.completed ? "Marked complete" : "Marked incomplete",
+  };
+}
+
+export function lessonEditUrl(courseId: string, lessonId: string): string {
+  return `/api/courses/${courseId}/lessons/${lessonId}`;
+}
+
+/** An instructor lesson edit, ready to queue or to PATCH. `changes` is the exact partial the API
+ *  already accepts (title/body/flags/sortOrder/…), captured verbatim so it replays as-authored —
+ *  no re-derivation. Two offline edits to the same lesson queue as two PATCHes and replay in order
+ *  (last write wins per field), which is the same result as if they'd been sent live. */
+export function lessonEditDraft(input: {
+  courseId: string;
+  lessonId: string;
+  changes: Record<string, unknown>;
+  label: string;
+}): OutboxDraft {
+  return {
+    kind: LESSON_EDIT,
+    url: lessonEditUrl(input.courseId, input.lessonId),
+    method: "PATCH",
+    body: input.changes,
+    label: input.label,
   };
 }

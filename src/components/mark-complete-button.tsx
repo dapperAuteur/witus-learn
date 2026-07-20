@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { enqueue, outboxSupported } from "@/lib/offline-outbox";
+import { progressDraft, progressUrl } from "@/lib/outbox-kinds";
 
 // Marks a lesson complete via the progress API. Deliberately does NOT jump the viewport — the old
 // behaviour looked like the page had navigated to the next lesson. Instead it flips in place, and
@@ -50,15 +52,26 @@ export function MarkCompleteButton({
 
   async function onClick() {
     setPending(true);
-    const res = await fetch(`/api/courses/${courseId}/lessons/${lessonId}/progress`, {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ completed: true }),
-    });
-    setPending(false);
-    if (res.ok) {
-      setJustCompleted(true); // flip in place — no scroll jump
-      router.refresh(); // refetch server state (gating) without moving the viewport
+    try {
+      const res = await fetch(progressUrl(courseId, lessonId), {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ completed: true }),
+      });
+      setPending(false);
+      if (res.ok) {
+        setJustCompleted(true); // flip in place — no scroll jump
+        router.refresh(); // refetch server state (gating) without moving the viewport
+      }
+    } catch {
+      // Offline: the fetch threw. Queue the completion so it records when the network returns, and
+      // flip in place now so the learner isn't stuck on "Saving…". router.refresh() can't refetch
+      // server-side gating offline, so the optimistic "Completed" is the honest best-effort until
+      // the outbox drains on reconnect (OfflineOutboxFlusher in the root layout).
+      setPending(false);
+      if (outboxSupported() && enqueue(progressDraft({ courseId, lessonId, completed: true }))) {
+        setJustCompleted(true);
+      }
     }
   }
 
