@@ -97,7 +97,9 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   with **no migration**: reveals store a negative, prompt-hashed \`prompt_index\` (identity survives
   reorders; sign discriminates check vs card — \`src/lib/reveals.ts\`), verified server-side against
   the lesson body and attributed to the ACTIVE learner (act-as safe). Signed-out reveals still work
-  (sign-in nudge, never an error); offline grades queue in the outbox and sync on reconnect.
+  (sign-in nudge, never an error); offline grades queue in the outbox and sync on reconnect, as now
+  do **lesson completions and instructor lesson edits** (both previously used a bare fetch and were
+  silently dropped offline; they now fall back to the same outbox and replay on reconnect).
   \`/dashboard\` grows a **Check-yourself history** section: **review again** (spaced-recall assist —
   last-missed or stale-missed items), **recently missed** (with lesson links), and **miss-rate per
   course**. (check-yourself-tracking.md)

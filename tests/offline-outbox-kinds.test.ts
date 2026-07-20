@@ -161,6 +161,31 @@ describe("what each kind means", () => {
     expect(draft.label).toContain("Missed");
     expect(draft.label).toContain("What does METAR stand for?");
   });
+
+  it("marking a lesson complete goes to that lesson's progress endpoint with `completed`", async () => {
+    const { kinds } = await load();
+    const draft = kinds.progressDraft({ courseId: "course-1", lessonId: "lesson-4", completed: true });
+    expect(draft.kind).toBe("progress");
+    expect(draft.url).toBe("/api/courses/course-1/lessons/lesson-4/progress"); // lesson in the URL
+    expect(draft.method).toBe("POST");
+    expect(draft.body).toEqual({ completed: true });
+    expect(draft.label).toBe("Marked complete");
+  });
+
+  it("an instructor lesson edit is a PATCH to the lesson, carrying the exact changes verbatim", async () => {
+    const { kinds } = await load();
+    const draft = kinds.lessonEditDraft({
+      courseId: "course-1",
+      lessonId: "lesson-4",
+      changes: { title: "Weather, revised", isPublished: true },
+      label: 'Edit "Weather": title, isPublished',
+    });
+    expect(draft.kind).toBe("lesson-edit");
+    expect(draft.url).toBe("/api/courses/course-1/lessons/lesson-4"); // the lesson can't drift
+    expect(draft.method).toBe("PATCH");
+    // The changes are stored verbatim — never re-derived at flush time against a stale lesson.
+    expect(draft.body).toEqual({ title: "Weather, revised", isPublished: true });
+  });
 });
 
 describe("a self-grade queued offline is never silently lost", () => {
@@ -428,6 +453,80 @@ describe("never lost", () => {
     await Promise.all([outbox.flushOutbox(), outbox.flushOutbox()]);
 
     expect(seen).toHaveLength(1);
+    expect(outbox.readOutbox()).toHaveLength(0);
+  });
+});
+
+describe("progress and lesson edits queued offline never lost", () => {
+  // The bug BAM reported: "student course progress isn't syncing when user completes lessons
+  // offline; offline course-lesson edits aren't syncing when back online." The completion button
+  // and the lesson editor used a bare fetch() with no queue fallback, so an offline completion or
+  // edit hit the network directly and was dropped. Both now route through the outbox.
+  const PROGRESS_URL = "/api/courses/course-1/lessons/lesson-4/progress";
+  const LESSON_URL = "/api/courses/course-1/lessons/lesson-4";
+
+  it("holds a lesson completion with no network, then POSTs it to the progress endpoint", async () => {
+    const { outbox, kinds } = await load();
+    vi.stubGlobal("navigator", { onLine: false });
+    outbox.enqueue(kinds.progressDraft({ courseId: "course-1", lessonId: "lesson-4", completed: true }));
+
+    server(200);
+    await outbox.flushOutbox();
+    expect(seen).toEqual([]); // nothing sends offline — but the completion is NOT dropped
+    expect(outbox.outboxFor("progress")).toHaveLength(1);
+
+    vi.stubGlobal("navigator", { onLine: true });
+    await outbox.flushOutbox();
+    expect(seen).toEqual([{ url: PROGRESS_URL, body: { completed: true } }]);
+    expect(outbox.readOutbox()).toHaveLength(0); // removed only because the server took it
+  });
+
+  it("replays a queued lesson edit as a verbatim PATCH to that lesson", async () => {
+    const { outbox, kinds } = await load();
+    vi.stubGlobal("navigator", { onLine: false });
+    outbox.enqueue(
+      kinds.lessonEditDraft({
+        courseId: "course-1",
+        lessonId: "lesson-4",
+        changes: { textContent: "A corrected paragraph" },
+        label: "Edit lesson: textContent",
+      }),
+    );
+
+    vi.stubGlobal("navigator", { onLine: true });
+    server(200);
+    await outbox.flushOutbox();
+    expect(seen).toEqual([{ url: LESSON_URL, body: { textContent: "A corrected paragraph" } }]);
+    expect(outbox.readOutbox()).toHaveLength(0);
+  });
+
+  it("two edits to the same lesson replay in order — last write wins per field", async () => {
+    const { outbox, kinds } = await load();
+    vi.stubGlobal("navigator", { onLine: false });
+    outbox.enqueue(kinds.lessonEditDraft({ courseId: "course-1", lessonId: "lesson-4", changes: { title: "First" }, label: "a" }));
+    outbox.enqueue(kinds.lessonEditDraft({ courseId: "course-1", lessonId: "lesson-4", changes: { title: "Second" }, label: "b" }));
+
+    vi.stubGlobal("navigator", { onLine: true });
+    server(200);
+    await outbox.flushOutbox();
+    expect(seen).toEqual([
+      { url: LESSON_URL, body: { title: "First" } },
+      { url: LESSON_URL, body: { title: "Second" } },
+    ]);
+    expect(outbox.readOutbox()).toHaveLength(0);
+  });
+
+  it("KEEPS a completion through a 401 (session died in the queue) and sends it after sign-in", async () => {
+    const { outbox, kinds } = await load();
+    outbox.enqueue(kinds.progressDraft({ courseId: "course-1", lessonId: "lesson-4", completed: true }));
+    server(401, { error: "Sign in" });
+    await outbox.flushOutbox();
+    expect(outbox.outboxFor("progress")[0].failed).toBe(false); // retryable — the completion is fine
+
+    seen = [];
+    server(200);
+    await outbox.flushOutbox();
+    expect(seen).toEqual([{ url: PROGRESS_URL, body: { completed: true } }]);
     expect(outbox.readOutbox()).toHaveLength(0);
   });
 });
