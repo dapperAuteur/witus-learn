@@ -28,7 +28,7 @@ export const ECOSYSTEM_PRODUCTS: EcosystemProduct[] = [
   { slug: "witus", name: "WitUS", href: "https://witus.online", status: "infrastructure", external: true },
   { slug: "centenarianos", name: "CentenarianOS", href: "https://centenarianos.com", status: "live", tagline: "Longevity habits, coaching, and health tracking.", external: true },
   { slug: "work-witus", name: "Work.WitUS", href: "https://work.witus.online", status: "live", tagline: "Find and manage skilled trade & union work.", external: true },
-  { slug: "learn-witus", name: "Learn.WitUS", href: "https://centenarianos.com/academy", status: "live", external: true },
+  { slug: "learn-witus", name: "Learn.WitUS", href: "https://learn.witus.online", status: "live", external: true },
   { slug: "awesomewebstore", name: "AwesomeWebStore", href: "https://awesomewebstore.com", status: "live", tagline: "Launch a store fast.", external: true },
   { slug: "tour-manager-os", name: "Tour Manager OS", href: "https://tour.witus.online", status: "beta", tagline: "Plan and run a live tour.", external: true },
   { slug: "wanderlearn", name: "Wanderlearn", href: "https://wanderlearn.witus.online", status: "beta", tagline: "Learn by traveling and doing.", external: true },
