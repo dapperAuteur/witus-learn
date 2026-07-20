@@ -5,7 +5,7 @@ import { getScopedDb } from "@/db/scoped";
 import { canEditCourse } from "@/lib/api";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { hasStripe } from "@/lib/env";
-import { listLessons, listTenantInstructors } from "@/db/queries/authoring";
+import { listLessons, listModules, listTenantInstructors } from "@/db/queries/authoring";
 import { listLinkUsage } from "@/db/queries/link-clicks";
 import { getCourseRecallStats } from "@/db/queries/recall";
 import { CourseSettingsForm } from "@/components/course-settings-form";
@@ -26,14 +26,31 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   if (!course) notFound();
   if (!(await canEditCourse(session, sdb.tenantId, course))) notFound();
 
-  const [lessons, owner, membership, categories, linkUsage, recallStats] = await Promise.all([
+  const [lessons, owner, membership, categories, linkUsage, recallStats, modules] = await Promise.all([
     listLessons(courseId),
     isPlatformOwner(session.user.id),
     getMembership(session.user.id, sdb.tenantId),
     sdb.listCategories(),
     listLinkUsage(sdb.tenantId, courseId),
     getCourseRecallStats(sdb.tenantId, courseId),
+    listModules(courseId),
   ]);
+
+  // Number lessons the way the learner sees them ("Module 2, Lesson 7: …") so the instructor can
+  // find the right one. Modules are ordered by sortOrder (position = module number); a lesson's
+  // number is its position among its own module's lessons (lessons already arrive sorted). Lessons
+  // with no module carry no number.
+  const moduleInfo = new Map<string, { number: number; title: string }>();
+  modules.forEach((m, i) => moduleInfo.set(m.id, { number: i + 1, title: m.title }));
+  const lessonNumberById = new Map<string, number>();
+  const perModuleCount = new Map<string, number>();
+  for (const l of lessons) {
+    if (!l.moduleId) continue;
+    const n = (perModuleCount.get(l.moduleId) ?? 0) + 1;
+    perModuleCount.set(l.moduleId, n);
+    lessonNumberById.set(l.id, n);
+  }
+
   // Admins (platform owner / brand_admin) may reassign the course's instructor.
   const isAdmin = owner || membership === "brand_admin";
   const instructors = isAdmin ? await listTenantInstructors(sdb.tenantId) : [];
@@ -102,6 +119,9 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             audioChapters: l.audioChapters,
             transcriptContent: l.transcriptContent,
             recallContent: l.recallContent,
+            moduleNumber: l.moduleId ? (moduleInfo.get(l.moduleId)?.number ?? null) : null,
+            moduleTitle: l.moduleId ? (moduleInfo.get(l.moduleId)?.title ?? null) : null,
+            lessonNumber: l.moduleId ? (lessonNumberById.get(l.id) ?? null) : null,
           }))}
         />
 
