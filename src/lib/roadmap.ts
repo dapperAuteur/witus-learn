@@ -454,6 +454,19 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   (the long one, 12 lessons, 3 quizzes all at the end today) is the intended first user: its
   Categories quiz maps to lessons 9 to 12. Actual tag values are a content decision for BAM (see
   \`plans/user-tasks/171\`); no data was retagged. Re-run \`pnpm seed:faa\` after any tagging.
+  **Module 2 now ships this** as authored pools (next bullet) rather than CSV tags.
+- ✅ **FAA Module 2 rebuilt as rotating per-section quiz pools** (\`fix/faa-m2-quiz-pools\`). Module 2
+  Regulations had 3 quizzes stacked at the module end that between them tested only lessons 1 to 3
+  (twice) and 9 to 11, leaving lessons 4 to 8 unquizzed. It is now 3 SECTION pools placed after the
+  section each one tests: **Foundations** (16 questions, after lesson 3), **Certificate, Command and
+  Core Rules** (20, after lesson 8, previously the untested gap), and **Operations Over People**
+  (17, after lesson 11). Each serves a random subset per attempt (8, 9, 8) with shuffled options, so
+  a learner retaking a quiz sees different questions instead of the same list. The 20 pre-existing
+  questions are ported verbatim; the 33 new ones are each grounded in that lesson's own text with its
+  real 14 CFR citation, and every answer key was verified against the lesson scripts. Authored
+  quizzes now take precedence over the CSV import for any module they cover, because \`/content\` is
+  gitignored and a local CSV edit would otherwise seed different quizzes on different machines.
+  Re-run \`pnpm seed:faa\` to pick this up.
 - ✅ **Quizzes score offline, integrity intact:** submitting a quiz with no network queues the attempt
   to the outbox (\`quiz-attempt\` kind) and scores it server-side on reconnect, so an attempt taken on a
   plane is never lost. The correct answers are still **never** sent to the device (server-scored as
