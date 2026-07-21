@@ -30,24 +30,24 @@ import type { AuthoredCourse } from "./authored-course";
 export const GREAT_MIGRATION_AND_THE_WORLD_COURSE: AuthoredCourse = {
   title: "The Great Migration: How Six Million People Remade America (and the World)",
   description:
-    "A cited, high-school-level history of the Great Migration — the movement of roughly six million Black Americans out of the rural South between about 1916 and 1970, and the country and culture they remade. The course follows the shape of the move itself: the forces that pushed people out (Jim Crow, sharecropping and debt peonage, racial terror, the boll weevil), the forces that pulled them north and west (wartime factory labor, the Chicago Defender, kinship chains), the three great routes they traveled, the cities and culture they built (the Harlem Renaissance, Chicago blues, Motown, the Black church and press, Black political power and a growing Black middle class), the costs they were made to pay (redlining, restrictive covenants, the second ghetto, white flight, deindustrialization), and — the pillar most surveys skip — how the culture and the moral argument of the Migration went global. Built on Isabel Wilkerson's three-family narrative frame and standard scholarship (Wilkerson, Lemann, Grossman, Marks), with primary sources pointed to their real archives. Companion to this platform's homeschool 'Great Migration' course and its Hoodoo, History of Unions, and Pan-Africanism courses.",
+    "A cited, high-school-level history of the Great Migration, the movement of roughly six million Black Americans out of the rural South between about 1916 and 1970, and the country and culture they remade. The course follows the shape of the move itself: the forces that pushed people out (Jim Crow, sharecropping and debt peonage, racial terror, the boll weevil), the forces that pulled them north and west (wartime factory labor, the Chicago Defender, kinship chains), the three great routes they traveled, the cities and culture they built (the Harlem Renaissance, Chicago blues, Motown, the Black church and press, Black political power and a growing Black middle class), the costs they were made to pay (redlining, restrictive covenants, the second ghetto, white flight, deindustrialization), and the pillar most surveys skip: how the culture and the moral argument of the Migration went global. Built on Isabel Wilkerson's three-family narrative frame and standard scholarship (Wilkerson, Lemann, Grossman, Marks), with primary sources pointed to their real archives. Companion to this platform's homeschool 'Great Migration' course and its Hoodoo, History of Unions, and Pan-Africanism courses.",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · What the Great Migration was
     // ═══════════════════════════════════════════════════════════════════════════════════════
     {
       slug: "gmw-what-and-scale",
-      title: "1 · What the Great Migration was — and how we measure it",
+      title: "1 · What the Great Migration was, and how we measure it",
       section: "Section 1 · The shape of the Migration",
       body: `Between roughly **1916 and 1970**, about **six million** African Americans left the American South and moved to cities in the North, the Midwest, and the West. Historians call this the **Great Migration**, and by scale it is one of the largest movements of people inside a single country in the twentieth century (National Archives, n.d.).
 
-**Start with the demographic fact, because it is the whole story in one line.** At the beginning of the twentieth century, about **90%** of Black Americans lived in the South. By 1970, only about **52%** did (National Archives, n.d.). In seventy years, a people who had been overwhelmingly Southern and rural became, in large part, Northern and urban. Everything else in this course — the music, the politics, the neighborhoods, the costs, the global reach — grows out of that one shift in where people lived.
+**Start with the demographic fact, because it is the whole story in one line.** At the beginning of the twentieth century, about **90%** of Black Americans lived in the South. By 1970, only about **52%** did (National Archives, n.d.). In seventy years, a people who had been overwhelmingly Southern and rural became, in large part, Northern and urban. Everything else in this course, the music, the politics, the neighborhoods, the costs, the global reach, grows out of that one shift in where people lived.
 
-**"About six million" is an estimate, and you should treat it like one.** Different scholars, counting different years and using different methods, land on somewhat different totals. Isabel Wilkerson, whose book frames this course, describes "six million black Southerners" leaving between about 1915 and 1970 (Wilkerson, 2010). The National Archives dates the movement 1916–1970 and uses the same round figure (National Archives, n.d.). When a number is this big and this old, precision is a warning sign, not a virtue — the honest version is "about six million," and this course will keep saying "about."
+**"About six million" is an estimate, and you should treat it like one.** Different scholars, counting different years and using different methods, land on somewhat different totals. Isabel Wilkerson, whose book frames this course, describes "six million black Southerners" leaving between about 1915 and 1970 (Wilkerson, 2010). The National Archives dates the movement 1916-1970 and uses the same round figure (National Archives, n.d.). When a number is this big and this old, precision is a warning sign, not a virtue, the honest version is "about six million," and this course will keep saying "about."
 
-**Why "the South" is doing so much work here.** Historians mean the states of the former Confederacy and the border South — places where, after Reconstruction collapsed, Black life was governed by **Jim Crow**: legally enforced segregation, near-total disenfranchisement, and an economy (sharecropping) built to keep Black families in debt. Sections 2 and 3 take the "why" apart carefully. For now, hold onto the size of the thing: six million individual decisions, made kitchen table by kitchen table, that added up to a nation remaking itself.
+**Why "the South" is doing so much work here.** Historians mean the states of the former Confederacy and the border South, places where, after Reconstruction collapsed, Black life was governed by **Jim Crow**: legally enforced segregation, near-total disenfranchisement, and an economy (sharecropping) built to keep Black families in debt. Sections 2 and 3 take the "why" apart carefully. For now, hold onto the size of the thing: six million individual decisions, made kitchen table by kitchen table, that added up to a nation remaking itself.
 
-**A note on how this course is built.** Rather than a list of dates, it follows Wilkerson's method: three real people, whose journeys stand in for three great routes out of the South. You will meet them properly in Section 4, but their names are worth planting now — **Ida Mae Brandon Gladney**, who left Mississippi for Chicago in 1937; **George Swanson Starling**, who left Florida for Harlem in 1945; and **Robert Joseph Pershing Foster**, who left Louisiana for California in 1953 (Wilkerson, 2010).
+**A note on how this course is built.** Rather than a list of dates, it follows Wilkerson's method: three real people, whose journeys stand in for three great routes out of the South. You will meet them properly in Section 4, but their names are worth planting now, **Ida Mae Brandon Gladney**, who left Mississippi for Chicago in 1937; **George Swanson Starling**, who left Florida for Harlem in 1945; and **Robert Joseph Pershing Foster**, who left Louisiana for California in 1953 (Wilkerson, 2010).
 
 :::reveal Roughly how many people left, over what years, and how did the share of Black Americans living in the South change from the start of the 1900s to 1970? ||| About six million people, from roughly 1916 to 1970. About 90% of Black Americans lived in the South at the start of the twentieth century; by 1970 only about 52% did.
 
@@ -57,7 +57,7 @@ export const GREAT_MIGRATION_AND_THE_WORLD_COURSE: AuthoredCourse = {
       recallContent: [
         {
           prompt: "About how many Black Americans left the South during the Great Migration, and over roughly what span of years?",
-          answer: "About six million, from roughly 1916 to 1970. 'About' is doing real work — the total is an estimate.",
+          answer: "About six million, from roughly 1916 to 1970. 'About' is doing real work, the total is an estimate.",
         },
         {
           prompt: "What share of Black Americans lived in the South at the start of the 1900s, versus 1970?",
@@ -72,8 +72,8 @@ export const GREAT_MIGRATION_AND_THE_WORLD_COURSE: AuthoredCourse = {
       body: `The Great Migration was not one smooth flow. Historians usually split it into **two waves**, and geographers trace **three streams**. Getting these straight now will make the rest of the course click into place.
 
 **Two waves.**
-- The **First Great Migration**, roughly **1916–1940**. The sharp acceleration came with **World War I**, when Northern factories lost their supply of European immigrant labor and, for the first time, recruited Black Southern workers in large numbers (Section 3). Commonly cited estimates put this first wave at around **1.5 million** people — a rough figure (Britannica, n.d.).
-- The **Second Great Migration**, roughly **1940–1970**, driven by **World War II** defense industries and reaching much further west — to the shipyards of California, Oregon, and Washington. This second wave is usually estimated as larger, on the order of **5 million** people, though the two waves overlap and the counts are approximate (Britannica, n.d.).
+- The **First Great Migration**, roughly **1916-1940**. The sharp acceleration came with **World War I**, when Northern factories lost their supply of European immigrant labor and, for the first time, recruited Black Southern workers in large numbers (Section 3). Commonly cited estimates put this first wave at around **1.5 million** people, a rough figure (Britannica, n.d.).
+- The **Second Great Migration**, roughly **1940-1970**, driven by **World War II** defense industries and reaching much further west, to the shipyards of California, Oregon, and Washington. This second wave is usually estimated as larger, on the order of **5 million** people, though the two waves overlap and the counts are approximate (Britannica, n.d.).
 
 Notice that 1.5 million plus 5 million is more than six million. That is not a mistake you should hide; it is a sign that these are **estimates counted over overlapping periods with fuzzy edges**, not receipts. Use them for scale, not arithmetic.
 
@@ -85,9 +85,9 @@ Notice that 1.5 million plus 5 million is more than six million. That is not a m
 | Midwestern | Mississippi, Alabama, Tennessee, Arkansas | Chicago, Detroit, Cleveland, Milwaukee |
 | Western | Louisiana, Texas, Oklahoma | Los Angeles, Oakland, the West Coast |
 
-Wilkerson (2010) built her entire book on this pattern by choosing one person for each stream — a device this course borrows in Section 4. The streams matter because **who your neighbors were in the North depended on where in the South you had come from.** A Black Chicagoan in 1945 was overwhelmingly likely to have Mississippi or Arkansas roots; a Black Angeleno, Louisiana or Texas roots. Southern regions did not just empty out — they reassembled, transplanted, in specific Northern cities.
+Wilkerson (2010) built her entire book on this pattern by choosing one person for each stream, a device this course borrows in Section 4. The streams matter because **who your neighbors were in the North depended on where in the South you had come from.** A Black Chicagoan in 1945 was overwhelmingly likely to have Mississippi or Arkansas roots; a Black Angeleno, Louisiana or Texas roots. Southern regions did not just empty out, they reassembled, transplanted, in specific Northern cities.
 
-:::reveal Name the two waves of the Great Migration and the war that accelerated each, then name the three geographic streams. ||| First Great Migration (roughly 1916–1940), accelerated by World War I; Second Great Migration (roughly 1940–1970), accelerated by World War II. The three streams ran Eastern (to D.C./Philadelphia/New York), Midwestern (to Chicago/Detroit), and Western (to Los Angeles/Oakland).
+:::reveal Name the two waves of the Great Migration and the war that accelerated each, then name the three geographic streams. ||| First Great Migration (roughly 1916-1940), accelerated by World War I; Second Great Migration (roughly 1940-1970), accelerated by World War II. The three streams ran Eastern (to D.C./Philadelphia/New York), Midwestern (to Chicago/Detroit), and Western (to Los Angeles/Oakland).
 
 ## Sources
 - Britannica, T. Editors of Encyclopaedia. (n.d.). *Great Migration*. In *Encyclopædia Britannica*. https://www.britannica.com/event/Great-Migration
@@ -105,14 +105,14 @@ Wilkerson (2010) built her entire book on this pattern by choosing one person fo
             prompt: "About how many Black Americans left the South during the Great Migration?",
             options: ["About six hundred thousand", "About six million", "About sixteen million", "About sixty million"],
             correctIndex: 1,
-            explanation: "The standard round figure is about six million — and it is an estimate, so historians say 'about' (National Archives; Wilkerson, 2010).",
+            explanation: "The standard round figure is about six million, and it is an estimate, so historians say 'about' (National Archives; Wilkerson, 2010).",
             sourceLessonSlug: "gmw-what-and-scale",
           },
           {
             prompt: "What years does this course use to bracket the Great Migration?",
-            options: ["Roughly 1865–1900", "Roughly 1916–1970", "Roughly 1945–1980", "Roughly 1900–1920"],
+            options: ["Roughly 1865-1900", "Roughly 1916-1970", "Roughly 1945-1980", "Roughly 1900-1920"],
             correctIndex: 1,
-            explanation: "The National Archives dates the movement 1916–1970; Wilkerson uses about 1915–1970. Either way, it spans roughly five decades.",
+            explanation: "The National Archives dates the movement 1916-1970; Wilkerson uses about 1915-1970. Either way, it spans roughly five decades.",
             sourceLessonSlug: "gmw-what-and-scale",
           },
           {
@@ -133,7 +133,7 @@ Wilkerson (2010) built her entire book on this pattern by choosing one person fo
             prompt: "Why does this course keep saying 'about six million' rather than an exact number?",
             options: [
               "Because the government never counted it",
-              "Because the total is an estimate — scholars counting different years by different methods get somewhat different figures",
+              "Because the total is an estimate, scholars counting different years by different methods get somewhat different figures",
               "Because the real number is secret",
               "Because six million is a made-up number with no basis",
             ],
@@ -142,17 +142,17 @@ Wilkerson (2010) built her entire book on this pattern by choosing one person fo
             sourceLessonSlug: "gmw-what-and-scale",
           },
           {
-            prompt: "Which war accelerated the FIRST Great Migration (roughly 1916–1940)?",
+            prompt: "Which war accelerated the FIRST Great Migration (roughly 1916-1940)?",
             options: ["The Civil War", "World War I", "World War II", "The Korean War"],
             correctIndex: 1,
             explanation: "World War I cut off European immigrant labor to Northern factories, which then recruited Black Southern workers for the first time in large numbers.",
             sourceLessonSlug: "gmw-waves-and-streams",
           },
           {
-            prompt: "Which war accelerated the SECOND Great Migration (roughly 1940–1970)?",
+            prompt: "Which war accelerated the SECOND Great Migration (roughly 1940-1970)?",
             options: ["World War I", "World War II", "The Vietnam War", "The Spanish-American War"],
             correctIndex: 1,
-            explanation: "World War II defense industries — including West Coast shipyards — drew the second, larger wave, which reached much further west.",
+            explanation: "World War II defense industries, including West Coast shipyards, drew the second, larger wave, which reached much further west.",
             sourceLessonSlug: "gmw-waves-and-streams",
           },
           {
@@ -166,14 +166,14 @@ Wilkerson (2010) built her entire book on this pattern by choosing one person fo
             prompt: "Commonly cited (rough) estimates put the first wave at about ___ and the second at about ___.",
             options: ["1.5 million; 5 million", "5 million; 1.5 million", "6 million; 6 million", "300,000; 900,000"],
             correctIndex: 0,
-            explanation: "Roughly 1.5 million in the first wave and 5 million in the second — approximate figures counted over overlapping periods (Britannica).",
+            explanation: "Roughly 1.5 million in the first wave and 5 million in the second, approximate figures counted over overlapping periods (Britannica).",
             sourceLessonSlug: "gmw-waves-and-streams",
           },
           {
             prompt: "Why do 1.5 million plus 5 million not add neatly to 'about six million'?",
             options: [
               "Because the numbers are wrong and should be ignored",
-              "Because these are estimates over overlapping periods with fuzzy edges — use them for scale, not arithmetic",
+              "Because these are estimates over overlapping periods with fuzzy edges, use them for scale, not arithmetic",
               "Because a million people were double-counted on purpose",
               "Because the South gained population during the Migration",
             ],
@@ -216,7 +216,7 @@ Wilkerson (2010) built her entire book on this pattern by choosing one person fo
               "They were most likely a European immigrant",
             ],
             correctIndex: 1,
-            explanation: "Because the streams ran roughly straight north, Southern regions reassembled in specific Northern cities — Mississippi and Arkansas roots concentrated in Chicago.",
+            explanation: "Because the streams ran roughly straight north, Southern regions reassembled in specific Northern cities, Mississippi and Arkansas roots concentrated in Chicago.",
             sourceLessonSlug: "gmw-waves-and-streams",
           },
           {
@@ -228,7 +228,7 @@ Wilkerson (2010) built her entire book on this pattern by choosing one person fo
               "Carole Marks's",
             ],
             correctIndex: 1,
-            explanation: "Isabel Wilkerson's The Warmth of Other Suns (2010) follows one person per stream — Ida Mae Gladney, George Starling, and Robert Foster — a device this course borrows.",
+            explanation: "Isabel Wilkerson's The Warmth of Other Suns (2010) follows one person per stream, Ida Mae Gladney, George Starling, and Robert Foster, a device this course borrows.",
             sourceLessonSlug: "gmw-what-and-scale",
           },
         ],
@@ -279,7 +279,7 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
       section: "Section 2 · Why they left: the push",
       body: `Jim Crow was the law. **Sharecropping** was the economy underneath it, and it was engineered so that hard work rarely led out of debt.
 
-**How the system worked.** After the Civil War, most Southern land stayed in the hands of white owners, while the people who worked it — many of them formerly enslaved and their descendants — had no land and no cash. The solution that emerged was sharecropping: a family farmed an owner's land in exchange for a share of the crop, usually about half. Because the family had no money to live on until harvest, they bought food, seed, tools, and clothing on credit from the landowner or a **furnishing merchant**, at marked-up prices and steep interest, against the crop they had not yet grown (Wilkerson, 2010).
+**How the system worked.** After the Civil War, most Southern land stayed in the hands of white owners, while the people who worked it, many of them formerly enslaved and their descendants, had no land and no cash. The solution that emerged was sharecropping: a family farmed an owner's land in exchange for a share of the crop, usually about half. Because the family had no money to live on until harvest, they bought food, seed, tools, and clothing on credit from the landowner or a **furnishing merchant**, at marked-up prices and steep interest, against the crop they had not yet grown (Wilkerson, 2010).
 
 **"Settling up" was where the trap sprang.** At harvest, the owner did the accounting, alone, in a system where the cropper often could not legally challenge a white man's numbers and had been kept from the literacy to check them. Wilkerson (2010) describes croppers who brought in a good cotton crop and were still told, year after year, that they had come out "even" or that they owed more than they had earned. A family could work an entire year and end it deeper in debt than it began.
 
@@ -299,13 +299,13 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
       section: "Section 2 · Why they left: the push",
       body: `Law and debt held people in place. **Terror** and a **beetle** helped push them out.
 
-**Racial terror was the enforcement arm of Jim Crow.** Between 1877 and 1950, the Equal Justice Initiative has documented more than **4,400** racial terror lynchings of Black Americans — public killings, often by mobs, meant not only to murder an individual but to terrorize a whole community into submission (Equal Justice Initiative [EJI], 2017). Counts vary between projects and are certainly undercounts, but the scale and purpose are not in doubt. A lynching in the next county was a message to everyone who heard about it, and news of it traveled with families who left.
+**Racial terror was the enforcement arm of Jim Crow.** Between 1877 and 1950, the Equal Justice Initiative has documented more than **4,400** racial terror lynchings of Black Americans, public killings, often by mobs, meant not only to murder an individual but to terrorize a whole community into submission (Equal Justice Initiative [EJI], 2017). Counts vary between projects and are certainly undercounts, but the scale and purpose are not in doubt. A lynching in the next county was a message to everyone who heard about it, and news of it traveled with families who left.
 
 **The violence did not stop at the Southern border, and 1919 proved it.** In the summer after World War I, white mobs attacked Black communities in more than three dozen cities and towns across the country. The writer and NAACP official James Weldon Johnson named it the **"Red Summer."** In Chicago, riots left 38 people dead; the worst killing was in rural **Elaine, Arkansas**, where estimates of Black dead run from about 100 to 240 (National Archives, n.d.-b). Red Summer is a warning this course will return to: the North was a destination, not a promised land.
 
 **Now the beetle.** The **boll weevil**, a cotton-eating insect, crossed into the United States from Mexico near Brownsville, Texas, around **1892**, and spread east across the cotton South, reaching essentially all cotton-growing regions by the mid-1920s (Britannica, n.d.-b). Where it hit, it could ruin a cotton crop, and cotton was the only thing a sharecropping economy grew. Ruined crops meant ruined croppers, and some landowners responded by pushing tenant families off the land entirely.
 
-**But be careful here — this is a place where popular history oversimplifies.** It is tempting to say "the boll weevil caused the Great Migration," and you will see that claim made. It is too clean. The Migration was already underway before the weevil reached the Deep South, its timing does not line up neatly with the biggest migration surges, and scholars such as Carole Marks argue the pull of Northern industry and the push of Jim Crow and terror mattered more than any single crop failure (Marks, 1989). The honest version: the boll weevil was **one shock among several**, one that made a bad situation worse and gave already-decided families a final reason to buy a train ticket.
+**But be careful here, this is a place where popular history oversimplifies.** It is tempting to say "the boll weevil caused the Great Migration," and you will see that claim made. It is too clean. The Migration was already underway before the weevil reached the Deep South, its timing does not line up neatly with the biggest migration surges, and scholars such as Carole Marks argue the pull of Northern industry and the push of Jim Crow and terror mattered more than any single crop failure (Marks, 1989). The honest version: the boll weevil was **one shock among several**, one that made a bad situation worse and gave already-decided families a final reason to buy a train ticket.
 
 :::reveal Was the boll weevil the single cause of the Great Migration? Explain. ||| No. It was one economic shock among several. The Migration was already underway before the weevil reached the Deep South, and scholars argue Jim Crow, terror, and the pull of Northern industry mattered more. It made a bad situation worse rather than starting the movement.
 
@@ -356,7 +356,7 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
             prompt: "What was the 'white primary'?",
             options: [
               "A school for white children only",
-              "A rule barring Black voters from the Democratic primary — the only election that mattered in the one-party South",
+              "A rule barring Black voters from the Democratic primary, the only election that mattered in the one-party South",
               "A whites-only railroad car",
               "The first primary election of the year",
             ],
@@ -380,7 +380,7 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
             prompt: "When a family was legally prevented from leaving because they 'owed' a landowner, the system is called:",
             options: ["A grandfather clause", "Debt peonage", "The white primary", "Redlining"],
             correctIndex: 1,
-            explanation: "Debt peonage used debt to hold laborers in place, enforced by sheriffs and courts — a form of coerced labor that outlasted slavery by decades.",
+            explanation: "Debt peonage used debt to hold laborers in place, enforced by sheriffs and courts, a form of coerced labor that outlasted slavery by decades.",
             sourceLessonSlug: "gmw-sharecropping",
           },
           {
@@ -396,7 +396,7 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
             sourceLessonSlug: "gmw-terror-and-weevil",
           },
           {
-            prompt: "About how many racial terror lynchings of Black Americans has the Equal Justice Initiative documented for 1877–1950?",
+            prompt: "About how many racial terror lynchings of Black Americans has the Equal Justice Initiative documented for 1877-1950?",
             options: ["About 40", "About 400", "More than 4,400", "More than 44,000"],
             correctIndex: 2,
             explanation: "More than 4,400 (and considered an undercount). Different projects reach somewhat different totals.",
@@ -418,7 +418,7 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
             prompt: "What did the Red Summer reveal about the North as a destination?",
             options: [
               "That it was completely free of racial violence",
-              "That anti-Black violence was national, not only Southern — the North was a destination, not a promised land",
+              "That anti-Black violence was national, not only Southern, the North was a destination, not a promised land",
               "That migrants were unwelcome only in the South",
               "That the Migration had ended",
             ],
@@ -500,9 +500,9 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
       section: "Section 3 · Why they left: the pull",
       body: `Push factors explain the pressure. They do not explain the timing. Black Southerners endured Jim Crow for decades before the great surge north. What changed around 1916 was on the other end of the journey: for the first time, the North needed them, and said so with a paycheck.
 
-**World War I created the opening.** Northern factories — steel mills, meatpacking plants, auto works, railroads — had run for decades on a steady supply of European immigrant labor. When war broke out in Europe in 1914, that supply collapsed: immigration to the United States fell sharply, and then the U.S. entered the war in 1917 and pulled millions of men into the military. Industry suddenly faced a severe labor shortage in the middle of a wartime production boom (Grossman, 1989; National Archives, n.d.).
+**World War I created the opening.** Northern factories, steel mills, meatpacking plants, auto works, railroads, had run for decades on a steady supply of European immigrant labor. When war broke out in Europe in 1914, that supply collapsed: immigration to the United States fell sharply, and then the U.S. entered the war in 1917 and pulled millions of men into the military. Industry suddenly faced a severe labor shortage in the middle of a wartime production boom (Grossman, 1989; National Archives, n.d.).
 
-**So industry turned south.** Companies that had never hired Black workers began sending **labor agents** into the South to recruit them, sometimes paying train fare north in exchange for a signed work commitment. Carole Marks (1989) argues this recruitment was so deliberate and organized that the Migration was, in her words, "orchestrated in the board rooms of northern industrial enterprises" — a useful correction to any picture of migrants as simply drifting north on their own. Southern states, alarmed at losing their cheap labor force, passed laws taxing or jailing labor agents to try to stop them (Grossman, 1989).
+**So industry turned south.** Companies that had never hired Black workers began sending **labor agents** into the South to recruit them, sometimes paying train fare north in exchange for a signed work commitment. Carole Marks (1989) argues this recruitment was so deliberate and organized that the Migration was, in her words, "orchestrated in the board rooms of northern industrial enterprises", a useful correction to any picture of migrants as simply drifting north on their own. Southern states, alarmed at losing their cheap labor force, passed laws taxing or jailing labor agents to try to stop them (Grossman, 1989).
 
 **The wage did the rest of the arguing.** A job in a Northern factory paid a cash wage, directly to the worker, several times what farm labor earned in the South, and it came without a rigged "settling up" at the end of the year. For a sharecropping family that had never been allowed to get ahead, even a hard, dangerous, low-status factory job was a raise and, more importantly, a wage they actually controlled (Wilkerson, 2010; Grossman, 1989).
 
@@ -534,7 +534,7 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
 
 **The Chicago Defender was the loudest voice for leaving.** Founded in 1905 by **Robert Sengstacke Abbott**, the *Defender* became the most widely read Black newspaper in the country, and during World War I it campaigned openly for migration. It ran editorials, cartoons, and photographs praising Northern life, printed train schedules and Northern job listings, and even declared a **"Great Northern Drive"** for **May 15, 1917**, a symbolic day to leave (Grossman, 1989). Abbott's paper framed the move not as running away but as a bold claim on freedom and dignity.
 
-**Getting it read in the South was itself an act of defiance.** The *Defender* was dangerous to be caught with in parts of the South, and some towns tried to ban it. It traveled anyway, largely through **Pullman porters** — the Black men who worked the railroad sleeping cars — who carried bundles of the paper south and left them where people would find them (Grossman, 1989). A single copy might be read aloud to a whole community, or passed hand to hand until it fell apart.
+**Getting it read in the South was itself an act of defiance.** The *Defender* was dangerous to be caught with in parts of the South, and some towns tried to ban it. It traveled anyway, largely through **Pullman porters**, the Black men who worked the railroad sleeping cars, who carried bundles of the paper south and left them where people would find them (Grossman, 1989). A single copy might be read aloud to a whole community, or passed hand to hand until it fell apart.
 
 **But most people did not move because of a newspaper. They moved because of family.** The single most reliable engine of the Migration was the **kinship chain**: one person went north, found work and a place to stay, wrote home (sometimes tucking a few dollars or a train ticket into the envelope), and then sent for the next relative, who did the same. Wilkerson (2010) shows this pattern in each of her three subjects, and Grossman (1989) documents Chicago neighborhoods that filled up, block by block, with people from the same handful of Southern counties. A letter from a cousin who had actually made it was worth more than any editorial.
 
@@ -657,7 +657,7 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
             prompt: "What was the 'kinship chain,' and why did it matter most?",
             options: [
               "A chain-link fence around Northern factories",
-              "The pattern of one relative going north, finding work, and sending for the next — the main engine of the Migration",
+              "The pattern of one relative going north, finding work, and sending for the next, the main engine of the Migration",
               "A labor union",
               "A Southern law",
             ],
@@ -686,7 +686,7 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
               "As a government order",
             ],
             correctIndex: 1,
-            explanation: "Abbott's paper cast leaving as claiming one's rights, not fleeing — powerful framing for a fearful decision.",
+            explanation: "Abbott's paper cast leaving as claiming one's rights, not fleeing, powerful framing for a fearful decision.",
             sourceLessonSlug: "gmw-defender-and-kin",
           },
           {
@@ -735,13 +735,13 @@ Jim Crow, then, is push factor number one: not poverty alone, but a legal order 
       slug: "gmw-three-travelers",
       title: "11 · Three travelers: Ida Mae, George, and Robert",
       section: "Section 4 · The routes and the cities",
-      body: `Six million is a number you cannot picture. Three people, you can. Isabel Wilkerson spent fifteen years and interviewed more than 1,200 people to write *The Warmth of Other Suns* (2010), and she built the book around three real individuals, one for each migration stream. This course does the same. Everything below is as **Wilkerson documented it** — real people, cited, not embellished.
+      body: `Six million is a number you cannot picture. Three people, you can. Isabel Wilkerson spent fifteen years and interviewed more than 1,200 people to write *The Warmth of Other Suns* (2010), and she built the book around three real individuals, one for each migration stream. This course does the same. Everything below is as **Wilkerson documented it**, real people, cited, not embellished.
 
-**Ida Mae Brandon Gladney — the Midwestern stream.** A sharecropper's wife in Mississippi, Ida Mae left with her family for **Chicago in 1937**, part of the great corridor that carried Deep-South migrants straight up the map to the Midwest (Wilkerson, 2010). Her life stands in for the majority of migrants: rural people, leaving the cotton economy, headed for a Northern industrial city.
+**Ida Mae Brandon Gladney, the Midwestern stream.** A sharecropper's wife in Mississippi, Ida Mae left with her family for **Chicago in 1937**, part of the great corridor that carried Deep-South migrants straight up the map to the Midwest (Wilkerson, 2010). Her life stands in for the majority of migrants: rural people, leaving the cotton economy, headed for a Northern industrial city.
 
-**George Swanson Starling — the Eastern stream.** A sharp, restless man who picked citrus in Florida, George tried to organize his fellow fruit pickers for better pay, which in the Jim Crow South made him a marked man. He left for **New York's Harlem in 1945**, riding the Eastern corridor that ran up the Atlantic seaboard (Wilkerson, 2010). He would spend his working life on the very trains that carried migrants north.
+**George Swanson Starling, the Eastern stream.** A sharp, restless man who picked citrus in Florida, George tried to organize his fellow fruit pickers for better pay, which in the Jim Crow South made him a marked man. He left for **New York's Harlem in 1945**, riding the Eastern corridor that ran up the Atlantic seaboard (Wilkerson, 2010). He would spend his working life on the very trains that carried migrants north.
 
-**Robert Joseph Pershing Foster — the Western stream.** A surgeon from Louisiana, Robert left in **1953** to build a medical career in **California**, driving west across the desert on the Western corridor (Wilkerson, 2010). His story is a reminder that the Migration was not only sharecroppers: it carried doctors, teachers, and skilled workers who could not practice or advance under Jim Crow.
+**Robert Joseph Pershing Foster, the Western stream.** A surgeon from Louisiana, Robert left in **1953** to build a medical career in **California**, driving west across the desert on the Western corridor (Wilkerson, 2010). His story is a reminder that the Migration was not only sharecroppers: it carried doctors, teachers, and skilled workers who could not practice or advance under Jim Crow.
 
 **Why this frame teaches so well.** Put the three side by side and the whole Migration comes into focus:
 
@@ -778,7 +778,7 @@ Three people, three streams, three decades. Keep them in mind: the rest of the c
 | --- | --- | --- | --- |
 | Detroit | 5,741 | 40,838 | about +611% |
 | Chicago | ~44,000 | ~109,400 | about +148% |
-| New York City | (large already) | (grew ~66% in the decade) | — |
+| New York City | (large already) | (grew ~66% in the decade) |, |
 
 Detroit's roughly **sixfold** jump in ten years was the largest percentage growth of any big Northern city; Chicago's Black population more than doubled; and by 1930 New York City's Black population had reached about 328,000, with **Harlem** becoming the largest Black urban neighborhood in the country (U.S. Census data, as reported by Encyclopedia of Chicago, n.d.; National Archives, n.d.).
 
@@ -786,7 +786,7 @@ Detroit's roughly **sixfold** jump in ten years was the largest percentage growt
 
 **Where did all these people live? In very little space.** Northern cities were segregated too, not by Jim Crow statute but by restrictive covenants, real-estate practice, and violence (Section 7). So arriving migrants were packed into a few districts that took on names of their own: Chicago's **"Black Belt," later Bronzeville** (the "Black Metropolis"); Detroit's **Paradise Valley** and Black Bottom; New York's **Harlem**. Landlords chopped apartments into tiny "kitchenette" units and charged more for them than white tenants paid for whole flats. Overcrowding, high rents, and disease were the immediate price of arrival (Grossman, 1989).
 
-But density has a flip side. Pack tens of thousands of people, their churches, newspapers, clubs, and musicians into a few square miles, and you do not only get overcrowding. You get **Bronzeville and Harlem** — the cultural powerhouses of Section 5.
+But density has a flip side. Pack tens of thousands of people, their churches, newspapers, clubs, and musicians into a few square miles, and you do not only get overcrowding. You get **Bronzeville and Harlem**, the cultural powerhouses of Section 5.
 
 :::reveal Which Northern city had the largest percentage growth in Black population from 1910 to 1920, and why should you be skeptical of the "Philadelphia grew 500%" claim? ||| Detroit, which grew about 611% (from 5,741 to 40,838). Be skeptical of "Philadelphia 500%" because the raw census counts usually cited (about 84,000 to 134,000) work out to closer to 60%; when the percentage and the head-count disagree, trust the head-count.
 
@@ -803,11 +803,11 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
 
 **The shipyards were hiring, fast.** When the U.S. entered the war, West Coast shipyards needed enormous numbers of workers, and for the first time offered Black Southerners skilled, well-paid defense jobs. The industrialist **Henry J. Kaiser** ran shipyards in **Richmond and Oakland, California; Portland, Oregon; and Vancouver, Washington**, and recruited workers from across the South (Kaiser Permanente, n.d.). The demographic effect was staggering: San Francisco's Black population grew from **fewer than 5,000 before the war to about 32,000 by 1945** (Second Great Migration, n.d.). New Black communities appeared almost overnight in the East Bay and in **Vanport, Oregon**, a wartime housing city near Portland.
 
-**But the West was not free of the color line.** Black shipyard workers ran into the same wall that met migrants everywhere: **labor unions that would not admit them as equals.** The powerful Boilermakers union, rather than integrate, forced Black workers into separate, second-class "auxiliary" locals that collected their dues but denied them full membership and job security. Black workers fought back, and in California the case known as **James v. Marinship (1944)** ended with a ruling against the union's practice of demanding dues while denying real membership (Second Great Migration, n.d.). (This platform's *History of Unions* course tells the labor side of this story in detail, including how the wartime *Fair Employment Practice Committee* — see Section 6 — pushed back on shipyard discrimination.)
+**But the West was not free of the color line.** Black shipyard workers ran into the same wall that met migrants everywhere: **labor unions that would not admit them as equals.** The powerful Boilermakers union, rather than integrate, forced Black workers into separate, second-class "auxiliary" locals that collected their dues but denied them full membership and job security. Black workers fought back, and in California the case known as **James v. Marinship (1944)** ended with a ruling against the union's practice of demanding dues while denying real membership (Second Great Migration, n.d.). (This platform's *History of Unions* course tells the labor side of this story in detail, including how the wartime *Fair Employment Practice Committee*, see Section 6, pushed back on shipyard discrimination.)
 
 **The pattern to notice.** Each wave of the Migration followed war industry, and each time migrants found that the North and West offered a paycheck and a vote but not an escape from racism. That double truth, opportunity braided together with new forms of exclusion, is the hinge of this whole course, and Section 7 will follow it into the housing market, where its costs landed hardest.
 
-:::reveal What industry drove the Second Great Migration to the West Coast, and what barrier did Black workers hit even in those good jobs? ||| World War II shipbuilding (Kaiser's yards in Richmond, Oakland, Portland, and Vancouver, WA) drove it — San Francisco's Black population jumped from under 5,000 to about 32,000 by 1945. The barrier was union exclusion: the Boilermakers forced Black workers into second-class "auxiliary" locals, challenged in James v. Marinship (1944).
+:::reveal What industry drove the Second Great Migration to the West Coast, and what barrier did Black workers hit even in those good jobs? ||| World War II shipbuilding (Kaiser's yards in Richmond, Oakland, Portland, and Vancouver, WA) drove it, San Francisco's Black population jumped from under 5,000 to about 32,000 by 1945. The barrier was union exclusion: the Boilermakers forced Black workers into second-class "auxiliary" locals, challenged in James v. Marinship (1944).
 
 ## Sources
 - Kaiser Permanente. (n.d.). *The World War II Kaiser Richmond shipyard labor force*. https://about.kaiserpermanente.org/who-we-are/our-history/the-world-war-ii-kaiser-richmond-shipyard-labor-force
@@ -836,14 +836,14 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
             prompt: "In Wilkerson's frame, Ida Mae Brandon Gladney left which state for which city, and in what year?",
             options: ["Florida for Harlem, 1945", "Mississippi for Chicago, 1937", "Louisiana for California, 1953", "Georgia for Detroit, 1916"],
             correctIndex: 1,
-            explanation: "Ida Mae, a sharecropper's wife, left Mississippi for Chicago in 1937 — the Midwestern stream (Wilkerson, 2010).",
+            explanation: "Ida Mae, a sharecropper's wife, left Mississippi for Chicago in 1937, the Midwestern stream (Wilkerson, 2010).",
             sourceLessonSlug: "gmw-three-travelers",
           },
           {
             prompt: "George Swanson Starling represents which stream, and where did he go?",
             options: ["Western; Los Angeles", "Midwestern; Chicago", "Eastern; Harlem (New York), 1945", "Northern; Boston"],
             correctIndex: 2,
-            explanation: "George left Florida for Harlem in 1945 after trying to organize fellow citrus pickers — the Eastern stream (Wilkerson, 2010).",
+            explanation: "George left Florida for Harlem in 1945 after trying to organize fellow citrus pickers, the Eastern stream (Wilkerson, 2010).",
             sourceLessonSlug: "gmw-three-travelers",
           },
           {
@@ -874,14 +874,14 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
             prompt: "Which Northern city had the LARGEST percentage growth in Black population from 1910 to 1920?",
             options: ["Chicago (~148%)", "Detroit (~611%)", "New York (~66%)", "Boston (~20%)"],
             correctIndex: 1,
-            explanation: "Detroit grew from 5,741 to 40,838, about +611% — a roughly sixfold jump, the largest of any big Northern city.",
+            explanation: "Detroit grew from 5,741 to 40,838, about +611%, a roughly sixfold jump, the largest of any big Northern city.",
             sourceLessonSlug: "gmw-cities",
           },
           {
             prompt: "Chicago's Black population went from about 44,000 in 1910 to about 109,400 in 1920, a change of roughly:",
             options: ["+10%", "+148%", "+611%", "+1,000%"],
             correctIndex: 1,
-            explanation: "About +148% — Chicago's Black population more than doubled in the decade.",
+            explanation: "About +148%, Chicago's Black population more than doubled in the decade.",
             sourceLessonSlug: "gmw-cities",
           },
           {
@@ -931,7 +931,7 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
             prompt: "San Francisco's Black population during World War II grew from fewer than 5,000 to about:",
             options: ["6,000", "12,000", "32,000", "200,000"],
             correctIndex: 2,
-            explanation: "About 32,000 by 1945 — new Black communities appeared almost overnight in the Bay Area.",
+            explanation: "About 32,000 by 1945, new Black communities appeared almost overnight in the Bay Area.",
             sourceLessonSlug: "gmw-second-migration-west",
           },
           {
@@ -943,7 +943,7 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
               "It paid them extra",
             ],
             correctIndex: 1,
-            explanation: "Auxiliary locals collected dues while denying real membership and job security — challenged in James v. Marinship (1944).",
+            explanation: "Auxiliary locals collected dues while denying real membership and job security, challenged in James v. Marinship (1944).",
             sourceLessonSlug: "gmw-second-migration-west",
           },
           {
@@ -1027,9 +1027,9 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
 
 **Jazz rode the train from New Orleans to Chicago.** In 1922, a young cornet player named **Louis Armstrong** left New Orleans to join King Oliver's band in Chicago, arriving at the Illinois Central Station in July of that year (Britannica, n.d.-c). He was one migrant among thousands, but he helped turn Chicago into a jazz capital and became one of the most influential musicians in American history. The music followed the people.
 
-**The Delta blues became the Chicago blues, and got louder.** **McKinley Morganfield** — the world knows him as **Muddy Waters** — grew up on Stovall Plantation near Clarksdale, Mississippi, where the folklorist Alan Lomax recorded him for the Library of Congress in 1941. In **1943** he took the train to Chicago, and there he did something the city demanded: he **plugged in**. To be heard over a noisy South Side club, acoustic Delta blues became amplified, electric **Chicago blues** (Britannica, n.d.-d). That electrified sound, recorded on Chicago's Chess Records, is a direct ancestor of rock and roll. Section 8 follows it across an ocean.
+**The Delta blues became the Chicago blues, and got louder.** **McKinley Morganfield**, the world knows him as **Muddy Waters**, grew up on Stovall Plantation near Clarksdale, Mississippi, where the folklorist Alan Lomax recorded him for the Library of Congress in 1941. In **1943** he took the train to Chicago, and there he did something the city demanded: he **plugged in**. To be heard over a noisy South Side club, acoustic Delta blues became amplified, electric **Chicago blues** (Britannica, n.d.-d). That electrified sound, recorded on Chicago's Chess Records, is a direct ancestor of rock and roll. Section 8 follows it across an ocean.
 
-**Detroit built a hit factory, and the Migration built Detroit.** In **1959**, **Berry Gordy Jr.** founded a record company in Detroit that he would incorporate as **Motown**, working out of a house he nicknamed **"Hitsville U.S.A."** (Detroit Historical Society, n.d.). Here is the detail that ties it all together: Gordy's own parents had migrated to Detroit from **Sandersville, Georgia, in 1922**, part of the Great Migration (Detroit Historical Society, n.d.). Motown, one of the most successful Black-owned businesses in American history, was itself a **product of the Migration** — built by a migrant family, staffed and sung by the children of migrants, for an audience the Migration had gathered into Northern cities.
+**Detroit built a hit factory, and the Migration built Detroit.** In **1959**, **Berry Gordy Jr.** founded a record company in Detroit that he would incorporate as **Motown**, working out of a house he nicknamed **"Hitsville U.S.A."** (Detroit Historical Society, n.d.). Here is the detail that ties it all together: Gordy's own parents had migrated to Detroit from **Sandersville, Georgia, in 1922**, part of the Great Migration (Detroit Historical Society, n.d.). Motown, one of the most successful Black-owned businesses in American history, was itself a **product of the Migration**, built by a migrant family, staffed and sung by the children of migrants, for an audience the Migration had gathered into Northern cities.
 
 **The pattern.** Jazz, blues, gospel (next lesson), and soul were not invented in the North. They were **carried** there and remade there. The Migration did not just relocate people; it relocated, concentrated, and industrialized a culture.
 
@@ -1042,7 +1042,7 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
       recallContent: [
         {
           prompt: "What did Muddy Waters do to the Delta blues when he reached Chicago, and why?",
-          answer: "He amplified it — went electric — to be heard over noisy South Side clubs, creating Chicago blues (recorded on Chess Records), a direct ancestor of rock and roll.",
+          answer: "He amplified it, went electric, to be heard over noisy South Side clubs, creating Chicago blues (recorded on Chess Records), a direct ancestor of rock and roll.",
         },
         {
           prompt: "How was Motown itself a product of the Great Migration?",
@@ -1106,7 +1106,7 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
               "A government report",
             ],
             correctIndex: 1,
-            explanation: "60 tempera panels, now shared by MoMA and the Phillips Collection — a primary visual source about the Migration.",
+            explanation: "60 tempera panels, now shared by MoMA and the Phillips Collection, a primary visual source about the Migration.",
             sourceLessonSlug: "gmw-harlem-renaissance",
           },
           {
@@ -1125,14 +1125,14 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
             prompt: "Louis Armstrong helped make which city a jazz capital after leaving New Orleans in 1922?",
             options: ["Chicago", "Los Angeles", "Atlanta", "Boston"],
             correctIndex: 0,
-            explanation: "Armstrong took the train to Chicago in July 1922 to join King Oliver's band — the music followed the migrants.",
+            explanation: "Armstrong took the train to Chicago in July 1922 to join King Oliver's band, the music followed the migrants.",
             sourceLessonSlug: "gmw-blues-to-motown",
           },
           {
             prompt: "What did Muddy Waters do to the Delta blues after moving to Chicago in 1943?",
             options: [
               "Made it quieter and acoustic",
-              "Amplified it — went electric — to be heard in loud clubs, creating Chicago blues",
+              "Amplified it, went electric, to be heard in loud clubs, creating Chicago blues",
               "Abandoned it for classical music",
               "Returned it to the plantation",
             ],
@@ -1187,7 +1187,7 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
             prompt: "Beyond worship, what practical roles did the Black church play for migrants?",
             options: [
               "None; it was only for Sundays",
-              "Employment networks, mutual aid, day care, burial societies — social-service agency, town hall, and concert hall at once",
+              "Employment networks, mutual aid, day care, burial societies, social-service agency, town hall, and concert hall at once",
               "It discouraged newcomers",
               "It replaced the newspaper",
             ],
@@ -1230,7 +1230,7 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
             prompt: "How did the density of migrant districts relate to the culture they produced?",
             options: [
               "Density prevented any culture",
-              "Overcrowding and artistic explosion were two faces of the same fact — packing a people together collided their talent",
+              "Overcrowding and artistic explosion were two faces of the same fact, packing a people together collided their talent",
               "The culture came from empty land",
               "Density only caused disease and nothing else",
             ],
@@ -1256,7 +1256,7 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
 
 **That leverage produced concrete federal action.** Two presidential orders show the pattern:
 - In **1941**, under pressure from Black organizing (next lesson), President Franklin Roosevelt issued **Executive Order 8802**, banning racial discrimination in the defense industries and creating a **Fair Employment Practice Committee** (Executive Order 8802, 1941).
-- In **1948**, President Harry Truman issued **Executive Order 9981**, ordering the **desegregation of the armed forces** — a decision historians tie in part to pressure from civil-rights leaders and to the growing importance of the Black urban vote (National Archives, n.d.-c).
+- In **1948**, President Harry Truman issued **Executive Order 9981**, ordering the **desegregation of the armed forces**, a decision historians tie in part to pressure from civil-rights leaders and to the growing importance of the Black urban vote (National Archives, n.d.-c).
 
 The lesson is blunt and worth stating plainly: **a vote you can actually cast is power.** The Migration did not create Black political genius, which the South had always had. It moved that genius to ground where it could finally be counted.
 
@@ -1398,7 +1398,7 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
             prompt: "Which best describes the Black middle class that grew in Northern cities?",
             options: [
               "It did not exist",
-              "It was a real achievement — postal workers, porters, teachers, ministers, business owners — but it rose inside walls of segregation it did not choose",
+              "It was a real achievement, postal workers, porters, teachers, ministers, business owners, but it rose inside walls of segregation it did not choose",
               "It was fully equal to the white middle class",
               "It was made up only of musicians",
             ],
@@ -1441,7 +1441,7 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
             prompt: "The honest summary of this section is that the Migration:",
             options: [
               "Bought full equality",
-              "Built real Black political power and a real Black middle class, but did not buy equality — because equality was not for sale",
+              "Built real Black political power and a real Black middle class, but did not buy equality, because equality was not for sale",
               "Made no political difference",
               "Only helped musicians",
             ],
@@ -1465,7 +1465,7 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
             prompt: "The deepest point of Section 6 is that:",
             options: [
               "Voting does not matter",
-              "A vote you can actually cast is power — the Migration moved Black political genius to ground where it could finally be counted",
+              "A vote you can actually cast is power, the Migration moved Black political genius to ground where it could finally be counted",
               "The South was better for Black voters",
               "Only presidents have power",
             ],
@@ -1500,7 +1500,7 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
       recallContent: [
         {
           prompt: "How did redlining block wealth-building for Black families?",
-          answer: "Government-backed mortgages were denied in Black neighborhoods (HOLC 'red' grades; the FHA's 1934 rules treating Black residents as a lending risk). No mortgage meant no home, no home equity, and no main asset to pass to children — blocking the wealth escalator for two generations.",
+          answer: "Government-backed mortgages were denied in Black neighborhoods (HOLC 'red' grades; the FHA's 1934 rules treating Black residents as a lending risk). No mortgage meant no home, no home equity, and no main asset to pass to children, blocking the wealth escalator for two generations.",
         },
         {
           prompt: "Why is 'the HOLC maps caused segregation' an oversimplification?",
@@ -1518,7 +1518,7 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
 
 **The Supreme Court closed the courthouse door in 1948.** In *Shelley v. Kraemer*, the Court ruled that while private parties could *write* such covenants, a **state court could not enforce them**, because judicial enforcement would make the government a party to racial discrimination, violating the Fourteenth Amendment (*Shelley v. Kraemer*, 1948). It was a real victory. But notice its limit: the covenants themselves were not banned, only their court enforcement, and segregation simply shifted to other, quieter tools, from realtor practice to violence, until the Fair Housing Act of 1968.
 
-**Then government helped build what the historian Arnold Hirsch called the "second ghetto."** In the postwar years, cities cleared "slums" and built large public-housing projects, and in Chicago these were deliberately sited to keep Black residents concentrated in the existing Black Belt rather than let them disperse. In *Making the Second Ghetto: Race and Housing in Chicago, 1940–1960* (1983), Hirsch showed that midcentury segregation was not a leftover from the past fading away, but a **new structure actively built by public policy and private action together** (Hirsch, 1983).
+**Then government helped build what the historian Arnold Hirsch called the "second ghetto."** In the postwar years, cities cleared "slums" and built large public-housing projects, and in Chicago these were deliberately sited to keep Black residents concentrated in the existing Black Belt rather than let them disperse. In *Making the Second Ghetto: Race and Housing in Chicago, 1940-1960* (1983), Hirsch showed that midcentury segregation was not a leftover from the past fading away, but a **new structure actively built by public policy and private action together** (Hirsch, 1983).
 
 **And crossing the line could be deadly.** When Black families did move into white blocks, they were often met with mobs, vandalism, and firebombs. This was not only a Southern story: some of the ugliest anti-Black housing violence of the century happened in Northern cities. The "promised land" defended its borders.
 
@@ -1592,7 +1592,7 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
             prompt: "Why should you be careful with the claim 'the HOLC maps caused housing segregation'?",
             options: [
               "Because the maps never existed",
-              "Because scholars debate how much the maps caused versus reflected existing discrimination — the FHA's lending rules may have mattered more",
+              "Because scholars debate how much the maps caused versus reflected existing discrimination, the FHA's lending rules may have mattered more",
               "Because segregation was illegal",
               "Because the maps were only used in the South",
             ],
@@ -1652,7 +1652,7 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
             prompt: "What often happened when Black families moved into white blocks in Northern cities?",
             options: [
               "They were always welcomed",
-              "They were often met with mobs, vandalism, and firebombs — anti-Black housing violence was not only a Southern story",
+              "They were often met with mobs, vandalism, and firebombs, anti-Black housing violence was not only a Southern story",
               "The city paid them to leave",
               "Nothing at all",
             ],
@@ -1717,14 +1717,14 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
               "They only applied to farms",
             ],
             correctIndex: 1,
-            explanation: "The same rules that denied Black families mortgages paid for white families to move out — two sides of one policy.",
+            explanation: "The same rules that denied Black families mortgages paid for white families to move out, two sides of one policy.",
             sourceLessonSlug: "gmw-white-flight-deindustrialization",
           },
           {
             prompt: "Which statement best holds the full truth of the Migration's costs?",
             options: [
               "The Migration was a total failure",
-              "The Migration was a triumph of courage AND, for many, a door opening onto a room whose far exits were being sealed — both are true",
+              "The Migration was a triumph of courage AND, for many, a door opening onto a room whose far exits were being sealed, both are true",
               "The Migration had no costs",
               "The North was exactly like the South",
             ],
@@ -1831,7 +1831,7 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
             prompt: "What is the honest caveat about Black performers' welcome in 1920s Paris?",
             options: [
               "There was no welcome at all",
-              "Paris was freer than the U.S. but not free — audiences often embraced Black artists as exotic and 'primitive' (negrophilia)",
+              "Paris was freer than the U.S. but not free, audiences often embraced Black artists as exotic and 'primitive' (negrophilia)",
               "Paris treated them exactly equally",
               "They were paid nothing",
             ],
@@ -1951,14 +1951,14 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
               "A government order",
             ],
             correctIndex: 1,
-            explanation: "Southern opportunity and roots pull, while Northern job losses push — a reversal of the original push-pull.",
+            explanation: "Southern opportunity and roots pull, while Northern job losses push, a reversal of the original push-pull.",
             sourceLessonSlug: "gmw-internationalism-and-cold-war",
           },
           {
             prompt: "How does the course frame the New Great Migration's meaning?",
             options: [
               "As proof the Migration failed",
-              "As the Migration's children exercising the freedom to live where they choose — the very freedom six million people left home to claim",
+              "As the Migration's children exercising the freedom to live where they choose, the very freedom six million people left home to claim",
               "As unrelated to the Great Migration",
               "As forced removal",
             ],
@@ -1990,10 +1990,10 @@ The lesson is blunt and worth stating plainly: **a vote you can actually cast is
         instructions: "Type the missing term, name, or number from the course, then check. Close answers (spelling, capitalization) are counted as 'close,' not wrong.",
         items: [
           {
-            prompt: "About ___ million African Americans left the South during the Great Migration (roughly 1916–1970).",
+            prompt: "About ___ million African Americans left the South during the Great Migration (roughly 1916-1970).",
             answer: "six",
             accept: ["6", "6 million", "six million"],
-            explanation: "About six million — and it is an estimate, so we say 'about.'",
+            explanation: "About six million, and it is an estimate, so we say 'about.'",
           },
           {
             prompt: "The system of Southern segregation law and custom that the migrants were leaving is called ___ ___ (two words).",
