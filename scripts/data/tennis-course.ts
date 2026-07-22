@@ -2303,7 +2303,7 @@ So: an M15 winner earns **$2,160**. Costs are about **$38,800 a year**. The Inde
 
 **Win ten professional tournaments in a year. To break even. Before paying a coach.**
 
-**How many people are we talking about?** The ITF, quoted in the same report: *"every year, 14,000 men and women play at least one $15,000 tournament, but research indicates that **only approximately 600 earn enough prize money to cover the typical annual cost of competing** – excluding the cost of coaching"* (IRP, 2018, ¶294). The panel's own summary puts it at **the top 250 to 350 players**, out of roughly **14,000** (IRP, 2018, ¶8.2).
+**How many people are we talking about?** The ITF, quoted in the same report: *"every year, 14,000 men and women play at least one $15,000 tournament, but research indicates that **only approximately 600 earn enough prize money to cover the typical annual cost of competing**, excluding the cost of coaching"* (IRP, 2018, ¶294). The panel's own summary puts it at **the top 250 to 350 players**, out of roughly **14,000** (IRP, 2018, ¶8.2).
 
 **Your turn. Get out a calculator.**
 
