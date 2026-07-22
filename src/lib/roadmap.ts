@@ -445,6 +445,19 @@ export const ROADMAP = `# Learn.WitUS — Roadmap
   \`:::reveal\` click-to-reveal, and the 180 recall beats became self-graded recall cards.
   Authored explanations cite 14 CFR only where a real rule governs. Re-run \`pnpm seed:faa\`
   (\`--dry-run\` prints the breakdown without touching the DB).
+- ✅ **Saved offline courses know when they are out of date** (\`feat/offline-content-version\`,
+  migration 0037). BAM asked the honest question: do offline courses sync when the professor updates
+  them? The answer was half yes. Lesson PAGES are network-first, so an online learner always sees
+  the new content, but downloaded MEDIA is cache-first with no revalidation, so replacing a lesson's
+  audio at the same URL left everyone who downloaded it on the old file, forever, with no signal.
+  Courses now carry a \`content_version\` that bumps whenever a lesson or module is created, edited
+  or deleted (bumped in the query layer, so seeds and any future write path bump too, not just the
+  authoring routes). A saved lesson records the version it downloaded; **/downloads** compares it
+  against the live one and offers **Update available**, which re-downloads that course and evicts
+  the stale media first so the refresh is real rather than the cache handing back the same bytes.
+  Deliberately not \`updated_at\` (which moves on a price change and would cry wolf). The version
+  check is the one network call on that screen and fails silently, so offline the page behaves
+  exactly as before.
 - ✅ **Section quizzes can sit WITHIN a module** (\`fix/faa-section-quizzes\`). The FAA importer no
   longer forces every quiz to the module end: a quiz row in \`quizzes-import.csv\` may opt in with an
   \`after_lesson_order\` = the lesson \`n\` it should follow, and \`seed-faa.ts\` interleaves it right

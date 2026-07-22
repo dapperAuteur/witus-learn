@@ -140,6 +140,10 @@ export default async function CourseBySlugPage({ params }: Params) {
         courseHref: base,
         sectionTitle: (l.moduleId ? moduleTitles.get(l.moduleId) : null) ?? null,
         lessonTitle: l.title,
+        // Stamp what the learner is actually downloading, so /downloads can later tell them the
+        // instructor has changed the course since (see courses.content_version).
+        courseId: course.id,
+        courseContentVersion: course.contentVersion,
       },
     });
     return acc;

@@ -1,4 +1,4 @@
-import { and, asc, desc, eq, ilike, or, type SQL } from "drizzle-orm";
+import { and, asc, desc, eq, ilike, inArray, or, type SQL } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseCategories,
@@ -62,4 +62,24 @@ export async function listCategories(tenantId: string): Promise<CourseCategory[]
     .from(courseCategories)
     .where(eq(courseCategories.tenantId, tenantId))
     .orderBy(asc(courseCategories.sortOrder), asc(courseCategories.name));
+}
+
+/**
+ * Current `content_version` for the given course ids, tenant-scoped.
+ *
+ * Powers the "Update available" badge on /downloads: the learner's manifest holds the version it
+ * downloaded, this returns the version that is live now. Ids belonging to another brand are simply
+ * ABSENT from the result rather than erroring, which is both the tenant-isolation rule (never
+ * confirm a foreign course exists) and the behaviour the UI wants (unknown, so say nothing).
+ */
+export async function getContentVersions(
+  tenantId: string,
+  ids: string[],
+): Promise<Record<string, number>> {
+  if (ids.length === 0) return {};
+  const rows = await db
+    .select({ id: courses.id, contentVersion: courses.contentVersion })
+    .from(courses)
+    .where(and(eq(courses.tenantId, tenantId), inArray(courses.id, ids)));
+  return Object.fromEntries(rows.map((r) => [r.id, r.contentVersion]));
 }

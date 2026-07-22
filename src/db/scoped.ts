@@ -2,6 +2,7 @@ import "server-only";
 import { notFound } from "next/navigation";
 import { requireTenant, type TenantRecord } from "@/lib/tenant";
 import {
+  getContentVersions,
   getCourseById,
   listCategories,
   listCourses,
@@ -49,6 +50,11 @@ export class ScopedDb {
   /** Course by id, scoped to this tenant (null → caller 404s; never cross-tenant). */
   getCourseById(id: string) {
     return getCourseById(this.tenantId, id);
+  }
+
+  /** Live `content_version` per course id, tenant-scoped (foreign ids are omitted). */
+  getContentVersions(ids: string[]) {
+    return getContentVersions(this.tenantId, ids);
   }
 
   listCategories() {
