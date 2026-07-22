@@ -190,6 +190,11 @@ function deDash(text: string): string {
   out = out.replace(/([A-Za-z0-9'")])—(?=[A-Za-z0-9'"(])/g, "$1, ");
   // Any survivors (around punctuation / line edges) → comma.
   out = out.replace(/\s*—\s*/g, ", ");
+  // EN-dash between numbers in PROSE ("0.5–5% of linoleic acid", "1,000–2,000 mg") reads as an
+  // AI tell too, so it becomes a plain hyphen. Whether this also touches a citation's page range
+  // depends on whether the caller sliced the bibliography off first, which is verified by
+  // regenerating and checking a known reference; see the note at the ECS body path.
+  out = out.replace(/(\d)\s*–\s*(\d)/g, "$1-$2");
   // Tidy up commas we may have produced next to existing punctuation.
   out = out.replace(/,\s*([.,;:!?])/g, "$1");
   out = out.replace(/,\s+,/g, ",");
@@ -448,12 +453,14 @@ function convertCentosQuiz(c: CentosQuiz): QuizContent {
     passingScore: c.passingScore ?? 80,
     questions: (c.questions ?? []).map((q) => {
       const idx = q.options.findIndex((o) => o.id === q.correctOptionId);
+      // deDash the authored prose but NEVER the appended citation: a reference's own
+      // punctuation, and its page range, is verbatim.
       const explanation = q.citation
-        ? `${q.explanation ?? ""}\n\nReference: ${q.citation}`.trim()
-        : q.explanation;
+        ? `${deDash(q.explanation ?? "")}\n\nReference: ${q.citation}`.trim()
+        : q.explanation && deDash(q.explanation);
       return {
-        prompt: q.questionText,
-        options: q.options.map((o) => o.text),
+        prompt: deDash(q.questionText),
+        options: q.options.map((o) => deDash(o.text)),
         correctIndex: idx < 0 ? 0 : idx,
         explanation,
       };
@@ -476,12 +483,13 @@ function convertEcsQuiz(c: EcsQuiz): QuizContent {
   return {
     passingScore: 80,
     questions: (c.questions ?? []).map((q) => ({
-      prompt: q.question,
-      options: q.options,
+      prompt: deDash(q.question),
+      options: q.options.map((o) => deDash(o)),
       correctIndex: typeof q.correctIndex === "number" ? q.correctIndex : 0,
+      // See convertCentosQuiz: prose is de-dashed, the citation is left verbatim.
       explanation: q.citation
-        ? `${q.explanation ?? ""}\n\nReference: ${q.citation}`.trim()
-        : q.explanation,
+        ? `${deDash(q.explanation ?? "")}\n\nReference: ${q.citation}`.trim()
+        : q.explanation && deDash(q.explanation),
     })),
   };
 }
@@ -494,10 +502,10 @@ function convertSpeedwayQuiz(rows: Record<string, string>[]): QuizContent {
     questions: rows
       .filter((r) => (r.question ?? "").trim())
       .map((r) => ({
-        prompt: r.question.trim(),
-        options: [r.option_a, r.option_b, r.option_c, r.option_d].map((o) => (o ?? "").trim()),
+        prompt: deDash(r.question.trim()),
+        options: [r.option_a, r.option_b, r.option_c, r.option_d].map((o) => deDash((o ?? "").trim())),
         correctIndex: letterIdx[(r.correct_letter ?? "A").trim().toUpperCase()] ?? 0,
-        explanation: (r.explanation ?? "").trim() || undefined,
+        explanation: deDash((r.explanation ?? "").trim()) || undefined,
       })),
   };
 }
@@ -842,7 +850,16 @@ function extractEmbeddedQuiz(rawMd: string): QuizContent | null {
       explanation = ans[2].trim() || undefined;
     }
     if (correctIndex < 0 || correctIndex >= options.length) continue;
-    questions.push({ prompt, options, correctIndex, explanation });
+    // Quizzes lifted out of the lecture markdown never passed through the body's deDash (this
+    // region is sliced out BEFORE the body is cleaned), so they arrived carrying the script's
+    // em-dash style: "The HPA axis — the body's primary stress response cascade — originates…".
+    // The quiz region already stops before REFERENCES, so no citation reaches this point.
+    questions.push({
+      prompt: deDash(prompt),
+      options: options.map((o) => deDash(o)),
+      correctIndex,
+      explanation: explanation && deDash(explanation),
+    });
   }
   return questions.length ? { passingScore: 80, questions } : null;
 }
