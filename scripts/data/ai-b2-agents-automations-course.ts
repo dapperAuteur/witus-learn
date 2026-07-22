@@ -153,7 +153,7 @@ Why interleaving reasoning and acting matters: a model that only reasons can hal
 - **Make actions idempotent or confirmable.** If a tool sends money or email, a duplicate call must not double-charge, and irreversible actions should require a human OK (lesson 9).
 - **Document for the model the way you'd document for a junior engineer.** Anthropic's guidance: invest in clear tool interfaces; the model uses tools exactly as well as they're described (Anthropic, 2024).
 
-:::reveal Name the four parts of a tool definition. Why is \`lookup_order_by_id\` a better tool to expose than \`run_sql(query)\`: give two reasons. ||| A name, a description, an input schema (typed parameters), and a defined return shape. \`lookup_order_by_id\` is safer because (1) it constrains inputs so the model literally can't express dangerous calls (least privilege), and (2) \`run_sql\` hands your whole database to untrusted, model-generated queries — an enormous blast radius — while a narrow tool returns a clean, structured result the model can recover from.
+:::reveal Name the four parts of a tool definition. Why is \`lookup_order_by_id\` a better tool to expose than \`run_sql(query)\`: give two reasons. ||| A name, a description, an input schema (typed parameters), and a defined return shape. \`lookup_order_by_id\` is safer because (1) it constrains inputs so the model literally can't express dangerous calls (least privilege), and (2) \`run_sql\` hands your whole database to untrusted, model-generated queries, an enormous blast radius, while a narrow tool returns a clean, structured result the model can recover from.
 
 ## Sources
 - OpenAI. (2025). *Function calling* (API documentation): tool definitions (name, description, parameters JSON schema), the tool-call cycle. https://developers.openai.com/api/docs/guides/function-calling
@@ -351,7 +351,7 @@ Why interleaving reasoning and acting matters: a model that only reasons can hal
 
 > **Trust DNA, the core of this course:** an agent that acts is software with a fuzzy, manipulable operator inside it. **Sandbox it, confirm the consequential moves, and give it the least privilege that does the job.** Convenience is never a reason to widen the blast radius.
 
-:::reveal Name OWASP LLM06 and the security principle that counters it. Why is prompt injection *more dangerous* against an agent-with-tools than against a plain chatbot? ||| LLM06 is Excessive Agency, countered by least privilege (minimum tools, permissions, and autonomy). Injection is far worse against an agent because a plain chatbot only produces text, whereas an agent can take real actions with its tools — so injected instructions can move money, send email, or delete data, not just say something wrong.
+:::reveal Name OWASP LLM06 and the security principle that counters it. Why is prompt injection *more dangerous* against an agent-with-tools than against a plain chatbot? ||| LLM06 is Excessive Agency, countered by least privilege (minimum tools, permissions, and autonomy). Injection is far worse against an agent because a plain chatbot only produces text, whereas an agent can take real actions with its tools, so injected instructions can move money, send email, or delete data, not just say something wrong.
 
 ## Sources
 - OWASP. (2025). *Top 10 for LLM Applications 2025*, LLM06: Excessive Agency (limit functionality/permissions/autonomy); LLM01: Prompt Injection; LLM05: Improper Output Handling. https://genai.owasp.org/llm-top-10/

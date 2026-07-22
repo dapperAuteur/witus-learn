@@ -137,7 +137,7 @@ A few terms you'll use constantly:
 
 Start as light as the job allows; move down the ladder only when the lighter tool stops fitting. Over-engineering is its own kind of slop.
 
-:::reveal You need a working internal demo by end of day with no custom logic. Which rung of the ladder, and why? ||| No-code — it's the lightest, fastest rung and needs no engineering. With no custom logic and a same-day deadline, a no-code AI tool gets you a working demo without writing or deploying any code.
+:::reveal You need a working internal demo by end of day with no custom logic. Which rung of the ladder, and why? ||| No-code, it's the lightest, fastest rung and needs no engineering. With no custom logic and a same-day deadline, a no-code AI tool gets you a working demo without writing or deploying any code.
 
 ## Sources
 - OpenAI. (2025). *Prompting* and API reference: making model calls and handling structured output. https://platform.openai.com/docs/guides/prompting
