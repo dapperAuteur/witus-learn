@@ -429,8 +429,8 @@ One habit to build from day one: write the move *after* you play it, keep the sh
 
 **The Laws of Chess.** They live in the FIDE Handbook as section **E.01**, and the current edition **took effect on 1 January 2023**, approved by the FIDE General Assembly (FIDE, 2023). Two structural things are worth knowing before you ever argue a rule:
 
-- **The Laws are versioned.** Rule details change between editions — which is why this course cites the 2023 Laws *by edition* and why a rules claim from an old YouTube video or an uncle who played in the 90s should be checked against the current handbook, not trusted.
-- **The Laws are deliberately incomplete.** The preface says outright that they cannot cover every situation, and gives the **arbiter** — chess's referee — the discretion to reach a fair decision in cases the text doesn't settle. Chess is a game of precise rules administered by human judgment, and FIDE trains and licenses arbiters (up to the **International Arbiter** title) to supply it; its Arbiters' Commission publishes a manual for exactly this work (FIDE Arbiters' Commission, 2025).
+- **The Laws are versioned.** Rule details change between editions, which is why this course cites the 2023 Laws *by edition* and why a rules claim from an old YouTube video or an uncle who played in the 90s should be checked against the current handbook, not trusted.
+- **The Laws are deliberately incomplete.** The preface says outright that they cannot cover every situation, and gives the **arbiter**, chess's referee, the discretion to reach a fair decision in cases the text doesn't settle. Chess is a game of precise rules administered by human judgment, and FIDE trains and licenses arbiters (up to the **International Arbiter** title) to supply it; its Arbiters' Commission publishes a manual for exactly this work (FIDE Arbiters' Commission, 2025).
 
 **What the Laws actually contain.** Articles 1-5 are the "basic rules of play" you met in Section 1, the board, the moves, check, and how games end. Articles 6-12 are the "competition rules": the clock (Art. 6), irregularities (Art. 7), recording moves (Art. 8), the draw rules (Art. 9), points (Art. 10), player conduct (Art. 11), and the arbiter's role (Art. 12). After that come the appendices: rapid chess (A), blitz (B), algebraic notation (C), and more. This section walks the competition rules that actually decide games: touching pieces, draws, and the clock.
 
@@ -880,9 +880,9 @@ Train these as *shapes*, not sentences. Your eye needs to fire on "knight two sq
 
 **Removing the defender.** Tactics often *almost* work, that knight fork would win the queen, except a bishop guards the fork square. So make the guard disappear:
 
-- **Capture it** — trade off the defender, then execute the tactic.
-- **Deflect it** — attack or check the defender so it must move away from its post (also called *decoy* when you drag a piece *toward* a fatal square rather than away from a duty).
-- **Overload it** — if one defender guards two things, take one; the defender recaptures and abandons the other; take that too. An overworked piece is a promise that can't be kept twice.
+- **Capture it**, trade off the defender, then execute the tactic.
+- **Deflect it**, attack or check the defender so it must move away from its post (also called *decoy* when you drag a piece *toward* a fatal square rather than away from a duty).
+- **Overload it**, if one defender guards two things, take one; the defender recaptures and abandons the other; take that too. An overworked piece is a promise that can't be kept twice.
 
 **How to actually find all this in a game.** The professional habit is a scan, every move, in this order: **checks, captures, threats**, yours *and* theirs. Checks first because they force the most; captures next; threats last. It sounds mechanical because it is; the magic isn't in the scan, it's in doing it on move 31 with two minutes left, when your hand is itching to play the first idea it saw. The blunders that decide amateur games aren't failures of talent. They're skipped scans.
 
@@ -941,7 +941,7 @@ Train these as *shapes*, not sentences. Your eye needs to fire on "knight two sq
       slug: "chess-improving",
       title: "16 · How to actually get better (a plan that fits a school week)",
       section: "Section 3 · Strategy: openings, tactics, endgames",
-      body: `Chess improvement has a suspicious amount in common with getting stronger at anything: the work that helps is mildly uncomfortable and unglamorous, and the work that feels good mostly doesn't help. Here is a plan built from the standing advice of the coaching tradition — Capablanca's endings-first doctrine included (Capablanca, 1921), sized for a person with homework.
+      body: `Chess improvement has a suspicious amount in common with getting stronger at anything: the work that helps is mildly uncomfortable and unglamorous, and the work that feels good mostly doesn't help. Here is a plan built from the standing advice of the coaching tradition, Capablanca's endings-first doctrine included (Capablanca, 1921), sized for a person with homework.
 
 **The weekly skeleton (about 5 hours):**
 
@@ -1351,7 +1351,7 @@ Fifteen hundred years after chaturanga, the strongest chess entities on Earth ta
 - **New players on Chess.com increased fivefold.**
 - Google searches for chess **doubled**; **"how to play chess" hit a nine-year peak**.
 - eBay inquiries for chess sets rose **250%**.
-- Walter Tevis's original 1983 novel entered the *New York Times* bestseller list — **37 years after publication**.
+- Walter Tevis's original 1983 novel entered the *New York Times* bestseller list, **37 years after publication**.
 - FIDE reported significantly higher interest in the upcoming World Championship.
 
 Contemporary reporting filled in the scale: Bloomberg's end-of-2020 analysis chronicled surging chess set sales and millions of new sign-ups on the major platforms in the weeks after release (Bloomberg, 2020).
@@ -1630,8 +1630,8 @@ And one more 1927 landmark belongs in this map: the same London gathering hosted
 **The core logic, no heavy math required.** Your rating is a number that moves with your results:
 
 - The rating **gap** between two players predicts an **expected score**. Roughly equal ratings → expect about 50%. A couple hundred points of advantage → expect roughly three wins in four. A vast gap → expect nearly everything.
-- After you play, your actual score is compared to the expected score. **Beat expectations, gain points; fall short, lose points.** How many depends on the size of the surprise: beating an equal nudges you up a little, beating someone far above you pays out a lot, and losing to them costs almost nothing — the system already assumed you'd lose.
-- A multiplier (the *K-factor*) scales the movement, set higher for new and developing players — youth ratings move fast on purpose, because the system is still learning who you are (and, at your age, because who you are keeps improving).
+- After you play, your actual score is compared to the expected score. **Beat expectations, gain points; fall short, lose points.** How many depends on the size of the surprise: beating an equal nudges you up a little, beating someone far above you pays out a lot, and losing to them costs almost nothing, the system already assumed you'd lose.
+- A multiplier (the *K-factor*) scales the movement, set higher for new and developing players, youth ratings move fast on purpose, because the system is still learning who you are (and, at your age, because who you are keeps improving).
 
 Two properties make Elo genuinely fair in a way that should raise your standards for every other ranking you meet. It is **self-correcting**: an overrated player leaks points until the number matches reality, an underrated one climbs. And it is **opponent-aware**: nobody farms a high rating by beating beginners, because expected wins pay nearly nothing. The number is hard to fake over any real sample of games, which is exactly why the cheating economics in Section 6 target it.
 
@@ -1661,7 +1661,7 @@ Two properties make Elo genuinely fair in a way that should raise your standards
       slug: "chess-titles",
       title: "26 · Grandmaster: what the letters actually take",
       section: "Section 5 · Organized chess: ratings, titles, and where you fit",
-      body: `"Grandmaster" may be the most casually misused word in chess journalism, so let's install the real definitions. FIDE awards a ladder of **titles** — earned once, held **for life** — under regulations published in its handbook (FIDE, 2022). They are the game's permanent credentials, recognized identically in every one of FIDE's 204 member countries.
+      body: `"Grandmaster" may be the most casually misused word in chess journalism, so let's install the real definitions. FIDE awards a ladder of **titles**, earned once, held **for life**, under regulations published in its handbook (FIDE, 2022). They are the game's permanent credentials, recognized identically in every one of FIDE's 204 member countries.
 
 **The open titles** (any player, any gender, may earn them):
 
@@ -1710,8 +1710,8 @@ Two properties make Elo genuinely fair in a way that should raise your standards
 
 **The two big online platforms.** Both give unlimited opponents, puzzles, and analysis; know how they differ, because the difference is a business-model lesson:
 
-- **Chess.com** is the largest commercial platform — a company with subscriptions, ads, sponsored events, and hired streamers and writers. Its scale is why the boom statistics from Lesson 22 ran through it (Netflix, 2020).
-- **Lichess** is the philosophical counterweight: begun in **2010** by the French programmer **Thibault Duplessis** as a hobby project, it is **free and open-source, carries no ads, sells no data, and runs on donations** — "patrons" who voluntarily fund the servers (Lichess, n.d.). Everything is free for everyone, full stop.
+- **Chess.com** is the largest commercial platform, a company with subscriptions, ads, sponsored events, and hired streamers and writers. Its scale is why the boom statistics from Lesson 22 ran through it (Netflix, 2020).
+- **Lichess** is the philosophical counterweight: begun in **2010** by the French programmer **Thibault Duplessis** as a hobby project, it is **free and open-source, carries no ads, sells no data, and runs on donations**, "patrons" who voluntarily fund the servers (Lichess, n.d.). Everything is free for everyone, full stop.
 
 The pair is a live economics exhibit you'll revisit in Section 6: the same product, online chess, sustainably delivered by a venture-scale subscription business *and* by a donation-funded open-source project. Neither model is a charity case; both have run for years at massive scale.
 
@@ -1952,9 +1952,9 @@ The pair is a live economics exhibit you'll revisit in Section 6: the same produ
 
 **Why playing doesn't pay.** Chess prize money is a steep pyramid. At the very top, world championship cycles, elite invitationals, the purses are real. One layer down, the arithmetic turns hostile:
 
-- **Prizes concentrate at first place.** A typical weekend open publishes its prize list in advance: a healthy top prize, thinning fast below it, nothing at all for most of the field. And a Swiss tournament (Lesson 27) guarantees you face your own level — reliably outscoring your section is exactly as hard as being systematically better than people rated like you.
-- **The costs are per-event and unavoidable:** entry fee, travel, lodging, and days of your time — paid by everyone, recouped by almost no one. Run the expected value the way Lesson 25 taught you to think about expectations, using the tournament's own published prize list, and the number is negative for nearly every entrant. That's not cynicism; it's the flyer doing math.
-- **Even the credential chase costs money.** Remember Lesson 26: GM and IM norms require strong international fields across at least 27 games (FIDE, 2022) — which in practice means years of travel to norm-eligible events, an expensive project with no salary attached, undertaken in the *hope* of a title that itself guarantees no income.
+- **Prizes concentrate at first place.** A typical weekend open publishes its prize list in advance: a healthy top prize, thinning fast below it, nothing at all for most of the field. And a Swiss tournament (Lesson 27) guarantees you face your own level, reliably outscoring your section is exactly as hard as being systematically better than people rated like you.
+- **The costs are per-event and unavoidable:** entry fee, travel, lodging, and days of your time, paid by everyone, recouped by almost no one. Run the expected value the way Lesson 25 taught you to think about expectations, using the tournament's own published prize list, and the number is negative for nearly every entrant. That's not cynicism; it's the flyer doing math.
+- **Even the credential chase costs money.** Remember Lesson 26: GM and IM norms require strong international fields across at least 27 games (FIDE, 2022), which in practice means years of travel to norm-eligible events, an expensive project with no salary attached, undertaken in the *hope* of a title that itself guarantees no income.
 
 The population that clears all of this, living primarily on playing income, is, roughly, the world elite plus a thin band of circuit professionals. Everyone else with "chess" on their tax return is earning from the game some *other* way. Many titled players, grandmasters included, make their actual living from coaching, writing, commentary, and content, the playing career is the credential, not the paycheck.
 
@@ -1987,9 +1987,9 @@ The population that clears all of this, living primarily on playing income, is, 
 
 **The coaching market, honestly described.** Chess coaching runs from a college student running a lunchtime club program, through after-school enrichment companies that place coaches in dozens of schools, up to titled players charging premium rates for private lessons online. Three honest facts about it:
 
-- **The credential that matters at the entry level is not a title.** A beginning student needs a coach who is a few hundred points stronger, reliably prepared, and good with children — not a grandmaster. (At the *top* of the market, titles and coaching track records set the price; different market, same game.) This is why coaching is realistically open to strong high school players right now: club assistants, camp counselors, and beginner-group coaches are hired every season, and "I run my school's club and hold a US Chess rating" is a legitimate résumé line at sixteen.
-- **Rates vary too much to quote.** By region, format (group vs. private), venue (school program vs. independent), and credential, the spread is enormous — so this course refuses to print "chess coaches make $X," because any such number without a year, place, and definition is folklore (the Lesson 22 standard). What's structural and true: group teaching through schools pays as *employment*; private coaching pays as a *small business*, with everything that implies about finding clients, setting rates, and keeping them.
-- **The product is not "making grandmasters."** Nearly all scholastic coaching sells confidence, focus, sportsmanship, problem-solving practice, and a safe competitive outlet. Schools often buy chess partly on claims that it raises academic performance — and here the sourcing habit matters: the research on academic transfer is genuinely mixed, so the honest pitch stays close to what's directly observable (kids concentrating for an hour, losing gracefully, doing voluntary hard thinking) rather than promising math scores. Sell what you can verify; it's better business *and* better epistemics.
+- **The credential that matters at the entry level is not a title.** A beginning student needs a coach who is a few hundred points stronger, reliably prepared, and good with children, not a grandmaster. (At the *top* of the market, titles and coaching track records set the price; different market, same game.) This is why coaching is realistically open to strong high school players right now: club assistants, camp counselors, and beginner-group coaches are hired every season, and "I run my school's club and hold a US Chess rating" is a legitimate résumé line at sixteen.
+- **Rates vary too much to quote.** By region, format (group vs. private), venue (school program vs. independent), and credential, the spread is enormous, so this course refuses to print "chess coaches make $X," because any such number without a year, place, and definition is folklore (the Lesson 22 standard). What's structural and true: group teaching through schools pays as *employment*; private coaching pays as a *small business*, with everything that implies about finding clients, setting rates, and keeping them.
+- **The product is not "making grandmasters."** Nearly all scholastic coaching sells confidence, focus, sportsmanship, problem-solving practice, and a safe competitive outlet. Schools often buy chess partly on claims that it raises academic performance, and here the sourcing habit matters: the research on academic transfer is genuinely mixed, so the honest pitch stays close to what's directly observable (kids concentrating for an hour, losing gracefully, doing voluntary hard thinking) rather than promising math scores. Sell what you can verify; it's better business *and* better epistemics.
 
 **The pipeline as a system.** School club → local scholastic tournaments → state championships → national scholastics. Every arrow in that chain is staffed: someone teaches the club, someone directs the tournament (Lesson 32), someone organizes travel, someone runs the summer camp that keeps skills warm in July. In most towns those someones are part-time, semi-amateur, and perpetually scarce, scarcity that a competent, rules-literate young person (which, five sections in, is you) can walk straight into. The teenager who can teach a knight fork to a room of fourth-graders, keep score disputes calm using actual Article numbers, and show up twice a week is not waiting for the chess economy to make room. The room is already empty and waiting.
 
@@ -2024,7 +2024,7 @@ The population that clears all of this, living primarily on playing income, is, 
 
 - **It's a power-law market.** A handful of top channels capture most of the audience; the long tail earns pocket money or nothing. Platform payouts, sponsorships, and subscriptions follow attention, and attention is winner-take-most.
 - **It's a *business*, not a lottery ticket.** The creators who last treat it like one: consistent schedule, a defined niche (chess for absolute beginners; endgames only; chess history; opening traps), multiple small revenue streams (platform revenue, memberships, lesson funnels, affiliate gear), and years of unpaid or underpaid reps before any of it compounds.
-- **The barrier to entry is genuinely low — which cuts both ways.** A phone, free platform accounts (Lesson 27), and a Lichess board can start a channel this weekend. So can everyone else's. Low barriers make starting easy and standing out hard; the moat is showing up for year two.
+- **The barrier to entry is genuinely low, which cuts both ways.** A phone, free platform accounts (Lesson 27), and a Lichess board can start a channel this weekend. So can everyone else's. Low barriers make starting easy and standing out hard; the moat is showing up for year two.
 
 **The practical version for a student:** content is the rare chess business you can pilot at zero cost and small scale, a school-club recap channel, puzzle explainers for your district's scholastic scene, tournament vlogs. Worst case, you've built editing, speaking, and audience skills that transfer to literally everything. Best case, the niche grows with you. Either way you'll have learned the discipline this whole course keeps teaching: **show your sources, count honestly, and don't quote numbers nobody published**, which applies to view-count daydreams exactly as it did to prize funds.
 

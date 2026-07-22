@@ -785,7 +785,7 @@ Follow the money and the geography. Field lacrosse needs a big pitch, a big rost
             options: ["30 seconds", "60 seconds", "80 seconds", "90 seconds"],
             correctIndex: 3,
             explanation:
-              "NCAA women's uses a 90-second possession clock (NCAA, 2026a). World Lacrosse — both men's and women's, uses 80 seconds. Same sport, different code, different number.",
+              "NCAA women's uses a 90-second possession clock (NCAA, 2026a). World Lacrosse, both men's and women's, uses 80 seconds. Same sport, different code, different number.",
             sourceLessonSlug: "mens-vs-womens",
           },
           {

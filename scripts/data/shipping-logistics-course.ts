@@ -71,8 +71,8 @@ export const SHIPPING_LOGISTICS_COURSE: AuthoredCourse = {
 
 **How to decide between them,** category by category rather than all-or-nothing:
 - **High-value, hard-to-replace items** (heirlooms, specialized equipment, a well-built bed you love) usually justify shipping even at real cost.
-- **Bulky, low-value furniture** (a big-box-store bookshelf, a mattress near the end of its life) rarely justifies international shipping cost and customs hassle — sell-and-rebuy usually wins.
-- **Everything in between** comes down to your specific shipping quote versus your specific replacement cost at the destination — get an actual quote (Lesson 4) before assuming either way.
+- **Bulky, low-value furniture** (a big-box-store bookshelf, a mattress near the end of its life) rarely justifies international shipping cost and customs hassle, sell-and-rebuy usually wins.
+- **Everything in between** comes down to your specific shipping quote versus your specific replacement cost at the destination, get an actual quote (Lesson 4) before assuming either way.
 
 The Federal Maritime Commission, which oversees international household-goods movers by sea, recommends getting multiple written estimates based on an actual in-person (or video) inspection of your belongings before you decide anything, a rough guess over the phone isn't a number you can plan a budget around (Federal Maritime Commission, n.d.).
 
@@ -98,8 +98,8 @@ The Federal Maritime Commission, which oversees international household-goods mo
 **Sea (ocean) freight.** Far cheaper per pound or per cubic foot for large volumes, but far slower, typically weeks for the ocean transit alone, plus additional time for the shipment to clear destination customs (Lesson 5) once it arrives. This is the standard choice for a full household's worth of belongings.
 
 **Containers.** If you're shipping by sea, you'll typically choose between:
-- **A shared/consolidated container** (sometimes called less-than-container-load), where your goods share space with other shipments — cheaper, but slower, since the container waits until it's full enough to ship, and your goods are handled more times.
-- **An exclusive-use container** (a full container to yourself), where your goods aren't combined with anyone else's — costs more, but ships on its own schedule and is handled less.
+- **A shared/consolidated container** (sometimes called less-than-container-load), where your goods share space with other shipments, cheaper, but slower, since the container waits until it's full enough to ship, and your goods are handled more times.
+- **An exclusive-use container** (a full container to yourself), where your goods aren't combined with anyone else's, costs more, but ships on its own schedule and is handled less.
 
 **This course does not print a fixed number of weeks for either method**, because actual transit and customs-clearance time varies by destination, carrier, season, and how complete your paperwork is, treat any "6-8 weeks" style estimate you're quoted as just that: an estimate, not a guarantee, and build a buffer before you rely on your belongings arriving by a specific date.
 
@@ -130,7 +130,7 @@ The Federal Maritime Commission, which oversees international household-goods mo
 **Licensing.** Any company that ships household goods internationally by ocean vessel must be licensed or registered with the **Federal Maritime Commission (FMC)** as an Ocean Transportation Intermediary (OTI), a category that includes non-vessel-operating common carriers (NVOCCs) and freight forwarders, both of which can coordinate an international household-goods shipment. The FMC maintains a public, searchable list of licensed and bonded companies at **www2.fmc.gov/oti**, check any mover against it before you sign anything (Federal Maritime Commission, n.d.).
 
 **Beyond licensing**, the FMC's own consumer guidance recommends:
-- Getting **multiple written estimates**, each based on an actual inspection of your belongings (in person or by video) — not a phone guess (Lesson 3).
+- Getting **multiple written estimates**, each based on an actual inspection of your belongings (in person or by video), not a phone guess (Lesson 3).
 - **Reading the contract's fine print** carefully, including the payment and cancellation policy, before you sign.
 - Contacting the **Better Business Bureau**, local consumer agencies, or the FMC's own Consumer Affairs and Dispute Resolution Services (CADRS) staff to check a company's complaint history.
 
@@ -202,8 +202,8 @@ The Federal Maritime Commission, which oversees international household-goods mo
 
 - A **microchip**, often required before other steps (like a rabies titer test) can even be scheduled, since some countries require proof the chip was implanted before the vaccination or test it's meant to document.
 - **Core vaccinations**, always including rabies, verified against your destination's specific schedule.
-- A **rabies titer (antibody) test**, required by some countries — especially rabies-free destinations — which itself requires lead time for the blood draw, lab processing, and any required waiting period after the results.
-- A **United States Interstate and International Certificate for Health Examination for Small Animals (USDA APHIS Form 7001)**, issued by your accredited veterinarian and then formally **endorsed by USDA/APHIS** — most countries require this specific endorsement, not just a vet's signature (Animal and Plant Health Inspection Service, n.d.-b).
+- A **rabies titer (antibody) test**, required by some countries, especially rabies-free destinations, which itself requires lead time for the blood draw, lab processing, and any required waiting period after the results.
+- A **United States Interstate and International Certificate for Health Examination for Small Animals (USDA APHIS Form 7001)**, issued by your accredited veterinarian and then formally **endorsed by USDA/APHIS**, most countries require this specific endorsement, not just a vet's signature (Animal and Plant Health Inspection Service, n.d.-b).
 
 **Timeline: start 3+ months out, and expect longer for some destinations.** APHIS points to countries like Japan, Australia, and New Zealand, which have additional rabies-free-country requirements, as examples where the full process, including titer testing and waiting periods, can take **6 to 9 months** (Animal and Plant Health Inspection Service, n.d.-b). Booking a flight before you've confirmed your pet's paperwork can be completed in time is one of the most common, and most stressful, pet-travel mistakes.
 
@@ -236,11 +236,11 @@ The Federal Maritime Commission, which oversees international household-goods mo
 
 **Hand-carry, don't pack:**
 - **Passports and visas** for every traveling household member (this course's sibling *How to Get a U.S. Passport* covers getting or renewing yours).
-- **Birth certificates and marriage/divorce certificates** — originals, since destination residency permits, school enrollment, or bank accounts often require an original or an apostilled copy, not a photocopy sitting in a shipping container.
-- **Your pet's health certificate and vaccination records** (Lesson 6) — required at the border, the moment you arrive with the animal.
+- **Birth certificates and marriage/divorce certificates**, originals, since destination residency permits, school enrollment, or bank accounts often require an original or an apostilled copy, not a photocopy sitting in a shipping container.
+- **Your pet's health certificate and vaccination records** (Lesson 6), required at the border, the moment you arrive with the animal.
 - **Medical records and a current prescription list**, in case you need care or a refill before your belongings (and any home pharmacy) arrive.
 - **Financial and tax records** you might need to open a bank account or file a return from abroad (this platform's *Taxes for Americans Abroad* course covers the filing side).
-- **Your shipment's own paperwork** — the inventory list, the bill of lading, and any customs forms (Lesson 5) — since you'll need these to actually claim your goods when they arrive, and they do you no good packed inside the shipment they describe.
+- **Your shipment's own paperwork**, the inventory list, the bill of lading, and any customs forms (Lesson 5), since you'll need these to actually claim your goods when they arrive, and they do you no good packed inside the shipment they describe.
 
 **Make two copies of everything, and split them up.** The State Department's own travel checklist advises making two copies of your travel documents and leaving one "with a trusted friend or relative", so a second copy exists even if your original set is lost, stolen, or (for a move) still in transit (U.S. Department of State, n.d.-a). For a move, extend that habit to every document on this list, not just your passport.
 

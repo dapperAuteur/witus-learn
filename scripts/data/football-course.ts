@@ -660,17 +660,17 @@ Note also: Law 12 says that **if an offence involves contact, it is penalised by
 
 - The goalkeeper may handle the ball **only inside their own penalty area**. Outside it, "the goalkeeper has the same restrictions on handling the ball as any other player."
 - An **indirect free kick** is awarded if the goalkeeper, inside their own penalty area, **touches the ball with the hand/arm after releasing it** and before it has touched another player.
-- An **indirect free kick** is awarded if the goalkeeper handles the ball after it has been **deliberately kicked to them by a team-mate** — the rule everyone calls the **back-pass rule**. Two things people get wrong about it:
-  - It applies to a **deliberate kick** from a team-mate. A ball that comes off a team-mate's **head, chest or knee** may be handled — *unless* the team-mate used a **deliberate trick** to circumvent the Law, in which case the offence is committed and the **team-mate** is penalised (and Law 12 says the goalkeeper is penalised if responsible for initiating the trick).
+- An **indirect free kick** is awarded if the goalkeeper handles the ball after it has been **deliberately kicked to them by a team-mate**, the rule everyone calls the **back-pass rule**. Two things people get wrong about it:
+  - It applies to a **deliberate kick** from a team-mate. A ball that comes off a team-mate's **head, chest or knee** may be handled, *unless* the team-mate used a **deliberate trick** to circumvent the Law, in which case the offence is committed and the **team-mate** is penalised (and Law 12 says the goalkeeper is penalised if responsible for initiating the trick).
   - A ball **accidentally deflected** off a team-mate is not a deliberate kick, and the goalkeeper may handle it.
-- If a goalkeeper handles inside their area when not permitted to, the restart is an **indirect free kick** and there is **no disciplinary sanction** — no card, in the ordinary case.
+- If a goalkeeper handles inside their area when not permitted to, the restart is an **indirect free kick** and there is **no disciplinary sanction**, no card, in the ordinary case.
 
 **Handling is a small part of the modern job.** Today's goalkeeper is expected to be:
 
 **1. A shot-stopper.**
 - **The set position.** Just before the shot: feet a little wider than the shoulders, weight forward on the balls of the feet, hands up in front, knees soft. You cannot dive from a standing start with your heels down and your hands by your hips.
 - **The ready-hop.** Small hop into the set position **as the striker plants their standing foot**. It loads your legs at exactly the moment the shot comes.
-- **Hands.** For a high ball, the **W** — thumbs almost touching behind the ball, fingers spread. For a low ball, get the **body behind it** so that if the hands fail, the body still stops it.
+- **Hands.** For a high ball, the **W**, thumbs almost touching behind the ball, fingers spread. For a low ball, get the **body behind it** so that if the hands fail, the body still stops it.
 - **Low shots are the hard ones.** Getting *down* takes longer than reaching *up*, which is precisely why strikers are coached to shoot low.
 
 **2. A positioner.** Most saves are made before the shot, by standing in the right place. **Narrow the angle**: move off your line towards the ball so you cut down how much of the goal the striker can see. A goalkeeper glued to the line makes every shot look spectacular and lets in easy goals.
@@ -1618,13 +1618,13 @@ The single most under-used weapon in amateur football. When the opposition has s
 
 - **The prize:** win the ball 30 yards from their goal, with their defenders facing the wrong way. The shortest route to a good chance in football is winning the ball in the opponent's defensive third.
 - **The price:** you must push your defensive line high to stay **compact**, which leaves space **behind** it. A single accurate long pass over the top can put a striker through on goal.
-- **The requirement:** everyone presses or nobody does. One player who does not sprint creates a passing lane, and the press is broken — and now you have committed eight players upfield for nothing. It is the most physically and mentally demanding thing in football.
+- **The requirement:** everyone presses or nobody does. One player who does not sprint creates a passing lane, and the press is broken, and now you have committed eight players upfield for nothing. It is the most physically and mentally demanding thing in football.
 
 **Option B: the low block.** Drop deep, get everyone behind the ball, deny space near your own goal, and concede the ball in areas where it cannot hurt you.
 
 - **The prize:** the opposition can pass it around in front of you all day. They are welcome to. There is nowhere to go, and no space behind you to run into.
 - **The price:** you have surrendered territory and initiative. You will spend the match defending, and if you concede, you must come out of your shell and become vulnerable.
-- **This is not cowardice.** It is a completely legitimate, often brilliant strategy — especially against a stronger team — and it pairs naturally with the counter-attack.
+- **This is not cowardice.** It is a completely legitimate, often brilliant strategy, especially against a stronger team, and it pairs naturally with the counter-attack.
 
 **Compactness: the concept underneath both.** In either plan, the distances between your defensive line, your midfield line, and your forward line must stay **short**. If your defence drops and your forwards do not, you have opened a 40-yard gap through the middle of your own team and the opposition will simply play in it. **The whole team moves as one block**, up together, back together, across together. Amateur teams lose because they stretch; good teams look like a net being dragged around.
 

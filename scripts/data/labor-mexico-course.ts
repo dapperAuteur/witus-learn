@@ -106,8 +106,8 @@ Sit with the dates. **The eight-hour day. The right to form a union. The right t
       ],
       body: `The anchor course taught you two kinds of union.
 
-- The **free union** — an organization workers build themselves, which bargains against the employer, and which the state is supposed to leave alone (the US, Sweden, Germany).
-- The **state union** — an organization that is an arm of the government, which you may join but may not found (China's ACFTU).
+- The **free union**, an organization workers build themselves, which bargains against the employer, and which the state is supposed to leave alone (the US, Sweden, Germany).
+- The **state union**, an organization that is an arm of the government, which you may join but may not found (China's ACFTU).
 
 Mexico built a **third** kind, and it is genuinely distinct from both: a union that is a **constituent part of the governing political party**.
 

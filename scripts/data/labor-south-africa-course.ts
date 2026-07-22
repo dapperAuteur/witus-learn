@@ -96,7 +96,7 @@ Read those two rows again, because the distance between them is the reason this 
         {
           prompt: "What happened at Marikana on 16 August 2012, and why does it open this course?",
           answer:
-            "Police shot dead 34 striking miners at Lonmin's Marikana platinum mine — the deadliest police action since apartheid ended (BBC, 2012). It opens the course because it happened under the government COSATU's alliance helped elect: the paradox the whole course must explain.",
+            "Police shot dead 34 striking miners at Lonmin's Marikana platinum mine, the deadliest police action since apartheid ended (BBC, 2012). It opens the course because it happened under the government COSATU's alliance helped elect: the paradox the whole course must explain.",
         },
       ],
     },
@@ -360,9 +360,9 @@ Here are South Africa's answers in advance, and notice that they move **three ti
 
 **The Industrial Conciliation Act 11 of 1924** built South Africa's collective-bargaining machine: registered trade unions, industrial councils where unions and employers set wages for an industry, legally enforceable agreements. A modern system, years ahead of many countries, for those inside it. But the Act's definition of **"employee" excluded "pass-bearing natives"**, which, given who was forced to carry passes (Lesson 4), meant most African men (O'Malley Archives; South African History Online). Read what that did, mechanically:
 
-- An African worker was not banned from joining a union. He was defined as **not an employee** — so his union could not register, could not sit on an industrial council, could not sign an enforceable agreement.
-- Industrial-council agreements set wages "for the industry" — negotiated **without** the majority of the people working in it, and often used to price them out of skilled work.
-- Everything the anchor taught you a bargaining system is — election, recognition, contract, grievance — existed in South Africa. It just **did not apply** to most South Africans.
+- An African worker was not banned from joining a union. He was defined as **not an employee**, so his union could not register, could not sit on an industrial council, could not sign an enforceable agreement.
+- Industrial-council agreements set wages "for the industry", negotiated **without** the majority of the people working in it, and often used to price them out of skilled work.
+- Everything the anchor taught you a bargaining system is, election, recognition, contract, grievance, existed in South Africa. It just **did not apply** to most South Africans.
 
 **Then, in 1953, the state answered a decade of wartime African union growth by criminalising the exit.** The **Native Labour (Settlement of Disputes) Act 48 of 1953** made strikes by African workers a **criminal offence**, not unprotected, criminal, and created a separate machinery in place of unions: state-appointed regional committees and toothless "works committees" inside the workplace (South African History Online). African unions were still not technically illegal; they were simply given **nothing**, no registration, no recognition, no lawful strike, a shadow system designed so that using it changed nothing and stepping outside it was a crime.
 
@@ -942,10 +942,10 @@ Two footnotes that matter later. First, this architecture sat on older stone: th
 
 **Then the machine: the Labour Relations Act 66 of 1995**, in force November 1996, which replaced the apartheid framework wholesale. Its architecture answers each of the anchor's questions in the most worker-friendly register in this track:
 
-- **One law for everyone.** The racial definitions are gone; the Act covers nearly all employees, with *no* carve-out of farm or domestic workers — a deliberate refusal, by drafters who knew exactly what the anchor's NLRA lesson teaches, to repeat the American move.
-- **Organisational rights** for representative unions: access to the workplace, stop-order dues deduction, elected shop stewards with statutory standing — FOSATU's shop-floor design, written into national law.
-- **Bargaining councils** by sector, whose agreements can be extended to non-parties; and **protected strikes** — follow the procedure and you cannot be dismissed for striking.
-- **The CCMA** — the Commission for Conciliation, Mediation and Arbitration — a free, fast, informal tribunal for dismissal and rights disputes. It is used on a staggering scale: its annual reports in the 2020s record on the order of 150,000+ referrals a year (CCMA annual reports).
+- **One law for everyone.** The racial definitions are gone; the Act covers nearly all employees, with *no* carve-out of farm or domestic workers, a deliberate refusal, by drafters who knew exactly what the anchor's NLRA lesson teaches, to repeat the American move.
+- **Organisational rights** for representative unions: access to the workplace, stop-order dues deduction, elected shop stewards with statutory standing, FOSATU's shop-floor design, written into national law.
+- **Bargaining councils** by sector, whose agreements can be extended to non-parties; and **protected strikes**, follow the procedure and you cannot be dismissed for striking.
+- **The CCMA**, the Commission for Conciliation, Mediation and Arbitration, a free, fast, informal tribunal for dismissal and rights disputes. It is used on a staggering scale: its annual reports in the 2020s record on the order of 150,000+ referrals a year (CCMA annual reports).
 
 Add the **Basic Conditions of Employment Act 75 of 1997** (hours, leave, notice) and the **Employment Equity Act 55 of 1998** (anti-discrimination and redress), and South Africa's paper framework became, and remains, one of the most progressive on earth. The ILO's core conventions were ratified (C87 and C98 in February 1996, as Lesson 2 noted). If the anchor course taught you to grade countries by their statutes, South Africa would sit at the top of this track's table.
 
@@ -1014,9 +1014,9 @@ Add the **Basic Conditions of Employment Act 75 of 1997** (hours, leave, notice)
 
 **The mechanics.** The LRA's own **section 198** recognises the **"temporary employment service"** (TES), the labour broker. A broker supplies workers to a client company; the workers do the client's work, on the client's premises, under the client's supervision, but in law, **the broker, not the client, is the employer**. Feel what that single designation moves:
 
-- The client's **bargaining council agreement**, its union recognition, its negotiated wages? They attach to the client's *employees* — and on paper, you are not one.
+- The client's **bargaining council agreement**, its union recognition, its negotiated wages? They attach to the client's *employees*, and on paper, you are not one.
 - Dismissal protection? The client does not have to dismiss you; it just **ends the assignment** and the broker "has nothing for you this week."
-- Strike at the client? Your employer — the broker — is a company you may never have seen, with no power over the workplace that actually controls your life.
+- Strike at the client? Your employer, the broker, is a company you may never have seen, with no power over the workplace that actually controls your life.
 
 The same building the LRA built, with a side door that lets the work in while leaving the worker outside. **How many workers?** Here the course does what it did for Durban's crowds and the 1987 strike: refuses to invent a number. Industry and union estimates in the early 2010s ranged from several hundred thousand to around a million placed workers, and the count was itself a weapon in the political fight, the biggest private estimates came from the industry's own consultants (contested figures, presented as contested).
 
@@ -1299,14 +1299,14 @@ The same building the LRA built, with a side door that lets the work in while le
 
 **What the commission found** (Marikana Commission of Inquiry report, 2015):
 
-- **On the police operation:** the decision, taken on the evening of 15 August, to disarm and disperse the strikers by force the next day if they did not comply was a **defective decision**, taken without proper planning and against expert advice available to the police; the operation should not have been launched as and when it was. The commission also found that the police account given afterwards was in material respects **not truthful**, and that SAPS had withheld and, in part, constructed evidence — a finding about the *cover-up*, distinct from the shootings themselves. It recommended that a team of investigators and the Directorate for Priority Crime Investigation determine **individual criminal liability** at scenes 1 and 2, and that an inquiry be held into the **fitness for office of the National Commissioner of Police**, Riah Phiyega.
-- **On Lonmin:** the company failed to use its best endeavours to resolve the dispute, failed to respond appropriately to the escalating danger to its employees — and had failed to meet housing commitments made under its social and labour plan, a failure the commission linked to the conditions from which the strike grew.
-- **On the unions:** both **NUM and AMCU** failed to exercise effective control over their members, and both contributed, in different ways, to an environment in which the confrontation grew — findings each union rejects in whole or in part, which this course simply records.
-- **On Cyril Ramaphosa:** by 2012 the former NUM general secretary was a Lonmin non-executive director; in the days before 16 August he had sent emails urging that the violence (ten people were already dead) be treated as **"dastardly criminal"** conduct requiring **"concomitant action"** by the authorities. Families and political critics accused him of procuring the massacre. The commission **rejected that accusation**: it found the attacks on him groundless on the evidence, reading his intervention as an attempt to get the authorities to prevent further deaths, and recommended no action against him. The accusation has remained alive in South African politics ever since — repeated in election seasons, denied by him, unresolved in public argument — and this course neither revives nor buries it: **the commission's finding is the record, and the record is what is taught.**
+- **On the police operation:** the decision, taken on the evening of 15 August, to disarm and disperse the strikers by force the next day if they did not comply was a **defective decision**, taken without proper planning and against expert advice available to the police; the operation should not have been launched as and when it was. The commission also found that the police account given afterwards was in material respects **not truthful**, and that SAPS had withheld and, in part, constructed evidence, a finding about the *cover-up*, distinct from the shootings themselves. It recommended that a team of investigators and the Directorate for Priority Crime Investigation determine **individual criminal liability** at scenes 1 and 2, and that an inquiry be held into the **fitness for office of the National Commissioner of Police**, Riah Phiyega.
+- **On Lonmin:** the company failed to use its best endeavours to resolve the dispute, failed to respond appropriately to the escalating danger to its employees, and had failed to meet housing commitments made under its social and labour plan, a failure the commission linked to the conditions from which the strike grew.
+- **On the unions:** both **NUM and AMCU** failed to exercise effective control over their members, and both contributed, in different ways, to an environment in which the confrontation grew, findings each union rejects in whole or in part, which this course simply records.
+- **On Cyril Ramaphosa:** by 2012 the former NUM general secretary was a Lonmin non-executive director; in the days before 16 August he had sent emails urging that the violence (ten people were already dead) be treated as **"dastardly criminal"** conduct requiring **"concomitant action"** by the authorities. Families and political critics accused him of procuring the massacre. The commission **rejected that accusation**: it found the attacks on him groundless on the evidence, reading his intervention as an attempt to get the authorities to prevent further deaths, and recommended no action against him. The accusation has remained alive in South African politics ever since, repeated in election seasons, denied by him, unresolved in public argument, and this course neither revives nor buries it: **the commission's finding is the record, and the record is what is taught.**
 
 **What the commission did NOT find**, read this list as carefully as the first:
 
-- It did **not** find that any minister or politician ordered the shootings, and it did **not** find a political conspiracy — while critics note, accurately, that a commission's not finding something is not the same as proving its absence.
+- It did **not** find that any minister or politician ordered the shootings, and it did **not** find a political conspiracy, while critics note, accurately, that a commission's not finding something is not the same as proving its absence.
 - It did **not** convict anyone of anything: a commission of inquiry is not a court. It **referred** criminal questions onward.
 - It did **not** award compensation; it recommended processes through which claims could be pursued.
 

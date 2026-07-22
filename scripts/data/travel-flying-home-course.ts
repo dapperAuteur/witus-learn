@@ -146,9 +146,9 @@ A few airports run CBP **Preclearance**: U.S. officers stationed at select forei
       body: `The Department of Homeland Security runs several **Trusted Traveler Programs (TTPs)** that pre-screen low-risk travelers for expedited processing. They overlap in benefits but target different situations:
 
 - **TSA PreCheck** (Lesson 3): expedited **security screening** departing U.S. airports (domestic, and international departures at participating airports). Best fit: frequent flyers who mostly travel within, or out of, the U.S.
-- **Global Entry**: expedited **CBP processing on arrival back in the U.S.** after international air travel — approved members use a kiosk or the Global Entry mobile app instead of the standard line, and Global Entry membership includes TSA PreCheck benefits (CBP, n.d.-e). Best fit: anyone who flies internationally with any regularity, since it bundles both programs.
-- **NEXUS**: a **joint U.S.–Canada** program for travelers who cross that border. Members get dedicated lanes at land ports, NEXUS kiosks entering Canada by air, and can use Global Entry kiosks entering the U.S. — NEXUS also carries Global Entry and TSA PreCheck benefits (CBP, n.d.-f). Best fit: people who regularly cross the northern border.
-- **SENTRI**: for the **U.S.–Mexico** land border — dedicated primary lanes at Southern land ports of entry for pre-approved, low-risk travelers (CBP, n.d.-g). SENTRI cards also work in NEXUS lanes and, since they carry an RFID chip, can be used at Global Entry airport kiosks by current members (CBP, n.d.-h). Best fit: frequent Mexico border crossers by land.
+- **Global Entry**: expedited **CBP processing on arrival back in the U.S.** after international air travel, approved members use a kiosk or the Global Entry mobile app instead of the standard line, and Global Entry membership includes TSA PreCheck benefits (CBP, n.d.-e). Best fit: anyone who flies internationally with any regularity, since it bundles both programs.
+- **NEXUS**: a **joint U.S.-Canada** program for travelers who cross that border. Members get dedicated lanes at land ports, NEXUS kiosks entering Canada by air, and can use Global Entry kiosks entering the U.S., NEXUS also carries Global Entry and TSA PreCheck benefits (CBP, n.d.-f). Best fit: people who regularly cross the northern border.
+- **SENTRI**: for the **U.S.-Mexico** land border, dedicated primary lanes at Southern land ports of entry for pre-approved, low-risk travelers (CBP, n.d.-g). SENTRI cards also work in NEXUS lanes and, since they carry an RFID chip, can be used at Global Entry airport kiosks by current members (CBP, n.d.-h). Best fit: frequent Mexico border crossers by land.
 
 **In short:** PreCheck is about **leaving** a U.S. airport; Global Entry, NEXUS, and SENTRI are all, at their core, about **entering** the U.S. faster, by air (Global Entry), the Canadian border (NEXUS), or the Mexican land border (SENTRI), and each of the border-crossing programs layers PreCheck and Global Entry benefits on top once you're a member. Application fees and membership lengths differ by program and change over time, so check the current numbers at cbp.gov before applying (CBP, n.d.-e).
 
@@ -210,8 +210,8 @@ A few airports run CBP **Preclearance**: U.S. officers stationed at select forei
       body: `Everyone entering the U.S. must **declare** certain things to CBP, either on the official **Customs Declaration, CBP Form 6059B** (paper, or the same information collected electronically through a kiosk, the MPC app, or a Global Entry kiosk), itemizing purchased merchandise and agricultural products you're bringing in (CBP, n.d.-j).
 
 **What you must declare:**
-- All merchandise, gifts, and items acquired abroad (including duty-free purchases — see Lesson 8).
-- Any **fruits, vegetables, plants, seeds, meats, other agricultural products, or animals** you're carrying, in checked bags, carry-on, or a vehicle — Lesson 9 explains why.
+- All merchandise, gifts, and items acquired abroad (including duty-free purchases, see Lesson 8).
+- Any **fruits, vegetables, plants, seeds, meats, other agricultural products, or animals** you're carrying, in checked bags, carry-on, or a vehicle, Lesson 9 explains why.
 - **Currency or monetary instruments over $10,000** (combined, per family or group traveling together, not per person), reported on **FinCEN Form 105**. This applies whether you're arriving or departing (CBP, n.d.-k).
 
 **Family grouping.** Family members living in the same household and traveling together can combine their individual exemptions into one joint declaration, which can be worth more total exemption than filing separately (CBP, n.d.-l).
@@ -248,9 +248,9 @@ A few airports run CBP **Preclearance**: U.S. officers stationed at select forei
 **The exemption amount isn't one fixed number.** CBP sets **different exemption tiers** depending on **which countries you visited and how long you were gone**, a short trip to some destinations gets a smaller exemption than a longer trip that included certain other countries or territories. Because these tiers and thresholds can change, this course doesn't print specific dollar figures as permanent facts, use **CBP's own exemption tool** at cbp.gov to check the current amount for your specific trip before you shop (CBP, n.d.-o).
 
 **A few things that surprise first-time international travelers:**
-- **Duty-free shop purchases are not automatically duty-free at home.** "Duty-free" at the airport shop means you didn't pay *that country's* taxes on the purchase — it still counts against your U.S. personal exemption and must be declared (CBP, n.d.-p).
+- **Duty-free shop purchases are not automatically duty-free at home.** "Duty-free" at the airport shop means you didn't pay *that country's* taxes on the purchase, it still counts against your U.S. personal exemption and must be declared (CBP, n.d.-p).
 - **Alcohol and tobacco have their own, much tighter limits**, separate from and smaller than the general merchandise exemption (CBP, n.d.-o).
-- **Above your exemption, you generally pay a flat duty rate** on the next set amount of goods for personal use, then item-specific rates beyond that — again, confirm current rates with CBP rather than assuming a number.
+- **Above your exemption, you generally pay a flat duty rate** on the next set amount of goods for personal use, then item-specific rates beyond that, again, confirm current rates with CBP rather than assuming a number.
 - **Keep your receipts.** They're the easiest way to establish value if CBP asks.
 
 The bottom line: know that tiers exist and that alcohol/tobacco are separate and stricter, check the current numbers for your specific trip before you shop, and declare what you bring back (Lesson 7), CBP, not guesswork, is the source of truth.

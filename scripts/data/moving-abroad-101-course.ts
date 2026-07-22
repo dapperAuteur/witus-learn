@@ -57,9 +57,9 @@ export const MOVING_ABROAD_101_COURSE: AuthoredCourse = {
       title: "2 · The common categories of long-stay visas",
       body: `Once you're past a short tourist stay, most countries sort long-stay visas into a handful of recurring categories. Knowing the category tells you what evidence you'll need to gather, long before you pick a specific country.
 
-- **Work visas.** Tied to a job offer or employer sponsorship in the destination country. Usually the employer (not you) starts the process, and the visa is often tied to that specific job — leaving the job can affect your status.
+- **Work visas.** Tied to a job offer or employer sponsorship in the destination country. Usually the employer (not you) starts the process, and the visa is often tied to that specific job, leaving the job can affect your status.
 - **Study visas.** Tied to enrollment at an accredited school or university in the destination country, usually requiring proof of acceptance, funds, and sometimes health insurance.
-- **Family visas.** For joining a spouse, parent, or other close family member who is already a citizen or resident of the destination country — commonly called "family reunification."
+- **Family visas.** For joining a spouse, parent, or other close family member who is already a citizen or resident of the destination country, commonly called "family reunification."
 - **Retirement / passive-income visas.** For people who can support themselves without local employment, usually a pension, Social Security, savings, or other steady income above a country-set minimum (Lesson 4 covers Social Security payments specifically).
 - **Digital-nomad / remote-work visas.** A newer category covered on its own in Lesson 3.
 
@@ -89,7 +89,7 @@ Every country draws these categories differently, and a single visa can blend mo
       title: "3 · The new wave: digital-nomad and remote-work visas",
       body: `A **digital-nomad visa** (also called a remote-work visa) is a purpose-built long-stay visa for people who keep working for an employer or clients *outside* the destination country while living *in* it. It's a genuinely new visa category, most countries that offer one created it only in the last several years, and dozens more have launched programs since. At a high level, most share a similar shape:
 
-- **Proof your income comes from outside the country** — an employment contract, freelance client agreements, or a remote-work letter, showing you're not competing for a local job.
+- **Proof your income comes from outside the country**, an employment contract, freelance client agreements, or a remote-work letter, showing you're not competing for a local job.
 - **A minimum income or savings threshold**, set and adjusted by that country, usually well above its tourist-visa requirements.
 - **Health insurance** valid in the destination country for the visa's duration.
 - **A clean criminal background check**, often required to be recently issued and sometimes apostilled/legalized.
@@ -183,12 +183,12 @@ No country will score perfectly on all six. The point of the framework is to com
       title: "6 · A realistic cost of relocating",
       body: `Like timelines, relocation costs vary too much by country, visa type, and personal circumstances for this course to print a total dollar figure, and any number written here would go stale. What's stable is the **structure** of the costs. Budget for all of these categories, not just the ones that come to mind first:
 
-- **Visa/application fees**, paid to the destination government — varies by country and visa category, and is often non-refundable even if denied.
-- **Document costs**: certified copies, translations, and apostilles/legalizations of documents like birth certificates, marriage certificates, and background checks — these add up and are easy to underestimate.
+- **Visa/application fees**, paid to the destination government, varies by country and visa category, and is often non-refundable even if denied.
+- **Document costs**: certified copies, translations, and apostilles/legalizations of documents like birth certificates, marriage certificates, and background checks, these add up and are easy to underestimate.
 - **Travel and shipping**: flights, and either shipping belongings or replacing them after selling/donating what you had.
 - **Housing transition costs**: a security deposit (sometimes several months' rent upfront in some countries), temporary lodging while you search, and possibly furnishing an unfurnished unit.
 - **Health insurance**: often required as a visa condition, and a real ongoing cost even where not required.
-- **Professional help**: a cross-border tax preparer and, for complex cases, an immigration attorney (Lesson 8) — money well spent relative to the cost of a mistake.
+- **Professional help**: a cross-border tax preparer and, for complex cases, an immigration attorney (Lesson 8), money well spent relative to the cost of a mistake.
 - **A buffer for the unexpected**: a delayed visa, an extra flight, an unplanned month of overlap paying for housing in two countries.
 
 **The realistic habit:** build your budget from these categories using *your* target country's current fee schedules and cost of living (Lesson 4), rather than a total figure from an article about a different country, a different visa type, or a different year.

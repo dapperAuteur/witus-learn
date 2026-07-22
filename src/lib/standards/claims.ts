@@ -2144,7 +2144,7 @@ export const COURSE_CLAIMS: CourseClaim[] = [
   {
     id: "civics.ok-tribal-nations",
     claim:
-      "Teaches that Oklahoma's civic landscape is inseparable from sovereign tribal nations: much of the state was 'Indian Territory' before statehood, it today includes 38+ federally recognized tribal nations with their own constitutions, courts, and laws, and — flagged as time-sensitive and still being worked out — the U.S. Supreme Court's McGirt v. Oklahoma (2020) held that a large part of eastern Oklahoma remains a tribal reservation for purposes of certain criminal jurisdiction, so tribal sovereignty is a central, active question of Oklahoma governance.",
+      "Teaches that Oklahoma's civic landscape is inseparable from sovereign tribal nations: much of the state was 'Indian Territory' before statehood, it today includes 38+ federally recognized tribal nations with their own constitutions, courts, and laws, and (flagged as time-sensitive and still being worked out) the U.S. Supreme Court's McGirt v. Oklahoma (2020) held that a large part of eastern Oklahoma remains a tribal reservation for purposes of certain criminal jurisdiction, so tribal sovereignty is a central, active question of Oklahoma governance.",
     courseSlugs: ["state-civics-ok"],
     lessons: [
       "Oklahoma Civics, Lesson 4 · Merit-selection judges, sovereign tribal nations, and getting involved",

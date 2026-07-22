@@ -340,8 +340,8 @@ Here are Poland's answers in advance. Everything after this lesson is the detail
 
 **The pattern, before 1980.** Polish workers had already learned that the pressure valve was a strike over prices, and that the state's reflex was violence:
 
-- **December 1970.** The government announced steep food-price rises days before Christmas. Workers in the Baltic port cities — Gdańsk, Gdynia, Szczecin — walked out and marched. The army and militia opened fire. Dozens were killed (the official and historical counts differ; the toll ran to at least several dozen). The scar of **1970**, especially in Gdynia, is central to everything that follows.
-- **June 1976.** Another attempt to raise prices set off strikes at **Radom** and the **Ursus** tractor works near Warsaw. This time the regime backed off the price rise — but arrested, beat and sacked participants. Out of the defence of those workers grew **KOR**, the Workers' Defence Committee: intellectuals and activists who provided legal and financial help to persecuted workers. **KOR is the hinge** — it linked the workers to the dissident intelligentsia and taught a crucial tactical lesson.
+- **December 1970.** The government announced steep food-price rises days before Christmas. Workers in the Baltic port cities, Gdańsk, Gdynia, Szczecin, walked out and marched. The army and militia opened fire. Dozens were killed (the official and historical counts differ; the toll ran to at least several dozen). The scar of **1970**, especially in Gdynia, is central to everything that follows.
+- **June 1976.** Another attempt to raise prices set off strikes at **Radom** and the **Ursus** tractor works near Warsaw. This time the regime backed off the price rise, but arrested, beat and sacked participants. Out of the defence of those workers grew **KOR**, the Workers' Defence Committee: intellectuals and activists who provided legal and financial help to persecuted workers. **KOR is the hinge**, it linked the workers to the dissident intelligentsia and taught a crucial tactical lesson.
 
 **And here is the lesson the workers drew from 1970**, which changed everything in 1980: *do not march.* In 1970 they had left the workplaces and taken to the streets, where they could be shot. In 1980 they would **stay inside the factory** and hold an **occupation strike**, sit down at the workplace, control the gates, let no one provoke a fight in the open. A sit-in inside a shipyard is far harder for a government to fire on than a march down a boulevard. The **discipline of August 1980, no alcohol, no violence, stay inside, negotiate, was a deliberate answer to December 1970.**
 
@@ -1247,9 +1247,9 @@ The Mazowiecki government inherited an economy in freefall: hyperinflation, empt
 
 **First, the landscape. Poland does not have one union movement; it has a fragmented one.** There are three nationally representative union confederations (Eurofound; ETUI, 2023):
 
-- **NSZZ "Solidarność"** — the direct descendant of the 1980 movement, founded 1980.
-- **OPZZ** (the All-Poland Alliance of Trade Unions) — the **second** major confederation, and here is an irony worth holding: it was **created in 1984 by the communist regime** as an official alternative *after* Solidarność was banned. The union the state built to replace the one it crushed is now a legitimate, independent confederation of its own, generally on the political left.
-- **FZZ** (the Trade Unions Forum) — a third confederation, established in 2002.
+- **NSZZ "Solidarność"**, the direct descendant of the 1980 movement, founded 1980.
+- **OPZZ** (the All-Poland Alliance of Trade Unions), the **second** major confederation, and here is an irony worth holding: it was **created in 1984 by the communist regime** as an official alternative *after* Solidarność was banned. The union the state built to replace the one it crushed is now a legitimate, independent confederation of its own, generally on the political left.
+- **FZZ** (the Trade Unions Forum), a third confederation, established in 2002.
 
 That three-way split is itself part of the weakness Lesson 10 described: bargaining power that might be concentrated is instead divided among rival federations that do not always cooperate.
 
@@ -1308,7 +1308,7 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
             sourceLessonSlug: "poland-density-collapse",
           },
           {
-            prompt: "Poland's employer-organisation density is 56.3% (2022) — fairly high. Why doesn't that produce high coverage as it does in Germany?",
+            prompt: "Poland's employer-organisation density is 56.3% (2022), fairly high. Why doesn't that produce high coverage as it does in Germany?",
             options: [
               "Because Polish employers refuse to sign anything",
               "Because Poland lacks the sectoral bargaining that turns employer organisation into coverage, bargaining is company-level",
@@ -1489,14 +1489,14 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
 
 **The Polish version is called *umowy śmieciowe*, "junk contracts" (literally "trash contracts").** To understand them, you need one distinction in Polish law:
 
-- An **employment contract** — *umowa o pracę* — is governed by the **Labour Code** (*Kodeks pracy*). It comes with the protections you would expect: paid annual leave, notice periods, working-time limits, the minimum wage, sick and maternity entitlements, full social-security contributions, and access to the **labour courts** if something goes wrong.
-- A **civil-law contract** — most commonly the *umowa zlecenie* (a "contract of mandate") or *umowa o dzieło* (a "contract for a specific task") — is governed instead by the **Civil Code** (*Kodeks cywilny*). It is meant for genuinely independent, one-off, or freelance work. Historically it carried **none** of the Labour Code's protections: no paid leave, no notice, limited or no social-security contributions, and no labour-court jurisdiction. (Poland has since bolted on some fixes — a minimum hourly rate for *umowa zlecenie* was introduced in 2017 — but the gap in protection remains wide.)
+- An **employment contract**, *umowa o pracę*, is governed by the **Labour Code** (*Kodeks pracy*). It comes with the protections you would expect: paid annual leave, notice periods, working-time limits, the minimum wage, sick and maternity entitlements, full social-security contributions, and access to the **labour courts** if something goes wrong.
+- A **civil-law contract**, most commonly the *umowa zlecenie* (a "contract of mandate") or *umowa o dzieło* (a "contract for a specific task"), is governed instead by the **Civil Code** (*Kodeks cywilny*). It is meant for genuinely independent, one-off, or freelance work. Historically it carried **none** of the Labour Code's protections: no paid leave, no notice, limited or no social-security contributions, and no labour-court jurisdiction. (Poland has since bolted on some fixes, a minimum hourly rate for *umowa zlecenie* was introduced in 2017, but the gap in protection remains wide.)
 
 **Now the move.** For years, large numbers of Polish employers took people who were doing **ordinary, employee-like, day-in-day-out jobs**, and hired them on a **civil-law contract** instead of an employment contract. The worker shows up at the same time every day, uses the company's tools, takes the company's orders, and does the company's core work, every functional test of an "employee", but on paper they are a "contractor" performing a "task." That paper reclassification lets the employer **escape the Labour Code**: cheaper, more disposable labour, outside much of labour law, and (crucially for this course) **outside the collective-bargaining system**, because those protections and structures attach to *employees*. Poland leaned on this so heavily that economists describe a **"dual" labour market**, and the practice has been a live political fight for over a decade (the term went mainstream around 2011-2012). Reforms to curb it, including giving labour inspectors power to **reclassify** disguised employment, have been debated and staged into the mid-2020s, tied to EU funding conditions; the exact status keeps moving, so treat any single "it's fixed now" claim with caution and check the date.
 
 **And here is why you already understand this, even if you have never heard a Polish word before.** Look at what the move *is*, stripped of the local vocabulary: **an employer uses a legal form to place a worker outside the category that carries the protections.** Now recall the rest of the track:
 
-- **The United States** (the anchor course): **misclassification.** Call a worker an "independent contractor" rather than an "employee," and they fall outside the National Labor Relations Act, the minimum wage, overtime — the same escape, through a different door.
+- **The United States** (the anchor course): **misclassification.** Call a worker an "independent contractor" rather than an "employee," and they fall outside the National Labor Relations Act, the minimum wage, overtime, the same escape, through a different door.
 - **Mexico** (its own course): the **protection contract.** A company signs a collective agreement with a friendly or phantom union before workers even organise, so that a *real* union is legally blocked. Again: a legal form that leaves the worker outside genuine protection while *appearing* to be inside it.
 - **Poland: the junk contract.** A civil-law contract that keeps an employee-in-all-but-name outside the Labour Code.
 
@@ -1528,19 +1528,19 @@ That three-way split is itself part of the weakness Lesson 10 described: bargain
       body: `You could forget every date in this course, the 21 Demands, 10 November 1980, 13 December 1981, 4 June 1989, and still have gotten the valuable thing, if you keep the **method**. So let's make it explicit by running the anchor's four questions across the whole Polish story one last time, and watching the answers move.
 
 **Q1, Who is allowed to organise?**
-- *1980:* No one independently — which is why demanding a free union was demanding to break the Party's monopoly on power. Question 1 *was* the question of the state.
+- *1980:* No one independently, which is why demanding a free union was demanding to break the Party's monopoly on power. Question 1 *was* the question of the state.
 - *Today:* Everyone. Poland is a democracy with full freedom of association. And yet density is ~9% (2022). **The right can be secure and barely used at the same time** — a pairing you should now expect, not find surprising.
 
 **Q2, Who is excluded?**
 - *1980:* Everyone, from independent organisation.
-- *Today:* Workers pushed onto **civil-law "junk contracts,"** outside the Labour Code and the bargaining system — the same *structural* exclusion the US runs through misclassification.
+- *Today:* Workers pushed onto **civil-law "junk contracts,"** outside the Labour Code and the bargaining system, the same *structural* exclusion the US runs through misclassification.
 
 **Q3, Who bargains with whom, and at what level?**
 - The hinge of the whole comparison with Germany: Poland bargains **company by company**, sectoral agreements have withered, and coverage (~12%, 2023) is therefore chained to low membership. **Always find the *level* of bargaining before you judge the *strength* of a labour movement.**
 
 **Q4, What happens to you if you try?**
-- *1981:* Martial law, internment, nine dead at Wujek — the most violent answer in the Wave-1 courses.
-- *Today:* An ordinary democratic answer — you may organise; the obstacles are structural, not martial.
+- *1981:* Martial law, internment, nine dead at Wujek, the most violent answer in the Wave-1 courses.
+- *Today:* An ordinary democratic answer, you may organise; the obstacles are structural, not martial.
 
 **And the transferable habit this course adds to your kit, on top of the four questions:** *when a labour movement looks mysteriously weak, look for the legal form that moves workers out of the protected category, and look for the level at which bargaining happens.* Those two structural facts, the exclusion move and the bargaining level, explain more about a country's real worker power than any amount of rhetoric about culture or national character. You saw the plumbing beat the culture in the Germany and Nordic courses. **In Poland you saw something even sharper: a movement can win the entire state and still, through the structures that come afterward, lose the workplace.** Carry that, and you can walk into a country you have never studied and ask the right questions first.
 

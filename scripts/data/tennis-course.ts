@@ -120,8 +120,8 @@ Notice the pattern already: **the ITF writes one rulebook, and then each competi
 
 **A set.** The ITF names two methods, and says the one being used **must be announced in advance of the event** (ITF, 2026, Rule 6):
 
-- **Tie-break set** — first to **six games**, must win by **two**. At **six games all**, you play a **tie-break game**. This is the standard nearly everywhere.
-- **Advantage set** — first to six games, win by two, and **no tie-break**: the set just keeps going. 7–5, 9–7, 24–22. This is the format that produced the legendary marathons, and it has been squeezed almost entirely out of the professional game.
+- **Tie-break set**, first to **six games**, must win by **two**. At **six games all**, you play a **tie-break game**. This is the standard nearly everywhere.
+- **Advantage set**, first to six games, win by two, and **no tie-break**: the set just keeps going. 7-5, 9-7, 24-22. This is the format that produced the legendary marathons, and it has been squeezed almost entirely out of the professional game.
 
 **The tie-break game** is, confusingly, defined inside **Rule 5, "Score in a Game"**, because a tie-break *is* a game (ITF, 2026, Rule 5b). Points are counted "Zero, 1, 2, 3…" and the **first to seven points, by a margin of two**, wins the game *and* the set. Serving rotates in a specific way: whoever's turn it is serves **one** point, then the opponent serves **two**, and from there each player serves **two consecutive points** until it ends.
 
@@ -496,14 +496,14 @@ Neither is correct. The two-hander is easier to learn, better on high balls, and
 
 **The serve.**
 - **Grip: Continental.** Non-negotiable. A "frying-pan" (forehand) grip lets a beginner get the ball in the box on day one and then caps them forever: you cannot generate **spin** with it, so you cannot hit a reliable second serve, so you double-fault under pressure (USTA Player Development, n.d.).
-- **The toss is the shot.** A serve is only as good as the toss. Consistent toss, consistent serve — and a toss you don't like, you are explicitly allowed to **catch and re-toss**: under ITF Rule 19, Case 1, if you toss the ball and decide not to hit it, you may catch it or let it bounce, and **it is not a fault** (ITF, 2026). Free do-over. Use it.
+- **The toss is the shot.** A serve is only as good as the toss. Consistent toss, consistent serve, and a toss you don't like, you are explicitly allowed to **catch and re-toss**: under ITF Rule 19, Case 1, if you toss the ball and decide not to hit it, you may catch it or let it bounce, and **it is not a fault** (ITF, 2026). Free do-over. Use it.
 - **Trophy position → drive up.** The legs bend, the tossing arm extends, the hitting arm cocks. Then you drive **up** at the ball, not out at it. Beginners hit down at the ball, believing that's how you get it in the box; the net says otherwise.
-- **The second serve is a different shot.** It is not "the first serve, but softer." That's how you get a serve that lands short and gets attacked. A real second serve is hit with **spin** — the racquet brushes across or up the back of the ball — which makes it dip into the box and kick up off the court. Spin, not speed, is what makes a second serve safe.
+- **The second serve is a different shot.** It is not "the first serve, but softer." That's how you get a serve that lands short and gets attacked. A real second serve is hit with **spin**, the racquet brushes across or up the back of the ball, which makes it dip into the box and kick up off the court. Spin, not speed, is what makes a second serve safe.
 
 **The return.** The most neglected shot in tennis, and the one that decides who breaks serve.
 - **Shorten the swing.** You do not have time for a full backswing against a real serve. The pace is supplied for you; your job is to redirect it. A blocked return that lands deep beats a beautiful full swing that lands in the net.
 - **Split step as they strike.** (Next lesson.)
-- **Two different jobs.** Against a **first serve**, the goal is simply to **get it back, deep, and neutralize**. Against a **second serve**, the goal is to **attack** — step in, take it early, and take the server's advantage away. Playing both returns the same way wastes the single biggest opportunity in a game.
+- **Two different jobs.** Against a **first serve**, the goal is simply to **get it back, deep, and neutralize**. Against a **second serve**, the goal is to **attack**, step in, take it early, and take the server's advantage away. Playing both returns the same way wastes the single biggest opportunity in a game.
 
 **The strategic punchline:** the serve is the only shot in tennis you hit without anyone interfering, and the return is your only chance to take the server's free advantage away. They are the two highest-leverage strokes in the sport, which is exactly why Section 3 opens by proving it with data.
 
@@ -1245,7 +1245,7 @@ So: Budge did it first. He probably didn't name it. This course will keep doing 
 
 **The rule: amateurs and professionals could not play each other.**
 
-- **Amateurs** played the tournaments that mattered — Wimbledon, the U.S. Nationals, Davis Cup — and were officially **unpaid**. They were governed by national associations and the ILTF.
+- **Amateurs** played the tournaments that mattered, Wimbledon, the U.S. Nationals, Davis Cup, and were officially **unpaid**. They were governed by national associations and the ILTF.
 - **Professionals** got paid openly, on barnstorming exhibition tours, and were **banned from the majors**.
 
 Read that again, because the consequence is bizarre: **the best players in the world were not allowed to play the biggest tournaments in the world.** Once an amateur champion turned pro to earn a living, he vanished from Wimbledon forever. Jack Kramer's summary, quoted by the International Tennis Hall of Fame: *"The most well-known events didn't have the best players"* (International Tennis Hall of Fame [ITHF], 2018).

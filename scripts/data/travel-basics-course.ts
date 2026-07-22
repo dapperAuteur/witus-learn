@@ -55,7 +55,7 @@ None of this replaces checking your specific destination's current requirements,
 **Quick checklist for this lesson:**
 - Check your expiration date now, today, before you plan anything else.
 - Check your destination's specific validity requirement (not just "6 months" as a universal rule).
-- If you need to apply or renew, start now — see *How to Get a U.S. Passport* for the full process.
+- If you need to apply or renew, start now, see *How to Get a U.S. Passport* for the full process.
 
 :::reveal Why is "my passport hasn't expired yet" not always enough to travel internationally? ||| Many countries, especially in Europe, require your passport to stay valid for at least 6 months beyond your trip's dates, not just be unexpired on your travel date, and some airlines enforce this at boarding.
 
@@ -173,9 +173,9 @@ This course doesn't recommend a specific insurer, verify current options and cov
       body: `Money problems abroad are rarely about not having *any* money, they're about not having **accessible** money at the moment you need it. A few habits from the State Department's own trip-planning guidance cover most of the risk:
 
 **Before you go:**
-- Tell your bank and credit card companies you're traveling, and confirm your cards will work at your destination — a card frozen for "suspicious activity" in another country is one of the most common and preventable travel headaches.
-- Carry more than one way to pay: a primary card, a backup card (ideally from a different bank), and a modest amount of cash — not carrying all your money in one form or one place.
-- Review the **Crime and Safety** section of your destination's Country Specific Information on travel.state.gov before you go — it flags financial and ATM scams specifically targeting foreign visitors in that country (U.S. Department of State, n.d.-a).
+- Tell your bank and credit card companies you're traveling, and confirm your cards will work at your destination, a card frozen for "suspicious activity" in another country is one of the most common and preventable travel headaches.
+- Carry more than one way to pay: a primary card, a backup card (ideally from a different bank), and a modest amount of cash, not carrying all your money in one form or one place.
+- Review the **Crime and Safety** section of your destination's Country Specific Information on travel.state.gov before you go, it flags financial and ATM scams specifically targeting foreign visitors in that country (U.S. Department of State, n.d.-a).
 
 **While you're there:** avoid carrying large amounts of cash, and keep the bulk of your funds split across cards and a hotel safe rather than in one wallet.
 
@@ -209,7 +209,7 @@ Remember the fact from Lesson 5: **the U.S. government does not pay your costs a
 **Keep copies separate from the originals**, in a different bag, and stored digitally (e.g., emailed to yourself or saved somewhere you can access without your phone), so a lost or stolen bag doesn't take every copy down with it.
 
 **A few destination-dependent items to check ahead of time:**
-- An **International Driving Permit**, if you plan to drive — many countries don't accept a U.S. driver's license alone (U.S. Department of State, n.d.-a).
+- An **International Driving Permit**, if you plan to drive, many countries don't accept a U.S. driver's license alone (U.S. Department of State, n.d.-a).
 - Proof of onward or return travel, sometimes requested at entry (covered in more depth in *Travel Visas 101*).
 - Your STEP enrollment confirmation and the nearest U.S. embassy/consulate's contact info for your destination (Lesson 4 and Lesson 9).
 
@@ -264,7 +264,7 @@ Remember the fact from Lesson 5: **the U.S. government does not pay your costs a
 **Duty-free personal exemptions.** A dollar value of goods you bring back is typically exempt from duty, currently **$200, $800, or $1,600, depending on which countries you visited**, but you generally need to have been outside the U.S. for at least **48 hours** and not have used the exemption in the last 30 days, among other conditions (U.S. Customs and Border Protection, n.d.-a, n.d.-b). Because these dollar amounts and rules are set by federal regulation and can change, **confirm the current exemption for your specific itinerary at cbp.gov before you rely on it**, don't treat the figures above as permanent.
 
 **A few things that trip up first-time re-entrants:**
-- Agricultural products (fresh food, plants, some animal products) are restricted or banned, even in small amounts — when unsure, declare it and let CBP decide.
+- Agricultural products (fresh food, plants, some animal products) are restricted or banned, even in small amounts, when unsure, declare it and let CBP decide.
 - CBP officers have legal authority to search you, your baggage, and your vehicle.
 - Some travelers are eligible for expedited/no-declaration processing at certain airports; that's a convenience program, not a substitute for knowing your own exemption status.
 

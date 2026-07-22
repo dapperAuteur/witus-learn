@@ -58,7 +58,7 @@ Because the exact fees, forms, and wait times the Department of State publishes 
 
 **Who each is best for:**
 - The **card** suits people who regularly cross by land or sea into Canada, Mexico, Bermuda, or the Caribbean and never need to fly internationally (e.g., a frequent border commuter). It also works as domestic-flight ID.
-- The **book** is the right choice for anyone who might fly internationally, even occasionally — it's the only document that works for that.
+- The **book** is the right choice for anyone who might fly internationally, even occasionally, it's the only document that works for that.
 
 **You can hold both.** Getting a card does not require giving up the book, and you can apply for either one, or both at once, on the same Form DS-11 or DS-82 (U.S. Department of State, n.d.-b).
 
@@ -88,7 +88,7 @@ Because the exact fees, forms, and wait times the Department of State publishes 
 **Do not sign Form DS-11 before your appointment.** Fill it out using the official online Form Filler, print it single-sided, and leave it **unsigned** until the acceptance agent tells you to sign it in front of them (U.S. Department of State, n.d.-c).
 
 **Where to apply:**
-- **Most applicants**: an authorized **acceptance facility** — often a post office, public library, or county clerk's office. Some require an appointment.
+- **Most applicants**: an authorized **acceptance facility**, often a post office, public library, or county clerk's office. Some require an appointment.
 - **Traveling internationally within 14 days**: make an appointment at a **passport agency or center** instead.
 - **Applying from abroad**: contact the nearest U.S. embassy or consulate.
 

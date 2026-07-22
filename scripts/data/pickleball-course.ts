@@ -77,11 +77,11 @@ Strip those three rules out and you have slow tennis. Put them in and you have a
 
 **The lines** (all from USA Pickleball, 2026, Rule 3.A.4):
 
-- **Baselines** — the back lines, parallel to the net (3.A.4.a).
-- **Sidelines** — the two lines running from net to baseline (3.A.4.b).
-- **Non-volley zone line** — runs parallel to the net, **7 feet from it**, all the way across (3.A.4.c). The zone it bounds is the kitchen.
-- **Centerline** — splits each side into a right and a left **service court**, running from the non-volley zone line to the baseline (3.A.4.d). Note what it does *not* do: it does not cross the kitchen.
-- **Serving areas** — the ground *behind* the baseline, split right and left by an imaginary extension of the centerline (3.A.4.g). You serve from here, not from inside the court.
+- **Baselines**, the back lines, parallel to the net (3.A.4.a).
+- **Sidelines**, the two lines running from net to baseline (3.A.4.b).
+- **Non-volley zone line**, runs parallel to the net, **7 feet from it**, all the way across (3.A.4.c). The zone it bounds is the kitchen.
+- **Centerline**, splits each side into a right and a left **service court**, running from the non-volley zone line to the baseline (3.A.4.d). Note what it does *not* do: it does not cross the kitchen.
+- **Serving areas**, the ground *behind* the baseline, split right and left by an imaginary extension of the centerline (3.A.4.g). You serve from here, not from inside the court.
 
 Two details that decide arguments:
 
@@ -163,8 +163,8 @@ So why does every game start "**zero, zero, two**"? Because of one deliberately 
 
 **Two rules govern the exchange at the net:**
 
-- **You may stand in the kitchen whenever you like** — as long as you are not **volleying**. The rule says "a player, or anything in contact with the player, may contact the non-volley zone at any time except during the act of volleying a ball" (Rule 11.A). Standing in the kitchen is legal. It is just usually stupid, because you cannot volley from there.
-- **Momentum counts.** If you volley and your own momentum carries you into the kitchen — even *after the ball is dead* — it is a fault (Rule 11.A.2). And after you have been in the kitchen, you may not volley again until **both feet** have touched the surface completely outside it (Rule 11.A.3).
+- **You may stand in the kitchen whenever you like**, as long as you are not **volleying**. The rule says "a player, or anything in contact with the player, may contact the non-volley zone at any time except during the act of volleying a ball" (Rule 11.A). Standing in the kitchen is legal. It is just usually stupid, because you cannot volley from there.
+- **Momentum counts.** If you volley and your own momentum carries you into the kitchen, even *after the ball is dead*, it is a fault (Rule 11.A.2). And after you have been in the kitchen, you may not volley again until **both feet** have touched the surface completely outside it (Rule 11.A.3).
 
 **A hint of the strategy to come.** Look at the net numbers again: 36 inches at the sidelines, **34 inches at the center** (Rules 3.B.6-3.B.7). The net is *lowest in the middle*. That is where the safest aggressive shot lives, and it is why "hit it down the middle" is real advice and not a cliché.
 
@@ -1310,7 +1310,7 @@ Notice that the **dog story sits at the bottom** of that table and the **foundin
 
 **Where authority sits today, precisely:**
 
-- **USA Pickleball** is the national governing body for American pickleball. Its rulebook governs **sanctioned** play — and it says so of itself: it "formulates and interprets all the rules of the sport… All such decisions by USA Pickleball are final and cannot be appealed" (USA Pickleball, 2026, front matter).
+- **USA Pickleball** is the national governing body for American pickleball. Its rulebook governs **sanctioned** play, and it says so of itself: it "formulates and interprets all the rules of the sport… All such decisions by USA Pickleball are final and cannot be appealed" (USA Pickleball, 2026, front matter).
 - **The professional tours are private businesses.** They are not bound to USA Pickleball's rulebook and have run their own format variants. When you hear "the rule is," ask **whose** rule.
 - **International governance is contested and has been reorganizing.** Do not assert a world governing body without checking a current primary source.
 
@@ -1656,7 +1656,7 @@ Numbers feel objective. **A number is only as objective as its definition**, and
 **Sanctioned vs. unsanctioned.**
 
 - A **sanctioned** tournament runs under USA Pickleball's rulebook and reports results to the **UTPR** (Lesson 22). This is how you get an official rating.
-- An **unsanctioned** event — most local, club, and charity tournaments — may run whatever format the organizer chooses. It may feed **DUPR**. It will not touch your UTPR.
+- An **unsanctioned** event, most local, club, and charity tournaments, may run whatever format the organizer chooses. It may feed **DUPR**. It will not touch your UTPR.
 
 Neither is better. They are different products, and knowing which one you signed up for is entirely your job.
 
@@ -1704,9 +1704,9 @@ And remember Lesson 9: a **Tournament Director may choose rally scoring** (Rule 
 
 **The players on the board.**
 
-- The **PPA Tour** (Professional Pickleball Association) — a tour of individual tournaments.
-- **MLP** (Major League Pickleball) — a **team** league, with franchises, drafted rosters, and owners drawn from sports and entertainment.
-- The **APP** (Association of Pickleball Professionals) — a separate tour, which has continued to operate independently.
+- The **PPA Tour** (Professional Pickleball Association), a tour of individual tournaments.
+- **MLP** (Major League Pickleball), a **team** league, with franchises, drafted rosters, and owners drawn from sports and entertainment.
+- The **APP** (Association of Pickleball Professionals), a separate tour, which has continued to operate independently.
 
 **What happened.** In 2023 the PPA and MLP were in a **bidding war** for the same very small pool of elite players. Both handed out **guaranteed** contracts. Reported player compensation escalated steeply, trade coverage described top earnings moving from roughly six figures into the mid-hundreds of thousands, guaranteed, in a single cycle.
 

@@ -271,10 +271,10 @@ Whichever program you choose, your campus study-abroad office (not a third-party
 **Get pre-approval in writing, before you commit, not after you're back.** For each course you plan to take abroad, confirm with your academic adviser or registrar (Lesson 2) exactly which home-institution requirement it will satisfy, major, minor, general education, or free elective, and get that confirmation in writing where your institution allows it. "Transfer" isn't automatic just because you were enrolled somewhere.
 
 **Understand your program type's transfer mechanism (Lesson 1):**
-- **Exchange programs** usually run on a pre-negotiated agreement between the two universities, which can make transfer more predictable — but "usually" isn't "always"; confirm the specific agreement covers the specific courses you plan to take.
+- **Exchange programs** usually run on a pre-negotiated agreement between the two universities, which can make transfer more predictable, but "usually" isn't "always"; confirm the specific agreement covers the specific courses you plan to take.
 - **Direct enrollment** has no such blanket agreement; transfer is evaluated course-by-course, often after the fact, unless you secure pre-approval first.
-- **Faculty-led programs** are typically pre-built around a specific home-institution course or requirement, so transfer is usually the most predictable of the four — confirm anyway.
-- **Degree-seeking programs** aren't "transferring" credit at all — you're earning the whole degree from the foreign institution, which is a different kind of decision (and, per Lesson 7, changes your federal-aid eligibility).
+- **Faculty-led programs** are typically pre-built around a specific home-institution course or requirement, so transfer is usually the most predictable of the four, confirm anyway.
+- **Degree-seeking programs** aren't "transferring" credit at all, you're earning the whole degree from the foreign institution, which is a different kind of decision (and, per Lesson 7, changes your federal-aid eligibility).
 
 **Keep your paper trail.** Save course syllabi, grading-scale explanations, and an official transcript from the host institution, your registrar may need these to evaluate a course that doesn't map cleanly to a home-institution equivalent, especially for direct-enrollment programs with no pre-set agreement.
 

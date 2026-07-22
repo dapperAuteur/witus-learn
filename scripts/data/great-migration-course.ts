@@ -81,7 +81,7 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
 **The system had several interlocking pieces:**
 - **Disenfranchisement.** Poll taxes, literacy tests, and outright intimidation stripped most Black Southerners of the right to vote.
 - **Black Codes and their successors.** Laws restricted where Black people could live, work, and travel, often criminalizing unemployment itself.
-- **Sharecropping and debt peonage.** Most Black Southerners farmed land they did not own, splitting the crop with a white landowner who also controlled the accounting — a system that trapped families in debt they could never quite pay off.
+- **Sharecropping and debt peonage.** Most Black Southerners farmed land they did not own, splitting the crop with a white landowner who also controlled the accounting, a system that trapped families in debt they could never quite pay off.
 - **Segregation.** Separate (and unequal) schools, transportation, and public accommodations, upheld by *Plessy v. Ferguson* (1896) until the mid-twentieth century.
 - **Racial terror.** Lynching was a real and present threat used to enforce the whole system, not a rare aberration (National Archives, n.d.-a; Bill of Rights Institute, n.d.).
 
@@ -409,7 +409,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
 **Stronger civil-rights organizations.** Freed from the South's most direct forms of repression, Northern chapters of the **NAACP** and the **National Urban League** grew stronger and more assertive, building the organizational infrastructure the mid-century civil rights movement would later depend on.
 
 **Migrants (and their children) led the movement.** It is tempting to describe "the Great Migration" and "the civil rights movement" as two separate stories, but many of the movement's most important organizers were migrants themselves, or grew up in migrant households:
-- **A. Philip Randolph**, born in Crescent City, Florida, moved to New York City in 1911. In 1925 he organized the **Brotherhood of Sleeping Car Porters**, the first major Black labor union — built, notably, from the same Pullman porters who had smuggled the *Chicago Defender* south (Lesson 6).
+- **A. Philip Randolph**, born in Crescent City, Florida, moved to New York City in 1911. In 1925 he organized the **Brotherhood of Sleeping Car Porters**, the first major Black labor union, built, notably, from the same Pullman porters who had smuggled the *Chicago Defender* south (Lesson 6).
 - **Elijah Muhammad**, born Elijah Poole in Sandersville, Georgia, moved his family to Detroit in April 1923 as part of the Great Migration; he later became the leader of the Nation of Islam (BlackPast, n.d.-e).
 
 **A note on precision.** It is common to see Martin Luther King Jr. or Malcolm X cited as "Great Migration figures," but the fit is weaker than it looks: King's family was established, prosperous Atlanta clergy, not migrants, and Malcolm X's family's move to Nebraska and Michigan is more directly tied to Marcus Garvey-style organizing than to the Great Migration as this course defines it. Randolph and Muhammad are the better-documented direct examples, a reminder that even a true, important connection (the Migration shaped the civil rights movement) is worth backing with the *specific* evidence, not the first name that comes to mind.

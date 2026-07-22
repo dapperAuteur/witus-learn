@@ -162,7 +162,7 @@ As the Department of State's own guidance on retiring abroad puts it, planning c
 
 **The narrow exceptions**, worth knowing, but not something to plan a retirement around:
 - Traveling through **Canada** without unreasonable delay, by the most direct route, between Alaska and another U.S. state, when a medical emergency happens and the Canadian hospital is closer than the nearest adequate U.S. hospital.
-- Living in the U.S. near a foreign border, where a **foreign hospital is closer** to your home than the nearest U.S. hospital that can treat your condition — this is about proximity for U.S. residents, not coverage for someone living abroad full-time.
+- Living in the U.S. near a foreign border, where a **foreign hospital is closer** to your home than the nearest U.S. hospital that can treat your condition, this is about proximity for U.S. residents, not coverage for someone living abroad full-time.
 - Limited **cruise-ship** situations, generally only when the ship is within six hours of a U.S. port and specific conditions are met.
 
 (Centers for Medicare & Medicaid Services, n.d.)
@@ -231,7 +231,7 @@ None of these exceptions apply to the situation this course is about: living in 
 
 **Two practical follow-ups worth raising with your own estate attorney and financial institutions**, though this course does not assert specific rules for them:
 - Whether you need a **second, local will** covering assets in your destination country (some countries require or strongly recommend this), and how it should be coordinated with your U.S. will so the two don't conflict.
-- Whether your **beneficiary designations** — on retirement accounts, life insurance, and financial accounts — are current and whether living abroad changes anything about how they're administered.
+- Whether your **beneficiary designations**, on retirement accounts, life insurance, and financial accounts, are current and whether living abroad changes anything about how they're administered.
 
 **The takeaway:** treat estate planning as one of the professional consultations you schedule before finalizing a move, alongside the cross-border tax professional from Lesson 4, not something to resolve from a course, a blog, or a forum.
 
