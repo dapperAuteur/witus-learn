@@ -1648,7 +1648,7 @@ Two properties make Elo genuinely fair in a way that should raise your standards
         {
           prompt: "When was the first official Chess Olympiad, and what's the event's modern shape?",
           answer:
-            "London, 1927-16 national teams playing for the Hamilton-Russell Cup (Hungary won). Now roughly biennial, with open and women's sections and well over a hundred national teams playing four-board matches.",
+            "London, 1927, 16 national teams playing for the Hamilton-Russell Cup (Hungary won). Now roughly biennial, with open and women's sections and well over a hundred national teams playing four-board matches.",
         },
         {
           prompt: "Who founded US Chess and when, and what does it actually run?",

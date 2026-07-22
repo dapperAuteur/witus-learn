@@ -1647,7 +1647,7 @@ So the causal chain runs: **a Black golfer, denied a career, carrying the clubs 
         {
           prompt: "When was the PGA's Caucasian-only clause adopted, and when was it removed?",
           answer:
-            "Adopted in 1934 and removed in November 1961-27 years, and within the lifetime of people alive today.",
+            "Adopted in 1934 and removed in November 1961, 27 years, and within the lifetime of people alive today.",
         },
         {
           prompt: "How did Bill Spiller come to meet the man who ended the clause?",

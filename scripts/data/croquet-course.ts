@@ -1636,7 +1636,7 @@ The board tells your opponent exactly how poor you are. Play accordingly.
           },
           {
             prompt: "How many points does a side need to win an American Six-Wicket game?",
-            options: ["13", "26-12 wicket points plus the stake point, for each of the side's two balls", "7", "24"],
+            options: ["13", "26, 12 wicket points plus the stake point, for each of the side's two balls", "7", "24"],
             correctIndex: 1,
             explanation:
               "Rule 1.1(b) and Rule 10.4. The side must stake out BOTH balls (or, in a time-limited game, score the most points).",
