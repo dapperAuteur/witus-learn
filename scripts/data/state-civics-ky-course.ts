@@ -141,7 +141,7 @@ So Kentucky keeps judicial races **nonpartisan** (a contrast with, say, Alabama'
 - **Contact your legislators** in Frankfort: you have one Representative and one Senator; sessions are short, so timing matters.
 - **Run:** school board, city council, magistrate/fiscal court, and county offices are reachable local starting points.
 
-:::reveal What elected officials run a Kentucky county, and in which years are Kentucky's big statewide elections held? ||| A Kentucky county is run by the fiscal court — the county judge/executive together with elected magistrates (justices of the peace). Kentucky's big statewide elections, like for governor, fall in odd years.
+:::reveal What elected officials run a Kentucky county, and in which years are Kentucky's big statewide elections held? ||| A Kentucky county is run by the fiscal court, the county judge/executive together with elected magistrates (justices of the peace). Kentucky's big statewide elections, like for governor, fall in odd years.
 
 ## Sources
 - Kentucky Legislature. (n.d.). *Local government: counties, fiscal courts, and city-county consolidation*. legislature.ky.gov. https://legislature.ky.gov/

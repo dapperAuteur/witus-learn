@@ -166,7 +166,7 @@ Because Delaware is small and the state government is strong, much is handled at
 - **Contact your legislators** in Dover. You have one Representative and one Senator. Because the Legislature can even amend the constitution alone, contacting legislators carries real weight in Delaware.
 - **Run**: school board, town council, and county council are reachable local starting points.
 
-:::reveal How many counties does Delaware have, and why does contacting your legislator carry special weight here? ||| Delaware has three counties. Contacting your legislator carries special weight because the Delaware Legislature can amend the state constitution on its own, without a public vote — so lawmakers hold unusual power.
+:::reveal How many counties does Delaware have, and why does contacting your legislator carry special weight here? ||| Delaware has three counties. Contacting your legislator carries special weight because the Delaware Legislature can amend the state constitution on its own, without a public vote, so lawmakers hold unusual power.
 
 ## Sources
 - Delaware General Assembly. (n.d.). *Local government: the three counties and municipalities*. legis.delaware.gov. https://legis.delaware.gov/

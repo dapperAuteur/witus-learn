@@ -207,7 +207,7 @@ The takeaway: in Washington, **the Legislature is the usual road, but the voters
 - **Contact your legislators.** You have one Senator and two Representatives from your district in Olympia.
 - **Run.** School board, city council, port commission, and county offices are reachable local starting points.
 
-:::reveal Does Washington levy a personal state income tax, and why does this course say to VERIFY the current answer? ||| No — Washington has no personal state income tax; it relies on sales and other taxes instead. Verify the current answer because tax law is contested and changes — new taxes and court rulings can shift what's true — so confirm it rather than trust a fixed figure.
+:::reveal Does Washington levy a personal state income tax, and why does this course say to VERIFY the current answer? ||| No, Washington has no personal state income tax; it relies on sales and other taxes instead. Verify the current answer because tax law is contested and changes, new taxes and court rulings can shift what's true, so confirm it rather than trust a fixed figure.
 
 ## Sources
 - Washington State Legislature. (n.d.). *Washington tax structure; local government (counties, code cities)*. [leg.wa.gov](https://leg.wa.gov). https://leg.wa.gov/

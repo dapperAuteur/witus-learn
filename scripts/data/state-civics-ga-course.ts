@@ -316,7 +316,7 @@ The practical payoff: **who provides your service depends on where you live**: i
 
 **Show up locally.** Your **county board of commissioners**, your **city council**, and (if you're in one) your **consolidated city-county government** are public and set your local taxes and services. These smaller rooms are where one person's comment moves things most.
 
-:::reveal Name three specific ways to take part in Georgia government, and explain why, given that Georgia has no citizen initiative, contacting your state legislators is an especially important lever here. ||| Three ways: look up and persuade your one state representative and one state senator and testify before committee votes (legis.ga.gov), show up at your county commission and city council, and vote and run locally. Because Georgia has no citizen initiative, voters can't write law at the ballot box, so persuading legislators is the path to changing state law — making that contact an especially important lever.
+:::reveal Name three specific ways to take part in Georgia government, and explain why, given that Georgia has no citizen initiative, contacting your state legislators is an especially important lever here. ||| Three ways: look up and persuade your one state representative and one state senator and testify before committee votes (legis.ga.gov), show up at your county commission and city council, and vote and run locally. Because Georgia has no citizen initiative, voters can't write law at the ballot box, so persuading legislators is the path to changing state law, making that contact an especially important lever.
 
 ## Sources
 - Georgia Secretary of State. (n.d.-c). *How-to guide: voting; My Voter Page*. SOS.ga.gov. https://sos.ga.gov/how-to-guide/how-guide-voting
