@@ -16,23 +16,23 @@ import type { AuthoredCourse } from "./authored-course";
 export const TRAVEL_VISAS_101_COURSE: AuthoredCourse = {
   title: "Travel Visas 101: Getting a Visa to Travel Abroad",
   description:
-    "A clear, destination-agnostic guide for U.S. citizens to figuring out and obtaining a visa when traveling to another country: what a visa is, how to research any destination's current requirements, the four common visa categories, Europe's Schengen Area and the new ETIAS travel authorization, the documents you'll typically need, transit visas, and overstay/entry-exit rules. Teaches the method, not a fixed set of country rules, because requirements change — always confirm with official sources.",
+    "A clear, destination-agnostic guide for U.S. citizens to figuring out and obtaining a visa when traveling to another country: what a visa is, how to research any destination's current requirements, the four common visa categories, Europe's Schengen Area and the new ETIAS travel authorization, the documents you'll typically need, transit visas, and overstay/entry-exit rules. Teaches the method, not a fixed set of country rules, because requirements change, always confirm with official sources.",
   lessons: [
     {
       slug: "visa-vs-passport",
       title: "1 · What a visa is, and how it differs from a passport",
       body: `A **passport** is your own government's proof of who you are and that you're a citizen of your country. The U.S. Department of State issues and controls U.S. passports. A **visa** is a different thing entirely: it's **permission to enter another country**, granted by *that country's* government, for a specific purpose and length of stay.
 
-The U.S. State Department's own visa system illustrates the general shape every country's visa works the same way: a visa "allows a foreign citizen to travel to a... port of entry... and request permission" to enter, but a visa **does not guarantee entry** — that is a separate decision made by the officer at the border (U.S. Department of State, n.d.-a). The same logic runs in the other direction: once a destination country grants *you* a visa, its own border officer still makes the final call on whether you're admitted, and for how long.
+The U.S. State Department's own visa system illustrates the general shape every country's visa works the same way: a visa "allows a foreign citizen to travel to a... port of entry... and request permission" to enter, but a visa **does not guarantee entry**, that is a separate decision made by the officer at the border (U.S. Department of State, n.d.-a). The same logic runs in the other direction: once a destination country grants *you* a visa, its own border officer still makes the final call on whether you're admitted, and for how long.
 
 Practical takeaways:
 
 - Not every trip needs a visa. Many countries let U.S. citizens visit for tourism or business without one, for a limited number of days (USA.gov, n.d.).
-- When a visa **is** required, it's usually a stamp, sticker, or digital record tied to your passport — not a replacement for it.
+- When a visa **is** required, it's usually a stamp, sticker, or digital record tied to your passport, not a replacement for it.
 - Your passport's own validity matters independently of any visa: most countries require it valid for your entire trip, and many require extra months beyond that (Lesson 5).
 - Visa rules are set unilaterally by each country and can change with little notice. The method in this course beats memorizing any one country's rules.
 
-:::reveal What's the difference between a passport and a visa? ||| A passport is issued by your own government and proves who you are and your citizenship. A visa is permission to enter a specific country, issued by that country's government, for a specific purpose and length of time. Having a visa does not guarantee entry — the border officer decides.
+:::reveal What's the difference between a passport and a visa? ||| A passport is issued by your own government and proves who you are and your citizenship. A visa is permission to enter a specific country, issued by that country's government, for a specific purpose and length of time. Having a visa does not guarantee entry, the border officer decides.
 
 ## Sources
 - U.S. Department of State, Bureau of Consular Affairs. (n.d.-a). About visas – the basics. Travel.State.gov. https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/frequently-asked-questions/about-basics.html
@@ -41,10 +41,10 @@ Practical takeaways:
     {
       slug: "researching-destination-requirements",
       title: "2 · How to research a destination's requirements",
-      body: `Every country sets its own visa rules for U.S. citizens, and those rules **change** — sometimes with only weeks of notice. Don't rely on a blog post, a forum thread, or what a friend needed last year. Use two authoritative sources, in this order:
+      body: `Every country sets its own visa rules for U.S. citizens, and those rules **change**, sometimes with only weeks of notice. Don't rely on a blog post, a forum thread, or what a friend needed last year. Use two authoritative sources, in this order:
 
 1. **The U.S. State Department's country information pages** (travel.state.gov). Search "learn about your destination," and the destination's page lists its current entry, exit, and visa requirements, plus a Travel Advisory level, passport-validity rules, and safety/health notes (U.S. Department of State, n.d.-a).
-2. **The destination's own official embassy or consulate site** (or its foreign ministry / immigration authority website). This is the *only* place with the authoritative, current application steps, fees, and processing times for that specific country, because the destination government is the one issuing the visa — not the U.S. (USA.gov, n.d.).
+2. **The destination's own official embassy or consulate site** (or its foreign ministry / immigration authority website). This is the *only* place with the authoritative, current application steps, fees, and processing times for that specific country, because the destination government is the one issuing the visa, not the U.S. (USA.gov, n.d.).
 
 Also **enroll your trip in STEP**, the Smart Traveler Enrollment Program: a free State Department service that sends you Travel Advisory updates and safety alerts for your destination, and helps the nearest U.S. embassy reach you in an emergency (U.S. Department of State, n.d.-b). None of this replaces checking the destination's own site before you apply for a visa or book nonrefundable travel.
 
@@ -77,7 +77,7 @@ Also **enroll your trip in STEP**, the Smart Traveler Enrollment Program: a free
 - **E-visa / online travel authorization.** You apply online before you travel, upload a passport scan and photo, pay a fee, and receive an approval by email, often linked electronically to your passport rather than stamped in it. Europe's new **ETIAS** (Lesson 4) is this category. Processing can take anywhere from minutes to several weeks, so apply early.
 - **Embassy / consulate visa.** You must apply in person or by mail to the destination country's embassy or consulate before you travel, usually with an in-person interview, biometrics, or supporting documents. This is the slowest category, and the one most likely to require an appointment booked well in advance.
 
-Always confirm the current category and requirement with the destination's own official source (Lesson 2) — a country can move between categories (for example, adding an e-visa requirement where none existed before) with little notice.
+Always confirm the current category and requirement with the destination's own official source (Lesson 2), a country can move between categories (for example, adding an e-visa requirement where none existed before) with little notice.
 
 :::reveal Name the four common visa categories, from least to most advance planning required. ||| Visa-free/visa-exempt (no visa needed for a short stay), visa on arrival (apply at the border), e-visa/online travel authorization (apply online in advance), and embassy/consulate visa (apply in person or by mail before travel, often with an interview).
 
@@ -93,16 +93,16 @@ Always confirm the current category and requirement with the destination's own o
         {
           prompt: "What free State Department service should you enroll your trip in, and why?",
           answer:
-            "STEP, the Smart Traveler Enrollment Program — it sends Travel Advisory updates and safety alerts for your destination and helps the nearest U.S. embassy reach you in an emergency.",
+            "STEP, the Smart Traveler Enrollment Program, it sends Travel Advisory updates and safety alerts for your destination and helps the nearest U.S. embassy reach you in an emergency.",
         },
       ],
     },
     {
       slug: "schengen-and-etias",
       title: "4 · Europe's Schengen Area and the new ETIAS",
-      body: `Europe is the single most important special case for U.S. travelers, because 29 countries share one common short-stay visa policy: the **Schengen Area**. It includes 25 EU member states plus Iceland, Norway, Switzerland, and Liechtenstein; Cyprus and Ireland are EU members but are **not** part of Schengen (European Commission, n.d.-a). As a U.S. citizen you can currently enter the Schengen Area **visa-free for tourism or business, for up to 90 days within any rolling 180-day period** — not a fixed calendar quota, but a sliding 180-day window counted backward from each day of your stay (European Commission, n.d.-a). The European Commission publishes an official short-stay calculator to check your own dates.
+      body: `Europe is the single most important special case for U.S. travelers, because 29 countries share one common short-stay visa policy: the **Schengen Area**. It includes 25 EU member states plus Iceland, Norway, Switzerland, and Liechtenstein; Cyprus and Ireland are EU members but are **not** part of Schengen (European Commission, n.d.-a). As a U.S. citizen you can currently enter the Schengen Area **visa-free for tourism or business, for up to 90 days within any rolling 180-day period**, not a fixed calendar quota, but a sliding 180-day window counted backward from each day of your stay (European Commission, n.d.-a). The European Commission publishes an official short-stay calculator to check your own dates.
 
-Starting in the last quarter of 2026, most U.S. citizens will also need **ETIAS**, the European Travel Information and Authorisation System: an online pre-travel screening (like a background-check questionnaire, not a full visa) that costs **€20**, is applied for online before departure, and is linked electronically to your passport for **up to three years or until that passport expires**, whichever comes first (European Union, n.d.). As of mid-2026, ETIAS is **not yet collecting applications** — always confirm the current status and launch date on the official site before you travel (European Union, n.d.).
+Starting in the last quarter of 2026, most U.S. citizens will also need **ETIAS**, the European Travel Information and Authorisation System: an online pre-travel screening (like a background-check questionnaire, not a full visa) that costs **€20**, is applied for online before departure, and is linked electronically to your passport for **up to three years or until that passport expires**, whichever comes first (European Union, n.d.). As of mid-2026, ETIAS is **not yet collecting applications**, always confirm the current status and launch date on the official site before you travel (European Union, n.d.).
 
 Separately, as of **April 10, 2026**, the EU's **Entry/Exit System (EES)** became fully operational at Schengen borders: it replaces manual passport stamping with an automated system that records your fingerprints, facial image, and entry/exit dates, and automatically flags overstays (European Commission, n.d.-b). Expect biometric checks, and possibly longer border-crossing lines, as this rolls out.
 
@@ -122,7 +122,7 @@ Separately, as of **April 10, 2026**, the EU's **Entry/Exit System (EES)** becam
           prompt:
             "Which visa category should you be most cautious about, since you only find out if you're denied after you've already traveled?",
           answer:
-            "Visa on arrival — you request it at the border rather than in advance, so confirm the destination truly offers it to U.S. passport holders before you fly.",
+            "Visa on arrival, you request it at the border rather than in advance, so confirm the destination truly offers it to U.S. passport holders before you fly.",
         },
       ],
     },
@@ -138,7 +138,7 @@ Separately, as of **April 10, 2026**, the EU's **Entry/Exit System (EES)** becam
 - **Travel/medical insurance.** Some destinations require it outright. The Schengen Area's own visa rules, for example, require travel medical insurance with a **minimum of €30,000** in coverage for emergency treatment, hospitalization, and medical repatriation, valid across the whole Schengen Area for your full stay (European Parliament & Council of the European Union, 2009). Even where insurance isn't mandatory, remember: **the U.S. government does not pay medical or evacuation costs for U.S. citizens abroad** (U.S. Department of State, n.d.).
 - **Any destination-specific paperwork**: proof of accommodation, an invitation letter, vaccination records, or notarized consent for a minor traveling with only one parent.
 
-Confirm the exact list for your destination and visa type on its official embassy/consulate site (Lesson 2) — a missing document is one of the most common reasons a visa application is delayed or denied.
+Confirm the exact list for your destination and visa type on its official embassy/consulate site (Lesson 2), a missing document is one of the most common reasons a visa application is delayed or denied.
 
 :::reveal Name three document types that commonly come up across different countries' visa requirements. ||| Any three of: a valid passport (with enough remaining validity), passport-style photos, a travel itinerary or proof of onward travel, proof of funds, travel/medical insurance, and destination-specific paperwork like proof of accommodation or vaccination records.
 
@@ -160,11 +160,11 @@ Confirm the exact list for your destination and visa type on its official embass
     {
       slug: "transit-visas",
       title: "6 · Transit visas: passing through vs. entering",
-      body: `A **transit visa** is permission to pass *through* a country on the way to another destination — not to visit it. Whether you need one for a layover depends on your nationality, the transit country's rules, how long your layover is, and whether you stay **airside** (inside the secure zone) or have to clear immigration to change terminals or recheck bags.
+      body: `A **transit visa** is permission to pass *through* a country on the way to another destination, not to visit it. Whether you need one for a layover depends on your nationality, the transit country's rules, how long your layover is, and whether you stay **airside** (inside the secure zone) or have to clear immigration to change terminals or recheck bags.
 
 The United States' own transit visa illustrates the general shape of the concept: its **C-1 transit visa** is for travelers passing through the U.S. "in immediate and continuous transit" to another country, and several travelers are exempted from needing one, including holders of a valid U.S. visitor visa, citizens of Visa Waiver Program countries, and Canadian and Bermudian citizens (U.S. Department of State, n.d.). Many other countries run similar systems for their own airports: some layovers under a set number of hours, staying airside, qualify for **transit without a visa (TWOV)**; longer or overnight layovers, or ones that require clearing immigration, more often require a transit visa.
 
-There's no universal threshold — it varies by country and even by airport. Before booking a connecting itinerary, check the transit country's own official immigration or embassy site (not just the airline's booking flow) for its specific transit rules for U.S. passport holders.
+There's no universal threshold, it varies by country and even by airport. Before booking a connecting itinerary, check the transit country's own official immigration or embassy site (not just the airline's booking flow) for its specific transit rules for U.S. passport holders.
 
 :::reveal What's the difference between a transit visa and a regular entry visa, and what should you check before booking a connecting flight through a country you've never visited? ||| A transit visa permits passing through a country to reach another destination, not visiting it; a regular entry visa permits entering that country as your actual destination. Before booking a connection, check that transit country's own official immigration or embassy site for its layover/transit-visa rules for U.S. passport holders, since there's no universal threshold.
 
@@ -178,22 +178,22 @@ There's no universal threshold — it varies by country and even by airport. Bef
         },
         {
           prompt: "Does the U.S. government pay medical or evacuation costs for U.S. citizens who get sick or injured abroad?",
-          answer: "No. Travelers need their own travel/medical insurance — the U.S. government does not cover these costs.",
+          answer: "No. Travelers need their own travel/medical insurance, the U.S. government does not cover these costs.",
         },
       ],
     },
     {
       slug: "overstays-entry-exit",
       title: "7 · Overstays and entry/exit rules",
-      body: `A visa's expiration date and your **authorized length of stay** are two different things. This is true in both directions: on the U.S. side, a visa lets you *seek* entry, but it's the border officer who sets — and records — how long you're actually allowed to stay, separately from the visa's own validity (U.S. Department of State, n.d.-a). The same split exists almost everywhere: **the number on your visa is not the number of days you're allowed in the country** — check your entry stamp, digital arrival record, or the officer's instructions for your actual authorized stay.
+      body: `A visa's expiration date and your **authorized length of stay** are two different things. This is true in both directions: on the U.S. side, a visa lets you *seek* entry, but it's the border officer who sets, and records, how long you're actually allowed to stay, separately from the visa's own validity (U.S. Department of State, n.d.-a). The same split exists almost everywhere: **the number on your visa is not the number of days you're allowed in the country**, check your entry stamp, digital arrival record, or the officer's instructions for your actual authorized stay.
 
-**Overstaying** — remaining after your authorized stay ends — has real consequences almost everywhere: fines, detention, deportation, and often a **ban on returning** for months or years, even to countries you've visited safely many times before. In the U.S. itself, an overstay voids the visa automatically and can make someone ineligible for a future visa (U.S. Department of State, n.d.-a) — a preview of how seriously other countries treat the same violation.
+**Overstaying**, remaining after your authorized stay ends, has real consequences almost everywhere: fines, detention, deportation, and often a **ban on returning** for months or years, even to countries you've visited safely many times before. In the U.S. itself, an overstay voids the visa automatically and can make someone ineligible for a future visa (U.S. Department of State, n.d.-a), a preview of how seriously other countries treat the same violation.
 
 Border technology is also changing how overstays get caught. As of April 2026, the EU's Entry/Exit System (Lesson 4) replaced manual passport stamps at Schengen borders with a biometric system that **automatically detects travelers who've exceeded their authorized stay** (European Commission, n.d.-b). Assume that wherever you travel, entry and exit are increasingly tracked electronically, and count your days conservatively.
 
-**Before you fly:** know your exact authorized stay (not just the visa's expiration date), track your days if you're moving between countries in a shared zone like Schengen, and if you need more time, ask about a legal extension *before* your authorized stay runs out — never plan to simply overstay and leave later.
+**Before you fly:** know your exact authorized stay (not just the visa's expiration date), track your days if you're moving between countries in a shared zone like Schengen, and if you need more time, ask about a legal extension *before* your authorized stay runs out, never plan to simply overstay and leave later.
 
-:::reveal What's the difference between a visa's expiration date and your "authorized stay," and what's one real consequence of overstaying? ||| The visa's expiration date is how long the visa document itself is valid for seeking entry; the authorized stay is the actual number of days you're allowed to remain, set by the border officer (or system) at entry — the two numbers can differ. Overstaying can lead to fines, detention, deportation, and a ban on returning to that country for months or years.
+:::reveal What's the difference between a visa's expiration date and your "authorized stay," and what's one real consequence of overstaying? ||| The visa's expiration date is how long the visa document itself is valid for seeking entry; the authorized stay is the actual number of days you're allowed to remain, set by the border officer (or system) at entry, the two numbers can differ. Overstaying can lead to fines, detention, deportation, and a ban on returning to that country for months or years.
 
 ## Sources
 - U.S. Department of State, Bureau of Consular Affairs. (n.d.-a). What the visa expiration date means. Travel.State.gov. https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/visa-expiration-date.html
@@ -206,7 +206,7 @@ Border technology is also changing how overstays get caught. As of April 2026, t
         {
           prompt: "What determines whether you need a transit visa for a layover?",
           answer:
-            "It varies by country: your nationality, the transit country's rules, how long the layover is, and whether you stay airside or must clear immigration. There's no universal threshold — always check the transit country's own official source.",
+            "It varies by country: your nationality, the transit country's rules, how long the layover is, and whether you stay airside or must clear immigration. There's no universal threshold, always check the transit country's own official source.",
         },
       ],
     },
@@ -225,7 +225,7 @@ Border technology is also changing how overstays get caught. As of April 2026, t
           {
             prompt: "Permission to enter another country, issued by that country's government, is called a ___.",
             answer: "visa",
-            explanation: "A visa does not guarantee entry — the destination's border officer makes the final call.",
+            explanation: "A visa does not guarantee entry, the destination's border officer makes the final call.",
           },
           {
             prompt: "The free State Department service that sends safety alerts for your registered trip is called ___.",
@@ -247,7 +247,7 @@ Border technology is also changing how overstays get caught. As of April 2026, t
           {
             prompt: "The new online travel authorization most U.S. citizens will need to enter Europe starting late 2026 is called ___.",
             answer: "ETIAS",
-            explanation: "European Travel Information and Authorisation System — a €20 pre-travel screening, not a full visa.",
+            explanation: "European Travel Information and Authorisation System, a €20 pre-travel screening, not a full visa.",
           },
           {
             prompt: "A visa that lets you pass through a country to reach another destination, not to visit it, is a ___ visa.",
@@ -257,7 +257,7 @@ Border technology is also changing how overstays get caught. As of April 2026, t
           {
             prompt: "Remaining in a country after your authorized stay ends is called a(n) ___.",
             answer: "overstay",
-            explanation: "It can lead to fines, detention, deportation, and a ban on returning — even to countries you've visited safely before.",
+            explanation: "It can lead to fines, detention, deportation, and a ban on returning, even to countries you've visited safely before.",
           },
           {
             prompt: "Under the Schengen 90/180 rule, you can stay up to 90 days within any rolling ___-day period.",
@@ -350,7 +350,7 @@ Border technology is also changing how overstays get caught. As of April 2026, t
             ],
             correctIndex: 1,
             explanation:
-              "Whether you need one for a layover depends on nationality, layover length, and whether you stay airside — always check the transit country's own official source.",
+              "Whether you need one for a layover depends on nationality, layover length, and whether you stay airside, always check the transit country's own official source.",
             sourceLessonSlug: "transit-visas",
           },
           {

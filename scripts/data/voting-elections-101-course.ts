@@ -186,7 +186,7 @@ Two main mechanisms, both citizen-driven:
 
 **Don't assume a signature count or process from one state applies to another.** The number of signatures required, what subjects may be put to a vote, and whether the citizen-initiative process exists at all are all set **by each state**, so they vary; confirm the specifics for your state with NCSL's process pages or your state's election office (NCSL, n.d.-f).
 
-:::reveal What is the difference between an initiative and a referendum, and which one is proposed by the legislature itself rather than by citizen petition? ||| An initiative is a law or constitutional amendment citizens draft themselves and place on the ballot by petition. A referendum can mean citizens petitioning to send an already-passed law to a public vote (a popular/veto referendum), or the legislature itself referring a measure, often a constitutional amendment, to voters (a legislative referral) — that legislative referral is the one that comes from the legislature, not a citizen petition.
+:::reveal What is the difference between an initiative and a referendum, and which one is proposed by the legislature itself rather than by citizen petition? ||| An initiative is a law or constitutional amendment citizens draft themselves and place on the ballot by petition. A referendum can mean citizens petitioning to send an already-passed law to a public vote (a popular/veto referendum), or the legislature itself referring a measure, often a constitutional amendment, to voters (a legislative referral), that legislative referral is the one that comes from the legislature, not a citizen petition.
 
 ## Sources
 - NCSL. (n.d.-e). *Initiative and referendum overview and resources*. National Conference of State Legislatures. https://www.ncsl.org/elections-and-campaigns/initiative-and-referendum-overview-and-resources
@@ -230,7 +230,7 @@ Three distinct stages happen after the polls close:
         {
           prompt: "What determines whether a signature count for a ballot initiative in one state tells you anything about another state?",
           answer:
-            "Nothing — signature thresholds and initiative rules are set individually by each state, so they vary and must be confirmed for your specific state.",
+            "Nothing, signature thresholds and initiative rules are set individually by each state, so they vary and must be confirmed for your specific state.",
         },
       ],
     },
@@ -285,7 +285,7 @@ A simple pre-election checklist: confirm you're **registered** at your **current
           {
             prompt: "The total number of presidential electors is ___ (number).",
             answer: "538",
-            explanation: "A candidate needs a majority — 270 — to win.",
+            explanation: "A candidate needs a majority, 270, to win.",
           },
           {
             prompt: "Maine and Nebraska award electors by congressional ___, unlike every other state's winner-take-all system.",
