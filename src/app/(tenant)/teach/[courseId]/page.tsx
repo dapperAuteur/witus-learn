@@ -17,14 +17,19 @@ export const metadata: Metadata = { title: "Manage course" };
 // Instructor course manager: edit settings + manage lessons. Scoped + edit-gated,
 // so only the owning instructor / brand admin / platform owner reaches it.
 export default async function ManageCoursePage({ params }: { params: Promise<{ courseId: string }> }) {
-  const { courseId } = await params;
+  // The URL segment is the course SLUG (readable) or its uuid (legacy links / ambiguous slugs).
+  const { courseId: courseParam } = await params;
   const session = await getSession();
   if (!session) redirect("/login");
 
   const sdb = await getScopedDb();
-  const course = await sdb.getCourseById(courseId);
+  const course = await sdb.getCourseByIdOrSlug(courseParam);
   if (!course) notFound();
   if (!(await canEditCourse(session, sdb.tenantId, course))) notFound();
+  // Everything downstream keys off the RESOLVED id, never the raw segment.
+  const courseId = course.id;
+  // Sibling authoring links keep the readable slug when the course has one.
+  const courseHref = `/teach/${course.slug ?? course.id}`;
 
   const [lessons, owner, membership, categories, linkUsage, recallStats, modules] = await Promise.all([
     listLessons(courseId),
@@ -62,10 +67,10 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           ← Your courses
         </Link>
         <div className="flex items-center gap-4 text-sm">
-          <Link href={`/teach/${course.id}/script`} className="underline" style={{ color: "var(--accent)" }}>
+          <Link href={`${courseHref}/script`} className="underline" style={{ color: "var(--accent)" }}>
             📄 Recording script
           </Link>
-          <Link href={`/teach/${course.id}/submissions`} className="underline" style={{ color: "var(--accent)" }}>
+          <Link href={`${courseHref}/submissions`} className="underline" style={{ color: "var(--accent)" }}>
             Submissions
           </Link>
           <Link href={`/course/${course.id}`} className="underline" style={{ color: "var(--accent)" }}>

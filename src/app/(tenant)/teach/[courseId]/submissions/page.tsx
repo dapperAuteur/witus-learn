@@ -11,14 +11,16 @@ export const metadata: Metadata = { title: "Submissions" };
 
 // Instructor grading queue for a course's assignment submissions.
 export default async function SubmissionsPage({ params }: { params: Promise<{ courseId: string }> }) {
-  const { courseId } = await params;
+  // Slug or uuid — see getCourseByIdOrSlug.
+  const { courseId: courseParam } = await params;
   const session = await getSession();
   if (!session) redirect("/login");
 
   const sdb = await getScopedDb();
-  const course = await sdb.getCourseById(courseId);
+  const course = await sdb.getCourseByIdOrSlug(courseParam);
   if (!course) notFound();
   if (!(await canEditCourse(session, sdb.tenantId, course))) notFound();
+  const courseId = course.id;
 
   const rows = await listSubmissionsForCourse(sdb.tenantId, courseId);
   const items = rows.map((r) => ({
@@ -34,7 +36,7 @@ export default async function SubmissionsPage({ params }: { params: Promise<{ co
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <Link href={`/teach/${courseId}`} className="text-sm text-neutral-500 hover:underline">
+      <Link href={`/teach/${course.slug ?? course.id}`} className="text-sm text-neutral-500 hover:underline">
         ← Manage {course.title}
       </Link>
       <h1 className="mt-4 text-2xl font-bold">Assignment submissions</h1>

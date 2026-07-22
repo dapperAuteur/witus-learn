@@ -124,6 +124,7 @@ export default async function TeachPage() {
         <TeacherCatalog
           courses={courses.map((c) => ({
             id: c.id,
+            slug: c.slug,
             title: c.title,
             category: c.category,
             isPublished: c.isPublished,
