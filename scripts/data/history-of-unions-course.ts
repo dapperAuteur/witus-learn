@@ -30,7 +30,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const HISTORY_OF_UNIONS_COURSE: AuthoredCourse = {
   title: "The History of Unions: America and the World",
   description:
-    "How working people organized — and what it cost them. The American arc from the Knights of Labor and Haymarket through the Triangle fire, the Wagner Act, Taft-Hartley, Memphis, and PATCO to today's union density, told with the parts a comfortable course skips: the law's deliberate exclusion of farm and domestic workers, unions' own record of racial and gender exclusion, and the corruption chapters. Then the world: there is no single \"union\" model. Nordic sectoral bargaining, German co-determination, Japanese enterprise unions, China's state-run federation, Solidarity and COSATU as democratic opposition, and the Gulf's migrant workers, who have almost no rights at all. You finish able to look at any country and ask the right four questions. Cited throughout to BLS, the NLRB, the ILO, the OECD, the Library of Congress, and the statutes themselves.",
+    "How working people organized, and what it cost them. The American arc from the Knights of Labor and Haymarket through the Triangle fire, the Wagner Act, Taft-Hartley, Memphis, and PATCO to today's union density, told with the parts a comfortable course skips: the law's deliberate exclusion of farm and domestic workers, unions' own record of racial and gender exclusion, and the corruption chapters. Then the world: there is no single \"union\" model. Nordic sectoral bargaining, German co-determination, Japanese enterprise unions, China's state-run federation, Solidarity and COSATU as democratic opposition, and the Gulf's migrant workers, who have almost no rights at all. You finish able to look at any country and ask the right four questions. Cited throughout to BLS, the NLRB, the ILO, the OECD, the Library of Congress, and the statutes themselves.",
   lessons: [
     // ── Section 1 · What a union is, and how to read any country ──────────────
     {
@@ -39,24 +39,24 @@ export const HISTORY_OF_UNIONS_COURSE: AuthoredCourse = {
       title: "1 · What a union actually is",
       body: `A **union** is a group of workers who deal with their employer *together* instead of one at a time.
 
-That is the whole idea. Everything else — the strikes, the laws, the songs, the arguments — comes out of that one sentence.
+That is the whole idea. Everything else, the strikes, the laws, the songs, the arguments, comes out of that one sentence.
 
 Think about what happens without a union. You want a raise. You go to your boss alone. Your boss has one job to give and, in most cases, other people who would take it. You have one job to lose and, in most cases, rent due. That imbalance has a name in economics: the two of you are not bargaining from equal positions, even though you are both technically free to walk away.
 
 Now imagine every worker in the building goes to the boss with the same request, at the same time, and agrees in advance that none of them will accept less. The boss cannot replace one person; the boss would have to replace everyone. The balance of the conversation changes. That is **collective bargaining**, and a union is the machinery that makes it possible: it elects representatives, negotiates a written contract, and enforces the contract when the employer breaks it.
 
-A union contract — often called a **collective bargaining agreement** — typically covers pay, hours, benefits, safety rules, how discipline and firing work, and a **grievance procedure**: an agreed process for challenging a decision you think broke the contract.
+A union contract, often called a **collective bargaining agreement**, typically covers pay, hours, benefits, safety rules, how discipline and firing work, and a **grievance procedure**: an agreed process for challenging a decision you think broke the contract.
 
 Two things a union is *not*:
 
 - **A union is not the government.** In most of the world it is a private organization, and it can only get what it can negotiate or force.
 - **A union is not automatically good or automatically bad.** Unions have won the eight-hour day and fought to keep Black workers out of skilled trades. This course will show you both, because a course that only tells the heroic half is not a history course; it is an advertisement, and you would be right not to trust it.
 
-One more distinction, because it matters for reading numbers later. **Union membership** means you have joined and (usually) pay dues. **Union coverage** means a union contract governs your job — whether or not you joined. In the United States, those two numbers are close. In France, as you will see in Section 6, they are wildly different, and the gap tells you something important about how that country works.
+One more distinction, because it matters for reading numbers later. **Union membership** means you have joined and (usually) pay dues. **Union coverage** means a union contract governs your job, whether or not you joined. In the United States, those two numbers are close. In France, as you will see in Section 6, they are wildly different, and the gap tells you something important about how that country works.
 
 > **This course is the history.** Its companion course, *Know Your Rights at Work*, covers what your rights are on the job **today** — what the law protects when you speak up, and what to do about retaliation. This course explains where those rights came from, who was left out of them, and why the answers change the moment you cross a border.
 
-:::reveal In one sentence, what is the core function of a union? ||| It lets workers deal with their employer collectively — bargaining as a group instead of one at a time — which changes the balance of power, because an employer can replace one worker far more easily than all of them.
+:::reveal In one sentence, what is the core function of a union? ||| It lets workers deal with their employer collectively, bargaining as a group instead of one at a time, which changes the balance of power, because an employer can replace one worker far more easily than all of them.
 
 ## Sources
 - National Labor Relations Board. (n.d.). *National Labor Relations Act*. https://www.nlrb.gov/guidance/key-reference-materials/national-labor-relations-act
@@ -71,7 +71,7 @@ One more distinction, because it matters for reading numbers later. **Union memb
         {
           prompt: "What is collective bargaining?",
           answer:
-            "Workers negotiating with an employer as a group, through elected representatives, and agreeing in advance not to accept less — instead of each worker bargaining alone.",
+            "Workers negotiating with an employer as a group, through elected representatives, and agreeing in advance not to accept less, instead of each worker bargaining alone.",
         },
         {
           prompt: "What is the difference between union MEMBERSHIP and union COVERAGE?",
@@ -79,7 +79,7 @@ One more distinction, because it matters for reading numbers later. **Union memb
             "Membership means you have joined the union. Coverage means a union contract governs your job, whether or not you joined. In the US the two numbers are close; in some countries they are very far apart.",
         },
       ],
-      body: `You are going to meet a lot of countries in this course, and you will not remember all of them. That is fine. What you should walk out with is a **tool** — four questions that work on any country, in any year, including ones this course never mentions.
+      body: `You are going to meet a lot of countries in this course, and you will not remember all of them. That is fine. What you should walk out with is a **tool**, four questions that work on any country, in any year, including ones this course never mentions.
 
 Here they are.
 
@@ -87,17 +87,17 @@ Here they are.
 Is forming a union legal? For everyone, or only for some people? Can you form *your own* union, or must you join the one the state already runs? Can you form more than one? (Hold on to that last one. It is the question that separates Sweden from China.)
 
 **2. Who is excluded?**
-Every labor system has people it leaves outside the fence. The interesting question is never "is anyone excluded" — someone always is. It is *who*, and *whether the exclusion was an accident or a decision*. In the United States, as you will see in Section 3, the exclusion of farm and domestic workers from the main labor law was a decision, and you can name the workers it removed.
+Every labor system has people it leaves outside the fence. The interesting question is never "is anyone excluded", someone always is. It is *who*, and *whether the exclusion was an accident or a decision*. In the United States, as you will see in Section 3, the exclusion of farm and domestic workers from the main labor law was a decision, and you can name the workers it removed.
 
 **3. Who bargains with whom, and at what level?**
 Does a union bargain with one company, one factory, or an entire industry at once? Does the government sit at the table? Do workers sit on the company's board? These sound like technical details. They are the single biggest reason a country with *fewer* union members than the US can have *far more* workers covered by union contracts.
 
 **4. What happens to you if you try?**
-The honest one. Can you be fired? Sued? Blacklisted? Arrested? Deported? Killed? Every country has a legal answer to this question and a real answer, and in a lot of places they are not the same answer. When they are not, say so — and say how you know.
+The honest one. Can you be fired? Sued? Blacklisted? Arrested? Deported? Killed? Every country has a legal answer to this question and a real answer, and in a lot of places they are not the same answer. When they are not, say so and say how you know.
 
 ---
 
-Practise on a country you already live in or have heard of. You will not have the answers yet. Notice which of the four you cannot answer — that is the shape of what you are about to learn.
+Practise on a country you already live in or have heard of. You will not have the answers yet. Notice which of the four you cannot answer, that is the shape of what you are about to learn.
 
 A note on evidence, since we are about to spend a course on a subject people argue about. **Labor history is politically contested.** Both "unions built the middle class" and "unions destroyed American industry" are things adults will say to you with total confidence. This course's rule, which you should steal: *every number gets a year and a source; where the record genuinely does not settle a question, we say that it does not, rather than picking the version we like.* You will see that rule get its hardest test in the very next section.
 
@@ -166,7 +166,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             ],
             correctIndex: 1,
             explanation:
-              "Membership = you joined. Coverage = a union contract governs your job regardless. The gap between the two is small in the US and enormous in some other countries — a clue to how their systems work.",
+              "Membership = you joined. Coverage = a union contract governs your job regardless. The gap between the two is small in the US and enormous in some other countries, a clue to how their systems work.",
             sourceLessonSlug: "what-is-a-union",
           },
           {
@@ -192,7 +192,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             ],
             correctIndex: 1,
             explanation:
-              "Question 1 is \"Who is allowed to organise?\" — including whether workers may form their own union, or must join one the state already runs.",
+              "Question 1 is \"Who is allowed to organise?\", including whether workers may form their own union, or must join one the state already runs.",
             sourceLessonSlug: "the-four-questions",
           },
           {
@@ -205,7 +205,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             ],
             correctIndex: 1,
             explanation:
-              "Someone is always excluded. The question that teaches you something is WHO — and whether the exclusion was designed. In the US, the carve-out of farm and domestic workers was a decision, not an oversight.",
+              "Someone is always excluded. The question that teaches you something is WHO, and whether the exclusion was designed. In the US, the carve-out of farm and domestic workers was a decision, not an oversight.",
             sourceLessonSlug: "the-four-questions",
           },
           {
@@ -222,7 +222,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             sourceLessonSlug: "the-four-questions",
           },
           {
-            prompt: "Question 4 — \"What happens to you if you try?\" — comes with a warning. What is it?",
+            prompt: "Question 4, \"What happens to you if you try?\", comes with a warning. What is it?",
             options: [
               "That the answer is the same in every country",
               "That a country's LEGAL answer and its REAL answer are often not the same, and you should say so and say how you know",
@@ -239,7 +239,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             options: [
               "Unions are always good and criticism of them is anti-worker",
               "Unions are always bad and destroyed American industry",
-              "Unions have both won major protections and, at times, excluded workers by race and sex — the course teaches both, with sources",
+              "Unions have both won major protections and, at times, excluded workers by race and sex, the course teaches both, with sources",
               "The course takes no position on any factual question",
             ],
             correctIndex: 2,
@@ -277,7 +277,7 @@ A note on evidence, since we are about to spend a course on a subject people arg
             prompt: "How does this course relate to its companion, *Know Your Rights at Work*?",
             options: [
               "They cover the same material at different reading levels",
-              "This one is the history — how we got here and why it differs abroad; the companion covers what your rights are on the job today",
+              "This one is the history, how we got here and why it differs abroad; the companion covers what your rights are on the job today",
               "The companion is about union leadership elections",
               "This course replaces the companion",
             ],
@@ -296,16 +296,16 @@ A note on evidence, since we are about to spend a course on a subject people arg
             ],
             correctIndex: 2,
             explanation:
-              "That rule gets its hardest test in the very next section, with the Haymarket bombing — a killing whose perpetrator was never established.",
+              "That rule gets its hardest test in the very next section, with the Haymarket bombing, a killing whose perpetrator was never established.",
             sourceLessonSlug: "the-four-questions",
           },
           {
             prompt: "Which question would you ask to figure out why some workers in a country have no union protection AT ALL, even though unions are legal there?",
             options: [
-              "Question 1 — who is allowed to organise?",
-              "Question 2 — who is excluded?",
-              "Question 3 — who bargains with whom?",
-              "Question 4 — what happens to you if you try?",
+              "Question 1, who is allowed to organise?",
+              "Question 2, who is excluded?",
+              "Question 3, who bargains with whom?",
+              "Question 4, what happens to you if you try?",
             ],
             correctIndex: 1,
             explanation:
@@ -319,12 +319,12 @@ A note on evidence, since we are about to spend a course on a subject people arg
     // ── Section 2 · America before the law protected you (1869–1914) ──────────
     {
       slug: "knights-of-labor-and-the-afl",
-      section: "Section 2 · America before the law protected you (1869–1914)",
+      section: "Section 2 · America before the law protected you (1869-1914)",
       title: "4 · Two ideas about who a union is for: the Knights and the AFL",
       recallContent: [
         {
           prompt: "Which of the four questions asks whether the exclusion of a group of workers was an accident or a decision?",
-          answer: "Question 2 — who is excluded?",
+          answer: "Question 2, who is excluded?",
         },
         {
           prompt: "Why is bargaining LEVEL (company, sector, national) one of the four questions?",
@@ -332,15 +332,15 @@ A note on evidence, since we are about to spend a course on a subject people arg
             "Because it explains how a country with fewer union members than the US can have far more workers covered by union contracts.",
         },
       ],
-      body: `Before you can understand any American labor fight, you need to understand a fight *inside* the labor movement — about who a union is even for.
+      body: `Before you can understand any American labor fight, you need to understand a fight *inside* the labor movement, about who a union is even for.
 
-**The Knights of Labor** were founded in Philadelphia in 1869, originally as a secret society of garment cutters, and grew into something much stranger and more ambitious under Terence V. Powderly, who led them from 1879. Their answer to "who is a union for?" was: **almost everybody who works.** Skilled and unskilled. Factory hands and shopkeepers. They admitted women. They admitted Black workers, and by the mid-1880s tens of thousands of Black members had joined — remarkable for the era. At their 1886 peak, the Knights claimed on the order of 700,000 members (Library of Congress, n.d.-a).
+**The Knights of Labor** were founded in Philadelphia in 1869, originally as a secret society of garment cutters, and grew into something much stranger and more ambitious under Terence V. Powderly, who led them from 1879. Their answer to "who is a union for?" was: **almost everybody who works.** Skilled and unskilled. Factory hands and shopkeepers. They admitted women. They admitted Black workers, and by the mid-1880s tens of thousands of Black members had joined, remarkable for the era. At their 1886 peak, the Knights claimed on the order of 700,000 members (Library of Congress, n.d.-a).
 
 And they excluded Chinese workers.
 
-That is not a footnote. The Knights, and the broader white labor movement of the 1870s and 1880s, were among the loudest supporters of Chinese exclusion — the campaign that produced the **Chinese Exclusion Act of 1882**, the first US law to bar an entire nationality from immigrating (National Archives, n.d.). "Almost everybody who works" had a hard edge on it, and it was drawn by race. Hold that thought; you will see the same edge in Section 5, drawn against Black workers, by the very organization that replaced the Knights.
+That is not a footnote. The Knights, and the broader white labor movement of the 1870s and 1880s, were among the loudest supporters of Chinese exclusion, the campaign that produced the **Chinese Exclusion Act of 1882**, the first US law to bar an entire nationality from immigrating (National Archives, n.d.). "Almost everybody who works" had a hard edge on it, and it was drawn by race. Hold that thought; you will see the same edge in Section 5, drawn against Black workers, by the very organization that replaced the Knights.
 
-**The American Federation of Labor (AFL)** was founded in 1886 and led for most of its first four decades by Samuel Gompers. Its answer to "who is a union for?" was almost the opposite: **skilled workers, organized by craft.** Cigar makers with cigar makers, carpenters with carpenters. The AFL was not trying to remake society. Gompers' approach — later nicknamed "pure and simple unionism" — was to use the leverage skilled workers actually had to win concrete, immediate things: higher wages, shorter hours, better conditions. Not a new economic order. A better contract.
+**The American Federation of Labor (AFL)** was founded in 1886 and led for most of its first four decades by Samuel Gompers. Its answer to "who is a union for?" was almost the opposite: **skilled workers, organized by craft.** Cigar makers with cigar makers, carpenters with carpenters. The AFL was not trying to remake society. Gompers' approach, later nicknamed "pure and simple unionism", was to use the leverage skilled workers actually had to win concrete, immediate things: higher wages, shorter hours, better conditions. Not a new economic order. A better contract.
 
 The two strategies have real trade-offs, and both are still alive today:
 
@@ -349,18 +349,18 @@ The two strategies have real trade-offs, and both are still alive today:
 | Founded | 1869 | 1886 |
 | Who it organized | Skilled *and* unskilled, across trades | Skilled workers, by craft |
 | Goal | Broad social reform | Concrete gains: wages, hours, conditions |
-| Strength | Enormous potential numbers | Real leverage — skilled labor is hard to replace |
-| Weakness | Hard to hold together; collapsed fast | Left most workers — unskilled, Black, women, immigrant — outside |
+| Strength | Enormous potential numbers | Real leverage, skilled labor is hard to replace |
+| Weakness | Hard to hold together; collapsed fast | Left most workers, unskilled, Black, women, immigrant, outside |
 
 The Knights collapsed within a few years. The AFL lasted, and its craft model dominated American unionism until the 1930s. That victory has a cost that shows up all through this course: **the strategy that won was the one that organized the fewest people.**
 
-The AFL's most important early demand was the **eight-hour day**. In 1884 the Federation of Organized Trades and Labor Unions — the AFL's immediate predecessor — resolved that from **May 1, 1886**, eight hours would constitute a legal day's work, and called for strikes to make it real (Library of Congress, n.d.-b).
+The AFL's most important early demand was the **eight-hour day**. In 1884 the Federation of Organized Trades and Labor Unions, the AFL's immediate predecessor, resolved that from **May 1, 1886**, eight hours would constitute a legal day's work, and called for strikes to make it real (Library of Congress, n.d.-b).
 
 On May 1, 1886, hundreds of thousands of American workers walked out.
 
 Three days later, a bomb went off in Chicago.
 
-:::reveal What was the fundamental disagreement between the Knights of Labor and the AFL? ||| Who a union is for. The Knights tried to organize nearly all workers, skilled and unskilled, across trades, in service of broad social reform. The AFL organized skilled workers by craft and focused narrowly on wages, hours and conditions — leaving most workers outside.
+:::reveal What was the fundamental disagreement between the Knights of Labor and the AFL? ||| Who a union is for. The Knights tried to organize nearly all workers, skilled and unskilled, across trades, in service of broad social reform. The AFL organized skilled workers by craft and focused narrowly on wages, hours and conditions, leaving most workers outside.
 
 ## Sources
 - Library of Congress. (n.d.-a). *Knights of Labor*. Library of Congress Web Guides / Chronicling America. https://guides.loc.gov/chronicling-america-knights-of-labor
@@ -370,18 +370,18 @@ Three days later, a bomb went off in Chicago.
     },
     {
       slug: "haymarket-1886",
-      section: "Section 2 · America before the law protected you (1869–1914)",
+      section: "Section 2 · America before the law protected you (1869-1914)",
       title: "5 · Haymarket, 1886: a killing nobody was ever proved to have committed",
       recallContent: [
         {
           prompt: "Who did the Knights of Labor organize, and who did they exclude?",
           answer:
-            "They organized skilled and unskilled workers across trades, including women and tens of thousands of Black members — but they excluded Chinese workers and supported the Chinese Exclusion Act of 1882.",
+            "They organized skilled and unskilled workers across trades, including women and tens of thousands of Black members, but they excluded Chinese workers and supported the Chinese Exclusion Act of 1882.",
         },
         {
           prompt: "What was the AFL's strategy, and what did it cost?",
           answer:
-            "Craft unionism for skilled workers, focused on concrete gains in wages, hours and conditions. It won and lasted — but it left most workers, including unskilled, Black, women and many immigrant workers, outside the union movement.",
+            "Craft unionism for skilled workers, focused on concrete gains in wages, hours and conditions. It won and lasted, but it left most workers, including unskilled, Black, women and many immigrant workers, outside the union movement.",
         },
       ],
       body: `This is the lesson where this course does something you should demand of every history you read: **it refuses to tell you something it does not know.**
@@ -390,11 +390,11 @@ Three days later, a bomb went off in Chicago.
 
 The eight-hour strikes began on May 1, 1886. On **May 3**, police fired on strikers outside the McCormick Harvesting Machine Company in Chicago and killed several of them. Anarchist organizers called a protest rally for the next evening at **Haymarket Square**.
 
-On the evening of **May 4, 1886**, the rally was small and, by the account of the mayor of Chicago — who attended and then went home — peaceable. As it was breaking up in the rain, a large body of police advanced to disperse the remaining crowd. **Someone threw a bomb into the police ranks.** Officer Mathias Degan was killed. In the gunfire that followed, more police died — seven officers in total — and an unknown number of civilians were killed and wounded. Some of the police casualties are believed to have been caused by police fire in the chaos (Library of Congress, n.d.; Chicago Historical Society & Northwestern University, n.d.).
+On the evening of **May 4, 1886**, the rally was small and, by the account of the mayor of Chicago, who attended and then went home, peaceable. As it was breaking up in the rain, a large body of police advanced to disperse the remaining crowd. **Someone threw a bomb into the police ranks.** Officer Mathias Degan was killed. In the gunfire that followed, more police died, seven officers in total, and an unknown number of civilians were killed and wounded. Some of the police casualties are believed to have been caused by police fire in the chaos (Library of Congress, n.d.; Chicago Historical Society & Northwestern University, n.d.).
 
-Eight anarchists were put on trial for murder. Seven were sentenced to death and one, Oscar Neebe, to fifteen years. On **November 11, 1887**, four men — August Spies, Albert Parsons, Adolph Fischer and George Engel — were hanged. Louis Lingg died by suicide in his cell the day before. Two sentences were commuted to life imprisonment. On **June 26, 1893**, Illinois Governor John Peter Altgeld **pardoned** the three surviving prisoners — Samuel Fielden, Oscar Neebe and Michael Schwab — and issued a written pardon message attacking the fairness of the trial itself. It ended his political career.
+Eight anarchists were put on trial for murder. Seven were sentenced to death and one, Oscar Neebe, to fifteen years. On **November 11, 1887**, four men, August Spies, Albert Parsons, Adolph Fischer and George Engel, were hanged. Louis Lingg died by suicide in his cell the day before. Two sentences were commuted to life imprisonment. On **June 26, 1893**, Illinois Governor John Peter Altgeld **pardoned** the three surviving prisoners, Samuel Fielden, Oscar Neebe and Michael Schwab, and issued a written pardon message attacking the fairness of the trial itself. It ended his political career.
 
-**What IS in dispute — and was never resolved.**
+**What IS in dispute, and was never resolved.**
 
 **Nobody knows who threw the bomb.** The state never identified the bomb-thrower. It never produced the bomb-thrower. It never claimed to have produced the bomb-thrower.
 
@@ -408,7 +408,7 @@ Be suspicious of any source that does tell you, on either side. You will meet co
 
 Four men were executed for a killing the state never proved any of them committed or ordered, in a proceeding a sitting governor later condemned in writing. The Chicago police, in the raids that followed, arrested and beat labor organizers across the city. The eight-hour movement collapsed. The Knights of Labor, wrongly associated with the anarchists in the public mind, went into a decline they never recovered from.
 
-And **May 1** became **International Workers' Day** across much of the world, in memory of Haymarket — which is why most countries mark labor's holiday on May 1 and the United States, which is where it happened, does not.
+And **May 1** became **International Workers' Day** across much of the world, in memory of Haymarket, which is why most countries mark labor's holiday on May 1 and the United States, which is where it happened, does not.
 
 > **A word on that last fact**, because it is a favourite of confident people. You will hear that an American president deliberately moved the labor holiday to September to bury the memory of Haymarket. Be careful. The **September** date came from union parades and state holiday laws in the 1880s — Oregon passed the first state Labor Day law in 1887 — well before Congress made the first Monday in September a federal holiday on **June 28, 1894** (U.S. Department of Labor, n.d.). The *motives* of the men who voted for it are a matter of interpretation. The *dates* are not. Keep those apart.
 
@@ -422,7 +422,7 @@ And **May 1** became **International Workers' Day** across much of the world, in
     },
     {
       slug: "homestead-pullman-and-the-injunction",
-      section: "Section 2 · America before the law protected you (1869–1914)",
+      section: "Section 2 · America before the law protected you (1869-1914)",
       title: "6 · Homestead, Pullman, and the weapon that actually broke strikes",
       recallContent: [
         {
@@ -433,28 +433,28 @@ And **May 1** became **International Workers' Day** across much of the world, in
         {
           prompt: "What did Governor Altgeld do in 1893, and why does it matter?",
           answer:
-            "He pardoned the three surviving Haymarket prisoners and issued a written message attacking the fairness of the trial — a sitting governor's judgment that the proceeding itself was unjust. It ended his political career.",
+            "He pardoned the three surviving Haymarket prisoners and issued a written message attacking the fairness of the trial, a sitting governor's judgment that the proceeding itself was unjust. It ended his political career.",
         },
       ],
       body: `Two strikes, six years apart, taught American workers the same lesson from two directions.
 
-**Homestead, 1892 — losing to private force.**
+**Homestead, 1892, losing to private force.**
 
-Andrew Carnegie's steel works at Homestead, Pennsylvania was one of the few big mills where a union — the Amalgamated Association of Iron and Steel Workers — had real strength. Carnegie left for Scotland and handed the plant to Henry Clay Frick with a clear mandate. Frick cut wages, and when the union refused, he locked the workers out and ringed the plant with a barbed-wire fence.
+Andrew Carnegie's steel works at Homestead, Pennsylvania was one of the few big mills where a union, the Amalgamated Association of Iron and Steel Workers, had real strength. Carnegie left for Scotland and handed the plant to Henry Clay Frick with a clear mandate. Frick cut wages, and when the union refused, he locked the workers out and ringed the plant with a barbed-wire fence.
 
-In the dark of **July 6, 1892**, roughly 300 armed **Pinkerton** agents — a *private* detective force, hired by the company — came up the Monongahela River on barges to retake the plant. The town was waiting. A gun battle went on for most of a day. **Seven workers and three Pinkertons were killed** (Library of Congress, n.d.). The workers won the battle: the Pinkertons surrendered.
+In the dark of **July 6, 1892**, roughly 300 armed **Pinkerton** agents, a *private* detective force, hired by the company, came up the Monongahela River on barges to retake the plant. The town was waiting. A gun battle went on for most of a day. **Seven workers and three Pinkertons were killed** (Library of Congress, n.d.). The workers won the battle: the Pinkertons surrendered.
 
 Then the Governor of Pennsylvania sent roughly 8,500 state militia, the plant reopened with replacement workers, and the union was destroyed. Frick said the company would never again deal with the Amalgamated Association, and it did not. **Steel in America stayed effectively non-union for the next forty years.**
 
-**Pullman, 1894 — losing to the courts.**
+**Pullman, 1894, losing to the courts.**
 
-George Pullman built railcars outside Chicago, in a company town he also owned, where his workers rented his houses and bought from his stores. In the depression of 1893 he cut wages by about 25% — and did not cut the rents (Britannica, n.d.). Workers struck on May 11, 1894.
+George Pullman built railcars outside Chicago, in a company town he also owned, where his workers rented his houses and bought from his stores. In the depression of 1893 he cut wages by about 25%, and did not cut the rents (Britannica, n.d.). Workers struck on May 11, 1894.
 
 The **American Railway Union**, led by **Eugene V. Debs**, backed them with a boycott: from late June 1894, ARU members refused to handle any train carrying a Pullman car. It was enormously effective. Rail traffic across the country stopped.
 
 And here is the part to remember. The strike was not broken by Pinkertons. It was broken by a **court order**.
 
-US Attorney General Richard Olney went to federal court and obtained an **injunction** — a judge's order — against Debs and the ARU, forbidding them from doing essentially anything to continue the boycott. The legal hooks were that the boycott obstructed the US mail and restrained interstate commerce under the Sherman Antitrust Act, a law written to control monopolies. President Cleveland sent federal troops to Chicago to enforce it. Debs kept going, was jailed for **contempt of court** — not for any crime of violence — and in **In re Debs, 158 U.S. 564 (1895)**, the Supreme Court unanimously upheld the government's power to get that injunction and jail him for defying it (Federal Judicial Center, n.d.).
+US Attorney General Richard Olney went to federal court and obtained an **injunction**, a judge's order, against Debs and the ARU, forbidding them from doing essentially anything to continue the boycott. The legal hooks were that the boycott obstructed the US mail and restrained interstate commerce under the Sherman Antitrust Act, a law written to control monopolies. President Cleveland sent federal troops to Chicago to enforce it. Debs kept going, was jailed for **contempt of court**, not for any crime of violence, and in **In re Debs, 158 U.S. 564 (1895)**, the Supreme Court unanimously upheld the government's power to get that injunction and jail him for defying it (Federal Judicial Center, n.d.).
 
 Two days into the boycott, on **June 28, 1894**, Congress made Labor Day a federal holiday (U.S. Department of Labor, n.d.). Weeks later the strike was crushed.
 
@@ -465,11 +465,11 @@ For the next four decades, the **labor injunction** was the most effective anti-
 - **Unions could be treated as illegal restraints of trade.** In **Loewe v. Lawlor, 208 U.S. 274 (1908)** — the "Danbury Hatters" case — the Supreme Court held the **Sherman Antitrust Act** applied to a union boycott, and individual union members were held personally liable for damages.
 - **You could be made to promise not to join.** A **"yellow-dog contract"** was a condition of hire: sign a paper agreeing you would not join a union. Courts enforced them.
 
-It took an act of Congress to blunt this. The **Norris-LaGuardia Act of 1932** sharply limited federal courts' power to issue injunctions in labor disputes and made yellow-dog contracts unenforceable in federal court (29 U.S.C. §§ 101–115).
+It took an act of Congress to blunt this. The **Norris-LaGuardia Act of 1932** sharply limited federal courts' power to issue injunctions in labor disputes and made yellow-dog contracts unenforceable in federal court (29 U.S.C. §§ 101-115).
 
-Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers a **right** to organize. Norris-LaGuardia just told the federal courts to stop helping the other side. The right itself arrives in the next section — and it arrives with a hole cut in it.
+Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers a **right** to organize. Norris-LaGuardia just told the federal courts to stop helping the other side. The right itself arrives in the next section, and it arrives with a hole cut in it.
 
-:::reveal What actually broke the Pullman strike of 1894, and why is that significant? ||| A federal court injunction. Attorney General Olney obtained a court order against Debs and the American Railway Union; Debs was jailed for contempt of court, and In re Debs (1895) upheld it. For the next forty years the labor injunction — not private guards — was the most effective anti-union weapon in America.
+:::reveal What actually broke the Pullman strike of 1894, and why is that significant? ||| A federal court injunction. Attorney General Olney obtained a court order against Debs and the American Railway Union; Debs was jailed for contempt of court, and In re Debs (1895) upheld it. For the next forty years the labor injunction, not private guards, was the most effective anti-union weapon in America.
 
 ## Sources
 - Library of Congress. (n.d.). *1892 Homestead Strike*. This Month in Business History. https://guides.loc.gov/this-month-in-business-history/july/1892-homestead-strike
@@ -482,7 +482,7 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
     },
     {
       slug: "section-2-quiz",
-      section: "Section 2 · America before the law protected you (1869–1914)",
+      section: "Section 2 · America before the law protected you (1869-1914)",
       title: "7 · Check yourself: before the law protected you",
       quiz: {
         passingScore: 70,
@@ -493,13 +493,13 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             prompt: "What was the Knights of Labor's answer to \"who is a union for?\"",
             options: [
               "Only skilled craftsmen",
-              "Almost everybody who works — skilled and unskilled, across trades",
+              "Almost everybody who works, skilled and unskilled, across trades",
               "Only workers in a single company",
               "Only union officers",
             ],
             correctIndex: 1,
             explanation:
-              "The Knights organized broadly across skill lines, admitted women, and had tens of thousands of Black members — while excluding Chinese workers.",
+              "The Knights organized broadly across skill lines, admitted women, and had tens of thousands of Black members, while excluding Chinese workers.",
             sourceLessonSlug: "knights-of-labor-and-the-afl",
           },
           {
@@ -507,14 +507,14 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             options: ["Irish workers", "Chinese workers", "Women", "Coal miners"],
             correctIndex: 1,
             explanation:
-              "White labor organizations were among the loudest supporters of Chinese exclusion, the campaign behind the Chinese Exclusion Act of 1882 — the first US law barring an entire nationality from immigrating.",
+              "White labor organizations were among the loudest supporters of Chinese exclusion, the campaign behind the Chinese Exclusion Act of 1882, the first US law barring an entire nationality from immigrating.",
             sourceLessonSlug: "knights-of-labor-and-the-afl",
           },
           {
             prompt: "The AFL, founded in 1886 and led by Samuel Gompers, organized workers primarily:",
             options: [
-              "By craft — skilled workers grouped by trade",
-              "By industry — everyone in a factory in one union",
+              "By craft, skilled workers grouped by trade",
+              "By industry, everyone in a factory in one union",
               "By political party",
               "By state of residence",
             ],
@@ -527,13 +527,13 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             prompt: "What does the course say was the cost of the AFL's strategy winning?",
             options: [
               "It made unions illegal",
-              "The strategy that won was the one that organized the FEWEST people — leaving unskilled, Black, women and many immigrant workers outside",
+              "The strategy that won was the one that organized the FEWEST people, leaving unskilled, Black, women and many immigrant workers outside",
               "It forced all unions to merge",
               "It ended collective bargaining in the US",
             ],
             correctIndex: 1,
             explanation:
-              "Craft unionism dominated American labor until the 1930s. Its leverage was real, and so was its narrowness — which is why the CIO had to be invented.",
+              "Craft unionism dominated American labor until the 1930s. Its leverage was real, and so was its narrowness, which is why the CIO had to be invented.",
             sourceLessonSlug: "knights-of-labor-and-the-afl",
           },
           {
@@ -541,7 +541,7 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             options: ["The right to vote", "The eight-hour day", "A federal minimum wage", "An end to child labor"],
             correctIndex: 1,
             explanation:
-              "The eight-hour movement had set May 1, 1886 as the date from which eight hours would constitute a legal day's work — and called strikes to make it real.",
+              "The eight-hour movement had set May 1, 1886 as the date from which eight hours would constitute a legal day's work, and called strikes to make it real.",
             sourceLessonSlug: "knights-of-labor-and-the-afl",
           },
           {
@@ -549,19 +549,19 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             options: [
               "August Spies, who was later hanged for it",
               "A Chicago police agent, as historians have proven",
-              "It was never established — the state never identified or produced the bomb-thrower",
+              "It was never established, the state never identified or produced the bomb-thrower",
               "An unnamed Pinkerton detective, per the trial record",
             ],
             correctIndex: 2,
             explanation:
-              "This is the point of the lesson. The record does not settle it. Confident claims in either direction go beyond the evidence — watch which version a given author needs to be true.",
+              "This is the point of the lesson. The record does not settle it. Confident claims in either direction go beyond the evidence, watch which version a given author needs to be true.",
             sourceLessonSlug: "haymarket-1886",
           },
           {
             prompt: "On what legal theory were the eight Haymarket defendants convicted of murder?",
             options: [
               "Eyewitness identification of the bomb-thrower",
-              "Conspiracy — that their speeches and writings incited an unknown person to throw the bomb",
+              "Conspiracy, that their speeches and writings incited an unknown person to throw the bomb",
               "Their fingerprints on the bomb casing",
               "A confession from one of them",
             ],
@@ -586,27 +586,27 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
           {
             prompt: "Why do most countries mark labor's holiday on May 1 while the United States does not?",
             options: [
-              "May 1 became International Workers' Day in memory of Haymarket — which happened in the US",
+              "May 1 became International Workers' Day in memory of Haymarket, which happened in the US",
               "May 1 is a European agricultural festival unrelated to labor",
               "The US never had a labor holiday",
               "The ILO ordered the US to use September",
             ],
             correctIndex: 0,
             explanation:
-              "The world commemorates a Chicago event the US itself marks in September. The dates are documented; the motives of the men who chose September are interpretation — keep those apart.",
+              "The world commemorates a Chicago event the US itself marks in September. The dates are documented; the motives of the men who chose September are interpretation, keep those apart.",
             sourceLessonSlug: "haymarket-1886",
           },
           {
             prompt: "At Homestead in 1892, who came up the river on barges to retake Carnegie's plant?",
             options: [
               "Federal troops",
-              "Roughly 300 armed Pinkerton agents — a PRIVATE detective force hired by the company",
+              "Roughly 300 armed Pinkerton agents, a PRIVATE detective force hired by the company",
               "The Pennsylvania state police",
               "Members of a rival union",
             ],
             correctIndex: 1,
             explanation:
-              "Seven workers and three Pinkertons were killed. The workers actually won that battle — then the state militia arrived and the union was destroyed anyway.",
+              "Seven workers and three Pinkertons were killed. The workers actually won that battle, then the state militia arrived and the union was destroyed anyway.",
             sourceLessonSlug: "homestead-pullman-and-the-injunction",
           },
           {
@@ -632,14 +632,14 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             ],
             correctIndex: 1,
             explanation:
-              "Attorney General Olney got a court order; Debs was jailed for contempt — not for violence. In re Debs (1895) upheld the whole apparatus unanimously.",
+              "Attorney General Olney got a court order; Debs was jailed for contempt, not for violence. In re Debs (1895) upheld the whole apparatus unanimously.",
             sourceLessonSlug: "homestead-pullman-and-the-injunction",
           },
           {
             prompt: "In Loewe v. Lawlor (1908), the \"Danbury Hatters\" case, the Supreme Court held that:",
             options: [
               "Unions have a constitutional right to strike",
-              "The Sherman Antitrust Act — a law aimed at monopolies — applied to a union boycott, and individual members could be personally liable",
+              "The Sherman Antitrust Act, a law aimed at monopolies, applied to a union boycott, and individual members could be personally liable",
               "Yellow-dog contracts were unconstitutional",
               "Federal courts could not issue labor injunctions",
             ],
@@ -662,16 +662,16 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             sourceLessonSlug: "homestead-pullman-and-the-injunction",
           },
           {
-            prompt: "What did the Norris-LaGuardia Act of 1932 do — and what did it NOT do?",
+            prompt: "What did the Norris-LaGuardia Act of 1932 do, and what did it NOT do?",
             options: [
               "It gave workers a legal right to organize and required employers to bargain",
-              "It limited federal courts' power to issue labor injunctions and made yellow-dog contracts unenforceable — but it did NOT give workers a right to organize",
+              "It limited federal courts' power to issue labor injunctions and made yellow-dog contracts unenforceable, but it did NOT give workers a right to organize",
               "It created the National Labor Relations Board",
               "It banned strikes in interstate commerce",
             ],
             correctIndex: 1,
             explanation:
-              "Norris-LaGuardia told the federal courts to stop helping the other side. It did not create a right. That arrives in 1935 — with a hole cut in it.",
+              "Norris-LaGuardia told the federal courts to stop helping the other side. It did not create a right. That arrives in 1935, with a hole cut in it.",
             sourceLessonSlug: "homestead-pullman-and-the-injunction",
           },
         ],
@@ -681,13 +681,13 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
     // ── Section 3 · Fire, law, and the New Deal (1911–1938) ───────────────────
     {
       slug: "triangle-shirtwaist-1911",
-      section: "Section 3 · Fire, law, and the New Deal (1911–1938)",
-      title: "8 · The Triangle fire, 1911 — and what it actually changed",
+      section: "Section 3 · Fire, law, and the New Deal (1911-1938)",
+      title: "8 · The Triangle fire, 1911, and what it actually changed",
       recallContent: [
         {
           prompt: "What was a labor injunction, and why was it so effective against strikes?",
           answer:
-            "A judge's order — often issued without a trial and sometimes without hearing the union at all — forbidding a strike or boycott. Defy it and you went to jail for contempt, as Eugene Debs did in 1894.",
+            "A judge's order, often issued without a trial and sometimes without hearing the union at all, forbidding a strike or boycott. Defy it and you went to jail for contempt, as Eugene Debs did in 1894.",
         },
         {
           prompt: "What did the Norris-LaGuardia Act of 1932 do?",
@@ -695,25 +695,25 @@ Notice what has *not* happened yet, in 1932. Nothing in this lesson gave workers
             "It sharply limited federal courts' power to issue injunctions in labor disputes and made yellow-dog contracts unenforceable in federal court. It did NOT give workers any right to organize.",
         },
       ],
-      body: `On the afternoon of **Saturday, March 25, 1911**, a fire started on the eighth floor of the Triangle Waist Company, a garment factory occupying the top three floors of a building just off Washington Square in New York City. **One hundred and forty-six workers died** — most of them young immigrant women and girls, many Italian and Eastern European Jewish, some as young as fourteen.
+      body: `On the afternoon of **Saturday, March 25, 1911**, a fire started on the eighth floor of the Triangle Waist Company, a garment factory occupying the top three floors of a building just off Washington Square in New York City. **One hundred and forty-six workers died**, most of them young immigrant women and girls, many Italian and Eastern European Jewish, some as young as fourteen.
 
-They died because of the building, not the fire. The stairway door to Washington Place was locked — a common practice, to stop workers stealing and to funnel them past an inspection point at the end of a shift. The single fire escape buckled and collapsed. The fire department's ladders reached only to about the sixth floor. Workers who could not get out jumped from the ninth-floor windows, in view of a crowd on the street.
+They died because of the building, not the fire. The stairway door to Washington Place was locked, a common practice, to stop workers stealing and to funnel them past an inspection point at the end of a shift. The single fire escape buckled and collapsed. The fire department's ladders reached only to about the sixth floor. Workers who could not get out jumped from the ninth-floor windows, in view of a crowd on the street.
 
 **Three things about this story that get left out, and shouldn't be.**
 
-**One: the workers had already asked.** In 1909–1910, tens of thousands of New York shirtwaist makers — overwhelmingly young immigrant women — walked out in a strike remembered as the **Uprising of the 20,000**, demanding better pay, shorter hours, *and safety conditions*. Many shops settled. **Triangle was one of the shops that refused.** The women who died had already tried to fix this the peaceful, organized, legal way, and had been beaten.
+**One: the workers had already asked.** In 1909-1910, tens of thousands of New York shirtwaist makers, overwhelmingly young immigrant women, walked out in a strike remembered as the **Uprising of the 20,000**, demanding better pay, shorter hours, *and safety conditions*. Many shops settled. **Triangle was one of the shops that refused.** The women who died had already tried to fix this the peaceful, organized, legal way, and had been beaten.
 
-**Two: nobody went to prison.** The owners, Max Blanck and Isaac Harris, were tried for manslaughter and, on **December 27, 1911, acquitted** — the jury was not satisfied it had been proved they *knew* the door was locked. A civil settlement years later paid the families a token sum per life.
+**Two: nobody went to prison.** The owners, Max Blanck and Isaac Harris, were tried for manslaughter and, on **December 27, 1911, acquitted**, the jury was not satisfied it had been proved they *knew* the door was locked. A civil settlement years later paid the families a token sum per life.
 
 **Three: what changed was state law, not federal law, and it took politics.** The fire produced the **New York State Factory Investigating Commission** (1911), which spent years inspecting workplaces and produced dozens of new **New York State** laws on fire safety, machinery guarding, and hours for women and children.
 
 Look at who ran that commission. Its leaders were state senator **Robert F. Wagner** and assemblyman **Alfred E. Smith**. One of its investigators was a young reformer named **Frances Perkins**, who had watched the fire from the street.
 
-Twenty-four years later, Robert Wagner would be the United States Senator who wrote the **National Labor Relations Act**. Frances Perkins would be Franklin Roosevelt's **Secretary of Labor** — the first woman in a US Cabinet — and one of the architects of Social Security and the Fair Labor Standards Act.
+Twenty-four years later, Robert Wagner would be the United States Senator who wrote the **National Labor Relations Act**. Frances Perkins would be Franklin Roosevelt's **Secretary of Labor**, the first woman in a US Cabinet, and one of the architects of Social Security and the Fair Labor Standards Act.
 
 So the honest version of "the Triangle fire changed America" is not that horror alone produced reform. It is that **146 deaths radicalized a specific set of politicians who were standing there, and those people were still in the room twenty-four years later when the law got written.** Outrage does not become law by itself. It becomes law when it lands on someone who later holds a pen.
 
-:::reveal What did the Triangle fire actually change, immediately — and how did it eventually reach federal law? ||| Immediately, it produced the New York State Factory Investigating Commission and dozens of NEW YORK STATE laws on fire safety, machinery and hours — not federal law. It reached federal law through people: the commission's leaders included Robert F. Wagner, who later wrote the National Labor Relations Act, and its investigators included Frances Perkins, who became FDR's Secretary of Labor.
+:::reveal What did the Triangle fire actually change, immediately, and how did it eventually reach federal law? ||| Immediately, it produced the New York State Factory Investigating Commission and dozens of NEW YORK STATE laws on fire safety, machinery and hours, not federal law. It reached federal law through people: the commission's leaders included Robert F. Wagner, who later wrote the National Labor Relations Act, and its investigators included Frances Perkins, who became FDR's Secretary of Labor.
 
 ## Sources
 - Cornell University ILR School, Kheel Center. (n.d.). *The 1911 Triangle Factory Fire*. https://trianglefire.ilr.cornell.edu/
@@ -723,7 +723,7 @@ So the honest version of "the Triangle fire changed America" is not that horror 
     },
     {
       slug: "the-wagner-act-1935",
-      section: "Section 3 · Fire, law, and the New Deal (1911–1938)",
+      section: "Section 3 · Fire, law, and the New Deal (1911-1938)",
       title: "9 · 1935: the year organizing became a right",
       recallContent: [
         {
@@ -739,30 +739,30 @@ So the honest version of "the Triangle fire changed America" is not that horror 
       ],
       body: `Everything you have read so far happened in a country where organizing a union was **not a right**. It was, at best, something the law had stopped actively punishing.
 
-That changed on **July 5, 1935**, when President Roosevelt signed the **National Labor Relations Act** — the **Wagner Act**, after the senator from the last lesson.
+That changed on **July 5, 1935**, when President Roosevelt signed the **National Labor Relations Act**, the **Wagner Act**, after the senator from the last lesson.
 
 **What Section 7 says.** This is the sentence the rest of American labor law hangs on:
 
 > "Employees shall have the right to self-organization, to form, join, or assist labor organizations, to bargain collectively through representatives of their own choosing, and to engage in other concerted activities for the purpose of collective bargaining or other mutual aid or protection..." (National Labor Relations Act, 29 U.S.C. § 157)
 
-Read the last part again: **"other concerted activities... for mutual aid or protection."** That phrase reaches beyond unions. Two coworkers talking about their pay are engaged in concerted activity. It is the legal root of a lot of what your companion course, *Know Your Rights at Work*, teaches about what you may do on the job **today** — which is where you should go for how it applies to you now.
+Read the last part again: **"other concerted activities... for mutual aid or protection."** That phrase reaches beyond unions. Two coworkers talking about their pay are engaged in concerted activity. It is the legal root of a lot of what your companion course, *Know Your Rights at Work*, teaches about what you may do on the job **today**, which is where you should go for how it applies to you now.
 
 **What the Act actually did, in plain terms:**
 
 1. **It made organizing a legal right**, not merely a tolerated activity.
-2. **It made it an "unfair labor practice" for an employer to interfere** — to fire you for organizing, to threaten you, to run a company-controlled fake union, to refuse to bargain with a union your coworkers chose (29 U.S.C. § 158(a)).
-3. **It created the National Labor Relations Board (NLRB)** — a federal agency to run union elections and enforce those rules. The government now had a referee, and a *process* replaced the street.
-4. **It required the employer to bargain** with the union a majority of workers chose. Not to agree — to bargain, in good faith.
+2. **It made it an "unfair labor practice" for an employer to interfere**, to fire you for organizing, to threaten you, to run a company-controlled fake union, to refuse to bargain with a union your coworkers chose (29 U.S.C. § 158(a)).
+3. **It created the National Labor Relations Board (NLRB)**, a federal agency to run union elections and enforce those rules. The government now had a referee, and a *process* replaced the street.
+4. **It required the employer to bargain** with the union a majority of workers chose. Not to agree, to bargain, in good faith.
 
 **Did it survive?** Nobody was sure. The Supreme Court had been striking down New Deal laws. In **NLRB v. Jones & Laughlin Steel Corp., 301 U.S. 1 (1937)**, the Court upheld the Wagner Act, holding that Congress could regulate labor relations in manufacturing under its power over interstate commerce (Constitution Annotated, n.d.).
 
-The effect was fast and enormous. Union membership in the United States roughly tripled between the mid-1930s and the mid-1940s. The strikes and organizing drives of that decade — you will meet them in Section 4 — were possible because, for the first time, **a worker who got fired for organizing had somewhere to go.**
+The effect was fast and enormous. Union membership in the United States roughly tripled between the mid-1930s and the mid-1940s. The strikes and organizing drives of that decade, you will meet them in Section 4, were possible because, for the first time, **a worker who got fired for organizing had somewhere to go.**
 
 Which raises the obvious question, and it is the question the next lesson exists to answer:
 
 **Everyone?**
 
-:::reveal What is the single most important thing the Wagner Act (1935) did that no earlier US law had done? ||| It made organizing an affirmative legal RIGHT — Section 7 — and backed it with a federal agency (the NLRB) that could run union elections and punish employers who interfered. Earlier laws had at most stopped the courts from helping the employer; none had created a right.
+:::reveal What is the single most important thing the Wagner Act (1935) did that no earlier US law had done? ||| It made organizing an affirmative legal RIGHT, Section 7, and backed it with a federal agency (the NLRB) that could run union elections and punish employers who interfered. Earlier laws had at most stopped the courts from helping the employer; none had created a right.
 
 ## Sources
 - National Labor Relations Act, 29 U.S.C. §§ 151–169 (1935). Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?path=/prelim@title29/chapter7/subchapter2&edition=prelim
@@ -772,7 +772,7 @@ Which raises the obvious question, and it is the question the next lesson exists
     },
     {
       slug: "who-the-wagner-act-left-out",
-      section: "Section 3 · Fire, law, and the New Deal (1911–1938)",
+      section: "Section 3 · Fire, law, and the New Deal (1911-1938)",
       title: "10 · The hole in the law: who the Wagner Act left out",
       recallContent: [
         {
@@ -785,21 +785,21 @@ Which raises the obvious question, and it is the question the next lesson exists
           answer: "NLRB v. Jones & Laughlin Steel Corp., 301 U.S. 1 (1937).",
         },
       ],
-      body: `Section 7 gives rights to "**employees**." So the whole Act turns on one definition — and the definition has a list of people it says are not employees.
+      body: `Section 7 gives rights to "**employees**." So the whole Act turns on one definition, and the definition has a list of people it says are not employees.
 
 Here is the operative text. It is still the law today, and it has never been amended on this point:
 
 > "The term 'employee' shall include any employee... **but shall not include any individual employed as an agricultural laborer, or in the domestic service of any family or person at his home**, or any individual employed by his parent or spouse, or any individual having the status of an independent contractor, or any individual employed as a supervisor, or any individual employed by an employer subject to the Railway Labor Act..." (National Labor Relations Act, 29 U.S.C. § 152(3))
 
-Farm workers. Domestic workers — housekeepers, cooks, nannies, care workers in the home.
+Farm workers. Domestic workers, housekeepers, cooks, nannies, care workers in the home.
 
 Cut out. Not by an oversight. **By a clause.**
 
 **Why this is not a technicality.**
 
-In the 1930s, agricultural and domestic labour were the occupations in which Black Americans — the great majority of whom still lived in the rural South — were overwhelmingly concentrated. To write "not agricultural laborers, not domestic servants" into a statute in 1935 was to write a very large share of Black workers out of the country's central labor law without ever using a racial word. Mexican and Mexican-American farm workers in the Southwest were removed by the same clause.
+In the 1930s, agricultural and domestic labour were the occupations in which Black Americans, the great majority of whom still lived in the rural South, were overwhelmingly concentrated. To write "not agricultural laborers, not domestic servants" into a statute in 1935 was to write a very large share of Black workers out of the country's central labor law without ever using a racial word. Mexican and Mexican-American farm workers in the Southwest were removed by the same clause.
 
-The same exclusions appear in the **Social Security Act of 1935** and, in a different form, the **Fair Labor Standards Act of 1938** — the minimum-wage and overtime law. It is a pattern, not a coincidence.
+The same exclusions appear in the **Social Security Act of 1935** and, in a different form, the **Fair Labor Standards Act of 1938**, the minimum-wage and overtime law. It is a pattern, not a coincidence.
 
 **Now: how sure can we be about *why*?** This is where the course makes you do the harder thing.
 
@@ -809,15 +809,15 @@ The same exclusions appear in the **Social Security Act of 1935** and, in a diff
 
 **The consequence: organizing outside the law.**
 
-Because farm workers had no NLRA rights, they had no NLRB election, no protection from being fired for organizing, and no legal duty on the grower to bargain. So the great farmworker organizing of the 1960s — the grape strike and boycott led by the United Farm Workers, Cesar Chavez and Dolores Huerta — could not use the machinery every factory worker had. It had to be built out of strikes, marches, fasts, and a **consumer boycott** that reached shoppers in supermarkets thousands of miles away. That was not a stylistic choice. **It was a workaround for a legal exclusion**, and it is the direct reason farmworker organizing looks so different from auto or steel organizing.
+Because farm workers had no NLRA rights, they had no NLRB election, no protection from being fired for organizing, and no legal duty on the grower to bargain. So the great farmworker organizing of the 1960s, the grape strike and boycott led by the United Farm Workers, Cesar Chavez and Dolores Huerta, could not use the machinery every factory worker had. It had to be built out of strikes, marches, fasts, and a **consumer boycott** that reached shoppers in supermarkets thousands of miles away. That was not a stylistic choice. **It was a workaround for a legal exclusion**, and it is the direct reason farmworker organizing looks so different from auto or steel organizing.
 
-It eventually produced a law — a **state** one. California's **Agricultural Labor Relations Act of 1975** gave farm workers in that state the collective-bargaining rights the federal law had denied them for forty years. Most states still have no equivalent. **The federal exclusion is still there.**
+It eventually produced a law, a **state** one. California's **Agricultural Labor Relations Act of 1975** gave farm workers in that state the collective-bargaining rights the federal law had denied them for forty years. Most states still have no equivalent. **The federal exclusion is still there.**
 
 Domestic workers took even longer. New York passed the first state **Domestic Workers' Bill of Rights** in **2010**; a handful of other states have followed. The federal carve-out remains.
 
 > Dolores Huerta appears in your companion course, *Know Your Rights at Work*, among the people who changed what workers can do. Here, notice the structural point rather than the biography: **she had to invent a different kind of organizing because a clause in a 1935 statute said the ordinary kind did not apply to the people she represented.**
 
-:::reveal Which two large groups of workers does the NLRA's definition of "employee" (29 U.S.C. § 152(3)) explicitly exclude, and what is the practical consequence? ||| Agricultural laborers and domestic workers. They have no federally protected right to organize, no NLRB election, no protection from being fired for organizing, and no employer duty to bargain — which is why farmworker organizing had to be built outside the law, on strikes, marches and consumer boycotts.
+:::reveal Which two large groups of workers does the NLRA's definition of "employee" (29 U.S.C. § 152(3)) explicitly exclude, and what is the practical consequence? ||| Agricultural laborers and domestic workers. They have no federally protected right to organize, no NLRB election, no protection from being fired for organizing, and no employer duty to bargain, which is why farmworker organizing had to be built outside the law, on strikes, marches and consumer boycotts.
 
 ## Sources
 - National Labor Relations Act, 29 U.S.C. § 152(3) (1935). Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section152&edition=prelim
@@ -828,7 +828,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
     },
     {
       slug: "section-3-quiz",
-      section: "Section 3 · Fire, law, and the New Deal (1911–1938)",
+      section: "Section 3 · Fire, law, and the New Deal (1911-1938)",
       title: "11 · Check yourself: fire, law, and the hole in the law",
       quiz: {
         passingScore: 70,
@@ -840,14 +840,14 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             options: ["46", "146", "246", "1,146"],
             correctIndex: 1,
             explanation:
-              "146 workers died, most of them young immigrant women and girls. They died because of the building — a locked stairway door, a collapsing fire escape, ladders that reached only to about the sixth floor.",
+              "146 workers died, most of them young immigrant women and girls. They died because of the building, a locked stairway door, a collapsing fire escape, ladders that reached only to about the sixth floor.",
             sourceLessonSlug: "triangle-shirtwaist-1911",
           },
           {
             prompt: "What is the \"Uprising of the 20,000,\" and why does the course insist on mentioning it in the Triangle lesson?",
             options: [
               "A 1911 protest march held after the fire",
-              "A 1909–1910 shirtwaist workers' strike demanding pay, hours AND safety — which Triangle refused to settle",
+              "A 1909-1910 shirtwaist workers' strike demanding pay, hours AND safety, which Triangle refused to settle",
               "The union that organized the Homestead steelworkers",
               "A Chicago rally that preceded Haymarket",
             ],
@@ -879,7 +879,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             ],
             correctIndex: 1,
             explanation:
-              "State law, not federal. The federal consequences came later, through the PEOPLE the commission trained — Wagner and Perkins.",
+              "State law, not federal. The federal consequences came later, through the PEOPLE the commission trained, Wagner and Perkins.",
             sourceLessonSlug: "triangle-shirtwaist-1911",
           },
           {
@@ -905,7 +905,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             ],
             correctIndex: 0,
             explanation:
-              "That phrase reaches beyond formal unions — two coworkers discussing their pay are engaged in concerted activity. It is the root of much of what the companion course, *Know Your Rights at Work*, teaches.",
+              "That phrase reaches beyond formal unions, two coworkers discussing their pay are engaged in concerted activity. It is the root of much of what the companion course, *Know Your Rights at Work*, teaches.",
             sourceLessonSlug: "the-wagner-act-1935",
           },
           {
@@ -925,13 +925,13 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "Under the Wagner Act, an employer who bargains with a union chosen by a majority of workers must:",
             options: [
               "Agree to whatever the union demands",
-              "Bargain in good faith — but is not required to agree",
+              "Bargain in good faith, but is not required to agree",
               "Recognize the union only if the government approves each term",
               "Pay the union's legal costs",
             ],
             correctIndex: 1,
             explanation:
-              "The duty is to bargain, not to concede. This distinction matters enormously in practice — and it is why an employer can bargain lawfully and still never sign a contract.",
+              "The duty is to bargain, not to concede. This distinction matters enormously in practice, and it is why an employer can bargain lawfully and still never sign a contract.",
             sourceLessonSlug: "the-wagner-act-1935",
           },
           {
@@ -944,7 +944,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             ],
             correctIndex: 1,
             explanation:
-              "Nobody was sure the Act would survive — the Court had been striking down New Deal laws. It held.",
+              "Nobody was sure the Act would survive, the Court had been striking down New Deal laws. It held.",
             sourceLessonSlug: "the-wagner-act-1935",
           },
           {
@@ -964,13 +964,13 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             prompt: "Why does the exclusion of agricultural and domestic workers have a racial dimension, even though the statute uses no racial word?",
             options: [
               "It doesn't; the course overstates it",
-              "In the 1930s those were the occupations in which Black Americans — mostly still in the rural South — were overwhelmingly concentrated; Mexican-American farm workers were removed by the same clause",
+              "In the 1930s those were the occupations in which Black Americans, mostly still in the rural South, were overwhelmingly concentrated; Mexican-American farm workers were removed by the same clause",
               "Because the NLRB refused to register Black unions",
               "Because the Supreme Court later added a racial requirement",
             ],
             correctIndex: 1,
             explanation:
-              "A law can be racially devastating in effect without using a racial word. The same exclusions appear in the Social Security Act of 1935 — a pattern, not a coincidence.",
+              "A law can be racially devastating in effect without using a racial word. The same exclusions appear in the Social Security Act of 1935, a pattern, not a coincidence.",
             sourceLessonSlug: "who-the-wagner-act-left-out",
           },
           {
@@ -996,14 +996,14 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             ],
             correctIndex: 1,
             explanation:
-              "It was a workaround for a legal exclusion — the direct reason farmworker organizing looks so different from auto or steel organizing.",
+              "It was a workaround for a legal exclusion, the direct reason farmworker organizing looks so different from auto or steel organizing.",
             sourceLessonSlug: "who-the-wagner-act-left-out",
           },
           {
             prompt: "What was the California Agricultural Labor Relations Act of 1975?",
             options: [
               "A federal law extending NLRA rights to all farm workers",
-              "A STATE law giving California farm workers the collective-bargaining rights federal law had denied them — most states still have no equivalent",
+              "A STATE law giving California farm workers the collective-bargaining rights federal law had denied them, most states still have no equivalent",
               "A law banning farmworker unions in California",
               "A Supreme Court decision on farm labor",
             ],
@@ -1017,7 +1017,7 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
             options: ["California, 1975", "New York, 2010", "Illinois, 1935", "Texas, 1994"],
             correctIndex: 1,
             explanation:
-              "New York, in 2010 — seventy-five years after the federal carve-out. A handful of states have followed; the federal exclusion remains.",
+              "New York, in 2010, seventy-five years after the federal carve-out. A handful of states have followed; the federal exclusion remains.",
             sourceLessonSlug: "who-the-wagner-act-left-out",
           },
         ],
@@ -1044,21 +1044,21 @@ Domestic workers took even longer. New York passed the first state **Domestic Wo
 
 The AFL was still built on craft. Its unions organized the skilled electrician in an auto plant and had no interest in the 3,000 people on the line beside him. In an industry like auto or steel or rubber, that was useless: the assembly line is the point, and the assembly line is unskilled.
 
-In November 1935 — four months after the Wagner Act — a group inside the AFL led by **John L. Lewis** of the United Mine Workers set up the **Committee for Industrial Organization** to do the thing the AFL would not: organize **entire industries**, everyone in the plant, skilled and unskilled together. The AFL threw them out. In 1938 they reconstituted as an independent federation, the **Congress of Industrial Organizations (CIO)**.
+In November 1935, four months after the Wagner Act, a group inside the AFL led by **John L. Lewis** of the United Mine Workers set up the **Committee for Industrial Organization** to do the thing the AFL would not: organize **entire industries**, everyone in the plant, skilled and unskilled together. The AFL threw them out. In 1938 they reconstituted as an independent federation, the **Congress of Industrial Organizations (CIO)**.
 
-This is the Knights of Labor's old idea — organize everybody — except now it had the Wagner Act behind it. That combination is what made the late 1930s the most explosive decade in American labor history.
+This is the Knights of Labor's old idea, organize everybody, except now it had the Wagner Act behind it. That combination is what made the late 1930s the most explosive decade in American labor history.
 
-**Flint, 1936–37.** On December 30, 1936, autoworkers at General Motors plants in Flint, Michigan did something new: instead of walking out, they **sat down** — occupied the plants and stopped production from inside, where strikebreakers could not replace them. The **Flint sit-down strike** held for 44 days. On **February 11, 1937**, General Motors — then the largest manufacturing company in the world — recognized the **United Auto Workers**. Weeks later, **US Steel** signed with the CIO's steel committee without a strike at all, having watched what happened to GM (Library of Congress, n.d.).
+**Flint, 1936-37.** On December 30, 1936, autoworkers at General Motors plants in Flint, Michigan did something new: instead of walking out, they **sat down**, occupied the plants and stopped production from inside, where strikebreakers could not replace them. The **Flint sit-down strike** held for 44 days. On **February 11, 1937**, General Motors, then the largest manufacturing company in the world, recognized the **United Auto Workers**. Weeks later, **US Steel** signed with the CIO's steel committee without a strike at all, having watched what happened to GM (Library of Congress, n.d.).
 
 **And it was not all victories.** The smaller "Little Steel" companies fought. On **May 30, 1937**, Chicago police fired on a crowd of striking Republic Steel workers and their families marching toward the plant. **Ten people were killed.** It is remembered as the **Memorial Day massacre**, and Little Steel was not organized until the war.
 
-**One thing the CIO did that the AFL had not.** The CIO organized **Black workers**, deliberately and at scale — in steel, in auto, in meatpacking. Not out of pure idealism: in an industry-wide union you cannot leave a quarter of the workforce outside, because the employer will simply hire them as strikebreakers, as employers had been doing for fifty years. But the effect was real, and it made CIO unions a genuine base of the mid-century civil-rights movement in a way most AFL craft unions never were. **Hold that comparison.** It is the setup for Section 5, which is about what those AFL craft unions were doing instead.
+**One thing the CIO did that the AFL had not.** The CIO organized **Black workers**, deliberately and at scale, in steel, in auto, in meatpacking. Not out of pure idealism: in an industry-wide union you cannot leave a quarter of the workforce outside, because the employer will simply hire them as strikebreakers, as employers had been doing for fifty years. But the effect was real, and it made CIO unions a genuine base of the mid-century civil-rights movement in a way most AFL craft unions never were. **Hold that comparison.** It is the setup for Section 5, which is about what those AFL craft unions were doing instead.
 
 The two federations finally merged in **December 1955** into the **AFL-CIO**, which remains the largest American labor federation today.
 
-By the mid-1950s, roughly a third of American wage and salary workers were union members — the high-water mark. (That figure comes from historical estimates, not from the Bureau of Labor Statistics' modern series, which only begins in 1983. You will see why that distinction matters in lesson 14.)
+By the mid-1950s, roughly a third of American wage and salary workers were union members, the high-water mark. (That figure comes from historical estimates, not from the Bureau of Labor Statistics' modern series, which only begins in 1983. You will see why that distinction matters in lesson 14.)
 
-:::reveal What was the CIO's core strategic idea, and how did it differ from the AFL's? ||| Industrial unionism: organize EVERYONE in an industry — skilled and unskilled, in one union — rather than only skilled workers grouped by craft. It was the Knights of Labor's old idea, but now with the Wagner Act behind it.
+:::reveal What was the CIO's core strategic idea, and how did it differ from the AFL's? ||| Industrial unionism: organize EVERYONE in an industry, skilled and unskilled, in one union, rather than only skilled workers grouped by craft. It was the Knights of Labor's old idea, but now with the Wagner Act behind it.
 
 ## Sources
 - Library of Congress. (n.d.). *The Flint sit-down strike*. This Month in Business History. https://guides.loc.gov/this-month-in-business-history/december/flint-sit-down-strike
@@ -1074,7 +1074,7 @@ By the mid-1950s, roughly a third of American wage and salary workers were union
         {
           prompt: "What happened at Flint, Michigan between December 1936 and February 1937?",
           answer:
-            "Autoworkers occupied General Motors plants in a 44-day sit-down strike. On February 11, 1937, GM — then the largest manufacturer in the world — recognized the United Auto Workers.",
+            "Autoworkers occupied General Motors plants in a 44-day sit-down strike. On February 11, 1937, GM, then the largest manufacturer in the world, recognized the United Auto Workers.",
         },
         {
           prompt: "Name one reason the CIO organized Black workers at scale when most AFL craft unions did not.",
@@ -1084,28 +1084,28 @@ By the mid-1950s, roughly a third of American wage and salary workers were union
       ],
       body: `The Wagner Act was written by people who thought labor was too weak. By 1947, a lot of Americans thought labor had become too strong. There had been a huge strike wave after the war. Congress had swung.
 
-The result was the **Labor Management Relations Act of 1947** — the **Taft-Hartley Act**. President Truman vetoed it. **Congress overrode the veto**, and it became law on **June 23, 1947** (National Labor Relations Board, n.d.).
+The result was the **Labor Management Relations Act of 1947**, the **Taft-Hartley Act**. President Truman vetoed it. **Congress overrode the veto**, and it became law on **June 23, 1947** (National Labor Relations Board, n.d.).
 
-If the Wagner Act is a list of things employers may not do, Taft-Hartley is the list of things **unions** may not do — plus a set of tools handed to employers and to the government. It is still the framework you live under.
+If the Wagner Act is a list of things employers may not do, Taft-Hartley is the list of things **unions** may not do, plus a set of tools handed to employers and to the government. It is still the framework you live under.
 
 **What it took away, and what it added:**
 
 | Change | What it means |
 |---|---|
-| **Union unfair labor practices** (§ 8(b)) | For the first time, unions could be found to have violated the law — e.g. by coercing workers, or refusing to bargain in good faith. |
+| **Union unfair labor practices** (§ 8(b)) | For the first time, unions could be found to have violated the law, e.g. by coercing workers, or refusing to bargain in good faith. |
 | **The closed shop banned** | An employer may no longer agree to hire *only* people who are already union members. |
 | **Secondary boycotts banned** (§ 8(b)(4)) | A union may not pressure a *neutral* business to stop dealing with the employer it has a dispute with. This removed one of labor's most powerful weapons. |
-| **§ 14(b): state "right-to-work" laws** | States may ban union-security agreements — the clauses that require workers covered by a union contract to pay dues or fees. Roughly half the states have such laws. |
-| **National-emergency injunctions** (§§ 206–210) | The President may go to court for an **80-day injunction** — a "cooling-off period" — halting a strike said to imperil national health or safety. |
+| **§ 14(b): state "right-to-work" laws** | States may ban union-security agreements, the clauses that require workers covered by a union contract to pay dues or fees. Roughly half the states have such laws. |
+| **National-emergency injunctions** (§§ 206-210) | The President may go to court for an **80-day injunction**, a "cooling-off period", halting a strike said to imperil national health or safety. |
 | **Employer "free speech"** (§ 8(c)) | Employers gained explicit latitude to campaign against a union before an election. |
-| **Supervisors excluded** | Supervisors were written out of the Act's protection — enlarging the hole from lesson 10. |
+| **Supervisors excluded** | Supervisors were written out of the Act's protection, enlarging the hole from lesson 10. |
 | **§ 9(h): non-communist affidavits** | Union officers had to swear they were not Communists, or the union lost access to the NLRB. Repealed in 1959. |
 
 **Now the irony you should not miss.**
 
-Taft-Hartley banned the secondary boycott. But the secondary boycott ban lives *inside* the NLRA — and **farm workers are not covered by the NLRA**. So when the United Farm Workers ran a nationwide consumer boycott of table grapes in the late 1960s, pressuring supermarkets that had no dispute with anyone, they were doing something that would have been **illegal for an autoworkers' or steelworkers' union** — and was perfectly lawful for them, precisely *because* they had been excluded from the law in 1935 (National Park Service, n.d.).
+Taft-Hartley banned the secondary boycott. But the secondary boycott ban lives *inside* the NLRA, and **farm workers are not covered by the NLRA**. So when the United Farm Workers ran a nationwide consumer boycott of table grapes in the late 1960s, pressuring supermarkets that had no dispute with anyone, they were doing something that would have been **illegal for an autoworkers' or steelworkers' union**, and was perfectly lawful for them, precisely *because* they had been excluded from the law in 1935 (National Park Service, n.d.).
 
-Sit with that. The same clause that stripped farm workers of every protection also placed them outside the law's biggest restriction, and they turned it into their most effective weapon. That is not a happy ending — they still had no right to an election, no protection from firing, no duty on the grower to bargain. But it is a real, verifiable, deeply strange fact, and it is the kind of thing you only see if you read the statute instead of the slogan.
+Sit with that. The same clause that stripped farm workers of every protection also placed them outside the law's biggest restriction, and they turned it into their most effective weapon. That is not a happy ending, they still had no right to an election, no protection from firing, no duty on the grower to bargain. But it is a real, verifiable, deeply strange fact, and it is the kind of thing you only see if you read the statute instead of the slogan.
 
 :::reveal Name three things the Taft-Hartley Act (1947) did to restrict unions. ||| Any three of: created union unfair labor practices (§ 8(b)); banned the closed shop; banned secondary boycotts (§ 8(b)(4)); allowed states to pass "right-to-work" laws (§ 14(b)); gave the President an 80-day national-emergency injunction; gave employers explicit latitude to campaign against unions (§ 8(c)); excluded supervisors from protection; required non-communist affidavits from union officers (§ 9(h), repealed 1959).
 
@@ -1118,12 +1118,12 @@ Sit with that. The same clause that stripped farm workers of every protection al
     {
       slug: "patco-and-the-long-decline",
       section: "Section 4 · Industrial unionism, backlash, and the long decline",
-      title: "14 · PATCO, 1981 — and reading the decline honestly",
+      title: "14 · PATCO, 1981, and reading the decline honestly",
       recallContent: [
         {
           prompt: "What is a \"right-to-work\" law, and what part of Taft-Hartley allows it?",
           answer:
-            "A state law banning union-security agreements — the clauses requiring workers covered by a union contract to pay dues or fees. Section 14(b) of Taft-Hartley permits states to pass them.",
+            "A state law banning union-security agreements, the clauses requiring workers covered by a union contract to pay dues or fees. Section 14(b) of Taft-Hartley permits states to pass them.",
         },
         {
           prompt: "Why was the UFW's nationwide grape boycott lawful when the same tactic would have been illegal for the autoworkers?",
@@ -1131,7 +1131,7 @@ Sit with that. The same clause that stripped farm workers of every protection al
             "Taft-Hartley's secondary-boycott ban lives inside the NLRA, and farm workers are excluded from the NLRA. The clause that stripped them of protection also placed them outside the law's biggest restriction.",
         },
       ],
-      body: `**August 3, 1981.** The Professional Air Traffic Controllers Organization — **PATCO** — went on strike over pay, hours, and the crushing stress of the job. Roughly 13,000 controllers walked out.
+      body: `**August 3, 1981.** The Professional Air Traffic Controllers Organization, **PATCO**, went on strike over pay, hours, and the crushing stress of the job. Roughly 13,000 controllers walked out.
 
 Two facts, and you need both.
 
@@ -1139,13 +1139,13 @@ Two facts, and you need both.
 
 **Fact two: what happened next was not legally required.** President Reagan gave the controllers 48 hours to return. On **August 5, 1981**, he **fired the 11,345 who did not**, and barred them from federal employment for life. On **October 22, 1981**, the Federal Labor Relations Authority **decertified** the union (Miller Center, n.d.).
 
-**Why this is the hinge of modern American labor history — and why the usual explanation is wrong.**
+**Why this is the hinge of modern American labor history, and why the usual explanation is wrong.**
 
-The usual explanation is: "Reagan made it legal to permanently replace strikers." **That is false**, and you should stop people who say it. Permanently replacing workers who go on an economic strike had been lawful in the *private* sector since **NLRB v. Mackay Radio & Telegraph Co., 304 U.S. 333 (1938)** — a Supreme Court decision handed down under Franklin Roosevelt, three years after the Wagner Act. The legal power was forty-three years old.
+The usual explanation is: "Reagan made it legal to permanently replace strikers." **That is false**, and you should stop people who say it. Permanently replacing workers who go on an economic strike had been lawful in the *private* sector since **NLRB v. Mackay Radio & Telegraph Co., 304 U.S. 333 (1938)**, a Supreme Court decision handed down under Franklin Roosevelt, three years after the Wagner Act. The legal power was forty-three years old.
 
-What changed in 1981 was not the law. It was **the norm.** Employers had the power and mostly had not used it, because using it was seen as beyond the pale. Then the President of the United States used it — on live television, against a union that had endorsed him — and it turned out you could. Through the 1980s, private employers began permanently replacing strikers in a way they simply had not before, and the American strike became a far more dangerous thing for a worker to do.
+What changed in 1981 was not the law. It was **the norm.** Employers had the power and mostly had not used it, because using it was seen as beyond the pale. Then the President of the United States used it, on live television, against a union that had endorsed him, and it turned out you could. Through the 1980s, private employers began permanently replacing strikers in a way they simply had not before, and the American strike became a far more dangerous thing for a worker to do.
 
-**Now the numbers — with their years, and their caveats.**
+**Now the numbers, with their years, and their caveats.**
 
 The Bureau of Labor Statistics publishes the union membership rate every year. Its **comparable series begins in 1983**, so it cannot tell you about 1955 (BLS, 2026).
 
@@ -1153,25 +1153,25 @@ The Bureau of Labor Statistics publishes the union membership rate every year. I
 |---|---|---|
 | Union membership rate | **20.1%** | **10.0%** |
 | Union members | **17.7 million** | **14.7 million** |
-| Public-sector rate | — | **32.9%** |
-| Private-sector rate | — | **5.9%** |
-| Represented by a union (members + covered non-members) | — | **11.2%** |
+| Public-sector rate |, | **32.9%** |
+| Private-sector rate |, | **5.9%** |
+| Represented by a union (members + covered non-members) |, | **11.2%** |
 
 *(Bureau of Labor Statistics, 2026, released February 18, 2026.)*
 
-**Read the caveat, because it is exactly the sort of thing a careless course drops.** BLS states that the 2025 annual figures are **11-month averages that exclude October 2025**, because October data were not collected during the federal government shutdown — so the 2025 estimates are **not strictly comparable** with other years (BLS, 2026). The rate has been near 10% for several years; do not build an argument on a one-year move.
+**Read the caveat, because it is exactly the sort of thing a careless course drops.** BLS states that the 2025 annual figures are **11-month averages that exclude October 2025**, because October data were not collected during the federal government shutdown, so the 2025 estimates are **not strictly comparable** with other years (BLS, 2026). The rate has been near 10% for several years; do not build an argument on a one-year move.
 
 Three things the table is telling you:
 
 1. **The rate halved**, from 20.1% to 10.0%, in about forty years.
-2. **The absolute number fell far less** — 17.7 million to 14.7 million — because the workforce grew. Union membership did not so much collapse as fail to grow with the country.
-3. **The public/private gap is enormous**: 32.9% versus 5.9% in 2025. Modern American unionism is overwhelmingly a *public-sector* phenomenon — teachers, firefighters, postal workers, city employees. That is a completely different labor movement from the one that shut down General Motors in 1937, and it is why fights over public-sector unions are now the loudest fights in American labor.
+2. **The absolute number fell far less**, 17.7 million to 14.7 million, because the workforce grew. Union membership did not so much collapse as fail to grow with the country.
+3. **The public/private gap is enormous**: 32.9% versus 5.9% in 2025. Modern American unionism is overwhelmingly a *public-sector* phenomenon, teachers, firefighters, postal workers, city employees. That is a completely different labor movement from the one that shut down General Motors in 1937, and it is why fights over public-sector unions are now the loudest fights in American labor.
 
 **And now the honest part: WHY did it fall?** The candidate explanations are: the shift from manufacturing to services; globalization and offshoring; automation; more aggressive and more sophisticated employer opposition; the spread of state right-to-work laws under § 14(b); weak penalties for illegal firings; and unions' own strategic failures. **Serious people weight these differently, and this course is not going to pretend the question is settled.** Anyone who gives you one cause and no others is selling you something.
 
-One last number, because it complicates every story: in Gallup's August 2025 poll, **68% of Americans said they approve of labor unions** — near the highest level in more than fifty years — in a year when 10.0% of them belonged to one (Gallup, 2025). Whatever is driving the decline, it does not appear to be that Americans have decided they dislike unions. That gap is the most interesting open question in American labor today.
+One last number, because it complicates every story: in Gallup's August 2025 poll, **68% of Americans said they approve of labor unions**, near the highest level in more than fifty years, in a year when 10.0% of them belonged to one (Gallup, 2025). Whatever is driving the decline, it does not appear to be that Americans have decided they dislike unions. That gap is the most interesting open question in American labor today.
 
-:::reveal What is the most common false claim about PATCO, and what is the accurate version? ||| The false claim is that Reagan made it legal to permanently replace strikers. Permanent replacement of economic strikers had been lawful in the private sector since NLRB v. Mackay Radio (1938). What changed in 1981 was not the law but the NORM — employers had long had the power and had largely declined to use it, and after PATCO they used it.
+:::reveal What is the most common false claim about PATCO, and what is the accurate version? ||| The false claim is that Reagan made it legal to permanently replace strikers. Permanent replacement of economic strikers had been lawful in the private sector since NLRB v. Mackay Radio (1938). What changed in 1981 was not the law but the NORM, employers had long had the power and had largely declined to use it, and after PATCO they used it.
 
 ## Sources
 - Bureau of Labor Statistics. (2026, February 18). *Union members — 2025*. U.S. Department of Labor. https://www.bls.gov/news.release/pdf/union2.pdf
@@ -1194,26 +1194,26 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "What was the CIO's core strategic idea?",
             options: [
               "Organize only skilled workers, grouped by craft",
-              "Organize entire industries — everyone in the plant, skilled and unskilled, in one union",
+              "Organize entire industries, everyone in the plant, skilled and unskilled, in one union",
               "Organize only public employees",
               "Replace collective bargaining with legislation",
             ],
             correctIndex: 1,
             explanation:
-              "Industrial unionism — the Knights of Labor's old idea, but now with the Wagner Act behind it. That combination made the late 1930s explosive.",
+              "Industrial unionism, the Knights of Labor's old idea, but now with the Wagner Act behind it. That combination made the late 1930s explosive.",
             sourceLessonSlug: "the-cio-and-industrial-unionism",
           },
           {
-            prompt: "What was new about the tactic autoworkers used at Flint in 1936–37?",
+            prompt: "What was new about the tactic autoworkers used at Flint in 1936-37?",
             options: [
               "They walked out and picketed the gates",
-              "They SAT DOWN — occupied the plants and stopped production from inside, where strikebreakers could not replace them",
+              "They SAT DOWN, occupied the plants and stopped production from inside, where strikebreakers could not replace them",
               "They filed a lawsuit against General Motors",
               "They ran a consumer boycott of Chevrolets",
             ],
             correctIndex: 1,
             explanation:
-              "The sit-down held 44 days. On February 11, 1937, GM recognized the United Auto Workers — and US Steel signed with the CIO weeks later without a strike at all.",
+              "The sit-down held 44 days. On February 11, 1937, GM recognized the United Auto Workers, and US Steel signed with the CIO weeks later without a strike at all.",
             sourceLessonSlug: "the-cio-and-industrial-unionism",
           },
           {
@@ -1246,7 +1246,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "Section 14(b) of Taft-Hartley permits states to:",
             options: [
               "Ban strikes outright",
-              "Pass \"right-to-work\" laws banning union-security agreements — the clauses that require workers covered by a union contract to pay dues or fees",
+              "Pass \"right-to-work\" laws banning union-security agreements, the clauses that require workers covered by a union contract to pay dues or fees",
               "Require every worker to join a union",
               "Set their own minimum wage",
             ],
@@ -1265,7 +1265,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             ],
             correctIndex: 1,
             explanation:
-              "Banning it removed one of labor's most powerful weapons — pressure on the supermarkets, suppliers and customers of the employer.",
+              "Banning it removed one of labor's most powerful weapons, pressure on the supermarkets, suppliers and customers of the employer.",
             sourceLessonSlug: "taft-hartley-1947",
           },
           {
@@ -1278,14 +1278,14 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             ],
             correctIndex: 1,
             explanation:
-              "The same clause that stripped farm workers of every protection also placed them outside the law's biggest restriction — and they turned it into their most effective weapon.",
+              "The same clause that stripped farm workers of every protection also placed them outside the law's biggest restriction, and they turned it into their most effective weapon.",
             sourceLessonSlug: "taft-hartley-1947",
           },
           {
             prompt: "What did the Taft-Hartley Act's § 8(b) create for the first time?",
             options: [
               "Employer unfair labor practices",
-              "UNION unfair labor practices — things a union itself could be found to have done illegally",
+              "UNION unfair labor practices, things a union itself could be found to have done illegally",
               "The National Labor Relations Board",
               "The right to strike",
             ],
@@ -1298,7 +1298,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "The PATCO strike of August 3, 1981 was:",
             options: [
               "Legal, and Reagan's response was unlawful",
-              "Illegal — federal employees are barred by statute from striking against the government (5 U.S.C. § 7311)",
+              "Illegal, federal employees are barred by statute from striking against the government (5 U.S.C. § 7311)",
               "Legal under Taft-Hartley's national-emergency provisions",
               "Authorized in advance by the FAA",
             ],
@@ -1311,7 +1311,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "What is the most common FALSE claim about PATCO?",
             options: [
               "That the strike was illegal",
-              "That Reagan MADE IT LEGAL to permanently replace strikers — in fact that had been lawful in the private sector since NLRB v. Mackay Radio (1938)",
+              "That Reagan MADE IT LEGAL to permanently replace strikers, in fact that had been lawful in the private sector since NLRB v. Mackay Radio (1938)",
               "That PATCO was decertified",
               "That the controllers were barred from federal employment",
             ],
@@ -1325,7 +1325,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             options: ["5.9%", "10.0%", "20.1%", "32.9%"],
             correctIndex: 1,
             explanation:
-              "10.0% in 2025, with 14.7 million members — down from 20.1% and 17.7 million in 1983, the first year of BLS's comparable series (BLS, 2026).",
+              "10.0% in 2025, with 14.7 million members, down from 20.1% and 17.7 million in 1983, the first year of BLS's comparable series (BLS, 2026).",
             sourceLessonSlug: "patco-and-the-long-decline",
           },
           {
@@ -1345,7 +1345,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             prompt: "In 2025 the US public-sector union membership rate was 32.9% and the private-sector rate was 5.9%. What does that tell you?",
             options: [
               "Private-sector unions are growing faster",
-              "Modern American unionism is overwhelmingly a PUBLIC-sector phenomenon — a very different labor movement from the one that shut down GM in 1937",
+              "Modern American unionism is overwhelmingly a PUBLIC-sector phenomenon, a very different labor movement from the one that shut down GM in 1937",
               "Public employees are barred from unionizing",
               "The two sectors are converging",
             ],
@@ -1359,7 +1359,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             options: [
               "It identifies employer opposition as the single proven cause",
               "It identifies globalization as the single proven cause",
-              "It lists the serious candidate explanations and says the question is not settled — warning that anyone offering one cause and no others is selling you something",
+              "It lists the serious candidate explanations and says the question is not settled, warning that anyone offering one cause and no others is selling you something",
               "It says the decline never happened",
             ],
             correctIndex: 2,
@@ -1372,7 +1372,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
             options: ["10%", "34%", "51%", "68%"],
             correctIndex: 3,
             explanation:
-              "68% approved — near the highest in over fifty years — in a year when 10.0% of workers belonged to a union. That gap is the most interesting open question in American labor today.",
+              "68% approved, near the highest in over fifty years, in a year when 10.0% of workers belonged to a union. That gap is the most interesting open question in American labor today.",
             sourceLessonSlug: "patco-and-the-long-decline",
           },
         ],
@@ -1390,7 +1390,7 @@ One last number, because it complicates every story: in Gallup's August 2025 pol
           answer: "10.0% in 2025; 20.1% in 1983, the first year of BLS's comparable series (BLS, 2026).",
         },
         {
-          prompt: "What actually changed after PATCO in 1981 — the law, or the norm?",
+          prompt: "What actually changed after PATCO in 1981, the law, or the norm?",
           answer:
             "The norm. Permanent replacement of economic strikers had been lawful since NLRB v. Mackay Radio (1938). Employers had the power and had largely declined to use it; after PATCO they used it.",
         },
@@ -1405,24 +1405,24 @@ If a course tells you unions were always the good guys, close the course. This p
 
 It was not a matter of tone or atmosphere. It was in the rulebooks:
 
-- Several **railroad brotherhoods** — among the most powerful unions in America — carried explicit whites-only clauses in their constitutions well into the twentieth century.
+- Several **railroad brotherhoods**, among the most powerful unions in America, carried explicit whites-only clauses in their constitutions well into the twentieth century.
 - The AFL's craft unions often kept Black workers out of **apprenticeships**, which were the only door into a skilled trade. If you cannot become an apprentice, you cannot become a journeyman, and the union does not have to say a word about race.
-- Where Black workers *were* admitted, they were frequently placed in **segregated "auxiliary" locals** — a separate local with no vote, no full membership, and no say in the contract that governed their own jobs. During the Second World War, the Boilermakers ran exactly such auxiliaries; in **James v. Marinship Corp. (Cal. 1944)**, the California Supreme Court held that a union with a closed shop could not simultaneously keep Black workers in a subordinate auxiliary — you cannot control who gets hired *and* refuse people full membership.
+- Where Black workers *were* admitted, they were frequently placed in **segregated "auxiliary" locals**, a separate local with no vote, no full membership, and no say in the contract that governed their own jobs. During the Second World War, the Boilermakers ran exactly such auxiliaries; in **James v. Marinship Corp. (Cal. 1944)**, the California Supreme Court held that a union with a closed shop could not simultaneously keep Black workers in a subordinate auxiliary, you cannot control who gets hired *and* refuse people full membership.
 - And in **Steele v. Louisville & Nashville Railroad Co., 323 U.S. 192 (1944)**, the Supreme Court dealt with a union that had bargained *against* its own Black workers. Bester Steele was a Black locomotive fireman. His craft's exclusive bargaining representative — a union he was not allowed to join — negotiated with the railroad to push Black firemen out of the better jobs. The Court held that a union which holds the legal power to speak for **all** workers in a craft owes them all a **duty of fair representation**, and may not discriminate by race.
 
-Read that holding carefully. The Supreme Court in 1944 had to *invent a rule* that a union may not use its legal monopoly as a weapon against its own members' race — because a union was doing it.
+Read that holding carefully. The Supreme Court in 1944 had to *invent a rule* that a union may not use its legal monopoly as a weapon against its own members' race, because a union was doing it.
 
 **And women.**
 
-The pattern is different but the mechanism is the same. Women were kept out of the craft apprenticeships that led to skilled, well-paid trades. Contracts negotiated by unions maintained **separate seniority lines** by sex, so a woman could not bid on a "man's" job no matter how long she had been there. Unions bargained for a "family wage" — a wage for a male breadwinner — which was an argument *for* paying women less. And some of the largest unions in the country were majority-women organizations run almost entirely by men.
+The pattern is different but the mechanism is the same. Women were kept out of the craft apprenticeships that led to skilled, well-paid trades. Contracts negotiated by unions maintained **separate seniority lines** by sex, so a woman could not bid on a "man's" job no matter how long she had been there. Unions bargained for a "family wage", a wage for a male breadwinner, which was an argument *for* paying women less. And some of the largest unions in the country were majority-women organizations run almost entirely by men.
 
-**When did this become illegal?** Not in 1935. **Title VII of the Civil Rights Act of 1964** made it an unlawful employment practice for a **labor organization** — expressly, not just an employer — to exclude or segregate members, or to classify them, on the basis of race, colour, religion, sex, or national origin (42 U.S.C. § 2000e-2(c)). Congress had to name unions in the statute.
+**When did this become illegal?** Not in 1935. **Title VII of the Civil Rights Act of 1964** made it an unlawful employment practice for a **labor organization**, expressly, not just an employer, to exclude or segregate members, or to classify them, on the basis of race, colour, religion, sex, or national origin (42 U.S.C. § 2000e-2(c)). Congress had to name unions in the statute.
 
-**And it goes right to the top.** In August 1963, the AFL-CIO's executive council **declined to endorse the March on Washington for Jobs and Freedom.** Walter Reuther of the United Auto Workers moved for a strong endorsement; among the federation's leadership only **A. Philip Randolph** — whom you meet in the next lesson — supported him. AFL-CIO president George Meany would not back the march. The UAW endorsed it anyway, and Reuther spoke from the podium (King Institute, Stanford, n.d.).
+**And it goes right to the top.** In August 1963, the AFL-CIO's executive council **declined to endorse the March on Washington for Jobs and Freedom.** Walter Reuther of the United Auto Workers moved for a strong endorsement; among the federation's leadership only **A. Philip Randolph**, whom you meet in the next lesson, supported him. AFL-CIO president George Meany would not back the march. The UAW endorsed it anyway, and Reuther spoke from the podium (King Institute, Stanford, n.d.).
 
 **The honest summary.** The industrial unions of the CIO organized Black workers at scale; the craft unions of the AFL were often the mechanism that kept them out. Both are "the labor movement." A student who is told only the first half will, sooner or later, learn the second half from someone who will use it to tell them the whole thing was a fraud. It wasn't. But it also wasn't clean, and you are old enough to hold both.
 
-:::reveal What did Steele v. Louisville & Nashville Railroad Co. (1944) establish, and why did the Court have to establish it? ||| That a union holding the legal power to bargain for everyone in a craft owes all of them a "duty of fair representation" and may not discriminate by race. The Court had to say so because a union — which Black firemen were not even allowed to join — had bargained with the railroad to push them out of the better jobs.
+:::reveal What did Steele v. Louisville & Nashville Railroad Co. (1944) establish, and why did the Court have to establish it? ||| That a union holding the legal power to bargain for everyone in a craft owes all of them a "duty of fair representation" and may not discriminate by race. The Court had to say so because a union, which Black firemen were not even allowed to join, had bargained with the railroad to push them out of the better jobs.
 
 ## Sources
 - Steele v. Louisville & Nashville Railroad Co., 323 U.S. 192 (1944). Cornell Law School, Legal Information Institute. https://www.law.cornell.edu/supremecourt/text/323/192
@@ -1439,7 +1439,7 @@ The pattern is different but the mechanism is the same. Women were kept out of t
         {
           prompt: "How did craft unions exclude Black workers without writing a racial rule about jobs?",
           answer:
-            "By keeping them out of apprenticeships — the only door into a skilled trade — and by placing them in segregated 'auxiliary' locals with no vote and no say in the contract governing their own jobs.",
+            "By keeping them out of apprenticeships, the only door into a skilled trade, and by placing them in segregated 'auxiliary' locals with no vote and no say in the contract governing their own jobs.",
         },
         {
           prompt: "Which 1964 statute made it illegal for a LABOR ORGANIZATION to exclude or segregate members by race or sex?",
@@ -1448,17 +1448,17 @@ The pattern is different but the mechanism is the same. Women were kept out of t
       ],
       body: `Everything in the last lesson is true. So is this.
 
-**A. Philip Randolph** spent his life fighting the exclusion you just read about — from *inside* the labor movement — and in doing so built the bridge between organized labor and the civil-rights movement.
+**A. Philip Randolph** spent his life fighting the exclusion you just read about, from *inside* the labor movement, and in doing so built the bridge between organized labor and the civil-rights movement.
 
 **1925.** Randolph founds the **Brotherhood of Sleeping Car Porters**. Pullman porters were Black men who made up the beds and served the passengers on the sleeping cars of America's railroads. It was one of the largest employers of Black men in the country, and one of the most humiliating jobs available: porters were routinely called "George," after George Pullman, rather than by their names.
 
-**1937.** After twelve years — twelve — the Brotherhood wins a contract with the Pullman Company. It is **the first collective bargaining agreement between a major American corporation and a Black-led union.** It brought pay increases, a shorter work month, and overtime.
+**1937.** After twelve years, twelve, the Brotherhood wins a contract with the Pullman Company. It is **the first collective bargaining agreement between a major American corporation and a Black-led union.** It brought pay increases, a shorter work month, and overtime.
 
-**1941.** Randolph threatens to march tens of thousands of Black Americans on Washington to demand jobs in the defense plants gearing up for war, and an end to segregation in the armed forces. Roosevelt does not want that march. On **June 25, 1941**, days before it was to happen, he issues **Executive Order 8802**, barring discrimination in defense industries and government, and creating the **Fair Employment Practice Committee** — the first presidential directive on race since Reconstruction (National Archives, n.d.). Randolph calls off the march.
+**1941.** Randolph threatens to march tens of thousands of Black Americans on Washington to demand jobs in the defense plants gearing up for war, and an end to segregation in the armed forces. Roosevelt does not want that march. On **June 25, 1941**, days before it was to happen, he issues **Executive Order 8802**, barring discrimination in defense industries and government, and creating the **Fair Employment Practice Committee**, the first presidential directive on race since Reconstruction (National Archives, n.d.). Randolph calls off the march.
 
 Notice the mechanism. **He got it by threatening to withhold and to mobilize.** That is a labor tactic, applied to a civil-rights demand, by a union president.
 
-**1963.** Randolph is the chief architect of the **March on Washington for Jobs and Freedom** — and his lieutenant Bayard Rustin organizes it. Look at the name. **"For Jobs and Freedom."** The economic half is in the title, and it is the half that gets dropped. It was a march for a higher minimum wage, for a jobs programme, for the right to work, as much as for the right to vote.
+**1963.** Randolph is the chief architect of the **March on Washington for Jobs and Freedom**, and his lieutenant Bayard Rustin organizes it. Look at the name. **"For Jobs and Freedom."** The economic half is in the title, and it is the half that gets dropped. It was a march for a higher minimum wage, for a jobs programme, for the right to work, as much as for the right to vote.
 
 ---
 
@@ -1466,25 +1466,25 @@ Notice the mechanism. **He got it by threatening to withhold and to mobilize.** 
 
 **February 1, 1968.** Two Memphis sanitation workers, **Echol Cole and Robert Walker**, take shelter from the rain in the back of a garbage truck, because Black sanitation workers were not permitted to shelter in white neighbourhoods. The compactor malfunctions and crushes them to death. The city pays their families almost nothing.
 
-**February 12, 1968.** Roughly 1,300 Black sanitation workers walk out. They are asking for union recognition — **AFSCME Local 1733** — for a living wage, and for the city to stop treating them as disposable. Mayor Henry Loeb refuses to recognize the union.
+**February 12, 1968.** Roughly 1,300 Black sanitation workers walk out. They are asking for union recognition, **AFSCME Local 1733**, for a living wage, and for the city to stop treating them as disposable. Mayor Henry Loeb refuses to recognize the union.
 
 They carry signs that say four words:
 
 > ### I AM A MAN
 
-That is the entire demand. It is a wage demand and it is a demand to be recognised as a human being, and the strikers understood — better than most people who quote them now — that in their lives those were the same demand.
+That is the entire demand. It is a wage demand and it is a demand to be recognised as a human being, and the strikers understood, better than most people who quote them now, that in their lives those were the same demand.
 
-**Martin Luther King Jr. came to Memphis to support that strike.** He came in March. He came back on **April 3, 1968**, and delivered the speech remembered as "I've Been to the Mountaintop" — to a hall of striking sanitation workers.
+**Martin Luther King Jr. came to Memphis to support that strike.** He came in March. He came back on **April 3, 1968**, and delivered the speech remembered as "I've Been to the Mountaintop", to a hall of striking sanitation workers.
 
 **On April 4, 1968, he was assassinated on the balcony of the Lorraine Motel in Memphis.**
 
-He was there **for a strike**. He was in the middle of organizing the Poor People's Campaign, an economic campaign. And that fact is severed from his memory with astonishing consistency — the Nobel laureate, the dreamer, the marcher, and then, somehow, a man who happened to be standing on a motel balcony in Tennessee for no stated reason.
+He was there **for a strike**. He was in the middle of organizing the Poor People's Campaign, an economic campaign. And that fact is severed from his memory with astonishing consistency, the Nobel laureate, the dreamer, the marcher, and then, somehow, a man who happened to be standing on a motel balcony in Tennessee for no stated reason.
 
 He was there because 1,300 garbage collectors wanted a union.
 
 **April 16, 1968**, twelve days after the assassination, the City of Memphis recognized AFSCME Local 1733 and agreed to wage increases (AFSCME, n.d.).
 
-**Hold this next to the previous lesson, and do not resolve it.** The same labor movement whose craft unions kept Black workers out of apprenticeships also produced Randolph, the Brotherhood, and Local 1733. The AFL-CIO would not endorse the 1963 march that A. Philip Randolph — an AFL-CIO vice-president — had designed. **Both of those sentences are true at the same time.** Holding two true and contradictory things is not confusion. It is what history actually feels like.
+**Hold this next to the previous lesson, and do not resolve it.** The same labor movement whose craft unions kept Black workers out of apprenticeships also produced Randolph, the Brotherhood, and Local 1733. The AFL-CIO would not endorse the 1963 march that A. Philip Randolph, an AFL-CIO vice-president, had designed. **Both of those sentences are true at the same time.** Holding two true and contradictory things is not confusion. It is what history actually feels like.
 
 :::reveal Why was Martin Luther King Jr. in Memphis in April 1968? ||| He was there to support the strike of roughly 1,300 Black sanitation workers, who had walked out on February 12, 1968 seeking recognition of AFSCME Local 1733, a living wage, and safe conditions after two workers were crushed to death by a garbage truck. He was assassinated there on April 4, 1968; the city recognized the union on April 16.
 
@@ -1503,12 +1503,12 @@ He was there because 1,300 garbage collectors wanted a union.
         {
           prompt: "What did the Brotherhood of Sleeping Car Porters achieve in 1937?",
           answer:
-            "The first collective bargaining agreement between a major American corporation (the Pullman Company) and a Black-led union — after twelve years of organizing.",
+            "The first collective bargaining agreement between a major American corporation (the Pullman Company) and a Black-led union, after twelve years of organizing.",
         },
         {
           prompt: "What is the full name of the 1963 March on Washington, and why does the course insist on it?",
           answer:
-            "The March on Washington for Jobs and Freedom. The economic half is in the title and is the half routinely dropped — it was a march for a higher minimum wage and a jobs programme as well as for voting rights.",
+            "The March on Washington for Jobs and Freedom. The economic half is in the title and is the half routinely dropped, it was a march for a higher minimum wage and a jobs programme as well as for voting rights.",
         },
       ],
       body: `There is one more thing a comfortable course leaves out, and this one is uncomfortable in the other direction.
@@ -1517,30 +1517,30 @@ He was there because 1,300 garbage collectors wanted a union.
 
 **What happened.**
 
-In 1957 the Senate created a select committee, chaired by Senator **John McClellan** with **Robert F. Kennedy** as chief counsel, to investigate racketeering in labor and management. It ran for two years, on television. Its central target was the **International Brotherhood of Teamsters** — the truck drivers' union, one of the largest in the country. Its president, Dave Beck, was convicted of embezzlement. His successor, **Jimmy Hoffa**, was convicted in the 1960s of jury tampering and of fraud involving the union's pension fund, and went to prison. In 1975 Hoffa disappeared. He has never been found. **This course is not going to tell you what happened to him, because nobody has established what happened to him** — and the internet is full of people who will.
+In 1957 the Senate created a select committee, chaired by Senator **John McClellan** with **Robert F. Kennedy** as chief counsel, to investigate racketeering in labor and management. It ran for two years, on television. Its central target was the **International Brotherhood of Teamsters**, the truck drivers' union, one of the largest in the country. Its president, Dave Beck, was convicted of embezzlement. His successor, **Jimmy Hoffa**, was convicted in the 1960s of jury tampering and of fraud involving the union's pension fund, and went to prison. In 1975 Hoffa disappeared. He has never been found. **This course is not going to tell you what happened to him, because nobody has established what happened to him**, and the internet is full of people who will.
 
 The AFL-CIO **expelled the Teamsters** in December 1957.
 
-**What it produced legally.** The McClellan hearings led directly to the **Labor-Management Reporting and Disclosure Act of 1959** — the **Landrum-Griffin Act**. It:
+**What it produced legally.** The McClellan hearings led directly to the **Labor-Management Reporting and Disclosure Act of 1959**, the **Landrum-Griffin Act**. It:
 
 - Created a **bill of rights for union members** (Title I): free speech in union meetings, equal voting rights, protection against arbitrary discipline by your own union, and the right to sue it.
 - Required unions to file **public financial reports** with the federal government.
 - Regulated **union elections**, so officers had to face their members.
 
-**And in 1989**, the US government brought a civil racketeering (RICO) case against the Teamsters that ended in a **consent decree**: the union accepted federal court supervision, an Independent Review Board with power to expel corrupt officials, and — this is the important part — **direct, one-member-one-vote election of its international officers**, supervised by a court-appointed monitor. The union operated under that court supervision for decades; a 2015 settlement began winding it down (U.S. Department of Justice, 2015).
+**And in 1989**, the US government brought a civil racketeering (RICO) case against the Teamsters that ended in a **consent decree**: the union accepted federal court supervision, an Independent Review Board with power to expel corrupt officials, and (this is the important part) **direct, one-member-one-vote election of its international officers**, supervised by a court-appointed monitor. The union operated under that court supervision for decades; a 2015 settlement began winding it down (U.S. Department of Justice, 2015).
 
 **Now the four things you have to hold at once.** This is the whole lesson.
 
 1. **The corruption was real.** People stole pension money that belonged to truck drivers. Some union officials worked with organized crime, and some workers were beaten. Denying it is not solidarity; it is just lying.
-2. **It was not universal.** It was concentrated in specific unions and specific locals, in industries — trucking, longshore, construction, waste — where controlling access to work is enormously valuable to a criminal organization. Most unions were not mobbed up, and the vast majority of union members were being robbed by nobody.
-3. **The story was also a weapon.** "Union boss" as an image — the cigar, the sedan, the shakedown — did a great deal of political work far beyond anything the McClellan Committee found, and it is still doing that work today. Notice when someone reaches for it, and notice whether they have a case or a caricature.
+2. **It was not universal.** It was concentrated in specific unions and specific locals, in industries, trucking, longshore, construction, waste, where controlling access to work is enormously valuable to a criminal organization. Most unions were not mobbed up, and the vast majority of union members were being robbed by nobody.
+3. **The story was also a weapon.** "Union boss" as an image, the cigar, the sedan, the shakedown, did a great deal of political work far beyond anything the McClellan Committee found, and it is still doing that work today. Notice when someone reaches for it, and notice whether they have a case or a caricature.
 4. **The cure is being used by the workers.** Landrum-Griffin's union-democracy provisions and the Teamsters' court-ordered direct elections were meant to police corrupt unions. Rank-and-file reformers have used those same rules to take unions back from their own leaderships and run them differently. The tool built to discipline unions became a tool workers used inside them.
 
 That is what a real institution looks like: capable of theft and capable of Memphis, sometimes in the same decade, sometimes in the same building. **Your job is not to decide whether unions are Good. Your job is to be able to look at a specific union, in a specific place, in a specific year, and find out what is actually true about it.**
 
 Which is exactly the skill the rest of this course is going to make you use on six countries.
 
-:::reveal Name the four things this course says you must hold at once about union corruption. ||| (1) It was real — pensions were stolen, some officials worked with organized crime. (2) It was not universal — it concentrated in industries where controlling access to work is valuable to criminals. (3) The story was also used as a political weapon far beyond what was ever proved. (4) The cure — Landrum-Griffin's union-democracy rules and court-ordered direct elections — has been used by rank-and-file members to reform their own unions.
+:::reveal Name the four things this course says you must hold at once about union corruption. ||| (1) It was real, pensions were stolen, some officials worked with organized crime. (2) It was not universal, it concentrated in industries where controlling access to work is valuable to criminals. (3) The story was also used as a political weapon far beyond what was ever proved. (4) The cure, Landrum-Griffin's union-democracy rules and court-ordered direct elections, has been used by rank-and-file members to reform their own unions.
 
 ## Sources
 - Labor-Management Reporting and Disclosure Act of 1959, 29 U.S.C. §§ 401–531. Office of the Law Revision Counsel, U.S. House of Representatives. https://uscode.house.gov/view.xhtml?path=/prelim@title29/chapter11&edition=prelim
@@ -1562,7 +1562,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "How did AFL craft unions commonly exclude Black workers WITHOUT writing a racial rule about jobs?",
             options: [
               "By requiring a college degree",
-              "By keeping them out of apprenticeships — the only door into a skilled trade",
+              "By keeping them out of apprenticeships, the only door into a skilled trade",
               "By charging higher dues",
               "By moving all work out of state",
             ],
@@ -1594,7 +1594,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             ],
             correctIndex: 1,
             explanation:
-              "The Court had to invent the rule because a union — which Bester Steele was not even allowed to join — had bargained with the railroad to push Black firemen out of the better jobs.",
+              "The Court had to invent the rule because a union, which Bester Steele was not even allowed to join, had bargained with the railroad to push Black firemen out of the better jobs.",
             sourceLessonSlug: "unions-own-exclusion-history",
           },
           {
@@ -1607,14 +1607,14 @@ Which is exactly the skill the rest of this course is going to make you use on s
             ],
             correctIndex: 1,
             explanation:
-              "Congress had to name unions expressly in the statute — employers alone were not enough.",
+              "Congress had to name unions expressly in the statute, employers alone were not enough.",
             sourceLessonSlug: "unions-own-exclusion-history",
           },
           {
             prompt: "What did the AFL-CIO's executive council do about the 1963 March on Washington?",
             options: [
               "Organized and funded it",
-              "Declined to endorse it — only A. Philip Randolph supported Walter Reuther's motion for a strong endorsement; the UAW endorsed it anyway",
+              "Declined to endorse it, only A. Philip Randolph supported Walter Reuther's motion for a strong endorsement; the UAW endorsed it anyway",
               "Voted to oppose it publicly",
               "Endorsed it unanimously",
             ],
@@ -1640,13 +1640,13 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "How did A. Philip Randolph obtain Executive Order 8802 in 1941?",
             options: [
               "By winning a lawsuit against the federal government",
-              "By threatening to march tens of thousands of Black Americans on Washington — a labor tactic applied to a civil-rights demand",
+              "By threatening to march tens of thousands of Black Americans on Washington, a labor tactic applied to a civil-rights demand",
               "By lobbying Congress for five years",
               "By calling a nationwide general strike",
             ],
             correctIndex: 1,
             explanation:
-              "EO 8802 barred discrimination in defense industries and created the Fair Employment Practice Committee — the first presidential directive on race since Reconstruction. Randolph called off the march.",
+              "EO 8802 barred discrimination in defense industries and created the Fair Employment Practice Committee, the first presidential directive on race since Reconstruction. Randolph called off the march.",
             sourceLessonSlug: "randolph-to-memphis",
           },
           {
@@ -1666,7 +1666,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "What triggered the Memphis sanitation strike that began on February 12, 1968?",
             options: [
               "A pay cut announced by the mayor",
-              "Two workers, Echol Cole and Robert Walker, were crushed to death by a garbage truck compactor on February 1 — having sheltered inside it because Black sanitation workers were not permitted to shelter in white neighbourhoods",
+              "Two workers, Echol Cole and Robert Walker, were crushed to death by a garbage truck compactor on February 1, having sheltered inside it because Black sanitation workers were not permitted to shelter in white neighbourhoods",
               "A federal court order",
               "The assassination of Martin Luther King Jr.",
             ],
@@ -1679,7 +1679,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "Why was Martin Luther King Jr. in Memphis when he was assassinated on April 4, 1968?",
             options: [
               "For a voter-registration rally",
-              "To support the sanitation workers' strike — he had spoken to a hall of strikers the night before",
+              "To support the sanitation workers' strike, he had spoken to a hall of strikers the night before",
               "He was passing through on his way to Atlanta",
               "To testify before a congressional committee",
             ],
@@ -1697,10 +1697,10 @@ Which is exactly the skill the rest of this course is going to make you use on s
             sourceLessonSlug: "randolph-to-memphis",
           },
           {
-            prompt: "The McClellan Committee (1957–59), with Robert F. Kennedy as chief counsel, primarily investigated:",
+            prompt: "The McClellan Committee (1957-59), with Robert F. Kennedy as chief counsel, primarily investigated:",
             options: [
               "The Congress of Industrial Organizations",
-              "Racketeering in labor and management — centrally, the International Brotherhood of Teamsters",
+              "Racketeering in labor and management, centrally, the International Brotherhood of Teamsters",
               "The National Labor Relations Board",
               "The United Farm Workers",
             ],
@@ -1713,7 +1713,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "What did the Landrum-Griffin Act of 1959 create?",
             options: [
               "A federal ban on strikes",
-              "A bill of rights for UNION MEMBERS — free speech in meetings, equal voting rights, protection from arbitrary discipline by their own union — plus public financial reporting and regulated union elections",
+              "A bill of rights for UNION MEMBERS, free speech in meetings, equal voting rights, protection from arbitrary discipline by their own union, plus public financial reporting and regulated union elections",
               "The National Labor Relations Board",
               "State right-to-work laws",
             ],
@@ -1739,13 +1739,13 @@ Which is exactly the skill the rest of this course is going to make you use on s
             prompt: "What does the course say about what happened to Jimmy Hoffa?",
             options: [
               "He was killed by a rival Teamster faction, as court records show",
-              "It refuses to say — he disappeared in 1975 and nobody has established what happened to him",
+              "It refuses to say, he disappeared in 1975 and nobody has established what happened to him",
               "He fled to Brazil",
               "He died of natural causes in prison",
             ],
             correctIndex: 1,
             explanation:
-              "Same rule as Haymarket. The record does not settle it, so the course does not pretend it does — and notes that the internet is full of people who will.",
+              "Same rule as Haymarket. The record does not settle it, so the course does not pretend it does, and notes that the internet is full of people who will.",
             sourceLessonSlug: "corruption-and-the-mob",
           },
         ],
@@ -1769,7 +1769,7 @@ Which is exactly the skill the rest of this course is going to make you use on s
             "It was real; it was not universal; the story was also used as a political weapon far beyond what was proved; and the union-democracy rules created to cure it are now used by rank-and-file members to reform their own unions.",
         },
       ],
-      body: `Everything you have learned so far is **one country's answer**. Now the point of the course: **there is no single "union" model.** The American system — company-by-company elections, a federal referee, a contract for that workplace — is one design among many, and by world standards it is an unusual one.
+      body: `Everything you have learned so far is **one country's answer**. Now the point of the course: **there is no single "union" model.** The American system, company-by-company elections, a federal referee, a contract for that workplace, is one design among many, and by world standards it is an unusual one.
 
 Six countries. Same four questions each time.
 
@@ -1777,21 +1777,21 @@ Six countries. Same four questions each time.
 
 **The Nordics: Denmark, Sweden, Finland, Iceland, Norway.**
 
-Start with the number, because it is startling. In 2024, trade union density was around **65% in Sweden, Denmark and Finland**, and about **91% in Iceland** — against **10.0%** in the United States in 2025 (OECD, 2025; BLS, 2026).
+Start with the number, because it is startling. In 2024, trade union density was around **65% in Sweden, Denmark and Finland**, and about **91% in Iceland**, against **10.0%** in the United States in 2025 (OECD, 2025; BLS, 2026).
 
 Why?
 
-**Q1 — Who may organise?** Everyone, easily. But that is true in a lot of countries with 10% density, so it is not the explanation.
+**Q1, Who may organise?** Everyone, easily. But that is true in a lot of countries with 10% density, so it is not the explanation.
 
-**The real explanation is a piece of plumbing called the Ghent system.** In Denmark, Sweden, Finland, Iceland — and partly Belgium — **unemployment insurance is administered by union-affiliated funds**, not (only) by the state. To be insured against losing your job, you deal with an institution linked to your union, and joining the union is the natural, socially default step. The OECD (2025) is blunt about it: the countries where union membership is at or near 50% are essentially *the Ghent countries*, plus Norway.
+**The real explanation is a piece of plumbing called the Ghent system.** In Denmark, Sweden, Finland, Iceland, and partly Belgium, **unemployment insurance is administered by union-affiliated funds**, not (only) by the state. To be insured against losing your job, you deal with an institution linked to your union, and joining the union is the natural, socially default step. The OECD (2025) is blunt about it: the countries where union membership is at or near 50% are essentially *the Ghent countries*, plus Norway.
 
 That is a devastating little fact, and you should let it change how you think. **Density in these countries is not primarily a story about how much workers love unions. It is a story about who runs the unemployment system.** Institutions shape behaviour. If you want to explain a country's union numbers, look for the plumbing before you reach for the culture.
 
-**Q3 — Who bargains with whom?** **Sectoral bargaining.** A union federation and an employers' federation negotiate for an entire *industry* at once, and the resulting agreement covers the firms in it. The consequence is remarkable: **Denmark and Sweden have no statutory national minimum wage at all.** Not because they don't believe in wage floors — because the wage floor is set by collective agreement, industry by industry, and covers nearly everybody without a law being needed (European Commission, 2022).
+**Q3, Who bargains with whom?** **Sectoral bargaining.** A union federation and an employers' federation negotiate for an entire *industry* at once, and the resulting agreement covers the firms in it. The consequence is remarkable: **Denmark and Sweden have no statutory national minimum wage at all.** Not because they don't believe in wage floors, because the wage floor is set by collective agreement, industry by industry, and covers nearly everybody without a law being needed (European Commission, 2022).
 
 **And now the honesty.** The Ghent system is **eroding.** Private unemployment-insurance funds that do *not* require union membership have been growing, and Nordic union density has been declining for decades from a much higher peak (Nordic Council of Ministers, 2025). "Nordic unions are strong" is true, and "Nordic unions are weakening" is also true, and a course that gives you only the first has given you a postcard.
 
-:::reveal What is the Ghent system, and why does it explain Nordic union density better than culture does? ||| A system in which unemployment insurance is administered by union-affiliated funds rather than by the state alone. To be insured against job loss you deal with a union-linked institution, so joining is the default. The OECD finds that the countries with union membership near or above 50% are essentially the Ghent countries — which means the density is largely explained by who runs the unemployment system, not by how much workers like unions.
+:::reveal What is the Ghent system, and why does it explain Nordic union density better than culture does? ||| A system in which unemployment insurance is administered by union-affiliated funds rather than by the state alone. To be insured against job loss you deal with a union-linked institution, so joining is the default. The OECD finds that the countries with union membership near or above 50% are essentially the Ghent countries, which means the density is largely explained by who runs the unemployment system, not by how much workers like unions.
 
 ## Sources
 - OECD. (2025). *Membership of unions and employers' organisations, and bargaining coverage*. OECD Publishing. https://www.oecd.org/en/publications/membership-of-unions-and-employers-organisations-and-bargaining-coverage_fe47107c-en.html
@@ -1807,40 +1807,40 @@ That is a devastating little fact, and you should let it change how you think. *
         {
           prompt: "Roughly what were trade union density rates in Sweden, Denmark and Iceland in 2024, and in the US in 2025?",
           answer:
-            "Around 65% in Sweden and Denmark, about 91% in Iceland (OECD, 2025) — against 10.0% in the United States in 2025 (BLS, 2026).",
+            "Around 65% in Sweden and Denmark, about 91% in Iceland (OECD, 2025), against 10.0% in the United States in 2025 (BLS, 2026).",
         },
         {
           prompt: "Why do Denmark and Sweden have no statutory national minimum wage?",
           answer:
-            "Because the wage floor is set by sectoral collective agreements, industry by industry, which cover nearly everybody — so no statute is needed.",
+            "Because the wage floor is set by sectoral collective agreements, industry by industry, which cover nearly everybody, so no statute is needed.",
         },
       ],
       body: `Germany is the country that will most confuse an American, because on paper its unions look *weak* and its workers have *more power* than almost anywhere else.
 
-**The numbers first.** German trade union density was about **14.1% in 2024** — barely above the US **10.0%** in 2025. But **collective bargaining coverage in Germany is roughly 49–50%** (2022–2024 estimates), against **11.2%** in the US in 2025 (ETUI/Worker Participation, 2024; BLS, 2026).
+**The numbers first.** German trade union density was about **14.1% in 2024**, barely above the US **10.0%** in 2025. But **collective bargaining coverage in Germany is roughly 49-50%** (2022-2024 estimates), against **11.2%** in the US in 2025 (ETUI/Worker Participation, 2024; BLS, 2026).
 
 Stop and look at that.
 
 | | Germany | United States |
 |---|---|---|
 | Union **members** | ~14.1% (2024) | 10.0% (2025) |
-| Workers **covered** by a union contract | ~49–50% (2022–24) | 11.2% (2025) |
+| Workers **covered** by a union contract | ~49-50% (2022-24) | 11.2% (2025) |
 
-Roughly the same share of workers *join*. **Roughly five times the share are covered.** Now go back to Question 3 from lesson 2 — *who bargains with whom, and at what level* — because it is the entire answer. German bargaining happens at the **sector** level, between an industry union and an employers' association, and the agreement covers the firms in that association whether or not a given worker ever signed anything.
+Roughly the same share of workers *join*. **Roughly five times the share are covered.** Now go back to Question 3 from lesson 2, *who bargains with whom, and at what level*, because it is the entire answer. German bargaining happens at the **sector** level, between an industry union and an employers' association, and the agreement covers the firms in that association whether or not a given worker ever signed anything.
 
 **And then Germany does something no American workplace does. Twice.**
 
-**Channel one: the works council (*Betriebsrat*).** Under the Works Constitution Act (*Betriebsverfassungsgesetz*), employees in a workplace can elect a works council. Note who elects it: **all the employees, not just union members.** It is not the union — it is a *statutory* body of the workforce. It has real **co-determination rights**: on things like working hours, overtime, shift patterns, holiday scheduling and disciplinary procedures, the employer generally cannot act **without the works council's agreement**. On restructuring and redundancies it has strong information and consultation rights.
+**Channel one: the works council (*Betriebsrat*).** Under the Works Constitution Act (*Betriebsverfassungsgesetz*), employees in a workplace can elect a works council. Note who elects it: **all the employees, not just union members.** It is not the union, it is a *statutory* body of the workforce. It has real **co-determination rights**: on things like working hours, overtime, shift patterns, holiday scheduling and disciplinary procedures, the employer generally cannot act **without the works council's agreement**. On restructuring and redundancies it has strong information and consultation rights.
 
-**Channel two: the supervisory board (*Aufsichtsrat*).** German companies have a two-tier board: a management board that runs the company, and a supervisory board that appoints and oversees it. Under the **Co-determination Act of 1976 (*Mitbestimmungsgesetz*)**, a company with **more than 2,000 employees** must fill **half** the seats on that supervisory board with **employee representatives**. Smaller companies (roughly 500–2,000 employees) have **one-third** employee representation.
+**Channel two: the supervisory board (*Aufsichtsrat*).** German companies have a two-tier board: a management board that runs the company, and a supervisory board that appoints and oversees it. Under the **Co-determination Act of 1976 (*Mitbestimmungsgesetz*)**, a company with **more than 2,000 employees** must fill **half** the seats on that supervisory board with **employee representatives**. Smaller companies (roughly 500-2,000 employees) have **one-third** employee representation.
 
 Read that again. **Half the supervisory board.** Workers, in the room where the CEO is hired and fired.
 
-**Now the catch, because there is always a catch and the caricature usually omits it.** The chair of the supervisory board comes from the shareholder side and holds a **casting vote** in a tie. So it is parity *of seats*, not parity *of power* — shareholders retain ultimate control. (The exception is the coal and steel industries, where a 1951 law gave genuinely full parity.) German co-determination is not workers running the company. It is workers being **structurally, legally, permanently in the room** — with a vote, a veto over a defined list of workplace decisions, and access to the information.
+**Now the catch, because there is always a catch and the caricature usually omits it.** The chair of the supervisory board comes from the shareholder side and holds a **casting vote** in a tie. So it is parity *of seats*, not parity *of power*, shareholders retain ultimate control. (The exception is the coal and steel industries, where a 1951 law gave genuinely full parity.) German co-determination is not workers running the company. It is workers being **structurally, legally, permanently in the room**, with a vote, a veto over a defined list of workplace decisions, and access to the information.
 
-**Does it work?** That is a live argument and this course will not settle it for you. Supporters point to Germany's manufacturing base, its low strike rates, and how German firms handled the 2008–09 crisis (cutting hours rather than jobs, with union agreement). Critics argue co-determination slows decisions and can entrench insiders — workers with permanent contracts — against everyone else. Both camps have evidence. **What is not arguable is that it exists**, and that it is a completely different answer to Question 3 than anything in American law.
+**Does it work?** That is a live argument and this course will not settle it for you. Supporters point to Germany's manufacturing base, its low strike rates, and how German firms handled the 2008-09 crisis (cutting hours rather than jobs, with union agreement). Critics argue co-determination slows decisions and can entrench insiders, workers with permanent contracts, against everyone else. Both camps have evidence. **What is not arguable is that it exists**, and that it is a completely different answer to Question 3 than anything in American law.
 
-:::reveal Germany and the US have similar union MEMBERSHIP rates. Why is German bargaining COVERAGE roughly five times higher? ||| Because German bargaining happens at the SECTOR level — an industry union negotiates with an employers' association, and the agreement covers the firms in it whether or not a given worker ever joined a union. American bargaining happens workplace by workplace, so coverage can barely exceed membership.
+:::reveal Germany and the US have similar union MEMBERSHIP rates. Why is German bargaining COVERAGE roughly five times higher? ||| Because German bargaining happens at the SECTOR level, an industry union negotiates with an employers' association, and the agreement covers the firms in it whether or not a given worker ever joined a union. American bargaining happens workplace by workplace, so coverage can barely exceed membership.
 
 ## Sources
 - ETUI / Worker Participation. (n.d.). *Germany: National industrial relations*. European Trade Union Institute. https://www.worker-participation.eu/national-industrial-relations/countries/germany
@@ -1857,10 +1857,10 @@ Read that again. **Half the supervisory board.** Workers, in the room where the 
         {
           prompt: "What is a German works council, and who elects it?",
           answer:
-            "A statutory body of the workforce, elected by ALL employees in a workplace — not just union members. It has co-determination rights: on working hours, overtime, shifts and discipline the employer generally cannot act without its agreement.",
+            "A statutory body of the workforce, elected by ALL employees in a workplace, not just union members. It has co-determination rights: on working hours, overtime, shifts and discipline the employer generally cannot act without its agreement.",
         },
         {
-          prompt: "Under the German Co-determination Act of 1976, what share of the supervisory board of a company with over 2,000 employees must be employee representatives — and what is the catch?",
+          prompt: "Under the German Co-determination Act of 1976, what share of the supervisory board of a company with over 2,000 employees must be employee representatives, and what is the catch?",
           answer:
             "Half. The catch is that the board's chair comes from the shareholder side and holds a casting vote in a tie, so it is parity of seats, not parity of power.",
         },
@@ -1871,17 +1871,17 @@ Toyota's workers have a Toyota union. Its members are the regular employees of T
 
 **Ask Question 3.** Who bargains with whom? The company's union bargains with the company. So the union's fortunes are tied, tightly and directly, to the firm's fortunes. If the company does badly, the union does badly. **This produces cooperation.** Japan's strike rates are among the lowest in the industrialized world, and Japanese unions have historically accepted restructuring in exchange for protecting the jobs of their members.
 
-**Then how does anyone get a raise?** Through a mechanism with no American equivalent: the **shuntō**, the "spring labour offensive." Every spring, enterprise unions across the whole economy bargain at roughly the same time. The national federation — **RENGO**, the Japanese Trade Union Confederation, formed in 1989 — sets a target, big exporters settle first, and their settlement becomes the benchmark everyone else negotiates against. It is a way of getting *coordinated*, economy-wide wage-setting out of a movement organized company by company. In the 2024 shuntō, RENGO reported an average wage increase above **5%** — its highest in over three decades, after decades of near-flat wages (JILPT, 2025).
+**Then how does anyone get a raise?** Through a mechanism with no American equivalent: the **shuntō**, the "spring labour offensive." Every spring, enterprise unions across the whole economy bargain at roughly the same time. The national federation, **RENGO**, the Japanese Trade Union Confederation, formed in 1989, sets a target, big exporters settle first, and their settlement becomes the benchmark everyone else negotiates against. It is a way of getting *coordinated*, economy-wide wage-setting out of a movement organized company by company. In the 2024 shuntō, RENGO reported an average wage increase above **5%**, its highest in over three decades, after decades of near-flat wages (JILPT, 2025).
 
 **And now Question 2, which is where the model bleeds.**
 
-The enterprise union is the union of the company's **regular employees**. Japan has an enormous **non-regular** workforce — part-time, fixed-term, and dispatched (agency) workers — who are, roughly speaking, not the people the enterprise union was built to protect. A union whose entire structure is "we are the company's people" struggles by design to defend the workers the company treats as *not* its people.
+The enterprise union is the union of the company's **regular employees**. Japan has an enormous **non-regular** workforce, part-time, fixed-term, and dispatched (agency) workers, who are, roughly speaking, not the people the enterprise union was built to protect. A union whose entire structure is "we are the company's people" struggles by design to defend the workers the company treats as *not* its people.
 
-Japan's estimated unionization rate was **16.1% as of June 30, 2024** — the lowest on record, down from around 30% in 1990 (Ministry of Health, Labour and Welfare, 2024).
+Japan's estimated unionization rate was **16.1% as of June 30, 2024**, the lowest on record, down from around 30% in 1990 (Ministry of Health, Labour and Welfare, 2024).
 
-**The lesson.** Enterprise unionism buys cooperation, stability, and low conflict — and pays for it by drawing a line around who counts as "us." That is not a Japanese quirk. **It is the same trade-off you saw the AFL make in 1886**, and the same one the CIO refused in 1935. The question of *who is in the union* is never a detail. It is the whole design.
+**The lesson.** Enterprise unionism buys cooperation, stability, and low conflict, and pays for it by drawing a line around who counts as "us." That is not a Japanese quirk. **It is the same trade-off you saw the AFL make in 1886**, and the same one the CIO refused in 1935. The question of *who is in the union* is never a detail. It is the whole design.
 
-:::reveal What is an enterprise union, and which group of workers does that structure systematically leave out in Japan? ||| A union organized at a single company, whose members are that company's regular employees. It systematically leaves out non-regular workers — part-time, fixed-term and dispatched (agency) workers — because a union built on "we are the company's people" struggles by design to defend the workers the company treats as not its people.
+:::reveal What is an enterprise union, and which group of workers does that structure systematically leave out in Japan? ||| A union organized at a single company, whose members are that company's regular employees. It systematically leaves out non-regular workers, part-time, fixed-term and dispatched (agency) workers, because a union built on "we are the company's people" struggles by design to defend the workers the company treats as not its people.
 
 ## Sources
 - Ministry of Health, Labour and Welfare (Japan). (2024). *Basic survey on labour unions, 2024*. Reported in Japan Institute for Labour Policy and Training, *Japan Labor Issues*. https://www.jil.go.jp/english/jli/documents/2025/054-02.pdf
@@ -1901,7 +1901,7 @@ Japan's estimated unionization rate was **16.1% as of June 30, 2024** — the lo
         },
         {
           prompt: "What was Japan's estimated unionization rate as of June 2024?",
-          answer: "16.1% — the lowest on record, down from around 30% in 1990 (MHLW, 2024).",
+          answer: "16.1%, the lowest on record, down from around 30% in 1990 (MHLW, 2024).",
         },
       ],
       body: `This lesson requires you to do something genuinely difficult: **stop assuming the word means what you think it means.**
@@ -1912,19 +1912,19 @@ It is not a weak union. It is a **different kind of object**, and calling it a "
 
 **Run the four questions, straight down the statute.**
 
-**Q1 — Who is allowed to organise?** Under China's **Trade Union Law**, trade unions operate **under the leadership of the Communist Party of China**, and the ACFTU is the single, unified national trade union organization. A union at a workplace must **affiliate to the ACFTU**, and establishing one requires **approval from the trade union body at the next level up**.
+**Q1, Who is allowed to organise?** Under China's **Trade Union Law**, trade unions operate **under the leadership of the Communist Party of China**, and the ACFTU is the single, unified national trade union organization. A union at a workplace must **affiliate to the ACFTU**, and establishing one requires **approval from the trade union body at the next level up**.
 
 So: you may join a union. You may not found an **independent** one. There is one union, its structure runs upward to a federation, and that federation's leadership relationship is defined by law as running to the party.
 
-**Q2 — Who is excluded?** Anyone who wants a union that is not that one.
+**Q2, Who is excluded?** Anyone who wants a union that is not that one.
 
-**Q3 — Who bargains with whom?** The workplace union is, structurally, part of an apparatus whose loyalties the law defines. When a dispute pits workers against an employer — particularly a state-linked employer, or a major local one — the union is not a straightforwardly independent party to it. In practice the ACFTU does a great deal of real work — welfare administration, legal aid, some wage negotiation — and it would be a caricature to say it does nothing for workers. **But it is not, and is not designed to be, an organization whose first duty is to its members against the state.**
+**Q3, Who bargains with whom?** The workplace union is, structurally, part of an apparatus whose loyalties the law defines. When a dispute pits workers against an employer, particularly a state-linked employer, or a major local one, the union is not a straightforwardly independent party to it. In practice the ACFTU does a great deal of real work, welfare administration, legal aid, some wage negotiation, and it would be a caricature to say it does nothing for workers. **But it is not, and is not designed to be, an organization whose first duty is to its members against the state.**
 
-**Q4 — What happens to you if you try?** The right to strike appeared in China's 1975 and 1978 constitutions. It was **removed from the 1982 Constitution** and is not a constitutional right today (Chang & Brown, 2017). Strikes still happen — a lot of them — but they happen *outside* any legal framework that protects the people who join them. Workers who attempt to organize independently, and the labour NGOs and activists who assist them, have been detained; international bodies including the ILO's supervisory machinery and the International Trade Union Confederation have raised this repeatedly (ITUC, n.d.).
+**Q4, What happens to you if you try?** The right to strike appeared in China's 1975 and 1978 constitutions. It was **removed from the 1982 Constitution** and is not a constitutional right today (Chang & Brown, 2017). Strikes still happen, a lot of them, but they happen *outside* any legal framework that protects the people who join them. Workers who attempt to organize independently, and the labour NGOs and activists who assist them, have been detained; international bodies including the ILO's supervisory machinery and the International Trade Union Confederation have raised this repeatedly (ITUC, n.d.).
 
-**And the international marker.** China has **not ratified** ILO Convention No. **87** (Freedom of Association and Protection of the Right to Organise, 1948) or Convention No. **98** (Right to Organise and Collective Bargaining, 1949) — the two conventions that define the international floor you will meet in Section 7 (ILO NORMLEX, n.d.).
+**And the international marker.** China has **not ratified** ILO Convention No. **87** (Freedom of Association and Protection of the Right to Organise, 1948) or Convention No. **98** (Right to Organise and Collective Bargaining, 1949), the two conventions that define the international floor you will meet in Section 7 (ILO NORMLEX, n.d.).
 
-**Why this lesson is in the course.** Not to score a political point. Because it teaches you the sharpest possible version of **Question 1**. In most of this course, "who may organise?" has been a question about *obstacles* — cost, retaliation, exclusion, hostile employers. In China it is a question about **definition**: the thing you are permitted to join is not the thing an American or a Swede means by the word.
+**Why this lesson is in the course.** Not to score a political point. Because it teaches you the sharpest possible version of **Question 1**. In most of this course, "who may organise?" has been a question about *obstacles*, cost, retaliation, exclusion, hostile employers. In China it is a question about **definition**: the thing you are permitted to join is not the thing an American or a Swede means by the word.
 
 When you compare countries, the word "union" is not a fixed unit. **Check what the institution actually is before you compare the numbers.** A membership figure means nothing if you have not asked who the organization answers to.
 
@@ -1955,7 +1955,7 @@ When you compare countries, the word "union" is not a fixed unit. **Check what t
             "It appeared in the 1975 and 1978 constitutions and was removed from the 1982 Constitution. It is not a constitutional right today. Strikes still occur, but outside any framework that protects the people who join them.",
         },
       ],
-      body: `Sometimes a union is not primarily about wages at all. Sometimes it is the only organization a repressive state has failed to control — and it becomes the vehicle for overthrowing that state.
+      body: `Sometimes a union is not primarily about wages at all. Sometimes it is the only organization a repressive state has failed to control, and it becomes the vehicle for overthrowing that state.
 
 Two cases, on two continents, in the same decade.
 
@@ -1967,13 +1967,13 @@ Poland in 1980 was a communist state that described itself as a *workers'* state
 
 In **August 1980**, workers at the Lenin Shipyard in **Gdańsk** occupied the yard, led by an electrician named **Lech Wałęsa**. They posted **21 Demands** on the shipyard gate. Demand number one was not about pay. It was the right to form **free trade unions, independent of the Communist Party**. (The handwritten boards are now inscribed on **UNESCO's Memory of the World** register.)
 
-On **31 August 1980**, the government signed the **Gdańsk Agreement**, conceding an independent, self-governing trade union — the first in the Soviet bloc. **Solidarity** was born, and within about a year had grown to roughly **10 million members** — an extraordinary share of the country's working population.
+On **31 August 1980**, the government signed the **Gdańsk Agreement**, conceding an independent, self-governing trade union, the first in the Soviet bloc. **Solidarity** was born, and within about a year had grown to roughly **10 million members**, an extraordinary share of the country's working population.
 
 The state's answer came on **13 December 1981**: **martial law**. Solidarity was banned, its leaders interned. It survived underground for most of a decade.
 
-And then it won. The **Round Table talks** of February–April **1989** produced partly free elections in **June 1989**, which Solidarity's candidates swept. Poland became the first Soviet-bloc country to break, and the rest of the bloc followed within months.
+And then it won. The **Round Table talks** of February-April **1989** produced partly free elections in **June 1989**, which Solidarity's candidates swept. Poland became the first Soviet-bloc country to break, and the rest of the bloc followed within months.
 
-**Sit with what that means.** A trade union — a *trade union* — was the instrument that ended communist rule in Poland. Question 1 ("who may organise?") turned out, in a one-party state, to be the same question as "who governs?"
+**Sit with what that means.** A trade union, a *trade union*, was the instrument that ended communist rule in Poland. Question 1 ("who may organise?") turned out, in a one-party state, to be the same question as "who governs?"
 
 ---
 
@@ -1981,17 +1981,17 @@ And then it won. The **Round Table talks** of February–April **1989** produced
 
 Under apartheid, Black South Africans could not vote. Black trade unions were, for most of the apartheid era, outside the legal industrial-relations system entirely.
 
-In **1973**, a wave of strikes broke out in **Durban** — large, spreading, and impossible to ignore. In **1979**, the government-appointed **Wiehahn Commission** recommended that Black trade unions be granted **legal recognition** and brought into the registration system. The regime's reasoning was **control**: unregistered Black unions were growing anyway, and a registered union can be regulated. In **1985**, the **Congress of South African Trade Unions (COSATU)** was founded, and it turned that legal opening into a weapon.
+In **1973**, a wave of strikes broke out in **Durban**, large, spreading, and impossible to ignore. In **1979**, the government-appointed **Wiehahn Commission** recommended that Black trade unions be granted **legal recognition** and brought into the registration system. The regime's reasoning was **control**: unregistered Black unions were growing anyway, and a registered union can be regulated. In **1985**, the **Congress of South African Trade Unions (COSATU)** was founded, and it turned that legal opening into a weapon.
 
 Because Black workers had **no vote**, the union became the political vehicle. COSATU's strikes and "stayaways" were not only about wages; they were about apartheid. **In a country where you cannot vote, withdrawing your labour is the ballot you have.** COSATU, allied with the ANC and the United Democratic Front, became one of the central engines of the movement that ended apartheid in 1994.
 
-**And then it got complicated — which is the part you must not skip.** After 1994 COSATU entered a formal governing alliance with the ANC, the party it had helped bring to power. A union federation allied to the governing party is in a genuinely difficult position: it must bargain with a state run by its own allies. That tension is live and **actively contested in South African politics today**, and it is not this course's job to adjudicate it. In **August 2012**, police killed **34 striking miners at Marikana**; a judicial commission of inquiry reported in **2015**, and responsibility for what happened remains politically contested and litigated. It is a reminder that a union movement's relationship to a state it helped create does not stay simple.
+**And then it got complicated, which is the part you must not skip.** After 1994 COSATU entered a formal governing alliance with the ANC, the party it had helped bring to power. A union federation allied to the governing party is in a genuinely difficult position: it must bargain with a state run by its own allies. That tension is live and **actively contested in South African politics today**, and it is not this course's job to adjudicate it. In **August 2012**, police killed **34 striking miners at Marikana**; a judicial commission of inquiry reported in **2015**, and responsibility for what happened remains politically contested and litigated. It is a reminder that a union movement's relationship to a state it helped create does not stay simple.
 
 ---
 
-**What both cases teach.** When workers have no other legal channel — no vote, no party, no free press — **the union becomes the channel**, and the state understands that perfectly well. That is why authoritarian governments so often permit *a* union and forbid *an independent* one. They are not confused about what a union is. They know exactly what it is.
+**What both cases teach.** When workers have no other legal channel, no vote, no party, no free press, **the union becomes the channel**, and the state understands that perfectly well. That is why authoritarian governments so often permit *a* union and forbid *an independent* one. They are not confused about what a union is. They know exactly what it is.
 
-:::reveal Why did a trade union become the vehicle for democratic change in both Poland and apartheid South Africa? ||| Because in each case workers had no other legal channel — no free vote, no independent party, no free press. When the union is the only organization the state has failed to control, "who may organise?" becomes the same question as "who governs?" — which is precisely why authoritarian states permit a union but forbid an independent one.
+:::reveal Why did a trade union become the vehicle for democratic change in both Poland and apartheid South Africa? ||| Because in each case workers had no other legal channel, no free vote, no independent party, no free press. When the union is the only organization the state has failed to control, "who may organise?" becomes the same question as "who governs?", which is precisely why authoritarian states permit a union but forbid an independent one.
 
 ## Sources
 - UNESCO. (n.d.). *Twenty-one demands, Gdańsk, August 1980: The birth of the Solidarity trade union*. Memory of the World Register. https://www.unesco.org/en/memory-world/twenty-one-demands-gdansk-august-1980-birth-solidarity-trades-union-massive-social-movement
@@ -2007,7 +2007,7 @@ Because Black workers had **no vote**, the union became the political vehicle. C
       recallContent: [
         {
           prompt: "What was the first of Solidarity's 21 Demands at Gdańsk in August 1980?",
-          answer: "The right to form free trade unions, independent of the Communist Party. Not pay — the right to organise.",
+          answer: "The right to form free trade unions, independent of the Communist Party. Not pay, the right to organise.",
         },
         {
           prompt: "Why did COSATU's strikes function as politics in apartheid South Africa?",
@@ -2015,37 +2015,37 @@ Because Black workers had **no vote**, the union became the political vehicle. C
             "Because Black South Africans could not vote. In a country where you cannot vote, withdrawing your labour is the ballot you have.",
         },
       ],
-      body: `The last stop is the hardest, and the course would be dishonest without it. Everywhere else in this section, workers had *some* answer to Question 4 — *what happens if you try?* Here, for a very large number of people, the answer is close to: **everything you have.**
+      body: `The last stop is the hardest, and the course would be dishonest without it. Everywhere else in this section, workers had *some* answer to Question 4, *what happens if you try?* Here, for a very large number of people, the answer is close to: **everything you have.**
 
 **The kafala system.**
 
-Across much of the Gulf, migrant workers — who in several of these countries are the **overwhelming majority of the workforce** — enter under a sponsorship system known as **kafala**. A worker's legal status in the country is tied to a **specific employer**, the *kafeel*. Historically this meant that without the employer's permission you could not change jobs, and in some cases could not leave the country. Layer on top of that the standard pattern documented by the ILO and by rights organizations: **recruitment debt** (workers pay large fees to agents to get the job, arriving already in debt), **passport confiscation**, and wage theft.
+Across much of the Gulf, migrant workers, who in several of these countries are the **overwhelming majority of the workforce**, enter under a sponsorship system known as **kafala**. A worker's legal status in the country is tied to a **specific employer**, the *kafeel*. Historically this meant that without the employer's permission you could not change jobs, and in some cases could not leave the country. Layer on top of that the standard pattern documented by the ILO and by rights organizations: **recruitment debt** (workers pay large fees to agents to get the job, arriving already in debt), **passport confiscation**, and wage theft.
 
 **Run Question 4.** If your visa, your housing, your ability to change jobs, and your ability to go home all run through one man, then "I'd like to raise a grievance" is not a workplace conversation. It is a bet on the rest of your life.
 
-**What has changed — and this is real, and you should say so.**
+**What has changed, and this is real, and you should say so.**
 
 Qatar, under sustained international scrutiny and in a formal programme with the ILO, made substantial legal reforms in 2020:
 
-- **Law No. 17 of 2020** introduced a **non-discriminatory minimum wage** — the first in the region — of **QAR 1,000 per month**, plus allowances for food and accommodation where the employer does not provide them.
+- **Law No. 17 of 2020** introduced a **non-discriminatory minimum wage**, the first in the region, of **QAR 1,000 per month**, plus allowances for food and accommodation where the employer does not provide them.
 - **Law No. 19 of 2020** **removed the No-Objection Certificate requirement**, so a migrant worker can change jobs without needing the employer's permission. Exit-permit requirements had been removed earlier.
 
 The ILO described these as dismantling core elements of kafala (ILO, 2020). That is a genuine change, and pretending otherwise would be exactly the kind of dishonesty this course is against.
 
 **What has NOT changed.**
 
-**Migrant workers in Qatar still may not form or join trade unions.** The right to form workers' organizations is reserved to Qatari nationals. The main workplace mechanism available to migrants is an elected **"joint committee"** at the enterprise — a consultative body, not a union with the right to bargain and strike. Qatar has **not ratified** ILO Convention No. **87** or No. **98** (U.S. Department of State, 2025; ILO, n.d.).
+**Migrant workers in Qatar still may not form or join trade unions.** The right to form workers' organizations is reserved to Qatari nationals. The main workplace mechanism available to migrants is an elected **"joint committee"** at the enterprise, a consultative body, not a union with the right to bargain and strike. Qatar has **not ratified** ILO Convention No. **87** or No. **98** (U.S. Department of State, 2025; ILO, n.d.).
 
 So run the four questions honestly, as of **2026**:
 
 | | Answer |
 |---|---|
-| **Q1 — who may organise?** | Nationals. Migrant workers, who are most of the workforce, may not form or join a trade union. |
-| **Q2 — who is excluded?** | The majority of the people doing the work. |
-| **Q3 — who bargains with whom?** | Largely, nobody bargains. There are consultative joint committees; there is a minimum wage set by law. |
-| **Q4 — what happens if you try?** | Your legal presence in the country has historically depended on your employer. Reforms have loosened that; enforcement is contested. |
+| **Q1, who may organise?** | Nationals. Migrant workers, who are most of the workforce, may not form or join a trade union. |
+| **Q2, who is excluded?** | The majority of the people doing the work. |
+| **Q3, who bargains with whom?** | Largely, nobody bargains. There are consultative joint committees; there is a minimum wage set by law. |
+| **Q4, what happens if you try?** | Your legal presence in the country has historically depended on your employer. Reforms have loosened that; enforcement is contested. |
 
-**Be careful here, in both directions.** Reporting on the Gulf runs to two failure modes: the promotional version, which recites the 2020 laws and stops; and the atrocity version, which recites abuses and ignores that the law changed. Both are propaganda. **The accurate statement is: the legal framework improved substantially in 2020, freedom of association for migrant workers did not, and independent monitors — including the ILO's own annual reporting — describe enforcement as uneven.** Date every claim. Check whether it still holds.
+**Be careful here, in both directions.** Reporting on the Gulf runs to two failure modes: the promotional version, which recites the 2020 laws and stops; and the atrocity version, which recites abuses and ignores that the law changed. Both are propaganda. **The accurate statement is: the legal framework improved substantially in 2020, freedom of association for migrant workers did not, and independent monitors, including the ILO's own annual reporting, describe enforcement as uneven.** Date every claim. Check whether it still holds.
 
 **And one last thought, which brings you home.** Look at the shape of what is happening here: a category of worker is defined *by law* as outside the system that protects everyone else, and the workers in that category are the ones doing the hardest, most dangerous work.
 
@@ -2053,7 +2053,7 @@ You have seen that shape before. It was in **lesson 10**, in a 1935 American sta
 
 The mechanism is not exotic. It is the oldest one there is.
 
-:::reveal Under the kafala system, what is the practical consequence of tying a migrant worker's legal status to one specific employer? ||| Your visa, housing, ability to change jobs and ability to leave the country all run through one person — so raising a grievance is not a workplace conversation, it is a bet on the rest of your life. Qatar's 2020 reforms removed the No-Objection Certificate requirement and introduced a minimum wage, but migrant workers still may not form or join trade unions.
+:::reveal Under the kafala system, what is the practical consequence of tying a migrant worker's legal status to one specific employer? ||| Your visa, housing, ability to change jobs and ability to leave the country all run through one person, so raising a grievance is not a workplace conversation, it is a bet on the rest of your life. Qatar's 2020 reforms removed the No-Objection Certificate requirement and introduced a minimum wage, but migrant workers still may not form or join trade unions.
 
 ## Sources
 - International Labour Organization. (2020, August 30). *Dismantling the kafala system and introducing a minimum wage mark new era for Qatar labour market*. https://www.ilo.org/resource/article/dismantling-kafala-system-and-introducing-minimum-wage-mark-new-era-qatar
@@ -2081,7 +2081,7 @@ The mechanism is not exotic. It is the oldest one there is.
             ],
             correctIndex: 1,
             explanation:
-              "Denmark, Sweden, Finland, Iceland and partly Belgium. The OECD (2025) finds the countries with membership near or above 50% are essentially the Ghent countries — density is largely explained by plumbing, not culture.",
+              "Denmark, Sweden, Finland, Iceland and partly Belgium. The OECD (2025) finds the countries with membership near or above 50% are essentially the Ghent countries, density is largely explained by plumbing, not culture.",
             sourceLessonSlug: "nordics-ghent-and-sectoral-bargaining",
           },
           {
@@ -2089,7 +2089,7 @@ The mechanism is not exotic. It is the oldest one there is.
             options: ["About 25%", "About 50%", "About 65%", "About 91%"],
             correctIndex: 3,
             explanation:
-              "About 91% in Iceland; around 65% in Sweden, Denmark and Finland — against 10.0% in the US in 2025 (OECD, 2025; BLS, 2026).",
+              "About 91% in Iceland; around 65% in Sweden, Denmark and Finland, against 10.0% in the US in 2025 (OECD, 2025; BLS, 2026).",
             sourceLessonSlug: "nordics-ghent-and-sectoral-bargaining",
           },
           {
@@ -2102,14 +2102,14 @@ The mechanism is not exotic. It is the oldest one there is.
             ],
             correctIndex: 1,
             explanation:
-              "A perfect illustration of Question 3 — bargaining LEVEL. The floor exists; it just isn't a statute.",
+              "A perfect illustration of Question 3, bargaining LEVEL. The floor exists; it just isn't a statute.",
             sourceLessonSlug: "nordics-ghent-and-sectoral-bargaining",
           },
           {
             prompt: "What honest complication does the course add about the Nordic model?",
             options: [
               "That Nordic unions have never been strong",
-              "That the Ghent system is ERODING — private unemployment funds not requiring union membership have grown, and Nordic density has declined for decades from a higher peak",
+              "That the Ghent system is ERODING, private unemployment funds not requiring union membership have grown, and Nordic density has declined for decades from a higher peak",
               "That Nordic countries have banned strikes",
               "That the OECD data are fabricated",
             ],
@@ -2122,13 +2122,13 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "Germany's union MEMBERSHIP rate (~14.1%, 2024) is close to the US rate (10.0%, 2025). What is dramatically different?",
             options: [
               "German unions have more money",
-              "German bargaining COVERAGE is roughly 49–50%, versus 11.2% in the US — because German bargaining happens at the SECTOR level",
+              "German bargaining COVERAGE is roughly 49-50%, versus 11.2% in the US, because German bargaining happens at the SECTOR level",
               "Germany has no strikes",
               "German unions are run by the government",
             ],
             correctIndex: 1,
             explanation:
-              "Roughly the same share join; roughly five times the share are covered. Question 3 — who bargains with whom, and at what level — is the entire answer.",
+              "Roughly the same share join; roughly five times the share are covered. Question 3, who bargains with whom, and at what level, is the entire answer.",
             sourceLessonSlug: "germany-codetermination",
           },
           {
@@ -2136,27 +2136,27 @@ The mechanism is not exotic. It is the oldest one there is.
             options: ["One-tenth", "One-third", "Half", "All of it"],
             correctIndex: 2,
             explanation:
-              "Half the seats. Workers in the room where the CEO is hired and fired. Companies of roughly 500–2,000 employees have one-third.",
+              "Half the seats. Workers in the room where the CEO is hired and fired. Companies of roughly 500-2,000 employees have one-third.",
             sourceLessonSlug: "germany-codetermination",
           },
           {
             prompt: "What is the \"catch\" in German board-level co-determination that the caricature usually omits?",
             options: [
               "Employee representatives cannot vote",
-              "The board chair comes from the shareholder side and holds a CASTING VOTE in a tie — so it is parity of seats, not parity of power",
+              "The board chair comes from the shareholder side and holds a CASTING VOTE in a tie, so it is parity of seats, not parity of power",
               "The law applies only to state-owned companies",
               "Workers must buy shares to qualify",
             ],
             correctIndex: 1,
             explanation:
-              "Shareholders retain ultimate control (except in coal and steel, where a 1951 law gave full parity). Co-determination is not workers running the company — it is workers structurally, permanently in the room.",
+              "Shareholders retain ultimate control (except in coal and steel, where a 1951 law gave full parity). Co-determination is not workers running the company, it is workers structurally, permanently in the room.",
             sourceLessonSlug: "germany-codetermination",
           },
           {
             prompt: "Who elects a German works council (Betriebsrat)?",
             options: [
               "The union's national leadership",
-              "ALL the employees in a workplace — not just union members",
+              "ALL the employees in a workplace, not just union members",
               "The company's shareholders",
               "The federal labour ministry",
             ],
@@ -2182,7 +2182,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "Which workers does Japan's enterprise-union structure systematically leave out?",
             options: [
               "Senior managers",
-              "Non-regular workers — part-time, fixed-term and dispatched (agency) workers",
+              "Non-regular workers, part-time, fixed-term and dispatched (agency) workers",
               "Engineers",
               "Public employees",
             ],
@@ -2195,13 +2195,13 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "What is Japan's shuntō?",
             options: [
               "A law requiring annual wage increases",
-              "The 'spring labour offensive' — enterprise unions across the economy bargain at roughly the same time, with RENGO setting a target and big exporters' settlements setting the benchmark",
+              "The 'spring labour offensive', enterprise unions across the economy bargain at roughly the same time, with RENGO setting a target and big exporters' settlements setting the benchmark",
               "A ban on strikes during the spring",
               "A government wage board",
             ],
             correctIndex: 1,
             explanation:
-              "It gets coordinated, economy-wide wage-setting out of a movement organized company by company. In 2024, RENGO reported an average increase above 5% — its highest in over three decades.",
+              "It gets coordinated, economy-wide wage-setting out of a movement organized company by company. In 2024, RENGO reported an average increase above 5%, its highest in over three decades.",
             sourceLessonSlug: "japan-enterprise-unions",
           },
           {
@@ -2214,7 +2214,7 @@ The mechanism is not exotic. It is the oldest one there is.
             ],
             correctIndex: 1,
             explanation:
-              "You may join a union. You may not found an independent one. The word 'union' is not a fixed unit across countries — check what the institution actually IS before comparing membership numbers.",
+              "You may join a union. You may not found an independent one. The word 'union' is not a fixed unit across countries, check what the institution actually IS before comparing membership numbers.",
             sourceLessonSlug: "china-acftu-a-different-object",
           },
           {
@@ -2227,7 +2227,7 @@ The mechanism is not exotic. It is the oldest one there is.
             ],
             correctIndex: 1,
             explanation:
-              "Strikes still happen — many of them — but outside any legal framework that protects the people who join them. China has also not ratified ILO Conventions 87 or 98.",
+              "Strikes still happen, many of them, but outside any legal framework that protects the people who join them. China has also not ratified ILO Conventions 87 or 98.",
             sourceLessonSlug: "china-acftu-a-different-object",
           },
           {
@@ -2240,14 +2240,14 @@ The mechanism is not exotic. It is the oldest one there is.
             ],
             correctIndex: 1,
             explanation:
-              "Not pay — the right to organise. In a one-party state, Question 1 (\"who may organise?\") turned out to be the same question as \"who governs?\"",
+              "Not pay, the right to organise. In a one-party state, Question 1 (\"who may organise?\") turned out to be the same question as \"who governs?\"",
             sourceLessonSlug: "solidarity-and-cosatu",
           },
           {
             prompt: "Why did the apartheid government's Wiehahn Commission (1979) recommend legally recognizing Black trade unions?",
             options: [
               "Out of a commitment to racial equality",
-              "For CONTROL — unregistered Black unions were growing anyway, and a registered union can be regulated",
+              "For CONTROL, unregistered Black unions were growing anyway, and a registered union can be regulated",
               "Because the ILO ordered it",
               "Because Black workers had won the vote",
             ],
@@ -2266,14 +2266,14 @@ The mechanism is not exotic. It is the oldest one there is.
             ],
             correctIndex: 1,
             explanation:
-              "Paired with Law No. 17 of 2020, which set a non-discriminatory minimum wage — the first in the region. The ILO described these as dismantling core elements of kafala. That change is real.",
+              "Paired with Law No. 17 of 2020, which set a non-discriminatory minimum wage, the first in the region. The ILO described these as dismantling core elements of kafala. That change is real.",
             sourceLessonSlug: "gulf-kafala",
           },
           {
             prompt: "What has NOT changed for migrant workers in Qatar as of 2026?",
             options: [
               "They still cannot be paid a minimum wage",
-              "They still may not form or join TRADE UNIONS — that right is reserved to Qatari nationals; the main mechanism is a consultative 'joint committee'",
+              "They still may not form or join TRADE UNIONS, that right is reserved to Qatari nationals; the main mechanism is a consultative 'joint committee'",
               "They still cannot leave the country under any circumstances",
               "They are still barred from any legal complaint",
             ],
@@ -2286,7 +2286,7 @@ The mechanism is not exotic. It is the oldest one there is.
             prompt: "The course says the Gulf's exclusion of migrant workers has a shape you have already seen. Where?",
             options: [
               "In the Taft-Hartley Act's secondary-boycott ban",
-              "In the NLRA's 1935 exclusion of \"agricultural laborers\" and workers \"in the domestic service\" — a category of worker defined BY LAW as outside the system that protects everyone else",
+              "In the NLRA's 1935 exclusion of \"agricultural laborers\" and workers \"in the domestic service\", a category of worker defined BY LAW as outside the system that protects everyone else",
               "In the Chinese Trade Union Law",
               "In Germany's works councils",
             ],
@@ -2312,7 +2312,7 @@ The mechanism is not exotic. It is the oldest one there is.
         {
           prompt: "What did Qatar's Law No. 17 of 2020 introduce?",
           answer:
-            "A non-discriminatory minimum wage — the first in the region — of QAR 1,000 per month, plus allowances for food and accommodation where the employer does not provide them.",
+            "A non-discriminatory minimum wage, the first in the region, of QAR 1,000 per month, plus allowances for food and accommodation where the employer does not provide them.",
         },
       ],
       body: `After six countries you have a fair question: **is there any floor at all?**
@@ -2321,14 +2321,14 @@ There is. It is called the **International Labour Organization**, and it is olde
 
 **What it is.** The ILO was created in **1919**, in the treaty that ended the First World War, on the argument that lasting peace was impossible without social justice. It became a specialized agency of the UN in 1946 and won the **Nobel Peace Prize in 1969**.
 
-**And it has one genuinely strange feature you should know.** The ILO is **tripartite**. Its member delegations are not just governments. Each member state sends **government delegates, employer delegates, and worker delegates** — and the employers and the workers vote **independently of their own government**. There is no other body in the UN system built like that. A country's trade unions get a seat and a vote at an international organization, and can vote against their own state.
+**And it has one genuinely strange feature you should know.** The ILO is **tripartite**. Its member delegations are not just governments. Each member state sends **government delegates, employer delegates, and worker delegates**, and the employers and the workers vote **independently of their own government**. There is no other body in the UN system built like that. A country's trade unions get a seat and a vote at an international organization, and can vote against their own state.
 
 **How its rules work.**
 
 - A **Convention** is a treaty. It binds a country **only if that country ratifies it.** Ratification is voluntary.
 - A **Recommendation** is guidance. It binds nobody.
 
-Some conventions are designated **fundamental**. There were **eight** for decades; in **June 2022** the International Labour Conference added occupational safety and health, recognizing Conventions **155** (1981) and **187** (2006) as fundamental too — so there are now **ten**, across five principles:
+Some conventions are designated **fundamental**. There were **eight** for decades; in **June 2022** the International Labour Conference added occupational safety and health, recognizing Conventions **155** (1981) and **187** (2006) as fundamental too, so there are now **ten**, across five principles:
 
 | Principle | Core conventions |
 |---|---|
@@ -2336,11 +2336,11 @@ Some conventions are designated **fundamental**. There were **eight** for decade
 | Elimination of forced labour | C029 (1930), C105 (1957) |
 | Abolition of child labour | C138 (1973), C182 (1999) |
 | Elimination of discrimination at work | C100 (1951), C111 (1958) |
-| A safe and healthy working environment | C155 (1981), C187 (2006) — *added 2022* |
+| A safe and healthy working environment | C155 (1981), C187 (2006), *added 2022* |
 
 **Now the uncomfortable table, and it is the reason this lesson exists.**
 
-**The United States has ratified only two of the fundamental conventions** — C105 (abolition of forced labour) and C182 (worst forms of child labour). **It has not ratified C087 or C098** — the freedom-of-association and collective-bargaining conventions. Neither has China. Neither has Qatar (ILO NORMLEX, n.d.).
+**The United States has ratified only two of the fundamental conventions**, C105 (abolition of forced labour) and C182 (worst forms of child labour). **It has not ratified C087 or C098**, the freedom-of-association and collective-bargaining conventions. Neither has China. Neither has Qatar (ILO NORMLEX, n.d.).
 
 That should stop you. Three countries that could hardly be more different, on the same list, on the two conventions that are the heart of everything this course has been about.
 
@@ -2348,15 +2348,15 @@ That should stop you. Three countries that could hardly be more different, on th
 
 Two things, and be precise about both.
 
-**One: a principle binds even without ratification.** The ILO's **1998 Declaration on Fundamental Principles and Rights at Work** holds that all members, *by virtue of membership alone*, are obliged to respect the fundamental principles — including freedom of association — **whether or not** they have ratified the relevant conventions. The **Committee on Freedom of Association**, a tripartite quasi-judicial body created in 1951, can and does hear complaints against states that have never ratified C087 or C098, including China and the United States (ILO, n.d.).
+**One: a principle binds even without ratification.** The ILO's **1998 Declaration on Fundamental Principles and Rights at Work** holds that all members, *by virtue of membership alone*, are obliged to respect the fundamental principles, including freedom of association, **whether or not** they have ratified the relevant conventions. The **Committee on Freedom of Association**, a tripartite quasi-judicial body created in 1951, can and does hear complaints against states that have never ratified C087 or C098, including China and the United States (ILO, n.d.).
 
-**Two: and yet.** The ILO has **no police, no fines, no court, and no power to compel anybody.** Its supervisory system reports, examines, publishes, and — at its most severe, through a rarely used **Commission of Inquiry** under Article 26 of its Constitution — investigates and names. That is the maximum. Its ultimate sanction is **embarrassment**.
+**Two: and yet.** The ILO has **no police, no fines, no court, and no power to compel anybody.** Its supervisory system reports, examines, publishes, and (at its most severe, through a rarely used **Commission of Inquiry** under Article 26 of its Constitution) investigates and names. That is the maximum. Its ultimate sanction is **embarrassment**.
 
-**Which is the honest answer to "is there a floor?"** Yes, and it is made of paper. It matters — states do respond to ILO findings, Qatar's 2020 reforms came out of a formal ILO engagement that began with an Article 26 complaint, and having an international standard to point at is genuinely useful to workers and to journalists. But it is **not** a law that anyone enforces against a determined government.
+**Which is the honest answer to "is there a floor?"** Yes, and it is made of paper. It matters, states do respond to ILO findings, Qatar's 2020 reforms came out of a formal ILO engagement that began with an Article 26 complaint, and having an international standard to point at is genuinely useful to workers and to journalists. But it is **not** a law that anyone enforces against a determined government.
 
 **The floor is a floor the way a line painted on the ground is a fence.**
 
-:::reveal Which two of the ILO's ten fundamental conventions has the United States NOT ratified — and who else has not? ||| C087 (freedom of association, 1948) and C098 (the right to organise and bargain collectively, 1949). The US has ratified only two fundamental conventions in total (C105 and C182). China and Qatar have also not ratified C087 or C098.
+:::reveal Which two of the ILO's ten fundamental conventions has the United States NOT ratified, and who else has not? ||| C087 (freedom of association, 1948) and C098 (the right to organise and bargain collectively, 1949). The US has ratified only two fundamental conventions in total (C105 and C182). China and Qatar have also not ratified C087 or C098.
 
 ## Sources
 - International Labour Organization. (n.d.). *Conventions, protocols and recommendations*. https://www.ilo.org/international-labour-standards/conventions-protocols-and-recommendations
@@ -2383,7 +2383,7 @@ Two things, and be precise about both.
       ],
       body: `You are not going to remember the Wiehahn Commission in five years. That is fine. **This is the lesson you keep.**
 
-You now have a tool that works on any country — including ones this course never mentioned, and ones that do not exist yet.
+You now have a tool that works on any country, including ones this course never mentioned, and ones that do not exist yet.
 
 ---
 
@@ -2395,7 +2395,7 @@ Is forming a union legal? For everyone, or some? Can you found your **own** unio
 
 **2. Who is excluded?**
 Someone always is. **Who?** And was it an accident or a decision?
-*(This is the NLRA's "agricultural laborer, or in the domestic service" — and it is Qatar's migrant workforce, and it is Japan's non-regular workers, and it is the AFL's apprenticeship. Four countries, one mechanism.)*
+*(This is the NLRA's "agricultural laborer, or in the domestic service", and it is Qatar's migrant workforce, and it is Japan's non-regular workers, and it is the AFL's apprenticeship. Four countries, one mechanism.)*
 
 **3. Who bargains with whom, and at what level?**
 Company? Sector? Nation? Is there a works council? Are workers on the board?
@@ -2416,11 +2416,11 @@ Do not take a country's word for it, and do not take an activist's. Triangulate.
 | **ILOSTAT** (ilostat.ilo.org) | Union density and collective bargaining coverage, by country and year. |
 | **OECD/AIAS ICTWSS database** | Density, coverage and bargaining structure for OECD countries. |
 | **The country's own labour statute** | The actual text. Boring, and decisive. |
-| **US Dept of State country human rights reports** | Annual, per country, includes a freedom-of-association section. Written by a government — read accordingly. |
-| **ITUC Global Rights Index** | Annual rating of workers' rights. Written by a trade-union federation — read accordingly. |
+| **US Dept of State country human rights reports** | Annual, per country, includes a freedom-of-association section. Written by a government, read accordingly. |
+| **ITUC Global Rights Index** | Annual rating of workers' rights. Written by a trade-union federation, read accordingly. |
 | **ILO Committee on Freedom of Association case reports** | Actual complaints, actual findings, against actual governments. |
 
-**Read the last two rows again.** The State Department and the ITUC will often describe the same country very differently. That is not a problem with your research. **That IS your research.** When two motivated sources disagree, the gap between them is where the interesting question lives — and where you go find the statute.
+**Read the last two rows again.** The State Department and the ITUC will often describe the same country very differently. That is not a problem with your research. **That IS your research.** When two motivated sources disagree, the gap between them is where the interesting question lives, and where you go find the statute.
 
 ---
 
@@ -2428,9 +2428,9 @@ Do not take a country's word for it, and do not take an activist's. Triangulate.
 
 1. **Every number carries a year and a source.** "Union membership is 10%" is not a fact. "10.0% in 2025, per BLS, in an 11-month series that excludes October" is a fact.
 2. **When the record does not settle it, say so.** *Who threw the bomb at Haymarket?* Nobody knows. *What happened to Jimmy Hoffa?* Nobody knows. The pull to resolve an open question is strong, and it is where most bad history comes from.
-3. **Separate the text, the effect, and the motive.** You can prove what a statute *says*. You can measure what it *did*. What was in the author's head is a different and harder claim — flag it as one.
+3. **Separate the text, the effect, and the motive.** You can prove what a statute *says*. You can measure what it *did*. What was in the author's head is a different and harder claim, flag it as one.
 4. **Look for the plumbing before you reach for the culture.** Nordic density is about who administers unemployment insurance. German coverage is about bargaining level. Institutional design explains more than national character almost every time.
-5. **Notice who benefits from the version you are being told.** Every account in this course — the heroic one, the corrupt one, the one about the Chinese union, the one about the Gulf — is told by somebody who wants something. Including this one. Ask what.
+5. **Notice who benefits from the version you are being told.** Every account in this course, the heroic one, the corrupt one, the one about the Chinese union, the one about the Gulf, is told by somebody who wants something. Including this one. Ask what.
 
 ---
 
@@ -2444,7 +2444,7 @@ That person is very hard to fool.
 
 > **Where to go next.** For what your rights are on the job **today** — protected concerted activity, retaliation, at-will employment, and how to read a contract — take the companion course, ***Know Your Rights at Work***. This course told you where those rights came from and who was cut out of them. That one tells you what to do on Monday.
 
-:::reveal What single check would tell you fastest whether a country's stated commitment to workers' rights is more than words? ||| Look up its ratifications in ILO NORMLEX — specifically Conventions 87 and 98 — and then, separately, check what the country's own labour statute actually says about who may form a union. Ratification is free and official; the statute is decisive. Then triangulate two motivated sources (e.g. the State Department and the ITUC) and go looking in the gap between them.
+:::reveal What single check would tell you fastest whether a country's stated commitment to workers' rights is more than words? ||| Look up its ratifications in ILO NORMLEX, specifically Conventions 87 and 98, and then, separately, check what the country's own labour statute actually says about who may form a union. Ratification is free and official; the statute is decisive. Then triangulate two motivated sources (e.g. the State Department and the ITUC) and go looking in the gap between them.
 
 ## Sources
 - International Labour Organization. (n.d.). *NORMLEX: Information system on international labour standards*. https://normlex.ilo.org/
@@ -2460,7 +2460,7 @@ That person is very hard to fool.
       title: "29 · Practice: the facts you should be able to produce cold",
       body: `Fill in each blank, then check. Spelling and capitalization are forgiving.
 
-These are the specific, checkable facts this course wants in your head — the ones that let you catch an error in someone else's argument. Everything else you can look up.`,
+These are the specific, checkable facts this course wants in your head, the ones that let you catch an error in someone else's argument. Everything else you can look up.`,
       exercise: {
         instructions: "Fill in each blank, then check. Spelling and capitalization are forgiving.",
         items: [
@@ -2486,25 +2486,25 @@ These are the specific, checkable facts this course wants in your head — the o
             prompt: "Section 7 of the NLRA protects the right to self-organize, to bargain collectively, and to engage in other ___ activities for mutual aid or protection.",
             answer: "concerted",
             explanation:
-              "\"Concerted activity\" reaches beyond formal unions — it is the legal root of much of what the companion course, Know Your Rights at Work, teaches.",
+              "\"Concerted activity\" reaches beyond formal unions, it is the legal root of much of what the companion course, Know Your Rights at Work, teaches.",
           },
           {
             prompt: "The NLRA's definition of \"employee\" (29 U.S.C. § 152(3)) excludes any individual employed as an ___ laborer.",
             answer: "agricultural",
             explanation:
-              "Together with domestic service. It is why farmworker organizing had to happen outside the law — and it has never been amended.",
+              "Together with domestic service. It is why farmworker organizing had to happen outside the law, and it has never been amended.",
           },
           {
             prompt: "Section 14(b) of the Taft-Hartley Act allows states to pass \"right-to-___\" laws.",
             answer: "work",
-            explanation: "They ban union-security agreements — the clauses requiring workers covered by a contract to pay dues or fees.",
+            explanation: "They ban union-security agreements, the clauses requiring workers covered by a contract to pay dues or fees.",
           },
           {
             prompt: "In 2025 the US union membership rate was ___ percent, per the Bureau of Labor Statistics.",
             answer: "10.0",
             accept: ["10", "10 percent", "10.0 percent"],
             explanation:
-              "10.0% and 14.7 million members — against 20.1% and 17.7 million in 1983, the first year of BLS's comparable series. The 2025 figure is an 11-month average excluding October.",
+              "10.0% and 14.7 million members, against 20.1% and 17.7 million in 1983, the first year of BLS's comparable series. The 2025 figure is an 11-month average excluding October.",
           },
           {
             prompt: "In 2025 the US PUBLIC-sector union membership rate was 32.9% and the PRIVATE-sector rate was ___ percent.",
@@ -2532,7 +2532,7 @@ These are the specific, checkable facts this course wants in your head — the o
               "Under FDR, three years after the Wagner Act. What PATCO changed in 1981 was the norm, not the law.",
           },
           {
-            prompt: "The system in which unemployment insurance is administered by union-affiliated funds — and which explains high Nordic union density — is called the ___ system.",
+            prompt: "The system in which unemployment insurance is administered by union-affiliated funds, and which explains high Nordic union density, is called the ___ system.",
             answer: "Ghent",
             explanation:
               "Denmark, Sweden, Finland, Iceland and partly Belgium. Look for the plumbing before you reach for the culture.",
@@ -2542,20 +2542,20 @@ These are the specific, checkable facts this course wants in your head — the o
             answer: "half",
             accept: ["50%", "one half", "1/2"],
             explanation:
-              "Though the chair comes from the shareholder side and holds a casting vote — so it is parity of seats, not parity of power.",
+              "Though the chair comes from the shareholder side and holds a casting vote, so it is parity of seats, not parity of power.",
           },
           {
             prompt: "Japan's dominant union form, organized at a single company rather than by craft or industry, is the ___ union.",
             answer: "enterprise",
             explanation:
-              "It produces cooperation and very low strike rates — and systematically leaves out non-regular workers, the ones the company does not treat as its own people.",
+              "It produces cooperation and very low strike rates, and systematically leaves out non-regular workers, the ones the company does not treat as its own people.",
           },
           {
             prompt: "The two ILO fundamental conventions on freedom of association and collective bargaining, which the US, China and Qatar have all NOT ratified, are C087 and C___.",
             answer: "098",
             accept: ["98", "C98", "C098"],
             explanation:
-              "C087 (1948) and C098 (1949) — the heart of everything this course is about, unratified by three countries that could hardly be more different.",
+              "C087 (1948) and C098 (1949), the heart of everything this course is about, unratified by three countries that could hardly be more different.",
           },
           {
             prompt: "Solidarity's very first demand at Gdańsk in August 1980 was not about pay. It was the right to form free trade unions ___ of the Communist Party.",
@@ -2587,13 +2587,13 @@ These are the specific, checkable facts this course wants in your head — the o
             prompt: "What makes the ILO structurally unusual among international organizations?",
             options: [
               "It has its own police force",
-              "It is TRIPARTITE — member delegations include government, employer and worker delegates, and employers and workers vote independently of their own government",
+              "It is TRIPARTITE, member delegations include government, employer and worker delegates, and employers and workers vote independently of their own government",
               "Only democracies may join",
               "Its decisions are automatically binding on all members",
             ],
             correctIndex: 1,
             explanation:
-              "A country's trade unions get a seat and a vote at an international organization — and can vote against their own state. There is nothing else like it in the UN system.",
+              "A country's trade unions get a seat and a vote at an international organization, and can vote against their own state. There is nothing else like it in the UN system.",
             sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
           },
           {
@@ -2612,29 +2612,29 @@ These are the specific, checkable facts this course wants in your head — the o
           {
             prompt: "How many fundamental ILO conventions are there now, and what changed?",
             options: [
-              "Eight — unchanged since 1998",
-              "Ten — occupational safety and health was added as a fundamental principle in June 2022, recognizing Conventions 155 and 187",
-              "Four — the number was reduced in 2022",
-              "Twelve — climate standards were added in 2020",
+              "Eight, unchanged since 1998",
+              "Ten, occupational safety and health was added as a fundamental principle in June 2022, recognizing Conventions 155 and 187",
+              "Four, the number was reduced in 2022",
+              "Twelve, climate standards were added in 2020",
             ],
             correctIndex: 1,
             explanation:
-              "Five principles: freedom of association and collective bargaining; elimination of forced labour; abolition of child labour; elimination of discrimination; and — since 2022 — a safe and healthy working environment.",
+              "Five principles: freedom of association and collective bargaining; elimination of forced labour; abolition of child labour; elimination of discrimination; and (since 2022) a safe and healthy working environment.",
             sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
           },
           {
             prompt: "How many of the ILO's fundamental conventions has the UNITED STATES ratified?",
-            options: ["All ten", "Eight", "Two — C105 and C182", "None"],
+            options: ["All ten", "Eight", "Two, C105 and C182", "None"],
             correctIndex: 2,
             explanation:
-              "Only two. It has NOT ratified C087 (freedom of association) or C098 (collective bargaining) — putting it, on those two, alongside China and Qatar.",
+              "Only two. It has NOT ratified C087 (freedom of association) or C098 (collective bargaining), putting it, on those two, alongside China and Qatar.",
             sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
           },
           {
             prompt: "The ILO's Committee on Freedom of Association can hear a complaint against a country that has NOT ratified Convention 87 or 98. Why?",
             options: [
               "Because the UN Security Council authorizes it case by case",
-              "Because the 1998 Declaration holds that all members, by virtue of MEMBERSHIP alone, must respect the fundamental principles — including freedom of association — ratified or not",
+              "Because the 1998 Declaration holds that all members, by virtue of MEMBERSHIP alone, must respect the fundamental principles, including freedom of association, ratified or not",
               "Because non-ratifying countries automatically lose their vote",
               "It cannot; ratification is required",
             ],
@@ -2648,12 +2648,12 @@ These are the specific, checkable facts this course wants in your head — the o
             options: [
               "Economic sanctions",
               "Expulsion from the United Nations",
-              "Embarrassment — it reports, examines, publishes, and at most convenes a Commission of Inquiry that names what it found. It has no police, no fines, no court.",
+              "Embarrassment, it reports, examines, publishes, and at most convenes a Commission of Inquiry that names what it found. It has no police, no fines, no court.",
               "Criminal prosecution of the officials responsible",
             ],
             correctIndex: 2,
             explanation:
-              "The floor is a floor the way a line painted on the ground is a fence. It matters — states do respond — but nobody enforces it against a determined government.",
+              "The floor is a floor the way a line painted on the ground is a fence. It matters, states do respond, but nobody enforces it against a determined government.",
             sourceLessonSlug: "the-ilo-and-how-weakly-it-binds",
           },
           {
@@ -2666,7 +2666,7 @@ These are the specific, checkable facts this course wants in your head — the o
             ],
             correctIndex: 1,
             explanation:
-              "NORMLEX lists every ratification. Start there, then read the country's own labour statute — which is boring, and decisive.",
+              "NORMLEX lists every ratification. Start there, then read the country's own labour statute, which is boring, and decisive.",
             sourceLessonSlug: "apply-the-four-questions",
           },
           {
@@ -2674,7 +2674,7 @@ These are the specific, checkable facts this course wants in your head — the o
             options: [
               "Trust the State Department, because it is a government",
               "Trust the ITUC, because it represents workers",
-              "Treat the GAP between two motivated sources as where the interesting question lives — and go find the statute",
+              "Treat the GAP between two motivated sources as where the interesting question lives, and go find the statute",
               "Discard both and rely on memory",
             ],
             correctIndex: 2,
@@ -2686,7 +2686,7 @@ These are the specific, checkable facts this course wants in your head — the o
             prompt: "Which of the five habits explains why Nordic union density is high and German bargaining coverage is broad?",
             options: [
               "Notice who benefits from the version you are told",
-              "Look for the PLUMBING before you reach for the culture — institutional design explains more than national character almost every time",
+              "Look for the PLUMBING before you reach for the culture, institutional design explains more than national character almost every time",
               "Every number carries a year and a source",
               "When the record does not settle it, say so",
             ],
@@ -2699,22 +2699,22 @@ These are the specific, checkable facts this course wants in your head — the o
             prompt: "\"Separate the text, the effect, and the motive.\" Which example in this course does that habit come from?",
             options: [
               "The PATCO strike",
-              "The NLRA's exclusion of agricultural and domestic workers — the statute's TEXT is undisputed, its EFFECT is measurable, and its MOTIVE is a historical argument",
+              "The NLRA's exclusion of agricultural and domestic workers, the statute's TEXT is undisputed, its EFFECT is measurable, and its MOTIVE is a historical argument",
               "The founding of the ILO",
               "The Ghent system",
             ],
             correctIndex: 1,
             explanation:
-              "You can prove what a statute says and measure what it did. What was in a senator's head is a different, harder claim — flag it as one.",
+              "You can prove what a statute says and measure what it did. What was in a senator's head is a different, harder claim, flag it as one.",
             sourceLessonSlug: "apply-the-four-questions",
           },
           {
             prompt: "Which question of the four explains why Germany, with a union membership rate close to America's, has roughly five times the bargaining coverage?",
             options: [
-              "Q1 — who is allowed to organise?",
-              "Q2 — who is excluded?",
-              "Q3 — who bargains with whom, and at what level?",
-              "Q4 — what happens to you if you try?",
+              "Q1, who is allowed to organise?",
+              "Q2, who is excluded?",
+              "Q3, who bargains with whom, and at what level?",
+              "Q4, what happens to you if you try?",
             ],
             correctIndex: 2,
             explanation:
@@ -2724,10 +2724,10 @@ These are the specific, checkable facts this course wants in your head — the o
           {
             prompt: "Which question of the four connects the NLRA's \"agricultural laborer\" clause, Qatar's migrant workforce, Japan's non-regular workers, and the AFL's apprenticeships?",
             options: [
-              "Q1 — who is allowed to organise?",
-              "Q2 — who is excluded?",
-              "Q3 — who bargains with whom?",
-              "Q4 — what happens to you if you try?",
+              "Q1, who is allowed to organise?",
+              "Q2, who is excluded?",
+              "Q3, who bargains with whom?",
+              "Q4, what happens to you if you try?",
             ],
             correctIndex: 1,
             explanation:
@@ -2744,14 +2744,14 @@ These are the specific, checkable facts this course wants in your head — the o
             ],
             correctIndex: 2,
             explanation:
-              "Pro- and anti- are conclusions, and they are yours to reach. The course gives you the questions, not the answer — and that person is very hard to fool.",
+              "Pro- and anti- are conclusions, and they are yours to reach. The course gives you the questions, not the answer, and that person is very hard to fool.",
             sourceLessonSlug: "apply-the-four-questions",
           },
           {
             prompt: "Where does the course say to go for what your rights are on the job TODAY?",
             options: [
               "Back to Section 3 of this course",
-              "The companion course, *Know Your Rights at Work* — protected concerted activity, retaliation, at-will employment, reading your contract",
+              "The companion course, *Know Your Rights at Work*, protected concerted activity, retaliation, at-will employment, reading your contract",
               "The ILO's Committee on Freedom of Association",
               "Nowhere; this course covers it",
             ],
