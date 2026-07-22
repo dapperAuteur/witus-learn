@@ -15,7 +15,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const CITIZENSHIP_NATURALIZATION_COURSE: AuthoredCourse = {
   title: "Citizenship & Naturalization Basics",
   description:
-    "A clear, non-partisan guide to U.S. citizenship: who is a citizen at birth (birthright and through parents), how the naturalization process works step by step, what the civics and English test cover, the Oath of Allegiance, and the rights and responsibilities that come with citizenship. Cited to USCIS, the National Archives, and Congress.gov. Rules and fees change — this course teaches how the system works and where to confirm current requirements, and takes no position on immigration policy.",
+    "A clear, non-partisan guide to U.S. citizenship: who is a citizen at birth (birthright and through parents), how the naturalization process works step by step, what the civics and English test cover, the Oath of Allegiance, and the rights and responsibilities that come with citizenship. Cited to USCIS, the National Archives, and Congress.gov. Rules and fees change, this course teaches how the system works and where to confirm current requirements, and takes no position on immigration policy.",
   lessons: [
     // ── Section 1: Who Is a Citizen? ──────────────────────────────────────
     {
@@ -30,7 +30,7 @@ The most common path is **birthright citizenship**, guaranteed by the **14th Ame
 
 In plain terms: if you are born on U.S. soil, you are a citizen at birth (sometimes called *jus soli*, "right of soil"), with narrow exceptions such as children of foreign diplomats. Congress codified this same rule in the Immigration and Nationality Act (INA § 301) (U.S. Citizenship and Immigration Services [USCIS], n.d.-a).
 
-The Supreme Court confirmed this reading in **United States v. Wong Kim Ark, 169 U.S. 649 (1898)**, holding that a man born in San Francisco to Chinese immigrant parents who were not themselves eligible for citizenship was still a U.S. citizen by birth (Library of Congress, n.d.-a). Most recently, in **Trump v. Barbara, 609 U.S. ___ (2026)** (decided June 30, 2026), the Supreme Court struck down a 2025 executive order that had sought to limit birthright citizenship, holding that the 14th Amendment's guarantee applies to children born in the United States regardless of their parents' immigration status (Supreme Court of the United States, 2026). **The Court divided closely: it struck down the order 6–3, but on the underlying constitutional question the Justices split 5–4** — Chief Justice Roberts wrote the majority (joined by the Court's liberal Justices), Justices Thomas, Alito, and Gorsuch dissented, and Justice Kavanaugh concurred in the judgment on narrower, statutory grounds. Because the ruling is very recent and further proceedings (including a rehearing petition) were reported as of July 2026, **confirm the current status** before relying on any detail. That decision is a good example of this course's approach: it explains what the courts decided about *how the rule works*, not an argument about what immigration policy *should* be.
+The Supreme Court confirmed this reading in **United States v. Wong Kim Ark, 169 U.S. 649 (1898)**, holding that a man born in San Francisco to Chinese immigrant parents who were not themselves eligible for citizenship was still a U.S. citizen by birth (Library of Congress, n.d.-a). Most recently, in **Trump v. Barbara, 609 U.S. ___ (2026)** (decided June 30, 2026), the Supreme Court struck down a 2025 executive order that had sought to limit birthright citizenship, holding that the 14th Amendment's guarantee applies to children born in the United States regardless of their parents' immigration status (Supreme Court of the United States, 2026). **The Court divided closely: it struck down the order 6-3, but on the underlying constitutional question the Justices split 5-4**, Chief Justice Roberts wrote the majority (joined by the Court's liberal Justices), Justices Thomas, Alito, and Gorsuch dissented, and Justice Kavanaugh concurred in the judgment on narrower, statutory grounds. Because the ruling is very recent and further proceedings (including a rehearing petition) were reported as of July 2026, **confirm the current status** before relying on any detail. That decision is a good example of this course's approach: it explains what the courts decided about *how the rule works*, not an argument about what immigration policy *should* be.
 
 :::reveal What does the 14th Amendment say about who is a citizen, and which 1898 Supreme Court case confirmed it applies even when a child's parents are not citizens? ||| Anyone born (or naturalized) in the United States and subject to its jurisdiction is a citizen. United States v. Wong Kim Ark, 169 U.S. 649 (1898), confirmed this applies to a child born in the U.S. to parents who were not citizens.
 
@@ -118,13 +118,13 @@ Some categories, such as spouses of U.S. citizens or current/former members of t
 
 1. **Confirm you're not already a citizen** (see Lessons 1 to 2), and confirm you meet eligibility (Lesson 3).
 2. **Complete Form N-400**, Application for Naturalization, the official application (USCIS, n.d.-g).
-3. **File it**, online or by mail, and pay the filing fee — unless you qualify for a **reduced fee** or a **fee waiver** based on income or certain public benefits. Filing fees change over time (there was a fee adjustment as recently as mid-2026), so always check the current amount on USCIS's official fee schedule (Form G-1055) or fee calculator before filing rather than relying on a number you saw elsewhere (USCIS, n.d.-h).
+3. **File it**, online or by mail, and pay the filing fee, unless you qualify for a **reduced fee** or a **fee waiver** based on income or certain public benefits. Filing fees change over time (there was a fee adjustment as recently as mid-2026), so always check the current amount on USCIS's official fee schedule (Form G-1055) or fee calculator before filing rather than relying on a number you saw elsewhere (USCIS, n.d.-h).
 4. **Attend a biometrics appointment**, if USCIS requires one, to collect fingerprints and other identifying information.
-5. **Attend an interview.** A USCIS officer reviews your application and background, and — unless you qualify for an exemption — you take the English and civics test at the same appointment (Lesson 5).
+5. **Attend an interview.** A USCIS officer reviews your application and background, and (unless you qualify for an exemption) you take the English and civics test at the same appointment (Lesson 5).
 6. **Receive a decision.** If USCIS needs more evidence, or if you fail part of the test, you're generally retested on just the part you failed, 60 to 90 days later.
 7. **If approved, receive a notice to take the Oath of Allegiance**, and attend a naturalization ceremony (Lesson 6). You are not yet a citizen until you take the Oath.
 
-:::reveal What are the last two events in the naturalization process, in order? ||| Receiving a decision on the application, and then, if approved, taking the Oath of Allegiance at a naturalization ceremony — which is the moment citizenship is actually granted.
+:::reveal What are the last two events in the naturalization process, in order? ||| Receiving a decision on the application, and then, if approved, taking the Oath of Allegiance at a naturalization ceremony, which is the moment citizenship is actually granted.
 
 ## Sources
 - U.S. Citizenship and Immigration Services. (n.d.-f). *10 steps to naturalization*. https://www.uscis.gov/citizenship/learn-about-citizenship/10-steps-to-naturalization
@@ -178,7 +178,7 @@ A few practical notes:
 
 - Some applicants qualify for a **modified Oath** that omits the promise to bear arms, for documented religious or other reasons (USCIS, n.d.-l).
 - At the ceremony you'll typically complete Form N-445 and check in with USCIS before the ceremony begins.
-- After taking the Oath, you receive a **Certificate of Naturalization** — check it carefully for errors before you leave, since correcting it later takes an extra step.
+- After taking the Oath, you receive a **Certificate of Naturalization**, check it carefully for errors before you leave, since correcting it later takes an extra step.
 
 :::reveal At what exact moment does a naturalization applicant actually become a U.S. citizen? ||| When they take the Oath of Allegiance at a naturalization ceremony, not when Form N-400 is approved.
 
@@ -203,7 +203,7 @@ A few practical notes:
 Rights include:
 
 - **Voting** in federal, state, and local elections.
-- **Running for most elected office** (running for **President or Vice President** additionally requires being a "natural born Citizen" under U.S. Const. art. II, § 1 — a stricter, separate rule that does not apply to other offices) (Congress.gov, n.d.).
+- **Running for most elected office** (running for **President or Vice President** additionally requires being a "natural born Citizen" under U.S. Const. art. II, § 1, a stricter, separate rule that does not apply to other offices) (Congress.gov, n.d.).
 - **A U.S. passport**, and the U.S. government's assistance if you need help while traveling abroad.
 - **Serving on a jury**, and priority when petitioning to bring certain family members to live in the United States.
 - Eligibility for federal jobs that require citizenship, and protection from ever having your right to live in the U.S. taken away simply for living elsewhere.
@@ -230,13 +230,13 @@ Responsibilities include:
           answer: "The \"natural born Citizen\" requirement in Article II, § 1 of the Constitution.",
         },
       ],
-      body: `This course has covered the general rules, but rules, forms, and fees genuinely **change** (the civics test and USCIS's own fee schedule both changed within the last year alone). **uscis.gov is the authoritative source** — always confirm the current requirement there before you rely on any summary, including this one.
+      body: `This course has covered the general rules, but rules, forms, and fees genuinely **change** (the civics test and USCIS's own fee schedule both changed within the last year alone). **uscis.gov is the authoritative source**, always confirm the current requirement there before you rely on any summary, including this one.
 
 Because naturalization applications involve money, deadlines, and immigration status, they're also a common target for fraud. A few things USCIS specifically warns about (USCIS, n.d.-n; USCIS, n.d.-o):
 
-- **Only an attorney, or an accredited representative working for a Department of Justice (DOJ)–recognized organization, can legally give you immigration advice.** In the United States, a "**notario público**" is *not* authorized to give legal advice — even though the term means something different (a credentialed attorney) in many other countries.
+- **Only an attorney, or an accredited representative working for a Department of Justice (DOJ)-recognized organization, can legally give you immigration advice.** In the United States, a "**notario público**" is *not* authorized to give legal advice, even though the term means something different (a credentialed attorney) in many other countries.
 - **Red flags:** guarantees that your case will be approved, requests to sign blank or false forms, anyone insisting on keeping your original documents, demands for payment in gift cards, or threats that you'll be deported if you don't pay.
-- **Where to get real help:** USCIS's own Citizenship Resource Center, the DOJ's list of recognized organizations and accredited representatives, and nonprofit legal-aid organizations. If you suspect fraud, you can report it — doing so does not affect your immigration case (USCIS, n.d.-o).
+- **Where to get real help:** USCIS's own Citizenship Resource Center, the DOJ's list of recognized organizations and accredited representatives, and nonprofit legal-aid organizations. If you suspect fraud, you can report it, doing so does not affect your immigration case (USCIS, n.d.-o).
 
 :::reveal In the United States, is a "notario público" authorized to give immigration legal advice? ||| No. Despite what the term means in some other countries, in the U.S. only an attorney or a DOJ-recognized accredited representative can legally give immigration advice.
 
@@ -273,7 +273,7 @@ Because naturalization applications involve money, deadlines, and immigration st
           {
             prompt: "You actually become a citizen when you take the ___ of Allegiance.",
             answer: "Oath",
-            explanation: "Approval of Form N-400 is not enough — citizenship is granted at the Oath ceremony.",
+            explanation: "Approval of Form N-400 is not enough, citizenship is granted at the Oath ceremony.",
           },
           {
             prompt: "In the U.S., a \"notario público\" is NOT authorized to give immigration legal ___.",
@@ -380,7 +380,7 @@ Because naturalization applications involve money, deadlines, and immigration st
             ],
             correctIndex: 2,
             explanation:
-              "Approval of Form N-400 is not enough on its own — citizenship is granted at the moment the applicant takes the Oath of Allegiance.",
+              "Approval of Form N-400 is not enough on its own, citizenship is granted at the moment the applicant takes the Oath of Allegiance.",
             sourceLessonSlug: "oath-of-allegiance",
           },
           {

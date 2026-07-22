@@ -25,7 +25,7 @@ import type { AuthoredCourse } from "./authored-course";
 export const DENTAL_HEALTH_COURSE: AuthoredCourse = {
   title: "Dental Health 101: What the Science Actually Says",
   description:
-    "A clear, cited walk through the biology of a healthy mouth: how cavities form, what brushing and flossing actually do (and don't), how fluoride works, how diet drives decay, why regular dental visits matter, and the honest, evidence-graded picture of how gum disease connects to the rest of the body. Sourced to Cochrane, the ADA, the CDC, the WHO, NIDCR, and the American Heart Association's 2026 statement — careful to say 'associated with,' not 'causes,' where the evidence is association, not proof.",
+    "A clear, cited walk through the biology of a healthy mouth: how cavities form, what brushing and flossing actually do (and don't), how fluoride works, how diet drives decay, why regular dental visits matter, and the honest, evidence-graded picture of how gum disease connects to the rest of the body. Sourced to Cochrane, the ADA, the CDC, the WHO, NIDCR, and the American Heart Association's 2026 statement, careful to say 'associated with,' not 'causes,' where the evidence is association, not proof.",
   lessons: [
     // ── Module 1: Your Mouth, Explained ──────────────────────────────────
     {
@@ -82,7 +82,7 @@ Fluoride toothpaste is the other non-negotiable half of this habit; the next mod
         },
         {
           prompt: "Does brushing harder clean teeth better?",
-          answer: "No — the ADA recommends gentle, short circular strokes; hard scrubbing mainly risks wearing enamel and irritating gums.",
+          answer: "No, the ADA recommends gentle, short circular strokes; hard scrubbing mainly risks wearing enamel and irritating gums.",
         },
       ],
       body: `A toothbrush cannot reach the tight space between two teeth, which is roughly a third of each tooth's surface. Floss and interdental brushes exist to clean that space, where plaque builds up and gum inflammation (**gingivitis**) often starts first.
@@ -226,7 +226,7 @@ Then comes the sentence that should govern how anyone talks about this topic: th
 
 So: gum disease and heart disease are **linked**, worth mentioning to both your dentist and your physician, and the mechanisms are biologically plausible. But the current, authoritative evidence does not support the claim that flossing, or any periodontal treatment, prevents heart attacks or strokes. That claim goes beyond what the AHA itself says.
 
-:::reveal Does the AHA's 2026 statement say periodontal therapy prevents cardiovascular disease? ||| No. It explicitly states there is no direct evidence of causality, or that periodontal therapy will prevent CVD — the relationship is an association with plausible mechanisms, not proven causation.
+:::reveal Does the AHA's 2026 statement say periodontal therapy prevents cardiovascular disease? ||| No. It explicitly states there is no direct evidence of causality, or that periodontal therapy will prevent CVD, the relationship is an association with plausible mechanisms, not proven causation.
 
 ## Sources
 - Tran, A. H., Zaidi, A. H., Bolger, A. F., Del Brutto, O. H., Hegde, R., Patton, L. L., Rausch, J., & Zachariah, J. P. (2026). Periodontal disease and atherosclerotic cardiovascular disease: A scientific statement from the American Heart Association. *Circulation*. https://doi.org/10.1161/CIR.0000000000001390`,
@@ -272,7 +272,7 @@ The throughline across this whole module: diabetes has the strongest, bidirectio
         },
         {
           prompt: "What did the AHA's 2026 statement explicitly refuse to claim about periodontal therapy?",
-          answer: "That it prevents cardiovascular disease — there is no direct evidence of causality.",
+          answer: "That it prevents cardiovascular disease, there is no direct evidence of causality.",
         },
       ],
       body: `A last pass through five claims this course can now check against the evidence already covered.
@@ -394,7 +394,7 @@ The pattern behind every one of these: the honest version of dental science is u
             ],
             correctIndex: 1,
             explanation:
-              "The diabetes link runs both ways (each condition worsens the other), and randomized trials found treating periodontal disease improved HbA1c by about 0.4 points at 3 months — trial evidence, not just observation.",
+              "The diabetes link runs both ways (each condition worsens the other), and randomized trials found treating periodontal disease improved HbA1c by about 0.4 points at 3 months, trial evidence, not just observation.",
             sourceLessonSlug: "gum-disease-and-diabetes",
           },
           {
@@ -426,8 +426,8 @@ The pattern behind every one of these: the honest version of dental science is u
           {
             prompt: "True or false: bleeding gums when flossing means you should stop flossing.",
             options: [
-              "True — bleeding means flossing is damaging your gums",
-              "False — bleeding usually signals gum inflammation that consistent, gentle cleaning helps resolve",
+              "True, bleeding means flossing is damaging your gums",
+              "False, bleeding usually signals gum inflammation that consistent, gentle cleaning helps resolve",
               "True, but only if it happens more than once",
               "False, because flossing never causes any bleeding",
             ],

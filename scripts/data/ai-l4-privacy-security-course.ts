@@ -38,7 +38,7 @@ Why this matters more now: AI systems are **hungry for data**. The more a system
 
 A useful frame from the U.S. standards agency: privacy risk is the chance that **data processing causes a problem for a person** (embarrassment, discrimination, financial loss, loss of autonomy), not just a "breach." That's why even data you shared willingly can hurt you later, in a context you never agreed to (NIST Privacy Framework, 2020).
 
-:::reveal Name one "quiet trail" you leave that isn't your name but still identifies you. ||| Things like your location history, device IDs, or browsing, search, and purchase history — any one looks harmless, but combined they describe your life in detail and can single you out even without your name.
+:::reveal Name one "quiet trail" you leave that isn't your name but still identifies you. ||| Things like your location history, device IDs, or browsing, search, and purchase history, any one looks harmless, but combined they describe your life in detail and can single you out even without your name.
 
 ## Sources
 - National Institute of Standards and Technology. (2020). NIST Privacy Framework 1.0. https://www.nist.gov/privacy-framework`,
@@ -92,7 +92,7 @@ Two habits that follow:
 
 Remember: an AI can't "forget" on command, and a redaction you skipped can't be un-pasted. The FTC's long-running guidance to businesses is the same logic that protects you personally: **don't collect or hand over sensitive data you don't need to**, because the safest data is the data that was never exposed (FTC, *Start with Security*).
 
-:::reveal Give the one-line gut-check question to run before pasting anything into a chatbot. ||| "Would I be comfortable if this text became public or was used to train the model?" If not, don't paste it — redact and abstract (Person A, Company X), use the smallest slice, and prefer a cleared tool, because you can't un-paste a secret.
+:::reveal Give the one-line gut-check question to run before pasting anything into a chatbot. ||| "Would I be comfortable if this text became public or was used to train the model?" If not, don't paste it, redact and abstract (Person A, Company X), use the smallest slice, and prefer a cleared tool, because you can't un-paste a secret.
 
 ## Sources
 - Federal Trade Commission. Start with Security: A Guide for Business. https://www.ftc.gov/business-guidance/resources/start-security-guide-business
@@ -296,7 +296,7 @@ This is exactly why the security basics from the last lesson matter: when MFA is
 
 You won't be invisible, and that's not the goal. The goal is **control and resilience**: share less, lock the doors that matter, verify before you act, and help your family do the same. That's data privacy and security in the AI age: practical, repeatable, and yours.
 
-:::reveal Name the first two steps of the "exercise your rights" plan. ||| (1) Lock the basics first — a password manager plus MFA on your email and banking. (2) Visit the privacy dashboards of your major accounts and turn off ad personalization and "sell/share."
+:::reveal Name the first two steps of the "exercise your rights" plan. ||| (1) Lock the basics first, a password manager plus MFA on your email and banking. (2) Visit the privacy dashboards of your major accounts and turn off ad personalization and "sell/share."
 
 ## Sources
 - Federal Trade Commission. Children's Privacy (COPPA). https://www.ftc.gov/business-guidance/privacy-security/childrens-privacy

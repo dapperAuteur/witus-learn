@@ -799,7 +799,7 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
       slug: "gmw-second-migration-west",
       title: "13 · The Second Great Migration goes west",
       section: "Section 4 · The routes and the cities",
-      body: `The first wave filled the industrial cities of the Northeast and Midwest. The **Second Great Migration** (1940s–1970) did that again and then pushed the Western stream to full flood, all the way to the Pacific coast, on the strength of one thing: **World War II shipbuilding**.
+      body: `The first wave filled the industrial cities of the Northeast and Midwest. The **Second Great Migration** (1940s-1970) did that again and then pushed the Western stream to full flood, all the way to the Pacific coast, on the strength of one thing: **World War II shipbuilding**.
 
 **The shipyards were hiring, fast.** When the U.S. entered the war, West Coast shipyards needed enormous numbers of workers, and for the first time offered Black Southerners skilled, well-paid defense jobs. The industrialist **Henry J. Kaiser** ran shipyards in **Richmond and Oakland, California; Portland, Oregon; and Vancouver, Washington**, and recruited workers from across the South (Kaiser Permanente, n.d.). The demographic effect was staggering: San Francisco's Black population grew from **fewer than 5,000 before the war to about 32,000 by 1945** (Second Great Migration, n.d.). New Black communities appeared almost overnight in the East Bay and in **Vanport, Oregon**, a wartime housing city near Portland.
 
@@ -1082,7 +1082,7 @@ But density has a flip side. Pack tens of thousands of people, their churches, n
             prompt: "What was the Harlem Renaissance?",
             options: [
               "A housing program",
-              "A 1920s–1930s flowering of Black art, writing, and music centered in Harlem",
+              "A 1920s-1930s flowering of Black art, writing, and music centered in Harlem",
               "A labor union",
               "A Southern church movement",
             ],

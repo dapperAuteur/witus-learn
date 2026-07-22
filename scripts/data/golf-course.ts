@@ -1065,7 +1065,7 @@ Course management means choosing the shot that gives you the best *average* outc
 
 **Rule 3: take enough club.** Amateurs come up short of the green far more often than they fly it. Your "I hit my 7-iron 150" number is almost always your *best-ever* 7-iron, not your average one. Club up. The trouble on a golf hole is usually in front of the green, and being past the flag on the correct level is rarely punished.
 
-**Rule 4: the tee shot's job is to be findable.** A drive 220 yards in the fairway beats a drive 260 yards in the trees every single time, because the ball in the trees is often not a golf shot at all — it is a chip sideways. If a hole scares you, **hit a hybrid or an iron off the tee.** There is no rule requiring you to hit a driver, and nobody is checking.
+**Rule 4: the tee shot's job is to be findable.** A drive 220 yards in the fairway beats a drive 260 yards in the trees every single time, because the ball in the trees is often not a golf shot at all, it is a chip sideways. If a hole scares you, **hit a hybrid or an iron off the tee.** There is no rule requiring you to hit a driver, and nobody is checking.
 
 **Rule 5: when you are in trouble, get out. First try.** The single most expensive belief in amateur golf is that a miracle shot through a two-foot gap in the branches is a reasonable idea. It works maybe one time in ten. The other nine times it stays in the trees and you are still there, one stroke worse. **Take the wedge. Punch it back to the fairway. Play your next shot from the grass like a golfer.**
 
@@ -1100,7 +1100,7 @@ Course management means choosing the shot that gives you the best *average* outc
 | Lie | What it does to the shot |
 | --- | --- |
 | **Fairway** | Ball sits up. You can do anything. |
-| **Light rough** | Grass gets between clubface and ball, killing backspin. The ball comes out **hot and runs**. This is a "flier" — it goes *further* than normal, which is why it surprises people. |
+| **Light rough** | Grass gets between clubface and ball, killing backspin. The ball comes out **hot and runs**. This is a "flier", it goes *further* than normal, which is why it surprises people. |
 | **Deep rough** | The grass grabs the hosel and shuts the face. **Get out. That is the whole plan.** Take a lofted club and accept the yardage you lose. |
 | **Bare dirt / hardpan** | No cushion. Ball-first contact is essential; do not try to scoop. |
 | **Uphill lie** | Ball goes **higher and shorter**. Take more club. |
@@ -1108,7 +1108,7 @@ Course management means choosing the shot that gives you the best *average* outc
 
 **2. What is the wind doing?** Not what it is doing on your face on the tee, which is often sheltered. Look at the **tops of the trees** and the flag on the green.
 
-- **Into the wind:** the wind exaggerates every bit of spin and curve you put on the ball. A little slice becomes a big one. The rule is **"when it's breezy, swing easy"** — a softer swing spins less and holds its line. Take two extra clubs and swing at 80%.
+- **Into the wind:** the wind exaggerates every bit of spin and curve you put on the ball. A little slice becomes a big one. The rule is **"when it's breezy, swing easy"**, a softer swing spins less and holds its line. Take two extra clubs and swing at 80%.
 - **Downwind:** the ball flies further but lands hot and does not stop. Downwind on a green is harder than it sounds.
 - **Crosswind:** you can either fight it or ride it. Riding it (aiming into the wind and letting it bring the ball back) is easier.
 
@@ -1118,9 +1118,9 @@ Course management means choosing the shot that gives you the best *average* outc
 
 **Yardage markers** are usually to the *middle* of the green, not the flag. Most courses mark 150 yards with a post or a plate. Know that before you trust a sprinkler head.
 
-**A note on rangefinders and phone apps.** A **distance-measuring device is allowed** by default under the Rules, though a Committee may adopt a Local Rule prohibiting them (Rule 4.3a(1); R&A, 2023). What is *not* allowed is using a device to measure **elevation change or wind**, or to give you club recommendations — that is where a legal device becomes an illegal one. Read the setting on your app before a competition, because the same app is legal in one mode and not in another.
+**A note on rangefinders and phone apps.** A **distance-measuring device is allowed** by default under the Rules, though a Committee may adopt a Local Rule prohibiting them (Rule 4.3a(1); R&A, 2023). What is *not* allowed is using a device to measure **elevation change or wind**, or to give you club recommendations, that is where a legal device becomes an illegal one. Read the setting on your app before a competition, because the same app is legal in one mode and not in another.
 
-:::reveal Why does a ball out of light rough often fly FURTHER than one from the fairway, and what is the rule of thumb for playing into the wind? ||| Grass gets between the clubface and the ball and kills the backspin, so the ball comes out hot and runs. That is a "flier." Into the wind, "when it's breezy, swing easy" — a softer swing puts less spin on the ball, so the wind exaggerates the curve less. Take more club and swing at about 80%.
+:::reveal Why does a ball out of light rough often fly FURTHER than one from the fairway, and what is the rule of thumb for playing into the wind? ||| Grass gets between the clubface and the ball and kills the backspin, so the ball comes out hot and runs. That is a "flier." Into the wind, "when it's breezy, swing easy", a softer swing puts less spin on the ball, so the wind exaggerates the curve less. Take more club and swing at about 80%.
 
 ## Sources
 - R&A. (2023). *Rule 4: The player's equipment*. The Rules of Golf. https://www.randa.org/en/rog/the-rules-of-golf/rule-4
@@ -1144,14 +1144,14 @@ Course management means choosing the shot that gives you the best *average* outc
       ],
       body: `**Your score is not ruined by the holes you play badly. It is ruined by the holes you play catastrophically.**
 
-Look at a beginner's scorecard. It is usually a run of 5s, 6s and 7s — which is fine, that is bogey-ish golf — punctuated by a 9 and an 11. Those two holes cost more than the other sixteen combined. **Strategy for a new golfer is mostly the art of not making a 9.**
+Look at a beginner's scorecard. It is usually a run of 5s, 6s and 7s, which is fine, that is bogey-ish golf, punctuated by a 9 and an 11. Those two holes cost more than the other sixteen combined. **Strategy for a new golfer is mostly the art of not making a 9.**
 
 **Where big numbers come from.** Almost all of them come from exactly four places:
 
-1. **A ball out of bounds** (white stakes). Stroke and distance. This is the killer — one wild drive can be a 7 before you have made any other error.
+1. **A ball out of bounds** (white stakes). Stroke and distance. This is the killer, one wild drive can be a 7 before you have made any other error.
 2. **Repeated attempts to escape trouble.** Three swings in the same bush.
 3. **Trying to carry water that you cannot actually carry.**
-4. **Short-siding yourself** — missing the green on the *same* side as the flag, leaving you no green to work with. Your chip has to be perfect. It usually is not.
+4. **Short-siding yourself**, missing the green on the *same* side as the flag, leaving you no green to work with. Your chip has to be perfect. It usually is not.
 
 **The five habits that eliminate the big number:**
 
@@ -1163,7 +1163,7 @@ Look at a beginner's scorecard. It is usually a run of 5s, 6s and 7s — which i
 
 **"Bogey golf is excellent golf."** If you shoot bogey on every hole of a par-72 course, you shoot 90. That puts you comfortably better than most people who play this game. **Aim for bogey and pars will happen by accident.** Aiming for par on every hole and going for every flag is how you make 9s.
 
-**The scoring ladder — set a realistic target:**
+**The scoring ladder, set a realistic target:**
 
 | Milestone | What it means |
 | --- | --- |
@@ -1199,20 +1199,20 @@ Breaking 100 is not a swing achievement. It is a **decision-making achievement**
       ],
       body: `Golf's handicap system is the reason a 15-year-old beginner can play a real, competitive match against a 50-year-old club champion and **either one of them might genuinely win.** No other major sport has anything like it. It is golf's best idea.
 
-**One system for the whole world.** Before 2020 there were six different regional handicap systems that did not agree with each other. The **World Handicap System (WHS)** launched in **January 2020**, unifying them into one, and it is governed jointly by the **USGA and The R&A** — the same two bodies that write the Rules (USGA, n.d.; R&A, n.d.). Your handicap now means the same thing in Ohio, Osaka, and Aberdeen.
+**One system for the whole world.** Before 2020 there were six different regional handicap systems that did not agree with each other. The **World Handicap System (WHS)** launched in **January 2020**, unifying them into one, and it is governed jointly by the **USGA and The R&A**, the same two bodies that write the Rules (USGA, n.d.; R&A, n.d.). Your handicap now means the same thing in Ohio, Osaka, and Aberdeen.
 
 **Your Handicap Index is a measure of your demonstrated ability.** Two facts define it:
 
 - It is calculated as **the average of the lowest 8 Score Differentials out of your most recent 20** (USGA, n.d.).
 - The **maximum Handicap Index is 54.0**, for any player (USGA, n.d.).
 
-Read that first bullet again, because it contains the most misunderstood idea in golf. **Your handicap is not your average score.** It is built from your **best 8 of the last 20** rounds. It represents your *potential* — what you do when things go reasonably well. This is exactly why **you should expect to play worse than your handicap most of the time.** Playing to your handicap is a good day, not an average one. New golfers routinely conclude they are getting worse when in fact their handicap is simply doing precisely what it was designed to do.
+Read that first bullet again, because it contains the most misunderstood idea in golf. **Your handicap is not your average score.** It is built from your **best 8 of the last 20** rounds. It represents your *potential*, what you do when things go reasonably well. This is exactly why **you should expect to play worse than your handicap most of the time.** Playing to your handicap is a good day, not an average one. New golfers routinely conclude they are getting worse when in fact their handicap is simply doing precisely what it was designed to do.
 
 That 54.0 ceiling matters too: it is deliberately generous, so that a genuine beginner can hold a real, official handicap and compete on day one rather than waiting years to qualify.
 
-**Getting your first one: 54 holes.** You need to submit scores from **54 holes** to receive an initial Handicap Index (USGA, n.d.). Those 54 holes can be any combination of 18-hole and 9-hole rounds — three 18s, six 9s, or a mix. That is a low bar on purpose.
+**Getting your first one: 54 holes.** You need to submit scores from **54 holes** to receive an initial Handicap Index (USGA, n.d.). Those 54 holes can be any combination of 18-hole and 9-hole rounds, three 18s, six 9s, or a mix. That is a low bar on purpose.
 
-**Handicap Index vs Course Handicap — the distinction people get wrong.**
+**Handicap Index vs Course Handicap, the distinction people get wrong.**
 
 | | What it is |
 | --- | --- |
@@ -1221,8 +1221,8 @@ That 54.0 ceiling matters too: it is deliberately generous, so that a genuine be
 
 Your Course Handicap is calculated from your Index using that specific set of tees, because a hard course from the back tees should give you more strokes than an easy one from the forward tees. It relies on two published ratings for every tee:
 
-- **Course Rating** — what a **scratch** golfer is expected to shoot from those tees.
-- **Slope Rating** — how much **harder** the course plays for a bogey golfer than for a scratch golfer. A high Slope means the course punishes weaker players disproportionately (forced carries, dense trouble). It is *not* a measure of raw difficulty; it is a measure of how *unfairly* the difficulty falls on the weaker player.
+- **Course Rating**, what a **scratch** golfer is expected to shoot from those tees.
+- **Slope Rating**, how much **harder** the course plays for a bogey golfer than for a scratch golfer. A high Slope means the course punishes weaker players disproportionately (forced carries, dense trouble). It is *not* a measure of raw difficulty; it is a measure of how *unfairly* the difficulty falls on the weaker player.
 
 **Net score.** Gross score minus your Course Handicap. If you shoot 95 and your Course Handicap is 20, your net score is 75. That is the number a handicap competition uses, and it is how the beginner and the club champion end up in the same event with a straight face.
 
@@ -1230,7 +1230,7 @@ Your Course Handicap is calculated from your Index using that specific set of te
 
 **The current edition.** The Rules of Handicapping are revised periodically; the current edition is the **2024 revision**. As with the Rules of Golf, **check the date on any handicap advice you read.**
 
-:::reveal Is your Handicap Index your average score, and how many holes do you need to get your first one? ||| No — and this is the most misunderstood idea in golf. Your Handicap Index is the average of the LOWEST 8 Score Differentials from your most recent 20, so it measures your potential, not your average. You should therefore expect to play worse than your handicap most of the time. You need 54 holes to receive an initial Index, and the maximum Index is 54.0.
+:::reveal Is your Handicap Index your average score, and how many holes do you need to get your first one? ||| No, and this is the most misunderstood idea in golf. Your Handicap Index is the average of the LOWEST 8 Score Differentials from your most recent 20, so it measures your potential, not your average. You should therefore expect to play worse than your handicap most of the time. You need 54 holes to receive an initial Index, and the maximum Index is 54.0.
 
 ## Sources
 - USGA. (n.d.). *Handicapping*. https://www.usga.org/handicapping.html
@@ -1447,7 +1447,7 @@ Your Course Handicap is calculated from your Index using that specific set of te
             options: ["72", "82", "90", "108"],
             correctIndex: 2,
             explanation:
-              "18 bogeys on a par 72 is 90 — better than most people who play this game. Aim for bogey and pars happen by accident.",
+              "18 bogeys on a par 72 is 90, better than most people who play this game. Aim for bogey and pars happen by accident.",
             sourceLessonSlug: "golf-avoiding-the-big-number",
           },
           {
@@ -1522,15 +1522,15 @@ Your Course Handicap is calculated from your Index using that specific set of te
       ],
       body: `Golf as we know it took shape in **Scotland**, and the first solid documentary evidence of it is wonderfully unflattering: **the government trying to ban it.**
 
-**The 1457 Act.** An Act of the Scottish Parliament ordered that "the fut bal ande the golf" be "cryit doun" — cried down, suppressed — so that men would go and practise **archery** instead, archery being useful for national defence and golf being, in Parliament's view, a waste of an afternoon (Records of the Parliaments of Scotland, 1457/1458). The Act is dated **6 March 1457** in the old style, which is why you will also see it dated **1458**; Scotland began its year in March at the time, so both dates refer to the same document.
+**The 1457 Act.** An Act of the Scottish Parliament ordered that "the fut bal ande the golf" be "cryit doun", cried down, suppressed, so that men would go and practise **archery** instead, archery being useful for national defence and golf being, in Parliament's view, a waste of an afternoon (Records of the Parliaments of Scotland, 1457/1458). The Act is dated **6 March 1457** in the old style, which is why you will also see it dated **1458**; Scotland began its year in March at the time, so both dates refer to the same document.
 
-Two things are worth noticing. First, **a law banning golf is proof that golf was already popular.** Nobody bans a thing nobody does. Second, you will see a tidy modernized English version of this Act quoted everywhere as if it were the manuscript. It is a translation. **Go and read the actual record**, linked in the Sources below, and notice how different a primary source looks from the quotation people pass around. That habit — checking the thing itself — is what this whole section is about.
+Two things are worth noticing. First, **a law banning golf is proof that golf was already popular.** Nobody bans a thing nobody does. Second, you will see a tidy modernized English version of this Act quoted everywhere as if it were the manuscript. It is a translation. **Go and read the actual record**, linked in the Sources below, and notice how different a primary source looks from the quotation people pass around. That habit, checking the thing itself, is what this whole section is about.
 
 **Now, two things that did NOT happen, both of which you will be told confidently.**
 
 **Myth 1: "18 holes were standardized in 1764."** This is repeated constantly and it is wrong. What happened in 1764 is that **St Andrews shortened its own round from 22 holes to 18** by combining some short holes. That was a local decision about one course. **Eighteen holes became the norm only in the 1880s**, as St Andrews' prestige gradually made its number everybody's number (R&A, n.d.). The gap between those two dates is more than a century. A course having 18 holes is a fashion that hardened into a rule, not a rule that was declared.
 
-**Myth 2: "The first Open Championship was an open championship."** The first **Open**, played at **Prestwick in 1860**, was contested by **eight professionals**, over **three rounds of a 12-hole course** (36 holes in one day), and there was **no prize money** — the winner, **Willie Park Snr**, received a belt (R&A, n.d.). And the entry was **by invitation**. The tournament called "The Open" was, in its first year, closed. It was opened to amateurs the following year, which is where the name actually comes from.
+**Myth 2: "The first Open Championship was an open championship."** The first **Open**, played at **Prestwick in 1860**, was contested by **eight professionals**, over **three rounds of a 12-hole course** (36 holes in one day), and there was **no prize money**, the winner, **Willie Park Snr**, received a belt (R&A, n.d.). And the entry was **by invitation**. The tournament called "The Open" was, in its first year, closed. It was opened to amateurs the following year, which is where the name actually comes from.
 
 **The institutions, and a distinction that matters.**
 
@@ -1558,7 +1558,7 @@ Two things are worth noticing. First, **a law banning golf is proof that golf wa
         {
           prompt: "What actually happened at St Andrews in 1764?",
           answer:
-            "St Andrews shortened its own round from 22 holes to 18. It did not standardize anything — 18 holes became the norm only in the 1880s.",
+            "St Andrews shortened its own round from 22 holes to 18. It did not standardize anything, 18 holes became the norm only in the 1880s.",
         },
         {
           prompt: "Are the Royal & Ancient Golf Club and \"The R&A\" the same organization?",
@@ -1568,13 +1568,13 @@ Two things are worth noticing. First, **a law banning golf is proof that golf wa
       ],
       body: `If you want to understand why golf looks the way it does, follow the ball. **Almost every major change in the game was caused by someone inventing a better one**, and each time, the sport's establishment resisted it and then surrendered to it.
 
-**The feathery.** Boiled feathers stuffed into a stitched leather pouch, made by hand. A skilled craftsman could make a handful in a day, so they were **brutally expensive** — a single ball could cost more than a club. They also went soggy in the rain and burst. The feathery made golf a rich man's game by simple arithmetic: **if you lose three balls in a round, you have to be able to afford to lose three balls.**
+**The feathery.** Boiled feathers stuffed into a stitched leather pouch, made by hand. A skilled craftsman could make a handful in a day, so they were **brutally expensive**, a single ball could cost more than a club. They also went soggy in the rain and burst. The feathery made golf a rich man's game by simple arithmetic: **if you lose three balls in a round, you have to be able to afford to lose three balls.**
 
-**The guttie (1848).** Made from **gutta-percha**, a rubbery latex from a Malaysian tree, which could be heated, moulded, and — crucially — **remoulded when it got knocked out of shape.** It was **dramatically cheaper** than the feathery, and it did more to open golf to ordinary people than any rule ever passed. Its inventor is genuinely **disputed**: the USGA credits **Robert Adams**, while a very widely repeated version of the story attaches a longer clerical name to him that the primary sources do not support (USGA, n.d.). This course names it as disputed rather than picking the popular answer.
+**The guttie (1848).** Made from **gutta-percha**, a rubbery latex from a Malaysian tree, which could be heated, moulded, and (crucially) **remoulded when it got knocked out of shape.** It was **dramatically cheaper** than the feathery, and it did more to open golf to ordinary people than any rule ever passed. Its inventor is genuinely **disputed**: the USGA credits **Robert Adams**, while a very widely repeated version of the story attaches a longer clerical name to him that the primary sources do not support (USGA, n.d.). This course names it as disputed rather than picking the popular answer.
 
-Golfers soon noticed that a **scuffed, nicked** guttie flew better than a smooth new one. That observation — that surface roughness makes a ball fly *further* — is the direct ancestor of the **dimple**, and it was discovered by accident, by players who could not afford new balls.
+Golfers soon noticed that a **scuffed, nicked** guttie flew better than a smooth new one. That observation, that surface roughness makes a ball fly *further*, is the direct ancestor of the **dimple**, and it was discovered by accident, by players who could not afford new balls.
 
-**The Haskell (1898–1902): the one that actually changed the game.** Coburn Haskell's rubber-cored, thread-wound ball went **substantially further** than a guttie for the same swing. The details are more interesting than the legend:
+**The Haskell (1898-1902): the one that actually changed the game.** Coburn Haskell's rubber-cored, thread-wound ball went **substantially further** than a guttie for the same swing. The details are more interesting than the legend:
 
 - The patent (**US Patent 622,834**) was **filed 9 August 1898** and **granted 11 April 1899**.
 - It names a **co-inventor: Bertram G. Work**, of the B.F. Goodrich company. **Popular accounts drop him entirely** and hand the invention to Haskell alone. Go and look at the patent. Both names are on it.
@@ -1582,7 +1582,7 @@ Golfers soon noticed that a **scuffed, nicked** guttie flew better than a smooth
 
 **Why this is a lesson and not trivia.** The Haskell forced golf's authorities into a fight they have been fighting ever since: **technology makes the ball go further, and courses that were built to be hard become easy.** Every argument you now hear about limiting the modern golf ball is the same argument, with the same shape, that people had in 1902. Golf's rule-makers have always been trying to catch a ball that keeps outrunning them.
 
-**A footnote worth keeping: golf and the Olympics.** Golf was played at the **1900** and **1904** Games and then **vanished for over a century**, returning only in **2016**. The 1904 champion was **George Lyon of Canada**. And the 1900 women's champion, **Margaret Abbott**, an American studying art in Paris, **died in 1955 without ever knowing she was an Olympic champion** — the event's status was so muddled at the time that nobody told her. She is one of the few Olympic gold medallists in history who never found out.
+**A footnote worth keeping: golf and the Olympics.** Golf was played at the **1900** and **1904** Games and then **vanished for over a century**, returning only in **2016**. The 1904 champion was **George Lyon of Canada**. And the 1900 women's champion, **Margaret Abbott**, an American studying art in Paris, **died in 1955 without ever knowing she was an Olympic champion**, the event's status was so muddled at the time that nobody told her. She is one of the few Olympic gold medallists in history who never found out.
 
 :::reveal Whose name is on the Haskell ball patent besides Coburn Haskell's, and what year did the ball actually take over the game? ||| Bertram G. Work is named as co-inventor on US Patent 622,834 (filed 9 August 1898, granted 11 April 1899), and popular accounts drop him entirely. The ball conquered the game in 1902, when Sandy Herd won The Open with one.
 
@@ -1612,27 +1612,27 @@ Golfers soon noticed that a **scuffed, nicked** guttie flew better than a smooth
 
 Be precise about what that meant, because it is easy to underrate. The PGA was not a club you joined for the badge. **PGA membership was the gate to playing tournament golf for a living.** A clause about who could be a member was, in practice, a rule about **who was allowed to have the job at all.**
 
-**Note the dates.** The clause was written in **1934** — not in some distant unenlightened past, but the same decade as the first Masters. And it was removed in **1961**, which is **within the lifetime of people alive today**, and after *Brown v. Board of Education*. This is not ancient history. It is your grandparents' history.
+**Note the dates.** The clause was written in **1934**, not in some distant unenlightened past, but the same decade as the first Masters. And it was removed in **1961**, which is **within the lifetime of people alive today**, and after *Brown v. Board of Education*. This is not ancient history. It is your grandparents' history.
 
 **The PGA of America has acknowledged this history. It has not apologized for it.** That is a real distinction and this course does not blur it.
 
-**Bill Spiller, and the 1948 Richmond Open.** Spiller was one of the best golfers in America who was not allowed to prove it. He dominated the **United Golfers Association** — the Black golf tour that existed because the white one was closed — winning **more than 100 tournaments**, backed financially by the heavyweight champion **Joe Louis**, who used his own fame and money to fund Black golf.
+**Bill Spiller, and the 1948 Richmond Open.** Spiller was one of the best golfers in America who was not allowed to prove it. He dominated the **United Golfers Association**, the Black golf tour that existed because the white one was closed, winning **more than 100 tournaments**, backed financially by the heavyweight champion **Joe Louis**, who used his own fame and money to fund Black golf.
 
 In **1948**, Spiller, **Ted Rhodes**, and **Madison Gunter** qualified for the **Richmond Open** in California and were then **barred** from playing on the grounds of the Caucasian-only clause. They sued.
 
-**They did not win.** This matters, and most retellings get it wrong. **The suit was withdrawn**, not decided in their favour, after the PGA promised to stop discriminating. **The PGA then broke that promise** — by simply changing the *form* of its events rather than its rules, which is the subject of Lesson 26. Spiller had traded a lawsuit for a promise, and got nothing.
+**They did not win.** This matters, and most retellings get it wrong. **The suit was withdrawn**, not decided in their favour, after the PGA promised to stop discriminating. **The PGA then broke that promise**, by simply changing the *form* of its events rather than its rules, which is the subject of Lesson 26. Spiller had traded a lawsuit for a promise, and got nothing.
 
 *(One correction while we are here: Madison Gunter was an **amateur**, not a professional, though he is often described as one.)*
 
-**How the clause finally fell: a caddie and an Attorney General.** Years later, Bill Spiller was **caddying** at a Los Angeles club — a working caddie, because the tour he was good enough for would not have him. One of the men whose bag he carried was **Stanley Mosk**, the **Attorney General of California**.
+**How the clause finally fell: a caddie and an Attorney General.** Years later, Bill Spiller was **caddying** at a Los Angeles club, a working caddie, because the tour he was good enough for would not have him. One of the men whose bag he carried was **Stanley Mosk**, the **Attorney General of California**.
 
 Spiller told him what the PGA did. Mosk did something about it: he took the position that the PGA could not run a discriminatory organization on **public golf courses in his state**, and **threatened to bar the PGA from every public course in California**. The PGA's tournament calendar depended on California. **The clause came out in November 1961.**
 
-So the causal chain runs: **a Black golfer, denied a career, carrying the clubs of the man who happened to have the power to end the rule that denied it.** Hold on to that, because in the next lesson you are going to read how the golf industry told the story of the repeal at the time — and discover that **not one of these people is in it.**
+So the causal chain runs: **a Black golfer, denied a career, carrying the clubs of the man who happened to have the power to end the rule that denied it.** Hold on to that, because in the next lesson you are going to read how the golf industry told the story of the repeal at the time, and discover that **not one of these people is in it.**
 
-**The United Golfers Association.** The UGA was where Black golfers actually played: their own tour, their own championships, their own stars. Its **founding year is genuinely disputed** — you will see 1925, 1926, and 1928, and the National Museum of African American History and Culture says only "the mid-1920s." This course does not pick one. Its greatest under-taught figure is **Ethel Funches**, an **eight-time UGA champion**, who is far less famous than she should be.
+**The United Golfers Association.** The UGA was where Black golfers actually played: their own tour, their own championships, their own stars. Its **founding year is genuinely disputed**, you will see 1925, 1926, and 1928, and the National Museum of African American History and Culture says only "the mid-1920s." This course does not pick one. Its greatest under-taught figure is **Ethel Funches**, an **eight-time UGA champion**, who is far less famous than she should be.
 
-:::reveal Did Bill Spiller and Ted Rhodes WIN their 1948 lawsuit against the PGA, and how did the Caucasian-only clause finally fall? ||| No. The suit was WITHDRAWN, not won, in exchange for a PGA promise not to discriminate — a promise the PGA then broke by changing the form of its events instead of its rules. The clause finally fell in November 1961 because Spiller, working as a caddie, carried the bag of Stanley Mosk, the Attorney General of California, who then threatened to bar the PGA from every public course in the state.
+:::reveal Did Bill Spiller and Ted Rhodes WIN their 1948 lawsuit against the PGA, and how did the Caucasian-only clause finally fall? ||| No. The suit was WITHDRAWN, not won, in exchange for a PGA promise not to discriminate, a promise the PGA then broke by changing the form of its events instead of its rules. The clause finally fell in November 1961 because Spiller, working as a caddie, carried the bag of Stanley Mosk, the Attorney General of California, who then threatened to bar the PGA from every public course in the state.
 
 ## Sources
 - PGA of America. (n.d.). *PGA history*. https://www.pga.com/story/pga-of-america-history
@@ -1647,7 +1647,7 @@ So the causal chain runs: **a Black golfer, denied a career, carrying the clubs 
         {
           prompt: "When was the PGA's Caucasian-only clause adopted, and when was it removed?",
           answer:
-            "Adopted in 1934 and removed in November 1961 — 27 years, and within the lifetime of people alive today.",
+            "Adopted in 1934 and removed in November 1961-27 years, and within the lifetime of people alive today.",
         },
         {
           prompt: "How did Bill Spiller come to meet the man who ended the clause?",
@@ -1657,11 +1657,11 @@ So the causal chain runs: **a Black golfer, denied a career, carrying the clubs 
       ],
       body: `This lesson is different. **You are going to read a primary source and find out what is missing from it.**
 
-*Golfdom* was the golf industry's trade magazine — written by the business for the business, not for the public. In **January 1962**, a few weeks after the PGA removed the Caucasian-only clause, *Golfdom* reported the repeal. The document is scanned, free, and linked below.
+*Golfdom* was the golf industry's trade magazine, written by the business for the business, not for the public. In **January 1962**, a few weeks after the PGA removed the Caucasian-only clause, *Golfdom* reported the repeal. The document is scanned, free, and linked below.
 
 **Go and read it now, before you read the rest of this lesson.**
 
-👉 **[*Golfdom*, January 1962 — the report of the repeal](https://archive.lib.msu.edu/tic/golfd/article/1962jan58F.pdf)** (Michigan State University Turfgrass Information Center)
+👉 **[*Golfdom*, January 1962, the report of the repeal](https://archive.lib.msu.edu/tic/golfd/article/1962jan58F.pdf)** (Michigan State University Turfgrass Information Center)
 
 Now answer three questions about the document you just read.
 
@@ -1671,7 +1671,7 @@ It attributes the repeal to **"difficulties in making tournament arrangements."*
 
 **Question 2: Who is named in it?**
 
-Not **Charlie Sifford**. Not **Bill Spiller**. Not **Ted Rhodes**. Not **Stanley Mosk**, the Attorney General whose threat actually forced the decision. **The people who spent more than a decade fighting this rule — and the man who broke it — appear nowhere in the industry's account of its own repeal.**
+Not **Charlie Sifford**. Not **Bill Spiller**. Not **Ted Rhodes**. Not **Stanley Mosk**, the Attorney General whose threat actually forced the decision. **The people who spent more than a decade fighting this rule, and the man who broke it, appear nowhere in the industry's account of its own repeal.**
 
 **Question 3: So what actually happened here?**
 
@@ -1683,13 +1683,13 @@ Read the two things side by side:
 | A lawsuit, withdrawn on a promise the PGA broke | *(absent)* |
 | A state Attorney General threatening to shut the PGA out of California | *(absent)* |
 | A rule that barred a whole race from a profession for 27 years | *(not the focus)* |
-| — | **"difficulties in making tournament arrangements"** |
+|, | **"difficulties in making tournament arrangements"** |
 
 **This is the most important lesson in the course, and it is not about golf.**
 
-The erasure did not require anybody to lie. Every word in that article can be technically defensible. The PGA *did* have difficulties making tournament arrangements — that is precisely what happens when the Attorney General of your largest state threatens to lock you out of every public course in it. **The article is not false. It is emptied.** It takes a civil-rights defeat and files it under logistics.
+The erasure did not require anybody to lie. Every word in that article can be technically defensible. The PGA *did* have difficulties making tournament arrangements, that is precisely what happens when the Attorney General of your largest state threatens to lock you out of every public course in it. **The article is not false. It is emptied.** It takes a civil-rights defeat and files it under logistics.
 
-And notice **who this was written for**: not the public, but the industry itself — club managers, course superintendents, equipment sellers. This is how the business explained the repeal **to itself**. It is the version that the people who ran golf got to believe, and, if nobody checks, it is the version that becomes the history.
+And notice **who this was written for**: not the public, but the industry itself, club managers, course superintendents, equipment sellers. This is how the business explained the repeal **to itself**. It is the version that the people who ran golf got to believe, and, if nobody checks, it is the version that becomes the history.
 
 **The transferable skill.** When you read any institution's account of its own reform, ask the three questions you just asked:
 
@@ -1697,9 +1697,9 @@ And notice **who this was written for**: not the public, but the industry itself
 2. **Who is named?** (And, far more revealingly: **who is missing?**)
 3. **Who was the audience?** (Who was this version of the story *for*?)
 
-An institution describing why it stopped doing something wrong is one of the least reliable documents you will ever read, **and it is usually the only one that gets filed.** That is why you go and find the people who were left out. In golf's case they were named Sifford, Spiller, Rhodes, and Mosk, and you now know their names — which is more than *Golfdom*'s readers did.
+An institution describing why it stopped doing something wrong is one of the least reliable documents you will ever read, **and it is usually the only one that gets filed.** That is why you go and find the people who were left out. In golf's case they were named Sifford, Spiller, Rhodes, and Mosk, and you now know their names, which is more than *Golfdom*'s readers did.
 
-:::reveal What reason does the January 1962 Golfdom article give for the repeal, and which four people are missing from it? ||| It attributes the repeal to "difficulties in making tournament arrangements" — an administrative inconvenience. Missing from the industry's own account are Charlie Sifford, Bill Spiller, Ted Rhodes, and Stanley Mosk, the California Attorney General whose threat actually forced the decision. The article is not false; it is emptied. It files a civil-rights defeat under logistics.
+:::reveal What reason does the January 1962 Golfdom article give for the repeal, and which four people are missing from it? ||| It attributes the repeal to "difficulties in making tournament arrangements", an administrative inconvenience. Missing from the industry's own account are Charlie Sifford, Bill Spiller, Ted Rhodes, and Stanley Mosk, the California Attorney General whose threat actually forced the decision. The article is not false; it is emptied. It files a civil-rights defeat under logistics.
 
 ## Sources
 - *Golfdom*. (1962, January). [Report on the removal of the PGA's Caucasian-only clause]. Michigan State University Turfgrass Information Center. https://archive.lib.msu.edu/tic/golfd/article/1962jan58F.pdf
@@ -1713,12 +1713,12 @@ An institution describing why it stopped doing something wrong is one of the lea
         {
           prompt: "What reason did the January 1962 Golfdom article give for the repeal of the Caucasian-only clause?",
           answer:
-            "\"Difficulties in making tournament arrangements\" — an administrative inconvenience. It named none of the people who forced the change.",
+            "\"Difficulties in making tournament arrangements\", an administrative inconvenience. It named none of the people who forced the change.",
         },
         {
           prompt: "What three questions should you ask of any institution's account of its own reform?",
           answer:
-            "What reason is given (moral or administrative)? Who is named, and who is missing? Who was the audience — who was this version of the story for?",
+            "What reason is given (moral or administrative)? Who is named, and who is missing? Who was the audience, who was this version of the story for?",
         },
       ],
       body: `Here is the pattern that runs through this entire history, and once you see it you will see it everywhere, in every field:
@@ -1728,7 +1728,7 @@ An institution describing why it stopped doing something wrong is one of the lea
 Golf gives us three clean, documented examples of exactly that move.
 
 **Evasion 1: Rename the tournament.**
-After Spiller and Rhodes sued over the 1948 Richmond Open, the PGA needed its events to stop being things a Black golfer could qualify for. Its solution was beautifully simple: **relabel the events "Invitationals."** An open tournament must accept qualifiers. An **invitational** need only invite. **The PGA then did not invite Black players.** Nothing in the rulebook had to say "no Black golfers" — the word "Invitational" did the work, and it did it without ever using a racial term.
+After Spiller and Rhodes sued over the 1948 Richmond Open, the PGA needed its events to stop being things a Black golfer could qualify for. Its solution was beautifully simple: **relabel the events "Invitationals."** An open tournament must accept qualifiers. An **invitational** need only invite. **The PGA then did not invite Black players.** Nothing in the rulebook had to say "no Black golfers", the word "Invitational" did the work, and it did it without ever using a racial term.
 
 **Evasion 2: Lease the public course to a "private club."**
 The Fourteenth Amendment restrains **states**, not private parties. So a city that did not want to integrate its **public** golf course had an obvious escape: **stop having a public golf course.** Greensboro, North Carolina **leased its city-owned Gillespie Park course to a nonprofit corporation**, which then operated it as a "private club" that Black golfers could not join. The course was the same. The grass was the same. The city still owned the land. Only the **paperwork** changed.
@@ -1740,7 +1740,7 @@ Federal judge Johnson J. Hayes saw through it, and his words are worth reading t
 **Look at the year: 1957. That is seven years before the Civil Rights Act of 1964 existed.** Which raises the question this lesson is really about.
 
 **Evasion 3: Sell the course outright.**
-**Delray Beach, Florida sold its municipal golf course** in **1957–58**. Why? Three newspapers printed the reason plainly. The *Palm Beach Post* described it as **"a move by the city to prevent use of the course by Negroes."** Not an inference by a historian. **The stated motive, in the paper, at the time.**
+**Delray Beach, Florida sold its municipal golf course** in **1957-58**. Why? Three newspapers printed the reason plainly. The *Palm Beach Post* described it as **"a move by the city to prevent use of the course by Negroes."** Not an inference by a historian. **The stated motive, in the paper, at the time.**
 
 ---
 
@@ -1748,26 +1748,26 @@ Federal judge Johnson J. Hayes saw through it, and his words are worth reading t
 
 **Because the Civil Rights Act does not cover golf courses.** Go and read the statute.
 
-**Title II** lists the places of public accommodation it covers (42 U.S.C. § 2000a(b)): **inns and hotels, restaurants and lunch counters, movie theaters, concert halls, sports arenas and stadiums.** Read that list again and notice what is not on it. **There is no golf course. There is no country club.** A stadium — where you *watch* sport — is covered. A golf course — where you *play* it — is not named.
+**Title II** lists the places of public accommodation it covers (42 U.S.C. § 2000a(b)): **inns and hotels, restaurants and lunch counters, movie theaters, concert halls, sports arenas and stadiums.** Read that list again and notice what is not on it. **There is no golf course. There is no country club.** A stadium, where you *watch* sport, is covered. A golf course, where you *play* it, is not named.
 
 And then § 2000a(e) adds an exemption for **"a private club or other establishment not in fact open to the public."** So the private-club evasion is not merely a loophole somebody found. **It is written into the statute.**
 
-**This is why golf's desegregation ran through the Fourteenth Amendment, not the Civil Rights Act.** The cases had to be built on **state action** — on the fact that a city *owned* the course, spent *public money* on it, and therefore could not hand it to some citizens and deny it to others. That argument reaches a **municipal** course. It does not reach a private club at all.
+**This is why golf's desegregation ran through the Fourteenth Amendment, not the Civil Rights Act.** The cases had to be built on **state action**, on the fact that a city *owned* the course, spent *public money* on it, and therefore could not hand it to some citizens and deny it to others. That argument reaches a **municipal** course. It does not reach a private club at all.
 
-**And so the final evasion: just close it.** If a city can be forced to integrate a public facility, can it simply shut the facility instead? The Supreme Court answered that in **Palmer v. Thompson (1971)** — a case about Jackson, Mississippi's **swimming pools**, not its golf courses (Jackson **did** desegregate its golf courses). The Court held, **5–4**, that a city **may** close a public facility rather than operate it on an integrated basis. **That ruling is the shelter the closure tactic lived under.**
+**And so the final evasion: just close it.** If a city can be forced to integrate a public facility, can it simply shut the facility instead? The Supreme Court answered that in **Palmer v. Thompson (1971)**, a case about Jackson, Mississippi's **swimming pools**, not its golf courses (Jackson **did** desegregate its golf courses). The Court held, **5-4**, that a city **may** close a public facility rather than operate it on an integrated basis. **That ruling is the shelter the closure tactic lived under.**
 
 **Put the whole thing together and you have the shape of the problem:**
 
 | The move | Why it worked |
 | --- | --- |
 | Rename the tournament "Invitational" | An invitational owes nobody an invitation |
-| Lease the course to a "private club" | The Fourteenth Amendment restrains states, not private parties — and Title II exempts private clubs |
+| Lease the course to a "private club" | The Fourteenth Amendment restrains states, not private parties, and Title II exempts private clubs |
 | Sell the course | No public ownership, no state action, no case |
 | Close the course | *Palmer v. Thompson* (1971): a city may close a facility rather than integrate it |
 
-**None of these required a single racist word in a single document.** That is the lesson. **A rule that only bans the stated intention will be defeated by anyone willing to change the paperwork.** The people who fought this had to win it one course, one city, and one lawsuit at a time — which is exactly what they did, and it is the next lesson.
+**None of these required a single racist word in a single document.** That is the lesson. **A rule that only bans the stated intention will be defeated by anyone willing to change the paperwork.** The people who fought this had to win it one course, one city, and one lawsuit at a time, which is exactly what they did, and it is the next lesson.
 
-:::reveal Why did golf's desegregation have to run through the Fourteenth Amendment instead of the Civil Rights Act? ||| Because Title II of the Civil Rights Act does not list golf courses at all — 42 U.S.C. § 2000a(b) names inns, restaurants, theaters, and stadiums, but no golf course and no country club — and § 2000a(e) expressly exempts private clubs "not in fact open to the public." So the cases had to be built on state action under the Fourteenth Amendment: a city owned the course and spent public money on it, so it could not give it to some citizens and deny it to others.
+:::reveal Why did golf's desegregation have to run through the Fourteenth Amendment instead of the Civil Rights Act? ||| Because Title II of the Civil Rights Act does not list golf courses at all, 42 U.S.C. § 2000a(b) names inns, restaurants, theaters, and stadiums, but no golf course and no country club, and § 2000a(e) expressly exempts private clubs "not in fact open to the public." So the cases had to be built on state action under the Fourteenth Amendment: a city owned the course and spent public money on it, so it could not give it to some citizens and deny it to others.
 
 ## Sources
 - Civil Rights Act of 1964, 42 U.S.C. § 2000a (1964). https://www.law.cornell.edu/uscode/text/42/2000a
@@ -1788,7 +1788,7 @@ And then § 2000a(e) adds an exemption for **"a private club or other establishm
         {
           prompt: "Does Title II of the Civil Rights Act cover golf courses?",
           answer:
-            "No. 42 U.S.C. § 2000a(b) lists inns, restaurants, theaters and stadiums — no golf courses, no country clubs — and § 2000a(e) exempts private clubs not in fact open to the public.",
+            "No. 42 U.S.C. § 2000a(b) lists inns, restaurants, theaters and stadiums, no golf courses, no country clubs, and § 2000a(e) exempts private clubs not in fact open to the public.",
         },
       ],
       body: `**Holmes v. City of Atlanta.** In the early 1950s, **Dr. Hamilton Mayo Holmes** and others sued Atlanta for access to its municipal golf courses.
@@ -1797,13 +1797,13 @@ And then § 2000a(e) adds an exemption for **"a private club or other establishm
 
 **What the district court did is the single most extraordinary document in this course.**
 
-In **July 1954** — **seven weeks after *Brown v. Board of Education***, in which the Supreme Court had just held that separate is inherently unequal — the federal district court ruled on Atlanta's golf courses. It ordered the city to provide **equal** facilities. And it described its own order this way (*Holmes v. Atlanta*, 124 F. Supp. 290, 1954):
+In **July 1954**, **seven weeks after *Brown v. Board of Education***, in which the Supreme Court had just held that separate is inherently unequal, the federal district court ruled on Atlanta's golf courses. It ordered the city to provide **equal** facilities. And it described its own order this way (*Holmes v. Atlanta*, 124 F. Supp. 290, 1954):
 
 > *"...while preserving segregation, will be in full and fair accord with its principles."*
 
 Read that once more. **A federal judge, seven weeks after *Brown*, ordering equality *and* segregation, and claiming to be faithful to *Brown* in doing so.** And then the **Fifth Circuit affirmed it.**
 
-It took the **Supreme Court of the United States** to erase both judgments. On **7 November 1955**, in *Holmes v. City of Atlanta*, 350 U.S. 879, the Court **vacated** the lower judgments. (Vacated — wiped out. Not "reversed and remanded," which is how it is usually misdescribed.) **Thurgood Marshall was counsel on the petition**, though the case was decided **without oral argument**, so he did not argue it.
+It took the **Supreme Court of the United States** to erase both judgments. On **7 November 1955**, in *Holmes v. City of Atlanta*, 350 U.S. 879, the Court **vacated** the lower judgments. (Vacated, wiped out. Not "reversed and remanded," which is how it is usually misdescribed.) **Thurgood Marshall was counsel on the petition**, though the case was decided **without oral argument**, so he did not argue it.
 
 **Notice the sequence, because the Court was building a wall, brick by brick:**
 
@@ -1813,27 +1813,27 @@ It took the **Supreme Court of the United States** to erase both judgments. On *
 | 7 Nov 1955 | *Mayor of Baltimore v. Dawson* | **Beaches** |
 | **7 Nov 1955** | ***Holmes v. City of Atlanta*** | **Golf courses** |
 
-**Beaches and golf courses on the same day.** *Brown* had been about schools, and segregationists argued it was *only* about schools — that education was special. In one afternoon the Court quietly answered: **no, it was never only about schools.**
+**Beaches and golf courses on the same day.** *Brown* had been about schools, and segregationists argued it was *only* about schools, that education was special. In one afternoon the Court quietly answered: **no, it was never only about schools.**
 
 ---
 
 **The Greensboro Six, and the longest week in golf.**
 
-On **7 December 1955**, six Black men played the **Gillespie Park** course in Greensboro — the city-owned course that had been leased to a sham "private club" (Lesson 26). They paid their green fee. They played. **They were arrested.**
+On **7 December 1955**, six Black men played the **Gillespie Park** course in Greensboro, the city-owned course that had been leased to a sham "private club" (Lesson 26). They paid their green fee. They played. **They were arrested.**
 
-They were sentenced to **30 days in jail** — the **statutory maximum**. Not a fine. Not a warning. The maximum, for playing golf.
+They were sentenced to **30 days in jail**, the **statutory maximum**. Not a fine. Not a warning. The maximum, for playing golf.
 
-🔴 **Now, a correction, and it is an important one.** You will read — **on the PGA TOUR's own website, and in *Global Golf Post*** — that the Greensboro Six "**lost 5–4 at the Supreme Court**" in 1958 or 1959. **Both publications are wrong.** The case is ***Wolfe v. North Carolina*, 364 U.S. 177**, decided **27 June 1960**, and the Court **dismissed the appeal** — it **never reached the merits at all.** There was no 5–4 loss on the substance of their claim. There was a procedural dismissal.
+🔴 **Now, a correction, and it is an important one.** You will read, **on the PGA TOUR's own website, and in *Global Golf Post***, that the Greensboro Six "**lost 5-4 at the Supreme Court**" in 1958 or 1959. **Both publications are wrong.** The case is ***Wolfe v. North Carolina*, 364 U.S. 177**, decided **27 June 1960**, and the Court **dismissed the appeal**, it **never reached the merits at all.** There was no 5-4 loss on the substance of their claim. There was a procedural dismissal.
 
-That the sport's own governing bodies get this wrong, in public, on the record, tells you something worth knowing: **being an official source is not the same as being a correct one.** You are permitted — required, really — to go and read the opinion. It is public. It has a number.
+That the sport's own governing bodies get this wrong, in public, on the record, tells you something worth knowing: **being an official source is not the same as being a correct one.** You are permitted, required, really, to go and read the opinion. It is public. It has a number.
 
-**How it ended.** Someone **burned the Gillespie Park clubhouse down.** The city closed the course — the *Palmer v. Thompson* escape hatch, in practice.
+**How it ended.** Someone **burned the Gillespie Park clubhouse down.** The city closed the course, the *Palmer v. Thompson* escape hatch, in practice.
 
-And then, on **7 December 1962** — **seven years to the day** after the six men were arrested for playing it — **the course reopened, desegregated**, with **George Simkins teeing off first.**
+And then, on **7 December 1962**, **seven years to the day** after the six men were arrested for playing it, **the course reopened, desegregated**, with **George Simkins teeing off first.**
 
 They took the same tee, on the same date, on the far side of seven years, a jail sentence, an arson, and a Supreme Court dismissal. **That is what it actually cost to play a round of golf.**
 
-:::reveal What did the district court order in Holmes v. Atlanta in July 1954, and what really happened to the Greensboro Six at the Supreme Court? ||| Seven weeks after Brown, the district court ordered EQUAL facilities "while preserving segregation," claiming this was "in full and fair accord with" Brown's principles — and the Fifth Circuit affirmed it. The Supreme Court VACATED both judgments on 7 November 1955. As for the Greensboro Six: the PGA TOUR and Global Golf Post both say they "lost 5-4 at the Supreme Court," and both are wrong. In Wolfe v. North Carolina, 364 U.S. 177 (27 June 1960), the Court DISMISSED the appeal and never reached the merits.
+:::reveal What did the district court order in Holmes v. Atlanta in July 1954, and what really happened to the Greensboro Six at the Supreme Court? ||| Seven weeks after Brown, the district court ordered EQUAL facilities "while preserving segregation," claiming this was "in full and fair accord with" Brown's principles, and the Fifth Circuit affirmed it. The Supreme Court VACATED both judgments on 7 November 1955. As for the Greensboro Six: the PGA TOUR and Global Golf Post both say they "lost 5-4 at the Supreme Court," and both are wrong. In Wolfe v. North Carolina, 364 U.S. 177 (27 June 1960), the Court DISMISSED the appeal and never reached the merits.
 
 ## Sources
 - *Holmes v. City of Atlanta*, 350 U.S. 879 (1955). https://supreme.justia.com/cases/federal/us/350/879/
@@ -1851,7 +1851,7 @@ They took the same tee, on the same date, on the far side of seven years, a jail
         {
           prompt: "What happened on 7 December 1955, and what happened on 7 December 1962?",
           answer:
-            "On 7 December 1955 the Greensboro Six played the leased Gillespie Park course and were arrested, receiving 30 days in jail — the statutory maximum. Seven years to the day later, on 7 December 1962, the course reopened desegregated, with George Simkins teeing off first.",
+            "On 7 December 1955 the Greensboro Six played the leased Gillespie Park course and were arrested, receiving 30 days in jail, the statutory maximum. Seven years to the day later, on 7 December 1962, the course reopened desegregated, with George Simkins teeing off first.",
         },
         {
           prompt: "Did the Greensboro Six lose 5-4 at the Supreme Court?",
@@ -1863,11 +1863,11 @@ They took the same tee, on the same date, on the far side of seven years, a jail
 
 Three things about Shippen are usually told wrong, and the truth is better:
 
-- He is routinely called "the first American-born golf professional." **That claim is his own.** The USGA's own account is careful: **he told an interviewer that he *believed* himself to be** the first. That is a man's recollection of his own life, not an established record — and it should be written the way the USGA writes it.
+- He is routinely called "the first American-born golf professional." **That claim is his own.** The USGA's own account is careful: **he told an interviewer that he *believed* himself to be** the first. That is a man's recollection of his own life, not an established record, and it should be written the way the USGA writes it.
 - The famous story that the white professionals **threatened to boycott** unless he was removed is described by the **USGA itself as "undocumented."**
 - His exact finish, his age, and the size of the field **conflict between the USGA's own pages**. Where an institution's own records disagree with each other, say so.
 
-One verified, human detail survives: **he took an 11 on a single hole** — and still finished in the top six.
+One verified, human detail survives: **he took an 11 on a single hole**, and still finished in the top six.
 
 **And then the gap. Read this slowly: after John Shippen played in 1896, it was 52 YEARS before another Black golfer played in the U.S. Open** (Ted Rhodes, in 1948).
 
@@ -1875,41 +1875,41 @@ One verified, human detail survives: **he took an 11 on a single hole** — and 
 
 ---
 
-**Ann Gregory, 1956** — the first African American woman to play in a **USGA championship**. And here is the part that is almost always left out, and is the whole lesson:
+**Ann Gregory, 1956**, the first African American woman to play in a **USGA championship**. And here is the part that is almost always left out, and is the whole lesson:
 
 **She could only enter because the Chicago Women's Golf Club had, that same year, become the first all-Black club admitted to USGA membership.** Entry ran through **club membership**. So the barrier was never really about Ann Gregory. **It was institutional.** No amount of individual excellence could have gotten her in; an *organization* had to be let through the door first, and then she could walk through it.
 
-**Bill Wright, 1959** — the first African American to **WIN** a USGA championship. He won the **Amateur Public Links**.
+**Bill Wright, 1959**, the first African American to **WIN** a USGA championship. He won the **Amateur Public Links**.
 
 **Read that championship's name again.** Of all the USGA's championships, the first won by a Black golfer was **the one for players from public courses**. That is not a coincidence, and after Lessons 26 and 27 you know exactly why: **private clubs were where exclusion was legal and permanent.** The public course was the only door, so the public-course championship was the first one through it.
 
-**Althea Gibson** — already a tennis champion, she joined the **LPGA in 1963**. (You will see 1964 in places, including Wikipedia; the **LPGA and the PGA both say 1963**.) **She never won an LPGA title** — and that is precisely the point. **The barrier she broke was entry, not victory.** We remember firsts who won. We should also remember firsts who simply *got in*, because getting in was the hard part.
+**Althea Gibson**, already a tennis champion, she joined the **LPGA in 1963**. (You will see 1964 in places, including Wikipedia; the **LPGA and the PGA both say 1963**.) **She never won an LPGA title**, and that is precisely the point. **The barrier she broke was entry, not victory.** We remember firsts who won. We should also remember firsts who simply *got in*, because getting in was the hard part.
 
-**Renee Powell** — joined the **LPGA in 1967**, and in **1996** became the **first African American woman to become a PGA member**. Her father, **Bill Powell**, **built his own golf course — Clearview** — for the simplest possible reason: **he was barred from playing on everyone else's.**
+**Renee Powell**, joined the **LPGA in 1967**, and in **1996** became the **first African American woman to become a PGA member**. Her father, **Bill Powell**, **built his own golf course, Clearview**, for the simplest possible reason: **he was barred from playing on everyone else's.**
 
 **Charlie Sifford.** At the **end of 1960** Sifford received an **"approved player"** card. Notice the wording: **not full membership. A second-class category, invented to admit him partway.**
 
-🔴 **When did he get full PGA membership? Official golf sources contradict each other — some say 1961, some say 1964.** This course is not going to pretend otherwise, because **the ambiguity IS the history.** An organization that had spent 27 years keeping a man out did not keep clean records of the day it finally let him in. **The sloppiness is evidence.**
+🔴 **When did he get full PGA membership? Official golf sources contradict each other, some say 1961, some say 1964.** This course is not going to pretend otherwise, because **the ambiguity IS the history.** An organization that had spent 27 years keeping a man out did not keep clean records of the day it finally let him in. **The sloppiness is evidence.**
 
-What is not ambiguous: the **1967 Greater Hartford Open**, Sifford's **first official PGA TOUR win**. He won again at the **1969 Los Angeles Open** — played at **Rancho Park**, *not* Riviera, which is widely misreported. In **2014** he received the **Presidential Medal of Freedom**.
+What is not ambiguous: the **1967 Greater Hartford Open**, Sifford's **first official PGA TOUR win**. He won again at the **1969 Los Angeles Open**, played at **Rancho Park**, *not* Riviera, which is widely misreported. In **2014** he received the **Presidential Medal of Freedom**.
 
-**Lee Elder** became the **first Black golfer to play in the Masters, in 1975**, having earned it the only way that could not be denied: **by winning the 1974 Monsanto Open.** In 2021 Augusta made him an **honorary starter** — an honor at which, it should be noted, **he did not hit a tee shot.**
+**Lee Elder** became the **first Black golfer to play in the Masters, in 1975**, having earned it the only way that could not be denied: **by winning the 1974 Monsanto Open.** In 2021 Augusta made him an **honorary starter**, an honor at which, it should be noted, **he did not hit a tee shot.**
 
 ---
 
 **Tiger Woods, 1997.** He won the Masters at **21**, the **youngest champion ever**, shooting **270 (−18)** and winning by **12 shots** over Tom Kite. In the PGA of America's own words, he was the **first African-American to win the Masters**.
 
-**Put one fact next to that win and it changes shape entirely: Augusta National did not invite its first Black player until 1975 — the year Tiger Woods was born.** The gap between "no Black man has ever been invited to play here" and "a Black man just won by 12" is **one human lifetime, and not a long one.**
+**Put one fact next to that win and it changes shape entirely: Augusta National did not invite its first Black player until 1975, the year Tiger Woods was born.** The gap between "no Black man has ever been invited to play here" and "a Black man just won by 12" is **one human lifetime, and not a long one.**
 
 🔴 **What this course will not say:** that Woods was the "first Asian-American Masters champion." That claim is unsupported, and golf's institutions describe **Hideki Matsuyama (2021)** as the first Asian man to win it.
 
-**What is far more interesting is what Woods did himself.** In 1997, on *Oprah*, he **refused a single racial label** and offered a word he had made up as a child: **"Cablinasian"** — Caucasian, Black, (American) Indian, and Asian. He did it because calling him simply "African American" **erased his Thai mother.**
+**What is far more interesting is what Woods did himself.** In 1997, on *Oprah*, he **refused a single racial label** and offered a word he had made up as a child: **"Cablinasian"**, Caucasian, Black, (American) Indian, and Asian. He did it because calling him simply "African American" **erased his Thai mother.**
 
-He was widely criticized for it. But sit with the actual question he raised, because it is the sharpest one in this section: **who gets to decide which race a person is — the person, or everyone else?** For most of the history in this course, **the institutions decided**, and they wrote their decision into a membership clause. **Woods, at 21, took that authority back for himself.** You can think he was right or wrong, but you should notice what he was actually doing.
+He was widely criticized for it. But sit with the actual question he raised, because it is the sharpest one in this section: **who gets to decide which race a person is, the person, or everyone else?** For most of the history in this course, **the institutions decided**, and they wrote their decision into a membership clause. **Woods, at 21, took that authority back for himself.** You can think he was right or wrong, but you should notice what he was actually doing.
 
 *(A related correction, since precision matters here: the **LPGA was founded in 1950** and speaks of **13 founders**, but **only five women signed the Certificate of Incorporation.** "Thirteen women signed the charter" is a very common and very wrong sentence.)*
 
-:::reveal Why could Ann Gregory enter a USGA championship in 1956, and why is it significant that Bill Wright's 1959 win was in the Amateur Public Links? ||| Gregory could only enter because the Chicago Women's Golf Club had that year become the first all-Black club admitted to USGA membership — entry ran through club membership, so the barrier was institutional, not individual. Wright's win came in the PUBLIC-course championship because private clubs were where exclusion remained legal and permanent; the public course was the only door open, so it was the first one a Black golfer came through.
+:::reveal Why could Ann Gregory enter a USGA championship in 1956, and why is it significant that Bill Wright's 1959 win was in the Amateur Public Links? ||| Gregory could only enter because the Chicago Women's Golf Club had that year become the first all-Black club admitted to USGA membership, entry ran through club membership, so the barrier was institutional, not individual. Wright's win came in the PUBLIC-course championship because private clubs were where exclusion remained legal and permanent; the public course was the only door open, so it was the first one a Black golfer came through.
 
 ## Sources
 - USGA. (n.d.). *John Shippen*. USGA Golf Museum. https://www.usga.org/museum.html
@@ -1926,17 +1926,17 @@ He was widely criticized for it. But sit with the actual question he raised, bec
         {
           prompt: "How long was the gap between John Shippen playing the U.S. Open and the next Black golfer to do so?",
           answer:
-            "52 years — Shippen in 1896, then Ted Rhodes in 1948. The gap is the story: progress is not a ratchet, and here it went backwards.",
+            "52 years, Shippen in 1896, then Ted Rhodes in 1948. The gap is the story: progress is not a ratchet, and here it went backwards.",
         },
         {
           prompt: "What word did Tiger Woods coin in 1997, and why?",
           answer:
-            "\"Cablinasian\" — Caucasian, Black, Indian, Asian. He refused a single racial label because calling him simply African American erased his Thai mother. The real question he raised: who decides a person's race, the person or everyone else?",
+            "\"Cablinasian\", Caucasian, Black, Indian, Asian. He refused a single racial label because calling him simply African American erased his Thai mother. The real question he raised: who decides a person's race, the person or everyone else?",
         },
       ],
       body: `**The caddie rule at Augusta is the sharpest story in golf, and almost nobody teaches it.**
 
-From **1934**, every player in the Masters was **required** to use one of **Augusta National's own caddies** — a corps that was **entirely Black**. You could not bring your own. So for **roughly 48 years**, the most famous golf tournament in America guaranteed Black men a place inside the ropes, **in exactly one role: carrying a white player's bag.** They were essential, they were expert — an Augusta caddie's knowledge of those greens was worth strokes no yardage book could give you — and they were **structurally barred from being anything else.**
+From **1934**, every player in the Masters was **required** to use one of **Augusta National's own caddies**, a corps that was **entirely Black**. You could not bring your own. So for **roughly 48 years**, the most famous golf tournament in America guaranteed Black men a place inside the ropes, **in exactly one role: carrying a white player's bag.** They were essential, they were expert, an Augusta caddie's knowledge of those greens was worth strokes no yardage book could give you, and they were **structurally barred from being anything else.**
 
 **How it ended is the part that should make you uncomfortable.**
 
@@ -1960,9 +1960,9 @@ The 1990 **PGA Championship** was scheduled at **Shoal Creek**, in Birmingham, A
 
 **Then something happened that a century of moral argument had not achieved: the advertisers left.** **IBM, Toyota, and Anheuser-Busch pulled their television advertising.**
 
-Shoal Creek admitted **Louis J. Willie** — as an **honorary** member. Read that carefully. **Not a full member. A partial concession**, offered under commercial pressure, which is exactly what a partial concession is for.
+Shoal Creek admitted **Louis J. Willie**, as an **honorary** member. Read that carefully. **Not a full member. A partial concession**, offered under commercial pressure, which is exactly what a partial concession is for.
 
-**Roughly one month later, Augusta National admitted its first Black member: Ron Townsend, in 1990** — and, to be precise where precision favours them, **as a full member.**
+**Roughly one month later, Augusta National admitted its first Black member: Ron Townsend, in 1990**, and, to be precise where precision favours them, **as a full member.**
 
 **Ask yourself what actually moved these institutions.** Not *Brown*. Not the Fourteenth Amendment. Not thirty years of Black golfers being excellent in public. **Television advertising revenue.** You may draw your own conclusions about what that says, but do not look away from it.
 
@@ -1971,8 +1971,8 @@ Shoal Creek admitted **Louis J. Willie** — as an **honorary** member. Read tha
 **And the women.**
 
 - **Augusta National admitted its first women members on 20 August 2012: Condoleezza Rice and Darla Moore.** A decade earlier, chairman **Hootie Johnson** had said the club might one day admit a woman, but **"not at the point of a bayonet."**
-- **The Royal & Ancient Golf Club** — the club, remember, not the governing body — **voted to admit women on 18 September 2014**, with **85%** in favour. It had been founded in 1754.
-- **Muirfield** voted in **2016** and **failed**, at **64%**. The R&A promptly **removed it from the rota of courses that host The Open** — the most valuable thing a British links course has. Muirfield voted again in **2017** and passed at **80.2%**, and was **reinstated**. **The first 12 women members joined on 1 July 2019** — **275 years after the club was founded.**
+- **The Royal & Ancient Golf Club**, the club, remember, not the governing body, **voted to admit women on 18 September 2014**, with **85%** in favour. It had been founded in 1754.
+- **Muirfield** voted in **2016** and **failed**, at **64%**. The R&A promptly **removed it from the rota of courses that host The Open**, the most valuable thing a British links course has. Muirfield voted again in **2017** and passed at **80.2%**, and was **reinstated**. **The first 12 women members joined on 1 July 2019**, **275 years after the club was founded.**
 
 **Notice the mechanism in the Muirfield story**, because it is the same one as Shoal Creek: the club changed when **exclusion started costing it something it valued**. A vote failed on principle in 2016. The same men, asked the same question after losing The Open, produced a completely different answer in 2017.
 
@@ -1980,13 +1980,13 @@ Shoal Creek admitted **Louis J. Willie** — as an **honorary** member. Read tha
 
 **One last thing, and it is a gap rather than a fact.**
 
-Golf's own participation data reports that **25% of on-course golfers are Black, Asian, or Hispanic *combined*** — up from **8% in 1990** — and about **26% of juniors** (National Golf Foundation, 2025).
+Golf's own participation data reports that **25% of on-course golfers are Black, Asian, or Hispanic *combined***, up from **8% in 1990**, and about **26% of juniors** (National Golf Foundation, 2025).
 
-**Now notice what you cannot find. The National Golf Foundation publishes no standalone figure for the percentage of golfers who are Black.** Not a low number. **No number.** The three groups are reported together, which means the specific question this section has spent seven lessons on — *how many Black golfers are there?* — **cannot be answered from the sport's own headline data.**
+**Now notice what you cannot find. The National Golf Foundation publishes no standalone figure for the percentage of golfers who are Black.** Not a low number. **No number.** The three groups are reported together, which means the specific question this section has spent seven lessons on, *how many Black golfers are there?*, **cannot be answered from the sport's own headline data.**
 
 **Name the absence, because the absence is itself a finding.** When an institution reports a combined figure, ask what the combination is hiding, and ask who benefits from it being hidden. **What does not get counted usually does not get fixed.**
 
-:::reveal Why did Augusta's all-Black caddie rule end in 1982, and what happened to those caddies in 1983? ||| Not for civil-rights reasons. It ended because of player pressure led by Tom Watson after the caddies were late returning to a rain-delayed restart — it had become professionally inconvenient. Then in 1983, the first year players could bring their own caddies, 63 of 81 did. The rule that had confined Black men to a subordinate role for ~48 years ended by promptly costing most of them their jobs.
+:::reveal Why did Augusta's all-Black caddie rule end in 1982, and what happened to those caddies in 1983? ||| Not for civil-rights reasons. It ended because of player pressure led by Tom Watson after the caddies were late returning to a rain-delayed restart, it had become professionally inconvenient. Then in 1983, the first year players could bring their own caddies, 63 of 81 did. The rule that had confined Black men to a subordinate role for ~48 years ended by promptly costing most of them their jobs.
 
 ## Sources
 - Masters Tournament. (n.d.). *Tournament history*. https://www.masters.com/en_US/history/index.html
@@ -2018,7 +2018,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
             prompt: "Were 18 holes standardized in 1764?",
             options: [
               "Yes, by an act of the R&A",
-              "No — St Andrews shortened its OWN round from 22 to 18; eighteen became the norm only in the 1880s",
+              "No, St Andrews shortened its OWN round from 22 to 18; eighteen became the norm only in the 1880s",
               "Yes, by the USGA",
               "No, the standard is still 22 holes",
             ],
@@ -2058,14 +2058,14 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
             ],
             correctIndex: 1,
             explanation:
-              "27 years. And 1961 is within the lifetime of people alive today — this is not ancient history.",
+              "27 years. And 1961 is within the lifetime of people alive today, this is not ancient history.",
             sourceLessonSlug: "golf-the-color-line",
           },
           {
             prompt: "What was the outcome of Bill Spiller and Ted Rhodes's 1948 lawsuit over the Richmond Open?",
             options: [
               "They won, and the clause was struck down",
-              "The suit was WITHDRAWN on a PGA promise not to discriminate — a promise the PGA then broke",
+              "The suit was WITHDRAWN on a PGA promise not to discriminate, a promise the PGA then broke",
               "They lost at the Supreme Court",
               "The case is still pending",
             ],
@@ -2097,7 +2097,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
             ],
             correctIndex: 1,
             explanation:
-              "The industry's own trade press filed a civil-rights defeat under logistics — and never named Sifford, Spiller, Rhodes, or Mosk. The article is not false. It is emptied.",
+              "The industry's own trade press filed a civil-rights defeat under logistics, and never named Sifford, Spiller, Rhodes, or Mosk. The article is not false. It is emptied.",
             sourceLessonSlug: "golf-golfdom-1962",
           },
           {
@@ -2110,7 +2110,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
             ],
             correctIndex: 1,
             explanation:
-              "42 U.S.C. § 2000a(b) names inns, restaurants, theaters and stadiums — no golf course, no country club — and § 2000a(e) exempts private clubs. So the cases had to be built on state action at MUNICIPAL courses.",
+              "42 U.S.C. § 2000a(b) names inns, restaurants, theaters and stadiums, no golf course, no country club, and § 2000a(e) exempts private clubs. So the cases had to be built on state action at MUNICIPAL courses.",
             sourceLessonSlug: "golf-three-evasions",
           },
           {
@@ -2136,7 +2136,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
             ],
             correctIndex: 1,
             explanation:
-              "A federal judge ordering equality AND segregation, weeks after Brown — and the Fifth Circuit affirmed it. The Supreme Court vacated both judgments on 7 November 1955.",
+              "A federal judge ordering equality AND segregation, weeks after Brown, and the Fifth Circuit affirmed it. The Supreme Court vacated both judgments on 7 November 1955.",
             sourceLessonSlug: "golf-the-courtroom",
           },
           {
@@ -2199,7 +2199,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
         {
           prompt: "What does the National Golf Foundation NOT publish, and why does that matter?",
           answer:
-            "It publishes no standalone figure for the percentage of golfers who are Black — only a combined Black/Asian/Hispanic figure (25%). Name the absence: what does not get counted usually does not get fixed.",
+            "It publishes no standalone figure for the percentage of golfers who are Black, only a combined Black/Asian/Hispanic figure (25%). Name the absence: what does not get counted usually does not get fixed.",
         },
         {
           prompt: "What finally moved Shoal Creek and Augusta National in 1990?",
@@ -2212,7 +2212,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
 | | **PGA of America** | **PGA TOUR** |
 | --- | --- | --- |
 | **Founded** | **1916** | **1968** |
-| **Who its members are** | **30,000+ working club and teaching professionals** — the people who run pro shops, give lessons, and manage facilities | **The elite touring players** you see on television |
+| **Who its members are** | **30,000+ working club and teaching professionals**, the people who run pro shops, give lessons, and manage facilities | **The elite touring players** you see on television |
 | **What it owns** | The **PGA Championship** and the **Ryder Cup** | **THE PLAYERS**, the **FedExCup**, the **Presidents Cup**, the **Korn Ferry Tour**, **Q-School**, **PGA TOUR University** |
 | **What it is, in one line** | The professional body for people who **work in golf** | The **league** for people who **play golf for prize money** |
 
@@ -2222,9 +2222,9 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
 
 **That is what "being a golf professional" almost always actually means.** The PGA TOUR has a few hundred players. The PGA of America has tens of thousands of members with **stable careers, salaries, and benefits**. When a 16-year-old says "I want to be a pro golfer," they are almost always picturing the tiny organization and not the enormous one. **The realistic, achievable, well-paid path is the one nobody televises**, and the Opportunities section is going to walk you down it.
 
-**One more piece of vocabulary.** A "**PGA Professional**" (a PGA of America member — a person who teaches and runs golf facilities) and a "**Tour player**" are different jobs, requiring different training, with different odds of success. **The first has a training program and a hiring market. The second has a lottery.**
+**One more piece of vocabulary.** A "**PGA Professional**" (a PGA of America member, a person who teaches and runs golf facilities) and a "**Tour player**" are different jobs, requiring different training, with different odds of success. **The first has a training program and a hiring market. The second has a lottery.**
 
-:::reveal What is the PGA of America, what is the PGA TOUR, and which one has more members? ||| The PGA of America (1916) is the professional body for 30,000+ working club and teaching professionals, and it owns the PGA Championship and the Ryder Cup. The PGA TOUR (1968) is the league for elite touring players, formed when a subset of touring pros broke away from the PGA of America; it owns THE PLAYERS, the FedExCup, and the Presidents Cup. The PGA of America is vastly larger — and its members have the realistic careers.
+:::reveal What is the PGA of America, what is the PGA TOUR, and which one has more members? ||| The PGA of America (1916) is the professional body for 30,000+ working club and teaching professionals, and it owns the PGA Championship and the Ryder Cup. The PGA TOUR (1968) is the league for elite touring players, formed when a subset of touring pros broke away from the PGA of America; it owns THE PLAYERS, the FedExCup, and the Presidents Cup. The PGA of America is vastly larger, and its members have the realistic careers.
 
 ## Sources
 - PGA of America. (n.d.). *About the PGA of America*. https://www.pga.com/about
@@ -2237,15 +2237,15 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
       recallContent: [
         {
           prompt: "Which organization owns the Ryder Cup and the PGA Championship?",
-          answer: "The PGA of America — not the PGA TOUR.",
+          answer: "The PGA of America, not the PGA TOUR.",
         },
         {
           prompt: "When a teenager says \"I want to be a pro golfer,\" which organization are they usually picturing, and which one has the realistic career path?",
           answer:
-            "They picture the PGA TOUR (a few hundred players — a lottery). The realistic path is the PGA of America: 30,000+ members with salaries, benefits, and an actual hiring market.",
+            "They picture the PGA TOUR (a few hundred players, a lottery). The realistic path is the PGA of America: 30,000+ members with salaries, benefits, and an actual hiring market.",
         },
       ],
-      body: `The **majors** are the four tournaments that define a career. Winning one changes a player's life permanently. **And each one is run by a different organization** — which is exactly why the previous lesson mattered.
+      body: `The **majors** are the four tournaments that define a career. Winning one changes a player's life permanently. **And each one is run by a different organization**, which is exactly why the previous lesson mattered.
 
 **The men's majors:**
 
@@ -2256,7 +2256,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
 | **U.S. Open** | **The USGA** | Rotates |
 | **The Open Championship** | **The R&A** | Rotates among links courses in the UK |
 
-**Note that no major is run by the PGA TOUR.** The tour's own flagship event, **THE PLAYERS Championship**, has one of the strongest fields in golf and is sometimes called "the fifth major" — but it is **not** one, and the reason is structural: the majors are owned by the *governing bodies and the club*, not by the *league*. That is a real limit on the PGA TOUR's power, and it explains a great deal about golf politics.
+**Note that no major is run by the PGA TOUR.** The tour's own flagship event, **THE PLAYERS Championship**, has one of the strongest fields in golf and is sometimes called "the fifth major", but it is **not** one, and the reason is structural: the majors are owned by the *governing bodies and the club*, not by the *league*. That is a real limit on the PGA TOUR's power, and it explains a great deal about golf politics.
 
 **⚠️ Call it "The Open Championship," or just "The Open." Never "the British Open."** It is not its name. The R&A runs it, it is the oldest major in golf, and it was called The Open before any other tournament existed to be confused with. Getting this right is a small thing that marks you instantly as someone who knows the sport.
 
@@ -2264,9 +2264,9 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
 
 **The FedExCup.** The PGA TOUR's season-long points race. Players earn points all year, the field narrows through a playoff series, and the last event decides the champion. It is the tour's answer to the problem that a season of individual tournaments has no natural climax.
 
-**The Grand Slam.** Winning all four men's majors in the **same calendar year**. **It has never been done in the modern era.** Tiger Woods held all four at once across 2000–2001 — the so-called "Tiger Slam" — but not within a single calendar year, which is why it gets its own name rather than the real one.
+**The Grand Slam.** Winning all four men's majors in the **same calendar year**. **It has never been done in the modern era.** Tiger Woods held all four at once across 2000-2001, the so-called "Tiger Slam", but not within a single calendar year, which is why it gets its own name rather than the real one.
 
-:::reveal Which organization runs each of the four men's majors, and what is the correct name of the one The R&A runs? ||| The Masters is run by Augusta National Golf Club (the only major with a permanent home); the PGA Championship by the PGA of America; the U.S. Open by the USGA; and The Open Championship by The R&A. It is called The Open Championship, or simply The Open — never "the British Open." Note that the PGA TOUR runs NO major.
+:::reveal Which organization runs each of the four men's majors, and what is the correct name of the one The R&A runs? ||| The Masters is run by Augusta National Golf Club (the only major with a permanent home); the PGA Championship by the PGA of America; the U.S. Open by the USGA; and The Open Championship by The R&A. It is called The Open Championship, or simply The Open, never "the British Open." Note that the PGA TOUR runs NO major.
 
 ## Sources
 - Masters Tournament. (n.d.). *Tournament history*. https://www.masters.com/en_US/history/index.html
@@ -2282,7 +2282,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
       recallContent: [
         {
           prompt: "How many women's majors are there?",
-          answer: "Five — not four. The women's game is routinely and wrongly described in the men's terms.",
+          answer: "Five, not four. The women's game is routinely and wrongly described in the men's terms.",
         },
         {
           prompt: "Does the PGA TOUR run any of the four men's majors?",
@@ -2290,7 +2290,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
             "No. They belong to Augusta National, the PGA of America, the USGA, and The R&A. THE PLAYERS is the TOUR's flagship, but it is not a major.",
         },
       ],
-      body: `Golf is an individual sport for 51 weeks a year. Then, occasionally, it is a team sport, and it becomes something else entirely — **players who are paid millions to be calm find themselves weeping on a golf course.** The team events are, by common consent among the players themselves, the most intense golf that exists.
+      body: `Golf is an individual sport for 51 weeks a year. Then, occasionally, it is a team sport, and it becomes something else entirely, **players who are paid millions to be calm find themselves weeping on a golf course.** The team events are, by common consent among the players themselves, the most intense golf that exists.
 
 | Event | Who plays | Format | Run by |
 | --- | --- | --- | --- |
@@ -2298,7 +2298,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
 | **Presidents Cup** | **Men**: **USA v an International team from the rest of the world, EXCLUDING Europe** | Match play | **The PGA TOUR** |
 | **Solheim Cup** | **Women**: **USA v Europe** | Match play | **The LPGA** |
 
-**Why the Presidents Cup exists, and why its definition is so strange.** Read its row again: **USA versus the rest of the world *excluding Europe*.** That exclusion is not a quirk of geography. **Europe is excluded because Europe already has the Ryder Cup** — and the Ryder Cup belongs to the *PGA of America*, not the PGA TOUR. The Presidents Cup is, in effect, **the PGA TOUR's own team event, built in the space the Ryder Cup left over.** Golf's institutional politics are visible right there in the eligibility rules, if you know how to read them.
+**Why the Presidents Cup exists, and why its definition is so strange.** Read its row again: **USA versus the rest of the world *excluding Europe*.** That exclusion is not a quirk of geography. **Europe is excluded because Europe already has the Ryder Cup**, and the Ryder Cup belongs to the *PGA of America*, not the PGA TOUR. The Presidents Cup is, in effect, **the PGA TOUR's own team event, built in the space the Ryder Cup left over.** Golf's institutional politics are visible right there in the eligibility rules, if you know how to read them.
 
 **And here is the detail that tells you what team golf actually is: there is NO PRIZE MONEY at the Presidents Cup.** The best players on earth compete, ferociously, for nothing but the result. (Proceeds go to charity.) For one week, professional golf stops being a profession.
 
@@ -2306,7 +2306,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
 
 **Why this matters to a 15-year-old.** Look at the format: **match play, team, partners.** That is *exactly* what high-school and college golf is. It is also exactly what a four-ball with your friends is (Lesson 14). **The most thrilling golf on television is played in the same format as the most accessible golf available to you.** You can play Ryder Cup golf this weekend, with two friends and a five-dollar bet.
 
-:::reveal What is the difference between the Ryder Cup and the Presidents Cup, and what is unusual about the Presidents Cup's prize money? ||| The Ryder Cup is men's USA v EUROPE, run by the PGA of America. The Presidents Cup is men's USA v an International team from the rest of the world EXCLUDING Europe — excluded precisely because Europe already has the Ryder Cup — and it is run by the PGA TOUR. The Presidents Cup has NO prize money at all; the best players on earth compete for nothing but the result.
+:::reveal What is the difference between the Ryder Cup and the Presidents Cup, and what is unusual about the Presidents Cup's prize money? ||| The Ryder Cup is men's USA v EUROPE, run by the PGA of America. The Presidents Cup is men's USA v an International team from the rest of the world EXCLUDING Europe, excluded precisely because Europe already has the Ryder Cup, and it is run by the PGA TOUR. The Presidents Cup has NO prize money at all; the best players on earth compete for nothing but the result.
 
 ## Sources
 - PGA of America. (n.d.). *Ryder Cup*. https://www.rydercup.com/
@@ -2321,7 +2321,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
         {
           prompt: "Why does the Presidents Cup exclude Europe?",
           answer:
-            "Because Europe already has the Ryder Cup — which belongs to the PGA of America, not the PGA TOUR. The Presidents Cup is the TOUR's own team event, built in the space left over.",
+            "Because Europe already has the Ryder Cup, which belongs to the PGA of America, not the PGA TOUR. The Presidents Cup is the TOUR's own team event, built in the space left over.",
         },
         {
           prompt: "Why does match play produce comebacks that stroke play cannot?",
@@ -2329,7 +2329,7 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
             "Because each hole is a separate battle and a blow-up hole costs only that hole. A player 3 down with 4 to play is not finished.",
         },
       ],
-      body: `⚠️ **Read the date on anything you read about this.** Men's professional golf has been in open conflict since 2022, and **most of what is written about it is now out of date — including several things that were true eighteen months ago.** This lesson is written as of **2026**, and it is deliberately built to teach you the *shape* of the dispute, which will outlast the details.
+      body: `⚠️ **Read the date on anything you read about this.** Men's professional golf has been in open conflict since 2022, and **most of what is written about it is now out of date, including several things that were true eighteen months ago.** This lesson is written as of **2026**, and it is deliberately built to teach you the *shape* of the dispute, which will outlast the details.
 
 **What LIV Golf is.** A rival men's league, launched in 2022, funded by the **Public Investment Fund (PIF)** of Saudi Arabia. It signed a number of the world's best players with guaranteed contracts far larger than anything the PGA TOUR offered. The PGA TOUR suspended the players who went.
 
@@ -2342,9 +2342,9 @@ Golf's own participation data reports that **25% of on-course golfers are Black,
 | "PIF will bankroll LIV indefinitely" | ❌ **PIF announced (around 30 April 2026) that it will END its funding of LIV after the 2026 season**, having invested over **$5 billion**. LIV is courting new investors. |
 | "The tours merged in 2023" | ❌ **They did not.** |
 
-**That last one is the big one, so be precise about it.** In **June 2023** the PGA TOUR, the DP World Tour, and PIF announced a **framework agreement** — an agreement to try to reach an agreement. It was reported everywhere as a merger. **It was never consummated.** As of 2026, **men's professional golf is still not reunified.** If someone tells you the tours merged, they are repeating a headline about a document that never became a deal.
+**That last one is the big one, so be precise about it.** In **June 2023** the PGA TOUR, the DP World Tour, and PIF announced a **framework agreement**, an agreement to try to reach an agreement. It was reported everywhere as a merger. **It was never consummated.** As of 2026, **men's professional golf is still not reunified.** If someone tells you the tours merged, they are repeating a headline about a document that never became a deal.
 
-**Why the world ranking was the real battleground.** The **Official World Golf Ranking** decides who gets into the **majors** — and the majors, as you now know, are run by **neither** tour. So a LIV player could be one of the best golfers alive, earn a fortune, and still slide down a ranking that decided whether he could play at Augusta. **The fight was never really about prize money. It was about access to the four tournaments that neither side controls.** That is why the February 2026 OWGR accreditation mattered far more than its dry name suggests.
+**Why the world ranking was the real battleground.** The **Official World Golf Ranking** decides who gets into the **majors**, and the majors, as you now know, are run by **neither** tour. So a LIV player could be one of the best golfers alive, earn a fortune, and still slide down a ranking that decided whether he could play at Augusta. **The fight was never really about prize money. It was about access to the four tournaments that neither side controls.** That is why the February 2026 OWGR accreditation mattered far more than its dry name suggests.
 
 ---
 
@@ -2359,11 +2359,11 @@ You will hear two arguments, and both contain something true:
 
 1. **Where does an athlete's money come from, and does that make them responsible for it?**
 2. **Does a monopoly league (which is what the PGA TOUR was) deserve to be protected from competition?**
-3. **When a story is reported everywhere as settled — "the tours merged!" — how would you find out it was not?**
+3. **When a story is reported everywhere as settled, "the tours merged!", how would you find out it was not?**
 
 That third question is the one this course keeps asking. **You would find out the same way you found out about the *Golfdom* article: by going and looking at the document.** The framework agreement is public. It says what it says. **Read the thing itself.**
 
-:::reveal Name three things commonly said about LIV Golf that are wrong as of 2026. ||| (1) That it is a 54-hole league — from the 2026 season all LIV events are 72 holes over four days. (2) That its players get no world-ranking points — LIV was accredited by the OWGR on 3 February 2026, with points to the top 10 and ties. (3) That the tours merged — the June 2023 framework agreement was never consummated, and men's professional golf is still not reunified. (Also: PIF announced it will end its funding of LIV after the 2026 season.)
+:::reveal Name three things commonly said about LIV Golf that are wrong as of 2026. ||| (1) That it is a 54-hole league, from the 2026 season all LIV events are 72 holes over four days. (2) That its players get no world-ranking points, LIV was accredited by the OWGR on 3 February 2026, with points to the top 10 and ties. (3) That the tours merged, the June 2023 framework agreement was never consummated, and men's professional golf is still not reunified. (Also: PIF announced it will end its funding of LIV after the 2026 season.)
 
 ## Sources
 - Official World Golf Ranking. (2026, February 3). *OWGR accreditation decision*. https://www.owgr.com/news
@@ -2403,7 +2403,7 @@ That third question is the one this course keeps asking. **You would find out th
             options: ["The PGA TOUR", "The PGA of America", "LIV Golf", "The DP World Tour"],
             correctIndex: 1,
             explanation:
-              "They are teaching pros, head pros, and directors of golf — the realistic, well-paid, achievable career in golf, and the one nobody televises.",
+              "They are teaching pros, head pros, and directors of golf, the realistic, well-paid, achievable career in golf, and the one nobody televises.",
             sourceLessonSlug: "golf-pga-of-america-vs-pga-tour",
           },
           {
@@ -2411,7 +2411,7 @@ That third question is the one this course keeps asking. **You would find out th
             options: ["The Masters", "The U.S. Open", "The Open Championship", "None of them"],
             correctIndex: 3,
             explanation:
-              "The Masters belongs to Augusta National, the PGA Championship to the PGA of America, the U.S. Open to the USGA, and The Open to The R&A. THE PLAYERS is the TOUR's flagship but is not a major — a real structural limit on the TOUR's power.",
+              "The Masters belongs to Augusta National, the PGA Championship to the PGA of America, the U.S. Open to the USGA, and The Open to The R&A. THE PLAYERS is the TOUR's flagship but is not a major, a real structural limit on the TOUR's power.",
             sourceLessonSlug: "golf-the-majors",
           },
           {
@@ -2427,7 +2427,7 @@ That third question is the one this course keeps asking. **You would find out th
             options: ["Three", "Four", "Five", "Six"],
             correctIndex: 2,
             explanation:
-              "Five — a fact most casual fans do not know, because the women's game is routinely described in the men's terms.",
+              "Five, a fact most casual fans do not know, because the women's game is routinely described in the men's terms.",
             sourceLessonSlug: "golf-the-majors",
           },
           {
@@ -2447,7 +2447,7 @@ That third question is the one this course keeps asking. **You would find out th
             ],
             correctIndex: 1,
             explanation:
-              "Europe is excluded because Europe already has the Ryder Cup — which belongs to the PGA of America. The Presidents Cup is the PGA TOUR's own team event, built in the space left over.",
+              "Europe is excluded because Europe already has the Ryder Cup, which belongs to the PGA of America. The Presidents Cup is the PGA TOUR's own team event, built in the space left over.",
             sourceLessonSlug: "golf-team-golf",
           },
           {
@@ -2480,7 +2480,7 @@ That third question is the one this course keeps asking. **You would find out th
             options: ["54 holes over three days", "72 holes over four days", "36 holes", "18 holes"],
             correctIndex: 1,
             explanation:
-              "From 2026 all LIV events are 72 holes over four days. The '54' branding — which gave the league its name — is obsolete.",
+              "From 2026 all LIV events are 72 holes over four days. The '54' branding, which gave the league its name, is obsolete.",
             sourceLessonSlug: "golf-liv-and-2026",
           },
           {
@@ -2493,14 +2493,14 @@ That third question is the one this course keeps asking. **You would find out th
             ],
             correctIndex: 1,
             explanation:
-              "The ranking mattered enormously because it decides entry to the MAJORS — which neither tour controls. The fight was about access, not prize money.",
+              "The ranking mattered enormously because it decides entry to the MAJORS, which neither tour controls. The fight was about access, not prize money.",
             sourceLessonSlug: "golf-liv-and-2026",
           },
           {
             prompt: "Did the PGA TOUR and LIV/PIF merge?",
             options: [
               "Yes, in June 2023",
-              "No — the June 2023 framework agreement was never consummated, and men's golf is still not reunified",
+              "No, the June 2023 framework agreement was never consummated, and men's golf is still not reunified",
               "Yes, in February 2026",
               "Yes, but it was later reversed",
             ],
@@ -2547,7 +2547,7 @@ That third question is the one this course keeps asking. **You would find out th
         {
           prompt: "Did the PGA TOUR and PIF merge in June 2023?",
           answer:
-            "No. They announced a framework agreement — an agreement to try to reach an agreement — which was never consummated. Men's professional golf is still not reunified.",
+            "No. They announced a framework agreement, an agreement to try to reach an agreement, which was never consummated. Men's professional golf is still not reunified.",
         },
         {
           prompt: "Why was the world ranking the real battleground in the LIV dispute?",
@@ -2579,10 +2579,10 @@ The Rules draw the line at the act, not the affiliation. This surprises nearly e
 
 | Situation | Can an amateur take the prize money? |
 | --- | --- |
-| A **scratch** competition | **Yes — up to US$1,000** per competition |
+| A **scratch** competition | **Yes, up to US$1,000** per competition |
 | A **handicap** competition | **NO. Not one dollar. Ever.** |
 
-Say that again, because it is the one people trip over: **in a handicap competition an amateur may not accept prize money at all.** Not $50. Not a $20 gift card that is really cash. **Zero.** The logic is straightforward once you see it — a handicap event lets a weak player win, so paying cash for it would turn handicaps into a business.
+Say that again, because it is the one people trip over: **in a handicap competition an amateur may not accept prize money at all.** Not $50. Not a $20 gift card that is really cash. **Zero.** The logic is straightforward once you see it, a handicap event lets a weak player win, so paying cash for it would turn handicaps into a business.
 
 ---
 
@@ -2593,8 +2593,8 @@ The 2022 rewrite **legalized nearly everything that used to end careers by accid
 - ✅ **Sponsorship**
 - ✅ **Endorsement deals**
 - ✅ **NIL** (name, image, and likeness) deals
-- ✅ **Expenses** — someone can pay for your travel to a tournament
-- ✅ **Free equipment** — a manufacturer can put clubs in your bag
+- ✅ **Expenses**, someone can pay for your travel to a tournament
+- ✅ **Free equipment**, a manufacturer can put clubs in your bag
 
 **Read that list again as a 15-year-old golfer.** A local car dealership can sponsor you. A brand can pay you to post about their gear. A club maker can give you a free set. **You can be paid, and remain an amateur, and go and play college golf.** For most of golf's history this was unthinkable, and a great many people still believe it is.
 
@@ -2604,7 +2604,7 @@ Teaching golf for money is **still restricted**. This is the single most common 
 
 ⚠️ And note the sting in the tail: **non-cash compensation counts as payment.** If the range lets you hit free balls in exchange for helping with junior lessons, **that is payment.** No money changed hands and you have still been paid. Nobody thinks of it that way, which is why it catches people.
 
-**So: want to teach golf and stay an amateur? Volunteer. Take nothing — not cash, not free range time, not a discount. The moment you receive value in exchange, you have a problem.**
+**So: want to teach golf and stay an amateur? Volunteer. Take nothing, not cash, not free range time, not a discount. The moment you receive value in exchange, you have a problem.**
 
 ---
 
@@ -2612,9 +2612,9 @@ Teaching golf for money is **still restricted**. This is the single most common 
 
 **⚠️ The NCAA is a SEPARATE rulebook.** College golf eligibility is governed by the **NCAA**, not by the USGA. The two are different, and **the binding constraint on you is whichever is STRICTER.** Satisfying the Rules of Amateur Status does **not** automatically make you NCAA-eligible.
 
-College athletics is also in genuine flux right now: following the *House* settlement, scholarship limits at opt-in schools have been converted into **roster limits** (for golf, currently 9), and **this is actively being litigated.** So learn the *concept* — **there is a cap, and it is small, and it moves** — and then **check the current number with the actual coach.** Do not trust a number you read in a course, including this one.
+College athletics is also in genuine flux right now: following the *House* settlement, scholarship limits at opt-in schools have been converted into **roster limits** (for golf, currently 9), and **this is actively being litigated.** So learn the *concept*, **there is a cap, and it is small, and it moves**, and then **check the current number with the actual coach.** Do not trust a number you read in a course, including this one.
 
-:::reveal Can a high-school amateur golfer accept a sponsorship deal, and what is the one thing the 2022 rewrite did NOT allow? ||| Yes — sponsorship, endorsement, NIL, expenses, and free equipment are ALL now allowed for an amateur. The one thing the 2022 rewrite did NOT liberalize is PAID INSTRUCTION: teaching golf for money is still restricted, and non-cash compensation (like free range balls in exchange for helping with lessons) counts as payment. That is the commonest way a young golfer accidentally destroys their own eligibility.
+:::reveal Can a high-school amateur golfer accept a sponsorship deal, and what is the one thing the 2022 rewrite did NOT allow? ||| Yes, sponsorship, endorsement, NIL, expenses, and free equipment are ALL now allowed for an amateur. The one thing the 2022 rewrite did NOT liberalize is PAID INSTRUCTION: teaching golf for money is still restricted, and non-cash compensation (like free range balls in exchange for helping with lessons) counts as payment. That is the commonest way a young golfer accidentally destroys their own eligibility.
 
 ## Sources
 - USGA & R&A. (2022). *Rules of Amateur Status*. https://www.usga.org/amateur-status.html
@@ -2634,7 +2634,7 @@ College athletics is also in genuine flux right now: following the *House* settl
         {
           prompt: "Which rulebook actually governs your college golf eligibility?",
           answer:
-            "The NCAA's — a separate rulebook from the USGA's Rules of Amateur Status. The binding constraint is whichever is STRICTER.",
+            "The NCAA's, a separate rulebook from the USGA's Rules of Amateur Status. The binding constraint is whichever is STRICTER.",
         },
       ],
       body: `**Most sports are closed. You cannot enter the Super Bowl. You cannot enter the NBA Finals. There is no form.**
@@ -2649,16 +2649,16 @@ Nobody has to invite you. No scout has to find you. No agent has to call. **You 
 
 **And people do it. The USGA accepted a record 10,202 entries for the 2025 U.S. Open** (USGA, 2025).
 
-Sit with that number. **Over ten thousand people entered a major championship** — for **156 spots** in the field. They were not all delusional. Every year, **qualifiers make it through**, and some of them are club professionals, mini-tour players, and amateurs nobody had heard of on Monday.
+Sit with that number. **Over ten thousand people entered a major championship**, for **156 spots** in the field. They were not all delusional. Every year, **qualifiers make it through**, and some of them are club professionals, mini-tour players, and amateurs nobody had heard of on Monday.
 
-**How qualifying actually works — two stages:**
+**How qualifying actually works, two stages:**
 
 | Stage | Format | Roughly where |
 | --- | --- | --- |
 | **Local Qualifying** | **18 holes** | About **109 sites** across the country |
 | **Final Qualifying** | **36 holes in ONE day** | About **13 sites** |
 
-**Read that second row again. Thirty-six holes. In a single day.** It is known in golf as **"Golf's Longest Day,"** and it is one of the most brutal tests in sport: two full rounds, walking, with a place in a major on the line and no second chance. **That is the door.** It is narrow, it is exhausting, and — **crucially — it is not locked.**
+**Read that second row again. Thirty-six holes. In a single day.** It is known in golf as **"Golf's Longest Day,"** and it is one of the most brutal tests in sport: two full rounds, walking, with a place in a major on the line and no second chance. **That is the door.** It is narrow, it is exhausting, and (**crucially) it is not locked.**
 
 ---
 
@@ -2668,31 +2668,31 @@ Sit with that number. **Over ten thousand people entered a major championship** 
 | --- | --- |
 | **U.S. Open** | **0.4** |
 | **U.S. Amateur** | **0.4** |
-| **U.S. Mid-Amateur** | **2.4** — **and you must be 25 or older** |
+| **U.S. Mid-Amateur** | **2.4**, **and you must be 25 or older** |
 
 ⚠️ **The commonest error you will meet is people quoting 2.4 for the U.S. Amateur.** That is the **Mid-Amateur** number, and the Mid-Am also has an **age requirement of 25+**, so it is not even available to a high-school player. **Get the number right: 0.4.**
 
-*(This course does not print a handicap limit for the U.S. Women's Amateur. A figure is widely repeated online, but it could not be verified against the USGA's own published conditions — so rather than pass on a number that might be wrong, **go and read the conditions of entry for the year you intend to play**. Which is what you should do for every championship anyway, because these limits are set annually.)*
+*(This course does not print a handicap limit for the U.S. Women's Amateur. A figure is widely repeated online, but it could not be verified against the USGA's own published conditions, so rather than pass on a number that might be wrong, **go and read the conditions of entry for the year you intend to play**. Which is what you should do for every championship anyway, because these limits are set annually.)*
 
 ---
 
 **And there is a second open door, every week: the Monday qualifier.**
 
-Several **PGA TOUR** events run an **open 18-hole qualifier on the Monday of tournament week**, typically with **four spots** in that week's field. Anyone eligible can enter. **You shoot the number, you tee it up on Thursday against the best players in the world.** Players have made their entire careers out of a Monday qualifier — this is a real, used, documented path, not a theoretical one.
+Several **PGA TOUR** events run an **open 18-hole qualifier on the Monday of tournament week**, typically with **four spots** in that week's field. Anyone eligible can enter. **You shoot the number, you tee it up on Thursday against the best players in the world.** Players have made their entire careers out of a Monday qualifier, this is a real, used, documented path, not a theoretical one.
 
 ---
 
 **Why this lesson exists.**
 
-The history section of this course was, in large part, about **doors being held shut** — by a membership clause, by a leased "private club," by an invitation nobody sent. **This lesson is the other side of that.**
+The history section of this course was, in large part, about **doors being held shut**, by a membership clause, by a leased "private club," by an invitation nobody sent. **This lesson is the other side of that.**
 
 **Golf's flagship national championship has, structurally, the most open front door in American sport.** You do not need permission, a scholarship, a scout, or a connection. **You need a Handicap Index of 0.4 and the entry fee.**
 
-**That number is the whole thing.** It is astonishingly hard to earn — 0.4 means you are effectively a scratch golfer, and you should not pretend otherwise. **But it is a number, and a number is a thing you can go and work on tomorrow.** Nothing about your name, your school, your money, or your zip code stands between you and the entry form.
+**That number is the whole thing.** It is astonishingly hard to earn, 0.4 means you are effectively a scratch golfer, and you should not pretend otherwise. **But it is a number, and a number is a thing you can go and work on tomorrow.** Nothing about your name, your school, your money, or your zip code stands between you and the entry form.
 
 **Ten thousand two hundred and two people filled it in last year. There is nothing stopping you being 10,203.**
 
-:::reveal What are the entry requirements for the U.S. Open, and how many entries did the USGA accept in 2025? ||| It is open to ANY professional, or any amateur with a Handicap Index not exceeding 0.4 — that is the whole requirement, and there is a form. The USGA accepted a record 10,202 entries for the 2025 U.S. Open, competing for 156 spots. Qualifying runs in two stages: 18-hole Local Qualifying at about 109 sites, then Final Qualifying — 36 holes in ONE day, "Golf's Longest Day" — at about 13 sites.
+:::reveal What are the entry requirements for the U.S. Open, and how many entries did the USGA accept in 2025? ||| It is open to ANY professional, or any amateur with a Handicap Index not exceeding 0.4, that is the whole requirement, and there is a form. The USGA accepted a record 10,202 entries for the 2025 U.S. Open, competing for 156 spots. Qualifying runs in two stages: 18-hole Local Qualifying at about 109 sites, then Final Qualifying, 36 holes in ONE day, "Golf's Longest Day", at about 13 sites.
 
 ## Sources
 - USGA. (2025). *U.S. Open championship entries*. https://www.usga.org/usopen.html
@@ -2708,7 +2708,7 @@ The history section of this course was, in large part, about **doors being held 
         {
           prompt: "What Handicap Index do you need to enter the U.S. Open or the U.S. Amateur?",
           answer:
-            "0.4 or better. (2.4 is the U.S. MID-Amateur, which also requires you to be 25 or older — quoting 2.4 for the U.S. Amateur is the commonest error.)",
+            "0.4 or better. (2.4 is the U.S. MID-Amateur, which also requires you to be 25 or older, quoting 2.4 for the U.S. Amateur is the commonest error.)",
         },
         {
           prompt: "What is \"Golf's Longest Day\"?",
@@ -2726,7 +2726,7 @@ The history section of this course was, in large part, about **doors being held 
 | **PGA TOUR University** | Ranks graduating college seniors | Top finishers earn status directly, **no Q-School required** |
 | **Q-School** | The qualifying tournament | **Top 5** at Final Stage earn PGA TOUR cards |
 | **Korn Ferry Tour** | The official feeder tour | **20 PGA TOUR cards per season** |
-| **PGA TOUR** | The destination | — |
+| **PGA TOUR** | The destination |, |
 | **Monday qualifiers** | A side door, every week | ~**4 spots** per event, open entry |
 
 **The women's ladder:**
@@ -2736,25 +2736,25 @@ The history section of this course was, in large part, about **doors being held 
 | **College golf** | NCAA competition | Recruiting, walk-on |
 | **Epson Tour** | The LPGA's official feeder tour | **Top 15** earn **LPGA cards** |
 | **LPGA Q-Series** | The qualifying series | **Top 25 and ties** earn LPGA cards |
-| **LPGA Tour** | The destination | — |
+| **LPGA Tour** | The destination |, |
 
-**And the rung nobody tells teenagers about: PGA TOUR Champions, for players aged 50 and over.** Golf is one of the very few sports with a **second professional career** waiting on the other side of middle age. Players who never made it at 30 have made a genuine living at 52. **In golf, "too old" arrives much later than you have been led to believe — and then it un-arrives.**
+**And the rung nobody tells teenagers about: PGA TOUR Champions, for players aged 50 and over.** Golf is one of the very few sports with a **second professional career** waiting on the other side of middle age. Players who never made it at 30 have made a genuine living at 52. **In golf, "too old" arrives much later than you have been led to believe, and then it un-arrives.**
 
 ---
 
 **Now look at the numbers honestly, because this course will not lie to you.**
 
-**20 Korn Ferry cards a season. Top 5 at Q-School.** Those are the real widths of the door. Thousands of excellent players — players far better than anyone at your school — are competing for a couple of dozen places a year. **Tour golf is a lottery that you can improve your odds at, but it remains a lottery.**
+**20 Korn Ferry cards a season. Top 5 at Q-School.** Those are the real widths of the door. Thousands of excellent players, players far better than anyone at your school, are competing for a couple of dozen places a year. **Tour golf is a lottery that you can improve your odds at, but it remains a lottery.**
 
 **Three things follow from that, and they are the real content of this lesson:**
 
-**1. The ladder is public, which is rarer than you think.** Compare it to the sports where a scout has to notice you. Here, **nobody's opinion of you matters.** There is a leaderboard. You shoot the scores or you do not. For a kid from a school nobody recruits at, from a family with no connections, **a system that ignores everything except your score is the fairest deal on offer anywhere in sport.** Golf's history, as you now know, was viciously exclusionary — and the *scoring system*, at least, never was. **A number cannot tell what you look like.**
+**1. The ladder is public, which is rarer than you think.** Compare it to the sports where a scout has to notice you. Here, **nobody's opinion of you matters.** There is a leaderboard. You shoot the scores or you do not. For a kid from a school nobody recruits at, from a family with no connections, **a system that ignores everything except your score is the fairest deal on offer anywhere in sport.** Golf's history, as you now know, was viciously exclusionary, and the *scoring system*, at least, never was. **A number cannot tell what you look like.**
 
-**2. Do not bet your whole life on the top rung.** Every rung of that ladder passes through **college golf**, and college golf comes with **a degree**. Chase the tour with everything you have — **and finish the degree**, because the same sport that offers you a lottery ticket also offers you 30,000 stable jobs (Lesson 39), and the ladder to *those* runs through exactly the same place.
+**2. Do not bet your whole life on the top rung.** Every rung of that ladder passes through **college golf**, and college golf comes with **a degree**. Chase the tour with everything you have, **and finish the degree**, because the same sport that offers you a lottery ticket also offers you 30,000 stable jobs (Lesson 39), and the ladder to *those* runs through exactly the same place.
 
-**3. The odds get much better when you widen the definition of "making it."** "Playing on the PGA TOUR" is a lottery. **"Earning a living in golf" is a career with an application process.** Those are completely different propositions and people conflate them constantly — usually to their own cost, and usually at about 22.
+**3. The odds get much better when you widen the definition of "making it."** "Playing on the PGA TOUR" is a lottery. **"Earning a living in golf" is a career with an application process.** Those are completely different propositions and people conflate them constantly, usually to their own cost, and usually at about 22.
 
-:::reveal How many PGA TOUR cards does the Korn Ferry Tour award per season, and how many players earn cards from Q-School Final Stage? ||| Twenty Korn Ferry cards per season, and the top 5 at Q-School Final Stage. Those are the real widths of the door — which is why the lesson is to chase it AND finish the degree. On the women's side: the top 15 on the Epson Tour and the top 25 and ties at LPGA Q-Series earn LPGA cards.
+:::reveal How many PGA TOUR cards does the Korn Ferry Tour award per season, and how many players earn cards from Q-School Final Stage? ||| Twenty Korn Ferry cards per season, and the top 5 at Q-School Final Stage. Those are the real widths of the door, which is why the lesson is to chase it AND finish the degree. On the women's side: the top 15 on the Epson Tour and the top 25 and ties at LPGA Q-Series earn LPGA cards.
 
 ## Sources
 - PGA TOUR. (n.d.). *Korn Ferry Tour*. https://www.pgatour.com/korn-ferry-tour
@@ -2771,7 +2771,7 @@ The history section of this course was, in large part, about **doors being held 
         {
           prompt: "How does golf differ from sports where a scout has to notice you?",
           answer:
-            "There is no draft and no scout. There is a leaderboard and a public ladder. Nobody's opinion of you matters — you shoot the scores or you do not. A number cannot tell what you look like.",
+            "There is no draft and no scout. There is a leaderboard and a public ladder. Nobody's opinion of you matters, you shoot the scores or you do not. A number cannot tell what you look like.",
         },
         {
           prompt: "What is PGA TOUR Champions, and why does it matter?",
@@ -2790,7 +2790,7 @@ The history section of this course was, in large part, about **doors being held 
 
 *(Use the right number for the right claim. **29.1 million** is the figure for "plays golf on a golf course." The 48.1M figure includes everyone who has swung a club at a Topgolf, and quoting it as "golfers" is how statistics get abused.)*
 
-**Now do the arithmetic that changes your life.** Roughly **fourteen thousand facilities**, each one of which is **a small business** that needs to be run, maintained, staffed, marketed, and supplied. That is **an industry**, not a game — and about **three-quarters of it is open to the public**, which means it is open to *you*.
+**Now do the arithmetic that changes your life.** Roughly **fourteen thousand facilities**, each one of which is **a small business** that needs to be run, maintained, staffed, marketed, and supplied. That is **an industry**, not a game, and about **three-quarters of it is open to the public**, which means it is open to *you*.
 
 **And every single one of those businesses has jobs in it that have nothing to do with how far you hit a driver.**
 
@@ -2799,7 +2799,7 @@ The history section of this course was, in large part, about **doors being held 
 | **PGA Professional** | Teaching, running a facility, managing golf operations. **The 30,000-member career** from Lesson 31. | The PGA of America's education/certification program |
 | **Teaching professional / coach** | Lessons, junior programs, academies | Certification, apprenticeship |
 | **Club fitter** | Matching clubs to swings. Technical, growing, and well paid. | Manufacturer training, retail apprenticeship |
-| **Superintendent / turf management** | Growing grass at a professional standard. **This is agronomy — a science degree.** | Turfgrass programs (many universities offer one) |
+| **Superintendent / turf management** | Growing grass at a professional standard. **This is agronomy, a science degree.** | Turfgrass programs (many universities offer one) |
 | **General manager / director of golf** | Running the business | Hospitality/business route |
 | **Caddie** | The classic entry point (see below) | Show up |
 | **Rules official** | Administering competitions | Rules certification through the USGA/R&A |
@@ -2811,11 +2811,11 @@ The history section of this course was, in large part, about **doors being held 
 
 **Caddying is the single best first job in golf, and it is wildly undervalued.**
 - **You get paid to be on a golf course.** Frequently in cash, frequently well, and often the same day.
-- **You learn strategy from the inside** — how good players actually think, which is Section 3 delivered live, for free, while being paid.
+- **You learn strategy from the inside**, how good players actually think, which is Section 3 delivered live, for free, while being paid.
 - **You meet adults.** A caddie spends four uninterrupted hours walking beside business owners, lawyers, contractors, and hiring managers, having an actual conversation. **There is no other job available to a 15-year-old that puts you in that room.** Ask any adult how they got their break and a startling number will say "someone I met."
 - **Caddie scholarship programs exist**, and they are real, substantial, and chronically under-applied-for.
 
-**Turf management is the job nobody thinks of and the industry is always short of.** Somebody has to keep 16,000 courses alive, and they are **agronomists** — soil scientists with a payroll. If you like biology or chemistry and you like being outdoors, **there is a degree, and there is a hiring shortage, and there is no lottery.**
+**Turf management is the job nobody thinks of and the industry is always short of.** Somebody has to keep 16,000 courses alive, and they are **agronomists**, soil scientists with a payroll. If you like biology or chemistry and you like being outdoors, **there is a degree, and there is a hiring shortage, and there is no lottery.**
 
 ---
 
@@ -2823,11 +2823,11 @@ The history section of this course was, in large part, about **doors being held 
 
 **First Tee was founded in 1997** by five organizations that between them own most of American golf: **the LPGA, the Masters Tournament (Augusta National), the PGA of America, the PGA TOUR, and the USGA**, under the leadership of **Tim Finchem** (First Tee, n.d.).
 
-Its purpose is to get golf to young people who otherwise could not access it — coaching, clubs, and course access, built around a youth-development curriculum. **If cost is what is standing between you and this sport, this is the organization built specifically to remove that barrier, and it was built by the people who own the sport.**
+Its purpose is to get golf to young people who otherwise could not access it, coaching, clubs, and course access, built around a youth-development curriculum. **If cost is what is standing between you and this sport, this is the organization built specifically to remove that barrier, and it was built by the people who own the sport.**
 
-**Notice the irony, and do not let it be lost on you.** The **Masters Tournament** — Augusta National, which did not invite a Black player until 1975 and did not admit a Black member until 1990 — is a **founding partner of the program whose entire job is to hand golf to kids who were locked out of it.** History does not resolve into a clean story. **Take the access. Then remember exactly what it cost to pry the door open, because you learned that in Section 4.**
+**Notice the irony, and do not let it be lost on you.** The **Masters Tournament**, Augusta National, which did not invite a Black player until 1975 and did not admit a Black member until 1990, is a **founding partner of the program whose entire job is to hand golf to kids who were locked out of it.** History does not resolve into a clean story. **Take the access. Then remember exactly what it cost to pry the door open, because you learned that in Section 4.**
 
-:::reveal How many Americans play golf on a course, roughly how many facilities are there, and what makes caddying the best first job in golf? ||| 29.1 million Americans play on a course (48.1 million including off-course venues like Topgolf), across about 16,000 courses at ~14,000 facilities, roughly 75% of which are open to the public. Caddying is the best first job because you are paid to be on a course, you learn strategy from the inside for free, caddie scholarship programs exist — and you spend four uninterrupted hours walking beside business owners and hiring managers, which no other job available to a 15-year-old does.
+:::reveal How many Americans play golf on a course, roughly how many facilities are there, and what makes caddying the best first job in golf? ||| 29.1 million Americans play on a course (48.1 million including off-course venues like Topgolf), across about 16,000 courses at ~14,000 facilities, roughly 75% of which are open to the public. Caddying is the best first job because you are paid to be on a course, you learn strategy from the inside for free, caddie scholarship programs exist, and you spend four uninterrupted hours walking beside business owners and hiring managers, which no other job available to a 15-year-old does.
 
 ## Sources
 - National Golf Foundation. (2025). *Golf participation in the U.S.* https://www.ngf.org/golf-industry-research/
@@ -2843,17 +2843,17 @@ Its purpose is to get golf to young people who otherwise could not access it —
         {
           prompt: "Which five organizations founded First Tee in 1997?",
           answer:
-            "The LPGA, the Masters Tournament (Augusta National), the PGA of America, the PGA TOUR, and the USGA — under Tim Finchem.",
+            "The LPGA, the Masters Tournament (Augusta National), the PGA of America, the PGA TOUR, and the USGA, under Tim Finchem.",
         },
         {
           prompt: "Why is turf management a job worth knowing about?",
           answer:
-            "Somebody has to keep 16,000 courses alive, and they are agronomists — soil scientists with a payroll. There is a degree, a hiring shortage, and no lottery.",
+            "Somebody has to keep 16,000 courses alive, and they are agronomists, soil scientists with a payroll. There is a degree, a hiring shortage, and no lottery.",
         },
       ],
       body: `**Every one of the barriers described in this course is also a business.** That is not a cynical observation; it is how most useful businesses start. **Somebody could not get something they needed, so they built it.**
 
-**Bill Powell is the case study, and he is in Section 4 for a reason.** Barred from playing on other people's golf courses, he **built his own — Clearview.** He did not campaign, or wait, or accept it. **He acquired land and constructed a golf course.** His daughter **Renee Powell** went on to the LPGA and, in 1996, became the first African American woman to become a PGA member. **That is what building the thing you were denied looks like across two generations.**
+**Bill Powell is the case study, and he is in Section 4 for a reason.** Barred from playing on other people's golf courses, he **built his own, Clearview.** He did not campaign, or wait, or accept it. **He acquired land and constructed a golf course.** His daughter **Renee Powell** went on to the LPGA and, in 1996, became the first African American woman to become a PGA member. **That is what building the thing you were denied looks like across two generations.**
 
 You do not need to build a golf course. But you should learn the move.
 
@@ -2861,12 +2861,12 @@ You do not need to build a golf course. But you should learn the move.
 
 **🟢 Start here: the 2022 rule change is a live, current, unexploited opportunity for you.**
 
-Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement, NIL, expenses, free equipment — all legal for an amateur since 1 January 2022.**
+Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement, NIL, expenses, free equipment, all legal for an amateur since 1 January 2022.**
 
 **Almost no high-school golfer is acting on this**, because most of them (and most of their coaches, and most of their parents) still believe the old rules. **You now know something most of your competition does not.** Concretely, and starting this month:
 
-- **Approach a local business** — a car dealership, a restaurant, an insurance agency, an orthodontist. They sponsor the baseball team already. **Offer them a season: your name, your results, your social posts, a logo on your bag.** Ask for equipment, tournament entry fees, and travel costs.
-- **Build the thing a sponsor is actually buying**: an audience. Post your rounds. Film your practice. **Teach what you are learning as you learn it** — a "learning to break 90" account is more compelling than a highlight reel, and it is honest.
+- **Approach a local business**, a car dealership, a restaurant, an insurance agency, an orthodontist. They sponsor the baseball team already. **Offer them a season: your name, your results, your social posts, a logo on your bag.** Ask for equipment, tournament entry fees, and travel costs.
+- **Build the thing a sponsor is actually buying**: an audience. Post your rounds. Film your practice. **Teach what you are learning as you learn it**, a "learning to break 90" account is more compelling than a highlight reel, and it is honest.
 - **Keep a one-page record**: your scores, your Handicap Index, your events, your following. **That is a pitch deck**, and no other 16-year-old golfer in your county has one.
 - ⚠️ **And stay inside the line: do NOT take money for instruction, and do NOT take free range balls in exchange for helping with lessons.** That is the one door that is still closed, and non-cash payment is still payment.
 
@@ -2878,10 +2878,10 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
 | --- | --- |
 | **Ball recovery and resale** | Golfers lose millions of balls into ponds and woods. **Collect, clean, sort, resell.** Near-zero startup cost. Ask permission first. |
 | **Club cleaning / bag service** | A simple, repeatable service at any club, sold to members who value time. |
-| **Junior clinics** ⚠️ | Real demand — **but note the amateur-status trap**: charging for instruction ends your amateur status. **Run these AFTER you have decided about college, or run them as a volunteer.** |
+| **Junior clinics** ⚠️ | Real demand, **but note the amateur-status trap**: charging for instruction ends your amateur status. **Run these AFTER you have decided about college, or run them as a volunteer.** |
 | **Club fitting / repair** | Regripping is learnable in an afternoon, needs almost no capital, and every golfer needs it. Grows into a real trade. |
 | **Golf media** | Nobody covers your local junior scene. **Cover it.** Publishing is free and a portfolio is the qualification. |
-| **Simulator / off-course golf** | **48.1M golfers vs 29.1M on-course** — the gap between those numbers *is* the growth market. |
+| **Simulator / off-course golf** | **48.1M golfers vs 29.1M on-course**, the gap between those numbers *is* the growth market. |
 | **Tournament operations** | Charity scrambles need people who can run them. Learn it once, get hired forever. |
 | **Course maintenance crew** | Hiring now, teaches the industry from the ground up, and connects directly to turf management. |
 
@@ -2889,11 +2889,11 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
 
 **The one that is hiding in plain sight.** Look at those two participation numbers one more time: **48.1 million total golfers, 29.1 million on a course.** **Nineteen million people are engaging with golf without going near a golf course.** They are at Topgolf, in simulators, on ranges.
 
-**That gap is the single biggest, clearest, most legible opportunity in the sport**, and it exists because of everything you read in Section 4 — golf spent a century building an industry around **exclusive, expensive, hard-to-access places**, and a whole generation now wants the game **without the clubhouse.** The businesses that meet those 19 million people where they actually are will be the ones that matter.
+**That gap is the single biggest, clearest, most legible opportunity in the sport**, and it exists because of everything you read in Section 4, golf spent a century building an industry around **exclusive, expensive, hard-to-access places**, and a whole generation now wants the game **without the clubhouse.** The businesses that meet those 19 million people where they actually are will be the ones that matter.
 
 **You have read this course's history section. You know precisely why that clubhouse feels the way it feels, and who it was designed to keep out.** That makes you unusually well qualified to build the version that does not.
 
-:::reveal What is the current, under-exploited opportunity the 2022 amateur-status rewrite created for a high-school golfer, and what is the one line you must not cross? ||| Sponsorship, endorsement, NIL, expenses, and free equipment are all legal for an amateur now — so you can approach local businesses for a sponsorship deal covering equipment, entry fees, and travel, and almost no high-school golfer is doing it because most still believe the old rules. The line you must not cross: do NOT accept payment for instruction, including non-cash payment like free range balls for helping with lessons.
+:::reveal What is the current, under-exploited opportunity the 2022 amateur-status rewrite created for a high-school golfer, and what is the one line you must not cross? ||| Sponsorship, endorsement, NIL, expenses, and free equipment are all legal for an amateur now, so you can approach local businesses for a sponsorship deal covering equipment, entry fees, and travel, and almost no high-school golfer is doing it because most still believe the old rules. The line you must not cross: do NOT accept payment for instruction, including non-cash payment like free range balls for helping with lessons.
 
 ## Sources
 - USGA & R&A. (2022). *Rules of Amateur Status*. https://www.usga.org/amateur-status.html
@@ -2908,18 +2908,18 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
         {
           prompt: "What does the gap between 48.1 million and 29.1 million golfers represent?",
           answer:
-            "About 19 million people engaging with golf without going near a golf course — at Topgolf, in simulators, on ranges. It is the sport's clearest growth market.",
+            "About 19 million people engaging with golf without going near a golf course, at Topgolf, in simulators, on ranges. It is the sport's clearest growth market.",
         },
         {
           prompt: "Who was Bill Powell?",
           answer:
-            "Barred from playing on other people's courses, he built his own — Clearview Golf Club. His daughter Renee Powell reached the LPGA and became the first African American woman PGA member in 1996.",
+            "Barred from playing on other people's courses, he built his own, Clearview Golf Club. His daughter Renee Powell reached the LPGA and became the first African American woman PGA member in 1996.",
         },
       ],
       body: `The whole point of this section is that golf's doors have numbers on them, and a number is a thing you can work toward. Fill in each blank. **These are the specific facts that turn "I like golf" into a plan.**`,
       exercise: {
         instructions:
-          "Fill in each blank. Every answer here is a real, checkable number or name — the raw material of an actual next step.",
+          "Fill in each blank. Every answer here is a real, checkable number or name, the raw material of an actual next step.",
         items: [
           {
             prompt: "There are ___ ways to lose your amateur status under the current Rules.",
@@ -2939,7 +2939,7 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
             prompt: "In a SCRATCH competition an amateur may accept up to US$___ in prize money.",
             answer: "1000",
             accept: ["1,000", "$1000", "$1,000", "1000 dollars", "one thousand"],
-            explanation: "And in a HANDICAP competition, an amateur may not accept prize money at all — not one dollar.",
+            explanation: "And in a HANDICAP competition, an amateur may not accept prize money at all, not one dollar.",
           },
           {
             prompt: "To enter the U.S. Open as an amateur you need a Handicap Index of ___ or better.",
@@ -2971,7 +2971,7 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
             answer: "30",
             accept: ["thirty", "30,000", "30000"],
             explanation:
-              "This is the realistic, salaried, achievable career in golf — and the one nobody televises.",
+              "This is the realistic, salaried, achievable career in golf, and the one nobody televises.",
           },
           {
             prompt: "About ___ million Americans play golf on an actual golf course.",
@@ -3002,7 +3002,7 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
             options: ["Two", "Three", "Five", "Seven"],
             correctIndex: 2,
             explanation:
-              "Five — most write-ups list only three. Accept a disallowed prize; play in a competition as a professional; accept payment for disallowed instruction; be employed as a club/range pro; hold membership of an association for professional golfers.",
+              "Five, most write-ups list only three. Accept a disallowed prize; play in a competition as a professional; accept payment for disallowed instruction; be employed as a club/range pro; hold membership of an association for professional golfers.",
             sourceLessonSlug: "golf-amateur-status",
           },
           {
@@ -3015,7 +3015,7 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
             ],
             correctIndex: 2,
             explanation:
-              "Paid instruction is the ONE thing the 2022 rewrite did not liberalize — and non-cash payment (free range balls for helping with lessons) still counts as payment.",
+              "Paid instruction is the ONE thing the 2022 rewrite did not liberalize, and non-cash payment (free range balls for helping with lessons) still counts as payment.",
             sourceLessonSlug: "golf-amateur-status",
           },
           {
@@ -3030,7 +3030,7 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
             prompt: "Under the current Rules, being a MEMBER of a professional tour:",
             options: [
               "Immediately ends your amateur status",
-              "Is allowed — it is PLAYING in a competition as a professional that ends it",
+              "Is allowed, it is PLAYING in a competition as a professional that ends it",
               "Is impossible for an amateur",
               "Requires USGA permission",
             ],
@@ -3042,7 +3042,7 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
             prompt: "Which rulebook actually governs your college golf eligibility?",
             options: [
               "The USGA's Rules of Amateur Status",
-              "The NCAA's — a separate rulebook; the binding constraint is whichever is stricter",
+              "The NCAA's, a separate rulebook; the binding constraint is whichever is stricter",
               "The R&A's",
               "The PGA TOUR's",
             ],
@@ -3087,7 +3087,7 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
             prompt: "A player quotes you 2.4 as the Handicap Index limit for the U.S. Amateur. Are they right?",
             options: [
               "Yes, 2.4 is correct",
-              "No — the U.S. Amateur limit is 0.4. 2.4 is the U.S. MID-Amateur, which also requires you to be 25 or older",
+              "No, the U.S. Amateur limit is 0.4. 2.4 is the U.S. MID-Amateur, which also requires you to be 25 or older",
               "No, there is no limit",
               "Yes, but only for players under 18",
             ],
@@ -3101,7 +3101,7 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
             options: ["5", "20", "50", "125"],
             correctIndex: 1,
             explanation:
-              "Twenty — and the top 5 at Q-School Final Stage. Thousands of excellent players compete for a couple of dozen places a year. Tour golf is a lottery you can improve your odds at.",
+              "Twenty, and the top 5 at Q-School Final Stage. Thousands of excellent players compete for a couple of dozen places a year. Tour golf is a lottery you can improve your odds at.",
             sourceLessonSlug: "golf-the-ladders",
           },
           {
@@ -3144,13 +3144,13 @@ Go back to Lesson 36 and read the allowed list again: **sponsorship, endorsement
             prompt: "What does the gap between 48.1 million and 29.1 million golfers represent?",
             options: [
               "A statistical error",
-              "About 19 million people engaging with golf without going near a golf course — the sport's clearest growth market",
+              "About 19 million people engaging with golf without going near a golf course, the sport's clearest growth market",
               "Players who quit the sport",
               "Golfers who live outside the US",
             ],
             correctIndex: 1,
             explanation:
-              "They are at Topgolf, in simulators, on ranges — a generation that wants the game without the clubhouse. Having read Section 4, you know exactly why that clubhouse feels the way it does.",
+              "They are at Topgolf, in simulators, on ranges, a generation that wants the game without the clubhouse. Having read Section 4, you know exactly why that clubhouse feels the way it does.",
             sourceLessonSlug: "golf-entrepreneurs",
           },
         ],

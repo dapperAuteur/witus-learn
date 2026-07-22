@@ -64,7 +64,7 @@ How fabricated citations give themselves away:
 
 The rule is simple and absolute: **a citation you have not opened and read is not a citation.** It's a guess wearing a citation's clothes.
 
-:::reveal Can a fabricated citation have a real-looking DOI? What's the one action that catches it? ||| Yes — a model produces the predictable shape of a citation, DOI and all, indifferent to whether it resolves. The one action that catches it is to open it: click the link/DOI and confirm it resolves to the exact title, authors, and quoted passage. A citation you haven't opened and read isn't a citation.
+:::reveal Can a fabricated citation have a real-looking DOI? What's the one action that catches it? ||| Yes, a model produces the predictable shape of a citation, DOI and all, indifferent to whether it resolves. The one action that catches it is to open it: click the link/DOI and confirm it resolves to the exact title, authors, and quoted passage. A citation you haven't opened and read isn't a citation.
 
 ## Sources
 - McAdoo, T. (2023). How to cite ChatGPT. APA Style Blog, American Psychological Association. https://apastyle.apa.org/blog/how-to-cite-chatgpt
@@ -96,7 +96,7 @@ A useful distinction:
 
 Notice that steps 1 to 5 are just **going to the primary source**, the same skill careful researchers have always used. AI doesn't require a new kind of verification; it just makes the old kind non-optional.
 
-:::reveal What's the difference between a *fabricated* source and a *misattributed* one, and how do you catch each? ||| A fabricated source doesn't exist at all — catch it because the link 404s or a title search returns nothing. A misattributed source is real but doesn't actually say what the AI claimed — catch it by opening it and reading to confirm the claim is truly there. The misattributed one is subtler and just as misleading.
+:::reveal What's the difference between a *fabricated* source and a *misattributed* one, and how do you catch each? ||| A fabricated source doesn't exist at all, catch it because the link 404s or a title search returns nothing. A misattributed source is real but doesn't actually say what the AI claimed, catch it by opening it and reading to confirm the claim is truly there. The misattributed one is subtler and just as misleading.
 
 ## Sources
 - McAdoo, T. (2023). How to cite ChatGPT. APA Style Blog, American Psychological Association. https://apastyle.apa.org/blog/how-to-cite-chatgpt
@@ -285,7 +285,7 @@ A research workflow that doesn't get you fooled:
 
 If you can't trace a claim back to a verified source, it isn't ready to publish. That single rule, applied consistently, is what separates research from repeating whatever sounded confident.
 
-:::reveal What goes in a "source trail," and why does keeping one let you answer "how do you know that?" ||| For every claim, record where it came from — the exact URL/DOI, the date you accessed it, and a note on what the source actually says — keeping unverified AI suggestions in a separate "to check" list. That trail lets you trace any sentence back to a verified source, which is exactly how you answer "how do you know that?" and the standard for valid, reliable, publishable work.
+:::reveal What goes in a "source trail," and why does keeping one let you answer "how do you know that?" ||| For every claim, record where it came from, the exact URL/DOI, the date you accessed it, and a note on what the source actually says, keeping unverified AI suggestions in a separate "to check" list. That trail lets you trace any sentence back to a verified source, which is exactly how you answer "how do you know that?" and the standard for valid, reliable, publishable work.
 
 ## Sources
 - National Institute of Standards and Technology. (2023). AI Risk Management Framework (AI RMF 1.0). https://www.nist.gov/itl/ai-risk-management-framework
