@@ -143,7 +143,7 @@ So DC's government is **real and elected, but operates under a congressional vet
 
 **The habit to build:** start with your **ANC and the Council** (the most immediate levers) while staying engaged on DC's larger fight for **representation.**
 
-:::reveal Name two DC offices you vote for, and one unusually reachable elected role in the District. ||| DC residents vote for offices such as the Mayor and the DC Council (plus their Advisory Neighborhood Commissioners). The unusually reachable elected role is Advisory Neighborhood Commissioner (ANC) — a few hundred signatures can put a resident on the ballot.
+:::reveal Name two DC offices you vote for, and one unusually reachable elected role in the District. ||| DC residents vote for offices such as the Mayor and the DC Council (plus their Advisory Neighborhood Commissioners). The unusually reachable elected role is Advisory Neighborhood Commissioner (ANC), a few hundred signatures can put a resident on the ballot.
 
 ## Sources
 - District of Columbia Board of Elections. (n.d.). *Registering and voting in DC: same-day registration, early voting, mail ballots*. dcboe.gov. https://dcboe.gov/
