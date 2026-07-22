@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 
 export async function generateMetadata(): Promise<Metadata> {
   const sdb = await getScopedDb();
-  return { title: `Language Atlas — ${brandName(sdb.tenant)}` };
+  return { title: `Language Atlas, ${brandName(sdb.tenant)}` };
 }
 
 // The Languages map (origin pins + speaker regions + colonial-spread arcs). Only
@@ -32,7 +32,7 @@ export default async function LanguagesAtlasPage() {
         <p className="text-sm uppercase tracking-widest" style={{ color: "var(--accent)" }}>
           Language Atlas
         </p>
-        <h1 className="mt-1 text-3xl font-bold">Where the languages come from — and how they spread</h1>
+        <h1 className="mt-1 text-3xl font-bold">Where the languages come from, and how they spread</h1>
         <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
           Each pin marks a language&apos;s origin; the shaded countries are where it is spoken today;
           the dashed arcs trace how it spread. Tap a language to start its course.

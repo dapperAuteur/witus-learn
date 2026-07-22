@@ -179,7 +179,7 @@ export default async function ExplorePage() {
           // BAM's answer, verbatim in substance: high school. We do not dress it up with an age
           // range in years or claims about younger learners — he has not made those calls.
           q: "Who is this designed for?",
-          a: `${copy.audience}. If you are teaching a different age group and want to know whether it fits, ask us below — we would rather tell you honestly than have you find out after you have planned around it.`,
+          a: `${copy.audience}. If you are teaching a different age group and want to know whether it fits, ask us below, we would rather tell you honestly than have you find out after you have planned around it.`,
         }
       : null,
     stats.courses > 0
@@ -187,7 +187,7 @@ export default async function ExplorePage() {
           q: "What does it cost?",
           a:
             stats.freeCourses === stats.courses
-              ? `Every one of the ${stats.courses} ${plural(stats.courses, "course")} here is currently free. Each course page shows its own price. For a class, a co-op, or a school, pricing is a conversation — ask us below and we will answer with a number for the number of students you actually have.`
+              ? `Every one of the ${stats.courses} ${plural(stats.courses, "course")} here is currently free. Each course page shows its own price. For a class, a co-op, or a school, pricing is a conversation, ask us below and we will answer with a number for the number of students you actually have.`
               : stats.freeCourses > 0
                 ? `${stats.freeCourses} of the ${stats.courses} ${plural(stats.courses, "course")} here are free; the rest are paid. Every course page shows its price before you enrol. For a class, a co-op, or a school, ask us about pricing below.`
                 : "Every course page shows its price before you enrol. For a class, a co-op, or a school, ask us about pricing below.",
@@ -198,15 +198,15 @@ export default async function ExplorePage() {
       // to add up lessons.duration_seconds and call it "hours per week" — and it would be a made-up
       // number that a parent might plan a school year around. Saying "not yet" is the honest answer.
       q: "How much time does it take each week?",
-      a: "We have not published an hours-per-week figure yet, so we are not going to invent one — you would plan a school year around it. Go in any order and at your own pace in the meantime; when we have a number we can stand behind, it will be on this page. If you need to know now, ask us below and we will talk through what your week looks like.",
+      a: "We have not published an hours-per-week figure yet, so we are not going to invent one, you would plan a school year around it. Go in any order and at your own pace in the meantime; when we have a number we can stand behind, it will be on this page. If you need to know now, ask us below and we will talk through what your week looks like.",
     },
     {
       q: "What do we need to get started?",
-      a: "A web browser — phone, tablet, or computer. Signing in is a magic link sent to your email, so there is no password to remember.",
+      a: "A web browser, phone, tablet, or computer. Signing in is a magic link sent to your email, so there is no password to remember.",
     },
     {
       q: "Can my child sign in without an email address?",
-      a: "Yes. A child can sign in themselves with a class code, their animal avatar, and a PIN — no email account required. If you would rather they had no login at all, you can create a profile you manage for them and study as them from your own account.",
+      a: "Yes. A child can sign in themselves with a class code, their animal avatar, and a PIN, no email account required. If you would rather they had no login at all, you can create a profile you manage for them and study as them from your own account.",
     },
     {
       q: "Can I use this with a class or a co-op?",
@@ -214,12 +214,12 @@ export default async function ExplorePage() {
     },
     {
       q: "Can I see how my student is doing?",
-      a: "Yes. Link your child's account and your parent view shows their course progress, quiz and recall scores, certificates earned, and live-class attendance — read-only, and only for the children linked to you.",
+      a: "Yes. Link your child's account and your parent view shows their course progress, quiz and recall scores, certificates earned, and live-class attendance, read-only, and only for the children linked to you.",
     },
     stats.sources > 0
       ? {
           q: "How do I know the content is accurate?",
-          a: `Every course publishes its bibliography, and individual claims are tracked against the source that backs them — ${stats.sources} ${plural(stats.sources, "source")} across the catalogue so far. Open any course, scroll to Sources, and check them. They are there to be used, not admired.`,
+          a: `Every course publishes its bibliography, and individual claims are tracked against the source that backs them, ${stats.sources} ${plural(stats.sources, "source")} across the catalogue so far. Open any course, scroll to Sources, and check them. They are there to be used, not admired.`,
         }
       : null,
     tenant.requiresAgeGate
@@ -295,7 +295,7 @@ export default async function ExplorePage() {
           Start anywhere
         </h2>
         <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
-          Every episode sits at its origin — tap a pin to read what it is about, right here. Switch
+          Every episode sits at its origin, tap a pin to read what it is about, right here. Switch
           to <strong>Growing Belts</strong> to see where each commodity is actually grown.
         </p>
         <div className="mt-5 min-w-0">
@@ -322,7 +322,7 @@ export default async function ExplorePage() {
             {
               n: 2,
               t: "Read the episode",
-              d: "The pin opens that commodity's story — where it began, who grows it, why it mattered — with its sources listed underneath.",
+              d: "The pin opens that commodity's story, where it began, who grows it, why it mattered, with its sources listed underneath.",
             },
             {
               n: 3,
@@ -361,7 +361,7 @@ export default async function ExplorePage() {
           </h2>
           <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
             One thing you can hold, traced back to where it came from. Each one pulls in history,
-            geography, economics, and science — because that is what it takes to explain it honestly.
+            geography, economics, and science, because that is what it takes to explain it honestly.
             Pick any name to read what it covers.
           </p>
           {/* Selecting an episode opens it IN PLACE. It used to link straight into /episode/<id>,
@@ -388,12 +388,12 @@ export default async function ExplorePage() {
             <h3 className="font-semibold">Parents</h3>
             <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
               A map is an invitation, not a worksheet. A kid who asks &ldquo;why is chocolate from
-              there?&rdquo; has already started — and you can watch it land, because you get a
+              there?&rdquo; has already started, and you can watch it land, because you get a
               read-only view of what they are actually doing.
             </p>
             <ul className="mt-3 space-y-1.5 text-sm text-neutral-600 dark:text-neutral-400">
               <li>· Progress, quiz and recall scores, certificates earned</li>
-              <li>· Kids can sign in with an avatar and a PIN — no email needed</li>
+              <li>· Kids can sign in with an avatar and a PIN, no email needed</li>
               <li>· Or no login at all: run a profile you manage for them</li>
             </ul>
             <Link href="/family" className={`${textLink} mt-3 inline-block text-sm`} style={accent}>
@@ -405,7 +405,7 @@ export default async function ExplorePage() {
             <h3 className="font-semibold">Teachers</h3>
             <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
               Run it as a class without rebuilding it. Create a cohort, invite your students by
-              email, and work the map together — attendance is taken for you, from who actually turns
+              email, and work the map together, attendance is taken for you, from who actually turns
               up to the live session.
             </p>
             <ul className="mt-3 space-y-1.5 text-sm text-neutral-600 dark:text-neutral-400">
@@ -422,12 +422,12 @@ export default async function ExplorePage() {
             <h3 className="font-semibold">Homeschoolers</h3>
             <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
               You can teach this yourself. Every lesson names its sources, so you can check a claim,
-              follow the citation, and answer the hard question when your student asks it — instead
+              follow the citation, and answer the hard question when your student asks it, instead
               of taking a curriculum&apos;s word for it.
             </p>
             <ul className="mt-3 space-y-1.5 text-sm text-neutral-600 dark:text-neutral-400">
               <li>· A full bibliography on every course</li>
-              <li>· Go in any order — the map prescribes no starting point</li>
+              <li>· Go in any order, the map prescribes no starting point</li>
               <li>· Works for one learner or a whole co-op</li>
             </ul>
             <Link href="/courses" className={`${textLink} mt-3 inline-block text-sm`} style={accent}>
@@ -448,9 +448,9 @@ export default async function ExplorePage() {
         <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
           Designed for high school. We mapped this curriculum against the published{" "}
           <strong>Indiana Academic Standards</strong> and the standards{" "}
-          <strong>Washington, D.C.</strong> has adopted — Common Core for literacy, NGSS for
+          <strong>Washington, D.C.</strong> has adopted, Common Core for literacy, NGSS for
           science, and D.C.&apos;s own 2023 social studies standards. Each standard we claim shows
-          its exact code, the standard&apos;s own words, and the lesson that covers it — and says
+          its exact code, the standard&apos;s own words, and the lesson that covers it, and says
           so plainly when we only cover part of it.
         </p>
         <Link
@@ -539,8 +539,8 @@ export default async function ExplorePage() {
         </h2>
         <div className="mt-3 max-w-2xl space-y-3 text-neutral-700 dark:text-neutral-300">
           <p>
-            Anchoring lessons in real places — and in the communities and economies attached to them
-            — is a long-established approach in education, usually called{" "}
+            Anchoring lessons in real places, and in the communities and economies attached to them,
+            is a long-established approach in education, usually called{" "}
             <em>place-based education</em> (Smith, 2002; Sobel, 2004). The map is that idea made
             literal: the table of contents is a set of real locations.
           </p>
@@ -548,7 +548,7 @@ export default async function ExplorePage() {
             The citation habit is deliberate too. Researchers assessing students&apos; ability to
             judge online information have found that students frequently struggle to evaluate the
             credibility of the sources they encounter (McGrew et al., 2018). A course that shows its
-            sources — and invites you to follow them — is a course a student can practise that
+            sources, and invites you to follow them, is a course a student can practise that
             judgement on.
           </p>
           <p className="text-sm text-neutral-600 dark:text-neutral-400">

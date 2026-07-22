@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!view) return { title: "Course" };
   const { course, tenant } = view;
   const brand = brandName(tenant);
-  const description = course.description ?? `${course.title} — a course on ${brand}.`;
+  const description = course.description ?? `${course.title}, a course on ${brand}.`;
   const subtitle = course.category ?? course.seriesTitle ?? undefined;
   const image = ogImageUrl({ title: course.title, subtitle });
   // Page-relevant preview card + description so a shared course link shows its own title/summary.
@@ -222,7 +222,7 @@ export default async function CourseBySlugPage({ params }: Params) {
           "@context": "https://schema.org",
           "@type": "Course",
           name: course.title,
-          description: course.description ?? `${course.title} — a course on ${brandName(view.tenant)}.`,
+          description: course.description ?? `${course.title}, a course on ${brandName(view.tenant)}.`,
           provider: { "@type": "Organization", name: brandName(view.tenant) },
         }
       : null;
@@ -256,7 +256,7 @@ export default async function CourseBySlugPage({ params }: Params) {
           className="mt-4 rounded-lg border-2 border-amber-400 bg-amber-50 p-4 text-sm dark:border-amber-600 dark:bg-amber-950/40"
         >
           <p className="font-semibold text-amber-900 dark:text-amber-200">
-            ⚠️ ON HOLD — do not publish this course yet
+            ⚠️ ON HOLD, do not publish this course yet
           </p>
           <p className="mt-1 text-amber-800 dark:text-amber-300">{course.publishHoldReason}</p>
           <p className="mt-1 text-xs text-amber-700 dark:text-amber-400">

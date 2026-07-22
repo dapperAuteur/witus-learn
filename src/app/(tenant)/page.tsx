@@ -76,7 +76,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
         <section className="mb-8 rounded-lg border border-neutral-200 p-6 dark:border-neutral-800">
           <h2 className="text-xl font-semibold">Run your own school on WitUS</h2>
           <p className="mt-2 max-w-2xl text-neutral-600 dark:text-neutral-400">
-            Bring your courses to the WitUS learning platform under your own brand and domain — cited,
+            Bring your courses to the WitUS learning platform under your own brand and domain, cited,
             media-rich courses with progress tracking and built-in certificates. You teach; we host.
           </p>
           <div className="mt-4 flex flex-wrap items-center gap-4">
@@ -114,7 +114,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
               </p>
               <h2 className="mt-1 text-2xl font-bold">🗺️ The Commodity Map</h2>
               <p className="mt-1 max-w-2xl text-neutral-600 dark:text-neutral-400">
-                See where every story begins — the origins, growing belts, and journeys behind the courses,
+                See where every story begins, the origins, growing belts, and journeys behind the courses,
                 on one interactive map.
               </p>
             </div>
@@ -128,7 +128,7 @@ export default async function TenantHome({ searchParams }: { searchParams: Searc
           href="/languages"
           className="mb-8 flex items-center justify-between gap-3 rounded-lg border border-neutral-200 p-4 hover:border-current dark:border-neutral-800"
         >
-          <span className="font-medium">🌍 Language Atlas — see where each language comes from and how it spread</span>
+          <span className="font-medium">🌍 Language Atlas, see where each language comes from and how it spread</span>
           <span aria-hidden style={{ color: "var(--accent)" }}>→</span>
         </Link>
       ) : null}

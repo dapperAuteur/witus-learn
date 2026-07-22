@@ -53,14 +53,14 @@ export default async function FieldLogPage() {
         </div>
       </div>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-        Run your own documentation projects — plan, gather with consent, verify, and publish. Each project
+        Run your own documentation projects, plan, gather with consent, verify, and publish. Each project
         holds its story <strong>legs</strong> (the sites you visit), a capture log, and a consent ledger.
       </p>
 
       {earned.length > 0 ? (
         <section className="mt-6 rounded-lg border border-emerald-300 bg-emerald-50 p-4 dark:border-emerald-900 dark:bg-emerald-950">
           <h2 className="text-sm font-semibold text-emerald-800 dark:text-emerald-300">
-            🎖 Trusted Documentation — credential earned ({earned.length})
+            🎖 Trusted Documentation, credential earned ({earned.length})
           </h2>
           <ul className="mt-2 space-y-1 text-sm text-emerald-900 dark:text-emerald-200">
             {earned.map((p) => (
@@ -96,7 +96,7 @@ export default async function FieldLogPage() {
                       {p.title}
                       {earnedIds.has(p.id) ? <span className="ml-2 text-xs text-emerald-600 dark:text-emerald-400" title="Credential earned">🎖</span> : null}
                     </span>
-                    <span className="text-xs text-neutral-500">{total ? `${done}/${total}` : "—"}</span>
+                    <span className="text-xs text-neutral-500">{total ? `${done}/${total}` : "-"}</span>
                   </div>
                   <div className="mt-1 flex flex-wrap gap-2 text-xs text-neutral-500">
                     {p.medium ? <span className="rounded bg-neutral-100 px-2 py-0.5 dark:bg-neutral-800">{p.medium}</span> : null}

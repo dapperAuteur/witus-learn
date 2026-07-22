@@ -50,7 +50,7 @@ export default async function MarketingPage() {
         <h2 className="text-lg font-bold">Email campaigns</h2>
         <p className="mt-1 text-sm text-neutral-500">
           Compose and save drafts now. <strong>Sending is disabled</strong> until you sign off on the
-          audience + rules — see <code>docs/DECISIONS-NEEDED.md</code>.
+          audience + rules, see <code>docs/DECISIONS-NEEDED.md</code>.
         </p>
         <div className="mt-4">
           <CampaignComposer audience={audience} initial={campaigns} />

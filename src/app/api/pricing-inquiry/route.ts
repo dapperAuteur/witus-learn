@@ -28,7 +28,7 @@ export async function POST(req: Request) {
     max: MAX_PER_WINDOW,
   });
   if (!allowed) {
-    return errorJson("You have sent several messages already — we have them. We'll be in touch.", 429);
+    return errorJson("You have sent several messages already, we have them. We'll be in touch.", 429);
   }
 
   const body = await req.json().catch(() => null);

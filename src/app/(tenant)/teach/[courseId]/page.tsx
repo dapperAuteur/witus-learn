@@ -128,7 +128,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
         <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
           <h2 className="font-semibold">Recall accuracy</h2>
           <p className="mt-1 text-sm text-neutral-500">
-            How often learners self-report getting a Quick-recall prompt right, in the lesson —
+            How often learners self-report getting a Quick-recall prompt right, in the lesson,
             your signal for whether it&apos;s sticking in class vs only at quiz time.
           </p>
           {recallStats.accuracy === null ? (

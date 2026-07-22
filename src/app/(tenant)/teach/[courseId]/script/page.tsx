@@ -32,7 +32,7 @@ export default async function RecordingScriptPage({ params }: { params: Promise<
       <Link href={`/teach/${course.id}`} className="text-sm underline print:hidden" style={{ color: "var(--accent)" }}>
         ← Back to manage
       </Link>
-      <h1 className="mt-4 text-2xl font-bold">Recording script — {course.title}</h1>
+      <h1 className="mt-4 text-2xl font-bold">Recording script, {course.title}</h1>
       <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400 print:hidden">
         Read this aloud to record the course. Citations and formatting are stripped; “[PAUSE]” marks a
         break between lessons. It regenerates from the current lessons each time you open it, so edits

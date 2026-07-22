@@ -49,7 +49,7 @@ export default async function OperatorOverviewPage() {
       </Link>
       <h1 className="mt-4 text-2xl font-bold">Operator overview</h1>
       <p className="mt-1 text-sm text-neutral-500">
-        Cross-cutting signals for {sdb.tenant.name} — open reports, curriculum feedback, recent
+        Cross-cutting signals for {sdb.tenant.name}, open reports, curriculum feedback, recent
         activity, and whether this database is up to date.
       </p>
 
@@ -66,18 +66,18 @@ export default async function OperatorOverviewPage() {
         {migration.applied !== null ? (
           migration.upToDate ? (
             <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
-              ✅ Up to date — {migration.applied} applied, {migration.onDisk} on disk.
+              ✅ Up to date, {migration.applied} applied, {migration.onDisk} on disk.
             </p>
           ) : (
             <p className="mt-1 text-sm">
-              ⚠️ {migration.applied} applied / {migration.onDisk} on disk — {migration.onDisk - migration.applied}{" "}
+              ⚠️ {migration.applied} applied / {migration.onDisk} on disk, {migration.onDisk - migration.applied}{" "}
               pending. Run <code className="font-mono">pnpm db:migrate:prod</code>.
             </p>
           )
         ) : (
           <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
             Latest on disk: <span className="break-all font-mono">{migration.latestOnDisk ?? "none"}</span> ({migration.onDisk}{" "}
-            total). Could not read the applied-migrations count for this database{migration.error ? ` (${migration.error})` : ""} —
+            total). Could not read the applied-migrations count for this database{migration.error ? ` (${migration.error})` : ""},
             verify prod is migrated manually.
           </p>
         )}

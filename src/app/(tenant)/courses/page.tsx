@@ -67,7 +67,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
         {sp.category ? <input type="hidden" name="category" value={sp.category} /> : null}
         <select name="sort" defaultValue={sort ?? "newest"} className="min-h-11 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900">
           <option value="newest">Newest</option>
-          <option value="title">A–Z</option>
+          <option value="title">A-Z</option>
           <option value="featured">Featured</option>
         </select>
         <button type="submit" className="min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2" style={{ backgroundColor: "var(--accent)" }}>
@@ -103,7 +103,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
       ) : null}
       {isEditor && courses.some((c) => !c.isPublished || c.visibility === "private") ? (
         <p className="mb-3 text-xs text-neutral-500">
-          Courses marked below are hidden from learners — only you (and editors) see them here.
+          Courses marked below are hidden from learners, only you (and editors) see them here.
         </p>
       ) : null}
       {courses.length === 0 ? (

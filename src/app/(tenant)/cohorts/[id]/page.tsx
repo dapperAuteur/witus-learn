@@ -16,7 +16,7 @@ export async function generateMetadata({
   const { id } = await params;
   const sdb = await getScopedDb();
   const cohort = await getCohort(sdb.tenantId, id);
-  return { title: cohort ? `${cohort.name} — Cohort roster` : "Cohort" };
+  return { title: cohort ? `${cohort.name}, Cohort roster` : "Cohort" };
 }
 
 // A cohort's roster: members, who's currently present in /live, an invite-by-email

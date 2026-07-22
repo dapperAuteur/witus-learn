@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { id } = await params;
   const sdb = await getScopedDb();
   const c = await getCommodityById(sdb.tenantId, id);
-  return { title: c ? `${c.name} — the episode` : "Episode" };
+  return { title: c ? `${c.name}, the episode` : "Episode" };
 }
 
 // Episode marketing page (the pin → here). A conversion surface: hero, the
@@ -59,7 +59,7 @@ export default async function EpisodePage({ params }: Params) {
         {sources.length > 0 ? (
           <p className="mt-6 text-sm text-neutral-500">
             ✓ {sources.length} cited source{sources.length === 1 ? "" : "s"}
-            {verified > 0 ? ` (${verified} verified)` : ""} — every claim tied to a source.
+            {verified > 0 ? ` (${verified} verified)` : ""}, every claim tied to a source.
           </p>
         ) : null}
 

@@ -7,7 +7,7 @@ import { getDemoSchoolUrl } from "@/db/queries/demo";
 export const metadata: Metadata = {
   title: "Try the demo",
   description:
-    "A live demo school and shared demo teacher account — try every teacher and admin feature on Learn.WitUS, no signup required. Data resets nightly at midnight.",
+    "A live demo school and shared demo teacher account, try every teacher and admin feature on Learn.WitUS, no signup required. Data resets nightly at midnight.",
 };
 
 // Explains the demo teacher account + Acme Academy demo school, and links out to it.
@@ -29,7 +29,7 @@ export default async function DemoPage() {
         <p className="mt-4 text-lg text-neutral-600 dark:text-neutral-400">
           <strong>Acme Academy</strong> is a live demo school running the exact same platform as every
           real school on Learn.WitUS. A shared <strong>demo teacher account</strong> there gives you
-          full access to author courses, go live, run cohorts, and see the teacher dashboard —
+          full access to author courses, go live, run cohorts, and see the teacher dashboard,
           <strong> no signup, no password.</strong>
         </p>
       </header>
@@ -37,18 +37,18 @@ export default async function DemoPage() {
       <section className="mb-8 rounded-lg border border-neutral-200 p-6 dark:border-neutral-800">
         <h2 className="text-lg font-semibold">What you can try</h2>
         <ul className="mt-3 space-y-2 text-neutral-600 dark:text-neutral-400">
-          <li>· Author a course — modules, lessons, quizzes, media</li>
+          <li>· Author a course, modules, lessons, quizzes, media</li>
           <li>· Go live and run a live class session</li>
           <li>· Create a cohort and invite students</li>
           <li>· See the instructor/admin dashboard</li>
-          <li>· Everything a real teacher or brand admin can do — all of it, on Acme</li>
+          <li>· Everything a real teacher or brand admin can do, all of it, on Acme</li>
         </ul>
       </section>
 
       <section className="mb-8 rounded-lg border border-dashed border-neutral-300 p-5 text-sm text-neutral-600 dark:border-neutral-700 dark:text-neutral-400">
         <p>
-          <strong>The demo resets every night at midnight.</strong> Whatever you create — courses,
-          cohorts, live sessions — gets wiped and reseeded with a clean baseline, so every visitor
+          <strong>The demo resets every night at midnight.</strong> Whatever you create, courses,
+          cohorts, live sessions, gets wiped and reseeded with a clean baseline, so every visitor
           starts fresh. Don&apos;t store anything you want to keep in the demo.
         </p>
       </section>
@@ -70,7 +70,7 @@ export default async function DemoPage() {
           </>
         ) : (
           <p className="rounded-lg border border-neutral-200 px-4 py-6 text-neutral-500 dark:border-neutral-800">
-            The demo school isn&apos;t published yet — check back soon.
+            The demo school isn&apos;t published yet, check back soon.
           </p>
         )}
         <p className="mt-6">

@@ -8,7 +8,7 @@ import { getShareStats } from "@/db/queries/social-shares";
 export const metadata: Metadata = { title: "Dashboard" };
 
 function fmtDate(d: Date | null): string {
-  if (!d) return "—";
+  if (!d) return "-";
   return new Date(d).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
 }
 

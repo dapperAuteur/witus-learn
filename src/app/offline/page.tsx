@@ -16,7 +16,7 @@ export default function OfflinePage() {
       <h1 className="mt-4 text-2xl font-bold">You&rsquo;re offline</h1>
       <p className="mt-2 text-neutral-600 dark:text-neutral-400">
         This page isn&rsquo;t available without a connection. Lessons you&rsquo;ve saved for
-        offline still work — otherwise, reconnect and try again.
+        offline still work, otherwise, reconnect and try again.
       </p>
       {/* A real <a> (not next/link): offline, we want a full reload that re-hits the
           network, not a client-side navigation that would just fail again. */}

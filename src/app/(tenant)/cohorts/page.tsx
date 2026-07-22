@@ -21,7 +21,7 @@ export default async function CohortsPage() {
     <main className="max-w-2xl py-10">
       <h1 className="text-2xl font-bold">Cohorts</h1>
       <p className="mt-1 text-sm text-neutral-500">
-        Your private classes for {tenant.name}. Invite students by email — they land on{" "}
+        Your private classes for {tenant.name}. Invite students by email, they land on{" "}
         <Link href="/live" className="underline">
           /live
         </Link>{" "}
@@ -44,7 +44,7 @@ export default async function CohortsPage() {
           </li>
         ))}
         {cohorts.length === 0 ? (
-          <li className="py-3 text-sm text-neutral-500">No cohorts yet — create your first class above.</li>
+          <li className="py-3 text-sm text-neutral-500">No cohorts yet, create your first class above.</li>
         ) : null}
       </ul>
     </main>

@@ -13,7 +13,7 @@ import { LivePresence } from "@/components/live-presence";
 
 export async function generateMetadata(): Promise<Metadata> {
   const sdb = await getScopedDb();
-  return { title: `Live — ${brandName(sdb.tenant)}` };
+  return { title: `Live, ${brandName(sdb.tenant)}` };
 }
 
 // Live classes for this school: live now, upcoming, and recordings. Tenant-scoped;

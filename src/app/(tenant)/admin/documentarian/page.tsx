@@ -18,7 +18,7 @@ export default async function DocumentarianAdminPage() {
     <main className="mx-auto max-w-3xl px-4 py-10">
       <h1 className="text-2xl font-bold">Documentarian program</h1>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-        The build tracker for the “trusted documentarian” course family — a shared trust core, a
+        The build tracker for the “trusted documentarian” course family, a shared trust core, a
         standalone Archives &amp; Records course, a Words → Sound → Motion medium ladder, and medium ×
         subject specializations, all sourced from the Ghana trip. Check things off and leave notes as
         you go; the full plan lives in <span className="break-all font-mono">plans/future/12-documentarian-program.md</span>.
